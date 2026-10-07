@@ -9,3 +9,8 @@ assert.match(g.prepare[0],/已转换/);assert.match(g.steps.join(' '),/categoriz
 assert.equal(context.guideData({...bank,id:99999},skill).specific,undefined,'Do not attribute a reviewed workflow to an unrelated package');
 const html=context.guideContent({...bank,_title:'<script>test</script>'},{...skill,name:'<img onerror=bad>'});assert.ok(!html.includes('<img onerror=bad>'));
 console.log('PASS: '+count+' package/skill guides; source-specific boundaries, citations and HTML escaping');
+for(const r of data.records){assert.ok(r.reuse,'Missing file evidence');assert.match(context.reuseContent(r),/复制复用需求/);assert.match(context.reuseContent(r),/静态阅读/)}
+assert.match(context.reuseContent(bank),/没有 PDF 解析/);assert.equal(bank.reuse.scripts.length,0);assert.equal(bank.reuse.remote[0].endpoint,'https://api.bankstatemently.com/mcp');
+const model=data.records.find(r=>r.id===1002);assert.ok(model.reuse.scripts.includes('skills/dcf-model/scripts/validate_dcf.py'));assert.match(context.reuseContent(model),/未检出许可证声明/);
+assert.match(context.reuseAssessment({reuse:{local:[{}]}}),/本地 MCP/);assert.match(context.reuseContent({file:'empty',reuse:{}}),/不代表没有产品依赖/);assert.ok(!context.reuseContent({file:'<script>x</script>',reuse:{remote:[{name:'<img>',endpoint:'<script>',path:'<b>'}]}}).includes('<img>'));
+console.log('PASS: reuse evidence for 1761 packages; remote service vs local code, missing license, uncertainty and escaping');

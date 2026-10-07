@@ -1,14 +1,44 @@
 from pathlib import Path
 import json,tarfile,zipfile,re,hashlib,csv
+from urllib.parse import urlsplit, urlunsplit
 ROOT=Path(__file__).resolve().parents[1]; SITE=ROOT/'site'; SRC=ROOT/'source'
 data=json.loads((SITE/'catalog.json').read_text()); assets={r['id']:r for r in json.loads((ROOT/'assets.json').read_text())}
 # High-confidence credential signatures only; report paths, never values.
 patterns=[rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',rb'\bAKIA[A-Z0-9]{16}\b',rb'\bgh[pousr]_[A-Za-z0-9]{36,}\b',rb'\bgithub_pat_[A-Za-z0-9_]{70,}\b',rb'\bsk-(?:proj-|ant-)?[A-Za-z0-9_-]{40,}\b']
-findings=[]; checked=0
+def reuse_evidence(z):
+ paths=[m.filename for m in z.infolist() if not m.is_dir()]
+ result={'configs':[], 'remote':[], 'local':[], 'unknown':[], 'scripts':[], 'references':[], 'dependencies':[], 'licenses':[]}
+ for path in paths:
+  lower=path.lower()
+  if re.search(r'(?:^|/)(?:license(?:\.[^/]*)?|copying(?:\.[^/]*)?)$',lower):result['licenses'].append(path)
+  if '/references/' in '/'+lower or '/templates/' in '/'+lower:result['references'].append(path)
+  if re.search(r'(?:requirements[^/]*\.txt|package\.json|pyproject\.toml)$',lower):result['dependencies'].append(path)
+  if re.search(r'\.(py|js|ts|sh|ps1)$',lower) and not '/node_modules/' in lower:result['scripts'].append(path)
+  if lower.endswith('mcp.json') and z.getinfo(path).file_size<1048576:
+   result['configs'].append(path)
+   try: config=json.loads(z.read(path)); servers=config.get('mcpServers',config.get('servers',{}))
+   except (ValueError,UnicodeError):result['unknown'].append(path);continue
+   if not isinstance(servers,dict):result['unknown'].append(path);continue
+   for name,server in servers.items():
+    if not isinstance(server,dict):result['unknown'].append(path);continue
+    if isinstance(server.get('url'),str):
+     u=urlsplit(server['url'])
+     if u.scheme in ('http','https') and u.hostname:
+      # Display endpoint only. Never expose auth, query strings, env or arguments.
+      url=urlunsplit((u.scheme,u.hostname,u.path,'',''))
+      item={'name':name,'endpoint':url,'path':path}
+      if item not in result['remote']:result['remote'].append(item)
+     else:result['unknown'].append(path)
+    elif server.get('command'):result['local'].append({'name':name,'path':path})
+    else:result['unknown'].append(path)
+ return result
+findings=[]; checked=0; reuse={}
+
 reviewed=json.loads((ROOT/'reviewed_examples.json').read_text())
 for a in assets.values():
  if not a.get('asset_url'):continue
  with zipfile.ZipFile(SITE/a['asset_url']) as z:
+  reuse[a['id']]=reuse_evidence(z)
   for m in z.infolist():
    if m.is_dir() or m.file_size>5*1048576:continue
    if not re.search(r'\.(md|txt|json|py|js|ts|yml|yaml|toml|env|pem|key|sh|ini|cfg|conf)$|(?:^|/)\.env',m.filename,re.I):continue
@@ -17,6 +47,7 @@ for a in assets.values():
 blocked={r['id'] for r in findings}
 for r in data['records']:
  a=assets.get(r['id'],{})
+ r['reuse']=reuse.get(r['id'],{})
  if r['id'] in blocked:
   r['asset_error']='包内发现待核实的凭据格式，暂缓公开原文件。'
  else:
