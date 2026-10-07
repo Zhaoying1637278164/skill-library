@@ -11,4 +11,4 @@ iframe[title="streamlit_app.skill_library"]{width:100%;height:100vh!important;mi
 html,body,[data-testid="stAppViewContainer"]{background:#f6f7f2}
 </style>''',unsafe_allow_html=True)
 library=components.declare_component('skill_library',path=str(Path(__file__).parent/'site'))
-library(key='skill-library',package=st.query_params.get('package'),file=st.query_params.get('file'))
+library(key='skill-library',package=st.query_params.get('package'),file=st.query_params.get('file'),view=st.query_params.get('view'))

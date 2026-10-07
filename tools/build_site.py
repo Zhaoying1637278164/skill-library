@@ -27,7 +27,7 @@ for r in data['records']:
 data['stats']['downloads']=sum(bool(r.get('asset_url')) for r in data['records'])
 data['stats']['download_pending']=len(data['records'])-data['stats']['downloads']
 SITE.mkdir(exist_ok=True);(SITE/'vendor').mkdir(exist_ok=True)
-viewer='''<dialog id="fileViewer" class="source-viewer" aria-labelledby="viewerTitle"><header class="viewer-head"><div><h2 id="viewerTitle"></h2><p id="viewerPath"></p></div><div class="file-actions"><a id="viewerLink" target="_blank" rel="noopener">打开原文链接 ↗</a><button id="viewerDownload">下载原文件 ↓</button><button id="closeViewer" aria-label="关闭原文">×</button></div></header><div class="viewer-info" id="viewerStatus" role="status"></div><pre id="sourceText"></pre></dialog>'''
+viewer='''<dialog id="fileViewer" class="source-viewer" aria-labelledby="viewerTitle"><header class="viewer-head"><div><h2 id="viewerTitle"></h2><p id="viewerPath"></p></div><div class="file-actions"><a id="viewerLink" target="_blank" rel="noopener">打开原文链接 ↗</a><button id="viewerDownload">下载原文件 ↓</button><button id="viewerZip">下载完整包 ↓</button><button id="closeViewer" aria-label="关闭原文">×</button></div></header><nav class="viewer-tabs"><button id="showSource">原始文件</button><button id="showGuide">中文怎么用</button></nav><div id="sourceScroll" class="reader-scroll"><div class="viewer-info" id="viewerStatus" role="status"></div><div id="viewerGuide" hidden></div><pre id="sourceText"></pre><p id="sourceEnd" class="source-end">— 已到原文件末尾 —</p></div></dialog>'''
 html=(SRC/'catalog.html').read_text()
 html=html.replace('<div id="detailBody" class="detail-body"></div></dialog>','<div id="detailBody" class="detail-body"></div><div id="fileFeedback" role="status"></div></dialog>')
 html=html.replace('<script id="data"',viewer+'<script src="vendor/fflate.min.js"></script><script id="data"')
@@ -36,7 +36,7 @@ js=(SRC/'catalog.js').read_text()
 # Main dialogs render the additional handlers supplied in files.js.
 js=js.replace(' · 分类按资料推定，功能未运行验收`',' · ${S.downloads||0} 个原包可下载 · 分类按资料推定，功能未运行验收`')
 js=js.replace('<h3>下载完整资料</h3>','<h3>原文与下载</h3><p>已就绪 ${S.downloads||0} 个原包。技能页可阅读全文；文件清单可筛选、阅读并单独下载。ZIP 与单文件均保留原始字节。原包尚未取回时明确标记，不提供无效入口。</p><h3>下载完整资料</h3>')
-html=html.replace('__CSS__',(SRC/'catalog.css').read_text()+'\n'+(SRC/'files.css').read_text()).replace('__JS__',js+'\n'+(SRC/'files.js').read_text())
+html=html.replace('__CSS__',(SRC/'catalog.css').read_text()+'\n'+(SRC/'files.css').read_text()).replace('__JS__',js+'\n'+(SRC/'guides.js').read_text()+'\n'+(SRC/'files.js').read_text())
 payload=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
 html=html.replace('__DATA__',payload)
 (SITE/'index.html').write_text('<!doctype html>'+html)

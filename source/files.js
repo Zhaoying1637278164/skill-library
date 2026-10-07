@@ -1,8 +1,8 @@
 // Original-file browser. Archive contents are treated only as data.
-const zipCache=new Map();let viewFile=null,viewBytes=null,viewRecord=null,viewVersion=0,fileLimit=100;
+const zipCache=new Map();let readerMode=false;let viewFile=null,viewBytes=null,viewRecord=null,viewVersion=0,fileLimit=100;
 const TEXT_EXT=/\.(md|txt|json|jsonl|csv|tsv|yaml|yml|toml|ini|cfg|conf|py|js|jsx|ts|tsx|html|css|sql|sh|bash|zsh|xml|svg|rst|log|go|rs|java|c|h|cpp|r|rb|ps1|ipynb|env)$/i;
 function fileActions(r,path){return r.asset_url?`<div class="file-actions"><button data-read="${esc(path)}">查看原始文件 ↗</button><button data-download-file="${esc(path)}">下载此文件 ↓</button></div>`:'<p class="small">原始文件尚未取回，暂时仅可查看目录说明。</p>'}
-function skillDetail(r){return `<h3>全部技能 · ${r.skills.length} 条</h3><p class="small">点击查看原始文件，即可在网站内阅读完整 SKILL.md。</p>${r.skills.map(s=>`<div class="skill"><b>${esc(s.name)}</b><p class="small">${esc(s.name_hint)}</p><p>${esc(s.description||'主要章节：'+s.headings.join(' / '))}</p><code>${esc(s.path)}</code>${fileActions(r,s.path)}</div>`).join('')||'<p>未识别到 SKILL.md；可在文件清单中查找。</p>'}<h3>全部命令 · ${r.commands.length} 条</h3>${r.commands.map(s=>`<div class="skill"><b>${esc(s.name)}</b><p>${esc(s.description||s.headings.join(' / '))}</p><code>${esc(s.path)}</code>${fileActions(r,s.path)}</div>`).join('')||'<p>未识别到命令说明。</p>'}`}
+function skillDetail(r){return `<h3>全部技能 · ${r.skills.length} 条</h3><p class="small">点击查看原始文件，即可在网站内阅读完整 SKILL.md。</p>${r.skills.map(s=>`<div class="skill"><b>${esc(s.name)}</b><p class="small">${esc(s.name_hint)}</p><p>${esc(s.description||'主要章节：'+s.headings.join(' / '))}</p><code>${esc(s.path)}</code>${fileActions(r,s.path)}<button class="copy-prompt" data-guide="${esc(s.path)}">中文怎么用</button></div>`).join('')||'<p>未识别到 SKILL.md；可在文件清单中查找。</p>'}<h3>全部命令 · ${r.commands.length} 条</h3>${r.commands.map(s=>`<div class="skill"><b>${esc(s.name)}</b><p>${esc(s.description||s.headings.join(' / '))}</p><code>${esc(s.path)}</code>${fileActions(r,s.path)}</div>`).join('')||'<p>未识别到命令说明。</p>'}`}
 function fileDetail(r){return `<div class="archive-bar"><div><h3>原始压缩包</h3><p>${esc(r.file)} · ${(r.bytes/1048576).toFixed(2)} MB</p></div><button data-zip ${r.asset_url?'':'disabled'}>下载完整 ZIP ↓</button></div><p class="small">${r.asset_url?'原包已就绪。文件内容完整保留，在线阅读不需要先下载 ZIP。':'原包尚未从 iCloud 取回，暂不可下载。'}</p><h3>全部原始文件 · ${(r.members||r.paths).length} 个</h3><input id="fileQuery" class="file-query" aria-label="筛选包内文件" placeholder="搜索文件名、目录或后缀，例如 SKILL.md / references / .py"><div id="fileList"></div><p class="small hash">原包 SHA-256：${esc(r.asset_sha256||r.sha256||'待核验')}</p>`}
 async function zipBytes(r){
  if(!r.asset_url)throw Error('此原包暂不可下载。');
@@ -32,9 +32,9 @@ function decodeOriginal(bytes){
 }
 async function openOriginal(r,path){
  const version=++viewVersion;viewRecord=r;viewFile=path;viewBytes=null;
- const rawLink=new URL(new URLSearchParams(location.search).get('streamlitUrl')||(window.parent!==window?document.referrer:location.href)||location.href);rawLink.searchParams.set('package',r.id);rawLink.searchParams.set('file',path);rawLink.hash='';$('viewerLink').href=rawLink.href;
+ const rawLink=new URL(new URLSearchParams(location.search).get('streamlitUrl')||(window.parent!==window?document.referrer:location.href)||location.href);rawLink.searchParams.set('package',r.id);rawLink.searchParams.set('file',path);rawLink.pathname=rawLink.pathname.replace(/\/~\/\+\/?$/, '/');rawLink.searchParams.set('view','reader');rawLink.hash='';$('viewerLink').href=rawLink.href;if(readerMode){const home=new URL(rawLink);home.searchParams.delete('package');home.searchParams.delete('file');home.searchParams.delete('view');$('viewerLink').href=home.href;$('viewerLink').textContent='返回目录 ↗'}
  $('viewerTitle').textContent=path.split('/').pop();$('viewerPath').textContent=r._title+' / '+path;
- $('viewerStatus').textContent='正在读取完整原文…';$('sourceText').textContent='';$('sourceText').hidden=false;$('viewerDownload').disabled=true;$('fileViewer').showModal();
+ $('viewerStatus').textContent='正在读取完整原文…';$('sourceText').textContent='';$('sourceText').hidden=false;$('viewerDownload').disabled=true;if(!$('fileViewer').open)$('fileViewer').showModal();if(typeof guideContent==='function'){const skill=r.skills?.find(s=>s.path===path);$('viewerGuide').innerHTML=skill?guideContent(r,skill):'<div class="cn-guide"><h3>这是包内的原始资料</h3><p>这个文件可能是脚本、配置或参考资料。先看对应 SKILL.md 和 README，了解用途与依赖，再按原说明使用。</p></div>';bindGuideButtons($('viewerGuide'));setViewerMode('source')}
  try{
   const info=r.members.find(m=>m.path===path);
   if(info.size>5*1048576){$('viewerStatus').textContent='此文件大于 5 MB，可单独下载原文件。';$('viewerDownload').disabled=false;return}
@@ -49,6 +49,7 @@ function bindFiles(){
  $('detailBody').querySelectorAll('[data-read]').forEach(b=>b.onclick=()=>openOriginal(selected,b.dataset.read));
  $('detailBody').querySelectorAll('[data-download-file]').forEach(b=>b.onclick=()=>runDownload(b,selected,b.dataset.downloadFile));
  const z=$('detailBody').querySelector('[data-zip]');if(z)z.onclick=()=>runDownload(z,selected);
+ if(typeof bindGuideButtons==='function')bindGuideButtons($('detailBody'));
  if($('fileQuery')){$('fileQuery').oninput=()=>{fileLimit=100;renderFiles()};renderFiles()}
 }
 function renderFiles(){
@@ -59,9 +60,14 @@ function renderFiles(){
  if($('moreFiles'))$('moreFiles').onclick=()=>{fileLimit+=100;renderFiles()};
 }
 const originalDetailTab=detailTab;detailTab=function(){originalDetailTab();bindFiles()};
-$('closeViewer').onclick=()=>$('fileViewer').close();$('fileViewer').addEventListener('close',()=>{viewVersion++;viewBytes=null});
+$('closeViewer').onclick=()=>{if(readerMode){const u=new URL($('viewerLink').href);u.searchParams.delete('package');u.searchParams.delete('file');u.searchParams.delete('view');window.location.href=u.href}else $('fileViewer').close()};$('fileViewer').addEventListener('close',()=>{viewVersion++;viewBytes=null});
 $('viewerDownload').onclick=()=>viewBytes?downloadBytes(viewBytes,viewFile.split('/').pop()):runDownload($('viewerDownload'),viewRecord,viewFile);
 if(window.parent!==window){window.parent.postMessage({isStreamlitMessage:true,type:'streamlit:componentReady',apiVersion:1},'*');window.parent.postMessage({isStreamlitMessage:true,type:'streamlit:setFrameHeight',height:900},'*')}
 
-let linkedFileOpened=false;function openLinkedFile(args){if(linkedFileOpened||!args?.package||!args?.file)return;const r=R.find(x=>String(x.id)===String(args.package));if(!r||!r.asset_url||!r.members?.some(m=>m.path===args.file))return;linkedFileOpened=true;openDetail(r.id);openOriginal(r,args.file)}
+let linkedFileOpened=false;async function openLinkedFile(args){if(linkedFileOpened||!args?.package||!args?.file)return;const r=R.find(x=>String(x.id)===String(args.package));if(!r||!r.asset_url||!r.members?.some(m=>m.path===args.file))return;linkedFileOpened=true;if(args.view==='reader'){readerMode=true;document.body.classList.add('reader-mode');$('pageScroll').hidden=true;await openOriginal(r,args.file)}else{openDetail(r.id);await openOriginal(r,args.file)}}
 window.addEventListener('message',e=>{if(e.source===window.parent&&e.data?.type==='streamlit:render')openLinkedFile(e.data.args)});if(window.parent===window)openLinkedFile(Object.fromEntries(new URLSearchParams(location.search)));
+
+function setViewerMode(mode){const guide=mode==='guide';$('viewerGuide').hidden=!guide;$('sourceText').hidden=guide;$('sourceEnd').hidden=guide;$('showSource').classList.toggle('selected',!guide);$('showGuide').classList.toggle('selected',guide);$('sourceScroll').scrollTop=0}
+$('showSource').onclick=()=>setViewerMode('source');$('showGuide').onclick=()=>setViewerMode('guide');
+
+$('viewerZip').onclick=()=>runDownload($('viewerZip'),viewRecord,null);

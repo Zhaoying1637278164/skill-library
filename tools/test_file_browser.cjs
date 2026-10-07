@@ -7,7 +7,7 @@ let fetches=0;const elements=new Map();
 function $(id){if(!elements.has(id))elements.set(id,{textContent:'',hidden:false,disabled:false,open:false,showModal(){this.open=true},addEventListener(){},querySelectorAll(){return []}});return elements.get(id)}
 const context=vm.createContext({console,TextDecoder,Uint8Array,URL,URLSearchParams,Blob,setTimeout,fflate,
  crypto:crypto.webcrypto,$,R:[],detailTab(){},location:{href:'http://localhost/library',search:''},
- document:{referrer:'http://localhost/app'},window:{parent:{postMessage(){}},addEventListener(){}},
+ document:{referrer:'http://localhost/app',body:{classList:{add(){}}}},window:{parent:{postMessage(){}},addEventListener(){}},
  fetch:async()=>{fetches++;return {ok:true,arrayBuffer:async()=>packed.buffer.slice(packed.byteOffset,packed.byteOffset+packed.byteLength)}}});
 vm.runInContext(fs.readFileSync(require('path').join(__dirname,'../source/files.js'),'utf8'),context);
 const r={id:1,_title:'测试包',asset_url:'packages/test.zip',asset_sha256:sha,members:[{path:'skills/示例/SKILL.md',size:raw.length}]};
@@ -16,6 +16,9 @@ const r={id:1,_title:'测试包',asset_url:'packages/test.zip',asset_sha256:sha,
  await context.openOriginal(r,r.members[0].path);assert.equal($('sourceText').textContent,raw.toString('utf8'));assert.ok($('sourceText').textContent.endsWith('全文末尾\n'));
  assert.ok($('viewerLink').href.startsWith('http://localhost/app?package=1&file='));
  assert.equal(fetches,1,'Verified ZIP should be reused');
+ assert.equal(new URL($('viewerLink').href).searchParams.get('view'),'reader');
+ context.R.push(r);await context.openLinkedFile({package:1,file:r.members[0].path,view:'reader'});
+ assert.equal($('pageScroll').hidden,true);assert.equal($('sourceText').textContent,raw.toString('utf8'));assert.equal(new URL($('viewerLink').href).searchParams.has('file'),false,'Reader links back to directory');
  await assert.rejects(context.zipBytes({...r,asset_sha256:'bad'}),/校验不通过/);
  await assert.rejects(context.memberBytes(r,'../unknown'),/未找到/);
  await assert.rejects(context.memberBytes({...r,members:[{path:r.members[0].path,size:raw.length+1}]},r.members[0].path),/大小校验失败/);
