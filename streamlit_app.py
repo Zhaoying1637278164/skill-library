@@ -7,7 +7,7 @@ st.markdown('''<style>
 [data-testid="stHeader"], [data-testid="stToolbar"], footer {display:none}
 .block-container{padding:0!important;max-width:100%!important}
 [data-testid="stMainBlockContainer"]{padding:0!important}
-iframe[title="streamlit_app.skill_library"]{width:100%;height:100vh!important;min-height:700px;border:0}
+iframe[title="streamlit_app.skill_library"]{width:100%;height:100vh!important;min-height:0;border:0}
 html,body,[data-testid="stAppViewContainer"]{background:#f6f7f2}
 </style>''',unsafe_allow_html=True)
 library=components.declare_component('skill_library',path=str(Path(__file__).parent/'site'))
