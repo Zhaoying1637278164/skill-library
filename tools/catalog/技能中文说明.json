@@ -65329,6 +65329,1086 @@
       "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
       "source_package": "Sent-0.1.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72ab26d3a5f129a0c95b7ea7ebfd3517a550de6fc009c79d1c83afa34f643da1": {
+      "description_zh": "通过 Sent MCP检查授权账号、组织与 Sender Profile范围、余额、入驻和 KYC状态，判断发送或渠道上线准备情况；整改转交相应入驻或合规技能。",
+      "source": "Checks the authorized Sent account, organization and Sender Profile scope, balance, onboarding/KYC status, and readiness with the Sent MCP tools. Use when a user asks whether the account can send, what the MCP connection authorized, whether funds are sufficient, why onboarding is blocked, or for a preflight check before a mutation or channel launch. Route remediation to the relevant onboarding or compliance skill.",
+      "source_sha256": "72ab26d3a5f129a0c95b7ea7ebfd3517a550de6fc009c79d1c83afa34f643da1",
+      "source_path": "skills/sent-account-readiness/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "987c6a83ec8747fceade397191294c4f7526eec2a860f6774f67aa3659e2c33e": {
+      "description_zh": "通过 Sent MCP查询电话号码能力及消息、投递和联系人汇总指标，支持发送量、投递率、增长、跨期比较及时间范围趋势；逐消息根因另用表现分析技能。",
+      "source": "Queries Sent phone-number capabilities and aggregate messaging, deliverability, and contact analytics with the Sent MCP tools. Use when a user asks for number lookup, line or channel capability, messages sent, delivery rate, contact growth, dashboard metrics, period comparisons, or date-bounded trends. Use messaging-performance-analyzer for message-level evidence and root-cause diagnosis.",
+      "source_sha256": "987c6a83ec8747fceade397191294c4f7526eec2a860f6774f67aa3659e2c33e",
+      "source_path": "skills/sent-analytics/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "703937301d68707b64e5fb3ad37f1322ac034a19fda053ca553e072cc5530584": {
+      "description_zh": "通过 Sent MCP列出、检索、检查、批量创建、汇总或删除联系人，支持导入、去重和通信摘要；创建与删除经过确认门禁。",
+      "source": "Lists, finds, inspects, bulk-creates, summarizes, or deletes Sent contacts with the Sent MCP tools. Use when a user asks to search contacts, get a contact by ID, import or deduplicate a contact list, review a contact's messaging summary, remove a contact, or manage direct contact records. Requires confirmation gates for creates and deletes.",
+      "source_sha256": "703937301d68707b64e5fb3ad37f1322ac034a19fda053ca553e072cc5530584",
+      "source_path": "skills/sent-contacts/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11d36dfdaae11a53ad6d2ae6236ad9a0ac036bee9524439dbfc0ff2d4a89ce6f": {
+      "description_zh": "为已有代码库建立 Sent v3集成，配置 SDK、API key、幂等发送、重试限流、46类错误、沙箱及已核验 webhook接收器，支持上线前加固。",
+      "source": "Stands up a production-ready Sent v3 integration in an existing codebase — SDK selection and client construction, x-api-key configuration, idempotent sends, retry and rate-limit handling, the 46-code error catalog, sandbox verification, and a verified webhook receiver. Use when adding Sent to an app for the first time, choosing an SDK or framework wiring, handling 429 or 409 responses, deciding what to log, or hardening an integration before launch.",
+      "source_sha256": "11d36dfdaae11a53ad6d2ae6236ad9a0ac036bee9524439dbfc0ff2d4a89ce6f",
+      "source_path": "skills/sent-integration-starter/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed36fc1d850b57d00237117c7dcd7ef25c7cc41d1290a93e22a605e749b674f1": {
+      "description_zh": "通过 Sent MCP发送或预览 SMS、WhatsApp、RCS，查询单消息状态与活动，检查超时和结果不明并安全重试；汇总投递诊断另用专用技能。",
+      "source": "Sends SMS, WhatsApp, or RCS messages through Sent and retrieves individual message status and activity history with the Sent MCP tools. Use when a user asks to send or preview a message, check a message ID, confirm delivery status, inspect lifecycle events, investigate a timed-out or ambiguous send, or retry safely. Use messaging-performance-analyzer for aggregate delivery diagnosis.",
+      "source_sha256": "ed36fc1d850b57d00237117c7dcd7ef25c7cc41d1290a93e22a605e749b674f1",
+      "source_path": "skills/sent-messaging/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af2be1b58a8844e1fee137ed2c6616e41d1094dfd061c8fef2b65edd36c25a82": {
+      "description_zh": "通过 API管理 Sent Sender Profile生命周期，配置继承、共享、计费和 WhatsApp，办理完成回调、每档案10DLC及用户角色，用于多租户入驻与状态排查。",
+      "source": "Executes the Sent Sender Profile lifecycle over the API — creating profiles with the right inheritance, sharing, billing, and WhatsApp options, driving profile completion and its callback, managing 10DLC campaigns per profile, and administering users and roles. Use when calling POST /v3/profiles, handling a completion callback or unclear profile status, choosing inherit or dedicated resources, wiring per-tenant onboarding, or inviting and role-managing users.",
+      "source_sha256": "af2be1b58a8844e1fee137ed2c6616e41d1094dfd061c8fef2b65edd36c25a82",
+      "source_path": "skills/sent-profile-provisioning/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "827ef1667c37bd55fac66d7ecd7528ee5f28c266838815c78285cc5987d2c911": {
+      "description_zh": "设计 Sent自动或固定渠道路由，解释 channel数组、回退与重路由，诊断 FAILED、FILTERED、BLOCKED、auto状态和多渠道重复费用，结合活动证据判断。",
+      "source": "Decides how a Sent message should reach the recipient — automatic routing versus a pinned channel, what the channel array actually does, how fallback and reroute work, and why a message ended as FAILED, FILTERED, BLOCKED, or channel \"auto\". Use when choosing the channel field, expecting WhatsApp-to-SMS fallback, debugging an unexpected route or duplicate charges from multiple channels, or interpreting message status and activity evidence.",
+      "source_sha256": "827ef1667c37bd55fac66d7ecd7528ee5f28c266838815c78285cc5987d2c911",
+      "source_path": "skills/sent-routing-strategist/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6b106f6ee18e6cb75f13937d9e684e0af2a8ca708327b1dc6948fa9b5007548": {
+      "description_zh": "通过 Sent MCP列出、按名或 ID查找、检查和删除已有模板，查看语言、渠道、类别及状态；WhatsApp内容编写和模板界面使用专用技能。",
+      "source": "Lists, finds by name or ID, inspects, or deletes existing Sent templates with the Sent MCP tools. Use when a user asks to browse templates, find an approved template, check template language, channel, category, or status, retrieve a template record, or delete a template. Use waba-template-author to write WhatsApp content and template-builder-ui to design template interfaces.",
+      "source_sha256": "c6b106f6ee18e6cb75f13937d9e684e0af2a8ca708327b1dc6948fa9b5007548",
+      "source_path": "skills/sent-templates/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc534bd8a9b8736934221239c5c491f47532ee138c29217e8d5f70f7288ccf2e": {
+      "description_zh": "设计 Sent入站与会话流程，处理退订订阅、联系人同意、WhatsApp 24小时内自动回复、RCS STOP、渠道入站能力及会话历史分页，用于客服收件箱或聊天机器人。",
+      "source": "Designs inbound and conversational Sent flows — opt-out and opt-in keyword handling, consent state on contacts, auto-replies inside the WhatsApp 24-hour window, RCS STOP chips, conversation history retrieval, and per-channel inbound capability. Use when handling message.received events, implementing STOP or HELP behavior, restoring consent after an opt-out, building a support inbox or chatbot on Sent, or paginating conversation history.",
+      "source_sha256": "dc534bd8a9b8736934221239c5c491f47532ee138c29217e8d5f70f7288ccf2e",
+      "source_path": "skills/sent-two-way-messaging/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12da1bdc35b0e0c27cf8cc45c2d1d3a3776c7af7cb17d455091da547596cab4d": {
+      "description_zh": "构建和排查 Sent v3 webhook接收端，涵盖注册、HMAC验证、防重放、去重、重试自动禁用、密钥轮换和投递日志，处理401、签名错误及禁用恢复。",
+      "source": "Builds and debugs Sent v3 webhook receivers end to end — endpoint registration, HMAC signature verification, replay rejection, event dedupe, retry and auto-disable behavior, secret rotation, and delivery-log triage. Use when handling Sent webhook events, verifying x-webhook-signature, fixing 401 or signature-mismatch failures, recovering a disabled endpoint, choosing event_types or event_filters, rotating a signing secret, or interpreting the webhook delivery log.",
+      "source_sha256": "12da1bdc35b0e0c27cf8cc45c2d1d3a3776c7af7cb17d455091da547596cab4d",
+      "source_path": "skills/sent-webhook-engineer/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6990059fcdbb8b489d88e240ebf92333ad6f2426dfa3261953e14728042d464": {
+      "description_zh": "将宽泛或不明确的 Sent 请求分流到对应的 MCP 操作或专项技能。适用于了解 Sent 功能、设置消息服务、组合多个工作流，或尚未明确渠道、任务和操作的请求。",
+      "source": "Routes broad or ambiguous Sent requests to the correct MCP-backed operation or specialist skill. Use when the user asks what Sent can do, says \"help me with Sent\" or \"set up messaging,\" needs several Sent workflows, or has not made the channel, task, or desired operation clear enough to select a more specific skill.",
+      "source_sha256": "c6990059fcdbb8b489d88e240ebf92333ad6f2426dfa3261953e14728042d464",
+      "source_path": "skills/sent/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "815abe6e8be7bb08e85fb335368a81a2f278679ffc7b1fc687cb1729b214ac5a": {
+      "description_zh": "通过 Sender Profiles 准备并校验 Sent 美国 A2P 10DLC 品牌及活动注册，涵盖继承关系、活动用途、用户同意证据、示例消息政策、自动回复、沙箱验证、TCR 状态和拒绝原因整改。",
+      "source": "Prepares and validates Sent US A2P 10DLC brand and campaign registration through Sender Profiles, including inheritance, all campaign use cases, opt-in evidence, sample-message policy, autoresponses, sandbox validation, TCR status, and rejection remediation.",
+      "source_sha256": "815abe6e8be7bb08e85fb335368a81a2f278679ffc7b1fc687cb1729b214ac5a",
+      "source_path": "skills/sms-10dlc-registration/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b67737efc4db9a80bda12d69bfdcf03fe4bedc35fed416dcd8d5e2c445135b47": {
+      "description_zh": "设计和审查面向租户的 Sent 模板编辑器、预览、校验、生命周期交互及 API 请求映射。适用于变量、渠道覆盖、WhatsApp 审核、RCS 建议按钮、认证模板和安全提交流程。",
+      "source": "Designs and audits tenant-facing Sent template builders, previews, validation, lifecycle UX, and API payload mapping. Use for template editor forms, variables, channel overrides, WhatsApp review, RCS suggestion chips, authentication templates, and safe submission flows.",
+      "source_sha256": "b67737efc4db9a80bda12d69bfdcf03fe4bedc35fed416dcd8d5e2c445135b47",
+      "source_path": "skills/template-builder-ui/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f76c9ca1eefee1f01227130157616d10a47dd767ec5428468a76d9fd7f38691": {
+      "description_zh": "指导通过 Sent 接入 WhatsApp Business Account，区分控制台 Embedded Signup、组织级 WABA 继承与子配置直接凭据。适用于 Meta 注册、配置创建、访问令牌处理、电话号码映射、完成回调和接入故障。",
+      "source": "Guides WhatsApp Business Account onboarding through Sent, separating dashboard Embedded Signup, organization WABA inheritance, and direct child-profile credentials. Use for WABA connection, Meta signup, profile creation, access-token handling, phone number mapping, completion callbacks, or WhatsApp onboarding failures.",
+      "source_sha256": "7f76c9ca1eefee1f01227130157616d10a47dd767ec5428468a76d9fd7f38691",
+      "source_path": "skills/waba-embedded-signup/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70cbd86ebf7928119e4ad246872aed1e1d9849b726faac184b1747d831cf491f": {
+      "description_zh": "按照 Sent v3 模板定义约定撰写、分类、校验和修复 WhatsApp 模板。适用于服务通知、营销、认证、OTP、Meta 审核、被拒模板、变量、按钮、渠道覆盖及可提交的 Sent 请求数据。",
+      "source": "Writes, classifies, validates, and repairs WhatsApp templates using the Sent v3 template definition contract. Use for utility, marketing, authentication, OTP, Meta review, rejected templates, variables, buttons, channel overrides, or submission-ready Sent payloads.",
+      "source_sha256": "70cbd86ebf7928119e4ad246872aed1e1d9849b726faac184b1747d831cf491f",
+      "source_path": "skills/waba-template-author/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57f9d56bee57a7c8da63ee7355ab8075e9e800933f5c3f473a82bc1be0d3c78c": {
+      "description_zh": "通过工作流引擎 API 创建 Sentry 告警。适用于通知设置、问题优先级告警和工作流自动化，可配置邮件、Slack、PagerDuty、Discord 等通知动作。",
+      "source": "Create Sentry alerts using the workflow engine API. Use when asked to create alerts, set up notifications, configure issue priority alerts, or build workflow automations. Supports email, Slack, PagerDuty, Discord, and other notification actions.",
+      "source_sha256": "57f9d56bee57a7c8da63ee7355ab8075e9e800933f5c3f473a82bc1be0d3c78c",
+      "source_path": "skills/sentry-create-alert/SKILL.md",
+      "package_sha256": "b2c7be19d1700af116c8a46a305300e2a733d0443d55c43b6c5824dae37895d4",
+      "source_package": "sentry-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b89674a93854f7a9102797b0ed1e0493d649306cbefd8e049b6c06f6738ff95f": {
+      "description_zh": "调试并修复 Sentry 问题：按链接、编号或搜索定位错误，获取堆栈、面包屑、追踪和日志，可选用 Seer 根因分析或自动修复，落实代码修改，并通过带 Fixes PROJECT-NAME-12A 的提交或 PR 关联解决。",
+      "source": "Debug and fix a Sentry issue — find it (by link, ID, or search), pull full context (stack trace, breadcrumbs, trace, logs), optionally run Seer root-cause / autofix, apply the code fix, and resolve it via a `Fixes PROJECT-NAME-12A` commit/PR. Use when working a known error or hunting one down to fix.",
+      "source_sha256": "b89674a93854f7a9102797b0ed1e0493d649306cbefd8e049b6c06f6738ff95f",
+      "source_path": "skills/sentry-debug-issue/SKILL.md",
+      "package_sha256": "b2c7be19d1700af116c8a46a305300e2a733d0443d55c43b6c5824dae37895d4",
+      "source_package": "sentry-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f83053f0a764ebfe6e81a0899c755bacb90e0f27d7df7a16b0131bec75347a4f": {
+      "description_zh": "恢复 Sentry 堆栈的可读性：为 JavaScript/TypeScript 上传 source map，为原生和移动端上传 dSYM、ProGuard/R8、NDK 符号、Dart 混淆映射或 .NET PDB。适用于堆栈只有压缩名称、打包路径、地址或缺少文件及行号的情况。",
+      "source": "Make Sentry stack traces readable — upload source maps for JavaScript/TypeScript, or debug files for native and mobile (dSYM, ProGuard/R8, NDK symbols, Dart obfuscation maps, .NET PDBs). Use when frames in Sentry show minified names, bundled paths, hex addresses, \"unknown\", or method names with no file/line, instead of your original source.",
+      "source_sha256": "f83053f0a764ebfe6e81a0899c755bacb90e0f27d7df7a16b0131bec75347a4f",
+      "source_path": "skills/sentry-fix-stack-traces/SKILL.md",
+      "package_sha256": "b2c7be19d1700af116c8a46a305300e2a733d0443d55c43b6c5824dae37895d4",
+      "source_package": "sentry-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e7c7628e01beeeab59df12b58b146fbe66b0fd8aefb7aaae463f7108cc3e315": {
+      "description_zh": "作为通过智能体使用 Sentry 的引导入口，检查当前配置，为新项目创建 Sentry 项目、安装 SDK 并确认真实遥测数据到达。错误、追踪和默认信号采用合理初始设置，增加其他信号或修复问题则分流到专项技能。",
+      "source": "Guided entry point for using Sentry through your agent. Orients you to your current setup and, for a new project, sets up Sentry end to end with sane defaults — provision a project, install the SDK (errors, tracing, and whatever it enables by default), and confirm real telemetry reaches Sentry. Routes other intents (adding more signals, fixing issues) to the right skill.",
+      "source_sha256": "6e7c7628e01beeeab59df12b58b146fbe66b0fd8aefb7aaae463f7108cc3e315",
+      "source_path": "skills/sentry-get-started/SKILL.md",
+      "package_sha256": "b2c7be19d1700af116c8a46a305300e2a733d0443d55c43b6c5824dae37895d4",
+      "source_package": "sentry-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5c9310a43a11ab093b3c40636e08b34f044784554e94a19a5bc05a7cdb5462d": {
+      "description_zh": "为应用接入或扩展 Sentry：识别平台、按需安装初始化 SDK，并配置错误监控、性能追踪、日志、指标、性能剖析、会话回放、用户反馈、定时任务检查或 AI/LLM 监控。AI 场景覆盖智能体运行、令牌成本和多种框架的对话记录。",
+      "source": "Instrument an application with Sentry — detect the platform, install and initialize the SDK if needed, and wire up any signal — error monitoring, tracing/performance, logging, metrics, profiling, session replay, user feedback, cron check-ins, and AI/LLM monitoring (agent runs, token cost, and conversations for OpenAI, Anthropic, Vercel AI, LangChain, Google GenAI, Pydantic AI, and Laravel AI). Use to add Sentry to a project or to capture more than errors.",
+      "source_sha256": "c5c9310a43a11ab093b3c40636e08b34f044784554e94a19a5bc05a7cdb5462d",
+      "source_path": "skills/sentry-instrument/SKILL.md",
+      "package_sha256": "b2c7be19d1700af116c8a46a305300e2a733d0443d55c43b6c5824dae37895d4",
+      "source_package": "sentry-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9be7627c1389ad2fd7624c5fc2121f24ab0ee7a692411d4acc3585d8bfa012b": {
+      "description_zh": "配置 OpenTelemetry Collector 的 Sentry Exporter，实现多个项目的遥测路由及自动创建项目。适用于 OTel 与 Sentry 接入、追踪及日志管道配置，以及多个服务向不同 Sentry 项目发送数据。",
+      "source": "Configure the OpenTelemetry Collector with Sentry Exporter for multi-project routing and automatic project creation. Use when setting up OTel with Sentry, configuring collector pipelines for traces and logs, or routing telemetry from multiple services to Sentry projects.",
+      "source_sha256": "d9be7627c1389ad2fd7624c5fc2121f24ab0ee7a692411d4acc3585d8bfa012b",
+      "source_path": "skills/sentry-otel-exporter-setup/SKILL.md",
+      "package_sha256": "b2c7be19d1700af116c8a46a305300e2a733d0443d55c43b6c5824dae37895d4",
+      "source_package": "sentry-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b25f2530b063a359d9804c3ae176ea8c65dc7bd820601417cdc3b9214a18a4bf": {
+      "description_zh": "配置 Sentry 版本和部署追踪：为事件标注版本及环境，在 CI 中创建关联提交的版本，并连接可疑提交及代码映射，以识别引入问题的版本、相关提交及版本健康情况。适用于未知版本、缺少可疑提交或需要追踪部署变化的情况。",
+      "source": "Set up Sentry releases and deploy tracking — tag events with a version and environment, create the release in CI with its commits, and wire up suspect commits and code mappings, so Sentry can show which release introduced an issue, which commit is responsible, and release health. Use when asked to set up releases, track deploys, see what changed, or when issues show an unknown release or no suspect commit.",
+      "source_sha256": "b25f2530b063a359d9804c3ae176ea8c65dc7bd820601417cdc3b9214a18a4bf",
+      "source_path": "skills/sentry-setup-releases/SKILL.md",
+      "package_sha256": "b2c7be19d1700af116c8a46a305300e2a733d0443d55c43b6c5824dae37895d4",
+      "source_package": "sentry-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "679e85372bbc6d44c59aa359faa65d5f03469b0216fd497f06378b000fe13eef": {
+      "description_zh": "为 Apple/Cocoa 项目完整配置 Sentry Snapshots。适用于 SnapshotPreviews、Apple 快照测试、向 Sentry 上传快照、GitHub Actions 快照流程及选择性快照测试。",
+      "source": "Full Sentry Snapshots setup for Apple/Cocoa projects. Use when asked to \"setup SnapshotPreviews\", \"setup Apple snapshot testing\", \"upload Apple snapshots to Sentry\", \"setup Apple snapshot GitHub Actions\", or \"setup Apple selective snapshot testing\".",
+      "source_sha256": "679e85372bbc6d44c59aa359faa65d5f03469b0216fd497f06378b000fe13eef",
+      "source_path": "skills/sentry-snapshots-cocoa/SKILL.md",
+      "package_sha256": "b2c7be19d1700af116c8a46a305300e2a733d0443d55c43b6c5824dae37895d4",
+      "source_package": "sentry-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a78ffe56a829fb6afee0dc7b32e2fdc3c81d99d2955ea1f8840efdaa12457ad": {
+      "description_zh": "指导使用 Sentry CLI 从命令行访问 Sentry。适用于查看问题、事件、项目和组织，调用 API 或完成 CLI 身份认证。",
+      "source": "Guide for using the Sentry CLI to interact with Sentry from the command line. Use when the user asks about viewing issues, events, projects, organizations, making API calls, or authenticating with Sentry via CLI.",
+      "source_sha256": "9a78ffe56a829fb6afee0dc7b32e2fdc3c81d99d2955ea1f8840efdaa12457ad",
+      "source_path": "skills/sentry-cli/SKILL.md",
+      "package_sha256": "b9c06f3e115a900173fd9c9138355fad6803e4307bbf18c31e152e01d7f09c4b",
+      "source_package": "sentry-cli-0.46.0-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90aca1c8d0743e4e48ed27ee968564eb943738973d345516ce8bb3714902328e": {
+      "description_zh": "通过 GSC Wizard MCP 分析 Google Search Console 中的关键词内耗，找出同一网站多个页面争夺同一查询的情况，比较点击、展示、点击率及排名，为每组确定主页面，并提出合并、规范化、区分意图或调整内部链接锚文本的建议。",
+      "source": "Detect and resolve keyword cannibalization in Google Search Console data via the GSC Wizard MCP server. Finds queries where multiple pages of one property compete for the same search, compares the contenders on clicks, impressions, CTR, and position, picks a canonical winner per cluster, and recommends fixes (consolidate, canonicalize, differentiate intent, adjust internal anchors). Use when the user mentions cannibalization, keyword cannibalization, pages competing for the same keyword, multiple URLs ranking for one query, or asks which page should rank for a keyword.",
+      "source_sha256": "90aca1c8d0743e4e48ed27ee968564eb943738973d345516ce8bb3714902328e",
+      "source_path": "skills/cannibalization/SKILL.md",
+      "package_sha256": "4facbed7de49e4c733a7e5ec81285b2ce6de1cbf13896971c5fe2f6d05375b2a",
+      "source_package": "SEO GSC Wizard-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e6568be101fcbe9c67feb5088db271c1874ee69596c83538a3b556f1e4fb176": {
+      "description_zh": "通过 GSC Wizard MCP 发现并分级处理 Google Search Console 中流量衰退的内容，结合衰退概览、页面筛查、逐页分析及可选流量预测制定恢复方案。适用于自然点击下降、内容刷新候选和页面流量恢复规划。",
+      "source": "Find, triage, and build recovery plans for decaying content in Google Search Console using the GSC Wizard MCP tools (get_decay_overview, find_decaying_content, per-page drill-downs, optional traffic forecast). Use when the user asks about decaying content, pages losing traffic, content refresh candidates, which pages are dying, declining organic clicks, or wants a content refresh or recovery plan.",
+      "source_sha256": "7e6568be101fcbe9c67feb5088db271c1874ee69596c83538a3b556f1e4fb176",
+      "source_path": "skills/content-decay/SKILL.md",
+      "package_sha256": "4facbed7de49e4c733a7e5ec81285b2ce6de1cbf13896971c5fe2f6d05375b2a",
+      "source_package": "SEO GSC Wizard-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c46710d0a6dce0aadc13e5390072cf0732939069c3cf30415b4ab9ef8ac21575": {
+      "description_zh": "通过 GSC Wizard MCP 检查 Search Console 网站的索引与抓取健康，审查已跟踪 URL 的索引状态、站点地图覆盖和考虑配额的定向 URL 检查；可选检查 Bing 抓取问题及 IndexNow 重提，按原因汇总问题并给出修复建议。",
+      "source": "Run an indexing and crawl health check for a Search Console property via the GSC Wizard MCP server; reviews tracked-URL indexing status, sitemap coverage, and quota-aware targeted URL inspections, optionally Bing crawl issues and IndexNow resubmission, then reports issues grouped by cause with concrete fixes. Use when the user mentions indexing problems, pages not indexed, deindexed or dropped pages, crawl issues, sitemap coverage, or asks \"is Google indexing my site\".",
+      "source_sha256": "c46710d0a6dce0aadc13e5390072cf0732939069c3cf30415b4ab9ef8ac21575",
+      "source_path": "skills/indexing-health/SKILL.md",
+      "package_sha256": "4facbed7de49e4c733a7e5ec81285b2ce6de1cbf13896971c5fe2f6d05375b2a",
+      "source_package": "SEO GSC Wizard-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25a69051af9adf3f041a6ee69ae991fdde39fbecf2226f682a4c349e992a078d": {
+      "description_zh": "结合 GSC Wizard MCP 的机会评分、排名分布、点击率曲线偏低表现及接近目标排名关键词的点击增长估算，筛选并排序短期 SEO 改善机会，按预期影响和工作量形成统一行动清单。",
+      "source": "Find and rank quick-win SEO opportunities for a Search Console property by combining opportunity scoring, position distribution, CTR-curve underperformance, and striking-distance click-upside estimates from the GSC Wizard MCP server, then merge everything into one prioritized action list with expected impact and effort. Use when the user asks for quick wins, low hanging fruit, easy SEO improvements, striking distance keywords, or which pages or queries to optimize first for the fastest gains.",
+      "source_sha256": "25a69051af9adf3f041a6ee69ae991fdde39fbecf2226f682a4c349e992a078d",
+      "source_path": "skills/quick-wins/SKILL.md",
+      "package_sha256": "4facbed7de49e4c733a7e5ec81285b2ce6de1cbf13896971c5fe2f6d05375b2a",
+      "source_package": "SEO GSC Wizard-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f3646e44fad8fa1a21f79aecdbe14102d3117085e20d845cd6e959da74151c0": {
+      "description_zh": "使用 GSC Wizard MCP 对单个 Search Console 网站进行综合 SEO 健康审查，覆盖 28 天表现及对比、排名构成、显著变化、异常、内容衰退、关键词内耗、机会评分和 Core Web Vitals，汇总健康判断、主要风险、机会与优先行动。",
+      "source": "Run a comprehensive SEO health audit of a single Search Console property using the GSC Wizard MCP tools, covering a 28-day performance overview with comparison, ranking mix, significant movers, anomalies, content decay, cannibalization, opportunity scoring, and Core Web Vitals, synthesized into a health verdict, top risks, top opportunities, and a prioritized action plan. Use when the user says things like \"audit my site\", \"SEO health check\", \"how is my site doing in search\", \"give me a full SEO audit\", or asks for an overall assessment of a property's organic search health.",
+      "source_sha256": "1f3646e44fad8fa1a21f79aecdbe14102d3117085e20d845cd6e959da74151c0",
+      "source_path": "skills/site-audit/SKILL.md",
+      "package_sha256": "4facbed7de49e4c733a7e5ec81285b2ce6de1cbf13896971c5fe2f6d05375b2a",
+      "source_package": "SEO GSC Wizard-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35dc80aa13f0e21b09aacaf66d74c7415054ee44d5d787031aeed6b787fad8df": {
+      "description_zh": "为 Search Console 网站生成每周 SEO 摘要，用考虑数据延迟的 7 天窗口与上周比较，报告核心指标、查询和页面涨跌、排名变化、趋势转折、Google 算法更新重叠及已记录的网站变更，并给出关注项和建议。",
+      "source": "Produce a weekly SEO performance digest for a Search Console property using the GSC Wizard MCP tools; compares a lag-adjusted 7-day window against the prior week, surfaces headline metrics, top query and page movers in both directions, ranking changes, trend breaks, Google algorithm update overlap, and logged site changes, then delivers a concise digest with watch items and recommendations. Use when the user asks for a weekly report, a weekly SEO update, \"how did we do this week\", a week-over-week summary, or a recurring performance digest for a site.",
+      "source_sha256": "35dc80aa13f0e21b09aacaf66d74c7415054ee44d5d787031aeed6b787fad8df",
+      "source_path": "skills/weekly-report/SKILL.md",
+      "package_sha256": "4facbed7de49e4c733a7e5ec81285b2ce6de1cbf13896971c5fe2f6d05375b2a",
+      "source_package": "SEO GSC Wizard-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6dada5010890871d9ed6d8852828120cd361b0293f5cf60b64db93616d18bc05": {
+      "description_zh": "在 Article Brief 批准前及主编复核前审查现有内容库，依据 Flexim 只读访问、完整导出或明确的空库声明，评估语义重叠、内容缺口、竞争草稿、更新机会及内部链接，输出带证据的内容组合决策与差异化约定；不修改文章、CMS 或编辑约定。",
+      "source": "Audit the current content library before Article Brief approval and again before chief-editor review. Use read-only Flexim access, a complete export, or an explicit declaration of an empty library to assess semantic overlap, gaps, competing drafts, update opportunities, and internal links. Return an evidence-linked portfolio decision and differentiation contract. Do not mutate articles, CMS, or the editorial contract.",
+      "source_sha256": "6dada5010890871d9ed6d8852828120cd361b0293f5cf60b64db93616d18bc05",
+      "source_path": "skills/audit-content-library/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c4b8ed0e551d419788b7da9dda5882dc30f3233f49c63d2734d6886826ec6a3": {
+      "description_zh": "独立审查文章的主张证据、亲身经验、专业深度、作者及出版方可信信息与作者专属证据缺口，不给 E-E-A-T 打分。适用于编辑后及署名、评测、案例、建议、比较、YMYL 或第一人称内容，区分必需与建议访谈，并仅依据已提供回答形成可追溯修订；不得编造经验、资历、来源或排名承诺。",
+      "source": "Audit an article's claim support, demonstrated first-hand experience, expertise depth, author and publisher trust surface, and author-only evidence gaps without assigning an E-E-A-T score. Use as an independent gate after edit-article, especially for named-author, review, case-study, advice, comparison, YMYL, AI-assisted, or first-person content. Distinguish a required evidence interview from a non-blocking recommended interview that would add concrete author contribution or information gain, route gaps to research, structure, rephrasing, deletion, or interview, and produce traceable patches only from supplied answers. Do not invent experience, credentials, sources, metrics, biographies, or ranking claims.",
+      "source_sha256": "4c4b8ed0e551d419788b7da9dda5882dc30f3233f49c63d2734d6886826ec6a3",
+      "source_path": "skills/audit-eeat/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d8a19f6be42c5bdf2663d872842667aab655f5b7cda5e793ea1c16cb20d8338": {
+      "description_zh": "审查并重写文章、文档、论文和技术文字的段落、列表及表格结构，逐段检查中心思想、可扫读性、信息开头、充分展开和收尾，保持列表关联、平行、顺序、分组及不重复。作为编辑后的独立检查，保留已批准含义、主张、来源和作者声音；不负责文章策略、新研究或发布。",
+      "source": "Audit and rewrite paragraph, list, and table structure in articles, documentation, essays, and technical prose. Use as a required independent gate after edit-article, or whenever every paragraph must be checked for one governing thought, scanability, informative openings, sufficient development, and clean endings, while lists remain linked, parallel, ordered, grouped, and non-repetitive. Preserve approved meaning, claims, sources, and author voice. Do not use for article strategy, new research, or publishing.",
+      "source_sha256": "1d8a19f6be42c5bdf2663d872842667aab655f5b7cda5e793ea1c16cb20d8338",
+      "source_path": "skills/audit-paragraph-structure/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b29d5da4d72a6dd2e073e9160ea547733cd3c08527059745b5ac6d83da218fd": {
+      "description_zh": "审查并选择性修改编辑、技术、营销及商业文案的语气，区分虚假表演、诚实表达和有明确框架及独立价值的趣味表达。检查虚构作者声音、内部制作语言泄漏、隐藏动机、虚假亲密、施压、奉承、羞辱、无依据自信和编造故事；不替代完整编辑、事实核查、E-E-A-T 审查或 Article Brief。",
+      "source": "Audit and selectively rewrite tone in editorial, technical, marketing, and commercial copy by separating false performance, honest speech, and justified play. Use as a required independent gate after edit-article, or to check invented author voice, production-language leakage, hidden motives, false intimacy, pressure, flattery, shame, unsupported confidence, fabricated stories, honest limits, care, and demonstration. Permit play only inside a clear frame with independent value. Do not replace full editing, fact-checking, E-E-A-T audit, or the Article Brief.",
+      "source_sha256": "8b29d5da4d72a6dd2e073e9160ea547733cd3c08527059745b5ac6d83da218fd",
+      "source_path": "skills/audit-tone-honesty/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "646650bafe016ad17dee913a61d195624c2f0e7dae86a1e2f2493e9d5c55b8c0": {
+      "description_zh": "明确文章希望帮助读者完成的实际行动，检查标题、开头、章节、示例、产品介绍和结尾是否推动所承诺的改变。适用于编辑后的独立检查、选题角度、Article Brief 审查及针对性商业文案修订；不替代完整编辑、结构或证据审查，未经明确批准不改变编辑约定。",
+      "source": "Define the text's useful action in the reader's world and verify that the title, opening, sections, examples, product block, and conclusion lead to the promised change. Use as a required independent gate after edit-article, or when choosing an angle, checking an Article Brief, or making a focused commercial-copy revision. Do not replace full editing, paragraph or evidence audits, or change the editorial contract without explicit approval.",
+      "source_sha256": "646650bafe016ad17dee913a61d195624c2f0e7dae86a1e2f2493e9d5c55b8c0",
+      "source_path": "skills/audit-useful-action/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4a216ac0bd8ecbdb7e4f604e26f4cd93339243ad84dcaae3e33c496b5b83705": {
+      "description_zh": "在文章编辑及五项独立审查后，由主编依据获批 Article Brief、来源、作者证据、产品状态和读者版 Markdown 处理各项发现，逐一接受、拒绝或暂缓重大意见，实施可追溯修改、评估影响并重跑受影响检查，明确访谈决策并在视觉工作前锁定含义；不代做独立审查、编造证据、制作视觉或发布。",
+      "source": "Resolve an article's independent editorial audits against its approved Article Brief, sources, author evidence, product state, and current reader Markdown. Use after edit-article and the five independent audits, or when author answers, user amendments, or final-reader findings reopen a locked decision. Accept, reject, or defer every material finding, apply only traceable edits, classify change impact, rerun only affected gates, decide explicitly on recommended author interviews, and lock meaning before visual work. Do not perform the independent audits, invent evidence, produce visuals, mutate CMS, or publish.",
+      "source_sha256": "f4a216ac0bd8ecbdb7e4f604e26f4cd93339243ad84dcaae3e33c496b5b83705",
+      "source_path": "skills/chief-editor-review/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c03086dace167eb744fdc6576271eb4cbe7d3dc9046c99725041a813c5af7cc7": {
+      "description_zh": "在最终整合和无上下文读者复核完成后，将明确授权的文章保存或更新为 Flexim CMS 私有草稿，回读完整记录以核对规范化 Markdown、关系、元数据及未发布状态。区分文章完成与已验证的草稿存储；不发布、删除、模糊覆盖或编造缺失字段，写入成功后仍须回读。",
+      "source": "Create or update an explicitly authorized private article draft in Flexim CMS after final integration and a context-free cold-reader review are ready, then read the full record back and verify normalized Markdown, relations, metadata, and unpublished state. Use when a user asks to save, upload, import, hand off, or update an article draft in Flexim CMS. Keep article completion and topic status separate from verified draft storage. Do not publish, delete, silently overwrite an ambiguous record, invent missing payload fields, or treat a successful write without read-back as complete.",
+      "source_sha256": "c03086dace167eb744fdc6576271eb4cbe7d3dc9046c99725041a813c5af7cc7",
+      "source_path": "skills/cms-draft-handoff/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "176bcc37c2cb47aa87165e53a9808ce5632b2beb18745a49d8077d389300d32b": {
+      "description_zh": "以不了解制作背景的新读者视角复核成稿，检查标题承诺、理解难度、连贯性、实际用途、产品表达真实性、媒体和内部语言泄漏。用于最终整合后及交付或私有 CMS 草稿前，仅看读者可见内容；不核查事实、编辑、读取仓库或 CMS、查看 Article Brief 或发布。",
+      "source": "Review a finished article as a fresh reader with no production context. Use after final-integration-check and before a final package or private CMS draft when a clean agent must judge title promise, comprehension, coherence, useful action, visible product honesty, media, and leaked internal language. See only reader-visible surfaces; do not fact-check, edit, read repositories or CMS, inspect an Article Brief, or publish.",
+      "source_sha256": "176bcc37c2cb47aa87165e53a9808ce5632b2beb18745a49d8077d389300d32b",
+      "source_path": "skills/cold-reader-review/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80cebe784e4c042d15a3b0d33f182a86b04f60028fc92b5909d48e0ac1ad83c2": {
+      "description_zh": "探索作者的意图与素材，拟定 Article Brief，或按已批准 Brief 撰写带证据关联的草稿。适用于选题分析后、方向批准或完整写作前，先完成作者信息发现再判断剩余证据需求，保留允许的作者声音且不编造经验；不用于编辑最终草稿或发布。",
+      "source": "Discover the author's intended direction and material, structure a proposed Article Brief, or write an evidence-linked draft from an approved Brief. Use after topic analysis and before direction approval or full drafting, including when sources alone could support a generic article. Resolve author discovery before classifying remaining evidence needs; preserve permitted voice without inventing experience. Do not use to edit a final draft or publish.",
+      "source_sha256": "80cebe784e4c042d15a3b0d33f182a86b04f60028fc92b5909d48e0ac1ad83c2",
+      "source_path": "skills/draft-article/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6eafd6f72cc065f374a8f8aa97e3dbd6e057953caff795e8ca90f8d81256401b": {
+      "description_zh": "依据含义、证据、结构、语气、句子、用词和节奏编辑、审查、缩短或润色已有长文。适用于各语言的人工审稿与自动文章流程，确保符合获批 Article Brief、主张权限、来源、产品状态及作者声音，并清除泄漏到读者文案的关键词、审查、MCP、结构或工作流内部语言；不从主题凭空创作或发布。",
+      "source": "Edit, audit, shorten, or polish an existing article or long-form draft from meaning and evidence through structure, tone, sentences, words, and rhythm. Use for manual review and automatic article pipelines in any language when a draft must remain faithful to an approved Article Brief, claim permissions, sources, product state, and assigned author voice, or when internal keyword, Brief, audit, MCP, schema, validation, or workflow language has leaked into reader copy. Do not use to invent an article from a topic or publish it.",
+      "source_sha256": "6eafd6f72cc065f374a8f8aa97e3dbd6e057953caff795e8ca90f8d81256401b",
+      "source_path": "skills/edit-article/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4f35eebce52ae59ba8573d99895c163d8c646364aa1922da6980d05f507f720": {
+      "description_zh": "在主编锁定文章、完成视觉整合后及独立读者复核前，联合核对最终 Markdown、媒体、图注、替代文本、作者和出版方元数据及 SEO 字段；仅在目标为 CMS 草稿时校验其请求数据。交付可迁移文章包、草稿数据与清晰的读者复核交接，或说明具体阻碍；不无故重开策略、创建素材、修改 CMS 或发布。",
+      "source": "Verify a chief-editor-locked article after visual integration and before independent final reader review. Check final Markdown, media, captions, alt text, author and publisher metadata, and SEO fields together; validate a CMS draft payload only when that is the requested destination. Return a portable article package or draft payload with a clean cold-reader dispatch, or a precise blocker. Do not reopen editorial strategy without cause, create assets, mutate CMS, or publish.",
+      "source_sha256": "c4f35eebce52ae59ba8573d99895c163d8c646364aa1922da6980d05f507f720",
+      "source_path": "skills/final-integration-check/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d90d3d6d1d9c5ed0a070be88152be29e876d5502216fa5b977abf00cfe9a9a22": {
+      "description_zh": "确定指定作者并通过建议的 Flexim 只读访问取得完整 Markdown voiceProfile；无法取得时校验临时提供的完整资料或既有 authorVoiceHandoff。写作或编辑前核对作者与资料的准确关系并记录来源，将资料限定用于声音、结构、词汇、节奏及格式适配；不把声音资料当事实证据、存入仓库、撰写正文或修改 CMS。",
+      "source": "Resolve an assigned author and obtain the complete Markdown voiceProfile through recommended read-only Flexim access, or validate a transient provided profile or existing authorVoiceHandoff when Flexim is unavailable or does not contain the complete profile. Use before drafting or editing when an Article Brief, CMS entry, or user assigns an author or requires that author's voice. Record provenance, verify the exact author-profile relationship, and constrain the profile to voice, composition, vocabulary, rhythm, and format adaptation. Do not require a Flexim profile when a complete safe portable input exists, store profiles in the repository, write article copy, treat a voice profile as evidence, or mutate CMS.",
+      "source_sha256": "d90d3d6d1d9c5ed0a070be88152be29e876d5502216fa5b977abf00cfe9a9a22",
+      "source_path": "skills/load-author-voice/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1fbf0164e28bdd3b01cbb9b463d878c6593680e871ce364a1486638e33d85ff6": {
+      "description_zh": "在 visual-storytelling 提供完整且兼容的已批准媒体需求后，于本地渲染或预检单个 Mermaid 信息图。适用于明确的 Mermaid 制作请求或可选媒体制作任务；不决定文章是否需要图、不静默安装依赖、不整合素材、访问 CMS 或发布。",
+      "source": "Render or preflight one approved Mermaid infographic locally after visual-storytelling has supplied a complete compatible media brief. Use for an explicit Mermaid production request or as an optional media-production worker; never use it to decide that an article needs a diagram, install dependencies silently, integrate assets, access CMS, or publish.",
+      "source_sha256": "1fbf0164e28bdd3b01cbb9b463d878c6593680e871ce364a1486638e33d85ff6",
+      "source_path": "skills/render-mermaid-infographic/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e43d58e02babd55bbbd6ac914fdd4c99e6ad4804ad72d14476271e2c3fa2c024": {
+      "description_zh": "统筹或恢复 SEO Writers 文章流程，从初始需求、选题或内容组合决策，经作者发现、获批 Article Brief、专项制作和独立审查，到最终文章包或明确授权的 CMS 私有草稿。确定新方向及写作前先澄清作者意图，保留来源背景、标题权限、证据边界和检查点交接；写作可不依赖 Flexim，绝不发布。",
+      "source": "Coordinate or resume SEO Writers from an onboarding prompt, topic selection, or portfolio decision through author discovery, an approved Article Brief, specialist work, independent reviews, and a final article package or explicitly authorized private CMS draft. Resolve author intent before fixing a new direction or drafting, preserving source context, title authority, evidence boundaries, and checkpoint handoffs. Use for the complete article workflow or a scoped revision batch. Keep Flexim optional for writing and never publish.",
+      "source_sha256": "e43d58e02babd55bbbd6ac914fdd4c99e6ad4804ad72d14476271e2c3fa2c024",
+      "source_path": "skills/run-seo-writing-workflow/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "730ccf23882626d01d4cf3a469835a111aea1574ca76f909f2f0ca9d393e1ed4": {
+      "description_zh": "为主编批准的长文规划、说明、审查并整合视觉叙事，涵盖有意义的截图、图示、图表、表格、插画、照片、视频、代码、图注及替代文本。依据获批 Brief、决策记录和读者版 Markdown 制定精简且有证据支持的媒体计划，从模板库选择叙事布局并区分模板逻辑与品牌样式；不重开编辑策略、按配额添加装饰图或伪造证据。",
+      "source": "Plan, brief, audit, and integrate the visual narrative of a chief-editor-approved article or long-form draft. Use after editorial validation when locked text needs meaningful screenshots, diagrams, charts, tables, illustrations, photos, video, code examples, captions, alt text, or production briefs. Turn an approved Article Brief, decision log, and reader Markdown into a minimal evidence-safe media plan, select narrative compositions from the bundled template library, and separate template logic from brand styling. Do not reopen editorial strategy, add decorative images by quota, or fabricate proof.",
+      "source_sha256": "730ccf23882626d01d4cf3a469835a111aea1574ca76f909f2f0ca9d393e1ed4",
+      "source_path": "skills/visual-storytelling/SKILL.md",
+      "package_sha256": "45b1a9b2af6eb6ddc5cb977dd13f3731de23e5fe9a5847cb029a669b4117320b",
+      "source_package": "SEO Writers-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06a801e04c87e8a2cbe9e8b6a2a0ab3d8d49d72fbdd201e9b8d2d08b3c8f4ce0": {
+      "description_zh": "研究 AEO/GEO 需求、AI 回答及生成式搜索查询语料、实体与来源分布、引用来源及竞品基准，支持土耳其语与英语双语研究、访问缺口规划、证据时效和分类，并处理将未证实技巧当通则的倾向；不用于页面审查、改写、技术 SEO、结构化数据、hreflang、实施或长期可见度监测。",
+      "source": "Use when a request concerns AEO/GEO demand research, AI-answer or generative-search query-corpus research, entity or source-landscape mapping, citation-source or competitor benchmarking, bilingual TR/EN research, missing-access planning, evidence freshness or classification, or pressure to treat unproven tactics as universal rules; do not use for page audits, content rewriting, technical SEO, schema, hreflang, implementation, or longitudinal visibility monitoring.",
+      "source_sha256": "06a801e04c87e8a2cbe9e8b6a2a0ab3d8d49d72fbdd201e9b8d2d08b3c8f4ce0",
+      "source_path": "skills/ai-search-research/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4de97898b713bc9fafb6ae634fa3e43738378e8be5133a7c0bc9ef5b140ba3e1": {
+      "description_zh": "基于冻结且以哈希固定的查询语料及符合约定的 Research Pack，重复测量 AI 搜索提及、引用、回答准确度、引用来源占比、引荐、检索轨迹、引用对主张的支持、不确定性和非因果变化。适用于基线、重复观察、访问缺口及对比；不做实时研究、发现查询、优化、绕过访问控制、排名承诺或因果归因。",
+      "source": "Measure repeatable AI-search mention, citation, answer accuracy, cited-source share, referral, retrieval traces, citation-to-claim support, uncertainty, and non-causal drift from a frozen, hash-pinned Query Corpus and contract-valid Research Pack. Use for AI visibility baselines, repeated engine/surface observations, citation monitoring, grounding-query or consulted-source capture when disclosed, access-gap reporting, or comparison runs. Do not use for live research, query discovery, optimization, access-control bypass, rankings, guarantees, or causal attribution.",
+      "source_sha256": "4de97898b713bc9fafb6ae634fa3e43738378e8be5133a7c0bc9ef5b140ba3e1",
+      "source_path": "skills/ai-visibility-monitor/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d96c209c4965ba91b8bd0bf7cad5020d52eb1a90a359c5e15926f593cdae016b": {
+      "description_zh": "在明确授权下，于代码库或内容系统实施范围确定且已批准的 SEO 动作，核验具体修改并报告局限；不用于广泛审查、自行批准生产变更或保证效果。",
+      "source": "Use when explicitly authorized to implement a bounded, approved SEO action in a codebase or content system, verify the exact change, and report its limitations; do not use for broad audits, self-approved production changes, or outcome guarantees.",
+      "source_sha256": "d96c209c4965ba91b8bd0bf7cad5020d52eb1a90a359c5e15926f593cdae016b",
+      "source_path": "skills/optimise-seo/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e03356686fcdbc8a7c96db8547ee01e962d8489ef7150e6c13ee3467c9940b2f": {
+      "description_zh": "将已验证的 SEO、AEO、GEO、技术或测量发现整理为带证据关联、可供批准的行动计划，不保证排名、引用、流量或转化结果。",
+      "source": "Use when turning validated SEO, AEO, GEO, technical, or measurement findings into an approval-ready, evidence-linked action plan without claiming guaranteed ranking, citation, traffic, or conversion outcomes.",
+      "source_sha256": "e03356686fcdbc8a7c96db8547ee01e962d8489ef7150e6c13ee3467c9940b2f",
+      "source_path": "skills/seo-action-plan/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b3a01c84c614ca75672fa02d834c90025519126f76fdc4f4d1f20a07a5f756a": {
+      "description_zh": "依据固定的 AI 搜索 Research Pack，审查所提供页面、文档或内容集合的直接回答完整性、问题及意图覆盖、清晰度、可提取性、主张证据和可见内容一致性。适用于 AEO 和回答准备度；不负责生成式引擎提及策略、实时研究、改写、结构化数据、技术实施或可见度监测。",
+      "source": "Audit supplied pages, documents, or content sets for direct-answer completeness, question and intent coverage, clarity, extractability, claim support, and visible-content consistency against a pinned AI-search Research Pack. Use for AEO, answer-engine optimization, answer readiness, answer extraction, featured-answer preparation, or requests asking whether content clearly and supportably answers researched questions. Do not use for generative-engine mention/citation strategy, live research, content rewriting, schema generation, technical SEO implementation, or visibility monitoring.",
+      "source_sha256": "6b3a01c84c614ca75672fa02d834c90025519126f76fdc4f4d1f20a07a5f756a",
+      "source_path": "skills/seo-aeo/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f290f8105dc3900747e26eb0edd37091664ae85682f97847957dba1de3396ed": {
+      "description_zh": "审查 AI 智能体能否通过渲染界面、DOM、无障碍树、表单、认证、同意及状态变化安全理解并完成网页任务，并核对 UCP、ACP、MCP、A2A 等已记录协议能力。评估任务准备度与可访问性，不将其视为排名因素或保证智能体使用。",
+      "source": "Use when auditing whether an AI agent can safely understand and complete a web task through the rendered interface, DOM, accessibility tree, forms, authentication, consent, state changes, and documented protocol capabilities such as UCP, ACP, MCP, or A2A; treat this as task readiness and accessibility, not a ranking factor or guaranteed agent usage.",
+      "source_sha256": "5f290f8105dc3900747e26eb0edd37091664ae85682f97847957dba1de3396ed",
+      "source_path": "skills/seo-agentic/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c74687ee78c9bb81bf1ab3f39621ab365f9d31caa1c951c486349d85c1e21b9e": {
+      "description_zh": "审查或设计大规模网站架构、内部链接图、抓取深度、孤立页面、中心页、导航、上下文锚点、分页、筛选面、分类、模板链接和 URL 对查询覆盖。要求有界的已采集链接图及业务和用户依据，不采用任意点击深度、链接数量或类似 PageRank 分数作为目标。",
+      "source": "Use when auditing or designing site architecture, internal-link graphs, crawl depth, orphan pages, hubs, navigation, contextual anchors, pagination, facets, taxonomy, template links, or URL-to-query coverage at scale; require a bounded captured graph and business/user rationale rather than arbitrary click-depth, link-count, or PageRank-like score targets.",
+      "source_sha256": "c74687ee78c9bb81bf1ab3f39621ab365f9d31caa1c951c486349d85c1e21b9e",
+      "source_path": "skills/seo-architecture/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27e28d7b9162293497d3147f57acb7c3178956fdab046492755403cd8801e497": {
+      "description_zh": "统筹范围明确的多方向 SEO 评估，明确范围、证据采集、发现、责任人和局限，并协调专项审查；不生成通用总分或声称完成未经验证的实施。",
+      "source": "Use when a site needs a bounded multi-lane SEO assessment with explicit scope, evidence capture, findings, ownership, and limitations; coordinate specialists rather than produce a universal audit score or unverified implementation claim.",
+      "source_sha256": "27e28d7b9162293497d3147f57acb7c3178956fdab046492755403cd8801e497",
+      "source_path": "skills/seo-audit/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "660beb09583660215455635b8385051f92ccafbb6b40ae3a68be68631b66ddb9": {
+      "description_zh": "依据授权的一方、Bing、供应商或公开证据，审查反向链接、引荐域、来源引用、品牌提及、未链接提及、可获链接内容资产、数字公关及站外来源分布。保留供应商指标定义并识别操纵风险，不把专有权威分数当普遍真理或推荐链接作弊。",
+      "source": "Use when auditing backlinks, referring domains, source citations, brand mentions, unlinked mentions, linkable assets, digital PR evidence, or off-site source landscapes from authorized first-party, Bing, vendor, or public evidence; preserve vendor metric definitions, detect manipulative risk, and never treat a proprietary authority score as universal truth or recommend link schemes.",
+      "source_sha256": "660beb09583660215455635b8385051f92ccafbb6b40ae3a68be68631b66ddb9",
+      "source_path": "skills/seo-authority/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81430a3088119154304b1f9f371a0ac88325ad662c46b7bba6c9072c7571a578": {
+      "description_zh": "审查或规划电商搜索可见度，覆盖商品和分类页、Product/MerchantListing 结构化数据、Google Merchant Center、Bing 商品数据源、价格库存及配送退货一致性、IndexNow 时效和已记录的 AI 商品发现与商业集成。要求页面、数据源和政策证据真实，不保证资格、排名、推荐或销售。",
+      "source": "Use when auditing or planning ecommerce search visibility across product/category pages, Product or MerchantListing structured data, Google Merchant Center, Bing shopping feeds, price/availability/shipping/returns parity, IndexNow freshness, or documented AI product-discovery and commerce integrations; require visible-page and feed truth, policy evidence, and no eligibility, ranking, recommendation, or sales guarantee.",
+      "source_sha256": "81430a3088119154304b1f9f371a0ac88325ad662c46b7bba6c9072c7571a578",
+      "source_path": "skills/seo-commerce/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb923f295dfe9fbfa9b61d47d80b6daeeb203f55628c48f2dfb8d02c1f7f95b4": {
+      "description_zh": "依据注明日期且可归属的产品证据，研究、拟定或撰写公允的产品对比、竞品比较和替代方案页面；避免无依据的优越性主张、复制竞品内容或人为制造 SEO 对比。",
+      "source": "Use when researching, briefing, or drafting fair comparison, versus, or alternative pages using dated, attributable product evidence; avoid unsupported superiority claims, copied competitor content, and artificial SEO comparisons.",
+      "source_sha256": "cb923f295dfe9fbfa9b61d47d80b6daeeb203f55628c48f2dfb8d02c1f7f95b4",
+      "source_path": "skills/seo-competitor-pages/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57d2a6463ebf789966aae356f23f71a8f59f5ac28d6042e2e9e4f5468006a8a6": {
+      "description_zh": "针对明确受众、页面目的、地区语言和证据集合，审查、拟定、改写或复核网站内容，产出可由人工评审的改进；不采用公式化 SEO 或保证 AI 引用。",
+      "source": "Use when auditing, briefing, rewriting, or reviewing site content for a defined audience, page purpose, locale, and evidence set; produce human-reviewable content improvements without formulaic SEO or AI-citation guarantees.",
+      "source_sha256": "57d2a6463ebf789966aae356f23f71a8f59f5ac28d6042e2e9e4f5468006a8a6",
+      "source_path": "skills/seo-content/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6bda3c57e51d303ec6378e6ffa8c775cb43812a98a1de98fe52e90e801df1cfc": {
+      "description_zh": "依据固定的 AI 搜索 Research Pack，审查页面、实体记录、来源采集和引用观察中的实体一致性、证据可追溯性、引用适用性、引用来源对齐及已记录引擎控制。适用于 GEO、AI 引用和生成式回答中的品牌提及；不负责直接回答格式、实时研究、改写、结构化数据、技术实施、长期测量或保证展示。",
+      "source": "Audit supplied pages, entity records, source captures, and citation observations for generative-engine entity consistency, evidence traceability, citation suitability, cited-source alignment, and documented engine controls against a pinned AI-search Research Pack. Use for GEO, generative-engine optimization, AI citations, brand or entity mentions in generative answers, source alignment, or documented AI-search control audits. Do not use for direct-answer formatting or extractability, live research, content rewriting, schema generation, technical SEO implementation, longitudinal visibility measurement, or guaranteed placement claims.",
+      "source_sha256": "6bda3c57e51d303ec6378e6ffa8c775cb43812a98a1de98fe52e90e801df1cfc",
+      "source_path": "skills/seo-geo/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0abdb81b3b9c56f02518df7cfc246c1faf17d1122feed0cc43cfc56569076db5": {
+      "description_zh": "依据明确的地区语言和 URL 清单，审查或规划语言地区定位、hreflang 组、本地化 URL 映射、canonical 对齐及 x-default 行为，提供安全的实施指导；不编造翻译或目标市场。",
+      "source": "Use when auditing or planning language-region targeting, hreflang clusters, localized URL mappings, canonical alignment, or x-default behavior from an explicit locale and URL inventory; provide safe implementation guidance without inventing translations or markets.",
+      "source_sha256": "0abdb81b3b9c56f02518df7cfc246c1faf17d1122feed0cc43cfc56569076db5",
+      "source_path": "skills/seo-hreflang/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4cd3d412df006d6f737af9c25c941f5faec041b6aface87f0f8f48e6d8384e6a": {
+      "description_zh": "依据页面及媒体清单，审查图片可访问性、可发现性、元数据、响应式交付、图片站点地图和视觉性能，提供关联证据的改进；不保证关键词、格式或排名效果。",
+      "source": "Use when reviewing image accessibility, discoverability, metadata, responsive delivery, image sitemaps, or visual performance from a page/media inventory; provide evidence-linked improvements without keyword, format, or ranking guarantees.",
+      "source_sha256": "4cd3d412df006d6f737af9c25c941f5faec041b6aface87f0f8f48e6d8384e6a",
+      "source_path": "skills/seo-images/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9ad6bd701d08b29b98ac2b53e635af8b9391f30204d7bae209ff597f4d4fed5": {
+      "description_zh": "审查或规划门店、服务区域商家、执业者及多地点品牌的本地搜索可见度，涵盖 Google Business Profile、Bing Places、名称地址电话、营业时间、类别、地点页、LocalBusiness 数据、评论、重复项、服务区域及地域查询证据。要求授权的商家资料，不保证地图排名、来电、到访或收入。",
+      "source": "Use when auditing or planning local search visibility for a storefront, service-area business, practitioner, or multi-location brand across Google Business Profile, Bing Places, NAP/hours/categories, location pages, LocalBusiness data, reviews, duplicates, service areas, and location-aware query evidence; require authorized profile data and never promise map rankings, calls, visits, or revenue.",
+      "source_sha256": "e9ad6bd701d08b29b98ac2b53e635af8b9391f30204d7bae209ff597f4d4fed5",
+      "source_path": "skills/seo-local/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "046942b39346a67e343accb111b1fa0fb3a5471899a14dcd98df4b7b97e3902a": {
+      "description_zh": "审查或规划出版方在 Google News、Discover、新闻搜索及其他时效敏感渠道的可见度，覆盖编辑政策、文章页、日期署名、更正、大图、NewsArticle、新闻站点地图、数据源、付费墙和一方报告。要求当前政策证据，不保证收录、热门报道、流量、订阅或收入。",
+      "source": "Use when auditing or planning publisher visibility for Google News, Discover, news search, or comparable freshness-sensitive surfaces across editorial policy, article pages, dates/bylines, corrections, large images, NewsArticle markup, news sitemaps, feeds, paywalls, and first-party reports; require current policy evidence and never promise inclusion, Top stories, Discover traffic, subscriptions, or revenue.",
+      "source_sha256": "046942b39346a67e343accb111b1fa0fb3a5471899a14dcd98df4b7b97e3902a",
+      "source_path": "skills/seo-news-discover/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd1bfabbf832166268060f4ce0a07206f9bfc630b27cd688d6c4fa9a873dff7a": {
+      "description_zh": "对单个 URL 开展范围明确的综合 SEO 复核，涵盖读者任务、内容、元数据、链接、技术交付、无障碍和结构化数据，形成证据映射并把修复分配给实际责任人，不给页面打总分。",
+      "source": "Use when one URL needs a bounded mixed SEO review across reader task, content, metadata, links, technical delivery, accessibility, and structured data; produce an evidence map and route each fix to its real owner instead of a page score.",
+      "source_sha256": "fd1bfabbf832166268060f4ce0a07206f9bfc630b27cd688d6c4fa9a873dff7a",
+      "source_path": "skills/seo-page/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d41c5c125e5974f168f9f68e6a3bd496948c41bc290211dbe74bcdf93155c07f": {
+      "description_zh": "依据授权的 Google Search Console、Bing Webmaster Tools、分析、服务器日志、索引或 Core Web Vitals/RUM 数据建立并对比常规 SEO 表现，或设计评估受控实验。保留维度和数据质量限制，分开指标类别，不把观察变化转成因果结论或综合 SEO 分数。",
+      "source": "Use when establishing or comparing conventional SEO performance from authorized Google Search Console, Bing Webmaster Tools, analytics, server-log, indexation, or Core Web Vitals/RUM evidence, or when designing and evaluating a controlled SEO experiment; preserve dimensions and data-quality limits, keep metric families separate, and never turn observational movement into a causal or composite SEO score.",
+      "source_sha256": "d41c5c125e5974f168f9f68e6a3bd496948c41bc290211dbe74bcdf93155c07f",
+      "source_path": "skills/seo-performance/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb0885cf412ef3a64da64a4f052d3b1aaa91032404d941f03251acc81fd9a221": {
+      "description_zh": "将已验证的 SEO 发现和获批行动项排入由责任人负责的路线图，标明依赖、复核关卡、可测量结果和风险控制；不凭空增加工作、给出固定增长预测或通用日历。",
+      "source": "Use when sequencing validated SEO findings and approved action-plan items into an owner-based roadmap with dependencies, review gates, measurable outcomes, and risk controls; do not use it to invent work, fixed uplift forecasts, or a one-size-fits-all calendar.",
+      "source_sha256": "cb0885cf412ef3a64da64a4f052d3b1aaa91032404d941f03251acc81fd9a221",
+      "source_path": "skills/seo-plan/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9749a47af39e548237efd0889c77b1e43030dd57a82b63a7fe85d43bc329d872": {
+      "description_zh": "设计、审查或改进批量及模板驱动的 SEO 页面、数据支持的落地页系统和大型 URL 清单，要求源数据、有用性、差异性、索引控制和上线保护，而非单纯追求规模或关键词覆盖。",
+      "source": "Use when designing, auditing, or improving scaled/template-driven SEO pages, data-backed landing-page systems, or large URL inventories; require source data, usefulness, variation, indexing controls, and rollout safeguards rather than scale or keyword coverage targets.",
+      "source_sha256": "9749a47af39e548237efd0889c77b1e43030dd57a82b63a7fe85d43bc329d872",
+      "source_path": "skills/seo-programmatic/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d39fb6d5995d569820c169b841dbc4e210ec0a8f2090f2f8b3ee0fddea54fe5": {
+      "description_zh": "为范围明确的 SEO 决策研究常规搜索意图、受众问题、查询类别、内容缺口、网站覆盖、关键词内耗及竞品页面证据。后续用于测量或实施时生成可追溯查询语料，保留来源日期和不确定性；正式的多引擎 AI 搜索证据研究转交 ai-search-research。",
+      "source": "Use when researching conventional search intent, audience questions, query families, content gaps, site coverage, cannibalization, or competitor/page evidence for a bounded SEO decision; produce a provenance-aware query corpus when the work will drive measurement or implementation, retain source dates and uncertainty, and route formal multi-engine AI-search evidence to ai-search-research.",
+      "source_sha256": "7d39fb6d5995d569820c169b841dbc4e210ec0a8f2090f2f8b3ee0fddea54fe5",
+      "source_path": "skills/seo-research/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "521c177427c932144a00f24da6ebfb48d427438b11a653dec085857c0b1d1c57": {
+      "description_zh": "检测、校验、规划或生成与可见页面内容及当前搜索功能文档相符的真实 Schema.org 标记；不保证富媒体搜索结果、AI 引用或排名。",
+      "source": "Use when detecting, validating, planning, or generating truthful Schema.org markup tied to visible page content and current search-feature documentation; do not use it to promise rich results, AI citations, or rankings.",
+      "source_sha256": "521c177427c932144a00f24da6ebfb48d427438b11a653dec085857c0b1d1c57",
+      "source_path": "skills/seo-schema/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "754c20b39c51cf0229d2fb45ee9a925fa6dd40ca841b7955c54d88b4a3049861": {
+      "description_zh": "依据已验证的规范 URL 清单、发现证据及当前协议指导，审查、生成或规划 XML 站点地图变更；不因加入站点地图而保证抓取或索引。",
+      "source": "Use when auditing, generating, or planning XML sitemap changes from a verified canonical URL inventory, discovery evidence, and current protocol guidance; do not promise crawling or indexing from sitemap inclusion.",
+      "source_sha256": "754c20b39c51cf0229d2fb45ee9a925fa6dd40ca841b7955c54d88b4a3049861",
+      "source_path": "skills/seo-sitemap/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3dc44ac153ce07d361fdf6a80ab21849150e20d1e9ce1caa19a1b40bec9d6f1a": {
+      "description_zh": "调查抓取、索引、canonical、渲染、性能、重定向、指令、站点地图、爬虫控制、迁站、流量或索引突发异常、人工处罚及被入侵网站恢复，也可按证据范围评估、生成、验证、发布和维护 llms.txt 出版方指南；给出安全且可测试的实施建议，不提供通用技术总分。",
+      "source": "Use when investigating crawlability, indexability, canonicalization, rendering, performance, redirects, directives, sitemaps, crawler controls, site migrations, sudden traffic/index incidents, manual actions, hacked-site recovery, or when evaluating, generating, validating, publishing, and maintaining an evidence-scoped llms.txt publisher guide; return safe, testable implementation recommendations rather than a generic technical score.",
+      "source_sha256": "3dc44ac153ce07d361fdf6a80ab21849150e20d1e9ce1caa19a1b40bec9d6f1a",
+      "source_path": "skills/seo-technical/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "677a37a79455556bd2dd24b250cc3a6e990b205f0657851fe6fbf1d73f312335": {
+      "description_zh": "审查或规划视频发现与索引，涵盖观看页、嵌入播放器、缩略图、VideoObject、视频站点地图、转录、字幕、关键时刻、直播、地区语言版本及一方视频索引报告。要求已采集的播放器和页面证据，不保证索引、富媒体结果、观看量、引用或观看时长。",
+      "source": "Use when auditing or planning video discovery and indexing across watch pages, embedded players, thumbnails, VideoObject markup, video sitemaps, transcripts, captions, Key Moments, livestreams, locale variants, and first-party video indexing reports; require captured player/page evidence and never promise video indexing, rich results, views, citations, or watch time.",
+      "source_sha256": "677a37a79455556bd2dd24b250cc3a6e990b205f0657851fe6fbf1d73f312335",
+      "source_path": "skills/seo-video/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42ccf44223cfccd103ca74a1156022e02c5ff7f43fe55cbbf01e99415a701551": {
+      "description_zh": "作为 SEO、AEO、GEO 和 AI 搜索请求的统一入口，将普通用户目标映射到完整的 27 项技能覆盖检查，执行适用专项流程并在内部传递证据和交接，向授权边界交付综合结果。可直接调用专项技能；不创建通用分数、无依据控制、因果增长主张或展示保证。",
+      "source": "The autonomous front door and end-to-end orchestrator for any SEO, AEO, GEO, or AI-search request. Translate ordinary user goals into a complete 27-skill coverage screen, execute every applicable specialist workflow, carry evidence and handoffs internally, and return one consolidated result to the authorized boundary; direct specialist invocation remains optional. Do not create a universal score, unsupported control, causal uplift claim, or placement guarantee.",
+      "source_sha256": "42ccf44223cfccd103ca74a1156022e02c5ff7f43fe55cbbf01e99415a701551",
+      "source_path": "skills/seo/SKILL.md",
+      "package_sha256": "b3c0bc42372b272f257b87d4f93b89dc9121831393484ca696c673ef8822774f",
+      "source_package": "SEO-AEO-GEO Ultimate-3.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53da97ff5ed1bbe1ee48a2ac73bf3c9426159978d2e6b2a99c734af762e8852d": {
+      "description_zh": "为 React/Next.js SaaS 和网页应用提供 SEO 与 GEO 咨询、审查、策略及实施，覆盖技术 SEO、内容、结构化数据和 AI 搜索可见度。适用于元标签、JSON-LD、站点地图、robots.txt、Open Graph、Core Web Vitals、自然流量以及落地页、营销页、博客等公开内容的可发现性需求。",
+      "source": "Senior SEO and GEO (Generative Engine Optimization) consultant for SaaS and web applications built with React/Next.js. Audits, strategizes, and implements technical SEO, content optimization, structured data, and AI search visibility. Use this skill whenever the user mentions SEO, GEO, search visibility, meta tags, structured data, schema markup, JSON-LD, sitemaps, robots.txt, Open Graph, Core Web Vitals, AI search optimization, search rankings, organic traffic, content optimization for search, or wants their site to be discoverable by Google, Bing, ChatGPT, Perplexity, or AI Overviews. Also trigger when the user is building landing pages, marketing pages, blog pages, or any public-facing content where discoverability matters -- even if they don't explicitly say \"SEO\".",
+      "source_sha256": "53da97ff5ed1bbe1ee48a2ac73bf3c9426159978d2e6b2a99c734af762e8852d",
+      "source_path": "skills/seo-geo-consultant/SKILL.md",
+      "package_sha256": "41d80af039069273602de69b4f5d78ed072b663ffa1dcc538bdc030fb19c29b1",
+      "source_package": "seo-geo-consultant-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "033104a61b18e5d23d1bb920060de8fdd940735d37dcd52b935bfcfaf946f24f": {
+      "description_zh": "通过 SerpApi REST API 和 curl 查询 Google、Bing、Amazon、Walmart、YouTube、Google Maps、Google Scholar 等一百多个搜索引擎。适用于网页、商品价格、本地商家、论文、新闻、职位、航班酒店比较、搜索结果页分析及其他搜索结果获取。",
+      "source": "Search Google, Bing, Amazon, Walmart, YouTube, Google Maps, Google Scholar, and 100+ other engines via the SerpApi REST API. Calls the API using curl. Use when the user wants to search the web, find products or prices, look up local businesses, research academic papers, check news, find jobs, compare flights or hotels, analyze SERPs, or retrieve any search engine results.",
+      "source_sha256": "033104a61b18e5d23d1bb920060de8fdd940735d37dcd52b935bfcfaf946f24f",
+      "source_path": "skills/search/SKILL.md",
+      "package_sha256": "4c9bc1a1b370a8463f56185c8a5c55315cb1359c7db8e9f954712a637c1cd0b1",
+      "source_package": "SerpApi Claude Plugin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75b996b91a2c6e687fcb2de2e732ac75c87072f525f3247007c340d80649bd6e": {
+      "description_zh": "用于 fluent、ServiceNow 或 now-sdk 相关工作，以及根目录含 now.config.json 的 fluent 应用修改。也适用于读取真实实例数据，包括 sys_id 查找、表字段或结构检查、记录存在性、选项值及角色或作用域信息。",
+      "source": "Use whenever the user mentions fluent, ServiceNow, or the now-sdk, OR when the user prompts for edits within a fluent application (identified by a now.config.json at the project root). Also use when the user needs live instance data — looking up a sys_id, inspecting table columns or schema, checking whether a record already exists, fetching choice values, or reading role or scope info.",
+      "source_sha256": "75b996b91a2c6e687fcb2de2e732ac75c87072f525f3247007c340d80649bd6e",
+      "source_path": "skills/now-sdk/SKILL.md",
+      "package_sha256": "3f0a09a3d56a13c247b3a4ffbfcd75cb5f0ef43cafc990b10fffd98aa9911614",
+      "source_package": "servicenow-sdk-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5bb098a0005c3e706f098b96864a7514ca8162817328f5e2fb608eff2d5c0292": {
+      "description_zh": "担任多会话协作的规划与协调会话，编写含各会话任务和 API 约定的协调文件，在 Delta 机械检查通过后提交每轮工作并进行设计复核；不写代码。通过 /alpha 启动或恢复。",
+      "source": "Alpha — the brain session of a multi-session orchestrated effort. Plans the effort, writes the coordination file with per-session prompts and API contracts, commits each round once Delta's mechanical checks pass, then does design review. Never writes code. Invoke with /alpha to start or resume an effort.",
+      "source_sha256": "5bb098a0005c3e706f098b96864a7514ca8162817328f5e2fb608eff2d5c0292",
+      "source_path": "skills/alpha/SKILL.md",
+      "package_sha256": "d3c9cb0ba940a34a688abee373130d05744ed979d903e61b7c33c33281abbc57",
+      "source_package": "Session Orchestration-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e66a15afc5b1b18e654136ec400758fd307a6b1695e435b7c3dd2c2c3f3dc0e6": {
+      "description_zh": "担任多会话协作中的 Beta 开发会话，读取协调文件的 Beta Prompt，在分配的文件责任范围和 API 约定内执行。Alpha 完成规划后，在独立终端通过 /beta 启动。",
+      "source": "Beta — a builder session in a multi-session orchestrated effort. Reads the Beta Prompt from the coordination file and executes it, staying inside its assigned file ownership and API contracts. Invoke with /beta in its own terminal after Alpha has planned the effort.",
+      "source_sha256": "e66a15afc5b1b18e654136ec400758fd307a6b1695e435b7c3dd2c2c3f3dc0e6",
+      "source_path": "skills/beta/SKILL.md",
+      "package_sha256": "d3c9cb0ba940a34a688abee373130d05744ed979d903e61b7c33c33281abbc57",
+      "source_package": "Session Orchestration-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b03aa7e3ab3c166f681435fd518092c81de1809f0978f071764afca7890d99a": {
+      "description_zh": "担任多会话协作的机械验证关卡，执行类型检查、lint、测试、构建和冒烟检查，将通过或失败写入协调文件；不修改代码或发表设计意见。在编码结束、Alpha 设计复核前通过 /delta 启动。",
+      "source": "Delta — the mechanical verification gate of a multi-session orchestrated effort. Runs typecheck, lint, tests, build, and smoke tests, then reports pass/fail into the coordination file. Never edits code, never gives design opinions. Invoke with /delta after coding sessions finish and before Alpha's design review.",
+      "source_sha256": "2b03aa7e3ab3c166f681435fd518092c81de1809f0978f071764afca7890d99a",
+      "source_path": "skills/delta/SKILL.md",
+      "package_sha256": "d3c9cb0ba940a34a688abee373130d05744ed979d903e61b7c33c33281abbc57",
+      "source_package": "Session Orchestration-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "134907a11da81ca1779b6810b295e9bfdc8839f6d703ef81887605793e66e179": {
+      "description_zh": "担任多会话协作中的 Gamma 开发会话，读取协调文件的 Gamma Prompt，在指定文件责任范围和 API 约定内执行。Alpha 完成规划后，在独立终端通过 /gamma 启动。",
+      "source": "Gamma — a builder session in a multi-session orchestrated effort. Reads the Gamma Prompt from the coordination file and executes it, staying inside its assigned file ownership and API contracts. Invoke with /gamma in its own terminal after Alpha has planned the effort.",
+      "source_sha256": "134907a11da81ca1779b6810b295e9bfdc8839f6d703ef81887605793e66e179",
+      "source_path": "skills/gamma/SKILL.md",
+      "package_sha256": "d3c9cb0ba940a34a688abee373130d05744ed979d903e61b7c33c33281abbc57",
+      "source_package": "Session Orchestration-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7780f565d7e24beeb9cc645b89d06e2994ea057d2a135c6adda27a54797f2c13": {
+      "description_zh": "在负责工作的会话终端通过 /polish 执行 Alpha 设计复核后列入该会话协调文件章节的完善项，仅修复清单所列事项，不重构或增加功能。",
+      "source": "Polish — applies the polish items Alpha wrote into this session's coordination-file section after design review. Makes only the listed fixes, no refactors or new features. Invoke with /polish in the session terminal that owns the work.",
+      "source_sha256": "7780f565d7e24beeb9cc645b89d06e2994ea057d2a135c6adda27a54797f2c13",
+      "source_path": "skills/polish/SKILL.md",
+      "package_sha256": "d3c9cb0ba940a34a688abee373130d05744ed979d903e61b7c33c33281abbc57",
+      "source_package": "Session Orchestration-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "005ca7e2a46beb22f78c5a92a949344f1d4d6df0d3dbc04684f31d5bc0789531": {
+      "description_zh": "按关键词或自然语言在所有项目中搜索历史 Claude Code 会话，并恢复选中的会话。适用于查找、回忆或继续以前的 Claude Code 对话。",
+      "source": "Search past Claude Code sessions across all projects by keyword or natural-language query, then resume the chosen one. Use when the user asks to find, recall, or resume a previous Claude Code conversation.",
+      "source_sha256": "005ca7e2a46beb22f78c5a92a949344f1d4d6df0d3dbc04684f31d5bc0789531",
+      "source_path": "skills/find-session/SKILL.md",
+      "package_sha256": "5de10ff7dc333b594ee622ada96caf23352e13aa7628e4001e4e18732f864220",
+      "source_package": "session-finder-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "facf1ad7d5cbcc02fadbced02d52cdc86f2d9b12b6499b74e8ce4c9b9cf1cdbc": {
+      "description_zh": "清理 Claude Code 会话遗留的失效 Git worktree、悬空 Git 引用和孤立工作目录。适用于性能缓慢、磁盘不足、worktree 积累、维护或释放空间，尤其是频繁创建代码任务并遗留完整 worktree 副本的场景。",
+      "source": "Sweep up ALL session artifacts left behind by Claude Code: stale git worktrees, dangling git refs, and orphaned worktree directories. Use this skill whenever the user mentions slow performance, low disk space, too many worktrees, cleanup, maintenance, freeing space, or wants to reduce clutter from Claude Code sessions. Also triggers for 'my computer is slow', 'running out of space', 'clean up after Claude', or any mention of worktree or session accumulation. Especially relevant for heavy Claude Code users who spawn many code tasks — each task creates a full git worktree copy that persists after the session ends.",
+      "source_sha256": "facf1ad7d5cbcc02fadbced02d52cdc86f2d9b12b6499b74e8ce4c9b9cf1cdbc",
+      "source_path": "skills/session-sweep/SKILL.md",
+      "package_sha256": "1323317979cb931c7521f3313a11636a05fc4ea19d2f79518df001790e562531",
+      "source_package": "session-sweep-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64434962ff6f40bcda6ef571add796a47094cb3b46e6d3ec0a49df7e060362e3": {
+      "description_zh": "在为尚不存在的新功能、模块、类或 API 端点编码前采用新增功能流程。适用于新增、实现、创建和明确的新需求；已有功能行为变更转用 sextant:modify-feature，需求模糊时先用 sextant:refine-requirements。",
+      "source": "You MUST use this skill before writing any code for a new feature, module, class, or API endpoint. Use when the thing being built does not yet exist in the codebase — adding net-new functionality. Stronger signals: \"add\", \"implement\", \"create\", \"build\", \"new feature\", \"new endpoint\", explicit new requirement. Use sextant:modify-feature instead when the functionality already exists and you are changing its behavior. Use sextant:refine-requirements first if the requirement is vague or the scope is unclear.",
+      "source_sha256": "64434962ff6f40bcda6ef571add796a47094cb3b46e6d3ec0a49df7e060362e3",
+      "source_path": "skills/add-feature/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5217bbe24d8ba25a714bc382275a464d1064c2f2eb9f6af5162c8e4f90636f7f": {
+      "description_zh": "在只有错误、崩溃或异常表现而尚未定位到函数、文件或行时，先开展故障定位，适用于间歇故障、难以复现或没有堆栈的情况。已知具体故障位置时转用 sextant:fix-bug。",
+      "source": "You MUST use this skill before reading any code or proposing any fix when the bug location is unknown. Use when you have a symptom (error, crash, unexpected output) but cannot yet point to the specific function or line where it originates. Stronger signals: \"I don''t know where this is coming from\", \"can''t reproduce consistently\", \"something is wrong but I don''t know where\", intermittent failures, no stack trace. Use sextant:fix-bug instead when you CAN already point to the specific file or line causing the bug.",
+      "source_sha256": "5217bbe24d8ba25a714bc382275a464d1064c2f2eb9f6af5162c8e4f90636f7f",
+      "source_path": "skills/debug/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4ac2df989a8c6f5b5c7a2fc40f4271b93c9bbcf3b178ccf23e4f4de7043cd48": {
+      "description_zh": "在编写修复或修改代码前采用缺陷修复流程，恢复已有代码应有的行为，适用于错误、堆栈、失败和回归。尚未定位具体文件或行时先用 sextant:debug；需求本身发生变化则用 sextant:modify-feature。",
+      "source": "You MUST use this skill before writing any fix or editing any code to address a bug. Use when the code should do X but currently does Y — restoring correct behavior in existing code. Stronger signals: error messages, stack traces, \"not working\", \"broken\", \"failing\", \"regression\", \"it used to work\". Use sextant:debug instead when you have a symptom but cannot yet point to a specific file or line. Use sextant:modify-feature instead when the requirement itself is changing, not just broken behavior.",
+      "source_sha256": "e4ac2df989a8c6f5b5c7a2fc40f4271b93c9bbcf3b178ccf23e4f4de7043cd48",
+      "source_path": "skills/fix-bug/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51541382f9854aa2152bb00b545fe99fe1fdd640aa06f0f372ccda085002e027": {
+      "description_zh": "在跨模块迁移、升级或技术转换前采用协调迁移流程，适用于框架升级、语言转换、数据库结构迁移和重大 API 版本变化等需要多文件按顺序配合的工作。单模块行为修改且无需分步上线时转用 sextant:modify-feature。",
+      "source": "You MUST use this skill before starting any cross-module migration, upgrade, or technology conversion. Use when multiple files or modules must change in a coordinated sequence — framework upgrades, language conversions, schema migrations, or major API version changes. Stronger signals: \"migrate\", \"upgrade\", \"convert\", \"port\", \"move from X to Y\", \"upgrade to version N\", \"switch from X to Y\", \"schema migration\". Use sextant:modify-feature instead when only a single module''s behavior is changing without coordinated multi-step rollout.",
+      "source_sha256": "51541382f9854aa2152bb00b545fe99fe1fdd640aa06f0f372ccda085002e027",
+      "source_path": "skills/migrate/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b21b2b7c0bcfddace0cd0e7a275a312c5107972a2cdb5f052318b2ac158f24ca": {
+      "description_zh": "在修改、增强或重构现有功能前采用功能变更流程，调整行为、性能或结构。不存在的新功能转用 sextant:add-feature；已有行为出错、需要恢复正确性时转用 sextant:fix-bug。",
+      "source": "You MUST use this skill before changing, enhancing, or refactoring any existing functionality. Use when the code already exists and you are altering its behavior, performance, or structure — not fixing a bug. Stronger signals: \"modify\", \"refactor\", \"optimize\", \"improve\", \"change how X works\", \"enhance\", \"update the logic\". Use sextant:add-feature instead when the thing being built does not yet exist. Use sextant:fix-bug instead when the existing behavior is broken and needs to be restored.",
+      "source_sha256": "b21b2b7c0bcfddace0cd0e7a275a312c5107972a2cdb5f052318b2ac158f24ca",
+      "source_path": "skills/modify-feature/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5fde917b59fe2c47981bd12be6a62ab5e2a4df0fb9312eb168a2a9dac85682dc": {
+      "description_zh": "当需求清楚且尚无有序任务拆解时，规划多步骤实施顺序，生成含技能分配及验收条件的任务清单。需求仍模糊时先用 sextant:refine-requirements；范围清楚的单项任务可直接用 sextant:add-feature。",
+      "source": "You MUST use this skill before starting multi-step implementation work when no ordered task breakdown exists yet. Use when the requirement is confirmed and clear, and you need to answer \"how do we build this and in what order\" — producing an ordered task list with skill assignments and acceptance criteria. Stronger signals: \"plan this\", \"how should we build this\", \"break this into tasks\", \"sprint plan\", \"what order should we do this in\", \"create a task list\", \"what''s the implementation sequence\". Use sextant:refine-requirements first if the requirement itself is still ambiguous (that skill answers \"what\"; this skill answers \"how and in what order\"). Use sextant:add-feature directly when the task is a single, well-scoped unit that needs no sequencing.",
+      "source_sha256": "5fde917b59fe2c47981bd12be6a62ab5e2a4df0fb9312eb168a2a9dac85682dc",
+      "source_path": "skills/plan/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9cd1c76d8fde86dd8338efee949dbd9c6ca788b66cb2bc49da6af777cd0923c3": {
+      "description_zh": "作为无法匹配任何 sextant 专项技能时的通用编码备用流程，处理配置、样式、工具函数、一次性脚本等轻量任务。缺陷修复、定位、新增、变更、评审、测试、需求澄清、规划、发布、迁移及安全审查的专项技能均优先。",
+      "source": "Fallback for general coding work that does not match any specific sextant sub-skill. Use for lightweight tasks: config changes, style fixes, utility functions, one-off scripts, or tasks too small to warrant a dedicated workflow. All dedicated sub-skills take priority over this one — check these first: sextant:fix-bug (broken behavior), sextant:debug (unknown bug location), sextant:add-feature (new functionality), sextant:modify-feature (changing existing behavior), sextant:review-code (evaluating code), sextant:write-tests (test coverage), sextant:refine-requirements (ambiguous scope), sextant:plan (multi-step sequencing), sextant:ship (release prep), sextant:migrate (cross-module upgrade), sextant:security (vulnerability audit). Only use this skill when none of the above match.",
+      "source_sha256": "9cd1c76d8fde86dd8338efee949dbd9c6ca788b66cb2bc49da6af777cd0923c3",
+      "source_path": "skills/principles/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "588af16fab3f16694d9f8ba0c2ca170793a70e901de2648d82e802146312957b": {
+      "description_zh": "在需求模糊、歧义或过于宽泛时，先明确要做什么，完成范围界定、可行性评估及拆解，再进入设计或编码。需求已经具体且无歧义时可直接使用 sextant:add-feature。",
+      "source": "You MUST use this skill before writing any design or code when the requirement is vague, ambiguous, or too broad. Use when the \"what\" is unclear — the requirement needs scoping, feasibility assessment, or decomposition before anyone touches code. Stronger signals: \"unclear requirements\", \"break this down\", \"is this feasible\", \"help me design\", \"what do we need to build\", vague one-sentence feature requests, open-ended asks like \"build me X\". Skip this skill and go directly to sextant:add-feature only when the requirement is already concrete, scoped, and unambiguous.",
+      "source_sha256": "588af16fab3f16694d9f8ba0c2ca170793a70e901de2648d82e802146312957b",
+      "source_path": "skills/refine-requirements/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dde103257f46f9ba9de944165422ebe48e511c072f6bb0b14c2bf997543b7b66": {
+      "description_zh": "在评价或评论代码前进行代码评审，适用于质量、正确性、风格、合并准备度、PR、文件或差异检查。主要请求是评估代码时优先采用；专门审查安全漏洞时转用 sextant:security。",
+      "source": "You MUST use this skill before evaluating, commenting on, or giving feedback on any code. Use when the primary request is to assess existing code — quality, correctness, style, or readiness to merge. Stronger signals: \"review\", \"PR\", \"pull request\", \"code review\", \"check this code\", \"is this correct\", \"review this file\", \"give me feedback on\", \"look at this diff\". Takes highest priority when the primary request is to evaluate code rather than write or fix it. Use sextant:security instead when the review focus is specifically on security vulnerabilities.",
+      "source_sha256": "dde103257f46f9ba9de944165422ebe48e511c072f6bb0b14c2bf997543b7b66",
+      "source_path": "skills/review-code/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70536ad879b6ab258de0fa98493d3a5ccb1c9de1bb04cd344c45249dfda9ec06": {
+      "description_zh": "审查安全漏洞、攻击面和合规性，适用于认证、输入、权限、外部数据、OWASP、注入、XSS、渗透测试或威胁建模；原说明要求在批准或合并涉及这些内容的代码前采用。可独立运行或接在代码评审后，普通质量评审转用 sextant:review-code。",
+      "source": "You MUST use this skill before approving or merging any code that touches auth, input handling, permissions, or external data. Use when the review focus is specifically on security vulnerabilities, attack surface, or compliance — not general code quality. Stronger signals: \"security review\", \"check for vulnerabilities\", \"is this safe\", \"audit this\", \"OWASP\", \"injection\", \"auth check\", \"XSS\", \"SQL injection\", \"pentest\", \"threat model\". Can run standalone or as a follow-up after sextant:review-code. Use sextant:review-code instead when the goal is general code quality without a security focus.",
+      "source_sha256": "70536ad879b6ab258de0fa98493d3a5ccb1c9de1bb04cd344c45249dfda9ec06",
+      "source_path": "skills/security/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3bb631f28d98df3d7f04299bf38b66b3ef6be9e80916c78a4029efbbe1ede598": {
+      "description_zh": "在实现完成后准备交付，处理 PR 创建、变更日志、版本提升和合并前最终检查。原说明要求在创建 PR、提升版本或声明可合并前采用；单纯评价代码质量时转用 sextant:review-code。",
+      "source": "You MUST use this skill before creating a PR, bumping a version, or declaring work ready to merge. Use when the implementation is done and the goal is to get it across the finish line — PR creation, changelog, version bump, final pre-merge checks. Stronger signals: \"ship this\", \"create a PR\", \"write changelog\", \"bump version\", \"prepare for merge\", \"what do I need before merging\", \"ready to release\". Use sextant:review-code instead when the goal is to evaluate code quality, not to prepare it for shipping.",
+      "source_sha256": "3bb631f28d98df3d7f04299bf38b66b3ef6be9e80916c78a4029efbbe1ede598",
+      "source_path": "skills/ship/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "881731652930d052dc5140ed0571905a6485e2babab29809fc9f9bd8de78a7a3": {
+      "description_zh": "作为 sextant 子技能共同引用的内部工具调用指南，说明 GitNexus 的 context、impact、query、trace、diff_review 和 rename MCP 工具；不用于直接调用，仅在环境确实提供这些工具时适用。",
+      "source": "Internal reference always included by sextant sub-skills. Not intended for direct invocation. Provides enhanced tool-call guidance for all sextant workflows: context, impact, query, trace, diff_review, and rename MCP tools. Apply its guidance only when GitNexus MCP tools are actually callable in the environment.",
+      "source_sha256": "881731652930d052dc5140ed0571905a6485e2babab29809fc9f9bd8de78a7a3",
+      "source_path": "skills/tool-gitnexus/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d33003ed25475b9b300f10ab8a46be6e84a7d51d86bca57267cf4b671697e3fc": {
+      "description_zh": "在新增测试或补充覆盖前采用测试编写流程，适用于单元测试、集成测试、TDD、函数验证及修复后的复现或回归测试。原说明也要求 sextant:fix-bug 完成后、标记解决前执行。",
+      "source": "You MUST use this skill before writing any test cases or adding test coverage. Use when the goal is to verify code behavior through tests — new tests, missing coverage, or a reproduction test after a bug fix. Stronger signals: \"write tests\", \"add tests\", \"unit test\", \"integration test\", \"test coverage\", \"TDD\", \"test this function\", \"add a regression test\". Also apply automatically after completing sextant:fix-bug, before marking the bug as resolved.",
+      "source_sha256": "d33003ed25475b9b300f10ab8a46be6e84a7d51d86bca57267cf4b671697e3fc",
+      "source_path": "skills/write-tests/SKILL.md",
+      "package_sha256": "0b7283d1fbf2a349349034b6d91cbaeac5b63f927e1a03a8dfd32cc929f6d7c0",
+      "source_package": "Sextant-1.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "692c8c80edb68cc4b3f9af13b6d73743648fab37d1778725b1307971e6a191ea": {
+      "description_zh": "通过并行子智能体为模块生成多个差异显著的接口设计，适用于 API 设计、探索接口方案、比较模块形态或要求“设计两次”的场景。",
+      "source": "Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions \"design it twice\".",
+      "source_sha256": "692c8c80edb68cc4b3f9af13b6d73743648fab37d1778725b1307971e6a191ea",
+      "source_path": "skills/design-an-interface/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c524aebc74bf3fe7216870df691d088cc978430a13a1097885666b39c26e9fd2": {
+      "description_zh": "通过标签状态机和交互式追问分流 GitHub issue。适用于处理新缺陷或功能请求、为离线智能体准备问题，或管理 issue 工作流。",
+      "source": "Triage GitHub issues through a label-based state machine with interactive grilling sessions. Use when user wants to triage issues, review incoming bugs or feature requests, prepare issues for an AFK agent, or manage issue workflow.",
+      "source_sha256": "c524aebc74bf3fe7216870df691d088cc978430a13a1097885666b39c26e9fd2",
+      "source_path": "skills/github-triage/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09f6adb2202c2988cb1ca8af97724f66140ce875246724c8d1b7e64ad9a0d37c": {
+      "description_zh": "探索代码库的架构改善机会，通过深化浅层模块增强可测试性。适用于寻找重构机会、整合紧耦合模块，以及让 AI 更容易理解和导航代码库。",
+      "source": "Explore a codebase to find opportunities for architectural improvement, focusing on making the codebase more testable by deepening shallow modules. Use when user wants to improve architecture, find refactoring opportunities, consolidate tightly-coupled modules, or make a codebase more AI-navigable.",
+      "source_sha256": "09f6adb2202c2988cb1ca8af97724f66140ce875246724c8d1b7e64ad9a0d37c",
+      "source_path": "skills/improve-codebase-architecture/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbed4e35816e3b3a85f987d27511975229be9a770425eda9163f55f4d7deead3": {
+      "description_zh": "使用双向链接和索引笔记，在 Obsidian 知识库搜索、创建及管理笔记。适用于查找、撰写或整理 Obsidian 内容。",
+      "source": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
+      "source_sha256": "bbed4e35816e3b3a85f987d27511975229be9a770425eda9163f55f4d7deead3",
+      "source_path": "skills/obsidian-vault/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "795bd6e9ee8663f10d33c5817c3db4dbbe1aab72704f4a6ff152ea01277897d4": {
+      "description_zh": "采用可贯通系统的纵向切片，把 PRD 拆成可独立领取的 GitHub issue。适用于从需求文档生成实施工单或工作项。",
+      "source": "Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues, create implementation tickets, or break down a PRD into work items.",
+      "source_sha256": "795bd6e9ee8663f10d33c5817c3db4dbbe1aab72704f4a6ff152ea01277897d4",
+      "source_path": "skills/prd-to-issues/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0fecb61e96b8a6c2b9575245dd388a2454296075a184171068d1731f9f2118d4": {
+      "description_zh": "采用可贯通系统的纵向切片，将 PRD 转成多阶段实施计划，保存到本地 ./plans/ 的 Markdown 文件。适用于需求拆解、阶段规划及 tracer-bullet 方式的实施安排。",
+      "source": "Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions \"tracer bullets\".",
+      "source_sha256": "0fecb61e96b8a6c2b9575245dd388a2454296075a184171068d1731f9f2118d4",
+      "source_path": "skills/prd-to-plan/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "546cc399ef359389274ed9b5427190271cd90a9f46cc969458faf0f0ba069166": {
+      "description_zh": "开展交互式 QA，会话中接收用户报告的缺陷并创建 GitHub issue，同时在后台探索代码库以理解背景和领域用语。适用于对话式报错、质量检查及问题登记。",
+      "source": "Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for context and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions \"QA session\".",
+      "source_sha256": "546cc399ef359389274ed9b5427190271cd90a9f46cc969458faf0f0ba069166",
+      "source_path": "skills/qa/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63b373d44e3ee522dc2a2cf4adfe78c3a326445e7e028d10ae5d167aef9a385e": {
+      "description_zh": "通过访谈制定详细重构计划，将工作划分为小提交，再登记为 GitHub issue。适用于重构规划、重构 RFC 或安全的渐进步骤设计。",
+      "source": "Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. Use when user wants to plan a refactor, create a refactoring RFC, or break a refactor into safe incremental steps.",
+      "source_sha256": "63b373d44e3ee522dc2a2cf4adfe78c3a326445e7e028d10ae5d167aef9a385e",
+      "source_path": "skills/request-refactor-plan/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6da00a2f944877b426b7aa1f5e828ee149b7547919f6515c391dcef4111f6abb": {
+      "description_zh": "作为 Shazam 插件导航入口，展示可用技能并建议下一步流程。适用于调用 shazam、查看技能列表或寻求工作流指引。",
+      "source": "Navigation hub for the Shazam plugin. Shows available skills and suggests what to use next. Use when user says \"shazam\", \"SHAZAM!\", wants to see available skills, or asks for guidance on their workflow.",
+      "source_sha256": "6da00a2f944877b426b7aa1f5e828ee149b7547919f6515c391dcef4111f6abb",
+      "source_path": "skills/shazam-hub/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f373e3020e7d8a7712e821a7132f79a2ea09277b4cb86c6fb624133a191b8bf3": {
+      "description_zh": "探索代码库以定位缺陷或问题根因，再创建附有 TDD 修复计划的 GitHub issue。适用于报告问题、登记 issue、问题分流及调查修复方案。",
+      "source": "Triage a bug or issue by exploring the codebase to find root cause, then create a GitHub issue with a TDD-based fix plan. Use when user reports a bug, wants to file an issue, mentions \"triage\", or wants to investigate and plan a fix for a problem.",
+      "source_sha256": "f373e3020e7d8a7712e821a7132f79a2ea09277b4cb86c6fb624133a191b8bf3",
+      "source_path": "skills/triage-issue/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d95c9496f3429eda5aa60ac02995b1d2ac29c3c43c04f44d9f206cdcd239995": {
+      "description_zh": "从当前对话提取 DDD 风格的统一领域语言词汇表，标注歧义并建议规范术语，保存为 UBIQUITOUS_LANGUAGE.md。适用于定义领域词汇、建立术语表及完善领域模型表达。",
+      "source": "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions \"domain model\" or \"DDD\".",
+      "source_sha256": "1d95c9496f3429eda5aa60ac02995b1d2ac29c3c43c04f44d9f206cdcd239995",
+      "source_path": "skills/ubiquitous-language/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e6dbebdc6f5ff4a0c71757e9d3ef292d6522cc9649183bbbe21e21a7fa6428b": {
+      "description_zh": "通过用户访谈、代码库探索和模块设计编写 PRD，并提交为 GitHub issue。适用于创建产品需求文档或规划新功能。",
+      "source": "Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue. Use when user wants to write a PRD, create a product requirements document, or plan a new feature.",
+      "source_sha256": "1e6dbebdc6f5ff4a0c71757e9d3ef292d6522cc9649183bbbe21e21a7fa6428b",
+      "source_path": "skills/write-a-prd/SKILL.md",
+      "package_sha256": "5b4a42540117c813a811c71c2ddacaf921235c385e69dd2a9967722d6d778a96",
+      "source_package": "shazam-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39a324b201d1a539afaa984e48fc8cda0f92b7c9fb4ec11ab027b8c66d5899f7": {
+      "description_zh": "通过 /shield 统筹安全扫描与自主渗透测试，运行 Shannon、Semgrep SAST、gitleaks 密钥扫描及依赖审计，汇总发现、提出带差异的代码修复、计算风险分数并创建 GitHub issue。",
+      "source": "Orchestrates security scanning and autonomous penetration testing. Runs Shannon pentester with Semgrep SAST, gitleaks secrets scanning, and dependency audits. Consolidates findings, proposes code fixes with diffs, calculates risk scores, and creates GitHub issues. Invoke with /shield.",
+      "source_sha256": "39a324b201d1a539afaa984e48fc8cda0f92b7c9fb4ec11ab027b8c66d5899f7",
+      "source_path": "SKILL.md",
+      "package_sha256": "dcb6bdfd2bcdd564892d6d131a388ef870909311cf663b9f9086381a94fa8d4f",
+      "source_package": "Shield-0.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "682d95476add32f20b6bb2cdcb1878f10abb8b505fe8e3087af68a170f9cbd5f": {
+      "description_zh": "作为 Shield 工具扫描的推理分析补充，解释发现与漏洞、判断可利用性及误报、分析修复和威胁模型，审查 Dockerfile、Terraform、Kubernetes、GitHub Actions、认证、JWT、密钥或配置加固。可深入分析 consolidated.json，无需安装工具；属于 shield-claude-skill 插件。",
+      "source": "Intelligence-driven security analysis — the reasoning layer that complements Shield's tool-based scanning. Use this skill when the user says \"analyze these findings\", \"explain this vulnerability\", \"is this exploitable\", \"false positive?\", \"fix this security issue\", \"threat model this\", \"audit my Dockerfile/Terraform/k8s/GitHub Actions\", \"harden this config\", \"review my auth code\", \"is this JWT safe\", \"check for secrets\", or pastes Shield's consolidated.json for deeper analysis. Also trigger on any security question after `/shield:shield` has run. Works without any tools installed — pure Claude intelligence. Part of the Shield plugin (github.com/alissonlinneker/shield-claude-skill).",
+      "source_sha256": "682d95476add32f20b6bb2cdcb1878f10abb8b505fe8e3087af68a170f9cbd5f",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "dcb6bdfd2bcdd564892d6d131a388ef870909311cf663b9f9086381a94fa8d4f",
+      "source_package": "Shield-0.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4067ffa174347038891b07961bd000df68c5a68e66d974178270cd032a8d16e": {
+      "description_zh": "统筹安全扫描与自主渗透测试，结合 Shannon、Semgrep SAST、gitleaks 和依赖审计汇总发现，提出带差异的修复、计算风险并登记 GitHub issue。插件通过 /shield:shield 调用，独立版本通过 /shield 调用。",
+      "source": "Orchestrates security scanning and autonomous penetration testing. Runs Shannon pentester with Semgrep SAST, gitleaks secrets scanning, and dependency audits. Consolidates findings, proposes code fixes with diffs, calculates risk scores, and creates GitHub issues. Invoke with /shield:shield (plugin) or /shield (standalone).",
+      "source_sha256": "b4067ffa174347038891b07961bd000df68c5a68e66d974178270cd032a8d16e",
+      "source_path": "skills/shield/SKILL.md",
+      "package_sha256": "dcb6bdfd2bcdd564892d6d131a388ef870909311cf663b9f9086381a94fa8d4f",
+      "source_package": "Shield-0.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60c960ff5b498a2fcf357b6b90fc348fbdc43b305f619e9b53cc4b28be9d99e0": {
+      "description_zh": "对 Claude 生成的 JavaScript/TypeScript 和 Python 代码进行安全加固及生产级错误处理，覆盖用户输入、数据库查询、认证、API、文件操作、异常和日志。原说明称自动启用以防范 OWASP Top 10 并落实安全默认设置，实际效果仍须验证。",
+      "source": "Security hardening and production-grade error handling for all code Claude generates. Auto-activates when writing code that handles user input, database queries, authentication, API endpoints, file operations, error handling, or logging. Prevents OWASP Top 10 vulnerabilities and enforces secure defaults across JavaScript/TypeScript and Python.",
+      "source_sha256": "60c960ff5b498a2fcf357b6b90fc348fbdc43b305f619e9b53cc4b28be9d99e0",
+      "source_path": "skills/shieldcode/SKILL.md",
+      "package_sha256": "464345a0fb35c31a4df099970faa4decd7e492931fc154d6c2373eb2bfaa2849",
+      "source_package": "Shieldcode-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8de63d45bff60bd6ea72fdd7aa8e4687add37f94a8f8794d5ad72cdd41c372c9": {
+      "description_zh": "通过 Workers API 以 multipart 模块上传方式部署 Cloudflare Worker，并逐字节证明线上内容一致。适用于不用 wrangler、在 CI 或智能体中发布、更新及重新部署 Worker。",
+      "source": "Deploy a Cloudflare Worker through the Workers API with multipart module upload, then prove it is live byte-for-byte. Use when shipping, updating, or redeploying a Worker without wrangler, from CI, or from an agent.",
+      "source_sha256": "8de63d45bff60bd6ea72fdd7aa8e4687add37f94a8f8794d5ad72cdd41c372c9",
+      "source_path": "skills/ship-a-cloudflare-worker/SKILL.md",
+      "package_sha256": "17524baf6e3641dca381ab3ebacc7cd57d6f59f1190ff5bc6a00f77d898380d9",
+      "source_package": "Ship A Cloudflare Worker-1.0.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf7afee0dcc6c11a76ffb93581ed708e0528a4b75235e7a6cc8e125a1c12c223": {
+      "description_zh": "执行 ship 流程第 3 阶段构建及第 5 阶段修复，按冻结规格和代码映射实现功能，连接本地、预发布及生产环境与密钥配置，并持续更新 progress.md。适用于规格冻结后编码或修复 QA 发现。",
+      "source": "Phase 3 (and Fix, phase 5) of the ship pipeline — implement the frozen spec to the code map, wire the local→staging→prod environments and secrets, and keep progress.md current. Use when the spec is frozen and it's time to write code, or to close QA findings during the fix phase.",
+      "source_sha256": "bf7afee0dcc6c11a76ffb93581ed708e0528a4b75235e7a6cc8e125a1c12c223",
+      "source_path": "skills/ship-build/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee7a546a0c007e515383a42086b8cbecf150f6f1d1dfc1a6957c057c46e03ff6": {
+      "description_zh": "执行 ship 流程第 8 阶段生产部署及冒烟验证，包括推送代码、运行迁移、重启服务、核验 /health、robots、站点地图与重定向，以及清理 CDN 缓存。适用于主机已准备且构建可上线，或常规部署。",
+      "source": "Phase 8 of the ship pipeline — deploy to production and smoke-test. Push code, run migrations, restart services, verify /health + robots/sitemap + redirects, and purge CDN cache. Use when the host is provisioned and a build is ready to go live, or to run a routine deploy.",
+      "source_sha256": "ee7a546a0c007e515383a42086b8cbecf150f6f1d1dfc1a6957c057c46e03ff6",
+      "source_path": "skills/ship-deploy/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ab2ced3ccec95f1e9beb43d9732be7f86e4befbd2030b1b817cf29300f3e5a0": {
+      "description_zh": "执行 ship 流程第 4 阶段分层 QA，先运行功能测试与评估校准，再并行安排 SEO、代码、UI/UX、安全和运维专家分别编写审查文件，将发现分为严重、主要和次要。适用于上线前复核或专家评审。",
+      "source": "Phase 4 of the ship pipeline — layered QA. Run functional tests + eval/calibration, then fan out a parallel panel of expert reviewers (SEO, code, UI/UX, security, devops), each writing an audit file, then triage findings into critical/major/minor. Use when a build is ready for review, when the user says \"QA this\", \"review before launch\", or \"run the expert panel\".",
+      "source_sha256": "9ab2ced3ccec95f1e9beb43d9732be7f86e4befbd2030b1b817cf29300f3e5a0",
+      "source_path": "skills/ship-expert-qa/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "17017f5d06831e4b013907c1ad653a9fd4418d7efd50eb8a55ab5b66ccefd476": {
+      "description_zh": "执行 ship 流程第 9 阶段生产监测和迭代反馈，确认可用性监控及告警有效，建立常态检查频率，观察错误和指标，并将发现转为后续 ROADMAP 项。适用于上线后检查、持续监测及下一轮规划。",
+      "source": "Phase 9 of the ship pipeline — monitor in production and feed iteration. Confirm uptime/alerting works, set up a standing monitoring cadence, watch errors/metrics, and turn findings into the next ROADMAP items. Use after launch, or when the user wants ongoing monitoring, a post-launch check, or to plan the next iteration.",
+      "source_sha256": "17017f5d06831e4b013907c1ad653a9fd4418d7efd50eb8a55ab5b66ccefd476",
+      "source_path": "skills/ship-monitor/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "965a0c56cb434b5a8b1a2522e1e0b1f97bedbb974e1183cad539d1a031a99ef7": {
+      "description_zh": "执行 ship 流程第 6 阶段生产准备，完善运行手册、TLS 和反向代理、DNS、域名规范与重定向、Cloudflare/WAF、受限权限密钥、定期备份快照、可用性告警及 SPF/DKIM/DMARC 邮件投递配置。适用于 QA 通过后准备上线。",
+      "source": "Phase 6 of the ship pipeline — prepare production. Fill the production runbook, TLS/reverse proxy, DNS + domain canonicalization + redirects, Cloudflare/WAF, secrets with locked perms, backups/snapshots on a schedule, uptime + alerting, and email deliverability (SPF/DKIM/DMARC). Use when QA passes and the project is heading to launch.",
+      "source_sha256": "965a0c56cb434b5a8b1a2522e1e0b1f97bedbb974e1183cad539d1a031a99ef7",
+      "source_path": "skills/ship-prod-prep/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc318e4e2d5cca0bf05a0c7e093cfc1c57546a49f2762527b137679c1ff9e211": {
+      "description_zh": "执行 ship 流程第 7 阶段主机及访问配置，创建虚拟机、生成并限制 SSH 密钥、安装 systemd 服务和定时器、配置防火墙并记录运行手册。适用于生产主机创建、SSH 接入及服务器服务或备份配置。",
+      "source": "Phase 7 of the ship pipeline — stand up the server and access. Provision the VM, create and lock down SSH keys, install systemd services + timers, configure the firewall, and record it all in the runbook. Use when it's time to create/configure the production host, set up SSH, or wire systemd/backups on the server.",
+      "source_sha256": "cc318e4e2d5cca0bf05a0c7e093cfc1c57546a49f2762527b137679c1ff9e211",
+      "source_path": "skills/ship-provision/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c1dd8a2de33bd48b11ba7da1d46c1eb199b0de353d88fa48b94cca346add4d4": {
+      "description_zh": "执行 ship 流程第 1 阶段，仅研究项目创意而不实施，采集市场、竞品、关键词、受众和购买者语言证据，综合形成分析与基于仓库的执行计划，最后列出待负责人回答的问题。",
+      "source": "Phase 1 of the ship pipeline — research a project idea WITHOUT implementing. Gather market/competitor/keyword/audience/buyer-language evidence, synthesize a capstone analysis and a repo-grounded execution plan, and end with open questions for the owner. Use when the user says \"research this\", \"before we build\", or the ship orchestrator enters phase 1.",
+      "source_sha256": "1c1dd8a2de33bd48b11ba7da1d46c1eb199b0de353d88fa48b94cca346add4d4",
+      "source_path": "skills/ship-research/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b7e8e2a3cec6ec9ea1fcab7c958364e309ea76b00a33bb966828cb2fe1e54d5": {
+      "description_zh": "研究项目如何被发现和采用，制定 SEO、市场进入及推广策略。适用于项目营销、排名、关键词和竞品研究、内容及分发计划，或 ship 研究阶段的营销需求；页面审查由 ship-seo-expert 或 QA 阶段处理。",
+      "source": "Plan how a project gets found and adopted — SEO/go-to-market research and a promotion plan. Use when the user asks how to promote/market/rank a project, wants keyword or competitor research, a content/distribution plan, or during the ship research phase for anything with a marketing surface. Not an on-page audit (that's ship-seo-expert / the QA phase) — this is growth strategy.",
+      "source_sha256": "7b7e8e2a3cec6ec9ea1fcab7c958364e309ea76b00a33bb966828cb2fe1e54d5",
+      "source_path": "skills/ship-seo-strategy/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
