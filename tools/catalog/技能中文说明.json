@@ -55609,6 +55609,1086 @@
       "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
       "source_package": "posthog-1.1.63-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ccd2a78d7d521348449858777a789c9ea1af3544df9ea9790aff013a6fccbd57": {
+      "description_zh": "监测 PostHog 日志中新出现或频率变化的消息模式、数量激增、严重度分布变化、服务沉默及与轨迹相关的异常爆发。",
+      "source": "Signals scout for PostHog logs. Watches for emerging and rate-shifted message patterns, volume bursts, severity-distribution shifts, service silence, and trace-correlated bursts.",
+      "source_sha256": "ccd2a78d7d521348449858777a789c9ea1af3544df9ea9790aff013a6fccbd57",
+      "source_path": "skills/signals-scout-logs/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2490971bbece75b2235519e0a578011f5634a02fe24ba0ebca5825d99a67b4b": {
+      "description_zh": "监测 $mcp_tool_call 的广泛失败、反复重试、慢响应或上下文膨胀，按所属产品分类并给出工具改进建议。",
+      "source": "Signals scout for PostHog MCP tool calls. Watches `$mcp_tool_call` telemetry for tools that need improvement — broad-reach failure rates, retry hammering, slow or context-bloating responses — grouped by owning product category, each with a fix suggestion.",
+      "source_sha256": "f2490971bbece75b2235519e0a578011f5634a02fe24ba0ebca5825d99a67b4b",
+      "source_path": "skills/signals-scout-mcp-tool-calls/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "017ac26df4128c524ad46235a63b66e7b8de67b1a23c9f211e5ae487915273d0": {
+      "description_zh": "发现大量事件却无 insight、看板或告警覆盖的可观测空缺，随产品发展建议新增分析和监控。",
+      "source": "Signals scout for observability gaps — significant event volumes with no insight, dashboard, or alert coverage. Recommends new insights, dashboards, or alerts as the product evolves.",
+      "source_sha256": "017ac26df4128c524ad46235a63b66e7b8de67b1a23c9f211e5ae487915273d0",
+      "source_path": "skills/signals-scout-observability-gaps/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9a987df765673999435624b445a25b4fade23cdd82e03c35073fee1811d3f70": {
+      "description_zh": "监测保存的漏斗、留存、生命周期、粘性及路径，在进入人数持平时识别派生比例回归。",
+      "source": "Signals scout for core product-analytics flows — funnels, retention, lifecycle, stickiness, and paths. Watches the team's saved flows for a derived-rate regression while entrants hold.",
+      "source_sha256": "c9a987df765673999435624b445a25b4fade23cdd82e03c35073fee1811d3f70",
+      "source_path": "skills/signals-scout-product-analytics/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3fa68ebbc26533e215534afa70d8271a1afd6b30681dce83468be7bd76354a0": {
+      "description_zh": "监测启用的 Replay Vision scanner 是否持续观察，发现吞吐或额度骤降，并汇总评分变化及重复主题。",
+      "source": "Signals scout for PostHog Replay Vision scanners. Watches that enabled scanners keep observing (throughput and quota cliffs) and that aggregate score shifts and recurring themes get surfaced.",
+      "source_sha256": "e3fa68ebbc26533e215534afa70d8271a1afd6b30681dce83468be7bd76354a0",
+      "source_path": "skills/signals-scout-replay-vision/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5b0aa72dd3d6904dab26adf877ba699b8cd7c4ba4f65337041ba9543387486b": {
+      "description_zh": "监测 PostHog 收入分析上游故障、Stripe 同步停滞、采集回归、配置漂移及未达目标的升级信号。",
+      "source": "Signals scout for PostHog revenue analytics. Watches for upstream failures (Stripe sync stalls, capture regressions), config drift, and goal-miss escalations.",
+      "source_sha256": "f5b0aa72dd3d6904dab26adf877ba699b8cd7c4ba4f65337041ba9543387486b",
+      "source_path": "skills/signals-scout-revenue-analytics/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15c70cb3f3ddf9dcb80cb5cf5dabac6539c0ffc27de48725e75c1d73393f37e0": {
+      "description_zh": "监测会话录制是否持续采集，并发现愤怒或无响应点击聚类、交互后错误等回放阻力。",
+      "source": "Signals scout for PostHog session replay. Watches that sessions keep recording (capture cliffs) and surfaces friction inside recordings — rage/dead-click clusters, error-after- interaction cohorts.",
+      "source_sha256": "15c70cb3f3ddf9dcb80cb5cf5dabac6539c0ffc27de48725e75c1d73393f37e0",
+      "source_path": "skills/signals-scout-session-replay/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "efe8cb32ab4c885cb962b31d1a7db129464ab7baeba340d67481fafc53c3e828": {
+      "description_zh": "检查团队近期修改或高频使用的 PostHog 技能，发现描述模糊、正文膨胀、失效文件链接、范围杂糅或提交秘密等编写问题。",
+      "source": "Skill-hygiene scout for the team's PostHog skills store. Watches recently-changed and most- used skills for authoring violations — vague descriptions, bloated bodies, dead file links, kitchen-sink scope, committed secrets.",
+      "source_sha256": "efe8cb32ab4c885cb962b31d1a7db129464ab7baeba340d67481fafc53c3e828",
+      "source_path": "skills/signals-scout-skills-store/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7351102ff779690e8dd42e2295974b75ea640da7eb8896cebe81abac766423a": {
+      "description_zh": "监测活跃调查的评分回归、回答量下降、放弃增加和定向漂移，并将开放文字回答聚为重复主题。",
+      "source": "Signals scout for PostHog surveys. Watches active surveys for score regressions, response- volume drops, abandonment spikes, and targeting drift, and aggregates open-text responses into recurring themes.",
+      "source_sha256": "c7351102ff779690e8dd42e2295974b75ea640da7eb8896cebe81abac766423a",
+      "source_path": "skills/signals-scout-surveys/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7c5f5a933f36ca7bd317b027ce41334ac213ac2f02e7b6c9f80f7800c4f9ba8b": {
+      "description_zh": "监测 PostHog Tasks 按仓库及错误类聚集的失败和重试风暴，较低频检查人工任务重复需求；跳过 scout 自身运行。",
+      "source": "Signals scout for PostHog Tasks. Watches delivery health — failing runs clustered by repository and error class, retry storms — and, on a slower rotation, recurring demand across human-authored tasks. Skips the scout fleet's own runs.",
+      "source_sha256": "7c5f5a933f36ca7bd317b027ce41334ac213ac2f02e7b6c9f80f7800c4f9ba8b",
+      "source_path": "skills/signals-scout-tasks/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a3c2dd60e2b9fdbbf0910037445334efd0bec0f4528af6b2bbdfe19baa87fcd": {
+      "description_zh": "按站点自身基线监测渠道会话量、归因损坏、落地页跳出和404问题。逐页 Web Vitals 使用专门 scout。",
+      "source": "Signals scout for PostHog web traffic. Watches per-channel session volume, attribution breakage, and landing-page health (bounce and 404 steps) against the site's own baseline. Per- page web vitals belong to `signals-scout-web-vitals`.",
+      "source_sha256": "9a3c2dd60e2b9fdbbf0910037445334efd0bec0f4528af6b2bbdfe19baa87fcd",
+      "source_path": "skills/signals-scout-web-analytics/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8049cf924a129c469f1b8189677da429c30e4bf9d1be4a16bdb9190e95427e4": {
+      "description_zh": "监测各页 $web_vitals 的 p75 LCP/INP/CLS/FCP，比较原说明引用的 Google 阈值及历史，识别差表现、档位跨越和回归，并关联部署及开关发布时点。",
+      "source": "Signals scout for Core Web Vitals (`$web_vitals`). Watches each page's p75 LCP / INP / CLS / FCP against Google's thresholds and its own history — poor-band pages, band crossings, sharp regressions — and dates each regression against deploys and flag rollouts.",
+      "source_sha256": "e8049cf924a129c469f1b8189677da429c30e4bf9d1be4a16bdb9190e95427e4",
+      "source_path": "skills/signals-scout-web-vitals/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "007bfbfd818126077de17cfbe4fbbdf1b4150215e7c176709a876cfc25254523": {
+      "description_zh": "用 HogQL 查询 document_embeddings 原始信号，支持语义搜索、读取报告贡献信号及信号类型。报告列表和状态筛选先用 inbox-exploration。",
+      "source": "How to query the document_embeddings table for raw signal data using HogQL. Use when you need to perform semantic search over signals, fetch every signal that contributed to a specific report, or list signal types. For browsing the curated report layer (the Inbox) — listing reports, filtering by status/source, drilling into a single report by ID — use the `inbox-exploration` skill first; drop into this skill afterwards if the user wants the underlying observations.",
+      "source_sha256": "007bfbfd818126077de17cfbe4fbbdf1b4150215e7c176709a876cfc25254523",
+      "source_path": "skills/signals/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "103bba4c627bc2343947ea5d72c2a8f921be2c9dbef3cadee71f446235474618": {
+      "description_zh": "发现和使用 PostHog 存储的团队共享技能，适用于列举、浏览、加载或管理技能库。",
+      "source": "Discover and use shared team skills stored in PostHog. Use when the user asks to list, browse, load, or manage \"shared skills\", \"team skills\", or references the \"skills store\" / \"skill store\".",
+      "source_sha256": "103bba4c627bc2343947ea5d72c2a8f921be2c9dbef3cadee71f446235474618",
+      "source_path": "skills/skills-store/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da0bee161632c83aef6ab5f5eba9cb5994c51d8607bb24782796d303a6eb5bed": {
+      "description_zh": "对 PostHog 未原生采集的支付、订阅、CRM、支持、广告或数据库数据提出导入建议，检查已有来源并选择正确类型。适用于外部数据关联、缺表或预期数据为空。",
+      "source": "Use when the user asks about revenue, payments, subscriptions, billing, CRM deals, support tickets, ad spend, production database tables, or other data PostHog does not collect natively — or wants to join or correlate PostHog product events with that external business data. Also use when a query fails because a table does not exist or returns no results for expected external data. The data warehouse can import from SaaS tools (Stripe, Hubspot, Zendesk, etc.), ad platforms, production databases (Postgres, MySQL, BigQuery, Snowflake), and other arbitrary data sources. Covers checking existing sources, identifying the right source type, and guiding the setup.",
+      "source_sha256": "da0bee161632c83aef6ab5f5eba9cb5994c51d8607bb24782796d303a6eb5bed",
+      "source_path": "skills/suggesting-data-imports/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8e864ed8625f47ab3a3d451fc5c85f16e219a4aed46955db58ef499f83b5187": {
+      "description_zh": "运行并检查 AI 路径清理建议流程，涵盖管理命令、健康检查、团队群组门槛及真实路径验证后保存。手工编写或直接应用规则使用 managing-path-cleaning-rules。",
+      "source": "Runs and reasons about the automated AI health check that suggests path-cleaning rules for web-analytics teams. Use when asked to generate path-cleaning suggestions for a team or cohort, to run the suggestion check, to review/apply AI-suggested rules, to inspect path_cleaning_suggestions health issues, or to extend the suggestion pipeline. Covers the suggest_path_cleaning_rules management command, the path_cleaning_suggestions health check, the cohort gating (precompute teams), and how suggestions are validated against real paths before storage. For hand-authoring or applying rules directly, use managing-path-cleaning-rules instead.",
+      "source_sha256": "d8e864ed8625f47ab3a3d451fc5c85f16e219a4aed46955db58ef499f83b5187",
+      "source_path": "skills/suggesting-path-cleaning-rules/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "411d78949503f35f447f03f459e32182e1d9962e277e986d47c161fdcbbbcd99": {
+      "description_zh": "为高频低价值错误创建 PostHog 摄取抑制规则，限定筛选、选择完全抑制或采样，并在创建前确认。原说明明确被抑制错误永久丢弃。",
+      "source": "Create PostHog error tracking suppression rules to drop high-volume, low-value errors at ingestion. Use when the user asks \"stop capturing this error\", \"drop browser extension errors\", \"ignore ResizeObserver loops\", \"suppress bot-driven errors\", or wants to reduce ingestion cost from noisy unactionable errors. Identifies suppression candidates, scopes the filter tightly, decides between full suppression and sampling, and confirms the rule before creating it. Suppressed errors are dropped permanently — this skill defaults to caution.",
+      "source_sha256": "411d78949503f35f447f03f459e32182e1d9962e277e986d47c161fdcbbbcd99",
+      "source_path": "skills/suppressing-noisy-errors/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d938a5c84c3de48c9929ef506d42eded7a83548f2b741c6e0ccbd7a49ec17bcd": {
+      "description_zh": "搭建本地环境、种子数据及 API 密钥，端到端测试仅员工可用的托管迁移支持 MCP 工具。涵盖隐藏 scope、is_staff、user:read 等发现前提，原说明通配密钥和 OAuth 不适用。",
+      "source": "Set up the local dev environment, seed data, and API keys to test the staff-only managed migrations MCP tools (managed-migrations-support-list, managed-migrations-support-get) end to end. Use when testing batch import support tooling, debugging MCP tool responses or discovery (tools not appearing), or verifying the support API before deploying. Covers the discovery gate: hidden scope, is_staff, user:read, and why wildcard keys and OAuth never work.",
+      "source_sha256": "d938a5c84c3de48c9929ef506d42eded7a83548f2b741c6e0ccbd7a49ec17bcd",
+      "source_path": "skills/testing-mcp-tools-locally/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "409e83cea337cd26bf4af6b903f773cf8d43fd2797be81b58396fc978d2dee1c": {
+      "description_zh": "在每日或值班检查中按影响用户及新鲜度排序 PostHog 活跃错误，突出新问题和高影响问题、关联回放并建议调查、分配、抑制或合并。",
+      "source": "Triage PostHog error tracking issues during a daily or on-call review. Use when the user asks \"what's broken?\", \"what new errors do we have?\", \"show me top errors today\", \"what should I look at this morning\", or wants a prioritized list of active issues to work on. Surfaces new and high-impact issues, ranks by users affected and recency, points at linked replays, and proposes next actions (investigate, assign, suppress, merge).",
+      "source_sha256": "409e83cea337cd26bf4af6b903f773cf8d43fd2797be81b58396fc978d2dee1c",
+      "source_path": "skills/triaging-error-issues/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55f95a34a7a22d20cd0206f9f40d9b2ed93c44b7d61d3a04a42c1f602b1a435b": {
+      "description_zh": "检查 PostHog Visual Review 截图回归运行，解释 PR 阻塞及视觉变化，判断真实差异或不稳定结果，并跟踪 Storybook/Playwright 截图历史。",
+      "source": "Inspects PostHog Visual Review (VR) runs that gate PR merges with screenshot regression checks. Use when the user mentions \"visual review\", \"VR\", \"snapshot diff\", \"screenshot test\", \"storybook regression\", \"playwright snapshot\", asks why a PR is blocked or what changed visually, wants to triage the VR backlog, decide whether a snapshot diff is real vs flaky, or check whether a story has been changing across runs. Also invoke when a PR has a failing `visual-review` status check, when a PR comment mentions \"Visual review\", or when the user is on a branch with an open VR run.",
+      "source_sha256": "55f95a34a7a22d20cd0206f9f40d9b2ed93c44b7d61d3a04a42c1f602b1a435b",
+      "source_path": "skills/triaging-visual-review-runs/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07247536781cb42fd8bcdf2f5406f8312fc1e793dd4ac70f76b538a2988fd9ad": {
+      "description_zh": "调整已有数仓表同步配置，包括同步类型、增量字段、主键、CDC 表模式及频率。适用于改增量、CDC、排期或修复诊断发现的字段配置错误。",
+      "source": "Change the sync configuration of an existing data warehouse schema — switch sync_type, pick a different incremental_field, set primary_key_columns, choose cdc_table_mode, or change sync_frequency. Use when the user asks \"switch my orders table from full refresh to incremental\", \"this table is syncing too slowly / too frequently\", \"I need to pick a different incremental column\", \"set up CDC for this Postgres table\", or when diagnosis of a failing sync pointed to an incremental-field or PK misconfiguration.",
+      "source_sha256": "07247536781cb42fd8bcdf2f5406f8312fc1e793dd4ac70f76b538a2988fd9ad",
+      "source_path": "skills/tuning-incremental-sync-config/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eaaa2932c56c9bacee90871fdc84697526d252ef843636071d435d873528c54d": {
+      "description_zh": "把工程 PR/CI 数据保存为 PostHog insight、看板及订阅，发现团队 GitHub 表、复现列语义、读取工程视图、保存查询并排期发送。临时瓶颈问题和单次 CI 失败使用专门技能。",
+      "source": "Converts engineering analytics (PR / CI) data into saved PostHog insights, dashboards, and subscriptions, and explains how to query the product data directly with SQL. Covers discovering per-team GitHub warehouse tables via engineering-analytics-sources, replicating curated column semantics in HogQL, reading exposed engineering_analytics_* warehouse views where product logic is involved (CI cost, fingerprinted failure lines, commit attribution), saving queries with insight-create, and scheduling delivery with subscriptions-create. Use when asked to \"save this as an insight\", \"put CI health / merge times on a dashboard\", \"email me PR throughput weekly\", \"chart CI cost\", \"track time to first review\", \"subscribe to these numbers\", \"alert on CI success rate\", or \"what data/tables/views does engineering analytics read\". For ad-hoc CI and merge questions use diagnosing-ci-and-merge-bottlenecks; to investigate one specific CI failure use investigating-ci-failures.",
+      "source_sha256": "eaaa2932c56c9bacee90871fdc84697526d252ef843636071d435d873528c54d",
+      "source_path": "skills/turning-engineering-analytics-into-insights/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c58670f337cabdaa0bd3bb4753703dec88fdea0823ca626b0b0b40ed8b167fa": {
+      "description_zh": "从客户可见 Billing MCP 查询解释 PostHog 用量和费用，识别产品项目驱动、变化及告警，再转入相应产品深入分析。计费事件、录制、同步行、AI额度等问题先查 Billing。",
+      "source": "Explains PostHog billing usage and spend from the customer's visible Billing MCP tools. Use when the user asks why usage or spend is high, which product or project is driving usage, what a usage type means, how to reduce usage, what changed over time, why they got a usage change alert, or whether a spike/drop alert was real or noisy. Also use before product-specific analytics skills when the user names a billable PostHog product metric such as events, recordings, feature flag requests, exceptions, survey responses, synced rows, logs, AI events, AI credits, or Inbox credits. Starts from Billing usage/spend tools, then routes to customer-visible product MCP surfaces for deeper investigation.",
+      "source_sha256": "4c58670f337cabdaa0bd3bb4753703dec88fdea0823ca626b0b0b40ed8b167fa",
+      "source_path": "skills/understanding-billing-usage/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae78d40413a5799eac4e19138831cfe170b4236174b8849cea6e62b79a438885": {
+      "description_zh": "验证并发布 PostHog 画布源码，核查结构、声明能力和当前版本，以 expected_current_version_id 防止覆盖并发工作。支持草稿构建和提升、等待队列及409版本冲突/429容量恢复。",
+      "source": "Validate and publish a canvas source project safely: the source-project shape, declared capabilities, reading the current version pointer, iterating on validation diagnostics, guarded publishing with expected_current_version_id, staging a draft build and promoting it, waiting out the queued build, and recovering from a 409 version_conflict or a 429 capacity limit without overwriting concurrent work. Use whenever a canvas edit is ready to save, a draft build is wanted, a canvas publish or build returns diagnostics or a conflict, or a task needs to understand canvas version history.",
+      "source_sha256": "ae78d40413a5799eac4e19138831cfe170b4236174b8849cea6e62b79a438885",
+      "source_path": "skills/validating-and-publishing-canvases/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ffd89e445e62548adb58174b05e7e518af79e8ee38aa547654bbc64758bb0f6": {
+      "description_zh": "指导与 PostHog Signals scouts 协作，委派监测、定时评分、选择覆盖技能、处理报告并通过反馈校准改进。编写、运行观察和报告分诊分别路由到专门技能。",
+      "source": "How to get real jobs done with PostHog Signals scouts — the scheduled agents that watch a project and write reports into the Signals inbox — and how to steer and customize the fleet over time. Use when a user wants to delegate a watching job (\"have a scout keep an eye on X\", \"tell me if Y spikes\"), wants a recurring judged metric from a scout (\"score X on a schedule\", \"measure quality of Y\"), wants to know which scout covers a surface, asks how to act on what scouts report, complains the fleet is noisy or quiet, or wants the fleet to get smarter over time (feedback loops, calibration, promoting one-off steers into policy). The operating manual for the human–scout working relationship; routes to `authoring-scouts` for write mechanics, `exploring-scouts` for run observability, and `inbox-exploration` for report triage. Trigger on \"work with my scouts\", \"get more out of scouts\", \"have a scout watch X\", \"what do I do with this scout report\", \"calibrate/review my scout fleet\".",
+      "source_sha256": "7ffd89e445e62548adb58174b05e7e518af79e8ee38aa547654bbc64758bb0f6",
+      "source_path": "skills/working-with-scouts/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4fc11b7b35c330c327ba1c8d71eb4659bdad3bba3af524e21075e24c99feddab": {
+      "description_zh": "通过 skill-* MCP 高效发现、读取、创建、更新和重构 PostHog 共享技能，特别适用于带大量配套文件的技能及写入拒绝排查，与 skills-store 配合。",
+      "source": "Best practices for agents managing PostHog skills via the MCP `skill-*` tools — how to discover, read, create, update, and refactor skills efficiently, especially large skills with many bundled files. Use whenever you are about to call any `skill-*` tool, asked to author or edit a shared skill, or troubleshoot why a skill write was rejected. Pairs with `skills-store` (which covers the raw tool surface) by adding the decision-tree, efficiency, and pitfall guidance.",
+      "source_sha256": "4fc11b7b35c330c327ba1c8d71eb4659bdad3bba3af524e21075e24c99feddab",
+      "source_path": "skills/working-with-skills/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58973f3ffadb53c0860b74a8f57b173132a484337a51f325df3c78ecf5dd82ef": {
+      "description_zh": "通过 PostHog exec 调度读取任务、产物和画布评论，支持目标筛选、分页、完整线程、锚点版本上下文及任务范围权限。适用于批注、回复和未解决反馈。",
+      "source": "Read and use comments attached to the current PostHog task, its artifacts, and its canvases through the PostHog MCP exec dispatcher. Use when the user mentions task comments, artifact or canvas comments, annotations, selected-text feedback, replies, unresolved comments, or asks an agent to inspect or act on feedback left in PostHog Desktop. Covers exec discovery and calls, target filtering, pagination, full-thread retrieval, anchor/version context, and task-scoped access.",
+      "source_sha256": "58973f3ffadb53c0860b74a8f57b173132a484337a51f325df3c78ecf5dd82ef",
+      "source_path": "skills/working-with-task-comments/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e1a85ab624a8b112463f39153cd43dd57011eec1f322b9e7cef92655a6d697d": {
+      "description_zh": "按简化技术英语原则写可明确执行的文字，采用单义词、主动语态、简单时态、短句和每句一意。原说明参考 ASD-STE100，适用于报告、PR、提交、指令、工具描述和状态。",
+      "source": "Write English that a reader cannot misread: one meaning per word, active voice, simple tenses, one idea per sentence, short sentences. Based on ASD-STE100 (Simplified Technical English), the controlled-language standard written for aircraft maintenance manuals. Use it for any prose an agent produces that someone else acts on. That covers reports and findings, PR descriptions and commit messages, instructions handed to another agent, tool descriptions, error messages, status summaries, and prompts. Also use it on request, with triggers like \"simplify this\", \"make this readable\", \"too dense\", \"rewrite in STE\", \"simplified technical english\", \"ASD-STE100\".",
+      "source_sha256": "3e1a85ab624a8b112463f39153cd43dd57011eec1f322b9e7cef92655a6d697d",
+      "source_path": "skills/writing-simplified-technical-english/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1017362800086a26692f8446a2a9e3b048217c6c2f19a651417c4f49cbc79e9d": {
+      "description_zh": "编写或调试在 PostHog 沙箱运行的 Streamlit Python，使用 posthog_apps.query() 获取数据，考虑预装包、缓存、会话状态、布局图表及 app.py 配套文件。",
+      "source": "Write Streamlit app source code that runs well in a PostHog sandbox — the posthog_apps.query() bridge for reading PostHog data, the packages baked into the sandbox image, caching and session state across Streamlit reruns, layout and chart patterns, and the app.py entry point with any helper modules and data files bundled beside it. Use when authoring or debugging the Python source of a PostHog Streamlit app, when a query inside an app fails, or when asked to \"write a streamlit app that shows PostHog data\".",
+      "source_sha256": "1017362800086a26692f8446a2a9e3b048217c6c2f19a651417c4f49cbc79e9d",
+      "source_path": "skills/writing-streamlit-apps/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f67f720d8c2f8e23e0ed270716ff901255b0b25d47786199aaa7ded4104bd5f8": {
+      "description_zh": "为已连接的社交渠道编写平台适配帖子，保存为 Postify 草稿并建议发布时间。适用于 LinkedIn、X、Instagram、Facebook、TikTok等文案；仅保存草稿，不发布。",
+      "source": "Writes a platform-ready social media post and saves it as a Postify draft for a connected LinkedIn, X (Twitter), Instagram, Facebook, TikTok, or other channel, then suggests posting times. Use when the user asks to 'draft a LinkedIn post about our release', 'write a tweet' or a thread, 'prepare an Instagram caption', 'write a launch announcement', 'turn this into a social post', 'create a post for my channels', or 'when should I post this'. Saves drafts only; never publishes.",
+      "source_sha256": "f67f720d8c2f8e23e0ed270716ff901255b0b25d47786199aaa7ded4104bd5f8",
+      "source_path": "skills/drafting-social-posts/SKILL.md",
+      "package_sha256": "cbdd39d7e35cbc38bba50743cd730069399ec655e4a7edf3e5815f9cc96d01eb",
+      "source_package": "Postify-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ef248eb7d8e0c8b8eaacfd9b62ee6ddc9222856cd973683ae92a80eec5979ab": {
+      "description_zh": "查看和整理 Postify 社交内容日历，列出已排期、草稿、已发布及失败帖子，发现排期空档；确认后可调整某条帖子的发布时间。适用于下周安排、移期和失败帖子查询，不发布或删除内容。",
+      "source": "Reviews and reorganizes the social media content calendar in Postify: lists scheduled, draft, published, and failed posts, finds gaps in the posting schedule, and reschedules a post after confirmation. Use when the user asks 'what's scheduled next week', 'show my upcoming posts', 'move Friday's post to Monday 9am', 'reschedule this post', 'where are the gaps in my posting schedule', 'which posts failed', or wants a social media planner or posting calendar overview. Never publishes or deletes.",
+      "source_sha256": "9ef248eb7d8e0c8b8eaacfd9b62ee6ddc9222856cd973683ae92a80eec5979ab",
+      "source_path": "skills/managing-content-calendar/SKILL.md",
+      "package_sha256": "cbdd39d7e35cbc38bba50743cd730069399ec655e4a7edf3e5815f9cc96d01eb",
+      "source_package": "Postify-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2edff7cb958207a5ef40dc88c7a482d6a7b06f2125c9cde6a4777e3951da6626": {
+      "description_zh": "只读汇报 Postify 社交帖子的送达数、送达率、失败情况、各渠道统计及平台最佳发布时间，适用于月度表现回顾、渠道比较、失败原因和发布时间分析。",
+      "source": "Reports how social posts performed in Postify: posts delivered, delivery rate, failures, per-channel stats, and the best times to post on each platform. Use when the user asks 'how did last month go', 'which channel performs best', 'show my social media analytics', 'how many posts went out', 'why did posts fail', 'when should I post on Instagram', or wants a social media performance report. Read-only.",
+      "source_sha256": "2edff7cb958207a5ef40dc88c7a482d6a7b06f2125c9cde6a4777e3951da6626",
+      "source_path": "skills/reviewing-social-performance/SKILL.md",
+      "package_sha256": "cbdd39d7e35cbc38bba50743cd730069399ec655e4a7edf3e5815f9cc96d01eb",
+      "source_package": "Postify-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37dbb644c750d1ca0a42868c35fd9ceeecae9f1d27e7b79efec617778cf9d754": {
+      "description_zh": "将 Postify MCP 连接到 claude.ai、Claude Desktop、Cowork 或 Claude Code，并用一次只读调用验证；说明登录与同意页面，排查工具缺失、Tool not found 或无法访问 Postify 数据。",
+      "source": "Connects the Postify MCP server to Claude and verifies it with one read-only call: where to connect in claude.ai, Claude Desktop, Cowork, or Claude Code, what the Postify sign-in and consent screen asks, and how to recover when a tool is missing. Use when the user asks to 'set up Postify', 'connect Postify to Claude', 'install the Postify connector', 'sign in to Postify', 'why can't Claude see my Postify data', 'Postify tools are missing', or reports 'Tool not found' for a Postify tool.",
+      "source_sha256": "37dbb644c750d1ca0a42868c35fd9ceeecae9f1d27e7b79efec617778cf9d754",
+      "source_path": "skills/setup-postify/SKILL.md",
+      "package_sha256": "cbdd39d7e35cbc38bba50743cd730069399ec655e4a7edf3e5815f9cc96d01eb",
+      "source_package": "Postify-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93e77e90e471ea9ace97f13efd4103a2a01da408383debf37c225abb51bb56ad": {
+      "description_zh": "评估 Postman 集合或 OpenAPI 规范是否便于 AI 代理发现、理解、调用和处理错误，为缺失示例、未记录错误和模糊参数评分并提出改进；涵盖 collection 与 spec 的 ai-readiness 命令。",
+      "source": "Scores a Postman collection or an OpenAPI spec for how well an AI agent can discover, understand, call, and recover from errors with it — missing examples, undocumented errors, and ambiguous parameters all cost points. Use when the user asks \"is my API agent-ready,\" \"can AI agents use my API,\" \"how agent-friendly is my API,\" or wants to scan, score, or improve a collection or spec for AI/agent consumption. Covers `postman collection ai-readiness` and `postman spec ai-readiness`.",
+      "source_sha256": "93e77e90e471ea9ace97f13efd4103a2a01da408383debf37c225abb51bb56ad",
+      "source_path": "skills/ai-readiness/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "77db3c33701e23207930e49dca309a67d49f6ee71cd37f740d29cfeb69da859f": {
+      "description_zh": "在新建 API 前搜索已有 API、集合、规范和请求，并分析服务关系及依赖。已知名称时使用 Postman search，关系问题使用 Context Graph，涵盖 context instructions discovery。",
+      "source": "Finds what APIs, collections, specs, or requests already exist before building something new, and answers questions about how they relate. Use when the user asks \"does an API for X already exist,\" \"what depends on this service,\" \"what does this API do,\" or before scaffolding anything that might already have a Postman equivalent. Covers `postman search`, `postman context-graph`, and `postman context instructions discovery`. Reach for `search` when you know roughly what you're looking for by name; reach for the Context Graph when the question is about relationships, not names.",
+      "source_sha256": "77db3c33701e23207930e49dca309a67d49f6ee71cd37f740d29cfeb69da859f",
+      "source_path": "skills/api-discovery/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2200c5093e134b5680d0ac142a71cd7279678beaac9110cd511df11f4d6448c4": {
+      "description_zh": "优先以文件系统中的资料生成便于代理使用和团队分享的 API 文档，适用于发布文档、提交 API Network、分享集合或规范的文档链接，以及排查文档内容为空。",
+      "source": "Generate filesystem-first agent friendly api documentation that you can share with your teammates without hassle. Use when the user asks to \"publish API docs,\" \"generate documentation for this API,\" \"put this on the API Network,\" \"share a docs link for this collection or spec,\" or \"why do my docs look empty.",
+      "source_sha256": "2200c5093e134b5680d0ac142a71cd7279678beaac9110cd511df11f4d6448c4",
+      "source_path": "skills/api-documentation/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26496d2ef4dabad522614498f1d244331e7a7f5845e7fe8c678879e0b4ce3728": {
+      "description_zh": "API 工程工作的默认入口，覆盖 API 设计、实现、模拟、测试、监控、文档和部署。",
+      "source": "Default entry point for API engineering work — designing, implementing, mocking, testing, monitoring, documenting, or deploying an API.",
+      "source_sha256": "26496d2ef4dabad522614498f1d244331e7a7f5845e7fe8c678879e0b4ce3728",
+      "source_path": "skills/api-engineer/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "273cdc84b8b6e96425d9a938e0510a23e4500165206c30dd86c0b73209837e37": {
+      "description_zh": "根据 Postman 集合或 OpenAPI 规范创建模拟后端，在本地运行或推送云端取得持久 URL，支持请求时覆盖场景和状态码以测试故障。仅推送云端时需确定工作区，本地生成及运行不依赖初始化。",
+      "source": "Stands up a fake backend that behaves like a real API — from a collection or an OpenAPI spec, running locally or pushed to Postman's cloud for a durable URL — plus request-time scenario and status-code overrides for testing failure paths. Use when the user asks to \"mock this API,\" \"create a mock server,\" \"fake the backend,\" \"run tests without hitting the real API,\" or \"simulate an error/out-of-stock response.\" Covers `postman mock`. Depends on bootstrap for the workspace id only once a mock is pushed to the cloud (`-w`, or the workspace linked in `.postman/resources.yaml`) — generating and running a mock locally needs nothing from bootstrap.",
+      "source_sha256": "273cdc84b8b6e96425d9a938e0510a23e4500165206c30dd86c0b73209837e37",
+      "source_path": "skills/api-mocking/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "069ac612b62f6ef424aee9f3d6aac8288de551c0beef46f815001c339c20faf2": {
+      "description_zh": "创建、排期和管理 Postman Monitor，对实际 API 做周期检查，也可立即运行、查看作业和历史记录以排查失败；为私有网络监控配置自托管执行器，涵盖监控暂停恢复及 runner 启动、列表和区域。",
+      "source": "Creates, schedules, and manages Postman Monitors — recurring checks against a live API — triggers ad hoc runs, inspects job/run history to diagnose failures, and hosts self-hosted execution runners for monitors on a private network. Use when the user asks to \"set up a monitor,\" \"run this monitor now,\" \"check monitor results,\" \"pause/resume a monitor,\" or \"set up a runner for our internal APIs.\" Covers `postman monitor` (create, update, delete, list, get, pause, resume, run, jobs, runs) and `postman runner` (start, list, regions).",
+      "source_sha256": "069ac612b62f6ef424aee9f3d6aac8288de551c0beef46f815001c339c20faf2",
+      "source_path": "skills/api-monitoring/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d80aef7933632758f6dea8e0957168c4b500e55894ed416ec4771b851b1ab85": {
+      "description_zh": "通过命令行测试 API，可发送单次请求、运行带 pm.test 断言的集合，或将应用捕获流量与集合契约比较。云集合及绑定工作区的环境需初始化，裸 URL 或本地集合无需该步骤。",
+      "source": "Runs tests against an API from the command line — a single ad-hoc request, a full collection of pm.test assertions, or matching real captured app traffic against a collection contract. Use when the user asks to \"test this endpoint,\" \"run this collection,\" \"check the API still works,\" or \"verify my app's requests match the contract.\" Covers `postman request`, `postman collection run`, and `postman application test`. Depends on bootstrap when the target is a cloud collection or workspace-bound environment; a bare URL or local collection needs nothing from bootstrap.",
+      "source_sha256": "8d80aef7933632758f6dea8e0957168c4b500e55894ed416ec4771b851b1ab85",
+      "source_path": "skills/api-testing/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "593262a2254885f50bf900aa531ac7d4c458993fcb12543ea4318a81beceb9b6": {
+      "description_zh": "确认 Postman CLI、认证及工作区关联，记录仓库规范路径、集合目录和工作区 ID。用于连接仓库、登录或 init；只有相关信息尚未在当前会话确认时，才作为其他 Postman 工作流的前置步骤。",
+      "source": "Resolves the Postman CLI, authenticates, links the workspace, and records this repo's spec path, collections directory and workspace id. Use when the user asks to \"set up Postman here\", \"connect this repo to Postman\", \"link this workspace\", \"authenticate with Postman\", \"postman login\", or \"run postman init\" — and before the api-mocking, api-testing, api-monitoring, flows, performance-testing, api-discovery, or ci-integration skills only when the CLI, the linked workspace or the spec path has not already been confirmed in this session. Those skills stop and point back here if it has not completed; they never re-derive these values themselves.",
+      "source_sha256": "593262a2254885f50bf900aa531ac7d4c458993fcb12543ea4318a81beceb9b6",
+      "source_path": "skills/bootstrap/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6302cfb027cb2be3715cfdf6fe34e6450100e494dfddf35a0bed4dedf252f67b": {
+      "description_zh": "把 Postman API 操作接入 CI，设置独立通过或失败门槛，例如每个 PR 运行集合、治理违规使构建失败，或合并 main 后推送云工作区；适用于 GitHub Actions 中的 API 检查和同步。",
+      "source": "Common CI integrations that can added as independent pass/fail gates. Use when the user asks to \"add Postman to CI,\" \"run this collection on every PR,\" \"fail the build on a governance violation,\" or \"push to the postman cloud workspace after merge to main\", \"add some api related operation in my Github actions\".",
+      "source_sha256": "6302cfb027cb2be3715cfdf6fe34e6450100e494dfddf35a0bed4dedf252f67b",
+      "source_path": "skills/ci-integration/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "024d52fc1c8a68ad6b1c925a26b0048baec038a146ed3eea9b6f146a0c8bc7d8": {
+      "description_zh": "提供 Git 原生 v3 集合文件格式参考：postman/collections 下请求、目录和示例各用一个 YAML 文件，环境位于 postman/environments。用于手工生成修改或排查 lint；非 HTTP 协议另查对应参考文件。",
+      "source": "The reference for the git-native v3 collection file format — one YAML file per request/folder/example under postman/collections/, plus postman/environments/. Read before writing, editing, or generating any file in either directory by hand, or before debugging a `collection lint` failure. Covers the HTTP request/example/definition schema, environment schema, and the YAML/naming rules that make files parse — GraphQL, gRPC, WebSocket, Socket.IO, MQTT, MCP, and LLM request schemas are non-HTTP protocols and live in reference/other_protocols.md, read only when a collection actually uses one.",
+      "source_sha256": "024d52fc1c8a68ad6b1c925a26b0048baec038a146ed3eea9b6f146a0c8bc7d8",
+      "source_path": "skills/collection-schema-v3/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3eac6abb215315b32c7e3b579b298870083f3e4cc8e799ef2b5cdf03ecd0e27": {
+      "description_zh": "从命令行列出、运行、部署、更新和排查 Postman Flows：本地执行流程文件、通过 webhook 触发已部署流程，并追踪失败运行对应的故障块，涵盖运行记录查询。",
+      "source": "Runs, deploys, and debugs Postman Flows from the command line — executing a flow file locally, triggering a deployed flow over its webhook, deploying one so it becomes callable, and tracing a failed run to the block that broke. Use when the user names a flow and an action (\"run the Checkout flow\", \"deploy this flow\", \"why did that flow run fail\", \"what flows do I have\"). Covers `postman flows list`, `run`, `trigger`, `deploy`, `update`, `list-runs`, and `get-run`.",
+      "source_sha256": "c3eac6abb215315b32c7e3b579b298870083f3e4cc8e799ef2b5cdf03ecd0e27",
+      "source_path": "skills/flows/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad646b31d09e02a843cddc2b9dc4e22eaaa60773a9324443cdb97eb1ed5cedb5": {
+      "description_zh": "使用并发虚拟用户、负载曲线及延迟或错误率阈值，对 Postman 集合做本地或云端负载测试。会向真实目标发送实际流量，原说明要求运行前确认目标和规模。",
+      "source": "Load-tests a collection with concurrent virtual users, a chosen load profile, and pass/fail thresholds on latency or error rate — run locally or on Postman's cloud runners. Use when the user asks to \"load test this API,\" \"run a performance test,\" \"check how this holds up under load,\" or \"benchmark this collection.\" Covers `postman performance run`. This generates real traffic against a real target — confirm the target and scale before running, the same way any action with effects outside this session gets confirmed.",
+      "source_sha256": "ad646b31d09e02a843cddc2b9dc4e22eaaa60773a9324443cdb97eb1ed5cedb5",
+      "source_path": "skills/performance-testing/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ea0760296aea49eb2cf76b32c479c9e82ac8a9a12672e47c15cd611ddd94839": {
+      "description_zh": "提供 Postman 概念及 MCP 工具使用指导，帮助在使用 Postman MCP 时选择合适工具并处理限制或替代方案。",
+      "source": "Postman concepts and MCP tool guidance. Loaded when working with Postman MCP tools to make better decisions about tool selection and workarounds.",
+      "source_sha256": "4ea0760296aea49eb2cf76b32c479c9e82ac8a9a12672e47c15cd611ddd94839",
+      "source_path": "skills/postman-mcp-server/SKILL.md",
+      "package_sha256": "0a1ee3464c788b07c368faaf9ca076ce7f3afb350c8a28c5d6356564e4106ab2",
+      "source_package": "postman-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b456067cef7508f1b656e7da7e29b945e51926b62f859a4ae0b9033761b2b1c": {
+      "description_zh": "查看 Postproxy 中单条帖子或社交账号的表现，适用于互动、曝光、点赞和粉丝增长统计。",
+      "source": "Show performance stats for a post or a social media profile. Use when the user asks about engagement, impressions, likes, or follower growth.",
+      "source_sha256": "2b456067cef7508f1b656e7da7e29b945e51926b62f859a4ae0b9033761b2b1c",
+      "source_path": "skills/analytics/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b1966f12193d981024cc6637e5f52b7d6b1efd9e1008bf12c091b608ba9ba94": {
+      "description_zh": "管理经 Postproxy 发布的帖子评论，支持列出、回复、隐藏、删除和点赞；适用于 Instagram、Facebook、Threads、YouTube 和 LinkedIn。",
+      "source": "Manage comments on posts published via Postproxy. Use when the user wants to list, reply to, hide, delete, or like comments on a post on Instagram, Facebook, Threads, YouTube, or LinkedIn.",
+      "source_sha256": "2b1966f12193d981024cc6637e5f52b7d6b1efd9e1008bf12c091b608ba9ba94",
+      "source_path": "skills/comments/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e628a9a2627b005affd85fa85ade384a5f7b257d7cc5a948ccd279aea7589449": {
+      "description_zh": "通过 Postproxy 阅读和发送私信、回复聊天、为消息添加回应，或私下回复评论；适用于 Facebook/Messenger、Instagram、Telegram 和 Bluesky。",
+      "source": "Send and manage direct messages via Postproxy. Use when the user wants to read or send DMs, reply in a chat, react to a message, or privately reply to a comment on Facebook/Messenger, Instagram, Telegram, or Bluesky.",
+      "source_sha256": "e628a9a2627b005affd85fa85ade384a5f7b257d7cc5a948ccd279aea7589449",
+      "source_path": "skills/dm/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69f06f093d9924085b81da49516a45b1d66539576206861dd90d89390c81b8a5": {
+      "description_zh": "通过 Postproxy 管理 Google 商家资料，编辑名称、简介、营业时间、照片、属性、服务、菜单及操作链接，并阅读和回复 Google 评论。",
+      "source": "Manage a Google Business Profile via Postproxy. Use when the user wants to edit their Google business listing (name, description, hours, photos, attributes, services, food menus, action links) or read and reply to Google reviews.",
+      "source_sha256": "69f06f093d9924085b81da49516a45b1d66539576206861dd90d89390c81b8a5",
+      "source_path": "skills/google-business/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8d1028a9e12f34f7ad57e8bb4ac8cf2d4cf2f3f2c1805651d4f4b66840bf7a9": {
+      "description_zh": "查看 Postproxy 最近的社交发布活动，查询近期发布了哪些内容及其帖子状态。",
+      "source": "Show recent social media post activity from Postproxy. Use when the user asks what was posted recently or wants to check post statuses.",
+      "source_sha256": "f8d1028a9e12f34f7ad57e8bb4ac8cf2d4cf2f3f2c1805651d4f4b66840bf7a9",
+      "source_path": "skills/history/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76802414e6fc2b2162222828dd529d99277d52c6be0c6d23e241f4d9b28fe86a": {
+      "description_zh": "列出 Postproxy 已连接的社交账号、平台和发布位置，并查看账号的粉丝或互动统计。",
+      "source": "List connected social media accounts in Postproxy. Use when the user asks which platforms are connected, wants to see their accounts or placements, or wants follower/engagement stats for a profile.",
+      "source_sha256": "76802414e6fc2b2162222828dd529d99277d52c6be0c6d23e241f4d9b28fe86a",
+      "source_path": "skills/profiles/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e42f77d8e040f8613acfcbbd05ab6cf1da45d447dd7597cc0f577552f640d78a": {
+      "description_zh": "通过 Postproxy 创建和发布社交内容，覆盖定时、入队、草稿、编辑、帖子串和删除，适用于跨社交平台的内容发布管理。",
+      "source": "Create and publish a social media post via Postproxy. Use when the user wants to post, schedule, queue, draft, edit, thread, or delete content across social media platforms.",
+      "source_sha256": "e42f77d8e040f8613acfcbbd05ab6cf1da45d447dd7597cc0f577552f640d78a",
+      "source_path": "skills/publish/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4aa0fea7ed2d168bab948ea49d885aea19c39d58653d1464ca5e297c236a53a4": {
+      "description_zh": "管理 Postproxy 周期发布队列，支持查看、创建、更新、暂停或删除队列，并查询下一个可用发布时段。",
+      "source": "Manage Postproxy posting queues. Use when the user wants to list, create, update, pause, or delete recurring posting queues, or check a queue's next available slot.",
+      "source_sha256": "4aa0fea7ed2d168bab948ea49d885aea19c39d58653d1464ca5e297c236a53a4",
+      "source_path": "skills/queues/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20cd6dcda98d1a02f43093dd3cd9b076eb3150dfd83449d12169d1e0a7514e63": {
+      "description_zh": "验证 Postproxy 连接并显示已连接社交账号，适用于首次安装、认证排障及连接新账号。",
+      "source": "Verify Postproxy connection and show connected social media profiles. Use on first install, when troubleshooting authentication, or when connecting a new social media account.",
+      "source_sha256": "20cd6dcda98d1a02f43093dd3cd9b076eb3150dfd83449d12169d1e0a7514e63",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b1c5c2e897d22920c5e57a519e74bf052814afdab3358681b1069e2d8ace9dc": {
+      "description_zh": "汇总 Postproxy 账号活动和近期发布互动状态，指出尚待回复的评论、商家评价或私信。",
+      "source": "Show an account activity summary via Postproxy. Use when the user asks \"what's the status?\", wants an overview of recent posting/engagement, or wants to know what comments, reviews, or DMs are awaiting a reply.",
+      "source_sha256": "5b1c5c2e897d22920c5e57a519e74bf052814afdab3358681b1069e2d8ace9dc",
+      "source_path": "skills/summary/SKILL.md",
+      "package_sha256": "f76d44eac4a7e2399cb151725c87910a5714e24be91cfcb22006fb68dd0a2cea",
+      "source_package": "Postproxy-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f797a0d8ea73821d62441851cf3044c321af1fbada375c3ae07b9ce867fb3188": {
+      "description_zh": "在用户要求处理其 Postraid 账号内容时，通过 Postraid MCP 审阅内容并保存草稿。",
+      "source": "Use Postraid MCP to review content and save a draft when the user requests work in their Postraid account.",
+      "source_sha256": "f797a0d8ea73821d62441851cf3044c321af1fbada375c3ae07b9ce867fb3188",
+      "source_path": "skills/postraid/SKILL.md",
+      "package_sha256": "21f6544b89fc15d3ef0c2521463d3da7603c539486450c9eb84c4efc24d6c8a3",
+      "source_package": "Postraid-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1125a06d1b8f7a7777194e6ae2b8f354128fe7ca610afd4966b23581c76e4e8d": {
+      "description_zh": "通过 PostSyncer 排期、发布及分析社交帖子；原说明覆盖 X、Instagram、Facebook、LinkedIn、TikTok、YouTube、Threads、Bluesky、Mastodon、Pinterest 和 Telegram 共11个平台，以及媒体上传、活动标签、评论管理和表现分析。",
+      "source": "Schedule, publish, and analyze social media posts with PostSyncer across 11 platforms — X (Twitter), Instagram, Facebook, LinkedIn, TikTok, YouTube, Threads, Bluesky, Mastodon, Pinterest, and Telegram. Use for creating or scheduling posts, uploading media, managing campaigns and labels, moderating comments, and reading performance analytics.",
+      "source_sha256": "1125a06d1b8f7a7777194e6ae2b8f354128fe7ca610afd4966b23581c76e4e8d",
+      "source_path": "skills/postsyncer/SKILL.md",
+      "package_sha256": "d658fdc8d635e692874bf37546a294063d3888f6377da9617825734d3a3765d2",
+      "source_package": "PostSyncer-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ed7ea15f8fbdcafb59192e0e1a9deaa7e222631733688bf9ad6f2728e5bf0e5": {
+      "description_zh": "根据 PostZen 数据生成社交分析报告，覆盖连接账号的帖子表现、粉丝增长、每日指标和最佳发布时间，适用于帖子或账号表现查询。",
+      "source": "Build a social media analytics report from PostZen — post performance, follower growth, daily metrics, and best times to post across connected accounts. Use when the user asks how their posts or accounts are performing.",
+      "source_sha256": "2ed7ea15f8fbdcafb59192e0e1a9deaa7e222631733688bf9ad6f2728e5bf0e5",
+      "source_path": "skills/analytics/SKILL.md",
+      "package_sha256": "1abb92a3e2872da46865abc322939de56201a3e52686ed3243c1cee591c5159a",
+      "source_package": "PostZen-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c319f78dc63f700752d06fbf497963743e1521e77643fdf840700de54e31be8": {
+      "description_zh": "连接新的社交账号到 PostZen，或查看及断开现有连接；原说明列出 X、Instagram、TikTok、LinkedIn、Facebook、YouTube、Threads、Pinterest、Bluesky 和 Telegram。",
+      "source": "Connect a new social media account to PostZen (X, Instagram, TikTok, LinkedIn, Facebook, YouTube, Threads, Pinterest, Bluesky, Telegram) or review/disconnect existing connections.",
+      "source_sha256": "8c319f78dc63f700752d06fbf497963743e1521e77643fdf840700de54e31be8",
+      "source_path": "skills/connect/SKILL.md",
+      "package_sha256": "1abb92a3e2872da46865abc322939de56201a3e52686ed3243c1cee591c5159a",
+      "source_package": "PostZen-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ccc96cb1b82ce13b93c997d1b24aa3eed75ab8abf6044014e601c6b4ae932dce": {
+      "description_zh": "使用 PostZen 创建、排期或入队社交帖子，也可制作草稿及跨平台发布；原说明支持 X、Instagram、TikTok、LinkedIn、Facebook、YouTube、Threads、Pinterest、Bluesky 和 Telegram。",
+      "source": "Create, schedule, or queue a social media post with PostZen. Use when the user wants to post, schedule, cross-post, or draft content for X (Twitter), Instagram, TikTok, LinkedIn, Facebook, YouTube, Threads, Pinterest, Bluesky, or Telegram.",
+      "source_sha256": "ccc96cb1b82ce13b93c997d1b24aa3eed75ab8abf6044014e601c6b4ae932dce",
+      "source_path": "skills/post/SKILL.md",
+      "package_sha256": "1abb92a3e2872da46865abc322939de56201a3e52686ed3243c1cee591c5159a",
+      "source_package": "PostZen-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c347b66624f03a6dbd44f4065f721172258a8ab6e4864f0cd3abfa2f5c147df1": {
+      "description_zh": "设置和管理 PostZen 发布队列，让帖子自动填入周期时段；适用于新建、检查或调整排期，查看将来时段，以及按表现较好的时间发布。",
+      "source": "Set up and manage PostZen posting queues — recurring time slots that posts fill automatically. Use when the user wants to create, review, or reorganize their posting schedule, see upcoming slots, or post at their best-performing times.",
+      "source_sha256": "c347b66624f03a6dbd44f4065f721172258a8ab6e4864f0cd3abfa2f5c147df1",
+      "source_path": "skills/queue/SKILL.md",
+      "package_sha256": "1abb92a3e2872da46865abc322939de56201a3e52686ed3243c1cee591c5159a",
+      "source_package": "PostZen-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5d3f115f37b23bf0b5c41e3a82df9e43baf259dc379013bd9c091808f5a792f": {
+      "description_zh": "指导基于 Powabase 多租户 AI 后端服务开发：覆盖知识库与 RAG 的文档索引、检索及重排，代理工具、会话、流式响应和人工审批，多代理编排、工作流及定时触发，以及 PostgREST、行级安全、认证、存储、实时数据和 Postgres；同时处理 API 密钥选择、计费、限流和错误。",
+      "source": "Use for ANY task building on Powabase, the multi-tenant AI Backend-as-a-Service (projects on *.p.powabase.ai, the /api/* surface). Triggers: RAG & knowledge bases (Sources, document upload/extraction, indexing strategies chunk_embed/full_document/page_index/graph_index/doc2json, retrieval vector/full-text/hybrid/tree search, reranking, query enrichment, multimodal/image retrieval, embeddings, pgvector); agents (ReAct loops, builtin/custom/MCP tools, sessions, streaming, approval/human-in-the-loop); multi-agent orchestrations (supervisor/sequential/parallel); workflows (block graphs, webhooks, scheduled/cron triggers, Copilot); SSE streaming of agent/orchestration/workflow runs; and the Powabase BaaS layer — PostgREST, Row Level Security, the ai.* schema, GoTrue auth, Storage, Realtime, direct Postgres. Also connecting/authenticating, choosing the right API key, and handling billing/rate-limit/error responses.",
+      "source_sha256": "a5d3f115f37b23bf0b5c41e3a82df9e43baf259dc379013bd9c091808f5a792f",
+      "source_path": "skills/powabase/SKILL.md",
+      "package_sha256": "954968b9b66b6414ebc184b61c84250c36bd5ca8c4cdb9577c25d3fb5b7a0d30",
+      "source_package": "Powabase-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53dfc96326a8fe2009df1dab32117b715753e94829e81e49aae361628265f579": {
+      "description_zh": "把确切的 CycloneDX 或 SPDX 软件物料清单附到发布版本，检查格式、版本、必填字段、PURL 和许可证标识，并比较两份发布清单的合规、发现、组件或许可证变化；原说明涉及 BSI TR-03183-2 的版本门槛，不负责从构建生成清单。",
+      "source": "Attaches the exact CycloneDX or SPDX SBOM to a software release. Use when a release build is prepared for delivery; an SBOM must be valid, conformant, or ready to deliver; document conformance, PURL syntax, SPDX license identifiers, required fields, detected format, or specification version must be assessed; an EU-market release must apply the BSI TR-03183-2 floor of CycloneDX 1.6 or newer or SPDX 3.0.1 or newer; or two distinct release SBOMs need conformance-drift, finding-drift, component-change, or license-change evidence. Not for generating the SBOM from the release build.",
+      "source_sha256": "53dfc96326a8fe2009df1dab32117b715753e94829e81e49aae361628265f579",
+      "source_path": "skills/attach-regulator-ready-bom-to-release/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "259ec802eb08c443748beb48497c1c5798c6719bedfefda817e1bc4af691d8ea": {
+      "description_zh": "在电子发票重新提交前复现并解释 EN 16931、Peppol 或随包 CIUS 的符合性问题，定位买方、税务平台或 ERP 对 UBL/CII 发票拒收的业务规则代码及需修正事项；不用于比较两份尚未被拒的草稿。",
+      "source": "Diagnoses a rejected e-invoice by reproducing and explaining current EN 16931, Peppol, or bundled CIUS conformance findings before resubmission. Use when a buyer or tax-authority platform rejects an invoice with a business-rule code, an ERP-generated UBL or CII is bounced, or staff ask what must be fixed before retransmission. Not for comparing two unrejected drafts.",
+      "source_sha256": "259ec802eb08c443748beb48497c1c5798c6719bedfefda817e1bc4af691d8ea",
+      "source_path": "skills/diagnose-rejected-invoice-before-resubmission/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f958b5368f5329ddc29daea21164fe5d6df935633445840e11f5eba8b2cfd47": {
+      "description_zh": "在公告前验证已经公开的确切 npm 包版本，核验注册表中消费者实际收到的内容；适用于版本已上线但公告暂停的检查，不负责发布前 exports 或 TypeScript 解析验证。",
+      "source": "Gates an exact published npm release before its announcement. Use when a package version becomes public, the registry version is live but the announcement is paused, or a maintainer asks to verify what consumers actually receive. Not for pre-publish exports or TypeScript resolution validation.",
+      "source_sha256": "7f958b5368f5329ddc29daea21164fe5d6df935633445840e11f5eba8b2cfd47",
+      "source_path": "skills/gate-published-release-before-announcement/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce67fa1c3699a4f011c3a78cd90486d7986d3bc46f011b833d9f709f913b78e6": {
+      "description_zh": "客户交付前按目标交付规范检查 WebVTT、SRT 或 TTML/IMSC 字幕轨的有效性、符合性和阅读速度，提供如20或17 CPS的证据；不生成、翻译字幕或将字幕烧录到视频。",
+      "source": "Preflights each caption track against the destination delivery profile before client handoff. Use when a WebVTT (.vtt), SRT (.srt), or TTML/IMSC (.ttml or .xml) track is frozen for delivery, a client asks whether it is valid, conformant, clean, or ready to deliver, a platform gate needs reading-speed evidence, or the user says before handoff, ready for delivery, or check 20 CPS or 17 CPS. Not for generating, translating, or burning captions into video.",
+      "source_sha256": "ce67fa1c3699a4f011c3a78cd90486d7986d3bc46f011b833d9f709f913b78e6",
+      "source_path": "skills/preflight-caption-track-before-client-handoff/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ab55830c1e7610c7cacc5a467c9d244bda52ec97e9d3e0903648ab6f82f1291": {
+      "description_zh": "集成前检查客户提供的公共 FHIR 基址或 metadata URL，核验服务声明的符合性、元数据、US Core 资源类型与 SMART 发现字段，排查授权端点无法发现；不验证单个 FHIR 资源是否符合其声明的 profile。",
+      "source": "Verifies a client’s newly supplied public FHIR endpoint’s declared conformance surface before integration work begins. Use when a client gives a public FHIR base URL or metadata URL and asks what the named server declares, whether its metadata is valid, whether US Core resource types or SMART discovery fields are present, why authorization endpoints cannot be discovered, or whether the endpoint is in good shape before onboarding. Not for validating an individual FHIR resource against its declared profile.",
+      "source_sha256": "2ab55830c1e7610c7cacc5a467c9d244bda52ec97e9d3e0903648ab6f82f1291",
+      "source_path": "skills/preflight-client-endpoint-before-integration/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5a549ba09d8a79cb08d4d58b862fca20535cf65a19f6302aaf566096d395959": {
+      "description_zh": "对即将交给电子书零售商的确切 EPUB 构建运行 EPUBCheck，检查 EPUB 2/3 自动化规范问题，适用于上传前、商店拒收或重新导出后的回归；不审查无障碍、WCAG 或无障碍元数据。",
+      "source": "Preflights the exact retailer-bound .epub build for automated EPUB 2/3 specification failures. Use when a title or revised edition is ready for retailer upload, a store rejected the file, EPUBCheck must run before handoff, or a re-export needs a regression check. Not for accessibility, WCAG, or accessibility-metadata review.",
+      "source_sha256": "b5a549ba09d8a79cb08d4d58b862fca20535cf65a19f6302aaf566096d395959",
+      "source_path": "skills/preflight-retailer-bound-epub/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ec2abb81f7ecaae3c00256a21e3c1443fbcb29e7149a97622e7a734b0999a7f": {
+      "description_zh": "制作客户网站交接报告，提供部署后实际链接完整性证据；可跟进确认的坏链接修复、重新部署及复查，适用于上线或重大改版签收，不评估 WCAG 无障碍合规。",
+      "source": "Produces a client site handoff report with live link-integrity evidence. Use when a client site reaches its launch or major-relaunch gate, before client handoff, after deployment, when a lead needs observed link evidence for sign-off, or when confirmed link failures must be fixed, redeployed, and rechecked before handoff. Not for assessing a client site's WCAG accessibility compliance.",
+      "source_sha256": "7ec2abb81f7ecaae3c00256a21e3c1443fbcb29e7149a97622e7a734b0999a7f",
+      "source_path": "skills/produce-client-site-handoff-report/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cae58a03d881d8a25c3e0a507c02479a135e33b769ce6b9f4e2ddad663e1ddfe": {
+      "description_zh": "旧日历到期前验证并发布 GTFS Schedule 更新，覆盖服务变化、日历换期、站点线路更名、规范检查和同机构两份公共 feed 回归；原说明也涉及美国固定线路 NTD 静态 feed URL 提交，不处理实时车辆到站或判断时刻表是否反映实际服务。",
+      "source": "Publishes a validated GTFS Schedule update before the old calendar expires. Use when a service change, calendar rollover, stop rename, or route rename requires a new schedule export; when a public GTFS Schedule ZIP needs a Canonical GTFS Validator check for validity, specification problems, or a consumer publish gate; when exactly two public feeds for the same agency need a regression check; or when a static GTFS feed URL must be submitted for US fixed-route NTD reporting. Not for GTFS-Realtime feeds or feed-portal pages, route planning, live vehicle or arrival questions, automated judgments about whether a timetable reflects real service, predictions of a particular consumer's additional acceptance rules, or comparisons between agencies.",
+      "source_sha256": "cae58a03d881d8a25c3e0a507c02479a135e33b769ce6b9f4e2ddad663e1ddfe",
+      "source_path": "skills/publish-service-change-feed/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b6d88a17226e9058bd3c0dd55139625f3437ca7240253826e58bf7dee597b9b": {
+      "description_zh": "检查新播客单集发布后的公共 RSS 分发，核验元数据、图片、媒体附件、下载与定位、字节范围传输、编码、时长和容器，也可比较迁移前后两份公共 feed；不测音频母带响度、真峰值、削波或整批一致性。",
+      "source": "Keeps this week's podcast episode from breaking distribution. Use when a new episode is published, before directories pull the revised public RSS feed, when a show is not ready, valid, or healthy, when submission failed, when required metadata, artwork, an enclosure, download, seeking, byte-range delivery, codec, duration, or container behavior is in question, or when comparing two public podcast RSS feeds before a hosting migration or as before-and-after evidence. Not for measuring an episode audio master's LUFS loudness, true peak, clipping, or release-wide consistency.",
+      "source_sha256": "7b6d88a17226e9058bd3c0dd55139625f3437ca7240253826e58bf7dee597b9b",
+      "source_path": "skills/publish-weekly-episode-without-feed-breakage/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "781c12f287b61fb379b121e4fa1c04a08223a3a2a79893818e13c3992fb5db58": {
+      "description_zh": "为欧盟销售或旧版整改的发行 EPUB 提供无障碍声明证据，检查 EPUB Accessibility 1.1、EAA 或 WCAG 相关问题，并比较两份候选构建变化；不负责 EPUB 结构有效性检查。",
+      "source": "Substantiates an EU ebook accessibility claim for the release EPUB before approval. Use when a new title or revised edition is prepared for EU sale, during backlist remediation, when someone asks whether an ebook is accessible, whether it will meet EPUB Accessibility 1.1 or the EAA, what WCAG problems it has, or what changed between two proposed builds. Not for checking structural EPUB validity.",
+      "source_sha256": "781c12f287b61fb379b121e4fa1c04a08223a3a2a79893818e13c3992fb5db58",
+      "source_path": "skills/substantiate-eu-ebook-accessibility-claim/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51aa016d1773b7d259f09f61a662967601047b99880952690e8245b1bb90db57": {
+      "description_zh": "部署后核验支付页面实际 HTTP 安全响应头并生成带日期的授权审查证据；原说明涉及 PCI DSS v4.0.1 第11.6.1项及至少每七天监测，不编写 CSP 或其他响应头配置。",
+      "source": "Verifies deployed payment-page HTTP security headers and produces dated evidence for authorization review. Use when a payment page or its delivery infrastructure changed, after deploy, for PCI DSS v4.0.1 Requirement 11.6.1 evidence, when a reviewer asks whether live headers changed, or for monitoring at least once every seven days. Not for authoring a Content-Security-Policy or other header configuration.",
+      "source_sha256": "51aa016d1773b7d259f09f61a662967601047b99880952690e8245b1bb90db57",
+      "source_path": "skills/verify-payment-page-header-change-after-deploy/SKILL.md",
+      "package_sha256": "6675114c50b95f8e4ea7ddec70e97bf294f564ec45a97a90609e22288b5243f8",
+      "source_package": "powmcp-2026.09.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8055239c415ee05439456ce96671bc27bbe5bff8572f49794c30dcc54d11dc34": {
+      "description_zh": "根据主题、Markdown 笔记、要点或结构化数据创建专业 PowerPoint 文件，自动处理品牌设置，适用于演示文稿、幻灯片及 PPTX 制作。",
+      "source": "Creates a professional PowerPoint presentation (.pptx) from any content. Use when the user asks to make a deck, slides, presentation, or .pptx file. Accepts topic descriptions, markdown notes, bullet points, or structured data. Handles brand setup automatically.",
+      "source_sha256": "8055239c415ee05439456ce96671bc27bbe5bff8572f49794c30dcc54d11dc34",
+      "source_path": "skills/create-deck/SKILL.md",
+      "package_sha256": "a105bcc9a6cc8803aeea3f90189810e1589daac57af0ac3c5df4e7d9a6b0abd1",
+      "source_package": "pptx-deck-plugin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0db4a6cdf1f8bede7168e4ac28d6ae9cf43c20e7163b476eade230a5fb1d4e7c": {
+      "description_zh": "通过 Prefect MCP 检查和排查工作流、部署、工作池及发布，处理运维问题、失败诊断和文档查询；当修改需另行配置 Prefect CLI 时提供相应指导。",
+      "source": "Inspect and troubleshoot Prefect workflows, deployments, work pools, and releases with Prefect MCP tools. Use for Prefect operational questions, failure diagnosis, documentation lookup, and safe guidance when a requested mutation requires a separately configured Prefect CLI.",
+      "source_sha256": "0db4a6cdf1f8bede7168e4ac28d6ae9cf43c20e7163b476eade230a5fb1d4e7c",
+      "source_path": "plugins/prefect/skills/workflows/SKILL.md",
+      "package_sha256": "1b34e1501a5bf84a16fa37574dc2f43422d15035733dd568b54e519eb0253c34",
+      "source_package": "Prefect-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b7a248f7818857d93b68ab6691dd03833f2485099a2b7cc34d9492340ee3f72": {
+      "description_zh": "只读检查新增或变更代码是否有有意义的测试：测试是否存在、随变更更新并覆盖新行为；报告缺口，不编辑文件。",
+      "source": "Use when checking whether new or changed code has meaningful tests: tests exist, were updated with the change, and exercise the new behavior. Advisory; reports gaps, edits nothing.",
+      "source_sha256": "7b7a248f7818857d93b68ab6691dd03833f2485099a2b7cc34d9492340ee3f72",
+      "source_path": "skills/check-test-coverage/SKILL.md",
+      "package_sha256": "31b787de88838593f5e1bf751f382d8ba4d74ff4f8878ca1dd36ad41bde00f8f",
+      "source_package": "prepare-delivery-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b74399573eadd810b81e8f89880455802938276a0e650e2620964f59bdc10e3": {
+      "description_zh": "对变更文件进行多轮深入代码审查，或作为交付流水线中的审查循环；原说明按关注点并行安排审查者，用代码汇总发现并修复到无遗留问题。",
+      "source": "Use for a deep, multi-pass code review of changed files, or as the review loop of a delivery pipeline. Parallel reviewers per concern, findings aggregated in code, fixes applied until clean.",
+      "source_sha256": "1b74399573eadd810b81e8f89880455802938276a0e650e2620964f59bdc10e3",
+      "source_path": "skills/orchestrate-review/SKILL.md",
+      "package_sha256": "31b787de88838593f5e1bf751f382d8ba4d74ff4f8878ca1dd36ad41bde00f8f",
+      "source_package": "prepare-delivery-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "becf9451818829ec90f26d8ffde0ca669fe7c914c002a7729706ad9d8899a7af": {
+      "description_zh": "在交付准备、质量门禁、去除冗余和审查或发布前验证时，运行当前分支的本地检查并汇报准备状态；不推送。",
+      "source": "Use when the user asks to prepare delivery, run quality gates, deslop and review, or validate before shipping. Runs local gates on the branch and reports readiness. Does not push.",
+      "source_sha256": "becf9451818829ec90f26d8ffde0ca669fe7c914c002a7729706ad9d8899a7af",
+      "source_path": "skills/prepare-delivery/SKILL.md",
+      "package_sha256": "31b787de88838593f5e1bf751f382d8ba4d74ff4f8878ca1dd36ad41bde00f8f",
+      "source_package": "prepare-delivery-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3424a8e6029e05074965e8dc8cd66b5229e836421f8a87095ea9646d0d21be66": {
+      "description_zh": "验证分支是否满足交付条件，运行测试与构建，核对任务要求和审查状态，返回通过结论或需修复事项。",
+      "source": "Use when the user asks to validate delivery, check readiness, or verify a branch is done. Runs tests and build, checks the task's requirements and review status, returns approve or fix instructions.",
+      "source_sha256": "3424a8e6029e05074965e8dc8cd66b5229e836421f8a87095ea9646d0d21be66",
+      "source_path": "skills/validate-delivery/SKILL.md",
+      "package_sha256": "31b787de88838593f5e1bf751f382d8ba4d74ff4f8878ca1dd36ad41bde00f8f",
+      "source_package": "prepare-delivery-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1db3b5eba83e8d40e1580c368f8568623b3ce7a14557af52ef8d121a3170a60f": {
+      "description_zh": "用 Presenton 创建新演示文稿，导出可编辑 PPTX、演示 PDF 或 PNG 幻灯片；通过远程 MCP 选择设计和素材、验证1280×720 HTML并提供下载及预览链接，未指定格式时导出三种。不用于普通 PDF、纯文字提纲或原位编辑已有幻灯片。",
+      "source": "Create new slide presentations with Presenton and export them as editable PPTX, presentation PDF, or PNG slide images. Use when a user asks for a presentation, PowerPoint, slide deck, pitch deck, report deck, or presentation-file export, even when Presenton is not named. Do not use for generic PDFs or images unrelated to slides, text-only outlines, or editing an existing deck in place. Use Presenton's remote MCP tools to resolve designs and assets, validate 1280x720 HTML, export the requested formats—or all three when none is specified—and return download and shareable-preview links.",
+      "source_sha256": "1db3b5eba83e8d40e1580c368f8568623b3ce7a14557af52ef8d121a3170a60f",
+      "source_path": "skills/presenton/SKILL.md",
+      "package_sha256": "bfe6cb948155cd9defe86729d9503c705c035aae31cf9f26ee260e052371889d",
+      "source_package": "Presenton-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0bb86b8602c0da1e861feeafc967cdaaafe850ca34f631fa0c93b0cbaf9519cf": {
+      "description_zh": "通过直接调用 Preset Management API 管理团队、工作区、成员、邀请、角色标识、席位检查及审计日志；仅适用于直接 API 工作流，不用于纯 MCP 操作。",
+      "source": "Manage Preset teams, workspaces, memberships, invites, role identifiers, seat checks, and audit logs through direct Management API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "0bb86b8602c0da1e861feeafc967cdaaafe850ca34f631fa0c93b0cbaf9519cf",
+      "source_path": "skills/preset-admin/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8d80b70950d2cf9c4637f291f599052e58a329fddba7c7dec61280d8c5a1e6f": {
+      "description_zh": "准备直接访问 Preset API 所需的认证、JWT 交换、基础 URL、分页、Rison 参数和响应处理，提供共享初始化；不用于纯 MCP 工作流。",
+      "source": "Prepare direct Preset API access: auth, JWT exchange, base URLs, pagination, Rison parameters, response handling, and shared API setup. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "e8d80b70950d2cf9c4637f291f599052e58a329fddba7c7dec61280d8c5a1e6f",
+      "source_path": "skills/preset-api/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9f78d4acdb9a87a940fb4d6d99e7a5f8cc084684586f85bb0964ee71f4fdf7e": {
+      "description_zh": "通过 Snowflake Cortex Agent REST 和 SQL API 列出、描述、创建、更新、删除和运行代理，处理流式响应及 SQL 包装；仅用于直接 API 工作流，不用于纯 MCP 操作。",
+      "source": "Use Snowflake Cortex Agent REST and SQL APIs for listing, describing, creating, updating, deleting, running agents, streaming responses, and SQL wrappers. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "b9f78d4acdb9a87a940fb4d6d99e7a5f8cc084684586f85bb0964ee71f4fdf7e",
+      "source_path": "skills/preset-cortex-agents/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f117eb51f478e5a86a19fa8d9f5df1e0860e67df33edda7faa41f282fbf3c1de": {
+      "description_zh": "通过直接 Superset API 检查 Preset 工作区仪表板、图表、布局、截图、缩略图及图表数据，并选择图表或仪表板操作路径；不用于纯 MCP 工作流。",
+      "source": "Inspect Preset workspace dashboards, charts, dashboard composition, screenshots, thumbnails, chart data, and chart/dashboard operation routing through direct Superset API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "f117eb51f478e5a86a19fa8d9f5df1e0860e67df33edda7faa41f282fbf3c1de",
+      "source_path": "skills/preset-dashboards/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e3e37e5b2c2e5d672fed6c1077b3a6ccb35e1ca9ea8c313bfd6277195e5dbb3": {
+      "description_zh": "通过直接 Superset API 检查或安排 Preset 数据库连接配置、验证、OAuth、上传、新建、更新和删除流程；不用于纯 MCP 工作流。",
+      "source": "Inspect or route Preset database connection configuration, validation, OAuth, upload, create, update, and delete workflows through direct Superset API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "9e3e37e5b2c2e5d672fed6c1077b3a6ccb35e1ca9ea8c313bfd6277195e5dbb3",
+      "source_path": "skills/preset-database-connections/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd03d0c9ab8c920016ff69f5cdac9cbc13855bb2ed162de038b0f6533eee80b4": {
+      "description_zh": "通过直接 Superset API 检查 Preset 数据集、数据库元数据、模式、表、字段及指标，并选择数据集或数据库工作流；不用于纯 MCP 操作。",
+      "source": "Inspect Preset workspace datasets, database metadata, schemas, tables, columns, metrics, and dataset/database workflow routing through direct Superset API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "fd03d0c9ab8c920016ff69f5cdac9cbc13855bb2ed162de038b0f6533eee80b4",
+      "source_path": "skills/preset-datasets/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8067e05d289592fd1ae419a3bf068c77aa9c27f983841880b8037728834d4cc": {
+      "description_zh": "审查通过直接 Superset API 进行的 Preset 导入，关注破坏性操作、覆盖、局部更新、全资产恢复、数据库导入及包含秘密的内容；不用于纯 MCP 工作流。",
+      "source": "Review destructive, overwrite-capable, sparse-update, all-assets restore, database import, and secret-bearing Preset import workflows through direct Superset API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "e8067e05d289592fd1ae419a3bf068c77aa9c27f983841880b8037728834d4cc",
+      "source_path": "skills/preset-destructive-imports/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba5fe4d3e6077914f474fa3182170e370b60f984683ca631d1b1afe2427d38c6": {
+      "description_zh": "审查直接 API 嵌入分析中的行级安全条件、租户过滤、访客令牌 RLS 规则和外部查看者隔离；不用于纯 MCP 工作流。",
+      "source": "Review embedded analytics row-level security clauses, tenant filters, guest-token RLS rules, and external-viewer isolation for direct API workflows. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "ba5fe4d3e6077914f474fa3182170e370b60f984683ca631d1b1afe2427d38c6",
+      "source_path": "skills/preset-embedded-rls/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ad36a9cacacd7c46982bde4884a317df1bac06f2457515cad239bc338c3e482": {
+      "description_zh": "通过直接 Superset API 检查嵌入仪表板配置、可信域、来源、访客令牌及嵌入 RLS 的处理路径；不用于纯 MCP 操作。",
+      "source": "Inspect embedded dashboard configuration, trusted domains, origins, guest-token routing, and embedded RLS routing through direct Superset API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "5ad36a9cacacd7c46982bde4884a317df1bac06f2457515cad239bc338c3e482",
+      "source_path": "skills/preset-embedding/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60d945c76421a84dc8f596d46f1b1f15aa9ca72815843af5c3105568d1adcd95": {
+      "description_zh": "通过直接 Superset API 准备和创建 Preset 嵌入仪表板访客令牌，处理外部用户、资源和 RLS 声明及令牌管理计划；不用于纯 MCP 工作流。",
+      "source": "Prepare and create Preset embedded dashboard guest tokens, external-user claims, resource claims, RLS claims, and token-handling plans through direct Superset API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "60d945c76421a84dc8f596d46f1b1f15aa9ca72815843af5c3105568d1adcd95",
+      "source_path": "skills/preset-guest-tokens/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e61a8edabfd9a490e788956fa727ca583fde4f6771ba545e46c29d10a3595344": {
+      "description_zh": "检查并选择 Superset 直接 API 的导入导出流程，覆盖仪表板、图表、数据集、数据库、保存的查询、主题和资产包；不用于纯 MCP 操作。",
+      "source": "Inspect and route direct Superset import/export workflows for dashboards, charts, datasets, databases, saved queries, themes, and asset bundles. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "e61a8edabfd9a490e788956fa727ca583fde4f6771ba545e46c29d10a3595344",
+      "source_path": "skills/preset-import-export/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9465bce1be2d35a593ddfad9a2b6efab28d7cc636c9493cdf775ecf27147cb1f": {
+      "description_zh": "通过直接 API 审查 Preset 角色、工作区成员、权限、访问控制、DAR/RLS 相关及实际访问能力的变更；不用于纯 MCP 工作流。",
+      "source": "Review Preset role, workspace membership, permission, access-control, DAR/RLS-adjacent, and effective-access changes through direct API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "9465bce1be2d35a593ddfad9a2b6efab28d7cc636c9493cdf775ecf27147cb1f",
+      "source_path": "skills/preset-roles-permissions/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "512dfefcefed1631ecd39af8f7fdb1f26885e0f7ae1ad976d5cc3ed1c5d20a7a": {
+      "description_zh": "准备 Snowflake Cortex 直接 API 访问，确认账号 URL、认证方法、角色、仓库、数据库与模式上下文、权限及 Cortex Agent 路径；不用于纯 MCP 操作。",
+      "source": "Prepare Snowflake Cortex direct API access: account URL, auth method, role, warehouse, database/schema context, privileges, and Cortex Agent routing. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "512dfefcefed1631ecd39af8f7fdb1f26885e0f7ae1ad976d5cc3ed1c5d20a7a",
+      "source_path": "skills/preset-snowflake-cortex/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ececfe143782e9212a8e5bfb48d9b11d480229d638984f8f9ca2d984bb0b32df": {
+      "description_zh": "通过直接 Superset API 执行或安排 SQL Lab 查询、获取结果、导出、停止查询、修改保存的查询及永久链接工作流；不用于纯 MCP 操作。",
+      "source": "Run or route SQL Lab execution, result retrieval, exports, query stop, saved-query mutation, and permalink workflows through direct Superset API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "ececfe143782e9212a8e5bfb48d9b11d480229d638984f8f9ca2d984bb0b32df",
+      "source_path": "skills/preset-sql-execution/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8632280cd8a55a0c0554d247982d01ebdc818e2dca9b4f21f596505a0199a9f9": {
+      "description_zh": "通过直接 Superset API 检查 SQL Lab 初始化、查询历史、保存的查询、结果与导出路径、查询控制及 SQL 执行路径；不用于纯 MCP 工作流。",
+      "source": "Inspect Preset SQL Lab bootstrap, query history, saved queries, result/export routing, query control, and SQL execution routing through direct Superset API calls. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "8632280cd8a55a0c0554d247982d01ebdc818e2dca9b4f21f596505a0199a9f9",
+      "source_path": "skills/preset-sqllab/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d26e13a66156098abf942cf596a918ba6f7fbb484a00fc9305d9da89698a4b4": {
+      "description_zh": "发现并验证 Superset 工作区直接 API 能力，检查版本、OpenAPI、当前用户、权限、菜单和 API 操作安全；不用于纯 MCP 工作流。",
+      "source": "Discover and validate direct Superset workspace API capabilities: version, OpenAPI, current user, permissions, menu, and API safety. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "6d26e13a66156098abf942cf596a918ba6f7fbb484a00fc9305d9da89698a4b4",
+      "source_path": "skills/preset-superset/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0caf15bc6de097f2cc0cc947746138d9fef81e285ea10e113980a87990baf9df": {
+      "description_zh": "通过直接 Management API 发现 Preset 团队及工作区，查询工作区、主机名、健康状态及只读成员信息；不用于纯 MCP 操作。",
+      "source": "Discover Preset teams and workspaces through direct Management API calls, including workspace lookup, hostnames, health/status, and read-only memberships. Use only for direct API workflows; Do not use for MCP-only work.",
+      "source_sha256": "0caf15bc6de097f2cc0cc947746138d9fef81e285ea10e113980a87990baf9df",
+      "source_path": "skills/preset-workspaces/SKILL.md",
+      "package_sha256": "dc2689008ec66d1502798537f0dff7b557d1a532b22dca2becd04d4e7a914811",
+      "source_package": "Preset API Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45c48cdfe8d45573d6914933f48f1920dfe5617f0a1f96a158906d5ed1b73302": {
+      "description_zh": "处理会改变状态的 Preset sup CLI 工作流，包括推送图表、仪表板或数据集，推送或邀请用户，破坏性选项及跨工作区同步；仅用于 CLI 修改，不用于 MCP 或直接 HTTP/SDK 修改。",
+      "source": "State-changing Preset `sup` CLI workflows: chart/dashboard/dataset push, user push/invite, destructive flags, and cross-workspace sync. Use only for CLI mutation workflows. Do not use for MCP-only work. Do not use for direct HTTP/SDK mutations.",
+      "source_sha256": "45c48cdfe8d45573d6914933f48f1920dfe5617f0a1f96a158906d5ed1b73302",
+      "source_path": "skills/preset-cli-mutations/SKILL.md",
+      "package_sha256": "b24b033d037cbc2a93cabd014cf013282481474425d9d300400de5f08b695fc9",
+      "source_package": "Preset CLI Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4aab51ae068e3bd8f993527bbbe14e847a5c21286c780bdf7afc7e9d9d7aa83b": {
+      "description_zh": "使用 Preset sup CLI（PyPI 包 superset-sup）完成 shell、脚本、CI/CD 和代理驱动工作流；仅适用于 CLI，不用于纯 MCP 或直接 HTTP/SDK 代码路径。",
+      "source": "Drive Preset's `sup` CLI (PyPI package `superset-sup`) for shell, scripting, CI/CD, and agent-driven Preset workflows. Use only for CLI workflows; Do not use for MCP-only work or for direct HTTP/SDK code paths.",
+      "source_sha256": "4aab51ae068e3bd8f993527bbbe14e847a5c21286c780bdf7afc7e9d9d7aa83b",
+      "source_path": "skills/preset-cli/SKILL.md",
+      "package_sha256": "b24b033d037cbc2a93cabd014cf013282481474425d9d300400de5f08b695fc9",
+      "source_package": "Preset CLI Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4ce3be5dedf867922294aae284e5ed5984dc0d74825c5baeae2e703ed602d71": {
+      "description_zh": "使用 Superset MCP 工具检查或创建仪表板，并向仪表板添加图表；仅用于 MCP 工具工作流，不用于直接 API。",
+      "source": "Use Superset MCP tools for dashboard inspection, dashboard creation, and adding charts to dashboards. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "b4ce3be5dedf867922294aae284e5ed5984dc0d74825c5baeae2e703ed602d71",
+      "source_path": "skills/preset-mcp-dashboard/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a134e9c034733dca089c847a3ce5143d846006ad3c92438e8349299c9fca939": {
+      "description_zh": "使用 Superset MCP 返回数据的工具获取图表数据、图表预览、生成的图表 SQL 和数据集查询结果；不用于直接 API 工作流。",
+      "source": "Use Superset MCP data-returning tools for chart data, chart previews, rendered chart SQL, and dataset query results. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "2a134e9c034733dca089c847a3ce5143d846006ad3c92438e8349299c9fca939",
+      "source_path": "skills/preset-mcp-data/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2c18aae6780fece2b3cb45b62920918eeed996bf8ce5502b573ab2b7b6ed88c": {
+      "description_zh": "使用 Superset MCP 检查数据集、查询语义层和创建虚拟数据集；仅用于 MCP 工具工作流，不用于直接 API。",
+      "source": "Use Superset MCP tools for dataset inspection, semantic-layer querying, and virtual dataset creation. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "f2c18aae6780fece2b3cb45b62920918eeed996bf8ce5502b573ab2b7b6ed88c",
+      "source_path": "skills/preset-mcp-datasets/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de59d1b611c90be038f8d958abd11e435c6aad396c7894785596784bc1553d53": {
+      "description_zh": "使用 Superset MCP 发现健康状态、实例、列表、详情、模式及图表类型；仅用于 MCP 工具工作流，不用于直接 API。",
+      "source": "Use Superset MCP health, instance, list, detail, schema, and chart-type discovery tools. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "de59d1b611c90be038f8d958abd11e435c6aad396c7894785596784bc1553d53",
+      "source_path": "skills/preset-mcp-discovery/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5567cb86fd8304b848b372a665cc9e8b98c3ce97f5903ccd96ba281314b4121d": {
+      "description_zh": "使用 Superset MCP 执行 SQL、获取 SQL Lab 链接和操作已保存 SQL 查询；不用于直接 API 工作流。",
+      "source": "Use Superset MCP tools for SQL execution, SQL Lab links, and saved SQL queries. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "5567cb86fd8304b848b372a665cc9e8b98c3ce97f5903ccd96ba281314b4121d",
+      "source_path": "skills/preset-mcp-sqllab/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42a32f96c382ba3985ef83d48ceefb15a5c4d42f92cd16ff6162c5834b58ec6b": {
+      "description_zh": "排查 Superset MCP 的健康状态、验证、权限、响应大小问题，并处理缺陷报告；仅用于 MCP 工作流，不用于直接 API。",
+      "source": "Troubleshoot Superset MCP health, validation, permission, response-size, and bug-report workflows. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "42a32f96c382ba3985ef83d48ceefb15a5c4d42f92cd16ff6162c5834b58ec6b",
+      "source_path": "skills/preset-mcp-troubleshooting/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2205fe1551c78e346090ceb118a7d6bbe9d37f1e16ea6e2186dbefd0c68066f1": {
+      "description_zh": "使用 Superset MCP 获取 Explore 链接、发现图表配置、预览图表、保存及更新图表；不用于直接 API 工作流。",
+      "source": "Use Superset MCP tools for Explore links, chart configuration discovery, chart previews, saved charts, and chart updates. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "2205fe1551c78e346090ceb118a7d6bbe9d37f1e16ea6e2186dbefd0c68066f1",
+      "source_path": "skills/preset-mcp-visualization/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7c777350b999070fc6557a97f6f210ba747fc0b393d1b11f93eba864ed54287": {
+      "description_zh": "为 Superset MCP 工作流选择工具路径，核验事实来源并决定不同操作接口的边界；仅适用于 MCP，不用于直接 API。",
+      "source": "Route Superset MCP tool workflows, source-of-truth checks, and surface-boundary decisions. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "c7c777350b999070fc6557a97f6f210ba747fc0b393d1b11f93eba864ed54287",
+      "source_path": "skills/preset-mcp/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bb111886af869e80caa73f72b23f60b44c41f41770a37883163993926fd0cf7": {
+      "description_zh": "通过 Superset MCP 将 Tableau TWB/TWBX 工作簿转换为 Preset 仪表板：解析 TWB XML，仅处理目标仪表板的工作表，映射图表类型、保留工作表过滤条件，逐表生成图表后组装仪表板；不用于直接 API。",
+      "source": "Guided workflow for converting a Tableau workbook (.twb or .twbx) to a Preset dashboard via Superset MCP tools. Parses TWB XML, scopes conversion to the target dashboard's worksheets, maps chart types, carries worksheet filters across, calls generate_chart per worksheet, and assembles with generate_dashboard. Use only for MCP tool workflows; do not use for direct API work.",
+      "source_sha256": "1bb111886af869e80caa73f72b23f60b44c41f41770a37883163993926fd0cf7",
+      "source_path": "skills/tableau-to-preset/SKILL.md",
+      "package_sha256": "db73d12a2480d0900fdea32bed4ab8434355832d75501325e5979e55f2bab7a2",
+      "source_package": "Preset MCP Skills-0.4.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4fcc20c639ad20ed21e1180e366b84092fea3d961e8bf2fecd8a367eadcf0bb": {
+      "description_zh": "在修改 Preset 仪表板前梳理业务意图，将需求映射到技术变更并预览影响。",
+      "source": "Dashboard change brainstorming -- understand business intent, map to technical changes, preview impact",
+      "source_sha256": "f4fcc20c639ad20ed21e1180e366b84092fea3d961e8bf2fecd8a367eadcf0bb",
+      "source_path": "skills/preset-brainstorming/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97bdfc8289ae98f7aa20f5098b979bfb4cf3417d612c9fc10a3beaab3b174707": {
+      "description_zh": "列出、检查和查询单个 Preset 图表，并拉取或推送其内容。",
+      "source": "List, inspect, query, pull, and push individual Preset charts",
+      "source_sha256": "97bdfc8289ae98f7aa20f5098b979bfb4cf3417d612c9fc10a3beaab3b174707",
+      "source_path": "skills/preset-chart/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea8fd72d8a2b2fda3aded4bcea020426e5b12365b2033714383c034932a889e5": {
+      "description_zh": "执行 Preset 每日检查点：拉取、验证、截图及视觉差异比较，生成汇总报告。",
+      "source": "Daily checkpoint: pull, validate, screenshot, visual diff, and generate summary report",
+      "source_sha256": "ea8fd72d8a2b2fda3aded4bcea020426e5b12365b2033714383c034932a889e5",
+      "source_path": "skills/preset-checkpoint/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6f83afc9584670b4cc35eda0bfff48f6e6880ad8c79be894068c8bec445d00f": {
+      "description_zh": "依据审查清单检查 Preset 仪表板变更的安全性、正确性和完整性。",
+      "source": "Review checklist for Preset dashboard changes -- verify safety, correctness, and completeness",
+      "source_sha256": "c6f83afc9584670b4cc35eda0bfff48f6e6880ad8c79be894068c8bec445d00f",
+      "source_path": "skills/preset-code-review/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2c75a81cb88cdf5268d6a8bbdb274b0ce0db86f258240458b73d9ef65e689bd": {
+      "description_zh": "列出、检查和拉取单个 Preset 仪表板。",
+      "source": "List, inspect, and pull individual Preset dashboards",
+      "source_sha256": "a2c75a81cb88cdf5268d6a8bbdb274b0ce0db86f258240458b73d9ef65e689bd",
+      "source_path": "skills/preset-dashboard/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3fd285219ad9a0a7f8ac36b20ce73fec4d32f9e11a74f79ba7b15e560af225d5": {
+      "description_zh": "列出、检查和查询单个 Preset 数据集，并拉取或推送其内容。",
+      "source": "List, inspect, query, pull, and push individual Preset datasets",
+      "source_sha256": "3fd285219ad9a0a7f8ac36b20ce73fec4d32f9e11a74f79ba7b15e560af225d5",
+      "source_path": "skills/preset-dataset/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9660986a544bb8d8da8429c745b63f6dcdbdd8aeda600e92f124d81e7365fa1d": {
+      "description_zh": "针对已知故障模式和修复方法，系统排查 Preset 仪表板问题。",
+      "source": "Systematic debugging for Preset dashboard issues with known failure modes and fixes",
+      "source_sha256": "9660986a544bb8d8da8429c745b63f6dcdbdd8aeda600e92f124d81e7365fa1d",
+      "source_path": "skills/preset-debugging/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6dad122447886e742d7a82b6cc47e3a9bea6287b44b3a8f8e6cfada9bdb9bed4": {
+      "description_zh": "执行 Preset 仪表板变更计划，并在每一步设置验证检查点。",
+      "source": "Execute dashboard change plans with validation checkpoints at each step",
+      "source_sha256": "6dad122447886e742d7a82b6cc47e3a9bea6287b44b3a8f8e6cfada9bdb9bed4",
+      "source_path": "skills/preset-executing-plans/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e8d37eb4a439b623f8de1429a137992873f9d233f0020c547c59b11245644a2": {
+      "description_zh": "验证 Preset 仪表板 SQL 字段中的 Jinja2 表达式。",
+      "source": "Validate Jinja2 expressions in dashboard SQL fields",
+      "source_sha256": "4e8d37eb4a439b623f8de1429a137992873f9d233f0020c547c59b11245644a2",
+      "source_path": "skills/preset-jinja/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8f6b8feceb9b52c6cc0a65c59c927b5ebc0305326efabea9c40665b1573b4cd": {
+      "description_zh": "检查变更图表或数据集所属分区的归属，并显示提示性警告。",
+      "source": "Check section ownership for changed charts/datasets and display advisory warnings",
+      "source_sha256": "d8f6b8feceb9b52c6cc0a65c59c927b5ebc0305326efabea9c40665b1573b4cd",
+      "source_path": "skills/preset-ownership/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8be7498bb6babfb4140c9b05e0260e9479889bfab083c2416aa161c41a42b9d": {
+      "description_zh": "使用 Playwright 截取 Preset 仪表板整页及各分区画面。",
+      "source": "Capture full-page and per-section dashboard screenshots using Playwright",
+      "source_sha256": "f8be7498bb6babfb4140c9b05e0260e9479889bfab083c2416aa161c41a42b9d",
+      "source_path": "skills/preset-screenshot/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
