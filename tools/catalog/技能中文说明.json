@@ -41569,6 +41569,1086 @@
       "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
       "source_package": "Litigación Penal España-0.5.2-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da48884e7011c6d1464460da4ec5adb4aec81f0633b7943933b8cf1df2ddacb4": {
+      "description_zh": "分流刑事裁判和传票，识别客户是被调查人还是证人，依据原说明确定期限和动作，覆盖拘留、立案、转简易程序、辩护、开启审判、预备庭审、判决及执行。",
+      "source": "Triage de resoluciones y citaciones penales. Identifica si el cliente es investigado o testigo, que plazo arranca y que hay que hacer. Cubre citacion como investigado art 118 LECrim, citacion de testigo, detencion, auto de incoacion, transformacion en abreviado, traslado para escrito de defensa, apertura de juicio oral, audiencia preliminar art 785, notificacion de sentencia y ejecutoria. Usar con hemos recibido una citacion, nos citan del juzgado, han detenido a un cliente o requerimiento judicial.",
+      "source_sha256": "da48884e7011c6d1464460da4ec5adb4aec81f0633b7943933b8cf1df2ddacb4",
+      "source_path": "skills/requerimiento-judicial-triage/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8ec95c1dc404a860ad0e38945d6d4ba01e4efdea01f657d0114ff004b1c19d7": {
+      "description_zh": "为受刑事调查或指控的法人准备辩护，覆盖与自然人的利益冲突、合规预防模型、减轻事由、法人刑罚、特别指定代表及内部调查。",
+      "source": "Defensa de personas juridicas investigadas o acusadas penalmente (art. 31 bis CP). Conflicto de interes con la persona fisica, modelo de compliance como eje de defensa, atenuantes del 31 quater, penas del 33.7, representante especialmente designado e investigaciones internas. Usar con \"responsabilidad penal de la empresa\", \"compliance\", \"modelo de prevencion\", \"han imputado a la sociedad\", \"31 bis\", \"canal de denuncias\", \"compliance officer\", \"defender a la empresa y al administrador\", \"penas para la persona juridica\", \"representante especialmente designado\".",
+      "source_sha256": "d8ec95c1dc404a860ad0e38945d6d4ba01e4efdea01f657d0114ff004b1c19d7",
+      "source_path": "skills/responsabilidad-penal-personas-juridicas/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0d066ca474397f6bca548900e24b945b8270f9083a67204e0a5ff08eddd0391": {
+      "description_zh": "初步分类刑事案件通信和文件的律师职业保密属性，依据原说明处理律师客户通信、拘留者保密会见、第三方数据与犯罪记录。",
+      "source": "Primera pasada de clasificacion de comunicaciones y documentos bajo el secreto profesional del abogado (art. 542.3 LOPJ), con las especialidades del penal: confidencialidad abogado-cliente de los arts. 118.4 y 520.7 LECrim, entrevista reservada con el detenido del art. 520.6.d, datos de terceros y antecedentes penales (art. 10 RGPD). Usar con revisar secreto profesional o clasificar comunicaciones.",
+      "source_sha256": "e0d066ca474397f6bca548900e24b945b8270f9083a67204e0a5ff08eddd0391",
+      "source_path": "skills/revision-secreto-profesional/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a35ced61178ef2fe22b1cfae8af1de7687c65d1544d32a40ee0314ab2bf7f9b2": {
+      "description_zh": "目录型技能，未含模板；起草侦查调查措施申请，涵盖银行或运营商调取、证人、对质、专家鉴定、补充调查、搜查、通信监控及拒绝调查上诉，并依据原说明检查侦查期限和延长。",
+      "source": "Catálogo (sin plantilla). Redacta escritos solicitando la práctica de diligencias de investigación en instrucción. Actívala ante \"pedir diligencias\", \"solicitar diligencias de investigación\", \"solicitar prueba en instrucción\", \"oficio a entidad bancaria\", \"oficio a la operadora\", \"declaración testifical\", \"careo\", \"pericial en instrucción\", \"solicitar diligencias complementarias\", \"entrada y registro\", \"intervención de comunicaciones\", \"pinchar el teléfono\", \"me han denegado las diligencias\", \"recurso contra la denegación de diligencias\", \"plazo de instrucción\", \"prórroga de la instrucción\", \"art. 324\", o cuando una parte quiera impulsar o completar la investigación.",
+      "source_sha256": "a35ced61178ef2fe22b1cfae8af1de7687c65d1544d32a40ee0314ab2bf7f9b2",
+      "source_path": "skills/solicitud-diligencias-instruccion-catalogo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0147b3780c2447ab2f6e9ed1f275422d8db0cc4d2b1b7a54dd96e1f102fa038": {
+      "description_zh": "将犯罪构成、判例与事实相连接，依据原说明检查行为发生时刑法、后续较有利法律、罪刑法定、不利类推禁止、疑罪从无及无罪推定；判例须经jurisprudenciator MCP获取。",
+      "source": "Silogismo de subsuncion sobre el tipo penal. Impone identificar la redaccion del CP vigente a la fecha de los hechos (art. 2 CP) y comprobar si la posterior es mas favorable (art. 2.2 CP) — con la LO 1/2025 y la LO 1/2026 esto ya no es teorico. Principio de legalidad y prohibicion de analogia in malam partem (art. 4.1 CP). In dubio pro reo y presuncion de inocencia (art. 24.2 CE). Jurisprudencia SIEMPRE con el conector MCP jurisprudenciator. Usar con subsumir, pulir escrito penal, conectar jurisprudencia con los hechos.",
+      "source_sha256": "d0147b3780c2447ab2f6e9ed1f275422d8db0cc4d2b1b7a54dd96e1f102fa038",
+      "source_path": "skills/subsuncion-juridica/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c8c80a30d3bfd9e8ff9466db6885169eb37555224c8ea2664ed00f9d780fc1f": {
+      "description_zh": "依据原说明为控辩双方指导陪审团刑事程序，覆盖管辖、侦查、LOTJ第30条预备庭审、可审事实、裁决问题、异议、表决、退回裁决书与高级法院上诉；与简易程序预备庭审区分。",
+      "source": "Guia practica del procedimiento ante el Tribunal del Jurado (LO 5/1995) para la defensa y la acusacion. Competencia del art. 1, instruccion propia, audiencia preliminar del art. 30, auto de hechos justiciables, objeto del veredicto y protesta, mayorias, devolucion del acta y apelacion ante el TSJ. Usar con \"tribunal del jurado\", \"objeto del veredicto\", \"jurado popular\", \"me toca un jurado\", \"audiencia preliminar del jurado (art. 30 LOTJ)\", \"hechos justiciables\", \"veredicto\", \"recusacion de jurados\", \"apelacion del jurado\", \"LOTJ\". Requisito previo: el delito es de los del art. 1 LOTJ y el procedimiento se sigue por los tramites del jurado. Ojo: su audiencia preliminar es la del art. 30 LOTJ y NO tiene nada que ver con la audiencia preliminar del art. 785 LECrim del procedimiento abreviado → /audiencia-preliminar-abreviado.",
+      "source_sha256": "8c8c80a30d3bfd9e8ff9466db6885169eb37555224c8ea2664ed00f9d780fc1f",
+      "source_path": "skills/tribunal-jurado/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57b541db98131a3f1e0351cdb352ea0aa463ef7256f5faa103615b535ecdb44e": {
+      "description_zh": "依据原说明处理性别、家庭及儿童暴力的专门保护程序，覆盖女性暴力部门管辖、紧急保护令、人身与民事措施、违反限制及免作证规则，支持控辩双方；无该关系背景时使用一般刑事临时措施技能。",
+      "source": "Violencia de género y doméstica — competencia de las Secciones de Violencia sobre la Mujer (art. 89 LOPJ y art. 14.5 LECrim; el 87 ter LOPJ está SUPRIMIDO), orden de protección del art. 544 ter (audiencia urgente, 72 horas, estatuto integral, medidas civiles 30+30), medidas cautelares del art. 544 bis reescrito por la LO 1/2026, quebrantamiento del art. 468 CP y dispensa del art. 416 LECrim. Sirve a la defensa y a la acusación. Actívala ante \"orden de protección\", \"alejamiento\", \"violencia de género\", \"violencia doméstica\", \"juzgado de violencia sobre la mujer\", \"quebrantamiento\", \"544 ter\", \"544 bis\", \"dispensa de declarar\", \"LO 1/2004\", \"pulsera telemática\", \"violencia contra la infancia\". Es el régimen ESPECIALIZADO: úsala siempre que la relación entre las partes sea de pareja o expareja, familiar o de violencia contra la infancia. Si no concurre ese contexto, la prohibición de aproximación genérica del art. 544 bis y las demás cautelares se tramitan con /medidas-cautelares-penales-catalogo.",
+      "source_sha256": "57b541db98131a3f1e0351cdb352ea0aa463ef7256f5faa103615b535ecdb44e",
+      "source_path": "skills/violencia-genero-orden-proteccion/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1850d83bab3f106adcef5cd1655feede7056c20b2e63892ffc0957b9d389ca6f": {
+      "description_zh": "按律所文风及案件论证路线起草法律书状指定章节，逐项引用事实、核查判例，并将论点关联整体案件主张。",
+      "source": "Draft a brief section in house style, consistent with the case theory — every fact cited, every case checked, every argument tied to the theory. Use when the user says \"draft the [section]\", \"write the statement of facts\", \"argument section on [issue]\", or needs a first draft of a brief section.",
+      "source_sha256": "1850d83bab3f106adcef5cd1655feede7056c20b2e63892ffc0957b9d389ca6f",
+      "source_path": "skills/brief-section-drafter/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72cbe7f9268e927a32fbc68cad968853871c7bf02b311573f88d9dc594364ea2": {
+      "description_zh": "从指定文档和上传材料构建或更新案件时间线，提取带日期事件、去重并按案件主张标记重要性，支持工作、事实陈述及特定证人时间线。",
+      "source": "Build or update a chronology from declared document sources and uploads — dated events extracted, de-duped, and tagged by significance per the matter theory. Use when the user asks to build a chronology or timeline from a production or matter file, says \"chron from the production\" or \"what happened when\", or needs a working, statement-of-facts, or witness-specific timeline.",
+      "source_sha256": "72cbe7f9268e927a32fbc68cad968853871c7bf02b311573f88d9dc594364ea2",
+      "source_path": "skills/chronology/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cf4e48ef380c0fb271c8f919cff90918df31e80cfbc19a753ef5e3262d612df": {
+      "description_zh": "制作或审查专利侵权、无效或其他民事诉因和抗辩的要素表，每个单元格提供精确引文，重点识别逐项证明缺口。",
+      "source": "Build or review an element chart — a patent claim chart (infringement, invalidity, or review) or a civil element chart for any cause of action or defense — with every cell pin-cited and gap detection as the priority output. Use when the user asks for a claim chart, element chart, proof chart, infringement or invalidity contention, element-by-element mapping, or asks \"what are we missing to prove [claim]\".",
+      "source_sha256": "5cf4e48ef380c0fb271c8f919cff90918df31e80cfbc19a753ef5e3262d612df",
+      "source_path": "skills/claim-chart/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e28e45eebf47645eafe5c6413fad98efbf28d4a454bbf22c7c1ca97392a3d04": {
+      "description_zh": "初次设置诉讼插件档案，按公司法务、律所律师或独立执业及原被告立场分支采集风险、业务环境和文风，写入CLAUDE.md并检查可用集成。",
+      "source": "House cold-start for the litigation plugin — branches by role (in-house, firm associate, solo) and side (plaintiff, defense, both), captures risk calibration, landscape, and house style, and writes the practice profile CLAUDE.md. Use on a fresh install, when the user wants to set up or redo the practice profile, or to re-check available integrations.",
+      "source_sha256": "3e28e45eebf47645eafe5c6413fad98efbf28d4a454bbf22c7c1ca97392a3d04",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a79dbbfa9889b8fb29826ad08c67c7bcc4226dd34ab27b832740dbf191d6d43": {
+      "description_zh": "逐项定制诉讼执业档案，无需重做全部初始访谈，支持角色、诉讼立场、风险尺度、业务环境、文风、升级联系人、严重程度词汇及案件工作区路径。",
+      "source": "Guided customization of your litigation practice profile — change one thing without re-running the whole cold-start interview. Adjust practice role, side (plaintiff / defense / mixed), risk calibration, landscape, house style, escalation contacts, severity vocabulary, or matter workspace paths. Use when the user says \"change my [thing]\", \"update my profile\", \"edit my config\", or \"customize\".",
+      "source_sha256": "2a79dbbfa9889b8fb29826ad08c67c7bcc4226dd34ab27b832740dbf191d6d43",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45f0335d775df692d4936fca5c4f030aef996775b72932be0e1f09a84054357d": {
+      "description_zh": "根据已完成的资料采集起草要求函，先检查保密特权、FRE 408、权利放弃和承认事项，输出DOCX、发送后清单及案件创建选项。",
+      "source": "Draft a demand letter from a completed intake, gated on a privilege / FRE 408 / waiver / admission checklist, with a .docx output, post-send checklist, and an offer to create a matter. Use when the user says \"draft the demand\", \"write the [type] letter\", or has a finished demand intake ready to turn into a sendable draft.",
+      "source_sha256": "45f0335d775df692d4936fca5c4f030aef996775b72932be0e1f09a84054357d",
+      "source_path": "skills/demand-draft/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a10f5ab4e1f6fc084a4ba8a440dcec59021712ca43da2378d3ced1600cfabc96": {
+      "description_zh": "起草要求函前收集当事人、事实、依据、谈判筹码、最佳替代方案和保密筛选信息，写入供要求函技能读取的intake.md，支持催款、违约补救、停止侵害、离职及保全要求。",
+      "source": "Pre-drafting context gathering for a demand letter — parties, facts, basis, leverage, BATNA, and privilege filters — written to a structured intake.md the demand-draft skill reads. Use when the user wants to prep a demand letter, run intake before drafting, or capture context for a payment demand, breach/cure notice, cease-and-desist, employment separation, or preservation demand.",
+      "source_sha256": "a10f5ab4e1f6fc084a4ba8a440dcec59021712ca43da2378d3ced1600cfabc96",
+      "source_path": "skills/demand-intake/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff4c41040250dd8a7197ae8998af6457d3c813a86bd5773081fdc2cc9d638834": {
+      "description_zh": "评估收到的要求函，提取字段、对照案件组合、分析依据并提出应对选项与建议，需要升级时移交案件登记或要求函资料采集技能。",
+      "source": "Triage an inbound demand letter — extract fields, cross-check the portfolio, assess merit, present response options with a recommendation, and hand off to matter-intake or demand-intake if escalation is warranted. Use when the user says \"we got a demand letter\", \"triage this demand\", or shares an incoming demand to evaluate.",
+      "source_sha256": "ff4c41040250dd8a7197ae8998af6457d3c813a86bd5773081fdc2cc9d638834",
+      "source_path": "skills/demand-received/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ec16dae9e287334e96798e3a03f22f119452c904881fd50e4ad4157a677b194": {
+      "description_zh": "从电子证据发现平台取得证人相关文件，围绕案件论证组织证言录取提纲，并突出可用于质疑证人可信度的材料。",
+      "source": "Build a deposition outline for a witness — pull their documents from the eDiscovery platform, organize topics around the case theory, and surface impeachment material. Use when the user says \"depo prep for [witness]\", \"build a depo outline\", or \"prepare for [name]'s deposition\".",
+      "source_sha256": "0ec16dae9e287334e96798e3a03f22f119452c904881fd50e4ad4157a677b194",
+      "source_path": "skills/deposition-prep/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2e25e1cea1d7e07632815784531d8cccafa3527b72dfbad3726d891500eb19d": {
+      "description_zh": "创建、更新、解除或报告诉讼资料保全要求，生成DOCX通知、更新_log.yaml中的legal_hold字段，并安排下一次刷新。",
+      "source": "Issue, refresh, release, or report on legal holds — drafts the hold notice as .docx, updates legal_hold fields in _log.yaml, and calendars the next refresh. Use when the user says \"issue a hold\", \"refresh hold\", \"release hold\", or asks for a portfolio-wide hold status report.",
+      "source_sha256": "f2e25e1cea1d7e07632815784531d8cccafa3527b72dfbad3726d891500eb19d",
+      "source_path": "skills/legal-hold/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f4f27e937f78c357a2a05f5687de8fbfe519e3718f0825b7aa772ca43ee954e": {
+      "description_zh": "为总法律顾问汇报或外部律师沟通准备单案深度简报，汇总当前状态、变化、下一期限、未决问题及风险复评。",
+      "source": "Deep briefing on one matter — current posture, what's changed, next deadline, open questions, and a risk re-assessment check, ready before a GC update or outside counsel call. Use when the user says \"brief me on [matter]\", \"where are we on [matter]\", or needs a read on a specific matter.",
+      "source_sha256": "7f4f27e937f78c357a2a05f5687de8fbfe519e3718f0825b7aa772ca43ee954e",
+      "source_path": "skills/matter-briefing/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "655de0925d5a8a256bdd51835d72d949069ae1e673d475e317f6b07a1ca62153": {
+      "description_zh": "记录案件结果、最终风险敞口和经验，将和解、撤诉、判决或合并等已结束案件移出活跃组合并归档保留记录。",
+      "source": "Close a matter — capture outcome, final exposure, and lessons, then archive it out of the active portfolio without deleting the record. Use when the user wants to close a matter, says \"[matter] is done\", or needs to record a settlement, dismissal, judgment, withdrawal, or consolidation outcome.",
+      "source_sha256": "655de0925d5a8a256bdd51835d72d949069ae1e673d475e317f6b07a1ca62153",
+      "source_path": "skills/matter-close/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec092973419e46c55dc38ecc4570af10b9a02db9d95faa509ff1ad59c61798fc": {
+      "description_zh": "通过统一问题登记新案件，采集身份、冲突、来源、风险、重大性、外部律师、负责人、资料保全与关键日期，写入matter.md、history.md和_log.yaml。",
+      "source": "Intake a new matter — uniform questions covering identification, conflicts, source, risk triage, materiality, outside counsel, owners, legal hold, and key dates; writes matter.md and history.md and appends a structured row to _log.yaml. Use when the user says \"new matter\", \"intake this matter\", or wants to bring a new matter into the portfolio.",
+      "source_sha256": "ec092973419e46c55dc38ecc4570af10b9a02db9d95faa509ff1ad59c61798fc",
+      "source_path": "skills/matter-intake/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61339f7a0921810e2632142d9950758a2e7d3022f5cd7432487d2289afe941fc": {
+      "description_zh": "向案件历史追加带日期事件并刷新组合日志，记录新进展、状态、风险复评、期限变化及和解授权变化。",
+      "source": "Append a dated event to a matter's history file and refresh the log row — captures new developments, status changes, risk re-assessments, deadline shifts, and settlement authority changes. Use when the user wants to log an update on a matter, note a development, or record a status change against the portfolio.",
+      "source_sha256": "61339f7a0921810e2632142d9950758a2e7d3022f5cd7432487d2289afe941fc",
+      "source_path": "skills/matter-update/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f61b288722a90b14a44799629896c4dfe16601ad85c89653dd02f9c78f7aeef": {
+      "description_zh": "管理多客户执业的案件工作区，创建、列出、切换、关闭或解除当前案件，支持归档及仅在执业层面工作。",
+      "source": "Manage matter workspaces for multi-client practices — create, list, switch, close, or detach the active matter. Use when the user wants to create a new matter workspace, switch the active matter, list matters, archive a matter, or work at practice-level only without an active matter.",
+      "source_sha256": "4f61b288722a90b14a44799629896c4dfe16601ad85c89653dd02f9c78f7aeef",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "133bda5af717c82609bac9763e98578261d5fe69c150af9d9527f0cf391166cf": {
+      "description_zh": "根据活跃案件组合日志，为外部律师生成每周进展询问邮件草稿，逐案输出Markdown；可用Gmail MCP时同时创建邮件草稿。",
+      "source": "Generate weekly status-request email drafts to outside counsel across the active portfolio — markdown per matter, plus Gmail drafts when the MCP is available. Use when the user asks for OC status requests, weekly outside counsel check-ins, or wants per-matter status emails drafted from the portfolio log.",
+      "source_sha256": "133bda5af717c82609bac9763e98578261d5fe69c150af9d9527f0cf391166cf",
+      "source_path": "skills/oc-status/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9aeadff94edf90d69437f0e97c6cbcbc79943325176dfe391aea677783112574": {
+      "description_zh": "从_log.yaml汇总活跃案件组合，展示风险分布、临近期限、久未更新案件、重大性总量、阶段分布及标记异常。",
+      "source": "Roll up the portfolio from _log.yaml — risk distribution, upcoming deadlines, stale matters, materiality totals, stage distribution, and flagged anomalies. Use when the user asks \"where do we stand\", \"how many open matters\", or wants a portfolio rollup or status across all active matters.",
+      "source_sha256": "9aeadff94edf90d69437f0e97c6cbcbc79943325176dfe391aea677783112574",
+      "source_path": "skills/portfolio-status/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d1c153135c07275b4f271a31042c1c5e37db5b16a03990f558c0cebed9c7dc6": {
+      "description_zh": "初步审查保密特权清单，对明显事项作分类，将难判断项目交律师评审，支持材料交付前质量检查。",
+      "source": "First-pass privilege log review — make the obvious privilege calls and flag the hard ones for attorney review without making close calls. Use when the user says \"review the privilege log\", \"priv log\", \"check privilege on these docs\", or has a log to QA before production.",
+      "source_sha256": "2d1c153135c07275b4f271a31042c1c5e37db5b16a03990f558c0cebed9c7dc6",
+      "source_path": "skills/privilege-log-review/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "668bdf2608a92114e8f7fd36cbcb218db6b5002f795579210984e75fb73f00ae": {
+      "description_zh": "评估送达公司的传票、CID或第三方文件请求，分类并分析范围、负担和保密特权，对照案件组合，形成异议框架、履行计划及期限日历。",
+      "source": "Triage a subpoena served on the company — classify it, analyze scope/burden/privilege, cross-check the portfolio, and produce an objections framework, compliance plan, and deadline calendar. Use when the user says \"we got a subpoena\", \"served with a subpoena\", or shares a subpoena, CID, or third-party document request to evaluate.",
+      "source_sha256": "668bdf2608a92114e8f7fd36cbcb218db6b5002f795579210984e75fb73f00ae",
+      "source_path": "skills/subpoena-triage/SKILL.md",
+      "package_sha256": "8af8a39be4db0bfa7e0516d5d75e08286a07525175a78151f863fc84fc71344d",
+      "source_package": "litigation-legal-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6aab237a0f711e61f15df52cc8afdf6d7113a71a791482363e0f0b5e6c94aa60": {
+      "description_zh": "通过LivingMeeting MCP操作用户已认证工作区，查找审阅会议、议程、转录、摘要、附件、置顶及行动项，并创建、更新、删除会议或设置议程。",
+      "source": "Work with the user's authenticated LivingMeeting workspace through the LivingMeeting MCP server. Use when the user asks to find or review meetings, agendas, transcripts, summaries, artifacts, pinned items, or action items, or asks to create, update, delete, or set the agenda for a LivingMeeting meeting.",
+      "source_sha256": "6aab237a0f711e61f15df52cc8afdf6d7113a71a791482363e0f0b5e6c94aa60",
+      "source_path": "skills/livingmeeting/SKILL.md",
+      "package_sha256": "47baf4d8b1de35f4fb6b087e71c1b51e5449f41a6d1c3bafd0264eaefa606d61",
+      "source_package": "LivingMeeting-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0fd6cfadafb9f62afb8b9e315472bef363b1a299b269379259660842cc68ae60": {
+      "description_zh": "在架构规划或实施工具调用、函数调用、MCP、多智能体链及多模型提供商流水线时使用，覆盖工具与智能体行动面的设计。",
+      "source": "Use when designing or wiring up tool_use, function_calling, MCP servers, multi-agent chains, or calling multiple LLM providers (e.g., Gemini for vision plus Claude for reasoning) in the same pipeline — fire this skill during architecture/planning discussions, not just implementation",
+      "source_sha256": "0fd6cfadafb9f62afb8b9e315472bef363b1a299b269379259660842cc68ae60",
+      "source_path": "skills/agent-action-surface/SKILL.md",
+      "package_sha256": "78945c96df70f92961855a513eff48ec9cee4111015f5e0e4cad20a1534e7e94",
+      "source_package": "llm-secure-patterns-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9b27780ce91d46a74dec722a4cf360a36b2db1242f60276578873fe2d22a159": {
+      "description_zh": "在架构规划或构建接收用户输入并转发至LLM API的FastAPI、Flask、Express等Web路由时使用，处理LLM端点加固。",
+      "source": "Use when designing or building a web route (FastAPI, Flask, Express, or similar) that accepts user input and forwards it to any LLM API (Claude, OpenAI, Gemini, or similar) — fire this skill during architecture/planning discussions, not just implementation",
+      "source_sha256": "e9b27780ce91d46a74dec722a4cf360a36b2db1242f60276578873fe2d22a159",
+      "source_path": "skills/llm-endpoint-hardening/SKILL.md",
+      "package_sha256": "78945c96df70f92961855a513eff48ec9cee4111015f5e0e4cad20a1534e7e94",
+      "source_package": "llm-secure-patterns-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b5f76f1536e05f97ffb943635afe14c9607160b66b72d07459168468d6205bb": {
+      "description_zh": "在设计或实施LLM输出的前端HTML展示、数据库写入、服务转交及邮件文档生成时进行输出校验；SQL与Shell构造另需参数化查询和参数数组，不能仅靠字符串转义。",
+      "source": "Use when designing or implementing code where LLM responses are rendered as HTML or markup in a frontend, written to a database, passed to another service, or used to generate emails or documents — fire this skill during architecture/planning discussions, not just implementation. Not for SQL or shell command construction — those require parameterized queries and argument arrays, not string escaping (see the Scope section in SKILL.md)",
+      "source_sha256": "3b5f76f1536e05f97ffb943635afe14c9607160b66b72d07459168468d6205bb",
+      "source_path": "skills/output-validation/SKILL.md",
+      "package_sha256": "78945c96df70f92961855a513eff48ec9cee4111015f5e0e4cad20a1534e7e94",
+      "source_package": "llm-secure-patterns-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb0d34075218f884fa0c24d1e47d85e26bbe810c17c06f7f467fae25175768a8": {
+      "description_zh": "按OWASP LLM十大风险审查现有LLM或AI集成代码安全状况，读取插件的SECURITY注释，无注释时尽力扫描源码，生成安全状况与开发者建议Markdown报告。",
+      "source": "Review or audit an existing codebase's security posture against the OWASP LLM Top 10. Reads `# SECURITY:` annotations placed by this plugin and falls back to a best-effort source scan when none are present; writes SECURITY_POSTURE.md and DEVELOPER_RECOMMENDATIONS.md. Use when asked to check, review, audit, scan, or report on the security of LLM/AI integration code.",
+      "source_sha256": "bb0d34075218f884fa0c24d1e47d85e26bbe810c17c06f7f467fae25175768a8",
+      "source_path": "skills/report/SKILL.md",
+      "package_sha256": "78945c96df70f92961855a513eff48ec9cee4111015f5e0e4cad20a1534e7e94",
+      "source_package": "llm-secure-patterns-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de9aa5b547cbbdd97a9fa82a0615cd3f3856a5e39a0b2d836c7a374f1d5bfe3f": {
+      "description_zh": "在架构规划或实现URL抓取、网页采集、外部API、不可信PDF与HTML解析、RAG检索及进入LLM上下文的外部内容处理时，设计安全摄取流程。",
+      "source": "Use when designing or implementing code that fetches URLs, scrapes pages, calls external APIs, parses PDFs/HTML from untrusted sources, builds RAG retrieval pipelines, or processes any external content that will enter an LLM context window — fire this skill during architecture/planning discussions, not just implementation",
+      "source_sha256": "de9aa5b547cbbdd97a9fa82a0615cd3f3856a5e39a0b2d836c7a374f1d5bfe3f",
+      "source_path": "skills/secure-external-ingestion/SKILL.md",
+      "package_sha256": "78945c96df70f92961855a513eff48ec9cee4111015f5e0e4cad20a1534e7e94",
+      "source_package": "llm-secure-patterns-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5dd088ba577b2ce3f790b1bedd2082b23628d565decdf92e6e14b3c557c1183b": {
+      "description_zh": "在LLM应用系统提示词尚未起草的架构规划阶段，以及编写、编辑或评审时，使用系统提示词设计流程。",
+      "source": "Use when designing, writing, editing, or reviewing system prompts for any LLM application — fire this skill during architecture/planning discussions (before prompts are drafted), not just during implementation",
+      "source_sha256": "5dd088ba577b2ce3f790b1bedd2082b23628d565decdf92e6e14b3c557c1183b",
+      "source_path": "skills/system-prompt-design/SKILL.md",
+      "package_sha256": "78945c96df70f92961855a513eff48ec9cee4111015f5e0e4cad20a1534e7e94",
+      "source_package": "llm-secure-patterns-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fdae8ef96615025cf8c4edb5525207206d36f66a213df9f380968c6a8e4750f3": {
+      "description_zh": "建立维护LLM整理的个人知识库，将论文、文章、转录、PDF和笔记持续纳入，支持基于累计笔记问答、检查审计和初始化；以分片索引、原子页面、YAML元数据及搜索脚本支持较大规模。",
+      "source": "Build and maintain an LLM-curated personal knowledge base — the \"LLM Wiki\" pattern from Andrej Karpathy's April 2026 gist. Use this skill whenever the user wants to ingest a source (paper, article, transcript, PDF, notes) into a persistent compounding knowledge base, ask a question against accumulated notes, lint or audit such a base, or initialize a new one. Trigger on phrases like \"add this to my wiki\", \"ingest this paper\", \"compile this into the knowledge base\", \"what does my wiki say about X\", \"lint the wiki\", \"build a knowledge base from these documents\", \"research notes\", \"second brain\", \"personal knowledge base\", or any reference to LLM Wiki / OmegaWiki. Trigger even when the user does not say \"wiki\" — if they are accumulating sources over time and want them organized, this applies. The skill scales — sharded indexes, atomic pages, YAML frontmatter, and a bundled search script keep the wiki from becoming a context bottleneck at hundreds or thousands of pages.",
+      "source_sha256": "fdae8ef96615025cf8c4edb5525207206d36f66a213df9f380968c6a8e4750f3",
+      "source_path": "skills/llm-wiki/SKILL.md",
+      "package_sha256": "3714dbe36504d6c310e504d461fead4dc582ce444a5981e7543b0d0278612a47",
+      "source_package": "llm-wiki-plugin-3.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c74e8bb149ac46988f66e5f620da872009ddef67082652356c8e6d0b9992c1da": {
+      "description_zh": "使用Terraform、CDK、CloudFormation、SAM或Pulumi向LocalStack部署基础设施，并协助使用lstk代理命令及pulumilocal封装。",
+      "source": "Deploy infrastructure to LocalStack using IaC tools. Use when users want to deploy Terraform, CDK, CloudFormation, SAM, or Pulumi to LocalStack, or need help with the lstk proxy commands (lstk terraform, lstk cdk, lstk sam, lstk aws) or the pulumilocal wrapper.",
+      "source_sha256": "c74e8bb149ac46988f66e5f620da872009ddef67082652356c8e6d0b9992c1da",
+      "source_path": "skills/iac-deployment/SKILL.md",
+      "package_sha256": "1e1623cf93cf19a13d2b6f21cbd66f4928c7486875b956d7601a9ddfc920a824",
+      "source_package": "localstack-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1e6713a86bee5cb4f6a13459dbe0b07341377abf7889dfb825b2aae51e7ac4a": {
+      "description_zh": "在LocalStack分析与执行IAM策略，启用权限约束、检测权限违规、生成最小权限策略，并在部署到AWS前做本地策略测试。",
+      "source": "Analyze and enforce IAM policies in LocalStack. Use when users want to enable IAM enforcement, detect permission violations, auto-generate least-privilege policies, or test IAM policies locally before deploying to AWS.",
+      "source_sha256": "e1e6713a86bee5cb4f6a13459dbe0b07341377abf7889dfb825b2aae51e7ac4a",
+      "source_path": "skills/iam-policy-analyzer/SKILL.md",
+      "package_sha256": "1e1623cf93cf19a13d2b6f21cbd66f4928c7486875b956d7601a9ddfc920a824",
+      "source_package": "localstack-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1cd00717a57cf3d3ed6e72730e6c972d3f6e73c95ad47fbc3c0f3ae411d34f7": {
+      "description_zh": "安装、卸载、列出、配置或开发LocalStack扩展；原说明明确扩展需使用旧版localstack CLI而非lstk。",
+      "source": "Manage LocalStack Extensions. Use when users want to install, uninstall, list, or configure LocalStack extensions, or develop custom extensions to extend LocalStack functionality. Extensions require the legacy localstack CLI, not lstk.",
+      "source_sha256": "d1cd00717a57cf3d3ed6e72730e6c972d3f6e73c95ad47fbc3c0f3ae411d34f7",
+      "source_path": "skills/localstack-extensions/SKILL.md",
+      "package_sha256": "1e1623cf93cf19a13d2b6f21cbd66f4928c7486875b956d7601a9ddfc920a824",
+      "source_package": "localstack-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c297ae8b5af55bc1977a8fb8580e98d5c4a79b0b6b37640481f0cf893eb0e9bd": {
+      "description_zh": "通过lstk管理LocalStack模拟器的启动、停止、重启、重置与状态，配置环境变量并排查容器问题。",
+      "source": "Manage the LocalStack emulator lifecycle with the lstk CLI. Use when users need to start, stop, restart, reset, or check status of LocalStack, configure LocalStack environment variables, or troubleshoot LocalStack container issues.",
+      "source_sha256": "c297ae8b5af55bc1977a8fb8580e98d5c4a79b0b6b37640481f0cf893eb0e9bd",
+      "source_path": "skills/localstack-lifecycle/SKILL.md",
+      "package_sha256": "1e1623cf93cf19a13d2b6f21cbd66f4928c7486875b956d7601a9ddfc920a824",
+      "source_package": "localstack-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5074f06d67b88cd97b1c01ea08a7c24d43c10d531d523a4e4a56b79017fab529": {
+      "description_zh": "通过lstk分析LocalStack日志，排查AWS API错误、Lambda函数问题及错误模式，并启用调试模式。",
+      "source": "Analyze LocalStack logs and debug issues with lstk. Use when users need to view LocalStack logs, debug AWS API errors, troubleshoot Lambda functions, identify error patterns, or enable debug mode.",
+      "source_sha256": "5074f06d67b88cd97b1c01ea08a7c24d43c10d531d523a4e4a56b79017fab529",
+      "source_path": "skills/logs-analysis/SKILL.md",
+      "package_sha256": "1e1623cf93cf19a13d2b6f21cbd66f4928c7486875b956d7601a9ddfc920a824",
+      "source_package": "localstack-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d414ee6d80bbbb11842e2228430b169320152e9a082727a5b445b587688d0c82": {
+      "description_zh": "通过lstk保存、加载、导出或导入LocalStack状态，处理Cloud Pods、S3快照及重启后的持久化。",
+      "source": "Manage LocalStack state and snapshots with lstk. Use when users want to save, load, export, or import LocalStack state, work with Cloud Pods or S3-backed snapshots, or enable persistence across restarts.",
+      "source_sha256": "d414ee6d80bbbb11842e2228430b169320152e9a082727a5b445b587688d0c82",
+      "source_path": "skills/state-management/SKILL.md",
+      "package_sha256": "1e1623cf93cf19a13d2b6f21cbd66f4928c7486875b956d7601a9ddfc920a824",
+      "source_package": "localstack-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b6b6eea56abfddf010080d6d2b441ed532cd7078704277b34cb85b123536ccd3": {
+      "description_zh": "在LOCI分析失败或未触发时，采集环境状态、执行健康检查并生成带时间戳的诊断报告。",
+      "source": "Forensic diagnostic report for LOCI — collects environment state, runs health checks, and writes a timestamped report when analysis fails or doesn't trigger.",
+      "source_sha256": "b6b6eea56abfddf010080d6d2b441ed532cd7078704277b34cb85b123536ccd3",
+      "source_path": "skills/bug-report/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ae96c71f3aec99009491f0ad5e56f1ed3e99c08d84fcaaea1e516e49a11d182": {
+      "description_zh": "编写审查.loci/contract.yaml契约，定义栈、时间、能耗、内存和结构边界，使LOCI能依据边界判断测量结果。",
+      "source": "Author and inspect this repository's Contract Envelope (.loci/contract.yaml) — the stack, timing, energy, memory and structural bounds that let LOCI judge a measurement rather than merely report it.",
+      "source_sha256": "9ae96c71f3aec99009491f0ad5e56f1ed3e99c08d84fcaaea1e516e49a11d182",
+      "source_path": "skills/contract/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25f261f3dbef92e0624b3c420f5eb393afb0f934cb2db682cd0cb6182dc8c830": {
+      "description_zh": "为已编译C、C++、Rust和Go生成带注释控制流图，标记函数基本块、循环次数、递归、不可约环及调用位置，以适合LLM分析的文本呈现并评估递归环和间接调用。",
+      "source": "Annotated control-flow graphs for compiled C/C++/Rust/Go: per-function basic blocks, loops with derived trip counts, recursion and irreducible cycles, call sites, in text optimised for LLM analysis. Renders the graph and judges the two structural signals it determines: recursion cycles and indirect calls.",
+      "source_sha256": "25f261f3dbef92e0624b3c420f5eb393afb0f934cb2db682cd0cb6182dc8c830",
+      "source_path": "skills/control-flow/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6782874cf6617255cf80b9fa4a12753a178f3c3fe7d43209dca8c1fbbb6f6a65": {
+      "description_zh": "从已编译汇编分析函数执行时间与能耗。",
+      "source": "Analyze function execution timing and energy from compiled assembly",
+      "source_sha256": "6782874cf6617255cf80b9fa4a12753a178f3c3fe7d43209dca8c1fbbb6f6a65",
+      "source_path": "skills/exec-trace/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8aa117f32cf8c9258c2234d2b3c67d4050794bd12cc6f1a75ef64dcd81a092fc": {
+      "description_zh": "提供LOCI快速参考，展示可用技能、环境状态及初始化和登录问题排查。",
+      "source": "Quick-reference guide to LOCI — shows available skills, environment status, and troubleshooting for initialization and sign-in issues.",
+      "source_sha256": "8aa117f32cf8c9258c2234d2b3c67d4050794bd12cc6f1a75ef64dcd81a092fc",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8aedffef4b602a1e5f328f7ced757841382f7143d0560a95591c003e2738bba": {
+      "description_zh": "在.loci/build.yaml记录项目本机构建配方，包括目标指令集、编译器、构建系统与产物，使LOCI测量沿用项目实际编译方式。",
+      "source": "Record how this project builds — one machine-local recipe (`.loci/build.yaml`) naming the target ISA, the compiler, the build system and the artifact — so every LOCI measurement compiles the way the project itself does.",
+      "source_sha256": "c8aedffef4b602a1e5f328f7ced757841382f7143d0560a95591c003e2738bba",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e331ccf2faa4c4d21d053d53973a352a2d8069ced4421bf80fba62481109c0c1": {
+      "description_zh": "比较编辑前后的编译产物，报告执行时间百分比变化、能耗及控制流分析。",
+      "source": "Compare pre-edit and post-edit compiled artifacts to report execution timing % diff, energy consumption, and control-flow analysis.",
+      "source_sha256": "e331ccf2faa4c4d21d053d53973a352a2d8069ced4421bf80fba62481109c0c1",
+      "source_path": "skills/loci-post-edit/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2382f2dc925944ed9bf24731f37b7c7bb549115fa9d9b6a1bc37f7862d11ceaa": {
+      "description_zh": "利用编译产物，对编辑涉及的函数及新增代码调用的函数预先分析控制流、时间和能耗，在设计仍易于调整时发现问题。",
+      "source": "Execution-aware preflight analysis (control-flow, timing/energy) on the functions an edit touches and the callees of any new code, using compiled artifacts, to catch problems while the design is still cheap to change.",
+      "source_sha256": "2382f2dc925944ed9bf24731f37b7c7bb549115fa9d9b6a1bc37f7862d11ceaa",
+      "source_path": "skills/loci-preflight/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "996d2bf0e3d8723c27dfdf6ca86553420aee9da91b6ea300165baf3723fd04d8": {
+      "description_zh": "从嵌入式固件ELF二进制分析ROM与RAM用量，展示段分解、主要消耗项和区域利用率。",
+      "source": "ROM/RAM memory usage analysis for embedded firmware: section breakdown, top consumers, and region utilization from compiled ELF binaries.",
+      "source_sha256": "996d2bf0e3d8723c27dfdf6ca86553420aee9da91b6ea300165baf3723fd04d8",
+      "source_path": "skills/memory-report/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a7451917cb79ffd5146a9d8cd09fa1ac856a20529e17fc558d51b6f70ebd64e": {
+      "description_zh": "安装loci CLI并验证环境。",
+      "source": "Install the loci CLI and verify the environment.",
+      "source_sha256": "3a7451917cb79ffd5146a9d8cd09fa1ac856a20529e17fc558d51b6f70ebd64e",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b95c472a64e951a08e8b7fea3241c4f45c9fd77892d800368139a41f9f7b16b": {
+      "description_zh": "从编译目标文件或链接ELF分析嵌入式C、C++、Rust和Go最坏栈深度，遍历调用图、汇总函数栈帧、检测递归并判定栈预算。",
+      "source": "Worst-case stack depth analysis for embedded C/C++/Rust/Go: call-graph traversal, per-function frame sizes, recursion detection, and stack budget pass/fail from compiled .o or linked ELF binaries.",
+      "source_sha256": "0b95c472a64e951a08e8b7fea3241c4f45c9fd77892d800368139a41f9f7b16b",
+      "source_path": "skills/stack-depth/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88602b0328ce1f053c04444f156d77cdc373145c78e693a0aca62b623f4abdd6": {
+      "description_zh": "展示当前分支各函数的LOCI测量历史，跟踪执行时间、能耗、栈和内存随时间变化。",
+      "source": "Per-function measurement history on the current branch: timing, energy, stack, and memory trends over time from LOCI analysis.",
+      "source_sha256": "88602b0328ce1f053c04444f156d77cdc373145c78e693a0aca62b623f4abdd6",
+      "source_path": "skills/trends/SKILL.md",
+      "package_sha256": "cab8f6fb102dcd4ea957de32ce47227bf3030bd75512b1de2b425d4d680e27f4",
+      "source_package": "LOCI-0.2.30-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9e745545e6d55403a6b96775548e8411b7e5f375c60ccd1217deb056460286e": {
+      "description_zh": "使用Python pydantic_evals对已定义用例离线评估AI或智能体，在Logfire数据集与实验界面审阅；亦支持仅改环境变量将Python或TypeScript Braintrust评估转发至Logfire，生产埋点与基础设施监控另用专门技能。",
+      "source": "Evaluate Python AI/agent code against a dataset of test cases using pydantic_evals, and review results in Logfire's Datasets & Experiments UI. Also covers redirecting an existing Braintrust Eval() suite to Logfire with no code changes. Use this skill whenever the user asks to \"set up evals\", \"add an evaluation\", \"test my agent against cases\", \"write a dataset of test cases\", \"score my LLM output\", \"add an LLM judge\", \"check tool-call correctness\", \"send Braintrust evals to Logfire\", \"migrate from Braintrust\", or mentions pydantic_evals, Braintrust, Datasets & Experiments, or evaluating AI/agent behavior against known inputs. The `pydantic_evals` workflow is Python-only; the Braintrust redirect also supports TypeScript suites, env-vars-only. Both are for scoring DEFINED test cases offline — not for instrumenting live production traffic (use `logfire-instrumentation` for that) and not for infrastructure monitoring (use `logfire-infrastructure`).",
+      "source_sha256": "a9e745545e6d55403a6b96775548e8411b7e5f375c60ccd1217deb056460286e",
+      "source_path": "skills/logfire-evals/SKILL.md",
+      "package_sha256": "3fc19f86a03e5fb2721d2c45325e561abf46bfba20d06c8a0bcda66fca2f29c1",
+      "source_package": "logfire-0.1.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab86b91e46e33134b39e5279ab1bce879474c02d365afa01303405be3b018a76": {
+      "description_zh": "无需修改应用代码，使用Pydantic Logfire监控主机、Docker、Kubernetes、数据库、队列、缓存及云指标，涵盖OpenTelemetry Collector；应用追踪埋点另用对应技能。",
+      "source": "Monitor hosts, Docker containers, Kubernetes clusters, database/queue/cache servers, and cloud-provider metrics with Pydantic Logfire — no application code required. Use this skill whenever the user asks to \"monitor my host/server/VM\", \"monitor my Docker containers\", \"monitor my Kubernetes cluster\", \"send infrastructure metrics to Logfire\", \"watch my database/Postgres/Redis/MongoDB/Kafka\", \"collect cloud metrics\" (AWS/GCP), or mentions the OpenTelemetry Collector in the context of Logfire. This is infrastructure only — for instrumenting APPLICATION CODE (traces, logs, AI/agent spans) use the logfire-instrumentation skill instead.",
+      "source_sha256": "ab86b91e46e33134b39e5279ab1bce879474c02d365afa01303405be3b018a76",
+      "source_path": "skills/logfire-infrastructure/SKILL.md",
+      "package_sha256": "3fc19f86a03e5fb2721d2c45325e561abf46bfba20d06c8a0bcda66fca2f29c1",
+      "source_package": "logfire-0.1.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3fceb6cc7eec308aa606b4a8bbf6436df40a02e30a0434ba3f398cf9433ed14f": {
+      "description_zh": "为应用代码加入Pydantic Logfire追踪、日志、指标及AI智能体跨度，支持Python、JavaScript、TypeScript、Rust和主要智能体框架；基础设施监控与数据集评估另用对应技能。",
+      "source": "Add Pydantic Logfire observability to application code — traces, logs, metrics, and AI/agent spans. Use when the user asks to add or configure Logfire, observability, tracing, logging, or monitoring; maximize useful telemetry; or understand what an app is doing. Supports Python, JavaScript/TypeScript, Rust, and major AI agent frameworks including Pydantic AI, OpenAI Agents SDK, Claude Agent SDK, LangChain, LangGraph, CrewAI, AutoGen, and Google ADK. For infrastructure-only monitoring (hosts, Docker, Kubernetes, databases, or cloud metrics with no app-code changes), use `logfire-infrastructure`. For evaluating AI/agent behavior against test datasets, use `logfire-evals`.",
+      "source_sha256": "3fceb6cc7eec308aa606b4a8bbf6436df40a02e30a0434ba3f398cf9433ed14f",
+      "source_path": "skills/logfire-instrumentation/SKILL.md",
+      "package_sha256": "3fc19f86a03e5fb2721d2c45325e561abf46bfba20d06c8a0bcda66fca2f29c1",
+      "source_package": "logfire-0.1.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e47d7eb197745da3c648d09147450ce143cd81a1a8143c9a924a0a0524481cc9": {
+      "description_zh": "查询分析Logfire追踪、日志、跨度、指标、摘要及SQL结果，支持错误汇总、根因分析和代码查询能力；直接打开界面或实时视图使用logfire-ui。",
+      "source": "Query and analyze Logfire telemetry data — traces, logs, spans, metrics, summaries, and SQL results. Use this skill when the user asks to \"query logfire\", \"search traces\", \"find logs\", \"query data\", \"search spans\", \"look up errors in logfire\", \"get metrics from logfire\", \"analyze telemetry\", \"summarize errors\", \"find root cause\", or add Logfire querying capabilities to code. Do not use this skill for direct Logfire UI, browser, live-view, Explore-page, or link-opening requests; use logfire-ui instead. If \"show\" or \"view\" wording is ambiguous, ask whether the user wants a UI view or query analysis.",
+      "source_sha256": "e47d7eb197745da3c648d09147450ce143cd81a1a8143c9a924a0a0524481cc9",
+      "source_path": "skills/logfire-query/SKILL.md",
+      "package_sha256": "3fc19f86a03e5fb2721d2c45325e561abf46bfba20d06c8a0bcda66fca2f29c1",
+      "source_package": "logfire-0.1.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a507a7113d10f55e45759a85ca3dea9417d84c8e66feb31f0c36b60579ea780b": {
+      "description_zh": "作为Logfire配置入口，将未明确范围或横跨应用埋点、基础设施监控和AI评估的请求路由到对应技能；已明确单一范围时直接使用专门技能。",
+      "source": "Entry point for Pydantic Logfire — an observability, monitoring, and evals platform. Use this skill when the user asks to \"set up Logfire\", \"add Logfire to my project\", \"get me set up properly with Logfire\", \"send as much data as would be useful\", mentions Logfire without a specific scope, or their request spans more than one of instrumenting application code / monitoring infrastructure / evaluating AI behavior. If the request is clearly scoped to exactly one of those, fetch that specific skill directly instead of this one — this skill exists to route, not to duplicate their content.",
+      "source_sha256": "a507a7113d10f55e45759a85ca3dea9417d84c8e66feb31f0c36b60579ea780b",
+      "source_path": "skills/logfire-setup/SKILL.md",
+      "package_sha256": "3fc19f86a03e5fb2721d2c45325e561abf46bfba20d06c8a0bcda66fca2f29c1",
+      "source_package": "logfire-0.1.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed3e3e5d11fef88c70eda5a26e057243ec70c7dfb52c94c71716776f213f47a4": {
+      "description_zh": "在Codex浏览器打开或返回Logfire项目页、实时视图、追踪链接及Explore页面，按时间、服务、跨度、日志和筛选展示，无需先查询遥测数据。",
+      "source": "Open or return Logfire project pages, live views, trace links, and Explore pages in the Codex browser without querying telemetry first. Use this skill when the user asks to \"open in Logfire\", \"show in the live view\", \"open Explore\", \"open the UI\", \"show in Codex\", \"use the browser\", \"give me a link\", or asks for a Logfire GUI/browser/live-view presentation of a project, time range, service, span, trace, log, or filter. If \"show\" or \"view\" wording is ambiguous, ask whether the user wants a UI view or query analysis.",
+      "source_sha256": "ed3e3e5d11fef88c70eda5a26e057243ec70c7dfb52c94c71716776f213f47a4",
+      "source_path": "skills/logfire-ui/SKILL.md",
+      "package_sha256": "3fc19f86a03e5fb2721d2c45325e561abf46bfba20d06c8a0bcda66fca2f29c1",
+      "source_package": "logfire-0.1.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "107ff4e5bf2fc93493de3dc3bd81f61dc0679510300d5254e08a9a4bcdddd798": {
+      "description_zh": "用自然语言查询LogRocket会话回放、指标、问题与用户行为，用于调试、功能使用分析、错误调查、问题分流及理解用户交互。",
+      "source": "Query LogRocket for session replays, metrics, issues, and user behavior using natural language. Use when debugging issues, analyzing feature usage, investigating errors, triaging problems, or understanding how users interact with your app.",
+      "source_sha256": "107ff4e5bf2fc93493de3dc3bd81f61dc0679510300d5254e08a9a4bcdddd798",
+      "source_path": "skills/use-logrocket/SKILL.md",
+      "package_sha256": "809a73487e3015e99e3e4a24d3ece92472e1c6c2251449c6f5653d7829477981",
+      "source_package": "logrocket-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "151c6484f21014b1d87637427c82bfad86d664417a6fd0fb9ad8da135c93202d": {
+      "description_zh": "检查官方来源自上次运行后的变化，分流变更并引导交互式评审，由/lookout命令调用。",
+      "source": "Core Lookout skill — checks official sources for changes since your last run, triages them, and walks you through an interactive review. Called by the /lookout command.",
+      "source_sha256": "151c6484f21014b1d87637427c82bfad86d664417a6fd0fb9ad8da135c93202d",
+      "source_path": "skills/lookout/SKILL.md",
+      "package_sha256": "02d6da01d02eea03e6471eacd7a0c22192b8bfbcedf02614b6fea096783d84cb",
+      "source_package": "lookout-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "17405bab0e7a91c50f16c2ab338ac267be270294bea9b23d003d4facc7943e4f": {
+      "description_zh": "在仓库修复Loomaly排首位的SEO问题，读取优先队列、证据与修复提示，在分支修改代码，以PR链接标记已修复，并在部署后复查。",
+      "source": "Fix the SEO problem Loomaly ranks first on a site, in this repository: get the fix-first queue, read the evidence and fix prompt, change the code on a branch, mark it fixed with the PR link, and re-check it once it's deployed.",
+      "source_sha256": "17405bab0e7a91c50f16c2ab338ac267be270294bea9b23d003d4facc7943e4f",
+      "source_path": "skills/fix-seo/SKILL.md",
+      "package_sha256": "38885a81b1be5363e1b786d49e22a3724cfa105fe4495339479d23c04cec09be",
+      "source_package": "Loomaly-1.1.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "668c1b6269300f6c59c1e965012e5bb1fd4518f00602a3112e1e4e356b8f64ad": {
+      "description_zh": "逐项与用户评审Loomaly建议的内部链接，将批准的链接加入仓库源内容并记录每项决定。",
+      "source": "Add the internal links Loomaly suggests: review each suggestion with the user, add the approved ones to the source content in this repository, and record each decision.",
+      "source_sha256": "668c1b6269300f6c59c1e965012e5bb1fd4518f00602a3112e1e4e356b8f64ad",
+      "source_path": "skills/internal-links/SKILL.md",
+      "package_sha256": "38885a81b1be5363e1b786d49e22a3724cfa105fe4495339479d23c04cec09be",
+      "source_package": "Loomaly-1.1.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c12e8d09566202e5d1aa27854e75dd7add0bd6edb3090b6c5bf3aac33477820a": {
+      "description_zh": "用通俗语言解释Loomaly网站SEO健康评分、构成、优先修复问题及各问题影响的页面数。",
+      "source": "Explain a site's SEO health from Loomaly in plain language: the score, what it's made of, and the few problems worth fixing first, with how many pages each affects.",
+      "source_sha256": "c12e8d09566202e5d1aa27854e75dd7add0bd6edb3090b6c5bf3aac33477820a",
+      "source_path": "skills/site-health/SKILL.md",
+      "package_sha256": "38885a81b1be5363e1b786d49e22a3724cfa105fe4495339479d23c04cec09be",
+      "source_package": "Loomaly-1.1.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddeac8b61151ab0a1e537a064f8c8e1d8770cf231d675d8cef1f6165bcc7e9ca": {
+      "description_zh": "对预期带来收入的重点页面进行每周SEO复盘，读取表现、按搜索与转化评估上次改动，并依据证据提出下一项改动。",
+      "source": "Run the weekly SEO loop on one page that should make money: read how the focus page did, judge the last change by search and conversions, and propose one next change with evidence. Use when the user asks what to work on this week, whether a change worked, or wants a weekly SEO check-in.",
+      "source_sha256": "ddeac8b61151ab0a1e537a064f8c8e1d8770cf231d675d8cef1f6165bcc7e9ca",
+      "source_path": "skills/weekly-loop/SKILL.md",
+      "package_sha256": "38885a81b1be5363e1b786d49e22a3724cfa105fe4495339479d23c04cec09be",
+      "source_package": "Loomaly-1.1.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16c6254ce76684cc749d3b47a7128117380f9d8c04e310762db7acfb41a03561": {
+      "description_zh": "在智能体构建前或过程中，通过Loop & Gate框架展示当前变更对应的人类决策关口，引导功能启动、计划批准、测试判断及发布决定，并处理用户不适用某评估视角的情况。",
+      "source": "Run a change through the Loop & Gate human-decision gates. Use before or during any agentic build — when starting a feature, approving a plan, judging a test, or deciding whether to ship. Surfaces the gates this change earns and walks the human through each decision, including the fallback when a gate's lens isn't theirs.",
+      "source_sha256": "16c6254ce76684cc749d3b47a7128117380f9d8c04e310762db7acfb41a03561",
+      "source_path": "skills/loop-and-gate/SKILL.md",
+      "package_sha256": "0216382892cee147242a85fcebe94e09abf295021aa9a3e5c0df5cfcda385136",
+      "source_package": "loop-and-gate-build-kit-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acdbb63c4f401639eb16b3b9cc4610c741926510231adefd356c9904f0bf77d8": {
+      "description_zh": "在应用、后端、Webhook或服务端自动化中集成Loops HTTP API与官方SDK，管理联系人、属性、列表、事件、密钥验证、事务邮件、营销内容、主题组件、工作流图节点及入站Webhook；纯CLI请求使用另一技能。",
+      "source": "Use this skill whenever the user wants to integrate Loops from application code, backend services, webhook handlers, or server-side automation. This includes the Loops HTTP API and official SDKs for server-side contact, contact-property, mailing-list, event, API-key-validation, transactional-email, content editing (campaigns, groups, audience segments, email messages, themes, and components), workflow graph/node mutation, and inbound Loops webhooks. Trigger on phrases like \"Loops API\", \"Loops SDK\", \"create a campaign via API\", \"update email message LMX\", \"create a theme via API\", \"create a workflow via API\", \"add a workflow node\", \"Loops webhook\", \"send a Loops event from my app\", \"add a contact to Loops in a webhook\", \"send a transactional email from backend code\", or any time the user wants to integrate Loops into their app, backend, webhook, or automation. Do not trigger for CLI or shell-only requests.",
+      "source_sha256": "acdbb63c4f401639eb16b3b9cc4610c741926510231adefd356c9904f0bf77d8",
+      "source_path": "skills/loops-api/SKILL.md",
+      "package_sha256": "9ad711331644947c5c711237d5feaed4ad3e023832fc011e4b3ee38998f0d6dd",
+      "source_package": "Loops-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aac606bcf1b96df8287335a99474ecaddfbed4a6d23f8084a7b29b4dfa10e85a": {
+      "description_zh": "从终端安装更新并使用Loops CLI，处理登录、API密钥选择验证，以及联系人、列表、事件、事务邮件、营销活动、消息、主题、组件与上传命令。",
+      "source": "Use this skill whenever the user wants to work with the Loops CLI from the terminal. This includes installing or updating the CLI, authenticating, storing and selecting API keys, validating credentials, and running commands for contacts, contact properties, lists, events, transactional email, campaigns, email messages, themes, components, and uploads. Trigger on phrases like \"Loops CLI\", \"loops auth login\", \"loops campaigns create\", \"loops uploads create\", \"loops email-messages update\", \"loops themes list\", \"loops components get\", \"loops contacts create\", \"loops events send\", \"loops transactional send\", \"loops api-key\", \"loops agent-context\", \"brew install loops-so/tap/loops\", or any time the user wants to use Loops from the shell instead of application code.",
+      "source_sha256": "aac606bcf1b96df8287335a99474ecaddfbed4a6d23f8084a7b29b4dfa10e85a",
+      "source_path": "skills/loops-cli/SKILL.md",
+      "package_sha256": "9ad711331644947c5c711237d5feaed4ad3e023832fc011e4b3ee38998f0d6dd",
+      "source_package": "Loops-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f4800476add52e56fa48d9d8e2a9578640d701eec1db562ec5078f574e6bce6": {
+      "description_zh": "评审和规划邮件发送实践，覆盖送达率、收件箱、发送者信誉、同意、名单清理、主题预览、偏好中心及生命周期邮件，并区分营销与事务邮件；Loops场景以其行为和文档为准。",
+      "source": "Use this skill when the user wants to review, audit, improve, or plan email sending best practices. This includes deliverability, inbox placement, sender reputation, consent, list hygiene, subject lines, preview text, preference centers, onboarding emails, lifecycle emails, product updates, or deciding between marketing and transactional email. It works for any email stack, but when Loops is involved, use Loops behavior and docs as the source of truth. Trigger on phrases like \"email deliverability\", \"inbox placement\", \"sender reputation\", \"double opt-in\", \"unsubscribe\", \"subject line review\", \"preview text\", \"lifecycle emails\", \"onboarding emails\", \"product update email\", \"transactional vs marketing\", or \"email sending best practices\". Do not prefer this skill for pure API implementation; use the Loops API skill for integration details.",
+      "source_sha256": "2f4800476add52e56fa48d9d8e2a9578640d701eec1db562ec5078f574e6bce6",
+      "source_path": "skills/loops-email-sending-best-practices/SKILL.md",
+      "package_sha256": "9ad711331644947c5c711237d5feaed4ad3e023832fc011e4b3ee38998f0d6dd",
+      "source_package": "Loops-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46f76520d116a05170eda0636f70436ced2a108f9305564dc163d8e85ad7f045": {
+      "description_zh": "生成、迁移、审查或修改Loops邮件正文的LMX内容，涵盖营销活动、欢迎和生命周期邮件及模板；新邮件或重大视觉改版按原说明的设计流程先行，单纯API或CLI集成另用专门技能。",
+      "source": "Use this skill whenever LMX is used, produced, reviewed, migrated, or modified. This includes composing campaigns, loops, lifecycle emails, or email-message bodies for the Loops editor or Content API. LMX (Loops Markup Language) is the format used for Loops email content. Trigger on phrases like \"create a campaign\", \"generate an email\", \"write a welcome email\", \"draft a lifecycle email\", \"build an email template\", \"create an onboarding email\", \"copy this into LMX\", \"migrate this email\", \"convert this email to LMX\", \"design a new Loops email\", \"use imagegen for a Loops email\", \"use gpt-image for an LMX reference\", \"visual reference for a Loops email\", \"LMX\", \"Loops email\", or any request to produce, copy, migrate, convert, review, or modify email body content intended for Loops. For net-new emails or major visual redesigns, follow this skill's Net-New Email Design Flow before generating or sourcing new visual assets. Source copy, existing HTML, MJML, Markdown, screenshots, and migration instructions do not bypass this skill's rules unless the user explicitly overrides a specific rule. Do not trigger for questions about the Loops HTTP API, SDK integration, or CLI unless email body content is also involved.",
+      "source_sha256": "46f76520d116a05170eda0636f70436ced2a108f9305564dc163d8e85ad7f045",
+      "source_path": "skills/loops-lmx/SKILL.md",
+      "package_sha256": "9ad711331644947c5c711237d5feaed4ad3e023832fc011e4b3ee38998f0d6dd",
+      "source_package": "Loops-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b46a72ffb80146e6c49fa10033e3ba2e14fc656b38e044322d15bf519d251682": {
+      "description_zh": "采用Lorhard固定设计系统制作可干净打印或导出PDF的长篇静态HTML文档，适用于合同、具名客户报告及通用报告，以衬线正文、金色分隔、固定版宽和标题规则排版，不适用于营销页面、产品界面、邮件或动态应用。",
+      "source": "Lorhard''s in-house design system for formal, long-form HTML documents — contracts, consulting reports, research, sector notes, equity research, and client deliverables that must print or export to PDF cleanly. Trigger on: \"draft an MSA\", \"SOW for <client>\", \"consulting report\", \"industry report\", \"white paper\", \"PDP research\", \"put this in Lorhard style\", \"Lorkindoc template\", or requests for a printable document in serif body text with Letter / 1in margins. Opinionated single-template by design — one shared typographic system (serif body, #be9c72 gold rule, 580px measure, uppercase h2, italic h3) adapted to three scenarios only: contracts, named-client reports, and general reports. Not a general-purpose HTML generator. Do NOT use for: marketing pages, campaign microsites, social graphics, short landing pages, product UI, slide decks, email HTML, interactive dashboards, or dynamic web apps — Lorkindoc assumes static, paginated, text-heavy output and will decline visual-impact-first asks.",
+      "source_sha256": "b46a72ffb80146e6c49fa10033e3ba2e14fc656b38e044322d15bf519d251682",
+      "source_path": "skills/lorkindoc/SKILL.md",
+      "package_sha256": "ffe360578cd1089252befe169e268bc4a9d5b9973274e0d8d03584d2e4c7038b",
+      "source_package": "lorkindoc-2026.07.17-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed8dd6451e4b1277cdce87b77035ed9b8bc3066af8218db0f92c1612685faf12": {
+      "description_zh": "按LORM分层责任模型评估状态修改、破坏性或运维行动，包括文件数据、数据库、Git、部署、迁移和配置；原说明要求诊断、不确定性说明，并按L4明确批准或L5有效策略决定执行权限。",
+      "source": "Apply the Layered Operational Responsibility Model (LORM) before any state-changing, destructive, or operational action: deleting or modifying files or data, dropping/altering database objects, git push or history rewrites, deploys, migrations, infrastructure or configuration changes, or any command with side effects outside the working directory. Also use when the user asks what the agent is allowed to do autonomously, or when a lorm-policy.yaml file exists in the project. Classifies the action by LORM level, requires diagnostics and an uncertainty statement before acting, and gates execution on explicit human approval (L4) or a valid policy (L5).",
+      "source_sha256": "ed8dd6451e4b1277cdce87b77035ed9b8bc3066af8218db0f92c1612685faf12",
+      "source_path": "skills/lorm/SKILL.md",
+      "package_sha256": "b3656dc47644ad724d35e7c50e6407c1fe67314c5bb690ffc0503262d099caf9",
+      "source_package": "LORM — Layered Operational Responsibility Model-2.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0eeafc30a0dce654a9981d72bc96fb379a1229002d4614614df99969356d858a": {
+      "description_zh": "根据房产详情或Zillow链接分析投资潜力，对照市场数据评估价格；原说明称前50大市场可免费使用。",
+      "source": "Analyze a specific property for investment potential — provide details or paste a Zillow link. Compares property price against market data. Free for top 50 markets.",
+      "source_sha256": "0eeafc30a0dce654a9981d72bc96fb379a1229002d4614614df99969356d858a",
+      "source_path": "skills/analyze-property/SKILL.md",
+      "package_sha256": "9da1deeefc87301f4f7464f9d73c6cced591d61c37466cbcc80768fc278661fa",
+      "source_package": "lotlytics-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c616eeb1a26a42039cf90703abcbad36cce89c5a20f6282e4f2826a4c6cf418e": {
+      "description_zh": "按投资健康评分发现美国指定州房地产投资市场；原说明称免费层只展示主要都市区。",
+      "source": "Discover the best real estate investment markets in a US state — ranked by investment health score. Free tier shows major metros only.",
+      "source_sha256": "c616eeb1a26a42039cf90703abcbad36cce89c5a20f6282e4f2826a4c6cf418e",
+      "source_path": "skills/explore-state/SKILL.md",
+      "package_sha256": "9da1deeefc87301f4f7464f9d73c6cced591d61c37466cbcc80768fc278661fa",
+      "source_package": "lotlytics-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73e8905f0823fc560980d6a690d9c8aaa119e485c5d025ed3f1a7ebff133f08a": {
+      "description_zh": "按预算、租金收益、升值与州筛选美国房地产投资市场；原说明要求Lotlytics Investor订阅。",
+      "source": "Find US real estate markets matching your investment criteria — filter by budget, rental yield, appreciation, and state. Requires Lotlytics Investor plan.",
+      "source_sha256": "73e8905f0823fc560980d6a690d9c8aaa119e485c5d025ed3f1a7ebff133f08a",
+      "source_path": "skills/find-markets/SKILL.md",
+      "package_sha256": "9da1deeefc87301f4f7464f9d73c6cced591d61c37466cbcc80768fc278661fa",
+      "source_package": "lotlytics-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a0c8fc208be36b6fa8b4cdf2b0b0d7ecf6906eea4bb237f0f872f88b07fd4ef": {
+      "description_zh": "并列比较两个美国房地产市场的价格、收益、升值及迁移，并给出优胜判断；原说明要求Lotlytics Investor订阅。",
+      "source": "Compare two US real estate markets side-by-side — prices, yields, appreciation, migration, and a winner verdict. Requires Lotlytics Investor plan.",
+      "source_sha256": "7a0c8fc208be36b6fa8b4cdf2b0b0d7ecf6906eea4bb237f0f872f88b07fd4ef",
+      "source_path": "skills/head-to-head/SKILL.md",
+      "package_sha256": "9da1deeefc87301f4f7464f9d73c6cced591d61c37466cbcc80768fc278661fa",
+      "source_package": "lotlytics-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71f8193cb6f1d0d1ba69c6b648f0c661e01cb177fa9dde69fe04cf899cab6db5": {
+      "description_zh": "生成美国房地产市场完整投资报告，包含价格、租金收益、健康评分与投资判断；原说明称前50大市场免费。",
+      "source": "Generate a full investment report for a US real estate market — prices, rental yield, health score, and investment verdict. Free for top 50 markets.",
+      "source_sha256": "71f8193cb6f1d0d1ba69c6b648f0c661e01cb177fa9dde69fe04cf899cab6db5",
+      "source_path": "skills/market-report/SKILL.md",
+      "package_sha256": "9da1deeefc87301f4f7464f9d73c6cced591d61c37466cbcc80768fc278661fa",
+      "source_package": "lotlytics-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6fc7218f5119d207e16ee2aa8e07701ccb4d8ec6cd30ebc77c6253b1f1838758": {
+      "description_zh": "将2至3个房地产市场作为投资组合分析，评估分散化、收益平衡与风险分布；原说明要求Lotlytics Investor订阅。",
+      "source": "Analyze 2-3 real estate markets as an investment portfolio — diversification, yield balance, and risk spread. Requires Lotlytics Investor plan.",
+      "source_sha256": "6fc7218f5119d207e16ee2aa8e07701ccb4d8ec6cd30ebc77c6253b1f1838758",
+      "source_path": "skills/portfolio-check/SKILL.md",
+      "package_sha256": "9da1deeefc87301f4f7464f9d73c6cced591d61c37466cbcc80768fc278661fa",
+      "source_package": "lotlytics-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15ce47deb5e9aa8055718120be742661380acc10bb38a4a3ac86f1d01c5c378c": {
+      "description_zh": "按自然语言职位需求或现有岗位，在招聘机构Lovelio数据库中寻找匹配候选人并形成短名单。",
+      "source": "Find the right candidates in the agency's Lovelio database, for a plain-English brief or for a live job. Use when a recruiter asks who they have for a role, wants a shortlist, or asks \"who fits this job\".",
+      "source_sha256": "15ce47deb5e9aa8055718120be742661380acc10bb38a4a3ac86f1d01c5c378c",
+      "source_path": "skills/find-candidates/SKILL.md",
+      "package_sha256": "6557cf01ad7868afff086235fe9ef4006aece267bcb416818d67e266eddf185b",
+      "source_package": "Lovelio-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7663f109623984604fe8099e30da3610f5d3c6317c4b7f88797854387c29aa3f": {
+      "description_zh": "在Lovelio记录客户录用邀请、候选人接受及成功安置，并包含费用。",
+      "source": "Record an offer and a placement in Lovelio, with the fee. Use when a recruiter says a client made an offer, a candidate accepted, or asks to log a placement or a win.",
+      "source_sha256": "7663f109623984604fe8099e30da3610f5d3c6317c4b7f88797854387c29aa3f",
+      "source_path": "skills/log-a-placement/SKILL.md",
+      "package_sha256": "6557cf01ad7868afff086235fe9ef4006aece267bcb416818d67e266eddf185b",
+      "source_package": "Lovelio-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "090487a612afc475622950a4fd1cf8c0c2fea068f1e2be8b71e1b2adb59208c0": {
+      "description_zh": "向客户提交Lovelio岗位候选人、跟进客户并记录反馈，支持推荐和发送候选人。",
+      "source": "Send candidates on a Lovelio job to the client, chase the client, and record what the client said. Use when a recruiter wants to submit, float or send candidates to a client, or tells you the client's feedback.",
+      "source_sha256": "090487a612afc475622950a4fd1cf8c0c2fea068f1e2be8b71e1b2adb59208c0",
+      "source_path": "skills/submit-candidates/SKILL.md",
+      "package_sha256": "6557cf01ad7868afff086235fe9ef4006aece267bcb416818d67e266eddf185b",
+      "source_package": "Lovelio-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6c2cccea5b84833757932c77d8b3d78cbd4ca7ea8f4d5e389b5932eb92481c6": {
+      "description_zh": "审查Lovelio岗位漏斗与筛选阶段候选人，查看新增及进展，并移动、列短名单或拒绝候选人。",
+      "source": "Review and move candidates on a Lovelio job, from the funnel through screening. Use when a recruiter asks what is happening on a job, who is new, or asks to move, shortlist or reject candidates.",
+      "source_sha256": "f6c2cccea5b84833757932c77d8b3d78cbd4ca7ea8f4d5e389b5932eb92481c6",
+      "source_path": "skills/work-a-job/SKILL.md",
+      "package_sha256": "6557cf01ad7868afff086235fe9ef4006aece267bcb416818d67e266eddf185b",
+      "source_package": "Lovelio-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18b8b6bf894b485ce68ec7b129bc13a30cfebbcad3ef4100c02186ea3512c85e": {
+      "description_zh": "在Lusha查找单个人员，取得原说明所称已验证电话、邮箱与公司背景，支持按姓名、公司或邮箱补充联系资料。",
+      "source": "Look up a person and get their verified phone numbers, email, and company context. Use when the user says \"look up [name]\", \"get me the contact info for [person]\", \"find [name]'s phone number\", \"who is [name] at [company]\", \"enrich [email or name]\", or any request to retrieve a single person's contact details.",
+      "source_sha256": "18b8b6bf894b485ce68ec7b129bc13a30cfebbcad3ef4100c02186ea3512c85e",
+      "source_path": "skills/enrich-contact/SKILL.md",
+      "package_sha256": "cdc2e15a14c783d72bc749e76b0d1f40cb435651282d10d519f87a5096dc0e5a",
+      "source_package": "Lusha-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79540007667ce2b09959c1ec93ed9d2cf282aa407ac3d1d3032122103c635675": {
+      "description_zh": "以至少5个参考公司或联系人发现相似潜客，再用原说明所称已验证电话补充结果，支持从最佳客户或现有账户扩展目标。",
+      "source": "Find companies or contacts similar to a set of references, then enrich results with verified phone numbers. Use when the user says \"find companies like my best customers\", \"find more contacts like these\", \"expand from these accounts\", \"who else looks like [company]\", \"find similar companies to [list]\", or any request to discover lookalike targets from a reference set. Requires at least 5 reference companies or contacts for quality results.",
+      "source_sha256": "79540007667ce2b09959c1ec93ed9d2cf282aa407ac3d1d3032122103c635675",
+      "source_path": "skills/lookalike-prospect/SKILL.md",
+      "package_sha256": "cdc2e15a14c783d72bc749e76b0d1f40cb435651282d10d519f87a5096dc0e5a",
+      "source_package": "Lusha-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5479974d188e707b90d7891584bbdb0774043fe69741888e91c5fd22dc4e3e94": {
+      "description_zh": "在编写多次触达B2B文案前建立可复用定位简报，记录销售内容、目标客户与差异化；此为第一阶段，序列文案使用outreach-sequence。",
+      "source": "Build a portable outreach positioning brief (what you sell, to whom, how you differentiate) before drafting multi-touch B2B sequences. Use when the user says \"help me draft outreach\", \"build my positioning brief\", \"outreach research\", \"what should I say to prospects\", \"lusha outreach brief\", or any request to capture positioning before outreach copy. Stage 1 only — not for drafting sequences (use outreach-sequence once a brief exists).",
+      "source_sha256": "5479974d188e707b90d7891584bbdb0774043fe69741888e91c5fd22dc4e3e94",
+      "source_path": "skills/outreach-research/SKILL.md",
+      "package_sha256": "cdc2e15a14c783d72bc749e76b0d1f40cb435651282d10d519f87a5096dc0e5a",
+      "source_package": "Lusha-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02c94470d3f9fd66d6926791d73d82b0f86be7065cacfe2c78e83dacbe5de9fd": {
+      "description_zh": "结合已有定位简报、Lusha信号及候选受众，起草个性化B2B邮件和可选LinkedIn触达序列，支持CSV、附件或单一联系人；须先完成outreach-research定位简报。",
+      "source": "Draft personalized B2B outreach copy (email and optional LinkedIn) for a shortlisted audience using a positioning brief plus Lusha signals. Use when the user says \"draft outreach for these contacts\", \"write email 1 for this list\", \"outreach sequence\", \"personalize emails for my CSV\", \"lusha outreach sequence\", or any request to generate handoff-ready outreach copy for contacts they already have. Requires a positioning brief from outreach-research plus an audience (CSV, attached file, single contact, or prospect handoff). Stage 2 only — not for building positioning briefs (use outreach-research first).",
+      "source_sha256": "02c94470d3f9fd66d6926791d73d82b0f86be7065cacfe2c78e83dacbe5de9fd",
+      "source_path": "skills/outreach-sequence/SKILL.md",
+      "package_sha256": "cdc2e15a14c783d72bc749e76b0d1f40cb435651282d10d519f87a5096dc0e5a",
+      "source_package": "Lusha-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8535131f67e23dd01a6d006e7ea45837e29fdb2c03116c71142d68113c04f29": {
+      "description_zh": "按理想客户或人物画像描述，从Lusha构建目标联系人或公司名单，返回邮箱及原说明所称已验证电话。",
+      "source": "Build a targeted list of contacts or companies from Lusha and return verified phone numbers alongside emails. Use when the user says \"find me [title] at [company type]\", \"build a list of [ICP description]\", \"prospect [criteria]\", \"who should I be calling at [industry]\", or any request to generate a lead list from an ICP or persona description.",
+      "source_sha256": "b8535131f67e23dd01a6d006e7ea45837e29fdb2c03116c71142d68113c04f29",
+      "source_path": "skills/prospect/SKILL.md",
+      "package_sha256": "cdc2e15a14c783d72bc749e76b0d1f40cb435651282d10d519f87a5096dc0e5a",
+      "source_package": "Lusha-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4be48f914e92687ae6feaad99e7c194a0f87a112bebb2714a1fe56a1ac174eba": {
+      "description_zh": "按融资、招聘增长、人数增长、晋升或换岗等购买信号寻找公司与联系人，并返回相关决策者的已验证电话。",
+      "source": "Find companies or contacts triggered by a buying signal, then surface verified phone numbers for the right decision makers. Use when the user says \"find companies that just raised funding\", \"who's surging in sales hiring right now\", \"show me companies with headcount growth\", \"find contacts who just got promoted\", \"who changed jobs recently in [industry]\", \"show me [title] at companies that just [signal event]\", or any request that starts with a real-world trigger rather than a static filter.",
+      "source_sha256": "4be48f914e92687ae6feaad99e7c194a0f87a112bebb2714a1fe56a1ac174eba",
+      "source_path": "skills/signal-prospect/SKILL.md",
+      "package_sha256": "cdc2e15a14c783d72bc749e76b0d1f40cb435651282d10d519f87a5096dc0e5a",
+      "source_package": "Lusha-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf13558e570b4928a0bb1ce54b352d95a91f9f02a7494fb4ad79f73462eb2a46": {
+      "description_zh": "通过用户已连接的Midpage或Descrybe读取法院实际意见，对具体判决形成详细案件摘要、裁判结论与分析；两者都连接时同时使用。",
+      "source": "Produce detailed case summaries and analyses of specific court opinions. Use when the user asks to \"summarize this case\", \"analyze this opinion\", \"what did the court hold in\", \"case summary for\", \"brief this case\", \"case analysis of\", \"explain this ruling\", or needs a comprehensive breakdown of a specific court decision — read from the actual opinion on the Midpage or Descrybe connector, whichever the user has (both, when both are connected).",
+      "source_sha256": "cf13558e570b4928a0bb1ce54b352d95a91f9f02a7494fb4ad79f73462eb2a46",
+      "source_path": "skills/case-summary/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2afda016d156e372bc8c41f679ae5a8ed6b42de64bbf08bec4a48c5205629779": {
+      "description_zh": "从诉讼书状、动议或备忘录生成Word判例引文册，通过Midpage或Descrybe核验每项引文，对比书状归因主张与判例实际主张，汇集已核验摘引、后续引用处理及准确性评估。",
+      "source": "Build a verified Citation Binder (Word document) from a brief, motion, or memorandum. Verifies every citation against the real opinion on the Midpage or Descrybe connector (both, when both are connected), extracts the proposition the brief attributes to each case AND the proposition the case actually states, compares the two for accuracy, and assembles a tabbed binder with verified pull-quotes, citator treatment, and accuracy assessments. Use when the user asks to \"build a citation binder\", \"create a citation binder\", \"build a case binder\", \"binder of the cases\", \"verify and bind citations\", \"table of authorities with pull-quotes\", \"citation binder for this brief\", \"compare my propositions to the cases\", \"check my brief's propositions against the actual opinions\", or uploads a legal document and wants a courtroom-ready, verified authorities binder.",
+      "source_sha256": "2afda016d156e372bc8c41f679ae5a8ed6b42de64bbf08bec4a48c5205629779",
+      "source_path": "skills/citation-binder/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a763912dc489ab20768f39406e030077b275b75f9fd371258ff8f0f640c32542": {
+      "description_zh": "依据律所模板生成新泽西或纽约房地产交割Word文件，包括契据、产权和对价宣誓书、税表及转让文书，并通过LVAI PDF Filler填写随附政府PDF表单。",
+      "source": "Generate real estate closing documents for a transaction. Use when the user asks to \"prepare closing documents\", \"draft a deed\", \"create affidavit of title\", \"prepare GIT form\", \"affidavit of consideration\", \"seller closing documents\", \"closing package\", \"settlement documents\", \"prepare deed\", \"generate closing docs\", \"seller documents\", \"transfer documents\", \"deed prep\", \"closing paperwork\", or needs any combination of deeds, affidavits, tax forms, or transfer documents for a NJ or NY real estate closing. Produces Word documents from firm templates and auto-fills bundled government PDF forms via LVAI PDF Filler integration.",
+      "source_sha256": "a763912dc489ab20768f39406e030077b275b75f9fd371258ff8f0f640c32542",
+      "source_path": "skills/closing-documents/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b218ede8f2a4b2ab8ad8c4e8e4246b6d870e1d40a08a6ee5bd083ea543835453": {
+      "description_zh": "处理新房地产交易的合同与附加条款上传，设置交易、安排关键日期并识别待准备附件，覆盖新泽西和纽约住宅、公寓与合作产权买卖双方。",
+      "source": "Process a real estate contract and rider upload for a new transaction. Use when the user asks to \"upload a contract\", \"new real estate transaction\", \"start a transaction\", \"review this contract\", \"process this contract and rider\", \"intake a new deal\", \"new closing\", \"new real estate deal\", \"I have a new contract\", or uploads a real estate contract PDF/document and needs the transaction set up with dates calendared and rider preparation identified. Covers NJ and NY residential, condo, and co-op transactions for both buyer and seller representation.",
+      "source_sha256": "b218ede8f2a4b2ab8ad8c4e8e4246b6d870e1d40a08a6ee5bd083ea543835453",
+      "source_path": "skills/contract-intake/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b3cc3c0013c44551964d11cbcc2dc58ec0938eb7b6e3b94888cb3fce5480829": {
+      "description_zh": "将房地产交易的定金、检查、贷款承诺与交割等关键日期加入Google Calendar或Outlook，设置提醒并按交易组织事件。",
+      "source": "Calendar all critical dates from a real estate transaction. Use when the user asks to \"calendar the dates\", \"add dates to calendar\", \"schedule closing dates\", \"calendar this transaction\", \"add transaction dates\", \"calendar deadlines\", \"set up calendar reminders\", \"schedule real estate dates\", or needs key transaction dates (deposit, inspections, mortgage commitment, closing) added to Google Calendar or Outlook. Automatically sets reminders and organizes events by transaction.",
+      "source_sha256": "6b3cc3c0013c44551964d11cbcc2dc58ec0938eb7b6e3b94888cb3fce5480829",
+      "source_path": "skills/date-calendaring/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e09135749219d03479eefe4f33b27cdfc86bd0285f9f0626af20e9bb661a971f": {
+      "description_zh": "通过已连接的Midpage或Descrybe进行深入法律研究，完整阅读判决文本并结合RAG扩展分析；两者都连接时同时使用。",
+      "source": "Conduct comprehensive deep legal research with extended analysis and full opinion text review. Use when the user asks for \"deep research\", \"comprehensive research\", \"thorough analysis\", \"in-depth legal research\", \"exhaustive case law analysis\", \"deep dive into\", or needs the most thorough possible legal research with full opinion text review and RAG-enhanced analysis on the Midpage or Descrybe connector, whichever the user has (both, when both are connected).",
+      "source_sha256": "e09135749219d03479eefe4f33b27cdfc86bd0285f9f0626af20e9bb661a971f",
+      "source_path": "skills/deep-research/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ca2e7042e9708f3055a09a89f96f9a4a5312029b7b012951ed2d77f0dc59c45": {
+      "description_zh": "为离婚、监护、劳动、人身伤害等案件起草证据发现文件，包括书面询问、文件提供要求、承认请求及答复。",
+      "source": "Generate discovery documents including interrogatories, requests for production, and requests for admission. Use when the user asks to \"draft interrogatories\", \"create discovery requests\", \"write requests for production\", \"discovery questions\", \"draft RFPs\", \"create requests for admission\", \"generate discovery\", \"respond to interrogatories\", or needs interrogatories, document requests, requests for admission or responses to them for divorce, custody, employment, personal injury, or other case types.",
+      "source_sha256": "4ca2e7042e9708f3055a09a89f96f9a4a5312029b7b012951ed2d77f0dc59c45",
+      "source_path": "skills/discovery/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6236cd492a13790e89478d6954d0316e4f1dc19491839aeb19621aa4875d02d3": {
+      "description_zh": "在用户电脑将PDF、Word和图片证据合为法庭用PDF册，添加案名封面、带页码索引、每项证据分隔页、书签、总页码及可选Bates编号，原说明明确不上传材料。",
+      "source": "Merge a set of exhibits (PDF, Word, images) into ONE court-ready PDF binder: caption cover page, Exhibit Index with page references, a tab page before every exhibit (\"EXHIBIT A\"), bookmarks, \"Page X of Y\" on every page and optional Bates numbers. Use when the user asks to \"create an exhibit binder\", \"merge the exhibits\", \"combine these PDFs into one\", \"make one PDF of all the exhibits\", \"tab the exhibits\", \"exhibit list\", \"exhibit index\", \"Bates stamp the exhibits\", \"put the exhibits together for the motion\", \"appendix of exhibits\", or has a folder of exhibit files that must go to the court or the other side as a single document. Works entirely on the user's computer — nothing is uploaded.",
+      "source_sha256": "6236cd492a13790e89478d6954d0316e4f1dc19491839aeb19621aa4875d02d3",
+      "source_path": "skills/exhibit-binder/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f36d0b9e6af28acd915a9fad77533ffea6e97196ae5b6f01c6df9dde71a22911": {
+      "description_zh": "读取证明或宣誓文书中的证据附件引用，匹配文件并核查内容与陈述一致，生成文书加分隔页和附件的合并PDF、逐项PDF与清单；无证明文书的独立附件册使用exhibit-binder。",
+      "source": "Attach the exhibits referenced in a certification, affirmation, affidavit or declaration: read the document, find every \"attached hereto as Exhibit A is a true copy of …\" reference, match each exhibit to the right file, check that the file is what the certification says it is, and produce the certification followed by tab pages and exhibits in ONE PDF (plus one PDF per exhibit and an exhibit list). Use when the user says \"/exhibits\", \"attach the exhibits to my certification\", \"put the exhibits behind the certification\", \"tab and merge the exhibits referenced in the affidavit\", \"exhibits to the affirmation\", \"the exhibits have to match the certification\", \"add Exhibit A, B and C to the cert\", or has a certification/affirmation and a folder of exhibit files that must go to the court together. Works entirely on the user's computer — nothing is uploaded. For a set of exhibits WITHOUT a certification (a motion appendix), use exhibit-binder.",
+      "source_sha256": "f36d0b9e6af28acd915a9fad77533ffea6e97196ae5b6f01c6df9dde71a22911",
+      "source_path": "skills/exhibits/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a24797375fa2b1f04c69f2dcc68814938269211592a36b200fc389025cf75f0": {
+      "description_zh": "为DOCX法律引文添加超链接，判例连接Midpage或Descrybe，法条连接Midpage或Onecle对应条文，联邦规则连接Cornell；原说明不为州法院规则加链接。",
+      "source": "Hyperlink all legal citations in a document (.docx) — case law to the opinion on Midpage (or on Descrybe when Midpage is not connected), statutes to Midpage's own law page for the section — or, without Midpage, to the section's page on law.onecle.com for that state or the U.S. Code — and federal rules to law.cornell.edu. Use when the user asks to \"hyperlink citations\", \"add links to cases\", \"link case law\", \"hyperlink the brief\", \"hyperlink the memo\", \"add Midpage links\", \"add Descrybe links\", \"link citations\", \"hyperlink cases in my document\", \"link statutes\", \"hyperlink rules\", or wants any legal document's citations turned into clickable hyperlinks. Also triggers when the user mentions \"hyperlinking\", \"midpage links\", \"descrybe links\", \"onecle links\", or wants citations in a brief or memorandum to be clickable. If the user has a .docx legal document and wants case names, statutes, or federal rules to link somewhere, use this skill. State court rules are intentionally not hyperlinked.",
+      "source_sha256": "6a24797375fa2b1f04c69f2dcc68814938269211592a36b200fc389025cf75f0",
+      "source_path": "skills/hyperlinking/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c2abb21cdbec67b7be360629434e0801f5878197bde6a1dd48f5c09ce6274bd": {
+      "description_zh": "根据引文核验报告清单修改法律文书中被标记的段落，使主张匹配已核实判例措辞，再重新核验；用于核验后修正而非一般编辑。",
+      "source": "Auto-correct a legal document based on a Citation Verification Report, then re-verify the corrected document. Use when the user asks to \"fix the citations\", \"correct the brief per the report\", \"apply the verification fixes\", \"fix the issues the verification report found\", \"narrow the holdings\", \"make the corrections from the report\", or has just run /verify and wants the flagged citations actually fixed in the document. This is the natural follow-on to /verify — it reads the verification report's manifest, rewrites flagged passages of the brief to align with the verified case language, and runs a new verification check on the corrected document. Not for general editing requests.",
+      "source_sha256": "6c2abb21cdbec67b7be360629434e0801f5878197bde6a1dd48f5c09ce6274bd",
+      "source_path": "skills/legal-correction/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ffe4a3fc1c42ff8b21f121c10cb1ae1fb1e4cbe68be05255c2e8abd6a228971": {
+      "description_zh": "通过Midpage或Descrybe实际判决开展法律问题、先例及支持判例研究，生成带超链接与Bluebook引文的分析；两者都连接时同时使用。",
+      "source": "Conduct professional legal research with verified case law citations. Use when the user asks to \"research a legal issue\", \"find case law\", \"search for precedents\", \"legal research on\", \"what does the law say about\", \"find cases supporting\", \"case law for\", or needs authority on any legal question. Produces hyperlinked, Bluebook-formatted analysis backed by real case opinions via the Midpage or Descrybe connector — whichever the user has (both, when both are connected).",
+      "source_sha256": "5ffe4a3fc1c42ff8b21f121c10cb1ae1fb1e4cbe68be05255c2e8abd6a228971",
+      "source_path": "skills/legal-research/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f51cd4414297b8df3f93e02de36b13382b8ec36118460f21ae081741ed5d39d4": {
+      "description_zh": "以Midpage或Descrybe实际判决核验法律引文、案件主张和文书准确性，生成逐项对照主张与判决语言的DOCX核验报告；带分隔页和摘引的判例册另用citation-binder。",
+      "source": "Verify legal citations, case claims, and document accuracy against real case law and produce a Citation Verification Report (a .docx that pairs each proposition in the brief with the verified language of the opinion). Use when the user asks to \"verify citations\", \"check this brief\", \"verify case law\", \"are these citations real\", \"citation check\", \"verify legal claims\", \"check if this case exists\", \"verify holdings\", \"verification report\", or needs to validate any legal document against actual court opinions — on the Midpage or Descrybe connector, whichever the user has (both, when both are connected). For a tabbed binder of the authorities with pull-quotes, use citation-binder instead.",
+      "source_sha256": "f51cd4414297b8df3f93e02de36b13382b8ec36118460f21ae081741ed5d39d4",
+      "source_path": "skills/legal-verification/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "013f94e4720c5c8bd3e033ab329876f1a036199fb317b9a7d797659ddaf90b8f": {
+      "description_zh": "根据上传研究与材料起草书状、动议、备忘录、起诉状、反对意见及答复，按原说明采用Cardozo标准法律行文与Bluebook引文。",
+      "source": "Draft professional legal documents from uploaded research and materials. Use when the user asks to \"draft a brief\", \"write a motion\", \"draft a memorandum\", \"write a legal document\", \"create a legal memo\", \"draft an opposition\", \"write legal arguments\", \"draft a complaint\", \"write a response\", or needs any legal document drafted from provided materials. Produces Cardozo-standard legal prose with proper Bluebook citations.",
+      "source_sha256": "013f94e4720c5c8bd3e033ab329876f1a036199fb317b9a7d797659ddaf90b8f",
+      "source_path": "skills/legal-writing/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4377e66129442cb8f164442df609201c10360e5a3e9db783eb0f7a37f527564": {
+      "description_zh": "通过Legal Velocity连接器只读查看用户自身LVAI Pro许可，展示获许可人、许可ID、席位、计划、到期日、剩余天数和状态，无需文件夹、文件或管理员工具。",
+      "source": "Show the user's own LVAI Pro / Legal Velocity license: who it is licensed to, license ID, seat, plan, expiry date, days left and status. Use when the user says \"check my LVAI Pro license status\", \"check my license\", \"is my LVAI Pro license active\", \"when does my license expire\", \"LVAI Pro license status\", \"Legal Velocity license\", \"verify my license\", \"is my subscription active\", \"manage my LVAI Pro subscription\", or asks anything about their own LVAI Pro license or renewal. This is a read-only check through the Legal Velocity connector; it needs no folder, no file and no admin tool.",
+      "source_sha256": "d4377e66129442cb8f164442df609201c10360e5a3e9db783eb0f7a37f527564",
+      "source_path": "skills/license-status/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "080f38fd83f73d6a717b070151305dbdd0fbf937608629f70ddab7e9cd986ce6": {
+      "description_zh": "从税表、工资单、W-2、1099、离婚材料、银行流水等来源自动填充PDF表单，支持可填写与静态表单，并保留原格式和布局。",
+      "source": "Intelligent PDF form filling from source documents. Use when the user asks to \"fill out a form\", \"complete a PDF\", \"fill in a case information statement\", \"fill CIS\", \"generate a CIS\", \"fill court form\", \"auto-fill PDF\", \"populate a form from documents\", \"fill out paperwork\", \"complete court paperwork\", \"generate form from tax returns\", \"fill financial statement\", or needs any PDF form automatically populated from uploaded source documents such as tax returns, paystubs, W-2s, 1099s, divorce filings, bank statements, or financial records. Handles both fillable PDF forms and non-fillable static PDF forms. Preserves exact original document formatting and layout.",
+      "source_sha256": "080f38fd83f73d6a717b070151305dbdd0fbf937608629f70ddab7e9cd986ce6",
+      "source_path": "skills/pdf-form-filler/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a3d3f9a73420fef0e6962e49c0b6bdbe1cf07eb4c1be2882165b3bada2e9f47": {
+      "description_zh": "为新泽西或纽约房地产买方或卖方起草合同附加条款，支持住宅、公寓和合作产权及各州特定条文。",
+      "source": "Generate a real estate contract rider for buyer or seller representation. Use when the user asks to \"prepare a rider\", \"draft a rider\", \"create a rider\", \"buyer's rider\", \"seller's rider\", \"generate rider\", \"contract rider for\", \"condo rider\", \"co-op rider\", \"residential rider\", or needs a rider document prepared for a NJ or NY real estate transaction. Supports residential, condo, and co-op property types with state-specific provisions for both buyer and seller sides.",
+      "source_sha256": "8a3d3f9a73420fef0e6962e49c0b6bdbe1cf07eb4c1be2882165b3bada2e9f47",
+      "source_path": "skills/rider-generator/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79a4f4d7e7bd76413230ff8f7b6df095231b1c618dc915474efb19862a1af929": {
+      "description_zh": "审查新泽西或纽约产权册、产权保险承诺与查询报告中的要求、例外及产权链，以红黄绿评级生成报告；卖方补齐信息后可据此生成交割文件。",
+      "source": "Review a title binder or title commitment — requirements, exceptions, chain of title, graded RED / YELLOW / GREEN — in a Title Review Report, and (seller side) generate the closing documents from it once the missing details are collected. Use when the user asks to \"review title\", \"title binder review\", \"review title commitment\", \"analyze title search\", \"title report review\", \"check title\", \"title examination\", \"title issues\", \"create closing docs from title\", \"closing from title binder\", or uploads a title binder, title commitment, or title search report and needs it reviewed. Covers NJ and NY transactions.",
+      "source_sha256": "79a4f4d7e7bd76413230ff8f7b6df095231b1c618dc915474efb19862a1af929",
+      "source_path": "skills/title-review/SKILL.md",
+      "package_sha256": "b8d75283c85f1fb116ea32a3fc6d7b3a89d2ffc222cb65a0e460595002e72be3",
+      "source_package": "LVAI Pro-14.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41414152c0f9171a62225ce56fd91d707aaa312a27eb3868cbeae1138e73cf5b": {
+      "description_zh": "为长期复用且关键的智能体、技能或参考契约指令运行带独立评审关口的编写流程，涵盖模板新建或大幅重构；一次性低风险文字直接编辑，单纯评审使用review-agent。",
+      "source": "Runs the GATED AUTHORING loop for load-bearing instruction text in this repo: creating a new agent from the template, or overhauling existing agents, skills, and reference contracts. Use when the text is reused and load-bearing, its defects are silent in production, and the author is an interested party — the loop forces an independent gate between authoring and applying. Do NOT use for one-off or low-stakes text — edit that directly. Do NOT use when nothing is being authored — reviewing existing text alone is review-agent.",
+      "source_sha256": "41414152c0f9171a62225ce56fd91d707aaa312a27eb3868cbeae1138e73cf5b",
+      "source_path": ".claude/skills/author-agent/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e10706311c58b4e04a6c0aeebc33701aa24c2e6f75e12395792152f36154cb0b": {
+      "description_zh": "准备完成分支的插件发布，更新版本、变更日志和过时文本，运行仓库检查，经独立评审后开PR；原说明由用户合并，再发布各市场，主分支HEAD用于市场安装。",
+      "source": "Releases this plugin. Prepares a finished branch with the version bump, the CHANGELOG entry and any text the change made stale; runs the repo's own checks; has one independent reviewer clear anything users receive; opens the pull request; and publishes to every marketplace target once the user has merged. Merging to main publishes, because the marketplace installs from main HEAD. Use when a branch is finished and ready to become a release. Do NOT use for work staying off main. Do NOT use to merge: every hand stops at the open pull request, and the user merges.",
+      "source_sha256": "e10706311c58b4e04a6c0aeebc33701aa24c2e6f75e12395792152f36154cb0b",
+      "source_path": ".claude/skills/release/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1131c810b1e7b73e3542bef987943fa4d540579414cd360149ec209e04775ed1": {
+      "description_zh": "在交付前评审智能体定义、路由说明及常驻技能文字，输出设计判断，适用于草稿、改写和frontmatter说明变更；同时编写修复并应用时使用author-agent流程。",
+      "source": "Use when agent-definition, routing-description, or always-resident skill text needs a design review before it ships and the deliverable is the verdict itself — a draft or a rewrite handed over for judgment, or any change to a frontmatter description. When authoring the fix and applying it are part of the same job, that is author-agent, which calls this review as its gate step.",
+      "source_sha256": "1131c810b1e7b73e3542bef987943fa4d540579414cd360149ec209e04775ed1",
+      "source_path": ".claude/skills/review-agent/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd4bf47e651299d557979a9735c505f2f0f1301947c0516964cab6f19fcc38dd": {
+      "description_zh": "以Advisor模式按判断类型分类工作，在既定权限边界内委派执行并验收返回结果，适用于会话级工作委派；单个委派任务直接派发。",
+      "source": "Runs a session as the Advisor: classifies work by judgment shape, delegates it to executor hands inside set authority boundaries, and accepts what comes back. Use when starting a session that will delegate work. Not for one delegated task on its own — dispatch that hand directly.",
+      "source_sha256": "bd4bf47e651299d557979a9735c505f2f0f1301947c0516964cab6f19fcc38dd",
+      "source_path": "skills/advisor-mode/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80b3d49695124d995a6be66fc162cc6c2fc061e29fb9a75c43f659128bdd5ad0": {
+      "description_zh": "按Markdown常驻时长与读者为智能体或人来设计篇幅结构，适用于AGENTS.md、README、技能、记忆索引、简报、规格、状态交接及决策日志；已有文本单纯评审无需此技能。",
+      "source": "Shapes a markdown artifact's length and structure by how long it stays loaded and who reads it, agent or person. Use when writing or restructuring an AGENTS.md or README, a skill description or body, a memory index, a brief, spec, or blueprint, a state or handover file, a decision ledger, or a dispatch's output format. Not for reviewing or rendering a verdict on text that already exists — do that directly, no skill.",
+      "source_sha256": "80b3d49695124d995a6be66fc162cc6c2fc061e29fb9a75c43f659128bdd5ad0",
+      "source_path": "skills/efficient-md/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d21af217cf59f54811a4f26a1a77e4c348f24b22ac8fef45de9c890a7b091979": {
+      "description_zh": "从迭代、纠正或探索性协作会话中提取可复用工作模式，开始时arm采集，结束时distill提炼；关注返工、近失误、方法创新与浪费，而非工作内容摘要或人员评价。",
+      "source": "Extracts reusable collaboration patterns from a working session. Invoke with \"arm\" at the START of any session likely to involve iteration, correction, or unfamiliar ground — capture then runs as you work. Invoke with \"distill\" at session end to mine. Use when a session produced — or is expected to produce — surprise: corrections, rework, near-misses, an invented procedure, wasted effort. Do NOT use as a session summarizer or changelog — answer that directly, or hand it to a summarizing skill if one is installed; this extracts the way of working, never the work's content. Do NOT use to evaluate people — feedback on a person is theirs to ask for directly; this mines the collaboration only.",
+      "source_sha256": "d21af217cf59f54811a4f26a1a77e4c348f24b22ac8fef45de9c890a7b091979",
+      "source_path": "skills/mine-session/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1b08111d154370c9bd505368ebe4eb945b62668a1d0a56d55e213a247204f5f": {
+      "description_zh": "让对用户的回复和问题更易理解，适用于用户认为难读、要求简单说明或需要选择选项时；仓库文档与供智能体读取的文件使用efficient-md。",
+      "source": "Governs how replies and questions in the conversation are worded for the user. Use whenever the user says a reply is cryptic, dense, or hard to read, asks what a question means, or asks to say it simply or in plain English. Also use before asking the user to choose between options. Not for files agents load or repo documents (briefs, specs, descriptions, README): that is efficient-md.",
+      "source_sha256": "e1b08111d154370c9bd505368ebe4eb945b62668a1d0a56d55e213a247204f5f",
+      "source_path": "skills/plain-english/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "36fe369ebf32e3e6b4b77464feda177f6963b7b9feb528d23b18824e8a06097f": {
+      "description_zh": "为单个完整功能运行产品工程流程，按PM、UX、后端和界面规划，经sdd-task-loop实施，再由QA对照产物验证并开PR；小调整、修复或单组件变更直接派执行者。",
+      "source": "Run the product-engineering pipeline for one feature — PM → UX → BE → UI planning, implementation via sdd-task-loop, then QA that verifies against the artifacts and opens the PR. Not for small tweaks, bug fixes, or single-component changes — dispatch an executor directly for those.",
+      "source_sha256": "36fe369ebf32e3e6b4b77464feda177f6963b7b9feb528d23b18824e8a06097f",
+      "source_path": "skills/product-engineering/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f86b8afb2bd31c1f6fa5a6c9202eb5739840ca12aeddd57cf2489390aa13df79": {
+      "description_zh": "与用户逐节评审一个已有技能或智能体文件，每节记录用户判断，生成重写草稿与判断日志；适用于指令膨胀、漂移、重复或行为异常，原说明不直接编辑目标文件。",
+      "source": "Reviews ONE existing skill or agent file section by section with the user, who closes every section with one verdict, producing a draft of the reworked file and a verdict ledger. Use when an instruction file has grown, drifted, repeated itself, or misbehaved and the user wants to decide section by section what stays. Not for shaping a file by how long it stays loaded — that is a separate formatting pass. Not for authoring a new file — write that directly. Never edits the target.",
+      "source_sha256": "f86b8afb2bd31c1f6fa5a6c9202eb5739840ca12aeddd57cf2489390aa13df79",
+      "source_path": "skills/section-by-section/SKILL.md",
+      "package_sha256": "f63b0d8a9552048c630362b0a8fc770d5b75d476fce72b5620306760b0f1141c",
+      "source_package": "maddog-3.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80ec9dae1d547b2f913e8b2e1953112560040a24f40c1118a9cde6fde7e77023": {
+      "description_zh": "通过MCP、CLI或API管理Maeve工作区内容、媒体与分析，用于工作区操作而非Maeve代码开发。",
+      "source": "Manage content, media, and analytics in a Maeve workspace through MCP, CLI, or API. Use for workspace operations, not Maeve code development.",
+      "source_sha256": "80ec9dae1d547b2f913e8b2e1953112560040a24f40c1118a9cde6fde7e77023",
+      "source_path": "skills/maeve-social-scheduler/SKILL.md",
+      "package_sha256": "c81780929cbc4d29d403bac19a0296530334aac8c40fa8c144834c577430ffee",
+      "source_package": "Maeve Social-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05432e62b8d15c34c0b7b41c0b5d9f11a97b29c6bdf931e04f638be299e53294": {
+      "description_zh": "为面试、客户通话、销售及其他会议设置MagicInterview实时辅助，关联简历、职位、客户简报和笔记，核对既有项目会话并返回实时链接；亦支持当天准备、上下文管理、辅导和调试日志调查。",
+      "source": "Set up MagicInterview live help for job interviews, client calls, sales conversations, and other meetings. Connect the right CV, job description, client brief, and notes; reconcile existing projects and conversations; return the exact live-conversation link. Also use for same-day meeting preparation, context management, coaching, and debug-log investigation.",
+      "source_sha256": "05432e62b8d15c34c0b7b41c0b5d9f11a97b29c6bdf931e04f638be299e53294",
+      "source_path": "skills/meeting-prep/SKILL.md",
+      "package_sha256": "b36d95d6393540bcfd8e8239a084bd134eabb4d6003927ce157bded275a5bb40",
+      "source_package": "MagicInterview-1.1.2-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32202ecb4a1d6e4d9ff4e56f261ae3312356ee1926bc312abfcf09de5988ec4b": {
+      "description_zh": "通过magicpath-ai CLI查找、预览、检查、安装、导出、创建和编辑UI组件及MagicPath技能，管理项目、画布、主题、团队和共享链接，支持指定版本忠实导出、本地UI适配及代码仓库导入。",
+      "source": "Use MagicPath through the magicpath-ai CLI to find, preview, inspect, install, export, create, and edit UI components and manage MagicPath skills. Trigger for MagicPath designs/components; personal or team projects; active canvases and selected components/images/revisions; themes/design systems; teams, members, ownership, attribution, installed-component audits, and share/view links. Use when exporting exact MagicPath components or revisions to local folders/apps; replacing, adapting, or translating local UI with 1:1 fidelity and explicit requested changes; installing React/TypeScript components with inspect/add; authoring responsive interactive canvas components with code start/submit; importing or recreating UI from local paths or GitHub/GitLab/Bitbucket repositories into MagicPath; or creating, retrieving, updating, importing, enabling, disabling, or deleting MagicPath skills. In hosts with an embedded browser, keep the project canvas open via share URLs for visual work.",
+      "source_sha256": "32202ecb4a1d6e4d9ff4e56f261ae3312356ee1926bc312abfcf09de5988ec4b",
+      "source_path": "skills/magicpath/SKILL.md",
+      "package_sha256": "75890dc04142af1f13c3869b9feb10f03d504164048529050ea006b899d724ee",
+      "source_package": "MagicPath-1.0.9-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c7680fa08d03ebc655a9256d8215a3ef0735eff5913db8b47bc323462d24048": {
+      "description_zh": "从概念端到端构建Magicweave游戏经济，包括货币、属性、游戏循环清单、排行榜和转盘；须连接名为magicweave的MCP服务器。",
+      "source": "Build a new game economy on Magicweave — currencies, stats, a game-loop manifest, leaderboards, or a spin wheel — from a concept, end to end. Use when the user wants to create, author, scaffold, or ship a new game or economy on Magicweave (the MCP server named \"magicweave\" must be connected).",
+      "source_sha256": "1c7680fa08d03ebc655a9256d8215a3ef0735eff5913db8b47bc323462d24048",
+      "source_path": "skills/build/SKILL.md",
+      "package_sha256": "919f45bd54274e35d00b32503ce8a3eff3c1ba6d74985dfae1de4f5559843b43",
+      "source_package": "magicweave-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "387fdd64f65e9a5aab3a6f07d3ab38ef3c01e3c56e9799a664fbdff42dc26df7": {
+      "description_zh": "在Magicweave后端定义编写、游戏循环连接及线上经济编辑前，查阅其硬规则与边界，覆盖API、MCP、货币、属性、清单、排行榜和转盘。",
+      "source": "The Magicweave hard rules and guardrails. Read before any Magicweave backend work — authoring definitions, wiring a game loop, or editing a live economy — to avoid the classic hallucinations. Use whenever a task touches the Magicweave API, MCP tools, currencies, stats, game manifests, leaderboards, or spin wheels.",
+      "source_sha256": "387fdd64f65e9a5aab3a6f07d3ab38ef3c01e3c56e9799a664fbdff42dc26df7",
+      "source_path": "skills/guardrails/SKILL.md",
+      "package_sha256": "919f45bd54274e35d00b32503ce8a3eff3c1ba6d74985dfae1de4f5559843b43",
+      "source_package": "magicweave-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae503d162f7862b99ddb8a42acc63f26266b5d44a530e8736906c69d7c7589fe": {
+      "description_zh": "编辑、调优或审计已有Magicweave游戏，修改或再平衡经济、排行榜及转盘，追踪定义引用，并支持迁移和审查。",
+      "source": "Safely edit, tune, or audit a live Magicweave game — change an economy, add or adjust a leaderboard, retune a spin wheel, or trace what references a definition. Use when the user wants to modify, migrate, rebalance, or review an existing Magicweave game rather than build a new one.",
+      "source_sha256": "ae503d162f7862b99ddb8a42acc63f26266b5d44a530e8736906c69d7c7589fe",
+      "source_path": "skills/maintain/SKILL.md",
+      "package_sha256": "919f45bd54274e35d00b32503ce8a3eff3c1ba6d74985dfae1de4f5559843b43",
+      "source_package": "magicweave-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
