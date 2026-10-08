@@ -73969,6 +73969,1086 @@
       "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
       "source_package": "SweetClaude-4.5.2-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd390855280bc5bb41426cf5626f138d77e72ef12d8b13b0ab3b68ae2508e75f": {
+      "description_zh": "展示文档语料库流水线的当前状态，包括各阶段文件数量、各步骤最近运行时间及建议的下一项操作。",
+      "source": "Show the current state of the document corpus pipeline — file counts in each stage, last-run timestamps per step, and recommended next action.",
+      "source_sha256": "dd390855280bc5bb41426cf5626f138d77e72ef12d8b13b0ab3b68ae2508e75f",
+      "source_path": "skills/corpus-status/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eeb4ab3996de55de2c1a5fefe2fa312f40c7586a721c1d5f5e320071f9ef4442": {
+      "description_zh": "将 corpus/raw/inbox/ 中的文件分类为原样保留、需要协调整理、丢弃或暂缓处理。",
+      "source": "Classify files in corpus/raw/inbox/ as keep-as-is, needs-reconciliation, discard, or defer.",
+      "source_sha256": "eeb4ab3996de55de2c1a5fefe2fa312f40c7586a721c1d5f5e320071f9ef4442",
+      "source_path": "skills/corpus-triage/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3781f9d3d4f8df62f44f4e56d96fb9b2808d9c5b522e7e5edc5b7b3ebbb0f78": {
+      "description_zh": "记录项目方向调整，分诊正在进行的工作，并更新项目方向。",
+      "source": "Course correction — document the pivot, triage in-flight work, and update project direction.",
+      "source_sha256": "e3781f9d3d4f8df62f44f4e56d96fb9b2808d9c5b522e7e5edc5b7b3ebbb0f78",
+      "source_path": "skills/course-correction/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa961c750d0c00eabc94f85cf8fab5c86ba417d5b5af1cb419944c03949273a2": {
+      "description_zh": "启动本地 Web 仪表板，展示路线图、发布、史诗任务、待办、依赖、Git 历史和技能活动。",
+      "source": "Launch a local web dashboard showing roadmap, releases, epics, backlog, dependencies, git history, and skill activity.",
+      "source_sha256": "aa961c750d0c00eabc94f85cf8fab5c86ba417d5b5af1cb419944c03949273a2",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53874be1ce378a4ef52d6caf11edc8eb333658142d7ec20834b609be24dd185c": {
+      "description_zh": "处理 SweetClaude 工作流中的 SHIP 交付阶段；原描述未进一步说明操作范围。",
+      "source": "SHIP phase skill.",
+      "source_sha256": "53874be1ce378a4ef52d6caf11edc8eb333658142d7ec20834b609be24dd185c",
+      "source_path": "skills/deploy-ship/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12ea1036fccff7f246be88776e9451444aa9d4d3936cb386587490f9c3020eb5": {
+      "description_zh": "设计 API 端点，包括路由、请求与响应结构、认证、分页、错误响应及版本策略。",
+      "source": "Design API endpoints: routes, request/response shapes, authentication, pagination, error responses, and versioning strategy.",
+      "source_sha256": "12ea1036fccff7f246be88776e9451444aa9d4d3936cb386587490f9c3020eb5",
+      "source_path": "skills/design-api-design/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0a1f8bb3eb8cf6495494b6ba44441a3b6d72602ea80fbf5e113144fb3bd54e0": {
+      "description_zh": "定义系统架构，包括组件、边界、通信方式、数据流及合规要求。",
+      "source": "Define system architecture — components, boundaries, communication patterns, data flow, and compliance requirements.",
+      "source_sha256": "c0a1f8bb3eb8cf6495494b6ba44441a3b6d72602ea80fbf5e113144fb3bd54e0",
+      "source_path": "skills/design-architecture/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8029102e41648eaf12d64f241e06f59a3ced6aefd6a748126a3cdd1e3160d8f3": {
+      "description_zh": "分析既有代码或规格变更的连带影响，追踪受影响的代码、测试、文档、API 和规格。",
+      "source": "Ripple-effect analysis for changes to EXISTING code or specs — trace what is affected across code, tests, docs, APIs, and specs.",
+      "source_sha256": "8029102e41648eaf12d64f241e06f59a3ced6aefd6a748126a3cdd1e3160d8f3",
+      "source_path": "skills/design-change-impact-analysis/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1692eee282dcd2980a5906571179eccd2ba527f5cf0aced8d0c1c6e8797e60c1": {
+      "description_zh": "设计数据模型，包括实体、关系、约束、索引及迁移策略。",
+      "source": "Design the data model: entities, relationships, constraints, indexes, and migration strategy.",
+      "source_sha256": "1692eee282dcd2980a5906571179eccd2ba527f5cf0aced8d0c1c6e8797e60c1",
+      "source_path": "skills/design-data-model/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e51bddfcda93247ea3200db5ec8aef31725e079afda0fbe8152290f890a28aac": {
+      "description_zh": "记录并跟踪设计与架构决策，保留上下文、候选方案、最终选择及理由。",
+      "source": "Record and track design and architecture decisions with context, options considered, decision made, and rationale.",
+      "source_sha256": "e51bddfcda93247ea3200db5ec8aef31725e079afda0fbe8152290f890a28aac",
+      "source_path": "skills/design-manage-decisions/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "249c6bc0f1a26211d37aaec6a38603ed46c4ef27fab2c18fbd40b458a0f88d48": {
+      "description_zh": "在实施前验证拟议的解决方案。",
+      "source": "Validate the proposed solution before implementation.",
+      "source_sha256": "249c6bc0f1a26211d37aaec6a38603ed46c4ef27fab2c18fbd40b458a0f88d48",
+      "source_path": "skills/design-solutioning-gate/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee294f161b3f883a51c54d12b10f7cb80cf125a85d30252c73f5a7d83790d5b6": {
+      "description_zh": "编写技术规格，明确开发者开始编码前需要的各项决策。",
+      "source": "Technical specification — every decision a developer needs before writing the first line of code.",
+      "source_sha256": "ee294f161b3f883a51c54d12b10f7cb80cf125a85d30252c73f5a7d83790d5b6",
+      "source_path": "skills/design-tech-spec/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c071e2108bac1a02c76416609a4c9a446145684622936c1652cacafd81e63931": {
+      "description_zh": "将用户故事转换为 UX／UI 流程，描述用户在界面中的逐步操作路径。",
+      "source": "Convert user stories into UX/UI flows — step-by-step paths through the interface.",
+      "source_sha256": "c071e2108bac1a02c76416609a4c9a446145684622936c1652cacafd81e63931",
+      "source_path": "skills/design-user-flows/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea4f620381217f894ce971b7f7a93b799227512f4d90e163c7f622ed8e3e45a2": {
+      "description_zh": "组织虚拟 UX 审查会话。",
+      "source": "Virtual UX review session.",
+      "source_sha256": "ea4f620381217f894ce971b7f7a93b799227512f4d90e163c7f622ed8e3e45a2",
+      "source_path": "skills/design-ux-review/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14634422b4c3f61c5763d563b40807509fdb200e69a00dacdf85288b5900fe72": {
+      "description_zh": "定义产品的视觉与交互设计，包括外观、体验、布局和风格。",
+      "source": "Define the visual and interaction design of the product — look, feel, layout, and style.",
+      "source_sha256": "14634422b4c3f61c5763d563b40807509fdb200e69a00dacdf85288b5900fe72",
+      "source_path": "skills/design-ux/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "edc9f213b427510f932a5eeec9e43ac26a8aaef44217deb968c79e5ccbb3ddb4": {
+      "description_zh": "根据用户流程生成 HTML／CSS 线框图。",
+      "source": "Generate HTML/CSS wireframes from user flows.",
+      "source_sha256": "edc9f213b427510f932a5eeec9e43ac26a8aaef44217deb968c79e5ccbb3ddb4",
+      "source_path": "skills/design-wireframes/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90ce18716a0455ae68c67ee107c1f814d03989b58081feeb4ff91f03782bcbad": {
+      "description_zh": "诊断、修复并回滚 SweetClaude 问题，检查状态完整性、钩子、存储、迁移、配置、文件、入驻和环境八类内容。修复可安全处理的问题，也可恢复之前 doctor 运行改动的文件。",
+      "source": "Diagnostic scan, repair, and rollback. Checks 8 categories (state integrity, hooks, storage, migration, config, files, onboarding, environment), fixes what it safely can, and can restore (roll back / undo / revert) the files a previous doctor run changed.",
+      "source_sha256": "90ce18716a0455ae68c67ee107c1f814d03989b58081feeb4ff91f03782bcbad",
+      "source_path": "skills/doctor/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "893dd19b04ab15fcf5fd5a0f81baecedef750ccfb1419229a6537a1642e3564b": {
+      "description_zh": "管理完整文档语料库流水线，包括汇集原始文件、分诊、整理为规范文档、定稿、设置 RAG 语义搜索及重建索引。",
+      "source": "Manage the full document corpus pipeline — consolidate raw files, triage, reconcile into canonical documents, promote, set up semantic search (RAG), and reindex.",
+      "source_sha256": "893dd19b04ab15fcf5fd5a0f81baecedef750ccfb1419229a6537a1642e3564b",
+      "source_path": "skills/document-corpus/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1cb192e418459443d315e666f5daaeed8b7d3ed5e03e0c8a35b99de960fd450": {
+      "description_zh": "支持学术论文从第一性原理分析到提交的编写流程。",
+      "source": "Academic paper development — from first principles through submission.",
+      "source_sha256": "d1cb192e418459443d315e666f5daaeed8b7d3ed5e03e0c8a35b99de960fd450",
+      "source_path": "skills/documents-academic-research/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f17b8c51dfd3063d64e8edf88730147ff638e819055b3bcdc48a29b9c8170f1": {
+      "description_zh": "建立和查询连接战略主张、论证要点、目标及支持或反对证据的知识图谱。",
+      "source": "Build and query a knowledge graph connecting strategic claims, proof points, objectives, and supporting/opposing evidence.",
+      "source_sha256": "6f17b8c51dfd3063d64e8edf88730147ff638e819055b3bcdc48a29b9c8170f1",
+      "source_path": "skills/documents-narrative-arc/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ac0f503ae1f98485b4cf82c17638bc33d70298fcff741812358544eb221ad35": {
+      "description_zh": "在实现改变行为时更新相关文档。",
+      "source": "Update documentation when implementation changes behavior.",
+      "source_sha256": "5ac0f503ae1f98485b4cf82c17638bc33d70298fcff741812358544eb221ad35",
+      "source_path": "skills/documents-update-docs/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d89cc4f7d64157782892cfae25e545133d941ce99d2d8f70057dc82dcd23a289": {
+      "description_zh": "为史诗任务生成完整且有顺序的用户故事清单。",
+      "source": "Produce a complete, ordered story list for an epic.",
+      "source_sha256": "d89cc4f7d64157782892cfae25e545133d941ce99d2d8f70057dc82dcd23a289",
+      "source_path": "skills/epic-design/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "413eee2c21cbfbc902af38cf1e73f3d82960b292c5efb34dc5eb72b023ea8af2": {
+      "description_zh": "管理史诗任务和目标，支持新增、审查、关联、状态更新及完成标记；原说明要求始终加载。",
+      "source": "Manage epics and objectives — add, review, link, status, complete. Always loaded.",
+      "source_sha256": "413eee2c21cbfbc902af38cf1e73f3d82960b292c5efb34dc5eb72b023ea8af2",
+      "source_path": "skills/epics/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0dc4cd8b1015dfba2a36b4ba1a6e5ec3c6e73b0f5c01463d99983bb809de087": {
+      "description_zh": "将本地仓库部署到已安装位置，并重建项目缓存。",
+      "source": "Deploy local repo to installed locations and rebuild the project cache.",
+      "source_sha256": "b0dc4cd8b1015dfba2a36b4ba1a6e5ec3c6e73b0f5c01463d99983bb809de087",
+      "source_path": "skills/feature-setup/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e0878ece27a643e29c430ab984e29a2174d27b11435dce9ddbbf3406d8283b7": {
+      "description_zh": "为工作查找并启动合适的技能。",
+      "source": "Find and start the right skill for any work.",
+      "source_sha256": "6e0878ece27a643e29c430ab984e29a2174d27b11435dce9ddbbf3406d8283b7",
+      "source_path": "skills/find-skill/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "284521e45900745b7d20445358345e81a3b125f1f72516f9a8c669bd7f90720f": {
+      "description_zh": "重定向至 sweetclaude:doctor；原说明称该技能已并入 doctor 诊断系统。",
+      "source": "Redirects to sweetclaude:doctor. This skill has been absorbed into the doctor diagnostic system.",
+      "source_sha256": "284521e45900745b7d20445358345e81a3b125f1f72516f9a8c669bd7f90720f",
+      "source_path": "skills/fix-sweetclaude/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6452614d1c9203dec4173b852508eef00f28956ff9a96a3dfba6682db83856c": {
+      "description_zh": "评估下一项应该处理的工作并提出建议。",
+      "source": "Assess what to work on next and propose it.",
+      "source_sha256": "c6452614d1c9203dec4173b852508eef00f28956ff9a96a3dfba6682db83856c",
+      "source_path": "skills/go/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a5e6cdfe27224c1d6d2961b2a8a508f72ef73096f888cfd70c7495bf7b5b03e": {
+      "description_zh": "在当前会话中关闭 Protocol Guardian。",
+      "source": "Disable the Protocol Guardian for the current session",
+      "source_sha256": "0a5e6cdfe27224c1d6d2961b2a8a508f72ef73096f888cfd70c7495bf7b5b03e",
+      "source_path": "skills/guardian-off/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22c8218d92f2854f286b89ee52cf8361cbb6806b1acac88d3b8bc705b3bd2645": {
+      "description_zh": "在当前会话中启用 Protocol Guardian，约束技能调用、测试驱动开发纪律及产物保存。",
+      "source": "Enable the Protocol Guardian — enforces skill invocations, TDD discipline, and artifact saves for the current session",
+      "source_sha256": "22c8218d92f2854f286b89ee52cf8361cbb6806b1acac88d3b8bc705b3bd2645",
+      "source_path": "skills/guardian-on/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef294eb0c8a68b96bb108d4cc3749afb773aa4e6ac598d51ba22499af8569c3b": {
+      "description_zh": "提供 SweetClaude 使用帮助和技能发现入口。",
+      "source": "SweetClaude help and skill discovery.",
+      "source_sha256": "ef294eb0c8a68b96bb108d4cc3749afb773aa4e6ac598d51ba22499af8569c3b",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1603698c77240148e370cfc00f5836510f3e6cd2a9a7647b7079e635b2c5ecb7": {
+      "description_zh": "休眠或恢复由 SweetClaude 管理的项目。",
+      "source": "Use when hibernating or unhibernating a project managed by SweetClaude.",
+      "source_sha256": "1603698c77240148e370cfc00f5836510f3e6cd2a9a7647b7079e635b2c5ecb7",
+      "source_path": "skills/hibernate/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6b19a44b86477259da53188fc742b508bbf47c3acb33084ae51fa4c51e738c0": {
+      "description_zh": "重定向至 sweetclaude:doctor；原说明称钩子诊断已纳入 doctor 系统。",
+      "source": "Redirects to sweetclaude:doctor. Hook diagnostics are now part of the doctor system.",
+      "source_sha256": "d6b19a44b86477259da53188fc742b508bbf47c3acb33084ae51fa4c51e738c0",
+      "source_path": "skills/hook-repair/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aadd045d5e669e135901c8e553bd20c760a6c24e7468437a9f08e3d50c554818": {
+      "description_zh": "为生产问题提供最小热修复，采用加速审查并要求事后复盘。",
+      "source": "Hotfix — minimal patch for a production issue with expedited review and mandatory post-mortem.",
+      "source_sha256": "aadd045d5e669e135901c8e553bd20c760a6c24e7468437a9f08e3d50c554818",
+      "source_path": "skills/hotfix/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a07317b2b97405f555e6f169c1977e7b3c78d05fa9d4d37eb007a15456f4184": {
+      "description_zh": "作为项目接入 SweetClaude 的入口，读取当前状态并交由负责相关工作的技能处理。",
+      "source": "Entry point for onboarding a project to SweetClaude — reads current state and hands off to the skill that owns the work.",
+      "source_sha256": "7a07317b2b97405f555e6f169c1977e7b3c78d05fa9d4d37eb007a15456f4184",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "701a4184265446a0d702fc90698a8e0f18009b75e77b002ff1c1de8c5822b915": {
+      "description_zh": "作为内部子代理执行 John Wick 工作流的阶段检查。",
+      "source": "Internal John Wick phase check-in subagent.",
+      "source_sha256": "701a4184265446a0d702fc90698a8e0f18009b75e77b002ff1c1de8c5822b915",
+      "source_path": "skills/john-wick-checkin/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca4bf0b93cfb3cd61f1a77e258b88b1938f18a76bff4e9fb6a9cd5cb4719b738": {
+      "description_zh": "提供自主、可恢复、跨多个会话的软件开发生命周期流水线。",
+      "source": "Fully autonomous, resumable, multi-session SDLC pipeline.",
+      "source_sha256": "ca4bf0b93cfb3cd61f1a77e258b88b1938f18a76bff4e9fb6a9cd5cb4719b738",
+      "source_path": "skills/john-wick/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1cee5cb63b805d0c8b7be1e9e0e34e3eefe4b5a82e306cd2b3bcd35249bb8de0": {
+      "description_zh": "提供内部大型用户故事工作流，限定执行范围并以证据作为推进门槛。",
+      "source": "Internal bounded, evidence-gated large-story workflow.",
+      "source_sha256": "1cee5cb63b805d0c8b7be1e9e0e34e3eefe4b5a82e306cd2b3bcd35249bb8de0",
+      "source_path": "skills/large-story/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d2bcd8cd72d1e113514069e9d6fac00c33cb31b82fa6871212070800e498d03": {
+      "description_zh": "作为 SweetClaude 主技能，提供阶段路由、交互模型及会话入口。",
+      "source": "SweetClaude master skill — phase router, interaction model, and session entry point.",
+      "source_sha256": "4d2bcd8cd72d1e113514069e9d6fac00c33cb31b82fa6871212070800e498d03",
+      "source_path": "skills/master/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "073ee96cba5812ab33d58c9891cb40639364d8c3dc6e854006090eff36da9ad8": {
+      "description_zh": "重定向至 sweetclaude:doctor；原说明称文件诊断已纳入 doctor 系统。",
+      "source": "Redirects to sweetclaude:doctor. File diagnostics are now part of the doctor system.",
+      "source_sha256": "073ee96cba5812ab33d58c9891cb40639364d8c3dc6e854006090eff36da9ad8",
+      "source_path": "skills/migrate-diagnose/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01d1bff31f4745e5e9b6076424206218065bf52fb73561dc3a6dfea314bfb60b": {
+      "description_zh": "将旧工作项迁移至统一的 ISSUE-NNN 格式，支持平铺 BL-NNN 结构及 stories/、bugs/、debt/ 分类的旧待办结构。",
+      "source": "Migrate legacy work items to unified ISSUE-NNN format. Supports flat BL-NNN layouts and typed legacy backlog layouts (stories/, bugs/, debt/).",
+      "source_sha256": "01d1bff31f4745e5e9b6076424206218065bf52fb73561dc3a6dfea314bfb60b",
+      "source_path": "skills/migrate/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "254a9a0f5cb1de053ee08d0d6a98861c65394c9d803f0885950d32899a036506": {
+      "description_zh": "为指定会议准备材料。",
+      "source": "Prepare for a specific meeting.",
+      "source_sha256": "254a9a0f5cb1de053ee08d0d6a98861c65394c9d803f0885950d32899a036506",
+      "source_path": "skills/misc-meeting-prep/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "009029f9ead4e65c03d431050154f37c59734b6e61fb69d4e3e9a473388983d2": {
+      "description_zh": "将现有生产组件提取到原型沙箱，作为设计迭代中准确的当前状态基线。",
+      "source": "Pull an existing production component into the mockup sandbox as an accurate 'Current' baseline for design iteration.",
+      "source_sha256": "009029f9ead4e65c03d431050154f37c59734b6e61fb69d4e3e9a473388983d2",
+      "source_path": "skills/mockup-extract/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6b0049f67cfcd649eefb13625ecea0093a287f83f192f889adf3961f995955e": {
+      "description_zh": "将经过批准的原型从沙箱移入主应用。",
+      "source": "Move an approved mockup from the sandbox into the main application.",
+      "source_sha256": "f6b0049f67cfcd649eefb13625ecea0093a287f83f192f889adf3961f995955e",
+      "source_path": "skills/mockup-graduate/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7573ef7883e2c8732e932ac07f14dfa0c86da022a9877e786646aa142f3f1ca": {
+      "description_zh": "在隔离的 Vite、React、Tailwind 和 shadcn/ui 沙箱中创建并迭代交互式 UI 原型。",
+      "source": "Create and iterate on interactive UI mockups in an isolated Vite + React + Tailwind + shadcn/ui sandbox.",
+      "source_sha256": "f7573ef7883e2c8732e932ac07f14dfa0c86da022a9877e786646aa142f3f1ca",
+      "source_path": "skills/mockup-sandbox/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ce7e7929b0c5d6a3da78bbd448cfbb42852d2e626e560d39918017e11ac3fd2": {
+      "description_zh": "逐步引导用户走完工作流水线。",
+      "source": "Walk through the pipeline step by step.",
+      "source_sha256": "0ce7e7929b0c5d6a3da78bbd448cfbb42852d2e626e560d39918017e11ac3fd2",
+      "source_path": "skills/next-steps/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "810d62013c8b5704b5c93a09727122db549c70f91d9d4bdf3e171c3056638271": {
+      "description_zh": "为当前项目停用 SweetClaude。",
+      "source": "Deactivate SweetClaude for the current project.",
+      "source_sha256": "810d62013c8b5704b5c93a09727122db549c70f91d9d4bdf3e171c3056638271",
+      "source_path": "skills/off/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3f31fa611037b877bfa607093b44973526e6db82bd6a5582d3b60859f43b14f": {
+      "description_zh": "通过子代理执行已跟踪的工作流步骤，提供编排器主循环。",
+      "source": "Orchestrator main loop — executes tracked workflow steps via subagents.",
+      "source_sha256": "e3f31fa611037b877bfa607093b44973526e6db82bd6a5582d3b60859f43b14f",
+      "source_path": "skills/orchestrator/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "656c61b80c7b97e01d576648c4172991238c2e609dfd53e9676f3310dde14eef": {
+      "description_zh": "编写事后复盘，整理时间线、根因、促成因素和后续行动项。",
+      "source": "Post-mortem authoring — timeline, root cause analysis, contributing factors, and action items.",
+      "source_sha256": "656c61b80c7b97e01d576648c4172991238c2e609dfd53e9676f3310dde14eef",
+      "source_path": "skills/postmortem/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64fdb6fba43ad766b1640dd2211da728f077d873404301453fc30f2c7780ad7c": {
+      "description_zh": "编写产品简报，说明要构建什么、面向谁、为什么有价值，以及成功的衡量标准。",
+      "source": "Write a product brief — a strategic document describing what is being built, for whom, why it matters, and what success looks like.",
+      "source_sha256": "64fdb6fba43ad766b1640dd2211da728f077d873404301453fc30f2c7780ad7c",
+      "source_path": "skills/product-brief/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23df542a2bb8efa0605c666c2fdd255a2df451994932e6fea76efcb9a2035412": {
+      "description_zh": "按三种深度进行竞争分析，从快速企业概览到逐项功能比较。",
+      "source": "Competitive analysis at three depth levels — from a quick company survey to feature-by-feature deep analysis.",
+      "source_sha256": "23df542a2bb8efa0605c666c2fdd255a2df451994932e6fea76efcb9a2035412",
+      "source_path": "skills/product-competition/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "060a9513f2934a70c6f68fff667ba5190ba121a6a91c8176e28bf57062db933b": {
+      "description_zh": "按项目类型所需深度明确产品内容、目标用户及构建理由。",
+      "source": "Establish what is being built, for whom, and why — at the depth appropriate for the project type.",
+      "source_sha256": "060a9513f2934a70c6f68fff667ba5190ba121a6a91c8176e28bf57062db933b",
+      "source_path": "skills/product-discovery/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47a0e3e599d829d8c79a44c85dd7bb8618d4c4c992c1b112cef983abc766406f": {
+      "description_zh": "跟踪工作项进入或退出项目范围时产生的范围变化。",
+      "source": "Track scope changes when items move between in-scope and out-of-scope.",
+      "source_sha256": "47a0e3e599d829d8c79a44c85dd7bb8618d4c4c992c1b112cef983abc766406f",
+      "source_path": "skills/product-manage-scope/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "764474c2f80f229e01b347c1c45ebd44f655d8dfd5d23e5601e2409fe14ab710": {
+      "description_zh": "面向不同受众编写外部沟通信息，说明产品、问题及价值。",
+      "source": "Craft external messaging — how you describe the product, the problem, and the value to different audiences.",
+      "source_sha256": "764474c2f80f229e01b347c1c45ebd44f655d8dfd5d23e5601e2409fe14ab710",
+      "source_path": "skills/product-market-messaging/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b92872ba3639e46e6065d049d509b8e6ea0ee6cbc2b79daf69b37c17f3ab837": {
+      "description_zh": "引导开展里程碑规划工作坊。",
+      "source": "Guided milestone planning workshop.",
+      "source_sha256": "6b92872ba3639e46e6065d049d509b8e6ea0ee6cbc2b79daf69b37c17f3ab837",
+      "source_path": "skills/product-milestone-planning/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4476d0e5ff997ea075cb1d2b9b3579dc28ae0f512104eeb195db083867d8c924": {
+      "description_zh": "管理跨越战略和产品工作的路线图目标与里程碑。",
+      "source": "Manage roadmap targets (milestones) that span strategy and product work.",
+      "source_sha256": "4476d0e5ff997ea075cb1d2b9b3579dc28ae0f512104eeb195db083867d8c924",
+      "source_path": "skills/product-milestones/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07f67784792105b55ed5853e2ddd7e43d205b9326217cf02f48764731738339c": {
+      "description_zh": "管理暂缓处理的工作。",
+      "source": "Manage deferred work.",
+      "source_sha256": "07f67784792105b55ed5853e2ddd7e43d205b9326217cf02f48764731738339c",
+      "source_path": "skills/product-parking-lot/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79f113cd1634584b86ad65cf08463681c2b7e09b6f3cecd9908763c8c598bc59": {
+      "description_zh": "明确产品定位，包括目标用户、所属类别、差异化及其价值。",
+      "source": "Define how the product is positioned — for whom, what category, what differentiates it, and why that matters.",
+      "source_sha256": "79f113cd1634584b86ad65cf08463681c2b7e09b6f3cecd9908763c8c598bc59",
+      "source_path": "skills/product-positioning-statement/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c501c0e043984621d69e83b95ff480f83770f30137380efa65c8bd1543eb4b8": {
+      "description_zh": "编写产品需求文档 PRD，涵盖功能需求、非功能需求、史诗任务和成功指标。",
+      "source": "Write a Product Requirements Document — functional requirements, non-functional requirements, epics, and success metrics.",
+      "source_sha256": "4c501c0e043984621d69e83b95ff480f83770f30137380efa65c8bd1543eb4b8",
+      "source_path": "skills/product-prd/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b814c1da4cc575b75a9850e07d013e414a99f496e41f3f7fca6ebaa4273dec4d": {
+      "description_zh": "调查已有商业及开源解决方案，让用户在开始构建前理解将进入的产品领域。",
+      "source": "Survey the solution field — what exists commercially and open source — so the user understands what they're entering before building.",
+      "source_sha256": "b814c1da4cc575b75a9850e07d013e414a99f496e41f3f7fca6ebaa4273dec4d",
+      "source_path": "skills/product-research/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d5900659799bfbd390c0d8ccee2fb02f4fd3c24c1e2ad3e5c42b0a7bb9ece0c": {
+      "description_zh": "对路线图工作项进行 RICE 评分和优先级排序分析。",
+      "source": "RICE scoring and stack-rank analysis for roadmap items.",
+      "source_sha256": "8d5900659799bfbd390c0d8ccee2fb02f4fd3c24c1e2ad3e5c42b0a7bb9ece0c",
+      "source_path": "skills/product-roadmap-analysis/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "068fa2a95cedbd5df9e68df289f7516c5ed2ba578909ea807d3239ffdf3a4ed5": {
+      "description_zh": "管理产品路线图，包括功能交付目标、发布及优先级清单。",
+      "source": "Manage the product roadmap — feature delivery targets, releases, and priority stack.",
+      "source_sha256": "068fa2a95cedbd5df9e68df289f7516c5ed2ba578909ea807d3239ffdf3a4ed5",
+      "source_path": "skills/product-roadmap/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6cf908e8a0c6ebc9bd8316c222f38d2cbaaf60a81839667a45fc73384b21a291": {
+      "description_zh": "从待办清单选择用户故事、估算范围，并形成迭代承诺以规划 sprint。",
+      "source": "Plan a sprint by selecting stories from the backlog, estimating scope, and producing a sprint commitment.",
+      "source_sha256": "6cf908e8a0c6ebc9bd8316c222f38d2cbaaf60a81839667a45fc73384b21a291",
+      "source_path": "skills/product-sprint-plan/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2400e36d40c077dccdb3e875c02962aa4b308be3afa8708f9f203fab1b38737f": {
+      "description_zh": "定义和维护共享的领域术语表。",
+      "source": "Define and maintain a shared domain glossary.",
+      "source_sha256": "2400e36d40c077dccdb3e875c02962aa4b308be3afa8708f9f203fab1b38737f",
+      "source_path": "skills/product-terminology/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc0e2632862afaf69a125742bb4f5776e115c0e556263e47848f5814588bfc64": {
+      "description_zh": "使用人物画像原型作为并行子代理受访者，开展模拟用户小组研究。",
+      "source": "Synthetic panel research using persona archetypes as parallel subagent respondents.",
+      "source_sha256": "cc0e2632862afaf69a125742bb4f5776e115c0e556263e47848f5814588bfc64",
+      "source_path": "skills/product-user-focus-group/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e89b5dab4c7a4d4ccf919d592fd2f74e391eb7a91e4fbcd95f8e0cdc5d74c4b": {
+      "description_zh": "为明确范围编写 Gherkin 或通用格式的用户故事，可覆盖全部画像、SLC 或 MVP。",
+      "source": "Write user stories for a defined scope — Gherkin or generic format, scoped to all personas, SLC, or MVP.",
+      "source_sha256": "6e89b5dab4c7a4d4ccf919d592fd2f74e391eb7a91e4fbcd95f8e0cdc5d74c4b",
+      "source_path": "skills/product-user-stories/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b55eee86187ebd776b6675777163962968cdfb653ccb9df854dde8049abce63": {
+      "description_zh": "将用户故事转换为 Gherkin .feature 文件。",
+      "source": "Transition user stories into Gherkin .feature files.",
+      "source_sha256": "9b55eee86187ebd776b6675777163962968cdfb653ccb9df854dde8049abce63",
+      "source_path": "skills/product-user-tdd-tests/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0615dcf552f9dd98855d092dc33c309034eed191dfd1737bb6b554aa6412a7d2": {
+      "description_zh": "访谈用户并推荐 SweetClaude 项目模式，包括 Flow、Kanban、Shape Up 或 Agile。",
+      "source": "Interview user and recommend a SweetClaude project mode (Flow, Kanban, Shape Up, or Agile)",
+      "source_sha256": "0615dcf552f9dd98855d092dc33c309034eed191dfd1737bb6b554aa6412a7d2",
+      "source_path": "skills/project-assess-shape/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "197812af9f14b85e9faa9d9462610eba50a7ca425cb08fef72c39dbf25c415fc": {
+      "description_zh": "组织结构化的待办梳理会话。",
+      "source": "Structured backlog grooming session.",
+      "source_sha256": "197812af9f14b85e9faa9d9462610eba50a7ca425cb08fef72c39dbf25c415fc",
+      "source_path": "skills/project-backlog-triage/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba8a9343d70f52f28f14c886dd50b5adb91c55a1ba1581db244f3e25d8e090da": {
+      "description_zh": "查看和管理尚未排期的问题待办清单。",
+      "source": "View and manage the unscheduled issue backlog.",
+      "source_sha256": "ba8a9343d70f52f28f14c886dd50b5adb91c55a1ba1581db244f3e25d8e090da",
+      "source_path": "skills/project-backlog/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9b4b8ef9221db448815394023d9ebad63f818a88748f1d8dca53de846d02fa6": {
+      "description_zh": "已弃用，原说明要求改用 /sweetclaude:epics，并自动重定向。",
+      "source": "DEPRECATED — use /sweetclaude:epics instead. Redirects automatically.",
+      "source_sha256": "b9b4b8ef9221db448815394023d9ebad63f818a88748f1d8dca53de846d02fa6",
+      "source_path": "skills/project-epics/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69e410e42fee842944993fa22d59496c501e7bdf8deae6de5db786877d726c58": {
+      "description_zh": "将未关闭的 GitHub Issues 导入本地问题库，保存为 v4 用户故事文件。",
+      "source": "Import open GitHub Issues into the local issue store as v4 story files.",
+      "source_sha256": "69e410e42fee842944993fa22d59496c501e7bdf8deae6de5db786877d726c58",
+      "source_path": "skills/project-gh-import-issues/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48a9eaef63defe7f7f33df31de4b682c8eb5cb432e4335324f2ef4e59a6e7f75": {
+      "description_zh": "双向同步本地问题文件与 GitHub Issues 的状态。",
+      "source": "Bidirectional status sync between local issue files and GitHub Issues.",
+      "source_sha256": "48a9eaef63defe7f7f33df31de4b682c8eb5cb432e4335324f2ef4e59a6e7f75",
+      "source_path": "skills/project-gh-sync-issues/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4423d62668e15c29c40f590604fa38a9046275afbd44036df227da90d2ca5989": {
+      "description_zh": "管理项目业务目标，以是否达成的二元状态衡量。",
+      "source": "Manage project goals — binary business goals.",
+      "source_sha256": "4423d62668e15c29c40f590604fa38a9046275afbd44036df227da90d2ca5989",
+      "source_path": "skills/project-goals/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f165c45055aded28eb20ae0a227469e778aaba225fda89b003a890059b87c916": {
+      "description_zh": "管理项目问题，支持列举、查看、创建、更新及关闭。",
+      "source": "Manage project issues — list, view, create, update, and close.",
+      "source_sha256": "f165c45055aded28eb20ae0a227469e778aaba225fda89b003a890059b87c916",
+      "source_path": "skills/project-issues/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6429a1efab1e0568b907e0cd131cd3c7d9162309d6b17a715ee1ca4b70080743": {
+      "description_zh": "评估并切换项目工作模式。",
+      "source": "Assess and shift project modes.",
+      "source_sha256": "6429a1efab1e0568b907e0cd131cd3c7d9162309d6b17a715ee1ca4b70080743",
+      "source_path": "skills/project-mode/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74bdbbcf3d5e60752ddb8b7ed598b056b64aed93c80a182b2e882c98f37c9db4": {
+      "description_zh": "定义和维护项目范围。",
+      "source": "Define and maintain project scope.",
+      "source_sha256": "74bdbbcf3d5e60752ddb8b7ed598b056b64aed93c80a182b2e882c98f37c9db4",
+      "source_path": "skills/project-scope/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b8123cb6595786444f263927f3795bce4947db46db3d6f90eaccce48be00e79": {
+      "description_zh": "规划、启动和关闭 sprint，并提供看板视图。",
+      "source": "Sprint planning, activation, board view, and close.",
+      "source_sha256": "1b8123cb6595786444f263927f3795bce4947db46db3d6f90eaccce48be00e79",
+      "source_path": "skills/project-sprints/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a3cfaf10dca08280d395f27437c74939fec385098d8d415da98bdc682e56baa": {
+      "description_zh": "管理主题标签，作为用户故事可选的领域分组标记。",
+      "source": "Manage themes — optional domain-grouping labels on stories.",
+      "source_sha256": "3a3cfaf10dca08280d395f27437c74939fec385098d8d415da98bdc682e56baa",
+      "source_path": "skills/project-themes/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c7b4021af342fca264a8db8e71e0866c373db4f67dd148268ecf556e2d57482": {
+      "description_zh": "删除当前项目中的全部 SweetClaude 产物。",
+      "source": "Delete all SweetClaude artifacts from the current project.",
+      "source_sha256": "6c7b4021af342fca264a8db8e71e0866c373db4f67dd148268ecf556e2d57482",
+      "source_path": "skills/purge/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3cc79c38a7029b5fe64091fa2a84152cc7af62de17b6617a055c9b810bdd9e30": {
+      "description_zh": "生成简洁的当前进度回顾，包括阶段、活动工作项、最近三次提交、检查点状态及未解决的标记。",
+      "source": "Produce a concise 'where we are' summary: current phase, active work item, last 3 commits, checkpoint state, and any open flags.",
+      "source_sha256": "3cc79c38a7029b5fe64091fa2a84152cc7af62de17b6617a055c9b810bdd9e30",
+      "source_path": "skills/recap/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e791ef71e285e04b4c38d347d908942164d36afbf89541708ddbf29d4a8be660": {
+      "description_zh": "恢复或解除 SweetClaude 项目在更新、迁移、doctor 诊断或修复后遗留的异常状态。",
+      "source": "Recover or unblock SweetClaude projects left in bad update, migration, doctor, or repair states.",
+      "source_sha256": "e791ef71e285e04b4c38d347d908942164d36afbf89541708ddbf29d4a8be660",
+      "source_path": "skills/recover/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cfa1b0a192f6e799e4fda1ae2dd24be2aa0e8283f7219919c865e9c207ea7f48": {
+      "description_zh": "在 .sweetclaude/failure/ 中写入一份结构化失败报告和根因分析；原技能仅在用户明确要求记录失败、错误或事件时调用，不自动执行。",
+      "source": "Write one structured failure report and root cause analysis to .sweetclaude/failure/. Invoke ONLY when the user explicitly asks to record/report a failure, mistake, or incident. Never auto-invoke.",
+      "source_sha256": "cfa1b0a192f6e799e4fda1ae2dd24be2aa0e8283f7219919c865e9c207ea7f48",
+      "source_path": "skills/report-failure/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9b10836cdf7508881c92146124a8735fceebb196a1c54818bb71f13887fd42f": {
+      "description_zh": "审查并维护改进事项登记表。",
+      "source": "Review and maintain the improvement register.",
+      "source_sha256": "d9b10836cdf7508881c92146124a8735fceebb196a1c54818bb71f13887fd42f",
+      "source_path": "skills/retro/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d2b2d9fb686a0d765a73938a4621fecdfaaa49e43396af2d5e65c2be0e09c11": {
+      "description_zh": "回滚或撤销部署，识别原因、执行回退并确认恢复。",
+      "source": "Roll back or revert a deployment — identify the cause, execute the rollback, confirm recovery.",
+      "source_sha256": "5d2b2d9fb686a0d765a73938a4621fecdfaaa49e43396af2d5e65c2be0e09c11",
+      "source_path": "skills/rollback-revert/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31853276c1985ee9234093a1ddd74962ca7a43885e52c7cf4fde5af2d7967931": {
+      "description_zh": "实施安全漏洞修复，要求安全审查并跟踪披露。",
+      "source": "Security patch — vulnerability fix with mandatory security review and disclosure tracking.",
+      "source_sha256": "31853276c1985ee9234093a1ddd74962ca7a43885e52c7cf4fde5af2d7967931",
+      "source_path": "skills/security-patch/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a1b18ccba775c98e00aca6faa768174837f1ca0193af7be2befa3c7a4078272": {
+      "description_zh": "将 Claude.ai 会话导出为完整、可携带的资料包。",
+      "source": "Export a Claude.ai session as a complete, portable package.",
+      "source_sha256": "5a1b18ccba775c98e00aca6faa768174837f1ca0193af7be2befa3c7a4078272",
+      "source_path": "skills/session-export/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9f4b4ce120dbb3445f16d55f2640717afd2e560d75d6484d3d6fc3df4626065": {
+      "description_zh": "提供统一的 SweetClaude 入门设置流程。",
+      "source": "Consolidated onboarding skill.",
+      "source_sha256": "e9f4b4ce120dbb3445f16d55f2640717afd2e560d75d6484d3d6fc3df4626065",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9a7e223fcd9e00bb50d3b6017c8313eb256114416ee8b1f3ad01edff97d5ee8": {
+      "description_zh": "提供内部小型用户故事工作流，限定执行范围并以证据作为推进门槛。",
+      "source": "Internal bounded, evidence-gated small-story workflow.",
+      "source_sha256": "c9a7e223fcd9e00bb50d3b6017c8313eb256114416ee8b1f3ad01edff97d5ee8",
+      "source_path": "skills/small-story/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13d1b60cabc23697e62b0e3717a02e174355ab391279e4662b819f72870e6de2": {
+      "description_zh": "响应和处理生产环境事件。",
+      "source": "Reactive production incident skill.",
+      "source_sha256": "13d1b60cabc23697e62b0e3717a02e174355ab391279e4662b819f72870e6de2",
+      "source_path": "skills/something-broke/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f987ec0f2cfdfc159b4f309b19ccfd46a2d294332719fcd1db59de0f14750e9": {
+      "description_zh": "帮助了解当前项目状态与背景。",
+      "source": "Orient to the current project.",
+      "source_sha256": "0f987ec0f2cfdfc159b4f309b19ccfd46a2d294332719fcd1db59de0f14750e9",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7fa03ca84b2b451d9aaf6a662b2249976c6971c8060a6c120f49df6a434a2f60": {
+      "description_zh": "验证 SweetClaude 四种模式的约束是否正确生效。",
+      "source": "Validates that mode enforcement is working correctly across all four modes.",
+      "source_sha256": "7fa03ca84b2b451d9aaf6a662b2249976c6971c8060a6c120f49df6a434a2f60",
+      "source_path": "skills/sweetclaude-behavioral-regression/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "174b92e7b2469ccc51ca34cd2816fc251a577a200dbe1fbee241950f88c521eb": {
+      "description_zh": "按 WCAG 2.1 AA 级要求开展无障碍审计。",
+      "source": "WCAG 2.1 Level AA audit.",
+      "source_sha256": "174b92e7b2469ccc51ca34cd2816fc251a577a200dbe1fbee241950f88c521eb",
+      "source_path": "skills/testing-accessibility/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9d9565b135b67afb79ab0a203bd40b3a34960dab6e07078aa8e2a75525c494e": {
+      "description_zh": "执行合规控制测试并收集证据。",
+      "source": "Compliance control testing and evidence collection.",
+      "source_sha256": "c9d9565b135b67afb79ab0a203bd40b3a34960dab6e07078aa8e2a75525c494e",
+      "source_path": "skills/testing-compliance/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba013aaadea7d4c0299c3468b3cf4688a2b6911a63f4147c6fbd0d76e7306b04": {
+      "description_zh": "定义负载场景、建立性能基线并设置阈值。",
+      "source": "Define load scenarios, establish performance baselines, set thresholds.",
+      "source_sha256": "ba013aaadea7d4c0299c3468b3cf4688a2b6911a63f4147c6fbd0d76e7306b04",
+      "source_path": "skills/testing-performance/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ecbf79698e0fb3a687b549fa8e852512e6d099f1d9090db938331b6cf3f390c": {
+      "description_zh": "为功能或发布定义和维护测试策略。",
+      "source": "Define and maintain a test strategy for a feature or release.",
+      "source_sha256": "7ecbf79698e0fb3a687b549fa8e852512e6d099f1d9090db938331b6cf3f390c",
+      "source_path": "skills/testing-plan/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "773e7f2f089c45c4f1d3e0e0c7db3e7d2546b862cf59332c32dc996e0c1ee1d9": {
+      "description_zh": "开展结构化安全审查。",
+      "source": "Structured security review.",
+      "source_sha256": "773e7f2f089c45c4f1d3e0e0c7db3e7d2546b862cf59332c32dc996e0c1ee1d9",
+      "source_path": "skills/testing-security/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54e6680a431585cb37f7014f13f0f84f41f0a286756d5adb6afdcb6804459d17": {
+      "description_zh": "执行人工 QA 测试会话。",
+      "source": "Run a manual QA session.",
+      "source_sha256": "54e6680a431585cb37f7014f13f0f84f41f0a286756d5adb6afdcb6804459d17",
+      "source_path": "skills/testing-session/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f61b0229d8bb81cf2f2c654294ddc05949eebf5abedf96b1d22073d8c0f53f50": {
+      "description_zh": "根据当前阶段产物准备结构化 ultraplan 提示词，启动 ultraplan，并将生成计划纳入 DESIGN 阶段的架构产物。",
+      "source": "Prepare a structured ultraplan prompt from current phase artifacts, launch ultraplan, and ingest the resulting plan as the DESIGN phase architecture artifact.",
+      "source_sha256": "f61b0229d8bb81cf2f2c654294ddc05949eebf5abedf96b1d22073d8c0f53f50",
+      "source_path": "skills/ultraplan/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef7f47487e282075a84f8df9ec821dca103a3115cde7dae152abfdb9dc4ee39d": {
+      "description_zh": "从 GitHub 更新 SweetClaude 版本。",
+      "source": "Update SweetClaude to the latest version from GitHub.",
+      "source_sha256": "ef7f47487e282075a84f8df9ec821dca103a3115cde7dae152abfdb9dc4ee39d",
+      "source_path": "skills/update/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "465bcdc64fcdfa637704d68440433bbcc8624512c9984e6cd12ea351f7af0b7c": {
+      "description_zh": "开启、关闭和查看本地使用情况跟踪。",
+      "source": "Toggle and view local usage tracking.",
+      "source_sha256": "465bcdc64fcdfa637704d68440433bbcc8624512c9984e6cd12ea351f7af0b7c",
+      "source_path": "skills/usage/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd6a9ea214f1c2a0957679ce4dc4acc3057cabc18970f38b6ecda4dfdf428455": {
+      "description_zh": "定义产品用户画像，包括用户身份、需要完成的任务，以及每项任务完成时的具体界面和体验。",
+      "source": "Define product users — who they are, what they need to do, and exactly what completing each task looks and feels like.",
+      "source_sha256": "cd6a9ea214f1c2a0957679ce4dc4acc3057cabc18970f38b6ecda4dfdf428455",
+      "source_path": "skills/user-personas/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ab67ea3fa65cafb1e7a7a235c0f4369c52d0a73655ab562e9b9502f0bcce630": {
+      "description_zh": "将每个用户故事、史诗任务和里程碑的产物集中到 .sweetclaude/work/<ID>/，管理初始化、历史补齐及单项工作目录创建。",
+      "source": "Co-locate all artifacts per story, epic, and milestone into .sweetclaude/work/<ID>/. Manages onboarding, backfill, and per-item directory creation.",
+      "source_sha256": "0ab67ea3fa65cafb1e7a7a235c0f4369c52d0a73655ab562e9b9502f0bcce630",
+      "source_path": "skills/work-item-artifacts/SKILL.md",
+      "package_sha256": "ed09a51f0455636dca8db65d75a6b3258a2c9e2fcd0f234ea40f5bd1def98ad3",
+      "source_package": "SweetClaude-4.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34bb5c5c666489ba8baec1cdb5c1d1626c5772b2e583018027fc203b8642de06": {
+      "description_zh": "通过 /sweetprompt:deep 将粗略、混乱或条件不足的提示词整理成精确且基于代码库的 Claude Code 提示词，在当前会话模型上使用较高推理强度。适用于大型、跨模块或陌生任务，仅交付重写提示词，不执行任务或修改代码。",
+      "source": "Deep pass of SweetPrompt: compile a rough, messy, or underspecified prompt into a precise, codebase-grounded prompt for Claude Code on the session model at high reasoning effort, WITHOUT executing it or editing any code. For large, cross-cutting, or unfamiliar tasks. Invoked via /sweetprompt:deep.",
+      "source_sha256": "34bb5c5c666489ba8baec1cdb5c1d1626c5772b2e583018027fc203b8642de06",
+      "source_path": "skills/deep/SKILL.md",
+      "package_sha256": "747e089ebd691629937cbe8a0e19a625f68ea89fee7f1e7ae72e5b365cd2ad5a",
+      "source_package": "SweetPrompt-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5cbc80bfa8c32b6a7ded449b5c70f87cf85bb5785ca0b72a96e186bfae02c4b": {
+      "description_zh": "通过 /sweetprompt:quick 仅根据对话上下文快速整理提示词，使结构更清楚，并在执行前提供双示例强化；不读取代码库、不执行任务或修改代码。",
+      "source": "Quick pass of SweetPrompt: rewrite a rough, messy, or underspecified prompt into a clearer, better-organized prompt using only the conversation context, WITHOUT reading the codebase, executing it, or editing any code. A fast polish and 2-shot boost before you run it. Invoked via /sweetprompt:quick.",
+      "source_sha256": "c5cbc80bfa8c32b6a7ded449b5c70f87cf85bb5785ca0b72a96e186bfae02c4b",
+      "source_path": "skills/quick/SKILL.md",
+      "package_sha256": "747e089ebd691629937cbe8a0e19a625f68ea89fee7f1e7ae72e5b365cd2ad5a",
+      "source_package": "SweetPrompt-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c01f48e49bf95caf452a82bd25ce58a447ba0529612faed9dabb8455a238e207": {
+      "description_zh": "通过 /sweetprompt:sweetprompt 将粗略、混乱、含拼写错误或条件不足的提示词整理成精确且基于代码库的 Claude Code 提示词，交付重写后的提示词，不执行任务或修改代码。",
+      "source": "Compile a rough, messy, misspelled, or underspecified prompt into a precise, codebase-grounded prompt for Claude Code, WITHOUT executing it or editing any code. The deliverable is the rewritten prompt itself. Invoked via /sweetprompt:sweetprompt.",
+      "source_sha256": "c01f48e49bf95caf452a82bd25ce58a447ba0529612faed9dabb8455a238e207",
+      "source_path": "skills/sweetprompt/SKILL.md",
+      "package_sha256": "747e089ebd691629937cbe8a0e19a625f68ea89fee7f1e7ae72e5b365cd2ad5a",
+      "source_package": "SweetPrompt-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00ddb7b7921277b2654863e918c1cb6b7d722eaa831bc1dae641d56a98d6aa45": {
+      "description_zh": "审查、编写和修复 Apple 各平台的焦点管理代码，覆盖 tvOS、iOS／iPadOS、watchOS、visionOS、macOS，以及 SwiftUI、UIKit、AppKit、RealityKit。适用于焦点、悬停、按键视图循环和 Digital Crown 导航。",
+      "source": "Reviews, writes, and fixes focus management code for all Apple platforms (tvOS, iOS/iPadOS, watchOS, visionOS, macOS), covering SwiftUI, UIKit, AppKit, and RealityKit. Use when reading, writing, or reviewing apps that handle focus, hover, key view loops, or Digital Crown navigation.",
+      "source_sha256": "00ddb7b7921277b2654863e918c1cb6b7d722eaa831bc1dae641d56a98d6aa45",
+      "source_path": "SKILL.md",
+      "package_sha256": "0308d778728615a7ec8ba1fd6d921b823bd60376ec733159cdffa0006a516d31",
+      "source_package": "Swift FocusEngine Pro-1.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "193e14192ed324275c81d3fff3dee220e36cf16c8d94c95ee263fe2d40bea7f5": {
+      "description_zh": "通过 SourceKit-LSP 为 Swift 文件提供实时错误诊断、跳转定义、引用查找和类型信息，帮助 Claude 理解 Swift／iOS／macOS 项目代码。",
+      "source": "Real-time Swift code intelligence via SourceKit-LSP. Gives Claude instant error detection, go-to-definition, find-references, and type info for .swift files. Trigger on: \"swift lsp\", \"enable swift diagnostics\", \"swift code intelligence\", or when working on any Swift/iOS/macOS project and Claude needs better code awareness.",
+      "source_sha256": "193e14192ed324275c81d3fff3dee220e36cf16c8d94c95ee263fe2d40bea7f5",
+      "source_path": "skills/swift-lsp/SKILL.md",
+      "package_sha256": "028d8968758e9c09ea7e5ad580edf859a12fcb70738d4fe9ec0209304aea1294",
+      "source_package": "swift-lsp-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af095f5f74793a34143675a68fe55e11cf83797f63ff9fda324331c97ff4d5d9": {
+      "description_zh": "指导 macOS SwiftUI 应用的代码编写和审查，深入处理观察机制、并发、性能、平台集成、视图更新、状态管理及 AppKit 桥接。侧重不易察觉的问题和深入模式，不适用于仅 iOS／iPadOS、UIKit 桥接或基础 Swift 语法问题。",
+      "source": "Expert SwiftUI guidance for macOS apps — covers writing and reviewing code with runtime-level understanding of observation, concurrency, performance, and platform integration. Use when user asks to \"build a SwiftUI view\", \"review my SwiftUI code\", \"fix observation issues\", \"bridge AppKit\", \"architect state management\", \"debug view updates\", or works on any macOS SwiftUI project — building features, reviewing existing code, debugging view updates or performance, fixing concurrency issues, architecting state management, bridging AppKit, or making design decisions. Do NOT use for iOS/iPadOS-only SwiftUI, UIKit bridging, or basic Swift language questions. Focuses on non-obvious traps and deep patterns, not basics.",
+      "source_sha256": "af095f5f74793a34143675a68fe55e11cf83797f63ff9fda324331c97ff4d5d9",
+      "source_path": "skills/swiftui-macos/SKILL.md",
+      "package_sha256": "7ec47068f2a8c37780e389be904d96e6c2ecfca64a0ef9d3d26fba4465297d90",
+      "source_package": "SwiftUI guidance for macOS-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9db8b954cb200bc5f9e4c1b1bc4ced011acdd877a049d1af917ac4edc8717c62": {
+      "description_zh": "筛选值得优先跟进的客户账户，提供建议的价值主张及经过准确性检查、相关性筛选并标注来源的证据，支持确定客户开发重点；不用于单个指定账户研究。",
+      "source": "Finds the accounts worth going after, with the value proposition to lead with and evidence that is checked for accuracy, filtered for relevance, and cited so you can verify it. Use when the user asks which accounts to work, focus on, prioritize, or go after. Not for one named account.",
+      "source_sha256": "9db8b954cb200bc5f9e4c1b1bc4ced011acdd877a049d1af917ac4edc8717c62",
+      "source_path": "skills/prioritize-accounts/SKILL.md",
+      "package_sha256": "bb217c49a754e37fa1997c2226b037930e146d6a9dbb8e8ffadb1f6893b2700d",
+      "source_package": "Syft AI-0.1.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f86e2a54035e6c6e6c7b7bf7d8467ad24cf6a9119f8fdb424ab6d37767933df2": {
+      "description_zh": "介绍 Syft 在已连接销售工具栈中的使用方式，说明入门步骤及如何结合 CRM、触达序列工具和其他系统自动化日常工作。适用于刚连接 Syft、了解能力或扩展现有请求。",
+      "source": "How to get the most from Syft in a connected sales stack: getting started, and which parts of the user's routine Syft can automate with their CRM, sequencer, and other tools. Use when the user has just connected Syft, asks how to use it or what they can do with it, or when a Syft request could be taken further with a connected system.",
+      "source_sha256": "f86e2a54035e6c6e6c7b7bf7d8467ad24cf6a9119f8fdb424ab6d37767933df2",
+      "source_path": "skills/syft-guide/SKILL.md",
+      "package_sha256": "bb217c49a754e37fa1997c2226b037930e146d6a9dbb8e8ffadb1f6893b2700d",
+      "source_package": "Syft AI-0.1.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e225b93357ba10a74031cf24a3d831b917f993e762a2b386cc8131ca5b77455": {
+      "description_zh": "查找与代码不一致或已过时的文档，提出具体修改建议，适用于更新文档、同步说明、修正过时内容和更新变更日志，以及可能影响文档的代码变更后。",
+      "source": "Use when the user asks to update docs, sync documentation, fix stale docs or update the changelog, or after code changes that may affect docs. Finds docs that no longer match the code and proposes exact fixes.",
+      "source_sha256": "9e225b93357ba10a74031cf24a3d831b917f993e762a2b386cc8131ca5b77455",
+      "source_path": "skills/sync-docs/SKILL.md",
+      "package_sha256": "05a93ac7fed060ff3a365dfac00e1a1042b74d42da4a3a98dce1937821e28704",
+      "source_package": "sync-docs-5.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd74581a0679eb59224e5e0e2837b04be9cd53b550736fbfbc8519114123a6b7": {
+      "description_zh": "通过 GitHub 在多台机器间同步和管理 Claude Code 技能，支持远端备份、推送拉取、从仓库安装、设置同步和列举远端技能。",
+      "source": "Sync and manage Claude Code skills across multiple machines using GitHub. Use this skill whenever the user says /my-skills, wants to sync skills between devices, back up their skills to GitHub, install skills from a remote repo, manage skill synchronization, or asks about sharing skills across machines. Trigger on phrases like 'sync my skills', 'push skills', 'pull skills', 'set up skill sync', 'list my remote skills'.",
+      "source_sha256": "cd74581a0679eb59224e5e0e2837b04be9cd53b550736fbfbc8519114123a6b7",
+      "source_path": "skills/my-skills/SKILL.md",
+      "package_sha256": "af1270bae4e58981d6dd10ac163324eafa959ae76ddc36e41910095f5e02bd02",
+      "source_package": "sync-my-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74f7a8d307c3c821cd7ad6b44f75b15ce9bcddbb93ae982bbc094788ec79f33a": {
+      "description_zh": "审查代理最近 100 次通话并识别质量问题，查找失败、未解决、中断或其他异常通话，适用于近期通话 QA 和代理问题排查。",
+      "source": "Review the last 100 calls for an agent and surface problems. Use this whenever the user wants a call-quality audit, a QA pass over recent calls, a \"what's going wrong with this agent\" review, or to find failed, unresolved, dropped, or otherwise problematic calls. Trigger on phrases like \"review my calls\", \"what's wrong with the calls\", \"QA the last 100 calls\", \"find bad calls\", or \"audit recent calls\".",
+      "source_sha256": "74f7a8d307c3c821cd7ad6b44f75b15ce9bcddbb93ae982bbc094788ec79f33a",
+      "source_path": "skills/call-review/SKILL.md",
+      "package_sha256": "3a8bffa40ced84f6ccf821bf5eb4806b49b818bfe00afbeb120071fa6c7031bb",
+      "source_package": "Synthflow-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ded0c373b1ec1dcd80b94422b7dda3c847985e4ce159c792b86350f890b9ecc": {
+      "description_zh": "审查 AI 语音代理提示词，尤其是 Synthflow Single-Prompt，检查矛盾、缺失上下文、不安全工具或动作、升级处理缺口、合规及回归风险，适用于部署前审核、改进和比较。",
+      "source": "Review AI voice-agent prompts, especially Synthflow Single-Prompt, for contradictions, missing context, unsafe tool/action behavior, escalation gaps, compliance risk, and regression risk. Use this when the user asks to review, audit, validate, improve, or compare a prompt before deployment.",
+      "source_sha256": "7ded0c373b1ec1dcd80b94422b7dda3c847985e4ce159c792b86350f890b9ecc",
+      "source_path": "skills/prompt-review/SKILL.md",
+      "package_sha256": "3a8bffa40ced84f6ccf821bf5eb4806b49b818bfe00afbeb120071fa6c7031bb",
+      "source_package": "Synthflow-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f00687823a718bc068248b8637209dc0e1d312c3030e4a06043e2d93555a758e": {
+      "description_zh": "创建、修改、扩展、审查、验证或编译 SysML v2 系统架构及模型，涵盖 .sysml、部件、端口、属性、需求定义和需求到架构块的追踪。依据标准库定义类型与单位，并用真实编译器校验和修正；不适用于 SysML v1、Cameo／MagicDraw、UML、处理 .sysml 的程序代码或非模型需求文档整理。",
+      "source": "SysML v2 systems-engineering co-pilot. Use this whenever the user wants to create, modify, extend, review, verify, or compile a SysML v2 system architecture or model — including `.sysml` files, `part def`/`port def`/`attribute`/`requirement def` constructs, MBSE work, or tracing requirements down to architectural blocks. Triggers on requests like \"model a propulsion subsystem\", \"add a battery to the power model\", \"trace these specs to our blocks\", \"is this .sysml valid?\", or \"audit our system model\" — even when the user doesn''t say \"SysML\". Authors valid textual SysML v2, grounds every type/unit in the standard library instead of inventing them, and validates with the real SysML v2 compiler in a self-correcting loop so the output actually compiles. Not for: SysML v1 or Cameo/MagicDraw tooling; writing or reviewing program code that merely parses or processes `.sysml` files; UML diagrams; or summarizing/wrangling requirements documents (DOORS, spreadsheets) that aren''t themselves SysML models.",
+      "source_sha256": "f00687823a718bc068248b8637209dc0e1d312c3030e4a06043e2d93555a758e",
+      "source_path": "skills/sysml-copilot/SKILL.md",
+      "package_sha256": "fe4721a90b3fd0d44b5b6af1b303b5803bac6afeaf188fb3c6a965ed848aae31",
+      "source_package": "SysML v2 Co-Pilot-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbd8c30a579762a673ebebfb5560ee5aea2bc4f37459f9d232c6aeb53f81b5b9": {
+      "description_zh": "使用临时 Tabfleet 云浏览器查看已渲染网站、操作网页或提供实时浏览器视图。",
+      "source": "Use a temporary Tabfleet cloud browser when the user asks Claude to inspect a rendered website, interact with a web page, or provide a live browser view.",
+      "source_sha256": "cbd8c30a579762a673ebebfb5560ee5aea2bc4f37459f9d232c6aeb53f81b5b9",
+      "source_path": "skills/tabfleet-browser/SKILL.md",
+      "package_sha256": "1e1c0c16c6c8c80015a3070847a04a4efe5d99647df9c638c7a3c771346bb677",
+      "source_package": "Tabfleet Browser-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "815feebc35a5f704105953fa25ff85db42a3378e2c883cee24aac7547128a07d": {
+      "description_zh": "系统排查原因尚不确定的缺陷、测试失败、构建错误或异常行为。",
+      "source": "Use when encountering a bug, test failure, build error, or unexpected behavior whose cause is not already certain",
+      "source_sha256": "815feebc35a5f704105953fa25ff85db42a3378e2c883cee24aac7547128a07d",
+      "source_path": "skills/debugging-systematically/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d448a26f27658ba7dfd7e9aac4fc055a5b5ea567ab15b626201fb6a6d43a5e5": {
+      "description_zh": "在运行环境支持子代理调度、计划任务足够独立时，将任务委派给子代理执行。",
+      "source": "Use when executing a plan whose tasks are independent enough to hand to subagents, and the harness supports dispatching them",
+      "source_sha256": "2d448a26f27658ba7dfd7e9aac4fc055a5b5ea567ab15b626201fb6a6d43a5e5",
+      "source_path": "skills/delegating-to-subagents/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8ae227fa772848cfe0be69ebb5ae4c9f99f260063b416a81660a4c1ed665b9b": {
+      "description_zh": "在当前会话中亲自执行书面计划或任务清单。",
+      "source": "Use when carrying out a written plan or task list yourself, in the current session",
+      "source_sha256": "e8ae227fa772848cfe0be69ebb5ae4c9f99f260063b416a81660a4c1ed665b9b",
+      "source_path": "skills/executing-plans/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9f77c3f8b3f8f628ba82aedc734135215ac7d03539ba5198f0c81b2cd184352": {
+      "description_zh": "在实现已完成且验证通过后，整合、交接或清理工作成果。",
+      "source": "Use when implementation is complete and verified, and the work needs to be integrated, handed off, or cleaned up",
+      "source_sha256": "c9f77c3f8b3f8f628ba82aedc734135215ac7d03539ba5198f0c81b2cd184352",
+      "source_path": "skills/finishing-work/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
