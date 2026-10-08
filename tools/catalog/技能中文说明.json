@@ -21049,6 +21049,1086 @@
       "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
       "source_package": "coding-skills-0.2.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98e2cb39073db61e3537cf724144c741964563ba16265052ec2067dfc0216e13": {
+      "description_zh": "在Postgres设计任务队列，处理SELECT FOR UPDATE SKIP LOCKED、重复执行、工作进程阻塞及事件发布与行提交的原子性，解释Outbox模式。",
+      "source": "This skill should be used when the user asks \"how do I build a job queue in Postgres\", \"what is SELECT FOR UPDATE SKIP LOCKED\", \"why are jobs processed twice\", \"how do I publish an event and commit a row atomically\", \"what is the outbox pattern\", or reports workers blocking each other polling a jobs table.",
+      "source_sha256": "98e2cb39073db61e3537cf724144c741964563ba16265052ec2067dfc0216e13",
+      "source_path": "skills/database-queues/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eca91ed96dbeea3e5fbb60d3ef97ad9042527dcd41871a1e4e257b8d47fd8ce1": {
+      "description_zh": "检查包供应链安全，包括依赖混淆、相似拼写包、安装可信度、依赖哈希固定、私有注册表、锁文件和CI安装凭据。",
+      "source": "This skill should be used when the user asks \"how do I secure our package supply chain\", \"what is dependency confusion\", \"how do I stop typosquatting\", \"is this package safe to install\", \"should I pin dependency hashes\", or is configuring a private registry, lockfile policy, or CI credentials for package installs.",
+      "source_sha256": "eca91ed96dbeea3e5fbb60d3ef97ad9042527dcd41871a1e4e257b8d47fd8ce1",
+      "source_path": "skills/dependency-confusion/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b0602062da7a365e48a255cede7a81b80b2bf3e6822b29629d18265d01b6eee": {
+      "description_zh": "按扩展、迁移、收缩顺序实现零停机数据库/API/事件变更，涵盖列重命名删除、NOT NULL、生产索引及响应格式演进。",
+      "source": "This skill should be used when the user asks to \"rename a column without downtime\", \"drop a column safely\", \"add NOT NULL to a live table\", \"add an index in production\", \"change an API response shape\", \"change an event format\", or asks how to run a zero-downtime migration. Provides the expand-migrate-contract sequence and per-operation recipes.",
+      "source_sha256": "0b0602062da7a365e48a255cede7a81b80b2bf3e6822b29629d18265d01b6eee",
+      "source_path": "skills/expand-contract/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "533f9105eb88285c62c8dfac333645ef1f8b6c20c4e6b67cb9751277b9101b0f": {
+      "description_zh": "解释浮点精度、比较、金额类型、求和漂移、NaN及跨机器差异，处理一分钱偏差或极小差异测试失败。",
+      "source": "This skill should be used when the user asks \"why is 0.1 + 0.2 not 0.3\", \"how do I compare floats\", \"what type should I use for money\", \"why is my total off by a cent\", \"why do sums drift\", or reports NaN appearing unexpectedly, a test failing on a tiny difference, or results differing between machines.",
+      "source_sha256": "533f9105eb88285c62c8dfac333645ef1f8b6c20c4e6b67cb9751277b9101b0f",
+      "source_path": "skills/floating-point/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54f33bdf00b99e83d0fc31ec5461ddc8011130019b8de34b5a0408ece9f6bb15": {
+      "description_zh": "依据Hyrum定律评估未承诺但可观察行为的破坏性变化，如迭代顺序、错误文字、时序、排序稳定、ID或JSON键顺序，分析消费者依赖。",
+      "source": "This skill should be used when the user asks \"is this a breaking change\", \"can I change this undocumented behavior\", \"why did an internal change break a consumer\", \"how do I stop people depending on this\", or is changing observable behavior never promised in a contract, such as iteration order, error message text, timing, sort stability, ID format, or JSON key order.",
+      "source_sha256": "54f33bdf00b99e83d0fc31ec5461ddc8011130019b8de34b5a0408ece9f6bb15",
+      "source_path": "skills/hyrums-law/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b62189c3ef2ee130e1dd63aafe0b3d3bd39442989685357269f22bcff4fec80": {
+      "description_zh": "设计审计数据库索引、复合列顺序、覆盖索引、主键类型及重复未用索引；特定慢查询执行计划诊断用query-plans。",
+      "source": "This skill should be used when the user asks \"why is my index not being used\", \"which columns should I index\", \"what order should the composite index columns be in\", \"should this be a covering index\", \"which indexes can I drop\", or is choosing a primary key type or auditing unused and duplicate indexes. Covers designing and auditing indexes. For diagnosing a specific slow query use `query-plans`.",
+      "source_sha256": "2b62189c3ef2ee130e1dd63aafe0b3d3bd39442989685357269f22bcff4fec80",
+      "source_path": "skills/index-design/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ce1fbf9469ca031aba89086dbf1d287047c055d49cdbd0858bb9eb3306bf113": {
+      "description_zh": "分析隔离级别、并发不变量、SELECT FOR UPDATE、写偏斜、丢失更新及不同数据库REPEATABLE READ行为。",
+      "source": "This skill should be used when the user asks \"which isolation level do I need\", \"why did concurrent requests break this invariant\", \"should I use SELECT FOR UPDATE\", \"what is write skew\", or reports a bug that only reproduces under concurrent traffic, a lost update from a read-modify-write, or confusion about REPEATABLE READ behavior across databases.",
+      "source_sha256": "4ce1fbf9469ca031aba89086dbf1d287047c055d49cdbd0858bb9eb3306bf113",
+      "source_path": "skills/isolation-anomalies/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abb8503713c5ec649974dc7f43f18920b6505ee3d8a644c352694eec1daf55c8": {
+      "description_zh": "用键集或游标分页替代深OFFSET，解决分页重复遗漏，支持大表批任务导出和回填。",
+      "source": "This skill should be used when the user asks \"why is deep pagination slow\", \"how do I replace OFFSET\", \"how do I build a cursor-based API\", \"why do users see duplicate or skipped rows while paging\", or is writing a batch job, export, or backfill that pages through a large table.",
+      "source_sha256": "abb8503713c5ec649974dc7f43f18920b6505ee3d8a644c352694eec1daf55c8",
+      "source_path": "skills/keyset-pagination/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aca64ada4e9010a6818d54c5f6e40cef50487f032d54d59f907a76f849d5b6b6": {
+      "description_zh": "在没有可独立计算正确答案时用变形测试验证搜索排序、ML、科学计算或优化器；已有测试强度评估用mutation-testing。",
+      "source": "This skill should be used when the user asks \"how do I test this when I do not know the expected output\", \"how do I test a search ranking or ML model\", \"what is the oracle problem\", \"how do I test a scientific computation or optimizer\", or is testing code whose correct answer cannot be computed independently. Covers testing without a known correct answer. For judging whether existing tests are strong use `mutation-testing`.",
+      "source_sha256": "aca64ada4e9010a6818d54c5f6e40cef50487f032d54d59f907a76f849d5b6b6",
+      "source_path": "skills/metamorphic-testing/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75ca61162f417b0397ad737947872680dccd95f4ca0646ce33e520c77c4aad85": {
+      "description_zh": "依据Ousterhout深浅模块标准判断类拆分、接口封装和新增层是否值得，分析变更传播与浅包装；验证应置何处用parse-dont-validate。",
+      "source": "This skill should be used when the user asks \"should I split this class\", \"is this abstraction worth it\", \"why does this change ripple through so many layers\", \"is this wrapper useful\", or when reviewing a new interface, wrapper, or layer. Applies Ousterhout's deep-versus-shallow module test, including when Clean Code's small-functions advice does not apply. Covers whether an abstraction earns its interface. For where validation belongs use `parse-dont-validate`.",
+      "source_sha256": "75ca61162f417b0397ad737947872680dccd95f4ca0646ce33e520c77c4aad85",
+      "source_path": "skills/module-depth/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8cd0a76a94aebd41107f59454d3c7f5a4718cdf2933136494ab592ece88232a": {
+      "description_zh": "通过变异测试判断已有断言是否能发现缺陷，评估覆盖率和测试质量，识别无效测试；未知正确输出场景用metamorphic-testing。",
+      "source": "This skill should be used when the user asks \"are our tests actually good\", \"is 100% coverage meaningful\", \"what is mutation testing\", \"how do I measure test quality\", \"which tests are worthless\", or is setting a coverage target or reviewing a test suite that passes while bugs still ship. Covers whether existing assertions detect bugs. For testing code with no known correct output use `metamorphic-testing`.",
+      "source_sha256": "b8cd0a76a94aebd41107f59454d3c7f5a4718cdf2933136494ab592ece88232a",
+      "source_path": "skills/mutation-testing/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb301d7d582b2ea77f33e9da5bd8d07b60915ac1f414836c1be8c2c508821896": {
+      "description_zh": "诊断Postgres MVCC表索引膨胀、删除后增长、性能退化、autovacuum、事务ID回绕、事务空闲与复制槽增长。",
+      "source": "This skill should be used when the user asks \"why is the table growing despite deletes\", \"why did queries get slower over time\", \"why is autovacuum not keeping up\", \"what is transaction ID wraparound\", \"what is idle in transaction\", or reports Postgres table or index bloat, replication slot growth, or vacuum warnings.",
+      "source_sha256": "bb301d7d582b2ea77f33e9da5bd8d07b60915ac1f414836c1be8c2c508821896",
+      "source_path": "skills/mvcc-and-bloat/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03252915dc7719305469311f6b93ac313e450ae4be753dd68170f8d408a525ff": {
+      "description_zh": "通过解析建立可表达合法状态的类型，确定验证位置并减少深层重复检查，评审非空断言类型转换及有组合约束的DTO可选字段。",
+      "source": "This skill should be used when the user asks \"where should validation live\", \"how do I stop re-checking this everywhere\", \"how do I make illegal states unrepresentable\", or when reviewing non-null assertions, casts, or repeated checks deep in the code, or designing a DTO whose optional fields are only valid in certain combinations.",
+      "source_sha256": "03252915dc7719305469311f6b93ac313e450ae4be753dd68170f8d408a525ff",
+      "source_path": "skills/parse-dont-validate/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a0dab15128dff831db0ceb12ef756cbc870927f2eec4d42d4ab62a1da0d58c6": {
+      "description_zh": "解读EXPLAIN ANALYZE和执行计划，比较估计与实际行数、关联策略统计与索引使用，诊断环境差异；索引选择用index-design。",
+      "source": "This skill should be used when the user asks \"why is this query slow\", \"read this EXPLAIN output\", \"why is the planner not using my index\", \"why is it fast in staging but slow in production\", or shares an execution plan to interpret. Covers EXPLAIN ANALYZE, estimate-versus-actual rows, join strategies, and statistics problems. Covers diagnosing a plan. For choosing which indexes to create use `index-design`.",
+      "source_sha256": "1a0dab15128dff831db0ceb12ef756cbc870927f2eec4d42d4ab62a1da0d58c6",
+      "source_path": "skills/query-plans/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fcb5612b55654404ec6ddd3fe41919136a3d457ed981394c8da9584c30aa8241": {
+      "description_zh": "依据排队及利用率估算线程、工作进程、连接池或在制品上限，选择CPU目标与容量余量；扩容吞吐下降或数据库连接分别用配套技能。",
+      "source": "This skill should be used when the user asks \"how big should this thread pool be\", \"what CPU target is safe\", \"why did latency spike without more traffic\", \"do we have headroom at 85% CPU\", \"how deep should this queue be\", or asks to size a worker fleet, connection pool, or WIP limit. Covers sizing and utilization targets. For throughput that drops as workers are added use `universal-scalability-law`, and for database connections use `connection-pooling`.",
+      "source_sha256": "fcb5612b55654404ec6ddd3fe41919136a3d457ed981394c8da9584c30aa8241",
+      "source_path": "skills/queueing-and-utilization/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13272109f5423f0eb4b5f7c2b18f55504a7f208b19f6c560a0c4e987234164fa": {
+      "description_zh": "处理重试驱动过载，设计调用链重试位置、退避和卸载，诊断根因修复后仍不恢复或重启后的重试风暴；缓存过期惊群用cache-stampede。",
+      "source": "This skill should be used when the user asks \"how should I configure retries\", \"why is the service still down after we fixed the cause\", \"where should retries live in the call chain\", \"what backoff should I use\", \"how do I shed load\", or reports a retry storm, thundering herd, or a system that will not recover after restart. Covers retry-driven overload specifically. For herds caused by cache expiry use `cache-stampede`.",
+      "source_sha256": "13272109f5423f0eb4b5f7c2b18f55504a7f208b19f6c560a0c4e987234164fa",
+      "source_path": "skills/retry-amplification/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9da75fe69ca2926304fc9391634f2860806335c7cafa7378de630699f225870d": {
+      "description_zh": "将泛工程问题或未指明技术的症状路由到唯一匹配的coding-skills技能，仅在没有明显单一技能时使用。",
+      "source": "This skill should be used when the user asks a broad engineering question that could match several areas, asks \"which skill covers this\", \"what skills are available\", \"where do I start\", or describes a symptom without naming a technique. Routes a symptom to exactly one of the coding-skills skills. Load this only when no single skill clearly matches.",
+      "source_sha256": "9da75fe69ca2926304fc9391634f2860806335c7cafa7378de630699f225870d",
+      "source_path": "skills/start-here/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4c99be574db12144460c060f5cf1b9b6693af81f8760b3b3f40461389541523": {
+      "description_zh": "优化p50良好但p99差的尾延迟，评估对冲请求、多服务分片扇出和超时；延迟测量是否可信用coordinated-omission。",
+      "source": "This skill should be used when the user asks \"why is p99 bad when p50 is fine\", \"how do I reduce tail latency\", \"should I use hedged requests\", \"how do I set timeouts for a fan-out\", or when a request touches many services or shards and adding a service made latency worse than that service's own latency. Covers reducing tail latency. For whether the p99 number itself is trustworthy use `coordinated-omission`.",
+      "source_sha256": "d4c99be574db12144460c060f5cf1b9b6693af81f8760b3b3f40461389541523",
+      "source_path": "skills/tail-latency/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "faf261110e1718ab6b584acaa727420b9fec0442d6841d54faaf4de74860b20c": {
+      "description_zh": "处理Unicode长度截断、相同文本不匹配、大小写比较、表情列宽、规范化编码、字素簇和同形字符攻击。",
+      "source": "This skill should be used when the user asks \"why is this string length wrong\", \"how do I truncate text safely\", \"why do these identical strings not match\", \"how do I compare text case-insensitively\", \"why does emoji break my column limit\", or is handling normalization, encodings, grapheme clusters, or homoglyph attacks.",
+      "source_sha256": "faf261110e1718ab6b584acaa727420b9fec0442d6841d54faaf4de74860b20c",
+      "source_path": "skills/unicode-pitfalls/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d18fd06eb55dbc08907aa00c1518733ed593b6d5fea3b42e3cbd7916d0bd0e87": {
+      "description_zh": "用通用扩展性定律分析服务器线程增多后吞吐峰值下降、拟合压测曲线并预测容量上限；按目标延迟选池大小用排队技能。",
+      "source": "This skill should be used when the user asks \"why does adding servers not help\", \"why did throughput drop when we scaled out\", \"how far can this scale\", \"why is a bigger thread pool slower\", or wants to fit a scalability curve to load test data or predict a capacity ceiling. Covers throughput that peaks then declines. For sizing a pool to a target latency use `queueing-and-utilization`.",
+      "source_sha256": "d18fd06eb55dbc08907aa00c1518733ed593b6d5fea3b42e3cbd7916d0bd0e87",
+      "source_path": "skills/universal-scalability-law/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "529fe209f7c1bb6eb0efac845d1310f8d26d6a73c78aa187d1b32383105a4c73": {
+      "description_zh": "分析LSM/B树选择、写放大、磁盘占用与写入退化、RocksDB压缩调优，按读写负载选择存储引擎。",
+      "source": "This skill should be used when the user asks \"should I use an LSM or a B-tree\", \"why is disk usage far bigger than my data\", \"why do writes slow down as data grows\", \"how do I tune RocksDB compaction\", \"what is write amplification\", or is choosing a storage engine or database for a given read/write mix.",
+      "source_sha256": "529fe209f7c1bb6eb0efac845d1310f8d26d6a73c78aa187d1b32383105a4c73",
+      "source_path": "skills/write-amplification/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3ce975077898288c991cb36b010c3f5e75c394573b8ce74dda1f85339692cb5": {
+      "description_zh": "规划市场拓展中的人脉、行业接入、LinkedIn、会议内容、合作和触达，帮助提升知名度与获取会面。",
+      "source": "Use when planning go-to-market strategy — networking, industry access, LinkedIn, conferences, content strategy, partnerships, outreach. Answers \"how do I get known?\" and \"how do I get meetings?",
+      "source_sha256": "f3ce975077898288c991cb36b010c3f5e75c394573b8ce74dda1f85339692cb5",
+      "source_path": "skills/cofounder-gtm-playbook/SKILL.md",
+      "package_sha256": "3348de35d831571f0f244e14ce5f313be66663017636765f86a5c99fa310bd46",
+      "source_package": "cofounders-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "94a449e585add933db190a43f32bd5b5f5ddfae6850ab682a87c4c1629f18448": {
+      "description_zh": "为ProduceGerX分析客户细分、市场规模、竞品和定价战略，确定目标与市场环境。",
+      "source": "Use when analyzing customer segments, market sizing, competitor analysis, or pricing strategy for ProduceGerX. Answers \"who should I target?\" and \"how does the market look?",
+      "source_sha256": "94a449e585add933db190a43f32bd5b5f5ddfae6850ab682a87c4c1629f18448",
+      "source_path": "skills/cofounder-market-intel/SKILL.md",
+      "package_sha256": "3348de35d831571f0f244e14ce5f313be66663017636765f86a5c99fa310bd46",
+      "source_package": "cofounders-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3013ed6dae2e6233516e6d91fa5731f7e3064c2a56791b0ceeee2e9851330db8": {
+      "description_zh": "在重要客户会面、路演或演示前，定制客户资料、ROI论点、异议应对、报价和会议脚本。",
+      "source": "Use when preparing for a client meeting, investor pitch, or demo. Builds a custom prep package with client profile, ROI arguments, objection handling, pricing proposal, and meeting script. Invoke before any important meeting.",
+      "source_sha256": "3013ed6dae2e6233516e6d91fa5731f7e3064c2a56791b0ceeee2e9851330db8",
+      "source_path": "skills/cofounder-pitch-prep/SKILL.md",
+      "package_sha256": "3348de35d831571f0f244e14ce5f313be66663017636765f86a5c99fa310bd46",
+      "source_package": "cofounders-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e97f9d3b55d720fb098b3152339473a0ea86d8076c706133ed6a3723b1b889a8": {
+      "description_zh": "为ProduceGerX计算ROI、单位经济、CAC/LTV、盈亏平衡、资金跑道、现金流或定价情景，评估可行性。",
+      "source": "Use when calculating ROI, unit economics, CAC, LTV, break-even, runway, cash flow, or pricing scenarios for ProduceGerX. Answers \"is this viable?\" and \"what happens if we charge X?",
+      "source_sha256": "e97f9d3b55d720fb098b3152339473a0ea86d8076c706133ed6a3723b1b889a8",
+      "source_path": "skills/cofounder-roi-calculator/SKILL.md",
+      "package_sha256": "3348de35d831571f0f244e14ce5f313be66663017636765f86a5c99fa310bd46",
+      "source_package": "cofounders-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "568cefa4b24c9912f98af744f545a63216cf0e3d0f2c6c2c1381024f509989b6": {
+      "description_zh": "回答ROI、定价、市场、人脉、路演或一般商业战略，路由至合适的联合创始人子技能或直接分析。",
+      "source": "Use when the user asks any business strategy question — ROI, pricing, market analysis, networking, pitch prep, or general business advice. Routes to the right co-founder sub-skill or answers directly.",
+      "source_sha256": "568cefa4b24c9912f98af744f545a63216cf0e3d0f2c6c2c1381024f509989b6",
+      "source_path": "skills/cofounder/SKILL.md",
+      "package_sha256": "3348de35d831571f0f244e14ce5f313be66663017636765f86a5c99fa310bd46",
+      "source_package": "cofounders-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3407f7462a366d8e8860afead020d3d09e2b5e25f08636bafd840e0a72116e9d": {
+      "description_zh": "审查基础设施和API成本、优化云账单或新付费集成前支出，涵盖OpenAI/Twilio/Supabase、图片生成、嵌入及存储出站。",
+      "source": "Use when reviewing infrastructure costs, optimizing API spend, reducing cloud bills, or before adding new paid service integrations. Triggers on high OpenAI/Twilio/Supabase usage, DALL-E generation, embedding indexing, or storage egress concerns.",
+      "source_sha256": "3407f7462a366d8e8860afead020d3d09e2b5e25f08636bafd840e0a72116e9d",
+      "source_path": "skills/cost-reducer/SKILL.md",
+      "package_sha256": "3348de35d831571f0f244e14ce5f313be66663017636765f86a5c99fa310bd46",
+      "source_package": "cofounders-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9412d83b5984adbb914f83c6ee0f2f8ed96b6cc4195ad6367bb295a72033a772": {
+      "description_zh": "为ProduceGerX准备路演、投资者资料、财务预测、募资策略、市场竞争分析及估值条款与投资者触达。",
+      "source": "Use when preparing pitch decks, investor materials, financial projections, fundraising strategy, market sizing, competitive analysis, or when the user asks about raising capital, valuation, term sheets, or investor outreach for ProduceGerX.",
+      "source_sha256": "9412d83b5984adbb914f83c6ee0f2f8ed96b6cc4195ad6367bb295a72033a772",
+      "source_path": "skills/investor-agent/SKILL.md",
+      "package_sha256": "3348de35d831571f0f244e14ce5f313be66663017636765f86a5c99fa310bd46",
+      "source_package": "cofounders-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7c0828628ab58e89e85cb926f9cf20f609c5f8c70498ebde4563a668ae13213": {
+      "description_zh": "规划社交内容、帖子日历、广告与LinkedIn/Instagram/TikTok活动，增长受众并向HR及活动策划者推广ProduceGerX。",
+      "source": "Use when planning social media content, writing posts, building content calendars, crafting ad copy, planning LinkedIn/Instagram/TikTok campaigns, growing audience, or promoting ProduceGerX to HR managers and event planners.",
+      "source_sha256": "a7c0828628ab58e89e85cb926f9cf20f609c5f8c70498ebde4563a668ae13213",
+      "source_path": "skills/social-marketing/SKILL.md",
+      "package_sha256": "3348de35d831571f0f244e14ce5f313be66663017636765f86a5c99fa310bd46",
+      "source_package": "cofounders-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3cd6178efa2b3dddbe3b5a45bd346b87db9ce39d891a66e9170e5de39284715": {
+      "description_zh": "将仓库索引至Cognee代码图并确定性查询调用者、影响、路径和端点，回答结构问题并检查重索引变化。",
+      "source": "Index a code repository into Cognee's code graph and query it deterministically (callers, impact analysis, paths, endpoints). Use for structural code questions, \"index this repo\", and checking what a re-index changed.",
+      "source_sha256": "f3cd6178efa2b3dddbe3b5a45bd346b87db9ce39d891a66e9170e5de39284715",
+      "source_path": "skills/cognee-code/SKILL.md",
+      "package_sha256": "2d32df9bb4d03b32dfd8f16bfc55041d28684c4abf9babb90ba1880965dabd18",
+      "source_package": "cognee-memory-1.6.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53edfe20b9514caf70b2b53b82229a1a7ba063c378fa851e189c34e0f1832258": {
+      "description_zh": "在Cognee当前数据集中查找原始内容与用户遗忘请求匹配的文档并删除，适用于要求忘记、移除或删除记忆。",
+      "source": "Forget data stored in Cognee memory. Use when the user asks to forget, delete, or remove something from memory (e.g. \"forget what we talked about tennis\", \"delete that from memory\"). Finds the documents in the current dataset whose raw content matches what the user wants forgotten and deletes them.",
+      "source_sha256": "53edfe20b9514caf70b2b53b82229a1a7ba063c378fa851e189c34e0f1832258",
+      "source_path": "skills/cognee-forget/SKILL.md",
+      "package_sha256": "2d32df9bb4d03b32dfd8f16bfc55041d28684c4abf9babb90ba1880965dabd18",
+      "source_package": "cognee-memory-1.6.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b089e05ffb2c7c23998a4318d1d9aee2299782fe68a68cba3a0d53298bd896a4": {
+      "description_zh": "把资料永久存入Cognee知识图谱，按用户、项目或智能体类别设置对应node_set，便于分类检索。",
+      "source": "Store data permanently in the Cognee knowledge graph. Accepts a data category (user, project, or agent) to tag the data with the correct node_set for filtered retrieval.",
+      "source_sha256": "b089e05ffb2c7c23998a4318d1d9aee2299782fe68a68cba3a0d53298bd896a4",
+      "source_path": "skills/cognee-remember/SKILL.md",
+      "package_sha256": "2d32df9bb4d03b32dfd8f16bfc55041d28684c4abf9babb90ba1880965dabd18",
+      "source_package": "cognee-memory-1.6.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2257bcbff4f150b4ec4ae204c623778eeebc8560384506a3481806512df0e4ff": {
+      "description_zh": "显式检索Cognee永久知识图谱、按类别筛选或获取比自动查询更多的结果；会话记忆另由钩子在每次提示时自动搜索。",
+      "source": "Search Cognee memory. Session memory is automatically searched on every prompt via hooks. Use this skill explicitly for permanent knowledge graph search, filtered category search, or when you need more results than the automatic lookup provides.",
+      "source_sha256": "2257bcbff4f150b4ec4ae204c623778eeebc8560384506a3481806512df0e4ff",
+      "source_path": "skills/cognee-search/SKILL.md",
+      "package_sha256": "2d32df9bb4d03b32dfd8f16bfc55041d28684c4abf9babb90ba1880965dabd18",
+      "source_package": "cognee-memory-1.6.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f86e9b80f171a2239cd0c328747ec526c7c8ca420d6af61b9a777b939a636e70": {
+      "description_zh": "切换当前会话的Cognee数据集：列出可写数据集、同步原会话，再建立绑定所选数据集的新会话，后续保存与召回均使用新数据集。",
+      "source": "Switch this session to another Cognee dataset. Lists the datasets you can write to, lets you pick one, syncs the current session into its dataset, then starts a fresh Cognee session bound to the chosen dataset. All later saves and recalls target the new dataset and the status line shows it.",
+      "source_sha256": "f86e9b80f171a2239cd0c328747ec526c7c8ca420d6af61b9a777b939a636e70",
+      "source_path": "skills/cognee-switch-datasets/SKILL.md",
+      "package_sha256": "2d32df9bb4d03b32dfd8f16bfc55041d28684c4abf9babb90ba1880965dabd18",
+      "source_package": "cognee-memory-1.6.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1dd2a394ac3894c005de39b3ef199f63b6f25b61d4fd047d590a01873e843343": {
+      "description_zh": "将会话缓存同步至Cognee永久知识图谱，使会话记忆可检索；也可在会话结束时自动运行。",
+      "source": "Sync session cache entries into the permanent Cognee knowledge graph. Run this to make session memory searchable, or it runs automatically at session end.",
+      "source_sha256": "1dd2a394ac3894c005de39b3ef199f63b6f25b61d4fd047d590a01873e843343",
+      "source_path": "skills/cognee-sync/SKILL.md",
+      "package_sha256": "2d32df9bb4d03b32dfd8f16bfc55041d28684c4abf9babb90ba1880965dabd18",
+      "source_package": "cognee-memory-1.6.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8736601457f6efb8730b25ca5118431c660ed6dd879ebce3b0116ab183b2b9f3": {
+      "description_zh": "通过CoinPaprika搜索和分析加密货币行情，查询币种价格、市场概况及合约地址对应代币。",
+      "source": "Search and analyze cryptocurrency market data using CoinPaprika. Activates when users search for coins, ask about prices, request market overviews, or look up tokens by contract address.",
+      "source_sha256": "8736601457f6efb8730b25ca5118431c660ed6dd879ebce3b0116ab183b2b9f3",
+      "source_path": "skills/crypto-market-search/SKILL.md",
+      "package_sha256": "c131a01d7fe66b8ac442ceb68688a671ab47af00ff243167472bb226ff077cee",
+      "source_package": "coinpaprika-2.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86fba6d723b81255690bd98517db007081f84165f705cbb821549184eab1583b": {
+      "description_zh": "通过实时网页搜索支撑多智能体对抗辩论，相互核查论点、在证据推翻时承认错误，并达成共识或在五轮后给出裁决。",
+      "source": "Adversarial multi-agent debate grounded in live web searches. Agents fact-check each other's claims, concede when proven wrong, and reach consensus or force a verdict after 5 rounds. Triggers: 'colosseum', '여러 AI에게 물어봐', 'AI 토론', '비판적으로 분석', '다양한 관점",
+      "source_sha256": "86fba6d723b81255690bd98517db007081f84165f705cbb821549184eab1583b",
+      "source_path": "skills/colosseum/SKILL.md",
+      "package_sha256": "8d06a632308986c7f53d6dc73c690fc2e9befe58f83d6446895e1fa4e50c8054",
+      "source_package": "colosseum-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c954d444abc910117d80f8674f90582efdfd25aba3952f6f7235f327333e09c4": {
+      "description_zh": "使用当前智能体会话已有能力创建、打开、阅读、编辑和评论Comment.io Comm，支持链接、用户标识及协作请求。",
+      "source": "Work with Comment.io Comms through capabilities already available in the current agent session. Use when the user asks to create, open, read, edit, comment on, or collaborate in a Comm; supplies a Comment.io link; or mentions handles or Comment.io.",
+      "source_sha256": "c954d444abc910117d80f8674f90582efdfd25aba3952f6f7235f327333e09c4",
+      "source_path": "skills/how-to-use-comment/SKILL.md",
+      "package_sha256": "dd99ca322c7fe0079778b92e9b10c7c53eb207a4d6b89510fad72b0f66ce0459",
+      "source_package": "Comment.io-2.0.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "967e8f688a0765eb2e93fd3976ea4ca89e210d5f89629c4782c16428d402c6eb": {
+      "description_zh": "将当前这一个本地Claude Code对话接入Comment.io通知，支持监听提及、状态、接管和停止；默认使用会话临时标识，持久标识须由用户明确选择。",
+      "source": "Attach this exact local Claude Code conversation to Comment.io notifications. Use for `/comment-io:listen`, “listen for mentions”, or “stop listening”, status, takeover, or stop. Default to the conversation's Ephemeral handle; use a durable handle only when the user explicitly selects it.",
+      "source_sha256": "967e8f688a0765eb2e93fd3976ea4ca89e210d5f89629c4782c16428d402c6eb",
+      "source_path": "skills/listen/SKILL.md",
+      "package_sha256": "dd99ca322c7fe0079778b92e9b10c7c53eb207a4d6b89510fad72b0f66ce0459",
+      "source_package": "Comment.io-2.0.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4336691f6f69e37dabdb7ef81ca5231d1c0841d5ad0f063e090ee8dbe3b087f": {
+      "description_zh": "根据提供的上下文、匹配模板或其他文档创建Comment.io Comm，支持起草、导入和转换内容。",
+      "source": "Create a new Comment.io Comm from supplied context, a matching template, or another document. Use for `/comment-io:new-comm` or when the user asks to make, draft, import, or convert content into a new Comm.",
+      "source_sha256": "f4336691f6f69e37dabdb7ef81ca5231d1c0841d5ad0f063e090ee8dbe3b087f",
+      "source_path": "skills/new-comm/SKILL.md",
+      "package_sha256": "dd99ca322c7fe0079778b92e9b10c7c53eb207a4d6b89510fad72b0f66ce0459",
+      "source_package": "Comment.io-2.0.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "929e401104120a3fbc99ea4e25eaadae3bc2949bb736e474f9dabdaf3579827d": {
+      "description_zh": "追踪合同基础协议及全部修订的变化，汇总历次修改或追查特定条款的最新版本与演变过程。",
+      "source": "Trace how a contract has changed across its base agreement and all amendments — either a summary of all changes over time, or a provision trace for a specific clause. Use when the user says \"what changed in this contract over time\", \"show me the amendment history\", \"where's the latest [clause]\", \"how has [provision] evolved\", or uploads multiple versions of an agreement.",
+      "source_sha256": "929e401104120a3fbc99ea4e25eaadae3bc2949bb736e474f9dabdaf3579827d",
+      "source_path": "skills/amendment-history/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8634506b5a58f887bbabca6081033f5f4af4d04b5234f7d79fc34290a403d594": {
+      "description_zh": "首次安装时通过访谈了解团队商业合同实践并写入实践档案，适用于配置缺失、仍有模板占位或需要初始设置。",
+      "source": "Run the cold-start interview to learn your commercial contracts practice and write your team practice profile. Use on first use of the plugin, when `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md` is missing or still contains template placeholders, or when the user says \"set up the plugin\", \"configure commercial contracts\", \"onboard me\", or \"let's get started\". This is the only skill that should run on a fresh install.",
+      "source_sha256": "8634506b5a58f887bbabca6081033f5f4af4d04b5234f7d79fc34290a403d594",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8aaa315d3f33afbcb8ecd1dcb9ee6749e8a3f32b2c02238f9597b6bdde7ceaf7": {
+      "description_zh": "引导修改商业合同实践档案的单项设置，包括风险偏好、升级联系人、条款立场、NDA分流、文风、审查偏好和事项工作区路径。",
+      "source": "Guided customization of your commercial contracts practice profile — change one thing without re-running the whole cold-start interview. Adjust risk posture, escalation contacts, playbook positions, NDA triage preferences, house style, review preferences, or matter workspace paths. Use when the user says \"change my [thing]\", \"update my profile\", \"edit my playbook\", \"tune my config\", or \"customize\".",
+      "source_sha256": "8aaa315d3f33afbcb8ecd1dcb9ee6749e8a3f32b2c02238f9597b6bdde7ceaf7",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1cfdf13ab56d1d43a195d5dc5eebc5284e0e3a09a349b60d8d972bf9b7bd1211": {
+      "description_zh": "依据团队商业合同实践档案的升级矩阵，将超出审查者权限的问题交给相应审批人，并起草审批请求。",
+      "source": "Route a contract issue to the right approver per the escalation matrix in `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md`, and draft the ask. Use when the user says \"who needs to approve this\", \"escalate this\", \"does this need GC sign-off\", \"route this for approval\", or when another skill finds an issue that exceeds the reviewer's authority.",
+      "source_sha256": "1cfdf13ab56d1d43a195d5dc5eebc5284e0e3a09a349b60d8d972bf9b7bd1211",
+      "source_path": "skills/escalation-flagger/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c208f771b4e32a4aa1748e02ad751a240cb8d35dda87a32bfdebd333c26c479e": {
+      "description_zh": "管理多客户法律事项工作区，创建、列出、切换、关闭或归档事项，也可脱离事项返回实践级上下文。",
+      "source": "Manage matter workspaces — new, list, switch, close, or detach (practice-level). Use when a multi-client practitioner needs to create a matter, switch the active matter, list matters, archive a matter, or detach to practice-level context, or when another skill needs to know which matter it's working in.",
+      "source_sha256": "c208f771b4e32a4aa1748e02ad751a240cb8d35dda87a32bfdebd333c26c479e",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93e76e9bac4b9080200c270eebf318264aaedc2dc5a5a91b091368134510c0ad": {
+      "description_zh": "供销售与业务发展团队快速把收到的NDA分为绿、黄、红三档，将律师时间集中于需要审查的协议；由合同审查入口识别NDA后加载。",
+      "source": "Reference: fast triage of inbound NDAs into GREEN / YELLOW / RED so the team only spends lawyer time on the ones that need it. Built for sales and BD to self-serve before pinging legal. Loaded by /commercial-legal:review when an NDA is detected.",
+      "source_sha256": "93e76e9bac4b9080200c270eebf318264aaedc2dc5a5a91b091368134510c0ad",
+      "source_path": "skills/nda-review/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5c09cb9137d855fc4b5f1db342ed4191c122c5f7e5fa2d43187fe7bdd03e8d2": {
+      "description_zh": "根据维护的续约登记表显示临近取消截止日的合同，在通知窗口关闭前提醒，支持登记新增合同和定期检查，并接收SaaS审查交接。",
+      "source": "Show contracts with cancel-by deadlines coming up and warn before notice windows close, working from a maintained renewal register. Use when the user asks \"what's renewing soon\", \"what renewals are due\", \"did we miss a cancellation window\", \"add this to the renewal tracker\", or on a scheduled basis. Receives handoffs from saas-msa-review.",
+      "source_sha256": "a5c09cb9137d855fc4b5f1db342ed4191c122c5f7e5fa2d43187fe7bdd03e8d2",
+      "source_path": "skills/renewal-tracker/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5557f7f2e020e6d96ee09de820675e87635d8ac65eb25fa687800b510c4cb7c1": {
+      "description_zh": "审阅条款手册监控智能体提出的待定更新，逐项批准或拒绝，并把已批准的偏差驱动修改应用到团队实践档案。",
+      "source": "Review and approve (or reject) pending playbook update proposals from the playbook-monitor agent and apply approved changes to the practice profile. Use when the playbook-monitor agent has surfaced proposals, when the user says \"review playbook proposals\", \"what playbook updates are pending\", or wants to step through deviation-driven playbook changes.",
+      "source_sha256": "5557f7f2e020e6d96ee09de820675e87635d8ac65eb25fa687800b510c4cb7c1",
+      "source_path": "skills/review-proposals/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92f6bd3ee16991c769ca1f5e1e325f4bd357465766b1335d2360594994af5c82": {
+      "description_zh": "依据团队条款手册审查供应商协议、NDA或SaaS订阅，按标题识别协议结构、分派对应审查技能，并合并为统一审查备忘录。",
+      "source": "Review a vendor agreement, NDA, or SaaS subscription against your playbook. Identifies the agreement structure from titles, routes to the right review skill (vendor-agreement-review, nda-review, saas-msa-review), and integrates the output into a single memo. Use when the user says \"review this contract\", \"check this MSA\", \"is this NDA okay\", \"look at this SaaS agreement\", or attaches an inbound agreement for review.",
+      "source_sha256": "92f6bd3ee16991c769ca1f5e1e325f4bd357465766b1335d2360594994af5c82",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fb396fbde390f7b6d0c1627f1755a9cc2c465f9ff84dc99c74c59b197391431": {
+      "description_zh": "作为SaaS订阅合同审查参考，关注自动续约、价格上调、数据可迁移性、可用性SLA和次级处理商权限；由合同审查入口识别后加载。",
+      "source": "Reference: review of SaaS subscription agreements with attention to the terms that matter most in subscription deals — auto-renewal mechanics, price escalation, data portability, uptime SLAs, and subprocessor rights. Loaded by /commercial-legal:review when a SaaS or subscription agreement is detected.",
+      "source_sha256": "2fb396fbde390f7b6d0c1627f1755a9cc2c465f9ff84dc99c74c59b197391431",
+      "source_path": "skills/saas-msa-review/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "832b09bf31450fa34bc33285b2bcdecc5c26d85dd05ffebc9f4f8bfd202e0a8a": {
+      "description_zh": "将合同审查结果转成业务相关方两分钟可读的摘要，回答是否可以签署及需要了解的事项，适用于采购和其他非法务读者。",
+      "source": "Translates a contract review into a summary the business stakeholder will actually read. Not a legal memo — a two-minute answer to \"can I sign this and what do I need to know.\" Use when user says \"summarize for the business\", \"write this up for [stakeholder]\", \"explain this to procurement\", \"non-legal summary\", or when a review is done and needs to go to someone outside legal.",
+      "source_sha256": "832b09bf31450fa34bc33285b2bcdecc5c26d85dd05ffebc9f4f8bfd202e0a8a",
+      "source_path": "skills/stakeholder-summary/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bfd6331523fa5c5785dbd65732d9b053d16af98eb0f02b1934c42692f954e613": {
+      "description_zh": "依据团队条款手册审查收到的供应商主协议、服务协议等，标记偏差、评估风险、生成具体修订文字，并交给对应审批人。",
+      "source": "Reference: review of an inbound vendor agreement against the team playbook in `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md`. Flags deviations, assesses risk, generates specific redline language, and routes to the right approver. Loaded by /commercial-legal:review when a vendor MSA, services agreement, or similar is detected.",
+      "source_sha256": "bfd6331523fa5c5785dbd65732d9b053d16af98eb0f02b1934c42692f954e613",
+      "source_path": "skills/vendor-agreement-review/SKILL.md",
+      "package_sha256": "0c9d734bf6f9462aeaca9c8acf4b8fb04694f370153431e52f6ea6b305eddd1a",
+      "source_package": "commercial-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bead8b526dfb2f23c2b0891c2f8ff723b76c934a429d3c3b69d7a5491c118b4": {
+      "description_zh": "使用Common Room公司资料和账户信号研究企业，回答公司、域名及账户层面的问题。",
+      "source": "Research a company using Common Room data. Triggers on 'research [company]', 'tell me about [domain]', 'pull up signals for [account]', 'what's going on with [company]', or any account-level question.",
+      "source_sha256": "1bead8b526dfb2f23c2b0891c2f8ff723b76c934a429d3c3b69d7a5491c118b4",
+      "source_path": "skills/account-research/SKILL.md",
+      "package_sha256": "715bee3ec4a503b68c51111dd119a85c64edf3e62beb0580ae66551e2b69f8d8",
+      "source_package": "Common Room-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3c0aad15955bf629155de240f3331b7eb80f628381cb90caa8eaca821887b00": {
+      "description_zh": "利用Common Room信号准备客户或潜在客户通话，整理会前应了解的公司情况。",
+      "source": "Prepare for a customer or prospect call using Common Room signals. Triggers on 'prep me for my call with [company]', 'prepare for a meeting with [company]', 'what should I know before talking to [company]', or any call preparation request.",
+      "source_sha256": "e3c0aad15955bf629155de240f3331b7eb80f628381cb90caa8eaca821887b00",
+      "source_path": "skills/call-prep/SKILL.md",
+      "package_sha256": "715bee3ec4a503b68c51111dd119a85c64edf3e62beb0580ae66551e2b69f8d8",
+      "source_package": "Common Room-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60c184daf6ca6003317df82bac9f98cf836efd55f701967843d7c00794e4e885": {
+      "description_zh": "依据Common Room信号起草针对具体联系人定制的触达邮件或消息。",
+      "source": "Generate personalized outreach messages using Common Room signals. Triggers on 'draft outreach to [person]', 'write an email to [name]', 'compose a message for [contact]', or any outreach drafting request.",
+      "source_sha256": "60c184daf6ca6003317df82bac9f98cf836efd55f701967843d7c00794e4e885",
+      "source_path": "skills/compose-outreach/SKILL.md",
+      "package_sha256": "715bee3ec4a503b68c51111dd119a85c64edf3e62beb0580ae66551e2b69f8d8",
+      "source_package": "Common Room-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "581e6b86c1d1cb558c03defebc18122f11a59d13147d5c5106875d911152e4e3": {
+      "description_zh": "使用Common Room资料研究指定个人或邮箱，了解联系人情况并判断是否为已有互动的潜在线索。",
+      "source": "Research a specific person using Common Room data. Triggers on 'who is [name]', 'look up [email]', 'research [contact]', 'is [name] a warm lead', or any contact-level question.",
+      "source_sha256": "581e6b86c1d1cb558c03defebc18122f11a59d13147d5c5106875d911152e4e3",
+      "source_path": "skills/contact-research/SKILL.md",
+      "package_sha256": "715bee3ec4a503b68c51111dd119a85c64edf3e62beb0580ae66551e2b69f8d8",
+      "source_package": "Common Room-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62fa8db6447e7b4551807ceade53be3e5461d9d66294f4c0be853f4d49e9bfb4": {
+      "description_zh": "使用Common Room Prospector按筛选条件生成目标企业或联系人名单，包括特定类型公司及招聘指定岗位的企业。",
+      "source": "Build targeted account or contact lists using Common Room's Prospector. Triggers on 'find companies that match [criteria]', 'build a prospect list', 'find contacts at [type of company]', 'show me companies hiring [role]', or any list-building request.",
+      "source_sha256": "62fa8db6447e7b4551807ceade53be3e5461d9d66294f4c0be853f4d49e9bfb4",
+      "source_path": "skills/prospect/SKILL.md",
+      "package_sha256": "715bee3ec4a503b68c51111dd119a85c64edf3e62beb0580ae66551e2b69f8d8",
+      "source_package": "Common Room-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19dae98837f4c58b7bb17520834e4db82cb5d779b98ca91e20155d9c3cf3b91d": {
+      "description_zh": "为未来七天的全部外部通话生成综合每周准备简报，支持周一准备和每周安排请求。",
+      "source": "Generate a comprehensive weekly briefing for all external calls in the next 7 days. Triggers on 'weekly prep brief', 'prepare my week', 'what calls do I have this week', 'Monday prep', or any weekly planning request.",
+      "source_sha256": "19dae98837f4c58b7bb17520834e4db82cb5d779b98ca91e20155d9c3cf3b91d",
+      "source_path": "skills/weekly-prep-brief/SKILL.md",
+      "package_sha256": "715bee3ec4a503b68c51111dd119a85c64edf3e62beb0580ae66551e2b69f8d8",
+      "source_package": "Common Room-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41bb640bea47741eb0913760265b41a9104cb6143e1e467ff0cd0a203a06f9e1": {
+      "description_zh": "创建面向特定领域的AI组织，生成精简能力池、经过三轮审查的工作流、文档处理方式及领域上下文引擎。",
+      "source": "Use when creating a new domain-specific AI organization — generates lean capability pool, workflows with three-pass review, document handling, and domain context engine",
+      "source_sha256": "41bb640bea47741eb0913760265b41a9104cb6143e1e467ff0cd0a203a06f9e1",
+      "source_path": "skills/forge/SKILL.md",
+      "package_sha256": "a2337c569616df6bd2d32df27774033f6ffc9177ec4e65f47f1f1056c02b9271",
+      "source_package": "CompanyForge-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3d24ea9388464aa4263d5e3726089afbe70d9c64620d3316a89d7e6a732af5f": {
+      "description_zh": "评估创业或路演比赛条款及是否值得申请，接受链接、PDF、截图、邮件或条款文本，按七项创业者维度生成带原文引语的Markdown、JSON和PDF中立评分表；检查常设比赛社区信号，并与历史评估比较。",
+      "source": "Use this skill when the user asks to review or evaluate a startup competition's terms and conditions, asks whether a pitch competition is worth applying to, shares a competition URL/PDF/screenshot and wants it analyzed, or mentions reviewing T&Cs for IP, equity, exclusivity, or publicity concerns. Input-agnostic — accepts URLs, PDF paths, screenshots, forwarded email text, or pasted clauses. Produces a neutral scorecard (markdown + JSON + PDF) with verbatim quotes, across 7 founder-calibrated dimensions. Adds a community-signal scan for recurring competitions. Falls back to browser automation when sites block AI fetchers. Diffs against any prior check of the same competition.",
+      "source_sha256": "b3d24ea9388464aa4263d5e3726089afbe70d9c64620d3316a89d7e6a732af5f",
+      "source_path": "skills/competition-checker/SKILL.md",
+      "package_sha256": "3aaf411e1bcc3b7fa178ce7cd59e4438ddbc50b43ff7493f3d8535d216196858",
+      "source_package": "Competition Checker-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6fa0b98d4dee435e6ea831bb1bab871ef467c6625221fc377905b124ff8bedbe": {
+      "description_zh": "同时使用gifsicle与gifski压缩动画GIF至200 KB以内或指定大小，提供两个结果比较，并保持帧率、尺寸、帧数与色彩保真度。",
+      "source": "Compress an animated GIF to under 200 KB (or a custom target) using BOTH gifsicle and gifski in parallel and present both outputs for comparison. Preserves FPS, dimensions, frame count, and color fidelity. Use when the user asks to \"compress this GIF\", \"shrink this gif\", \"reduce gif file size\", \"gif too big\", \"optimize a .gif\", or mentions a specific size target like \"under 200 KB\" for a GIF.",
+      "source_sha256": "6fa0b98d4dee435e6ea831bb1bab871ef467c6625221fc377905b124ff8bedbe",
+      "source_path": "skills/compress/SKILL.md",
+      "package_sha256": "82f81a16fba5326dc4d80b6460caf20defaec27314508a443c6a32effc94dea9",
+      "source_package": "compress-gif-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad328c7ef5a5f2a5b3a7087da8811d2c0349619ed860886d962ecc110532c46f": {
+      "description_zh": "通过MCP提供AI智能体结构化谈判协议，处理有约束力的报价、还价、会话凭据、可携带信誉及交易伙伴发现，也支持需求发布、消息转交和Sanctuary结果衔接。",
+      "source": "Structured negotiation protocol for AI agents: binding offers, counteroffers, session receipts, portable reputation, and agent discovery via MCP tools. Use when the agent needs to negotiate, make or respond to offers, check counterparty reputation, find trading partners, publish wants or haves, relay messages, propose the protocol to non-Concordia peers, or bridge outcomes to Sanctuary's sovereignty infrastructure. Triggers: negotiation, deal, offer, counter-offer, counteroffer, reputation, want, have, matching, relay, session receipt, attestation, discovery, agent registry, degraded, protocol proposal, sanctuary bridge, commitment, receipt bundle, portable proof.",
+      "source_sha256": "ad328c7ef5a5f2a5b3a7087da8811d2c0349619ed860886d962ecc110532c46f",
+      "source_path": "skills/concordia/SKILL.md",
+      "package_sha256": "f49161aa7ae1dbe82059e62be1a24cc825fdbff68349065e8e4e2f5f3ff09744",
+      "source_package": "concordia-protocol-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2198e727f7efb9f0dd74f40144357a26a2fa5eb3f0810415d099c35a74674a3": {
+      "description_zh": "为规范、计划或实现差异引入外部对抗审查，保持审查层次与对象一致；代码差异问题收敛至零，文档审查一轮结束，每项发现均先回源核验。",
+      "source": "Use when a spec, a plan, or an implemented diff needs an external adversarial reviewer — locks the reviewer to the altitude of what is being reviewed, converges diff findings to zero (GO), stops document review after one round, and re-verifies every finding on real source before acting.",
+      "source_sha256": "a2198e727f7efb9f0dd74f40144357a26a2fa5eb3f0810415d099c35a74674a3",
+      "source_path": "skills/adversarial-review-to-go/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68639156c37304c1d0f7ea97a9d301166c345294f17891f471209dd96d426f8e": {
+      "description_zh": "在验收执行者任务或宣布完成前，检查实际调用位置并驱动真实运行路径，发现测试通过仍可能遗漏的接线问题。",
+      "source": "Use when accepting an executor's task or about to claim work done — refuses green tests as proof and requires inspecting the call-site and driving the real runtime path to catch missing wire-ups.",
+      "source_sha256": "68639156c37304c1d0f7ea97a9d301166c345294f17891f471209dd96d426f8e",
+      "source_path": "skills/checkpoint-verification/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0fff70c296fba55ca4ad21fc7be1d87668884dc48fb4757141531e5e1877a611": {
+      "description_zh": "新请求设计前确认系统当前与预期规模、用户和权衡重点，按复杂度选择流程；机械操作可跳过规范与计划，分层工作形成阶段路线图。",
+      "source": "Use as the first step on any new request, before design begins — locks a user-confirmed system profile (scale today and expected, users, trade-off priorities) and tiers the request to route it to the right amount of process, so mechanical work skips spec/plan entirely and layered work gets a phased roadmap instead of one giant plan.",
+      "source_sha256": "0fff70c296fba55ca4ad21fc7be1d87668884dc48fb4757141531e5e1877a611",
+      "source_path": "skills/concept-briefing/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "520efb23f68a4ba2e6e4c190d48d40b693a1d69595d06ae4f02854fc1a6e0f99": {
+      "description_zh": "在每次提交前的检查点审查中落实集中枚举、避免魔法字符串与数字、集合和模型名称使用常量，并遵守项目提交消息风格。",
+      "source": "Use at every checkpoint review before committing — enforces centralized enums, no magic string/number literals, constant-based collection/model names, and the project's commit-message style.",
+      "source_sha256": "520efb23f68a4ba2e6e4c190d48d40b693a1d69595d06ae4f02854fc1a6e0f99",
+      "source_path": "skills/convention-commit-gate/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa1364ec08d6ba74ebc0b249b35e39279da2957e442a257592ef8ce97361d29c": {
+      "description_zh": "为协调者维护统一执行上下文文件，将范围、代码惯例、测试规则和汇报要求集中管理，使执行者交接直接引用该文件。",
+      "source": "Use when dispatching work to executors or subagents and the same project conventions keep getting retyped into every prompt — maintains one fixed context file the coordinator writes and updates, so handoffs point at it instead of repeating scope boundaries, code conventions, test rules, and reporting requirements every time.",
+      "source_sha256": "fa1364ec08d6ba74ebc0b249b35e39279da2957e442a257592ef8ce97361d29c",
+      "source_path": "skills/executor-context/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6037aee8fb424eaadcd36a40fc2b66cdc18a9c585a4f17efae16acfd03e56877": {
+      "description_zh": "按代码区域与工作类型建立项目经验账本，开始工作时检索相关经验，在误诊、测试遗漏缺陷或环境陷阱后记录教训，供后续会话与执行者使用。",
+      "source": "Use before starting work in an area to retrieve only the lessons that apply to it, and right after a wrong diagnosis, a defect the tests missed, or an environment trap to record one — keeps hard-won lessons in a per-project ledger indexed by code area and work type, so past mistakes reach the next session and the executors without loading everything every time.",
+      "source_sha256": "6037aee8fb424eaadcd36a40fc2b66cdc18a9c585a4f17efae16acfd03e56877",
+      "source_path": "skills/lessons-ledger/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78d87b11a3c9f234abd4759875d7d18518f4d2da20d216e69d13ee0b720fb38a": {
+      "description_zh": "计划完成后协调外部编码智能体或子智能体实施，涵盖人员能力、首次选择外部智能体的用户确认、角色分工、配额、单任务交接、异步监控、并行隔离和检查点验收。",
+      "source": "Use when a plan is ready and implementation will be delegated to external coding agents or subagents — covers knowing your workforce and what each has proven, choosing between a subagent and an external agent (confirming with the user the first time), role separation, quota management, one-task handoffs, asynchronous dispatch with a monitor on every run (no polling), parallel-run isolation, and the per-task checkpoint protocol.",
+      "source_sha256": "78d87b11a3c9f234abd4759875d7d18518f4d2da20d216e69d13ee0b720fb38a",
+      "source_path": "skills/orchestrating-executors/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4aea5172c936e8fa0b5f5cd6c0a9ee5c88692eb10cd87653a2ac2bca26d3139b": {
+      "description_zh": "向执行者交接前确定并记录项目计划详略，区分规范与计划的层次，并进行九项结构检查，减少执行方向偏差。",
+      "source": "Use after a plan is drafted and before any task is handed to an executor — settles how detailed this project's plans are (asking once and recording it in the working agreement), keeps spec and plan at their own altitudes, and runs nine structural checks that catch the errors which send an executor confidently in the wrong direction.",
+      "source_sha256": "4aea5172c936e8fa0b5f5cd6c0a9ee5c88692eb10cd87653a2ac2bca26d3139b",
+      "source_path": "skills/planning-for-delegation/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87e160df71360b9c81b289ee03cf033b4378cb4a9efd36c2f8130bc69314b781": {
+      "description_zh": "在持续项目会话开始恢复进度，结束或重要发现时更新一份简短指针文件，保存当前状态与下一步，帮助新会话接续。",
+      "source": "Use at the start of any session on an ongoing project to recover where the work stands, and at the end of a session (or on any significant discovery) to record it — maintains a single short pointer file holding current state and the next action, so a fresh session with empty context resumes without re-deriving months of work from git log.",
+      "source_sha256": "87e160df71360b9c81b289ee03cf033b4378cb4a9efd36c2f8130bc69314b781",
+      "source_path": "skills/pointer-handoff/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b7b34f722499a5d44ee2727086d2f09d1321872c6e1714def69fcf125eedbfa": {
+      "description_zh": "建立并复用项目工作约定，记录任务后停止或继续、各角色决策范围、计划详略、提交与语言惯例，并在用户改变工作方式时更新。",
+      "source": "Use before executing or dispatching work on a project, and whenever the user changes how the work should run — keeps one project file of working rules (stop after each task or continue, what coordinator/executor/reviewer may decide, plan detail, commit and language conventions), set up once by asking the user and reused by every later session and every executor.",
+      "source_sha256": "1b7b34f722499a5d44ee2727086d2f09d1321872c6e1714def69fcf125eedbfa",
+      "source_path": "skills/project-working-agreement/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5549982469f064920dcf49c1131ce70a1b13fc503674ccb23282f740560f580": {
+      "description_zh": "作为项目委派多智能体交付入口，说明完整工作流程，并在各阶段指向相应crewmarshal和superpowers技能。",
+      "source": "Use when starting delegated multi-agent delivery on a project — maps the full workflow arc and points to the right crewmarshal skill and superpowers skill at each stage.",
+      "source_sha256": "a5549982469f064920dcf49c1131ce70a1b13fc503674ccb23282f740560f580",
+      "source_path": "skills/using-crewmarshal/SKILL.md",
+      "package_sha256": "475b71911f9626519422c9af0598fd43e170b4a37841c16cb91a4eb036804946",
+      "source_package": "Conductor-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ccc90983f850f119b72b4fe3dc6f1588adc7167a5088b8e6b6bc22bdd221058": {
+      "description_zh": "通过Python或TypeScript的confidentai包调用Confident AI API，管理组织、项目、成员、权限与密钥，以及提示、数据集、追踪、指标、评估和标注等项目资源；组织操作使用组织密钥，项目操作使用项目密钥，不负责应用埋点或运行pytest评估套件。",
+      "source": "Work with the Confident AI API from code using the `confidentai` package for Python and TypeScript. TRIGGER when the user wants to manage an account — organizations, projects, members, invitations, roles, policies, permissions, governance policies, API keys — or to read and write the resources a project holds: prompts, datasets and goldens, traces, spans and threads, metrics and metric collections, test runs, evaluations, dashboards, annotation queues, red teaming. Also TRIGGER to provision or rotate API keys, onboard or offboard team members, set up RBAC (permissions → policies → roles → members), or automate project provisioning. Account-level calls need an Organization API Key (`CONFIDENT_ORG_API_KEY`); everything else needs a Project API Key (`CONFIDENT_PROJ_API_KEY`). DO NOT TRIGGER to instrument an application with tracing or to write a pytest eval suite — that is the `deepeval`, `deepeval-tracing`, and `deepeval-otel` skills; this skill calls the API, it does not run evals or emit spans from a running app.",
+      "source_sha256": "4ccc90983f850f119b72b4fe3dc6f1588adc7167a5088b8e6b6bc22bdd221058",
+      "source_path": "skills/confident-client/SKILL.md",
+      "package_sha256": "9960d586a30cbb0ac248fbfe70e99c3c51d24168e88bcb4c716cc84969e36cd5",
+      "source_package": "Confident AI Client-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b64b880281fc28151928c064b6cafc1250acd83d460377df7b8d43e6374306cf": {
+      "description_zh": "针对代码库的单一目录或领域生成、更新结构化Markdown知识库，范围限于该目录。",
+      "source": "Use when you want to generate or update a structured knowledge base markdown file for a specific folder or domain in the codebase. Scoped to a single directory — not the whole repo.",
+      "source_sha256": "b64b880281fc28151928c064b6cafc1250acd83d460377df7b8d43e6374306cf",
+      "source_path": "skills/explore-domain/SKILL.md",
+      "package_sha256": "2e04af1edeb69906435fd6ad5b0800aaae24d35408fc3e4add685c7f0f0768c6",
+      "source_package": "conotate-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a836c3fc57090592781477a710664595cecb07d36831e2ea690b1e81d70eb045": {
+      "description_zh": "加载由explore-domain技能生成的现有领域知识文件。",
+      "source": "Use when you want to load an existing knowledge generated from explore-domain skill.",
+      "source_sha256": "a836c3fc57090592781477a710664595cecb07d36831e2ea690b1e81d70eb045",
+      "source_path": "skills/read-knowledge/SKILL.md",
+      "package_sha256": "2e04af1edeb69906435fd6ad5b0800aaae24d35408fc3e4add685c7f0f0768c6",
+      "source_package": "conotate-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92cdf07ce35da84eb0744929f80975db1ca2da60f18a2bb0c268d785d0a91020": {
+      "description_zh": "审查代码库全部UI表面的间距、字体、颜色、组件、图标与交互一致性，支持网页、移动端及服务端模板，生成P0至P3问题报告和修复计划，并可按需原地修复。",
+      "source": "Enforce UI consistency across an entire codebase, regardless of language, framework, or styling approach. Detects drift in spacing, typography, colors, components, iconography, and interaction patterns across every UI surface. Works for web (React, Vue, Svelte, Angular, Solid, plain HTML/CSS), native mobile (SwiftUI, Jetpack Compose, Flutter, React Native), and server-rendered templates (Blade, ERB, Twig, Razor, JSP, Pug, Liquid). Generates a consistency report with P0-P3 findings and a remediation plan, then optionally fixes drift in place. Use when the user mentions \"consistency\", \"looks different on page X vs Y\", \"design drift\", \"unify styles\", \"audit components\", or wants to align a codebase to its design system.",
+      "source_sha256": "92cdf07ce35da84eb0744929f80975db1ca2da60f18a2bb0c268d785d0a91020",
+      "source_path": "skills/consistent-ui/SKILL.md",
+      "package_sha256": "aa9eb414d2b348bf8021ad84b334875b3701c20cb40df5879a3d15890c30efbd",
+      "source_package": "consistent-ui-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0447a0cc805195aaaf6cebd22d065ac604d1a2fccacda1eb1f024c1109f92c73": {
+      "description_zh": "通过consultant.dev查询全球承包、咨询与自由职业项目，查看指定项目详情或订阅搜索的每日邮件提醒；不用于长期雇员职位搜索。",
+      "source": "Search live contractor, consultant, and freelance assignments worldwide via consultant.dev. Use when someone wants to find assignments, contract roles, freelance gigs, consulting work, or \"uppdrag\"/\"konsultuppdrag\" in any city or country, get details on a specific assignment, or subscribe to daily email alerts for a search. Not for permanent employment searches.",
+      "source_sha256": "0447a0cc805195aaaf6cebd22d065ac604d1a2fccacda1eb1f024c1109f92c73",
+      "source_path": "skills/consultant-jobs/SKILL.md",
+      "package_sha256": "dcea43864dde06a3c9e97ae31cc70abcf6e4a4692b608a75ff29e8e96ccd83bf",
+      "source_package": "Consultant Assignments-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0bce76efa500fb1a76e17f66687d076c9a1ccf272a15bbbfaaced78aaff552da": {
+      "description_zh": "分析已发布帖子的互动模式，找出有效内容特征，为后续内容优化提供依据。",
+      "source": "Analyze engagement patterns across published posts to identify what works. Use when asked to review performance, find successful patterns, or optimize future content.",
+      "source_sha256": "0bce76efa500fb1a76e17f66687d076c9a1ccf272a15bbbfaaced78aaff552da",
+      "source_path": "skills/analyze-performance/SKILL.md",
+      "package_sha256": "7a8c19a17200522eddeb65be5b82cffed59ce12a166b7f61cb213565f1758380",
+      "source_package": "Content Studio-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07c9eaa50ff878e36ae018b50ef0e544e6e1633739fbe9581a8265306d08f476": {
+      "description_zh": "根据文件、链接、PDF、文章或研究资料构思LinkedIn帖子主题；具体撰写与草稿发展交给write-linkedin-post。",
+      "source": "Generate LinkedIn post ideas from external sources (files, URLs, research). Use when the user provides source material (PDFs, URLs, articles) to brainstorm topics. NOT for writing or developing drafts - use write-linkedin-post instead.",
+      "source_sha256": "07c9eaa50ff878e36ae018b50ef0e544e6e1633739fbe9581a8265306d08f476",
+      "source_path": "skills/brainstorm-linkedin/SKILL.md",
+      "package_sha256": "7a8c19a17200522eddeb65be5b82cffed59ce12a166b7f61cb213565f1758380",
+      "source_package": "Content Studio-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8ecd49b68e749c373ec7b658b8a4d5415a51626b19785fc2ce236926226cdd7": {
+      "description_zh": "从最近30天的LinkedIn帖子构思评论文章主题，支持LinkedIn内容与长篇观点文章之间的素材转换。",
+      "source": "Generate opinion piece ideas from recent LinkedIn posts (last 30 days). Use when asked to find opinion topics, brainstorm article ideas, or cross-pollinate content between LinkedIn and opinion pieces.",
+      "source_sha256": "d8ecd49b68e749c373ec7b658b8a4d5415a51626b19785fc2ce236926226cdd7",
+      "source_path": "skills/brainstorm-opinion/SKILL.md",
+      "package_sha256": "7a8c19a17200522eddeb65be5b82cffed59ce12a166b7f61cb213565f1758380",
+      "source_package": "Content Studio-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd2590e0fae6fc2b8c79f3d5cd097f6e5c9a471b7581d8ea6823ec220d2f4316": {
+      "description_zh": "作为TechWolf内容工作室插件入口，介绍工作流程、选择对应内容技能，或为新作者与仓库开始设置。",
+      "source": "Entry point for the TechWolf content-studio plugin. Use to understand the workflow, pick the right content skill, or start setup for a new author/repository.",
+      "source_sha256": "cd2590e0fae6fc2b8c79f3d5cd097f6e5c9a471b7581d8ea6823ec220d2f4316",
+      "source_path": "skills/content-studio/SKILL.md",
+      "package_sha256": "7a8c19a17200522eddeb65be5b82cffed59ce12a166b7f61cb213565f1758380",
+      "source_package": "Content Studio-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db0f45d80d47430e143e76e249c2711d8bb5d762aae30ef930fc3be1ae1b8a7a": {
+      "description_zh": "为新作者建立内容工作室，复制插件模板，并通过互动了解其声音、主题和内容类型后进行调整。",
+      "source": "Set up a new content studio for a person. Copies the plugin template, adapts it to the person's voice, themes, and content types through interactive discovery. Use when asked to create a content studio for someone new.",
+      "source_sha256": "db0f45d80d47430e143e76e249c2711d8bb5d762aae30ef930fc3be1ae1b8a7a",
+      "source_path": "skills/setup-content-studio/SKILL.md",
+      "package_sha256": "7a8c19a17200522eddeb65be5b82cffed59ce12a166b7f61cb213565f1758380",
+      "source_package": "Content Studio-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eab848e8573ef3dbfbafa27f2c17272f51a3a8b0aa5f9044f4ccc889aefe2cf8": {
+      "description_zh": "撰写、发展或编辑博客文章，将想法转成约800至1200词、带分节结构的长篇草稿。",
+      "source": "Write or develop a blog post. Use for blog content - writing, drafting, developing ideas into drafts, or editing. Longer-form than LinkedIn (800-1200 words) with section structure.",
+      "source_sha256": "eab848e8573ef3dbfbafa27f2c17272f51a3a8b0aa5f9044f4ccc889aefe2cf8",
+      "source_path": "skills/write-blog-post/SKILL.md",
+      "package_sha256": "7a8c19a17200522eddeb65be5b82cffed59ce12a166b7f61cb213565f1758380",
+      "source_package": "Content Studio-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53120ae42720e8a1b81004ede565596bcfa0ae843523aae052468b914ed48412": {
+      "description_zh": "撰写、发展或编辑LinkedIn帖子，将内容想法整理成帖子草稿。",
+      "source": "Write or develop a LinkedIn post. Use ALWAYS for LinkedIn content - writing, drafting, developing ideas into drafts, or editing.",
+      "source_sha256": "53120ae42720e8a1b81004ede565596bcfa0ae843523aae052468b914ed48412",
+      "source_path": "skills/write-linkedin-post/SKILL.md",
+      "package_sha256": "7a8c19a17200522eddeb65be5b82cffed59ce12a166b7f61cb213565f1758380",
+      "source_package": "Content Studio-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "beee524cd061a8dcb44e8301a4fc88f5eb5b837cd23a5c1cc0c5bd498d7df40d": {
+      "description_zh": "撰写、发展或编辑观点评论、报纸评论及类似长篇意见文章。",
+      "source": "Write or develop an opinion piece (opiniestuk/op-ed). Use when asked to write opinion articles, newspaper pieces, or similar long-form opinion content.",
+      "source_sha256": "beee524cd061a8dcb44e8301a4fc88f5eb5b837cd23a5c1cc0c5bd498d7df40d",
+      "source_path": "skills/write-opinion/SKILL.md",
+      "package_sha256": "7a8c19a17200522eddeb65be5b82cffed59ce12a166b7f61cb213565f1758380",
+      "source_package": "Content Studio-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83dadfc2e635f257ab5e91ed0ce84962095e4a96190f272629ab33f506988000": {
+      "description_zh": "对访谈、文档、报告、媒体、问卷或社交文本进行系统内容分析，建立编码方案与码本、开展主题分类和频次统计、评估编码者一致性，并输出Excel码本、编码数据表、频次报告及主题摘要。",
+      "source": "Systematic scientific content analysis of textual material. Use this skill whenever the user wants to: code or categorize text data (interview transcripts, documents, reports, media articles, survey responses, social media posts); develop a coding scheme or codebook; perform thematic analysis; count category frequencies in a corpus; assess inter-coder reliability; or conduct any form of qualitative or quantitative content analysis. Also trigger when the user mentions 'Use Content analysis', 'content analysis', 'coding scheme', 'codebook', 'thematic analysis', 'code the data', 'categorize these texts', 'qualitative coding', 'frequency analysis of themes', or 'inter-coder reliability'. This skill produces structured output files: codebooks (.xlsx), coded data tables, frequency reports, and theme summaries.",
+      "source_sha256": "83dadfc2e635f257ab5e91ed0ce84962095e4a96190f272629ab33f506988000",
+      "source_path": "skills/content-analysis/SKILL.md",
+      "package_sha256": "1c0dfd87c02cb87e29a4866a1908f4512839564dc2187c73b92dba47a69c547f",
+      "source_package": "content-analysis-plugin-5.0.0-beta.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb5620f9e4967cc68022e5edde52c383c8256d5424b1de29a4af9d2a0f37f9e0": {
+      "description_zh": "解释Contentstack Brand Kit的概念、设置、治理与符合品牌的AI生成，将API任务转交相应能力或参考技能，并在宣称可用前核对品牌和安全规则。",
+      "source": "Advise users on Contentstack Brand Kit concepts, setup, governance, and on-brand AI generation. Route API-specific tasks to the right Brand Kit capability or reference skill, and enforce brand and safety rules before presenting anything as ready.",
+      "source_sha256": "bb5620f9e4967cc68022e5edde52c383c8256d5424b1de29a4af9d2a0f37f9e0",
+      "source_path": "skills/brand-kit-assistant/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aec9801e88268c61d7a260a8dd0583fc59188d692211df04e774ec9788da671d": {
+      "description_zh": "指导Contentstack资源组织、交付和转换，包括目录结构、图片交付API变换、发布生命周期、CDN行为与常见限制。",
+      "source": "Advise developers on organizing, delivering, and transforming assets in Contentstack. Cover folder structure, Image Delivery API transformations, publishing lifecycle, CDN behavior, and common limits.",
+      "source_sha256": "aec9801e88268c61d7a260a8dd0583fc59188d692211df04e774ec9788da671d",
+      "source_path": "skills/cms-assets/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "675864fbe715eabb928c6e4dd5bbd9b620b3610abb30886607091f5e21993a76": {
+      "description_zh": "指导Contentstack分支隔离内容开发及别名实现无停机内容部署，覆盖分支策略、局部与全局模块、CI/CD、合并和回滚。",
+      "source": "Advise developers on using Contentstack branches for isolated content development and aliases for zero-downtime content deployments. Cover branch strategy, branch-specific vs global modules, CI/CD integration, merge behavior, and rollback patterns.",
+      "source_sha256": "675864fbe715eabb928c6e4dd5bbd9b620b3610abb30886607091f5e21993a76",
+      "source_path": "skills/cms-branches-aliases/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6654be1fb47d459ced84495bdb38d7d03b9715104bc6e13327030f14a28d614": {
+      "description_zh": "指导以简洁可复用结构建立Contentstack内容模型，说明内容类型、引用、全局字段、分组、模块块、JSON富文本、分类体系和标签的适用场景，避免过度建模与深层引用链。",
+      "source": "Guide developers to model content in Contentstack using the simplest reusable structure. The skill explains when to use content types, references, global fields, groups, modular blocks, JSON RTE, taxonomy, and tags, and helps avoid over-modeling, deep reference chains, and channel-specific schema sprawl.",
+      "source_sha256": "f6654be1fb47d459ced84495bdb38d7d03b9715104bc6e13327030f14a28d614",
+      "source_path": "skills/cms-data-modeling-best-practices/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "331ee851730a83acdc1f27ccf308b493ab5e55446f9805bf005f8b3610f9eeab": {
+      "description_zh": "指导Contentstack内容条目的查询、本地化、版本管理、发布与结构组织，重点覆盖CDA、引用展开、分页、批量操作及Sync API。",
+      "source": "Advise developers on querying, localizing, versioning, publishing, and structuring Contentstack entries for efficient delivery. Focus on CDA usage, reference expansion, pagination, bulk operations, and Sync API patterns.",
+      "source_sha256": "331ee851730a83acdc1f27ccf308b493ab5e55446f9805bf005f8b3610f9eeab",
+      "source_path": "skills/cms-entries/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6edb29197e6b1706e6d90bd80994c34fa7762ec9251a6a4046b54642b234fc06": {
+      "description_zh": "指导Contentstack环境配置与内容发布，解释交付和预览令牌、Sync API、CDN及发布队列行为。",
+      "source": "Advise developers on configuring environments, publishing content, using delivery and preview tokens, leveraging the Sync API, and understanding CDN and publish queue behavior in Contentstack.",
+      "source_sha256": "6edb29197e6b1706e6d90bd80994c34fa7762ec9251a6a4046b54642b234fc06",
+      "source_path": "skills/cms-environments-publishing/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3da7514cc10cc63b9a80526c3feff6c3837c2d6d0a1ff792bae11379cac2a0c4": {
+      "description_zh": "诊断Contentstack Live Preview与Visual Builder实现，追踪预览上下文和失效接口约定，针对CSR、SSR、SSG、中间层及标记流程建议最小正确修复。",
+      "source": "Diagnose and guide Contentstack Live Preview and Visual Builder implementations. Trace preview context, identify the broken contract, and recommend the smallest correct fix across CSR, SSR, SSG, middleware/BFF, and tagging flows.",
+      "source_sha256": "3da7514cc10cc63b9a80526c3feff6c3837c2d6d0a1ff792bae11379cac2a0c4",
+      "source_path": "skills/cms-live-preview-visual-builder-support-assistant/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2168b39814fcd3bae6d6bd7e32fd5a0312de25fdb644aacb2a4ef92b6e8d8d24": {
+      "description_zh": "指导Contentstack多语言设置，解释回退链、已本地化与未本地化条目、不可本地化字段和多语言发布。",
+      "source": "Advise developers on Contentstack localization: language setup, fallback chains, localized vs unlocalized entries, non-localizable fields, and multi-locale publishing.",
+      "source_sha256": "2168b39814fcd3bae6d6bd7e32fd5a0312de25fdb644aacb2a4ef92b6e8d8d24",
+      "source_path": "skills/cms-localization/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99a73f61ea2614c9b67406e63ca0292aadba75fc4ada02f549870b2240869932": {
+      "description_zh": "指导使用Contentstack Releases协调原子内容部署，覆盖版本创建、项目管理、分阶段部署、避免Webhook事件风暴及CI/CD集成。",
+      "source": "Advise developers on using Contentstack Releases for coordinated, atomic content deployment. Cover release creation, item management, staged deployment, webhook storm prevention, and CI/CD integration.",
+      "source_sha256": "99a73f61ea2614c9b67406e63ca0292aadba75fc4ada02f549870b2240869932",
+      "source_path": "skills/cms-releases/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bb7e87480b31de46c577d4e0dbb61555e8fa76588ba4567d5201589da333b25": {
+      "description_zh": "指导设计Contentstack角色、权限、团队与令牌访问，解释内置和自定义角色、权限合并及团队访问，提供最小权限建议。",
+      "source": "Advise developers on designing roles, permissions, teams, and token access in Contentstack. Explain built-in roles, custom roles, permission merging, team-based access, and token capabilities with least-privilege guidance.",
+      "source_sha256": "1bb7e87480b31de46c577d4e0dbb61555e8fa76588ba4567d5201589da333b25",
+      "source_path": "skills/cms-roles-permissions/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b9caed44d580389da5964dfe3d028a979300f06b84b9997e04dcbcd06c633c1": {
+      "description_zh": "指导使用Contentstack Taxonomy进行层级内容分类与交付端筛选，比较标签、标识和引用，覆盖层级设计、CDA查询、本地化与导入导出。",
+      "source": "Advise developers on using Contentstack Taxonomy for structured, hierarchical content classification and delivery-side filtering. Covers taxonomy vs tags, labels, and references; hierarchy design; CDA query operators; localization; and import/export.",
+      "source_sha256": "7b9caed44d580389da5964dfe3d028a979300f06b84b9997e04dcbcd06c633c1",
+      "source_path": "skills/cms-taxonomy/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a797cb9ae3e971040ddb86300c2ef69de322aa587cd2aed34e3e466d5c9b53d": {
+      "description_zh": "按前端、后端、自动化和第三方应用场景选择Contentstack认证方式与令牌类型，涵盖安全、限流及SSO考量。",
+      "source": "Advise developers on choosing the right Contentstack authentication method and token type for frontend, backend, automation, and third-party app use cases. Include security guidance, rate-limit awareness, and SSO considerations.",
+      "source_sha256": "8a797cb9ae3e971040ddb86300c2ef69de322aa587cd2aed34e3e466d5c9b53d",
+      "source_path": "skills/cms-tokens-authentication/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e98b762a777fd5ba5d9bb491ffce224c94d85865939c3c2f1c7a71dba11daf5e": {
+      "description_zh": "指导使用Contentstack Variants和Personalize提供面向受众的内容，说明变体与独立条目的选择、变体组及CMS集成。",
+      "source": "Advise developers on using Contentstack Variants and Personalize for audience-targeted content. Explain when to use variants versus separate entries, how variant groups work, and how to integrate Personalize with the CMS.",
+      "source_sha256": "e98b762a777fd5ba5d9bb491ffce224c94d85865939c3c2f1c7a71dba11daf5e",
+      "source_path": "skills/cms-variants-personalization/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4de2a1fbf39612dce007d3d50501cc45f00c7a35fc3fa40d1b1bb1e0c14659e1": {
+      "description_zh": "指导配置和接收Contentstack Webhook实时通知，覆盖事件、载荷、签名校验、重试、Release触发的事件风暴及可靠接收端设计。",
+      "source": "Advise developers on configuring and consuming Contentstack webhooks for real-time event notifications. Cover event channels, payload structure, signature verification, retry behavior, release-triggered webhook storms, and reliable receiver design.",
+      "source_sha256": "4de2a1fbf39612dce007d3d50501cc45f00c7a35fc3fa40d1b1bb1e0c14659e1",
+      "source_path": "skills/cms-webhooks/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30f31d7fde4312395c1c9e6cbb8b2f530bd03b71acd45dffaa759f62248fbf2b": {
+      "description_zh": "指导Contentstack工作流与发布规则治理，涵盖阶段、转换限制、审批、发布控制、自动化钩子与常见问题。",
+      "source": "Advise developers on designing and configuring Contentstack workflows and publish rules for content governance. Cover stage design, transition restrictions, approval flows, publish governance, automation hooks, and common pitfalls.",
+      "source_sha256": "30f31d7fde4312395c1c9e6cbb8b2f530bd03b71acd45dffaa759f62248fbf2b",
+      "source_path": "skills/cms-workflows/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "731b586a7a9c704dea9fefeba7c182b32489bed36cb09c96bf5bb76e2f2e6b7e": {
+      "description_zh": "将Contentstack Developer Hub与Marketplace应用想法转成实现，选择UI位置、设计架构、生成符合样板的React与TypeScript代码，并排查SDK、清单、代理和发布问题。",
+      "source": "Turn Contentstack Developer Hub and Marketplace app ideas into concrete implementations. Choose the right UI location, map the architecture, generate boilerplate-aligned React/TypeScript code, and troubleshoot setup, SDK, manifest, proxy, and publishing issues.",
+      "source_sha256": "731b586a7a9c704dea9fefeba7c182b32489bed36cb09c96bf5bb76e2f2e6b7e",
+      "source_path": "skills/developer-hub-app-architect/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e40a4477dd4962879d43630c4c4250ad4a89185b5bfb2f7fdfb77f2f0d415272": {
+      "description_zh": "使用@contentstack/delivery-sdk编写TypeScript，处理条目、资源、引用、筛选、排序、分页、语言、Live Preview与Visual Builder，并在方法和链式调用顺序关键时核对SDK规范。",
+      "source": "Help agents write correct, production-ready TypeScript using `@contentstack/delivery-sdk` for Contentstack entries, assets, references, filtering, sorting, pagination, locale, Live Preview, and Visual Builder support. Verify SDK behavior against the Delivery SDK Spec when method names, options, or chain order matter.",
+      "source_sha256": "e40a4477dd4962879d43630c4c4250ad4a89185b5bfb2f7fdfb77f2f0d415272",
+      "source_path": "skills/dx-delivery-sdk/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d5ed5ad51ee068c870ede31fca565cda3a004b4923d0420c274c980ccdf0765": {
+      "description_zh": "将Contentstack Delivery SDK代码从JavaScript迁移至TypeScript，重写初始化、条目、资源、查询、分页、缓存、工具、分类与图片转换用法，保持行为并说明类型差异。",
+      "source": "Migrate Contentstack Delivery SDK code from JavaScript to TypeScript. Rewrite setup, initialization, Stack, Entries, Assets, Query, pagination, cache, utils, taxonomy, and image transform usage while preserving behavior and calling out TypeScript-specific differences.",
+      "source_sha256": "6d5ed5ad51ee068c870ede31fca565cda3a004b4923d0420c274c980ccdf0765",
+      "source_path": "skills/dx-migrate-js-to-ts-sdk/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b0218bf3b763086136d2a758297387073abd1644d3a043803f2b142c173003c": {
+      "description_zh": "读取Contentstack Launch项目环境变量，与本地.env.example比较，向目标环境补充缺失的键。",
+      "source": "Fetch environment variables from a Contentstack Launch project, compare them with a local `.env.example` file, and patch the target environment to add any missing keys.",
+      "source_sha256": "1b0218bf3b763086136d2a758297387073abd1644d3a043803f2b142c173003c",
+      "source_path": "skills/launch-sync-environment-variables-from-env-example/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51b4df7d4ce795cff31d2d1bf505936b273c04e646e076ceb2f53a27c8b770ad": {
+      "description_zh": "触发指定环境的Contentstack Launch部署并持续查询至完成；失败或取消时读取部署日志，诊断可能原因并建议后续措施。",
+      "source": "Trigger a Launch deployment for a specific environment, then poll its status until completion. If the deployment fails or is cancelled, fetch the deployment log and diagnose likely causes with next-step recommendations.",
+      "source_sha256": "51b4df7d4ce795cff31d2d1bf505936b273c04e646e076ceb2f53a27c8b770ad",
+      "source_path": "skills/launch-trigger-and-monitor-launch-deployments/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ee2c51c0c7187ff973054301f2498688b8444502102314da5a49798b0931c4b": {
+      "description_zh": "按分步流程将其他CMS迁移至Contentstack，验证前提、设置进度检查点并总结结果；当前支持Contentful，覆盖模型、内容、资源、语言、应用集成和网站代码，其他来源平台仍在计划中。",
+      "source": "Migration companion for moving to Contentstack from another CMS. Guides content and application migration through a structured, step-by-step workflow. Currently supports migrations from Contentful, with additional source platforms planned. Use when users want to migrate, move, switch, port, or re-platform to Contentstack, including content models, content, assets, locales, application integrations, or website code. Trigger on requests such as \"migrate to Contentstack\", \"move to Contentstack\", \"switch to Contentstack\", \"migrate from Contentful\", \"move my Contentful space\", \"port my CMS\", or similar migration-related requests. The skill validates prerequisites, guides the migration process, provides progress checkpoints, and delivers a completion summary. Prefer this skill whenever a Contentstack migration is requested.",
+      "source_sha256": "9ee2c51c0c7187ff973054301f2498688b8444502102314da5a49798b0931c4b",
+      "source_path": "skills/migration-companion/SKILL.md",
+      "package_sha256": "72ce5b81e54406983ab6b6caa1b11b9511bfb2b37b8d52e5b1600a4482b5baff",
+      "source_package": "Contentstack Agent Skills-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93b369ec4c0fb5875c0eba9fa25f0e3dc7a9a35e8b7ad2410204add4b940185d": {
+      "description_zh": "作为实施会话入口，从vault待办选择任务并拆成步骤，依次编码、测试、架构核验、部署和冒烟检查，标记步骤完成后接续下一步。",
+      "source": "Orchestration session dev : pick todo vault, decomposer en steps, coder, tester, archvet, deploy, smoke, step_done, next. Invoquer en debut de session d''implementation.",
+      "source_sha256": "93b369ec4c0fb5875c0eba9fa25f0e3dc7a9a35e8b7ad2410204add4b940185d",
+      "source_path": "skills/session-code/SKILL.md",
+      "package_sha256": "052dd89a314522cae06684e70f3deeb528624f6d243a071fa38300f24d177df7",
+      "source_package": "context-vault-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28ad5ebd687f62fc0b77db6a1a70674c18d8860676652bd30382a92c98f6a36b": {
+      "description_zh": "监督多终端会话，查询vault检查点、回答智能体问题并核对架构一致性；监督期间不编码或修改文件。",
+      "source": "Superviseur de session multi-terminaux. Poll les checkpoints vault, répond aux questions des agents, vérifie la cohérence architecturale. Invoquer en début de session de supervision (pas de code, pas de modif fichier).",
+      "source_sha256": "28ad5ebd687f62fc0b77db6a1a70674c18d8860676652bd30382a92c98f6a36b",
+      "source_path": "skills/supervisor/SKILL.md",
+      "package_sha256": "052dd89a314522cae06684e70f3deeb528624f6d243a071fa38300f24d177df7",
+      "source_package": "context-vault-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9ae9f0150a1624d2d16654b466c934e63fd77fbd24ce0e67e873704107a69bd": {
+      "description_zh": "使用Context.dev获取当前公开网页、公司新闻、网站或文档资料，支持搜索、抓取、爬取、截图、结构化提取、文档解析、品牌情报、变化监测与批量处理；已提供答案或涉及私有账户资料时不适用。",
+      "source": "Use Context.dev when a task needs current public-web, company-news, website, or document data. Search the live web; read, scrape, crawl, or screenshot sites; extract structured data; parse documents; retrieve brand intelligence; monitor changes; or process large batches. Trigger even when Context.dev is not named. Do not trigger when supplied content already contains the answer, the task is about private account data, or no web or file retrieval is needed.",
+      "source_sha256": "c9ae9f0150a1624d2d16654b466c934e63fd77fbd24ce0e67e873704107a69bd",
+      "source_path": "skills/context-dev/SKILL.md",
+      "package_sha256": "9d43d67a2f5687b8aa2676e90cc211dc552335406f16da611f738c1db641d9d9",
+      "source_package": "Context.dev-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f80de25def0bb07f87d9e11fcda03b7b39f2b8ab1547652b9dc763b800e00e11": {
+      "description_zh": "分析近期提示使用模式并提出优化建议，帮助改进提示、降低令牌成本，查看RLM循环对项目积累的学习结果。",
+      "source": "Analyze recent prompt patterns and suggest optimizations. Use when the user wants to improve their prompting patterns, reduce token costs, or see what the RLM flywheel has learned about their project.",
+      "source_sha256": "f80de25def0bb07f87d9e11fcda03b7b39f2b8ab1547652b9dc763b800e00e11",
+      "source_path": "skills/optimize/SKILL.md",
+      "package_sha256": "42c3312b26138da9a1cef178413ea8597fed28dfd8beec626361b21966b4133a",
+      "source_package": "contextstellar-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b6daef391fa052cd61b2c93395ed48a3e299447a7c7004f3a8ac61c6da8b8f1": {
+      "description_zh": "评估提示的上下文工程质量，支持评分、分析、优化及发送给大模型前的质量审查。",
+      "source": "Score a prompt for context engineering quality. Use when the user asks to score, analyze, or optimize a prompt, or when reviewing prompt quality before sending to an LLM.",
+      "source_sha256": "5b6daef391fa052cd61b2c93395ed48a3e299447a7c7004f3a8ac61c6da8b8f1",
+      "source_path": "skills/score/SKILL.md",
+      "package_sha256": "42c3312b26138da9a1cef178413ea8597fed28dfd8beec626361b21966b4133a",
+      "source_package": "contextstellar-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31d36b79b12a2f1c8799c487d46e9d8ddeb2bc1258887dcd7bde99c1527184e5": {
+      "description_zh": "配置ContextStellar云模式以支持RLM学习和仪表板，包括API密钥、项目连接及从仅本地评分升级。",
+      "source": "Set up ContextStellar cloud mode for RLM learning and dashboards. Use when the user wants to configure an API key, connect their project, or upgrade from local-only scoring.",
+      "source_sha256": "31d36b79b12a2f1c8799c487d46e9d8ddeb2bc1258887dcd7bde99c1527184e5",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "42c3312b26138da9a1cef178413ea8597fed28dfd8beec626361b21966b4133a",
+      "source_package": "contextstellar-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb7a067fad1c424e88d3f75a446be576a6c2cf4353859b22457b1b6b2b8026a1": {
+      "description_zh": "显示当前项目的ContextStellar评分统计、等级分布与RLM学习进展，分析提示质量趋势和权重学习。",
+      "source": "Show ContextStellar scoring statistics, RLM learning progress, and grade distribution for the current project. Use when the user asks about their scoring stats, prompt quality trends, or RLM weight learning.",
+      "source_sha256": "eb7a067fad1c424e88d3f75a446be576a6c2cf4353859b22457b1b6b2b8026a1",
+      "source_path": "skills/stats/SKILL.md",
+      "package_sha256": "42c3312b26138da9a1cef178413ea8597fed28dfd8beec626361b21966b4133a",
+      "source_package": "contextstellar-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c570eb38875addef4cfa82ed72618ce8368391579778a465a346dfc61c2e110": {
+      "description_zh": "把contezza-for-commerce-agents适配器接入Anthropic commerce-agents蓝图，安装并将ShoppingAgent指向Verified Answers数据源，对受治理的商户后端进行冒烟检查。",
+      "source": "Wire the contezza-for-commerce-agents adapter into Anthropic's commerce-agents blueprint — install, point a ShoppingAgent at a Verified Answers feed, and smoke-test the governed backend. Use when setting up a shopping agent on verified merchant data.",
+      "source_sha256": "8c570eb38875addef4cfa82ed72618ce8368391579778a465a346dfc61c2e110",
+      "source_path": "skills/adapter-quickstart/SKILL.md",
+      "package_sha256": "c26929024861c347582e053ce3007ee378e87282d26d7c6a5624f0953e94a413",
+      "source_package": "Contezza AI for Merchants-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "703752226ca4057c00e96bcda3f3e9c665445252771acb6263287e1dbe30a5c1": {
+      "description_zh": "核验并排查插件附带的Contezza AI for Merchants MCP连接，适用于安装后或工具未显示、调用失败时。",
+      "source": "Verify and troubleshoot the Contezza AI for Merchants MCP connection bundled with this plugin. Use right after installing the plugin, or when Contezza tools are not appearing or failing.",
+      "source_sha256": "703752226ca4057c00e96bcda3f3e9c665445252771acb6263287e1dbe30a5c1",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "c26929024861c347582e053ce3007ee378e87282d26d7c6a5624f0953e94a413",
+      "source_package": "Contezza AI for Merchants-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec86f598158516910d41e8149e1bb98fb0149b74b92f890b9a92919fd7a89456": {
+      "description_zh": "为商户品牌编写与验证Contezza Verified Answers YAML数据源，处理条目结构、引用锚点、矛盾信息和静态检查，帮助内容供智能体使用。",
+      "source": "Author and validate a Contezza Verified Answers feed (YAML) for a merchant brand — entry structure, citation anchors, contradiction handling, and a lint pass. Use when creating or editing a verified-answer feed, or when asked to make merchant content agent-ready.",
+      "source_sha256": "ec86f598158516910d41e8149e1bb98fb0149b74b92f890b9a92919fd7a89456",
+      "source_path": "skills/verified-feed-authoring/SKILL.md",
+      "package_sha256": "c26929024861c347582e053ce3007ee378e87282d26d7c6a5624f0953e94a413",
+      "source_package": "Contezza AI for Merchants-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3111539315082bd95ff4bc631128b48cab50f85f8f78a10c28201329ef0356a": {
+      "description_zh": "设计、组装、测试、发布与分享Controller AI用户智能体，配置指令、知识文件、工作流工具及集成动作，验证草稿或线上对话。",
+      "source": "Design, assemble, test, publish and share user-facing Controller AI agents built from instructions, knowledge files, workflow tools and ready integration actions. Use when creating or editing an agent, choosing its tool architecture, attaching tools, verifying draft or live conversations, or publishing and sharing it.",
+      "source_sha256": "d3111539315082bd95ff4bc631128b48cab50f85f8f78a10c28201329ef0356a",
+      "source_path": "skills/controllerai-agents/SKILL.md",
+      "package_sha256": "0d0f8241801d3b06bf33a07a0c3cd5eaf8e6a63ab81e2c8e5ec21ccbe4aefbe6",
+      "source_package": "Controller AI-0.3.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42bf321ebd66d59c57c031fb5f6bcaa67b7ed4dd2a00f7f300a23a86cb884f52": {
+      "description_zh": "配置并核验Controller AI工作流中的AI步骤，包括Ask AI节点的服务商、模型、提示和类型化响应，以及调用平台智能体的动作，支持生成、分类、提取、摘要和结构化输出。",
+      "source": "Configure and verify AI steps inside Controller AI workflows: the native Ask AI node, its provider, model, prompt and typed response, and the workflow actions that talk to a platform agent. Use when a flow needs generation, classification, extraction, summarization or structured AI output, or must create or message an agent conversation.",
+      "source_sha256": "42bf321ebd66d59c57c031fb5f6bcaa67b7ed4dd2a00f7f300a23a86cb884f52",
+      "source_path": "skills/controllerai-ai-nodes/SKILL.md",
+      "package_sha256": "0d0f8241801d3b06bf33a07a0c3cd5eaf8e6a63ab81e2c8e5ec21ccbe4aefbe6",
+      "source_package": "Controller AI-0.3.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
