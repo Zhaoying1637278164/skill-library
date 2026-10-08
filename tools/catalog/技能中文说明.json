@@ -16729,6 +16729,1086 @@
       "package_sha256": "1096b6fbac69cb2d2bd580c014d3438ce1cf1f388945e97e25f3e53a60b465b9",
       "source_package": "Cairn Memory — CLAUDE.md & agent memory that stays true-1.4.1-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c332304a645055b3ac81f54497aa8b44ea4170005489062e9ed3f6036c318407": {
+      "description_zh": "追溯AI产品显示或决策使用的置信分、验证徽章、费用用量、评测通过率、基准及回退答案的真实写入来源和失败行为，识别无人写入、失败变零、调试专有遥测、无法失败的评测、静默模型回退和费用无上限；提供自检扫描器及修复验证。",
+      "source": "Checks whether the numbers an AI product shows or decides on are real (confidence scores, verified badges, cost and usage meters, eval pass rates, benchmarks, fallback answers) by tracing each back to what writes it and what happens when that fails. Finds inputs nothing writes, failures that become a believable 0, telemetry only on in debug, evals that can't fail, silent model fallbacks and uncapped cost. Ships a self-testing scanner and fixes proven to fail. Use it before investigating any one of these by hand. Use it whenever someone asks for an AI feature audit, RAG health check or AI due diligence; says a confidence score never moves, a 'verified' badge is on everything, evals pass even when the prompt is broken, the LLM bill spiked, customers show 0 tokens used, the app may be falling back to a cheaper model, or a benchmark can't be reproduced; or is about to publish an accuracy or cost number, even if they never say \"audit\".",
+      "source_sha256": "c332304a645055b3ac81f54497aa8b44ea4170005489062e9ed3f6036c318407",
+      "source_path": "skills/ai-signals-audit/SKILL.md",
+      "package_sha256": "2fd8a29463bdace236e06e4a602ed06f0127a8cd4f520a700da990a4cd0d635f",
+      "source_package": "Cairn Signals — are your AI product's numbers real_-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "028203ddaed5ccc89b4678acc1133484ffc4b9f1bfde7fe5f08a50a4cea667ce": {
+      "description_zh": "拆解编码智能体的提交、PR描述或会话总结中的完成宣称，依据证据逐项判断成立、不成立或无法确认，并用非技术人员可理解的文字解释；也调查反复修同一问题、实际生效文件与死代码循环，提供只读自检脚本。",
+      "source": "Checks whether what a coding agent said it did is true — \"fixed the bug\", \"added tests\", \"all tests pass\", \"removed dead code\", \"no behaviour change\", \"verified\" — by splitting its commits, PR description or chat summary into claims and giving each a verdict (holds, doesn't hold, can't tell) with evidence, written for a founder who doesn't read code. Also unsticks an agent that keeps fixing the same thing. It finds which of two look-alike files is live, dead code kept alive by other dead code, and writes the CLAUDE.md rules that stop the loop. Ships a read-only, self-testing script. Use it whenever someone asks to verify, check or audit what Claude, Cursor, Codex or any AI agent did; says \"did it really fix it\", \"can I trust this PR\", \"it says tests pass\", \"it keeps breaking the same thing\", \"it's going in circles\"; is about to merge AI-written code they can't read; or inherited an AI-built codebase, even if they never say \"verify\".",
+      "source_sha256": "028203ddaed5ccc89b4678acc1133484ffc4b9f1bfde7fe5f08a50a4cea667ce",
+      "source_path": "skills/verify-agent-claims/SKILL.md",
+      "package_sha256": "cbcfde8dc1b07be148d5d2c9ea14dbc0a138582cb4eac06ccf64a910c16a3987",
+      "source_package": "Cairn Verify — did the AI really fix it_-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd30cefde91b2e3b02873c58c45b8d7f1c23fccb5dcb3e0f929e53d7ef6f1131": {
+      "description_zh": "自诊断AI产品定价系统，识别分层、用量或混合模式，分析代码、Git历史和配置，评估页面代码一致性、实验速度、隐藏SKU、计费成熟度、单位及生命周期六信号，并检查积分结转购买取消等模式专项问题，给出路径行号。",
+      "source": "A skill for self-diagnosing the pricing system of an AI product. Detects the pricing model (tiered, usage-based, or hybrid) and analyzes the project codebase, git history, and configuration files. Measures pricing maturity across 6 signals (page-code consistency, experimentation velocity, hidden SKUs, billing stack maturity, unit clarity, lifecycle coverage), with model-specific deep checks — usage-based projects additionally evaluate credit carryover, decoy pricing, one-time credit purchase, cancellation flow (bonus credits vs discount), credit meter, and credit usage email. Findings include exact file paths and line numbers. Use this when a user wants to diagnose pricing defects in their own project.",
+      "source_sha256": "cd30cefde91b2e3b02873c58c45b8d7f1c23fccb5dcb3e0f929e53d7ef6f1131",
+      "source_path": "skills/pricing-diagnose/SKILL.md",
+      "package_sha256": "6145e0d3992f27140eb6cf88ca897b84c90a465d6246f7fbcd1f173a58b668d4",
+      "source_package": "cairo-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e51e8b301501763307b58d815fd82bb24c1975485d229c801cfd4cf9c4fe40f": {
+      "description_zh": "指导在Claude Code使用CallRemind进行自动AI语音通话、预约提醒及管理智能体、线索和通知。",
+      "source": "Guide to using CallRemind from Claude Code — make automated AI voice calls, schedule reminders, and manage agents, leads, and notifications.",
+      "source_sha256": "8e51e8b301501763307b58d815fd82bb24c1975485d229c801cfd4cf9c4fe40f",
+      "source_path": "skills/callremind/SKILL.md",
+      "package_sha256": "2fac7d664cdd5e5cca49895fcbad63099f3a6637e91537848f2b3a8648e72b4c",
+      "source_package": "CallRemind-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e184a02acd3689a8b2d2452fe38d9d1c2f30fa9d573f55ba8f0c17b4e9d37f5a": {
+      "description_zh": "依据大纲或简报在Canva创建符合品牌的演示文稿，可接收消息文本、设计ID、文档名称或设计链接。",
+      "source": "Create on-brand Canva presentations from an outline or brief. Use when the user asks to create a branded presentation, make an on-brand deck, turn an outline into slides, or generate a presentation from a brief. Input can be text directly in the message, a Canva design ID, a reference to a Canva doc by name, or a Canva design link (e.g., https://www.canva.com/design/...).",
+      "source_sha256": "e184a02acd3689a8b2d2452fe38d9d1c2f30fa9d573f55ba8f0c17b4e9d37f5a",
+      "source_path": "inactive-skills/branded-presentation/SKILL.md",
+      "package_sha256": "bc63a358cb8e8fe08c39cac0cc0b2ff18f2995ebcd7bfd255eb4b0ee06046045",
+      "source_package": "canva-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f45da3484a920a9cf9d4faf73436d1dc3723fdb59fe5f15ae9a04679bc5bd7e1": {
+      "description_zh": "将教案转为Canva教学幻灯片，支持粘贴教案、设计ID、文档或设计名称与链接，用于课堂或学生教学演示。",
+      "source": "Turn a lesson plan into a teaching slide deck in Canva. Use when the user asks to build classroom slides from a lesson plan, convert a lesson plan into a presentation, make a teaching deck, create school slides from an outline, or generate a lesson deck for students. Input can be a lesson plan pasted in the message, a Canva design ID, a Canva doc or design by name, or a Canva design link (e.g., https://www.canva.com/design/...).",
+      "source_sha256": "f45da3484a920a9cf9d4faf73436d1dc3723fdb59fe5f15ae9a04679bc5bd7e1",
+      "source_path": "inactive-skills/classroom-helper/SKILL.md",
+      "package_sha256": "bc63a358cb8e8fe08c39cac0cc0b2ff18f2995ebcd7bfd255eb4b0ee06046045",
+      "source_package": "canva-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5ec34c143072d3feeeb8ebb485b37be11406270a36394420e39ef23ab29a219": {
+      "description_zh": "将Canva设计的所有文字翻译为指定语言并创建译后副本，用于本地化设计。",
+      "source": "Translate all text in a Canva design to another language, creating a translated copy. Faster than manually copying and editing each text box in Canva's editor. Use when users say \"translate my design to [language]\", \"make a Spanish/French/etc version\", or \"localize my Canva design\".",
+      "source_sha256": "f5ec34c143072d3feeeb8ebb485b37be11406270a36394420e39ef23ab29a219",
+      "source_path": "inactive-skills/design-translation/SKILL.md",
+      "package_sha256": "bc63a358cb8e8fe08c39cac0cc0b2ff18f2995ebcd7bfd255eb4b0ee06046045",
+      "source_package": "canva-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af1d55fb37a6d52bcb81c47a1a8b34bf3b2f5f012106e48505b84a4ea11bf26e": {
+      "description_zh": "通过生成或改写演讲者备注，让Canva演示适配目标讲述时长或均分各页时间；不修改可见幻灯片文字。",
+      "source": "Fit a Canva presentation to a target speaking duration by generating or rewriting presenter notes only (visible slide text is not edited). Use when users say \"make this a 10-minute presentation\", \"split time evenly across slides\", \"generate speaker notes for a 15-minute talk\", \"fit my deck to [duration]\", or \"how long per slide for a 20-minute slot\".",
+      "source_sha256": "af1d55fb37a6d52bcb81c47a1a8b34bf3b2f5f012106e48505b84a4ea11bf26e",
+      "source_path": "inactive-skills/presentation-time-fitting/SKILL.md",
+      "package_sha256": "bc63a358cb8e8fe08c39cac0cc0b2ff18f2995ebcd7bfd255eb4b0ee06046045",
+      "source_package": "canva-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "258fe3da1b74096039190116945ad673388b6cd79ad9292a88be7e4e8756fa7c": {
+      "description_zh": "通过Car Image API获取指定真实车辆和漆色的带纹理GLB、USDZ、FBX及缩略图，用于AR、配置器、游戏或网页3D展示；涵盖100积分创建计费、轮询Webhook签名、下载发布及car-3d嵌入，不用于二维图或车型查找。",
+      "source": "Get a textured 3D model (GLB, USDZ, FBX and a thumbnail) of any real vehicle in any paint color from the Car Image API, for AR views, configurators, game assets, product pages and 3D scenes, and put it on a web page with a two-line embed that Car Image hosts. Covers what a model costs (100 credits, charged at creation, free once the account owns that vehicle in that color), how long it takes, polling versus webhooks, verifying the webhook signature, downloading the files, publishing a model and the <car-3d> element. Use when the user wants a 3D model, a GLB, a USDZ, an FBX, an AR-ready asset of a car, or a 3D car on a page; do not use for 2D renders (car-image), signed image URLs (car-image-urls) or finding which vehicle to model (vehicle-catalog).",
+      "source_sha256": "258fe3da1b74096039190116945ad673388b6cd79ad9292a88be7e4e8756fa7c",
+      "source_path": "skills/car-3d/SKILL.md",
+      "package_sha256": "02f24965e3f423a061c228900167ab71c6921d2c3f9d350e3f8bb130ce841ac3",
+      "source_package": "Car Image API-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0fe46d10b1443941ac475c05cac16358c426b44d28326feab9c2b8d62335624d": {
+      "description_zh": "通过MCP连接智能体或IDE至Car Image API并排查工具缺失，涵盖托管HTTP/本地stdio、密钥配置、工具费用与toolset扩展、401及空列表；不用于代码API集成或已接通后的图片工作。",
+      "source": "Connect an agent or IDE to the Car Image API over MCP, and fix it when the tools do not appear. Covers the hosted HTTP server and the local stdio alternative, where the CAR_IMAGE_API_KEY goes in Claude Code, Codex, Cursor, Claude Desktop and generic MCP hosts, what each of the eleven core tools costs (images, signed URLs, catalog, VIN decoding, 3D models) and which eight more ?toolset=all adds, and how to diagnose a 401, a missing server or an empty tool list. Use for setup, configuration and connection troubleshooting; do not use for calling the API from code (car-image-sdk) or for image workflows once the tools already work (car-image).",
+      "source_sha256": "0fe46d10b1443941ac475c05cac16358c426b44d28326feab9c2b8d62335624d",
+      "source_path": "skills/car-image-mcp/SKILL.md",
+      "package_sha256": "02f24965e3f423a061c228900167ab71c6921d2c3f9d350e3f8bb130ce841ac3",
+      "source_package": "Car Image API-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e7360650865ac5711589d33794e36166e8e03831c7fff8dc7271e9b7be4e7d5": {
+      "description_zh": "编写调用Car Image API的TypeScript SDK、CLI或REST代码，处理类型错误、重试、批量、安全密钥、图片下载、VIN解码及3D创建轮询下载；车型选择和MCP连接另用配套技能。",
+      "source": "Write code that calls the Car Image API — the zero-dependency TypeScript SDK (@meterapp/car-image-sdk), the CLI (@meterapp/car-image) for shells, scripts and CI, or plain REST with fetch or curl in any language. Covers client setup, typed errors, retries, batching, keeping the key server-side, downloading renders in bulk, decoding VINs and creating, polling and downloading 3D models from code. Use when implementing or reviewing code that talks to the API; do not use for deciding which vehicle to render (vehicle-catalog) or connecting an agent over MCP (car-image-mcp).",
+      "source_sha256": "9e7360650865ac5711589d33794e36166e8e03831c7fff8dc7271e9b7be4e7d5",
+      "source_path": "skills/car-image-sdk/SKILL.md",
+      "package_sha256": "02f24965e3f423a061c228900167ab71c6921d2c3f9d350e3f8bb130ce841ac3",
+      "source_package": "Car Image API-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e737feec73091a060e059a07b448851489722362e95f81faa182d6115887aae": {
+      "description_zh": "使用签名交付URL将车辆图嵌入网页、React、邮件、Markdown、PDF、幻灯片或表格，避免客户端持有API密钥；涵盖有效期、调用上限、最多50项批次、缓存和替代文本，不用于脚本下载图片字节。",
+      "source": "Put a vehicle image into a web page, React component, email, Markdown file, PDF or slide deck using signed delivery URLs, so the browser loads the image without ever holding an API key. Use whenever the output is HTML, JSX, Markdown, CSS, an email template, a document or a spreadsheet rather than bytes on disk; covers TTL and use caps, batching up to 50, caching, alt text and expiry. Do not use for downloading bytes in a script (car-image), or for finding which vehicle to render (vehicle-catalog).",
+      "source_sha256": "6e737feec73091a060e059a07b448851489722362e95f81faa182d6115887aae",
+      "source_path": "skills/car-image-urls/SKILL.md",
+      "package_sha256": "02f24965e3f423a061c228900167ab71c6921d2c3f9d350e3f8bb130ce841ac3",
+      "source_package": "Car Image API-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e3e803583e2e20459bf7530b120a8331c34bcc2be78613a909870e08796698a": {
+      "description_zh": "通过Car Image API获取1990至2027年真实车辆的棚拍级透明背景图，用于产品页、车源、经销工具、比较、邮件与演示；处理认证、图片积分及402/429，嵌入URL、车型目录、SDK和连接设置另用对应技能。",
+      "source": "Fetch studio-quality, transparent-background images of real vehicles (any make, model and year from 1990-2027) for product pages, listings, dealer tools, comparison sites, emails and decks. Covers the Car Image API by Meter — authentication, the per-image credit cost, which call to make, and how to handle 402 and 429. Use for any request involving a picture of a car, truck, motorcycle or other vehicle; do not use for embedding URLs in a browser or document (car-image-urls), catalog lookups (vehicle-catalog), SDK and CLI code (car-image-sdk), or connection setup (car-image-mcp).",
+      "source_sha256": "8e3e803583e2e20459bf7530b120a8331c34bcc2be78613a909870e08796698a",
+      "source_path": "skills/car-image/SKILL.md",
+      "package_sha256": "02f24965e3f423a061c228900167ab71c6921d2c3f9d350e3f8bb130ce841ac3",
+      "source_package": "Car Image API-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b61c3065ef532e58a3ec97634e9a368ebe8043e80981400dfce4d90ee5193185": {
+      "description_zh": "将模糊车辆描述或完整/部分VIN解析为Car Image API可渲染的品牌型号年份与稳定车辆ID，消除配置和车身歧义，并支持离线vehicle-db查询选择器与校验；不获取图片或3D模型。",
+      "source": "Turn a vague vehicle reference (\"that blue BMW wagon\", \"a mid-2000s Civic\") or a VIN into an exact make, model and year the Car Image API can render, and into the stable vehicle id (veh_…) that names it; or check what a make offers and which years exist. Covers resolve, fuzzy search, free VIN decoding (full or partial VINs), vehicle ids, disambiguating trims and body styles, and the open @meterapp/vehicle-db package for offline lookups, dropdowns and validation. Use before rendering when the request is free text or a VIN, or when building a vehicle picker or validating user input; do not use for fetching the image itself (car-image), embedding it in a page (car-image-urls) or making a 3D model (car-3d).",
+      "source_sha256": "b61c3065ef532e58a3ec97634e9a368ebe8043e80981400dfce4d90ee5193185",
+      "source_path": "skills/vehicle-catalog/SKILL.md",
+      "package_sha256": "02f24965e3f423a061c228900167ab71c6921d2c3f9d350e3f8bb130ce841ac3",
+      "source_package": "Car Image API-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "796a59c234f1e5e0fb314dd70b1a088bd78a6709dba418ea25754e27156233b9": {
+      "description_zh": "查询Carbide真实预约空档并预订、延长、迁移或取消预约，综合估价人员、路线、日历、交通和冲突。",
+      "source": "Find real Carbide appointment availability and book, extend, relocate, or cancel appointments. Use when scheduling must account for estimators, routing, calendars, travel, and conflicts.",
+      "source_sha256": "796a59c234f1e5e0fb314dd70b1a088bd78a6709dba418ea25754e27156233b9",
+      "source_path": "skills/carbide-appointment-scheduling/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d8f289f8b1551f0825b92f9d1e6e177c4a06eea483377bcb66d4cdc3b476b64": {
+      "description_zh": "查询、创建和更新Carbide联系人、公司、物业、请求、联系渠道、笔记、分配及结果，用于CRM与受理，不用于全组织配置。",
+      "source": "Find, create, and update Carbide contacts, companies, properties, requests, contact methods, notes, assignments, and outcomes. Use for CRM and intake operations, not organization-wide configuration.",
+      "source_sha256": "7d8f289f8b1551f0825b92f9d1e6e177c4a06eea483377bcb66d4cdc3b476b64",
+      "source_path": "skills/carbide-customer-and-request-operations/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff75faeede6763c4e78e61a4037484e16d3aa95f1ca0dbd589684534fe04adfc": {
+      "description_zh": "通过健康检查和行为证据诊断Carbide设置、预约、集成、记录及后台任务，解释异常行为或尚未完成的设置。",
+      "source": "Diagnose Carbide setup, booking, integrations, records, and background jobs using health checks and behavioral evidence. Use when explaining why Carbide behaved a certain way or what setup remains incomplete.",
+      "source_sha256": "ff75faeede6763c4e78e61a4037484e16d3aa95f1ca0dbd589684534fe04adfc",
+      "source_path": "skills/carbide-diagnostics-and-health/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d2f1e4b35a4a8822aeca2b07149e7dbd5d13047b78913c4c38199904e52bf2d": {
+      "description_zh": "配置Carbide客户受理选项、请求链接、公开预约内容、提醒、通知模板、邮件身份与转介沟通，用于面向客户的设置和消息。",
+      "source": "Configure Carbide intake choices, request links, public booking content, reminders, notification templates, email identity, and referral communication. Use for customer-facing setup and messaging.",
+      "source_sha256": "5d2f1e4b35a4a8822aeca2b07149e7dbd5d13047b78913c4c38199904e52bf2d",
+      "source_path": "skills/carbide-intake-public-page-and-communications/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0b136c1228f03ff7276723ddaba9976df11256ecee40ec6fa2c5f6f2d8a464d": {
+      "description_zh": "检查配置Carbide集成、CRM同步、Webhook、自定义预约域名和API密钥，用于管理员负责的外部服务设置与排错。",
+      "source": "Inspect and configure Carbide integrations, CRM synchronization, webhooks, custom booking domains, and API keys. Use for administrator-owned external-service setup and troubleshooting.",
+      "source_sha256": "d0b136c1228f03ff7276723ddaba9976df11256ecee40ec6fa2c5f6f2d8a464d",
+      "source_path": "skills/carbide-integrations-webhooks-and-api-keys/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88c360e8739ed0f8ec21ca78a8a40a3e628614e16107b3aeee81d12dc2a19f7a": {
+      "description_zh": "只读汇总分析Carbide客户、请求、预约、任务及工作量，报告运营状态、数量、趋势、队列与后续问题。",
+      "source": "Summarize and analyze Carbide customers, requests, appointments, jobs, and workload without changing records. Use for operational status, counts, trends, queues, and follow-up questions.",
+      "source_sha256": "88c360e8739ed0f8ec21ca78a8a40a3e628614e16107b3aeee81d12dc2a19f7a",
+      "source_path": "skills/carbide-operational-reporting/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c44fd201be407e4882ea2ca93300f0ade15e63218011d5fecef807c466a79cb": {
+      "description_zh": "审计配置Carbide组织资料、成员角色、估价人员路由、可用时间、区域、班组、工种、技能和要求，用于团队管理与路由。",
+      "source": "Audit and configure Carbide organization profile, members, staff roles, estimator routing, availability, territories, crews, trades, skills, and requirements. Use for administrative setup and team routing.",
+      "source_sha256": "6c44fd201be407e4882ea2ca93300f0ade15e63218011d5fecef807c466a79cb",
+      "source_path": "skills/carbide-organization-team-and-routing/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e243cbf4a8b382666d7c2066d0f8b2cd7e9249987944678175ccb8892e6d9400": {
+      "description_zh": "在组织已启用电话智能体功能时，检查、创建、修改或暂停Carbide电话智能体；不用于普通客户电话号码记录。",
+      "source": "Inspect, create, update, and pause Carbide phone agents when the organization has the phone-agents feature. Use for voice-agent configuration, not ordinary customer phone records.",
+      "source_sha256": "e243cbf4a8b382666d7c2066d0f8b2cd7e9249987944678175ccb8892e6d9400",
+      "source_path": "skills/carbide-phone-agents/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fb45f19a31fe727910167a0bc4a2c4a0406c064922d973178356d8897b3e47d": {
+      "description_zh": "在请求进入生产执行后管理Carbide任务、范围、团队、区块、班组、约束、颜色、清单及项目检查，用于规划执行。",
+      "source": "Manage Carbide production jobs, scope, teams, blocks, crews, constraints, colors, checklists, and project check-ins. Use for job planning and execution after a request reaches production.",
+      "source_sha256": "2fb45f19a31fe727910167a0bc4a2c4a0406c064922d973178356d8897b3e47d",
+      "source_path": "skills/carbide-production-management/SKILL.md",
+      "package_sha256": "953982e964424702d6ec208f3026e290147d89454e85884a6b3075be047e0b98",
+      "source_package": "Carbide-0.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "906fdebb5c529c97013daa475680b68c2ee7d08c9cc62549c22380cbe14165c7": {
+      "description_zh": "使用Carbone将JSON合并至DOCX、XLSX、PPTX、ODF、HTML、Markdown、PDF或CSV/TXT/SVG/IDML等模板，设计验证修复标签循环条件格式化聚合别名，处理表单、图表条码动态图、Excel公式、升级及文档转换。",
+      "source": "Carbone templating — merge JSON data into a DOCX (Word), XLSX (Excel), PPTX (PowerPoint), ODT, ODS, HTML, Markdown or PDF template, plus text/XML formats such as CSV, TXT, SVG and IDML. Use this skill to design, validate, fix or explain Carbone syntax: tags, loops, conditions, formatters, aggregators, aliases, and mapping a JSON dataset onto a template. Trigger on: the tag syntax {d.} {c.} {#alias} {$alias} {t()} {o.} or any :formatter chain; a template error such as a missing [i+1]; whether a format supports a feature or what it converts to; filling a PDF form (AcroForm); adding a chart, barcode or dynamic image to a document; dynamic Excel formulas; upgrading between Carbone versions; and any request to build an invoice, contract or report from JSON, mail-merge data into a document, fill a template with data, or convert a document (HTML or Markdown to PDF, DOCX to PDF) — even when Carbone is not named.",
+      "source_sha256": "906fdebb5c529c97013daa475680b68c2ee7d08c9cc62549c22380cbe14165c7",
+      "source_path": "carbone/SKILL.md",
+      "package_sha256": "a73ca2479cd550942ea78f1b38bd5c05d46f694ecd9265a5fd122a2cd63fbbac",
+      "source_package": "Carbone-1.6.1-v16.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fb7e6863b90df190fee9fab44f021d6f42f3751f418d617e415f32af76ac5c2": {
+      "description_zh": "提供职业和教育路径辅导，涵盖院校专业留学、实习求职、简历求职信面试、薪资谈判、推荐与人脉、转型、工作反馈管理、AI影响、职业探索发展及劳动力市场，也支持恢复辅导会话。",
+      "source": "Use this skill for ANY user message about career topics — including college and program selection, choosing a major, studying abroad, internships, resume writing, cover letters, interview preparation, job search strategy, finding job listings, salary negotiation, asking for references, career transitions, networking, informational interviews, following up after applications, professional dress, workplace feedback, time management, AI's impact on careers, career exploration, professional development, field overviews, or labor market data. It does NOT require the user to mention \"Coach\", \"coaching\", or \"session\". If the user's message is about navigating their career or education path in any way, activate this skill. Also triggers when resuming a previous coaching session or browsing available coaching topics.",
+      "source_sha256": "2fb7e6863b90df190fee9fab44f021d6f42f3751f418d617e415f32af76ac5c2",
+      "source_path": "skills/career-coaching/SKILL.md",
+      "package_sha256": "ebf273d1205ad70f06916aff25bd7933f52c014f95bdaa5b2da91f0174bfad50",
+      "source_package": "Career Coaching-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8209e40b8dcd8d0d434e3ad3f8aba1a11cedb223447b4edfaa1acbc3c63f865a": {
+      "description_zh": "在Cargo创建配置AI智能体，选择模型温度、编写提示、挂接RAG知识、连接MCP工具、管理记忆并部署；知识文件上传或向智能体发消息批量运行另用内容/编排技能。",
+      "source": "Build and configure AI agents inside Cargo — create an agent, choose its model and temperature, write its prompt, attach knowledge for retrieval (RAG), connect MCP tool servers, manage memories, and deploy releases. Triggers: \"create an agent\", \"make an agent that\", \"give the agent our docs\", \"attach this knowledge base\", \"attach this library to the agent\", \"add resources to the agent release\", \"connect an MCP server\", \"expose our tools as an MCP server\", \"use Cargo from Claude Desktop or ChatGPT\", \"change the agent model\", \"what does the agent remember\", \"deploy the agent\", \"the agent is answering wrong\". Skip when: uploading the knowledge files themselves — use cargo-content; sending the agent a message or running it over records — use cargo-orchestration.",
+      "source_sha256": "8209e40b8dcd8d0d434e3ad3f8aba1a11cedb223447b4edfaa1acbc3c63f865a",
+      "source_path": "cargo-ai/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "915d6be42997db86dee1c1883a6a949313b428c89281a508ee4de4ea3bd47aff": {
+      "description_zh": "从Cargo导出运行结果、分段或模型为CSV/JSON，查询运行与批次成功失败数量；失败原因和节点成本归因或账单问题另用诊断/计费技能。",
+      "source": "Get data out of Cargo and measure what ran — download a run output, export a segment or model to CSV or JSON, and pull run and batch success and error counts. Triggers: \"download the results\", \"export this to CSV\", \"give me the file\", \"how many succeeded\", \"what is my error rate\", \"send me the enriched list\", \"get the output of that run\", \"how many records did it write\". Skip when: asking why something failed or where credits went — use cargo-diagnostics; asking about credits, plans, or invoices — use cargo-billing.",
+      "source_sha256": "915d6be42997db86dee1c1883a6a949313b428c89281a508ee4de4ea3bd47aff",
+      "source_path": "cargo-analytics/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26250777a02b9f1babeb130b97a3d4a329487f6e3d7e7441fef24989d3ed559d": {
+      "description_zh": "查看Cargo余额、按流程连接器智能体拆分的用量、订阅与发票，评估预算及处理支付方式相关请求；需管理员令牌，节点成本归因和降本用诊断技能。",
+      "source": "Understand what Cargo is costing — remaining credits, usage broken down by workflow, connector, or agent, subscription state, and invoice history. Triggers: \"how many credits do I have left\", \"what did that cost\", \"why is my bill so high\", \"am I about to run out\", \"will this fit in our budget\", \"show me my invoices\", \"how much have I spent this month\", \"what plan am I on\", \"what do I get for free\", \"how many free credits\", \"can I afford this run\", \"add a card\", \"update my payment method\", \"why was my card declined\". Needs a token with admin access. Skip when: attributing spend to specific nodes or cutting a play cost — use cargo-diagnostics.",
+      "source_sha256": "26250777a02b9f1babeb130b97a3d4a329487f6e3d7e7441fef24989d3ed559d",
+      "source_path": "cargo-billing/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "551f0b79f7111809e845a1aa2ba97d690f0f44c0ed517e99d885852082a3149c": {
+      "description_zh": "这是更名为cargo-project后的兼容指针，用于替换旧安装入口；实际任务应加载cargo-project。",
+      "source": "Renamed to cargo-project. This entry exists only so installs from before the rename are replaced by a pointer. Skip when: always — load cargo-project.",
+      "source_sha256": "551f0b79f7111809e845a1aa2ba97d690f0f44c0ed517e99d885852082a3149c",
+      "source_path": "cargo-cdk/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2344f61705fd0815d55f075a4600877988c81c5b4f42d44d8351a16edfaa0f6": {
+      "description_zh": "将Cargo连接外部系统，认证连接器、查询集成目录及可用动作，定位流程所需connectorUuid/actionSlug并处理认证问题；GTM数据丰富服务商选择另用cargo-gtm。",
+      "source": "Connect Cargo to an external system and find out what it can do — authenticate connectors, browse the integration catalog, and resolve the `connectorUuid` and `actionSlug` a workflow node needs. Triggers: \"connect my HubSpot\", \"is Salesforce connected\", \"what integrations do you support\", \"can Cargo talk to <tool>\", \"what actions does <provider> have\", \"I need the connector UUID\", \"set up the API key for\", \"it is asking for credentials again\", \"why is this connector failing auth\", \"list my connectors\". Integrations: amplemarket, amplitude, attio, bigQuery, calendly, closecom, contrast, csv, customerio, dbt, emailBison, expandi, googleAds, googleSheets, heyReach, http, hubspot, hubspotMcp, instantly, instantlyV2, intercom, jira, kitt, lemlist, lgm, linkedinAds, linkedinMatchedAudience, livestorm, manus, marketo, metabase, microsoftTeams, mixpanel, netsuite, netsuiteSoap, notionMcp, octave, onesignal, outreach, pipedrive, postgresql, redshift, resend, rift, salesforce, salesforceMcp, salesloft, Sendgrid, sillage, slack, smartlead, snowflake, sql, stripe, and 82 more. Skip when: choosing between enrichment providers for a GTM job — use cargo-gtm and its provider playbooks.",
+      "source_sha256": "a2344f61705fd0815d55f075a4600877988c81c5b4f42d44d8351a16edfaa0f6",
+      "source_path": "cargo-connection/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99d11742078707938c0a7aa21a096427a71eee8cb1470b1f14920ab5eab10616": {
+      "description_zh": "管理Cargo工作空间的知识文件，上传PDF/CSV/文本、改名整理，并创建本地或连接器驱动的外部同步资料库供RAG检索；将资料接到智能体或上传批量运行CSV分别用对应技能。",
+      "source": "Manage the knowledge a Cargo workspace holds — upload files (PDF, CSV, text), rename and organize them, and build native or connector-backed libraries that sync from an external source, so agents can retrieve them (RAG). Triggers: \"upload this PDF\", \"add these docs as knowledge\", \"build a knowledge base\", \"sync our help center into Cargo\", \"what files are in the workspace\", \"index this folder\", \"attach our pricing sheet\". Skip when: wiring the file or library into an agent — use cargo-ai; uploading a CSV that drives a batch run — that is a workspace-management file upload.",
+      "source_sha256": "99d11742078707938c0a7aa21a096427a71eee8cb1470b1f14920ab5eab10616",
+      "source_path": "cargo-content/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7d0e1abc5c55043f825d1b8490a1ef2bd0d6fb44eb4703e4649d2d7cd6dd447": {
+      "description_zh": "读写Cargo中Git管理的GTM Markdown知识库及运行沙箱、类型化知识图，记录ICP、人物、策略、佐证、异议、竞品和信号；不从赢单丢单数据推导结论，不替代结构化存储或RAG文件管理。",
+      "source": "Read and write the workspace GTM knowledge base — the git-backed repository of markdown describing ICPs, personas, plays, proof points, objections, competitors, and signals — plus its runtime sandbox and typed knowledge graph. Triggers: \"document our ICP\", \"write up this persona\", \"what is our positioning\", \"add a battlecard\", \"capture this objection\", \"what do we know about <segment>\", \"update our context\", \"what is in the context repo\", \"who do we sell to\". Skip when: discovering who actually buys from you by analyzing won/lost data — that is cargo-gtm (this skill writes the conclusion down, it does not derive it); storing structured records rather than prose — use cargo-storage; attaching documents to an agent for RAG — use cargo-content.",
+      "source_sha256": "c7d0e1abc5c55043f825d1b8490a1ef2bd0d6fb44eb4703e4649d2d7cd6dd447",
+      "source_path": "cargo-context/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c12ee6423f3052f93efd15d20d11c6920824f4691ad98b061a6c6d5f6465f34e": {
+      "description_zh": "事后逐节点追踪Cargo运行，绘制执行图并标记失败步骤，按根因汇总批次或策略错误，将积分支出归因到节点和供应商；不用于未来告警配置或单纯下载数据。",
+      "source": "Explain what a Cargo run or batch actually did, after the fact — trace one run node by node, draw the graph it executed with the failing step marked, sweep a batch or play for errors grouped by root cause, and attribute credit spend down to the node and the provider. Triggers: \"why did this fail\", \"it succeeded but the output is wrong\", \"half my rows are empty\", \"why is this column blank\", \"what broke in this batch\", \"why did that cost so much\", \"which node is burning credits\", \"it worked yesterday\", \"these results look wrong\", \"it went down the wrong path\", \"this step never ran\", \"show me what the run did\". Skip when: setting up an alert for next time — use cargo-observability; just downloading the data — use cargo-analytics.",
+      "source_sha256": "c12ee6423f3052f93efd15d20d11c6920824f4691ad98b061a6c6d5f6465f34e",
+      "source_path": "cargo-diagnostics/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d72ebdfbfdde4e7599eb3d4a5d18f49c44eaf772845377ee131e7af97bc56daf": {
+      "description_zh": "在Cargo开展B2B市场拓展，研究账户与采购委员会、用许可数据商丰富验证联系人、评估线索、起草基于许可的触达、同步CRM和监测信号；遵守同意依据、屏蔽名单和数量限制，拒绝批量未请求消息及消费者定向，付费调用前查阅指南。",
+      "source": "Do business-to-business go-to-market work on Cargo — research accounts and buying committees, enrich and verify B2B contact records from licensed data providers, score and qualify leads, draft permission-based outreach for the user's own sequencer, sync to CRM, and monitor buying signals. Consent basis, suppression lists, and volume limits gate every step that touches a person (`references/acceptable-use.md`); bulk unsolicited messaging, purchased or scraped lists, and consumer targeting are refused. Triggers: \"build me a list of\", \"find 50 <title> at <segment>\", \"who works at\", \"find work emails for these accounts\", \"enrich this CSV\", \"verify these emails\", \"build a TAM\", \"who fits our ICP\", \"who actually buys from us\", \"what data points should we collect on accounts\", \"our outbound is reaching the wrong people\", \"score these leads\", \"write a first-touch email\", \"push these to my CRM\", \"who changed jobs\", \"who just raised funding\", \"companies using <tech>\", \"who is hiring <role>\", \"find the buying committee\", \"portfolio companies of <investor>\", \"upload this audience to Google/Meta/LinkedIn ads\". Providers: aiArk, anthropic, apolloio, bouncer, brightData, builtwith, cleon1, companyEnrich, contactOut, datagma, dropcontact, enrichCrm, enrichley, enrowio, exa, findyMail, firecrawl, forager, FullEnrich, g2, gemini, hunter, icypeas, kitt, leadMagic, linkedin, linkup, mixrank, neverBounce, oceanio, openAi, parallel, peopleDataLabs, perplexity, piloterr, prospeo, proxycurl, reverseContact, rocketreach, salesNavigator, serper, sillage, snitcher, societeInfo, theirStack, theSwarm, waterfall, x, zeroBounce. Reads phase guides, recipes, and per-provider playbooks before any paid call. Skip when: a run already happened and misbehaved — use cargo-diagnostics.",
+      "source_sha256": "d72ebdfbfdde4e7599eb3d4a5d18f49c44eaf772845377ee131e7af97bc56daf",
+      "source_path": "cargo-gtm/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a4528d6e89db0aa8abeb55fd1fad7370f7b24ed7edef83f8e5d9726f1da43556": {
+      "description_zh": "从Cargo部署托管网页应用或HTTP无服务器边缘Worker，管理构建升级、环境变量密钥、本地运行、自定义域名及搜索索引；需作为已提交工作空间代码声明时用cargo-project。",
+      "source": "Put something on the internet from Cargo — hosted web apps (Vite by default, other static frameworks detected) and serverless edge workers that answer HTTP requests, plus the deployments that build and promote them, the env vars and secrets a worker reads, running a worker locally, and custom domains and search indexing for public sites. Triggers: \"build me a dashboard for this\", \"host this app\", \"give me a URL to share\", \"deploy this\", \"I need a webhook endpoint\", \"make it live\", \"promote to production\", \"ship a UI for my team\", \"give my worker an API token\", \"set a secret on the worker\", \"Missing CARGO_API_TOKEN\", \"my app cannot call my worker\", \"run the worker locally\", \"put it on my own domain\", \"make the site indexable by Google\". Skip when: the app or worker should be declared as committed workspace code — use cargo-project.",
+      "source_sha256": "a4528d6e89db0aa8abeb55fd1fad7370f7b24ed7edef83f8e5d9726f1da43556",
+      "source_path": "cargo-hosting/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c7bd3d322e10867b174e5d44598e3749593fc251a1c0a7eb3f40c25bec2e80d": {
+      "description_zh": "管理Cargo拥有的发送邮箱，配置域名邮箱、预热及每日5至40封递增发送、发送并读取会话回复投递事件和屏蔽名单；每次发送受依据、屏蔽与相关性约束，邮箱按月扣积分，文案受众或Git声明另用对应技能。",
+      "source": "Send mail from inboxes Cargo owns — provision mailboxes on a sending domain, run provider warm-up and the 5→40/day send ramp, deliver with the `sendEmail` action, and read back threads, replies, delivery events, and the workspace suppression list. Triggers: \"set up a sending mailbox\", \"provision inboxes for outbound\", \"warm up this mailbox\", \"how many sends do I have left today\", \"send this from Cargo\", \"did they reply\", \"who unsubscribed\", \"suppress this recipient\", \"take me off your list\", \"never email them again\", \"what do mailboxes cost\", \"my mailbox is stuck pending\". A mailbox is a recurring monthly credit charge, and every send is gated on basis, suppression, and relevance. Skip when: writing the copy or building the audience — use cargo-gtm; the mailbox belongs in git — use cargo-project.",
+      "source_sha256": "4c7bd3d322e10867b174e5d44598e3749593fc251a1c0a7eb3f40c25bec2e80d",
+      "source_path": "cargo-mailbox-management/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e58ef4c8bdde0745c443cdfe30167f5ce5cc78e6bbf2bc45c8a3a347e5f113bf": {
+      "description_zh": "通过Cargo托管MCP连接客户端、发现动作与费用、执行单记录或批次、轮询并读取模型，无需安装CLI；流程部署、仓库SQL和邮箱等用对应CLI技能，自建MCP或挂接智能体用cargo-ai。",
+      "source": "Drive Cargo from its hosted MCP server at https://mcp.getcargo.io/mcp — connect a client, discover and price an action, run it over one record or a batch, poll it, and read workspace models, with no CLI install. Also when to call an MCP tool instead of shelling out to `cargo-ai`. Triggers: \"connect Cargo to Claude Desktop\", \"add Cargo to ChatGPT\", \"Cargo MCP server\", \"mcp.getcargo.io\", \"use Cargo without installing anything\", \"which Cargo tool do I call\", \"search_actions\", \"execute_action_batch\", \"MCP server is showing the wrong workspace\". Tools: whoami, search_actions, get_action_schema, execute_action, execute_action_batch, get_run, query_models. Skip when: you have a shell and the job is a workflow, a CDK deploy, warehouse SQL, or a mailbox — use the CLI skills; when publishing an MCP server out of your own workspace or attaching one to a Cargo agent — use cargo-ai.",
+      "source_sha256": "e58ef4c8bdde0745c443cdfe30167f5ce5cc78e6bbf2bc45c8a3a347e5f113bf",
+      "source_path": "cargo-mcp/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ac009533003e4a5fe4e43d00df14c94426cf68428fb23ca215c011d0683fe79": {
+      "description_zh": "监测Cargo工作空间并配置定时阈值告警，检查流程遥测、存储新鲜度行数或SQL查询，触发连接器工具或智能体；支持告警列举预览编辑和历史评审，已有故障原因用诊断技能。",
+      "source": "Watch a Cargo workspace and get told when something breaks — scheduled threshold alerts over workflow telemetry (spans, runs, records), a storage model freshness or row count, or any SQL query, firing a connector, tool, or agent when a metric breaches. Triggers: \"alert me when\", \"notify me if\", \"let me know when the error rate\", \"monitor this workflow\", \"tell me if the sync stops\", \"warn me before I run out of credits\", \"dead man’s switch\", \"is this still running\", \"set up monitoring\", plus listing, previewing, editing, and reviewing an alert firing history. Skip when: diagnosing something that already went wrong — use cargo-diagnostics.",
+      "source_sha256": "4ac009533003e4a5fe4e43d00df14c94426cf68428fb23ca215c011d0683fe79",
+      "source_path": "cargo-observability/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39a8e5563be27072c71c98686922e6d02c2ea314d64bd1510c8cb227c75d4c2b": {
+      "description_zh": "在Cargo执行连接器动作、多步骤流程、分段或模型批次、智能体消息，构建编辑节点图及绘制流程，并用SQL查询运行批次跨度记录；失败解释、结果下载和流程代码提交另用对应技能。",
+      "source": "Make Cargo actually run something, or show what it would run — execute one connector action, run a multi-step workflow, trigger a batch across a whole segment or model, message an AI agent, build or edit a node graph, draw a workflow, tool or play as a diagram, and query the runtime tables (runs, batches, spans, records) with SQL. Triggers: \"run this on all my contacts\", \"execute the action\", \"kick off a batch\", \"build a workflow\", \"schedule a play\", \"make it run every morning\", \"ask the agent\", \"show me the workflow\", \"what does this tool do\", \"visualize this play\", \"draw the graph\", \"explain this workflow\", \"how many runs failed today\", \"what is the output schema for this action\", \"add a step that\". Skip when: explaining why a run misbehaved — use cargo-diagnostics; downloading result files — use cargo-analytics; committing the workflow as code — use cargo-project.",
+      "source_sha256": "39a8e5563be27072c71c98686922e6d02c2ea314d64bd1510c8cb227c75d4c2b",
+      "source_path": "cargo-orchestration/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8edf01c13a25f30691d8fb7583d03cee46acca192f896981a6d9b88e0f91fb80": {
+      "description_zh": "以TypeScript将Cargo整个工作空间声明为代码，管理连接器模型策略工具智能体MCP分段上下文文件Worker和应用，按init、types、plan、deploy协调部署，支持Git、CI及预发布生产；单次读取或临时操作用对应技能。",
+      "source": "Manage a whole Cargo workspace as code — declare connectors, models, plays, tools, agents, MCP servers, segments, context, folders, files, workers, and apps in TypeScript, then reconcile them with `cargo-ai project` (init → types → plan → deploy), the way you would run Pulumi or the AWS CDK. Triggers: \"as code\", \"in git\", \"version-controlled\", \"reproducible\", \"Terraform for Cargo\", \"set up a whole workspace\", \"staging and production\", \"deploy the workspace from CI\", \"review this in a PR\", \"cargo.state.json\", \"scaffold from a template\", \"is there a cookbook for this\", \"start from a cookbook\". Skills with a CDK example (TAM building, account scoring, contact sourcing, routing, AI SDR, rep cockpit) live in gtm-skills; menu in references/cookbooks.md. Skip when: it is a one-off operation, a read, or an ad-hoc query — use the matching capability skill.",
+      "source_sha256": "8edf01c13a25f30691d8fb7583d03cee46acca192f896981a6d9b88e0f91fb80",
+      "source_path": "cargo-project/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d682a824a9ceee0a906d3b9a6f079be0b59b08834d36ed0090c0af084e0a8b4": {
+      "description_zh": "提供Cargo首次演示，从一个人物问题生成25条真实线索及费用回执，并保存为周期策略；正式名单丰富查邮箱工作或CLI参考另用对应技能。",
+      "source": "Guided first-run demo for Cargo — one persona question to 25 real leads with a cost receipt in under two minutes, ending by saving the pull as a recurring play. Triggers: \"show me what Cargo can do\", \"give me a demo\", \"take me on a tour\", \"quickstart\", \"getting started with Cargo\", \"I just installed Cargo\", \"my workspace is empty\", \"does this actually work\". Skip when: the user has a real job to run (build a list, enrich a CSV, find emails) — use cargo-gtm; when they want CLI reference or routing — use the cargo router skill.",
+      "source_sha256": "1d682a824a9ceee0a906d3b9a6f079be0b59b08834d36ed0090c0af084e0a8b4",
+      "source_path": "cargo-quickstart/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31662a22cb3c62bec36be8e5be903b210a10656e1130d00d3bd0a22e836305c4": {
+      "description_zh": "定义使用Cargo模型上的具名已保存筛选分段，作为批次、策略或导出受众；JSON字段必须用conjonction避免静默失败，执行导出或临时SQL另用对应技能。",
+      "source": "Define and use segments — named, saved filters over a Cargo model that become the audience for a batch run, a play trigger, or an export. Triggers: \"build a segment of\", \"filter my contacts where\", \"who matches this criteria\", \"save this as a list\", \"how many companies match\", \"the Closed-Won segment\", \"everyone who has not been emailed\", \"target only accounts that\", \"what is in this segment\", \"narrow this down to\". Filter JSON uses `conjonction` (not `conjunction`) — misspelling it fails silently. Skip when: running something over the segment — use cargo-orchestration; exporting its rows — use cargo-analytics; ad-hoc SQL over the model — use cargo-storage.",
+      "source_sha256": "31662a22cb3c62bec36be8e5be903b210a10656e1130d00d3bd0a22e836305c4",
+      "source_path": "cargo-segmentation/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09ace55cda38092559ff68fe36858571ef8daedb8781d0fb56162e4ce52bf401": {
+      "description_zh": "管理Cargo业务数据的模型、数据集、列、关系、记录和SQL，支持架构查询、新增字段、导入、模型统一、账户去重及联系人公司关联；运行遥测查询或可复用受众用对应技能。",
+      "source": "Work with the data inside a Cargo workspace — models (Companies, Contacts, Deals…), datasets, columns, relationships, records, and SQL over workspace storage. Triggers: \"what models do I have\", \"show me the schema\", \"add a column for\", \"how many contacts do I have\", \"SELECT … FROM\", \"query my companies table\", \"join contacts to companies\", \"what is the DDL\", \"set up a webhook-fed model\", \"where does this field live\", \"import this into a model\", \"unify these models\", \"merge duplicate accounts\", \"link contacts to companies\", \"set up a relationship between\". Skip when: querying run or batch telemetry rather than business data — use cargo-orchestration; naming a reusable filtered audience — use cargo-segmentation.",
+      "source_sha256": "09ace55cda38092559ff68fe36858571ef8daedb8781d0fb56162e4ce52bf401",
+      "source_path": "cargo-storage/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b34be107fcc445f83cc9c44544cc5bb86e6ddb653ecd1403008d8925eca4c3a7": {
+      "description_zh": "管理Cargo成员、角色、API令牌创建轮换、流程工具智能体文件夹及批次输入文件，并向Cargo团队报告缺陷反馈；多数命令需管理员权限，额度套餐账单另用计费技能。",
+      "source": "Administer a Cargo workspace and talk back to the Cargo team — invite and manage members, mint and rotate API tokens, organize plays, tools, and agents into folders, inspect roles, upload batch input files, and file reports. Triggers: \"invite my teammate\", \"create an API token for CI\", \"who has access\", \"organize these into folders\", \"rotate that token\", \"upload this CSV for a batch\" — and for feedback: \"report this bug to Cargo\", \"send feedback to the Cargo team\", \"this CLI command is broken\", \"share this session with Cargo\", \"request a feature\". Most commands need a token with admin access. Skip when: the question is about credits, plans, or invoices — use cargo-billing.",
+      "source_sha256": "b34be107fcc445f83cc9c44544cc5bb86e6ddb653ecd1403008d8925eca4c3a7",
+      "source_path": "cargo-workspace-management/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84dc1b8d2d3beca29a4905b661102b889651df9d3153ec7a654a06872c264f98": {
+      "description_zh": "为Cargo CLI技能包路由，解释各领域职责、声明式工作空间与命令式操作、UUID/slug衔接、异步轮询和静默失败陷阱，适用于跨领域或不确定命令归属；明确单一职责时直接用相应技能。",
+      "source": "Router for the Cargo CLI skill bundle — load first for anything Cargo, and whenever a task spans two Cargo domains. Explains what each skill owns, declarative workspace-as-code (cargo-project) vs the imperative CLI, the UUID and slug flow between skills, async polling of runs and batches, end-to-end use cases, and the gotchas that fail silently (`conjonction` spelling, run vs batch, model-uuid vs segment-uuid). Triggers: \"set up Cargo\", \"what can Cargo do\", \"which Cargo skill\", \"bootstrap my workspace\", \"I have a Cargo account\", \"cargo-ai …\", or any `cargo-ai` command whose domain you are unsure of. Skip when: the task obviously belongs to one skill — load that skill directly.",
+      "source_sha256": "84dc1b8d2d3beca29a4905b661102b889651df9d3153ec7a654a06872c264f98",
+      "source_path": "cargo/SKILL.md",
+      "package_sha256": "b27b1c39cf68c74e121426b2f8c2b9ec66b881ea38e4938f6a02a0aeba54cc76",
+      "source_package": "Cargo-1.26.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f7d3933f56d98b2aa0126e588cb0f3cc71dce25b1ee043f85a3f2260a89d849": {
+      "description_zh": "通过CarsXE API解码欧洲、亚洲等非美国车辆的国际VIN，解析用户提供的车辆识别码。",
+      "source": "Decode an international (non-US) VIN using the CarsXE API. Use this when a user provides a VIN from a European, Asian, or other non-US vehicle and wants to decode it.",
+      "source_sha256": "7f7d3933f56d98b2aa0126e588cb0f3cc71dce25b1ee043f85a3f2260a89d849",
+      "source_path": "skills/international-vin/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "49101968f8476618ef9426026607d32cd45778e95ef3305d12ca759ecdd6c176": {
+      "description_zh": "通过CarsXE API按VIN检查有效留置权及盗窃记录，用于购车前核对车辆所有权是否无负担。",
+      "source": "Check for active liens and theft records on a vehicle by VIN using the CarsXE API. Use this when a user asks whether a car has a lien, is stolen, or wants to verify ownership is clean before buying.",
+      "source_sha256": "49101968f8476618ef9426026607d32cd45778e95ef3305d12ca759ecdd6c176",
+      "source_path": "skills/lien-theft/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad21112ae5d77301d0fa542b94d17db3bd4d1c696ebdeb51ef12c5c003093ede": {
+      "description_zh": "通过CarsXE API按VIN获取车辆当前市场价值，用于估值或买卖前了解价格。",
+      "source": "Get the current market value of a vehicle from its VIN using the CarsXE API. Use this when a user asks how much a car is worth, wants to know its value, or is thinking about buying/selling a vehicle.",
+      "source_sha256": "ad21112ae5d77301d0fa542b94d17db3bd4d1c696ebdeb51ef12c5c003093ede",
+      "source_path": "skills/market-value/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eea839aae1499e6daa6585f3c7cbf97c2b3e399e6350ac0b037b21dece4e0cdc": {
+      "description_zh": "通过CarsXE API解码OBD-II诊断故障码，包括发动机故障灯相关P/C/B/U类DTC。",
+      "source": "Decode an OBD-II diagnostic trouble code (DTC) using the CarsXE API. Use this when a user mentions a check engine light code, DTC, or OBD code like P0300, C1234, B0001, or U0100.",
+      "source_sha256": "eea839aae1499e6daa6585f3c7cbf97c2b3e399e6350ac0b037b21dece4e0cdc",
+      "source_path": "skills/obd-decoder/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d6ed3ce380e90eba9b71bb82272ca6521141f86a008221f43429d147ac87423": {
+      "description_zh": "通过CarsXE企业版Ownership API查询已登记车主或住户，包括VIN所有者、地址住户、具名人员联系方式及邮区人员；不用于留置权或盗窃检查。",
+      "source": "Look up registered vehicle owners and residents using the CarsXE Ownership API (Enterprise). Use this when the user asks who owns a VIN, who lives at an address, contact details for a named person, or people in a ZIP. Do not use for lien/theft checks.",
+      "source_sha256": "4d6ed3ce380e90eba9b71bb82272ca6521141f86a008221f43429d147ac87423",
+      "source_path": "skills/ownership/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1e99ae3d87da800aab48b729863f578984f0d1f00d43072c19a97f247187a31": {
+      "description_zh": "通过CarsXE API按车牌号码查询对应车辆信息。",
+      "source": "Look up vehicle information from a license plate number using the CarsXE API. Use this when a user mentions a license plate and wants to know what vehicle it belongs to.",
+      "source_sha256": "d1e99ae3d87da800aab48b729863f578984f0d1f00d43072c19a97f247187a31",
+      "source_path": "skills/plate-decoder/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac697e5be0070de133e2b7d3e9534dbe65db277b9a967eff93075f44338fe384": {
+      "description_zh": "通过CarsXE车牌识别API从车辆或车牌图片URL提取车牌号码。",
+      "source": "Extract a license plate number from an image URL using the CarsXE Plate Recognition API. Use this when a user shares a photo of a vehicle or license plate and wants to identify the plate number.",
+      "source_sha256": "ac697e5be0070de133e2b7d3e9534dbe65db277b9a967eff93075f44338fe384",
+      "source_path": "skills/plate-image-recognition/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "202a1c5fbb0d9017ac99e9e4c1feb39c917a022769762a622f6edaa503cb2663": {
+      "description_zh": "通过CarsXE Recalls Batch API提交和读取批量VIN安全召回检查，用于车队、库存CSV或多辆车。",
+      "source": "Submit and retrieve bulk safety-recall checks for many VINs using the CarsXE Recalls Batch API. Use this when the user wants to check recalls for a fleet, inventory list, CSV of VINs, or more than a handful of vehicles at once.",
+      "source_sha256": "202a1c5fbb0d9017ac99e9e4c1feb39c917a022769762a622f6edaa503cb2663",
+      "source_path": "skills/recalls-batch/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05c3d8bc597214f7cec9974434ddd9035cd5fe8635ff012bf7c197cc468bf400": {
+      "description_zh": "通过CarsXE按年份品牌型号查询安全召回，适用于没有VIN的车型系列检查。",
+      "source": "Check safety recalls by year, make, and model (no VIN) using the CarsXE Recalls by YMM API. Use this when the user asks about recalls for a model line, or has year/make/model but no VIN.",
+      "source_sha256": "05c3d8bc597214f7cec9974434ddd9035cd5fe8635ff012bf7c197cc468bf400",
+      "source_path": "skills/recalls-ymm/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb35b133740fdf02c7412cc06f37431f77cbec335a611b33abf21dc0022cf930": {
+      "description_zh": "通过CarsXE API按VIN获取车辆历史报告，了解前任车主、事故、产权状态和里程等。",
+      "source": "Retrieve a vehicle history report from a VIN using the CarsXE API. Use this when a user wants to know a car's history — past owners, accidents, title status, odometer readings, or whether it's been in a crash.",
+      "source_sha256": "cb35b133740fdf02c7412cc06f37431f77cbec335a611b33abf21dc0022cf930",
+      "source_path": "skills/vehicle-history/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c919cfba08aa89bcad5f75bc2996742e3818988720fd9d91a9a6f9d9a3b1feef": {
+      "description_zh": "通过CarsXE API按品牌型号年份获取车辆图片，查看指定车辆外观。",
+      "source": "Retrieve images of a vehicle by make, model, and year using the CarsXE API. Use this when a user wants to see what a vehicle looks like or asks for photos of a specific car.",
+      "source_sha256": "c919cfba08aa89bcad5f75bc2996742e3818988720fd9d91a9a6f9d9a3b1feef",
+      "source_path": "skills/vehicle-images/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fc161e89b1fd38b19d10e42314c3086a8ce11bed56f37fcdacf5c774ca28c80": {
+      "description_zh": "通过CarsXE API检查车辆尚未处理的安全召回和是否需要召回维修。",
+      "source": "Check for open safety recalls on a vehicle using the CarsXE API. Use this when a user asks whether a car has any recalls, safety issues, or wants to know if their vehicle needs a recall repair.",
+      "source_sha256": "8fc161e89b1fd38b19d10e42314c3086a8ce11bed56f37fcdacf5c774ca28c80",
+      "source_path": "skills/vehicle-recalls/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5cb8cca758a61ca21debd35dd533d33072c4169bc12f274d8ac2067be05f3af": {
+      "description_zh": "通过CarsXE API按VIN获取完整车辆规格，包括品牌型号年份、发动机、配置和装备。",
+      "source": "Fetch full vehicle specifications from a VIN using the CarsXE API. Use this when the user provides a VIN and wants to know details about a vehicle (make, model, year, engine, trim, equipment, etc.).",
+      "source_sha256": "e5cb8cca758a61ca21debd35dd533d33072c4169bc12f274d8ac2067be05f3af",
+      "source_path": "skills/vehicle-specs/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd1c7ed4e057f67c8acd7fb935ffbbc6f7a3ff0d35531ba3aca061bf3fb2eff3": {
+      "description_zh": "通过CarsXE VIN OCR API从照片或图片URL提取车辆识别码。",
+      "source": "Extract a VIN from a photo or image URL using the CarsXE VIN OCR API. Use this when a user shares an image of a vehicle or VIN plate and wants to identify the VIN.",
+      "source_sha256": "bd1c7ed4e057f67c8acd7fb935ffbbc6f7a3ff0d35531ba3aca061bf3fb2eff3",
+      "source_path": "skills/vin-ocr/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16b859905591f2b1393533ad888c44183ea4d8794817911a4e0b5d61024e975b": {
+      "description_zh": "在没有VIN但已知年份品牌型号时，通过CarsXE YMM API查询规格、配置版本与功能。",
+      "source": "Look up vehicle data by Year, Make, and Model using the CarsXE YMM API. Use this when a user doesn't have a VIN but knows the year, make, and model of a vehicle and wants specs, trims, or features.",
+      "source_sha256": "16b859905591f2b1393533ad888c44183ea4d8794817911a4e0b5d61024e975b",
+      "source_path": "skills/year-make-model/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "add5f43b85085f15ebfab44cd2e70964ea3a7aa9ee0b6490c3ae2576ca4a0f5d": {
+      "description_zh": "通过CarsXE YMM Options API列举级联车辆选择器的年份、品牌、型号、配置和变体选项，或查询车型销售年份；不获取完整规格。",
+      "source": "List year, make, model, trim, or variant options for cascading vehicle dropdowns using the CarsXE YMM Options API. Use this when the user wants available years, makes, models, trims, or which years a vehicle was sold — not full specs.",
+      "source_sha256": "add5f43b85085f15ebfab44cd2e70964ea3a7aa9ee0b6490c3ae2576ca4a0f5d",
+      "source_path": "skills/ymm-options/SKILL.md",
+      "package_sha256": "152e99826d9a17183eac57af891af8027a5a144278bba4de5e965fad2b7a5d65",
+      "source_package": "CarsXE-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c89d75dbca45e7b4e0a4fc192fe220717843cdd09f47967c22ffdb513a51022": {
+      "description_zh": "为指定Carta股权表公司建设或重建名为Carta Home - 公司名的已发布实时仪表板；基金SOI/业绩/LP首页和CRM首页分别用对应技能。",
+      "source": "Build or rebuild the Carta Home live artifact for one Carta cap-table company — a dashboard page published as \"Carta Home - {company}\". Use when the user asks to \"build cap table home\", \"rebuild cap table home\", \"deploy cap table home\", or asks to build, rebuild, deploy or set up Carta Home for a named company or corporation. For a fund firm's Carta Home (SOI, fund performance, LP reporting), use carta-investors' carta-home-build instead; for a CRM home of pipeline, deals and contacts, use carta-crm's carta-crm-home-build.",
+      "source_sha256": "2c89d75dbca45e7b4e0a4fc192fe220717843cdd09f47967c22ffdb513a51022",
+      "source_path": "skills/carta-captable-home-build/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42ef9b48e1dfe4879dbb568670d5821b96af6be543c8c2e898a9b5551d147338": {
+      "description_zh": "仅在Claude Code启动本地只读React薪酬控制台，载入某公司CTC数据供筛选职位领域、比较同行和探索评分卡；适用于可交互应用成品，单一职位市场值或聊天CSV输出另用基准/评分卡技能。",
+      "source": "Serves a live, clickable CTC console — builds one corporation's Carta Total Compensation data into a React app on localhost, where you filter by job area, compare peer groups and explore the scorecard yourself. CLAUDE CODE ONLY; it serves a local web app. Use it when the ask is to run an app, launch a console, or explore the data live, rather than to be told a figure. Invoke with a corporation name or id, e.g. \"launch a comp dashboard for Acme\". Its Benchmarks and Scorecard tabs are surfaces inside the app, not separately routable. Route by deliverable, not subject — an answer, CSV or figure to quote belongs to a sibling even when the wording overlaps: use carta-compensation-benchmarks for a role's market rate, and carta-compensation-scorecard for roster positioning, compa-ratios or who is below market. So \"what are our comp benchmarks\" is a sibling even though it names them, while \"open our comp benchmarks so I can filter them\" is this skill. NOT for a single role lookup. READ-ONLY.",
+      "source_sha256": "42ef9b48e1dfe4879dbb568670d5821b96af6be543c8c2e898a9b5551d147338",
+      "source_path": "skills/carta-compensation-app/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c31bed50886ad05752254327a92a3745fe7241137f1459852d01c1c877299c37": {
+      "description_zh": "查询指定职位的Carta Total Compensation薪资、股权和总现金市场基准，输出聊天或CSV及P25/P50/P75；不用于职位分类、公司员工相对市场定位、基金业绩或股权结构基准。",
+      "source": "Retrieves Carta Total Compensation market benchmarks (salary, equity, total cash) for a role. Output to chat or CSV. Market benchmarks are triggered by queries like: \"sales benchmarks\", \"comp benchmarks\", \"market rate\", \"what does a [role] pay\", \"put benchmarks in a CSV\", \"get benchmarks\", \"get carta's market benchmarks\", \"show me benchmarks for [role]\", \"compensation ranges for [role]\", \"p25/p50/p75 for [role]\". Do NOT use for job classification or role mapping — use carta-compensation-rolematcher for that. Do NOT use for \"how is OUR company positioned vs market\", \"who at our company is below market\", or \"our internal pay bands vs benchmarks\" — those are roster-level positioning, use carta-compensation-scorecard. Do NOT use for fund performance benchmarks (use carta-performance-benchmarks) or portfolio structural metrics like SAFE terms and option pool sizes (use carta-market-benchmarks).",
+      "source_sha256": "c31bed50886ad05752254327a92a3745fe7241137f1459852d01c1c877299c37",
+      "source_path": "skills/carta-compensation-benchmarks/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38e0ec10ea2ccd6ab79359f0692415455a603d556dd206094324b68c1c8d3fdd": {
+      "description_zh": "将职位名称或描述映射至CTC分类的职能、专长、级别与轨道；不查询薪酬基准、不评估公司员工市场定位，也不用于无关职业建议。",
+      "source": "Classify a job title or description into the CTC taxonomy (job area, focus, level, track). Use when the user wants to know how a role is categorized or mapped to the taxonomy structure — not to fetch salary, equity, or benchmark numbers. Do NOT use when the user is asking for \"market rates\", \"benchmark data\", \"compensation ranges\", \"what does X pay\", or \"show me benchmarks\" — use carta-compensation-benchmarks for that. Do NOT use when the user is asking how their own company compares to market — e.g. \"our internal pay bands vs Carta benchmarks\", \"compare our pay bands against the 25th/50th/75th percentile\", \"who at our company is below market\" — that's roster-level positioning, use carta-compensation-scorecard. Do NOT use for general career advice or job search queries unrelated to compensation benchmarking.",
+      "source_sha256": "38e0ec10ea2ccd6ab79359f0692415455a603d556dd206094324b68c1c8d3fdd",
+      "source_path": "skills/carta-compensation-rolematcher/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6334ce21c983453d0be87145a870cb0a9ac8478cda9fb96ace88846f8c1cfeab": {
+      "description_zh": "基于已接入并由HRIS同步的公司员工名单，提供CTC公司汇总和逐人评分卡，显示低于符合高于市场的分布、compa-ratio、分位与市场档位；不用于单职位市场值、分类或基金评分。",
+      "source": "Carta Total Compensation scorecard — shows how a corporation's employees compare to market. Two lenses: corporation-level rollup (band distribution — what % of employees are below / at / above market) and per-employee scorecard (each employee's compa-ratio + percentile + market band). Triggered by queries like: \"scorecard\", \"how is our comp positioned\", \"who's below market\", \"which employees are below P50\", \"show me the roster\", \"are we paying market\", \"comp posture\", \"employee compa-ratios\", \"is [employee] underpaid\", \"pay adjustment analysis\", \"our internal pay bands vs benchmarks\", \"score these employees\". Operates on the corporation's already-ingested CTC roster (HRIS-synced employees). Do NOT use for market-rate lookups for a role (use carta-compensation-benchmarks). Do NOT use for job classification (use carta-compensation-rolematcher). Do NOT use for fund performance scorecards or portfolio-level metrics.",
+      "source_sha256": "6334ce21c983453d0be87145a870cb0a9ac8478cda9fb96ace88846f8c1cfeab",
+      "source_path": "skills/carta-compensation-scorecard/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8aaf7ee2ef849fd2a011ff019883f5f4ec251db2d7c34079db98e76bdb9e7266": {
+      "description_zh": "计算融资交割时SAFE与可转债转股，解释定价轮转换股数及计算；退出出售收购收益分配另用瀑布情景技能。",
+      "source": "Calculate SAFE and convertible note conversion into equity at a financing close. Use when asked about SAFE conversion, note conversion, conversion shares, conversion math, how instruments convert in a priced round, or what happens to outstanding SAFEs and notes when a new round closes. Do NOT use for exit/sale/acquisition payouts at a sale price — those are waterfall scenarios, prefer a waterfall-scenarios skill.",
+      "source_sha256": "8aaf7ee2ef849fd2a011ff019883f5f4ec251db2d7c34079db98e76bdb9e7266",
+      "source_path": "skills/carta-conversion-calculator/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51e5c3b91ba986bedc09c87ea2994c2872eb9c10b66acc37667ea54133217118": {
+      "description_zh": "仅发现可用的Carta股权表工具或命令，帮助用户了解有哪些功能；已明确持有人、授予、归属、SAFE、估值、融资等主题时使用专业数据技能。",
+      "source": "META-DISCOVERY ONLY — answers the question \"what cap-table tools or commands exist?\" when the user is lost about what's available. NEVER use this skill for any request that names a cap-table topic (stakeholders, grants, vesting, SAFEs, notes, valuations, ownership, waterfall, financing, exposure, etc.) — those are always direct data requests, even if the user phrases them vaguely. The matching specialist skill wins every time over this one.",
+      "source_sha256": "51e5c3b91ba986bedc09c87ea2994c2872eb9c10b66acc37667ea54133217118",
+      "source_path": "skills/carta-discover-commands/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7834753f74133a6df36742732c4daecfdc78c9270e370bc5e03d06eda1e3ed50": {
+      "description_zh": "查询一个指定权益授予或持有人的归属计划，支持ISO/NSO期权、RSU、SAR及CBU，查看已归属数量、cliff日期、进度、结算和未归属股数；不用于全员工汇总。",
+      "source": "Fetch the vesting schedule for ONE specific grant or holder — options (ISO/NSO), RSUs, SARs, or CBUs. Use for \"how much has [name] vested\", \"when does [name]'s cliff hit\", \"vesting progress for [name]\", cliff dates, settlement, or unvested shares. NOT for portfolio-level / all-employees aggregate vesting.",
+      "source_sha256": "7834753f74133a6df36742732c4daecfdc78c9270e370bc5e03d06eda1e3ed50",
+      "source_path": "skills/carta-grant-vesting/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a39c80c4ce43ac8358b7dedbc091d1c03b1f76cbc498163582bfea5fe1ac5365": {
+      "description_zh": "报告英国公司HMRC EMI/CSOP限额使用情况，包括EMI总额600万英镑、个人25万英镑额度余量或超限，以及计划授予是否适配。",
+      "source": "Report a UK company's HMRC EMI/CSOP limit usage. Use when asked how much EMI allowance is left, whether the company is near the £6m EMI limit, who is close to or over their £250k individual limit, CSOP headroom, or whether a planned grant fits.",
+      "source_sha256": "a39c80c4ce43ac8358b7dedbc091d1c03b1f76cbc498163582bfea5fe1ac5365",
+      "source_path": "skills/carta-hmrc-limits/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2f31a41041f04b4a7cc312e27aa1ff25ae765b60d9a605daf13e0108337e255": {
+      "description_zh": "提供Carta AI交互规则的核心部分，包括财务精度、数据来源、AI计算关卡、确认方式与信任安全；财务数据呈现或写入前每会话加载一次，需语气指导时用完整规则技能。",
+      "source": "The non-negotiable half of Carta's AI agent interaction rules — financial precision, data provenance, the AI-computation gate, how to confirm, and trust & safety. Loaded ONCE per conversation, before any response that presents or writes Carta financial data. Sufficient on its own for write flows; a flow that also shapes voice and tone loads carta-interaction-reference, the superset, instead.",
+      "source_sha256": "e2f31a41041f04b4a7cc312e27aa1ff25ae765b60d9a605daf13e0108337e255",
+      "source_path": "skills/carta-interaction-reference-core/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "046c11d086cfebd77661879c73d2f4d9b05c2019d793854aa6d4f6ce97b55a93": {
+      "description_zh": "提供AI呈现Carta股权表数据的行为规则，涉及所有权、授予、SAFE、估值、瀑布、融资和持有人等；每会话首次相关回答前与领域技能一并加载，已加载不重复。",
+      "source": "Carta's behavioral rules for AI agents presenting cap table data — mandatory context for any Carta cap table response. Load ONCE per conversation, before the first such response (ownership, grants, SAFEs, valuations, waterfall scenarios, financing history, stakeholders, convertible instruments, option pools, or any other topic). If already loaded earlier in this conversation, do NOT reload — the prior tool_result remains in your context. Load alongside the domain skill (e.g. carta-reporting), not instead of it.",
+      "source_sha256": "046c11d086cfebd77661879c73d2f4d9b05c2019d793854aa6d4f6ce97b55a93",
+      "source_path": "skills/carta-interaction-reference/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47028f6a24535c659b26418ac5ab7e466d7ca2e44fafb69429884d46fc04e5f5": {
+      "description_zh": "在Carta股权表发行证券或起草股份、期权及利润权益单位，支持多种税制授予、证书与从草稿恢复，也可按电子表格CSV导入模板或授予文档提供的来源办理。",
+      "source": "Issue securities on a Carta cap table. Use when the user asks to issue certificates, stock certificates, option grants (ISO, NSO, EMI, CSOP, Unapproved, Startup Concessions, Non-Concessional, ZEPO), profits interest units (PIUs), to draft shares, grants or units, or to resume issuing from a draft set. USE WHEN the user says \"issue\", \"grant\", \"draft\", \"award\", \"give equity\", \"give shares\", \"give stock\", \"create a certificate\", \"create a grant\", \"issue a profits interest\", \"issue PIUs\", \"grant profits interest units\", \"set up an option grant\", \"issue equity to a named person\", or names any specific security type above. Also USE WHEN the user points at a spreadsheet, CSV, Carta import template, or a grant/award document as the source of the issuance (\"issue the grants in this file\", \"here's our import template\").",
+      "source_sha256": "47028f6a24535c659b26418ac5ab7e466d7ca2e44fafb69429884d46fc04e5f5",
+      "source_path": "skills/carta-issuance/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee9414132e82ece9099846ecb56eb2e1434ff2fda6e7d55d1f838d3325e9a1c6": {
+      "description_zh": "作为carta-issuance内部文件接入子技能，将XLSX/XLSM/CSV/TSV或PDF/DOCX转成证券证书、期权和利润权益单位的预填行；不能直接调用，由发行流程派发。",
+      "source": "Internal file-ingest sub-skill for carta-issuance. Turns an uploaded spreadsheet (.xlsx/.xlsm/.csv/.tsv) or document (.pdf/.docx) into the prefilled rows every carta-issuance surface consumes, for certificates, option grants and profits interest units. Not invocable directly — dispatched by carta-issuance Phase 0.25.",
+      "source_sha256": "ee9414132e82ece9099846ecb56eb2e1434ff2fda6e7d55d1f838d3325e9a1c6",
+      "source_path": "skills/carta-issuance/issuance-import/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a28e8c9bd1c8447ed90684226247d3c8d3a5083534937a41de3e33a02d2ff2d4": {
+      "description_zh": "计算跨投资组合公司的中位数、平均值、典型值、范围和分位数作为市场基准，返回聚合统计，不列各公司原始记录。",
+      "source": "Computed statistics across portfolio companies — median, average, typical, range — used as market benchmarks. Returns aggregate numbers and percentiles, not raw per-company listings.",
+      "source_sha256": "a28e8c9bd1c8447ed90684226247d3c8d3a5083534937a41de3e33a02d2ff2d4",
+      "source_path": "skills/carta-market-benchmarks/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab805c337188640d171c5be42908c607bad1b181103d3782ca460d9dff4114f8": {
+      "description_zh": "按明确时间与阈值发现投资组合公司即将到期、成熟、余量不足等风险，突出当前需关注事项，不作一般数据展示。",
+      "source": "Time-bounded and threshold-bounded risk detection across portfolio companies — finds items that are expiring soon, maturing soon, running low, or otherwise at risk. Surfaces what needs attention now, not what the data looks like in general.",
+      "source_sha256": "ab805c337188640d171c5be42908c607bad1b181103d3782ca460d9dff4114f8",
+      "source_path": "skills/carta-portfolio-alerts/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "add870b238beea2b1c2026f34243ec459d911bb4dc3df6ee170f4eaa3fd42d73": {
+      "description_zh": "作为Carta报告内部子技能，将报告数据导出为品牌化Excel，由主报告或Markdown流程在需要Excel时调用，也处理以Generate Carta Excel开头的成品提示。",
+      "source": "Internal subskill for carta-reporting. Exports Carta report data to a branded Excel file. Invoked by carta-reporting or carta-reporting-markdown when the user requests Excel output. Also the entry point when the main skill receives a message starting with \"Generate Carta Excel —\" (the artifact prompt bar payload).",
+      "source_sha256": "add870b238beea2b1c2026f34243ec459d911bb4dc3df6ee170f4eaa3fd42d73",
+      "source_path": "skills/carta-reporting-excel/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f31f59286e38c88222038236d008c37d3a99c426c4c52303b9029ebb125910fe": {
+      "description_zh": "作为Carta报告内部子技能，组织Claude Code中的架构预览、定制确认、筛选排序公式聚合配置和输出预览，交接Excel导出；由主技能在预览文件生成后调用，不直接面向用户调用。",
+      "source": "Internal subskill for carta-reporting. Drives the full Claude Code interaction: schema preview, customization checkpoint, transform config (filtering, sorting, formulas, aggregations), output preview, and hand-off to carta-reporting-excel. Invoked by carta-reporting (Claude Code path) after the preview file lands. Not for direct user invocation.",
+      "source_sha256": "f31f59286e38c88222038236d008c37d3a99c426c4c52303b9029ebb125910fe",
+      "source_path": "skills/carta-reporting-markdown/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f335052dd67c22a62c30be7c146beb017143439f43a40e5a3dc3b8d6d2b64c9": {
+      "description_zh": "展示单一公司Carta股权表数据，包括授予、归属、持有人、证券、SAFE、可转债、融资、优先持有人和清算权利；具体瀑布、转股、投票、发行、修改、逐人归属和轮次查询转专业技能，不用于跨组合数据。",
+      "source": "Default skill for all cap table data-display queries — use this whenever the user wants to see, list, or explore equity data for a single company. Covers grants, vesting schedules, stakeholders, securities, SAFEs, convertible notes, round history, preferred holders, liquidation seniority, and rights & preferences. Also handles any request starting with \"Generate Carta Excel —\" (the artifact prompt bar payload). Defers to specialized skills for: waterfall exits, SAFE/note conversion math, voting rights, issuance, modifying issuables, per-stakeholder vesting detail (use carta-grant-vesting for \"How much has [name] vested?\"), round history lookup (use carta-round-history for \"What was our Series B round?\"), and SAFE/convertible conversion math. Not for cross-portfolio data.",
+      "source_sha256": "7f335052dd67c22a62c30be7c146beb017143439f43a40e5a3dc3b8d6d2b64c9",
+      "source_path": "skills/carta-reporting/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a143caadc30b76cd10995da034152d3422357da56709dfa04c479106b0164f7f": {
+      "description_zh": "查询公司融资历史，列每次定价轮的日期、发行股类、每股价格、融资现金总额及参与投资者。",
+      "source": "Financing round history for a company — each priced round with its date, share class issued, price per share, total cash raised, and the investors who participated. Covers what was raised and from whom across the company's funding history.",
+      "source_sha256": "a143caadc30b76cd10995da034152d3422357da56709dfa04c479106b0164f7f",
+      "source_path": "skills/carta-round-history/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d5a0307e28af7ce4ca8a7f39671ff0beb827c2801d4b0854258d3762976b570f": {
+      "description_zh": "查询公司的估值历史和当前公允市场价值，包括409A、EMI、CSOP或股价，解释行权价与到期；不用于跨组合比较。",
+      "source": "Fetch a company's valuation history and current fair market value (FMV) — 409A, EMI, CSOP or share price. Use for questions about valuations, FMV, exercise prices, or expiry. Not for cross-portfolio comparisons — prefer a portfolio-benchmarks skill.",
+      "source_sha256": "d5a0307e28af7ce4ca8a7f39671ff0beb827c2801d4b0854258d3762976b570f",
+      "source_path": "skills/carta-valuation-history/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc4a15ff601e46fc39c3ae73a94c8059cf63a8bee7d496fad9ca0047a8228bad": {
+      "description_zh": "模拟公司退出、出售、收购或清算时各持有人的实际金额、回报倍数与股类分配，按给定出售价格计算收益，而非只解释抽象权利。",
+      "source": "Exit, sale, acquisition, and liquidation payouts for a company — answers how much money each holder walks away with at a given sale price, return multiples on holdings, and how proceeds distribute across share classes. Computes dollar amounts at modeled valuations, not abstract rights.",
+      "source_sha256": "fc4a15ff601e46fc39c3ae73a94c8059cf63a8bee7d496fad9ca0047a8228bad",
+      "source_path": "skills/carta-waterfall-scenarios/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c3ae9540c4f662fae2dd41ff51155bbb9833c55577e51f697aa38040fe0c841": {
+      "description_zh": "只读查询期权、RSA及PIU的见证人和配偶同意签署状态，找出待签、已签或过期请求，支持单项授予、公司或整个组合。",
+      "source": "Status of witness and spousal-consent signature requests on option grants, RSAs, PIUs — who still needs to sign, and what's awaiting signature, signed, or expired. Covers one award, one company, or a whole portfolio. Read-only.",
+      "source_sha256": "6c3ae9540c4f662fae2dd41ff51155bbb9833c55577e51f697aa38040fe0c841",
+      "source_path": "skills/carta-witness-signatures/SKILL.md",
+      "package_sha256": "146ce39e816398e515c79a8e073c48aab752ffc7af499451b75eecb495a20b95",
+      "source_package": "Carta cap table-6.90.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa579974ffa23285ca0b9a4f0614afa935bc7e9072c0ec9c9fe580b4cd72a0a2": {
+      "description_zh": "通过Carta CRM MCP收集公司信息并创建一个或多个公司记录，支持自然语言或/add-company请求。",
+      "source": "Adds one or more company records to the Carta CRM via the Carta CRM MCP Server. Use this skill when the user says things like \"add a company\", \"create company record\", \"add company to CRM\", \"add company to Carta CRM\", or \"/add-company\". Collects company information conversationally, then creates it via the MCP server.",
+      "source_sha256": "aa579974ffa23285ca0b9a4f0614afa935bc7e9072c0ec9c9fe580b4cd72a0a2",
+      "source_path": "skills/add-company/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e7946caefbe576e7b6a1492d38d84790d98cfdffa71ef76743b5efc7f8d56b9": {
+      "description_zh": "通过Carta CRM MCP收集信息并创建一个或多个联系人记录，只要求姓名，其余字段可选。",
+      "source": "Adds one or more contact records to the Carta CRM via the Carta CRM MCP Server. Use this skill when the user says things like \"add a contact\", \"create a contact record\", \"add contact to CRM\", \"save a contact\", \"upload contact to Carta CRM\", or \"/add-contact\". Collects contact information conversationally, then creates it via the MCP server. Only name is required — all other fields are optional.",
+      "source_sha256": "8e7946caefbe576e7b6a1492d38d84790d98cfdffa71ef76743b5efc7f8d56b9",
+      "source_path": "skills/add-contact/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9afe27749f285ce6220f9026c25b182de37f5e48e6718d575881221a4252969": {
+      "description_zh": "通过Carta CRM MCP在对话中收集交易信息，创建一个或多个交易记录。",
+      "source": "Creates one or more deal records in the Carta CRM via the Carta CRM MCP Server. Use this skill when the user says things like \"add a deal\", \"create a deal\", \"log a deal\", \"add deal to CRM\", \"add deal to Carta CRM\", or \"/add-deal\". Collects deal information conversationally, then creates it via the MCP server.",
+      "source_sha256": "b9afe27749f285ce6220f9026c25b182de37f5e48e6718d575881221a4252969",
+      "source_path": "skills/add-deal/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f96fa1744705ee13d69fdd2ca2c691e60eca6f061d1d232c1dd2928e35b4609b": {
+      "description_zh": "通过Carta CRM MCP在对话中收集融资信息，创建一个或多个融资记录。",
+      "source": "Adds one or more fundraising records to the Carta CRM via the Carta CRM MCP Server. Use this skill when the user says things like \"add a fundraising\", \"create a fundraising\", \"log a fundraising round\", \"add fundraising to CRM\", \"create fundraising record\", or \"/add-fundraising\". Collects fundraising information conversationally, then creates it via the MCP server.",
+      "source_sha256": "f96fa1744705ee13d69fdd2ca2c691e60eca6f061d1d232c1dd2928e35b4609b",
+      "source_path": "skills/add-fundraising/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43f13c84aae57bdad52564ef7ce78237d965541c9b8998be0a400cb1286aa23c": {
+      "description_zh": "通过Carta CRM MCP收集投资者信息，创建一个或多个投资者或VC基金记录。",
+      "source": "Adds one or more investor records to the Carta CRM via the Carta CRM MCP Server. Use this skill when the user says things like \"add an investor\", \"/add-investor\", \"add investor to Carta CRM\", \"create investor record\", \"add this VC fund to the CRM\", or \"save investor data\". Collects investor information conversationally, then creates it via the MCP server.",
+      "source_sha256": "43f13c84aae57bdad52564ef7ce78237d965541c9b8998be0a400cb1286aa23c",
+      "source_path": "skills/add-investor/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdae4893a8a9db2369262fb670c23832d1cb6501280f53e761f2298b64ef72e0": {
+      "description_zh": "通过Carta CRM MCP在交易记录上添加笔记，以该交易的评论存储。",
+      "source": "Adds a note to a deal in the Carta CRM via the Carta CRM MCP Server; notes are stored as comments on the deal record. Use this skill when the user says things like \"add a note\", \"log a note\", \"add note to a deal\", \"add note to Carta CRM\", \"add a comment\", \"comment on a deal\", or \"/add-note\".",
+      "source_sha256": "bdae4893a8a9db2369262fb670c23832d1cb6501280f53e761f2298b64ef72e0",
+      "source_path": "skills/add-note/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7bfbe9729a50203a95bc14a7f938e58841af5642329a2ada9c3cee21ebc1fc31": {
+      "description_zh": "发布稳定URL的独立Carta CRM Home页面，展示阶段管线、近期交易联系人、数量、最新笔记和本周会议，通过只读授权在打开时刷新；基金和股权表首页另用对应技能，对话内展示用home。",
+      "source": "Publishes the Carta CRM Home as a live artifact — a standalone page, at a stable URL, showing pipeline by stage, recent deals and contacts, object counts, latest notes and this week's meetings. The page reads the CRM itself through a read-only grant, so it refreshes whenever a viewer opens it. Use this skill when the user asks to \"build crm home\", \"rebuild crm home\", \"publish my crm home\", \"pin my crm home\", \"deploy crm home\", or asks for a CRM Home page they can bookmark. For a fund firm's Carta Home (SOI, fund performance, LP reporting) use carta-investors' carta-home-build; for a company's cap table use carta-cap-table's carta-captable-home-build. To see the Home inside this conversation rather than publish it, use the `home` skill.",
+      "source_sha256": "7bfbe9729a50203a95bc14a7f938e58841af5642329a2ada9c3cee21ebc1fc31",
+      "source_path": "skills/carta-crm-home-build/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a726ca72debee281bc98ab95158093bf354f8b7bc6350b732a0df30032542872": {
+      "description_zh": "汇总Carta CRM近期交易流量并自动识别租户架构的关键字段，默认过去12个月，也接受指定时间维度；按维度报告数量与集中度，不列单笔交易明细。",
+      "source": "Aggregates recent deal flow in the Carta CRM into a dealmaker-facing report, auto-discovering which fields matter for this tenant's schema. Use this skill when the user says things like \"deal flow analytics\", \"analyze our deal flow\", \"review deals added in the last 12 months\", \"who introduced most of our deals\", \"breakdown of deals by sector\", \"where is our deal flow coming from\", or \"/deal-flow-analytics\". Defaults to a trailing-12-month window but accepts any date range or dimension the user specifies. Returns counts and concentration callouts per dimension, not a list of individual deals — use search-deals for that.",
+      "source_sha256": "a726ca72debee281bc98ab95158093bf354f8b7bc6350b732a0df30032542872",
+      "source_path": "skills/deal-flow-analytics/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fee5ad7a35fd1db531299e50ecd166f10e5b8b87127ad1ca2e3d0aee029037f4": {
+      "description_zh": "读取公司网站并返回包含名称、行业、标签、描述和网址的结构化JSON，支持域名或URL，并将结果保存至本地enriched-companies供审计。",
+      "source": "Researches a company by fetching its website and returning structured profile data. Use this skill when the user says things like \"enrich this company\", \"look up company info\", \"research this company\", \"what does [domain] do\", \"get company details for [url]\", \"find info on [company]\", or \"/enrich-company\". Input: target (domain name or website URL). Output: structured JSON with name, industry, tags, description, and website. Saves the result locally at ~/.carta-crm/enriched-companies/ for auditing.",
+      "source_sha256": "fee5ad7a35fd1db531299e50ecd166f10e5b8b87127ad1ca2e3d0aee029037f4",
+      "source_path": "skills/enrich-company/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5085ba7fc8ece4f9dcb229be0d89e8916fc0e2d0582818dee37cf309e6276622": {
+      "description_zh": "依据用户网络查找目标公司的最佳熟人引荐路径，输出排序路线图、引荐请求草稿及后续落实动作。",
+      "source": "Finds the best warm introduction path into a target company through the user's network, and then sets the introduction up. Use this skill when the user says things like \"find intro angles into [company]\", \"how can I get introduced to [company]\", \"who do I know at [company]\", \"warm intro to [company]\", \"find connections at [company]\", \"how do I reach [company]\", or \"/get-angles\". Input: a company name or domain. Output: a ranked route map, a drafted intro request, and the follow-through actions.",
+      "source_sha256": "5085ba7fc8ece4f9dcb229be0d89e8916fc0e2d0582818dee37cf309e6276622",
+      "source_path": "skills/get-angles/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f661892a79f7d4c95545576911c045221dcc36843924e0200cc4655fb816297": {
+      "description_zh": "只读呈现Carta CRM首页，包括阶段管线、联系人交易、数量、笔记、本周会议及支持的提示目录，并判断对话或发布页交付；具体记录查找和基金/股权表首页用对应技能。",
+      "source": "Renders the Carta CRM Home: a landing view with pipeline by stage, recent contacts, deals, object counts, latest notes, this week's meetings, and a directory of the prompts the plugin supports. Use this skill when the user says things like \"carta crm home\", \"show my crm home\", \"my crm dashboard\", \"what's in my pipeline today\", \"crm landing page\", or \"/home\". It is also the skill that decides whether the Home belongs in the conversation or on a published page, so start here even when the user may want a page. Read-only. Do NOT use it to look up a specific record — name the record instead and Claude picks the right search skill. For a fund firm's Carta Home use carta-investors' carta-home-build; for a company's cap table use carta-cap-table's carta-captable-home-build.",
+      "source_sha256": "3f661892a79f7d4c95545576911c045221dcc36843924e0200cc4655fb816297",
+      "source_path": "skills/home/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "705e6f21dde32addf490924e252c180732e10da83aa60e7349916fe3a123d1d5": {
+      "description_zh": "为下一场即将到来的对手方会议制作一页准备资料，人员公司交易事实均取自CRM，仅邀请明确地点时例外加入一行场地信息；汇总参与者互动、关系和相关交易融资背景，不是日程总览。",
+      "source": "Builds a one-page tear sheet for the next upcoming meeting with a counterparty. Every fact about the people, the firm and the deals comes from the CRM. The one exception is a single line about the venue, written only when the invite names a place. Use this skill when the user says things like \"prepare me for my meeting\", \"meeting brief\", \"brief me for this meeting\", \"prep for upcoming meeting\", \"what do I need to know before my call with [company]\", or \"/prepare-for-meeting\". Compiles the invitees and their interaction history, the organization's notes and relationship status, and related deal, investor, fundraising or company context. Briefs exactly one meeting — the next one; not an agenda view.",
+      "source_sha256": "705e6f21dde32addf490924e252c180732e10da83aa60e7349916fe3a123d1d5",
+      "source_path": "skills/prepare-for-meeting/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16e7a4094098bcce0dcbb5aa846a717fd5ea8651ff64a87b957e77d4d88ad26f": {
+      "description_zh": "搜索读取Carta CRM公司记录，返回ID、名称与自定义字段，支持名称、域名或ID，结果ID可用于修改公司。",
+      "source": "Searches for and retrieves company records from the Carta CRM. Use this skill when the user says things like \"find a company\", \"search companies\", \"look up a company\", \"show me company details for [name]\", \"full details on [name]\", \"tell me about [name]\", \"get company by ID\", \"get company by domain\", \"list companies\", \"what companies do we have\", or \"/search-companies\". Returns company details including ID, name, and custom fields. The company ID returned can be used with the update-company skill.",
+      "source_sha256": "16e7a4094098bcce0dcbb5aa846a717fd5ea8651ff64a87b957e77d4d88ad26f",
+      "source_path": "skills/search-companies/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfafe956db06371a1ef5b5851284c5c0b58beb574e786517631557d68848a89a": {
+      "description_zh": "搜索读取Carta CRM联系人，返回ID、姓名、邮箱、职位、公司和标签，支持指定公司人员或ID，结果ID可用于修改联系人。",
+      "source": "Searches for and retrieves contact (people) records from the Carta CRM. Use this skill when the user says things like \"find a contact\", \"search contacts\", \"look up a person\", \"show me contact details for [name]\", \"full details on [name]\", \"tell me about [name]\", \"get contact by ID\", \"list contacts\", \"find people at [company]\", \"search people\", or \"/search-contacts\". Returns contact details including ID, name, email, title, company, and tags. The contact ID returned can be used with the update-contact skill.",
+      "source_sha256": "dfafe956db06371a1ef5b5851284c5c0b58beb574e786517631557d68848a89a",
+      "source_path": "skills/search-contacts/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "285457afbe11e1651b129c17690b7a550972a1117cb0ad413ae054cc0c879a79": {
+      "description_zh": "搜索读取Carta CRM交易，按公司、阶段或ID查询，返回管线、标签与自定义字段，结果ID可用于修改交易。",
+      "source": "Searches for and retrieves deal records from the Carta CRM. Use this skill when the user says things like \"find a deal\", \"search deals\", \"look up a deal\", \"show me deals for [company]\", \"get deal by ID\", \"find deal in [stage]\", \"list deals\", \"what deals do we have for [company]\", or \"/search-deals\". Returns deal details including ID, company, stage, pipeline, tags, and custom fields. The deal ID returned can be used with the update-deal skill.",
+      "source_sha256": "285457afbe11e1651b129c17690b7a550972a1117cb0ad413ae054cc0c879a79",
+      "source_path": "skills/search-deals/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2ef724969c4ef4d298d2aec89969a9f5ffea38be73608e0f5ca01e63c3781ce": {
+      "description_zh": "搜索读取Carta CRM融资记录，返回ID、名称、阶段和自定义字段，结果ID可用于修改融资。",
+      "source": "Searches for and retrieves fundraising records from the Carta CRM. Use this skill when the user says things like \"find a fundraising\", \"search fundraisings\", \"look up a fundraising round\", \"show fundraising details for [name]\", \"full details on [name]\", \"get fundraising by ID\", \"list fundraisings\", \"what fundraisings do we have\", or \"/search-fundraisings\". Returns fundraising details including ID, name, stage, and custom fields. The fundraising ID returned can be used with the update-fundraising skill.",
+      "source_sha256": "a2ef724969c4ef4d298d2aec89969a9f5ffea38be73608e0f5ca01e63c3781ce",
+      "source_path": "skills/search-fundraisings/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a43dbce88e050291686175fa68b6871daa15c37467d36e3e04d346cd6bc4461": {
+      "description_zh": "搜索读取Carta CRM投资者记录，返回ID、名称和自定义字段，结果ID可用于修改投资者。",
+      "source": "Searches for and retrieves investor records from the Carta CRM. Use this skill when the user says things like \"find an investor\", \"search investors\", \"look up an investor\", \"show me investor details for [name]\", \"full details on [name]\", \"tell me about [name]\", \"get investor by ID\", \"list investors\", \"what investors do we have\", or \"/search-investors\". Returns investor details including ID, name, and custom fields. The investor ID returned can be used with the update-investor skill.",
+      "source_sha256": "5a43dbce88e050291686175fa68b6871daa15c37467d36e3e04d346cd6bc4461",
+      "source_path": "skills/search-investors/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9e344d7557c119d56eaba7ae5ceef9461ff49d7f4e565b98fcb5df625a8c318": {
+      "description_zh": "在Carta CRM搜索读取笔记，按主题或关键词查找，返回ID、标题与正文。",
+      "source": "Searches for and retrieves note records from the Carta CRM. Use this skill when the user says things like \"find a note\", \"search notes\", \"look up a note\", \"show me notes about [topic]\", \"list notes\", \"find notes mentioning [keyword]\", or \"/search-notes\". Returns note details including ID, title, and text content.",
+      "source_sha256": "c9e344d7557c119d56eaba7ae5ceef9461ff49d7f4e565b98fcb5df625a8c318",
+      "source_path": "skills/search-notes/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "623ff8dd669866bc967d915d4b2d6b07a343f4b5dc8da3a4d539be4769e06a3e": {
+      "description_zh": "运行Carta CRM已保存的报告，按报告保存的列将结果行展示为表格，也可列举可用报告。",
+      "source": "Runs a saved report in the Carta CRM and renders its rows as a table, using the columns the report saved. Use this skill when the user says things like \"run my report\", \"run the [name] report\", \"show me the [name] report\", \"open the [name] report\", \"what reports do we have\", \"list reports\", or \"/search-reports\".",
+      "source_sha256": "623ff8dd669866bc967d915d4b2d6b07a343f4b5dc8da3a4d539be4769e06a3e",
+      "source_path": "skills/search-reports/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ebd1d8e793a821461e1f706b317f2575f1d980864829cf56d9ebe714b3baa8d": {
+      "description_zh": "以约五分钟交互教学介绍Carta CRM插件、验证设置及演示四种实际场景；不用于真实记录查询创建修改，返回用户需要仪表板时用home。",
+      "source": "Interactive ~5-minute walkthrough of the Carta CRM plugin. Covers plugin overview, setup verification, how to kick off each skill, and a demo walkthrough of 4 realistic CRM scenarios. Trigger phrases: \"carta crm tutorial\", \"show me the crm tutorial\", \"how do I use carta crm\", \"walk me through carta crm\", \"getting started with crm\", \"demo carta crm\", \"crm tutorial\". Do NOT use for real data lookups (searching, adding, or updating CRM records) — just describe what you need in plain language and Claude picks the right action. A returning user who asks for a landing view, a dashboard or \"/home\" wants the `home` skill, not this walkthrough.",
+      "source_sha256": "8ebd1d8e793a821461e1f706b317f2575f1d980864829cf56d9ebe714b3baa8d",
+      "source_path": "skills/tutorial/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc6fba1d8cf1f4d96bff7358a5a3fce318f8ca3b1c3625b636e44ac8f1369d45": {
+      "description_zh": "修改Carta CRM已有公司，接受ID或名称，无ID时先搜索；只更改明确提供的字段，可处理名称、网址、自定义字段和标签。",
+      "source": "Updates an existing company record in the Carta CRM. Use this skill when the user says things like \"update a company\", \"edit company\", \"update company details\", \"change company name\", \"update company website\", \"update company fields\", \"add a tag to company\", or \"/update-company\". Accepts a company ID or name (will search if no ID provided). Only the fields explicitly provided are changed — all other fields are left untouched.",
+      "source_sha256": "bc6fba1d8cf1f4d96bff7358a5a3fce318f8ca3b1c3625b636e44ac8f1369d45",
+      "source_path": "skills/update-company/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5f561d60051e6c90e25d6a23ccc0c5067839acc8bebe5763f89a880d2c5564b": {
+      "description_zh": "修改Carta CRM已有联系人，接受ID或名称，无ID时先搜索；只更改明确提供的字段，可处理邮箱、职位、公司和标签。",
+      "source": "Updates an existing contact (person) record in the Carta CRM. Use this skill when the user says things like \"update a contact\", \"edit contact\", \"update contact details\", \"change contact email\", \"update person's title\", \"update contact company\", \"add a tag to contact\", or \"/update-contact\". Accepts a contact ID or name (will search if no ID provided). Only the fields explicitly provided are changed — all other fields are left untouched.",
+      "source_sha256": "a5f561d60051e6c90e25d6a23ccc0c5067839acc8bebe5763f89a880d2c5564b",
+      "source_path": "skills/update-contact/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "715b0d3ffbfca874c572ea088e546ca776c61e35fed4763263b5c4c0638ea1dd": {
+      "description_zh": "修改Carta CRM已有交易，接受ID或公司名，无ID时先搜索；只更改明确提供的阶段、字段、标签、负责人、公司资料或联系人关联。",
+      "source": "Updates an existing deal record in the Carta CRM. Use this skill when the user says things like \"update a deal\", \"move deal to [stage]\", \"change deal stage\", \"edit deal\", \"update deal fields\", \"add a tag to deal\", \"assign deal lead\", \"update company info on deal\", \"link contacts to deal\", or \"/update-deal\". Accepts a deal ID or company name (will search if no ID provided). Only the fields explicitly provided are changed — all other fields are left untouched.",
+      "source_sha256": "715b0d3ffbfca874c572ea088e546ca776c61e35fed4763263b5c4c0638ea1dd",
+      "source_path": "skills/update-deal/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4aa2f70b324eb5e255046f34e1d26190b3da0c7fc1b0c74a6dcfa7ce31f6c809": {
+      "description_zh": "修改Carta CRM已有融资记录，接受ID或名称，无ID时先搜索；只更改明确提供的阶段与字段。",
+      "source": "Updates an existing fundraising record in the Carta CRM. Use this skill when the user says things like \"update a fundraising\", \"edit fundraising\", \"update fundraising details\", \"change fundraising stage\", \"update fundraising fields\", or \"/update-fundraising\". Accepts a fundraising ID or name (will search if no ID provided). Only the fields explicitly provided are changed — all other fields are left untouched.",
+      "source_sha256": "4aa2f70b324eb5e255046f34e1d26190b3da0c7fc1b0c74a6dcfa7ce31f6c809",
+      "source_path": "skills/update-fundraising/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4bfbf0f90b4e94c3c550aced3303d76f79dfd4d1744709c2e7032e44ca9f3ea0": {
+      "description_zh": "修改Carta CRM已有投资者，接受ID或名称，无ID时先搜索；只更改明确提供的名称、网址、字段和标签。",
+      "source": "Updates an existing investor record in the Carta CRM. Use this skill when the user says things like \"update an investor\", \"edit investor\", \"update investor details\", \"change investor name\", \"update investor website\", \"update investor fields\", \"add a tag to investor\", or \"/update-investor\". Accepts an investor ID or name (will search if no ID provided). Only the fields explicitly provided are changed — all other fields are left untouched.",
+      "source_sha256": "4bfbf0f90b4e94c3c550aced3303d76f79dfd4d1744709c2e7032e44ca9f3ea0",
+      "source_path": "skills/update-investor/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86a42eeff569bbe129a8be6677a5e83208e99b9755fd2527dbba0cfdb5d97850": {
+      "description_zh": "查找Carta CRM笔记并帮助修改交易评论；MCP不支持独立笔记编辑，关联交易上的笔记评论通过update-deal更新。",
+      "source": "Searches for notes in the Carta CRM and helps the user update deal comments. Use this skill when the user says things like \"update a note\", \"edit note\", \"update note content\", \"change a note\", or \"/update-note\". Note: standalone note editing is not available via MCP — notes/comments are attached to deals and updated via the update-deal skill.",
+      "source_sha256": "86a42eeff569bbe129a8be6677a5e83208e99b9755fd2527dbba0cfdb5d97850",
+      "source_path": "skills/update-note/SKILL.md",
+      "package_sha256": "5a66aa69cd484b2d4e60e16e6a2b3005e01950a6bbd8b3c83d92ad2434a72d61",
+      "source_package": "Carta CRM-1.14.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba21a5b665574329f602ddcafcba75eb37f8b39a2b0fa824c1620b2e39e7b75f": {
+      "description_zh": "为大型多模块、多集成代码库建立依赖图、识别功能分段并分批委派评审代理，检查结构、重复与跨仓库风格一致性；耗费较多令牌及代理，超过初始阶段前须用户明确选择参与。",
+      "source": "Map, audit, and review large multi-segment codebases (hundreds of files, multiple integrations like Supabase, Telegram, Vercel, AI APIs, file systems, queues, etc.) by building a dependency graph, detecting functional segments, then dispatching review subagents in controlled waves. Use this skill whenever the user wants to \"map out\", \"audit\", \"review\", \"find duplication in\", \"enforce style across\", \"understand the structure of\", or \"analyze a large codebase\" — especially when they mention many endpoints, multiple third-party integrations, or cross-cutting consistency concerns. Use even when the user does not say \"skill\" or \"cartographer\" — phrases like \"review my whole project\", \"find inconsistencies across the repo\", \"build a UML of my project\", or \"I have hundreds of files spread across X, Y, Z services\" should trigger this. This skill consumes substantial tokens and runs many subagents; it requires explicit upfront opt-in from the user before proceeding past Phase 0.",
+      "source_sha256": "ba21a5b665574329f602ddcafcba75eb37f8b39a2b0fa824c1620b2e39e7b75f",
+      "source_path": "skills/cartographer/SKILL.md",
+      "package_sha256": "d313adeef181cc44cc5cb7562e513e559f06806bd3e4a11e4ae5903be81bc16f",
+      "source_package": "cartographer-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0d231d8fcd972dc6dc672071a38954aa3bc88d1de1ec534d436096183c3a06f": {
+      "description_zh": "审计Carusela俱乐部中隐藏的内容问题，包括不可见内容、无关联分类、缺失缩略图、未限制访问的材料及关闭界面；用于批量导入后、上线前或成员找不到内容时。",
+      "source": "Find what is silently wrong in a Carusela club - content nobody can see, categories attached to nothing, missing thumbnails, ungated material and surfaces that are switched off. Use after a bulk import, before a launch, or when somebody says the club looks empty or a member cannot find something.",
+      "source_sha256": "c0d231d8fcd972dc6dc672071a38954aa3bc88d1de1ec534d436096183c3a06f",
+      "source_path": "skills/audit-club-content/SKILL.md",
+      "package_sha256": "580f5eadb19f2ac73d222038cb3ad22b54320a7ab7fa6e81375115146272df33",
+      "source_package": "carusela-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a843f43a549941bf9c2cc62d0a1713a6bad4fc7a345cc99e4588e9d02a9e55b": {
+      "description_zh": "通过受控设计流程修改Carusela俱乐部品牌，包括颜色、标志、favicon、Apple图标和社交分享卡，处理品牌重塑或分享显示问题。",
+      "source": "Change a Carusela club's colours, logo, favicon, apple icon and social share card through the gated design flow. Use when somebody wants to brand or rebrand their club, change its colours, upload a logo, or fix how it looks when shared.",
+      "source_sha256": "9a843f43a549941bf9c2cc62d0a1713a6bad4fc7a345cc99e4588e9d02a9e55b",
+      "source_path": "skills/brand-a-club/SKILL.md",
+      "package_sha256": "580f5eadb19f2ac73d222038cb3ad22b54320a7ab7fa6e81375115146272df33",
+      "source_package": "carusela-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d387ee21fe1e837de7cc3fdca6985a71fbbe107546bf2e5c675eb96cface71c": {
+      "description_zh": "通过Carusela MCP建设发布课程或会员销售页与漏斗，涵盖加购、升降售、感谢页、优惠券、A/B及回滚；每项价格和发布须先获人工批准，支持区块、自设计HTML或已有站点。",
+      "source": "Build and publish a Carusela Sales page and its Funnel (Order bumps, Upsells, Downsells and the Thank You page) through the Carusela MCP, with every price and every publication approved by a person first. Use when somebody wants to sell a course or a membership, set up a sales page (from blocks, as their own designed HTML page, or on their own site), a checkout, an order bump, an upsell or downsell, a thank-you page (designed HTML pages for upsells and the thank-you included), a coupon for a launch, an A/B test between funnel versions, or to roll a sales page or funnel back.",
+      "source_sha256": "0d387ee21fe1e837de7cc3fdca6985a71fbbe107546bf2e5c675eb96cface71c",
+      "source_path": "skills/build-sales-funnel/SKILL.md",
+      "package_sha256": "580f5eadb19f2ac73d222038cb3ad22b54320a7ab7fa6e81375115146272df33",
+      "source_package": "carusela-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c22b59a3f1cd8b8448c4b1878372debd98d8cf99d12395edb6807c86312427f": {
+      "description_zh": "首次调用Carusela工具或写入前了解能力边界、选择正确俱乐部和工具拒绝字段的原因，解释可修改范围。",
+      "source": "Read this before the first write to a Carusela club. Explains what the MCP can and cannot do, why a refusal is usually correct, and how to pick the right club. Use whenever a Carusela tool is about to be called for the first time in a session, when a tool refuses a field, or when somebody asks what Claude can change in their club.",
+      "source_sha256": "2c22b59a3f1cd8b8448c4b1878372debd98d8cf99d12395edb6807c86312427f",
+      "source_path": "skills/club-orientation/SKILL.md",
+      "package_sha256": "580f5eadb19f2ac73d222038cb3ad22b54320a7ab7fa6e81375115146272df33",
+      "source_package": "carusela-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8143189db186d772cc23fdf5b9fd9ae431436a79c34490ae2b4e27896937d24a": {
+      "description_zh": "决定并设置Carusela各访问等级可见内容，建立免费或付费门槛，并诊断成员看不到材料的原因。",
+      "source": "Decide which Carusela content each access tier can reach, and apply it. Use when somebody wants to gate content, build a free tier, put material behind a paid level, or asks why a member cannot see something.",
+      "source_sha256": "8143189db186d772cc23fdf5b9fd9ae431436a79c34490ae2b4e27896937d24a",
+      "source_path": "skills/gate-club-access/SKILL.md",
+      "package_sha256": "580f5eadb19f2ac73d222038cb3ad22b54320a7ab7fa6e81375115146272df33",
+      "source_package": "carusela-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc9a96693aacf1f5daafe9e5d34710ee7b84915e2921c4baf44909932ef21d01": {
+      "description_zh": "通过Carusela MCP导入、迁移、批量创建或重组课程、录音、教程、指南和AI智能体，保留字段并避免发布未经评审内容；可由现有网站、教学大纲、视频库或课程平台迁移。",
+      "source": "Load a club's courses, recordings, tutorials, guides and AI agents through the Carusela MCP without losing fields or publishing things nobody reviewed. Use when somebody wants to import, migrate, bulk-create or restructure club content, or asks to turn an existing site, syllabus, video library or another course platform (Schooler, Rav Messer, Teachable) into a club.",
+      "source_sha256": "fc9a96693aacf1f5daafe9e5d34710ee7b84915e2921c4baf44909932ef21d01",
+      "source_path": "skills/seed-club-content/SKILL.md",
+      "package_sha256": "580f5eadb19f2ac73d222038cb3ad22b54320a7ab7fa6e81375115146272df33",
+      "source_package": "carusela-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "087d7b02a685f5175184f70a4ed56509ec3f1e3a9e3d33ca0b5ec77aa41d97cc": {
+      "description_zh": "配置Carusela AI导师的名称、指令、词汇和起始提示，使回答基于俱乐部材料，修复泛泛或错误回答。",
+      "source": "Configure a Carusela club's AI mentor - its name, instructions, vocabulary and starter prompts - so it answers from the club's own material. Use when somebody wants to set up or improve the AI assistant in their club, or says it gives generic or wrong answers.",
+      "source_sha256": "087d7b02a685f5175184f70a4ed56509ec3f1e3a9e3d33ca0b5ec77aa41d97cc",
+      "source_path": "skills/tune-club-mentor/SKILL.md",
+      "package_sha256": "580f5eadb19f2ac73d222038cb3ad22b54320a7ab7fa6e81375115146272df33",
+      "source_package": "carusela-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2644e14abd90ca3ce90afec166cdacd8485d63e4f5300044d08d1eece6447a63": {
+      "description_zh": "在西班牙语写作、翻译、校正、评审与文本分析时，按RAE规范及西班牙高中教师水平检查六个维度、采用教学语气，并将拉美词汇调整为西班牙对应词。",
+      "source": "Activar SIEMPRE que se escriba, traduzca, corrija, revise o analice texto en español. Aplicar nivel de profesor de Lengua Castellana de 2.º de Bachillerato: corrección normativa RAE completa, análisis académico en 6 dimensiones y tono docente. Activar ante cualquier mención de ortografía, gramática, tildes, RAE, redacción, estilo, comentario de texto, análisis sintáctico, figuras retóricas, tipos de texto, registro, cohesión, coherencia, conectores, perífrasis, gerundio, subjuntivo, puntuación, punto y coma, comillas, mayúsculas o léxico. Si el texto contiene léxico latinoamericano (celular, carro, computadora, manejar, departamento, jugo, papas) sustituir por equivalentes de España. Esta skill debe activarse en prácticamente toda interacción en español — si existe alguna duda, activarla.",
+      "source_sha256": "2644e14abd90ca3ce90afec166cdacd8485d63e4f5300044d08d1eece6447a63",
+      "source_path": "skills/castellano-rae/SKILL.md",
+      "package_sha256": "919f282ac437824601409990852b4dae58f70c6d52307572293f769715d3094b",
+      "source_package": "Castellano-RAE-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6847abd10a7e907c179690875e0692b2ebfda01009adfacbfb6a08a92022779c": {
+      "description_zh": "使用Catalyst AppSail运行持久后端，支持Node.js、Java、Python托管运行时及自定义Docker；适用于长驻服务，不用于无状态请求处理、事件函数或定时任务。",
+      "source": "Catalyst AppSail — persistent backend PaaS with managed runtimes (Node.js, Java, Python) and custom Docker containers. Trigger on 'AppSail', 'persistent server', 'Docker on Catalyst', 'X_ZOHO_CATALYST_LISTEN_PORT', or 'long-running process on Catalyst'. Do NOT use for stateless request/response handlers, event-driven functions, or scheduled jobs — use catalyst-functions instead.",
+      "source_sha256": "6847abd10a7e907c179690875e0692b2ebfda01009adfacbfb6a08a92022779c",
+      "source_path": "skills/catalyst-appsail/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "423fc65a5197df9f5986aadfde484c839f3ffda1e4b1e2c675345d6f58fbc1a4": {
+      "description_zh": "实现Catalyst用户登录注册、Web SDK认证、ZAID及Connections OAuth令牌管理，注意开发生产ZAID差异导致的推广后认证失败；函数调用Security Rules另用函数技能。",
+      "source": "Catalyst Authentication — user login/signup, ZAID, Web SDK auth flows, and OAuth token management via Connections. Trigger on 'authentication', 'login', 'signup', 'getCurrentUser', 'ZAID', 'isUserAuthenticated', 'signOut', 'Connections', or 'getAccessToken'. You MUST load this skill whenever implementing user login or protecting data — ZAID differs between Development and Production and is the #1 cause of auth failures after environment promotion. For Security Rules (function invocation control), route to catalyst-functions.",
+      "source_sha256": "423fc65a5197df9f5986aadfde484c839f3ffda1e4b1e2c675345d6f58fbc1a4",
+      "source_path": "skills/catalyst-authentication/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
