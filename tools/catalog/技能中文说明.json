@@ -35089,6 +35089,1086 @@
       "package_sha256": "9fbd76a822727be6b34cd01480f2dacfb283382f1ffcbce3a3917273bf08657d",
       "source_package": "Hive Publish-1.1.1-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85af28f1a3fcfccedb60c1d0a6f33a6a70fdc6a8c78e2e992d726b585a7096a4": {
+      "description_zh": "将会议笔记或当前对话转为带负责人、项目和日期的 Hive 行动建议，供复核并经用户确认后创建，适用于会议跟进和决策转任务。",
+      "source": "Turn meeting notes or the current conversation into a reviewed set of Hive actions with owners, projects, and dates, then create them only after the user confirms the proposed changes. Use for meeting follow-ups, action-item capture, or converting decisions into Hive work.",
+      "source_sha256": "85af28f1a3fcfccedb60c1d0a6f33a6a70fdc6a8c78e2e992d726b585a7096a4",
+      "source_path": "skills/meeting-follow-up/SKILL.md",
+      "package_sha256": "dcdb4c950b3e7b8791163845977937d30584adcbf05f2178f740e4196e0c9494",
+      "source_package": "Hive-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f96cf873b96f9409c04cf28476fbc18ad7c8b36a7a04b1046890ca5935e7b47": {
+      "description_zh": "依据 Hive 项目证据生成简短状态报告，包含进展、逾期、阻塞、负责人、审批与下一步。",
+      "source": "Build a concise, evidence-backed status report for a Hive project, including progress, overdue work, blockers, owners, approvals, and next actions. Use when the user asks for project status, project health, blockers, risks, or a stakeholder update from Hive.",
+      "source_sha256": "1f96cf873b96f9409c04cf28476fbc18ad7c8b36a7a04b1046890ca5935e7b47",
+      "source_path": "skills/project-status/SKILL.md",
+      "package_sha256": "dcdb4c950b3e7b8791163845977937d30584adcbf05f2178f740e4196e0c9494",
+      "source_package": "Hive-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60d51e630ef44cf808e111b84d5f043f1d8032f6999ada5411872f69d0c7ce21": {
+      "description_zh": "根据分派给用户的 Hive 工作制定现实周计划，优先考虑逾期、期限、阻塞、审批和依赖。",
+      "source": "Build a realistic weekly plan from the user's assigned Hive work, prioritizing overdue items, deadlines, blockers, approvals, and dependencies. Use when the user asks what to work on, to plan the week, or to prioritize current Hive actions.",
+      "source_sha256": "60d51e630ef44cf808e111b84d5f043f1d8032f6999ada5411872f69d0c7ce21",
+      "source_path": "skills/weekly-plan/SKILL.md",
+      "package_sha256": "dcdb4c950b3e7b8791163845977937d30584adcbf05f2178f740e4196e0c9494",
+      "source_package": "Hive-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "763c7dd6893529a0c3d45ed58f19c984191b5561caab16f868a3b19190c61ed0": {
+      "description_zh": "从指定人物和视角审查 UI、页面、邮件、README、演示、入驻流程或 API 等产物，形成按优先级排列的摩擦问题清单，比 hivesim 更轻量。",
+      "source": "Persona-driven review of anything, from any angle. Point it at a UI, a landing page, a cold email, a README, a pitch deck, an onboarding flow, an API design, or any artifact, pick who is looking at it and what lens they bring, and get a prioritized friction punch list. Lighter than /hivesim. Triggers when user says /hiverev, \"review this as [persona]\", \"what would [persona] think\", \"find friction in this\", or \"critique this from the angle of [X]\".",
+      "source_sha256": "763c7dd6893529a0c3d45ed58f19c984191b5561caab16f868a3b19190c61ed0",
+      "source_path": "skills/hiverev/SKILL.md",
+      "package_sha256": "ff942ac7e6a831bfcf393d7f7459e6b42da774fbee215b921e2744522587bf8a",
+      "source_package": "hive-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "341fab99c5d7b7b8519248f04ddd01c0c46e9a4e96052b3631dcf584db10fde3": {
+      "description_zh": "使用七阶段战略推演并行模拟市场、反驳自身结论并预想失败，用于重大决策、定价、市场进入和伙伴评估。",
+      "source": "Strategic wargame engine. 7-phase simulation pipeline that runs parallel market simulations, attacks its own conclusions, then imagines how the decision fails. Use for big strategic decisions, pricing changes, market entry, partnership evaluation, or any question where being wrong is expensive. Triggers when user says /hivesim or asks to wargame a decision.",
+      "source_sha256": "341fab99c5d7b7b8519248f04ddd01c0c46e9a4e96052b3631dcf584db10fde3",
+      "source_path": "skills/hivesim/SKILL.md",
+      "package_sha256": "ff942ac7e6a831bfcf393d7f7459e6b42da774fbee215b921e2744522587bf8a",
+      "source_package": "hive-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41434fa1c6d44f4318f16dfd91a5bc91423940ed4ef486e9b287e008013d15c5": {
+      "description_zh": "为项目或用户创建 Claude Code 自定义子代理定义，适用于重复任务的专门代理。",
+      "source": "Create a Claude Code sub-agent definition for this project or user. Use when the user asks to create a new custom agent or a specialized sub-agent for a recurring task.",
+      "source_sha256": "41434fa1c6d44f4318f16dfd91a5bc91423940ed4ef486e9b287e008013d15c5",
+      "source_path": "skills/agent-creator/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68e791a4fcf8355c0b3df36a8f84bc66aabc8857a94e0ea098960c7157e4ef72": {
+      "description_zh": "将已完成的计划文件端到端推进经过开发和验证阶段。",
+      "source": "Automated development pipeline. Runs a completed plan file through Development and Validation phases end-to-end.",
+      "source_sha256": "68e791a4fcf8355c0b3df36a8f84bc66aabc8857a94e0ea098960c7157e4ef72",
+      "source_path": "skills/auto-dev/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7890d21b0b344e7966dfd6461fbecebcb5c5c6ead97c8a04e2eb3ee918e48971": {
+      "description_zh": "在大型新功能或系统变更规划前探索需求、提出方案、取得设计批准并转到 plan-task；缺陷及中小工作可跳过。",
+      "source": "Design and spec a Large new feature or system change before planning - explores requirements, proposes approaches, gets design approval, then chains to plan-task. Skip for bug fixes and Small/Medium work; go straight to plan-task or just do it.",
+      "source_sha256": "7890d21b0b344e7966dfd6461fbecebcb5c5c6ead97c8a04e2eb3ee918e48971",
+      "source_path": "skills/brainstorming/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab829e237b8f7abe627391414b380e9e3f3229462b42378e6bafe4e333d49e56": {
+      "description_zh": "规定被父会话分派的子工作者纪律：实现前核验简报前提，只在自身分支工作并按固定完成格式报告。",
+      "source": "Discipline a worker session loads at dispatch time — verify the brief's premises before implementing, work only on its own branch, and report in the fixed completion format. Use when a session has been dispatched as a worker (child) with a brief from a parent control session.",
+      "source_sha256": "ab829e237b8f7abe627391414b380e9e3f3229462b42378e6bafe4e333d49e56",
+      "source_path": "skills/child-session/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20c05fdf6e535a80b516a2c16a50002ed23a9d293d95033d18da619c307106f0": {
+      "description_zh": "为跨会话或工作树委派提供调查、决策、分派、验证与合并流程，判断何时委派及如何合并前核验。",
+      "source": "Multi-session control discipline for delegating work to worker sessions — investigate, decide, dispatch, verify, and merge. Use when a session is coordinating separate worker sessions or worktrees and needs to know when to delegate versus decide, and how to verify before merging.",
+      "source_sha256": "20c05fdf6e535a80b516a2c16a50002ed23a9d293d95033d18da619c307106f0",
+      "source_path": "skills/control-loop/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b460f05847b61cfc93030dadd1e6fda37e8dcbca5ffeadb54ab0c1c2ea59d923": {
+      "description_zh": "让不同代理引擎会话结合各自工具证据共同作出高风险决策，降低单引擎盲点影响。",
+      "source": "Reach an evidence-backed decision between sessions running on different agent engines. Use when a call is high-stakes enough that one engine's blind spots are a real risk, and a second session with different tool access can bring evidence the first cannot.",
+      "source_sha256": "b460f05847b61cfc93030dadd1e6fda37e8dcbca5ffeadb54ab0c1c2ea59d923",
+      "source_path": "skills/cross-engine-review/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee9b3f5fe411567130e5d62acd952086bd59f7931cb9c0ae6c1ad649e31e90fa": {
+      "description_zh": "根据错误消息、回溯或失败日志诊断并应用修复。",
+      "source": "Analyze errors and apply fixes. Use when you have an error message, traceback, or failing log to diagnose.",
+      "source_sha256": "ee9b3f5fe411567130e5d62acd952086bd59f7931cb9c0ae6c1ad649e31e90fa",
+      "source_path": "skills/debug/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5097e2717643c486f54f83085203eba8a03154b1172b16b9ea6b260a74c45dc6": {
+      "description_zh": "把与宿主无关的规则导出到 AGENTS.md、GEMINI.md 等入口，让 Codex、OpenCode、Copilot、Gemini CLI、Pi、Hermes 等使用相同纪律；适用于多 harness 仓库或 rules 变更后。",
+      "source": "Export the kit's host-neutral rules to every harness entrypoint file (AGENTS.md, GEMINI.md) so non-Claude-Code harnesses (Codex, OpenCode, Copilot, Gemini CLI, Pi, Hermes) follow the same discipline. Use when a repo is worked by more than one agent harness, or after changing rules/. Trigger with /harness-export.",
+      "source_sha256": "5097e2717643c486f54f83085203eba8a03154b1172b16b9ea6b260a74c45dc6",
+      "source_path": "skills/harness-export/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87d2e8c00fa0c6462842f77ccbcadcba329945a851b4eec38aa4db94005385ca": {
+      "description_zh": "从最多十个视角进行三轮计划或设计审查，由主会话协调，无子代理的 harness 可顺序执行。",
+      "source": "Multi-perspective review of a plan or design document. Up to ten viewpoints deliberate in 3 rounds; the main session orchestrates, with a sequential path for harnesses without subagents.",
+      "source_sha256": "87d2e8c00fa0c6462842f77ccbcadcba329945a851b4eec38aa4db94005385ca",
+      "source_path": "skills/multi-perspective-review/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b6d45e1b1dad35c66a0fdab5d32ee0e9640a3519180bc9d798b9530119d85367": {
+      "description_zh": "为新功能、缺陷或项目在实施前分解任务并写入结构化计划文件。",
+      "source": "Structured task planning into a plan file. Use for any new feature, bug fix, or project that needs a task breakdown before implementation.",
+      "source_sha256": "b6d45e1b1dad35c66a0fdab5d32ee0e9640a3519180bc9d798b9530119d85367",
+      "source_path": "skills/plan-task/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42fce820619bbf25b34e2acf569b958b8a0e5a85ac7d47486291a3b8085c781d": {
+      "description_zh": "审查当前修改或指定文件，Python 用 ruff，开展对抗代码审查，仅安全敏感文件变化时运行安全扫描。",
+      "source": "Review current changes or specified files - ruff lint for Python files, an adversarial review-code pass, and a security scan only when security-sensitive files changed.",
+      "source_sha256": "42fce820619bbf25b34e2acf569b958b8a0e5a85ac7d47486291a3b8085c781d",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b72fb899c97b7909d17aca22e3133ad33985128f82b86033af29d0de86b42cf": {
+      "description_zh": "在完成复杂任务后将可复用难题流程提炼为技能草案，需满足三项门槛且只提出建议。",
+      "source": "Distill a hard problem you just solved into a reusable skill draft - proposal-only, behind a three-condition threshold. Use after finishing a non-trivial task whose procedure would otherwise die with the session. Trigger with /skill-forge.",
+      "source_sha256": "6b72fb899c97b7909d17aca22e3133ad33985128f82b86033af29d0de86b42cf",
+      "source_path": "skills/skill-forge/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb77955e8387903ecdb7e71f9d4fe959b8baecc60051bda753ff40b06addce97": {
+      "description_zh": "识别测试框架、运行测试并迭代修复直到全部通过。",
+      "source": "Run tests and auto-fix failures. Detects the test framework, executes tests, and iterates on fixes until all pass.",
+      "source_sha256": "cb77955e8387903ecdb7e71f9d4fe959b8baecc60051bda753ff40b06addce97",
+      "source_path": "skills/test/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "49d7b9cce5bdc262de639a9dded613a12675dc21c467a6805cd47712fafb48ab": {
+      "description_zh": "作为钩子注入的会话入口介绍 Hiway Kit 工作流链和计划文件规则。",
+      "source": "Session-start meta-skill (hook-injected). Kit workflow chain and plan file rules.",
+      "source_sha256": "49d7b9cce5bdc262de639a9dded613a12675dc21c467a6805cd47712fafb48ab",
+      "source_path": "skills/using-hiway-kit/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc5be90669397683ff5e6ccc008804032af66733f948fd688b261ad8e9b05152": {
+      "description_zh": "比较综合多个外部来源并引用出处，优先已安装搜索/文档 MCP，否则内置网页工具，也支持需用户登录浏览器的研究；不用于单次快速查询。",
+      "source": "Multi-source external research with cited sources, using search/docs MCP servers when installed and built-in web tools otherwise. Use when a question needs several external sources compared or synthesized, or a web task needs the user's logged-in browser. Not for a single quick lookup.",
+      "source_sha256": "dc5be90669397683ff5e6ccc008804032af66733f948fd688b261ad8e9b05152",
+      "source_path": "skills/web-research/SKILL.md",
+      "package_sha256": "7c39ab03efb33be998fa9ddf8ff3bc95563326b4287ff94bb345813cadc15a7f",
+      "source_package": "hiway-kit-5.2.0-v6.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0f241bf3c16ee1d9e9e4853352ac35509fb79eba929ed46b7c06ab8857e482f": {
+      "description_zh": "逐步执行 AEM EDS/Helix 5 Admin API 预览、发布、配置、权限、缓存、索引、快照和代码操作，每次仅一个请求并由人工审阅批准，将请求响应写入 EXECUTION.md，按 GET/SET/GET 验证并可续接，不用于批量自动化。",
+      "source": "Interactive AEM Edge Delivery Services (EDS/Helix 5) Admin API executor with human-in-the-loop oversight. Use when working with the AEM Admin API (admin.hlx.page) to: (1) Plan and execute admin operations step-by-step (preview, publish, config, access, cache, index, snapshots, code), (2) Execute ONE API request at a time with human review and approval, (3) Document all requests/responses in EXECUTION.md with full traceability, (4) Follow GET/SET/GET verification patterns for safe configuration changes, (5) Resume existing executions and add new steps, (6) Manage site configuration, access control, content operations, and code deployments. For careful AEM admin operations where mistakes are costly - NOT for bulk automation.",
+      "source_sha256": "c0f241bf3c16ee1d9e9e4853352ac35509fb79eba929ed46b7c06ab8857e482f",
+      "source_path": "skills/hlx-admin-api-executor/SKILL.md",
+      "package_sha256": "cd99afd3e46bee9402ef75892259b30d0875f904b13a07a569c53b7d8bce5da1",
+      "source_package": "hlx-admin-api-executor-guarded-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "609efa4ea44c95293d25fca68344fb2a10aecc6a18a6940ec8e52f6c6c4fcd52": {
+      "description_zh": "创建或优化 Holistics CustomChartDef，保存到 custom_charts 库，转换 Vega/Vega-Lite 为 AML，支持热力矩阵、桑基、瀑布、箱线等内置无法覆盖的图型；不用于标准图或动态内容块。",
+      "source": "Create or refine a Holistics custom chart (CustomChartDef in .holistics/library/custom_charts/) for a chart type the built-in viz can't cover.\n\nUse when the user wants to create a custom chart, convert a Vega/Vega-Lite spec into Holistics AML, or scaffold or refine a chart template — or when a dashboard needs a chart form with no built-in equivalent (heatmap matrix, sankey, waterfall, box plot, ...).\n\nTypical phrasings: create a custom chart for X, turn this Vega-Lite spec into a Holistics chart, we need a sankey of X.\n\nDo NOT trigger for a standard built-in chart or a dynamic content block.",
+      "source_sha256": "609efa4ea44c95293d25fca68344fb2a10aecc6a18a6940ec8e52f6c6c4fcd52",
+      "source_path": "skills/build-custom-chart/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cabb01dbe090475f37e0b44681078d80fe2291a2d2e51e609c8af7982f76d49d": {
+      "description_zh": "添加编辑 Holistics 仪表盘字段/日期过滤、时间粒度与环比同比控制及作用范围，使用 FilterBlock、DateDrillBlock、PopBlock；不用于新仪表盘、内容或主题。",
+      "source": "Add or edit a Holistics dashboard's interactive controls and the interactions that wire them: field and date-range filters (FilterBlock), date drill (DateDrillBlock), period-over-period comparison (PopBlock).\n\nUse when the user wants to add, change, or scope a control.\n\nTypical phrasings: add a filter, filter by category, let viewers slice by X, add a date range or date picker, let viewers switch granularity, compare year over year, this filter should only affect X.\n\nDo NOT trigger for building a new dashboard, authoring chart or text content, or theming and restyling.",
+      "source_sha256": "cabb01dbe090475f37e0b44681078d80fe2291a2d2e51e609c8af7982f76d49d",
+      "source_path": "skills/build-dashboard-controls/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ccd8cb4fc6175257efa5cb62db8531bc1277aa01cc11a4c6c3e81eac28d1dbdb": {
+      "description_zh": "根据品牌、网站、截图、颜色或风格描述在 themes 库创建更新应用 Holistics 仪表盘主题；不构建页面、内容块或控制器。",
+      "source": "Create, update, or apply a Holistics dashboard theme (.holistics/library/themes/) from any input: a brand name, website, screenshot, brand guidelines, explicit colors, or a mood description.\n\nUse when the user wants to theme, brand, restyle, or change a dashboard's look and feel.\n\nTypical phrasings: build a theme, match our brand, use these colors, make it dark, make it warm/minimal/premium/editorial, glow up this dashboard.\n\nDo NOT trigger for building a dashboard, authoring block content, or adding controls.",
+      "source_sha256": "ccd8cb4fc6175257efa5cb62db8531bc1277aa01cc11a4c6c3e81eac28d1dbdb",
+      "source_path": "skills/build-dashboard-theme/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47269e70a720c2e124bad589e76f0ed22fb03fd0690ee30a5a2cbdbdde428330": {
+      "description_zh": "构建编辑 Holistics page.aml/Dashboard 的块、布局、过滤交互和主题，添加图表/KPI/表格、标题与日期控制；不用于独立数据问答、模型数据集指标、自定义图型或单纯换肤。",
+      "source": "Build or edit a Holistics canvas dashboard (`page.aml` / a `Dashboard {}` object) — its blocks, layout, filter interactions, and theme.\n\nUse when building a dashboard or report page, adding or arranging blocks, or adding dashboard-level filters.\n\nTypical phrasings: build a dashboard for X, make a dashboard showing X, add a chart or KPI or table to a dashboard, add a filter or date control, add or edit a title or section header.\n\nDo NOT trigger for answering a data question on its own — a one-off query, chart, or analysis with no dashboard to put it on — or for editing models, datasets, or metric definitions, authoring a reusable custom chart type or theme object, or restyling a dashboard's look.",
+      "source_sha256": "47269e70a720c2e124bad589e76f0ed22fb03fd0690ee30a5a2cbdbdde428330",
+      "source_path": "skills/build-dashboard/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6ab2b0f62c2b6119d5d3450afb35bc2d67a368fdaf1a9466789999ddccd48f4": {
+      "description_zh": "编写 Holistics VizBlock 的图表、KPI、表格、透视、漏斗和地图，或 MarkdownViz 数据驱动 HTML/Markdown 内容，用于块的渲染内容；不构建整页、静态文本、过滤和主题。",
+      "source": "Author the VizBlocks in a Holistics dashboard's page.aml: built-in visualizations (chart, KPI, table, pivot, funnel, map) and dynamic content blocks (MarkdownViz: data-driven HTML/Markdown).\n\nUse when the user wants to create or edit what a block renders.\n\nTypical phrasings: build a chart of X, add a KPI, show X as a table, make a dynamic content block, a card or narrative that shows the top product.\n\nDo NOT trigger for building a whole dashboard, static text blocks, adding filters or controls, or theming and restyling.",
+      "source_sha256": "d6ab2b0f62c2b6119d5d3450afb35bc2d67a368fdaf1a9466789999ddccd48f4",
+      "source_path": "skills/build-visualizations/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a402e0cade50204a66774bf7bfade813082f1b54da68eb1c7562fc72741d52a6": {
+      "description_zh": "在 Claude SKILL.md、OpenAI/Codex 技能或原始系统提示与 Holistics AML Skill 块之间双向迁移转换技能。",
+      "source": "Convert an agent skill written for another runtime (Claude `SKILL.md`, OpenAI/Codex skill, raw system prompt) into a Holistics AML `Skill` block — or the reverse direction. Use whenever the user wants to migrate, port, or translate a skill across formats, including phrasings like \"convert this Claude skill to AML\", \"port this OpenAI skill to Holistics\", \"turn this SKILL.md into an AML Skill\", \"translate this AML skill back to Claude\", or \"migrate this agent skill\".",
+      "source_sha256": "a402e0cade50204a66774bf7bfade813082f1b54da68eb1c7562fc72741d52a6",
+      "source_path": "skills/convert-agent-skill-to-holistics/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e380518f4570a1f3966b9323770b6a18e75198728821f386b41f7a89e45b891": {
+      "description_zh": "编写编辑 Holistics 专用技能，为 AI 提供知识、工作流和限制，可建立词汇表或复用提示；其他运行时技能转换使用 convert-agent-skill-to-holistics。",
+      "source": "Author a Holistics skill. Use whenever the user wants to write, edit, or refine a skill that gives Holistics AI specific knowledge, workflows, or guardrails — including phrasings like \"add a skill for X\", \"create a workspace glossary skill\", \"turn this prompt into a reusable skill\", or \"make this Holistics AI smarter about Y\". For converting a skill written for another runtime (Claude, OpenAI/Codex) into AML, use `convert-agent-skill-to-holistics` instead.",
+      "source_sha256": "1e380518f4570a1f3966b9323770b6a18e75198728821f386b41f7a89e45b891",
+      "source_path": "skills/create-holistics-skill/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96e5b358d4b085232d2b1025fb4060e1150cabed883f1b10a408942d1d75cc10": {
+      "description_zh": "编写编辑 Holistics 模型、数据集、仪表盘和指标的 AML/AQL，适用于 AMQL 项目文件修改。",
+      "source": "Write and edit AML/AQL code for Holistics models, datasets, dashboards, and metrics. Use this whenever the user wants to create or modify a model, dataset, dashboard page, AQL metric, or any file in an AMQL project.",
+      "source_sha256": "96e5b358d4b085232d2b1025fb4060e1150cabed883f1b10a408942d1d75cc10",
+      "source_path": "skills/develop-amql/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6be83b38d8ddf6bb5c3a378b2c59dcdd22d9086b87f2b53267c4ec9eb54a2a00": {
+      "description_zh": "设置检查 Holistics AMQL 开发环境及工具，包括 CLI、MCP 和代码同步，帮助准确高效处理 AML 文件。",
+      "source": "Use this whenever working in a (Holistics) AMQL project (i.e. with AML files). It guides you to set up and review the AMQL development environment and tooling so that the development can be done accurately and efficiently. Tooling includes CLI, MCP, code synchronization, etc.",
+      "source_sha256": "6be83b38d8ddf6bb5c3a378b2c59dcdd22d9086b87f2b53267c4ec9eb54a2a00",
+      "source_path": "skills/setup-amql-development/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddbbf29ec03556676e13aee5581c20e7f0f65dbaf5590ab9873a5220708bf2ec": {
+      "description_zh": "配置 Holistics CLI，启用 aml validate、sync-code 及 MCP execute_aql、list_datasets 等工具。",
+      "source": "Use this skill to set up Holistics CLI and enable useful tools such as `holistics aml validate`, `holistics sync-code`, and `holistics mcp` tools such as `holistics mcp execute_aql`, `holistics mcp list_datasets`",
+      "source_sha256": "ddbbf29ec03556676e13aee5581c20e7f0f65dbaf5590ab9873a5220708bf2ec",
+      "source_path": "skills/setup-holistics-cli/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8bfff1d45619a197d66a01c9ae9aedca6fad032023f5ce6ee8673e63ef4dbad7": {
+      "description_zh": "设置或审阅 Holistics MCP 连接，启用 search_docs、execute_aql 和 generate_viz。",
+      "source": "Use this skill to set up or review Holistics MCP connection and enable useful tools such as `search_docs`, `execute_aql`, and `generate_viz`",
+      "source_sha256": "8bfff1d45619a197d66a01c9ae9aedca6fad032023f5ce6ee8673e63ef4dbad7",
+      "source_path": "skills/setup-holistics-mcp/SKILL.md",
+      "package_sha256": "7e84f5469dd785e1d47f8787e378e9445efaf5130eb51d4c687d218bee75aae0",
+      "source_package": "holistics-development-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3f3c35014f0e321e0de6fc9293a56237b275c2ca756568e0649706037e12a5d": {
+      "description_zh": "设置 Holistics MCP 并启用文档搜索、AQL 执行和可视化生成工具。",
+      "source": "Use this skill to set up Holistics MCP and enable useful tools such as `search_docs`, `execute_aql`, and `generate_viz`",
+      "source_sha256": "b3f3c35014f0e321e0de6fc9293a56237b275c2ca756568e0649706037e12a5d",
+      "source_path": "skills/setup-holistics-mcp/SKILL.md",
+      "package_sha256": "3b5a65a4d424ecaad54ade6364ce77ce376ba1ca9491c5e3b09855b4b302f4e1",
+      "source_package": "holistics-reporting-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47f682c4404aebe1bc3139582d34c77680586c29578addf68ac537b925379298": {
+      "description_zh": "使用 Holistics 分析技能及 generate_viz、search_docs 等 MCP 工具，在平台内开展分析。",
+      "source": "Use Holistics analytics skills and tooling to work with Holistics analytics more efficiently and effectively. Tooling includes MCP tools such as `generate_viz` and `search_docs`. Use this whenever the user is trying to perform analytics using their Holistics platform.",
+      "source_sha256": "47f682c4404aebe1bc3139582d34c77680586c29578addf68ac537b925379298",
+      "source_path": "skills/working-in-reporting/SKILL.md",
+      "package_sha256": "3b5a65a4d424ecaad54ade6364ce77ce376ba1ca9491c5e3b09855b4b302f4e1",
+      "source_package": "holistics-reporting-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c17123176501d3c98d15513db02f0012ed1aff7308bc874d44e0efa09c19d27b": {
+      "description_zh": "自动诊断 AI 行为漂移、运行行为矫正会话并修改人格规格，需 holomime Pro；这里的 therapy 指 AI 行为处理。",
+      "source": "Automatically diagnose behavioral drift, run a therapy session, and apply corrections to the personality spec. Hands-off alignment — one command to detect and fix behavioral issues. Requires holomime Pro.",
+      "source_sha256": "c17123176501d3c98d15513db02f0012ed1aff7308bc874d44e0efa09c19d27b",
+      "source_path": "skills/autopilot/SKILL.md",
+      "package_sha256": "c82a3895eda182cf2108f02d598861e07dc0efe8f19fcd1ebb19f1d325d15f64",
+      "source_package": "holomime-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9af120dec13d6b55150096b3a527166cdfb60634783fa7e81b6faf16754b703b": {
+      "description_zh": "用八个对抗场景压力测试 AI 行为对齐，涵盖道歉陷阱、迎合、边界与错误恢复，输出 A至F等级和0至100分。",
+      "source": "Stress-test an AI agent's behavioral alignment with 8 adversarial scenarios. Produces a grade (A-F) and score (0-100). Use when you want to know how well an agent handles apology traps, sycophancy tests, boundary pushes, error recovery, and more.",
+      "source_sha256": "9af120dec13d6b55150096b3a527166cdfb60634783fa7e81b6faf16754b703b",
+      "source_path": "skills/benchmark/SKILL.md",
+      "package_sha256": "c82a3895eda182cf2108f02d598861e07dc0efe8f19fcd1ebb19f1d325d15f64",
+      "source_package": "holomime-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6bd6b78a9c9255652ae9f263e947155bf3df90186c09280fc10a8a626dafd8ef": {
+      "description_zh": "启动 localhost:3838 的三维实时 NeuralSpace 行为视图，九个区域随 AI 行为模式点亮，用于监控或分享快照。",
+      "source": "Launch a 3D real-time visualization of an AI agent's behavioral patterns. Opens a browser at localhost:3838 showing the NeuralSpace brain with 9 regions lighting up as behavioral patterns fire. Use when you want to visually monitor agent behavior or capture a shareable snapshot.",
+      "source_sha256": "6bd6b78a9c9255652ae9f263e947155bf3df90186c09280fc10a8a626dafd8ef",
+      "source_path": "skills/brain/SKILL.md",
+      "package_sha256": "c82a3895eda182cf2108f02d598861e07dc0efe8f19fcd1ebb19f1d325d15f64",
+      "source_package": "holomime-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86383e1db2b5213eb862ec350905021306443bf26e252570b374397052f4d39c": {
+      "description_zh": "通过八个规则检测器的80多个信号识别 AI 对话中过度道歉、含糊、迎合、越界、错误循环、情绪偏斜、正式程度漂移与幻觉，原文称不产生 LLM 成本。",
+      "source": "Detect behavioral drift patterns in AI agent conversations. Use when you want to check if an agent is over-apologizing, hedging, being sycophantic, violating boundaries, error-spiraling, sentiment-skewing, drifting formality, or hallucinating. Zero LLM cost — rule-based detection with 80+ signals across 8 detectors.",
+      "source_sha256": "86383e1db2b5213eb862ec350905021306443bf26e252570b374397052f4d39c",
+      "source_path": "skills/diagnose/SKILL.md",
+      "package_sha256": "c82a3895eda182cf2108f02d598861e07dc0efe8f19fcd1ebb19f1d325d15f64",
+      "source_package": "holomime-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf033ac181e2b8b853467d7c4a830708f87f0a41fb404541daa37527366ae2e7": {
+      "description_zh": "以易读摘要显示 AI 人格规格，包括大五人格、沟通风格、领域边界与改进方向。",
+      "source": "Display a human-readable summary of an AI agent's personality spec. Use when you want to see Big Five traits, communication style, domain boundaries, and growth areas at a glance.",
+      "source_sha256": "cf033ac181e2b8b853467d7c4a830708f87f0a41fb404541daa37527366ae2e7",
+      "source_path": "skills/profile/SKILL.md",
+      "package_sha256": "c82a3895eda182cf2108f02d598861e07dc0efe8f19fcd1ebb19f1d325d15f64",
+      "source_package": "holomime-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "afeb67aff400c9bfb43ae9d6403dbf8492dbcd53b46a78ca7f07b3147746480b": {
+      "description_zh": "用双 LLM 架构按关系建立、探索、问题、挑战、技能建设、整合、结束七阶段运行 AI 行为矫正会话，并生成 DPO 训练对；需 Pro，不是人类心理治疗。",
+      "source": "Run a structured behavioral therapy session for an AI agent. Uses a 7-phase clinical protocol (rapport, exploration, presenting problem, challenge, skill building, integration, closing) with dual-LLM architecture. Generates DPO training pairs as a byproduct. Requires holomime Pro.",
+      "source_sha256": "afeb67aff400c9bfb43ae9d6403dbf8492dbcd53b46a78ca7f07b3147746480b",
+      "source_path": "skills/session/SKILL.md",
+      "package_sha256": "c82a3895eda182cf2108f02d598861e07dc0efe8f19fcd1ebb19f1d325d15f64",
+      "source_package": "holomime-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19b87f50a84d358b46f4ad0cb074efd7918e4c28149e89597b44a641472724da": {
+      "description_zh": "逐步将原文标为生命周期结束的 Honeycomb Beelines 迁移到 OpenTelemetry SDK，涵盖不同语言、W3C 追踪头和渐进迁移。",
+      "source": "Step-by-step guide for migrating from Honeycomb Beelines (End of Life) to OpenTelemetry instrumentation. Trigger phrases: \"migrate from Beelines\", \"upgrade from Beeline to OpenTelemetry\", \"migrate to OTel\", \"replace Beelines\", \"Beeline end of life\", \"Beeline EOL\", \"switch from Beeline to OTel\", \"migrate Go Beeline\", \"migrate Python Beeline\", \"migrate Node Beeline\", \"migrate Java Beeline\", \"migrate Ruby Beeline\", \"W3C trace headers\", \"W3C propagation\", \"incremental migration to OpenTelemetry\", or any request about migrating from Honeycomb Beelines to OpenTelemetry SDKs.",
+      "source_sha256": "19b87f50a84d358b46f4ad0cb074efd7918e4c28149e89597b44a641472724da",
+      "source_path": "skills/beeline-migration/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f5aa915b36d285fc8f67002dbefd2b14171bcf0df56e18f14cdd3bfab03b6e5": {
+      "description_zh": "设计并创建包含查询与 SLO 的 Honeycomb 看板或服务健康仪表盘。",
+      "source": "Design and then create a board (dashboard) in Honeycomb with queries and SLOs. Trigger phrases: \"create a board\", \"make a board\", \"build a dashboard\", \"create a Honeycomb board\", \"make a dashboard in Honeycomb\", \"set up a board\", \"dashboard for my service\", \"visualize service health\", \"golden signals dashboard\", \"set up monitoring board\", or any request to design and create or build a Honeycomb board or dashboard.",
+      "source_sha256": "4f5aa915b36d285fc8f67002dbefd2b14171bcf0df56e18f14cdd3bfab03b6e5",
+      "source_path": "skills/create-honeycomb-board/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce9804e3f1d8a3bd7e4f3683c48d06343e3300ee1e21f7185237376625509af6": {
+      "description_zh": "正确查询 Honeycomb OpenTelemetry 指标数据集，发现名称属性并处理 gauge/counter/histogram/sum 和自动时间聚合 RATE/INCREASE/SUMMARIZE/LAST；裸 COUNT、RATE_SUM/AVG/MAX、CONCURRENCY 等禁用，不用于事件数据集或指标埋点。",
+      "source": "How to query OpenTelemetry metrics datasets in Honeycomb correctly. Metrics datasets follow different rules from trace/event datasets — many operations (bare COUNT, RATE_SUM, RATE_AVG, RATE_MAX, CONCURRENCY) are forbidden, temporal aggregation is automatic, and each metric has its own attributes. Use this skill when querying a metrics dataset (gauges, counters, histograms, sums), asking about temporal aggregation (RATE, INCREASE, SUMMARIZE, LAST), finding the metrics dataset or discovering metric names and attributes, debugging unexpected metrics query results, or querying infrastructure metrics like CPU, memory, disk I/O, or network stats. Do NOT use for instrumenting metrics (use otel-instrumentation), querying event datasets with \"metrics\" in their name, or conceptual questions (use observability-fundamentals).",
+      "source_sha256": "ce9804e3f1d8a3bd7e4f3683c48d06343e3300ee1e21f7185237376625509af6",
+      "source_path": "skills/metrics-queries/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9d32c5afad7bde4f7fe8b56a994ff18d71fa311e44543063c5f1e8bbda8a76f": {
+      "description_zh": "解释可观测性的宽事件、高基数、核心分析循环、事件/指标/日志差异，以及埋点如何支持调试，从原理提出建议。",
+      "source": "First principles behind observability — wide events, high cardinality, the core analysis loop, events vs metrics vs logs, and how instrumentation connects to debugging outcomes. Grounds recommendations in first principles rather than tool-specific how-to. Trigger phrases: \"what is observability\", \"why observability\", \"why Honeycomb\", \"events vs metrics vs logs\", \"events vs metrics\", \"events vs logs\", \"metrics vs logs\", \"why wide events\", \"what is high cardinality\", \"core analysis loop\", \"observability vs monitoring\", \"what is dimensionality\", \"explain observability\", or any conceptual question about observability or why Honeycomb's approach differs from traditional monitoring.",
+      "source_sha256": "f9d32c5afad7bde4f7fe8b56a994ff18d71fa311e44543063c5f1e8bbda8a76f",
+      "source_path": "skills/observability-fundamentals/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2cf0902d941e5087856f97280dce3507ea22b734db048d26110a53925523a28": {
+      "description_zh": "为 GenAI/LLM 应用接入发送到 Honeycomb 的 OpenTelemetry，涵盖模型调用、代理、工具/MCP、嵌入、token、提示响应内容捕获及流式追踪与故障检测。",
+      "source": "Guides instrumentation of GenAI/LLM applications with OpenTelemetry for Honeycomb, including content capture and agent failure detection. Trigger phrases: \"instrument my GenAI app\", \"add tracing to LLM calls\", \"trace AI agent\", \"instrument OpenAI\", \"instrument Anthropic\", \"GenAI observability\", \"trace tool calling\", \"LLM token usage\", \"instrument embeddings\", \"trace MCP\", \"GenAI metrics\", \"instrument LangChain\", \"add GenAI spans\", \"capture prompts\", \"capture LLM responses\", \"enable GenAI content capture\", \"streaming tracing\", \"trace streaming responses\", or any request about instrumenting GenAI/LLM applications.",
+      "source_sha256": "d2cf0902d941e5087856f97280dce3507ea22b734db048d26110a53925523a28",
+      "source_path": "skills/otel-genai-instrumentation/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21c380fc40e96c8f88caa4b6d51ccbe277ae96b403ef434c103711fe60d7db87": {
+      "description_zh": "设置 OpenTelemetry SDK、OTLP 与 Collector、自定义 span/属性/事件/链接和采样，并将遥测发送到 Honeycomb。",
+      "source": "Provides guidance on OpenTelemetry SDK setup, custom instrumentation, and sending data to Honeycomb. Trigger phrases: \"instrument my app\", \"add tracing\", \"set up OpenTelemetry\", \"configure OTel\", \"add custom spans\", \"add attributes to spans\", \"send traces to Honeycomb\", \"set up OTLP\", \"configure sampling\", \"add span events\", \"add span links\", \"set up tracing for [any language]\", \"configure the OTel Collector\", or any request about OpenTelemetry SDK setup, custom instrumentation, or sending data to Honeycomb.",
+      "source_sha256": "21c380fc40e96c8f88caa4b6d51ccbe277ae96b403ef434c103711fe60d7db87",
+      "source_path": "skills/otel-instrumentation/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e36a113a7333732c537132ea0221aac7b4a19e4ff1a7eb8780dad16ece1f9860": {
+      "description_zh": "为已有未埋点应用渐进接入 OpenTelemetry，处理上下文传播、孤立 span、日志桥接与 Prometheus 共存并验证迁移；新应用埋点及 Beeline 迁移使用专用技能。",
+      "source": "Guide for retrofitting OpenTelemetry into an existing, uninstrumented application. Trigger phrases: \"migrate existing app to OTel\", \"add OpenTelemetry to existing project\", \"retrofit OTel into my codebase\", \"thread context through my code\", \"context propagation\", \"bridge Prometheus metrics to OTel\", \"logging bridge\", \"migrate logging to OTel\", \"slog bridge\", \"logback bridge\", \"verify my instrumentation\", \"traces are disconnected\", \"orphaned spans\", \"migrate to OpenTelemetry\", \"OTel migration plan\", \"how do I sequence an OTel migration\", \"add tracing to existing code\", \"refactor for context propagation\", \"Fiber context gotcha\", \"keep existing logging working with OTel\", \"add OTel without breaking Prometheus\", \"bridge existing metrics\", \"coexist with existing monitoring\", or any request about retrofitting OpenTelemetry into an existing application. This skill is for migrating existing codebases, NOT greenfield instrumentation (use otel-instrumentation) or Beeline-specific migration (use beeline-migration).",
+      "source_sha256": "e36a113a7333732c537132ea0221aac7b4a19e4ff1a7eb8780dad16ece1f9860",
+      "source_path": "skills/otel-migration/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e83a79a8f946654f7908cc03497f51955fe3236ac05e6a148047a3e9f9c4a27": {
+      "description_zh": "按背景准备、广泛查询、BubbleUp、追踪分析和验证的结构化步骤调查 Honeycomb 生产故障，串联结果定位延迟、错误、停机和 SLO 消耗根因。",
+      "source": "Structured workflows for investigating production issues in Honeycomb — the sequence of tool calls (context priming, broad query, BubbleUp, trace analysis, verification) and how to chain results between steps to reach root causes. Trigger phrases: \"investigate production issue\", \"debug latency spike\", \"find root cause\", \"use BubbleUp\", \"analyze traces\", \"debug an outage\", \"why is my API slow\", \"errors are increasing\", \"health check\", \"SLO burning\", or any request to investigate or debug production problems.",
+      "source_sha256": "9e83a79a8f946654f7908cc03497f51955fe3236ac05e6a148047a3e9f9c4a27",
+      "source_path": "skills/production-investigation/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddbaa883f9a7c8cbeef06b7de79603fd5f3a0f265cae12cabb69a05fdf86fc63": {
+      "description_zh": "构造解释 Honeycomb 追踪与事件查询，涵盖分位数、分布热力图、root/parent/any/none 关系字段、计算字段、查询数学、P99/P50、TOTAL/OTHER 和原始 JSON；指标数据集使用 metrics-queries。",
+      "source": "Opinionated guidance for constructing and interpreting Honeycomb queries on trace and event datasets — operation selection (percentiles not AVG, HEATMAP for distributions), relational field patterns (root., parent., any., none.), calculated fields, query math, and result interpretation (P99/P50 ratios, heatmap bands, TOTAL/OTHER rows, raw JSON via query_result_json). Use this skill when the user wants to query spans, traces, or log/event data in Honeycomb — requests like \"show me latency\", \"error rate\", \"find slow requests\", \"find outliers\", \"interpret results\", \"relational fields\", \"calculated fields\", or \"download raw results\". This skill covers all dataset types except metrics datasets (dataset_type=metrics) — for those, use metrics-queries instead.",
+      "source_sha256": "ddbaa883f9a7c8cbeef06b7de79603fd5f3a0f265cae12cabb69a05fdf86fc63",
+      "source_path": "skills/query-patterns/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1463839c363188261664be57c20b5baaa133141a44862e4663e2c2e472d89187": {
+      "description_zh": "解释 Honeycomb SLO 合规、错误预算消耗及触发器状态，识别错误 SLI、决定冻结部署或通知值班、设计告警阈值；查询 SLO/trigger 前使用。",
+      "source": "Decision heuristics for interpreting Honeycomb SLO compliance, budget burn rates, and trigger status — what the numbers mean and what action to take, including detecting misconfigured SLIs, deciding when to freeze deploys vs page on-call, and designing burn alert thresholds. Load this skill before calling get_slos or get_triggers. Trigger phrases: \"check our SLOs\", \"are we meeting our SLOs\", \"which SLOs are healthy\", \"is the error budget OK\", \"are any alerts firing\", \"what's the burn rate\", \"set up an SLO\", \"create a trigger\", \"configure alerts\", \"set up burn alerts\", \"check trigger status\", \"starting on-call\", \"reliability picture\", \"should we freeze deploys\", \"is this SLO misconfigured\", \"are we within budget\", \"SLO is broken\", \"budget is negative\", or any request about service level objectives, error budgets, burn rates, or alerting in Honeycomb.",
+      "source_sha256": "1463839c363188261664be57c20b5baaa133141a44862e4663e2c2e472d89187",
+      "source_path": "skills/slos-and-triggers/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d714a628d7c0496ccf0e765a5e9002bdf8e37f8b065ae6acbaea8e185b33331b": {
+      "description_zh": "在 Honeycomb 查找近期追踪，核验最近测试实际过程。",
+      "source": "Find a recent trace in Honeycomb, to see what happened in a recent test. Use when asked to \"verify in Honeycomb\", \"find the most recent trace\", or \"show me the trace\".",
+      "source_sha256": "d714a628d7c0496ccf0e765a5e9002bdf8e37f8b065ae6acbaea8e185b33331b",
+      "source_path": "skills/verify-recent-trace/SKILL.md",
+      "package_sha256": "72ec31e8c2a5c3bff3b210c74dcd2ad8f555b8358227605790f3efefab275067",
+      "source_package": "Honeycomb-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39e96d48cdefeb0b81b2e47c24f318faa1c23284c443a18bcac74de62f63301a": {
+      "description_zh": "指导创建配置 Hookify 规则，说明钩子语法与常用模式。",
+      "source": "This skill should be used when the user asks to \"create a hookify rule\", \"write a hook rule\", \"configure hookify\", \"add a hookify rule\", or needs guidance on hookify rule syntax and patterns.",
+      "source_sha256": "39e96d48cdefeb0b81b2e47c24f318faa1c23284c443a18bcac74de62f63301a",
+      "source_path": "skills/writing-rules/SKILL.md",
+      "package_sha256": "61c9fe7c9640f123218c2f9b1eaf5b4fa1f6429efd8cc8a2fc7607d2fe1c1383",
+      "source_package": "hookify-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "77565c2a585ae03ae4084bbe28d617c41b9a25ace3ff81f35a64c83eb1d58c9f": {
+      "description_zh": "使用 Alex Hormozi 的 $100M Offers/Leads 框架审计销售报价、落地页、价格档和获客资料，给出评分及优先修复；可先研究缺失的期望结果、目标买方与市场筛选信号。",
+      "source": "Audit and improve a sales offer (landing page, pricing tier, or lead magnet) using Alex Hormozi's frameworks from $100M Offers and $100M Leads. Returns a scored audit with prioritized fixes. Optional pre-audit research mode for deriving missing inputs (Dream Outcome, target buyer, market filter signals).",
+      "source_sha256": "77565c2a585ae03ae4084bbe28d617c41b9a25ace3ff81f35a64c83eb1d58c9f",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "7d012ad2648d56e2900ce98b407a4b13e0a566b70fd6bab78e1e667c19663646",
+      "source_package": "hormozi-offer-audit-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d629c12fdc0cb01dc5f8aaa6947eef9cfa2b6887a67ff0371d8d80ec75af50ef": {
+      "description_zh": "通过 Puppeteer 将 host-html 幻灯片导出为 PDF。",
+      "source": "Export host-html slide decks to PDF using Puppeteer",
+      "source_sha256": "d629c12fdc0cb01dc5f8aaa6947eef9cfa2b6887a67ff0371d8d80ec75af50ef",
+      "source_path": "skills/hosthtml-pdf/SKILL.md",
+      "package_sha256": "2b7766bfe39bddaa204792894adf5b86739c6c1101dbe6d8d523ee5a52e9850b",
+      "source_package": "host-html-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff16baf17f4c186286d592944f5ace47395359acd9cbe1f1e6702d77677bddb1": {
+      "description_zh": "通过 host-html.com 将 HTML 文件发布为在线托管链接。",
+      "source": "Publish HTML files as live hosted links via host-html.com",
+      "source_sha256": "ff16baf17f4c186286d592944f5ace47395359acd9cbe1f1e6702d77677bddb1",
+      "source_path": "skills/hosthtml-publish/SKILL.md",
+      "package_sha256": "2b7766bfe39bddaa204792894adf5b86739c6c1101dbe6d8d523ee5a52e9850b",
+      "source_package": "host-html-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f2fe2eedc8c5b112f2d5543a222d55d3b28fc63c44a3e7d74935a0fd9e75558": {
+      "description_zh": "通过 Hostinger public-api、独立 MCP 或 curl 从归档部署 PHP 或其他无需构建的 Agency Plan/h5g 网站，不使用依赖文件系统的部署工具。",
+      "source": "Deploy a PHP (or other no-build) Agency Plan website from an archive via public-api, using standalone MCP tools/plain curl instead of a filesystem-driven deploy tool. Use when asked to deploy a PHP app to an Agency Plan / h5g / agency-hosting website.",
+      "source_sha256": "1f2fe2eedc8c5b112f2d5543a222d55d3b28fc63c44a3e7d74935a0fd9e75558",
+      "source_path": "skills/agency-hosting-deploy-php-site/SKILL.md",
+      "package_sha256": "0a4efd3973136e868e8057eea7d2e536d656a8b875884d979a54d8197ba3e044",
+      "source_package": "Hostinger Connector-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19353ca266dd8a5cf276a3f530fe15288cca625bf0fa6a39e3cbdaac61fde090": {
+      "description_zh": "通过 Hostinger public-api、独立 MCP 或 curl 从归档部署 Agency Plan 的 Node.js 构建静态站或普通静态站。",
+      "source": "Deploy a node-static Agency Plan website (Node.js-built static site, or a plain simple static site) from an archive via public-api, using standalone MCP tools/plain curl instead of a filesystem-driven deploy tool. Use when asked to deploy/build a static or node-static app on an Agency Plan / h5g / agency-hosting website.",
+      "source_sha256": "19353ca266dd8a5cf276a3f530fe15288cca625bf0fa6a39e3cbdaac61fde090",
+      "source_path": "skills/agency-hosting-deploy-static-site/SKILL.md",
+      "package_sha256": "0a4efd3973136e868e8057eea7d2e536d656a8b875884d979a54d8197ba3e044",
+      "source_package": "Hostinger Connector-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2e0d61685062d58fb68314bb8a02272224e02faf02fff152623ad3618e855e8": {
+      "description_zh": "通过 Hostinger public-api、独立 MCP 或 curl 将需构建的 Node.js/JS 应用部署到普通 hosting 网站，不用于 Agency Plan。",
+      "source": "Deploy a Node.js application (needs a build step) to a Hostinger \"hosting\" website via public-api, using standalone MCP tools/plain curl instead of a filesystem-driven deploy tool. Use when asked to deploy/build a Node.js/JS app on hosting (not Agency Plan).",
+      "source_sha256": "a2e0d61685062d58fb68314bb8a02272224e02faf02fff152623ad3618e855e8",
+      "source_path": "skills/hosting-deploy-nodejs-app/SKILL.md",
+      "package_sha256": "0a4efd3973136e868e8057eea7d2e536d656a8b875884d979a54d8197ba3e044",
+      "source_package": "Hostinger Connector-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a0d2cfc29b9710d8e397fc6ab157552b69ba428c9ae6b474ffdceb59ea29bcd": {
+      "description_zh": "通过 Hostinger public-api、独立 MCP 或 curl 将预构建且无需构建步骤的 HTML/CSS/JS 静态站部署到普通 hosting，不用于 Agency Plan。",
+      "source": "Deploy a pre-built static site (HTML/CSS/JS, no build step) to a Hostinger \"hosting\" website via public-api, using standalone MCP tools/plain curl instead of a filesystem-driven deploy tool. Use when asked to deploy/upload a static site to hosting (not Agency Plan).",
+      "source_sha256": "9a0d2cfc29b9710d8e397fc6ab157552b69ba428c9ae6b474ffdceb59ea29bcd",
+      "source_path": "skills/hosting-deploy-static-site/SKILL.md",
+      "package_sha256": "0a4efd3973136e868e8057eea7d2e536d656a8b875884d979a54d8197ba3e044",
+      "source_package": "Hostinger Connector-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b1a6c9bda7515374fd31ec7268cb13a8e59f6817c6f67c59b71aa70e10d7800": {
+      "description_zh": "通过 Hostinger public-api、独立 MCP 或 curl 将文件目录形式的 WordPress 插件部署到 hosting WordPress 网站，不使用单个归档包方式。",
+      "source": "Deploy a WordPress plugin (a directory of files, not a single archive) to a Hostinger \"hosting\" WordPress website via public-api, using standalone MCP tools/plain curl instead of a filesystem-driven deploy tool. Use when asked to deploy/upload a WP plugin.",
+      "source_sha256": "9b1a6c9bda7515374fd31ec7268cb13a8e59f6817c6f67c59b71aa70e10d7800",
+      "source_path": "skills/hosting-deploy-wordpress-plugin/SKILL.md",
+      "package_sha256": "0a4efd3973136e868e8057eea7d2e536d656a8b875884d979a54d8197ba3e044",
+      "source_package": "Hostinger Connector-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a4ef604ce742f527a4f5c8d4cf115edc5d817c58dafbbc220e9daef6508b3fe": {
+      "description_zh": "通过 Hostinger public-api、独立 MCP 工具或 curl，将完整 WordPress 网站的归档与数据库备份导入恢复到 hosting 网站，适用于非 Agency Plan 的整站恢复。",
+      "source": "Import a full WordPress website (archive + database dump) into a Hostinger \"hosting\" website via public-api, using standalone MCP tools/plain curl instead of a filesystem-driven deploy tool. Use when asked to import/restore a whole WordPress site on hosting (not Agency Plan).",
+      "source_sha256": "3a4ef604ce742f527a4f5c8d4cf115edc5d817c58dafbbc220e9daef6508b3fe",
+      "source_path": "skills/hosting-deploy-wordpress-site/SKILL.md",
+      "package_sha256": "0a4efd3973136e868e8057eea7d2e536d656a8b875884d979a54d8197ba3e044",
+      "source_package": "Hostinger Connector-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80761ad840269103b8e58a6ad81e6e5363ce3ca49159955b3f83d41dfc5706e0": {
+      "description_zh": "通过 Hostinger public-api、独立 MCP 工具或 curl，向 hosting WordPress 网站部署主题文件目录；输入为目录而非单个压缩包。",
+      "source": "Deploy a WordPress theme (a directory of files, not a single archive) to a Hostinger \"hosting\" WordPress website via public-api, using standalone MCP tools/plain curl instead of a filesystem-driven deploy tool. Use when asked to deploy/upload a WP theme.",
+      "source_sha256": "80761ad840269103b8e58a6ad81e6e5363ce3ca49159955b3f83d41dfc5706e0",
+      "source_path": "skills/hosting-deploy-wordpress-theme/SKILL.md",
+      "package_sha256": "0a4efd3973136e868e8057eea7d2e536d656a8b875884d979a54d8197ba3e044",
+      "source_package": "Hostinger Connector-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1cc6c52c04a4924fe38f704549af4f4fd5b3a66cf74ced089032237b242d3653": {
+      "description_zh": "学习基于 Carl Rogers 及现代扩展的主动倾听，涵盖五个倾听层次、复述、情感反映、总结、常见障碍和练习，帮助真正理解对方。",
+      "source": "Active Listening (Carl Rogers + modern extensions) -- master the skill of truly hearing another person. Covers 5 levels of listening, core techniques (paraphrasing, reflecting, summarizing), barriers, and practice exercises. The single most impactful communication skill.",
+      "source_sha256": "1cc6c52c04a4924fe38f704549af4f4fd5b3a66cf74ced089032237b242d3653",
+      "source_path": "active-listening/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9dd446e25c973acd63714077e85088866e6e302fc5a770d22c87b27447a3e2c5": {
+      "description_zh": "运用 Patterson 等人的关键对话方法，在利害关系重大、意见不同且情绪强烈时开展沟通。",
+      "source": "Crucial Conversations (Patterson, Grenny, McMillan, Switzler) - Talk when stakes are high, opinions vary, and emotions run strong",
+      "source_sha256": "9dd446e25c973acd63714077e85088866e6e302fc5a770d22c87b27447a3e2c5",
+      "source_path": "crucial-conversations/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5fe25f5ff47ac1d223514341f714d5d90919b3360cbdf0907b4aa4c8e24c2b6": {
+      "description_zh": "运用 DESC 四步法进行坚定表达：描述事实、表达感受、提出具体请求、说明后果；包含表达强度、自我陈述、重复立场、雾化回应及模拟练习。",
+      "source": "DESC Assertiveness Framework -- structured 4-step method for assertive communication. Describe facts, Express feelings, Specify requests, state Consequences. Includes assertiveness spectrum, I-statements, broken record, fogging, and practice simulations.",
+      "source_sha256": "b5fe25f5ff47ac1d223514341f714d5d90919b3360cbdf0907b4aa4c8e24c2b6",
+      "source_path": "desc/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2db66808ee30ddf62d05bec0d172779a1a57104ca499238c13b896a63c2c4df": {
+      "description_zh": "运用哈佛谈判项目 Stone、Patton、Heen 的艰难对话方法，理解分歧背后的三类对话，将冲突中的立场交锋转为相互学习。",
+      "source": "Difficult Conversations (Stone, Patton, Heen — Harvard Negotiation Project).\nNavigate conflict by understanding the Three Conversations beneath every disagreement.\nShift from a battle of messages to a learning conversation.",
+      "source_sha256": "b2db66808ee30ddf62d05bec0d172779a1a57104ca499238c13b896a63c2c4df",
+      "source_path": "difficult-conversations/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5ff35bbcbeaabe58a853953d20744c4c81ba8d9771f44f74113ed1f2a62609c": {
+      "description_zh": "运用 Fisher 与 Ury 的原则谈判方法，把人与问题分开，围绕各方利益寻求共识。",
+      "source": "Getting to Yes (Fisher & Ury, Harvard Negotiation Project) - Principled negotiation that separates people from problems and focuses on interests",
+      "source_sha256": "b5ff35bbcbeaabe58a853953d20744c4c81ba8d9771f44f74113ed1f2a62609c",
+      "source_path": "getting-to-yes/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7220aebbcdbfd29befeff71c5ed3d80c513bd0b633b8aab1c75c8c1e942474ee": {
+      "description_zh": "分析人际沟通情境，选择并编排合适的沟通框架，协调不同方法之间的冲突，提供综合沟通策略。",
+      "source": "Meta Communication Agent -- the router/orchestrator that selects the best communication framework(s) based on your situation. Analyzes context, routes to the optimal framework pipeline, resolves conflicts between approaches, and provides integrated guidance. Like /think but for human communication strategy.",
+      "source_sha256": "7220aebbcdbfd29befeff71c5ed3d80c513bd0b633b8aab1c75c8c1e942474ee",
+      "source_path": "howtotalk/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "182a3b2eb786c722a86ba9952a25a8f29bb1a31d0087a56c714caa05dab1fc9b": {
+      "description_zh": "运用 Robert Cialdini 的七项说服原则开展符合伦理的影响，同时识别并防范操纵。",
+      "source": "Influence (Robert Cialdini) - The 7 principles of persuasion for ethical influence and defense against manipulation",
+      "source_sha256": "182a3b2eb786c722a86ba9952a25a8f29bb1a31d0087a56c714caa05dab1fc9b",
+      "source_path": "influence/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ed84c118f257a6839d527f9ef3e110b0cc645d091bfef1c39872db61579e44f": {
+      "description_zh": "运用 Miller 与 Rollnick 的动机式访谈，通过合作及以人为中心的对话激发对方自身的改变动力，避免急于纠正，让对方表达自己的理由。",
+      "source": "Motivational Interviewing (Miller & Rollnick) — a collaborative, person-centered approach\nto strengthening a person's own motivation for change. Resist the Righting Reflex.\nEvoke their reasons, not yours.",
+      "source_sha256": "2ed84c118f257a6839d527f9ef3e110b0cc645d091bfef1c39872db61579e44f",
+      "source_path": "motivational-interviewing/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf26ca6218a0c38b6b84699cda6f4cde82d6b6824ac2f3b098eac08f947ef1e8": {
+      "description_zh": "将 Chris Voss 的 FBI 人质谈判技巧应用到日常谈判，支持协商策略与对话设计。",
+      "source": "Never Split the Difference (Chris Voss) - FBI hostage negotiation tactics applied to everyday negotiation",
+      "source_sha256": "bf26ca6218a0c38b6b84699cda6f4cde82d6b6824ac2f3b098eac08f947ef1e8",
+      "source_path": "never-split/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb3c832b1205c96be1a4895e62a19a5e3b0dd030ff5817db2e39a6930c7a4c6d": {
+      "description_zh": "运用 Marshall Rosenberg 的非暴力沟通方法，通过观察、感受、需要和请求，将冲突转为连接。",
+      "source": "Nonviolent Communication (Marshall Rosenberg) - Transform conflict into connection through observation, feelings, needs, and requests",
+      "source_sha256": "bb3c832b1205c96be1a4895e62a19a5e3b0dd030ff5817db2e39a6930c7a4c6d",
+      "source_path": "nvc/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "94384f5c68436d932585f1c76b761eeec21c70bea2bcec79cc856e1cd917a237": {
+      "description_zh": "运用 Kim Scott 的彻底坦诚反馈框架，在关心个人的同时直接提出挑战，借助二维矩阵给出有助成长且保持信任的表扬与批评。",
+      "source": "Radical Candor (Kim Scott) feedback framework — Care Personally while Challenging Directly.\nNavigate the 2x2 matrix to give praise and criticism that drives growth without destroying trust.\nBased on Kim Scott's experience at Google and Apple under Sheryl Sandberg and Steve Jobs.",
+      "source_sha256": "94384f5c68436d932585f1c76b761eeec21c70bea2bcec79cc856e1cd917a237",
+      "source_path": "radical-candor/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b448f62b48c5a20570ab3fb5c4ff124f5aacf15ba3c086b9ac35d7227a62669e": {
+      "description_zh": "运用 David Rock 的 SCARF 模型理解五类社会需求如何触发威胁或奖励反应，适用于团队管理、反馈、变革领导、谈判及情绪强烈的人际互动。",
+      "source": "SCARF Model (David Rock, NeuroLeadership) -- understand and manage the 5 social domains that trigger threat or reward responses in the brain. Use for team management, feedback, change leadership, negotiations, and any interpersonal interaction where emotions run high.",
+      "source_sha256": "b448f62b48c5a20570ab3fb5c4ff124f5aacf15ba3c086b9ac35d7227a62669e",
+      "source_path": "scarf/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ac960bed1c00f867f7f63a1f5cd8a7a4decb555bda70f890d7399f87269d0a7": {
+      "description_zh": "运用苏格拉底式提问引导对方形成洞见，包含六类问题、研讨形式，以及适用和不适用的情境。",
+      "source": "The Socratic Method — lead people to insight through disciplined questioning, not instruction.\nSix types of Socratic questions. Seminar format. When to use and when NOT to use.\nNamed after Socrates (469-399 BC), who claimed to know nothing except how to ask questions.",
+      "source_sha256": "9ac960bed1c00f867f7f63a1f5cd8a7a4decb555bda70f890d7399f87269d0a7",
+      "source_path": "socratic/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6996f7431859930d6ee928e3455bfade6eb9493f291a2cd8459543089bab9188": {
+      "description_zh": "为商业沟通、演讲、面试及说服选择叙事框架，涵盖英雄旅程、STAR、PAS、Pixar 故事骨架与 Nancy Duarte 的 Sparkline，帮助理解复杂信息并记住重点。",
+      "source": "Storytelling frameworks for business, presentations, interviews, and persuasion.\nHero's Journey, STAR, PAS, Pixar Story Spine, Nancy Duarte's Sparkline.\nStories are how humans make sense of complexity and remember what matters.",
+      "source_sha256": "6996f7431859930d6ee928e3455bfade6eb9493f291a2cd8459543089bab9188",
+      "source_path": "storytelling/SKILL.md",
+      "package_sha256": "b9aa95c86936cf0eb4addf65752c2dd903e865b82afebf576e1268ab704dca23",
+      "source_package": "howtotalk-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "615b8ba35f1a208b2bb39ad6928a157be129dc4afecd6578c06be4c5b5241283": {
+      "description_zh": "使用基于 Chrome DevTools Protocol 的 Hubcap 命令行工具，通过 WebSocket 连接 Chrome；提供120个可组合命令，用于浏览器自动化、网页抓取、截图、UI测试、网络监控、无障碍检查和页面交互。",
+      "source": "Chrome DevTools Protocol CLI. Use when the user wants to control Chrome, automate browsers, scrape web pages, take screenshots, test web UIs, monitor network traffic, check accessibility, or interact with page elements. Hubcap provides 120 composable commands that connect to Chrome via WebSocket.",
+      "source_sha256": "615b8ba35f1a208b2bb39ad6928a157be129dc4afecd6578c06be4c5b5241283",
+      "source_path": "skills/hubcap/SKILL.md",
+      "package_sha256": "6de5c9434133723cb6123272a96d2e90d7e78d66fdfb24db4adf615430065c54",
+      "source_package": "hubcap-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7c00143f31502cb61dff79807348905ccba0f9790598c2a5f20bbfcf6c2dab2": {
+      "description_zh": "在销售通话或会议前生成聚焦简报，汇集 HubSpot CRM 历史、进行中的商机、近期备注、邮件线程与公司新闻；联系人尚未录入时改用日历和邮件资料。",
+      "source": "Prepares a focused brief before a sales call or meeting. Pulls CRM history, open deals, recent notes, email threads, and company news. Falls back to calendar and email if the contact isn't in HubSpot yet.\nALWAYS use this skill before a call or meeting — \"prep me for my call with X\", \"I have a meeting with [company]\", \"brief me on [name]\", \"what do I know about X before my call\", \"research X\", \"who am I meeting with today\", \"prepping for X\", or just a name paired with \"call\" or \"meeting\". Trigger proactively when the user seems about to get on a call and hasn't run prep.",
+      "source_sha256": "b7c00143f31502cb61dff79807348905ccba0f9790598c2a5f20bbfcf6c2dab2",
+      "source_path": "skills/call-prep/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e4f7daefd12d56cf7bc53af37a00bf518f96c800e9c7aecdd246854b4efa47e": {
+      "description_zh": "查询 HubSpot 指定联系人的完整背景，包括商机状态、生命周期、最近互动、备注、任务及关联公司，并在聊天中返回清晰摘要；支持姓名或邮箱查询。",
+      "source": "Pulls a full view of a contact from HubSpot — deal status, lifecycle stage, last interaction, notes, tasks, and associated company. Returns a clean summary in chat.\nALWAYS use this skill when the user asks about a specific person by name — \"pull up X\", \"show me X's record\", \"what's happening with X\", \"check X\", \"who is X\", \"tell me about X\", \"what's X's status\", \"when did we last contact X\", \"look up X\". Also trigger when the user pastes a contact email address wanting context on that person.",
+      "source_sha256": "6e4f7daefd12d56cf7bc53af37a00bf518f96c800e9c7aecdd246854b4efa47e",
+      "source_path": "skills/contact-lookup/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9bde30deeca2cac450dcb964d70122d48dcf286184b76b7e65b331439092de48": {
+      "description_zh": "结合 HubSpot 与已连接的日历、邮件、Slack、会议记录生成每日优先事项简报，列出当天会议、按工作量安排市场销售任务，并与现有任务去重，以 Markdown 输出。",
+      "source": "Generates a prioritised daily brief from HubSpot data plus any connected apps (calendar, email, Slack, meeting notes). Shows today's meetings, surfaces GTM tasks with effort-aware scheduling, deduplicates suggestions against existing HubSpot tasks, and outputs as readable markdown.\nALWAYS use this skill when the user wants their day laid out — \"good morning\", \"daily brief\", \"morning brief\", \"what do I need to do today\", \"what's on my plate\", \"what should I focus on\", \"catch me up\", \"today's priorities\", \"what's urgent\", \"what's due today\", \"show me my day\", or any morning planning request. Trigger proactively when a user opens Claude first thing with no specific ask.",
+      "source_sha256": "9bde30deeca2cac450dcb964d70122d48dcf286184b76b7e65b331439092de48",
+      "source_path": "skills/daily-brief/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ce734ff94fb089e0b37bb8caa37f6649dcacf76e15c72fa14c4d538b8de6244": {
+      "description_zh": "依据 HubSpot 商机背景、近期备注和邮件历史起草个性化跟进或拓客邮件，在 HubSpot 预填后供销售审核发送并追踪；关联商机时按需更新下一步或阶段。",
+      "source": "Drafts a personalised follow-up or outreach email for a named contact, grounded in HubSpot deal context, recent notes, and email history. Opens HubSpot with the email pre-populated so the rep can review and send with full tracking. If deal-related, updates the next step or deal stage as applicable.\nALWAYS use this skill when the user wants to write or send outbound communication to a specific contact — \"follow up with X\", \"draft an email to X\", \"send something to X\", \"check in with X\", \"reach out to X\", \"ping X\", \"touch base with X\", \"I need to reply to X\", \"draft a follow-up for [deal]\", \"write to X\". Trigger on any request to compose outbound communication tied to a contact or deal.",
+      "source_sha256": "4ce734ff94fb089e0b37bb8caa37f6649dcacf76e15c72fa14c4d538b8de6244",
+      "source_path": "skills/follow-up/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fdd4a912650b234c341143cf71714e2c6e99e6344b7d9aa214f6158eb3fbeb92": {
+      "description_zh": "作为 HubSpot CRM 任务入口，处理联系人、公司、商机、任务的查询、统计、快速字段更新及用法问题，并将会议准备、每日简报、跟进、通话记录、管道分析和导入分派到专门技能。",
+      "source": "Main HubSpot assistant and entry point for all CRM tasks. Handles direct lookups, stats, quick field updates, and how-to questions — and routes to specialized skills (call-prep, daily-brief, follow-up, log-call, pipeline-pulse, import-contacts) when a specific workflow is needed.\nALWAYS use this skill as the primary entry point for any HubSpot-related request — \"show me [contact]\", \"open deals\", \"pipeline value\", \"create a task\", \"update [deal]\", \"how many contacts\", \"what can you do\", or anything touching contacts, companies, deals, or tasks. Even when another skill might match, use this one — it routes appropriately. Trigger on \"/hubspot\", \"hey HubSpot\", or any CRM question without a more specific skill clearly in scope.",
+      "source_sha256": "fdd4a912650b234c341143cf71714e2c6e99e6344b7d9aa214f6158eb3fbeb92",
+      "source_path": "skills/hubspot/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6e5113a5ff09b3d8ba66607e3d942515ec700b0bf060b471539aedb53323a88": {
+      "description_zh": "将 CSV、粘贴名单或 Gmail 等已连接应用的数据批量导入 HubSpot 联系人，处理字段映射、重复检测、批量写入及公司关联。",
+      "source": "Imports contacts into HubSpot from any source — a CSV file, a pasted list, or data from connected apps like Gmail. Handles field mapping, duplicate detection, batch import, and company association.\nALWAYS use this skill when the user wants to bring contacts into HubSpot — \"import contacts\", \"upload a CSV\", \"add these people to HubSpot\", \"import my list\", \"bring in contacts from [source]\", \"I have a spreadsheet of contacts\", \"add contacts from my email\", \"migrate contacts\", \"sync contacts from [app]\", \"load my network\". Trigger whenever the user wants to bulk-add people to the CRM, regardless of source.",
+      "source_sha256": "f6e5113a5ff09b3d8ba66607e3d942515ec700b0bf060b471539aedb53323a88",
+      "source_path": "skills/import-contacts/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae3b5410d90b84d7b79f81f4272535669b7f0fc02a3cc2d9e3b08fc06496622b": {
+      "description_zh": "将已完成的电话、会议或对话记录到 HubSpot 联系人，写入备注，更新商机阶段、下一步、结案日期与优先级，调整线索状态和生命周期，并创建跟进任务。",
+      "source": "Logs a call, meeting, or conversation against a HubSpot contact. Writes a note, updates deal stage, next step, close date, and priority, updates contact lead status and lifecycle stage, and creates a follow-up task.\nALWAYS use this skill when the user reports on a completed interaction — \"just got off the phone with X\", \"had a call with X\", \"just spoke to X\", \"log a call with X\", \"post-call notes for X\", \"I just finished a meeting with X\", \"debrief from my call with X\", \"I spoke to X\", \"update after my call with X\". Trigger on any past-tense account of a conversation or meeting with a specific contact, or an explicit request to log an outcome.",
+      "source_sha256": "ae3b5410d90b84d7b79f81f4272535669b7f0fc02a3cc2d9e3b08fc06496622b",
+      "source_path": "skills/log-call/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ccc1e9a81dead866cf881e1ff37afbd8e6f2b1002fc038c2b714fdecce01e897": {
+      "description_zh": "引导首次使用或空白 HubSpot 门户的配置，收集销售目标并导入初始联系人，帮助启动 CRM 工作。",
+      "source": "Guided setup for a new or empty HubSpot portal. Captures sales goals and imports initial contacts to get the user started quickly.\nALWAYS use this skill when the user is setting up HubSpot for the first time or needs onboarding help — \"set up my HubSpot\", \"get me started\", \"I just connected HubSpot\", \"how do I get started\", \"onboard me to HubSpot\", \"configure my HubSpot\", \"I'm new to HubSpot\", \"walk me through setup\", \"my portal is empty\". Also trigger when a brand-new user asks where to begin with their CRM.",
+      "source_sha256": "ccc1e9a81dead866cf881e1ff37afbd8e6f2b1002fc038c2b714fdecce01e897",
+      "source_path": "skills/onboarding/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84838b269dc2bc614d7c8fd9de93af1e9934b381a1cd47eb9ac7fcef982d63ae": {
+      "description_zh": "生成 HubSpot 销售管道快照或深入商机评审，查看各阶段商机、活动距今时间、下一步和结案计划，识别缺少行动或停滞的商机，并提出可加入 CRM 的跟进任务。",
+      "source": "Quick pipeline snapshot — deals by stage, activity age, next step status, and closing timeline. Surfaces deals with no next step, highlights stalled deals, and proactively generates follow-up tasks you can add to HubSpot by replying.\nALWAYS use this skill for any pipeline request — \"how's my pipeline\", \"show me my pipeline\", \"show me my deals\", \"pipeline overview\", \"pipeline status\", \"which deals are stalling\", \"deal overview\", \"pipeline review\", \"weekly pipeline\", \"pipeline health\", \"clean up my pipeline\", \"audit my deals\". This skill handles both quick snapshots and deeper deal reviews.",
+      "source_sha256": "84838b269dc2bc614d7c8fd9de93af1e9934b381a1cd47eb9ac7fcef982d63ae",
+      "source_path": "skills/pipeline-pulse/SKILL.md",
+      "package_sha256": "36b8d4056a80e21b44777bcfc0cffa2f8c7163d04f930cf4eb7fd56b6cac11e0",
+      "source_package": "HubSpot Sales-2.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20229c6ac68dde3f6ed4c6cc1128b88b0c488ac790ae3a5d1d48d92a00969059": {
+      "description_zh": "连接 Hugging Face MCP 服务后，搜索 Hub 上的模型、数据集、Spaces 和论文，读取仓库与文档、运行计算任务，并将 Gradio Spaces 作为 AI 工具使用。",
+      "source": "Use Hugging Face Hub via MCP server tools. Search models, datasets, Spaces, papers. Get repo details, fetch documentation, run compute jobs, and use Gradio Spaces as AI tools. Available when connected to the HF MCP server.",
+      "source_sha256": "20229c6ac68dde3f6ed4c6cc1128b88b0c488ac790ae3a5d1d48d92a00969059",
+      "source_path": "hf-mcp/skills/hf-mcp/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d8b9cc5f7424603ccb447f38ace1f943cc2ac5692c50c648eb57f72034c238d": {
+      "description_zh": "使用 Hugging Face Hub 的 hf CLI 处理认证、缓存、模型与数据集上传下载、Spaces、Buckets、仓库、论文、计算任务、讨论与PR、合集、数据查询、Webhook和推理端点；也适用于检查点、数据管道及代理轨迹的云存储，替代已弃用的 huggingface-cli。",
+      "source": "Hugging Face Hub CLI (`hf`) for downloading, uploading, and managing models, datasets, spaces, buckets, repos, papers, jobs, and more on the Hugging Face Hub. Use when: handling authentication; managing local cache; managing Hugging Face Buckets; running or scheduling jobs on Hugging Face infrastructure; managing Hugging Face repos; discussions and pull requests; browsing models, datasets and spaces; reading, searching, or browsing academic papers; managing collections; querying datasets; configuring spaces; setting up webhooks; or deploying and managing HF Inference Endpoints. Make sure to use this skill whenever the user mentions 'hf', 'huggingface', 'Hugging Face', 'huggingface-cli', or 'hugging face cli', or wants to do anything related to the Hugging Face ecosystem and to AI and ML in general. Also use for cloud storage needs like training checkpoints, data pipelines, or agent traces. Use even if the user doesn't explicitly ask for a CLI command. Replaces the deprecated `huggingface-cli`.",
+      "source_sha256": "3d8b9cc5f7424603ccb447f38ace1f943cc2ac5692c50c648eb57f72034c238d",
+      "source_path": "skills/hf-cli/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26efe8ba76834598a6b0aaca3f120b12add8de78718090d993087ba8d9c5c3fa": {
+      "description_zh": "在 AWS 工作开始前读取本地配置，确认活动 profile、区域、账号ID及调用身份，适用于 SageMaker 部署、资源创建及 AWS CLI/SDK 调用，避免猜测账号和区域。",
+      "source": "Discover the user's local AWS context (active profile, region, account ID, caller identity) at the start of any AWS task. Use this skill before any other AWS work — deploying to SageMaker, creating resources, calling AWS APIs, or anything that touches an AWS account. Use it especially when the user has not specified a region or profile explicitly, when they say things like \"use my AWS account\", \"deploy to AWS\", \"use my profile\", or when about to make any AWS CLI or SDK call. Never guess the region or account ID — always use this skill to read it from the local configuration first.",
+      "source_sha256": "26efe8ba76834598a6b0aaca3f120b12add8de78718090d993087ba8d9c5c3fa",
+      "source_path": "skills/hf-cloud-aws-context-discovery/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b1a7c905fa11626ec54e0dab071f8f5fa269acc950fcb10116ee4a6caefbd47": {
+      "description_zh": "为 SageMaker 部署、训练或 AWS Python 自动化建立隔离环境，选择合适的 Python 版本并安装当前 boto3，防止使用系统 Python、依赖冲突及旧 SDK。",
+      "source": "Set up an isolated Python environment for SageMaker / AWS work, with the right Python version and current boto3. Use this skill whenever Python code will be executed for a SageMaker deployment, training job, or any AWS automation — including when about to run `pip install`, when about to invoke `boto3`, when creating or activating a virtualenv, or when the user asks to \"set up the environment\". Never use system Python and never `pip install` into it. Always isolate. This skill prevents the most common failure modes: wrong Python version, dependency conflicts, and stale SDKs.",
+      "source_sha256": "2b1a7c905fa11626ec54e0dab071f8f5fa269acc950fcb10116ee4a6caefbd47",
+      "source_path": "skills/hf-cloud-python-env-setup/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1393298325a76b68f255d760989a44989ae0504ad7c5bd53ddd626673de830b6": {
+      "description_zh": "规划并协调 Amazon SageMaker AI 模型部署，澄清需求、选择服务栈与实时或异步推理路径，再组织其他部署技能；支持生成式语言模型、嵌入、重排序、分类及文生图或扩散模型。",
+      "source": "Plan and coordinate the deployment of a model to Amazon SageMaker AI. Use this skill whenever the user wants to deploy, host, serve, or expose a model on SageMaker or AWS — including phrases like \"deploy a model\", \"host this LLM on AWS\", \"serve this embedding model\", \"deploy a reranker\", \"deploy a text-to-image / diffusion model\", \"host this for async inference\", \"create an endpoint\", \"serve my fine-tuned model\", or any request that involves making a model available for inference on AWS. Use this even when the user is vague (e.g. \"I just want to get this running on AWS, you figure it out\"). Works for text-generation LLMs, embedding models, rerankers, classifiers, text-to-image / diffusion models — picks the right serving stack and chooses between real-time and async inference. This is the entry-point skill for SageMaker deployment work — it asks clarifying questions, picks a deployment pathway, and coordinates the other deployment skills.",
+      "source_sha256": "1393298325a76b68f255d760989a44989ae0504ad7c5bd53ddd626673de830b6",
+      "source_path": "skills/hf-cloud-sagemaker-deployment-planner/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68c094817d0230849eba5b94306a0a0ce6828b51d44e18e21bf76d49cb1cff83": {
+      "description_zh": "在 SageMaker 部署或训练前检查可用执行角色，优先寻找现有角色，处理缺少角色ARN或 IAM AccessDenied，避免无 IAM 写权限的 SSO 身份盲目创建角色。",
+      "source": "Ensure a usable SageMaker execution role exists before deploying or training. Use this skill whenever about to create a SageMaker endpoint, model, training job, or any resource that requires an execution role. Use it especially when the user has not provided a role ARN explicitly, when scripts are about to call `iam:CreateRole`, or when an AccessDenied error mentions an IAM action. Never blindly call `iam:CreateRole` — always check for existing roles first. This skill prevents the most common SageMaker deployment failure: trying to create IAM resources from an SSO principal that has no IAM write permissions.",
+      "source_sha256": "68c094817d0230849eba5b94306a0a0ce6828b51d44e18e21bf76d49cb1cff83",
+      "source_path": "skills/hf-cloud-sagemaker-iam-preflight/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e47200efbe92d5a9bdbafc7dac193eb4b67d267352d928ecc8f087d2ff10502": {
+      "description_zh": "在镜像URI和 IAM 角色确定后创建带自动扩缩容、CloudWatch 告警及标签的 SageMaker 端点，支持实时、通过推理组件缩容至零及异步端点，提供对应部署脚本。",
+      "source": "Create a SageMaker endpoint (real-time, real-time scale-to-zero, or async) with autoscaling, CloudWatch alarms, and tagging enabled by default. Use this skill whenever about to create a SageMaker endpoint, write deployment code that calls `create_endpoint`, or finalize a deployment after the image URI and IAM role are known. Provides deploy.py for real-time endpoints, deploy_ic.py for real-time endpoints that scale to zero instances via inference components, and deploy_async.py for async endpoints (also scale-to-zero). This is the last step in the SageMaker deployment workflow. Never generate a bare `create_endpoint` call without these defaults — endpoints without autoscaling or alarms are demos, not deployments.",
+      "source_sha256": "1e47200efbe92d5a9bdbafc7dac193eb4b67d267352d928ecc8f087d2ff10502",
+      "source_path": "skills/hf-cloud-sagemaker-production-defaults/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69267c19dede71a6ad0e32a204c465f49a21e22b7bc4c5804842aabc60226801": {
+      "description_zh": "为 SageMaker 模型选择匹配的服务容器并查询当前区域镜像URI，优先 Hugging Face vLLM、vLLM-Omni、TEI 或 Inference Toolkit；仅在不兼容时采用其他镜像，避免凭记忆写URI或默认选择TGI。",
+      "source": "Pick the right serving container for a SageMaker model deployment and find its current image URI. Use this skill whenever about to deploy a model to a SageMaker endpoint and an image URI needs to be chosen — including when the user says \"deploy this LLM\", \"host this HuggingFace model\", \"serve this fine-tuned model\", \"deploy this embedding model\", \"host a reranker\", \"serve a sentence-transformers model\", or when about to hardcode any container URI in deployment code. HuggingFace-curated Deep Learning Containers are ALWAYS preferred: HuggingFace vLLM (LLMs and generative rerankers), HuggingFace vLLM-Omni (multimodal), TEI (embeddings/cross-encoder rerankers), HF Inference Toolkit (other transformers). Generic images (AWS vLLM, DJL-LMI, SGLang) are used only when no HuggingFace image is compatible — never merely because they carry a newer version. Never hardcode a container URI from memory and never default to TGI. Prevents stale-image failures and wrong-region URIs.",
+      "source_sha256": "69267c19dede71a6ad0e32a204c465f49a21e22b7bc4c5804842aabc60226801",
+      "source_path": "skills/hf-cloud-serving-image-selection/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c50bc41d2afa0c248a4139b058e4a9d8e35ca8694c888d62154aaedfa7baaeaf": {
+      "description_zh": "通过 Hugging Face CLI 估算从 Hub 加载 Safetensors 或 GGUF 模型权重进行推理所需的内存。",
+      "source": "Hugging Face CLI to estimate the required memory to load Safetensors or GGUF model weights for inference from the Hugging Face Hub",
+      "source_sha256": "c50bc41d2afa0c248a4139b058e4a9d8e35ca8694c888d62154aaedfa7baaeaf",
+      "source_path": "skills/hf-mem/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "200ef0376be61f39d5787f94bd55bf43742984368427c82ab1ee39e06ed177bd": {
+      "description_zh": "针对具体任务或本地设备寻找推荐模型、比较基准成绩，回答模型选择、领先方案及设备可运行模型等问题。",
+      "source": "Use when the user asks about finding the best, top, or recommended model for a task, wants to know what AI model to use, or wants to compare models by benchmark scores. Triggers on: \"best model for X\", \"what model should I use for\", \"top models for [task]\", \"which model runs on my laptop/machine/device\", \"recommend a model for\", \"what LLM should I use for\", \"compare models for\", \"what''s state of the art for\", or any question about choosing an AI model for a specific use case. Always use this skill when the user wants model recommendations or comparisons, even if they don''t explicitly mention HuggingFace or benchmarks.",
+      "source_sha256": "200ef0376be61f39d5787f94bd55bf43742984368427c82ab1ee39e06ed177bd",
+      "source_path": "skills/huggingface-best/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d231563bedac215eb4e61eb31de919f58a56557af2ad1d386e50269ddea01497": {
+      "description_zh": "使用 inspect-ai 和 lighteval 在本地硬件评估 Hugging Face Hub 模型，选择 vLLM、Transformers 或 accelerate 后端；不覆盖 HF Jobs 编排、模型卡PR、评估结果发布或社区评测自动化。",
+      "source": "Run evaluations for Hugging Face Hub models using inspect-ai and lighteval on local hardware. Use for backend selection, local GPU evals, and choosing between vLLM / Transformers / accelerate. Not for HF Jobs orchestration, model-card PRs, .eval_results publication, or community-evals automation.",
+      "source_sha256": "d231563bedac215eb4e61eb31de919f58a56557af2ad1d386e50269ddea01497",
+      "source_path": "skills/huggingface-community-evals/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e54ce62ddd181ff70edc2a5f7a1e30f7b3ea20def1e2fe7736fccaca134a873": {
+      "description_zh": "使用 Hugging Face Dataset Viewer API 获取子集与划分元数据、分页行数据、文本搜索、筛选、Parquet 下载地址及数据规模和统计。",
+      "source": "Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metadata, paginate rows, search text, apply filters, download parquet URLs, and read size or statistics.",
+      "source_sha256": "9e54ce62ddd181ff70edc2a5f7a1e30f7b3ea20def1e2fe7736fccaca134a873",
+      "source_path": "skills/huggingface-datasets/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "661151089e48ae86f25ad3d3d6f043a8a3e23c563a3df37ac1de66870cc6898a": {
+      "description_zh": "用 Python 构建或修改 Gradio 网页界面和演示，涵盖组件、事件监听、布局及聊天机器人。",
+      "source": "Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots.",
+      "source_sha256": "661151089e48ae86f25ad3d3d6f043a8a3e23c563a3df37ac1de66870cc6898a",
+      "source_path": "skills/huggingface-gradio/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3bed061289bf568c28ac7e0435e8342b60577139da4573b380e0b3748850019": {
+      "description_zh": "通过 Hugging Face Jobs 云GPU使用 TRL 或 Unsloth 训练微调语言与视觉模型，支持 SFT、DPO、GRPO、奖励模型及 GGUF 转换；涵盖数据准备验证、硬件成本、Trackio、认证、模型选择与保存。",
+      "source": "Train or fine-tune language and vision models using TRL (Transformer Reinforcement Learning) or Unsloth with Hugging Face Jobs infrastructure. Covers SFT, DPO, GRPO and reward modeling training methods, plus GGUF conversion for local deployment. Includes guidance on the TRL Jobs package, UV scripts with PEP 723 format, dataset preparation and validation, hardware selection, cost estimation, Trackio monitoring, Hub authentication, model selection/leaderboards and model persistence. Use for tasks involving cloud GPU training, GGUF conversion, or when users mention training on Hugging Face Jobs without local GPU setup.",
+      "source_sha256": "c3bed061289bf568c28ac7e0435e8342b60577139da4573b380e0b3748850019",
+      "source_path": "skills/huggingface-llm-trainer/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43a01869e8bac93f6c3ebdbd577a48a1a0eb034b7f447a45023d38ecb66b466c": {
+      "description_zh": "选择并通过 llama.cpp 与 GGUF 在 CPU、Mac Metal、CUDA 或 ROCm 本地运行模型，处理GGUF文件查找、量化选择、格式转换、服务启动及 OpenAI 兼容接口。",
+      "source": "Use to select models to run locally with llama.cpp and GGUF on CPU, Mac Metal, CUDA, or ROCm. Covers finding GGUFs, quant selection, running servers, exact GGUF file lookup, conversion, and OpenAI-compatible local serving.",
+      "source_sha256": "43a01869e8bac93f6c3ebdbd577a48a1a0eb034b7f447a45023d38ecb66b466c",
+      "source_path": "skills/huggingface-local-models/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7dfa388e37cb6c41826d790164c25d8a7ef1a369d48768854f0de33bd9a763f8": {
+      "description_zh": "为用户提供的 LoRA 构建并发布 Hugging Face Spaces Gradio 演示，选择匹配的扩散基础管线和 diffusers 推理方式，按任务设计图像编辑、视频等输入，遵循模型卡参数，默认发布到私有 ZeroGPU Space。",
+      "source": "Build and publish a Gradio demo on Hugging Face Spaces for a user-provided LoRA. Use when someone asks to create, generate, ship, or publish a Space, demo, Gradio app, or playground for a LoRA — including LoRAs for Qwen-Image, Qwen-Image-Edit, LTX-Video, Wan, FLUX, SDXL, or other diffusion base models. Also triggers when someone describes a LoRA they trained or hosts on the Hub and wants to share it. Covers picking the right base pipeline and `diffusers` inference recipe, designing a UI tailored to the LoRA's task and inputs (Union/multi-task control, edit, video, image, etc.), respecting model-card recommendations (trigger words, steps, guidance, LoRA scale, example inputs), and shipping to ZeroGPU hardware as a private Space by default.",
+      "source_sha256": "7dfa388e37cb6c41826d790164c25d8a7ef1a369d48768854f0de33bd9a763f8",
+      "source_path": "skills/huggingface-lora-space-builder/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bced6ee2f32e3cdf54f7f543aa9f7ce439489d544f01fcf8f56d3236c636e324": {
+      "description_zh": "在 Hugging Face Hub 发布管理研究论文，创建论文页、关联模型与数据集、认领作者身份，并生成专业 Markdown 研究文章。",
+      "source": "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles.",
+      "source_sha256": "bced6ee2f32e3cdf54f7f543aa9f7ce439489d544f01fcf8f56d3236c636e324",
+      "source_path": "skills/huggingface-paper-publisher/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b33d52d658ca694364e0b7ac2579520cc99fea381e4105ffc077f43042db09f8": {
+      "description_zh": "查询阅读 Hugging Face 论文页的 Markdown，使用论文API获取作者、关联模型数据集Spaces、GitHub仓库及项目页，适用于论文链接或 arXiv ID 的摘要、解释与分析。",
+      "source": "Look up and read Hugging Face paper pages in markdown, and use the papers API for structured metadata such as authors, linked models/datasets/spaces, Github repo and project page. Use when the user shares a Hugging Face paper page URL, an arXiv URL or ID, or asks to summarize, explain, or analyze an AI research paper.",
+      "source_sha256": "b33d52d658ca694364e0b7ac2579520cc99fea381e4105ffc077f43042db09f8",
+      "source_path": "skills/huggingface-papers/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9ea066d914b1f9457e5f5e872235c46453881c325c557dd7ad7f010220ced9e": {
+      "description_zh": "在 Hugging Face Spaces 构建、部署及维护 Gradio、Docker 或静态应用，处理 ZeroGPU、专用硬件、模型加载、构建运行故障、Buckets、推理供应商和社区资助。",
+      "source": "Build, deploy, and maintain applications on Hugging Face Spaces — Gradio / Docker / Static SDKs, ZeroGPU and dedicated hardware, model loading, debugging, buckets, inference providers, community grants. Use whenever the user asks to create or host an app on Hugging Face, port code onto ZeroGPU, fix a Space that won't build or run, or otherwise work with `hf spaces …`, `@spaces.GPU`, Space README frontmatter, or the `spaces` Python package.",
+      "source_sha256": "d9ea066d914b1f9457e5f5e872235c46453881c325c557dd7ad7f010220ced9e",
+      "source_path": "skills/huggingface-spaces/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fdc1d2378698b61da0a9e2c14ca61a7e4485171f1e5ce63c6184cf0483aa78e3": {
+      "description_zh": "把 Hugging Face API 数据获取、补充与处理组合为可复用脚本，适用于多接口串联及需要重复执行或自动化的任务。",
+      "source": "Use this skill when the user wants to build tool/scripts or achieve a task where using data from the Hugging Face API would help. This is especially useful when chaining or combining API calls or the task will be repeated/automated. This Skill creates a reusable script to fetch, enrich or process data.",
+      "source_sha256": "fdc1d2378698b61da0a9e2c14ca61a7e4485171f1e5ce63c6184cf0483aa78e3",
+      "source_path": "skills/huggingface-tool-builder/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64776a091d5c359d638bdd1487ca6da57c621439feae0705f7551521106a937e": {
+      "description_zh": "使用 Trackio 记录、查看并分析机器学习训练指标，支持Python日志、CLI查询、实时仪表盘、训练诊断告警与Webhook、HF Space同步和自动化JSON输出。",
+      "source": "Track and visualize ML training experiments with Trackio. Use when logging metrics during training (Python API), firing alerts for training diagnostics, or retrieving/analyzing logged metrics (CLI). Supports real-time dashboard visualization, alerts with webhooks, HF Space syncing, and JSON output for automation.",
+      "source_sha256": "64776a091d5c359d638bdd1487ca6da57c621439feae0705f7551521106a937e",
+      "source_path": "skills/huggingface-trackio/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "04b7eaced542c9915c26cbe67d5b1ef2a2f649cb6a23ae11d6c263e2c4bb9e3e": {
+      "description_zh": "在 Hugging Face Jobs 云GPU上用 Transformers 训练微调目标检测、图像分类及 SAM/SAM2 分割模型，涵盖 COCO 数据、增强、mAP/mAR与准确率、框点提示、DiceCE损失、硬件成本、Trackio和Hub保存。",
+      "source": "Trains and fine-tunes vision models for object detection (D-FINE, RT-DETR v2, DETR, YOLOS), image classification (timm models — MobileNetV3, MobileViT, ResNet, ViT/DINOv3 — plus any Transformers classifier), and SAM/SAM2 segmentation using Hugging Face Transformers on Hugging Face Jobs cloud GPUs. Covers COCO-format dataset preparation, Albumentations augmentation, mAP/mAR evaluation, accuracy metrics, SAM segmentation with bbox/point prompts, DiceCE loss, hardware selection, cost estimation, Trackio monitoring, and Hub persistence. Use when users mention training object detection, image classification, SAM, SAM2, segmentation, image matting, DETR, D-FINE, RT-DETR, ViT, timm, MobileNet, ResNet, bounding box models, or fine-tuning vision models on Hugging Face Jobs.",
+      "source_sha256": "04b7eaced542c9915c26cbe67d5b1ef2a2f649cb6a23ae11d6c263e2c4bb9e3e",
+      "source_path": "skills/huggingface-vision-trainer/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7457408a74f8b8663507bc3fd481a5f0a1dca5fdb6434f6fdc707ab19fcc9d7c": {
+      "description_zh": "编写审查 Gradio Spaces ZeroGPU 代码与环境配置，处理 @spaces.GPU、pickle进程隔离、跨工作进程状态、AoTI替代torch.compile、CUDA预编译轮包、资源尺寸和动态时长，以及相关序列化或构建错误。",
+      "source": "AI demos and GPU compute with Gradio Spaces and Hugging Face Spaces ZeroGPU. Use when writing or reviewing code that uses `@spaces.GPU`, configuring `python_version` or `requirements.txt` for a ZeroGPU Space, or handling ZeroGPU-specific code constraints — pickle-based process isolation, `gr.State` semantics across the worker boundary, no `torch.compile` (use AoTI instead), CUDA wheel-only builds (no `nvcc` at build or runtime), large vs xlarge sizing, and dynamic duration callables. Make sure to use this skill whenever the user mentions ZeroGPU, `@spaces.GPU`, or the `spaces` Python package, or hits ZeroGPU-specific code errors like `PicklingError` across the worker boundary, `illegal duration`, or `flash-attn` wheel-build failures — even when the user does not explicitly ask for ZeroGPU coding guidance. Trigger on `import spaces` or `@spaces.GPU` in code.",
+      "source_sha256": "7457408a74f8b8663507bc3fd481a5f0a1dca5fdb6434f6fdc707ab19fcc9d7c",
+      "source_path": "skills/huggingface-zerogpu/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab6c4f6f13c00613bd0749796a4099e2e3e00de98a258c074579b39a45812acd": {
+      "description_zh": "训练微调 sentence-transformers 的双编码器、CrossEncoder、SparseEncoder和MultiVectorEncoder，支持检索、相似度、聚类、分类、重排序与多模态等任务，涵盖损失、难负例、评估、蒸馏、LoRA、Matryoshka和Hub发布。",
+      "source": "Train or fine-tune sentence-transformers models across `SentenceTransformer` (bi-encoder, dense or static embedding model for retrieval, similarity, clustering, classification, paraphrase mining, dedup, multimodal), `CrossEncoder` (reranker, pair scoring for two-stage retrieval / pair classification), `SparseEncoder` (SPLADE, sparse embedding model for learned-sparse retrieval), and `MultiVectorEncoder` (ColBERT / late-interaction, per-token embeddings scored with MaxSim). Covers loss selection, hard-negative mining, evaluators, distillation, LoRA, Matryoshka, and Hugging Face Hub publishing. Use for any sentence-transformers training task.",
+      "source_sha256": "ab6c4f6f13c00613bd0749796a4099e2e3e00de98a258c074579b39a45812acd",
+      "source_path": "skills/train-sentence-transformers/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47e9395c1f35c89e9c341bec9933c93aef224467236c779327816fa0eba28a55": {
+      "description_zh": "使用 Transformers.js 在浏览器或 Node.js、Bun、Deno 中直接运行 Hugging Face 预训练模型，通过 WebGPU/WASM 支持文本分类、翻译、摘要、视觉、语音及多模态任务。",
+      "source": "Use Transformers.js to run state-of-the-art machine learning models directly in JavaScript/TypeScript. Supports NLP (text classification, translation, summarization), computer vision (image classification, object detection), audio (speech recognition, audio classification), and multimodal tasks. Works in browsers and server-side runtimes (Node.js, Bun, Deno) with WebGPU/WASM using pre-trained models from Hugging Face Hub.",
+      "source_sha256": "47e9395c1f35c89e9c341bec9933c93aef224467236c779327816fa0eba28a55",
+      "source_path": "skills/transformers-js/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0de004b4e3d2e76e689db60b8d5b813219051326ea092b4a3488ebb15a92369": {
+      "description_zh": "通过 TRL 命令行训练微调 Transformer 语言模型，支持 SFT、DPO、GRPO、KTO、RLOO及奖励模型训练。",
+      "source": "Train and fine-tune transformer language models using TRL (Transformers Reinforcement Learning). Supports SFT, DPO, GRPO, KTO, RLOO and Reward Model training via CLI commands.",
+      "source_sha256": "d0de004b4e3d2e76e689db60b8d5b813219051326ea092b4a3488ebb15a92369",
+      "source_path": "skills/trl-training/SKILL.md",
+      "package_sha256": "c89e4a66547e7de90b221a7acd7bb10946eadca0f5619cce09188fd7c4869bb0",
+      "source_package": "huggingface-skills-1.0.31-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2dcccf50dd30970005155dd4eeebce63abeb7b04e8de84d5640de2f44c1476a1": {
+      "description_zh": "分析薪酬基准、薪级带位置与股权方案，判断岗位或录用报价的竞争力，并从薪酬数据识别异常与人员留存风险。",
+      "source": "Analyze compensation — benchmarking, band placement, and equity modeling. Trigger with \"what should we pay a [role]\", \"is this offer competitive\", \"model this equity grant\", or when uploading comp data to find outliers and retention risks.",
+      "source_sha256": "2dcccf50dd30970005155dd4eeebce63abeb7b04e8de84d5640de2f44c1476a1",
+      "source_path": "skills/comp-analysis/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5ecb252d5dadc316c8080448edd564c25a9fd0d36d671bcd5d7c97f718420bb": {
+      "description_zh": "起草包含薪酬与条款的录用通知，组合基本工资、股权和签约奖金等总薪酬方案，并为招聘经理准备谈判建议。",
+      "source": "Draft an offer letter with comp details and terms. Use when a candidate is ready for an offer, assembling a total comp package (base, equity, signing bonus), writing the offer letter text itself, or prepping negotiation guidance for the hiring manager.",
+      "source_sha256": "f5ecb252d5dadc316c8080448edd564c25a9fd0d36d671bcd5d7c97f718420bb",
+      "source_path": "skills/draft-offer/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad011923ebdeaed5814c61c3944fd10126c2bb33aca377c0624cab8398c952e2": {
+      "description_zh": "为候选人面试制定结构化计划，设计基于能力的问题与评分表，支持面试准备和评价标准制定。",
+      "source": "Create structured interview plans with competency-based questions and scorecards. Trigger with \"interview plan for\", \"interview questions for\", \"how should we interview\", \"scorecard for\", or when the user is preparing to interview candidates.",
+      "source_sha256": "ad011923ebdeaed5814c61c3944fd10126c2bb33aca377c0624cab8398c952e2",
+      "source_path": "skills/interview-prep/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15600cec39e2f589e34e3b39659151c09c99e0315c0fa9aed672b7ebb0991e94": {
+      "description_zh": "生成新员工入职清单及首周计划，安排入职前账号、设备、伙伴等事项，设计首日首周日程与30/60/90天目标。",
+      "source": "Generate an onboarding checklist and first-week plan for a new hire. Use when someone has a start date coming up, building the pre-start task list (accounts, equipment, buddy), scheduling Day 1 and Week 1, or setting 30/60/90-day goals for a new team member.",
+      "source_sha256": "15600cec39e2f589e34e3b39659151c09c99e0315c0fa9aed672b7ebb0991e94",
+      "source_path": "skills/onboarding/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4553e8b27d36996d98d5353cf2b5d4296b7d6aabed597aa86c8d0da5ce739955": {
+      "description_zh": "开展人员编制规划、组织设计和团队结构优化，支持团队规模、汇报关系、重组及下一步招聘岗位的讨论。",
+      "source": "Headcount planning, org design, and team structure optimization. Trigger with \"org planning\", \"headcount plan\", \"team structure\", \"reorg\", \"who should we hire next\", or when the user is thinking about team size, reporting structure, or organizational design.",
+      "source_sha256": "4553e8b27d36996d98d5353cf2b5d4296b7d6aabed597aa86c8d0da5ce739955",
+      "source_path": "skills/org-planning/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "518188dd74295904ea77c454d7f5be71e3e475089b7f7255f58eaf9bfc4dc4f4": {
+      "description_zh": "生成员工人数、流失、多样性及组织健康报告，支持领导人数快照、分团队离职趋势、多样性代表指标、管理幅度与离职风险评估。",
+      "source": "Generate headcount, attrition, diversity, or org health reports. Use when pulling a headcount snapshot for leadership, analyzing turnover trends by team, preparing diversity representation metrics, or assessing span of control and flight risk across the org.",
+      "source_sha256": "518188dd74295904ea77c454d7f5be71e3e475089b7f7255f58eaf9bfc4dc4f4",
+      "source_path": "skills/people-report/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "800b3fac0289b0998102ca891899a6545a07ac324aed88f3fb0f7ba96b589887": {
+      "description_zh": "组织绩效评审，提供自评和经理评审模板，准备评级分布及晋升案例的校准材料，并把笼统反馈转为具体行为实例。",
+      "source": "Structure a performance review with self-assessment, manager template, and calibration prep. Use when review season kicks off and you need a self-assessment template, writing a manager review for a direct report, prepping rating distributions and promotion cases for calibration, or turning vague feedback into specific behavioral examples.",
+      "source_sha256": "800b3fac0289b0998102ca891899a6545a07ac324aed88f3fb0f7ba96b589887",
+      "source_path": "skills/performance-review/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d56b8ad279813af61e16acf7196d5311215e2d3c790772c60d558a318c782b8": {
+      "description_zh": "查找并用通俗语言解释公司政策，回答福利、差旅、休假、费用报销、跨国远程工作及员工手册规则等问题。",
+      "source": "Find and explain company policies in plain language. Trigger with \"what's our PTO policy\", \"can I work remotely from another country\", \"how do expenses work\", or any plain-language question about benefits, travel, leave, or handbook rules.",
+      "source_sha256": "9d56b8ad279813af61e16acf7196d5311215e2d3c790772c60d558a318c782b8",
+      "source_path": "skills/policy-lookup/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
