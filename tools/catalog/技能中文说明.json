@@ -28609,6 +28609,1086 @@
       "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
       "source_package": "EasyEsuite-0.1.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18a9bafd38298d0a3ebe4883c83973d7b2f99a826d739b1e19eb6b8f952581ad": {
+      "description_zh": "在EasyEsuite为销售订单开票、创建即时发票、记录客户付款与收据并结清未付发票。",
+      "source": "Invoice sales orders and record customer payments in the EasyEsuite ERP — create invoices (including immediate invoices), apply payments and payment receipts, and pay/settle open invoices. Use when the user wants to bill a customer, record money received, or close out an invoice.",
+      "source_sha256": "18a9bafd38298d0a3ebe4883c83973d7b2f99a826d739b1e19eb6b8f952581ad",
+      "source_path": "skills/invoicing-and-payments/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4cd6fb33a1540930ed828a0d3145131cc6e214bb725afc793adb1a01f7eeed3": {
+      "description_zh": "维护EasyEsuite商品目录，新增普通、组合和变体商品、修改字段、刷新市场配置并附产品图片。",
+      "source": "Create and maintain catalog items in the EasyEsuite ERP — add standard items, kits/bundles, and variant items; update item fields; refresh marketplace configurations for an existing item; and attach product images. Use when the user wants to add a product, build a bundle, configure marketplace data, or update an item.",
+      "source_sha256": "d4cd6fb33a1540930ed828a0d3145131cc6e214bb725afc793adb1a01f7eeed3",
+      "source_path": "skills/manage-catalog-items/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69fd4b88fb31fd38a7df270fd6582e6f524c355ea6d6a1cd043b64aae6a166e1": {
+      "description_zh": "查看EasyEsuite当前有限Connector V2 MCP提供的连接账户与承运商映射，范围限于插件已暴露资料。",
+      "source": "Operate the narrow Connector V2 MCP surface currently exposed by EasyEsuite — inspect connector account records and carrier mappings. Use when the user wants to review connector account data that is actually available through this plugin.",
+      "source_sha256": "69fd4b88fb31fd38a7df270fd6582e6f524c355ea6d6a1cd043b64aae6a166e1",
+      "source_path": "skills/marketplace-connector-ops/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "012f426afdcb9f30c71f6837f082b3c0197db0df68b052c9fd12fc6acf4d7d3d": {
+      "description_zh": "生成EasyEsuite未结订单账龄报告，按年龄分组待发货或未开票订单，并按状态、客户和市场查看积压。",
+      "source": "Build an open-orders aging report from the EasyEsuite ERP MCP surface. Use when the user wants open or pending sales orders bucketed by age, wants to see how old unshipped or uninvoiced orders are, or wants an operational backlog view by status, customer, or marketplace.",
+      "source_sha256": "012f426afdcb9f30c71f6837f082b3c0197db0df68b052c9fd12fc6acf4d7d3d",
+      "source_path": "skills/open-orders-aging/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe48a105a4fde7799a60843a5d5a7f3f0bc42a011c4654410082de1baaf3c8b8": {
+      "description_zh": "执行EasyEsuite采购订单、收货、供应商账单和付款全周期，支持费用账单与供应商预付款。",
+      "source": "Run the full procurement cycle in the EasyEsuite ERP — create a purchase order from a vendor and items, receive goods against it, generate the vendor bill, and pay it. Also covers expense bills and vendor prepayments. Use when the user wants to raise a PO, restock, receive a shipment, or record/pay a supplier bill.",
+      "source_sha256": "fe48a105a4fde7799a60843a5d5a7f3f0bc42a011c4654410082de1baaf3c8b8",
+      "source_path": "skills/purchase-order-lifecycle/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c775324b924335f2753c13852c13fefe292c7744988f7ba808454cbaaad173f4": {
+      "description_zh": "报告EasyEsuite采购状态数量、已收已开票订单、供应商支出、收货及未付账单。",
+      "source": "Report on procurement in the EasyEsuite ERP — purchase order status and counts, open vs. received vs. billed POs, vendor spend, receipts, and outstanding bills. Use for questions like \"open POs\", \"how much did we buy from vendor X\", or \"what's pending receipt\".",
+      "source_sha256": "c775324b924335f2753c13852c13fefe292c7744988f7ba808454cbaaad173f4",
+      "source_path": "skills/purchasing-reports/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "851370bfdd027c2ba10ee68487627cc3e5e43cb1803b038813176200cdc0a1a1": {
+      "description_zh": "处理EasyEsuite客户退货与退款，建立订单或发票退货、处理退货退款、贷项及发票退回。",
+      "source": "Handle customer returns and refunds in the EasyEsuite ERP — set up a return for a sales order/invoice, process the return refund, issue credit memos and refund against them, and record invoice returns. Use when a customer is returning items or owed money back.",
+      "source_sha256": "851370bfdd027c2ba10ee68487627cc3e5e43cb1803b038813176200cdc0a1a1",
+      "source_path": "skills/returns-and-refunds/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6d65375fde2fde4d5e3f25234eb46a4b7f56a3a977e20e40f3756189ce6044d": {
+      "description_zh": "生成EasyEsuite销售与收入报告，按时期、市场或状态统计订单收入，比较开票履约、热门产品及期间变化。",
+      "source": "Build sales and revenue reports from the EasyEsuite ERP — order counts and revenue by period, marketplace or status, invoiced vs. fulfilled, top products, and period-over-period comparisons. Use for questions like \"how many orders last week\", \"revenue by marketplace this month\", or \"what sold best in April\".",
+      "source_sha256": "e6d65375fde2fde4d5e3f25234eb46a4b7f56a3a977e20e40f3756189ce6044d",
+      "source_path": "skills/sales-reports/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "afdefce083929cb2774ecee8a6327d80fdd37a7f2e3cb52cfdfcac41b0e3f311": {
+      "description_zh": "查看EasyEsuite暴露的Zendesk工单和标签元数据，读取问题并创建新工单。",
+      "source": "Work with Zendesk support tickets surfaced in the EasyEsuite ERP — list and read tickets, inspect the currently exposed tag metadata, and create new tickets. Use when the user asks about support tickets, customer issues, or wants to open a ticket.",
+      "source_sha256": "afdefce083929cb2774ecee8a6327d80fdd37a7f2e3cb52cfdfcac41b0e3f311",
+      "source_path": "skills/support-tickets/SKILL.md",
+      "package_sha256": "dcc4b7ebbca73be71114abb2c7d82c0e99b7df334419cacd85ed068739d4a37c",
+      "source_package": "EasyEsuite-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47e67a93023291025acb1ba1c308b4e2d0ca3760ab0db5cdfed72a281ba8cbf6": {
+      "description_zh": "通过本地API操作Echosy转录应用，离线读取.echo转录，也可向设备端Gemma或Qwen模型发临时提示。",
+      "source": "Interact with the Echosy transcription app via its local API or read .echo transcript files offline. Also exposes Echosy's on-device LLM (Gemma 4 / Qwen 3.5) for ad-hoc prompt interactions.",
+      "source_sha256": "47e67a93023291025acb1ba1c308b4e2d0ca3760ab0db5cdfed72a281ba8cbf6",
+      "source_path": "skills/echosy/SKILL.md",
+      "package_sha256": "da27f6fb61c1d43882ed6fecf475c54cf286455d25cb9267050112ff7988c0e0",
+      "source_package": "echosy-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "659eb970988a23d87acb52ede62a71821e778e6b5d7d5475efe8e1a53ddec896": {
+      "description_zh": "审计编码智能体每轮加载的指令、索引与技能描述，排序可调整项目并测量会话上下文成本，修复完成后评估此前节省预测。",
+      "source": "Audit what a coding agent loads on every turn — instruction files, indexes, skill descriptions — rank what can actually be changed, then grade each prediction against what it bought. Use when the user asks why a session starts expensive, wants an always-loaded instruction file cut down, asks what loads every turn or what a skill costs to have installed, wants per-session context cost measured, or wants an earlier audit's findings graded. Phase 2 runs after the fixes exist, not at ranking.",
+      "source_sha256": "659eb970988a23d87acb52ede62a71821e778e6b5d7d5475efe8e1a53ddec896",
+      "source_path": "skills/ecoctx/SKILL.md",
+      "package_sha256": "267d53285934f69b6a808be3e6eec227ad2abe0bf01fb004f89521728ac2d30d",
+      "source_package": "ecoctx-2.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6cc6cc654ea58571e2a3bad3d68c839643babca31fc9f0f274f2e18a13886fab": {
+      "description_zh": "依据Economic Mind市场报告逐企业自下而上估算市场规模，保持收入、份额和置信依据原值，另用可信来源的两三种方法交叉验证，输出Markdown与JSON。",
+      "source": "Size a market bottom-up from an Economic Mind market report and stress-test that number against independent sizing approaches - the headline size, the transparent per-company build (each player's revenue, share-in-market, in-market revenue, confidence and justification carried verbatim from the report), an explicit read on how much to trust the headline and why, and a football-field comparison of the bottom-up figure against 2-3 credible cross-checks. Use whenever the user wants to \"size the X market bottom-up\", \"how big is X and how sure are we\", \"bottom-up market size\", \"build / show the market-size buildup\", \"triangulate the size of X\", or \"benchmark our market size against other estimates\". The bottom-up figures come ONLY from the Economic Mind report, unchanged; cross-checks come from a credible-source research pass. The deliverable is data (Markdown + JSON); presentation is left to the client.",
+      "source_sha256": "6cc6cc654ea58571e2a3bad3d68c839643babca31fc9f0f274f2e18a13886fab",
+      "source_path": "skills/bottom-up-market-size/SKILL.md",
+      "package_sha256": "ae1809e0f6a8ec2816c1bde64f7b9dd1db87da2d4dbaf618405a41b2546c1763",
+      "source_package": "Economic Mind-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9eb9dbf2bd7376d29e8355559fa3142d9a42bbfeb2a8d8b1624733cbb6ccce32": {
+      "description_zh": "仅从Economic Mind连接器获取公司多年收入、毛利、EBITDA、EBIT和净利润，区分已披露未披露并为派生指标附公式输入，公开资料事实另查可信网页，输出Markdown与JSON。",
+      "source": "Produce a rigorous, fully-sourced data snapshot of a single company - a detailed multi-year financial table (revenue, gross profit, EBITDA, EBIT, net income per year), computed margins and growth with every derived figure footnoted to its formula and inputs, plus web-sourced profile facts (founded, CEO, ownership, employees, listing). Use whenever the user wants a company \"at a glance\", a snapshot / fact sheet / profile, \"pull the financials for X\", \"what do we know about X\", \"give me the numbers on X\", or names a single company to size up - even if they don't say \"at a glance\". Financials come ONLY from the Economic Mind financials connector and are flagged reported-vs-not-reported; profile facts are web-searched from credible sources and individually cited. The deliverable is data (Markdown + JSON); presentation is left to the client.",
+      "source_sha256": "9eb9dbf2bd7376d29e8355559fa3142d9a42bbfeb2a8d8b1624733cbb6ccce32",
+      "source_path": "skills/company-at-a-glance/SKILL.md",
+      "package_sha256": "ae1809e0f6a8ec2816c1bde64f7b9dd1db87da2d4dbaf618405a41b2546c1763",
+      "source_package": "Economic Mind-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63631d9121a68110fa636061c80a4e83c952285a95e2b516ce03ce8d3b1d70e3": {
+      "description_zh": "用Economic Mind财务数据按统一币种比较企业规模、增长与利润，逐年列指标、标注披露状态、提供方和派生公式，可用明确名单或报告同行组，输出Markdown与JSON。",
+      "source": "Benchmark a set of companies against each other on hard financials - a detailed per-year data table for each company (revenue, gross profit, EBITDA, EBIT, net income), plus a cross-company summary of size, growth and profitability, with every derived figure footnoted to its formula and inputs and every line attributed to its underlying provider. Use whenever the user wants to \"compare / benchmark companies\", \"how does X stack up against its peers\", \"build a comp set / comp table\", \"competitive benchmarking\", \"peer financials for the X market\", or names several companies to put side by side. Either accept an explicit list of companies or derive the peer set from a target company's Economic Mind market report. Financials come ONLY from the Economic Mind connector, are normalized to one currency, and are flagged reported-vs-not-reported. The deliverable is data (Markdown + JSON); presentation is left to the client.",
+      "source_sha256": "63631d9121a68110fa636061c80a4e83c952285a95e2b516ce03ce8d3b1d70e3",
+      "source_path": "skills/competitor-benchmarking/SKILL.md",
+      "package_sha256": "ae1809e0f6a8ec2816c1bde64f7b9dd1db87da2d4dbaf618405a41b2546c1763",
+      "source_package": "Economic Mind-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28951ee8ef561da86b9a117a3dae632ce1c7e092dd37903825294f160220c35c": {
+      "description_zh": "介绍Economic Mind插件、来源、技能工具和使用方式，确认连接并提供快速实例；已有明确公司、同行或市场问题时转相应分析技能。",
+      "source": "Orient a user to the Economic Mind plugin and connector - what it is, what data it draws on, which skills and connector tools are available, how to trigger them, and what to expect as the product grows. Use whenever the user is new to Economic Mind or asks what it is / what it can do / how to use it / how to get started - \"what is Economic Mind\", \"getting started\", \"help\", \"what can the connector do\", \"what tools or skills are available\", \"how do I trigger X\", \"introduce the plugin\", or names Economic Mind without a concrete analysis task yet. As part of the orientation, confirm the user is connected to the Economic Mind connector and offer one quick live example. Do NOT use this when the user already has a concrete request (a company, a peer set, a market to size) - hand off to the matching data skill instead.",
+      "source_sha256": "28951ee8ef561da86b9a117a3dae632ce1c7e092dd37903825294f160220c35c",
+      "source_path": "skills/getting-started/SKILL.md",
+      "package_sha256": "ae1809e0f6a8ec2816c1bde64f7b9dd1db87da2d4dbaf618405a41b2546c1763",
+      "source_package": "Economic Mind-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bca4bbbcacfcd6fc93b8af68bae43e46bbcb5dd98025314b290cac3a15f05472": {
+      "description_zh": "依据内容支柱、真实团队资源、日历与受众表现规划90天内容安排，限制在团队可执行容量内。",
+      "source": "Build resource-realistic 90-day content calendars grounded in configured pillars, real team constraints, live calendar data, and audience performance patterns. Never plan more than the team can execute. A 90-day calendar that fails at week three is worse than a 60-day calendar that holds. Used by /calendar.",
+      "source_sha256": "bca4bbbcacfcd6fc93b8af68bae43e46bbcb5dd98025314b290cac3a15f05472",
+      "source_path": "skills/calendar-planner/SKILL.md",
+      "package_sha256": "26819fa0deeaf2c8930a3d9aeb3e5f511364ba6babecd187a5031b3535bf8192",
+      "source_package": "Editorial OS-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d2942325a7ba9ed39ca406d4b6cf893381d99452821a501482bfbe0d0544e03": {
+      "description_zh": "读取客户Google Drive真实品牌、受众、竞品、历史内容和表现资料，建立编辑上下文，以文档替代配置和入职访谈。",
+      "source": "Read a client's Google Drive folder and build complete editorial context from real documents — brand guides, audience personas, competitor analyses, content history, performance data. Replaces config files and onboarding interviews. Called silently at the start of every command. Your documents are the config.",
+      "source_sha256": "5d2942325a7ba9ed39ca406d4b6cf893381d99452821a501482bfbe0d0544e03",
+      "source_path": "skills/client-context/SKILL.md",
+      "package_sha256": "26819fa0deeaf2c8930a3d9aeb3e5f511364ba6babecd187a5031b3535bf8192",
+      "source_package": "Editorial OS-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83eb18c5f70294cb6554237ac094d1171f984d2310251665260b95606f1a910b": {
+      "description_zh": "按已配置竞品分析内容竞争、真实缺口与可守住的空白，承认竞品强项，不把不存在空白当机会。",
+      "source": "Apply honest competitive analysis methodology. Map content battlefields against configured competitors, identify real gaps (not wishful ones), and find defensible white space. If a competitor is strong, say so. White space that doesn't exist isn't an opportunity. Used by /competitor command.",
+      "source_sha256": "83eb18c5f70294cb6554237ac094d1171f984d2310251665260b95606f1a910b",
+      "source_path": "skills/competitive-intel/SKILL.md",
+      "package_sha256": "26819fa0deeaf2c8930a3d9aeb3e5f511364ba6babecd187a5031b3535bf8192",
+      "source_package": "Editorial OS-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "914ccbb8b85e48991759c1fe3eec0dc52a5f5c686b014c9b9dcee44062a67c71": {
+      "description_zh": "评估内容支柱、缺口与机会，按业务目标排列建议，而非仅优化内容指标。",
+      "source": "Apply strategic content judgment — pillar health assessment, gap identification, opportunity prioritization, and recommendation sequencing. Frame findings in terms of business goals, not content metrics. Content metrics are inputs. Business outcomes are the output. Used by /audit and /calendar.",
+      "source_sha256": "914ccbb8b85e48991759c1fe3eec0dc52a5f5c686b014c9b9dcee44062a67c71",
+      "source_path": "skills/content-strategist/SKILL.md",
+      "package_sha256": "26819fa0deeaf2c8930a3d9aeb3e5f511364ba6babecd187a5031b3535bf8192",
+      "source_package": "Editorial OS-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37fea7d9bd58d87317dc47e34144add327cc77e478b5aceeec7c181c96193928": {
+      "description_zh": "调用client-context并把Drive文档整理为竞品、支柱、受众、约束、历史和表现基准等编辑情报，供每项命令使用。",
+      "source": "Load client context at the start of every command by calling client-context skill. Interpret Drive documents into structured editorial intelligence — competitors, pillars, audience segments, constraints, content history, and performance baselines. Run silently. Never narrate the loading process.",
+      "source_sha256": "37fea7d9bd58d87317dc47e34144add327cc77e478b5aceeec7c181c96193928",
+      "source_path": "skills/editorial-config/SKILL.md",
+      "package_sha256": "26819fa0deeaf2c8930a3d9aeb3e5f511364ba6babecd187a5031b3535bf8192",
+      "source_package": "Editorial OS-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9721d981fa9f5e258a0ad7f9e19529644ba4d623f50527c0e87314c081dc162a": {
+      "description_zh": "初始化Elastic Cloud组织CLI上下文、API密钥与默认区域，邀请用户、配置Serverless角色并管理Cloud密钥和访问审计。",
+      "source": "Onboard an Elastic Cloud organization: configure the `elastic` CLI's Cloud context and API key, establish a default region, then invite users, assign predefined or custom Serverless project roles, and create or revoke Cloud API keys. Use when setting up Cloud authentication or when granting, modifying, or auditing user access to an organization and its projects.",
+      "source_sha256": "9721d981fa9f5e258a0ad7f9e19529644ba4d623f50527c0e87314c081dc162a",
+      "source_path": "skills/cloud/onboarding/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ef36d7d0da9dcac183d45e1796e86e596498fb43120502fee2a9be7ea4ad8bf": {
+      "description_zh": "创建、连接、更新和删除Elastic Cloud Serverless项目，管理Hosted部署生命周期及IP或PrivateLink流量限制。",
+      "source": "Provision and operate Elastic Cloud infrastructure: create, connect to, update, and delete Serverless projects (Elasticsearch, Observability, Security); manage traffic filters (IP and AWS PrivateLink network security); and manage the lifecycle of Elastic Cloud Hosted deployments. Use when creating or performing day-2 operations on serverless projects or hosted deployments, or restricting their network access.",
+      "source_sha256": "3ef36d7d0da9dcac183d45e1796e86e596498fb43120502fee2a9be7ea4ad8bf",
+      "source_path": "skills/cloud/provisioning/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0788453b85d23351e4c9fa5087dc8c6d1303ca42e329d779e6f90b84ff40baf": {
+      "description_zh": "解释Elasticsearch机器学习异常分数、模型学习与结果，排查意外高低分。",
+      "source": "Explain Elasticsearch ML anomaly detection scores, model behavior, and result interpretation. Use when the user asks why a score is high or low, how the model learns, what the numbers mean, or how to troubleshoot unexpected anomaly scores.",
+      "source_sha256": "e0788453b85d23351e4c9fa5087dc8c6d1303ca42e329d779e6f90b84ff40baf",
+      "source_path": "skills/elasticsearch/elasticsearch-anomaly-detection-explainer/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de737d9feb9d3089556ae66befce0cec36e818d06a16968109c8529a153f3dae": {
+      "description_zh": "通过API创建管理Elastic异常检测作业及数据源，配置、打开、启动或停止任务。",
+      "source": "Create and manage Elastic ML anomaly detection jobs via the API. Use when setting up jobs on an index or data stream, configuring jobs and datafeeds, or opening, starting, or stopping them.",
+      "source_sha256": "de737d9feb9d3089556ae66befce0cec36e818d06a16968109c8529a153f3dae",
+      "source_path": "skills/elasticsearch/elasticsearch-anomaly-detection/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdacd1a0446c8568617c71ea81eda1199665baea8b76a64ab6fbbc72a0ffc41b": {
+      "description_zh": "只读诊断Elasticsearch黄红集群、未分配分片与分配失败，指出最可能原因和修复，区分主副本影响及数据丢失风险。",
+      "source": "Diagnose a non-green Elasticsearch cluster and surface the single most likely cause with remediation. Use when an operator reports yellow or red status, unassigned shards, allocation failures, or wants read-only triage before deeper investigation. Teaches replica-vs-primary impact, allocation decider classification, and data-loss awareness.",
+      "source_sha256": "bdacd1a0446c8568617c71ea81eda1199665baea8b76a64ab6fbbc72a0ffc41b",
+      "source_path": "skills/elasticsearch/elasticsearch-cluster-health/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d56a509a25693e8c485b5d69deff33ab52a3ebe955416d2601c67b25bc4f98fd": {
+      "description_zh": "执行Elasticsearch ES|QL查询，分析日志、聚合指标、探索数据并从结果生成图表或仪表板。",
+      "source": "Execute ES|QL (Elasticsearch Query Language) queries, use when the user wants to query Elasticsearch data, analyze logs, aggregate metrics, explore data, or create charts and dashboards from ES|QL results.",
+      "source_sha256": "d56a509a25693e8c485b5d69deff33ab52a3ebe955416d2601c67b25bc4f98fd",
+      "source_path": "skills/elasticsearch/elasticsearch-esql/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af1cd16438142a793a421394a2d078f8a3b07d9cf276dad3d82214a58a5f5eb7": {
+      "description_zh": "按访问模式设计与审查Elasticsearch索引映射，选择字段类型、text与keyword多字段、doc_values及分片，避免映射膨胀。",
+      "source": "Design and review Elasticsearch index mappings for stated access patterns: correct field types, text+keyword multi-fields, doc_values tuning, mapping-explosion avoidance, and explicit shard settings. Use when creating a new index, reviewing a mapping for storage or query performance, fixing wrong field types, or when the user asks which type to use for search, filter, sort, or aggregation on a field.",
+      "source_sha256": "af1cd16438142a793a421394a2d078f8a3b07d9cf276dad3d82214a58a5f5eb7",
+      "source_path": "skills/elasticsearch/elasticsearch-index-design/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e275a81a60c3a0067d8effa44543220ac6ddb0d83c4b1354f746dde61fb46d50": {
+      "description_zh": "通过bulk API将本地CSV或JSON转为NDJSON载入Elasticsearch，必要时明确映射并核对文档数；不用于Logstash、Beats或重索引。",
+      "source": "Load CSV and JSON files into Elasticsearch indices using the bulk API and explicit mappings when field types matter. Use when batch-importing local files, converting CSV rows or JSON arrays to NDJSON bulk format, or verifying document counts and mappings after ingest — not for Logstash pipelines, Beats, custom scripts, or index-to-index reindex.",
+      "source_sha256": "e275a81a60c3a0067d8effa44543220ac6ddb0d83c4b1354f746dde61fb46d50",
+      "source_path": "skills/elasticsearch/elasticsearch-ingest/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c53b5f4bb1e5d10bb26e581e48ed0e25f26bb1cfa8251bb3c7fa8372df7eb4b": {
+      "description_zh": "引导新开发者从需求、数据映射到可运行Elasticsearch搜索体验，解释相关概念并落实搜索实践。",
+      "source": "Help developers new to Elasticsearch get from zero to a working search experience. Guide them through understanding their intent, mapping their data, and building a search experience with best practices baked in. Use this when the user shows intent to build search-related functionality, asks about Elasticsearch-related concepts for their use case, or expresses the need for help getting started with Elasticsearch.",
+      "source_sha256": "0c53b5f4bb1e5d10bb26e581e48ed0e25f26bb1cfa8251bb3c7fa8372df7eb4b",
+      "source_path": "skills/elasticsearch/elasticsearch-onboarding/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e910cd957bbfd8da2b3ab5724829cf06d8cbc2379bdd7de489e53d555579ae15": {
+      "description_zh": "根据Elasticsearch搜索剖析诊断慢Query DSL，调整无需评分条件至filter、去除前导通配，并重新剖析验证改进。",
+      "source": "Diagnose slow Elasticsearch Query DSL searches and propose measured fixes. Use when a search is slow, profile output shows an expensive clause, exact-match filters sit in scoring context, or leading wildcards dominate latency. Ground every recommendation in search profiling — move non-scoring clauses to filter context, eliminate leading wildcards, and re-profile to confirm improvement.",
+      "source_sha256": "e910cd957bbfd8da2b3ab5724829cf06d8cbc2379bdd7de489e53d555579ae15",
+      "source_path": "skills/elasticsearch/elasticsearch-query-optimization/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27011d179136608f76d47c75ec2c922698f6e2562b08daa30b4508cdbc9503c2": {
+      "description_zh": "指导Elasticsearch本地或远程重索引，配置切片、节流和任务API，用于复制迁移、改变映射及转换内容。",
+      "source": "Guide Elasticsearch reindex for performance: local and remote, slicing, throttling, task API. Use when copying or migrating indices, changing mappings, or transforming during reindex.",
+      "source_sha256": "27011d179136608f76d47c75ec2c922698f6e2562b08daa30b4508cdbc9503c2",
+      "source_path": "skills/elasticsearch/elasticsearch-reindex/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa38ea6859d3bbc65ab20cc8818f276bad934bd165ae4c06ec098b1a29ceaa69": {
+      "description_zh": "改善Elasticsearch内容或商品搜索排序，配置置顶规则、条件及查询连接，按映射调整multi_match和字段权重，不用于分析查询、入库或集群健康。",
+      "source": "Improve Elasticsearch search relevance for content and catalog indices: pin or promote results with query rules (correct rule type, criteria, and rule-query wiring) and tune organic ranking with multi_match, field boosts, and analysis grounded in the index mapping. Use when search results rank poorly, a specific document must appear first for a query, or the user asks to tune full-text matching — not for ES|QL analytics, index ingest, or cluster health.",
+      "source_sha256": "fa38ea6859d3bbc65ab20cc8818f276bad934bd165ae4c06ec098b1a29ceaa69",
+      "source_path": "skills/elasticsearch/elasticsearch-search-relevance/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4336a4a3e5bbf325dbb42f0b3b3d1c97b680164d7334937315e8f55d04a0f829": {
+      "description_zh": "创建、管理、测试和检查Kibana Agent Builder智能体与自定义工具。",
+      "source": "Create and manage Kibana Agent Builder agents and custom tools. Use when asked to create, update, delete, test, or inspect agents or tools in Agent Builder, or when the user wants to understand what agents or tools already exist.",
+      "source_sha256": "4336a4a3e5bbf325dbb42f0b3b3d1c97b680164d7334937315e8f55d04a0f829",
+      "source_path": "skills/kibana/kibana-agent-builder/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a965e1a71959fc9685fa68c606d74db3cf812c57de738ce3538aaa63e0ac3be4": {
+      "description_zh": "创建和管理Kibana告警规则，选择指标阈值与参数，启停、静音、暂停并按标签只读查询。",
+      "source": "Create and manage Kibana alerting rules. Use when creating, updating, or managing rule lifecycle (enable, disable, mute, snooze), choosing metric threshold rule types and params, or read-only find/list with tag filters.",
+      "source_sha256": "a965e1a71959fc9685fa68c606d74db3cf812c57de738ce3538aaa63e0ac3be4",
+      "source_path": "skills/kibana/kibana-alerting-rules/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "caf5a885ef0ad8a51bb887b522b7bbd8b433063417c6bca1b09a603e3584a973": {
+      "description_zh": "调查Elastic ML异常和根因，解释分数与重新归一化，排查数据源停止和内存限制，并管理作业、读取异常索引与API状态。",
+      "source": "Elastic ML anomaly detection — investigation/RCA, score explanation, job lifecycle troubleshooting, and job operations. Use when answering \"what broke?\"/\"which entity?\"/RCA, \"why is score high/low?\"/renormalization, \"datafeed stopped\"/\"memory limit\"/hard_limit, or configuring ML anomaly detection jobs. Reads results from `.ml-anomalies-*` and job state from ML REST APIs.",
+      "source_sha256": "caf5a885ef0ad8a51bb887b522b7bbd8b433063417c6bca1b09a603e3584a973",
+      "source_path": "skills/kibana/kibana-anomaly-detection/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd36a99db6cdb9d495245493fecb600a7b0b910450bc7138890fac5efa2a22fc": {
+      "description_zh": "声明式创建和管理Kibana仪表板与Lens可视化，支持版本控制和自动部署。",
+      "source": "Create and manage Kibana Dashboards and Lens visualizations. Use when you need to define dashboards and visualizations declaratively, version control them, or automate their deployment.",
+      "source_sha256": "bd36a99db6cdb9d495245493fecb600a7b0b910450bc7138890fac5efa2a22fc",
+      "source_path": "skills/kibana/kibana-dashboards/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9b3cd7c5fe399439562b831cd9dc24ada040e851a7bc86435792750c87eff1d": {
+      "description_zh": "编写、验证、测试和运行Elastic Workflow YAML，理解触发器步骤，并在真实Kibana快速迭代。",
+      "source": "Author, validate, test, run, and inspect Elastic Workflow YAML definitions. Use when the user wants to turn natural language into a Kibana workflow, fix workflow YAML, understand triggers or steps, or run a quick test loop against a real Kibana.",
+      "source_sha256": "a9b3cd7c5fe399439562b831cd9dc24ada040e851a7bc86435792750c87eff1d",
+      "source_path": "skills/kibana/kibana-workflows/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "be819a8a0668e6522ef74e680beb193ce644ee27ff6e2eaf28cc308bcaf1231f": {
+      "description_zh": "依据EDOT遥测调查Kubernetes工作负载、节点和控制面故障，分析崩溃、内存、调度、镜像、准入和扩缩容，并关联应用信号；不涵盖旧ECS集成。",
+      "source": "Investigate Kubernetes workload, node, and control-plane issues using OTel telemetry (EDOT). Use when diagnosing pod failures (CrashLoopBackOff, OOMKilled, Error), node pressure, resource exhaustion, image pull failures, admission rejections, autoscaling anomalies, or correlating K8s state with application signals. OTel ingest path only — the legacy ECS Kubernetes integration shape is out of scope.",
+      "source_sha256": "be819a8a0668e6522ef74e680beb193ce644ee27ff6e2eaf28cc308bcaf1231f",
+      "source_path": "skills/observability/k8s-investigation/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3706cfb1154a2ae645662ae642bab441fbc819aaa10c4a3b55e6d468d1341169": {
+      "description_zh": "基于Elastic已采集资料分析LLM与智能体延迟、错误、令牌成本、响应质量、护栏和工具调用链。",
+      "source": "Answer questions about LLM and agentic-application behavior from data already ingested into Elastic: latency and error rate, token and cost utilization, response quality and guardrail events, and agentic call-chain orchestration. Use when the user asks about LLM monitoring, GenAI observability, token spend or AI cost, model latency, prompt or guardrail failures, or how an agent's tool-call chain executed.",
+      "source_sha256": "3706cfb1154a2ae645662ae642bab441fbc819aaa10c4a3b55e6d468d1341169",
+      "source_path": "skills/observability/llm-obs/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f05fc8b92fd38075b022d8cd0d79483a9190b8937424f7aab91d54f783816aa0": {
+      "description_zh": "用EDOT为应用接入Elastic可观测性，按语言运行时替换经典APM、配置OTLP，并用ES|QL验证指定服务的追踪、指标和日志实际到达。",
+      "source": "Onboard an application into Elastic Observability with the Elastic Distribution of OpenTelemetry (EDOT): route on language and runtime, detect and replace a classic Elastic APM agent, apply the required OTLP configuration, and then verify with ES|QL that traces, metrics, and logs actually arrive under the expected service name. Use when adding observability to a service, migrating off the classic Elastic APM agent, or debugging why an instrumented service is not showing up in Elastic.",
+      "source_sha256": "f05fc8b92fd38075b022d8cd0d79483a9190b8937424f7aab91d54f783816aa0",
+      "source_path": "skills/observability/onboarding/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9346417596e41c36ca61adf0fa33787210d6f019cba704a98098b97fb4ef544e": {
+      "description_zh": "设计并维护Elastic服务可靠性目标，选择SLI、目标、窗口与预算，通过Kibana管理SLO和燃尽告警，并判断阈值、异常或合成监控是否更适用。",
+      "source": "Design and operate service reliability targets in Elastic Observability: choose an SLI type and a defensible target, pick a time window and budgeting method, create and maintain SLOs through the Kibana API, attach burn-rate alert rules, and decide when an SLO is the wrong instrument and a threshold rule, anomaly job, or synthetics monitor is right. Use when defining or reviewing SLOs and error budgets, tuning burn-rate alerting, reducing alert noise, or setting up availability monitoring for a user-facing endpoint.",
+      "source_sha256": "9346417596e41c36ca61adf0fa33787210d6f019cba704a98098b97fb4ef544e",
+      "source_path": "skills/observability/service-reliability/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c2e5294195a5e1bdb2d9d9a51e3bef2c554a8ea1ba589822915e6e2270bae4b": {
+      "description_zh": "端到端调查服务降级，核对SLO、告警、异常、吞吐延迟错误、依赖和基础设施，再定位解释故障的日志，提供对应APM或OTel查询。",
+      "source": "Triage a degraded or suspect service end to end: read SLO status and burn rate, check active alerting rules and ML anomalies, measure throughput, latency, and error rate, assess dependency health and infrastructure saturation, and funnel logs down to the failures that explain it. Use when someone asks whether a service is healthy, why it is slow or erroring, what is in its logs, or which attribute distinguishes the requests that are failing. Also use when someone asks for the query behind any of those signals — throughput, latency percentiles, error rate, dependency health, or log volume — over APM/OTel traces, metrics, or logs.",
+      "source_sha256": "4c2e5294195a5e1bdb2d9d9a51e3bef2c554a8ea1ba589822915e6e2270bae4b",
+      "source_path": "skills/observability/sre-triage/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c615fac0ebe767951b2f0269f36ee13e9910e8a0cb5aa8d239b03066742e4c5": {
+      "description_zh": "分流Elastic Security告警，收集背景、分类威胁、建立案件并确认告警，支持SOC调查。",
+      "source": "Triage Elastic Security alerts — gather context, classify threats, create cases, and acknowledge. Use when triaging alerts, performing SOC analysis, or investigating detections.",
+      "source_sha256": "8c615fac0ebe767951b2f0269f36ee13e9910e8a0cb5aa8d239b03066742e4c5",
+      "source_path": "skills/security/alert-triage/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f63e357b77aa7ec8cf74a68f932e336bf2772953420cc195652ddac159269130": {
+      "description_zh": "通过Kibana Cases API创建、搜索、更新SOC案件，关联告警并添加调查记录。",
+      "source": "Create, search, update, and manage SOC cases via the Kibana Cases API. Use when tracking incidents, linking alerts to cases, adding investigation notes, or managing triage output.",
+      "source_sha256": "f63e357b77aa7ec8cf74a68f932e336bf2772953420cc195652ddac159269130",
+      "source_path": "skills/security/case-management/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9f74aa37f2b6e055cdb03cf2356e845f8f70dcfac93d6613365b43c4d2eabd7a": {
+      "description_zh": "创建和调优Elastic Security检测规则，处理误报、例外、新覆盖与噪声，管理SIEM和端点规则。",
+      "source": "Create, tune, and manage Elastic Security detection rules (SIEM and Endpoint). Use for false positives, exceptions, new coverage, noisy rules, or rule management via Kibana API.",
+      "source_sha256": "9f74aa37f2b6e055cdb03cf2356e845f8f70dcfac93d6613365b43c4d2eabd7a",
+      "source_path": "skills/security/detection-rule-management/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fedc8ad26585b2601aa35f497c6d9c736f460bbafb55a3a7c55a756c171d9a30": {
+      "description_zh": "为Elastic Security生成样例安全事件、攻击情景和合成告警，用于演示、仪表板、规则测试及PoC。",
+      "source": "Generate sample security events, attack scenarios, and synthetic alerts for Elastic Security. Use when demoing, populating dashboards, testing detection rules, or setting up a POC.",
+      "source_sha256": "fedc8ad26585b2601aa35f497c6d9c736f460bbafb55a3a7c55a756c171d9a30",
+      "source_path": "skills/security/generate-security-sample-data/SKILL.md",
+      "package_sha256": "49bf5eb4239bf858d60bd9cf86841aa290e462df66ebde409b46cb2e1785d748",
+      "source_package": "Elastic-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c1cb23c7ae3feaf126ab8326a2f79152b0856c8eda97e22dfd2f17766aea487": {
+      "description_zh": "通过Claude Code可用Elastic工具检查集群和索引健康。",
+      "source": "Review cluster and index health using the Elastic tools exposed to Claude Code.",
+      "source_sha256": "4c1cb23c7ae3feaf126ab8326a2f79152b0856c8eda97e22dfd2f17766aea487",
+      "source_path": "skills/cluster-health/SKILL.md",
+      "package_sha256": "5b4ddca26ed14416ce0decefe11d6872b694c9d1b0a7eb981694b579f2224b40",
+      "source_package": "elastic-sense-1.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27164288a6289ea616362551e158172eccdb433490181e801a2f8912a5132044": {
+      "description_zh": "依据证据谨慎调查Elasticsearch中的应用或平台错误。",
+      "source": "Investigate application or platform errors in Elasticsearch data with a cautious, evidence-first workflow.",
+      "source_sha256": "27164288a6289ea616362551e158172eccdb433490181e801a2f8912a5132044",
+      "source_path": "skills/error-investigation/SKILL.md",
+      "package_sha256": "5b4ddca26ed14416ce0decefe11d6872b694c9d1b0a7eb981694b579f2224b40",
+      "source_package": "elastic-sense-1.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "939de4974ecce0c729eec4d7393169188742e933d6f5c1829c20e11439bb9938": {
+      "description_zh": "分析Elasticsearch日志，给出简明摘要、明确过滤条件和实际后续步骤。",
+      "source": "Analyze Elasticsearch log data with concise summaries, clear filters, and practical follow-up steps.",
+      "source_sha256": "939de4974ecce0c729eec4d7393169188742e933d6f5c1829c20e11439bb9938",
+      "source_path": "skills/log-analysis/SKILL.md",
+      "package_sha256": "5b4ddca26ed14416ce0decefe11d6872b694c9d1b0a7eb981694b579f2224b40",
+      "source_package": "elastic-sense-1.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31d70e69dfb6e6530ebb44b02e34acb485455423576d081fe4facfa563361a27": {
+      "description_zh": "在可用工具约束内调查Elasticsearch搜索与索引性能问题。",
+      "source": "Investigate search and indexing performance issues with a practical, tool-constrained workflow.",
+      "source_sha256": "31d70e69dfb6e6530ebb44b02e34acb485455423576d081fe4facfa563361a27",
+      "source_path": "skills/performance-monitoring/SKILL.md",
+      "package_sha256": "5b4ddca26ed14416ce0decefe11d6872b694c9d1b0a7eb981694b579f2224b40",
+      "source_package": "elastic-sense-1.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ebd17132bc5f06f8e128890f32c6ee7ef80a0de843b84dc3634e42f26b002883": {
+      "description_zh": "为elixir-expert-lsp插件安装Expert语言服务二进制。",
+      "source": "Install the Expert LSP binary for the elixir-expert-lsp plugin",
+      "source_sha256": "ebd17132bc5f06f8e128890f32c6ee7ef80a0de843b84dc3634e42f26b002883",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "8420feab3b0899a9488751b5dcc79178d5dd083e4740175c35d227a7336ab363",
+      "source_package": "elixir-expert-lsp-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df66ea2a1b0b0fa1f70a5a3b09a7fe60ea1063180621b86ed5c442448a228662": {
+      "description_zh": "使用Emailr查看邮件工作区资料。",
+      "source": "Use Emailr to review email workspace data.",
+      "source_sha256": "df66ea2a1b0b0fa1f70a5a3b09a7fe60ea1063180621b86ed5c442448a228662",
+      "source_path": "skills/emailr/SKILL.md",
+      "package_sha256": "8c6f5b6ff887d764e809383d67edfaf1588b53ed22413fe1b783a0e3cfc80aa3",
+      "source_package": "Emailr-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "36d2dd8e457008337dfa944c1cc14172c61b0063149c5836638489b9a2ecb3eb": {
+      "description_zh": "通过emem签名账本协调智能体，查找标准、离线验证消息作者身份、声明自身并以令牌交接事实，支持无共享数据库或共享凭据协作。",
+      "source": "Join the agent-to-agent collaboration running on emem's signed ledger — find the standard, verify another agent's message offline (who wrote it, not just that it was stored), announce yourself, and hand facts to other agents as tokens. Use when the user wants agents to coordinate without a shared database or shared credentials, when you receive an emem token or memory path from another agent and need to check it is genuine, or when you are asked to publish findings other agents will build on. No human, no account, no key exchanged out of band.",
+      "source_sha256": "36d2dd8e457008337dfa944c1cc14172c61b0063149c5836638489b9a2ecb3eb",
+      "source_path": "skills/emem-a2a-collaboration/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59edc26115fba572adcbcda46d0bfdf29bc4d0829ab55cc43144bbadfd58a363": {
+      "description_zh": "把多个读取结果组成签名证据包，生成可解析为相同字节的引用，保存可验证作者的持久笔记并读取其他智能体交接，用于跨会话和信任边界。",
+      "source": "Hand work to another agent, another session, or your own future context so it arrives as checkable evidence rather than as prose someone has to trust. Compose several readings into one signed bundle, mint citation handles the receiver resolves to byte-identical bytes, write a durable note in your own namespace that another key can verify you wrote, and read what other agents left for you. Use at any trust boundary: a multi-agent pipeline, a handoff between sessions, publishing findings another team will build on, or receiving a token or memory path from a stranger.",
+      "source_sha256": "59edc26115fba572adcbcda46d0bfdf29bc4d0829ab55cc43144bbadfd58a363",
+      "source_path": "skills/emem-agent-handoff/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a60e18c3e11c4a7e2859b5ef7f136065d26d72a6fb20d783b7f0e2912f0cc69e": {
+      "description_zh": "从emem获取区域或时间上的原生分辨率栅格场，返回内容寻址网格、签名推导记录和raster或cube令牌，支持场景分析与可复现像素导出，公开读取无需认证。",
+      "source": "Get a native-resolution raster field over an area from emem, or a field over time, as a signed, verifiable artifact rather than a set of per-cell scalars. Use when the user needs the actual grid of values over an area of interest (a world model input, an NDVI/band drape, change analysis over a scene window, exportable pixels a third party can re-derive) rather than one number at one point. Returns content-addressed grid artifacts plus a signed derivation record and an emem:raster: or emem:cube: token. Reads are public — no auth required.",
+      "source_sha256": "a60e18c3e11c4a7e2859b5ef7f136065d26d72a6fb20d783b7f0e2912f0cc69e",
+      "source_path": "skills/emem-field-tokens/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ece701e3e63791366c19c967e4263fa909cd3740159649b33b74c4979e4ec3a9": {
+      "description_zh": "依据存储的128维表面纹理向量查找地球相似地点；原说明称2026年9月15日该向量波段已退役、索引冻结，须先查覆盖，不能为缺失地点新建向量。",
+      "source": "Return the top-K most similar places on Earth by cosine over a stored 128-D surface-texture embedding. Use when the user asks for analogues, look-alikes or counterparts (\"find cities like Bangalore\", \"where else looks like the Sundarbans\"). IMPORTANT, changed 2026-09-15: the embedding band is RETIRED on emem.dev — the index is frozen, no new vectors are computed, and a cell without one cannot get one. The skill tells you how to check coverage before promising an answer.",
+      "source_sha256": "ece701e3e63791366c19c967e4263fa909cd3740159649b33b74c4979e4ec3a9",
+      "source_path": "skills/emem-find-similar/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0068cc8165772aa88b491aff7843bd8f28a600c4f7b088b67a2923e99d47193": {
+      "description_zh": "将地点名称解析为emem cell64，读取天气、植被、高程或土壤等签名地球观测事实，附内容寻址与可离线验证凭据，公开读取无需认证。",
+      "source": "Resolve a free-form place name to an emem cell64 and recall signed Earth-observation facts at that location. Use when the user asks about current weather, vegetation index, elevation, soil properties, or any other geospatial measurement at a named place (\"what's the temperature in Bengaluru\", \"how high is Denali\", \"what's the NDVI in the Sundarbans\"). Returns content-addressed facts with Ed25519 receipts that can be verified offline. Reads are public — no auth required.",
+      "source_sha256": "e0068cc8165772aa88b491aff7843bd8f28a600c4f7b088b67a2923e99d47193",
+      "source_path": "skills/emem-locate-and-recall/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ef60f05f55695c291d56e4c909550687f7473b762f1a6e7c7e9561c272cf50c": {
+      "description_zh": "按用户经纬度多边形读取每个格子的签名地球观测事实和摘要，支持区域NDVI、降水与高程，各格子有独立凭据。",
+      "source": "Recall signed Earth-observation facts at every cell inside a user-supplied polygon. Use when the user asks about an extent rather than a point — \"what's the average NDVI inside this watershed\", \"show me precipitation across the Western Ghats\", \"what's the elevation profile of this region\". Accepts a polygon as [lng, lat] coordinate pairs and returns per-cell facts plus a summary. Each cell carries its own Ed25519 receipt.",
+      "source_sha256": "4ef60f05f55695c291d56e4c909550687f7473b762f1a6e7c7e9561c272cf50c",
+      "source_path": "skills/emem-recall-polygon/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e711bc2622d10bd2ceb907b750f99ec15595740292a73223d3d7a5a20bd03e6a": {
+      "description_zh": "用字节一致的签名引用核对跨智能体或会话传播数字，判断声明与原读数一致、数值变化原因及资料内矛盾，减少同词异义和读数漂移。",
+      "source": "Stop two agents, or one agent across two sessions, from silently meaning different things by the same words or reporting different numbers for the same reading. Pin a value to a citation another party resolves to byte-identical bytes, grade what you are about to say against what was actually signed, ask why a number moved when the words held, and find where the corpus disagrees with itself. Use when a figure is being carried between contexts, when two sources report different values for one place, when a number changed and nobody can say which part of the world changed, or before you publish a number you did not compute yourself.",
+      "source_sha256": "e711bc2622d10bd2ceb907b750f99ec15595740292a73223d3d7a5a20bd03e6a",
+      "source_path": "skills/emem-referential-drift/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "66ba8aaff4bd10c023b1abcf48bd34721bf3aa574afbf0a243144e4704726235": {
+      "description_zh": "为对象获取或创建规范身份，把模糊称呼对应已注册对象并证明同名异称关系，支持智能体交接；公开读可用，写共享身份需密钥与声明端点。",
+      "source": "Make two agents refer to the same object. Mint or fetch a canonical identity for a thing (a field, a corridor, an asset, a place-as-object), converge a fuzzy phrasing onto an identity already registered, and attest that two phrasings denote one object. Use when several agents or several documents call the same thing by different names and the disagreement is about words rather than measurements, or before handing another agent a finding it must be able to look up. Reads are public; writing to the shared identity space needs a key and a declared endpoint (tier T3).",
+      "source_sha256": "66ba8aaff4bd10c023b1abcf48bd34721bf3aa574afbf0a243144e4704726235",
+      "source_path": "skills/emem-shared-identity/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0930f4802f5694937f785457aecbadd80a43f331637ad8bc32b3c685dc018270": {
+      "description_zh": "用本地Ed25519密钥向emem保存可核验作者的签名笔记或记忆，登记可重算推导与血缘；无需注册或API密钥，读取公开，写入需签名。",
+      "source": "Write to emem with your own ed25519 key — save a signed note or memory another agent can verify, or register a derivation over signed facts that the responder will recompute. Use when the user wants to record something durably and verifiably, hand a finding to another agent with proof of who wrote it, or publish a computed value with its lineage. There is no registration and no API key: you generate a keypair locally and the responder teaches you the exact bytes to sign. Reads are public; only writes need the key.",
+      "source_sha256": "0930f4802f5694937f785457aecbadd80a43f331637ad8bc32b3c685dc018270",
+      "source_path": "skills/emem-sign-and-attest/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2d1a135bb8bf3775aaa182df9a5fcd81b6372ad90cfe71babd26973347f3316": {
+      "description_zh": "发送或发布前解析草稿全部emem引用，核对是否支持对应句子，返回机器可读批准或拒绝原因，特别检查跨上下文带入的数字。",
+      "source": "Check a draft before you send it. Resolve every emem citation in the text, confirm each one actually supports the sentence around it, and get an allow or deny with a machine-readable reason. Use before publishing any answer that cites emem, before handing a report to a user or another agent, and whenever a number in your draft came from earlier in the conversation rather than from a token you just resolved.",
+      "source_sha256": "d2d1a135bb8bf3775aaa182df9a5fcd81b6372ad90cfe71babd26973347f3316",
+      "source_path": "skills/emem-verify-before-publish/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cd26b76487c5c1f6db2535185b08726734e56d58bbed528ba4e608a46a7aa0d": {
+      "description_zh": "离线重建规范BLAKE3原像并校验emem凭据Ed25519签名，确认事实来源真实性，无需再次联系响应方。",
+      "source": "Verify an emem receipt's Ed25519 signature offline by rebuilding the canonical BLAKE3 preimage and checking against the responder's published pubkey. Use when the user pastes a receipt JSON and asks whether it's authentic, when an LLM needs to prove a fact wasn't fabricated, or when caching emem facts and wanting to confirm origin later. Runs without re-contacting the responder.",
+      "source_sha256": "5cd26b76487c5c1f6db2535185b08726734e56d58bbed528ba4e608a46a7aa0d",
+      "source_path": "skills/emem-verify-receipt/SKILL.md",
+      "package_sha256": "ce52ca186a0ff175a3c084f3fbe369ba12f6bfa98fcbcd8f3804adb3e7a6e5bc",
+      "source_package": "emem-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "808243aa1bfe400e7ff475935964d9e8c97972ceaa640518ab08c55a7393e2c6": {
+      "description_zh": "依据手册与终止雇佣备忘录初始配置劳动法实践，询问员工所在州与国家，建立对应司法辖区的升级表，也支持重做或检查集成。",
+      "source": "Cold-start setup — learns your jurisdictional footprint and escalation rules from your handbook and termination memos. Asks which states and countries have employees, reads seed documents, and builds a jurisdiction-aware escalation table. Use on fresh install, when CLAUDE.md still has [PLACEHOLDER] markers, or when re-running with --redo or --check-integrations.",
+      "source_sha256": "808243aa1bfe400e7ff475935964d9e8c97972ceaa640518ab08c55a7393e2c6",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba58cd96d618072cf3e56517b67b92f1dd3ee9cf433e78b7fe2325165642d9b8": {
+      "description_zh": "逐项定制劳动法实践档案，调整司法辖区、风险、升级联系人、招聘终止审查、手册立场、调查与工作区，无需重做完整访谈。",
+      "source": "Guided customization of your employment practice profile — change one thing without re-running the whole cold-start interview. Adjust jurisdictional footprint, risk posture, escalation contacts, hiring review rules, termination review rules, handbook positions, investigation preferences, or matter workspace paths. Use when the user says \"change my [thing]\", \"add a jurisdiction\", \"update my profile\", \"edit my config\", or \"customize\".",
+      "source_sha256": "ba58cd96d618072cf3e56517b67b92f1dd3ee9cf433e78b7fe2325165642d9b8",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "321fdf8eb0fa67272101be3589e463bae418252aa02031caab6a58f105337f6e": {
+      "description_zh": "为新国家国际招聘启动规划，收集需求、比较名义雇主与设实体、起草跨职能问题、识别国家特殊事项并建立持久跟踪。",
+      "source": "Kick off international expansion planning for a new country — gathers intake, runs EOR vs. entity framing, drafts cross-functional questions, surfaces country-specific flags, and creates a persistent tracker. Use when someone says \"we're hiring in [country]\", \"expansion to [country]\", or \"first hire in [country]\".",
+      "source_sha256": "321fdf8eb0fa67272101be3589e463bae418252aa02031caab6a58f105337f6e",
+      "source_path": "skills/expansion-kickoff/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cabf5c73fc084434f6b82d627d8918530d80a73af37809ebca5d0d6d8fcd6d3e": {
+      "description_zh": "更新进行中的国际扩展状态，重新判断已解除阻碍、逾期事项与下一步优先级。",
+      "source": "Update the status of an in-progress international expansion project — recalculates what is now unblocked, flags anything overdue, and surfaces the next priorities. Use when work has happened since the last session and the expansion tracker needs to reflect the current state.",
+      "source_sha256": "cabf5c73fc084434f6b82d627d8918530d80a73af37809ebca5d0d6d8fcd6d3e",
+      "source_path": "skills/expansion-update/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1167ef79629a59b10aa0d6eb467f46dcdf1110e0d40a53f0fc22f580f3c2380d": {
+      "description_zh": "比较拟议员工手册变化与当前版本，识别连锁影响和各州补充条款变化。",
+      "source": "Diff a proposed handbook change against the current version, flag ripple effects and state supplement impacts. Use when user says \"update the handbook\", \"add this to the handbook\", \"handbook change\", or has a policy ready for insertion.",
+      "source_sha256": "1167ef79629a59b10aa0d6eb467f46dcdf1110e0d40a53f0fc22f580f3c2380d",
+      "source_path": "skills/handbook-updates/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bec391481cbfed663742728b4329c878e938c47690fa21c6f9b4349f099ae031": {
+      "description_zh": "审查录用函与限制性约定，按每次招聘研究司法辖区的竞业、薪酬透明、薪资历史和豁免规则，不沿用存储规则。",
+      "source": "Review an offer letter and any restrictive covenants — jurisdiction check included. Substantive rules (covenant enforceability, pay-transparency, salary-history limits, exemption criteria) are researched per hire, not stored. Use when the user says \"review this offer\", \"can we use a non-compete here\", \"check this offer letter\", \"hiring in [state]\", or attaches an offer.",
+      "source_sha256": "bec391481cbfed663742728b4329c878e938c47690fa21c6f9b4349f099ae031",
+      "source_path": "skills/hiring-review/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40d04c5bee490b510dfd0ac13bafd8c1a6a76deab5d0a7a1baaa4d1d8ff09535": {
+      "description_zh": "作为内部调查共享框架，管理受特权保护日志、文档重点提取、覆盖跟踪、问答、备忘录和受众摘要，由调查命令加载，不直接调用。",
+      "source": "Reference: shared framework for managing internal investigations from intake through final memo — privileged investigation log, document processing with needle-finding, source coverage tracking, Q&A against the log, memo drafting, and audience summaries. Loaded by /investigation-open, /investigation-add, /investigation-query, /investigation-memo, and /investigation-summary; not invoked directly.",
+      "source_sha256": "40d04c5bee490b510dfd0ac13bafd8c1a6a76deab5d0a7a1baaa4d1d8ff09535",
+      "source_path": "skills/internal-investigation/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc7a5781585b78c92a61fc24c16e091c55c2c7faee2d760a756b517f84b58398": {
+      "description_zh": "作为国际招聘实施规划参考，比较名义雇主与实体、识别税务财务HR事项、准备外部律师简报并维护缺口跟踪，由扩展命令加载。",
+      "source": "Reference: implementation-planning framework for international hiring — EOR vs. entity decision framing, cross-functional triggers for tax/finance/HR, structured outside-counsel briefing requests, and a persistent gap tracker. Loaded by /expansion-kickoff and /expansion-update; not invoked directly.",
+      "source_sha256": "cc7a5781585b78c92a61fc24c16e091c55c2c7faee2d760a756b517f84b58398",
+      "source_path": "skills/international-expansion/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b461e07dd9fbf49f9e8870670c3c7b7ab41da9c00d231dd7cb7079fea3a65e6b": {
+      "description_zh": "为已开启内部调查加入文档、访谈和观察，按既定提取标准批处理、标出重要事项并记录全部审阅范围。",
+      "source": "Add data to an open investigation — documents, interview notes, or observations. Processes batches against the documented pull criteria, surfaces significant items, and logs everything reviewed for coverage verification. Use when new evidence, interview notes, or document productions come in for an open investigation.",
+      "source_sha256": "b461e07dd9fbf49f9e8870670c3c7b7ab41da9c00d231dd7cb7079fea3a65e6b",
+      "source_path": "skills/investigation-add/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88100569245c466fc3fe28fb6fcee89caeaca7dc820cae094fda438ab1a3a249": {
+      "description_zh": "根据调查日志起草或更新受特权保护的调查备忘录，适用于首次成稿或新证据更新。",
+      "source": "Draft or update the privileged investigation memo from the investigation log. Use when an investigation is far enough along to write the first memo cut, or when new data has been added and the existing draft needs updating.",
+      "source_sha256": "88100569245c466fc3fe28fb6fcee89caeaca7dc820cae094fda438ab1a3a249",
+      "source_path": "skills/investigation-memo/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58f19bf7b7fc05ee6b4bae07ed42d4d4b3efdf31e7a78e6bea1fe970f6dd3d2a": {
+      "description_zh": "开启内部调查法律事项，收集投诉与指控背景、生成来源清单并建立持久调查日志。",
+      "source": "Open a new internal investigation matter — runs intake, generates the sources checklist, and creates the persistent investigation log. Use when a complaint or allegation comes in and the attorney needs to stand up a privileged investigation workspace.",
+      "source_sha256": "58f19bf7b7fc05ee6b4bae07ed42d4d4b3efdf31e7a78e6bea1fe970f6dd3d2a",
+      "source_path": "skills/investigation-open/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2de486a067fb44d8d464346e0770f60e5da8c97e36c19e01a04d58e6df22a47": {
+      "description_zh": "查询开放调查日志的证词、冲突、缺口及最强证据，帮助律师无需重读全部记录。",
+      "source": "Ask questions against an open investigation log — what witnesses said, where accounts conflict, what gaps exist, what the strongest evidence is on each issue. Use when the attorney needs to query the investigation record without re-reading every entry.",
+      "source_sha256": "b2de486a067fb44d8d464346e0770f60e5da8c97e36c19e01a04d58e6df22a47",
+      "source_path": "skills/investigation-query/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ba50a7ebe59346d37adb18fd432835cc92268da5a9c56b2037a2a9fb6f4c7f1": {
+      "description_zh": "从受特权保护调查备忘录起草HR、管理层或外部律师专用摘要，控制受众所需信息。",
+      "source": "Draft an audience-specific summary from the privileged investigation memo — HR, leadership, or outside counsel versions. Use when an investigation memo needs to be communicated to an audience that should not see the full privileged work product.",
+      "source_sha256": "3ba50a7ebe59346d37adb18fd432835cc92268da5a9c56b2037a2a9fb6f4c7f1",
+      "source_path": "skills/investigation-summary/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92449276611546824b91648a1d9aed8e4b9e022a7110ec8defd6a0688fe48d52": {
+      "description_zh": "检查开放休假中的指定、证明与期满期限，仅列需要采取行动的事项并说明原因，支持每周提醒。",
+      "source": "Check open leaves for deadline alerts and required decisions. Surfaces only the leaves that require an action and explains why — not a status board. Use weekly, or whenever the attorney needs to know which leaves have upcoming designation, certification, or exhaustion deadlines.",
+      "source_sha256": "92449276611546824b91648a1d9aed8e4b9e022a7110ec8defd6a0688fe48d52",
+      "source_path": "skills/leave-tracker/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "861079203fab2b8d155e598cbd7743e9d71464ca7352fda0e8c912c754d7e326": {
+      "description_zh": "以最少必要资料把员工新休假加入登记，从第一天跟踪指定、证明与期满时钟。",
+      "source": "Add a new leave to the leave register with the minimum information needed to start tracking deadlines. Use when an employee goes on leave and you want the tracker to watch designation, certification, and exhaustion clocks from day one.",
+      "source_sha256": "861079203fab2b8d155e598cbd7743e9d71464ca7352fda0e8c912c754d7e326",
+      "source_path": "skills/log-leave/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0f4fe3de5bb2a8b56dea0cb6e24c5e660a954326b48b5b18e9a2427493145ab": {
+      "description_zh": "管理多客户劳动法事项工作区的创建、列表、切换、关闭或脱离，保持客户上下文隔离。",
+      "source": "Manage matter workspaces — new, list, switch, close, or detach (practice- level). Creates, lists, switches, closes, and detaches the active matter so context from one client engagement never leaks into another. Use when a multi-client practitioner says \"new matter\", \"switch matter\", \"list my matters\", \"close this matter\", or needs to manage which matter is active.",
+      "source_sha256": "c0f4fe3de5bb2a8b56dea0cb6e24c5e660a954326b48b5b18e9a2427493145ab",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60d94c9f70c3440561498df3d9ab0b6eaaa35bfea85e42f9ee1b4c6fd81de13b": {
+      "description_zh": "起草劳动雇佣政策，并为司法辖区规则差异添加各州补充。",
+      "source": "Draft an employment policy with state supplements where law differs across the jurisdictional footprint. Use when the user says \"draft a [topic] policy\", \"we need a policy on\", \"update our [topic] policy\", or names a policy gap.",
+      "source_sha256": "60d94c9f70c3440561498df3d9ab0b6eaaa35bfea85e42f9ee1b4c6fd81de13b",
+      "source_path": "skills/policy-drafting/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f1ff365c9f2b34ba01e7355ad9b9461965b057833eb600ab34e1ec8c4cbfe4e": {
+      "description_zh": "审查终止雇佣的高风险、遣散与豁免及最终工资时间，每次研究辖区规则和对价期限，不使用存储旧规则。",
+      "source": "Termination review — high-risk flag detection, severance + release, and final pay timing by jurisdiction. Jurisdiction-specific rules and release consideration periods are researched per review, not stored. Use when the user says \"reviewing a termination\", \"can we fire this person\", \"term review\", or describes a termination scenario.",
+      "source_sha256": "1f1ff365c9f2b34ba01e7355ad9b9461965b057833eb600ab34e1ec8c4cbfe4e",
+      "source_path": "skills/termination-review/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09d50d674fe564495e85a2521acae05a5f75e60388b66142d63c61691af7fdc7": {
+      "description_zh": "按具体州或国家研究并引用劳动工资工时规则，回答分类、加班、餐休、休假及最终工资，不凭记忆断言。",
+      "source": "Jurisdiction-aware wage/hour and employment Q&A — classification, overtime, meal/rest breaks, leave, final pay — answered for the specific state/country with the controlling rule researched and cited rather than stated from memory. Use when the user asks any employment law question, or says \"what's the rule in [state]\", \"is this exempt\", \"do we have to pay overtime for\", or \"can we classify this as\".",
+      "source_sha256": "09d50d674fe564495e85a2521acae05a5f75e60388b66142d63c61691af7fdc7",
+      "source_path": "skills/wage-hour-qa/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26f31e9a1e08939f27902a81452894abdb0b92050b50ea3bad8b95511180a045": {
+      "description_zh": "依据适用辖区测试评估拟议员工、独立承包、临时工或供应商安排，指出事实与预期分类的差距，仅用于前瞻方案。",
+      "source": "Classify a proposed worker engagement — employee, IC, temp, or vendor — by running the applicable jurisdiction tests and flagging misclassification gaps between the intended arrangement and what the facts actually support. Prospective use only. Use when someone says \"we want to bring on a contractor\", \"is this a vendor or a temp\", \"how should we classify this person\", or describes a proposed working arrangement.",
+      "source_sha256": "26f31e9a1e08939f27902a81452894abdb0b92050b50ea3bad8b95511180a045",
+      "source_path": "skills/worker-classification/SKILL.md",
+      "package_sha256": "4bab53fdc9575cf24a9a93ad4a8bf946d8ac8c6bb341597410f20892418ebea4",
+      "source_package": "employment-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a4e77ccb4874d67c6c357d082b142473c652aa3af6e765af8262d528e26692b": {
+      "description_zh": "根据连接的账户、商机、联系人、活动、会议、文档和公开资料生成有来源支撑的GTM账户简报。",
+      "source": "Produce a source-backed account brief for GTM work. Use when the user asks for an account overview, account brief, account research, account prep, account strategy snapshot, or a concise customer/prospect briefing grounded in connected account, opportunity, contact, activity, meeting, call, document, and public context.",
+      "source_sha256": "2a4e77ccb4874d67c6c357d082b142473c652aa3af6e765af8262d528e26692b",
+      "source_path": "skills/account-brief/SKILL.md",
+      "package_sha256": "99b394758df4cd33b1bfe9dd1ffa1c522145c9e9801033d62f214cbdcdab48d3",
+      "source_package": "Endgame-0.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8bdd001042b89eb74a757ddb2fe1c62b05186b4628eb63fae896825a5eecb597": {
+      "description_zh": "依据转录、录音、摘要、CRM与账户背景审查销售或客户通话，分析探索质量、异议、痛点、方法、话术和下一步。",
+      "source": "Review customer, prospect, partner, renewal, implementation, support, or sales calls using transcripts, recordings, summaries, CRM, and account context. Use when the user asks for call review, call coaching, transcript analysis, discovery quality, objections, customer pain, next steps, sales methodology inspection, messaging review, or what happened on a call.",
+      "source_sha256": "8bdd001042b89eb74a757ddb2fe1c62b05186b4628eb63fae896825a5eecb597",
+      "source_path": "skills/call-review/SKILL.md",
+      "package_sha256": "99b394758df4cd33b1bfe9dd1ffa1c522145c9e9801033d62f214cbdcdab48d3",
+      "source_package": "Endgame-0.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "740f6994ec41a04432b873aa72ef02f8e5d704be13a8c9704d401f195635c8bf": {
+      "description_zh": "寻找、评估并整理有来源的客户引语、案例、参考、成交及反馈证据，用于GTM演示、邮件、账户计划、交易审查和异议回应。",
+      "source": "Find, evaluate, and package source-backed customer evidence for GTM work. Use when the user asks for customer proof, examples, quotes, references, case-study material, win evidence, product feedback, voice-of-customer snippets, proof points, objection support, competitive evidence, or evidence for a deck, email, account plan, deal review, or enablement artifact.",
+      "source_sha256": "740f6994ec41a04432b873aa72ef02f8e5d704be13a8c9704d401f195635c8bf",
+      "source_path": "skills/customer-evidence/SKILL.md",
+      "package_sha256": "99b394758df4cd33b1bfe9dd1ffa1c522145c9e9801033d62f214cbdcdab48d3",
+      "source_package": "Endgame-0.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "667ba33caa5b73d06a3c4212017ac6cbc90e68fe76d975707d1ea0e626856cef": {
+      "description_zh": "依据客户或账户会议、转录与录音生成有来源的会后摘要、邮件、行动项、CRM或Slack更新及双方行动计划。",
+      "source": "Generate source-backed follow-up after customer, prospect, renewal, implementation, partner, or internal account meetings. Use when the user asks for a recap, follow-up email, action items, CRM update, Slack update, mutual action plan, next-step plan, or notes from a meeting, transcript, call recording, or meeting summary.",
+      "source_sha256": "667ba33caa5b73d06a3c4212017ac6cbc90e68fe76d975707d1ea0e626856cef",
+      "source_path": "skills/meeting-follow-up/SKILL.md",
+      "package_sha256": "99b394758df4cd33b1bfe9dd1ffa1c522145c9e9801033d62f214cbdcdab48d3",
+      "source_package": "Endgame-0.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c248a892b8e7336790d22b5da287738b1254b2340abba4a797a86f04a2bfab2": {
+      "description_zh": "结合日历、CRM、会议、文档、利益相关方与账户背景准备GTM会前资料、参会人、议程、探索问题和话术。",
+      "source": "Prepare a GTM user for a customer, prospect, partner, renewal, implementation, or internal account meeting. Use when the user asks to prep for a meeting, get a pre-read, identify attendees, draft an agenda, generate discovery questions, or produce talking points grounded in calendar, CRM, call, meeting, document, stakeholder, and account context.",
+      "source_sha256": "5c248a892b8e7336790d22b5da287738b1254b2340abba4a797a86f04a2bfab2",
+      "source_path": "skills/meeting-prep/SKILL.md",
+      "package_sha256": "99b394758df4cd33b1bfe9dd1ffa1c522145c9e9801033d62f214cbdcdab48d3",
+      "source_package": "Endgame-0.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a807b898ef3dc98f4c9a4e88be4231077419dbb35be1e61bf91069b81658c41f": {
+      "description_zh": "根据CRM、活动、会议、通话和账户资料审查各层级GTM管道、预测、交易及延期风险、成交计划与季度优先级。",
+      "source": "Review active GTM pipeline for reps, managers, teams, segments, regions, accounts, or time periods. Use when the user asks for pipeline review, forecast inspection, deal risk, slip risk, close plan review, priority accounts, quarter plan, manager inspection, or which deals need attention, grounded in connected CRM, activity, meeting, call, stakeholder, and account context.",
+      "source_sha256": "a807b898ef3dc98f4c9a4e88be4231077419dbb35be1e61bf91069b81658c41f",
+      "source_path": "skills/pipeline-review/SKILL.md",
+      "package_sha256": "99b394758df4cd33b1bfe9dd1ffa1c522145c9e9801033d62f214cbdcdab48d3",
+      "source_package": "Endgame-0.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5782a2b201fe70345cc38d2fddc4fb9c8826802060b72ed76b58ebd9b6c5d8b": {
+      "description_zh": "依据联系人、CRM角色、会议和通信建立或更新账户利益相关方地图，识别倡导者、经济买方及关系覆盖缺口，规划多方参与。",
+      "source": "Build or update a stakeholder map for an account, opportunity, renewal, implementation, buying committee, executive relationship, or deal team. Use when the user asks who is involved, who to engage, relationship coverage, champion or economic buyer gaps, power map, stakeholder plan, persona map, or threading strategy grounded in connected contacts, CRM roles, meetings, calls, communications, documents, and public context.",
+      "source_sha256": "a5782a2b201fe70345cc38d2fddc4fb9c8826802060b72ed76b58ebd9b6c5d8b",
+      "source_path": "skills/stakeholder-map/SKILL.md",
+      "package_sha256": "99b394758df4cd33b1bfe9dd1ffa1c522145c9e9801033d62f214cbdcdab48d3",
+      "source_package": "Endgame-0.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dbf22a1e84129c25545c863e2a0f8ecfb5c401dc3766d4e2100f81f46adf44c3": {
+      "description_zh": "创建或评估架构决策记录，比较技术、记录权衡与后果，审查系统提案或依据需求约束设计组件。",
+      "source": "Create or evaluate an architecture decision record (ADR). Use when choosing between technologies (e.g., Kafka vs SQS), documenting a design decision with trade-offs and consequences, reviewing a system design proposal, or designing a new component from requirements and constraints.",
+      "source_sha256": "dbf22a1e84129c25545c863e2a0f8ecfb5c401dc3766d4e2100f81f46adf44c3",
+      "source_path": "skills/architecture/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5217af7e826dbe8fc204ddb3292e5dfbd2b877d26c93faaf3ed6c88bf286b32": {
+      "description_zh": "审查PR或代码差异的安全、性能与正确性，检查N+1、注入、边界及错误处理遗漏。",
+      "source": "Review code changes for security, performance, and correctness. Trigger with a PR URL or diff, \"review this before I merge\", \"is this code safe?\", or when checking a change for N+1 queries, injection risks, missing edge cases, or error handling gaps.",
+      "source_sha256": "a5217af7e826dbe8fc204ddb3292e5dfbd2b877d26c93faaf3ed6c88bf286b32",
+      "source_path": "skills/code-review/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b425dc7e85e5d409cd1d13c4207dcec199b357b29435e99d93641f8db56300b": {
+      "description_zh": "按复现、隔离、诊断与修复开展调试，处理堆栈、部署后故障和测试生产环境差异。",
+      "source": "Structured debugging session — reproduce, isolate, diagnose, and fix. Trigger with an error message or stack trace, \"this works in staging but not prod\", \"something broke after the deploy\", or when behavior diverges from expected and the cause isn't obvious.",
+      "source_sha256": "2b425dc7e85e5d409cd1d13c4207dcec199b357b29435e99d93641f8db56300b",
+      "source_path": "skills/debug/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef79c34819d87bfb7e6f2aba4dedb215b2a461788d08c180f7a15ec8f2183203": {
+      "description_zh": "发布前核验CI、审批、迁移和功能开关，制定部署检查清单并预先记录回滚触发条件。",
+      "source": "Pre-deployment verification checklist. Use when about to ship a release, deploying a change with database migrations or feature flags, verifying CI status and approvals before going to production, or documenting rollback triggers ahead of time.",
+      "source_sha256": "ef79c34819d87bfb7e6f2aba4dedb215b2a461788d08c180f7a15ec8f2183203",
+      "source_path": "skills/deploy-checklist/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8bb11501c4aa4c634644a7324ee0c29099e9c2e0c5492472d040abdc06e47407": {
+      "description_zh": "编写维护README、API、架构、入职指南和操作手册等技术文档。",
+      "source": "Write and maintain technical documentation. Trigger with \"write docs for\", \"document this\", \"create a README\", \"write a runbook\", \"onboarding guide\", or when the user needs help with any form of technical writing — API docs, architecture docs, or operational runbooks.",
+      "source_sha256": "8bb11501c4aa4c634644a7324ee0c29099e9c2e0c5492472d040abdc06e47407",
+      "source_path": "skills/documentation/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a82085450a4521046e382cd9fc98db9ab4c5d079e8b5b3cba8267afe28d53e1c": {
+      "description_zh": "执行事故分流、沟通与无责复盘流程，评估告警严重度、生产故障并形成阶段状态。",
+      "source": "Run an incident response workflow — triage, communicate, and write postmortem. Trigger with \"we have an incident\", \"production is down\", an alert that needs severity assessment, a status update mid-incident, or when writing a blameless postmortem after resolution.",
+      "source_sha256": "a82085450a4521046e382cd9fc98db9ab4c5d079e8b5b3cba8267afe28d53e1c",
+      "source_path": "skills/incident-response/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ff44e16cfbecca4715ab739e03f5f0706c7fe790926336cd237375256207066": {
+      "description_zh": "从近期提交、PR和工单活动生成每日站会更新，按昨日、今日与阻碍组织可分享说明。",
+      "source": "Generate a standup update from recent activity. Use when preparing for daily standup, summarizing yesterday's commits and PRs and ticket moves, formatting work into yesterday/today/blockers, or structuring a few rough notes into a shareable update.",
+      "source_sha256": "9ff44e16cfbecca4715ab739e03f5f0706c7fe790926336cd237375256207066",
+      "source_path": "skills/standup/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "587fee4be1d77f7fcaf92be6fcf8080c0ea6c297a2819a3c578d1605bea50da3": {
+      "description_zh": "依据需求设计系统、服务与架构，明确API、数据模型和服务边界。",
+      "source": "Design systems, services, and architectures. Trigger with \"design a system for\", \"how should we architect\", \"system design for\", \"what's the right architecture for\", or when the user needs help with API design, data modeling, or service boundaries.",
+      "source_sha256": "587fee4be1d77f7fcaf92be6fcf8080c0ea6c297a2819a3c578d1605bea50da3",
+      "source_path": "skills/system-design/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5cae280bfa1f03ece5198c449b63f91701fac0f36fb11b1f66993c4bda8bc37": {
+      "description_zh": "识别、分类和排序技术债，分析代码健康、重构优先级与维护待办。",
+      "source": "Identify, categorize, and prioritize technical debt. Trigger with \"tech debt\", \"technical debt audit\", \"what should we refactor\", \"code health\", or when the user asks about code quality, refactoring priorities, or maintenance backlog.",
+      "source_sha256": "f5cae280bfa1f03ece5198c449b63f91701fac0f36fb11b1f66993c4bda8bc37",
+      "source_path": "skills/tech-debt/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0017a2a56c9bd599e9fe825c5e5dd100b2d28e7fd63e20c759294522c279bcd8": {
+      "description_zh": "设计测试策略、计划和架构，确定方法与覆盖需求。",
+      "source": "Design test strategies and test plans. Trigger with \"how should we test\", \"test strategy for\", \"write tests for\", \"test plan\", \"what tests do we need\", or when the user needs help with testing approaches, coverage, or test architecture.",
+      "source_sha256": "0017a2a56c9bd599e9fe825c5e5dd100b2d28e7fd63e20c759294522c279bcd8",
+      "source_path": "skills/testing-strategy/SKILL.md",
+      "package_sha256": "07e0c8272f9ed2b04ab4a513920e66a8e99a7ad56af0d52915aaf380d9bc59ae",
+      "source_package": "Engineering-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10b43775c90b7d969a8731de1f5bd421dba06f3193935936dd59cf624d40082b": {
+      "description_zh": "审计依赖漏洞、过期、弃用、许可证与未使用包，检查供应链健康。",
+      "source": "Run a dependency health audit checking for vulnerabilities, outdated packages, deprecations, license issues, and unused dependencies. Use when auditing project dependencies or checking supply chain security.",
+      "source_sha256": "10b43775c90b7d969a8731de1f5bd421dba06f3193935936dd59cf624d40082b",
+      "source_path": "skills/cr-deps/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d72f603095ab44ed9af81db1dbabae78557db269caca92f90216cee57139e4cf": {
+      "description_zh": "针对全栈PR差异自动识别语言并跨层审查，适配React、Node、Python等组合。",
+      "source": "Run a cross-layer code review on a fullstack PR diff, auto-detecting languages and applying the appropriate criteria for each layer. Supports any combination of React, Node.js, Python, and other languages.",
+      "source_sha256": "d72f603095ab44ed9af81db1dbabae78557db269caca92f90216cee57139e4cf",
+      "source_path": "skills/cr-fullstack/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21ed7a733caecd1cec403468d4d2e117f79ab36235421a805c0b2c09e90b93b7": {
+      "description_zh": "对当前PR差异进行五轮通用代码审查，适用于无专用技能的语言或框架。",
+      "source": "Run a 5-pass language-agnostic code review scoped to the current PR diff. Use when reviewing pull requests for any language or framework that doesn't have a dedicated skill (Vue.js, Go, Rust, Ruby, PHP, Java, etc.).",
+      "source_sha256": "21ed7a733caecd1cec403468d4d2e117f79ab36235421a805c0b2c09e90b93b7",
+      "source_path": "skills/cr-general/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f8f94d6b66f87b5872708b2115961ebf548713c4af006567f9b795f3a4eb540": {
+      "description_zh": "针对当前PR差异进行七轮Node.js后端审查，支持Express与Fastify和合并前检查。",
+      "source": "Run a 7-pass Node.js code review scoped to the current PR diff. Use when reviewing pull requests for Node.js/Express/Fastify backends, checking code before merge, or when the user asks for a Node.js code review.",
+      "source_sha256": "0f8f94d6b66f87b5872708b2115961ebf548713c4af006567f9b795f3a4eb540",
+      "source_path": "skills/cr-node/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "138228f1f58098d3c1a0956a7371914ddb6785a15951f082f13ceb936ffb3736": {
+      "description_zh": "针对当前PR差异进行七轮Python审查，支持Django、Flask与FastAPI和合并前检查。",
+      "source": "Run a 7-pass Python code review scoped to the current PR diff. Use when reviewing pull requests for Python/Django/Flask/FastAPI projects, checking code before merge, or when the user asks for a Python code review.",
+      "source_sha256": "138228f1f58098d3c1a0956a7371914ddb6785a15951f082f13ceb936ffb3736",
+      "source_path": "skills/cr-python/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e3ead630fd4341020004004080981fbdbeac052723fd9abae1a11a0136f2eca": {
+      "description_zh": "针对当前PR差异进行七轮React或Next.js审查。",
+      "source": "Run a 7-pass React/Next.js code review scoped to the current PR diff. Use when reviewing pull requests, checking code before merge, or when the user asks for a React code review.",
+      "source_sha256": "0e3ead630fd4341020004004080981fbdbeac052723fd9abae1a11a0136f2eca",
+      "source_path": "skills/cr-react/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ec2b6e056f3d400abe5731985140d97de4256638dc5386db4aef829b58f350d": {
+      "description_zh": "对整个全栈代码库进行跨层审计，自动识别语言，并加入系统级和依赖检查。",
+      "source": "Run a full-codebase cross-layer audit, auto-detecting languages and applying the appropriate criteria for each layer, plus system-level checks and dependency audit. Supports any combination of React, Node.js, Python, and other languages.",
+      "source_sha256": "0ec2b6e056f3d400abe5731985140d97de4256638dc5386db4aef829b58f350d",
+      "source_path": "skills/cra-fullstack/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c630f1e2efa47ac4db4bea0dbb6a958c69f96faa702f59908a92ec7d78ffd174": {
+      "description_zh": "对无专用语言技能的整个代码库进行五轮通用审计，加入系统级和依赖检查。",
+      "source": "Run a full-codebase 5-pass language-agnostic audit with system-level checks and dependency audit. Use when auditing an entire project in any language that doesn't have a dedicated skill (Vue.js, Go, Rust, Ruby, PHP, Java, etc.).",
+      "source_sha256": "c630f1e2efa47ac4db4bea0dbb6a958c69f96faa702f59908a92ec7d78ffd174",
+      "source_path": "skills/cra-general/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c0b2f5fc5537c9d97691aefb36bd551a78b09b7c248f7fbf24b733080febc36": {
+      "description_zh": "对整个Node.js代码库进行七轮审计，检查系统和依赖并全面评价后端质量。",
+      "source": "Run a full-codebase 7-pass Node.js audit with system-level checks and dependency audit. Use when auditing an entire Node.js project or performing a comprehensive backend code quality review.",
+      "source_sha256": "6c0b2f5fc5537c9d97691aefb36bd551a78b09b7c248f7fbf24b733080febc36",
+      "source_path": "skills/cra-node/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38eb2e13eb6a884733845eeebc5743b741067c605523a0e9087d3cf4dc8fd397": {
+      "description_zh": "对整个Python代码库进行七轮质量审计，加入系统级和依赖检查。",
+      "source": "Run a full-codebase 7-pass Python audit with system-level checks and dependency audit. Use when auditing an entire Python project or performing a comprehensive code quality review.",
+      "source_sha256": "38eb2e13eb6a884733845eeebc5743b741067c605523a0e9087d3cf4dc8fd397",
+      "source_path": "skills/cra-python/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b6bb8b4a7c801205f677cba7e59dff2fdd09d71956a24724afdbc5ebe731efbc": {
+      "description_zh": "对整个React或Next.js代码库进行七轮审计，检查架构、系统和依赖。",
+      "source": "Run a full-codebase 7-pass React/Next.js audit with system-level checks and dependency audit. Use when auditing an entire project, checking for architectural issues, or performing a comprehensive code quality review.",
+      "source_sha256": "b6bb8b4a7c801205f677cba7e59dff2fdd09d71956a24724afdbc5ebe731efbc",
+      "source_path": "skills/cra-react/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10594086b5a62f2cec2045d420a8f11672f9bd783fd8a52961fe0dafa48a44ef": {
+      "description_zh": "将Figma设计转成精确响应式代码，处理断点、令牌、资源导出与视觉核验，需Figma和Playwright MCP。",
+      "source": "Convert Figma designs to pixel-perfect, responsive code. Use when implementing UI sections from Figma files. Requires Figma MCP and Playwright MCP servers running. Handles breakpoints, design tokens, asset export, and visual verification.",
+      "source_sha256": "10594086b5a62f2cec2045d420a8f11672f9bd783fd8a52961fe0dafa48a44ef",
+      "source_path": "skills/figma-to-code/SKILL.md",
+      "package_sha256": "74a99eded6a4cd8c00b10f9edd2477696d2f4f45fcf24d369df8b7e9815403ab",
+      "source_package": "Enpitech AI Tools-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "759e819bb5ca713778219c060dd403132088e6dc02c4d2c3177d1df5c89ef843": {
+      "description_zh": "生成全部连接来源的每日或每周活动摘要，整理提及、行动、决策和文档更新并按项目分组。",
+      "source": "Generate a daily or weekly digest of activity across all connected sources. Use when catching up after time away, starting the day and wanting a summary of mentions and action items, or reviewing a week's decisions and document updates grouped by project.",
+      "source_sha256": "759e819bb5ca713778219c060dd403132088e6dc02c4d2c3177d1df5c89ef843",
+      "source_path": "skills/digest/SKILL.md",
+      "package_sha256": "ab55b3725ebce43f4059246978fe4e01a2973296b8dc7f535a0be0b67575bb6d",
+      "source_package": "Enterprise Search-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "712cf135e24c3ea261068340f76c0690d1c4d3a463f7fae3fc5ba1d609efaf25": {
+      "description_zh": "合并多来源搜索为连贯去重答案，标注来源并按时效和权威评估置信度，汇总大结果集。",
+      "source": "Combines search results from multiple sources into coherent, deduplicated answers with source attribution. Handles confidence scoring based on freshness and authority, and summarizes large result sets effectively.",
+      "source_sha256": "712cf135e24c3ea261068340f76c0690d1c4d3a463f7fae3fc5ba1d609efaf25",
+      "source_path": "skills/knowledge-synthesis/SKILL.md",
+      "package_sha256": "ab55b3725ebce43f4059246978fe4e01a2973296b8dc7f535a0be0b67575bb6d",
+      "source_package": "Enterprise Search-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "67da0f53289b00f19e39470160ab5e43950f51e281be7e0bb66835c79d7593aa": {
+      "description_zh": "拆解自然语言问题为各来源专用搜索，转换查询语法、排序相关性并处理歧义和回退。",
+      "source": "Query decomposition and multi-source search orchestration. Breaks natural language questions into targeted searches per source, translates queries into source-specific syntax, ranks results by relevance, and handles ambiguity and fallback strategies.",
+      "source_sha256": "67da0f53289b00f19e39470160ab5e43950f51e281be7e0bb66835c79d7593aa",
+      "source_path": "skills/search-strategy/SKILL.md",
+      "package_sha256": "ab55b3725ebce43f4059246978fe4e01a2973296b8dc7f535a0be0b67575bb6d",
+      "source_package": "Enterprise Search-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7245d055723e369500614c7d11740698619dded7946e53c858850298d3bb74e6": {
+      "description_zh": "一次搜索全部连接来源，跨聊天、邮件、云存储和项目工具查找决定、文档或讨论。",
+      "source": "Search across all connected sources in one query. Trigger with \"find that doc about...\", \"what did we decide on...\", \"where was the conversation about...\", or when looking for a decision, document, or discussion that could live in chat, email, cloud storage, or a project tracker.",
+      "source_sha256": "7245d055723e369500614c7d11740698619dded7946e53c858850298d3bb74e6",
+      "source_path": "skills/search/SKILL.md",
+      "package_sha256": "ab55b3725ebce43f4059246978fe4e01a2973296b8dc7f535a0be0b67575bb6d",
+      "source_package": "Enterprise Search-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9b800aa90df853850276484ad3a075ab4fc781ff78cf596dffc66ee6a8a488f": {
+      "description_zh": "管理企业搜索MCP来源，识别可用连接、引导新增、安排优先级并处理限流。",
+      "source": "Manages connected MCP sources for enterprise search. Detects available sources, guides users to connect new ones, handles source priority ordering, and manages rate limiting awareness.",
+      "source_sha256": "b9b800aa90df853850276484ad3a075ab4fc781ff78cf596dffc66ee6a8a488f",
+      "source_path": "skills/source-management/SKILL.md",
+      "package_sha256": "ab55b3725ebce43f4059246978fe4e01a2973296b8dc7f535a0be0b67575bb6d",
+      "source_package": "Enterprise Search-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf9db2c85c1bcbb4f652a5b308222ca6eb5f32ae7e7111b1f3a6d8145f694dc5": {
+      "description_zh": "备份、恢复或迁移macOS及Linux开发环境，选择配置、SSH云凭据、Git、AI智能体状态与软件，记录清单并在新机恢复；同意后安装envrelay加密备份工具。",
+      "source": "Use when backing up or restoring a development environment, or when asked to migrate one to a new machine - a new Mac, laptop or Linux box. Carries dotfiles, config, SSH keys and cloud credentials, git repositories, AI coding agent state (Claude Code, Codex, Cursor and the rest), and installed software; also use when working with an .envrelay backup file. Covers what to carry, what to leave behind and rebuild, how to record it in a manifest, and how to replay it on the new machine (macOS and Linux). Once the user agrees, it installs the envrelay binary, which encrypts the backup, into ~/.local/bin.",
+      "source_sha256": "cf9db2c85c1bcbb4f652a5b308222ca6eb5f32ae7e7111b1f3a6d8145f694dc5",
+      "source_path": "skills/envrelay/SKILL.md",
+      "package_sha256": "f6d3d98cfe247faa9310725c555b66e8d4318e99a78b83eb15948cf00ccdeaf4",
+      "source_package": "envrelay-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff3166358699daff4881fe650ef4382aa12c6f48d8963188b2177cd6a05f4627": {
+      "description_zh": "使用EODHD生成公司概览，汇总资料、基本面、新闻、情感、内部人交易与关键指标，支持股票速览和投资简报。",
+      "source": "Generate a comprehensive company snapshot using EODHD data — profile, fundamentals, recent news, sentiment, insider transactions, and key metrics. Use when the user asks about a specific company, wants a stock overview, or needs a quick investment brief.",
+      "source_sha256": "ff3166358699daff4881fe650ef4382aa12c6f48d8963188b2177cd6a05f4627",
+      "source_path": "skills/company-brief/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4479589f5cafbc58509d5bf1667f99ce28d1a7cbfe6b743ceeaeba7a80101097": {
+      "description_zh": "监测即将公布或近期盈利报告，结合日历、趋势、新闻和日期附近期权活动，分析业绩意外及前后变化。",
+      "source": "Monitor upcoming and recent earnings — calendar, trends, news context, and options activity around earnings dates. Use when the user asks about earnings season, upcoming reports, earnings surprises, or pre/post-earnings analysis.",
+      "source_sha256": "4479589f5cafbc58509d5bf1667f99ce28d1a7cbfe6b743ceeaeba7a80101097",
+      "source_path": "skills/earnings-monitor/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
