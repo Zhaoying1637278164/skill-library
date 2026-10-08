@@ -1,0 +1,17 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+const source=fs.readFileSync('source/catalog.js','utf8');
+const start=source.indexOf('function applyLinked(');
+const end=source.indexOf('\n',start);
+const context=vm.createContext({location:{hash:''},encodeURIComponent});
+vm.runInContext('let lastLinkedKey=null;\n'+source.slice(start,end),context);
+context.applyLinked({package:275});
+assert.equal(context.location.hash,'#/p/275');
+context.location.hash='#/p/275/file/skills%2Fburnrate%2FSKILL.md';
+context.applyLinked({package:275});
+assert.equal(context.location.hash,'#/p/275/file/skills%2Fburnrate%2FSKILL.md','Repeated Streamlit args must preserve clicked skill');
+context.location.hash='#/c/finance';context.applyLinked({package:275});
+assert.equal(context.location.hash,'#/c/finance','Repeated args must preserve category navigation');
+context.applyLinked({package:275,file:'skills/cards/SKILL.md'});
+assert.equal(context.location.hash,'#/p/275/file/skills%2Fcards%2FSKILL.md','New file parameter must still navigate');
+context.applyLinked({package:193});assert.equal(context.location.hash,'#/p/193','New package parameter must still navigate');
+console.log('PASS: repeated Streamlit args preserve user navigation; changed deep links still open');
