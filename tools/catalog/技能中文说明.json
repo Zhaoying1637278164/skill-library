@@ -67489,6 +67489,1086 @@
       "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
       "source_package": "SignalPilot-1.2.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22f429ae0eceb21bd87b8151db5b6c0ea976bfbbddf102739e4c86283fe638a1": {
+      "description_zh": "为 SignalWire 电话、消息和视频应用提供 REST API 写法、SDK 示例和原作者所称的生产验证流程。适用于语音 AI、实时辅导及 ai_sidecar 通话观察、SWML 流程、webhook 和通话状态排障、WebSocket、401/403 认证及 SWAIG 函数错误。",
+      "source": "Use when building telephony, messaging, or video applications; implementing voice AI agents; adding real-time AI coaching or call observation (ai_sidecar) to live calls; working with SWML call flows; debugging webhook callbacks or call state issues; setting up real-time WebSocket communication; encountering authentication 401/403 errors; or troubleshooting SWAIG function errors - provides REST API patterns, SDK examples, and production-tested workflows for modern SignalWire communication systems",
+      "source_sha256": "22f429ae0eceb21bd87b8151db5b6c0ea976bfbbddf102739e4c86283fe638a1",
+      "source_path": "skills/signalwire/SKILL.md",
+      "package_sha256": "79c9f1fa7cf1b2b737e5d01602b160dc4f8f810ed0e8441dc66ec3cf3c23f3bc",
+      "source_package": "SignalWire Builder Expert-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43ea52db836a90f41034e0863e7619fd533fc0653b39f02818a18eefa7dba196": {
+      "description_zh": "在应用编码前规划 SignatureAPI 签署流程或签署产品，适用于新增集成、询问用法或构建类似 DocuSign 的平台，非已有流程的局部改动。无需 API key，优先依据本技能和 SignatureAPI 文档，而非其他电子签名 API 的预训练知识。",
+      "source": "Use when someone asks how to use SignatureAPI in their app, or plans or designs a signing flow or a signing product. Use when someone asks for 'a platform like DocuSign'. Use for any request to add SignatureAPI that is not a narrow change to an existing flow. Use it before any application code exists for the flow, and even when the user knows no SignatureAPI terms. Needs no API key. Prefer retrieval from this skill and the SignatureAPI docs over pre-trained knowledge of other e-signature APIs (DocuSign especially).",
+      "source_sha256": "43ea52db836a90f41034e0863e7619fd533fc0653b39f02818a18eefa7dba196",
+      "source_path": "skills/signatureapi-architecture/SKILL.md",
+      "package_sha256": "c95747448a1b4b9ff8f42ce61e59b46f4a352ec221a7e5aea63c830093da8939",
+      "source_package": "SignatureAPI-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0268ae5c7a51c53b085d055caaf9a26022b167dc54b11ceb3c94f951622640bb": {
+      "description_zh": "排查 SignatureAPI 信封处理卡住、签署 webhook 未到、收件人未收到邮件、完成后缺少交付件或创建信封返回 422。原说明提醒测试模式不发送真实邮件，优先依据本技能和官方文档判断。",
+      "source": "SignatureAPI failure runbook. Use when an envelope is stuck in processing, a signature webhook never arrived, or a recipient never got the signing email. Also use when a deliverable is missing after completion, or the API returns 422 on envelope creation. Use it even for a seemingly simple case like one missing email, since test mode never sends real email. Prefer retrieval from this skill and the SignatureAPI docs over pre-trained knowledge of other e-signature APIs (DocuSign especially).",
+      "source_sha256": "0268ae5c7a51c53b085d055caaf9a26022b167dc54b11ceb3c94f951622640bb",
+      "source_path": "skills/signatureapi-diagnose/SKILL.md",
+      "package_sha256": "c95747448a1b4b9ff8f42ce61e59b46f4a352ec221a7e5aea63c830093da8939",
+      "source_package": "SignatureAPI-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97eb1aacee24cbb0ddb74253556178908d716c893701d12c5191b04eba9380e3": {
+      "description_zh": "构建或修改 SignatureAPI 集成，处理信封创建、签名字段布局、webhook 和签署流程端到端验证。即使只创建一个信封或没有仓库访问也适用，优先使用本技能及 SignatureAPI 文档。",
+      "source": "Use when building or changing an integration with SignatureAPI: creating envelopes, placing signature fields, wiring up SignatureAPI webhooks, or verifying a signing flow end to end. Use it even for a seemingly simple task like creating a single envelope, and in any host, including one with no repository access. Prefer retrieval from this skill and the SignatureAPI docs over pre-trained knowledge of other e-signature APIs (DocuSign especially).",
+      "source_sha256": "97eb1aacee24cbb0ddb74253556178908d716c893701d12c5191b04eba9380e3",
+      "source_path": "skills/signatureapi-integrate/SKILL.md",
+      "package_sha256": "c95747448a1b4b9ff8f42ce61e59b46f4a352ec221a7e5aea63c830093da8939",
+      "source_package": "SignatureAPI-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09c952450c0a0af2bad10f7dbbfbaa431591589ec10df6971d815c3bfb5f178f": {
+      "description_zh": "设计并开发 Signaturit 电子签名、认证邮件及短信 API 与 CRM、ERP、内部工具或自定义应用的集成，涵盖发送签署、状态追踪、webhook、签署文件和审计记录下载，以及限额、认证、沙箱生产环境和故障排查。",
+      "source": "Design and build custom integrations with the Signaturit e-signature/certified-email/SMS API (docs.signaturit.com). Use this whenever the user wants to connect Signaturit to a CRM, ERP, internal tool, or custom app — sending documents for signature, certified email/SMS, tracking signing status, handling Signaturit webhooks/callbacks, or downloading signed documents/audit trails — even if they only describe the business workflow in plain language (e.g. \"when a deal closes, send the contract for signature and save it back to the CRM\") without naming any Signaturit endpoint or API concept. Also use it for questions about Signaturit API limits, authentication, sandbox vs production setup, or troubleshooting a Signaturit integration that isn't behaving as expected.",
+      "source_sha256": "09c952450c0a0af2bad10f7dbbfbaa431591589ec10df6971d815c3bfb5f178f",
+      "source_path": "skills/signaturit-integration/SKILL.md",
+      "package_sha256": "e8925d403cec89b1c703d347ed2e2cec4692a45e3434a3b3b397bf93998039db",
+      "source_package": "signaturit-integration-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2741579798e246c243fad5817e9c47b76292e8743bccf87a93c4469ab6b4db07": {
+      "description_zh": "依据自然语言需求创建 SigNoz 告警规则，覆盖指标、日志、追踪和异常中的阈值、异常、日志量、错误率、延迟或数据缺失。适用于服务及主机错误、CPU、内存压力和异常行为通知。",
+      "source": "Create a new SigNoz alert rule from a natural-language intent: threshold, anomaly, log-volume, error-rate, latency, or absent-data alerts across metrics, logs, traces, and exceptions. Make sure to use this skill whenever the user says \"alert me when…\", \"notify me if…\", \"set up monitoring for…\", \"page me on…\", \"create an alert for…\", or asks for a new alert/notification rule, even if they don't say the word \"alert\" explicitly. Also use it when someone asks to be notified about error rates, latency spikes, log volume, CPU/memory pressure, or anomalous behavior on a service or host.",
+      "source_sha256": "2741579798e246c243fad5817e9c47b76292e8743bccf87a93c4469ab6b4db07",
+      "source_path": "skills/signoz-creating-alerts/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d7d04423a26720132d516c2a5edd296a38d7aa09d1349ae16e05850332487f7": {
+      "description_zh": "依据自然语言需求创建 SigNoz 仪表盘，可导入 PostgreSQL、Redis、JVM、Kubernetes、主机、APM 或 LLM 等匹配模板，或从指标、追踪和日志面板构建自定义视图。适用于服务、数据库、集群及 AI 平台的监测可视化。",
+      "source": "Create a new SigNoz dashboard from a natural-language intent: import a curated template (PostgreSQL, Redis, JVM, k8s, hostmetrics, APM, LLM, etc.) when one fits, or build a custom dashboard from scratch with metric / trace / log panels. Make sure to use this skill whenever the user says \"create a dashboard for…\", \"set up monitoring for…\", \"build me a dashboard…\", \"I need observability for…\", \"import a dashboard template\", or asks to track / visualize a service, database, cluster, or AI/LLM platform, even if they don't explicitly say \"dashboard\". Also use it when someone wants to \"monitor\", \"watch\", or \"see metrics for\" a technology and the natural answer is a dashboard.",
+      "source_sha256": "7d7d04423a26720132d516c2a5edd296a38d7aa09d1349ae16e05850332487f7",
+      "source_path": "skills/signoz-creating-dashboards/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd4c86be0d0e38ecbfdc791eb282e15a4f5f5289c492b913b052dd791e86aefa": {
+      "description_zh": "用通俗语言解释已有 SigNoz 告警的信号、阈值、评估行为和通知路由，并提供触发频率摘要。仅解释配置，具体触发事件诊断转用 signoz-investigating-alerts。",
+      "source": "Describe what an existing SigNoz alert rule does in plain language: the signal it watches, the threshold and evaluation behavior, the notification routing, and a one-line fire-frequency summary so the user knows whether the alert has been active. Make sure to use this skill whenever the user asks \"what does this alert do\", \"explain alert X\", \"walk me through this rule\", \"how does my [Y] alert work\", \"is this alert configured correctly\", or otherwise asks for an interpretation of an existing alert's configuration. Static explanation only; for diagnosing a specific firing incident, use `signoz-investigating-alerts`.",
+      "source_sha256": "bd4c86be0d0e38ecbfdc791eb282e15a4f5f5289c492b913b052dd791e86aefa",
+      "source_path": "skills/signoz-explaining-alerts/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c610cb721a2e1d4699a3723ccf0f864c7d7bfbbe9f0af47bc2365676fde02b9e": {
+      "description_zh": "用运维语言解释已有 SigNoz 仪表盘的面板、查询、变量和各项关注点，适用于理解监控内容及服务接入时了解现有可观测性。",
+      "source": "Explain what an existing SigNoz dashboard shows in plain operational language: the panels, queries, variables, and what to watch for on each. Make sure to use this skill whenever the user asks \"explain this dashboard\", \"what does my [X] dashboard show\", \"walk me through the panels\", \"what should I watch for on this dashboard\", or \"help me understand this dashboard\", or otherwise asks for an interpretation of a dashboard's contents, even if they don't say \"explain\" explicitly. Also use it when someone is onboarding to a service and wants to understand what its existing observability looks like.",
+      "source_sha256": "c610cb721a2e1d4699a3723ccf0f864c7d7bfbbe9f0af47bc2365676fde02b9e",
+      "source_path": "skills/signoz-explaining-dashboards/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43e3d805aa56bf1432d413074d5b34ae0f3842fd2cfca51731a25cd5cfa16398": {
+      "description_zh": "生成、编写或执行 SigNoz 指标、日志及追踪的临时查询，不包装为面板或告警。适用于错误率、超时日志、p99 延迟、请求量、慢追踪及最近错误等需要实时数据的探索。",
+      "source": "Generate, write, or run an ad-hoc query against SigNoz observability data (metrics, logs, or traces) without wrapping it in a dashboard panel or alert. Make sure to use this skill whenever the user asks \"show me error rates\", \"query logs for timeout errors\", \"what's the p99 latency for the cart service\", \"how many requests hit the payment endpoint\", \"find slow traces\", \"errors in the last hour\", or otherwise asks an exploratory question that needs live observability data, even if they don't say \"query\" or \"search\" explicitly.",
+      "source_sha256": "43e3d805aa56bf1432d413074d5b34ae0f3842fd2cfca51731a25cd5cfa16398",
+      "source_path": "skills/signoz-generating-queries/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "367714b093a9fb7dc588de41f39f2b334c5c6b468538de090f976179f9521820": {
+      "description_zh": "只读诊断 SigNoz 告警为何触发，将触发窗口中的自身信号与错误率、延迟、吞吐、CPU、内存等邻近指标及追踪日志关联，排序可能原因。适用于最近告警的根因调查，不修改告警或通知。",
+      "source": "Diagnose why a SigNoz alert fired by correlating the alert's own signal with neighbor signals (error rate, latency, throughput, CPU/memory), traces, and logs around the fire window, and rank likely causes. Make sure to use this skill whenever the user asks \"why did this alert fire\", \"what caused alert X\", \"investigate this alert\", \"RCA for the alert that paged me\", \"what's wrong with [service]\" in the context of a recent fire, or otherwise asks for a root-cause analysis of a firing or recently-fired alert. Read-only; does not modify any alert or notification.",
+      "source_sha256": "367714b093a9fb7dc588de41f39f2b334c5c6b468538de090f976179f9521820",
+      "source_path": "skills/signoz-investigating-alerts/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c98a0543ebf59913836a1e21836222336e4b7411f77f9ca70fffa38d40d06cc3": {
+      "description_zh": "创建、列出、读取、更新、重命名或删除 SigNoz Explorer 保存视图。适用于保存查询或过滤器、书签搜索、管理日志追踪指标视图，以及将重复查询保存后分享给团队。",
+      "source": "Use when the user wants to create, list, get, update, rename, or delete a SigNoz saved Explorer view. Trigger on phrases like \"save this query as a view\", \"save this filter\", \"bookmark this search\", \"list my saved views\", \"show me views for traces/logs/metrics/meter\", \"rename the X view\", \"update my saved view to also filter Y\", \"delete the X view\", or any request to manage Explorer saved views, even if they don't say \"view\" explicitly. Also use when someone wants to share a recurring Explorer query with their team and asks how to \"save\" or \"bookmark\" it.",
+      "source_sha256": "c98a0543ebf59913836a1e21836222336e4b7411f77f9ca70fffa38d40d06cc3",
+      "source_path": "skills/signoz-managing-views/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b04446e36a6615874271d40def602da4a4f12e8137366458cc54c6e77c202394": {
+      "description_zh": "初始化或修复 SigNoz MCP 客户端配置，支持 Agent Plugins v1、Claude Code、Codex、Cursor、Copilot、Desktop、Gemini、Devin 等客户端。工具不可用时先完成配置，适用于区域变更、认证失败、连接云端或自托管端点。",
+      "source": "Initialize or repair SigNoz MCP server configuration for Agent Plugins v1, Claude Code, Codex, Cursor, VS Code/GitHub Copilot, Claude Desktop, Gemini CLI, Devin CLI, Grok Build, Windsurf, Zed, Antigravity CLI, OpenCode, or another MCP client. Use this skill before any SigNoz docs, query, dashboard, alert, or view workflow when `signoz_*` tools are unavailable, or when the user says \"setup SigNoz MCP\", \"configure SigNoz plugin\", \"wrong region\", \"change SigNoz region\", \"MCP auth failed\", or asks to connect SigNoz Cloud or a self-hosted MCP endpoint, even if they do not mention the plugin.",
+      "source_sha256": "b04446e36a6615874271d40def602da4a4f12e8137366458cc54c6e77c202394",
+      "source_path": "skills/signoz-mcp-setup/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73bc5858eb19dc803d60c5c2fa2c2800f5048878c037bcc2234ac59f3cc18e81": {
+      "description_zh": "修改已有 SigNoz 仪表盘，包括增删面板、编辑查询阈值单位、改名、切换图表表格数值类型、重排布局、管理变量及标签。",
+      "source": "Modify an existing SigNoz dashboard: add or remove panels, edit a panel's query, threshold, or unit, rename the dashboard, change a panel type (graph ↔ table ↔ value), rearrange the layout, add or edit variables, or update tags. Make sure to use this skill whenever the user says \"add a panel to my dashboard\", \"change the query on this panel\", \"remove the latency widget\", \"rename my dashboard\", \"update the filters\", \"rearrange the layout\", \"add a variable\", \"change panel type from graph to table\", or otherwise asks to change something on a dashboard that already exists, even if they don't say \"modify\" or \"edit\" explicitly.",
+      "source_sha256": "73bc5858eb19dc803d60c5c2fa2c2800f5048878c037bcc2234ac59f3cc18e81",
+      "source_path": "skills/signoz-modifying-dashboards/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c34eb3b452a22e7d75d01f2042e28e92511762241ade4155504733210bae40b2": {
+      "description_zh": "调查并降低 SigNoz 指标、日志和追踪的采集成本与指标基数，通过 Cost Meter 查找支出来源及失控标签基数，在考虑仪表盘、告警和 Infra 页面依赖的前提下提出安全减量方式。",
+      "source": "Investigate and reduce SigNoz telemetry ingestion cost and metric cardinality across metrics, logs, and traces. Find what drives SigNoz spend (via the Cost Meter), which metrics have runaway or unbounded label cardinality, and safe, dashboard-, alert-, and Infra-page-aware ways to cut volume. Make sure to use this skill whenever the user asks \"why is my SigNoz bill so high\", \"what's driving my ingestion cost\", \"reduce telemetry volume\", \"which metrics cost the most\", \"cardinality health check\", or \"what can I safely drop\", or otherwise asks about telemetry spend, ingestion volume, or metric cardinality, even if they don't say \"cost\" or \"optimize\" explicitly.",
+      "source_sha256": "c34eb3b452a22e7d75d01f2042e28e92511762241ade4155504733210bae40b2",
+      "source_path": "skills/signoz-reducing-telemetry-cost/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c07326e46778200fe59b0fcdf0513b6876e397205fe51104b6aea319401df3ce": {
+      "description_zh": "查阅 SigNoz 文档，解答埋点、OpenTelemetry、自托管、API、认证头和排障等参考问题。只负责资料查询，平台内操作转交匹配的 signoz 专项技能。",
+      "source": "Look up information in SigNoz documentation. Make sure to use this skill whenever the user asks \"how do I\", \"where in the docs\", \"what does the docs say about\", \"find docs for\", or otherwise needs reference material on SigNoz instrumentation, OpenTelemetry setup, self-hosted deployment, API endpoints, auth headers, or troubleshooting steps, even if they don't say the word \"docs\" explicitly. Docs lookup only; for actions inside SigNoz, the agent will pick the matching `signoz-*` action skill.",
+      "source_sha256": "c07326e46778200fe59b0fcdf0513b6876e397205fe51104b6aea319401df3ce",
+      "source_path": "skills/signoz-searching-docs/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0af519ee81c09b0286ecc91aa7e1cec1b82d8975d234de3f958b8a9365dc521": {
+      "description_zh": "在遥测已流入 SigNoz 后统筹完整可观测性配置，依次明确 SLI/SLO、探索 RED/USE 数据、创建重点仪表盘、保存视图、配置燃烧率和缺失数据告警并迭代调优。单个面板、告警、视图或临时查询直接使用相应专项技能。",
+      "source": "Run the full end-to-end observability setup for a service after its telemetry is already flowing into SigNoz: sequence SLI/SLO capture, data exploration (RED/USE), focused dashboards, saved Explorer views, burn-rate and absent-data alerts, and a tuning loop into one opinionated, SLO-aware workflow. Make sure to use this skill whenever the user says \"set up observability after ingestion\", \"now that data is flowing, give me dashboards and alerts\", \"onboard this service to SigNoz end-to-end\", \"I want the full monitoring setup for X\", or asks to go from raw telemetry to a complete dashboard + alerts + views package, even if they don't say \"observability\" explicitly. This is the orchestration layer: for a single artifact (just a dashboard, just one alert, just a saved view, or one static threshold alert, or a one-off query) use signoz-creating-dashboards, signoz-creating-alerts, signoz-managing-views, or signoz-generating-queries directly.",
+      "source_sha256": "f0af519ee81c09b0286ecc91aa7e1cec1b82d8975d234de3f958b8a9365dc521",
+      "source_path": "skills/signoz-setting-up-observability/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b458c82b69efbdbdaabe0cce30bb36931a20c193a5c644c8001242d7e33f621": {
+      "description_zh": "为 SigNoz 仪表盘的时序、数值或表格面板编写原始 ClickHouse SQL，处理查询构建器无法表达的连接、窗口函数、日志正则提取和聚合。不用于无须落入面板的临时探索，后者使用 signoz-generating-queries。",
+      "source": "Write raw ClickHouse SQL for a SigNoz dashboard panel: timeseries, value, or table widgets that the builder UI cannot express (custom joins, window functions, regex extraction over log bodies, aggregations beyond builder syntax). Trigger when the user explicitly asks for a \"ClickHouse query\", a \"raw SQL panel\", a \"custom SQL widget\", or describes a SigNoz dashboard panel whose query needs SQL the builder cannot produce. Anchored to dashboard-panel SQL specifically. For ad-hoc data exploration that does not need to land in a panel, use `signoz-generating-queries` instead.",
+      "source_sha256": "7b458c82b69efbdbdaabe0cce30bb36931a20c193a5c644c8001242d7e33f621",
+      "source_path": "skills/signoz-writing-clickhouse-queries/SKILL.md",
+      "package_sha256": "6ed9d12f707280eabe41d9521ff944c4e04829886edcf5cbbbd47f57a9f64955",
+      "source_package": "SigNoz-2026.09.17-v31.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6023cd99260536ac3ebae0cd6723d38fef721e5cf1625f1cdafb54ab6dc5aa38": {
+      "description_zh": "为已部署到 simple-host 的网站绑定自定义域名或免费的短域名，执行绑定、DNS、验证和生效流程。智能体处理 API，用户在注册商添加地址及 TXT 所有权记录；原说明称平台短域名无需 DNS 且立即生效。",
+      "source": "Give a site already deployed on simple-host a nicer address — the user's own custom domain (subdomain e.g. recipes.brand.com via CNAME, or apex e.g. brand.com via A record) or a free <name>.simple-host.app (one call, active at once, no DNS). Use when a user wants their site served from their own domain or a short name over HTTPS. Optional, since every site already has its own address, https://<site>.<handle>.simple-host.app/, where visitor sign-in and private collections work. Drives the bind → DNS → verify → live flow; the agent does the API work and relays the two DNS records (the address record and a TXT ownership record) the human must add at their registrar.",
+      "source_sha256": "6023cd99260536ac3ebae0cd6723d38fef721e5cf1625f1cdafb54ab6dc5aa38",
+      "source_path": "skills/connect-domain/SKILL.md",
+      "package_sha256": "5db58140d3aca3150e3c5a6f6d222aa38edafcccc4e0123cb03a83d0c999d2c1",
+      "source_package": "Simple Host-0.27.6-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd0120399b01900f902b1035bb5621624b7550b7ca79d567195774686a660aa2": {
+      "description_zh": "规划 Website Deploy/simple-host.app 网站，将需求映射为静态页面和轻量后端模式，区分所有者写入的页面信息、访客提交、私人记录、共享看板、localStorage 和公共 API，并形成实施提示。说明登录后保存、未声明数据默认公开共享及订单报名等提交默认仅所有者可见的规则。",
+      "source": "Plan what to build on Website Deploy (simple-host.app). Helps a user decide whether their idea fits the static + light-backend model, maps it to concrete patterns (Page info the owner writes, Submissions visitors send, Personal records each visitor keeps, Shared boards a group edits, localStorage, public APIs), and produces a focused prompt for an implementation agent. Knows the planning rules that matter - every site lives at its own address, https://<site>.<handle>.simple-host.app/, where visitors sign in (Google or an emailed code) before saving from a page; saved data nobody declared is Shared (public), and Page info or Submissions are declared once; anything personal (orders, RSVPs, sign-ups) goes in Submissions, private to the owner by default; a free <name>.simple-host.app or a custom domain is an optional nicer address. Use when a user is starting a new site or describes a feature idea and needs help mapping it to what the platform can do.",
+      "source_sha256": "dd0120399b01900f902b1035bb5621624b7550b7ca79d567195774686a660aa2",
+      "source_path": "skills/website-deploy-builder/SKILL.md",
+      "package_sha256": "5db58140d3aca3150e3c5a6f6d222aa38edafcccc4e0123cb03a83d0c999d2c1",
+      "source_package": "Simple Host-0.27.6-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f51bad74c4daabd8784b8b224f9eff85e253c338772c28df79463971969cdf23": {
+      "description_zh": "构建校验并部署静态网站到 simple-host.app，支持内联 JSON 或 tar.gz/zip 上传及站点后端配置。明确 Page info、Submissions、Personal 和 Shared 的权限模式，未声明保存数据默认公开共享，访客通过 Google 或邮件码登录后保存，订单报名等提交默认私有；智能体通过连接器或注册所得 API key 写入。",
+      "source": "Deploy static websites to simple-host.app. Use when an agent needs to build/validate a static site, deploy it (inline JSON files OR a tar.gz/zip archive), or wire up the per-site backend. Saved data nobody declared is Shared (public); anything else is declared once as Page info (the owner writes, everyone reads), Submissions (visitors send them; the owner sees all; each visitor sees, changes and withdraws their own; private unless made public), Personal (one private record per signed-in visitor) or a Shared board (a list signed-in visitors edit together). Every site lives at https://<site>.<handle>.simple-host.app/. Pages and public lists are readable by anyone; visitors sign in with Google or an emailed code via the hosted auth.js before saving, and Submissions stay private to the owner by default (orders, RSVPs, sign-ups, personal details); agents write with the Simple Host connector or, without it, an API key from email-code registration.",
+      "source_sha256": "f51bad74c4daabd8784b8b224f9eff85e253c338772c28df79463971969cdf23",
+      "source_path": "skills/website-deploy/SKILL.md",
+      "package_sha256": "5db58140d3aca3150e3c5a6f6d222aa38edafcccc4e0123cb03a83d0c999d2c1",
+      "source_package": "Simple Host-0.27.6-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db828a193ee87a832d7a7419e45ffee940c3a797cd620ed52e4b744c7bd52027": {
+      "description_zh": "通过一次计划写入创建已批准的 Simple Muscle 训练计划，适用于新计划、训练安排、分化、增肌或力量训练阶段。",
+      "source": "Creates an approved Simple Muscle plan with one plan write. Use for new plan, routine, split, hypertrophy plan, or strength block.",
+      "source_sha256": "db828a193ee87a832d7a7419e45ffee940c3a797cd620ed52e4b744c7bd52027",
+      "source_path": "skills/create-plan/SKILL.md",
+      "package_sha256": "211b3001e30830d698a34839bc06a458ce19e3cd557b2b12cd244e6496436db1",
+      "source_package": "Simple Muscle-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe69e04634b8b3210e29da163997001e698d08b5e866d01a120e441e9969302d": {
+      "description_zh": "提供其他 Simple Muscle 技能引用的训练计划原则，涵盖安排、分化、渐进超负荷、增肌、力量、训练量及减量周。",
+      "source": "Applies training-program principles. Referenced by the other Simple Muscle skills. Use for plan, program, routine, split, progressive overload, hypertrophy, strength, volume, or deload.",
+      "source_sha256": "fe69e04634b8b3210e29da163997001e698d08b5e866d01a120e441e9969302d",
+      "source_path": "skills/program-design/SKILL.md",
+      "package_sha256": "211b3001e30830d698a34839bc06a458ce19e3cd557b2b12cd244e6496436db1",
+      "source_package": "Simple Muscle-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "17fda7994dff16da027e2edb778f082611320862a4611ebb1da23fe16356ec38": {
+      "description_zh": "推进已批准的 Simple Muscle 训练，适用于增加重量、下一周安排、双重递进、调整组数或升级训练计划。",
+      "source": "Progresses an approved Simple Muscle workout. Use for increase weights, next week, double progression, update sets, or advance my program.",
+      "source_sha256": "17fda7994dff16da027e2edb778f082611320862a4611ebb1da23fe16356ec38",
+      "source_path": "skills/progress-workout/SKILL.md",
+      "package_sha256": "211b3001e30830d698a34839bc06a458ce19e3cd557b2b12cd244e6496436db1",
+      "source_package": "Simple Muscle-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1282e1621b7f7cbfb82ecab8c66f6278f63f763247ed0fb423fca637b7afd6e": {
+      "description_zh": "只读复核已记录训练，分析进展、执行度、动作停滞、训练量偏移及下一训练阶段规划，不编辑记录。",
+      "source": "Reviews recorded training without editing anything. Use for progress review, adherence, stalled lifts, volume drift, or planning the next block.",
+      "source_sha256": "e1282e1621b7f7cbfb82ecab8c66f6278f63f763247ed0fb423fca637b7afd6e",
+      "source_path": "skills/review-progress/SKILL.md",
+      "package_sha256": "211b3001e30830d698a34839bc06a458ce19e3cd557b2b12cd244e6496436db1",
+      "source_package": "Simple Muscle-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb241095e0e49e84ef278abbaad787ef837ccf1d8ab5aa4abba4e45fcb21eadb": {
+      "description_zh": "验证 Simple Muscle OAuth 和训练访问权限，适用于初始设置、首次运行、登录授权及连接故障。",
+      "source": "Verifies Simple Muscle OAuth and workout access. Use for setup, first run, sign in, authorization, or connection problems.",
+      "source_sha256": "bb241095e0e49e84ef278abbaad787ef837ccf1d8ab5aa4abba4e45fcb21eadb",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "211b3001e30830d698a34839bc06a458ce19e3cd557b2b12cd244e6496436db1",
+      "source_package": "Simple Muscle-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d0ba6c6a69eff4c9fc65791bc3e691f12fa06d943fe0ac5a10e893193214b04": {
+      "description_zh": "按已批准的动作模式匹配替换训练动作，适用于器材或偏好替代、动作交换及无痛替代需求。",
+      "source": "Replaces an exercise with an approved pattern match. Use for swap exercise, substitute movement, equipment or preference alternative, or pain-free alternative.",
+      "source_sha256": "7d0ba6c6a69eff4c9fc65791bc3e691f12fa06d943fe0ac5a10e893193214b04",
+      "source_path": "skills/swap-exercise/SKILL.md",
+      "package_sha256": "211b3001e30830d698a34839bc06a458ce19e3cd557b2b12cd244e6496436db1",
+      "source_package": "Simple Muscle-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ccdce32888ebd59e60ca8f080099dc367c4477639963f3515adef2209f94957d": {
+      "description_zh": "为支持的社交平台调整文案，适用于帖子、图注、推文、线程和跨平台内容适配。",
+      "source": "Adapts copy for supported social platforms. Use for write a post, caption, tweet, thread, social copy, or adapt for.",
+      "source_sha256": "ccdce32888ebd59e60ca8f080099dc367c4477639963f3515adef2209f94957d",
+      "source_path": "skills/platform-craft/SKILL.md",
+      "package_sha256": "75d6c0d800684ef2590015a8a72e91d02287beabb4e7ee068ae37a03a01ccb5b",
+      "source_package": "SimplePost-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe6080f0eb2eb05720c5796c9c920d088edfe4c4ae4ce30e5efaf9deecf93f0f": {
+      "description_zh": "为 SimplePost 每次发布或定时写入设置审核关卡，适用于创建帖子、立即发布、安排发布及帖子复核。",
+      "source": "Gates every SimplePost publish or schedule write. Use for create post, publish, schedule, post now, or post-review.",
+      "source_sha256": "fe6080f0eb2eb05720c5796c9c920d088edfe4c4ae4ce30e5efaf9deecf93f0f",
+      "source_path": "skills/post-review/SKILL.md",
+      "package_sha256": "75d6c0d800684ef2590015a8a72e91d02287beabb4e7ee068ae37a03a01ccb5b",
+      "source_package": "SimplePost-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e90982f846f58b879cd86769efcd335339c126a0bfbcdd3b04e8b5337aa0907": {
+      "description_zh": "从一个创意生成适合不同平台的内容变体，适用于再利用、跨平台发布和内容改编。",
+      "source": "Creates platform-specific variants from one idea. Use for repurpose, cross-post, adapt this, or reuse this idea.",
+      "source_sha256": "5e90982f846f58b879cd86769efcd335339c126a0bfbcdd3b04e8b5337aa0907",
+      "source_path": "skills/repurpose/SKILL.md",
+      "package_sha256": "75d6c0d800684ef2590015a8a72e91d02287beabb4e7ee068ae37a03a01ccb5b",
+      "source_package": "SimplePost-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aef9d49c58137be18d12c3afd69ab17d6eae4021684baa8d93ea36a6982667b8": {
+      "description_zh": "审查 SimplePost 发布队列的节奏和内容质量，识别排期缺口、重复角度、过期帖子及需重排内容。",
+      "source": "Audits the SimplePost queue for cadence and content hygiene. Use for schedule tidy, queue gaps, duplicate angles, stale posts, or reschedule.",
+      "source_sha256": "aef9d49c58137be18d12c3afd69ab17d6eae4021684baa8d93ea36a6982667b8",
+      "source_path": "skills/schedule-tidy/SKILL.md",
+      "package_sha256": "75d6c0d800684ef2590015a8a72e91d02287beabb4e7ee068ae37a03a01ccb5b",
+      "source_package": "SimplePost-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d631539dbafe24000d7333a115297476f4e2fea27e53899ff5cc6dcb208237e4": {
+      "description_zh": "验证 SimplePost OAuth 和已连接账号，适用于初始设置、首次运行、登录授权或没有可用账号。",
+      "source": "Verifies SimplePost OAuth and connected accounts. Use for setup, first run, sign in, authorization, or no accounts.",
+      "source_sha256": "d631539dbafe24000d7333a115297476f4e2fea27e53899ff5cc6dcb208237e4",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "75d6c0d800684ef2590015a8a72e91d02287beabb4e7ee068ae37a03a01ccb5b",
+      "source_package": "SimplePost-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d2e6f341307b55ddd991ae0e6557b4784e6fd69d151da222f2761796b2bac38": {
+      "description_zh": "通过 SimplePost 发布、排期、起草、预览、检查和管理社交帖子，或通过 MCP、CLI、HTTP、TypeScript 集成。适用于平台操作及集成，不用于通用社交文案写作。",
+      "source": "Publish, schedule, draft, preview, inspect, or manage social posts with SimplePost, or integrate SimplePost through MCP, CLI, HTTP, or TypeScript. Use for SimplePost actions and integrations; do not use for generic social copywriting.",
+      "source_sha256": "2d2e6f341307b55ddd991ae0e6557b4784e6fd69d151da222f2761796b2bac38",
+      "source_path": "skills/simplepost/SKILL.md",
+      "package_sha256": "75d6c0d800684ef2590015a8a72e91d02287beabb4e7ee068ae37a03a01ccb5b",
+      "source_package": "SimplePost-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7093b69a414a6f2bdf7b9920704a727d9b4850e349311a371bedf059f10cbf70": {
+      "description_zh": "创建考虑冲突的 SimplePost 每周内容日历，适用于周计划、发布频率和每周排期。",
+      "source": "Builds a conflict-aware weekly SimplePost calendar. Use for week plan, content calendar, weekly schedule, or posting cadence.",
+      "source_sha256": "7093b69a414a6f2bdf7b9920704a727d9b4850e349311a371bedf059f10cbf70",
+      "source_path": "skills/week-plan/SKILL.md",
+      "package_sha256": "75d6c0d800684ef2590015a8a72e91d02287beabb4e7ee068ae37a03a01ccb5b",
+      "source_package": "SimplePost-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a14c878cbe484999cc7bd28dadacfd8d84ba0b4931a36f3c9a09838ba11fc6a5": {
+      "description_zh": "审查和调试 Simplio3D 配置器，解释损坏、风险或未完成项，查找失效选项引用、缺失材质或 3D 部件、未定价变体及缺少 SKU，诊断选项、变体或部件隐藏原因。",
+      "source": "Audit a Simplio3D configurator and explain what is broken, risky or incomplete. Use when the user asks to audit, review, health-check or debug a Simplio3D project, find broken or dangling option references, missing materials, missing 3D parts, unpriced variants or missing SKUs, or asks why an option, variant or 3D part is hidden or not showing in their Simplio3D configurator.",
+      "source_sha256": "a14c878cbe484999cc7bd28dadacfd8d84ba0b4931a36f3c9a09838ba11fc6a5",
+      "source_path": "skills/configurator-audit/SKILL.md",
+      "package_sha256": "cc142fd5324714544a1c551580fdadbbb49588326bd7bc263e0eea974cb926e4",
+      "source_package": "Simplio3D-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "468edceb5766961c9eb784d65f8f5c1ce37a9b7dfd5fb1d2c62f101b4fe2e827": {
+      "description_zh": "创建或修改 Simplio3D 配置器，管理选项区块、变体、条件显示隐藏、3D 部件可见性、调整尺寸的数值输入、文字图片上传目标及拼接模块。适用于新增选择规则或改变配置行为。",
+      "source": "Create or change a Simplio3D configurator — add or edit option blocks, variants, conditional show/hide rules, 3D part visibility, number inputs that resize the model, text and image-upload targets, and modular (snap-together) modules. Use when the user asks to add an option, variant, choice, rule or module to a Simplio3D project, make something show or hide depending on another selection, build a modular configurator, or change how a Simplio3D configurator behaves.",
+      "source_sha256": "468edceb5766961c9eb784d65f8f5c1ce37a9b7dfd5fb1d2c62f101b4fe2e827",
+      "source_path": "skills/configurator-authoring/SKILL.md",
+      "package_sha256": "cc142fd5324714544a1c551580fdadbbb49588326bd7bc263e0eea974cb926e4",
+      "source_package": "Simplio3D-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfa27dcca5937e7d6e61790cdfd69f6ce564213528219ff5646da00d764148aa": {
+      "description_zh": "查找、复用、创建并分配 Simplio3D 材质，处理饰面、颜色、织物、木材和金属选项、纹理导入及变体或部件赋材，诊断材质平淡、灰色或外观不符。",
+      "source": "Find, reuse, create and assign materials in Simplio3D. Use when the user asks about their Simplio3D materials library, wants to add a finish, colour, fabric, wood or metal option, asks to create or import a material or texture, assign a material to a variant or 3D part, or asks why a material looks flat, grey or wrong on a Simplio3D model.",
+      "source_sha256": "dfa27dcca5937e7d6e61790cdfd69f6ce564213528219ff5646da00d764148aa",
+      "source_path": "skills/materials/SKILL.md",
+      "package_sha256": "cc142fd5324714544a1c551580fdadbbb49588326bd7bc263e0eea974cb926e4",
+      "source_package": "Simplio3D-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4017363a450588ece72945392242fcccf49a47222c4847ba2d0ee063a4bf363": {
+      "description_zh": "解释、计算并修改 Simplio3D CPQ 配置定价，涵盖价格组、价格表、公式、变量、税和币种，以及缺失重复 SKU 和价格或 SKU 批量调整。",
+      "source": "Explain, calculate and change pricing in a Simplio3D configurator (configure-price-quote). Use when the user asks how a Simplio3D project is priced, what a configuration costs, to calculate or check a price, about price groups, price tables, pricing formulas, variables, tax or currency, about missing or duplicate SKUs, or asks to set, change or bulk-adjust prices or SKUs in Simplio3D.",
+      "source_sha256": "c4017363a450588ece72945392242fcccf49a47222c4847ba2d0ee063a4bf363",
+      "source_path": "skills/pricing-cpq/SKILL.md",
+      "package_sha256": "cc142fd5324714544a1c551580fdadbbb49588326bd7bc263e0eea974cb926e4",
+      "source_package": "Simplio3D-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bcb1375ee1e3aa4d071d218c49398f43bedfc093d820d18b7f61acb253842823": {
+      "description_zh": "检查 Simplio3D 配置器是否可发布或分享给客户，列出先修复的事项。适用于上线、网站嵌入、店铺销售前的检查与签署。",
+      "source": "Check whether a Simplio3D configurator is ready to publish or share with customers, and list what must be fixed first. Use when the user asks if a Simplio3D project is ready to publish, go live, share, embed on their website or sell through their store, or wants a pre-launch checklist or sign-off for a Simplio3D configurator.",
+      "source_sha256": "bcb1375ee1e3aa4d071d218c49398f43bedfc093d820d18b7f61acb253842823",
+      "source_path": "skills/publish-readiness/SKILL.md",
+      "package_sha256": "cc142fd5324714544a1c551580fdadbbb49588326bd7bc263e0eea974cb926e4",
+      "source_package": "Simplio3D-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2249f06280f2d1aa7c000680cbaeece2b69bc9fa9c2decf5abe27c0f0b662035": {
+      "description_zh": "依据 Simplio3D 官方文档解答操作、能力、设置位置、选项与价格区块、工作流、套餐、集成及 API、SDK、MCP 连接器问题。",
+      "source": "Answer questions about how Simplio3D works using the official Simplio3D documentation. Use when the user asks how to do something in Simplio3D, whether Simplio3D can do something, where a Simplio3D setting or feature is, what a Simplio3D option block, pricing block, workflow, plan or integration does, or asks about the Simplio3D API, SDK or MCP connector.",
+      "source_sha256": "2249f06280f2d1aa7c000680cbaeece2b69bc9fa9c2decf5abe27c0f0b662035",
+      "source_path": "skills/simplio3d-help/SKILL.md",
+      "package_sha256": "cc142fd5324714544a1c551580fdadbbb49588326bd7bc263e0eea974cb926e4",
+      "source_package": "Simplio3D-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c9fede5bf1fde54ebf7c8090dd8ea73085799d3e7c2e0ca55964f292bf52a96": {
+      "description_zh": "查找 Simplio3D 工作区中的项目、材质和 3D 模型，解释账号、工作区、套餐和权限连接问题。适用于按名称定位对象，以及 forbidden、not_found、限流、登录、订阅或只读错误；原说明也将密码、API key 和令牌相关请求列为导航排障情形。",
+      "source": "Find things in the user's Simplio3D workspace and explain connection or permission problems. Use when the user asks to see or list their Simplio3D projects, materials or 3D models, refers to a Simplio3D project, option, material or model by its name, asks which Simplio3D account, workspace, plan or permissions are connected, asks for Simplio3D, Shopify, WooCommerce or email passwords, API keys or tokens, or when a Simplio3D tool returns forbidden, not_found, rate_limited, a sign-in, subscription or \"read-only\" error.",
+      "source_sha256": "4c9fede5bf1fde54ebf7c8090dd8ea73085799d3e7c2e0ca55964f292bf52a96",
+      "source_path": "skills/workspace-navigation/SKILL.md",
+      "package_sha256": "cc142fd5324714544a1c551580fdadbbb49588326bd7bc263e0eea974cb926e4",
+      "source_package": "Simplio3D-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20a46d43dfab3fdd68b94bf68e382696f99b7a0283b5e474b6a1f07750e17835": {
+      "description_zh": "在发现能力缺口、用户请求或 /singularity-create 触发时，创建新的可复用技能。",
+      "source": "Use when a new reusable skill needs to be built, either detected by gap analysis, requested by the user, or triggered by /singularity-create",
+      "source_sha256": "20a46d43dfab3fdd68b94bf68e382696f99b7a0283b5e474b6a1f07750e17835",
+      "source_path": "skills/creating-skills/SKILL.md",
+      "package_sha256": "9a7173b3eca9a1b0291561dc9ffcd1044e2662b0c7cf0589eddedcdc0a0fb3d9",
+      "source_package": "singularity-claude-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c58d3f60b523e29cdb3f7b5cfe5f1f2e1c0f7cf4804837decd9701d2d1011c5a": {
+      "description_zh": "当技能在多次执行中持续获得高分时，通过 /singularity-crystallize 将其锁定为稳定且不可修改的版本。",
+      "source": "Use when a skill has proven itself with consistently high scores across multiple executions and should be locked as a stable, immutable version via /singularity-crystallize",
+      "source_sha256": "c58d3f60b523e29cdb3f7b5cfe5f1f2e1c0f7cf4804837decd9701d2d1011c5a",
+      "source_path": "skills/crystallizing/SKILL.md",
+      "package_sha256": "9a7173b3eca9a1b0291561dc9ffcd1044e2662b0c7cf0589eddedcdc0a0fb3d9",
+      "source_package": "singularity-claude-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b5f749d846abcf3dc081c5a692e4de884d063076a494a0bf11b389e4759225c": {
+      "description_zh": "通过 /singularity-dashboard 展示全部 Singularity 管理技能的评分、成熟度、趋势及告警概览。",
+      "source": "Use when wanting an overview of all singularity-managed skills showing their scores, maturity levels, trends, and alerts via /singularity-dashboard",
+      "source_sha256": "7b5f749d846abcf3dc081c5a692e4de884d063076a494a0bf11b389e4759225c",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "9a7173b3eca9a1b0291561dc9ffcd1044e2662b0c7cf0589eddedcdc0a0fb3d9",
+      "source_package": "singularity-claude-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "147e32098f3c86588b4f4b345157153fc3dcfa1bc7558538b695cc8a487105dd": {
+      "description_zh": "通过 /singularity-repair 自动修复执行失败、评分低于阈值或输出不正确的 Singularity 管理技能。",
+      "source": "Use when a singularity-managed skill is failing, scoring below threshold, or producing incorrect outputs that need automated correction via /singularity-repair",
+      "source_sha256": "147e32098f3c86588b4f4b345157153fc3dcfa1bc7558538b695cc8a487105dd",
+      "source_path": "skills/repairing/SKILL.md",
+      "package_sha256": "9a7173b3eca9a1b0291561dc9ffcd1044e2662b0c7cf0589eddedcdc0a0fb3d9",
+      "source_package": "singularity-claude-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a532aaa220a00d541bbec0f5a2c01213517107782a2344d6ff0835bd27b28df5": {
+      "description_zh": "通过 /singularity-review 评估技能健康和成熟度，判断是否需修复或已具备锁定稳定版本的条件。",
+      "source": "Use when wanting to assess the health of a singularity-managed skill, check its maturity, decide whether it needs repair or is ready for crystallization via /singularity-review",
+      "source_sha256": "a532aaa220a00d541bbec0f5a2c01213517107782a2344d6ff0835bd27b28df5",
+      "source_path": "skills/reviewing/SKILL.md",
+      "package_sha256": "9a7173b3eca9a1b0291561dc9ffcd1044e2662b0c7cf0589eddedcdc0a0fb3d9",
+      "source_package": "singularity-claude-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7cdb3b38f509dbb06396eeef4c6508c34eff6a319716630a64ecb7feb85f417": {
+      "description_zh": "在 Singularity 管理技能执行后按 0 至 100 评分，追踪质量变化，并在低于阈值时触发修复。",
+      "source": "Use after any singularity-managed skill execution to rate performance 0-100, track quality over time, and trigger repair when scores drop below threshold",
+      "source_sha256": "f7cdb3b38f509dbb06396eeef4c6508c34eff6a319716630a64ecb7feb85f417",
+      "source_path": "skills/scoring/SKILL.md",
+      "package_sha256": "9a7173b3eca9a1b0291561dc9ffcd1044e2662b0c7cf0589eddedcdc0a0fb3d9",
+      "source_package": "singularity-claude-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e06c8c3292586b69c2339a87b3653d25c3ea4ac890be804dbc392296757c6a5": {
+      "description_zh": "作为 Singularity 入口，用于需创建、评估或修复技能的对话，以及任务执行中发现能力缺口的情况。",
+      "source": "Use when starting any conversation where skills may need to be created, evaluated, repaired, or when a capability gap is detected during task execution",
+      "source_sha256": "4e06c8c3292586b69c2339a87b3653d25c3ea4ac890be804dbc392296757c6a5",
+      "source_path": "skills/using-singularity/SKILL.md",
+      "package_sha256": "9a7173b3eca9a1b0291561dc9ffcd1044e2662b0c7cf0589eddedcdc0a0fb3d9",
+      "source_package": "singularity-claude-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f11137c0ce52d332a62886de82f85e141f6d4e3498fdb849b0199bf7f49103cb": {
+      "description_zh": "选择情景喜剧风格的节目及出现频率，或关闭该风格。",
+      "source": "Pick sitcom-flavour shows and frequency, or turn it off",
+      "source_sha256": "f11137c0ce52d332a62886de82f85e141f6d4e3498fdb849b0199bf7f49103cb",
+      "source_path": "skills/flavour/SKILL.md",
+      "package_sha256": "bed1857d42b2ab5e6ef3ec3ed82bb1e228eac1738381ace3165fb6ae5fff227e",
+      "source_package": "Sitcom Flavour-0.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "540511535bc3a77b02c78250011af719b4cabeb97feb00512f20a082c13fd0c6": {
+      "description_zh": "通过 SiteGPT CLI 管理认证、配置、聊天机器人、知识来源、自定义回答、设置、角色、指令、对话、消息、线索、成员、计费和令牌，并排查命令使用问题。",
+      "source": "Use when an AI agent needs to manage SiteGPT through the SiteGPT CLI, including authentication, profiles, chatbots, knowledge sources, custom responses, settings, personas, instructions, conversations, messages, leads, members, billing, tokens, or troubleshooting CLI command usage.",
+      "source_sha256": "540511535bc3a77b02c78250011af719b4cabeb97feb00512f20a082c13fd0c6",
+      "source_path": "skills/sitegpt-cli/SKILL.md",
+      "package_sha256": "1e581d03e2af7d7e755d473d4aa1490d36bc9fc1a72bf40b5ab161e639747c65",
+      "source_package": "SiteGPT-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "082fd992fa4062e427d84882689bbeb0e2bc2a09427d8549b056c0c48aa0208e": {
+      "description_zh": "介绍 SiteGPT 的用途、CLI、MCP、REST API 及无需注册的试用入口，并引导到深入工作流。详细 CLI 操作转用 sitegpt-cli。",
+      "source": "Use when an agent or user mentions SiteGPT and needs orientation - what SiteGPT is, which surface to use (CLI, MCP connector, REST API, or no-signup onboarding), how to try it without an account, and where the deep workflows live. For detailed CLI command workflows, load the sitegpt-cli skill.",
+      "source_sha256": "082fd992fa4062e427d84882689bbeb0e2bc2a09427d8549b056c0c48aa0208e",
+      "source_path": "skills/sitegpt/SKILL.md",
+      "package_sha256": "1e581d03e2af7d7e755d473d4aa1490d36bc9fc1a72bf40b5ab161e639747c65",
+      "source_package": "SiteGPT-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15f5b42569b486d8d57c069a1ccdb9cc7897388e0dac34b20b2835d8ac6ead33": {
+      "description_zh": "依据 Sitelemetry 对用户自有网站的 AI 可见度和技术 SEO 审查，提出有证据支持的 AI 爬虫 robots.txt、Schema.org JSON-LD、llms.txt 及内容修改。仅在发现支持时建议改动，适用于 GEO、AEO 和 AI 抓取理解引用需求。",
+      "source": "Use the Sitelemetry AI visibility (GEO/AEO) and technical SEO audits on a site the user owns to propose evidence-backed changes such as robots.txt rules for AI crawlers, schema.org JSON-LD structured data, an llms.txt file and content edits, each only where the findings support it. Use when the user asks how AI assistants and AI search can crawl, understand or cite their site, or wants to improve GEO, AEO or structured data.",
+      "source_sha256": "15f5b42569b486d8d57c069a1ccdb9cc7897388e0dac34b20b2835d8ac6ead33",
+      "source_path": "skills/ai-visibility/SKILL.md",
+      "package_sha256": "543ff38ac810f65927b11da880a87ac0b368a47e2298bd8d380ceede8224241c",
+      "source_package": "Sitelemetry-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c0643656d542b1c1c9b63b632cfa5898d64feafcd56a46cab441d102284e474": {
+      "description_zh": "解释并协助完成 Sitelemetry 网站所有权验证，处理未验证、证明过期、目标拼写不一致或证明范围不覆盖主机检查等 action_required 情况。支持 DNS TXT、HTTP 文件及 Google Search Console 方法，完成后重试同一审查。",
+      "source": "Explain and help complete Sitelemetry ownership verification when an audit returns action_required because the target is not verified, the proof has expired, the target spelling differs from the verified one, or the proof does not cover host-wide checks. Covers the DNS TXT record, HTTP file and Google Search Console methods, then retries the same audit. Use when an audit asks for verification or the user asks how to verify their site.",
+      "source_sha256": "9c0643656d542b1c1c9b63b632cfa5898d64feafcd56a46cab441d102284e474",
+      "source_path": "skills/domain-verification/SKILL.md",
+      "package_sha256": "543ff38ac810f65927b11da880a87ac0b368a47e2298bd8d380ceede8224241c",
+      "source_package": "Sitelemetry-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e604f7ff23396adace08e162b60b39671e7c123913ce08af98c24e1cfdf2d0e": {
+      "description_zh": "把 Sitelemetry 发现转为适配 nginx、Apache、Cloudflare、Vercel/Next.js、Netlify 或 WordPress 的具体修复，经用户批准实施或交付可用方案，再对同一目标重跑同一审查，如实报告已解决、未解决和未测量项。",
+      "source": "Turn Sitelemetry audit findings into concrete fixes for the user's stack (nginx, Apache, Cloudflare, Vercel or Next.js, Netlify, WordPress), apply them with the user's approval or hand them over ready to use, then re-run the same audit on the same target and report honestly what is resolved, still open or not measured. Use after an audit when the user asks how to fix the findings, wants the changes made, or wants to confirm that a fix worked.",
+      "source_sha256": "3e604f7ff23396adace08e162b60b39671e7c123913ce08af98c24e1cfdf2d0e",
+      "source_path": "skills/fix-and-retest/SKILL.md",
+      "package_sha256": "543ff38ac810f65927b11da880a87ac0b368a47e2298bd8d380ceede8224241c",
+      "source_package": "Sitelemetry-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9008c76040cf2d6c3d7f1bbc412787d330f3b85a81522517a281780f038b605": {
+      "description_zh": "在网站发布、部署、迁移或改版前，用 Sitelemetry 检查安全、性能和无障碍；需要搜索收录时增加技术 SEO，仅依据实测结果区分上线阻碍与警告。",
+      "source": "Run a pre-release check of a website the user owns with Sitelemetry security, performance and accessibility audits, plus technical SEO when the site is meant to be indexed, then summarise launch blockers versus warnings using only measured results. Use when the user is about to launch, deploy, go live, migrate or redesign a site and wants to know what must be fixed first.",
+      "source_sha256": "b9008c76040cf2d6c3d7f1bbc412787d330f3b85a81522517a281780f038b605",
+      "source_path": "skills/pre-launch-check/SKILL.md",
+      "package_sha256": "543ff38ac810f65927b11da880a87ac0b368a47e2298bd8d380ceede8224241c",
+      "source_package": "Sitelemetry-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "faf0b15d5afdef330009a346a6bc474f83a79035966ed93dac6cc3aeb2816fda": {
+      "description_zh": "对用户自有或授权测试的网站执行 Sitelemetry 审查，正确等待长任务，按严重程度汇总发现和优先修复。覆盖安全、技术 SEO、AI 可见度、分析追踪、WCAG 无障碍、Core Web Vitals 和整体健康。",
+      "source": "Run a Sitelemetry audit on a website the user owns or is authorized to test, wait correctly for long-running audits, and present the findings ranked by severity with the top fixes. Use when the user asks to audit, scan, check or score their own site for security, technical SEO, AI visibility, analytics and tracking, accessibility (WCAG) or performance (Core Web Vitals), or asks for an overall site health check.",
+      "source_sha256": "faf0b15d5afdef330009a346a6bc474f83a79035966ed93dac6cc3aeb2816fda",
+      "source_path": "skills/website-audit/SKILL.md",
+      "package_sha256": "543ff38ac810f65927b11da880a87ac0b368a47e2298bd8d380ceede8224241c",
+      "source_package": "Sitelemetry-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c22dadd01296a134a2d5c48324ab7b227fd4a4e02c87a9e1fba069c344699077": {
+      "description_zh": "通过 SiteSpeak 管理 MCP 检查、优化、配置和分流聊天机器人，涵盖分析、模型提示、知识来源、建议消息、线索采集、人工升级、已采集线索及收件箱。适用于改善回答、转化、接入体验和支持表现。",
+      "source": "Use when the user wants to inspect, optimize, configure, or triage a SiteSpeak chatbot - \"look at my chatbot's analytics and optimize it for X\" (more leads, better answers, smoother onboarding, human handoff, happier customers, fewer support tickets, more signups), change the model or prompts, manage knowledge sources, suggested messages, lead capture or escalations, read captured leads, or work the inbox. Connects to the SiteSpeak management MCP.",
+      "source_sha256": "c22dadd01296a134a2d5c48324ab7b227fd4a4e02c87a9e1fba069c344699077",
+      "source_path": "skills/sitespeak-chatbot-manager/SKILL.md",
+      "package_sha256": "93ff9f1a38d32d58ade7140f25a245194ef6c99281d9e5cfeedd44c7f7c8999c",
+      "source_package": "SiteSpeak Chatbot Manager-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97b4aabdee94b871900835414d1879542282abd65c4222240c3bb1b24624b3fd": {
+      "description_zh": "盘点当前机器安装的 AI 智能体技能及常驻指令文件，审查 Claude Code、Codex、Cursor、Copilot、Windsurf、Kiro、Antigravity 和 OpenCode 等加载内容。适用于未知或不可信技能调查及终端技能安全状况检查。",
+      "source": "Inventory the AI-agent skills and standing instruction files installed on this machine. Use when the user asks what skills, agents, rules, or custom instructions are installed; wants to audit or review what Claude Code, Codex, Cursor, Copilot, Windsurf, Kiro, Antigravity, or opencode has loaded; suspects an unknown or untrusted skill; or wants a security posture / inventory of agent skills on the endpoint.",
+      "source_sha256": "97b4aabdee94b871900835414d1879542282abd65c4222240c3bb1b24624b3fd",
+      "source_path": "skills/inventory/SKILL.md",
+      "package_sha256": "bb1212a674c2c40ea97942cb69180161969d1af92d9a0c43242e8881c36b30b5",
+      "source_package": "Skill Discovery-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a8342fe61db527cabd2c1515dc120bb87f0a2f1e21e3bd008e222a78d8f0cbd9": {
+      "description_zh": "将用户安装的技能拟人化为具有不同性格、声音和关系的角色，组织 Campfire 群聊、休闲聚会、团队闲聊或陪伴互动。原说明也将希望放松、感到孤独或压力的情形列为触发场景。",
+      "source": "The Campfire — a social hangout where all of the user's installed skills come alive as distinct characters with personalities, voices, and relationships. Use this skill whenever the user says: \"campfire\", \"hangout\", \"let's talk\", \"how is everyone\", \"what's going on with you guys\", \"skill hangout\", \"bring everyone together\", \"I want to hear from the skills\", \"lounge\", \"living room\", \"gather the team\", \"standup meeting\" (in a casual context), \"what are you all up to\", or any reference to the skills talking to each other, having a group conversation, vibing together, or just wanting company. Also trigger when the user seems lonely, stressed, or just wants to chill — the campfire is always warm.",
+      "source_sha256": "a8342fe61db527cabd2c1515dc120bb87f0a2f1e21e3bd008e222a78d8f0cbd9",
+      "source_path": "skills/campfire/SKILL.md",
+      "package_sha256": "941959cab34a2f645dd972d1f5221e242184e898bcc6930eef8566824dcef655",
+      "source_package": "skill-campfire-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e97f0ee560b95395d4eba213d93ceb7a8ba2db48387c5e4e95bd4e1c58476d9b": {
+      "description_zh": "从最近一次 skill-doctor 备份恢复技能，适用于迁移或升级后出现问题。",
+      "source": "Restore skills from the last skill-doctor backup. Use if upgraded skills cause problems after migration.",
+      "source_sha256": "e97f0ee560b95395d4eba213d93ceb7a8ba2db48387c5e4e95bd4e1c58476d9b",
+      "source_path": "skills/rollback/SKILL.md",
+      "package_sha256": "12d06289c8bef8926dc2f306ddb3ce0fe5a75c5d69b8ef89faa626bf43a5a996",
+      "source_package": "skill-doctor-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a3227b05dfc04d5ecdf8ac9515f02b35b13c12d341933b60d6ea38c0384723f": {
+      "description_zh": "审查并改善 Claude Code 技能和智能体，处理运行缓慢、内容臃肿、功能重叠及配置优化，也为尚无技能的用户提供创建方向。",
+      "source": "Audit and improve your Claude Code skills and agents. Use when skills feel slow, bloated, overlapping, or you want to optimize your setup. Also use when you have no skills and want guidance on what to create.",
+      "source_sha256": "2a3227b05dfc04d5ecdf8ac9515f02b35b13c12d341933b60d6ea38c0384723f",
+      "source_path": "skills/skill-doctor/SKILL.md",
+      "package_sha256": "12d06289c8bef8926dc2f306ddb3ce0fe5a75c5d69b8ef89faa626bf43a5a996",
+      "source_package": "skill-doctor-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd8f770a69f10c98aff64430681582110782986858a4fda6915c87c524f68385": {
+      "description_zh": "依据 skill-doctor 诊断，在暂存目录构建升级技能供测试；需先执行 /skill-doctor 或 checkup 获得诊断。",
+      "source": "Apply skill-doctor diagnosis by building upgraded skills in a staging directory for testing. Run /skill-doctor or /skill-doctor checkup first to generate a diagnosis.",
+      "source_sha256": "dd8f770a69f10c98aff64430681582110782986858a4fda6915c87c524f68385",
+      "source_path": "skills/treat/SKILL.md",
+      "package_sha256": "12d06289c8bef8926dc2f306ddb3ce0fe5a75c5d69b8ef89faa626bf43a5a996",
+      "source_package": "skill-doctor-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a30ec024754a7f342a6dd12b3ede363c2834cf961f406ce450797db771841346": {
+      "description_zh": "按照 Anthropic 指南验证 Claude Code 技能的结构和语义。反模板化检测、安全扫描、令牌分析、企业检查及 Eval Kit 生成转用 skill-check-pro，LinkedIn 技能互动转用 skillcheck-engage。",
+      "source": "Validate Claude Code skills against Anthropic guidelines. Use when user says \"check skill\", \"skillcheck\", \"validate SKILL.md\", or asks to find issues in skill definitions. Covers structural and semantic validation. Do NOT use for anti-slop detection, security scanning, token analysis, enterprise checks, or Eval Kit generation; use skill-check-pro for those. Do NOT use for LinkedIn skill engagement; use skillcheck-engage for that.",
+      "source_sha256": "a30ec024754a7f342a6dd12b3ede363c2834cf961f406ce450797db771841346",
+      "source_path": "skills/skill-check/SKILL.md",
+      "package_sha256": "52040f8b091b286cb298bcb9d3b28b4fcb92a84cadc8a7482f0088b03336d5e4",
+      "source_package": "SkillCheck Free-3.20.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9aeaab4bc115388c01b2171e12cde70a994e03a992bc450d0a23a656cac6bff": {
+      "description_zh": "将 Skillers 知识转成自动化建议，在重复模式中选择 hook、技能或智能体，并编写相应骨架规格。",
+      "source": "Use when turning skillers knowledge into automation suggestions, choosing between a hook, a skill and an agent for a recurring pattern, or writing a scaffold spec for one.",
+      "source_sha256": "c9aeaab4bc115388c01b2171e12cde70a994e03a992bc450d0a23a656cac6bff",
+      "source_path": "skills/recommend/SKILL.md",
+      "package_sha256": "dbbe0450b514b7e5b29426ab5e3f7dd1481f9dfeb3058d5d0b8762b7b32b555a",
+      "source_package": "skillers-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c55aeb871d0f34fc06ad28f52fbbc85396ae95ee936b82a5825cdd2933eeb603": {
+      "description_zh": "将 AI 编码会话记录压缩为 Skillers 知识，或撰写观察条目，定义观察类型和知识文件格式。",
+      "source": "Use when compacting AI coding session transcripts into skillers knowledge, or when writing skillers observations. Defines observation types and the knowledge file format.",
+      "source_sha256": "c55aeb871d0f34fc06ad28f52fbbc85396ae95ee936b82a5825cdd2933eeb603",
+      "source_path": "skills/skillers-compact/SKILL.md",
+      "package_sha256": "dbbe0450b514b7e5b29426ab5e3f7dd1481f9dfeb3058d5d0b8762b7b32b555a",
+      "source_package": "skillers-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa8dbe24364e5ddcdbb2b40e044da67bc3c8419f3a0928fc305a718c628cff0c": {
+      "description_zh": "从指定提交、分支、标签或 merge-base 起审查变化，分别检查仓库编码标准与原始 issue/规格的一致性，通过并行子智能体执行两项审查并并列报告。适用于分支、PR、进行中工作或指定起点的评审。",
+      "source": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "source_sha256": "fa8dbe24364e5ddcdbb2b40e044da67bc3c8419f3a0928fc305a718c628cff0c",
+      "source_path": "skills/engineering/code-review/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63f3b1bed0c9fa4a69c9186b18f1bfecb01d1c636e8a0ff21de8ec096f5a82ea": {
+      "description_zh": "提供深层模块设计的共享术语，适用于接口设计、模块深化、边界选择、可测试性及 AI 导航改善，也供其他技能引用。",
+      "source": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "source_sha256": "63f3b1bed0c9fa4a69c9186b18f1bfecb01d1c636e8a0ff21de8ec096f5a82ea",
+      "source_path": "skills/engineering/codebase-design/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e6fb1c5e62bb8e5fadf5c4653f98e6c79879085f84a1e6f9967ec4c75144bb1": {
+      "description_zh": "建立并完善项目领域模型，适用于代码库术语讨论、CONTEXT.md 编写修改及 ADR 记录维护。",
+      "source": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, or recording or editing an ADR.",
+      "source_sha256": "5e6fb1c5e62bb8e5fadf5c4653f98e6c79879085f84a1e6f9967ec4c75144bb1",
+      "source_path": "skills/engineering/domain-modeling/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed166c9bbf3797f2f99c34c322201936c7cc7183b7c98169550a5a96d47964fa": {
+      "description_zh": "通过持续追问澄清并完善计划或设计，同时逐步生成 ADR 和术语表。",
+      "source": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "source_sha256": "ed166c9bbf3797f2f99c34c322201936c7cc7183b7c98169550a5a96d47964fa",
+      "source_path": "skills/engineering/grill-with-docs/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5e638a4bd5609b97a74310d8cba0043a0427768b6032e0bbd0bdd13654646bf": {
+      "description_zh": "依据规格或工单集合实现具体工作。",
+      "source": "Implement a piece of work based on a spec or set of tickets.",
+      "source_sha256": "a5e638a4bd5609b97a74310d8cba0043a0427768b6032e0bbd0bdd13654646bf",
+      "source_path": "skills/engineering/implement/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55e65013c14e76545700742e72410952b0f7333804b017b5a79051f2721f0932": {
+      "description_zh": "解决正在进行中的 Git merge 或 rebase 冲突。",
+      "source": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+      "source_sha256": "55e65013c14e76545700742e72410952b0f7333804b017b5a79051f2721f0932",
+      "source_path": "skills/engineering/resolving-merge-conflicts/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4db30f214c1f632131e7df0b54b7c21e345828c1d25ff96a3e926ef77e6943e": {
+      "description_zh": "生成交互式 Bash 向导，指导人工完成只有本人能执行的基础设施配置、凭据或 CI 密钥设置、陌生第三方控制台操作、一次性迁移及切换。智能体能自行完成的步骤不使用本项。",
+      "source": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "source_sha256": "f4db30f214c1f632131e7df0b54b7c21e345828c1d25ff96a3e926ef77e6943e",
+      "source_path": "skills/engineering/wizard/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfa8fc1fdb46c4641bfa8299ab2e7f5db13f4b6231f2bf7fce787ea9e043d09a": {
+      "description_zh": "将当前对话交接给新的后台智能体，由其立即继续工作。",
+      "source": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "source_sha256": "dfa8fc1fdb46c4641bfa8299ab2e7f5db13f4b6231f2bf7fce787ea9e043d09a",
+      "source_path": "skills/in-progress/claude-handoff/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a1ba622add88b05fc5c54ddc770fe375570b9177837c176ae95e47fd77612633": {
+      "description_zh": "依据规格编写实现代码。",
+      "source": "Implement a specification in code.",
+      "source_sha256": "a1ba622add88b05fc5c54ddc770fe375570b9177837c176ae95e47fd77612633",
+      "source_path": "skills/in-progress/implement-spec/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3aedcc098dfb1172da338f0c5a8972bc071384e57b495a45c80e464a630c893": {
+      "description_zh": "在当前工作区通过追问明确用户希望构建的工作流规格。",
+      "source": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "source_sha256": "c3aedcc098dfb1172da338f0c5a8972bc071384e57b495a45c80e464a630c893",
+      "source_path": "skills/in-progress/loop-me/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85b9d8ec07c5f18ee5abff1a63fb9d0358bd6855fe586b7c8570283c6bd88324": {
+      "description_zh": "撰写 PR 正文。",
+      "source": "Use when writing a PR body.",
+      "source_sha256": "85b9d8ec07c5f18ee5abff1a63fb9d0358bd6855fe586b7c8570283c6bd88324",
+      "source_path": "skills/in-progress/pr/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c022944046ec31a24ece0d48cf9ac4ada0bf758527941a31b6ab95a94fca0bb7": {
+      "description_zh": "在用户调用时为 TypeScript 仓库接入 dependency-cruiser，将各包组织为深层模块，把实现隐藏于子目录并仅允许通过入口文件访问。",
+      "source": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+      "source_sha256": "c022944046ec31a24ece0d48cf9ac4ada0bf758527941a31b6ab95a94fca0bb7",
+      "source_path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19637b7122700d508f50d699cb66a06eaeb84cb3a9ade103380f323ae04b05c1": {
+      "description_zh": "将写作原始素材组织为连续的叙事节拍，在后续节拍引用术语前先解释其含义。",
+      "source": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "source_sha256": "19637b7122700d508f50d699cb66a06eaeb84cb3a9ade103380f323ae04b05c1",
+      "source_path": "skills/in-progress/writing-beats/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd618adebc7a72975147754b01ba03b5f0e40f5a8734495d9fb96e1071f04a0b": {
+      "description_zh": "在写作探索阶段发掘原始片段，暂不组织结构。",
+      "source": "Writing, explore: mine raw fragments, no structure yet.",
+      "source_sha256": "cd618adebc7a72975147754b01ba03b5f0e40f5a8734495d9fb96e1071f04a0b",
+      "source_path": "skills/in-progress/writing-fragments/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16a7ec4a96bb4a5a49ce32f7cf7519760b0042860c1c42bf5bc4eb801caaa10f": {
+      "description_zh": "在写作成形阶段逐段将原始素材塑造成文章。",
+      "source": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+      "source_sha256": "16a7ec4a96bb4a5a49ce32f7cf7519760b0042860c1c42bf5bc4eb801caaa10f",
+      "source_path": "skills/in-progress/writing-shape/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aefd3e0be77f0961bdfa49de8cf3a5bbba7e55bfbf32c5386aa1a39a42352bcf": {
+      "description_zh": "对计划、决策或创意持续追问，适用于用户希望检验思考的稳健性或要求深入质询。",
+      "source": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "source_sha256": "aefd3e0be77f0961bdfa49de8cf3a5bbba7e55bfbf32c5386aa1a39a42352bcf",
+      "source_path": "skills/productivity/grilling/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca459f68b5f4d982a5cab8afb4f3e000c928ca70a4dc7079277821560da8beea": {
+      "description_zh": "将当前对话压缩成供其他智能体接续的交接文档。",
+      "source": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "source_sha256": "ca459f68b5f4d982a5cab8afb4f3e000c928ca70a4dc7079277821560da8beea",
+      "source_path": "skills/productivity/handoff/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7c3ccc8760562728f92ff39193531273395780316664ad00d1cd0479d33ce15": {
+      "description_zh": "为智能体编写文档，适用于技能创建编辑及 AGENTS.md、CLAUDE.md 修改。",
+      "source": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "source_sha256": "d7c3ccc8760562728f92ff39193531273395780316664ad00d1cd0479d33ce15",
+      "source_path": "skills/productivity/writing-for-agents/SKILL.md",
+      "package_sha256": "fe5597a8715f808cfc805b705ce142e49cada255eb7c616d345fc893a3097855",
+      "source_package": "Skills For Real Engineers-1.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ffc2a7cbabec9d975b268fcf9f91a8c7eb25033985f1904c7dfe3907fe5f937": {
+      "description_zh": "提供 Reanimated 核心规则，涵盖共享值、useAnimatedStyle、useDerivedValue、useAnimatedReaction、useAnimatedProps、worklet、UI/JS 线程及 runOnUI/runOnJS。原说明强调 .value 仅在 worklet 使用，适用于共享值和渲染线程问题。",
+      "source": "Reanimated core — useSharedValue, useAnimatedStyle, useDerivedValue, useAnimatedReaction, useAnimatedProps, worklet rules, UI vs JS thread, runOnUI/runOnJS, and the .value-only-in-worklets rule. Triggers on: shared value, useAnimatedStyle, worklet, runOnJS, UI thread, .value in render.",
+      "source_sha256": "5ffc2a7cbabec9d975b268fcf9f91a8c7eb25033985f1904c7dfe3907fe5f937",
+      "source_path": "skills/mobile/animations/reanimated/core/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "359bf2fba592da400ea571e364d1d5b2a0c9c2011d1d6a6f5d3234fb4f5a6558": {
+      "description_zh": "指导 Reanimated 与 gesture-handler v2 配合，涵盖 Pan、Tap、Pinch、GestureDetector、共享值驱动、withDecay、runOnJS、手势组合及 activeOffset/failOffset。适用于拖动、滑动和缩放。",
+      "source": "Reanimated + gesture-handler v2 — Gesture.Pan/Tap/Pinch, GestureDetector, driving shared values, withDecay, runOnJS, gesture composition, activeOffset/failOffset. Triggers on: gesture, pan, swipe, drag, GestureDetector, withDecay, pinch.",
+      "source_sha256": "359bf2fba592da400ea571e364d1d5b2a0c9c2011d1d6a6f5d3234fb4f5a6558",
+      "source_path": "skills/mobile/animations/reanimated/gestures/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "adafeb2b452f5d01165763827373fe0ab23120ed4b507e0c412af4d99ee55918": {
+      "description_zh": "使用 Reanimated 布局动画处理进入退出效果，涵盖预设、自定义构建器、LinearTransition、CurvedTransition、Keyframe、LayoutAnimationConfig 和 itemLayoutAnimation。原说明将其列为进入退出动画首选。",
+      "source": "Reanimated layout animations — entering/exiting presets, custom builders, LinearTransition/CurvedTransition, Keyframe, LayoutAnimationConfig, itemLayoutAnimation. The first choice for enter/exit. Triggers on: entering, exiting, FadeIn, layout animation, LinearTransition, list item animation.",
+      "source_sha256": "adafeb2b452f5d01165763827373fe0ab23120ed4b507e0c412af4d99ee55918",
+      "source_path": "skills/mobile/animations/reanimated/layout-animations/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c999e3d20a788cbb86db8d66fc78d88e11177ae45d5205fd485572c07cbd579": {
+      "description_zh": "通过 useAnimatedProps 与 TextInput/ReText 模式实现 Reanimated 文字和数字动画，涵盖计数器、逐字符错峰显示、等宽数字及模糊透明度入场。",
+      "source": "Reanimated animated text and numbers — the useAnimatedProps + TextInput (ReText) pattern, animated counters, per-character staggered reveals, tabular figures, blur/opacity mount reveal. Triggers on: animate number, animated counter, ReText, animate text, typewriter, tabular nums.",
+      "source_sha256": "1c999e3d20a788cbb86db8d66fc78d88e11177ae45d5205fd485572c07cbd579",
+      "source_path": "skills/mobile/animations/reanimated/text-and-numbers/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ab3e25a9dec25be4ec2736d5bddf7b4a25b50c4a118f1c57dc240dcab95914f": {
+      "description_zh": "指导 Reanimated 动画时间与物理参数，比较 withTiming、withSpring、withDecay，配置 Easing、弹簧、序列、延迟、重复、取消及减少动态效果，并推荐固定配置。",
+      "source": "Reanimated timing — withTiming vs withSpring vs withDecay, Easing, spring configs, withSequence/withDelay/withRepeat, cancelAnimation, reduced motion, recommended constant configs. Triggers on: withSpring, withTiming, easing, damping stiffness, withRepeat, reduced motion.",
+      "source_sha256": "5ab3e25a9dec25be4ec2736d5bddf7b4a25b50c4a118f1c57dc240dcab95914f",
+      "source_path": "skills/mobile/animations/reanimated/timing/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "77e4eb322aa5ba6eaef3df5171e5726e614204d93f99d7f0ebc0785d68d3ccc7": {
+      "description_zh": "指导 Expo 和 TypeScript 中的 @shopify/react-native-skia，使用声明式 Canvas 图形、共享值、useDerivedValue/useClock、运行时 SkSL 着色器和画布文字图片，并分析 GPU 与 CPU 效果成本。适用于自定义绘图、图表和 GPU 特效。",
+      "source": "Opinionated rules for @shopify/react-native-skia in Expo + TypeScript — the declarative <Canvas> API (Circle/Rect/Path/Group/Paint/gradients/Blur), driving animation from Reanimated shared values with useDerivedValue and useClock, runtime SkSL shaders, on-canvas text/images, and the GPU-vs-CPU cost of every effect — so custom graphics render on the GPU without faking them with nested Views. Triggers on: Skia, Canvas, shader, SkSL, RuntimeEffect, Path, Paint, gradient, Blur, useClock, useImage, useFont, chart/graph, custom drawing, GPU effect, Picture.",
+      "source_sha256": "77e4eb322aa5ba6eaef3df5171e5726e614204d93f99d7f0ebc0785d68d3ccc7",
+      "source_path": "skills/mobile/animations/skia/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c84a8067c9960104910e5c21f404c4d6455725b7af637af7d4b4ff4f99b9a3d2": {
+      "description_zh": "配置或修改 React Native 的 React Navigation，涵盖类型化路由、导航器结构、深层链接、导航动作及屏幕选项。",
+      "source": "React Navigation setup, typed routes, navigator structure, deep linking, and navigation actions. Use when building or modifying navigation in React Native. Triggers on: React Navigation, navigation, typed routes, navigator, stack navigator, tab navigator, deep linking, useNavigation, screen options.",
+      "source_sha256": "c84a8067c9960104910e5c21f404c4d6455725b7af637af7d4b4ff4f99b9a3d2",
+      "source_path": "skills/mobile/navigation/react-navigation/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a314e46c86018741a9da94db46962def8506c87e24eabeabc58a33a904a5825": {
+      "description_zh": "指导 Expo 和 TypeScript 应用实现双平台原生体验，涵盖间距设计令牌、平台分支、适度触觉反馈、Pressable、安全区、全面屏、键盘、滚动、动态字体、无障碍、深色模式和减少动态效果。",
+      "source": "Opinionated rules for making an Expo + TypeScript app feel genuinely native on both platforms — a strict spacing/design-token system, Platform.OS/Platform.select branching, expo-haptics (impact/selection/notification) used with restraint, per-platform Pressable feedback, safe areas and edge-to-edge, keyboard handling, scroll feel, Dynamic Type and accessibility, dark mode, and reduced motion. Triggers on: Platform.select, expo-haptics, impactAsync, selectionAsync, notificationAsync, android_ripple, safe area insets, edge-to-edge, KeyboardAvoidingView, useColorScheme, dark mode, hitSlop, touch target, VoiceOver, TalkBack, reduced motion, spacing tokens.",
+      "source_sha256": "4a314e46c86018741a9da94db46962def8506c87e24eabeabc58a33a904a5825",
+      "source_path": "skills/mobile/styling/native-feel/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76610ae985a3794dc3d5ef1c2f6e17cc1ad76d7206301c4aee9ee913e37e2e7f": {
+      "description_zh": "提供列表性能规则，涵盖 FlashList、稳定 renderItem、独立列表项组件和命名模式。适用于列表构建及优化。",
+      "source": "Strict performance rules for lists — FlashList, stable renderItem, extracted item components, and naming patterns. Use when building or optimizing list views. Triggers on: FlashList, FlatList, renderItem, estimatedItemSize, list performance, list item component, list naming.",
+      "source_sha256": "76610ae985a3794dc3d5ef1c2f6e17cc1ad76d7206301c4aee9ee913e37e2e7f",
+      "source_path": "skills/mobile/ui/lists/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28c54a505e5aca06b16255217a5ff54edcc2775d4ecd4da911612764fb426f64": {
+      "description_zh": "按整洁代码原则编写或审查注释和文档，解释原因、删除重复及失效注释，优先让代码自解释。适用于 TODO、TSDoc 和注释掉的代码。",
+      "source": "Clean-code comments — explain why not how, delete redundant and dead comments, prefer self-explaining code. Use when writing or reviewing comments and docs. Triggers on: comment, commented-out code, TODO, TSDoc, why not how, dead code.",
+      "source_sha256": "28c54a505e5aca06b16255217a5ff54edcc2775d4ecd4da911612764fb426f64",
+      "source_path": "skills/shared/clean-code/comments/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3d7c4a0832b9bacc5ee0d96071a8ac4e17fe15fb790dc270aba35073fe475cd": {
+      "description_zh": "提供整洁代码的错误处理规则，主张异常优于错误码、在边界包装第三方 API、不把 catch 当条件分支，以及不返回或传递 null。适用于失败路径和错误边界设计。",
+      "source": "Clean-code error handling — exceptions over error codes, wrap third-party APIs at a boundary, don''t use catch as an if, don''t return or pass null. Use when designing failure paths and error boundaries. Triggers on: error handling, exceptions, try catch, error codes, wrap library, throw, return null, empty array, null checks.",
+      "source_sha256": "e3d7c4a0832b9bacc5ee0d96071a8ac4e17fe15fb790dc270aba35073fe475cd",
+      "source_path": "skills/shared/clean-code/error-handling/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b18d875daed6f867f70d2371071eae6279ef7875e11779150091e8924b46dfc4": {
+      "description_zh": "指导代码排序和格式，涵盖从高层到细节的纵向组织、变量靠近使用处声明及团队统一格式工具。适用于 Prettier、ESLint、代码顺序和间距。",
+      "source": "Clean-code formatting — vertical ordering (stepdown/newspaper), declaring near use, team-enforced tooling. Use when ordering or formatting code. Triggers on: formatting, code order, Prettier, ESLint, vertical spacing, where to declare variables.",
+      "source_sha256": "b18d875daed6f867f70d2371071eae6279ef7875e11779150091e8924b46dfc4",
+      "source_path": "skills/shared/clean-code/formatting/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9a53cc67f3ea05b25065df65d73a4383e203bf8d4bfdd3a2c16beb5c9b9c46b": {
+      "description_zh": "按整洁代码原则编写和评审函数，强调短小、单一职责、统一抽象层、少参数、无副作用、命令查询分离、DRY 及有纪律的重构。",
+      "source": "Clean-code functions — small, do one thing, one abstraction level, few arguments, no side effects, command-query separation, plus DRY and refactor discipline. Use when writing or reviewing functions. Triggers on: function too long, do one thing, too many arguments, side effects, command query, DRY, extract function, refactor.",
+      "source_sha256": "f9a53cc67f3ea05b25065df65d73a4383e203bf8d4bfdd3a2c16beb5c9b9c46b",
+      "source_path": "skills/shared/clean-code/functions/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "264dab8056551106aa7cf18cbce0c0bc23bd74b41eb00e9481efa9dcf35ddbcb": {
+      "description_zh": "为变量、函数、类型及组件选择表达意图、真实、可区分、可读和可搜索的名称，避免类型编码。适用于重命名、魔法数字及含糊名称审查。",
+      "source": "Clean-code naming — intention-revealing, honest, distinct, pronounceable, searchable names with no type encoding. Use when naming or reviewing variables, functions, types, and components. Triggers on: naming, rename, meaningful names, magic number, Hungarian notation, unclear name.",
+      "source_sha256": "264dab8056551106aa7cf18cbce0c0bc23bd74b41eb00e9481efa9dcf35ddbcb",
+      "source_path": "skills/shared/clean-code/meaningful-names/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06e513dbd42233b62fa6cf65bb9d961aae9fb37b0e0378f23702992a9678a4cb": {
+      "description_zh": "指导对象与数据结构设计，涵盖 Tell Don't Ask、对象数据反对称性、迪米特法则和契约优先。适用于封装、DTO 与类的选择及模块边界。",
+      "source": "Clean-code objects vs. data structures — Tell Don''t Ask, object/data anti-symmetry, Law of Demeter, contract-first design. Use when designing types, classes, and module boundaries. Triggers on: encapsulation, Tell Don''t Ask, Law of Demeter, train wreck, DTO vs class, interface first.",
+      "source_sha256": "06e513dbd42233b62fa6cf65bb9d961aae9fb37b0e0378f23702992a9678a4cb",
+      "source_path": "skills/shared/clean-code/objects-and-data/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffbb2fd73cf9afa10930c194a0230d08b5804c0a1d14d15facdfa5185d3e728b": {
+      "description_zh": "指导自定义 React hook 的命名、逻辑提取及视图与逻辑分离，适用于创建重构 hook 或将状态从组件移出。",
+      "source": "Rules for custom hooks — naming, logic extraction, and separation of view and logic. Use when creating or refactoring hooks. Triggers on: custom hook, use prefix, extract logic into hook, separate view and logic, move state out of component.",
+      "source_sha256": "ffbb2fd73cf9afa10930c194a0230d08b5804c0a1d14d15facdfa5185d3e728b",
+      "source_path": "skills/shared/hooks/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d966250a7e94ce7c179fe17a5ea21fa96b6177b9643685654cddfbbe8073ff50": {
+      "description_zh": "解释子系统架构、运行流程和入门理解，适用于修改前代码导览及代码位置、包责任和分层问题，也可评价架构；设计动机转用 why。",
+      "source": "Use for \"how does X work\", code walkthroughs before changing something, and placement / ownership / layering questions (\"where should this live\", \"which package owns this\", \"is this the right layer\"). Explains subsystem architecture, runtime flow, onboarding mental models. Can critique architecture. Use why for motivation.",
+      "source_sha256": "d966250a7e94ce7c179fe17a5ea21fa96b6177b9643685654cddfbbe8073ff50",
+      "source_path": "skills/shared/how/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5d08524ffb62e2d2bf57bd89a690a8aaaf419842cb89dc95bc48cb9427eb234": {
+      "description_zh": "指导分层多智能体编排，由成本较高的模型规划和综合、专项子智能体在隔离上下文中执行，涵盖路由、并行分发、上下文隔离及成本模型。适用于跨文件多步骤任务和智能体分工选择。",
+      "source": "Tiered multi-agent orchestration — an expensive model plans and synthesizes while specialized subagents do the work in their own isolated contexts. Covers the agent tiers, routing rules, why context isolation saves tokens, parallel fan-out, and the cost model. Use when a task spans multiple files or steps, or when deciding which agent should do what. Triggers on: orchestrate, delegate, subagent, multi-agent, which agent, model tier, deep-reasoner, fast-worker, token budget, context isolation, plan and delegate, cost.",
+      "source_sha256": "b5d08524ffb62e2d2bf57bd89a690a8aaaf419842cb89dc95bc48cb9427eb234",
+      "source_path": "skills/shared/orchestration/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "daed15df91008b3601d0a2f05455144df5ed511cc01d63b54e8223732fe760e8": {
+      "description_zh": "指导 Turborepo 单仓结构，组织 core、platform、feature 包及 mobile、web、backend、e2e 应用，明确依赖方向、包边界、公开 API 和包内结构。适用于新建包、功能、应用及连接依赖。",
+      "source": "Monorepo project structure — Turborepo layout with packages/core-*, packages/platform-*, packages/feature-*, and deployable apps (mobile, web, backend, e2e), dependency direction, package boundaries, public-API exports, and per-package internal structure. Use when creating packages/features/apps, wiring dependencies, or structuring a module. Triggers on: monorepo, turborepo, package, core-, feature-, platform-, apps, index.ts, public API, deep import, dependency direction, workspace.",
+      "source_sha256": "daed15df91008b3601d0a2f05455144df5ed511cc01d63b54e8223732fe760e8",
+      "source_path": "skills/shared/project/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8be0f75107b48a491c77222a3e17eea981dcf0d7baf9eaf392ba83dc32fb2022": {
+      "description_zh": "结合 how 和 why 的发现，用清晰语言讲解一项工作、变更或子系统，帮助用户理解机制和设计原因。",
+      "source": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
+      "source_sha256": "8be0f75107b48a491c77222a3e17eea981dcf0d7baf9eaf392ba83dc32fb2022",
+      "source_path": "skills/shared/teach/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0fe18b8f5cb71dbf52a364f94f599dcf571f133d6cc873a1ef2f838478e716e3": {
+      "description_zh": "提供严格 TypeScript 类型规则，主张 type 优先、避免 any 和 as 转换，采用窄字面量联合、判别联合、构造性建模、never 穷尽检查、satisfies、品牌类型、边界校验及安全数组索引。适用于类型定义、组合及审查。",
+      "source": "Strict TypeScript typing — type over interface, no any, no as casts, narrow literal unions, discriminated unions, constructive modeling, exhaustive switch with never, satisfies, branded types, boundary validation, and safe array indexing. Use when defining, composing, or reviewing types. Triggers on: type over interface, no any, no enum, unknown, as cast, narrow types, string-literal union, discriminated union, constructive modeling, NonEmpty, exhaustiveness, never, assertNever, satisfies, as const, keyof, typeof, utility types, Pick, Omit, Record, noUncheckedIndexedAccess, array indexing, branded type, narrowing hierarchy, type guard, boundary validation, schema-derived types, object args, type safety.",
+      "source_sha256": "0fe18b8f5cb71dbf52a364f94f599dcf571f133d6cc873a1ef2f838478e716e3",
+      "source_path": "skills/shared/type-safety/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f3fc5ac0b313fb80a09fe441f65e91e0371eb699960e11368079b55fb537d98": {
+      "description_zh": "按原子设计组织 core-ui 的 atoms、molecules、organisms 和 templates，高层仅组合低层。Button、Input 等基础组件直接入共享库，功能专属 UI 先留本地，第二处需要时再下沉并泛化；涵盖文件约定和组件提升策略。",
+      "source": "Structure the UI library (core-ui) with Atomic Design — atoms, molecules, organisms, templates — where composition flows one way (higher composes lower). Covers which level a component belongs to, the file/folder conventions, and the promotion policy: obvious primitives (Button, Input) go straight into core-ui/atoms, but feature-specific UI stays local to its feature until it''s needed in a second place, then it''s promoted down into core-ui and generalized. Use when organizing a component library, deciding where a component lives, or extracting a shared component. Triggers on: atomic design, atoms, molecules, organisms, templates, core-ui, design system, ui library, component library, where does this component go, promote component, extract to core-ui, when to extract, rule of three, premature abstraction, component reuse.",
+      "source_sha256": "8f3fc5ac0b313fb80a09fe441f65e91e0371eb699960e11368079b55fb537d98",
+      "source_path": "skills/shared/ui/atomic-design/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74fae163dafd90f4f36043117c61375a215af2c7ed35e4e054550b899b3cb6fd": {
+      "description_zh": "定义 React 组件结构、props 类型、职责分离和 ref 处理模式，适用于组件创建及重构。",
+      "source": "Defines component structure, prop typing, responsibility separation, and ref handling patterns. Use when creating or refactoring React components. Triggers on: component structure, FC, prop type, forwardRef, ref handling, split component, responsibility separation.",
+      "source_sha256": "74fae163dafd90f4f36043117c61375a215af2c7ed35e4e054550b899b3cb6fd",
+      "source_path": "skills/shared/ui/component-architecture/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c51d0742d824f665d9df04588a9978418763fad4eefebde4a7682d412da92bfc": {
+      "description_zh": "构建共享上下文的复合组件，以 Tabs.Item 等命名空间部件供使用者自由布局，通过 Object.assign 或对象导出。涵盖保护性 hook、上下文值记忆化、受控非受控混合、原始 Provider 暴露、状态提升及 state/actions/meta 约定，其中 meta 保存 ref 和非响应句柄。",
+      "source": "Build flexible components as a compound/composer set — namespaced parts (Tabs.Item, WizardCard.Provider) that share one context, exposed via Object.assign or an object literal. Covers the context + guard-hook pattern, memoizing the context value, the controlled/uncontrolled hybrid, exposing the raw Provider so the state source can be lifted all the way up to a global hook, and the state / actions / meta context convention where meta holds refs and non-reactive handles. Use when a component has several parts that share state or the consumer needs to arrange those parts freely. Triggers on: compound component, composer component, Object.assign component, namespaced component, dot-notation component, sub-components, Tabs.Item, expose Provider, lift state up, state actions meta, refs in meta, shared context, controlled uncontrolled, useContext guard.",
+      "source_sha256": "c51d0742d824f665d9df04588a9978418763fad4eefebde4a7682d412da92bfc",
+      "source_path": "skills/shared/ui/compound-components/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aae8fb8e9f120fbe96b79d315fc67ce12026532a55dbd03e2af5a88897823835": {
+      "description_zh": "完善跨平台交互反馈，涵盖按压缩放 0.96、触觉、悬停、焦点环、禁用加载状态、最小点击区域及 will-change；原说明不使用 transition:all。",
+      "source": "Cross-platform interaction polish — press/tap feedback (scale 0.96), haptics, hover, focus rings, disabled/loading, minimum hit area, no transition:all, will-change. Triggers on: press feedback, scale on press, haptics, ripple, hover, focus-visible, active state.",
+      "source_sha256": "aae8fb8e9f120fbe96b79d315fc67ce12026532a55dbd03e2af5a88897823835",
+      "source_path": "skills/shared/ui/interactions/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8a0d43c7d8773fc51ac4fb0bc6bc9a16f8f7d48db710ee377027130bf624af7": {
+      "description_zh": "完善跨平台动效，涵盖可中断动画、分组错峰入场、轻微退出、上下文图标交叉淡入和首次加载跳过动画。网页采用 CSS/Tailwind 与 GSAP，不使用其他 motion 库。",
+      "source": "Cross-platform motion polish — interruptible animations, split & stagger enter, subtle exit, contextual icon cross-fade, skip-animation-on-load. Web uses CSS/Tailwind + GSAP (no motion library). Triggers on: stagger, enter animation, exit animation, icon cross-fade, interruptible, GSAP stagger, skip animation on first load.",
+      "source_sha256": "d8a0d43c7d8773fc51ac4fb0bc6bc9a16f8f7d48db710ee377027130bf624af7",
+      "source_path": "skills/shared/ui/motion/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bdb4c15f53c4bc5de3d650268637d20a00b4a8aa9d16c50e12a819efd3db4d5": {
+      "description_zh": "优化组件渲染性能，使用记忆化和稳定引用，避免不必要重渲染。适用于 useMemo、useCallback、JSX 内联函数和内联对象 props。",
+      "source": "Enforces rendering performance best practices — memoization, stable references, and avoiding unnecessary re-renders. Use when optimizing component performance. Triggers on: re-render, useMemo, useCallback, memoization, stable reference, inline arrow in JSX, inline object prop.",
+      "source_sha256": "1bdb4c15f53c4bc5de3d650268637d20a00b4a8aa9d16c50e12a819efd3db4d5",
+      "source_path": "skills/shared/ui/performance/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f65e412b3d0886cab99c1e4695a8dc90e6800cf15da6208bf924c3702f081261": {
+      "description_zh": "完善跨平台界面表面表现，涵盖同心圆角、视觉对齐、阴影与 elevation、图片轮廓及最小点击区域。",
+      "source": "Cross-platform surfaces polish — concentric border radius, optical alignment, shadows vs. elevation, image outlines, minimum hit areas. Triggers on: concentric radius, optical alignment, box-shadow, elevation, image outline, hitSlop, hit area.",
+      "source_sha256": "f65e412b3d0886cab99c1e4695a8dc90e6800cf15da6208bf924c3702f081261",
+      "source_path": "skills/shared/ui/surfaces/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "945dff2cd1510841bd6122d13a29353628abb63cf2af09fbb707357784963635": {
+      "description_zh": "完善 React 网页及 React Native 排版，涵盖平衡换行、字体平滑、等宽数字、Dynamic Type、自动字体适配、字距及避免布局跳动。",
+      "source": "Cross-platform (React web + React Native) typography polish — text-wrap balance/pretty, font smoothing, tabular numbers, Dynamic Type, adjustsFontSizeToFit, letter spacing, layout-shift avoidance. Triggers on: text wrapping, tabular numbers, font smoothing, Dynamic Type, adjustsFontSizeToFit, orphan.",
+      "source_sha256": "945dff2cd1510841bd6122d13a29353628abb63cf2af09fbb707357784963635",
+      "source_path": "skills/shared/ui/typography/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f648f486dd62f4d54561496b632c735c1ba736674ec89e0d0ae01a63982f578a": {
+      "description_zh": "删除写作中的模板化 AI 表达并恢复作者声音，适用于 README、文档、提交信息、PR、变更日志、版本说明、代码注释及博客的起草和编辑。",
+      "source": "Cut AI tells from writing and put a real voice back in. Use when drafting or editing any prose: READMEs, docs, commit messages, PR descriptions, changelogs, release notes, code comments, blog posts. Triggers on: unslop, slop, AI tells, sounds like AI, robotic, em dash, delve, tapestry, prose, writing style, tone of voice, README, PR description, commit message.",
+      "source_sha256": "f648f486dd62f4d54561496b632c735c1ba736674ec89e0d0ae01a63982f578a",
+      "source_path": "skills/shared/unslop/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03801c7da8606186eefa1513ea3b8e4cda54a0f71544b387a22d736bbb73a27e": {
+      "description_zh": "调查代码设计动机及历史，包括选择原因、被拒方案、事故或客户如何促成阈值。按 Git/GitHub、工单、文档、团队聊天、可观测性、错误追踪及分析仓库等证据来源并行安排子智能体查询，输出带引用、置信度和缺口的解释。",
+      "source": "Investigate why code is the way it is — design rationale, rejected alternatives, the incident or customer that forced a threshold. Use when the question is about motivation and history rather than mechanics. Enumerates the available evidence sources (git/gh, issue tracker, long-form docs, team chat, observability, error tracking, analytics warehouse), queries them in parallel with one subagent each, and returns a cited, confidence-calibrated read with the gaps named. Triggers on: why does this work this way, why did we pick, design rationale, historical context, archaeology, git blame, postmortem, regression, where did this number come from, rejected alternatives, tradeoffs, decision record, who decided, what forced this.",
+      "source_sha256": "03801c7da8606186eefa1513ea3b8e4cda54a0f71544b387a22d736bbb73a27e",
+      "source_path": "skills/shared/why/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5931b2b2e87239aa01fcde547f6db0231869a36e5e4af8f6614d85a651ef6769": {
+      "description_zh": "指导不需 JavaScript 时间线的纯 CSS 动画，涵盖可中断过渡、关键帧、错峰入场、轻微退出、图标交叉淡入、按压缩放、明确过渡属性、will-change 及减少动态效果。需要时间线时使用 GSAP。",
+      "source": "Pure-CSS web animations best practices — interruptible transitions vs. keyframes, staggered enter, subtle exit, icon cross-fade with no motion library, scale-on-press, transition specificity, will-change, and prefers-reduced-motion. Use for web motion that doesn''t need a JS timeline (reach for GSAP when it does). Triggers on: CSS transition, keyframes, animation-delay, stagger, will-change, transition all, reduced motion, scale on press, icon cross-fade, cubic-bezier.",
+      "source_sha256": "5931b2b2e87239aa01fcde547f6db0231869a36e5e4af8f6614d85a651ef6769",
+      "source_path": "skills/web/animations/css/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43ac22895b03bb3447ab4ddbb1bed70dd5bfb3003adadbfe85873edb0bf6dab7": {
+      "description_zh": "优化 GSAP 动画性能，限定 transform/opacity 动画、提取时长和缓动常量，并处理 will-change、force3D、ScrollTrigger 性能及减少动态效果。",
+      "source": "GSAP performance — animate transform/opacity only, extract duration/easing constants, will-change, force3D, ScrollTrigger perf, prefers-reduced-motion. Use when optimizing web animations. Triggers on: jank, will-change, transform opacity, reduced motion, gsap performance.",
+      "source_sha256": "43ac22895b03bb3447ab4ddbb1bed70dd5bfb3003adadbfe85873edb0bf6dab7",
+      "source_path": "skills/web/animations/gsap/performance/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9036d01bbc6c18b386c8408a05af4ba3389927acf30110c870d00aa915b0cfd9": {
+      "description_zh": "在 React/Next.js 中接入 GSAP，涵盖 useGSAP、scope、contextSafe、自动清理、插件注册及 SSR，原说明要求不直接对 React state 做动画。",
+      "source": "GSAP with React/Next.js — the useGSAP hook, scope, contextSafe, automatic cleanup, plugin registration, never animating React state, SSR. Use when wiring GSAP into React. Triggers on: useGSAP, gsap.context, cleanup, contextSafe, registerPlugin, next.js use client.",
+      "source_sha256": "9036d01bbc6c18b386c8408a05af4ba3389927acf30110c870d00aa915b0cfd9",
+      "source_path": "skills/web/animations/gsap/react/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d760895675315ecad278d8c7ca1d1078e11e674db599339720fc62fb650a5f6": {
+      "description_zh": "使用 GSAP ScrollTrigger 构建滚动关联动画，配置 trigger/start/end、scrub、pin、toggleActions、snap、batch、响应式 matchMedia 和清理。",
+      "source": "GSAP ScrollTrigger — trigger/start/end, scrub, pin, toggleActions, snap, batch, responsive matchMedia, cleanup. Use for scroll-linked web animations. Triggers on: ScrollTrigger, scroll animation, scrub, pin, parallax, markers.",
+      "source_sha256": "3d760895675315ecad278d8c7ca1d1078e11e674db599339720fc62fb650a5f6",
+      "source_path": "skills/web/animations/gsap/scroll-trigger/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b74dcc01f02d93db1cdabe975c0ce4d2702582c8b8eb98498e5275a974e637fb": {
+      "description_zh": "使用 GSAP SplitText 将文字拆为字符、词或行，制作错峰显示和行遮罩，并处理字体加载、无障碍恢复及减少动态效果。",
+      "source": "GSAP SplitText type/text animations — split into chars/words/lines, staggered reveals, line masking, font readiness, revert for a11y, reduced motion. Use for animated text reveals. Triggers on: SplitText, text reveal, type animation, word stagger, line mask.",
+      "source_sha256": "b74dcc01f02d93db1cdabe975c0ce4d2702582c8b8eb98498e5275a974e637fb",
+      "source_path": "skills/web/animations/gsap/text/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ccd01eab38aad1e1a67decc2ce70f3df664af1c9ccdd013c547e1ae11fbbb72": {
+      "description_zh": "通过 GSAP 3 时间线编排网页动画，涵盖顺序、默认值、标签、相对位置、错峰、重复/yoyo、控制方法和嵌套。",
+      "source": "GSAP 3 timelines — sequencing, defaults, labels, relative position, stagger, repeat/yoyo, control methods, nesting. Use when building sequenced web animations. Triggers on: gsap timeline, sequence, stagger, labels, yoyo, timeScale.",
+      "source_sha256": "7ccd01eab38aad1e1a67decc2ce70f3df664af1c9ccdd013c547e1ae11fbbb72",
+      "source_path": "skills/web/animations/gsap/timelines/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
