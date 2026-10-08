@@ -68569,6 +68569,1086 @@
       "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
       "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ac80a5dba42bf6924be8d7bd5b9edeb15dd7e0ba3b8f9b8e5bacc166bfb4d33": {
+      "description_zh": "指导 Next.js App Router 的路由结构、布局、服务端与客户端组件、动态路由、加载错误状态、元数据及导航，适用于路由构建或修改。",
+      "source": "Next.js App Router patterns — route structure, layouts, server vs client components, dynamic routes, loading/error states, metadata, and navigation. Use when building or modifying routing. Triggers on: App Router, route, layout, server component, client component, dynamic route, loading.tsx, error.tsx, metadata, useRouter, Link.",
+      "source_sha256": "2ac80a5dba42bf6924be8d7bd5b9edeb15dd7e0ba3b8f9b8e5bacc166bfb4d33",
+      "source_path": "skills/web/navigation/nextjs-routing/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83fa61caaa4f798b5e03fb4e084b510f228e20f6213857411f1941f8e21f24e4": {
+      "description_zh": "提供 Tailwind CSS 约定，采用工具类和直接使用的语义主题令牌，将明暗模式切换集中配置，避免任意值，规范类顺序，并使用 cn() 合并条件类及 tv()/tailwind-variants 管理组件变体。",
+      "source": "Tailwind CSS conventions — utility-first, semantic theme tokens used directly (so light/dark flips in one place, not a dark: on every element), no arbitrary values, class ordering, cn() for conditional/merged classes, and tv() (tailwind-variants) for component variants. Use when styling web components with Tailwind. Triggers on: Tailwind, utility classes, class ordering, responsive, dark mode, light dark, theme tokens, design tokens, CSS variables, cn, clsx, twMerge, tailwind-variants, tv, variants, cva.",
+      "source_sha256": "83fa61caaa4f798b5e03fb4e084b510f228e20f6213857411f1941f8e21f24e4",
+      "source_path": "skills/web/styling/tailwind/SKILL.md",
+      "package_sha256": "eb280cb98884dc4473a9e229141d3a63d76c8bf409068b7fed02cc0e397c2001",
+      "source_package": "Skills For Real ReactReact Native Engineers-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b9eb439c8d2eed3ff879245f02a166c6b426d180c817554f2afb34c1c96fecf": {
+      "description_zh": "通过 STH 的 library_search、library_get、library_save、asset_search 和 asset_get 查找复用团队已有提示、智能体、技能、规则、命令及工作流，也用于保存本次会话中值得保留的团队资产。",
+      "source": "Use when the user asks for a prompt, agent, skill, rule, command or workflow the team may already have — \"do we have a prompt for X\", \"find our cold email prompt\", \"reuse the code review prompt\", \"what''s in the library\" — and when something produced in this session is worth keeping for the team. Covers the STH library tools: library_search, library_get, library_save, asset_search, asset_get.",
+      "source_sha256": "1b9eb439c8d2eed3ff879245f02a166c6b426d180c817554f2afb34c1c96fecf",
+      "source_path": "skills/sth-library/SKILL.md",
+      "package_sha256": "b7f17501983f0daf7bf0b58119eb262b4f0343b9142f9795467487cca6142ce2",
+      "source_package": "Skills Transfer Hub-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a13fbb2e59c30ecfa5e7a31b504d6354eda46691a6bbb2714dec184c78b8cbd7": {
+      "description_zh": "在不同 AI 编码工具间迁移或转换智能体、命令、指令、规则、技能和工作流，先读取 STH 兼容矩阵，明确有损或不支持的转换及安装位置。",
+      "source": "Use when moving or converting an agent, command, instruction, rule, skill or workflow between AI coding tools — \"port this skill to Codex\", \"does this rule work in Cursor\", \"make this a Copilot instruction\", \"where does this install\", \"will this survive the conversion\". Reads the STH compatibility matrix first, so lossy and unsupported conversions are named instead of silently botched.",
+      "source_sha256": "a13fbb2e59c30ecfa5e7a31b504d6354eda46691a6bbb2714dec184c78b8cbd7",
+      "source_path": "skills/sth-transfer/SKILL.md",
+      "package_sha256": "b7f17501983f0daf7bf0b58119eb262b4f0343b9142f9795467487cca6142ce2",
+      "source_package": "Skills Transfer Hub-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2a879ae176db49c37ce6025a756ad2965eca8ca3c58d756624124129f37e986": {
+      "description_zh": "调用架构专项子智能体分析项目结构、分层和依赖，遵循 CLAUDE.md 中声明的规则。适用于结构评估、代码归属和结构重构。",
+      "source": "Invokes the architect — subagent that reasons about project structure, layers and dependencies. Applies the laws declared in CLAUDE.md. Use for \"is this structure ok?\", \"where should this live?\", structural refactors.",
+      "source_sha256": "b2a879ae176db49c37ce6025a756ad2965eca8ca3c58d756624124129f37e986",
+      "source_path": "skills/architect/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ceb56ce09facb383c58f66ed9f4404b2d9af85a030393497a6f21f412c4332d": {
+      "description_zh": "由 Skipper 依据编辑路径、意图关键词和技术栈，将开放问题分流给适合的专家。适用于不确定调用哪个专项技能时的结构或质量提问。",
+      "source": "Free-form question that captain Skipper routes to the right specialist based on edited paths, intent (keywords) and project stack. Shortcut when you're not sure which specialist to invoke manually. Use for \"is this structure ok?\", \"this smells bad\", open questions.",
+      "source_sha256": "9ceb56ce09facb383c58f66ed9f4404b2d9af85a030393497a6f21f412c4332d",
+      "source_path": "skills/ask/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73419180f7b43673065df37f491ed949aee28e8e392a2256c2dc121c96fcad74": {
+      "description_zh": "依次明确问题、实际可选方案、权衡和建议，促成技术或产品决策并记录为完整预填的 ADR。适用于存在真实替代方案且需保存的决策。",
+      "source": "Facilitate a decision (problem then real options then tradeoffs then recommendation) and capture it as a complete, pre-filled ADR — the brainstorm-to-decision loop. Use when you are about to make, or just made, a technical or product decision with real alternatives and want it recorded instead of lost in a chat thread.",
+      "source_sha256": "73419180f7b43673065df37f491ed949aee28e8e392a2256c2dc121c96fcad74",
+      "source_path": "skills/decide/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc6235393493216d0d085d35dc8d630d6bc4cb171652a1a203546e908de2f22c": {
+      "description_zh": "只读诊断 docs/ 健康，检查代码变化后过期文档、仍含占位符的 ADR/PRD/计划、文档内坏链接及空目录，并报告严重程度表。适用于定期或发布前检查。",
+      "source": "Diagnoses the health of docs/ — stale docs (code moved while the doc didn't), stub ADRs/PRDs/plans with unfilled template placeholders, broken intra-doc links, and empty folders. Read-only, reports a severity table. Use periodically or before a release.",
+      "source_sha256": "cc6235393493216d0d085d35dc8d630d6bc4cb171652a1a203546e908de2f22c",
+      "source_path": "skills/docs-doctor/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "daa19c6a59ef78cdd570c7d1225ada79a70cde009b5ec7a93fd38ac460e19f54": {
+      "description_zh": "在构建前先查项目现有 ADR/PRD，再通过追问澄清真正未决的问题，形成有既有决策依据的明确目标和验收条件。适用于非简单实现或模糊请求。",
+      "source": "Memory-aware grilling to lock the objective before building. Consults the project's existing decisions (ADRs/PRDs) FIRST, then asks only the genuinely-open clarifying questions, and states an explicit goal + acceptance criteria grounded in those decisions. Use before implementing anything non-trivial, or whenever the request is fuzzy.",
+      "source_sha256": "daa19c6a59ef78cdd570c7d1225ada79a70cde009b5ec7a93fd38ac460e19f54",
+      "source_path": "skills/goal/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6c971cf8ea90cfc5276988ec0fe1fb26095f8bb50ce997419f7c705798263ce": {
+      "description_zh": "按应用、服务或库类型创建初始 docs/ 结构，在各目录加入协议 README.md，识别技术栈并提供特定配置方案。适用于项目首次接入插件。",
+      "source": "Creates the initial docs/ structure for the project type (app, service or library), with a protocol README.md in each folder, then detects the stack and offers to apply an opinionated profile. Use once when adopting the plugin in a project.",
+      "source_sha256": "f6c971cf8ea90cfc5276988ec0fe1fb26095f8bb50ce997419f7c705798263ce",
+      "source_path": "skills/init-structure/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "032475a59d1d6831cb30d27bab9316487a84cc1ac321345b3d33d6068cd8b12e": {
+      "description_zh": "由技术栈专家使用 WebSearch 和 WebFetch 查询适配当前栈的官方库文档与模式，综合判断并总结。适用于库选型、方案比较和最新 API 查询。",
+      "source": "Looks up libraries/patterns in official docs (WebSearch + WebFetch) scoped to the current stack. Useful for \"what lib should I use for X?\", \"shadcn or radix?\", \"latest TanStack Query API\". The stack specialist performs the search and summarizes with judgment.",
+      "source_sha256": "032475a59d1d6831cb30d27bab9316487a84cc1ac321345b3d33d6068cd8b12e",
+      "source_path": "skills/lib-lookup/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6df299610322b9f8dc38615f714457e66c6e584043e90486b22bc4f336c1c270": {
+      "description_zh": "以标题为参数，在 docs/decisions/ 按标准格式创建编号 ADR。",
+      "source": "Creates a new numbered ADR in docs/decisions/ with the standard format. Takes the title as argument.",
+      "source_sha256": "6df299610322b9f8dc38615f714457e66c6e584043e90486b22bc4f336c1c270",
+      "source_path": "skills/new-adr/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8179e434b534c154e7fb25ac495dfa8fa5aebd2874d30f391570371f79293298": {
+      "description_zh": "以标题为参数，在 docs/plans/ 按标准格式创建编号实施计划。",
+      "source": "Creates a new numbered implementation plan in docs/plans/ with the standard format. Takes the title as argument.",
+      "source_sha256": "8179e434b534c154e7fb25ac495dfa8fa5aebd2874d30f391570371f79293298",
+      "source_path": "skills/new-plan/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d52192e424ab3f13e1946d41153bdaa97975864b7e8b1f2067ec7259abd3ea6c": {
+      "description_zh": "以标题为参数，在 docs/prds/ 按标准格式创建编号 PRD。",
+      "source": "Creates a new numbered PRD in docs/prds/ with the standard format. Takes the title as argument.",
+      "source_sha256": "d52192e424ab3f13e1946d41153bdaa97975864b7e8b1f2067ec7259abd3ea6c",
+      "source_path": "skills/new-prd/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9dd90c3d38b398e71d0ebba9202c0292c0c1dd025ad7b45f21a11befbe6d215e": {
+      "description_zh": "以标题为参数，在 docs/specs/ 创建编号 SPEC，作为基于规格的 SDD 可持续维护和验证的依据，原说明关联 ADR-0024。",
+      "source": "Creates a new numbered SPEC in docs/specs/ — the living, verifiable anchor for spec-anchored SDD (ADR-0024). Takes the title as argument.",
+      "source_sha256": "9dd90c3d38b398e71d0ebba9202c0292c0c1dd025ad7b45f21a11befbe6d215e",
+      "source_path": "skills/new-spec/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "194c3f16e3fac6d8fee91214f5394c7a54e170fb8689cd0c67bf0be36cf801b6": {
+      "description_zh": "调用 Next.js 14+ App Router 专家，处理 RSC、Server Actions、route handlers、middleware、next-auth 和 Supabase SSR，遵循 nextjs-* 技术栈规则，可编写代码及重构。",
+      "source": "Invokes the Next.js 14+ App Router specialist. Knows RSC, Server Actions, route handlers, middleware, next-auth, Supabase SSR. Applies the laws from an nextjs-* stack. Can write. Use for Next.js questions/refactors.",
+      "source_sha256": "194c3f16e3fac6d8fee91214f5394c7a54e170fb8689cd0c67bf0be36cf801b6",
+      "source_path": "skills/nextjs/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fbbec1242d5d20e19f6e172c580cafeb8aaa4f57fc1a3b06458db2faff00070d": {
+      "description_zh": "调用 Node.js 后端专家，使用 Fastify、Zod、Drizzle，处理路由/服务/仓储分层、JWT 和全局错误，遵循 node-api 技术栈规则，可编写代码及重构。",
+      "source": "Invokes the Node.js backend specialist (Fastify + Zod + Drizzle). Knows routes/services/repositories layers, JWT, global error handling. Applies the laws from a node-api stack. Can write. Use for Node API questions/refactors.",
+      "source_sha256": "fbbec1242d5d20e19f6e172c580cafeb8aaa4f57fc1a3b06458db2faff00070d",
+      "source_path": "skills/node-backend/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "173b332e92f836c036b1d7feb2b7730070f8fd6135e578dcdc4d35dea1be820e": {
+      "description_zh": "调用 React Native/Expo 专家，处理 expo-router、数据/领域/展示分层、Zustand、NativeWind、expo-secure-store 和移动 Supabase Auth，遵循 expo-* 规则，可编写代码及重构。",
+      "source": "Invokes the React Native + Expo specialist. Knows expo-router, data/domain/presentation layers, Zustand, NativeWind, expo-secure-store, Supabase Auth on mobile. Applies the laws from an expo-* stack. Can write. Use for RN/Expo questions/refactors.",
+      "source_sha256": "173b332e92f836c036b1d7feb2b7730070f8fd6135e578dcdc4d35dea1be820e",
+      "source_path": "skills/react-native/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4d5715b6a2bfe2f98d410769e7861b2b1f4d8a18cc8b068161211f150ba3422": {
+      "description_zh": "调用 React/Vite 专家，处理功能优先组织、TanStack Query、Zustand、Tailwind/shadcn 和 Zod，遵循 react-vite-* 的 CLAUDE.md 规则，可编写代码及重构。",
+      "source": "Invokes the React + Vite specialist. Knows features-first, TanStack Query, Zustand, Tailwind/shadcn, Zod. Applies the laws from a react-vite-* stack CLAUDE.md. Can write. Use for React SPA questions/refactors.",
+      "source_sha256": "b4d5715b6a2bfe2f98d410769e7861b2b1f4d8a18cc8b068161211f150ba3422",
+      "source_path": "skills/react-vite/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9398d0d7bc94de0b680bb83be85f8095e528d4bd18256ce1c107836370d64db8": {
+      "description_zh": "按文件路径执行 Clean Code 和 SOLID 重构，始终委派隔离的 solid-coach 子智能体读取文件、提出变更表，等待确认后通过 Edit 修改。",
+      "source": "Refactors a file applying Clean Code and SOLID. Always delegates to solid-coach in an isolated subagent. The subagent reads the file, proposes a change table, waits for confirmation and applies with Edit. Use with the path of the file to refactor.",
+      "source_sha256": "9398d0d7bc94de0b680bb83be85f8095e528d4bd18256ce1c107836370d64db8",
+      "source_path": "skills/refactor/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8da4da8bca85b7ea85791ff98606289935845107bd9866d59c2d99822c7f65ae": {
+      "description_zh": "评审当前相对 origin/main 的差异，由 Skipper 分析后分派对应技术栈专家，检查 CLAUDE.md 违规及技术栈反模式。适用于提交或 PR 前复核。",
+      "source": "Reviews the current diff (vs origin/main) using the project's stack specialist. Captain Skipper analyzes the diff and routes to the right specialist. Detects CLAUDE.md violations and stack-specific anti-patterns. Use before commit/PR.",
+      "source_sha256": "8da4da8bca85b7ea85791ff98606289935845107bd9866d59c2d99822c7f65ae",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "683bf66b8fa1ccb4762fd0437552c5a0c8a09c978d3fc4c1ad36942205099eda": {
+      "description_zh": "只读识别项目技术栈，包括 React Vite、Next.js、Expo、Supabase、Node API 和 Python FastAPI，报告候选、置信度及判断信号。适用于栈识别或应用配置前分析。",
+      "source": "Detects the current project stack (React Vite, Next.js, Expo, Supabase, Node API, Python FastAPI). Reports candidate, confidence and signals. Does NOT write — analysis only. Use when the user asks \"what stack do I have?\", \"detect my stack\", or before applying a profile.",
+      "source_sha256": "683bf66b8fa1ccb4762fd0437552c5a0c8a09c978d3fc4c1ad36942205099eda",
+      "source_path": "skills/scan/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e2e5a5076f9aeeafc06213776f6454ed68ea60aefa9968273301d63b52f1fd5": {
+      "description_zh": "一次性引导 Skipper 设置，区分新旧项目、识别栈、选择架构预设、写入完成定义政策并可选索引记忆。确定性 CLI 负责推断和渲染，本技能负责引导。",
+      "source": "Guided one-time Skipper setup — detects stack, picks an architecture preset, writes the Definition-of-Done policy, and (optionally) indexes memory. Classifies new vs existing project. The deterministic CLI infers/renders; this skill only conducts.",
+      "source_sha256": "8e2e5a5076f9aeeafc06213776f6454ed68ea60aefa9968273301d63b52f1fd5",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5b3f03b503d40756915e635d4c8fb98c0bc21b83d7003615a35225cbb4b1bf1": {
+      "description_zh": "调用 solid-coach 子智能体检查具体函数、类及组件的 Clean Code 和 SOLID，并直接重构。适用于单一职责、代码异味及提取 hook。",
+      "source": "Invokes solid-coach — subagent that reviews Clean Code and SOLID in specific functions/classes/components. Refactors directly. Use for \"does this component respect SRP?\", \"smells bad\", \"extract hook\", \"refactor\".",
+      "source_sha256": "c5b3f03b503d40756915e635d4c8fb98c0bc21b83d7003615a35225cbb4b1bf1",
+      "source_path": "skills/solid-coach/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "687cc61ddecc409eff2dc333e9eedba0b123a931e85c1e6e4d2a957324912baa": {
+      "description_zh": "向 CLAUDE.md 添加 Tailwind、shadcn-ui、TanStack Query、Zustand、Zod 或 NativeWind 规则层，在幂等 HTML 标记中插入规则与反模式，不覆盖原栈或其他层。",
+      "source": "Adds a layer (tailwind, shadcn-ui, tanstack-query, zustand, zod, nativewind) to the project's CLAUDE.md. Inserts an opinionated fragment with rules and anti-patterns inside idempotent HTML markers. Layers stack without overwriting the stack or other layers.",
+      "source_sha256": "687cc61ddecc409eff2dc333e9eedba0b123a931e85c1e6e4d2a957324912baa",
+      "source_path": "skills/stack-add/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d59683f740de90cc0e2d700539c7eee82f9124a9415550403778f1bdc9349c2b": {
+      "description_zh": "以栈编号为参数应用 stacks/<id>/ 预设，生成或更新 CLAUDE.md 中 HTML 标记限定的 skipper:stack 区块，并创建 docs/architecture/stack.md。",
+      "source": "Applies a stack profile to the current project. Generates/updates CLAUDE.md (skipper:stack section bounded by HTML markers) and creates docs/architecture/stack.md. Uses opinionated templates from stacks/<id>/. Takes the stack id as argument.",
+      "source_sha256": "d59683f740de90cc0e2d700539c7eee82f9124a9415550403778f1bdc9349c2b",
+      "source_path": "skills/stack-apply/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71d26209f8c3bd131823726a0430649be0783fc2a646b051cbad0218d0aefe52": {
+      "description_zh": "验证项目代码是否遵循 CLAUDE.md 的结构、命名及反模式规则，按严重程度报告违规表，通过上下文分叉委派架构智能体。适用于定期或大型 PR 前检查。",
+      "source": "Validates that the project code follows the laws declared in CLAUDE.md (structure, naming, anti-patterns). Reports a violations table by severity. Delegates to the architect agent in context fork. Use periodically or before large PRs.",
+      "source_sha256": "71d26209f8c3bd131823726a0430649be0783fc2a646b051cbad0218d0aefe52",
+      "source_path": "skills/stack-doctor/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42a661b201c01287a3f0931f6122158c2565d5504a07002bd2525259d956f639": {
+      "description_zh": "只读比较 package.json 与 CLAUDE.md 的 skipper:stack，报告已安装未记录及已声明但未安装的依赖偏移。适用于增删依赖后、定期或发布前检查。",
+      "source": "Compares package.json against the skipper:stack block in CLAUDE.md and reports drift — libraries installed but undocumented, and libraries declared but no longer installed (phantom). Read-only. Use periodically, after adding/removing dependencies, or before a release.",
+      "source_sha256": "42a661b201c01287a3f0931f6122158c2565d5504a07002bd2525259d956f639",
+      "source_path": "skills/stack-sync/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a739334647823bc6be0976982185cce37dd9182062938e6eb10a31f958fe2df": {
+      "description_zh": "调用 Supabase 专家处理 RLS、认证、Storage、Realtime、Edge Functions 和 SQL 迁移，可编写迁移、策略及查询。原说明要求所有表启用 RLS 等安全规则。",
+      "source": "Invokes the Supabase specialist. Knows RLS policies, auth flow, Storage, Realtime, Edge Functions, SQL migrations. Enforces security rules (every table with RLS enabled). Can write migrations, policies and queries. Use for RLS, auth, queries, migrations, Realtime.",
+      "source_sha256": "2a739334647823bc6be0976982185cce37dd9182062938e6eb10a31f958fe2df",
+      "source_path": "skills/supabase/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09a5ecada31696936cdee1674dedda9599816c45088c528b08bef05664da7a8d": {
+      "description_zh": "以旧编号和新标题创建替代 ADR，保持历史决策不可改写；在旧文标记 Superseded by、新文标记 Supersedes，双向链接并更新索引。适用于既有决策改变。",
+      "source": "Supersedes an existing ADR with a new one. ADRs are immutable — when a past decision changes you don't rewrite it, you supersede it. Marks the old ADR 'Superseded by ADR-NNNN', creates the replacement with 'Supersedes ADR-MMMM', links both, and updates the index. Takes the old ADR number and the new title.",
+      "source_sha256": "09a5ecada31696936cdee1674dedda9599816c45088c528b08bef05664da7a8d",
+      "source_path": "skills/supersede-adr/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ab58508772a26ad0c47a9651b352436236a8da24048b349b2a350087c37acb5": {
+      "description_zh": "审查近期 Git diff/log，并提出 docs/ 中 ADR、PRD、计划、架构及业务文档的更新。适用于记录变化或大型功能完成后整理。",
+      "source": "Reviews recent changes (git diff/log) and proposes updates to docs/ — ADRs, PRDs, plans, architecture, business. Use when the user says \"update docs\", \"document this\", or after a large feature.",
+      "source_sha256": "9ab58508772a26ad0c47a9651b352436236a8da24048b349b2a350087c37acb5",
+      "source_path": "skills/update/SKILL.md",
+      "package_sha256": "8c8a02604e8138c9b7a9574d4ad7054c523e1b15dc9692575bd53176c3849a0d",
+      "source_package": "skipper-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e28e2bd61098da43667f537bdab7c9faa26f864f55abf39a5f3016cc1e4798b": {
+      "description_zh": "读取用户最近发出的 Slack 消息，并据此讲一个以鸡为主题的冷笑话。适用于明确要求 Slack 冷笑话或调用 /slack-dad-joke:slack-dad-joke。",
+      "source": "Look up the last message the user sent in Slack and tell a chicken-themed dad joke inspired by it. Use when the user asks for a Slack dad joke, a joke about what they just said in Slack, or runs /slack-dad-joke:slack-dad-joke.",
+      "source_sha256": "8e28e2bd61098da43667f537bdab7c9faa26f864f55abf39a5f3016cc1e4798b",
+      "source_path": "skills/slack-dad-joke/SKILL.md",
+      "package_sha256": "11b2be4ad115065b6b2a9e2ea49643699930b3de9869137a775a53ff0acdd566",
+      "source_package": "Slack Dad Joke-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7baa9a7a4d37833d33d4c736e00c9f43a6cc253e8def3c4fbd24893581f1a4f7": {
+      "description_zh": "指导使用 Slack mrkdwn 编写格式清晰且有效的消息。",
+      "source": "Guidance for composing well-formatted, effective Slack messages using mrkdwn syntax",
+      "source_sha256": "7baa9a7a4d37833d33d4c736e00c9f43a6cc253e8def3c4fbd24893581f1a4f7",
+      "source_path": "skills/slack-messaging/SKILL.md",
+      "package_sha256": "6dcc30f8f81a87da1675a24fe38b409ff1d3d6d65bdda101f834d34c6d04176f",
+      "source_package": "Slack-1.0.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9f5d5addf599fec9b7a8e8ec7415457ef4de1d17dee4b9db2539dde743b0635": {
+      "description_zh": "指导有效搜索 Slack 消息、文件、频道和人员。",
+      "source": "Guidance for effectively searching Slack to find messages, files, channels, and people",
+      "source_sha256": "c9f5d5addf599fec9b7a8e8ec7415457ef4de1d17dee4b9db2539dde743b0635",
+      "source_path": "skills/slack-search/SKILL.md",
+      "package_sha256": "6dcc30f8f81a87da1675a24fe38b409ff1d3d6d65bdda101f834d34c6d04176f",
+      "source_package": "Slack-1.0.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71052be157f030ca06a780e2320cf07088e60a4479e3d295f0f9f301a0270164": {
+      "description_zh": "构建或校验 Slack Block Kit 消息、模态表单、Home 页、按钮菜单及已有 JSON，涵盖 sections、actions、inputs、headers、表格等组件和渲染预览，通过 blocks.validate API 验证。",
+      "source": "Use when a developer wants to build or validate Block Kit layouts for Slack messages, modals, or Home tabs: message layouts, modals/forms/dialogs, Home tab interfaces, interactive buttons or menus, or modifying existing Block Kit JSON. Also trigger on any Slack UI component (sections, actions, inputs, headers, alerts, tables, carousels), the words \"blocks\" or \"Block Kit Builder\", a request to preview rendered blocks, or pasted JSON like \"type\": \"section\". Validates via the blocks.validate API method.",
+      "source_sha256": "71052be157f030ca06a780e2320cf07088e60a4479e3d295f0f9f301a0270164",
+      "source_path": "skills/block-kit/SKILL.md",
+      "package_sha256": "8e2c66f86aa15fc6ba74895068f650a551ed11e2d8977425fffdebd94250d30d",
+      "source_package": "slack-1.4.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3002087527a44d5810242d0fbe3d6eb41669459a8ac31c377f153dc9a5bcec5": {
+      "description_zh": "使用 Slack CLI 从零创建 Slack 应用或智能体，检查前置条件、完成认证、选择安装工作区，并从 Bolt JavaScript 或 Python 模板建立本地项目。",
+      "source": "Use when a developer wants to create, scaffold, or bootstrap a new Slack app or agent from scratch with the Slack CLI. Covers prerequisites, authentication, choosing a workspace to install into, and creating a project from a Bolt (JS or Python) template locally. Trigger on \"create a Slack app\", \"new Bolt app\", \"start a Slack agent\".",
+      "source_sha256": "f3002087527a44d5810242d0fbe3d6eb41669459a8ac31c377f153dc9a5bcec5",
+      "source_path": "skills/create-slack-app/SKILL.md",
+      "package_sha256": "8e2c66f86aa15fc6ba74895068f650a551ed11e2d8977425fffdebd94250d30d",
+      "source_package": "slack-1.4.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b96715fddab77751737cacd0a45774b3f6a8aa5b00b0e94f7fcc388c93c2c577": {
+      "description_zh": "指导 Slack Web API 方法选择、OAuth 范围和令牌类型、端点调用测试、游标分页、限流及 Retry-After，排查 missing_scope、invalid_auth 和 channel_not_found。适用于 API 地址或方法文档请求。",
+      "source": "Use when a developer asks which Slack Web API method does something, needs a method's OAuth scopes or token type, wants to call or test a family.method endpoint (chat.postMessage, conversations.history, users.info, views.open), is handling cursor pagination (next_cursor) or rate limits (tier/ratelimited/Retry-After), or is debugging errors like missing_scope, invalid_auth, or channel_not_found. Also trigger on a pasted slack.com/api/ URL or docs.slack.dev/reference/methods link.",
+      "source_sha256": "b96715fddab77751737cacd0a45774b3f6a8aa5b00b0e94f7fcc388c93c2c577",
+      "source_path": "skills/slack-api/SKILL.md",
+      "package_sha256": "8e2c66f86aa15fc6ba74895068f650a551ed11e2d8977425fffdebd94250d30d",
+      "source_package": "slack-1.4.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "945f88bc56ef41d13a5e6520542c3891a98c682024f4095e8517c989f9194075": {
+      "description_zh": "通过 Slack CLI 创建、运行和管理应用，涵盖登录、团队和工作区切换、本地运行、部署、manifest 修改、Web API 调用和官方文档搜索。",
+      "source": "Use when a developer works with the Slack CLI (slack command) to create, run, or manage a Slack app from the terminal: logging in or authenticating (slack login), adding a team or switching workspaces, running locally (slack run), deploying, editing the app manifest, calling Web API methods (slack api), or searching Slack docs (slack docs search).",
+      "source_sha256": "945f88bc56ef41d13a5e6520542c3891a98c682024f4095e8517c989f9194075",
+      "source_path": "skills/slack-cli/SKILL.md",
+      "package_sha256": "8e2c66f86aa15fc6ba74895068f650a551ed11e2d8977425fffdebd94250d30d",
+      "source_package": "slack-1.4.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b487cb04dc82d06783a641b113f5bd022b06b68e0ee19fd2d0acb1f9949efc22": {
+      "description_zh": "查找并阅读官方 docs.slack.dev 的干净 Markdown，解答 Slack 平台概念、操作问题及指定文档页面摘要。",
+      "source": "Use when answering a conceptual or how-to question about Slack platform features, or when asked to look up, fetch, or summarize a docs.slack.dev page, including a pasted docs.slack.dev link. Covers finding and reading official Slack docs as clean markdown.",
+      "source_sha256": "b487cb04dc82d06783a641b113f5bd022b06b68e0ee19fd2d0acb1f9949efc22",
+      "source_path": "skills/slack-docs/SKILL.md",
+      "package_sha256": "8e2c66f86aa15fc6ba74895068f650a551ed11e2d8977425fffdebd94250d30d",
+      "source_package": "slack-1.4.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28bbebeab930e9bf8f68ddb1f42422a184cd24197982229feb131f31489f6224": {
+      "description_zh": "为 Slack MCP 的发送、草稿和定时工具撰写改进消息、公告及回复，指导 Markdown、内容结构、线程礼仪、回应和排期，并区分 Canvas 与 Block Kit 的格式方言。",
+      "source": "Use when writing, drafting, scheduling, or improving a Slack message, announcement, or reply sent via the Slack MCP tools (slack_send_message, slack_send_message_draft, slack_schedule_message). Covers Slack markdown formatting, message structure, thread etiquette, reactions, and scheduling, and points to the right dialect for canvases and Block Kit.",
+      "source_sha256": "28bbebeab930e9bf8f68ddb1f42422a184cd24197982229feb131f31489f6224",
+      "source_path": "skills/slack-messaging/SKILL.md",
+      "package_sha256": "8e2c66f86aa15fc6ba74895068f650a551ed11e2d8977425fffdebd94250d30d",
+      "source_package": "slack-1.4.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d8e18c887fb0b6be4e9e2f9124d4078f66b00723ced58aadf71fd6817fdecb0": {
+      "description_zh": "通过 Slack 搜索 MCP 定位消息、文件、频道和人员，或在回答前采集背景。涵盖公开及私有搜索、in/from/before 修饰符、文件类型过滤、自然语言与关键词搜索及上下文阅读。",
+      "source": "Use when locating messages, files, channels, or people across Slack, or gathering context before answering, with the search MCP tools (slack_search_public, slack_search_public_and_private, slack_search_channels, slack_search_users). Covers search modifiers (in:, from:, before:), file-type filters, natural-language vs. keyword search, and reading results in context.",
+      "source_sha256": "5d8e18c887fb0b6be4e9e2f9124d4078f66b00723ced58aadf71fd6817fdecb0",
+      "source_path": "skills/slack-search/SKILL.md",
+      "package_sha256": "8e2c66f86aa15fc6ba74895068f650a551ed11e2d8977425fffdebd94250d30d",
+      "source_package": "slack-1.4.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a891601805f50c6669dd57ae0026b9e8d01bda6e87f73a1dbc8f50d6f7f83406": {
+      "description_zh": "验证通过 Slack CLI 或 Bolt 构建的应用是否实际运行，只在开发沙箱或 Free Team 中测试，不在有真实用户的工作区执行。先做 doctor 和 manifest validate，再用 slack run 实际触发斜杠命令、快捷入口、事件、动作、模态页、App Home 和助手界面。",
+      "source": "Use when a developer wants to test, try out, smoke-test, verify, or confirm that a Slack app built with the Slack CLI (or a plain Bolt app) actually works, by running it in a developer sandbox or a Free Team, never a workspace with real users, with `slack run` and exercising its real slash commands, shortcuts, events, actions, modals, App Home, and assistant surfaces. Also covers `slack doctor` and `slack manifest validate` health checks before hands-on testing.",
+      "source_sha256": "a891601805f50c6669dd57ae0026b9e8d01bda6e87f73a1dbc8f50d6f7f83406",
+      "source_path": "skills/test-slack-app/SKILL.md",
+      "package_sha256": "8e2c66f86aa15fc6ba74895068f650a551ed11e2d8977425fffdebd94250d30d",
+      "source_package": "slack-1.4.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01e50867448b5d1f88a94d101f1a8abc500271352d5fbdb6db9f4a340640dec9": {
+      "description_zh": "仅在明确调用 /list 时，从官方文档获取最新 Claude Code 全部斜杠命令，按类别用日语和业务实例展示，并支持自动更新。",
+      "source": "Claude Code の全スラッシュコマンドを公式ドキュメントから最新取得し、カテゴリ別に日本語＋業務実例つきで表示します。自動最新化対応。/list と明示的に呼ばれた時のみ起動します。",
+      "source_sha256": "01e50867448b5d1f88a94d101f1a8abc500271352d5fbdb6db9f4a340640dec9",
+      "source_path": "skills/list/SKILL.md",
+      "package_sha256": "00299b043068bddf47c62769ed085ab8ed8098e841d7fb31518b6a25ceebf1a1",
+      "source_package": "slash-commands-jp-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe993632f828b01ac92d0f01d23ecca5775b71a9648c4e3fe7cef0eddca90723": {
+      "description_zh": "设计及管理 Slashy 邮件、日历、提醒、Slack 或 iMessage 自动化，适用于循环规则、告警、提醒和触发器，而非一次操作。",
+      "source": "Design and manage Slashy email, calendar, reminder, Slack, or iMessage automations. Use when the user wants a recurring rule, alert, reminder, or trigger rather than a one-time action.",
+      "source_sha256": "fe993632f828b01ac92d0f01d23ecca5775b71a9648c4e3fe7cef0eddca90723",
+      "source_path": "skills/inbox-automation-builder/SKILL.md",
+      "package_sha256": "98a55505bf1ac1bf3aedf326cf8fd222ec845b17d735482d6fe2f6889a6c021e",
+      "source_package": "Slashy-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2249ba3c5b31beaea416bb75e0df5b338ac43490ba0ff34b8bffcc3caa09c52": {
+      "description_zh": "从用户重要 Gmail 会话及 Google Calendar 汇总简明 Slashy 简报，适用于晨间简报、每日计划、收件箱概览和优先事项摘要。",
+      "source": "Build a concise Slashy briefing from the user's important Gmail threads and Google Calendar. Use for morning briefings, daily planning, inbox overviews, and priority summaries.",
+      "source_sha256": "c2249ba3c5b31beaea416bb75e0df5b338ac43490ba0ff34b8bffcc3caa09c52",
+      "source_path": "skills/inbox-briefing/SKILL.md",
+      "package_sha256": "98a55505bf1ac1bf3aedf326cf8fd222ec845b17d735482d6fe2f6889a6c021e",
+      "source_package": "Slashy-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f2e328f2ed625f57336ecfd6be341ecf35d9c3b7c9ed66be55dc504b69fca46": {
+      "description_zh": "通过 Slashy 准备会议或将会议背景转为排期与后续邮件，涵盖会议简报、空闲时间、邀请、议程和会后跟进。",
+      "source": "Prepare for a meeting or turn meeting context into scheduling and follow-up email through Slashy. Use for meeting briefs, availability, invitations, agendas, and post-meeting follow-up.",
+      "source_sha256": "4f2e328f2ed625f57336ecfd6be341ecf35d9c3b7c9ed66be55dc504b69fca46",
+      "source_path": "skills/meeting-to-email/SKILL.md",
+      "package_sha256": "98a55505bf1ac1bf3aedf326cf8fd222ec845b17d735482d6fe2f6889a6c021e",
+      "source_package": "Slashy-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b705ad36cf67180a46df306ec0d5c0c06648ca5f39815bce8dcfcbf78365f47b": {
+      "description_zh": "根据邮件、会议、已保存记忆及可选公开研究，形成 Slashy 关系简报。适用于回复、会议、引荐或客户复核前准备。",
+      "source": "Assemble a Slashy relationship brief from email, meetings, saved memories, and optional public research. Use before a reply, meeting, introduction, or account review.",
+      "source_sha256": "b705ad36cf67180a46df306ec0d5c0c06648ca5f39815bce8dcfcbf78365f47b",
+      "source_path": "skills/relationship-brief/SKILL.md",
+      "package_sha256": "98a55505bf1ac1bf3aedf326cf8fd222ec845b17d735482d6fe2f6889a6c021e",
+      "source_package": "Slashy-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cba1129b4fbbfb7509a264a6de863ef1d8b3e12a4d1747571d4f356a2e706f99": {
+      "description_zh": "区分 Gmail 中等待用户回复与等待他人回复的会话，再依据事实准备草稿。适用于未回复邮件清理、跟进及关闭未完成事项。",
+      "source": "Separate Gmail conversations waiting on the user from conversations awaiting someone else, then prepare grounded drafts. Use for reply sweeps, follow-up sweeps, unanswered mail, and closing open loops.",
+      "source_sha256": "cba1129b4fbbfb7509a264a6de863ef1d8b3e12a4d1747571d4f356a2e706f99",
+      "source_path": "skills/reply-follow-up-sweep/SKILL.md",
+      "package_sha256": "98a55505bf1ac1bf3aedf326cf8fd222ec845b17d735482d6fe2f6889a6c021e",
+      "source_package": "Slashy-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30c4cb6f5c02dfcafb8268fc6efbf05f9a936c10a9b18f20b73809179a31aa16": {
+      "description_zh": "只读引导新接入 Slashy 的用户，验证 Gmail、Google Calendar 和时区，不修改数据。适用于初次使用、能力了解或接入设置。",
+      "source": "Orient a newly connected Slashy user and verify their Gmail, Google Calendar, and timezone without modifying data. Use for onboarding, capability questions, or first-run setup.",
+      "source_sha256": "30c4cb6f5c02dfcafb8268fc6efbf05f9a936c10a9b18f20b73809179a31aa16",
+      "source_path": "skills/welcome-to-slashy/SKILL.md",
+      "package_sha256": "98a55505bf1ac1bf3aedf326cf8fd222ec845b17d735482d6fe2f6889a6c021e",
+      "source_package": "Slashy-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb4f3b51c7b1768028de37793c7faa7c69c29af2afd011270c869ad4ae76efec": {
+      "description_zh": "通过 Slice MCP 制作董事会可用的演示和批准材料，重点分析 offered 状态授予及 ESOP/股权池摘要。适用于授予批准、期权池更新、利用率和股权建议。",
+      "source": "Guides creation of board-ready Slice presentations using MCP tools, especially offered-status grants and ESOP/equity-pool summaries. Use when preparing board decks, board approval packs, grant approval summaries, ESOP pool updates, option pool utilization slides, or board-facing equity recommendations.",
+      "source_sha256": "bb4f3b51c7b1768028de37793c7faa7c69c29af2afd011270c869ad4ae76efec",
+      "source_path": "skills/board-presentation-analysis/SKILL.md",
+      "package_sha256": "61b2a0d125dd15a0ab0512ecc5ddd69079baf421c956cea70b8cab7a473f21bb",
+      "source_package": "Slice Global-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12a4a6ca885e3d4082c512e57a8da756fd8d28e8b1029333ce6246b3f30303ea": {
+      "description_zh": "结合 Slice 公司概览、股权表、持股、利益相关方、股份类别、融资轮次、股权池、估值和证券工具分析资本结构及 ESOP。适用于持股、稀释、期权池和公司或个人层级证券问题。",
+      "source": "Guides Slice MCP cap-table and ESOP-pool analysis by combining company summary, cap table, ownership, stakeholder, share class, funding round, equity pool, valuation, and securities tools. Use when answering questions about cap table structure, stakeholder holdings, ownership, ESOP pools, share classes, rounds, dilution, option pools, or securities at company or stakeholder level.",
+      "source_sha256": "12a4a6ca885e3d4082c512e57a8da756fd8d28e8b1029333ce6246b3f30303ea",
+      "source_path": "skills/cap-table-analysis/SKILL.md",
+      "package_sha256": "61b2a0d125dd15a0ab0512ecc5ddd69079baf421c956cea70b8cab7a473f21bb",
+      "source_package": "Slice Global-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84daded5ea5be052521abb2578410017a735c6505e38c742ac639173abea02a5": {
+      "description_zh": "通过 Slice 合规工单汇总和对象级工单，结合人员、证券、股权计划与池、估值、税务及股权表分析合规状况。适用于缺失数据、逾期、严重程度、受影响对象、估值过期及税务问题。",
+      "source": "Guides Slice MCP compliance analysis using compliance ticket breakdowns and object-level compliance tickets, plus related stakeholder, securities, equity plan, equity pool, valuation, tax-treatment, and cap-table tools. Use when answering questions about company compliance posture, compliance tickets, missing data, overdue issues, severity, affected objects, stale valuations, tax treatment issues, or compliance status for a stakeholder, security, equity pool, equity plan, valuation, share, grant, or exercise request.",
+      "source_sha256": "84daded5ea5be052521abb2578410017a735c6505e38c742ac639173abea02a5",
+      "source_path": "skills/compliance-analysis/SKILL.md",
+      "package_sha256": "61b2a0d125dd15a0ab0512ecc5ddd69079baf421c956cea70b8cab7a473f21bb",
+      "source_package": "Slice Global-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20aeebfb696cea3f3eb6706c3fa596f03c7c97fe1cf3f7c7978a0a7970afc953": {
+      "description_zh": "通过 Slice MCP 分析股权薪酬、授予、期权、RSU、归属、行权、作废、离职后行权期、税务和估值，解答已归属可行权数量、行权价、FMV/409A、池消耗及奖励机制。",
+      "source": "Guides Slice MCP analysis of equity compensation, grants, options, RSUs, vesting, exercises, forfeitures, PTEP, tax treatments, and valuations. Use when answering questions about employee equity, grant positions, vested or exercisable quantities, exercise price, FMV/409A, option pool consumption, tax treatment, or award-type mechanics.",
+      "source_sha256": "20aeebfb696cea3f3eb6706c3fa596f03c7c97fe1cf3f7c7978a0a7970afc953",
+      "source_path": "skills/equity-compensation-analysis/SKILL.md",
+      "package_sha256": "61b2a0d125dd15a0ab0512ecc5ddd69079baf421c956cea70b8cab7a473f21bb",
+      "source_package": "Slice Global-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca965c5f85601248fe6e0fa75e7ed7f45f974d15cf622aabfd0831d6515a5d15": {
+      "description_zh": "通过 Slice MCP 分析融资轮次、股份类别、每股价格、一级发行、二级交易、可转债、SAFE、期权池补充、募资总额及稀释，支持投资者头寸、融资历史、估值和投后持股。",
+      "source": "Guides Slice MCP analysis of funding rounds, share classes, price per share, primary issuances, secondary transactions, convertibles, SAFEs, option-pool top-ups, total raised, and dilution. Use when answering questions about rounds, Series A/B/C, seed rounds, bridge rounds, investor positions, round history, valuation, PPS, or post-money ownership.",
+      "source_sha256": "ca965c5f85601248fe6e0fa75e7ed7f45f974d15cf622aabfd0831d6515a5d15",
+      "source_path": "skills/funding-rounds-analysis/SKILL.md",
+      "package_sha256": "61b2a0d125dd15a0ab0512ecc5ddd69079baf421c956cea70b8cab7a473f21bb",
+      "source_package": "Slice Global-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25a57d63d19d06d7d8fbbc3a6046906b118cf4582714b0b5bd0dd4edf3a212ea": {
+      "description_zh": "通过 Slice MCP 证券搜索、查找、列表、读取、估值、税务及归属时间线工具，分析授予、股份、认股权证、可转证券、状态、数量及个人证券。",
+      "source": "Guides analysis of Slice securities through MCP securities search, find, list, get, valuation, tax-treatment, and vesting timeline tools. Use when answering questions about grants, shares, warrants, convertibles, stakeholder securities, security status, quantities, IDs, tax treatments, valuations, or vesting timelines from Slice MCP data.",
+      "source_sha256": "25a57d63d19d06d7d8fbbc3a6046906b118cf4582714b0b5bd0dd4edf3a212ea",
+      "source_path": "skills/securities-analysis/SKILL.md",
+      "package_sha256": "61b2a0d125dd15a0ab0512ecc5ddd69079baf421c956cea70b8cab7a473f21bb",
+      "source_package": "Slice Global-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ddcfb34d6511ae2f48add7ac9969296ba518e5a04004a51c9087658f492f4c0": {
+      "description_zh": "结合 Slice 股权表、股份类别、证券、轮次和持股工具分析退出分配瀑布，涵盖清算优先权、参与型优先股、转换阈值、收益分配、MOIC、投资回报和普通股支付。",
+      "source": "Guides exit waterfall analysis using Slice MCP cap-table, share-class, securities, rounds, and ownership tools. Use when answering questions about exit proceeds, liquidation preferences, participating preferred, conversion thresholds, proceeds allocation, MOIC, investor returns, or ordinary/common shareholder payouts.",
+      "source_sha256": "5ddcfb34d6511ae2f48add7ac9969296ba518e5a04004a51c9087658f492f4c0",
+      "source_path": "skills/waterfall-analysis/SKILL.md",
+      "package_sha256": "61b2a0d125dd15a0ab0512ecc5ddd69079baf421c956cea70b8cab7a473f21bb",
+      "source_package": "Slice Global-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4bd153c26b8c57bed0bb1c9001387e5fd906f8333a2b6b7c9aebac381704ad3": {
+      "description_zh": "通过 Slice 工作流列表及详情、行权付款对账和预扣税工具，分析授予函、公司批准、股份证书、行权、待付款、流程卡住、文件、受托人更新及个人证券流程进展。",
+      "source": "Guides Slice MCP workflow analysis using workflow list/get-one tools, exercise payment reconciliation, and tax withholding tools. Use when answering questions about grant letters, corporate approvals, share certificate workflows, exercise workflows, pending payments, tax withholding, workflow status, stuck workflows, documents, trustee updates, or stakeholder/security workflow progress.",
+      "source_sha256": "f4bd153c26b8c57bed0bb1c9001387e5fd906f8333a2b6b7c9aebac381704ad3",
+      "source_path": "skills/workflows-analysis/SKILL.md",
+      "package_sha256": "61b2a0d125dd15a0ab0512ecc5ddd69079baf421c956cea70b8cab7a473f21bb",
+      "source_package": "Slice Global-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d09daed57df62316f01b229bd8e7d9fc399ec1e56004341d9e73eafacf4a79c1": {
+      "description_zh": "通过 Slidely 创建、导入、审查和编辑 PowerPoint，适用于根据主题或大纲构建演示、改善重设计已有 .pptx，以及继续 Slidely 内已有作品。",
+      "source": "Create, import, review, and edit PowerPoint presentations with Slidely. Use this whenever the user wants a deck built from a topic or outline, wants an existing .pptx improved or redesigned, or asks to continue work on a presentation they already have in Slidely.",
+      "source_sha256": "d09daed57df62316f01b229bd8e7d9fc399ec1e56004341d9e73eafacf4a79c1",
+      "source_path": "skills/working-with-slidely/SKILL.md",
+      "package_sha256": "4910e424267c1afab6c8e5e5a600fbdcece9ec12cbf912c6d89f6614fc7bfc0b",
+      "source_package": "Slidely-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2de4856b01be45a414cd2c5a2f4f5fcc38df15f75ca15ee34aea9ff0184928d9": {
+      "description_zh": "将文件转换为 SLIM、编写新文档、验证审查 .slm 或解释 SLIM v2 语法。也用于将 Markdown、JSON、YAML 或纯文本优化为适合 LLM 令牌使用的格式。",
+      "source": "Use this skill when the user asks to convert a file to SLIM format, write a new SLIM document, validate or review an existing .slm file, check SLIM v2 syntax, or asks questions like \"convert this to SLIM\", \"make this SLIM\", \"is this valid SLIM\", \"write a SLIM prompt\", \"create a SLIM agent config\", or \"review this .slm file\". Also use when the user pastes Markdown/JSON/YAML/plain text and wants it optimised for LLM token usage.",
+      "source_sha256": "2de4856b01be45a414cd2c5a2f4f5fcc38df15f75ca15ee34aea9ff0184928d9",
+      "source_path": "skills/slim/SKILL.md",
+      "package_sha256": "fd45a9f19a4ac93648dce4a014de409e752a0875313f59b8519968988539d1f2",
+      "source_package": "slim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "edcce181a906bfcb83b44d879f01999726ebf9f844030c3e9b8f9333c7df6a7b": {
+      "description_zh": "编写、修改、调试和评审 .slint UI，或与 Rust、C++、JavaScript、Python 连接，涵盖语言、布局、编译问题、互操作及 MCP 运行检查。",
+      "source": "Use when writing, editing, debugging, or reviewing `.slint` UI code, or wiring it to Rust/C++/JS/Python — the Slint language, layout, compile-time gotchas, interop, and the MCP server for runtime checks.",
+      "source_sha256": "edcce181a906bfcb83b44d879f01999726ebf9f844030c3e9b8f9333c7df6a7b",
+      "source_path": "skills/slint/SKILL.md",
+      "package_sha256": "ec544ca6e50c66d6753d08361150c45009e04ac0457263c1bf279de22aaa042e",
+      "source_package": "Slint AI Plugins-1.18.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96749e00da3c5e2777c4391f76c68a99bd9ac34963f78d27d1a611bd5dc128d5": {
+      "description_zh": "通过 CLI 读取 Slack 线程、频道历史和搜索结果，适用于消息或回复链接以及查询搜索最近活动，避免依赖粘贴截图。",
+      "source": "Read Slack threads, channel history, and search results directly from the CLI instead of via pasted screenshots. Use whenever the user shares a Slack link (message permalink, thread reply link) or asks to look up, search, or check recent activity in Slack.",
+      "source_sha256": "96749e00da3c5e2777c4391f76c68a99bd9ac34963f78d27d1a611bd5dc128d5",
+      "source_path": "skills/slio/SKILL.md",
+      "package_sha256": "88b3acd2ddae7b01129afb0a0db14da2647f7af385ca3a598f38da39930efb46",
+      "source_package": "slio-1.0.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fb26aa4fafc22f75ba7d0e95a90e6f167df133be1cf74c745eb89b18e2abbfd": {
+      "description_zh": "为仅使用聊天订阅而非 API 的个人或小企业制定 AI 使用规则，提供工具分流、四类数据、注明日期的账号设置检查表、决策记录及事件卡。适用于敏感业务资料能否粘贴、循环工作选工具或泄漏后响应；不用于 API、网关、企业治理或一般价格功能比较。",
+      "source": "Rules for a person or small business that uses AI only through chat subscriptions (ChatGPT, Claude, Perplexity, Gemini, Copilot, NotebookLM), not APIs: a tool routing table, four data classes, a dated account-settings checklist, a decision log, and an incident card. Use when the user asks for AI usage rules or an AI policy for themselves or a small team, asks whether specific business, customer, employee, financial, or regulated information may be pasted into an AI chat tool, asks which AI subscription should handle a recurring business job, or needs to respond after sensitive information went into an AI tool. Do not use for API, gateway, or enterprise AI governance, or for general feature or price comparisons of AI products.",
+      "source_sha256": "9fb26aa4fafc22f75ba7d0e95a90e6f167df133be1cf74c745eb89b18e2abbfd",
+      "source_path": "skills/ai-control-plane-solo/SKILL.md",
+      "package_sha256": "00fe8a186a1acccb910b61f6bdf33efbc923805a8182111909b27cd5b7b55d9b",
+      "source_package": "Small Business Ai Rules-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c19daf83748670f761e124853cce9d648d02273b7b3634d685b788729c6bc77": {
+      "description_zh": "通过 TikTok Ads 连接器或其他平台的 Zapier 连接读取广告表现，也可从 CSV 开始，解释有效投入与浪费，提出带金额影响的预算、受众和素材修改，起草品牌语气文案及 Canva 制作需求。只有明确批准后才执行广告账号修改。",
+      "source": "The ads consultant that becomes an ads agent. Reads paid-ad performance natively through the TikTok Ads connector, or via a build-connector Zapier connection for other ad platforms, explains in plain English what is working and what is burning money, recommends budget, targeting, and creative changes with the dollar impact of each, drafts new ad copy in the owner's voice plus Canva creative briefs, and — only after an explicit yes — executes the approved changes in the ad account. Works from exported CSV reports when nothing is connected, the normal starting point. Use this whenever the owner talks about ads or ad spend at all, including \"are my ads working,\" \"what's my ROI on ads,\" \"I'm spending money on Facebook and I don't know what I'm getting,\" \"should I turn this campaign off,\" \"my cost per lead is going up,\" \"write me a new ad,\" \"who should I be targeting,\" or \"the ad guy quit.\"",
+      "source_sha256": "8c19daf83748670f761e124853cce9d648d02273b7b3634d685b788729c6bc77",
+      "source_path": "skills/ad-manager/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f052cd564faf842afc0fe01bb12fc7a59a6c1ecadeb48160323e58a6acf7b6ec": {
+      "description_zh": "处理应付账单，从邮箱、PDF 或照片提取供应商、金额、到期日和明细，分配科目及项目，与采购单和收货单匹配，并准备 QuickBooks、Xero 或 NetSuite 分录和拟付款批次。未经明确批准不录入或付款；先完成本项再做现金流或月结，以真实应付为依据。",
+      "source": "Works the bill pile end to end: reads bills and vendor statements out of the AP inbox or from uploaded PDFs and phone photos, pulls out vendor, amount, due date, and line detail, codes each one to the right account and job, matches it against the purchase order and the receiving ticket, then stages the entries and a proposed payment run in QuickBooks, Xero, or NetSuite for the owner to approve in one pass. Nothing is entered and nothing is paid without an explicit yes. Reach for this whenever bills, vendor invoices, or paying people comes up — including \"what do I owe,\" \"the bills are piling up,\" \"pull the invoices out of my email and into QuickBooks,\" \"code these for me,\" \"who needs to get paid this week,\" \"did we get billed twice,\" or when the owner forwards a supplier invoice with no message at all. Use it before cash-flow-snapshot or month-end-prep so those run on real payables instead of a guess.",
+      "source_sha256": "f052cd564faf842afc0fe01bb12fc7a59a6c1ecadeb48160323e58a6acf7b6ec",
+      "source_path": "skills/ap-processor/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c1d453eec79ae1ba95eb6c8ae4b4a99ec7024ba9cc06cc49aefdfa0e30e9d45": {
+      "description_zh": "从网站链接或文字描述确定并更新品牌外观与交付格式，在示例页预览，并把视觉、Word、Markdown、Notion、Canva Docs 等偏好保存到企业资料。首次在 smb-onboard 内执行，之后可独立用于改品牌或报告格式。",
+      "source": "Sets and updates the owner's brand look and output preferences, which every page and document the plugin produces then follows automatically. Captures the brand from a pasted website link or a plain-words description — never a hex code, color picker, or upload — previews it on a sample page, asks how they want their outputs delivered (visual artifacts, Word docs, markdown, Notion pages, Canva Docs, or best-for-the-skill), and saves both to the business profile. Runs inside smb-onboard on first setup and stands alone forever after. Use when the owner says \"update my brand,\" \"we rebranded,\" \"change my colors,\" \"make the reports match our new look,\" \"change how you give me reports,\" \"I want Word docs instead,\" or anything about the look or format of what the plugin hands them.",
+      "source_sha256": "2c1d453eec79ae1ba95eb6c8ae4b4a99ec7024ba9cc06cc49aefdfa0e30e9d45",
+      "source_path": "skills/brand-style/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e9c034b43b64e911c9fcde2261c72cd77fa349e801c3a4303581ec7f2353ce9": {
+      "description_zh": "把用户重复手工任务转为具名、可复用并可排期的技能，通过观察一次或听取描述区分固定和变化部分，设置审批检查点、注册路由并分享团队。适用于每周惯例、自动化或自定义工作流需求。",
+      "source": "Turns a task the owner keeps doing by hand into a named, reusable skill they can trigger by name or put on a schedule. Watches them do it once or listens to them describe it, works out what varies and what stays fixed, writes the skill with approval checkpoints in the right places, registers it with the router, and shares it with the team. This is how a business gets a workflow nobody shipped for them. Use this whenever the owner describes something repetitive they wish were automatic — including phrasings like \"I do this every week,\" \"can you remember how to do this,\" \"make this a thing I can just ask for,\" \"build me an agent,\" \"automate this for me,\" \"turn this into a workflow,\" or \"I want this to happen every Monday.\" Reach for it when they describe a routine, even without asking for automation.",
+      "source_sha256": "2e9c034b43b64e911c9fcde2261c72cd77fa349e801c3a4303581ec7f2353ce9",
+      "source_path": "skills/build-agent/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a7c793b69ac7d08d41767cacf8dd63bc578ee62859f2d5bdc410b24a8c0575b": {
+      "description_zh": "为未连接系统寻找现有 Claude 官方连接器，没有时通过 Zapier 接入，不手工构建原始 API；安全处理凭据，并为写入设置审批关卡。适用于不支持的 ERP、现场服务软件和工具互联。",
+      "source": "Gets Claude talking to a tool nobody built an official connector for. Works out what the system is, checks the Claude connector directory for an existing connector first, and when there isn't one connects the tool through Zapier — never by hand-building against a raw API — with credentials handled safely and approval gates on anything that writes. This is what turns \"my ERP isn't supported\" into an afternoon. Use this whenever the owner names a tool that isn't connected — including phrasings like \"can you connect to my,\" \"make my tools talk to each other,\" \"there's no API for this,\" \"pull data out of my field service software,\" \"I use ServiceTrade and it's not on the list,\" or \"is there any way to get at this data.\" Reach for it whenever an unsupported system is blocking something else.",
+      "source_sha256": "7a7c793b69ac7d08d41767cacf8dd63bc578ee62859f2d5bdc410b24a8c0575b",
+      "source_path": "skills/build-connector/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47b97b8fe4cc5bd0c70048f27dbbbf05d0458a541cfed0ebb1f4ec9bac104c94": {
+      "description_zh": "生成中小企业一页业务概览，汇总已连接账簿现金、支付平台销售、HubSpot 商机、日历承诺及邮件 Slack 紧急事项，突出当天最需关注的一项。尝试可用连接器并明确覆盖范围，单连接仅形成局部概览；周初简报由 monday-brief 先调用本项。",
+      "source": "Produces a one-page cross-functional business snapshot for SMB owners — cash position (the ledger: MYOB, NetSuite, QuickBooks, Xero, or Zoho Books), sales trend (PayPal/Square/Stripe), pipeline movement (HubSpot), this week's commitments (Calendar), urgent watch-list items (Gmail or M365, Slack), and the single most important thing needing attention today. Proactively tries every available connector and gracefully scopes to whatever is connected — one connector gives a partial pulse; the full stack gives the full picture. Trigger when the user asks how the business is doing, wants a snapshot, a daily brief, a Friday recap, or says anything like \"what am I missing\" or \"catch me up on the business.\" A start-of-week briefing routes to /monday-brief, which runs this skill as its first link.",
+      "source_sha256": "47b97b8fe4cc5bd0c70048f27dbbbf05d0458a541cfed0ebb1f4ec9bac104c94",
+      "source_path": "skills/business-pulse/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76d6e489d847b96f3847b867d85869260061688940be9acc395d403343b0de8c": {
+      "description_zh": "通过 lead-triage 排出当天最值得联系的前五个线索，结合邮件历史准备谈话要点、预留日历时间及跟进草稿，支持数量和日期参数。只需评分而不排日历时直接用 lead-triage。",
+      "source": "Builds today's call list. Runs lead-triage to rank the top-5 leads most worth calling, supplies talking points from email history, blocks time on the calendar, and drafts follow-up messages. Trigger on \"call list,\" \"who am I calling today,\" \"top five to call today,\" or \"block time for calls.\" An owner who wants leads scored or ranked with no calendar blocks routes to lead-triage directly. Accepts optional count and date arguments.",
+      "source_sha256": "76d6e489d847b96f3847b867d85869260061688940be9acc395d403343b0de8c",
+      "source_path": "skills/call-list/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "94de56caf9db778e5734679a00c175b9053f61ae60292a2ac9f7a75444ed107c": {
+      "description_zh": "根据已批准内容需求执行完整活动，建立发布日历、制作 Canva 社交设计、起草图注及邮件并暂存 HubSpot 社交发送。Canva 仅用于社交，邮件以纯文本交给用户自行发送；每步均需明确批准。无需求简报的日常发帖转用 social-content-engine。",
+      "source": "Takes an approved content brief and executes a campaign end-to-end: builds the posting calendar, generates Canva designs for social posts, drafts caption and email copy, and stages social sends in HubSpot. Canva is used for social posts only (Instagram, Facebook, X, LinkedIn) — email content is drafted as plain text and surfaced inline for the owner to send from their own tool. Every step requires explicit owner approval. This is the one-shot campaign executor: a finished brief goes in, a complete campaign comes out. Use when the owner hands off an approved brief or points at one — \"run this brief,\" \"execute the campaign,\" \"turn this brief into posts,\" \"build the campaign from the plan we approved.\" For day-to-day posting with no brief — \"I need to post more,\" \"what should we post\" — use social-content-engine instead; it owns the standing calendar.",
+      "source_sha256": "94de56caf9db778e5734679a00c175b9053f61ae60292a2ac9f7a75444ed107c",
+      "source_path": "skills/canva-creator/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec5dd127a63722b52ed2d13aeee1027eebf546c0aab7e680eaa5544d3444dc14": {
+      "description_zh": "依据账簿应收应付、历史现金时点和固定成本，或 PayPal、Square、Stripe 及 CSV，生成 30/60/90 天现金流预测，提供百分比偏差置信区间和具名风险标记，交付聊天摘要及 XLSX。适用于工资覆盖、资金跑道及现金紧张，未连接服务时用 CSV。",
+      "source": "Reads AR/AP, historical cash timing, and known fixed costs from the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) or from PayPal, Square, or Stripe — or a CSV upload — and produces a 30/60/90-day cash flow forecast with percentage-variance confidence bands and named risk flags. Delivers a chat summary and a downloadable XLSX. Use when the user asks \"forecast my cash flow,\" \"will I make payroll,\" mentions \"runway,\" or says \"cash crunch.\" Falls back to CSV upload when no connector is live.",
+      "source_sha256": "ec5dd127a63722b52ed2d13aeee1027eebf546c0aab7e680eaa5544d3444dc14",
+      "source_path": "skills/cash-flow-snapshot/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f14bd0a5e512c7901292473211b2acbe3903d629ecc9c0182588658f8a3ca1d": {
+      "description_zh": "串联月结：先由 month-end-prep 对账并撰写损益解释，再以月结数字刷新 30/60/90 天现金预测，最后由 report-builder 发布分发月结包。要求账簿，可结合工资和支付平台或上传材料；只需对账而不刷新预测、不分发时直接用 month-end-prep。",
+      "source": "Closes the books and turns them into a decision as a three-link chain — month-end-prep reconciles the ledger against every connected payment processor and writes the P&L narrative, cash-flow-snapshot then refreshes the 30/60/90-day forecast off the newly closed numbers rather than raw ones, and report-builder publishes and distributes the close packet. Requires a ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) and uses Gusto, PayPal, Ramp, Shopify, Square, and Stripe when connected, falling back to statement or CSV uploads. Trigger on \"close the month,\" \"month-end,\" \"close the books,\" \"reconcile,\" \"send the close packet to my accountant,\" or when the owner asks why revenue or margin moved last month. An owner who wants only the reconciliation and its flags, with no forecast refresh and no packet distribution, routes to month-end-prep directly.",
+      "source_sha256": "4f14bd0a5e512c7901292473211b2acbe3903d629ecc9c0182588658f8a3ca1d",
+      "source_path": "skills/close-month/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "626cd1ea7a36fcd4ee8f14b6f49a6cf243994a5ce0838439c542a31381aa863f": {
+      "description_zh": "分析 PayPal 和 QuickBooks 销售，识别畅销及滞销品、结合季节性形成按优先级排序的 30 天内容需求，建议推广、优惠及暂缓事项。仅输出策略，不制作日历或素材。",
+      "source": "Analyzes sales data from PayPal and QuickBooks to find top performers and slow movers, layers in seasonality, and produces a prioritized 30-day content brief: what to push, what offers to run, what to hold. Strategic output only — no calendars or assets. Use when the user asks what to post, wants a content plan, asks what's selling, or what to promote this month.",
+      "source_sha256": "626cd1ea7a36fcd4ee8f14b6f49a6cf243994a5ce0838439c542a31381aa863f",
+      "source_path": "skills/content-strategy/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e80bb4b628a3c289f8228bd1ee8971ea4a2958c6d3c5003befac64e2f0e3c9e": {
+      "description_zh": "为无专职法务的中小企业轻量审查 NDA、MSA 和供应商合同，从本地、邮件附件、云文件或 DocuSign 读取，标记非标准条款并解释风险，输出独立的带修订 DOCX。",
+      "source": "Lightweight NDA, MSA, and vendor contract review for SMBs without legal on staff. Reads contracts from local files, mail attachments (Gmail or M365), a connected file store (Google Drive or M365), or DocuSign envelopes; flags non-standard terms; explains risks in plain English; and outputs a marked-up redline as a separate DOCX. Use when the user says \"review this contract,\" \"what am I signing,\" \"red flags,\" \"flag any concerns,\" \"check the payment terms,\" or uploads/forwards a contract or legal agreement.",
+      "source_sha256": "6e80bb4b628a3c289f8228bd1ee8971ea4a2958c6d3c5003befac64e2f0e3c9e",
+      "source_path": "skills/contract-review/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e03de1029890f96b85e683392c0d974fef9929cbe5c9230c6da18680e250f77": {
+      "description_zh": "依据邮件、日历和通话转录创建更新 CRM 联系人及商机、记录活动、起草沉寂商机跟进和维护下一步队列，支持按需或定时及重复过期记录清理。无 CRM 时可建立电子表格版本。",
+      "source": "Keeps the CRM current without the owner ever opening it. Creates and updates contacts and deals from email, calendar, and call transcripts; logs activity automatically; drafts follow-ups on deals that have gone quiet; and maintains a next-step queue so nothing sits unowned. Runs on demand or on a schedule, includes a hygiene sweep for duplicates and stale records, and builds a lightweight CRM in a spreadsheet for owners who don't have one. Use this whenever CRM data or pipeline hygiene comes up — including phrasings like \"update my CRM,\" \"log this call,\" \"clean up HubSpot,\" \"clean up Salesforce,\" \"add this to the deal,\" \"turn my meeting into a deal note,\" \"which deals have gone quiet,\" \"I hate data entry,\" or \"my pipeline is out of date.\" Reach for it when the owner describes a call or meeting worth recording, even without naming the CRM.",
+      "source_sha256": "2e03de1029890f96b85e683392c0d974fef9929cbe5c9230c6da18680e250f77",
+      "source_path": "skills/crm-autopilot/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ff86e0f0d9b9b89e51c7796fa2b0ec94f93eee4d6d2326ae22310371d81ed09": {
+      "description_zh": "筛选组织实际符合条件的资助及招标机会，写作前明确投或不投，依据历史提交和真实项目数据起草申请或响应，并跟踪获批后的截止时间及报告义务。面向非营利、政府承包及教育，支持 SAM.gov/DIBBS、云文件或上传材料与网页研究。",
+      "source": "Finds grant and solicitation opportunities the organization actually qualifies for, runs a hard go/no-go before anyone starts writing, drafts the application or response from past submissions and real program data, and tracks every deadline and reporting obligation that follows an award. Built for nonprofits, government contractors, and education, and it filters daily feeds like SAM.gov or DIBBS down to the handful worth bidding. Runs on Google Drive or M365 with DocuSign and Calendar deepening it, and works from uploaded past submissions plus web research when nothing is connected. Use this whenever a funding or bidding opportunity is in play — including \"find grants we qualify for,\" \"should we bid this,\" \"draft the response to this RFP,\" \"we've got 50 solicitations to filter,\" \"what's due on the federal grant,\" or \"help me write the proposal narrative.\"",
+      "source_sha256": "1ff86e0f0d9b9b89e51c7796fa2b0ec94f93eee4d6d2326ae22310371d81ed09",
+      "source_path": "skills/grant-rfp-writer/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78d6d0afad5800587fdee49ca51704068e5d5676c6aaca1af0af676df66847cc": {
+      "description_zh": "端到端扩充销售管道，先研究市场竞争，再串联 lead-finder、outreach-composer 和 crm-autopilot，生成附理由的排序潜客、个性化联络及 CRM 活动记录，每次交接均需负责人批准。适用于整体拓客而非单独名单或邮件。",
+      "source": "Fills the funnel end to end without the owner babysitting it — reads the market and the competition for context, builds a ranked list of named prospects with a reason attached to each, writes personalized outreach in the owner's own voice, and logs every touch to the CRM. Chains lead-finder, outreach-composer, and crm-autopilot behind a web-native market read, with an owner approval at every handoff. Use this whenever the owner wants more pipeline rather than one specific piece of it, including phrasings like \"I need more leads,\" \"fill my funnel,\" \"who should I be calling and what do I say,\" \"find me customers like my best ones and reach out,\" \"build me a prospect list and write the emails,\" or \"sales has gone quiet, get something moving.\" Reach for it when the owner describes wanting new business generally rather than asking for a list or a single email.",
+      "source_sha256": "78d6d0afad5800587fdee49ca51704068e5d5676c6aaca1af0af676df66847cc",
+      "source_path": "skills/grow-pipeline/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a306cbb6d14b66973189c8642ad184b7fef7cbe7767996089416e8de1168e95": {
+      "description_zh": "评估中小企业增长引擎，结合已连接数据分析渠道销售、漏斗转化、活动回报、产品表现和客户反馈，提出本周三项增长行动。与财务侧 business-pulse 配套，也适用于单渠道营销表现问题。",
+      "source": "Answers one question for an SMB owner — is the growth engine actually working? Pulls sales trend by channel, funnel conversion, campaign return, best and worst performing products, and customer sentiment from whatever is connected, then ends with the three growth actions worth taking this week. The growth-side twin of business-pulse, which covers the finance side. Use this whenever the owner asks how marketing or sales is performing, whether a campaign paid off, where leads are coming from, why the pipeline is stalling, which products are moving, or says anything like \"is my marketing working,\" \"growth check,\" \"how's the funnel,\" or \"where should I put my money next month.\" Reach for it even when the owner names a single channel rather than growth overall.",
+      "source_sha256": "1a306cbb6d14b66973189c8642ad184b7fef7cbe7767996089416e8de1168e95",
+      "source_path": "skills/growth-pulse/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5579d5e0a85e54ec113f0cd05dedf0c7c483c545f3823cab9f4cf2bf9e7fa689": {
+      "description_zh": "仅按岗位明确评分规则评估申请材料并生成排序候选名单，起草各候选人回复、安排面试及入职清单和工资配置交接。支持邮箱日历及上传简历；没有连接时由用户手动发送草稿，承接 job-post-builder 后续筛选。",
+      "source": "Takes a pile of applications and turns it into a ranked shortlist, scored only against the job's stated rubric, with drafted replies to every candidate, scheduled interviews, and an onboarding checklist for whoever gets hired. Picks up where job-post-builder leaves off and carries the funnel through to first day, including the payroll setup handoff. Runs on Gmail and Google Calendar, deepens with Gusto, DocuSign, and Drive or M365, and works entirely from uploaded resumes with drafted replies the owner sends by hand. Use this whenever the owner has applicants to deal with — including phrasings like \"I've got 40 resumes and no time,\" \"who should I interview,\" \"screen these applications,\" \"help me narrow this down,\" \"set up interviews for the top three,\" or \"I need to tell the rest no.\" Reach for it when the owner mentions applicants, resumes, candidates, or being buried in a hiring inbox.",
+      "source_sha256": "5579d5e0a85e54ec113f0cd05dedf0c7c483c545f3823cab9f4cf2bf9e7fa689",
+      "source_path": "skills/hiring-screener/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b617fe7ba7265ef0bd46c694f7643b3e166e3b009a689eb115ee6f5d13f79fb": {
+      "description_zh": "读取整理收件箱，按需用户处理、草稿待审和已处理分类，提取长线程行动与期限、起草用户语气回复并归档完成内容，将账单、线索和排期交给专项技能。未连接邮箱时处理粘贴或转发文字。",
+      "source": "Turns a full inbox into a short, ranked list of what actually needs the owner. Reads the mail, sorts it into needs-you, drafted-and-waiting, and handled, writes replies in the owner's own voice, pulls out the action items and deadlines buried in long threads, files what is finished, and hands bills, leads, and scheduling requests to the skills that own them. Works from pasted or forwarded email text when no mailbox is connected. Use this whenever the owner mentions email at all — including \"drowning in email,\" \"I have 300 unread,\" \"what emails need me,\" \"go through my inbox,\" \"clean up my email,\" \"did I miss anything,\" \"who am I supposed to get back to,\" \"draft a reply to this,\" or \"catch me up on my mail.\" Reach for it for one forwarded message as readily as for a whole morning's backlog.",
+      "source_sha256": "7b617fe7ba7265ef0bd46c694f7643b3e166e3b009a689eb115ee6f5d13f79fb",
+      "source_path": "skills/inbox-manager/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35b0120bd77506ced85a8f031c4e0560758d629081ca9a81e0528cca3c098fce": {
+      "description_zh": "根据 Shopify、Square、NetSuite 或 CSV 的销量和库存计算各商品 7 天、28 天速度，保守预测断货日及 60 天补货量，起草采购单和供应商邮件。标记积压、死库存和零销量，只在历史支持时使用季节性；未经批准不下单或发信。",
+      "source": "Works out what to reorder and when, from what is actually selling: pulls sales history and stock on hand from Shopify, Square, NetSuite, or an uploaded CSV, computes 7-day and 28-day sales velocity per item, projects a conservative stockout date for each, sizes a 60-day reorder quantity, and drafts the purchase orders and vendor emails to cover it. Flags the money sitting still too — overstock, dead stock, and zero-velocity items, reported as slow movers to clear rather than things to buy more of. Seasonality is applied where the history supports it and named where it does not. Nothing is ordered and no vendor is emailed without approval. Reach for this whenever stock comes up — \"what do I need to reorder,\" \"am I going to run out,\" \"what should I order this month,\" \"we keep running out of filters,\" \"how much cash is sitting in the warehouse,\" \"what is not moving,\" or \"draft a PO for my supplier.\"",
+      "source_sha256": "35b0120bd77506ced85a8f031c4e0560758d629081ca9a81e0528cca3c098fce",
+      "source_path": "skills/inventory-planner/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc7297c9e5eb9e9739408a34bf00de0d0b5b3962ffd7d2983e40022a75e93238": {
+      "description_zh": "结合账簿与 PayPal、Stripe、Airwallex 数据，按客户付款历史和合适语气起草逾期催款邮件。PayPal 发送须负责人批准，其他渠道仅排入邮件草稿，有 Airwallex 托管付款链接时加入。",
+      "source": "Drafts overdue-invoice reminder emails from the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) plus PayPal, Stripe, and Airwallex data, matched to each customer's payment history and tone (gentle for good customers, firm for repeat late payers). Sends via PayPal with owner approval; everything else queues as a mail draft, with the Airwallex hosted pay link included where one exists. Use when the user asks \"who owes me money,\" mentions overdue invoices, or wants to follow up on unpaid invoices.",
+      "source_sha256": "dc7297c9e5eb9e9739408a34bf00de0d0b5b3962ffd7d2983e40022a75e93238",
+      "source_path": "skills/invoice-chase/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7517305b66b2ee26f0925bb7b60c4fc978df61d069030054e216ea1ed97d5ff4": {
+      "description_zh": "根据招聘需求生成职位广告、带评分规则的结构化面试指南和录用函模板，覆盖招聘材料及通过浏览器创建 DocuSign 信封；不筛选或排序应聘者。",
+      "source": "Builds end-to-end hiring packets — job post, structured interview guide with scoring rubric, and offer letter template — from a hiring brief. Triggers on: \"help me hire\", \"we're hiring for\", \"write a job post\", \"job description\", \"JD\", \"open role\", \"create a job ad\", \"interview questions\", \"scoring rubric\", \"draft an offer letter\", \"send an offer\", \"make a hiring packet\", or any request to recruit for a position. When in doubt, trigger — covers the full hiring workflow from job post through DocuSign envelope creation via browser. Does NOT screen or rank applicants.",
+      "source_sha256": "7517305b66b2ee26f0925bb7b60c4fc978df61d069030054e216ea1ed97d5ff4",
+      "source_path": "skills/job-post-builder/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7484844e3426abcc4dc9c5f23ea1f391b17a329c37d09c1e6bf28d63d1f4277": {
+      "description_zh": "依据现有客户确定理想客户画像，寻找相似公司及对应联系人，补充公司属性和购买信号并评分，交付 XLSX 潜客名单，可另行创建 CRM 记录。优先 Apollo，未连接时用网页研究和上传客户清单。",
+      "source": "Builds a ranked list of prospects worth contacting. Works out the owner's ideal customer profile from the customers they already have, finds look-alike companies and the right contact at each, enriches them with firmographics and buying signals, scores them, and delivers the list as an XLSX, with an offer to also create the records in the CRM. Runs on Apollo when connected and falls back to web research plus an uploaded customer list when it isn't. Use this whenever the owner wants new prospects, a target list, or help finding customers — including phrasings like \"who should I be calling,\" \"find me more customers like my best ones,\" \"build me a prospect list,\" \"I need leads,\" \"who else looks like Acme,\" or \"help me find companies in this area that need what we do.\" Reach for it even when the owner describes the customer they want rather than asking for a list.",
+      "source_sha256": "d7484844e3426abcc4dc9c5f23ea1f391b17a329c37d09c1e6bf28d63d1f4277",
+      "source_path": "skills/lead-finder/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2112349236ecc31a4981ae5b1a947463b8cf28bbf374cbf23456735b643d4795": {
+      "description_zh": "按互动、公司匹配及紧迫性为 HubSpot 入站线索评分排序，准备今日联系要点、跟进草稿及建议日历时间。若还需形成电话清单并实际预留时间，转用 call-list。",
+      "source": "Scores inbound HubSpot leads by engagement signals, company fit, and urgency markers, ranks the ones worth a call today with talking points, drafts the follow-ups, and proposes calendar times for the owner to book. Use when the owner asks to prioritize, score, or rank leads, asks \"who should I call first,\" or asks about their pipeline. An ask that wants the ranked leads turned into a call list with time blocked on the calendar routes to /call-list, which runs this skill first and then books the time.",
+      "source_sha256": "2112349236ecc31a4981ae5b1a947463b8cf28bbf374cbf23456735b643d4795",
+      "source_path": "skills/lead-triage/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c592e928e246e22cfd1bbd6f9102e28986a43b74f8213b8bbeec474c079bcf2": {
+      "description_zh": "合并 growth-pulse、review-reputation 和网页竞品变化研究，形成单页每周增长简报，解释增长表现、公开私下客户反馈并提出三项行动。只在用户同意后设置每周运行。",
+      "source": "Delivers the weekly growth briefing as one merged read — whether the growth engine is working, what customers are saying in public and private, what competitors actually changed, and the three growth actions worth taking this week. The growth twin of the Monday brief, chaining growth-pulse and review-reputation and adding a web-native competitor scan, merged into a single page rather than three reports. Offers to run on a weekly cadence once, and sets it up on a yes. Use this whenever the owner wants a recurring or one-off growth check, including phrasings like \"how's marketing doing,\" \"growth check for the week,\" \"give me my Monday growth brief,\" \"what should I be doing about growth this week,\" \"are we winning or losing out there,\" or \"set up a weekly marketing update.\" Reach for it when the owner asks how the business is growing rather than how it is paying its bills.",
+      "source_sha256": "8c592e928e246e22cfd1bbd6f9102e28986a43b74f8213b8bbeec474c079bcf2",
+      "source_path": "skills/marketing-monday/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "027d01fcf27ed861ddf5b1f6584f463bdde3fa253ea6fd12f3bacf0b3f9afe25": {
+      "description_zh": "串联 business-pulse 与已定义 KPI 的 report-builder，再结合日历邮件的未来一周安排，按保存的格式交付一页周一简报。根据已连接账簿、支付、销售和沟通服务逐步扩展，完全未连接时可使用粘贴上传数据。",
+      "source": "Runs the owner's Monday morning briefing as a two-link chain — business-pulse for the cross-connector snapshot of cash, sales, and pipeline, and report-builder for any saved KPI reports the owner has already defined — then reads the week ahead straight from Calendar and mail and merges all three parts into a single one-page Monday document, delivered per the owner's stored output preference. Requires no connectors and degrades gracefully, building from whatever of the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books), Calendar, DocuSign, Expensify, Gmail or M365, HubSpot, PayPal, Ramp, RingEx Chat, Shopify, Slack, Stripe, and TikTok Ads is connected, or from pasted and uploaded data when none are. Trigger on \"Monday brief,\" \"start my week,\" \"what do I need to know this week,\" \"weekly briefing,\" \"catch me up before Monday,\" or when the owner schedules a recurring start-of-week update.",
+      "source_sha256": "027d01fcf27ed861ddf5b1f6584f463bdde3fa253ea6fd12f3bacf0b3f9afe25",
+      "source_path": "skills/monday-brief/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c06b2ea81a9aed033a1a9829128e678daba9e9c9318cd56db66b8c07e1d9a7a5": {
+      "description_zh": "将账簿与 PayPal、Shopify、Square、Stripe 结算对账，标记待处理交易、可疑重复及缺少收据，撰写通俗损益解释并导出 XLSX 和一页 PDF 月结包。完整月结转用 close-month；仅对账、无预测刷新和分发时直接使用本项。",
+      "source": "Reconciles the accounting ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) against PayPal, Shopify, Square, and Stripe settlements, flags transactions that need attention, suspicious duplicates, and missing receipts, then writes a plain-English P&L narrative and exports a close packet (xlsx + one-page PDF). This is the first link of the /close-month command; a request to close the month or the books routes there, and the command runs this skill before refreshing the forecast and distributing the packet. Use this skill directly only when the owner wants the reconciliation alone, with no forecast refresh and no distribution: \"just reconcile, no packet,\" \"what's missing from the books,\" \"flag the duplicates and missing receipts,\" or \"write the P&L narrative for this month.\"",
+      "source_sha256": "c06b2ea81a9aed033a1a9829128e678daba9e9c9318cd56db66b8c07e1d9a7a5",
+      "source_path": "skills/month-end-prep/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9232b3c03debf3c586998bbd47be4dce8ef80b95abf21d35561106c07c793f0": {
+      "description_zh": "从用户已发邮件学习声音，针对潜客具体信息编写联络和跟进序列，每次发送排队等待批准，并记录 CRM 活动。无邮件连接时只生成可复制草稿，适用于单封及批量外联。",
+      "source": "Writes prospect outreach and follow-up sequences that sound like the owner wrote them, not like an AI did. Learns a voice profile from the owner's own sent mail, grounds every message in something specific about that prospect, builds the follow-up sequence behind it, queues every send for approval, and logs each touch to the CRM. Runs draft-only when no mail connector is available, so the copy can be pasted anywhere. Use this whenever the owner needs to reach out to prospects or customers — including phrasings like \"write this cold email,\" \"draft a follow-up,\" \"reach out to these leads,\" \"what do I say to them,\" \"I need a sequence for this list,\" \"nudge the people who didn't reply,\" or \"write it but don't make it sound like a robot.\" Reach for it whenever outreach copy is the deliverable, even for a single message.",
+      "source_sha256": "e9232b3c03debf3c586998bbd47be4dce8ef80b95abf21d35561106c07c793f0",
+      "source_path": "skills/outreach-composer/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e2d4285aaa1a68a72b3879784d9565b2d1bd0e5c618881079b4a0c03a745c0e": {
+      "description_zh": "从应付邮箱处理账单到拟付款批次，先读取编码，再检查现金，最后暂存供批准，保持月结账簿整洁。账单编码与付款是两次独立决策，分别批准；可结合账簿、邮件、Expensify、Ramp 或上传文件，输出人工录入清单。",
+      "source": "Works the bill pile from the AP inbox all the way to a staged payment run — reads and codes every bill, then checks the cash position before a dollar is committed, then stages the run for one-click approval and keeps the books tidy for close. Coding and paying are two separate decisions with two separate approvals, and the cash check sits between them on purpose. Runs on the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) and a mail connector (Gmail or M365), deepens with Expensify and Ramp, and works from uploaded PDFs or phone photos with the run sheet exported for manual entry. Use it when the owner says \"pay the bills,\" \"the bills are piling up,\" \"what do I owe,\" \"who needs to get paid this week,\" \"can I afford to pay these,\" or forwards a stack of vendor invoices.",
+      "source_sha256": "5e2d4285aaa1a68a72b3879784d9565b2d1bd0e5c618881079b4a0c03a745c0e",
+      "source_path": "skills/pay-the-bills/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "729a94d6ca9c15dcd94dcbe2c4ee080a1337e19f503fee0233a17e3a532a7517": {
+      "description_zh": "汇总 Gusto、QuickBooks Payroll 或表格中的各人正常、加班和 PTO 工时，标记漏打卡、加班突增、费率变化、期中入离职及偏离排班，暂存工资供逐项批准。异常只提示不静默纠正，负责人运行后再记账或交会计。",
+      "source": "Gets payroll ready to run without anyone getting shorted: pulls timesheets from Gusto, QuickBooks Payroll, or an uploaded spreadsheet, totals regular, overtime, and PTO hours by person, flags every anomaly it finds — missed punches, overtime spikes, rate changes, mid-period hires and terminations, hours off the schedule — and stages the run for the owner to approve line by line before a dollar moves. Anomalies are always raised, never quietly corrected. Once the owner runs it, the journal posts to the ledger or goes to the bookkeeper. Reach for this whenever payroll comes up at all — \"run payroll,\" \"payroll is due,\" \"check the timecards,\" \"did everyone clock out,\" \"how many hours did the crew put in,\" \"why is payroll so high this week,\" \"I need to pay the guys Friday\" — and use it after cash-flow-snapshot when the owner is worried about whether payroll clears.",
+      "source_sha256": "729a94d6ca9c15dcd94dcbe2c4ee080a1337e19f503fee0233a17e3a532a7517",
+      "source_path": "skills/payroll-prep/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f3f9fd32f9739f32ae2243c29e52ebc2d8805033b39e022d8ff23172b6132e9": {
+      "description_zh": "串联现金预测、逾期催款草稿及工资准备，评估工资窗口资金、弥补缺口并检查工时异常。Gusto 仅暂存待用户提交，QuickBooks Payroll 或无系统时交付已校验清单由用户录入，流程从不执行最终工资支付；支持周期和工资日期参数。",
+      "source": "Runs the payroll-confidence chain end to end — forecasts cash across the payroll window with cash-flow-snapshot, ranks and drafts overdue-invoice reminders with invoice-chase to close any gap, then assembles timesheets, flags every anomaly, and stages the run with payroll-prep. On Gusto the run is staged for the owner to submit; on QuickBooks Payroll, or with no payroll system, the last step is a validated run sheet the owner keys in. This chain never presses the payroll button. Builds on the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books), with Gmail or M365, PayPal, Square, Stripe, and either Gusto or QuickBooks Payroll adding detail, and falls back to CSV and timesheet uploads. Use it whenever payroll is the worry, including \"can I make payroll,\" \"payroll is due Friday,\" \"plan payroll,\" \"will I have enough to pay the crew,\" or \"I need to run payroll but money is tight.\" Accepts optional horizon and payroll-date arguments.",
+      "source_sha256": "4f3f9fd32f9739f32ae2243c29e52ebc2d8805033b39e022d8ff23172b6132e9",
+      "source_path": "skills/plan-payroll/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47b718f0bd4680819cb2eaea38cbe584901f0df76f9336ee74f103944291a0c1": {
+      "description_zh": "把沟通记录、语音、现场照片、RFP、图纸或笔记转为按用户模板及历史价格编制的品牌提案、报价或 SOW，送签并在接受后触发订金发票。无连接时依据上传材料交付 DOCX/PDF，由用户自行发送。",
+      "source": "Turns whatever came out of a discovery conversation — a call transcript, a voice memo, jobsite photos, an RFP document, a set of drawings, or scrappy notes — into a branded, costed proposal, estimate, or statement of work built on the owner's own templates and historical pricing. Routes it for signature and triggers the deposit invoice once it's accepted. Works entirely from uploaded files when no connector is available, producing DOCX and PDF the owner can send themselves. Use this whenever a quote, bid, estimate, proposal, or SOW is the deliverable — including phrasings like \"write this up for them,\" \"put together a quote,\" \"I need to bid this job,\" \"turn my notes into a proposal,\" \"respond to this RFP,\" or \"price this out.\" Reach for it when the owner describes a job they just looked at, even without saying the word quote.",
+      "source_sha256": "47b718f0bd4680819cb2eaea38cbe584901f0df76f9336ee74f103944291a0c1",
+      "source_path": "skills/proposal-builder/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23bd7b8d02a3f25a8e0cf6a5a401f635ea7d6dc929c4a8932863e780d5fdb87b": {
+      "description_zh": "识别超过自身购买周期或出现流失信号的客户，按关系价值排序并起草用户语气的挽回消息，仅发送和记录已批准内容。串联口碑复核、外联和 CRM，首轮先承认联系间隔，不推销。",
+      "source": "Wins back customers who have quietly stopped buying — finds the ones whose gap has stretched past their own normal rhythm or who are showing churn signals, ranks them by what the relationship was worth, drafts a win-back message per customer in the owner's voice, and sends and logs only what the owner approves. Chains review-reputation, outreach-composer, and crm-autopilot, and keeps the rule that the first touch acknowledges the gap without pitching. Use this whenever the owner is worried about customers drifting away, including phrasings like \"who hasn't ordered in a while,\" \"win back my old customers,\" \"which customers have gone quiet,\" \"we lost some regulars,\" \"reach out to the people who stopped calling,\" or \"how do I get them back.\" Reach for it when the owner names a customer they have not heard from, as readily as for a full win-back campaign.",
+      "source_sha256": "23bd7b8d02a3f25a8e0cf6a5a401f635ea7d6dc929c4a8932863e780d5fdb87b",
+      "source_path": "skills/reactivate/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dceebca7275b8481eac6469db25dd1936fb359d60695c84f7bac38a2c7dc5f2e": {
+      "description_zh": "将自然语言报表需求转为可重复执行的指标定义和取数流程，依据已连接来源或 CSV/XLSX 交付聊天摘要及工作簿，并保存定义供按需或定时重跑。适用于同比销售、应收账龄、人工收入占比、KPI 和仪表盘。",
+      "source": "Turns a plain-English description of a recurring report into a real, repeatable report — defines the metrics, pulls them from whatever data sources are connected, delivers a chat summary plus an XLSX workbook, and saves the definition so the same report reruns on demand or on a schedule. Handles anything from \"sales by location versus last year\" to AR aging to labor as a percentage of revenue. Works fully from an uploaded CSV or XLSX when no connector is available. Use this whenever the owner asks for a report, dashboard, KPI pack, metrics summary, or recurring numbers — including phrasings like \"can you track this every week,\" \"I need to see these numbers monthly,\" \"build me a report on,\" \"same report as last time,\" or \"put together a KPI dashboard.\" Reach for it even when the owner names the metrics without using the word report.",
+      "source_sha256": "dceebca7275b8481eac6469db25dd1936fb359d60695c84f7bac38a2c7dc5f2e",
+      "source_path": "skills/report-builder/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca246d6290b42fb7e1abab68e1624b865fdd7bb5a8f1e15aa75a185ce2b23f68": {
+      "description_zh": "按固定频率运行 report-builder 保存的报表定义，结合 business-pulse 增加背景，交付一份聊天摘要和工作簿。适用于周月例行报表及定时数据包，可基于任一连接来源或上传 CSV/XLSX。",
+      "source": "Delivers the owner's custom recurring report pack on a set cadence — runs the saved report definition from report-builder, wraps it in a business-pulse snapshot so the numbers have context, and hands over one chat summary plus the workbook. Defined once, then delivered on schedule without being asked again. Runs on any single connected data source, or entirely from an uploaded CSV or XLSX. Use it when the owner asks for their report pack, their weekly or monthly numbers, \"send me the usual report,\" \"run my report pack,\" \"set this up to come every Monday,\" or \"I want these numbers on a schedule.",
+      "source_sha256": "ca246d6290b42fb7e1abab68e1624b865fdd7bb5a8f1e15aa75a185ce2b23f68",
+      "source_path": "skills/report-pack/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f57be5ac53e2af4646d5243ecf7784675f8f75bfa2487b73937bf6845de50b6a": {
+      "description_zh": "根据实际销售速度和保守断货日确定补货量，起草采购单与供应商邮件，再暂存对应账务记录供到票匹配；同时标记死库存避免继续补货。支持销售库存平台或 CSV，未经批准不发送采购单或邮件。",
+      "source": "Turns what is actually selling into a reorder decision and gets it all the way into the books — computes sales velocity and conservative stockout dates per item, sizes the reorder, drafts the purchase order and the vendor email, and then stages the matching entry so the bill matches against the PO when it arrives. Flags the money sitting still too, so dead stock gets cleared instead of reordered. Runs on Shopify, Square, or an uploaded sales and stock CSV, and deepens with QuickBooks, Gmail or M365, Calendar, and NetSuite. No PO is sent and no vendor is emailed without approval. Use it when the owner says \"what do I need to reorder,\" \"am I going to run out,\" \"restock,\" \"we keep running out of filters,\" \"draft a PO for my supplier,\" or \"how much cash is sitting in the warehouse.",
+      "source_sha256": "f57be5ac53e2af4646d5243ecf7784675f8f75bfa2487b73937bf6845de50b6a",
+      "source_path": "skills/restock/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de608e44972998e13e5fc3208843c68c80dbc853ee660f482f429a3b867e1536": {
+      "description_zh": "综合 Google、Yelp、Facebook 评论和争议、工单、邮件，以原话证据归纳客户反馈主题，起草用户语气回复供批准，识别沉寂或可能流失客户并准备挽回优惠。可用 Shopify 履约信号，未连接时用粘贴导出评论。",
+      "source": "Watches what customers are saying in public and in private, then does something about it. Aggregates Google, Yelp, and Facebook reviews alongside disputes, tickets, and email into themes backed by verbatim quotes; drafts a reply to every review in the owner's own voice for approval; spots customers who have gone quiet or look likely to leave; and drafts win-back offers for the ones worth keeping. With Shopify connected, order and fulfillment patterns become a sentiment signal too. Works from pasted or exported reviews when nothing is connected. Use this whenever the owner asks about reviews, ratings, reputation, complaints, or repeat business — including \"what are people saying about us,\" \"did we get any bad reviews,\" \"how do I respond to this one-star,\" \"our rating dropped,\" \"which customers have gone quiet,\" \"who hasn't ordered in a while,\" \"how do I win them back,\" or \"are customers happy.\"",
+      "source_sha256": "de608e44972998e13e5fc3208843c68c80dbc853ee660f482f429a3b867e1536",
+      "source_path": "skills/review-reputation/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d6c23a537547f0e0f7b2e2edbc2948dba63d5b59b045b25682c11eb85efd2da": {
+      "description_zh": "审查并改善传统搜索和 AI 回答可见度，覆盖排名、结构、速度、标题描述、回答客户问题的内容、AI 爬虫访问、无 JavaScript 渲染、llms.txt、Schema.org 和相关目录。电商商品标题、描述、替代文本及 SEO 字段按已批准批次清理，公开网站无需连接器即可审查。",
+      "source": "Audits and fixes both halves of being found — classic search and AI answers. Search side: rankings, site structure, page speed, titles and descriptions, and content that answers what customers search for. AI side: whether assistant crawlers can reach the site, pages render without JavaScript, an llms.txt file, schema.org data, and presence in the directories assistants read. For online stores it also runs a bulk catalog cleanup, rewriting product titles, descriptions, alt text, and SEO fields in approved batches. Works on any public website with no connector. Use this whenever the owner talks about being found online, including \"nobody finds us on Google,\" \"how do I show up in ChatGPT,\" \"make my website AI friendly,\" \"SEO audit,\" \"GEO,\" \"AEO,\" \"AI search visibility,\" \"my competitor ranks above me,\" \"fix my product listings,\" or \"I asked an AI about my industry and we weren't in the answer.\"",
+      "source_sha256": "0d6c23a537547f0e0f7b2e2edbc2948dba63d5b59b045b25682c11eb85efd2da",
+      "source_path": "skills/seo-ai-visibility/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aaf15f4e9bf4ecaf80b9911f1c7f313f2d066f4bef050304834d65cc989a9eb3": {
+      "description_zh": "引导中小企业用户连接前两个工具，运行一个流程展示价值，访谈行业、规模及三项主要问题，持久保存业务背景并建立每周检查频率。适用于首次使用和初始设置。",
+      "source": "Claude as the trainer. Walks an SMB owner through connecting their first two tools, runs one recipe to prove immediate value, interviews them about their business (industry, size, top three headaches), stores that context persistently so every other skill benefits, and sets a weekly check-in cadence. Use when the owner is getting started or says any of: \"set me up,\" \"setup,\" \"help me get set up,\" \"get started,\" \"help me get started,\" \"get me started,\" \"what can you do,\" \"I'm new to this,\" or is in their first session.",
+      "source_sha256": "aaf15f4e9bf4ecaf80b9911f1c7f313f2d066f4bef050304834d65cc989a9eb3",
+      "source_path": "skills/smb-onboard/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "be170e8e34e3118faac40775f2005bca97a61c78a5c11c5f8dac9d4fb7590bf1": {
+      "description_zh": "作为 Small Business 插件入口，依据用户当前模糊或具体需求选择技能或命令，解释能力、建议下一步，并利用已保存业务背景调整推荐。",
+      "source": "The front door to the Small Business plugin. Listens to what the owner needs right now — vague or specific — and routes them to the best skill or slash command for the moment. Also serves as a guide: explains what's available, suggests what to try next, and adapts recommendations based on stored business context. Trigger whenever the owner asks \"what can you do,\" \"help me with my business,\" \"what should I focus on,\" \"I don't know where to start,\" or any open-ended business request that doesn't clearly match a single skill.",
+      "source_sha256": "be170e8e34e3118faac40775f2005bca97a61c78a5c11c5f8dac9d4fb7590bf1",
+      "source_path": "skills/smb-router/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d547b68821fb24be9adc3d774f1cf137a5299b6c0be0ef9d0a6a68c585182bbf": {
+      "description_zh": "持续维护社交内容日历，学习用户声音、制作品牌 Canva 图、撰写图注和跨渠道改编，暂存帖子等待批准，不自行发布。可读取 Shopify 图片价格，无连接时交付日历和素材需求；已批准完整活动需求交给 canva-creator。",
+      "source": "Runs the owner's content operation as a standing thing rather than a one-off: keeps a rolling posting calendar, learns the owner's voice, generates on-brand Canva graphics, writes captions that sound like them, repurposes one asset into every channel format, and stages posts for approval instead of publishing on its own. Pulls product photos and prices from Shopify when connected; with no connectors, drafts the calendar and asset briefs for manual posting. Use this whenever the owner talks about posting, content, or social — including \"I need to post more,\" \"we've gone quiet on Instagram,\" \"what should we post this month,\" \"make the content,\" \"give me a month of posts,\" \"write this in my voice,\" \"repurpose this,\" or \"set up our content calendar.\" Reach for it for a single post as readily as for a full quarter. One handoff: a finished, approved campaign brief goes to canva-creator; this skill owns the standing operation.",
+      "source_sha256": "d547b68821fb24be9adc3d774f1cf137a5299b6c0be0ef9d0a6a68c585182bbf",
+      "source_path": "skills/social-content-engine/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c55f45f1b96a432c905290fb2cdc837b1beb3559f74829953470f31b45312dd1": {
+      "description_zh": "定时或按需检查表单、共享邮箱和 CRM 入站线索，按用户条件分级，准备含真实可约时间的回复供用户批准发送，紧急线索立即交人工并记录 CRM。绝不自行发信，未连接时处理转发或粘贴询问。",
+      "source": "Makes sure no inbound lead goes unanswered. Watches web forms, the shared inbox, and the CRM for new inquiries, qualifies each one against the owner's criteria, drafts a reply in the owner's voice with real meeting times for the owner to approve and send, routes anything hot to a human right away, and logs the whole thing to the CRM. Never sends on its own. Built to run on a schedule so overnight inquiries are drafted and sorted by morning, and works from forwarded or pasted inquiries when no connector is available. Use this whenever the owner is worried about inbound leads or response time — including phrasings like \"leads are going cold,\" \"did anyone answer that inquiry,\" \"I keep missing form submissions,\" \"nothing falls through the cracks,\" \"handle my inbound,\" \"respond to this lead,\" or \"we lose people because nobody gets back fast enough.\" Reach for it for a single unanswered inquiry as readily as for a standing setup.",
+      "source_sha256": "c55f45f1b96a432c905290fb2cdc837b1beb3559f74829953470f31b45312dd1",
+      "source_path": "skills/speed-to-lead/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "36913323c263bbfa6c1c01c4e5276dc8a5094318e06e9c9af3d90e3fc4b3b0aa": {
+      "description_zh": "先由 month-end-prep 确认关账对账，再由 tax-season-organizer 基于已关数字准备季度预估税或年末 1099-NEC 和会计材料。仅涵盖美国联邦税计算，非美国企业交付关账包；不提供税务建议或申报。已明确关账时可直接用后者。",
+      "source": "Prepares tax materials as a two-link chain — month-end-prep confirms the books are closed and reconciled first, then tax-season-organizer calculates the quarterly estimated payment or builds the year-end 1099-NEC list and accountant packet from those closed numbers. Requires a ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books); uses Gusto, PayPal, and Stripe when connected, else CSV upload. US federal tax math; a non-US business gets the closed-books packet. Prep material for a CPA, never tax advice, nothing filed. Trigger on \"quarterly taxes,\" \"estimated tax payment,\" \"how much should I set aside,\" \"1099s,\" \"1099-NEC,\" \"W-9s,\" \"year-end tax prep,\" \"get my books ready for my accountant,\" any phrasing that suggests a tax deadline is coming, or a question about net profit or YTD income that sounds like worry about a tax bill. An owner who says the period's books are already closed routes to tax-season-organizer directly.",
+      "source_sha256": "36913323c263bbfa6c1c01c4e5276dc8a5094318e06e9c9af3d90e3fc4b3b0aa",
+      "source_path": "skills/tax-prep/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "049ada93b8668168b7cc59acf67556e8bf34ac9b75634d6e1d237d28e4290619": {
+      "description_zh": "为会计准备美国联邦税季材料，按账簿年初至今净收入估算季度税，或结合 PayPal、Stripe 筛查原说明所列付款超过 600 美元的承包商，形成 1099-NEC 清单和缺少 W-9 标记。阈值为原说明口径；非美国仅提供关账包，未确认关账先用 tax-prep，不作税务建议。",
+      "source": "Prepares tax-season materials for the owner's accountant, not tax advice. US federal tax; a non-US business gets its closed-books packet instead. Two modes: (1) quarterly estimated tax from YTD net income in the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books); (2) year-end 1099 prep, scanning the ledger, PayPal, and Stripe for contractors paid over USD 600 into a 1099-NEC list with missing W-9 flags.\nAny tax request routes first to /tax-prep, which confirms the books are closed and reconciled before running this skill. Use this skill directly only when the owner says the period's books are already closed: \"books are closed, now do the 1099s,\" \"run the quarterly estimate off the closed numbers,\" or \"just the contractor W-9 list.\"",
+      "source_sha256": "049ada93b8668168b7cc59acf67556e8bf34ac9b75634d6e1d237d28e4290619",
+      "source_path": "skills/tax-season-organizer/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aabe8ff2a17121af161aab9f6214db1a09dc21ecec9eae0ba201d59c9af63e04": {
+      "description_zh": "依据客户邮件或工单，读取支付或 Shopify 订单退款状态、CRM 历史及 Zoho Desk 工单，起草匹配语气的回复；退款须明确批准。可主动筛查超承诺未履约、付款异常、待退款及配送卡住订单，为各项准备下一步。",
+      "source": "Reads a forwarded customer email or ticket, pulls order and refund status from a payments connector (PayPal, Square, or Stripe) or Shopify, account history from the CRM, and open tickets from a support desk (Zoho Desk), drafts a tone-matched reply in the owner's writing voice, and can issue a refund through the payments connector with explicit owner approval. With Shopify connected it also runs a proactive order-triage mode that surfaces orders needing attention — unfulfilled past the promised window, payment problems, pending refunds, stuck shipments — and drafts the next action for each before the customer has to ask. Use when the user says \"draft a response,\" \"answer this customer,\" \"where's my order,\" \"I want a refund,\" \"check my orders,\" or \"anything about to blow up.\"",
+      "source_sha256": "aabe8ff2a17121af161aab9f6214db1a09dc21ecec9eae0ba201d59c9af63e04",
+      "source_path": "skills/ticket-deflector/SKILL.md",
+      "package_sha256": "0cc584ef7fa8ba76d4b2cf407722ad2f91afc99793530feda5fd3f13eeda8da2",
+      "source_package": "Small Business-1.35.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ace535f8fa47a3c82b809bf938acbbbd9083c2c736d2e705de79abbf43610af0": {
+      "description_zh": "通过 MCP 管理 SmartReply AI 客服，涵盖接入排障、社交评论和消息自动回复、审核、FAQ、指令路由、沙箱测试、会话搜索、暂停自动回复、升级及退款换货等待处理动作批准或拒绝。",
+      "source": "Manage a SmartReply AI customer service agent through its MCP tools. Use when the user wants to set up or troubleshoot SmartReply, automate or fix replies to social media comments and customer messages, moderate comments, import FAQs, change agent instructions or routing rules, test replies in the sandbox, search customer conversations, pause automatic replies, handle escalations, or approve or decline refunds, replacements, and other pending actions.",
+      "source_sha256": "ace535f8fa47a3c82b809bf938acbbbd9083c2c736d2e705de79abbf43610af0",
+      "source_path": "skills/smartreply-account/SKILL.md",
+      "package_sha256": "f48b4cf20c1f4a14c6e958a9a4bc1e99016d15cc5ed9a6d1e2c6c0ee7db9ebec",
+      "source_package": "SmartReply-1.0.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9e1ab5e59b214fc8058086291c79c5d95124cb2f87628935fa9fae1b0cf2ceb": {
+      "description_zh": "只读审查 SMDD 文件夹一致性，核对 docs 中每个 Markdown 与 src 对应文件的命名、字段、配对契约及 CLAUDE.md 规则，返回 PASS/FAIL/WARN 和问题清单。适用于批次构建后或 PR 前，不自动修复，修复回到 smdd-code。",
+      "source": "Folder-level coherence audit for an SMDD project. Reads every md in docs/<folder> and every corresponding source file under src/, cross-checks naming, field alignment, pair-contract compliance, and CLAUDE.md rule violations. Returns PASS/FAIL/WARN with a structured issue list. Use after an smdd-compile batch completes, as a pre-PR lint, or whenever coherence drift is suspected. Never auto-fixes — it only reports; fixes go back through smdd-code.",
+      "source_sha256": "d9e1ab5e59b214fc8058086291c79c5d95124cb2f87628935fa9fae1b0cf2ceb",
+      "source_path": "skills/smdd-check/SKILL.md",
+      "package_sha256": "1706dd7ea997990762cc41cfd30bc422f8db1904f6e27f1e3b5e72a33f118ce5",
+      "source_package": "smdd-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "738c8b16c0ff7db5c9971672aeb6845276e1b31e4dc1c5747a2c5028bbb59ab8": {
+      "description_zh": "按原子任务实现单个 SMDD 组件，读取该组件及配对 Markdown 和已建依赖，写代码与测试、运行至通过，在功能分支提交并返回差异摘要。仅修改已声明目标文件，保持并行任务隔离。",
+      "source": "Atomic WORK task for building one SMDD component. Use when asked to \"implement this file\", \"build this component\", \"code the <X> md\", or similar single-component asks inside an SMDD project (one with docs/{ui,backend,config}). Read the component's md, its pair md if one exists, and already-built dependencies; write the code file; write a test; run the test until green; commit on a feature branch; return a diff summary. Never edits files outside the declared target set — that's how sibling agents stay parallel-safe.",
+      "source_sha256": "738c8b16c0ff7db5c9971672aeb6845276e1b31e4dc1c5747a2c5028bbb59ab8",
+      "source_path": "skills/smdd-code/SKILL.md",
+      "package_sha256": "1706dd7ea997990762cc41cfd30bc422f8db1904f6e27f1e3b5e72a33f118ce5",
+      "source_package": "smdd-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6734d4214714bcda46120b9a76073973f62fa40c5f94de5d45eced93620615bb": {
+      "description_zh": "统筹多组件 SMDD 批次，按文件集合互斥及依赖满足情况分配并行子智能体，原说明机械任务用 haiku、耦合任务用 sonnet；收集差异、运行 smdd-check 并提交，遵循 CLAUDE.md，不并行修改共享文件。",
+      "source": "Orchestrator that builds a batch of SMDD components with parallel sub-agents. Use when asked to \"build batch N\", \"implement all schemas in parallel\", \"compile this folder\", or kick off a multi-component build. Determines which targets in the batch can run in parallel (disjoint file sets, satisfied dependencies), spawns one Agent per target with the right model (haiku for mechanical, sonnet for coupled), collects diffs, runs smdd-check over the touched folders, commits. Respects CLAUDE.md. Never parallelizes targets that share a file.",
+      "source_sha256": "6734d4214714bcda46120b9a76073973f62fa40c5f94de5d45eced93620615bb",
+      "source_path": "skills/smdd-compile/SKILL.md",
+      "package_sha256": "1706dd7ea997990762cc41cfd30bc422f8db1904f6e27f1e3b5e72a33f118ce5",
+      "source_package": "smdd-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df688257669a85ba970a0359288bc6919a0c914e4e767d658d61f197bb034ca7": {
+      "description_zh": "用于 Structured Markdown Driven Development，按 docs/ui、backend、config 与根 about.md 组织先文档后代码的项目，执行规划、提纲、逐组件深入及构建流程并遵守目录文件约定。",
+      "source": "Use this skill when the user mentions SMDD (Structured Markdown Driven Development), asks to \"plan in SMDD style,\" asks to \"create an SMDD outline,\" is working inside a directory that has the layout `docs/{ui,backend,config}` + `about.md` at its root, or asks to scaffold a new project as markdown-first docs before writing code. Enforces the three-step collaboration flow (plan then outline then per-component deep-dive then build) and the SMDD file and folder conventions.",
+      "source_sha256": "df688257669a85ba970a0359288bc6919a0c914e4e767d658d61f197bb034ca7",
+      "source_path": "skills/smdd/SKILL.md",
+      "package_sha256": "1706dd7ea997990762cc41cfd30bc422f8db1904f6e27f1e3b5e72a33f118ce5",
+      "source_package": "smdd-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38f4c288b50449834e62e8445abe8be2477577fe37cade9b24799b515b03e8bb": {
+      "description_zh": "通过真实浏览器结合 axe-core 自动扫描和明确人工检查，全面审查网站无障碍，按影响与 WCAG 条款输出 CSV。适用于键盘、屏幕阅读器及 ADA/EAA 复核，区别于其他流程顺带记录的无障碍意见。",
+      "source": "Run an accessibility audit against a live site using a real browser (via Playwright MCP or @playwright/cli), combining automated axe-core scans with a defined set of manual checks axe can't do, and output a CSV of findings by impact and WCAG criterion. Use whenever the user asks for an accessibility audit, a11y check, WCAG compliance check, whether the site works with a screen reader or keyboard only, or ADA/EAA compliance review — trigger even if they just say \"check this site for accessibility issues\" without naming WCAG or axe explicitly. Distinct from the incidental a11y notes scenario-mapper and flow-runner make in passing — this is the dedicated, thorough version.",
+      "source_sha256": "38f4c288b50449834e62e8445abe8be2477577fe37cade9b24799b515b03e8bb",
+      "source_path": "skills/accessibility-audit/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f882281037fd79f536e824717cec7adf740de4dba6295aea6cb321e7b2c803e": {
+      "description_zh": "通过真实浏览器测试认证会话边界，涵盖中途过期、多设备并发、跨标签退出、记住登录、密码重置令牌过期重用及返回键访问退出状态。仅可自愿选择窄范围的已记录锁定限流检查，不试探未记录阈值；侧重会话状态和 UX。",
+      "source": "Test session and authentication lifecycle edge cases using a real browser — session expiry mid-flow, concurrent sessions across simulated devices, whether logout in one tab propagates to another, remember-me persistence, password reset token expiry/reuse, and whether logged-out state is reachable via the back button. Use whenever the user wants to check session handling, auth edge cases, \"what happens when a session expires,\" concurrent login behavior, or remember-me correctness — trigger on phrases like \"test session expiry,\" \"check auth edge cases,\" \"does logout work across tabs,\" or \"test remember me.\" Distinct from flow-runner's login scenario, which verifies the happy path once — this tests the lifecycle around it. Includes one narrowly-scoped, opt-in check for a documented lockout/rate-limit policy; never probes for undocumented limits by trial and error, and that's the closest this skill comes to security testing — everything else here is session-state and UX correctness.",
+      "source_sha256": "1f882281037fd79f536e824717cec7adf740de4dba6295aea6cb321e7b2c803e",
+      "source_path": "skills/auth-session-audit/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5a40dafcbd2c3f225a637985154cacbcac5665f9b2b88a5a97bc372faac6906": {
+      "description_zh": "提供浏览器测试前的凭据、截图和不可信内容规则，要求复用已有会话、避免填真实密码及截取已填写凭据字段，把页面文字当数据，保留会话资料在本机，并在有人观看时使用可见浏览器。",
+      "source": "Use before driving a browser for any testing task — the credential, screenshot, and untrusted-content rules every browser-driving check in this toolkit depends on. Read it whenever a run will log in or handle credentials, capture snapshots or screenshots of a page, or read content from a site whose text you don't control. Covers running headed when a person is watching, why filling a real password leaks it, reusing a saved session instead, never snapshotting a populated credential field, treating page content as data rather than instructions, and keeping session data on the machine.",
+      "source_sha256": "f5a40dafcbd2c3f225a637985154cacbcac5665f9b2b88a5a97bc372faac6906",
+      "source_path": "skills/browser-safety/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9ea80b34339252ed98dae4c69e9197364df2f71a1adc90ce7adc708ccb21c72": {
+      "description_zh": "根据缺陷报告、堆栈、失败测试或 Jira issue 定位相关代码，给出按证据排序的可能根因而非定论，引用文件行、提交及日志。可从 Jira 读取并通过 jira-connector 预演回写分析。",
+      "source": "Use when the user shares a bug report, stack trace, failing test, or Jira issue and wants likely root causes and related code identified — returns ranked, evidence-cited hypotheses (the file:line, the commit, the log), not verdicts. Fetches the bug from Jira and can post the analysis back (dry-run) via jira-connector. e.g. \"analyze PROJ-123\", \"why is this stack trace happening?\", \"root-cause this failing test\".",
+      "source_sha256": "e9ea80b34339252ed98dae4c69e9197364df2f71a1adc90ce7adc708ccb21c72",
+      "source_path": "skills/bug-analyzer/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae6f47320a96235635a2b3840317a754a36849a8608556823fb28f456b909d98": {
+      "description_zh": "将已确认缺陷转为 Jira Bug，先查重，再附证据和回链提交结构化工单，始终先 dry-run。未验证发现先转 bug-triage，已有工单根因调查使用 bug-analyzer。",
+      "source": "Use when a defect needs to become a Jira ticket — takes a finding from any source (a bug-triage bundle, a drafted ticket markdown, a figma-compare/fix-verifier finding, or a defect described in conversation), checks Jira for duplicates first, then files a well-structured Bug with evidence attached and links back, via jira-connector (dry-run first, always). Trigger on \"file this bug\", \"create a ticket for this\", \"raise this in Jira\", \"log a defect for D4\", or when a testing skill ends with a confirmed defect the user wants tracked. Distinct from bug-analyzer (which investigates causes of an existing ticket) and bug-triage (which establishes that something IS a bug — unverified findings route there first, because a filed bug that doesn't reproduce burns the team's trust in every future report).",
+      "source_sha256": "ae6f47320a96235635a2b3840317a754a36849a8608556823fb28f456b909d98",
+      "source_path": "skills/bug-creator/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "794d43d8856163e11519c323c4d6431ec4196a9122f389c412201c50c397f31d": {
+      "description_zh": "在真实浏览器复现已报告或疑似故障，评估复现稳定性，采集 trace、截图、控制台和网络证据，编写最小复现及有证据支持的根因假设。也处理 flow-runner 失败报告，不用于预期成功验证或首次寻找测试场景。",
+      "source": "Reproduce a reported bug in a real browser (via the Playwright MCP server or @playwright/cli), determine how reliably it reproduces, capture a full evidence bundle (trace, screenshot, console, network), and write a triage report with a minimal repro and an evidence-grounded root-cause hypothesis. Use whenever the user wants to reproduce, confirm, investigate, or triage something reported as broken — phrases like \"reproduce this bug,\" \"is this actually broken,\" \"why is X failing,\" \"confirm this before I file it,\" \"is this flaky or real,\" \"walk through this bug report,\" or \"figure out what's going on with [feature]\" should trigger it. Also trigger when handed a failed scenario or run report from the flow-runner skill. Do not use this for planned, expected-to-pass verification (that's flow-runner) or for finding what to test in the first place (that's scenario-mapper) — this skill is specifically for investigating something already suspected or reported broken.",
+      "source_sha256": "794d43d8856163e11519c323c4d6431ec4196a9122f389c412201c50c397f31d",
+      "source_path": "skills/bug-triage/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e6a1b2aed9faf2f8bb6f680c1f31b468d1ec0ec2211db37b10463ac432caa74": {
+      "description_zh": "将既有场景运行于 Chromium、Firefox、WebKit 和手机平板桌面视口矩阵，汇总通过失败对比。适用于浏览器兼容和响应式验证，不创建新场景或进行像素视觉差异分析。",
+      "source": "Run an existing test scenario across a matrix of browser engines (Chromium, Firefox, WebKit) and viewport sizes (mobile/tablet/desktop), and normalize the results into a single pass/fail comparison table. Use whenever the user wants to check something across browsers, check responsive/mobile behavior, verify something \"works on Safari/Firefox,\" or build a compatibility matrix — trigger on phrases like \"test this across browsers,\" \"does this work on mobile,\" \"check responsive behavior,\" \"cross-browser check,\" or \"compatibility matrix,\" even without the word Playwright. This skill runs a scenario that already exists (from flow-runner or a scenario-mapper row) across the matrix — it doesn't invent new scenarios, and it doesn't do pixel-level visual diffing (that's a separate concern from functional cross-browser correctness).",
+      "source_sha256": "2e6a1b2aed9faf2f8bb6f680c1f31b468d1ec0ec2211db37b10463ac432caa74",
+      "source_path": "skills/cross-browser-matrix/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e4a69f3bb25f9f3dfd57dd5ce25d2f71ce3a04429e4329f00c85faebf8cdfb9": {
+      "description_zh": "使用真实浏览器验证创建、修改和删除的数据全生命周期，并通过测试删除清理数据。适用于 CRUD、变更、表单持久化和可验证清理，在严格自包含规则下允许测试写入；区别于只读发现及在副作用前停止的流程执行。",
+      "source": "Test create, edit, and delete (CRUD/mutation) operations in a web app with a real browser, verifying the full data lifecycle of each entity and cleaning up via delete-as-test. Use whenever the user wants to test CRUD operations, mutation flows, data lifecycle (\"does saving/updating/deleting actually work\"), form persistence, or wants a test run that verifiably cleans up after itself. Complements scenario-mapper (read-only discovery) and flow-runner (journey execution that stops before side effects) — this is the skill that is ALLOWED to mutate, under strict self-containment rules.",
+      "source_sha256": "7e4a69f3bb25f9f3dfd57dd5ce25d2f71ce3a04429e4329f00c85faebf8cdfb9",
+      "source_path": "skills/crud-tester/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aff4f6b682e73b93a1b072702e062e6dd844be1e50103cd5a5d9f3c8247407b0": {
+      "description_zh": "把已经 flow-runner 或对应网络/跨浏览器流程验证的场景转为永久 @playwright/test，使用角色定位、逐步真实断言、动态数据及共享认证，无固定等待，并立即运行确认通过。未运行的场景发现条目须先验证，不直接生成测试。",
+      "source": "Convert a scenario that's already been verified by flow-runner (or network-assertion / cross-browser-matrix for their scenario types) into a permanent, runnable @playwright/test spec file — with role-based locators, real assertions per step, no fixed-time waits, dynamic test data, and shared auth fixtures. Runs the generated test immediately to confirm it actually passes before handing it over. Use whenever the user wants to turn a tested flow into an automated test, generate Playwright test code, \"make this a real test,\" or add something to a CI test suite. Do not use this to generate code from an unverified scenario-mapper row — verify it via flow-runner first, since generating code from a scenario that's never actually been run bakes untested assumptions into something that looks more authoritative than it is.",
+      "source_sha256": "aff4f6b682e73b93a1b072702e062e6dd844be1e50103cd5a5d9f3c8247407b0",
+      "source_path": "skills/e2e-codegen/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
