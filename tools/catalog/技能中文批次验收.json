@@ -1,0 +1,15 @@
+{
+  "total_skills": 10429,
+  "translated_skills": 503,
+  "missing_skill_chinese": 9926,
+  "all_skills_complete": false,
+  "unique_missing_descriptions": 9411,
+  "checks": [
+    "original names and descriptions unchanged",
+    "manual translations match source hashes and representative package paths",
+    "Chinese text and no pending placeholders",
+    "CSV exactly matches package details",
+    "search contains all Chinese descriptions"
+  ],
+  "missing_inventory": "tools/catalog/generated/缺失中文说明.json"
+}

@@ -1,0 +1,14 @@
+const fs = require('fs'), vm = require('vm'), assert = require('node:assert/strict');
+const source = fs.readFileSync('source/catalog.js','utf8');
+const names = ['skillTitle','skillRow'];
+const functions = names.map(name => source.split('\n').find(line => line.startsWith('function '+name+'('))).join('\n');
+const ctx = vm.createContext({fileHref:()=> '#/test', icon:()=> '<svg></svg>'});
+vm.runInContext(source.split('\n').find(line => line.startsWith('const $='))+'\n'+functions,ctx);
+const s = {name:'burnrate<script>',name_zh:'中文短名',description:'English source',description_zh:'核验 <img src=x onerror=alert(1)> & 输出',path:'skills/burnrate/SKILL.md'};
+const rendered = ctx.skillRow({id:275},s);
+assert.equal(ctx.skillTitle(s),s.name);
+assert.ok(rendered.includes('<strong>burnrate&lt;script&gt;</strong>'));
+assert.ok(rendered.includes('<p>核验 &lt;img src=x onerror=alert(1)&gt; &amp; 输出</p>'));
+assert.ok(!rendered.includes('中文短名'));
+assert.ok(!rendered.includes('<script>') && !rendered.includes('<img'));
+console.log('PASS: original title retained, Chinese description below, title and description escaped');
