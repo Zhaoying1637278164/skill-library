@@ -71809,6 +71809,1086 @@
       "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
       "source_package": "stackql-skills-0.1.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6aed07abd3cfe34df9c5550606d5695d6bb14626bec194cf16cbe0c576040a7": {
+      "description_zh": "对云和 SaaS 提供商执行 StackQL 查询，接受原始 SQL 或自然语言，并依据提供商 schema 转换，支持 SELECT、INSERT、UPDATE、DELETE 和 EXEC。",
+      "source": "Run StackQL queries against cloud and SaaS providers. Accepts raw SQL or natural language questions. Translates natural language into StackQL SQL using the provider schema. Supports all StackQL operations: SELECT, INSERT, UPDATE, DELETE, and EXEC.",
+      "source_sha256": "c6aed07abd3cfe34df9c5550606d5695d6bb14626bec194cf16cbe0c576040a7",
+      "source_path": "skills/query/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af6896f0fb924e34fb109f0d1d8647425a83b2f30c2c98a885f9423eb5d71de4": {
+      "description_zh": "搜索历史 Claude Code 会话日志恢复背景，适用于回顾既有决策、模式和未完成工作，可跨项目或限定当前项目。",
+      "source": "Search past Claude Code session logs to recover your own context. Invoke this proactively when you need to recall past decisions, patterns, or unresolved work - either across all projects or scoped to the current one.",
+      "source_sha256": "af6896f0fb924e34fb109f0d1d8647425a83b2f30c2c98a885f9423eb5d71de4",
+      "source_path": "skills/read-memories/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "830f2c08347eb1f802b756dba9da1e8a2d0d61834002cfeeb9aced15135b200c": {
+      "description_zh": "依据目标基础设施描述或提供商资源，生成含 stackql_manifest.yml 和 .iql 文件的 stackql-deploy 栈以配置云资源。",
+      "source": "Generate a stackql-deploy stack with a stackql_manifest.yml and .iql resource files for provisioning cloud infrastructure. Accepts a description of the desired infrastructure or a specific provider and resources to provision.",
+      "source_sha256": "830f2c08347eb1f802b756dba9da1e8a2d0d61834002cfeeb9aced15135b200c",
+      "source_path": "skills/scaffold-stack/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "333ebffda04debbc54964205c53c2aeac769d524b1438c930a27ce58f8f6188b": {
+      "description_zh": "为 stackql-deploy 生成 GitHub Actions CI/CD，创建云基础设施构建、测试和拆除工作流。",
+      "source": "Generate CI/CD pipeline configuration for stackql-deploy stacks. Supports GitHub Actions. Creates workflows for build, test, and teardown of cloud infrastructure.",
+      "source_sha256": "333ebffda04debbc54964205c53c2aeac769d524b1438c930a27ce58f8f6188b",
+      "source_path": "skills/setup-ci/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7adeb720f556dcecb7361c5ad555b625f0de5edf73e0a511c29eae27e335b76e": {
+      "description_zh": "搜索 StackQL 文档、提供商注册表及博客，从 stackql.io/docs、registry.stackql.io 和提供商文档读取资料。",
+      "source": "Search StackQL documentation, provider registry docs, and blog posts. Fetches content from stackql.io/docs, registry.stackql.io, and provider-specific doc sites.",
+      "source_sha256": "7adeb720f556dcecb7361c5ad555b625f0de5edf73e0a511c29eae27e335b76e",
+      "source_path": "skills/stackql-docs/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7dd3d318cf620895b3ec8c89ee4789a1fc25b334d294afc1def06c4b680f9a5": {
+      "description_zh": "处理后端无障碍，涵盖 lang 和文档元数据、SSR/模板/事务邮件语义、API 错误校验数据、动态片段、HTTP 会话和图片 alt 模型字段，修复服务端根因或设置代码 CI 扫描。",
+      "source": "This skill should be used for server-side accessibility work — whenever the user is dealing with accessibility concerns that originate on the back end: missing or wrong `lang` / document metadata, server-rendered (SSR / template / transactional email) markup semantics, API error and validation payload shape, dynamic/streamed fragments, HTTP status and session handling, or content-model fields like image `alt`. Use it when the user mentions \"server\", \"API\", \"backend\", \"template\", \"SSR\", \"validation errors\", \"lang attribute\", or wants to fix Stark code-asset violations whose root cause is server-side, or to set up code / CI scanning. Prefer this skill when an accessibility issue is really about responses, contracts, or metadata rather than UI components.",
+      "source_sha256": "f7dd3d318cf620895b3ec8c89ee4789a1fc25b334d294afc1def06c4b680f9a5",
+      "source_path": "skills/stark-backend/SKILL.md",
+      "package_sha256": "02cd0daa898a6a38b85565455c2dfd90b7b6ba2bd169c557e2bc893719b07b2c",
+      "source_package": "Stark-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74090e31aec1e8f7548a5b7179207fe1283164a2ad3b741ff9743cdc3ef69dfe": {
+      "description_zh": "在 Figma/Sketch 设计阶段处理对比度、色觉、目标尺寸、阅读顺序和替代文本，扫描或修复 Stark 设计违规。以比例、颜色、间距、字体、状态和令牌表达，不编写代码。",
+      "source": "This skill should be used for design-stage accessibility work in Figma or Sketch — whenever the user mentions \"contrast\", \"color contrast\", \"color blindness\", \"design accessibility\", \"Figma accessibility\", \"target size\", \"reading order\", \"alt text\" at design time, or wants to fix Stark violations on a Figma/design asset, or to scan a Figma file. Use it to give fixes in design language — contrast ratios, hex values, spacing, type scales, component states, and design tokens — never code. Prefer this skill for any accessibility work on design files even if the user doesn't say \"Stark\".",
+      "source_sha256": "74090e31aec1e8f7548a5b7179207fe1283164a2ad3b741ff9743cdc3ef69dfe",
+      "source_path": "skills/stark-design/SKILL.md",
+      "package_sha256": "02cd0daa898a6a38b85565455c2dfd90b7b6ba2bd169c557e2bc893719b07b2c",
+      "source_package": "Stark-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a6a4d0a0dc1af211ac59265e8110c1227b27a2cfd5652dd7ebb69296916a180b": {
+      "description_zh": "处理网页前端无障碍，将 Stark 网站、代码或 Storybook 违规转为最小正确 HTML/ARIA 修复，涵盖屏幕阅读器、键盘和焦点，区分真实 WCAG 失败与最佳实践清理，也支持扫描配置。",
+      "source": "This skill should be used for web front-end accessibility work — whenever the user mentions \"accessibility\", \"a11y\", \"WCAG\", \"ARIA\", \"screen reader\", \"keyboard navigation\", \"focus management\", or \"semantic HTML\", asks to fix accessibility violations on a web / URL / code / Storybook asset in Stark, or wants to set up accessibility scanning for a website or front-end codebase. Use it to turn Stark violations into correct, minimal HTML/ARIA fixes and to tell real WCAG failures apart from best-practice cleanup. Prefer this skill for any web UI accessibility task even if the user doesn't say \"Stark\".",
+      "source_sha256": "a6a4d0a0dc1af211ac59265e8110c1227b27a2cfd5652dd7ebb69296916a180b",
+      "source_path": "skills/stark-frontend/SKILL.md",
+      "package_sha256": "02cd0daa898a6a38b85565455c2dfd90b7b6ba2bd169c557e2bc893719b07b2c",
+      "source_package": "Stark-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf3bfcf0fdd808bfae81ef1028fcf242d705ef2d9a50faccbb6baf6887fc0371": {
+      "description_zh": "处理 iOS、Android、React Native 和 Flutter 原生无障碍，将 WCAG 转为相应平台 API，涵盖 VoiceOver、TalkBack、标签、Dynamic Type、Compose 语义、触摸目标和移动扫描。",
+      "source": "This skill should be used for native mobile accessibility work — iOS (UIKit/SwiftUI), Android (Views/Compose), and cross-platform frameworks (React Native, Flutter). Use it whenever the user mentions \"VoiceOver\", \"TalkBack\", \"accessibilityLabel\", \"contentDescription\", \"Dynamic Type\", \"Compose semantics\", \"touch target\", \"iOS accessibility\", \"Android accessibility\", or wants to fix Stark violations on an iOS / Android / mobile code asset, or set up scanning for a mobile app. Use it to translate WCAG criteria into the correct native accessibility API for the user's platform. Prefer this skill for any mobile-app accessibility task even if the user doesn't say \"Stark\".",
+      "source_sha256": "cf3bfcf0fdd808bfae81ef1028fcf242d705ef2d9a50faccbb6baf6887fc0371",
+      "source_path": "skills/stark-mobile/SKILL.md",
+      "package_sha256": "02cd0daa898a6a38b85565455c2dfd90b7b6ba2bd169c557e2bc893719b07b2c",
+      "source_package": "Stark-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81b91287b9f76ed32b014f4668f7a7effa333b57d50823b2274a83df4a81fe24": {
+      "description_zh": "管理无障碍项目，评估 WCAG、Section 508、EAA 合规状况、积压优先级和整改路线图，形成面向利益相关方的状态与审查摘要，并把具体修复分流到对应领域，不编写代码。",
+      "source": "This skill should be used for accessibility program and project management — whenever the user asks where they stand on accessibility, about compliance status against WCAG / Section 508 / EAA, how to prioritize a violation backlog, what to put in a status update or audit summary, or how to plan remediation across a team. Use it when the user mentions \"compliance\", \"posture\", \"are we compliant\", \"audit\", \"roadmap\", \"prioritize\", \"Compliance Center\", \"status update\", or works at the project/team level rather than fixing individual issues. It gives posture, priorities, and stakeholder-ready language — never code — and routes fixes to the right discipline. Prefer this skill for accessibility management and reporting questions.",
+      "source_sha256": "81b91287b9f76ed32b014f4668f7a7effa333b57d50823b2274a83df4a81fe24",
+      "source_path": "skills/stark-pm/SKILL.md",
+      "package_sha256": "02cd0daa898a6a38b85565455c2dfd90b7b6ba2bd169c557e2bc893719b07b2c",
+      "source_package": "Stark-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e8862708b400dce331cfdbc164f061f91974dd7695da2c39a658001811e3755": {
+      "description_zh": "通过 StarZero 智能体编辑库内视频及分析整库，涵盖剪切、重构画幅、字幕、配音、音乐、图形和生成片段。库内编辑由此完成，本地录制需先经 ingest-media 加入库。",
+      "source": "Edits video and hands library-wide work to the StarZero agent: cuts, trims, reframing, captions, voiceover, music, graphics, generated clips, and analysis across a whole library. An edit of a video in a StarZero library happens here, not with local tools; a local recording joins a library through ingest-media first when the user wants it edited by the agent. Use when the user says \"trim this to 60 seconds\", \"make it 9:16\", \"add captions\", \"add a lower-third\", \"edit this video\", \"make a highlight reel\", \"add a voiceover\", \"analyse the whole library\" or \"continue my chat\".",
+      "source_sha256": "6e8862708b400dce331cfdbc164f061f91974dd7695da2c39a658001811e3755",
+      "source_path": "skills/chat/SKILL.md",
+      "package_sha256": "02c00ece6d6886d405dac05d2f6ef8bcb2a1c93c665dc0545c759a94257cf84a",
+      "source_package": "StarZero-0.6.3-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0da9107f12db3799d040199ed9ea1420dd9ea75f2c4b054bfd47b1b06fdcc91b": {
+      "description_zh": "在 StarZero 库中搜索转录内容和屏幕视觉，返回时间范围，并提取画面、签名链接、下载或命中片段预览视频。",
+      "source": "Finds moments in a StarZero library: searches transcripts for what was said and visuals for what is on screen, returns time ranges, then pulls out a frame, a signed URL, a download, or one preview video of the hits. Use when the user says \"find where they talk about\", \"search my library for\", \"which clip shows\", \"grab a frame at\", \"download the original\", or \"compile those moments\".",
+      "source_sha256": "0da9107f12db3799d040199ed9ea1420dd9ea75f2c4b054bfd47b1b06fdcc91b",
+      "source_path": "skills/find-moments/SKILL.md",
+      "package_sha256": "02c00ece6d6886d405dac05d2f6ef8bcb2a1c93c665dc0545c759a94257cf84a",
+      "source_package": "StarZero-0.6.3-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f5be5a0e5d396944f6ba73e6b00f0989a697e5315b046e43fc84795e10d41e9": {
+      "description_zh": "从本地或 YouTube、Drive、Frame.io、Facebook 等 URL 导入 StarZero 库，选择创建目录，先预演去重及额度估算，计费前询问，上传后跟踪至处理可搜索。",
+      "source": "Gets video or audio into a StarZero library until it is processed and searchable, from local files or from video URLs (YouTube, Google Drive, Frame.io, Facebook): picks or creates the library and folder, dry-runs uploads for dedup and the credit estimate, asks before billing, uploads or imports, then watches processing. Use when the user says \"upload these files to StarZero\", \"add this YouTube link to my library\", \"import these videos\", \"is my footage done processing\", \"create a library\", or \"make a folder\".",
+      "source_sha256": "7f5be5a0e5d396944f6ba73e6b00f0989a697e5315b046e43fc84795e10d41e9",
+      "source_path": "skills/ingest-media/SKILL.md",
+      "package_sha256": "02c00ece6d6886d405dac05d2f6ef8bcb2a1c93c665dc0545c759a94257cf84a",
+      "source_package": "StarZero-0.6.3-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3bb445e219469d442ef808c185090a5a787c1064d4b252153c22420944f68fb6": {
+      "description_zh": "将单个已处理 StarZero 媒体裁成社交短片，与用户确定数量、时长、比例、节奏、字幕和音乐或使用 auto，确认计费后运行跟踪并返回渲染编号及链接。",
+      "source": "Cuts one processed StarZero media item into short social clips. Sets clip count, length, aspect, pacing, captions and music with the user (or --auto), confirms billing, starts the podcast-clips run, watches it and returns the clip render ids and links. Use when the user says \"make clips from this podcast\", \"cut this into shorts\", \"vertical clips for TikTok\" or \"reels from this interview\".",
+      "source_sha256": "3bb445e219469d442ef808c185090a5a787c1064d4b252153c22420944f68fb6",
+      "source_path": "skills/podcast-clips/SKILL.md",
+      "package_sha256": "02c00ece6d6886d405dac05d2f6ef8bcb2a1c93c665dc0545c759a94257cf84a",
+      "source_package": "StarZero-0.6.3-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "49376adf235842e4e4b70a4002c5075aed21c6ebc3e081976b29a7deaa169916": {
+      "description_zh": "运行已有 StarZero 工作流模板，解释模板、生成变量 JSON、选素材，确认计费后启动跟踪并返回应用、分支聊天链接及渲染编号，也支持查状态或取消。",
+      "source": "Runs an existing StarZero workflow template. Describes it, builds the variables JSON, picks the media, confirms billing, starts and watches the instance, then returns the app link, branch chat links and render ids. Use when the user says \"run the workflow\", \"start an instance of template\", \"what variables does this template need\", \"is my run finished\" or \"cancel the run\".",
+      "source_sha256": "49376adf235842e4e4b70a4002c5075aed21c6ebc3e081976b29a7deaa169916",
+      "source_path": "skills/run-workflow/SKILL.md",
+      "package_sha256": "02c00ece6d6886d405dac05d2f6ef8bcb2a1c93c665dc0545c759a94257cf84a",
+      "source_package": "StarZero-0.6.3-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57a2d7018fc93fd36014cc817015cab9ee26855a0658f86dccf5c707a677f8b2": {
+      "description_zh": "安装固定版本 starzero CLI 和 ffprobe，通过浏览器或 API key 认证，检查已存凭据、范围与任务匹配及额度。适用于设置、登录过期或其他技能退出码 3。",
+      "source": "Installs and authenticates the starzero CLI: downloads the pinned binary and ffprobe, logs in through the browser (or an API key), checks the stored credential with auth status, compares its scopes with the jobs the user wants, and shows the credit balance. Use when the user says \"set up starzero\", \"log in to StarZero\", \"my login expired\", \"no API key\", \"how many credits do I have\", \"which scopes do I need\", or after any starzero skill exits 3.",
+      "source_sha256": "57a2d7018fc93fd36014cc817015cab9ee26855a0658f86dccf5c707a677f8b2",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "02c00ece6d6886d405dac05d2f6ef8bcb2a1c93c665dc0545c759a94257cf84a",
+      "source_package": "StarZero-0.6.3-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e521bffa2aff4036b36069b02dde512a832c7821b63e9b31f6a925cc5e9d0df4": {
+      "description_zh": "将 StarZero 渲染编号转为有期限的公开分享页或私有签名 MP4/缩略图链接，并从工作流、播客或聊天运行查找编号。适用于分享、下载和过期链接更新。",
+      "source": "Turns a StarZero render id into a public share page link to send, or a signed private mp4 or thumbnail URL to download, each with an expiry, and finds render ids from a workflow run, podcast run or chat. Use when the user says \"give me a link to the video\", \"share the clips\", \"download the output\", \"where are my rendered videos\", \"the share link expired\" or \"thumbnail of that render\".",
+      "source_sha256": "e521bffa2aff4036b36069b02dde512a832c7821b63e9b31f6a925cc5e9d0df4",
+      "source_path": "skills/share-render/SKILL.md",
+      "package_sha256": "02c00ece6d6886d405dac05d2f6ef8bcb2a1c93c665dc0545c759a94257cf84a",
+      "source_package": "StarZero-0.6.3-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa69318138639c3bf6296c4114be8b4c4036187a74640c496578902e6afb0681": {
+      "description_zh": "在人工确认分流后，为范围内每个 Stateful 条件补充行为、责任人、验收及分类恢复要求，对非瞬时生命周期状态进行五问重入复核，记录适用与不适用及高风险组合；不从名称推断已明确规格。",
+      "source": "Specify every in-scope Stateful condition and run the five-question re-entry review on each non-transient lifecycle state. Use after human-confirmed triage to add behavior, owner, acceptance criteria, category-specific recovery or surface requirements, explicit applicable/not-applicable re-entry verdicts, and high-risk composite scenarios. Use on lifecycle states, failures, interruptions, and surfaces; do not mark a condition specified from its name alone.",
+      "source_sha256": "fa69318138639c3bf6296c4114be8b4c4036187a74640c496578902e6afb0681",
+      "source_path": "skills/reentry-pass/SKILL.md",
+      "package_sha256": "16800667aa7262f36660eb9a7ec390a7899189e3ddd5c21dd7a35228c64b5fc4",
+      "source_package": "Stateful-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c2d30dc22222ae4a2d0e08bd9e5d8d1f155c3609e412ca34aed76c93d3a7579": {
+      "description_zh": "依据多类证据建立预期条件清单，对照代码、测试、设计、遥测、事故、支持、需求和领域规则审查已有功能的状态、失败、中断及界面缺口，给出文件行和风险优先级；代码推断不是独立证据，也不直接当缺陷清单。",
+      "source": "Audit an existing software feature or surface by deriving an expected, evidence-sourced condition inventory and comparing it with code, tests, designs, telemetry, incidents, support history, requirements, and domain rules. Use to find undesigned or unimplemented lifecycle states, failures, interruptions, and surfaces with file-line evidence and risk-aware prioritisation. Do not call code-only inference independent evidence or turn the output into a bug list.",
+      "source_sha256": "9c2d30dc22222ae4a2d0e08bd9e5d8d1f155c3609e412ca34aed76c93d3a7579",
+      "source_path": "skills/state-audit/SKILL.md",
+      "package_sha256": "16800667aa7262f36660eb9a7ec390a7899189e3ddd5c21dd7a35228c64b5fc4",
+      "source_package": "Stateful-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7fb29c1427252d3fe4413efc31514878a5dc15b16a2f02b4022d57374e4d8172": {
+      "description_zh": "将已有 Stateful v0.1 条件图渲染为 Mermaid，按生命周期、失败、中断和界面分组，只绘制已记录类型关系及确认范围。不会发明关系、宣称可执行状态图或不裁剪地输出难读大图。",
+      "source": "Render an existing Stateful v0.1 condition map as Mermaid, grouping lifecycle states, failures, interruptions, and surfaces while drawing only recorded typed relationships and styling confirmed scope. Use for visual overviews in STATEFUL.md, READMEs, reviews, or stakeholder discussions. Do not invent conditions or relationships, call the result an executable statechart, or render an unreadable 50-node graph without a cut.",
+      "source_sha256": "7fb29c1427252d3fe4413efc31514878a5dc15b16a2f02b4022d57374e4d8172",
+      "source_path": "skills/state-graph/SKILL.md",
+      "package_sha256": "16800667aa7262f36660eb9a7ec390a7899189e3ddd5c21dd7a35228c64b5fc4",
+      "source_package": "Stateful-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4154c77464a2705c51e5b5652ce2c2d5adee26ecebea0c0b4e08f8b116e0597c": {
+      "description_zh": "围绕已确认系统描述，从生命周期、失败、中断和界面四个角度建立带证据、覆盖检查及类型关系的条件清单，可选 JSON。已有产品优先 state-audit，四角度不等同状态机节点，不声称穷尽。",
+      "source": "Build a Stateful condition inventory for a confirmed system sentence across four related lenses: lifecycle states, failures, interruptions, and surfaces. Use after system-sentence on greenfield or feature-level work when the user needs systematic discovery with evidence, explicit coverage checks, typed relationships, and an optional v0.1 JSON mirror. For existing products, prefer state-audit. Do not treat the four lenses as equivalent state-machine node types or claim exhaustive completeness.",
+      "source_sha256": "4154c77464a2705c51e5b5652ce2c2d5adee26ecebea0c0b4e08f8b116e0597c",
+      "source_path": "skills/state-list/SKILL.md",
+      "package_sha256": "16800667aa7262f36660eb9a7ec390a7899189e3ddd5c21dd7a35228c64b5fc4",
+      "source_package": "Stateful-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da2817d5b7658fab65480acb268f3b19dbffbcc5c48334721a46794c56b63dc4": {
+      "description_zh": "将通用产品设计提示改为可直接使用的单个 Stateful 条件或明确高风险组合提示，用于已有图中的屏幕、组件、邮件、通知和原型。不把整个图交生成器，不用于静态品牌营销图。",
+      "source": "Rewrite a generic product-design prompt into a paste-ready prompt for one specific Stateful condition or one explicit high-risk composition of lifecycle state, interruption context, surface, and changed-data or dependency condition. Use when generating a screen, component, email, notification, or prototype from an existing map. Do not paste the whole map into a generator or use for non-stateful brand and marketing imagery.",
+      "source_sha256": "da2817d5b7658fab65480acb268f3b19dbffbcc5c48334721a46794c56b63dc4",
+      "source_path": "skills/state-prompt/SKILL.md",
+      "package_sha256": "16800667aa7262f36660eb9a7ec390a7899189e3ddd5c21dd7a35228c64b5fc4",
+      "source_package": "Stateful-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73abcfbb5f83ac5581f2e9d5dbc3da87c462c28a50214a721fafc14fa30fe6d0": {
+      "description_zh": "为完整 Stateful 条件清单建议风险和范围，记录概率、影响、置信度、理由及纳入、带影响排除或排除，等待人工确认；未经确认不持久保存建议或进入规格。",
+      "source": "Recommend evidence-aware risk and scope decisions for a complete Stateful condition inventory, recording likelihood, impact, confidence, rationale, and one of in, out-with-implication, or out for human confirmation. Use after state-list or state-audit and before specification. Do not persist recommendations or continue to specification until a human confirms them.",
+      "source_sha256": "73abcfbb5f83ac5581f2e9d5dbc3da87c462c28a50214a721fafc14fa30fe6d0",
+      "source_path": "skills/state-triage/SKILL.md",
+      "package_sha256": "16800667aa7262f36660eb9a7ec390a7899189e3ddd5c21dd7a35228c64b5fc4",
+      "source_package": "Stateful-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a34d71f02362e55e5fdf720a5d48c0ad8bf8f21040decf932ec961857819bed4": {
+      "description_zh": "形成并确认有时间和生命周期结构的系统句，描述长期存在的功能对象，足以产生三至五个明显不同条件。适用于 Stateful 起点及缺少结构依据的审查，不用于静态营销页或通用提示优化。",
+      "source": "Produce and confirm a structural system sentence describing what a software feature or surface is as an object that exists over time, with enough temporal and lifecycle structure to generate 3–5 materially distinct conditions. Use at the start of Stateful work, when a description is feature-framed or flow-framed, or when an existing-feature audit lacks a clear structural anchor. Do not use for static marketing pages or as generic prompt optimisation.",
+      "source_sha256": "a34d71f02362e55e5fdf720a5d48c0ad8bf8f21040decf932ec961857819bed4",
+      "source_path": "skills/system-sentence/SKILL.md",
+      "package_sha256": "16800667aa7262f36660eb9a7ec390a7899189e3ddd5c21dd7a35228c64b5fc4",
+      "source_package": "Stateful-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9725dc6ac4de2b2c3b1a8422823e089ce298e2f9259e911443f3deabe3fdc7a2": {
+      "description_zh": "定义提交署名政策：不加共同作者尾注，用户为唯一作者。",
+      "source": "Commit authorship policy — no co-author trailers, user is sole author",
+      "source_sha256": "9725dc6ac4de2b2c3b1a8422823e089ce298e2f9259e911443f3deabe3fdc7a2",
+      "source_path": "skills/attribution/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8e0399e37cd989616087cb882b4495fabe2e87e46831b8fa3c65c2e2acf07fc": {
+      "description_zh": "管理知识共享的生命周期。",
+      "source": "Knowledge sharing lifecycle management",
+      "source_sha256": "f8e0399e37cd989616087cb882b4495fabe2e87e46831b8fa3c65c2e2acf07fc",
+      "source_path": "skills/brain-sync/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cdb0e2087098980a09694aeb811f14da11c1a931e7c97605b66c8a0ef1ff9c6f": {
+      "description_zh": "将会话知识贡献到共享知识库。",
+      "source": "Session knowledge contribution to the shared brain",
+      "source_sha256": "cdb0e2087098980a09694aeb811f14da11c1a931e7c97605b66c8a0ef1ff9c6f",
+      "source_path": "skills/contribute/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "67e9954ba5605adc4aaba4ce4c97bbedc98f0f8479e6bf10e1f6205f021cb89b": {
+      "description_zh": "自动检测并验证 GitHub 凭据。",
+      "source": "Automatic GitHub credential detection and verification",
+      "source_sha256": "67e9954ba5605adc4aaba4ce4c97bbedc98f0f8479e6bf10e1f6205f021cb89b",
+      "source_path": "skills/credential-setup/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9f580f3f4d3e4fa28ce701241c60db3c3975340929bd483de2b866792ddf71b": {
+      "description_zh": "提供双管道架构的产物交接协议。",
+      "source": "Artifact handoff protocol for two-pipeline architecture",
+      "source_sha256": "e9f580f3f4d3e4fa28ce701241c60db3c3975340929bd483de2b866792ddf71b",
+      "source_path": "skills/handoff/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f54a49feefa2feff8ae6a75dc8d5cc22496da67cc9546f555ced141820eceb1": {
+      "description_zh": "提供双管道的 worktree 及信息层隔离协议。",
+      "source": "Two-pipeline isolation protocol (worktree and information-level)",
+      "source_sha256": "5f54a49feefa2feff8ae6a75dc8d5cc22496da67cc9546f555ced141820eceb1",
+      "source_path": "skills/isolation/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93654c6e352d047a624052bf078cdf945a3dbb6a3ec63c344bfb0879813b7c06": {
+      "description_zh": "自动扫描、分流并循环修复 GitHub issue。",
+      "source": "Automated GitHub issue scanning, triage, and fix loop",
+      "source_sha256": "93654c6e352d047a624052bf078cdf945a3dbb6a3ec63c344bfb0879813b7c06",
+      "source_path": "skills/issue-patrol/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1588465b4f8f75fa105156a8abb7fde7b8081c0742bb605479096187414f04cf": {
+      "description_zh": "提供智能体间邮箱通信协议。",
+      "source": "Inter-agent mailbox communication protocol",
+      "source_sha256": "1588465b4f8f75fa105156a8abb7fde7b8081c0742bb605479096187414f04cf",
+      "source_path": "skills/mailbox/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05c4f4718214bf1b0665fa9adc7bf3c87dd80e42bfa87c4de45a908c20a8551b": {
+      "description_zh": "在向共享知识库贡献内容前去除个人身份信息。",
+      "source": "PII removal for brain knowledge contributions",
+      "source_sha256": "05c4f4718214bf1b0665fa9adc7bf3c87dd80e42bfa87c4de45a908c20a8551b",
+      "source_path": "skills/privacy-scrub/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "931a112f35083b17230967510aef0f3ee174b2350af7992a24683e80395eebe6": {
+      "description_zh": "为目标仓库自动选择语言配置。",
+      "source": "Automatic language profile selection for target repositories",
+      "source_sha256": "931a112f35083b17230967510aef0f3ee174b2350af7992a24683e80395eebe6",
+      "source_path": "skills/profile-detection/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "722ff9cae8055cf10ebb39f8684a12b4e5dc580e6ac541c0cd8a429b2ce20f61": {
+      "description_zh": "向用户显示可视化工作流进度。",
+      "source": "Visual workflow progress indicator for users",
+      "source_sha256": "722ff9cae8055cf10ebb39f8684a12b4e5dc580e6ac541c0cd8a429b2ce20f61",
+      "source_path": "skills/progress-bar/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddf7e47a1c22a97fc882866a5135918692e1252d80880ac5e1a02f436a02029d": {
+      "description_zh": "为日常小改动提供轻量工作流。",
+      "source": "Lightweight workflow for small routine changes",
+      "source_sha256": "ddf7e47a1c22a97fc882866a5135918692e1252d80880ac5e1a02f436a02029d",
+      "source_path": "skills/simplified-workflow/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25f7a15020dd563c588bb325d532bbad2a924ea7f21e536906dab72f8f09d2ff": {
+      "description_zh": "提供蒙特卡洛模拟研究协议。",
+      "source": "Monte Carlo simulation study protocol",
+      "source_sha256": "25f7a15020dd563c588bb325d532bbad2a924ea7f21e536906dab72f8f09d2ff",
+      "source_path": "skills/simulation-study/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b32071a75aacd12460887f21be45c9c61491001d6fd764c272d95d4b1743cb71": {
+      "description_zh": "提供 StatsClaw 智能体团队框架的核心编排协议。",
+      "source": "Core orchestration protocol for StatsClaw agent teams framework",
+      "source_sha256": "b32071a75aacd12460887f21be45c9c61491001d6fd764c272d95d4b1743cb71",
+      "source_path": "skills/statsclaw-protocol/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a520272065557cef65bffdd430cb968c990d94cab98c1c8f2b670d4d96b2eaa3": {
+      "description_zh": "将集中工作流日志同步到仓库。",
+      "source": "Centralized workflow log repository sync",
+      "source_sha256": "a520272065557cef65bffdd430cb968c990d94cab98c1c8f2b670d4d96b2eaa3",
+      "source_path": "skills/workspace-sync/SKILL.md",
+      "package_sha256": "ab7720a8d8b0af67b21e9386feba7fc5bdee1dc43abbd3bc0be76500d36e359a",
+      "source_package": "StatsClaw-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "957713d31b0ff0bdbb625fc6bb44c8ccf2aca789156327908d20e76ab96bdf1a": {
+      "description_zh": "为指定电影、电视剧或角色生成自定义语录包，创建、校验并保存供立即使用，通过 /statusquote:create 加名称调用。",
+      "source": "Generate a custom quote pack for any movie, TV show, or character. Claude creates the pack, validates it, and saves it for immediate use. Usage - /statusquote:create <name> (e.g., breaking bad, the office, spock, walter white)",
+      "source_sha256": "957713d31b0ff0bdbb625fc6bb44c8ccf2aca789156327908d20e76ab96bdf1a",
+      "source_path": "skills/create/SKILL.md",
+      "package_sha256": "071957e975997e735f065dc24e56e97ba5df9ca0eddb593c02eac7f75d28038b",
+      "source_package": "status-quote-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "650428f74cc88c212be6515aac87d1e2dd23c84534190bbd94361d66df033c9d": {
+      "description_zh": "通过 /statusquote:list 列出语录包、分组、别名及当前启用选择。",
+      "source": "List all available quote packs, groups, aliases, and show the currently active selection. Usage - /statusquote:list",
+      "source_sha256": "650428f74cc88c212be6515aac87d1e2dd23c84534190bbd94361d66df033c9d",
+      "source_path": "skills/list/SKILL.md",
+      "package_sha256": "071957e975997e735f065dc24e56e97ba5df9ca0eddb593c02eac7f75d28038b",
+      "source_package": "status-quote-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75747eb131f8b87df3781f0b9bf38c5f186f151636ae51299aa188091c709c8d": {
+      "description_zh": "作为 statusquote:use 别名，混合多个影视系列或角色语录包，支持加号组合或 characters 分组。",
+      "source": "Alias for /statusquote:use. Mix multiple franchise or character packs. Usage - /statusquote:mix startrek+starwars or /statusquote:mix characters",
+      "source_sha256": "75747eb131f8b87df3781f0b9bf38c5f186f151636ae51299aa188091c709c8d",
+      "source_path": "skills/mix/SKILL.md",
+      "package_sha256": "071957e975997e735f065dc24e56e97ba5df9ca0eddb593c02eac7f75d28038b",
+      "source_package": "status-quote-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39c7e74b582a2f77ecd6ca6418e1f2addaaab73ea7aac911bc0f282a245f81d6": {
+      "description_zh": "将 Claude Code 加载提示恢复为默认词语，移除影视语录，通过 /statusquote:reset 调用。",
+      "source": "Reset the Claude Code spinner to its default words, removing all franchise quotes. Usage - /statusquote:reset",
+      "source_sha256": "39c7e74b582a2f77ecd6ca6418e1f2addaaab73ea7aac911bc0f282a245f81d6",
+      "source_path": "skills/reset/SKILL.md",
+      "package_sha256": "071957e975997e735f065dc24e56e97ba5df9ca0eddb593c02eac7f75d28038b",
+      "source_package": "status-quote-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ade0819cc3d53f9496f2301a8664d41c2ae3293f34b81aa835795a0b74a65b00": {
+      "description_zh": "设置加载提示的语录样式为动词、短语或混合，通过 /statusquote:style 选择。",
+      "source": "Set quote style for the spinner - verbs only, phrases only, or mix of both. Usage - /statusquote:style verbs|phrases|mix",
+      "source_sha256": "ade0819cc3d53f9496f2301a8664d41c2ae3293f34b81aa835795a0b74a65b00",
+      "source_path": "skills/style/SKILL.md",
+      "package_sha256": "071957e975997e735f065dc24e56e97ba5df9ca0eddb593c02eac7f75d28038b",
+      "source_package": "status-quote-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc27b4e9f46339a265d4a3a75459f9bb54561ac0fb50573de95f97d39db3f7b6": {
+      "description_zh": "将语录包应用到 Claude Code 加载提示，接受包 key、别名、分组和加号组合。",
+      "source": "Apply quote packs to the Claude Code spinner. Accepts pack keys, aliases, or groups. Usage - /statusquote:use startrek, /statusquote:use yoda+vader, /statusquote:use characters, /statusquote:use all, /statusquote:use fantasy+t800, /statusquote:use hp",
+      "source_sha256": "cc27b4e9f46339a265d4a3a75459f9bb54561ac0fb50573de95f97d39db3f7b6",
+      "source_path": "skills/use/SKILL.md",
+      "package_sha256": "071957e975997e735f065dc24e56e97ba5df9ca0eddb593c02eac7f75d28038b",
+      "source_package": "status-quote-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aefb3bf2237a28390bb904d4d4cd9489c0b97c99656904a201152c2ec6896351": {
+      "description_zh": "交互配置状态栏布局和组件，应用预设或切换单个组件。",
+      "source": "Configure the status bar layout and widgets interactively, or apply a preset. Use when: customizing which widgets appear, changing the layout mode, applying presets, toggling individual widgets. Triggers: \"customize statusbar\", \"statusbar config\", \"change layout\", \"enable widgets\", \"statusbar developer\", \"statusbar minimal\", \"statusbar full\", \"statusbar preset\".",
+      "source_sha256": "aefb3bf2237a28390bb904d4d4cd9489c0b97c99656904a201152c2ec6896351",
+      "source_path": "skills/config/SKILL.md",
+      "package_sha256": "1edee7a9ca3269f76fabb3a64629c73624f56c93825db41a76eb3c512a0d0195",
+      "source_package": "statusbar-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93e7950cc70543376ecde52eae09d7f2985da84c5bd542949e38efcb4e6a0ca5": {
+      "description_zh": "设置、检查或卸载 statusbar 插件，适用于首次配置及状态确认。",
+      "source": "Set up, check status, or uninstall the statusbar plugin. Use when: first-time setup after installing the plugin, checking if the status bar is configured, or uninstalling the plugin. Triggers: \"setup statusbar\", \"install statusbar\", \"configure statusbar\", \"uninstall statusbar\", \"remove statusbar\", \"statusbar status\".",
+      "source_sha256": "93e7950cc70543376ecde52eae09d7f2985da84c5bd542949e38efcb4e6a0ca5",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "1edee7a9ca3269f76fabb3a64629c73624f56c93825db41a76eb3c512a0d0195",
+      "source_package": "statusbar-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1b86a8cbf03d030fa4b9e54db07337adfb152eebae3cfbe28ba117fdd998275": {
+      "description_zh": "在 settings.json 安装或配置 statusline 插件。",
+      "source": "Install or configure the statusline plugin in your settings.json",
+      "source_sha256": "c1b86a8cbf03d030fa4b9e54db07337adfb152eebae3cfbe28ba117fdd998275",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "679f4f1d291b3628376ee7618d0abc4f83c0c923e269c51f63e65b12295dc348",
+      "source_package": "statusline-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6cc0d77c60b37387885bf3f4f9e4e440d9800a3d944ceda8c70a89c28c7114a4": {
+      "description_zh": "通过 /sl 加主题和详细级别切换 Claude Code 状态行。",
+      "source": "Switch Claude Code status line theme or detail level. Usage: /sl [theme] [detail]",
+      "source_sha256": "6cc0d77c60b37387885bf3f4f9e4e440d9800a3d944ceda8c70a89c28c7114a4",
+      "source_path": "skills/sl/SKILL.md",
+      "package_sha256": "679f4f1d291b3628376ee7618d0abc4f83c0c923e269c51f63e65b12295dc348",
+      "source_package": "statusline-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a9cc3494d08f64ee8a8319b163df47229349f02b422ef91f0049de318150c06": {
+      "description_zh": "按 Ind AS、IFRS 或 US GAAP 撰写财报附注，涵盖主体、编制基础、政策及固定资产、应收账龄、比率和关联方等叙述数值披露。",
+      "source": "Generate notes to financial statements following Ind AS, IFRS, or US GAAP requirements. Covers narrative notes (reporting entity, basis of preparation, accounting policies) and numerical notes (PPE schedule, trade receivable ageing, financial ratios). Use when the user asks to \"add notes\", \"draft disclosures\", \"write accounting policies\", \"generate Note 1\", \"trade receivable ageing\", \"financial ratios\", \"related party note\", or when building notes to accounts for statutory financial statements.",
+      "source_sha256": "6a9cc3494d08f64ee8a8319b163df47229349f02b422ef91f0049de318150c06",
+      "source_path": "skills/disclosure-notes/SKILL.md",
+      "package_sha256": "6c971351406648d12c067d4d5eb4c0c1f03566e5f902abf2d04109b68d8d044c",
+      "source_package": "Statutory Reporting Plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61bb42e02d6e40c5ccf8481cfd07c200f50ed2debaa1d92be2ab1b9c6818e6bf": {
+      "description_zh": "从已分类试算平衡表生成含公式的法定财务报表 Excel，包括资产负债、损益、间接现金流和权益变动，沿用原说明的 Schedule III Division II、IAS 1 或 US GAAP 格式。",
+      "source": "Generate complete statutory financial statements in Excel from a classified Trial Balance. Produces Balance Sheet, Statement of Profit and Loss, Cash Flow Statement (indirect method), and Statement of Changes in Equity following Schedule III Division II (Ind AS), IAS 1 (IFRS), or US GAAP format. Use when the user has a TB or Mapping table and wants face sheets with formulas. Triggers on \"generate financial statements\", \"build balance sheet\", \"create P&L\", \"cash flow statement\", \"financial statements from TB\", \"Schedule III\", \"IAS 1 format\", or \"statutory financials\".",
+      "source_sha256": "61bb42e02d6e40c5ccf8481cfd07c200f50ed2debaa1d92be2ab1b9c6818e6bf",
+      "source_path": "skills/financial-statements/SKILL.md",
+      "package_sha256": "6c971351406648d12c067d4d5eb4c0c1f03566e5f902abf2d04109b68d8d044c",
+      "source_package": "Statutory Reporting Plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff08c2feecf3349e82981d7df38adfaffddeedc8ff33c8dbbed957c909299f61": {
+      "description_zh": "审查财报和工作簿的错误、不一致、风险信号及合规问题，适用于资产负债不平、差额、对账和取证分析。",
+      "source": "Review financial statements for errors, inconsistencies, red flags, and compliance issues. Use this skill when the user asks to \"check\", \"review\", \"audit\", \"verify\", or \"validate\" financial statements, or when asked to find errors in a Balance Sheet, P&L, or workbook. Also triggers on \"BS not balancing\", \"balance sheet difference\", \"why doesn't it tally\", \"reconciliation\", or \"forensic analysis\".",
+      "source_sha256": "ff08c2feecf3349e82981d7df38adfaffddeedc8ff33c8dbbed957c909299f61",
+      "source_path": "skills/forensic-review/SKILL.md",
+      "package_sha256": "6c971351406648d12c067d4d5eb4c0c1f03566e5f902abf2d04109b68d8d044c",
+      "source_package": "Statutory Reporting Plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30a313d042d011beafc7d33b973fb54e4f0817d2da15a458e5ee578fdad52f6f": {
+      "description_zh": "将 Tally、Zoho、QuickBooks、Xero、SAP 或 Excel 试算表科目映射到法定资产负债和损益项目，沿用原说明的 Schedule III、IAS 1 或 US GAAP 格式。",
+      "source": "Classify Trial Balance accounts into statutory financial statement line items. Use this skill when the user has a Trial Balance (from Tally, Zoho, QuickBooks, Xero, SAP, or any Excel) and needs accounts classified into Balance Sheet and P&L categories following Schedule III (Ind AS), IAS 1 (IFRS), or US GAAP format. Triggers on \"classify trial balance\", \"classify TB\", \"map accounts\", \"Schedule III\", \"chart of accounts mapping\", \"GL classification\", or when a spreadsheet contains typical TB columns (account name, debit, credit).",
+      "source_sha256": "30a313d042d011beafc7d33b973fb54e4f0817d2da15a458e5ee578fdad52f6f",
+      "source_path": "skills/tb-classification/SKILL.md",
+      "package_sha256": "6c971351406648d12c067d4d5eb4c0c1f03566e5f902abf2d04109b68d8d044c",
+      "source_package": "Statutory Reporting Plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b37d339f270e571879b2cbdccb2214bd187ea100d3a5d3eebe2fe705d83ee2a": {
+      "description_zh": "通过 Steadwing API 触发生产事故、错误日志及堆栈的自动根因调查，涵盖智能体注册、认证及可选自动检测 hook。",
+      "source": "Use when the user asks to run Root Cause Analysis (RCA), debug a production incident, analyze an error log or stack trace, or trigger Steadwing. Also use when a production-style error (traceback / unhandled exception / stack trace) is surfaced and the user wants automated investigation. Handles agent registration, authentication, optional auto-detection hook setup, and RCA triggering via the Steadwing API.",
+      "source_sha256": "3b37d339f270e571879b2cbdccb2214bd187ea100d3a5d3eebe2fe705d83ee2a",
+      "source_path": "skills/steadwing/SKILL.md",
+      "package_sha256": "16bc57b59ec5181cb6f2324458d1750758b364c7ec0bffddcf634ee8e0abb9f1",
+      "source_package": "Steadwing-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b83feba9ebfc9d96b4e1b087f394e0b828d808cd52fa0cc081864290241b513": {
+      "description_zh": "通过 Steep MCP 查询工作区受治理的指标、目标和实体并创建报告，适用于公司 KPI 及目标分析。",
+      "source": "Query governed metrics, targets, and entities from a Steep workspace and create reports via the Steep MCP server. Use when the user asks about company metrics, KPIs, targets, or wants a report built from Steep data.",
+      "source_sha256": "5b83feba9ebfc9d96b4e1b087f394e0b828d808cd52fa0cc081864290241b513",
+      "source_path": "plugins/steep/skills/steep-analytics/SKILL.md",
+      "package_sha256": "4a3665f340bd86d8d5211b110a8341adff5d33bf5369b1479132bda8502b4f3b",
+      "source_package": "Steep-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2bc8e07124cec959a20ee61c0e6dfb348e07e55512701c0daed08c53f4ad83e5": {
+      "description_zh": "指导律所现金、所有者薪酬及信托账户管理，涵盖十三周预测和利润薪酬税费用区分。不提供数字或分配比例。",
+      "source": "Cash, owner pay and trust-account hygiene for a law firm. Use when the owner asks how much to pay themselves, why revenue is up but cash is tight, how to build a 13-week cash forecast, how to separate profit, pay, tax and expenses, or anything about the trust account, retainers, settlements or moving money out of trust. Supplies no figures and sets no allocation shares.",
+      "source_sha256": "2bc8e07124cec959a20ee61c0e6dfb348e07e55512701c0daed08c53f4ad83e5",
+      "source_path": "skills/controlling-law-firm-cash/SKILL.md",
+      "package_sha256": "e7928661c443de29f6ed78046c8ba5508801446cf09b5035297ae14a986cdf91",
+      "source_package": "Stintwell for Law Firms-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39e94663695db12517b202c83e520c1e981e5cf2cfa20ea1653c38249fe5e32f": {
+      "description_zh": "指导律所咨询接待、跟进及员工薪酬，处理漏接、回拨、签约、非律师奖金和下班覆盖。涉及州规则先询问州，不提供转化或响应目标，仅讨论经营而非法律意见。",
+      "source": "Intake, follow-up and paying intake staff for a law firm. Use when the owner asks about missed calls, slow callbacks, consults that do not sign, hiring or paying an intake person, bonuses or commissions for non-lawyers, follow-up sequences, or after-hours coverage. Asks the state before any answer that turns on a rule, and supplies no conversion rates or response-time targets. Business of law only; not legal advice.",
+      "source_sha256": "39e94663695db12517b202c83e520c1e981e5cf2cfa20ea1653c38249fe5e32f",
+      "source_path": "skills/converting-law-firm-intake/SKILL.md",
+      "package_sha256": "e7928661c443de29f6ed78046c8ba5508801446cf09b5035297ae14a986cdf91",
+      "source_package": "Stintwell for Law Firms-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f5727dc364d45b5381777e97ed249652a1cacd72f521b72b3001c7ba55fb662": {
+      "description_zh": "判断律所 AI 适合不使用模型、辅助、受监督智能体或仅人工，涵盖电话、起草、线索、资料摘要、邮箱日历和客户数据工具，试点前进行数据关卡。仅讨论律所经营。",
+      "source": "Where artificial intelligence fits in a law firm and where it must not. Use when the owner asks about using AI or a bot to answer phones, draft documents, chase leads, summarize files or automate anything, about connecting email, calendar or Drive so the AI can schedule, remind and draft for them, or which tools can hold client data. Decides no-model, co-pilot, supervised agent or human-only, and runs a data gate before any pilot. Business of law only; not legal advice.",
+      "source_sha256": "7f5727dc364d45b5381777e97ed249652a1cacd72f521b72b3001c7ba55fb662",
+      "source_path": "skills/enabling-law-firm-ai/SKILL.md",
+      "package_sha256": "e7928661c443de29f6ed78046c8ba5508801446cf09b5035297ae14a986cdf91",
+      "source_package": "Stintwell for Law Firms-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64843b25009998677dabcc79dcb8f246c711962165bdee3d662e287975f96847": {
+      "description_zh": "通过最多三个问题检查停止条件、识别一个律所经营瓶颈并分流专项技能，不提供数字。客户案件法律工作不处理，州规则、费用归属、信托资金和推荐付费问题交给伦理法律顾问，转向经营侧。",
+      "source": "Starting point for a law firm owner who asks where to start, what is broken, or what to fix first. Use when the owner says they are stuck, drowning or plateaued, or asks which of money, marketing, intake, production, people or artificial intelligence to work on. Asks up to three questions, checks the stop conditions, names one bottleneck, and hands off to one role skill. Supplies no numbers. Business of law only; not legal advice. Also use when the owner asks what a client's case is worth, what a judge or jury would do, asks for a document or legal work for a client (a will, an agreement, a pleading), or anything else about a client's matter; this skill declines it and turns to the business side. Also use when the owner asks what a state's rules allow or require, whether a fee is earned or where client money may go, whether the firm may pay anyone for referrals, leads or signed cases, or what to write to the bar or a regulator; this skill hands those to ethics counsel and answers the business side.",
+      "source_sha256": "64843b25009998677dabcc79dcb8f246c711962165bdee3d662e287975f96847",
+      "source_path": "skills/finding-law-firm-bottlenecks/SKILL.md",
+      "package_sha256": "e7928661c443de29f6ed78046c8ba5508801446cf09b5035297ae14a986cdf91",
+      "source_package": "Stintwell for Law Firms-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e53ddc524d1e140ebaa533585cf8a4959fb3c53f387ca0bb31bb5291549d20d4": {
+      "description_zh": "指导律所所有者目标、七项评分、组织及停止事项，支持九十天和长期计划、招聘和客户选择。目标来自本所过去十二个月，不提供外部数字或法律意见。",
+      "source": "The owner's job: goals, the seven-part firm score, org design, and what to stop doing. Use when the owner says they are the bottleneck, cannot get out of production, wants a plan for the next 90 days or five years, or asks whom to hire next or which clients to stop taking. Supplies no numbers; the firm's targets come from its own last twelve months. Business of law only; not legal advice.",
+      "source_sha256": "e53ddc524d1e140ebaa533585cf8a4959fb3c53f387ca0bb31bb5291549d20d4",
+      "source_path": "skills/leading-law-firm-growth/SKILL.md",
+      "package_sha256": "e7928661c443de29f6ed78046c8ba5508801446cf09b5035297ae14a986cdf91",
+      "source_package": "Stintwell for Law Firms-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2292b61e97021e492e8e7c21410446dad686a005d9657c9c6872bd017682ea7f": {
+      "description_zh": "指导律所广告、搜索、推荐、网站视频及签约成本分析，数字来自本所发票和签约案件，不给通用成本转化率。所有主张、推荐语和外联须律师签署审查后发布。",
+      "source": "Getting the right cases in the door. Use when the owner asks about ads, Google, referrals, a website or video, what marketing costs per signed case, whether an agency is worth it, or why leads do not become clients. Supplies no cost figures or conversion rates; the firm's numbers come from its own invoices and its own signed matters. Every claim, testimonial and outreach line goes through a lawyer-signed review before it is published. Business of law only; not legal advice.",
+      "source_sha256": "2292b61e97021e492e8e7c21410446dad686a005d9657c9c6872bd017682ea7f",
+      "source_path": "skills/marketing-law-firm-demand/SKILL.md",
+      "package_sha256": "e7928661c443de29f6ed78046c8ba5508801446cf09b5035297ae14a986cdf91",
+      "source_package": "Stintwell for Law Firms-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3649e78836e709bcbefa5ad2f102ceb859914489047e05a69ee43710c57007c": {
+      "description_zh": "指导律所书面程序、在制看板、容量、招聘顺序和计费流失，处理期限延误及已计工时未变现金。容量依据本所十二个月，不给通用费率工时目标或比例。",
+      "source": "How the work gets done: written procedures, a work-in-progress board, capacity, hiring order, and billing leaks. Use when the owner asks about deadlines slipping, files stalling, whom to hire next, writing procedures, or why billed hours do not become cash. Supplies no rates, hour targets or capacity ratios; the firm's capacity number comes from its own last twelve months. Business of law only; not legal advice.",
+      "source_sha256": "b3649e78836e709bcbefa5ad2f102ceb859914489047e05a69ee43710c57007c",
+      "source_path": "skills/operating-law-firm-systems/SKILL.md",
+      "package_sha256": "e7928661c443de29f6ed78046c8ba5508801446cf09b5035297ae14a986cdf91",
+      "source_package": "Stintwell for Law Firms-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3a26b596ecc42c9d16abaeb39f99716168946c8a895a79bc78b66a46df8b58c": {
+      "description_zh": "设计 StoreConnect 的客户自有 Apex 和 Salesforce 端模式，判断 Apex、Liquid controller 或表单选型，使用受支持记录自动化、渲染前内容生成和部署规范。适用于 Apex、trigger、Flow 类及已批准 callout。",
+      "source": "Customer-owned Apex and other Salesforce-side patterns around a StoreConnect storefront — deciding whether a requirement needs Apex, using supported records and automation, safely generating storefront content ahead of render, and applying Apex deployment conventions. Load before writing, reviewing, or deploying any Apex, trigger, Flow-invoked class, or approved Salesforce callout for a store, and to choose between Apex, a Liquid controller, and a form.",
+      "source_sha256": "f3a26b596ecc42c9d16abaeb39f99716168946c8a895a79bc78b66a46df8b58c",
+      "source_path": "skills/storeconnect-apex-integration/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "316f83fd80a0cf754b8969d363554eb109c8bf9f6c25f35b74e18f797ed53814": {
+      "description_zh": "使用 StoreConnect 可重载 Liquid component、保留 context、懒加载、远程表单、JSON 页面响应及 HTMX/Alpine，实现购物车、筛选、优惠、运费库存等局部更新，并让 JavaScript 在重载后有效。",
+      "source": "StoreConnect reloadable Liquid components and storefront interactivity — the {% component %} tag and its reload events, {% context %} state that survives a reload, lazy and deferred rendering, remote {% form %} wiring, the JSON page-response API, and HTMX/Alpine integration. Use when part of a StoreConnect page must update without a full page load (live cart, cart badge, cart drawer, quick view, live filters, vouchers, shipping rates, stock), when wiring JavaScript into a theme so it survives a component reload, or when choosing a frontend architecture for a theme.",
+      "source_sha256": "316f83fd80a0cf754b8969d363554eb109c8bf9f6c25f35b74e18f797ed53814",
+      "source_path": "skills/storeconnect-components/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecef0c6d33a3b9c5765656f18ed1df8fd9ed2f50e1389da669fb1d678974ed96": {
+      "description_zh": "通过 StoreConnect Liquid controller 的 before/after/final 阶段及注册 action 规则执行服务端逻辑，处理 params、变量、跳转、响应、更新和 API，拦截表单并遵守写入安全规则。适用于无 Apex 的访问、购物车及渲染数据逻辑。",
+      "source": "Run server-side logic around a StoreConnect page request using Liquid controller templates — the before/after/final phases, the registered controller/action key rule, action tags (params, variables, redirect, respond, update, action, api), form-submission interception, and the safety rules for controller-driven writes. Use when storefront behavior must run on the server without Apex — access gating and redirects, capturing extra form fields, cart automation, injecting data for the render, or calling an external service during a render.",
+      "source_sha256": "ecef0c6d33a3b9c5765656f18ed1df8fd9ed2f50e1389da669fb1d678974ed96",
+      "source_path": "skills/storeconnect-controllers/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffccaaaef7a607e19d74ddec5d8cb837770196014032bf2de3042d0b0ef3648e": {
+      "description_zh": "诊断加速 StoreConnect Liquid，通过 Console、debug/timer、记录探查、缓存键失效、集合分页、逐项热点和客户端批处理定位空白错误、慢查询或错误缓存访问者。只读审查使用 theme-review。",
+      "source": "Instrument and speed up StoreConnect Liquid — the web Console, the debug and timer tags, drop and record introspection, cache key design and invalidation, collection and pagination cost, per-item hot paths, asset weight, and client-side batching. Use when you need to instrument a template that renders blank or wrong, cache a fragment, or cut queries on a slow page, when cached output is stale or reaches the wrong visitor, and before adding any debug, timer, or cache tag. For an audit that changes nothing use storeconnect-theme-review.",
+      "source_sha256": "ffccaaaef7a607e19d74ddec5d8cb837770196014032bf2de3042d0b0ef3648e",
+      "source_path": "skills/storeconnect-debug-performance/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a3c830708f47b24da4e949845128e060eed53e2eaa7cea0d20178112b7c8e8a": {
+      "description_zh": "配置 StoreConnect Liquid 表单及已注册字段，涵盖账号、购物车、结账、优惠、支付订阅预约隐私及自定义表单，使用 Drop API、校验错误和无障碍。写入表单字段前及提交故障时先核对本项。",
+      "source": "StoreConnect storefront forms — the Liquid form tag, registered form names and usable fields (login, register, account, add-to-cart, cart, the four checkout steps, vouchers, promo codes, account credit, saved payment methods, subscriptions, bookings, privacy, geolocation, custom forms), the form and field Drop API, validation and error handling, safe generated-field handling, and form accessibility. Load before writing any form name or field name into a StoreConnect template, whenever a template must accept customer input, and when a form will not submit, validate, or show its errors.",
+      "source_sha256": "7a3c830708f47b24da4e949845128e060eed53e2eaa7cea0d20178112b7c8e8a",
+      "source_path": "skills/storeconnect-forms/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f962ef78fce163bff02ad5316272fc1e543e567a131bb69fb05efa37ed7b9c87": {
+      "description_zh": "编写 StoreConnect Liquid 模板并读取记录，涵盖精确 Drop 属性、query/cache/component/paginate/update、搜索、相对链接和转义。表单字段、主题样式和性能诊断分别转用专项技能。",
+      "source": "Write StoreConnect Liquid template logic and read record data — Drops and their exact attributes, the {% query %} tag, {% cache %}, {% component %}, {% paginate %}, {% update %}, search pages, store-relative links, and escaping. Use when authoring or editing a .liquid template, page or article body, content-block template, snippet, or layout, and when querying, filtering, or updating records. For a form or field name use storeconnect-forms; for theme structure and styling use storeconnect-theme-development; to instrument a blank or slow page use storeconnect-debug-performance.",
+      "source_sha256": "f962ef78fce163bff02ad5316272fc1e543e567a131bb69fb05efa37ed7b9c87",
+      "source_path": "skills/storeconnect-liquid/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "694ca2a88f3650cb5e7ff8d1b5c6ff6b72eb7be1954fbd9b5967b94e5a0aaba1": {
+      "description_zh": "作为 StoreConnect Salesforce 原生电商、POS、CMS 和网站入口，说明异步同步、工具连接优先级、发布人工批准、Salesforce 专属能力和官方文档，并分流十二项专项技能。",
+      "source": "Entry point for all StoreConnect work — the Salesforce-native commerce, POS, CMS, and website platform. Covers asynchronous synchronization, connecting StoreConnect tools for a store, the tool-preference order, the human-approval gate on publishing, what only Salesforce tooling can do, canonical documentation, and which of the twelve specialist StoreConnect skills to load next. Load first whenever a request involves StoreConnect, a StoreConnect store, storefront, Liquid theme, product catalog, checkout, point of sale, or an `s_c__` Salesforce object.",
+      "source_sha256": "694ca2a88f3650cb5e7ff8d1b5c6ff6b72eb7be1954fbd9b5967b94e5a0aaba1",
+      "source_path": "skills/storeconnect-platform/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d5e664d8bbbb21f5d6a7b0455fad5bd5d3ba3a05cdd0165024f212afde9c76c": {
+      "description_zh": "通过受支持布局、筛选、视图、动作、脚本、样式及打印模板定制 StoreConnect POS，处理屏幕、购物车、按钮、票据标签，评估安全、性能、离线、测试和上线。",
+      "source": "Customize StoreConnect POS through supported layouts, filters, views, actions, scripts, styles, and print templates. Use when changing what a POS screen, list, cart, button, menu, modal, receipt, docket, or label shows or does, or when reviewing a POS customization for safety, performance, offline behavior, testing, and rollout.",
+      "source_sha256": "9d5e664d8bbbb21f5d6a7b0455fad5bd5d3ba3a05cdd0165024f212afde9c76c",
+      "source_path": "skills/storeconnect-pos-customization/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e525581671bbc89fb4512c6250415d93906cfd5019a63a1aa26f9a78c8734f11": {
+      "description_zh": "配置和排查 StoreConnect POS 的门店与收银机准备、员工权限、商品可售性与价格、支付及履约、受支持的 Store Variable 设置、同步恢复和硬件问题。适用于启用 POS、增修门店或收银机，以及终端缺少商品、支付方式或配置变更的诊断；布局、操作及打印模板标记由 storeconnect-pos-customization 处理。",
+      "source": "Configure and troubleshoot StoreConnect POS outcomes — outlet and register readiness, staff access, product availability and pricing, payment and fulfillment setup, supported Store Variable settings, synchronization, recovery, and hardware. Use when standing up POS, adding or repairing an outlet or register, or diagnosing why a product, payment method, register, or configuration change is missing at the terminal. For POS layouts, views, actions, or print-template markup, use storeconnect-pos-customization instead.",
+      "source_sha256": "e525581671bbc89fb4512c6250415d93906cfd5019a63a1aa26f9a78c8734f11",
+      "source_path": "skills/storeconnect-pos-setup/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a71d42b8b5cd64f68b1eea4db348f6bd53b24795231f5d0c027cf1e3eebbc4b7": {
+      "description_zh": "创建、查询、关联和删除 StoreConnect 的 Salesforce 记录，涵盖商店、页面、内容块、菜单、文章、分类、主题、关联对象、自定义数据映射和商户自定义对象。说明准确的 s_c__* 对象及字段 API 名、创建顺序、级联删除和商店范围，并处理 Liquid 无法访问自定义字段或对象的问题。",
+      "source": "Create, query, relate, and delete StoreConnect Salesforce records - stores, pages, content blocks, menus, articles, categories, themes, junction objects, Custom Data Mappings, and merchant custom objects. Covers exact s_c__* object and field API names, required creation order, delete and cascade semantics, store scoping, and how a Salesforce field or custom object becomes visible to Liquid. Use when a task needs a record created or changed in Salesforce rather than in a theme file, when a Liquid template needs a custom Salesforce field or object it cannot currently see, or when you need a verified s_c__* API name.",
+      "source_sha256": "a71d42b8b5cd64f68b1eea4db348f6bd53b24795231f5d0c027cf1e3eebbc4b7",
+      "source_path": "skills/storeconnect-salesforce-data/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb8650f1e01b02383c97e5b46c6c91a24c3474e636fab50e5d55c179cb070af1": {
+      "description_zh": "通过 StoreConnect 工具、storeconnect-cli 或明确获批的 Salesforce 流程发布商店变更。覆盖目标确认、回滚基线、校验、预览、人工批准、受支持的缓存刷新、结果验证和清理；适用于主题文件、CSS、内容块、翻译、商店配置发布及商店上线前的部署流程。",
+      "source": "Safely deploy changes to a StoreConnect store with connected StoreConnect tools, storeconnect-cli, or an explicitly approved Salesforce workflow. Covers target confirmation, rollback baselines, validation, preview, human approval, supported cache refresh, verification, and cleanup. Load before pushing or publishing any theme file, CSS, content block, translation, or store configuration, and before taking a store live.",
+      "source_sha256": "eb8650f1e01b02383c97e5b46c6c91a24c3474e636fab50e5d55c179cb070af1",
+      "source_path": "skills/storeconnect-sync-deploy/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a74a98d0c298476d4ccc8caa754f1244bbb0a9f3583e4117b294c1dc9772eefb": {
+      "description_zh": "修改 StoreConnect 店面的外观和结构：按键覆盖基础主题模板，通过 theme-supplement.css 或商店自定义样式添加品牌 CSS，编写内容块模板并设置主题变量。适用于页眉页脚、布局、主题资源与主题包、新建主题及覆盖未生效的排查；文件内模板逻辑和记录数据由 storeconnect-liquid 处理。",
+      "source": "Change how a StoreConnect storefront looks or is structured — override base-theme templates by key (pages/blocks/snippets/layouts/components/helpers), ship brand CSS through theme-supplement.css or the store's custom styles, author custom content-block templates, and set theme variables. Use for storefront styling, header/footer/layout work, new block templates, theme assets and packs, starting a theme from scratch, or diagnosing an override that silently does not apply. For template logic and record data inside a file use storeconnect-liquid.",
+      "source_sha256": "a74a98d0c298476d4ccc8caa754f1244bbb0a9f3583e4117b294c1dc9772eefb",
+      "source_path": "skills/storeconnect-theme-development/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01e067a8ee2e00a90dbec6ec1de753e5a71df9b3a7d4911a6c6e32d6d355b5e1": {
+      "description_zh": "只读审查 StoreConnect Liquid 主题或店面的布局、SEO 与结构化数据、无障碍、响应式图片、缓存性能、表单和翻译，生成按严重程度排序、含修改前后代码及用户影响的报告，可追加 CMS 内容完整性及 Lighthouse 检查。适用于主题体检或 SEO、无障碍及 Core Web Vitals 低分诊断；单个模板的性能检测与修复由 storeconnect-debug-performance 处理。",
+      "source": "Read-only quality audit of a StoreConnect Liquid theme or storefront — layout integrity, SEO and structured data, accessibility, responsive images, caching and performance, form correctness, and translations. Produces a severity-ranked report with before/after code and user-facing impact, plus optional CMS content-completeness and Lighthouse passes. Use when asked to review, audit, health-check, or \"find problems in\" a StoreConnect theme, storefront, or specific template and you will change nothing, or when asked why a store scores badly on SEO, accessibility, or Core Web Vitals. To instrument or fix one slow or broken template use storeconnect-debug-performance.",
+      "source_sha256": "01e067a8ee2e00a90dbec6ec1de753e5a71df9b3a7d4911a6c6e32d6d355b5e1",
+      "source_path": "skills/storeconnect-theme-review/SKILL.md",
+      "package_sha256": "553aad2b84089695c898c55bf4de73c7e6e4232526303e3d61fc076aab104678",
+      "source_package": "StoreConnect Agent Skills-0.9.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2f5a0475c5b9cc9adf57a03c3c0001da94cf4d7f2a72629c17698181129cf8c": {
+      "description_zh": "只读检查现有 Shopify 主题仓库，适用于合并前、主题商店提交前或 Lighthouse、无障碍评分下降的诊断。运行 shopify theme check，并从关键问题、质量和提交要求三个层次定向检索；逐项报告严重程度、位置、修改建议、影响及对应知识文件链接。",
+      "source": "Use when inspecting an existing Shopify theme repo for problems — before a merge, before a Theme Store submission, or to diagnose a Lighthouse/a11y drop. Read-only. Runs shopify theme check plus targeted greps across three levels (critical, quality, submission) and reports each finding with severity, location, what to change, why it matters, and a link to the knowledge file that explains it.",
+      "source_sha256": "b2f5a0475c5b9cc9adf57a03c3c0001da94cf4d7f2a72629c17698181129cf8c",
+      "source_path": "skills/shopify-audit/SKILL.md",
+      "package_sha256": "94317e0ab6268fd0663cda91bf77a8d565463c0a2cc4c41a91c7a8850a0bb706",
+      "source_package": "storefront-theme-kit-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c845c53bcf726d0e100471bf45707e1c7390c3958438cb2b76363330808ff745": {
+      "description_zh": "创建或修改 Shopify 主题代码，包括区段、片段、块、模板、布局、资源、配置、语言文件及其中的 Liquid、CSS、JavaScript。按文件类型选择知识文件并据此编写代码；设计区段、块或布局时同时参考设计原则。",
+      "source": "Use when creating or modifying any Shopify theme code — sections, snippets, blocks, templates, layout, assets, config, locales, or any Liquid/CSS/JS inside them. Routes to the right knowledge files based on which file type you are touching, then writes code that follows them. Also covers designing a section/block/layout (it reads the design principles).",
+      "source_sha256": "c845c53bcf726d0e100471bf45707e1c7390c3958438cb2b76363330808ff745",
+      "source_path": "skills/shopify-build/SKILL.md",
+      "package_sha256": "94317e0ab6268fd0663cda91bf77a8d565463c0a2cc4c41a91c7a8850a0bb706",
+      "source_package": "storefront-theme-kit-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30197594b740dc7bce3a8510111ea0ab2ecb251e078db58be51cfcd57c7ca7b7": {
+      "description_zh": "设置和运行 Shopify 主题开发工具链，涵盖 CLI 的 dev、push、pull、check，theme-check 配置、Liquid Prettier、Theme Inspector、版本管理、CI/CD，以及 SCSS、PostCSS、JavaScript 打包和 JIT 构建。适用于工具配置与执行任务，主题代码编写由其他技能处理。",
+      "source": "Use when setting up or running the Shopify theme dev toolchain — Shopify CLI (dev/push/pull/check), theme-check linter config, Liquid Prettier, Theme Inspector, version control strategy, CI/CD, and build pipelines (SCSS, PostCSS, JS bundling, JIT). The action skill for \"set this up / run this for me\", not for writing theme code.",
+      "source_sha256": "30197594b740dc7bce3a8510111ea0ab2ecb251e078db58be51cfcd57c7ca7b7",
+      "source_path": "skills/shopify-tooling/SKILL.md",
+      "package_sha256": "94317e0ab6268fd0663cda91bf77a8d565463c0a2cc4c41a91c7a8850a0bb706",
+      "source_package": "storefront-theme-kit-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "66036c42c4fcf4e6f5541ce2059cbe20f0db7256ed67c35004bd8a33df0be469": {
+      "description_zh": "围绕指定主题主持 Co-STORM 圆桌讨论，由主持人组织多位专家交流，用户可逐步引导方向，并配合动态思维导图。支持交互和恢复讨论，也可随时整理为带引用的报告。",
+      "source": "Host a Co-STORM roundtable on a topic — a moderated multi-expert discourse the user steers beat by beat, backed by a dynamic mind map, wrappable at any point into a cited report. Interactive, resumable.",
+      "source_sha256": "66036c42c4fcf4e6f5541ce2059cbe20f0db7256ed67c35004bd8a33df0be469",
+      "source_path": "skills/discuss/SKILL.md",
+      "package_sha256": "8627000a465df83195e95eaee89eeba0984f413e21f0516b82903bf0eb953994",
+      "source_package": "storm-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19d8746e1f6d8639274754dc3d569a6ea6e50f8071c2da530214ddb5e3f75f88": {
+      "description_zh": "运行 STORM 多视角研究流程，依据来源生成百科式、完整标注引用的文章，保存至 storm/<topic>/。适用于耗时较长、需要恢复执行的主题研究。",
+      "source": "Run the STORM pipeline on a topic — multi-perspective grounded research that produces a Wikipedia-style, fully-cited article under storm/<topic>/. Heavy, long-running, resumable.",
+      "source_sha256": "19d8746e1f6d8639274754dc3d569a6ea6e50f8071c2da530214ddb5e3f75f88",
+      "source_path": "skills/research/SKILL.md",
+      "package_sha256": "8627000a465df83195e95eaee89eeba0984f413e21f0516b82903bf0eb953994",
+      "source_package": "storm-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76d9e6139f802d2196968118ca3b33303a0949b64aadf6efcc195807e15ab33b": {
+      "description_zh": "跟踪项目工单、问题和进度，加载项目上下文、管理工作会话，并引导项目初始化设置。",
+      "source": "Track tickets, issues, and progress for your project. Load project context, manage sessions, guide setup.",
+      "source_sha256": "76d9e6139f802d2196968118ca3b33303a0949b64aadf6efcc195807e15ab33b",
+      "source_path": "skills/go/SKILL.md",
+      "package_sha256": "4c9880ceac1f819cd939dd2aa76c29010e69c67fee0f6a04e0cf877e9a32a786",
+      "source_package": "story-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60abbe259ea302e276f7bb0362fcf67600d1631799b19741a5851620a7ef1073": {
+      "description_zh": "将综合分析结论整理为面向高管和客户交付的专业 Word（.docx）报告。适用于编写最终报告、制作客户文档，或将已经完成的论证主线转换为正式交付材料。",
+      "source": "Package synthesized findings into an executive-grade Word document (.docx) deliverable. Use when someone asks to \"write the report\", \"create the deliverable\", \"produce the client document\", \"draft the final report\", \"package this into a document\", or when the analytical workflow reaches the final delivery phase after synthesis. Also trigger when someone has a completed storyline and needs it turned into a professional, client-ready written report.",
+      "source_sha256": "60abbe259ea302e276f7bb0362fcf67600d1631799b19741a5851620a7ef1073",
+      "source_path": "skills/client-report/SKILL.md",
+      "package_sha256": "916be93f8d8a449393cb242edd99182869f38a5d50cddc97d127cee29813ac03",
+      "source_package": "strategy consultant-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "343608887dd7f50f67ea8a9f12fe94382466d06063e40ff9b6d98549844930a2": {
+      "description_zh": "统筹完整的战略咨询分析项目，从界定问题，经研究、结论检验和综合分析，到生成可交付客户的报告。适用于需要端到端分析的业务问题，由该编排技能协调插件内其他技能完成交付。",
+      "source": "Run a full strategy consulting analytical engagement from problem definition through to a client-ready report. Use when someone asks to \"run a full analysis\", \"do a consulting engagement on\", \"analyze this end to end\", \"help me with a client engagement\", \"do the full workflow\", or presents a business problem that needs the complete Define → Research → Sense-Check → Synthesize → Deliver treatment. This is the orchestrator skill — it coordinates all other skills in the plugin to produce a comprehensive deliverable.",
+      "source_sha256": "343608887dd7f50f67ea8a9f12fe94382466d06063e40ff9b6d98549844930a2",
+      "source_path": "skills/engagement-manager/SKILL.md",
+      "package_sha256": "916be93f8d8a449393cb242edd99182869f38a5d50cddc97d127cee29813ac03",
+      "source_package": "strategy consultant-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ec307d25f6bebe336a16a8b9e54bb157e81e4fd06f388c6100cdba835fd7aae": {
+      "description_zh": "作为战略咨询项目的内部阶段，通过 engagement-manager 调用，规划、引导并处理专家访谈以验证和补充研究结论。涵盖访谈对象选择、访谈提纲、记录处理、洞见提取，以及把上传的访谈文本或笔记纳入研究依据。",
+      "source": "Internal phase of the strategy-consultant engagement — invoke via engagement-manager, not directly. Plan, guide, and process expert interviews to confirm and enhance research findings. Use when someone asks to \"prepare for expert interviews\", \"create an interview guide\", \"who should we interview\", \"process interview notes\", \"extract insights from interviews\", or when the analytical workflow includes expert interviews after the research phase. Also trigger when someone uploads expert interview transcripts or notes that need to be analyzed and integrated into the research base.",
+      "source_sha256": "2ec307d25f6bebe336a16a8b9e54bb157e81e4fd06f388c6100cdba835fd7aae",
+      "source_path": "skills/expert-interview/SKILL.md",
+      "package_sha256": "916be93f8d8a449393cb242edd99182869f38a5d50cddc97d127cee29813ac03",
+      "source_package": "strategy consultant-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53bc8928d5d4d8200eb91cc97b9384e34ac0718c92d824a094990526337c32ae": {
+      "description_zh": "建立含可检验分支的假设树或问题树，以结构化分解指导后续分析，适用于 MECE 拆解和研究开始前的问题梳理。该步骤可选；问题范围足够窄时可直接研究。",
+      "source": "Build a structured hypothesis tree with testable branches to guide analysis. Use when someone asks to \"build a hypothesis tree\", \"structure this problem into hypotheses\", \"create an issue tree\", \"break this down MECE\", or when a defined problem would benefit from structured decomposition before research begins. This skill is optional — not every problem requires a formal hypothesis tree. Skip it when the question is narrow enough that direct research is more efficient.",
+      "source_sha256": "53bc8928d5d4d8200eb91cc97b9384e34ac0718c92d824a094990526337c32ae",
+      "source_path": "skills/hypothesis-tree/SKILL.md",
+      "package_sha256": "916be93f8d8a449393cb242edd99182869f38a5d50cddc97d127cee29813ac03",
+      "source_package": "strategy consultant-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "468349325484db0419a167f6839da60414a5fdf62bea7a3359c9eab03cd19fe8": {
+      "description_zh": "作为战略咨询项目的内部阶段，通过 engagement-manager 调用，将客户问题界定为清晰、面向决策的分析问题并明确项目范围。适用于模糊业务挑战，以及从客户简报、RFP 或项目说明中提炼核心分析问题。",
+      "source": "Internal phase of the strategy-consultant engagement — invoke via engagement-manager, not directly. Define and scope a client problem into a sharp, decision-oriented question. Use when someone says \"help me define this problem\", \"scope this engagement\", \"what's the real question here\", \"sharpen this problem statement\", or provides a vague business challenge that needs structuring before analysis can begin. Also trigger when someone shares a client brief, RFP, or project description and needs help extracting the core analytical question.",
+      "source_sha256": "468349325484db0419a167f6839da60414a5fdf62bea7a3359c9eab03cd19fe8",
+      "source_path": "skills/problem-definition/SKILL.md",
+      "package_sha256": "916be93f8d8a449393cb242edd99182869f38a5d50cddc97d127cee29813ac03",
+      "source_package": "strategy consultant-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f56dbaae491cf5252e8a5c13441cd0cb7e9d952044a846d07adffe7136d1081": {
+      "description_zh": "作为战略咨询项目的内部研究阶段，通过 engagement-manager 调用，安排两名独立研究代理和一名验证代理开展分层研究。适用于市场调查、证据搜集和业务问题研究，也可结合客户数据或专家访谈记录与公开资料分析。",
+      "source": "Internal phase of the strategy-consultant engagement — invoke via engagement-manager, not directly. Conduct thorough, multi-tier research on a client question by dispatching two independent research agents and a validation agent. Use when someone asks to \"research this topic\", \"find evidence for\", \"investigate this market\", \"gather data on\", \"what does the evidence say about\", or when the analytical workflow reaches the research phase after problem definition. Also trigger when someone uploads client data or expert interview notes that need to be analyzed alongside public research.",
+      "source_sha256": "7f56dbaae491cf5252e8a5c13441cd0cb7e9d952044a846d07adffe7136d1081",
+      "source_path": "skills/research/SKILL.md",
+      "package_sha256": "916be93f8d8a449393cb242edd99182869f38a5d50cddc97d127cee29813ac03",
+      "source_package": "strategy consultant-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "844b0dbd3cd7fcf94c5238a28a09816e009c714bf5f8f908c2f19a4ef31f3790": {
+      "description_zh": "对研究发现、分析结论和论证进行质疑与压力检验，检查其稳健性。适用于研究到综合分析之间的质量关口，或在向客户提交结论前主动寻找论证漏洞。",
+      "source": "Pressure-test research findings and analytical conclusions for robustness. Use when someone asks to \"sense-check this\", \"pressure-test these findings\", \"challenge this analysis\", \"stress-test the argument\", \"play devil's advocate\", \"poke holes in this\", or when the analytical workflow needs a quality gate between research and synthesis. Also trigger when someone presents a conclusion and wants it challenged before taking it to a client.",
+      "source_sha256": "844b0dbd3cd7fcf94c5238a28a09816e009c714bf5f8f908c2f19a4ef31f3790",
+      "source_path": "skills/sense-check/SKILL.md",
+      "package_sha256": "916be93f8d8a449393cb242edd99182869f38a5d50cddc97d127cee29813ac03",
+      "source_package": "strategy consultant-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c782b6e761bc98ae17fa949b528980f398b3cff90983a9609cba2f435a423360": {
+      "description_zh": "把研究发现综合为回答客户问题的连贯论证主线，组织分析逻辑和客户沟通内容。适用于将经过检验的多项发现整理成有说服力的叙述及最终报告论据。",
+      "source": "Synthesize research findings into a coherent storyline that answers the client question. Use when someone asks to \"synthesize these findings\", \"build the storyline\", \"what's the narrative\", \"put this together into a story\", \"structure the argument\", \"what should we tell the client\", or when the analytical workflow moves from sense-checked research to constructing the client-facing argument. Also trigger when someone has a collection of findings and needs help turning them into a logical, persuasive narrative.",
+      "source_sha256": "c782b6e761bc98ae17fa949b528980f398b3cff90983a9609cba2f435a423360",
+      "source_path": "skills/synthesis/SKILL.md",
+      "package_sha256": "916be93f8d8a449393cb242edd99182869f38a5d50cddc97d127cee29813ac03",
+      "source_package": "strategy consultant-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c861801286034bff5281b06d2fc47934c0e754784d95f3e38af8a2b7cf48451": {
+      "description_zh": "运用安索夫增长矩阵比较市场渗透、产品开发、市场开发和多元化四类增长路径，结合风险评估支持增长战略决策。",
+      "source": "Ansoff Growth Matrix — four strategic growth options: Market Penetration, Product Development, Market Development, Diversification. Essential for growth strategy decisions with risk assessment.",
+      "source_sha256": "1c861801286034bff5281b06d2fc47934c0e754784d95f3e38af8a2b7cf48451",
+      "source_path": "ansoff-matrix/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ced7ea8ccde7d8a9c9b96fada916d47d046c9902089221a41373f353e3e6e72a": {
+      "description_zh": "运用 BCG 增长—份额矩阵管理业务组合并分配资源，根据市场增长率和相对市场份额将业务单元划分为明星、现金牛、瘦狗或问题业务。",
+      "source": "BCG Growth-Share Matrix — portfolio management framework for allocating resources across business units. Classify units as Stars, Cash Cows, Dogs, or Question Marks based on market growth and relative market share.",
+      "source_sha256": "ced7ea8ccde7d8a9c9b96fada916d47d046c9902089221a41373f353e3e6e72a",
+      "source_path": "bcg-matrix/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7976c4f957fdad2a82ae4f36a529db7d68934232bd398926773e1cf4f885759": {
+      "description_zh": "运用 Kim 与 Mauborgne 的蓝海战略寻找尚未充分竞争的市场空间，涵盖《蓝海转型》（2017）流程、买方效用图及先驱—迁移者—安于现状者图。",
+      "source": "Blue Ocean Strategy (Kim & Mauborgne) — create uncontested market space instead of competing in bloody red oceans. Includes Blue Ocean Shift (2017) process, Buyer Utility Map, and Pioneer-Migrator-Settler Map.",
+      "source_sha256": "f7976c4f957fdad2a82ae4f36a529db7d68934232bd398926773e1cf4f885759",
+      "source_path": "blue-ocean/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f6e86c7b99d37f43d3883b972b24ee1548adfdbb7bc2b40d867587229f2dece": {
+      "description_zh": "运用 Osterwalder 与 Pigneur 的商业模式画布，通过九个构成模块可视化、设计或调整商业模式，并使用价值主张画布分析产品与客户需求的匹配。",
+      "source": "Business Model Canvas (Osterwalder & Pigneur) — visualize, design, and pivot business models using 9 building blocks. Includes Value Proposition Canvas for customer fit analysis.",
+      "source_sha256": "7f6e86c7b99d37f43d3883b972b24ee1548adfdbb7bc2b40d867587229f2dece",
+      "source_path": "bmc/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "474a459a4fd7283c008be26563755f17882ad04b6692aae7f1b03b026acf0300": {
+      "description_zh": "运用 Kaplan 与 Norton 的平衡计分卡，从财务、客户、内部流程、学习与成长四个维度把战略转化为行动，结合战略中心型组织原则支持战略规划、KPI 设计和组织战略对齐。",
+      "source": "Balanced Scorecard (Kaplan & Norton) — translate strategy into action across 4 perspectives: Financial, Customer, Internal Process, Learning & Growth. Includes Strategy-Focused Organization principles. Use for strategic planning, KPI design, and aligning organization around strategy.",
+      "source_sha256": "474a459a4fd7283c008be26563755f17882ad04b6692aae7f1b03b026acf0300",
+      "source_path": "bsc/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "36a3cae960c5d49e42afba3cd22d346340713158f5873a954862bb0420998d40": {
+      "description_zh": "运用 Stanford d.school／IDEO 的设计思维，通过共情、定义、构思、原型和测试开展以人为中心的创新，适用于产品服务开发、客户体验改善及模糊问题解决。",
+      "source": "Design Thinking (Stanford d.school / IDEO) — human-centered innovation through Empathize, Define, Ideate, Prototype, Test. Use when building products/services, improving customer experience, or solving ambiguous problems.",
+      "source_sha256": "36a3cae960c5d49e42afba3cd22d346340713158f5873a954862bb0420998d40",
+      "source_path": "design-thinking/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ec583775915459049a5b001a5dc7fecd6b85f3f11dfbc67c324e53fbea9f3f7": {
+      "description_zh": "运用 Clayton Christensen 的颠覆式创新理论预测和应对市场变革，分析优秀企业失败的原因、低端及新市场颠覆的机制，以及既有企业的防御和自我革新路径。",
+      "source": "Disruptive Innovation (Clayton Christensen) — predict and respond to market disruption. Understand why great companies fail, how low-end and new-market disruption works, and how incumbents can defend or disrupt themselves.",
+      "source_sha256": "9ec583775915459049a5b001a5dc7fecd6b85f3f11dfbc67c324e53fbea9f3f7",
+      "source_path": "disruptive-innovation/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5715754caff0e59f0db68c01b3d7102840cedc66e952eab461a7f79ccae62fba": {
+      "description_zh": "运用彼得·德鲁克的目标管理、五个基本问题、卓有成效的管理者习惯及七种创新来源，支持目标设定、组织自评、管理者效能提升和系统性创新。",
+      "source": "Drucker's Management Frameworks (Peter Drucker) — MBO (Management by Objectives), Five Essential Questions, Effective Executive habits, Seven Sources of Innovation. The foundation of modern management. Use for goal-setting, organizational self-assessment, executive effectiveness, and systematic innovation.",
+      "source_sha256": "5715754caff0e59f0db68c01b3d7102840cedc66e952eab461a7f79ccae62fba",
+      "source_path": "drucker/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a03477ae9e380b13df632bfe875e61c5c912ac0d0590bca8ca28846c836d43d": {
+      "description_zh": "用第一性原理思维将问题拆解为基本事实，再由这些事实推导解决方案。适用于传统判断失效、成本被视为固定，或既有惯例妨碍改进的情况。",
+      "source": "First Principles Thinking — break problems down to fundamental truths and reason up from there. Use when conventional wisdom is wrong, costs seem fixed, or 'that's how it's always been done' blocks progress.",
+      "source_sha256": "8a03477ae9e380b13df632bfe875e61c5c912ac0d0590bca8ca28846c836d43d",
+      "source_path": "first-principles/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d530cc05b3663960dcd97dfaf58e5a5565f83f7e331795fdb1106bd78353032": {
+      "description_zh": "将博弈论用于业务战略，分析竞争互动、预测对手行为并设计策略，涵盖囚徒困境、纳什均衡、承诺机制和竞合关系。",
+      "source": "Game Theory for Business Strategy — analyze competitive interactions, predict rival behavior, and design winning strategies. Prisoner's Dilemma, Nash Equilibrium, commitment devices, and co-opetition.",
+      "source_sha256": "8d530cc05b3663960dcd97dfaf58e5a5565f83f7e331795fdb1106bd78353032",
+      "source_path": "game-theory/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a687e3f83b062197b6e987c96bf1258dd33762c497a6fcfa9e2e29b4e1365b69": {
+      "description_zh": "运用 Christensen／Ulwick 的待完成任务（JTBD）理论理解客户为何选择产品，识别驱动购买决策的功能、情感及社会任务，为以结果为导向的创新提供依据。",
+      "source": "Jobs to Be Done (Christensen/Ulwick) — understand why customers 'hire' products. Uncover the functional, emotional, and social jobs that drive purchase decisions. The foundation of outcome-driven innovation.",
+      "source_sha256": "a687e3f83b062197b6e987c96bf1258dd33762c497a6fcfa9e2e29b4e1365b69",
+      "source_path": "jtbd/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fed2d765295ba6f5b714789c35e33b65de3dfe8d8c3ec7831a820cc79b731104": {
+      "description_zh": "运用科特八步变革模型，从建立紧迫感到将变革融入文化引导组织转型，涵盖 2014 年《加速》中的双系统更新。",
+      "source": "Kotter's 8-Step Change Model — lead organizational transformation from urgency to culture. The definitive change management framework with 2014 Accelerate dual-system update.",
+      "source_sha256": "fed2d765295ba6f5b714789c35e33b65de3dfe8d8c3ec7831a820cc79b731104",
+      "source_path": "kotter/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8823f3cdd133691156d672849fd72859f0b81a2a1136ab6516dba9dc002c9041": {
+      "description_zh": "运用 Eric Ries 的精益创业方法，以构建—衡量—学习循环开展快速验证学习，涵盖最小可行产品、转型或坚持的决策及创新核算，通过先检验假设减少开发浪费。",
+      "source": "Lean Startup (Eric Ries) — Build-Measure-Learn loop for rapid validated learning. MVP, pivot-or-persevere decisions, innovation accounting. Reduce waste by testing assumptions before building.",
+      "source_sha256": "8823f3cdd133691156d672849fd72859f0b81a2a1136ab6516dba9dc002c9041",
+      "source_path": "lean-startup/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bac7a456c987bff282af09c6b560acaaca576d348bc3ddcb0a12895f90a237f3": {
+      "description_zh": "运用 McCarthy／Booms 与 Bitner 的营销组合框架，将产品、价格、渠道、促销四要素与服务营销的人、流程、有形展示结合，支持营销战略的具体执行。",
+      "source": "Marketing Mix 4P/7P Framework (McCarthy/Booms & Bitner) — Product, Price, Place, Promotion + People, Process, Physical Evidence for services. The tactical execution layer of marketing strategy.",
+      "source_sha256": "bac7a456c987bff282af09c6b560acaaca576d348bc3ddcb0a12895f90a237f3",
+      "source_path": "marketing-mix/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ac88e53b2e0fd2e01026508f264d95af50c12436ecd4db2a5781e8e4dc37307": {
+      "description_zh": "运用麦肯锡 7S 框架，从战略、结构、制度、共同价值观、风格、人员和技能七个相互依赖的要素诊断组织一致性，适用于变革管理和并购整合。",
+      "source": "McKinsey 7S Framework — diagnose organizational alignment across 7 interdependent elements: Strategy, Structure, Systems, Shared Values, Style, Staff, Skills. Essential for change management and M&A integration.",
+      "source_sha256": "1ac88e53b2e0fd2e01026508f264d95af50c12436ecd4db2a5781e8e4dc37307",
+      "source_path": "mckinsey-7s/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0645613703c4216b210192945e2c457a3c831fe9674b4a3815f71cd79466c59b": {
+      "description_zh": "运用源自 Intel／Google 的 OKR 目标设定框架，以有挑战性的目标和可衡量的关键结果推动组织对齐，并结合对话、反馈、认可（CFR）开展持续绩效管理。",
+      "source": "OKR (Objectives and Key Results) — goal-setting framework from Intel/Google. Align organization through ambitious objectives with measurable key results. Includes CFR (Conversations, Feedback, Recognition) for continuous performance management.",
+      "source_sha256": "0645613703c4216b210192945e2c457a3c831fe9674b4a3815f71cd79466c59b",
+      "source_path": "okr/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "410b370cfadb11191b1fddb614b6fedec97b7b0ad144d1406e5ec8acad9aa6e7": {
+      "description_zh": "运用 John Boyd 的 OODA 循环，通过观察、判断形势、决策和行动快速响应变化，适用于竞争应对、危机管理及需要加快决策节奏的情境。",
+      "source": "OODA Loop — John Boyd's rapid decision-making framework. Observe-Orient-Decide-Act. Use for fast-changing situations, competitive response, crisis management, or when the user needs to outpace competitors.",
+      "source_sha256": "410b370cfadb11191b1fddb614b6fedec97b7b0ad144d1406e5ec8acad9aa6e7",
+      "source_path": "ooda/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "631edc6d0b5a4b85e7a57bb8bceec1dc4d455d11ab7023eac4e0db38bd3dde37": {
+      "description_zh": "运用迈克尔·波特的战略分析框架，包括用于行业分析的五力模型、分析竞争优势的价值链、竞争定位的通用战略，以及分析国家竞争优势的钻石模型。",
+      "source": "Porter's Frameworks (Michael Porter) — Five Forces for industry analysis, Value Chain for competitive advantage, Generic Strategies for positioning, Diamond Model for national advantage. The gold standard of competitive strategy analysis.",
+      "source_sha256": "631edc6d0b5a4b85e7a57bb8bceec1dc4d455d11ab7023eac4e0db38bd3dde37",
+      "source_path": "porter/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e398aa52fa26edf6eef0225a8307f21e02fa7b07d9960792c48075b532314862": {
+      "description_zh": "运用 Barbara Minto 的金字塔原理，自上而下组织思考与沟通，先提出结论，再用逻辑分组的论据支撑，适用于高管沟通和论证结构梳理。",
+      "source": "Pyramid Principle (Barbara Minto, McKinsey) — structure thinking and communication top-down. Answer first, then support with logically grouped arguments. The gold standard of executive communication.",
+      "source_sha256": "e398aa52fa26edf6eef0225a8307f21e02fa7b07d9960792c48075b532314862",
+      "source_path": "pyramid-principle/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e818c510f3948f6eae795ad4b50d35b58c7a63b9badac1d561325fc20ed49e1": {
+      "description_zh": "运用 Barney／Wernerfelt 的资源基础观，从独特的内部资源和能力构建竞争优势，并以 VRIO 框架识别可持续优势，为波特的外部视角补充由内而外的分析。",
+      "source": "Resource-Based View (Barney/Wernerfelt) — build competitive advantage from unique internal resources and capabilities. VRIO framework for identifying sustainable advantages. Complements Porter's outside-in with inside-out perspective.",
+      "source_sha256": "6e818c510f3948f6eae795ad4b50d35b58c7a63b9badac1d561325fc20ed49e1",
+      "source_path": "rbv/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d45f2346c071cfae46fea3aa8f2bde726d58a9266123a9dfc135b07e9fdc582": {
+      "description_zh": "将实物期权思维用于不确定条件下的战略投资，评估扩张、延迟、放弃或转换的选择权价值，区分拥有选择权与必须执行的义务。",
+      "source": "Real Options Analysis — apply options thinking to strategic investments under uncertainty. Value the right (not obligation) to expand, defer, abandon, or switch. Turns uncertainty from threat into opportunity.",
+      "source_sha256": "3d45f2346c071cfae46fea3aa8f2bde726d58a9266123a9dfc135b07e9fdc582",
+      "source_path": "real-options/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c03b0a3ac637fc8e7ef72e1de22866b983eda15f44348ee70c41c40e8b71515": {
+      "description_zh": "运用 Shell／Schwartz 情景规划方法构建多个合理的未来情景，开展战略前瞻并制定在不同情景下仍能发挥作用的稳健策略。",
+      "source": "Scenario Planning (Shell/Schwartz method) — strategic foresight through multiple plausible futures. Build robust strategies that work across different scenarios instead of betting on one prediction.",
+      "source_sha256": "4c03b0a3ac637fc8e7ef72e1de22866b983eda15f44348ee70c41c40e8b71515",
+      "source_path": "scenario-planning/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c914c90032d50cec97c5194a6230c8adef642a685df3279476fb61f753be1f1a": {
+      "description_zh": "运用 STP 营销框架进行市场细分、目标市场选择和定位，为产品服务明确目标客户与市场位置，并为后续 4P 营销组合决策提供基础。",
+      "source": "STP Marketing Framework — Segmentation, Targeting, Positioning. The foundation of marketing strategy: divide the market, choose your target, position your offering. Essential before any marketing mix (4P) decision.",
+      "source_sha256": "c914c90032d50cec97c5194a6230c8adef642a685df3279476fb61f753be1f1a",
+      "source_path": "stp/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c66cea59f42e8a6123844bb9ee2c43d7aa8a0d74038524c08f984bc4308ec352": {
+      "description_zh": "结合 SWOT 与 PESTEL 分析内部优势和劣势、外部机会和威胁，并扫描政治、经济、社会、技术、环境及法律等宏观因素，支持战略规划。",
+      "source": "SWOT + PESTEL Analysis — internal strengths/weaknesses and external opportunities/threats combined with macro-environment scanning (Political, Economic, Social, Technological, Environmental, Legal). Foundation of strategic planning.",
+      "source_sha256": "c66cea59f42e8a6123844bb9ee2c43d7aa8a0d74038524c08f984bc4308ec352",
+      "source_path": "swot-pestel/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f916c1fe460e60f6d142bd7c5a79b449461e549547bd04ee11a8e99e9ace41c": {
+      "description_zh": "运用 Peter Senge 的系统思维，通过反馈循环、心智模式和关键干预点理解复杂系统。适用于问题反复出现、修复产生反作用，或整体表现无法由各部分直接解释的情况。",
+      "source": "Systems Thinking (Peter Senge) — understand complex systems through feedback loops, mental models, and leverage points. Use when problems keep recurring, fixes backfire, or the whole is behaving differently than expected from its parts.",
+      "source_sha256": "4f916c1fe460e60f6d142bd7c5a79b449461e549547bd04ee11a8e99e9ace41c",
+      "source_path": "systems-thinking/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32ed311dfc3f449ce26103ac28a1f1db1585fca96633ab661b916425651ce9c5": {
+      "description_zh": "根据业务问题自动选择战略分析框架；原文称可从 47 种工具中选取，包括约束理论、TRIZ、Wardley 地图、OODA、系统思维、蓝海战略、设计思维、第一性原理、波特、德鲁克、平衡计分卡及 17 种 MBA 框架。",
+      "source": "Strategic Thinking Agent — automatically selects the best framework(s) from 47 tools (TOC/TRIZ/Wardley/OODA/Systems Thinking/Blue Ocean/Design Thinking/First Principles/Porter/Drucker/BSC + 17 MBA frameworks) to solve any business problem. Just describe your problem.",
+      "source_sha256": "32ed311dfc3f449ce26103ac28a1f1db1585fca96633ab661b916425651ce9c5",
+      "source_path": "think/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d575ae8b31858d9188ca62fbc0fc233641768c827a20a849541d91fab219c6f": {
+      "description_zh": "运用 Wardley 地图按演化阶段可视化价值链，支持竞争定位分析、自建或采购决策，以及识别可采取的战略行动。",
+      "source": "Wardley Mapping — visualize value chains by evolution stage to make better strategic decisions. Use when the user needs to analyze competitive positioning, build-vs-buy decisions, or identify strategic moves.",
+      "source_sha256": "5d575ae8b31858d9188ca62fbc0fc233641768c827a20a849541d91fab219c6f",
+      "source_path": "wardley/SKILL.md",
+      "package_sha256": "3276d97ad2525769a96a13db795124ee7a9388f0c1ae50a2d37c54fe8d822a64",
+      "source_package": "strategy-frameworks-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a57e6672396429959a896ed84fe3bd7c829862a0b451a25aa0ff23df53c0a92a": {
+      "description_zh": "为现有 Stream Deck 插件新增动作，适用于添加按钮、按键、旋钮或其他插件功能。",
+      "source": "Add a new action to an existing Stream Deck plugin. Use when adding actions, buttons, keys, dials, or new functionality to a Stream Deck plugin.",
+      "source_sha256": "a57e6672396429959a896ed84fe3bd7c829862a0b451a25aa0ff23df53c0a92a",
+      "source_path": "skills/add-action/SKILL.md",
+      "package_sha256": "3a1c7bab050a524de1968e394605640cc9fca4b9548997cb552d8bddf7280719",
+      "source_package": "stream-deck-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "054956639b3fe19cbcc9fbdd39a9a91d74ccbde8b6e0bcc5ead44cd50fb36210": {
+      "description_zh": "为 Stream Deck 动作添加属性检查器，即设置界面，支持配置面板和面向用户的选项。",
+      "source": "Add a property inspector (settings UI) to a Stream Deck action. Use when adding settings panels, configuration UI, or user-facing options to actions.",
+      "source_sha256": "054956639b3fe19cbcc9fbdd39a9a91d74ccbde8b6e0bcc5ead44cd50fb36210",
+      "source_path": "skills/add-property-inspector/SKILL.md",
+      "package_sha256": "3a1c7bab050a524de1968e394605640cc9fca4b9548997cb552d8bddf7280719",
+      "source_package": "stream-deck-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80dd92065db881c3d9294eaad43612aef26939b4faebfd5def9a19b6f444af98": {
+      "description_zh": "构建、打包、校验 Stream Deck 插件并准备分发，适用于插件发布前的构建与验证流程。",
+      "source": "Build, pack, validate, or prepare a Stream Deck plugin for distribution. Use when building, packaging, validating, or distributing a Stream Deck plugin.",
+      "source_sha256": "80dd92065db881c3d9294eaad43612aef26939b4faebfd5def9a19b6f444af98",
+      "source_path": "skills/build/SKILL.md",
+      "package_sha256": "3a1c7bab050a524de1968e394605640cc9fca4b9548997cb552d8bddf7280719",
+      "source_package": "stream-deck-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7dd1ab44ab44c831f17adae3f2564ec3d51761fa15a47a9ce2be4bd40a4e2082": {
+      "description_zh": "从零搭建 Stream Deck 插件项目脚手架，适用于创建新插件、启动新项目及初始化插件工程。",
+      "source": "Scaffold a new Stream Deck plugin project from scratch. Use when creating a new Stream Deck plugin, starting a new SD project, or bootstrapping a plugin.",
+      "source_sha256": "7dd1ab44ab44c831f17adae3f2564ec3d51761fa15a47a9ce2be4bd40a4e2082",
+      "source_path": "skills/create-plugin/SKILL.md",
+      "package_sha256": "3a1c7bab050a524de1968e394605640cc9fca4b9548997cb552d8bddf7280719",
+      "source_package": "stream-deck-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
