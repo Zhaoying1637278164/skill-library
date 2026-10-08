@@ -66409,6 +66409,1086 @@
       "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
       "source_package": "Ship-0.10.5-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "371e89b566ce9dbf239b5bbf2576c8932dc62ae20eeffadc80b65ca2cd2178a1": {
+      "description_zh": "执行 ship 流程第 2 阶段，将获批研究转为冻结规格，在第 0 阶段唯一原则源 CONSTITUTION.md 中加入项目规则，并编写完整参考 PROJECT.md、Claude Code 指南及代码映射 CLAUDE.md、机器可检查的 ACCEPTANCE.md、ROADMAP.md 和环境矩阵。适用于构建前明确数据模型、路由和不可妥协规则。",
+      "source": "Phase 2 of the ship pipeline — turn approved research into a frozen spec. Extend the phase-0 CONSTITUTION.md (non-negotiable principles, the single source) with project-specific rules, and write PROJECT.md (full reference), CLAUDE.md (the Claude Code guide — project-specific rules + code map), ACCEPTANCE.md (machine-checkable criteria), ROADMAP.md, and the env matrix. Use when research is approved and it's time to define data model, routes, and non-negotiable rules before building.",
+      "source_sha256": "371e89b566ce9dbf239b5bbf2576c8932dc62ae20eeffadc80b65ca2cd2178a1",
+      "source_path": "skills/ship-spec/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ca2d273a4dd8fe939cb2dc97299e905fd7ceded40ccee14b766916f7aac6067": {
+      "description_zh": "通过设有关卡的流程将项目从创意推进至生产：研究、规格、构建、分层 QA、生产准备、主机配置、部署和监测。适用于新建、恢复、端到端规划及上线请求，要求阶段关卡和负责人签署，保留交付证据。",
+      "source": "Drive a project from idea to production through a gated pipeline — research → spec → build → layered QA (functional + eval + a parallel expert-agent panel) → prod-prep → provision → deploy → monitor. Use when starting a new project, resuming one, or when the user says \"take this to production\", \"ship it\", \"what's the next step\", or asks to plan a project end-to-end. Enforces phase gates and owner sign-off to reduce skipped steps and keep delivery evidence visible.",
+      "source_sha256": "9ca2d273a4dd8fe939cb2dc97299e905fd7ceded40ccee14b766916f7aac6067",
+      "source_path": "skills/ship/SKILL.md",
+      "package_sha256": "7aefbb0681019e0ecf9645d9664c61047a86ba64ad3a3ec3c676016e71f982d0",
+      "source_package": "Ship-0.10.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8a46949b939f0da765fb41cc78be5a7d03c61ff3c8c3531a0d74a8295b55136": {
+      "description_zh": "将静态网站部署到 ShipStatic，支持发布、上传托管、上线、自定义域名、部署管理和分享网址，提供 ship CLI 及 Node.js/浏览器 SDK。免费且无需账号属于原说明的服务声明。",
+      "source": "Deploy static websites to ShipStatic. Use when the user wants to deploy a site, publish a website, upload to hosting, go live, set up a custom domain, manage deployments, or share a site URL. Free, no account needed. CLI (`ship`) and Node.js/browser SDK.",
+      "source_sha256": "f8a46949b939f0da765fb41cc78be5a7d03c61ff3c8c3531a0d74a8295b55136",
+      "source_path": "skills/using-ship/SKILL.md",
+      "package_sha256": "d83ed941ce72757656934a5e98db57787b527a7e82903e6d1ddd1771b62b5d6c",
+      "source_package": "ship-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7bcda079099f7a2dcec9cb4ef003afdffd55592e6321ebaa326fc9a4829bf54f": {
+      "description_zh": "审查代码库全部日志调用，报告个人身份信息暴露和敏感数据泄漏。只报告发现，不修改代码，修复前须向用户确认。",
+      "source": "Audit log statements in the codebase for PII exposure and sensitive data leaks. Scans all logging calls and reports issues. Does not make changes — only reports findings and asks the user before fixing anything.",
+      "source_sha256": "7bcda079099f7a2dcec9cb4ef003afdffd55592e6321ebaa326fc9a4829bf54f",
+      "source_path": "skills/audit-logs/SKILL.md",
+      "package_sha256": "196a2a76b0305c9b437efd5cff25d075c1a24b0431bf8399044649c4b8518550",
+      "source_package": "Shipbook-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84320f70d7ac0dc31c4d00f638a59c985fef1591ec75538e89e3abdbb79d3fb4": {
+      "description_zh": "调试 Shipbook 中特定用户的会话，按邮箱、设备编号或用户编号定位日志，再追踪完整会话以理解发生的问题。",
+      "source": "Debug a specific user session in Shipbook. Finds logs for a user by email, device ID, or user ID, then traces the full session to understand what happened.",
+      "source_sha256": "84320f70d7ac0dc31c4d00f638a59c985fef1591ec75538e89e3abdbb79d3fb4",
+      "source_path": "skills/debug-session/SKILL.md",
+      "package_sha256": "196a2a76b0305c9b437efd5cff25d075c1a24b0431bf8399044649c4b8518550",
+      "source_package": "Shipbook-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35fd2afe4f46a3436062233e3bc8e60f9f825a7a07ca7f0ffd8f3dcbab897a09": {
+      "description_zh": "安装并集成 Shipbook SDK，识别平台、安装包、配置初始化、包装已有日志器、设置日志级别，存在 Crashlytics 时进行集成，可选增加 API 调用日志，最后执行日志审查。",
+      "source": "Install and integrate the Shipbook SDK into a project. Detects the platform, installs the package, configures initialization, wraps existing loggers, sets correct log levels, integrates with Crashlytics if present, optionally adds API call logging, and runs a log audit at the end.",
+      "source_sha256": "35fd2afe4f46a3436062233e3bc8e60f9f825a7a07ca7f0ffd8f3dcbab897a09",
+      "source_path": "skills/install-shipbook/SKILL.md",
+      "package_sha256": "196a2a76b0305c9b437efd5cff25d075c1a24b0431bf8399044649c4b8518550",
+      "source_package": "Shipbook-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2eb46e636145563a9d31256ca1defd47e45e665be8f1e260c8339bbd64a61b9": {
+      "description_zh": "列出并分析 Shipbook Loglytics 分类的错误和警告，取得完整问题列表、查看各错误位置的代码，按根因分组并提出修复建议。",
+      "source": "List and analyze classified errors and warnings from Shipbook Loglytics. Retrieves the full list of issues, analyzes the code at each error location, groups them by root cause, and suggests fixes.",
+      "source_sha256": "b2eb46e636145563a9d31256ca1defd47e45e665be8f1e260c8339bbd64a61b9",
+      "source_path": "skills/list-issues/SKILL.md",
+      "package_sha256": "196a2a76b0305c9b437efd5cff25d075c1a24b0431bf8399044649c4b8518550",
+      "source_package": "Shipbook-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a83d722ad6dd3032004695248d837210ac92b1fa8aa19fd85f040435e1ec41d9": {
+      "description_zh": "按消息文本、严重程度、用户、设备、时间范围、文件名或标签等条件筛选和搜索 Shipbook 日志。",
+      "source": "Search Shipbook logs with filters. Find logs by message text, severity, user, device, time range, file name, or tag.",
+      "source_sha256": "a83d722ad6dd3032004695248d837210ac92b1fa8aa19fd85f040435e1ec41d9",
+      "source_path": "skills/search-logs/SKILL.md",
+      "package_sha256": "196a2a76b0305c9b437efd5cff25d075c1a24b0431bf8399044649c4b8518550",
+      "source_package": "Shipbook-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c80921933825055c9c16564eb8646ab3bda9431daf89bc4bc8f9a03ecb7ee8b7": {
+      "description_zh": "为 /shipnote 命令依据近期 Git 活动生成公开构建进展帖子，扫描仓库、撰写自然表达的文案、保存帖子并更新检查点。",
+      "source": "Generate a build-in-public post from recent git activity. Used by the /shipnote command. Scans git repos, crafts a human-sounding post, saves it, and updates the checkpoint.",
+      "source_sha256": "c80921933825055c9c16564eb8646ab3bda9431daf89bc4bc8f9a03ecb7ee8b7",
+      "source_path": "skills/generate-post/SKILL.md",
+      "package_sha256": "465c0693d58afffcd6a704a9b4c0a1875eaeca8c961256e88171b938bba75046",
+      "source_package": "Shipnote-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68533565d6820c5fcdf090997fc46f4eeb4ff56b4b7b6799d6541b07b197c35b": {
+      "description_zh": "查看历史 Shipnote 帖子，默认显示当天的记录。",
+      "source": "View your past Shipnote posts. Shows today's posts by default.",
+      "source_sha256": "68533565d6820c5fcdf090997fc46f4eeb4ff56b4b7b6799d6541b07b197c35b",
+      "source_path": "skills/shipnote-log/SKILL.md",
+      "package_sha256": "465c0693d58afffcd6a704a9b4c0a1875eaeca8c961256e88171b938bba75046",
+      "source_package": "Shipnote-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3e1286890b3b3cef06e3c14f7fae325a0a8b6c325895409561d92e553dcfee6": {
+      "description_zh": "安排、列出和管理未来发布的草稿帖子。通过 /shipnote-schedule 查看待发内容、按日期添加帖子或移除已安排的帖子。",
+      "source": "Schedule, list, and manage draft posts for future publishing. Use /shipnote-schedule to see upcoming posts, add new ones with a date, or remove scheduled posts.",
+      "source_sha256": "c3e1286890b3b3cef06e3c14f7fae325a0a8b6c325895409561d92e553dcfee6",
+      "source_path": "skills/shipnote-schedule/SKILL.md",
+      "package_sha256": "465c0693d58afffcd6a704a9b4c0a1875eaeca8c961256e88171b938bba75046",
+      "source_package": "Shipnote-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b9036218771ad96c1205e05416e61021a78f0ceefc2042f95cc9bdbffa51ce5": {
+      "description_zh": "配置 Shipnote 的语气、发布平台、仓库路径和其他偏好。",
+      "source": "Configure Shipnote — set your tone, platform, repos path, and preferences",
+      "source_sha256": "8b9036218771ad96c1205e05416e61021a78f0ceefc2042f95cc9bdbffa51ce5",
+      "source_path": "skills/shipnote-setup/SKILL.md",
+      "package_sha256": "465c0693d58afffcd6a704a9b4c0a1875eaeca8c961256e88171b938bba75046",
+      "source_package": "Shipnote-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a29a89503919c1ce14330daff6a22ab8c18804a143b299698e245eeab4fb011": {
+      "description_zh": "扫描各 Git 仓库的近期开发活动，生成可直接发布到 Threads 的公开构建进展帖子。",
+      "source": "Generate a build-in-public post from your recent git activity. Scans all your repos and creates a ready-to-post Threads update.",
+      "source_sha256": "8a29a89503919c1ce14330daff6a22ab8c18804a143b299698e245eeab4fb011",
+      "source_path": "skills/shipnote/SKILL.md",
+      "package_sha256": "465c0693d58afffcd6a704a9b4c0a1875eaeca8c961256e88171b938bba75046",
+      "source_package": "Shipnote-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a66ad54a5f296550012b690da1a2777f6647068a67a589959e4daaee20bb2b8": {
+      "description_zh": "通过 Shippo API 验证、解析并标准化配送地址。",
+      "source": "Validate, parse, and standardize shipping addresses via the Shippo API",
+      "source_sha256": "3a66ad54a5f296550012b690da1a2777f6647068a67a589959e4daaee20bb2b8",
+      "source_path": "skills/address-validation/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f2b08625982f90181c20b420fd7f7d41323490b56d29edbc44fd92bc8acfd64": {
+      "description_zh": "通过 Shippo API 从 CSV 批量处理货件，创建和购买批量运输标签，并生成日终交接清单。",
+      "source": "Process bulk shipments from CSV files, create and purchase batch labels, and generate end-of-day manifests via the Shippo API",
+      "source_sha256": "5f2b08625982f90181c20b420fd7f7d41323490b56d29edbc44fd92bc8acfd64",
+      "source_path": "skills/batch-shipping/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2aa20997748531076cabafa8574d1478287f7b32927afd6f8d6a9eeb477af855": {
+      "description_zh": "通过 Shippo API 购买国内或国际运输标签，处理报关、退货标签以及标签作废和退款。",
+      "source": "Purchase domestic and international shipping labels, handle customs declarations, return labels, and void/refund labels via the Shippo API",
+      "source_sha256": "2aa20997748531076cabafa8574d1478287f7b32927afd6f8d6a9eeb477af855",
+      "source_path": "skills/label-purchase/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32f936667bf36ed6776d1d1047cd1e7e699da4257422d8851b87623cccbb3acf": {
+      "description_zh": "通过 Shippo API 比较多承运商运价，筛选最低成本或最快方案并提出配送建议。",
+      "source": "Compare multi-carrier shipping rates, find cheapest/fastest options, and get shipping recommendations via the Shippo API",
+      "source_sha256": "32f936667bf36ed6776d1d1047cd1e7e699da4257422d8851b87623cccbb3acf",
+      "source_path": "skills/rate-shopping/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "606cba690031b7fcd6151cb90b22dff24b916309b153f7ae8d6c9f59ed6c69d4": {
+      "description_zh": "通过 Shippo API 分析配送成本、比较承运商、优化包裹尺寸并复核历史配送支出。",
+      "source": "Analyze shipping costs, compare carriers, optimize package dimensions, and review historical shipping spend via the Shippo API",
+      "source_sha256": "606cba690031b7fcd6151cb90b22dff24b916309b153f7ae8d6c9f59ed6c69d4",
+      "source_path": "skills/shipping-analysis/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dcfef252a1bfe382f0351a7d5e4ad49f934578b3800f5015d4d91ec98093e422": {
+      "description_zh": "指导 Shippo 集成选型，在结账运价、完整 Shipments+Transactions 和批处理之间选择，规划地址校验 v1/v2 字段、国内外流程、报关及贸易术语、标签格式与 webhook。适用于结账、批量履约、标签、追踪、海关处理及订阅集成的规划、开发和审查。",
+      "source": "Guides Shippo integration decisions, choosing between Rates at Checkout vs. full Shipments+Transactions vs. Batch processing, address validation strategy (v1 vs v2 fields), domestic vs international workflows (customs declarations, incoterms), label format selection, and webhook setup. Use when planning, building, or reviewing any Shippo integration, including building checkout flows, bulk fulfillment pipelines, address validation, label generation, package tracking, customs handling, or webhook subscriptions.",
+      "source_sha256": "dcfef252a1bfe382f0351a7d5e4ad49f934578b3800f5015d4d91ec98093e422",
+      "source_path": "skills/shippo-best-practices/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f2c4e61f22a737a198bdec319d847891225bb30256f0b075b0c6cd536ded5a4": {
+      "description_zh": "为单个货件或标签生成可粘贴的 Shippo 支持工单。按追踪号及承运商、标签交易号或货件号，自动分类丢失延迟、未使用标签退款、费用调整、地址、海关、账号或追踪 webhook 问题，执行对应只读查询并计算处置时间线，输出支持消息及带分流标签的 JSON。",
+      "source": "Generate a complete, auto-classified, ready-to-paste Shippo support ticket for a single shipment or label. Use when a support agent or customer needs to escalate a shipping issue (lost/delayed package, unused-label refund, billing/rate adjustment, address exception, customs hold, carrier-account, or tracking-webhook problem). Given a tracking number + carrier, a transaction (label) ID, or a shipment ID, it classifies the issue, runs the right read-only Shippo MCP lookups, computes the triage timeline, and emits both a copy-paste support message and a routing-tagged JSON block so the ticket lands in the right pipeline first time.",
+      "source_sha256": "6f2c4e61f22a737a198bdec319d847891225bb30256f0b075b0c6cd536ded5a4",
+      "source_path": "skills/shippo-support-ticket/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4bfbcb695a6121f0b28ef499d0794ddaefcf93d97ecf7cca0367096c75e61c4a": {
+      "description_zh": "通过 Shippo API 跨承运商追踪包裹、查看追踪历史并设置追踪 webhook。",
+      "source": "Track packages across carriers, view tracking history, and set up tracking webhooks via the Shippo API",
+      "source_sha256": "4bfbcb695a6121f0b28ef499d0794ddaefcf93d97ecf7cca0367096c75e61c4a",
+      "source_path": "skills/tracking/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e15aa13863d1bdea93392e9c08c318ada9c66cc8887e8e9197650433ab64789e": {
+      "description_zh": "指导 Shippo API 版本变更、webhook 数据版本及托管 MCP 服务的更新机制。适用于向后兼容、新增字段、OAuth 或版本不匹配故障，以及变更前审查已有集成。",
+      "source": "Guide for Shippo API version changes, webhook payload versioning, and how the hosted MCP server handles updates. Use when reasoning about backward compatibility, handling new fields in webhook payloads or API responses, troubleshooting OAuth/version-mismatch errors against the hosted MCP, or auditing an existing Shippo integration before a change.",
+      "source_sha256": "e15aa13863d1bdea93392e9c08c318ada9c66cc8887e8e9197650433ab64789e",
+      "source_path": "skills/upgrade-shippo/SKILL.md",
+      "package_sha256": "bd066e53463b538249a985844d258d6aa7efaae4619ee897c64890efda82945f",
+      "source_package": "Shippo-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "991e2756d058a4143df54ba36ed32395272c347fbe0f4864c046079dfab598b2": {
+      "description_zh": "扫描已连接电脑的下载、桌面、文档、指定目录或整个本地磁盘，了解用户实际整理习惯，提出按主题分类的文件结构，供用户审核并选择性批准后才执行。适用于文件混乱、下载整理或电脑目录清理。",
+      "source": "Scans a linked computer's messy folders (Downloads, Desktop, Documents, a named folder, or the entire local drive), learns how the user actually organises their information, and proposes a topic based file structure for the user to review and selectively approve before anything is touched. Use when the user says things like \"organize my files\", \"clean up my downloads\", \"declutter my laptop\", \"sort my files\", \"tidy up my desktop/folders\", \"my files are a mess\", or \"help me organize my computer\".",
+      "source_sha256": "991e2756d058a4143df54ba36ed32395272c347fbe0f4864c046079dfab598b2",
+      "source_path": "skills/declutter/SKILL.md",
+      "package_sha256": "dedf7c87577474c1d92b7a7a35c383e0ce73c978c4f223f329d8915287a9335b",
+      "source_package": "Shipshape-0.4.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd748c82a26905a279cdf489b2242be5153b6742a688decafd41d089d32a1021": {
+      "description_zh": "逆序回放磁盘上的操作清单，撤销 Shipshape 整理任务的全部、指定目录或阶段，也可永久清空该任务留下的垃圾区。适用于恢复文件、撤销清理或清空 Shipshape 垃圾区。",
+      "source": "Reverses a previous Shipshape declutter run, in whole or scoped to just one folder or phase, by replaying its on-disk manifest backwards, and can permanently empty the trash a run left behind. Use when the user says things like \"undo the last cleanup\", \"undo what shipshape did\", \"put those files back\", \"rewind [a folder]\", \"that wasn't right, can you reverse it\", or \"empty the shipshape trash\".",
+      "source_sha256": "dd748c82a26905a279cdf489b2242be5153b6742a688decafd41d089d32a1021",
+      "source_path": "skills/undo/SKILL.md",
+      "package_sha256": "dedf7c87577474c1d92b7a7a35c383e0ce73c978c4f223f329d8915287a9335b",
+      "source_package": "Shipshape-0.4.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca19c09220201ae890ab4f0f5705e490f907aa9b954bd46b15753a235206d308": {
+      "description_zh": "根据提交记录为网站顶部生成 Shipstar 公告横条，包含标题、一句说明和行动入口，突出本期主要变化，经审核后发布并按周或月自动更新。支持 MCP 生成、单个脚本嵌入或 API 服务端渲染及定时配置。",
+      "source": "Put a Shipstar announcement banner at the top of the user's website: a one-line bar (headline, one sentence, call-to-action) announcing the most impactful change of the period, generated from their commits, reviewed, published, and auto-updated by a weekly or monthly schedule. Covers generating the first banner over MCP, embedding it with one script tag (or rendering it server-side from the API), and setting up the schedule. Use when the user wants to highlight what shipped at the top of their site, asks for an announcement bar / site banner / \"what's new\" strip, or wants visitors to notice a feature this week or this month.",
+      "source_sha256": "ca19c09220201ae890ab4f0f5705e490f907aa9b954bd46b15753a235206d308",
+      "source_path": "skills/add-announcement-banner/SKILL.md",
+      "package_sha256": "0014e62da5c307226ccb9ce4eaf3a8b21e46814e2d374a242a8de3267e81438c",
+      "source_package": "Shipstar-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6f99eb33c68b5e2e4ddd89a801c80a2b9f586d13cf3033920c73284ea3f7b93": {
+      "description_zh": "通过 Shipstar 从近期提交生成变更日志和版本通知邮件，与用户复核草稿后发布并发送给订阅者。适用于版本发布或上线公告及发布营销，要求连接 Shipstar MCP。",
+      "source": "Announce a release with Shipstar: generate a changelog and release-notes email from recent commits, review the drafts with the user, then publish and email subscribers. Use when the user says they shipped, released, or launched something and wants it announced, or asks to \"run the release marketing\". Requires the Shipstar MCP server to be connected.",
+      "source_sha256": "f6f99eb33c68b5e2e4ddd89a801c80a2b9f586d13cf3033920c73284ea3f7b93",
+      "source_path": "skills/announce-release/SKILL.md",
+      "package_sha256": "0014e62da5c307226ccb9ce4eaf3a8b21e46814e2d374a242a8de3267e81438c",
+      "source_package": "Shipstar-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "603689f660abef1e8e1a8296b0d6b9b4556b286931cefdcee67fbdd8c11b8efe": {
+      "description_zh": "依据 Shipstar 变更日志数据，在自有域名构建服务端渲染且可被爬虫和智能体读取的页面，提供分期永久链接、RSS、结构化数据、标题描述、Open Graph、爬虫策略及 llms.txt。要求 API 令牌，可用于各类服务端渲染技术栈；排名和引用效果为原说明所述目标，需实际验证。",
+      "source": "Build a server-rendered, agent-readable changelog page on the user's own website from their Shipstar changelog data: semantic HTML crawlers and answer engines can actually read, per-period permalink pages, an RSS feed, structured data, and the SEO / AEO layer (titles, descriptions, Open Graph, crawler policy, llms.txt, answer-shaped copy) that makes it rank and get cited. Use when the user wants their changelog on their own domain, asks to make their changelog crawlable / SEO-friendly / readable by AI agents, or notes that the embed widget renders nothing for search engines. Requires a Shipstar API token; works in any server-rendering web stack (examples assume Next.js-style ISR).",
+      "source_sha256": "603689f660abef1e8e1a8296b0d6b9b4556b286931cefdcee67fbdd8c11b8efe",
+      "source_path": "skills/build-changelog-page/SKILL.md",
+      "package_sha256": "0014e62da5c307226ccb9ce4eaf3a8b21e46814e2d374a242a8de3267e81438c",
+      "source_package": "Shipstar-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75833e43fa0a2682aa1a6bc05564b090006ab3898efef27ded217c0a5d17705f": {
+      "description_zh": "通过 Shipstar 为项目邮件列表发送版本通知，从近期提交生成邮件、与用户复核、选择列表并发送，处理一键退订。适用于向客户或用户通知发布，要求 Shipstar MCP。",
+      "source": "Send a release-notes email to the project's mailing lists via Shipstar: generate the email from recent commits, review it with the user, pick the lists, and send with one-click unsubscribe handling. Use when the user wants to email customers/users about a release or send release notes. Requires the Shipstar MCP server.",
+      "source_sha256": "75833e43fa0a2682aa1a6bc05564b090006ab3898efef27ded217c0a5d17705f",
+      "source_path": "skills/email-your-users/SKILL.md",
+      "package_sha256": "0014e62da5c307226ccb9ce4eaf3a8b21e46814e2d374a242a8de3267e81438c",
+      "source_package": "Shipstar-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2183034e719b716c7c76dd7c2e2a8d14694e6ac09d47a61fa65d12a78f01d1e7": {
+      "description_zh": "将智能体连接到 Shipstar，并验证项目是否具备自动发布营销条件。适用于初始设置、MCP 连接或其他技能因连接及项目配置不完整而失败。",
+      "source": "Connect this agent to Shipstar and verify the project is ready for automated release marketing. Use when the user wants to set up Shipstar, connect the Shipstar MCP server, or when another Shipstar skill fails because the MCP connection or project setup is incomplete.",
+      "source_sha256": "2183034e719b716c7c76dd7c2e2a8d14694e6ac09d47a61fa65d12a78f01d1e7",
+      "source_path": "skills/setup-shipstar/SKILL.md",
+      "package_sha256": "0014e62da5c307226ccb9ce4eaf3a8b21e46814e2d374a242a8de3267e81438c",
+      "source_package": "Shipstar-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f243143c2ac41b29aa45285b6c966f6c201bcc8da208c6d26b1b3f16e746d87e": {
+      "description_zh": "通过 Shipstar 依据近期开发工作撰写并发布博客，从提交中探索角度、生成草稿、与用户修订后发布。适用于开发博客或构建进展文章，要求 Shipstar MCP。",
+      "source": "Write and publish a blog post from recent development work using Shipstar: brainstorm angles from commits, generate a draft, revise it with the user, and publish. Use when the user wants a blog post, dev-blog entry, or article about what they've been building. Requires the Shipstar MCP server.",
+      "source_sha256": "f243143c2ac41b29aa45285b6c966f6c201bcc8da208c6d26b1b3f16e746d87e",
+      "source_path": "skills/write-blog-post/SKILL.md",
+      "package_sha256": "0014e62da5c307226ccb9ce4eaf3a8b21e46814e2d374a242a8de3267e81438c",
+      "source_package": "Shipstar-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da97048a96620c3809def8982bac5e4889af146e8f537215ef3b1d476373adb6": {
+      "description_zh": "按分支决定审查范围：在 main 扫描整个项目并创建跟踪 issue；在功能分支限定差异范围，自动修复并暂存修改。",
+      "source": "Branch-aware audit orchestrator. On main — scans whole project, opens tracker issue. On feature branch — scopes to diff, auto-fixes, stages changes.",
+      "source_sha256": "da97048a96620c3809def8982bac5e4889af146e8f537215ef3b1d476373adb6",
+      "source_path": "skills/audit-full/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d1eda5b57c0bbf778b12301e1633cdd48e479f2ac4f35a9d93c30a3d89f736c": {
+      "description_zh": "先确定设计方向，再实现具有辨识度的生产级前端界面。原说明明确排斥紫色渐变、Inter 字体和玻璃拟态等泛化 AI 风格。",
+      "source": "Create distinctive, production-grade frontend interfaces. Rejects generic AI aesthetics (purple gradients, Inter font, glassmorphism). Design direction first, then implementation.",
+      "source_sha256": "6d1eda5b57c0bbf778b12301e1633cdd48e479f2ac4f35a9d93c30a3d89f736c",
+      "source_path": "skills/frontend-design/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f4a22677aaf34649f80fb69891cef8b4def62ce42db276fb31ac0c870e7c8ed": {
+      "description_zh": "等待当前 PR 的所有 CI 检查通过后 squash 合并，删除分支并切回 main。",
+      "source": "Merge current PR after CI passes. Waits for all checks, squash merges, deletes branch, switches to main.",
+      "source_sha256": "3f4a22677aaf34649f80fb69891cef8b4def62ce42db276fb31ac0c870e7c8ed",
+      "source_path": "skills/merge-pr/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "24acc08df7a430b73abbcead9904c74e77e2dee9f226af003ec8291509847621": {
+      "description_zh": "通过子智能体并行开发多个文件或页面，负责任务拆分、共享文件协调和构建验证；避免冲突属于原说明的设计目标。",
+      "source": "Build multiple files/pages in parallel using subagents. Handles task division, shared file coordination, and build verification. Conflict-free by design.",
+      "source_sha256": "24acc08df7a430b73abbcead9904c74e77e2dee9f226af003ec8291509847621",
+      "source_path": "skills/parallel-builder/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03d24d7297b705f8f1f4170b6dec21fedccba526a021960231fe209985053106": {
+      "description_zh": "执行提交、推送及自动创建 PR，推送前运行预检关卡，并阻止直接推送 main。",
+      "source": "Smart commit + push + auto-create PR. Blocks push to main. Runs pre-flight gate checks before pushing.",
+      "source_sha256": "03d24d7297b705f8f1f4170b6dec21fedccba526a021960231fe209985053106",
+      "source_path": "skills/push/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7473de19f7ada33c7d2cbc40fc049bfd203c36beff3ad74c0b35dd59de36b20b": {
+      "description_zh": "自动循环执行代码评审、修复和再评审，直至评分超过 9 或最多三轮；只修复严重、主要及警告项，建议项暂缓。",
+      "source": "Automated code review → fix → re-review loop. Runs until score >9 or max 3 rounds. Fixes Critical/Major/Warnings only — Suggestions are deferred.",
+      "source_sha256": "7473de19f7ada33c7d2cbc40fc049bfd203c36beff3ad74c0b35dd59de36b20b",
+      "source_path": "skills/review-code-fix/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c4682aba04cadf78b1cb7c4a7b6f262c5c0a94b7fe5c30644aa3ae50ac922c0": {
+      "description_zh": "在 /update-docs 后验证 Phase D 文档更新，以通过或失败判断统计准确性、路径有效性、代码文档同步及完整性。",
+      "source": "Verify Phase D doc updates are accurate. Binary pass/fail gate — checks stat accuracy, file path validity, code-doc sync, completeness. Runs after /update-docs.",
+      "source_sha256": "4c4682aba04cadf78b1cb7c4a7b6f262c5c0a94b7fe5c30644aa3ae50ac922c0",
+      "source_path": "skills/review-docs/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ea2060d7766cd114db4ec47b93c27b6a500aa2d30f8564dae05720f3aea7640": {
+      "description_zh": "依据差异自动识别前端、后端、文档或混合范围，分派对应修复循环直到全部关卡通过；作为 /ship 的 Phase R 评审入口。",
+      "source": "Smart review dispatcher. Auto-detects scope from diff (frontend/backend/docs/both), runs the right fix loops until all gates pass. Used as Phase R entry point in /ship.",
+      "source_sha256": "3ea2060d7766cd114db4ec47b93c27b6a500aa2d30f8564dae05720f3aea7640",
+      "source_path": "skills/review-full/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09d264e0c8e545d51695ff80a31d9072590fcf972d884c5550638febe7910d6f": {
+      "description_zh": "自动循环执行 UX 评审、修复和再评审，以 10/10 为目标，处理包括建议在内的全部严重等级。",
+      "source": "Automated UX review → fix → re-review loop. Target is perfection (10/10). Fixes ALL severities including Suggestions — because UX polish compounds.",
+      "source_sha256": "09d264e0c8e545d51695ff80a31d9072590fcf972d884c5550638febe7910d6f",
+      "source_path": "skills/review-ux-fix/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f71cd2904c06b80b151ed136c0d562556874d8b53fa95f1e1326265d50bbd6ff": {
+      "description_zh": "串联审查、评审修复、文档更新和推送 PR，将编码完成推进到可评审的 PR。该流程不部署，合并后的部署由 CI/CD 处理。",
+      "source": "Full pipeline — audit, review+fix, docs, push PR. One command to go from \"done coding\" to \"PR ready for review.\" Does NOT deploy — your CI/CD handles that after merge.",
+      "source_sha256": "f71cd2904c06b80b151ed136c0d562556874d8b53fa95f1e1326265d50bbd6ff",
+      "source_path": "skills/ship/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eed963be9631d4fa40b9db67b6e9591e5abdac057528abcacfdf1fd84acb62e2": {
+      "description_zh": "指导创建有效的 Claude Code 技能，涵盖结构组成、渐进式信息披露、验证和打包。",
+      "source": "Meta-skill that teaches how to create effective Claude Code skills. Covers anatomy, progressive disclosure, validation, and packaging.",
+      "source_sha256": "eed963be9631d4fa40b9db67b6e9591e5abdac057528abcacfdf1fd84acb62e2",
+      "source_path": "skills/skill-creator/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f56cb50df2dc0f1db799eed6328a785e19702749d429f06062d6a37c5c0bd6d": {
+      "description_zh": "依据 Git 差异自动识别范围，将代码变化同步到核心、架构、用户旅程及配置四级文档，并验证统计数据；属于 /ship 流程的 Phase D。",
+      "source": "Sync documentation with code changes. Auto-detects scope from git diff, updates tier 1-4 docs (core, architecture, journey, config), verifies stats. Phase D of /ship pipeline.",
+      "source_sha256": "2f56cb50df2dc0f1db799eed6328a785e19702749d429f06062d6a37c5c0bd6d",
+      "source_path": "skills/update-docs/SKILL.md",
+      "package_sha256": "3ac3c4773ea6cd9a440d9db074ef187c751e0dfeb58e056aafc3ea5a419d4596",
+      "source_package": "shipwright-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d031df5c0652c744f9ea5c263a05f49403c007c23006c8384bdcca4c4be058d5": {
+      "description_zh": "在 SDD 经 /shipwright:design 加固并获批后，将其拆为最多八个按依赖排序的原子任务，创建 Claude Code 任务、可选 Jira 子任务，并写入 task_state.json。未完成设计加固的 SDD 会被拒绝。",
+      "source": "Decompose a hardened SDD into at most 8 atomic, dependency-ordered tasks, create them as Claude Code tasks and (optionally) Jira subtasks, and write task_state.json. Refuses SDDs that have not been through /shipwright:design hardening. Use after an SDD is approved as a design.",
+      "source_sha256": "d031df5c0652c744f9ea5c263a05f49403c007c23006c8384bdcca4c4be058d5",
+      "source_path": "skills/breakdown/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52375fee92608e62d929f26620a51a1a4ffa8f5e016bbf59d566749ae09b28c2": {
+      "description_zh": "查看、写入或清除 Shipwright 恢复检查点，也可清除当前计划。适用于保存进度、丢弃被中断会话或放弃任务计划。",
+      "source": "Show, write, or clear shipwright's resume checkpoint, or clear the current plan. Use when the user asks to save progress, discard an interrupted session, or abandon the current task plan.",
+      "source_sha256": "52375fee92608e62d929f26620a51a1a4ffa8f5e016bbf59d566749ae09b28c2",
+      "source_path": "skills/checkpoint/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd81b5c58f74e65de111ed1e16b2cbc02e98ff2e297404c0ef9bc948ffc914f5": {
+      "description_zh": "打开 Shipwright 只读流程仪表盘，查看风险、任务、修订、预算、模式和收件箱，并指出需采取行动的事项。适用于进度或流程概览。",
+      "source": "Open the read-only shipwright pipeline dashboard (risks, tasks, amendments, budget, patterns, inbox) and call out anything that needs action. Use when the user asks for status, the dashboard, or an overview of the pipeline.",
+      "source_sha256": "bd81b5c58f74e65de111ed1e16b2cbc02e98ff2e297404c0ef9bc948ffc914f5",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b22ff7c9619084390073c9fc4f9cb05f93d804fac0def20fec20edde1a399c78": {
+      "description_zh": "诊断 Shipwright 安装，检查 Python 版本、framework.json、测试/lint/类型检查/构建命令是否实际可运行，以及 Jira、状态栏和旧版 hook 配置。适用于流程不触发或安装后检查。",
+      "source": "Diagnose a shipwright installation — Python version, framework.json, whether the configured test/lint/typecheck/build commands actually run, Jira config, statusline wiring, and legacy hook wiring. Use when something in the pipeline seems not to fire, or after setup.",
+      "source_sha256": "b22ff7c9619084390073c9fc4f9cb05f93d804fac0def20fec20edde1a399c78",
+      "source_path": "skills/doctor/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d3ed51f62fd1f1f7fecaa821835ed89ba17131b44696a43542aca12d3e31d57": {
+      "description_zh": "在当前项目设置 Shipwright，识别技术栈，写入 .claude/framework.json 及状态文件、连接预算状态栏、初始化 CLAUDE.md，可选提交团队设置并迁移旧版复制安装的 hook。适用于安装、初始配置、团队接入或迁移。",
+      "source": "Set up shipwright in the current project in one step — detects the stack, writes .claude/framework.json and state files, wires the budget statusline, seeds CLAUDE.md, optionally commits team settings so every teammate gets the plugin, and migrates legacy copy-installed hooks. Use when the user wants to install, set up, onboard, or migrate shipwright.",
+      "source_sha256": "5d3ed51f62fd1f1f7fecaa821835ed89ba17131b44696a43542aca12d3e31d57",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a6309d726f225c76d845a4c4e77b775150a46303ab381612aaa4bbf9e798170": {
+      "description_zh": "将项目决策、更正、反模式或约定保存为持久记忆，由 Shipwright 在会话开始和设计阶段重新注入。适用于用户要求记住信息，或需记录模式告警及已暂存的风格更正。",
+      "source": "Save a durable project learning — a decision, a correction, an anti-pattern, or a convention — as a memory that shipwright re-injects at session start and design time. Use when the user says remember this, or when a pattern alert or staged style correction needs to be written down.",
+      "source_sha256": "9a6309d726f225c76d845a4c4e77b775150a46303ab381612aaa4bbf9e798170",
+      "source_path": "skills/remember/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b39d9b2dca5575a230bd542ea9fe7c10f1ce8222b7b14b40f90896f9ab19091": {
+      "description_zh": "从 .claude/checkpoint.json 恢复被中断的 Shipwright 工作，报告停止位置、确认预算窗口已重置，并执行记录的下一步。",
+      "source": "Continue interrupted shipwright work from .claude/checkpoint.json — reports where it stopped, checks the budget window has reset, and picks up the literal next action. Use when the user says resume, continue, or pick up where we left off.",
+      "source_sha256": "1b39d9b2dca5575a230bd542ea9fe7c10f1ce8222b7b14b40f90896f9ab19091",
+      "source_path": "skills/resume/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd38088690bd5e6b1dabed6b526bc188a49571ff509c326fb1ddf0a683368e80": {
+      "description_zh": "在功能实现结束后开展结构化复盘，对照计划与提交、提出四个问题、写入持久记忆、向 CLAUDE.md 追加经验、标记过期记忆，并仅评论 Jira 而不变更状态。适用于用户复盘或全部任务完成。",
+      "source": "Structured feature retrospective once implementation finishes — diffs plan vs. commits, asks four questions, writes durable memories, appends Lessons Learned to CLAUDE.md, flags stale memories, and comments (never transitions) on Jira. Use when the user wants a retro or when all shipwright tasks are complete.",
+      "source_sha256": "bd38088690bd5e6b1dabed6b526bc188a49571ff509c326fb1ddf0a683368e80",
+      "source_path": "skills/retro/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f904a100f3805643462341cf0fd2ba691cf8083aed1587a6f92f091990a8a261": {
+      "description_zh": "依据 SDD 和已批准的 .claude/task_state.json 逐项实现 Shipwright 计划，在实现和缺陷修复循环中保持推进，同时暂存设计修订并记录检查点。适用于已具备设计和任务清单的功能构建或继续实施。",
+      "source": "Implement an approved shipwright plan task by task from its SDD, staying in the implement-bug-fix loop without process interruptions while silently staging design amendments and checkpointing. Use when the user says to implement, build, or continue a feature that has an SDD and an approved task list in .claude/task_state.json.",
+      "source_sha256": "f904a100f3805643462341cf0fd2ba691cf8083aed1587a6f92f091990a8a261",
+      "source_path": "skills/sdd-implementer/SKILL.md",
+      "package_sha256": "cea6a8a520178f9e64613f020e0eb9a6b621b36b10278d9cce3c912dc9303d01",
+      "source_package": "Shipwright-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12ba3b63aa3f9c426c2585fdab7bb4aae62b0a3a8144a4a6d5dad4c10b975012": {
+      "description_zh": "审查泰语 Shopee 商品标题和描述草稿，检查母语表达自然度、行业术语准确性及 Shopee 泰国搜索优化。",
+      "source": "Use when reviewing draft Shopee product titles and descriptions in Thai. Covers naturalness for Thai native speakers, industry-specific terminology accuracy, and SEO optimization for Shopee Thailand search.",
+      "source_sha256": "12ba3b63aa3f9c426c2585fdab7bb4aae62b0a3a8144a4a6d5dad4c10b975012",
+      "source_path": "skills/shopee-review/SKILL.md",
+      "package_sha256": "11fabd95244885c8349ba452a72baee37504ecfcd6b65695bd0b5cc39ed57f4d",
+      "source_package": "shopee-review-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70577bb71ce0750884ceef724cda3903ef5e157f3bb470a955e83535d17e5685": {
+      "description_zh": "生成符合惯用写法的 Shopify Admin API GraphQL 查询或 mutation，包含游标分页、片段及正确权限。适用于列出商品或订单、设计查询及更新店铺数据操作。",
+      "source": "Generate an idiomatic Shopify Admin API GraphQL query or mutation with cursor pagination, fragments, and the correct permissions. Use when the user asks to query the Admin API, list products or orders, build a GraphQL query for Shopify, or write a mutation to update shop data.",
+      "source_sha256": "70577bb71ce0750884ceef724cda3903ef5e157f3bb470a955e83535d17e5685",
+      "source_path": "skills/admin-api-query/SKILL.md",
+      "package_sha256": "9a69d2647694bc41b6acc1a2fe0ebd0ea750117b93db8c7775d4165cede6b37c",
+      "source_package": "Shopify DevKit-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56da857ff9cf7f46cd05e7c2911d526447d14f9041a46e5e101029d7993863d1": {
+      "description_zh": "生成 Shopify 结账 UI 扩展骨架，包含 extension.toml 和 src/Checkout.jsx。适用于结账页横幅、输入框、加购组件或新扩展项目。",
+      "source": "Scaffold a Shopify checkout UI extension with extension.toml and src/Checkout.jsx. Use when the user asks to create a checkout extension, add a banner or input to the checkout page, build an upsell widget for checkout, or scaffold a Shopify checkout UI extension.",
+      "source_sha256": "56da857ff9cf7f46cd05e7c2911d526447d14f9041a46e5e101029d7993863d1",
+      "source_path": "skills/checkout-ui-ext/SKILL.md",
+      "package_sha256": "9a69d2647694bc41b6acc1a2fe0ebd0ea750117b93db8c7775d4165cede6b37c",
+      "source_package": "Shopify DevKit-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "728f8dfe451e3d46e5f64bc568cfe26f8f03d2bb043b0289f4f5426c92ce8bff": {
+      "description_zh": "为 Shopify Online Store 2.0 主题生成 Liquid section，包含可在主题编辑器中使用的设置 schema、blocks 和 presets。适用于主视觉、精选商品集合或自定义主题区块。",
+      "source": "Generate a Liquid section for a Shopify Online Store 2.0 theme with a settings schema, blocks, and presets that appear in the theme editor. Use when the user asks to create a new section, add a hero or featured collection, build a custom section, or scaffold a Liquid section file.",
+      "source_sha256": "728f8dfe451e3d46e5f64bc568cfe26f8f03d2bb043b0289f4f5426c92ce8bff",
+      "source_path": "skills/liquid-section/SKILL.md",
+      "package_sha256": "9a69d2647694bc41b6acc1a2fe0ebd0ea750117b93db8c7775d4165cede6b37c",
+      "source_package": "Shopify DevKit-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e7522b178e4ee2f941904cd4193981fec45b33b7993d879c34143470d326ff1": {
+      "description_zh": "以 Rust 或 JavaScript 生成 Shopify Function 骨架，支持商品折扣、购物车转换、配送或支付定制，输出 shopify.extension.toml、输入 GraphQL 查询和运行入口。",
+      "source": "Scaffold a Shopify Function (product discount, cart transform, delivery customization, or payment customization) in Rust or JavaScript. Generates shopify.extension.toml, the input GraphQL query, and the run entry point. Use when the user asks to create a Shopify Function, a product discount function, a cart transform, a delivery customization, or a payment customization.",
+      "source_sha256": "6e7522b178e4ee2f941904cd4193981fec45b33b7993d879c34143470d326ff1",
+      "source_path": "skills/shopify-function/SKILL.md",
+      "package_sha256": "9a69d2647694bc41b6acc1a2fe0ebd0ea750117b93db8c7775d4165cede6b37c",
+      "source_package": "Shopify DevKit-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbf2824468c52f0ce7ac994e8b1462e00aebdba3d07338e6455a5fb05c350b1f": {
+      "description_zh": "审查 Shopify 主题的阻塞渲染 Liquid、缺少 asset_url 过滤器、用户数据未转义输出、图片过大、section 过多及表单无障碍属性缺失。适用于性能、安全或部署前检查。",
+      "source": "Audit a Shopify theme for render-blocking Liquid, missing asset_url filters, direct output of user data without escape, oversized image uploads, excessive section count, and missing accessibility attributes on forms. Use when the user asks to audit a theme, review a theme for performance or security, find Liquid issues, or check a theme before deploying.",
+      "source_sha256": "bbf2824468c52f0ce7ac994e8b1462e00aebdba3d07338e6455a5fb05c350b1f",
+      "source_path": "skills/theme-audit/SKILL.md",
+      "package_sha256": "9a69d2647694bc41b6acc1a2fe0ebd0ea750117b93db8c7775d4165cede6b37c",
+      "source_package": "Shopify DevKit-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd4d9179ee36bcdd13bc5144a5e8409a8cd7a942f447fd2b92cfedb7195c6639": {
+      "description_zh": "初始化 Shopify Online Store 2.0 主题目录，提供 assets、config、layout、locales、sections、snippets、templates、blocks 完整结构、初始 settings_schema.json 和可运行的 layout/theme.liquid。",
+      "source": "Scaffold a Shopify Online Store 2.0 theme directory with the full folder layout (assets, config, layout, locales, sections, snippets, templates, blocks), a starter settings_schema.json, and a working layout/theme.liquid. Use when the user asks to start a new Shopify theme, create an OS 2.0 theme skeleton, or initialize a Shopify theme project.",
+      "source_sha256": "fd4d9179ee36bcdd13bc5144a5e8409a8cd7a942f447fd2b92cfedb7195c6639",
+      "source_path": "skills/theme-init/SKILL.md",
+      "package_sha256": "9a69d2647694bc41b6acc1a2fe0ebd0ea750117b93db8c7775d4165cede6b37c",
+      "source_package": "Shopify DevKit-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b850537324cd8aa8e4ef402a9c215b592cc7412183670199f8d3b57f29f0168": {
+      "description_zh": "编写或解释扩展 Shopify 管理端的 Admin GraphQL 查询和 mutation，适用于理解、设计和生成操作。应用收费通常先用 app-pricing，现有 Manual Pricing 或明确 Billing API 操作可用 Admin；商家商品订阅仍属 Admin。扩展配置校验、CLI 即时执行、店铺认证、标识查找和库存操作先用 use-shopify-cli。",
+      "source": "Write or explain **Admin GraphQL** queries and mutations for apps and integrations that extend the Shopify admin. Use when the user wants to **understand, design, or generate** the operation itself—even before deciding how to run it. Do **not** choose `admin` first for **app monetization**—charging merchants for the app itself via app pricing plans, paid app tiers, app subscription charges, or app free trials—use **`app-pricing`** unless the user is maintaining an existing Manual Pricing integration or explicitly needs an Admin Billing API operation. Merchant **product** subscriptions stay with `admin` (selling plans, subscription contracts, try-before-you-buy). Do **not** choose `admin` first for **app or extension config validation** —use **`use-shopify-cli`**. Do **not** choose `admin` first to **execute** Admin GraphQL **now via Shopify CLI** or for CLI setup/troubleshooting on store workflows—use **`use-shopify-cli`** (store auth/execute, handle/SKU/location lookups, inventory changes).",
+      "source_sha256": "7b850537324cd8aa8e4ef402a9c215b592cc7412183670199f8d3b57f29f0168",
+      "source_path": "skills/shopify-admin/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "29e849dbd6be46abf4feb4f13e4dbd76ac5e13b59cc187568ce362a542b4cc60": {
+      "description_zh": "处理公开 Shopify 应用的收费方案、付费层级、循环订阅、月付年付、用量计费和试用，原说明要求新应用收费需求优先采用 Shopify App Pricing。商家商品的 selling plan 和订阅合同属于 Admin；仅现有 Manual Pricing 或不受支持的收费模型转用 Admin。",
+      "source": "Merchant product subscriptions such as selling plans and subscription contracts use Admin, not App Pricing. For app monetization, MUST be used first for a new public app with pricing plans, paid tiers, recurring subscriptions, monthly or yearly options, usage pricing, or free trials. Shopify App Pricing is the default for supported public-app pricing models. Do not choose Admin GraphQL first merely because an app-monetization request asks for server-side code or mentions billing or subscriptions. Use Admin only for an existing Manual Pricing integration or a pricing model Shopify App Pricing doesn't support.",
+      "source_sha256": "29e849dbd6be46abf4feb4f13e4dbd76ac5e13b59cc187568ce362a542b4cc60",
+      "source_path": "skills/shopify-app-pricing/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7bef01f79995a38105d5dcbde5f754bd5845f1f68707e699f4df5c5e2723b5f8": {
+      "description_zh": "在提交 Shopify App Store 正式审核前，对应用代码库进行合规预检，核对商店要求并提示可能问题。",
+      "source": "Run a pre-submission compliance check against your Shopify app's codebase. Reviews App Store requirements and surfaces likely issues before you submit for official review.",
+      "source_sha256": "7bef01f79995a38105d5dcbde5f754bd5845f1f68707e699f4df5c5e2723b5f8",
+      "source_path": "skills/shopify-app-store-review/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a85da1dae18a8f9eea2cc6cf5b0c1219626e69a534bcfbe5185a9e1110212be": {
+      "description_zh": "通过 Metafields 和 Metaobjects 建模及存储自定义数据。前者扩展商品、客户等内置类型，后者定义专用数据结构，其定义提供值的 schema 和配置；原说明要求相关需求优先采用。",
+      "source": "MUST be used first when prompts mention Metafields or Metaobjects. Use Metafields and Metaobjects to model and store custom data for your app. Metafields extend built-in Shopify data types like products or customers, Metaobjects are custom data types that can be used to store bespoke data structures. Metafield and Metaobject definitions provide a schema and configuration for values to follow.",
+      "source_sha256": "2a85da1dae18a8f9eea2cc6cf5b0c1219626e69a534bcfbe5185a9e1110212be",
+      "source_path": "skills/shopify-custom-data/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c93c85bd403e65aa439c8520d91fb5553dad4533a9c4409275a6d568670fc17d": {
+      "description_zh": "使用 Shopify Customer Account API，让客户访问自己的订单、付款方式和地址等数据。",
+      "source": "The Customer Account API allows customers to access their own data including orders, payment methods, and addresses.",
+      "source_sha256": "c93c85bd403e65aa439c8520d91fb5553dad4533a9c4409275a6d568670fc17d",
+      "source_path": "skills/shopify-customer/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fae3ccf54df94f95e4778f37f8e52a197bafe70e92561676ce1a0f712159d9d": {
+      "description_zh": "跨 Shopify API 搜索开发者文档，仅在没有适用的 API 专项技能时采用。",
+      "source": "Search Shopify developer documentation across all APIs. Use only when no API-specific skill applies.",
+      "source_sha256": "8fae3ccf54df94f95e4778f37f8e52a197bafe70e92561676ce1a0f712159d9d",
+      "source_path": "skills/shopify-dev/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eecda4e99b6947d110a04961f5fdb4aec4fc6095b034d943ceea1bca1c2e1395": {
+      "description_zh": "使用 Shopify Functions 定制平台后端逻辑。原说明列出折扣、购物车及结账校验、购物车转换、取货点配送选项、配送定制、履约约束、本地自提选项、订单路由地点规则和支付定制等 API。",
+      "source": "Shopify Functions allow developers to customize the backend logic that powers parts of Shopify. Available APIs: Discount, Cart and Checkout Validation, Cart Transform, Pickup Point Delivery Option Generator, Delivery Customization, Fulfillment Constraints, Local Pickup Delivery Option Generator, Order Routing Location Rule, Payment Customization",
+      "source_sha256": "eecda4e99b6947d110a04961f5fdb4aec4fc6095b034d943ceea1bca1c2e1395",
+      "source_path": "skills/shopify-functions/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e8aaf1edafcaa835b2140343533be560329422b801a3e504d5bb38bd384daf7": {
+      "description_zh": "提供 Hydrogen 店面实现示例，涵盖 B2B、组合商品、合并商品展示、自定义购物车、Metaobjects 动态内容、Express、Google Tag Manager、无限滚动、旧版客户账号、Markets、Partytown、订阅及第三方 API 查询缓存。原说明要求所有 Hydrogen 问题优先使用本项，而非 Storefront GraphQL。",
+      "source": "Hydrogen storefront implementation cookbooks. Some of the available recipes are: B2B Commerce, Bundles, Combined Listings, Custom Cart Method, Dynamic Content with Metaobjects, Express Server, Google Tag Manager Integration, Infinite Scroll, Legacy Customer Account Flow, Markets, Partytown + Google Tag Manager, Subscriptions, Third-party API Queries and Caching. MANDATORY: Use this API for ANY Hydrogen storefront question - do NOT use Storefront GraphQL when 'Hydrogen' is mentioned.",
+      "source_sha256": "7e8aaf1edafcaa835b2140343533be560329422b801a3e504d5bb38bd384daf7",
+      "source_path": "skills/shopify-hydrogen/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c82fabf910703568bf43fe9ae3b35b75c16be9e09f59ac9c1d6ee614865d75d": {
+      "description_zh": "用于 Shopify Liquid 开源模板语言及主题开发，处理动态店面内容、组件、block、section、snippet 和主题配置 schema。",
+      "source": "Liquid is an open-source templating language created by Shopify. It is the backbone of Shopify themes and is used to load dynamic content on storefronts. Keywords: liquid, theme, shopify-theme, liquid-component, liquid-block, liquid-section, liquid-snippet, liquid-schemas, shopify-theme-schemas",
+      "source_sha256": "2c82fabf910703568bf43fe9ae3b35b75c16be9e09f59ac9c1d6ee614865d75d",
+      "source_path": "skills/shopify-liquid/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15f4462f3f0f92234699a57036697d53ab9b4d7a1ce30d3ff0f9e629478e1581": {
+      "description_zh": "指导开发者开始 Shopify 应用及主题开发，创建开发店、伙伴账号和项目骨架，并选择特定后端语言或框架的官方库。涉及结账、Admin、POS 或客户账号扩展时同时学习对应界面主题；不用于商家经营店铺。",
+      "source": "Get started building on Shopify. Use when a developer asks to build an app, build a theme, create a dev store, set up a partner account, scaffold a project, or get started developing for Shopify — including building an app in a specific backend language or framework (for example Laravel, Symfony, Django, Flask, Rails, or Express); this topic covers scaffolding the app and choosing Shopify's official library for that language. When the prompt also involves an extension surface (checkout, admin, POS, customer accounts), learn this topic **in addition to** the surface topic. NOT for merchants managing stores.",
+      "source_sha256": "15f4462f3f0f92234699a57036697d53ab9b4d7a1ce30d3ff0f9e629478e1581",
+      "source_path": "skills/shopify-onboarding-dev/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06fc6c6f943639fbb08b5c4c89a9de3407f8b4544234933c056be2cc6dea3496": {
+      "description_zh": "指导商家创建和设置 Shopify 店铺，支持无账号预览、浏览 mock.shop 参考店、示例商品、将示例转为真实店铺及预览后的保存保留。开发者仅需免认证参考数据时不创建预览店，除非明确要求复制到 Shopify。预览创建使用 shopify store create preview；应用主题开发和 CLI 排障分别转交专项技能。",
+      "source": "Set up a Shopify store. Use whenever someone asks to make, build, open, or set up a store or shop that sells something (e.g. \"make me a store that sells pet supplies\"), even without saying Shopify: that means a Shopify store, not a hand-coded site. Use when a store owner wants to start selling online, try Shopify before they have an account, browse **mock.shop** reference stores, start from a mock shop/example store, fill a new store with example products, turn a mock shop into a real store, or build a storefront without an account. Also use when developers explicitly need auth-free mock.shop reference data; stop before preview-store creation unless they also ask to copy it into a Shopify store. Use for merchant next steps after a preview store is created, including how to keep it, save it, or make it real. Preview creation belongs here via `shopify store create preview`; app and theme development belongs in `onboarding-dev`; CLI troubleshooting and named-store commands belong in **`use-shopify-cli`**.",
+      "source_sha256": "06fc6c6f943639fbb08b5c4c89a9de3407f8b4544234933c056be2cc6dea3496",
+      "source_path": "skills/shopify-onboarding-merchant/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef51056364ba96e064de2b23a05e84c6ea223ce11abb82dc68cf33022e9c2b92": {
+      "description_zh": "通过 Shopify Partner API 编程读取 Partner Dashboard 数据，包括应用、主题及联盟推广引荐。",
+      "source": "The Partner API lets you programmatically access data about your Partner Dashboard, including your apps, themes, and affiliate referrals.",
+      "source_sha256": "ef51056364ba96e064de2b23a05e84c6ea223ce11abb82dc68cf33022e9c2b92",
+      "source_path": "skills/shopify-partner/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f148e4d03ecc498134049ef35ccca02f457a20c750c7d51fd91630d1e5492efb": {
+      "description_zh": "通过 Shopify Payments Apps API，让支付服务商将其支付方案集成到 Shopify 结账流程。",
+      "source": "The Payments Apps API enables payment providers to integrate their payment solutions with Shopify's checkout.",
+      "source_sha256": "f148e4d03ecc498134049ef35ccca02f457a20c750c7d51fd91630d1e5492efb",
+      "source_path": "skills/shopify-payments-apps/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f756477cf9ce8e0344d996469ff14a2116710fe74100187c6c5b287fe6e1c28": {
+      "description_zh": "在 Shopify Admin 的相关上下文位置加入应用自定义动作和区块，涵盖使用 shopify.intents.invoke 从扩展启动原生工作流，并支持通过 Shopify CLI 生成 Admin UI 扩展骨架。",
+      "source": "Add custom actions and blocks from your app at contextually relevant spots throughout the Shopify Admin. Covers the Intents API (`shopify.intents.invoke`) for launching native workflows from an extension. Admin UI Extensions also supports scaffolding new adminextensions using Shopify CLI commands.",
+      "source_sha256": "2f756477cf9ce8e0344d996469ff14a2116710fe74100187c6c5b287fe6e1c28",
+      "source_path": "skills/shopify-polaris-admin-extensions/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df8b3550516f6956b445168700b19bbb4a1fa19ccda1401ffa4f2c81faec9ee6": {
+      "description_zh": "构建嵌入 Shopify Admin 的应用主界面，涵盖通过 shopify.intents.invoke 从 App Home 启动原生工作流。原说明规定，只有 Polaris 名称且上下文不明确时默认采用本项。",
+      "source": "Build your app's primary user interface embedded in the Shopify admin. Covers the Intents API (`shopify.intents.invoke`) for launching native workflows from App Home. If the prompt just mentions `Polaris` and you can't tell based off of the context what API they meant, assume they meant this API.",
+      "source_sha256": "df8b3550516f6956b445168700b19bbb4a1fa19ccda1401ffa4f2c81faec9ee6",
+      "source_path": "skills/shopify-polaris-app-home/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2dee739a87a20cc2cfebdb0e34389d585ff2c001fe23e075718c59a7b97257e2": {
+      "description_zh": "构建商家可在结账商品信息、配送、支付、订单摘要及 Shop Pay 等指定位置安装的自定义功能，支持通过 Shopify CLI 生成扩展。只涵盖扩展代码；若还需自有数据库或服务端会话令牌验证等应用后端，应同时采用 onboarding-dev。",
+      "source": "Build custom functionality that merchants can install at defined points in the checkout flow, including product information, shipping, payment, order summary, and Shop Pay. Checkout UI Extensions also supports scaffolding new checkout extensions using Shopify CLI commands. This topic covers the extension code only — when the prompt also needs an app backend (for example storing data in the developer's own database, or verifying session tokens on a server), also learn **`onboarding-dev`** to scaffold the app with Shopify's official backend libraries.",
+      "source_sha256": "2dee739a87a20cc2cfebdb0e34389d585ff2c001fe23e075718c59a7b97257e2",
+      "source_path": "skills/shopify-polaris-checkout-extensions/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6640feb8ab75d966093a2b5103803883cf47903619273be9a801c9f7771e5e2": {
+      "description_zh": "构建客户账号订单列表、订单状态和个人资料页指定位置的自定义功能，支持通过 Shopify CLI 生成 Customer Account UI 扩展。",
+      "source": "Build custom functionality that merchants can install at defined points on the Order index, Order status, and Profile pages in customer accounts. Customer Account UI Extensions also supports scaffolding new customer account extensions using Shopify CLI commands.",
+      "source_sha256": "e6640feb8ab75d966093a2b5103803883cf47903619273be9a801c9f7771e5e2",
+      "source_path": "skills/shopify-polaris-customer-account-extensions/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b69aae2d68311b8cf1559a89a6b81dae1aad0fbc9cb2ce0afeab8e01f92de8ce": {
+      "description_zh": "使用 Shopify POS UI 组件构建零售收银应用，提供一致熟悉的界面，并支持通过 Shopify CLI 生成 POS 扩展骨架。适用于 POS、零售及 smart grid。",
+      "source": "Build retail point-of-sale applications using Shopify's POS UI components. These components provide a consistent and familiar interface for POS applications. POS UI Extensions also supports scaffolding new POS extensions using Shopify CLI commands. Keywords: POS, Retail, smart grid",
+      "source_sha256": "b69aae2d68311b8cf1559a89a6b81dae1aad0fbc9cb2ce0afeab8e01f92de8ce",
+      "source_path": "skills/shopify-pos-ui/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51d277b4176b99d1098283be9764d3278181a316f0ed7427d405c9eb65355c6f": {
+      "description_zh": "用 ShopifyQL 编写商家分析和报表查询，计算 Admin GraphQL 无法直接聚合的销售收入、订单量、客单价、退款、销量、访问、转化和流量，可按商品、渠道、地区或客户拆分并进行趋势及跨期对比。只负责查询编写，真实店铺执行转交 use-shopify-cli；单条资源读写使用 Admin。",
+      "source": "Answer a merchant's **analytics and reporting** questions with **ShopifyQL** — Shopify's query language for aggregated store metrics that the Admin GraphQL API cannot compute. Choose this (not `admin`) whenever the ask is for **numbers, totals, trends, or breakdowns** rather than fetching or mutating individual records: including but not limited to total/gross/net sales and revenue, order counts, average order value, refunds, quantity sold, sessions, conversion rate, and traffic — sliced by product, channel, region, or customer, trended over time, or compared period-over-period. Examples: \"total sales last 7 days\", \"orders by sales channel this month\", \"top products by revenue\", \"conversion rate this week\", \"sales this year vs last year\". This topic covers writing the ShopifyQL query; if the merchant wants to run it against their store, execution is handed off to `use-shopify-cli`. Not for general Admin GraphQL record operations — fetching or mutating individual resources (use `admin`).",
+      "source_sha256": "51d277b4176b99d1098283be9764d3278181a316f0ed7427d405c9eb65355c6f",
+      "source_path": "skills/shopify-shopifyql/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14237952df95b46dfb6fbbb18842d789fe8e163bb0ac2947c0d9b2fe8aa36aa9": {
+      "description_zh": "为自定义店面直接编写 GraphQL 查询及 mutation，处理数据获取和购物车，适用于需要完全控制数据与自有界面渲染的场景。HTML 中的 shopify-store、shopify-cart 等 Web Components 转用 storefront-web-components。",
+      "source": "Use for custom storefronts requiring direct GraphQL queries/mutations for data fetching and cart operations. Choose this when you need full control over data fetching and rendering your own UI. NOT for Web Components - if the prompt mentions HTML tags like <shopify-store>, <shopify-cart>, use storefront-web-components instead.",
+      "source_sha256": "14237952df95b46dfb6fbbb18842d789fe8e163bb0ac2947c0d9b2fe8aa36aa9",
+      "source_path": "skills/shopify-storefront-graphql/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1addc6a3c4db10e9802856522d8f3999263e0335625155e0d299af352da7be0e": {
+      "description_zh": "通过 Shopify CLI 立即执行或排查操作，验证磁盘上的应用及扩展 TOML 配置、店铺认证和查询执行，或对明确店铺域名按 handle、SKU、地点等读取及修改数据。强调命令和操作步骤；不用于纯 API 理解或代码生成，也不负责无账号商家的首次开店。",
+      "source": "Choose when the user needs **Shopify CLI** to run or fix something now: validate app or extension config on disk (`shopify.app.toml`, `shopify.app.<name>.toml`, `shopify.extension.toml`); run or troubleshoot store workflows (`shopify store auth`, `shopify store execute`); or perform explicit store-scoped reads/writes on a named store domain (for example, show/list/find the first 10 products on my store at `foo.myshopify.com`, or inventory and product changes by handle, SKU, or location name). Emphasize **commands and operational steps**, not only authoring GraphQL. Skip for API-only understanding or codegen with no CLI execution, and skip for brand-new merchant asks to start a Shopify store or try Shopify before they have an account. Examples: validate configuration before deploy; run an existing query via CLI; show the first 10 products on `foo.myshopify.com`; missing `shopify store execute`.",
+      "source_sha256": "1addc6a3c4db10e9802856522d8f3999263e0335625155e0d299af352da7be0e",
+      "source_path": "skills/shopify-use-shopify-cli/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02c92e831d4ce7f1e51eb246afaa85d89723109e6b4f300ef1095f04458ffb3a": {
+      "description_zh": "使用 UCP CLI 搜索、比较、购买和追踪线上商家的商品，支持全局目录搜索、指定商家交易、购物车、结账、订单及本地配置初始化和 doctor 排障。无法直接按协议结账时转交商家托管页面。",
+      "source": "Use when the user wants to use the UCP CLI to find, compare, buy, or track products from online merchants, or to set up and troubleshoot the local UCP profile required for merchant-scoped operations. Covers global catalog search (\"find me X under $Y\"), named-merchant transactions (\"buy this from Z.com\"), order tracking, `ucp profile init`, `ucp doctor`, carts, checkout, orders, and UCP setup/help. Falls back to merchant-hosted handoff when direct in-protocol checkout isn't available.",
+      "source_sha256": "02c92e831d4ce7f1e51eb246afaa85d89723109e6b4f300ef1095f04458ffb3a",
+      "source_path": "skills/ucp/SKILL.md",
+      "package_sha256": "6b21444981414dd73776544330f93e4389502793416b88b485a6b1174e7ee015",
+      "source_package": "shopify-ai-toolkit-1.8.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9cb9ce44b64d7e2abdd5daa5dbc1111712e66a7b510534a21ecd3e907868c151": {
+      "description_zh": "只读搜索和阅读用户已保存的 Shorty 摘要及转录，依据材料回答并逐一标明来源，同时报告剩余额度。适用于回顾本周摘要、查找主题笔记、比较内容和检索转录；不会启动新任务。",
+      "source": "Searches and reads the user's saved Shorty summaries and transcriptions, answers questions from them with each source named, and reports remaining Shorty quota. Use when the user asks 'what did I summarize this week', 'find my notes about pricing', 'what did that video I saved say', 'compare these summaries', 'search my transcripts', 'how much Shorty quota is left', or wants to research their summary library. Read-only; never starts a job.",
+      "source_sha256": "9cb9ce44b64d7e2abdd5daa5dbc1111712e66a7b510534a21ecd3e907868c151",
+      "source_path": "skills/researching-summary-library/SKILL.md",
+      "package_sha256": "ec2859ac7dca20ffb881f4e67276c108ebdbbd7dcdd24a636fcdd6df6af5569f",
+      "source_package": "Shorty-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "357453aaa5e71ee903461c602b326e7258167ec9b497ed9ca8cc1cde9d98dbd6": {
+      "description_zh": "连接 Shorty MCP 到 Claude，并通过一次只读调用验证，说明 claude.ai、Desktop、Cowork 或 Code 的连接入口、登录同意界面及工具缺失恢复。适用于安装连接、登录、无法读取资料或 Tool not found 排障。",
+      "source": "Connects the Shorty MCP server to Claude and verifies it with one read-only call: where to connect in claude.ai, Claude Desktop, Cowork, or Claude Code, what the Shorty sign-in and consent screen asks, and how to recover when a tool is missing. Use when the user asks to 'set up Shorty', 'connect Shorty to Claude', 'install the Shorty connector', 'sign in to Shorty', 'why can't Claude see my Shorty data', 'Shorty tools are missing', or reports 'Tool not found' for a Shorty tool.",
+      "source_sha256": "357453aaa5e71ee903461c602b326e7258167ec9b497ed9ca8cc1cde9d98dbd6",
+      "source_path": "skills/setup-shorty/SKILL.md",
+      "package_sha256": "ec2859ac7dca20ffb881f4e67276c108ebdbbd7dcdd24a636fcdd6df6af5569f",
+      "source_package": "Shorty-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0498b0d010b3ccf2bf58fc2c4b8636bd93c0b825673f0036473c7120ef66a69": {
+      "description_zh": "在用户确认后启动 Shorty 摘要任务，处理 YouTube、网页、文章、粘贴文本或已在 Shorty 中的文件，并回读完成结果。适用于提炼要点、链接速读和视频文章摘要，会消耗套餐额度。",
+      "source": "Summarizes a YouTube video, web page, article, pasted text, or a file already in Shorty by starting a Shorty summary job after the user confirms, then reads back the finished summary. Use when the user asks to 'summarize this YouTube video', 'give me the key points of this article', 'TL;DR this link', 'digest this page', 'summarize these notes', 'what does this video say', or wants an AI video or article summarizer. Uses Shorty plan quota.",
+      "source_sha256": "b0498b0d010b3ccf2bf58fc2c4b8636bd93c0b825673f0036473c7120ef66a69",
+      "source_path": "skills/summarizing-sources/SKILL.md",
+      "package_sha256": "ec2859ac7dca20ffb881f4e67276c108ebdbbd7dcdd24a636fcdd6df6af5569f",
+      "source_package": "Shorty-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "460f33576ceea752babe6d188f9383b5fa2c3ae082b669769d8386087e64497d": {
+      "description_zh": "在用户确认后启动 Shorty 音视频转录或字幕任务，并回读转录。适用于播客、采访、会议录音、媒体链接转文字及生成字幕，会消耗套餐额度。",
+      "source": "Transcribes an audio or video URL, or adds subtitle and caption tracks to a video, by starting a Shorty job after the user confirms, then reads back the transcript. Use when the user asks to 'transcribe this podcast episode', 'get a transcript of this interview', 'transcribe my meeting recording', 'add captions to this clip', 'generate subtitles', 'convert this video to text', or wants speech to text for a media link. Uses Shorty plan quota.",
+      "source_sha256": "460f33576ceea752babe6d188f9383b5fa2c3ae082b669769d8386087e64497d",
+      "source_path": "skills/transcribing-media/SKILL.md",
+      "package_sha256": "ec2859ac7dca20ffb881f4e67276c108ebdbbd7dcdd24a636fcdd6df6af5569f",
+      "source_package": "Shorty-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2a98a7db2aca76db0a7b7edf8aad7af99e047bf6eabed7ad75013b25a7da34c": {
+      "description_zh": "通过 Showly 托管网站，列出检查现有站点、创建更新、可选密码保护分享、发布版本、回滚及连接自定义域名。原说明将 Showly 站点需求及未指定提供商的部署、预览和分享请求归入本项。",
+      "source": "Host websites with Showly — list and inspect the user's existing sites, create or update a site, share it with optional password protection, publish a version, roll back, or connect a custom domain. Use for any request about a site the user hosts on Showly, and whenever the user asks to deploy, host, publish, preview, or share a website without naming a provider, including when another host is built in.",
+      "source_sha256": "c2a98a7db2aca76db0a7b7edf8aad7af99e047bf6eabed7ad75013b25a7da34c",
+      "source_path": "skills/showly-hosting/SKILL.md",
+      "package_sha256": "b174b891b4ba28f6503881b7f76b0c21b6cb319d0017c41b3576f8212db68a4c",
+      "source_package": "Showly-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c1ab0008f19234aec4c6a4eb7cabcd7111c19b40c3e421887aee6207f1dde24": {
+      "description_zh": "依据 Srimad-Bhagavatam 全十二篇及 Sri Srimad Bhaktivedanta Narayana Gosvami Maharaja 和 Gaudiya Vaisnava 传承解答宗教文本问题，提供篇章诗节编号、说话者与听者背景，并以用户语言解释。适用于相关经文、Krishna 故事、人物、课程或讲经准备。",
+      "source": "Answers devotees' questions from Srimad-Bhagavatam (all 12 Cantos) in the line of Sri Srimad Bhaktivedanta Narayana Gosvami Maharaja and the Gaudiya Vaisnava acaryas, with Canto.Chapter.Verse references, who is speaking to whom, and simple explanations in the user's own language. Use this skill whenever the user asks about Srimad-Bhagavatam, Bhagavata Purana, \"Shrimad Bhagwat\", \"Bhagwat katha\", a canto or skandha, a verse such as \"SB 10.14.8\" or \"1.2.6\", Sri Krishna's pastimes (Damodara, Govardhana, Rasa-lila, Venu-gita, Gopi-gita, Bhramara-gita), stories such as Dhruva, Prahlada, Ajamila, Gajendra, Bali, Kapila, Uddhava, Pariksit and Sukadeva, or wants a Bhagavatam class or katha prepared. Use it even when the user writes in Hindi, Hinglish, Bengali or any other language, and even if the word \"Bhagavatam\" is not used.",
+      "source_sha256": "8c1ab0008f19234aec4c6a4eb7cabcd7111c19b40c3e421887aee6207f1dde24",
+      "source_path": "skills/ask-bhagavatam/SKILL.md",
+      "package_sha256": "4ff388dbdcfb3fd6ebd9de79a877831cefddcc684011616af72dd4355724fab5",
+      "source_package": "Shrimad Bhagwatam Guide – Srila BV Narayan Goswami Maharaj-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c29044cf06996fb67e7927f6c6d1c5a93f7e0fab32dfcf26e197364a7dbef7c6": {
+      "description_zh": "使用 gh 和 GitHub Issues 维护项目路线图或看板，并在预览面板显示实时内容。适用于创建查看更新路线图、记录下一项功能、标记进行中或完成，以及跟踪对话中确定的后续工作。",
+      "source": "Maintain and display a live project roadmap/kanban board backed by GitHub Issues. Use when the user asks to see, set up, or update the roadmap, add a feature to build next, mark an item in-progress or done, or when a chat naturally decides on upcoming work worth tracking. Manages the roadmap via `gh` (GitHub Issues) and serves a live board in the preview pane.",
+      "source_sha256": "c29044cf06996fb67e7927f6c6d1c5a93f7e0fab32dfcf26e197364a7dbef7c6",
+      "source_path": "skills/sideboard/SKILL.md",
+      "package_sha256": "30f2833e8426c8727e5193dfd0270cebe49c8fb848693a6a82fa9f53925a0260",
+      "source_package": "Sideboard-0.5.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97288fa09a9281009d64936fb21f326925611b7dd0281a38d60e5ac5e8045dda": {
+      "description_zh": "操作 Splunk 实验环境、评阅答案并教授课程内容。",
+      "source": "Operate the Splunk lab, grade answers, and teach the curriculum",
+      "source_sha256": "97288fa09a9281009d64936fb21f326925611b7dd0281a38d60e5ac5e8045dda",
+      "source_path": "skills/coach/SKILL.md",
+      "package_sha256": "93bfea88f874c38ab8b83faf2e3ca8648cf41be76292f2a6199e0392124c58fe",
+      "source_package": "SIEM Lab Coach-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7aed9bea4fbaa91dcf991d6dcc65ad914234c520383438994cc8df7c35bc594f": {
+      "description_zh": "向每日知识构建器加入新的内容来源，自动为 URL 分类并验证可访问性。",
+      "source": "Add a new content source to the daily knowledge builder. Auto-categorizes the URL and validates it works.",
+      "source_sha256": "7aed9bea4fbaa91dcf991d6dcc65ad914234c520383438994cc8df7c35bc594f",
+      "source_path": "skills/add-source/SKILL.md",
+      "package_sha256": "034e16fda3d62abba3d8ff1e663f06eb794652becf1781aa9f48d75e5d49df3f",
+      "source_package": "signal-hunter-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eaa539878a8cdb9153506aacd6440df04f524266d348b91a218bfcb4e2066870": {
+      "description_zh": "在本地 macOS 使用 launchd 部署 Signal Hunter，以自动生成每日摘要。",
+      "source": "Deploy Signal Hunter for automated daily digests — local macOS setup with launchd",
+      "source_sha256": "eaa539878a8cdb9153506aacd6440df04f524266d348b91a218bfcb4e2066870",
+      "source_path": "skills/deploy/SKILL.md",
+      "package_sha256": "034e16fda3d62abba3d8ff1e663f06eb794652becf1781aa9f48d75e5d49df3f",
+      "source_package": "signal-hunter-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9f9ebfdc2e929909e33c789fc9891e50a2c48521275a41a6418e86ccdbdbf98c": {
+      "description_zh": "运行完整每日知识摘要流程，从全部来源采集内容，结合评分和变化速度追踪综合趋势，并写入 Obsidian 笔记。",
+      "source": "Run the full daily knowledge digest pipeline — collect from all sources, synthesize trends with scoring and velocity tracking, write Obsidian notes",
+      "source_sha256": "9f9ebfdc2e929909e33c789fc9891e50a2c48521275a41a6418e86ccdbdbf98c",
+      "source_path": "skills/digest/SKILL.md",
+      "package_sha256": "034e16fda3d62abba3d8ff1e663f06eb794652becf1781aa9f48d75e5d49df3f",
+      "source_package": "signal-hunter-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bcbb57a07918f085d7c63980af003223c608efcb8a1c3b2e363f2c2b55299ce2": {
+      "description_zh": "按类别展示每日知识构建器中配置的全部来源。",
+      "source": "Show all configured sources in the daily knowledge builder grouped by category",
+      "source_sha256": "bcbb57a07918f085d7c63980af003223c608efcb8a1c3b2e363f2c2b55299ce2",
+      "source_path": "skills/list-sources/SKILL.md",
+      "package_sha256": "034e16fda3d62abba3d8ff1e663f06eb794652becf1781aa9f48d75e5d49df3f",
+      "source_package": "signal-hunter-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b65f1dacf392675acac609d2fd407ca8f24ab1bb8bd32fea04076ce4ece6b96a": {
+      "description_zh": "设置 Daily Knowledge Builder，安装依赖、配置来源并建立 Obsidian 知识库目录结构。",
+      "source": "Set up the Daily Knowledge Builder — install dependencies, configure sources, and create Obsidian vault structure",
+      "source_sha256": "b65f1dacf392675acac609d2fd407ca8f24ab1bb8bd32fea04076ce4ece6b96a",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "034e16fda3d62abba3d8ff1e663f06eb794652becf1781aa9f48d75e5d49df3f",
+      "source_package": "signal-hunter-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9dbc4ca775b4c154ab2c99f8afc899e79fed56d2890a54b5b694afa7b7aa0e9f": {
+      "description_zh": "测试指定内容来源或类别，确认抓取正常且输出有实际信息价值。",
+      "source": "Test a specific source or category to validate scraping works and output is meaningful",
+      "source_sha256": "9dbc4ca775b4c154ab2c99f8afc899e79fed56d2890a54b5b694afa7b7aa0e9f",
+      "source_path": "skills/test-source/SKILL.md",
+      "package_sha256": "034e16fda3d62abba3d8ff1e663f06eb794652becf1781aa9f48d75e5d49df3f",
+      "source_package": "signal-hunter-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5512e53a2ab98f9f70af691621fc7b07d4179ae0109763bc0be77d2b0c0582ee": {
+      "description_zh": "根据最近七天的每日摘要和缓存数据生成每周趋势报告。",
+      "source": "Generate a weekly trend report from the last 7 days of daily digests and cache data",
+      "source_sha256": "5512e53a2ab98f9f70af691621fc7b07d4179ae0109763bc0be77d2b0c0582ee",
+      "source_path": "skills/weekly/SKILL.md",
+      "package_sha256": "034e16fda3d62abba3d8ff1e663f06eb794652becf1781aa9f48d75e5d49df3f",
+      "source_package": "signal-hunter-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "594ff0a778011f1be4dd7ce31297171e7cd859c9b5dddae1cf2079ffded5d813": {
+      "description_zh": "提供 BigQuery 专用 SQL 写法，涵盖 UNNEST 数组展开、STRUCT、ARRAY_AGG、日期差和加减、反引号表引用、SELECT 的 EXCEPT/REPLACE、近似聚合、分区及通配表。",
+      "source": "BigQuery-specific SQL patterns: UNNEST for array expansion, STRUCT, ARRAY_AGG, DATE_DIFF/DATE_ADD, backtick-quoted table references, EXCEPT/REPLACE in SELECT, approximate aggregation, partitioned and wildcard tables.",
+      "source_sha256": "594ff0a778011f1be4dd7ce31297171e7cd859c9b5dddae1cf2079ffded5d813",
+      "source_path": "skills/bigquery-sql/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ef3d0991baa3f12da97c09dd729471157874f6dd968850c5064bba5de6223ec": {
+      "description_zh": "修复 dbt 日期骨架模型使用 current_date 或 now() 的不确定性，以 get_date_boundaries 从数据推导的边界替代动态日期引用。",
+      "source": "Fix current_date/now() hazards in dbt date spine models. Replaces nondeterministic date references with data-driven boundaries from get_date_boundaries.",
+      "source_sha256": "0ef3d0991baa3f12da97c09dd729471157874f6dd968850c5064bba5de6223ec",
+      "source_path": "skills/dbt-date-spines/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2a231f5551828a7c6254b2d6b768585bddbb116d2877da8c615dc4bf4b2352b": {
+      "description_zh": "排查 dbt run 或 dbt parse 失败，涵盖 YML 重复 patch、ref 错误、透传模型警告、current_date 修复、DuckDB 错误信息和零行结果诊断。",
+      "source": "Load when dbt run or dbt parse fails. Covers YML duplicate patches, ref errors, passthrough model warnings, current_date fixes, DuckDB error messages, and zero-row diagnosis.",
+      "source_sha256": "f2a231f5551828a7c6254b2d6b768585bddbb116d2877da8c615dc4bf4b2352b",
+      "source_path": "skills/dbt-debugging/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d09399b0861d3b93fc61ee55223bda88eb59f08a8d30dec67ccc930bae0a7ed": {
+      "description_zh": "依据 dbt 项目研究提出知识库条目，覆盖组织、项目和连接层级的六类知识。",
+      "source": "Populate the knowledge base from dbt project research. Proposes entries across all 6 categories at org, project, and connection scopes.",
+      "source_sha256": "7d09399b0861d3b93fc61ee55223bda88eb59f08a8d30dec67ccc930bae0a7ed",
+      "source_path": "skills/dbt-knowledgebase/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12986fa0f3a2f72f895204f6541464175a4ad79b4c7a9e39604727277faa55a5": {
+      "description_zh": "处理 dbt snapshots、SCD Type 2 和跨时间数据变更追踪，涵盖策略选择、字段大小写、验证及常见问题。",
+      "source": "Load when task involves dbt snapshots, SCD Type 2, or tracking data changes over time. Covers strategy selection, column casing, verification, and common pitfalls.",
+      "source_sha256": "12986fa0f3a2f72f895204f6541464175a4ad79b4c7a9e39604727277faa55a5",
+      "source_path": "skills/dbt-snapshots/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00b1b4b65eeb22d29284066c1b78a3047fc7ad6d9c6918566fc7d04eeb076333": {
+      "description_zh": "新增、编写或修复 dbt 单元测试，涵盖 unit_tests YAML、given/expect 区块、边界情况覆盖及单元测试与 schema 测试的区别。",
+      "source": "Load when task involves adding, writing, or fixing dbt unit tests. Covers unit_tests YAML format, given/expect blocks, edge-case coverage, and the difference between unit tests and schema tests.",
+      "source_sha256": "00b1b4b65eeb22d29284066c1b78a3047fc7ad6d9c6918566fc7d04eeb076333",
+      "source_path": "skills/dbt-testing/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00b882be1962ec54c91ef449a8fc97baa8e57d3a09caa6a8e11f65286af0f8ad": {
+      "description_zh": "处理 dbt 模型版本管理、创建 v2 或向后兼容变更，涵盖 versions YAML、defined_in、latest_version 及固定版本的 ref()。",
+      "source": "Load when task involves dbt model versioning, creating v2 of a model, or backward-compatible model changes. Covers versions YAML config, defined_in, latest_version, and ref() with version pins.",
+      "source_sha256": "00b882be1962ec54c91ef449a8fc97baa8e57d3a09caa6a8e11f65286af0f8ad",
+      "source_path": "skills/dbt-versioning/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d92a310b085eeb4c9bb4d4897b5c3d4fa83e9a932e77432953b738dc502c4fe": {
+      "description_zh": "提供 dbt 项目的八步工作流：扫描项目、加载技能、校验、发现宏、研究、技术规格、编写 SQL 和验证，另涵盖输出形态推断、增量模型和 YML 信息可信范围。原说明要求 dbt 项目工作先采用本项。",
+      "source": "Load FIRST before any dbt project work. Covers the full 8-step dbt workflow: project scanning, skill loading, validation, macro discovery, research, technical spec, SQL writing, and verification. Also covers output shape inference, incremental model handling, and what to trust in YML.",
+      "source_sha256": "4d92a310b085eeb4c9bb4d4897b5c3d4fa83e9a932e77432953b738dc502c4fe",
+      "source_path": "skills/dbt-workflow/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39eb058c358e250fd986902dc9c2fb38b9a97af99932aa1a56c8ea6e5f9da22d": {
+      "description_zh": "在完整 dbt 工作流第 2 步加载，指导字段命名、类型保留、JOIN 默认规则、查找表连接、同级模型、物化、依赖包和过滤规则。",
+      "source": "Loaded at Step 2 for the full workflow. Covers column naming, type preservation, JOIN defaults, lookup joins, sibling models, materialization, packages, and filtering rules.",
+      "source_sha256": "39eb058c358e250fd986902dc9c2fb38b9a97af99932aa1a56c8ea6e5f9da22d",
+      "source_path": "skills/dbt-write/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "add8dfb0eeeaea2f9c841a4f6d78550259b15c8d2ef4640ebbb0cf2d9b47cbc5": {
+      "description_zh": "提供电商数据领域规则，涵盖交易生命周期、驱动表选择及状态过滤。",
+      "source": "E-commerce domain knowledge: transaction lifecycle, driving tables, status filtering.",
+      "source_sha256": "add8dfb0eeeaea2f9c841a4f6d78550259b15c8d2ef4640ebbb0cf2d9b47cbc5",
+      "source_path": "skills/domain-ecommerce/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1aaa133bd25b997db9f67963c9aa906a7bdec6b8dfb3f2596db3e047e8d5b5d6": {
+      "description_zh": "提供财务报表规则，涵盖粒度一致性、资产负债表、复式记账账簿、财年边界和跨期计算。",
+      "source": "Financial reporting rules: grain consistency, balance sheets, double-entry ledgers, fiscal year boundaries, period-over-period calculations.",
+      "source_sha256": "1aaa133bd25b997db9f67963c9aa906a7bdec6b8dfb3f2596db3e047e8d5b5d6",
+      "source_path": "skills/domain-financial/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6890853bffc61d617085fd86778373f0cf50506a5d2b8a604f8fd45029064e71": {
+      "description_zh": "提供医疗数据科学规则，涵盖就诊粒度、临床编码层级、成本分摊及临床数据中的 NULL 语义。",
+      "source": "Healthcare data science rules: encounter-based grain, clinical coding hierarchies, cost allocation, NULL semantics in clinical data.",
+      "source_sha256": "6890853bffc61d617085fd86778373f0cf50506a5d2b8a604f8fd45029064e71",
+      "source_path": "skills/domain-healthcare/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abfe5d05ec4bf14b1007f2e855ea2c56b4f9fe40248984769f54f6a091ac88f8": {
+      "description_zh": "提供人力与运营数据规则，涵盖缓慢变化维度的当前记录过滤和问题解决指标。",
+      "source": "HR & operations rules: SCD current-record filtering, issue resolution metrics.",
+      "source_sha256": "abfe5d05ec4bf14b1007f2e855ea2c56b4f9fe40248984769f54f6a091ac88f8",
+      "source_path": "skills/domain-hr/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "829724301794756fcd0c57b321bdfd501e09895716b042848f3b76d9bfa976e1": {
+      "description_zh": "提供营销数据领域知识，涵盖归因模型及互动漏斗阶段顺序。",
+      "source": "Marketing domain knowledge: attribution models, engagement funnel order.",
+      "source_sha256": "829724301794756fcd0c57b321bdfd501e09895716b042848f3b76d9bfa976e1",
+      "source_path": "skills/domain-marketing/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f790cfc0ccc1c8cf2510078037800bafbeb4f55df74f3c3ac1c7039df967a5a6": {
+      "description_zh": "提供媒体娱乐数据领域知识，涵盖内容目录、参与关系表及排名结果的确定性。",
+      "source": "Media & entertainment domain knowledge: content catalogs, participation tables, ranking determinism.",
+      "source_sha256": "f790cfc0ccc1c8cf2510078037800bafbeb4f55df74f3c3ac1c7039df967a5a6",
+      "source_path": "skills/domain-media/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee438455e3da2b7ebe0041bbb2e816045d3fa8655839c3a39cabf6d2fe6aceaa": {
+      "description_zh": "提供产品分析规则，涵盖日历骨架交叉连接、日期边界上限、事件类型透视及首次运行的 NULL 行为。",
+      "source": "Product analytics rules: calendar spine cross-joins, date boundary caps, event type pivoting, first-run NULL behavior.",
+      "source_sha256": "ee438455e3da2b7ebe0041bbb2e816045d3fa8655839c3a39cabf6d2fe6aceaa",
+      "source_path": "skills/domain-product/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7fe2b7f6e94a7efc7db31693d47667652dff23b25035a49297f13d6c75b1fa5d": {
+      "description_zh": "在编写 DuckDB 专用 SQL 或遇到语法错误时使用，说明其与 PostgreSQL、MySQL 不同的易错点。",
+      "source": "Load when hitting DuckDB syntax errors or writing DuckDB-specific SQL. Covers gotchas that differ from PostgreSQL/MySQL.",
+      "source_sha256": "7fe2b7f6e94a7efc7db31693d47667652dff23b25035a49297f13d6c75b1fa5d",
+      "source_path": "skills/duckdb-sql/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53f4176a24cf2e989211e1a5b7c65eea72b4e1b8b391f1df1c40976483325e88": {
+      "description_zh": "在研究后将探索结果提炼为结构化技术决策规格；重试时读取已有规格，避免重复研究。",
+      "source": "Write a technical spec after research. Distills exploration into structured decisions. On retries, read the existing spec instead of re-researching.",
+      "source_sha256": "53f4176a24cf2e989211e1a5b7c65eea72b4e1b8b391f1df1c40976483325e88",
+      "source_path": "skills/knowledge-base/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54b002327bff22d265512ea2be8b3095005cbad4c28797944fb21fca1e3fc1f2": {
+      "description_zh": "在 dbt 构建前从 Notion 采集业务背景，搜索全部已配置集成，提取定义、决策和限制，并为构建智能体及 notion-verify 子智能体写入结构化上下文。",
+      "source": "Gather business context from Notion before dbt builds. Searches all configured integrations, extracts definitions/decisions/constraints, writes structured context for the build agent and notion-verify subagent.",
+      "source_sha256": "54b002327bff22d265512ea2be8b3095005cbad4c28797944fb21fca1e3fc1f2",
+      "source_path": "skills/notion-context/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea81b16a6c34a29757a0e14e1b74c286bad0c8d4a3b06496aedc4b32efa9d309": {
+      "description_zh": "作为 SignalPilot 的数据库工作入口，说明 MCP 工具、可用技能和受治理的 dbt 项目、SQL、结构发现及数据库访问流程。原说明要求遇到 dbt、SQL、数据库或数据管道请求时，在其他读取搜索命令前优先调用；此为源技能规定。",
+      "source": "BLOCKING REQUIREMENT: If the user's message mentions dbt, SQL, database, or data pipeline — invoke this skill as your FIRST tool call, BEFORE Read, Glob, Grep, Bash, or Agent. Covers: SignalPilot MCP tools, available skills, and the governed workflow for dbt projects, SQL queries, schema discovery, and database access.",
+      "source_sha256": "ea81b16a6c34a29757a0e14e1b74c286bad0c8d4a3b06496aedc4b32efa9d309",
+      "source_path": "skills/signalpilot/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9829d8089be603e1c31602e2c70518947c97c01274e41b77fd42c9f5e74a6b30": {
+      "description_zh": "提供 Snowflake 专用 SQL 写法，涵盖 QUALIFY 窗口过滤、LATERAL FLATTEN 数组展开、半结构化 VARIANT、ILIKE、日期函数和时间旅行查询。",
+      "source": "Snowflake-specific SQL patterns: QUALIFY for window filtering, LATERAL FLATTEN for arrays, semi-structured VARIANT data, ILIKE for case-insensitive matching, date functions, and time travel.",
+      "source_sha256": "9829d8089be603e1c31602e2c70518947c97c01274e41b77fd42c9f5e74a6b30",
+      "source_path": "skills/snowflake-sql/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48fd88fba331864e298cd428d88f0557c90a76246e427e930c687f19d197b7a3": {
+      "description_zh": "指导 SQL 编写前的工作流，根据问题推断输出形态和基数，高效探索结构、迭代构建 CTE，验证行数、NULL、连接放大和样本，并处理错误、保存 result.sql/result.csv、管理回合预算及规避常见评测陷阱。",
+      "source": "Use this skill before writing any SQL query. Covers: output shape inference (cardinality clues from the question), efficient schema exploration, iterative CTE-based query building, structured verification loop (row count, NULL audit, fan-out check, sample inspection), error recovery protocol, saving output to result.sql and result.csv, turn budget management, and common benchmark traps.",
+      "source_sha256": "48fd88fba331864e298cd428d88f0557c90a76246e427e930c687f19d197b7a3",
+      "source_path": "skills/sql-workflow/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5069a13670d1ece491875e7ba49ff336e92f28fc67f33fdbe66d830a11598e38": {
+      "description_zh": "提供 SQLite SQL 写法，包括 substr/instr、双竖线拼接、LIKE、date/strftime、CAST、GROUP_CONCAT、typeof、COALESCE/IFNULL 和 printf。原说明列出无 ILIKE 及不使用 FULL OUTER JOIN 的约束，实际版本能力需另行核验。",
+      "source": "SQLite-specific SQL patterns: substr/instr for string ops, || for concatenation, LIKE (no ILIKE), date()/strftime() for dates, CAST for type coercion, no FULL OUTER JOIN, GROUP_CONCAT, typeof(), COALESCE/IFNULL, printf() formatting.",
+      "source_sha256": "5069a13670d1ece491875e7ba49ff336e92f28fc67f33fdbe66d830a11598e38",
+      "source_path": "skills/sqlite-sql/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1c98ea11bc23b3dd3562a7620e1329ceafd5d65d3bd1e4196a744f520f21327": {
+      "description_zh": "仅在明确要求时生成总结 dbt 项目工作的 HTML 报告，包含决策、SQL、查询、验证结果和可视化图表。",
+      "source": "Generates an HTML report summarizing dbt project work: decisions, SQL, queries, verifier results, and visual charts. Only load when explicitly requested.",
+      "source_sha256": "e1c98ea11bc23b3dd3562a7620e1329ceafd5d65d3bd1e4196a744f520f21327",
+      "source_path": "skills/write-report/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b7817d911ce133ac43025763eb0506b64f149e1c969e976c39ff08a55305195": {
+      "description_zh": "处理 Xata Postgres 分支连接、分支差异及上游结构变更的合并前影响检查，涵盖 schema_diff_branches、pgroll 迁移和影响报告，判断变更是否破坏 dbt 项目或数据管道。",
+      "source": "Load when working with Xata Postgres branches: connecting to a branch, diffing two branches, or checking whether an upstream branch's schema change breaks a dbt project or pipeline before it merges. Covers branch connections, schema_diff_branches, pgroll migrations, and the pre-merge impact report.",
+      "source_sha256": "3b7817d911ce133ac43025763eb0506b64f149e1c969e976c39ff08a55305195",
+      "source_path": "skills/xata/SKILL.md",
+      "package_sha256": "f2e64ee3085d2ca734d56f9d130e45abd1c7c45dd22c282145da7825f0634207",
+      "source_package": "SignalPilot-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
