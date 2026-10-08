@@ -25369,6 +25369,1086 @@
       "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
       "source_package": "dbt-toolkit-0.1.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7a92ab3ff16dbf5b578b9e2d5a99599069141b22877a1c0d615e865e9afc2de": {
+      "description_zh": "按检查点逐步执行dbt计划；原说明标注为v2计划，尚未实现。",
+      "source": "Step-by-step plan execution with checkpoints (v2 — not yet implemented)",
+      "source_sha256": "c7a92ab3ff16dbf5b578b9e2d5a99599069141b22877a1c0d615e865e9afc2de",
+      "source_path": "skills/dbt-executing-plans/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9f9c85467634663457d39d0be2755126ab965b5d485ee9a45142c1c9e6ccce4": {
+      "description_zh": "检查dbt来源数据新鲜度，追踪趋势并显示下游影响。",
+      "source": "Check source data freshness, track trends, show downstream impact",
+      "source_sha256": "b9f9c85467634663457d39d0be2755126ab965b5d485ee9a45142c1c9e6ccce4",
+      "source_path": "skills/dbt-freshness/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4bad5e725b980137fbd9e5584607e5fe7f28024b70a32ac8f3c5477bc934514": {
+      "description_zh": "执行dbt宏，用于授权、数据脱敏及实用操作。",
+      "source": "Execute dbt macros — grants, data masking, utility operations",
+      "source_sha256": "e4bad5e725b980137fbd9e5584607e5fe7f28024b70a32ac8f3c5477bc934514",
+      "source_path": "skills/dbt-run-operation/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "357f9c5df45e111342e97475bef9ccd8b3f80972c246f85adf19374d974b4fed": {
+      "description_zh": "运行dbt模型，支持智能选择、全量刷新识别与重试。",
+      "source": "Execute dbt models with smart selection, full-refresh detection, and retry",
+      "source_sha256": "357f9c5df45e111342e97475bef9ccd8b3f80972c246f85adf19374d974b4fed",
+      "source_path": "skills/dbt-run/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e2018fc525fec40ef8981ccb085ac11fe9fa04c38185c01547d080a1570493b": {
+      "description_zh": "加载dbt CSV种子并执行缓慢变化维度快照，配合结果校验。",
+      "source": "Load seed CSVs and execute SCD snapshots with validation",
+      "source_sha256": "5e2018fc525fec40ef8981ccb085ac11fe9fa04c38185c01547d080a1570493b",
+      "source_path": "skills/dbt-seed-snapshot/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d48d67b7d2f7be6b3ff65c6fbb64149ab2e0f11208c51c80b7668421fd4c44a0": {
+      "description_zh": "通过向导首次设置dbt项目，配置执行方式、测试连接并建立项目索引。",
+      "source": "First-time project wizard — configure execution, test connection, index project",
+      "source_sha256": "d48d67b7d2f7be6b3ff65c6fbb64149ab2e0f11208c51c80b7668421fd4c44a0",
+      "source_path": "skills/dbt-setup/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8220c768af46c9d498ae83ad3f458a6e9f1b027b50e6ae8f6813d37ced5641a": {
+      "description_zh": "运行dbt数据与单元测试，分析失败并报告覆盖率。",
+      "source": "Run data and unit tests, analyze failures, report coverage",
+      "source_sha256": "e8220c768af46c9d498ae83ad3f458a6e9f1b027b50e6ae8f6813d37ced5641a",
+      "source_path": "skills/dbt-test/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b921a88b37b47e626436de4d2ee573ac1c45062cb1c3c53743ddf09f9e0fa041": {
+      "description_zh": "管理dbt项目，执行运行、测试、调试、审计等任务。",
+      "source": "dbt project management — run, test, debug, audit, and more",
+      "source_sha256": "b921a88b37b47e626436de4d2ee573ac1c45062cb1c3c53743ddf09f9e0fa041",
+      "source_path": "skills/dbt/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acdd4065a0275c6c77d7e8de2509660a2e379b5a89b6e6dbed7bf21adebbb41e": {
+      "description_zh": "整理DDNA需求与Intent，运行工程技能和生成能力，并从已连接AI客户端访问项目绑定的Gitea。",
+      "source": "Shape DDNA requirements and Intent, run engineering skills and generation, and access project-bound Gitea from a connected AI client.",
+      "source_sha256": "acdd4065a0275c6c77d7e8de2509660a2e379b5a89b6e6dbed7bf21adebbb41e",
+      "source_path": "skills/ddna-engineering/SKILL.md",
+      "package_sha256": "bfb2dcb2a7b9ac3d14dab28e8a81e2bb66ae930e763d3889538c8ad961b47383",
+      "source_package": "Ddna-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05ae998fb25ea903c3ec2090ff16a6f8ca496c77cdc028b5adb299f9c25b4739": {
+      "description_zh": "通过DDNA MCP使用仅审批式Requirement IDE，开展需求审查、关闭、证据及提案决策。",
+      "source": "Use DDNA's approval-only Requirement IDE through the DDNA MCP tools for requirement review, closeout, evidence, and proposal decisions.",
+      "source_sha256": "05ae998fb25ea903c3ec2090ff16a6f8ca496c77cdc028b5adb299f9c25b4739",
+      "source_path": "skills/ddna-requirement-ide/SKILL.md",
+      "package_sha256": "bfb2dcb2a7b9ac3d14dab28e8a81e2bb66ae930e763d3889538c8ad961b47383",
+      "source_package": "Ddna-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c54633789c0c50518d5fb13b411904de40fb9e5113d1c7f933e23444bf1c545": {
+      "description_zh": "用既有DDNA账户OAuth在Claude、ChatGPT或Codex中连接或重新连接，处理未连接、认证与权限失败。",
+      "source": "Connect or reconnect DDNA in Claude, ChatGPT, or Codex by signing in to an existing DDNA account with OAuth. Use when DDNA is not connected or reports an authentication or permission failure.",
+      "source_sha256": "5c54633789c0c50518d5fb13b411904de40fb9e5113d1c7f933e23444bf1c545",
+      "source_path": "skills/ddna-setup/SKILL.md",
+      "package_sha256": "bfb2dcb2a7b9ac3d14dab28e8a81e2bb66ae930e763d3889538c8ad961b47383",
+      "source_package": "Ddna-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3e6124abab4ddc71d8e7c10a4ad4ed060bbb6a70943abe016155dc4ca910f28": {
+      "description_zh": "将Claude Code实例设置为专业协作伙伴，定义身份模式、能力声明与发现惯例。",
+      "source": "Use when setting up a Claude Code instance as a specialist peer — defines identity schema, capability advertisement, and discovery conventions",
+      "source_sha256": "e3e6124abab4ddc71d8e7c10a4ad4ed060bbb6a70943abe016155dc4ca910f28",
+      "source_path": "skills/peer-identity/SKILL.md",
+      "package_sha256": "f4829ba147c386a0e14cb91143d92a54c7d77480fed51daaa0359e9f43c981b4",
+      "source_package": "Decibel Peers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4203671fd7cfa5bb539d05155d301b132d188a41d719b845b0ab58dd2072381": {
+      "description_zh": "规范Claude Code协作伙伴间消息的请求、审查产物与交接格式。",
+      "source": "Use when sending or receiving messages between Claude Code peers — defines request format, review artifact format, and handoff protocol",
+      "source_sha256": "b4203671fd7cfa5bb539d05155d301b132d188a41d719b845b0ab58dd2072381",
+      "source_path": "skills/peer-messaging/SKILL.md",
+      "package_sha256": "f4829ba147c386a0e14cb91143d92a54c7d77480fed51daaa0359e9f43c981b4",
+      "source_package": "Decibel Peers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "997c30dee7b0fae36b89a644ffe4439d8d9f6597d4a593855b5ca15f30536a8b": {
+      "description_zh": "在新功能、组件或其他创意实现前探索用户意图与设计。",
+      "source": "Use before creative work - creating features, building components, adding functionality. Explores intent and design before implementation.",
+      "source_sha256": "997c30dee7b0fae36b89a644ffe4439d8d9f6597d4a593855b5ca15f30536a8b",
+      "source_path": "skills/brainstorming/SKILL.md",
+      "package_sha256": "e068fd0ac6a6cfbc176a28503730f45d6a0cc64412004fab79d05aa5fe248267",
+      "source_package": "Decibel Superpowers-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ff662e576818852ce6f1b31c4921f0c574357cc847ed14cbeaeb33ac7692f06": {
+      "description_zh": "在使用Decibel MCP的项目中调试，将缺陷记录为sentinel问题并保存复现步骤和解决结果。",
+      "source": "Use when debugging in a project with Decibel MCP tools — tracks bugs as sentinel issues with reproduction steps and resolution",
+      "source_sha256": "9ff662e576818852ce6f1b31c4921f0c574357cc847ed14cbeaeb33ac7692f06",
+      "source_path": "skills/sentinel-driven-debugging/SKILL.md",
+      "package_sha256": "e068fd0ac6a6cfbc176a28503730f45d6a0cc64412004fab79d05aa5fe248267",
+      "source_package": "Decibel Superpowers-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1fb7fffcf244801ff8fb175ea4e500406b91a3735295a06fea8b677cc3ad9416": {
+      "description_zh": "在Decibel项目头脑风暴或规划时，将设计决策转成sentinel问题、架构决策记录与史诗任务。",
+      "source": "Use when brainstorming or planning work in a project with Decibel MCP tools — creates sentinel issues, ADRs, and epics from design decisions",
+      "source_sha256": "1fb7fffcf244801ff8fb175ea4e500406b91a3735295a06fea8b677cc3ad9416",
+      "source_path": "skills/sentinel-driven-planning/SKILL.md",
+      "package_sha256": "e068fd0ac6a6cfbc176a28503730f45d6a0cc64412004fab79d05aa5fe248267",
+      "source_package": "Decibel Superpowers-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92b64b433faa2c611f23e01a0b7fa8073f0bfd4009eba5228252e5b81bee3183": {
+      "description_zh": "在Decibel项目代码审查中，将需要持续追踪的发现升级为sentinel问题。",
+      "source": "Use when reviewing code in a project with Decibel MCP tools — escalates findings to sentinel issues when they need tracking",
+      "source_sha256": "92b64b433faa2c611f23e01a0b7fa8073f0bfd4009eba5228252e5b81bee3183",
+      "source_path": "skills/sentinel-driven-review/SKILL.md",
+      "package_sha256": "e068fd0ac6a6cfbc176a28503730f45d6a0cc64412004fab79d05aa5fe248267",
+      "source_package": "Decibel Superpowers-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53b9c187c6fda00a1bb428fb9d40b2ffbe75d31cb05446c689d8684dde4d1b61": {
+      "description_zh": "宣布Decibel项目工作完成前检查sentinel开放问题、过期架构决策与设计债。",
+      "source": "Use when verifying work is complete in a Decibel project — checks sentinel for open issues, stale ADRs, and design debt before claiming done",
+      "source_sha256": "53b9c187c6fda00a1bb428fb9d40b2ffbe75d31cb05446c689d8684dde4d1b61",
+      "source_path": "skills/sentinel-project-health/SKILL.md",
+      "package_sha256": "e068fd0ac6a6cfbc176a28503730f45d6a0cc64412004fab79d05aa5fe248267",
+      "source_package": "Decibel Superpowers-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b90f653cba828aecbea12c686621048ab074b8771d4e83380c5de96555dc4f9d": {
+      "description_zh": "配置Decision Council顾问面板，新增、移除或调整顾问、标题变体和阈值。",
+      "source": "Configure your Decision Council panel — add, remove, or adjust advisors, title variants, and thresholds.",
+      "source_sha256": "b90f653cba828aecbea12c686621048ab074b8771d4e83380c5de96555dc4f9d",
+      "source_path": "skills/configure/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "511ecb94f863ae9933d3c58c944e76eb764904f90f15a459c8d98fbd824482bd": {
+      "description_zh": "在有真实不确定性且影响重要的决策上召集AI顾问，辩论选项、交叉质询并生成评分建议。",
+      "source": "Convene a Decision Council session. Assembles AI advisors to debate a decision, cross-examine reasoning, and produce a scored recommendation. Use when facing a significant decision with genuine uncertainty and meaningful stakes.",
+      "source_sha256": "511ecb94f863ae9933d3c58c944e76eb764904f90f15a459c8d98fbd824482bd",
+      "source_path": "skills/convene/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d59af1fdca1848c0054a2cece264a499d9fd36732258343edff1bad008f508b5": {
+      "description_zh": "作为Decision Council主席的方法参考，规定冲突解决、评分校准、交叉质询、数据可用性、核验声明与降级流程，不是用户命令。",
+      "source": "Decision Council methodology reference: conflict resolution protocol, scoring calibration, cross-examination rules, data availability contract, verification claims requirements, and graceful degradation procedures. Background knowledge for the Chair — not a user-facing command.",
+      "source_sha256": "d59af1fdca1848c0054a2cece264a499d9fd36732258343edff1bad008f508b5",
+      "source_path": "skills/council-framework/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1102db6c8395b4ce8128ee4b22d377b4d1af3a269ccd91206f081d50b631eabd": {
+      "description_zh": "从最近Decision Council会话生成可分享归档的HTML决策仪表板，展示均分、顾问、关键因素、选项、决策路径、行动时间线和解决标准。",
+      "source": "Render a visual HTML decision dashboard from the most recent council session. Shows average score, advisor cards, key factors, option comparison, decision path, actions timeline, and resolution criteria. Use after a council session to create a shareable, archivable report.",
+      "source_sha256": "1102db6c8395b4ce8128ee4b22d377b4d1af3a269ccd91206f081d50b631eabd",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0f976db77789a7d722893fefd33f950ba79aa476ad8467bd4bf40027d712dca": {
+      "description_zh": "在Decision Council会话后复盘，展示仪表板、质疑建议、记录最终决定并提供反馈。",
+      "source": "Run the post-session debrief — dashboard, challenge the recommendation, record your decision, and give feedback. Run this after a convene session to process the council's output.",
+      "source_sha256": "e0f976db77789a7d722893fefd33f950ba79aa476ad8467bd4bf40027d712dca",
+      "source_path": "skills/debrief/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b1ccd16264ffbaf5ddf7e866a7eed3a2760a44f6755e466193df3d179e1dbbcd": {
+      "description_zh": "对议会建议开展事前复盘，以具体失败故事说明何时、为何与如何出错，可选乐观、常见或悲观情景。",
+      "source": "Run a pre-mortem on the council's recommendation. Narrates a failure story in concrete terms — what went wrong, when, and why. Choose from optimistic, probable, or pessimistic failure scenarios.",
+      "source_sha256": "b1ccd16264ffbaf5ddf7e866a7eed3a2760a44f6755e466193df3d179e1dbbcd",
+      "source_path": "skills/pre-mortem/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09cf1d70b6481fbc10e52a3f68b902e5922e610a9827a9ce09b411c8cc42b34d": {
+      "description_zh": "浏览计划中的Decision Council Pro能力，包括专业顾问、决策库、自适应学习及交互决策应用；原说明为即将推出。",
+      "source": "Browse Decision Council Pro features — specialist advisors, decision vault, adaptive learning, and interactive decision apps. Coming soon.",
+      "source_sha256": "09cf1d70b6481fbc10e52a3f68b902e5922e610a9827a9ce09b411c8cc42b34d",
+      "source_path": "skills/pro/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b14e1d3d3df8bee9ed56f5b37ee05f6904b3fc52a63af032f5ac914a44bd35fc": {
+      "description_zh": "为较低风险或时间紧迫决策召集三位顾问进行精简分析，仅在评分差异超过40分时交叉质询。",
+      "source": "Quick 3-advisor council for lower-stakes or time-sensitive decisions. Streamlined analysis with fewer advisors, no cross-examination unless scores diverge by 40+ points.",
+      "source_sha256": "b14e1d3d3df8bee9ed56f5b37ee05f6904b3fc52a63af032f5ac914a44bd35fc",
+      "source_path": "skills/quick/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "491e136d71653e2dc7ab4e589385e180304eb1c13a1975d928af54b2b6080b77": {
+      "description_zh": "显示Decision Council配置与顾问表现，包括面板成员、完成会话数和各顾问准确度。",
+      "source": "Show current Decision Council configuration and advisor track record. Displays panel composition, sessions completed, and per-advisor accuracy.",
+      "source_sha256": "491e136d71653e2dc7ab4e589385e180304eb1c13a1975d928af54b2b6080b77",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "f8680561145ff3f3ed1cdf2ae8748e3ee2274915232b32679fc496d2ce7a68f5",
+      "source_package": "Decision Council-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "159e2071546511a63f3af662ab4fbcf343bb8e4f447bbf7ff4a442ecbfb58dac": {
+      "description_zh": "通过MCP记录、检索、更新与归档DecRec决策及议会，整理对话中的重要分歧，提交或拒绝建议；重大选择前先搜索，形成决定后提议记录而不自动保存琐事。",
+      "source": "Records and retrieves DecRec decisions via MCP tools (list, search, create, update, follow-up, commit, decline, archive, or list/get councils). Use when recording, admitting, updating, or loading a DecRec decision or DEC-n; listing or searching org decisions; cataloging decision-worthy forks from a pasted conversation, Slack thread, or meeting transcript; exploring a DecRec brief; committing or declining a DecRec recommendation; archiving a decision; before a consequential choice that constrains later work or plausibly revisits an existing direction (search first—not before ordinary coding); when this chat settles such a choice—offer to record, do not auto-save trivia.",
+      "source_sha256": "159e2071546511a63f3af662ab4fbcf343bb8e4f447bbf7ff4a442ecbfb58dac",
+      "source_path": "skills/decrec/SKILL.md",
+      "package_sha256": "2da762bd50d3a759a8a5c1124a133bd1491657a08d81226483de8c08196e6a09",
+      "source_package": "DecRec-2026.9.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c502a1bf652803fb3e683934e4a18fcbd47be3c21b1d98be03a2ec10b00ff91d": {
+      "description_zh": "审计整个代码库的缺陷、浪费与技术债，将发现转成工单并通过有序PR逐项交付，保持测试契约。",
+      "source": "Audit an entire codebase for defects, waste and debt, then ticket and ship the findings as a sequenced PR train — without breaking the test contract. Triggers: deep refactor, refactor audit, clean the codebase, DRY pass, audit and fix everything.",
+      "source_sha256": "c502a1bf652803fb3e683934e4a18fcbd47be3c21b1d98be03a2ec10b00ff91d",
+      "source_path": "skills/deep-refactor/SKILL.md",
+      "package_sha256": "b234039d61e5119e7435ffecc60b6c73d443897364a21ea247e94c0e27280d89",
+      "source_package": "Deep Refactor-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5f101d5182da309b1f358d49bbb2654d4e4f707cdba05250e98774294de983c": {
+      "description_zh": "审计仓库全部Markdown的错误声明、漂移、重复与冗余，冻结源码并核对保留声明与仓库一致，通过工单和有序PR交付文档清理。",
+      "source": "Audit every markdown file in a repo — READMEs, docs/, and agent-instruction files — for lies, drift, duplication and bloat, then ticket and ship the cleanup as a sequenced PR train, with source code frozen and every surviving claim verified against the repo rather than read. Triggers: doc refactor, refactor the docs, clean the docs, documentation audit, README audit, docs are stale, DRY the docs, audit every markdown file.",
+      "source_sha256": "c5f101d5182da309b1f358d49bbb2654d4e4f707cdba05250e98774294de983c",
+      "source_path": "skills/doc-refactor/SKILL.md",
+      "package_sha256": "b234039d61e5119e7435ffecc60b6c73d443897364a21ea247e94c0e27280d89",
+      "source_package": "Deep Refactor-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "331e42e20d15f2d783ec396762da56d747bcb557ad20bca631d339195c3fedfa": {
+      "description_zh": "逐套审计测试的无效内容、重复、并行不安全及运行成本，冻结生产代码、逐模块证明保留覆盖，并通过工单和有序PR清理。",
+      "source": "Audit one test suite at a time for dead weight, duplication, parallel-unsafety and runtime cost, then ticket and ship the cleanup as a PR train — with production code frozen and good coverage kept, proven per module rather than assumed. Triggers: test refactor, clean the tests, refactor the tests, test suite audit, DRY the tests, parallelize the test suite, speed up the tests.",
+      "source_sha256": "331e42e20d15f2d783ec396762da56d747bcb557ad20bca631d339195c3fedfa",
+      "source_path": "skills/test-refactor/SKILL.md",
+      "package_sha256": "b234039d61e5119e7435ffecc60b6c73d443897364a21ea247e94c0e27280d89",
+      "source_package": "Deep Refactor-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aff3a6f0a59712708fd7c65923460f4f2c86973e8ba6b69a5c81c64f91add27b": {
+      "description_zh": "规定使用DeepL翻译、本地化、改写、校对与术语表编辑时的统一规则，也适用于风格和正式程度调整前。",
+      "source": "The standard rules for translating, editing glossaries, rephrasing and proofreading with DeepL —\napply on every DeepL job. Use when the user asks to translate, localize, rephrase or proofread\nanything, when they say \"apply our translation rules\" / \"translate with our rules\", or before any\nglossary, style-rule or formality change.",
+      "source_sha256": "aff3a6f0a59712708fd7c65923460f4f2c86973e8ba6b69a5c81c64f91add27b",
+      "source_path": "skills/translation-rules/SKILL.md",
+      "package_sha256": "4e7fdc865ac72590c6ae1f0c3b3786def4c79df187acf59fb7189c8d47793820",
+      "source_package": "DeepL-1.60.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d82bf657c22d63c923618305e53db9ffb6025d0402ba5165cdfb44de7d8d9637": {
+      "description_zh": "使用DeepSpace SDK与Cloudflare Workers构建实时协作应用，处理同步、在线状态、协作编辑、RBAC、消息、支付与部署，也支持原生Markdown或MDX文档迁移。",
+      "source": "Use when building or maintaining real-time collaborative apps with the DeepSpace SDK on Cloudflare Workers; when code imports `deepspace`, `deepspace/worker`, or uses `RecordRoom`; when running `npx deepspace`; or when the task involves app.space deploys, live sync, presence, collaborative editing, RBAC, messaging, payments, Durable Objects, or DeepSpace source; or when creating or migrating native DeepSpace documentation with `documentation.json`, Markdown/MDX, the documentation feature, or an explicitly attached documentation domain.",
+      "source_sha256": "d82bf657c22d63c923618305e53db9ffb6025d0402ba5165cdfb44de7d8d9637",
+      "source_path": "skills/deepspace/SKILL.md",
+      "package_sha256": "d4030abd73848e47ca9eb5e2c919779b7fc7a13ff7b9262af591515615c8b1bb",
+      "source_package": "deepspace-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc9f5a30ba72a320c4c2ce2fd5c6da719e1ae04f2f20267035f7d818a3cf6363": {
+      "description_zh": "作为需求预测第2至3步，计算量、ADI、CV²与趋势，划分SBC需求象限和层级细分，可比较机器聚类与规则，并按提前期建议预测单元和时域；阈值由用户确定。",
+      "source": "Use this skill for Steps 2–3 of demand-insight — the core series classification and per-segment spec. Computes the 4 axes (volume/ADI/CV²/trend), assigns SBC quadrants (Smooth/Erratic/Intermittent/Lumpy), builds hierarchical segments (~8–12), optionally runs ML clustering (k-means / shape / PCA) and compares it against the rule-based result, then proposes a per-segment forecast unit & horizon (lead-time aware). Thresholds are presented as starting points; the user decides. Use after EDA, or to re-classify on pattern change / new stores.",
+      "source_sha256": "cc9f5a30ba72a320c4c2ce2fd5c6da719e1ae04f2f20267035f7d818a3cf6363",
+      "source_path": "skills/demand-insight-classification/SKILL.md",
+      "package_sha256": "544bd4f2809144878fc280111f28188248f18f0e383778250045f96747daa68f",
+      "source_package": "demand-insight-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0089cd025e7f28fa8eda6e6cb321219941838ec501447a854bd4b9135414665": {
+      "description_zh": "作为需求预测第1步开展理解、预处理与质量检查，分析缺失、残差异常事件标记、分解、相关、平稳性与变点，输出EDA报告并更新状态，不直接删除异常。",
+      "source": "Use this skill for Step 1 of demand-insight — data understanding, preprocessing, and quality checks. Runs missing-value pattern analysis (time-aware interpolation), outlier detection (3σ residual → is_event flag, not deletion), STL/MSTL decomposition, ACF/PACF, ADF stationarity, and change-point detection. Outputs an EDA report and merges a summary into state.json for downstream classification. Use after the H1–H8 hearing or when data is refreshed.",
+      "source_sha256": "a0089cd025e7f28fa8eda6e6cb321219941838ec501447a854bd4b9135414665",
+      "source_path": "skills/demand-insight-eda/SKILL.md",
+      "package_sha256": "544bd4f2809144878fc280111f28188248f18f0e383778250045f96747daa68f",
+      "source_package": "demand-insight-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a48e537ca5e6407b541a0f90847ae59301d4d50b1206418c194ea72ee93c564": {
+      "description_zh": "作为需求预测评估与报告阶段，计算准确度、缺货过量、非对称成本、概率质量及偏差，更新假设与下一步，可做层级协调并生成以功能为主的Excel报告。",
+      "source": "Use this skill for Steps 6 & 8 of demand-insight — error analysis, business-KPI translation, and the Excel report. Computes accuracy metrics (MAE/RMSE/MAPE/MASE/WMAPE), fulfillment metrics (stockout/overstock), asymmetric business cost, probabilistic quality (Pinball/CRPS, interval coverage), detects systematic bias (by weekday/period/segment), updates hypotheses, recommends next_action (decision.json), optionally reconciles hierarchies (MinTrace), and emits a function-first Excel (.xlsx) report. Use after each modeling iteration, or to produce the final report.",
+      "source_sha256": "0a48e537ca5e6407b541a0f90847ae59301d4d50b1206418c194ea72ee93c564",
+      "source_path": "skills/demand-insight-evaluation/SKILL.md",
+      "package_sha256": "544bd4f2809144878fc280111f28188248f18f0e383778250045f96747daa68f",
+      "source_package": "demand-insight-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6625b545b3ae820350ee058a760d71255d4165e322c896f499f4615123a1fc7c": {
+      "description_zh": "为需求预测构建日历、周期、节假日、滞后、滚动与外生特征，严格防泄漏，目标衍生特征shift(1)，遵守预测时域可得性，输出特征计划与前滚安全数据。",
+      "source": "Use this skill for Step 4 of demand-insight — building forecast features with strict data-leakage prevention. Generates calendar, cyclical (sin/cos), holiday (incl. pre/post), lag, rolling, and exogenous features, enforcing shift(1) on all target-derived features and the horizon-availability constraint (lags < h are future information for Direct forecasting). Outputs feature_plan.json and a Walk-Forward-safe features table. Use after classification, or when error analysis calls for new explanatory power.",
+      "source_sha256": "6625b545b3ae820350ee058a760d71255d4165e322c896f499f4615123a1fc7c",
+      "source_path": "skills/demand-insight-features/SKILL.md",
+      "package_sha256": "544bd4f2809144878fc280111f28188248f18f0e383778250045f96747daa68f",
+      "source_package": "demand-insight-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a21ea4a10bd62166d35d0d164900cea0c48ed6fe4a6d65fc1a698c647a3d395": {
+      "description_zh": "按需求细分建立朴素等基线及LightGBM、Croston、SBA或TSB模型，执行带提前期间隔的前滚验证和自助预测区间，解释特征与SHAP，仅采用优于基线的高级模型。",
+      "source": "Use this skill for Steps 5 & 7 of demand-insight — build, backtest, and interpret per-segment models. First builds Naive/Seasonal-Naive/MA/SES baselines via StatsForecast, then applies the segment-appropriate advanced model (LightGBM/Croston/SBA/TSB) with skforecast, runs Walk-Forward Validation with bootstrapped prediction intervals (lead-time gap), and extracts feature importance / SHAP. Adopts an advanced model only if it beats baseline. Use after feature engineering, after a G1 model-family switch, or to measure baselines alone.",
+      "source_sha256": "4a21ea4a10bd62166d35d0d164900cea0c48ed6fe4a6d65fc1a698c647a3d395",
+      "source_path": "skills/demand-insight-modeling/SKILL.md",
+      "package_sha256": "544bd4f2809144878fc280111f28188248f18f0e383778250045f96747daa68f",
+      "source_package": "demand-insight-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78dcd8c5a5182b53862ad443260e17721830f97e8d54242026f55014477d667c": {
+      "description_zh": "在需求预测模型通过验收后生成生产预处理、无泄漏特征、训练、带区间批量预测、泄漏与回测可复现测试及部署配置，参数化模板到项目。",
+      "source": "Use this skill once a model has been accepted (acceptance criteria met / next_action=accept) to generate a production implementation — preprocessing, feature building (leakage-safe), training, batch prediction with intervals, a pytest suite (leakage + backtest reproducibility), and deployment config. Copies and parameterizes the templates into the user's project src/ and tests/. Use when the user says \"productionize\", \"generate production code\", \"make it deployable\", or after the loop accepts a model.",
+      "source_sha256": "78dcd8c5a5182b53862ad443260e17721830f97e8d54242026f55014477d667c",
+      "source_path": "skills/demand-insight-productionize/SKILL.md",
+      "package_sha256": "544bd4f2809144878fc280111f28188248f18f0e383778250045f96747daa68f",
+      "source_package": "demand-insight-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d9b1ce830fbbefae4bfb8c29d9708a54d03fc4b60d0532066e17429b4579f08": {
+      "description_zh": "启动或协调需求预测八步循环，访谈业务、识别数据模式、初始化输入状态，再组织EDA、分类、细分、特征、建模、误差与报告，依据验收决定下一步。",
+      "source": "Use this skill to start or coordinate a use-case-driven demand-forecasting & data-analysis project — running the 8-step iterative loop (hearing → EDA → classification → segment spec → features → modeling → error analysis → report). It conducts the H1–H8 runtime hearing, detects the data pattern (P1/P2/P3) from column structure, initializes input.json/state.json, routes to the stage skills, applies acceptance criteria, and decides the next action. Use when the user says \"start demand forecasting\", \"improve forecast accuracy\", \"run the whole loop\", or invokes /demand-insight.",
+      "source_sha256": "7d9b1ce830fbbefae4bfb8c29d9708a54d03fc4b60d0532066e17429b4579f08",
+      "source_path": "skills/demand-insight/SKILL.md",
+      "package_sha256": "544bd4f2809144878fc280111f28188248f18f0e383778250045f96747daa68f",
+      "source_package": "demand-insight-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "506ce8d36d2757a0b97b160a153abd7531640987c727536e06e6f3a7c1d079c9": {
+      "description_zh": "用户要求处理其Demovela账户时，通过Demovela MCP准备视频草稿。",
+      "source": "Use Demovela MCP to prepare a video draft when the user requests work in their Demovela account.",
+      "source_sha256": "506ce8d36d2757a0b97b160a153abd7531640987c727536e06e6f3a7c1d079c9",
+      "source_path": "skills/demovela/SKILL.md",
+      "package_sha256": "dcdc52851b5a9d19cb071c1a3ee95f8042bfd325b966288324d4e18652e32385",
+      "source_package": "Demovela-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3d89cde3041af0df27437870375bee1fb85118874c1c7369c054f1873698d11": {
+      "description_zh": "评估npm或Python依赖，帮助决定使用现成库或自行实现，适用于新增依赖和检查依赖文件变化。",
+      "source": "Evaluate npm or Python packages for build-vs-buy decisions. Use when adding a new dependency, reviewing package.json or requirements.txt changes, pip install, or deciding whether to use a library or implement functionality yourself.",
+      "source_sha256": "a3d89cde3041af0df27437870375bee1fb85118874c1c7369c054f1873698d11",
+      "source_path": "skills/evaluating-dependencies/SKILL.md",
+      "package_sha256": "c2dc0b1d92d2c7c78e4e42c072a3aeaaa85a87b65f9787d0475d9f024e5ccccf",
+      "source_package": "dependency-evaluator-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72d2c0a71ea13bac676fe967fd3145305f2621fd9c5c22b76f63841b02ad960f": {
+      "description_zh": "通过deploycheck MCP检查跨环境部署准备情况。",
+      "source": "Check deploy readiness across environments using the deploycheck MCP tools",
+      "source_sha256": "72d2c0a71ea13bac676fe967fd3145305f2621fd9c5c22b76f63841b02ad960f",
+      "source_path": "skills/deploy-check/SKILL.md",
+      "package_sha256": "aa995ce2c8e2c187a84fe509a1f99dbda0e97f7a8956b94f92d72e6d3e47375c",
+      "source_package": "deploycheck-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd1e12cffbcae99a55c0c4c3beccd09f789263b5520d1227ee8940d3dcef8a2b": {
+      "description_zh": "审计仓库设计令牌、配置、说明、硬编码默认值和历史设计产物，找出已固化设计决定、来源、确定程度与矛盾，生成设计规范现状报告。",
+      "source": "Audits a repository's durable artifacts — design tokens and config files, CLAUDE.md and style docs, hardcoded component defaults, git/PR/session history, and prior design-review or design-planning outputs from other tools (critic-layer notes, design briefs, style critiques, layout reviews) — to surface design decisions that quietly became permanent canon, including ones nobody consciously chose. Produces a Canon Report showing what's locked in, where it came from, how confident that lock-in actually is, and where sources contradict each other. Use this whenever a designer proposes a visual or UI change and needs to know if it conflicts with an existing standard, whenever someone asks \"why does X always look like this,\" \"what's our actual design system,\" \"are we locked into this,\" \"can we change this without breaking something,\" or before any redesign, rebrand, or style-guide work — even if the user never says \"canon,\" \"audit,\" or \"design system\" explicitly. Also trigger when handed a past design-review or design-plan artifact and the user wants to know whether its one-off suggestion has since ossified into an unwritten rule.",
+      "source_sha256": "dd1e12cffbcae99a55c0c4c3beccd09f789263b5520d1227ee8940d3dcef8a2b",
+      "source_path": "components/canon-check/skills/canon-check/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "44d0f30dcca63a33a7ba2e6cbeb1e2a8e0a625214caac96b854b09e310a20468": {
+      "description_zh": "在设计规范审计或方向变化后，互动更新CLAUDE、DESIGN、AGENTS、风格指南和令牌等长期文档，依据已定决策处理未决问题，不静默批量改写。",
+      "source": "The second half of Canon Check: after a canon audit reveals where a repo''s design decisions actually stand, this skill interactively realigns the durable documents — CLAUDE.md, design.md/DESIGN.md, AGENTS.md, style guides, token files, and whatever cornerstone documents shape direction in that repo — so they describe where the product is headed instead of where it was when those files were first written. Use this whenever the user wants to update, refresh, realign, or rewrite their design docs or project instructions after a design-direction shift; whenever they say things like \"our docs are stale,\" \"CLAUDE.md still says the old style,\" \"make the docs match what we''re doing now,\" \"formalize the new direction,\" or \"resolve the conflicts from the canon report\"; and whenever a canon-check audit just finished and the user accepts the offer to update. Never run it as a silent batch rewrite — use existing decisions and resolve unanswered choices.",
+      "source_sha256": "44d0f30dcca63a33a7ba2e6cbeb1e2a8e0a625214caac96b854b09e310a20468",
+      "source_path": "components/canon-check/skills/canon-update/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b95bbc9277b66b2d8c335e9568b35336b93143bbe9b4184969c23be96c9b39a": {
+      "description_zh": "将已有Critic Layer捕获转为范围明确的变更简报，保留稳定问题编号、候选来源和验收标准，无需浏览器。",
+      "source": "Turn an existing Critic Layer capture into a scoped change brief with stable issue IDs, source candidates and acceptance criteria. No browser required.",
+      "source_sha256": "2b95bbc9277b66b2d8c335e9568b35336b93143bbe9b4184969c23be96c9b39a",
+      "source_path": "components/critic-layer/skills/brief/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19908b622bbbaa6f796f3eacf80c879b57760617596400de8a7ae54387ddaa85": {
+      "description_zh": "在浏览器实时审查网页设计，可贴元素笔记、绘制标记或预览文字样式编辑，保存精确前后差异并形成编码简报；页面预览变化仍需编码者应用到源码。",
+      "source": "Run a real-time, in-browser UX/UI design review on a live web page in three modes — pin sticky NOTES on elements, DRAW freehand markup/arrows/shapes over the page, and make live ELEMENT EDITS (text/style/attributes/HTML) that are captured as exact before→after diffs — then turn all of it into an agent-ready change brief plus a paste-ready Claude Code prompt. Use this whenever the user wants to review, critique, annotate, mark up, draw on, or directly edit a live website or web app — a Framer/Webflow/Shopify/React site, a portfolio, a SaaS landing page, a marketing page — and especially when they say things like \"review this site,\" \"mark up the homepage,\" \"leave notes on the hero,\" \"draw on the page,\" \"circle what's wrong,\" \"just change the copy/color/spacing right here,\" \"show me the fix on the page,\" or \"turn my design feedback into instructions for a coding agent.\" Also trigger when handed an existing Critic Layer / annotation JSON export to synthesize. Trigger even when the user does not say \"sticky note\" or \"annotate\" — any request to walk a live page and capture what should change, whether by note, drawing, or a direct edit, or to convert loose visual judgments into precise implementation direction, belongs here. Live edits mutate the page for WYSIWYG feedback but the coding agent still applies the captured change to source; Critic Layer is not an autonomous redesign agent.",
+      "source_sha256": "19908b622bbbaa6f796f3eacf80c879b57760617596400de8a7ae54387ddaa85",
+      "source_path": "components/critic-layer/skills/critic-layer/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf1c6c9bc786a02e18df109978f28cb73a60fc9202bb428d70a1cd14bfe60a6d": {
+      "description_zh": "按Critic Layer原问题编号与验收标准核验界面修改，提供前后及响应式证据。",
+      "source": "Verify implemented interface changes against the original Critic Layer issue IDs and acceptance criteria, including before/after and responsive evidence.",
+      "source_sha256": "bf1c6c9bc786a02e18df109978f28cb73a60fc9202bb428d70a1cd14bfe60a6d",
+      "source_path": "components/critic-layer/skills/verify/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7553dd11c2475c6eaaa195ebbd6de2886659864c2ea415050ea308d56df9e5c": {
+      "description_zh": "清理仓库和项目过期计划、审计、重复文档、临时产物等开发残留，了解意图、澄清重要歧义、本地归档并修复保留指导；保护运行代码，功能退役另行处理。",
+      "source": "Sanitize repositories and project folders by removing development residue: superseded plans, completed audits, duplicate docs, plugin output, scratch files, and disposable artifacts. Read project intent, resolve consequential ambiguities through a brief grouped conversation, archive locally, and repair surviving guidance. Use for repository bloat, folder cleanup, or audit-only reviews. Operational code is protected; feature retirement is separate work.",
+      "source_sha256": "f7553dd11c2475c6eaaa195ebbd6de2886659864c2ea415050ea308d56df9e5c",
+      "source_path": "components/cut-weight/skills/cut-weight/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c38d4be29a4e9c7cef962871bb0d46638db8cc893abcc46458f498ddbd925856": {
+      "description_zh": "执行已授权的多步计划，记录持久进展、检查依赖并提供完成证据。",
+      "source": "Execute an authorized plan with durable progress, dependency checks and completion evidence. Use when asked to run a Hands Free plan or carry a multi-step outcome to completion.",
+      "source_sha256": "c38d4be29a4e9c7cef962871bb0d46638db8cc893abcc46458f498ddbd925856",
+      "source_path": "components/hands-free/skills/execute/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2568f29c3ffc064e2582f9792ffcdfd80a45a7c265aebc676e74fd992bb5b32a": {
+      "description_zh": "将多步目标规划为可恢复且有证据支撑的Hands Free计划，运行与继续交给对应技能。",
+      "source": "Plan a multi-step outcome as a resumable, evidence-backed plan. Use for hands-free planning; use execute to run and resume to continue interrupted work.",
+      "source_sha256": "2568f29c3ffc064e2582f9792ffcdfd80a45a7c265aebc676e74fd992bb5b32a",
+      "source_path": "components/hands-free/skills/hands-free/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c0bef2bde83793233f5f84a1cdf55dc5dc7c6d42d6df6e6f7f7bcd3af91d916": {
+      "description_zh": "依据保存计划和证据恢复中断的Hands Free执行，先检查已完成步骤是否失效。",
+      "source": "Resume an interrupted Hands Free run from its saved plan and evidence, detecting stale completed steps before continuing.",
+      "source_sha256": "8c0bef2bde83793233f5f84a1cdf55dc5dc7c6d42d6df6e6f7f7bcd3af91d916",
+      "source_path": "components/hands-free/skills/resume/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0648ee9b191871370b5ce1ce1debb111cab6f3c73e00ca31bfeeba1a11cc93df": {
+      "description_zh": "根据用户已确认的设计方向更新DESIGN、CLAUDE、AGENTS、风格指南与令牌文件，解决文档过时和冲突，保留范围例外与未解决矛盾。",
+      "source": "Update a project's design documentation (DESIGN.md, CLAUDE.md, AGENTS.md, style guides, token files) to match a design decision the user has made. Use when the user says they've decided on a new style or standard, asks to make docs match the current direction, says the docs or project instructions are stale or describe an old style, or wants conflicts from a design audit resolved in the docs. Preserves scoped exceptions and unresolved conflicts.",
+      "source_sha256": "0648ee9b191871370b5ce1ce1debb111cab6f3c73e00ca31bfeeba1a11cc93df",
+      "source_path": "skills/align/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b9d20997c91dbbb6d451b2f3925125495dfca2dc9b4e5eaf9471e2390761c8d": {
+      "description_zh": "通过引用证据查明项目已采用的颜色、圆角、间距、字体及组件规则，说明来源、确定性与冲突，用于改版或检查文档和代码差异。",
+      "source": "Find which design decisions a project is actually committed to (colors, radius, spacing, typography, component styles), where each came from, how settled it is, and where sources conflict, with cited evidence. Use before a redesign or UI change, or when the user asks \"what are our design rules\", \"why does X always look like this\", \"is this style settled\", \"can we change this without breaking something\", or wants to know whether docs and code disagree.",
+      "source_sha256": "0b9d20997c91dbbb6d451b2f3925125495dfca2dc9b4e5eaf9471e2390761c8d",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc1e7e0c9ea7479c558b6d196c02cca509a30587e238dcd01dcd8eb624654d8d": {
+      "description_zh": "将capture.json或导出页面审查笔记转成稳定编号的问题列表、候选源码及验收标准，供编码智能体实施，无需浏览器。",
+      "source": "Turn a saved page review (capture.json or exported notes) into a clear list of issues with stable IDs, likely source files and acceptance criteria, ready to hand to a coding agent. Use when the user has review notes or an exported capture and wants an issue list, change brief, implementation prompt or acceptance criteria. Works without a browser.",
+      "source_sha256": "cc1e7e0c9ea7479c558b6d196c02cca509a30587e238dcd01dcd8eb624654d8d",
+      "source_path": "skills/brief/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e90f9800b888c9ada499f470f5fe5c0477c2b878a435644d57b959ecd5a31a95": {
+      "description_zh": "逐项审查开发残留，将获准清理的旧计划、临时笔记、过期智能体文件和试验移入项目外可恢复归档；审计模式不修改。",
+      "source": "Find and safely remove leftover development clutter (old plans, scratch notes, stale agent files, superseded docs, unused experiments) with a review of each item and a recoverable archive outside the project. Use when the user says the repo is cluttered, asks what can be safely deleted, wants to clean up agent or dev leftovers, or wants to retire outdated documents. Audit mode changes nothing; cleanup mode acts only on groups the user approves.",
+      "source_sha256": "e90f9800b888c9ada499f470f5fe5c0477c2b878a435644d57b959ecd5a31a95",
+      "source_path": "skills/cleanup/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5632a8212eb028f89bf4d9ef46d12dfff5caf18ae33824c23dcc7af8c456af05": {
+      "description_zh": "根据已批准简报、计划或决策实施UI变化，保存每步证据与可恢复日志，支持规划、运行及中断后继续。",
+      "source": "Implement approved design or UI changes from a brief, plan or decision record, keeping a resumable progress log with evidence for each step. Use when the user asks to implement, apply, build or carry out reviewed changes, work through a brief.md or plan, run a multi-step change they may need to pause, or resume/continue an interrupted implementation run. Plan, run and resume modes.",
+      "source_sha256": "5632a8212eb028f89bf4d9ef46d12dfff5caf18ae33824c23dcc7af8c456af05",
+      "source_path": "skills/execute/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e48c5c8557f1e26861648317c5aef603ad9773dceb6f3b403d239c5b093057cf": {
+      "description_zh": "打开实时网页供用户贴元素笔记、绘制标记和预览文本样式变化，保存整个审查为可恢复捕获，由用户操作注释。",
+      "source": "Open a live web page in the browser so the user can pin notes on elements, draw over the page and preview direct text/style edits, then save the whole review as a recoverable capture. Use when the user wants to review, critique, annotate, mark up or draw on a live site or local page, or says things like \"let me leave notes on this page\" or \"mark what's wrong with the hero\". The user drives the annotations.",
+      "source_sha256": "e48c5c8557f1e26861648317c5aef603ad9773dceb6f3b403d239c5b093057cf",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5aba87f5d595648936d3df0dc63091ca4219bff1d7857039cf1b2af5617a8242": {
+      "description_zh": "按照原审查问题与验收标准核对UI修复，检查指定屏幕尺寸并提供前后证据，支持移动和桌面视口。",
+      "source": "Check that implemented design changes actually fixed each reported issue, at the requested screen sizes, with before/after evidence. Use when the user has made or received UI fixes and asks to verify, confirm, test or check them against the original review, issue list or acceptance criteria, including specific viewports such as 390px mobile and 1280px desktop.",
+      "source_sha256": "5aba87f5d595648936d3df0dc63091ca4219bff1d7857039cf1b2af5617a8242",
+      "source_path": "skills/verify/SKILL.md",
+      "package_sha256": "c3dd779f7d42d4c3ae10305ea3fdb193316cd12ffa05c6232c444d75dfbacfe5",
+      "source_package": "Design Steward-0.2.4-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70ba2d27148f8d1b0f4e6153d86e7e3fd3359a9de6b4ef780f46219df082969d": {
+      "description_zh": "依据DisC方法将精确设计中的UML时序图和决策表转换成可运行代码。",
+      "source": "Transform a precise design (UML sequence diagrams and decision tables) into working code using the DisC methodology",
+      "source_sha256": "70ba2d27148f8d1b0f4e6153d86e7e3fd3359a9de6b4ef780f46219df082969d",
+      "source_path": "skills/disc/SKILL.md",
+      "package_sha256": "147882f6245d522a72a2b58834f1c75fbf7cfe5a63f909eb901aa87937fa9c6b",
+      "source_package": "design-is-code-0.11.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b4f0a5bd2bee97db996c88880729122d430fcb159fc8b2b64d285ed8ee465db": {
+      "description_zh": "按WCAG 2.2的A、AA与AAA级审查页面、组件和流程，评估问题严重度并提供代码修复与报告，涵盖自动及手工测试、键盘、读屏、对比度和语义HTML。",
+      "source": "Conduct accessibility audits against WCAG 2.2 guidelines. Evaluate pages, components, and flows for conformance at A, AA, and AAA levels. Identify issues, assess severity, provide code fixes, and generate audit reports. Covers automated testing, manual testing, keyboard navigation, screen reader compatibility, color contrast, and semantic HTML.",
+      "source_sha256": "6b4f0a5bd2bee97db996c88880729122d430fcb159fc8b2b64d285ed8ee465db",
+      "source_path": "skills/accessibility-audit/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f458df493053bbb104c5ee30626411907d7371273433abf31ff5df7dffe4f07": {
+      "description_zh": "依据可用性启发式、UX规律、交互原则、信息架构和内容质量开展结构化设计评审，提供有既有原则支撑的具体改进。",
+      "source": "Evaluate UI designs against usability heuristics, UX laws, interaction patterns, interaction design principles, information architecture, and content quality. Conduct heuristic evaluations, structured design critiques, pattern-based reviews, posture analysis, excise audits, IA evaluations, and UX writing reviews. Provides specific, actionable feedback grounded in established principles rather than subjective opinion.",
+      "source_sha256": "4f458df493053bbb104c5ee30626411907d7371273433abf31ff5df7dffe4f07",
+      "source_path": "skills/design-critique/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f1f71ef2227ecac4d31b315a577537e27535970de9e74cbe5186d7022002f47": {
+      "description_zh": "系统改进演示、表格、仪表板、报告、HTML、PDF与网页等视觉输出，以Tailwind令牌为规范参考，按功能与感知模式组织设计决定，提升专业视觉质量。",
+      "source": "Comprehensive design elevation system that automatically transforms functional visual outputs into polished, professional designs. Use when creating ANY visual output including presentations (pptx), spreadsheets (xlsx), dashboards, reports, HTML artifacts, PDFs, web pages, or data visualizations. Applies systematic design thinking grounded in Tailwind CSS as the canonical design token system. Structures decisions through functional patterns (what users interact with) and perceptual patterns (how the design feels), following Alla Kholmatova's design systems framework. Triggers on ALL requests for visual content creation, ensuring outputs look hand-crafted rather than template-based.",
+      "source_sha256": "8f1f71ef2227ecac4d31b315a577537e27535970de9e74cbe5186d7022002f47",
+      "source_path": "skills/design-elevation/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56d632f575319465631f68ca07a2adbc1c2757c57541eacbec443cc6971fb14f": {
+      "description_zh": "组织设计冲刺、交接、团队节奏、文档与设计QA，改善设计工程协作和交付。",
+      "source": "Run design sprints, manage handoff, establish team rituals, documentation standards, and design QA processes. Covers the operational side of design — how teams organize work, collaborate with engineering, and ship quality.",
+      "source_sha256": "56d632f575319465631f68ca07a2adbc1c2757c57541eacbec443cc6971fb14f",
+      "source_path": "skills/design-ops/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dea0177e458b4f348afd908ed98b979d3a34a7e5a9b421a99486275ca561ff88": {
+      "description_zh": "建立、记录和维护设计系统令牌、组件、模式库、命名与治理，开展审计、定义层级并形成共享设计语言。",
+      "source": "Build, document, and maintain design systems with design tokens, component specifications, pattern libraries, naming conventions, and governance processes. Conduct system audits, define component hierarchies, and establish shared design languages.",
+      "source_sha256": "dea0177e458b4f348afd908ed98b979d3a34a7e5a9b421a99486275ca561ff88",
+      "source_path": "skills/design-systems/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35712d8a222870fb54d19f5896d7ac8947bda305f92600e0330b5a9ea5435c70": {
+      "description_zh": "设计交互、微交互、动画、状态机、手势与错误预防，规定产品在不同状态与情境对输入的响应。",
+      "source": "Design meaningful interactions, microinteractions, animations, state machines, gesture patterns, error prevention, and product behavior. Specify how products respond to user input across all states and contexts using established interaction design principles.",
+      "source_sha256": "35712d8a222870fb54d19f5896d7ac8947bda305f92600e0330b5a9ea5435c70",
+      "source_path": "skills/interaction-design/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50507fe1d27cd8d4ef1009848f766e6025f044c78a057c3a3d7c35e41209fcf3": {
+      "description_zh": "创建客户旅程、服务蓝图、体验和共情地图，指导图型、内容、绘制语法与对齐工作坊。",
+      "source": "Create customer journey maps, service blueprints, experience maps, empathy maps, and other alignment diagrams. Guides diagram type selection, content structure, illustration syntax, and alignment workshops.",
+      "source_sha256": "50507fe1d27cd8d4ef1009848f766e6025f044c78a057c3a3d7c35e41209fcf3",
+      "source_path": "skills/journey-mapping/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fecfd556543b35a8ecf19e478f1deacdd74b5e523036fc1cfc26aea30f8249f": {
+      "description_zh": "规划、执行与分析UX研究，编写访谈和测试计划、招募参与者、分析定性资料并形成洞察，覆盖生成、评估与持续探索研究。",
+      "source": "Plan, conduct, and analyze UX research using proven methodologies. Use when planning user research, writing interview scripts, creating test plans, recruiting participants, analyzing qualitative data, or synthesizing findings into actionable insights. Covers generative, evaluative, and continuous discovery research with specific frameworks, scoring rubrics, and templates.",
+      "source_sha256": "9fecfd556543b35a8ecf19e478f1deacdd74b5e523036fc1cfc26aea30f8249f",
+      "source_path": "skills/ux-research/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45259cabf899eabc912ab3da8123ab6952adca354bc6288f30308b455c7e5b7e": {
+      "description_zh": "通过竞品、机会映射、待完成任务、成果导向探索、价值主张和UX指标将设计决策连接业务结果，依据证据塑造方向。",
+      "source": "Connect design decisions to business outcomes through competitive analysis, opportunity mapping, Jobs to Be Done, outcome-driven discovery, value proposition design, and UX metrics. Shape product direction with strategic frameworks grounded in evidence.",
+      "source_sha256": "45259cabf899eabc912ab3da8123ab6952adca354bc6288f30308b455c7e5b7e",
+      "source_path": "skills/ux-strategy/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "970fe0e232807ba530b705ff9f17819ff1053665e5cee5e2b6b1f9ce69160287": {
+      "description_zh": "为按钮、标签、错误、通知、表单、引导和空状态等编写可访问界面文案，按目的、简洁、对话与清晰标准调整语气，并审查产品内容一致性。",
+      "source": "Create user-centered, accessible interface copy (microcopy) for digital products including buttons, labels, error messages, notifications, forms, onboarding, empty states, success messages, and help text. Use when writing or editing any text that appears in apps, websites, or software interfaces, designing conversational flows, establishing voice and tone guidelines, auditing product content for consistency and usability, reviewing UI strings, or improving existing interface copy. Applies UX writing best practices based on four quality standards — purposeful, concise, conversational, and clear. Includes accessibility guidelines, research-backed benchmarks (sentence length, comprehension rates, reading levels), expanded error patterns, tone adaptation frameworks, and comprehensive reference materials.",
+      "source_sha256": "970fe0e232807ba530b705ff9f17819ff1053665e5cee5e2b6b1f9ce69160287",
+      "source_path": "skills/ux-writing/SKILL.md",
+      "package_sha256": "26b495d6e101511645227a8e1dd1e96d3da7400bcef430d28aeae6ddc06cfc3e",
+      "source_package": "design-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad9e9d8545056723249f0d6d97d75f4a5b33157aa3f6f4b9368d5aff0e6f22d3": {
+      "description_zh": "探索视觉方向、情绪板、色板、字体、布局、图像和艺术指导，用于更新设计语言或品牌方向。",
+      "source": "Use when exploring visual direction, generating moodboards, proposing color palettes, typography systems, layout strategies, imagery/art direction, refreshing an existing design language, or setting brand-level direction. Activates for /creative, \"help me find a visual direction\", \"propose a palette\", \"what typography should we use\", \"moodboard\", \"font pairing\", \"grid system\", \"refresh our look\", \"rebrand\", \"art direction\".",
+      "source_sha256": "ad9e9d8545056723249f0d6d97d75f4a5b33157aa3f6f4b9368d5aff0e6f22d3",
+      "source_path": "skills/creative/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "edeea30137f9ebab2990f2ec2e43277cfe3745d4eb4dbcdee6e51cca59a45117": {
+      "description_zh": "按UX启发式、可访问性、设计系统、视觉质量与动效原则评估现有设计。",
+      "source": "Use to evaluate existing designs against UX heuristics, accessibility standards, DS compliance, visual quality, or motion principles. Activates for /design-review, \"review this design\", \"audit UI\", \"check accessibility\", \"is this compliant\", \"critique this screen\", \"WCAG check\", \"visual audit\", \"does this follow our DS\".",
+      "source_sha256": "edeea30137f9ebab2990f2ec2e43277cfe3745d4eb4dbcdee6e51cca59a45117",
+      "source_path": "skills/design-review/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbc76375aea8c241f80d0ae489f9d3a2f5f4c95fdfd0087970a17d7da17f3198": {
+      "description_zh": "使用既有设计系统或语言设计产品功能、流程、页面和屏幕，选择组件与模式，并识别缺失组件。",
+      "source": "Use when designing product features, flows, pages, or screens using an existing design system or design language. Activates for /design, \"design a feature\", \"build a page\", \"select components\", \"compose a flow\", \"what component should I use\", \"layout this screen\", \"is there a pattern for\", \"we're missing a component\".",
+      "source_sha256": "bbc76375aea8c241f80d0ae489f9d3a2f5f4c95fdfd0087970a17d7da17f3198",
+      "source_path": "skills/design/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46fcdd7cca8cb69249bc04a8553df0d5bd8e675bdfce5eec88305edc04031475": {
+      "description_zh": "依据企业设计系统设计功能、评估UI、选择组件和信息架构，提出新组件需求，也修复Figma脱离库的组件。",
+      "source": "Use when designing product features using an enterprise DS, evaluating existing UI, selecting DS components, reviewing information architecture, or requesting new components. Also use when fixing detached components in Figma files.",
+      "source_sha256": "46fcdd7cca8cb69249bc04a8553df0d5bd8e675bdfce5eec88305edc04031475",
+      "source_path": "skills/ds-consumer/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6f4ffccb672080d20ce4d50c1c4413052e821fde2bc13d27fec95a0a328cc35": {
+      "description_zh": "创建、更新、版本化或弃用设计系统令牌、组件及模式，处理变体、命名、语义版本与破坏性变化。",
+      "source": "Use when creating, updating, versioning, or deprecating design system tokens, components, or patterns. Activates for /ds-make, \"new component\", \"add token\", \"create a variant\", \"update a component\", \"bump version\", \"deprecate X\", \"semver\", \"scaffold design system\", \"token naming\", \"breaking change\".",
+      "source_sha256": "e6f4ffccb672080d20ce4d50c1c4413052e821fde2bc13d27fec95a0a328cc35",
+      "source_path": "skills/ds-make/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f65b86b03f17e84261f21d4de0b4a6547ec27fea9a90fa809d5bb28e8f88e386": {
+      "description_zh": "管理设计系统发布联动、采用率分析、文档生成和健康漂移监测，检查库与脱离组件。",
+      "source": "Use for DS operations — publishing cascades, adoption analytics, documentation generation, health and drift monitoring. Activates for /ds-manage, \"publish\", \"release cascade\", \"adoption report\", \"generate docs\", \"uspec\", \"check health\", \"library drift\", \"detached components\", \"DS audit\".",
+      "source_sha256": "f65b86b03f17e84261f21d4de0b4a6547ec27fea9a90fa809d5bb28e8f88e386",
+      "source_path": "skills/ds-manage/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bfec6fe85445fb94f8cb86623a449bfea58ff0f573c213b22a7b8e26737e7ea1": {
+      "description_zh": "创建、更新、审计、记录、版本化和发布设计系统组件、基础、图标与模式，也管理Shortcut工单和治理清单。",
+      "source": "Use when creating, updating, auditing, documenting, versioning, or publishing DS components, foundations, icons, or patterns. Also use when managing Shortcut tickets for DS work or running governance checklists.",
+      "source_sha256": "bfec6fe85445fb94f8cb86623a449bfea58ff0f573c213b22a7b8e26737e7ea1",
+      "source_path": "skills/ds-producer/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0da8d4ebf0ee02eab2dded0f842d085b6368aa37a364a01cf123f1d0f633074": {
+      "description_zh": "为design-superpowers的Figma工作安装或验证PluginOS，处理集成设置及插件缺失。",
+      "source": "Install or verify PluginOS for Figma work in design-superpowers. Use when the user runs `/figma-setup`, asks how to set up Figma integration, or hits a Figma command without PluginOS installed.",
+      "source_sha256": "c0da8d4ebf0ee02eab2dded0f842d085b6368aa37a364a01cf123f1d0f633074",
+      "source_path": "skills/figma-setup/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa38f7968cf37aeb3e0c6cf0dcc85b30a9d1c6490f799ced46ef73ea7ecf7561": {
+      "description_zh": "从截图、网址、Figma文件或代码库提取设计语言与令牌，逆向整理为DESIGN.md。",
+      "source": "Use to extract design language from an existing artifact (screenshot, URL, Figma file, or codebase) and generate a DESIGN.md. Activates for /map-design, \"extract tokens\", \"generate DESIGN.md\", \"crawl this design\", \"document design language\", \"what tokens does this use\", \"reverse-engineer this UI\", \"create a DESIGN.md from this\".",
+      "source_sha256": "fa38f7968cf37aeb3e0c6cf0dcc85b30a9d1c6490f799ced46ef73ea7ecf7561",
+      "source_path": "skills/map-design/SKILL.md",
+      "package_sha256": "8c4c4e581c636f80ccfd3da5f4901d716a6823fb10f0d4e81d9090c43e60763f",
+      "source_package": "design-superpowers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "409948ed8ae7ed133a355cef06f4557c8e88adaf465e7f5376bb901d964d88ba": {
+      "description_zh": "按Arc美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Arc's UI design system. Use when building interfaces inspired by Arc's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "409948ed8ae7ed133a355cef06f4557c8e88adaf465e7f5376bb901d964d88ba",
+      "source_path": "skills/brands/arc/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d27f16f6fafa440e2e2b004407d33d99a7a2c177f1bb2b1ae66f883e329746c6": {
+      "description_zh": "按Ashby美学构建界面，使用其深色模式、Inter字体与4像素网格设计系统。",
+      "source": "Ashby's UI design system. Use when building interfaces inspired by Ashby's aesthetic - dark mode, Inter font, 4px grid.",
+      "source_sha256": "d27f16f6fafa440e2e2b004407d33d99a7a2c177f1bb2b1ae66f883e329746c6",
+      "source_path": "skills/brands/ashby/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da5a84ff8995da0a6566a9213301047a212f6880f2179f5a1067ec62531406bc": {
+      "description_zh": "按Awwwards美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Awwwards's UI design system. Use when building interfaces inspired by Awwwards's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "da5a84ff8995da0a6566a9213301047a212f6880f2179f5a1067ec62531406bc",
+      "source_path": "skills/brands/awwwards/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26f0491ba1a6e3805897a0d492167bdee3a634f09e3124a033db88be905f9db6": {
+      "description_zh": "按Beehiiv美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Beehiiv's UI design system. Use when building interfaces inspired by Beehiiv's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "26f0491ba1a6e3805897a0d492167bdee3a634f09e3124a033db88be905f9db6",
+      "source_path": "skills/brands/beehiiv/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a041d11692fc879f0afcdedbc6d75329de896e587c5b5ad629aec2bcc45c05b": {
+      "description_zh": "按Clerk美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Clerk's UI design system. Use when building interfaces inspired by Clerk's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "0a041d11692fc879f0afcdedbc6d75329de896e587c5b5ad629aec2bcc45c05b",
+      "source_path": "skills/brands/clerk/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7cb3ca530c9bbdddcddeda72bc90a1d9cc7ecc24e6f308020130d50b2c545263": {
+      "description_zh": "按Convertkit美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Convertkit's UI design system. Use when building interfaces inspired by Convertkit's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "7cb3ca530c9bbdddcddeda72bc90a1d9cc7ecc24e6f308020130d50b2c545263",
+      "source_path": "skills/brands/convertkit/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69cb8c180cc5c479d30e17e356ec888addb74dbd1c496576df7bf9aa99008d41": {
+      "description_zh": "按Copy Ai美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Copy Ai's UI design system. Use when building interfaces inspired by Copy Ai's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "69cb8c180cc5c479d30e17e356ec888addb74dbd1c496576df7bf9aa99008d41",
+      "source_path": "skills/brands/copy-ai/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f6374dc76341d03c3dd659e8c3ad5444f09df82899d4ce31a4706fa951e0220": {
+      "description_zh": "按Craft美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Craft's UI design system. Use when building interfaces inspired by Craft's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "6f6374dc76341d03c3dd659e8c3ad5444f09df82899d4ce31a4706fa951e0220",
+      "source_path": "skills/brands/craft/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "444061cf704b6aa388bdb48a5f7c48f818045ab81d1fd98c71229aca63a222db": {
+      "description_zh": "按Deel美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Deel's UI design system. Use when building interfaces inspired by Deel's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "444061cf704b6aa388bdb48a5f7c48f818045ab81d1fd98c71229aca63a222db",
+      "source_path": "skills/brands/deel/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06976f6927ba80e04da4929366cf20e5193213f5393e51409ea43494c4bb8619": {
+      "description_zh": "按Ghost美学构建界面，使用其深色模式、Inter字体与4像素网格设计系统。",
+      "source": "Ghost's UI design system. Use when building interfaces inspired by Ghost's aesthetic - dark mode, Inter font, 4px grid.",
+      "source_sha256": "06976f6927ba80e04da4929366cf20e5193213f5393e51409ea43494c4bb8619",
+      "source_path": "skills/brands/ghost/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ea8f7a6de9928d8356f3903cbf0223b2928fbc6a0085ee93f03c48a2161908b": {
+      "description_zh": "按Gusto美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Gusto's UI design system. Use when building interfaces inspired by Gusto's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "4ea8f7a6de9928d8356f3903cbf0223b2928fbc6a0085ee93f03c48a2161908b",
+      "source_path": "skills/brands/gusto/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26be76aeb8cb9f2f92cff176210fccd9af2d9e52261dc0d8f7c57641428f0c84": {
+      "description_zh": "按Hugging Face美学构建界面，使用其深色模式、Inter字体与4像素网格设计系统。",
+      "source": "Hugging Face's UI design system. Use when building interfaces inspired by Hugging Face's aesthetic - dark mode, Inter font, 4px grid.",
+      "source_sha256": "26be76aeb8cb9f2f92cff176210fccd9af2d9e52261dc0d8f7c57641428f0c84",
+      "source_path": "skills/brands/hugging-face/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f17f02acab24e957572c98bf1776041664053a749ea17d8a943a9b8b6e1efd19": {
+      "description_zh": "按Intercom美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Intercom's UI design system. Use when building interfaces inspired by Intercom's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "f17f02acab24e957572c98bf1776041664053a749ea17d8a943a9b8b6e1efd19",
+      "source_path": "skills/brands/intercom/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3dcc30f110332da9b71daa9c933ec47454ebced1cbe20215e6106019bdd97237": {
+      "description_zh": "按Lemonsqueezy美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Lemonsqueezy's UI design system. Use when building interfaces inspired by Lemonsqueezy's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "3dcc30f110332da9b71daa9c933ec47454ebced1cbe20215e6106019bdd97237",
+      "source_path": "skills/brands/lemonsqueezy/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5ed8fc2e24ce1a93a87987527a2201356a6b6fd878a5f0ba89bc1b26b02eef5": {
+      "description_zh": "按Linear美学构建界面，使用其深色模式、Inter字体与4像素网格设计系统。",
+      "source": "Linear's UI design system. Use when building interfaces inspired by Linear's aesthetic - dark mode, Inter font, 4px grid.",
+      "source_sha256": "b5ed8fc2e24ce1a93a87987527a2201356a6b6fd878a5f0ba89bc1b26b02eef5",
+      "source_path": "skills/brands/linear/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d00cc1c3552c49079ef8f0510e11f6e7e4c011d23ba729504d0b1f947b53f966": {
+      "description_zh": "按Liveblocks美学构建界面，使用其深色模式、Inter字体与4像素网格设计系统。",
+      "source": "Liveblocks's UI design system. Use when building interfaces inspired by Liveblocks's aesthetic - dark mode, Inter font, 4px grid.",
+      "source_sha256": "d00cc1c3552c49079ef8f0510e11f6e7e4c011d23ba729504d0b1f947b53f966",
+      "source_path": "skills/brands/liveblocks/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e428cecd77157e8a385b4c257e02ab7d8f735b96a1a0547e479e0b5a7286c2e": {
+      "description_zh": "按Matter美学构建界面，使用其深色模式、Inter字体与4像素网格设计系统。",
+      "source": "Matter's UI design system. Use when building interfaces inspired by Matter's aesthetic - dark mode, Inter font, 4px grid.",
+      "source_sha256": "6e428cecd77157e8a385b4c257e02ab7d8f735b96a1a0547e479e0b5a7286c2e",
+      "source_path": "skills/brands/matter/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3b872bbaf41d3a2fad1da7fd6f6276d666aff10d4970507132b9b7b6352b1c2": {
+      "description_zh": "按Mercury美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Mercury's UI design system. Use when building interfaces inspired by Mercury's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "b3b872bbaf41d3a2fad1da7fd6f6276d666aff10d4970507132b9b7b6352b1c2",
+      "source_path": "skills/brands/mercury/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "560b9389810398e906849ae47967f65564918ef6aefd7f0377ea8fd0dededa46": {
+      "description_zh": "按Spotify美学构建界面，使用其深色模式、Inter字体与4像素网格设计系统。",
+      "source": "Spotify's UI design system. Use when building interfaces inspired by Spotify's aesthetic - dark mode, Inter font, 4px grid.",
+      "source_sha256": "560b9389810398e906849ae47967f65564918ef6aefd7f0377ea8fd0dededa46",
+      "source_path": "skills/brands/spotify/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b64c77c99fcf32f53427e9694577722c6c098913c6a996e85e7b3022cc542160": {
+      "description_zh": "按Superhuman美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Superhuman's UI design system. Use when building interfaces inspired by Superhuman's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "b64c77c99fcf32f53427e9694577722c6c098913c6a996e85e7b3022cc542160",
+      "source_path": "skills/brands/superhuman/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fdbf72594158a93402ee28da5e9ba9b921e90f2989542ade597442aa4783acfe": {
+      "description_zh": "按Todoist美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Todoist's UI design system. Use when building interfaces inspired by Todoist's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "fdbf72594158a93402ee28da5e9ba9b921e90f2989542ade597442aa4783acfe",
+      "source_path": "skills/brands/todoist/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "521ccdfc80062258946cd268e78544a864753a5ce04eef7fb2b486d9a55d3ea5": {
+      "description_zh": "按Vercel美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Vercel's UI design system. Use when building interfaces inspired by Vercel's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "521ccdfc80062258946cd268e78544a864753a5ce04eef7fb2b486d9a55d3ea5",
+      "source_path": "skills/brands/vercel/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59bac5329d0d2e9be1bf126160d263f84e6082adcf1ebe5276538357b9c5cf24": {
+      "description_zh": "按Warp美学构建界面，使用其浅色模式、Inter字体与4像素网格设计系统。",
+      "source": "Warp's UI design system. Use when building interfaces inspired by Warp's aesthetic - light mode, Inter font, 4px grid.",
+      "source_sha256": "59bac5329d0d2e9be1bf126160d263f84e6082adcf1ebe5276538357b9c5cf24",
+      "source_path": "skills/brands/warp/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "665a3849e98e622dfa2d36b266914cd8a31e7d96fe71a28629f45ed6693ee54e": {
+      "description_zh": "按会话已锁定设计系统审计现有UI文件，生成违规及修复合规报告，支持121个品牌。",
+      "source": "Audit existing UI files against the locked design system. Returns compliance report with violations and fixes. Supports all 121 brands.",
+      "source_sha256": "665a3849e98e622dfa2d36b266914cd8a31e7d96fe71a28629f45ed6693ee54e",
+      "source_path": "skills/check/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1d0cd4e8a4f27ac4d668f8cf5159241255994d48019a0dce13919451e8c6b1c": {
+      "description_zh": "逐令牌比较指定文件与会话锁定设计系统的差异。",
+      "source": "Token-by-token diff of a file against the locked design system. Usage: /design-drift:diff [file].",
+      "source_sha256": "d1d0cd4e8a4f27ac4d668f8cf5159241255994d48019a0dce13919451e8c6b1c",
+      "source_path": "skills/diff/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7be98a7fc3ac66b86e03917ee280321a7d6c47a8f684ec34ff40ec73d0052d21": {
+      "description_zh": "预览指定品牌DESIGN.md，不启用后续设计约束。",
+      "source": "Preview a DESIGN.md for any brand. Does not activate enforcement. Usage: /design-drift:fetch [brand].",
+      "source_sha256": "7be98a7fc3ac66b86e03917ee280321a7d6c47a8f684ec34ff40ec73d0052d21",
+      "source_path": "skills/fetch/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa3646e55ca348747e13bcb47c5960ffeb140ee19af296205c7c17f366ebab34": {
+      "description_zh": "为会话锁定品牌设计系统，对后续全部UI写入启用漂移约束，支持121个品牌。",
+      "source": "Lock a brand design system for the session. Activates drift enforcement on all subsequent UI writes. Supports 121 brands. Usage: /design-drift:lock [brand].",
+      "source_sha256": "aa3646e55ca348747e13bcb47c5960ffeb140ee19af296205c7c17f366ebab34",
+      "source_path": "skills/lock/SKILL.md",
+      "package_sha256": "77c02cc833b7872d14572b4c53404d118e679c3c73072ec0b26d292f36058f2c",
+      "source_package": "designs-drift-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb8a5f4300aceffc2422247c562728dd7a539c7d8927764c4d9f36d6da2db8fb": {
+      "description_zh": "通过Desktop Commander设置、连接、核验和修复Claude Desktop与MCP，检查配置文件与工具不加载，并排查Ollama、LM Studio、OpenClaw或Hermes等本地AI网关。",
+      "source": "Set up, connect, validate, and repair Claude Desktop and MCP servers using Desktop Commander — inspecting and fixing mcp.json / claude_desktop_config.json, getting MCP servers to connect, and diagnosing local AI tooling. Use when a user wants to install, configure, connect, validate, or fix Claude Desktop, an MCP server, an MCP config file, or a local AI agent/gateway. Trigger on the symptoms that actually bring people in: \"Claude can't see my tools\", \"my MCP server isn't showing up\", \"tools aren't loading in Claude\", \"add an MCP server\", \"my MCP isn't connecting\", \"fix my Claude Desktop config\", \"the agent won't respond\", \"wire up Ollama / LM Studio\", \"restart Claude Desktop\". Also covers local agent gateways like OpenClaw and Hermes.",
+      "source_sha256": "eb8a5f4300aceffc2422247c562728dd7a539c7d8927764c4d9f36d6da2db8fb",
+      "source_path": "skills/ai-tools-setup/SKILL.md",
+      "package_sha256": "50a68b6ddf9bcbccca8e53827440920495881f9b10c1404954337e78cb3a5ea8",
+      "source_package": "Desktop Commander-0.2.0-v21.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16e74b45248d01d1f848f54138b76c3f5f4eabd758d6405e5a7dd5e257b56aa4": {
+      "description_zh": "对macOS、Windows或Linux进行全面只读健康检查，分析CPU、内存、存储、电池、启动项与更新，提供评分和通俗优先建议；清理须明确批准，默认不需sudo。",
+      "source": "Run a comprehensive, read-only health check on the user's computer and return a scored chat summary with prioritized, plain-English recommendations and safe cleanup suggestions. Use this whenever the user wants to check their computer's health, speed it up, free up / reclaim disk space, find what's eating CPU / memory / storage, check battery health and wear, audit login & startup items, see pending updates, or asks for a \"tune-up\", \"checkup\", \"system report\", \"health check\", or \"is my Mac/PC/laptop healthy\". Trigger even on casual phrasing like \"my laptop feels slow\", \"why is my fan so loud\", \"my computer is laggy\", \"running out of space\", or \"clean up my machine\". Works on macOS, Windows, and Linux. This is a Desktop Commander skill: it relies on a real local shell (start_process / interact_with_process) and is strictly read-only by default — it never needs sudo and only performs cleanups the user explicitly approves.",
+      "source_sha256": "16e74b45248d01d1f848f54138b76c3f5f4eabd758d6405e5a7dd5e257b56aa4",
+      "source_path": "skills/computer-health-check/SKILL.md",
+      "package_sha256": "50a68b6ddf9bcbccca8e53827440920495881f9b10c1404954337e78cb3a5ea8",
+      "source_package": "Desktop Commander-0.2.0-v21.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a624a36729550c9e19e9de166fa037737c132421e8f329a9f6b2e980ffbe9bd0": {
+      "description_zh": "介绍Desktop Commander的持久Shell与REPL、长进程、工作区外文件、结构化和大型文件、搜索、SSH与跨轮状态能力。",
+      "source": "Use for Desktop Commander MCP capabilities — persistent shells and REPLs, long-running processes, filesystem beyond the workspace, structured files (.xlsx, .docx, .pdf, images) and large local data files such as CSVs, ripgrep search at scale, SSH, or cross-turn state.",
+      "source_sha256": "a624a36729550c9e19e9de166fa037737c132421e8f329a9f6b2e980ffbe9bd0",
+      "source_path": "skills/desktop-commander-overview/SKILL.md",
+      "package_sha256": "50a68b6ddf9bcbccca8e53827440920495881f9b10c1404954337e78cb3a5ea8",
+      "source_package": "Desktop Commander-0.2.0-v21.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1c383734fcc2d8211e9d33de8e63f1bc11084dbbe6904919c02a76b24357c3a": {
+      "description_zh": "创建和维护AI可读、可搜索、可更新的Markdown知识库，新增修改笔记、组织文档、建立索引并清理维护。",
+      "source": "Create and maintain a Markdown knowledge base that any AI agent can read, search, and update. Use when the user wants to start a knowledge base, add or update notes, organize docs/notes for an agent or LLM to consume, build an index of notes, or run a cleanup/maintenance pass on an existing MD knowledge base. Triggers include \"knowledge base\", \"KB\", \"notes for the agent\", \"index of notes\", \"second brain\", \"docs for AI context\", \"add a note\", \"update the KB\".",
+      "source_sha256": "f1c383734fcc2d8211e9d33de8e63f1bc11084dbbe6904919c02a76b24357c3a",
+      "source_path": "skills/knowledge-base/SKILL.md",
+      "package_sha256": "50a68b6ddf9bcbccca8e53827440920495881f9b10c1404954337e78cb3a5ea8",
+      "source_package": "Desktop Commander-0.2.0-v21.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f9579f8534e391512bf3e2a430204333aef2b851a06b2ab59abf9f49415924a": {
+      "description_zh": "仅在明确Obsidian场景中组织资料库，建立内容地图、双链、属性与仪表板，检查孤立笔记、整理目录和重复并准备AI使用。",
+      "source": "Organize Obsidian vaults with MOCs, wikilinks, frontmatter/properties, dashboards, orphan-note checks, and cleanup workflows. Use ONLY when the user explicitly refers to Obsidian — by naming \"Obsidian\", an Obsidian \"vault\", or an Obsidian-specific feature such as wikilinks (\"[[ ]]\"), the Dataview or Bases plugins, or Obsidian Properties. Within that Obsidian context it covers creating Maps of Content, adding/fixing wikilinks, finding orphan notes, normalizing YAML frontmatter, generating Dataview/Bases dashboards, organizing folders, deduplicating or renaming notes, and preparing the vault for AI use. Do NOT use this skill for generic note-taking, Markdown, or knowledge-base requests that don't mention Obsidian.",
+      "source_sha256": "2f9579f8534e391512bf3e2a430204333aef2b851a06b2ab59abf9f49415924a",
+      "source_path": "skills/obsidian-vault/SKILL.md",
+      "package_sha256": "50a68b6ddf9bcbccca8e53827440920495881f9b10c1404954337e78cb3a5ea8",
+      "source_package": "Desktop Commander-0.2.0-v21.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b63dcd7bd41e524533611d79e78b5216429fe361c0751cf9188c218deb1831b": {
+      "description_zh": "使用Desktop Commander处理持久终端、REPL、数据库Shell、服务器、SSH和PowerShell，检查命令、进程与端口并保存脚本；破坏性命令需明确确认。",
+      "source": "Use Desktop Commander for terminal and command-line work, especially anything that needs a shell whose state persists across turns: Python/Node REPLs, database shells, dev servers and other long-running processes, SSH into remote machines, and Windows PowerShell. Also handles everyday terminal tasks — navigating folders, choosing the right command for the user's shell (PowerShell, cmd, bash, zsh), running Docker/curl/cloud-CLI commands, inspecting processes and ports, and saving recurring workflows as scripts — even when the user doesn't say \"Desktop Commander\" or \"terminal.\" Reach for it on pasted errors like \"command not found\", \"permission denied\", \"EADDRINUSE\", \"address already in use\", \"npm ERR!\", \"ModuleNotFoundError\", or \"ENOENT\", and on intents like \"what's using port 3000\", \"kill that process\", \"ssh into my server\", or \"why won't my dev server start\". Works on Windows, macOS, and Linux. Never run destructive commands without explicit confirmation.",
+      "source_sha256": "8b63dcd7bd41e524533611d79e78b5216429fe361c0751cf9188c218deb1831b",
+      "source_path": "skills/terminal/SKILL.md",
+      "package_sha256": "50a68b6ddf9bcbccca8e53827440920495881f9b10c1404954337e78cb3a5ea8",
+      "source_package": "Desktop Commander-0.2.0-v21.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a1e598276b6b766905c932d96a4eecac0862978901764284b79d46171be4680": {
+      "description_zh": "对用户尚未明确授权的重要行动向Destreamed提交需审批的计划、决定或规则，由用户批准或拒绝后执行。",
+      "source": "Submit a plan, decision, or proposed rule to Destreamed with `needs_approval: true` so the human can Approve or Deny before you execute. Use whenever you're about to do something material that the user has not already explicitly told you to do — refactors, deletions, dependency bumps, schema changes, new memos.",
+      "source_sha256": "1a1e598276b6b766905c932d96a4eecac0862978901764284b79d46171be4680",
+      "source_path": "skills/destreamed-propose/SKILL.md",
+      "package_sha256": "ff9da25cff4be8f2b70d6e357544c12b12ae1b05307bef2b7c38d8b49441fb5a",
+      "source_package": "Destreamed-0.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6bc853698ce701d78df7f08ccecb934d320e758b2b101d21b2aed1df303a4ebc": {
+      "description_zh": "遇到错误、缺陷或回归时搜索Destreamed既有解决方案，避免重复排查。",
+      "source": "Search Destreamed for prior solutions to a problem before re-solving it from scratch. Run this whenever the user reports an error, bug, regression, or unexpected behavior.",
+      "source_sha256": "6bc853698ce701d78df7f08ccecb934d320e758b2b101d21b2aed1df303a4ebc",
+      "source_path": "skills/destreamed-search/SKILL.md",
+      "package_sha256": "ff9da25cff4be8f2b70d6e357544c12b12ae1b05307bef2b7c38d8b49441fb5a",
+      "source_package": "Destreamed-0.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc0822b60c1a461ac330de45b41a4215259799f2de35df3780804c0f1990e570": {
+      "description_zh": "运行Destreamed任务调优流程，查看待办、备忘录、计划审批、步骤记录和任务完成，适用于开始会话或跟踪项目。",
+      "source": "Run the Destreamed tuner workflow. Use at session start, when the user asks \"what's on my plate\", or whenever you're about to start work in a tracked project. Walks through tasks, memos, plan-approval, step logging, and task completion.",
+      "source_sha256": "fc0822b60c1a461ac330de45b41a4215259799f2de35df3780804c0f1990e570",
+      "source_path": "skills/destreamed-tune/SKILL.md",
+      "package_sha256": "ff9da25cff4be8f2b70d6e357544c12b12ae1b05307bef2b7c38d8b49441fb5a",
+      "source_package": "Destreamed-0.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b903ba3a1df556733af8d425515ab636706ed5923041254ad5569ba2b47180a5": {
+      "description_zh": "通过Develop21连接器测试连接、设置或更新职业档案、依据简历规划求职与保存搜索，并查看扩展捕获的职位。",
+      "source": "Use when the user mentions Develop21 by name, wants to test their Develop21 connection, shares a resume or asks to set up their Develop21 career profile, wants to review or update what Develop21 knows about them, wants to plan a job search or run their saved searches, or asks about a job they captured or sent with the Develop21 extension. Requires the Develop21 connector.",
+      "source_sha256": "b903ba3a1df556733af8d425515ab636706ed5923041254ad5569ba2b47180a5",
+      "source_path": "skills/develop21-career-coach/SKILL.md",
+      "package_sha256": "7336e2885b5786615e2d11bcf6c179da28680450716c4f819d40acd5a5e9d755",
+      "source_package": "Develop21-0.14.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fefc7779a0e981640752b105c492c67f24c7e85463c68ac1aa40b9c5ec337160": {
+      "description_zh": "构建DevExpress Blazor DxAIChat会话UI，集成OpenAI、Azure、Ollama或自定义服务，配置提示、建议、流式响应、附件、Markdown及工具调用，并支持架构比较和迁移。",
+      "source": "Generate and configure DevExpress Blazor AI Chat (DxAIChat) — an AI-powered chat UI for Blazor apps. Use for building conversational assistants, integrating providers (OpenAI, Azure OpenAI, Ollama, or custom), configuring system prompts and suggestions, streaming responses, attachments, Markdown rendering, and tool/function calling via custom IChatResponseProvider implementations. Also use for DxAIChat, AI chat component, LLM chat UI, OpenAI setup, and chat architecture comparisons or migration scenarios.",
+      "source_sha256": "fefc7779a0e981640752b105c492c67f24c7e85463c68ac1aa40b9c5ec337160",
+      "source_path": "skills/devexpress-blazor-ai-chat/SKILL.md",
+      "package_sha256": "95d028d353a973433a05845aa676a7da120a89b98d7d745fea035e96fe71bad5",
+      "source_package": "DevExpress Blazor Components-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b511f04398a488aa6442fad6accccf9eef4b452a6696830a83256ebe647543c9": {
+      "description_zh": "生成和配置DevExpress Blazor图表，覆盖折线、柱、面积、饼、散点、财务等图型及绑定、轴、标注、交互、缩放、选中和导出打印。",
+      "source": "Generate and configure DevExpress Blazor Charts (DxChart, DxPieChart, DxPolarChart) for common chart types (line/bar/area/pie/donut/scatter/bubble/financial), data binding, axes, series, labels, tooltips, legends, annotations, zoom/pan, palettes, selection, and export/print. Also use for Blazor charts, data visualization, dashboards, and chart feature comparisons or migration scenarios.",
+      "source_sha256": "b511f04398a488aa6442fad6accccf9eef4b452a6696830a83256ebe647543c9",
+      "source_path": "skills/devexpress-blazor-charts/SKILL.md",
+      "package_sha256": "95d028d353a973433a05845aa676a7da120a89b98d7d745fea035e96fe71bad5",
+      "source_package": "DevExpress Blazor Components-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "336bdf3a4b260cb100fc490686cd83649de3c02f2e461fbde312bc4340795da1": {
+      "description_zh": "配置DevExpress Blazor DxComboBox下拉编辑器，支持同步异步数据、筛选、分组、虚拟化、多列模板、表单校验、按钮和级联选择。",
+      "source": "Build and configure the DevExpress Blazor ComboBox (DxComboBox) — a drop-down/select editor for Blazor Server, WebAssembly, and Hybrid apps. Use for data binding (sync/async), searching/filtering, grouping, virtualization, multi-column item lists, templates (item/edit box), validation in EditForm, Clear button and custom buttons, and cascading combo boxes. Also use for DxComboBox, combo box, dropdown, select, item picker, AllowUserInput, SearchMode, and editor feature comparisons or migration scenarios.",
+      "source_sha256": "336bdf3a4b260cb100fc490686cd83649de3c02f2e461fbde312bc4340795da1",
+      "source_path": "skills/devexpress-blazor-combobox/SKILL.md",
+      "package_sha256": "95d028d353a973433a05845aa676a7da120a89b98d7d745fea035e96fe71bad5",
+      "source_package": "DevExpress Blazor Components-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf0c022456fa126e4dd5ce778908e6934ea1fe4739963f329429847761aed6b7": {
+      "description_zh": "配置DevExpress Blazor条形仪表、范围选择、桑基、迷你图和地图，用于仪表板及流程展示，处理数据、标签、色板、选中悬停点击事件。",
+      "source": "Generate and configure DevExpress Blazor visualization components such as DxBarGauge, DxRangeSelector, DxSankey, DxSparkline, and DxMap. Use when building dashboards with gauges and range selection, Sankey flow diagrams, sparklines/mini charts, and interactive maps (data binding, labels, palettes, selection/hover/click events). Also use for bar gauge, range selector, Sankey, sparkline, map, and visualization feature comparisons or migration scenarios.",
+      "source_sha256": "cf0c022456fa126e4dd5ce778908e6934ea1fe4739963f329429847761aed6b7",
+      "source_path": "skills/devexpress-blazor-gauges/SKILL.md",
+      "package_sha256": "95d028d353a973433a05845aa676a7da120a89b98d7d745fea035e96fe71bad5",
+      "source_package": "DevExpress Blazor Components-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
