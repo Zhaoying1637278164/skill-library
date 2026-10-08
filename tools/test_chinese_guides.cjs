@@ -1,5 +1,5 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict'),path=require('path');
-const root=path.join(__dirname,'..');const data=JSON.parse(fs.readFileSync(path.join(root,'site/catalog.json'),'utf8'));
+const root=path.join(__dirname,'..');const data=JSON.parse(fs.readFileSync(path.join(root,'tools/catalog/generated/catalog.json'),'utf8'));const evidence=JSON.parse(fs.readFileSync(path.join(root,'tools/catalog/原包静态验收.json'),'utf8'));for(const r of data.records)r.reuse=evidence.records[String(r.id)].reuse;
 const context=vm.createContext({console,esc:s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))});
 vm.runInContext(fs.readFileSync(path.join(root,'source/guides.js'),'utf8'),context);
 let count=0;

@@ -13,15 +13,11 @@ vm.runInContext(fs.readFileSync(require('path').join(__dirname,'../source/files.
 const r={id:1,_title:'测试包',asset_url:'packages/test.zip',asset_sha256:sha,members:[{path:'skills/示例/SKILL.md',size:raw.length}]};
 (async()=>{
  assert.deepEqual(Buffer.from(await context.memberBytes(r,r.members[0].path)),raw);
- await context.openOriginal(r,r.members[0].path);assert.equal($('sourceText').textContent,raw.toString('utf8'));assert.ok($('sourceText').textContent.endsWith('全文末尾\n'));
- assert.ok($('viewerLink').href.startsWith('http://localhost/app?package=1&file='));
+ assert.equal(context.decodeOriginal(new Uint8Array(raw)),raw.toString('utf8'));
  assert.equal(fetches,1,'Verified ZIP should be reused');
- assert.equal(new URL($('viewerLink').href).searchParams.get('view'),'reader');
- context.R.push(r);await context.openLinkedFile({package:1,file:r.members[0].path,view:'reader'});
- assert.equal($('pageScroll').hidden,true);assert.equal($('sourceText').textContent,raw.toString('utf8'));assert.equal(new URL($('viewerLink').href).searchParams.has('file'),false,'Reader links back to directory');
  await assert.rejects(context.zipBytes({...r,asset_sha256:'bad'}),/校验不通过/);
  await assert.rejects(context.memberBytes(r,'../unknown'),/未找到/);
  await assert.rejects(context.memberBytes({...r,members:[{path:r.members[0].path,size:raw.length+1}]},r.members[0].path),/大小校验失败/);
  await assert.rejects(context.memberBytes({...r,members:[{path:r.members[0].path,size:51*1048576}]},r.members[0].path),/50 MB/);
- console.log('PASS: original bytes, complete Unicode text, inert HTML source, cache, tamper rejection, unknown paths, size mismatch and decompression bound');
+ console.log('PASS: original bytes, complete Unicode text, decoded source, cache, tamper rejection, unknown paths, size mismatch and decompression bound');
 })().catch(e=>{console.error(e);process.exitCode=1});

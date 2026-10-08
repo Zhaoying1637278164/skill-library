@@ -7,9 +7,9 @@ import re
 import zipfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / '目录报告'
-OUT.mkdir(exist_ok=True)
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / 'tools' / 'catalog' / 'generated'
+OUT.mkdir(parents=True, exist_ok=True)
 
 def clean(s):
     s = str(s or '')
@@ -42,8 +42,8 @@ def fm(text):
         result[k] = re.sub(r'^[>|][-+]?\s*', '', v).strip()
     return result
 
-def extract(p):
-    r = {'file': p.name, 'bytes': p.stat().st_size, 'status': '已读取', 'plugins': [], 'skills': [], 'commands': [], 'readmes': [], 'mcp_servers': [], 'config_names': [], 'paths': [], 'sha256': '', 'scanner_version': 2}
+def extract(p, source_name=None):
+    r = {'file': source_name or p.name, 'bytes': p.stat().st_size, 'status': '已读取', 'plugins': [], 'skills': [], 'commands': [], 'readmes': [], 'mcp_servers': [], 'config_names': [], 'paths': [], 'sha256': '', 'scanner_version': 3, 'references': []}
     try:
         with zipfile.ZipFile(p) as z:
             ns = [n for n in z.namelist() if not n.endswith('/')]
@@ -60,12 +60,14 @@ def extract(p):
                             if isinstance(j.get('userConfig'), dict): r['config_names'] += list(j['userConfig'])
                     except Exception:
                         pass
-                if low.endswith('skill.md'):
+                if Path(low).name == 'skill.md':
                     t = readtext(z, n)
                     f = fm(t)
                     heads = re.findall(r'^#{1,3}\s+(.+)', t, re.M)
                     body = t.split('---', 2)[-1] if t.startswith('---') else t
                     r['skills'].append({'path': n, 'name': f.get('name') or Path(n).parent.name, 'description': f.get('description', ''), 'headings': heads[:18], 'excerpt': body[:2600]})
+                elif low.endswith('.md'):
+                    r['references'].append({'path': n})
                 if '/commands/' in '/' + low and low.endswith('.md'):
                     t = readtext(z, n)
                     f = fm(t)
@@ -89,31 +91,39 @@ def extract(p):
     return r
 
 def main():
-    fs = sorted(ROOT.glob('*.zip'), key=lambda p: p.name.casefold())
-    existing = {}
+    # Published archive copies are byte-verified assets; do not depend on iCloud placeholders.
+    assets = json.loads((ROOT / 'assets.json').read_text())
+    names = {x['id']: x for x in json.loads((ROOT / 'tools/catalog/包源清单.json').read_text())}
+    assets = [{**names[a['id']], **a} for a in assets]
     cache = OUT / '原始扫描.jsonl'
+    existing = {}
     if cache.exists():
         for line in cache.read_text().splitlines():
             try:
                 r = json.loads(line)
-                if r['status'] == '已读取' and r.get('scanner_version') == 2: existing[r['file']] = r
-            except Exception:
+                if r['status'] == '已读取' and r.get('scanner_version') == 3:
+                    existing[(r['file'], r['sha256'])] = r
+            except (ValueError, KeyError):
                 pass
-    local = [p for p in fs if p.stat().st_blocks > 0 and p.name not in existing]
-    print(f'总数 {len(fs)}；已缓存 {len(existing)}；本地待扫描 {len(local)}；占位 {sum(p.stat().st_blocks == 0 for p in fs)}', flush=True)
-    with cache.open('a', encoding='utf-8') as sink, cf.ThreadPoolExecutor(max_workers=8) as ex:
-        for i, r in enumerate(ex.map(extract, local), 1):
-            sink.write(json.dumps(r, ensure_ascii=False) + '\n'); sink.flush()
-            existing[r['file']] = r
-            if i % 100 == 0: print(f'新增读取 {i}/{len(local)}', flush=True)
-    rs = []
-    for p in fs:
-        rs.append(existing.get(p.name) or {'file':p.name, 'bytes':p.stat().st_size, 'status':'iCloud占位待读取', 'plugins':[], 'skills':[], 'commands':[], 'readmes':[], 'mcp_servers':[], 'paths':[], 'sha256':''})
-    (OUT / '完整扫描.json').write_text(json.dumps(rs, ensure_ascii=False, indent=2))
-    # Keep one checkpoint per successfully read package, avoiding old scanner
-    # versions and repeated cache entries from growing the report indefinitely.
-    cache.write_text(''.join(json.dumps(r, ensure_ascii=False)+'\n' for r in rs if r['status']=='已读取'), encoding='utf-8')
-    print(f'已生成完整扫描：{len(rs)} 项；已读取 {sum(r["status"] == "已读取" for r in rs)}', flush=True)
+    jobs = [(ROOT / 'site' / a['asset_url'], a) for a in assets if a.get('asset_url')]
+    results = {}
+    def scan(job):
+        p, asset = job
+        cached = existing.get((asset['file'], asset['asset_sha256']))
+        r = cached or extract(p, asset['file'])
+        if r['status'] == '已读取' and r['sha256'] != asset['asset_sha256']:
+            raise ValueError('原包校验失败：' + asset['file'])
+        return asset['id'], r
+    print(f'目录记录 {len(assets)}；原包 {len(jobs)}；缓存 {len(existing)}', flush=True)
+    with cache.open('w', encoding='utf-8') as sink, cf.ThreadPoolExecutor(max_workers=8) as ex:
+        for i, (rid, r) in enumerate(ex.map(scan, jobs), 1):
+            results[rid] = r
+            if r['status'] == '已读取':
+                sink.write(json.dumps(r, ensure_ascii=False) + '\n'); sink.flush()
+            if i % 100 == 0: print(f'静态读取 {i}/{len(jobs)}', flush=True)
+    rs = [results.get(a['id']) or {'file':a['file'], 'bytes':a.get('bytes',0), 'status':'原包待读取', 'plugins':[], 'skills':[], 'commands':[], 'readmes':[], 'mcp_servers':[], 'paths':[], 'references':[], 'sha256':''} for a in sorted(assets, key=lambda x:x['id'])]
+    (OUT / '完整扫描.json').write_text(json.dumps(rs, ensure_ascii=False))
+    print(f'完成：{len(rs)} 项，{sum(len(r["skills"]) for r in rs)} 条真实技能', flush=True)
 
 if __name__ == '__main__':
     main()

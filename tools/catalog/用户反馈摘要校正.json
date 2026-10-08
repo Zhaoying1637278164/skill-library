@@ -1,0 +1,46 @@
+{
+  "681": {
+    "file": "gl-reconciler-0.1.0-v1.zip",
+    "summary_zh": "按交易日或期间核对总账与明细账，匹配头寸和交易记录，分类差异、追溯原始分录，并将结果送交签核。",
+    "source_paths": [
+      ".claude-plugin/plugin.json",
+      "skills/gl-recon/SKILL.md",
+      "skills/break-trace/SKILL.md"
+    ],
+    "source_description": "Finds breaks, traces root cause, routes for sign-off",
+    "source_skills": [
+      {
+        "path": "skills/break-trace/SKILL.md",
+        "description": "Root-cause a reconciliation break to its source transaction or posting — follow the audit trail from the break row back to the originating entry on each side and state what differs and why. Use after gl-recon has classified a break."
+      },
+      {
+        "path": "skills/gl-recon/SKILL.md",
+        "description": "Reconcile general ledger to subledger for a trade date or period — match at the position or transaction level, surface breaks, and classify each break by likely cause. Use for daily or month-end recon runs across asset classes."
+      }
+    ]
+  },
+  "567": {
+    "file": "earnings-reviewer-0.1.1-v1.zip",
+    "summary_zh": "根据财报电话会议与申报文件更新分析模型，分析季度业绩与预期差异，并起草股票研究报告。",
+    "source_paths": [
+      ".claude-plugin/plugin.json",
+      "skills/earnings-analysis/SKILL.md"
+    ],
+    "source_description": "Earnings call and filings to model update to note draft",
+    "source_skills": [
+      {
+        "path": "skills/earnings-analysis/SKILL.md",
+        "description": "Create professional equity research earnings update reports (8-12 pages, 3,000-5,000 words) analyzing quarterly results for companies already under coverage. Fast-turnaround format focusing on beat/miss analysis, key metrics, updated estimates, and revised thesis. Includes 1-3 summary tables and 8-12 charts. Use when user requests \"earnings update\", \"quarterly update\", \"earnings analysis\", \"Q1/Q2/Q3/Q4 results\", or post-earnings report."
+      }
+    ]
+  },
+  "1489": {
+    "file": "Statutory Reporting Plugin-1.0.0-v2.zip",
+    "summary_zh": "将试算平衡表分类映射为报表科目，生成财务报表及附注；支持 Ind AS、IFRS、印度 GAAP 和美国 GAAP。",
+    "source_paths": [
+      ".claude-plugin/plugin.json"
+    ],
+    "source_description": "Generate statutory financial statements from Trial Balances. Supports Ind AS (India), IFRS, Indian GAAP, and US GAAP. Classifies accounts, builds Balance Sheet, P&L, Cash Flow Statement, Changes in Equity, and Notes to Accounts following Schedule III / IAS 1 formats. Built by JupiteX Technologies — Chartered Accountants and AI architects.",
+    "source_skills": []
+  }
+}

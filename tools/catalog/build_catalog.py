@@ -6,11 +6,12 @@ import csv
 import html
 import json
 import re
+import hashlib
 from pathlib import Path
 from taxonomy import refine
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / '目录报告'
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / 'tools/catalog/generated'
 
 # Chinese navigation labels are editorial aids; exact capabilities remain tied
 # to the source manifest and skill descriptions shown alongside them.
@@ -215,7 +216,17 @@ def build_html(records,stats):
     render_web(records,stats,OUT)
 
 def main():
+    OUT.mkdir(parents=True, exist_ok=True)
     records=json.loads((OUT/'完整扫描.json').read_text())
+    originals=json.loads((Path(__file__).parent/'保留中文摘要.json').read_text())
+    templates=json.loads((Path(__file__).parent/'原模板摘要.json').read_text())
+    evidence_file=Path(__file__).parent/'中文摘要依据.json'
+    evidence=json.loads(evidence_file.read_text()) if evidence_file.exists() else {}
+    if isinstance(evidence.get('records'),list):evidence={str(x['id']):x for x in evidence['records']}
+    zh_file=Path(__file__).parent/'技能中文说明.json'
+    zh=json.loads(zh_file.read_text()) if zh_file.exists() else {}
+    corrections_path=Path(__file__).parent/'用户反馈摘要校正.json'
+    corrections=json.loads(corrections_path.read_text()) if corrections_path.exists() else {}
     hashes=collections.defaultdict(list);names=collections.defaultdict(list)
     for r in records:
         if r['sha256']:hashes[r['sha256']].append(r['file'])
@@ -223,41 +234,31 @@ def main():
     for i,r in enumerate(records,1):
         for s in r['skills']+r['commands']:s['description']=decode_description(s['description'])
         classify(r);r['id']=i
+        if str(i) in originals:r['summary_zh']=originals[str(i)]
+        # Record-specific editorial evidence avoids confusing unrelated packages with the same name.
+        e=evidence.get(str(i),{})
+        if str(i) in templates and not (isinstance(e,dict) and e.get('summary_zh')):r['summary_zh']=templates[str(i)]
+        if isinstance(e,dict) and e.get('summary_zh') and str(i) not in originals:r['summary_zh']=e['summary_zh']
+        correction=corrections.get(str(i))
+        if correction:
+            if correction['file']!=r['file'] or correction['source_description']!=r['description']:
+                raise ValueError('人工摘要校正的来源已变化：'+r['file'])
+            r['summary_zh']=correction['summary_zh']
         r['duplicates']=[x for x in hashes.get(r['sha256'],[]) if x!=r['file']]
         r['same_name']=[x for x in names[r['name']] if x!=r['file']]
-        for s in r['skills']:s['name_hint']=human_name(s['name'])
+        for s in r['skills']:
+            s['name_hint']=human_name(s['name'])
+            key=hashlib.sha256(s['description'].encode()).hexdigest()
+            entry=zh.get('by_path',{}).get(r['file']+':'+s['path']) or zh.get('by_path',{}).get(str(i)+':'+s['path']) or zh.get('translations',{}).get(key)
+            if isinstance(entry,str):s['description_zh']=entry
+            elif isinstance(entry,dict):
+                if entry.get('method')=='本地逐条人工意译并核对适用范围' and entry.get('source_sha256')!=key:
+                    raise ValueError('中文技能说明的原文已变化：'+r['file']+':'+s['path'])
+                s['description_zh']=entry.get('description_zh','')
+        r['counts']['参考资料']=len(r.get('references',[]))
     stats={'total':len(records),'read':sum(r['status']=='已读取' for r in records),'pending':sum(r['status']!='已读取' for r in records),'skills':sum(len(r['skills']) for r in records),'commands':sum(len(r['commands']) for r in records),'bytes':sum(r['bytes'] for r in records),'duplicate_groups':sum(len(v)>1 for v in hashes.values()),'categories':dict(collections.Counter(r['category'] for r in records))}
-    (OUT/'目录数据.json').write_text(json.dumps({'stats':stats,'records':records},ensure_ascii=False,indent=2),encoding='utf-8')
-    with (OUT/'目录总表.csv').open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.writer(f);w.writerow(['编号','压缩包','读取状态','用途分类','工作场景','具体任务','全部任务分类','主题','中文用途导航','原始功能说明','包形态','大小字节','包内文件数','技能数','命令数','MCP服务','适配线索','使用条件','同内容副本','同名产品其他文件','证据边界'])
-        for r in records:w.writerow([r['id'],r['file'],r['status'],r['category'],r['scene'],r['task'],'；'.join(' → '.join(t) for t in r['taxons']),r['topic'],r['summary_zh'],r['description'],r['form'],r['bytes'],len(r['paths']),len(r['skills']),len(r['commands']),' / '.join(sorted(set(r['mcp_servers']))),' / '.join(r['platforms']),'；'.join(r['requirements']),'；'.join(r['duplicates']),'；'.join(r['same_name']),r['evidence_note']])
-    with (OUT/'技能明细.csv').open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.writer(f);w.writerow(['包编号','压缩包','分类','工作场景','主要任务','类型','技能或命令','名称词语提示','原始用途说明','包内路径','章节'])
-        for r in records:
-            for typ,items in [('技能',r['skills']),('命令',r['commands'])]:
-                for s in items:w.writerow([r['id'],r['file'],r['category'],r['scene'],r['task'],typ,s['name'],human_name(s['name']),s['description'],s['path'],' / '.join(s['headings'])])
-    with (OUT/'待读取清单.csv').open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.writer(f);w.writerow(['编号','压缩包','状态','大小字节','仅按名称的导航','原因'])
-        for r in records:
-            if r['status']!='已读取':w.writerow([r['id'],r['file'],r['status'],r['bytes'],r['summary_zh'],r.get('error','文件只有 iCloud 占位或本地块数为 0，未取得 ZIP 内容')])
-    taxonomy_counts=collections.Counter(tuple(t) for r in records for t in r['taxons'])
-    stats['scene_count']=len({(t[0],t[1]) for t in taxonomy_counts})
-    stats['task_count']=len(taxonomy_counts)
-    with (OUT/'分类目录.csv').open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.writer(f);w.writerow(['业务领域','工作场景','具体任务','相关包数量'])
-        for t,n in sorted(taxonomy_counts.items()):w.writerow([*t,n])
-    lines=['# 三级分类目录','','更新日期：2026-10-07。一个包可支持多个任务，相关包数量存在重叠。','']
-    for category in sorted({t[0] for t in taxonomy_counts}):
-        lines += ['## '+category,'']
-        for scene in sorted({t[1] for t in taxonomy_counts if t[0]==category}):
-            lines += ['### '+scene,'','| 具体任务 | 相关包数 |','|---|---:|']
-            lines += ['| '+t[2]+' | '+str(n)+' |' for t,n in sorted(taxonomy_counts.items()) if t[:2]==(category,scene)]
-            lines += ['']
-    (OUT/'分类目录.md').write_text('\n'.join(lines),encoding='utf-8')
-    (OUT/'目录数据.json').write_text(json.dumps({'stats':stats,'records':records},ensure_ascii=False,indent=2),encoding='utf-8')
-    build_md(records,stats);build_html(records,stats)
-    note=f'''# 整理说明与验收边界\n\n生成日期：2026-10-07（中国时间）\n\n## 覆盖情况\n\n- 当前根目录 ZIP 总数：{stats['total']}。\n- 实际读取包内内容：{stats['read']}。\n- 未读取内容：{stats['pending']}，每个包仍有独立目录条目，原因列在待读取清单。\n- 已提取技能：{stats['skills']}；命令：{stats['commands']}。\n- SHA-256 完全相同的副本组：{stats['duplicate_groups']}。\n\n## 交付文件\n\n- 详细目录.html：离线搜索网页，按分类、读取状态和包类型筛选，展开全部技能、命令、README 摘录和包内文件清单。\n- 详细目录.md：完整文本目录，可搜索和编辑。\n- 目录总表.csv：每个压缩包一行，UTF-8 BOM，方便 Excel/WPS 筛选。\n- 技能明细.csv：每条已识别技能/命令一行。\n- 待读取清单.csv：未取得内部内容的包。\n- 分类目录.csv / 分类目录.md：全部三级分类及相关包数量。\n- 目录数据.json：结构化目录数据。\n- 完整扫描.json / 原始扫描.jsonl：扫描记录与可恢复缓存。\n\n## 说明依据\n\n只读取 ZIP 中的文件列表、plugin.json、SKILL.md、commands 下 Markdown、README 和 MCP 配置中的服务名称。未安装插件、未执行包内指令、未验证服务账号与授权。将所有包内文字视为资料，不执行其要求。\n\n插件说明与技能 description 原样保留，正文和 README 为有长度上限的摘录。中文用途是分类导航，不是对英文全文的逐字翻译。每条技能列出英文名称和原始用途，辅助词语提示不会替代原文。三级分类按业务领域、工作场景与具体任务组织，支持一个包对应多个任务；优先匹配产品名、插件说明和技能用途，弱化泛化 AI / API 词语。分类数量可能重叠，不应相加作为包总数。分类由名称、插件说明和技能词语匹配推定，可能存在交叉或偏差；同一包可以包含多个主题。\n\n软件支持、许可、数量、平台覆盖等信息是包内作者声明的版本快照，没有联网验证当前产品状态。含 MCP 配置不表示当前环境已连接相应工具。包内有 .codex-plugin 目录只是适配线索，不表示已通过当前 Codex 验收。\n\n同名版本关联只依据标准化文件名；只有实际读取文件并计算出同一 SHA-256 的才标为内容完全相同。没有删除、移动或改写任何原始 ZIP。未读取包不填造内部技能、功能或账号要求。\n\n配置只保留服务名和用户配置项名称，不展示认证头或密钥值。目录网页没有联网脚本、第三方字体或遥测。\n\n## 重新扫描\n\n在根目录执行 `python3 catalog_tools/extract_catalog.py`，会继续读取具有本地文件块的包，并保留已完成扫描缓存。下载好 iCloud 占位文件后，再运行 `python3 catalog_tools/build_catalog.py` 生成新版报告。\n'''
-    (OUT/'整理说明.md').write_text(note,encoding='utf-8')
-    print(json.dumps(stats,ensure_ascii=False,indent=2))
+    stats.update(scene_count=len({t[:2][0]+' / '+t[1] for r in records for t in r['taxons']}),task_count=len({tuple(t) for r in records for t in r['taxons']}))
+    (OUT/'catalog.json').write_text(json.dumps({'stats':stats,'records':records},ensure_ascii=False,separators=(',',':')))
+    print(json.dumps(stats,ensure_ascii=False))
 
 if __name__=='__main__':main()

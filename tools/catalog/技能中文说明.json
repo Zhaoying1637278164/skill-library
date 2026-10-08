@@ -1,0 +1,647 @@
+{
+  "version": 1,
+  "translations": {
+    "610379f3761e03b70e48f24f640124a4d2a20a1ca3d4a7882ffe4447b5276fcf": {
+      "description_zh": "在任何编码任务（feat、fix、bug、refactor、plan、design、brainstorm、code review、implement、add feature、write tests、新功能、修复、重构）时首先使用此 skill——当项目包含 `.github/agent/memory/` 或 `AGENTS.md` 时；在编写代码前加载三层项目记忆（project-memory、decisions-log、task-history）和 AGENTS.md，完成任务后更新 task-history（始终）、decisions-log（架构变更时）和 project-memory（事实变更时）——这是 PDCA 护栏，防止\"AI 修了 bug X 却搞坏了功能 Y\"跨迭代发生；同时处理 INSTALL（用户说\"install ai-coding-ok\"、\"初始化 ai-coding-ok\"等，或项目尚无 `.github/agent/memory/` 时）——复制模板并定制占位符；也处理 UPGRADE（用户说\"upgrade ai-coding-ok\"、\"升级 ai-coding-ok\"等）——将项目文件与最新模板 diff 并应用框架级变更，同时保留项目定制。",
+      "source": "在任何编码任务（feat、fix、bug、refactor、plan、design、brainstorm、code review、implement、add feature、write tests、新功能、修复、重构）时首先使用此 skill——当项目包含 `.github/agent/memory/` 或 `AGENTS.md` 时。在编写代码前加载三层项目记忆（project-memory、decisions-log、task-history）和 AGENTS.md，完成任务后更新 task-history（始终）、decisions-log（架构变更时）和 project-memory（事实变更时）——这是 PDCA 护栏，防止\"AI 修了 bug X 却搞坏了功能 Y\"跨迭代发生。同时处理 INSTALL（用户说\"install ai-coding-ok\"、\"初始化 ai-coding-ok\"等，或项目尚无 `.github/agent/memory/` 时）——复制模板并定制占位符。也处理 UPGRADE（用户说\"upgrade ai-coding-ok\"、\"升级 ai-coding-ok\"等）——将项目文件与最新模板 diff 并应用框架级变更，同时保留项目定制。",
+      "translation_method": "original_chinese"
+    },
+    "89154dc7ae0fcad1cc97ca004fd2e2f7c8164d05956a0c9245ade2448dd0cf52": {
+      "description_zh": "为项目安装三层记忆系统并强制执行 PDCA 工作流，防止 AI \"修了 bug X 却搞坏了功能 Y\"；> 配合项目根目录的 `AGENTS.md` 使用——Codex 会自动加载 AGENTS.md 中的 PDCA 强制指令。",
+      "source": "为项目安装三层记忆系统并强制执行 PDCA 工作流，防止 AI \"修了 bug X 却搞坏了功能 Y\"。\n> 配合项目根目录的 `AGENTS.md` 使用——Codex 会自动加载 AGENTS.md 中的 PDCA 强制指令。",
+      "translation_method": "original_chinese"
+    },
+    "efa7447620c4082d0b21313846b2a81a6f817181503f1258dc5dfdb776e6f5f7": {
+      "description_zh": "从文件、URL、粘贴的文本或一个主题生成可交互的 Markmap 思维导图（中文版）。",
+      "source": "从文件、URL、粘贴的文本或一个主题生成可交互的 Markmap 思维导图（中文版）。",
+      "translation_method": "original_chinese"
+    },
+    "77ed93c6c199f814ecbe07dcba84f9f1d07cd0154eddc7f91559cd09ca5870e4": {
+      "description_zh": "将学术论文转换为交互式 HTML 课程 + Markdown 文档 + PPTX 演示文稿，一键生成全部三种输出。",
+      "source": "将学术论文转换为交互式 HTML 课程 + Markdown 文档 + PPTX 演示文稿，一键生成全部三种输出",
+      "translation_method": "original_chinese"
+    },
+    "d8c4a5b6c102b4275929401217b98339a5d9acedb041dec3ef9eedd158b06a03": {
+      "description_zh": "原文件为空，无法从源文确认该技能的具体用途。",
+      "source": "原文件为空，无法从源文确认该技能的具体用途。",
+      "translation_method": "original_chinese"
+    },
+    "982d9a67392320cf21bef98d7bcbf6c79263a843a94a6c4d31c7dd60570e40b2": {
+      "description_zh": "AI 领域外网访谈 → 公众号 Markdown 文章生成器；将 AI 相关的访谈/播客/对话的逐字稿（中文或英文），以 Q&A 问答结构提炼核心内容，输出一篇适合中文公众号发布的 Markdown 格式文章，并附带 5 个标题选项；当用户说\"帮我把这个 AI 访谈整理成公众号文章\"、\"这个播客帮我出一篇公众号稿\"、\"把这个英文访谈整理成中文 Markdown\"、\"这个 AI 对话整理一下发公众号\"、\"帮我翻译整理这个访谈\"等，或者用户上传了一个 AI/科技领域的访谈逐字稿（不论中英文）并提到公众号、Markdown、文章，都应该立即使用此 skill；也适用于：用户上传 AI 相关的访谈稿后说\"帮我出标题\"、\"整理成中文公众号文章\"、\"翻译整理一下\"等场景；只要涉及 AI/科技领域访谈 + 公众号/Markdown 输出，就用这个 skill；注意：如果访谈内容是关于小红书电商/个体创业等话题，应该用 transcript-to-wechat-md 而非本 skill。",
+      "source": "AI 领域外网访谈 → 公众号 Markdown 文章生成器。将 AI 相关的访谈/播客/对话的逐字稿（中文或英文），以 Q&A 问答结构提炼核心内容，输出一篇适合中文公众号发布的 Markdown 格式文章，并附带 5 个标题选项。\n当用户说\"帮我把这个 AI 访谈整理成公众号文章\"、\"这个播客帮我出一篇公众号稿\"、\"把这个英文访谈整理成中文 Markdown\"、\"这个 AI 对话整理一下发公众号\"、\"帮我翻译整理这个访谈\"等，或者用户上传了一个 AI/科技领域的访谈逐字稿（不论中英文）并提到公众号、Markdown、文章，都应该立即使用此 skill。\n也适用于：用户上传 AI 相关的访谈稿后说\"帮我出标题\"、\"整理成中文公众号文章\"、\"翻译整理一下\"等场景。只要涉及 AI/科技领域访谈 + 公众号/Markdown 输出，就用这个 skill。注意：如果访谈内容是关于小红书电商/个体创业等话题，应该用 transcript-to-wechat-md 而非本 skill。",
+      "translation_method": "original_chinese"
+    },
+    "9744a75b1165b965b1f78987c2811c9035fe8b1edf3b855db29801180d2f3f40": {
+      "description_zh": "访谈逐字稿 → 公众号 Markdown 文章生成器；将访谈/直播的语音转写逐字稿，以 Q&A 问答结构提炼核心内容，输出一篇可直接用于微信公众号发布的 Markdown 格式文章，并附带 5 个标题选项；当用户说\"帮我把这个访谈稿整理成公众号文章\"、\"这个直播回放帮我出一篇公众号稿\"、\"把这个采访整理成 Markdown\"、\"帮我出一篇访谈的公众号文\"、\"整理成可以发公众号的文章\"、\"访谈稿转公众号\"等，或者用户上传了一个访谈/对话类的逐字稿并提到公众号、Markdown、文章，都应该立即使用此 skill；也适用于：用户上传逐字稿后说\"帮我出5个标题\"、\"给我排版一下发公众号\"、\"转成 md 格式\"等场景；只要涉及访谈类内容 + 公众号/Markdown 输出，就用这个 skill。",
+      "source": "访谈逐字稿 → 公众号 Markdown 文章生成器。将访谈/直播的语音转写逐字稿，以 Q&A 问答结构提炼核心内容，输出一篇可直接用于微信公众号发布的 Markdown 格式文章，并附带 5 个标题选项。\n当用户说\"帮我把这个访谈稿整理成公众号文章\"、\"这个直播回放帮我出一篇公众号稿\"、\"把这个采访整理成 Markdown\"、\"帮我出一篇访谈的公众号文\"、\"整理成可以发公众号的文章\"、\"访谈稿转公众号\"等，或者用户上传了一个访谈/对话类的逐字稿并提到公众号、Markdown、文章，都应该立即使用此 skill。\n也适用于：用户上传逐字稿后说\"帮我出5个标题\"、\"给我排版一下发公众号\"、\"转成 md 格式\"等场景。只要涉及访谈类内容 + 公众号/Markdown 输出，就用这个 skill。",
+      "translation_method": "original_chinese"
+    },
+    "b6dee2704b2c7c3a20ff3b0d2d5f4b1743d555429fc3c2a1d76d9f764b29da05": {
+      "description_zh": "音频文件（mp3/m4a/wav/aac/flac/ogg）→ 可读的 Markdown 文字稿；自动完成语音转写 + 说话人分离（阿里云 DashScope paraformer-v2）；最少交互：用户可以选择给每个 SPEAKER_XX 起名字，也可以直接跳过用原始标签；**保留原文不做内容整理、不做错字修正、不做解读**——只做简单排版让你方便阅读；每次运行落到 `~/Downloads/audio-to-transcript/<时间戳>_<音频名>/transcript.md`；当用户说\"帮我把这个音频/录音转成文字稿\"、\"转写一下这个 mp3/m4a\"、\"这个录音转文字\"、\"这个音频转逐字稿\"、\"帮我把这段录音转成可读文字\"、\"把这个音频转成 markdown 文字稿\"等，或者用户丢一个音频文件并提到转写/文字稿/逐字稿/转文字，立即使用此 skill；**不要用于**：①用户说\"整理成公众号文章\"、\"发公众号的稿\"、\"出一篇稿子\"——那是 audio-to-wechat-md 的任务；②视频文件——先让用户提取音频；③已经是文字稿的——直接给用户用。",
+      "source": "音频文件（mp3/m4a/wav/aac/flac/ogg）→ 可读的 Markdown 文字稿。自动完成语音转写 + 说话人分离（阿里云 DashScope paraformer-v2）。最少交互：用户可以选择给每个 SPEAKER_XX 起名字，也可以直接跳过用原始标签。**保留原文不做内容整理、不做错字修正、不做解读**——只做简单排版让你方便阅读。每次运行落到 `~/Downloads/audio-to-transcript/<时间戳>_<音频名>/transcript.md`。 当用户说\"帮我把这个音频/录音转成文字稿\"、\"转写一下这个 mp3/m4a\"、\"这个录音转文字\"、\"这个音频转逐字稿\"、\"帮我把这段录音转成可读文字\"、\"把这个音频转成 markdown 文字稿\"等，或者用户丢一个音频文件并提到转写/文字稿/逐字稿/转文字，立即使用此 skill。 **不要用于**：①用户说\"整理成公众号文章\"、\"发公众号的稿\"、\"出一篇稿子\"——那是 audio-to-wechat-md 的任务；②视频文件——先让用户提取音频；③已经是文字稿的——直接给用户用。",
+      "translation_method": "original_chinese"
+    },
+    "7cb5738048213311a92b88340e06e5210a57b506479dc4545600594216794f48": {
+      "description_zh": "音频文件（mp3/m4a/wav/aac/flac/ogg）→ 公众号 Markdown 成品文章；自动完成语音转写 + 说话人分离（阿里云 DashScope paraformer-v2），全程只问两个问题：①这个录音发到哪个公众号（你自己的访谈/学习型公众号）②每个 SPEAKER_XX 是谁；然后用 plugin 内打包的下游 skill（transcript-to-wechat-md 或 ai-interview-to-wechat-md）生成成品文章 + 5 个标题选项；每次运行的所有产物都落在 `~/Downloads/audio-to-wechat-md/<时间戳>_<音频名>/` 独立目录下，跨 session 不冲突；当用户说\"帮我把这个音频/录音/mp3/m4a/wav 整理成公众号文章\"、\"这个访谈录音/播客帮我出一篇稿\"、\"这个语音文件/会议录音转公众号\"、\"这段录音整理成 markdown 发公众号\"、\"帮我把音频转写并整理成文章\"、\"把录音整理成稿子\"等，或者用户直接丢一个音频文件并提到公众号/文章/整理/markdown/稿子，立即使用此 skill；不要用于：①用户只要转写文字稿、没提公众号/文章——用单独的转写工具（audio-to-transcript）即可；②视频文件——先让用户用 ffmpeg 提取音频；③已经是文字稿的内容——直接用 transcript-to-wechat-md 或 ai-interview-to-wechat-md。",
+      "source": "音频文件（mp3/m4a/wav/aac/flac/ogg）→ 公众号 Markdown 成品文章。自动完成语音转写 + 说话人分离（阿里云 DashScope paraformer-v2），全程只问两个问题：①这个录音发到哪个公众号（你自己的访谈/学习型公众号）②每个 SPEAKER_XX 是谁。然后用 plugin 内打包的下游 skill（transcript-to-wechat-md 或 ai-interview-to-wechat-md）生成成品文章 + 5 个标题选项。每次运行的所有产物都落在 `~/Downloads/audio-to-wechat-md/<时间戳>_<音频名>/` 独立目录下，跨 session 不冲突。 当用户说\"帮我把这个音频/录音/mp3/m4a/wav 整理成公众号文章\"、\"这个访谈录音/播客帮我出一篇稿\"、\"这个语音文件/会议录音转公众号\"、\"这段录音整理成 markdown 发公众号\"、\"帮我把音频转写并整理成文章\"、\"把录音整理成稿子\"等，或者用户直接丢一个音频文件并提到公众号/文章/整理/markdown/稿子，立即使用此 skill。 不要用于：①用户只要转写文字稿、没提公众号/文章——用单独的转写工具（audio-to-transcript）即可；②视频文件——先让用户用 ffmpeg 提取音频；③已经是文字稿的内容——直接用 transcript-to-wechat-md 或 ai-interview-to-wechat-md。",
+      "translation_method": "original_chinese"
+    },
+    "b0b63986a3aa82f51d4417cfa48e888faafaecc131c7a1926938663ef91c9513": {
+      "description_zh": "在端到端项目建设中按阶段协调 CTO、架构、产品、开发、运维、安全、数据库、测试和管理等十二种团队角色，并在实现前先开展头脑风暴。",
+      "source": "You MUST use this when building projects end-to-end. Orchestrates all 12 team roles — automatically switches between CTO, architect, PM, engineers, SRE, security, DBA, QA, and EM based on the current phase of work. Starts with brainstorming before any implementation.",
+      "translation_method": "editorial_translation"
+    },
+    "1c794848c983f5699d8caae4c4e97bb42fb8ce5d591528c46e999c97c14548f4": {
+      "description_zh": "从业务与技术结合的角度评估自研或采购、架构方向、资源分配、技术愿景和风险等战略技术决策。",
+      "source": "You MUST use this for strategic technology decisions - build vs buy, architecture direction, resource allocation, technical vision, risk assessment. Evaluates decisions at the intersection of business and technology.",
+      "translation_method": "editorial_translation"
+    },
+    "8b32e1ed895d8829ea66bb9f4678f4070adcbc77477988e080177bb37466fa88": {
+      "description_zh": "为数据库结构设计、查询优化、迁移计划、索引策略、数据建模和性能问题提供决策指导。",
+      "source": "You MUST use this for database decisions - schema design, query optimization, migration planning, indexing strategy, data modeling, and database performance issues.",
+      "translation_method": "editorial_translation"
+    },
+    "c7a1fe37142b626a357d3161f9fb865a4becd898ab20b9041433f036ff01da2e": {
+      "description_zh": "为 CI/CD、容器化、基础设施即代码、部署策略、环境管理和构建自动化提供指导。",
+      "source": "You MUST use this for infrastructure and deployment decisions - CI/CD pipelines, containerization, IaC, deployment strategies, environment management, and build automation.",
+      "translation_method": "editorial_translation"
+    },
+    "d5aa1169d0e4a0b76f4cbded702c2928c29e7604b686b100736d5089406128a9": {
+      "description_zh": "为迭代计划、团队结构、交付估算、流程改进、技术招聘和工程团队运作提供管理指导。",
+      "source": "You MUST use this for team and process decisions - sprint planning, team structure, delivery estimation, process improvements, technical hiring, and engineering team operations.",
+      "translation_method": "editorial_translation"
+    },
+    "97831d95086f9255b6f82e4aa023034aa6f51abae4031f1fb3984e4d5b49e03b": {
+      "description_zh": "为系统设计、架构模式选择、边界划分、数据建模及后期难以调整的结构决策提供指导。",
+      "source": "You MUST use this for system design and architecture decisions - designing systems, choosing patterns, defining boundaries, data modeling, and making structural decisions that are hard to change later.",
+      "translation_method": "editorial_translation"
+    },
+    "d16c8b8e8aea1126ae3594d571730e0732e1e7a72e453c71bfdf6156973ab60e": {
+      "description_zh": "帮助确定产品建设的内容与理由，并处理功能优先级、用户故事、路线图和需求收集。",
+      "source": "You MUST use this for product decisions - feature prioritization, user stories, roadmap planning, requirement gathering, and defining what to build and why.",
+      "translation_method": "editorial_translation"
+    },
+    "0090f1edbb0bd55d96fe907c95023ab1f9627190af00f797bea0b48e8023d441": {
+      "description_zh": "为测试策略、测试计划、缺陷分析、测试框架、覆盖缺口和质量保证流程提供指导。",
+      "source": "You MUST use this for testing and quality decisions - test strategy, test plans, bug analysis, testing frameworks, coverage gaps, and quality assurance processes.",
+      "translation_method": "editorial_translation"
+    },
+    "96db5587bfd235601218ecd553cdbd4206f2fef94bd96ae21f7d98ad2402e982": {
+      "description_zh": "执行功能开发、缺陷修复、API 实现和问题调试，并编写清晰的生产代码。",
+      "source": "You MUST use this for hands-on coding tasks - writing features, fixing bugs, implementing APIs, debugging issues, and writing clean production code.",
+      "translation_method": "editorial_translation"
+    },
+    "1d9c8ac5285bfc3bd5c44bf150e0b136b6b8ac6f0bd5df8327589a3031eb1033": {
+      "description_zh": "为威胁建模、漏洞评估、认证与授权设计、安全审查、合规要求和安全加固提供指导。",
+      "source": "You MUST use this for security decisions - threat modeling, vulnerability assessment, auth/authz design, security review, compliance requirements, and hardening recommendations.",
+      "translation_method": "editorial_translation"
+    },
+    "7bce5fa708cc48bff466619f22f66da85ed6eead162c5b98e58f660eb626b71e": {
+      "description_zh": "通过代码审查、设计模式、复杂问题调试和工程实践辅导，指导生产质量代码的实现。",
+      "source": "You MUST use this for implementation guidance - code review, design patterns, debugging complex issues, writing production-quality code, and mentoring on engineering best practices.",
+      "translation_method": "editorial_translation"
+    },
+    "961b76a8f1be9486be4c315824234566bcdf1e99970000323322401cceb03a7e": {
+      "description_zh": "为事故响应、监控、服务等级目标、容量规划、性能调试和生产可靠性提供指导。",
+      "source": "You MUST use this for reliability and operations decisions - incident response, monitoring, SLOs, capacity planning, performance debugging, and production reliability.",
+      "translation_method": "editorial_translation"
+    },
+    "d14de0d028dc7ec803aa28e167a6e2bf449d9c27c9e7a555330485a493ba8ecc": {
+      "description_zh": "处理跨团队技术决策，包括代码质量标准、共享模式、技术债策略、复杂问题辅导和工程实践协调。",
+      "source": "You MUST use this for cross-cutting technical decisions - code quality standards, cross-team patterns, technical debt strategy, mentoring on complex problems, and driving alignment on engineering practices.",
+      "translation_method": "editorial_translation"
+    },
+    "a051b9b3c6a1f054ae60989d62c14c4ace1a3ee2253154fb9ececc5a6e8c6e27": {
+      "description_zh": "在用户提出想法、计划或方案并指定 MBTI 人格时，以该人格提出追问，帮助用户梳理思考。",
+      "source": "Use when the user presents an idea/plan/proposal and wants a specific 16-minds (MBTI) personality to ask probing questions back — instead of giving an answer. Triggers on Japanese phrases like 「ENTPでツッコんで」「INFJに問い詰めて」「ENTJ視点で質問して」「このアイデア叩いて」, English equivalents like \"as ENTP, question this\" / \"INFJ would ask what?\", or 16-minds commands with a `--ask` flag. AIに「答えさせる」のではなく「問わせる」ためのSkill。ユーザーが思考を整理したい時に使う。",
+      "translation_method": "editorial_translation"
+    },
+    "f5c1e36b1a189f0b881e7f6d32c478fe9ab82c7455eaa8d3acfe791369a94f2f": {
+      "description_zh": "在用户指定 MBTI 人格并提供至少两个选项时，按该人格的判断风格作出选择。",
+      "source": "Use when the user provides multiple options and wants a specific 16-minds (MBTI) personality to make the decision in that personality's judgment style. Triggers on Japanese phrases like 「ENTJで決めて」「INFPならどっち選ぶ」「INTJとして判断して」, English equivalents like \"decide as ESTJ\" / \"which would ENFP pick\", or 16-minds commands with a `--decide` flag. Requires both a personality and 2+ options to be present or extractable from the request.",
+      "translation_method": "editorial_translation"
+    },
+    "610827ef6193ab72ae79d6f3c8e951761d9d6430fa5f8ae3b5d9effd49a4b3f4": {
+      "description_zh": "让十六种 MBTI 人格对提案分别投赞成、反对或弃权票，以观察利益相关者分布、隐藏异议和组织共识。",
+      "source": "Use when the user wants all 16 personality types (16-minds plugin) to vote on a proposal — yes/no/abstain — to see stakeholder distribution, detect hidden objections, or simulate organizational consensus. Triggers on Japanese phrases like 「全人格で投票」「16人格に賛否を聞いて」「ステークホルダーシミュ」「これ通せそう？」, English equivalents like \"vote with all 16 minds\" / \"stakeholder simulation\", or `--vote` flag on 16-minds commands. Different from /minds (which is for opinion divergence) — this is for binary judgment aggregation.",
+      "translation_method": "editorial_translation"
+    },
+    "cd24b44bd798214cead43a1152b28a1debb7b1d57f8d603f1f9d6a7eb9fb5d3c": {
+      "description_zh": "按指定或可推断的 MBTI 人格口吻撰写文章、社交内容和回复，或改写已有文本。",
+      "source": "Use when the user wants to write text in a specific 16-minds (MBTI) personality's voice — articles, blog posts, essays, SNS投稿, replies, or rewriting existing AI-generated text to feel less AI-like. Triggers on Japanese phrases like 「ENFPで書いて」「INTJ風の記事」「人間っぽく書き直して」「AI臭抜いて」, English equivalents like \"write as INFJ\" / \"humanize\", or any 16-minds command with a `--write` / `--rewrite` flag. Personality (one of intj/intp/entj/entp/infj/infp/enfj/enfp/istj/isfj/estj/esfj/istp/isfp/estp/esfp) must be specified or inferable.",
+      "translation_method": "editorial_translation"
+    },
+    "aafc9a28cd5f8e1cbaa89003e12090eab01121362467ff3b860d8dc1e9372660": {
+      "description_zh": "管理 1Password 开发者环境中的秘密信息，包括导入或挂载 .env 文件、创建环境、查看或添加环境变量和存储凭据。",
+      "source": "Manages secrets in 1Password Developer Environments. Use when the user asks to import or mount a .env file, list or create an Environment, view or add environment variables, or store an API key, token, or credential.",
+      "translation_method": "editorial_translation"
+    },
+    "6bcc922fa9913e53228929a5ebe84c01b279c5ae9cb179ffcfbb29ce145daf3e": {
+      "description_zh": "使用 21st.dev 查找、安装或生成 UI 组件、获取设计灵感，并生成品牌 SVG 标志组件。",
+      "source": "Find, install, and generate UI with 21st.dev. Use when the user asks for a UI component (pricing table, hero, navbar, dashboard, form, etc.), wants design inspiration, needs a brand logo as an SVG component, or wants to generate new UI from a prompt.",
+      "translation_method": "editorial_translation"
+    },
+    "3393d49998b33011149c1b1aa82b2454def25794eb71860a26da05e79cc1be07": {
+      "description_zh": "在同一流水线中运行 42Crunch 静态审计和在线扫描，适用于同时需要两类检查或尚未明确检查阶段的请求。",
+      "source": "Run both a 42Crunch Audit and a live Scan together in a single pipeline. Use this skill when the user wants to run audit and scan together, complete the full security pipeline, or when the request is ambiguous about which phase to run. Triggers on phrases like \"run audit and scan\", \"full 42crunch pipeline\", \"full security check\", \"audit then scan\", \"42crunch\", or \"SQG\". Do NOT use this skill if the user explicitly requests only an audit (use 42crunch-audit) or only a scan (use 42crunch-scan).",
+      "translation_method": "editorial_translation"
+    },
+    "1556a58fa35d92c8d86c48ab62f17bfe969e16604639c87c117304b8a99d9506": {
+      "description_zh": "对 OpenAPI 规范运行 42Crunch 安全审计，处理 SQG 阻断问题、API 评分、数据字典增强和静态审计整改。",
+      "source": "Run a 42Crunch API Security Audit and fix SQG-blocking issues in an OpenAPI Specification file. Use this skill whenever the user wants to audit an OAS file for security issues, fix SQG-blocking issues, score an API, apply data dictionary enrichment, or remediate audit findings. Triggers on phrases like \"run audit\", \"audit only\", \"fix audit issues\", \"SQG audit\", \"42crunch audit\", \"audit score\", or any request focused on static OAS analysis and remediation without running a live scan.",
+      "translation_method": "editorial_translation"
+    },
+    "0fb4e72b2b730dc934a6cc36262da7e21daaef6250a0d53e0b531cb96cddebdf": {
+      "description_zh": "对在线 API 运行 42Crunch 合规与授权扫描，配置扫描并处理 BOLA、BFLA 等检查及 SQG 阻断问题。",
+      "source": "Run a 42Crunch live conformance and authorization scan against an API and fix SQG-blocking scan findings. Use this skill whenever the user wants to run a conformance test, authorization scan, BOLA test, BFLA test, generate or configure a scan config, or fix scan-reported issues. Triggers on phrases like \"run scan\", \"scan only\", \"conformance test\", \"BOLA test\", \"BFLA test\", \"42crunch scan\", \"scan config\", or any request focused on live API testing without running a static audit. Use 42crunch-api-security-testing when the user wants both audit and scan together.",
+      "translation_method": "editorial_translation"
+    },
+    "baed691873ec7d9daa7e0236bb97026a4ef6112f64f7d39a4fdb5b4558dab248": {
+      "description_zh": "准备或排查 42Crunch 运行环境，包括安装或更新 42c-ast、配置 API 密钥以及解决凭据或二进制程序问题。",
+      "source": "Set up the 42Crunch environment so that audit and scan skills can run without friction. Use this skill whenever the user wants to configure 42Crunch for the first time, install or update the 42c-ast binary, configure an API key, or troubleshoot missing credentials or binary errors. Triggers on phrases like \"setup 42crunch\", \"configure 42crunch\", \"install 42c-ast\", \"update 42c-ast\", \"set api key\", \"42crunch not working\", \"binary not found\", or any request to prepare the environment before running an audit or scan.",
+      "translation_method": "editorial_translation"
+    },
+    "9c96aa18b5e4d294c1a4a85ce0719f70b23b1fe3925c1a25b446c2e2ee6e3609": {
+      "description_zh": "在尚无 OpenAPI 规范时，根据 API 代码、Postman 或 Insomnia 集合生成完整的 OpenAPI 3.0 定义。",
+      "source": "Generate a complete OpenAPI 3.0 (OAS) specification from an API codebase, a Postman or Insomnia collection, or both together. Use this skill whenever the user wants to generate, create, or derive an OpenAPI spec, reverse-engineer an API definition, document an existing API, or convert a Postman/Insomnia collection to OpenAPI — when there is no existing OAS file yet. Triggers on phrases like \"generate OAS\", \"create an OpenAPI spec\", \"generate openapi.json\", \"document my API\", \"reverse-engineer spec\", \"convert postman to openapi\", \"convert insomnia to openapi\", \"postman collection to OAS\", \"insomnia collection to OAS\", or any request to produce an OAS file from source material rather than from an existing spec.",
+      "translation_method": "editorial_translation"
+    },
+    "67f62b89affaca7a51a386a0f31a239e7a82307c21d84433abef07f1624415f8": {
+      "description_zh": "通过 MCP 在 8digit Creative Content Planner 中规划、创建、编辑和明确审批社交内容，管理工作区、品牌、日历、媒体和资料库，社交平台发布仍需手动进行。",
+      "source": "Plan, organize, create, edit, and explicitly approve social content in 8digit Creative Content Planner using its MCP. Use for Planner workspaces, brands, calendar posts, media, and Library folders; publishing to social networks remains manual.",
+      "translation_method": "editorial_translation"
+    },
+    "38d969765aeddecf3b0d9ac7a644145cb13ba42dd3dd301f190aaef8dea860a0": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中集成聊天客户端、AI 智能体、Semantic Kernel、AI 工作区、RAG、文档索引分块和 MCP 服务。",
+      "source": "ABP Framework v10.x (10.4–10.6) AI integration: Microsoft.Extensions.AI (IChatClient), Semantic Kernel, Microsoft Agent Framework, AI Workspaces, AI Management module (Pro) with RAG, document indexing/chunking and MCP servers. Use when you need chat clients, AI agents, RAG or AI workspace management in ABP.",
+      "translation_method": "editorial_translation"
+    },
+    "7156cc005f38434e6aa52fb5bc6379809683a2b630875e1b99b204ddc3c79792": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中开发 REST API，配置自动控制器、C# 与 JavaScript 客户端代理、Swagger、API 版本和集成服务。",
+      "source": "ABP Framework v10.x (10.4–10.6) API development: Auto API Controllers, dynamic and static C#/JS client proxies, Swagger, API versioning, Integration Services. Use when you need a REST API, controller, dynamic proxy or client generation in ABP.",
+      "translation_method": "editorial_translation"
+    },
+    "6109bfc250544d6962b4e5ba270520db5f3eefa0e8483dff3a912e2c835a0cd6": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中配置审计选项、实体历史、审计存储、日志过滤和审计追踪。",
+      "source": "ABP Framework v10.x (10.4–10.6) audit logging: AbpAuditingOptions, entity history, IAuditingStore, audit log storage and filtering. Use when configuring audit trails, audit logs, or entity history in ABP.",
+      "translation_method": "editorial_translation"
+    },
+    "c4aa504edb1056e55ca73ce968f7fae19a44455a1f8fbdd34315fc2202b49da6": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中定义并检查权限，处理角色、当前用户、资源授权和多租户访问控制。",
+      "source": "ABP Framework v10.x (10.4–10.6) authorization: defining permissions (PermissionDefinitionProvider), [Authorize], CheckPolicyAsync/IsGrantedAsync, CurrentUser, IPermissionManager, resource-based auth, multi-tenancy permissions. Use when you need permission, role or access checks in ABP.",
+      "translation_method": "editorial_translation"
+    },
+    "57339c11bb28999ceb7cb1a0e05c2b00703eac6a3c3fd9869c024a056b082dae": {
+      "description_zh": "使用 ABP Framework 10.4—10.6 的命令行工具、ABP Studio 和 ABP Suite 创建项目、添加包和生成客户端代理。",
+      "source": "ABP Framework v10.x (10.4–10.6) CLI and tooling: abp new, add-package, generate-proxy, ABP Studio, ABP Suite, --modern flag. Use when working with ABP CLI commands, creating projects, adding packages, or generating proxies.",
+      "translation_method": "editorial_translation"
+    },
+    "e6b6143f3fb177449de6a95a6e6c6b8aa829b82003c9d6b8ed49ca614d01259e": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中配置 Dapr 服务调用、发布订阅事件总线、分布式锁、侧车通信和 API 令牌安全。",
+      "source": "ABP Framework v10.x (10.4–10.6) Dapr integration: Volo.Abp.Dapr packages, service invocation via C# API client proxies (Volo.Abp.Http.Client.Dapr), distributed event bus over Dapr pub/sub (Volo.Abp.EventBus.Dapr + Volo.Abp.AspNetCore.Mvc.Dapr.EventBus), distributed lock, AbpDaprOptions, API token security. Use when you need Dapr sidecar communication, Dapr pub/sub, or Dapr service invocation in ABP.",
+      "translation_method": "editorial_translation"
+    },
+    "dcdaf6e4eddc9ab70485e7cf8ab63162c1784a6ba92e39981083631383905b23": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中设计领域层、实体、聚合、仓储、领域与应用服务、领域事件、值对象和工作单元。",
+      "source": "ABP Framework v10.x (10.4–10.6) Domain Driven Design: Entity, AggregateRoot, repository, domain service, application service, DTO, domain events (AddLocalEvent/AddDistributedEvent), specification, value object, UOW. Use when designing the domain layer, entities, aggregates, or repositories in ABP.",
+      "translation_method": "editorial_translation"
+    },
+    "4ebcc7c82239f8684ca4025b41d4bccaaaa6c9fd7de5734685e55f18166c5ec2": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中配置依赖注入、服务生命周期、自动注册、属性注入、延迟服务和 Autofac。",
+      "source": "ABP Framework v10.x (10.4–10.6) dependency injection: ITransientDependency/IScopedDependency/ISingletonDependency, [Dependency], [ExposeServices], LazyServiceProvider, property injection, Autofac. Use when you need service registration, DI, or automatic registration in ABP.",
+      "translation_method": "editorial_translation"
+    },
+    "a666bb016eebbb15bbedc9e67f406b2020307a2c40ab6efd7029492bef9b8e44": {
+      "description_zh": "为 ABP Framework 10.4—10.6 项目确定层次依赖方向和项目引用规则，避免应用层直接使用 DbContext、暴露 IQueryable 或将实体当作 DTO 返回。",
+      "source": "ABP Framework v10.x (10.4–10.6) layer dependency rules: layer direction (Domain.Shared→Domain→Application.Contracts→Application→HttpApi→Host), project reference matrix, anti-patterns (no DbContext in Application, don't expose IQueryable, don't return entity as DTO). Use when you need project/layer architecture or dependency rules in ABP.",
+      "translation_method": "editorial_translation"
+    },
+    "2824a6dc682334a9feec83ba3b09a1e79d94359fb5df1f1abce2378c06ee8544": {
+      "description_zh": "设计 B2B 网站战略和信息架构，整理价值主张、消息、用户路径、决策图、信任材料及语气约束，形成开发前模板。",
+      "source": "B2B サイトの戦略・情報設計。価値提案・メッセージマップ・ジャーニー導線・意思決定マップ・信頼棚卸・トーン/禁止表現まで一気通貫でテンプレ化する。実装前フェーズ専用（全PJ共通）。",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "e25634b7f0de6141a7e7d2122f951c953a0cfff6376607a678380ef98536d911": {
+      "description_zh": "从产品和应用使用者角度评审变更，核验体验假设、指标、漏斗、留存和需求满足情况，参与并行评审。",
+      "source": "変更差分をプロダクト・アプリ利用者目線でレビューする。UX仮説・KPI・ファネル・リテンション・仕様充足を検証し、並列レビューのプロダクト柱として使う。",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "90da3dc41cb03331756fd67479c7017b42a40ada0c06692edce396c42eb82de2": {
+      "description_zh": "对照整体架构和设计思想评审变更，检查耦合、演进、边界与集成，以及各层职责和依赖方向。",
+      "source": "全体構成と設計思想に照らして変更差分をレビューする。結合・進化・シーム・統合を検証し、レイヤ責務と依存方向を並列レビューのアーキ柱として扱う。",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "31336acb0e5b8ff82c0f44f5deae209f4b05d437efe89357b13dd4740a2582d3": {
+      "description_zh": "评审后端变更，重点检查接口契约、幂等性、事务及 N+1 问题，核验服务器、接口和数据库层差异。",
+      "source": "バックエンド変更の追加レビュー。API 契約・冪等性・トランザクション・N+1 を中心に、サーバー・API・DB 層の差分を検証する。",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "6a3c33e0dab713afbed2023df91c53fef7139048c0fed0400abcc4bac8cb4878": {
+      "description_zh": "评审基础设施、部署、IaC 和持续集成变更，检查网络、访问权限、可观测性、灾难恢复和成本。",
+      "source": "インフラ・デプロイ・IaC・CI の変更レビュー。IaC・ネットワーク・IAM・可観測性・DR・コストを横断して検証する。",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "0d7c25888a9700373516685f055f8051432d80fd833f7cc279d37cf0223c9dbe": {
+      "description_zh": "从质量保证角度评审变更，整理回归覆盖、风险优先级和缺陷模式，形成验收检查与探索性测试要点。",
+      "source": "QA 観点で変更差分をレビューする。回帰マップ・リスクベース優先・欠陥パターンを扱い、受け入れ検証と探索観点を整理する。",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "ac154259a277c9939a47c0b72b2a2e1c3dc2813d2c5f6bcf0df4b07312bb7c80": {
+      "description_zh": "评审测试代码，检查测试层次、偶发失败、变异测试、覆盖率门槛和契约测试。",
+      "source": "テストコードのレビュー。テストピラミッド・フレーク・ミューテーション・カバレッジゲート・契約テストを検証する。",
+      "translation_method": "model_translation_ja_zh"
+    }
+  },
+  "by_path": {
+    "10x-Team-0.4.0-v1.zip:skills/10x-team/SKILL.md": {
+      "description_zh": "在端到端项目建设中按阶段协调 CTO、架构、产品、开发、运维、安全、数据库、测试和管理等十二种团队角色，并在实现前先开展头脑风暴。",
+      "source_sha256": "b0b63986a3aa82f51d4417cfa48e888faafaecc131c7a1926938663ef91c9513",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/cto/SKILL.md": {
+      "description_zh": "从业务与技术结合的角度评估自研或采购、架构方向、资源分配、技术愿景和风险等战略技术决策。",
+      "source_sha256": "1c794848c983f5699d8caae4c4e97bb42fb8ce5d591528c46e999c97c14548f4",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/dba/SKILL.md": {
+      "description_zh": "为数据库结构设计、查询优化、迁移计划、索引策略、数据建模和性能问题提供决策指导。",
+      "source_sha256": "8b32e1ed895d8829ea66bb9f4678f4070adcbc77477988e080177bb37466fa88",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/devops-engineer/SKILL.md": {
+      "description_zh": "为 CI/CD、容器化、基础设施即代码、部署策略、环境管理和构建自动化提供指导。",
+      "source_sha256": "c7a1fe37142b626a357d3161f9fb865a4becd898ab20b9041433f036ff01da2e",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/engineering-manager/SKILL.md": {
+      "description_zh": "为迭代计划、团队结构、交付估算、流程改进、技术招聘和工程团队运作提供管理指导。",
+      "source_sha256": "d5aa1169d0e4a0b76f4cbded702c2928c29e7604b686b100736d5089406128a9",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/principal-architect/SKILL.md": {
+      "description_zh": "为系统设计、架构模式选择、边界划分、数据建模及后期难以调整的结构决策提供指导。",
+      "source_sha256": "97831d95086f9255b6f82e4aa023034aa6f51abae4031f1fb3984e4d5b49e03b",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/product-manager/SKILL.md": {
+      "description_zh": "帮助确定产品建设的内容与理由，并处理功能优先级、用户故事、路线图和需求收集。",
+      "source_sha256": "d16c8b8e8aea1126ae3594d571730e0732e1e7a72e453c71bfdf6156973ab60e",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/qa-engineer/SKILL.md": {
+      "description_zh": "为测试策略、测试计划、缺陷分析、测试框架、覆盖缺口和质量保证流程提供指导。",
+      "source_sha256": "0090f1edbb0bd55d96fe907c95023ab1f9627190af00f797bea0b48e8023d441",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/sde/SKILL.md": {
+      "description_zh": "执行功能开发、缺陷修复、API 实现和问题调试，并编写清晰的生产代码。",
+      "source_sha256": "96db5587bfd235601218ecd553cdbd4206f2fef94bd96ae21f7d98ad2402e982",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/security-engineer/SKILL.md": {
+      "description_zh": "为威胁建模、漏洞评估、认证与授权设计、安全审查、合规要求和安全加固提供指导。",
+      "source_sha256": "1d9c8ac5285bfc3bd5c44bf150e0b136b6b8ac6f0bd5df8327589a3031eb1033",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/senior-engineer/SKILL.md": {
+      "description_zh": "通过代码审查、设计模式、复杂问题调试和工程实践辅导，指导生产质量代码的实现。",
+      "source_sha256": "7bce5fa708cc48bff466619f22f66da85ed6eead162c5b98e58f660eb626b71e",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/sre/SKILL.md": {
+      "description_zh": "为事故响应、监控、服务等级目标、容量规划、性能调试和生产可靠性提供指导。",
+      "source_sha256": "961b76a8f1be9486be4c315824234566bcdf1e99970000323322401cceb03a7e",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "10x-Team-0.4.0-v1.zip:skills/staff-engineer/SKILL.md": {
+      "description_zh": "处理跨团队技术决策，包括代码质量标准、共享模式、技术债策略、复杂问题辅导和工程实践协调。",
+      "source_sha256": "d14de0d028dc7ec803aa28e167a6e2bf449d9c27c9e7a555330485a493ba8ecc",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "16minds-0.3.0-v2.zip:skills/voice-ask/SKILL.md": {
+      "description_zh": "在用户提出想法、计划或方案并指定 MBTI 人格时，以该人格提出追问，帮助用户梳理思考。",
+      "source_sha256": "a051b9b3c6a1f054ae60989d62c14c4ace1a3ee2253154fb9ececc5a6e8c6e27",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "16minds-0.3.0-v2.zip:skills/voice-decide/SKILL.md": {
+      "description_zh": "在用户指定 MBTI 人格并提供至少两个选项时，按该人格的判断风格作出选择。",
+      "source_sha256": "f5c1e36b1a189f0b881e7f6d32c478fe9ab82c7455eaa8d3acfe791369a94f2f",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "16minds-0.3.0-v2.zip:skills/voice-vote/SKILL.md": {
+      "description_zh": "让十六种 MBTI 人格对提案分别投赞成、反对或弃权票，以观察利益相关者分布、隐藏异议和组织共识。",
+      "source_sha256": "610827ef6193ab72ae79d6f3c8e951761d9d6430fa5f8ae3b5d9effd49a4b3f4",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "16minds-0.3.0-v2.zip:skills/voice-write/SKILL.md": {
+      "description_zh": "按指定或可推断的 MBTI 人格口吻撰写文章、社交内容和回复，或改写已有文本。",
+      "source_sha256": "cd24b44bd798214cead43a1152b28a1debb7b1d57f8d603f1f9d6a7eb9fb5d3c",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "1Password-0.1.0-v2.zip:skills/1password-environments/SKILL.md": {
+      "description_zh": "管理 1Password 开发者环境中的秘密信息，包括导入或挂载 .env 文件、创建环境、查看或添加环境变量和存储凭据。",
+      "source_sha256": "aafc9a28cd5f8e1cbaa89003e12090eab01121362467ff3b860d8dc1e9372660",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "21st-1.0.1-v1.zip:skills/21st-ui/SKILL.md": {
+      "description_zh": "使用 21st.dev 查找、安装或生成 UI 组件、获取设计灵感，并生成品牌 SVG 标志组件。",
+      "source_sha256": "6bcc922fa9913e53228929a5ebe84c01b279c5ae9cb179ffcfbb29ce145daf3e",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "42crunch-api-security-testing-1.15.0-v2.zip:skills/42crunch-api-security-testing/SKILL.md": {
+      "description_zh": "在同一流水线中运行 42Crunch 静态审计和在线扫描，适用于同时需要两类检查或尚未明确检查阶段的请求。",
+      "source_sha256": "3393d49998b33011149c1b1aa82b2454def25794eb71860a26da05e79cc1be07",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "42crunch-api-security-testing-1.15.0-v2.zip:skills/42crunch-audit/SKILL.md": {
+      "description_zh": "对 OpenAPI 规范运行 42Crunch 安全审计，处理 SQG 阻断问题、API 评分、数据字典增强和静态审计整改。",
+      "source_sha256": "1556a58fa35d92c8d86c48ab62f17bfe969e16604639c87c117304b8a99d9506",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "42crunch-api-security-testing-1.15.0-v2.zip:skills/42crunch-scan/SKILL.md": {
+      "description_zh": "对在线 API 运行 42Crunch 合规与授权扫描，配置扫描并处理 BOLA、BFLA 等检查及 SQG 阻断问题。",
+      "source_sha256": "0fb4e72b2b730dc934a6cc36262da7e21daaef6250a0d53e0b531cb96cddebdf",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "42crunch-api-security-testing-1.15.0-v2.zip:skills/42crunch-setup/SKILL.md": {
+      "description_zh": "准备或排查 42Crunch 运行环境，包括安装或更新 42c-ast、配置 API 密钥以及解决凭据或二进制程序问题。",
+      "source_sha256": "baed691873ec7d9daa7e0236bb97026a4ef6112f64f7d39a4fdb5b4558dab248",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "42crunch-api-security-testing-1.15.0-v2.zip:skills/generate-oas/SKILL.md": {
+      "description_zh": "在尚无 OpenAPI 规范时，根据 API 代码、Postman 或 Insomnia 集合生成完整的 OpenAPI 3.0 定义。",
+      "source_sha256": "9c96aa18b5e4d294c1a4a85ce0719f70b23b1fe3925c1a25b446c2e2ee6e3609",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "8digit Planner-3.0.1-v1.zip:skills/planner/SKILL.md": {
+      "description_zh": "通过 MCP 在 8digit Creative Content Planner 中规划、创建、编辑和明确审批社交内容，管理工作区、品牌、日历、媒体和资料库，社交平台发布仍需手动进行。",
+      "source_sha256": "67f62b89affaca7a51a386a0f31a239e7a82307c21d84433abef07f1624415f8",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-ai/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中集成聊天客户端、AI 智能体、Semantic Kernel、AI 工作区、RAG、文档索引分块和 MCP 服务。",
+      "source_sha256": "38d969765aeddecf3b0d9ac7a644145cb13ba42dd3dd301f190aaef8dea860a0",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-api/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中开发 REST API，配置自动控制器、C# 与 JavaScript 客户端代理、Swagger、API 版本和集成服务。",
+      "source_sha256": "7156cc005f38434e6aa52fb5bc6379809683a2b630875e1b99b204ddc3c79792",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-audit-logging/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中配置审计选项、实体历史、审计存储、日志过滤和审计追踪。",
+      "source_sha256": "6109bfc250544d6962b4e5ba270520db5f3eefa0e8483dff3a912e2c835a0cd6",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-authorization/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中定义并检查权限，处理角色、当前用户、资源授权和多租户访问控制。",
+      "source_sha256": "c4aa504edb1056e55ca73ce968f7fae19a44455a1f8fbdd34315fc2202b49da6",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-cli/SKILL.md": {
+      "description_zh": "使用 ABP Framework 10.4—10.6 的命令行工具、ABP Studio 和 ABP Suite 创建项目、添加包和生成客户端代理。",
+      "source_sha256": "57339c11bb28999ceb7cb1a0e05c2b00703eac6a3c3fd9869c024a056b082dae",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-dapr/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中配置 Dapr 服务调用、发布订阅事件总线、分布式锁、侧车通信和 API 令牌安全。",
+      "source_sha256": "e6b6143f3fb177449de6a95a6e6c6b8aa829b82003c9d6b8ed49ca614d01259e",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-ddd/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中设计领域层、实体、聚合、仓储、领域与应用服务、领域事件、值对象和工作单元。",
+      "source_sha256": "dcdaf6e4eddc9ab70485e7cf8ab63162c1784a6ba92e39981083631383905b23",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-dependency-injection/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中配置依赖注入、服务生命周期、自动注册、属性注入、延迟服务和 Autofac。",
+      "source_sha256": "4ebcc7c82239f8684ca4025b41d4bccaaaa6c9fd7de5734685e55f18166c5ec2",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:claude/abp-dependency-rules/SKILL.md": {
+      "description_zh": "为 ABP Framework 10.4—10.6 项目确定层次依赖方向和项目引用规则，避免应用层直接使用 DbContext、暴露 IQueryable 或将实体当作 DTO 返回。",
+      "source_sha256": "a666bb016eebbb15bbedc9e67f406b2020307a2c40ab6efd7029492bef9b8e44",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:opencode/abp-ai/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中集成聊天客户端、AI 智能体、Semantic Kernel、AI 工作区、RAG、文档索引分块和 MCP 服务。",
+      "source_sha256": "38d969765aeddecf3b0d9ac7a644145cb13ba42dd3dd301f190aaef8dea860a0",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:opencode/abp-api/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中开发 REST API，配置自动控制器、C# 与 JavaScript 客户端代理、Swagger、API 版本和集成服务。",
+      "source_sha256": "7156cc005f38434e6aa52fb5bc6379809683a2b630875e1b99b204ddc3c79792",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:opencode/abp-audit-logging/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中配置审计选项、实体历史、审计存储、日志过滤和审计追踪。",
+      "source_sha256": "6109bfc250544d6962b4e5ba270520db5f3eefa0e8483dff3a912e2c835a0cd6",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:opencode/abp-authorization/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中定义并检查权限，处理角色、当前用户、资源授权和多租户访问控制。",
+      "source_sha256": "c4aa504edb1056e55ca73ce968f7fae19a44455a1f8fbdd34315fc2202b49da6",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:opencode/abp-cli/SKILL.md": {
+      "description_zh": "使用 ABP Framework 10.4—10.6 的命令行工具、ABP Studio 和 ABP Suite 创建项目、添加包和生成客户端代理。",
+      "source_sha256": "57339c11bb28999ceb7cb1a0e05c2b00703eac6a3c3fd9869c024a056b082dae",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ABP Sensei-1.2.0-v2.zip:opencode/abp-dependency-injection/SKILL.md": {
+      "description_zh": "在 ABP Framework 10.4—10.6 中配置依赖注入、服务生命周期、自动注册、属性注入、延迟服务和 Autofac。",
+      "source_sha256": "4ebcc7c82239f8684ca4025b41d4bccaaaa6c9fd7de5734685e55f18166c5ec2",
+      "source_kind": "description",
+      "translation_method": "editorial_translation"
+    },
+    "ai-coding-ok-4.1.0-v1.zip:SKILL.md": {
+      "description_zh": "在任何编码任务（feat、fix、bug、refactor、plan、design、brainstorm、code review、implement、add feature、write tests、新功能、修复、重构）时首先使用此 skill——当项目包含 `.github/agent/memory/` 或 `AGENTS.md` 时；在编写代码前加载三层项目记忆（project-memory、decisions-log、task-history）和 AGENTS.md，完成任务后更新 task-history（始终）、decisions-log（架构变更时）和 project-memory（事实变更时）——这是 PDCA 护栏，防止\"AI 修了 bug X 却搞坏了功能 Y\"跨迭代发生；同时处理 INSTALL（用户说\"install ai-coding-ok\"、\"初始化 ai-coding-ok\"等，或项目尚无 `.github/agent/memory/` 时）——复制模板并定制占位符；也处理 UPGRADE（用户说\"upgrade ai-coding-ok\"、\"升级 ai-coding-ok\"等）——将项目文件与最新模板 diff 并应用框架级变更，同时保留项目定制。",
+      "source_sha256": "610379f3761e03b70e48f24f640124a4d2a20a1ca3d4a7882ffe4447b5276fcf",
+      "source_kind": "description",
+      "translation_method": "original_chinese"
+    },
+    "ai-coding-ok-4.1.0-v1.zip:skills/ai-coding-ok/SKILL.md": {
+      "description_zh": "在任何编码任务（feat、fix、bug、refactor、plan、design、brainstorm、code review、implement、add feature、write tests、新功能、修复、重构）时首先使用此 skill——当项目包含 `.github/agent/memory/` 或 `AGENTS.md` 时；在编写代码前加载三层项目记忆（project-memory、decisions-log、task-history）和 AGENTS.md，完成任务后更新 task-history（始终）、decisions-log（架构变更时）和 project-memory（事实变更时）——这是 PDCA 护栏，防止\"AI 修了 bug X 却搞坏了功能 Y\"跨迭代发生；同时处理 INSTALL（用户说\"install ai-coding-ok\"、\"初始化 ai-coding-ok\"等，或项目尚无 `.github/agent/memory/` 时）——复制模板并定制占位符；也处理 UPGRADE（用户说\"upgrade ai-coding-ok\"、\"升级 ai-coding-ok\"等）——将项目文件与最新模板 diff 并应用框架级变更，同时保留项目定制。",
+      "source_sha256": "610379f3761e03b70e48f24f640124a4d2a20a1ca3d4a7882ffe4447b5276fcf",
+      "source_kind": "description",
+      "translation_method": "original_chinese"
+    },
+    "ai-coding-ok-4.1.0-v1.zip:templates/zh/.codex/skills/ai-coding-ok/SKILL.md": {
+      "description_zh": "为项目安装三层记忆系统并强制执行 PDCA 工作流，防止 AI \"修了 bug X 却搞坏了功能 Y\"；> 配合项目根目录的 `AGENTS.md` 使用——Codex 会自动加载 AGENTS.md 中的 PDCA 强制指令。",
+      "source_sha256": "89154dc7ae0fcad1cc97ca004fd2e2f7c8164d05956a0c9245ade2448dd0cf52",
+      "source_kind": "excerpt",
+      "translation_method": "original_chinese"
+    },
+    "claude-cursor-orchestration-1.0.0-v2.zip:cursor-config/skills/b2b-site-strategy-and-ia/SKILL.md": {
+      "description_zh": "设计 B2B 网站战略和信息架构，整理价值主张、消息、用户路径、决策图、信任材料及语气约束，形成开发前模板。",
+      "source_sha256": "2824a6dc682334a9feec83ba3b09a1e79d94359fb5df1f1abce2378c06ee8544",
+      "source_kind": "description",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "claude-cursor-orchestration-1.0.0-v2.zip:cursor-config/skills/review-app-product/SKILL.md": {
+      "description_zh": "从产品和应用使用者角度评审变更，核验体验假设、指标、漏斗、留存和需求满足情况，参与并行评审。",
+      "source_sha256": "e25634b7f0de6141a7e7d2122f951c953a0cfff6376607a678380ef98536d911",
+      "source_kind": "description",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "claude-cursor-orchestration-1.0.0-v2.zip:cursor-config/skills/review-architecture/SKILL.md": {
+      "description_zh": "对照整体架构和设计思想评审变更，检查耦合、演进、边界与集成，以及各层职责和依赖方向。",
+      "source_sha256": "90da3dc41cb03331756fd67479c7017b42a40ada0c06692edce396c42eb82de2",
+      "source_kind": "description",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "claude-cursor-orchestration-1.0.0-v2.zip:cursor-config/skills/review-backend/SKILL.md": {
+      "description_zh": "评审后端变更，重点检查接口契约、幂等性、事务及 N+1 问题，核验服务器、接口和数据库层差异。",
+      "source_sha256": "31336acb0e5b8ff82c0f44f5deae209f4b05d437efe89357b13dd4740a2582d3",
+      "source_kind": "description",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "claude-cursor-orchestration-1.0.0-v2.zip:cursor-config/skills/review-infra/SKILL.md": {
+      "description_zh": "评审基础设施、部署、IaC 和持续集成变更，检查网络、访问权限、可观测性、灾难恢复和成本。",
+      "source_sha256": "6a3c33e0dab713afbed2023df91c53fef7139048c0fed0400abcc4bac8cb4878",
+      "source_kind": "description",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "claude-cursor-orchestration-1.0.0-v2.zip:cursor-config/skills/review-qa/SKILL.md": {
+      "description_zh": "从质量保证角度评审变更，整理回归覆盖、风险优先级和缺陷模式，形成验收检查与探索性测试要点。",
+      "source_sha256": "0d7c25888a9700373516685f055f8051432d80fd833f7cc279d37cf0223c9dbe",
+      "source_kind": "description",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "claude-cursor-orchestration-1.0.0-v2.zip:cursor-config/skills/review-test/SKILL.md": {
+      "description_zh": "评审测试代码，检查测试层次、偶发失败、变异测试、覆盖率门槛和契约测试。",
+      "source_sha256": "ac154259a277c9939a47c0b72b2a2e1c3dc2813d2c5f6bcf0df4b07312bb7c80",
+      "source_kind": "description",
+      "translation_method": "model_translation_ja_zh"
+    },
+    "mindmap-skills-0.3.0-v1.zip:skills/mindmap-zh/SKILL.md": {
+      "description_zh": "从文件、URL、粘贴的文本或一个主题生成可交互的 Markmap 思维导图（中文版）。",
+      "source_sha256": "efa7447620c4082d0b21313846b2a81a6f817181503f1258dc5dfdb776e6f5f7",
+      "source_kind": "description",
+      "translation_method": "original_chinese"
+    },
+    "paper-to-course-1.0.0-v1.zip:SKILL.md": {
+      "description_zh": "将学术论文转换为交互式 HTML 课程 + Markdown 文档 + PPTX 演示文稿，一键生成全部三种输出。",
+      "source_sha256": "77ed93c6c199f814ecbe07dcba84f9f1d07cd0154eddc7f91559cd09ca5870e4",
+      "source_kind": "description",
+      "translation_method": "original_chinese"
+    },
+    "trapic-0.7.0-v2.zip:skills/trapic-review/SKILL.md": {
+      "description_zh": "原文件为空，无法从源文确认该技能的具体用途。",
+      "source_sha256": "d8c4a5b6c102b4275929401217b98339a5d9acedb041dec3ef9eedd158b06a03",
+      "source_kind": "empty_source",
+      "translation_method": "original_chinese"
+    },
+    "wechat-audio-toolkit-0.1.0-v2.zip:article_skills/ai-interview-to-wechat-md/SKILL.md": {
+      "description_zh": "AI 领域外网访谈 → 公众号 Markdown 文章生成器；将 AI 相关的访谈/播客/对话的逐字稿（中文或英文），以 Q&A 问答结构提炼核心内容，输出一篇适合中文公众号发布的 Markdown 格式文章，并附带 5 个标题选项；当用户说\"帮我把这个 AI 访谈整理成公众号文章\"、\"这个播客帮我出一篇公众号稿\"、\"把这个英文访谈整理成中文 Markdown\"、\"这个 AI 对话整理一下发公众号\"、\"帮我翻译整理这个访谈\"等，或者用户上传了一个 AI/科技领域的访谈逐字稿（不论中英文）并提到公众号、Markdown、文章，都应该立即使用此 skill；也适用于：用户上传 AI 相关的访谈稿后说\"帮我出标题\"、\"整理成中文公众号文章\"、\"翻译整理一下\"等场景；只要涉及 AI/科技领域访谈 + 公众号/Markdown 输出，就用这个 skill；注意：如果访谈内容是关于小红书电商/个体创业等话题，应该用 transcript-to-wechat-md 而非本 skill。",
+      "source_sha256": "982d9a67392320cf21bef98d7bcbf6c79263a843a94a6c4d31c7dd60570e40b2",
+      "source_kind": "description",
+      "translation_method": "original_chinese"
+    },
+    "wechat-audio-toolkit-0.1.0-v2.zip:article_skills/transcript-to-wechat-md/SKILL.md": {
+      "description_zh": "访谈逐字稿 → 公众号 Markdown 文章生成器；将访谈/直播的语音转写逐字稿，以 Q&A 问答结构提炼核心内容，输出一篇可直接用于微信公众号发布的 Markdown 格式文章，并附带 5 个标题选项；当用户说\"帮我把这个访谈稿整理成公众号文章\"、\"这个直播回放帮我出一篇公众号稿\"、\"把这个采访整理成 Markdown\"、\"帮我出一篇访谈的公众号文\"、\"整理成可以发公众号的文章\"、\"访谈稿转公众号\"等，或者用户上传了一个访谈/对话类的逐字稿并提到公众号、Markdown、文章，都应该立即使用此 skill；也适用于：用户上传逐字稿后说\"帮我出5个标题\"、\"给我排版一下发公众号\"、\"转成 md 格式\"等场景；只要涉及访谈类内容 + 公众号/Markdown 输出，就用这个 skill。",
+      "source_sha256": "9744a75b1165b965b1f78987c2811c9035fe8b1edf3b855db29801180d2f3f40",
+      "source_kind": "description",
+      "translation_method": "original_chinese"
+    },
+    "wechat-audio-toolkit-0.1.0-v2.zip:skills/audio-to-transcript/SKILL.md": {
+      "description_zh": "音频文件（mp3/m4a/wav/aac/flac/ogg）→ 可读的 Markdown 文字稿；自动完成语音转写 + 说话人分离（阿里云 DashScope paraformer-v2）；最少交互：用户可以选择给每个 SPEAKER_XX 起名字，也可以直接跳过用原始标签；**保留原文不做内容整理、不做错字修正、不做解读**——只做简单排版让你方便阅读；每次运行落到 `~/Downloads/audio-to-transcript/<时间戳>_<音频名>/transcript.md`；当用户说\"帮我把这个音频/录音转成文字稿\"、\"转写一下这个 mp3/m4a\"、\"这个录音转文字\"、\"这个音频转逐字稿\"、\"帮我把这段录音转成可读文字\"、\"把这个音频转成 markdown 文字稿\"等，或者用户丢一个音频文件并提到转写/文字稿/逐字稿/转文字，立即使用此 skill；**不要用于**：①用户说\"整理成公众号文章\"、\"发公众号的稿\"、\"出一篇稿子\"——那是 audio-to-wechat-md 的任务；②视频文件——先让用户提取音频；③已经是文字稿的——直接给用户用。",
+      "source_sha256": "b6dee2704b2c7c3a20ff3b0d2d5f4b1743d555429fc3c2a1d76d9f764b29da05",
+      "source_kind": "description",
+      "translation_method": "original_chinese"
+    },
+    "wechat-audio-toolkit-0.1.0-v2.zip:skills/audio-to-wechat-md/SKILL.md": {
+      "description_zh": "音频文件（mp3/m4a/wav/aac/flac/ogg）→ 公众号 Markdown 成品文章；自动完成语音转写 + 说话人分离（阿里云 DashScope paraformer-v2），全程只问两个问题：①这个录音发到哪个公众号（你自己的访谈/学习型公众号）②每个 SPEAKER_XX 是谁；然后用 plugin 内打包的下游 skill（transcript-to-wechat-md 或 ai-interview-to-wechat-md）生成成品文章 + 5 个标题选项；每次运行的所有产物都落在 `~/Downloads/audio-to-wechat-md/<时间戳>_<音频名>/` 独立目录下，跨 session 不冲突；当用户说\"帮我把这个音频/录音/mp3/m4a/wav 整理成公众号文章\"、\"这个访谈录音/播客帮我出一篇稿\"、\"这个语音文件/会议录音转公众号\"、\"这段录音整理成 markdown 发公众号\"、\"帮我把音频转写并整理成文章\"、\"把录音整理成稿子\"等，或者用户直接丢一个音频文件并提到公众号/文章/整理/markdown/稿子，立即使用此 skill；不要用于：①用户只要转写文字稿、没提公众号/文章——用单独的转写工具（audio-to-transcript）即可；②视频文件——先让用户用 ffmpeg 提取音频；③已经是文字稿的内容——直接用 transcript-to-wechat-md 或 ai-interview-to-wechat-md。",
+      "source_sha256": "7cb5738048213311a92b88340e06e5210a57b506479dc4545600594216794f48",
+      "source_kind": "description",
+      "translation_method": "original_chinese"
+    },
+    "Bankstatemently-0.15.4-v2.zip:skills/analyze-spending/SKILL.md": {
+      "description_zh": "对已转换的银行对账单按商户或类别归集支出、列出主要商户并分析月度趋势；不用于首次转换、期间对账或基准评分。",
+      "source_description": "Use when the user asks to categorize spending, group by merchant or category, rank top merchants, or show monthly trends on converted statements. Do not use for first-time PDF conversion, period reconciliation, or benchmark scoring.",
+      "source_sha256": "101d8ab66211b021af09b0f8527e0af6d35ae8731c97f1d78e7bd5addd027db1",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "Bankstatemently-0.15.4-v2.zip:skills/benchmark-accuracy/SKILL.md": {
+      "description_zh": "转换 Bankstatemently 已公布的基准测试账单并对结果评分；不用于日常账单转换、支出分析或对账。",
+      "source_description": "Use when the user asks to convert and score a published Bankstatemently benchmark statement. Do not use for ordinary user-statement conversion, spending analysis, or reconciliation.",
+      "source_sha256": "52c4eda3560d5412983cf6b1cb0f1be45d5b51e8327595ce1e7c6c261f534a18",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "Bankstatemently-0.15.4-v2.zip:skills/convert-statement/SKILL.md": {
+      "description_zh": "将银行对账单 PDF 转换为数据，或将已转换结果导出为 CSV、XLSX、QBO、Xero 格式；其他分析任务使用对应 skills。",
+      "source_description": "Use when the user attaches a bank statement PDF or asks for CSV/XLSX/QBO/Xero export of a converted statement. Do not use for spending analysis, reconciliation, or benchmark scoring — those have their own skills.",
+      "source_sha256": "145e9652f9960bf223878d8383f6d751667059f72be6a7ccd3224554e060c9bc",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "Bankstatemently-0.15.4-v2.zip:skills/reconcile-statements/SKILL.md": {
+      "description_zh": "检查对账单覆盖的期间、缺失期间、余额连续性和跨账户转账；不用于新 PDF 转换、支出分类或基准评分。",
+      "source_description": "Use when the user asks to check statement coverage, missing periods, balance continuity, or cross-account transfers. Do not use for converting a new PDF, spending categorization, or benchmark scoring.",
+      "source_sha256": "e17498778e71076670c7bb1d169ea5199265f187afe01f790bec9b36a6c4ebf7",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "gl-reconciler-0.1.0-v1.zip:skills/audit-xls/SKILL.md": {
+      "description_zh": "检查选定区域、单张工作表或整个模型的公式与常见错误，包括资产负债表平衡、现金勾稽和模型逻辑。",
+      "source_description": "Audit a spreadsheet for formula accuracy, errors, and common mistakes. Scopes to a selected range, a single sheet, or the entire model (including financial-model integrity checks like BS balance, cash tie-out, and logic sanity). Triggers on \"audit this sheet\", \"check my formulas\", \"find formula errors\", \"QA this spreadsheet\", \"sanity check this\", \"debug model\", \"model check\", \"model won't balance\", \"something's off in my model\", \"model review\".",
+      "source_sha256": "0ebe549065a0995ed84d62ff445207206ac23abce5a1d3a6e09b05ae9b7b8de4",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "gl-reconciler-0.1.0-v1.zip:skills/break-trace/SKILL.md": {
+      "description_zh": "在总账对账已分类差异后，沿审计轨迹追溯双方原始交易或分录，说明哪里不同及其原因。",
+      "source_description": "Root-cause a reconciliation break to its source transaction or posting — follow the audit trail from the break row back to the originating entry on each side and state what differs and why. Use after gl-recon has classified a break.",
+      "source_sha256": "9368175aef33105098c1feb9353b66d27ecd40d545cc37288dc42e5e3890e150",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "gl-reconciler-0.1.0-v1.zip:skills/gl-recon/SKILL.md": {
+      "description_zh": "按交易日或期间核对总账与明细账，在头寸或交易层面匹配记录、标出差异并按可能原因分类；适用于日常和月结对账。",
+      "source_description": "Reconcile general ledger to subledger for a trade date or period — match at the position or transaction level, surface breaks, and classify each break by likely cause. Use for daily or month-end recon runs across asset classes.",
+      "source_sha256": "5524df135185b41a559775e534d4c8adddb6ff3d1a31be85f95c59dff4f5a1cb",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "gl-reconciler-0.1.0-v1.zip:skills/xlsx-author/SKILL.md": {
+      "description_zh": "在没有打开 Office 应用的智能体会话中，直接生成并保存 .xlsx 文件，而不是操作正在打开的 Excel 工作簿。",
+      "source_description": "Produce a .xlsx file on disk (headless) instead of driving a live Excel workbook — for managed-agent sessions with no open Office app.",
+      "source_sha256": "7b6ec09a452681076fea05257cfccda1c11dce3ddf271429cc2503032388ebc5",
+      "method": "本地逐条人工意译并核对适用范围"
+    }
+  }
+}
