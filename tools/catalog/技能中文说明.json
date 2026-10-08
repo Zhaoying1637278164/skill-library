@@ -56689,6 +56689,1086 @@
       "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
       "source_package": "preset-toolkit-0.5.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "faf086a0bbb2e052a6cc87ede2444f638348b5cad1cfeba0ff5a533cdcdc324f": {
+      "description_zh": "为 preset-toolkit 首次使用提供项目向导，创建配置、设置认证，并在虚拟环境中安装依赖。",
+      "source": "First-time project wizard for preset-toolkit -- creates config, sets up auth, installs deps in venv",
+      "source_sha256": "faf086a0bbb2e052a6cc87ede2444f638348b5cad1cfeba0ff5a533cdcdc324f",
+      "source_path": "skills/preset-setup/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9128895522b85bd869f8528ebdd116df5897e5e1c7321dbba32d9d7c21c6cc36": {
+      "description_zh": "针对 Preset 数据库执行任意 SQL 查询。",
+      "source": "Execute arbitrary SQL queries against Preset databases",
+      "source_sha256": "9128895522b85bd869f8528ebdd116df5897e5e1c7321dbba32d9d7c21c6cc36",
+      "source_path": "skills/preset-sql/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ed819a7a177c5272ed721b06d2af91faaca9c82f26d60bb7d53994688656e52": {
+      "description_zh": "从 Preset 拉取最新仪表板状态，去除重复文件并验证完整性。",
+      "source": "Pull latest dashboard state from Preset, deduplicate files, and verify integrity",
+      "source_sha256": "2ed819a7a177c5272ed721b06d2af91faaca9c82f26d60bb7d53994688656e52",
+      "source_path": "skills/preset-sync-pull/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c56670fa34e73d5709be8fd5088b567c78dfe191301ad7eaa4d0c3e426aa6475": {
+      "description_zh": "验证 Preset 仪表板变更、检查标记并试运行，通过审批门槛后推送。",
+      "source": "Validate, check markers, dry-run, and push dashboard changes to Preset with approval gate",
+      "source_sha256": "c56670fa34e73d5709be8fd5088b567c78dfe191301ad7eaa4d0c3e426aa6475",
+      "source_path": "skills/preset-sync-push/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7571232474395be5590d23a460c7f8214720795ded15668196e7f29c6d1732c": {
+      "description_zh": "执行 Preset 测试驱动循环：修改、验证、推送、回拉核验，并比较截图差异。",
+      "source": "Preset TDD loop: make change, validate, push, pull-back verify, screenshot diff",
+      "source_sha256": "d7571232474395be5590d23a460c7f8214720795ded15668196e7f29c6d1732c",
+      "source_path": "skills/preset-testing/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "599fc306c37eff093510d6022d4feba3e2c7a13ce4f873c95781af37d7316ec4": {
+      "description_zh": "使用决策树诊断和修复常见 Preset 仪表板问题。",
+      "source": "Decision tree for diagnosing and fixing common Preset dashboard issues",
+      "source_sha256": "599fc306c37eff093510d6022d4feba3e2c7a13ce4f873c95781af37d7316ec4",
+      "source_path": "skills/preset-troubleshoot/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c18ca84c31db74a9a00fc5fc3e4d5f751ec76e694fa4a74a8f56a9b220897c9": {
+      "description_zh": "进行 Preset 健康检查，运行验证、标记检查和指纹比较。",
+      "source": "Health check: run validation, marker checks, and fingerprint comparison",
+      "source_sha256": "5c18ca84c31db74a9a00fc5fc3e4d5f751ec76e694fa4a74a8f56a9b220897c9",
+      "source_path": "skills/preset-validate/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2af2c908395e09e72932159126d67c728ce3ea008eff33c2a8e9b73a30cb70a": {
+      "description_zh": "将当前 Preset 截图与基线比较，报告像素层面的视觉回归。",
+      "source": "Visual diff: compare current screenshots against baselines, report pixel-level regressions",
+      "source_sha256": "a2af2c908395e09e72932159126d67c728ce3ea008eff33c2a8e9b73a30cb70a",
+      "source_path": "skills/preset-visual-regression/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe0012bc54844658f5c3000e6e245630d7da7b1148163ed67a6ee206b7dec77e": {
+      "description_zh": "把 Preset 仪表板变更拆成带检查点、可验证的安全执行步骤。",
+      "source": "Break dashboard changes into safe, validated execution steps with checkpoints",
+      "source_sha256": "fe0012bc54844658f5c3000e6e245630d7da7b1148163ed67a6ee206b7dec77e",
+      "source_path": "skills/preset-writing-plans/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ccc128940afb88b449a351517a7e758d09c232b143fff46e11a4a90a31f38c8": {
+      "description_zh": "为 Preset 仪表板管理选择工作流，覆盖同步、推送、验证、截图、视觉回归和归属检查。",
+      "source": "Preset dashboard management router — sync, push, validate, screenshot, visual regression, ownership",
+      "source_sha256": "1ccc128940afb88b449a351517a7e758d09c232b143fff46e11a4a90a31f38c8",
+      "source_path": "skills/preset/SKILL.md",
+      "package_sha256": "60bfbdf76d1020970bd6a916478f5bee79865b4f4494bd95034d7b8f00e3e5e0",
+      "source_package": "preset-toolkit-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a1b5588e66029f379b9b677b48ce9d2b2d5195ea835adb0e41def67aa7cfe3e": {
+      "description_zh": "使用 PreyReach 查找并保存业务潜在客户。",
+      "source": "Use PreyReach to find and save business leads.",
+      "source_sha256": "0a1b5588e66029f379b9b677b48ce9d2b2d5195ea835adb0e41def67aa7cfe3e",
+      "source_path": "skills/preyreach/SKILL.md",
+      "package_sha256": "939662d561808bc30f7d695f5308d59daca5eb26018dffc856baedc2ff51b367",
+      "source_package": "Preyreach-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc385e123cfcb03006002ce463affc51a2b2022ac2176395ff7a650cfa000665": {
+      "description_zh": "首次使用隐私插件时进行访谈，依据隐私政策、DPA 模板和参考 PIA 学习工作方式并编写 CLAUDE.md；适用于文件缺失、仍有占位符、重新配置或复查集成。",
+      "source": "Run the cold-start interview — learns your privacy practice and writes CLAUDE.md from your policy, DPA template, and a reference PIA. Use on first run, when CLAUDE.md is missing or has placeholders, or when the user says \"set up the privacy plugin\", \"onboard me\", \"configure privacy\", or wants to re-run the interview or re-check integrations.",
+      "source_sha256": "dc385e123cfcb03006002ce463affc51a2b2022ac2176395ff7a650cfa000665",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83fcc51421f787acf3598d85ffd875732bf3d66ba162f5ccea29d23955c804b9": {
+      "description_zh": "逐项定制隐私工作配置，无需重做全部初始访谈，可调整风险倾向、升级联系人、DPA 手册、政策承诺、PIA 风格、DSAR 流程和事项工作区路径。",
+      "source": "Guided customization of your privacy practice profile — change one thing without re-running the whole cold-start interview. Adjust risk posture, escalation contacts, DPA playbook, privacy policy commitments, PIA house style, DSAR process, or matter workspace paths. Use when the user says \"change my [thing]\", \"update my profile\", \"edit my playbook\", or \"customize\".",
+      "source_sha256": "83fcc51421f787acf3598d85ffd875732bf3d66ba162f5ccea29d23955c804b9",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c7f542fb9a4c380b6eab4a84913a883de8ff234e7ab9d406efff0973978755e": {
+      "description_zh": "依据用户 DPA 手册审查数据处理协议，识别用户是处理者还是控制者，并应用相应规则；适用于客户发来的 DPA 或数据处理附录审查。",
+      "source": "Review a Data Processing Agreement against your DPA playbook — auto-detects whether you're processor or controller and applies the right half of the playbook. Use when the user says \"review this DPA\", \"check this data processing addendum\", \"customer sent their DPA\", \"is this DPA okay\", or attaches a DPA.",
+      "source_sha256": "8c7f542fb9a4c380b6eab4a84913a883de8ff234e7ab9d406efff0973978755e",
+      "source_path": "skills/dpa-review/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ab714206f9a12857adc8908472a0f7cb06d22c603d2fb27b9cc5c1e83db6576": {
+      "description_zh": "逐步处理数据主体访问、删除、可携带或更正请求：核验身份，按系统查找数据，评估豁免，草拟确认函及实质回复。",
+      "source": "Walk through a Data Subject Access Request (or deletion, portability, correction request) and draft the response — verify identity, locate data system-by-system, assess exemptions, draft the acknowledgment and substantive response letters. Use when a DSAR comes in, the user pastes an access/deletion/portability/correction request, or says \"DSAR came in\", \"access request\", \"right to be forgotten\", or \"someone wants their data\".",
+      "source_sha256": "7ab714206f9a12857adc8908472a0f7cb06d22c603d2fb27b9cc5c1e83db6576",
+      "source_path": "skills/dsar-response/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "954da1fe1ef21a964a57b96348e77d77f0ed672feee00c603cea8bc39c69fdbb": {
+      "description_zh": "创建、列出、切换、关闭或脱离隐私法律事项工作区，隔离不同客户或项目上下文；也可切换到整个执业层级工作。",
+      "source": "Manage matter workspaces — create, list, switch, close, or detach (practice-level). Keeps one client or engagement's context separate from every other for multi-client practitioners. Use when the user wants to open a new matter, switch matters, list matters, close/archive a matter, or work at practice-level only.",
+      "source_sha256": "954da1fe1ef21a964a57b96348e77d77f0ed672feee00c603cea8bc39c69fdbb",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37bc30902721750fe9044ac5052b13b9f57ba1e5c505574ab19f891ae8840505": {
+      "description_zh": "依据参考 PIA 学到的内部格式，为新功能、产品或数据处理活动生成隐私影响评估，适用于 PIA 编写和新处理活动隐私审查。",
+      "source": "Generate a Privacy Impact Assessment in house format for a new feature, product, or processing activity, using the structure learned from your seed PIA. Use when the user says \"write a PIA\", \"privacy impact assessment for\", \"do we need a PIA for this\", \"privacy review this feature\", or describes a new data processing activity.",
+      "source_sha256": "37bc30902721750fe9044ac5052b13b9f57ba1e5c505574ab19f891ae8840505",
+      "source_path": "skills/pia-generation/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d750e04b92028c4d2090fb09143d8c35aa687a953e5a78587b0c90747e0544d4": {
+      "description_zh": "检查隐私政策与实际工作是否一致：每周扫描已保存 PIA、DPA 审查及分流结果，或针对拟开展的活动直接查询，发现政策偏离和更新需求。",
+      "source": "Keep the privacy policy current with practice. Two modes: weekly sweep of saved PIAs, DPA reviews, and triage results to find policy drift; or direct query for a proposed new practice. Use when the user asks \"does our policy cover this\", \"we want to start doing X — does the policy need updating\", \"run the policy monitor\", \"policy sweep\", or wants to find where the privacy policy no longer matches what the team actually does.",
+      "source_sha256": "d750e04b92028c4d2090fb09143d8c35aa687a953e5a78587b0c90747e0544d4",
+      "source_path": "skills/policy-monitor/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22554e1aa3dc586cd1ad70ed70158932929a77f24ba513dc8504dbf8bb479eda": {
+      "description_zh": "比较新增或变化的法规与现有隐私政策及实践，输出差距清单和带责任人、日期的整改计划。",
+      "source": "Diff a new or changed regulation against current privacy policy and practice — outputs a gap list and a remediation plan with owners and dates. Use when a new reg drops, the user asks \"does [regulation] affect us\", \"gap analysis for [state privacy law]\", \"compliance check against [reg]\", or pastes regulatory text.",
+      "source_sha256": "22554e1aa3dc586cd1ad70ed70158932929a77f24ba513dc8504dbf8bb479eda",
+      "source_path": "skills/reg-gap-analysis/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b148ee93c107a480a4a7ac2f8185602c632f165c81dbe003a3b9f93ef1238c91": {
+      "description_zh": "快速判断新处理活动、产品功能或供应商关系需要一般 PIA、GDPR 强制 DPIA，还是可继续推进，指出政策冲突并选择下一步。",
+      "source": "Quickly determine whether a processing activity needs a PIA, a mandatory GDPR DPIA, or can proceed — surfaces privacy policy conflicts and routes to the right next step. Use when the user asks \"does this need a PIA\", \"triage this feature\", \"privacy check on X\", \"is this okay from a privacy perspective\", or describes a new data processing activity, product feature, or vendor relationship.",
+      "source_sha256": "b148ee93c107a480a4a7ac2f8185602c632f165c81dbe003a3b9f93ef1238c91",
+      "source_path": "skills/use-case-triage/SKILL.md",
+      "package_sha256": "d49e2d306737efb0ba364349c1c599117c56e95982a8151dfa1f640d23f3e791",
+      "source_package": "privacy-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d978da49a50bce953be66a1d7dfcdadb3b80d6bec19dda290078366f615b583a": {
+      "description_zh": "读取多家私募股权被投公司的季度更新和财务资料，识别 AI 应用机会及各公司的近期可行项目，汇总排序，以分配运营合伙人时间和 AI 投入；适用于季度组合复盘及年度规划。",
+      "source": "Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time. Ingests quarterly updates and financials across multiple portfolio companies, identifies quick wins at each, and stacks them into a single ranked action list. Use during quarterly portfolio reviews, annual planning, or when deciding which companies get AI investment first. Triggers on \"AI readiness\", \"AI opportunity scan\", \"where should we deploy AI\", \"AI across the portfolio\", \"AI quick wins\", or \"which portcos are ready for AI\".",
+      "source_sha256": "d978da49a50bce953be66a1d7dfcdadb3b80d6bec19dda290078366f615b583a",
+      "source_path": "skills/ai-readiness/SKILL.md",
+      "package_sha256": "edbc76263383462be67d526f37eec11ea3fbf51ef217ca6bdf1512a2e4702822",
+      "source_package": "private-equity-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "238e7003c1804619c444059ae7e402a797594cc32ed397a54c14a408e5a31962": {
+      "description_zh": "按目标公司行业、交易类型和复杂度生成并跟踪尽职调查清单，覆盖主要工作流、资料请求、完成状态和重大风险升级；适用于启动尽调、资料室审查及未完成事项跟踪。",
+      "source": "Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity. Covers all major workstreams with request lists, status tracking, and red flag escalation. Use when kicking off diligence, organizing a data room review, or tracking outstanding items. Triggers on \"dd checklist\", \"due diligence tracker\", \"diligence request list\", \"what do we still need\", or \"data room review\".",
+      "source_sha256": "238e7003c1804619c444059ae7e402a797594cc32ed397a54c14a408e5a31962",
+      "source_path": "skills/dd-checklist/SKILL.md",
+      "package_sha256": "edbc76263383462be67d526f37eec11ea3fbf51ef217ca6bdf1512a2e4702822",
+      "source_package": "private-equity-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15cf8f1c322506fab43038b8e806754fa1d16f5a2d27f311b46a7290ad3510e7": {
+      "description_zh": "为管理层演示、专家访谈、客户背调及顾问会议等尽调沟通准备针对性问题、参考基准和待追查风险。",
+      "source": "Prepare for due diligence meetings — management presentations, expert network calls, customer references, and advisor sessions. Generates targeted question lists, benchmarks to reference, and red flags to probe. Use before any diligence meeting or call. Triggers on \"prep for management meeting\", \"diligence call prep\", \"expert call questions\", \"customer reference questions\", or \"meeting prep for [company]\".",
+      "source_sha256": "15cf8f1c322506fab43038b8e806754fa1d16f5a2d27f311b46a7290ad3510e7",
+      "source_path": "skills/dd-meeting-prep/SKILL.md",
+      "package_sha256": "edbc76263383462be67d526f37eec11ea3fbf51ef217ca6bdf1512a2e4702822",
+      "source_package": "private-equity-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a8fc431fa7d33143f89e55f7ddfd6e651359ab00b40cd7b7b6482fe10a0ddfa4": {
+      "description_zh": "按基金投资标准快速筛选 CIM、项目摘要及中介材料，提取交易指标、应用通过或淘汰框架，并生成一页筛选备忘录，用于决定是否首次沟通。",
+      "source": "Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria. Extracts key deal metrics, runs a pass/fail framework, and outputs a one-page screening memo. Use when reviewing new deal flow, triaging inbound materials, or deciding whether to take a first call. Triggers on \"screen this deal\", \"review this CIM\", \"should we look at this\", \"triage this teaser\", or \"deal screening\".",
+      "source_sha256": "a8fc431fa7d33143f89e55f7ddfd6e651359ab00b40cd7b7b6482fe10a0ddfa4",
+      "source_path": "skills/deal-screening/SKILL.md",
+      "package_sha256": "edbc76263383462be67d526f37eec11ea3fbf51ef217ca6bdf1512a2e4702822",
+      "source_package": "private-equity-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80d31236a48ce2451f378574b374fb58e024f9684fcbda03618407e88d7c18bd": {
+      "description_zh": "协助私募股权项目寻源，发现目标公司、检查 CRM 中已有关系，并草拟个性化创始人联系邮件。",
+      "source": "PE deal sourcing workflow — discover target companies, check CRM for existing relationships, and draft personalized founder outreach emails. Use when sourcing new deals, prospecting companies in a sector, or reaching out to founders. Triggers on \"find companies\", \"source deals\", \"draft founder email\", \"check if we've seen this company\", or \"outreach to founder\".",
+      "source_sha256": "80d31236a48ce2451f378574b374fb58e024f9684fcbda03618407e88d7c18bd",
+      "source_path": "skills/deal-sourcing/SKILL.md",
+      "package_sha256": "edbc76263383462be67d526f37eec11ea3fbf51ef217ca6bdf1512a2e4702822",
+      "source_package": "private-equity-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "380f8e54d2fc81bf5e63b819f6862a5f8f658ef8a79ae6241bde09da65492cfc": {
+      "description_zh": "分析私募股权目标公司的单位经济性，覆盖 ARR 群组、LTV/CAC、净留存、回收期、收入质量和利润率瀑布，适用于 SaaS、订阅及经常性收入企业。",
+      "source": "Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall. Essential for software/SaaS, recurring revenue, and subscription businesses. Use when evaluating revenue quality, building a cohort analysis, or assessing customer economics. Triggers on \"unit economics\", \"cohort analysis\", \"ARR analysis\", \"LTV CAC\", \"net retention\", \"revenue quality\", or \"customer economics\".",
+      "source_sha256": "380f8e54d2fc81bf5e63b819f6862a5f8f658ef8a79ae6241bde09da65492cfc",
+      "source_path": "skills/unit-economics/SKILL.md",
+      "package_sha256": "edbc76263383462be67d526f37eec11ea3fbf51ef217ca6bdf1512a2e4702822",
+      "source_package": "private-equity-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3501ccbeae10d5f6527bbed6c8549d573e899a6af4334ebcc990be23ede6525": {
+      "description_zh": "制定收购后的价值创造计划，将收入、成本和运营措施映射到 EBITDA 桥接，包含百日优先事项、KPI 目标及责任安排，用于交割后执行和董事会路线图。",
+      "source": "Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge. Includes 100-day priorities, KPI targets, and accountability frameworks. Use when planning post-close execution, preparing operating partner materials, or building a board-ready value creation roadmap. Triggers on \"value creation plan\", \"100-day plan\", \"post-close plan\", \"EBITDA bridge\", \"operating plan\", or \"value creation levers\".",
+      "source_sha256": "c3501ccbeae10d5f6527bbed6c8549d573e899a6af4334ebcc990be23ede6525",
+      "source_path": "skills/value-creation-plan/SKILL.md",
+      "package_sha256": "edbc76263383462be67d526f37eec11ea3fbf51ef217ca6bdf1512a2e4702822",
+      "source_package": "private-equity-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "544cf0bf6fb440ac45d659b7c2615d47aadad1fe9399a39b45af6557e78f74fc": {
+      "description_zh": "指导正确使用 PrivCo MCP 查询公司、人员及融资数据，解释完整州名、行业与关键词、排序枚举、摘要缺项和 includeMissing 的过滤含义；采用匹配→档案→融资交易流程，并用两阶段方法查询估值前 N 名。",
+      "source": "Use the PrivCo MCP tools (`mcp__privco-data-mcp__*`) correctly for company / people / funding queries. Covers the non-obvious filter semantics (full state name, industry vs keyword, sorting enum, summary-row gaps, includeMissing), the standard match → profile → vc_deals workflow, and the two-stage pattern for \"top N by valuation\". Activate when the user wants to search/filter PrivCo data, look up a specific company, or build a multi-entity dataset. Trigger phrases: \"find companies that…\", \"search PrivCo for…\", \"who are the X companies in Y\", \"look up <company> in PrivCo\", \"valuations for…\", \"build a fixture / dataset of companies matching…\".",
+      "source_sha256": "544cf0bf6fb440ac45d659b7c2615d47aadad1fe9399a39b45af6557e78f74fc",
+      "source_path": "skills/privco-mcp-search/SKILL.md",
+      "package_sha256": "d141b18de7382d32149e74407b998fbde4123477c3e6bbbf86f1c944b4c0c418",
+      "source_package": "PrivCo Data-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b37c4c2e2f7c0a479ccf2ad4dca9c7af787069364280b46f262bf619a58f1df": {
+      "description_zh": "为已完成机器学习实验生成只读审计：audit 下的 Jupytext Python 文件与实验和日志同名配对，读取 skore 报告并由内置运行器输出各单元的打印及末尾表达式摘要，供日志、历史问答和跨实验比较使用；不重新评估或写入 Project，也不探索原始数据。",
+      "source": "Owns the `audit/` folder: one `# %%` (jupytext percent) Python file per experiment, aligned 1:1 with `experiments/NN_<short_name>.py` and `journal/NN_<short_name>.md`, that loads the experiment's skore report **read-only** and uses bare-last-expression cells whose `__repr__` carries the audit's signal.   The agent executes the audit file via the bundled in-process runner (`audit-ml-pipeline/scripts/run_cells.py` — IPython `InteractiveShell.run_cell`), which streams a markdown digest of each cell's stdout + last-expression repr to stdout (optionally also to a file). The digest fuels narrative work (the `JOURNAL.md` Status + History update, follow-up questions about a past experiment, cross-experiment comparison). Stops at \"audit/NN_*.py is placed, executed, and the digest is available.\" Never calls `skore.evaluate(...)` or `project.put(...)`.\nTRIGGER — any of: - `iterate-ml-experiment` § 4 record-outcome — audit is dispatched\n  FIRST (replaces scratch probes for metric extraction).\n- The user asks \"audit experiment 02\", \"show me what 03 looks\n  like\", \"re-audit 04 against the new report\".\n- An experiment was re-run (same `put()` key overwritten) and the\n  matching audit file needs re-execution.\n- The user wants a human-readable narrative of a past experiment\n  without firing the full `iterate-from-skore` flow.\n\nSKIP when: the design note isn't approved yet (route to `iterate-ml-experiment`); the experiment hasn't been run (no report on disk); the agent feature isn't installed (delegate to `python-env-manager` § \"Agent feature\"); the user is mining the report to source the *next* experiment (`iterate-from-skore`); the user wants to explore the **raw dataset** rather than a finished run's skore report (`explore-ml-data` — audit reads a report, not the data).\nHOW TO USE: confirm the four-way stem pairing exists (`journal/NN_*.md` approved + `experiments/NN_*.py` exists + smoke test passed + report under that key in the Project), then place `audit/NN_<short_name>.py` from `templates/audit.py`, substituting the package name + the literal Project init block copied from `experiments/<stem>.py`.   Execute via the bundled runner: `pixi run -e agent python .agents/skills/audit-ml-pipeline/scripts/run_cells.py audit/<stem>.py`. **Read the Stop conditions and emit the Pre-flight checklist before any write or shell command.** Always invoke `python-api` for skore symbol signatures — never write them from memory.",
+      "source_sha256": "1b37c4c2e2f7c0a479ccf2ad4dca9c7af787069364280b46f262bf619a58f1df",
+      "source_path": "skills/audit-ml-pipeline/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62c8c6d6c896dbf555038148be0a62bfcbe94ff6d4aae2ec56a30462af3cfbde": {
+      "description_zh": "用 skrub DataOps 图声明从数据源到预测器的管线，无状态函数经 apply_func、有状态 sklearn 兼容估计器经 apply 连接；用于加载、预处理、特征及估计器的结构变更，止于对象声明，不训练、拆分、调参、持久化或评估，原说明要求先核验 API 签名。",
+      "source": "Declare the pipeline from data source to predictor as a **skrub DataOps graph** (not as a bare `sklearn.Pipeline`). Every step is either a pure-Python function (stateless) attached via `.skb.apply_func`, or a sklearn-compatible estimator (stateful) attached via `.skb.apply`. Stops at the declared object — no fit, split, tuning, persistence, or evaluation.\nTRIGGER — any of: - Writing or editing code that declares any link in the chain\n  *data source → predictor*: loaders, preprocessing, encoders /\n  imputers / scalers, feature steps, composition objects\n  (`Pipeline`, `ColumnTransformer`, skrub `tabular_pipeline`,\n  `nn.Module`), or the final estimator.\n- A pure-Python data-processing function destined for the\n  pipeline path (cleans / derives / reshapes) — whether wrapped\n  via `FunctionTransformer`, `skrub.@deferred` / `skrub.var`,\n  a custom `BaseEstimator` subclass, or just called in the\n  training path before the estimator.\n- A step is added, removed, swapped, or reordered inside an\n  existing pipeline declaration.\n- A bare `sklearn.Pipeline` / `make_pipeline` is being used as\n  the top-level — fire to redirect into a skrub DataOps graph.\n- The user asks to build / declare / set up a pipeline /\n  classifier / regressor for X.\n\nSKIP when: `.fit(...)` calls / training loops / `Trainer.fit` / epoch loops; train/test split or cross-validation splitting; hyperparameter search; persistence (`joblib.dump`, checkpointing); evaluation / metrics / scoring; inference over a pre-trained model; pure EDA; library-choice questions with no concrete declaration in play.\nHOW TO USE: consult before the first declarative line and on every structural edit (added/swapped step, changed input columns, changed estimator family). Don't re-consult for cosmetic edits. **First, read the Stop conditions and emit the Pre-flight checklist as visible text before any code.** Always invoke `python-api` to confirm skrub / sklearn symbol names and signatures before typing — don't guess from memory.",
+      "source_sha256": "62c8c6d6c896dbf555038148be0a62bfcbe94ff6d4aae2ec56a30462af3cfbde",
+      "source_path": "skills/build-ml-pipeline/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e0a81c8a37472b19656972bd8d44e1cf865b1703276e01fddc935fd0bec3572": {
+      "description_zh": "为 Python 数据科学及机器学习选用分层技术栈，区分必需、用户选择、可选及传递依赖，并参考各库适用范围和组合；原说明主张缺失依赖应安装而非静默替换，实验记录与评估使用 skore，MLflow 仅保留服务或注册表用途。",
+      "source": "Opinionated Python stack for data-science / ML work — one library per job, organized into tiers (mandatory / user choice / optional / transitive). SKILL.md is the index; per-library `references/<library>.md` files carry scope, \"pick this when\" / \"pick something else when\", and pairings.\nTRIGGER when (any of these): (1) **a library import fails** in this stack's domain — the answer is install, not substitute (see § \"Missing dependency\"); (2) **a library choice has to be made** — explicitly (the user asks \"which library for X?\") or implicitly (code is about to introduce a new dependency, or the project is being scaffolded and the tabular library hasn't been picked yet); (3) starting a new Python data-science / ML project; (4) the user or current code reaches for a substitute outside the stack (xgboost, lightgbm, black, isort, flake8, poetry, hatch), or reaches for `mlflow` to log params/metrics, or for `cross_val_score` + handwritten reporting — redirect: tracking → `skore` Project API, evaluation / reporting → `skore` report classes, `mlflow` stays only for model serving / registry.\nSKIP when: the project is non-Python; the work is web / backend / infra unrelated to data science; the library is already chosen and installed and the task is implementation inside it (bug fix, feature work, refactor) with no new dependency in play.\nHOW TO USE: **read this SKILL.md end-to-end before recommending or installing anything** — picking from a single index entry hides the tier (whether the library is mandatory, a user-choice, optional, or already transitively present) and the pairings, and both matter. Then read the linked `references/<library>.md` for the chosen library's scope and tradeoffs. Don't silently substitute one library for another; if no entry fits, surface the gap to the user.",
+      "source_sha256": "7e0a81c8a37472b19656972bd8d44e1cf865b1703276e01fddc935fd0bec3572",
+      "source_path": "skills/data-science-python-stack/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97b8a7378a55d90f1019aa886388de4517b37de3b27fc3fb5d408a100006e56b": {
+      "description_zh": "评估单个 sklearn 兼容学习器，优先使用 skore.evaluate，按数据的群组和时间结构选择交叉验证器并读取报告；默认指标和图表沿用 skore，明确请求时才覆盖。不负责声明管线、模型搜索、最终模型训练部署或跨实验跟踪。",
+      "source": "Methodology for evaluating a single sklearn-compatible learner (in particular, the `SkrubLearner` produced by `build-ml-pipeline`). Owns: which entry point to call (`skore.evaluate` first, the explicit report classes when needed), which cross-validator to pick from scikit-learn's catalogue, how to consume the structural metadata (`groups`, `times`, …) attached at build time via `.skb.mark_as_X(split_kwargs=...)`. Stops at \"what does the report say\". Defaults (metrics, plots) come from skore; only override on explicit user request.\nTRIGGER when: code calls `cross_val_score`, `cross_validate`, `classification_report`, or any handwritten metric print (`print(mean_squared_error(...))`); code calls `.skb.cross_validate(...)` (route through skore for richer output); user asks how to score, evaluate, or compare a single learner; user asks how to pick a cross-validator; user wants to see a report / metrics / diagnostic plots for a fitted learner.\nSKIP when: declaring the pipeline (use `build-ml-pipeline`); hyperparameter / model search (separate skill); fitting, persisting, or serving the final model; tracking or comparing experiments across multiple runs over time (separate skill).\nHOW TO USE: invoke before any evaluation call. **First, read the \"Stop conditions\" block at the top of the body and emit the Pre-flight checklist as visible text in your response — both are mandatory before any evaluation code is written.** The structural facts about the data (group keys, time ordering) should already be encoded at the X marker via `split_kwargs` — if they aren't and you can't tell from the data, return to `build-ml-pipeline` and ask the user. For symbol-level lookups, defer to `python-api` (skore symbols) and `python-api` (splitters); don't guess names from memory.",
+      "source_sha256": "97b8a7378a55d90f1019aa886388de4517b37de3b27fc3fb5d408a100006e56b",
+      "source_path": "skills/evaluate-ml-pipeline/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bf62e5c747418ef61dc8efecb051315ec4d98dcafb81e765cdb61fcdcead598": {
+      "description_zh": "在设计模型前执行数据探索，生成 data/eda.py、持久化 Markdown、skrub TableReport HTML及实验日志中的 EDA 部分；揭示类型、缺失、基数、目标分布、时间群组结构和特征关联以支持建模选择，不设计模型或修改原始数据。",
+      "source": "Owns data understanding BEFORE any model is designed. Places and executes `data/eda.py` (a jupytext `# %%` script) via the shared in-process runner, reads the streamed digest, then writes a persisted `data/eda.md` report (plus linked `data/eda_<table>.html` skrub `TableReport` pages) and the `## Data understanding (EDA)` section of `journal/JOURNAL.md`. The point is to surface the dataset facts — shape, dtypes, missingness, cardinality, target balance / skew, datetime / group structure, feature associations — that JUSTIFY the later learner / splitter / metric decisions, so the user understands *why* the modelling choices are made. Uses `skrub.TableReport` for dataframe overviews and the shared runner `audit-ml-pipeline/scripts/run_cells.py`. Stops at \"EDA executed, `data/eda.md` + HTML written, JOURNAL EDA section updated.\" Never designs the model, never edits `src/<pkg>/`, never modifies the user's raw data files.\nTRIGGER — any of: - `iterate-ml-experiment` § 0 bootstrap, BEFORE the baseline design\n  note — the G-EDA gate fires here (run / skip).\n- The user asks to \"explore the data\", \"do an EDA\", \"profile the\n  dataset\", \"what does the data look like\", \"understand the data\".\n- A new or changed data source needs (re-)understanding before the\n  next experiment.\n\nSKIP when: the workspace isn't scaffolded / bootstrapped yet — `iterate-ml-experiment` § 0 owns bootstrap ordering and will dispatch here at the G-EDA step; don't run standalone ahead of scaffolding (route to `iterate-ml-experiment` / `organize-ml- workspace`); there is no data to explore yet; the user wants to inspect a finished run's skore report rather than the raw dataset (`audit-ml-pipeline`); the user is past data understanding and wants pipeline / evaluation mechanics (`build-ml-pipeline` / `evaluate-ml-pipeline`); a pure symbol lookup (`python-api`); EDA is already recorded (`data/eda.md` + the JOURNAL EDA section exist) and the user is not asking to refresh it.\nHOW TO USE: run the Detection step (does `data/eda.md` + the JOURNAL EDA section already exist?), emit the Pre-flight checklist as visible text, read the Stop conditions, then place `data/eda.py` from `templates/eda.py`, execute it via the shared runner, read the digest, and author `data/eda.md` + the JOURNAL EDA section. Always resolve skrub / pandas / polars symbols via `python-api`, never from memory.",
+      "source_sha256": "1bf62e5c747418ef61dc8efecb051315ec4d98dcafb81e765cdb61fcdcead598",
+      "source_path": "skills/explore-ml-data/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ec880da0fe8ca4bfb9dd6392cc178c84e7bd0457bc918802070b2c647cf4a1a": {
+      "description_zh": "从已有机器学习审计摘要中的 issue 和 tip 出发，读取其文档链接，形成带来源且去重的后续实验待办和一段总结；指标仅用于上下文，由主迭代流程写入日志，用户选择推进项，不重新打开 skore Project或代选方案。",
+      "source": "Source the next ML experiment proposal by **reading the audit digest** at `scratch/audit/<stem>/audit.md` (produced by `audit-ml-pipeline` at § 4 record-outcome). For every row in the digest's `## Checks summary` whose `severity` is `issue` or `tip`, follow the row's `documentation_url` to draft a Backlog row whose `Item` is the mitigation the docs recommend. The `## Metrics summary` provides context for the human summary paragraph but does not drive Backlog rows on its own. Returns the enriched Backlog rows + a one-paragraph summary back to `iterate-ml-experiment`, which writes the rows into `JOURNAL.md` and re-presents the sourcing menu so the user can promote a `B<N>` row. Stops at \"Backlog enriched, summary returned\"; never writes a per-experiment design note, never picks the \"winning\" finding — the user picks via `B<N>`.\nTRIGGER when: `iterate-ml-experiment` is picking a sourcing strategy and the user picks `skore` from the menu; the user says \"mine the report\", \"what does skore see?\", \"fill the backlog from the diagnostic\"; the previous experiment has finished and the user wants the report converted into actionable backlog items.\nSKIP when: the previous experiment hasn't run yet (no audit digest on disk); the user has a concrete modelling idea (use `iterate-from-user`); the task is the *mechanics* of running / opening a report — route to `evaluate-ml-pipeline`; the user wants a narrative read of one specific section of the report (route to `evaluate-ml-pipeline`).\nHOW TO USE: read the existing `scratch/audit/<stem>/audit.md` digest as text — do NOT re-open the skore Project, do NOT call `report.*` accessors. For each row in the `## Checks summary` section whose severity is `issue` or `tip`, follow the `documentation_url` (via WebFetch) and draft one Backlog row citing `audit:<stem>:checks.<code>`. Dedupe against rows already in `JOURNAL.md` Backlog by source citation. Return the candidate rows + a one-paragraph human summary. The parent skill writes the rows to `JOURNAL.md` and re-shows the sourcing menu.",
+      "source_sha256": "8ec880da0fe8ca4bfb9dd6392cc178c84e7bd0457bc918802070b2c647cf4a1a",
+      "source_path": "skills/iterate-from-skore/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc625b371938e8e411ffcf0465e0e0b1f45157829e832c06b38f8135fd5b0047": {
+      "description_zh": "从用户提供的论文、资源链接、路径或自由文字获取下一项机器学习实验想法，读取并综合资料，确认理解后返回提案；由主流程编写设计说明并寻求审批，本技能不编写设计说明或验收标准。",
+      "source": "Source the next ML experiment proposal from the user via one of three entry points selected by `AskUserQuestion`: (a) a scientific article URL the agent must read and synthesize, (b) a resource link or path (GitHub issue / spec file / reference repo), or (c) free-text the user types directly. In every branch, the agent reads the source, synthesizes its understanding of what to implement, and confirms with the user *before* returning the Proposal block. Hand the confirmed Proposal back to `iterate-ml-experiment`, which writes it into `journal/NN_short_name.md` and seeks the user's design-note approval. Stops at \"Proposal returned, user-confirmed\"; never writes a design note, never authors acceptance criteria.\nTRIGGER when: `iterate-ml-experiment` is picking a sourcing strategy and the user picks `user` from the menu; the user volunteers a concrete idea (\"I want to try X\"); the user pastes or links a scientific article, GitHub issue, spec file, or reference repo and asks us to read it.\nSKIP when: the user wants to mine the previous report (use `iterate-from-skore`); the user is asking for a symbol lookup or pipeline mechanics (use the `python-api` skill); the work is evaluation mechanics on a single report (route to `evaluate-ml-pipeline`).\nHOW TO USE: open with an `AskUserQuestion` for the entry point — article-link / resource-link / free-text. In each branch: gather the source material with the appropriate tool (`WebFetch`, `gh issue view`, `Read`), synthesize what you understand into the three shaping questions, and **confirm with the user via plain text** (one or two sentences: \"you'd like to implement X by changing src/<pkg>/<file>.py — right?\") before returning the Proposal. Do not write any design note. Do not author acceptance criteria.",
+      "source_sha256": "bc625b371938e8e411ffcf0465e0e0b1f45157829e832c06b38f8135fd5b0047",
+      "source_path": "skills/iterate-from-user/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57281d7c311c53945184ae268997d3e307765698a0a64007f1d83e03721c966b": {
+      "description_zh": "管理机器学习工作区的提议、迭代、审批、实施和记录循环，维护实验日志索引及逐实验设计说明；原说明要求设计说明先获用户批准才创建实验脚本，支持恢复进度、提出基线、记录结果及比较既有实验。",
+      "source": "Owns the iteration loop on top of an ML workspace: the `journal/JOURNAL.md` index and the per-experiment `journal/NN_short_name.md` design notes that must be drafted and approved by the user **before** `experiments/NN_short_name.py` is created. Drives the propose → iterate → approve → implement → record loop; dispatches to `iterate-from-skore` / `iterate-from-user` for sourcing.\nTRIGGER — any of: - A session opens in an ML workspace (whether or not `journal/`\n  exists yet — missing/placeholder → bootstrap mode).\n- User says \"what's next\", \"resume\", \"where were we\", \"let's\n  iterate\", \"propose next\", \"first baseline\".\n- About to create a new `experiments/NN_*.py` (the matching\n  `journal/NN_*.md` must exist and be approved first).\n- User wants to record an outcome from a finished run. - User asks to compare past experiments or review what's been\n  tried (\"compare X and Y\", \"where are we?\").\n\nSKIP when: no `journal/` yet AND no workspace scaffold (route to `organize-ml-workspace`); the work is mechanical inside `pipeline.py` / `evaluate.py` / `data.py` with no journal-level implication (owned by `build-ml-pipeline` / `evaluate-ml-pipeline`); the user asks for a symbol lookup (`python-api`); the user is diagnosing a single skore report without a \"what next\" framing (`evaluate-ml-pipeline`).\nHOW TO USE: read `journal/JOURNAL.md` first, classify the turn via the **Mode picker** (table near the top), then read only the matching section. Sibling skills open *just-in-time* when a step requires them — do not pre-read all sibling skills at session start. Design notes are the only artifact this skill writes; read, compare, and overview modes don't write.",
+      "source_sha256": "57281d7c311c53945184ae268997d3e307765698a0a64007f1d83e03721c966b",
+      "source_path": "skills/iterate-ml-experiment/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25e1405e80641cecdc980259006f372e9ec35985a31988e9c6b649f1ba96fae3": {
+      "description_zh": "组织机器学习实验目录：可复用代码置于 src，逐实验 Jupytext脚本置于 experiments，设计和索引置于 journal，报告置于 reports，代理探查置于 scratch；优先沿用已有约定，不强制数据目录，新增或编辑实验须按原说明确认。",
+      "source": "Decide where files live in an ML experimentation project: reusable code in `src/<pkg>/`, one `# %%` script per experiment in `experiments/`, design notes + index in `journal/`, reports in `reports/`, agent-only probes in `scratch/`. Owns the layout, the file-creation rules (one file per experiment, ask before editing), and the jupytext `# %%` script convention. Never imposes `data/` — the user owns that.\nTRIGGER — any of: - Starting a new ML project / scaffolding a workspace. - About to create the first experiment file in a project. - About to create `src/<pkg>/data.py` / `features.py` /\n  `pipeline.py` / `evaluate.py` for the first time.\n- About to write a `.ipynb` for experimentation — redirect to a\n  `# %%` script under `experiments/`.\n- User asks where something should live, how to organize the\n  project, or how to set up the workspace.\n- About to add a new experiment iteration — decide new file vs\n  edit existing (ask the user).\n\nSKIP when: the file is clearly part of an already-populated module (e.g., adding a function to existing `features.py`); pure refactor inside a single existing file; pipeline declaration mechanics (`build-ml-pipeline`); evaluation mechanics (`evaluate-ml-pipeline`); skore symbol lookup (`python-api`).\nHOW TO USE: **first run the Detection table** below — if any signal matches, glue to existing conventions (do not rename or move folders). If no signal matches, scaffold the default layout. **Emit the Pre-flight checklist as visible text and read the Stop conditions before any file is created or edited.** Use templates in `templates/`; copy and adapt, do not rewrite from scratch.",
+      "source_sha256": "25e1405e80641cecdc980259006f372e9ec35985a31988e9c6b649f1ba96fae3",
+      "source_path": "skills/organize-ml-workspace/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9fffcdda5cc88c575306239812402c97209517c25b9f2c5f9a8f08f39925da4": {
+      "description_zh": "按已安装版本查询 Python 包公共 API并缓存：先查版本缓存，再用签名和 pydoc 查符号、dir/pkgutil查模块，或用版本文档回答用法问题；原说明要求 Python 查询写入 scratch脚本执行，不凭记忆猜符号。",
+      "source": "Look up the public API of a Python package against the *installed version* and cache what's worth keeping. Four shapes by question type: (0) cache hit under `scratch/api/<lib>/<version>/`; (1) `inspect.signature` + `pydoc.render_doc` for a symbol; (2) `dir` / `pkgutil.iter_modules` for a module surface; (3) WebSearch + WebFetch of versioned docs for narrative (\"how\", \"which\", \"what does X return when Y\"). Never write a symbol from training-data memory — recognition is not a lookup.\nTRIGGER — any of: - About to name a symbol (function / class / method / arg) in code. - User asks \"what's the signature of X?\", \"what's in module Y?\",\n  \"how do I call X?\", \"which of A/B should I use?\".\n- User asks \"what does X return when <condition>?\" (Shape 3 — see\n  decision table).\n- Another workflow skill (`build-ml-pipeline`,\n  `evaluate-ml-pipeline`, `iterate-from-skore`,\n  `smoke-test-ml-pipeline`) says \"consult the API skill\".\n- About to reach for a library's \"obvious\" pattern from memory.\nSKIP when: the signature is obvious from a call site you just read in this turn; the work is filesystem / shell only (no Python symbols); a `scratch/api/<lib>/<version>/<topic>.md` cache file already answers the question (still a Shape 0 consultation — you just don't fetch).\nHOW TO USE: resolve the package version first via a scratch file (`scratch/<ts>_version_<pkg>.py` with `import <pkg>; print(<pkg>.__version__)` — run with `pixi run python scratch/<ts>_version_<pkg>.py`). Then list `scratch/api/<lib>/<version>/`. Then pick the shape from the \"What kind of question?\" table. Narrative findings get cached back. **All Python execution goes through `scratch/<ts>_*.py` files — inline `python -c` is forbidden regardless of length.** Stack-specific orientation lives in `references/stack_orientation.md` — load on demand.",
+      "source_sha256": "f9fffcdda5cc88c575306239812402c97209517c25b9f2c5f9a8f08f39925da4",
+      "source_path": "skills/python-api/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9babf13395e59526ce754030c9f426034a8b7ad32af040a7337e4847bfd81278": {
+      "description_zh": "规范此机器学习栈的 Python代码，配置并运行 ruff检查和格式化，使用 numpydoc文档风格，并将生成文件中的模板流程说明改为具体数据科学问题的简洁注释；只处理用户拥有的 Python文件。",
+      "source": "Owns Python code style for this stack: ruff for lint + format, numpydoc for docstrings. Three responsibilities — (1) place the project's `ruff.toml` from the bundled template once the stack and workspace are in place, (2) run ruff against any Python files Claude has just generated or edited, and (3) contextualize each touched file's comments to the data-science problem — rewriting any leftover template / workflow prose (skill names, gates, runner, digest, guard-rails) into concise, problem-specific docs so the user's committed files read like a colleague wrote them, not like a generated scaffold. Stops at \"the touched files pass `ruff check` and document the problem, not the process.\"\nTRIGGER when (any of these): (1) a Python file was just created or edited via Write / Edit /\n    MultiEdit — invoke this skill before declaring the task done so\n    ruff is run AND the file's comments are contextualized to the\n    problem;\n(2) a fresh ML workspace was just scaffolded by\n    `organize-ml-workspace` and the project has no `ruff.toml` at\n    its root yet — drop the bundled template;\n(3) the user asks about lint, format, docstring style, or reaches\n    for `black` / `isort` / `flake8` / `pydocstyle` (redirect to\n    ruff — the stack's canonical linter, owned by\n    `data-science-python-stack` Tier 1).\n\nSKIP when: the project is non-Python; the only edits in this turn are to Markdown / TOML / JSON / YAML; the file lives in a third-party vendored directory the user doesn't own.\nHOW TO USE: run ruff manually on the files you just touched — do not configure a PostToolUse hook for this. **Read the \"Stop conditions\" block and emit the Pre-flight checklist as visible text in your response — both are mandatory before running ruff.**",
+      "source_sha256": "9babf13395e59526ce754030c9f426034a8b7ad32af040a7337e4847bfd81278",
+      "source_path": "skills/python-code-style/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e2bab64a99b75bafc8c8f0042d970a51282122017a0973643f561a0b492ecbf": {
+      "description_zh": "识别项目现有 Python环境管理器并用其安装、移除或升级依赖，覆盖 pixi、uv、poetry、hatch、conda/mamba和pip/venv，安装后验证可导入；没有管理器时先询问再初始化，避免混用工具导致清单与环境不一致。",
+      "source": "Single source of truth for \"which Python environment manager does this project use, and how do I install a package with it?\". Owns the detection table (pixi / uv / poetry / hatch / conda+mamba / pip+venv), the install / remove / upgrade commands per manager, and the bootstrap path when no manager is in place (default recommendation: pixi). Stops at \"the install command was issued with the right manager and the package is importable\".\nTRIGGER when (any of these): (1) **about to install / add / pin / upgrade / remove a Python\n    package** — `pip install`, `pixi add`, `uv add`, `poetry add`,\n    `conda install`, etc. — under any framing;\n(2) `data-science-python-stack` § \"Missing dependency\" surfaced a\n    missing import and an install is the next step;\n(3) a workflow skill's Stop condition fired on a missing\n    dependency (`build-ml-pipeline`, `evaluate-ml-pipeline`,\n    `organize-ml-workspace`, `audit-ml-pipeline`);\n(4) starting a new Python project and no manager is in place yet\n    (bootstrap with pixi unless the user picks otherwise);\n(5) `audit-ml-pipeline` (or another agent-only consumer) needs the\n    **agent feature** (`ipython` + `pyright`) and it isn't yet\n    present in the project's manifest — see § \"Agent feature\".\n\nSKIP when: the project is non-Python; the install/add command is for a non-Python tool (npm, brew, apt, cargo, gem); the dependency is already installed and importable; the work is purely editing existing source code with no new dependency in play.\nHOW TO USE: **detect first, then install**. Run the § \"Detection\" table at the project root before issuing any install command. If no manager is detected, ask the user before bootstrapping. Never install with a different manager than the one the project uses (e.g., never `pip install` into a pixi-managed project) — that creates env state divergence the manifest won't track. **Read the \"Stop conditions\" block and emit the Pre-flight checklist as visible text in your response — both are mandatory before issuing any command.**",
+      "source_sha256": "1e2bab64a99b75bafc8c8f0042d970a51282122017a0973643f561a0b492ecbf",
+      "source_path": "skills/python-env-manager/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4f5e1858f0571f6bacbcc99cb97433cc2da5aa1d503c866dbc59397d39fda5e": {
+      "description_zh": "为已批准机器学习实验编写小型 pytest冒烟测试，在真实数据的一部分训练，再对互不重叠且无历史缓冲的数据预测，硬性核对预测数等于输入行数，以验证X标记及特征历史结构；不运行交叉验证或写设计说明。",
+      "source": "Owns the smoke test contract for an ML experiment: a small, diagnostic-by-construction pytest that fits the experiment's learner on a portion of the real `data/` source and predicts on a *disjoint* portion that deliberately carries **no pre-history buffer**. The assertion is structural — the number of predictions must equal the number of rows in the predict grid. A pipeline that loads-then-features-then-splits will silently drop the cold-start rows of the predict slice and the test will fail with a row-count mismatch; a pipeline that marks X early and references upstream history nodes from feature steps will pass trivially. The smoke test is the executable proof of the X-marker placement rule from `build-ml-pipeline`.\nTRIGGER when: `test-ml-pipeline` has dispatched here to write the smoke test for an approved experiment; `pytest tests/smoke/` is failing on row count; the user asks \"why is the smoke test failing?\"; a pipeline edit in `build-ml-pipeline` needs an executable proof; an experiment script changes the pipeline shape and the matching smoke test needs revisiting.\nSKIP when: the design note does not exist or is not yet approved (route to `iterate-ml-experiment`); the user is asking about a regression test or schema invariant (route to `regression-test-ml-pipeline` / `distribution-test-ml-pipeline` once those exist); the question is the *interpretation* of CV metrics, not predict-time correctness (route to `evaluate-ml-pipeline`).\nHOW TO USE: read the matching experiment's `journal/NN_*.md` and `experiments/NN_*.py` first to understand the pipeline's source binding (what env-dict keys does `build_learner` expect?). Then construct two env-dicts from the **real `data/` source** — a train env and a predict env — such that the predict env carries *only the rows we want predictions for* and *no pre-history buffer*. The hard assertion is that the prediction count matches the predict-env row count exactly. The soft assertion is that the smoke set's MAE is within `3 × CV_mean` (or the task-appropriate analogue). **Do not write the design note or run CV — that's other skills' job.**",
+      "source_sha256": "e4f5e1858f0571f6bacbcc99cb97433cc2da5aa1d503c866dbc59397d39fda5e",
+      "source_path": "skills/smoke-test-ml-pipeline/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39951ccaec14078565c977bff133eb3df565339afc2825f4a7ab6246677f3658": {
+      "description_zh": "管理机器学习实验测试目录和同名配对规则，使 test_NN脚本与实验NN对应，再按测试类别分派专用技能；原说明v1仅有冒烟测试，回归和分布测试为后续扩展，不自行编写具体测试主体。",
+      "source": "Owns the `tests/` folder of an ML workspace and the pairing rule between an experiment and its tests. Lightweight router: every test category has its own subskill (`smoke-test-ml-pipeline` is the only one for v1; `regression-test-ml-pipeline` / `distribution-test-ml-pipeline` etc. plug in as siblings as the workspace grows). This skill places an empty `tests/<category>/` folder, enforces the stem-pairing rule between `tests/<category>/test_NN_<short_name>.py` and `experiments/NN_<short_name>.py`, and dispatches to the matching subskill when the user asks for a test.\nTRIGGER when: a new design note was just approved by `iterate-ml-experiment` and the matching test has to be drafted before the experiment can be marked done; the user asks \"write the smoke test for `02`\", \"add the regression test\", \"do we have a test for X?\"; an experiment script was edited and the paired test needs revisiting; about to run `pytest tests/` and one of the expected paired tests is missing.\nSKIP when: the design note does not yet exist (route to `iterate-ml-experiment` first); the test is for the package's internal helpers and unrelated to a specific experiment (regular unit tests live wherever the project's `pytest` config picks them up — out of scope here); the question is *what does the test result mean* rather than *should the test exist* (route to the matching subskill).\nHOW TO USE: this skill is a router. Read the dispatch table to figure out which subskill owns the test category the user is asking about, then hand off. Do not write the test body yourself — that belongs to the subskill. Do place the empty test file with the matching stem and the pytest scaffolding, then hand control over.",
+      "source_sha256": "39951ccaec14078565c977bff133eb3df565339afc2825f4a7ab6246677f3658",
+      "source_path": "skills/test-ml-pipeline/SKILL.md",
+      "package_sha256": "cb9cff7e18c38d9b22a58db11c1940d065181712ac2d91800ee5192fb0863533",
+      "source_package": "Probabl Skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5f41e08decfd35ab9433c8c08cd6d413e2b58b26d1af12ce27cf9022b1cad60": {
+      "description_zh": "设计收购后产品人才的前90天整合，产出决策地图会议模板、导师配对矩阵、30/60/90天责任计划、以目的及影响力为重点的留任风险审查和一对一辅导问题库。",
+      "source": "Design the first 90 days for acquired product talent so they stay, contribute, and feel ownership. Produces decision map session template, mentor pairing matrix, 30/60/90 ownership plan, retention risk review (purpose and influence), and 1:1 coaching question library.",
+      "source_sha256": "c5f41e08decfd35ab9433c8c08cd6d413e2b58b26d1af12ce27cf9022b1cad60",
+      "source_path": "skills/people-integration/SKILL.md",
+      "package_sha256": "e7d6d4f4932fe9d169cee7ff6e2ca985960d1ee1a38bded97db7b859c5034488",
+      "source_package": "Product in Acquisitions OS-0.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2754870e43f3ce2b81f14c24fc27b5fa0b010551a815ff9e5ed95bab727d9bc": {
+      "description_zh": "制作收购后的定位、销售赋能及客户联系材料，包括定位声明、销售FAQ、讲解话术、竞争回应脚本、前20名客户联系计划及顾问委员会章程。",
+      "source": "Build the post-acquisition positioning, sales enablement, and customer outreach kit. Produces the positioning statement, sales FAQ, talk track, competitive response scripts, top-20 outreach plan, and advisory council charter.",
+      "source_sha256": "f2754870e43f3ce2b81f14c24fc27b5fa0b010551a815ff9e5ed95bab727d9bc",
+      "source_path": "skills/positioning-stability/SKILL.md",
+      "package_sha256": "e7d6d4f4932fe9d169cee7ff6e2ca985960d1ee1a38bded97db7b859c5034488",
+      "source_package": "Product in Acquisitions OS-0.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb9ab2764ee3a8d4ac52289c5e561eabd906c1d7800bf9f6468199cea44789e6": {
+      "description_zh": "推进收购后第1至8周的路线图融合，产出冲突记录、三次会议引导、合并的90天及12个月路线图和30/60/90天执行计划。",
+      "source": "Facilitate the post-acquisition roadmap convergence process across Weeks 1 to 8. Produces the conflict log, three-session facilitation guides, merged 90-day plus 12-month roadmap, and the 30/60/90 execution plan.",
+      "source_sha256": "eb9ab2764ee3a8d4ac52289c5e561eabd906c1d7800bf9f6468199cea44789e6",
+      "source_path": "skills/roadmap-convergence/SKILL.md",
+      "package_sha256": "e7d6d4f4932fe9d169cee7ff6e2ca985960d1ee1a38bded97db7b859c5034488",
+      "source_package": "Product in Acquisitions OS-0.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45f6832d266906f06719b43120b8b2972c54a5e5e5dad105fabdb11bf24ae1d0": {
+      "description_zh": "帮助产品负责人准备收购交割前第0周整合，产出整合负责人章程、决策权一页说明、合并产品叙事草稿、客户承诺清单及首日五问准备检查。",
+      "source": "Run a product leader through pre-close (Week 0) integration readiness for an acquisition. Produces the integration lead charter, decision rights one-pager, combined product narrative draft, customer commitment inventory, and the five-question Day 1 readiness check.",
+      "source_sha256": "45f6832d266906f06719b43120b8b2972c54a5e5e5dad105fabdb11bf24ae1d0",
+      "source_path": "skills/week-0-readiness/SKILL.md",
+      "package_sha256": "e7d6d4f4932fe9d169cee7ff6e2ca985960d1ee1a38bded97db7b859c5034488",
+      "source_package": "Product in Acquisitions OS-0.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d105a6b05b0249f5cd57614074096a025fbd2ecd71b2bf1948632859dd774a58": {
+      "description_zh": "综合输赢记录、销售通话、G2/Capterra评价及分析师报告，梳理直接竞争者、邻近工具、自建及维持现状四类买方替代方案，说明选择与离开原因和未占领空间，并深化知识库第3节。",
+      "source": "Synthesizes research data — win/loss notes, sales call transcripts, G2/Capterra reviews, analyst reports — into a named alternatives map across four buyer-real types (direct competitors, adjacent tools, DIY, and status quo), each with why-chosen, why-left, and unclaimed territory, then deepens brain Section 3 in place. Trigger with \"map our alternatives\", \"who do we actually compete with\", \"status quo analysis\", \"our alternatives section is just a competitor list\", or any request to identify, evidence, or sharpen who buyers compare you to.",
+      "source_sha256": "d105a6b05b0249f5cd57614074096a025fbd2ecd71b2bf1948632859dd774a58",
+      "source_path": "skills/alternatives-map/SKILL.md",
+      "package_sha256": "ac3e100bc5b467df2842caf94fa51d91a3203ebe97f8b9f98af912905e788b08",
+      "source_package": "Product Marketing-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7c1da2589b8237ba615d4cfbdc41134e536df60ecb2ce684b4fc9b5e5c772750": {
+      "description_zh": "建立能随买方角色和渠道调整的品牌语气指南，定义品牌属性、语气变化及禁用措辞，并深化知识库第4节；用于制定、应用或审查品牌表达。",
+      "source": "Builds a persona-adaptive Voice & Tone guide — brand attributes, tone shifts by buyer type and channel, forbidden language — then deepens brain Section 4 in place. Trigger with \"how should we sound\", \"voice guide\", \"our copy feels off\", \"we sound like everyone else\", \"adapt tone for\", or any request to define, apply, or audit how the brand communicates.",
+      "source_sha256": "7c1da2589b8237ba615d4cfbdc41134e536df60ecb2ce684b4fc9b5e5c772750",
+      "source_path": "skills/brand-voice/SKILL.md",
+      "package_sha256": "ac3e100bc5b467df2842caf94fa51d91a3203ebe97f8b9f98af912905e788b08",
+      "source_package": "Product Marketing-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c233baedb9b06b69a38ceb1934ec6b2c39ea6de5e28bb87be0869797b21cb53f": {
+      "description_zh": "先梳理企业购买委员会中的经济决策者、内部推动者、技术评估者、最终用户和采购角色，再按Dunford结构构建基于替代方案的买方画像，为定位与传播准备。",
+      "source": "Maps the enterprise buying committee — Economic Buyer, Champion, Technical Evaluator, End User, Procurement — before writing a single message, then builds Dunford-structured, alternatives-anchored personas ready for positioning-messaging. Trigger with \"map our buying committee\", \"who do we need to win over\", \"build our buyer personas\", \"who kills our deals\", or any request to identify or profile the people involved in a B2B purchase.",
+      "source_sha256": "c233baedb9b06b69a38ceb1934ec6b2c39ea6de5e28bb87be0869797b21cb53f",
+      "source_path": "skills/buyer-personas/SKILL.md",
+      "package_sha256": "ac3e100bc5b467df2842caf94fa51d91a3203ebe97f8b9f98af912905e788b08",
+      "source_package": "Product Marketing-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5682b3e8e6d22bcb79939794ce7860c870226bd33dcc86b80a0a70fbddae3956": {
+      "description_zh": "综合问卷、访谈、使用数据和输赢记录，按人口特征、行为、待完成任务及需求建立理想客户画像，深化知识库第2节，用于研究数据中的客户识别和分群。",
+      "source": "Synthesizes research data — surveys, interviews, usage data, win/loss notes — into an Ideal Customer Profile across demographics, behaviors, Jobs to Be Done, and needs, then deepens brain Section 2 in place. Trigger with \"build my ICP\", \"who is my ideal customer\", \"analyze our PMF survey\", \"define our target customer\", or any request to identify, segment, or profile customers from research data.",
+      "source_sha256": "5682b3e8e6d22bcb79939794ce7860c870226bd33dcc86b80a0a70fbddae3956",
+      "source_path": "skills/ideal-customer-profile/SKILL.md",
+      "package_sha256": "ac3e100bc5b467df2842caf94fa51d91a3203ebe97f8b9f98af912905e788b08",
+      "source_package": "Product Marketing-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51dd922210e3f687a2dde0d1a865e2cf56141dd61a21ff0c8c7c64940c1510d1": {
+      "description_zh": "建立定位的市场背景及为何现在层面，分析市场成熟度、宏观力量、购买触发因素、叙事和品类时机，并深化知识库第5节。",
+      "source": "Builds the \"why now\" layer — market maturity, macro forces, buying triggers, narrative arc, and category moment — then deepens brain Section 5 in place. Trigger with \"why now\", \"what's our market context\", \"define our category\", \"market narrative\", \"what macro trends support us\", \"buying triggers\", or any request to define, update, or audit the market forces that make your positioning credible.",
+      "source_sha256": "51dd922210e3f687a2dde0d1a865e2cf56141dd61a21ff0c8c7c64940c1510d1",
+      "source_path": "skills/market-context/SKILL.md",
+      "package_sha256": "ac3e100bc5b467df2842caf94fa51d91a3203ebe97f8b9f98af912905e788b08",
+      "source_package": "Product Marketing-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "770a36a4b3244631da94a2b9ce2f7f71129cd97c2d28cc75d4c88d2fa9d513da": {
+      "description_zh": "把已有定位整理为一页可扫读的消息屋表格，顶部为核心故事，下方为三个支持其可信度的理由。",
+      "source": "Turns your existing positioning into one clean table: your core story at the top, your 3 supporting reasons to believe it below. Use when someone asks to \"build a message house,\" \"put our messaging in a message house,\" or wants positioning laid out as one scannable page.",
+      "source_sha256": "770a36a4b3244631da94a2b9ce2f7f71129cd97c2d28cc75d4c88d2fa9d513da",
+      "source_path": "skills/message-house/SKILL.md",
+      "package_sha256": "ac3e100bc5b467df2842caf94fa51d91a3203ebe97f8b9f98af912905e788b08",
+      "source_package": "Product Marketing-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65e4177ae0512e273820cc9cd797e047c5d5fe59ea2be21d86f4f27d1bdd58c0": {
+      "description_zh": "依据 April Dunford 的 Obviously Awesome框架创建或审查定位声明、传播层级、首页文案和角色卡，覆盖build、audit、fletch、销售赋能及首页模式；原说明要求明确主画像及至少三种含维持现状的替代方案，并通过七项验证才输出。",
+      "source": "Builds or audits positioning statements, messaging hierarchies, homepage copy, and persona cards using April Dunford's Obviously Awesome framework across five modes (build, audit, fletch, sales-enablement, homepage). Refuses to generate without a named primary persona and 3+ alternatives including status quo, and blocks output until a 7-point verification gate passes.",
+      "source_sha256": "65e4177ae0512e273820cc9cd797e047c5d5fe59ea2be21d86f4f27d1bdd58c0",
+      "source_path": "skills/positioning-messaging/SKILL.md",
+      "package_sha256": "ac3e100bc5b467df2842caf94fa51d91a3203ebe97f8b9f98af912905e788b08",
+      "source_package": "Product Marketing-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9dc863bfbe6e4aef4cc4e22456a9fe5d3456f6cbebc976dd17a0b42cb14e9fdd": {
+      "description_zh": "建立并维护传播主张的证据登记，记录来源和使用门槛，覆盖指标、客户引语、案例结果及分析师引用；用于抽取证明点、判断文案统计能否使用，或排查无来源、过时和未批准的主张。",
+      "source": "Build and maintain a sourced, gated registry of the proof points your messaging relies on — metrics, customer quotes, case study results, and analyst citations. Use when pulling proof points out of a deck or battlecard, checking whether a stat is safe to use in copy, sourcing a new claim before it ships, or auditing an existing set of claims for anything unsourced, stale, or unapproved.",
+      "source_sha256": "9dc863bfbe6e4aef4cc4e22456a9fe5d3456f6cbebc976dd17a0b42cb14e9fdd",
+      "source_path": "skills/proof-points/SKILL.md",
+      "package_sha256": "ac3e100bc5b467df2842caf94fa51d91a3203ebe97f8b9f98af912905e788b08",
+      "source_package": "Product Marketing-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e85fcc5314a00eef9f7d2e49b4ea69506afef392b8d3773f3fc104017b3799d": {
+      "description_zh": "从代码库反向盘点实际分析埋点，扫描SDK调用、身份管理和采集模式，输出.telemetry/current-state.yaml及带时间戳审计报告；记录事实，不提出建议，适用于新方案前的现状核验。",
+      "source": "Reverse-engineer the current state of analytics tracking from a codebase. Scans for SDK calls, identity management, and instrumentation patterns to produce a factual inventory — not recommendations. Outputs .telemetry/current-state.yaml and a timestamped audit report. Use when the user wants to know what's currently tracked, audit existing analytics, capture tracking reality before designing a new plan, 'what analytics do we have,' 'what events are tracked,' 'scan for tracking,' or 'tracking inventory.'",
+      "source_sha256": "0e85fcc5314a00eef9f7d2e49b4ea69506afef392b8d3773f3fc104017b3799d",
+      "source_path": "skills/product-tracking-audit-current-tracking/SKILL.md",
+      "package_sha256": "ee398a5624c918cee15a75be6899946dfa597214000a6d1ee026f59518bf0fae",
+      "source_package": "Product Tracking-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f1686c50bb5810893afbb8ff5bb48fb1876bc0e869231500107fba84b7e68b9": {
+      "description_zh": "编写向利益相关者说明产品遥测与分析价值的简洁商业论证，覆盖可获得的能力、当前盲区、实施工作和业务价值；用于技术投入前的管理层说明及分析ROI论证。",
+      "source": "Write a business case for adding product telemetry and analytics to a product. Produces a concise, stakeholder-ready document explaining what telemetry enables, what you're currently blind to, what's involved in implementation, and the business value. Sits outside the main telemetry lifecycle — use before committing to the technical work. Use when the user asks to 'write a business case,' 'justify analytics,' 'make the case for tracking,' 'telemetry brief,' 'why add analytics,' 'convince leadership about tracking,' or 'analytics ROI.'",
+      "source_sha256": "2f1686c50bb5810893afbb8ff5bb48fb1876bc0e869231500107fba84b7e68b9",
+      "source_path": "skills/product-tracking-business-case/SKILL.md",
+      "package_sha256": "ee398a5624c918cee15a75be6899946dfa597214000a6d1ee026f59518bf0fae",
+      "source_package": "Product Tracking-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1692808fe6c48ea79b51b0a085cecc67e49d62ffb5d5e3c228dddbd0f5b53c12": {
+      "description_zh": "结合产品模型、现状审计及遥测实践设计目标埋点方案，确定事件、属性、实体和群组层级，输出tracking-plan.yaml及现状到目标的明确delta.md。",
+      "source": "Design an opinionated target tracking plan and produce an explicit delta from current state to target. Combines the product model, current-state audit, and telemetry best practices to decide what events, properties, entities, and group hierarchies should exist. Outputs .telemetry/tracking-plan.yaml and .telemetry/delta.md. Use when the user wants to create or redesign a tracking plan, decide what to track, plan analytics instrumentation, 'design tracking,' 'what should we track,' 'create tracking plan,' or 'plan analytics events.'",
+      "source_sha256": "1692808fe6c48ea79b51b0a085cecc67e49d62ffb5d5e3c228dddbd0f5b53c12",
+      "source_path": "skills/product-tracking-design-tracking-plan/SKILL.md",
+      "package_sha256": "ee398a5624c918cee15a75be6899946dfa597214000a6d1ee026f59518bf0fae",
+      "source_package": "Product Tracking-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2bb6cb6159d101aed82e072138795ec387f327458bf9dced48c9e6922977d71": {
+      "description_zh": "将埋点方案转为特定SDK实施指南，提供identify、group和track代码模板、架构及限制，输出.telemetry/instrument.md；原说明覆盖24种产品分析、CDP、网站分析、错误、特性开关和会话目标，也支持通用HTTP POST。",
+      "source": "Translate a tracking plan into an SDK-specific instrumentation guide. Shows how to make identify, group, and track calls using the target analytics SDK with real template code, architecture guidance, and constraint documentation. Outputs .telemetry/instrument.md. Covers 24 analytics destinations across product analytics, CDPs, web analytics, error monitoring, feature flags, and session tools. Use when the user has a tracking plan and needs to know how to implement it with a specific SDK like Segment, Amplitude, Mixpanel, PostHog, Accoil, Google Analytics, Sentry, LaunchDarkly, or via generic HTTP POST. Also use when user asks 'create instrumentation guide,' 'how to implement tracking,' 'SDK guide,' or 'generate implementation guide.'",
+      "source_sha256": "c2bb6cb6159d101aed82e072138795ec387f327458bf9dced48c9e6922977d71",
+      "source_path": "skills/product-tracking-generate-implementation-guide/SKILL.md",
+      "package_sha256": "ee398a5624c918cee15a75be6899946dfa597214000a6d1ee026f59518bf0fae",
+      "source_package": "Product Tracking-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b92f938e0e1fc739cfcfde1470cf487eb4be33b2fb555113ad0e5ba3df7a0564": {
+      "description_zh": "根据埋点方案和实施指南生成实际采集代码，在tracking目录输出带类型的SDK包装、身份管理和集成指导，适用于实现差异计划或重新生成采集模块。",
+      "source": "Generate real instrumentation code from the tracking plan and instrumentation guide. Produces typed SDK wrapper functions, identity management, and integration guidance. Outputs files in a tracking/ directory. Use when the user wants to generate or regenerate tracking code, implement the delta plan, turn the instrumentation guide into working code, 'implement tracking,' 'generate code,' 'create tracking module,' or 'build analytics SDK wrapper.'",
+      "source_sha256": "b92f938e0e1fc739cfcfde1470cf487eb4be33b2fb555113ad0e5ba3df7a0564",
+      "source_path": "skills/product-tracking-implement-tracking/SKILL.md",
+      "package_sha256": "ee398a5624c918cee15a75be6899946dfa597214000a6d1ee026f59518bf0fae",
+      "source_package": "Product Tracking-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9a13872291dc1c4ac5a428f5cf96aa2ee77c67c118b4126f2a35476bbaa2f51": {
+      "description_zh": "在功能上线、变更或移除时更新埋点方案，判断新事件需求，尽量通过属性扩展已有事件，生成版本化小型差异并更新tracking-plan、delta及changelog。",
+      "source": "Update the tracking plan when a feature ships, changes, or is removed. Assesses whether new events are needed, extends existing events with properties where possible, and produces a versioned mini-delta with changelog entry. Updates .telemetry/tracking-plan.yaml, delta.md, and changelog.md. Use when the user ships a new feature, modifies existing functionality, wants to keep tracking coherent as the product evolves, 'feature shipped,' 'new feature tracking,' 'update tracking for [feature],' 'what tracking does this feature need,' or 'instrument new feature.'",
+      "source_sha256": "a9a13872291dc1c4ac5a428f5cf96aa2ee77c67c118b4126f2a35476bbaa2f51",
+      "source_path": "skills/product-tracking-instrument-new-feature/SKILL.md",
+      "package_sha256": "ee398a5624c918cee15a75be6899946dfa597214000a6d1ee026f59518bf0fae",
+      "source_package": "Product Tracking-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d3c8d18c525b70aad26a73d4e727ebf51bccf6192ca7cb8289b27128bc739d1": {
+      "description_zh": "扫描代码库并与用户沟通，建立结构化产品模型，说明产品能力、使用者、价值流和实体，输出.telemetry/product.md；作为新代码库遥测生命周期的入口。",
+      "source": "Build a structured product model by scanning the codebase and talking to the user. Produces .telemetry/product.md — a description of what the product does, who uses it, how value flows, and what entities exist. Use when starting telemetry work on a new codebase, when the user asks to 'model this product,' 'understand this product,' 'what does this product do,' 'map the product,' 'product model,' or when no .telemetry/product.md exists yet. This is the entry point for the telemetry lifecycle.",
+      "source_sha256": "1d3c8d18c525b70aad26a73d4e727ebf51bccf6192ca7cb8289b27128bc739d1",
+      "source_path": "skills/product-tracking-model-product/SKILL.md",
+      "package_sha256": "ee398a5624c918cee15a75be6899946dfa597214000a6d1ee026f59518bf0fae",
+      "source_package": "Product Tracking-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f532587b74af96c35b35654dded68b4797c1fc23ca14a71162c39958cfbbc309": {
+      "description_zh": "Product Discovery Flow 的俄语交互与报告版本，原说明以15个子代理按Ivan Zamesin的AJTBD方法运行完整探索。先检查公司档案，再收集必填简报及其他输入，依次做结构、背景、数据、竞品趋势信号、方法核验、分群、质检、分析、可选ROI、报告、报告质检和翻译。",
+      "source": "РУССКОЯЗЫЧНАЯ версия оркестратора Product Discovery Flow — то же самое, что /product-discovery, но общается и пишет по-русски. Интерактивный запуск полного флоу: 15 саб-агентов по методологии AJTBD Ивана Замесина, для любой компании и любого продукта. Вызывается, когда продакт получает новую задачу на Discovery (или вводит /product-discovery-ru). Сначала проверяет паспорт компании (discovery-profile) и при необходимости помогает его собрать, затем задаёт вопросы прямо в интерфейсе Claude и собирает вводные: Brief Intake (ЕДИНСТВЕННОЕ обязательное поле), автор задачи, ожидаемый формат ответа, нужно ли считать ROI (по умолчанию — пропускается), куда сохранить отчёт. Затем прогоняет цепочку: структурирование → контекст → данные → конкуренты + тренды + сигналы → AJTBD Canon Validation → сегментация → QA → аналитика → [опционально ROI] → финальный отчёт → QA отчёта → перевод.",
+      "source_sha256": "f532587b74af96c35b35654dded68b4797c1fc23ca14a71162c39958cfbbc309",
+      "source_path": "files/skill-ru/SKILL.md",
+      "package_sha256": "3300367e3d023e030bd968f7630b52714118c34a23b335e2289a91f0b1bf15f8",
+      "source_package": "product-discovery-flow-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7693854a8e79261a6a91df0150bdfc5c767064f1d6e99f2f23ac70fcea5e82fc": {
+      "description_zh": "交互运行完整产品探索，原说明以15个子代理采用Ivan Zamesin的AJTBD方法。先核对公司档案并收集简报、任务作者、格式、可选ROI及保存位置，再推进结构、背景、内部数据、竞品趋势信号、方法核验、分群、质检、进一步数据和最终报告翻译；ROI默认跳过。",
+      "source": "Runs the full Product Discovery Flow interactively — 15 sub-agents built on Ivan Zamesin's AJTBD methodology, for any company and any product. Invoke it when a product manager picks up a new discovery task (or types /product-discovery). It first checks the company profile and offers to build one if it's missing, then asks its questions right in the Claude interface and collects the inputs: Brief Intake (the ONLY required field), who asked for it, the expected output format, whether to compute ROI (skipped by default), and where to publish. Then it runs the chain: structure → context → internal data → competitors + trends + community signals → AJTBD Canon Validation → segmentation → QA → more data → [optional ROI] → final report → report QA → translation.",
+      "source_sha256": "7693854a8e79261a6a91df0150bdfc5c767064f1d6e99f2f23ac70fcea5e82fc",
+      "source_path": "files/skill/SKILL.md",
+      "package_sha256": "3300367e3d023e030bd968f7630b52714118c34a23b335e2289a91f0b1bf15f8",
+      "source_package": "product-discovery-flow-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9f1abe3a4219ce30e7e7a750093bcf9f313c8129bb5f1c43535029fda6e6df3b": {
+      "description_zh": "为产品法律插件首次使用进行访谈，连接发布跟踪器、读取历史审查并学习风险判断尺度；可重做访谈或仅复查连接，适用于新安装、产品法务入职及配置仍含占位符。",
+      "source": "Cold-start interview — connects to your launch tracker, reads past reviews, learns your risk calibration. Use on fresh install, when onboarding product counsel, or when the plugin config has placeholders. Run with --redo to re-interview, or --check-integrations to re-probe connectors only.",
+      "source_sha256": "9f1abe3a4219ce30e7e7a750093bcf9f313c8129bb5f1c43535029fda6e6df3b",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "dbf2fbc064509f0fedca3bd58541bd6bcb9a417f158028547756f4a5c3bd07dc",
+      "source_package": "product-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3d2f0f5b57ee136c14ffe96371bd6a6d738b2476882e154b848a41a61034ae9": {
+      "description_zh": "逐项调整产品法务工作配置，无需重做全部初始访谈，覆盖风险尺度、升级联系人、发布审查框架、营销主张立场和事项工作区路径。",
+      "source": "Guided customization of your product counsel practice profile — change one thing without re-running the whole cold-start interview. Adjust risk calibration, escalation contacts, launch review framework, marketing claims posture, or matter workspace paths. Use when the user says \"change my [thing]\", \"update my profile\", \"edit my framework\", \"retune my calibration\", or \"customize\".",
+      "source_sha256": "a3d2f0f5b57ee136c14ffe96371bd6a6d738b2476882e154b848a41a61034ae9",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "dbf2fbc064509f0fedca3bd58541bd6bcb9a417f158028547756f4a5c3bd07dc",
+      "source_package": "product-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8a0e1cd70dbbcb08c861b0cea77d15cb246cdf8c5172c5597b82e6897fb716b": {
+      "description_zh": "对发布审查中需深入分析的单个功能或产品领域做风险评估，结构化说明可能的问题、概率、严重性及缓解措施。",
+      "source": "Deeper risk assessment for a single feature or product area when the launch review found something that needs more than a line item. Structured analysis: what could go wrong, how likely, how bad, what mitigates it. Use when user says \"deep dive on this risk\", \"risk assessment for [feature]\", \"what could go wrong with\", or when launch-review flags a novel issue.",
+      "source_sha256": "c8a0e1cd70dbbcb08c861b0cea77d15cb246cdf8c5172c5597b82e6897fb716b",
+      "source_path": "skills/feature-risk-assessment/SKILL.md",
+      "package_sha256": "dbf2fbc064509f0fedca3bd58541bd6bcb9a417f158028547756f4a5c3bd07dc",
+      "source_package": "product-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26e71191107489ce5764ad9e93bfa1fa9705bef2500b60ea5337e96aefe5670f": {
+      "description_zh": "按用户既有风险尺度快速判断产品问题，适用于即时Slack式询问、能否开展某活动或是否需法律审查，给出可行、需进一步查看或暂缓的分流判断。",
+      "source": "Fast \"is this a problem?\" answer for the quick Slack question — pattern-matches against your calibration. Use when the user says \"is this a problem\", \"quick question\", \"can we do X\", \"do I need legal review for\", \"sanity check\", or pastes a PM's question that needs a same-minute fine / needs a look / hold call.",
+      "source_sha256": "26e71191107489ce5764ad9e93bfa1fa9705bef2500b60ea5337e96aefe5670f",
+      "source_path": "skills/is-this-a-problem/SKILL.md",
+      "package_sha256": "dbf2fbc064509f0fedca3bd58541bd6bcb9a417f158028547756f4a5c3bd07dc",
+      "source_package": "product-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45e8e231ee8765cde2ff8b6af4ec1ea85dfc28196d8b2b3855b0b2bb805be5fc": {
+      "description_zh": "依据用户发布审查框架和风险尺度，逐类审查产品、功能、PRD或发布跟踪事项，生成法律问题审查备忘录。",
+      "source": "Full launch review against your framework and risk calibration. Use when the user says \"review this launch\", \"legal review for [feature]\", \"can we ship this\", \"what are the legal issues with [product]\", or references a launch tracker ticket or PRD that needs a category-by-category review memo.",
+      "source_sha256": "45e8e231ee8765cde2ff8b6af4ec1ea85dfc28196d8b2b3855b0b2bb805be5fc",
+      "source_path": "skills/launch-review/SKILL.md",
+      "package_sha256": "dbf2fbc064509f0fedca3bd58541bd6bcb9a417f158028547756f4a5c3bd07dc",
+      "source_package": "product-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de371511d1edbe6a254cd52271decc62610dbeed1a292c2025ebc9c6004e7d91": {
+      "description_zh": "审查落地页、邮件、广告和标语中的营销主张，识别需要证据支持、改写或删除的内容，判断夸饰与问题表述。",
+      "source": "Review marketing copy for claims that need substantiation, reframing, or cutting. Use when the user says \"review this marketing copy\", \"check these claims\", \"can we say this\", \"is this puffery or a problem\", or pastes marketing content (landing pages, emails, ads, taglines).",
+      "source_sha256": "de371511d1edbe6a254cd52271decc62610dbeed1a292c2025ebc9c6004e7d91",
+      "source_path": "skills/marketing-claims-review/SKILL.md",
+      "package_sha256": "dbf2fbc064509f0fedca3bd58541bd6bcb9a417f158028547756f4a5c3bd07dc",
+      "source_package": "product-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce20bab33d74f9c70a92871dfb25c359832bb52cc276a09a69fa49921228407e": {
+      "description_zh": "管理产品法务事项工作区，创建、列出、切换、关闭或脱离当前事项，隔离多客户及不同项目的上下文。",
+      "source": "Manage matter workspaces — new, list, switch, close, or detach (practice-level). Use when working across multiple clients or matters in private practice and you need to create, list, switch, close, or detach the active matter so context from one engagement doesn't leak into another.",
+      "source_sha256": "ce20bab33d74f9c70a92871dfb25c359832bb52cc276a09a69fa49921228407e",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "dbf2fbc064509f0fedca3bd58541bd6bcb9a417f158028547756f4a5c3bd07dc",
+      "source_package": "product-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6042c6fcad24b9487219304e89c12da39397ad6a3220dea8f64d3fded339ab0d": {
+      "description_zh": "使用两层记忆解释工作中的简称、缩写、昵称和内部语言，以CLAUDE.md作为工作记忆、memory目录作为完整知识库。",
+      "source": "Two-tier memory system that makes Claude a true workplace collaborator. Decodes shorthand, acronyms, nicknames, and internal language so Claude understands requests like a colleague would. CLAUDE.md for working memory, memory/ directory for the full knowledge base.",
+      "source_sha256": "6042c6fcad24b9487219304e89c12da39397ad6a3220dea8f64d3fded339ab0d",
+      "source_path": "skills/memory-management/SKILL.md",
+      "package_sha256": "fb2ee404504a42898e0f1f07fdbd7d1ca86d0de8bbfcdcc72fc72da408d16e7e",
+      "source_package": "Productivity-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fcfe0b0cd5e17cb91442a16f2e33d76c398cc0b06664c6b4685e9a3cbb39aaff": {
+      "description_zh": "初始化效率管理系统并打开仪表板，从已有任务列表建立工作记忆，解释待办中的昵称、缩写及项目代号，适用于首次设置。",
+      "source": "Initialize the productivity system and open the dashboard. Use when setting up the plugin for the first time, bootstrapping working memory from your existing task list, or decoding the shorthand (nicknames, acronyms, project codenames) you use in your todos.",
+      "source_sha256": "fcfe0b0cd5e17cb91442a16f2e33d76c398cc0b06664c6b4685e9a3cbb39aaff",
+      "source_path": "skills/start/SKILL.md",
+      "package_sha256": "fb2ee404504a42898e0f1f07fdbd7d1ca86d0de8bbfcdcc72fc72da408d16e7e",
+      "source_package": "Productivity-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a427c437d5cfaeb954f4dd300e1d439113d1b6563f7f23ab016c2d0fa61a81d": {
+      "description_zh": "通过共享TASKS.md做简单任务管理，查询、新增和完成任务，并跟踪承诺。",
+      "source": "Simple task management using a shared TASKS.md file. Reference this when the user asks about their tasks, wants to add/complete tasks, or needs help tracking commitments.",
+      "source_sha256": "9a427c437d5cfaeb954f4dd300e1d439113d1b6563f7f23ab016c2d0fa61a81d",
+      "source_path": "skills/task-management/SKILL.md",
+      "package_sha256": "fb2ee404504a42898e0f1f07fdbd7d1ca86d0de8bbfcdcc72fc72da408d16e7e",
+      "source_package": "Productivity-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a235f517151aad7c6da74561a88cc59f5e6ea259a2ccc5bdd231f1a1aa9489a": {
+      "description_zh": "按当前活动同步任务和刷新记忆，从项目跟踪器导入新安排，整理过时或逾期事项，补充未知人员项目背景，并扫描聊天邮件中的隐藏待办。",
+      "source": "Sync tasks and refresh memory from your current activity. Use when pulling new assignments from your project tracker into TASKS.md, triaging stale or overdue tasks, filling memory gaps for unknown people or projects, or running a comprehensive scan to catch todos buried in chat and email.",
+      "source_sha256": "5a235f517151aad7c6da74561a88cc59f5e6ea259a2ccc5bdd231f1a1aa9489a",
+      "source_path": "skills/update/SKILL.md",
+      "package_sha256": "fb2ee404504a42898e0f1f07fdbd7d1ca86d0de8bbfcdcc72fc72da408d16e7e",
+      "source_package": "Productivity-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5dae38c39a70bf89ce450e30334cd3a671315dee0ded6d8ce7556817cbafc342": {
+      "description_zh": "只读审查整个仓库的生产就绪情况，原说明安排六个审查者并行检查不同范围，必要时增加无障碍和AI领域；按CWE、OWASP、OpenSSF及WCAG参考找问题，脚本核验发现引用后输出11节JSON和整改计划，覆盖安全、隐私、测试、性能及维护等。",
+      "source": "Comprehensive, grounded production-readiness review of a whole repo. Six read-only reviewers run in parallel over disjoint slices - plus accessibility and AI/LLM slices when the repo warrants them - hunting against CWE Top 25, OWASP ASVS, the OWASP API and LLM Top 10s, OpenSSF Scorecard and WCAG 2.2. A deterministic script verifies every finding's quote against source and discards what it cannot confirm. Output is eleven sections of JSON plus a remediation plan. Use when asked to review a project, audit a codebase, assess production readiness, or find security, privacy, test, accessibility, performance, maintainability, or infrastructure problems across a repo rather than in a single diff.",
+      "source_sha256": "5dae38c39a70bf89ce450e30334cd3a671315dee0ded6d8ce7556817cbafc342",
+      "source_path": "SKILL.md",
+      "package_sha256": "d30a743b91db48219f1d11a71fefc04812a16a6529f7bf1a70281c4b0f16421e",
+      "source_package": "Project Review-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2c0b613ae9b26fc67b690402c38f468c7b9b9392e62151241f49e1c1c9f60c3": {
+      "description_zh": "在脚手架项目任务结束或会话内容过多时检查上下文阈值，生成下一聊天的续接提示并应用精简规则，适用于上下文检查和交接。",
+      "source": "Use at the end of every task in a scaffolded project and whenever the session context grows heavy. Enforces the context threshold, generates the continuation prompt for the next chat, and applies context minimalism rules. Triggers on \"context check\", \"continuation prompt\", \"handoff\", or context warnings.",
+      "source_sha256": "b2c0b613ae9b26fc67b690402c38f468c7b9b9392e62151241f49e1c1c9f60c3",
+      "source_path": "skills/context-manager/SKILL.md",
+      "package_sha256": "2a142a8dc447fc8cba0f189f3f047d118568bf168c3f33cce320ce707988a9c2",
+      "source_package": "Project Scaffolder — Synaptic Edition-3.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ce7b358d271269af695ebd1edac7dfd0113f366f16304131b8beffbface978d": {
+      "description_zh": "在已有脚手架项目中执行完整开发流程，覆盖分类、委派、质检、用户测试及经验传播；适用于实施任务，不处理普通问答、Wiki更新或简单文件修改。",
+      "source": "Use when a task needs to be executed through the full development pipeline — classification, delegation, QA, user testing, and learning propagation. Triggers on /task command or when a user describes implementation work in an already-scaffolded project. Do NOT use for questions, wiki updates, or simple file edits.",
+      "source_sha256": "3ce7b358d271269af695ebd1edac7dfd0113f366f16304131b8beffbface978d",
+      "source_path": "skills/cortex/SKILL.md",
+      "package_sha256": "2a142a8dc447fc8cba0f189f3f047d118568bf168c3f33cce320ce707988a9c2",
+      "source_package": "Project Scaffolder — Synaptic Edition-3.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d102d8adceacd39631c375b200667b0a32d1721c1fdc361cf391953417da88e2": {
+      "description_zh": "在阶段首个操作任务或复杂任务前进行结构化设计对话，逐一提问，比较2至3种方案及取舍，并分节确认设计后再编写代码；批准的设计可修订脚手架时期规则。",
+      "source": "Use before executing the first operational task of a phase and any Complex task. Runs a structured design dialogue — questions one at a time, 2-3 approaches with trade-offs, sectioned design approval — before any code is written. The approved design may revise scaffold-era rules. Triggered by the Cortex (Step 3b) or explicitly with \"design first\" / \"/task --design\".",
+      "source_sha256": "d102d8adceacd39631c375b200667b0a32d1721c1fdc361cf391953417da88e2",
+      "source_path": "skills/design-first/SKILL.md",
+      "package_sha256": "2a142a8dc447fc8cba0f189f3f047d118568bf168c3f33cce320ce707988a9c2",
+      "source_package": "Project Scaffolder — Synaptic Edition-3.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc8a559d88e321fa02f036302c161dc424123753d3cba7d14480dba86e72987e": {
+      "description_zh": "质检通过后以不同用户画像模拟终端用户测试，适用于影响界面、用户流程或文案的任务，不用于纯后端或基础设施。",
+      "source": "Use after QA passes to simulate end-user testing with diverse profiles. Triggered by Cortex for tasks that impact UI, user flows, or user-facing text. Do NOT use for backend-only or infrastructure tasks. Also triggers on \"test with users\", \"user simulation\", \"persona test\", or \"UX validation\".",
+      "source_sha256": "bc8a559d88e321fa02f036302c161dc424123753d3cba7d14480dba86e72987e",
+      "source_path": "skills/persona-lab/SKILL.md",
+      "package_sha256": "2a142a8dc447fc8cba0f189f3f047d118568bf168c3f33cce320ce707988a9c2",
+      "source_package": "Project Scaffolder — Synaptic Edition-3.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20deaf4a843a1c09f9ae214cb382389d6de7a0d1f2f231d313ee1b63f741cf0e": {
+      "description_zh": "记录Synaptic开发流水线每一步操作，维护每日流程日志和单独错误日志供排障；由其他流程技能自动调用，不直接使用。",
+      "source": "Use to log every operation in the synaptic pipeline. Called by Cortex, Synapse, Persona-Lab, and QA Agent at each step. Maintains daily pipeline logs and a separate error log for fast debugging. Do NOT use directly — other skills call this automatically.",
+      "source_sha256": "20deaf4a843a1c09f9ae214cb382389d6de7a0d1f2f231d313ee1b63f741cf0e",
+      "source_path": "skills/pipeline-logger/SKILL.md",
+      "package_sha256": "2a142a8dc447fc8cba0f189f3f047d118568bf168c3f33cce320ce707988a9c2",
+      "source_package": "Project Scaffolder — Synaptic Edition-3.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f590954e631c012917b17616ef41e0febe76f3992e786622b2a81ebf31a2b53": {
+      "description_zh": "根据新项目简报生成完整结构，包括CLAUDE.md中心、12个核心页及按需扩展Wiki、领域技能、约束、交接协议、设计规范和实施计划。",
+      "source": "Use when starting ANY new project from a user brief. Generates the complete project structure automatically — CLAUDE.md hub, Karpathy-style wiki (12 core pages + on-demand), vertical skills, guardrails, handoff protocol, design spec, and implementation plan. Also triggers on \"new project\", \"setup project\", \"scaffolding\", \"scaffold\", or when a user provides a project brief/description.",
+      "source_sha256": "4f590954e631c012917b17616ef41e0febe76f3992e786622b2a81ebf31a2b53",
+      "source_path": "skills/project-scaffolder/SKILL.md",
+      "package_sha256": "2a142a8dc447fc8cba0f189f3f047d118568bf168c3f33cce320ce707988a9c2",
+      "source_package": "Project Scaffolder — Synaptic Edition-3.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e75bac6f9f037710aebdf39441c4a71935e0931510ab2afe775aa8c4fb40e8e7": {
+      "description_zh": "在成功完成任务后，将共通模式、经验和错误认识传播到相互连接的技能，支持跨技能更新。",
+      "source": "Use after a task completes to propagate learning across connected skills. Triggered by Cortex at the end of every successful task pipeline. Also triggers on \"propagate learning\", \"update skills\", \"synapse\", or when skills need cross-pollination after discovering shared patterns or errors.",
+      "source_sha256": "e75bac6f9f037710aebdf39441c4a71935e0931510ab2afe775aa8c4fb40e8e7",
+      "source_path": "skills/synapse/SKILL.md",
+      "package_sha256": "2a142a8dc447fc8cba0f189f3f047d118568bf168c3f33cce320ce707988a9c2",
+      "source_package": "Project Scaffolder — Synaptic Edition-3.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2944b39010a4569b82eb1110d1c4c432b12c9e1e929e37561c3a1307f406c1b7": {
+      "description_zh": "通过Claude内置Artifact工具生成并发布多工作流项目的分标签状态页，默认私有，可由用户分享；覆盖目标、工作流顺序、下一步及必要背景风险决策。按项目配置刷新同一URL并报告差异，PR类项目可带编号和详情，需claude.ai登录，不用于单PR或公共文档。",
+      "source": "Generate and publish a project status artifact — an opinionated, tabbed status page for a project too big for one update (overview & success criteria, the workstream sequence, next steps, plus background, plan, risks & open questions, and decisions/FAQ when they earn a tab) — published with the built-in Artifact tool to a default-private claude.ai page the user can share with teammates. Use when a piece of work spans several workstreams and you want a shareable overview kept current. Each artifact is backed by a small per-project config in the plugin data dir, so refreshing it re-gathers live state, redeploys the same URL, and reports only the delta. For software projects whose workstreams are PRs, also read swe.md (the X.Y PR-numbering convention; pulling PR state with gh/git; a per-PR detail block). Needs the built-in Artifact tool (claude.ai login). Not for single-PR changes or public docs.",
+      "source_sha256": "2944b39010a4569b82eb1110d1c4c432b12c9e1e929e37561c3a1307f406c1b7",
+      "source_path": "skills/project-artifact/SKILL.md",
+      "package_sha256": "1a318b7a17372a88cdb9529c33e18c094839d4f648fdd4a1a6ba772e06b56ba2",
+      "source_package": "project-artifact-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ccdc0a7e8b8a51fea686a2cccd30275d631c31667200e50a06c73be0033124e": {
+      "description_zh": "生成架构决策记录ADR，用于记录技术选择、架构方案和选择原因。",
+      "source": "Generate Architecture Decision Records. Use when the user asks: ADR 만들어, ADR 작성, architecture decision record, 아키텍처 결정 기록, 기술 결정 문서화, document this decision, 왜 이 기술 선택했는지 기록, record this architectural choice, 의사결정 기록, decision record",
+      "source_sha256": "5ccdc0a7e8b8a51fea686a2cccd30275d631c31667200e50a06c73be0033124e",
+      "source_path": "skills/adr/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e667382262674fd296db3cb339d343286fa31f8164bf0d56e43298c00d609bd": {
+      "description_zh": "分析项目技术栈、目录结构、架构和业务逻辑，解释代码库及项目所用技术框架。",
+      "source": "Analyze project tech stack, folder structure, architecture, and business logic. Use when the user asks: 프로젝트 분석, 기술 스택, tech stack, what technologies, what framework, project structure, 폴더 구조, 아키텍처, architecture, what does this project use, 이 프로젝트 뭐로 만들었어, 프로젝트 구조 알려줘, explain this codebase, 코드베이스 설명, project overview, 프로젝트 개요",
+      "source_sha256": "5e667382262674fd296db3cb339d343286fa31f8164bf0d56e43298c00d609bd",
+      "source_path": "skills/analyze/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9992a154ae685d85b3be3b234163fc1eef33b36889465122fce8339bdddaf4fc": {
+      "description_zh": "检测版本之间的破坏性变更，分析API变化、向后兼容、升级影响及迁移需求。",
+      "source": "Detect breaking changes between versions. Use when the user asks: 브레이킹 체인지, breaking changes, 호환성 깨지는 거, what breaks between versions, 업그레이드 영향, upgrade impact, 마이그레이션 필요한 거, migration needed, API 변경, API changes, 이전 버전이랑 뭐가 달라, what changed between versions, 하위 호환성, backward compatibility",
+      "source_sha256": "9992a154ae685d85b3be3b234163fc1eef33b36889465122fce8339bdddaf4fc",
+      "source_path": "skills/breaking-changes/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1883f35932440ae414b830b09a497cb09619317485484c37971b5b502575f738": {
+      "description_zh": "分析代码知识集中度、归属和关键人员依赖，识别只有一人掌握的代码及人员单点风险。",
+      "source": "Analyze knowledge concentration and bus factor risks. Use when the user asks: 버스 팩터, bus factor, 지식 집중도, knowledge concentration, 한 사람만 아는 코드, single point of failure, 코드 소유권, code ownership, 누가 이 코드 담당, who owns this code, 리스크 분석, risk analysis, 팀 의존성, team dependency, 핵심 인력 리스크, key person risk",
+      "source_sha256": "1883f35932440ae414b830b09a497cb09619317485484c37971b5b502575f738",
+      "source_path": "skills/bus-factor/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79c6cfcb1a354d678d6335edab8fb91bd40d809573f3c9bcecdf6b915781bd3b": {
+      "description_zh": "汇集项目指标形成健康仪表板，展示整体状态、健康得分及综合项目报告。",
+      "source": "Show project health dashboard with combined metrics. Use when the user asks: 프로젝트 대시보드, project dashboard, 프로젝트 건강도, project health, 전체 현황, overall status, 프로젝트 상태, project status, 건강 점수, health score, 프로젝트 리포트, project report, 종합 분석, comprehensive analysis, PM 리포트, PM report, 프로젝트 요약, project summary",
+      "source_sha256": "79c6cfcb1a354d678d6335edab8fb91bd40d809573f3c9bcecdf6b915781bd3b",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e3cf3e1ab1b9d9f0d68f2fdb9c88d7540ccb0a5d750c92b84d15747cf5ef582": {
+      "description_zh": "扫描技术债，包括复杂代码、陈旧TODO和过时依赖，定位需要重构的部分并生成债务报告。",
+      "source": "Scan for technical debt: complex code, stale TODOs, outdated dependencies. Use when the user asks: 기술 부채, technical debt, 코드 품질, code quality, TODO 정리, stale todos, 복잡한 코드 찾아줘, find complex code, 리팩토링 필요한 곳, what needs refactoring, 오래된 라이브러리, outdated dependencies, 코드 스멜, code smell, 코드 건강, code health check, 부채 리포트, debt report",
+      "source_sha256": "9e3cf3e1ab1b9d9f0d68f2fdb9c88d7540ccb0a5d750c92b84d15747cf5ef582",
+      "source_path": "skills/debt/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4cf9d6965e6c1f025d38fd99e386bea48224dd615f31e26e55f74720442c8e15": {
+      "description_zh": "分析项目依赖、循环关系、模块耦合、包健康、过时版本和安全漏洞，并查看依赖图。",
+      "source": "Analyze project dependencies. Use when the user asks: 의존성 분석, dependency analysis, 순환 의존성, circular dependency, 패키지 건강도, package health, 오래된 패키지, outdated packages, 보안 취약점, security vulnerabilities, npm audit, 의존성 그래프, dependency graph, 결합도, coupling, 모듈 의존성, module dependencies",
+      "source_sha256": "4cf9d6965e6c1f025d38fd99e386bea48224dd615f31e26e55f74720442c8e15",
+      "source_path": "skills/deps/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "312a988ee62a4af1e034f8216f5f627df23f3e8c5e49640faa9b250ef3dae3f6": {
+      "description_zh": "利用Git历史及blame解释代码为何这样编写，追踪文件变更、作者和决策背景。",
+      "source": "Explain why code was written a certain way using git history and blame. Use when the user asks: 왜 이렇게 짰어, 이 코드 왜 이래, why was this written, why is this code like this, 코드 히스토리, code history, 변경 이력, change history, 이 파일 히스토리, explain this code's history, 누가 이거 만들었어, who wrote this, 의사결정 맥락, decision context, git blame, 이 코드 배경이 뭐야",
+      "source_sha256": "312a988ee62a4af1e034f8216f5f627df23f3e8c5e49640faa9b250ef3dae3f6",
+      "source_path": "skills/history/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9cebf7b646a915508b6e4994e2bed26a2159e3f8198419a38303bdb27422b2ad": {
+      "description_zh": "分析代码修改的影响范围，追踪依赖，指出修改文件可能影响或破坏的部分。",
+      "source": "Analyze blast radius of code changes. Use when the user asks: 영향도 분석, impact analysis, 이거 바꾸면 뭐가 깨져, what breaks if I change this, blast radius, 변경 영향, change impact, 이 파일 수정하면 어디에 영향, what depends on this, 의존성 추적, dependency trace, 이거 건드려도 되나, is it safe to change this",
+      "source_sha256": "9cebf7b646a915508b6e4994e2bed26a2159e3f8198419a38303bdb27422b2ad",
+      "source_path": "skills/impact/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6fb960abe244019d608daf9bd02f2ba1d1969dea6429284bc7e6003d8389d9d2": {
+      "description_zh": "为新团队成员生成项目入门指南，涵盖环境设置、开始开发和代码导览。",
+      "source": "Generate onboarding guide for new team members. Use when the user asks: 온보딩 가이드, onboarding guide, 신규 입사자 가이드, new member guide, 프로젝트 시작하려면, how to get started, 셀업 방법, setup guide, 개발 환경 세팅, dev environment setup, 이 프로젝트 처음인데, I'm new to this project, 코드 투어, code tour, 프로젝트 입문",
+      "source_sha256": "6fb960abe244019d608daf9bd02f2ba1d1969dea6429284bc7e6003d8389d9d2",
+      "source_path": "skills/onboard/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1aaca7a35720132441f6c0ffe86bec03eda98eeed2e459be40f8afb2df8588e": {
+      "description_zh": "提供当前仓库的项目背景，解释项目能力、结构、技术栈、健康度及状态。",
+      "source": "Provides ambient project awareness. Use when the user asks about \"project overview\", \"what does this project do\", \"explain this codebase\", \"project health\", \"tech stack\", \"project status\", or any general questions about the current repository's structure, technology, or health.",
+      "source_sha256": "c1aaca7a35720132441f6c0ffe86bec03eda98eeed2e459be40f8afb2df8588e",
+      "source_path": "skills/project-context/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a42f60cdf2bb6cd6a38023c23b325b5d7f32fd3ac9dafe70dbfb5031b0e985ce": {
+      "description_zh": "根据Git历史生成发布说明和变更日志，汇总上次发布或指定标签后的变化。",
+      "source": "Generate release notes from git history. Use when the user asks: 릴리즈 노트, release notes, 변경 사항 정리, changelog, 배포 노트, deploy notes, 이번 릴리즈 뭐 바뀌었어, what changed since last release, 태그 이후 변경점, changes since tag, 릴리즈 요약, release summary, 변경 로그 만들어줘",
+      "source_sha256": "a42f60cdf2bb6cd6a38023c23b325b5d7f32fd3ac9dafe70dbfb5031b0e985ce",
+      "source_path": "skills/release-notes/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08f560e14d3e6cd3011705d283d38bbb68a8f6544f3d496985dca8db5863c589": {
+      "description_zh": "分析迭代健康度和开发速度，查看提交模式、团队产出、热点及工作进展。",
+      "source": "Analyze sprint health and development velocity. Use when the user asks: 스프린트 건강도, sprint health, 개발 속도, velocity, 커밋 패턴, commit patterns, 팀 생산성, team productivity, 이번 스프린트 어때, how is the sprint going, 개발 현황, development status, 핫스팟, hotspots, 작업 현황 분석, work status analysis",
+      "source_sha256": "08f560e14d3e6cd3011705d283d38bbb68a8f6544f3d496985dca8db5863c589",
+      "source_path": "skills/sprint-health/SKILL.md",
+      "package_sha256": "19d9356e69f85e141b4a89694bf98661b6ca0a0fe8b9b086f263a6840fed7c5f",
+      "source_package": "project-pilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "174695fc84ed15267f9e7d2e135bfbaeb174fdb09c9999c5f317724e8767445a": {
+      "description_zh": "发现项目根目录之外需要可访问的额外源码目录，由/project-setup内部调用。",
+      "source": "Discover additional source directories outside the project root that should be accessible. Used internally by /project-setup.",
+      "source_sha256": "174695fc84ed15267f9e7d2e135bfbaeb174fdb09c9999c5f317724e8767445a",
+      "source_path": "skills/detect-directories/SKILL.md",
+      "package_sha256": "4b4732296bcf17b73c69615240d84c4cde00f45a0c03c6f8812b2b47e0112add",
+      "source_package": "project-setup-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85ba518947140dc88e2244cd6b245399c71173f2ba2ead9d4debb660f209fd6f": {
+      "description_zh": "检测Python、Node、Rust和Go的语言运行时、虚拟环境及工具链，由/project-setup内部调用。",
+      "source": "Detect language runtimes, virtual environments, and toolchains (Python, Node, Rust, Go). Used internally by /project-setup.",
+      "source_sha256": "85ba518947140dc88e2244cd6b245399c71173f2ba2ead9d4debb660f209fd6f",
+      "source_path": "skills/detect-environment/SKILL.md",
+      "package_sha256": "4b4732296bcf17b73c69615240d84c4cde00f45a0c03c6f8812b2b47e0112add",
+      "source_package": "project-setup-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96b6d79f3d64f034425368053640b1840e86a07afea098e4842b1bdfe56cbdc4": {
+      "description_zh": "读取VSCode、PyCharm、Vim/Neovim和Emacs的编辑器配置以发现项目设置，由/project-setup内部调用。",
+      "source": "Read IDE/editor configuration files (VSCode, PyCharm, Vim/Neovim, Emacs) to discover project settings. Used internally by /project-setup.",
+      "source_sha256": "96b6d79f3d64f034425368053640b1840e86a07afea098e4842b1bdfe56cbdc4",
+      "source_path": "skills/detect-ide-settings/SKILL.md",
+      "package_sha256": "4b4732296bcf17b73c69615240d84c4cde00f45a0c03c6f8812b2b47e0112add",
+      "source_package": "project-setup-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6875d8cf715ad6daafbf71dfb033be221475c61602072ebf0d4cee69e4122eeb": {
+      "description_zh": "检测项目已配置的Python、JS/TS、Rust和Go代码检查器及格式化工具，由/project-setup内部调用。",
+      "source": "Detect linters and formatters configured in the project across Python, JS/TS, Rust, and Go. Used internally by /project-setup.",
+      "source_sha256": "6875d8cf715ad6daafbf71dfb033be221475c61602072ebf0d4cee69e4122eeb",
+      "source_path": "skills/detect-linters/SKILL.md",
+      "package_sha256": "4b4732296bcf17b73c69615240d84c4cde00f45a0c03c6f8812b2b47e0112add",
+      "source_package": "project-setup-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52b41d5f3771b68fc2516daa43d26f115ce481a1c02de753299e84e2fc8bc6ef": {
+      "description_zh": "识别项目运行于本地还是Codespaces、Dev Containers、Gitpod、SSH等远程或容器环境，由/project-setup内部调用。",
+      "source": "Detect whether the project is running locally or in a remote/container environment (GitHub Codespaces, VS Code Dev Containers, Gitpod, SSH, etc.). Used internally by /project-setup.",
+      "source_sha256": "52b41d5f3771b68fc2516daa43d26f115ce481a1c02de753299e84e2fc8bc6ef",
+      "source_path": "skills/detect-runtime-context/SKILL.md",
+      "package_sha256": "4b4732296bcf17b73c69615240d84c4cde00f45a0c03c6f8812b2b47e0112add",
+      "source_package": "project-setup-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ebbf1eb6b636c7eaa1c1d3c25ff39694992e7698cf3250fe238247b9e78ae2a": {
+      "description_zh": "检测Python、JS/TS、Rust和Go的测试运行器及测试配置，由/project-setup内部调用。",
+      "source": "Detect test runners and testing configuration across Python, JS/TS, Rust, and Go. Used internally by /project-setup.",
+      "source_sha256": "0ebbf1eb6b636c7eaa1c1d3c25ff39694992e7698cf3250fe238247b9e78ae2a",
+      "source_path": "skills/detect-test-runners/SKILL.md",
+      "package_sha256": "4b4732296bcf17b73c69615240d84c4cde00f45a0c03c6f8812b2b47e0112add",
+      "source_package": "project-setup-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5307ad922cc776753c8cf4e8b249a4dba94e233a597b5e1069e64357a085b11b": {
+      "description_zh": "依据两个选定模型的指南，把为一个模型调优的提示词迁移到另一个模型，按需读取指南并输出新提示及迁移变更记录。",
+      "source": "Migrates a prompt that was tuned for one model so it is optimized for another, using per-model guides. Reads only the two selected guides on demand and outputs the migrated prompt plus a migration changelog.",
+      "source_sha256": "5307ad922cc776753c8cf4e8b249a4dba94e233a597b5e1069e64357a085b11b",
+      "source_path": "skills/migrate-prompt/SKILL.md",
+      "package_sha256": "3324c6def23bf111974c7bae14d5b3f2c36afc210dafc741fa5168d683153365",
+      "source_package": "Prompt Brain-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07f28f9fe96bcc771cb185e4f4714ab3ab4e7a84f9bac35d770bd76f2379244b": {
+      "description_zh": "分析并优化准备发送给Claude Code的提示词，识别薄弱处、应用提示实践、重构文本并生成变更记录。",
+      "source": "Analyzes and optimizes any Claude Code prompt — identifies weaknesses, applies best practices, reconstructs the prompt, and generates a changelog. Use when refining, rewriting, or critiquing a prompt before sending it to Claude Code.",
+      "source_sha256": "07f28f9fe96bcc771cb185e4f4714ab3ab4e7a84f9bac35d770bd76f2379244b",
+      "source_path": "skills/optimize-prompt/SKILL.md",
+      "package_sha256": "3324c6def23bf111974c7bae14d5b3f2c36afc210dafc741fa5168d683153365",
+      "source_package": "Prompt Brain-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a703e2b608dfc0ccbbf898b72ceed694835dd205505cbc4cb5f3b2831a5dead": {
+      "description_zh": "将粗略请求交给prompt-coach代理，获得改进建议和优化后的提示词。",
+      "source": "Send a rough request to the prompt-coach agent and get back suggestions and an improved prompt",
+      "source_sha256": "3a703e2b608dfc0ccbbf898b72ceed694835dd205505cbc4cb5f3b2831a5dead",
+      "source_path": "skills/coach/SKILL.md",
+      "package_sha256": "b85ea6861fbeea0b80c1a0857305debb1e042b5de14ca18276bb95beba22e604",
+      "source_package": "Prompt Coach-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5a9894d8a395dd77078104f0373ba1a251f180d5a6e93cb143627e78a37842b": {
+      "description_zh": "为LLM流量扫描、脱敏和防护生成正确的PromptGuard API调用，适用于接口集成代码及scan、redact、guard或proxy API使用。",
+      "source": "Generate correct PromptGuard API calls for scanning, redacting, and guarding LLM traffic. Use when writing code that calls PromptGuard endpoints, building integrations, or when the user asks about PromptGuard scan, redact, guard, or proxy APIs.",
+      "source_sha256": "a5a9894d8a395dd77078104f0373ba1a251f180d5a6e93cb143627e78a37842b",
+      "source_path": "skills/promptguard-api/SKILL.md",
+      "package_sha256": "dc8e93b8653aa8a1cc3afda0d9339eb2dbff32fadcb20977b4c054913e5d93d8",
+      "source_package": "PromptGuard-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28c22b31daa2999eb6a6ac2956deecf221f89d0fd55b5e2bebe6b69db8f7d3a8": {
+      "description_zh": "为新建或已有LLM应用接入PromptGuard安全检查，原说明支持使用OpenAI、Anthropic、Google、Cohere或AWS Bedrock的Python、Node.js及TypeScript项目。",
+      "source": "Add PromptGuard security to any LLM-powered application. Use when building new AI features, integrating LLM SDKs, or securing existing unprotected LLM calls. Supports Python, Node.js, and TypeScript projects using OpenAI, Anthropic, Google, Cohere, or AWS Bedrock.",
+      "source_sha256": "28c22b31daa2999eb6a6ac2956deecf221f89d0fd55b5e2bebe6b69db8f7d3a8",
+      "source_path": "skills/secure-llm-integration/SKILL.md",
+      "package_sha256": "dc8e93b8653aa8a1cc3afda0d9339eb2dbff32fadcb20977b4c054913e5d93d8",
+      "source_package": "PromptGuard-1.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26850920f031d64c49bba45313cd6c1088d822542f21a129346526cae4c8f392": {
+      "description_zh": "配置PromptUp启用状态、模式、级别、语言及其他设置。",
+      "source": "Configure PromptUp settings — enable/disable, set mode, level, language, and more",
+      "source_sha256": "26850920f031d64c49bba45313cd6c1088d822542f21a129346526cae4c8f392",
+      "source_path": "skills/pp-config/SKILL.md",
+      "package_sha256": "94f193b561893ff411e81ebbd308dacd2cf2cc2c12030ea3ade1fa9b2c3d98e5",
+      "source_package": "PromptUp-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02110911b3a1e0ed9ccd7162cde05d64c278397dce46cdcb1595ad64ff995d4c": {
+      "description_zh": "重写提示词，使AI请求更清楚、更具体并提高表达有效性。",
+      "source": "Rewrite a prompt to be clearer, more specific, and more effective for AI",
+      "source_sha256": "02110911b3a1e0ed9ccd7162cde05d64c278397dce46cdcb1595ad64ff995d4c",
+      "source_path": "skills/pp/SKILL.md",
+      "package_sha256": "94f193b561893ff411e81ebbd308dacd2cf2cc2c12030ea3ade1fa9b2c3d98e5",
+      "source_package": "PromptUp-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97dd93ca3eae4a9deb73d2debc36ecaa59d169a9156be7f211b1e1c99843a0c5": {
+      "description_zh": "在宿主应用接入Proofable访问控制，以代码定义Gate Policy、放置门禁组件、连接服务端检查并测试流程，适用于内容访问门槛及基于证明的检查。",
+      "source": "Add Proofable access control to a host app. Define a Gate Policy in code, drop in the gate widget, wire the server check, and test the flow. Use when a developer wants to gate content or add proof-based checks.",
+      "source_sha256": "97dd93ca3eae4a9deb73d2debc36ecaa59d169a9156be7f211b1e1c99843a0c5",
+      "source_path": "skills/proofable-integrate/SKILL.md",
+      "package_sha256": "e497c8748e987e6f7801a10c17bb1351c4a514f76864d209b9ae1eb8a274f7eb",
+      "source_package": "Proofable-0.1.3-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "67680223408b3b81e09d186af450bbd60b15dc95094dc1e912812d0aa1a3a954": {
+      "description_zh": "把Proofable接入MCP客户端并登录，复用个人档案、证明、列表和代理。",
+      "source": "Add Proofable to any MCP client, sign in, and reuse profile, proofs, listings, and agents.",
+      "source_sha256": "67680223408b3b81e09d186af450bbd60b15dc95094dc1e912812d0aa1a3a954",
+      "source_path": "skills/proofable-setup/SKILL.md",
+      "package_sha256": "e497c8748e987e6f7801a10c17bb1351c4a514f76864d209b9ae1eb8a274f7eb",
+      "source_package": "Proofable-0.1.3-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f482e19de683b0aed4932daa5a5a986d4ef50bd64c4047eb616acb0865bc3102": {
+      "description_zh": "在助手执行敏感操作前核验身份、权限及可复用证明，适用于确认授权、加载可信代理或管理Vault秘密。",
+      "source": "Verifies identity, permissions, and reusable proofs before sensitive assistant actions. Use when confirming authority, loading a trusted agent, managing Vault secrets, or when the user asks for Proofable.",
+      "source_sha256": "f482e19de683b0aed4932daa5a5a986d4ef50bd64c4047eb616acb0865bc3102",
+      "source_path": "skills/proofable-trust-workflow/SKILL.md",
+      "package_sha256": "e497c8748e987e6f7801a10c17bb1351c4a514f76864d209b9ae1eb8a274f7eb",
+      "source_package": "Proofable-0.1.3-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3cebd4abe2afbc668140aea1069b497bd0cc846678b553ac4a3afd9455be1342": {
+      "description_zh": "指导用PropertyMe MCP处理物业管理数据，解释术语、工具工作流、展示规则及实体关系，覆盖物业组合、物业、联系人、工单、任务、检查、租约续签和团队成员。",
+      "source": "PropertyMe MCP server — how to use its tools effectively as a property management assistant. Use this skill whenever the user mentions PropertyMe, property management, portfolios, properties, contacts, jobs, tasks, inspections, lease renewals, or team members in the context of the PropertyMe MCP server. Covers domain terminology, tool workflows, presentation rules, and entity relationships. Trigger even if the user doesn't explicitly say \"MCP\" — most questions about their PropertyMe data need this guidance.",
+      "source_sha256": "3cebd4abe2afbc668140aea1069b497bd0cc846678b553ac4a3afd9455be1342",
+      "source_path": "skills/propertyme-mcp/SKILL.md",
+      "package_sha256": "61adef1a86035c0b3fba97458b2e1c2c711c6c7dddea1be5beb1b8fa46d130c4",
+      "source_package": "PropertyMe-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ad99af8e82a72bc58da9a78d95d26fd911c1a5783c1f46e15e9f32fd3eb3cc6": {
+      "description_zh": "安装可复用常见协议模板库，覆盖双向或单向NDA、承包和咨询协议、SOW、MSA、录用函、豁免及和解解除文件；用于尚无模板或需要模板库而非单份文件。",
+      "source": "Install a library of ready-to-use agreement templates — mutual and one-way NDA, contractor and consulting agreements, SOW, MSA, offer letter, waiver, and settlement release. Use when someone needs a template for a common agreement, has no templates set up yet, asks for a standard NDA or contract to start from, or wants a reusable template library rather than a one-off document.",
+      "source_sha256": "7ad99af8e82a72bc58da9a78d95d26fd911c1a5783c1f46e15e9f32fd3eb3cc6",
+      "source_path": "skills/agreement-starter-pack/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79db8ef9383f66b67933261187a2ba02ec081fa77d314924a07e557d3298ae1e": {
+      "description_zh": "为其他Propper技能提供协议工作的共用概念，包括收件人角色、签署顺序、发送签署邮件或破坏数据前的确认措辞，以及事实抽取与法律建议的边界；不直接调用。",
+      "source": "Shared vocabulary for agreement work — recipient roles and signing order, the confirmation wording required before anything that emails a signer or destroys data, and the boundary between extracting facts and giving legal advice. Referenced by the other Propper skills; not invoked directly.",
+      "source_sha256": "79db8ef9383f66b67933261187a2ba02ec081fa77d314924a07e557d3298ae1e",
+      "source_path": "skills/agreement-workflows/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16fa882c2f0c254ec5a43ab022b9f243a41a7a15eb16a4a6a31a61cdca80fa17": {
+      "description_zh": "把每位客户都需重写的文档转为可复用模板，识别变化值、替换合并字段、声明数据结构并嵌入签名锚点，适用于合同、录用函、工作说明及批量文件。",
+      "source": "Turn a document that gets rewritten for every customer into a reusable template — find the values that change between copies, replace them with merge fields, declare the data behind them, and embed signature anchors so generated copies can go straight out for signature. Use when someone retypes the same contract, offer letter or statement of work each time, asks to templatize or parameterize a document, wants a reusable version of something they already have, or needs the same paperwork produced for many parties.",
+      "source_sha256": "16fa882c2f0c254ec5a43ab022b9f243a41a7a15eb16a4a6a31a61cdca80fa17",
+      "source_path": "skills/build-gen-template/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "49e6634de8b47401bb7294801384ae07202725a045284d0e1686da34eeb7489a": {
+      "description_zh": "比较同一协议的两版文本，准确汇报条款增删或改写、金额日期及当事人变化、章节重编号和签署区变化，用于对方修订稿及红线核对。",
+      "source": "Compare two versions of the same agreement and report exactly what changed — clauses added, removed or reworded, altered amounts, dates and party names, renumbered sections, and changes to the signature blocks. Use when someone has a revised draft, a counterparty's markup or a redline, when they ask what changed, what came back different, whether their edits survived, or what the other side quietly altered.",
+      "source_sha256": "49e6634de8b47401bb7294801384ae07202725a045284d0e1686da34eeb7489a",
+      "source_path": "skills/compare-contract-versions/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b6583a343515b8b49c5240b2a608b8c746f96a78966e24cf4a8fc41febe99245": {
+      "description_zh": "在应用内嵌入电子签署流程，通过API认证、创建协议及字段，让用户在本产品界面签署，并以验证过的webhook接收签署完成事件；也适用于迁移DocuSign集成。",
+      "source": "Build e-signature into an application — authenticate against the API, create an agreement and place fields from code, let a user sign inside your own UI instead of leaving for email, and receive signed-and-completed events on a verified webhook endpoint. Use when someone is adding document signing to a product, wiring up a signing API or webhook listener, asks how to embed a signing ceremony, needs to know when a document completes, or is porting an existing DocuSign integration.",
+      "source_sha256": "b6583a343515b8b49c5240b2a608b8c746f96a78966e24cf4a8fc41febe99245",
+      "source_path": "skills/embed-signing-in-your-app/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f74b206466a86ce52625a44858aff0f738a2a5e36d2e68646f5b758748f68617": {
+      "description_zh": "从协议提取日期、期限和通知窗口，整理生效、届满、自动续期前通知、终止、补救期及付款交付里程碑，适用于日历整理或批量合同期限盘点。",
+      "source": "Pull every date, deadline and notice window out of an agreement and turn them into a dated list — effective date, term and expiry, auto-renewal with the notice deadline that precedes it, termination rights, cure periods, and payment or delivery milestones. Use when someone asks when a contract renews or expires, what the notice period is, what they need to put in a calendar, how long they have to get out of something, or wants the deadlines pulled out of a stack of contracts.",
+      "source_sha256": "f74b206466a86ce52625a44858aff0f738a2a5e36d2e68646f5b758748f68617",
+      "source_path": "skills/extract-contract-dates/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab8c659eba22c5e2af6dafd4c1f0fec007068221583a7db8ed0be8baae677adc": {
+      "description_zh": "用模板和数据生成合同、录用函、发票、工作说明或报告，提交前核对合并后的文字，并可将表格每行生成一份文件。",
+      "source": "Produce a finished document from a reusable template and a set of values — fill a contract, offer letter, invoice, statement of work or report, check the merged wording before it is committed, and turn a list of rows into one document each. Use when someone wants a document built from a template plus data, asks to fill in, populate or merge a template, has a spreadsheet or list of values that should become documents, or wants the same paperwork produced for many customers.",
+      "source_sha256": "ab8c659eba22c5e2af6dafd4c1f0fec007068221583a7db8ed0be8baae677adc",
+      "source_path": "skills/generate-document/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
