@@ -82609,6 +82609,1086 @@
       "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
       "source_package": "wai-suite-0.4.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76565c2aeebe91ea4f115e82a6123558d7a9c08a10a84ac860689ad4cbdf1e22": {
+      "description_zh": "为后端与Web仓库一次性配置GitHub原生CI/CD，通过Actions、GHCR和SSH Docker Compose部署自有Linux，建立Dockerfiles、Caddy、必需检查、分支保护、CODEOWNERS、PR模板及运行手册；移动商店交付另用mobile-release。",
+      "source": "One-time setup of GitHub-native CI/CD for a backend+web repo (Actions, GHCR, Docker Compose over SSH to your own Linux server, any provider) — and owner of the merge gate that makes \"green checks\" trustworthy. Creates Dockerfiles, compose, a Caddy proxy, the Actions required-check gate, the branch-protection ruleset, CODEOWNERS, PR template, deploy script and runbook. GitHub-only by design; mobile store delivery is wai-mobile-release. Use it for: \"set up CI/CD\", \"deploy to my server\", \"create GitHub Actions\", \"containerize\", \"wire required checks\". Not for implementation, tests, PR review or the catalog (wai-init).",
+      "source_sha256": "76565c2aeebe91ea4f115e82a6123558d7a9c08a10a84ac860689ad4cbdf1e22",
+      "source_path": ".claude/skills/wai-cicd/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "842d6875ec4ca7a184451c57df4d6ff5c1eced0e851d97d2b378ad7a49eb8def": {
+      "description_zh": "先评估风险和影响范围，再在需求agent分支实现修改、修复或重构，自审并开PR；不负责已完成PR评审或大型新项目规划。",
+      "source": "Default skill for implementing changes — the senior fullstack doer. Plans first (risk and blast radius), builds on the requirement''s `agent/**` branch, self-reviews, and opens the PR. Invoked for any implementation, bug fix or code change — or a described behavior that needs one: \"implement X\", \"fix\", \"bug\", \"returns error 503\", \"build\", \"change\", \"adjust\", \"refactor\", \"X should do Y\". Not for reviewing a finished PR (wai-pr-review) or extensive greenfield planning (wai-requirements-planning).",
+      "source_sha256": "842d6875ec4ca7a184451c57df4d6ff5c1eced0e851d97d2b378ad7a49eb8def",
+      "source_path": ".claude/skills/wai-implementation/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa065604077caf79ce75102de580f93ccf42fe6021ace739f2a036c6615a9277": {
+      "description_zh": "初始化或重复更新wAI套件，深入扫描仓库后生成按界面范围的质量属性目录和测试策略；先询问团队、main保护、文档语言、目录层级及学习模式，保留既有文档，除非要求重置。",
+      "source": "Bootstrap and re-runnable updater for the wAI suite: deep-scans a repo, then writes its surface-scoped quality catalog (`docs/architecture/quality-attributes.md`) and testing strategy, sized to the project. Asks the setup questions — solo or team, protect `main`, docs language, catalog tier, learning mode — BEFORE writing what they configure, and keeps existing docs unless you ask for a reset. Use it to set the suite up, or to reconcile it later: \"set up the skills\", \"initialize the project\", \"onboard this repo\", \"create/update the quality catalog\", \"bootstrap\", \"tune the skills\". Not for planning, implementation or PR review — it only lays the foundation.",
+      "source_sha256": "fa065604077caf79ce75102de580f93ccf42fe6021ace739f2a036c6615a9277",
+      "source_path": ".claude/skills/wai-init/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1be5e06cf8b87beddca3fbb92f82e6e8af000ac46e19a0c9d8e5cd9784913067": {
+      "description_zh": "面向选择加入且有个人学习账本的开发者，采用填空编码及Leitner学习；在实现末尾留一个学习空缺、检查答案并推进主题，不为无账本用户或整个仓库自动建立学习状态。",
+      "source": "Personal learning mode (cloze coding + Leitner), tech-stack agnostic — opt-in per developer, never repo-wide. Active ONLY for a human who has a personal ledger under `~/.claude/learning/`; with no ledger it does nothing and creates nothing, so colleagues stay untouched. It plants exactly one learning gap (🧩 LEARN marker) at the end of an implementation phase, reviews the human''s solution, and moves topics through Leitner boxes. Triggers: \"learning gap\", \"hint\", \"solution\", \"learning status\", \"solved\", \"check my solution\", \"skip the gap\", \"learning mode on/off\", \"learning axes\", \"combine the building blocks\", \"learn architecture/domain\".",
+      "source_sha256": "1be5e06cf8b87beddca3fbb92f82e6e8af000ac46e19a0c9d8e5cd9784913067",
+      "source_path": ".claude/skills/wai-learning-gap/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "be297a4243b8cfc6bb6be3389b9e0ed2a0c4748cb4dc550792daa4d870fb1020": {
+      "description_zh": "一次性配置原生iOS/Android构建、签名及TestFlight/App Store或Play渠道交付，创建Fastlane或Gradle、Actions门禁、分支保护、CODEOWNERS、PR模板和发布手册；不负责后端Web流水线。",
+      "source": "One-time setup of build, code signing and store delivery for a native iOS or Android repo (TestFlight/App Store Connect, or Play Console tracks) — and owner of the mobile merge gate. Creates Fastlane lanes or the Gradle release config, signing, the Actions required-check gate, branch-protection ruleset, CODEOWNERS, PR template and release runbook. Use it for: \"set up the iOS build\", \"Fastlane\", \"TestFlight\", \"code signing\", \"Play Console\", \"mobile CI\", \"staged rollout\". Not for the backend+web pipeline (wai-cicd), implementation, tests or PR review.",
+      "source_sha256": "be297a4243b8cfc6bb6be3389b9e0ed2a0c4748cb4dc550792daa4d870fb1020",
+      "source_path": ".claude/skills/wai-mobile-release/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a6387e5b56012903016f356fe9ec39742d37c42789d435a04fbeaa0500cac1e3": {
+      "description_zh": "按质量目录和来源规范对PR或diff做按严重性排序的架构DevOps评审，可指定对抗、零假设或广度视角，协调门禁自动合并；不负责实现或需求规划。",
+      "source": "Senior architecture/DevOps review of a pull request or diff against the quality catalog and the originating spec, ordered by severity — and owner of the gated auto-merge. A review lens may be named at invocation (\"review this adversarially\", \"null-hypothesis\", \"breadth\"); otherwise it follows from the change type. Use it to evaluate any PR/diff before merge: \"review this PR\", \"can this be merged\", \"check this diff\", \"code review\", \"does this fit architecturally\". Not for implementing a change (wai-implementation) or planning one (wai-requirements-planning).",
+      "source_sha256": "a6387e5b56012903016f356fe9ec39742d37c42789d435a04fbeaa0500cac1e3",
+      "source_path": ".claude/skills/wai-pr-review/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c638f28ca4158d99c14b2585be41efce23e604c8d2066a539a43ca7c19c3d58b": {
+      "description_zh": "实施前规划一个新需求，及早梳理架构DevOps、成本、GDPR、API兼容、韧性和令牌成本，可采访澄清或给替代方案，输入单issue、同一需求多issue或文字，形成任务及ADR判断。",
+      "source": "Plans and shapes a new requirement before implementation — architecture, DevOps and the cross-cutting concerns (cost, GDPR, API compatibility, resilience, token economy) surfaced early, with a \"grill me\" interview mode and alternatives when the ask is imprecise. Takes a GitHub issue at invocation (\"plan #42\"), a set of issues that form ONE requirement (\"#42 #43 #44\"), or a plain description — plus directives like \"grill me\", \"backend only\", \"no ADR\". Use it to prepare any new feature, requirement or idea: \"plan this requirement\", \"how should we build X\", \"concept for\", \"break this down into tasks\", \"do we need an ADR\". Not for an already-clarified task (wai-implementation), a finished PR (wai-pr-review), or a backlog of INDEPENDENT issues (wai-team).",
+      "source_sha256": "c638f28ca4158d99c14b2585be41efce23e604c8d2066a539a43ca7c19c3d58b",
+      "source_path": ".claude/skills/wai-requirements-planning/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d89dc22a611784c59e830e8af1ae394c8b22a1918c73524fedfc0c5aea69d741": {
+      "description_zh": "根据门禁账本、运行日志和git历史定期复盘套件工作，生成日期叙述报告，各比率带原始行数并推进报告标记；协作评价需问题轨迹，发布仅明确请求后脱敏，最终判断留给人工。",
+      "source": "Periodic retrospective of the suite''s own work, built from artifacts at a threshold — never from recall. Reads the gate ledger''s report extract, the run log and git history; writes a dated, narrated report where every rate carries its raw row counts, and finishes by advancing the ledger''s report marker so the cadence resets. The collaboration level is gated until a question trace exists, and publication to the suite repo happens only on explicit request, sanitized and pseudonymized. Use it when doctor reports the verdict threshold since the last report marker, or on request: \"run the retro\", \"retrospective\", \"what did the suite do this month\", \"cut a report\", \"how many runs\". Not the per-PR review (wai-pr-review), not the structural or security audits (wai-architecture-audit / wai-security-audit), and not a metric dashboard — artifacts in, narrative out, the judgment column stays human.",
+      "source_sha256": "d89dc22a611784c59e830e8af1ae394c8b22a1918c73524fedfc0c5aea69d741",
+      "source_path": ".claude/skills/wai-retro/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db46e9d8d48a28db9d221431d150e73f668619d925b9d8c153dd8e3317c0fc93": {
+      "description_zh": "定期或发布前对全仓安全做对抗式审计，检查认证授权、IDOR、秘密注入SSRF、限流会话、CVE、加密TLS、租户、令牌滥用及个人信息，把发现串成排序攻击路径；仅报告且脱敏。",
+      "source": "Periodic, whole-codebase security audit — an adversarial \"how would an attacker break this\" sweep: authN/authZ and IDOR, secrets, injection (incl. prompt), SSRF, rate limiting, session/token lifecycle, dependency CVEs, crypto/TLS, tenant isolation, token-economy fraud, PII exposure. Report-only and redacted. Chains findings into ranked end-to-end attack paths. Use it to assess posture as a whole: \"security audit\", \"pentest\", \"threat model\", \"check the attack surface\", \"are we secure\", \"find vulnerabilities\". Run periodically and before a release. Not for structural health (wai-architecture-audit), a single diff (wai-pr-review) or a fix (wai-implementation).",
+      "source_sha256": "db46e9d8d48a28db9d221431d150e73f668619d925b9d8c153dd8e3317c0fc93",
+      "source_path": ".claude/skills/wai-security-audit/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d45564cecf7c5ae063ba01ae9f9d50e695c0573163cebc519ead18bd56b8cf0": {
+      "description_zh": "经明确指定issue及决策政策后，逐项在独立agent分支和PR运行规划、实现、测试、全新上下文评审，再串行合并队列，汇总决策清单；未指定时只扫描建议，启动时确认合并政策。",
+      "source": "Mandated lifecycle orchestrator: works ONE or MORE GitHub issues through the full lifecycle — per issue one run of plan → implement → test → review on its own `agent/**` branch and PR, integrated serially through the merge queue, with no human gap between the phases. Requires an explicit mandate (which issues, and how decision points are handled) and hands back one collected decision list. Invoked without a named issue set, it scans the backlog and proposes — it proposes, the human mandates. Because the run is UNATTENDED, every review runs on fresh context and the merge policy is confirmed at kickoff (default: the repo''s own — solo merges each clean PR under the gate). Use it whenever issues are commissioned rather than driven phase by phase: \"run the cycle on #42\", \"work the backlog\", \"process issues #12–#18\", \"burn down the tier\", \"wai-team\". Not for a change with no issue behind it (wai-implementation) or a finished PR (wai-pr-review).",
+      "source_sha256": "5d45564cecf7c5ae063ba01ae9f9d50e695c0573163cebc519ead18bd56b8cf0",
+      "source_path": ".claude/skills/wai-team/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0d0722750b3b16ae883056f08b73e442fcac35f7fca79a4a1b3cc459d8e5a50": {
+      "description_zh": "编写确定性测试并制定策略，重点覆盖安全、计费、GDPR及幂等，不调用真实模型或真实计费，在实现同分支为PR附测试；不负责功能实现或CI门禁。",
+      "source": "Writes deterministic tests and owns the testing strategy. Mandatory targets are security, billing, GDPR and idempotency; tests never call a real model or real billing. Runs after wai-implementation on the same branch, so the PR ships with its tests. Use it to write tests, raise coverage, or set the strategy: \"write tests for X\", \"add coverage\", \"is this covered\", \"cover the billing path\", \"mock the AI models\", \"make these deterministic\". Not for implementing the feature (wai-implementation) or wiring the CI gate (wai-cicd).",
+      "source_sha256": "e0d0722750b3b16ae883056f08b73e442fcac35f7fca79a4a1b3cc459d8e5a50",
+      "source_path": ".claude/skills/wai-testing/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0cd946e8d97a42f48ae34c94927a86468618a66a8cf541e4dcf52ce59f8abb6": {
+      "description_zh": "作为wAI套件入口推荐起始或下一技能，说明生命周期及交接；只路由建议，不自行规划、实现或评审，人工仍统筹。",
+      "source": "Front door and router for the wAI skill suite. Use it to orchestrate — when you are unsure which skill to start with, want a lifecycle overview, or a recommendation on what to run next: \"which skill do I use\", \"where do I start\", \"what''s next\", \"give me an overview\", \"help me orchestrate\". It only recommends the right skill and shows the hand-offs; it does not plan, implement or review itself — the human stays the orchestrator.",
+      "source_sha256": "b0cd946e8d97a42f48ae34c94927a86468618a66a8cf541e4dcf52ce59f8abb6",
+      "source_path": ".claude/skills/wai/SKILL.md",
+      "package_sha256": "f4c81a5d8aa00c0ee87b691d2e4275f4e12ce6a089862cc1a77ea667266ede1d",
+      "source_package": "wai-suite-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8ae8e26630451a2ec2aeac0467e0fde637e82bb7f87b9e10fedf49831cbaef5": {
+      "description_zh": "实现调试Wake Commerce结账变更序列，涵盖createCheckout、checkoutComplete、配送支付选择及订单完成。",
+      "source": "Wake Commerce checkout mutation sequence. Use when implementing or debugging checkout, shipping, payment, or order completion. Triggers on: checkout flow, createCheckout, checkoutComplete, shipping selection, payment selection, Wake checkout.",
+      "source_sha256": "e8ae8e26630451a2ec2aeac0467e0fde637e82bb7f87b9e10fedf49831cbaef5",
+      "source_path": "skills/wake-checkout-flow/SKILL.md",
+      "package_sha256": "08547fb1ee646961cd6144436a25fa065d46c8636cca8cfc7cef7d24525ffd5d",
+      "source_package": "wake-storefront-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40c30146b5bbb708a0cfada8ad6c47fe9d6e08708c6b493613a7080edec8b58d": {
+      "description_zh": "构建Wake Commerce hotsite、落地页、促销页面及活动URL，处理banners和contents。",
+      "source": "Wake Commerce hotsite and landing pages. Use when building landing pages, promotional pages, or campaign URLs. Triggers on: hotsite, banners, contents, landing page, promotional page.",
+      "source_sha256": "40c30146b5bbb708a0cfada8ad6c47fe9d6e08708c6b493613a7080edec8b58d",
+      "source_path": "skills/wake-hotsite-banners/SKILL.md",
+      "package_sha256": "08547fb1ee646961cd6144436a25fa065d46c8636cca8cfc7cef7d24525ffd5d",
+      "source_package": "wake-storefront-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d5f8838049de8f34eae99a7a55e1dcc91550f34e2ad322c4c3e345a52c0e4d0": {
+      "description_zh": "构建Wake商品详情、按attributeSelections解析变体，并处理定制、subscriptionGroups及加入购物车。",
+      "source": "Wake Commerce variant resolution and add-to-cart. Use when building product detail pages, resolving variants via attributeSelections, or handling customizations and subscriptions. Triggers on: variants, attributeSelections, matrix, selectedVariant, customizations, subscriptionGroups, add-to-cart.",
+      "source_sha256": "1d5f8838049de8f34eae99a7a55e1dcc91550f34e2ad322c4c3e345a52c0e4d0",
+      "source_path": "skills/wake-product-variants/SKILL.md",
+      "package_sha256": "08547fb1ee646961cd6144436a25fa065d46c8636cca8cfc7cef7d24525ffd5d",
+      "source_package": "wake-storefront-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f70140d0a11bc6cc78f4a818e45e94cbac1668188c0c237743943f096c105f49": {
+      "description_zh": "用于Wake Storefront SSR HTML内Scriban模板的编写、编辑、调试和解释，涵盖模板块及空白控制；源简介后部截断，未据此补写未显示内容。",
+      "source": "Scriban templating language as used inside Wake Storefront SSR `.html` files. Use whenever the user writes, edits, debugs, or explains Scriban code — `{{ ... }}` blocks, `{{~ ~}}` whitespace control, `{{##",
+      "source_sha256": "f70140d0a11bc6cc78f4a818e45e94cbac1668188c0c237743943f096c105f49",
+      "source_path": "skills/wake-scriban/SKILL.md",
+      "package_sha256": "08547fb1ee646961cd6144436a25fa065d46c8636cca8cfc7cef7d24525ffd5d",
+      "source_package": "wake-storefront-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5365c9b703dd0d8252fc8dd19a6b6cf05e6907335638981a8eca02864bb387e": {
+      "description_zh": "使用Wake Commerce Storefront GraphQL API构建无头商品、搜索、结账、购物车及客户流程。",
+      "source": "Wake Commerce Storefront API for headless storefronts. Use when building product pages, search, checkout, cart, or customer flows. Triggers on: Wake Storefront API, Wake Commerce GraphQL, product queries, checkout flow, cart, headless storefront.",
+      "source_sha256": "b5365c9b703dd0d8252fc8dd19a6b6cf05e6907335638981a8eca02864bb387e",
+      "source_path": "skills/wake-storefront-api/SKILL.md",
+      "package_sha256": "08547fb1ee646961cd6144436a25fa065d46c8636cca8cfc7cef7d24525ffd5d",
+      "source_package": "wake-storefront-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3aba82a50d750840c1098ed7f2b86452208674345001182adec756c6a1fcd62": {
+      "description_zh": "将Wake Storefront模板及Queries GraphQL迁到无头实现，参照生产模式对齐productId/handle、attributeSelections及addToCartFromSpot等。",
+      "source": "Wake Storefront reference to headless mapping. Use when migrating from Wake Storefront templates, porting Queries/*.graphql, or aligning with production patterns. Triggers on: migrate, reference, Queries, productId vs handle, attributeSelections, addToCartFromSpot.",
+      "source_sha256": "a3aba82a50d750840c1098ed7f2b86452208674345001182adec756c6a1fcd62",
+      "source_path": "skills/wake-storefront-reference-patterns/SKILL.md",
+      "package_sha256": "08547fb1ee646961cd6144436a25fa065d46c8636cca8cfc7cef7d24525ffd5d",
+      "source_package": "wake-storefront-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7298125ee6dbc88d32d5c2fef4adf9b9405471de9b634669eab130584263175e": {
+      "description_zh": "梳理Wake主题目录和Configs组件页面设置邮件契约，管理Snippets与查询配对、Design Studio的Block HTML/schema及hotsite content_for_page，支持脚手架注册及查询到页面组件Block的数据流。",
+      "source": "Wake Commerce storefront template (sometimes called a \"theme\") anatomy — the required root folders (Assets, Blocks, Components, Configs, Emails, Pages, Queries, Root, Snippets) and the contracts behind `Configs/components.json`, `Configs/pages.json`, `Configs/settings.json`, `Configs/emails.json`, the Snippets/SnippetQueries pairing, and the Wake Design Studio CMS (Blocks + `content_for_page` on hotsite pages, paired `Blocks/<type>.html` + `Blocks/<type>.schema.json` files, and the `wake_has_content_for_page` / `wake_content_for_page` runtime helpers). Use when scaffolding a new Wake template, registering a Component, wiring a Page to a Query in `pages.json`, binding a Snippet to a SnippetQuery, adding an Email, exposing a new static asset, authoring a Design Studio Block (schema + HTML), configuring a hotsite `content_for_page`, deciding between a Block and a Component, or explaining how data flows from Queries → Pages/Snippets → Components → Blocks in a Wake storefront project. Triggers include \"Wake template\", \"Wake theme\" (synonym), \"template folder structure\", \"components.json\", \"pages.json\", \"settings.json\", \"emails.json\", \"Configs/\", \"register component\", \"bind query to page\", \"scaffold a Wake template\", \"Wake storefront structure\", \"hotsite content_for_page\", \"Snippets + SnippetQueries pairing\", \"Wake Design Studio\", \"Wake CMS\", \"Design Studio block\", \"Wake block schema\", \"block_data\", \"wake_content_for_page\", \"wake_has_content_for_page\", \".schema.json block\", \"merchant editable hotsite\", \"Storefront 2.0 CMS\".",
+      "source_sha256": "7298125ee6dbc88d32d5c2fef4adf9b9405471de9b634669eab130584263175e",
+      "source_path": "skills/wake-template/SKILL.md",
+      "package_sha256": "08547fb1ee646961cd6144436a25fa065d46c8636cca8cfc7cef7d24525ffd5d",
+      "source_package": "wake-storefront-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43c32c625d7f2d6094cdff5cffb0bb6f20eb3d2348f595975a72279749e2e3a8": {
+      "description_zh": "开展店面Web性能及Lighthouse审计，检查Core Web Vitals、LCP、CLS、INP、PageSpeed、无障碍、SEO及最佳实践。",
+      "source": "Web performance and Lighthouse audits. Use when checking storefront performance, Core Web Vitals, accessibility, SEO, or best practices. Triggers on: performance audit, Lighthouse, PageSpeed, Core Web Vitals, LCP, CLS, INP, accessibility check.",
+      "source_sha256": "43c32c625d7f2d6094cdff5cffb0bb6f20eb3d2348f595975a72279749e2e3a8",
+      "source_path": "skills/web-performance-audit/SKILL.md",
+      "package_sha256": "08547fb1ee646961cd6144436a25fa065d46c8636cca8cfc7cef7d24525ffd5d",
+      "source_package": "wake-storefront-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b427bc92ab4c855b38502ddfc65dd2948dd9501fdaa2c687f56060855dba0fa": {
+      "description_zh": "用实时广告库研究品牌竞争者在Meta、Google及LinkedIn的广告、素材、信息、开场价值主张和地区活动，为付费创意提供依据；不提供ROAS、CTR或花费，自然帖子另用社交研究。",
+      "source": "Trigger when the user says \"what ads is [brand] running\", \"show me [competitor] creatives\", \"how is [brand] advertising\", \"what''s [brand] saying in ads\", \"compare ad strategies\", \"ad library\", \"find ads for [keyword]\", or asks about competitor ads, paid media presence, ad creative, ad messaging, hook/value-prop comparisons, or regional campaign mapping on Meta/Google/LinkedIn — even without saying \"ad\". ALSO trigger on paid-creative ideation framings: \"paid campaign concept for [X]\", \"ad messaging brief\", \"competitive paid angle\", \"where''s the whitespace in [category]''s paid creative\", \"draft an ad hook for [Y]\" — these need live ad-library grounding, never ideate paid creative from training alone. Load this skill BEFORE running native WebSearch or calling individual ad MCP tools. Do NOT trigger for ad performance metrics (ROAS, CTR, spend — not available); defer to Social Intelligence for organic posts.",
+      "source_sha256": "4b427bc92ab4c855b38502ddfc65dd2948dd9501fdaa2c687f56060855dba0fa",
+      "source_path": "skills/ad-intelligence/SKILL.md",
+      "package_sha256": "867566ceb81a322bcd282c10778368aed181aa935b5b6abd24ebbaf6b92169d9",
+      "source_package": "Waldo fyi-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7702145f1bd6e11893a413631507de0fefc559a3801a4cd516b47f235d296564": {
+      "description_zh": "检索Waldo工作区已捕获的品牌提及、自有媒体、广告、行业新闻、受众讨论、趋势及洞察feeds，基于既有知识综合观点；不代替实时网页、社交或趋势研究。",
+      "source": "Trigger when the user says \"what insights do we have on [brand]\", \"show me brand mentions\", \"pull up our [feed type]\", \"any signals about [topic]\", \"what did we capture about [event]\", \"what feeds do we have\", or references a brand space. Searches Waldo workspace signals (brand mentions, owned media, paid ads, category news, audience convos, trending topics) and insight feeds. ALSO trigger on \"build on what we know\" framings: \"what do we already know about [X]\", \"pull our captured POV on [topic]\", \"synthesize our captured signals on [Z]\". Always load before calling workspace MCP tools (space_list, feed_list, feed_get_items, search_documents) directly. Do NOT trigger for live web research (use Web Research), live social (use Social Intelligence), or live trends (use Trends Research) — only captured workspace data.",
+      "source_sha256": "7702145f1bd6e11893a413631507de0fefc559a3801a4cd516b47f235d296564",
+      "source_path": "skills/archival-knowledge/SKILL.md",
+      "package_sha256": "867566ceb81a322bcd282c10778368aed181aa935b5b6abd24ebbaf6b92169d9",
+      "source_package": "Waldo fyi-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff44a90bc6bfa1fd7ef817f029b3608879b921b520b972cb40f3bed2e543f271": {
+      "description_zh": "分析CSV、Excel、PDF表格及JSON或工作区报表，执行计算统计、环比期间比较、分布异常识别及转换；无广告账户API，不分析实时广告效果。",
+      "source": "Trigger when the user says \"crunch the numbers\", \"compare Q3 vs Q4\", \"what does this data show\", \"break down these numbers\", \"analyze this CSV\", \"build a pivot\", \"calculate growth rate\", \"find outliers\", provides a data file, references workspace spreadsheets/reports, or pastes a table. Performs calculations, statistical analysis, trend identification, period-over-period comparisons, distribution analysis, and data transformations on CSV, Excel, PDF tables, and JSON. Always load before calling file MCP tools (file_repo_reader, file_search, file_repository_*) directly — never freelance these without the skill's methodology. Do NOT trigger for ad performance metrics (no API access to ad accounts) or live brand signals (use Archival Knowledge).",
+      "source_sha256": "ff44a90bc6bfa1fd7ef817f029b3608879b921b520b972cb40f3bed2e543f271",
+      "source_path": "skills/data-analysis/SKILL.md",
+      "package_sha256": "867566ceb81a322bcd282c10778368aed181aa935b5b6abd24ebbaf6b92169d9",
+      "source_package": "Waldo fyi-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aaedf2456d006709e36a6bde55216ea13d96761d733813de96b8e6d47e688615": {
+      "description_zh": "研究品牌公众认知、社交情绪、受众重叠、创作者行为、传播和具体舆情失误，为有受众依据的社交创意提供背景；付费广告、实时趋势及无具体案例的行业动态另用专项技能。",
+      "source": "Trigger when the user says \"what are people saying about [brand]\", \"how is [brand] perceived\", \"sentiment on [X]\", \"what''s the buzz around [X]\", \"how are people reacting to [X]\", \"show me TikToks of [product]\", \"is [brand] going viral\", or asks about social sentiment, audience perception, audience overlap, creator/influencer activity, viral content, fan behavior, or reactions on Reddit/Instagram/TikTok/X/Facebook/LinkedIn/YouTube. ALSO trigger on requests for SPECIFIC reputation moments: \"examples of brands being tone-deaf\", \"[brand] backlash\", \"[brand] controversy\", \"PR disasters in [category]\", \"[brand] missteps\", \"famous social fails\". ALSO trigger on audience-grounded creative ideation: \"what would resonate with [audience]\", \"social activation ideas for [X]\", \"creator brief around [Y]\". Do NOT trigger for paid ads (use Ad Intelligence), \"what''s trending right now\" queries (use Trends Research), or category-level dynamics without specific cases sought (\"state of [industry]\" → web-research).",
+      "source_sha256": "aaedf2456d006709e36a6bde55216ea13d96761d733813de96b8e6d47e688615",
+      "source_path": "skills/social-intelligence/SKILL.md",
+      "package_sha256": "867566ceb81a322bcd282c10778368aed181aa935b5b6abd24ebbaf6b92169d9",
+      "source_package": "Waldo fyi-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1b73548f8e5db5d9c46f460e45b5c7008409dce57f2d0448b3420f30f8746eb": {
+      "description_zh": "并行查询社交趋势、Waldo Trends数据库和网页，按趋势综合文化变化、新兴信号、标签及前瞻模式，为当下创意提供新证据；稳定品牌深研和已知品牌认知另用专项技能。",
+      "source": "Research what''s trending — cultural shifts, emerging signals, viral hashtags, forward-looking patterns — by running social trending tools, the Waldo Trends database, and web search in parallel, then synthesizing by trend rather than by source. Trigger on velocity-shaped prompts: \"what''s trending\", \"what should we watch\", \"what''s happening this week/month\", \"what''s on consumers'' minds\", \"viral hashtags\", \"rising topics\", \"emerging signals\", \"what''s the media talking about\". ALSO trigger on trend-grounded ideation: \"what should we build around right now\", \"brief around a trending [topic]\", \"what''s an emerging angle for [X]\". Always load this skill before calling trending MCP tools or native WebSearch on trend-shaped queries — never ideate from training alone. Do NOT trigger for steady-state brand deep dives (use Web Research) or perception of a known brand (use Social Intelligence).",
+      "source_sha256": "f1b73548f8e5db5d9c46f460e45b5c7008409dce57f2d0448b3420f30f8746eb",
+      "source_path": "skills/trends-research/SKILL.md",
+      "package_sha256": "867566ceb81a322bcd282c10778368aed181aa935b5b6abd24ebbaf6b92169d9",
+      "source_package": "Waldo fyi-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8cfff0150c34c5c8a29cc57413e06633525da1cdb66f321ebaf0024e39ad464": {
+      "description_zh": "开展品牌、类别、竞争者、网站、PDF、观点、人物模拟、人口组成及研究样本设计的实时网页研究，为创意简报提供新证据；广告库、社交情绪及趋势另用专项技能。",
+      "source": "Trigger when the user says \"research [topic]\", \"deep dive on [X]\", \"compare [A] vs [B]\", \"audit [website]\", \"what does [brand] do\", \"draft a POV on [topic]\", \"summarize this PDF\", \"how does [competitor] position\", or asks any open-ended brand/category/competitor question, persona simulation, or demographic breakdown. ALSO trigger on research-design / population framings: \"% breakdown of [population]\", \"representative sample of [region]\", \"who should I survey to reach [audience]\", \"audience composition for research\", \"priority populations\". ALSO trigger on creative-ideation framings: \"give me ideas for [X]\", \"shape a campaign around [Y]\", \"brainstorm around [topic]\", \"draft a creative brief for [Z]\". POV, persona, creative- ideation, and research-design prompts always need fresh research grounding — never answer from training alone, never freelance native WebSearch. Do NOT trigger for ad library (use Ad Intelligence), social sentiment (use Social Intelligence), or trending queries (use Trends Research).",
+      "source_sha256": "b8cfff0150c34c5c8a29cc57413e06633525da1cdb66f321ebaf0024e39ad464",
+      "source_path": "skills/web-research/SKILL.md",
+      "package_sha256": "867566ceb81a322bcd282c10778368aed181aa935b5b6abd24ebbaf6b92169d9",
+      "source_package": "Waldo fyi-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2886b530318ecac04b8b21e2dc7bda838526a59ffe309a9db18df8a3c19ece70": {
+      "description_zh": "把当前会话生成固定风格的自包含交互HTML回顾，结合文字、图示和可点详情，保存到.claude/walkthrough或指定目录。",
+      "source": "Generate an interactive HTML walkthrough of the current session — a self-contained, explorable document (prose + diagrams + clickable detail) in a fixed house style. Use when the user asks to \"visualize this session\", \"create a walkthrough\", \"walk me through it\", \"walk me through this/that\", \"walk me through what we did\", \"make a session recap/document\", or runs /walkthrough:create. Writes to .claude/walkthrough/ (or a chosen walkthroughs/ folder in a non-git directory).",
+      "source_sha256": "2886b530318ecac04b8b21e2dc7bda838526a59ffe309a9db18df8a3c19ece70",
+      "source_path": "skills/create/SKILL.md",
+      "package_sha256": "70ce7c3b5463a0ce8bf77911988bafc408a5a6c737cd56e18ba6ee8df924c176",
+      "source_package": "walkthrough-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23172bed659c935235aa6ce05aa98f6194e840a30ec87be8e3eac61d0dbabc90": {
+      "description_zh": "依据README及manifest为插件、库、子系统或市场生成walkthrough风格自包含交互HTML文档，默认保存.claude/walkthrough或指定路径。",
+      "source": "Render any SUBJECT (a plugin, library, subsystem, or the marketplace) as a self-contained interactive HTML document in the walkthrough house style. Use when the user asks to \"document this plugin\", \"make a docs page for <subject>\", \"generate the plugin landing page\", or runs /walkthrough:document <subject>. Reads README + manifest as canonical source. Writes to the path given, default .claude/walkthrough/.",
+      "source_sha256": "23172bed659c935235aa6ce05aa98f6194e840a30ec87be8e3eac61d0dbabc90",
+      "source_path": "skills/document/SKILL.md",
+      "package_sha256": "70ce7c3b5463a0ce8bf77911988bafc408a5a6c737cd56e18ba6ee8df924c176",
+      "source_package": "walkthrough-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bddc3c556d7389c5af713a170c10770feecc9dcc2e67a0a611ccb40d59f5328f": {
+      "description_zh": "将会话中已存在的结构化模型原样渲染为统一风格HTML，供其他技能内部调用，不重新综合会话；用户回顾另用create。",
+      "source": "Render a structured model already present in this conversation into the house-style HTML, as-is (no session synthesis). Internal building block invoked by other skills/plugins (e.g. lens) that have already assembled a model. Not for users — for a synthesized session recap use /walkthrough:create.",
+      "source_sha256": "bddc3c556d7389c5af713a170c10770feecc9dcc2e67a0a611ccb40d59f5328f",
+      "source_path": "skills/render/SKILL.md",
+      "package_sha256": "70ce7c3b5463a0ce8bf77911988bafc408a5a6c737cd56e18ba6ee8df924c176",
+      "source_package": "walkthrough-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f98f4049a7b51bc41936c0bd6cb26c52ecf10665d5b186281b76cf69babe3f18": {
+      "description_zh": "原位更新已有walkthrough HTML，从文档恢复既有内容并纳入明确指定规范或源文件，形成连贯文档覆盖同一文件。",
+      "source": "Refresh an EXISTING walkthrough HTML in place so it reflects new work — reconstructs the prior content from the document, folds in explicitly-named spec/source files, and overwrites the same file as one coherent document. Use when the user asks to \"update the walkthrough\", \"refresh the session doc\", \"regenerate the walkthrough with the new spec\", or runs /walkthrough:update. Reads from and writes to .claude/walkthrough/.",
+      "source_sha256": "f98f4049a7b51bc41936c0bd6cb26c52ecf10665d5b186281b76cf69babe3f18",
+      "source_path": "skills/update/SKILL.md",
+      "package_sha256": "70ce7c3b5463a0ce8bf77911988bafc408a5a6c737cd56e18ba6ee8df924c176",
+      "source_package": "walkthrough-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33b9cf8bceb317d224229464ebdff8bc9214f27808fedb2b415a2e8026e5e26d": {
+      "description_zh": "通过Warmerly MCP诊断垃圾箱、退信、少回复或邮箱健康下降，检查SPF、DKIM、DMARC、MX及黑名单并给DNS和发送修复。",
+      "source": "Use when the user's Warmerly emails are landing in spam, bouncing, getting few replies, when a mailbox's health score dropped, or when they ask to check SPF, DKIM, DMARC, MX or blocklists for a domain. Diagnoses mailboxes and domains through the Warmerly MCP server and gives concrete DNS and sending fixes.",
+      "source_sha256": "33b9cf8bceb317d224229464ebdff8bc9214f27808fedb2b415a2e8026e5e26d",
+      "source_path": "skills/deliverability-doctor/SKILL.md",
+      "package_sha256": "aee97d07d7428916d94b8e76f56ea97b2e1cfe9dc812740a148e0dbbf1d527e3",
+      "source_package": "Warmerly-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7da478bc9984cb67b07bc17fbd25b6682ff64e514f53b94e0dd1f2f1d71bf24d": {
+      "description_zh": "通过Warmerly MCP从ICP、线索查找验证到创建冷邮件活动、序列、就绪检查、启动及监控，支持规划发布。",
+      "source": "Use when the user wants to start, plan or launch a cold email outreach campaign in Warmerly, find leads for one, write the email sequence, or check whether a campaign is ready to send. Walks from ideal customer profile to lead search, verification, campaign creation, sequence writing, readiness and launch, then monitoring. Requires the Warmerly MCP server.",
+      "source_sha256": "7da478bc9984cb67b07bc17fbd25b6682ff64e514f53b94e0dd1f2f1d71bf24d",
+      "source_path": "skills/launch-outreach-campaign/SKILL.md",
+      "package_sha256": "aee97d07d7428916d94b8e76f56ea97b2e1cfe9dc812740a148e0dbbf1d527e3",
+      "source_package": "Warmerly-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92eeab4de1efc946268ec3a2b8b3c28be5bd5987534fc4d709378a29ad92cc9b": {
+      "description_zh": "通过Warmerly MCP分流收件箱，识别需答复邮件、感兴趣线索、自动回复和退订，并起草发送活动回应。",
+      "source": "Use when the user wants to go through their Warmerly inbox, find replies that need an answer, sort interested leads from autoresponders and unsubscribes, or draft and send replies to campaign responses. Requires the Warmerly MCP server.",
+      "source_sha256": "92eeab4de1efc946268ec3a2b8b3c28be5bd5987534fc4d709378a29ad92cc9b",
+      "source_path": "skills/reply-triage/SKILL.md",
+      "package_sha256": "aee97d07d7428916d94b8e76f56ea97b2e1cfe9dc812740a148e0dbbf1d527e3",
+      "source_package": "Warmerly-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00fb797a91f9aa4f9ed47457038ff41d137f93cee2c176ead487437160fb5d4c": {
+      "description_zh": "通过Warmerly事务邮件API发送重置密码、收据、通知及注册确认，验证发件域、排查未送达或通过MCP发送。",
+      "source": "Use when the user wants to send application email (password resets, receipts, notifications, sign-up confirmations) through Warmerly's transactional email API, verify a sending domain for it, check why a transactional email did not arrive, or send one through the Warmerly MCP server.",
+      "source_sha256": "00fb797a91f9aa4f9ed47457038ff41d137f93cee2c176ead487437160fb5d4c",
+      "source_path": "skills/transactional-email-setup/SKILL.md",
+      "package_sha256": "aee97d07d7428916d94b8e76f56ea97b2e1cfe9dc812740a148e0dbbf1d527e3",
+      "source_package": "Warmerly-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7049f831d57480bd6d4d56b093aef96f142c317c718fddddee28dcf3ea5b8ef3": {
+      "description_zh": "在WarmySender创建启动管理冷邮件活动，编写序列、添加导入线索、登记参与、启动暂停及读结果，支持回复退信分析和恢复发送。",
+      "source": "Build, launch and manage a cold email campaign in WarmySender - create the sequence, add or import prospects, enroll them, start or pause the campaign, and read results. Use when the user asks to set up cold outreach, write a follow-up sequence, enroll a list, check reply or bounce numbers, or pause and resume sending.",
+      "source_sha256": "7049f831d57480bd6d4d56b093aef96f142c317c718fddddee28dcf3ea5b8ef3",
+      "source_path": "skills/launch-cold-email-campaign/SKILL.md",
+      "package_sha256": "1db280b68dfc51e78bd4e25b119a490f73b182a419486f70b909d222c683c96c",
+      "source_package": "WarmySender-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0df9660d330906d36e3b748720646fb25a9a28190bd095d19c1e200dac89c03c": {
+      "description_zh": "维护WarmySender发件信誉，发送前验证地址、配置监控预热、检查邮箱健康、跟踪域和抑制名单，并查找B2B联系人。",
+      "source": "Keep a sender's reputation healthy in WarmySender - verify email addresses before sending, configure and monitor email warmup, check mailbox health, manage tracking domains and suppression lists, and find B2B leads. Use when the user asks about bounces, spam placement, warmup settings or stats, verifying a list, a custom tracking domain, or sourcing new contacts.",
+      "source_sha256": "0df9660d330906d36e3b748720646fb25a9a28190bd095d19c1e200dac89c03c",
+      "source_path": "skills/protect-email-deliverability/SKILL.md",
+      "package_sha256": "1db280b68dfc51e78bd4e25b119a490f73b182a419486f70b909d222c683c96c",
+      "source_package": "WarmySender-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d483a93e24cd017d482697ac9ce45378c13e87a8f2d227b404fb4a589c4db0b8": {
+      "description_zh": "在WarmySender开展LinkedIn、Instagram及WhatsApp活动，创建登记启动暂停、发布LinkedIn帖子职位，检查账户健康及限速。",
+      "source": "Build and run LinkedIn, Instagram and WhatsApp outreach in WarmySender - create the campaign, enroll prospects, start or pause it, publish LinkedIn posts and jobs, and check account health and throttle. Use when the user asks about LinkedIn connection requests or messages, Instagram DMs, WhatsApp sequences, multichannel outreach, or why a social account is sending slowly.",
+      "source_sha256": "d483a93e24cd017d482697ac9ce45378c13e87a8f2d227b404fb4a589c4db0b8",
+      "source_path": "skills/run-multichannel-outreach/SKILL.md",
+      "package_sha256": "1db280b68dfc51e78bd4e25b119a490f73b182a419486f70b909d222c683c96c",
+      "source_package": "WarmySender-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e789c109af3042c2a59231cd29ffd8070d0c1c87c21a929968e2f217b8e2f469": {
+      "description_zh": "协调Windows、Mac及Linux多台机器的Claude Code会话共用项目，按文件单写者避免覆盖，通过Remote Control SendMessage及共享目录书面邮箱通信，无须服务器。",
+      "source": "Wassup — permite que varias sesiones de Claude Code en distintos equipos (PC con Windows, Mac, Linux) trabajen en el mismo proyecto sin pisarse y se escriban entre ellas, sin servidor - un dueño por fichero, canal directo por Remote Control (SendMessage) y buzón escrito en una carpeta compartida. Úsalo cuando el usuario diga \"wassup\", \"habla con la otra sesión / el Mac / el otro PC\", \"lee el buzón\", \"sincroniza las sesiones\", \"que no se pisen\", o al montar un proyecto en más de un equipo.",
+      "source_sha256": "e789c109af3042c2a59231cd29ffd8070d0c1c87c21a929968e2f217b8e2f469",
+      "source_path": "skills/wassup/SKILL.md",
+      "package_sha256": "37966ca531242049b7072257e08d2ab632215db481de6acd678ca62cdb66601f",
+      "source_package": "Wassup (español)-0.9.2-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0665f4df4bf1960a2d53ea592970f73f5da568920807deb5e0ea0ee5ddf61d75": {
+      "description_zh": "协调Windows、Mac及Linux多台机器的Claude Code会话共用项目，按文件单写者避免覆盖，通过Remote Control SendMessage及共享目录书面邮箱通信，无须服务器。",
+      "source": "Wassup — lets several Claude Code sessions on different machines (Windows PCs, Macs, Linux) work on the same project without stepping on each other and talk to each other, with no server - one writer per file, a direct channel over Remote Control (SendMessage) and a written mailbox in a shared folder. Use it when the user says \"wassup\", \"talk to the other session / the Mac / the other PC\", \"read the mailbox\", \"sync the sessions\", \"don't step on each other\", or when setting up a project on more than one machine.",
+      "source_sha256": "0665f4df4bf1960a2d53ea592970f73f5da568920807deb5e0ea0ee5ddf61d75",
+      "source_path": "skills/wassup/SKILL.md",
+      "package_sha256": "9e71857d72eb5ee91fd9dea8ca91c996c02893791d4771a8b46c5609b3d43f0d",
+      "source_package": "Wassup-0.9.2-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09464b715d6b13b87c87351338c13102b8bb14c19665389ac7ba977f0b296d4f": {
+      "description_zh": "用ffmpeg关键帧和faster-whisper多语言转录分析本地视频、yt-dlp公开URL或配置Atlassian令牌的Jira附件，以帧及转录回答，适用于录屏、缺陷复现和演示。",
+      "source": "Make Claude \"watch\" a video — local file, public URL (yt-dlp), or Jira attachment (fully automated when an Atlassian API token is configured). Extracts keyframes with ffmpeg and transcribes audio with faster-whisper (multilingual), then Claude reads frames + transcript to answer the user's question. Use when the user wants to analyze a screen recording, bug repro video, demo capture, or any video they point at. Triggers - \"watch this video\", \"analyze this video\", \"what happens in <file>.mp4\", \"transcribe and watch\", \"process this bug repro\", a Jira ticket key followed by \"watch the video\", a YouTube/Loom/TikTok/etc. URL with \"watch this\" or \"summarize this\".",
+      "source_sha256": "09464b715d6b13b87c87351338c13102b8bb14c19665389ac7ba977f0b296d4f",
+      "source_path": "SKILL.md",
+      "package_sha256": "5c1cc8afb71f47fb5f2c5d0130dd6a494093eea3889a3ccaf01c653ec32f2262",
+      "source_package": "watch-video-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f342543943e3ce8b4eec39f8e3a10c7e2fabd4e2e3b45446611d388e3dcdaf5": {
+      "description_zh": "将项目issues转为可直接执行的实现计划，包含风险预测、按波次组织、专门智能体及TDD流程。",
+      "source": "Transform project issues into execution-ready implementation plans with risk prediction, wave-based organization, specialist agents, and TDD workflow",
+      "source_sha256": "4f342543943e3ce8b4eec39f8e3a10c7e2fabd4e2e3b45446611d388e3dcdaf5",
+      "source_path": "SKILL.md",
+      "package_sha256": "5736d25dfb888e5a9e617845345c9e341444981589ee41308f7d75f042332202",
+      "source_package": "Wave Planner Skill-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e93fd56fc6dc26670bf5e3ff75fde947d77ac6dad24c979cd8ee471fdfde3a1c": {
+      "description_zh": "为AI智能体建立结构化项目上下文，创建更新manifest、规则、日志、路线图、产品基础与蓝图，分析结构可行性、阶段和生命周期，支持多会话进度及偏好连续性。",
+      "source": "This skill should be used when the user asks to \"initialize a project\", \"create a manifest\", \"create rules\", \"create a logbook\", \"update a manifest\", \"analyze project structure\", \"track development progress\", \"create a roadmap\", \"update roadmap\", \"analyze feasibility\", \"run feasibility analysis\", \"create a foundation\", \"create a blueprint\", \"product blueprint\", or needs guidance on structured context for AI agents. Also triggers for \"waves\", \"project context\", \"coding rules\", \"development logbook\", \"ticket resolution\", \"user preferences\", \"roadmap\", \"product roadmap\", \"phase planning\", \"feasibility\", \"monte carlo\", \"bayesian analysis\", \"product foundation\", \"product blueprint\", \"product lifecycle\", or any workflow involving project manifests, standards, product planning, or multi-session continuity.",
+      "source_sha256": "e93fd56fc6dc26670bf5e3ff75fde947d77ac6dad24c979cd8ee471fdfde3a1c",
+      "source_path": "skills/waves-protocol/SKILL.md",
+      "package_sha256": "4e3c67a0349bb172cf967c64b26eb452dfbc7b3a2147be40e33dbdb4b14c7a58",
+      "source_package": "Waves Exovian-3.1.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb870c4ec6c60cf3f12f6a06b740cdb6d54236a3f38dfda9dac01d5c3c2e7c07": {
+      "description_zh": "仅为需vite、astro、next或npm等框架构建的wawesome项目在本机构建，再用CLI上传产物；手写静态代码、调用回滚、域名环境和用户本机文件另经MCP或request_upload。",
+      "source": "Use when deploying a wawesome project that runs a framework build, meaning one where a command such as `vite build`, `astro build`, `next build` or `npm run build` has to run before there is anything to deploy. wawesome runs no build, so that build runs on this machine and the CLI uploads what it wrote. Nothing else needs the CLI. Reading, deploying hand-written code and static files, invoking, fetching, rolling back, domains and environment variables all go through the wawesome MCP tools, and files on the person's own machine go through `request_upload`.",
+      "source_sha256": "fb870c4ec6c60cf3f12f6a06b740cdb6d54236a3f38dfda9dac01d5c3c2e7c07",
+      "source_path": "skills/wawesome-cli/SKILL.md",
+      "package_sha256": "2f0a5829777a3e1eedc6c3e5edc87e20c7c7373b6911b049916c06bef8815127",
+      "source_package": "wawesome-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51d9a308bc8c46b68799f19c7802e1708d16d572b1f451070dcb5295e44b2339": {
+      "description_zh": "管理wawesome App、Function及Version，说明客户端部署载荷边界，检查实际线上状态，并区分工具、仪表板或CLI工作。",
+      "source": "Use when working on a wawesome App, Function or Version. Covers what a deploy from this client can and cannot carry, how to check what is live rather than what is on disk, and the work that belongs to the dashboard or the CLI instead of a tool call.",
+      "source_sha256": "51d9a308bc8c46b68799f19c7802e1708d16d572b1f451070dcb5295e44b2339",
+      "source_path": "skills/wawesome-platform/SKILL.md",
+      "package_sha256": "2f0a5829777a3e1eedc6c3e5edc87e20c7c7373b6911b049916c06bef8815127",
+      "source_package": "wawesome-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa4bcd29b165a2037f4cd62343af5c2544ad5d8db31ba73ff539df7156938748": {
+      "description_zh": "指导首次连接wawesome、登录或CLI安装，处理credential-missing-capability，说明同意屏幕三个角色及各自工具权限边界。",
+      "source": "Use when connecting to wawesome for the first time, when a wawesome tool refuses with \"credential-missing-capability\", or when someone asks how to sign in to wawesome or how to install its CLI. Names the three jobs on the consent screen, the tools each one carries, and what none of them carries.",
+      "source_sha256": "aa4bcd29b165a2037f4cd62343af5c2544ad5d8db31ba73ff539df7156938748",
+      "source_path": "skills/wawesome-setup/SKILL.md",
+      "package_sha256": "2f0a5829777a3e1eedc6c3e5edc87e20c7c7373b6911b049916c06bef8815127",
+      "source_package": "wawesome-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "beab3237fb7fe8fa5218b0c6d258d2a61fb037e1e8801b7ff72906ba9272de24": {
+      "description_zh": "使用waybill.ge的RS.GE运单、电子发票或Balance.ge MCP时，展示草稿且获明确同意后才激活、关闭、确认或由运单存发票，不在聊天索取平台密码。",
+      "source": "Use whenever you work with the waybill.ge MCP tools (RS.GE waybills, e-invoices or Balance.ge). Show a waybill draft and get an explicit yes before activate_waybill, close_waybill, confirm_waybill or save_invoice_from_waybill, and never ask for RS.GE or Balance.ge passwords in chat.",
+      "source_sha256": "beab3237fb7fe8fa5218b0c6d258d2a61fb037e1e8801b7ff72906ba9272de24",
+      "source_path": "skills/waybill-safety/SKILL.md",
+      "package_sha256": "f8e30474c64eac1e6cf12887fb34eee1b041cab0603de71f6145731c43569077",
+      "source_package": "waybill.ge-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12965dc3f1e62e82ba6d4221bb9247744a2bd22d9161a6e72744a35d21b6732c": {
+      "description_zh": "结合互动证据及当前财务数据，完整记录客户背景、建议、目标风险、支持理由和后续工作。",
+      "source": "Combine interaction evidence and current financial data into a complete record of the client context, recommendation, targeted risk, supporting rationale, and resulting work.",
+      "source_sha256": "12965dc3f1e62e82ba6d4221bb9247744a2bd22d9161a6e72744a35d21b6732c",
+      "source_path": "skills/document-recommendation-suitability/SKILL.md",
+      "package_sha256": "821adbeedb918b5c10d4236d5c71cd433a7790adcee27aa9d6a35e709f52d058",
+      "source_package": "Wealthbox-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f9f440edf23328ff930043fdb4a6f20cc55653641af22def3b2415494fa8524": {
+      "description_zh": "读取外部变化，确定可能受影响的Wealthbox客户或潜客及适当后续跟进。",
+      "source": "Read an external change and determine which Wealthbox clients or prospects are likely to be affected and what follow-up should occur.",
+      "source_sha256": "0f9f440edf23328ff930043fdb4a6f20cc55653641af22def3b2415494fa8524",
+      "source_path": "skills/identify-clients-affected-by-change/SKILL.md",
+      "package_sha256": "821adbeedb918b5c10d4236d5c71cd433a7790adcee27aa9d6a35e709f52d058",
+      "source_package": "Wealthbox-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffae983b582dea661e5b409341763102f763544d7829cfbcec0391642e352125": {
+      "description_zh": "依据完整客户关系把服务请求转为可跟踪、多步骤的Wealthbox服务流程。",
+      "source": "Convert a client request into a tracked, multi-step Wealthbox service process informed by the complete client relationship.",
+      "source_sha256": "ffae983b582dea661e5b409341763102f763544d7829cfbcec0391642e352125",
+      "source_path": "skills/manage-client-service-request/SKILL.md",
+      "package_sha256": "821adbeedb918b5c10d4236d5c71cd433a7790adcee27aa9d6a35e709f52d058",
+      "source_package": "Wealthbox-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "858fa9a0d98224f9849336ec727dd1ceef55ba789345cd8b8e852cb476fc2eac": {
+      "description_zh": "从上传材料及已连接系统建立核验过的客户接入数据，调和来源冲突并将信息和工作分派至Wealthbox及专门平台。",
+      "source": "Build a verified onboarding data set from uploaded materials and connected systems, reconcile conflicting sources, and route the resulting information and work to Wealthbox and the appropriate specialist platforms.",
+      "source_sha256": "858fa9a0d98224f9849336ec727dd1ceef55ba789345cd8b8e852cb476fc2eac",
+      "source_path": "skills/orchestrate-onboarding-data/SKILL.md",
+      "package_sha256": "821adbeedb918b5c10d4236d5c71cd433a7790adcee27aa9d6a35e709f52d058",
+      "source_package": "Wealthbox-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3bd8ade7dcc7ed4eea4f1043b6b61cd4833fc5d075674985a0118dea58607be8": {
+      "description_zh": "综合已连接系统中的完整客户关系，为客户或潜客会谈生成简明且可用于决策的简报。",
+      "source": "Create a concise, decision-ready briefing for an upcoming client or prospect meeting by synthesizing the complete client relationship across connected systems.",
+      "source_sha256": "3bd8ade7dcc7ed4eea4f1043b6b61cd4833fc5d075674985a0118dea58607be8",
+      "source_path": "skills/prepare-client-meeting/SKILL.md",
+      "package_sha256": "821adbeedb918b5c10d4236d5c71cd433a7790adcee27aa9d6a35e709f52d058",
+      "source_package": "Wealthbox-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59a84b6bd98ff94fda5a90b1dda5ea1e3b690c2b84a596a55320b4773cf6c86c": {
+      "description_zh": "收集储蓄收入支出及家庭目标输入，通过WealthStoryLine run_simulation做蒙特卡洛净资产预测并解释故事线，用于退休、住房按揭承受力及资金耗尽概率研究。",
+      "source": "Use when the user asks whether their savings, income and spending plan will reach a financial goal, when they can retire, whether they can afford a house or mortgage, how likely they are to run out of money, or wants a Monte Carlo projection of household net worth. Guides gathering inputs, calling the WealthStoryLine run_simulation tool and explaining the result, including storylines.",
+      "source_sha256": "59a84b6bd98ff94fda5a90b1dda5ea1e3b690c2b84a596a55320b4773cf6c86c",
+      "source_path": "skills/wealth-simulation/SKILL.md",
+      "package_sha256": "b567de6cb617d3065991c7b3f1d333e5273b2d501699b69edfe95e04b413134e",
+      "source_package": "WealthStoryLine-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a2b315c1e29216759e0ba38f4ca870fe756537948fc7d3528ccfa15964047df": {
+      "description_zh": "为Lighthouse CI生成带合理默认值的performance-budget.json，设置性能预算和CI阈值。",
+      "source": "Generate a performance-budget.json file for Lighthouse CI with reasonable defaults. Use this when the user asks to add performance budgets, set up Lighthouse CI budgets, enforce perf thresholds in CI, or create a budget config for their project.",
+      "source_sha256": "5a2b315c1e29216759e0ba38f4ca870fe756537948fc7d3528ccfa15964047df",
+      "source_path": "skills/budget-generate/SKILL.md",
+      "package_sha256": "7075c53f100d8276cda0dd7984b13b6e8bb90683db92e2cf50f7c3a06ecf4884",
+      "source_package": "Web Vitals Auditor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de9f34bce35791a6d073401505ea7d8ee50b41418fa9d4b17fb7ba68d73b7fb4": {
+      "description_zh": "分析Webpack、Vite或Rollup构建，识别重复依赖、异常大型包及缺失tree-shaking，帮助缩小JavaScript。",
+      "source": "Analyze a Webpack, Vite, or Rollup build output for duplicated dependencies, unexpectedly large packages (lodash, moment, polyfills), and missing tree-shaking. Use this when the user asks to analyze a bundle, find what is bloating the bundle, check for duplicates, or reduce JS size.",
+      "source_sha256": "de9f34bce35791a6d073401505ea7d8ee50b41418fa9d4b17fb7ba68d73b7fb4",
+      "source_path": "skills/bundle-analyze/SKILL.md",
+      "package_sha256": "7075c53f100d8276cda0dd7984b13b6e8bb90683db92e2cf50f7c3a06ecf4884",
+      "source_package": "Web Vitals Auditor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acec151710fb1253cd90b4b4feadd08e0b57b5ae4224f9a576b14d25dd69e831": {
+      "description_zh": "扫描CSS、HTML、JSX、TSX及Vue字体加载，识别FOIT/FOUT、font-display、同步加载及过多字重。",
+      "source": "Detect font-loading issues. Use this when the user asks to audit fonts, check for FOIT or FOUT, fix font-display issues, find synchronous font loads in CSS, or audit how many font weights are loaded. Scans CSS, HTML, JSX, TSX, and Vue files.",
+      "source_sha256": "acec151710fb1253cd90b4b4feadd08e0b57b5ae4224f9a576b14d25dd69e831",
+      "source_path": "skills/font-audit/SKILL.md",
+      "package_sha256": "7075c53f100d8276cda0dd7984b13b6e8bb90683db92e2cf50f7c3a06ecf4884",
+      "source_package": "Web Vitals Auditor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13904ebd3e53865bad7c0b2647e6c653859928a1ba7257291f4b1e3c50c361f1": {
+      "description_zh": "扫描HTML、JSX、TSX及Vue的未优化图像，检查影响LCP、缺懒加载或尺寸以及未预加载hero图像。",
+      "source": "Scan HTML, JSX, TSX, and Vue files for unoptimized images. Use this when the user asks to audit images, find images hurting LCP, check for missing lazy loading, find images without dimensions, or look for hero images that are not preloaded.",
+      "source_sha256": "13904ebd3e53865bad7c0b2647e6c653859928a1ba7257291f4b1e3c50c361f1",
+      "source_path": "skills/image-audit/SKILL.md",
+      "package_sha256": "7075c53f100d8276cda0dd7984b13b6e8bb90683db92e2cf50f7c3a06ecf4884",
+      "source_package": "Web Vitals Auditor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e3d7bc78356b0cc06ecf67dfa6991777f667da7d86d340d01d0eb3b3e964f40": {
+      "description_zh": "对URL分别运行桌面和移动Lighthouse，解析JSON并按通过、警告、失败阈值汇总LCP、CLS、INP、TBT及TTI。",
+      "source": "Run Lighthouse against a URL in both desktop and mobile form factors and summarize Core Web Vitals. Use this when the user asks to audit a page, check Web Vitals, measure page speed, or score a URL against Lighthouse. Parses the JSON output and reports LCP, CLS, INP, TBT, and TTI with pass, warn, and fail thresholds.",
+      "source_sha256": "4e3d7bc78356b0cc06ecf67dfa6991777f667da7d86d340d01d0eb3b3e964f40",
+      "source_path": "skills/lighthouse-audit/SKILL.md",
+      "package_sha256": "7075c53f100d8276cda0dd7984b13b6e8bb90683db92e2cf50f7c3a06ecf4884",
+      "source_package": "Web Vitals Auditor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a053f6bb2a8eb20b25f4169f1a78044a2852e38a5b810f8ee8e56679e2f0558b": {
+      "description_zh": "解释既有Lighthouse JSON，把失败的LCP、CLS、INP、TBT、TTI映射到可能根因及具体修复，确定优先级。",
+      "source": "Interpret a Lighthouse JSON result and prioritize concrete fixes. Use this when the user has a Lighthouse report and wants to know what to fix first, or when a previous lighthouse-audit run produced warnings or failures. Maps each failed metric (LCP, CLS, INP, TBT, TTI) to its likely root causes and a specific remediation.",
+      "source_sha256": "a053f6bb2a8eb20b25f4169f1a78044a2852e38a5b810f8ee8e56679e2f0558b",
+      "source_path": "skills/vitals-diagnose/SKILL.md",
+      "package_sha256": "7075c53f100d8276cda0dd7984b13b6e8bb90683db92e2cf50f7c3a06ecf4884",
+      "source_package": "Web Vitals Auditor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02fa358740d5044c2aeab7d721473747b2986be9e792379c98bec6ac95638b2e": {
+      "description_zh": "按Google QRG审查抓取URL或粘贴文字HTML的页面目的、主要内容、E-E-A-T、声誉及垃圾内容等六类质量，输出S/A/B/C/D评级及Markdown报告，适用于博客、新闻、电商、信息站和论坛。",
+      "source": "Google Search Quality Rater Guidelines(QRG)를 기반으로 웹페이지의 품질을 검사하는 스킬. URL을 입력받아 web_fetch로 가져오거나, 사용자가 직접 붙여넣은 텍스트/HTML을 분석한다. 페이지 목적, MC 품질, E-E-A-T, 평판, 스팸 여부 등 6개 카테고리를 검사하여 종합 등급(S/A/B/C/D)과 마크다운 보고서를 생성한다. '사이트 품질 검사', 'PQ 평가', '페이지 품질 분석', 'website quality check', 'page quality rating', '이 사이트 괜찮아?', '이 페이지 품질 좀 봐줘', 'QRG 기준 검사', 'E-E-A-T 분석', '스팸 사이트인지 확인', '이 URL 검사해줘', 'Google 가이드라인 기준으로 평가' 같은 요청이 있을 때 반드시 사용한다. 블로그, 뉴스, 쇼핑몰, 정보성 사이트, 포럼 등 모든 웹페이지 유형에 적용 가능하다.",
+      "source_sha256": "02fa358740d5044c2aeab7d721473747b2986be9e792379c98bec6ac95638b2e",
+      "source_path": "skills/website-quality-checker/SKILL.md",
+      "package_sha256": "66262d4620ddb8b04c335a4f77453fe277f179a8be699f218f708aaec07b9eda",
+      "source_package": "website-quality-checker-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d046b6194171684967cbba09e768deaff274e84d8e3a7ad313787a7cb58c9b7c": {
+      "description_zh": "仅用户明确运行whatbreaks:approve时记录对BLOCK计划的执行决定，使terraform apply门禁放行，可用revoke撤销；不自行批准或绕过审查。",
+      "source": "Records the user's explicit decision to apply a plan whose review verdict was BLOCK, so the whatbreaks apply gate lets `terraform apply <plan-file>` through; `--revoke` removes it. Runs only when the user types /whatbreaks:approve. Never invoke this on your own initiative, to get past the apply gate, or because a plan looks fine.",
+      "source_sha256": "d046b6194171684967cbba09e768deaff274e84d8e3a7ad313787a7cb58c9b7c",
+      "source_path": "skills/approve/SKILL.md",
+      "package_sha256": "a7763d8978622b6edef3754e13343a13d406e84c62665b22b83c80b1efe38ef7",
+      "source_package": "WhatBreaks-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e959712cedbc5e2ab1baefd62ef743aa794d038215de03892b4ff37fb55f8ee2": {
+      "description_zh": "执行前用确定性分析器审查Terraform、OpenTofu或Terragrunt计划的销毁替换、公开暴露及删除保护、备份、IAM弱化，按严重性给修复；支持plan文本或带resource_changes的JSON，不用于无计划的HCL或锁错误。",
+      "source": "Risk review of a Terraform, OpenTofu, or Terragrunt plan before apply: what the apply will destroy, replace, expose to the internet, or weaken (deletion protection, backups, IAM), ranked by severity with a fix for each finding, using a bundled deterministic analyzer. Use when the user shares a plan as `terraform show -json` JSON (pasted or uploaded; it has `resource_changes`) or pasted `terraform plan` text (`Plan: N to add, N to change, N to destroy`, `must be replaced`, `forces replacement`), asks whether a plan is safe to apply, what it will do or what breaks, why a resource is being replaced or destroyed, or asks you to run `terraform apply` / `tofu apply` / `terragrunt apply` (review first). Not for writing or refactoring HCL, provider documentation questions, or init/validate/state-lock errors with no plan involved.",
+      "source_sha256": "e959712cedbc5e2ab1baefd62ef743aa794d038215de03892b4ff37fb55f8ee2",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "a7763d8978622b6edef3754e13343a13d406e84c62665b22b83c80b1efe38ef7",
+      "source_package": "WhatBreaks-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d6e4a7e805ec6b65ab97ccddf739f4a194c0f4f4d8d38544c7c9f77554520cc": {
+      "description_zh": "配置whats-new推荐功能的主动程度，选择introvert、coworker或that-friend模式。",
+      "source": "Set how aggressively whats-new suggests features. Choose introvert, coworker, or that-friend mode.",
+      "source_sha256": "9d6e4a7e805ec6b65ab97ccddf739f4a194c0f4f4d8d38544c7c9f77554520cc",
+      "source_path": "skills/configure/SKILL.md",
+      "package_sha256": "e619f5c5d41e06c298c2d413367ef69061bbda180188922a4ec9022589eaa78d",
+      "source_package": "whats-new-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9116b7690fa17772cfb5be9968d8622a70cf84d040aecc093cb2a4eae1b7e268": {
+      "description_zh": "按用户当前任务或工作流匹配合适的Claude Code功能。",
+      "source": "Find Claude Code features relevant to what you're working on. Describe your task or workflow and get matched with the best features to use.",
+      "source_sha256": "9116b7690fa17772cfb5be9968d8622a70cf84d040aecc093cb2a4eae1b7e268",
+      "source_path": "skills/discover/SKILL.md",
+      "package_sha256": "e619f5c5d41e06c298c2d413367ef69061bbda180188922a4ec9022589eaa78d",
+      "source_package": "whats-new-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3316c48e425825f38ccfb1caaf2b144336033c67cf7e9f71e7ec975b5c452de": {
+      "description_zh": "详细讲解每日功能或按名称指定的Claude Code功能。",
+      "source": "Get a detailed walkthrough of the feature of the day or any specific feature by name.",
+      "source_sha256": "b3316c48e425825f38ccfb1caaf2b144336033c67cf7e9f71e7ec975b5c452de",
+      "source_path": "skills/learn-more/SKILL.md",
+      "package_sha256": "e619f5c5d41e06c298c2d413367ef69061bbda180188922a4ec9022589eaa78d",
+      "source_package": "whats-new-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ff8f5ad7baf308d5bf1f03baea19adf3edfb870ff7f41c34ac1eefae374d2b2": {
+      "description_zh": "按分类、标签或状态浏览筛选Claude Code功能，概览可用能力。",
+      "source": "Browse and filter all Claude Code features by category, tag, or status. See what's available at a glance.",
+      "source_sha256": "3ff8f5ad7baf308d5bf1f03baea19adf3edfb870ff7f41c34ac1eefae374d2b2",
+      "source_path": "skills/list/SKILL.md",
+      "package_sha256": "e619f5c5d41e06c298c2d413367ef69061bbda180188922a4ec9022589eaa78d",
+      "source_package": "whats-new-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed1a78619b98d2604c226f259a194f37d3ce4b1a22d0e3abaafa81019a9eaa84": {
+      "description_zh": "随机选择Claude Code功能并以轻松对话方式解释，帮助发现未知功能。",
+      "source": "Get a random Claude Code feature explained in a fun, conversational way. Great for discovering features you didn't know existed.",
+      "source_sha256": "ed1a78619b98d2604c226f259a194f37d3ce4b1a22d0e3abaafa81019a9eaa84",
+      "source_path": "skills/surprise-me/SKILL.md",
+      "package_sha256": "e619f5c5d41e06c298c2d413367ef69061bbda180188922a4ec9022589eaa78d",
+      "source_package": "whats-new-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32040fe87f9f848e97edd8576a1cd81b6756d9a5e19453b8cdfc3aeb4e59d98b": {
+      "description_zh": "将自然语言数据问题转为SQL查询，例如上周注册用户或超过指定金额订单。",
+      "source": "Convert natural language questions into SQL queries. Activates when users ask data questions in plain English like \"show me users who signed up last week\" or \"find orders over $100\".",
+      "source_sha256": "32040fe87f9f848e97edd8576a1cd81b6756d9a5e19453b8cdfc3aeb4e59d98b",
+      "source_path": "skills/query-builder/SKILL.md",
+      "package_sha256": "2b593be86854e442c24b3fa9aa217be29b1dca325b930c8140864fcdf89d76c0",
+      "source_package": "whodb-0.127.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "023754a0997d8064465fb4aec0199039a5e1c1486078f83061f1ab3419d81415": {
+      "description_zh": "设计数据库schema、创建表并规划数据模型及关系。",
+      "source": "Help design database schemas, create tables, and plan data models. Activates when users ask to create tables, design schemas, or model data relationships.",
+      "source_sha256": "023754a0997d8064465fb4aec0199039a5e1c1486078f83061f1ab3419d81415",
+      "source_path": "skills/schema-designer/SKILL.md",
+      "package_sha256": "2b593be86854e442c24b3fa9aa217be29b1dca325b930c8140864fcdf89d76c0",
+      "source_package": "whodb-0.127.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c813f8e2ababd9a4865c1fe964173a98822945a706782fa87ca4b5779765fc65": {
+      "description_zh": "执行数据库查询、schema探索及数据分析，覆盖PostgreSQL、MySQL、MariaDB、TiDB、SQLite、MongoDB、Redis、Elasticsearch和ClickHouse。",
+      "source": "Database operations including querying, schema exploration, and data analysis. Activates for tasks involving PostgreSQL, MySQL, MariaDB, TiDB, SQLite, MongoDB, Redis, Elasticsearch, or ClickHouse databases.",
+      "source_sha256": "c813f8e2ababd9a4865c1fe964173a98822945a706782fa87ca4b5779765fc65",
+      "source_path": "skills/whodb/SKILL.md",
+      "package_sha256": "2b593be86854e442c24b3fa9aa217be29b1dca325b930c8140864fcdf89d76c0",
+      "source_package": "whodb-0.127.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0443cf686bbe75e1c4b729eb38f0d9f2b205140375a1a5102da13edcba3c5d60": {
+      "description_zh": "向wiki添加新来源，按需创建更新页面，并同步索引和日志。",
+      "source": "Add new sources to the wiki, creating and updating pages as needed. Always update the index and log.",
+      "source_sha256": "0443cf686bbe75e1c4b729eb38f0d9f2b205140375a1a5102da13edcba3c5d60",
+      "source_path": "skills/ingest/SKILL.md",
+      "package_sha256": "46b6bfd7be62b87e131d13840015b5b2aa47397c6266dd905f134304a34f2dbd",
+      "source_package": "wiki-wonka-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c5f976dd95982e8d9e352e962e528b762d16fc9fbe7e80652a0ca9d91b8f0e5": {
+      "description_zh": "扫描wiki结构、事实和导航问题，修复可处理项并标记无法处理项。",
+      "source": "Scan the wiki for structural, factual, and navigational problems — and fix what you can, flag what you cannot.",
+      "source_sha256": "0c5f976dd95982e8d9e352e962e528b762d16fc9fbe7e80652a0ca9d91b8f0e5",
+      "source_path": "skills/lint/SKILL.md",
+      "package_sha256": "46b6bfd7be62b87e131d13840015b5b2aa47397c6266dd905f134304a34f2dbd",
+      "source_package": "wiki-wonka-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd3da67617c453eaf30565ccef3d5ef06664cff09d0e8ada0c65569f54e6fcbb": {
+      "description_zh": "读取综合wiki信息回答问题，始终引用来源。",
+      "source": "Answer questions by reading and synthesizing information from the wiki. Always cite sources.",
+      "source_sha256": "bd3da67617c453eaf30565ccef3d5ef06664cff09d0e8ada0c65569f54e6fcbb",
+      "source_path": "skills/query/SKILL.md",
+      "package_sha256": "46b6bfd7be62b87e131d13840015b5b2aa47397c6266dd905f134304a34f2dbd",
+      "source_package": "wiki-wonka-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "609806e4320e28569a3116fc721b8598beefe7ea5ca637e96a06780a7e8cc8d6": {
+      "description_zh": "获取Wikipedia内容；原文称WebFetch会返回403，建议Bash curl替代，实际可用性需按环境验证。",
+      "source": "Use when fetching content from Wikipedia. WebFetch returns 403 on all Wikipedia URLs. Use curl via Bash instead.",
+      "source_sha256": "609806e4320e28569a3116fc721b8598beefe7ea5ca637e96a06780a7e8cc8d6",
+      "source_path": "skills/fetch/SKILL.md",
+      "package_sha256": "2e0b3b80cdabc49940772f18d7425606bea2c7e7670a5fe308b2b0ce2dfa743f",
+      "source_package": "wikipedia-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15f764fb5110c0c51e7a60e8af0dd96ecec39d94ae4f23857ea88bebda274b21": {
+      "description_zh": "为用户主动提供同事反馈提供背景及收集指导。",
+      "source": "Context and guidance for collecting user-initiated feedback about colleagues. Use when user wants to give feedback to a coworker.",
+      "source_sha256": "15f764fb5110c0c51e7a60e8af0dd96ecec39d94ae4f23857ea88bebda274b21",
+      "source_path": "skills/collect-feedback/SKILL.md",
+      "package_sha256": "0bc0ea82f27d12fea78213e9cd2c81f8c906b11e14821a21f40f623abce4845f",
+      "source_package": "Windmill HR-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5460c41fc1b07056624bdbd8b67bce6d3c53848827899f74a6e0c9d80988b592": {
+      "description_zh": "创建团队pulse短调查，收集团队反馈或情绪并设计提问。",
+      "source": "Context and guidance for creating pulse surveys. Use when user wants to create a new pulse, gather feedback or sentiment from their team, or asks to \"ask the team\" about something.",
+      "source_sha256": "5460c41fc1b07056624bdbd8b67bce6d3c53848827899f74a6e0c9d80988b592",
+      "source_path": "skills/create-pulse/SKILL.md",
+      "package_sha256": "0bc0ea82f27d12fea78213e9cd2c81f8c906b11e14821a21f40f623abce4845f",
+      "source_package": "Windmill HR-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "929d741e4e1fd2618796e99306c8b5a09ab7f9493d2743e2a251137f86e3a50d": {
+      "description_zh": "管理1对1议程、准备、笔记、行动项和历史，创建独立或日历关联记录，通过平台导入旧笔记、处理图像、更新共享页及日历事件。",
+      "source": "Context and guidance for managing 1:1 agendas, preparation, notes, action items, and history. Use when users want to create standalone or calendar-linked 1:1 records, import historical notes through the in-platform flow, work with images in 1:1 notes, update shared 1:1 notes pages, or work with 1:1 calendar events.",
+      "source_sha256": "929d741e4e1fd2618796e99306c8b5a09ab7f9493d2743e2a251137f86e3a50d",
+      "source_path": "skills/manage-1on1s/SKILL.md",
+      "package_sha256": "0bc0ea82f27d12fea78213e9cd2c81f8c906b11e14821a21f40f623abce4845f",
+      "source_package": "Windmill HR-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b06a34ea84375a5ff6526ff1d5d06893ad566fac5d044103bbafc6a48da8925": {
+      "description_zh": "为当前员工创建、读取、更新或删除关于同事的私人笔记。",
+      "source": "Context and guidance for managing private notes for the current employee. Use when users want to create, retrieve, update, or delete personal notes about colleagues.",
+      "source_sha256": "5b06a34ea84375a5ff6526ff1d5d06893ad566fac5d044103bbafc6a48da8925",
+      "source_path": "skills/manage-notes/SKILL.md",
+      "package_sha256": "0bc0ea82f27d12fea78213e9cd2c81f8c906b11e14821a21f40f623abce4845f",
+      "source_package": "Windmill HR-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d395e7f1fcacf30efb8fbdd931d48ae8ab0f7cd4bbea2f814bc1b59a5af4b27": {
+      "description_zh": "管理既有pulse调查，暂停恢复、立即发送或调度、提醒、修改参与者及查看结果。",
+      "source": "Context and guidance for managing existing pulses. Use when users want to pause, resume, send now, schedule, send nudges, update participants, or check on pulse results.",
+      "source_sha256": "6d395e7f1fcacf30efb8fbdd931d48ae8ab0f7cd4bbea2f814bc1b59a5af4b27",
+      "source_path": "skills/manage-pulse/SKILL.md",
+      "package_sha256": "0bc0ea82f27d12fea78213e9cd2c81f8c906b11e14821a21f40f623abce4845f",
+      "source_package": "Windmill HR-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39e224e66210fe4afe07cf4d835f69ec4a45c795a29be9d3e0b0b8e16240eea8": {
+      "description_zh": "查询公司通过Wingspan对承包商的应付、已付、未结及待批金额和具体付款历史，检查未付原因及争议。",
+      "source": "Look up what a company owes its contractors through Wingspan and what has happened to a particular payment. Use for \"what do we owe\", \"what did we pay last month\", \"how much is outstanding\", \"what is awaiting approval\", \"show me [name]'s payments\", \"what happened to this payment\", \"why has this not been paid yet\", \"has this been paid\", \"is this payment disputed\".",
+      "source_sha256": "39e224e66210fe4afe07cf4d835f69ec4a45c795a29be9d3e0b0b8e16240eea8",
+      "source_path": "skills/checking-payments/SKILL.md",
+      "package_sha256": "a8ec3eceacfc63238df49059c8e784fdf13621023ce19e6cb11f4404ddb75f76",
+      "source_package": "Wingspan-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0926498c42a67167ec9b66be1ea4b787f488a056c299b008f9784a405252ddb9": {
+      "description_zh": "检查Wingspan连接及当前登录身份，适用于安装或重新授权后核对正确账户。",
+      "source": "Check the Wingspan connection and report who it is signed in as. Run this after installing the plugin or after re-authorizing, or whenever you want to confirm Claude is reading the right Wingspan account.",
+      "source_sha256": "0926498c42a67167ec9b66be1ea4b787f488a056c299b008f9784a405252ddb9",
+      "source_path": "skills/connect/SKILL.md",
+      "package_sha256": "a8ec3eceacfc63238df49059c8e784fdf13621023ce19e6cb11f4404ddb75f76",
+      "source_package": "Wingspan-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89c890dd6ea71a58721c9b6d3c0961956697820747cf0b5aaa9b30dba9fbfc3f": {
+      "description_zh": "在Wingspan创建承包商应付草稿及新付款义务，可记录工时费用或关联engagement；不实际支付，写入公司账户前先预览。",
+      "source": "Create draft payables — new payment obligations to contractors — in Wingspan. Nothing is paid. Use for \"log a payment\", \"pay [name] $500 for [work]\", \"record these payments\", \"add these payments to the [engagement] engagement\", \"create payables\", \"log 12 hours at $85 for [name]\", \"bill this month's work\". Writes to the company's Wingspan account, so it always previews first.",
+      "source_sha256": "89c890dd6ea71a58721c9b6d3c0961956697820747cf0b5aaa9b30dba9fbfc3f",
+      "source_path": "skills/creating-draft-payables/SKILL.md",
+      "package_sha256": "a8ec3eceacfc63238df49059c8e784fdf13621023ce19e6cb11f4404ddb75f76",
+      "source_package": "Wingspan-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "697dcb4507e9b86c69e46ad500ccd513f6823dfb5162f2b160f01efe4dfb8b09": {
+      "description_zh": "查找筛选检查Wingspan承包商、参与项目和接入状态，盘点未完成注册、W-9或保险证明等材料。",
+      "source": "Find, filter and inspect the contractors a company pays through Wingspan, including who still has onboarding paperwork outstanding. Use for \"who do we pay\", \"list our contractors\", \"find [name]\", \"who has not signed up yet\", \"who is missing their W-9\", \"who is blocked by the certificate of insurance\", \"can we pay [name]\", \"what is [name]'s status\", \"who is on this engagement\".",
+      "source_sha256": "697dcb4507e9b86c69e46ad500ccd513f6823dfb5162f2b160f01efe4dfb8b09",
+      "source_path": "skills/finding-contractors/SKILL.md",
+      "package_sha256": "a8ec3eceacfc63238df49059c8e784fdf13621023ce19e6cb11f4404ddb75f76",
+      "source_package": "Wingspan-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1df8776b4122139c24489bcfb09b832abe480d4414ca38b37ef4359962cc321": {
+      "description_zh": "在Wingspan添加承包商、分配既有engagement并发邀请，写入公司账户前先预览。",
+      "source": "Add contractors to Wingspan, assign them to an existing engagement and send their invites. Use for \"add these contractors\", \"onboard these people\", \"invite [name] to Wingspan\", \"create contractor records\", \"set up these five contractors\", \"invite this roster\", \"add them to the [engagement] engagement\". Writes to the company's Wingspan account, so it always previews first.",
+      "source_sha256": "f1df8776b4122139c24489bcfb09b832abe480d4414ca38b37ef4359962cc321",
+      "source_path": "skills/onboarding-contractors/SKILL.md",
+      "package_sha256": "a8ec3eceacfc63238df49059c8e784fdf13621023ce19e6cb11f4404ddb75f76",
+      "source_package": "Wingspan-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7539438eec75f0f0a8203d0bae49371750cb96a56dc46e52769b295ff7e12da0": {
+      "description_zh": "按指定接入要求列出尚未完成W-9、保险证明或背景调查的承包商；只报告材料缺项，不确认付款是否因此受阻。",
+      "source": "List the contractors who have one named onboarding requirement outstanding, such as a W-9, a certificate of insurance or a background check. Run it with the requirement's name. It reports who has not finished the requirement; it does not confirm whose payments are blocked by it.",
+      "source_sha256": "7539438eec75f0f0a8203d0bae49371750cb96a56dc46e52769b295ff7e12da0",
+      "source_path": "skills/outstanding/SKILL.md",
+      "package_sha256": "a8ec3eceacfc63238df49059c8e784fdf13621023ce19e6cb11f4404ddb75f76",
+      "source_package": "Wingspan-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab58e562c181a3e44c28faa4996176148b60e516ce8b1c36c603cba7f8c1ec32": {
+      "description_zh": "诊断Wingspan认证权限、空结果及错误公司账户问题，核查连接有效性及承包商可见性。",
+      "source": "Diagnose Wingspan connection and permission problems. Use when a Wingspan tool returns an authentication or permission error, when the tools report nothing at all, when an answer looks like it came from the wrong company or the wrong account, or when someone asks \"am I connected to Wingspan\", \"is my login still valid\", \"why can't Claude see my contractors\", \"why is this empty\", \"these are not my contractors\".",
+      "source_sha256": "ab58e562c181a3e44c28faa4996176148b60e516ce8b1c36c603cba7f8c1ec32",
+      "source_path": "skills/troubleshooting-connection/SKILL.md",
+      "package_sha256": "a8ec3eceacfc63238df49059c8e784fdf13621023ce19e6cb11f4404ddb75f76",
+      "source_package": "Wingspan-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6154c612a4dba348d9afe8c41ab6e50d6c154604fb098922c944aa5177f7d428": {
+      "description_zh": "提供Wingspan工具共同ID、分页、写入预览及能力边界规则，覆盖承包商、应付、接入材料、邀请、发票付款查询或管理。",
+      "source": "The shared rules every Wingspan tool call follows: ids, paging, previewing a write, and what the tools cannot do. Load this before any Wingspan tool call, and whenever someone asks about the people they pay through Wingspan, what they owe, onboarding paperwork, invites, invoices or payments — for example \"who do we pay\", \"what do we owe this month\", \"is this contractor ready to be paid\", \"add these contractors\", \"log a payment\", \"why has this not been paid\".",
+      "source_sha256": "6154c612a4dba348d9afe8c41ab6e50d6c154604fb098922c944aa5177f7d428",
+      "source_path": "skills/using-wingspan-tools/SKILL.md",
+      "package_sha256": "a8ec3eceacfc63238df49059c8e784fdf13621023ce19e6cb11f4404ddb75f76",
+      "source_package": "Wingspan-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7614d7b138f76a6bf7c6114693d2eb92b14a5f5f156fc730d76b7b0a11c7c491": {
+      "description_zh": "从源材料或初步方向提炼一个经检验的核心洞察，提供可起草内容的角度、细节及边界。",
+      "source": "Develop one tested core insight from source material or a bare direction, with the angles, specifics, and boundaries a piece can be drafted from",
+      "source_sha256": "7614d7b138f76a6bf7c6114693d2eb92b14a5f5f156fc730d76b7b0a11c7c491",
+      "source_path": "skills/Build Concepts/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f745927eb5e4fe978bee69a383fb6a7f775d89161164ae9d499b8e72a0f44beb": {
+      "description_zh": "根据真实写作证据构建或重建指定用户根目录的voice.md，匹配该目录输出所需语域。",
+      "source": "Build or rebuild one user root's voice.md from real writing evidence, routed to the voice register that root's own outputs need",
+      "source_sha256": "f745927eb5e4fe978bee69a383fb6a7f775d89161164ae9d499b8e72a0f44beb",
+      "source_path": "skills/Build Voice/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d4abfd4bd7dd1f93c3f4ecc89906c853d084afdd5d23cad79039d118f7bc65b": {
+      "description_zh": "将源材料归纳为最少主题，每项对应实践者可执行行动及使行动有新意的洞察。",
+      "source": "Reduce source material to a minimal set of themes, each an action a practitioner can take and the insight that makes that action non-obvious",
+      "source_sha256": "1d4abfd4bd7dd1f93c3f4ecc89906c853d084afdd5d23cad79039d118f7bc65b",
+      "source_path": "skills/Categorize Content/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d9336291a355c7760392ab42bb15096f55a95280e3c56fadd95dc2f01801e43": {
+      "description_zh": "在合成根目录对分类器开关做成对盲评运行，判断是否改善一个场景或基础能力，报告运行、成本和噪声，不发布任何内容。",
+      "source": "Test whether the classifier improves one use case or one primitive, by paired runs with it on and off on a synthetic root scored blind, and return a verdict with its runs, cost and noise that releases nothing",
+      "source_sha256": "7d9336291a355c7760392ab42bb15096f55a95280e3c56fadd95dc2f01801e43",
+      "source_path": "skills/Classifier Trial/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79d177fa150f75a69954a366dd33dcac2deb719972d3c33c047827d06e14dc06": {
+      "description_zh": "管理Cloudflare Pages项目和部署，支持列出获取、创建删项目、增删域名及部署site/dist，每次写入要求确认。",
+      "source": "List and get a Cloudflare Pages project, list its deployments, create a project, add or remove a domain, delete a project, and deploy the kit site/dist/ payload, with confirmation on every write",
+      "source_sha256": "79d177fa150f75a69954a366dd33dcac2deb719972d3c33c047827d06e14dc06",
+      "source_path": "skills/Cloudflare Pages/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6687b4506e48e9c11f27ba31127de3bd03086853bb22b76ec4ed822cccadefa1": {
+      "description_zh": "根据品牌背景生成定义角色的完整OKLCH配色，验证WCAG对比度，可选暗色模式，以CSS自定义属性交付。",
+      "source": "Produce a complete OKLCH color palette with defined roles, WCAG-validated contrast, and optional dark mode, derived from brand context and delivered as CSS custom properties",
+      "source_sha256": "6687b4506e48e9c11f27ba31127de3bd03086853bb22b76ec4ed822cccadefa1",
+      "source_path": "skills/Color Palette Design/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb5507c8766f3f2a12d312b57d52612936ca5613273330fed195e39719c331e4": {
+      "description_zh": "将单一UI组件设计为自包含可渲染HTML/CSS，涵盖适用状态、语义标记及设计令牌。",
+      "source": "Design a single UI component as self-contained, renderable HTML and CSS with every applicable state, semantic markup, and design tokens",
+      "source_sha256": "cb5507c8766f3f2a12d312b57d52612936ca5613273330fed195e39719c331e4",
+      "source_path": "skills/Component Design/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3439f21ef9e655b589ccda2d3b21db6f092b0a04a72bc3e7eb82d6b65e9d32ee": {
+      "description_zh": "在单独人工交互轮次通过start_connect及connect_status连接一个服务模块，不在会话接收密钥。",
+      "source": "Connect one service module in its own human turn through start_connect then connect_status, never taking a key in the conversation",
+      "source_sha256": "3439f21ef9e655b589ccda2d3b21db6f092b0a04a72bc3e7eb82d6b65e9d32ee",
+      "source_path": "skills/Connect Account/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "293673842ed46b5a700e2ac83c17ae3aab703135512ddc39b87c2edced6cc9e0": {
+      "description_zh": "针对网关状态或审计行给出一个下一步，处理缺提供商、连接过期拒绝、缺连接器、供应商错误、订阅及未完成拆除。",
+      "source": "Name one next step for a gateway status object or audit line covering needs_provider, needs_connect, expired, denied, needs_connector, vendor_error, needs_subscription, and a teardown that did not finish",
+      "source_sha256": "293673842ed46b5a700e2ac83c17ae3aab703135512ddc39b87c2edced6cc9e0",
+      "source_path": "skills/Connection Troubleshooter/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef5223904d7550e29673783f3611b90988b18bc8b72d388c91a4db60cc40d098": {
+      "description_zh": "根据已批准Connector Advisor计划构建连接器，交付manifest、模块、认证指南、测试及网关加载说明。",
+      "source": "Build a connector from an approved Connector Advisor plan, with its manifest, module, auth guide, tests, and gateway loading instructions",
+      "source_sha256": "ef5223904d7550e29673783f3611b90988b18bc8b72d388c91a4db60cc40d098",
+      "source_path": "skills/Connector Author/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10bd2574ef3ea066f92d63f8cf46ab5e53a03820e845a5d97a8152644ab0ba4c": {
+      "description_zh": "按所属根目录绑定的写作声音为人类读者撰写或审查文章内容。",
+      "source": "Write or review prose content for human readers in the owning root's bound voice",
+      "source_sha256": "10bd2574ef3ea066f92d63f8cf46ab5e53a03820e845a5d97a8152644ab0ba4c",
+      "source_path": "skills/Content Author/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a8bdef9f187c86fc95c8179c9fcb648399c26d3191d1c0594b032ec83ee833d": {
+      "description_zh": "创建带叙事结构、结论式标题及品牌一致设计的单文件reveal.js HTML幻灯片。",
+      "source": "Build a single-file reveal.js HTML slide deck with a narrative arc, conclusion headlines, and brand-consistent design",
+      "source_sha256": "7a8bdef9f187c86fc95c8179c9fcb648399c26d3191d1c0594b032ec83ee833d",
+      "source_path": "skills/Create Presentation/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c363119f30ff85236130b28e580bcae8bb45cb2a4fdb532490f0e731c2f5fec1": {
+      "description_zh": "把CSV、JSON或TSV转为所有数字均由数据工具计算且可追溯源字段的分析，说明解析错误、跳过列及缺失值。",
+      "source": "Turn a CSV, JSON, or TSV file into an analysis whose every figure was computed by a data tool and can be traced to the field it came from, with parse errors, skipped columns, and missing values stated",
+      "source_sha256": "c363119f30ff85236130b28e580bcae8bb45cb2a4fdb532490f0e731c2f5fec1",
+      "source_path": "skills/Data Analysis/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71ef70bdee1d94510f258df5894ac1aca4d13a06a7db2cee1e169c48f778f0ca": {
+      "description_zh": "端到端拆解研究问题并调用对应研究技能，将结果解释成附来源、校准置信度及未解决矛盾的报告。",
+      "source": "Run Deep Research on a question end to end, decomposing it into angles, directing each to the research skill that gathers it, and interpreting what comes back into a report where every finding carries its sources, a calibrated confidence level, and the contradictions it did not resolve",
+      "source_sha256": "71ef70bdee1d94510f258df5894ac1aca4d13a06a7db2cee1e169c48f778f0ca",
+      "source_path": "skills/Deep Research/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac1acbb68e9558e9c0e75e3578d0d778e3ae6c2b7fadafc89fb73fcc04df679d": {
+      "description_zh": "把既有色彩字体令牌组合成完整设计系统，交付智能体可读规范、统一CSS令牌及可选Tailwind配置。",
+      "source": "Compose existing color and type tokens into a complete design system, delivered as an agent-readable specification, a combined CSS token file, and optional Tailwind configuration",
+      "source_sha256": "ac1acbb68e9558e9c0e75e3578d0d778e3ae6c2b7fadafc89fb73fcc04df679d",
+      "source_path": "skills/Design System/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "527f65e2bb452a3191ff482b5862f357cd548d8ac7094a448bfb5593af2ba924": {
+      "description_zh": "统筹从简报视觉方向、基础、组合到验证的设计，生成线框、风格指南或提取的设计系统，并将各阶段交给相应技能。",
+      "source": "Run a design job end to end, from brief and visual direction through foundations, composition, and validation, producing the wireframe, style guide, or extracted system itself and directing every other phase to the design skill that owns it",
+      "source_sha256": "527f65e2bb452a3191ff482b5862f357cd548d8ac7094a448bfb5593af2ba924",
+      "source_path": "skills/Designer/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72eda198cd7934c16ffb53c9c78a6ce97af79e0ffd83eaadaa6a7d2b6e55a029": {
+      "description_zh": "收集研究来源并标记可信度、揭示矛盾，为调用方返回证据包，或给直接用户经核验且标注置信度的简报。",
+      "source": "Gather and credibility-tag sources on a question, surfacing contradictions, returning an evidence package to a calling expert or skill or a verified, confidence-rated brief to a user asking directly",
+      "source_sha256": "72eda198cd7934c16ffb53c9c78a6ce97af79e0ffd83eaadaa6a7d2b6e55a029",
+      "source_path": "skills/External Research/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6bb4b188b2b4de852407d460885c48d4b2f7398a31b00370d90bf814989c022d": {
+      "description_zh": "设计可实施营销漏斗蓝图，说明类型选择、逐阶段页面、邮件序列及带基准的阶段指标。",
+      "source": "Design a buildable funnel blueprint with the funnel type chosen and reasoned, every stage and page specified, the email sequences that carry them, and per-stage metrics with benchmarks",
+      "source_sha256": "6bb4b188b2b4de852407d460885c48d4b2f7398a31b00370d90bf814989c022d",
+      "source_path": "skills/Funnel Design/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c712dd4a8edf2d6d4a57a6870d402c604af0d808d76f0a43bfb01358bb1d0eab": {
+      "description_zh": "将照片去背景并按眼睛位置测量裁切为人脸同尺寸同位置的正方形透明PNG，报告原图高度不足留下的透明带。",
+      "source": "Turn photographs into square transparent PNGs whose faces sit at the same size and the same place in the frame, by removing each background, measuring the eyes, and cutting every frame to one standard, reporting the transparent band left where a photograph is too short to fill its frame.",
+      "source_sha256": "c712dd4a8edf2d6d4a57a6870d402c604af0d808d76f0a43bfb01358bb1d0eab",
+      "source_path": "skills/Headshot Normalizer/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef809d3aefaad8fe62b5f8dae762965c86b810b2cdf8ae54cfd28fb1ee4bbdf2": {
+      "description_zh": "提出引用规范条款的目录布局计划，经批准后执行并验证恢复，使指定根目录符合当前布局规范。",
+      "source": "Propose a clause-cited layout plan and apply its approved transaction with verified recovery, serving as the layout engine callable any time to bring a declared root up to current layout specs",
+      "source_sha256": "ef809d3aefaad8fe62b5f8dae762965c86b810b2cdf8ae54cfd28fb1ee4bbdf2",
+      "source_path": "skills/Housekeeping/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc016efec3448b9579d43f1b7c75d8952cc7d123348b2462fb65d8719b30e28a": {
+      "description_zh": "扫描工作区某主题文件，返回已有内容的结构清单，不评价其内容。",
+      "source": "Scan the workspace for files on a topic and return a structural inventory of what exists, judging none of it",
+      "source_sha256": "cc016efec3448b9579d43f1b7c75d8952cc7d123348b2462fb65d8719b30e28a",
+      "source_path": "skills/Internal Research/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c2c208fbe6ae89f49ac2aa635a8dced2b8e6279fb0c0f43da4ae173a9d272ce": {
+      "description_zh": "通过来源更新、wiki检查或数据库审查、人工决策、可复现重建及支持的后端升级维护既有知识集准确性。",
+      "source": "Keep an existing knowledge set accurate through source updates, wiki lint or databased review, human decisions, reproducible rebuilds, and supported backend upgrades",
+      "source_sha256": "2c2c208fbe6ae89f49ac2aa635a8dced2b8e6279fb0c0f43da4ae173a9d272ce",
+      "source_path": "skills/Knowledge Curation/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69fe0ade9866582183475f09aa8ad784ebb37ed51d0958feca34a96c4b88a45d": {
+      "description_zh": "分析工作区已有文件，按主题组织观点形成知识地图，每项追溯来源文件及段落。",
+      "source": "Analyze a workspace's existing files and produce a Knowledge Map that groups their ideas by topic, each traced to its source file and section",
+      "source_sha256": "69fe0ade9866582183475f09aa8ad784ebb37ed51d0958feca34a96c4b88a45d",
+      "source_path": "skills/Knowledge Map/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9f55aa7af61a21abdcdb9d0b63cc9ca385fe290bbc90cb68d89a957c2264e87": {
+      "description_zh": "仅根据指定知识集回答，提供支持引文来源并逐项标注证据，未覆盖内容明确为Not available。",
+      "source": "Answer a question from one named knowledge set, scoped to that set alone, with the quotes and sources the answer rests on and an evidence label on every claim, saying Not available when the set does not cover it",
+      "source_sha256": "f9f55aa7af61a21abdcdb9d0b63cc9ca385fe290bbc90cb68d89a957c2264e87",
+      "source_path": "skills/Knowledge Recall/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b4fb3ff668425ac2f88ef9ae304b2b9c4a2ff3aea73e3b7f933ca4069245b31": {
+      "description_zh": "从获准来源建立具名知识集，编译所选后端，核对保留知识的可定位来源并记录检查及收尾强度。",
+      "source": "Create a named knowledge set from permitted sources, compile its chosen backend, confirm kept knowledge with located provenance, and record the checks and close intensity that ran",
+      "source_sha256": "8b4fb3ff668425ac2f88ef9ae304b2b9c4a2ff3aea73e3b7f933ca4069245b31",
+      "source_path": "skills/Knowledge Set Onboarding/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9bb04ccce28d5d6c4fb56fe9411496eb693a47b03e73affbdc6b03f20682a449": {
+      "description_zh": "用usebouncer验证邮件联系人保留移除，费用支出前由用户决定，每次移除追溯导致该决定的结果字段。",
+      "source": "Decide what an email contact list keeps and drops, verified through the usebouncer connector, with the cost put to the user before it is spent and every drop traced to the result field that caused it.",
+      "source_sha256": "9bb04ccce28d5d6c4fb56fe9411496eb693a47b03e73affbdc6b03f20682a449",
+      "source_path": "skills/List Hygiene/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65f019adb469ac4c666b2c3ec3fbcdd5bbbf9ac28a74785166bd9d288f506e3b": {
+      "description_zh": "设计完整响应式HTML营销页，具滚动叙事、清晰视觉层级及一个主要行动。",
+      "source": "Design a complete marketing page as responsive HTML with a narrative scroll arc, clear visual hierarchy, and one primary action",
+      "source_sha256": "65f019adb469ac4c666b2c3ec3fbcdd5bbbf9ac28a74785166bd9d288f506e3b",
+      "source_path": "skills/Marketing Page Design/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6497e9aeacef7d6cbf6354be6fc566e60bbeff4134cd565f322978ae23c75659": {
+      "description_zh": "完善提示、选模型并通过计费生成连接器生成新图像视频或去背景照片，输出到用户指定文件。",
+      "source": "Produce an image or a video that does not exist yet, or a photograph with its background removed, by finishing the prompt, choosing the model, and running the billed generation through a generation connector to a file the user named.",
+      "source_sha256": "6497e9aeacef7d6cbf6354be6fc566e60bbeff4134cd565f322978ae23c75659",
+      "source_path": "skills/Media Generator/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9a9f64858047ac71995c27f43a296bc5b8af12d86de219630f42dae64d9ec6c": {
+      "description_zh": "在wiser旁创建领域插件或接管占位仓库为正式插件布局，生成约章、技能家族及目录，逐条评分并在根目录记录待人工决定边界。",
+      "source": "Create a domain plugin beside wiser or adopt a placeholder repository into declared plugin layout, producing its constitution, families and catalog, scored clause by clause, and closed by writing every boundary still owed to a person into the root itself",
+      "source_sha256": "f9a9f64858047ac71995c27f43a296bc5b8af12d86de219630f42dae64d9ec6c",
+      "source_path": "skills/Onboard Plugin Root/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8ee276c5a297f7e51a53ffa301fc722ca5c47bcbf6765a52663185f075be5fc": {
+      "description_zh": "用统一模板创建用户根目录、接管已有文件夹或升级到现行规范，仅补缺失分类架、身份及记忆工作，区分个人简短流程与其他类型完整流程。",
+      "source": "Create a user root from the unified template, adopt a populated folder, or bring an existing folder, declared or not, up to current specs by running only missing shelves, identity, and memory work, with a personal short path and a full path for other types",
+      "source_sha256": "c8ee276c5a297f7e51a53ffa301fc722ca5c47bcbf6765a52663185f075be5fc",
+      "source_path": "skills/Onboard Root/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eecb7ecadb04d1b3c5475a3db1568b1774eab870c4becf3b9f3aa8976e9de66c": {
+      "description_zh": "撰写审查Plays、基础指令正文及库组件。",
+      "source": "Write or review Plays, primitive instruction bodies, and library components",
+      "source_sha256": "eecb7ecadb04d1b3c5475a3db1568b1774eab870c4becf3b9f3aa8976e9de66c",
+      "source_path": "skills/Play Author/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b53b877f5acc7ca334b2e8b6ccdfdb4bf9f31eae98b40cc14866d88a306b4ab6": {
+      "description_zh": "为跨会话工作创建、实例化、恢复、审查、交接或关闭WISER Playbook。",
+      "source": "Create, instantiate, resume, review, hand off at a session's end, or close out a WISER Playbook for work that spans sessions",
+      "source_sha256": "b53b877f5acc7ca334b2e8b6ccdfdb4bf9f31eae98b40cc14866d88a306b4ab6",
+      "source_path": "skills/Playbook Author/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "303e156144d004eb07c957457487a66ed20749b85f73e8c58698d10336406ccb": {
+      "description_zh": "通过需求发现建立可复用基础提案，再按所属根目录声音及分层说服结构生成面向不同受众的提案。",
+      "source": "Build a reusable base proposal through discovery, then generate audience-specific proposals through layered persuasion in the owning root's voice",
+      "source_sha256": "303e156144d004eb07c957457487a66ed20749b85f73e8c58698d10336406ccb",
+      "source_path": "skills/Proposal Author/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f17d627da38503eec6dcaad13351e34d44767fd62c3e6860e29f512c6f900300": {
+      "description_zh": "依据已确定网站搜索改动和各自证据标准生成可用SEO资产，写入site工具包目录或交由他人部署。",
+      "source": "Produce the ready-to-use artifacts a site's decided search changes need, each built from evidence pulled for it, held to its own standards, and written into an envelope's site/ kit tree or handed over for someone else to deploy",
+      "source_sha256": "f17d627da38503eec6dcaad13351e34d44767fd62c3e6860e29f512c6f900300",
+      "source_path": "skills/SEO Assets/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
