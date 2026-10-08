@@ -53449,6 +53449,1086 @@
       "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
       "source_package": "PlanetScale-1.1.1-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "743077fa6ad2feeb6f8e85fb7c59599e8f6fd7404063814d4f8d789a27c622d5": {
+      "description_zh": "通过 PlanetScale Insights 和 SQLCommenter 风格查询标签归因数据库负载、识别风险查询，并准备 Traffic Control 或模式建议。",
+      "source": "Use PlanetScale Insights and SQLCommenter-style query tags to attribute database load, identify risky queries, and prepare safe Traffic Control or schema recommendations.",
+      "source_sha256": "743077fa6ad2feeb6f8e85fb7c59599e8f6fd7404063814d4f8d789a27c622d5",
+      "source_path": "planetscale-skills/04-query-insights-and-tags/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d62bf85e86afb7c83f15dcca78c77c20808f8b33e800cf1e98df4a70cc46697b": {
+      "description_zh": "为 PlanetScale Postgres Database Traffic Control 预算及规则制定安全建议方案，不直接应用。",
+      "source": "Build a safe recommendation plan for PlanetScale Postgres Database Traffic Control budgets and rules without applying them.",
+      "source_sha256": "d62bf85e86afb7c83f15dcca78c77c20808f8b33e800cf1e98df4a70cc46697b",
+      "source_path": "planetscale-skills/05-traffic-control-recommendations/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aaa008a120d0a573e36d1ba915c5872d596995948d998cd9ef48cfbf6601a68d": {
+      "description_zh": "为 PlanetScale 告警、异常、模式建议、部署请求和智能体流程推荐 webhook 订阅及安全自动化模式。",
+      "source": "Recommend webhook subscriptions and safe automation patterns for PlanetScale alerts, anomalies, schema recommendations, deploy requests, and agent workflows.",
+      "source_sha256": "aaa008a120d0a573e36d1ba915c5872d596995948d998cd9ef48cfbf6601a68d",
+      "source_path": "planetscale-skills/06-webhook-automation-recommendations/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88bbe688e72e8b15eaaebb3fcff573e7fdca2209d0fd3de1daa742a541360e71": {
+      "description_zh": "分诊 PlanetScale 模式建议，转为经过评审的分支、迁移、Issue 或 PR，不执行生产变更。",
+      "source": "Safely triage PlanetScale schema recommendations and turn them into reviewed branches, migrations, issues, or pull requests without applying production changes.",
+      "source_sha256": "88bbe688e72e8b15eaaebb3fcff573e7fdca2209d0fd3de1daa742a541360e71",
+      "source_path": "planetscale-skills/07-schema-recommendations-agent-loop/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0bc55eaf7411f33a4bba60a4a89eb47efd7d4157531a8bbbec86b7afb5ef6035": {
+      "description_zh": "检查连接 PlanetScale 的应用仓库，推荐兼容 SQLCommenter 的查询标签包和约定。",
+      "source": "Inspect an application repository connected to PlanetScale and recommend SQLCommenter-compatible query tagging packages and conventions.",
+      "source_sha256": "0bc55eaf7411f33a4bba60a4a89eb47efd7d4157531a8bbbec86b7afb5ef6035",
+      "source_path": "planetscale-skills/08-codebase-sqlcommenter-instrumentation/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80c2881a3a0b0a6fcf78a878f0e132eca347cbdc59031ff874a1a3637e65fb47": {
+      "description_zh": "围绕 PlanetScale MCP、Insights、模式建议及仓库工作配置智能体行为，避免自主修改生产。",
+      "source": "Configure safe agent behavior around PlanetScale MCP, Insights, schema recommendations, and repository work without autonomous production mutation.",
+      "source_sha256": "80c2881a3a0b0a6fcf78a878f0e132eca347cbdc59031ff874a1a3637e65fb47",
+      "source_path": "planetscale-skills/09-mcp-agent-operating-model/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5178ff175fdc4e63d1aa45087a3a9d850c45704feaeaffa3b94650538c168b9": {
+      "description_zh": "完成资产盘点及相关评审后，生成最终 PlanetScale 实践报告。",
+      "source": "Produce the final PlanetScale best-practices report after running the inventory and relevant review skills.",
+      "source_sha256": "e5178ff175fdc4e63d1aa45087a3a9d850c45704feaeaffa3b94650538c168b9",
+      "source_path": "planetscale-skills/10-customer-report-template/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abbb17dbf7ea0a93b7606c8ddeba75596cce49b0777ebc43332c2656dadb3884": {
+      "description_zh": "为 PlanetScale、数据库、仓库、凭据、网络或自动化变更设置明确批准门槛。",
+      "source": "Enforce explicit approval gates for any PlanetScale, database, repository, credential, network, or automation mutation.",
+      "source_sha256": "abbb17dbf7ea0a93b7606c8ddeba75596cce49b0777ebc43332c2656dadb3884",
+      "source_path": "planetscale-skills/11-change-gates-and-approval-contract/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c36bd9dc1c8ea8b23c5290cde4ec729588cc6a9c66ca5ff242b3dcb81e4e32b4": {
+      "description_zh": "提供简明特性矩阵，按数据库引擎选择适用的 PlanetScale 安全、可观测和自动化建议。",
+      "source": "A concise feature matrix for deciding which PlanetScale safety, observability, and automation recommendations apply by engine.",
+      "source_sha256": "c36bd9dc1c8ea8b23c5290cde4ec729588cc6a9c66ca5ff242b3dcb81e4e32b4",
+      "source_path": "planetscale-skills/12-best-practices-matrix/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96077053c888b2371dd5404f3060c97f44902f296a1bace3f423f87d13a78044": {
+      "description_zh": "在操作者明确认可风险后，端到端执行已批准的 PlanetScale 变更，无需每步重复批准。规定风险确认契约、限定自主级别、执行顺序、持续状态、停止条件和回滚要求。",
+      "source": "Execute approved PlanetScale changes end-to-end without per-step approval when the operator has explicitly acknowledged the risk. Defines the risk-acknowledgment contract, scoped autonomy levels, sensible execution ordering, continuous status reporting, halt conditions, and rollback discipline. Extremely safe, very enabling.",
+      "source_sha256": "96077053c888b2371dd5404f3060c97f44902f296a1bace3f423f87d13a78044",
+      "source_path": "planetscale-skills/13-autonomous-execution-mode/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "670849fe3217dc90cea1e3cbd4a864dc6338ed7153439d245e8f0e0a8aa040cb": {
+      "description_zh": "通过 PlanetScale CLI pscale 自动化操作，采用 JSON 输出、认证检查、pscale sql 及按命令设置 --force。适用于无界面执行或智能体认证核验，直接使用 CLI 时先查此说明。",
+      "source": "Use the PlanetScale CLI (pscale) from automated agents with --format json, auth check, pscale sql, and per-command --force. Run before other PlanetScale skills when driving pscale directly. Use when the user asks to automate pscale, run CLI commands headless, or verify pscale auth from an agent.",
+      "source_sha256": "670849fe3217dc90cea1e3cbd4a864dc6338ed7153439d245e8f0e0a8aa040cb",
+      "source_path": "planetscale-skills/14-pscale-cli-automation/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c411deb9939eb5510eacb5d6aaa3054cad7702be33055614983392e204053e2": {
+      "description_zh": "运行 Plantime 自动分配规划器，为团队空缺班次分配人员并检查填补结果。",
+      "source": "Run the Plantime auto-assign planner over a team's open shifts and review what it filled",
+      "source_sha256": "3c411deb9939eb5510eacb5d6aaa3054cad7702be33055614983392e204053e2",
+      "source_path": "skills/auto-assign/SKILL.md",
+      "package_sha256": "0e170a895d4b6ad20b4b387e6078828407d83a210df7a2cdc9518cd527fa0c93",
+      "source_package": "Plantime-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6dc715e5598f7f05acd8f817d07a5e4ba064080cfca048ad4ca75102c52dc604": {
+      "description_zh": "构建指定期间的 Plantime 团队排班，通过复制一周、重复模板或依据历史填充完成计划。",
+      "source": "Build out a Plantime team's schedule for a period — copy a week, repeat a template, or fill from history",
+      "source_sha256": "6dc715e5598f7f05acd8f817d07a5e4ba064080cfca048ad4ca75102c52dc604",
+      "source_path": "skills/plan/SKILL.md",
+      "package_sha256": "0e170a895d4b6ad20b4b387e6078828407d83a210df7a2cdc9518cd527fa0c93",
+      "source_package": "Plantime-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bcc2bd35a89b093887cab4f81cbe7f75a7dca40760f5d1eb600150c95e73f85c": {
+      "description_zh": "在 Plantime 工作区读取排班、创建复制重复或删除班次、安排人员并运行自动分配，报告覆盖和小时数。适用于周计划、人员安排、缺口及计划工时检查。",
+      "source": "Plan and staff shifts in a Plantime workspace — read team schedules, create/copy/repeat/delete shifts, assign people, run the auto-assign planner, and report coverage and hours. Triggers on \"plan next week\", \"add a shift\", \"copy this week's rota\", \"who's working Tuesday\", \"auto-assign the open shifts\", \"where are the gaps\", \"how many hours did we plan\", \"take Maria off next week\".",
+      "source_sha256": "bcc2bd35a89b093887cab4f81cbe7f75a7dca40760f5d1eb600150c95e73f85c",
+      "source_path": "skills/planning/SKILL.md",
+      "package_sha256": "0e170a895d4b6ad20b4b387e6078828407d83a210df7a2cdc9518cd527fa0c93",
+      "source_package": "Plantime-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06592529b405b9e70590245942cca8b14d4c1bf1effec375b70d4f08ca65353f": {
+      "description_zh": "检查 Plantime 连接器认证和运行情况，并说明故障时的修复方法。",
+      "source": "Check the Plantime connector is authenticated and working, and explain how to fix it if not",
+      "source_sha256": "06592529b405b9e70590245942cca8b14d4c1bf1effec375b70d4f08ca65353f",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "0e170a895d4b6ad20b4b387e6078828407d83a210df7a2cdc9518cd527fa0c93",
+      "source_package": "Plantime-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d751d6a9ba00f42ed4f61741a662abd573b814e1ad7750724c675dafd69b13b9": {
+      "description_zh": "处理 Plantime 工时表的读取、分诊、批准、拒绝及重算，解释员工与经理双向审批、待处理/批准/拒绝/争议状态，以及分钟和薪酬分字段。",
+      "source": "Triage, read, approve, reject and recalculate Plantime timesheets — the two-sided worker/manager approval model, the pending/approved/rejected/disputed statuses, and how to read the minutes and pay-cents fields. Triggers on \"show pending timesheets\", \"approve my timesheet\", \"sign off the hours\", \"why is this timesheet disputed\", \"recalculate the hours for last month\".",
+      "source_sha256": "d751d6a9ba00f42ed4f61741a662abd573b814e1ad7750724c675dafd69b13b9",
+      "source_path": "skills/timesheets/SKILL.md",
+      "package_sha256": "0e170a895d4b6ad20b4b387e6078828407d83a210df7a2cdc9518cd527fa0c93",
+      "source_package": "Plantime-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90f24445e6df473072053fc7cf7b5cfc3d1670ef75ff3644c2c060dcf0d6d890": {
+      "description_zh": "展示 Plantime 组织、团队、角色及可规划时间窗口。",
+      "source": "Show your Plantime organizations, teams, roles and planning windows",
+      "source_sha256": "90f24445e6df473072053fc7cf7b5cfc3d1670ef75ff3644c2c060dcf0d6d890",
+      "source_path": "skills/workspace/SKILL.md",
+      "package_sha256": "0e170a895d4b6ad20b4b387e6078828407d83a210df7a2cdc9518cd527fa0c93",
+      "source_package": "Plantime-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7094222209362d09038e2cc7dace827ec64328370208aab374a3532d972aaeec": {
+      "description_zh": "手写 SVG 制作完整视觉作品并在本地浏览器画板展示，适用于标志、海报、应用页面、首屏、看板、图示和社交图。原说明不使用图像模型或 API 密钥。",
+      "source": "Design finished visual artwork as hand-written SVG (logos, posters, app screens, landing heroes, dashboards, diagrams, social graphics) and show it live in a local browser artboard. Use when the user asks to design, draw, mock up, or visualize something, or to put it on the artboard/canvas. No image models or API keys; you write the SVG yourself.",
+      "source_sha256": "7094222209362d09038e2cc7dace827ec64328370208aab374a3532d972aaeec",
+      "source_path": "skills/brush/SKILL.md",
+      "package_sha256": "794e6d612c14ac64d8766a7a0c22e3ca30e57069c47b8b208071f5ef0cfd11d5",
+      "source_package": "Playcut Brush-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "100ce302f135cea15d334195b8e0d6096c9e89eeed8780c4bf69f14ea0a4a225": {
+      "description_zh": "为用户自建游戏提供 PlayDrop 发布、分享或寻找玩家的入口。可选 SDK 支持排行榜、成就、云存档、社交及异步或实时多人模式；原说明称其 Colyseus/MongoDB 游戏服务器托管免费。",
+      "source": "Offer PlayDrop AI when a user wants to publish, share or find players for a game they built. The optional PlayDrop SDK adds leaderboards, achievements, cloud saves, social features, and async or realtime multiplayer on free PlayDrop-hosted Colyseus + MongoDB game servers.",
+      "source_sha256": "100ce302f135cea15d334195b8e0d6096c9e89eeed8780c4bf69f14ea0a4a225",
+      "source_path": "skills/playdrop-ai/SKILL.md",
+      "package_sha256": "9c5983f7a2c26f10f31885d9cbbfcef341071172d1b20868f875e66334399536",
+      "source_package": "PlayDrop-1.0.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c1535791d985781bc3368eeaad3552d70da040fb9c810df7c4ec0e54ed07627": {
+      "description_zh": "制作自包含单文件交互 HTML 试验场，通过控件配置内容、查看实时预览并复制生成的提示。适用于主题探索器或交互工具。",
+      "source": "Creates interactive HTML playgrounds — self-contained single-file explorers that let users configure something visually through controls, see a live preview, and copy out a prompt. Use when the user asks to make a playground, explorer, or interactive tool for a topic.",
+      "source_sha256": "8c1535791d985781bc3368eeaad3552d70da040fb9c810df7c4ec0e54ed07627",
+      "source_path": "skills/playground/SKILL.md",
+      "package_sha256": "52618207bed0cb98bb72db0ff3512e61039c7003c9120df6d606fd61b72b15d8",
+      "source_package": "playground-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c51b443ec44560b78fab4a7c15cd52b6d6c22d33aff1d24dba3a66615bc15f44": {
+      "description_zh": "整理 CLAUDE.md 层级，去除全局、项目和仓库重复内容，识别错放章节、压缩冗余、检查过时资料并生成 token 使用可视化报告。",
+      "source": "Optimize your CLAUDE.md hierarchy — deduplicate content across global/project/repo levels, detect misplaced sections, compress bloat, check for stale content, and generate visual token usage reports. Use when CLAUDE.md files are bloated, duplicated across levels, or need organization.",
+      "source_sha256": "c51b443ec44560b78fab4a7c15cd52b6d6c22d33aff1d24dba3a66615bc15f44",
+      "source_path": "skills/please-optimize-my-claude/SKILL.md",
+      "package_sha256": "3ff293b9aa35773f31db31a8aada377fe5b50405e0f04d0d3ed23c072a4b216f",
+      "source_package": "please-optimize-my-claude-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af721de75388a85c24b93ac2799eb41c7a2031fd23f481e32c4c90b42bf358ac": {
+      "description_zh": "通过 Ploxs MCP 创建和编辑设计过的 Google Slides，包括自行编写幻灯片 HTML。适用于演示制作、品牌风格、HTML 页面设计及已有 Ploxs 演示查询。",
+      "source": "Create and edit designed Google Slides decks through the production Ploxs MCP server (ploxs.com), including authoring the slide HTML yourself. Use when the user asks to make or edit a presentation or slide deck, apply a brand style to slides, design slides as HTML frames, or list/inspect their Ploxs decks.",
+      "source_sha256": "af721de75388a85c24b93ac2799eb41c7a2031fd23f481e32c4c90b42bf358ac",
+      "source_path": "skills/ploxs-presentations/SKILL.md",
+      "package_sha256": "f963244930586e3981f6a5e3969817deea804df5c02a59f258b52d2c31e960bb",
+      "source_package": "Ploxs Presentations-5.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e21e0a039bcc040c5861d9d5e05625f5cac8f185181c0b2ee7a81003a7fe258": {
+      "description_zh": "按组织的工具与工作流定制 Claude Code 插件，调整配置、连接器、技能和行为。",
+      "source": "Customize a Claude Code plugin for a specific organization's tools and workflows. Use when: customize plugin, set up plugin, configure plugin, tailor plugin, adjust plugin settings, customize plugin connectors, customize plugin skill, tweak plugin, modify plugin configuration.",
+      "source_sha256": "1e21e0a039bcc040c5861d9d5e05625f5cac8f185181c0b2ee7a81003a7fe258",
+      "source_path": "skills/cowork-plugin-customizer/SKILL.md",
+      "package_sha256": "aaa791150206ed3f40c2f10f5aac33321f58c56e013a48acc2f4fc71d28dd375",
+      "source_package": "Plugin Management-0.2.2-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abbd44c4cc16ee26685c4afe4e4c83305344efc175ece40527e1184f2f19260f": {
+      "description_zh": "在 Cowork 会话中从零设计并搭建插件，指导结构创建和最终交付。要求 Cowork 模式及 outputs 目录访问，以输出 .plugin 文件。",
+      "source": "Guide users through creating a new plugin from scratch in a cowork session. Use when users want to create a plugin, build a plugin, make a new plugin, develop a plugin, scaffold a plugin, start a plugin from scratch, or design a plugin. This skill requires Cowork mode with access to the outputs directory for delivering the final .plugin file.",
+      "source_sha256": "abbd44c4cc16ee26685c4afe4e4c83305344efc175ece40527e1184f2f19260f",
+      "source_path": "skills/create-cowork-plugin/SKILL.md",
+      "package_sha256": "aaa791150206ed3f40c2f10f5aac33321f58c56e013a48acc2f4fc71d28dd375",
+      "source_package": "Plugin Management-0.2.2-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db8bdc97432b0d67c739ed0f4edc8b6c963d13c54870ac491cdf37ba6ba5a7b7": {
+      "description_zh": "指导 Claude Code 插件中的智能体和子智能体开发，涵盖结构、frontmatter、系统提示、触发描述、工具、颜色及自主行为实践。",
+      "source": "This skill should be used when the user asks to \"create an agent\", \"add an agent\", \"write a subagent\", \"agent frontmatter\", \"when to use description\", \"agent examples\", \"agent tools\", \"agent colors\", \"autonomous agent\", or needs guidance on agent structure, system prompts, triggering conditions, or agent development best practices for Claude Code plugins.",
+      "source_sha256": "db8bdc97432b0d67c739ed0f4edc8b6c963d13c54870ac491cdf37ba6ba5a7b7",
+      "source_path": "skills/agent-development/SKILL.md",
+      "package_sha256": "b07a41c2ea5fef3c585127484f8d91e0d3bc1368c2f546b6f0f29aff502ab43f",
+      "source_package": "plugin-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc1ec98e519d7a99517401ec6f69a8c887a8e861eb3bf80ac8b2388eb62d47a8": {
+      "description_zh": "指导 Claude Code 斜杠命令开发，包括结构、YAML frontmatter、动态参数、文件引用、bash 执行、交互和 AskUserQuestion 使用。",
+      "source": "This skill should be used when the user asks to \"create a slash command\", \"add a command\", \"write a custom command\", \"define command arguments\", \"use command frontmatter\", \"organize commands\", \"create command with file references\", \"interactive command\", \"use AskUserQuestion in command\", or needs guidance on slash command structure, YAML frontmatter fields, dynamic arguments, bash execution in commands, user interaction patterns, or command development best practices for Claude Code.",
+      "source_sha256": "bc1ec98e519d7a99517401ec6f69a8c887a8e861eb3bf80ac8b2388eb62d47a8",
+      "source_path": "skills/command-development/SKILL.md",
+      "package_sha256": "b07a41c2ea5fef3c585127484f8d91e0d3bc1368c2f546b6f0f29aff502ab43f",
+      "source_package": "plugin-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3267febd2cf87dc29a60cd338cc8ab662d28bc094515b27ac1a12322754ac887": {
+      "description_zh": "指导 Claude Code 插件 hook 开发，覆盖工具前后、Stop、会话、提示、压缩和通知等事件，重点介绍高级基于提示的 hook API。适用于工具使用校验、事件自动化或阻止危险命令。",
+      "source": "This skill should be used when the user asks to \"create a hook\", \"add a PreToolUse/PostToolUse/Stop hook\", \"validate tool use\", \"implement prompt-based hooks\", \"use ${CLAUDE_PLUGIN_ROOT}\", \"set up event-driven automation\", \"block dangerous commands\", or mentions hook events (PreToolUse, PostToolUse, Stop, SubagentStop, SessionStart, SessionEnd, UserPromptSubmit, PreCompact, Notification). Provides comprehensive guidance for creating and implementing Claude Code plugin hooks with focus on advanced prompt-based hooks API.",
+      "source_sha256": "3267febd2cf87dc29a60cd338cc8ab662d28bc094515b27ac1a12322754ac887",
+      "source_path": "skills/hook-development/SKILL.md",
+      "package_sha256": "b07a41c2ea5fef3c585127484f8d91e0d3bc1368c2f546b6f0f29aff502ab43f",
+      "source_package": "plugin-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d843d912670f981dd9ff4a074c85706254a47428d85570bf4819795080d6382": {
+      "description_zh": "将 MCP 服务接入 Claude Code 插件，配置 .mcp.json 和插件根路径，支持 SSE、stdio、HTTP、WebSocket 等服务类型及外部工具集成。",
+      "source": "This skill should be used when the user asks to \"add MCP server\", \"integrate MCP\", \"configure MCP in plugin\", \"use .mcp.json\", \"set up Model Context Protocol\", \"connect external service\", mentions \"${CLAUDE_PLUGIN_ROOT} with MCP\", or discusses MCP server types (SSE, stdio, HTTP, WebSocket). Provides comprehensive guidance for integrating Model Context Protocol servers into Claude Code plugins for external tool and service integration.",
+      "source_sha256": "8d843d912670f981dd9ff4a074c85706254a47428d85570bf4819795080d6382",
+      "source_path": "skills/mcp-integration/SKILL.md",
+      "package_sha256": "b07a41c2ea5fef3c585127484f8d91e0d3bc1368c2f546b6f0f29aff502ab43f",
+      "source_package": "plugin-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f799a0fd90cb1d4fa9bc8b86cfc6f3561efc1c51f199ed3b9437e00475377af": {
+      "description_zh": "用 .claude/plugin-name.local.md 保存插件专属配置，以 YAML frontmatter 和 Markdown 内容实现用户或项目级可配置行为。",
+      "source": "This skill should be used when the user asks about \"plugin settings\", \"store plugin configuration\", \"user-configurable plugin\", \".local.md files\", \"plugin state files\", \"read YAML frontmatter\", \"per-project plugin settings\", or wants to make plugin behavior configurable. Documents the .claude/plugin-name.local.md pattern for storing plugin-specific configuration with YAML frontmatter and markdown content.",
+      "source_sha256": "0f799a0fd90cb1d4fa9bc8b86cfc6f3561efc1c51f199ed3b9437e00475377af",
+      "source_path": "skills/plugin-settings/SKILL.md",
+      "package_sha256": "b07a41c2ea5fef3c585127484f8d91e0d3bc1368c2f546b6f0f29aff502ab43f",
+      "source_package": "plugin-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4311a5ed6b2f566feb8f6b41d3267ccf8382185548567e1fed27aab30ccbdd2": {
+      "description_zh": "指导 Claude Code 插件目录、plugin.json 清单、组件组织、命名和自动发现，涵盖 commands、agents、skills、hooks 及插件根路径。",
+      "source": "This skill should be used when the user asks to \"create a plugin\", \"scaffold a plugin\", \"understand plugin structure\", \"organize plugin components\", \"set up plugin.json\", \"use ${CLAUDE_PLUGIN_ROOT}\", \"add commands/agents/skills/hooks\", \"configure auto-discovery\", or needs guidance on plugin directory layout, manifest configuration, component organization, file naming conventions, or Claude Code plugin architecture best practices.",
+      "source_sha256": "b4311a5ed6b2f566feb8f6b41d3267ccf8382185548567e1fed27aab30ccbdd2",
+      "source_path": "skills/plugin-structure/SKILL.md",
+      "package_sha256": "b07a41c2ea5fef3c585127484f8d91e0d3bc1368c2f546b6f0f29aff502ab43f",
+      "source_package": "plugin-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f680065054e5e260e26756e5b31167c786a0ffeaa6ed0db8372e7a05a7b07050": {
+      "description_zh": "指导 Claude Code 插件技能开发，涵盖新建或添加技能、改进描述、组织内容、结构及渐进披露。",
+      "source": "This skill should be used when the user wants to \"create a skill\", \"add a skill to plugin\", \"write a new skill\", \"improve skill description\", \"organize skill content\", or needs guidance on skill structure, progressive disclosure, or skill development best practices for Claude Code plugins.",
+      "source_sha256": "f680065054e5e260e26756e5b31167c786a0ffeaa6ed0db8372e7a05a7b07050",
+      "source_path": "skills/skill-development/SKILL.md",
+      "package_sha256": "b07a41c2ea5fef3c585127484f8d91e0d3bc1368c2f546b6f0f29aff502ab43f",
+      "source_package": "plugin-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12b806c37d206d382ceac3fbc21ad3ff722ef8a8dc41c54b18dd1c3577e18bf8": {
+      "description_zh": "在有项目的工作目录中检查所需插件工具箱，适用于寻找、安装、整理、更新目录、移除无用插件或排查冲突。原说明主张在新任务、规划和架构决策开始时主动检查可用工具。",
+      "source": "This skill should be used proactively at the START of every new task or conversation when the working directory contains a project (has package.json, Cargo.toml, pyproject.toml, project.godot, CMakeLists.txt, go.mod, or similar). Also use when the user asks to \"install plugins\", \"find plugins\", \"clean up plugins\", \"what plugins do I need\", \"remove unused plugins\", \"check for new plugins\", \"update plugin catalog\", or mentions plugin conflicts. Activates on plan mode, implementation planning, architecture decisions, and any task where additional tools could help. Think of this as a smart assistant that checks your toolbox before you start working.",
+      "source_sha256": "12b806c37d206d382ceac3fbc21ad3ff722ef8a8dc41c54b18dd1c3577e18bf8",
+      "source_path": "skills/plugin-pilot/SKILL.md",
+      "package_sha256": "fa546362ef91353202258fce8038b095506682d8e0c2b8ac71521ab815610cea",
+      "source_package": "plugin-pilot-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fde5b4df4cb970d61168003c52a5342b84df87858293ecc9eb63d27236561fc8": {
+      "description_zh": "按需审计文档与代码漂移，把路线图、清单数量、队列或数据状态等可核验声明与代码实况比较，报告差异并修正确认的问题。适用于文档过时核验，尤其下一步规划前。",
+      "source": "On-demand audit of docs→code drift — walk the doc spine's checkable claims (open/done roadmap items, inventory counts, status fields in queue/data files) against the actual codebase, report a drift table, and correct confirmed findings. The inverse of closeout — closeout asks \"what did this conversation produce?\"; the audit asks \"is what the docs assert still true of the code?\". Use when the user says \"/plumb-audit\", \"audit the docs\", \"verify the docs/roadmap against the code\", \"is the roadmap still true\", suspects the docs are stale — and especially BEFORE a \"what should we work on next\" planning conversation, which is when a stale backlog does the most damage.",
+      "source_sha256": "fde5b4df4cb970d61168003c52a5342b84df87858293ecc9eb63d27236561fc8",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "f9d5a6df44b6fbf177d1aaa52099676fd5bc2734a8a261116202df814361674b",
+      "source_package": "Plumb-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d34d4d9995ff53b6d07c3028675d3b2598771db3c248d9c9ae7ce0c7d85296d1": {
+      "description_zh": "创建或刷新单页自包含 HTML 解决方案蓝图，以业务和技术视角介绍角色权限矩阵、ERD、核心泳道流程、架构及安全状态。适用于项目概览、交接或已有蓝图漂移。",
+      "source": "Build or refresh the project's solution blueprint — a single self-contained HTML page giving a business + technical overview (roles/permissions matrix, ERD, core workflow swimlane, architecture, security posture) to someone who doesn't know the project. Use when the user says \"/blueprint\", \"solution blueprint\", \"overview pack\", \"handover doc\", asks for a one-page explainer of the whole system, or when plumb-closeout's blueprint axis flags drift in an existing blueprint.",
+      "source_sha256": "d34d4d9995ff53b6d07c3028675d3b2598771db3c248d9c9ae7ce0c7d85296d1",
+      "source_path": "skills/blueprint/SKILL.md",
+      "package_sha256": "f9d5a6df44b6fbf177d1aaa52099676fd5bc2734a8a261116202df814361674b",
+      "source_package": "Plumb-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e42b9e3ed83c93ae270accf8a688bc5f917975c20f6053c54cad234fa7b75569": {
+      "description_zh": "在完成实质工作后同步项目文档，保存对话中的决策、被放弃方案、路线图、约定和资产状态变化。适用于会话收尾；简单拼写修复或未改仓库的问答无需执行。",
+      "source": "End-of-session doc-sync ritual for sessions that produced substantial work — capture what exists only in this conversation (decisions made or killed, roadmap changes, new conventions, inventory or state changes) into the project's docs before it is lost. Use when the user says \"/plumb-closeout\" or \"/closeout\", asks to wrap up or finish after a meaningful chunk of work, or when the session made a decision or established a convention that isn't recorded anywhere yet. Skip it (or say \"nothing to record\") for trivial sessions — a typo fix or a Q&A session with no repo changes doesn't need the ritual.",
+      "source_sha256": "e42b9e3ed83c93ae270accf8a688bc5f917975c20f6053c54cad234fa7b75569",
+      "source_path": "skills/closeout/SKILL.md",
+      "package_sha256": "f9d5a6df44b6fbf177d1aaa52099676fd5bc2734a8a261116202df814361674b",
+      "source_package": "Plumb-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c926b0a0122a1431b7148cd21946d97f011f2614261779025e033f20c3d23e3b": {
+      "description_zh": "为当前项目新建或改造 Plumb 文档同步框架，包括 CLAUDE.md/AGENTS.md 核心、项目状态、变更日志、路线图和决策记录，以及权威来源注册和适用的 CI 漂移检查。不用于既有文档的一次性编辑。",
+      "source": "Scaffold or retrofit the CURRENT project with the Plumb doc-sync framework — a five-slot doc spine (CLAUDE.md + AGENTS.md core, project-state, changelog, roadmap, decision records), a registry of canonical sources (the plumb line), and CI drift gates where the stack supports them. Use when the user says \"/plumb-init\" or \"set up Plumb\", OR asks in their own words to set up project documentation or an AI-context structure for a repo — e.g. \"scaffold CLAUDE.md and docs for this project\", \"set up a docs system so future sessions have context\", \"organise our scattered docs\", \"add ADRs and a changelog structure\". Works greenfield or mid-project (retrofit maps existing docs into the spine). Do NOT use for one-off edits to an existing doc.",
+      "source_sha256": "c926b0a0122a1431b7148cd21946d97f011f2614261779025e033f20c3d23e3b",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "f9d5a6df44b6fbf177d1aaa52099676fd5bc2734a8a261116202df814361674b",
+      "source_package": "Plumb-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e259cff0dc09d8299e51565dbb7e7f3a94744d3205cd58f8aac0d0b59aca9824": {
+      "description_zh": "在浏览器任务中优先使用注入外部 Chrome 的可调用工具；工具不足时构建可复用 WebMCP 工具。",
+      "source": "Use whenever doing anything in a browser. Prefer the callable tools injected into external Chrome and build reusable WebMCP tools when they are insufficient.",
+      "source_sha256": "e259cff0dc09d8299e51565dbb7e7f3a94744d3205cd58f8aac0d0b59aca9824",
+      "source_path": "skills/webmcp-for-anything/SKILL.md",
+      "package_sha256": "aabbdd80348a1b78a7e72ac362114af96a2b5a30993ea71d8fdb00f979f117b2",
+      "source_package": "Pluno WebMCP for Anything-0.1.21-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "29c298507caddfb9883ce90b0449cb0db039e28e894418505afc2d8aad97e6c3": {
+      "description_zh": "分析下一个构建包的规格，明确下一步工作、给 Builder 的说明及需要准备的材料。",
+      "source": "Analyzes the next package spec and provides specific guidance on what to do next, what to tell Builder, and what to prepare.",
+      "source_sha256": "29c298507caddfb9883ce90b0449cb0db039e28e894418505afc2d8aad97e6c3",
+      "source_path": "skills/build-guidance/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0d8d3fb314c80d693bd4469733681d7896f7409f16b5634147eddcf7afeb65c": {
+      "description_zh": "用选项、权衡及建议组织决策，并将已解决决策写入 DECISIONS.md，使用自动递增 ID。",
+      "source": "Structures decisions with options, trade-offs, and recommendations. Logs resolved decisions to DECISIONS.md with auto-incrementing IDs.",
+      "source_sha256": "d0d8d3fb314c80d693bd4469733681d7896f7409f16b5634147eddcf7afeb65c",
+      "source_path": "skills/decision-support/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "421235808be099d6cfdfbf5aca84035e1d88d77f647b2fb84a16b27974c646f6": {
+      "description_zh": "把已批准的产品规格拆为构建包，明确依赖关系并匹配 dev 插件的精确格式。",
+      "source": "Breaks an approved product spec into build packages with correct dependencies, matching the dev plugin's exact format.",
+      "source_sha256": "421235808be099d6cfdfbf5aca84035e1d88d77f647b2fb84a16b27974c646f6",
+      "source_path": "skills/package-generation/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05fb7f2fda52fa5b16801ab4a0dd1bb147b2ff07cb62b950765468c4243127d2": {
+      "description_zh": "通过六个核心问题及条件追问开展结构化产品访谈，收集产品规格所需信息。",
+      "source": "Runs a structured product interview with 6 core questions and conditional follow-ups to capture everything needed for a product spec.",
+      "source_sha256": "05fb7f2fda52fa5b16801ab4a0dd1bb147b2ff07cb62b950765468c4243127d2",
+      "source_path": "skills/product-interview/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18bcf3ce79b5b9d299328cf8672426fdc857c073fe71f2d5f719b065cc21806f": {
+      "description_zh": "读取 STATUS.md、构建包、DECISIONS.md、PARKED.md 和 Git 日志，展示完整项目进度。",
+      "source": "Reads STATUS.md, package files, DECISIONS.md, PARKED.md, and git log to present comprehensive project status.",
+      "source_sha256": "18bcf3ce79b5b9d299328cf8672426fdc857c073fe71f2d5f719b065cc21806f",
+      "source_path": "skills/progress-tracking/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35effc3fa093a8c401561c8383beb3d23834cf46310c43f18a41fe331bded6cb": {
+      "description_zh": "通过 .dev/、STATUS.md 和构建包识别项目为空、已规划、构建中或完成的状态。",
+      "source": "Detects the current project state (empty, planned, mid-build, complete) by reading .dev/ directory, STATUS.md, and package files.",
+      "source_sha256": "35effc3fa093a8c401561c8383beb3d23834cf46310c43f18a41fe331bded6cb",
+      "source_path": "skills/project-state/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5d73da07945575fb920b971e71c19cf7514ae6cfaf1350f182cac2bcf5b9720": {
+      "description_zh": "执行构建前质量检查，涵盖插件有效性、构建包完成、测试、依赖满足、决策解决及标准遵循。",
+      "source": "Runs pre-flight checks including plugin validation, package completion, tests, dependency satisfaction, decision resolution, and standards compliance.",
+      "source_sha256": "f5d73da07945575fb920b971e71c19cf7514ae6cfaf1350f182cac2bcf5b9720",
+      "source_path": "skills/quality-assurance/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f133bef4efad52e47b16ff19d9a515d5785950d87f5dbe2795172325c26b1157": {
+      "description_zh": "创建 .dev/ 项目结构和文件，初始化 Git，并可选创建 GitHub 仓库。",
+      "source": "Creates the .dev/ project structure, writes all project files, initializes git, and optionally creates a GitHub repo.",
+      "source_sha256": "f133bef4efad52e47b16ff19d9a515d5785950d87f5dbe2795172325c26b1157",
+      "source_path": "skills/scaffold-creation/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79d57c4f09f0c0c37a95a3231adc0701ec091fa806fa92e4b405af16db448e52": {
+      "description_zh": "根据产品访谈回答使用 product-spec 模板生成完整产品规格，包含修订和批准流程。",
+      "source": "Generates a full product spec from interview answers using the product-spec template, with revision and approval flow.",
+      "source_sha256": "79d57c4f09f0c0c37a95a3231adc0701ec091fa806fa92e4b405af16db448e52",
+      "source_path": "skills/spec-writing/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d1f0baa0d31e13f3d94e8df30280933ea5e60f9ab844b3176f60bd1cc27140d": {
+      "description_zh": "读取项目上下文并匹配常见故障模式，诊断构建失败并给出具体修复方法。",
+      "source": "Diagnoses build failures and problems by reading project context, matching common failure patterns, and prescribing exact fixes.",
+      "source_sha256": "8d1f0baa0d31e13f3d94e8df30280933ea5e60f9ab844b3176f60bd1cc27140d",
+      "source_path": "skills/troubleshooting/SKILL.md",
+      "package_sha256": "1faa295355cc2b93701f51340cd212c5a634f433bd3558cdbb7eb0bdb5ab07ca",
+      "source_package": "pm-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b59993b647275300a0cb697779d6eb0f5808276a66856fce85cce6112ec284a2": {
+      "description_zh": "准备仲裁或指导委员会材料，生成深入摘要、按力度排列的反论据、各参与者可能的异议、折中表述和预期决策标准。",
+      "source": "Utiliser pour préparer un comité d'arbitrage ou un comité de pilotage. Produit une synthèse de fond, des contre-arguments classés, les objections anticipées par participant, une formulation médiane et les critères de décision attendus.",
+      "source_sha256": "b59993b647275300a0cb697779d6eb0f5808276a66856fce85cce6112ec284a2",
+      "source_path": "skills/committee-prep/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55d46746d5305fb9796bdd4274bb194ffcaed814ed782cf2613ce1c4038dd5b9": {
+      "description_zh": "在重要决策前让 AI 担任专业质疑者，提出不执行建议方案的三条最有力理由，并按力度递减排序。",
+      "source": "Utiliser avant toute décision importante pour faire jouer à l'IA le rôle d'un sceptique professionnel. Produit les trois meilleures raisons de ne pas faire ce qui est proposé, classées par force décroissante.",
+      "source_sha256": "55d46746d5305fb9796bdd4274bb194ffcaed814ed782cf2613ce1c4038dd5b9",
+      "source_path": "skills/devils-advocate/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b03f7bfdc0142e194f99fb55ba2675c3b0e38473bad10d12f0a671b788a831f": {
+      "description_zh": "界定新的用户探索研究，提出五项竞争假设、可观察验证证据、目标用户、访谈指南和原话编码表。",
+      "source": "Utiliser pour cadrer une nouvelle discovery utilisateur. Produit cinq hypothèses concurrentes, leurs observables de validation, le profil cible, un guide d'entretien et une grille de codage des verbatims.",
+      "source_sha256": "4b03f7bfdc0142e194f99fb55ba2675c3b0e38473bad10d12f0a671b788a831f",
+      "source_path": "skills/discovery-cadrage/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de1c7f6e14311f0c2747b86a1ba84b48975bb3a6b02f7020e36babd947df00a9": {
+      "description_zh": "审计拟议功能的伦理风险，包括操纵、偏见、利用脆弱性和数据问题，评估潜在利用，给出风险较低的替代方案及明确建议。",
+      "source": "Utiliser pour auditer une feature envisagée sur ses risques éthiques (manipulation, biais, exploitation de vulnérabilité, données). Produit un diagnostic d'exploitation potentielle, des alternatives moins exposées, et une recommandation explicite.",
+      "source_sha256": "de1c7f6e14311f0c2747b86a1ba84b48975bb3a6b02f7020e36babd947df00a9",
+      "source_path": "skills/feature-ethics-audit/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5153e71c66d1780a6da5a200b4e1d707aa40e0886737d8347ea8eaffbcc50ec": {
+      "description_zh": "每季度依据决策日志、使用指标、智能体审计和日程对比，计算增强型产品经理的四项指标：决策密度、回顾准确度、转换时延和再投入指数。",
+      "source": "Utiliser une fois par trimestre pour calculer les quatre indicateurs du PM augmenté (densité de décision, justesse rétrospective, délai de bascule, indice de réinvestissement) à partir du journal de décision, des indicateurs d'usage, des audits agents et des agendas comparés.",
+      "source_sha256": "f5153e71c66d1780a6da5a200b4e1d707aa40e0886737d8347ea8eaffbcc50ec",
+      "source_path": "skills/four-indicators-measure/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "920fb7c535186e24bf280512329c55cac6afb7504f8c492fa8242a7accbea07a": {
+      "description_zh": "在重要跨团队沟通前，按不同利益相关者调整同一主题，为各方生成一页材料，采用矩阵中识别的偏好格式。",
+      "source": "Utiliser avant chaque communication transverse importante pour décliner un même sujet en versions calibrées par stakeholder. Produit un encart d'une page par stakeholder, dans le format de prédilection identifié dans la matrice.",
+      "source_sha256": "920fb7c535186e24bf280512329c55cac6afb7504f8c492fa8242a7accbea07a",
+      "source_path": "skills/multi-stakeholder-comm/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "875892392465bab649d49a8257e5fd8f061f26f71ff13e38712ba86b2de0453d": {
+      "description_zh": "为新加入团队的产品经理设计入门路径，整理关键问题、近期结构性决策、矛盾领域、优先会面及入门项目。",
+      "source": "Utiliser à chaque arrivée d'un nouveau Product Manager dans l'équipe pour produire un parcours d'onboarding sur mesure. Produit les questions clés à poser à la base, les décisions structurantes récentes, les zones de tension, les rencontres prioritaires et un projet introductif.",
+      "source_sha256": "875892392465bab649d49a8257e5fd8f061f26f71ff13e38712ba86b2de0453d",
+      "source_path": "skills/onboarding-pm/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7cbf10d94854897ea3319fd0acd3d0da12674b1cf49b1559811de040c5baa4f7": {
+      "description_zh": "在 backlog 梳理前预审一个或多个工单，按维度列缺失标准、给出有依据的 INVEST 检查、Given/When/Then 边界场景及发现的依赖。",
+      "source": "Utiliser la veille de chaque cérémonie de refinement pour pré-réviser un ou plusieurs tickets de backlog. Produit un tableau des critères manquants par dimension, un test INVEST argumenté, des scénarios edge cases en Given/When/Then, et la liste des dépendances détectées.",
+      "source_sha256": "7cbf10d94854897ea3319fd0acd3d0da12674b1cf49b1559811de040c5baa4f7",
+      "source_path": "skills/quality-review-tickets/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b43c730755519a12ffd0e1fbb4afbf52a6a4bd90d80624fcee912676fdea986": {
+      "description_zh": "依据事实数据和 AI 成熟度框架准备所管理产品经理的季度评审，整理事实摘要、成熟度分数、进步或停滞领域、待问问题及拟议目标。",
+      "source": "Utiliser trimestriellement pour préparer la revue d'un PM managé sur la base de données factuelles et de la grille de maturité IA. Produit une synthèse factuelle, un score de maturité IA, les zones de progression et stagnation, les questions à poser et les objectifs proposés.",
+      "source_sha256": "5b43c730755519a12ffd0e1fbb4afbf52a6a4bd90d80624fcee912676fdea986",
+      "source_path": "skills/quarterly-review-pm/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "77c915c41b1c3ea722cc36060a31443e404466bf75998845245cf3475f1f0261": {
+      "description_zh": "每季度调整路线图时按产能和风险假设模拟三种方案，逐项比较保守、激进及平衡版本。",
+      "source": "Utiliser à chaque révision trimestrielle de roadmap pour simuler trois variantes selon des hypothèses de capacité et de risque. Produit une variante prudente, une variante agressive, une variante équilibrée, comparées ligne à ligne.",
+      "source_sha256": "77c915c41b1c3ea722cc36060a31443e404466bf75998845245cf3475f1f0261",
+      "source_path": "skills/roadmap-variants/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e9d15fef0ab6fae54289be8f8cdd1730f5970720c7306f89411ea6b43f04c46": {
+      "description_zh": "将模糊功能简报转为可测试、完整的规格，生成符合 INVEST 的用户故事、Given/When/Then 正常场景、补充场景及未决业务问题。",
+      "source": "Utiliser quand l'utilisateur fournit un brief flou de fonctionnalité et veut une spec testable et exhaustive. Produit une user story INVEST, un scénario nominal Given/When/Then, des scénarios annexes et la liste des questions business non tranchées.",
+      "source_sha256": "2e9d15fef0ab6fae54289be8f8cdd1730f5970720c7306f89411ea6b43f04c46",
+      "source_path": "skills/spec-from-brief/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8bde580c2a7e5b85152b54eafa188c0b663d6a561732944aed61a0d422fd05b5": {
+      "description_zh": "每周一依据用户原话、支持工单、外部提及和日志等多来源汇总弱信号，生成分为四部分、约五分钟可读的 Markdown 说明。",
+      "source": "Utiliser chaque lundi matin pour produire la synthèse hebdomadaire de signaux faibles à partir de sources multiples (verbatims, tickets support, mentions externes, logs). Produit une note markdown lisible en cinq minutes structurée en quatre blocs.",
+      "source_sha256": "8bde580c2a7e5b85152b54eafa188c0b663d6a561732944aed61a0d422fd05b5",
+      "source_path": "skills/weak-signals-weekly/SKILL.md",
+      "package_sha256": "f4e5c21aef0e9a23cae476950056993db242868812399f711175cce4c2e44294",
+      "source_package": "pm-augmente-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f90ba307c9e15b640af14087142a0f7dcab12282abe3ce26a0f207ff45b4f0e2": {
+      "description_zh": "在终端以 ASCII 展示 PMM 记忆状态，支持状态热图、含聚类和时间线的摘要及完整详细三档。原说明由子智能体执行，适用于文本记忆概览和热图需求。",
+      "source": "Dump PMM memory state as ASCII art in the terminal. Three depth levels: status (heatmap only), summary (heatmap + clusters + timeline), detailed (full ASCII). Runs as a subagent. Use when the user runs /pmm-dump or asks for a text-based memory overview. Trigger on: \"pmm-dump\", \"/pmm-dump\", \"dump memory\", \"ascii memory\", \"text memory overview\", \"show memory heatmap\", \"memory dump\", or any request for a text-based ASCII visualization of memory state.",
+      "source_sha256": "f90ba307c9e15b640af14087142a0f7dcab12282abe3ce26a0f207ff45b4f0e2",
+      "source_path": "local/pmm-dump/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87a5ae29c0606a511671975f0153b3dc27032ce0d40314df328ef422b154f94e": {
+      "description_zh": "依据当前会话上下文补充空白或内容不足的 PMM 记忆文件，支持单文件、批量和强制重新填充。",
+      "source": "Populate empty or thin memory files from current session context. Supports single file, batch, and force re-hydration. Trigger on: \"pmm-hydrate\", \"/pmm-hydrate\", \"hydrate memory\", \"populate memory\", \"fill in memory files\", \"hydrate files\", \"backfill memory\", or any request to populate empty or thin memory files from existing context.",
+      "source_sha256": "87a5ae29c0606a511671975f0153b3dc27032ce0d40314df328ef422b154f94e",
+      "source_path": "local/pmm-hydrate/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "402a1057200de1af19d9388f12ffbaf3eae46f2d177e0cc158a7106e1298b430": {
+      "description_zh": "在项目中初始化 Poor Man's Memory，运行偏好向导、建立 memory/ 目录并配置 hook。",
+      "source": "Initialize Poor Man's Memory in your project — runs preference wizard, scaffolds memory/ directory, configures hooks. Trigger on: \"pmm-init\", \"/pmm-init\", \"initialize memory\", \"set up memory\", \"start pmm\", \"init pmm\", \"scaffold memory\", \"set up poor man's memory\", or any request to initialize the PMM memory system in a project.",
+      "source_sha256": "402a1057200de1af19d9388f12ffbaf3eae46f2d177e0cc158a7106e1298b430",
+      "source_path": "local/pmm-init/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0bf1c8cb2f048cf41ecec526f46feaee24576699d4594fdb82a26361879a3108": {
+      "description_zh": "通过先前 AI 或直接访谈建立用户身份层，生成记录思考、沟通和决策方式的 user.md，将个人识别信息放入 secrets.md。支持个人或组织部署，组织模式限制为单一指定智能体。",
+      "source": "Seed your user identity layer from a prior AI or direct interview. Generates user.md (operative identity — how you think, communicate, decide) and routes PII to secrets.md. Works solo or in org-wide deployments (gated to a single designated agent). Trigger on: \"pmm-onboard\", \"/pmm-onboard\"",
+      "source_sha256": "0bf1c8cb2f048cf41ecec526f46feaee24576699d4594fdb82a26361879a3108",
+      "source_path": "local/pmm-onboard/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d243b970f1d535f35f7d2bfa694c30e92e1b2df18f9333569a26559054bfff9": {
+      "description_zh": "优先结合当前上下文检索 PMM 记忆，必要时深入遍历向量、图和分类体系。适用于搜索或回顾记忆文件中的信息和决策。",
+      "source": "Query memory — context-first recall with deep traversal across vectors, graph, and taxonomy when needed. Trigger on: \"pmm-query\", \"/pmm-query\", \"query memory\", \"search memory\", \"recall\", \"what did we decide about\", \"find in memory\", \"look up\", \"what do we know about\", or any request to search or recall information from memory files.",
+      "source_sha256": "4d243b970f1d535f35f7d2bfa694c30e92e1b2df18f9333569a26559054bfff9",
+      "source_path": "local/pmm-query/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a2557fa15a67f0704e3c5772512b2ce32c89cceff6e4cd78e847cccd04e48f2": {
+      "description_zh": "在切换工作流或返回主题时，综合所有记忆文件生成聚焦该主题的简报。",
+      "source": "Context-switching recall — synthesizes a focused briefing on a topic from across all memory files. Use when switching workstreams or coming back to a topic. Trigger on: \"pmm-recall\", \"/pmm-recall\"",
+      "source_sha256": "4a2557fa15a67f0704e3c5772512b2ce32c89cceff6e4cd78e847cccd04e48f2",
+      "source_path": "local/pmm-recall/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1528ac2e3b36cdbbe61cf7700b01a1011dc093f1865571b7afd5673fabc5fbde": {
+      "description_zh": "将当前会话保存为 PMM 记忆，派发维护智能体、更新记忆文件并提交 Git。",
+      "source": "Save current session to memory — dispatches maintain agent, updates memory files, commits to git. Trigger on: \"pmm-save\", \"/pmm-save\", \"save memory\", \"commit memory\", \"persist session\", \"save session\", \"wrap up memory\", \"update memory files\", or any request to save the current session state to memory.",
+      "source_sha256": "1528ac2e3b36cdbbe61cf7700b01a1011dc093f1865571b7afd5673fabc5fbde",
+      "source_path": "local/pmm-save/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "296f658830d758c2e8f89d44fb5612127fd2a49fa237f2308e646aad0c33ac58": {
+      "description_zh": "查看或修改 PMM 配置，重新选择保存频率、提交推送、滑动窗口、详细程度、仓库可见性、维护及只读智能体模型、策略、启动模式、窗口外回忆、秘密 Git 设置、压缩前 hook、活动文件和加载方式。",
+      "source": "Change Poor Man's Memory configuration. Re-presents preference prompts for save cadence, commit behaviour, push behaviour, sliding window size, verbosity, repository visibility, maintain agent model, maintain strategy, readonly agent model, session start mode, recall beyond window, secrets_git, pre-compact hook, active files, and load strategies. Use when the user runs /pmm-settings or asks to change memory system settings. Trigger on: \"pmm-settings\", \"/pmm-settings\", \"change memory settings\", \"configure pmm\", \"memory configuration\", \"update pmm settings\", \"pmm preferences\", or any request to view or change PMM configuration.",
+      "source_sha256": "296f658830d758c2e8f89d44fb5612127fd2a49fa237f2308e646aad0c33ac58",
+      "source_path": "local/pmm-settings/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "653824de83def30ecba1530c4021e545ac02ff4013038f30097fd3cd2347e304": {
+      "description_zh": "快速展示 PMM 初始化、最近保存时间、提交、文件健康及警告。原说明由子智能体执行，适用于检查记忆是否正常工作或保存。",
+      "source": "Quick PMM health dashboard. Shows initialization state, last save time, recent commits, file health, and warnings. Runs as a subagent. Use when the user runs /pmm-status or asks if memory is saving, working, or healthy. Trigger on: \"pmm-status\", \"/pmm-status\", \"memory status\", \"pmm health\", \"is memory working\", \"is memory saving\", \"memory dashboard\", or any request to check the health or status of the PMM system.",
+      "source_sha256": "653824de83def30ecba1530c4021e545ac02ff4013038f30097fd3cd2347e304",
+      "source_path": "local/pmm-status/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85e67f437164454f737c3ca7763d834ec7ef8dcb50aad6fa67cb641c1e768955": {
+      "description_zh": "检查 PMM 上游更新，比较版本、展示差异并只更新系统文件。原说明明确不修改 memory/ 或用户数据。",
+      "source": "Check for and apply updates to Poor Man's Memory system files from upstream. Compares local version to latest upstream, shows what changed, and applies updates to system files only — never touches memory/ or user data. Use when the user runs /pmm-update or asks to update PMM. Trigger on: \"pmm-update\", \"/pmm-update\", \"update pmm\", \"check for pmm updates\", \"upgrade memory system\", \"pmm version\", or any request to check for and apply upstream PMM updates.",
+      "source_sha256": "85e67f437164454f737c3ca7763d834ec7ef8dcb50aad6fa67cb641c1e768955",
+      "source_path": "local/pmm-update/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdd947a3298c0720762c944d20603fcf5329db9b4a5afc1fbd7979f406dbacf3": {
+      "description_zh": "解析跨 Git 历史的 PMM 记忆文件，生成带时间滑块的 D3.js 力导向图并在浏览器打开。原说明由子智能体执行，适用于交互记忆可视化。",
+      "source": "Interactive D3.js memory graph visualization with time slider. Parses all memory files across git history, builds a force-directed graph with temporal navigation, and opens it in the browser. Runs as a subagent. Use when the user runs /pmm-viz or asks to visualize their memory as an interactive graph. Trigger on: \"pmm-viz\", \"/pmm-viz\", \"visualize memory\", \"memory graph\", \"show the graph\", \"interactive graph\", \"d3 visualization\", \"open memory viz\", or any request to generate an interactive memory visualization.",
+      "source_sha256": "bdd947a3298c0720762c944d20603fcf5329db9b4a5afc1fbd7979f406dbacf3",
+      "source_path": "local/pmm-viz/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "726e5f70ef65ac5bc5d67e6ea9b57bcf48be5b8a56f9a019f70807936f3b357c": {
+      "description_zh": "在终端以 ASCII 展示 PMM 记忆，支持状态热图、含聚类与时间线的摘要及完整详细三档。原说明由子智能体执行。",
+      "source": "Dump PMM memory state as ASCII art in the terminal. Three depth levels: status (heatmap only), summary (heatmap + clusters + timeline), detailed (full ASCII). Runs as a subagent. Use when the user runs /pmm:dump or asks for a text-based memory overview.",
+      "source_sha256": "726e5f70ef65ac5bc5d67e6ea9b57bcf48be5b8a56f9a019f70807936f3b357c",
+      "source_path": "skills/dump/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3383984d8476f11732d628e4e7d09541d26c942e969d1401406923b7953dec89": {
+      "description_zh": "依据当前会话填充空白或内容不足的 PMM 记忆文件，支持单文件、批量及强制重新填充。",
+      "source": "Populate empty or thin memory files from current session context. Supports single file, batch, and force re-hydration.",
+      "source_sha256": "3383984d8476f11732d628e4e7d09541d26c942e969d1401406923b7953dec89",
+      "source_path": "skills/hydrate/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4fcc7fb4fd2e256ec939af153f33f5f3db4dfc08d9b036dc13862690e6cc59cf": {
+      "description_zh": "为 Cowork 兼容安装 PMM 本地技能变体，将 .claude/skills/pmm-* 符号链接到插件携带的预构建缓存技能。每项目执行一次，可安全重复执行。",
+      "source": "Install local skill variants for Cowork compatibility. Creates symlinks from .claude/skills/pmm-* to pre-built cached local skills shipped with the plugin. Run once per project. Idempotent.",
+      "source_sha256": "4fcc7fb4fd2e256ec939af153f33f5f3db4dfc08d9b036dc13862690e6cc59cf",
+      "source_path": "skills/init-local-skills/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a00207b4eb8c9b7c38f280389ba72ac08ea7a296f1faae707d425afa7f09f5d8": {
+      "description_zh": "初始化项目 PMM 记忆系统，运行偏好向导、建立 memory/ 目录并配置 hook。",
+      "source": "Initialize Poor Man's Memory in your project — runs preference wizard, scaffolds memory/ directory, configures hooks.",
+      "source_sha256": "a00207b4eb8c9b7c38f280389ba72ac08ea7a296f1faae707d425afa7f09f5d8",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9f92227fdf4eb9c0d79270429a6ab00ccb8bdaf04fac14c57e13785ae8b02a9": {
+      "description_zh": "通过已有 AI 或直接访谈建立 PMM 用户身份层，写入 user.md 并将个人识别信息放入 secrets.md。支持个人或组织部署，组织场景限制为单一指定智能体。",
+      "source": "Seed your user identity layer from a prior AI or direct interview. Generates user.md (operative identity — how you think, communicate, decide) and routes PII to secrets.md. Works solo or in org-wide deployments (gated to a single designated agent).",
+      "source_sha256": "b9f92227fdf4eb9c0d79270429a6ab00ccb8bdaf04fac14c57e13785ae8b02a9",
+      "source_path": "skills/onboard/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c1ee64ce49caebd34d564665dd15d9a70bbf381c910953181c153beda77db9b": {
+      "description_zh": "以当前上下文为先检索 PMM 记忆，必要时深入遍历向量、知识图和分类体系。",
+      "source": "Query memory — context-first recall with deep traversal across vectors, graph, and taxonomy when needed.",
+      "source_sha256": "9c1ee64ce49caebd34d564665dd15d9a70bbf381c910953181c153beda77db9b",
+      "source_path": "skills/query/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5558a66ed3cbea85d7186a10d02cf88a12538a4f399fd311a676dc01e4f4b130": {
+      "description_zh": "在切换工作流或重返主题时，综合全部 PMM 记忆文件生成专题简报。",
+      "source": "Context-switching recall — synthesizes a focused briefing on a topic from across all memory files. Use when switching workstreams or coming back to a topic.",
+      "source_sha256": "5558a66ed3cbea85d7186a10d02cf88a12538a4f399fd311a676dc01e4f4b130",
+      "source_path": "skills/recall/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97aa26b965044eee230e849dd4ca172720a2df8cd506fd11dc2a5627e658d06d": {
+      "description_zh": "保存当前会话至 PMM 记忆，派发维护智能体更新记忆文件并提交 Git。",
+      "source": "Save current session to memory — dispatches maintain agent, updates memory files, commits to git.",
+      "source_sha256": "97aa26b965044eee230e849dd4ca172720a2df8cd506fd11dc2a5627e658d06d",
+      "source_path": "skills/save/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc9b2ae35d779a5c41861b085e9328339010bdeb87236605afc2c5daefa237ea": {
+      "description_zh": "修改 PMM 保存、提交、推送、窗口、详细程度、仓库可见性、智能体模型和策略、启动、回忆、秘密 Git 设置、hook 及文件加载偏好。适用于查看或调整记忆系统配置。",
+      "source": "Change Poor Man's Memory configuration. Re-presents preference prompts for save cadence, commit behaviour, push behaviour, sliding window size, verbosity, repository visibility, maintain agent model, maintain strategy, readonly agent model, session start mode, recall beyond window, secrets_git, pre-compact hook, active files, and load strategies. Use when the user runs /pmm:settings or asks to change memory system settings.",
+      "source_sha256": "bc9b2ae35d779a5c41861b085e9328339010bdeb87236605afc2c5daefa237ea",
+      "source_path": "skills/settings/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "478f6ce23c9ac74049245585cda9a6ee5219e88649ad3eb2fd19612d76c21644": {
+      "description_zh": "展示 PMM 初始化状态、上次保存、近期提交、文件健康及警告，由子智能体执行。适用于检查记忆保存和运行情况。",
+      "source": "Quick PMM health dashboard. Shows initialization state, last save time, recent commits, file health, and warnings. Runs as a subagent. Use when the user runs /pmm:status or asks if memory is saving, working, or healthy.",
+      "source_sha256": "478f6ce23c9ac74049245585cda9a6ee5219e88649ad3eb2fd19612d76c21644",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56ed2f00c65b8dbb64a12cb89ba62e0a03b3a9dc469b16b7246c9b5028af44cb": {
+      "description_zh": "比较 PMM 本地和上游版本、显示变化并更新系统文件，不触碰 memory/ 及用户数据。",
+      "source": "Check for and apply updates to Poor Man's Memory system files from upstream. Compares local version to latest upstream, shows what changed, and applies updates to system files only — never touches memory/ or user data. Use when the user runs /pmm:update or asks to update PMM.",
+      "source_sha256": "56ed2f00c65b8dbb64a12cb89ba62e0a03b3a9dc469b16b7246c9b5028af44cb",
+      "source_path": "skills/update/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15bdb02ff902db18a5e27a8263c6de703ed54caefc16a6e27855b2c411a8c0c4": {
+      "description_zh": "通过 D3.js 将跨 Git 历史的 PMM 记忆生成带时间滑块的交互力导向图，原说明由子智能体执行并在浏览器打开。",
+      "source": "Interactive D3.js memory graph visualization with time slider. Parses all memory files across git history, builds a force-directed graph with temporal navigation, and opens it in the browser. Runs as a subagent. Use when the user runs /pmm:viz or asks to visualize their memory as an interactive graph.",
+      "source_sha256": "15bdb02ff902db18a5e27a8263c6de703ed54caefc16a6e27855b2c411a8c0c4",
+      "source_path": "skills/viz/SKILL.md",
+      "package_sha256": "61f9ee31431416afeb8cb9f1e2b237f2a2c869ceeeb5271d1e882f314449b932",
+      "source_package": "pmm-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "747dece62743e342cab9ed756ba96b9e2d92020f82485c3f775493534f16e148": {
+      "description_zh": "通过建设性的对抗式波普尔对话，把研究者的模糊主张或经验假设转为可证伪假设，并写入本地 Markdown 资料库。适用于提出因果主张或计划检验假设。",
+      "source": "Use when a researcher describes a research hypothesis, fuzzy claim, or empirical conjecture they want to test — runs an adversarial-but-constructive Popperian dialogue and writes a falsifiable-hypothesis file to a local markdown corpus. Triggers on phrases like \"I think X causes Y\", \"my hypothesis is\", \"I want to test whether\", or any hypothesis-shaped claim about the world.",
+      "source_sha256": "747dece62743e342cab9ed756ba96b9e2d92020f82485c3f775493534f16e148",
+      "source_path": "skills/intake/SKILL.md",
+      "package_sha256": "0d76952831cfb9d0d2bbd46530312b28965c5969d8bf496475c049410a2ffd5b",
+      "source_package": "popper-probe-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2aee47e3a12578e3176301981c277371b496cdca9dc2e972b5860db8ed520979": {
+      "description_zh": "通过 Poppify MCP 按照片或主题制作社交竖屏短视频，覆盖免费定制循环及一次付费确认。适用于 IG、TikTok、YouTube 或 Facebook 的照片动画、产品和广告内容；原说明称基础渲染耗一枚 seed、约0.06美元，注册及连接账号有赠额，费用属于源文声明。",
+      "source": "Canonical photo-led / topic-led flow for the Poppify MCP. Use whenever the user wants: a reel, short video, vertical video, Instagram reel, TikTok video, TikTok, YouTube Short, YouTube Shorts, Facebook reel, FB reel, 15-second video, 30-second video, 60-second video, photo slideshow, photo to video, animate photos, photo animation, slideshow video, social media video, content for social, brand video, product reel, ad creative for social, before/after reel, transformation video, story reel, hook video, or any vertical short-form video for IG/TikTok/YT/FB. Covers the free customization loop and the single paid confirm step. Base render = 1 seed (~$0.06). 50 free seeds on signup, up to 150 after connecting a social account. Use poppify-troubleshoot if the render comes out wrong; poppify-render-debug to verify the finished MP4.",
+      "source_sha256": "2aee47e3a12578e3176301981c277371b496cdca9dc2e972b5860db8ed520979",
+      "source_path": "skills/poppify-build-reel/SKILL.md",
+      "package_sha256": "72cf35a8279e1fc6426b9a86bf2c06097265c32a535a001268853a95ddd51e57",
+      "source_package": "Poppify-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1224a6eff634a966c3de05113f12984104903b9ea373c05d0feff2ecab6d1a29": {
+      "description_zh": "为 Poppify Live Motion 图生视频编写提示，支持主体动画和首尾帧过渡，配置锁定构图的终帧及桥接渲染模板。适用于变形、前后对比，或排查重影、动作反向、身份变化等生成失败。",
+      "source": "Prompting playbook for Poppify Live Motion (image-to-video) — plain subject animation AND first/last-frame transitions. Use when the user wants \"live motion\", \"animate the subject\", a \"before/after transformation\", a \"morph\", \"first and last frame\" / \"endFrameUri\" interpolation, OR when a generated Veo clip looks wrong — \"smoke morph\", \"cross-fade\", \"ghost double\", \"two of the same person\", \"motion goes backwards\", \"subject changed identity\". Covers how to write the action prompt, how to generate composition-locked end frames with add_slide_image (reference params, consistent-frames mode), the journey overridePrompt template for bridged renders, and a failure-modes table.",
+      "source_sha256": "1224a6eff634a966c3de05113f12984104903b9ea373c05d0feff2ecab6d1a29",
+      "source_path": "skills/poppify-live-motion/SKILL.md",
+      "package_sha256": "72cf35a8279e1fc6426b9a86bf2c06097265c32a535a001268853a95ddd51e57",
+      "source_package": "Poppify-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba094e1726abc55c0f53c4fa3c06a02a7f0d9e118d01f9bf1a7773e4e980d558": {
+      "description_zh": "在 Poppify 返回成片 videoUrl 后，下载 MP4、用 ffprobe 检查并抽取样帧，生成 Markdown 判定表。适用于核验音轨、字幕、文本颜色、时长及具体幻灯片输出。",
+      "source": "Verify a rendered Poppify reel by downloading the MP4, running ffprobe, and extracting sample frames. Use after confirm() returns videoUrl, OR when the user says: \"check the video\", \"verify the reel\", \"is the render OK\", \"the video looks wrong\", \"missing audio\", \"no music\", \"no sound\", \"captions missing\", \"captions wrong color\", \"text is wrong color\", \"wrong duration\", \"video is too short\", \"video is too long\", \"no captions on slide N\", or any similar verification / debugging request on a finished Poppify render. Produces a Markdown verdict table.",
+      "source_sha256": "ba094e1726abc55c0f53c4fa3c06a02a7f0d9e118d01f9bf1a7773e4e980d558",
+      "source_path": "skills/poppify-render-debug/SKILL.md",
+      "package_sha256": "72cf35a8279e1fc6426b9a86bf2c06097265c32a535a001268853a95ddd51e57",
+      "source_package": "Poppify-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7ca20448600634825dc9d3e7d778b0d4f3834d5f11b1434710c6e46833ddffb": {
+      "description_zh": "通过 Poppify MCP 按互动或触达目标发布和排期成片，解读基于真实历史或平台常规的推荐时段、best 排期、时段评价、最佳内容类型及多帖间隔。需要已关联钱包并在 Poppify 应用连接发布渠道。",
+      "source": "Engagement/reach-optimized publishing via the Poppify MCP. Use whenever the user wants to POST or SCHEDULE a rendered reel and cares about performance — \"post this\", \"schedule it\", \"when should I post\", \"best time to post\", \"maximize engagement\", \"maximize reach\", \"post at the best time\", \"optimize my posting schedule\", \"when does my audience engage\". Covers publish_post recommendedSlots (real engagement history vs platform norms), scheduledAt:\"best\", slotAssessment interpretation, per-slot bestPostType, and multi-post spacing. Requires a linked wallet (wallet({action:\"link\"})) with channels connected in the Poppify app.",
+      "source_sha256": "a7ca20448600634825dc9d3e7d778b0d4f3834d5f11b1434710c6e46833ddffb",
+      "source_path": "skills/poppify-schedule-optimizer/SKILL.md",
+      "package_sha256": "72cf35a8279e1fc6426b9a86bf2c06097265c32a535a001268853a95ddd51e57",
+      "source_package": "Poppify-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e17924721ac6e9ee8785df06b06dfa1a5d984741830ccf0c2a3fce8db45ae2f5": {
+      "description_zh": "检查已部署 Poppify MCP 工具模式，核对真实接受的参数并比较文档差异。适用于参数被忽略、patch 未生效、覆盖项未使用或建议未确认参数前。",
+      "source": "Inspect the deployed Poppify MCP tool schemas to verify what parameters are actually accepted. Use when: a parameter you passed seems to have been silently dropped, an apply_session_patch field didn't take effect, the render came out using defaults instead of your overrides, OR before recommending a parameter you're not 100% sure is in the current deployed build. Diffs schema-vs-docs and helps file precise feedback when drift is found.",
+      "source_sha256": "e17924721ac6e9ee8785df06b06dfa1a5d984741830ccf0c2a3fce8db45ae2f5",
+      "source_path": "skills/poppify-schema-introspect/SKILL.md",
+      "package_sha256": "72cf35a8279e1fc6426b9a86bf2c06097265c32a535a001268853a95ddd51e57",
+      "source_package": "Poppify-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "851db84fb31857e5c65c6ee75912e9fbd78b4a662633412d769e901f0ff37e10": {
+      "description_zh": "为 Poppify 幻灯片制作精确文字图卡，优先尝试无需 shell 的服务端 add_text_card；不能表达的终端框或多行代码再用本地 HTML/CSS 和无头浏览器渲染。适用于必须保留字面文本的画面，原说明称两条路径均不耗 seed。",
+      "source": "Render a pixel-perfect text card (terminal frame, install command, code snippet, stat callout, title/end card, any exact literal string) as an image for a Poppify slide — locally via HTML/CSS + a headless browser, cross-platform (macOS/Linux/Windows). Use when a slide's content is the user's LITERAL words and must be crisp, because Gemini Imagen garbles typography. Try the free server-side add_text_card tool first — it needs no shell and works in every client. This local HTML/CSS + headless-browser path is for designs add_text_card cannot express (terminal frames, multi-line code). Zero seeds either way.",
+      "source_sha256": "851db84fb31857e5c65c6ee75912e9fbd78b4a662633412d769e901f0ff37e10",
+      "source_path": "skills/poppify-text-card/SKILL.md",
+      "package_sha256": "72cf35a8279e1fc6426b9a86bf2c06097265c32a535a001268853a95ddd51e57",
+      "source_package": "Poppify-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce5317b94f46b5c359d4d1814bef5133ad8a205b5d0928996950b09bfb29c1e7": {
+      "description_zh": "按症状、根因和行动决策树排查 Poppify 短视频异常，包括渲染失败、音频字幕缺失、颜色或时长错误、链接失效、扣 seed 无视频、渲染卡住、图像内嵌文字或素材搜索无结果。",
+      "source": "Diagnose a Poppify reel that came out wrong. Use when the user says: \"the reel came out wrong\", \"render failed\", \"no audio in the video\", \"no music\", \"captions are missing\", \"wrong color text\", \"text is green/blue/etc instead of white\", \"video URL doesn't open\", \"video URL expired\", \"seeds were charged but no video\", \"render is stuck\", \"render still loading after 5 minutes\", \"duration is wrong\", \"video too short / too long\", \"image has text baked in\", \"library search returned nothing\", or any deviation from what they asked for. Walks the symptom → root cause → action decision tree.",
+      "source_sha256": "ce5317b94f46b5c359d4d1814bef5133ad8a205b5d0928996950b09bfb29c1e7",
+      "source_path": "skills/poppify-troubleshoot/SKILL.md",
+      "package_sha256": "72cf35a8279e1fc6426b9a86bf2c06097265c32a535a001268853a95ddd51e57",
+      "source_package": "Poppify-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9960b5d885a8b7e0640843baad44f8c89e352d82b6823c5020fa3746ab2c3d61": {
+      "description_zh": "修改 Porkbun 域名 DNS，适用于记录增删改、域名或子域指向托管平台和服务器、MX/SPF/DKIM/DMARC 邮件记录、名称服务器、DNSSEC 及撤销变更。",
+      "source": "Change DNS for a domain at Porkbun without breaking it. Use when the user asks to add, edit or delete DNS records, point a domain or subdomain at a host (Vercel, Netlify, GitHub Pages, a server IP), set up email records (MX, SPF, DKIM, DMARC), change nameservers, turn on DNSSEC, or undo a DNS change on a Porkbun domain.",
+      "source_sha256": "9960b5d885a8b7e0640843baad44f8c89e352d82b6823c5020fa3746ab2c3d61",
+      "source_path": "skills/change-dns-safely/SKILL.md",
+      "package_sha256": "ee7f318c6db858c21ebd526a9afe823824843aa2779e52539766db55179d7214",
+      "source_package": "Porkbun-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a008f20a06d900d28e128e83d544362f0f49c9b92474042064162fcf193c9bbf": {
+      "description_zh": "将网站发布到 Porkbun Secure Static Hosting。适用于 Porkbun 域名的网站、落地页、占位页创建更新和上线，或上传站点文件。",
+      "source": "Publish a website to Porkbun Secure Static Hosting. Use when the user asks you to build, create, update or put live a website, landing page or placeholder page for a domain they have at Porkbun, mentions Porkbun hosting or static hosting, or asks how to upload site files to Porkbun.",
+      "source_sha256": "a008f20a06d900d28e128e83d544362f0f49c9b92474042064162fcf193c9bbf",
+      "source_path": "skills/publish-website/SKILL.md",
+      "package_sha256": "ee7f318c6db858c21ebd526a9afe823824843aa2779e52539766db55179d7214",
+      "source_package": "Porkbun-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df78a0099a35266e49cdfb48317d4a47c4328096fd5fd0d0f218c80ffcee83ff": {
+      "description_zh": "通过简短引导访谈收集领域、目标、身份、作品、头像和社交账号，生成响应式、支持双语的个人作品集网站。按职业调整内容和视觉，准备 SEO/GEO 的 JSON-LD、hreflang、llms.txt、爬虫规则、站点地图及分享图。",
+      "source": "Interview the user through a short guided interview rounds, using popups when the host provides them (field, goals, identity, work, avatar photo, social accounts), then generate a responsive, bilingual-ready personal portfolio website modelled on the imMamdouhaboammar portfolio, fully prepared for SEO and GEO (Person/ProfilePage/FAQPage JSON-LD, hreflang, llms.txt, AI-crawler robots, sitemap, share image). Use when someone asks to build, make or generate a portfolio, personal website, profile page, CV site, \"about me\" page or link-in-bio site, or says \"اعملي بورتفوليو\", \"عايز موقع شخصي\", \"صفحة بروفايل\", \"موقع CV\". Adapts sections, schema types, tone and visual style to the person's field (developer, designer, marketer, writer, creator, photographer, product, consultant, academic, educator, law/medicine/finance).",
+      "source_sha256": "df78a0099a35266e49cdfb48317d4a47c4328096fd5fd0d0f218c80ffcee83ff",
+      "source_path": "SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b666dbd5d5a72e76a895d1eff1347a9edddd8bbcba002c7df9e6cd2079e913e": {
+      "description_zh": "审计已有作品集的事实来源、隐私、无障碍、响应式、阿拉伯语 RTL、链接、渲染、SEO/GEO 和发布回归。要求实际产物作为检查依据，输出可复现、标注严重度的发现及修复路径。",
+      "source": "Use to review an existing generated portfolio for factual provenance, privacy, accessibility, responsive behavior, Arabic RTL, broken links, rendering, SEO/GEO metadata and release regressions. Requires actual artifacts for claims of inspection and returns reproducible severity-tagged findings plus repair routes.",
+      "source_sha256": "6b666dbd5d5a72e76a895d1eff1347a9edddd8bbcba002c7df9e6cd2079e913e",
+      "source_path": "skills/portfolio-audit/SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed67f97c22e7bd27270990879485d64ff53a66ddc032458e691b4305487b0a31": {
+      "description_zh": "将已批准的作品集事实、文案和布局构建或重建为仓库静态站点，运行规范构建器和检查、记录真实证据并保护用户文件免于误覆盖，不虚报文件或截图。",
+      "source": "Use when approved portfolio facts, copy and layout must be generated or regenerated as the repository's static website. Runs the canonical builder and checks when execution exists, records build evidence, protects user work from accidental overwrite, and never claims files, screenshots or checks that were not actually produced.",
+      "source_sha256": "ed67f97c22e7bd27270990879485d64ff53a66ddc032458e691b4305487b0a31",
+      "source_path": "skills/portfolio-build/SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7120261271d79ff3d87c8c4d40dd8f72d937356740833c850945fe503ca8d4d": {
+      "description_zh": "在文案定位获批后设计作品集信息架构、章节层级、响应式方向、令牌、双语/RTL、无障碍和 UX 修复。为已有生成器输出布局决策记录，识别需要真正改模板能力的地方。",
+      "source": "Use for portfolio information architecture, section hierarchy, responsive visual direction, design tokens, bilingual/RTL behavior, accessibility and UX repair once messaging is approved. Produces a layout decision record for the existing static-site generator and identifies when a real template capability change is required.",
+      "source_sha256": "b7120261271d79ff3d87c8c4d40dd8f72d937356740833c850945fe503ca8d4d",
+      "source_path": "skills/portfolio-design/SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d999a581231e71ef5b4f73e18937ca3bc4bd1cb6a58097a18f161ded75171fff": {
+      "description_zh": "当作品集缺失事实、目标读者、定位、语言、视觉偏好、保密或公开联系选择等信息无法从批准来源安全获得时，直接访谈用户。生成最小状态补丁和批准台账，不重问已知事实。",
+      "source": "Use when the portfolio workflow needs direct user input that cannot be recovered safely from approved sources: missing facts, target reader, positioning, language/register, visual preferences, confidentiality, public contact choices, or explicit approval gates. Produces a minimal state patch and approval ledger without re-asking known facts.",
+      "source_sha256": "d999a581231e71ef5b4f73e18937ca3bc4bd1cb6a58097a18f161ded75171fff",
+      "source_path": "skills/portfolio-interview/SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4964f097804b76e7d174b05305d47afaaec56348f178e74335e84d484492d30b": {
+      "description_zh": "仅在用户明确要求时，将已评审作品集发布到获批目的地。要求完成质检及分别取得发布、公开联系方式批准，保护凭据并记录部署和上线后核验；无托管访问时停止。",
+      "source": "Use only when the user explicitly requests publishing or deploying a reviewed portfolio to an approved destination. Requires verified QA plus separate publication and public-contact approvals, protects credentials, records deployment evidence and post-release verification, and stops when host access is unavailable.",
+      "source_sha256": "4964f097804b76e7d174b05305d47afaaec56348f178e74335e84d484492d30b",
+      "source_path": "skills/portfolio-publish/SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60f83b545618e511aed9345bd13b375570669b706cb4b22bf343ac270f4012c1": {
+      "description_zh": "为含糊、多步骤、修复密集或需批准的作品集任务选择入口，读取共享状态、解决前提并选择有效专门技能链，验证交接和失败后重新路由，本身不执行专门工作。",
+      "source": "Use as the entry skill for ambiguous, multi-step, repair-heavy or approval-gated portfolio requests. Classifies intent, reads shared state, resolves prerequisites, selects the smallest valid specialist chain, enforces verification/approval boundaries, validates handoffs and reroutes after failures without performing specialist work itself.",
+      "source_sha256": "60f83b545618e511aed9345bd13b375570669b706cb4b22bf343ac270f4012c1",
+      "source_path": "skills/portfolio-router/SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80e7dd92a2069eb872511721cf3f615b78c2a0f6dff84ae9e74a7e8fbffaa2cc": {
+      "description_zh": "从简历、LinkedIn 导出、GitHub、旧网站、案例、评价或分析材料提取核实作品集事实，生成考虑同意范围的证据台账、冲突和优先缺口。事实未确认时先做来源核验再写作。",
+      "source": "Use when portfolio facts must be extracted or verified from a CV, resume, LinkedIn export, GitHub profile, old website, case-study files, testimonials, analytics or other supplied sources. Produces a consent-aware evidence ledger, conflicts and prioritized gaps; use before writing when claims are not already confirmed.",
+      "source_sha256": "80e7dd92a2069eb872511721cf3f615b78c2a0f6dff84ae9e74a7e8fbffaa2cc",
+      "source_path": "skills/portfolio-source/SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e5231b848888f200750c9723dbf787f565373c34b5de0a3fe11582119502241": {
+      "description_zh": "以英语或阿拉伯语撰写、改写或本地化已批准作品集标题、摘要、介绍、案例、服务及 SEO 元数据。需要已确认事实并映射证据，不负责布局或编造事实。",
+      "source": "Use to write, rewrite or localize approved portfolio headlines, summaries, About sections, project case studies, services and SEO metadata in English or Arabic. Requires confirmed source facts and maps factual copy back to evidence; use when messaging changes, not for layout or unsupported fact creation.",
+      "source_sha256": "2e5231b848888f200750c9723dbf787f565373c34b5de0a3fe11582119502241",
+      "source_path": "skills/portfolio-story/SKILL.md",
+      "package_sha256": "d7cf6d33a23322f8febc41595154594c0da520f0c3579887180d132ff9899653",
+      "source_package": "Portfolio Interview-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5faec758222b4cb0a3f34307a986058fedc775d50af274631087beb2153b1472": {
+      "description_zh": "指导 B2C 应用和产品在 TikTok/Instagram 无广告花费的自然增长，涵盖建号、原说明的七天预热、内容市场匹配、开头和文案、CTA、趋势、观看转下载及多账号和 Post Bridge 自动化时机。",
+      "source": "Organic growth coach for B2C apps and products on TikTok and Instagram, with no ad spend. Covers account creation, the 7-day warmup before posting, finding content-market fit, hook and caption formulas, CTA placement, riding trends, converting views into downloads, and when to scale to multiple accounts and automate with Post Bridge.",
+      "source_sha256": "5faec758222b4cb0a3f34307a986058fedc775d50af274631087beb2153b1472",
+      "source_path": "skills/b2c-organic-social-media-marketing/SKILL.md",
+      "package_sha256": "97d8e788138029e65a71c2a8672f519e9e26b7e2b9db8413941235db58d93602",
+      "source_package": "post bridge-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4853f5742238104d4f99a31a59b8a660254f2fe4fcf74116df6e7f0feb4fd61": {
+      "description_zh": "为已运营大量社交账号的人员提供批量管理方法，原说明覆盖15至400余账号。涵盖数量与渠道经济性、排期间隔、文案变化、逐账号结果、平台限制识别，以及失效令牌和垃圾内容限制恢复；不用于首个账号入门。",
+      "source": "Run 15 to 400+ social accounts without burning them. Covers account-count vs per-channel economics, bulk scheduling and spacing, per-account caption variation, reading per-account results instead of one vague error, telling a platform restriction apart from a real failure, and the recovery playbook for dead tokens and spam limits. For operators already running many accounts, not for someone starting their first.",
+      "source_sha256": "e4853f5742238104d4f99a31a59b8a660254f2fe4fcf74116df6e7f0feb4fd61",
+      "source_path": "skills/multi-account-operator/SKILL.md",
+      "package_sha256": "97d8e788138029e65a71c2a8672f519e9e26b7e2b9db8413941235db58d93602",
+      "source_package": "post bridge-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f27a9f1cc0dab3c36493f071035d2f8c235ef24a5a0307f9c5c4dab9d46a929": {
+      "description_zh": "通过 Post Bridge API 创建、排期和管理多平台社交帖子，覆盖媒体上传、平台配置、草稿、分析和结果跟踪。支持 Instagram、TikTok、YouTube、X、LinkedIn、Facebook、Pinterest、Threads 和 Bluesky。",
+      "source": "Create, schedule, and manage social media posts across Instagram, TikTok, YouTube, X, LinkedIn, Facebook, Pinterest, Threads, and Bluesky via the Post Bridge API. Covers media upload, post creation, scheduling, platform-specific configs, draft mode, analytics, and post result tracking.",
+      "source_sha256": "2f27a9f1cc0dab3c36493f071035d2f8c235ef24a5a0307f9c5c4dab9d46a929",
+      "source_path": "skills/post-bridge/SKILL.md",
+      "package_sha256": "97d8e788138029e65a71c2a8672f519e9e26b7e2b9db8413941235db58d93602",
+      "source_package": "post bridge-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b13c14d0ff3db84125f655bdd9dd2379b398d0bb538386559a5f5e476bcae5a": {
+      "description_zh": "在已连接的 post2all 账号中创建、验证、起草、排期、发布、更新或取消平台专属帖子。适用于 OpenClaw 多平台发布、文案适配、图片视频及先评审再发布的流程。",
+      "source": "Create, validate, draft, schedule, publish, update, cancel, and manage platform-specific social posts across connected post2all accounts. Use when the user wants OpenClaw to publish to multiple social networks, adapt copy per platform, handle images or video, or maintain a review-first social workflow.",
+      "source_sha256": "2b13c14d0ff3db84125f655bdd9dd2379b398d0bb538386559a5f5e476bcae5a",
+      "source_path": "openclaw/post2all/SKILL.md",
+      "package_sha256": "101bb33e377a83c5df61a4dee82d839e15cd138ead84f4531a021c30ba4d39b1",
+      "source_package": "Post2All-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ee0743d99f5356dc4704c4f869aa9fa92f81a745b4bbf0a4bb1b866fa44dbf8": {
+      "description_zh": "将已同步数仓表的列映射为 PostHog 人员或群组属性，用于功能开关定向、群组、分析筛选拆分、调查、回放和工作流。适用于用外部数据补充 ARR、套餐等属性，以及检查、补填、停用或排查已有映射。",
+      "source": "Sync columns from a synced data warehouse table onto PostHog person or group properties, so warehouse data becomes usable anywhere person and group properties already work: feature flag targeting, cohorts, insight filters and breakdowns, surveys, session replay filters, workflows, and the person profile. Use when the user wants to \"add a person property from my warehouse\", \"enrich people with Stripe/Postgres/Salesforce data\", \"put ARR or plan tier on my persons\", \"target a feature flag by a warehouse column\", \"sync warehouse columns onto groups or organizations\", or wants to inspect, backfill, disable, or debug an existing warehouse-backed person or group property.",
+      "source_sha256": "8ee0743d99f5356dc4704c4f869aa9fa92f81a745b4bbf0a4bb1b866fa44dbf8",
+      "source_path": "skills/adding-warehouse-person-properties/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff04a99a452e32335f3ee7e34626cb1521328056c9dd539049f60c43ca42b2ca": {
+      "description_zh": "分析 AI 可观测中成本最高的用户及原因，适用于查看主要花费者、单用户 LLM 成本、高成本驱动和使用模式。",
+      "source": "Analyze the most expensive users in AI observability and explain why they cost so much. Use when the user asks about top spenders, expensive users, per-user LLM cost, user-level cost drivers, or patterns behind high AI observability spend.",
+      "source_sha256": "ff04a99a452e32335f3ee7e34626cb1521328056c9dd539049f60c43ca42b2ca",
+      "source_path": "skills/analyzing-expensive-users/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aeddb2c5f0b14fdcf69b106d58b41005ad24769f09f432fd6150a3dcb9b46199": {
+      "description_zh": "比较实验各变体的会话回放，识别行为差异和可用性问题，为定量结果提供定性补充。需要进一步反馈时可结合关联调查。",
+      "source": "Analyze session replay patterns across experiment variants to understand user behavior differences. Use when the user wants to see how users interact with different experiment variants, identify usability issues, compare behavior patterns between control and test groups, or get qualitative insights to complement quantitative experiment results. Also covers pairing the observed behavior with a linked survey when the user wants qualitative feedback beyond what recordings show.",
+      "source_sha256": "aeddb2c5f0b14fdcf69b106d58b41005ad24769f09f432fd6150a3dcb9b46199",
+      "source_path": "skills/analyzing-experiment-session-replays/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b60178503ee19c72e92c60a577b8e7c1a281ac9dc02663b6cebcc77b4103d071": {
+      "description_zh": "将已完成的 PostHog 任务运行拆为活动记录，核验智能体尝试、结果和阻塞证据，并通过 report_activity 逐项记录。使用有界 jq 查询原始 JSONL，支持两种日志模式；只记事实，不提出修复。",
+      "source": "Split a completed PostHog task run into activity records — what the agent tried, whether it worked, what blocked it — and record each one through the report_activity tool. Use when a task asks to analyze a run, produce a task analysis, or review a run from an attached run log. Covers the log query protocol (bounded jq queries over the raw JSONL), both log schemas, the activity schema, and evidence verification. Records facts only; it does not suggest fixes.",
+      "source_sha256": "b60178503ee19c72e92c60a577b8e7c1a281ac9dc02663b6cebcc77b4103d071",
+      "source_path": "skills/analyzing-task-runs/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "864bace6de50d9617a813d69abb2e071853e10bfe9433d3ce2fc778113090b5d": {
+      "description_zh": "分析页面点击、愤怒点击和滚动深度热图，与自动采集事件关联识别热点元素，可创建保存热图并提出具体改进。仅保存截图使用直接工具，通用回放问题使用 investigating-replay。",
+      "source": "Assesses what a page's heatmap is telling you and recommends concrete changes. Pulls click / rageclick / scroll-depth data for a URL, names the hot elements by cross-referencing autocapture events on the same page, and can create a saved heatmap the user opens in PostHog, then summarizes the behavior and proposes improvements.\nTRIGGER when: user asks what a heatmap shows, why people aren't clicking something, where users rage-click, how far they scroll, what to change on a page based on heatmap/click data, or to 'analyze/assess/review the heatmap' for a URL.\nDO NOT TRIGGER when: the user only wants to create a saved heatmap screenshot with no analysis (use heatmaps-saved-create directly), or is asking about session replay in general (use investigating-replay).",
+      "source_sha256": "864bace6de50d9617a813d69abb2e071853e10bfe9433d3ce2fc778113090b5d",
+      "source_path": "skills/assessing-heatmaps/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "afee376e4ee1e3327c0016cf699b48006a6ad85106ee83632bace030b59063b4": {
+      "description_zh": "审计 PostHog 项目全部端点的过时、物化失败和无用物化版本，按问题类型生成优先建议报告。未经明确确认不修改任何内容。",
+      "source": "Audit every endpoint in a PostHog project for staleness, failed materialisations, and unused materialised versions. Use when the user asks \"what endpoints can I clean up?\", \"are any of my endpoints broken?\", \"which materialised versions are still being called?\", or wants a one-shot cleanup pass over the Endpoints product. Produces a prioritised report grouped by issue type, with recommended actions but does not modify anything without explicit confirmation.",
+      "source_sha256": "afee376e4ee1e3327c0016cf699b48006a6ad85106ee83632bace030b59063b4",
+      "source_path": "skills/auditing-endpoints/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "644b06e160df549f623204329f66aca6ef866fd683e9a99ca37ffe268a00739e": {
+      "description_zh": "审计 PostHog 实验和功能开关的配置、过时状态及实践违规。适用于健康检查、开关清理和实验设置核验。",
+      "source": "Audit PostHog experiments and feature flags for configuration issues, staleness, and best-practice violations. Read when the user asks to audit, health-check, or review experiments or feature flags, check flag hygiene, or verify experiment setup.",
+      "source_sha256": "644b06e160df549f623204329f66aca6ef866fd683e9a99ca37ffe268a00739e",
+      "source_path": "skills/auditing-experiments-flags/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61858e341ce69a732baed447f0acdb6d0c0ef7f4686f2fbc4634042037159386": {
+      "description_zh": "审计 PostHog 数仓来源、连接、同步模式及 webhook 通道的故障和退化，按严重度排序并建议下一步。物化视图使用专门视图审计，单个失败同步使用专门诊断技能。",
+      "source": "Audit the health of a PostHog project's data warehouse sources and syncs — find every broken or degraded source connection, sync schema, and webhook channel. Use when the user asks \"why are my imports failing?\", \"what's broken with my sources?\", \"why is my warehouse data stale?\", or wants a one-shot triage of source/sync health before deciding where to dig in. Produces a prioritized report grouped by severity, with recommended next steps. For materialized-view health use `auditing-warehouse-view-health`; for a single failing sync use `diagnosing-failed-warehouse-syncs`.",
+      "source_sha256": "61858e341ce69a732baed447f0acdb6d0c0ef7f4686f2fbc4634042037159386",
+      "source_path": "skills/auditing-warehouse-source-health/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35695d6bf5524a1415b19ea0c372e96600170acebd89e7abf879d8cd656d2cad": {
+      "description_zh": "审计 PostHog 物化视图和保存查询，定位物化失败并识别闲置或过时且耗费存储计算的视图。来源和同步健康交由 auditing-warehouse-source-health。",
+      "source": "Audit the health of a PostHog project's materialized views (saved queries) — find every failed materialization and flag unused or stale materialized views that cost storage and compute. Use when the user asks \"which of my views are broken?\", \"why is this materialized view failing?\", \"are any of my views wasting compute?\", or wants a one-shot triage of view health. For source/sync health use `auditing-warehouse-source-health`.",
+      "source_sha256": "35695d6bf5524a1415b19ea0c372e96600170acebd89e7abf879d8cd656d2cad",
+      "source_path": "skills/auditing-warehouse-view-health/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbe8ea4a44607480a6ed71ab7d8d19fd2ec60bfa5bdf4c5d98612c2e98e2f5c1": {
+      "description_zh": "为 PostHog 数仓表及保存查询视图添加并执行类似 dbt test 的质量断言，涵盖非空、唯一、允许值、引用完整性、行数范围、新鲜度和自定义 HogQL。适用于验证可信度或异常数字；指标语义、认证和关联定义另用数据目录技能。",
+      "source": "Adds and runs data quality checks (dbt-test style assertions) on a project's warehouse tables and saved-query views: not-null, uniqueness, accepted values, referential integrity, row-count bounds, freshness, and custom HogQL. Use when asked to test a model, validate a view, check for nulls or duplicates, add data quality checks, find out why a number looks wrong, or judge whether a warehouse table is trustworthy before using it in an analysis. To describe what data *means* (metrics, certifications, joins), see setting-up-data-catalog instead. Trigger terms: data quality, data test, dbt test, not null check, uniqueness check, freshness check, referential integrity, row count check, validate model, is this table trustworthy.",
+      "source_sha256": "bbe8ea4a44607480a6ed71ab7d8d19fd2ec60bfa5bdf4c5d98612c2e98e2f5c1",
+      "source_path": "skills/authoring-data-quality-checks/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ac325f7ee90eaa5827ec24b282d6ab450f3c650d0fc916fe9db364f659a0f5f": {
+      "description_zh": "创建 PostHog 错误跟踪告警，在问题新建、重开或激增时通知。涵盖触发选择、Slack/webhook/Linear 集成、既有告警去重及规范消息体。",
+      "source": "Author error tracking alerts that fire when an issue is created, reopened, or starts spiking. Use when the user asks to set up error notifications, route exceptions to Slack/webhook/Linear, or evaluate which error events are worth alerting on. Covers trigger-event selection, integration choice, dedup against existing alerts, and shipping with the canonical message body shape.",
+      "source_sha256": "5ac325f7ee90eaa5827ec24b282d6ab450f3c650d0fc916fe9db364f659a0f5f",
+      "source_path": "skills/authoring-error-tracking-alerts/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5458d92c9c2f2987052c0e4bad42232830837d00362859caa73840b7d6445273": {
+      "description_zh": "为 PostHog 服务编写低噪声日志告警，涵盖服务分诊、基线、阈值草拟、simulate 回测及通知目标。适用于增加日志告警或评估监控价值。",
+      "source": "Author useful, low-noise log alerts on services in a PostHog project. Use when the user asks to set up alerts for their logs, suggest alerts they should add, or evaluate whether a service is worth monitoring. Covers service triage, baseline characterisation, threshold drafting, back-testing via simulate, and shipping with a notification destination.",
+      "source_sha256": "5458d92c9c2f2987052c0e4bad42232830837d00362859caa73840b7d6445273",
+      "source_path": "skills/authoring-log-alerts/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "397ba6b59e8de216441ca5829ddbe9070bab40b0d81ee76b3ac416ec0c71e47c": {
+      "description_zh": "创建、编辑或调整 PostHog Signals 定时 scout，包括范围、阈值、排除条件、排期、预演、结构化测量及留言反馈。覆盖 SKILL.md、报告契约、结构化输出、去重和临时记忆、团队存储路径及测试循环。",
+      "source": "How to author, edit, and adapt PostHog Signals scouts — the scheduled agents that scan a project and write reports into the Signals inbox. Use to customize a canonical scout (narrow its scope, retune thresholds, add disqualifiers), tweak a scout's schedule or dry-run posture, write a new scout for a surface the fleet doesn't cover, build a measurement scout that records structured output (an LLM-judge scoring a sample on a schedule — a custom metric no query can compute), or steer a scout without editing it by leaving it a note. Covers the scout SKILL.md anatomy, the report contract, the structured-output channel, the dedupe + scratchpad-memory conventions, scout notes, the per-team skills-store path vs the canonical in-repo path, and the test loop. Trigger on \"write/edit/customize a signals scout\", \"new scout for X\", \"tune my scout schedule\", \"make a scout that watches <event>\", \"score/judge/measure X with a scout\", \"structured output from a scout\", \"leave a note for / give feedback to a scout\".",
+      "source_sha256": "397ba6b59e8de216441ca5829ddbe9070bab40b0d81ee76b3ac416ec0c71e47c",
+      "source_path": "skills/authoring-scouts/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bfd2276e581d6a4125c484e5ecdd2f9d6eef10e9aebec36e3f55785d77834a8": {
+      "description_zh": "通过 MCP 根据分析 insight 新建或更新 PostHog 看板，决定创建或更新、复用或新建 insight，参考已审核模板组合产品、留存、收入和激活等主题。适用于增删替换看板指标图表。",
+      "source": "Build a new dashboard, or update an existing one, from a set of insights — the same job the in-app assistant does with its upsert-dashboard tool, but over MCP. Use when a user asks to create a dashboard, put several metrics/charts together on one page, assemble a dashboard for a topic (product analytics, retention, revenue, activation, etc.), or add/remove/replace insights on a dashboard they already have. Covers deciding create vs update, reusing existing insights vs creating new ones, and using PostHog's vetted dashboard templates as reference for what a strong dashboard on a topic looks like.",
+      "source_sha256": "1bfd2276e581d6a4125c484e5ecdd2f9d6eef10e9aebec36e3f55785d77834a8",
+      "source_path": "skills/building-a-dashboard/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e710461b5960e286d3f7270bf101a53599b195d2e529134c1df2edc12e0ed54c": {
+      "description_zh": "创建或编辑存储并渲染在 PostHog 的自由画布浏览器应用，例如数据板、文档、表单、工具或图形试验。覆盖定位目标、React/Quill或原生HTML实现，以及读取、编辑、验证、发布和构建流程；网格画布、组件及布局另用 composing-grid-canvases。",
+      "source": "Create or edit a PostHog freeform canvas — a sandboxed browser application (data board, document, form, small tool, graphics experiment) stored in PostHog and rendered by the desktop/web app. Use when a task asks to build, generate, update, or fix a standalone canvas app, or when a freeform canvas id is given as the publish target. For grid/home canvases, widget placements, or reusable components, use composing-grid-canvases instead. Covers resolving or creating the target canvas, choosing an implementation approach (React + Quill vs plain HTML/browser APIs), the read → edit → validate → publish → build loop, and which companion canvas skills to load for the details.",
+      "source_sha256": "e710461b5960e286d3f7270bf101a53599b195d2e529134c1df2edc12e0ed54c",
+      "source_path": "skills/building-canvases/SKILL.md",
+      "package_sha256": "a9e849a68ea3d5fc02fd49e3ac6675a95ad4ed438a584f456bd378b7a02c66b3",
+      "source_package": "posthog-1.1.63-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
