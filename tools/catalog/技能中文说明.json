@@ -43729,6 +43729,1086 @@
       "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
       "source_package": "Maven Bio-0.6.0-v4.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f2346d951496eca2a4d7701089054baa8fc4f273759f7ab760bfc04dda94564": {
+      "description_zh": "为药品收入或估值预测汇集患者人群、渗透率、定价、时点和竞争侵蚀等假设及各自证据，输出假设而非成品表格或叙述；仅需市场规模时用size-market。",
+      "source": "Assemble the assumptions behind a revenue or valuation forecast: population, penetration, pricing, timing, and competitive erosion, each with its evidence. Use when someone is building a model, for example 'what assumptions should I use for X', 'help me forecast peak sales'. Returns assumptions, not a finished spreadsheet or narrative. Use size-market when only sizing is wanted.",
+      "source_sha256": "5f2346d951496eca2a4d7701089054baa8fc4f273759f7ab760bfc04dda94564",
+      "source_path": "skills/financial-forecast/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7c1fbb1c5e957fd019cc56d4ad23336139c9b6f8776938e2acb7ba520454fb9": {
+      "description_zh": "按适应症、机制、靶点或投资者集合绘制资金流向、金额和时间变化，形成市场级资本图景；单家公司逐轮融资与药物竞争管线另用对应技能。",
+      "source": "Map capital flow across a space: who is funding an indication, mechanism, target, or investor set, how much, and how it has moved over time. Use for market-level money questions, for example 'who is funding TL1A', 'how much has gone into obesity'. Use trace-financings when someone wants the round-by-round record for one company, and competitive-pipeline for drug programs rather than capital.",
+      "source_sha256": "a7c1fbb1c5e957fd019cc56d4ad23336139c9b6f8776938e2acb7ba520454fb9",
+      "source_path": "skills/funding-landscape/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ede1caaabc27f3c830ca6ca4b3cd7dec8cfcc5ea3a55350e049eb158fcdff53c": {
+      "description_zh": "寻找可支持药品资产、公司或市场判断的历史及竞争先例，解释可比性，用于发布或定价类比；指定资产直接并列比较用benchmark-assets。",
+      "source": "Find historical or competitive precedents that inform an asset, company, or market question, and explain why each is a fair comparison. Use for precedent reasoning, for example 'what is the closest analog to this launch', 'what should we price off'. Use benchmark-assets for a direct side-by-side comparison of named assets instead.",
+      "source_sha256": "ede1caaabc27f3c830ca6ca4b3cd7dec8cfcc5ea3a55350e049eb158fcdff53c",
+      "source_path": "skills/identify-analogs/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd96e286945dc38143eeff6eab9cb2fa175adb57e2618250c18e7734c1a5dc99": {
+      "description_zh": "以证据构建疾病概况，覆盖临床背景、流行病学、未满足需求、标准治疗和研发管线应对；竞争药物及纯市场规模另用专门技能。",
+      "source": "Build an evidence-backed picture of a disease: clinical context, epidemiology, unmet need, standard of care, and how the pipeline addresses it. Use for disease-first questions, for example 'tell me about ulcerative colitis', 'what is the unmet need in NASH'. Use competitive-pipeline when the question is really about competing drug programs, and size-market when only sizing is wanted.",
+      "source_sha256": "cd96e286945dc38143eeff6eab9cb2fa175adb57e2618250c18e7734c1a5dc99",
+      "source_path": "skills/indication-research/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d5c043cf1df8431816ded957332010d30b714a788e285230177ae36e10874e77": {
+      "description_zh": "为单一已知药物、公司、试验、机制或靶点返回结构化证据事实表，作为工作流基础组件；完整药物与公司情报使用asset-profile或company-portfolio。",
+      "source": "Return one structured, evidence-backed fact sheet for a single known drug, company, trial, mechanism, or target. This is a building block the workflow skills compose. Use it directly only when someone wants the raw fact pattern for one entity; for a full asset picture use asset-profile, and for a full company picture use company-portfolio.",
+      "source_sha256": "d5c043cf1df8431816ded957332010d30b714a788e285230177ae36e10874e77",
+      "source_path": "skills/profile-entity/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eba16689826721b8ad704d3de29cad2e7fe5b1804fc57d7d6efec0decee12d1f": {
+      "description_zh": "估计患者人群与市场规模，明确假设、证据强度及剩余不确定性；收入预测假设与疾病整体研究另用对应技能。",
+      "source": "Estimate patient population and market size with explicit assumptions, evidence strength, and remaining uncertainty. Use when sizing is the question, for example 'how big is the market for X', 'how many patients are eligible'. Use financial-forecast when revenue projection assumptions are wanted, and indication-research for the broader disease picture.",
+      "source_sha256": "eba16689826721b8ad704d3de29cad2e7fe5b1804fc57d7d6efec0decee12d1f",
+      "source_path": "skills/size-market/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "004a9b19ab43ffdf5d16a2db4d250838316ac28a12e1ab3f4a7b72104dc54626": {
+      "description_zh": "将已发现事实综合为有证据的主张，附证据评级、逐字引用与标准来源，在展示结果前或需关联具体申报文件时使用。",
+      "source": "Turn already-discovered facts into evidence-backed claims with evidence ratings, verbatim quotes, and canonical source references. Use as the final evidence pass before presenting findings, or when a claim must be tied back to a specific filing. This is a building block the workflow skills compose.",
+      "source_sha256": "004a9b19ab43ffdf5d16a2db4d250838316ac28a12e1ab3f4a7b72104dc54626",
+      "source_path": "skills/synthesize-evidence/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6764a6c23f3e12c712ad21769a65e7a8ed34e6e3a1d5e12e56d734f788d43023": {
+      "description_zh": "为指定药物、公司、试验或适应症整理近期FDA动作、试验结果及新闻稿事件流，逐事件提供结构化证据。",
+      "source": "Return the recent event stream (FDA actions, trial readouts, press releases) for a named drug, company, trial, or indication, with structured evidence per event. Use for recency questions, for example 'what happened with X recently', 'any news on this program'. This is a building block the workflow skills compose.",
+      "source_sha256": "6764a6c23f3e12c712ad21769a65e7a8ed34e6e3a1d5e12e56d734f788d43023",
+      "source_path": "skills/trace-events/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73c1b5675cb93e822b8c2b8350ef871e26867d4ec32c9652cb444c9d8cd6eb84": {
+      "description_zh": "返回指定公司逐轮融资金额、日期、投资者与来源，或按适应症、机制、靶点、投资者筛选；市场级资金图景使用funding-landscape。",
+      "source": "Return the round-by-round financing record (amounts, dates, investors, provenance) for a named company, or filtered by indication, mechanism, target, or investor. Use when someone wants the actual rounds, for example 'list the funding rounds for X', 'who invested in their Series B'. Use funding-landscape when they want a market-level capital picture rather than a round list.",
+      "source_sha256": "73c1b5675cb93e822b8c2b8350ef871e26867d4ec32c9652cb444c9d8cd6eb84",
+      "source_path": "skills/trace-financings/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f971d54cd9670af08a9e7a1ff94c05c23f3f86539ebd552cf417a542e08a88b5": {
+      "description_zh": "从公开生物医学数据库评估药物靶点的遗传依据，覆盖基因疾病关联强度、基因约束、可成药性及已知药物。",
+      "source": "Validate the genetic basis of a drug target: gene-disease association strength, gene constraint, tractability, and known drugs, from public biomedical databases. Use when a thesis turns on whether a target is genetically validated.",
+      "source_sha256": "f971d54cd9670af08a9e7a1ff94c05c23f3f86539ebd552cf417a542e08a88b5",
+      "source_path": "skills/validate-target/SKILL.md",
+      "package_sha256": "4f06eac1af977ea5bda0f2474abc8488d4b337d769c2ffb4a8312208cd66ab05",
+      "source_package": "Maven Bio-0.6.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "402a60e479dd9ce10e57d19f712a32d2baa3b2d5ccb539aa871f4fc68ad4b24b": {
+      "description_zh": "为已有工具的MCP服务器增加交互界面，分析现有工具并注册MCP Apps UI资源。",
+      "source": "This skill should be used when the user asks to \"add an app to my MCP server\", \"add UI to my MCP server\", \"add a view to my MCP tool\", \"enrich MCP tools with UI\", \"add interactive UI to existing server\", \"add MCP Apps to my server\", or needs to add interactive UI capabilities to an existing MCP server that already has tools. Provides guidance for analyzing existing tools and adding MCP Apps UI resources.",
+      "source_sha256": "402a60e479dd9ce10e57d19f712a32d2baa3b2d5ccb539aa871f4fc68ad4b24b",
+      "source_path": "skills/add-app-to-server/SKILL.md",
+      "package_sha256": "aa0c4319f171f8411a467cb57d703cee9254791adf4fdf13ace6b46327494f7e",
+      "source_package": "mcp-apps-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54629fdab4ed3b4354e95e5f737595f4482c954c31d5e7eef78e9b63ae67b021": {
+      "description_zh": "将已有网页或SPA扩展为独立运行与MCP App共用的混合应用，分析界面并在服务器注册工具资源，支持iframe嵌入转换。",
+      "source": "This skill should be used when the user asks to \"add MCP App support to my web app\", \"turn my web app into a hybrid MCP App\", \"make my web page work as an MCP App too\", \"wrap my existing UI as an MCP App\", \"convert iframe embed to MCP App\", \"turn my SPA into an MCP App\", or needs to add MCP App support to an existing web application while keeping it working standalone. Provides guidance for analyzing existing web apps and creating a hybrid web + MCP App with server-side tool and resource registration.",
+      "source_sha256": "54629fdab4ed3b4354e95e5f737595f4482c954c31d5e7eef78e9b63ae67b021",
+      "source_path": "skills/convert-web-app/SKILL.md",
+      "package_sha256": "aa0c4319f171f8411a467cb57d703cee9254791adf4fdf13ace6b46327494f7e",
+      "source_package": "mcp-apps-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b22b6694e191604e95a8068faa5ba6b7854cbc15a604785d9aff020beda38fc": {
+      "description_zh": "指导构建带交互UI的MCP App，涵盖SDK模式、界面资源注册、应用生命周期与宿主集成。",
+      "source": "This skill should be used when the user asks to \"create an MCP App\", \"add a UI to an MCP tool\", \"build an interactive MCP View\", \"scaffold an MCP App\", or needs guidance on MCP Apps SDK patterns, UI-resource registration, MCP App lifecycle, or host integration. Provides comprehensive guidance for building MCP Apps with interactive UIs.",
+      "source_sha256": "9b22b6694e191604e95a8068faa5ba6b7854cbc15a604785d9aff020beda38fc",
+      "source_path": "skills/create-mcp-app/SKILL.md",
+      "package_sha256": "aa0c4319f171f8411a467cb57d703cee9254791adf4fdf13ace6b46327494f7e",
+      "source_package": "mcp-apps-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6384588a5ceb945822992705401009136d01b740ae9a5c97e532863da8b7f51e": {
+      "description_zh": "将OpenAI Apps SDK应用迁移至MCP Apps SDK，提供逐步流程及API映射，涵盖window.openai、skybridge和outputTemplate转换。",
+      "source": "This skill should be used when the user asks to \"migrate from OpenAI Apps SDK\", \"convert OpenAI App to MCP\", \"port from window.openai\", \"migrate from skybridge\", \"convert openai/outputTemplate\", or needs guidance on converting OpenAI Apps SDK applications to MCP Apps SDK. Provides step-by-step migration guidance with API mapping tables.",
+      "source_sha256": "6384588a5ceb945822992705401009136d01b740ae9a5c97e532863da8b7f51e",
+      "source_path": "skills/migrate-oai-app/SKILL.md",
+      "package_sha256": "aa0c4319f171f8411a467cb57d703cee9254791adf4fdf13ace6b46327494f7e",
+      "source_package": "mcp-apps-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ee29aaa74992585ef8c10d056d34b7e45f64380d655694637c23ca2fdfa6ec4": {
+      "description_zh": "为MCP工具构建聊天内交互组件，包括表单、选择器、仪表板和确认框；先由build-mcp-server确定部署模式，或已有明确UI需求时使用。",
+      "source": "This skill should be used when the user wants to build an \"MCP app\", add \"interactive UI\" or \"widgets\" to an MCP server, \"render components in chat\", build \"MCP UI resources\", make a tool that shows a \"form\", \"picker\", \"dashboard\" or \"confirmation dialog\" inline in the conversation, or mentions \"apps SDK\" in the context of MCP. Use AFTER the build-mcp-server skill has settled the deployment model, or when the user already knows they want UI widgets.",
+      "source_sha256": "5ee29aaa74992585ef8c10d056d34b7e45f64380d655694637c23ca2fdfa6ec4",
+      "source_path": "skills/build-mcp-app/SKILL.md",
+      "package_sha256": "232d167bc041fd6ac2607b160801a8a0e911ec18e1e1e09085866478db8d763e",
+      "source_package": "mcp-server-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a06d29f5b8b829e1b2cca1f130ee283fb19cbd60adbf13ad6a6285860b1c64f1": {
+      "description_zh": "作为MCP服务器开发入口，澄清用例、选择远程HTTP、MCPB或本地stdio部署模式和工具设计，再交由专门技能实现。",
+      "source": "This skill should be used when the user asks to \"build an MCP server\", \"create an MCP\", \"make an MCP integration\", \"wrap an API for Claude\", \"expose tools to Claude\", \"make an MCP app\", or discusses building something with the Model Context Protocol. It is the entry point for MCP server development — it interrogates the user about their use case, determines the right deployment model (remote HTTP, MCPB, local stdio), picks a tool-design pattern, and hands off to specialized skills.",
+      "source_sha256": "a06d29f5b8b829e1b2cca1f130ee283fb19cbd60adbf13ad6a6285860b1c64f1",
+      "source_path": "skills/build-mcp-server/SKILL.md",
+      "package_sha256": "232d167bc041fd6ac2607b160801a8a0e911ec18e1e1e09085866478db8d763e",
+      "source_package": "mcp-server-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14db684b1da678bfede6945f66df8222f82c3b32fd1d326cc84ac0f0238064b0": {
+      "description_zh": "将本地MCP服务器打包为MCPB，支持随附Node或Python运行时，以及需本地文件、桌面应用或操作系统交互但用户无需自行安装运行时的分发。",
+      "source": "This skill should be used when the user wants to \"package an MCP server\", \"bundle an MCP\", \"make an MCPB\", \"ship a local MCP server\", \"distribute a local MCP\", discusses \".mcpb files\", mentions bundling a Node or Python runtime with their MCP server, or needs an MCP server that interacts with the local filesystem, desktop apps, or OS and must be installable without the user having Node/Python set up.",
+      "source_sha256": "14db684b1da678bfede6945f66df8222f82c3b32fd1d326cc84ac0f0238064b0",
+      "source_path": "skills/build-mcpb/SKILL.md",
+      "package_sha256": "232d167bc041fd6ac2607b160801a8a0e911ec18e1e1e09085866478db8d763e",
+      "source_package": "mcp-server-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45cb67a4fd375c1660d63cc82e92c6a3e58934acb778333fb49ee2655158924f": {
+      "description_zh": "分析MCP服务器源码，分类架构模式、列出工具并评估转换为CLI的可行性。",
+      "source": "Analyze MCP server source code to classify its pattern and assess CLI conversion feasibility. Use when the user wants to understand an MCP server's architecture, list its tools, or determine if it can be converted to a CLI. Triggers on \"analyze mcp\", \"mcp server pattern\", \"conversion feasibility\", \"what type of mcp\".",
+      "source_sha256": "45cb67a4fd375c1660d63cc82e92c6a3e58934acb778333fb49ee2655158924f",
+      "source_path": "skills/mcp-analyze/SKILL.md",
+      "package_sha256": "f8536e3d5cf6311d81278292b2c7543ff269156260af42e19e38073e7dee5ff8",
+      "source_package": "mcp2cli-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7241e6dc531f6d067a176452d1947c6c09cc26983a6ee3bec808e71880bf8dda": {
+      "description_zh": "根据MCP服务器分析生成TypeScript CLI代码，搭建项目并设计由MCP工具映射的命令结构。",
+      "source": "Generate TypeScript CLI tool code from an MCP server analysis. Use when the user wants to create a CLI tool, generate CLI code, scaffold a CLI project, or design CLI command structure from MCP tools. Triggers on \"generate cli\", \"create cli\", \"cli code\", \"scaffold cli\", \"mcp to typescript\".",
+      "source_sha256": "7241e6dc531f6d067a176452d1947c6c09cc26983a6ee3bec808e71880bf8dda",
+      "source_path": "skills/mcp-codegen/SKILL.md",
+      "package_sha256": "f8536e3d5cf6311d81278292b2c7543ff269156260af42e19e38073e7dee5ff8",
+      "source_package": "mcp2cli-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f528bab2e6e099f02d5b7551b63415c2eb402b0f41aa1162de3bc6599dd8847": {
+      "description_zh": "为CLI工具生成SKILL.md，说明智能体使用方式，使Claude Code能有效调用命令行工具。",
+      "source": "Generate a SKILL.md file for a CLI tool so Claude Code can use it effectively. Use when creating SKILL.md, writing skill files, documenting CLI tools for agents, or making a CLI agent-friendly. Triggers on \"generate skill\", \"create skill.md\", \"write skill\", \"skill for cli\", \"agent documentation\".",
+      "source_sha256": "7f528bab2e6e099f02d5b7551b63415c2eb402b0f41aa1162de3bc6599dd8847",
+      "source_path": "skills/skill-author/SKILL.md",
+      "package_sha256": "f8536e3d5cf6311d81278292b2c7543ff269156260af42e19e38073e7dee5ff8",
+      "source_package": "mcp2cli-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e723649928bfe1109a19ba9f26568e5478b046331d4b720f0d40559e3bb2ffb4": {
+      "description_zh": "使用MCPBackend管理模式定义和API。",
+      "source": "Use MCPBackend to manage schemas and APIs.",
+      "source_sha256": "e723649928bfe1109a19ba9f26568e5478b046331d4b720f0d40559e3bb2ffb4",
+      "source_path": "skills/mcpbackend/SKILL.md",
+      "package_sha256": "68ad98599bdceab47ea95759973787b27d7dab88f0906554fcd7992f8cba2fc9",
+      "source_package": "Mcpbackend-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "858690dc2707e0b08502c8744008c7e82b7fd703a6ad644bc69a80f8ad25095b": {
+      "description_zh": "使用已保存风格档案，按用户自身语气起草邮件、Slack、PR、帖子及文档；/me init建立档案。",
+      "source": "Writes in the user's own voice using their saved style profile. Use for anything the user will send or publish as themselves (emails, Slack, PRs, posts, docs). /me init sets it up.",
+      "source_sha256": "858690dc2707e0b08502c8744008c7e82b7fd703a6ad644bc69a80f8ad25095b",
+      "source_path": "skills/me/SKILL.md",
+      "package_sha256": "5ee2880251d3f9d0768f538ee3e49aba9c25ddd4bc04d0a097825a7dd346706b",
+      "source_package": "me — write like me-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7320443c7bc54cd29ecdd999b373e3f1aaba619b7f2e2213c43f769f2494147d": {
+      "description_zh": "根据Grain会议起草可发送的跟进邮件、客户摘要、内部更新、简报、决策日志、证据包或工单。",
+      "source": "Draft sendable work product from Grain meetings — a follow-up email, client recap, internal update, brief, decision log, evidence pack, or ticket. Use when the user wants to send, post, or file anything based on what happened in meetings.",
+      "source_sha256": "7320443c7bc54cd29ecdd999b373e3f1aaba619b7f2e2213c43f769f2494147d",
+      "source_path": "skills/follow-up/SKILL.md",
+      "package_sha256": "9cf5cc38c3759887b30a0dfd42d3d6374132cfec7afe7a7ceb7ef12355e62911",
+      "source_package": "Meeting Memory by Grain-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f28a7ca43947dc153e5cf6dc5f6fb082a880013b5b253e9622259fff696d8869": {
+      "description_zh": "当工作提及特定人员、公司、客户或项目时，从Grain会议历史主动提供相关背景，支持文稿与客户决策核对；原说明排除生日祝贺等纯社交消息。",
+      "source": "Give the user a heads-up from Grain meeting history when their work names a specific person, company, account, or project — even though they didn't ask about meetings. Use when an email, doc, or draft being written or edited mentions a client or account, when the user weighs a should-we decision about a customer, or when they cite what a specific person wants, said, or agreed to. Skip purely personal or social messages (birthday notes, congratulations, small talk) even when they name someone.",
+      "source_sha256": "f28a7ca43947dc153e5cf6dc5f6fb082a880013b5b253e9622259fff696d8869",
+      "source_path": "skills/heads-up/SKILL.md",
+      "package_sha256": "9cf5cc38c3759887b30a0dfd42d3d6374132cfec7afe7a7ceb7ef12355e62911",
+      "source_package": "Meeting Memory by Grain-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83e226fc370f9efe22aaebb04c787343a047041e4e5e07ba7ab7d075b1c48476": {
+      "description_zh": "利用Grain会议历史，为即将进行的会议、人员或客户交流准备简报。",
+      "source": "Prepare the user for an upcoming conversation using Grain meeting history. Use when the user asks for prep or a briefing on a meeting, person, or account.",
+      "source_sha256": "83e226fc370f9efe22aaebb04c787343a047041e4e5e07ba7ab7d075b1c48476",
+      "source_path": "skills/prep-me/SKILL.md",
+      "package_sha256": "9cf5cc38c3759887b30a0dfd42d3d6374132cfec7afe7a7ceb7ef12355e62911",
+      "source_package": "Meeting Memory by Grain-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c55782577f5653577de891bf9a6501b3e1f5b2c7c375b63fa903e938af1ee0b9": {
+      "description_zh": "依据Grain会议记录回答说过什么、决定及原因、是否真实同意和跨会议反复主题，并提供引用证据。",
+      "source": "Answer from the Grain meeting record with cited evidence. Use when the user asks what was said or decided and why, whether someone actually said or agreed to something, or what keeps coming up across meetings.",
+      "source_sha256": "c55782577f5653577de891bf9a6501b3e1f5b2c7c375b63fa903e938af1ee0b9",
+      "source_path": "skills/what-did-we-say/SKILL.md",
+      "package_sha256": "9cf5cc38c3759887b30a0dfd42d3d6374132cfec7afe7a7ceb7ef12355e62911",
+      "source_package": "Meeting Memory by Grain-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9b82341069f1c88e7fb3fb95391d3bb2488ae0e2063aed82ad362e30f54fac6": {
+      "description_zh": "从Grain会议恢复未结承诺，列出用户所欠、他人所欠及无人负责事项，支持周复盘、休假归来与一对一前检查。",
+      "source": "Recover open commitments from Grain meetings — a ledger of what the user owes, what others owe them, and unowned loose ends. Use when the user asks about their action items or promises, what others committed to, or runs a sweep (weekly review, back from time off, before a 1:1).",
+      "source_sha256": "d9b82341069f1c88e7fb3fb95391d3bb2488ae0e2063aed82ad362e30f54fac6",
+      "source_path": "skills/what-do-i-owe/SKILL.md",
+      "package_sha256": "9cf5cc38c3759887b30a0dfd42d3d6374132cfec7afe7a7ceb7ef12355e62911",
+      "source_package": "Meeting Memory by Grain-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f10b062ac9103920cfbd1841c293a86bd65295e6550b18a6ceea3c73f599717": {
+      "description_zh": "从连续Grain会议重建客户、项目、主题或人员的最新状态，支持离开后追进展及查询近期会议和会面人员。",
+      "source": "Reconstruct current state from Grain meetings over time. Use when the user asks where things stand or what the latest is on an account, project, topic, or person, wants to catch up after time away, or asks about their recent recorded meetings (\"what was my last meeting?\", \"who did I meet with this week?\").",
+      "source_sha256": "1f10b062ac9103920cfbd1841c293a86bd65295e6550b18a6ceea3c73f599717",
+      "source_path": "skills/where-things-stand/SKILL.md",
+      "package_sha256": "9cf5cc38c3759887b30a0dfd42d3d6374132cfec7afe7a7ceb7ef12355e62911",
+      "source_package": "Meeting Memory by Grain-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b40622a2464129ba9d63de0d4d8f67d2ba5feac9f27c9b2e347179e08752a80": {
+      "description_zh": "生成面向客户的季度或年度投资表现报告，包含组合收益、配置分解及市场评论。",
+      "source": "Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary. Suitable for quarterly or annual distribution. Triggers on \"client report\", \"performance report\", \"quarterly report for [client]\", \"generate reports\", or \"client statement\".",
+      "source_sha256": "2b40622a2464129ba9d63de0d4d8f67d2ba5feac9f27c9b2e347179e08752a80",
+      "source_path": "skills/client-report/SKILL.md",
+      "package_sha256": "a6cba5a90e6d1536962ad194f6889b8548a56666ba546a974310559c07a9f744",
+      "source_package": "meeting-prep-agent-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "820db3c021817e253d13d473543e5afbc60d801181b3802f93fa3bc7c24720e3": {
+      "description_zh": "为季度、年度或临时客户评审会议汇总账户数据，形成组合表现、资产配置分析、讨论要点与行动项。",
+      "source": "Prepare for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items. Pulls together account data into a concise meeting-ready format. Use before quarterly reviews, annual checkups, or ad-hoc client meetings. Triggers on \"client review\", \"meeting prep for [client]\", \"quarterly review\", \"prep for [client name]\", or \"client meeting\".",
+      "source_sha256": "820db3c021817e253d13d473543e5afbc60d801181b3802f93fa3bc7c24720e3",
+      "source_path": "skills/client-review/SKILL.md",
+      "package_sha256": "a6cba5a90e6d1536962ad194f6889b8548a56666ba546a974310559c07a9f744",
+      "source_package": "meeting-prep-agent-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a8bdb55a63d32787919255d4f70267507e8efdbe3e384e0955f4512b3d702e0": {
+      "description_zh": "为潜在客户制作投资建议书，包含机构方法、建议资产配置、预期结果与收费结构，用于新客户推介或新策略展示。",
+      "source": "Create professional investment proposals for prospective clients. Covers the firm's approach, proposed allocation, expected outcomes, and fee structure. Use when pitching new clients or presenting a new investment strategy. Triggers on \"investment proposal\", \"prospect presentation\", \"pitch new client\", \"proposal for [client]\", or \"new client presentation\".",
+      "source_sha256": "3a8bdb55a63d32787919255d4f70267507e8efdbe3e384e0955f4512b3d702e0",
+      "source_path": "skills/investment-proposal/SKILL.md",
+      "package_sha256": "a6cba5a90e6d1536962ad194f6889b8548a56666ba546a974310559c07a9f744",
+      "source_package": "meeting-prep-agent-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f251283a92403974eb1aaceaf687ad4f111f1788e3c3fad73e987cfc701ab13": {
+      "description_zh": "编辑、改写、精简或重组Meeting.ai会议笔记，重命名会议，或将多场会议合为摘要、周报和项目复盘并保存回Meeting.ai。",
+      "source": "Use when the user wants to edit, rewrite, tighten, or restructure the notes of a Meeting.ai meeting, rename a meeting, or combine several meetings into one summary, weekly digest, or project recap and save it back into Meeting.ai.",
+      "source_sha256": "1f251283a92403974eb1aaceaf687ad4f111f1788e3c3fad73e987cfc701ab13",
+      "source_path": "skills/meeting-ai-edit-notes/SKILL.md",
+      "package_sha256": "75b5c870b9c15cb3d81bd7830de4f5cfa4da18f40f2f9a9b7a338dae6c26ce6e",
+      "source_package": "Meeting.ai-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cba8fc07393dae0680301da15ad31cedfe96f8e5cdc07d6d0863d0463fc9303a": {
+      "description_zh": "介绍并操作Meeting.ai会议、笔记、转录、行动项、联系人、Drive文件、导出、标签、共享和工作区，覆盖日常读取、媒体生成与切换；录制编辑及视觉笔记用专门技能。",
+      "source": "Use when the user asks what Meeting.ai can do, or asks about their meetings, notes, transcripts, action items, contacts, Drive files, exports, tags, sharing, or workspaces in Meeting.ai. Covers the everyday reading tools plus export, media generation, contacts, Drive, and workspace switching. For recording a meeting, editing notes, or Visual Notes, the dedicated skills go deeper.",
+      "source_sha256": "cba8fc07393dae0680301da15ad31cedfe96f8e5cdc07d6d0863d0463fc9303a",
+      "source_path": "skills/meeting-ai-overview/SKILL.md",
+      "package_sha256": "75b5c870b9c15cb3d81bd7830de4f5cfa4da18f40f2f9a9b7a338dae6c26ce6e",
+      "source_package": "Meeting.ai-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "642706fcba0c4a5725375b3c0de91f1ae5c87bb04cb7d513cc1ca8597effaa60": {
+      "description_zh": "让Meeting.ai加入Zoom、Google Meet或Teams并录制记笔记，转录录音、检查录制完成或停止录制，说明会议接入方式。",
+      "source": "Use when the user wants Meeting.ai to record, join, or take notes for an online meeting (Zoom, Google Meet, Microsoft Teams), transcribe a recording, check whether a recording is done, or stop a recording. Also use when the user asks how to get a meeting into Meeting.ai.",
+      "source_sha256": "642706fcba0c4a5725375b3c0de91f1ae5c87bb04cb7d513cc1ca8597effaa60",
+      "source_path": "skills/meeting-ai-record-meeting/SKILL.md",
+      "package_sha256": "75b5c870b9c15cb3d81bd7830de4f5cfa4da18f40f2f9a9b7a338dae6c26ce6e",
+      "source_package": "Meeting.ai-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe2a5c3fb32a22b7f4fc91762a767748d8dff320fcbcd6db20cb2c78c01bb8ca": {
+      "description_zh": "连接Meeting.ai MCP服务器并验证，处理登录授权、认证错误及连接器工作区切换。",
+      "source": "Use when the user wants to connect Meeting.ai, is asked to sign in or authorize, sees an authentication error from a meeting-ai tool, or asks how to switch the workspace the connector uses. Walks through connecting the Meeting.ai MCP server and checking that it works.",
+      "source_sha256": "fe2a5c3fb32a22b7f4fc91762a767748d8dff320fcbcd6db20cb2c78c01bb8ca",
+      "source_path": "skills/meeting-ai-setup/SKILL.md",
+      "package_sha256": "75b5c870b9c15cb3d81bd7830de4f5cfa4da18f40f2f9a9b7a338dae6c26ce6e",
+      "source_package": "Meeting.ai-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2acdf7c16450f0e1214990a6dc3aaddfca9803e3f996c742570f75b4f02cdc2": {
+      "description_zh": "从Meeting.ai单场或多场会议、指定文字或话题生成一页信息图式视觉笔记，并在会议笔记变化后重绘。",
+      "source": "Use when the user wants a Visual Note, an infographic-style one-page summary image, whether from a Meeting.ai meeting, from several meetings, or from any text or topic they supply. Also use to redraw a meeting's own visual note after its notes changed.",
+      "source_sha256": "e2acdf7c16450f0e1214990a6dc3aaddfca9803e3f996c742570f75b4f02cdc2",
+      "source_path": "skills/meeting-ai-visual-notes/SKILL.md",
+      "package_sha256": "75b5c870b9c15cb3d81bd7830de4f5cfa4da18f40f2f9a9b7a338dae6c26ce6e",
+      "source_package": "Meeting.ai-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff6dc5b789af874ceb615fbea31e4785ca041730ce6a8e49c0b75bcbbce17645": {
+      "description_zh": "从MeetNotes单场或近几周会议提取用户应做、等待他人及未结事项，形成承诺和待办清单。",
+      "source": "Pull the action items out of MeetNotes meetings — everything owed by or to the user, across one meeting or the last few weeks. Use when the user asks what they committed to, what they are waiting on, what is still open from a meeting, or wants a to-do list out of their meetings.",
+      "source_sha256": "ff6dc5b789af874ceb615fbea31e4785ca041730ce6a8e49c0b75bcbbce17645",
+      "source_path": "skills/action-items/SKILL.md",
+      "package_sha256": "2aa4fab8b013cc29f7b97e0bb5de2c578e12c9e5304e111b381d1dcfde17af0f",
+      "source_package": "MeetNotes-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6e93ab315f3e639bf340547deba2bdc0a4a43c71ec0731fd609c09aee356918": {
+      "description_zh": "将MeetNotes会议纪要导出PDF、Word、Markdown或JSON，供下载、附件发送或分享给无账号人员。",
+      "source": "Export MeetNotes minutes as a PDF, Word, Markdown or JSON file so they can be sent to people who have no MeetNotes account. Use when the user wants to share, send, download or attach the minutes of a meeting.",
+      "source_sha256": "f6e93ab315f3e639bf340547deba2bdc0a4a43c71ec0731fd609c09aee356918",
+      "source_path": "skills/export-minutes/SKILL.md",
+      "package_sha256": "2aa4fab8b013cc29f7b97e0bb5de2c578e12c9e5304e111b381d1dcfde17af0f",
+      "source_package": "MeetNotes-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "787f4f3d6dc67df7de83787df46c3a33b83541c192dc334f3347a0ba019c76a1": {
+      "description_zh": "搜索MeetNotes会议并读取实际发言，核对何时讨论、某人对某主题说法、是否提及及可引用内容。",
+      "source": "Search MeetNotes meetings and read what was actually said. Use when the user asks when something was discussed, what a named person said about a topic, whether a subject ever came up, or wants to quote a meeting.",
+      "source_sha256": "787f4f3d6dc67df7de83787df46c3a33b83541c192dc334f3347a0ba019c76a1",
+      "source_path": "skills/find-meetings/SKILL.md",
+      "package_sha256": "2aa4fab8b013cc29f7b97e0bb5de2c578e12c9e5304e111b381d1dcfde17af0f",
+      "source_package": "MeetNotes-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de761b93c152eee1e88b2a3fd5ed0407f1af42484e270fc4e3645542a27b9b2e": {
+      "description_zh": "派MeetNotes记录机器人加入Zoom、Google Meet或Teams进行转录和纪要，或将用户已有音频转成会议记录。",
+      "source": "Send the MeetNotes Notetaker into a Zoom, Google Meet or Microsoft Teams call so the call is transcribed and minuted, or transcribe an audio file the user has. Use when the user pastes a meeting link and wants it recorded, asks to have a call covered, or has a recording to turn into minutes.",
+      "source_sha256": "de761b93c152eee1e88b2a3fd5ed0407f1af42484e270fc4e3645542a27b9b2e",
+      "source_path": "skills/notetaker/SKILL.md",
+      "package_sha256": "2aa4fab8b013cc29f7b97e0bb5de2c578e12c9e5304e111b381d1dcfde17af0f",
+      "source_package": "MeetNotes-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8e08f073fcbe260f030ac9c4db25287a6b2104e183c1f827cddb168393a9df9": {
+      "description_zh": "总结MeetNotes会议的决定、约定与责任分配，支持近期通话或指定会议简要回顾。",
+      "source": "Recap a MeetNotes meeting — what was decided, what was agreed and who owes what. Use when the user asks what happened in a meeting, wants yesterday's or this morning's call summarised, or names a meeting and asks for the gist.",
+      "source_sha256": "e8e08f073fcbe260f030ac9c4db25287a6b2104e183c1f827cddb168393a9df9",
+      "source_path": "skills/recap/SKILL.md",
+      "package_sha256": "2aa4fab8b013cc29f7b97e0bb5de2c578e12c9e5304e111b381d1dcfde17af0f",
+      "source_package": "MeetNotes-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "397ca7de62e70008a7adff1a01de12c4008412d06ee81980bca2256b876f0dfa": {
+      "description_zh": "连接Claude会话与用户MeetNotes账户，修复认证授权失败或工具不可用的问题。",
+      "source": "Connect this Claude session to the user's MeetNotes account, or fix a MeetNotes connection that is failing. Use when a MeetNotes tool returns an authentication or authorization error, when no MeetNotes tools are available, or when the user asks how to connect MeetNotes.",
+      "source_sha256": "397ca7de62e70008a7adff1a01de12c4008412d06ee81980bca2256b876f0dfa",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "2aa4fab8b013cc29f7b97e0bb5de2c578e12c9e5304e111b381d1dcfde17af0f",
+      "source_package": "MeetNotes-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fbec8822de0f49f10fb97a6435273585752b3d4b830c2a9b3d34c31d0064bee": {
+      "description_zh": "在MeetStream构建Google Calendar驱动的自动会议录制，配置Google Cloud OAuth、连接日历、设置默认机器人和自动排期，并处理重复事件及会后工作流。",
+      "source": "Build Google Calendar-driven meeting automation on MeetStream - connect a Google Calendar once and a bot auto-joins every upcoming meeting, records, transcribes, and triggers your post-meeting workflow. Use when the user says \"auto-record my Google Calendar meetings\", \"connect Google Calendar to MeetStream\", \"Google Calendar bot integration\", \"calendar automation for meetings\", \"join every meeting on my calendar automatically\", \"scheduled meeting bot\", \"recurring meeting notetaker\", \"Google Calendar meeting intelligence\", or \"OAuth calendar bot setup\". Walks through Google Cloud OAuth setup, connects the calendar to MeetStream, enables auto-scheduling with a default bot config, and shows how to handle recurring events.",
+      "source_sha256": "8fbec8822de0f49f10fb97a6435273585752b3d4b830c2a9b3d34c31d0064bee",
+      "source_path": "skills/calendar-automation/SKILL.md",
+      "package_sha256": "c3cdbe942d61a1b39a8395e58ee10d43f36d353c8dadaf30d00c7936c76f0fb2",
+      "source_package": "meetstream-ai-meeting-bot-api-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "369f94abf39253e9a26f3eccef5a4e5545d0e546c4ee6f2a34085d3f9bc0ee11": {
+      "description_zh": "首次配置MeetStream账号、API密钥与环境，并发送验证请求；原说明要求缺少MEETSTREAM_API_KEY时先完成本设置，再用其他MeetStream技能。",
+      "source": "First-time setup for MeetStream - guides a brand-new user through account signup, API key creation, environment configuration, and a validation ping. MUST be invoked before any other MeetStream skill (notetaker, sales-coach, calendar-automation, etc.) if MEETSTREAM_API_KEY is missing. Auto-trigger when user says \"set up MeetStream\", \"I don't have a MeetStream account\", \"first time using MeetStream\", \"MeetStream onboarding\", \"create MeetStream API key\", \"MeetStream signup\", \"how do I start with MeetStream\", or when a user invokes any other MeetStream skill without MEETSTREAM_API_KEY set.",
+      "source_sha256": "369f94abf39253e9a26f3eccef5a4e5545d0e546c4ee6f2a34085d3f9bc0ee11",
+      "source_path": "skills/getting-started/SKILL.md",
+      "package_sha256": "c3cdbe942d61a1b39a8395e58ee10d43f36d353c8dadaf30d00c7936c76f0fb2",
+      "source_package": "meetstream-ai-meeting-bot-api-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "909f069f86ebdc14513a107bd7ea0a2e1ba7b20f292ab9507750f1e7da1b82f2": {
+      "description_zh": "提供MeetStream核心API、生命周期、决策树与端点参考，涵盖会议机器人、录制、实时转录字幕、说话人分离、摘要、语音智能体及Webhook；具体记录、教练和日历构建由专门技能衔接，原说明要求编码前先规划。",
+      "source": "Core MeetStream API reference, lifecycle, decision tree, and live-verified endpoint catalog. Auto-activate on any mention of MeetStream, meeting bots, meeting recording API, meeting transcription API, real-time transcription, live captions, speaker diarization, AI meeting summarizer, conversation intelligence, AI meeting agent, or any of these intents: \"build me a notetaker\", \"build a meeting bot\", \"record a Zoom meeting\", \"transcribe Google Meet\", \"join a meeting programmatically\", \"Microsoft Teams bot\", \"AI sales coach\", \"live meeting captions\", \"meeting webhook\", \"meeting recap email\", \"meeting action items extractor\", \"send a bot to a meeting\", \"Google Calendar auto-record\". Also activate when the user references meeting bot API errors, MeetStream webhook events (bot.joining, bot.recording, bot.stopped, transcription.processed, etc.), or asks how to integrate with api.meetstream.ai. For specific scaffolds (notetaker, sales coach, calendar automation) prefer the dedicated use-case skills which chain back to this one. When the user asks to BUILD or CREATE, always enter plan mode first using the superpowers:writing-plans skill before writing any code.",
+      "source_sha256": "909f069f86ebdc14513a107bd7ea0a2e1ba7b20f292ab9507750f1e7da1b82f2",
+      "source_path": "skills/meetstream/SKILL.md",
+      "package_sha256": "c3cdbe942d61a1b39a8395e58ee10d43f36d353c8dadaf30d00c7936c76f0fb2",
+      "source_package": "meetstream-ai-meeting-bot-api-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42356810605e1fd8011f9b9d0f48bceb3f37e59d8204e53fce67eda2e8fd528f": {
+      "description_zh": "将已有Recall.ai集成迁移至MeetStream，重写基础URL、端点、请求字段与Webhook处理，提供自动CLI和手动路径；原文称基本一对一且支持原生摘要及MIA语音智能体。",
+      "source": "Migrate an existing Recall.ai integration to MeetStream - rewrite base URLs, endpoints, request fields, and webhook handlers. MeetStream is now essentially one-to-one with Recall (cheaper, plus native AI summaries and MIA voice agents). Use when the user says \"migrate from Recall\", \"move off recall.ai\", \"switch from Recall to MeetStream\", \"port my Recall bot\", \"Recall alternative migration\", or points you at a codebase that calls recall.ai. Offers an automated CLI path and a manual guided path.",
+      "source_sha256": "42356810605e1fd8011f9b9d0f48bceb3f37e59d8204e53fce67eda2e8fd528f",
+      "source_path": "skills/migrate-from-recall/SKILL.md",
+      "package_sha256": "c3cdbe942d61a1b39a8395e58ee10d43f36d353c8dadaf30d00c7936c76f0fb2",
+      "source_package": "meetstream-ai-meeting-bot-api-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9614eaa2a09af8fa99acd7650a241affa3eb103108916f9876ac2f2f6d5b8a4": {
+      "description_zh": "构建MeetStream会议记录产品，机器人加入录制转录并生成LLM摘要，通过Resend、SendGrid或SMTP邮件发送给参会人，涵盖技术栈、Webhook、转录获取与邮件交付。",
+      "source": "Build a complete MeetStream-powered AI meeting notetaker - bot joins, records, transcribes, generates an AI summary, and emails it to the meeting attendees (you choose the email provider: Resend / SendGrid / SMTP). Use when the user says \"build a notetaker\", \"AI meeting notetaker\", \"meeting recorder with AI summaries\", \"auto-summarize my meetings\", \"AI meeting summarizer\", \"meeting action items extractor\", \"meeting recap email\", or any variant of a meeting-summary product. Walks through tech stack choice, scaffolds webhook handler, transcript fetch, LLM summary, and email delivery end-to-end.",
+      "source_sha256": "f9614eaa2a09af8fa99acd7650a241affa3eb103108916f9876ac2f2f6d5b8a4",
+      "source_path": "skills/notetaker/SKILL.md",
+      "package_sha256": "c3cdbe942d61a1b39a8395e58ee10d43f36d353c8dadaf30d00c7936c76f0fb2",
+      "source_package": "meetstream-ai-meeting-bot-api-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21bab443160e2cf4639b951f598f2051ccb1bf2c197998a89860a32ca1158acd": {
+      "description_zh": "构建MeetStream实时AI销售辅导，接收转录流、检测异议、话语占比失衡与遗漏问题，并通过Webhook服务器和WebSocket向销售浏览器推送提示卡。",
+      "source": "Build a real-time AI sales coaching tool on MeetStream - live transcription streams to a server that detects objections, talk-time imbalance, missed questions, etc., and surfaces coach cards to the seller during the call. Use when the user says \"real-time AI sales coach\", \"AI cue cards during calls\", \"live objection detection\", \"AI copilot for sales calls\", \"live conversation intelligence\", \"live meeting assistant\", \"real-time meeting intelligence\", \"live sales call analyzer\", or \"real-time AI call coaching\". Scaffolds streaming-provider bot + webhook server + WebSocket push to the seller's browser tab.",
+      "source_sha256": "21bab443160e2cf4639b951f598f2051ccb1bf2c197998a89860a32ca1158acd",
+      "source_path": "skills/sales-coach/SKILL.md",
+      "package_sha256": "c3cdbe942d61a1b39a8395e58ee10d43f36d353c8dadaf30d00c7936c76f0fb2",
+      "source_package": "meetstream-ai-meeting-bot-api-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4cb0799381fa3c0f60cc0d562104fb1ff0776a1084b43ca3d945f9fed52be265": {
+      "description_zh": "向真实会议发送一个MeetStream测试机器人，在终端实时展示全部Webhook事件，用于发布前端到端配置验证和运行排查。",
+      "source": "Send a single test bot to a live meeting and stream every webhook event to the terminal in real time. Used to validate end-to-end MeetStream configuration before shipping. Use when the user says \"test my MeetStream setup\", \"send a test bot\", \"validate my webhook\", \"watch bot events live\", \"debug a bot run\", or \"make sure everything works\".",
+      "source_sha256": "4cb0799381fa3c0f60cc0d562104fb1ff0776a1084b43ca3d945f9fed52be265",
+      "source_path": "skills/test-bot/SKILL.md",
+      "package_sha256": "c3cdbe942d61a1b39a8395e58ee10d43f36d353c8dadaf30d00c7936c76f0fb2",
+      "source_package": "meetstream-ai-meeting-bot-api-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14adb4ab4b6d3c87f7cc551ac023ea68b9c286fac1ec34beb3476eba7880c02e": {
+      "description_zh": "构建前核验MeetStream账号，检查API密钥、已配置转录提供商、Webhook可达性及缺失提供商密钥。",
+      "source": "Verify a MeetStream account's configuration before building. Checks API key validity, which transcription providers are configured (deepgram / assemblyai / sarvam / jigsawstack / meetstream), webhook URL reachability, and surfaces any missing provider keys. Use when the user says \"verify my MeetStream account\", \"check setup\", \"which providers do I have\", \"test API key\", \"diagnose meetstream\", or before any other build skill runs.",
+      "source_sha256": "14adb4ab4b6d3c87f7cc551ac023ea68b9c286fac1ec34beb3476eba7880c02e",
+      "source_path": "skills/verify-account/SKILL.md",
+      "package_sha256": "c3cdbe942d61a1b39a8395e58ee10d43f36d353c8dadaf30d00c7936c76f0fb2",
+      "source_package": "meetstream-ai-meeting-bot-api-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34bfc1800b02d81c9461dbc824ab3cff29d3e714968e2297a4be0981e3d95ee7": {
+      "description_zh": "以hive命名空间中的mels保存回忆跨会话决策、理由、根因和经验，并保留各空间工作指南；原说明写入默认auto，可由MELXIS_WRITE_POLICY覆盖，任务跟踪另用melxis-task。",
+      "source": "Saves and recalls cross-session knowledge — decisions, rationale, bug root causes, learnings — as mels in hives (namespaces), and carries each hive's guide (how work is done in it). Use when the user references prior rationale (\"why did we choose X\", \"前回\", \"なぜこう決めた\", \"last time\", \"decided\"), resumes prior work, articulates a decision or trade-off worth preserving, identifies a bug's root cause, completes a refactor, needs existing knowledge surfaced, or states how work should be done in a hive from now on (\"always/never … in this project\"). Write policy is auto by default; MELXIS_WRITE_POLICY (auto / smart / confirm) overrides. Not for single-session scratchpads, todos, or work tracking (use melxis-task).",
+      "source_sha256": "34bfc1800b02d81c9461dbc824ab3cff29d3e714968e2297a4be0981e3d95ee7",
+      "source_path": "skills/memory/SKILL.md",
+      "package_sha256": "4a417743246384dd83578d855fd10eba269a4dea5269c739b64c1f9825d29d5b",
+      "source_package": "Melxis-0.8.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b99a866949bb871263471180511dc6fa550eac4ee67c7455553c1d5d5d47447": {
+      "description_zh": "在hive命名空间中跨会话跟踪多步任务，记录进展、发现、问题、阻塞、交接及时间线，支持按期间搜索与恢复；原说明默认auto写入，可由MELXIS_WRITE_POLICY覆盖。",
+      "source": "Tracks cross-session work as tasks in hives (namespaces): plans multi-step work, records progress and handoffs between sessions and agents, and keeps each task''s timeline. Use when the user plans multi-step work (\"let''s split into steps\", \"タスクに分ける\", \"手順を作る\"), asks what remains (\"what''s left\", \"残っているタスク\"), marks progress (\"done with X\", \"Xできた\"), notes a finding, question, or blocker mid-task (task_note), asks when something was done (\"what did we do last week\", \"先週何してた\" — task_search period filters), hands off unfinished work at session end, or resumes work (task_get returns description + timeline). Write policy is auto by default; MELXIS_WRITE_POLICY (auto / smart / confirm) overrides. Not for declarative knowledge (use melxis-memory), single-session todos, or purely local note files.",
+      "source_sha256": "3b99a866949bb871263471180511dc6fa550eac4ee67c7455553c1d5d5d47447",
+      "source_path": "skills/task/SKILL.md",
+      "package_sha256": "4a417743246384dd83578d855fd10eba269a4dea5269c739b64c1f9825d29d5b",
+      "source_package": "Melxis-0.8.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0390a150f86907452d7afe49fb210a9cfe2b1ec65a589b89d84b2243852b26b8": {
+      "description_zh": "提供MEMANTO记忆应用端到端蓝图，覆盖持久记忆、会话连续、导出审计、每日摘要、冲突处理和基于记忆的RAG，用于项目设计搭建而非一次性记忆调用。",
+      "source": "End-to-end blueprints for building memory-powered applications on MEMANTO — persistent agent memory, session continuity, memory export and audit, automated daily digests, conflict resolution, and memory-grounded RAG. Use when designing or scaffolding a project that needs agent memory, not for one-off remember/recall calls.",
+      "source_sha256": "0390a150f86907452d7afe49fb210a9cfe2b1ec65a589b89d84b2243852b26b8",
+      "source_path": "skills/memanto-cookbooks/SKILL.md",
+      "package_sha256": "4dc45ba8556e20a103a4d554d268d41cbc764caf4ba77b82ca4c069fe93a4aec",
+      "source_package": "MEMANTO-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd8227e5c18f12c3dacc0c90fe95be4a547f8e30f23801a93917199278982f1a": {
+      "description_zh": "通过MEMANTO CLI存取持久智能体记忆，支持决策偏好纠正承诺的保存回忆、问答、编辑遗忘、文件上传、冲突、过期及MEMORY.md同步。",
+      "source": "Store and retrieve persistent agent memory with the MEMANTO CLI. Use whenever the user states a decision, preference, correction, or commitment worth keeping; whenever you are about to say you lack context on prior work; or when asked what was decided, preferred, or promised earlier. Covers remember, recall, answer, edit/forget, file upload, conflict resolution, expiry policy, and MEMORY.md sync.",
+      "source_sha256": "cd8227e5c18f12c3dacc0c90fe95be4a547f8e30f23801a93917199278982f1a",
+      "source_path": "skills/memanto/SKILL.md",
+      "package_sha256": "4dc45ba8556e20a103a4d554d268d41cbc764caf4ba77b82ca4c069fe93a4aec",
+      "source_package": "MEMANTO-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85731b1b420109a6cf66075b1b06dc255d25e40b866d24f87ccc8d4af43ba3a2": {
+      "description_zh": "保存跨会话应记住的用户信息、偏好、决策和项目背景，并处理用户明确提出的记住或忘记事项。",
+      "source": "Use when you learn something about the user, their preferences, decisions, or project context that should be remembered across sessions. Also use when the user asks you to remember or forget something.",
+      "source_sha256": "85731b1b420109a6cf66075b1b06dc255d25e40b866d24f87ccc8d4af43ba3a2",
+      "source_path": "plugin/skills/memex/SKILL.md",
+      "package_sha256": "d72533952d7ad65aaee83a0d757944286f84bc65e34bf2673de2291ba31ce58d",
+      "source_package": "Memex — Local AI Memory-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50a8d25be3f5b95604d2b63ea55e2fd62b077f8c68126e1ac0a427464ef53a30": {
+      "description_zh": "通过/memories会话日志保存、列出、打开、搜索或删除会话记忆。",
+      "source": "Session journaling — save, list, open, search, and delete session memories. Use when user types /memories with any arguments.",
+      "source_sha256": "50a8d25be3f5b95604d2b63ea55e2fd62b077f8c68126e1ac0a427464ef53a30",
+      "source_path": "skills/memories/SKILL.md",
+      "package_sha256": "c66768cd05b11ce6323c9c2f021df5950110ec02e7bb963259d4f69f91b45cbb",
+      "source_package": "Memories-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b97a8812125110049a4f036e2e9942b4e800db9d91e868ac1a6d6f5ac8e2700b": {
+      "description_zh": "初始化、读取和维护memory-bank目录中的结构化Markdown项目记忆，以跨会话保留背景；原说明要求已有该目录时先读理解项目，再处理更新或自定义指令。",
+      "source": "Initialize, read, and maintain a structured Memory Bank — a set of markdown files in a memory-bank/ directory that preserve project context across sessions. Use this skill whenever the user says \"initialize memory bank\", \"update memory bank\", or starts working in a project that already has a memory-bank/ directory. Also use it proactively at the start of any task if a memory-bank/ directory exists in the current project root, since reading those files is required to understand project context. Trigger on any phrasing like \"set up memory bank\", \"create memory bank\", \"read memory bank\", \"check memory bank\", or \"follow your custom instructions\" when a memory-bank/ exists.",
+      "source_sha256": "b97a8812125110049a4f036e2e9942b4e800db9d91e868ac1a6d6f5ac8e2700b",
+      "source_path": "skills/memory-bank/SKILL.md",
+      "package_sha256": "1f9d6fff2e6f6e7ed96b31119cb79b9fbc96b67b7bef727d8da9556e6c6df8d6",
+      "source_package": "Memory Bank-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86f450c81462fa3249ab2693d4410958b7c4af52a3f3e064a0235038f457eb0b": {
+      "description_zh": "开启整场辅导编程模式，由用户编写全部代码，Claude以提示、问题和代码评审指导，原说明不直接提供答案，适用于以学习为目的的会话。",
+      "source": "Activates mentor mode for the entire session. Unlike the Learning Mode plugin (where Claude builds the code and asks you to fill in key parts), Mentor Mode flips the dynamic: the user writes all the code, Claude coaches through hints, questions, and code review — never providing solutions. Use when the user wants to genuinely learn rather than ship fast. Invoke with /mentor to start a mentored coding session.",
+      "source_sha256": "86f450c81462fa3249ab2693d4410958b7c4af52a3f3e064a0235038f457eb0b",
+      "source_path": "skills/mentor/SKILL.md",
+      "package_sha256": "a33affb9fb235252c43486d08e9878e96db1b9c5f7b05043682fc6dd841cc466",
+      "source_package": "Mentor Mode for Claude Code-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7cea106456dd47615a6b5f5a8b95f55cdb195d6c7632db6c787e4e2f1ad1c032": {
+      "description_zh": "从MentorCruise查找推荐导师或教练，支持职业指导、挑战辅导及寻找可学习的专业人士。",
+      "source": "Find and recommend mentors from MentorCruise.com. Use this skill whenever the user wants to find a mentor, needs mentoring or coaching, mentions MentorCruise, asks for career guidance, or describes a challenge where connecting with a mentor would help. Trigger phrases include: 'find me a mentor', 'I need a mentor', 'recommend a mentor', 'looking for a coach', 'who can help me with', 'career coaching', 'mentorship', or any request to find an expert to learn from, even if they don't explicitly say 'mentor'.",
+      "source_sha256": "7cea106456dd47615a6b5f5a8b95f55cdb195d6c7632db6c787e4e2f1ad1c032",
+      "source_path": "skills/find-mentor/SKILL.md",
+      "package_sha256": "a612796b390cac676d32c08817e699ba89614fa5d9a1222f097820b938f0987e",
+      "source_package": "MentorCruise-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d99330b4bf94abcf8d43a9e9ee8bd0796b92353af33dacf923c846f28500238d": {
+      "description_zh": "配置MentorCruise Connect OAuth，使已可搜索但申请、消息、付款或预约需登录的学员完成连接。",
+      "source": "Set up MentorCruise Connect (OAuth) when search works but apply, message, pay, or book needs a signed-in mentee.",
+      "source_sha256": "d99330b4bf94abcf8d43a9e9ee8bd0796b92353af33dacf923c846f28500238d",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "a612796b390cac676d32c08817e699ba89614fa5d9a1222f097820b938f0987e",
+      "source_package": "MentorCruise-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07b299db91b67264730ace3338d688f64953b7d4edffd21671941d3855a8163f": {
+      "description_zh": "依据官方及随附资料搭建完整Mercado Pago支付集成，支持新增和迁移流程，仅在指定账户操作或文档缺口时使用MCP。",
+      "source": "Wizard that scaffolds a complete Mercado Pago integration from official and bundled sources, using MCP only for selected account actions or documentation gaps. Use whenever the developer wants to add or migrate a Mercado Pago payment flow.",
+      "source_sha256": "07b299db91b67264730ace3338d688f64953b7d4edffd21671941d3855a8163f",
+      "source_path": "skills/mp-integrate/SKILL.md",
+      "package_sha256": "4d8b87bc91304dc87002de2408013acb145550f8c9224efffdd4aba8c8660b5a",
+      "source_package": "Mercado Pago-4.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a10c831936d9fa785a62282038d6b9143f61f3e3819583fdc7c9fccc930a1dfa": {
+      "description_zh": "集成完成后用本地跨领域安全清单审查Mercado Pago，并按需调用官方MCP质量工具。",
+      "source": "Review a Mercado Pago integration with a local cross-cutting security checklist and official MCP quality tools on demand. Use after the integration is in place, or when /mp-review is invoked.",
+      "source_sha256": "a10c831936d9fa785a62282038d6b9143f61f3e3819583fdc7c9fccc930a1dfa",
+      "source_path": "skills/mp-review/SKILL.md",
+      "package_sha256": "4d8b87bc91304dc87002de2408013acb145550f8c9224efffdd4aba8c8660b5a",
+      "source_package": "Mercado Pago-4.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45d95e3f7aec99fa41f353e5a66e9d52ecfe7d2a4ce4f76557226b6470080272": {
+      "description_zh": "通过MCP创建Mercado Pago测试用户并添加测试资金，说明APP_USR与TEST凭据分别对应的接口和支付产品；原说明称两种格式均有效。",
+      "source": "Create test users and add funds to them for Mercado Pago testing. Wraps create_test_user and add_money_test_user from the MCP. Clarifies that credentials come in APP_USR- (Orders API, Checkout Pro, Point, QR) and TEST- (Checkout API, Bricks, Payments API) formats — both are valid and actively issued.",
+      "source_sha256": "45d95e3f7aec99fa41f353e5a66e9d52ecfe7d2a4ce4f76557226b6470080272",
+      "source_path": "skills/mp-test-setup/SKILL.md",
+      "package_sha256": "4d8b87bc91304dc87002de2408013acb145550f8c9224efffdd4aba8c8660b5a",
+      "source_package": "Mercado Pago-4.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "380e4d32b0e521cc88a900210afaabfdd5978c4b18e0f9dc5b405c2de4204f80": {
+      "description_zh": "配置和验证Mercado Pago Webhook，使用保存与历史工具，并提供接收端HMAC-SHA256签名验证模式，支持新增、调试和加固通知处理。",
+      "source": "Configure and validate Mercado Pago webhooks. Wraps the MCP webhook tools (save_webhook, notifications_history) and provides the HMAC-SHA256 signature validation pattern that every receiver must implement. Use when adding, debugging, or hardening notification handling.",
+      "source_sha256": "380e4d32b0e521cc88a900210afaabfdd5978c4b18e0f9dc5b405c2de4204f80",
+      "source_path": "skills/mp-webhooks/SKILL.md",
+      "package_sha256": "4d8b87bc91304dc87002de2408013acb145550f8c9224efffdd4aba8c8660b5a",
+      "source_package": "Mercado Pago-4.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c23b120df41a3b373b673bc97e25431e0205ca9edc5b1681c1d9266381008fbc": {
+      "description_zh": "计算解释品牌周边商品定价，拆分单位、印制装饰成本及不同采购数量下销售价，支持报价和数量比较。",
+      "source": "Calculate and explain branded merchandise pricing including unit costs, decoration costs, and selling prices at different quantities. Use when the user asks to \"price this\", \"how much would it cost\", \"get a quote\", \"pricing breakdown\", or \"compare prices at different quantities\".",
+      "source_sha256": "c23b120df41a3b373b673bc97e25431e0205ca9edc5b1681c1d9266381008fbc",
+      "source_path": "skills/pricing/SKILL.md",
+      "package_sha256": "798ac92ff96ecf325c4ecb33bdcc0f57ea2f3208848555556e8b71f07a765f14",
+      "source_package": "Merch-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2856c02adc904b89574cd52eceba2e1bdc820bb01b209c395dca916b2e91f5a": {
+      "description_zh": "从原说明所称8000余项、多家伦理供应商商品目录查找推荐品牌周边和促销产品。",
+      "source": "Search for branded merchandise and promotional products from a catalog of 8,000+ items across multiple ethical suppliers. Use when the user asks to \"find merch\", \"search for products\", \"recommend merchandise\", \"find branded items\", or \"suggest promotional products\".",
+      "source_sha256": "c2856c02adc904b89574cd52eceba2e1bdc820bb01b209c395dca916b2e91f5a",
+      "source_path": "skills/product-search/SKILL.md",
+      "package_sha256": "798ac92ff96ecf325c4ecb33bdcc0f57ea2f3208848555556e8b71f07a765f14",
+      "source_package": "Merch-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7869d9e1f5eb84a6f4eba1961e811d5d36176ea1c03bb92d17f40ec513e376fc": {
+      "description_zh": "解释商品可持续评级、环保与再生材料、伦理采购及环境影响，帮助寻找环保品牌周边。",
+      "source": "Explain sustainability ratings and help users find eco-friendly branded merchandise. Use when the user asks about \"sustainability\", \"eco-friendly\", \"green products\", \"recycled\", \"ethical sourcing\", or \"environmental impact\" of merchandise.",
+      "source_sha256": "7869d9e1f5eb84a6f4eba1961e811d5d36176ea1c03bb92d17f40ec513e376fc",
+      "source_path": "skills/sustainability/SKILL.md",
+      "package_sha256": "798ac92ff96ecf325c4ecb33bdcc0f57ea2f3208848555556e8b71f07a765f14",
+      "source_package": "Merch-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d02b9c24ee8f859163c3cf6ef08d0c4a7322b9d58441bc006d524b58411bdb9": {
+      "description_zh": "构建mergify CLI新版草稿及各平台二进制，发布并核验PyPI和Homebrew接收，支持版本标签与失败发布恢复。",
+      "source": "Cut and ship a new release of the `mergify` CLI — build the draft release with its platform binaries, publish it, and verify PyPI and the Homebrew tap picked it up. Use when asked to release, cut a release, ship a new version, publish a release, tag a version, or when a release run failed and needs recovery. Triggers on \"release\", \"new version\", \"cut a release\", \"ship it\", \"publish the release\", \"bump the version\", \"release failed\", \"PyPI publish failed\".",
+      "source_sha256": "2d02b9c24ee8f859163c3cf6ef08d0c4a7322b9d58441bc006d524b58411bdb9",
+      "source_path": ".claude/skills/releasing/SKILL.md",
+      "package_sha256": "7f33021a7d55bc48d4ef40737c57ede0fadcf4956c7b92fcc5bfd2cea0186f68",
+      "source_package": "mergify-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9cd7e87701c030efffd183b44d88a3ba23ef7c28bda00b35bd5cbed43189982": {
+      "description_zh": "使用Mergify CI命令上传JUnit测试结果、检测Git引用、管理CI范围、隔离测试并读取合并队列元数据。",
+      "source": "Use Mergify CI commands to upload JUnit test results, detect git references, manage CI scopes, and retrieve merge queue metadata. ALWAYS use this skill when working with CI pipelines, test result uploads, quarantine, scopes detection, or merge queue CI context. Triggers on CI, JUnit, test results, quarantine, scopes, git refs, CI insights.",
+      "source_sha256": "f9cd7e87701c030efffd183b44d88a3ba23ef7c28bda00b35bd5cbed43189982",
+      "source_path": "skills/mergify-ci/SKILL.md",
+      "package_sha256": "7f33021a7d55bc48d4ef40737c57ede0fadcf4956c7b92fcc5bfd2cea0186f68",
+      "source_package": "mergify-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37a6ec28fe4ad66c80bd6056ce95a18116a9f69ebd67259b9483a108f9c5ee04": {
+      "description_zh": "验证、编写编辑或模拟Mergify配置，涵盖合并队列、工作流规则及条件。",
+      "source": "Use Mergify config commands to validate configuration files, simulate Mergify actions, and write Mergify configuration. ALWAYS use this skill when validating, writing, editing, or simulating Mergify config. Triggers on config validate, config simulate, mergify configuration, mergify.yml, .mergify.yml, merge queue config, workflow rules, conditions.",
+      "source_sha256": "37a6ec28fe4ad66c80bd6056ce95a18116a9f69ebd67259b9483a108f9c5ee04",
+      "source_path": "skills/mergify-config/SKILL.md",
+      "package_sha256": "7f33021a7d55bc48d4ef40737c57ede0fadcf4956c7b92fcc5bfd2cea0186f68",
+      "source_package": "mergify-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d81947e4f36b9816d023ad64f9fea4da9315e256c8184ffd1b09d808704fd60": {
+      "description_zh": "通过mergify events查看仓库或PR活动，以时间线或JSON重建入出队、合并、命令、CI和冻结记录，并按事件类型审计。",
+      "source": "Use `mergify events` to browse the Mergify activity log — every event Mergify recorded for a repository or one pull request (queue enters/leaves, merges, commands, CI Insights, freezes), as a human timeline or JSON. ALWAYS use this skill when investigating what Mergify did to a PR or repository and when, reconstructing a pull request's merge-queue lifecycle, auditing Mergify actions, or filtering events by type. Triggers on activity log, event log, events, what did Mergify do, queue lifecycle, queue history, event timeline, event_type, action.queue.",
+      "source_sha256": "5d81947e4f36b9816d023ad64f9fea4da9315e256c8184ffd1b09d808704fd60",
+      "source_path": "skills/mergify-events/SKILL.md",
+      "package_sha256": "7f33021a7d55bc48d4ef40737c57ede0fadcf4956c7b92fcc5bfd2cea0186f68",
+      "source_package": "mergify-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ebae057b3862988f02bd8a72f5b6eacbdee73760238041f984ebdef69dc1035": {
+      "description_zh": "用Mergify合并保护控制PR依赖、Merge-After延迟合并和CLI计划冻结，支持部署窗口、临时阻止及跨仓库合并协调。",
+      "source": "Use Mergify merge protections to control when PRs merge — PR dependencies (Depends-On header), delayed merges (Merge-After header), and scheduled freezes (CLI). ALWAYS use this skill when managing merge freezes, deployment windows, temporarily blocking merges, setting up PR dependencies, blocking a PR on another PR, coordinating cross-repo merges, scheduling a merge for a specific time, or adding Depends-On or Merge-After headers to PRs. Triggers on freeze, scheduled freeze, merge freeze, deployment freeze, halt merges, depends on, dependency, block merge, merge after, merge later, schedule merge, delayed merge, cross-repo, merge protection.",
+      "source_sha256": "7ebae057b3862988f02bd8a72f5b6eacbdee73760238041f984ebdef69dc1035",
+      "source_path": "skills/mergify-merge-protections/SKILL.md",
+      "package_sha256": "7f33021a7d55bc48d4ef40737c57ede0fadcf4956c7b92fcc5bfd2cea0186f68",
+      "source_package": "mergify-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8f71e68bad6d1db42b66bf81aae8eaf3e5fc545cfdac290bdc936c66354ba74": {
+      "description_zh": "将PR加入移出Mergify队列，监控检查和暂停恢复队列，诊断移出原因、CI失败及合并失败后的动作。",
+      "source": "Use Mergify merge queue to queue/dequeue PRs, to monitor and inspect the queue, and to diagnose a dequeued PR — whether it is queued, why it was dequeued, where its CI failure is, and what to do next. ALWAYS use this skill when queuing or dequeuing a PR, checking queue status, investigating PR merge state, finding out why a PR left the queue, pausing/unpausing the queue, or debugging merge failures. Triggers on queue a PR, requeue, dequeue, dequeued, why was my PR dequeued, dequeue reason, merge queue, queue status, queue pause, queue show, pause, unpause, frozen, bisecting, batch, CI checks, CHECKS_FAILED, PULL_REQUEST_UPDATED.",
+      "source_sha256": "b8f71e68bad6d1db42b66bf81aae8eaf3e5fc545cfdac290bdc936c66354ba74",
+      "source_path": "skills/mergify-merge-queue/SKILL.md",
+      "package_sha256": "7f33021a7d55bc48d4ef40737c57ede0fadcf4956c7b92fcc5bfd2cea0186f68",
+      "source_package": "mergify-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4b16e2e629c6bf1be6dfa3822940b9ea5eb7b0b09e6d2c53b6b8613fb294a8b": {
+      "description_zh": "使用Mergify stacks管理Git推送、提交、分支、PR、变基、重排、同步、修订和版本历史。",
+      "source": "Use Mergify stacks for git push, commit, branch, and PR creation. ALWAYS use this skill when pushing code, creating commits, creating branches, or creating PRs. Triggers on push, commit, branch, PR, pull request, stack, stacked, git, rebase, checkout, reorder, move, sync, amend, note, revision history.",
+      "source_sha256": "e4b16e2e629c6bf1be6dfa3822940b9ea5eb7b0b09e6d2c53b6b8613fb294a8b",
+      "source_path": "skills/mergify-stack/SKILL.md",
+      "package_sha256": "7f33021a7d55bc48d4ef40737c57ede0fadcf4956c7b92fcc5bfd2cea0186f68",
+      "source_package": "mergify-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6d265c557c8a1e534a330707b0bd8e949a5ca605562634fcf4bcf59b5048a77": {
+      "description_zh": "依据原说明中的2026年爱沙尼亚税务口径支持记账判断，涵盖增值税24、13、9税率、分配利润企业税22/78、工资税、KMD代码、福利和安全税状态。",
+      "source": "Apply current (2026) Estonian tax rules — VAT (käibemaks) 24/13/9, distributed-profit CIT 22/78, payroll taxes, KMD codes, fringe benefits, security tax status. Use for any Estonian bookkeeping decision (with or without Merit Aktiva).",
+      "source_sha256": "f6d265c557c8a1e534a330707b0bd8e949a5ca605562634fcf4bcf59b5048a77",
+      "source_path": "skills/estonian-bookkeeping/SKILL.md",
+      "package_sha256": "56b5fb0ef632b2617dba8d62341cd715604e23aa485594791812acfe6aa60c97",
+      "source_package": "Merit Aktiva for AI Agents-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98d8c8445bac92037c480d2bc27c38f2b2892ecbc1a4eedf95b8a98d388ffd8e": {
+      "description_zh": "认证并调用Merit Aktiva REST API，处理HMAC-SHA256查询字符串签名、请求规范、速率限制与错误，作为其他Merit技能的先行接口参考。",
+      "source": "Authenticate and call the Merit Aktiva REST API — HMAC-SHA256 query-string signing, request conventions, rate limits, error handling. Use before any other Merit skill in this plugin.",
+      "source_sha256": "98d8c8445bac92037c480d2bc27c38f2b2892ecbc1a4eedf95b8a98d388ffd8e",
+      "source_path": "skills/merit-aktiva-core/SKILL.md",
+      "package_sha256": "56b5fb0ef632b2617dba8d62341cd715604e23aa485594791812acfe6aa60c97",
+      "source_package": "Merit Aktiva for AI Agents-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc93a61c83ebe74a4beb2da20ac79fd80a1eaa992daf4344a4532dbfea174c46": {
+      "description_zh": "在Merit Aktiva创建总账日记账批次并获取损益、资产负债、客户欠款、销售及库存报告，用于月末调整与报告。",
+      "source": "Create general-ledger journal entries (sendglbatch) and pull P&L (getprofitrep), balance sheet (getbalancerep), customer-debt (getcustdebtrep), sales (getsalesrep), and inventory reports from Merit Aktiva. Use for month-end adjustments and reporting.",
+      "source_sha256": "dc93a61c83ebe74a4beb2da20ac79fd80a1eaa992daf4344a4532dbfea174c46",
+      "source_path": "skills/merit-aktiva-ledger-reports/SKILL.md",
+      "package_sha256": "56b5fb0ef632b2617dba8d62341cd715604e23aa485594791812acfe6aa60c97",
+      "source_package": "Merit Aktiva for AI Agents-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b2043d96a2ac0be36271b04dac0d31dd726342dd420e6f93f09c31947ab4366": {
+      "description_zh": "查找创建Merit Aktiva客户、供应商、商品、税码和会计科目，在交易入账前将名称解析成GUID并新增主数据。",
+      "source": "Look up and create Merit Aktiva customers, vendors, items, tax codes, and chart-of-accounts entries. Use to resolve names to GUIDs before posting transactions, or to onboard new master data.",
+      "source_sha256": "7b2043d96a2ac0be36271b04dac0d31dd726342dd420e6f93f09c31947ab4366",
+      "source_path": "skills/merit-aktiva-masters/SKILL.md",
+      "package_sha256": "56b5fb0ef632b2617dba8d62341cd715604e23aa485594791812acfe6aa60c97",
+      "source_package": "Merit Aktiva for AI Agents-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3f9d7e77322b9493d0c32a0e33e577ec638daa3fad5d68be4d8f3a9c6b67322": {
+      "description_zh": "在Merit Aktiva录入采购发票与报销、记录付款、导入camt.053银行流水，用于供应商账单和银行交易核对。",
+      "source": "Post purchase invoices and expense claims, record payments, and import bank statements (camt.053) in Merit Aktiva. Use when entering supplier bills, paying invoices, or reconciling bank transactions.",
+      "source_sha256": "b3f9d7e77322b9493d0c32a0e33e577ec638daa3fad5d68be4d8f3a9c6b67322",
+      "source_path": "skills/merit-aktiva-purchases-payments/SKILL.md",
+      "package_sha256": "56b5fb0ef632b2617dba8d62341cd715604e23aa485594791812acfe6aa60c97",
+      "source_package": "Merit Aktiva for AI Agents-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9be41f180060888668211fd28f0c561311a8b82a0cb0c61464b6a50343cc0f1f": {
+      "description_zh": "在Merit Aktiva创建、列出、红冲并邮件发送销售发票，通过Omniva、Telema或银行触发电子发票，支持销售数据获取。",
+      "source": "Create, list, credit, and email sales invoices in Merit Aktiva; trigger e-invoices via Omniva/Telema/bank. Use when issuing customer invoices, posting credit notes, or pulling sales-side data.",
+      "source_sha256": "9be41f180060888668211fd28f0c561311a8b82a0cb0c61464b6a50343cc0f1f",
+      "source_path": "skills/merit-aktiva-sales/SKILL.md",
+      "package_sha256": "56b5fb0ef632b2617dba8d62341cd715604e23aa485594791812acfe6aa60c97",
+      "source_package": "Merit Aktiva for AI Agents-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b9892dd8ff12d406676a5ae0763f9907b163cb45572ba01dd94e8987ef7e8b6": {
+      "description_zh": "使用Meshy创建编辑数字3D模型、纹理、骨骼、动画和参考图；实体打印使用meshy-3d-printing。",
+      "source": "Create or edit digital 3D assets with Meshy: models, textures, rigging, animation, and reference images. For physical printing, use meshy-3d-printing.",
+      "source_sha256": "5b9892dd8ff12d406676a5ae0763f9907b163cb45572ba01dd94e8987ef7e8b6",
+      "source_path": "skills/meshy-3d-generation/SKILL.md",
+      "package_sha256": "5929b5c1e879b457a478893e632161dc14d4d891c2de7932f70ffc147b30f33e",
+      "source_package": "Meshy-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba2b0f0bde89b63c4ea63e34109b378adc6c44ecdd333af8d357d7a6397454d7": {
+      "description_zh": "生成或准备实体3D打印模型，覆盖白色或多色打印、Creative Lab产品、尺寸设定及切片软件交接。",
+      "source": "Generate or prepare models for physical 3D printing, including white or multicolor prints, Creative Lab products, sizing, and slicer handoff.",
+      "source_sha256": "ba2b0f0bde89b63c4ea63e34109b378adc6c44ecdd333af8d357d7a6397454d7",
+      "source_path": "skills/meshy-3d-printing/SKILL.md",
+      "package_sha256": "5929b5c1e879b457a478893e632161dc14d4d891c2de7932f70ffc147b30f33e",
+      "source_package": "Meshy-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f109a42e3f03b2c945cbb3dc63292d82015e4dedfef98093c6178ca14d5e2c97": {
+      "description_zh": "通过Meshy CLI创建模型、纹理、参考图、骨骼和动画，并准备白色多色实体打印、尺寸及切片交接；原说明采用浏览器登录，无需API密钥。",
+      "source": "Create 3D models, textures, reference images, rigging and animation with Meshy, and prepare models for physical 3D printing: white or multicolor prints, Creative Lab products, sizing and slicer handoff. Drives the Meshy CLI; signs in through the browser, no API key required.",
+      "source_sha256": "f109a42e3f03b2c945cbb3dc63292d82015e4dedfef98093c6178ca14d5e2c97",
+      "source_path": "skills/meshy-openclaw/SKILL.md",
+      "package_sha256": "5929b5c1e879b457a478893e632161dc14d4d891c2de7932f70ffc147b30f33e",
+      "source_package": "Meshy-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b325361683022e40b168eb438c8ff8ba2892ddf6da17c2d183166ed2d0c26a23": {
+      "description_zh": "将已有Android二维应用移植到Meta VR及Horizon OS，调整输入、面板布局与设计要求，采用标准Android路径；界面设计及路径不明确时使用对应技能。",
+      "source": "Guides porting existing Android 2D apps to Meta VR and Horizon OS — input adaptation, panel layout, and design requirements. Use when adapting a mobile Android app for Meta VR. For UI design decisions, use hz-panel-designer if available. Build path: Standard Android; use hz-quest-verify-first if the build path is unclear.",
+      "source_sha256": "b325361683022e40b168eb438c8ff8ba2892ddf6da17c2d183166ed2d0c26a23",
+      "source_path": "skills/hz-android-2d-porting/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98f212687c7f1cd50ad4582e55729a0f59433655ac4c8293d26fd9250b69d05d": {
+      "description_zh": "将Meta VR应用升级至较新Horizon OS SDK，处理迁移、已弃用API替换与变更日志，覆盖各构建栈，路径不明先确认。",
+      "source": "Upgrades Meta VR apps to newer Horizon OS SDK versions — migration guides, deprecated API replacements, changelog. Use when updating SDK versions or fixing deprecated API warnings. Build paths: all Meta VR app stacks; use hz-quest-verify-first if the build path is unclear.",
+      "source_sha256": "98f212687c7f1cd50ad4582e55729a0f59433655ac4c8293d26fd9250b69d05d",
+      "source_path": "skills/hz-api-upgrade/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a877e2cc3948122a7b8828d671c48da7cad6106f9358239b6d0f1fb66c6dd117": {
+      "description_zh": "为Meta VR与Horizon OS设计舒适直观的VR或MR体验，评审交互、空间、舒适性与无障碍，覆盖Spatial SDK、Unity、Unreal、OpenXR和WebXR；二维面板用专门设计技能。",
+      "source": "Guides design of comfortable, intuitive VR/MR experiences for Meta VR and Horizon OS — comfort guidelines, interaction patterns, spatial layout, accessibility. Use during UX design review or when evaluating comfort and accessibility. Build paths: Meta Spatial SDK, Unity, Unreal, native OpenXR, and WebXR; for 2D panel apps use hz-panel-designer if available. Use hz-quest-verify-first if the build path is unclear.",
+      "source_sha256": "a877e2cc3948122a7b8828d671c48da7cad6106f9358239b6d0f1fb66c6dd117",
+      "source_path": "skills/hz-immersive-designer/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba16cc8413d3e3b9cd395d767d272de4a8f7c0b776545f04f555abc8739f08e5": {
+      "description_zh": "用Immersive Web SDK为Quest Browser构建Meta VR和Horizon OS WebXR体验，覆盖ECS架构、Three.js集成与空间UI。",
+      "source": "Builds WebXR experiences for Meta VR and Horizon OS using the Immersive Web SDK (IWSDK) — ECS architecture, Three.js integration, spatial UI. Use when creating web-based VR/MR apps for Quest Browser.",
+      "source_sha256": "ba16cc8413d3e3b9cd395d767d272de4a8f7c0b776545f04f555abc8739f08e5",
+      "source_path": "skills/hz-iwsdk-webxr/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0c7ed0008c1c657bdfcfd0e27d894aa36476f73b06c9d0adbc2e6ba0413fd30": {
+      "description_zh": "用MetaVrx Layout SDK在Jetpack Compose或React Native构建多窗口Horizon OS应用，处理锚定、语义偏移、窗口提升、回退、优先级、生命周期与主题，适用于无沉浸场景的标准Android多面板。",
+      "source": "Build multi-window Meta Horizon OS experiences with the MetaVrx Layout SDK in Jetpack Compose or React Native. Covers framework selection, setup, anchoring, semantic offsets, window promotion, fallback, priority, lifecycle, and theming. Use for apps that need multiple app-owned panels without an immersive scene. Build path: Standard Android, including React Native; use hz-quest-verify-first if the path is unclear, and do not use this skill for immersive Spatial SDK scenes.",
+      "source_sha256": "d0c7ed0008c1c657bdfcfd0e27d894aa36476f73b06c9d0adbc2e6ba0413fd30",
+      "source_path": "skills/hz-metavrx-layout-sdk/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1641ed50feb694cd98e69d0ddc6f6d6418a309336371654732cfd854a6a06d1e": {
+      "description_zh": "用MetaVrx UI Set的Jetpack Compose组件库构建标准Android Meta VR界面，涵盖主题、按钮卡片、输入导航、对话框、图标、Gradle及从Spatial SDK UI Set迁移。",
+      "source": "Builds app UI for Meta VR and Horizon OS with the MetaVrx UI Set, a Jetpack Compose component library and design system. Covers UiSetTheme, buttons, cards, controls, dialogs, dropdowns, inputs, side navigation, sliders, tooltips, the Icons.Regular library, Gradle setup, and migration from the Spatial SDK UI Set. Build path: Standard Android; use hz-quest-verify-first if the path is unclear.",
+      "source_sha256": "1641ed50feb694cd98e69d0ddc6f6d6418a309336371654732cfd854a6a06d1e",
+      "source_path": "skills/hz-metavrx-ui-set/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "916b2becb670f268620296eaaff17d27fb33d818dd80bb91bd958984c104d836": {
+      "description_zh": "选定标准Android、Meta Spatial SDK、Unity、Unreal或WebXR路径后，搭建新Meta VR及Horizon OS项目；路径选择使用hz-quest-verify-first。",
+      "source": "Scaffolds new Meta VR and Horizon OS projects after the build path is selected — Standard Android, Meta Spatial SDK, Unity, Unreal, or WebXR. Use when creating a new Meta VR app from scratch. Build paths: all; use hz-quest-verify-first to choose the path.",
+      "source_sha256": "916b2becb670f268620296eaaff17d27fb33d818dd80bb91bd958984c104d836",
+      "source_path": "skills/hz-new-project-creation/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7473fe76de1cc17e09779cb7b0038491e5507c832b6e160f7c5c8cd2f9f6be3e": {
+      "description_zh": "用Perfetto追踪分析Meta VR和Horizon OS帧时序、CPU与GPU瓶颈及渲染通道，排查掉帧、卡顿和热问题，覆盖各Meta应用栈。",
+      "source": "Analyzes Meta VR and Horizon OS VR performance using Perfetto traces — frame timing, CPU/GPU bottlenecks, render pass analysis. Use when profiling frame drops, jank, or thermal issues on Meta VR devices. Build paths: all Meta VR app stacks; use hz-quest-verify-first if the build path is unclear.",
+      "source_sha256": "7473fe76de1cc17e09779cb7b0038491e5507c832b6e160f7c5c8cd2f9f6be3e",
+      "source_path": "skills/hz-perfetto-debug/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "24a3aaa8a34ce9f09a6a730545c4db37f4b1698c0544131496d5bb4d32754c95": {
+      "description_zh": "提供Android或Kotlin Horizon Platform SDK集成参考，覆盖成就、内购、用户、排行、状态、通知、举报、许可、资产、生命周期、同意与设备完整性等17个公开包，适用于标准Android和Spatial SDK。",
+      "source": "Guides integration of the Horizon Platform SDK for Meta VR and Horizon OS Android/Kotlin apps — achievements, IAP, users, leaderboards, presence, notifications, abuse reporting, entitlements, asset files, application lifecycle, consent, device integrity, language packs, user age categories, and rate and review. Covers setup, initialization, API usage, data types, error handling, and best practices for all 17 public platform SDK packages. Build paths: Standard Android and Meta Spatial SDK; use hz-psdk-integration for guided integration, hz-unity-platform-sdk for Unity/C#, and hz-quest-verify-first if the path is unclear.",
+      "source_sha256": "24a3aaa8a34ce9f09a6a730545c4db37f4b1698c0544131496d5bb4d32754c95",
+      "source_path": "skills/hz-platform-sdk/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69180fe4e57655efa062f5df6b589caa01e7a20c355ba0ca549ad973cb448adf": {
+      "description_zh": "交互式指导Android或Kotlin集成Horizon Platform SDK，分析代码、建议功能、规划集成并在设备验证；详细API参考使用hz-platform-sdk。",
+      "source": "Guides interactive Horizon Platform SDK (PSDK) integration for Meta VR and Horizon OS Android/Kotlin apps — analyzes the codebase, recommends public platform features, plans the integration, and validates on device. Use for workflow guidance; use hz-platform-sdk for the detailed API reference. Build paths: Standard Android and Meta Spatial SDK; use hz-quest-verify-first if the path is unclear.",
+      "source_sha256": "69180fe4e57655efa062f5df6b589caa01e7a20c355ba0ca549ad973cb448adf",
+      "source_path": "skills/hz-psdk-integration/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a1831b96574cd10f5b2851c0234cdfd3b5e108ec40fc6de2152080062ae7dbe5": {
+      "description_zh": "在回答或编写Meta Quest相关内容前，通过metavr CLI或MCP核对Meta权威来源，避免过期API、清单和商店构建问题，涵盖各路径及路径选择。",
+      "source": "MANDATORY pre-flight check before answering any question or writing any code related to Meta Quest VR headsets (Quest 2, Quest 3, Quest 3S, Quest Pro) or apps that target them. Forces verification against authoritative Meta sources via the metavr CLI / metavr MCP tools BEFORE relying on training-data knowledge. Counters the failure mode where agents answer Quest-related questions from stale memory and ship deprecated APIs, broken Android manifests, and store-rejected builds. Loads automatically when the user is in a Quest project (any reference to Oculus / Meta Quest / Horizon OS, Unity OVR or Meta XR packages, com.meta.* / com.oculus.* package IDs, Quest-targeted AndroidManifest, .meta files, or developers.meta.com / developer.oculus.com URLs). Build paths: all; use this skill first whenever the path is unknown or a Quest-specific claim is involved.",
+      "source_sha256": "a1831b96574cd10f5b2851c0234cdfd3b5e108ec40fc6de2152080062ae7dbe5",
+      "source_path": "skills/hz-quest-verify-first/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cffa491b7acd3c8639f93480472ba29b2613e865acf75a908db88cb9303db261": {
+      "description_zh": "用Expo构建迭代Meta VR或Horizon OS React Native应用，覆盖Expo Go、Metro、头显JS包与Fast Refresh，以及expo-horizon-core、预构建、Quest变体和Horizon分支库。",
+      "source": "Build and iterate on React Native apps for Meta VR / Horizon OS with Expo. Covers the fast dev loop — install Expo Go from the Meta Horizon Store, run a Metro dev server, load its bundle URL on the headset, and get live Fast Refresh — plus the full development-build path with the expo-horizon-core config plugin, prebuild, Quest product flavors, and the Horizon-forked libraries (location, notifications, IAP). Use when the user wants to build or run a Meta VR app in React Native/Expo, load a JS bundle URL on a headset, set up expo-horizon-core, or get live reload on device. Build path: Standard Android with React Native; use hz-quest-verify-first if the path is unclear.",
+      "source_sha256": "cffa491b7acd3c8639f93480472ba29b2613e865acf75a908db88cb9303db261",
+      "source_path": "skills/hz-react-native-expo/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32c7e3500133b0d026352b7554abbb28499c8cb3d04b944675fe866887789eae": {
+      "description_zh": "用simpleperf分析Meta VR及Horizon OS CPU性能，分类工作负载、记录热点和测量内核开销，判断CPU、内存或IO瓶颈。",
+      "source": "Profiles Meta VR and Horizon OS application CPU performance using simpleperf — workload classification, CPU hotspot recording, kernel overhead measurement. Use when diagnosing whether an app is CPU-bound, memory-bound, or I/O-bound on Meta VR devices. Build paths: all Meta VR app stacks; use hz-quest-verify-first if the build path is unclear.",
+      "source_sha256": "32c7e3500133b0d026352b7554abbb28499c8cb3d04b944675fe866887789eae",
+      "source_path": "skills/hz-simpleperf-debug/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a47efea3f9df616437b01e219abf25abb1ce57d552f848afc039961cfbd249d": {
+      "description_zh": "使用Meta Spatial SDK构建Kotlin空间Android应用，覆盖ECS、二维面板、三维对象和混合体验。",
+      "source": "Builds spatial Android apps for Meta VR and Horizon OS with Meta Spatial SDK — ECS architecture, 2D panels, 3D objects, hybrid experiences. Use when creating Kotlin-based spatial applications. Build path: Meta Spatial SDK; use hz-quest-verify-first if the build path is unclear.",
+      "source_sha256": "8a47efea3f9df616437b01e219abf25abb1ce57d552f848afc039961cfbd249d",
+      "source_path": "skills/hz-spatial-sdk/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65e5b28f4b134e1a893b8abd995bfc71555c84994aed4ec3889e9c51ce0dd3e2": {
+      "description_zh": "将Web应用打包成Meta商店PWA或TWA，覆盖二维窗口与沉浸WebXR、Vercel部署、清单图标、自动进入会话、bubblewrap模式、密钥与Digital Asset Links及商店上传。",
+      "source": "Guides shipping a web app to the Meta VR and Horizon OS Store as a PWA/TWA — both 2D windowed panels and immersive WebXR/VR. Covers building the web app (IWSDK for WebXR, any responsive PWA for 2D), Vercel deploy, web app manifest + icons, the WebXR-only auto-enter-session step, choosing 2D vs immersive mode in @meta-quest/bubblewrap-cli, keystore/Digital-Asset-Links, and ovr-platform-util Store upload. Use before any IWSDK/WebXR build, PWA packaging, bubblewrap, or Horizon Store upload work.",
+      "source_sha256": "65e5b28f4b134e1a893b8abd995bfc71555c84994aed4ec3889e9c51ce0dd3e2",
+      "source_path": "skills/hz-store-pwa/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a586f0b57064c954c53fa5018fc1dc155e369b470be36c26f25ca7dd7e7388d": {
+      "description_zh": "指导Meta VR及Horizon OS应用端到端提交Meta Horizon Store，涵盖构建验证、商店就绪检查、资源准备、上传和提交跟踪。",
+      "source": "Guides end-to-end Meta VR and Horizon OS app submission to the Meta Horizon Store — build validation, store-readiness checks, asset preparation, upload, and submission tracking. Use when preparing a Meta VR app for store publishing. Build paths: all Meta VR app stacks; use hz-quest-verify-first if the build path is unclear.",
+      "source_sha256": "9a586f0b57064c954c53fa5018fc1dc155e369b470be36c26f25ca7dd7e7388d",
+      "source_path": "skills/hz-store-submit/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9002286d1eff7bb8c5d02d51ff18cb19f223283ae44c3b5198427ebc61afb13f": {
+      "description_zh": "审查面向Meta VR及Horizon OS的Unity代码，发现性能问题、渲染实践及常见VR陷阱。",
+      "source": "Reviews Unity code targeting Meta VR and Horizon OS for performance issues, rendering best practices, and common VR pitfalls. Use during code review or when diagnosing Meta VR performance problems in Unity projects.",
+      "source_sha256": "9002286d1eff7bb8c5d02d51ff18cb19f223283ae44c3b5198427ebc61afb13f",
+      "source_path": "skills/hz-unity-code-review/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "239816eb1d865e39d2be3849686006aa63152003ac2466c31668704870d4590e": {
+      "description_zh": "审计Unity项目面向Meta VR眼镜的输入与视场就绪程度，识别OVRInput等控制器依赖，建议手追踪及ISDK迁移，并发现窄视场截断的头部锁定界面。",
+      "source": "Audits a Unity project for Meta VR Glasses readiness across input and field of view — finds controller-dependent interactions such as OVRInput usage, recommends hand-tracking and ISDK controller-to-hands migrations, produces a prioritized migration plan, and detects head-locked UI that a narrower FoV would clip.",
+      "source_sha256": "239816eb1d865e39d2be3849686006aa63152003ac2466c31668704870d4590e",
+      "source_path": "skills/hz-unity-device-readiness/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "44b46b68f2032ceab73f256c98fe9a9fddd08d7cd97f658bd1dcb20682cc8668": {
+      "description_zh": "依据原说明通过Meta Movement SDK的面部追踪与A2E，在Unity驱动具有52个ARKit混合形状的FBX头脸模型，使其跟随佩戴者表情，涉及Quest Pro、Quest 3及3S。",
+      "source": "Drive ARKit-blendshape-rigged head/face models in Unity with the wearer's facial expressions on Meta VR via Meta Movement SDK (face tracking + A2E). Use when a user has an FBX with the 52 ARKit blendshapes (any prefix, _L/_R suffixes) and wants it to animate from face tracking on Quest Pro / Quest 3 / Quest 3S.",
+      "source_sha256": "44b46b68f2032ceab73f256c98fe9a9fddd08d7cd97f658bd1dcb20682cc8668",
+      "source_path": "skills/hz-unity-face-tracking/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "821df6f2b5907d0838a7b05858b6e397ba93a785cef4b7b6df0530b54fdd3d28": {
+      "description_zh": "为Meta VR及Horizon OS Unity项目导入外部FBX模型时，使用完整URL或绝对路径。",
+      "source": "Ensures complete FBX URLs or absolute paths are used when importing external 3D models into Unity projects targeting Meta VR and Horizon OS. Use when adding FBX files, 3D models, or external assets.",
+      "source_sha256": "821df6f2b5907d0838a7b05858b6e397ba93a785cef4b7b6df0530b54fdd3d28",
+      "source_path": "skills/hz-unity-fbx-import/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b703ccb164f8355b6b625f9f259d41ab6b6eee311bbd981e250cee5c6ef441e9": {
+      "description_zh": "通过unity-cli操作运行中的编辑器，使用Meta XR Core SDK配置Unity VR或MR项目，涵盖OVRManager、相机、透视、手追踪、空间锚、输入、Scene API及清单生成。",
+      "source": "Meta XR Core SDK (com.meta.xr.sdk.core) for Unity XR development. Use when setting up VR/MR projects, configuring OVRManager, adding OVRCameraRig, enabling passthrough, hand tracking, spatial anchors, boundaryless mode, controller input, Scene API, or any Meta VR feature. Covers OVRProjectSetup, AndroidManifest generation, and project configuration for Meta VR devices, driven against a live Editor with unity-cli.",
+      "source_sha256": "b703ccb164f8355b6b625f9f259d41ab6b6eee311bbd981e250cee5c6ef441e9",
+      "source_path": "skills/hz-unity-meta-core-sdk/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "410674fd64b169834fa47f274e6cb4beb90be12cb23f4c0a4d6d074750120818": {
+      "description_zh": "使用Meta XR Interaction SDK为Unity场景加入抓取、戳碰、传送、注视及交互UI，配置手控制器和预制体交互；原说明默认OVR后端与QuickActionsAPI，可通过CLI、编辑器脚本或MCP执行。",
+      "source": "Meta XR Interaction SDK (com.meta.xr.sdk.interaction.ovr) in Unity. Use when adding ANY interaction to a Meta VR or Horizon OS scene - grab (hand, distance, ray, touch), poke, teleport/locomotion, gaze, interactable UI canvases - when making an object grabbable, adding interactors to hands or controllers, creating an interaction rig, or baking interaction into a prefab or a scene whose rig loads elsewhere (dynamically, DontDestroyOnLoad, additively). Use the OVR backend unless the user explicitly asks for cross-platform. Covers QuickActionsAPI and OVRQuickActionsAPI as the default way to wire interactions, running them via unity-cli, an Editor script, or MCP, installation, and the undocumented behavior that source-reading or a Play-mode run is otherwise needed to discover.",
+      "source_sha256": "410674fd64b169834fa47f274e6cb4beb90be12cb23f4c0a4d6d074750120818",
+      "source_path": "skills/hz-unity-meta-interaction-sdk/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1cdbb906a71e05dd9789d97bbce8a2f4c2bf267b273c657b31479f196d78941f": {
+      "description_zh": "使用Unity MRUK处理房间墙地家具等Scene API数据，在锚点放置对象、锁定世界、射线检测、生成导航网格、深度即时放置、透视相机、可追踪物检测、可破坏网格及多人房间共享。",
+      "source": "Meta XR Mixed Reality Utility Kit (MRUK) (com.meta.xr.mrutilitykit) for Unity XR development. Use when working with Scene API data (rooms, walls, floors, furniture), spawning prefabs on scene anchors, placing virtual objects in the real world, world locking to prevent anchor drift, raycasting against room geometry, generating NavMesh from scene data, environment depth raycasting for instant placement without scanning, Passthrough Camera Access (PCA), trackable detection (keyboards, QR codes), destructible scene meshes, space maps, room sharing for multiplayer, or any MR scene-aware feature.",
+      "source_sha256": "1cdbb906a71e05dd9789d97bbce8a2f4c2bf267b273c657b31479f196d78941f",
+      "source_path": "skills/hz-unity-meta-mixed-reality-utility-kit/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1a8d369d87370ad562304154bd2fd27f5965320116c433a27763a9fa146a2f6": {
+      "description_zh": "为Meta身体追踪配置Movement SDK角色重定向，先在运行编辑器执行默认设置，再按需修改关节映射、权重、扭转行为和T姿势JSON；运行时代码与非MSDK文件另行处理。",
+      "source": "Set up and tweak Meta Movement SDK (MSDK) retargeting for a character model. Use this whenever the user wants to retarget a humanoid FBX/prefab for Meta VR body tracking, generate a retargeting config, or hand-edit the resulting `<asset>.json` (fix known-joint mappings, exclude joints from auto-mapping, rename target joints, adjust per-joint mapping weights, change a mapping behavior to twist/childAlignedTwist, edit T-pose values). The headless entry point is `Meta.XR.Movement.Editor.MSDKUtilityEditor.RunDefaultRetargetingSetup(GameObject asset)` — call it against a live Editor with unity-cli first, then hand-edit if needed. **Skip** if the user is editing runtime retargeting code, the source `OVRSkeletonData.json`, or non-MSDK files.",
+      "source_sha256": "d1a8d369d87370ad562304154bd2fd27f5965320116c433a27763a9fa146a2f6",
+      "source_path": "skills/hz-unity-meta-movement-sdk-retargeting/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "154756893c44e017b6d28ec828ef86588255e06973f6340e72f003ad6e156ded": {
+      "description_zh": "配置Meta VR及Horizon OS Unity界面，涵盖世界空间画布、TextMesh Pro、舒适尺寸、观看距离和交互就绪。",
+      "source": "Configures Unity UI for Meta VR and Horizon OS VR development — world-space canvases, TextMesh Pro setup, comfortable sizing, viewing distances, and interaction readiness.",
+      "source_sha256": "154756893c44e017b6d28ec828ef86588255e06973f6340e72f003ad6e156ded",
+      "source_path": "skills/hz-unity-meta-quest-ui/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c03f4735a43767d8adbf07bfa2996efae35498da0ea16e1360047c7574ff0b38": {
+      "description_zh": "在Unity通过Quest 3或3S前置RGB透视相机为CV或ML提供图像，处理相机姿态内参、像素到空间投射、检测框、权限和分辨率；仅用户视角投屏使用Media Projection API。",
+      "source": "Meta Quest Passthrough Camera Access (PCA) for Unity — access the forward-facing RGB cameras on Quest 3 / Quest 3S to feed Computer Vision and Machine Learning pipelines. Use when capturing the passthrough camera image/texture, reading the camera pose and intrinsics, projecting camera pixels into world space via `PassthroughCameraAccess.ViewportPointToRay`, wiring camera frames into ML/CV models, or reasoning about resolution, permissions, vendor tags, and the pinhole/principal-point model. For projecting the image onto a flat world-space surface (frustum-slice quad / image-plane overlay) see references/principal-point-offset.md; for placing 2D ML detections as world-space 3D bounding boxes see references/detection-bounding-boxes.md. Skip if the user only wants to cast the user's POV (use the Media Projection API instead) or is doing screen-space-only overlays.",
+      "source_sha256": "c03f4735a43767d8adbf07bfa2996efae35498da0ea16e1360047c7574ff0b38",
+      "source_path": "skills/hz-unity-passthrough-camera-access/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "772c9de1d9b6990d82f95f0fbbd1e7e1f57cbfcbff2cf36bb4ad2fbf93fb4d3b": {
+      "description_zh": "在Meta VR Unity项目新增、移动或相对定位对象时，使用Renderer与Collider边界确保放置准确。",
+      "source": "Ensures accurate object placement in Unity projects targeting Meta VR and Horizon OS by using Renderer and Collider bounds when objects are added, moved, or positioned relative to other objects.",
+      "source_sha256": "772c9de1d9b6990d82f95f0fbbd1e7e1f57cbfcbff2cf36bb4ad2fbf93fb4d3b",
+      "source_path": "skills/hz-unity-placement/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d743e150ea5116f339ae7a188dcbc6ddd8896e16624107b10d4cd0b7c74edc3": {
+      "description_zh": "提供Unity或C# Horizon Platform SDK集成，覆盖成就、内购、用户、排行挑战、状态通知、举报许可、资产生命周期、同意、设备完整性和年龄等18个公开包。",
+      "source": "Guides integration of the Horizon Platform SDK for Meta VR and Horizon OS Unity/C# apps — achievements, IAP, users, leaderboards, challenges, presence, notifications, abuse reporting, entitlements, asset files, application lifecycle, consent, device integrity, language packs, user age categories, and rate and review. Covers setup, initialization, API usage, data types, error handling, and best practices for all 18 public platform SDK packages.",
+      "source_sha256": "0d743e150ea5116f339ae7a188dcbc6ddd8896e16624107b10d4cd0b7c74edc3",
+      "source_path": "skills/hz-unity-platform-sdk/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d22cce204a7b56c3e05d1049f0f4143a44549db26ef09e02f9178cddf8f178f9": {
+      "description_zh": "分析面向Meta VR的Unity项目结构，解释系统并维护.agent-docs知识库，支持结构变化后的文档更新。",
+      "source": "Analyzes, documents, and maintains a living `.agent-docs/` knowledge base for Unity projects targeting Meta VR and Horizon OS. Use when the user asks to scan project structure, explain how a Unity system works, or update project docs after structural changes.",
+      "source_sha256": "d22cce204a7b56c3e05d1049f0f4143a44549db26ef09e02f9178cddf8f178f9",
+      "source_path": "skills/hz-unity-project-analyzer/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "528cb60a83d48baa7e8540a269c80b9b6a77cc28644e2831fd64e96d0340f2b5": {
+      "description_zh": "在Unity项目升级Meta XR SDK，处理旧Oculus Integration迁移、编译错误和运行验证，以当前metavr文档为依据并记录覆盖缺口；其他技术栈升级使用对应流程。",
+      "source": "Upgrades Unity projects between Meta XR SDK versions for Meta VR and Horizon OS. Use when moving from Oculus Integration or older com.meta.xr packages, resolving post-upgrade compile errors, or validating runtime behavior. Grounds migration decisions in current metavr documentation results and records coverage gaps instead of relying on static summaries. Do not use for Unreal, native Android, Spatial SDK, or WebXR upgrades.",
+      "source_sha256": "528cb60a83d48baa7e8540a269c80b9b6a77cc28644e2831fd64e96d0340f2b5",
+      "source_path": "skills/hz-unity-sdk-upgrade/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "764e7791b9b9893a4db902e07b05dbd8dc5fd9042e2a41fd08223e80970f93d5": {
+      "description_zh": "为Meta VR Unity项目导入配置TextMesh Pro Essential Resources，修复缺失字体材料和粉红文字。",
+      "source": "Imports and configures TextMesh Pro Essential Resources for Unity projects targeting Meta VR and Horizon OS. Use when setting up TMP UI, fixing missing TMP materials or fonts, or resolving pink/magenta TMP text.",
+      "source_sha256": "764e7791b9b9893a4db902e07b05dbd8dc5fd9042e2a41fd08223e80970f93d5",
+      "source_path": "skills/hz-unity-tmp-resources/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c6516d96b1919b41602704ee7967b8bde09d9d5e44e6ce669391100f24ce2a6": {
+      "description_zh": "通过metavr CLI读取日志、截图并排查Meta VR和Horizon OS的VR、MR与Android应用崩溃、错误及异常行为。",
+      "source": "Debugs Meta VR and Horizon OS VR, MR, and Android applications using the metavr CLI — view logs, capture screenshots, and diagnose common issues. Use when troubleshooting crashes, errors, or unexpected behavior on Meta VR devices. Build paths: All; use hz-quest-verify-first if the path is unclear.",
+      "source_sha256": "6c6516d96b1919b41602704ee7967b8bde09d9d5e44e6ce669391100f24ce2a6",
+      "source_path": "skills/hz-vr-debug/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db02b647815cc3ae17441220e13ef66bc48276036c30e1cf7514cfa8587df0a1": {
+      "description_zh": "将模拟头显工作路由到合适metavr命令，并通过xrsim控制已运行模拟器的运行时、设备、输入、合成层和MP4录制，排查连接错误；安装配置使用另一技能。",
+      "source": "Routes Meta VR and Horizon OS simulator work to the right `metavr` command group, and drives a running Meta XR Simulator via `metavr xrsim` — runtime, device, input, compositor layers and MP4 recording. Use when a goal concerns a simulated headset rather than a physical one, when choosing between `xrsim`, `ssim`, `capture` and `tapedeck`, or when a `metavr xrsim` command returns a connection error. For installing the simulator or configuring it into a Unity, Unreal or native OpenXR project, use hz-xr-simulator-install-and-configure instead.",
+      "source_sha256": "db02b647815cc3ae17441220e13ef66bc48276036c30e1cf7514cfa8587df0a1",
+      "source_path": "skills/hz-xr-simulator-control/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3911f3126e57498e61b4ce09d0d49bd5b50d0f6bf6a68f95376c86a8aa1d35e": {
+      "description_zh": "安装配置Meta XR Simulator，在无实体设备时测试Unity、Unreal或原生OpenXR项目；标准Android、Spatial SDK和WebXR先经路径核验，运行控制使用专门技能。",
+      "source": "Installs and configures the Meta XR Simulator for testing Meta VR and Horizon OS apps without a physical device. Use when installing the simulator or integrating it with Unity, Unreal, or native OpenXR projects. For controlling a running simulator, use hz-xr-simulator-control. Build paths: Unity, Unreal, and native OpenXR; route Standard Android, Meta Spatial SDK, and WebXR work through hz-quest-verify-first.",
+      "source_sha256": "f3911f3126e57498e61b4ce09d0d49bd5b50d0f6bf6a68f95376c86a8aa1d35e",
+      "source_path": "skills/hz-xr-simulator-install-and-configure/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0289efad6c43541855b2c6f4a7e10953bbce1b2bd42ca7a4788796b7e9e770a4": {
+      "description_zh": "提供完整metavr CLI参考，涵盖安装、设备、命令发现、MCP模式、文档搜索、部署测试、音频、截图及性能分析。",
+      "source": "Provides the complete metavr (Meta VR CLI) reference for Meta VR and Horizon OS development — installation, device setup, command discovery, MCP server mode, documentation search, app deployment, device testing setup, audio control, screenshots, and performance analysis. Use when the user needs to install metavr, asks what commands are available, needs CLI syntax help, or wants to know what metavr can do. Build paths: all Meta VR app stacks; use hz-quest-verify-first if the build path is unclear.",
+      "source_sha256": "0289efad6c43541855b2c6f4a7e10953bbce1b2bd42ca7a4788796b7e9e770a4",
+      "source_path": "skills/metavr-cli/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "007e34de0c4b14efb39005a289b3f12f9545f13f7563ec91988c9be03ce23b8f": {
+      "description_zh": "用metavr构建侧载Meta Portal系列Android应用，覆盖ADB、无GMS限制、清单启动意图、PNG图标密度、Smart Camera及Gradle构建部署调试循环。",
+      "source": "Build and sideload Android apps for Meta Portal devices (Portal, Portal+, Portal Mini, Portal Go, Portal TV) using metavr. Use when targeting Portal hardware — covers ADB enablement, the no-GMS constraint, manifest/launcher intent-filter requirements, icon density quirks (PNG-only, mipmap-xxxhdpi), the Smart Camera SDK, and the gradle + `metavr adb` build/deploy/debug loop. Auto-load when the user mentions \"Portal\" device, targets `minSdkVersion` 28-29 for a tabletop/TV form factor, or works with the `com.facebook.portal` package.",
+      "source_sha256": "007e34de0c4b14efb39005a289b3f12f9545f13f7563ec91988c9be03ce23b8f",
+      "source_path": "skills/portal/SKILL.md",
+      "package_sha256": "a8488de8653284a846494c488a4aeb6d1d1fea96b1c30b51092e9ddbe1cad286",
+      "source_package": "Meta VR-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2248a0d73eaa6eb4372b7b8ab91db7e4a0d86329de0538ef38581c70666da36d": {
+      "description_zh": "从零创建注册为Markdown的Claude Code子智能体，支持专门执行者、评审或判断者；已有智能体修改与审计分别使用update-agent、improve-agent或review-agent。",
+      "source": "Create a brand-new Claude Code subagent (registered agent .md) from scratch. Use when the user asks to create, add, or write an agent or subagent, or needs a dedicated worker, reviewer, or judge agent for a task. Not for editing an existing agent — route to update-agent or improve-agent — and not for auditing one, which is review-agent.",
+      "source_sha256": "2248a0d73eaa6eb4372b7b8ab91db7e4a0d86329de0538ef38581c70666da36d",
+      "source_path": "skills/create-agent/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
