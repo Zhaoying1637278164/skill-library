@@ -77209,6 +77209,1086 @@
       "package_sha256": "d04a5224ecf91feeba1e3eded6f5a9c9f0f6268f2198e01b3b26fae5843e5385",
       "source_package": "Token Inspector-1.2.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb4510891a82f0c1718143138b7934aec85f6b17cd7fa73e3ae254d376b0f48f": {
+      "description_zh": "识别当前上下文中与请求无关的大型文件、文档和指令，提出可移除内容以释放令牌预算，适用于上下文不足或回复被截断。",
+      "source": "Find large context items that are not relevant to the current request. Identifies files, documents, and instructions that could be removed to free up token budget. Use when context is running out or responses are being truncated.",
+      "source_sha256": "eb4510891a82f0c1718143138b7934aec85f6b17cd7fa73e3ae254d376b0f48f",
+      "source_path": "skills/find-bloat/SKILL.md",
+      "package_sha256": "d04a5224ecf91feeba1e3eded6f5a9c9f0f6268f2198e01b3b26fae5843e5385",
+      "source_package": "Token Inspector-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc8b4080100cb79042bda19591369c57ea4cd490b06f25ec8b39560610a9daa2": {
+      "description_zh": "逐轮分析对话历史，确定适合运行 /clear 的位置，在保留当前任务相关信息的同时剪除过时历史，适用于长对话继续工作。",
+      "source": "Analyze conversation history turn-by-turn and identify the exact point to run /clear from to prune stale history while keeping everything relevant to the current task. Use when history has grown long but you want to continue in the same session.",
+      "source_sha256": "fc8b4080100cb79042bda19591369c57ea4cd490b06f25ec8b39560610a9daa2",
+      "source_path": "skills/history-trim/SKILL.md",
+      "package_sha256": "d04a5224ecf91feeba1e3eded6f5a9c9f0f6268f2198e01b3b26fae5843e5385",
+      "source_package": "Token Inspector-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01d9d3ac0b814d5386c06e08be7b2666f3e4ec2241a2aeecd48450c146decbaa": {
+      "description_zh": "分析上下文窗口的令牌构成，分别报告系统提示、文件、历史、技能和 MCP 配置的占用。",
+      "source": "Analyze the current context window and report a breakdown of what's consuming tokens — system prompts, files, conversation history, skills, and MCP configs. Use when the user wants to understand their token budget.",
+      "source_sha256": "01d9d3ac0b814d5386c06e08be7b2666f3e4ec2241a2aeecd48450c146decbaa",
+      "source_path": "skills/inspect-context/SKILL.md",
+      "package_sha256": "d04a5224ecf91feeba1e3eded6f5a9c9f0f6268f2198e01b3b26fae5843e5385",
+      "source_package": "Token Inspector-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28aa0889ae7d2cc4f66a68308fed8fd3fa51284b343c0669cb5752074c06b808": {
+      "description_zh": "审计已连接 MCP 服务及工具定义，展示已加载服务、各自令牌开销和未使用工具，帮助用户判断可断开的内容。",
+      "source": "Audit all connected MCP servers and their tool definitions. Shows which servers are loaded, how many tokens each costs, and which tools haven't been used — so you can disconnect what you don't need. Use when you have many MCP servers connected and want to reclaim token budget.",
+      "source_sha256": "28aa0889ae7d2cc4f66a68308fed8fd3fa51284b343c0669cb5752074c06b808",
+      "source_path": "skills/mcp-audit/SKILL.md",
+      "package_sha256": "d04a5224ecf91feeba1e3eded6f5a9c9f0f6268f2198e01b3b26fae5843e5385",
+      "source_package": "Token Inspector-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d26129ea6ea7882d09808293b57475419d21fcac4071e901abb406ab9753a5f1": {
+      "description_zh": "分析 CLAUDE.md 和其他已加载指令的冗长、重复与膨胀，生成保留含义的精简版本以减少令牌开销。",
+      "source": "Analyze CLAUDE.md and other loaded instruction files for verbosity, redundancy, and bloat. Produces a condensed rewrite that preserves all meaning while cutting token cost. Use when your system prompt or CLAUDE.md feels too long.",
+      "source_sha256": "d26129ea6ea7882d09808293b57475419d21fcac4071e901abb406ab9753a5f1",
+      "source_path": "skills/slim-instructions/SKILL.md",
+      "package_sha256": "d04a5224ecf91feeba1e3eded6f5a9c9f0f6268f2198e01b3b26fae5843e5385",
+      "source_package": "Token Inspector-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7018ee28671f83f9f6fd86e80638915cbc9f181855f105a605b953fc4bd80425": {
+      "description_zh": "检测对话是否跨越多个无关主题，建议是否另开会话、最佳拆分位置及需携带的上下文。",
+      "source": "Detect when a conversation has drifted across multiple unrelated topics and recommend whether to start a new conversation. Identifies the optimal split point and summarizes what to carry forward. Use when a session has been running long or has covered many different tasks.",
+      "source_sha256": "7018ee28671f83f9f6fd86e80638915cbc9f181855f105a605b953fc4bd80425",
+      "source_path": "skills/suggest-split/SKILL.md",
+      "package_sha256": "d04a5224ecf91feeba1e3eded6f5a9c9f0f6268f2198e01b3b26fae5843e5385",
+      "source_package": "Token Inspector-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b32d03ae5bb3ca3b2218ee3c7580dc75f60918f151fe38f69f28658bf62040eb": {
+      "description_zh": "在加载文件、目录、网址或粘贴内容前估算新增令牌量，帮助避免大型内容占满上下文。",
+      "source": "Estimate how many tokens a file, directory, URL, or pasted content would add to your context before you load it. Use before opening large files or reading external content to avoid blowing your context budget.",
+      "source_sha256": "b32d03ae5bb3ca3b2218ee3c7580dc75f60918f151fe38f69f28658bf62040eb",
+      "source_path": "skills/token-forecast/SKILL.md",
+      "package_sha256": "d04a5224ecf91feeba1e3eded6f5a9c9f0f6268f2198e01b3b26fae5843e5385",
+      "source_package": "Token Inspector-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d4b4e05aebebe30228bbdf10f9cc10235a4e5ffcc5c16c5340700bf04f9d92c": {
+      "description_zh": "优化 Claude Code 的令牌使用，涵盖提示缓存、TTL、刷新、/rewind／compact／clear或新会话选择、模型档位、插件与 MCP 精简、输出长度及会话成本审计。",
+      "source": "Cut Claude Code token spend without cutting quality. This skill should be used when the work involves prompt caching (cache writes, cache hits, TTL, refreshes), deciding between /rewind, /compact, /clear and a fresh session, routing work to the right model tier, pruning plugins and MCP servers that clog the context window, reducing verbose output, or auditing what a session costs. Triggers include tokens, cost, cache, caching, compact, compaction, context full, expensive, spend, budget, token economy, prune plugins.",
+      "source_sha256": "1d4b4e05aebebe30228bbdf10f9cc10235a4e5ffcc5c16c5340700bf04f9d92c",
+      "source_path": "skills/token-shield/SKILL.md",
+      "package_sha256": "3c1ebce48e29f776a67f27f3c5a8c835b1b1d5151e9b8a52c8037a46f9e03ca3",
+      "source_package": "Token Shield-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6077b21e3d4f425f96c33e3cf741049711dc3ed249bd09fa9b2aecff5b8eaba2": {
+      "description_zh": "在长时间 Claude Code／CodeBuddy 会话中启用精简输出、监测对话长度、建议详细与提炼两层快照，并按概念积累跨会话问答；自动识别产品并保存至相应目录。",
+      "source": "Use this skill at the start of any long-running Claude Code or CodeBuddy\nsession to reduce input token consumption. Activates compact output style,\nmonitors conversation length to suggest layered snapshots (detailed +\ndistilled), and accumulates concept-organized Q&A across sessions.\nAuto-detects whether running in Claude Code or CodeBuddy and writes data\nto the appropriate product directory. Trigger whenever the user mentions\n\"save tokens\", \"reduce token consumption\", \"long session\", \"compact output\",\n\"snapshot conversation\", \"concept knowledge base\", or starts what seems\nlikely to be an extended technical conversation.",
+      "source_sha256": "6077b21e3d4f425f96c33e3cf741049711dc3ed249bd09fa9b2aecff5b8eaba2",
+      "source_path": "skills/token-saver/SKILL.md",
+      "package_sha256": "0ff8a55fcf65302f59b8d5f9e801949189593e5afd2632552bedf839c39a89e5",
+      "source_package": "token-saver-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a05d75b1543d1edbe7da284a6be94ef87f74ab0d368f9cdd9c4e735734e7f10": {
+      "description_zh": "生成 Claude Code、Cowork 或 Cursor 当前及历史会话的活动级令牌与估计 API 成本报告，按命令、技能或生成任务归因，汇总子代理、模型和代理类型，支持历史消耗速率、会话比较、预算提醒及规则化节约建议。",
+      "source": "Generate a per-activity breakdown of Claude Code, Cowork, or Cursor token usage and estimated API cost for the current or a past session, attributing usage to slash commands (Claude Code), skills (Cowork), or Cursor composer generations, including subagent rollups, per-agent-type and per-model breakdowns, cross-session history with burn rate, compare mode, budget nudge status, and rule-based spend insights. This skill should be used when the user asks \"where did my tokens go\", \"token usage report\", \"how many tokens did that command or skill use\", \"what did this session cost\", \"which command/skill/subagent/model used the most tokens\", \"show me token history\", \"what did I spend this week\", \"what's my burn rate\", \"token history by day/project/command/model\", \"compare token usage between two sessions\", \"which sessions cost the most\", \"costliest sessions\", \"top consumers\", \"any tips on my token spend\", \"analyse my token usage\", or \"why was this session expensive\".",
+      "source_sha256": "5a05d75b1543d1edbe7da284a6be94ef87f74ab0d368f9cdd9c4e735734e7f10",
+      "source_path": "skills/report/SKILL.md",
+      "package_sha256": "7072dd0e3a23d124cb5010f529d9533f3d58ac69828330ae76f26d22ca3d9d36",
+      "source_package": "token-usage-0.6.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c881a43f04b7d8625203e9b3e3d0929b4263ce43e2157b4921c34a971ddb939": {
+      "description_zh": "用 TomeScout Toolkit 准备 Amazon KDP 发布或重新上架前的标题、副标题、允许 HTML 的简介、七个关键词框及价格，并对照 KDP 已发布指南检查元数据。",
+      "source": "Prepare an Amazon KDP listing before publishing — title and subtitle, a description with KDP-allowed HTML, the seven keyword boxes and the price — and check it against KDP's published guidelines with the TomeScout Toolkit tools. Use when an author is about to publish or relaunch a book on Amazon KDP, asks for their seven keyword boxes, or asks to review their book's metadata.",
+      "source_sha256": "6c881a43f04b7d8625203e9b3e3d0929b4263ce43e2157b4921c34a971ddb939",
+      "source_path": "skills/kdp-listing-prep/SKILL.md",
+      "package_sha256": "f1c9b90da8f6d6103be9c6dfc5c19140caab6a486519671ad1ca0c5195fe91cc",
+      "source_package": "TomeScout Toolkit-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4bf68a2ef25e86ca4d91844b94b8116f2f78de171ba1489bb221558f79ebc315": {
+      "description_zh": "根据作者在 Amazon 读取的畅销榜排名，使用 TomeScout Toolkit 排名销量和版税工具估计细分市场头部书籍销量及相应收入，支持题材和写作方向比较。",
+      "source": "Estimate how much the top books in an Amazon niche sell, and what a book at that rank would earn, from the Best Sellers Rank figures the author reads on Amazon, with the TomeScout Toolkit sales-from-rank and royalty tools. Use when an author asks whether a genre, trope or topic sells, how much competing books sell, or which niche to write next.",
+      "source_sha256": "4bf68a2ef25e86ca4d91844b94b8116f2f78de171ba1489bb221558f79ebc315",
+      "source_path": "skills/kdp-niche-sizing-by-rank/SKILL.md",
+      "package_sha256": "f1c9b90da8f6d6103be9c6dfc5c19140caab6a486519671ad1ca0c5195fe91cc",
+      "source_package": "TomeScout Toolkit-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91521385d4dabd5bcf2f25da2556d9b91a3c349fc440c34dca41520430c1e75f": {
+      "description_zh": "在 Topo 汇总通话前客户简报，包括联系人、进行中触达序列、收件箱讨论、近期活动及理想客户画像匹配，可按要求留下下一步。",
+      "source": "Assemble a pre-call account brief in Topo — roster, open sequences, inbox threads, recent activity, and ICP fit — then leave a next step if asked. Use when the user asks to brief an account, who we are talking to at a company, or what happened with a lead this month.",
+      "source_sha256": "91521385d4dabd5bcf2f25da2556d9b91a3c349fc440c34dca41520430c1e75f",
+      "source_path": "skills/briefing-an-account/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90d459505beb9b2a3a3987a08da26049b55b0b724baf58431dab4f28bf993ee1": {
+      "description_zh": "处理 Topo 任务收件箱，列举到期事项并按任务类型所需数据完成、跳过、延后或重新分配，支持通话记录和跟进管理。",
+      "source": "Work the Topo task inbox — list what is due, then complete, skip, snooze, or reassign with the payload each task type requires. Use when the user asks what is on their plate, to clear hot tasks, log a call, snooze a follow-up, or hand a task to a teammate.",
+      "source_sha256": "90d459505beb9b2a3a3987a08da26049b55b0b724baf58431dab4f28bf993ee1",
+      "source_path": "skills/clearing-todays-tasks/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "455c486298b961f509093b67de6c66ed099baa04dff1be8a9a86fc32e338cc03": {
+      "description_zh": "按职位、地区或公司条件在 Topo 查找新线索，经用户明确确认预览或运行搜索，并导入匹配联系人到名单。",
+      "source": "Source new leads from criteria using Topo lead search, preview or run the search with explicit user confirmation, and import matching leads into a contact list. Use when the user wants to find new prospects, build a target list from scratch, or source leads matching specific titles, locations, or companies.",
+      "source_sha256": "455c486298b961f509093b67de6c66ed099baa04dff1be8a9a86fc32e338cc03",
+      "source_path": "skills/creating-a-lead-search/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c57aa738daa97548ca78d4c361a0c99e9d842653090ad8107d844972c68777f": {
+      "description_zh": "在 Topo 按名称和有序步骤创建触达序列、复制既有序列或替换模板文案，支持主题、正文、延迟和渠道编辑。",
+      "source": "Author a new Topo outreach sequence from a name and ordered steps, clone an existing one, or replace the copy of a template. Use when the user wants to create a sequence, duplicate one, or edit subjects, bodies, delays, or channels.",
+      "source_sha256": "5c57aa738daa97548ca78d4c361a0c99e9d842653090ad8107d844972c68777f",
+      "source_path": "skills/creating-a-sequence/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ce8d0a28cc2b6b96bb3e42b88a78ff6f2d4f3ef62874f8b65754cf61dc8b627": {
+      "description_zh": "根据 Topo 漏斗数量及运行设置诊断序列未发送或效果差的原因，仅应用 MCP 支持的运维修复，支持暂停、绑定发送者及 copilot／autopilot 切换。",
+      "source": "Diagnose why a Topo sequence is not sending or underperforming using funnel counts and operational settings, then apply only the ops fixes MCP allows. Use when the user asks why a sequence is quiet, how it performed this month, to pause it, attach a sender, or switch copilot vs autopilot.",
+      "source_sha256": "2ce8d0a28cc2b6b96bb3e42b88a78ff6f2d4f3ef62874f8b65754cf61dc8b627",
+      "source_path": "skills/diagnosing-sequence-health/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b91e0f90f0bdc0b033a07c2165616249e5a274752699d3bf0a4463d6c4c503a": {
+      "description_zh": "确认 Topo 登录身份、盘点工作区并将请求路由到合适技能，适用于能力介绍、连接检查和不明确的主动销售请求。",
+      "source": "Orient a Topo session — confirm who is signed in, take stock of the workspace, and route the request to the right Topo skill. Use when the user asks what Topo can do, whether they are connected, what is in their workspace, or gives an outbound sales request that does not obviously match another Topo skill.",
+      "source_sha256": "9b91e0f90f0bdc0b033a07c2165616249e5a274752699d3bf0a4463d6c4c503a",
+      "source_path": "skills/getting-started-with-topo/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "591a39015a2ea067d62dcba39eaf2237a0751245af84321523167d53e567de74": {
+      "description_zh": "因外出、休假或时机不合暂时暂停 Topo 触达并随后恢复，不将联系人标记为流失，支持按日期暂停线索、整序列冻结和恢复参与记录。",
+      "source": "Temporarily pause Topo outreach for out-of-office, vacation, or bad timing, and resume it later, without marking people lost. Use when the user wants to pause a lead until a date, freeze a whole sequence this week, or resume paused enrollments.",
+      "source_sha256": "591a39015a2ea067d62dcba39eaf2237a0751245af84321523167d53e567de74",
+      "source_path": "skills/holding-or-resuming-outreach/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0b7e6f02dedb6ff952089713c6dcff07a47781984c591536e2cdaaabb109919": {
+      "description_zh": "说明 Topo 各类 ID 与 MCP 工具的对应关系，以及预约会议、失单、明确拒绝或暂停的记录方法和需确认的写入，帮助区分 stop_sequence、unenroll、refuse_leads。",
+      "source": "Which Topo id to pass to which MCP tool, which write records a booked meeting, a loss, a hard no, or a pause, and which writes need the user's confirmation. Read before any Topo write, and whenever unsure whether to call stop_sequence, unenroll, or refuse_leads.",
+      "source_sha256": "a0b7e6f02dedb6ff952089713c6dcff07a47781984c591536e2cdaaabb109919",
+      "source_path": "skills/ids-and-outcomes/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e85d2efd6232f80452158a59e8daff473fdbaff6253ff744090766220babc7f": {
+      "description_zh": "将指定联系人加入名单并纳入既有 Topo 序列，处理隐含名单成员关系及 FOUND 到 ACTIVE 的步骤，支持会议联系人、邮件名单或 CSV 导入后启动触达。",
+      "source": "Add named people to a contact list and enroll them in an existing Topo sequence, including the hidden list membership and FOUND vs ACTIVE steps. Use when the user wants to add conference contacts, a short list of emails, or a CSV to a sequence and start outreach.",
+      "source_sha256": "5e85d2efd6232f80452158a59e8daff473fdbaff6253ff744090766220babc7f",
+      "source_path": "skills/importing-and-starting-outreach/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa2431547bc02e8b7a07fd471d76533f35bd54c244831d6669ac750507785a4e": {
+      "description_zh": "在 Topo 记录已知触达结果，如会议预约、成交、不感兴趣、退订或联系人错误，通过 stop_sequence、unenroll 或 refuse_leads 移出序列，无需打开收件箱。",
+      "source": "Apply a known outreach outcome in Topo — meeting booked, won, not interested, unsubscribe, wrong person — using stop_sequence, unenroll, or refuse_leads. Use when the user already knows the result from a call, Slack, or CRM and wants someone taken off a sequence without opening the inbox.",
+      "source_sha256": "aa2431547bc02e8b7a07fd471d76533f35bd54c244831d6669ac750507785a4e",
+      "source_path": "skills/recording-outreach-outcomes/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e441c0411d793be3dad5edb8c7be9480763efaca249f00d9dde9ddbae9be56c": {
+      "description_zh": "审查序列中等待批准的 FOUND 线索，按理想客户画像评估，批准匹配对象启动触达，拒绝其余对象且不影响其他序列。",
+      "source": "Review leads waiting for approval (FOUND) on a sequence — qualify against the ICP, approve fits so outreach starts, refuse the rest without blocking other sequences. Use when the user asks to review new leads, approve a backlog, or refuse people who are not a fit.",
+      "source_sha256": "7e441c0411d793be3dad5edb8c7be9480763efaca249f00d9dde9ddbae9be56c",
+      "source_path": "skills/reviewing-waiting-leads/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0812797b2db13bca7aeba39294db8c0aba971fe1fefd1f9415516e3c6bdccff": {
+      "description_zh": "管理 Topo 排除名单中的邮件和公司域名屏蔽或解除，并停止已向这些对象发送的序列，支持禁止联系名单、跳过原因和排除项恢复。",
+      "source": "Block or lift emails and company domains on the Topo exclusion list, and stop any sequences already sending to those targets. Use when the user wants a do-not-contact, asks why a lead was skipped, adds a customer or competitor list, or wants an exclusion removed.",
+      "source_sha256": "c0812797b2db13bca7aeba39294db8c0aba971fe1fefd1f9415516e3c6bdccff",
+      "source_path": "skills/suppressing-or-releasing-targets/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12c5a6b4253848ccc9d5011648998f6b09935129e14a6d98e9aa207a8325c7c6": {
+      "description_zh": "处理 Topo 收到的邮件或 LinkedIn 回复，读取讨论、分类意图、必要时回复并记录对应序列结果。",
+      "source": "Work inbound email and LinkedIn replies in Topo — read the thread, classify intent, reply when needed, and apply the matching sequence outcome. Use when the user asks what came in overnight, who replied, what a lead said, or to handle the inbox.",
+      "source_sha256": "12c5a6b4253848ccc9d5011648998f6b09935129e14a6d98e9aa207a8325c7c6",
+      "source_path": "skills/triaging-inbound-replies/SKILL.md",
+      "package_sha256": "a4e89c8570aaac1ba974a93d3e9ec29fd1613fc1596f8da9de6ceb153908d26f",
+      "source_package": "Topo-1.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c4d278bdcaee95288d9c274cb5f12c2589d46cb2158879e2500cc385ed17bf2": {
+      "description_zh": "通过 ttai MCP 为 Tough Tongue AI 场景录制确定性浏览器演示步骤，访谈流程、从产品页面取得稳定选择器、更新浏览器 steps，并设置持久登录，适用于演示点错元素或预录流程。",
+      "source": "Record deterministic, pre-recorded browser demo steps for a Tough Tongue AI scenario via the ttai MCP server. Interviews the demo flow, harvests stable selectors from the product's pages, writes tools_config.tools.browser tool_settings.steps with ttai:update_scenario, and sets up persistent login with ttai:authenticate_browser. Use when the user says \"record browser demo steps\", \"make my demo deterministic\", \"pre-record a demo flow\", \"the demo clicks the wrong thing\", or \"add browser steps to my scenario\".",
+      "source_sha256": "1c4d278bdcaee95288d9c274cb5f12c2589d46cb2158879e2500cc385ed17bf2",
+      "source_path": "skills/browser-demo-builder/SKILL.md",
+      "package_sha256": "a735fd4dc7ad776b15ca115d883c8715ee56b5778ed5062e9213caff57c38b8d",
+      "source_package": "toughtongue-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00379aa897aea592b1d4b243be31a000b4c68c29395c5cdf1fa48fdaf0a3ac86": {
+      "description_zh": "通过 ttai MCP 创建、编辑或优化 Tough Tongue AI 外呼、演示、筛选和练习角色扮演场景，先分类并加载 ttai-agent，再创建或更新场景，支持根据简报、记录或投诉调整代理。",
+      "source": "Create, edit, or refine Tough Tongue AI scenarios via the ttai MCP server — outbound callers, demo agents, screeners, and practice roleplay. Classifies the job, loads ttai-agent, then calls ttai:create_scenario or ttai:update_scenario. Use when the user says \"create a scenario\", \"create a voice agent\", \"build a practice scenario\", \"edit the scenario\", \"refine the scenario\", \"fix the scenario\", \"the agent said X instead of Y\", \"it ended the call too early\", \"make it sound more natural\", \"I have a call in 30 minutes, help me rehearse\", or pastes a brief, transcript, or complaint.",
+      "source_sha256": "00379aa897aea592b1d4b243be31a000b4c68c29395c5cdf1fa48fdaf0a3ac86",
+      "source_path": "skills/scenario-maker/SKILL.md",
+      "package_sha256": "a735fd4dc7ad776b15ca115d883c8715ee56b5778ed5062e9213caff57c38b8d",
+      "source_package": "toughtongue-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90c1ac69b3731e1b171caeb8bc6c74e64620800478fcbc0313192e60e4099752": {
+      "description_zh": "分析 Tough Tongue AI 练习、SIP 通话及会议机器人会话，提取评分、优势和弱点，归纳团队或场景模式并生成改善领域和行动项，可整理为报告、演示或仪表板。",
+      "source": "Analyze Tough Tongue AI sessions — practice, SIP phone calls, and meeting bots — and build reports via the ttai MCP server. Pulls scores, strengths, and weaknesses, aggregates patterns across a team or scenario, and produces structured reports with improvement areas and action items. Use when the user asks \"how is my team doing?\", \"top improvement areas for scenario X\", \"pull the lowest-scoring sessions\", \"build me a coaching report\", \"session trends this month\", or wants session data turned into a deck, email, or dashboard.",
+      "source_sha256": "90c1ac69b3731e1b171caeb8bc6c74e64620800478fcbc0313192e60e4099752",
+      "source_path": "skills/session-analyst/SKILL.md",
+      "package_sha256": "a735fd4dc7ad776b15ca115d883c8715ee56b5778ed5062e9213caff57c38b8d",
+      "source_package": "toughtongue-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "508006cdf175010dbcda4f843050e29e7b9c202f3eeb22f1e4e19d32b9606673": {
+      "description_zh": "介绍 Tough Tongue AI 的工作区、场景、会话、MCP 工具、模型标记和用法，支持 SIP、会议机器人、评分准则及插件安装问题。",
+      "source": "Tough Tongue AI map for any ttai question: workspaces, scenarios, sessions, MCP tools, model stamps, and recipes. Use when the user says \"Tough Tongue\", \"ttai\", \"create a voice agent\", \"what is a scenario\", \"list my orgs\", or asks about SIP, Meet bots, rubrics, or installing the skills plugin.",
+      "source_sha256": "508006cdf175010dbcda4f843050e29e7b9c202f3eeb22f1e4e19d32b9606673",
+      "source_path": "skills/ttai-agent/SKILL.md",
+      "package_sha256": "a735fd4dc7ad776b15ca115d883c8715ee56b5778ed5062e9213caff57c38b8d",
+      "source_package": "toughtongue-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8caeb667884aaf48eab8ded8ae22f60f3ed81126b8792a59a81a28de2003700": {
+      "description_zh": "通过自然语言转 SQL 对项目数据开展深入分析。",
+      "source": "Perform deep data analysis on a project using natural language to SQL.",
+      "source_sha256": "f8caeb667884aaf48eab8ded8ae22f60f3ed81126b8792a59a81a28de2003700",
+      "source_path": "skills/analyze/SKILL.md",
+      "package_sha256": "897bb6df9d79a1b9f4712dad998dab28457914666518977cce2494fd91e93b21",
+      "source_package": "Trackian-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbd2bd69f6a5f10ad556db670544f30858fe4a7a99822e22daa771087d24ad6a": {
+      "description_zh": "使用 Trackian Sentinel 代理调查指定项目、指标和日期的营销异常。",
+      "source": "Investigate marketing anomalies for a specific project, metric, and date using Trackian Sentinel agents.",
+      "source_sha256": "cbd2bd69f6a5f10ad556db670544f30858fe4a7a99822e22daa771087d24ad6a",
+      "source_path": "skills/anomaly/SKILL.md",
+      "package_sha256": "897bb6df9d79a1b9f4712dad998dab28457914666518977cce2494fd91e93b21",
+      "source_package": "Trackian-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab57ea88f9c4a6553448c6cfb639054e2a019398c9c248bf39ec629a679517a2": {
+      "description_zh": "为指定项目和日期范围生成完整渠道绩效报告。",
+      "source": "Generate a comprehensive channel performance report for a specific project and date range.",
+      "source_sha256": "ab57ea88f9c4a6553448c6cfb639054e2a019398c9c248bf39ec629a679517a2",
+      "source_path": "skills/report/SKILL.md",
+      "package_sha256": "897bb6df9d79a1b9f4712dad998dab28457914666518977cce2494fd91e93b21",
+      "source_package": "Trackian-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46b7ac84e31d2dc9ecfba77769c65b0516190fa329c8379310ed29d518de1e77": {
+      "description_zh": "连接 Trackly SMS，指导账户和发送者设置、准备供人工审查的消息、执行已批准的保留操作，并检查送达或处理结果不确定的情况。",
+      "source": "Connect Trackly SMS, guide account and sender setup, prepare messages for human review, execute approved holds, and inspect delivery or recover uncertain outcomes.",
+      "source_sha256": "46b7ac84e31d2dc9ecfba77769c65b0516190fa329c8379310ed29d518de1e77",
+      "source_path": "skills/trackly/SKILL.md",
+      "package_sha256": "d51616925237b97df6eb54960e0ffadaef35697fc269d3792f241e501d33fc0e",
+      "source_package": "Trackly SMS-0.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "674a33ac8eb0744ac1def1714d18e573423d43ff5d3abd663fec2ce1fb6940bb": {
+      "description_zh": "通过 transcribe.so CLI 将平台网址、媒体链接或本地音视频转为带说话人和时间戳的记录，生成章节、分节、引用问答、SRT／VTT／卡拉OK字幕、全文和片段检索，以及社交平台可用文字。原说明称支持52种语言及方言，具体支持需核对。",
+      "source": "Transcribe audio and video with the transcribe.so CLI. Turns YouTube videos, podcasts (Apple Podcasts, Spotify, SoundCloud, Vimeo, Twitch, Loom), direct media URLs, and local audio or video files into speaker-labelled transcripts with timestamped segments, chapters, sections, cited Q&A, subtitle files (SRT, VTT, karaoke VTT), full transcript exports, segment search (\"who said X, and when\"), and paste-ready captions for Instagram, X, Threads, LinkedIn, YouTube, Spotify and Apple Podcasts. Use when the user wants a transcript, show notes, chapters, subtitles, captions, quotes, or answers grounded in a recording. 52 languages and dialects.",
+      "source_sha256": "674a33ac8eb0744ac1def1714d18e573423d43ff5d3abd663fec2ce1fb6940bb",
+      "source_path": "SKILL.md",
+      "package_sha256": "d94f40cea89bea54f69f098b3847d6935093b5ca4ce27abaee0a0f61d1bcd458",
+      "source_package": "transcribe-so-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d158bbb4f96a50579b341e1df826a2395cf4511d7bafa773ddd3ccba49e36957": {
+      "description_zh": "获取 transcribe.so 已完成的转录，包括章节、分节、引用问答、说话人及词级时间、字幕、可粘贴时间戳、托管带字幕 MP4 片段，以及单条或全库记录的引用问答。",
+      "source": "Retrieve a finished transcription from transcribe.so: chapters, sections, cited Q&A, speaker-labelled timestamped segments, word-level timings, subtitle files (SRT/VTT/karaoke), paste-ready timestamps, hosted captioned MP4 clips, and live cited Q&A over one transcription or the whole library. Use when the user asks for a transcript, subtitles, show notes, quotes, clips, or answers grounded in their recordings.",
+      "source_sha256": "d158bbb4f96a50579b341e1df826a2395cf4511d7bafa773ddd3ccba49e36957",
+      "source_path": "skills/get-transcript/SKILL.md",
+      "package_sha256": "d94f40cea89bea54f69f098b3847d6935093b5ca4ce27abaee0a0f61d1bcd458",
+      "source_package": "transcribe-so-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6e87a9e836c8a463275c8982c2a96d749d1be8243d71368ee9fc90ccd0f44ca": {
+      "description_zh": "从 YouTube、Apple Podcasts、SoundCloud、Vimeo、Twitch、Loom、直接文件网址或本地上传转录音视频，输出说话人、时间戳、章节、分节和引用问答，支持录音分析。",
+      "source": "Transcribe audio or video from a YouTube URL, platform URL (Apple Podcasts, SoundCloud, Vimeo, Twitch, Loom), direct file URL, or local file upload into speaker-labelled, timestamped segments with chapters, sections, and cited Q&A. Use when the user wants a transcript, show notes, chapters, or analysis of any recording.",
+      "source_sha256": "e6e87a9e836c8a463275c8982c2a96d749d1be8243d71368ee9fc90ccd0f44ca",
+      "source_path": "skills/transcribe-audio/SKILL.md",
+      "package_sha256": "d94f40cea89bea54f69f098b3847d6935093b5ca4ce27abaee0a0f61d1bcd458",
+      "source_package": "transcribe-so-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3143cfd18767a81d5a06b64f2c31564e67ef367ea757b12370b6cc28c1e43607": {
+      "description_zh": "通过背景—决策—后果访谈编写 Transitrix 架构决策记录，用当日日期和短名称生成 ID，运行 scripts/check-adl.mjs 校验并创建 PR。不会自行批准或改写已接受记录正文，方向变化以新记录和旧记录状态指针表达。",
+      "source": "Help a user formulate an architecture decision and land it as a valid, gated Architecture Decision Record in the repo's per-repo decision log — the input door to the agent-authored decision flow method/07-decisions.md specifies but ships no workflow for. Runs a Context → Decision → Consequences interview, derives the id from today's date and a slug (no allocation step), validates against scripts/check-adl.mjs, and opens a PR. Never self-accepts a decision and never edits an accepted record's body — course changes are a new record plus a status-pointer flip on the old one (supersession).",
+      "source_sha256": "3143cfd18767a81d5a06b64f2c31564e67ef367ea757b12370b6cc28c1e43607",
+      "source_path": "skills/adr/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2bbb88abbf6ab5d8340e71d7eb87b25e84f936ed5ba5306a94c15c2d5d526468": {
+      "description_zh": "在仓库 operations/feedback.md 中整理面向 Transitrix 方法论的匿名反馈，先过滤非方法问题、访谈并展示清理后的措辞，经确认后写入并分配 FB-NNNN。仅按要求生成待发送邮件文字，不实际发送。",
+      "source": "Author an upstream methodology-directed finding as a gated, anonymised entry in the repo's own operations/feedback.md register — the input door to the upstream feedback channel method/06-team-operations.md §3.2 specifies but ships no workflow for. Routes non-methodology observations away first, runs an interview, composes and shows the scrubbed wording for confirmation before writing, allocates the next FB-NNNN, and (on request only) renders a ready-to-send message for hello@transitrix.com without ever transmitting it itself.",
+      "source_sha256": "2bbb88abbf6ab5d8340e71d7eb87b25e84f936ed5ba5306a94c15c2d5d526468",
+      "source_path": "skills/feedback/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0be9650474b40402461511b2c22a9283d26160752cf7e42a7b39af2a9292e6d": {
+      "description_zh": "衡量 Transitrix 实际采用效果，对仓库模型文件计算有效性、覆盖、时效、断言队列年龄及消化、连通性五类指标，每项以两份独立记录核对，并输出含文件分类分母、两种读数和盲点数量的 Markdown 报告。",
+      "source": "Measure how effectively a Transitrix adoption is working in practice. Computes five instrumental indicators (validity, coverage, freshness, assertion-queue age/drain, connectedness) over a repository's model files. Each indicator is sourced from two independent records; the measure cannot be faked without doing the work. Produces a markdown report showing the denominator (file classification), all five indicators with both readings, and the honest blind spot count.",
+      "source_sha256": "d0be9650474b40402461511b2c22a9283d26160752cf7e42a7b39af2a9292e6d",
+      "source_path": "skills/health-profile/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6bee250441da63b2ab9a2001a1584794684a92a3f9e0a98346484b1e45094d2f": {
+      "description_zh": "将访谈、政策、组织图、表格和笔记转为 Transitrix 现场资料及带类型的规范候选项，进行来源质量评分并进入人工审查队列。也支持目录联邦及识别／提升建议，不直接写入正式规范。",
+      "source": "Turn raw organisational material (interviews, policies, org charts, spreadsheets, notes) into Transitrix field artefacts and typed canon candidates at scale, with source-quality scoring and a human review queue. Also set up catalogue federation and prepare recognition or promotion proposals for human review. Never writes canon directly.",
+      "source_sha256": "6bee250441da63b2ab9a2001a1584794684a92a3f9e0a98346484b1e45094d2f",
+      "source_path": "skills/ingest/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbcd385240495d7a941b809afe5ffdd435809a896a4d7cd723c740a6c830f9ed": {
+      "description_zh": "把原始资料纳入 OKF 单仓库 MVP 知识库，评估归档后路由到 OKF 的草稿提取—验证—人工审查—提升至 knowledge/ 流程，或 Transitrix 原语提取—提交 canon/ PR 流程，并记录每项决策。",
+      "source": "Ingest raw source material into the OKF single-repo MVP knowledge store — assess, archive, route to the OKF track (extract drafts → verify → human review → promote to knowledge/) and/or the Canon track (extract Transitrix primitives → PR to canon/), and log every decision.",
+      "source_sha256": "bbcd385240495d7a941b809afe5ffdd435809a896a4d7cd723c740a6c830f9ed",
+      "source_path": "skills/knowledge-store/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c788d3a2b7e76568854f864750d499a01b8658f8d5f1f02603af9dcb49d4a50": {
+      "description_zh": "初始化 Transitrix 文本化架构仓库，建立 canon/、field/、codex/ 分区、通用 AGENTS.md 和 transitrix.yaml，并引导首次模型编写验证，涵盖企业流程、目标、能力、场景、产品应用及法律政策等资料。",
+      "source": "Scaffold a new Transitrix architecture-as-text repository (zoned canon/ + field/ + codex/ layout with assistant-neutral AGENTS.md + transitrix.yaml manifest) and drive a first modelling session — enterprise architecture (BPMN, DGCA / Goals, capability map, process blueprint, action schedule, actions tree, nested blocks, scenarios, products, applications) plus codex artefacts (laws, regulations, policies, internal standards). Use when the user wants to start a new Transitrix repo from scratch, or has just cloned one and wants to author their first notation file with validation.",
+      "source_sha256": "8c788d3a2b7e76568854f864750d499a01b8658f8d5f1f02603af9dcb49d4a50",
+      "source_path": "skills/onboard/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14bfcc4b9815963a1aae891d6f1b58b748ab0028bc4646bb36dbe39b08756b2d": {
+      "description_zh": "读取 operations/config/scan-sources.yaml 监管来源清单，先检测变化信号再抓取快照，分割承载义务的 SEGMENT 并分类为约束或需求候选，来源偏移时生成 AMENDMENT、更新扫描块并暂存审查摘要。仅供人工纳入，不直接写 canon 或自动批准。",
+      "source": "Collect regulatory-source changes in practice — the operational counterpart to the methodology's codex / SEGMENT / AMENDMENT notation work. Reads the centralised watch-list at `operations/config/scan-sources.yaml`, runs a cheap change-signal gate before any expensive extraction, then on signal-moved runs the SCAN → SEGMENT → CLASSIFY → OUTPUT pass: fetches and snapshots the source, slices it into obligation-bearing SEGMENT field artefacts, classifies each segment as a CONSTRAINT or REQUIREMENT candidate (positive obligation → REQUIREMENT by default), emits an AMENDMENT field artefact when an existing source has drifted, updates the codex `scan` block, and stages everything in a review digest for human admission. Never writes canon. Never auto-admits. Never silently drops.",
+      "source_sha256": "14bfcc4b9815963a1aae891d6f1b58b748ab0028bc4646bb36dbe39b08756b2d",
+      "source_path": "skills/reg-intel/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33219493b69695ec5bf28ed7faefdc7d03960cb8f9953d4f2302c786bf5e6a05": {
+      "description_zh": "只读检查 Transitrix 仓库健康，汇总方法版本、覆盖配置、分区与类型数量、采用程度、ID及位置完整性和工具状态。报告仅含聚合及状态，不含对象ID、名称或内容，不修改仓库。",
+      "source": "Read-only health check (\"doctor\") for a Transitrix adopter repository. Emits a short, DATA-FREE report — methodology version, resolved coverage profile, per-zone and per-TYPE counts, an adoption-level indicator, integrity red flags (invalid IDs, misplaced canon elements, unresolved profile), and a tooling check. Reports aggregates and statuses only — never object ids, names, or contents — so the report is safe to share outside the organisation. Idempotent and non-mutating: it reads the zones and never writes one.",
+      "source_sha256": "33219493b69695ec5bf28ed7faefdc7d03960cb8f9953d4f2302c786bf5e6a05",
+      "source_path": "skills/repo-check/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad2489eb023ce6814e94b403058a697e444497462c79747b6b55fe59772453fa": {
+      "description_zh": "通过对话确定 Transitrix 合规报告参数，保存版本化 view-config，再由 @transitrix/cli export-compliance 确定性生成 Markdown／PDF义务与主体影响矩阵或监管覆盖指标。明确采用的默认参数，保留可审计的参数产物供重复生成。",
+      "source": "Produce a compliance report (obligation × subject impact matrix, or per-regime coverage metric) from a Transitrix repository, by conversation. Resolves the report's parameters — from the request, from the view spec's defaults, or from a named saved view-config — materialises a versioned view-config artefact, and renders it through the deterministic `@transitrix/cli export-compliance` command to Markdown or PDF. The skill never computes a matrix itself; rendering stays in the CLI so the same config re-renders identically next quarter. Reports are reproducible and auditable: every report has a committed parameter artefact, and the skill states which spec defaults it assumed.",
+      "source_sha256": "ad2489eb023ce6814e94b403058a697e444497462c79747b6b55fe59772453fa",
+      "source_path": "skills/report/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37bfb36c1a7c4b81fd694c7b82277e7d20264e62b009e1fe35add0a6df5086ef": {
+      "description_zh": "只读展示 Transitrix 各人工门槛后待处理事项，包括 ADR 状态、工作项阶段、规范元素、逾期需求约束审查及待审查导入批次。输出阶段、数量及开放阶段ID，不写入资料区或批次。",
+      "source": "On-demand view of what is waiting behind every human gate in a Transitrix adopter repository — ADR proposed/accepted/superseded (author:agent broken out), Work Item phase, canon element status, REQUIREMENT/CONSTRAINT review-overdue, and ingest batches awaiting review. One table, phases and counts only (no ages, no thresholds), plus the ids in every open phase so the caller can act on them. Read-only — never writes a zone, an operations record, or a batch.",
+      "source_sha256": "37bfb36c1a7c4b81fd694c7b82277e7d20264e62b009e1fe35add0a6df5086ef",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "8d09e5b179a6a9dfc8cfde4beb2227a062694c9cf0c553abb91e0426fe685829",
+      "source_package": "transitrix-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a1eb09fc9634ae26baf68ba76ed8b29a89ddd414375eaddbafe956871e1ae5b": {
+      "description_zh": "在 EPUB 翻译前分析写作风格、人物和语调，并建立术语表。",
+      "source": "Pre-translation analysis for EPUB books — analyze writing style, characters, tone, and build glossary before translating.",
+      "source_sha256": "2a1eb09fc9634ae26baf68ba76ed8b29a89ddd414375eaddbafe956871e1ae5b",
+      "source_path": "skills/aio-epub-analyze/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15aa3601b01c3de15d643700c8c8d24e3e5a22638cb06ae9be5224e60e7f8798": {
+      "description_zh": "将已译 EPUB 打包为可下载文件，支持原文与译文并排的双语版或仅译文版，适用于导出成书和 Kindle 使用准备。",
+      "source": "Pack a translated EPUB into a downloadable file — bilingual (original + translation side-by-side) or translation-only output. Use when the user wants to export/xuất sách, đóng gói sách, generate an EPUB file, download a finished book, or send a translation to Kindle.",
+      "source_sha256": "15aa3601b01c3de15d643700c8c8d24e3e5a22638cb06ae9be5224e60e7f8798",
+      "source_path": "skills/aio-epub-export/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f44b6f764033b2edbaf48528fc2d7bac6aa79c7e7fe549a348974ecb758975d3": {
+      "description_zh": "浏览书籍、查询翻译进度、管理指南、查看目录、分叉书籍、发布社区、重置章节及查看使用统计。",
+      "source": "Browse books, check translation progress, manage guidelines, view TOC, fork books, publish to community, reset chapters, and view usage stats.",
+      "source_sha256": "f44b6f764033b2edbaf48528fc2d7bac6aa79c7e7fe549a348974ecb758975d3",
+      "source_path": "skills/aio-epub-manage/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c0663f36bb5989ee95669001eae5de9008ba736a365f2a8227024e246287fc1": {
+      "description_zh": "生成翻译质量报告，识别需要重译的章节，支持导出前 QA 和重译范围选择。",
+      "source": "Generate a translation quality report and surface chapters that need re-translation. Use when the user wants to check quality, kiểm tra chất lượng bản dịch, run QA, tìm bản dịch kém, find bad translations, or decide which chapters to retranslate before exporting.",
+      "source_sha256": "3c0663f36bb5989ee95669001eae5de9008ba736a365f2a8227024e246287fc1",
+      "source_path": "skills/aio-epub-quality/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46380b1eaf9bd245488c3fc7c1c56f1d7e15439413212d26a9fde92dcda26100": {
+      "description_zh": "深入审查已译 EPUB 章节的文学翻译质量，修复一致性问题并检查跨章衔接。",
+      "source": "Deep literary review of translated EPUB chapters — evaluate translation quality, fix consistency issues, and check cross-chapter coherence.",
+      "source_sha256": "46380b1eaf9bd245488c3fc7c1c56f1d7e15439413212d26a9fde92dcda26100",
+      "source_path": "skills/aio-epub-review/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c89ad4ac286521b9f929b373dca0368992ca5abee30dd0e67430582e570dd9ae": {
+      "description_zh": "指导 EPUB 翻译服务设置，包括注册账户、购买许可和配置 API 密钥。",
+      "source": "Setup guide for EPUB translation service — register account, purchase license, and configure API key.",
+      "source_sha256": "c89ad4ac286521b9f929b373dca0368992ca5abee30dd0e67430582e570dd9ae",
+      "source_path": "skills/aio-epub-setup/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2f99038659deda1e46e64f2b92c4a095bc8004930cdb67c514ba3977b9f1a68": {
+      "description_zh": "将 EPUB 章节译为文学风格越南语，通过指南、术语表和前章摘要保持跨章一致，支持章节续译及书籍网址翻译。",
+      "source": "Translate EPUB book chapters into literary Vietnamese with cross-chapter consistency (guideline + glossary + previous-chapter summary). Use when the user says dịch sách, dịch chương, dịch tiếp, continue translating, translate epub, or sends a book/chapter URL to translate.",
+      "source_sha256": "d2f99038659deda1e46e64f2b92c4a095bc8004930cdb67c514ba3977b9f1a68",
+      "source_path": "skills/aio-epub-translate/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a2811b95ac4123009b79f22785143523ebe36417ce77c27a7b9bb3ebbcf5b54": {
+      "description_zh": "上传 EPUB 并为章节翻译做准备，提取目录、统计字数和排队分析，支持新书导入翻译工作区。",
+      "source": "Upload an EPUB file and prepare it for chapter translation — extracts TOC, counts words, queues for analysis. Use when the user wants to add a new book, start translating an EPUB, tải sách lên, import a `.epub` file, or onboard a new title into the translation workspace.",
+      "source_sha256": "9a2811b95ac4123009b79f22785143523ebe36417ce77c27a7b9bb3ebbcf5b54",
+      "source_path": "skills/aio-epub-upload/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b38bb667150db44e5d33e17a4ebfe17a74cf605f22b3ceceb102c16d4ee3a93c": {
+      "description_zh": "提供英语到越南语文学翻译的风格指南，涵盖用词、句子节奏、体裁惯例和常见错误。",
+      "source": "Vietnamese literary translation style guide — word choice, sentence rhythm, genre conventions, and common error patterns for natural Anh-Viet translation.",
+      "source_sha256": "b38bb667150db44e5d33e17a4ebfe17a74cf605f22b3ceceb102c16d4ee3a93c",
+      "source_path": "skills/aio-epub-vn-style/SKILL.md",
+      "package_sha256": "c76587b0ceea1988b3af6ab71c2f2b4d24a6184c17dbff1f10c3e486ce18aba9",
+      "source_package": "translate epub-4.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3dce7c65a4892250feef8819f704f1777d61c2f17495f2c8705f8274e36982e0": {
+      "description_zh": "检查项目知识健康、数量统计和衰减状态，支持查看知识记录及 traces 总量。",
+      "source": "This skill should be used when the user wants to check knowledge health, see project knowledge statistics, review decay status, or asks \"how is our knowledge\", \"knowledge status\", \"health check\", \"how many traces\", or \"show knowledge stats\".",
+      "source_sha256": "3dce7c65a4892250feef8819f704f1777d61c2f17495f2c8705f8274e36982e0",
+      "source_path": "skills/trapic-health/SKILL.md",
+      "package_sha256": "ce5b591572cbf01de1235ac68724c0d999f8058100f6ebf57e91112743f9a96c",
+      "source_package": "trapic-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0542d2234ec7a20e3796f62c287b1bc8ab7efc70f8cfa2356c6b48dfc78ecd59": {
+      "description_zh": "在编码、技术决策、发现非显然事实或建立约定时捕获项目知识并检测冲突。原技能支持明确记录请求，也设计为可在常规编码流程中自动捕获。",
+      "source": "This skill should be used when the user is coding, making technical decisions, discovering non-obvious facts, or establishing conventions. It enables automatic knowledge capture with conflict detection. Triggers on \"record a decision\", \"capture this\", \"remember that we chose\", or silently during normal coding workflow.",
+      "source_sha256": "0542d2234ec7a20e3796f62c287b1bc8ab7efc70f8cfa2356c6b48dfc78ecd59",
+      "source_path": "skills/trapic-knowledge/SKILL.md",
+      "package_sha256": "ce5b591572cbf01de1235ac68724c0d999f8058100f6ebf57e91112743f9a96c",
+      "source_package": "trapic-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93aa14a4c27693f5303cb79c7e56db9d6ec7d675f6ad75f707f2a15670a06496": {
+      "description_zh": "扫描项目代码、配置和文档，生成可供 AI 执行的知识 traces、打包资源并发布为 Trapic 市场资料包。",
+      "source": "Package project knowledge into a Trapic marketplace pack. Scans project files, generates AI-executable traces from code/configs/docs, bundles assets, and publishes. Triggers on: /pack-project, \"pack this project\", \"publish as pack\", \"share as pack\".",
+      "source_sha256": "93aa14a4c27693f5303cb79c7e56db9d6ec7d675f6ad75f707f2a15670a06496",
+      "source_path": "skills/trapic-pack-from-project/SKILL.md",
+      "package_sha256": "ce5b591572cbf01de1235ac68724c0d999f8058100f6ebf57e91112743f9a96c",
+      "source_package": "trapic-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95ca00aba2c7fbdd795f3a3ad4ce49aca3beefdf5f7c530a4ff125a95865b2f0": {
+      "description_zh": "创建或审查市场资料包内容，要求 traces 采用可执行格式并能改变 AI 行为，适用于写入知识规则和质量检查。",
+      "source": "Use when creating marketplace pack content. Enforces AI-executable trace format. Every trace must change AI behavior, not just inform humans. Triggers on: creating packs, writing traces for marketplace, reviewing pack quality.",
+      "source_sha256": "95ca00aba2c7fbdd795f3a3ad4ce49aca3beefdf5f7c530a4ff125a95865b2f0",
+      "source_path": "skills/trapic-pack-quality/SKILL.md",
+      "package_sha256": "ce5b591572cbf01de1235ac68724c0d999f8058100f6ebf57e91112743f9a96c",
+      "source_package": "trapic-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3916fe28eb61fdbf3a6cc4b608b949728b7d92a4e68f224b0144d4da93f67d09": {
+      "description_zh": "搜索项目知识、历史决策和约定，查找相关 traces 及既有认识。",
+      "source": "Use when the user wants to search project knowledge, find past decisions, look up conventions, or asks \"what did we decide about X\", \"find traces about Y\", \"search knowledge\", or \"what do we know about\".",
+      "source_sha256": "3916fe28eb61fdbf3a6cc4b608b949728b7d92a4e68f224b0144d4da93f67d09",
+      "source_path": "skills/trapic-search/SKILL.md",
+      "package_sha256": "ce5b591572cbf01de1235ac68724c0d999f8058100f6ebf57e91112743f9a96c",
+      "source_package": "trapic-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07d32809bab5f48a1198a4ec090dd85318a70fe77029bc88a43bc2044051c09e": {
+      "description_zh": "在开发新 API 或端点前通过 Treblle 检查已有接口，也用于发现组织在支付、退款、认证等领域已有的 API，减少重复建设。",
+      "source": "Check Treblle for APIs and endpoints that already exist before building new ones, and discover what APIs an organization already has. Use when the user is about to build, add, design, scaffold, or spec a new API or endpoint, OR asks whether something already exists or what APIs exist for a domain (e.g. \"do we have a payments API?\", \"is there already a refunds endpoint?\", \"what auth APIs do we have?\", \"I'm going to add POST /invoices\").",
+      "source_sha256": "07d32809bab5f48a1198a4ec090dd85318a70fe77029bc88a43bc2044051c09e",
+      "source_path": "skills/api-discovery/SKILL.md",
+      "package_sha256": "5111af1a41e84a07dfc9ff8e0f5ae8b0ed8d85c47354bb2d0a954c64bda7ebef",
+      "source_package": "Treblle-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33c6c587909d15ec7e03be5582b8a81c5905c1b47274e5f4f64d257f28e6451f": {
+      "description_zh": "规划、实施、校验和调试 Trendyol 卖家商品集成，覆盖商品创建、价格库存更新、批次结果、请求验证、分类属性和目录查询，支持 TR／GLOBAL 市场；不含普通购物、订单配送、财务、索赔或其他电商平台。",
+      "source": "Trendyol Marketplace Product Integration specialist. Use when implementing, planning, validating, or debugging a Trendyol seller product integration. Triggers on: \"Trendyol entegrasyonu\", \"seller integration\", \"createProducts\", \"updatePriceAndInventory\", \"stok güncelle\", \"ürün oluştur\", \"batch result\", \"validateRequest\", \"getCategoryAttributes\", \"catalog lookup\", \"product onboarding\", \"integration plan\", \"curl for Trendyol\", \"Trendyol API\", \"marketplace integration\", \"TR marketplace\", \"GLOBAL marketplace\", \"vatRate\", \"batchRequestId\", \"storefrontCode\". Not for general Trendyol website or shopping questions. Not for Trendyol Orders, Shipments, Finance, or Claims APIs. Not for non-Trendyol e-commerce platforms.",
+      "source_sha256": "33c6c587909d15ec7e03be5582b8a81c5905c1b47274e5f4f64d257f28e6451f",
+      "source_path": "skills/trendyol-integration-developer-tool/SKILL.md",
+      "package_sha256": "b56cdd3db767dc32f817c36d44983f54579372e374719ca92283401aa67b6cc4",
+      "source_package": "Trendyol Marketplace Integration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e07dded42dee95859f2f8b8ab3e358c898a393ec800125e40bc2fba0d4e2738b": {
+      "description_zh": "创建、更新、测试、调试和分发 Claude Code 插件，涵盖技能、子代理、钩子、MCP／LSP、清单和市场配置、加载问题，以及独立 .claude/ 配置转换和团队分发。",
+      "source": "Create, update, test, debug, and distribute Claude Code plugins with skills, subagents, hooks, MCP servers, and LSP servers. Use this skill whenever the user mentions building a Claude Code plugin, creating a plugin for Claude Code, working on a plugin manifest (plugin.json), setting up a plugin marketplace, submitting a plugin to the Anthropic marketplace, adding skills/agents/hooks/MCP servers to a plugin, debugging plugin loading issues, converting standalone .claude/ configurations to plugins, or distributing plugins to teams or clients. Also trigger when the user mentions plugin.json, marketplace.json, SKILL.md in a plugin context, --plugin-dir, /reload-plugins, /plugin install, or any Claude Code plugin lifecycle task. Even if the user just says \"plugin\" in a Claude Code context, use this skill.",
+      "source_sha256": "e07dded42dee95859f2f8b8ab3e358c898a393ec800125e40bc2fba0d4e2738b",
+      "source_path": ".claude/skills/cc-plugin-dev/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b563622bbe559584eab5e06b3bb420a0d8cf2b9b02b53c65a3de72b33d4f583": {
+      "description_zh": "创建、改进或优化技能，并通过评估、基准和方差分析衡量表现，优化描述以提高触发准确性。",
+      "source": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "source_sha256": "7b563622bbe559584eab5e06b3bb420a0d8cf2b9b02b53c65a3de72b33d4f583",
+      "source_path": ".claude/skills/skill-creator/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e51ae51f488e1b501786df7f3bc1bd552887956de713c5737ebcf4d1da2e28a": {
+      "description_zh": "为 TRES Finance 插件维护者执行发布前检查，覆盖 README、plugin.json与marketplace.json版本、CHANGELOG、校验、本地测试和安全审查，适用于技能、MCP或清单变更后的提交及发布。",
+      "source": "Pre-release checklist for the TRES Finance plugin itself. Use this skill whenever a developer working in the plugin repo has added or modified a skill, changed the MCP config, edited the manifest, or otherwise prepared changes for distribution and is about to commit, open a PR, or cut a release. Trigger phrases include: \"ship the plugin\", \"release the plugin\", \"bump the plugin version\", \"I added a skill\", \"I updated a skill\", \"ready to push the plugin\", \"prep the plugin release\", \"plugin checklist\", \"before I PR the plugin\", \"/tres-plugin-release\". This skill walks the developer through README updates, version bumps in both plugin.json and marketplace.json, CHANGELOG entry, validation, local test, and a security pass. Do NOT trigger when an end user is just using the plugin's other skills — only when the user is acting as a plugin maintainer making changes to this repo.",
+      "source_sha256": "5e51ae51f488e1b501786df7f3bc1bd552887956de713c5737ebcf4d1da2e28a",
+      "source_path": ".claude/skills/tres-plugin-release/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e2dbec2cd04a0d4f0f3fdc821ae5a5dbe7959ad4aa897b979a3d5af6e483834": {
+      "description_zh": "按原技能的 ASC845非货币交换处理方案对 swap各交易腿重新定价，使用对手方法币价值进行等值交换，排查清算账户残余和定价不匹配。实际会计适用性需按交易核对，不能仅以清零认定正确。",
+      "source": "Reprice swap transaction legs under ASC 845 (Nonmonetary Transactions) to ensure clearing accounts net to zero. Use this skill whenever the user wants to: reprice swaps, fix clearing account residuals, apply equal-value exchange to swap legs, run setBatchUseCounterpartyFiatValue, zero out a clearing account, apply ASC 845, fix swap pricing mismatches, ensure no gain/loss on swaps, or close a month where a swaps/trade clearing account has a residual balance. Also trigger when the user mentions \"counterparty fiat value\", \"swap repricing\", \"clearing account net to zero\", or \"equal value exchange\".",
+      "source_sha256": "1e2dbec2cd04a0d4f0f3fdc821ae5a5dbe7959ad4aa897b979a3d5af6e483834",
+      "source_path": "skills/tres-asc845-swap-reprice-skill/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd3ab7f6af81d9126b17a0a3f32d0c36515664748cfd6a8653fc7b1e244d4b1d": {
+      "description_zh": "将 TRES Finance 钱包余额与 DeBank或链上数据交叉验证并生成差异报告，仅支持 EVM兼容钱包。",
+      "source": "Validate wallet balances in TRES Finance against DeBank and generate a discrepancy report. Use this skill whenever the user asks to validate, verify, cross-check, or audit their TRES balances against on-chain data or DeBank. Also trigger when the user asks if their balances are correct or wants to see discrepancies. Only EVM-compatible wallets are supported.",
+      "source_sha256": "dd3ab7f6af81d9126b17a0a3f32d0c36515664748cfd6a8653fc7b1e244d4b1d",
+      "source_path": "skills/tres-asset-balance-validation/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a3f3639b675994e27c1eaee82be159168dfb9cb55a8e3466fd7888e2b5896c2": {
+      "description_zh": "管理 TRES Finance 成本基础计算，查询调整 FIFO、LIFO、AVG等策略，重算并审查财务问题、重估减值、批量法币价格及特定批次处置规则，查看逐资产结果和导出报告。",
+      "source": "Manage cost basis calculation in TRES Finance: check status, view/change strategy (FIFO, LIFO, AVG, MAX_GAINS, MAX_LOSSES, FIFO_IMPAIRMENT), trigger recalculation, review financial issues, manage reevaluations/impairments, set bulk fiat prices, configure spec-ID lot disposal rules, view per-asset cost basis results, and export cost basis reports. Trigger this skill whenever the user asks about cost basis, gains/losses, realized gains, unrealized gains, COGS, inventory lots, tax lots, cost basis strategy, reevaluation, impairment, fiat value override, spec-ID rules, financial issues (negative balance, missing fiat), or anything related to how their crypto assets are costed. Also trigger when the user says \"calculate cost basis\", \"what is my cost basis strategy\", \"show me financial issues\", \"create a reevaluation\", \"run cost basis\", \"change strategy to LIFO\", or similar.",
+      "source_sha256": "7a3f3639b675994e27c1eaee82be159168dfb9cb55a8e3466fd7888e2b5896c2",
+      "source_path": "skills/tres-cost-basis/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "570b8542495d57931327d868a7c4b80c8d458f7fbda6935b6403e79d30ebe82a": {
+      "description_zh": "为已接入 TRES Finance 的钱包触发链上数据采集 Commit，刷新余额和数据，作为钱包上传后的第二步、余额验证前的流程；这里的 Commit为数据采集操作。",
+      "source": "Trigger on-chain data collection (a \"Commit\") in Tres Finance for wallets that have already been onboarded. Use this skill whenever the user wants to collect data, pull balances, sync wallets, refresh on-chain data, run a commit, trigger a commit, or \"collect\" anything in Tres. This is the second step of the Tres onboarding flow — it sits between wallet upload (tres-wallets-upload) and balance validation (tres-asset-balance-validation). Always trigger this skill for any request that mentions \"commit\", \"collect\", \"data collection\", \"pull data\", \"fetch on-chain data\", \"sync wallets\", \"refresh balances\", or anytime the user just finished uploading wallets and is ready to bring in their on-chain data.",
+      "source_sha256": "570b8542495d57931327d868a7c4b80c8d458f7fbda6935b6403e79d30ebe82a",
+      "source_path": "skills/tres-data-collection-commit/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fe2a2f3d77dce1c5322d6972654ab937ff1c87493f2c081b749a003e23d14f5": {
+      "description_zh": "在 TRES Finance 为加密资产组织创建、审查或修复 ERP会计映射，使用分层规则引擎将交易类型映射至会计科目。",
+      "source": "Guide users through creating ERP accounting rules for crypto organizations on the Tres Finance platform. Maps every transaction type to the correct chart of accounts entries using a layered rule engine. Trigger: user asks to create, review, or fix ERP rules / accounting mappings for an organization.",
+      "source_sha256": "9fe2a2f3d77dce1c5322d6972654ab937ff1c87493f2c081b749a003e23d14f5",
+      "source_path": "skills/tres-erp-rule-suggestions/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0567f79b4efa991735dab683ff2c9b5d817f60562ba594710bd3152c3222f68d": {
+      "description_zh": "根据区块链浏览器网址或原始交易哈希，将链上交易导入 TRES Finance 账簿，支持 Etherscan、Polygonscan、Arbiscan、Basescan等浏览器。",
+      "source": "Add a blockchain explorer transaction to the TRES Finance ledger. Use when the user provides a blockchain explorer URL (Etherscan, Polygonscan, Arbiscan, Basescan, Snowtrace, BscScan, etc.) or a raw transaction hash and wants to record it in the platform ledger. Trigger phrases include \"add this transaction\", \"import tx from etherscan\", \"record this on-chain tx\", \"add to ledger\".",
+      "source_sha256": "0567f79b4efa991735dab683ff2c9b5d817f60562ba594710bd3152c3222f68d",
+      "source_path": "skills/tres-explorer-tx-to-ledger/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89a6851a73eace72d1b6e98c346c4005ad1700a1b388c182137ec46f8f328e10": {
+      "description_zh": "从 TRES Finance 交易中提取非自有的第三方地址和对手方，导出 XLSX供建立联系人名单；适用于发现新地址和准备导入文件，不用于搜索已有地址簿。",
+      "source": "Extract all 3rd-party (non-owned) addresses from a TRES Finance environment and export them as an XLSX workbook to help users build their contacts list. Use this skill whenever the user wants to export, list, or identify 3rd-party addresses, counterparties, or external addresses from their transactions — even if they don't say 'contacts'. Also trigger when the user asks to prepare a contacts import file, find unknown addresses, or build an address book from transaction history. Do NOT trigger for viewing existing contacts or searching the address book — only for extracting NEW 3rd-party addresses from transaction data.",
+      "source_sha256": "89a6851a73eace72d1b6e98c346c4005ad1700a1b388c182137ec46f8f328e10",
+      "source_path": "skills/tres-export-3rd-party-contacts/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da57d3bdbb40c64d33bec0c79b8fa7ef83feb97598e7d025f6270894aeb2b1d5": {
+      "description_zh": "从 CSV／XLSX 将地址与名称映射批量导入 TRES Finance 联系人或地址标签，支持填好的第三方地址导出表；不用于提取未知地址或查询已有联系人。",
+      "source": "Import contacts (address book entries) into TRES Finance from a CSV or XLSX file. Use this skill whenever the user wants to import, upload, or bulk-add contacts, address labels, or address book entries into TRES — whether from a file they filled in after using the export-3rd-party-contacts skill, or from any CSV/XLSX that maps addresses to names. Trigger phrases include: 'import contacts', 'upload contacts', 'add contacts from file', 'import address book', 'load contacts into TRES', 'bulk label addresses', 'import the contacts file', 'upload the filled contacts sheet'. Also trigger when the user says something like 'I filled in the contacts file, now import it' or 'here is my contacts spreadsheet, please upload it to TRES'. Do NOT trigger for exporting or extracting unidentified addresses — that's the export-3rd-party-contacts skill. Do NOT trigger for viewing or searching the existing address book.",
+      "source_sha256": "da57d3bdbb40c64d33bec0c79b8fa7ef83feb97598e7d025f6270894aeb2b1d5",
+      "source_path": "skills/tres-import-contacts/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d514ca911dfd022e9af0a1bbbc5f1608ed3e25dbc4fe1e1b3d63ecb470e0ecf1": {
+      "description_zh": "将 TRES 账簿交易匹配至 ERP应付／应收发票账单，并可同步到已连接 Xero、QuickBooks Online或NetSuite。仅用于明确匹配、关联、核销和同步意图，交易解释、浏览器导入及ERP连接由对应技能处理。",
+      "source": "Match TRES ledger transactions to ERP invoices/bills (AP/AR) and optionally sync them to the connected ERP (Xero, QuickBooks Online, NetSuite). Trigger this skill whenever the user wants to match, link, close, reconcile, or sync an invoice or bill against a blockchain transaction — even if they don't say \"skill\" or use those exact words. Trigger phrases include: \"match this invoice to a transaction\", \"match a bill to tx\", \"close invoice INV-123\", \"close bill 9988\", \"link this tx to a bill\", \"pay this invoice from this transaction\", \"set up this tx as AP\", \"set up this tx as AR\", \"sync this transaction as AP/AR\", \"match AP/AR\", \"find the invoice/bill for this hash\", \"what bill does this tx pay\". Trigger ONLY for explicit AP/AR matching/closing intent — do NOT trigger for general transaction explanations (use tres-tx-story), for ingesting an explorer link into the ledger (use tres-explorer-tx-to-ledger), or for ERP connection setup itself (use tres-settings-management).",
+      "source_sha256": "d514ca911dfd022e9af0a1bbbc5f1608ed3e25dbc4fe1e1b3d63ecb470e0ecf1",
+      "source_path": "skills/tres-invoice-bill-matching/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "783581501d69893005745af3f9d0c17721d9ad3367b41600eeb79aed9cb591cb": {
+      "description_zh": "生成带精确日期、钱包、资产、标签、状态和金额筛选的 TRES Transactions账簿链接，便于复用或分享；仅涵盖交易页，不含会计、滚动、透视、成本基础或试算报表页。",
+      "source": "Build a TRES Finance dashboard ledger URL (Transactions tab) with a precise filter set — date range, wallets, assets, tags, status, amount, and more — so it can be shared with a customer or reused. Use whenever the user asks for a \"ledger link\", \"dashboard link\", \"filter URL\", or \"send <customer> a link to <some filtered view>\". Scoped to the Transactions tab only (not Accounting, Roll Forward, Pivot Tables, Cost Basis, or Trial Balances).",
+      "source_sha256": "783581501d69893005745af3f9d0c17721d9ad3367b41600eeb79aed9cb591cb",
+      "source_path": "skills/tres-ledger-link/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c478d2ded94cdb8b593c8e8831cf4c17d947eda0b7367c42dc43b45fb3fa4eaf": {
+      "description_zh": "为新实体、客户或账户编排完整 TRES入驻，依次执行钱包上传、数据采集、余额验证、对账、成本基础、未知地址导出、联系人导入和汇总规则；单独操作由专项技能处理。",
+      "source": "End-to-end onboarding of a new entity, customer, or account into TRES Finance. Orchestrates 8 steps in order: wallet upload, data collection (commit), balance validation, reconciliation, cost basis, export unidentified addresses, import contacts, and rollup rules. Trigger ONLY when the user explicitly wants to onboard a new entity, customer, or account — e.g. \"onboard a new entity\", \"onboard new customer\", \"start onboarding for [name]\", \"set up a new account in TRES\", \"run the full onboarding flow\", \"I need to onboard [company name]\", \"new entity onboarding\". Do NOT trigger for individual tasks — those have their own dedicated skills. If the user asks to \"add wallets\" without mentioning onboarding, use tres-wallets-upload. \"Validate balances\" alone is tres-asset-balance-validation. \"Run a commit\" alone is tres-data-collection-commit. Only trigger when the user wants the full pipeline.",
+      "source_sha256": "c478d2ded94cdb8b593c8e8831cf4c17d947eda0b7367c42dc43b45fb3fa4eaf",
+      "source_path": "skills/tres-onboarding/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95c139a9bec3c6abdbcf8198c70e9bc5ad0891ea7f9420634d443c14988370a8": {
+      "description_zh": "查询、展示及处理 TRES 对账缺口，先确认日期及资产，补充法币和链上余额，再生成每行带 Plug／Auto-fill提示词复制按钮的 HTML仪表板，由用户粘贴请求后执行相应动作，处理结束再采集数据。仅用于明确缺口查看或关闭请求。",
+      "source": "Query, display, and resolve reconciliation gaps from the TRES Finance MCP connector. Trigger this skill ONLY when the user explicitly requests to view or close reconciliation gaps — for example: \"show me the reconciliation gaps\", \"close the recon gaps\", \"view gaps for today\", \"plug the reconciliation gaps for ETH\", \"fix the gaps for USDC and BTC\". Do NOT trigger for general balance queries, transaction history, or ledger browsing. Covers the full workflow: confirming the target date, optionally filtering by asset, fetching gap data, enriching with fiat and on-chain balances, rendering an HTML dashboard where each gap row has copy-prompt buttons (Plug / Auto-fill) — clicking copies a ready-to-paste Claude prompt for that gap. The user pastes it in the chat and Claude executes the action. Ends with a data collect once the user is done.",
+      "source_sha256": "95c139a9bec3c6abdbcf8198c70e9bc5ad0891ea7f9420634d443c14988370a8",
+      "source_path": "skills/tres-recon-gaps/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c73aa8a7e05bff4d2c588815292911d457cf4602e5d0cb16f42c7d5045eacedb": {
+      "description_zh": "根据用户问题推荐 TRES Finance 报告，支持比较报告及判断月结、审计、申报或对账所需导出数据。",
+      "source": "Recommend the right TRES Finance report for any user question. Trigger this skill whenever a user asks which report to use, what report contains certain data, how to get specific information out of TRES, or compares two reports. Also trigger when the user describes a goal (e.g. \"month-end close\", \"auditor needs proof\", \"tax filing\", \"reconciliation\") without naming a specific report. Trigger phrases include \"which report\", \"what report\", \"how do I export\", \"where can I find\", \"I need a report for\", \"what's the difference between\", \"best report for\", \"auditor asked for\", or any question about getting data out of TRES Finance.",
+      "source_sha256": "c73aa8a7e05bff4d2c588815292911d457cf4602e5d0cb16f42c7d5045eacedb",
+      "source_path": "skills/tres-report-advisor/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "252ef1524910d0b7c12edd3b8c17b04df604262e470483049f97a696f40904bf": {
+      "description_zh": "分析 TRES Finance 导出的 XLSX，按文件结构识别报告类型，执行相应对账、余额、交易、成本基础、滚动或ERP同步分析，并总结异常、关键指标和行动项。",
+      "source": "Analyze any TRES Finance report XLSX and produce an automatic findings summary. Trigger this skill whenever a user uploads a .xlsx file that came from TRES Finance and asks to \"analyze\", \"summarize\", \"review\", \"check\", \"audit\", \"look at\", \"what does this show\", \"any issues\", \"anything interesting\", or \"walk me through\" the report. Also trigger when the user uploads an Excel file and mentions TRES, reconciliation, balances, transactions, cost basis, roll forward, or ERP sync. The skill identifies the report type from the file structure, runs targeted analysis based on report-specific logic, and produces a clear findings summary highlighting anomalies, key metrics, and action items.",
+      "source_sha256": "252ef1524910d0b7c12edd3b8c17b04df604262e470483049f97a696f40904bf",
+      "source_path": "skills/tres-report-analyzer/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e686ff6dae1ad2661da2a5264e10d79c5b721066cf146de0cc8ab2ac41e2434": {
+      "description_zh": "通过 TRES MCP和GraphQL端到端生成报告，触发导出后核验报告记录确实创建，轮询完成并返回下载链接，防止静默失败；不清楚报告类型时配合报告顾问。",
+      "source": "Create (generate) any TRES Finance report end-to-end via the tres-mcp MCP server and GraphQL — trigger the export, verify a report row was actually created (guarding against silent failures), poll until done, and return the download link. Trigger this skill on ANY report creation request, including phrases like \"create a report\", \"generate a report\", \"export\", \"run a report\", \"I need a Transaction Ledger / Balances / Reconciliation / Cost Basis / Roll Forward / Staking / Audit report\", \"pull the data for\", \"download a report for\", \"give me a CSV/XLSX of\", or whenever the user wants TRES to produce a report file. Use together with tres-report-advisor when the user is unsure which report they need.",
+      "source_sha256": "7e686ff6dae1ad2661da2a5264e10d79c5b721066cf146de0cc8ab2ac41e2434",
+      "source_path": "skills/tres-report-create/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69c90d6f1e2ce8cea50b5d0f6bce881ba4d4a0d39f949e6ba0650bcc871d5b54": {
+      "description_zh": "收集并提交 TRES插件的缺陷、功能建议、技能改进、MCP问题和使用体验反馈。原流程在用户明确反馈时引导整理，在结束对话时仅简短邀请反馈，不自动启动完整流程。",
+      "source": "Submit feedback about the TRES Claude plugin — bug reports, feature requests, skill improvements, new skill ideas, MCP issues, workflow friction, or positive feedback about what's working well. Use this skill whenever the user wants to share any kind of feedback about the plugin, its skills, or the TRES MCP. Trigger phrases include: \"submit feedback\", \"report a bug\", \"request a feature\", \"suggest an improvement\", \"I have an idea\", \"something is broken\", \"the skill isn't working\", \"I love this skill\", \"this worked great\", \"the MCP is returning wrong data\", \"the flow is confusing\", \"can you fix the skill\", \"file a skill request\", \"give feedback\", \"this could be better\". Also trigger proactively when the conversation appears to be wrapping up — e.g. the user says \"thanks\", \"that's all\", \"looks good\", \"we're done\", \"nothing else\", or any other signal that the task is complete. In that case, offer a brief feedback prompt instead of launching the full guided flow. Do NOT trigger for general questions about how a skill works — only when the user wants to submit feedback or the conversation is ending.",
+      "source_sha256": "69c90d6f1e2ce8cea50b5d0f6bce881ba4d4a0d39f949e6ba0650bcc871d5b54",
+      "source_path": "skills/tres-request-skill-update/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5ae3b4f918e768546b5a8225576896d369403970cfbd3e6a3e0af99dae988a1": {
+      "description_zh": "只读计算已指定 TRES汇总规则在全部筛选下对子交易的精确影响，检查零匹配、重叠和配置错误，支持创建前门槛或已有PENDING规则审查；不设计新规则或执行写入。",
+      "source": "Compute the EXACT sub-transaction impact of a rollup rule in TRES Finance — every filter applied — and flag genuine problems (zero matches, overlap, config mistakes) before the rule is created. Two modes. Mode A: a pre-create quality gate invoked by the tres-rollup-rules skill to vet proposed candidate rules. Mode B: standalone review of a rule someone submitted or of existing PENDING rules. Trigger this skill when the user says \"review this rollup rule\", \"what would this rollup rule actually match\", \"preview the rollup impact\", \"how many transactions would this rule catch\", \"is this rollup rule valid\", \"validate my rollup rule\", \"check my pending rollup rules\", or \"review the rollup requests\". Do NOT use this to design or propose new rollups — that is tres-rollup-rules. This skill only measures impact and flags issues; it never executes mutations.",
+      "source_sha256": "e5ae3b4f918e768546b5a8225576896d369403970cfbd3e6a3e0af99dae988a1",
+      "source_path": "skills/tres-rollup-review/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "679e1a2508da166dd93874159cbf4a758abb178ee1bb010c8dc6138496bd49c4": {
+      "description_zh": "分析 TRES重复子交易模式，建议按日或月聚合的汇总规则，减少ERP中的费用、质押收益或微交易噪声，也支持规则列举和删除；单条已指定规则的精确影响另用tres-rollup-review。",
+      "source": "Analyze an organization's sub-transaction patterns in TRES Finance, identify groups of repetitive transactions, and propose data-driven rollup rules that consolidate them into one aggregated entry per interval (daily or monthly) for cleaner ERP integration. Also lists and deletes rollup rules. Trigger this skill whenever the user asks about rollup rules, transaction aggregation, consolidating transactions, reducing transaction noise, rolling up gas fees, rolling up staking rewards, rolling up micro-transactions, or collapsing many small ledger entries into fewer summary entries. Also trigger on \"create a rollup rule\", \"suggest rollup rules\", \"what should I roll up\", \"show my rollup rules\", \"delete a rollup rule\", \"aggregate transactions\", \"too many transactions\", \"reduce transaction count\", \"roll up fees\", \"daily rollup\", \"monthly rollup\". If a wallet has too many transactions, high-frequency activity, or noisy ledger entries, proactively suggest rollup rules. For computing the EXACT impact of a single already-specified rule or reviewing submitted/pending rules, use the tres-rollup-review skill instead.",
+      "source_sha256": "679e1a2508da166dd93874159cbf4a758abb178ee1bb010c8dc6138496bd49c4",
+      "source_path": "skills/tres-rollup-rules/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa2ac1b1ceac8026462c0545a347ae88e9a2b9f207eb44289bd84bce65bed5c6": {
+      "description_zh": "通过 TRES MCP GraphQL管理组织和平台设置，支持功能开关、平台启停、余额差异、采集策略、成本基础、ERP、定价和同步日期边界等读写操作。",
+      "source": "Manage Organization Settings and Platform Settings via the TRES MCP GraphQL API. Use when users ask about org settings, platform settings, configuration, feature flags, enable/disable platforms, balance diff, commit strategy, cost basis, ERP, pricing, sync boundaries, or any setting read/write operation. Trigger phrases include \"get settings\", \"show settings\", \"update settings\", \"change settings\", \"enable platform\", \"disable platform\", \"balance diff\", \"commit strategy\", \"cost basis strategy\", \"set min sync date\", \"configure\", \"turn on\", \"turn off\".",
+      "source_sha256": "aa2ac1b1ceac8026462c0545a347ae88e9a2b9f207eb44289bd84bce65bed5c6",
+      "source_path": "skills/tres-settings-management/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a8310468f28ac8785485ebbf50d70f618b19c67a4df2636d66433ba53a00d85": {
+      "description_zh": "根据交易哈希用 TRES MCP分析链上资产流动，生成可视化流程图并以通俗语言解释发生的交易，依据查询数据而非仅凭记忆。",
+      "source": "Analyze a blockchain transaction by its hash using TRES Finance MCP and generate a visual flow diagram showing all asset movements, followed by a plain-language explanation of what happened. Use this skill whenever the user provides a transaction hash and asks to \"analyze\", \"explain\", \"visualize\", \"diagram\", \"show me what happened in\", or \"tell the story of\" a transaction. Also trigger when the user pastes a tx hash (long hex string starting with 0x) and asks anything about it. Always use this skill for transaction hash analysis — do not attempt to answer from memory alone.",
+      "source_sha256": "6a8310468f28ac8785485ebbf50d70f618b19c67a4df2636d66433ba53a00d85",
+      "source_path": "skills/tres-tx-story/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a4d35b4042b7a3b559847603c812252647bfa2c5d069c5821c98e042c4cb327f": {
+      "description_zh": "核对或修复 TRES批量交易／子交易CSV的准确列名，尤其是缺少必填列的上传错误；仅涵盖表头，不涵盖行值、上传流程、联系人或钱包CSV。",
+      "source": "The exact column header names required by the TRES Finance bulk transaction CSV upload. Use whenever building, fixing, or validating the header row of a TRES manual transaction or sub-transaction upload CSV — especially after an upload fails with \"Missing required column(s): ...\". Trigger phrases include: 'fix my CSV headers', 'bulk transaction upload failed', 'missing required columns', 'validate TRES upload CSV', 'transaction CSV template headers'. This skill is ONLY about the header naming convention; it does not cover row values or upload workflow. Do NOT trigger for contacts import CSV (use tres-import-contacts), wallet upload CSV (use tres-wallets-upload), or general CSV parsing unrelated to bulk TX upload headers.",
+      "source_sha256": "a4d35b4042b7a3b559847603c812252647bfa2c5d069c5821c98e042c4cb327f",
+      "source_path": "skills/tres-upload-tx-header-validation/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c08d2d49e968399b06c37525836711deb33b993da6b6b3e8c3a0ad4552d59e9": {
+      "description_zh": "在 TRES批量接入链上钱包或交易所账户，支持CSV／Excel或手工输入，依次选择类型、收集校验、生成可编辑HTML预览、收集交易所凭据并取得确认，再通过API创建。",
+      "source": "Upload and onboard multiple on-chain wallets or exchange accounts into Tres Finance. Use this skill whenever the user wants to add wallets, onboard wallets, import wallets, upload wallet addresses, ingest wallets, or connect exchanges into Tres — whether from a file (CSV/Excel) or by typing them manually. This skill guides Claude through the full flow: wallet type selection → input collection → validation → preview with editable HTML table → exchange credential collection (if exchange) → user confirmation → batch creation via the TRES MCP API. Always trigger this skill for wallet onboarding, wallet data ingestion, or any request to \"add wallets to Tres\".",
+      "source_sha256": "1c08d2d49e968399b06c37525836711deb33b993da6b6b3e8c3a0ad4552d59e9",
+      "source_path": "skills/tres-wallets-upload/SKILL.md",
+      "package_sha256": "308d5f10ba96695ecbd22ece78ff2a7e37f2519809bb1cdc9b3929c93e0e91c5",
+      "source_package": "TRES Finance Plugin-1.12.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae4d8239aba00d5726732b937bb95b14437bf4a82fa70cac31b153f25d803956": {
+      "description_zh": "衡量 TrueGradient历史预测准确率、偏差和错误趋势，准确率按1−WMAPE计算，仅合并同时有实际销售及冻结基线的月份。当前未完整月排除于汇总但显示月累计点；预测值及风险排序另用对应技能。",
+      "source": "Measure TrueGradient forecast accuracy, bias, or error trend over past months — accuracy percentages computed as 1 − WMAPE, whether the forecast systematically over- or under-forecasts, and which products, categories, channels or regions are improving or worsening. Use this for \"how accurate is our forecast\", \"what's our forecast bias\", \"which categories have worsening WAPE\", \"what's the error trend\", \"are we over-forecasting\", \"how good was last quarter's forecast\". Measures only months where both actual sales and the frozen baseline forecast exist; the current incomplete month is kept out of the pooled figure but still shown as a partial month-to-date point so the direction of travel is visible. Do NOT use for a forward-looking forecast value — use truegradient-forecast-lookup. Do NOT use for ranking items by business risk — use truegradient-forecast-risk.",
+      "source_sha256": "ae4d8239aba00d5726732b937bb95b14437bf4a82fa70cac31b153f25d803956",
+      "source_path": "skills/truegradient-forecast-accuracy/SKILL.md",
+      "package_sha256": "a86cdd15f1f605861977304f9e2f19148696599a6059cbb32a444c105a6b6940",
+      "source_package": "TrueGradient Planning Analysis-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0b9b7aac8887d746360739264734dc950cf09b6c0025834c88c2ccbfec16758": {
+      "description_zh": "比较同一TrueGradient实验的两组预测字段，如冻结基线、运营、规划者审核或共识预测，报告事实变化。原说明不支持跨规划周期，且无版本历史或审计链，原因只能依据已有规划者评论，不可凭差异推断。",
+      "source": "Compare two TrueGradient forecast families within one experiment and report exactly what changed — for example the frozen baseline versus the current operational forecast, the model output versus a planner-reviewed view, or the operational versus the consensus forecast. Use this for \"what changed since the locked forecast\", \"how does the current forecast differ from the locked baseline\", \"why did the forecast for SKU X change\", \"how far has consensus moved off the plan\", \"what moved between the baseline and final forecast\". Comparison is always between two column families in the same experiment; TrueGradient does not keep prior planning cycles available, so cross-cycle comparison is not supported. Reports what changed factually and states clearly that TrueGradient has no forecast version history or audit trail, so root causes cannot be evidenced beyond any planner comments recorded in the data. Do NOT use for accuracy against actuals — use truegradient-forecast-accuracy.",
+      "source_sha256": "d0b9b7aac8887d746360739264734dc950cf09b6c0025834c88c2ccbfec16758",
+      "source_path": "skills/truegradient-forecast-change/SKILL.md",
+      "package_sha256": "a86cdd15f1f605861977304f9e2f19148696599a6059cbb32a444c105a6b6940",
+      "source_package": "TrueGradient Planning Analysis-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3816f9762f7e00c78aa0797798de43c29b786934a1a2afcbbf2cbfde2f99542": {
+      "description_zh": "查询 TrueGradient指定产品、SKU、变体、类别、品牌、渠道、客户、地区或时期的最终预测、实际销售及不确定区间，也可比较单实体预测与实际；多实体准确率、风险排名和两组预测变化由对应技能处理。",
+      "source": "Look up the final forecast, actual sales, or forecast uncertainty interval for a specific product, SKU, variant, category, brand, channel, customer, region, or time period from TrueGradient demand planning data. Use this when the user asks what the forecast or actual IS for something specific — \"what's the forecast for SKU X next month\", \"how many units for the North region in Q3\", \"show me the forecast range for this category\", \"what did we actually sell last month\". Also use to compare a single entity's forecast against its own actuals. Do NOT use for accuracy, error or bias metrics across many entities — use truegradient-forecast-accuracy. Do NOT use for ranking items by risk — use truegradient-forecast-risk. Do NOT use for comparing two forecast versions — use truegradient-forecast-change.",
+      "source_sha256": "d3816f9762f7e00c78aa0797798de43c29b786934a1a2afcbbf2cbfde2f99542",
+      "source_path": "skills/truegradient-forecast-lookup/SKILL.md",
+      "package_sha256": "a86cdd15f1f605861977304f9e2f19148696599a6059cbb32a444c105a6b6940",
+      "source_package": "TrueGradient Planning Analysis-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c6764e523a639f83a921803be0616d25fcab43a0e006acc423e4310c1c0d172": {
+      "description_zh": "结合TrueGradient存储的准确率、偏差、销量贡献和trust_zone对产品、SKU、类别、品牌、渠道或地区预测风险排序，区分重大项目、系统误差与波动；不用于单项预测值或总体趋势。",
+      "source": "Rank which products, SKUs, variants, categories, brands, channels or regions carry the most forecast risk in TrueGradient, combining the stored accuracy, bias, volume-contribution and trust_zone columns so that material items rank above trivial ones and systematic error is told apart from volatility. Use this for \"which SKUs are highest risk\", \"where should planners focus\", \"what's most likely to be wrong next cycle\", \"top risk items by volume\", \"which categories need review\", \"is the forecast trustworthy for these items\". Do NOT use to report a single entity's forecast value — use truegradient-forecast-lookup. Do NOT use for an overall accuracy or bias trend — use truegradient-forecast-accuracy.",
+      "source_sha256": "5c6764e523a639f83a921803be0616d25fcab43a0e006acc423e4310c1c0d172",
+      "source_path": "skills/truegradient-forecast-risk/SKILL.md",
+      "package_sha256": "a86cdd15f1f605861977304f9e2f19148696599a6059cbb32a444c105a6b6940",
+      "source_package": "TrueGradient Planning Analysis-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdf9e26df7c299ddf24970330249a78fcb65aaa65149201d28fd41f46dd47db9": {
+      "description_zh": "分析TrueGradient库存优化数据中的在库、总库存、覆盖天数、缺货时间、补货点数量、安全库存、在途、未结采购单、过剩呆滞、销售损失和营运资本。分期未来问题用Supply Plan，当前快照用DOI Details；预测、价格及促销另行处理。",
+      "source": "Answer supply and inventory questions from TrueGradient inventory-optimization data — stock on hand, total inventory, days of cover, stockout timing, reorder plans, points and quantities, safety stock, in-transit, open POs and inbound supply, excess and dead stock, sales-loss exposure, working capital, and stock transfers. Use for \"how does inventory look month on month\", \"when do we run out of X\", \"what should I reorder now\", \"which SKUs are at stockout risk\", \"where is my excess inventory\", \"is this SKU covered through the season\", \"how much working capital is tied up\". Routes time-phased and future-period questions to the Supply Plan dataset and current-snapshot questions to DOI Details. Do NOT use for demand-forecast values, forecast accuracy, bias, forecast risk ranking, or comparing forecast versions — use the truegradient-forecast-* skills. Do NOT use for pricing, markdown, elasticity or promotion questions.",
+      "source_sha256": "bdf9e26df7c299ddf24970330249a78fcb65aaa65149201d28fd41f46dd47db9",
+      "source_path": "skills/truegradient-supply-inventory/SKILL.md",
+      "package_sha256": "a86cdd15f1f605861977304f9e2f19148696599a6059cbb32a444c105a6b6940",
+      "source_package": "TrueGradient Planning Analysis-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "493a814c8fc8a9fb5f3fbb2a79e252dbd12b57d83b4e4009f3a0019ebeed94bf": {
+      "description_zh": "依据Trustabl扫描结果自身的解释和修复文字，直接补足或纠正被标记的源文件，适用于scan后的整改。",
+      "source": "Enriches source files flagged by a Trustabl scan — adds what is missing and corrects what is wrong, guided entirely by the scan's own explanation and fix text. Use after `trustabl scan` to apply findings directly to source files without manual editing.",
+      "source_sha256": "493a814c8fc8a9fb5f3fbb2a79e252dbd12b57d83b4e4009f3a0019ebeed94bf",
+      "source_path": "skills/trustabl-enrich/SKILL.md",
+      "package_sha256": "16b8cd5f11559ad529ddd85edd3a48c03c58936dc9f3ba328ca5fe66b386201b",
+      "source_package": "Trustabl-0.3.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed13b05f03d4a08d69721fced5e2e8fb0ae41cf163e1d85bb43099963770f4fb": {
+      "description_zh": "在修改代理、工具、子代理、MCP服务或权限配置后，用Trustabl内置MCP scan审查安全与可靠性配置并指导修复，适用于提交前自查。",
+      "source": "Use right after you write or modify AI agent, tool, subagent, or MCP-server code (OpenAI Agents SDK, Claude Agent SDK, Google ADK, MCP) to self-audit it for security and reliability misconfigurations with Trustabl before committing. Triggers on adding or editing an agent definition, a tool / @function_tool / @tool / tool() handler, a subagent markdown file, an MCP server registration, agent guardrails, or .claude/settings.json permissions. Runs Trustabl's `scan` tool via the plugin's bundled MCP server and guides remediation of the findings.",
+      "source_sha256": "ed13b05f03d4a08d69721fced5e2e8fb0ae41cf163e1d85bb43099963770f4fb",
+      "source_path": "skills/trustabl-scan/SKILL.md",
+      "package_sha256": "16b8cd5f11559ad529ddd85edd3a48c03c58936dc9f3ba328ca5fe66b386201b",
+      "source_package": "Trustabl-0.3.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d6c4eced5f695ab2f0d6927a7ba9fc22aaf3941c840e8b3fad86e8f5ef1b3d2": {
+      "description_zh": "通过tsm CLI管理Transmission BitTorrent，支持添加任务、查看下载、tracker、限速、做种策略及流程自动化；需要运行且启用RPC的Transmission守护进程。",
+      "source": "Manage Transmission BitTorrent client via the tsm CLI. Use when the user asks to add torrents, check download status, manage trackers, set speed limits, apply seeding policies, or automate torrent workflows. Requires a running Transmission daemon with RPC enabled.",
+      "source_sha256": "1d6c4eced5f695ab2f0d6927a7ba9fc22aaf3941c840e8b3fad86e8f5ef1b3d2",
+      "source_path": "skills/tsm/SKILL.md",
+      "package_sha256": "25a98c43bf548956d6bcbc82cefa2b3105803a91da39bcaa4e0bebac969644d9",
+      "source_package": "tsm-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83cd045c09ef386020589abe4a83d0dd26365c7ccf475a41468f17df3975a0dd": {
+      "description_zh": "审查单个YouTube频道的公开定位、近期长视频与Shorts组合、播放列表、社区活动、内部覆盖缺口及后续动作。仅在实际收集外部搜索或评论证据后讨论市场需求，不用于原始导出或多频道比较。",
+      "source": "Audit one YouTube channel's public positioning, recent long-form and Shorts mix, playlists, community activity, internal coverage gaps, and next actions. Use when the user wants strategic recommendations for one channel. Do not use for raw channel export, two-or-more-channel comparison, or market/audience-demand claims unless external search or comment evidence is explicitly collected.",
+      "source_sha256": "83cd045c09ef386020589abe4a83d0dd26365c7ccf475a41468f17df3975a0dd",
+      "source_path": "skills/youtube-channel-audit/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d95711de556226db207d3dd88aac298a87ec49513466f9daa5274589c5a3fa48": {
+      "description_zh": "获取YouTube频道资料及视频、直播、Shorts、播放列表、社区帖的事实清单，支持身份、公开数量、链接和结构化导出；战略、情绪或需字幕评论的结论另行分析。",
+      "source": "Fetch a YouTube channel profile and factual tab inventories for videos, live streams, Shorts, playlists, or community posts. Use for channel identity, public counts, links, recent-item listings, or structured channel exports. Do not use for strategic channel audits, competitor comparisons, audience sentiment, content-gap claims, or conclusions requiring transcripts or comments.",
+      "source_sha256": "d95711de556226db207d3dd88aac298a87ec49513466f9daa5274589c5a3fa48",
+      "source_path": "skills/youtube-channels/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "544ad401349924f02920f1db57b71bfc5bde95bd6e70506a7a05a73d314807f1": {
+      "description_zh": "在明确范围的YouTube评论样本中寻找公开购买意图、急迫痛点、产品适配问题、替代请求和转换信号，按证据排序机会及有帮助的回复角度；不推断私人联系方式、敏感特征或购买准备度，也不用于批量主动骚扰。",
+      "source": "Find publicly stated buying intent, urgent pain, product-fit questions, alternative requests, and switching signals in a defined sample of YouTube comments. Use when the user has an ethical ICP and wants evidence-ranked opportunity signals or helpful reply angles. Do not infer private contact data, sensitive traits, or readiness to buy, and do not use for bulk unsolicited outreach or general sentiment analysis.",
+      "source_sha256": "544ad401349924f02920f1db57b71bfc5bde95bd6e70506a7a05a73d314807f1",
+      "source_path": "skills/youtube-comment-leads/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2732dfaff04642f4bc84eff738b7576f41d0ddb3d7ed6772b34e83db3b29da3b": {
+      "description_zh": "提取导出公开YouTube评论及指定回复讨论，保留ID、作者标记、互动、时间及分页来源，支持精确记录和创作者回复检查；不进行情绪、线索或画像分析。",
+      "source": "Fetch and export public YouTube comments or selected reply threads with IDs, authorship flags, engagement fields, timestamps, and pagination provenance. Use for a structured comment dataset, exact comment/reply records, creator-reply checks, or filtering an export. Do not use for sentiment analysis, lead scoring, audience personas, private-contact discovery, or broad video/channel metadata.",
+      "source_sha256": "2732dfaff04642f4bc84eff738b7576f41d0ddb3d7ed6772b34e83db3b29da3b",
+      "source_path": "skills/youtube-comments/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "993852d67ea4a9845ca872786c251e07e8b3199b108934aba92dc68ba52429f5": {
+      "description_zh": "获取总结频道公开社区帖，包含文字、返回作者字段、相对发布时间、点赞评论数、附件及有界分页，支持公告和主题清单；不保证投票结果或据此推断情绪及视频表现。",
+      "source": "Fetch and summarize a YouTube channel's public Community-tab posts, including post text, returned author fields, relative publish time, like/comment counts, attachments, and bounded pagination. Use for announcements, recurring post topics, calls to action, or a structured community-post inventory. Do not use for comment text, guaranteed poll results, audience sentiment, channel-wide audits, or video performance analysis.",
+      "source_sha256": "993852d67ea4a9845ca872786c251e07e8b3199b108934aba92dc68ba52429f5",
+      "source_path": "skills/youtube-community/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95bb7a140c2b9049628a461ca1abdee616234dfd037aa0dd412720c9eb7bffa8": {
+      "description_zh": "比较两个以上YouTube频道的定位、抽样主题、格式、发布节奏及有证据的内容机会，支持竞争对标；观众需求须有实际评论、搜索或自动补全证据。",
+      "source": "Compare two or more YouTube channels or creators across positioning, sampled topics, formats, publishing cadence, and evidence-backed content opportunities. Use for competitor benchmarking or multi-channel market mapping. Do not use for a single-channel audit, and do not claim audience demand unless comments, search, autocomplete, or other demand evidence was actually collected.",
+      "source_sha256": "95bb7a140c2b9049628a461ca1abdee616234dfd037aa0dd412720c9eb7bffa8",
+      "source_path": "skills/youtube-competitor/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dac7df01002c3aa9cf97b8d3689fbab6b6560187b809880e65db6481c1dc309e": {
+      "description_zh": "统筹明确结合至少三类YouTube资源的研究，如视频、字幕、频道、评论、播放列表、搜索或趋势，适用于综合调查；单项提取或审计用专项技能。",
+      "source": "Coordinate broad TubeAlfred research that explicitly combines at least three YouTube resource families, such as videos, transcripts, channels, comments, playlists, search, or trends. Use for comprehensive cross-resource investigations or when the user explicitly invokes youtube-full. Do not use for a single transcript, video, comment export, channel lookup, SEO audit, or other focused task covered by a narrower skill.",
+      "source_sha256": "dac7df01002c3aa9cf97b8d3689fbab6b6560187b809880e65db6481c1dc309e",
+      "source_path": "skills/youtube-full/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddfc27925a9a08911b6ef4c733dd6c58d3c6b762fe6d1866eec43f21e186d02e": {
+      "description_zh": "查询指定YouTube话题标签，按有界分页整理结果类型、样本排序和标题简介主题，支持返回视频、Shorts、频道、列表或直播，不用于全局趋势推断。",
+      "source": "Fetch and inspect YouTube search results for one explicit hashtag, with bounded pagination, result-type inventories, sample-level ranking, and title/description theme mapping. Use when the user asks what appears under a hashtag such as #fitness or wants its returned videos, Shorts, channels, playlists, shelves, or live results. Do not use for autocomplete keywords, general search queries, global trending claims, transcripts, comments, or SEO audits.",
+      "source_sha256": "ddfc27925a9a08911b6ef4c733dd6c58d3c6b762fe6d1866eec43f21e186d02e",
+      "source_path": "skills/youtube-hashtag/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ccb0588a47e7a06eb105030b30637f383d2902e18dfbc7e572e7c88fd30afac": {
+      "description_zh": "依据YouTube自动补全及当前搜索结果生成评估查询词、意图分组、标题和内容想法；数据不提供搜索量、排名难度或需求预测，不能据此宣称这些指标。",
+      "source": "Generate and evaluate YouTube query ideas using autocomplete suggestions and current search-result patterns. Use for query expansion, search-intent clustering, title concepts, or evidence-based content ideation. Do not claim keyword search volume, ranking difficulty, or demand forecasts because TubeAlfred suggestions and search results do not expose those metrics.",
+      "source_sha256": "5ccb0588a47e7a06eb105030b30637f383d2902e18dfbc7e572e7c88fd30afac",
+      "source_path": "skills/youtube-keyword-ideas/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07b3ca306a5877c6e23a48e451bf57a8d0805efebe384180933ff895cf148ab8": {
+      "description_zh": "获取单个YouTube播放列表元数据及有序成员，支持首页预览、有界分页、完整导出、总时长和重复检查，不分析口述内容或推断频道战略。",
+      "source": "Fetch a YouTube playlist's metadata and ordered video membership, including first-page previews, bounded pagination, exhaustive exports, duration totals, and duplicate checks. Use when the user supplies or asks about one playlist, course, series, or collection. Do not use to list a channel's playlists, summarize spoken video content, analyze comments, or infer channel strategy.",
+      "source_sha256": "07b3ca306a5877c6e23a48e451bf57a8d0805efebe384180933ff895cf148ab8",
+      "source_path": "skills/youtube-playlist/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c8f12b7dec1daed1d6dc513928f828fb807be13d6572eb93b8c95afd8487bd0": {
+      "description_zh": "分析明确样本的YouTube评论回复中的情绪、意图、主题、异议、赞誉、问题和请求，支持定性客户声音研究，不用于销售对象筛选。",
+      "source": "Analyze sentiment, intent, recurring themes, objections, praise, questions, and requests in a defined sample of YouTube comments or replies. Use when the user wants qualitative voice-of-customer findings rather than a raw comment export or lead list. Do not use for transcript sentiment, comment scraping only, or identifying sales prospects.",
+      "source_sha256": "2c8f12b7dec1daed1d6dc513928f828fb807be13d6572eb93b8c95afd8487bd0",
+      "source_path": "skills/youtube-sentiment/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e6f218dd4015811cdcb33ea8f0d83dda5713bc6a75304120f16fa39f5b99523": {
+      "description_zh": "审查单个公开YouTube视频元数据、口述主题一致性、搜索背景及可选观众反馈，按证据提出SEO和可发现性改善；不保证排名，缩略图评价需实际检查像素。",
+      "source": "Audit one public YouTube video's metadata, spoken-topic alignment, search-result context, and optional audience feedback, then produce evidence-ranked improvements. Use for a single-video SEO or discoverability audit. Do not use for channel-wide strategy, raw metadata retrieval, guaranteed ranking predictions, or visual thumbnail critique unless pixels are actually inspected.",
+      "source_sha256": "5e6f218dd4015811cdcb33ea8f0d83dda5713bc6a75304120f16fa39f5b99523",
+      "source_path": "skills/youtube-seo-audit/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2dc6534d40b3ee45fbe866ff8d31214188b7b95d70e8657a5403b747402beaff": {
+      "description_zh": "分析频道Shorts清单、口述开场、重复主题、包装及与长视频关系，支持短长视频策略比较；视觉钩子需帧证据、口述钩子需字幕，不用播放量推断因果提升。",
+      "source": "Analyze a channel's YouTube Shorts inventory, spoken opening hooks, recurring topics, packaging, and relationship to long-form videos. Use when the user wants Shorts strategy or a Shorts-versus-long-form comparison. Do not claim visual hooks without frames, spoken hooks without selected transcripts, or causal performance lift from raw view counts.",
+      "source_sha256": "2dc6534d40b3ee45fbe866ff8d31214188b7b95d70e8657a5403b747402beaff",
+      "source_path": "skills/youtube-shorts/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f130cb9b4d08e5aa60e5d31b3e43794831f480a8c711527592de5528c1455ee4": {
+      "description_zh": "获取并依据单个YouTube视频口述转录、字幕及时间戳回答，支持摘要、关键主张和翻译准备；元数据、评论、频道和播放列表另用专项技能。",
+      "source": "Fetch and work from a YouTube video's spoken transcript, including captions, subtitles, timestamped evidence, concise summaries, key claims, and translation preparation. Use when the user's answer depends on what is said in one identified video. Do not use for metadata-only lookups, comment or sentiment analysis, channel research, playlist inventories, or hashtag discovery.",
+      "source_sha256": "f130cb9b4d08e5aa60e5d31b3e43794831f480a8c711527592de5528c1455ee4",
+      "source_path": "skills/youtube-transcript/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b8efa828b095cb600f74e4e59c587308a775bc00bbaf79a047d4c5c85b51b74": {
+      "description_zh": "获取解释单个YouTube视频标题、简介、数量、时长、日期、频道、关键词、类别、章节、直播状态和相关推荐等元数据，不用于依赖口述、评论或图像的判断。",
+      "source": "Fetch and explain metadata for one identified YouTube video: title, description, counts, duration, publish date, channel, keywords, category, chapters, live status, and related-video records. Use for a single-video metadata snapshot or field export. Do not use when the answer depends on spoken content, comments or sentiment, channel-wide history, playlist membership, or visual thumbnail critique.",
+      "source_sha256": "8b8efa828b095cb600f74e4e59c587308a775bc00bbaf79a047d4c5c85b51b74",
+      "source_path": "skills/youtube-video/SKILL.md",
+      "package_sha256": "2ca037d51179313072e134a7c0f3d524e4394389202f33f6238302a5d961ed95",
+      "source_package": "TubeAlfred YouTube-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86570d9f1de93391830f4feb9edbc8c5a71b189c124e7c55adae01c1ef159c54": {
+      "description_zh": "根据用户描述在目标仓库实施插件定制，并记录变更意图。",
+      "source": "Use when you want to implement a customization in your target repo — describe the desired change and have it applied with the intent recorded.",
+      "source_sha256": "86570d9f1de93391830f4feb9edbc8c5a71b189c124e7c55adae01c1ef159c54",
+      "source_path": "skills/customize-plugin/SKILL.md",
+      "package_sha256": "0fc0173161e247b56798ab93f63e21f4077f5c906a010b6779166be5a7b9a2c2",
+      "source_package": "turbocharge-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f0dd68ca143d50cef86361a2e3fd5c609778d009c5c55881b058d11addeeea1": {
+      "description_zh": "设置插件定制工作区，克隆上游源、关联目标仓库并写入 .turbocharge/settings.json，供定制及同步技能使用。",
+      "source": "Use when setting up or reconfiguring a plugin customization workspace — cloning an upstream plugin source, linking a target repo, and writing .turbocharge/settings.json to the target repo for use by customize-plugin and sync-plugin-customizations. Triggers on requests to configure, initialize, or update settings for customize-plugin or sync-plugin-customizations.",
+      "source_sha256": "2f0dd68ca143d50cef86361a2e3fd5c609778d009c5c55881b058d11addeeea1",
+      "source_path": "skills/setup-plugin-customization/SKILL.md",
+      "package_sha256": "0fc0173161e247b56798ab93f63e21f4077f5c906a010b6779166be5a7b9a2c2",
+      "source_package": "turbocharge-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3229cbdd1b61c4d2581e5be0beaa6b620bc6b6040c00a5584398ce37adb0a86b": {
+      "description_zh": "检查上游插件发行更新，取得最新标签并合入目标仓库，借助代理解决冲突，对不能解决的情况生成接续材料，并校验意图产物。",
+      "source": "Use when running a scheduled check for upstream plugin release updates — fetches the latest tagged release, merges into the target repo, uses agent-assisted conflict resolution (with kickstart files for unresolvable conflicts), and validates the intent artifact.",
+      "source_sha256": "3229cbdd1b61c4d2581e5be0beaa6b620bc6b6040c00a5584398ce37adb0a86b",
+      "source_path": "skills/sync-plugin-customizations/SKILL.md",
+      "package_sha256": "0fc0173161e247b56798ab93f63e21f4077f5c906a010b6779166be5a7b9a2c2",
+      "source_package": "turbocharge-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b1fd4f37fa352db07c512fd609c6d3221c843f7305143599a1de08b148551556": {
+      "description_zh": "生成或更新项目ATLAS.md语义领域地图，标明查询位置、入口、模块用途、重要符号和集成点，补充codemap结构索引。",
+      "source": "Generate or update a semantic domain map (ATLAS.md) for the project. Maps where to look, entry points, module purposes, key symbols, and integration points. Complements codemap's structural index with the domain knowledge layer.",
+      "source_sha256": "b1fd4f37fa352db07c512fd609c6d3221c843f7305143599a1de08b148551556",
+      "source_path": "skills/atlas/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b04f15eef59840ee8b41bddbeb71e94efde67a56029d499473474e3712f2e3e5": {
+      "description_zh": "在新功能、组件或行为变更前，通过苏格拉底式对话探索需求。",
+      "source": "Use when starting creative work - creating features, building components, adding functionality, or modifying behavior. Explores requirements through Socratic dialogue before any implementation.",
+      "source_sha256": "b04f15eef59840ee8b41bddbeb71e94efde67a56029d499473474e3712f2e3e5",
+      "source_path": "skills/brainstorm/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d88c1f6f1791f1aaaed9395de927120486ef340f2a7b14de72e9b739a7123eef": {
+      "description_zh": "执行准备好的实现计划，逐任务调度Sonnet构建代理并自审；高风险任务可选择追加审查，支持单线或多线并行。",
+      "source": "Use when you have an implementation plan ready to execute. Dispatches builder agents (Sonnet) per task with self-review. Opt-in review (single Sonnet task-reviewer, two verdicts) for high-risk tasks. Supports single-track and multi-track parallel execution.",
+      "source_sha256": "d88c1f6f1791f1aaaed9395de927120486ef340f2a7b14de72e9b739a7123eef",
+      "source_path": "skills/build/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3606fbb274a885d1561e740645d800043bf08ee8c537255ad35bf9d0f8590836": {
+      "description_zh": "在提出修复前系统调查缺陷、测试失败或异常行为的根因。",
+      "source": "Use when encountering any bug, test failure, or unexpected behavior. Enforces systematic root-cause investigation before proposing fixes. Prevents guess-and-check debugging.",
+      "source_sha256": "3606fbb274a885d1561e740645d800043bf08ee8c537255ad35bf9d0f8590836",
+      "source_path": "skills/debug/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a4eb7de4c75351241c4bca61b7b1e7d0082ef493afe44f1338698ec8c6f4527": {
+      "description_zh": "将用户故事或清晰需求整理为细分实现计划，包含准确路径、完整代码和验证命令。",
+      "source": "Use when you have stories or clear requirements that need to become an implementation plan with bite-sized tasks, exact file paths, complete code, and verification commands.",
+      "source_sha256": "4a4eb7de4c75351241c4bca61b7b1e7d0082ef493afe44f1338698ec8c6f4527",
+      "source_path": "skills/plan/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1db87f32e366f5925c9e473e42181046be6287a26417f5196a0ff55910419758": {
+      "description_zh": "在合并前调度审查代理，将完整Git差异与原计划比较，核验需求及质量。",
+      "source": "Use before merging to verify completed work meets requirements and quality standards. Dispatches code-reviewer for holistic assessment of the full git diff against the original plan.",
+      "source_sha256": "1db87f32e366f5925c9e473e42181046be6287a26417f5196a0ff55910419758",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9822186d00db7ba9b11bbc87cb3dfddda740520fa9e2e3e37c5d4dd724d6534": {
+      "description_zh": "安装Turbocharge后检查全局配置冲突，包括重复代理、竞争技能和过时规则，提出修复并验证插件健康。",
+      "source": "Run once after installing turbocharge. Audits global config for conflicts — duplicate agents, competing skills, stale rules — and offers to fix them. Also validates turbocharge plugin health.",
+      "source_sha256": "d9822186d00db7ba9b11bbc87cb3dfddda740520fa9e2e3e37c5d4dd724d6534",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
