@@ -62089,6 +62089,1086 @@
       "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
       "source_package": "Rootly-2.2.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7eb23af3ce098e2b2904dffbec81e7e0969ca038b8b41c698a46351844b2e46d": {
+      "description_zh": "展示简洁的 Rootly 服务健康概览，按严重程度汇总当前事件，适用于快速健康检查。",
+      "source": "Show a compact service health overview including active incidents by severity. Use for a quick health check of your services.",
+      "source_sha256": "7eb23af3ce098e2b2904dffbec81e7e0969ca038b8b41c698a46351844b2e46d",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "745396f2f1cd83744624a4d7fd05de253fc619bbfbe66b29109d97c03e09e25f": {
+      "description_zh": "请求他人接替本人即将开始的 Rootly 值班，列出班次并按可用情况寻找候选人，明确确认后创建覆盖安排；未经确认不执行写入。",
+      "source": "Request someone to cover one of your upcoming on-call shifts. Lists your shifts, helps identify a candidate based on availability, and creates an override after explicit confirmation. Write action - never executes without confirming.",
+      "source_sha256": "745396f2f1cd83744624a4d7fd05de253fc619bbfbe66b29109d97c03e09e25f",
+      "source_path": "skills/swap/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cb194675c36784259ba194a8f1fb108f159960710c13e0bc5f6d0b2c3a57fdb": {
+      "description_zh": "简单的测试技能。",
+      "source": "Simple test skill",
+      "source_sha256": "5cb194675c36784259ba194a8f1fb108f159960710c13e0bc5f6d0b2c3a57fdb",
+      "source_path": "skills/test/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ec1775af54f490eda2dce6a4e8c313a260d193defb314f4b1d33278791bd33c": {
+      "description_zh": "汇总 Rootly 服务、团队或全组织的可靠性趋势，报告指定窗口内的事件数量、严重程度构成及平均恢复时间 MTTR 方向，默认回看 30 天，适用于站会、一对一和季度回顾。",
+      "source": "Reliability trend summary for a service, team, or the whole org. Reports incident volume, severity mix, and MTTR direction over a window (default 30 days). Use for standups, 1-on-1s, or quarterly reviews.",
+      "source_sha256": "0ec1775af54f490eda2dce6a4e8c313a260d193defb314f4b1d33278791bd33c",
+      "source_path": "skills/trend/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef0d3c7d84bcaa2ac73c78a135aca2c89d49cea7aebf6f91df8bdb52bfde21a3": {
+      "description_zh": "处理希伯来语、阿拉伯语、波斯语、乌尔都语等从右向左文字的聊天排版，尤其是与英语等从左向右文字混排时的双向格式，使回复顺序清楚易读；原说明要求出现 RTL 内容时启用。",
+      "source": "Ensures Claude's chat responses are properly formatted for RTL (right-to-left) text in Hebrew, Arabic, Persian (Farsi), Urdu, and other RTL languages — especially when mixing with English or other LTR text. Use this skill ALWAYS — it should be active on every single response when the user writes in any RTL language, mentions an RTL language, or when the conversation includes any RTL script. This skill handles bidirectional text formatting so responses look clean and readable instead of jumbled. Trigger on ANY RTL content in the conversation, even a single word in Hebrew, Arabic, Persian, or Urdu script.",
+      "source_sha256": "ef0d3c7d84bcaa2ac73c78a135aca2c89d49cea7aebf6f91df8bdb52bfde21a3",
+      "source_path": "skills/rtl-chat/SKILL.md",
+      "package_sha256": "6554ae2ce72d53c9a1ff58527d0d4f657cb259bb58a206b40265f3ab4d3a4b74",
+      "source_package": "rtl-chat-fixer-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a2fb8d52cf72d308c92a6424f6d80476ffca96a96572542b66bcb1342c5e89e": {
+      "description_zh": "按严重程度列出 RubixKube 未关闭基础设施问题，用于检查当前告警、待关注事项，以及指定环境、云账号项目、虚拟机群、集群或命名空间的问题。",
+      "source": "List open infrastructure issues prioritized by severity. Use when the user asks what needs attention, wants to see current alerts, or is looking for problems in a specific environment, cloud account/project, VM estate, cluster, namespace, or project.",
+      "source_sha256": "8a2fb8d52cf72d308c92a6424f6d80476ffca96a96572542b66bcb1342c5e89e",
+      "source_path": "skills/active-issues/SKILL.md",
+      "package_sha256": "91a95cda5688417c77b284f860b4869c9074ea412f1e7359d56e9a482173f73c",
+      "source_package": "RubixKube-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7c7baba700106b9816016c87b1401088875305f1b80cb8e9e197fb8b7a9a5c8": {
+      "description_zh": "展示指定 RubixKube 环境的完整健康情况，包括基础设施详情、资源状态、工作负载数量、当前问题及近期根因分析，适用于按环境、云账号项目、虚拟机群或集群 ID 查询。",
+      "source": "Complete health view of a specific RubixKube environment: infrastructure details, resource status, workload counts, active issues, and recent RCAs. Use when the user asks about a named environment, cloud project/account, VM estate, Kubernetes cluster, or specific cluster_id.",
+      "source_sha256": "b7c7baba700106b9816016c87b1401088875305f1b80cb8e9e197fb8b7a9a5c8",
+      "source_path": "skills/cluster-health/SKILL.md",
+      "package_sha256": "91a95cda5688417c77b284f860b4869c9074ea412f1e7359d56e9a482173f73c",
+      "source_package": "RubixKube-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ad4bbc49d6b00074144cd739384d7018ad32570f1382021b22a13b6e90bc625": {
+      "description_zh": "提供 RubixKube 平台总体状态与近期活动时间线，适用于生产运行情况、部署后检查和近期事件摘要。",
+      "source": "RubixKube platform overview and recent activity timeline. Use when the user asks about overall system status, what's happening in production, post-deploy checks, or wants a summary of recent incidents.",
+      "source_sha256": "9ad4bbc49d6b00074144cd739384d7018ad32570f1382021b22a13b6e90bc625",
+      "source_path": "skills/infra-status/SKILL.md",
+      "package_sha256": "91a95cda5688417c77b284f860b4869c9074ea412f1e7359d56e9a482173f73c",
+      "source_package": "RubixKube-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1eb0c810c02050c995ec69e374a9e3ba0be689f27d187b6b2798acd5f61dcc00": {
+      "description_zh": "深入调查指定基础设施问题，诊断服务、Pod、云资源或虚拟机故障，返回根因、RCA 发现及关联整改操作；可按 insight ID 查询。",
+      "source": "Deep investigation of a specific infrastructure issue. Use when the user asks why something is broken, wants to debug a service, pod, cloud resource, VM, or references an insight ID. Returns root cause, RCA findings, and linked remediation actions.",
+      "source_sha256": "1eb0c810c02050c995ec69e374a9e3ba0be689f27d187b6b2798acd5f61dcc00",
+      "source_path": "skills/investigate/SKILL.md",
+      "package_sha256": "91a95cda5688417c77b284f860b4869c9074ea412f1e7359d56e9a482173f73c",
+      "source_package": "RubixKube-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a530c327b233b44739d6d5d2c9f0ff0a5f3682d45a67355f5f8bfbf44eace110": {
+      "description_zh": "列出 RubixKube 未完成整改行动项、优先级及相关事件背景，用于查看工作队列和追踪事件整改进展。",
+      "source": "List open remediation action items with priority and linked incident context. Use when the user asks what to work on, wants to see their action queue, or is tracking remediation progress for an incident.",
+      "source_sha256": "a530c327b233b44739d6d5d2c9f0ff0a5f3682d45a67355f5f8bfbf44eace110",
+      "source_path": "skills/pending-actions/SKILL.md",
+      "package_sha256": "91a95cda5688417c77b284f860b4869c9074ea412f1e7359d56e9a482173f73c",
+      "source_package": "RubixKube-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72ff73afed39431b0867deff3dc72416cc5925f5e19c14d12c6dcf2eb4c39604": {
+      "description_zh": "按 report_id 获取 RubixKube 指定事件的完整根因分析报告，提供整改步骤、回滚说明及证据。",
+      "source": "Full root cause analysis report for a specific incident. Use when the user asks for the complete RCA, wants remediation steps, rollback instructions, or evidence for a known incident. Requires a report_id.",
+      "source_sha256": "72ff73afed39431b0867deff3dc72416cc5925f5e19c14d12c6dcf2eb4c39604",
+      "source_path": "skills/rca-report/SKILL.md",
+      "package_sha256": "91a95cda5688417c77b284f860b4869c9074ea412f1e7359d56e9a482173f73c",
+      "source_package": "RubixKube-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71f62528dcbd2f8822d541020d8410264d0bb6d0d53b0357955b987612d64a06": {
+      "description_zh": "将每周训练日志与训练计划对照，主要分析跑步、辅助分析交叉训练，形成表现回顾与教练反馈；支持 Strava、Garmin、Apple Health、手工日志或会话输入，检查训练是否按计划推进。",
+      "source": "Weekly running coaching sessions that analyze training logs against the training plan, with primary focus on running and secondary analysis of cross-training activities. Works with multiple data sources including Strava, other platforms (Garmin, Apple Health, etc.), manual logs, or conversational input. Use when the athlete wants to review their training week, get coaching feedback, analyze how they performed, or check if they're on track with their training plan. Trigger phrases include \"review my training\", \"coach me\", \"how did I do this week\", or any request for training analysis or coaching feedback.",
+      "source_sha256": "71f62528dcbd2f8822d541020d8410264d0bb6d0d53b0357955b987612d64a06",
+      "source_path": "skills/running-coach/SKILL.md",
+      "package_sha256": "43bfb8cd180ef68b385abf9aae31afb2af18947be2d7bab78a721799f6f75d64",
+      "source_package": "Running Race Coach-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7f83170fd141d3c11474c244dcac9d6e6ebb6ad427dbe1e3633774a936e146a": {
+      "description_zh": "通过 Strava MCP 下载同步训练数据，将活动存入 training-log 为 Markdown 摘要，并保留训练跑的分段细节；仅在选择 Strava 为数据源时使用，其他平台、手工或会话输入仍可选。",
+      "source": "Downloads and syncs training data from Strava using the Strava MCP server. This is ONE option for importing training data - athletes can also use manual logs, other platforms (Garmin, Apple Health), or provide data conversationally. Use this skill specifically when the athlete wants to sync from Strava or when the running-coach indicates Strava as the chosen data source. Stores activities in the training-log folder as markdown summaries, including lap details for workout runs.",
+      "source_sha256": "a7f83170fd141d3c11474c244dcac9d6e6ebb6ad427dbe1e3633774a936e146a",
+      "source_path": "skills/strava-sync/SKILL.md",
+      "package_sha256": "43bfb8cd180ef68b385abf9aae31afb2af18947be2d7bab78a721799f6f75d64",
+      "source_package": "Running Race Coach-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "efa6175da7988c417950e43a64d30486b56d5e0b2494f5e2545ad33f56aafa8d": {
+      "description_zh": "生成半程马拉松训练进度的独立 HTML 仪表盘，采用复古样式和 ASCII 图表，展示周跑量、课次完成率、配速遵守程度、阶段进度与教练评论。",
+      "source": "Generate a comprehensive HTML training dashboard showing progress toward half marathon training goals. Outputs a single self-contained HTML file with retro styling, ASCII charts, weekly mileage tracking, session completion rates, pace adherence, phase progress, and coaching commentary. Use when the athlete wants to see their training progress, check if they're on track, view their training statistics, or get an overview of their plan progress. Trigger phrases include \"show my dashboard\", \"training progress\", \"how am I doing\", \"show my stats\", or any request for a training overview.",
+      "source_sha256": "efa6175da7988c417950e43a64d30486b56d5e0b2494f5e2545ad33f56aafa8d",
+      "source_path": "skills/training-dashboard/SKILL.md",
+      "package_sha256": "43bfb8cd180ef68b385abf9aae31afb2af18947be2d7bab78a721799f6f75d64",
+      "source_package": "Running Race Coach-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ccd3bdc35ebf925dcc1b639f53604f51d97b13f2bea45bbadc5686d6a468fb8d": {
+      "description_zh": "为 5 公里、10 公里、半程和全程马拉松制定个性化 Markdown 训练计划，包含比赛目标、训练配速、阶段推进和逐周训练安排。",
+      "source": "Create personalized training plans for 5K, 10K, Half Marathon, and Marathon races. Use when the user requests a training plan for any of these distances, wants to prepare for a race, or asks for a structured running program. This skill generates comprehensive markdown training plans that include race goals, training paces, phased progression, and week-by-week workout schedules.",
+      "source_sha256": "ccd3bdc35ebf925dcc1b639f53604f51d97b13f2bea45bbadc5686d6a468fb8d",
+      "source_path": "skills/training-plan/SKILL.md",
+      "package_sha256": "43bfb8cd180ef68b385abf9aae31afb2af18947be2d7bab78a721799f6f75d64",
+      "source_package": "Running Race Coach-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37ab4d861d9916a4ce7b242638a0ce461580231b765d5f6eed700c93950a1c91": {
+      "description_zh": "提供 Runpod 工作流配套的 HuggingFace、GitHub、Docker 和 AWS 命令行工具使用说明；导入 ComfyUI 工作流缺少模型下载元数据时改用模板技能的模型修复指南。",
+      "source": "Companion CLIs for Runpod workflows — HuggingFace, GitHub, Docker, and AWS. Use the ComfyUI model-repair guide in runpod-templates instead when an imported ComfyUI workflow lacks model download metadata.",
+      "source_sha256": "37ab4d861d9916a4ce7b242638a0ce461580231b765d5f6eed700c93950a1c91",
+      "source_path": "skills/companion-clis/SKILL.md",
+      "package_sha256": "a7086c72c52886b8cc09703d4a0d71ff3195dda95206d02b0d6db6b34d2781e3",
+      "source_package": "Runpod-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c903569c1231117a9be6d54bd04d6a768a7193d555c0e49d7dc1d99c247c0ff": {
+      "description_zh": "使用 runpod-flash 在本地编写 Python，以 flash dev 在远程 Runpod GPU 或 CPU 上热更新运行并查看日志，再用 flash deploy 部署；涵盖 Endpoint、remote 函数、资源配置和故障排查，纯基础设施管理另用专用工具。",
+      "source": "runpod-flash — code-first serverless: write Python locally, run it on remote Runpod GPUs/CPUs with `flash dev` (hot-reload + live worker logs), then `flash deploy`. Use for @Endpoint/@remote functions, resource config, and debugging flash deployments. For CLI-only infra management use runpodctl or runpod-mcp.",
+      "source_sha256": "9c903569c1231117a9be6d54bd04d6a768a7193d555c0e49d7dc1d99c247c0ff",
+      "source_path": "skills/flash/SKILL.md",
+      "package_sha256": "a7086c72c52886b8cc09703d4a0d71ff3195dda95206d02b0d6db6b34d2781e3",
+      "source_package": "Runpod-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cdc600d81f7948616f31273bf6117f87b0b5e8699c1bc46cf7a838b59187ddee": {
+      "description_zh": "通过 Runpod MCP 结构化工具管理 Pod、无服务器端点、任务、模板、网络卷、镜像仓库认证、GPU/CPU 目录和计费，并通过托管 OAuth 或本地 npx 连接；有 MCP 时优先用于普通增删改查，终端、文件传输和 SSH 使用 runpodctl。",
+      "source": "Manage Runpod infrastructure — pods, serverless endpoints, jobs, templates, network volumes, container-registry auth, GPU/CPU catalog, and billing — via the Runpod MCP server's structured tool calls. Use when the Runpod MCP tools (create-pod, list-endpoints, …) are connected in this session, or to connect them (hosted OAuth or local npx). Prefer this over runpodctl for plain infra CRUD when MCP is available; use runpodctl for the terminal, file transfer, or SSH setup.",
+      "source_sha256": "cdc600d81f7948616f31273bf6117f87b0b5e8699c1bc46cf7a838b59187ddee",
+      "source_path": "skills/runpod-mcp/SKILL.md",
+      "package_sha256": "a7086c72c52886b8cc09703d4a0d71ff3195dda95206d02b0d6db6b34d2781e3",
+      "source_package": "Runpod-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a1e647efb72b0a84a572be356148309e6ac8ddde49e542bc96bed2b9f6ce771e": {
+      "description_zh": "将代码从 Runpod GraphQL 或 REST v1 迁移到 REST v2，调查调用版本、改写调用点、标记破坏性变化并核验；基础设施管理使用 MCP 或 runpodctl。",
+      "source": "Migrate a codebase from the Runpod GraphQL API or REST v1 to REST v2 — inventory which parts use which API version, rewrite the call sites, flag breaking changes, and verify. Use when someone asks to move to v2, asks what v2 would change, or asks which Runpod API their code is on. For managing infrastructure rather than migrating code, use runpod-mcp or runpodctl.",
+      "source_sha256": "a1e647efb72b0a84a572be356148309e6ac8ddde49e542bc96bed2b9f6ce771e",
+      "source_path": "skills/runpod-migrate/SKILL.md",
+      "package_sha256": "a7086c72c52886b8cc09703d4a0d71ff3195dda95206d02b0d6db6b34d2781e3",
+      "source_package": "Runpod-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b7e93adc404952dfd1a4e810d8179fc8a55df256da158640d9147806324b465": {
+      "description_zh": "解释 Runpod 官方预构建 Pod 模板的内容、端口、路径、选型、版本固定及首次启动缺项，覆盖 ComfyUI、PyTorch 等；也排查无法启动、UI 不通、缺模型、CUDA 或导入工作流元数据问题，部署交由 runpodctl 或 MCP。",
+      "source": "Runpod''s official prebuilt pod templates (ComfyUI, PyTorch, and others): what each image ships, which ports and paths it uses, how to pick one, how to pin a version, and what is missing on first boot. Use when a task says \"run <X> on a pod\" and an official template already covers it, instead of building an image — and when a user needs help with or wants to fix something about a Runpod template they are already running (won''t boot, can''t reach the UI, missing models, wrong CUDA line, broken ComfyUI workflow metadata on imported workflows): start here and route onward. Deploy with runpodctl or runpod-mcp; end-to-end walkthroughs live in the runpod router''s golden paths.",
+      "source_sha256": "4b7e93adc404952dfd1a4e810d8179fc8a55df256da158640d9147806324b465",
+      "source_path": "skills/runpod-templates/SKILL.md",
+      "package_sha256": "a7086c72c52886b8cc09703d4a0d71ff3195dda95206d02b0d6db6b34d2781e3",
+      "source_package": "Runpod-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26b016f2627feb8ccceaefe2bacf25c57d172fe8f1d734b5ee6301d15fa0c361": {
+      "description_zh": "解释 Runpod Pod 与无服务器服务、GPU 和显存选型、存储、容器构建及网络，并提供创建、SSH 执行、配置、就绪轮询的 Pod 开发流程和 uv、apt 安装规范；属于指导，实际操作交由 CLI、MCP 或 flash。",
+      "source": "How Runpod works and how to work it — pods vs serverless, GPU/VRAM selection, storage, building a container, networking, plus the agentic pod development loop (provision → ssh-exec → set up → poll readiness) and on-pod install hygiene (uv/apt). Use to answer \"how does X work\", \"which GPU\", \"how do I build a container\", or \"how do I stand up a workload on a pod\". Guidance, not a tool — execute with runpodctl, runpod-mcp, or flash.",
+      "source_sha256": "26b016f2627feb8ccceaefe2bacf25c57d172fe8f1d734b5ee6301d15fa0c361",
+      "source_path": "skills/runpod-usage/SKILL.md",
+      "package_sha256": "a7086c72c52886b8cc09703d4a0d71ff3195dda95206d02b0d6db6b34d2781e3",
+      "source_package": "Runpod-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61355c2391e4d7d61f923ed7a1247829bdc14890f59057cf764f8228585ca8f0": {
+      "description_zh": "作为 Runpod 任务入口，为 GPU/CPU Pod、无服务器端点、模板、网络卷、镜像和平台使用问题选择专用技能；原说明索引了约二十四条已实时验证的端到端示例，适用于路线不明或多步骤资源配置。",
+      "source": "Start here for any Runpod task — running GPU/CPU pods, deploying serverless endpoints, templates, network volumes, building images, or understanding how Runpod works. Routes to the right skill (runpod-mcp, runpodctl, flash, companion-clis, runpod-usage, runpod-templates, runpod-migrate) and indexes two dozen live-verified end-to-end examples (golden paths) — use it when the lane is unclear, and for any multi-step or provisioning task even when it is not.",
+      "source_sha256": "61355c2391e4d7d61f923ed7a1247829bdc14890f59057cf764f8228585ca8f0",
+      "source_path": "skills/runpod/SKILL.md",
+      "package_sha256": "a7086c72c52886b8cc09703d4a0d71ff3195dda95206d02b0d6db6b34d2781e3",
+      "source_package": "Runpod-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acdeb8d54374354ac6f2c18f4cedced04af452dc9290f7336afcfab3d5ab39ba": {
+      "description_zh": "通过 Runpod CLI 在终端、CI 或脚本管理 GPU/CPU Pod、端点、模板、网络卷、Hub 部署、模型、SSH 和文件传输，支持 doctor；MCP 已连接时结构化调用优先使用 MCP。",
+      "source": "Runpod CLI for managing GPU/CPU workloads from the terminal — pods, serverless endpoints, templates, network volumes, Hub deploys, models, SSH, and file transfer (send/receive). Use for terminal/CI/scripting, Hub browse/deploy, SSH setup, `doctor`, or when the Runpod MCP tools are not connected. For structured tool calls in an MCP-enabled session, prefer runpod-mcp.",
+      "source_sha256": "acdeb8d54374354ac6f2c18f4cedced04af452dc9290f7336afcfab3d5ab39ba",
+      "source_path": "skills/runpodctl/SKILL.md",
+      "package_sha256": "a7086c72c52886b8cc09703d4a0d71ff3195dda95206d02b0d6db6b34d2781e3",
+      "source_package": "Runpod-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f96c19056b10d569a831a28359ce25990fdf080baec7ab76bebe97cad158bd44": {
+      "description_zh": "结合 runway-dev 构建、修改、调试和核验 Runway Characters 集成，用 MCP 检查预设或自定义 avatar、以 SDK 管理实时 Session 并连接 UI；界面称 Characters，API 称 avatars，不用于 avatar 视频生成端点。",
+      "source": "Build, modify, debug, or verify Runway Characters integrations: inspect preset or custom avatars with MCP, manage live Sessions via SDK, and connect the application UI. Use with +runway-dev. UI says Characters; MCP/API use avatars. Not for avatar video generation endpoints.",
+      "source_sha256": "f96c19056b10d569a831a28359ce25990fdf080baec7ab76bebe97cad158bd44",
+      "source_path": "skills/runway-dev-characters/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b28cf9236282ef3fcf9b834eccf54205ef153420c63c442ecef1c04a7b6956b": {
+      "description_zh": "结合 runway-dev 开发 Runway Model Routers，使用 MCP 检查实时配置与可用模型、管理已批准设置、集成路由 SDK 调用并检查结果；不用于直接模型端点或代理 REST CLI。",
+      "source": "Build, modify, debug, or verify Runway Model Routers: inspect live config and eligible models via MCP, manage approved settings, integrate routed SDK calls, and inspect routing results. Use with +runway-dev. Not for direct per-model endpoints or agent REST CLI.",
+      "source_sha256": "9b28cf9236282ef3fcf9b834eccf54205ef153420c63c442ecef1c04a7b6956b",
+      "source_path": "skills/runway-dev-model-routers/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03e027d0e6e29a553bc611018817ba489a136e254d7ab5a6890f3cfd796cf17d": {
+      "description_zh": "结合 runway-dev 在应用中集成 Runway 模型生成，通过 MCP 发现可访问模型和限制、实现 SDK 调用并将输入输出接入 UI；不用于模型路由、Characters、recipes 或代理生成脚本。",
+      "source": "Build, modify, debug, or verify Runway model generation in an application: discover accessible models and constraints with MCP, implement SDK calls, and wire inputs and outputs into the product UI. Use with +runway-dev. Not for Model Routers, Characters, recipes, or agent-side generate scripts.",
+      "source_sha256": "03e027d0e6e29a553bc611018817ba489a136e254d7ab5a6890f3cfd796cf17d",
+      "source_path": "skills/runway-dev-models/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "299521ccb851fbdf6ed3029eef3fecc2f83bb6d936e85fe804c4cbf66d6ecf2c": {
+      "description_zh": "结合 runway-dev 选择和集成 Runway recipe，按用户场景匹配配方、遵循当前接口约定、实现 SDK client.recipes 并连接应用结果；不用于直接模型端点或模型路由。",
+      "source": "Choose, build, modify, debug, or verify Runway recipe integrations: match a recipe to the user's use case, follow its current contract, implement SDK client.recipes calls, and wire results into the application. Use with +runway-dev. Not for direct model endpoints or Model Routers.",
+      "source_sha256": "299521ccb851fbdf6ed3029eef3fecc2f83bb6d936e85fe804c4cbf66d6ecf2c",
+      "source_path": "skills/runway-dev-recipes/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4e86ec3ebc2774f0f9643efce61b01733d5d533b528543fb60ac76aab5b3385": {
+      "description_zh": "结合 runway-dev 开发将 Runway 应用工作流暴露为 API 端点的集成，通过 get_workflows_setup_guide 获取当前配置及接口指南；不用于模型生成、路由或 Characters 会话。",
+      "source": "Build, modify, debug, or verify integrations that expose Runway app workflows as API endpoints. Use get_workflows_setup_guide for current setup and API guidance. Use with +runway-dev. Not for model generation, routers, or Characters sessions.",
+      "source_sha256": "f4e86ec3ebc2774f0f9643efce61b01733d5d533b528543fb60ac76aab5b3385",
+      "source_path": "skills/runway-dev-workflows/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e05e41bbba3ffb275a56b637c3964c0fcc60b156f0da95d03e4c3f1e31fa025a": {
+      "description_zh": "为应用中的 Runway Dev Platform 集成提供基础流程，连接 Dev MCP、从 llms.txt 定位当前资源、明确项目背景、使用 SDK 等待辅助方法并处理错误；配合相应专项技能，不用于直接生成脚本或 REST CLI 快捷方式。",
+      "source": "Foundation for building, modifying, debugging, or verifying Runway Dev Platform integrations in an application: connect Dev MCP, use llms.txt to find current resources, resolve project context, use SDK wait helpers, and handle errors. Load with relevant runway-dev-* surface skills. Not for direct media generation scripts or REST CLI shortcuts.",
+      "source_sha256": "e05e41bbba3ffb275a56b637c3964c0fcc60b156f0da95d03e4c3f1e31fa025a",
+      "source_path": "skills/runway-dev/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "795fb86733732f23f085ee9c879bcad94f775e610b323aee66dba67d4dce13b7": {
+      "description_zh": "查询 Runway API 组织详情，包括速率限制、积分余额、使用等级及每日生成次数。",
+      "source": "Query the Runway API for organization details: rate limits, credit balance, usage tier, and daily generation counts",
+      "source_sha256": "795fb86733732f23f085ee9c879bcad94f775e610b323aee66dba67d4dce13b7",
+      "source_path": "skills/rw-check-org-details/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e06d9e3dbd6c94abf359c4b104e3d7567f18c2f1843d0764a3ce08e1ffa1e55": {
+      "description_zh": "通过可运行脚本调用 Runway API 生成音频，支持文字转语音、音效、人声分离、配音与声音转换。",
+      "source": "Generate audio using the Runway API via runnable scripts. Supports TTS, sound effects, voice isolation, dubbing, and voice conversion.",
+      "source_sha256": "2e06d9e3dbd6c94abf359c4b104e3d7567f18c2f1843d0764a3ce08e1ffa1e55",
+      "source_path": "skills/rw-generate-audio/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d985b2c17e2d31c95234890392fbe89ad73f2ef9addfc856416afdbbb134d2e": {
+      "description_zh": "通过可运行脚本直接调用 Runway API 生成图片，支持文字生成图片及可选参考图。",
+      "source": "Generate images directly using the Runway API via runnable scripts. Supports text-to-image with optional reference images.",
+      "source_sha256": "1d985b2c17e2d31c95234890392fbe89ad73f2ef9addfc856416afdbbb134d2e",
+      "source_path": "skills/rw-generate-image/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34cc9300f1c0c2d0f840c6ebaf92e1b14485fc4a02ae979a98892de814b022e6": {
+      "description_zh": "通过可运行脚本调用 Runway API 进行文字、图片或视频生成视频；原说明列出 seedance2、gen4.5、veo3 等模型。",
+      "source": "Generate videos directly using the Runway API via runnable scripts. Supports text-to-video, image-to-video, and video-to-video with seedance2, gen4.5, veo3, and more.",
+      "source_sha256": "34cc9300f1c0c2d0f840c6ebaf92e1b14485fc4a02ae979a98892de814b022e6",
+      "source_path": "skills/rw-generate-video/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1cfa3818368b1930aeea1e143b144203407336c290246a3f467dfdbe8bd1d3c": {
+      "description_zh": "让代理直接使用 Runway API 生成媒体、管理资源和查看账号状态。",
+      "source": "Directly use the Runway API from the agent to generate media, manage resources, and inspect account state",
+      "source_sha256": "f1cfa3818368b1930aeea1e143b144203407336c290246a3f467dfdbe8bd1d3c",
+      "source_path": "skills/use-runway-api/SKILL.md",
+      "package_sha256": "2c9200f42d5318c555d2e155baaa10352c7188e14af016ae28ba5614c1589fa5",
+      "source_package": "Runway API Skills-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3715acfb9c7733bffb086b0ddaad05efd8c6d18d88f4258b52cba5adedc6d67": {
+      "description_zh": "通过 rustunnel 安全隧道暴露本地服务，建立公开 HTTPS、TCP、UDP 地址、点对点隧道和负载均衡池，适用于测试、webhook、演示和部署。",
+      "source": "Expose local services via secure tunnels using rustunnel. Create public HTTPS/TCP/UDP URLs, peer-to-peer tunnels, and load-balanced pools for testing, webhooks, demos, and deployment — from any AI agent or harness.",
+      "source_sha256": "b3715acfb9c7733bffb086b0ddaad05efd8c6d18d88f4258b52cba5adedc6d67",
+      "source_path": "skills/rustunnel/SKILL.md",
+      "package_sha256": "7de89c38ad0ec0dd6b1a5b1c08c45de1d0f3fabcfcfa295c24017a1592e30b69",
+      "source_package": "rustunnel-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba537660ef3daacae9e00dbe9244641550ad321b85ef2875326f5547910e9a19": {
+      "description_zh": "按用户要求在 Rytiva 创建、编辑或安排训练，并保存到训练库，处理准确目标、动作媒体、会话审批和安全重试。",
+      "source": "Create, edit, or schedule workouts in Rytiva when the user wants a plan saved to their workout library. Handles exact targets, exercise media, conversational approval, and safe retries.",
+      "source_sha256": "ba537660ef3daacae9e00dbe9244641550ad321b85ef2875326f5547910e9a19",
+      "source_path": "skills/plan-workout/SKILL.md",
+      "package_sha256": "1c429d90bcdb45188a3ae26aa540964a6f7105dfc0e2a50f61adfbeef177054a",
+      "source_package": "Rytiva-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d94904197911d6ebfe764432b8a4a73f6917796c65245e93b29dce8a25a0dbe6": {
+      "description_zh": "查看 Rytiva 训练收件箱、已完成课次和近期摘要，回答进度问题并依据实际活动建议下一次训练。",
+      "source": "Review a user's Rytiva workout inbox, completed sessions, or recent training summary to answer progress questions and suggest a next session grounded in their recorded activity.",
+      "source_sha256": "d94904197911d6ebfe764432b8a4a73f6917796c65245e93b29dce8a25a0dbe6",
+      "source_path": "skills/review-training/SKILL.md",
+      "package_sha256": "1c429d90bcdb45188a3ae26aa540964a6f7105dfc0e2a50f61adfbeef177054a",
+      "source_package": "Rytiva-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4dbb21651b70fd25f9c0a876002a70b51c4c7690476b1ee81ef94d9d2290898d": {
+      "description_zh": "使用 GA4 数据报告来自 ChatGPT、Perplexity、Gemini、Claude 等 AI 助手的网站流量、落地页面和变化趋势，适用于 AI 搜索引流与可见性跟踪。",
+      "source": "Reports how much website traffic comes from AI assistants such as ChatGPT, Perplexity, Gemini and Claude, which pages those visitors land on, and how the trend is moving, using Google Analytics 4 data. Use when asked \"how much traffic do I get from ChatGPT\", \"is AI search sending me visitors\", \"which pages do AI assistants cite\", or \"track my AI visibility\".",
+      "source_sha256": "4dbb21651b70fd25f9c0a876002a70b51c4c7690476b1ee81ef94d9d2290898d",
+      "source_path": "skills/ai-traffic-report/SKILL.md",
+      "package_sha256": "5107464382a2a7393ec89a4595f9d0313b93bd2e0deb9e7e70ada1a0f396c970",
+      "source_package": "Ryze AI Marketing Skills-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75553f8f56c600996989f4b529291f05d21d717c0d1c71bd769f76f5aed1eb09": {
+      "description_zh": "比较本月截至当前的 Google Ads 支出与预算，标记预计超支、支出不足或受预算限制的广告系列。",
+      "source": "Compares month to date Google Ads spend against budget and flags campaigns on course to overspend or underspend. Use when asked \"am I on pace\", \"how is my budget pacing\", \"will I hit my budget this month\", or \"which campaigns are limited by budget\".",
+      "source_sha256": "75553f8f56c600996989f4b529291f05d21d717c0d1c71bd769f76f5aed1eb09",
+      "source_path": "skills/budget-pacing-check/SKILL.md",
+      "package_sha256": "5107464382a2a7393ec89a4595f9d0313b93bd2e0deb9e7e70ada1a0f396c970",
+      "source_package": "Ryze AI Marketing Skills-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4ba93a58b1e168f912b055f0b249f75b224bd6cdefc6d924bc3c88cc321f1eb": {
+      "description_zh": "依据 Google Ads 实时数据审查账号结构、转化追踪、支出效果及待处理建议，对问题排序，适用于账号审计和高 CPA 排查。",
+      "source": "Reviews a Google Ads account from its live data and ranks the problems found - account structure, conversion tracking, spend versus results, and open recommendations. Use when asked to \"audit my Google Ads\", \"check my Google Ads account\", \"why is my CPA high\", or \"is my account set up correctly\".",
+      "source_sha256": "c4ba93a58b1e168f912b055f0b249f75b224bd6cdefc6d924bc3c88cc321f1eb",
+      "source_path": "skills/google-ads-health-check/SKILL.md",
+      "package_sha256": "5107464382a2a7393ec89a4595f9d0313b93bd2e0deb9e7e70ada1a0f396c970",
+      "source_package": "Ryze AI Marketing Skills-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98e7dc59083d5c4b3afbb763729ccad63f635f0d26a0647830ed3c89cef8678c": {
+      "description_zh": "通过 Google Ads 关键词规划数据将种子词扩展为分组计划，提供月搜索量、竞争程度及每次点击成本，帮助选择广告关键词和竞价对象。",
+      "source": "Expands seed keywords into a grouped keyword plan with monthly search volume, competition and cost per click from Google Ads keyword planning data. Use when asked to \"build a keyword plan\", \"find keywords for a campaign\", \"how much search volume does this keyword have\", or \"what should I bid on\".",
+      "source_sha256": "98e7dc59083d5c4b3afbb763729ccad63f635f0d26a0647830ed3c89cef8678c",
+      "source_path": "skills/keyword-plan-builder/SKILL.md",
+      "package_sha256": "5107464382a2a7393ec89a4595f9d0313b93bd2e0deb9e7e70ada1a0f396c970",
+      "source_package": "Ryze AI Marketing Skills-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "140e9f665ebc0c92130a23f0d570a59993df6600925130541c47a7654688e09e": {
+      "description_zh": "将 Google Ads 优化建议分类为应用、忽略和讨论，并逐项解释原因，仅对用户批准的建议执行应用或忽略。",
+      "source": "Sorts Google Ads recommendations into apply, dismiss and discuss with a plain reason for each, then applies or dismisses only the ones the user approves. Use when asked to \"go through my Google recommendations\", \"should I apply this recommendation\", \"raise my optimization score\", or \"clean up recommendations\".",
+      "source_sha256": "140e9f665ebc0c92130a23f0d570a59993df6600925130541c47a7654688e09e",
+      "source_path": "skills/recommendations-triage/SKILL.md",
+      "package_sha256": "5107464382a2a7393ec89a4595f9d0313b93bd2e0deb9e7e70ada1a0f396c970",
+      "source_package": "Ryze AI Marketing Skills-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1705ad12484786a9e3a492f5147aaf1922a3f8632d06817a794930c27c6ec796": {
+      "description_zh": "找出花费但未转化的 Google Ads 搜索词，按主题分组并起草否定关键词清单，逐份获批准后才添加。",
+      "source": "Finds Google Ads search terms that spend money without converting, groups them by theme, and drafts negative keyword lists. Adds the negatives only after the user approves each list. Use when asked to \"find wasted spend\", \"clean up search terms\", \"build a negative keyword list\", or \"what am I paying for that does not convert\".",
+      "source_sha256": "1705ad12484786a9e3a492f5147aaf1922a3f8632d06817a794930c27c6ec796",
+      "source_path": "skills/search-terms-cleanup/SKILL.md",
+      "package_sha256": "5107464382a2a7393ec89a4595f9d0313b93bd2e0deb9e7e70ada1a0f396c970",
+      "source_package": "Ryze AI Marketing Skills-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f96129ad539b514313e4aace6465d031fb810f1bcef163f2dbcd6f465ef0791": {
+      "description_zh": "通过变异测试检验测试套件能否捕捉缺陷，查找虚假测试或代码损坏后仍通过的测试，并核验测试质量。",
+      "source": "Use when running mutation testing to prove a test suite actually catches bugs, or when asked to check for fake tests, verify test quality, or find tests that pass even when the code is broken.",
+      "source_sha256": "0f96129ad539b514313e4aace6465d031fb810f1bcef163f2dbcd6f465ef0791",
+      "source_path": "skills/sabotage/SKILL.md",
+      "package_sha256": "aec5ae8e92f2ec3a8fa79541b6e53f29205b5bdd7dc2d1c10f0a59fe45e7eaac",
+      "source_package": "sabotage-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bf0d16f2134afe4320ac8e9b8a56a8e56fc4717cc82353923a9786007c1cad8": {
+      "description_zh": "在 SageMaker 微调前检查数据集文件格式、质量及与所选模型和 SFT、DPO、RLVR 技术的 Schema 一致性，报告是否可用于训练或评估。",
+      "source": "Validates dataset formatting and quality for SageMaker model fine-tuning (SFT, DPO, or RLVR). Use when the user says \"is my dataset okay\", \"evaluate my data\", \"check my training data\", \"I have my own data\", or before starting any fine-tuning job. Detects file format, checks schema compliance against the selected model and technique, and reports whether the data is ready for training or evaluation.",
+      "source_sha256": "1bf0d16f2134afe4320ac8e9b8a56a8e56fc4717cc82353923a9786007c1cad8",
+      "source_path": "skills/dataset-evaluation/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8faca41651eda35691f9e97f09d33455c106d3c32bc1c6e1386afa09af2f1728": {
+      "description_zh": "生成在机器学习 Schema 之间转换数据集的代码，支持本地或 S3 的 OpenAI chat、SageMaker、HuggingFace 偏好、Bedrock Nova、VERL 及自定义 JSONL 格式，用于训练或评估的格式调整。",
+      "source": "Generates code that transforms datasets between ML schemas for model training or evaluation. Use when the user says \"transform\", \"convert\", \"reformat\", \"change the format\", or when a dataset's schema needs to change to match the target format — always use this skill for format changes rather than writing inline transformation code. Supports OpenAI chat, SageMaker SFT/DPO/RLVR/RLAIF, HuggingFace preference, Bedrock Nova, VERL, and custom JSONL formats from local files or S3.",
+      "source_sha256": "8faca41651eda35691f9e97f09d33455c106d3c32bc1c6e1386afa09af2f1728",
+      "source_path": "skills/dataset-transformation/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "921d9338e5867823c6402e5e7e9ab70efa61f6e3f47043e215943f981cbfe976": {
+      "description_zh": "初始化或恢复 SageMaker 项目目录与产物组织，关联 PLAN.md 并确定项目名称，建立 specs、scripts、notebooks、manifests 和 agent_memory 结构。",
+      "source": "Manages project directory setup and artifact organization. Use when starting a new project, resuming an existing one, or when a PLAN.md needs to be associated with a project directory. Creates the project folder structure (specs/, scripts/, notebooks/, manifests/, agent_memory/) and resolves project naming.",
+      "source_sha256": "921d9338e5867823c6402e5e7e9ab70efa61f6e3f47043e215943f981cbfe976",
+      "source_path": "skills/directory-management/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c9f9120688f5197e76008cee66da611ab1cc9befbfbc358dfe6e4f66976c1d4": {
+      "description_zh": "在已选基础模型的前提下，为用户场景选择 SFT、DPO、RLVR 或 RLAIF 微调技术，并对照该模型可用训练配方进行校验。",
+      "source": "Selects a fine-tuning technique (SFT, DPO, RLVR, or RLAIF) for the user's use case and validates it against the selected model's available recipes. Use when the user has decided to finetune and needs to choose a technique, or when the technique needs to be validated against a model. Requires a base model to already be selected (via model-selection skill).",
+      "source_sha256": "6c9f9120688f5197e76008cee66da611ab1cc9befbfbc358dfe6e4f66976c1d4",
+      "source_path": "skills/finetuning-technique/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2939d73f5952f445a1e6bdba44ab9cf6a6e202787136c78746f898594448e49a": {
+      "description_zh": "生成使用 SageMaker 无服务器训练任务微调基础模型的代码，支持 SFT、DPO、RLVR 和 RLAIF，包括 RLVR Lambda 奖励函数与 RLAIF 自定义提示。",
+      "source": "Generates code that fine-tunes a base model using SageMaker serverless training jobs. Use when the user says \"start training\", \"fine-tune my model\", \"I'm ready to train\", or when the plan reaches the finetuning step. Supports SFT, DPO, RLVR, and RLAIF trainers, including RLVR Lambda reward function and RLAIF custom prompt creation.",
+      "source_sha256": "2939d73f5952f445a1e6bdba44ab9cf6a6e202787136c78746f898594448e49a",
+      "source_path": "skills/finetuning/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9281ea570ef3baedcba38c64dbbd9695f697e934905a0e99a28f6de5c4772f33": {
+      "description_zh": "只读诊断 HyperPod EKS 或 Slurm 集群整体问题，涵盖创建部署失败、CloudFormation、EFA 健康检查、生命周期脚本、容量、访问、节点替换、维护后回滚及自动扩容冲突，提供整改建议和 validate 前置校验。",
+      "source": "Diagnose and remediate cluster-wide HyperPod (EKS or Slurm) problems — creation / deployment failures (CloudFormation, EFA health check, lifecycle scripts, capacity), EKS access, node replacement, CloudFormation nested-stack errors, post-maintenance rollback state, dangling nodes, autoscaler conflicts. Includes `--validate` pre-flight. Read-only.",
+      "source_sha256": "9281ea570ef3baedcba38c64dbbd9695f697e934905a0e99a28f6de5c4772f33",
+      "source_path": "skills/hyperpod-cluster-debugger/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bea4d1dd31f45995b9071de03e0ab6f242e4e41de3e4637ebce293bf915796d9": {
+      "description_zh": "从 HyperPod EKS 或 Slurm 多节点收集诊断日志和配置，生成完整问题报告与状态快照，供节点故障、性能问题排查及 AWS Support 工单准备使用。",
+      "source": "Generate comprehensive issue reports from HyperPod clusters (EKS and Slurm) by collecting diagnostic logs and configurations for troubleshooting and AWS Support cases. Use when users need to collect diagnostics from HyperPod cluster nodes, generate issue reports for AWS Support, investigate node failures or performance problems, document cluster state, or create diagnostic snapshots. Triggers on requests involving issue reports, diagnostic collection, support case preparation, or cluster troubleshooting that requires gathering logs and system information from multiple nodes.",
+      "source_sha256": "bea4d1dd31f45995b9071de03e0ab6f242e4e41de3e4637ebce293bf915796d9",
+      "source_path": "skills/hyperpod-issue-report/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad92ab1ff9568c6b36e6fb9f477e336e4c2faeb1591be3543185c15fc28e8f7c": {
+      "description_zh": "诊断 HyperPod GPU 集群的 NCCL 和训练 Pod 故障，包括训练卡住、集合操作超时、EFA、libfabric、rendezvous、共享内存、版本不一致、容器或 GPU 内存不足、Pod 状态、DNS 和网络策略；单节点硬件与集群创建问题转用专用技能。",
+      "source": "Diagnose NCCL failures and adjacent training-pod failures on HyperPod GPU clusters (EKS or Slurm) — training hangs, AllReduce / collective-op timeouts, EFA or libfabric errors, rendezvous failures, EFA TCP fallback, /dev/shm or memlock issues, NCCL version mismatch across pods, container OOM / exit-137 / OOMKilled, GPU OOM (CUDA out of memory), CrashLoopBackOff / Pending pods, MASTER_ADDR DNS, NetworkPolicy blocking. Not for single-node hardware faults (→ hyperpod-node-debugger § G) or cluster-creation EFA / SSM failures (→ hyperpod-cluster-debugger § A / § F).",
+      "source_sha256": "ad92ab1ff9568c6b36e6fb9f477e336e4c2faeb1591be3543185c15fc28e8f7c",
+      "source_path": "skills/hyperpod-nccl/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9829cbe494523cd0eb5ed477eb2a5c58c4be7192645ebbbdef3fd24122644ed": {
+      "description_zh": "只读诊断 HyperPod 单节点不健康、无响应、卡住或需替换的问题，涵盖 EFA、GPU 硬件、Slurm、磁盘内存压力、生命周期脚本、SSM、容器运行时、内核与 Pod 网络，并提供整改建议；集群配置、NCCL 和 MFU 使用其他技能。",
+      "source": "Diagnose and remediate per-node issues on a HyperPod cluster (EKS or Slurm) — a specific node is unhealthy, unresponsive, stuck, or needs replacing. Covers on-node EFA, GPU / accelerator hardware (XID, ECC, NVLink, row-remap, DCGM), Slurm node down/drained, disk and memory pressure, per-node lifecycle-script failures, SSM agent, container runtime, kernel panics, pod networking. Read-only. Not for cluster-wide provisioning (→ hyperpod-cluster-debugger), NCCL (→ hyperpod-nccl), or MFU (→ hyperpod-mfu-debugger).",
+      "source_sha256": "d9829cbe494523cd0eb5ed477eb2a5c58c4be7192645ebbbdef3fd24122644ed",
+      "source_path": "skills/hyperpod-node-debugger/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b4e77562aa8264525688c717c06d9f213eeb07f4128d9db07d2ae8e01a06af0": {
+      "description_zh": "只读诊断 HyperPod 节点间 NCCL 带宽不均与文件系统吞吐低，汇总 Xid、ECC、NVLink、EFA 和 FSx 饱和等主机信号，并将整改转交节点、NCCL、版本或报告技能。",
+      "source": "Diagnose performance issues on Amazon SageMaker HyperPod clusters — uneven NCCL bandwidth across nodes and poor filesystem throughput. Read-only. Surfaces host-side signals (Xid, ECC, NVLink, EFA reachability, FSx saturation) and routes to the appropriate sibling skill (hyperpod-node-debugger, hyperpod-nccl, hyperpod-version-checker, hyperpod-issue-report) for any remediation. Triggers on uneven NCCL across nodes, straggler node, FSx slow, checkpoint slow, dataloader slow, filesystem bottleneck, FSx throughput, cross-AZ latency, topology mismatch.",
+      "source_sha256": "6b4e77562aa8264525688c717c06d9f213eeb07f4128d9db07d2ae8e01a06af0",
+      "source_path": "skills/hyperpod-performance-debugger/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fe2201e0e4bf955617185d911a28915ff2ed988025df42f7aff878cdab22e6a": {
+      "description_zh": "仅诊断 HyperPod Slurm 调度器与节点守护进程问题，检查 down、drain、异常重启、slurmd 停止、任务 Pending 或 Completing、GPU 数量错误、控制器无响应以及自动修复恢复未触发等情况。",
+      "source": "Diagnostic-only skill for Slurm scheduler and node-daemon issues on Amazon SageMaker HyperPod Slurm clusters. Scope mirrors the HyperPod troubleshooting guide. Invoke when the user reports a Slurm node stuck in down/drain, \"Node unexpectedly rebooted\" after auto-repair, slurmd not running, jobs stuck PENDING with REASON=Resources while sinfo shows idle nodes, jobs stuck COMPLETING after node replacement, GRES/GPU counts wrong, scontrol ping failing, slurmctld unresponsive, an Action:Reboot/Replace request that did not trigger HyperPod auto-recovery, or auto-resume not restarting a job. Also triggers on \"drain before reboot\", \"diagnose a Slurm node\", \"investigate stuck jobs.",
+      "source_sha256": "9fe2201e0e4bf955617185d911a28915ff2ed988025df42f7aff878cdab22e6a",
+      "source_path": "skills/hyperpod-slurm-debugger/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64b477d0b2d809f7f9351160740b5505de4f14b52f662cbe5d060bc747b682a8": {
+      "description_zh": "通过 AWS Systems Manager 在 HyperPod 节点远程执行命令和传输文件，用于诊断、安装、读取和上传下载；原说明称其为节点访问主接口，不提供直接 SSH，其他节点级技能依赖此接口。",
+      "source": "Remote command execution and file transfer on SageMaker HyperPod cluster nodes via AWS Systems Manager (SSM). This is the primary interface for accessing HyperPod nodes — direct SSH is not available. Use when any skill, workflow, or user request needs to execute commands on cluster nodes, upload files to nodes, read/download files from nodes, run diagnostics, install packages, or perform any operation requiring shell access to HyperPod instances. Other HyperPod skills depend on this skill for all node-level operations.",
+      "source_sha256": "64b477d0b2d809f7f9351160740b5505de4f14b52f662cbe5d060bc747b682a8",
+      "source_path": "skills/hyperpod-ssm/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "789b4a1770fa294b184c4a6fa71f8d81f7456d415b359e7fa3029df99c02cbc8": {
+      "description_zh": "检查和比较 HyperPod 各节点的 NVIDIA、CUDA、cuDNN、NCCL、EFA、OFI NCCL、GDRCopy、MPI、Neuron、Python 与 PyTorch 版本，验证兼容性、发现节点差异并支持升级规划与配置记录。",
+      "source": "Check and compare software component versions on SageMaker HyperPod cluster nodes - NVIDIA drivers, CUDA toolkit, cuDNN, NCCL, EFA, AWS OFI NCCL, GDRCopy, MPI, Neuron SDK (Trainium/Inferentia), Python, and PyTorch. Use when checking component versions, verifying CUDA/driver compatibility, detecting version mismatches across nodes, planning upgrades, documenting cluster configuration, or troubleshooting version-related issues on HyperPod. Triggers on requests about versions, compatibility, component checks, or upgrade planning for HyperPod clusters.",
+      "source_sha256": "789b4a1770fa294b184c4a6fa71f8d81f7456d415b359e7fa3029df99c02cbc8",
+      "source_path": "skills/hyperpod-version-checker/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89831586eaf4ec0dc4182ad1899ca9d225fd7409ff3589f12b0cc2a0b1374b2d": {
+      "description_zh": "生成将 SageMaker 无服务器定制的微调模型部署到 SageMaker 端点或 Bedrock 的代码，区分 Nova 与开源模型部署路径并配置端点。",
+      "source": "Generates code that deploys fine-tuned models from SageMaker Serverless Model Customization to SageMaker endpoints or Bedrock. Use when the user says \"deploy my model\", \"create an endpoint\", \"make it available\", or asks about deployment options. Identifies the correct deployment pathway (Nova vs OSS), generates deployment code, and handles endpoint configuration.",
+      "source_sha256": "89831586eaf4ec0dc4182ad1899ca9d225fd7409ff3589f12b0cc2a0b1374b2d",
+      "source_path": "skills/model-deployment/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6166bcd008f6713137638eb936aed395fb2e55fa297a09255ec8f42393b699b3": {
+      "description_zh": "生成评估 SageMaker 模型的 Python 代码，支持 LLM-as-Judge 和自定义评分器，用于基准测试、性能检查及模型比较。",
+      "source": "Generates python code that evaluates SageMaker models. Supports two evaluation types: LLM-as-Judge and Custom Scorer. Use when the user says \"evaluate my model\", \"run a benchmark\", \"test model performance\", \"how did my model perform\", \"compare models\", or other similar requests.",
+      "source_sha256": "6166bcd008f6713137638eb936aed395fb2e55fa297a09255ec8f42393b699b3",
+      "source_path": "skills/model-evaluation/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0790994e5278afd791e3decd33e8a725646e0209d07afc580ae952831a86b9cf": {
+      "description_zh": "查询 SageMaker Hub 为用户选择或更换基础模型，解析准确 Hub 模型 ID，展示可用模型、基准和许可证并确认选择；即使用户给出已知模型名称仍需核对。",
+      "source": "Selects a base model for the user's use case by querying SageMaker Hub. Use when the user asks which model to use, wants to select or change their base model, mentions a model name or family (e.g., \"Llama\", \"Mistral\", \"Nova\"), or wants to evaluate a base model — always activate even for known model names because the exact Hub model ID must be resolved. Queries available models, presents benchmarks and licenses, and confirms selection.",
+      "source_sha256": "0790994e5278afd791e3decd33e8a725646e0209d07afc580ae952831a86b9cf",
+      "source_path": "skills/model-selection/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20fdf99d9211a3150a081d0ece95bb5f3703dc1015a3534f62b9c192058c571a": {
+      "description_zh": "了解用户模型定制目标并生成结构化步骤计划，涵盖微调、训练、构建、数据审查与方法建议；原说明要求配合相关技能共同使用，也支持恢复、继续或修改现有计划。",
+      "source": "Discovers user intent and generates a structured, step-by-step plan for model customization workflows. This skill must always be activated alongside any other skill when the user's request relates to model customization — including fine-tuning, training, building, customizing, reviewing data, or getting advice on approach, regardless of domain. Do not skip this skill even if the immediate ask is narrow (e.g., reviewing data format or a single workflow step), because planning discovers the full scope of work needed. Also activate when the user wants to resume, continue, or modify an existing plan.",
+      "source_sha256": "20fdf99d9211a3150a081d0ece95bb5f3703dc1015a3534f62b9c192058c571a",
+      "source_path": "skills/planning/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76df436eec2e4f87002cfbc68bbf495579d6a0821cb686ac71656a1f98480cb2": {
+      "description_zh": "检查 SageMaker AI 操作环境中的 SDK 版本、AWS 区域和执行角色，适用于初始配置及 SageMaker、Bedrock 训练、评估或部署计划的前置核验。",
+      "source": "Validates the user's environment for SageMaker AI operations — checks SDK version, AWS region, and execution role. Use when the user says \"set up\", \"getting started\", \"check my environment\", \"configure SDK\", or as the first step in any plan involving SageMaker/Bedrock training, evaluation, or deployment.",
+      "source_sha256": "76df436eec2e4f87002cfbc68bbf495579d6a0821cb686ac71656a1f98480cb2",
+      "source_path": "skills/sdk-getting-started/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef8fdcc23551cb80ba1effea442bdd9c3f352a130c570cad5ac1896b5c5d4eca": {
+      "description_zh": "按 AWS Responsible AI Lens 建立可复用模型定制用例规格，定义业务问题、相关方、主要用户和可衡量成功条件，记录 LLM-as-Judge 评判原则；默认作为计划首步，用户拒绝或已有可复用规格时跳过。",
+      "source": "Creates a reusable use case specification file that defines the business problem, stakeholders, and measurable success criteria for model customization, as recommended by the AWS Responsible AI Lens. Use as the default first step in any model customization plan. Skip only if the user explicitly declines or already has a use case specification to reuse. Captures problem statement, primary users, and LLM-as-a-Judge success tenets.",
+      "source_sha256": "ef8fdcc23551cb80ba1effea442bdd9c3f352a130c570cad5ac1896b5c5d4eca",
+      "source_path": "skills/use-case-specification/SKILL.md",
+      "package_sha256": "1aa6b7f6b1801f9dbedae0f0bfa0937949b2b2935fad9968bcd8f717d4a15739",
+      "source_package": "sagemaker-ai-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f264372dbb7048da2aab2ad8b328f710fde289fe069d4711ad1aa85fcccf23ba": {
+      "description_zh": "开发、构建、调试、部署或发布 SailfishOS 应用，涵盖 Silica QML、sailfishapp、sfdk、RPM、Harbour 提交、主题、封面动作、下拉菜单、C++ 集成、平台 API、项目规格及模拟器。",
+      "source": "SailfishOS app development expert. Use this skill whenever the user is developing, building, debugging, deploying, or publishing a SailfishOS application — including questions about Silica QML components, the sailfishapp library, sfdk CLI commands, RPM packaging, Harbour store submission, Theme design properties, cover actions, pulley menus, C++/QML integration, or platform APIs (Notifications, DBus, Contacts). Also activate for questions about app architecture, the .pro file, .spec file, naming conventions, or the emulator. Trigger on any mention of: SailfishOS, Sailfish, Silica, sfdk, Harbour, ApplicationWindow, PullDownMenu, PageStack, Cover, or sfdk emulator.",
+      "source_sha256": "f264372dbb7048da2aab2ad8b328f710fde289fe069d4711ad1aa85fcccf23ba",
+      "source_path": "skills/sailfishos-dev/SKILL.md",
+      "package_sha256": "00b2260d1421f9bdfec8d9967ca325d9f8b98c6720f2c308dfd830276618b308",
+      "source_package": "sailfishos-dev-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22750379e763c20cd6adf99e5df21a8ea5458e9ceb7dd81ca059a135ac924317": {
+      "description_zh": "为 Salesforce 已有客户汇总全景简报，结合 CRM 状态、关键联系人、近期邮件、文档和内部 Slack；客户不在 CRM 时改用潜客研究技能。",
+      "source": "Build a 360-degree brief on a company already in Salesforce: CRM state, key contacts, recent email, documents and internal Slack. Use when asked to tell about, catch up on, or give the full picture on an existing account. Not in CRM: research-prospect.",
+      "source_sha256": "22750379e763c20cd6adf99e5df21a8ea5458e9ceb7dd81ca059a135ac924317",
+      "source_path": "skills/account-context/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71ce678dca9a0e3a93ecff71a117b452592efa886fc2f30fde74abdb008b7cd1": {
+      "description_zh": "依据 Salesforce 理想客户匹配、互动、活动、联系人和商机数据，将客户清单分为行动优先级，支持评分、覆盖安排、激活、资格确认或降低优先级。",
+      "source": "Rank an account list or full book into action tiers from Salesforce ICP fit, engagement, activity, contact, and opportunity data. Use to score accounts, prioritize coverage, decide where to focus, or identify accounts to activate, qualify, or deprioritize.",
+      "source_sha256": "71ce678dca9a0e3a93ecff71a117b452592efa886fc2f30fde74abdb008b7cd1",
+      "source_path": "skills/account-tiering/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd0225ac05ecd692f72284b36321a7b71077e6e917db98c7fdc5384d6c53aebf": {
+      "description_zh": "从 Salesforce Event 数据展示本地时间、主题、地点及关联联系人、客户或商机的日程，适用于当天、近期或历史安排；综合晨间简报使用 daily-briefing。",
+      "source": "Show a schedule from Salesforce Event data with local times, subjects, locations, and linked contacts, accounts or deals. Use to review today's calendar, upcoming meetings, or a past or future schedule; for a broader morning rundown, use daily-briefing.",
+      "source_sha256": "dd0225ac05ecd692f72284b36321a7b71077e6e917db98c7fdc5384d6c53aebf",
+      "source_path": "skills/calendar-events/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1b10efd67a5c7fe9015a76396bb6eddb27d7044026c4527e734a492f7f29585": {
+      "description_zh": "结合会议转录及 Salesforce 客户与商机历史，起草客户跟进邮件和内部回顾，记录决定、承诺、异议、未决问题、后续行动及建议 CRM 更新。",
+      "source": "Create a customer follow-up email and internal recap from a meeting transcript plus Salesforce account and opportunity history. Use after a customer call to capture decisions, commitments, objections, open questions, next steps, and proposed CRM updates.",
+      "source_sha256": "e1b10efd67a5c7fe9015a76396bb6eddb27d7044026c4527e734a492f7f29585",
+      "source_path": "skills/call-follow-up/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "612499c313bbab9a7340389caacbb1e6eaccdf92d4b2a8a036b856efe4baa467": {
+      "description_zh": "结合 Salesforce 会议、客户、商机、联系人、活动以及邮件、文档和 Slack 生成会前简报，梳理参会者、商机历史、未决事项和访谈需求；销售代表一对一使用 rep-context。",
+      "source": "Build a call brief from Salesforce meeting, account, opportunity, contact, and activity data plus email, documents, and Slack. Use before a customer meeting to understand attendees, deal history, open threads, and discovery needs; rep one-on-one: rep-context.",
+      "source_sha256": "612499c313bbab9a7340389caacbb1e6eaccdf92d4b2a8a036b856efe4baa467",
+      "source_path": "skills/call-prep/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "faf87e195b1599498bd3ba7f303c8e873878540ad77da47a2dbb7d2660a6f5f7": {
+      "description_zh": "依据 Salesforce 商机与转录、邮件、文档和 Slack，建立面向客户的商业论证和带日期的双方行动计划，说明购买理由、时机与收益，并规划签约路径、检验成交日期。",
+      "source": "Build a customer-facing business case and dated mutual action plan from Salesforce opportunity data plus transcripts, email, documents, and Slack. Use to frame why buy and why now, quantify return, map the path to signature, or test the close date.",
+      "source_sha256": "faf87e195b1599498bd3ba7f303c8e873878540ad77da47a2dbb7d2660a6f5f7",
+      "source_path": "skills/close-plan/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a79fac09ed7cdfaf916956879c7e0b473762e6deee5225e066599588c7c26c3": {
+      "description_zh": "结合 Salesforce 客户、续约、工单、任务与健康数据及邮件、日历、文档和 Slack 评估客户风险、互动及价值趋势，用于经营回顾；潜客会前准备另用 call-prep。",
+      "source": "Assess customer health from Salesforce account, renewal, case, task, and health data plus email, calendar, documents, and Slack. Use to judge risk, explain engagement or value trends, or prepare a business review; prospect meeting prep: call-prep.",
+      "source_sha256": "8a79fac09ed7cdfaf916956879c7e0b473762e6deee5225e066599588c7c26c3",
+      "source_path": "skills/customer-health/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbe682c2aeb26f6510e494aa1559648d64664e493887e7415bf6774fbfd7eaa7": {
+      "description_zh": "从 Salesforce 范围内客户的通话转录和邮件汇总可归属的客户原话与主题，用于功能反馈、异议、竞争对手及新问题分析、跨客户比较和重复主题识别。",
+      "source": "Compile attributable customer quotes and themes from call transcripts and email threads across Salesforce-scoped accounts. Use to understand feedback on a feature, objection, competitor, or emerging issue, compare accounts, or surface recurring themes.",
+      "source_sha256": "cbe682c2aeb26f6510e494aa1559648d64664e493887e7415bf6774fbfd7eaa7",
+      "source_path": "skills/customer-voice/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a09c3048eaa74ff43d96a5a478f1efe010e6b31d026668b54ecea21e865b6dcb": {
+      "description_zh": "结合 Salesforce 日程、近期或逾期商机、客户背景、承诺和未读客户邮件生成当日销售简报，安排会议、管道和收件箱优先级；仅查日程使用 calendar-events。",
+      "source": "Create today's sales briefing from Salesforce events, near-term and overdue deals, account context, commitments, and unread customer email. Use for a morning rundown combining meetings, pipeline, and inbox priorities; schedule-only requests: calendar-events.",
+      "source_sha256": "a09c3048eaa74ff43d96a5a478f1efe010e6b31d026668b54ecea21e865b6dcb",
+      "source_path": "skills/daily-briefing/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b81c416e3928d5ca2eab5cf951c98ab7be5b9b3b4c11455ef84932f45976e00": {
+      "description_zh": "结合 Salesforce 商机阶段、相关方、活动、资格及风险数据与邮件、文档和 Slack，梳理推进或成交路径，定位停滞原因、阻碍及负责人并检验成交日期可信度。",
+      "source": "Map an opportunity's path to advance or close from Salesforce stage, stakeholder, activity, qualification, and risk data plus email, documents, and Slack. Use to diagnose a stuck deal, identify blockers and owners, or test whether its close date is credible.",
+      "source_sha256": "1b81c416e3928d5ca2eab5cf951c98ab7be5b9b3b4c11455ef84932f45976e00",
+      "source_path": "skills/deal-advance-gap/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "588578c1f6aadcb753b1e6b94ad6a51bc30934ed1c14decba0d9fb76dce13d69": {
+      "description_zh": "依据 Salesforce 字段、联系人、活动及邮件、文档和 Slack 对单个商机健康评分，提供有证据的风险以判断能否成交；阶段退出缺口及推进顺序改用 deal-advance-gap。",
+      "source": "Build a scored deal-health assessment from Salesforce fields, contacts and activity plus email, documents and Slack, with evidence-backed risks. Use to judge whether one deal will close; for stage-exit gaps and a sequenced path, use deal-advance-gap.",
+      "source_sha256": "588578c1f6aadcb753b1e6b94ad6a51bc30934ed1c14decba0d9fb76dce13d69",
+      "source_path": "skills/deal-review/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9c62796fc02a4128b062e73d0b3b32608fa667d278b077f8e0ba4d9e1a29f76": {
+      "description_zh": "结合 Salesforce 成交日期、活动、后续行动和预测字段及邮件、文档和 Slack 汇总风险信号，识别沉寂、逾期、成交时间、续约窗口和竞争提及等需关注事项。",
+      "source": "Build a deal-risk digest from Salesforce close dates, activity, next steps and forecast fields plus email, documents and Slack. Use to find quiet or overdue deals, close-date danger, renewal windows, competitor mentions or other risks needing attention.",
+      "source_sha256": "f9c62796fc02a4128b062e73d0b3b32608fa667d278b077f8e0ba4d9e1a29f76",
+      "source_path": "skills/deal-signals/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e541ef6bc925152559a3549e19215a095f8c7b2109620247f638fcea1a56bc8": {
+      "description_zh": "利用 Salesforce 销售管道、预测与可用销售目标模拟商机延期、缩减或流失的影响，计算缺口和替代来源，用于下行情景、补位计划和目标可达性判断。",
+      "source": "Model the impact of a deal slipping, shrinking or being lost from Salesforce pipeline and forecast data plus an available quota, including the gap and substitutes. Use to test downside scenarios, plan a backfill or judge whether the number still holds.",
+      "source_sha256": "8e541ef6bc925152559a3549e19215a095f8c7b2109620247f638fcea1a56bc8",
+      "source_path": "skills/deal-slip-scenario/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4325b0da0a419fc79e0bf537d2a29384cd666234f9bd44b79f6d8eacca5c4d27": {
+      "description_zh": "结合 Salesforce 联系人、客户、商机、活动及已有邮件、文档和 Slack，为单个潜客或客户起草个性化初次联系、跟进或重新激活邮件；批量收件箱回复使用 inbox-sweep。",
+      "source": "Create a personalized email draft from Salesforce contact, account, opportunity and activity data plus prior email, documents and Slack. Use when starting, following up with or re-engaging one prospect or customer. For batch inbox replies, use inbox-sweep.",
+      "source_sha256": "4325b0da0a419fc79e0bf537d2a29384cd666234f9bd44b79f6d8eacca5c4d27",
+      "source_path": "skills/draft-outreach/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ea971e8ace68980ecc6484e2d7483b714f9cb2b6fb8c7e913b4875085425fa6": {
+      "description_zh": "依据客户联系人、已购产品、商机和近期邮件、文档及 Slack，对增购机会排序，识别有证据的业务空白、升级销售路径及可联系的相邻团队或产品。",
+      "source": "Identify ranked expansion plays for one customer from Salesforce contacts, owned products and opportunities plus recent email, documents and Slack. Use to find evidence-backed whitespace, upsell paths or adjacent teams and products ready for outreach.",
+      "source_sha256": "8ea971e8ace68980ecc6484e2d7483b714f9cb2b6fb8c7e913b4875085425fa6",
+      "source_path": "skills/expansion-whitespace/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "678b7fc7395b80bc8e39d0405abde060be3217b5a569ec37c7c3795aea1ef3df": {
+      "description_zh": "优先检索最新权威内部文档、Slack、邮件和 Salesforce，简洁回答政策、审批人、演示材料、安全资料、历史先例及相关经验同事等内部问题，并提供来源。",
+      "source": "Find a concise answer with authoritative sources from internal documents, Slack, email and Salesforce, prioritizing the newest canonical material. Use when locating a policy, approver, deck, security asset, prior precedent or teammate with relevant experience.",
+      "source_sha256": "678b7fc7395b80bc8e39d0405abde060be3217b5a569ec37c7c3795aea1ef3df",
+      "source_path": "skills/find-internal-answer/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79fd2fe4d092d486abbf47817a02e494a0ec86427730db64f370bffa53ce6fa3": {
+      "description_zh": "依据 Salesforce 商机汇总、重点商机样本及字段历史生成预测会议简报，解释预测金额、分类变化、风险和资源请求；综合销售管道与辅导使用 team-pipeline。",
+      "source": "Build a forecast-call brief from Salesforce opportunity aggregates, top-deal samples and field history, covering the number, bucket movement, risks and asks. Use to explain a rep or team's forecast; for a broader pipeline and coaching view, use team-pipeline.",
+      "source_sha256": "79fd2fe4d092d486abbf47817a02e494a0ec86427730db64f370bffa53ce6fa3",
+      "source_path": "skills/forecast-narrative/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16ac76e31f4c647e080fb58cb3df5cb5ddac845ecefca5a59d49365b1a992990": {
+      "description_zh": "依据当前商机、赢单失单历史、客户证据和已批准内部文档准备有依据的异议回应，处理价格、时机、信任或竞争质疑，形成话术或书面回复。",
+      "source": "Build a grounded response to a customer objection from the current deal, win-loss history, customer evidence and approved internal documents. Use when interpreting pricing, timing, trust or competitive pushback and preparing a talk track or written reply.",
+      "source_sha256": "16ac76e31f4c647e080fb58cb3df5cb5ddac845ecefca5a59d49365b1a992990",
+      "source_path": "skills/handle-objection/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fda7faf392d6ed5fc852f2156e762a07f7b7bd85eb5da468c00e28226b0e83f": {
+      "description_zh": "结合未读邮件线程、已发送邮件风格及 Salesforce 客户商机背景，建立按优先级排序的回复队列并起草多封客户邮件。",
+      "source": "Create a prioritized response queue and email drafts from unread threads, sent-mail voice patterns and Salesforce account and opportunity context. Use when sweeping or triaging an inbox, finding messages needing replies or drafting several customer responses.",
+      "source_sha256": "9fda7faf392d6ed5fc852f2156e762a07f7b7bd85eb5da468c00e28226b0e83f",
+      "source_path": "skills/inbox-sweep/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acb643be78608b89027f01dd88ed48927370a8a6bddd9d1bd93582ad85ea2c6e": {
+      "description_zh": "根据 Salesforce 线索与客户数据、研究及邮件互动，为入站线索提出优先级和分派建议，判断理想客户匹配、意向、负责人及回复速度和后续步骤。",
+      "source": "Produce an inbound-lead priority and routing recommendation from Salesforce Lead and Account data, research and email engagement. Use when qualifying a new lead, assessing ICP fit and intent, choosing an owner or deciding the response speed and next step.",
+      "source_sha256": "acb643be78608b89027f01dd88ed48927370a8a6bddd9d1bd93582ad85ea2c6e",
+      "source_path": "skills/lead-triage/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e591709e4252909c3e843dbfdd8a4ad20ea9e7cd08f3989ba0eeaf16ec90d88": {
+      "description_zh": "通过 Salesforce 阶段汇总、商机样本和历史已成交数据评估单个销售代表当前管道，检查覆盖、数据整洁度和风险；时间变化使用 deal-signals。",
+      "source": "Build one rep's current pipeline assessment from Salesforce stage aggregates, deal samples and closed-deal history, covering coverage, hygiene and risks. Use when reviewing pipeline health and stage distribution; for changes over time, use deal-signals.",
+      "source_sha256": "9e591709e4252909c3e843dbfdd8a4ad20ea9e7cd08f3989ba0eeaf16ec90d88",
+      "source_path": "skills/pipeline-review/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01cc21f8c8460cfec6016bab57bbeffa40a6be8d67f38813c6b791042cd05f6a": {
+      "description_zh": "从单个 Salesforce 客户、联系人、线索或商机的已关闭任务及事件建立带日期、人员和备注的互动时间线；新增记录使用 log-activity。",
+      "source": "Build an interaction timeline from closed Salesforce Tasks and Events on one Account, Contact, Lead or Opportunity, with dates, people and notes. Use when inspecting what happened on a record or reviewing its activity. To create an entry, use log-activity.",
+      "source_sha256": "01cc21f8c8460cfec6016bab57bbeffa40a6be8d67f38813c6b791042cd05f6a",
+      "source_path": "skills/query-activity-history/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6093739cadec64ca98fe1872457a84629c57ac3464b3e3c6e4cac5b80a012493": {
+      "description_zh": "结合 Salesforce 商机、邮件、文档和 Slack 生成续约风险简报，覆盖时间、活动、价格提升及后续动作；整体客户健康和季度回顾使用 customer-health。",
+      "source": "Build a renewal risk brief from Salesforce opportunities, email, documents and Slack, covering timing, activity, uplift and next moves. Use to scan upcoming renewals or prepare one renewal motion; for overall account health or QBR prep, use customer-health.",
+      "source_sha256": "6093739cadec64ca98fe1872457a84629c57ac3464b3e3c6e4cac5b80a012493",
+      "source_path": "skills/renewal-radar/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13fc9ac7edd30c2e39d8f2525e94fcfa2a57fd6cf8e67ea3058e5ddd97e6c919": {
+      "description_zh": "为经理与内部销售代表的一对一会议整理其管道、近期活动、当前工作和需要帮助的方面，并提出问题；不用于客户联系人。",
+      "source": "Catch a manager up on one of their sales reps before a 1:1: the rep's pipeline, recent activity, what they are working on, and where they need help, with suggested questions. Use when the person named is an internal rep, not a customer contact.",
+      "source_sha256": "13fc9ac7edd30c2e39d8f2525e94fcfa2a57fd6cf8e67ea3058e5ddd97e6c919",
+      "source_path": "skills/rep-context/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a322d02a8aa0582e306b80055ad8b5fb1a12cd08689f9bd3a0ec726d9857dd8": {
+      "description_zh": "通过网络研究和 Salesforce 为新潜客公司或人员生成简报，涵盖公司事实、近期信号、潜在优先事项、联系人及理想客户匹配度；已有客户使用 account-context。",
+      "source": "Build a prospect brief from web research and Salesforce, covering company facts, recent signals, likely priorities, contacts and ICP fit. Use to research a net-new company or person before outreach. Existing accounts: account-context.",
+      "source_sha256": "7a322d02a8aa0582e306b80055ad8b5fb1a12cd08689f9bd3a0ec726d9857dd8",
+      "source_path": "skills/research-prospect/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb7de98f6cfe5a3eb604780534de88f1f5c0b1c5f2216244257ba59cd7d67d28": {
+      "description_zh": "只读审查 Salesforce 未关闭商机的缺失字段、陈旧日期、薄弱后续步骤、阶段不符及仅单一联系人等问题，生成排序整改建议，不修改记录。",
+      "source": "Audit open Salesforce opportunities for missing fields, stale dates, weak next steps, stage mismatches and single-threading, producing prioritized fixes. Use to check pipeline data quality, find incomplete deals or plan CRM cleanup without changing records.",
+      "source_sha256": "fb7de98f6cfe5a3eb604780534de88f1f5c0b1c5f2216244257ba59cd7d67d28",
+      "source_path": "skills/salesforce-hygiene-check/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68b2e5b2e7942842ba131c0714877dd4fa3ec8beee3f356e54845937fa9c2b59": {
+      "description_zh": "结合 Salesforce 联系人角色、邮件、日历、通话和 Slack 绘制相关方图，展示影响力、立场、缺口和接触路径，支持决策者识别与引荐规划。",
+      "source": "Build a stakeholder map from Salesforce contacts and roles plus email, calendar, calls and Slack, showing influence, stance, gaps and access paths. Use to identify decision makers, assess single-threading or plan introductions. Account brief: account-context.",
+      "source_sha256": "68b2e5b2e7942842ba131c0714877dd4fa3ec8beee3f356e54845937fa9c2b59",
+      "source_path": "skills/stakeholder-map/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "330b9d20820b12383b9b4b57b61a0854c84bedc4109489ddc58dca29cb5d0918": {
+      "description_zh": "依据 Salesforce 用户和商机数据，按销售代表展示团队已成交收入、预测、关键变动商机及辅导需求，用于管道会议；单人管道评估使用 pipeline-review。",
+      "source": "Build a team pipeline brief from Salesforce users and opportunities, showing closed revenue, forecast, swing deals and coaching needs by rep. Use to review a manager's team, prepare a pipeline meeting or find where reps need help. One rep: pipeline-review.",
+      "source_sha256": "330b9d20820b12383b9b4b57b61a0854c84bedc4109489ddc58dca29cb5d0918",
+      "source_path": "skills/team-pipeline/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8cc0711da7ce31172d2609a60ef30a8761f8c42b03bd37dbc4253ae809638a76": {
+      "description_zh": "将已组合 Salesforce 数据渲染为样式化组件，可用填充数据的动态定义或带属性的注册组件，提供渲染模式、结构与受支持图块指导。",
+      "source": "Render assembled Salesforce data as a styled widget using either a hydrated dynamic definition or a registered widget with props. Use when a skill needs a composed visual presentation or guidance on rendering mode, structure and supported tiles.",
+      "source_sha256": "8cc0711da7ce31172d2609a60ef30a8761f8c42b03bd37dbc4253ae809638a76",
+      "source_path": "skills/using-display-widget/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aea2926e46e3269ec55e2e2f1f12f455fff55429a4b23e8eec28f99201448502": {
+      "description_zh": "从近期已发送邮件建立可复用个人写作风格档案，记录问候、结尾、长度、结构、语气和常用短语，使联系草稿贴近用户；需要读取已发送邮件。",
+      "source": "Build a reusable voice profile from recent sent emails to capture a user's greetings, sign-offs, length, structure, tone and recurring phrases. Use during setup or when outreach drafts should sound more like the user; requires access to sent mail.",
+      "source_sha256": "aea2926e46e3269ec55e2e2f1f12f455fff55429a4b23e8eec28f99201448502",
+      "source_path": "skills/voice-profile/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc3b7dffe1776b2bd20acbd6346b592a78ca2c71c9110a06628bea13e21b624a": {
+      "description_zh": "结合 Salesforce 商机和日历活动、邮件、文档及 Slack 生成销售周回顾，汇总赢单、失单、商机活动和下周重点，支持个人或团队内部更新。",
+      "source": "Build a weekly sales recap from Salesforce opportunity and calendar activity plus email, documents and Slack, covering wins, losses, deal activity and next week's priorities. Use to review a rep's or team's week, prepare for Monday or draft an internal update.",
+      "source_sha256": "cc3b7dffe1776b2bd20acbd6346b592a78ca2c71c9110a06628bea13e21b624a",
+      "source_path": "skills/weekly-wrap/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "439303e5967acbec2621bed3bc4b75ef0001bda1aad963e46898a9c6854cf8fa": {
+      "description_zh": "依据 Salesforce 已关闭商机、阶段历史、通话转录和邮件分析赢单失单，展示赢单率、丢单阶段、异议及商机模式，支持分群比较和辅导流程改进。",
+      "source": "Build a win-loss analysis from closed Salesforce opportunities, stage history, call transcripts and email, showing win rates, loss stages, objections and deal patterns. Use to explain wins and losses, compare segments or identify coaching and process changes.",
+      "source_sha256": "439303e5967acbec2621bed3bc4b75ef0001bda1aad963e46898a9c6854cf8fa",
+      "source_path": "skills/win-loss-review/SKILL.md",
+      "package_sha256": "01dddc90ef8a1e2c95e9e812a0d23ecae5f3c4f694b048e3110e27986e374a9a",
+      "source_package": "Sales Cloud-1.0.0-beta.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f78a90b6b45eb499fa415025305b40e4a5920f8239907e35eac14c0ca6cb3226": {
+      "description_zh": "查询 SalesEQ 官方文档解释产品使用和配置，包括录音、桌面应用、分享权限、群组、自动分享、公开链接、洞察报告、集成、成员角色、计费、双因素与 AI 助手连接；会议内容检索使用 MCP 工具。",
+      "source": "Answer questions about how the SalesEQ product works — recording and the desktop app, sharing and permissions, groups, auto-share rules, public links, insights and reporting, calendar/email/HubSpot integrations, members and roles, billing, two-factor, and connecting SalesEQ to an AI assistant. Fetches the official docs rather than answering from memory. Use when someone asks how to do something in SalesEQ, why SalesEQ behaved a certain way, what a SalesEQ term means, or how a SalesEQ feature is configured. Do NOT use this to look up meeting content — the SalesEQ MCP tools handle searching meetings, reading transcripts, and pulling summaries.",
+      "source_sha256": "f78a90b6b45eb499fa415025305b40e4a5920f8239907e35eac14c0ca6cb3226",
+      "source_path": "skills/saleseq-docs/SKILL.md",
+      "package_sha256": "ad347ef65641820402c4345657e94a042000792703720ebade2ee0b4a5ad137e",
+      "source_package": "SalesEQ-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95de51cfed3a8b21bd67faa254a723cc790eb8f4a28488cb471b6f52d29100a2": {
+      "description_zh": "通过 Saleshandy Lead Finder 将自然语言理想客户描述转为潜客搜索，异步补充资料并在积分成本门禁后处理，支持可选且受审批控制的序列加入。",
+      "source": "ICP-driven prospecting via Saleshandy Lead Finder. Use whenever the user asks to find, search, discover, source, get, or list prospects, leads, contacts, or people matching a natural-language description — e.g. \"find HR managers at fintech SaaS\", \"get me CTOs in 51-200 employee SaaS companies\", \"show me marketing directors at series B startups\", \"I need 20 sales leaders in EU\". Also handles \"get emails for [people description]\" and \"find phone numbers for [ICP]\". Wraps natural-language Lead Finder search, async enrichment (with credit-cost gating), and optional gated enrollment into a Saleshandy sequence step.",
+      "source_sha256": "95de51cfed3a8b21bd67faa254a723cc790eb8f4a28488cb471b6f52d29100a2",
+      "source_path": "skills/discover-and-enroll/SKILL.md",
+      "package_sha256": "466370019c57f7ce930884a80c3df710d69eb2e90e86a5506c2bb8621559c65c",
+      "source_package": "saleshandy-plugin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c47c0737b2e9ea03706c51f37381db553e2c888383863db8aa24e72aca64c243": {
+      "description_zh": "通过 Saleshandy Lead Finder 根据 LinkedIn 个人或公司链接、域名或姓名公司信息补充已核验工作邮箱和可选电话，自动区分个人与公司；原说明估计电话约 7 积分每人、仅邮箱约 1 积分、公司约 0.1 积分。",
+      "source": "Reveal verified work email (and optionally phone) for a person or company via Saleshandy Lead Finder. Use whenever the user pastes a LinkedIn profile URL, a LinkedIn company URL, a company domain (e.g. \"acme.com\"), or a \"FirstName LastName at company.com\" / \"Name, Company\" string and asks to enrich, reveal, look up, get the email for, get the phone for, or find contact info for them. Auto-detects person vs company input. Mention `--phone` or \"include phone\" / \"with phones\" for phone reveal (~7 credits/lead vs ~1 for email-only; company enrichment is ~0.1 credit/company).",
+      "source_sha256": "c47c0737b2e9ea03706c51f37381db553e2c888383863db8aa24e72aca64c243",
+      "source_path": "skills/enrich-leads/SKILL.md",
+      "package_sha256": "466370019c57f7ce930884a80c3df710d69eb2e90e86a5506c2bb8621559c65c",
+      "source_package": "saleshandy-plugin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48785c926efe3c54a344c7ef762291fbeb3b6cdbeabd4c92da2b3be65bb4d6b9": {
+      "description_zh": "使用 SalesQL 端到端寻找销售线索，研究理想客户画像、转为搜索筛选条件、寻找匹配人员并获取已核验邮箱与电话，适用于建潜客清单和补充销售管道。",
+      "source": "End-to-end lead prospecting with SalesQL. Research a business's ideal customer profile (ICP), translate it into SalesQL search filters, find matching people, and reveal verified emails and phone numbers. Use this whenever the user wants to find leads, prospects, potential customers, or contacts for a business — even if they only give a company description, a website URL, or a vague ask like \"who should I sell this to?\". Also use it when the user mentions ICP research, building a lead list, or filling a pipeline.",
+      "source_sha256": "48785c926efe3c54a344c7ef762291fbeb3b6cdbeabd4c92da2b3be65bb4d6b9",
+      "source_path": "skills/find-leads/SKILL.md",
+      "package_sha256": "add04736e506f438d238cbe06ba3f5fc7eb52bfad663e524e20948160116fda1",
+      "source_package": "SalesQL-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8480c29c52c37e5fe1141ab6d1bf7ece76fb53489387ee3e2c9e4e0ae40477b7": {
+      "description_zh": "指导内容实验和 A/B 测试，涵盖设计、假设、指标、样本量、统计基础、CMS 变体及分析陷阱，用于实验规划、结果解释和前端实验流程。",
+      "source": "Content experimentation and A/B testing guidance covering experiment design, hypotheses, metrics, sample size, statistical foundations, CMS-managed variants, and common analysis pitfalls. Use this skill when planning experiments, setting up variants, choosing success metrics, interpreting statistical results, or building experimentation workflows in a CMS or frontend stack.",
+      "source_sha256": "8480c29c52c37e5fe1141ab6d1bf7ece76fb53489387ee3e2c9e4e0ae40477b7",
+      "source_path": "skills/content-experimentation-best-practices/SKILL.md",
+      "package_sha256": "c1d33d5aba945130123890a20e8c7739a5907da39a1e12ddc7fb3001e5354ec4",
+      "source_package": "Sanity-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "111f489de0f796acf863882cfe854769624143f8ca90ef760ed7754c7cb46867": {
+      "description_zh": "指导 Sanity 和其他无头 CMS 的结构化内容建模，设计 Schema、架构、复用、引用与嵌套对象、职责分离和分类体系，审查是否过度依赖页面或展示形态。",
+      "source": "Structured content modeling guidance for schema design, content architecture, content reuse, references versus embedded objects, separation of concerns, and taxonomies across Sanity and other headless CMSes. Use this skill when designing or refactoring content types, deciding field shapes, debating reusable versus nested content, planning omnichannel content models, or reviewing whether a schema is too page-shaped or presentation-driven.",
+      "source_sha256": "111f489de0f796acf863882cfe854769624143f8ca90ef760ed7754c7cb46867",
+      "source_path": "skills/content-modeling-best-practices/SKILL.md",
+      "package_sha256": "c1d33d5aba945130123890a20e8c7739a5907da39a1e12ddc7fb3001e5354ec4",
+      "source_package": "Sanity-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f8a6e1fb4414218b5c39a4c0fe96044c66872b6925264ed5f6c5b1f13595684": {
+      "description_zh": "将 HTML 和 Markdown 转为 Sanity Portable Text，支持旧 CMS 迁移、外部内容管道和程序化文档，涵盖 markdownToPortableText、htmlToBlocks、自定义反序列化及手动构块规范。",
+      "source": "Convert HTML and Markdown content into Portable Text blocks for Sanity. Use when migrating content from legacy CMSs, importing HTML or Markdown into Sanity, building content pipelines that ingest external content, converting rich text between formats, or programmatically creating Portable Text documents. Covers @portabletext/markdown (markdownToPortableText), @portabletext/block-tools (htmlToBlocks), custom deserializers, and the Portable Text specification for manual block construction.",
+      "source_sha256": "1f8a6e1fb4414218b5c39a4c0fe96044c66872b6925264ed5f6c5b1f13595684",
+      "source_path": "skills/portable-text-conversion/SKILL.md",
+      "package_sha256": "c1d33d5aba945130123890a20e8c7739a5907da39a1e12ddc7fb3001e5354ec4",
+      "source_package": "Sanity-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c873870a901fc1b604b1b5c3bfbce86cfcb6412c474a04d38dd4894197c88a21": {
+      "description_zh": "将 Portable Text 渲染或序列化为 React、Svelte、Vue、Astro、HTML、Markdown 或纯文本，支持自定义块类型、服务端输出及标记、列表和渲染故障排查。",
+      "source": "Render and serialize Portable Text to React, Svelte, Vue, Astro, HTML, Markdown, and plain text. Use when implementing Portable Text rendering in any frontend framework, building custom serializers for non-standard block types, converting Portable Text to HTML strings server-side, converting Portable Text to Markdown, extracting plain text from Portable Text, or troubleshooting rendering issues with marks, blocks, lists, or custom types.",
+      "source_sha256": "c873870a901fc1b604b1b5c3bfbce86cfcb6412c474a04d38dd4894197c88a21",
+      "source_path": "skills/portable-text-serialization/SKILL.md",
+      "package_sha256": "c1d33d5aba945130123890a20e8c7739a5907da39a1e12ddc7fb3001e5354ec4",
+      "source_package": "Sanity-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "868d5df180d3dacc63dc906f9797f9de16feee4827b3114a9306d53953611122": {
+      "description_zh": "提供 Sanity 开发与代码审查实践，涵盖 Schema、GROQ、TypeGen、可视编辑、图片、Portable Text、Studio、本地化、迁移、Functions、webhook、Blueprint 及各前端框架集成。",
+      "source": "Sanity development best practices for schema design, GROQ queries, TypeGen, Visual Editing, images, Portable Text, Studio structure, localization, migrations, Sanity Functions, webhooks, Blueprints, and framework integrations such as Next.js, Nuxt, Astro, Remix, SvelteKit, Angular, Hydrogen, and the App SDK. Use this skill whenever working with Sanity schemas, defineType or defineField, GROQ or defineQuery, content modeling, Presentation or preview setups, Sanity-powered frontend integrations, event-driven content automation, documentEventHandler, defineDocumentFunction, defineMediaLibraryAssetFunction, @sanity/functions, @sanity/blueprints, sanity.blueprint.ts, event-driven content automation, or when reviewing and fixing a Sanity codebase.",
+      "source_sha256": "868d5df180d3dacc63dc906f9797f9de16feee4827b3114a9306d53953611122",
+      "source_path": "skills/sanity-best-practices/SKILL.md",
+      "package_sha256": "c1d33d5aba945130123890a20e8c7739a5907da39a1e12ddc7fb3001e5354ec4",
+      "source_package": "Sanity-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64d95099fa19667cbb4d52f5ee0fd8c6f4f6e56ae7f6360d0b5819f3cce979f3": {
+      "description_zh": "规划、实现和审查其他 CMS 或内容系统迁移到 Sanity，覆盖 AEM、Contentful、Strapi、Webflow、WordPress、Drupal、Markdown、XML、API、数据库及静态 HTML，设计提取转换、媒体迁移、重定向、验证和切换。",
+      "source": "Plans, implements, and reviews migrations from other CMSes and content systems into Sanity. Use when migrating or replatforming to Sanity from AEM, Adobe Experience Manager, Contentful, Strapi, Webflow, WordPress, Payload, Drupal, Markdown/MDX/frontmatter files, WXR/XML exports, CMS APIs, database dumps, static HTML, or when designing extraction, transformation, Portable Text conversion, asset migration, redirects, validation, and cutover workflows.",
+      "source_sha256": "64d95099fa19667cbb4d52f5ee0fd8c6f4f6e56ae7f6360d0b5819f3cce979f3",
+      "source_path": "skills/sanity-migration/SKILL.md",
+      "package_sha256": "c1d33d5aba945130123890a20e8c7739a5907da39a1e12ddc7fb3001e5354ec4",
+      "source_package": "Sanity-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d784eaf4d912bc5f4b1fe4d02636c3c745069362849bc7680bcbff576b0e2cfb": {
+      "description_zh": "指导 SEO 和 AEO 的元数据、Open Graph、站点地图、robots.txt、hreflang、JSON-LD、EEAT 及内容优化，适用于技术与国际 SEO 和 AI 答案展示准备。",
+      "source": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
+      "source_sha256": "d784eaf4d912bc5f4b1fe4d02636c3c745069362849bc7680bcbff576b0e2cfb",
+      "source_path": "skills/seo-aeo-best-practices/SKILL.md",
+      "package_sha256": "c1d33d5aba945130123890a20e8c7739a5907da39a1e12ddc7fb3001e5354ec4",
+      "source_package": "Sanity-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28e187f3338de073e234795791f3c14687bf63e3526ee36f78a76658dbba278e": {
+      "description_zh": "使用 CAP 或 ABAP RAP 为 SAP Fiori Elements 筛选栏或值帮助添加基于图表的可视过滤器。",
+      "source": "Add visual filters (chart-based) to SAP Fiori Elements filter bar/value help using CAP or ABAP RAP.",
+      "source_sha256": "28e187f3338de073e234795791f3c14687bf63e3526ee36f78a76658dbba278e",
+      "source_path": "skills/sap-fiori-add-visual-filter/SKILL.md",
+      "package_sha256": "edb74f6f01bff63adadee88ca6489f1ed5bd2765c32cded3f7f3dd27d9632146",
+      "source_package": "sap-fiori-mcp-server-1.12.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f396b882b068579e2b9f51b5bc0f58f22db1dd2b8bcc3c24881926edac421369": {
+      "description_zh": "基于聚合数据为 SAP Fiori Elements List Report 添加图表与表格混合分析视图，支持 CAP 和 ABAP RAP 的 OData V4。",
+      "source": "Add analytical chart (chart + table hybrid) to SAP Fiori Elements List Report using aggregated data. Supports CAP and ABAP RAP (OData V4).",
+      "source_sha256": "f396b882b068579e2b9f51b5bc0f58f22db1dd2b8bcc3c24881926edac421369",
+      "source_path": "skills/sap-fiori-analytical-chart/SKILL.md",
+      "package_sha256": "edb74f6f01bff63adadee88ca6489f1ed5bd2765c32cded3f7f3dd27d9632146",
+      "source_package": "sap-fiori-mcp-server-1.12.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97f8e3c533d68473536499512a2e01a3d476b11aa0e0e362e234009026a27dac": {
+      "description_zh": "为 CAP 和独立项目提供 SAP Fiori 应用开发指南，用于创建或修改 Fiori Elements 应用。",
+      "source": "Guidelines for SAP Fiori app development for CAP and standalone projects. Use this skill when creating or modifying SAP Fiori Elements applications.",
+      "source_sha256": "97f8e3c533d68473536499512a2e01a3d476b11aa0e0e362e234009026a27dac",
+      "source_path": "skills/sap-fiori-app-development/SKILL.md",
+      "package_sha256": "edb74f6f01bff63adadee88ca6489f1ed5bd2765c32cded3f7f3dd27d9632146",
+      "source_package": "sap-fiori-mcp-server-1.12.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a010124a30c25d833927c5dd6ca349c45c2eb17bfd8dd91401ccc6b439bf424": {
+      "description_zh": "运行和测试 @sap-ux/create CLI 的生成、添加、转换、移除、更新、修改、列出和读取命令，适用于 Fiori 配置和适配项目生成。",
+      "source": "Run, invoke, and test the @sap-ux/create CLI — generate, add, convert, remove, update, change, list, get commands for SAP Fiori projects. Use when asked to run sap-ux, invoke create CLI, add config to a project, generate adaptation-project, or test any sap-ux/create subcommand.",
+      "source_sha256": "7a010124a30c25d833927c5dd6ca349c45c2eb17bfd8dd91401ccc6b439bf424",
+      "source_path": "skills/sap-fiori-create-cli/SKILL.md",
+      "package_sha256": "edb74f6f01bff63adadee88ca6489f1ed5bd2765c32cded3f7f3dd27d9632146",
+      "source_package": "sap-fiori-mcp-server-1.12.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f80e5a5832bbbb6736c301c1f6708b98456e217f0782b24c4ee090a28c77ce9": {
+      "description_zh": "在独立或 CAP Fiori 项目配置、迁移或运行 @sap-ux/eslint-plugin-fiori-tools，升级 ESLint 9 flat config、修复 lint 故障，并查看应用及 UX 一致性问题。",
+      "source": "Configure, migrate, or run ESLint with @sap-ux/eslint-plugin-fiori-tools in SAP Fiori projects (standalone or CAP). Use when ESLint is missing and the user wants to add it or add code quality checks; when an existing .eslintrc or eslint@8 config needs upgrading to ESLint 9 flat config; when the user wants to run linting, fix lint errors, or ESLint is broken or not working; or when the user wants to see the application issues or UX consistency issues for a specific app — e.g. \"show application issue(s) for my project <project_name>\", \"show application issues for app X\", \"UX consistency issues\", \"issues consistent with Page Map\", \"same issues as Application Information\".",
+      "source_sha256": "2f80e5a5832bbbb6736c301c1f6708b98456e217f0782b24c4ee090a28c77ce9",
+      "source_path": "skills/sap-fiori-eslint-plugin/SKILL.md",
+      "package_sha256": "edb74f6f01bff63adadee88ca6489f1ed5bd2765c32cded3f7f3dd27d9632146",
+      "source_package": "sap-fiori-mcp-server-1.12.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ecee2f73dbfd6c88fbb55255c92693a04549cef9ffb7a997ab3cf118a19b157": {
+      "description_zh": "编写、修复、扩展和审阅 SAP Fiori Elements OPA5 集成测试，支持 OData V4 的 sap.fe.test 和 V2 的 fioriElementsTestLibrary，涵盖旅程、页面对象、JourneyRunner、模拟数据与失败排查；不适用于 freestyle UI5。",
+      "source": "Use this skill when writing, fixing, extending, or reviewing OPA5 integration tests for SAP Fiori Elements applications - whether the app uses OData V4 (sap.fe.test library) or OData V2 (fioriElementsTestLibrary). Triggers on any request involving OPA5 journeys, page objects, JourneyRunner setup, test structure, mock data, or debugging test failures in a SAP Fiori Elements project generated by SAP Fiori tools. Use even when the user says \"write integration tests\" or \"add an OPA journey\" without specifying the library, as long as the project context is SAP Fiori Elements. Not applicable to freestyle UI5 apps.",
+      "source_sha256": "2ecee2f73dbfd6c88fbb55255c92693a04549cef9ffb7a997ab3cf118a19b157",
+      "source_path": "skills/sap-fiori-opa5-test-development/SKILL.md",
+      "package_sha256": "edb74f6f01bff63adadee88ca6489f1ed5bd2765c32cded3f7f3dd27d9632146",
+      "source_package": "sap-fiori-mcp-server-1.12.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "24b1fd14eeaceb6f960064ab731751bf2f3ffdb77b30f1f0288ec091b39dff2d": {
+      "description_zh": "为 SAP Fiori Elements 配置显示父子递归层级的树表，支持 CAP 和 ABAP RAP 的 OData V4。",
+      "source": "Configure hierarchical tree table to SAP Fiori elements application for displaying parent-child recursive hierarchies. Supports CAP and ABAP RAP (OData V4).",
+      "source_sha256": "24b1fd14eeaceb6f960064ab731751bf2f3ffdb77b30f1f0288ec091b39dff2d",
+      "source_path": "skills/sap-fiori-tree-table/SKILL.md",
+      "package_sha256": "edb74f6f01bff63adadee88ca6489f1ed5bd2765c32cded3f7f3dd27d9632146",
+      "source_package": "sap-fiori-mcp-server-1.12.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f90b5bcaccc92daaaba1443c92b6493368c1d11c722c1bf57af969d2208a2f6": {
+      "description_zh": "仅在用户明确要求章节或主题跳转时，为 Save to Spotify 节目配置章节跳过，使播放跳过按钮在章节间跳转而非前后移动 15 秒；不主动触发。",
+      "source": "Configure chapter-skip playback on a Save to Spotify show — the player's skip buttons jump between chapters instead of seeking 15 seconds. Must be explicitly invoked; use ONLY when the user explicitly says skip-to-topic, skip-to-chapter, chapter skipping, chapter skip, or an equivalent phrase. Never trigger proactively.",
+      "source_sha256": "5f90b5bcaccc92daaaba1443c92b6493368c1d11c722c1bf57af969d2208a2f6",
+      "source_path": "skills/configure-chapter-skip/SKILL.md",
+      "package_sha256": "9677273a8b66346d213088ad15df2f27391b6778d38d10c2f4f4110e134b6a42",
+      "source_package": "save-to-spotify-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6827b8fec00f91ff9662120d69bb61c556c410fad0d53755fac3559b03bd719": {
+      "description_zh": "生成并保存 Spotify 音频节目，包含 TTS 旁白、章节、播放器图片、外部链接、Spotify 实体卡片和封面，也支持原始媒体保存、节目管理及时间线导航。",
+      "source": "Create polished audio content and save to Spotify. Produces episodes with TTS narration, a rich timeline (chapters plus in-player images, external links, and Spotify entity cards), and a cover image. Also use for raw media saves, show/episode management, and timeline navigation.",
+      "source_sha256": "d6827b8fec00f91ff9662120d69bb61c556c410fad0d53755fac3559b03bd719",
+      "source_path": "skills/save-to-spotify/SKILL.md",
+      "package_sha256": "9677273a8b66346d213088ad15df2f27391b6778d38d10c2f4f4110e134b6a42",
+      "source_package": "save-to-spotify-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d56227a1dcbaebcd96be37b99a4ba0e4142dd8f4534080a5aed1cdbd0a0b1f65": {
+      "description_zh": "从 .project/PROGRESS_TRACKING.md 的最后检查点恢复崩溃或中断的开发会话，直接接续下一待办任务。",
+      "source": "Recover a crashed or interrupted development session. Reads the last checkpoint in .project/PROGRESS_TRACKING.md and resumes immediately from the next pending task — no questions asked.",
+      "source_sha256": "d56227a1dcbaebcd96be37b99a4ba0e4142dd8f4534080a5aed1cdbd0a0b1f65",
+      "source_path": "skills/continue-progress/SKILL.md",
+      "package_sha256": "c21ea31b615fcec522a4948e4720d2496e46144c05a9bdf11b152e38e186afb7",
+      "source_package": "save-your-work-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ce4b172caf4118191ad8b89fd64cacbb7cd4bf588e7677fc42db8ac89a75309": {
+      "description_zh": "启动带自动进度检查点的开发会话，读取或创建 .project/PROGRESS_TRACKING.md，询问任务或在自动模式恢复，并在每个任务和阶段完成后保存进度。",
+      "source": "Start a development session with automatic progress checkpoints. Reads or generates .project/PROGRESS_TRACKING.md, asks user what to do (or resumes automatically in automode), and saves a checkpoint after each completed task and phase.",
+      "source_sha256": "7ce4b172caf4118191ad8b89fd64cacbb7cd4bf588e7677fc42db8ac89a75309",
+      "source_path": "skills/saving-progress/SKILL.md",
+      "package_sha256": "c21ea31b615fcec522a4948e4720d2496e46144c05a9bdf11b152e38e186afb7",
+      "source_package": "save-your-work-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c9faceb971ca542eb2643130648c059f9545aace0498f67df0dbd5bd69c5475": {
+      "description_zh": "通过访谈创建 Slack 应用项目，生成匹配权限和事件的 manifest、Socket Mode TypeScript Bolt 脚手架，以及含管理员请求文案和控制台操作步骤的 SETUP.md。",
+      "source": "Use when starting a new Slack bot or Slack app project — runs an interview, generates a Slack app manifest with the right scopes/events, scaffolds a TypeScript Bolt starter in Socket Mode, and produces a SETUP.md with admin-request copy and exact dashboard navigation steps. Trigger phrases include \"build a slack bot\", \"scaffold a slack app\", \"new slack integration\", \"create a slack app\".",
+      "source_sha256": "4c9faceb971ca542eb2643130648c059f9545aace0498f67df0dbd5bd69c5475",
+      "source_path": "skills/scaffold-slack-app/SKILL.md",
+      "package_sha256": "fb750f29f59bb8e53f994ba66dd5b75eddbbb5e69402e4bc01707e50e7b0715a",
+      "source_package": "scaffold-slack-app-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0dea034ce252cb5283f19889dfbfff6da1fe5b7147a3367e01df0eb489ca6d23": {
+      "description_zh": "识别 Amazon Ads 中表现良好却耗尽预算的广告系列，通过 ScaleSKUs 排队提出安全预算提升，分析预算限制代价和是否应增加预算。",
+      "source": "Find Amazon Ads campaigns that run out of budget while performing well, and queue safe budget raises through ScaleSKUs. Use when the user asks which campaigns are budget-capped or running out of budget, what capping is costing them, or whether to raise budgets.",
+      "source_sha256": "0dea034ce252cb5283f19889dfbfff6da1fe5b7147a3367e01df0eb489ca6d23",
+      "source_path": "skills/budget-caps/SKILL.md",
+      "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
+      "source_package": "ScaleSKUs-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
