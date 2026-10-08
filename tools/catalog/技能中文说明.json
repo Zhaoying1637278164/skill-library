@@ -46969,6 +46969,1086 @@
       "package_sha256": "8908140c7c250b9ec91366704cd15f945256922383f3f2ec5f0bb1f7d36ae47a",
       "source_package": "Morphed-0.1.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80c635401a2e9b7e3e0fb192ab66890c7fac0a71df4ebf333b6011861162c869": {
+      "description_zh": "扫描既有项目代码并访谈用户，为 Claude Code 配置按专业领域分工的智能体团队，适用于已有代码库的团队初始化。",
+      "source": "Bootstrap a Claude Code agent team for an existing project by scanning code and interviewing the user. Use when the user wants to 'assemble a team', 'set up agent team', 'configure teammates', or spawn domain-assigned members for a brownfield repo.",
+      "source_sha256": "80c635401a2e9b7e3e0fb192ab66890c7fac0a71df4ebf333b6011861162c869",
+      "source_path": "skills/assemble/SKILL.md",
+      "package_sha256": "53ddbdd9d7856d658068af52c9d882271baa53fbf2a2f57b4d5b2ba68ac81fc5",
+      "source_package": "mosaic-1.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "449e69fed0c1118a4bff2f034cfd131f5739fcb9437525f797eab03852536ab1": {
+      "description_zh": "为复杂的新项目采用结构化设计到实施流程，在开始实现前规划多组件应用、服务、平台或系统。",
+      "source": "Structured design-to-implementation process for complex projects. This skill should be used when the user wants to \"build a new project from scratch\", \"create a new service\", \"create a new app\", \"make a new service\", \"build an application\", \"build a new platform\", \"design a new system\", \"plan a new application\", \"start building from scratch\", or needs to design and plan a multi-component project, application, or platform before implementation.",
+      "source_sha256": "449e69fed0c1118a4bff2f034cfd131f5739fcb9437525f797eab03852536ab1",
+      "source_path": "skills/dcve/SKILL.md",
+      "package_sha256": "53ddbdd9d7856d658068af52c9d882271baa53fbf2a2f57b4d5b2ba68ac81fc5",
+      "source_package": "mosaic-1.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3cf9c3ac54aef7c978178b7f304e481a490b17599cc13c3952da1b6138304e5c": {
+      "description_zh": "围绕决策组织多视角讨论和辩论，比较选项优缺点及不同立场，帮助权衡方案。",
+      "source": "Multi-perspective discussion and debate for decision-making. This skill should be used when the user wants to \"get advice on a decision\", \"discuss pros and cons\", \"debate options\", \"hear different perspectives\", \"help me decide between\", \"weigh the options\", or needs multi-perspective analysis before making a decision.",
+      "source_sha256": "3cf9c3ac54aef7c978178b7f304e481a490b17599cc13c3952da1b6138304e5c",
+      "source_path": "skills/discuss/SKILL.md",
+      "package_sha256": "53ddbdd9d7856d658068af52c9d882271baa53fbf2a2f57b4d5b2ba68ac81fc5",
+      "source_package": "mosaic-1.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "494062aa0cf32c95aec62d5a3588c47f55c7bf559730186f016c75ab597598cf": {
+      "description_zh": "通过 Mosaic API 开展 AI 视频编辑，创建智能体、运行视频工作流、管理社交账号、发布内容、上传素材和管理额度。",
+      "source": "AI-powered video editing via the Mosaic API. Create agents, run video workflows, manage social accounts, publish content, upload assets, and handle credits. Use when the user wants to edit videos, run agents, post to social media, or manage their Mosaic account programmatically.",
+      "source_sha256": "494062aa0cf32c95aec62d5a3588c47f55c7bf559730186f016c75ab597598cf",
+      "source_path": "skills/mosaic-video-editor/SKILL.md",
+      "package_sha256": "20cb7f8906963371534ad30afbc176f24eb3218866f9b7472e8b734815ac0db1",
+      "source_package": "Mosaic-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "febbae5337584c157985cb231806332c29bdb78649b157f7fcf191d278ab9438": {
+      "description_zh": "通过 get_agent_datasources 查看 MosoFin 工作区连接的公司文件、数据源及状态，用于确认连接、检查数据源或重新连接。",
+      "source": "Show which company files and data sources are connected to a MosoFin workspace and their status (maps to the get_agent_datasources MCP tool). Use when the user asks what's connected, which companies are linked, whether a data source is working, or needs to reconnect a data source.",
+      "source_sha256": "febbae5337584c157985cb231806332c29bdb78649b157f7fcf191d278ab9438",
+      "source_path": "skills/connections/SKILL.md",
+      "package_sha256": "c439e3e7bd637097347c5eba687f38300e39b36dc6cd54111ce5d4931307e97b",
+      "source_package": "MosoFin-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e3357042c74ed273931bef766d6d7af3b200e4d13e4503cfed013c62208e0c3": {
+      "description_zh": "通过 get_skills 列出已确认 MosoFin 工作区中用户保存的技能，检查工作流是否存在并选择待重放技能。",
+      "source": "List the user's saved MosoFin skills in the confirmed workspace (maps to the get_skills MCP tool). Use when the user asks what skills they have saved, whether a workflow exists, or before choosing a skill to replay.",
+      "source_sha256": "7e3357042c74ed273931bef766d6d7af3b200e4d13e4503cfed013c62208e0c3",
+      "source_path": "skills/list-skills/SKILL.md",
+      "package_sha256": "c439e3e7bd637097347c5eba687f38300e39b36dc6cd54111ce5d4931307e97b",
+      "source_package": "MosoFin-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1a117a516622084537ee34fdb228c1e0abe1d5978275c8d192083c78b9e22f4": {
+      "description_zh": "通过 get_datasource_tools 查看某个已连接数据源支持的 MosoFin API 操作及策略，确认可取数据和允许的操作。",
+      "source": "Show which MosoFin API operations are available for a connected datasource and their policy (maps to the get_datasource_tools MCP tool). Use when the user asks what data can be pulled, which financial data operations exist, or whether an operation is allowed.",
+      "source_sha256": "c1a117a516622084537ee34fdb228c1e0abe1d5978275c8d192083c78b9e22f4",
+      "source_path": "skills/list-tools/SKILL.md",
+      "package_sha256": "c439e3e7bd637097347c5eba687f38300e39b36dc6cd54111ce5d4931307e97b",
+      "source_package": "MosoFin-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5fd4a5a0ae42b52c579b3275493a3618ea73ba22ba458f94d87a6ade705674c4": {
+      "description_zh": "查询 MosoFin 工作区的会计平台及其他已连接 SaaS 业务数据，包括损益、发票、现金、客户和实时账簿。",
+      "source": "Query MosoFin workspace business data (accounting platforms and other connected SaaS). Use when the user asks for P&L, invoices, cash, customers, or any live books data, or mentions MosoFin, a client workspace, or reconnecting a data source.",
+      "source_sha256": "5fd4a5a0ae42b52c579b3275493a3618ea73ba22ba458f94d87a6ade705674c4",
+      "source_path": "skills/query-workspace/SKILL.md",
+      "package_sha256": "c439e3e7bd637097347c5eba687f38300e39b36dc6cd54111ce5d4931307e97b",
+      "source_package": "MosoFin-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c833b93f89caac5c1a8ca772cabf07e6f70e99c4138e543af71aa75b6a2dded": {
+      "description_zh": "在用户指定名称并同意后，通过 get_my_skill 获取并重放已保存的 MosoFin 技能或工作流。",
+      "source": "Fetch and replay one of the user's saved MosoFin skills after they name it and consent (maps to the get_my_skill MCP tool). Use when the user asks to run, replay, or re-use a saved skill or workflow by name.",
+      "source_sha256": "9c833b93f89caac5c1a8ca772cabf07e6f70e99c4138e543af71aa75b6a2dded",
+      "source_path": "skills/replay-skill/SKILL.md",
+      "package_sha256": "c439e3e7bd637097347c5eba687f38300e39b36dc6cd54111ce5d4931307e97b",
+      "source_package": "MosoFin-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3c6e4a6c13d53214ec9ed2e9256d4e6ecc57116b07fb0ec4ff6cb6ceab5b414": {
+      "description_zh": "通过 invoke_datasource_api_tool 对已连接公司文件执行用户明确指定的一项 MosoFin 目录操作，如取损益或搜索发票；适用于精确操作请求。",
+      "source": "Run one specific MosoFin catalog operation against a connected company file (maps to the invoke_datasource_api_tool MCP tool). Use when the user names an exact operation to execute (e.g. run get_profit_and_loss, call search_invoices) rather than asking an open data question.",
+      "source_sha256": "e3c6e4a6c13d53214ec9ed2e9256d4e6ecc57116b07fb0ec4ff6cb6ceab5b414",
+      "source_path": "skills/run-tool/SKILL.md",
+      "package_sha256": "c439e3e7bd637097347c5eba687f38300e39b36dc6cd54111ce5d4931307e97b",
+      "source_package": "MosoFin-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95c5ea815f6db5b8c166134fd1c08e677d1f591ea4b856b0086ff26dd3c8f6f9": {
+      "description_zh": "在分析结果已产生后，将 MosoFin 分析工作流保存为技能，或列出、重放指定技能；支持保存到 MosoFin 或本地。",
+      "source": "Save or replay a MosoFin analysis skill after results exist. Use when the user wants to keep a workflow, list saved skills, replay a named skill, or says save this to MosoFin or locally.",
+      "source_sha256": "95c5ea815f6db5b8c166134fd1c08e677d1f591ea4b856b0086ff26dd3c8f6f9",
+      "source_path": "skills/save-skill/SKILL.md",
+      "package_sha256": "c439e3e7bd637097347c5eba687f38300e39b36dc6cd54111ce5d4931307e97b",
+      "source_package": "MosoFin-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79eb61e9090ab509b6fec323879f29906c812edfc9a20db07af9b332e1806c36": {
+      "description_zh": "通过 list_workspaces 列出、确认或切换本次会话使用的 MosoFin 工作区，支持会话途中选择或添加工作区。",
+      "source": "List, confirm, or switch the MosoFin workspace for this conversation (maps to the list_workspaces MCP tool). Use when the user asks which workspaces they have, wants to work in a specific workspace, or wants to switch or add workspaces mid-chat.",
+      "source_sha256": "79eb61e9090ab509b6fec323879f29906c812edfc9a20db07af9b332e1806c36",
+      "source_path": "skills/workspaces/SKILL.md",
+      "package_sha256": "c439e3e7bd637097347c5eba687f38300e39b36dc6cd54111ce5d4931307e97b",
+      "source_package": "MosoFin-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b8a9464988043bd24c0f5f816dd612e3a6b01bd4b9e2d2cec2035793a65b48b": {
+      "description_zh": "创建修改 Moveo.AI 对话智能体的指南、语气、升级人工规则、意图与工作流，并支持训练、发布和回滚，例如配置退款处理或人工接管。",
+      "source": "Builds or changes a Moveo.AI conversational AI agent. Use when the user wants to create an agent from a brief or to write or fix its guidelines, tone or escalation rules. Also use to add intents and workflows, or to train, publish or roll back an agent. Requests such as \"make the bot handle refunds\" or \"hand refunds over to a human\" on a Moveo agent also qualify. Also matches Portuguese or Greek requests, such as \"criar um agente\" or \"φτιάξε έναν agent\".",
+      "source_sha256": "7b8a9464988043bd24c0f5f816dd612e3a6b01bd4b9e2d2cec2035793a65b48b",
+      "source_path": "skills/build-agent/SKILL.md",
+      "package_sha256": "15b66a6a6d3b95e571b63dae4d493d71966fddf28310519db19abb79096f7381",
+      "source_package": "Moveo.AI-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab4a18a4dd544885ab4c68b0ee258b035648cae2c41ba3543d7b86487f71f7be": {
+      "description_zh": "连接 Claude 与 Moveo.AI 账号并选择工作流，介绍工具能力，处理 MCP 缺失、登录或 401 错误及账号区域不清的情况。",
+      "source": "Connects Claude to a Moveo.AI account and routes the user to the right workflow. Use when the user first mentions Moveo or Moveo.AI, or asks what the Moveo tools can do. Also use when the Moveo MCP server is missing, a sign-in or 401 error appears, or the account or region is unclear. Use it too when the user wants to start work on a Moveo conversational AI agent. Also matches Portuguese or Greek requests, such as \"o que posso fazer com a Moveo\" or \"σύνδεση στη Moveo\".",
+      "source_sha256": "ab4a18a4dd544885ab4c68b0ee258b035648cae2c41ba3543d7b86487f71f7be",
+      "source_path": "skills/get-started/SKILL.md",
+      "package_sha256": "15b66a6a6d3b95e571b63dae4d493d71966fddf28310519db19abb79096f7381",
+      "source_package": "Moveo.AI-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98ca550715beb24107f9e5506b8f452cf5f097d66ed5d71882a8e2648507e369": {
+      "description_zh": "建立维护 Moveo.AI 智能体知识库，抓取或重新抓取网站、帮助中心和 FAQ，上传发布文档并关联智能体，用于解决错误、缺失或过时答案。",
+      "source": "Creates and maintains Moveo.AI knowledge bases that agents answer from. Use when the user wants an agent to answer from a website, help center, FAQ list or uploaded files. Also use to crawl or re-crawl URLs, upload documents, publish documents, or connect a knowledge base to an agent. Use it too for an agent that gives wrong, missing or outdated answers, and for questions about stale content. Also matches Portuguese or Greek requests, such as \"atualizar a base de conhecimento\" or \"βάση γνώσεων\".",
+      "source_sha256": "98ca550715beb24107f9e5506b8f452cf5f097d66ed5d71882a8e2648507e369",
+      "source_path": "skills/knowledge-base/SKILL.md",
+      "package_sha256": "15b66a6a6d3b95e571b63dae4d493d71966fddf28310519db19abb79096f7381",
+      "source_package": "Moveo.AI-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b6d43a5e1974678161318dfbe7415ff47e18f8b90a2f1b49d7551c4defed54c": {
+      "description_zh": "测试 Moveo.AI 智能体，编写运行模拟案例、比较通过率、发布前冒烟测试，并依据会话 ID 排查错误意图、失败 webhook 及异常对话。",
+      "source": "Tests Moveo.AI agents and diagnoses bad conversations. Use when the user wants to try an agent, write or run simulations (test cases), compare pass rates, or smoke test before publish. Also use for a customer conversation that went wrong, a wrong intent, or a failed webhook. Use it too for a shared Moveo session id and the question of what happened. Also matches Portuguese or Greek requests, such as \"testar o agente\" or \"δοκίμασε τον agent\".",
+      "source_sha256": "1b6d43a5e1974678161318dfbe7415ff47e18f8b90a2f1b49d7551c4defed54c",
+      "source_path": "skills/test-agent/SKILL.md",
+      "package_sha256": "15b66a6a6d3b95e571b63dae4d493d71966fddf28310519db19abb79096f7381",
+      "source_package": "Moveo.AI-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd7185b890f4c940dfd4fd4bf9bdfdfa402c4f793c813ac818b668b89fb9f153": {
+      "description_zh": "汇总当前会话中受治理的动作、模式变化和决策，生成结构化审计轨迹及会话日志。",
+      "source": "Produces a structured summary of all governed actions, mode changes, and decisions made in this session. Use when reviewing what happened under governance, when you need a session log, or when you say 'show audit trail', 'what was governed', or 'session log'.",
+      "source_sha256": "dd7185b890f4c940dfd4fd4bf9bdfdfa402c4f793c813ac818b668b89fb9f153",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "194c78fe0f2fe2d8601aacc237c03030d27bfb69f3be64f12fac758e8237f0f2",
+      "source_package": "MO§ES™ Governance for Cowork-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51f2503ec70b731f0da4b83e4796a3fe493e49a6fd94dfa4606c9b4d4963eecb": {
+      "description_zh": "启用 MO§ES 会话级文档治理，为产出文档设置顺序编号、结构化页首和交叉引用跟踪，以支持可追溯交付。",
+      "source": "Activates session-wide document governance: sequential numbering (001_, 002_...), structured headers, and cross-reference tracking on every document produced. Use when starting a governed work session, when you need traceable document output, or when you say 'track documents', 'number my docs', or 'document governance on'.",
+      "source_sha256": "51f2503ec70b731f0da4b83e4796a3fe493e49a6fd94dfa4606c9b4d4963eecb",
+      "source_path": "skills/docs/SKILL.md",
+      "package_sha256": "194c78fe0f2fe2d8601aacc237c03030d27bfb69f3be64f12fac758e8237f0f2",
+      "source_package": "MO§ES™ Governance for Cowork-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c07b34f5a422cb198314718422b1694f42bce5fc029282357acc48f4c28a1849": {
+      "description_zh": "为 MO§ES 会话设置准确性、安全、创意或研究深度等治理模式，用于约束整个会话的智能体行为。",
+      "source": "Sets a constitutional governance mode that constrains Claude's behavior for the entire session — accuracy, security, creativity, or research depth. Use when starting a governed session, when you want behavioral guardrails applied to all responses, or when you say 'govern this session', 'set governance mode', or 'activate high-integrity mode'.",
+      "source_sha256": "c07b34f5a422cb198314718422b1694f42bce5fc029282357acc48f4c28a1849",
+      "source_path": "skills/govern/SKILL.md",
+      "package_sha256": "194c78fe0f2fe2d8601aacc237c03030d27bfb69f3be64f12fac758e8237f0f2",
+      "source_package": "MO§ES™ Governance for Cowork-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de7e1923210be3975fcad5f499852b418f0d72454e3da7434d8b0d77c3357ee9": {
+      "description_zh": "设置 MO§ES 会话操作姿态：Scout 只读、Defense 保护现状或 Offense 执行动作，以规定可执行范围。",
+      "source": "Sets the operational posture for the session — Scout (read-only), Defense (protect existing state), or Offense (execute and act). Use when you need to control what Claude is allowed to do, when preparing for a transaction or risky action, or when you say 'set posture', 'read-only mode', or 'go on offense'.",
+      "source_sha256": "de7e1923210be3975fcad5f499852b418f0d72454e3da7434d8b0d77c3357ee9",
+      "source_path": "skills/posture/SKILL.md",
+      "package_sha256": "194c78fe0f2fe2d8601aacc237c03030d27bfb69f3be64f12fac758e8237f0f2",
+      "source_package": "MO§ES™ Governance for Cowork-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d234a6ae17d77e2d27459036474eb4009ae5f3fba75eb6e36f247bc2a3f4be7e": {
+      "description_zh": "设置 MO§ES 层级中的 Primary、Specialist 或 Observer 角色，明确多智能体协作的权限等级和行为范围。",
+      "source": "Sets the agent role in a MO§ES™ hierarchy — Primary, Specialist, or Observer — controlling authority level and behavioral scope. Use when coordinating multi-agent workflows, when you need to establish Claude's authority level, or when you say 'set role', 'act as specialist', or 'observer mode'.",
+      "source_sha256": "d234a6ae17d77e2d27459036474eb4009ae5f3fba75eb6e36f247bc2a3f4be7e",
+      "source_path": "skills/role/SKILL.md",
+      "package_sha256": "194c78fe0f2fe2d8601aacc237c03030d27bfb69f3be64f12fac758e8237f0f2",
+      "source_package": "MO§ES™ Governance for Cowork-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9ce33a34411eed61b053c19142c6f715a7a1f8df5e42f078ab87c559e1b3d6d": {
+      "description_zh": "在产出文档中嵌入 MO§ES 治理印记，包含活动模式、操作姿态、会话 ID 和完整性哈希，使文档自身保留审计记录。",
+      "source": "Embeds a MO§ES™ governance stamp into every document produced — active mode, posture, session ID, and integrity hash. The document itself becomes the audit record. Use when document provenance matters, when outputs need to be traceable, or when you say 'stamp outputs', 'governed documents', or 'embed audit in output'.",
+      "source_sha256": "f9ce33a34411eed61b053c19142c6f715a7a1f8df5e42f078ab87c559e1b3d6d",
+      "source_path": "skills/stamp/SKILL.md",
+      "package_sha256": "194c78fe0f2fe2d8601aacc237c03030d27bfb69f3be64f12fac758e8237f0f2",
+      "source_package": "MO§ES™ Governance for Cowork-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7049d094099cc51eb7d4b2cb65ca504d777f5b5df7a22bcca397120cc1a8ea0e": {
+      "description_zh": "报告 MO§ES 当前治理状态，包括模式、操作姿态、角色、vault 内容和事件数量。",
+      "source": "Reports the complete current governance state — active mode, posture, role, vault contents, and event count. Use when you want a snapshot of all active governance settings, or when you say 'governance status', 'what mode am I in', or 'show governance state'.",
+      "source_sha256": "7049d094099cc51eb7d4b2cb65ca504d777f5b5df7a22bcca397120cc1a8ea0e",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "194c78fe0f2fe2d8601aacc237c03030d27bfb69f3be64f12fac758e8237f0f2",
+      "source_package": "MO§ES™ Governance for Cowork-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "494c0aef71c48f2c1f456048ebe2a61d22af8c09636956531f583ebfdb008ffb": {
+      "description_zh": "将政策、宪章或参考文档加载到 MO§ES 会话上下文，作为后续输出的治理依据。",
+      "source": "Loads a governance document into active session context so it applies to all subsequent responses. Use when you want a policy, constitution, or reference document to govern all outputs, or when you say 'load this into vault', 'apply this document', or 'govern with this'.",
+      "source_sha256": "494c0aef71c48f2c1f456048ebe2a61d22af8c09636956531f583ebfdb008ffb",
+      "source_path": "skills/vault/SKILL.md",
+      "package_sha256": "194c78fe0f2fe2d8601aacc237c03030d27bfb69f3be64f12fac758e8237f0f2",
+      "source_package": "MO§ES™ Governance for Cowork-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "24fcc2dbec11afae13467d6a4a3bc8cf8b9ad0cd80892dc6095422e8c14f98ef": {
+      "description_zh": "以契约优先方式组织委托给智能体的复杂实现任务，按可观察条件分类、先核实假设、以实际证据判断检查通过，并在合并高风险工作前做独立上下文审查；适用于多文件、schema、权限、支付、租户可见性和重复失败修复。",
+      "source": "Contract-first discipline for delegating implementation to an agent — classify the task by observable triggers, ground your assumptions before generating any code, never mark a check passed on a promise, and get a clean-context review before merging risky work. Use when starting a non-trivial implementation task (several files, a schema change, auth or permissions, payments, tenant visibility), when a fix has already failed once, when a request's wording may not map one-to-one onto the data model, or when the user asks for MTM. Also use when the user asks for a whole product or feature from one sentence, when the same bug is being fixed a second time, when the user says they do not read the code and are relying on the agent's own word, or when a request would silently pick one interpretation of ambiguous data.",
+      "source_sha256": "24fcc2dbec11afae13467d6a4a3bc8cf8b9ad0cd80892dc6095422e8c14f98ef",
+      "source_path": "skills/mtm/SKILL.md",
+      "package_sha256": "9c50615df6f44b60d015a36f6541e259aba21168f21530d0816265e62e60cc66",
+      "source_package": "MTM Contract-2.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d7d12fae2c3757535aa24d6687b5e4e0f223c896136feace16cbf72194c7672": {
+      "description_zh": "通过已连接的 mumo MCP 汇集 Claude、GPT、Gemini、Grok、DeepSeek、Kimi 等不同厂商模型的独立讨论，返回完整回答及结构化相互反应，用于架构产品决策、实施前评审和发布前压力检验。",
+      "source": "Runs a multi-model deliberation across models from different labs (Claude, GPT, Gemini, Grok, DeepSeek, Kimi, and more) via mumo's MCP server, returning full responses plus typed cross-model reactions. Use when independent perspectives are needed on architecture/product decisions, design and plan review before implementation, pre-launch pressure tests, tradeoffs with multiple defensible framings, or explicit user requests for a mumo panel. Especially valuable for pre-implementation review of anything touching auth, security, tokens, payments, data exposure, or migrations. Requires the mumo MCP server to be connected.",
+      "source_sha256": "1d7d12fae2c3757535aa24d6687b5e4e0f223c896136feace16cbf72194c7672",
+      "source_path": "skills/mumo/SKILL.md",
+      "package_sha256": "38ad722007ee353cdd4dbb32bc96ccbfae5e3a59f687567af8e75c2d313f83cf",
+      "source_package": "mumo-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54a73eaddd07b6a5332c9d097a7d0c6d5c5abf6f3f25458e969dbba548541b20": {
+      "description_zh": "分析评估音乐版权目录的收购、融资、出售或投资交易，涵盖出版及录音版权、NPS/NLS 倍数、收益质量、版税现金流、回收期断点、PRO 奖金、版税标准化和投资备忘录。",
+      "source": "Use when analyzing or valuing a music catalog for acquisition, financing, sale, or investment deal review. Triggers include \"catalog valuation\", \"music catalog analysis\", \"project catalog value\", \"what is this catalog worth\", \"NPS multiple\", \"NLS multiple\", \"quality of earnings\", \"royalty cash flows\", \"catalog acquisition\", \"recoupment cliff\", \"PRO bonus\", \"normalize royalties\", or \"build an investment memo\" for publishing or master rights.",
+      "source_sha256": "54a73eaddd07b6a5332c9d097a7d0c6d5c5abf6f3f25458e969dbba548541b20",
+      "source_path": "skills/recoup-catalog-analysis/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5607bded06e68382f9261c4c4cf7a5e05e6ae2994ab0ffb7ea5761c99552f45": {
+      "description_zh": "仅执行音乐版权目录流程第 3、4 阶段的标准化分析，包括版税、风险、集中度和估值情景；用于导入结果或假设修改后的分析与工作底稿刷新，完整流程使用 recoup-catalog-deal。",
+      "source": "Run normalized-catalog analysis (royalties, risk, concentration, valuation scenarios) — Phases 3 and 4 only. Use whenever the user types `/recoup-catalog-analyze`, says \"refresh the analysis\", \"rerun the valuation analysis\", \"update the workpapers\", or wants to refresh the analysis phase after editing ingest output or assumptions. For full end-to-end runs prefer /recoup-catalog-deal.",
+      "source_sha256": "a5607bded06e68382f9261c4c4cf7a5e05e6ae2994ab0ffb7ea5761c99552f45",
+      "source_path": "skills/recoup-catalog-analyze/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0238bc14b8928ac43923c088bc043d4bb6b340627cd0f1b6847f2d7a766cc938": {
+      "description_zh": "创建、刷新或改善音乐版权目录交易面向客户的高管看板 DASHBOARD.html，作为客户阅读交易结论的交付材料。",
+      "source": "Use when building, refreshing, or improving the customer-facing executive dashboard (DASHBOARD.html) for a music catalog deal. Trigger on \"build the dashboard\", \"render the dashboard\", \"create the executive dashboard\", \"refresh DASHBOARD.html\", or any phase of /recoup-catalog-deal that produces the customer's read-the-deal artifact.",
+      "source_sha256": "0238bc14b8928ac43923c088bc043d4bb6b340627cd0f1b6847f2d7a766cc938",
+      "source_path": "skills/recoup-catalog-dashboard/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "669c51d0a506af94038e0b495c5ec1b2b4a7636214b9f894461a707387e77195": {
+      "description_zh": "以单一入口完成音乐版权目录交易审阅：建立工作区、标准化数据室、运行分析、创建验证 DASHBOARD.html 并起草投资委员会备忘录；原说明将其作为收购、卖方准备和融资尽调的完整流程。",
+      "source": "One-command end-to-end music catalog deal review. Use whenever the user types `/recoup-catalog-deal`, says \"review this catalog\", \"analyze this music catalog deal\", \"value this catalog\", \"do diligence on this deal\", \"underwrite this catalog\", or asks for a full catalog acquisition / seller-prep / financing review. Scaffolds the workspace, normalizes the data room, runs analysis, builds an agent-authored DASHBOARD.html, validates it, and drafts the IC memo without stopping for permission between phases. The default front door for the recoup-catalogs-plugin.",
+      "source_sha256": "669c51d0a506af94038e0b495c5ec1b2b4a7636214b9f894461a707387e77195",
+      "source_path": "skills/recoup-catalog-deal/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ea01f010b61b1587e808e4ab9472bb41e9a0d8447cfd8a5793735a65962cb0d": {
+      "description_zh": "用包内合成音乐版权目录数据完整运行 recoup-catalog-deal 演示，展示高管看板及插件产物；原说明宣称首次体验约 60 秒，用于样例或试运行。",
+      "source": "Run /recoup-catalog-deal end-to-end on the bundled synthetic catalog so a first-time user can see an executive dashboard within ~60 seconds. Use whenever the user types `/recoup-catalog-demo`, says \"show me the demo\", \"run the catalog demo\", \"let me see what this plugin produces\", or asks for a sample / dry-run catalog deal against bundled data.",
+      "source_sha256": "5ea01f010b61b1587e808e4ab9472bb41e9a0d8447cfd8a5793735a65962cb0d",
+      "source_path": "skills/recoup-catalog-demo/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3066787923232e552678ac3d2e71fbd8504a49e9cbe2e0aac56e0a54f89e7f5": {
+      "description_zh": "导入并整理音乐版权目录数据室、版税报表、权利文件、元数据导出和杂乱表格，涵盖 ISRC/ISWC、分成、PRO、发行商、合同、回收安排及 YouTube Content ID 报告，为估值审阅准备标准数据。",
+      "source": "Use when ingesting a music catalog data room, royalty statements, rights files, metadata exports, or messy catalog spreadsheets for a deal review. Triggers include \"catalog data room\", \"clean royalty statements\", \"normalize royalties\", \"music rights review\", \"catalog ingest\", \"merge catalog metadata\", \"prepare this catalog for valuation\", or seller files containing ISRCs, ISWCs, splits, PRO statements, distributor reports, contracts, recoupment schedules, or YouTube Content ID reports.",
+      "source_sha256": "b3066787923232e552678ac3d2e71fbd8504a49e9cbe2e0aac56e0a54f89e7f5",
+      "source_path": "skills/recoup-catalog-ingest/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b743248cc939a3ecb093d178b686a9525282669a266c5d54e60af2d190187a4": {
+      "description_zh": "仅完成音乐版权交易流程第 1 阶段，建立工作区和首批审阅资料请求清单；适用于先启动数据室审阅而不运行完整流程。",
+      "source": "Set up a music catalog deal workspace and first deal-review request list — Phase 1 only. Use whenever the user types `/recoup-catalog-kickoff`, says \"start a new catalog deal\", \"scaffold a workspace\", \"set up a data room review\", or wants to set up a deal workspace without running the full end-to-end pipeline. For full end-to-end runs prefer /recoup-catalog-deal.",
+      "source_sha256": "1b743248cc939a3ecb093d178b686a9525282669a266c5d54e60af2d190187a4",
+      "source_path": "skills/recoup-catalog-kickoff/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14d45e4f3b5646b5306e9d408fa9c0d1abfaa3867db2dbdbc179d647154745f8": {
+      "description_zh": "仅执行音乐版权交易流程第 5、6 阶段，组合高管 HTML 看板与投资委员会备忘录、卖方清理报告、融资材料或交割后管理包。",
+      "source": "Assemble the executive HTML dashboard plus an IC memo, seller cleanup report, financing pack, or post-close administration package — Phases 5–6 only. Use whenever the user types `/recoup-catalog-package`, says \"build the IC memo\", \"package this deal\", \"draft the seller cleanup report\", \"assemble the financing pack\", or \"build the post-close admin plan\". For full end-to-end runs prefer /recoup-catalog-deal.",
+      "source_sha256": "14d45e4f3b5646b5306e9d408fa9c0d1abfaa3867db2dbdbc179d647154745f8",
+      "source_path": "skills/recoup-catalog-package/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "143787956063ce81790feedf80264d36becd6a87823f993d5599888c52a3ed8a": {
+      "description_zh": "在音乐版权交易材料共享前执行第 6 阶段质量检查，并按最新发现刷新高管看板；适用于修改结论或备忘录后的交付前核验。",
+      "source": "Run deal-review quality control before a catalog package is shared — Phase 6 QC only. Refreshes the executive dashboard with the latest findings. Use whenever the user types `/recoup-catalog-qc`, says \"QC the deal\", \"run quality control on this deal\", \"check before sharing\", \"is this ready to send\", or wants a pre-share QC gate after editing findings or memos. For full end-to-end runs prefer /recoup-catalog-deal.",
+      "source_sha256": "143787956063ce81790feedf80264d36becd6a87823f993d5599888c52a3ed8a",
+      "source_path": "skills/recoup-catalog-qc/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a4e9ba312f6a2fa978fc294ded26ca531dc63f804eb2f0615d006d5a7fcb9d3": {
+      "description_zh": "将音乐版权交易看板、备忘录和工作底稿整合为单一 PDF 报告，便于向买方、投资委员会或融资方共享及邮件传递。",
+      "source": "Use when the user wants to turn a deal's dashboard, memos, and workpapers into a single shareable, emailable PDF report. Trigger on \"build the PDF report\", \"export the report\", \"make a PDF I can email\", \"share this deal\", \"PDF version of the dashboard\", \"buyer-ready PDF\", \"IC-ready PDF\", \"financing pack PDF\", or any request to package a catalog deal for distribution.",
+      "source_sha256": "4a4e9ba312f6a2fa978fc294ded26ca531dc63f804eb2f0615d006d5a7fcb9d3",
+      "source_path": "skills/recoup-catalog-report/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a4a84a6e6817bfb1745013ee27b1cf60d021a7a593c48f30667ee3f684ed0f87": {
+      "description_zh": "启动音乐版权目录收购、卖方准备或融资机会的审阅，建立数据室和交易工作区，准备资料请求并初步分流。",
+      "source": "Use when starting a new music catalog deal, setting up a data room review, creating a deal workspace, preparing deal-review requests, or triaging a catalog acquisition, recoup-seller-prep, or financing opportunity. Triggers include \"start a catalog deal\", \"kick off this deal\", \"set up the data room\", \"new catalog acquisition\", \"prepare deal request\", or \"create deal workspace\".",
+      "source_sha256": "a4a84a6e6817bfb1745013ee27b1cf60d021a7a593c48f30667ee3f684ed0f87",
+      "source_path": "skills/recoup-deal-kickoff/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2252bb7b8606bb2e82b88bfddd304783ab9cbdadd8a69c326645b191079655a4": {
+      "description_zh": "对音乐版权目录的预付款、贷款、授信、证券化、抵押品或版税支持融资开展承保分析，涉及预付率、偿债容量及贷款方交易审阅材料。",
+      "source": "Use when underwriting a music catalog for an advance, loan, credit facility, securitization, collateral package, or royalty-backed financing. Triggers include \"catalog financing\", \"underwrite this catalog\", \"advance rate\", \"collateral package\", \"royalty loan\", \"financing pack\", \"debt capacity\", or \"lender deal review\".",
+      "source_sha256": "2252bb7b8606bb2e82b88bfddd304783ab9cbdadd8a69c326645b191079655a4",
+      "source_path": "skills/recoup-financing-underwrite/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5bfeb38a37ee791486294de66bd8739265bfb49b45d04a36fe3d24ad57b4e84": {
+      "description_zh": "创建音乐版权交易的投资委员会备忘录、买方审阅包、出价建议、卖方清理报告、融资包或最终交易摘要。",
+      "source": "Use when creating an investment committee memo, buyer deal-review package, bid recommendation, seller cleanup report, financing pack, or final catalog deal summary. Triggers include \"IC memo\", \"investment memo\", \"deal package\", \"bid recommendation\", \"catalog memo\", \"prepare the deal package\", or \"package this catalog analysis\".",
+      "source_sha256": "b5bfeb38a37ee791486294de66bd8739265bfb49b45d04a36fe3d24ad57b4e84",
+      "source_path": "skills/recoup-ic-memo-package/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91d9bd0a213931e4178cccf1466e031766996a1d73a0f5da3d7d6b5c95d22dcf": {
+      "description_zh": "在音乐版权收购交割后转移版税管理、更新登记和所有权、监控首次报表，规划目录迁移并检查收入流失。",
+      "source": "Use after a music catalog acquisition closes, when transferring royalty administration, updating registrations, tracking ownership changes, monitoring first statements, or preventing post-close income leakage. Triggers include \"post-close\", \"transfer administration\", \"registration updates\", \"catalog migration\", \"first post-close statements\", \"income leakage\", or \"ownership transfer plan\".",
+      "source_sha256": "91d9bd0a213931e4178cccf1466e031766996a1d73a0f5da3d7d6b5c95d22dcf",
+      "source_path": "skills/recoup-post-close-admin/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b1e7d8a5381f7cffd37dfc225fba12ec1be5e6c4cb3e7db738fac250f9f1b78": {
+      "description_zh": "审阅音乐版权目录所有权和权属链、分成表、出版录音协议、转让、采样许可、留置权、权利回归、地域限制与可转让性。",
+      "source": "Use when reviewing music catalog ownership, chain of title, split sheets, publishing agreements, recording agreements, assignments, sample clearances, liens, reversions, territory restrictions, or transferability. Triggers include \"chain of title\", \"rights review\", \"split sheet review\", \"does seller own this\", \"sample clearance\", \"reversion risk\", or \"catalog legal docs\".",
+      "source_sha256": "6b1e7d8a5381f7cffd37dfc225fba12ec1be5e6c4cb3e7db738fac250f9f1b78",
+      "source_path": "skills/recoup-rights-review/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ee815838bdb8723da900324c450b697378392be81df5471ed02533bca87c847": {
+      "description_zh": "审计音乐版税报表和收入，规范台账、查找遗漏、验证 NPS/NLS，并核查 PRO、MLC、DSP 和发行商报表及异常差异。",
+      "source": "Use when auditing music royalty statements, checking reported revenue, normalizing royalty ledgers, finding missing income, validating NPS/NLS, reviewing PRO/MLC/DSP/distributor statements, or investigating royalty anomalies. Triggers include \"royalty audit\", \"check these statements\", \"missing royalties\", \"statement normalization\", \"income leakage\", \"MLC mismatch\", or \"PRO statement issue\".",
+      "source_sha256": "9ee815838bdb8723da900324c450b697378392be81df5471ed02533bca87c847",
+      "source_path": "skills/recoup-royalty-audit/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a89b6a2ed10c2385ca9862180edaab4cfc8290832852a8de3a647e6b9987331": {
+      "description_zh": "为音乐版权目录出售做准备，清理元数据、查找缺失文件、生成卖方整改报告，评估上市前应修复的问题及交易审阅准备程度。",
+      "source": "Use when preparing a music catalog for sale, improving catalog readiness, cleaning metadata before going to market, creating a seller cleanup report, finding missing documentation, or maximizing catalog value before a buyer's deal review. Triggers include \"prepare catalog for sale\", \"seller prep\", \"maximize catalog value\", \"catalog audit checklist\", \"clean up before sale\", or \"what should we fix before going to market\".",
+      "source_sha256": "8a89b6a2ed10c2385ca9862180edaab4cfc8290832852a8de3a647e6b9987331",
+      "source_path": "skills/recoup-seller-prep/SKILL.md",
+      "package_sha256": "f009eb63e45173b2980f8855215085d183042a625665464bcc0f38edebedbc3e",
+      "source_package": "Music Catalog Diligence-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61e35db711a485b762871e04f8f36ae8fe9343180e5bcfe91c4567eec098f999": {
+      "description_zh": "只读审计 MyChatBot 账号配置、缺口和准备程度，生成按优先级排序的实施计划；原说明不默认使用客户记录作为审计输入。",
+      "source": "Perform a read-only MyChatBot account audit and produce a prioritized implementation plan. Use when an owner or integrator asks what is configured, what is missing, whether the account is ready, or where to begin. Do not use customer records as a default audit input.",
+      "source_sha256": "61e35db711a485b762871e04f8f36ae8fe9343180e5bcfe91c4567eec098f999",
+      "source_path": "skills/account-audit/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d77f7f7749530a0e63ddc9f2744368ded7652e8d237cefc6990b3c259d45417": {
+      "description_zh": "检查、设计、配置、验证、私密预览、启用或交接 MyChatBot Agents Platform 系统，涵盖后台智能体、技能、连接器、业务知识、例程、日程和触发器；不用于面向客户的 Sales 助手。",
+      "source": "Inspect, design, configure, validate, privately preview, activate, or hand off a MyChatBot Agents Platform system: account agents, skills, connectors, Business Knowledge, custom routines, schedules, and triggers. Use for operator/back-office agents and multi-agent workflows, not customer-facing Sales assistants.",
+      "source_sha256": "6d77f7f7749530a0e63ddc9f2744368ded7652e8d237cefc6990b3c259d45417",
+      "source_path": "skills/build-agent-system/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dbcb5dd603ba1744d21d8142e570dab6cff5d94770fa12c7b4374bd53382a6f7": {
+      "description_zh": "设计、创建、升级、测试或启用面向客户的 MyChatBot Sales 助手，支持销售、客服、预约、下单、网站聊天、语音与消息；不用于后台 Agents 例程。",
+      "source": "Design, create, upgrade, test, or activate a customer-facing MyChatBot Sales assistant. Use for sales, support, booking, ordering, website chat, voice, or messaging assistants. Not for back-office Agents Platform routines.",
+      "source_sha256": "dbcb5dd603ba1744d21d8142e570dab6cff5d94770fa12c7b4374bd53382a6f7",
+      "source_path": "skills/build-sales-assistant/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93915caeb9ebfaa54c0bc580802b8eeac3da78ab3b7ddd6478d63a90ee2dd5de": {
+      "description_zh": "添加、更新、验证或移除 MyChatBot 业务知识，包括网站、Sales FAQ、手工产品目录、产品 feed 和 Agents 附件，为助手提供有依据的公司及产品信息。",
+      "source": "Add, update, validate, or remove MyChatBot business knowledge: live websites, Sales FAQs, manual product catalogs, product feeds, or Agents Business Knowledge attachments. Use when an assistant or agent needs grounded company or catalog information.",
+      "source_sha256": "93915caeb9ebfaa54c0bc580802b8eeac3da78ab3b7ddd6478d63a90ee2dd5de",
+      "source_path": "skills/business-knowledge/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7cc1846aefcef877d3a155daf1e31202ee64bd3b1f9546cd7189db71f91570f": {
+      "description_zh": "检查、连接、配置、测试、停用或交接 MyChatBot Sales 渠道与集成及 Agents 连接器，包括域名、OAuth 应用和自定义 MCP server。",
+      "source": "Inspect, connect, configure, test, disable, or hand off MyChatBot Sales channels and integrations or Agents Platform connectors, including Sales domains, OAuth apps, and custom MCP servers. Use when external connectivity is the primary task.",
+      "source_sha256": "b7cc1846aefcef877d3a155daf1e31202ee64bd3b1f9546cd7189db71f91570f",
+      "source_path": "skills/channels-and-integrations/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ec4525d73aca055a3451ea05ff3c4d23a8585d1425cd40f77297064d5876804": {
+      "description_zh": "生成 MyChatBot UGC 媒体或语音，检查社交账号、分析及广告，发布或定时安排帖子；原说明仅适用于明确的内容任务，不从生成草稿推定发布授权。",
+      "source": "Generate MyChatBot UGC media or speech, inspect social accounts, analytics, and ads, or publish and schedule social posts. Use only for explicit UGC/content work; never infer publication from a request to generate a draft.",
+      "source_sha256": "0ec4525d73aca055a3451ea05ff3c4d23a8585d1425cd40f77297064d5876804",
+      "source_path": "skills/content-and-publishing/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d80221ca9f9e452e013845e8c2320a31a2eb58d9fc3627aadb9eb9e17654400": {
+      "description_zh": "查询维护 MyChatBot 线索、管道、标签、笔记、任务、附件、订单、日历和对话记录；用于 CRM 运营数据，不用于一般账号审计或外联消息。",
+      "source": "Inspect or maintain MyChatBot leads, pipelines, labels, notes, tasks, attachments, orders, calendars, and conversation records. Use for CRM and operational data work, not for general account audits or outbound messaging.",
+      "source_sha256": "1d80221ca9f9e452e013845e8c2320a31a2eb58d9fc3627aadb9eb9e17654400",
+      "source_path": "skills/crm-and-sales-operations/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4df9eacd279f2db84885240d4d7e9f98b0d15279767110b50cc4fa142d4b8070": {
+      "description_zh": "提供 Claude Code 会话首次调用 MyChatBot MCP 前所需操作上下文，覆盖账号审计、Sales/Agents 配置、知识、渠道、CRM、例程、外联、UGC 和测试，以及连接缺失或浏览器授权。",
+      "source": "Mandatory operating context before the first MyChatBot MCP call in a Claude Code conversation. Use for account audits, Sales or Agents setup, knowledge, channels, CRM work, routines, outreach, UGC, testing, or when a bundled MyChatBot connection is missing or needs browser authorization.",
+      "source_sha256": "4df9eacd279f2db84885240d4d7e9f98b0d15279767110b50cc4fa142d4b8070",
+      "source_path": "skills/mychatbot-plugin-basics-claude/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bf5dd457c56bbeb83477c1cf6d08db7e29da895eee2a1ff724ea90626c90e7b": {
+      "description_zh": "检查、准备、启动、暂停或恢复 MyChatBot 跟进及客户外联；原说明要求负责人明确提出联系线索或管理营销活动，不从一般配置请求推定外联。",
+      "source": "Inspect, prepare, launch, pause, or resume MyChatBot follow-ups and outbound customer communication. Use only when the owner explicitly asks to contact leads or manage a campaign; never infer outreach from a general setup request.",
+      "source_sha256": "1bf5dd457c56bbeb83477c1cf6d08db7e29da895eee2a1ff724ea90626c90e7b",
+      "source_path": "skills/outreach-and-followups/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8855ff532fc25164a75284f7ce2f51bfced50049310903e4b7707c6b60fdebe": {
+      "description_zh": "设计、验证、暂存、测试、启用、暂停或移除 MyChatBot 事件或时间驱动自动化，包括 Agents 例程、日程触发器、Sales 线索表单路由及跟进流程依赖。",
+      "source": "Design, validate, stage, test, activate, pause, or remove MyChatBot automation: Agents routines, schedules and triggers, Sales Lead Forms routing, or follow-up workflow dependencies. Use when event or time-driven behavior is the primary task.",
+      "source_sha256": "f8855ff532fc25164a75284f7ce2f51bfced50049310903e4b7707c6b60fdebe",
+      "source_path": "skills/routines-and-automations/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22194900bb0242c2e6de1cabe0b8d90fab52165fd2f926582974ce2396106e96": {
+      "description_zh": "通过私密演练聊天或可重复评估场景测试调整 MyChatBot Sales 助手，检查回归案例、候选指令、工具调用、稳定性评分及上线准备。",
+      "source": "Privately test and tune a MyChatBot Sales assistant with rehearsal chats or repeatable eval scenarios. Use for regression cases, candidate instructions, tool-call inspection, stability scoring, or readiness checks before launch.",
+      "source_sha256": "22194900bb0242c2e6de1cabe0b8d90fab52165fd2f926582974ce2396106e96",
+      "source_path": "skills/test-and-evaluate/SKILL.md",
+      "package_sha256": "68e37f3496803a724749695f4521f7f687bb661887e0db226f664dafc177bea0",
+      "source_package": "MyChatBot-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c47c2636a2bb4866f8833530d06115293009bc8ee91d824decb6d7346aeaf0bb": {
+      "description_zh": "将聊天决策材料导入代码工作区，并在其影响实现前先验证材料。",
+      "source": "Use when importing a chat decision artifact into the code workspace and the artifact must be verified before it can influence implementation.",
+      "source_sha256": "c47c2636a2bb4866f8833530d06115293009bc8ee91d824decb6d7346aeaf0bb",
+      "source_path": "skills/bridge-import/SKILL.md",
+      "package_sha256": "f43278f9c89d688500013f18bc1570ece89872a1c0ad32628543bf5c5be32ffe",
+      "source_package": "mypowers-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "158a5e516a85965003da0108968ca599f6dff8fed8bfc395cb4f6f389a838435": {
+      "description_zh": "将操作姿态、决策及证明输出汇总成便于审计的材料，供审阅人员和合规相关方使用。",
+      "source": "Use when summarizing posture, decisions, and attestation outputs into audit-friendly artifacts for reviewers or compliance stakeholders.",
+      "source_sha256": "158a5e516a85965003da0108968ca599f6dff8fed8bfc395cb4f6f389a838435",
+      "source_path": "skills/compliance-reporter/SKILL.md",
+      "package_sha256": "f43278f9c89d688500013f18bc1570ece89872a1c0ad32628543bf5c5be32ffe",
+      "source_package": "mypowers-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c395d0520dec050cbf3a3f446211663a199685b03f994365ed46a49a4036b35a": {
+      "description_zh": "在当前工具及操作姿态约束下比较实现选项，选择最简单且符合实际证据的路径。",
+      "source": "Use when comparing implementation options and choosing the simplest truthful path within the current tooling and posture constraints.",
+      "source_sha256": "c395d0520dec050cbf3a3f446211663a199685b03f994365ed46a49a4036b35a",
+      "source_path": "skills/decision-weaver/SKILL.md",
+      "package_sha256": "f43278f9c89d688500013f18bc1570ece89872a1c0ad32628543bf5c5be32ffe",
+      "source_package": "mypowers-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "838aaa70113699061ca364c1697379da4a2050bd0cd464e5235016e6415802af": {
+      "description_zh": "依据 Fortress Bible 和当前实施上下文，为项目提炼范围明确、可重复使用的辅助技能。",
+      "source": "Use when a project needs narrow, repeatable helper skills derived from the Fortress Bible and the current implementation context.",
+      "source_sha256": "838aaa70113699061ca364c1697379da4a2050bd0cd464e5235016e6415802af",
+      "source_path": "skills/dynamic-skill-forge/SKILL.md",
+      "package_sha256": "f43278f9c89d688500013f18bc1570ece89872a1c0ad32628543bf5c5be32ffe",
+      "source_package": "mypowers-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f56e7a7d61c288a1eeeeec0a9c81b08bc928e100b20bf12a46f3d58fc47c259": {
+      "description_zh": "在实施前收集项目上下文、界定风险并确定最重要的检查项。",
+      "source": "Use when gathering project context, framing risks, and deciding which checks matter most before implementation begins.",
+      "source_sha256": "4f56e7a7d61c288a1eeeeec0a9c81b08bc928e100b20bf12a46f3d58fc47c259",
+      "source_path": "skills/fortress-lab/SKILL.md",
+      "package_sha256": "f43278f9c89d688500013f18bc1570ece89872a1c0ad32628543bf5c5be32ffe",
+      "source_package": "mypowers-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "29d0f4643e9a595b87a7756491e8e9ed1415b99185193d8869cfc22ad77edd40": {
+      "description_zh": "协调 mypowers 完整 forge 流程，覆盖研究、决策、扫描、证明及审计更新。",
+      "source": "Use when coordinating the full mypowers forge flow across research, decision-making, scanning, attestation, and audit updates.",
+      "source_sha256": "29d0f4643e9a595b87a7756491e8e9ed1415b99185193d8869cfc22ad77edd40",
+      "source_path": "skills/orchestrator/SKILL.md",
+      "package_sha256": "f43278f9c89d688500013f18bc1570ece89872a1c0ad32628543bf5c5be32ffe",
+      "source_package": "mypowers-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95925f0a71eaa66c71200d8965006b87d0f0e49f294b4c3037e4e5b69940783e": {
+      "description_zh": "依据 mypowers 零信任契约及当前本地工具姿态，验证代码修改、导入材料和 forge 输出。",
+      "source": "Use when validating edits, imported artifacts, or forge outputs against the mypowers zero-trust contract and current local tooling posture.",
+      "source_sha256": "95925f0a71eaa66c71200d8965006b87d0f0e49f294b4c3037e4e5b69940783e",
+      "source_path": "skills/security-oracle/SKILL.md",
+      "package_sha256": "f43278f9c89d688500013f18bc1570ece89872a1c0ad32628543bf5c5be32ffe",
+      "source_package": "mypowers-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43f5b7d42db14ea91f56980251f76d71cda3e14af8d7a38e4005fe9372178050": {
+      "description_zh": "为 mypowers 输出生成变更级来源记录、证明材料和有实际证据支持的软件供应链状态。",
+      "source": "Use when producing change-level provenance, attestation artifacts, or truthful supply-chain status for mypowers outputs.",
+      "source_sha256": "43f5b7d42db14ea91f56980251f76d71cda3e14af8d7a38e4005fe9372178050",
+      "source_path": "skills/supply-chain/SKILL.md",
+      "package_sha256": "f43278f9c89d688500013f18bc1570ece89872a1c0ad32628543bf5c5be32ffe",
+      "source_package": "mypowers-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d1be32a7e3a730f9a906b939b97bd75977a6750250b83cb30698c9d02507ed0": {
+      "description_zh": "阅读、更新和创建 Mysocial Brand Studio 中持续维护的受众研究、开场吸引点、品牌语气及策略笔记，为创意工作提供深入品牌上下文。",
+      "source": "Read, update, and create the creator's living Brand Studio documents (audience research, hooks, voice, strategy notes). Use when you learn something durable about the brand worth recording, when asked to update brand documentation, or when you need deep brand context for creative work.",
+      "source_sha256": "0d1be32a7e3a730f9a906b939b97bd75977a6750250b83cb30698c9d02507ed0",
+      "source_path": "skills/brand-docs/SKILL.md",
+      "package_sha256": "b5bf38cce644817a31636e26efe72ef2f6cdd335782c99fd52eed67ddb179a32",
+      "source_package": "Mysocial Intelligence-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2c85905d304bfb4d05cca8f4fa8326599e4c0e2802762866e7f56b6ea4cb9d9": {
+      "description_zh": "维护 Brand Studio 的创作者产品目录，记录每项方案、价格、实际生命周期状态及层级关系，用于定价、发布、推广建议和收入缺口分析。",
+      "source": "Read and maintain the creator's product catalog in Brand Studio - every offer they sell, its price, its real lifecycle status, and how the offers ladder into each other. Use when advising on pricing, offers, launches, or what to promote, when asked what the creator sells or where their revenue gaps are, and when a new or changed offer comes up that is worth recording.",
+      "source_sha256": "a2c85905d304bfb4d05cca8f4fa8326599e4c0e2802762866e7f56b6ea4cb9d9",
+      "source_path": "skills/brand-products/SKILL.md",
+      "package_sha256": "b5bf38cce644817a31636e26efe72ef2f6cdd335782c99fd52eed67ddb179a32",
+      "source_package": "Mysocial Intelligence-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af401de7518e08955034bd3ae9e5ec913f0bc8ac4e6f5f8fc3c873f3cdffbf59": {
+      "description_zh": "依据 Mysocial 创作者记忆及证据，选择下一篇社交内容并优化主题、草稿、开场、脚本、配文、行动号召、格式和制作方向，适用于 Instagram、TikTok 和 YouTube。",
+      "source": "Create the strongest evidence-backed next social post using Mysocial creator memory. Use when deciding what to post, developing a topic or draft, or writing and optimizing hooks, scripts, captions, CTAs, formats, and production direction for Instagram, TikTok, or YouTube.",
+      "source_sha256": "af401de7518e08955034bd3ae9e5ec913f0bc8ac4e6f5f8fc3c873f3cdffbf59",
+      "source_path": "skills/make-next-post/SKILL.md",
+      "package_sha256": "b5bf38cce644817a31636e26efe72ef2f6cdd335782c99fd52eed67ddb179a32",
+      "source_package": "Mysocial Intelligence-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3091083b79df7938eeb799150ea48faff6e8880afc3cd388c78468ec440bfdd4": {
+      "description_zh": "依据 Mysocial 保存的线索信息，起草向品牌推介或向创作者邀约合作的外联、私信及每日批量联系材料。",
+      "source": "Draft evidence-backed outreach to a saved lead - a brand to pitch or a creator to collaborate with - from what Mysocial has stored about them. Use when a user asks to draft outreach, write a pitch or DM to a lead, prepare the day's outreach batch, or contact someone from their lead list.",
+      "source_sha256": "3091083b79df7938eeb799150ea48faff6e8880afc3cd388c78468ec440bfdd4",
+      "source_path": "skills/outreach/SKILL.md",
+      "package_sha256": "b5bf38cce644817a31636e26efe72ef2f6cdd335782c99fd52eed67ddb179a32",
+      "source_package": "Mysocial Intelligence-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6aa161b9280ec0acaa1070a3f3cebcb5b369946a974f1d73074a82a3048b099": {
+      "description_zh": "结合已连接创作者自己的主题，研究公开 Creator Universe 帖子与创作者，了解市场有效做法、热门方向和未覆盖内容，提供超出自有频道的证据。",
+      "source": "Investigate public Creator Universe posts and creators in the context of the connected creator's own topics. Use when a user asks what is working for them, what is hot in their market, what they have not covered, or requests evidence-based research beyond their own channel.",
+      "source_sha256": "f6aa161b9280ec0acaa1070a3f3cebcb5b369946a974f1d73074a82a3048b099",
+      "source_path": "skills/research-creator-universe/SKILL.md",
+      "package_sha256": "b5bf38cce644817a31636e26efe72ef2f6cdd335782c99fd52eed67ddb179a32",
+      "source_package": "Mysocial Intelligence-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9687269aceb92aa2e3d11e0207448bb4755dd01922482612cf75a79e8f38c406": {
+      "description_zh": "为 App Store 或 Play Store 提交前提供 19 阶段验证流程，按 P0 发布阻碍至 P3 可选项分级，覆盖 API、认证、关键路径、导航、权限、离线、数据、安全、构建、性能、无障碍、设备、恢复、合规、端到端及发布前后检查，并规定失败处理及测试元数据。",
+      "source": "Use before every App Store or Play Store submission. Provides a 19-phase verification protocol with priority classification (P0 release blockers through P3 nice-to-have). Covers API health, auth flows, emergency/critical paths, navigation stability, location/permissions, watch apps, email templates, offline resilience, data integrity, security, build consistency, performance, accessibility, device compatibility, disaster recovery, compliance, end-to-end journeys, pre-deploy checks, and post-deploy verification. Includes failure protocol and test metadata format.",
+      "source_sha256": "9687269aceb92aa2e3d11e0207448bb4755dd01922482612cf75a79e8f38c406",
+      "source_path": "skills/app-release-testing/SKILL.md",
+      "package_sha256": "0d839d44064984d82840c1170ad9a4a34378ae4c6eb1067098865100d108df70",
+      "source_package": "n360-app-release-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a618f15696f5d9ac57f39eeeb4c009e1a77d66ebf1f9670b3c62d3dc06fa5d7a": {
+      "description_zh": "在生产部署后执行健康检查、冒烟测试和错误监控，按标准判断是否回滚；原说明称通常约 15 分钟，用于结束部署前确认状态。",
+      "source": "Use immediately after any production deployment. Quick verification checklist to confirm the deploy is healthy before closing out. Covers health checks, smoke tests, error monitoring, and rollback decision criteria. Typically takes 15 minutes.",
+      "source_sha256": "a618f15696f5d9ac57f39eeeb4c009e1a77d66ebf1f9670b3c62d3dc06fa5d7a",
+      "source_path": "skills/post-deploy-verification/SKILL.md",
+      "package_sha256": "0d839d44064984d82840c1170ad9a4a34378ae4c6eb1067098865100d108df70",
+      "source_package": "n360-app-release-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a2e6bbc13425635578659750eaf56f51ebebad705f704acea8d56c84ed7f3f2": {
+      "description_zh": "对涉及至少 5 个文件、多层 API/数据库/前端或跨会话的大功能，采用设计优先、任务分解、评审关卡及集成验证，减少长时间实施中的上下文偏移。",
+      "source": "Use when a feature touches 5+ files, involves multiple layers (API + DB + frontend), or will take more than one session to complete. Enforces structured decomposition with design-first, task breakdown, review gates, and integration verification. Prevents context drift during long implementation sessions.",
+      "source_sha256": "2a2e6bbc13425635578659750eaf56f51ebebad705f704acea8d56c84ed7f3f2",
+      "source_path": "skills/large-feature/SKILL.md",
+      "package_sha256": "6e68c9e7f2029ccfb20d9068bece1b61617ea52bfb5cdd771efc790d680972da",
+      "source_package": "n360-engineering-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a28167799574cb0a6375111b21b374f6dc1d28f7b35474b9325b00e413b16960": {
+      "description_zh": "提供 n360 核心工程规范，规定会话开始结束、代码质量、调查、熔断、安全基线、性能目标、提交格式、回滚与可观测性要求；原说明将其用于开发全程。",
+      "source": "Use at every session start and throughout all development work. This is the core engineering standard — it governs session start/end procedures, code quality rules, investigation protocol, circuit breakers, security baselines, performance targets, commit format, rollback playbooks, and observability requirements. Activates automatically on session start.",
+      "source_sha256": "a28167799574cb0a6375111b21b374f6dc1d28f7b35474b9325b00e413b16960",
+      "source_path": "skills/operating-standard/SKILL.md",
+      "package_sha256": "6e68c9e7f2029ccfb20d9068bece1b61617ea52bfb5cdd771efc790d680972da",
+      "source_package": "n360-engineering-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41cd50829e6162a7d1fc14eae4fed9c7147365fb9b6461c78bf2c8d796ac02ed": {
+      "description_zh": "对新功能、端点、服务方法和关键流程采用严格的测试失败、实现通过、重构循环，要求测试先于实现失败；原说明排除简单缺陷修复、配置文档、单行修改及无逻辑 UI 调整。",
+      "source": "Use when implementing any new feature, endpoint, service method, or critical flow. Enforces strict RED-GREEN-REFACTOR cycles where tests must fail before implementation exists. Does NOT trigger for quick bug fixes, config changes, documentation, single-line patches, or UI tweaks with no logic.",
+      "source_sha256": "41cd50829e6162a7d1fc14eae4fed9c7147365fb9b6461c78bf2c8d796ac02ed",
+      "source_path": "skills/tdd/SKILL.md",
+      "package_sha256": "6e68c9e7f2029ccfb20d9068bece1b61617ea52bfb5cdd771efc790d680972da",
+      "source_package": "n360-engineering-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b200d265470faba73555c7e5e15a62e641f4a97ba80461d0e6cefde93ef98597": {
+      "description_zh": "比较 N|Solid 基线和峰值堆证据，定位保留构造器、闭包及引用路径，调查持续或阶梯式内存增长和常规分析未能定位的泄漏；优先使用已有材料，必要时才采集。",
+      "source": "Performs an advanced N|Solid memory leak hunt comparing baseline vs peak heap evidence to isolate retained constructors, closures, and retainer paths. Use when the user reports recurring/staircase memory growth, elusive leaks, retained objects, closures holding references, or a standard heap sample/snapshot analysis was inconclusive. Prefer supplied baseline/peak assets; capture new samples only when needed.",
+      "source_sha256": "b200d265470faba73555c7e5e15a62e641f4a97ba80461d0e6cefde93ef98597",
+      "source_path": "skills/ns-advanced-memory-leak-hunter/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0762bf656199256f8ad96e0d19b839e6ea0756b59f1d588e474516d70a36d0fe": {
+      "description_zh": "按资源 ID 或本地路径，用 asset-summary 分析已有 N|Solid CPU profile、堆 profile、采样或快照，包括刚生成的资源；不用于采集新资源。",
+      "source": "Analyzes an existing N|Solid diagnostic asset by asset ID or local asset path using asset-summary. Use when the user asks to inspect, review, summarize, or interpret an already-captured CPU profile, heap profile, heap sample, or heap snapshot, including assets just produced by ns-generate-asset. Do not use to capture new profiles/snapshots.",
+      "source_sha256": "0762bf656199256f8ad96e0d19b839e6ea0756b59f1d588e474516d70a36d0fe",
+      "source_path": "skills/ns-analyze-asset/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fd372dce381eeadc78d19965756b50f7184826d039c6760d68bbb4abe2a686e": {
+      "description_zh": "调查已有 N|Solid 事件及相关 MCP 证据，如进程阻塞、新漏洞、agent 退出、未捕获异常、调用栈和 span，必要时转入 CPU、内存、漏洞或追踪流程。",
+      "source": "Investigates an existing N|Solid event payload and correlates relevant MCP evidence. Use when the user provides or references an event such as process-blocked, new-vulnerability-found, agent-exit, uncaught exception, stack trace, span data. Routes follow-up to CPU, memory, vulnerability, or tracing workflows when needed.",
+      "source_sha256": "8fd372dce381eeadc78d19965756b50f7184826d039c6760d68bbb4abe2a686e",
+      "source_path": "skills/ns-analyze-event/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d62c0a7c02e0032d75669772eee79d9fcdff48d97803cac3719e8fe1437bc489": {
+      "description_zh": "分析 N|Solid/OpenTelemetry 追踪中的请求延迟、HTTP 错误和服务依赖，排查慢端点、超时、N+1、await 链及级联故障；仅在未提供追踪时查询 N|Solid，不假定缺失的完整瀑布信息。",
+      "source": "Analyzes N|Solid/OpenTelemetry tracing evidence for request latency, HTTP errors, and service dependencies. Use when the user asks about slow endpoints, API timeouts, distributed traces/spans, N+1 queries, await chains, microservice latency, cascading failures, or trace IDs. Query N|Solid only when no trace data was provided. Do not assume full waterfall details unless supplied.",
+      "source_sha256": "d62c0a7c02e0032d75669772eee79d9fcdff48d97803cac3719e8fe1437bc489",
+      "source_path": "skills/ns-analyze-tracing/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "180c999f175ba53b2e534402e63ffbcac47ac03b7c7efd35f51401a424603d17": {
+      "description_zh": "分析已连接 N|Solid Node.js 进程实际加载的运行时漏洞，识别活跃应用中的 CVE、零日敞口和生产供应链风险；静态项目依赖检查使用 ns-audit-dependencies。",
+      "source": "Analyzes live runtime vulnerabilities loaded by connected N|Solid Node.js processes. Use when the user wants to know which CVEs are actually present in running apps, active exploitable/live vulnerabilities, zero-day exposure, supply-chain risk in production, or production package risk. For static npm-audit-style project dependency scans, use ns-audit-dependencies instead.",
+      "source_sha256": "180c999f175ba53b2e534402e63ffbcac47ac03b7c7efd35f51401a424603d17",
+      "source_path": "skills/ns-analyze-vulnerabilities/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3751abc8113e71c350b4f7620ecebb9c89e4bec096f34b3cec70e468757fa525": {
+      "description_zh": "利用 NCM 漏洞数据审计本地 Node.js 依赖树，检查直接及传递依赖 CVE、风险与升级前修复计划；实际运行时加载漏洞使用 ns-analyze-vulnerabilities。",
+      "source": "Audits a local Node.js project dependency tree with NCM vulnerability data. Use when the user asks for an npm audit-style security review, package CVEs, direct/transitive vulnerability report, dependency risk assessment, or remediation plan before upgrading. For vulnerabilities actually loaded in running N|Solid processes, use ns-analyze-vulnerabilities instead.",
+      "source_sha256": "3751abc8113e71c350b4f7620ecebb9c89e4bec096f34b3cec70e468757fa525",
+      "source_path": "skills/ns-audit-dependencies/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1291694ae4d73bba9a4161229fa140c6f9eea4a6f4d1cecac8637f7f231bc6ab": {
+      "description_zh": "基准测试单个 Node.js 函数的耗时、吞吐量和统计，比较输入规模或每秒操作数；原版与优化版的 A/B 证明使用 ns-validate-optimization。",
+      "source": "Benchmarks one Node.js function and reports throughput/statistics. Use when the user asks to benchmark or time a single function, measure ops/sec, compare input sizes, or answer \"how fast is this code?\" Use ns-validate-optimization instead when original and optimized versions need an A/B proof.",
+      "source_sha256": "1291694ae4d73bba9a4161229fa140c6f9eea4a6f4d1cecac8637f7f231bc6ab",
+      "source_path": "skills/ns-benchmark-run/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2b2c006247fe509babde82161d6dadfba1bbebd10e22656fc8b993cf8cd5a86": {
+      "description_zh": "依据已有证据或 N|Solid CPU 指标与 profile，诊断 Node.js 高 CPU、慢端点或函数、事件循环阻塞、热点循环及火焰图；优先已有资源、摘要、追踪或本地 profile。",
+      "source": "Diagnoses high CPU or slow execution in a Node.js app using supplied evidence or N|Solid CPU metrics/profiles. Use when the user reports CPU spike, high CPU percent, slow endpoint/function, event loop blocking, flamegraph/profile analysis, hot loop, or asks why an app is slow. Prefer existing asset IDs, summaries, trace data, or local profiles before capturing a new profile.",
+      "source_sha256": "d2b2c006247fe509babde82161d6dadfba1bbebd10e22656fc8b993cf8cd5a86",
+      "source_path": "skills/ns-cpu-spike-analysis/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7cfc2d3d6305e629e35f1cabefdcf7607dade429476269911cc26df3d8b2a9e7": {
+      "description_zh": "按 ID 将 N|Solid 原始堆快照、CPU 或堆 profile 下载到本地，供 snapshot-parser、Chrome DevTools 或差异工具使用；分析资源使用 ns-analyze-asset。",
+      "source": "Downloads a raw N|Solid diagnostic asset (heap snapshot, CPU profile, or heap profile) to local disk by asset ID. Use when the user asks to download, save, export, or pull an asset file locally, or needs the raw file for external tools such as snapshot-parser, Chrome DevTools, or diffing. Do not use for analyzing assets — ns-analyze-asset covers that.",
+      "source_sha256": "7cfc2d3d6305e629e35f1cabefdcf7607dade429476269911cc26df3d8b2a9e7",
+      "source_path": "skills/ns-download-asset/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6711ac835504e803e7bb57c7058612d00c50e0c58667ee5c6930a047d4b7a308": {
+      "description_zh": "在用户明确要求时，为已连接 Node.js 应用采集新的 N|Solid CPU profile、火焰图、堆采样、快照或跟踪资源，并保存或交接分析；已有资源使用分析技能。",
+      "source": "Captures a new N|Solid diagnostic asset for a connected Node.js app. Use when the user explicitly asks to collect, capture, or generate a CPU profile, flamegraph, heap sample, heap snapshot, or heap tracking asset and wants it saved or handed off for analysis. For existing assets, use ns-analyze-asset instead.",
+      "source_sha256": "6711ac835504e803e7bb57c7058612d00c50e0c58667ee5c6930a047d4b7a308",
+      "source_path": "skills/ns-generate-asset/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a62639ea0a18a221edc90943142b6b778a06c1514e52e400edf8c2564fa027dc": {
+      "description_zh": "为已连接或登记的 N|Solid Node.js 应用生成软件物料清单 SBOM，提供合规、SOC2/供应商审查、许可证、依赖及传递包盘点证据。",
+      "source": "Generates a Software Bill of Materials (SBOM) for a connected or registered N|Solid Node.js app. Use when the user asks for SBOM, software bill of materials, compliance evidence, SOC2/vendor review, license inventory, dependency inventory, or transitive package report for a running application.",
+      "source_sha256": "a62639ea0a18a221edc90943142b6b778a06c1514e52e400edf8c2564fa027dc",
+      "source_path": "skills/ns-generate-sbom/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c12233fae45e31b0fa09c08eaf3240b6f5852ec946e36d9bbb3e75d22d48352": {
+      "description_zh": "根据堆证据或 N|Solid 采样快照，诊断 Node.js 内存增长、堆峰值、RSS 上升、OOM 和疑似泄漏，开展内存根因分流。",
+      "source": "Diagnoses memory growth, heap spikes, RSS increases, OOMs, and suspected leaks in Node.js apps using supplied heap evidence or N|Solid heap sampling/snapshots. Use when the user reports memory leak, heap growing, high RSS, out-of-memory, heap snapshot/profile analysis, or wants memory root-cause triage.",
+      "source_sha256": "6c12233fae45e31b0fa09c08eaf3240b6f5852ec946e36d9bbb3e75d22d48352",
+      "source_path": "skills/ns-memory-spike-analysis/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "421abbeb1f9c93e0fc77756bf4a7ff651771787494ec799446b577fa02f2a984": {
+      "description_zh": "规划项目 Node.js 运行时升级，检测当前版本，说明 LTS/EOL 依据、依赖兼容性、升级步骤和回退指引，支持更新 .nvmrc 或 engines。",
+      "source": "Plans a Node.js runtime upgrade for a project. Use when the user asks which Node version to use, upgrade/migrate Node.js, address LTS/EOL, update .nvmrc or engines, or move between Node versions. Produces version detection, LTS/EOL rationale, dependency compatibility checks, upgrade steps, and rollback guidance.",
+      "source_sha256": "421abbeb1f9c93e0fc77756bf4a7ff651771787494ec799446b577fa02f2a984",
+      "source_path": "skills/ns-node-upgrade/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c114e867af68de19da91ecfaf3a6e28dbbf7ae74b539e9c49081d2757a0d0e5": {
+      "description_zh": "优化用户指定的本地 Node.js 函数以提升吞吐、降低 CPU/内存消耗；要求工作区源码，评估影响范围、提出保持行为的改写并交由基准验证，不只做线上诊断。",
+      "source": "Optimizes a specific local Node.js function selected by the user. Use when the user points to code and asks to make it faster, improve throughput, reduce CPU/memory cost, or fix a slow function. Requires workspace source; analyzes blast radius, proposes a behavior-preserving rewrite, and hands off to benchmark validation. Not for live N|Solid diagnostics alone.",
+      "source_sha256": "5c114e867af68de19da91ecfaf3a6e28dbbf7ae74b539e9c49081d2757a0d0e5",
+      "source_path": "skills/ns-optimize-function/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a8cad4d6404b0b87cc37d104508ee6255c6271fd45c1bb6c98835bf79a96c0f": {
+      "description_zh": "利用 NCM 数据比较 npm 包替代方案，为弃用、废弃或高风险依赖提供迁移和 API 差异指引；继续使用同一包的版本升级交由 ns-upgrade-package。",
+      "source": "Finds and evaluates alternatives to an npm package. Use when the user wants to replace, drop, or swap a dependency, migrate away from a deprecated/abandoned/risky package, or asks \"what can I use instead of X?\" Compares candidates with NCM data and provides migration/API-diff guidance. Use ns-upgrade-package for staying on the same package.",
+      "source_sha256": "8a8cad4d6404b0b87cc37d104508ee6255c6271fd45c1bb6c98835bf79a96c0f",
+      "source_path": "skills/ns-replace-package/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "afc435780f88393d75d2eb1df6735188157981fcc9122256cdb50eff9e23b6aa": {
+      "description_zh": "切换 nsolid-plugin 认证对应的 NodeSource 组织，适用于多组织成员或 MCP 显示错误组织的情况。",
+      "source": "Switches which NodeSource organization nsolid-plugin is authenticated against. Use when the user is a member of multiple NodeSource orgs and wants to switch orgs, sign in to a different org, or asks why MCP data is showing the wrong organization.",
+      "source_sha256": "afc435780f88393d75d2eb1df6735188157981fcc9122256cdb50eff9e23b6aa",
+      "source_path": "skills/ns-switch-org/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ec6b4f0d6ba2a6d5f0b2ddfb8911e8aeda95fac896da4e4e6e331e1638e0485": {
+      "description_zh": "规划项目中单个 npm 依赖的版本升级，评估 semver、破坏性变化和 peer 依赖风险，提供目标版本及包管理器命令；换库使用 ns-replace-package。",
+      "source": "Plans an upgrade for a specific npm package already used by a Node.js project. Use when the user wants to bump/update one dependency, assess semver or breaking changes, resolve peer dependency risk, move to a target version, or get exact package-manager commands. Use ns-replace-package when switching to a different library.",
+      "source_sha256": "5ec6b4f0d6ba2a6d5f0b2ddfb8911e8aeda95fac896da4e4e6e331e1638e0485",
+      "source_path": "skills/ns-upgrade-package/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05d007f1fc7a4f26d4e820e8287110e87c1cbf103d9bd8266dafe6a0568b7320": {
+      "description_zh": "以受控 A/B 基准测试验证同一 Node.js 函数原版与优化版，比较每秒操作数、p 值和显著性并检查性能回归；单版本计时使用 ns-benchmark-run。",
+      "source": "Validates a proposed optimization with controlled A/B benchmarks. Use when original and optimized versions of the same Node.js function need statistical proof, ops/sec comparison, p-value/significance, or a performance regression check. Also fits after ns-optimize-function or diagnostics produce a candidate fix. Use ns-benchmark-run for single-version timing only.",
+      "source_sha256": "05d007f1fc7a4f26d4e820e8287110e87c1cbf103d9bd8266dafe6a0568b7320",
+      "source_path": "skills/ns-validate-optimization/SKILL.md",
+      "package_sha256": "6c2f91511958ee8ca7bd81cf2df53e97686131da5d0359be72bcb5dce643fb14",
+      "source_package": "N_Solid Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4d5c8ceecc2c7c215688a6ef51691edd519ac248080b1035b3a82d64e00733c": {
+      "description_zh": "用 namespace-guard npm 包检查用户选择的名字及输入 LLM 的不可信文本，处理 Unicode 同形字、混合文字、不可见字符、冒充和规避式粗俗词，支持并发安全占名及文本归一化；原说明基于 TR39 和测量数据，并称混淆文本可能放大 token 消耗至 5.7 倍。",
+      "source": "Stops confusables (lookalike letters, also called homoglyphs) in names people choose and in text sent to an LLM, using the namespace-guard npm package. Use when building sign-up, usernames, handles, organisation or workspace slugs, or any name users pick; when reviewing code that stores or compares such names; or when documents, emails, web pages or other untrusted text go into a model. Covers impersonation and Unicode spoofing (a Cyrillic а for a, rn for m, paypa1), mixed-script and homograph tricks, invisible characters, profanity with evasions, race-safe claiming, and turning confusables back into plain letters before a model reads them, which prevents Denial of Spend (flooded text can take up to 5.7x the tokens). Built on Unicode TR39 confusables.txt plus measured data.",
+      "source_sha256": "f4d5c8ceecc2c7c215688a6ef51691edd519ac248080b1035b3a82d64e00733c",
+      "source_path": "skills/lookalike-names-and-text/SKILL.md",
+      "package_sha256": "e0d828be5225905765503796a4273dee1ed7d88b24a0eed955aa4da607334be9",
+      "source_package": "Namespace Guard-0.23.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdf0909880b695dfaaa7a7cb0200573565841484e88900c02e1ade632a20dde8": {
+      "description_zh": "对数量、成本、时长或规模做费米式粗略估算，明确假设并给出范围，适用于快速数量级判断。",
+      "source": "Make a back-of-the-envelope estimate with stated assumptions and a range. Use when the user asks roughly how much, how many, how long or how big something is, asks for a Fermi estimate, a ballpark, or napkin math, or runs /napkin-math:estimate <question>.",
+      "source_sha256": "bdf0909880b695dfaaa7a7cb0200573565841484e88900c02e1ade632a20dde8",
+      "source_path": "skills/estimate/SKILL.md",
+      "package_sha256": "295accc97c01b4d2ab39fdc3baca0bcc89ac8ecf4fde0dd607036288f173d3c6",
+      "source_package": "Napkin Math-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef2883c40df5ed666a544ca9b0558a82361b1af504716dab2789a006ed772bf6": {
+      "description_zh": "通过独立快速估算检查引用数字是否合理，评估包含数字的说法能否成立。",
+      "source": "Check whether a number someone quoted is plausible, using a quick independent estimate. Use when the user asks \"does this number make sense\", \"is this plausible\", \"sanity check this figure\", pastes a claim with a number in it and asks if it holds up, or runs /napkin-math:sanity-check <claim>.",
+      "source_sha256": "ef2883c40df5ed666a544ca9b0558a82361b1af504716dab2789a006ed772bf6",
+      "source_path": "skills/sanity-check/SKILL.md",
+      "package_sha256": "295accc97c01b4d2ab39fdc3baca0bcc89ac8ecf4fde0dd607036288f173d3c6",
+      "source_package": "Napkin Math-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92855fbc113a4e0da256e085261d7bdf1fc3ab1ee904754e3dda5b2327a800d5": {
+      "description_zh": "针对用户计划、提案或决策，提出有事实依据的最强反对论点，帮助找出遗漏和薄弱处。",
+      "source": "Argue the strongest honest case against the user's plan, proposal or decision. Use when the user asks for a devil's advocate, asks \"what am I missing\", asks you to poke holes in something, or runs /naysayer:devils-advocate.",
+      "source_sha256": "92855fbc113a4e0da256e085261d7bdf1fc3ab1ee904754e3dda5b2327a800d5",
+      "source_path": "skills/devils-advocate/SKILL.md",
+      "package_sha256": "07b2e8fd3fa72703d531f062e0ea27d6b4194c1d8f05ea8414444e9cfe5d49c2",
+      "source_package": "Naysayer-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3d2c4fa9f97d85883d375ec495babb79d54f794ddac79a9616fa90a2ea1a1be": {
+      "description_zh": "对计划或项目开展事前失败分析，推演可能出错的方式与原因。",
+      "source": "Run a premortem on a plan or project. Use when the user asks for a premortem, asks how something could fail, asks what could go wrong before starting, or runs /naysayer:premortem.",
+      "source_sha256": "b3d2c4fa9f97d85883d375ec495babb79d54f794ddac79a9616fa90a2ea1a1be",
+      "source_path": "skills/premortem/SKILL.md",
+      "package_sha256": "07b2e8fd3fa72703d531f062e0ea27d6b4194c1d8f05ea8414444e9cfe5d49c2",
+      "source_package": "Naysayer-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd4cfc84835dcbe9cb6075e9568cf1ab3a20cb30d6264142a80f7d16faba5e2b": {
+      "description_zh": "依据真实 Linear 项目工单开展事前失败分析，识别可能导致项目失败或影响发布的票据。",
+      "source": "Run a premortem on a real Linear project, grounded in its actual tickets. Use when the user asks for a premortem on a Linear project, asks what could sink a project they track in Linear, asks which tickets put a launch at risk, or runs /naysayer:project-premortem <project name or URL>.",
+      "source_sha256": "bd4cfc84835dcbe9cb6075e9568cf1ab3a20cb30d6264142a80f7d16faba5e2b",
+      "source_path": "skills/project-premortem/SKILL.md",
+      "package_sha256": "07b2e8fd3fa72703d531f062e0ea27d6b4194c1d8f05ea8414444e9cfe5d49c2",
+      "source_package": "Naysayer-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "377e297ac80d799dcf22b96f399a86cd697953bcc966f2e07f17af7b7ec5faca": {
+      "description_zh": "通过集成在 Neon 分支、由 Databricks 支持的 AI Gateway，以一个 API 和凭据调用多厂商前沿或开源 LLM，支持模型路由、日志与限流；原说明称可通过更换 base URL 适配 OpenAI、Anthropic、google-genai、Vercel AI SDK 和 Mastra。",
+      "source": "One API and one credential for frontier and open-source LLMs, built into your Neon branch and powered by Databricks. Use when a user wants to call an LLM, add AI/chat/an agent to their app, route between model providers (OpenAI, Anthropic, Google/Gemini, Meta, Alibaba, and more), or avoid juggling separate provider API keys and accounts — especially when they already use Neon and want AI requests to branch with their project. Works with the OpenAI SDK, Anthropic SDK, google-genai, the Vercel AI SDK, and Mastra by changing only the base URL. Triggers include \"call an LLM\", \"add AI to my app\", \"chat completion\", \"model routing\", \"LLM proxy/gateway\", \"one API for all models\", \"use Claude/GPT/Gemini\", \"AI SDK\", \"Mastra agent\", \"Neon AI Gateway\", and \"log/rate-limit AI calls\".",
+      "source_sha256": "377e297ac80d799dcf22b96f399a86cd697953bcc966f2e07f17af7b7ec5faca",
+      "source_path": "skills/neon-ai-gateway/SKILL.md",
+      "package_sha256": "a3ad977fb3c55322f491cd39e5154047167362e900cfff36e99e92d5e47d5933",
+      "source_package": "neon-2.0.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dab28094f7011666242e50c61b084d9f7aed476ba37ae81462bee4b84620c094": {
+      "description_zh": "为应用配置 Neon Auth 的登录、注册、密码重置、OTP、magic link、组织、OAuth、passkey 和 MFA；原说明无已有身份服务时默认 Managed Better Auth，保留正常工作的已有 IdP，超出托管插件支持时用自管理方案。",
+      "source": "Add authentication to a new app. Use for \"add auth\", \"add login\", Neon Auth (Managed Better Auth), identity routing, sign-up, sign-in, password reset, email OTP, magic links, organizations, phone OTP, OAuth, passkeys, MFA, trusted domains, invalid domain, and @neondatabase/auth. No existing identity: default to Managed Better Auth. Keep working Better Auth, Clerk, Supabase Auth, or another IdP. User asked to migrate from Supabase Auth: Managed Better Auth. A required plugin outside Managed support: self-managed Better Auth on a Neon Function or the existing app host. Also use for auth APIs in @neondatabase/neon-js.",
+      "source_sha256": "dab28094f7011666242e50c61b084d9f7aed476ba37ae81462bee4b84620c094",
+      "source_path": "skills/neon-auth/SKILL.md",
+      "package_sha256": "a3ad977fb3c55322f491cd39e5154047167362e900cfff36e99e92d5e47d5933",
+      "source_package": "neon-2.0.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f66c121f9594975f4a8d24582a0484bce551439bff6055d970db4c87d6c2c2a": {
+      "description_zh": "在 Neon 分支部署长运行 serverless Node.js HTTP 函数，自动注入 DATABASE_URL，支持长流式智能体、WebSocket/SSE、webhook、机器人和 MCP server，以及 cron 或对象存储事件触发、日志及生产加固。",
+      "source": "Long-running, serverless Node.js HTTP functions deployed onto your Neon branch, with DATABASE_URL injected automatically and compute that runs next to your data. Use when a user wants to host an API, an AI agent with long streaming responses, a WebSocket or server-sent-events (SSE) server, a webhook handler, a Discord bot, an MCP server, or any request/response workload that risks timing out on short, lambda-style serverless functions — and wants it to branch with their database. Also use for Function Triggers: a cron or an object-storage event that POSTs to a function. Triggers include \"serverless function\", \"deploy an API\", \"long-running function\", \"streaming agent\", \"SSE server\", \"WebSocket server\", \"webhook handler\", \"MCP server\", \"cron\", \"function trigger\", \"scheduled function\", \"cron job\", \"object storage trigger\", \"on upload\", \"run code next to my database\", \"function that won''t time out\", \"function logs\", \"Neon Functions\", \"Neon Compute\", \"DDoS protection\", \"rate limiting\", and \"production hardening\".",
+      "source_sha256": "7f66c121f9594975f4a8d24582a0484bce551439bff6055d970db4c87d6c2c2a",
+      "source_path": "skills/neon-functions/SKILL.md",
+      "package_sha256": "a3ad977fb3c55322f491cd39e5154047167362e900cfff36e99e92d5e47d5933",
+      "source_package": "neon-2.0.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "511ac8c95b5cfd4423a41cb0f72d58b05a441e08a8845ee36af8e10fa263d9e5": {
+      "description_zh": "配置随 Neon 项目分支同步的 S3 兼容对象存储，用于 bucket、上传、图片、文档、头像及用户生成文件，并处理预签名 URL、存储日志与前置 CDN。",
+      "source": "S3-compatible object storage that branches with your Neon project, so files and the database stay in sync across every branch. Use when a user wants object storage, a bucket, blob/file storage, or somewhere to put uploads, images, documents, avatars, or user-generated files for their app or agent — especially when they already use (or are setting up) Lakebase Postgres and don't want to add a separate storage provider like AWS S3, Cloudflare R2, or Supabase Storage. Triggers include \"object storage\", \"bucket\", \"blob storage\", \"file storage\", \"store uploads/images/files\", \"S3-compatible storage\", \"presigned URL\", \"where do I put files\", \"storage logs\", \"bucket logs\", \"CDN in front of object storage\", \"Neon Object Storage\", \"Neon Storage\", and \"storage that branches with my database\".",
+      "source_sha256": "511ac8c95b5cfd4423a41cb0f72d58b05a441e08a8845ee36af8e10fa263d9e5",
+      "source_path": "skills/neon-object-storage/SKILL.md",
+      "package_sha256": "a3ad977fb3c55322f491cd39e5154047167362e900cfff36e99e92d5e47d5933",
+      "source_package": "neon-2.0.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e36f006719e81d928035291624c6d24cb84bbc0485cfc4484c9dc59d8324d9f": {
+      "description_zh": "选择创建适合开发测试的 Neon 数据库分支，支持真实数据迁移测试、敏感数据仅 schema 分支、从父分支重置、过期策略和 CI/CD 逐 PR 生命周期。",
+      "source": "Choose and create the right Neon branch type for testing and development. Use when users ask about Neon branching, migration testing with real data, isolated test environments, schema-only branch workflows for sensitive data, resetting a branch from its parent, branch expiration and CI/CD branch lifecycles, or branch creation via Neon CLI or Neon MCP. Triggers include \"Neon branch\", \"test migrations safely\", \"branch production data\", \"schema-only branch\", \"reset branch\", \"branch per PR\" and \"sensitive data testing\".",
+      "source_sha256": "3e36f006719e81d928035291624c6d24cb84bbc0485cfc4484c9dc59d8324d9f",
+      "source_path": "skills/neon-postgres-branches/SKILL.md",
+      "package_sha256": "a3ad977fb3c55322f491cd39e5154047167362e900cfff36e99e92d5e47d5933",
+      "source_package": "neon-2.0.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e34a127998439cb32cea6fb04b5b6643f13e0a05c7c292d2c1ea1ba480c9190": {
+      "description_zh": "诊断优化 Postgres 出站数据传输及费用，检查 SELECT *、过量取数和查询模式，减少数据库向应用发送的数据与 Neon 成本。",
+      "source": "Diagnose and fix excessive Postgres egress (network data transfer) in a codebase. Use when a user mentions high database bills, unexpected data transfer costs, network transfer charges, egress spikes, \"why is my Neon bill so high\", \"database costs jumped\", SELECT * optimization, query overfetching, reduce Neon costs, optimize database usage, or wants to reduce data sent from their database to their application. Also use when reviewing query patterns for cost efficiency, even if the user doesn't explicitly mention egress or data transfer.",
+      "source_sha256": "3e34a127998439cb32cea6fb04b5b6643f13e0a05c7c292d2c1ea1ba480c9190",
+      "source_path": "skills/neon-postgres-egress-optimizer/SKILL.md",
+      "package_sha256": "a3ad977fb3c55322f491cd39e5154047167362e900cfff36e99e92d5e47d5933",
+      "source_package": "neon-2.0.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aed8ddf187fd49808d2eac4ddfddb430ce2049caf7ebc91aa4283a078bf40027": {
+      "description_zh": "提供 Neon 上 Lakebase Postgres 的连接、池化与直连、迁移、分支、自动伸缩、缩至零、恢复、副本、IP 白名单、逻辑复制和搜索实践；用于已有 DATABASE_URL、SQL、schema、检查及语义、向量、全文或混合搜索。",
+      "source": "Guides and best practices for working with Lakebase Postgres on Neon: connections, pooled vs direct, schema migrations, branching, autoscaling, scale-to-zero, instant restore, read replicas, IP allow lists, logical replication, and Lakebase Search. Use when the work is an existing DATABASE_URL, SQL, schema, inspect, or search. New backends, Auth, files, Functions, and LLM calls go to the parent `neon` skill. Also use for \"@neondatabase/serverless\", \"@neondatabase/neon-js\", \"neon inspect db\", \"semantic search\", \"vector search\", \"full-text search\", \"BM25\", or \"hybrid search\".",
+      "source_sha256": "aed8ddf187fd49808d2eac4ddfddb430ce2049caf7ebc91aa4283a078bf40027",
+      "source_path": "skills/neon-postgres/SKILL.md",
+      "package_sha256": "a3ad977fb3c55322f491cd39e5154047167362e900cfff36e99e92d5e47d5933",
+      "source_package": "neon-2.0.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89652905c81db1fe7391cd0005c20aaa1acd58483001eb1f2a9596bf6c825137": {
+      "description_zh": "作为 Neon 后端入口，介绍围绕 Lakebase Postgres 的认证、对象存储、函数与 AI Gateway，配置 CLI/MCP 并采用分支优先流程；已有数据库 SQL 和登录身份任务由对应子技能处理。",
+      "source": "Overview of Neon, a complete set of cloud backend primitives around Lakebase Postgres: Auth, Object Storage, Functions, and the AI Gateway. Start here to choose Neon for undecided login, files, APIs, and LLM calls, set up the CLI or MCP server, and follow the branch-first workflow. Use when building an app or backend on Neon, or when \"Neon\" or \"Lakebase Postgres\" is mentioned. Child skill neon-postgres wins for an existing DATABASE_URL, SQL, schema, inspect, or search. Child skill neon-auth wins for login, users, sessions, identity routing, and Managed Better Auth setup. Also use for object storage, S3, buckets, serverless functions, function triggers, cron, AI gateway, LLM calls, logs, Loki, Grafana, observability, postgres, database, backend, Claimable Neon, neon.new, or a no-signup database.",
+      "source_sha256": "89652905c81db1fe7391cd0005c20aaa1acd58483001eb1f2a9596bf6c825137",
+      "source_path": "skills/neon/SKILL.md",
+      "package_sha256": "a3ad977fb3c55322f491cd39e5154047167362e900cfff36e99e92d5e47d5933",
+      "source_package": "neon-2.0.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dcf64f20f67a8f271979b1c4e139fe8401ab85de192bd76e16e596addf3c38e0": {
+      "description_zh": "利用 Brand Analytics 和广告数据分析市场及竞品，包括关键词缺口、搜索势头、份额、点击转化、否定关键词、搜索漏斗、交叉销售、复购、类目趋势、BSR 和广告表现。",
+      "source": "This skill should be used when the user asks about \"keyword gaps\", \"search term momentum\", \"competitive landscape\", \"market share analysis\", \"click share\", \"conversion share\", \"keyword mining\", \"negative keyword identification\", \"search funnel metrics\", \"cross-sell opportunities\", \"repeat purchase analysis\", \"competitor tracking\", \"category trends\", \"BSR analysis\", \"advertising performance\", or needs help with competitive intelligence and market analysis. Provides data-driven market insights using Brand Analytics and advertising data.",
+      "source_sha256": "dcf64f20f67a8f271979b1c4e139fe8401ab85de192bd76e16e596addf3c38e0",
+      "source_path": "skills/april-market-intelligence/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d93a55e417d5b16c57ca6f37ebf643407d26b6e3c22d8ebc4483b71018f04bc9": {
+      "description_zh": "按 7 阶段采购订单规划流程分析补货候选、再订货点、库存天数、安全库存、交期、预测情景和缺货风险，优化 FBA 及库存采购时间，并用诊断树排查空结果。",
+      "source": "This skill should be used when the user asks about \"purchase order planning\", \"PO recommendations\", \"reorder points\", \"stock replenishment\", \"FBA replenishment\", \"inventory restock\", \"days of supply\", \"safety stock\", \"lead time planning\", \"forecast scenario selection\", \"stockout risk\", \"product family lookup\", \"replenishment candidates\", or needs help optimizing inventory procurement timing. Follows a structured 7-phase PO planning workflow with diagnostic tree for empty results.",
+      "source_sha256": "d93a55e417d5b16c57ca6f37ebf643407d26b6e3c22d8ebc4483b71018f04bc9",
+      "source_path": "skills/dorian-replenishment/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9d77db1db52b4918ae7c22c0c26fee97022b88449760bf6ce56bffd745ae76d": {
+      "description_zh": "开展销售与需求预测，生成统计或季节性预测、比较情景及准确性、手工调整，并管理预测设置、任务状态和工作流。",
+      "source": "This skill should be used when the user asks about \"sales forecast\", \"demand planning\", \"forecast scenarios\", \"forecast comparison\", \"forecast accuracy\", \"forecast generation\", \"statistical forecasting\", \"forecast adjustments\", \"seasonal forecasting\", \"sales projections\", \"forecast settings\", \"forecast job status\", or needs help with demand forecasting and sales planning. Covers forecast generation, scenario comparison, manual adjustments, and workflow discipline.",
+      "source_sha256": "a9d77db1db52b4918ae7c22c0c26fee97022b88449760bf6ce56bffd745ae76d",
+      "source_path": "skills/kio-forecasting/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41779b42e1b861f56ff15e23548234dd62aba926122e34b71d570424ac971a4f": {
+      "description_zh": "研究 Amazon 商品营销，审阅优化 listing 合规、关键词、搜索查询、竞品、转化率、A+ 内容、图片、要点和标题；原说明先检查 NeonPanel 及 Brand Analytics 工具取数。",
+      "source": "This skill should be used when the user asks about \"Amazon listing audit\", \"listing optimization\", \"listing compliance\", \"keyword research\", \"search term analysis\", \"competitor analysis\", \"Brand Analytics data\", \"search query performance\", \"conversion rates\", \"listing quality score\", \"A+ content\", \"product images\", \"bullet points review\", \"title optimization\", or needs help with Amazon product marketing research. Follows a tools-first data retrieval approach — always check NeonPanel and Brand Analytics tools before asking the user for data.",
+      "source_sha256": "41779b42e1b861f56ff15e23548234dd62aba926122e34b71d570424ac971a4f",
+      "source_path": "skills/mark-marketing-research/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b7543c2a21909f4399a2677897a03137ab456a1663aef9ad30891267bc66d15": {
+      "description_zh": "分析历史财务数据，包括损益、总账、分录、Amazon 报表及结算、收入对账、COGS、科目表、服务映射、记账同步、单位成本和库存估值；前瞻规划交由 Sanjay。",
+      "source": "This skill should be used when the user asks about \"P&L analysis\", \"profit and loss\", \"general ledger\", \"journal entries\", \"Amazon statements\", \"revenue reconciliation\", \"COGS analysis\", \"Chart of Accounts\", \"service mapping\", \"bookkeeping sync\", \"financial reporting\", \"unit costs\", \"inventory valuation\", \"Amazon settlement\", \"statement reconciliation\", or needs help understanding historical financial data. Focuses on backward-looking financial analysis. For forward-looking financial planning, directs users to Sanjay (Financial Analyst).",
+      "source_sha256": "1b7543c2a21909f4399a2677897a03137ab456a1663aef9ad30891267bc66d15",
+      "source_path": "skills/marta-accounting/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c8ef0c77313e0c70aa9172ca22c62e0425cd6f50b500737cbf8dd837d525cf4": {
+      "description_zh": "支持 NeonPanel 的 5 阶段客户实施生命周期，涵盖导入模板、验证和错误处理、QuickBooks/Xero、科目及服务账户映射、FIFO COGS、到岸成本、Amazon 连接、PO 发票匹配、上线准备及稳定期。",
+      "source": "This skill should be used when the user asks about \"NeonPanel onboarding\", \"data import\", \"upload template\", \"QuickBooks/Xero setup\", \"Chart of Accounts mapping\", \"dry run\", \"go-live readiness\", \"service-account mapping\", \"FIFO COGS setup\", \"landed cost configuration\", \"Amazon connection\", \"import errors\", \"data validation\", \"PO invoice mapping\", or needs help with NeonPanel customer success workflows. Covers the full 5-phase onboarding lifecycle, data import playbooks, accounting system integration, and post-go-live stabilization.",
+      "source_sha256": "3c8ef0c77313e0c70aa9172ca22c62e0425cd6f50b500737cbf8dd837d525cf4",
+      "source_path": "skills/neon-customer-success/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e598214bcf356939ebac1c300dfe4be1b7b6672e76d4e7a5735673ac692aeb50": {
+      "description_zh": "引导已安装 NeonPanel 插件的用户配置账号与数据源，将 NeonPanel 或 NeonaSphera 连接 Claude，设置 MCP 并了解智能体用途。",
+      "source": "Use this skill when the user has just installed the NeonPanel Claude plugin, asks how to set it up, asks what accounts or data sources to connect, wants to connect NeonPanel or NeonaSphera to Claude, asks about MCP setup, or needs help getting value from NeonPanel agents in Claude.",
+      "source_sha256": "e598214bcf356939ebac1c300dfe4be1b7b6672e76d4e7a5735673ac692aeb50",
+      "source_path": "skills/neonpanel-onboarding/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a6693a9783352f2d031d30435216d55db0e7860301834e842f4ae0624b371b4": {
+      "description_zh": "分析供应链及履约库存运营，包括仓库余额、FBA 入库、运输状态和到达预测、遗失批次、COGS 原因、库存交易、销售速度、估值和库存水平。",
+      "source": "This skill should be used when the user asks about \"supply chain analysis\", \"inventory tracking\", \"shipment status\", \"warehouse balances\", \"FBA inbound\", \"lost batches\", \"COGS diagnosis\", \"inventory transactions\", \"sales velocity\", \"shipment arrival prediction\", \"logistics tracking\", \"inventory valuation\", \"stock levels\", or needs help analyzing fulfillment and inventory operations. Covers inventory ops, logistics, lost batches/COGS diagnosis, and inventory transactions.",
+      "source_sha256": "6a6693a9783352f2d031d30435216d55db0e7860301834e842f4ae0624b371b4",
+      "source_path": "skills/nina-supply-chain/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "efe3d11f944c88e3503822fde718c55a5d7cc5a1d6b8d5701d33f2933952de5a": {
+      "description_zh": "依据 Marta 的历史财务数据开展前瞻财务分析，包括现金流、预测、预算、支出策略、盈利、成本优化、利润率和收入规划。",
+      "source": "This skill should be used when the user asks about \"cash flow planning\", \"financial forecasting\", \"spending strategy\", \"budget analysis\", \"financial decisions\", \"profitability analysis\", \"cost optimization\", \"margin improvement\", \"financial projections\", \"revenue analysis\", or needs forward-looking financial guidance. Takes historical data from Marta (Accounting Analyst) and uses it for financial planning, cash flow management, and strategic spending recommendations.",
+      "source_sha256": "efe3d11f944c88e3503822fde718c55a5d7cc5a1d6b8d5701d33f2933952de5a",
+      "source_path": "skills/sanjay-financial-analyst/SKILL.md",
+      "package_sha256": "ed3da411416d77d1d6a87f7b80d62a102998651954b9835df58540a8edaa4df9",
+      "source_package": "NeonPanel-3.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c118a8abc21f090951184d1249513d23c712da44fae6721430d2a80d9c620d71": {
+      "description_zh": "为 NetSuite AI Service Connector 会话提供工具选择顺序、输出格式、领域知识、多子公司与多币种处理及 SuiteQL 安全检查。",
+      "source": "NetSuite Intelligence skill — teaches AI the correct tool selection order, output formatting, domain knowledge, multi-subsidiary and currency handling, and SuiteQL safety checklist for any AI + NetSuite AI Service Connector session.",
+      "source_sha256": "c118a8abc21f090951184d1249513d23c712da44fae6721430d2a80d9c620d71",
+      "source_path": "skills/netsuite-ai-connector-instructions/SKILL.md",
+      "package_sha256": "78d3cc6004157ccf800fca526e5bfdacf344313d5b02942386dccf00d204d3ee",
+      "source_package": "NetSuite AI Companion-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "161d6d61b3bede201a710a94268d69d8928b7fd3f23b76484e36526329c07a93": {
+      "description_zh": "基于 NetSuite 财务数据支持报表分析、结账、差异和对账审阅、现金报告及高管叙述，覆盖损益、资产负债、现金流、预算实际、应收应付账龄、分录、SOX 检查和 CFO/董事会报告；不用于一般开发或非财务管理。",
+      "source": "Use this skill when the user needs NetSuite-based finance analysis, Director of Financial Analysis support, period-close guidance, variance review, reconciliation review, cash reporting, or executive-ready financial narrative generation. Apply it to requests involving income statements, balance sheets, cash flow, budget versus actuals, AR or AP aging, month-end close, SOX-oriented finance checks, journal entry review, and board or CFO reporting. Prefer it when the request clearly involves NetSuite financial data interpretation or finance operations, but do not use it for general NetSuite development or non-finance administration tasks.",
+      "source_sha256": "161d6d61b3bede201a710a94268d69d8928b7fd3f23b76484e36526329c07a93",
+      "source_path": "skills/netsuite-finance-analyst/SKILL.md",
+      "package_sha256": "9a5e79b23a83a39c6ee663d6a4552da26997bd1b70b382d741a6a82649ae3c0e",
+      "source_package": "NetSuite Finance Analyst-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecfd9bd078ea5bf37de207d2b620f893d4dfe78d76b184bbee5b83e48dc95ee8": {
+      "description_zh": "提供 OWASP 安全编码实践、JavaScript/Node.js 模式和 NetSuite SuiteScript 示例，涵盖原说明中的 Top 10（2021）、输出编码、注入防护、CSP、文件、API 与智能体安全，以及 48 项以上隐患的正反代码模板。",
+      "source": "Platform-agnostic OWASP secure coding practices with JavaScript/Node.js patterns and NetSuite SuiteScript examples. Covers Open Worldwide Application Security Project (OWASP) Top 10 (2021), output encoding, injection prevention, CSP headers, file security, API hardening, AI agent security, DRY security patterns, and 48+ security pitfalls with GOOD/BAD code templates.",
+      "source_sha256": "ecfd9bd078ea5bf37de207d2b620f893d4dfe78d76b184bbee5b83e48dc95ee8",
+      "source_path": "skills/netsuite-owasp-secure-coding/SKILL.md",
+      "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
+      "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3360780583c64c66632b1507e5a662f75359f6f874baa854752728f83ba46ff0": {
+      "description_zh": "分析 NetSuite SDF 脚本、对象 XML、manifest.xml 和 SuiteQL，生成 README、Mermaid/ASCII 架构图、部署指引及故障排查表；可在有 hooks 等自动化时接入部署后文档流程。",
+      "source": "Generate enterprise-grade documentation for NetSuite SDF projects. Analyze scripts, object XML files, `manifest.xml`, and SuiteQL queries to produce README.md, architecture diagrams (Mermaid/ASCII), deployment guides, and troubleshooting tables. Can integrate with post-deployment documentation workflows when automation (for example, hooks) is available.",
+      "source_sha256": "3360780583c64c66632b1507e5a662f75359f6f874baa854752728f83ba46ff0",
+      "source_path": "skills/netsuite-sdf-project-documentation/SKILL.md",
+      "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
+      "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0d02202e11debf9c830c05677bd1a32618976ce6b5905b07ceac6da4e4e8e78": {
+      "description_zh": "生成审阅 NetSuite SDF 角色与权限配置，涵盖 customrole XML、脚本部署、permkey/permlevel 和 run-as 最小权限；按包内参考数据核实 ADMI_/LIST_/REGT_/REPO_/TRAN_ ID，并区分标准权限与自定义记录脚本 ID。",
+      "source": "Use when generating or reviewing NetSuite SDF permission configurations such as customrole XML, script deployment permissions, permkey values, permlevel choices, run-as role design, and least-privilege access. Confirms exact ADMI_ / LIST_ / REGT_ / REPO_ / TRAN_ permission IDs, distinguishes standard permissions from customrecord_* script IDs, and validates permissions against bundled NetSuite reference data.",
+      "source_sha256": "c0d02202e11debf9c830c05677bd1a32618976ce6b5905b07ceac6da4e4e8e78",
+      "source_path": "skills/netsuite-sdf-roles-and-permissions/SKILL.md",
+      "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
+      "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e9d597510dc64facefff9ab0a00ada02e9ff64087722d4a40c3097c1bed84be": {
+      "description_zh": "依据 SAFE Guide 的 12 项原则及附录开展 NetSuite SDF 开发，生成 14 类脚本 Object XML，检查治理限制、安全及防御编码；覆盖缓存、查询、并发、OAuth/TBA、CustomTool，原说明含 REST Web Services 2026.1 与 140 项以上已记录隐患。",
+      "source": "Comprehensive NetSuite SDF best practices based on the SAFE Guide (12 principles + appendices). Generates Object XML for all 14 script types, enforces governance limits, security patterns, and defensive coding. Includes N/cache, N/query, concurrency limits, OAuth 2.0 guidance, legacy TBA guardrails, CustomTool runtime patterns, REST Web Services (2026.1 features), and 140+ documented pitfalls. Essential for SuiteApp and Account Customization development.",
+      "source_sha256": "6e9d597510dc64facefff9ab0a00ada02e9ff64087722d4a40c3097c1bed84be",
+      "source_path": "skills/netsuite-sdf-safe-guide/SKILL.md",
+      "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
+      "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af57216fb097567e3e04c60937737d4eee2ec2579d3f20eba6d7fa337cb8124b": {
+      "description_zh": "以学习、复习、解释、注释、测验和总结六种模式教授 NetSuite SDF，结合 SAFE Guide 的治理、缓存与安全原则，生成经合规审阅的学习文档及代码或指南测验。",
+      "source": "Interactive learning system for NetSuite SDF development. Features six modes (learn, review, explain, annotate, quiz, and final) with SAFE Guide integration. Produces compliance-reviewed learning documentation. Learn topics like governance, N/cache, and security directly from SAFE Guide principles. Generate quizzes from code or SAFE Guide content.",
+      "source_sha256": "af57216fb097567e3e04c60937737d4eee2ec2579d3f20eba6d7fa337cb8124b",
+      "source_path": "skills/netsuite-suitescript-learning/SKILL.md",
+      "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
+      "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
