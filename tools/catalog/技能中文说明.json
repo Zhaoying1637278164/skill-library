@@ -14569,6 +14569,1086 @@
       "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
       "source_package": "beegait-0.2.163-v3.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16f2c1586e17afe8ac2109b8b8ec271b132aa78529cc186432888ad72d1d1bc6": {
+      "description_zh": "通过 /beegait:build-functional-card 或需求收集请求创建产品待办卡，将请求者原话完整保留为 Story 节点；用于功能想法、规范、用户故事或新 Story/Epic，不加入技术内容。",
+      "source": "Use when the user invokes /beegait:build-functional-card, or asks to capture a request, a feature idea, a functional spec, a user story, a new Story/Epic, or a \"card for the PM backlog\". PM intake: the requester''s words kept VERBATIM as a Story node, no technical content.",
+      "source_sha256": "16f2c1586e17afe8ac2109b8b8ec271b132aa78529cc186432888ad72d1d1bc6",
+      "source_path": "skills/build-functional-card/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02a8c0ca7b04faac90c5fb277413f8969b0a1033b1322484248b2e5e4218538c": {
+      "description_zh": "在用户调用 checkpoint 或结束项目会话时保存一个项目区段，核对卡片、追踪器与仓库，改写唯一下一步、重建并提交推送；不改变卡片状态。",
+      "source": "Use when the user invokes /beegait:checkpoint <section>, says \"checkpoint\", or is closing a project session. End-of-session save of ONE section: reconcile cards vs tracker vs repos, rewrite the Immediate next step, rebuild, commit + push. Never flips a card status.",
+      "source_sha256": "02a8c0ca7b04faac90c5fb277413f8969b0a1033b1322484248b2e5e4218538c",
+      "source_path": "skills/checkpoint/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26fa724d1d126fbfd51003707934ab87e2ead7acfcc0a83e11ab53f4bd6e41e0": {
+      "description_zh": "将 Story 或功能卡细化为可实施内容，阅读代码仓库并在 Story 下创建技术卡片；作为技术负责人步骤，不修改原 Story。",
+      "source": "Use when the user invokes /beegait:ground-card <CARD-KEY>, says \"break down story X\" or \"ground card X\", or asks to make a Story or functional card implementable. The tech lead''s step: read the code repos, create the technical cards UNDER the Story — never edit the Story.",
+      "source_sha256": "26fa724d1d126fbfd51003707934ab87e2ead7acfcc0a83e11ab53f4bd6e41e0",
+      "source_path": "skills/ground-card/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4aeece4aec0657715dee48770c83e037d8a2d40df14d4c4757745210a0f4f9e7": {
+      "description_zh": "依据指定卡片键或 cards/ 路径完整执行一张实现卡，先通过数据库关卡，再实现、运行验证和回归；结束时仅置为 To Test，不置为 Done。",
+      "source": "Use when the user invokes /beegait:implement-ai-card <CARD-KEY>, says \"implement/execute/ start card X\", or names a card key or path under cards/. Executes ONE card end to end — DB gate first, implement, runtime-test, regression check — and ends it at To Test, never Done.",
+      "source_sha256": "4aeece4aec0657715dee48770c83e037d8a2d40df14d4c4757745210a0f4f9e7",
+      "source_path": "skills/implement-ai-card/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d11b2a0780eff60a4d64abb3f4f9791fcf0332468f1559b9fde67234e185f559": {
+      "description_zh": "当知识库超过 40 KB 上限或需要整理拆分时，按主题拆文档、概括重复内容并逐字归档，验证内容无损。",
+      "source": "Use when the user invokes /beegait:kb-curate, when /beegait:progress or /beegait:checkpoint report a ❌ over the 40 KB cap, or on \"curate the knowledge base\", \"the docs are too big\", \"split this doc\", \"the tracker is huge\". Split by subject, summarize the restated, archive verbatim, prove zero loss.",
+      "source_sha256": "d11b2a0780eff60a4d64abb3f4f9791fcf0332468f1559b9fde67234e185f559",
+      "source_path": "skills/kb-curate/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7e69a413156ae832a78fdd7cba7322c01460d9939e63811a109ac5bb3a3a640": {
+      "description_zh": "在项目会话开始或恢复项目时说明当前状态与唯一下一张卡片，再交接至 implement-ai-card 继续执行。",
+      "source": "Use when the user invokes /beegait:progress [section], or asks \"where are we on the project\", \"resume the project\", \"what''s next\". Session-start briefing — run FIRST in every session: the state + the single next card, then it hands off to /beegait:implement-ai-card.",
+      "source_sha256": "d7e69a413156ae832a78fdd7cba7322c01460d9939e63811a109ac5bb3a3a640",
+      "source_path": "skills/progress/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9e823917be1923f2ab3cae4ac051740ef19e9bdb1b0aff60b2de1656018996b": {
+      "description_zh": "依据 RELEASE 对象编写面向最终用户的发布说明、变更日志或部署通知，保存至 Communications 草稿卡；不改变其他卡片状态。",
+      "source": "Use when the user invokes /beegait:release-notes [tag], or asks for release notes, a user-facing changelog, a deployment announcement, or \"what shipped this week/sprint\". Writes the END-USER note from the RELEASE object into a draft card in 📣 Communications; flips no other card.",
+      "source_sha256": "a9e823917be1923f2ab3cae4ac051740ef19e9bdb1b0aff60b2de1656018996b",
+      "source_path": "skills/release-notes/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02c591c4af9e4a0d74db07c29df611611c9d2c20cec509085d8e8d9350b8a8c4": {
+      "description_zh": "以新上下文评审已实现卡片，核对验收和测试条件与证据、判断质量规则，记录一行结论；不改变卡片状态，可用于置为 To Test 前检查。",
+      "source": "Use when the user invokes /beegait:review-card <CARD-KEY>, says \"review card X\" or before a To Test flip: a fresh-context review of an implemented card — spec (ACn/TCn vs the evidence) and quality (the rules) verdicts, ONE log line, never a flip.",
+      "source_sha256": "02c591c4af9e4a0d74db07c29df611611c9d2c20cec509085d8e8d9350b8a8c4",
+      "source_path": "skills/review-card/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a19f79c108ae49d24f7e3b5525958b2324f84fe25ce9440871bab9a4a0cf5ca8": {
+      "description_zh": "为一次发布更新持续维护的最终用户指南章节，写入 Communications 的指南草稿卡；适用于操作手册或新界面说明，不改变其他卡片状态。",
+      "source": "Use when the user invokes /beegait:user-guide [tag], or asks for the user guide, the how-to pages, the manual, or \"document the new screens\". Upserts the living END-USER guide's chapters for one release into the guide draft card in 📣 Communications; flips no other card.",
+      "source_sha256": "a19f79c108ae49d24f7e3b5525958b2324f84fe25ce9440871bab9a4a0cf5ca8",
+      "source_path": "skills/user-guide/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f7abdaca6a3a5c1af0573de50795261c7a9aa6e69ccd4b2e8e79b2312f51a9e": {
+      "description_zh": "预览并应用服务所有者已批准的 Telephonist 临时停业安排，或移除已有停业安排。",
+      "source": "Preview and apply an owner-approved temporary closure or remove a closure on your Telephonist.",
+      "source_sha256": "5f7abdaca6a3a5c1af0573de50795261c7a9aa6e69ccd4b2e8e79b2312f51a9e",
+      "source_path": "skills/brief/SKILL.md",
+      "package_sha256": "54d81db1fb30fe0a4dcf13b4b946bf6370c7c07637421baac0d4ac52e777589b",
+      "source_package": "Benaiah-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d35554dd9e145837dfd5fb7500c160e9126b857cc84b016cf7ded484e8c61b8": {
+      "description_zh": "按指定的本地日历日期，评审已连接 Telephonist 的可用通话记录。",
+      "source": "Review available calls to your connected Telephonist for a chosen local calendar date.",
+      "source_sha256": "8d35554dd9e145837dfd5fb7500c160e9126b857cc84b016cf7ded484e8c61b8",
+      "source_path": "skills/call-review/SKILL.md",
+      "package_sha256": "54d81db1fb30fe0a4dcf13b4b946bf6370c7c07637421baac0d4ac52e777589b",
+      "source_package": "Benaiah-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1c8da9e77e21350e60a5a22bf267f3a44d689892875482a993e3cbaf77663b4": {
+      "description_zh": "将用户明确要求的起草或分析任务交给现有 Benaiah 团队成员，并跟踪保存后的结果。",
+      "source": "Hand an explicitly requested drafting or analysis task to an existing Benaiah teammate and track its saved result. Use when the user asks Benaiah or one of their teammates to continue text work.",
+      "source_sha256": "c1c8da9e77e21350e60a5a22bf267f3a44d689892875482a993e3cbaf77663b4",
+      "source_path": "skills/delegate/SKILL.md",
+      "package_sha256": "54d81db1fb30fe0a4dcf13b4b946bf6370c7c07637421baac0d4ac52e777589b",
+      "source_package": "Benaiah-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16ea59d748523d76543f769084392f3f400856fff0719e774574da4b43b820c1": {
+      "description_zh": "查找近期 Benaiah 工作，读取任务已保存的状态或结果，用于检查团队成员完成了什么或受委派工作进度。",
+      "source": "Find recent Benaiah work and retrieve a task's stored status or result. Use when the user asks what a Benaiah teammate has finished or wants to check delegated work.",
+      "source_sha256": "16ea59d748523d76543f769084392f3f400856fff0719e774574da4b43b820c1",
+      "source_path": "skills/task-status/SKILL.md",
+      "package_sha256": "54d81db1fb30fe0a4dcf13b4b946bf6370c7c07637421baac0d4ac52e777589b",
+      "source_package": "Benaiah-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1582bb803077c5829408e2da21dc4a2d8995ee575d82d18c0fcea6fe1f9ba3d5": {
+      "description_zh": "列举用户现有的 Benaiah 团队成员，帮助选择负责某项工作的成员。",
+      "source": "List the user's existing Benaiah teammates so they can choose who should handle a task. Use when the user asks about their Benaiah team or wants to choose a teammate.",
+      "source_sha256": "1582bb803077c5829408e2da21dc4a2d8995ee575d82d18c0fcea6fe1f9ba3d5",
+      "source_path": "skills/teammates/SKILL.md",
+      "package_sha256": "54d81db1fb30fe0a4dcf13b4b946bf6370c7c07637421baac0d4ac52e777589b",
+      "source_package": "Benaiah-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c8645accb163426c76e1992b5425192060b599f72d5dfef11ea0bece5ffd63c": {
+      "description_zh": "连接并检查 Telephonist，适用于选择电话服务或核对服务当前状态。",
+      "source": "Connect and inspect your Telephonist. Use when choosing a phone service or checking its current state.",
+      "source_sha256": "0c8645accb163426c76e1992b5425192060b599f72d5dfef11ea0bece5ffd63c",
+      "source_path": "skills/telephonist/SKILL.md",
+      "package_sha256": "54d81db1fb30fe0a4dcf13b4b946bf6370c7c07637421baac0d4ac52e777589b",
+      "source_package": "Benaiah-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d73c09eb550e14555b6d642df787c4e4a9854ddc45118d141f86f30d90d68fed": {
+      "description_zh": "使用 bench-node 对 JavaScript/Node.js 代码进行基准测试并生成 Markdown 报告，可比较实现速度、运行现有基准文件或测试指定注释标记之间的代码。",
+      "source": "Benchmark JavaScript/Node.js code with bench-node and write a Markdown report. Use when the user asks to benchmark code, measure or compare the performance of implementations (\"which is faster?\"), run an existing bench-node benchmark file, or benchmark code marked with `// Start bench-claude` and `// End bench-claude` comments.",
+      "source_sha256": "d73c09eb550e14555b6d642df787c4e4a9854ddc45118d141f86f30d90d68fed",
+      "source_path": "skills/bench/SKILL.md",
+      "package_sha256": "2191ac722d2dfb6d9c976ff728b584d3a8711d913e14417bd7f4933dc378f430",
+      "source_package": "Bench Claude-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0fe6d17ce274b18f15fa8cfefabe0c69cc3aafad44ee758e29d3431c916de6fc": {
+      "description_zh": "使用 LaTeX betterportraitposter 类制作或审核可印刷的 A0/A1/A2 竖版科学海报，检查版面预算、颜色对比、字体、图片分辨率、二维码和印前 PDF。",
+      "source": "Build or audit a print-ready A0/A1/A2 portrait scientific poster in LaTeX using the #betterposter format (betterportraitposter class). Covers scaffolding, layout budgeting, colour contrast, typography, figure resolution, QR codes, and pre-print verification. Use when the user is making a conference or scientific poster, mentions betterposter / betterportraitposter / 'big finding' poster design, wants an A0 poster built or reviewed, or needs to verify a poster PDF before sending it to print.",
+      "source_sha256": "0fe6d17ce274b18f15fa8cfefabe0c69cc3aafad44ee758e29d3431c916de6fc",
+      "source_path": "skills/betterposter/SKILL.md",
+      "package_sha256": "454ddddd8fcb0bc3c171ef9b48bac8290813a2a05c623be0650531aea96f88e4",
+      "source_package": "betterposter-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00120863ad68f0d97dc6dbd022a3cf9b228d7b3dd62f6190598e61842281dfed": {
+      "description_zh": "在投标前调查英国公共部门采购方的授标、支出模式、主要供应商与即将续约的合同，适用于议会、NHS 信托等公共机构。",
+      "source": "Research a UK public-sector buyer before bidding - their awards, spend patterns, top suppliers, and upcoming renewals. Use when the user names a council, NHS trust, or other public body and wants to understand it, or asks \"what has X bought/awarded\".",
+      "source_sha256": "00120863ad68f0d97dc6dbd022a3cf9b228d7b3dd62f6190598e61842281dfed",
+      "source_path": "skills/buyer-brief/SKILL.md",
+      "package_sha256": "55c1a238b15337867798d0ecc4bf2c8958295c89c8d490665cde45214b648efb",
+      "source_package": "BidSkim - UK Tenders & Contract Renewals-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3f45b425acad100b05fc67262107183ef55b1649cf49e932c6b955d865e0ae9": {
+      "description_zh": "查找用户所在市场即将到期的英国公共部门合同、现任供应商及应及时接触的机会，帮助发现已发布招标之外的销售管线。",
+      "source": "Find UK public-sector contracts in the user's market that expire soon, who holds them, and which ones to engage now. Use when the user asks about expiring contracts, contract renewals, incumbents, or wants pipeline beyond published tenders.",
+      "source_sha256": "b3f45b425acad100b05fc67262107183ef55b1649cf49e932c6b955d865e0ae9",
+      "source_path": "skills/renewal-radar/SKILL.md",
+      "package_sha256": "55c1a238b15337867798d0ecc4bf2c8958295c89c8d490665cde45214b648efb",
+      "source_package": "BidSkim - UK Tenders & Contract Renewals-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e99c0a266ff7906a74617a14ddb5c11cd362fc2700777b4fbbbf1f7c9c1c62f4": {
+      "description_zh": "搜索当前开放且符合用户实际业务的英国招标机会，并按匹配程度和截止日期排序。",
+      "source": "Search live UK tenders that fit what the user's business actually does and rank them by fit and deadline. Use when the user wants current tender opportunities, open procurements, or a scan of what's closing soon in their market.",
+      "source_sha256": "e99c0a266ff7906a74617a14ddb5c11cd362fc2700777b4fbbbf1f7c9c1c62f4",
+      "source_path": "skills/tender-scan/SKILL.md",
+      "package_sha256": "55c1a238b15337867798d0ecc4bf2c8958295c89c8d490665cde45214b648efb",
+      "source_package": "BidSkim - UK Tenders & Contract Renewals-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c92bf9c7a0c34abd9069933f413453348ee0e1944512aa161730289027bd5cc5": {
+      "description_zh": "逐项核查任意语言文章、草稿、新闻稿或文档中的可验证事实，对照原始记录和独立来源确认数字、引用、研究或社交帖子，给出有引用且确定程度明确的结论；需要网页搜索，可通过代码生成报告，无法执行时输出文本。",
+      "source": "Rigorous, claim-by-claim fact-checking of any article, draft, newsletter, post, press release, or document, in any language: extract every checkable factual claim, verify each against primary records and independent sources (official data APIs, filings, transcripts, archives, the live web, and the browser when pages block fetch), and return calibrated verdicts with citations. Use whenever the user asks to fact-check something, verify claims, stats, or figures before quoting or publishing them, check whether a text is accurate, asks \"is this true?\", wants a pre-publication accuracy pass on a draft, asks to go through their own or a colleague''s piece because something feels off or the numbers seem wrong, wants to know whether a quote, study, or social-media post is real, or shares an article and wants to know if it holds up — even if they never use the words \"fact-check.\" Requires web search; code execution builds the report page and runs the data lookups (falls back to a text report without it).",
+      "source_sha256": "c92bf9c7a0c34abd9069933f413453348ee0e1944512aa161730289027bd5cc5",
+      "source_path": "skills/big-if-true/SKILL.md",
+      "package_sha256": "fd6d897f2232c6ea7716bd78b91353586a7304d9ae19e2243464b8f705bed183",
+      "source_package": "Big If True-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4dec637f7fb6f68840c0d1b488c12aa53513ad460d7b3fd43d92686ea1aca591": {
+      "description_zh": "使用 Bigdata.com 的事件日历、申报文件、新闻和公司资料，梳理未来几个季度可能影响上市公司的定期及可预见事件；逐项列日期或窗口、方向、幅度、置信度与关注点，并按预期影响排序。",
+      "source": "Map the dated events that could move a public company over the next few quarters, using Bigdata.com data (events calendar, filings, news, tearsheet). Covers scheduled catalysts — earnings, investor days, index reviews, lock-up and patent expiries, regulatory decision dates — and foreseeable unscheduled ones — litigation milestones, product cycles, contract renewals, refinancings. Each catalyst carries a date or window, likely direction, magnitude, confidence, and what to watch, ranked by expected impact rather than by date alone. Triggers: \"catalyst monitor for X\", \"what's coming up for X\", \"upcoming catalysts for X\", \"what could move X\", \"key dates for X\", \"event calendar for X\", \"what should I watch on X\".",
+      "source_sha256": "4dec637f7fb6f68840c0d1b488c12aa53513ad460d7b3fd43d92686ea1aca591",
+      "source_path": "skills/bigdata-catalyst-monitor/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2208c08c5f177e89bbee49659de60fd1bd1a171be60b9334eb8477696c0ee3a3": {
+      "description_zh": "使用 Bigdata.com 新闻、申报文件、电话会记录和财务资料生成有引用的上市公司近30天简报，按业绩、产品技术、并购合作、监管法律及管理层变化分类，说明价值驱动与利多利空中性影响，并排序关键事件。",
+      "source": "Generate a company brief — a cited 30-day summary of what happened at a public company and why it matters — using Bigdata.com data (news, filings, transcripts, tearsheet financials). Findings are categorized into financial results, product and tech launches, M&A and partnerships, regulatory and legal, management changes, and other material events, each with date, facts, and a bullish/bearish/neutral investment implication tied to a value driver, plus competitive context and a ranked top 2-3. Triggers: \"company brief for X\", \"what's happening with X\", \"catch me up on X\", \"recent developments at X\", \"what's the news on X\", \"summary of the last month for X\", \"any updates on X\".",
+      "source_sha256": "2208c08c5f177e89bbee49659de60fd1bd1a171be60b9334eb8477696c0ee3a3",
+      "source_path": "skills/bigdata-company-brief/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0104d28e8d313079e83c4994c069c3734455754655c847a62b8668e4e3025a4": {
+      "description_zh": "使用 Bigdata.com 数据深入分析一国经济，涵盖 GDP、通胀、货币政策、劳动市场、债务结构及偿付、税收与公共财政、结构历史背景，以及股票、利率、汇率、FDI 影响和有来源的政策建议。",
+      "source": "Produce a deep country economic analysis using Bigdata.com data — GDP, inflation, monetary policy, labor markets, debt mechanics, and investment implications. Goes beyond a point-in-time snapshot: structural and historical context (sector transformation, labor productivity), debt composition and servicing, tax-to-GDP and public financial management, a substantive macro-and-micro labor section, market implications across equities, rates, currency and FDI, and a dedicated sourced policy-recommendations section. Suits institutional, multilateral, and academic audiences. Triggers: \"economic outlook for X\", \"analyze X's economy\", \"country analysis of X\", \"how is X's economy doing\", \"X GDP inflation outlook\", \"X fiscal position\", \"X monetary policy outlook\".",
+      "source_sha256": "f0104d28e8d313079e83c4994c069c3734455754655c847a62b8668e4e3025a4",
+      "source_path": "skills/bigdata-country-analysis/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "008fc890c05ca5645d319f05f8a155d7ac048977f1b7960e044415f8159b35b1": {
+      "description_zh": "使用 Bigdata.com 分析特定国家或地区的特定行业，结合宏观背景、行业趋势与估值、经地理收入核实的本地龙头基本面、补贴关税和外资规则，并与全球同行比较估值。",
+      "source": "Analyze a specific sector inside a specific country or region using Bigdata.com data — combining the macroeconomic backdrop (GDP, inflation, rates, policy), country-specific sector trends and valuations, fundamentals of country-domiciled sector leaders confirmed by geographic revenue exposure, the policy and regulatory environment including subsidies, tariffs and foreign-investment rules, and valuation versus global sector peers. Use whenever a request names BOTH a sector AND a country or region. Triggers: \"macro analysis of X in Y\", \"European financials outlook\", \"US technology sector view\", \"India consumer sector\", \"China EV sector\", \"Japanese semiconductor industry\", \"[sector] in [country]\".",
+      "source_sha256": "008fc890c05ca5645d319f05f8a155d7ac048977f1b7960e044415f8159b35b1",
+      "source_path": "skills/bigdata-country-sector-analysis/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13a27e5e256da36045a1ee0c6a3979814b2dd727e5a7f6e66aa5522cc2bd38f2": {
+      "description_zh": "使用 Bigdata.com 比较多个行业的估值、盈利增长、分析师情绪和经济周期位置，结合代表企业基本面及历史盈利能力/ROIC，形成行业轮动、超配与低配判断。",
+      "source": "Compare two or more sectors using Bigdata.com data — relative valuations, earnings growth, analyst sentiment, and where each sits in the economic cycle — and turn that into a rotation call with overweight and underweight recommendations. Includes bellwether-level fundamentals per sector and a profitability/ROIC-versus-history read that says whether current valuations sit on peak, mid-cycle, or trough earnings power. Triggers: \"compare X vs Y sectors\", \"which sectors look attractive\", \"sector rotation\", \"cyclicals vs defensives\", \"relative value across sectors\", \"should I rotate out of X into Y\".",
+      "source_sha256": "13a27e5e256da36045a1ee0c6a3979814b2dd727e5a7f6e66aa5522cc2bd38f2",
+      "source_path": "skills/bigdata-cross-sector/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81f0be0b2b5c7f74a7c5b24beeb6aa110e740afb69e3e105e1a8f7c49a3d7dea": {
+      "description_zh": "使用 Bigdata.com 分析上市公司最新已公布业绩，拆解收入、利润率、分部指标、指引、现金流和资产负债表，比较预期与实际、持续及一次性因素，并复核多空论点、盈利质量、情绪、概率情景与估值。",
+      "source": "Analyze a public company's latest reported earnings — a cited post-print digest using Bigdata.com data (results, consensus and surprise, transcript, analyst reactions, tearsheet financials). Breaks down revenue and margins, segment and operating KPIs, management guidance, cash flow and balance sheet, and surprises versus expectations with sustainable-vs-one-time framing, plus a bull/bear thesis check, quality signals with forward watch-fors, sentiment and positioning, a post-print scenario refresh with probability-weighted expected value, and a valuation cross-check. Triggers: \"analyze X earnings\", \"earnings digest for X\", \"how did X do last quarter\", \"X Q3 results\", \"break down X's earnings\", \"what did X report\", \"post-earnings analysis\", \"did X beat or miss\".",
+      "source_sha256": "81f0be0b2b5c7f74a7c5b24beeb6aa110e740afb69e3e105e1a8f7c49a3d7dea",
+      "source_path": "skills/bigdata-earnings-digest/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e7bf68410613793d22a6a9c335387250b7ee6f4356299916386d45bc21d1ce54": {
+      "description_zh": "在上市公司下一次业绩电话会前，使用 Bigdata.com 生成有引用的前瞻分析，涵盖 EPIC 驱动因素、盈利质量、情绪和仓位、市场已计价内容、FaVeS 差异观点、多空情景与概率加权价值及关键观察指标。",
+      "source": "Create a forward-looking earnings preview for a public company ahead of its next earnings call, using Bigdata.com data (estimates, tearsheet financials, news, filings, transcripts, events calendar). Produces an EPIC driver table, earnings quality screen with forward watch-fors, structured sentiment and positioning data, what's priced in plus valuation cross-check, FaVeS variant perception, bull and bear cases, bull/base/bear scenarios with probability-weighted expected value, and key metrics to watch — fully cited. Triggers: \"earnings preview for X\", \"preview X earnings\", \"pre-earnings analysis\", \"Q3 preview\", \"what to expect before X reports\", \"what should I watch when X reports\", \"set up for X earnings\", \"bull and bear case into the print\".",
+      "source_sha256": "e7bf68410613793d22a6a9c335387250b7ee6f4356299916386d45bc21d1ce54",
+      "source_path": "skills/bigdata-earnings-preview/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e20b102c25199c946b593b7e599ddf8079b2d4b86b659a762067dc487a4acb8": {
+      "description_zh": "使用 Bigdata.com 和申报文件检查上市公司盈利质量与会计风险，涵盖跨期现金转化、应计及资产负债表应计比率、营运资本、收入确认、资本化、GAAP与非GAAP调整；可展示 Beneish M-Score 输入，判断报表可信程度。",
+      "source": "Screen a public company's reported earnings for quality and accounting red flags using Bigdata.com data and filings. Covers cash conversion (OCF/NI, FCF/NI across periods), accruals and the balance-sheet accrual ratio, working-capital signals (DSO, DIO, DPO versus revenue growth), revenue-recognition and capitalization flags, the GAAP versus non-GAAP gap and the nature of the add-backs, and an optional Beneish M-Score with inputs shown — closing with a verdict on how far the reported numbers can be trusted. Triggers: \"earnings quality screen for X\", \"are X's earnings real\", \"accounting red flags at X\", \"is X manipulating earnings\", \"cash conversion at X\", \"check X's accruals\", \"quality of earnings on X\".",
+      "source_sha256": "2e20b102c25199c946b593b7e599ddf8079b2d4b86b659a762067dc487a4acb8",
+      "source_path": "skills/bigdata-earnings-quality-screen/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bb10ea799fb876dd5ac6488f9e8cb18980d8585928bb2901d3fe590c81cbf19": {
+      "description_zh": "使用 Bigdata.com 编写简短的业绩后决策说明，比较实际与共识、旧新指引，基于证据判断投资论点变化，更新盈利预测、目标价与估值，指出当季质量信号、行动及下个关键日期。",
+      "source": "Write a tight post-earnings reaction note using Bigdata.com data — headline numbers versus consensus with beat/miss magnitude, what mattered on both sides, a prior-versus-new guidance table, an explicit thesis check (Intact / Strengthened / Weakened / Broken) with evidence, the estimate and price-target revisions the print forces, a pre-versus-post valuation update, quality signals for the quarter, and an action with the next key date. Shorter and more decision-focused than a full earnings digest. Triggers: \"earnings reaction for X\", \"how should I react to X's results\", \"does X's quarter change the thesis\", \"X print reaction\", \"revise my numbers after X earnings\", \"was X's quarter good enough\".",
+      "source_sha256": "1bb10ea799fb876dd5ac6488f9e8cb18980d8585928bb2901d3fe590c81cbf19",
+      "source_path": "skills/bigdata-earnings-reaction/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e47bc988f2c0ba0a31db566b4ada701c3e99dabc4f175661fdad0097efdac1fe": {
+      "description_zh": "使用 Bigdata.com 对美国、日本、德国、英国、法国、意大利和加拿大进行同口径经济比较，列 GDP、通胀、失业、政策利率和财政指标，分析央行路径差异、股票利率汇率定位及区域分化汇合，并排序配置观点。",
+      "source": "Benchmark the seven G7 economies side by side using Bigdata.com data — the United States, Japan, Germany, the United Kingdom, France, Italy, and Canada. Produces a like-for-like indicator table (GDP, inflation, unemployment, policy rate, fiscal position), central bank stance and rate-path divergence across the Fed, BoJ, ECB, BoE and BoC, relative market positioning across equities, rates and currencies, the divergence and convergence themes running through the bloc, and a ranked allocation view — optionally focused on equities, rates, FX or credit. Triggers: \"compare G7 economies\", \"G7 comparison\", \"G7 outlook\", \"how do the G7 economies compare\", \"G7 growth and inflation\", \"G7 central bank divergence\".",
+      "source_sha256": "e47bc988f2c0ba0a31db566b4ada701c3e99dabc4f175661fdad0097efdac1fe",
+      "source_path": "skills/bigdata-g7-comparison/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f61879fba1a618103bc3ec58ca0bf776937e59822571a0cf5c338ad23a79f27": {
+      "description_zh": "使用 Bigdata.com 为上市公司编写完整的机构投资备忘录，涵盖 EPIC 主要驱动、FaVeS 与共识差异、盈利质量和护城河、适用估值及交叉验证、多空基础情景概率与加权价值、风险、催化剂和明确的建议及信心程度。",
+      "source": "Write a full institutional investment memo on a public company using Bigdata.com data — thesis, variant perception versus consensus, valuation, risks, catalysts, and an explicit recommendation with conviction. Runs the complete workflow: EPIC-filtered primary drivers, FaVeS variant perception, earnings quality and moat assessment, valuation by the method that fits the business with a secondary cross-check, bull/base/bear scenarios with probabilities and a probability-weighted value, key risks and what would change the view. Triggers: \"investment memo for X\", \"full analysis of X\", \"should I buy X\", \"build the bull case for X\", \"write up X as an investment\", \"deep dive on X\", \"thesis on X\", \"DCF thesis for X\".",
+      "source_sha256": "2f61879fba1a618103bc3ec58ca0bf776937e59822571a0cf5c338ad23a79f27",
+      "source_path": "skills/bigdata-investment-memo/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61ed3d8209ef73d16f013772438beaaba1cf501a5d38a81503c6de87bb92d9a0": {
+      "description_zh": "使用 Bigdata.com 评估上市公司竞争优势的持久性及管理层资本配置可信度，核对护城河类型、ROIC与WACC、定价权、份额、侵蚀信号、五力结构，以及并购回购分红再投资、董事会、薪酬、关联方和内部人活动。",
+      "source": "Assess how durable a public company's competitive advantage is and whether management can be trusted with the capital, using Bigdata.com data. Covers moat identification by type with evidence, moat strength via ROIC versus WACC, pricing power and share trend, a competitive advantage period estimate with erosion signals, industry structure via five forces, the capital allocation track record across M&A, buybacks, dividends and reinvestment, and governance — board independence, dual roles, compensation design, related-party exposure, insider activity. Triggers: \"does X have a moat\", \"moat review for X\", \"how durable is X's advantage\", \"is X's management any good\", \"capital allocation at X\", \"governance review of X\", \"competitive advantage of X\".",
+      "source_sha256": "61ed3d8209ef73d16f013772438beaaba1cf501a5d38a81503c6de87bb92d9a0",
+      "source_path": "skills/bigdata-moat-governance-review/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1ecebbd6120676c2f3ed5c52fb8a295b0ce0d5a0318cf83c5a328417fd8ab81": {
+      "description_zh": "使用 Bigdata.com 将上市公司与明确纳入排除理由的同行组比较，按同口径列估值、增长、盈利、回报、杠杆和情绪，显示中位数与四分位位置，区分溢价折价的基本面依据并给出相对判断。",
+      "source": "Compare a public company against its peer set using Bigdata.com data — valuation multiples, growth, profitability, returns, leverage, and sentiment — to judge relative attractiveness. Builds the peer set with an explicit rationale for inclusion and exclusion, tabulates like-for-like metrics with peer median and quartile positioning, decomposes any premium or discount into what fundamentals justify versus what they do not, and closes with a relative verdict. Triggers: \"compare X to its peers\", \"peer comparables for X\", \"how does X screen vs competitors\", \"is X cheap relative to peers\", \"comps table for X\", \"relative valuation of X\", \"who are X's peers\".",
+      "source_sha256": "e1ecebbd6120676c2f3ed5c52fb8a295b0ce0d5a0318cf83c5a328417fd8ab81",
+      "source_path": "skills/bigdata-peer-comparables/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8699325c57326724c4c5cf77cb41ae9ab1e81cb0e27cc18de4b88dd9ef3d5efb": {
+      "description_zh": "使用 Bigdata.com 与网页市场数据编写 IPO 首日反应说明，复核发行定价、股数、超额配售和市值，重建开盘至收盘表现、成交量、需求及流通机制，按收盘价重估并梳理后续日期；不作买入或回避建议。",
+      "source": "Write a first-trading-day post-IPO reaction note for a newly listed company using Bigdata.com data plus web market data. Anchors the deal (offer price vs range, shares, greenshoe, implied market cap), reconstructs day 1 (open, intraday range, close, volume, first-day return), reads demand and float mechanics including stabilization, resets valuation against peers at the close, notes the quiet-period coverage gap, and maps the dated post-IPO timeline. Balanced, no buy/avoid call. Triggers: \"post-IPO day 1\", \"first day trading reaction for X\", \"how did X's IPO debut\", \"X IPO pop\", \"X first day of trading\", \"IPO debut analysis\".",
+      "source_sha256": "8699325c57326724c4c5cf77cb41ae9ab1e81cb0e27cc18de4b88dd9ef3d5efb",
+      "source_path": "skills/bigdata-post-ipo-day1/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4c120900a3c7db047e5be23066d7ba437cf919656eb6145b862ee0a494c86ff": {
+      "description_zh": "在 IPO 后第14天，使用 Bigdata.com 和网页资料分析大型新上市公司快速纳入纳斯达克100的可能性；引用现行规则核查资格，展示自由流通权重、被动需求和成交量测算及历史效应与反转风险，不作买入或回避建议。",
+      "source": "Write a day-14 post-IPO note on potential NASDAQ-100 fast-track index inclusion for a recently listed large-cap, using Bigdata.com data plus web search for index methodology and market data. Covers two-week trading status, an eligibility check against Nasdaq's current published rules (cited, never assumed), a float-adjusted index weight and implied passive-demand estimate with the math shown, days-to-cover versus ADV, the historical index effect and reversal risk, and dated watch points. Balanced, no buy/avoid call. Triggers: \"NASDAQ-100 fast track for X\", \"index inclusion impact on X\", \"post-IPO day 14\", \"will X be added to the Nasdaq-100\", \"passive flows from index inclusion\".",
+      "source_sha256": "c4c120900a3c7db047e5be23066d7ba437cf919656eb6145b862ee0a494c86ff",
+      "source_path": "skills/bigdata-post-ipo-day14/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4776d724abc127bb496b86780a2e649be29b31c8dc1ed83281479ba4de2f33b": {
+      "description_zh": "在 IPO 后第179天，结合 Bigdata.com、申报文件和行情分析180天限售到期，核对招股书条款、持有人、股数和提前解禁安排，计算流通与供给压力，观察内部人/VC意向及做空借券期权信号，并给出双向分析。",
+      "source": "Write a day-179 post-IPO note on the 180-day lock-up expiry using Bigdata.com data plus filings and market data. Covers lock-up terms from the prospectus (expiry date, covered holders, share count, early-release provisions), float and overhang math (post-expiry float, days-to-trade versus ADV), insider and VC selling-intention signals, positioning into the event (short interest, borrow, options skew), the historical lock-up-expiry effect with analogs, and a two-sided read. Balanced, no buy/avoid call. Triggers: \"180-day lock-up expiry for X\", \"lockup expiration impact\", \"post-IPO day 179\", \"shares unlocking for X\", \"insider selling after lockup\", \"float expansion at lockup\".",
+      "source_sha256": "c4776d724abc127bb496b86780a2e649be29b31c8dc1ed83281479ba4de2f33b",
+      "source_path": "skills/bigdata-post-ipo-day179/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db95f142a5ec5f462287c7f41b14d8f8e6504dfe71112958bc18c5407c6559dc": {
+      "description_zh": "在 IPO 后第365天，结合 Bigdata.com、申报文件和行情分析第366天创始人及重要投资者解禁，核对分批限售、向15%至20%流通比例扩张的测算，比较指数再加权需求与新增供给、实际出售意愿及双重股权治理，不作买入或回避建议。",
+      "source": "Write a day-365 post-IPO note on the 366-day founder and significant-investor lock-up expiry and float expansion toward 15-20%, using Bigdata.com data plus filings and market data. Covers the staggered lock-up structure from the prospectus, float expansion math and days-to-trade, the offsetting float-adjusted index reweight demand netted against new supply, a realistic read on whether founders actually sell, the dual-class governance angle, and a two-sided setup. Balanced, no buy/avoid call. Triggers: \"366-day lock-up for X\", \"founder lock-up expiry\", \"float expansion for X\", \"post-IPO one year lockup\", \"index reweight after float increase\", \"founder selling after IPO\".",
+      "source_sha256": "db95f142a5ec5f462287c7f41b14d8f8e6504dfe71112958bc18c5407c6559dc",
+      "source_path": "skills/bigdata-post-ipo-day365/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ac76d7aac743c93036c3bb6283fb56d5561b3c8b9a74da9f2a5b7de0acca581": {
+      "description_zh": "依据 S-1/F-1 与 Bigdata.com 研究尚未上市的 IPO 公司，分析发行结构、估值、承销、限售、股权类别、两年及中期财务、商业模式、融资、市场空间、上市同行、发行窗口和90天情绪；以多空争议与关注点收尾，不建议参与或回避。",
+      "source": "Produce a balanced pre-IPO research note on an upcoming, not-yet-listed company using its S-1/F-1 plus Bigdata.com data. Covers deal structure (price range, shares, greenshoe, implied valuation, underwriters, lock-ups, share classes), two years plus interim financials, business model and funding history, TAM and listed comparables, IPO-window conditions, and 90-day sentiment — closing with bull and bear debates and watch points, never a participate/avoid call. Triggers: \"analyze the IPO of X\", \"S-1 analysis\", \"upcoming listing for X\", \"IPO report on X\", \"should I look at X's IPO\", \"pre-IPO research on X\", \"X IPO valuation\".",
+      "source_sha256": "1ac76d7aac743c93036c3bb6283fb56d5561b3c8b9a74da9f2a5b7de0acca581",
+      "source_path": "skills/bigdata-pre-ipo-analysis/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b98ca2b9feb7e1be7932806075c8a06463074842a6b69f3213097b6d25d3d59f": {
+      "description_zh": "使用 Bigdata.com 给出一页内的股票快速观点，提炼当前判断、最关键的两三项驱动、风险、改变观点的条件和近期催化剂；不构建完整投资论证或模型。",
+      "source": "Give a fast, PM-style quick take on a stock using Bigdata.com data — a one-line current view, the 2-3 drivers that actually matter right now, the key risks and what would change the view, and the near-term setup with the next catalyst. Deliberately short: one page, no full thesis, no model. Triggers: \"quick take on X\", \"what do you think of X\", \"give me a fast view on X\", \"thoughts on X\", \"X in a nutshell\", \"one-liner on X\", \"is X interesting right now\".",
+      "source_sha256": "b98ca2b9feb7e1be7932806075c8a06463074842a6b69f3213097b6d25d3d59f",
+      "source_path": "skills/bigdata-quick-take/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b99d34c41550f7ee18bbca415b065a116137e3a2542099346d9d92902390132f": {
+      "description_zh": "使用 Bigdata.com 比较地区或经济体集团的增长、通胀、政策、就业、市场表现和跨资产观点，结合发达与新兴市场、股票估值、固定收益和汇率形成配置建议。",
+      "source": "Compare regions or blocs using Bigdata.com data — economic indicators, market performance, and cross-asset views — and turn that into an allocation recommendation. Covers growth, inflation, policy and labor per region, comparative developed-versus-emerging analysis, regional equity valuations, and fixed income and currency views for each. Triggers: \"compare US vs Europe vs Asia\", \"which regions look attractive\", \"regional allocation\", \"developed vs emerging markets\", \"Europe vs US equities\", \"global allocation view\".",
+      "source_sha256": "b99d34c41550f7ee18bbca415b065a116137e3a2542099346d9d92902390132f",
+      "source_path": "skills/bigdata-regional-comparison/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d8b53c83f78c2ee0cdbb45e9dc899f075e86aa74d0853a7983ce1d12502d4f5": {
+      "description_zh": "使用 Bigdata.com 的风险披露、重大事件、新闻和财务资料，评估上市公司的监管法律、竞争护城河、运营、财务资产负债、宏观及治理六类风险；列概率、影响、缓释状态、优先矩阵和价值驱动情景，杠杆过高时筛查困境风险。",
+      "source": "Produce a comprehensive risk assessment for a public company using Bigdata.com data (10-K risk factors, 8-K material events, news, tearsheet financials). Covers six categories — regulatory and legal, competitive and moat erosion, operational, financial and balance sheet, macro, and management and governance — each rated by likelihood and impact, with a distress screen when leverage is stretched, mitigation status, a priority matrix, and a scenario bridge to value drivers. Triggers: \"risk assessment for X\", \"assess risks for X\", \"what are the risks with X\", \"what could go wrong at X\", \"risk factors for X\", \"how risky is X\", \"downside risks for X\".",
+      "source_sha256": "9d8b53c83f78c2ee0cdbb45e9dc899f075e86aa74d0853a7983ce1d12502d4f5",
+      "source_path": "skills/bigdata-risk-assessment/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1055d91ba6029edc525a5a07c35a360a02668c993e37d7e88d176402039485ba": {
+      "description_zh": "使用 Bigdata.com 为上市公司建立乐观、基础和悲观情景，明确分项假设及合计100%的概率依据，展示情景价值计算、加权期望价值和相对现价回报、上下行不对称性与风险收益，并说明概率转移条件。",
+      "source": "Build bull, base, and bear cases for a public company using Bigdata.com data — with explicit line-item assumptions, justified probability weights summing to 100%, a value or price per scenario with the bridge shown, a probability-weighted expected value and expected return versus spot, the upside/downside skew and risk-reward ratio, and what would move probability between the cases. Triggers: \"scenario analysis for X\", \"bull base bear for X\", \"what's the upside and downside on X\", \"expected value for X\", \"probability-weighted view on X\", \"risk reward on X\", \"model out the cases for X\".",
+      "source_sha256": "1055d91ba6029edc525a5a07c35a360a02668c993e37d7e88d176402039485ba",
+      "source_path": "skills/bigdata-scenario-analysis/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "968ceb71144f07f826c377530c7b541741de56198d7f7877dd378ce5a351285a": {
+      "description_zh": "使用 Bigdata.com 分析行业表现、估值、主题、子行业与催化剂，采用行业专属运营及估值指标，结合历史判断周期和盈利位置、汇总代表企业财务，并提出配置观点、优选与回避方向。",
+      "source": "Analyze a market sector using Bigdata.com data — performance, valuations, themes, sub-industries, and upcoming catalysts. Maps the sector to its own operating and valuation KPIs rather than generic P/E, reads cycle and profitability positioning as early, mid, or late versus history, aggregates bellwether tearsheet metrics, and closes with a positioning call plus top picks and areas to avoid. Triggers: \"analyze the X sector\", \"what's happening in X sector\", \"X sector outlook\", \"how is the X industry doing\", \"X sector valuations\", \"is the X sector attractive\", \"semiconductor/energy/healthcare sector view\".",
+      "source_sha256": "968ceb71144f07f826c377530c7b541741de56198d7f7877dd378ce5a351285a",
+      "source_path": "skills/bigdata-sector-analysis/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d486d6b379ca5fe57c427f83371894a44e5a55b645fd228b899e3b54030d40af": {
+      "description_zh": "使用 Bigdata.com 和行业专属框架制定投资操作指南，说明关键指标、估值方法、当前争议与共识、历史估值、子行业周期、筛选标准及行业风险信号，形成持有、回避和观察安排。",
+      "source": "Build an actionable investment playbook for a sector using Bigdata.com data and sector-specific frameworks — the KPIs that actually matter in that sector, how to value companies in it and why, the live debates and where consensus sits on each, valuation context against the sector's own history, a sub-industry map with cycle position, screening criteria and sector-specific red flags, and an actionable setup of what to own, avoid, and watch. More operational than a sector analysis: it teaches how to invest the sector, not just how it is doing. Triggers: \"sector playbook for X\", \"how do I analyze X companies\", \"what KPIs matter in X\", \"how to value X sector companies\", \"investing framework for X sector\", \"X sector cheat sheet\".",
+      "source_sha256": "d486d6b379ca5fe57c427f83371894a44e5a55b645fd228b899e3b54030d40af",
+      "source_path": "skills/bigdata-sector-playbook/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c015fa4245666243018f264b41a331fb23f248dbc44a71d94bdd0ef0f20fb245": {
+      "description_zh": "使用 Bigdata.com 研究 AI、能源转型、通胀利率、去全球化回流、人口、地缘政治或财政政策等宏观投资主题，划分子主题，分析行业地域和监管影响、具名受益与受损企业基本面及具体实施思路。",
+      "source": "Research a macro investment theme using Bigdata.com data — scope and sub-themes, investment implications, sector impact, named beneficiaries and vulnerable losers with tearsheet fundamentals, the policy and regulatory dimension, geographic impact, and concrete implementation ideas. Covers themes such as AI, energy transition, inflation and rates, deglobalization and reshoring, demographics, geopolitical risk, and fiscal policy. Triggers: \"research the X theme\", \"X investment implications\", \"who benefits from X\", \"how do I play X\", \"AI / energy transition / deglobalization theme\", \"thematic view on X\".",
+      "source_sha256": "c015fa4245666243018f264b41a331fb23f248dbc44a71d94bdd0ef0f20fb245",
+      "source_path": "skills/bigdata-thematic-research/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fcd9d036d6ca6505e8c6539c73b36f973e838cc32e68f48420cde22f40ba2aa2": {
+      "description_zh": "使用 Bigdata.com 对上市公司作估值快照，将倍数与自身历史和同行中位数交叉核对，通过逆向DCF思路解释现价隐含预期，提炼两三项价值驱动并判断便宜、合理或昂贵；无需构建完整模型。",
+      "source": "Answer what a public company is worth and whether it is cheap or expensive, using Bigdata.com data (tearsheet multiples, estimates, margins, peer context). Produces a multiples cross-check against the company's own history and peer median, an implied-expectations read on what the current price already embeds (reverse-DCF reasoning, no model build required), the 2-3 value drivers that dominate, and a cheap / fair / rich verdict. Triggers: \"what is X worth\", \"is X expensive\", \"valuation snapshot for X\", \"what's priced in for X\", \"is X cheap vs peers\", \"how is X valued\", \"fair value for X\".",
+      "source_sha256": "fcd9d036d6ca6505e8c6539c73b36f973e838cc32e68f48420cde22f40ba2aa2",
+      "source_path": "skills/bigdata-valuation-snapshot/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e10dffd08d38c59a1e36d88e2d8248a1934dc6bfbc74fa717d0490d5188ab91f": {
+      "description_zh": "使用 Bigdata.com 明确上市公司观点与共识的差异，以预测和卖方态度建立基线，通过 EPIC 筛选差异因素和 FaVeS 组织论点，形成有期限、可证伪的具体判断，说明错价原因、依据及反证条件。",
+      "source": "State explicitly where your view on a public company differs from consensus, using Bigdata.com data. Establishes the consensus baseline from estimates and sell-side posture, applies the EPIC filter to candidate differentiators, frames the view on FaVeS (fundamentals, valuation, sentiment), and states the variant view as a specific, falsifiable claim with a time horizon — plus what the market is missing, why the mispricing persists, the evidence for the view, and what would disprove it. Triggers: \"variant perception on X\", \"where do I differ from consensus on X\", \"what is the market missing on X\", \"non-consensus view on X\", \"what's priced in versus reality for X\", \"contrarian case for X\".",
+      "source_sha256": "e10dffd08d38c59a1e36d88e2d8248a1934dc6bfbc74fa717d0490d5188ab91f",
+      "source_path": "skills/bigdata-variant-perception/SKILL.md",
+      "package_sha256": "640dc3ff5afcc42a32490f7e50dccef6a4fe5f726ab1aaf68aedc9c2cf66c768",
+      "source_package": "Bigdata.com-1.2.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e0757a29b4604571f1ce213f5971075fb8fb7e816ad3f32189b2926a5c51e32": {
+      "description_zh": "在 Bigmind 建立并丰富可用于营销活动的目标账户触达名单，选择账户和人员、创建模板与行、调查公司、排序潜客并起草个性化文案；不用于启动活动或发送消息。",
+      "source": "Build and enrich campaign-ready Bigmind account-outreach Lists by selecting target accounts, creating the account-outreach template, adding account rows and targetable people, researching company context, prioritizing prospects, and drafting personalized outreach. Use for target-account lists, prospect research, re-engagement lists, stakeholder selection, account theses, and outreach planning or copy—not campaign launch or message sending.",
+      "source_sha256": "6e0757a29b4604571f1ce213f5971075fb8fb7e816ad3f32189b2926a5c51e32",
+      "source_path": "skills/build-outreach-lists/SKILL.md",
+      "package_sha256": "4281bc001c652467b6c5da502c9b71c318a23276f8d0d86ee9fce459e41c9e8e",
+      "source_package": "Bigmind-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "36b6049e4dd5d1a9523c57e9b66aee28d024180d5d14666d41b38fe95876ecd8": {
+      "description_zh": "配置 Bigmind 对话智能及辅导资源，包括竞品、产品反馈、关键词和概念跟踪器、会议类别、自定义词汇、框架、评分卡问题、谈话要点与模拟训练；支持检查、更新、激活、发布和组织。",
+      "source": "Configure Bigmind conversation intelligence and coaching resources, including competition, product-feedback, keyword, and concept trackers; meeting categories; custom vocabulary; frameworks; scorecards and questions; talking points; and coaching simulations. Use when a user asks to create, inspect, update, activate, publish, or organize how Bigmind analyzes and coaches conversations.",
+      "source_sha256": "36b6049e4dd5d1a9523c57e9b66aee28d024180d5d14666d41b38fe95876ecd8",
+      "source_path": "skills/configure-conversation-intelligence/SKILL.md",
+      "package_sha256": "4281bc001c652467b6c5da502c9b71c318a23276f8d0d86ee9fce459e41c9e8e",
+      "source_package": "Bigmind-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "959c55d639c302e88f87519638ce899216859ce0388e27a9b74888ce3173bd76": {
+      "description_zh": "使用 Bigmind 准备客户会议、回顾通话、找回账户或联系人的对话历史、概括转录与笔记，提取决策承诺，并按要求创建跟进任务或 CRM 笔记。",
+      "source": "Prepare for upcoming customer meetings, review past calls, recover account or contact conversation history, summarize transcripts and notes, identify decisions and commitments, and create requested follow-up tasks or CRM notes using Bigmind. Use for meeting preparation, call recaps, meeting summaries, action items, next steps, and post-meeting follow-up.",
+      "source_sha256": "959c55d639c302e88f87519638ce899216859ce0388e27a9b74888ce3173bd76",
+      "source_path": "skills/meeting-workflows/SKILL.md",
+      "package_sha256": "4281bc001c652467b6c5da502c9b71c318a23276f8d0d86ee9fce459e41c9e8e",
+      "source_package": "Bigmind-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c437dc4b032311d10287a1e66cf1b59faabf5709945db20ba2eb0a68067ebda4": {
+      "description_zh": "使用 Bigmind 调查账户与利益相关者、评估交易及续约风险、检查个人或团队销售管线、解释账户信号和排序机会，综合赢单丢单、竞争、反馈、互动和收入模式，形成有证据的销售洞察。",
+      "source": "Research accounts and stakeholders, assess deal and renewal risk, review individual or team pipeline, interpret account signals, prioritize opportunities, and synthesize win-loss, competitive, product-feedback, engagement, and revenue patterns using Bigmind. Use for account reviews, pipeline inspection, deal risk, churn or renewal analysis, sales leadership questions, and evidence-grounded revenue intelligence.",
+      "source_sha256": "c437dc4b032311d10287a1e66cf1b59faabf5709945db20ba2eb0a68067ebda4",
+      "source_path": "skills/review-revenue/SKILL.md",
+      "package_sha256": "4281bc001c652467b6c5da502c9b71c318a23276f8d0d86ee9fce459e41c9e8e",
+      "source_package": "Bigmind-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1ff7fd86cef8dbedfb895630a873956f5588f4d6f23c3df90c04473d4dc03ea": {
+      "description_zh": "为 SaaS 应用选择计费模式，评估按用量、席位、积分、混合定价、免费增值、计费架构及自建或采购方案。",
+      "source": "Billing model decision framework for SaaS applications. Auto-activates when discussing usage-based pricing, seat-based billing, credit systems, hybrid pricing, freemium models, billing architecture, or build-vs-buy decisions.",
+      "source_sha256": "f1ff7fd86cef8dbedfb895630a873956f5588f4d6f23c3df90c04473d4dc03ea",
+      "source_path": "skills/billing-patterns/SKILL.md",
+      "package_sha256": "8d6c807b0e2f17e92cbfcb9f77417d3be61330772698eb5bfa88114db9c3a726",
+      "source_package": "Billing Plane-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8226f6ebfd4d3b3edbe18df394221f60760b9f0d84bec3292819c8cd3d855fbd": {
+      "description_zh": "为 SaaS 的 Stripe 计费提供实施约束，涵盖支付、订阅、Webhook、结账、权益、用量、积分和计费生命周期管理。",
+      "source": "Stripe billing guardrails for SaaS applications. Auto-activates when working with Stripe, payments, subscriptions, webhooks, checkout, entitlements, usage billing, credit systems, or billing lifecycle management.",
+      "source_sha256": "8226f6ebfd4d3b3edbe18df394221f60760b9f0d84bec3292819c8cd3d855fbd",
+      "source_path": "skills/stripe-billing/SKILL.md",
+      "package_sha256": "8d6c807b0e2f17e92cbfcb9f77417d3be61330772698eb5bfa88114db9c3a726",
+      "source_package": "Billing Plane-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eed639b6c15777ca7ae35450d46248aa10472c5ffe0a6e9fca6b75396be60354": {
+      "description_zh": "将实验仪器 PDF、CSV、Excel 或 TXT 输出标准化为 Allotrope Simple Model JSON 或二维 CSV，支持自动识别仪器类型，并提供可导出的 Python 解析代码，用于 LIMS/ELN、数据湖及后续分析或生产流水线。",
+      "source": "Convert laboratory instrument output files (PDF, CSV, Excel, TXT) to Allotrope Simple Model (ASM) JSON format or flattened 2D CSV. Use this skill when scientists need to standardize instrument data for LIMS systems, data lakes, or downstream analysis. Supports auto-detection of instrument types. Outputs include full ASM JSON, flattened CSV for easy import, and exportable Python code for data engineers. Common triggers include converting instrument files, standardizing lab data, preparing data for upload to LIMS/ELN systems, or generating parser code for production pipelines.",
+      "source_sha256": "eed639b6c15777ca7ae35450d46248aa10472c5ffe0a6e9fca6b75396be60354",
+      "source_path": "skills/instrument-data-to-allotrope/SKILL.md",
+      "package_sha256": "8f582234bc1440b67a8e557ab3cd15b91f88d9dfaa96dc17afa6c8ce40b03ea2",
+      "source_package": "Bio Research-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c04c442c82c5be2130aae691c2de6b2211bac84ee3bd509ec2f71cb5938f4642": {
+      "description_zh": "使用 nf-core 的 rnaseq、sarek、atacseq 等 Nextflow 流水线分析本地 FASTQ 或 GEO/SRA 公共测序数据，涵盖 RNA-seq、WGS/WES、ATAC-seq、变异检测、表达分析及样本表创建。",
+      "source": "Run nf-core bioinformatics pipelines (rnaseq, sarek, atacseq) on sequencing data. Use when analyzing RNA-seq, WGS/WES, or ATAC-seq data—either local FASTQs or public datasets from GEO/SRA. Triggers on nf-core, Nextflow, FASTQ analysis, variant calling, gene expression, differential expression, GEO reanalysis, GSE/GSM/SRR accessions, or samplesheet creation.",
+      "source_sha256": "c04c442c82c5be2130aae691c2de6b2211bac84ee3bd509ec2f71cb5938f4642",
+      "source_path": "skills/nextflow-development/SKILL.md",
+      "package_sha256": "8f582234bc1440b67a8e557ab3cd15b91f88d9dfaa96dc17afa6c8ce40b03ea2",
+      "source_package": "Bio Research-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe9e5f745c339cc80948a8c7e3409b1451ae1e043512b876e3bde3eae4c7d428": {
+      "description_zh": "帮助科研人员选择研究问题、构思项目、排解停滞、评估项目风险及制定研究策略，通过决策树分析支持科学项目的战略选择。",
+      "source": "This skill should be used when scientists need help with research problem selection, project ideation, troubleshooting stuck projects, or strategic scientific decisions. Use this skill when users ask to pitch a new research idea, work through a project problem, evaluate project risks, plan research strategy, navigate decision trees, or get help choosing what scientific problem to work on. Typical requests include \"I have an idea for a project\", \"I'm stuck on my research\", \"help me evaluate this project\", \"what should I work on\", or \"I need strategic advice about my research\".",
+      "source_sha256": "fe9e5f745c339cc80948a8c7e3409b1451ae1e043512b876e3bde3eae4c7d428",
+      "source_path": "skills/scientific-problem-selection/SKILL.md",
+      "package_sha256": "8f582234bc1440b67a8e557ab3cd15b91f88d9dfaa96dc17afa6c8ce40b03ea2",
+      "source_package": "Bio Research-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9de82b63854a82c9889b64bbf8f5699c73b46dc4f979008f73aff22121120cdc": {
+      "description_zh": "使用 scvi-tools 深度学习开展单细胞分析，涵盖 scVI/scANVI整合与批次校正、PeakVI ATAC、totalVI CITE-seq、MultiVI RNA+ATAC、DestVI空间解卷积、scANVI/scArches标签迁移及参考映射、veloVI RNA速度等方法。",
+      "source": "Deep learning for single-cell analysis using scvi-tools. This skill should be used when users need (1) data integration and batch correction with scVI/scANVI, (2) ATAC-seq analysis with PeakVI, (3) CITE-seq multi-modal analysis with totalVI, (4) multiome RNA+ATAC analysis with MultiVI, (5) spatial transcriptomics deconvolution with DestVI, (6) label transfer and reference mapping with scANVI/scArches, (7) RNA velocity with veloVI, or (8) any deep learning-based single-cell method. Triggers include mentions of scVI, scANVI, totalVI, PeakVI, MultiVI, DestVI, veloVI, sysVI, scArches, variational autoencoder, VAE, batch correction, data integration, multi-modal, CITE-seq, multiome, reference mapping, latent space.",
+      "source_sha256": "9de82b63854a82c9889b64bbf8f5699c73b46dc4f979008f73aff22121120cdc",
+      "source_path": "skills/scvi-tools/SKILL.md",
+      "package_sha256": "8f582234bc1440b67a8e557ab3cd15b91f88d9dfaa96dc17afa6c8ce40b03ea2",
+      "source_package": "Bio Research-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b17d23ee67da5c3c9e715bb2bf387731064ecafb73c84ac58eafcdc662de40f": {
+      "description_zh": "按 scverse 最佳实践对 .h5ad 或 .h5 单细胞 RNA-seq 数据进行质量控制，采用 MAD 过滤并生成完整可视化，用于识别低质量细胞和评估数据质量。",
+      "source": "Performs quality control on single-cell RNA-seq data (.h5ad or .h5 files) using scverse best practices with MAD-based filtering and comprehensive visualizations. Use when users request QC analysis, filtering low-quality cells, assessing data quality, or following scverse/scanpy best practices for single-cell analysis.",
+      "source_sha256": "2b17d23ee67da5c3c9e715bb2bf387731064ecafb73c84ac58eafcdc662de40f",
+      "source_path": "skills/single-cell-rna-qc/SKILL.md",
+      "package_sha256": "8f582234bc1440b67a8e557ab3cd15b91f88d9dfaa96dc17afa6c8ce40b03ea2",
+      "source_package": "Bio Research-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4cbf12bd0cd417dc646f8121b587305d1e0618ad06df9b10e80ab57640937884": {
+      "description_zh": "搭建生物研究环境并探索可用工具，首次熟悉插件时检查文献、药物发现和可视化 MCP 连接，或在新项目前了解可用分析技能。",
+      "source": "Set up your bio-research environment and explore available tools. Use when first getting oriented with the plugin, checking which literature, drug-discovery, or visualization MCP servers are connected, or surveying available analysis skills before starting a new project.",
+      "source_sha256": "4cbf12bd0cd417dc646f8121b587305d1e0618ad06df9b10e80ab57640937884",
+      "source_path": "skills/start/SKILL.md",
+      "package_sha256": "8f582234bc1440b67a8e557ab3cd15b91f88d9dfaa96dc17afa6c8ce40b03ea2",
+      "source_package": "Bio Research-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b32ea150cba561a5bbaf60ac82270a288eed49b2999e3249ad3adbebc582caa": {
+      "description_zh": "在相同热解温度和停留时间下并排比较多种生物炭原料，调用 biocharpro 的 compare_feedstocks_batch，避免逐个运行模拟。",
+      "source": "Use when the user wants to compare multiple biochar feedstocks side-by-side at the same pyrolysis temperature and residence time. Invokes `compare_feedstocks_batch` on the biocharpro MCP server. Much faster than calling `simulate_biochar` one by one.",
+      "source_sha256": "9b32ea150cba561a5bbaf60ac82270a288eed49b2999e3249ad3adbebc582caa",
+      "source_path": "skills/compare-feedstocks/SKILL.md",
+      "package_sha256": "acea074de80a12b45200ac5d19e2a811a795facee7181034289878904318018e",
+      "source_package": "biocharpro-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3ad005907264401f0d260f5489152820f058f940b0ea30143334f44116c4bac": {
+      "description_zh": "将生物质或生物炭实验分析 PDF 中的元素组成、重金属和热解参数解析为结构化 JSON，调用 biocharpro 的 extract_lab_analysis，原说明注明使用 Gemini 2.5 Flash。",
+      "source": "Use when the user has a lab-analysis PDF of biomass or biochar and wants the numbers parsed into structured JSON (elemental composition, heavy metals, pyrolysis parameters). Invokes `extract_lab_analysis` on the biocharpro MCP server. Powered by Gemini 2.5 Flash.",
+      "source_sha256": "d3ad005907264401f0d260f5489152820f058f940b0ea30143334f44116c4bac",
+      "source_path": "skills/extract-lab-analysis/SKILL.md",
+      "package_sha256": "acea074de80a12b45200ac5d19e2a811a795facee7181034289878904318018e",
+      "source_package": "biocharpro-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9629421944ad08afccba4a605e9a793b05306a29ffa07c52828de9c0719f66c": {
+      "description_zh": "列举 biocharpro 可用原料，或在模拟与批量比较前查询有效原料 ID，调用 list_feedstocks。",
+      "source": "Use when the user wants to see what feedstocks are available on biocharpro, or when you need to discover valid feedstock IDs before calling `simulate_biochar` or `compare_feedstocks_batch`. Invokes `list_feedstocks` on the biocharpro MCP server.",
+      "source_sha256": "a9629421944ad08afccba4a605e9a793b05306a29ffa07c52828de9c0719f66c",
+      "source_path": "skills/list-feedstocks/SKILL.md",
+      "package_sha256": "acea074de80a12b45200ac5d19e2a811a795facee7181034289878904318018e",
+      "source_package": "biocharpro-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "220078a7fd82b042ecb8643c2a97aacf4537c1ad49857e7358c7790828860d74": {
+      "description_zh": "针对指定原料与热解条件，通过 biocharpro 的 simulate_biochar 模拟碳含量、产率、H/Corg、BET 比表面积、pH 和 CO₂e 额度等生物炭属性。",
+      "source": "Use when the user asks about biochar properties (carbon content, yield, H/Corg ratio, BET surface, pH, CO₂e credits) for a given feedstock under specific pyrolysis conditions. Invokes `simulate_biochar` on the biocharpro MCP server.",
+      "source_sha256": "220078a7fd82b042ecb8643c2a97aacf4537c1ad49857e7358c7790828860d74",
+      "source_path": "skills/simulate-biochar/SKILL.md",
+      "package_sha256": "acea074de80a12b45200ac5d19e2a811a795facee7181034289878904318018e",
+      "source_package": "biocharpro-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c3fdb8993e07354b0ceafafd3b52fe4d31a296bfb74727c0387656ab56ea0ce": {
+      "description_zh": "只读分析 BioFlow 个人简介链接页的浏览量、链接点击、CTR、热门链接、来源、打赏收入、订阅及线索注册、联系人和上传文件。",
+      "source": "Reports how a BioFlow link-in-bio page performs and who it captured: views, link clicks, CTR, top links, referrers, tip revenue, newsletter and lead signups, contacts, and uploaded files. Use when the user asks 'how did my page do last month', 'who signed up through my page', 'which links get the most clicks', 'where does my traffic come from', 'show my bio link analytics', or 'list my leads'. Read-only.",
+      "source_sha256": "5c3fdb8993e07354b0ceafafd3b52fe4d31a296bfb74727c0387656ab56ea0ce",
+      "source_path": "skills/analyzing-page-performance/SKILL.md",
+      "package_sha256": "8f9ced6ea7099c309e5e8a9be40e5c49f2faffa197a6523e84b79c16ac5786f5",
+      "source_package": "BioFlow-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c0083f3849b785c71a9c57da27e9b1230f1afec11b2c9e06dc3a5c7e2ccb086": {
+      "description_zh": "编辑或新建 BioFlow 个人简介链接页草稿，增删修改或排序链接、图片、产品、订阅、预约及其他区块，或重命名页面；仅修改草稿，不发布。",
+      "source": "Edits the draft of a BioFlow link-in-bio page: adds, changes, removes, or reorders links, images, products, newsletter signups, booking embeds, and other blocks, renames a page, or creates a new page. Use when the user asks to 'add a link to my YouTube channel', 'update my bio link page', 'rename my page title', 'move the newsletter block to the top', 'remove this link', 'create a new link in bio page', or edit their creator landing page. Changes the draft only; never publishes.",
+      "source_sha256": "3c0083f3849b785c71a9c57da27e9b1230f1afec11b2c9e06dc3a5c7e2ccb086",
+      "source_path": "skills/editing-page-drafts/SKILL.md",
+      "package_sha256": "8f9ced6ea7099c309e5e8a9be40e5c49f2faffa197a6523e84b79c16ac5786f5",
+      "source_package": "BioFlow-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e1d673bd68c0c5d46a3182c528931a9ce4f15973a06a0652ac65778d34a012e": {
+      "description_zh": "预览变化并取得用户确认后，立即或预约发布 BioFlow 页面草稿；需开启工作空间发布设置并完成两步确认。",
+      "source": "Publishes or schedules a BioFlow page's draft so it goes live, after showing a preview of what changes and getting the user's confirmation. Use when the user asks to 'publish my page', 'go live', 'push my changes live', 'schedule my page to go live Monday at 9am', 'make my link in bio public', or 'update the live page'. Needs the workspace publishing setting plus a two-step confirmation.",
+      "source_sha256": "2e1d673bd68c0c5d46a3182c528931a9ce4f15973a06a0652ac65778d34a012e",
+      "source_path": "skills/publishing-pages/SKILL.md",
+      "package_sha256": "8f9ced6ea7099c309e5e8a9be40e5c49f2faffa197a6523e84b79c16ac5786f5",
+      "source_package": "BioFlow-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b2ee7a022da0296dd78d1ce46c07dfa02443cc0f690087756f1a206261e73d6": {
+      "description_zh": "在 claude.ai、Claude Desktop、Cowork 或 Claude Code 中连接 BioFlow MCP，以一次只读调用验证；解释登录授权页面并处理工具缺失或 Tool not found。",
+      "source": "Connects the BioFlow MCP server to Claude and verifies it with one read-only call: where to connect in claude.ai, Claude Desktop, Cowork, or Claude Code, what the BioFlow sign-in and consent screen asks, and how to recover when a tool is missing. Use when the user asks to 'set up BioFlow', 'connect BioFlow to Claude', 'install the BioFlow connector', 'sign in to BioFlow', 'why can't Claude see my BioFlow data', 'BioFlow tools are missing', or reports 'Tool not found' for a BioFlow tool.",
+      "source_sha256": "2b2ee7a022da0296dd78d1ce46c07dfa02443cc0f690087756f1a206261e73d6",
+      "source_path": "skills/setup-bioflow/SKILL.md",
+      "package_sha256": "8f9ced6ea7099c309e5e8a9be40e5c49f2faffa197a6523e84b79c16ac5786f5",
+      "source_package": "BioFlow-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eceb2686abd53da16f3a077a76615bf0d7a565621efdc2b0663940240cc8da48": {
+      "description_zh": "回答比特币公司、资产储备、持仓和排名问题，比较公司，查询链上地址交易与储备证明、评价信誉、矿企/ETF/交易所及国家BTC统计，支持命令或自然语言。",
+      "source": "Answer ANY question about Bitcoin companies, treasuries, holdings, rankings, reviews, or trust. Works with both commands AND natural language. Use this skill whenever the user asks about: Bitcoin company data, BTC holdings, treasury rankings, company comparisons, on-chain addresses/transactions, proof of reserves, reviews/trust/reputation, Bitcoin leaderboards, mining/ETF/exchange companies, or country-level BTC stats. Examples: 'strategy.com', 'how much bitcoin does coinbase hold?', 'what are the top mining companies?', 'can I trust binance?', 'compare marathon vs riot', 'show me strategy bitcoin purchases', 'which countries hold the most bitcoin?', 'is kraken safe?', 'what tier is tesla?",
+      "source_sha256": "eceb2686abd53da16f3a077a76615bf0d7a565621efdc2b0663940240cc8da48",
+      "source_path": "skills/btc/SKILL.md",
+      "package_sha256": "e773049bf5e26d01f70241d564f931b1e8e8b975284ba4c63be67ee106a2cac7",
+      "source_package": "bitcoin-companies-2.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "173385ee5a13a113900ecb8a6aa05ad17d690aa8474d856c8e1fd8e943e2e1d2": {
+      "description_zh": "依据用户笔记、转录或邮件在 Bizopa CRM 记录电话、会议、拜访、WhatsApp 或邮件沟通；匹配客户、按工作空间规则记事、更新受沟通影响的交易，并提供下一步提醒。",
+      "source": "Log a call, meeting, site visit, WhatsApp chat or email in Bizopa CRM from the user's notes, a pasted transcript or an email — find the right customer, record what happened the way the workspace tracks it, update the deal where the conversation changed something, and offer a reminder for the next step. Use when the user says \"log this call\", \"I just met Dr Tan\", \"add this to Bizopa\", \"update the deal after this meeting\", pastes meeting notes or a transcript, or asks to record an email thread in the CRM.",
+      "source_sha256": "173385ee5a13a113900ecb8a6aa05ad17d690aa8474d856c8e1fd8e943e2e1d2",
+      "source_path": "skills/log-conversation/SKILL.md",
+      "package_sha256": "fbbdcb4f6eb7dd2b08d0de2554b32375056dcb5d42da1edfb2ce41a2f9dd6bcd",
+      "source_package": "Bizopa CRM-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97848f39dc8f26b5f64e66719ea19c76f6fafe8a0d9fcdcc4790b4a49aace14b": {
+      "description_zh": "通过简短访谈了解用户业务的产品、付款方和作业流程，提出 Bizopa CRM 表与字段的重命名、添加或停用方案；用户认可后再搭建或重组。",
+      "source": "Tailor a Bizopa CRM workspace to how the user's business really works — a short interview about what they sell, who pays them and how a job moves along, then a plain-language plan of tables and fields to rename, add or switch off, built only after they agree. Use when someone is new to Bizopa, says the workspace doesn't fit their business, or asks to set up, customise or reorganise Bizopa (\"set Bizopa up for my clinic\", \"I also need to track vehicles\", \"our steps are different\", \"add a field for…\").",
+      "source_sha256": "97848f39dc8f26b5f64e66719ea19c76f6fafe8a0d9fcdcc4790b4a49aace14b",
+      "source_path": "skills/set-up-workspace/SKILL.md",
+      "package_sha256": "fbbdcb4f6eb7dd2b08d0de2554b32375056dcb5d42da1edfb2ce41a2f9dd6bcd",
+      "source_package": "Bizopa CRM-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34a8500358b76b0a50f08c5b3c1f7f8be9cef2f049c59df75d2f702a75782c70": {
+      "description_zh": "将 Advisor Center 中需网页完成或当前技能工具无法完成的流程路由至适当入口，包括税务、收入预测、业务及账户导入分析、SMA/MMA服务、文档和报告；已有直接工具可完成时不使用。",
+      "source": "Routes Advisor Center workflow requests that belong in the web experience or cannot be completed by another loaded skill or direct tool. Use when asked to open the tax evaluator, run a tax analysis, run income projections, import a book of business, import client accounts, analyze imported accounts, enroll or service a Separately Managed Account (SMA) or My Managed Accounts (MMA) account, get documentation, access a report workflow, or continue a known Advisor Center workflow unavailable in this chat. Skip when another skill or tool can directly complete the request.",
+      "source_sha256": "34a8500358b76b0a50f08c5b3c1f7f8be9cef2f049c59df75d2f702a75782c70",
+      "source_path": "skills/ac360-capability-router/SKILL.md",
+      "package_sha256": "0978d107fdd4bd24b8d1e1f9929eb302e491e3be9b35151326c2972da23873a8",
+      "source_package": "BlackRock Advisor Center-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0429403b179099006448c7759757a50032e2718026df150d32217f85fa119281": {
+      "description_zh": "帮助为投资组合比较选择或确认基准，包括模型、指数或顾问保存的组合；基准已选定且只需分析时不使用。",
+      "source": "Helps choose or confirm a benchmark subject for portfolio comparison. Use when asked what benchmark fits, to compare a portfolio to a model or index, to set a benchmark, or to use an advisor-saved portfolio as the benchmark. Skip when a benchmark is already selected and the advisor is asking for the analysis itself.",
+      "source_sha256": "0429403b179099006448c7759757a50032e2718026df150d32217f85fa119281",
+      "source_path": "skills/guided-benchmark-selection/SKILL.md",
+      "package_sha256": "0978d107fdd4bd24b8d1e1f9929eb302e491e3be9b35151326c2972da23873a8",
+      "source_package": "BlackRock Advisor Center-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ebe3c3c5e74ce7c2bdbfd2fdbd1840c1f32a46f78b7a71e19d384c7c7f11efd1": {
+      "description_zh": "在顾问确认持仓和写入动作后创建、导入、修改或克隆投资组合，支持代码权重、对账单、模型、保存组合及具体假设变体；不用于已有组合的纯评审分析。",
+      "source": "Builds, imports, modifies or clones portfolios after the advisor confirms the holdings and write action. Use when asked to build from tickers or weights, create a portfolio from a statement, start from a model or saved portfolio, create a comparison portfolio, or explore a specific what-if variation. Skip when the portfolio already exists and the advisor is only asking for review or analysis.",
+      "source_sha256": "ebe3c3c5e74ce7c2bdbfd2fdbd1840c1f32a46f78b7a71e19d384c7c7f11efd1",
+      "source_path": "skills/guided-portfolio-builder/SKILL.md",
+      "package_sha256": "0978d107fdd4bd24b8d1e1f9929eb302e491e3be9b35151326c2972da23873a8",
+      "source_package": "BlackRock Advisor Center-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d836ce8a34cd7189182069885aad05c114ecf0ce1f9661a77fcf8c912fe5f87": {
+      "description_zh": "解释已返回的投资组合机会检查、基金健康、可探索基金及批准的后续链接，说明标记原因、基金详情和下一步；未收窄范围的全面组合评审另用相应技能。",
+      "source": "Reviews returned portfolio opportunity checks, fund-health details, Funds to Explore, and approved follow-up links. Use when asked to show opportunities, explain why a fund is flagged, open fund details, show fund health, list clear checks, find Funds to Explore, or identify the next path from an opportunity. Skip when the advisor asks for a broad portfolio review before narrowing to opportunities.",
+      "source_sha256": "1d836ce8a34cd7189182069885aad05c114ecf0ce1f9661a77fcf8c912fe5f87",
+      "source_path": "skills/portfolio-observations-and-opportunities/SKILL.md",
+      "package_sha256": "0978d107fdd4bd24b8d1e1f9929eb302e491e3be9b35151326c2972da23873a8",
+      "source_package": "BlackRock Advisor Center-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8775b26dfa106c135edea38485aef7bbbf63063e5e11bfe7724a292e4034f0fd": {
+      "description_zh": "使用 Advisor Center 分析保存的组合、家庭或模型，在对话内依次展示组合快照、压力情景、机会与基金健康及可探索基金，并依据发现提供后续行动；已指定单一分析时直接调用相应工具。",
+      "source": "Reviews a saved portfolio, household or model with Advisor Center analytics in three sections rendered inline in the chat — portfolio snapshot, stress scenarios, then opportunities, fund health and Funds to Explore — closing with follow-ups earned by what it found. Use when asked to review a portfolio, run a portfolio review, analyse holdings, pull up a client's account, run the numbers on a portfolio, look at concentration or downside exposure, find issues or opportunities in a portfolio, check whether a client's funds are healthy, or prepare for a client review meeting. Skip this skill when the advisor already named one specific analysis — \"what's the risk on this\", \"run the stress scenarios\", \"how does this compare to the model\" — and call that tool directly instead of running the three-section pass.",
+      "source_sha256": "8775b26dfa106c135edea38485aef7bbbf63063e5e11bfe7724a292e4034f0fd",
+      "source_path": "skills/portfolio-review/SKILL.md",
+      "package_sha256": "0978d107fdd4bd24b8d1e1f9929eb302e491e3be9b35151326c2972da23873a8",
+      "source_package": "BlackRock Advisor Center-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22f927177bb8f72c6d72339b2c34b6d068fbe67318e6da6311b219fb7c33d192": {
+      "description_zh": "解释模型表现、财富预测、方法、咨询费处理及不支持的预测期限或配置；适用于预测与假设说明，不用于全面组合评审或单独设置基准。",
+      "source": "Explains modeled performance, projected wealth, methodology, advisory-fee treatment, and unsupported performance or projection requests. Use when asked to show modeled performance, project wealth, explain projection assumptions, check whether fees are included, or handle an unavailable horizon or configuration. Skip when the advisor asks for a broad portfolio review or only needs benchmark setup.",
+      "source_sha256": "22f927177bb8f72c6d72339b2c34b6d068fbe67318e6da6311b219fb7c33d192",
+      "source_path": "skills/wealth-projections/SKILL.md",
+      "package_sha256": "0978d107fdd4bd24b8d1e1f9929eb302e491e3be9b35151326c2972da23873a8",
+      "source_package": "BlackRock Advisor Center-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f17eff06aed7b1dc662ba304dc8332a85c499a454effa61ea70c899e97c1343e": {
+      "description_zh": "使用 bl 命令行管理 Blaxel 资源，部署智能体、沙箱、任务及 MCP 服务器；CLI 未安装时可进行安装。",
+      "source": "Manage Blaxel resources from the command line using the bl CLI. Deploy agents, sandboxes, jobs, and MCP servers. Also installs the Blaxel CLI if not present.",
+      "source_sha256": "f17eff06aed7b1dc662ba304dc8332a85c499a454effa61ea70c899e97c1343e",
+      "source_path": "skills/blaxel-cli/SKILL.md",
+      "package_sha256": "5f29d949895c0048751657bd52612b17254952dc35e03613916bd10d0afa155b",
+      "source_package": "Blaxel-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5a7cb07bf4b91efd21eca6f554499b0f56074b1dbdad864e74ff5005aaa67b5": {
+      "description_zh": "在 Blaxel 无服务器基础设施创建运行代码和开发服务器的微虚拟机沙箱及实时预览 URL，部署智能体、MCP 和批处理，并用 Agent Drives 提供跨沙箱共享文件。",
+      "source": "Use when creating cloud sandboxes (microVMs) to run code, start dev servers, and generate live preview URLs. Also covers deploying AI agents, MCP servers, batch jobs, and Agent Drives (shared filesystems) on Blaxel's serverless infrastructure. Reach for this skill when you need isolated compute environments, real-time app previews, shared file storage across sandboxes, or to deploy agentic workloads.",
+      "source_sha256": "f5a7cb07bf4b91efd21eca6f554499b0f56074b1dbdad864e74ff5005aaa67b5",
+      "source_path": "skills/blaxel-sdk/SKILL.md",
+      "package_sha256": "5f29d949895c0048751657bd52612b17254952dc35e03613916bd10d0afa155b",
+      "source_package": "Blaxel-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "637021194d40bcc4bd0b68adcb834db02abe0dbb20fef582cd19eb6525c91096": {
+      "description_zh": "使用 BlitzReels 创建由静态幻灯片组成的轮播，适用于多图帖子、照片模式或可滑动演示。",
+      "source": "Create still-slide carousels with BlitzReels. Use for multi-image posts, photo mode, or swipe decks.",
+      "source_sha256": "637021194d40bcc4bd0b68adcb834db02abe0dbb20fef582cd19eb6525c91096",
+      "source_path": "skills/blitzreels-carousels/SKILL.md",
+      "package_sha256": "b79457d31c759572c637ef249ccd4a2f97f5dff26831f878295b120567f2c655",
+      "source_package": "BlitzReels-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fc4290a67373868f72b0b0d4f71d4ea5d87415fce088d2315c48ceef7eee53d": {
+      "description_zh": "使用 BlitzReels 从长视频创建、选择、重构画幅、修复、加字幕或导出短片，支持指定的 YouTube、Instagram、TikTok、X、Facebook、Google Drive 及直接视频链接。",
+      "source": "Create, select, reframe, repair, caption, or export short clips from long-form media, including supported YouTube, Instagram, TikTok, X, Facebook, Google Drive, and direct video URLs.",
+      "source_sha256": "2fc4290a67373868f72b0b0d4f71d4ea5d87415fce088d2315c48ceef7eee53d",
+      "source_path": "skills/blitzreels-clipping/SKILL.md",
+      "package_sha256": "b79457d31c759572c637ef249ccd4a2f97f5dff26831f878295b120567f2c655",
+      "source_package": "BlitzReels-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5a622ca20981536dcc3bd0d05136a8eb92863eed2b74340812f4500cf72a239": {
+      "description_zh": "通过 CLI 或 REST 编辑 BlitzReels 项目，修改时间线、字幕、媒体、预览或导出配置。",
+      "source": "Edit BlitzReels projects through CLI or REST. Use for timeline, caption, media, preview, or export changes.",
+      "source_sha256": "a5a622ca20981536dcc3bd0d05136a8eb92863eed2b74340812f4500cf72a239",
+      "source_path": "skills/blitzreels-editing/SKILL.md",
+      "package_sha256": "b79457d31c759572c637ef249ccd4a2f97f5dff26831f878295b120567f2c655",
+      "source_package": "BlitzReels-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97b1ed8ddcc9dfb2f8852d54db5d1ec24dc182f7fb4437a86bdb4b700a1864b7": {
+      "description_zh": "使用 BlitzReels 按创作简报生成 AI 媒体，包括无露脸视频、控制节奏的 Seedance 图生视频广告、图片、短片、配音、音乐和音效。",
+      "source": "Generate AI media with BlitzReels. Use for faceless videos, paced Seedance I2V ads, images, clips, voiceovers, music, SFX, or authored briefs.",
+      "source_sha256": "97b1ed8ddcc9dfb2f8852d54db5d1ec24dc182f7fb4437a86bdb4b700a1864b7",
+      "source_path": "skills/blitzreels-generation/SKILL.md",
+      "package_sha256": "b79457d31c759572c637ef249ccd4a2f97f5dff26831f878295b120567f2c655",
+      "source_package": "BlitzReels-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52445c95acbf8264bc1478acd8ce68d5414ccc8381385e169f019adf2bb7df7b": {
+      "description_zh": "将 X/Twitter 帖子、原生视频、线程、对话或当下趋势转成 BlitzReels 短视频，适用于 x.com 链接或研究 X 后制作剪辑、无露脸解释、趋势回应和平台成片。",
+      "source": "Turn an X or Twitter post, native X video, thread, conversation, or current trend into short-form video with BlitzReels. Use when the user provides an x.com URL or asks to research X and create clips, a faceless explainer, a trend response, or platform-ready video.",
+      "source_sha256": "52445c95acbf8264bc1478acd8ce68d5414ccc8381385e169f019adf2bb7df7b",
+      "source_path": "skills/blitzreels-x-video/SKILL.md",
+      "package_sha256": "b79457d31c759572c637ef249ccd4a2f97f5dff26831f878295b120567f2c655",
+      "source_package": "BlitzReels-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cba818eb0ebdc5153043837e35dcbf8d5c3fb7ff3ade19b532bf9236c2032742": {
+      "description_zh": "将 SessionReceipt 的 summarizeAsBuilt 输出呈现为确定的责任归属变化记录，仅渲染，不写入。",
+      "source": "Render SessionReceipt summarizeAsBuilt output as deterministic accountability delta with no writes.",
+      "source_sha256": "cba818eb0ebdc5153043837e35dcbf8d5c3fb7ff3ade19b532bf9236c2032742",
+      "source_path": "skills/as-built/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7dec3cb2cdfc0ceff79b5e3f3dd2cb6ea7deb84ba1587fd77183391fd18f2396": {
+      "description_zh": "依据当前策略及已记录的活跃提示，呈现只读监视器状态快照。",
+      "source": "Render a read-only watcher snapshot from current policy and active callouts already recorded.",
+      "source_sha256": "7dec3cb2cdfc0ceff79b5e3f3dd2cb6ea7deb84ba1587fd77183391fd18f2396",
+      "source_path": "skills/buddy-status/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ecf8e9388c5a3d5575a8059391f142c877ce98ef0fa00a4830009ee71addd05": {
+      "description_zh": "依据 Buddy 中已记录的提示，呈现只读的提示详情快照。",
+      "source": "Render a read-only callout-detail snapshot from current Buddy callouts already recorded.",
+      "source_sha256": "2ecf8e9388c5a3d5575a8059391f142c877ce98ef0fa00a4830009ee71addd05",
+      "source_path": "skills/callout/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0a7fecb06cf0139f42d2a92b07fcc5400a65cddb939c940ad28409b45afe967": {
+      "description_zh": "依据明确可观察的事实，手动呈现本地仓库快照。",
+      "source": "Render a manual local repo snapshot from explicit observable truth.",
+      "source_sha256": "b0a7fecb06cf0139f42d2a92b07fcc5400a65cddb939c940ad28409b45afe967",
+      "source_path": "skills/census/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bccc9e585e2886e43745b5b349d2d407ab6953eb95af9b41361eafefd8d0c28e": {
+      "description_zh": "以确定的只读查询和渲染视图呈现现有 ForensicChain 条目历史。",
+      "source": "Render existing ForensicChain entry history as a deterministic read/query/render-only view.",
+      "source_sha256": "bccc9e585e2886e43745b5b349d2d407ab6953eb95af9b41361eafefd8d0c28e",
+      "source_path": "skills/chain/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86778401e24efe8bdf9cca29a2dd081e232275b4fded0cf3fbfe87c208dfa408": {
+      "description_zh": "呈现已有变更单及当前已记录决策状态的只读快照。",
+      "source": "Render a read-only snapshot of existing change orders and their current recorded decision status.",
+      "source_sha256": "86778401e24efe8bdf9cca29a2dd081e232275b4fded0cf3fbfe87c208dfa408",
+      "source_path": "skills/change-order/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19ee34580c1c677ec45fd219e12fbea4c3c76caf31969c82b2a9153260d140b5": {
+      "description_zh": "依据明确的标记连续性比较输入，预览并经明确动作追加中性的置信度变化发现。",
+      "source": "Preview and explicitly append neutral confidence transition findings from explicit marker continuity compare input.",
+      "source_sha256": "19ee34580c1c677ec45fd219e12fbea4c3c76caf31969c82b2a9153260d140b5",
+      "source_path": "skills/confidence-transitions/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9542d060f69b60770fdee7d880e4196bcb9161429693fdde9de3535af2f75350": {
+      "description_zh": "在获准仓库范围内，以确定的斜杠标记扫描呈现只读置信度标记图，可附所需覆盖、标记连续性及明确注明日期的时间信号。",
+      "source": "Render a read-only confidence-marker map plus optional required coverage, optional marker continuity, and optional explicit dated temporal signals from deterministic slash-marker scans inside the approved repo fence.",
+      "source_sha256": "9542d060f69b60770fdee7d880e4196bcb9161429693fdde9de3535af2f75350",
+      "source_path": "skills/confidence/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31d72ce50e8092bea3ee9857e6eb26e2c7cd2b7c22694a5db50233134f3bfe41": {
+      "description_zh": "只读呈现 ConstraintsRegistry 中持续维护的禁止规则及其当前约束状态。",
+      "source": "Render read-only ConstraintsRegistry posture visibility for maintained never-do rule truth.",
+      "source_sha256": "31d72ce50e8092bea3ee9857e6eb26e2c7cd2b7c22694a5db50233134f3bfe41",
+      "source_path": "skills/constraints/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25a259842534021dbe7e719ee705714b35182a8da9afc8c34c4cf9ba2d33a9c6": {
+      "description_zh": "以只读查询和渲染方式呈现 Control Rod 的状态与姿态。",
+      "source": "Render Control Rod posture/status visibility using read/query/render-only behavior.",
+      "source_sha256": "25a259842534021dbe7e719ee705714b35182a8da9afc8c34c4cf9ba2d33a9c6",
+      "source_path": "skills/control-rods/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d6db0b23efd8cd6156d6c19cc8fa470ca0090b6b634f775b38309e55c2e8a90": {
+      "description_zh": "依据已有 Walk 与 Chain 事实，呈现带证据链接的诊断视图。",
+      "source": "Render evidence-linked diagnostic visibility from existing Walk and Chain truth.",
+      "source_sha256": "8d6db0b23efd8cd6156d6c19cc8fa470ca0090b6b634f775b38309e55c2e8a90",
+      "source_path": "skills/diagnose/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "890469258b4c38abde40f42384a3ee941b5de6a5aa10e796e6508edaa57e42a2": {
+      "description_zh": "呈现现有暂停路线、资源稀缺状态与解决路径，不额外添加建议。",
+      "source": "Render existing hold routes, scarcity posture, and resolution paths without adding advice.",
+      "source_sha256": "890469258b4c38abde40f42384a3ee941b5de6a5aa10e796e6508edaa57e42a2",
+      "source_path": "skills/eliminate/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6829601793848f3bd9fa3690887fd7c0329b206f18dda15dfac68778870d4354": {
+      "description_zh": "依据 Open Items Board 现有事实，呈现手动治理快照。",
+      "source": "Render manual governance snapshot visibility from Open Items Board truth.",
+      "source_sha256": "6829601793848f3bd9fa3690887fd7c0329b206f18dda15dfac68778870d4354",
+      "source_path": "skills/fire-break/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ceed4f8deeff3c1a6064633d721d43c0b5d41a9df9ffc65c4607c1f0bde466bb": {
+      "description_zh": "只读呈现 OmissionCoverageEngine 已有输出中的遗漏与预期信号缺失发现，不写入。",
+      "source": "Render omission expected-signal-missing findings from existing OmissionCoverageEngine output with no writes.",
+      "source_sha256": "ceed4f8deeff3c1a6064633d721d43c0b5d41a9df9ffc65c4607c1f0bde466bb",
+      "source_path": "skills/gaps/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f85144d1904f61de3b84c3ab269a72213367d43a8666c71def7db01e3bc0dfe4": {
+      "description_zh": "依据已实现的信任事实，以纯只读查询和渲染方式呈现已保存的信任状态与历史。",
+      "source": "Render persisted trust posture/history from shipped trust truth using pure read/query/render-only paths.",
+      "source_sha256": "f85144d1904f61de3b84c3ab269a72213367d43a8666c71def7db01e3bc0dfe4",
+      "source_path": "skills/journeyman/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4148f85cf47eea07ed71d8eb14235919d73660b5837e436c47a879066eb98e46": {
+      "description_zh": "从现有 Foreman's Walk 输出中呈现确定的关键支点发现。",
+      "source": "Render the deterministic keystone finding from existing Foreman's Walk output.",
+      "source_sha256": "4148f85cf47eea07ed71d8eb14235919d73660b5837e436c47a879066eb98e46",
+      "source_path": "skills/keystone/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3b007c6906563f67d66b0c31c8ae047f803d93ab938d4b8333af81d121951e3": {
+      "description_zh": "依据现有 Control Rod v2 验证事实核验明确的 LOTO 锁定挂牌授权，并呈现确定结果。",
+      "source": "Validate an explicit LOTO authorization using existing Control Rod v2 validation truth and render deterministic output.",
+      "source_sha256": "f3b007c6906563f67d66b0c31c8ae047f803d93ab938d4b8333af81d121951e3",
+      "source_path": "skills/lockout/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b306c82d8ea92c9264ce6af28c3f418c45211324f8c3b123569dd1ac950ee9d": {
+      "description_zh": "依据当前 Control Rod v2 事实评估明确的 HARD_STOP 许可关卡，并呈现确定的决策结果。",
+      "source": "Evaluate an explicit HARD_STOP permit gate with current Control Rod v2 truth and render the deterministic decision output.",
+      "source_sha256": "1b306c82d8ea92c9264ce6af28c3f418c45211324f8c3b123569dd1ac950ee9d",
+      "source_path": "skills/permit/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce215be94509488c44766baad22940dc917f99e31efb85e4926c26f73ede9a18": {
+      "description_zh": "只读呈现 Foreman's Walk 的真实性发现，包括 PHANTOM、GHOST 和 PARTIAL_VERIFICATION。",
+      "source": "Render Foreman's Walk truthfulness findings (PHANTOM/GHOST/PARTIAL_VERIFICATION) using read/query/render-only behavior.",
+      "source_sha256": "ce215be94509488c44766baad22940dc917f99e31efb85e4926c26f73ede9a18",
+      "source_path": "skills/phantoms/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5317b4c9dca3c5f95dfeac3d0f9950fa509cb84ac68a3d840ee668e4f3362507": {
+      "description_zh": "依据明确已捕获的信号，以只读查询和渲染方式呈现保守的累计治理历史。",
+      "source": "Render conservative cumulative governance history from explicit captured signals using read/query/render-only behavior.",
+      "source_sha256": "5317b4c9dca3c5f95dfeac3d0f9950fa509cb84ac68a3d840ee668e4f3362507",
+      "source_path": "skills/prevention-record/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffe8127f6f7c9d14ab38276bb054f10fc89e573e04b897a6c813e07b0059012e": {
+      "description_zh": "通过 SessionReceipt 现有读取路径呈现会话回执事实，不修改状态。",
+      "source": "Render session receipt truth from existing SessionReceipt read paths with no state mutation.",
+      "source_sha256": "ffe8127f6f7c9d14ab38276bb054f10fc89e573e04b897a6c813e07b0059012e",
+      "source_path": "skills/receipt/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84e8b3fb5d4a5a0d62b5164bdc236ec0f3614324ae96d0a6c1a2795140a83091": {
+      "description_zh": "依据已有安全联锁评估指定动作与目标的组合，并呈现当前决策事实。",
+      "source": "Evaluate a specific action-target pair against existing safety interlocks and render the current decision truth.",
+      "source_sha256": "84e8b3fb5d4a5a0d62b5164bdc236ec0f3614324ae96d0a6c1a2795140a83091",
+      "source_path": "skills/red-tag/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4762ad3b59c0f657c9d5b06bb52d53554e7b3307f1ead7463d850c72f4fda094": {
+      "description_zh": "依据明确的发现标识记录确定的恢复动作，并显示符合连续性要求的 Board 投影资格。",
+      "source": "Record a deterministic restoration action from explicit finding identity and surface continuity-safe Board projection eligibility.",
+      "source_sha256": "4762ad3b59c0f657c9d5b06bb52d53554e7b3307f1ead7463d850c72f4fda094",
+      "source_path": "skills/resolve/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c967995da8f28c175727c6e913d4f05db53a078dd827816073d2e6fab7cab1e2": {
+      "description_zh": "依据已有 Forensic Chain 事实呈现确定的恢复台账，并展示仅涉及连续性的 Board 已解决结果投影。",
+      "source": "Render a deterministic restoration ledger from existing Forensic Chain truth and surface continuity-only Board resolved-outcomes projection.",
+      "source_sha256": "c967995da8f28c175727c6e913d4f05db53a078dd827816073d2e6fab7cab1e2",
+      "source_path": "skills/restoration/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd92f0a3a7a64bf537422be8c4fe270b596c929b826d7b294551d1da4ce43733": {
+      "description_zh": "以只读查询和渲染方式呈现静态的手工权利宣言。",
+      "source": "Render a static manual Bill of Rights declaration using read/query/render-only behavior.",
+      "source_sha256": "dd92f0a3a7a64bf537422be8c4fe270b596c929b826d7b294551d1da4ce43733",
+      "source_path": "skills/rights/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6063ef970e30cf8fe853fa0d9a12bb2d58728de4e78c832d06c2f805631d625": {
+      "description_zh": "只读呈现 ConstraintsRegistry、SafetyInterlocks 与 ControlRodMode 中已记录的阻止、限制和保护状态。",
+      "source": "Render read-only blocked/restricted/guarded posture over ConstraintsRegistry, SafetyInterlocks, and ControlRodMode posture truth.",
+      "source_sha256": "c6063ef970e30cf8fe853fa0d9a12bb2d58728de4e78c832d06c2f805631d625",
+      "source_path": "skills/silence-map/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d2908f3a283ce22230f44ea4acabd46ef44fba2a14b92a45e32d1cbf7bff9ac": {
+      "description_zh": "通过 SessionBrief.toolboxTalk 的只读查询与渲染，在启动时呈现从上次延续的上下文。",
+      "source": "Render startup carry-forward context from SessionBrief.toolboxTalk using read/query/render-only behavior.",
+      "source_sha256": "4d2908f3a283ce22230f44ea4acabd46ef44fba2a14b92a45e32d1cbf7bff9ac",
+      "source_path": "skills/toolbox-talk/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69b0570c1bde0ba7e194c7d4437f376f280daca5b96c6d10934a8a01947828f7": {
+      "description_zh": "依据 StandingRiskEngine 已有输出呈现未解决及久未处理的持续风险，不写入。",
+      "source": "Render unresolved and aging Standing Risk visibility from existing StandingRiskEngine output with no writes.",
+      "source_sha256": "69b0570c1bde0ba7e194c7d4437f376f280daca5b96c6d10934a8a01947828f7",
+      "source_path": "skills/ufo/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a61247dd1ed03dc7590ab87f663dbc1ef7772ff363f66c2626c2db76ee524cd3": {
+      "description_zh": "呈现 Foreman's Walk 评估结果用于会话后验证，不修改引擎。",
+      "source": "Render Foreman's Walk evaluation output for post-session verification with no engine mutation.",
+      "source_sha256": "a61247dd1ed03dc7590ab87f663dbc1ef7772ff363f66c2626c2db76ee524cd3",
+      "source_path": "skills/walk/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "825a4a791e2df4020ec38572c2eec88fa19c90eeb4dca25dd780d2525a1f61d6": {
+      "description_zh": "以只读查询和渲染方式呈现 WarrantyMonitor 已有的派生状态视图。",
+      "source": "Render existing WarrantyMonitor derived posture views with read/query/render-only behavior.",
+      "source_sha256": "825a4a791e2df4020ec38572c2eec88fa19c90eeb4dca25dd780d2525a1f61d6",
+      "source_path": "skills/warranty/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4fcddf6019d632da5af781e7b625ced6132b1991ed5bb68a6fed23959e93b38": {
+      "description_zh": "将自然语言工作单起始描述转为结构化受理评估，输出确定的 HOLD 暂停事项及后续问题。",
+      "source": "Turn a plain-language Work Order start into a structured intake evaluation with deterministic HOLDs and follow-up questions.",
+      "source_sha256": "e4fcddf6019d632da5af781e7b625ced6132b1991ed5bb68a6fed23959e93b38",
+      "source_path": "skills/work-order-intake/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9bba89fd30f8ff492534e8145def4b22c6a344f614509c2e37756fd811beccea": {
+      "description_zh": "将规范化的工作单受理结果转成可见的默认安全状态图，供操作人员评审。",
+      "source": "Turn a normalized Work Order intake into a visible default safety posture map for operator review.",
+      "source_sha256": "9bba89fd30f8ff492534e8145def4b22c6a344f614509c2e37756fd811beccea",
+      "source_path": "skills/work-order-posture/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2b64bd4ad4addce7a552590592f437a541790a05491f94701fbe230352ea97a": {
+      "description_zh": "将规范化工作单受理对象转换为受治理的工作骨架，明确范围边界、非目标、验收标准与 HOLD 暂停事项。",
+      "source": "Convert a normalized Work Order intake object into a governed scaffold with explicit scope fences, anti-goals, acceptance criteria, and HOLDs.",
+      "source_sha256": "b2b64bd4ad4addce7a552590592f437a541790a05491f94701fbe230352ea97a",
+      "source_path": "skills/work-order-scaffold/SKILL.md",
+      "package_sha256": "243cc03268b9d597eb796ce785581be4152e10fabdaff66fc4fdcc25c6965f32",
+      "source_package": "Blue Collar Governance-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0dc2a289c3b9619ca358bc0e1fde6360caef507c389a54274dd276eb27c35dc8": {
+      "description_zh": "读取和评审 BoardRepo 的真实 PCB 项目，搜索使用指定元件的公开设计，查看原理图连接、物料表和文件，运行 KiCad DRC/ERC 并核对制造厂限制；经授予本人板卡权限后也可读取私有设计。",
+      "source": "Read and review real PCB projects on BoardRepo. Search published hardware designs, open a board's schematic connectivity, bill of materials and files, run KiCad's DRC and ERC, and check a design against a fabrication house's limits. Use whenever the user names a BoardRepo board or URL, asks to find a published board that uses a part, asks how a real design wired something, or asks whether a board is clean, manufacturable, or ready to order. Also for \"find a board that uses <part>\", \"what's the BOM of <board>\", \"what connects to U3\", \"will JLCPCB accept this\", \"review this board\", and for reading a user's own private BoardRepo boards when they have granted own-board access.",
+      "source_sha256": "0dc2a289c3b9619ca358bc0e1fde6360caef507c389a54274dd276eb27c35dc8",
+      "source_path": "skills/boardrepo/SKILL.md",
+      "package_sha256": "fc96e5a273863d6861d4dd360adcad2f67bd6df1ca271b597a256738894a43ba",
+      "source_package": "BoardRepo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2e23c9624e89d978fa8ab49b83de23d58dbd23d3559d73f3f77cfa07322f7af": {
+      "description_zh": "通过 ISIN 查询 Boersi 数据库中特定公司或证券的事实，涵盖指标、资产负债表、股息、治理、ESG、主数据和覆盖情况；指导 get_dossier、get_field、search_dossiers、coverage_stats、list_sections 的选择。",
+      "source": "Nutze diese Skill, sobald es um Fakten zu einer einzelnen Firma / einem Wertpapier aus der Boersi-Datenbank geht (per ISIN) — Kennzahlen, Bilanz, Dividende, Governance, ESG, Stammdaten, Coverage. Sie erklärt die fünf Boersi-MCP-Tools (get_dossier, get_field, search_dossiers, coverage_stats, list_sections) und wann welches richtig ist. Aktiviert bei Fragen wie „Wie hoch war der Umsatz von SAP?\", „Zeig mir das Dossier zu ISIN DE0008404005\", „Welche Sektionen gibt es zu Toyota?\".",
+      "source_sha256": "b2e23c9624e89d978fa8ab49b83de23d58dbd23d3559d73f3f77cfa07322f7af",
+      "source_path": "skills/boersi-dossier-lookup/SKILL.md",
+      "package_sha256": "cb04094aa301580725b81684c3c9751e9811c3d67af32a9b8ec6dfccd140b052",
+      "source_package": "Boersi-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fbceb1b98fecded0dda137777a0fc8d41a5f68a45659f28e3f03b7ccc58adfa3": {
+      "description_zh": "按条件筛选并排序指定指数的公司，适用于 DAX、MDAX、EURO STOXX、S&P 500 等，可按行业、数据覆盖或收入等筛选指数成分。",
+      "source": "Filtert Firmen eines Index nach Kriterien und sortiert sie. Nutze diese Skill für Screening-Fragen mit Index-Bezug — DAX, MDAX, EURO STOXX, S&P 500 — etwa „welche DAX-Firmen erfüllen Kriterium X\" oder „sortiere die MDAX-Titel nach Y\". Aktiviert bei Fragen wie „Welche DAX-Werte haben die höchste Datenabdeckung?\", „Screene den MDAX nach Sektor Industrie\", „Sortiere die deutschen Index-Titel nach Umsatz\".",
+      "source_sha256": "fbceb1b98fecded0dda137777a0fc8d41a5f68a45659f28e3f03b7ccc58adfa3",
+      "source_path": "skills/boersi-index-screener/SKILL.md",
+      "package_sha256": "cb04094aa301580725b81684c3c9751e9811c3d67af32a9b8ec6dfccd140b052",
+      "source_package": "Boersi-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
