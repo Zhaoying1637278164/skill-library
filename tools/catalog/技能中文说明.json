@@ -31849,6 +31849,1086 @@
       "package_sha256": "e1fc55fff2af16806045a10ae26d250394bffeab9fa4ea93b2a8433c8872072d",
       "source_package": "Foliyo-1.0.1-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6cdee974caaef42a9ee60e314bc2f0459e64e10bb8b3c9d0ff63cf36230060b8": {
+      "description_zh": "通过 Folkso 寻找开发者、设计师、律师、顾问、联合创始人、导师、投资人或志愿者等真实人员来合作、聘用、学习或见面，查看请求回复，并创建、更新或暂停用户自己的 Folkso 档案以出现在 AI 回答中。",
+      "source": "Find real people for a task with Folkso and manage the user's own Folkso profile. Use when the user wants to find, hire, meet or team up with a person (a developer, designer, lawyer, consultant, co-founder, mentor, investor, volunteers, people to teach or to meet in their city), asks whether someone replied to their Folkso request, or wants to create, update or pause their own Folkso profile to appear in AI answers.",
+      "source_sha256": "6cdee974caaef42a9ee60e314bc2f0459e64e10bb8b3c9d0ff63cf36230060b8",
+      "source_path": "skills/folkso/SKILL.md",
+      "package_sha256": "f0e621dec3f0cb5d7696ecf02c9c2ff37cf143674d648ffb23556d710ae1bc1b",
+      "source_package": "Folkso-1.0.12-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d192f55403b39d4f86b82caf49edf08b8f904d59fd39035732367d1131506508": {
+      "description_zh": "使用 FollowRabbit 评审当前仓库 Terraform 或 SQL 基础设施的成本影响，用于云成本分析及 .tf/.sql 文件工作。",
+      "source": "Perform a FollowRabbit cost review on the current repository. Use when the user wants to understand the cost impact of Terraform or SQL infrastructure, asks about cloud costs, or is working with *.tf or *.sql files.",
+      "source_sha256": "d192f55403b39d4f86b82caf49edf08b8f904d59fd39035732367d1131506508",
+      "source_path": "skills/cost-review/SKILL.md",
+      "package_sha256": "418ad1258413b576d2480e95abeb16e0ec05645ab69462cb72c05badd7cc89d8",
+      "source_package": "followrabbit-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e5abff775d86600b2e8adaccf06a87ac18e92a140ae76d6037d3f2398385b30": {
+      "description_zh": "使用 followrabbit optimize sq-pricing 为 GCP 项目各 BigQuery 定时查询选择预留 slot 或按需计算计价，先推荐、经确认后应用并验证；也用于迁入/迁出预留、查看受管理查询和恢复配置。",
+      "source": "Set the optimal compute pricing model — slot reservation or on-demand — on every BigQuery scheduled query in a GCP project, using the `followrabbit optimize sq-pricing` command. Recommends first, asks for confirmation, applies, verifies. Use when the user wants to optimize scheduled-query pricing, route scheduled queries to or off a reservation, see which scheduled queries Rabbit manages, or revert.",
+      "source_sha256": "7e5abff775d86600b2e8adaccf06a87ac18e92a140ae76d6037d3f2398385b30",
+      "source_path": "skills/optimize-bq-compute-pricing-model-scheduled-queries/SKILL.md",
+      "package_sha256": "418ad1258413b576d2480e95abeb16e0ec05645ab69462cb72c05badd7cc89d8",
+      "source_package": "followrabbit-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "94ac4f655e7e044ab1f8f7995f4f23e9baa62fc489596a5a59a1e374525b86b5": {
+      "description_zh": "对未来结果进行深入定量分析、历史类比和结构化情景规划，涵盖 STEEEP、未来锥、竞争、技术采用与地缘变化；执行12步确定性流程，Claude 负责情报、Python 负责计算，可推断时间范围，需 Bash 与 Python 3.x，不适用于 claude.ai 网页。",
+      "source": "Activate this agent for any future-oriented question that requires deep quantitative analysis, historical precedents, and structured scenario planning. Triggers include: \"Will [X]?\", \"Who will win [X]?\", \"What happens to [X]?\", prediction requests with high stakes, foresight analysis, STEEEP scenario planning, futures cone, competitive race analysis, technology adoption curves, geopolitical shifts, or any question about a future outcome that deserves rigorous multi-step analysis. This agent runs a 12-step deterministic pipeline: Claude handles intelligence, Python handles all arithmetic. Year is NOT required — the engine infers the horizon. REQUIRES: Bash tool + Python 3.x. Not compatible with claude.ai web (use Soft Predict Future instead).",
+      "source_sha256": "94ac4f655e7e044ab1f8f7995f4f23e9baa62fc489596a5a59a1e374525b86b5",
+      "source_path": "skills/hard-predict-future/SKILL.md",
+      "package_sha256": "11b490ef9912755c77768555f9d5b3d9a362f421502f7c185eb0ae574a6ec243",
+      "source_package": "Foresight Engine-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16c5591e36c00f688050f92a74363eb7b6bbbacd7cf1cba4d14249eb204446d1": {
+      "description_zh": "对未来结果、概率、竞争、技术采用、地缘变化和市场主导等问题开展预测、STEEEP 与情景分析，可推断时间范围；需开启网页搜索，缺少搜索时先说明。",
+      "source": "Activate this skill for ANY future-oriented question. Triggers include: \"Will [X]?\", \"Who will win [X]?\", \"What happens to [X]?\", \"Can [X] succeed?\", \"What's the future of X?\", foresight analysis, scenario planning, STEEEP analysis, futures cone, prediction requests, or any question about a future outcome. Year is NOT required — the engine infers the horizon. Also activate when the user says \"predict\", \"forecast\", \"what are the odds\", \"scenario analysis\", or asks about competitive races, technology adoption, geopolitical shifts, or market dominance. REQUIRES web search to be enabled — if web search is unavailable, tell the user before proceeding.",
+      "source_sha256": "16c5591e36c00f688050f92a74363eb7b6bbbacd7cf1cba4d14249eb204446d1",
+      "source_path": "skills/soft-predict-future/SKILL.md",
+      "package_sha256": "11b490ef9912755c77768555f9d5b3d9a362f421502f7c185eb0ae574a6ec243",
+      "source_package": "Foresight Engine-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1600a127f425fcbf14947753839c7cb5453b612c89ba071a6858e615daa735d4": {
+      "description_zh": "显示当前 Forge 项目的状态、计划和迭代历史。",
+      "source": "Show current forge project status, plan, and iteration history",
+      "source_sha256": "1600a127f425fcbf14947753839c7cb5453b612c89ba071a6858e615daa735d4",
+      "source_path": "skills/forge-status/SKILL.md",
+      "package_sha256": "3b9649248de3c9e8362c3ae65f90c084d7f62e956e4cc3f6c9a95cb8a496bfbf",
+      "source_package": "Forge-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4954d2e77a8c87a967bc16bdaad9460be8e1bdfe010409b923ab12332f8ca5b3": {
+      "description_zh": "验证当前 Forge 计划中的指定模块。",
+      "source": "Run validation on a specific module from the current forge plan",
+      "source_sha256": "4954d2e77a8c87a967bc16bdaad9460be8e1bdfe010409b923ab12332f8ca5b3",
+      "source_path": "skills/forge-validate/SKILL.md",
+      "package_sha256": "3b9649248de3c9e8362c3ae65f90c084d7f62e956e4cc3f6c9a95cb8a496bfbf",
+      "source_package": "Forge-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "77119d4401c2a0ed7fcac43435dee3c0bf996b560fe77a9aec9edc6ae1647d84": {
+      "description_zh": "规划、执行和验证复杂多步骤任务，支持自动重试与记忆。",
+      "source": "Plan, execute, and validate complex multi-step tasks with automatic retry and memory",
+      "source_sha256": "77119d4401c2a0ed7fcac43435dee3c0bf996b560fe77a9aec9edc6ae1647d84",
+      "source_path": "skills/forge/SKILL.md",
+      "package_sha256": "3b9649248de3c9e8362c3ae65f90c084d7f62e956e4cc3f6c9a95cb8a496bfbf",
+      "source_package": "Forge-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad079b99b52a929eb6289bb30277d29f20575bdccabe02ba7e1117df71067e7b": {
+      "description_zh": "在宣称构建、测试、类型检查或代码检查成功前要求实际工具调用证据，避免仅凭文字作成功断言。",
+      "source": "Use when about to assert that a build passed, tests passed, types are clean, or linting succeeded — before writing that claim. Requires real tool call evidence; blocks prose assertions.",
+      "source_sha256": "ad079b99b52a929eb6289bb30277d29f20575bdccabe02ba7e1117df71067e7b",
+      "source_path": "skills/evidence-gate/SKILL.md",
+      "package_sha256": "218ae79aa29844c8477771ac386d1623be2b4cacab898479605e0b487d5334ce",
+      "source_package": "forge-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56e4039568d445933e986e7cabceaef7783115751a9f1758cc5dc5e24fd815c2": {
+      "description_zh": "在实施任务创建、修改或删除文件前评估各文件风险等级，并据此调整任务规模。",
+      "source": "Use when about to edit, create, or delete files as part of an implementation task — before writing any code. Rates each file's risk level and adjusts the task size accordingly.",
+      "source_sha256": "56e4039568d445933e986e7cabceaef7783115751a9f1758cc5dc5e24fd815c2",
+      "source_path": "skills/risk-classify/SKILL.md",
+      "package_sha256": "218ae79aa29844c8477771ac386d1623be2b4cacab898479605e0b487d5334ce",
+      "source_package": "forge-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3847fe12f0bad23caa19b629ecb600147db93ab1566f3908621c97d6e8d90ddf": {
+      "description_zh": "在 ForgeProof run 后推送生成代码分支并创建 PR，将来源追踪元数据写入描述，适用于带可追溯证据的合并请求。",
+      "source": "Push a ForgeProof branch and open a pull request with provenance metadata embedded in the PR description. Use after running /forgeproof:run to create a PR from the generated code. Triggers on \"push forgeproof\", \"create PR from forgeproof\", or \"open pull request with provenance\".",
+      "source_sha256": "3847fe12f0bad23caa19b629ecb600147db93ab1566f3908621c97d6e8d90ddf",
+      "source_path": "skills/push/SKILL.md",
+      "package_sha256": "849a5771365a27186f474fffb8b6269e95289126ff833ad764646a5a34e1df04",
+      "source_package": "forgeproof-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed144a651b098d36a6bbb537ed63686604916dc16e3c0c5dde7c5220e6b5ef42": {
+      "description_zh": "清理单个或全部问题的 ForgeProof 本地状态，包括来源链、证据包、临时密钥及可选分支，用于重新运行或测试后清理。",
+      "source": "Clean up ForgeProof local state for an issue or all issues. Deletes provenance chains, bundles, ephemeral keys, and optionally branches. Use when you need to re-run ForgeProof on an issue or clean up after testing. Triggers on \"reset forgeproof\", \"clean up forgeproof\", or \"forgeproof reset\".",
+      "source_sha256": "ed144a651b098d36a6bbb537ed63686604916dc16e3c0c5dde7c5220e6b5ef42",
+      "source_path": "skills/reset/SKILL.md",
+      "package_sha256": "849a5771365a27186f474fffb8b6269e95289126ff833ad764646a5a34e1df04",
+      "source_package": "forgeproof-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b308650f26e515ac91383911235d5d2d488c09bfadde44c2ab954ee3a47b1a0": {
+      "description_zh": "根据 GitHub 问题生成带来源追踪和加密签名审计轨迹的代码，支持 Python、TypeScript/JavaScript 和 Go，可指定问题号或浏览分派问题。",
+      "source": "Create provenance-tracked code from a GitHub issue with a cryptographically signed audit trail. Use when the user asks to \"forgeproof an issue\", \"create a provenance bundle\", \"generate auditable code from an issue\", or wants cryptographically signed proof of AI-generated work. Supports Python, TypeScript/JavaScript, and Go projects. Invoke with an issue number or without one to browse assigned issues.",
+      "source_sha256": "3b308650f26e515ac91383911235d5d2d488c09bfadde44c2ab954ee3a47b1a0",
+      "source_path": "skills/run/SKILL.md",
+      "package_sha256": "849a5771365a27186f474fffb8b6269e95289126ff833ad764646a5a34e1df04",
+      "source_package": "forgeproof-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ebae090954c0d5e11da0772fb86ea83eeb37465c124c411dc79428d8f282fc4": {
+      "description_zh": "验证 ForgeProof .rpack 来源证据包，确认 AI 生成代码签名后未被篡改，也支持其他仓库或 PR 的证据包。",
+      "source": "Verify a ForgeProof provenance bundle (.rpack file). Use when the user asks to \"verify a bundle\", \"check provenance\", \"validate an rpack\", \"verify forgeproof\", or wants to confirm that AI-generated code has not been tampered with since signing. Supports verifying bundles from other repositories or PRs.",
+      "source_sha256": "7ebae090954c0d5e11da0772fb86ea83eeb37465c124c411dc79428d8f282fc4",
+      "source_path": "skills/verify/SKILL.md",
+      "package_sha256": "849a5771365a27186f474fffb8b6269e95289126ff833ad764646a5a34e1df04",
+      "source_package": "forgeproof-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f086756281093b886769abdfe720e1a25aece402e2c6be5cae950239fc9945ab": {
+      "description_zh": "配置或排查 Form.io 表单服务端动作，包括邮件、登录、webhook、角色分配、跨表单保存和密码重置，解释动作类型、生命周期、优先级、条件及 handler/method 组合；认证架构和 REST 端点交由专用技能。",
+      "source": "Deep reference for configuring Form.io actions — the server-side behavior layer that powers email notifications, authentication, webhooks, role assignment, and form-to-form saves. Use this skill whenever the user wants to add, configure, or troubleshoot an action on a form, choose the right action type for a use case, understand the action execution lifecycle, set up conditions or handler/method combinations, or wire up authentication flows. Also use when the user mentions action settings, action priorities, action conditions, email actions, login actions, webhook actions, role actions, save actions, or reset password actions — even if they don''t say \"action\" explicitly (e.g., \"send an email when someone submits\", \"add login to this form\", \"assign a role after registration\"). Not for: auth architecture — SSO (OIDC/OAuth/SAML/LDAP), Token Swap, Custom JWT, JWT/session mechanics, 2FA, or RBAC tuning (see `formio-auth`); REST endpoint lookups (see `formio-api`).",
+      "source_sha256": "f086756281093b886769abdfe720e1a25aece402e2c6be5cae950239fc9945ab",
+      "source_path": "skills/formio-actions/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec13c03803b1513f15488fa4bc6db75964dbb92ab2867019feae0826b532184e": {
+      "description_zh": "在明确指定 Angular 时，通过 @formio/angular 构建或扩展 Form.io 应用，按设置、初始化、配置、认证、资源五阶段推进，或嵌入单张表单；不接管未指定框架的数据建模、React 或 API 查询。",
+      "source": "Angular framework implementor for the Form.io skill library — a router over two branches: build or extend an Angular application around a Form.io project with `@formio/angular` (a five-phase gated flow: setup, bootstrap, config, auth, resources), or embed a single Form.io form in an Angular page. Invoked as the handoff from `formio-application`, or directly when the user explicitly names Angular. Claims ONLY Angular-explicit triggers. Use when the user says \"build it in Angular\", \"Angular front-end for this Form.io project\", \"use `@formio/angular`\", \"wire up `FormioAppConfig`\", \"embed a Form.io form in Angular\", or \"render a form in my Angular app\". Not for: framework-agnostic app requests (see `formio-application`); framework-agnostic embed/render-a-form requests (see `formio-form`); planning a data model (see `formio-resource-planner`); React work (see `formio-react`); REST endpoint lookups (see `formio-api`).",
+      "source_sha256": "ec13c03803b1513f15488fa4bc6db75964dbb92ab2867019feae0826b532184e",
+      "source_path": "skills/formio-angular/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e77cdc495cd27ef93b4683ce84d2b32878874b67b5b4c05ed1a929ac1c95318a": {
+      "description_zh": "使用 @formio/angular 的 <formio> 组件嵌入已有表单，处理挂载、事件、Webform 实例、zone.js/无 zone 变更检测、项目 URL、样式和服务端渲染限制；字段行为、资源 CRUD、新表单及原始 SDK 分别交由专用技能。",
+      "source": "Embed a Form.io form in an Angular application with `@formio/angular`''s `<formio>` component — mounting, the event surface, the live `Webform` instance, change detection under zone.js and zoneless, project URLs, styling, the server-rendering limit, and when to drop to the renderer directly. Reached by handoff from `formio-angular`''s embed branch. Use when the user says \"embed a Form.io form in Angular\", \"render a form in my Angular app\", \"add a `<formio>` component to this page\", or \"control an embedded Form.io form from Angular\". Not for: framework-agnostic embedding and every field-behaviour question — conditionals, calculated values, validation, cascading selects (see `formio-form`); resource CRUD screens (see `formio-angular-resources`); creating a form that does not exist yet (see `formio-form-builder`); the raw SDK reference (see `formio-sdk`).",
+      "source_sha256": "e77cdc495cd27ef93b4683ce84d2b32878874b67b5b4c05ed1a929ac1c95318a",
+      "source_path": "skills/formio-angular/formio-angular-form/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c67d08db71b6515973b25c26e4ce4007ee1993d4521ea58b21be9546ac1c4ef1": {
+      "description_zh": "在已将 FormioAppConfig 接入 AppModule 的 Angular 工作区新增、重建或修复单个资源 NgModule，支持父子资源和双向关联；仅处理明确 Angular 请求或框架路由后的任务，不用于首次应用创建与独立数据建模。",
+      "source": "Angular-explicit extension sub-skill for the Form.io skill library — adds, regenerates, or repairs one resource NgModule in an Angular workspace whose `AppModule` already has `FormioAppConfig` wired. Invoked by user phrasing that names Angular verbatim, or by handoff from `formio-angular` (itself possibly invoked by `formio-application`). Claims ONLY triggers naming Angular or `@formio/angular`: \"add an Angular module for X\", \"regenerate the Angular `Participant` resource module\", \"in my Angular app, wire `X`''s children to `Y`\", \"add a bidirectional Angular join between `Team` and `User`\". Does NOT claim framework-agnostic extension phrasing. Not for: initial Angular-app creation, or a workspace where `FormioAppConfig` is not yet wired into `AppModule` — see `formio-angular`; extension requests that never name Angular — see `formio-application`, which routes here when the framework is Angular; shaping a data model in isolation — see `formio-resource-planner`; REST endpoint lookups — see `formio-api`.",
+      "source_sha256": "c67d08db71b6515973b25c26e4ce4007ee1993d4521ea58b21be9546ac1c4ef1",
+      "source_path": "skills/formio-angular/formio-angular-resources/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80f89824cab9258b547f84705b065aba8201c6f84468aa27bc48112d77dda8ed": {
+      "description_zh": "提供 Form.io 平台、项目、运行时和 PDF 范围的 REST API 参考，覆盖认证、项目/阶段/租户/团队、表单/资源/修订、动作/角色、用户登录、提交增删改查、聚合、PDF 和健康状态；解释 x-jwt-token 与基础/项目 URL 区别，不替代应用构建、模式或 JavaScript SDK。",
+      "source": "Comprehensive Form.io API reference — every endpoint in the Form.io API Postman collection across platform admin, project admin, runtime/end-user, and PDF scopes. Use when the user asks to call, script, inspect, or document any Form.io REST endpoint: platform/project auth; projects, stages, tenants, teams; forms, resources, and revisions (create, list, update, import, export); actions; roles; end-user registration and login; submissions (submit, query, patch, delete); aggregation reports; PDF template uploads and submission downloads; health/status. Also for x-jwt-token auth questions and the base URL vs project URL distinction. Not for: building a whole application around Form.io (see formio-application); planning a data model (see formio-resource-planner); authoring Form.io JSON schemas (see formio-schema); calling the JavaScript SDK — `Formio.*` statics, `new Formio(...)` instances, `Utils.*` helpers (see formio-sdk).",
+      "source_sha256": "80f89824cab9258b547f84705b065aba8201c6f84468aa27bc48112d77dda8ed",
+      "source_path": "skills/formio-api/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8752a3cd36711214ba984517a83a1013c7b285156a830e5617e4e4bd784bbb5b": {
+      "description_zh": "将自然语言数据业务想法构建为 Form.io 应用、CRM、门户、仪表盘或跟踪工具，或扩展已有应用；统一协调框架与资源建模，明确 Angular/React 请求交由框架技能，单表单、嵌入和纯模型规划使用对应技能。",
+      "source": "Default \"build me an app\" orchestrator — builds a new application backed by a Form.io project from a plain-language idea, or extends an existing app with a new feature; the user never needs framework or Form.io terminology. Use whenever the user wants to build, create, spin up, or stand up an app, tool, portal, dashboard, or tracker around data — \"build me an app\", \"create a CRM\", bare archetypes (\"task manager\", \"help desk\") — or extend one: \"also track X\", \"add a way to see Y\". Not for: Angular-explicit builds (see `formio-angular`) or extensions (see `formio-angular-resources`); React-explicit builds (see `formio-react`) or extensions (see `formio-react-resources`); planning a data model without building an app (see `formio-resource-planner`); embedding or rendering an existing form in a page — \"embed this form\" (see `formio-form`); creating a standalone single form (no data model or app around it — see `formio-form-builder`); REST endpoint lookups (see `formio-api`).",
+      "source_sha256": "8752a3cd36711214ba984517a83a1013c7b285156a830e5617e4e4bd784bbb5b",
+      "source_path": "skills/formio-application/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b5e94f37e59b4ee52252a3341b4d9e460884d84e9e19d9163b24875a34d4870": {
+      "description_zh": "设计 Form.io 认证与授权，包括资源登录、角色与组权限、OIDC/OAuth/SAML/LDAP、角色映射、Token Swap、企业 Custom JWT、免密邮件令牌、会话、登出、2FA 和 reCAPTCHA；单表单动作设置、数据模型与框架登录页面交由相应技能。",
+      "source": "Form.io authentication and authorization specialist — resource-backed login (Login plus Role Assignment Actions), role-based access control and group permissions, SSO via OIDC/OAuth/SAML/LDAP with provider role mapping, Token Swap, Custom JWT for Enterprise/on-prem (signed with `JWT_SECRET`), email-token (passwordless) auth, and JWT/session mechanics (the `x-jwt-token` header, `jti` Session ID, logout, 2FA, reCAPTCHA). Use when the user asks to configure how users authenticate — SSO, OIDC, OAuth, SAML, LDAP, Token Swap, Custom JWT, passwordless auth, JWT, sessions, roles, permissions, RBAC, group permissions, 2FA, or reCAPTCHA in Form.io. Not for: designing the resource map or data model (see `formio-resource-planner`); orchestrating an app build (see `formio-application`); adding a Login or Role Assignment Action to one form — per-form action settings, priorities, conditions (see `formio-actions`); REST endpoint lookups (see `formio-api`); wiring a login screen into Angular (see `formio-angular`).",
+      "source_sha256": "0b5e94f37e59b4ee52252a3341b4d9e460884d84e9e19d9163b24875a34d4870",
+      "source_path": "skills/formio-auth/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "372a5defd194e69a1ef7d7d7f37c9687e2f991113f6326b15e74bc20c9033cb3": {
+      "description_zh": "端到端创建或修改一张 Form.io 表单，确定网页表单、向导或 PDF 类型，委派 JSON 模式编写、经 MCP 保存并按需嵌入；适用于问卷、联系、登记和字段增改，数据模型与 CRUD 应用交由应用/资源技能。",
+      "source": "Default \"build me a form\" orchestrator — builds a single Form.io form end to end: determines the form type (webform, wizard, or PDF form), delegates schema authoring to `formio-schema`, saves the form via the MCP server, and optionally hands off to embedding. Use when the user asks to \"build a form\", \"create a form\", make a \"multi-page form\", or create a \"survey\", \"contact form\", \"intake form\", \"registration form\", \"questionnaire\", or \"pdf form\" — or to edit an existing form''s fields: \"add a phone field to my registration form\". Boundary: \"build a form to collect X\" (a standalone form) belongs to this skill; \"track X / manage X / build an app around X\" (a data model, CRUD, resources) belongs to `formio-application` / `formio-resource-planner`. Not for: embedding an EXISTING form (see `formio-form`); building an app (see `formio-application`); designing resources or permissions (see `formio-resource-planner`); raw JSON schema lookups (see `formio-schema`); REST endpoint lookups (see `formio-api`).",
+      "source_sha256": "372a5defd194e69a1ef7d7d7f37c9687e2f991113f6326b15e74bc20c9033cb3",
+      "source_path": "skills/formio-form-builder/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14d70ad7312d1dafe8a00aed561d523e8a795147323e3cd6fb6aac724d32466d": {
+      "description_zh": "使用 @formio/js Vanilla JS 渲染器在网页中按 URL 或 JSON 嵌入已有 Form.io 表单，处理预填、JavaScript 控制、渲染参数、条件字段、计算值、JSON Logic 验证、级联选择和向导页条件；跨框架字段行为也归此技能，框架包装和新表单创建交由对应技能。",
+      "source": "Embed and render Form.io forms in any web application with the Vanilla JS renderer `@formio/js` — render by URL or JSON, pre-fill with submissions, JavaScript control, renderer options, conditional fields, calculated values, JSON Logic validation, cascading selects, and conditional wizard pages. The library''s default \"embed a form\" entry point. Use when the user asks to \"embed a form\", \"render a form\", \"add this form to my page/site/app\", \"pre-fill a form\", \"show or hide a field based on another field\", \"calculate a field value\", or \"add custom validation to a field\" — field behavior inside ANY framework''s rendered form stays here. Not for: Angular embedding and app builds (see `formio-angular`); React-named embedding (see `formio-react`); building an app around data (see `formio-application`); designing the data model (see `formio-resource-planner`); REST endpoints (see `formio-api`); the raw SDK/Utils API reference (see `formio-sdk`); creating a NEW form — embed-only skill (see `formio-form-builder`).",
+      "source_sha256": "14d70ad7312d1dafe8a00aed561d523e8a795147323e3cd6fb6aac724d32466d",
+      "source_path": "skills/formio-form/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73bae6bfc5255e691ecb8ea6509a9619494306b7545c63f9c89237690b24b0c2": {
+      "description_zh": "将 @formio/mcp 连接到当前 Claude Code、Cursor、VS Code 或 Codex，解决工具缺失和 MCP 配置问题；经批准写入客户端配置，识别不出宿主时覆盖四类客户端，查询目录项目映射、仅补缺失 URL 并说明重载方法，连接后返回原任务。",
+      "source": "Connects the Form.io MCP server (`@formio/mcp`) to whatever coding agent is running, so the Form.io skills have tools to call. Use when a Form.io skill''s preflight finds the MCP tools missing, when Form.io tool calls fail because no Form.io tools are available, or when the user asks to install, connect, configure, or fix the Form.io MCP server. Also use when the user has installed the Form.io skills on their own but nothing has wired the server yet. Writes the MCP configuration for the client it is running in — Claude Code, Cursor, VS Code, or Codex — behind an approval gate, falling back to all four when the host cannot be established, then asks the server which Form.io project this directory resolves to and captures only whichever URL it reports missing, so the first tool call works, and tells the user how to reload. Not for: authenticating to Form.io (see `formio-auth`); building anything with Form.io — return to the skill that sent you here once the server is connected.",
+      "source_sha256": "73bae6bfc5255e691ecb8ea6509a9619494306b7545c63f9c89237690b24b0c2",
+      "source_path": "skills/formio-mcp-setup/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3908d7e10af04cfc756504031c97920aa019cfd2a84d62b7ff607c0cbdefc6bd": {
+      "description_zh": "在明确 React 请求时，用 Vite、React Router 数据路由和 @formio/react 构建新 Form.io 应用、为已有应用增加资源 CRUD 或嵌入表单；未指定框架、纯建模、Angular 和 API 查询使用其他技能。",
+      "source": "React framework implementor for the Form.io skill library — a router over three branches: build a greenfield React application around a Form.io project, add Form.io resource CRUD to a React application that already exists, or embed a single form. Targets Vite, React Router data routers, and `@formio/react`. Claims ONLY React-explicit triggers. Use when the user says \"build it in React\", \"React front-end for this Form.io project\", \"use React\", \"use `@formio/react`\", \"the React skill\", \"add Form.io CRUD to my React app\", \"wire this Form.io project into my existing React app\", or \"embed a Form.io form in React\". Not for: framework-agnostic app requests (see `formio-application`); planning a data model (see `formio-resource-planner`); framework-agnostic embed/render-a-form requests (see `formio-form`); Angular work (see `formio-angular`); REST endpoint lookups (see `formio-api`).",
+      "source_sha256": "3908d7e10af04cfc756504031c97920aa019cfd2a84d62b7ff607c0cbdefc6bd",
+      "source_path": "skills/formio-react/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "643f45d049a2306b36929fe1525dc0c2a31d02de718ca9076c906f236409c504": {
+      "description_zh": "使用 @formio/react 的 Form 组件嵌入表单，处理挂载、事件、实时实例、生命周期、provider、匿名/认证提交以及 Vite/Next.js 要求；字段逻辑、新表单、CRUD 和 SDK 参考交由专用技能。",
+      "source": "Embed a Form.io form in a React application with `@formio/react`''s `Form` component — mounting, the event surface, the live instance, the lifecycle traps, provider configuration, anonymous versus authenticated submission, and the Vite and Next.js requirements. Reached by handoff from `formio-react`''s embed branch. Use when the user says \"embed a Form.io form in React\", \"render a form in my React app\", \"use `@formio/react`''s `Form` component\", or \"add a Form.io form to this React page\". Not for: framework-agnostic embedding and every field-behaviour question — conditionals, calculated values, validation, cascading selects (see `formio-form`); resource CRUD screens (see `formio-react-resources`); creating a form that does not exist yet (see `formio-form-builder`); the raw SDK reference (see `formio-sdk`).",
+      "source_sha256": "643f45d049a2306b36929fe1525dc0c2a31d02de718ca9076c906f236409c504",
+      "source_path": "skills/formio-react/formio-react-form/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "adc0ecab638175a1dff05766ea8966d8d10a922112d644746295bb2cfe1f9fa3": {
+      "description_zh": "在已有 React 应用中生成 Form.io 资源 CRUD 页面，组合资源内核、React Router 数据路由和父子层级资源，支持新增或重建路由及双向关联；首次创建或缺少 FormioProvider 的项目交由 React 主技能。",
+      "source": "Nested React sub-skill that generates Form.io resource CRUD screens into a React application — the resource kernel, route composition, and hierarchical parent/child resources through React Router data routers. Reached by handoff from `formio-react` (itself possibly from `formio-application`), or by phrasing that names React or `@formio/react` verbatim. Use when the user says \"add a React route for X\", \"regenerate the React `Participant` resource\", \"in my React app, wire `X`''s children to `Y`\", or \"add a bidirectional React join between `Team` and `User`\". Not for: initial React app creation or a workspace with no `FormioProvider` — see `formio-react`; extension requests that never name React — see `formio-application`; shaping a data model — see `formio-resource-planner`; embedding one form — see `formio-form`; REST endpoint lookups — see `formio-api`.",
+      "source_sha256": "adc0ecab638175a1dff05766ea8966d8d10a922112d644746295bb2cfe1f9fa3",
+      "source_path": "skills/formio-react/formio-react-resources/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6335ed50a00f9d0bd144aa33ff366a6993335ad638df7df2a06b7b9c429484be": {
+      "description_zh": "通过访谈规划 Form.io 资源、字段、关系、认证与访问模型，先形成供批准的可读 Resource Map，再生成含角色、资源、表单和动作的可导入 template.json；用于独立数据模型设计，应用创建、单表单和高级认证交由其他技能。",
+      "source": "Plan the Resource structure, field configurations, and access/permission model for a Form.io application, then emit a ready-to-import project `template.json` (Phase A: a human-readable Resource Map for approval; Phase B: the full template with roles, resources, forms, and actions). Interview-driven — infers resources and asks about relationships, auth, and access before committing. Use when the user asks to design, architect, model, or plan the resources, schema, data model, or access model — \"design the resources for...\", \"plan the schema for...\", \"model <domain> in Form.io\". Not for: building or standing up the app itself — \"build me a task manager / CRM\" (see `formio-application`, which invokes this planner internally as its planning step); standalone single-form creation — one survey, contact form, or questionnaire with no data model (see `formio-form-builder`); SSO, Token Swap, Custom JWT, 2FA, or RBAC tuning beyond default roles (see `formio-auth`); endpoint lookups (see `formio-api`).",
+      "source_sha256": "6335ed50a00f9d0bd144aa33ff366a6993335ad638df7df2a06b7b9c429484be",
+      "source_path": "skills/formio-resource-planner/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa36512e5ef8a0f5336f0a935b7d3481ba73f5e6e8442fad7241a080ba50837b": {
+      "description_zh": "参考 Form.io 项目、表单/资源和提交的 JSON 文档结构，编写编辑或解释组件、向导、条件、验证、data、行级 access、草稿、metadata、集成、认证提供方、阶段、租户及导入导出模板；不替代 REST、服务端动作或新应用规划。",
+      "source": "Form.io JSON schema reference covering the document shapes for projects, forms (and resources), and submissions. Use whenever constructing, editing, or interpreting Form.io JSON — form definitions returned by `form_get` / `form_create` / `form_update`; submission bodies (decoding `data`, row-level `access`, draft state, `metadata`); and project documents (settings, integrations, auth providers (OAuth/LDAP/SAML), stages, tenants, and template envelopes for `project_import` / `project_export`). Trigger for schema-level questions about form components, wizards, resources, submissions, project templates, conditional logic, validation rules, or any component `type` (textfield, select, datagrid, panel) when the work involves Form.io JSON. Not for: calling Form.io REST endpoints (see `formio-api`); configuring server-side actions on a form (see `formio-actions`); planning a new app''s resource model from scratch (see `formio-resource-planner`); orchestrating an entire app build (see `formio-application`).",
+      "source_sha256": "aa36512e5ef8a0f5336f0a935b7d3481ba73f5e6e8442fad7241a080ba50837b",
+      "source_path": "skills/formio-schema/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e06b0c82b83ebadab5feb01777e563217e8a758a3c97ae61034ab52849de449e": {
+      "description_zh": "提供基于源码的 @formio/js、@formio/js/utils 与 @formio/core 参考，覆盖 Formio 静态方法、实例表单/提交/文件方法、createForm、插件生命周期、Evaluator、树遍历、条件、JSONLogic、掩码清洗和 JWT 解码；作为原始 API 参考，完整应用与嵌入流程交由专用技能。",
+      "source": "Source-derived reference for the Form.io JavaScript SDK (`@formio/js`), the Utilities (`@formio/js/utils`), and the `@formio/core`-only helpers — authored from the Form.io source code. Covers static methods (`setBaseUrl`, `setProjectUrl`, `setToken`, `currentUser`, `logout`), instance methods on `new Formio(url)` (forms, submissions, files), the VanillaJS rendering entry point (`Formio.createForm`), the plugin lifecycle, and the `Utils` surface (Evaluator, traversal, conditions, JSONLogic, mask/sanitize). Use when the user asks to call a `Formio.*` static method, work with a `new Formio(...)` instance, invoke a `Utils.*` helper, evaluate JSONLogic, register a plugin, traverse component trees, or decode the JWT. Not for: REST endpoint shapes (see formio-api); orchestrating an app build (see formio-application); planning Resource schemas (see formio-resource-planner); `@formio/angular` wrappers (see formio-angular); embed/render-a-form tasks (see formio-form — this stays the raw API reference).",
+      "source_sha256": "e06b0c82b83ebadab5feb01777e563217e8a758a3c97ae61034ab52849de449e",
+      "source_path": "skills/formio-sdk/SKILL.md",
+      "package_sha256": "3b12a29df2e5c395dd0f3639210b2451520d79921e47897fea414d37e37adaa5",
+      "source_package": "Form.io-0.13.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79234cd5eaebfab4446a4197215973a13ad111df63d7a7febbba5b68eaa06ab2": {
+      "description_zh": "创建可填写 PDF 表单和含签名字段的合同模板，为已有 PDF 增加字段、替换静态文字或准备电子签署；发送成品签署使用 formify-send-contract。",
+      "source": "Build fillable PDF forms and contract templates with signature fields. Use when creating a form or template, adding fillable fields to an existing PDF, replacing static text with fields, or preparing a document for e-signing. Triggers on \"PDF form\", \"fillable PDF\", \"add fields to a PDF\", \"contract template\", \"skapa PDF-formulär\", \"PDF-mall\", \"fyllbart PDF\", \"formulario PDF\". Not for sending a finished document: see formify-send-contract.",
+      "source_sha256": "79234cd5eaebfab4446a4197215973a13ad111df63d7a7febbba5b68eaa06ab2",
+      "source_path": "skills/formify-pdf-forms/SKILL.md",
+      "package_sha256": "64e8ae5c037bec371beadd143d98ebbc38946b85837917943fa58405a6e2d16d",
+      "source_package": "Formify Core-1.6.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "049ef156d7f9351b3104524d6ce45c25c65d8fb12523f80a6def22c6a4e0b1dd": {
+      "description_zh": "通过 Formify 将保存模板、上传 PDF 或对话草拟文档发送给指定收件人电子签署；公共可复用签署链接及签署状态查询交由其他技能。",
+      "source": "Send a contract or document for e-signature through Formify. Use when sending something to be signed, from a saved template, an uploaded PDF, or a document drafted in this conversation. Triggers on \"send for signature\", \"send this contract\", \"e-sign\", \"signing request\", \"skicka för signering\", \"skicka kontrakt\", \"enviar para firmar\". Not for a reusable link anyone can sign (formify-share-link) or checking who signed (formify-track-signatures).",
+      "source_sha256": "049ef156d7f9351b3104524d6ce45c25c65d8fb12523f80a6def22c6a4e0b1dd",
+      "source_path": "skills/formify-send-contract/SKILL.md",
+      "package_sha256": "64e8ae5c037bec371beadd143d98ebbc38946b85837917943fa58405a6e2d16d",
+      "source_package": "Formify Core-1.6.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2ad5fb4a7a8b5888db59195a49d1142ac9ebaec96bbb85eca20898a47ec5fed": {
+      "description_zh": "发布无需指定收件人、任何人可打开签署的可复用链接，适用于未知姓名的表单、免责或同意书、网站和二维码，并可读取已收集结果；指定签署人邀请交由发送技能。",
+      "source": "Publish one reusable signing link anyone can open and sign, with no named recipients. Use when a form, waiver or consent goes to people whose names are unknown, when a link belongs on a website or a QR code, or when reading what a link has collected. Triggers on \"public link\", \"signing link\", \"link anyone can sign\", \"share a form\", \"put it on our website\", \"signeringslänk\", \"delningslänk\", \"enlace público\", \"enlace para firmar\". Not for inviting named signers: see formify-send-contract.",
+      "source_sha256": "f2ad5fb4a7a8b5888db59195a49d1142ac9ebaec96bbb85eca20898a47ec5fed",
+      "source_path": "skills/formify-share-link/SKILL.md",
+      "package_sha256": "64e8ae5c037bec371beadd143d98ebbc38946b85837917943fa58405a6e2d16d",
+      "source_package": "Formify Core-1.6.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a40e99a87a4610d187c3c071b4dfd979bf770be6315836666b9ffc67900ff1c": {
+      "description_zh": "在 Formify 文档发出后跟踪签署人、催签、设置签署通知、更正错误收件人、取消发送或下载已签副本，不用于初次发送。",
+      "source": "Track who has signed, remind them, get notified automatically when they do, fix a wrong recipient, or cancel a send. Use after a document went out for signature, when contact details were wrong, or when the signed copy is needed. Triggers on \"who has signed\", \"send a reminder\", \"notify me when signed\", \"wrong email address\", \"cancel the signing\", \"download the signed copy\", \"vem har signerat\", \"påminnelse\", \"återkalla\", \"quién ha firmado\". Not for sending: see formify-send-contract.",
+      "source_sha256": "0a40e99a87a4610d187c3c071b4dfd979bf770be6315836666b9ffc67900ff1c",
+      "source_path": "skills/formify-track-signatures/SKILL.md",
+      "package_sha256": "64e8ae5c037bec371beadd143d98ebbc38946b85837917943fa58405a6e2d16d",
+      "source_package": "Formify Core-1.6.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2779fb40fc5c2803c87547e1c574b17091212ee0b181c69133fc540d661fc486": {
+      "description_zh": "通过 BankID、证件扫描、人脸活体或公司查询核验签署人身份，适用于需要身份凭证、KYC/AML 和企业注册号检查；普通签署交由发送技能。",
+      "source": "Verify a signer with BankID, ID scan, face liveness or company lookup. Use when a signature needs proof of who signed, for KYC or anti-money-laundering, when scanning an ID document, or when verifying a company registration number. Triggers on \"BankID\", \"ID scan\", \"verify identity\", \"KYC\", \"AML\", \"face liveness\", \"legitimering\", \"identitetskontroll\", \"verificar identidad\". Not for ordinary signing without identity checks: see formify-send-contract.",
+      "source_sha256": "2779fb40fc5c2803c87547e1c574b17091212ee0b181c69133fc540d661fc486",
+      "source_path": "skills/formify-verify-identity/SKILL.md",
+      "package_sha256": "64e8ae5c037bec371beadd143d98ebbc38946b85837917943fa58405a6e2d16d",
+      "source_package": "Formify Core-1.6.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32e8111e3cb0d2ca76b22983bea12c82befccb1b693f8ace623028e02d352f78": {
+      "description_zh": "使用付费 Fortytwo Prime 多代理联合推理回答高风险、争议或跨领域问题；明确要求 Ask Fortytwo/Prime 时调用，用户质疑或需要深度时可建议，但原文要求未明确调用前先确认费用服务。",
+      "source": "Fortytwo Prime: collective multi-agent inference for high-stakes questions. ALWAYS use when the user says \"Ask Fortytwo\", \"Ask Prime\", \"Ask Fortytwo Prime\", or calls ask_fortytwo_prime. When the user doubts your answer (\"try again\", \"that's wrong\", \"are you sure?\"), wants more depth (\"go deeper\", \"elaborate\", \"full picture\"), or asks a question spanning multiple domains where a single model may fall short — suggest Fortytwo Prime but wait for confirmation before calling (this is a paid service). Even if the user doesn't mention Fortytwo by name, suggest it for contested topics, niche expertise, and high-stakes decisions.",
+      "source_sha256": "32e8111e3cb0d2ca76b22983bea12c82befccb1b693f8ace623028e02d352f78",
+      "source_path": "skills/fortytwo-mcp/SKILL.md",
+      "package_sha256": "fb116e81e93011937feb7b8c45f8d9813faf6b367e56514e9ab0a6683d790c1a",
+      "source_package": "fortytwo-mcp-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9b22e01db935736135316f566e4730e4b2c8cc0f0444f7571b65f8ab92e9496": {
+      "description_zh": "根据 Found 账簿整理季末或年末会计资料包，包括损益、分类明细账、未结事项和余额，用于税季、季度复盘、会计师会面或贷款申请。",
+      "source": "Put together a quarter-end or year-end package from the user's Found books for their accountant or bookkeeper, including profit and loss, a categorized ledger, open items, and balances. Use when the user is preparing for tax season, year-end, a quarterly review, a meeting with their accountant or CPA, a loan application, or asks for \"everything my accountant needs\".",
+      "source_sha256": "a9b22e01db935736135316f566e4730e4b2c8cc0f0444f7571b65f8ab92e9496",
+      "source_path": "skills/accountant-packet/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dda6d8e714775d26e87a81f5ec22c72d26fe84935d635f2ea53f25344d3fedbd": {
+      "description_zh": "汇总用户各 Found 企业和账户余额，说明指定子账户金额与待处理项目，形成快速现金概览。",
+      "source": "Summarize balances across the user's Found businesses and accounts. Use when the user asks how much money they have, what their balance is, how much is in a specific pocket or account, what is pending, or wants a quick cash overview.",
+      "source_sha256": "dda6d8e714775d26e87a81f5ec22c72d26fe84935d635f2ea53f25344d3fedbd",
+      "source_path": "skills/cash-snapshot/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f63cf4fd57bf4436bd313158d551eefa33fc05377cf2c5cf3f418c5cb6076aef": {
+      "description_zh": "按日期范围将 Found 交易导出为工作簿或 CSV，用于月、季、年交易历史和明细账。",
+      "source": "Export the user's Found transactions for a date range to a spreadsheet or CSV. Use when the user asks to export, download, pull, or dump transactions, get a transaction history, or build a ledger for a month, quarter, or year.",
+      "source_sha256": "f63cf4fd57bf4436bd313158d551eefa33fc05377cf2c5cf3f418c5cb6076aef",
+      "source_path": "skills/export-transactions/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "413d5f024dc7325c11e27bcfde50f689857c243f3a332f7d46104c6845ab6a0c": {
+      "description_zh": "查找 Found 中具体收费、付款、存款或供应商交易，回答客户是否付款、某供应商开支或期间软件支出等问题。",
+      "source": "Find specific transactions or answer spending questions in the user's Found account. Use when the user asks about a particular charge, payment, deposit, or vendor (\"what was that $400 charge\", \"did the client pay me\", \"how much did we spend at Amazon\", \"what did I pay for software last quarter\").",
+      "source_sha256": "413d5f024dc7325c11e27bcfde50f689857c243f3a332f7d46104c6845ab6a0c",
+      "source_path": "skills/find-transactions/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25e5975cdd102ba74830cdb2e6a614eb71b864409477e0d12a2ce08c8ba6bc73": {
+      "description_zh": "介绍助手可对已连接 Found 账户执行的工作，并依据数据提出业务财务管理的下一步。",
+      "source": "Show what the assistant can do with the user's Found account and suggest useful next steps based on their data. Use when the user has just connected Found, asks what Found can do here, asks how to use Found in this chat, or asks for ideas about managing their business finances with Found.",
+      "source_sha256": "25e5975cdd102ba74830cdb2e6a614eb71b864409477e0d12a2ce08c8ba6bc73",
+      "source_path": "skills/getting-started/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11cf4c9bacaf4ec4b76347d94ca91c6a31ba905a445589dd580ec25f6d8e63c9": {
+      "description_zh": "复核 Found 单月记账，生成关账前修正清单，检查未分类交易、缺失收据和待整理项目，以便月结或交给会计师。",
+      "source": "Review a month of the user's Found bookkeeping and produce a checklist of what to fix before the books are closed. Use when the user wants to close the month, clean up their books, catch up on bookkeeping, find uncategorized transactions or missing receipts, or get ready for their accountant.",
+      "source_sha256": "11cf4c9bacaf4ec4b76347d94ca91c6a31ba905a445589dd580ec25f6d8e63c9",
+      "source_path": "skills/month-end-close/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df40b118beaa00e0cbaada0899ffda9ba2a48aa746636c5379501f6490c6fd03": {
+      "description_zh": "汇总 Found 损益、收入、费用、利润率、主要支出类别及环比同比趋势，并帮助估算税款或季度预缴的预留金额。",
+      "source": "Summarize the user's profit and loss from their Found books and help them think about how much to set aside for taxes. Use when the user asks about profit, income, expenses, margins, top spending categories, how the business is doing, month-over-month or year-over-year trends, or how much to save for taxes or quarterly estimated taxes.",
+      "source_sha256": "df40b118beaa00e0cbaada0899ffda9ba2a48aa746636c5379501f6490c6fd03",
+      "source_path": "skills/profit-loss-and-taxes/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e2c411f5474090faa2861034a5cdccc85788cce0df398d6ae55cafe5e2d2619": {
+      "description_zh": "将 Found 账簿与银行流水按期间对账、滚动核对余额，并匹配 Stripe 结算与入账，排查余额差异和未匹配款项。",
+      "source": "Reconcile the user's Found accounts for a period by checking the books against the bank activity, rolling balances forward, and matching Stripe payouts to deposits. Use when the user asks to reconcile, balance the books, check that numbers match, figure out why a balance looks wrong, or match payouts or deposits.",
+      "source_sha256": "2e2c411f5474090faa2861034a5cdccc85788cce0df398d6ae55cafe5e2d2619",
+      "source_path": "skills/reconcile/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c62bd96e05c346ca451ddb146a67054dd92f334dfea4fc9132cdc8225c66d60a": {
+      "description_zh": "复核 Found 未付及逾期发票、计算账龄并起草客户跟进消息，用于应收账款查询和迟付催收。",
+      "source": "Review the user's unpaid and overdue Found invoices, age them, and draft follow-up messages to clients. Use when the user asks who owes them money, which invoices are unpaid or overdue, about accounts receivable, whether a client has paid, or wants help chasing late payments.",
+      "source_sha256": "c62bd96e05c346ca451ddb146a67054dd92f334dfea4fc9132cdc8225c66d60a",
+      "source_path": "skills/unpaid-invoices/SKILL.md",
+      "package_sha256": "4b907827145025d562f85d434d6a318411e3081cd388334cbeca342375839019",
+      "source_package": "Found-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "648b6c304f3e66975d7e9e93c39249ef313b2f4a438eb4b1ec115e2db61fb134": {
+      "description_zh": "通过 FoundRole MCP 搜索、分析、比较、保存和管理职位，支持个性化推荐、简历匹配、薪酬/H-1B 信号、虚假职位评估、申请跟踪、提醒和职业指导；可分析保存外部职位，但不在其他招聘网站执行搜索。",
+      "source": "Search, analyze, compare, save, and manage jobs with the FoundRole MCP app, and answer career questions from FoundRole's guidance blog. Use when a user wants live job results, personalized recommendations, resume-fit analysis, salary or H-1B signals, ghost-job assessment, comparison of internal or externally found jobs, application tracking, reminders, job alerts, or career advice (visa, resume, salary, interview, relocation). Also use to analyze or save into FoundRole a job found elsewhere, including partner listings surfaced in ChatGPT (Indeed, Appcast, Upwork). Do not use it to run a job search on another job board — search FoundRole.",
+      "source_sha256": "648b6c304f3e66975d7e9e93c39249ef313b2f4a438eb4b1ec115e2db61fb134",
+      "source_path": "skills/foundrole-job-search/SKILL.md",
+      "package_sha256": "1114ef2e183317d78ed119b53e13981ab8e285a42503d64efc23de4437914220",
+      "source_package": "FoundRole Jobs-1.1.17-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cee32517d1c5a1c1898d6bf561495f3ef4f178856979cae9e24a5d9d7f969128": {
+      "description_zh": "通过 FoundRole ATS 解析器检查简历机器可读性，报告提取和丢失内容，适用于 PDF、粘贴文本、ATS 兼容性和招聘系统读取问题；不改写或评价简历内容质量。",
+      "source": "Check how hiring software (an ATS parser) reads a resume with the FoundRole MCP app, and report what the parser extracted and what it lost. Use when a user asks whether their resume is ATS-friendly, why applications get no reply, whether a parser can read their PDF, what a recruiting system sees on their resume, or asks for a resume scan, resume score, or resume review. Also use when the user pastes resume text and wants it checked. Do not use it to rewrite or grade the content of a resume — this check reports machine readability, not writing quality.",
+      "source_sha256": "cee32517d1c5a1c1898d6bf561495f3ef4f178856979cae9e24a5d9d7f969128",
+      "source_path": "skills/foundrole-resume-check/SKILL.md",
+      "package_sha256": "1114ef2e183317d78ed119b53e13981ab8e285a42503d64efc23de4437914220",
+      "source_package": "FoundRole Jobs-1.1.17-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23107058199e5eb745c2aecb4c126e52baa3a1e4297c8ea93bbd49f920ca4f02": {
+      "description_zh": "开展以证据为先的纪律性证伪审查，系统质疑、重建和验证代码、架构、计划与设计，适用于明确调用、红队批评、故障预判、AI 代码审查、安全评估和事件修复加固。",
+      "source": "Run an evidence-first Disciplined Falsification Review that systematically attacks, rebuilds, and verifies code, architecture, plans, and designs. Use when explicitly invoked with $frank-grimes or /frank-grimes:grind, or when asked to grind, red-team, critique, find problems, perform a pre-mortem, review AI-generated code, assess security, or harden an incident fix.",
+      "source_sha256": "23107058199e5eb745c2aecb4c126e52baa3a1e4297c8ea93bbd49f920ca4f02",
+      "source_path": "skills/frank-grimes/SKILL.md",
+      "package_sha256": "bff06e09cac48b18e57d835ece15f14b0c67f4d9384a8d7fc6999b11ee9afd76",
+      "source_package": "Frank Grimes-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed8567487f97a3b64b6a2d0de2f87501603cdf3a45fe52674ff494c35760c0a3": {
+      "description_zh": "检查 API 或 URL 的数据新鲜度、端点健康与可靠性、延迟、TLS 证书、缓存陈旧及退化情况，适用于数据年龄疑虑和执行动作前验证。",
+      "source": "This skill should be used when the user asks to \"check if an API is fresh\", \"verify endpoint health\", \"is this data stale\", \"measure API latency\", \"check TLS certificate status\", \"validate data freshness\", \"is this endpoint alive\", \"run a freshness check\", \"probe this URL\", or \"check endpoint reliability\". Also trigger when the user mentions cache staleness, endpoint degradation, data age concerns, API health checks, or pre-action data verification.",
+      "source_sha256": "ed8567487f97a3b64b6a2d0de2f87501603cdf3a45fe52674ff494c35760c0a3",
+      "source_path": "skills/freshprobe-check/SKILL.md",
+      "package_sha256": "13742be466b8775f24526d24ed7a21cf25645c1e0f88c055df7cedffcac3a320",
+      "source_package": "freshprobe-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6aca329665c9761de344b5e6dad22a0318b84a356c6f059d641dcb973bb62ec": {
+      "description_zh": "为新建或改造界面提供有明确意图且具辨识度的视觉设计指导，帮助选择审美方向、字体及避免模板默认风格。",
+      "source": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "source_sha256": "f6aca329665c9761de344b5e6dad22a0318b84a356c6f059d641dcb973bb62ec",
+      "source_path": "skills/frontend-design/SKILL.md",
+      "package_sha256": "e6adc1d0ae2dc351fc239d9f2ca6b9ddc68cb82a36ebb2c0a61b9d777361515e",
+      "source_package": "frontend-design-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "937caeac340385113a0852bf27a3c6553fcaebce015a902d02c5aae43ee61689": {
+      "description_zh": "按项目显示或修改 Frugal 各代理的模型映射，查看层级配置、切换模型或重置覆盖值。",
+      "source": "Show or change which model each frugal agent runs on, per project. Use when the user wants to see the current tier-to-model mapping, move an agent to a different model (e.g. scout to sonnet), or reset overrides. Triggers on \"frugal models\", \"change router models\", \"which model does scout use\".",
+      "source_sha256": "937caeac340385113a0852bf27a3c6553fcaebce015a902d02c5aae43ee61689",
+      "source_path": "skills/models/SKILL.md",
+      "package_sha256": "763e7e334b7c43b6a79398e6c7c946921edda7cc5649dec1dd7be41354421bda",
+      "source_package": "Frugal-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aeee4f415742c3b8a8a2431ef7090778f490d6267185242382fc06df62beddd1": {
+      "description_zh": "报告 Frugal 路由指标，包括各代理层级成本、升级比例及相对全部采用最高层模型的估计节省。",
+      "source": "Report frugal routing metrics - cost per agent tier, escalation rate, and estimated savings versus running everything on the top-tier model.",
+      "source_sha256": "aeee4f415742c3b8a8a2431ef7090778f490d6267185242382fc06df62beddd1",
+      "source_path": "skills/router-stats/SKILL.md",
+      "package_sha256": "763e7e334b7c43b6a79398e6c7c946921edda7cc5649dec1dd7be41354421bda",
+      "source_package": "Frugal-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0daa3501c58ef1a4aed1dfa0859a15dda714f8bb6fcf582f78592f18c202c68": {
+      "description_zh": "为编码、搜索、提取、审查和多步骤任务选择成本较低的执行策略，在确定性工具、不同模型工作者与主模型间路由，并在工作者失败时处理升级。",
+      "source": "Cost-optimised task routing. Use at the start of any coding, search, extraction, review, or multi-step task to pick the cheapest execution strategy (deterministic tool, haiku worker, sonnet worker, main model, fable worker) and to handle escalation when a worker fails. Also triggers on mentions of cost, budget, routing, or delegation.",
+      "source_sha256": "e0daa3501c58ef1a4aed1dfa0859a15dda714f8bb6fcf582f78592f18c202c68",
+      "source_path": "skills/routing/SKILL.md",
+      "package_sha256": "763e7e334b7c43b6a79398e6c7c946921edda7cc5649dec1dd7be41354421bda",
+      "source_package": "Frugal-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff4be5520db2e5e324315ee5c066cdcf78b854b6c8b6ac28ccad1d28fb0528fc": {
+      "description_zh": "将 Frugal 节省金额片段接入 Claude Code 状态栏，没有现成状态栏时建立最简版本，有则合并该片段。",
+      "source": "Wire the frugal savings segment into the user's Claude Code statusline - creates a minimal statusline if none exists, or merges the segment into an existing one.",
+      "source_sha256": "ff4be5520db2e5e324315ee5c066cdcf78b854b6c8b6ac28ccad1d28fb0528fc",
+      "source_path": "skills/setup-statusline/SKILL.md",
+      "package_sha256": "763e7e334b7c43b6a79398e6c7c946921edda7cc5649dec1dd7be41354421bda",
+      "source_package": "Frugal-0.14.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3254d7d20a2e8949975ea502fb28f48006b3a4b30f278c7546f1898d5f12ec17": {
+      "description_zh": "为 React、Next.js、Remix 和 React Router 项目维护 Feature-Sliced Design 架构，适用于组件、页面、功能创建和前端重组，落实层级、公开 API、导入规则与 segment 约定。",
+      "source": "Feature-Sliced Design (FSD) architecture guardian for React, Next.js, Remix, and React Router projects. Use when creating components, pages, features, or restructuring a frontend codebase. Enforces layer hierarchy, public API patterns, import rules, and segment conventions.",
+      "source_sha256": "3254d7d20a2e8949975ea502fb28f48006b3a4b30f278c7546f1898d5f12ec17",
+      "source_path": "skills/fsd-architect/SKILL.md",
+      "package_sha256": "407ec16475156c6ade6248846f16a17a8bc623065746853377d1eb19728a443f",
+      "source_package": "fsd-architect-skill-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf74214ae22e8d70edd4f4f6cb940d2c9785867bdc8c3c196df74e3833e66c10": {
+      "description_zh": "将已补全联系人写入另行连接的 CRM MCP，先核对连接器、提出字段映射、检查重复并取得明确确认，再仅调用 CRM 工具；FullEnrich 自身仅搜索、补全和导出 CSV/JSON，不写 CRM。",
+      "source": "Use when the user wants to move already enriched contacts into a CRM and has a separate CRM MCP connected. Orchestrates that separately connected CRM MCP: confirms the connector, proposes field mapping, checks duplicates, requests explicit confirmation, then calls only the CRM MCP's tools. FullEnrich MCP itself only searches, enriches, and exports CSV/JSON; it does not write CRM records. Triggers on: \"push to CRM\", \"sync contacts\", \"update my CRM\", \"add these to HubSpot\", or similar requests.",
+      "source_sha256": "cf74214ae22e8d70edd4f4f6cb940d2c9785867bdc8c3c196df74e3833e66c10",
+      "source_path": "skills/full-crm/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0dcc3cd1a276f14b2a79fe0d2eeb7adae86efe14c6f7ebd0e7726f0ccb12e28f": {
+      "description_zh": "解析和检查含 LinkedIn URL、姓名/公司等联系人的 CSV，经用户确认用 FullEnrich 批量补全经验证邮箱与电话，并以表格和可下载结果交付。",
+      "source": "Use when the user uploads a CSV file containing contacts (LinkedIn URLs, names + companies, or any combination) and wants to enrich them with verified emails and phone numbers via FullEnrich. Parses the CSV, validates structure, runs bulk enrichment with user confirmation, and presents enriched results as a table in chat with a download option. Triggers on: \"enrich this CSV\", \"enrich my file\", \"upload contacts\", \"bulk enrich\", or any request involving a CSV/spreadsheet of contacts to enrich.",
+      "source_sha256": "0dcc3cd1a276f14b2a79fe0d2eeb7adae86efe14c6f7ebd0e7726f0ccb12e28f",
+      "source_path": "skills/full-csv/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c148eb7ab953406dc0ed2b1ce9d2231c2143fcb1ddb50a6b244dd63d4cd6a96": {
+      "description_zh": "分析一个 LinkedIn 档案的岗位、资历、行业和公司规模，通过 FullEnrich 查找并排序相似人员，解释相似依据，用于复制成功潜客画像和扩展 ICP。",
+      "source": "Use when the user has a LinkedIn profile and wants to find similar people — same type of role, seniority, industry, and company size. Acts as a Sales Ops / RevOps specialist: analyzes the source profile, extracts the key attributes that define the persona, searches FullEnrich for matching profiles, and presents ranked lookalikes with a clear explanation of why each one is similar. Works for both \"duplicate a success\" (find more people like a converted prospect) and \"expand an ICP\" (find more people matching a target persona). Triggers on: \"find similar profiles\", \"lookalike\", \"find people like\", \"more profiles like this\", \"find me someone similar\", \"clone this prospect\", \"people who look like\", \"same profile as\", \"ICP expansion\", or any request involving a LinkedIn URL with the intent to find matching people.",
+      "source_sha256": "4c148eb7ab953406dc0ed2b1ce9d2231c2143fcb1ddb50a6b244dd63d4cd6a96",
+      "source_path": "skills/full-lookalike/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85e93ae6be05ef7c5601965fdae68d1214500247a015fc37d37ffee7d8e23fc8": {
+      "description_zh": "为即将举行的会议研究对方，获取 FullEnrich 工作经历、教育、技能和公司背景，并以网络搜索补充近期信号，形成含谈话要点、建议问题和会议策略的简报。",
+      "source": "Use when the user has an upcoming meeting and wants a comprehensive brief on the person they're meeting. Acts as a senior meeting strategist: pulls rich profile data (work history, education, skills) and company context from FullEnrich, supplements with web search for fresh signals, and delivers a structured brief with expert talking points, suggested questions, and tactical advice on how to run the meeting. Triggers on: \"prep my meeting\", \"I have a call with\", \"brief me on\", \"who is [name]\", \"meeting prep\", or any request to research a person before a meeting.",
+      "source_sha256": "85e93ae6be05ef7c5601965fdae68d1214500247a015fc37d37ffee7d8e23fc8",
+      "source_path": "skills/full-meeting/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a2d1a3ff18fc03238a77ba2e2a0af5ec4197156c9ec027af6c8ecf3e0a1d2cf": {
+      "description_zh": "使用 FullEnrich 搜索目标公司员工，根据职位和资历推断团队层级，生成 Mermaid 组织图，并按销售、合作或招聘目标推荐联系对象；组织关系为推断。",
+      "source": "Use when the user wants to map a company's team structure, visualize the org chart, and identify the right people to contact. Acts as a sales intelligence analyst: searches FullEnrich for employees at a target company, infers the organizational hierarchy from titles and seniority levels, generates a Mermaid diagram of the team structure, and recommends who to talk to based on the user's objective (sales, partnership, recruitment). Triggers on: \"org chart\", \"organigramme\", \"who works at\", \"map the team\", \"team structure\", \"account map\", \"show me the org\", \"who should I talk to at\", \"map this company\", or any request to understand a company's people and structure.",
+      "source_sha256": "3a2d1a3ff18fc03238a77ba2e2a0af5ec4197156c9ec027af6c8ecf3e0a1d2cf",
+      "source_path": "skills/full-org/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6373fcb74b5af59e33d9521aee1ebd771d6a2ac9b95b30c423abb9462b4a3ac": {
+      "description_zh": "通过问卷明确用户语气与价值主张，结合 FullEnrich 联系人的经历、教育和技能，起草高度个性化的 B2B 陌生邮件、LinkedIn 私信或电话脚本。",
+      "source": "Use when the user wants to craft hyper-personalized outreach messages for B2B contacts. Acts as a senior outreach strategist: captures the user's voice and value prop through a discovery questionnaire, pulls rich contact data (work history, education, skills) from FullEnrich, and drafts cold emails, LinkedIn DMs, or cold call scripts that feel hand-written. Triggers on: \"write outreach\", \"draft a cold email\", \"help me reach out\", \"write a message for\", \"prepare outreach\", \"let's do some outreach\", or any request to contact prospects with personalized messaging.",
+      "source_sha256": "e6373fcb74b5af59e33d9521aee1ebd771d6a2ac9b95b30c423abb9462b4a3ac",
+      "source_path": "skills/full-outreach/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0dbcf45e679e829d677354398d649b1265f1ee40a17b1bf9473bc819a3ef3c82": {
+      "description_zh": "通过 FullEnrich 查找并补全符合 ICP 的 B2B 联系人，按职位、行业、地点或公司规模构建潜客名单。",
+      "source": "Use when the user wants to find and enrich B2B contacts matching an ICP. Triggers on: \"find me contacts\", \"build a prospect list\", \"search for people\", \"enrich leads\", or any request describing a target audience by title, industry, location, or company size.",
+      "source_sha256": "0dbcf45e679e829d677354398d649b1265f1ee40a17b1bf9473bc819a3ef3c82",
+      "source_path": "skills/full-prospecting/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9f5dcd40276eb4d06a5942c928896650e484c2995b2ce238976283c8b6afeb1": {
+      "description_zh": "设计并部署多次接触的外联序列，规划触点、时机、渠道和条件分支，编写每条消息、用交互图展示流程并推送到已连接的序列工具；可复用 Full Outreach 现有消息或从零创建。",
+      "source": "Use when the user wants to design and deploy a multi-touch outreach sequence. Acts as a senior outbound strategist: designs the sequence architecture (touchpoints, timing, channels, conditional branches), writes every message, visualizes the flow with interactive diagrams, and pushes to the user's connected sequencer. Adapts to existing messages from Full Outreach or creates everything from scratch. Triggers on: \"create a sequence\", \"build my outreach sequence\", \"design a campaign\", \"set up a drip\", \"multi-touch\", \"follow-up sequence\", or any request to orchestrate multi-step outreach across channels.",
+      "source_sha256": "c9f5dcd40276eb4d06a5942c928896650e484c2995b2ce238976283c8b6afeb1",
+      "source_path": "skills/full-sequence/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b4d8619bba4de7b3dd13c8be8f40b27eb0283d34d57b472e6f57e02f0a20439": {
+      "description_zh": "通过深入访谈了解岗位、团队和招聘背景，在 FullEnrich 中搜索候选人、补全邮箱电话、按匹配程度排序并生成详细档案，为每人建议联系渠道。",
+      "source": "Use when the user wants to source candidates for a role. Acts as a senior talent acquisition partner and headhunter: runs a deep conversational intake to understand the role, team, and hiring context, searches FullEnrich's database with surgical precision, enriches candidates with email + phone, qualifies and ranks them with detailed Tier 1 profiles, and recommends the best outreach channel per candidate. Adapts to the user's recruitment experience level. Triggers on: \"source candidates\", \"find me candidates\", \"I need to hire\", \"recruitment\", \"talent sourcing\", \"help me fill this role\", or any request related to finding people for a job opening.",
+      "source_sha256": "6b4d8619bba4de7b3dd13c8be8f40b27eb0283d34d57b472e6f57e02f0a20439",
+      "source_path": "skills/full-talent/SKILL.md",
+      "package_sha256": "7908fed8a04449a6fb06d4dfcf82ccca3e8325435a9380a53238a92ec96636e5",
+      "source_package": "FullEnrich-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4cc1e39d7c4584ec5ac58ae37b2832e3251e829d6a44f739ed25e4d5ca8fec87": {
+      "description_zh": "指导 Fullstory A/B 比较结构，区分事件/会话属性适用的维度细分与用户级属性适用的独立分群，确保比较口径正确。",
+      "source": "How to structure A vs B comparisons in Fullstory — when to use dimensionality (event/session properties) vs separate segments (user-level properties), and why the distinction matters for correctness.",
+      "source_sha256": "4cc1e39d7c4584ec5ac58ae37b2832e3251e829d6a44f739ed25e4d5ca8fec87",
+      "source_path": "skills/comparisons/SKILL.md",
+      "package_sha256": "062d619672be266de9dec0a5ab901a3a5e26698ea79dae18c8944bdbef36875f",
+      "source_package": "Fullstory-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fbb22ce2429ff92fbe0abbe520237903bd09daff7b975e7bb7291bafb3821cc": {
+      "description_zh": "通过 Fullstory 度量用户行为，建立分群和指标、计算数量、比率、趋势、细分及群组对比，再调查会话解释数字含义。",
+      "source": "Fullstory analytics workflow. Use when answering a question that requires measuring user behavior — counts, rates, trends, breakdowns, or cohort comparisons. Builds segments and metrics, computes results, then investigates sessions to explain what the numbers mean.",
+      "source_sha256": "8fbb22ce2429ff92fbe0abbe520237903bd09daff7b975e7bb7291bafb3821cc",
+      "source_path": "skills/general-analysis/SKILL.md",
+      "package_sha256": "062d619672be266de9dec0a5ab901a3a5e26698ea79dae18c8944bdbef36875f",
+      "source_package": "Fullstory-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc2f994ce89faddff8c21abf96f756a92d9b27de050ee3de592b8c338a9f4520": {
+      "description_zh": "使用 Fullstory 会话录屏诊断用户问题、调查缺陷、分析行为或验证界面正确性。",
+      "source": "Use when diagnosing user-reported issues, investigating bugs, analyzing user behavior, or validating UI correctness using Fullstory session recordings.",
+      "source_sha256": "bc2f994ce89faddff8c21abf96f756a92d9b27de050ee3de592b8c338a9f4520",
+      "source_path": "skills/session-review/SKILL.md",
+      "package_sha256": "062d619672be266de9dec0a5ab901a3a5e26698ea79dae18c8944bdbef36875f",
+      "source_package": "Fullstory-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2abcc8b8b530a159be78b5adcd0f44b6bf543db6a85cc5d2ae4ff91dae7fcd4a": {
+      "description_zh": "为 Functionize create 代理编写或改进自然语言测试指令，覆盖登录、电商、2FA、数据驱动、API/数据库、文件和视觉验证，以及从 Selenium/Playwright 或人工测试转写；已创建测试的失败运行诊断交由 functionize。",
+      "source": "Write high-quality natural-language test instructions for the Functionize create agent. Activates whenever the user asks to write, draft, refine, fix, or review the prompt text that will be fed to the Functionize create agent — the instructions themselves, before generation — whether first-drafting a new test (\"make/create/build a test\") or changing what an existing test does (add a step, change a verification, adjust the flow — re-authoring its instructions): login flows, e-commerce, signup with 2FA, data-driven tests, API checks, database verifications, file uploads/downloads, visual validations, and converting an existing Selenium/Playwright-style or manual test into Functionize instructions. Making an already-created test run again — one that is failing, flaky, or needs diagnosing — is not this skill; that is functionize.",
+      "source_sha256": "2abcc8b8b530a159be78b5adcd0f44b6bf543db6a85cc5d2ae4ff91dae7fcd4a",
+      "source_path": "skills/functionize-prompting/SKILL.md",
+      "package_sha256": "80eac143779331b73807f721a56a6c351bc4eef16a428fde3e3146511327798e",
+      "source_package": "functionize-mcp-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7c8909f7c5104dd0ea28878b0f9f24bfd2b7dd4315979c7e367fe94b7da554e3": {
+      "description_zh": "操作 Functionize Agentic Studio 平台与代理会话，处理变量、步骤动作、断言、编排、测试数据、智能等待、上下文切换、自愈和视觉验证，诊断已有失败或不稳定测试；指令撰写交由提示技能。",
+      "source": "Operate and reference the Functionize Agentic Studio test platform and its conversational agent session. Activate whenever the user mentions Functionize, the Functionize agent session, the agent-session tools, Functionize variables and the values a test reads, a test's steps and action types, a test's verifications and assertions, orchestrations, TDM (test data management), smart waits, context switching, the self-healing slider, visual validation, or asks \"how do I talk to the Functionize agent\" / \"how do I diagnose this test failure\" — including an existing test that is failing, flaky, broken or newly red, and any ask to fix, repair, review or diagnose one. Activate even when they don't explicitly name the platform but the context is clearly Functionize-related. For writing, drafting or refining the test prompts themselves, use functionize-prompting, or the relevant functionize domain skill — this skill is the platform-operations layer.",
+      "source_sha256": "7c8909f7c5104dd0ea28878b0f9f24bfd2b7dd4315979c7e367fe94b7da554e3",
+      "source_path": "skills/functionize/SKILL.md",
+      "package_sha256": "80eac143779331b73807f721a56a6c351bc4eef16a428fde3e3146511327798e",
+      "source_package": "functionize-mcp-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9368175aef33105098c1feb9353b66d27ecd40d545cc37288dc42e5e3890e150": {
+      "description_zh": "在 gl-recon 分类差异后沿审计轨迹将对账差异追溯到两侧源交易或记账条目，明确差异内容和原因。",
+      "source": "Root-cause a reconciliation break to its source transaction or posting — follow the audit trail from the break row back to the originating entry on each side and state what differs and why. Use after gl-recon has classified a break.",
+      "source_sha256": "9368175aef33105098c1feb9353b66d27ecd40d545cc37288dc42e5e3890e150",
+      "source_path": "skills/break-trace/SKILL.md",
+      "package_sha256": "ce6b3c278904a3789e15ac2d2629ea75b7d60fab4b05c1551cfee3228ba490e5",
+      "source_package": "fund-admin-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5524df135185b41a559775e534d4c8adddb6ff3d1a31be85f95c59dff4f5a1cb": {
+      "description_zh": "按交易日或期间在持仓或交易层面对总账与明细账进行匹配，发现差异并按可能原因分类，适用于跨资产类别日常或月末对账。",
+      "source": "Reconcile general ledger to subledger for a trade date or period — match at the position or transaction level, surface breaks, and classify each break by likely cause. Use for daily or month-end recon runs across asset classes.",
+      "source_sha256": "5524df135185b41a559775e534d4c8adddb6ff3d1a31be85f95c59dff4f5a1cb",
+      "source_path": "skills/gl-recon/SKILL.md",
+      "package_sha256": "ce6b3c278904a3789e15ac2d2629ea75b7d60fab4b05c1551cfee3228ba490e5",
+      "source_package": "fund-admin-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f04f1a49597481b63c9649465c8e46f6f47bf60267f8a9c1f5035d10828d892a": {
+      "description_zh": "根据研究输入生成结构化用户画像，为每项属性明确标注研究验证或推断，适用于功能需求、战略或设计简报。",
+      "source": "Build evidence-backed user personas from research inputs. Creates structured persona documents\ngrounded in evidence, with each attribute clearly labeled as research-validated or inferred.\n\nUse this skill when you need personas for an FR, strategy doc, or design brief. Trigger on:\n\"build a persona\", \"create user personas from this research\", \"who are our users\", \"describe\nour target user\", \"make a persona for [segment]\", or when synthesised research is ready and\nneeds a persona layer.",
+      "source_sha256": "f04f1a49597481b63c9649465c8e46f6f47bf60267f8a9c1f5035d10828d892a",
+      "source_path": "skills/build-user-persona/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60477a47429404b4a859895db75b0c01f3e5ad8c722b76857d45fe8ad56be5ab": {
+      "description_zh": "形成竞争格局分析，包括参与者档案、能力比较矩阵、市场空白机会及战略含义，用于进入新市场、更新战略或规划周期。",
+      "source": "Structure a competitive landscape analysis — player profiles, capability comparison matrix,\nwhitespace opportunities, and strategic implications.\n\nUse this skill when entering a new market, refreshing strategy, or preparing for a planning\ncycle. Trigger on: \"do a competitive analysis\", \"who are our competitors\", \"compare us to X\nand Y\", \"what's the competitive landscape for [space]\", \"where is there whitespace in the\nmarket\", \"how do we stack up against [competitor]\".",
+      "source_sha256": "60477a47429404b4a859895db75b0c01f3e5ad8c722b76857d45fe8ad56be5ab",
+      "source_path": "skills/competitive-analysis/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2a5be859e7564f3fa1a9f4e06fc31c01303689ecf7c4190202e0734331a5b38": {
+      "description_zh": "对功能或举措评分排序，默认采用 RICE，结合现有战略和 OKR 确定影响分数；可输入清单或 FR 文件，也支持 Agentic RICE、ICE 和 MoSCoW。",
+      "source": "Score and rank a list of features or initiatives using RICE by default. Scans existing strategy and OKRs to ground Impact scores in what the team is actually optimizing for. Use when deciding what to build next, preparing for planning, or presenting a ranked backlog to stakeholders. Accepts a pasted list, FR filenames, or a mix of both. Supports RICE (default), Agentic RICE (for AI-delegated work), ICE, and MoSCoW as alternative frameworks.",
+      "source_sha256": "f2a5be859e7564f3fa1a9f4e06fc31c01303689ecf7c4190202e0734331a5b38",
+      "source_path": "skills/prioritize/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef1d20b5df7c8da7cf71cc941f475fe6d295673ac9f84f135b94571635098603": {
+      "description_zh": "将冲刺票据、任务和交付结果整理为面向 PM、领导与跨职能团队的专业冲刺复盘报告，涵盖迭代完成事项和速度摘要。",
+      "source": "Generate a professional sprint review report for stakeholders — PMs, leadership, and cross-functional teams. Use this skill whenever a user wants to write up a sprint, summarize what the team shipped, produce a sprint retrospective document, recap what was completed in an iteration, or create a sprint summary for leadership. Triggers include: \"write my sprint review\", \"generate a sprint recap\", \"create a sprint report\", \"summarize what we shipped this sprint\", \"help me write up our sprint for stakeholders\", or any mention of sprint outcomes, velocity reports, or iteration summaries — even if they don't use the word \"skill\" or \"report\". Also trigger when a user pastes a list of tickets/tasks and asks for a write-up or summary.",
+      "source_sha256": "ef1d20b5df7c8da7cf71cc941f475fe6d295673ac9f84f135b94571635098603",
+      "source_path": "skills/sprint-review/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e1c92e53b1d8e2f3271de40e4a72a1cdf443a957ee1c22ae593567de3420314": {
+      "description_zh": "将访谈、问卷、支持工单和 NPS 原话等用户研究整理为主题、痛点、待完成任务和研究缺口，为功能需求或画像提供依据。",
+      "source": "Synthesize raw user research (interview notes, survey results, support tickets, NPS verbatims)\ninto structured insights: themes, pain points, jobs-to-be-done, and research gaps.\n\nUse this skill when you need to make sense of qualitative research data before writing a feature\nrequest or building personas. Trigger on: \"synthesize my research\", \"what are the themes in these\ninterviews\", \"extract insights from this feedback\", \"summarize what users are saying\", \"pull out\nthe key themes from this data\", or when someone pastes raw research notes.",
+      "source_sha256": "4e1c92e53b1d8e2f3271de40e4a72a1cdf443a957ee1c22ae593567de3420314",
+      "source_path": "skills/synthesize-user-research/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f5a4e2f90adaadd280b2fae37588d2160f2dd12b88545bfa06a30280f40d28b": {
+      "description_zh": "按清晰性、可测试性、结果导向、可衡量性和独立性评估验收标准，按严重程度列出问题并生成结构报告，可改写不佳标准或转为用户故事格式。",
+      "source": "Verify acceptance criteria quality and identify gaps.\n\nUse this skill whenever you need to evaluate acceptance criteria (ACs) to ensure they meet quality standards. Trigger on: \"review these ACs\", \"check if these acceptance criteria are good\", \"validate my user story criteria\", \"improve our acceptance criteria\", \"audit these requirements\", \"do these ACs pass review\", or similar requests. Also use proactively when someone shares acceptance criteria that look hastily written or vague. The skill analyzes criteria against five key dimensions (clarity, testability, outcome-focus, measurability, independence), scores issues by severity (critical/major/minor), and generates a structured report. It can also rewrite poor criteria into better ones or convert them to user story format.",
+      "source_sha256": "3f5a4e2f90adaadd280b2fae37588d2160f2dd12b88545bfa06a30280f40d28b",
+      "source_path": "skills/verify-acceptance-criteria/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aac227b74bdf9a2c14c04af001d6fdada1129e3b528214c27de3a3b4b1920683": {
+      "description_zh": "引导收集问题、方案、结果和需求，撰写 Markdown 功能需求并为每项需求生成验收标准，缺资料时明确缺口与问题，包含风险。",
+      "source": "Guided Feature Request (FR) authoring. Assists the user in writing a high-quality FR by collecting structured inputs (problem, solution, outcomes, requirements), then auto-generates Acceptance Criteria for every requirement. If any AC cannot be written due to missing information, the skill identifies the gaps and prompts the user. Returns a polished FR in Markdown with nested ACs, open questions, and risks.\n\nUse this skill whenever a user needs to author or improve a feature request. Trigger on: \"write a feature request\", \"help me write an FR\", \"create a feature spec\", \"draft a feature proposal\", \"I want to define a new feature\", \"turn this idea into a feature request\", or similar requests.",
+      "source_sha256": "aac227b74bdf9a2c14c04af001d6fdada1129e3b528214c27de3a3b4b1920683",
+      "source_path": "skills/write-feature-request/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4fb9ed8de34bdc2ed7cf99097cba2a96d70d22e8c4e1624df1542010c14e085f": {
+      "description_zh": "从产品战略支柱生成目标与关键结果，质疑模糊 KR、区分产出和结果，并将每组 OKR 关联所服务的战略。",
+      "source": "Generate well-structured OKRs from a product strategy. Derives Objectives and Key Results from\nstrategy pillars, challenges vague KRs, distinguishes outputs from outcomes, and links each OKR\nback to the strategy pillar it serves.\n\nTrigger on: \"write our OKRs\", \"help me set OKRs for this quarter\", \"turn this strategy into\nOKRs\", \"what should our key results be\", \"draft Q[N] OKRs\", or after completing\nwrite-product-strategy.",
+      "source_sha256": "4fb9ed8de34bdc2ed7cf99097cba2a96d70d22e8c4e1624df1542010c14e085f",
+      "source_path": "skills/write-okrs/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa4679d38edecf833924a8af7d95cb87a9c1ecc030a9902c91b7af854a1d9028": {
+      "description_zh": "结合路线图、市场研究和竞争分析创建或更新 STRATEGY.md，使产品方向、竞争定位、战略支柱与业务目标一致，连接愿景和执行。",
+      "source": "Generate comprehensive product strategy documents aligned with business goals. Use this when defining or updating your product's strategic direction, aligning teams on where to play and how to win, or creating a STRATEGY.md that bridges vision and execution. Triggers include: clarifying product strategy, articulating competitive positioning, defining strategic pillars, creating alignment documents, or answering 'what are we betting on as a company?' This skill scans existing project docs (roadmaps, market research, competitive analyses) to inform strategy, then either creates a new STRATEGY.md or updates an existing one.",
+      "source_sha256": "fa4679d38edecf833924a8af7d95cb87a9c1ecc030a9902c91b7af854a1d9028",
+      "source_path": "skills/write-product-strategy/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "baf0db7588a8244c2d3353524c652b10d2eec8df432122abcb86e3ebdab8e35c": {
+      "description_zh": "将冲刺票据和 PR 转为客户发布说明，过滤内部基础设施事项，把标题改写为用户收益，按新增、改进、修复分组并适配渠道语气。",
+      "source": "Convert sprint tickets and PRs into customer-facing release notes. Filters internal/infra work,\nrewrites ticket titles as user benefits, groups by category (New / Improved / Fixed), and adapts\ntone to the target channel.\n\nTrigger on: \"write release notes\", \"turn these tickets into release notes\", \"what should we put\nin the changelog\", \"draft our release announcement\", \"write our changelog for [version]\", or\nafter a sprint-review session.",
+      "source_sha256": "baf0db7588a8244c2d3353524c652b10d2eec8df432122abcb86e3ebdab8e35c",
+      "source_path": "skills/write-release-notes/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4cf6b48be5bf17b08aa7228aa0e9fe833f5f7d8f2c5ceb342c95bfc1c15624e7": {
+      "description_zh": "依据战略与 OKR 创建 Now/Next/Later 产品路线图，以战略支柱组织主题，区分已承诺与方向性事项，未明确给出日期时不编造精确时间。",
+      "source": "Create a horizon-based product roadmap from strategy and OKRs. Organises work into Now/Next/Later\nthemes derived from strategy pillars, marks items as committed vs. directional, and avoids fake\nprecision (no hard dates unless explicitly provided).\n\nTrigger on: \"write a roadmap\", \"create our ROADMAP.md\", \"help me plan the next few quarters\",\n\"what should we build and when\", \"turn this strategy into a roadmap\", \"build a Now/Next/Later\nplan\", or after write-okrs.",
+      "source_sha256": "4cf6b48be5bf17b08aa7228aa0e9fe833f5f7d8f2c5ceb342c95bfc1c15624e7",
+      "source_path": "skills/write-roadmap/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31891679f3c640c98e148b67cecfee9f50fb1a187939a297497c1a0237e4d2f8": {
+      "description_zh": "生成一页面向领导的 PM 状态更新，明确正常、风险或阻塞信号，以数字说明影响、显示 OKR 进展并指出待决策事项。",
+      "source": "Write a concise, data-led PM status update for leadership. Leads with a clear status signal\n(on track / at risk / blocked), surfaces concrete impact with numbers, shows OKR progress,\nflags decisions needed, and fits on one page.\n\nTrigger on: \"write a stakeholder update\", \"draft my weekly PM update\", \"write a status update\nfor leadership\", \"what should I tell leadership this week\", \"write my monthly PM report\", or\nafter a sprint-review session.",
+      "source_sha256": "31891679f3c640c98e148b67cecfee9f50fb1a187939a297497c1a0237e4d2f8",
+      "source_path": "skills/write-stakeholder-update/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45b95c543c50c92d0a3534837dfb780408683ab5ad71d0523ee11d6cc664986b": {
+      "description_zh": "从已验证功能需求生成工程交接文件，说明范围、技术约束、边界情况与建议处理、未决问题和集成点，连接 PM 规格与工程而不替代方案设计。",
+      "source": "Write an engineering handoff document from a verified Feature Request. Covers scope boundaries,\ntechnical constraints, edge cases with recommended handling, open questions engineering needs\nanswered, and integration points. Bridges PM spec and engineering without designing the solution.\n\nTrigger on: \"write a technical brief\", \"help me hand this off to engineering\", \"what does eng\nneed to know to build this\", \"create a technical handoff doc\", \"make this FR ready for the\nengineering team\", or at the end of a feature request authoring session.",
+      "source_sha256": "45b95c543c50c92d0a3534837dfb780408683ab5ad71d0523ee11d6cc664986b",
+      "source_path": "skills/write-technical-brief/SKILL.md",
+      "package_sha256": "006ad06be60f69d224e486f65ff5379cdaf63e75821a94400d3415228455b64a",
+      "source_package": "Gambit-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b33e6f3721c62f1117e7e4e4e8f32a6b758b437ea2ee6e40cd8a2e0eb35e060b": {
+      "description_zh": "在任务完成、重大功能实现或合并前分派 the-inspector 进行审计，确认工作记录后再关闭任务。",
+      "source": "Use when completing tasks, implementing major features, or before merging — dispatches the-inspector to audit the books before the job is closed",
+      "source_sha256": "b33e6f3721c62f1117e7e4e4e8f32a6b758b437ea2ee6e40cd8a2e0eb35e060b",
+      "source_path": "skills/audit-review/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78d130659aa63489d6899882e1418c127b075cda36a3243f30dfa3dce3525949": {
+      "description_zh": "在功能或缺陷实现时遵循失败测试、通过测试、重构顺序，原文规定生产代码前先有失败测试。",
+      "source": "Use when implementing any feature or bugfix — enforces the Red-Green-Refactor drill with no production code allowed without a failing test first",
+      "source_sha256": "78d130659aa63489d6899882e1418c127b075cda36a3243f30dfa3dce3525949",
+      "source_path": "skills/drill-tdd/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27483370ed8768f645eb27da8f06797291135256735c51bff7b1e5c7744c36a6": {
+      "description_zh": "在实现完成且测试通过后，按合并、PR 或清理选项结束开发分支。",
+      "source": "Use when implementation is complete and all tests pass — guides the clean exit from a development branch with structured options for merge, PR, or cleanup",
+      "source_sha256": "27483370ed8768f645eb27da8f06797291135256735c51bff7b1e5c7744c36a6",
+      "source_path": "skills/exit-strategy/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c600587f2ce3b57736ec37b751ca7502005b024e8be9c66ae5ac6068e2ef385e": {
+      "description_zh": "遇到缺陷、测试失败或异常时，先系统调查根因再尝试修复。",
+      "source": "Use when encountering any bug, test failure, or unexpected behavior — finds the rat in the code through systematic root-cause interrogation before any fix attempts",
+      "source_sha256": "c600587f2ce3b57736ec37b751ca7502005b024e8be9c66ae5ac6068e2ef385e",
+      "source_path": "skills/interrogation-debugging/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5670f74611bac4c24efdeb8957cf746e698a712046c6d7d26c6bb616402162eb": {
+      "description_zh": "在各工作区域报告完成后进行集成、验证、最终审查、清理与记录更新，形成可交付生产代码。",
+      "source": "Use when all territories report completion after the hit — handles integration, verification, consigliere final review, cleanup, and ledger updates to produce clean production-ready code",
+      "source_sha256": "5670f74611bac4c24efdeb8957cf746e698a712046c6d7d26c6bb616402162eb",
+      "source_path": "skills/laundering/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc80d7722619cbb0cbbd322ca01e63bb5893b377fe612746d286b665d2e8c5c9": {
+      "description_zh": "为 gangsta 各类操作提供横贯治理规则，涵盖防编造、授权、持久状态、资源管理和规格优先。",
+      "source": "Use when enforcing governance guardrails during any gangsta operation — referenced as cross-cutting concern by all skills for anti-hallucination, authorization, state durability, resource management, and spec supremacy rules",
+      "source_sha256": "fc80d7722619cbb0cbbd322ca01e63bb5893b377fe612746d286b665d2e8c5c9",
+      "source_path": "skills/omerta/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "336de8a1cd2577f06304685d3f7b2e91aa84828975890b506376be7ae25c03bb": {
+      "description_zh": "以技术依据处理代码审查反馈，核验建议而不盲从或仅作表面同意。",
+      "source": "Use when receiving code review feedback — processes orders with technical rigor, not blind obedience or performative agreement",
+      "source_sha256": "336de8a1cd2577f06304685d3f7b2e91aa84828975890b506376be7ae25c03bb",
+      "source_path": "skills/receiving-orders/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5bbf74b95c0054553596b6846b74110e06ea18a48fb07237f67f3677a5ea94e": {
+      "description_zh": "在新任务开始时分派代理调查目标代码库、现有测试、依赖、文档和工作记录，形成供协调者审阅的侦察档案。",
+      "source": "Use when beginning a new heist — deploys associates to survey the target codebase, existing tests, dependencies, documentation, and the ledger to produce a reconnaissance dossier for the don's review",
+      "source_sha256": "e5bbf74b95c0054553596b6846b74110e06ea18a48fb07237f67f3677a5ea94e",
+      "source_path": "skills/reconnaissance/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d2f5136e87973f36e946dba27dab1bada7f7ca0ca243adbfc9a41a705bdc58a": {
+      "description_zh": "在规格确认后将工作拆成小任务，设置 Git 隔离、分配工作区域和 token 预算，生成执行计划。",
+      "source": "Use when the contract is signed and work packages need to be created — decomposes the contract into bite-sized tasks, sets up git isolation, allocates territories and token budgets, producing the execution plan",
+      "source_sha256": "8d2f5136e87973f36e946dba27dab1bada7f7ca0ca243adbfc9a41a705bdc58a",
+      "source_path": "skills/resource-development/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c95baa87178c60d355b3258a66e6f54610c7c2f27143c67bd858573b4cf113d": {
+      "description_zh": "为需要与当前工作区隔离的功能开发建立 Git 工作树，提供独立开发基础。",
+      "source": "Use when starting feature work that needs isolation from the current workspace — sets up a secure safehouse with git worktrees for clean operational bases",
+      "source_sha256": "8c95baa87178c60d355b3258a66e6f54610c7c2f27143c67bd858573b4cf113d",
+      "source_path": "skills/safehouse-worktrees/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c7ffa090575d18c6c74bf9df7e4ace194887eb837009c0ca2b682b39b0c379e": {
+      "description_zh": "在宣称工作完成、修复或通过前收集核验实际证据，防止未验证断言。",
+      "source": "Use when about to claim work is complete, fixed, or passing — sweeps for evidence before any assertions, because unverified claims are invalid",
+      "source_sha256": "9c7ffa090575d18c6c74bf9df7e4ace194887eb837009c0ca2b682b39b0c379e",
+      "source_path": "skills/sweep-verification/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "407759c801e586ea705c0a2795c1d817688e9122c8681fe4766afb28b57c68c0": {
+      "description_zh": "协调特定业务或技术领域的工作者，分派工作包、按规格审查报告并向上级协调者汇报。",
+      "source": "Use when orchestrating workers within a specific domain territory — managing work package dispatch, reviewing reports against the contract, and reporting status to the underboss",
+      "source_sha256": "407759c801e586ea705c0a2795c1d817688e9122c8681fe4766afb28b57c68c0",
+      "source_path": "skills/the-capo/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8acb8b84836a4b7cc5edcfb21307625f180f4fec8858dac53d4b56dcc9ee9ccd": {
+      "description_zh": "提供独立架构意见、安全审计、规格完整性审查或第二意见，在指挥链外开展事实核验。",
+      "source": "Use when needing impartial architectural advice, security audit, spec integrity review, or a second opinion — operates outside the chain of command with standing authority to invoke truth checks",
+      "source_sha256": "8acb8b84836a4b7cc5edcfb21307625f180f4fec8858dac53d4b56dcc9ee9ccd",
+      "source_path": "skills/the-consigliere/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "adc1f220a10a53f2555ed16d0e66f88ad3aaf9bd96e59a0f3d2c9d7c8363e786": {
+      "description_zh": "在调查后开展对抗性头脑风暴，先逐题审问想法，再由提案者、反方和综合者各执行一次评审，不进行多轮循环。",
+      "source": "Use when adversarial brainstorming is needed after reconnaissance — the Proposer, Devils-Advocate, and Synthesizer each run ONE pass (no rounds); the Don is grilled on the IDEA first, one question at a time, then the proposal is attacked",
+      "source_sha256": "adc1f220a10a53f2555ed16d0e66f88ad3aaf9bd96e59a0f3d2c9d7c8363e786",
+      "source_path": "skills/the-grilling/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6278eb36e873a035c2314d295f7b0e861a209f21754db2fb13bd357152f10ab6": {
+      "description_zh": "在执行计划批准后经组长分派工作者并行实施工作包，落实 TDD、报告收集和升级流程。",
+      "source": "Use when the execution plan is approved and it is time for parallel execution — dispatches workers through crew leads to implement work packages with TDD enforcement, report collection, and escalation protocols",
+      "source_sha256": "6278eb36e873a035c2314d295f7b0e861a209f21754db2fb13bd357152f10ab6",
+      "source_path": "skills/the-hit/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e76bfaba806f9363aacb3c322159cb27357ed129fd543053715736170c26cd1": {
+      "description_zh": "读取或写入组织经验，积累成功方案、历史错误和项目章程中的规则与负面约束。",
+      "source": "Use when reading or writing institutional memory — insights from successful solutions, fails from historical mistakes, and the Project Constitution that accumulates commandments and negative constraints across heists",
+      "source_sha256": "6e76bfaba806f9363aacb3c322159cb27357ed129fd543053715736170c26cd1",
+      "source_path": "skills/the-ledger/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4acfe723ab264053c75be6aef0117fc7df64b455bf1ef5cb944569a28942d5ec": {
+      "description_zh": "在讨论共识批准后起草正式约束规格，作为后续各阶段依据，明确不生成代码。",
+      "source": "Use when the grilling consensus is approved and it is time to draft the formal contract specification — strictly prohibits code generation, produces the binding spec document that governs all subsequent phases",
+      "source_sha256": "4acfe723ab264053c75be6aef0117fc7df64b455bf1ef5cb944569a28942d5ec",
+      "source_path": "skills/the-sit-down/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "317f2277bbfacea6d6bcd7b8721490127f321e397fe49ac1a76ac9d9154fffdc": {
+      "description_zh": "拆分任务为工作包、分配领域组长并管理阶段推进，作为决策者与执行团队之间的协调层。",
+      "source": "Use when decomposing tasks into work packages, allocating territories to crew leads, managing heist phase progression, or serving as the operational buffer between the Don and the crews",
+      "source_sha256": "317f2277bbfacea6d6bcd7b8721490127f321e397fe49ac1a76ac9d9154fffdc",
+      "source_path": "skills/the-underboss/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "004e634a3f9758b13fff1a2bdea0bfc420088e3f745450ddd9641e418c63a0ac": {
+      "description_zh": "介绍 Gangsta 技能的发现和调用方式，规定调用门槛、平台工具映射及意图在代理层级中的路由。",
+      "source": "Use when starting any conversation — establishes how to find and use Gangsta skills, enforces the 1% invocation rule, maps platform tools, and routes the Don's intent through the Gangsta Agents Family hierarchy",
+      "source_sha256": "004e634a3f9758b13fff1a2bdea0bfc420088e3f745450ddd9641e418c63a0ac",
+      "source_path": "skills/using-gangsta/SKILL.md",
+      "package_sha256": "a41029f69a79ffcbde2ee37f22916bfcca4536cba83c60493db0dc895ec10334",
+      "source_package": "gangsta-1.11.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11962d16db00b06be545f978285198f9fca98b55139c225be4b0c915a57ed57a": {
+      "description_zh": "依据用户 GC AI 知识库和指定文档回答法律问题，用于用户文件、操作手册与技能上的研究、摘要及问答。",
+      "source": "Ask a legal question grounded in the user's GC AI knowledge base, optionally against specific documents. Use for legal research, summarization, or Q&A over the user's own files, playbooks, and skills rather than the model's general knowledge.",
+      "source_sha256": "11962d16db00b06be545f978285198f9fca98b55139c225be4b0c915a57ed57a",
+      "source_path": "skills/ask/SKILL.md",
+      "package_sha256": "e0da577237246dae5fcbb08adc1d82f2c63ad61531697b78c97c5716e676fbcc",
+      "source_package": "GC AI-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f88e084f62e3bea2daaf203d5d96c233402b4495ee1e27bf2f8e084bd6b26fc6": {
+      "description_zh": "将文档组织为 GC AI 项目或法律事项，限定后续审查问答范围，适用于新案件、交易或共同处理的一组文件。",
+      "source": "Group documents into a GC AI project (matter) so later review and questions are scoped to it. Use when the user is starting a new matter, deal, or case, or wants a set of files kept and worked on together.",
+      "source_sha256": "f88e084f62e3bea2daaf203d5d96c233402b4495ee1e27bf2f8e084bd6b26fc6",
+      "source_path": "skills/organize-matter/SKILL.md",
+      "package_sha256": "e0da577237246dae5fcbb08adc1d82f2c63ad61531697b78c97c5716e676fbcc",
+      "source_package": "GC AI-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0893255c2d7c8b66e3a36bb6c657ff77d1eed5b73ac240576cc2ccf6d45100b": {
+      "description_zh": "按 GC AI 知识库中的审查手册核对一份或多份合同文档、进行修订并总结发现。",
+      "source": "Review one or more documents against a GC AI playbook and summarize the findings. Use when the user wants a contract or document checked, redlined, or run through a review playbook in their GC AI knowledge base.",
+      "source_sha256": "d0893255c2d7c8b66e3a36bb6c657ff77d1eed5b73ac240576cc2ccf6d45100b",
+      "source_path": "skills/review-document/SKILL.md",
+      "package_sha256": "e0da577237246dae5fcbb08adc1d82f2c63ad61531697b78c97c5716e676fbcc",
+      "source_package": "GC AI-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51945d543a6ba508f45b803d8593fdcc846f3ebb3f41895fe60170c5efcbcdd7": {
+      "description_zh": "为 Cloud Run 服务部署生成所需骨架，包括容器化、生产 service.yaml、并发、最小/最大实例、CPU 限制和专用服务账户。",
+      "source": "Scaffold everything needed to deploy a service to Cloud Run. Use when the user asks to deploy an app to Cloud Run, containerize for Cloud Run, or wants a production-ready service.yaml with concurrency, min and max instances, CPU limits, and a dedicated service account.",
+      "source_sha256": "51945d543a6ba508f45b803d8593fdcc846f3ebb3f41895fe60170c5efcbcdd7",
+      "source_path": "skills/cloud-run-deploy/SKILL.md",
+      "package_sha256": "3343c93344b32eb59a6ab09e2629fe0373ad64c23f03ba01f914eaa6890796bf",
+      "source_package": "GCP DevKit-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41914542b64744c6bc7526a079d3a411f5fe1ade1ac60a4880e4a7b26bb00f48": {
+      "description_zh": "生成或审计 Firestore 安全规则，用于新集合规则、既有规则检查，以及发现无条件允许读写等公开暴露模式。",
+      "source": "Generate or audit Firestore security rules. Use when the user asks to write Firestore rules for a new collection, review an existing rules file, or find open access patterns like `allow read, write: if true` that expose every document to the public internet.",
+      "source_sha256": "41914542b64744c6bc7526a079d3a411f5fe1ade1ac60a4880e4a7b26bb00f48",
+      "source_path": "skills/firestore-rules/SKILL.md",
+      "package_sha256": "3343c93344b32eb59a6ab09e2629fe0373ad64c23f03ba01f914eaa6890796bf",
+      "source_package": "GCP DevKit-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee81d403f4d0adc2cad26a2eef65783f480718852a220c7671b1d886e3a5aab7": {
+      "description_zh": "诊断 Cloud Run、GKE 和 Cloud Functions 常见故障，涵盖冷启动、500/503、修订不接流量、CrashLoopBackOff/ImagePullBackOff 和函数部署/运行错误，并提供读取日志指标的 gcloud 命令。",
+      "source": "Diagnose common GCP failures on Cloud Run, GKE, and Cloud Functions. Use when the user reports a Cloud Run cold start, 500 or 503 responses, a revision that will not serve traffic, a GKE pod in CrashLoopBackOff or ImagePullBackOff, a Cloud Functions deployment error, or a Cloud Functions runtime error. Shows the exact gcloud commands to pull logs and metrics.",
+      "source_sha256": "ee81d403f4d0adc2cad26a2eef65783f480718852a220c7671b1d886e3a5aab7",
+      "source_path": "skills/gcloud-debug/SKILL.md",
+      "package_sha256": "3343c93344b32eb59a6ab09e2629fe0373ad64c23f03ba01f914eaa6890796bf",
+      "source_package": "GCP DevKit-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7e8b550c92a289c486d5778e24f227420399bc1ff121a514ec8041f903aeab9": {
+      "description_zh": "生成适配 GKE 的 Kubernetes 清单，使用 Workload Identity、BackendConfig 和 Google 托管证书 Ingress，用于部署、身份接入、健康检查与 CDN 配置。",
+      "source": "Generate GKE-tailored Kubernetes manifests that use Workload Identity, BackendConfig, and Ingress with Google-managed certificates. Use when the user asks to deploy to GKE, set up Workload Identity for a workload, expose a service through a Google-managed certificate, or configure health checks and CDN through BackendConfig.",
+      "source_sha256": "f7e8b550c92a289c486d5778e24f227420399bc1ff121a514ec8041f903aeab9",
+      "source_path": "skills/gke-manifest/SKILL.md",
+      "package_sha256": "3343c93344b32eb59a6ab09e2629fe0373ad64c23f03ba01f914eaa6890796bf",
+      "source_package": "GCP DevKit-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f02894283b1485dbfb7f3ce1ec09173553b9c50cdd248576a20461b1673aecb": {
+      "description_zh": "审计 GCP 项目 IAM 的过宽角色与陈旧服务账户密钥，查找 owner/editor、未使用密钥并评估最小权限状态。",
+      "source": "Audit IAM bindings on a GCP project for overly broad roles and stale service account keys. Use when the user asks to review IAM on a project, find who has owner or editor, find unused service account keys, or assess the least-privilege posture of a GCP project before a security review.",
+      "source_sha256": "0f02894283b1485dbfb7f3ce1ec09173553b9c50cdd248576a20461b1673aecb",
+      "source_path": "skills/iam-audit/SKILL.md",
+      "package_sha256": "3343c93344b32eb59a6ab09e2629fe0373ad64c23f03ba01f914eaa6890796bf",
+      "source_package": "GCP DevKit-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e612dc73d885fa0668a1997d6f403731f33d96d81f427afd24b94fd9f5fa6e18": {
+      "description_zh": "为 Cloud Run、带生命周期的 GCS、Cloud SQL、Pub/Sub、Artifact Registry 和最小权限服务账户生成模块化 Terraform HCL，适配已有项目布局。",
+      "source": "Generate idiomatic Terraform for common GCP resources. Use when the user asks to write Terraform for a Cloud Run service, a GCS bucket with lifecycle rules, a Cloud SQL instance, a Pub/Sub topic and subscription, an Artifact Registry repository, or a service account with least privilege. Produces modular HCL that fits existing project layout when present.",
+      "source_sha256": "e612dc73d885fa0668a1997d6f403731f33d96d81f427afd24b94fd9f5fa6e18",
+      "source_path": "skills/terraform-gcp/SKILL.md",
+      "package_sha256": "3343c93344b32eb59a6ab09e2629fe0373ad64c23f03ba01f914eaa6890796bf",
+      "source_package": "GCP DevKit-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9be5209606a703c8326c3846dd066bc79b55b01f42e8b06c4fe1e046d08577f": {
+      "description_zh": "提供安全命令执行、URL 处理、凭据管理和供应链防护实践，指导避免反向 shell、命令注入与恶意软件分发等攻击途径。",
+      "source": "Security best practices for safe command execution, URL handling, credential management, and supply chain safety. Guidance on avoiding common attack vectors like reverse shells, command injection, and malware distribution.",
+      "source_sha256": "a9be5209606a703c8326c3846dd066bc79b55b01f42e8b06c4fe1e046d08577f",
+      "source_path": "skills/security-awareness/SKILL.md",
+      "package_sha256": "0b63ea50537a9551e1d341e113613dd874568d09f9df892b82f2fafc44b63fa6",
+      "source_package": "gen-sage-0.13.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "317242cef492d6333977dfc901513e80505b1529cb1bba45a31881e5340e40d8": {
+      "description_zh": "为 Art Blocks、256ART、Verse、Highlight、Plottables 等链上或自托管平台及 Artpoint 屏幕渠道制作长篇生成艺术，涵盖哈希种子确定性、分辨率无关渲染、特征稀有度、预览信号、调试界面、图像/视频导出、铸造前验证与领域伦理。",
+      "source": "Craft long-form generative art for onchain platforms — Art Blocks, 256ART, Verse, Highlight, Plottables, bootloader.art, or a self-hosted drop — and for screen diffusion channels such as Artpoint. Covers hash-seeded determinism, resolution-agnostic rendering, features and rarity design, preview capture signals, debug GUIs and image/video export shortcuts, verification of a sketch before minting, and the ethics of the field. Use when the user mentions generative art, gen art, creative coding, long-form, onchain art, a seeded sketch, a PRNG or deterministic randomness, traits, rarity, features, a mint, a plotter or SVG output, art on screen or delivering a piece as a video, or pastes platform APIs such as tokenData, $features, inputData, $bootloader, BTLDR, hl-gen, or a base64 payload query param.",
+      "source_sha256": "317242cef492d6333977dfc901513e80505b1529cb1bba45a31881e5340e40d8",
+      "source_path": "skills/genart/SKILL.md",
+      "package_sha256": "8f2fbdf27cb688419601530f04099002f47ca012b17de41bbf5d5354cd12e489",
+      "source_package": "Generative Art-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6989e97009f9418987214ce6d634b867c018ce2fccd53ccb566bc6611fb1adf0": {
+      "description_zh": "在 GetItDone 创建、更新、关联、完成和归档任务，创建前展示提取事项、归档前询问，支持会议转任务、重复习惯、依赖和截止日期；不永久删除。",
+      "source": "Creates, updates, links, completes, and archives GetItDone tasks, showing extracted tasks before creating them and asking before archiving. Use when the user asks to 'turn these meeting notes into tasks', 'add a task', 'create a to-do', 'add a repeating habit', 'T-123 is waiting on T-120', 'mark this done', 'I did my workout yesterday', 'change the due date', or 'archive finished tasks'. Nothing is permanently deleted.",
+      "source_sha256": "6989e97009f9418987214ce6d634b867c018ce2fccd53ccb566bc6611fb1adf0",
+      "source_path": "skills/capturing-tasks/SKILL.md",
+      "package_sha256": "861d1a1ad02266dfd185d29b702fbff0667f24be0ee31dff79e372d76180a373",
+      "source_package": "GetItDone-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a74a94f65ab70cfdc29fc6d6dc336f878f8889933fa217ed164d51b43f788966": {
+      "description_zh": "只读深入解释 GetItDone 单个任务的内容、状态、依赖、附件和录屏，说明为何无法开始或等待什么。",
+      "source": "Explains a single GetItDone task in full: its content, status, dependencies, attachments, and what an attached video or screen recording shows. Use when the user asks to 'open T-123', 'why can't this task start', 'what is this task waiting on', 'what's in this task', 'what does the screen recording on this task show', or wants a deep dive on one task. Read-only.",
+      "source_sha256": "a74a94f65ab70cfdc29fc6d6dc336f878f8889933fa217ed164d51b43f788966",
+      "source_path": "skills/investigating-tasks/SKILL.md",
+      "package_sha256": "861d1a1ad02266dfd185d29b702fbff0667f24be0ee31dff79e372d76180a373",
+      "source_package": "GetItDone-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "100a6c293b4cd1ba65f1f86d38c9d772c12f899dc35cebc1458a434c4ff42d45": {
+      "description_zh": "只读汇总 GetItDone 各工作区或项目的到期、进行中、审阅与阻塞任务，用于周工作量、优先事项和项目状态概览。",
+      "source": "Summarizes what is on the user's plate in GetItDone: tasks due, in progress, in review, and blocked, per workspace or project. Use when the user asks 'what's on my plate this week', 'what should I work on next', 'what's due', 'what's blocked right now', 'give me a status update on this project', 'show my to-do list', or wants a workload or project status overview. Read-only.",
+      "source_sha256": "100a6c293b4cd1ba65f1f86d38c9d772c12f899dc35cebc1458a434c4ff42d45",
+      "source_path": "skills/reviewing-workload/SKILL.md",
+      "package_sha256": "861d1a1ad02266dfd185d29b702fbff0667f24be0ee31dff79e372d76180a373",
+      "source_package": "GetItDone-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eab33ca577090f2b456ccd73c4e426f8d468e08719a584c4c7aed523843122c5": {
+      "description_zh": "仅依据 GetItDone 官方开发文档回答 API 认证、429 错误、REST 端点、参考位置与集成连接问题。",
+      "source": "Answers questions about the GetItDone developer API from its own documentation. Use when the user asks 'what does the 429 problem code mean in the GetItDone API', 'how do I authenticate against the GetItDone API', 'how does this GetItDone REST endpoint work', 'where is the GetItDone API reference', 'how do I connect an integration to GetItDone', or wants GetItDone developer docs. Reads documentation only.",
+      "source_sha256": "eab33ca577090f2b456ccd73c4e426f8d468e08719a584c4c7aed523843122c5",
+      "source_path": "skills/searching-getitdone-api-docs/SKILL.md",
+      "package_sha256": "861d1a1ad02266dfd185d29b702fbff0667f24be0ee31dff79e372d76180a373",
+      "source_package": "GetItDone-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3a229296b6823cb4e87e838187709c8c6e0e2805e67858e7ae8522a0a2014d2": {
+      "description_zh": "将 GetItDone MCP 接入 claude.ai、Claude Desktop、Cowork 或 Claude Code，并以一次只读调用验证；解释登录同意界面及工具缺失恢复。",
+      "source": "Connects the GetItDone MCP server to Claude and verifies it with one read-only call: where to connect in claude.ai, Claude Desktop, Cowork, or Claude Code, what the GetItDone sign-in and consent screen asks, and how to recover when a tool is missing. Use when the user asks to 'set up GetItDone', 'connect GetItDone to Claude', 'install the GetItDone connector', 'sign in to GetItDone', 'why can't Claude see my GetItDone data', 'GetItDone tools are missing', or reports 'Tool not found' for a GetItDone tool.",
+      "source_sha256": "c3a229296b6823cb4e87e838187709c8c6e0e2805e67858e7ae8522a0a2014d2",
+      "source_path": "skills/setup-getitdone/SKILL.md",
+      "package_sha256": "861d1a1ad02266dfd185d29b702fbff0667f24be0ee31dff79e372d76180a373",
+      "source_package": "GetItDone-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5ac9d21f4181af20d7d7074ac94b5a5edefe0f7dc41782d4eb40472a3727912": {
+      "description_zh": "查找 monday.com 整个看板仍待签署的人员，再深入某事项签署历史与完整审计轨迹识别停滞和催办对象；从 getsign_status 开始，历史需 envelope_id 与 item_id，看板操作需 board_id，缺标识时询问而不猜测。",
+      "source": "Find out who still hasn't signed across a monday.com board, then drill into one item's signing history and full audit trail to see where it stalled and who to chase. Use when someone says: 'who hasn't signed yet'; 'what's still pending signature'; 'chase outstanding signatures'; 'check signing status on this board'; 'is the contract signed yet'. Starts with `getsign_status`. Needs `envelope_id+item_id for history, or board_id for board actions` to begin; ask for what is missing rather than guessing.",
+      "source_sha256": "f5ac9d21f4181af20d7d7074ac94b5a5edefe0f7dc41782d4eb40472a3727912",
+      "source_path": "skills/board-pending-signatures/SKILL.md",
+      "package_sha256": "3f4f1a2249843e8dd87789c7bf2f72bf918ef619265b108a944e9bb328a44679",
+      "source_package": "GetSign-1.2.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
