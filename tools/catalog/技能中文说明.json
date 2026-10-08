@@ -83689,6 +83689,1086 @@
       "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
       "source_package": "Wiser-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7b77aa1e465384a90444dc9f4983d5d51eda507d0dbf075e3a00bb17652f026": {
+      "description_zh": "确定指定领域插件首阶段应包含的专家、技能、工具和连接器，将源材料交给Playbook Author规划。",
+      "source": "Decide what experts, skills, tools and connectors a named domain plugin should hold in its first slice, and hand Playbook Author the source material to plan it",
+      "source_sha256": "b7b77aa1e465384a90444dc9f4983d5d51eda507d0dbf075e3a00bb17652f026",
+      "source_path": "skills/Scope Plugin Bench/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e8e48624313c29f465cbe42431f714556217942bbd636bec597ea0bd81cb257": {
+      "description_zh": "为新CLI、机器或系统用户把网关接入运行环境，并确认本机项目密钥。",
+      "source": "Attach the gateway to this harness and confirm the project key on this machine, for a new CLI, machine, or OS user",
+      "source_sha256": "5e8e48624313c29f465cbe42431f714556217942bbd636bec597ea0bd81cb257",
+      "source_path": "skills/Set Up Connectors/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb72120390d0a0c2531fa1a6bb35cdf51891d9f9c14dc13378352feb5073cfc6": {
+      "description_zh": "在声明sites目录的所属根目录创建、编辑、检查、收尾升级网站工具包，位于sites/domain或与工作共存的work/slug/sites/domain，工具包在site目录。",
+      "source": "Stand up, content-edit, check, wrap, and upgrade a kit site envelope at sites/<domain>/ or work/<slug>/sites/<domain>/ when the site dies with that work, with the kit in site/, in an owning root that declares sites/",
+      "source_sha256": "fb72120390d0a0c2531fa1a6bb35cdf51891d9f9c14dc13378352feb5073cfc6",
+      "source_path": "skills/Site Author/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd47ed2d5d6bd0022e8a41535d1465c02fbc262a6f0204eb01d9c7ffb2b4dc5b": {
+      "description_zh": "按场合、受众、时长和场地，在大纲批准后以所属根目录声音撰写可直接朗读的演讲稿。",
+      "source": "Write a speech for a given occasion, audience, length, and venue, gated on an approved outline and delivered read-aloud ready in the owning root's bound voice",
+      "source_sha256": "dd47ed2d5d6bd0022e8a41535d1465c02fbc262a6f0204eb01d9c7ffb2b4dc5b",
+      "source_path": "skills/Speech Writing/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a73a8cfe9b0099530341471fe3fbe17bd6893bfe91f02055f9e7048c47196ef2": {
+      "description_zh": "把转录转为分析先行的摘要，保留录音中的每项决策、行动、未决问题和细微含义。",
+      "source": "Turn a transcript into a summary that leads with analysis and preserves every decision, action item, open question, and nuance the recording carried",
+      "source_sha256": "a73a8cfe9b0099530341471fe3fbe17bd6893bfe91f02055f9e7048c47196ef2",
+      "source_path": "skills/Transcript Summary/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df88c10449558dceddac02940c7cf3d50b2ce04f9b506bd0cb97922b3acdf32c": {
+      "description_zh": "根据品牌性格及使用情境设计模块化字体系统，以CSS自定义属性及字体样张交付。",
+      "source": "Design a modular type system delivered as CSS custom properties with a type specimen, chosen from brand personality and usage context",
+      "source_sha256": "df88c10449558dceddac02940c7cf3d50b2ce04f9b506bd0cb97922b3acdf32c",
+      "source_path": "skills/Typography Design/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16cd1748260bc54d171a7e5df424ac0af11ccff10a2c0ede24dfda3b6964d43d": {
+      "description_zh": "列出获取Vercel项目及部署，从隔离site载荷按引用上传创建部署，每次均需确认。",
+      "source": "List and get a Vercel project, list deployments, and create a deployment from the isolated site/ payload, uploaded by reference, with confirmation always",
+      "source_sha256": "16cd1748260bc54d171a7e5df424ac0af11ccff10a2c0ede24dfda3b6964d43d",
+      "source_path": "skills/Vercel Deploy/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d29af3ac9751c264413359959a25c2c2e57226a255d5a9b542130542e20d603": {
+      "description_zh": "把源材料转为结构与几何关系一致的单幅图，交付自包含HTML或Markdown用Mermaid。",
+      "source": "Turn source material into one diagram whose geometry matches the structure the material actually has, delivered as a self-contained HTML file or as Mermaid for markdown",
+      "source_sha256": "3d29af3ac9751c264413359959a25c2c2e57226a255d5a9b542130542e20d603",
+      "source_path": "skills/Visualizer/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c4e41f5a66988ea0fb6dcc47010a9762d68d009ec40d3fdf4f331c690d48df7": {
+      "description_zh": "将Cloudflare zone实时DNS转成可审查zone文件，修改并发布记录，每项删除按名称批准，发布后逐项从平台读回。",
+      "source": "Bring one Cloudflare zone's live DNS into a reviewable zone file, apply the intended record changes, and publish them back with every removal approved by name and every published record re-read from the platform.",
+      "source_sha256": "6c4e41f5a66988ea0fb6dcc47010a9762d68d009ec40d3fdf4f331c690d48df7",
+      "source_path": "skills/Zone Publisher/SKILL.md",
+      "package_sha256": "6e8beee23205a9be65505e373aff5f6989e7e3001b4aca00e44e653a22de4c6d",
+      "source_package": "Wiser-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e52f26e890e0759d53d04884f4e2ff7728063c9414763ce2c079a8406f4ff2c": {
+      "description_zh": "提供技能编写编辑的词汇及原则参考，使技能行为清晰可预期。",
+      "source": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
+      "source_sha256": "2e52f26e890e0759d53d04884f4e2ff7728063c9414763ce2c079a8406f4ff2c",
+      "source_path": ".claude/skills/writing-great-skills/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7a75211de451168f187849fb7dc87f2b6a40202ebe1e9a87ca54bc5f2b939d6": {
+      "description_zh": "构建和评审Wix CLI应用扩展，涵盖仪表盘页面、弹窗、插件与菜单、自定义组件、Editor React组件、站点脚本、后端API及事件、服务插件和数据集合，并检查App Market上架准备情况。",
+      "source": "Build and review Wix CLI app extensions — dashboard pages, modals, plugins, menu plugins, custom element widgets, Editor React components, site plugins, embedded scripts, backend APIs, backend events, service plugins, data collections, and App Market readiness. Use when building ANY feature or extension for a Wix CLI app or preparing a Wix app for App Market review. Triggers on: add, build, create, implement, help me, dashboard, widget, plugin, backend, API, event, collection, embedded script, service plugin, Editor React component, checkout, shipping, tax, discount, SPI, CMS, schema, tracking, popup, admin panel, menu item, modal, validate, test, verify, register extension, App Market, app review, submission readiness.",
+      "source_sha256": "b7a75211de451168f187849fb7dc87f2b6a40202ebe1e9a87ca54bc5f2b939d6",
+      "source_path": "skills/wix-app/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea5e1f40e3c1cf976eaed684ba236572d2345e6ee57d7180cba80bf8c5b42e2c": {
+      "description_zh": "为调用Wix API获取有效访问令牌，适用于尚无令牌或已有令牌过期时的认证处理。",
+      "source": "Authenticate with Wix to obtain an access token for calling Wix APIs. Use when an agent needs a valid Wix access token and has none, or when the stored token is expired.",
+      "source_sha256": "ea5e1f40e3c1cf976eaed684ba236572d2345e6ee57d7180cba80bf8c5b42e2c",
+      "source_path": "skills/wix-auth/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b6b39fd2ef92dbaf4eece2589f2f3f096b0909453448f94f4ae1ce98f42f0b9": {
+      "description_zh": "从Base44应用构建和管理已连接的Wix站点，查找API端点、请求响应结构及字段，收集站点上下文，选择调用身份并按操作配方处理管理任务。",
+      "source": "Build on and manage the connected Wix site from a Base44 app: discover and call any Wix API (endpoints, request/response shapes, fields), gather site context, route each call to the right identity, and follow curated recipes for admin tasks.",
+      "source_sha256": "4b6b39fd2ef92dbaf4eece2589f2f3f096b0909453448f94f4ae1ce98f42f0b9",
+      "source_path": "skills/wix-base44-connector/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "355bd6b6b2d332342d5092ffb8966a965c6069c0799ffe74684c0b678b3883f5": {
+      "description_zh": "提供Wix Design System组件参考，支持选择组件、核对属性与示例，以及利用组件testkit和driver编写界面测试。",
+      "source": "Wix Design System component reference. Use when building UI with @wix/design-system, choosing components, checking props and examples, or writing tests with component testkits. Triggers on \"what component\", \"how do I make\", \"WDS\", \"show me props\", \"testkit\", \"driver\", or component names like Button, Card, Modal, Box, Text.",
+      "source_sha256": "355bd6b6b2d332342d5092ffb8966a965c6069c0799ffe74684c0b678b3883f5",
+      "source_path": "skills/wix-design-system/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a767e3f5b38dc62d2c2084fa3becb97e108ac246362ff41b5dbdd5fd63cf0235": {
+      "description_zh": "编写Wix代码前查阅官方API与SDK文档，核实端点、HTTP方法、请求响应结构、字段、枚举和错误；支持语义搜索、分类目录浏览及读取Markdown页面，也可使用可用的Wix MCP文档工具。",
+      "source": "Look up the Wix API/SDK documentation to confirm an exact endpoint, HTTP method, request/response shape, field, enum, or error before writing Wix code — never guess a Wix API from memory. A lookup is a short flow: find the right page, then read it. Two ways: (1) plain `curl` (zero dependencies) — find a page by **semantic search** (`POST /mcp-docs-search/v1/docs/search`, natural-language `{ search_term, document_type(s) }`, incl. the SKILLS recipe corpus for multi-step workflows) **or by browsing** a docs portal as a menu — a structured, typed, counted browse of the REST, SDK, CLI, Build Apps, and Headless portals (`POST /mcp-docs-search/v1/docs/menu/browse`), or the `.md` menu tree from the `llms.txt` root for any surface — then read the page by appending `.md` to its URL; (2) the Wix MCP doc tools when present. Triggers: look up a Wix API, find the Wix endpoint/method, confirm a Wix request body or field, verify a Wix API shape, explore Wix docs, which Wix API do I call, read a Wix method schema.",
+      "source_sha256": "a767e3f5b38dc62d2c2084fa3becb97e108ac246362ff41b5dbdd5fd63cf0235",
+      "source_path": "skills/wix-docs/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0b7ce87f5d3ce76eafbfc3b02c42d9bcba33b822b59692886e99e74c52f2821": {
+      "description_zh": "利用随包提供并经原作者验证的@wix/sdk代码快速构建Wix Headless站点：接入通用React数据层、hooks及无界面组件，可配合Astro服务端页面与SEO、初始化后端并设计展示层，支持商店、预约、博客、CMS、表单、活动、会员、作品集、套餐和餐饮等业务。",
+      "source": "Build a Wix Headless site fast by wiring SHIPPED, verified @wix/sdk code instead of authoring the integration from recipes. Each Wix business vertical ships a typed, framework-agnostic React core (data layer returning plain DTOs, hooks, headless components) plus an Astro overlay (SSR pages with owner-editable SEO pre-wired) and a build-time REST seed script — the agent scaffolds via the Wix CLI, deploys the shipped code, seeds the backend, designs the presentation layer itself on the shipped hooks (product card/grid, PDP, home, theme), and releases to Wix hosting. Works on Wix-managed Astro (ambient auth, the default) and on any React-based project (Vite, non-Astro) over the public OAuth client id. Verticals: stores/storefront (products, categories, variants, cart, hosted checkout), bookings (services, appointment/class time slots, staff, booking form, checkout-or-place), blog (posts, categories/tags, rich content), cms (structured content collections), forms (schema-driven visitor forms: render, validate, submit), events (listing, RSVP, ticket sales), members (login, gated pages, account), portfolio (project collections, media galleries), pricing-plans (plan grid, hosted purchase), restaurants (menus, online ordering, table reservations). Triggers: build me a store/blog/booking/event/restaurant/portfolio site fast, take appointments fast, sell tickets or membership plans headless, wix headless fast, connect a Wix business app with ready-made SDK code.",
+      "source_sha256": "a0b7ce87f5d3ce76eafbfc3b02c42d9bcba33b822b59692886e99e74c52f2821",
+      "source_path": "skills/wix-headless-fast/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "991566cd32847d986872af8e290a8908878670268e36454bf4be7e3a265f148a": {
+      "description_zh": "作为Wix Headless快速建站入口，检查冷启动环境的前置条件并完成Wix登录，再交接给wix-headless-fast执行构建与发布，适用于商店、预约、博客、CMS、活动、会员、作品集、套餐和餐饮站点。",
+      "source": "Build and release a Wix Headless site from a single prompt, on shipped, verified @wix/sdk code — this entry takes a cold environment (prerequisites, Wix sign-in) to the point where the wix-headless-fast skill runs the build. Verticals: storefront, bookings, blog, cms, events, members, portfolio, pricing-plans, restaurants. Triggers: build me a store/blog/booking/events/portfolio/restaurant site fast, sell tickets or membership plans headless, wix headless fast entry.",
+      "source_sha256": "991566cd32847d986872af8e290a8908878670268e36454bf4be7e3a265f148a",
+      "source_path": "skills/wix-headless-fast/entry/skill.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03b23982661faef7743de193b1868b893acae9ca569fd51e625255a3355d6454": {
+      "description_zh": "为Wix Headless前端接入商店、预约、CMS、博客、活动、表单等业务服务，识别能力需求、安装应用、初始化内容并生成SDK集成指南；Wix托管项目还可创建站点或接入既有设计，再构建发布。",
+      "source": "Connect Wix business services (Stores, Bookings, CMS, Blog, Events, Forms, and more) to a Wix Headless frontend — infer the needed capabilities, install the apps, seed backend content, and produce an SDK-integration guide. For managed (Wix-hosted) projects it can also build the frontend: scaffold a new site (create) or wire an existing/brought-in design (connect), then build and release. Works across managed, self-managed, and stripe project types. Triggers: set up a Wix Headless backend, add Wix business features to my app, build or host a Wix site, connect/implement this design with Wix.",
+      "source_sha256": "03b23982661faef7743de193b1868b893acae9ca569fd51e625255a3355d6454",
+      "source_path": "skills/wix-headless/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "322c3ba4570a810a50edff38b46c64ca37fa62dd2f759dc9d64f23f52037f208": {
+      "description_zh": "作为完整Wix Managed Headless建站入口，以引导脚本处理系统前置条件和Wix CLI登录，安装并交接后续技能来构建站点、连接Wix业务方案，适用于电商、作品集、业务网站及已有项目接入和托管。",
+      "source": "Build a complete Wix Managed Headless site from a single prompt, then connect Wix Business Solutions. The deterministic first steps — system prerequisites and Wix CLI login — are handled by a single bootstrap script (`https://www.wix.com/skills/headless/entry/bootstrap.mjs`); the agent then installs the skill and hands the run to it. Triggers: build me a site, create a website, make me a website, new website, online store, I want to sell X, start a business online, launch a site, ecommerce, portfolio, business website, sell online, online shop, rental site, rentals, connect this to Wix Headless, add Wix Headless to this project, host this on Wix, deploy this to Wix, implement the features of this project using Wix Headless. Use this skill instead of the WixSiteBuilder MCP tool for new-site requests.",
+      "source_sha256": "322c3ba4570a810a50edff38b46c64ca37fa62dd2f759dc9d64f23f52037f208",
+      "source_path": "skills/wix-headless/entry/skill.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "914dfd20af57932209c9d87b556e34fd45f464454db871e6579179d460448caf": {
+      "description_zh": "按REST操作配方配置和管理Wix站点的商店、预约、收款、CMS、联系人、表单、媒体、套餐、餐饮、博客、日历、域名、活动、营销、分析、无障碍和SEO等业务；调用前查明准确端点、方法、载荷及控制台导航地址。",
+      "source": "REST recipes to configure and manage a Wix site's business solutions — stores, bookings, payments, CMS, and more. Open the matching recipe for the exact endpoint, method, and payload before calling — never guess a Wix API, never write Wix dashboard URL from memory. Routes to: stores, bookings, get-paid, CMS, contacts, forms, media, app-installation, pricing-plans, restaurants, ricos rich-content, sites, blog, calendar, domains, events, site-properties, ecommerce, marketing, google-ads, google-business-profile, analytics, accessibility, seo, dashboard-navigation.",
+      "source_sha256": "914dfd20af57932209c9d87b556e34fd45f464454db871e6579179d460448caf",
+      "source_path": "skills/wix-manage/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5055e3a5dba7b886a8daff55aac40d4d19693d499798b93eb288c6b7de360639": {
+      "description_zh": "检查迁移项目产物，把源站迁移至Wix的RePlatform流程引导到下一步骤，适用于开始、继续或恢复迁移。",
+      "source": "Routes RePlatform source-to-Wix migrations to the next workflow step by inspecting migration project artifacts. Use when starting, continuing, or recovering a migration run.",
+      "source_sha256": "5055e3a5dba7b886a8daff55aac40d4d19693d499798b93eb288c6b7de360639",
+      "source_path": "skills/wix-replatform/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e103c3c7bccb897a7c63c0c10de38f3a308babfc3929414ee37450496839b30": {
+      "description_zh": "通过现有Wix站点的公开WIX_CLIENT_ID，将已构建的HTML、JSX、Vite或设计工具导出前端直接接入Wix REST服务，无需SDK、后端或构建步骤；覆盖商品、购物车、预约、博客、活动、作品集、餐饮、表单、CMS、套餐和会员登录，保留站点所有者内容，不创建站点资源或模拟数据。",
+      "source": "Client-only, dependency-free REST scaffolds for connecting an already-built front end (a vibe-coded app, an HTML/JSX/Vite project, a design-tool export) to a live Wix site over the site's public WIX_CLIENT_ID — the browser talks to Wix directly, no SDK, no backend, no build step. One skill covering every Wix business solution: Stores/eCommerce storefront (products, cart, checkout), Bookings (services, slots, appointments), Blog (posts, categories, tags), Events & Tickets (browse, RSVP, ticketing), Portfolio (collections, projects, galleries), Restaurants (menu, online ordering, reservations), Forms (any visitor-fillable form — contact/enquiry, signup, waitlist, application, survey, quote request; schema-driven render + submit), CMS / Wix Data (list, detail, filter, CRUD), Pricing Plans (memberships, subscriptions, checkout), and Members (custom login — email+password, Google/Facebook, and custom SSO — plus account areas and member-gated content). Each vertical ships a copy-as-is REST layer plus wiring instructions. Read-only over the owner's content — never provisions, never mocks data. Triggers: connect my Wix store/shop, build a storefront over Wix, add a cart and checkout, connect Wix Bookings, take appointments/reservations, show my Wix blog, list my Wix events, sell tickets, take RSVPs, build a portfolio from Wix Portfolio, show my restaurant menu / order online / book a table, display my Wix CMS collection, wire a contact form to Wix, add a contact/enquiry form, build a signup or application form, take survey responses, sell membership/subscription plans, add member login / sign up, let members log in with Google or Facebook, custom login page, account / profile page, gate content behind login, sign in with SSO/Okta, 'here is my WIX_CLIENT_ID', connect this app to my Wix site over REST. Use this for CLIENT-ONLY REST integration over an existing site; use `wix-headless` instead for SDK + Wix CLI builds, hosting, and one-prompt new-site creation.",
+      "source_sha256": "1e103c3c7bccb897a7c63c0c10de38f3a308babfc3929414ee37450496839b30",
+      "source_path": "skills/wix-vibe-headless/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97cadd4ad50912482099339c7693615a4d0f5a1f7a855422b799f8c3b5c3e63c": {
+      "description_zh": "将公开网站首页克隆、重建或迁移为Wix Headless前端，保留原站身份、SEO、交互与视觉表现。",
+      "source": "Clone, rebuild, migrate, or reverse-engineer a public website home page into a Wix Headless frontend while preserving source identity, SEO, interactions, and visual fidelity.",
+      "source_sha256": "97cadd4ad50912482099339c7693615a4d0f5a1f7a855422b799f8c3b5c3e63c",
+      "source_path": "wix-headless-replatform/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5d9b6d80a4d6878557a4f73a9bd92927cb3312cbb82482f455bec33bc9dc20b": {
+      "description_zh": "在网站克隆验收后按明确请求优化UI和UX，同时保留原站身份与设计特征。",
+      "source": "Apply an explicitly requested, identity-preserving UI/UX refinement after clone acceptance.",
+      "source_sha256": "f5d9b6d80a4d6878557a4f73a9bd92927cb3312cbb82482f455bec33bc9dc20b",
+      "source_path": "wix-headless-replatform/resources/rp-facelift/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4119143a71a74e07ddd3a4ed7e487e6265408ac84c1d5dec4f3ac7999e73d25e": {
+      "description_zh": "确定Headless模式、任务范围、Wix项目有效性及浏览器执行准备状态。",
+      "source": "Resolve headless mode, scope, Wix project validity, and browser execution readiness.",
+      "source_sha256": "4119143a71a74e07ddd3a4ed7e487e6265408ac84c1d5dec4f3ac7999e73d25e",
+      "source_path": "wix-headless-replatform/resources/rp-project-context/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3de23800dd792b03cb6c5fad108af1f1b9139bc23930087020d386e5088da271": {
+      "description_zh": "验证正在运行的网站克隆，开展可审计的视觉比较并修复差距，形成前端完成结果。",
+      "source": "Verify the running clone, perform auditable visual comparison and gap fixes, and finalize frontend completion.",
+      "source_sha256": "3de23800dd792b03cb6c5fad108af1f1b9139bc23930087020d386e5088da271",
+      "source_path": "wix-headless-replatform/resources/rp-qa-gap-loop/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8abe59269cbf056c41ba09a85abcbc9be0ad18619fde2b8994dd7e8c71f1b5db": {
+      "description_zh": "为Headless网站克隆采集最新浏览器源站证据，并生成实现约定。",
+      "source": "Produce fresh browser-derived source evidence and implementation contracts for a headless clone.",
+      "source_sha256": "8abe59269cbf056c41ba09a85abcbc9be0ad18619fde2b8994dd7e8c71f1b5db",
+      "source_path": "wix-headless-replatform/resources/rp-source-evidence/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e3320936b53b03635b90404e8852654656ab1ab1e0db8a15007b4468c4ee4cb": {
+      "description_zh": "依据生成的源站证据实现Wix Headless网站克隆。",
+      "source": "Implement a Wix Headless clone from generated source evidence.",
+      "source_sha256": "4e3320936b53b03635b90404e8852654656ab1ab1e0db8a15007b4468c4ee4cb",
+      "source_path": "wix-headless-replatform/resources/rp-ui-implementation/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbbc2cc85341b1b6f824f758f0cf23ebb9b79d4809f5a7e3cd1192026566e473": {
+      "description_zh": "检查权威迁移产物，为源站到Wix的RePlatform迁移选择下一必要流程模块，适用于启动、恢复或继续迁移。",
+      "source": "Routes RePlatform source-to-Wix migrations to the next required workflow module by inspecting authoritative migration artifacts. Use when starting, resuming, or recovering a migration run.",
+      "source_sha256": "bbbc2cc85341b1b6f824f758f0cf23ebb9b79d4809f5a7e3cd1192026566e473",
+      "source_path": "wix-replatform/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f50dd320ca00180a818ca11aee7c044b112b0fba7a5be99c1e28e981ccabc94": {
+      "description_zh": "为迁移确认、接纳或创建唯一的Wix Managed Headless目标站点。",
+      "source": "Resolves, adopts, or creates the one Wix Managed Headless destination for a migration.",
+      "source_sha256": "8f50dd320ca00180a818ca11aee7c044b112b0fba7a5be99c1e28e981ccabc94",
+      "source_path": "wix-replatform/resources/rp-destination/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f9b93bf7175daa61646aa9422dd51e1a7d2e20d9882e7b950ac72b0eecf2b5d": {
+      "description_zh": "应用贯穿各阶段的执行安全规则，在各交付环节的终态证据验证通过后生成汇总迁移完成产物。",
+      "source": "Applies cross-stage execution safety policy and writes the aggregate migration completion artifact after all delivery-specific terminal evidence validates.",
+      "source_sha256": "2f9b93bf7175daa61646aa9422dd51e1a7d2e20d9882e7b950ac72b0eecf2b5d",
+      "source_path": "wix-replatform/resources/rp-execution-policy/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c16770075be839a88a43b7af6c2b36d90e0fd487aa69490b2d8646b9e11dc7c": {
+      "description_zh": "在开展发现工作前验证所选源站与目标站点配置。",
+      "source": "Validates the selected source and destination configuration before discovery.",
+      "source_sha256": "2c16770075be839a88a43b7af6c2b36d90e0fd487aa69490b2d8646b9e11dc7c",
+      "source_path": "wix-replatform/resources/rp-preflight/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "beaae1283cb712733957ff21fc2464709ba4aa0b4ad487d03e99097ca86190c6": {
+      "description_zh": "确认当前迁移项目及流程分派所需的最少输入决策。",
+      "source": "Resolves the active migration project and the minimum intake decisions needed to route it.",
+      "source_sha256": "beaae1283cb712733957ff21fc2464709ba4aa0b4ad487d03e99097ca86190c6",
+      "source_path": "wix-replatform/resources/rp-project-intake/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38b143f796c2e321b1cadbfd5b27800f82a1c6499ca0013b53c9612cce68a80c": {
+      "description_zh": "为各平台快速迁移适配器提供共享运行支持，在写入Wix Stores前确定性地处理目标限制恢复及最终报告。",
+      "source": "Shared deterministic target-limit recovery and final-report runtime every rp-quick-<platform> quick-mode adapter uses before a Wix Stores write.",
+      "source_sha256": "38b143f796c2e321b1cadbfd5b27800f82a1c6499ca0013b53c9612cce68a80c",
+      "source_path": "wix-replatform/resources/rp-quick-runtime/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "398efc1a92e922389fc252aa75d7dfb48bb0e86abeadc76d32f04545abffa82d": {
+      "description_zh": "源站探测符合条件后，运行有明确范围限制的公开Shopify目录快速导入适配器。",
+      "source": "Runs the bounded deterministic public Shopify catalog quick-import adapter after a qualifying source probe.",
+      "source_sha256": "398efc1a92e922389fc252aa75d7dfb48bb0e86abeadc76d32f04545abffa82d",
+      "source_path": "wix-replatform/resources/rp-quick-shopify/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4a766fc34373b83aecaeea05dd6e6010a6ecb12ec6fc952ccbc67eab20cc474": {
+      "description_zh": "源站探测符合条件后，运行有明确范围限制的公开WooCommerce目录快速导入适配器。",
+      "source": "Runs the bounded deterministic public WooCommerce quick-import adapter after a qualifying source probe.",
+      "source_sha256": "e4a766fc34373b83aecaeea05dd6e6010a6ecb12ec6fc952ccbc67eab20cc474",
+      "source_path": "wix-replatform/resources/rp-quick-woocommerce/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0b7aaf96ddbdfc198914408dc0973ac88d6958b6fdb29895788de2b9ccdfdec": {
+      "description_zh": "收集和校验迁移源URL、导出文件、获取模式及凭据，同时避免暴露秘密信息。",
+      "source": "Collects and validates source URLs, exports, acquisition modes, and credentials without exposing secrets.",
+      "source_sha256": "c0b7aaf96ddbdfc198914408dc0973ac88d6958b6fdb29895788de2b9ccdfdec",
+      "source_path": "wix-replatform/resources/rp-source-inputs/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad094fa3e4938cd47b6ba02a754aaa28dd2ee5eb874609a69b0a7303d19e4627": {
+      "description_zh": "在已验证的后端交接之后继续网站模式迁移，完成前端构建、构建后差距分析与修复、发布及持久的前端完成凭证。",
+      "source": "Continues a website-mode migration from the validated backend handoff through frontend build, post-build gap analysis/fixing, release, and a durable frontend completion receipt.",
+      "source_sha256": "ad094fa3e4938cd47b6ba02a754aaa28dd2ee5eb874609a69b0a7303d19e4627",
+      "source_path": "wix-replatform/resources/rp-website-continuation/SKILL.md",
+      "package_sha256": "26f5c9cbc347fd7b97eed43b1a80a7166f06662d93d32b905fde2269105d348c",
+      "source_package": "wix-1.20.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57026b978445e942de4ef7f37048752ad52ad93ba085546a02f8dc2fde65a01f": {
+      "description_zh": "通过Chrome DevTools MCP实际操作WordPress管理后台，支持登录、菜单导航、表单提交、内容和媒体管理、临时测试管理员、JavaScript与localStorage检查、截图及REST nonce获取；不适用于无需浏览器的自动测试或纯PHP修改。",
+      "source": "Use when a WordPress admin panel needs real browser interaction via Chrome DevTools MCP — logging in, navigating admin menus, clicking buttons, filling and submitting forms, creating/editing/deleting content through the UI, creating a temporary test admin user, verifying JS state or localStorage, capturing screenshots, or obtaining a REST nonce via admin-ajax.php. Triggers: \"open WP admin\", \"log in to WordPress\", \"navigate to Settings\", \"create a test user in admin\", \"click Save Changes\", \"fill in this form in the browser\", \"take a screenshot of the admin page\", \"upload media through the browser\", \"check the admin menu\", \"verify this in the browser\", \"use Chrome DevTools MCP\", \"fill_form in admin\", \"evaluate_script in admin\", \"admin panel is in maintenance mode\", \"get a REST nonce\", \"session expired re-login\", \"interact with the WP dashboard\", \"navigate to Plugins Add New\", \"test this in the actual admin UI\", \"create a temp admin account for testing\", \"check localStorage in admin\". Not for: headless automated testing without a browser — use `wp-plugin-testing`; PHP code changes that do not require browser interaction.",
+      "source_sha256": "57026b978445e942de4ef7f37048752ad52ad93ba085546a02f8dc2fde65a01f",
+      "source_path": "skills/wp-admin-browser/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53a6e92652cb9dadfa9b8475114be9f90d4ac06cf874dcb96aeba6f40ff5002c": {
+      "description_zh": "为WordPress插件安排HTTP请求周期之外的异步、定时和周期任务，使用Action Scheduler、WP_Background_Process或WP Cron进行队列和分批处理、进度跟踪、失败重试及任务表排查，避免超时并检查重复执行和幂等性；不适用于同步REST或实时AJAX处理。",
+      "source": "Use when a WordPress plugin needs to run work outside the HTTP request cycle — scheduling async or recurring jobs with Action Scheduler (as_enqueue_async_action, as_schedule_single_action, as_schedule_recurring_action, as_unschedule_action), implementing WP_Background_Process (push_to_queue, save, dispatch, is_queue_empty), registering WP Cron events (wp_schedule_event, wp_clear_scheduled_hook), batch-processing large datasets without hitting PHP timeouts, tracking job progress, handling retries on failure, or debugging the actionscheduler_actions table. Triggers: \"schedule this for later\", \"run this without hitting timeout\", \"queue these items for background processing\", \"why is my cron not running\", \"Action Scheduler job keeps failing\", \"as_enqueue_async_action\", \"WP_Background_Process\", \"push_to_queue\", \"dispatch the queue\", \"DISABLE_WP_CRON\", \"process records in batches\", \"send emails in the background\", \"WP Cron not firing\", \"batch import without timeout\", \"scheduled action not running\", \"background job stuck\", \"wp action-scheduler list\", \"recurring cron event\", \"progress tracking for batch job\", \"retry failed background tasks\", \"chunked processing to avoid timeout\", \"scheduled action completes but nothing happens\", \"my hook never fires in cron\", \"handler registered behind is_admin\", \"job runs in admin but not from cron\", \"webhook fired twice\", \"background job double-processed\", \"make my background job idempotent\". Not for: real-time AJAX handlers or synchronous REST endpoints.",
+      "source_sha256": "53a6e92652cb9dadfa9b8475114be9f90d4ac06cf874dcb96aeba6f40ff5002c",
+      "source_path": "skills/wp-background-processing/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef53a9f2921ed4fb21cb67f07623de1adb1ffbd5fd39f800655861d6a208bb83": {
+      "description_zh": "搭建、配置和排查WordPress插件的JavaScript与CSS构建流程，涵盖@wordpress/scripts、webpack、Vite、区块资源编译、.asset.php依赖加载、Sass/PostCSS、TypeScript及复用宿主插件已打包库；区块注册逻辑另用专门技能。",
+      "source": "Use when setting up, configuring, or debugging the JavaScript/CSS build pipeline for a WordPress plugin — @wordpress/scripts, webpack (webpack.config.js, entry points, externals), Vite, block editor asset compilation with block.json, enqueueing built assets with .asset.php dependency files, wp_enqueue_script / wp_localize_script, Sass/SCSS/PostCSS compilation, TypeScript support, register_block_type, or reusing a JS/CSS library already bundled by a host plugin (EDD, WooCommerce, Elementor). Triggers: \"npm run build fails\", \"webpack config error\", \"my script is not loading\", \"set up @wordpress/scripts\", \"enqueue my block assets\", \"why is my CSS not compiling\", \".asset.php not found\", \"how do I reuse this bundled library\", \"TypeScript in a WP plugin\", \"block.json attributes\", \"missing dependency in build\", \"wp_enqueue_script not loading\", \"externals in webpack\", \"Vite for WordPress\", \"Sass not compiling\", \"PostCSS setup\", \"build output is in the wrong folder\", \"npm ci vs npm install\", \"externalize React from my bundle\", \"wp-scripts lint-js\", \"enqueue with version hash\", \"register_block_type from PHP\". Not for: block registration logic — use the official `wp-block-development` skill.",
+      "source_sha256": "ef53a9f2921ed4fb21cb67f07623de1adb1ffbd5fd39f800655861d6a208bb83",
+      "source_path": "skills/wp-build-tools/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c02ecca6f625b431deff09dd8f8cf37fe7537b6b7f73c2b07586015f7a7dc92": {
+      "description_zh": "处理PR的QA失败、Testing Failed标签和功能故障反馈，读取评审意见、追查根因、按范围修复并提交，更新复测标签和结构化复测说明，同时确认静态检查真实运行；不用于新功能或新建PR。",
+      "source": "Use when a pull request has QA failures, a \"Testing Failed\" label, or QA comments reporting broken features — reading QA feedback and PR comments, tracing root cause using root-cause-patterns.md, applying scoped conventional-commit fixes, swapping labels (Testing Failed to Need Testing), and posting a structured QA re-test comment. Triggers: \"QA failed my PR\", \"Testing Failed label on my PR\", \"fix the QA comments on PR\", \"QA says feature X is broken\", \"post a re-test comment\", \"how do I respond to QA feedback\", \"CI is failing on my PR\", \"QA reopened the ticket\", \"update the PR label after fixing\", \"testing failed label\", \"QA comment says the button is broken\", \"phpcs failing in CI\", \"yarn lint error on the PR\", \"npm run build failing in CI\", \"root cause of the QA failure\", \"write a re-test instruction comment\", \"fix failing checks on this PR\", \"QA triage workflow\", \"phpcs prints nothing and exits 0\", \"composer run test produces no output\", \"phpstan workers keep crashing\", \"did my static checks actually run\", \"how do I tell a real pass from a broken tool\", \"compare test failures before and after my change\". Not for: writing new features or opening a fresh PR — use `wp-github-flow`.",
+      "source_sha256": "9c02ecca6f625b431deff09dd8f8cf37fe7537b6b7f73c2b07586015f7a7dc92",
+      "source_path": "skills/wp-ci-qa/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d6406a4a543d12e58617588014651c298ba03bb51ade77df465c1c9c5c05c89": {
+      "description_zh": "配置PHPCS及WordPress Coding Standards规则集，运行phpcs/phpcbf、修复代码风格违规并接入CI或IDE，检查WordPress插件目录的风格要求；不用于PHPStan类型分析。",
+      "source": "Use when setting up PHPCS with WordPress Coding Standards (WPCS), configuring phpcs.xml.dist, running phpcs/phpcbf, fixing sniff violations, adding PHPCS to CI (GitHub Actions), configuring IDE integration, or verifying a plugin meets WP.org code style requirements. Covers squizlabs/php_codesniffer, wp-coding-standards/wpcs, dealerdirect/phpcodesniffer-composer-installer, WordPress-Extra, WordPress-Docs, WooCommerce-Core rulesets. Triggers: \"phpcs error\", \"WPCS violation\", \"fix my code style\", \"set up PHPCS\", \"configure phpcs.xml.dist\", \"my code fails PHPCS\", \"add linting to CI\", \"WordPress.Security.EscapeOutput sniff\", \"WordPress.WP.I18n error\", \"WordPress.NamingConventions sniff\", \"how do I ignore a phpcs rule\", \"phpcbf auto-fix\", \"phpcs in GitHub Actions\", \"add PHPCS to pre-commit hook\", \"vendor/bin/phpcs -i\", \"WordPress-Extra ruleset\", \"WordPress-Docs ruleset\", \"WooCommerce sniff\", \"phpcs.xml.dist example\", \"phpcs says my spacing is wrong\", \"fix indentation for WP standards\", \"PHPCS not finding WPCS\", \"dealerdirect installer\". Not for: PHPStan type analysis — use `wp-phpstan-stubs`.",
+      "source_sha256": "0d6406a4a543d12e58617588014651c298ba03bb51ade77df465c1c9c5c05c89",
+      "source_path": "skills/wp-coding-standards/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91ab5861c027d9a2339218d70eaa379435891a5bb2c0255219fb3373bb23da73": {
+      "description_zh": "为WordPress插件创建和迁移自定义数据库表，使用dbDelta、版本化升级及$wpdb预处理语句，排查查询错误，处理卸载清理、多站点表和测试数据；无需自定义表时应使用选项或文章元数据API。",
+      "source": "Use when a WordPress plugin needs a custom database table — creating with dbDelta (strict SQL format: two spaces before PRIMARY KEY, no trailing comma), writing versioned upgrade routines with version_compare and register_activation_hook, querying with $wpdb prepared statements (prepare, insert, update, delete, get_row, get_results, get_var), debugging with $wpdb->last_error or SAVEQUERIES, schema migrations between plugin versions, uninstall cleanup, multisite table handling with switch_to_blog / get_sites, or seeding test/preview data into custom tables. Triggers: \"create a custom table\", \"dbDelta not working\", \"dbDelta not creating my table\", \"write a migration\", \"wpdb query\", \"wpdb prepare\", \"slow query on my custom table\", \"upgrade my database schema\", \"add a column to my table\", \"seed test data\", \"how do I store this in a custom table\", \"database upgrade routine\", \"table not being created on activation\", \"prepare placeholder wrong\", \"last_error is empty after query\", \"SAVEQUERIES debug\", \"version_compare for db upgrade\", \"register_activation_hook table\", \"wpdb prefix table name\", \"uninstall drops table\", \"multisite per-site table\", \"charset_collate missing\". Not for: WordPress options API or post meta — use those when a custom table is not needed.",
+      "source_sha256": "91ab5861c027d9a2339218d70eaa379435891a5bb2c0255219fb3373bb23da73",
+      "source_path": "skills/wp-database/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3090fb1e120f1d256da5110ddd665511dde03591767598bc1664f0da255259e0": {
+      "description_zh": "为WordPress插件新增或重构事务邮件，将HTML提取为共享品牌外壳的模板，安全传递变量并通过wp_mail发送，使用模拟邮件器测试、表格布局及内联CSS适配邮件客户端，并处理发送失败；不用于主题邮件、推送或Webhook。",
+      "source": "Use when adding or refactoring transactional emails in a WordPress plugin — extracting inline HTML strings into reusable templates sharing a branded base shell, implementing the render_template helper (ob_start / include / ob_get_clean), passing variables safely with extract(EXTR_SKIP), sending via wp_mail(), testing with MockPHPMailer / tests_retrieve_phpmailer_instance(), applying table-based HTML layout and inline CSS for email clients, or handling wp_mail send-failure branches. Triggers: \"send an email from my plugin\", \"wp_mail not working\", \"add an email template\", \"style my plugin emails\", \"HTML email in WordPress\", \"branded email wrapper\", \"email not arriving\", \"test my wp_mail\", \"add a CTA button to the email\", \"make emails look good in Outlook\", \"transactional email template\", \"render_template helper\", \"ob_start for email\", \"extract EXTR_SKIP\", \"MockPHPMailer in tests\", \"tests_retrieve_phpmailer_instance\", \"pre_wp_mail filter to test failure\", \"inline CSS email\", \"dark mode email support\", \"table-based email layout\", \"wp_mail headers\", \"email not sending in tests\". Not for: REST API webhooks, push notifications, or transactional email in themes.",
+      "source_sha256": "3090fb1e120f1d256da5110ddd665511dde03591767598bc1664f0da255259e0",
+      "source_path": "skills/wp-email-templates/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b1f3270f0ed9b5703c4c973e40147ba0e4b3213c2865f111f6695681834047ca": {
+      "description_zh": "在WordPress插件中接入Freemius SDK实现商业化，处理初始化、付费功能开关、套餐与试用判断、许可证、免费和专业版ZIP构建、升级链接、分析选择弹窗、多站点授权及联盟计划；WooCommerce支付和插件目录试用合规另行处理。",
+      "source": "Use when integrating Freemius SDK into a WordPress plugin for monetisation — SDK bootstrap with fs_dynamic_init, feature gating with can_use_premium_code() / is__premium_only() / is_plan() / is_trial() / is_paying(), license management, free/pro dual-zip build using __premium_only__ file suffix, generating upgrade URLs with get_upgrade_url(), opt-in analytics dialog, multisite licensing, affiliate program, or debugging Freemius dashboard (Plans, Pricing, Licenses, Updates). Triggers: \"add Freemius to my plugin\", \"gate this feature behind pro\", \"show the pricing page\", \"check if user has a license\", \"Freemius not initialising\", \"can_use_premium_code()\", \"is_plan()\", \"is_trial()\", \"is_paying()\", \"fs_dynamic_init\", \"my_plugin_fs()\", \"__premium_only__ file\", \"set up free and pro versions\", \"Freemius opt-in dialog\", \"trial period setup\", \"license key validation\", \"monetise my plugin\", \"get_upgrade_url()\", \"Freemius affiliate\", \"is_org_compliant\", \"Freemius SDK error\", \"free and premium zip\", \"Freemius multisite\", \"Freemius GlotPress translations\". Not for: WooCommerce payments — use `wp-woocommerce`; WP.org trialware compliance — use `wp-org-submission`.",
+      "source_sha256": "b1f3270f0ed9b5703c4c973e40147ba0e4b3213c2865f111f6695681834047ca",
+      "source_path": "skills/wp-freemius/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "374759379f005ed8eedb0673fbe542646289699eb747529bc5a282ea9886a2d2": {
+      "description_zh": "通过GitHub交付问题修复或现有工作区改动，区分问题仓库和代码仓库，按范围组织规范提交、从最新远端创建分支、查找标签、建立PR及跨仓库关闭引用，再按原流程以merge方式合并并同步；不用于插件版本发布或WP.org SVN部署。",
+      "source": "Use when shipping work through GitHub — fixing a GitHub issue by URL/number, or committing and PR-ing uncommitted working-tree changes. Covers resolving ISSUE_REPO vs CODE_REPO, grouping changes into scoped conventional commits (type(scope): summary), branching from fresh origin/base, discovering labels via gh label list, opening PRs with gh pr create, cross-repo Closes footer, merging with --merge (never --squash), and re-syncing after merge. Triggers: \"commit my changes\", \"commit scope by scope\", \"create a branch and PR\", \"open a PR for these changes\", \"fix issue #NNN\", \"debug this GitHub issue\", \"group my changes into commits\", \"push and open a PR\", \"what branch should I use\", \"conventional commit for this change\", \"close this issue with a PR\", \"write a PR description\", \"gh pr create\", \"gh issue view\", \"Closes footer\", \"branch name for this fix\", \"gh label list\", \"bugfix branch\", \"cross-repo close\", \"ISSUE_REPO vs CODE_REPO\", \"stale remote origin\", \"PR body template\", \"merge the open PR\", \"re-sync after merge\", \"sequential PRs\". Not for: plugin version releases — use `wp-plugin-release`; WP.org SVN — use `wp-org-submission`.",
+      "source_sha256": "374759379f005ed8eedb0673fbe542646289699eb747529bc5a282ea9886a2d2",
+      "source_path": "skills/wp-github-flow/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc165437e4104df748ea899df29fc6748cd3af740e5bb0f27d43cb83f6ecbac9": {
+      "description_zh": "在WordPress后台插件中使用Driver.js v1创建引导式入门和功能导览，配置页面范围与步骤、URL及hash检测、localStorage完成记录、元素选择器和翻译POT文件，并在浏览器中验证；不用于前端SPA、非WordPress应用或主题导览。",
+      "source": "Use when adding a guided onboarding or feature-discovery tour to a WordPress admin plugin using Driver.js v1 — setting up the IIFE bundle (window.driver.js.driver), PHP backend tour config arrays (autoStart, pages, steps, element, popover), JS scope detection from URL pathname + hash (getCurrentScope, hashchange listener), localStorage-based completion tracking, CSS selector rules for WP admin elements including Tailwind bracket-notation escaping, testing selectors in browser console, and generating/updating the POT file for tour strings. Triggers: \"add a guided tour to my plugin\", \"onboarding walkthrough in WP admin\", \"Driver.js setup\", \"highlight this admin element\", \"step-by-step tutorial in WP admin\", \"tour not starting\", \"tour completion not saving\", \"scope detection for admin pages\", \"add tooltips to my settings page\", \"first-run wizard\", \"window.driver.js.driver\", \"getCurrentScope()\", \"hashchange listener for tour\", \"localStorage tour tracking\", \"Tailwind selector escaping in PHP\", \"Driver.js popover\", \"autoStart tour config\", \"tour step element not found\", \"verify selector in browser console\", \"tour i18n POT file\". Not for: front-end SPAs or non-WordPress apps; guided tours in themes.",
+      "source_sha256": "fc165437e4104df748ea899df29fc6748cd3af740e5bb0f27d43cb83f6ecbac9",
+      "source_path": "skills/wp-guided-tour/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22a3da712739e9de9a044710b88d94357825f54f4489b4e4b025ca185fcded1b": {
+      "description_zh": "管理WordPress插件完整翻译流程，包括文本域、可翻译字符串与复数上下文、POT生成、PO到MO及JSON编译、JavaScript翻译接入、译者注释、GlotPress提交和CI自动化，并排查缺失翻译；主题路径配置另行处理。",
+      "source": "Use when managing the full translation workflow for a WordPress plugin — registering text domain with load_plugin_textdomain, wrapping strings with __(), _e(), esc_html__(), esc_attr__(), _n(), _x(), _ex(), _nx(), generating POT with wp i18n make-pot, compiling .po to .mo (wp i18n make-mo / msgfmt) and .json (wp i18n make-json), wiring JS translations with wp_set_script_translations and @wordpress/i18n (__, _n, _x, sprintf), adding translator comments, submitting to translate.wordpress.org / GlotPress, automating in GitHub Actions, or debugging missing translations. Triggers: \"make this string translatable\", \"generate POT file\", \"strings not translating\", \"wp i18n make-pot\", \"JS translations not loading\", \"wp_set_script_translations\", \"how do I translate my block\", \"RTL language support\", \"missing translation\", \"submit to GlotPress\", \"translation missing in JS\", \"update my .po files\", \"load_plugin_textdomain\", \"__ vs esc_html__\", \"_n() plural strings\", \"_x() context string\", \"translator comment format\", \"wp i18n make-json\", \"msgfmt compile\", \"translate.wordpress.org submission\", \"language pack\", \"text domain mismatch\", \"i18n automation in CI\". Not for: theme translation (paths differ, but logic is the same).",
+      "source_sha256": "22a3da712739e9de9a044710b88d94357825f54f4489b4e4b025ca185fcded1b",
+      "source_path": "skills/wp-i18n-workflow/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca7cf33daf5f00297c414ba80671869df4f158d404a2040ccf7e2eb137c20fbc": {
+      "description_zh": "构建或适配兼容WordPress Multisite的插件，处理网络激活、网络管理页、站点与网络设置、站点切换、超级管理员能力、表前缀及blog ID；不用于WP-CLI多站点运维或不触发激活钩子的MU插件。",
+      "source": "Use when building or adapting a WordPress plugin for Multisite/Network — network activation (register_activation_hook with $network_wide), network admin pages (network_admin_menu), per-site vs network-wide options (get_option / get_network_option / update_network_option), looping sites with get_sites() + switch_to_blog() / restore_current_blog(), super admin capabilities (is_super_admin(), manage_network, is_network_admin()), table prefix handling ($wpdb->prefix vs $wpdb->base_prefix), blog ID awareness (get_current_blog_id), or detecting multisite context (is_multisite(), is_plugin_active_for_network()). Triggers: \"make my plugin multisite compatible\", \"network activate\", \"network admin page\", \"per-site settings\", \"switch_to_blog()\", \"restore_current_blog()\", \"super admin only feature\", \"why does my plugin break on multisite\", \"run this for every site in the network\", \"network-wide option\", \"plugin only on certain sites\", \"blog ID handling\", \"is_multisite()\", \"is_network_admin()\", \"is_plugin_active_for_network()\", \"get_network_option()\", \"wpdb base_prefix\", \"manage_network capability\", \"network options page\", \"multisite table prefix\", \"site-aware hook registration\", \"get_sites() loop\". Not for: WP-CLI multisite ops; MU-plugins auto-load behaviour (no activation hooks fire).",
+      "source_sha256": "ca7cf33daf5f00297c414ba80671869df4f158d404a2040ccf7e2eb137c20fbc",
+      "source_path": "skills/wp-multisite/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9394fea78ce035618a6aa020b54d199c05d96ace6cd83be817b4e88466b119e5": {
+      "description_zh": "准备WordPress插件首次提交WP.org目录或通过SVN发布版本，修复审核拒绝、维护readme.txt版本和更新说明，并准备横幅、图标和截图素材；单独的目录规范评审使用另一专门技能。",
+      "source": "Use when submitting a WordPress plugin to the WP.org directory for the first time, deploying a new version via SVN (plugins.svn.wordpress.org trunk, tags, assets), fixing a reviewer rejection (17-issue catalog with exact reviewer quotes), writing or correcting readme.txt (Stable tag, Changelog, Upgrade Notice, Requires, Tested up to, External services), or preparing WP.org assets (banner-772x250.png, banner-1544x500.png, icon-128x128.png, icon-256x256.png, icon.svg, screenshot-N.png). Triggers: \"submit my plugin to WP.org\", \"SVN deploy\", \"reviewer rejected my plugin\", \"fix WP.org review feedback\", \"how do I set up the SVN repo\", \"WP.org assets\", \"prepare my plugin for the directory\", \"what does the reviewer want\", \"Stable tag\", \"readme.txt requirements\", \"WP.org banner dimensions\", \"fix this reviewer comment\", \"plugin zip for submission\", \"svn commit trunk\", \"svn cp trunk tags\", \"reviewer says missing nonce\", \"reviewer says not prefixed\", \"reviewer says missing sanitization\", \"Upgrade Notice section\", \"External services section in readme\", \"submit.wordpress.org form\", \"icon.svg for WP.org\". For WP.org guideline compliance review only, use `wp-plugin-directory-guidelines` instead.",
+      "source_sha256": "9394fea78ce035618a6aa020b54d199c05d96ace6cd83be817b4e88466b119e5",
+      "source_path": "skills/wp-org-submission/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6bc95ed49f933cfbd3cabb41732babfc1bb3a9af1ab28d53f534d1baa3a19069": {
+      "description_zh": "为WordPress插件、主题或Composer包创建PHPStan类型桩包，搭建仓库与生成脚本、获取版本列表、使用php-stubs/generator并配置GitHub发布流程；不用于业务插件自身的PHPStan配置或基线生成。",
+      "source": "Use when creating a new PHPStan stubs package for a WordPress plugin, theme, or Composer package — scaffolding the full repo structure (composer.json, configs/bootstrap.php, configs/finder.php, bin/generate.sh, bin/release-latest-versions.sh, .github/workflows/release.yml, phpstan.neon), fetching version lists from WP.org plugin API (api.wordpress.org/plugins) or Packagist API, using php-stubs/generator, or setting up the GitHub release workflow with jq. Triggers: \"create stubs for X plugin\", \"scaffold PHPStan stubs\", \"new stubs package\", \"add PHPStan stubs for WooCommerce\", \"stubs repo setup\", \"generate stub file\", \"PHPStan cannot find this class\", \"missing type hints for third-party plugin\", \"add stubs for this Composer package\", \"php-stubs/generator\", \"bin/generate.sh\", \"configs/bootstrap.php for stubs\", \"configs/finder.php\", \"release-latest-versions.sh\", \"WP.org plugin API for versions\", \"Packagist API for versions\", \"jq regex error in stubs script\", \"GitHub Actions release workflow for stubs\", \"phpstan.neon for stubs package\". Not for: configuring phpstan.neon in a plugin project or generating baselines — use the official `wp-phpstan` skill.",
+      "source_sha256": "6bc95ed49f933cfbd3cabb41732babfc1bb3a9af1ab28d53f534d1baa3a19069",
+      "source_path": "skills/wp-phpstan-stubs/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5804567fc82ab8b7c4b7d08395a379a704691edb5527981baf7f18b426db8c41": {
+      "description_zh": "从版本元数据、命名与前缀及翻译、文档与代码一致性、代码约定和安全四方面检查WordPress插件，以文件行号核实发现后分派修复，涵盖XSS、SQL注入、CSRF、权限、上传、反序列化、重定向、路径遍历和REST认证问题。",
+      "source": "Use when auditing a WordPress plugin for security issues, code inconsistencies, or quality gaps — fans out parallel checks across four dimensions: A (version/metadata sync), B (naming/prefix/i18n), C (docs vs code), D (code conventions/security), verifies every finding with file:line references before reporting, and routes confirmed issues to the correct fix skill. Security patterns checked: XSS (missing esc_html/esc_attr), SQL injection (raw $wpdb), CSRF (missing nonce), missing capability checks, file upload validation, object unserialize, open redirect, path traversal, REST auth hardening. Triggers: \"audit this plugin\", \"find inconsistencies in my plugin\", \"security review\", \"check my plugin for XSS\", \"is my escaping correct\", \"find missing nonces\", \"check capabilities in my plugin\", \"audit readme.txt\", \"find security issues\", \"plugin quality sweep\", \"are there SQL injection risks\", \"review my plugin before submission\", \"missing esc_html()\", \"raw wpdb query without prepare()\", \"missing current_user_can()\", \"unprotected AJAX handler\", \"plugin prefix inconsistency\", \"version out of sync\", \"i18n audit\", \"missing translator comment\", \"file upload not validated\", \"open redirect risk\". Not for: PHPStan type analysis — use `wp-phpstan`; WP.org pre-submission checklist — use `wp-org-submission`.",
+      "source_sha256": "5804567fc82ab8b7c4b7d08395a379a704691edb5527981baf7f18b426db8c41",
+      "source_path": "skills/wp-plugin-audit/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0429790949312c377271bd651864b46e67dca09f757aaa59d36ac5be5b556bf": {
+      "description_zh": "为WordPress插件升级版本或准备发布，同步插件头、版本常量、readme.txt、更新日志及POT版本，按语义化版本规则检查和创建Git标签，并保留数据库版本及历史更新条目等无需变更内容；不用于WP.org SVN部署。",
+      "source": "Use when bumping a WordPress plugin version or cutting a release — syncing version across all sources: plugin header (Version: X.Y.Z), version constant (define MY_PLUGIN_VERSION), readme.txt (Stable tag + Changelog + Upgrade Notice), CHANGELOG.md, and .pot Project-Id-Version; following semver (major/minor/patch) rules; running pre-release checks (composer lint / analyze / test, grep for stale version strings); creating a git tag; and deciding what NOT to bump (DB schema version, historical changelog entries). Triggers: \"release version 1.2.3\", \"bump the version\", \"update the changelog\", \"sync version numbers\", \"prepare the release\", \"tag this version\", \"version is out of sync\", \"update Stable tag\", \"what needs to change for a release\", \"changelog entry\", \"update readme.txt version\", \"bump to 2.0.0\", \"Version header in plugin file\", \"define MY_PLUGIN_VERSION\", \"semver patch vs minor vs major\", \"Project-Id-Version in POT\", \"grep for old version strings\", \"git tag for release\", \"Upgrade Notice section\", \"what to bump vs not bump\". Not for: WP.org SVN deploy or first-time submission — use `wp-org-submission`.",
+      "source_sha256": "b0429790949312c377271bd651864b46e67dca09f757aaa59d36ac5be5b556bf",
+      "source_path": "skills/wp-plugin-release/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6349e84b99c32af45786b3ad5e370b42a1d4fe88aa52175ba2b1e8ee5cfa794e": {
+      "description_zh": "搭建和编写WordPress插件测试，覆盖PHPUnit集成、Brain Monkey或WP_Mock单元测试、数据工厂、HTTP模拟、AJAX、重定向、多站点及Codeception验收，配置PHP与WordPress版本CI矩阵；真实后台浏览器测试使用另一技能。",
+      "source": "Use when writing or setting up tests for a WordPress plugin — PHPUnit integration tests using WP_UnitTestCase with the WP test suite (bin/install-wp-tests.sh, phpunit.xml.dist, tests/bootstrap.php), unit tests with Brain Monkey (when() / expect() / Mockery) or WP_Mock, test factories (factory()->post->create(), ->user->create(), ->term->create()), HTTP request mocking with add_filter pre_http_request, AJAX testing with WP_Ajax_UnitTestCase, redirect/exit testing via exception-throwing pattern, multisite tests (WP_MULTISITE=1), acceptance tests with Codeception + wp-browser, or GitHub Actions CI matrix for PHP x WP versions. Triggers: \"write a test for this\", \"unit test this function\", \"set up PHPUnit for my plugin\", \"mock this WP function\", \"Brain Monkey setup\", \"WP_Mock\", \"test is failing\", \"how do I test a hook\", \"test my REST endpoint\", \"factory()->post->create()\", \"install the WP test suite\", \"test my wp_mail call\", \"integration test setup\", \"bin/install-wp-tests.sh\", \"phpunit.xml.dist\", \"WP_UnitTestCase\", \"WP_Ajax_UnitTestCase\", \"pre_http_request mock\", \"test a redirect\", \"WP_MULTISITE=1 test\", \"Codeception wp-browser\", \"Brain Monkey setUp tearDown\", \"PHP x WP version matrix in CI\", \"test a wp_schedule_event\", \"assert hook was called\". Not for: E2E browser tests — use `wp-admin-browser` for those.",
+      "source_sha256": "6349e84b99c32af45786b3ad5e370b42a1d4fe88aa52175ba2b1e8ee5cfa794e",
+      "source_path": "skills/wp-plugin-testing/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "608a797e242266f9ba9fa779788b1eb4350a3cf78e992c844fae246203c39156": {
+      "description_zh": "从WordPress主题或插件输出schema.org JSON-LD结构化数据，如FAQ、步骤、列表、食谱、活动、商品和评论，构建PHP图谱并安全编码、在wp_head输出和验证，同时避免与SEO插件已有图谱重复；不用于SEO插件设置或元标签配置。",
+      "source": "Use when emitting JSON-LD structured data (schema.org) from a WordPress theme or plugin — FAQPage, HowTo, ItemList, Recipe, Event, Product, Review — especially when the data lives in post meta / custom fields the SEO plugin can't see, OR when you must avoid duplicating the schema an SEO plugin (Rank Math, Yoast SEO, SEOPress) already outputs. Covers building the @graph in PHP, escaping with wp_json_encode, printing on wp_head, validating, and coexisting with SEO-plugin graphs. Triggers: \"add FAQ schema\", \"FAQPage JSON-LD\", \"add structured data\", \"schema.org markup WordPress\", \"rich results\", \"HowTo schema\", \"ItemList schema\", \"my FAQ rich result isn't showing\", \"duplicate Article schema\", \"Rank Math already outputs schema\", \"Yoast schema graph\", \"json-ld in head or footer\", \"wp_json_encode schema\", \"schema for custom fields\", \"breadcrumb schema duplicate\", \"validate structured data\". Not for: configuring an SEO plugin's built-in schema UI (use the plugin's own settings); meta tags / OpenGraph (that's SEO-plugin territory); on-page heading/markup SEO.",
+      "source_sha256": "608a797e242266f9ba9fa779788b1eb4350a3cf78e992c844fae246203c39156",
+      "source_path": "skills/wp-structured-data/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5a76d49ba741ff73a2f325ed7a2ab1a0301c7f4edae66966bcd2d0855b0b644": {
+      "description_zh": "构建、扩展和排查WooCommerce插件，处理自定义商品、支付与退款网关、配送方式、商品订单客户CRUD、HPOS兼容、REST和Store API扩展、购物车结账区块、订阅、优惠券及Webhook；不用于Freemius商业化或普通WordPress文章处理。",
+      "source": "Use when building, extending, or debugging a WooCommerce plugin — custom product types, payment gateways (WC_Payment_Gateway, process_payment(), process_refund()), shipping methods (WC_Shipping_Method, calculate_shipping()), CRUD via WC_Product / WC_Order / WC_Customer (wc_get_product, wc_create_order, wc_get_orders, get_meta, update_meta_data), HPOS compatibility (FeaturesUtil::declare_compatibility, wc_get_orders instead of WP_Query on posts), REST API extensions (woocommerce_rest_prepare, woocommerce_rest_pre_insert, Store API woocommerce_store_api_register_endpoint_data), cart/checkout blocks (registerCheckoutFilters, extensionCartUpdate, SlotFills), key hooks (woocommerce_cart_calculate_fees, woocommerce_checkout_fields, woocommerce_order_status_changed, woocommerce_payment_gateways), or WooCommerce subscription/coupon/webhook logic. Triggers: \"WooCommerce extension\", \"custom product type\", \"payment gateway\", \"hook into WooCommerce checkout\", \"WC_Order\", \"wc_create_order()\", \"wc_get_product()\", \"add a shipping method\", \"WooCommerce REST API\", \"HPOS compatible\", \"FeaturesUtil::declare_compatibility\", \"cart block\", \"checkout block filter\", \"woocommerce_payment_gateways\", \"WC_Product CRUD\", \"Store API endpoint\", \"extend WooCommerce\", \"woocommerce_cart_calculate_fees\", \"woocommerce_checkout_fields\", \"process_payment()\", \"process_refund()\", \"woocommerce_rest_prepare_product\", \"registerCheckoutFilters\", \"WC webhook HMAC\", \"WC coupon CRUD\", \"wc_get_orders HPOS\". Not for: Freemius monetisation — use `wp-freemius`; plain WordPress post/taxonomy work without WooCommerce.",
+      "source_sha256": "a5a76d49ba741ff73a2f325ed7a2ab1a0301c7f4edae66966bcd2d0855b0b644",
+      "source_path": "skills/wp-woocommerce/SKILL.md",
+      "package_sha256": "45252b6bee7a40e1f92d0d12983895b3c06e34115be1e4ed793adf975d74e1be",
+      "source_package": "WordPress Dev Skills-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e63420a5ce293851a9426bdc5566468ca9e13fe64bc6ed47653888b7f2564035": {
+      "description_zh": "通过WordPress MCP Adapter管理站点，查看版本、插件、健康和状态，管理用户、评论、菜单、SEO及站点配置。",
+      "source": "WordPress site administration through the MCP Adapter. Use when the user asks to \"check site status\", \"manage users\", \"update settings\", \"check plugins\", \"review site health\", \"manage comments\", \"check WordPress version\", \"list users\", \"change site settings\", \"manage menus\", \"check SEO settings\", or any request about WordPress administration, configuration, users, or site health. Also trigger on: \"תבדוק את האתר\", \"סטטוס האתר\", \"ניהול משתמשים\".",
+      "source_sha256": "e63420a5ce293851a9426bdc5566468ca9e13fe64bc6ed47653888b7f2564035",
+      "source_path": "skills/wp-admin/SKILL.md",
+      "package_sha256": "c08f19e5579c8982f42b6bbddd583baa6c2c91faddd8388017e01c73714f5fb5",
+      "source_package": "wordpress-mcp-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa66b34a48f116010dda72efa8f123847c8738ead0ca87397f996cf9d64d524e": {
+      "description_zh": "通过WordPress MCP Adapter管理文章、页面、媒体、分类和标签，支持查看近期内容、起草、新建、编辑及发布。",
+      "source": "Manage WordPress content through the MCP Adapter. Use when the user asks to \"create a post\", \"edit a page\", \"publish content\", \"update my WordPress site\", \"draft a blog post\", \"manage media\", \"list my pages\", \"check recent posts\", or any request involving WordPress posts, pages, media, categories, or tags. Also trigger on Hebrew: \"תעדכן את האתר\", \"תכתוב פוסט\", \"תערוך עמוד\".",
+      "source_sha256": "aa66b34a48f116010dda72efa8f123847c8738ead0ca87397f996cf9d64d524e",
+      "source_path": "skills/wp-content/SKILL.md",
+      "package_sha256": "c08f19e5579c8982f42b6bbddd583baa6c2c91faddd8388017e01c73714f5fb5",
+      "source_package": "wordpress-mcp-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d6631d4935d09b9524ff8f1d194b80c053fc9f7915aed4b1367943024a3ab01": {
+      "description_zh": "通过WordPress MCP Adapter管理WooCommerce商店的订单、商品、客户、销售、库存、优惠券、配送、收入和订单状态，支持新增商品及销售报告。",
+      "source": "WooCommerce store management through the WordPress MCP Adapter. Use when the user asks about \"orders\", \"products\", \"customers\", \"sales\", \"inventory\", \"coupons\", \"WooCommerce\", \"store\", \"ecommerce\", \"shipping\", \"revenue\", \"order status\", \"product stock\", \"add a product\", \"check orders\", \"sales report\", or any request related to online store operations. Also trigger on: \"הזמנות\", \"מוצרים\", \"לקוחות\", \"חנות\", \"מכירות\", \"קופונים\".",
+      "source_sha256": "9d6631d4935d09b9524ff8f1d194b80c053fc9f7915aed4b1367943024a3ab01",
+      "source_path": "skills/wp-woocommerce/SKILL.md",
+      "package_sha256": "c08f19e5579c8982f42b6bbddd583baa6c2c91faddd8388017e01c73714f5fb5",
+      "source_package": "wordpress-mcp-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4c1a1cfc8c39be6fc91a88a0a49c6c8bcea0fd6a8f4a34d326eff3c323821f9": {
+      "description_zh": "从简短主题需求提取完整网站规格，明确站点类型、受众、语气、布局要求及字体设计。",
+      "source": "Extract comprehensive site specifications from simple descriptions. Use when analyzing a user's theme request to determine site type, audience, tone, layout requirements, and typography.",
+      "source_sha256": "c4c1a1cfc8c39be6fc91a88a0a49c6c8bcea0fd6a8f4a34d326eff3c323821f9",
+      "source_path": "skills/site-specification/SKILL.md",
+      "package_sha256": "87789857f9f90b4c2c527c860ce0075178802be78bb3c6f1276a6bf95d08a620",
+      "source_package": "WordPress.com-0.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae911cb5ecb82913ec97117a499e18be65f1df827f97ba05c01a4b85d2095ddc": {
+      "description_zh": "在WUR合约包含需编辑项目文件的可执行工作时，使用稀疏Git工作树，并排除agents和contracts目录。",
+      "source": "Use when a WUR contract has executable project work that requires editing project files in a sparse worktree excluding agents/ and contracts/.",
+      "source_sha256": "ae911cb5ecb82913ec97117a499e18be65f1df827f97ba05c01a4b85d2095ddc",
+      "source_path": "skills/using-git-worktrees/SKILL.md",
+      "package_sha256": "5312f33567088e62353aeb31fb184b17dafeb0afe6a5c45143dc970ddfa68b4a",
+      "source_package": "Work Unit Roadmap-2.0.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e3d897e62b40ce378eaf9220e8de9f7f9613bc938644f82722eff8c9ed9b659": {
+      "description_zh": "作为Work Unit Roadmap对话启动入口，说明如何查找和使用WUR技能；原流程要求在响应或执行任务前完成该引导。",
+      "source": "Use when starting any conversation — establishes how to find and use WUR skills, requiring this bootstrap before any response or action.",
+      "source_sha256": "4e3d897e62b40ce378eaf9220e8de9f7f9613bc938644f82722eff8c9ed9b659",
+      "source_path": "skills/using-wur/SKILL.md",
+      "package_sha256": "5312f33567088e62353aeb31fb184b17dafeb0afe6a5c45143dc970ddfa68b4a",
+      "source_package": "Work Unit Roadmap-2.0.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8874b41b18787a2997ce051260730e2f1dc3a622fef5acb2439852040b246c69": {
+      "description_zh": "规划、跟踪、签约、接收报告及关闭Work Unit Roadmap工作，将agents目录作为知识库、contracts目录作为执行交接，并要求由客户确认收尾。",
+      "source": "Use when planning, tracking, contracting, receiving reports, or closing Work Unit Roadmap work. Keeps agents/ as wiki, contracts/ as execution handoff, and client-confirmed closeout only.",
+      "source_sha256": "8874b41b18787a2997ce051260730e2f1dc3a622fef5acb2439852040b246c69",
+      "source_path": "skills/wur-guidelines/SKILL.md",
+      "package_sha256": "5312f33567088e62353aeb31fb184b17dafeb0afe6a5c45143dc970ddfa68b4a",
+      "source_package": "Work Unit Roadmap-2.0.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "443688e02bca4e519b93ccfc25d0009e89f7660077a3964bd7e5c84e4b771e45": {
+      "description_zh": "把VS Code或Cursor已打开的Workday Extend项目构建或修改交给IDE面板中的Workday Developer Agent，支持应用脚手架、页面组件、业务对象、WQL、展示文件、模型、安全域和编排的理解、修复及增强。",
+      "source": "Delegate building or changing a Workday Extend app to the Workday Developer Agent, which runs in the user''s IDE panel. Use when the user wants to create, scaffold, edit, understand, fix, or enhance a Workday Extend app in a project open in VS Code or Cursor. Triggers on: \"Workday Extend\", \"Extend app\", \"developer agent\", \"build my Extend app\", \"scaffold a page/component\", \"add a business object\", \"WQL\", plus any request to change Extend files (non-exhaustive list: presentation - pmd/pod/amd/smd/card/extendcard/script/wql/graphql, model - businessobject/businessprocess/securitydomain, orchestration, attributestore) in an Extend project the user has open.",
+      "source_sha256": "443688e02bca4e519b93ccfc25d0009e89f7660077a3964bd7e5c84e4b771e45",
+      "source_path": "skills/workday-developer-agent/SKILL.md",
+      "package_sha256": "3e28067c474e4dfbb49e89854d90a1142afd9721fedef79dde88dc59f78dd784",
+      "source_package": "Workday Developer Agent for Claude-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e88c243570f9cfdde64f4824b230536a8ce9da29d3d4bf1c546eb5167a0bd396": {
+      "description_zh": "生成月度银行余额调节表，对比银行对账单余额与现金账簿余额，适用于银行与账面现金对账。",
+      "source": "Generate monthly bank reconciliation statements comparing bank statement balance to cash book balance. Use when the user asks for bank reconciliation, bank recon, cash book reconciliation, or needs to reconcile bank and book balances.",
+      "source_sha256": "e88c243570f9cfdde64f4824b230536a8ce9da29d3d4bf1c546eb5167a0bd396",
+      "source_path": "skills/bank-reconciliation/SKILL.md",
+      "package_sha256": "32bfccf1a0a8de1381769a29d1e6c92d0fba280e8d494b114675db3e1e94ca74",
+      "source_package": "Worker K-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f04c520acc01294ea46d49cd74468ed4693eff5701cf86e515951ffff91ad815": {
+      "description_zh": "读取PDF、Excel或图片形式的报销及索赔单，提取申请人、明细和金额，生成结构化Excel汇总，涵盖费用、保险、医疗、员工报销和备用金申请。",
+      "source": "Extract and process data from claim forms (expense claims, insurance claims, medical claims, staff reimbursements, petty cash claims). Reads PDF/Excel/image claim forms, extracts claimant details, line items, amounts, and outputs structured Excel summaries. Use when the user mentions claim forms, expense claims, reimbursement claims, claim extraction, or needs to process/digitize claim documents.",
+      "source_sha256": "f04c520acc01294ea46d49cd74468ed4693eff5701cf86e515951ffff91ad815",
+      "source_path": "skills/claim-form-extraction/SKILL.md",
+      "package_sha256": "32bfccf1a0a8de1381769a29d1e6c92d0fba280e8d494b114675db3e1e94ca74",
+      "source_package": "Worker K-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "614bf82e7f6cea000986ac7d76a976b09d40e10fa4955afc32c5507c9eeb9855": {
+      "description_zh": "创建、读取、编辑和分析Excel或CSV表格，生成数据透视表、图表、财务明细、对账及格式化报告。",
+      "source": "Create, read, edit, and analyze Excel spreadsheets (.xlsx/.xls/.csv). Generate pivot tables, charts, financial schedules, reconciliations, and formatted reports. Use when working with Excel files, spreadsheets, tabular data, .xlsx files, CSV data, financial schedules, or data analysis tasks.",
+      "source_sha256": "614bf82e7f6cea000986ac7d76a976b09d40e10fa4955afc32c5507c9eeb9855",
+      "source_path": "skills/excel-processing/SKILL.md",
+      "package_sha256": "32bfccf1a0a8de1381769a29d1e6c92d0fba280e8d494b114675db3e1e94ca74",
+      "source_package": "Worker K-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d07899d07ab7c94bec22736da671db4d05313bc503bbea8465f8e23c819f971a": {
+      "description_zh": "将事务所和客户信息填入或更新管理层声明书模板，用于审计项目声明书的准备和生成。",
+      "source": "Update management representation letter templates with firm and client details. Use when the user needs to prepare, update, or generate management representation letters for audit engagements.",
+      "source_sha256": "d07899d07ab7c94bec22736da671db4d05313bc503bbea8465f8e23c819f971a",
+      "source_path": "skills/management-rep-letter/SKILL.md",
+      "package_sha256": "32bfccf1a0a8de1381769a29d1e6c92d0fba280e8d494b114675db3e1e94ca74",
+      "source_package": "Worker K-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "148e8f1c883e0a1321c41735873ba620f9da93d8f0074360bf5b4759979d8c3a": {
+      "description_zh": "提取PDF文本与表格、填写表单、合并拆分及转换文件、添加水印和生成PDF报告。",
+      "source": "Extract text and tables from PDF files, fill forms, merge/split PDFs, convert PDFs, add watermarks, and generate PDF reports. Use when working with PDF files, when the user mentions PDFs, forms, document extraction, PDF merging, splitting, watermarking, or PDF report generation.",
+      "source_sha256": "148e8f1c883e0a1321c41735873ba620f9da93d8f0074360bf5b4759979d8c3a",
+      "source_path": "skills/pdf-processing/SKILL.md",
+      "package_sha256": "32bfccf1a0a8de1381769a29d1e6c92d0fba280e8d494b114675db3e1e94ca74",
+      "source_package": "Worker K-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a351f7ac72c060594036f052c6ae4d983f001286131fd8d7dec2b39318f09d9c": {
+      "description_zh": "研究和分析会计、税务、审计、咨询、监管及商业主题，支持法规和准则摘要、公司调查、尽职调查及专业参考资料汇编。",
+      "source": "Conduct thorough research and analysis on accounting, tax, audit, advisory, regulatory, and business topics. Use when the user asks to research a topic, analyze regulations, summarize standards, investigate a company, perform due diligence, or compile reference material on any professional subject.",
+      "source_sha256": "a351f7ac72c060594036f052c6ae4d983f001286131fd8d7dec2b39318f09d9c",
+      "source_path": "skills/research/SKILL.md",
+      "package_sha256": "32bfccf1a0a8de1381769a29d1e6c92d0fba280e8d494b114675db3e1e94ca74",
+      "source_package": "Worker K-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc8d6164563c987c95f74cc18026280bf646221b5e775cfabe78d2ec9db86e5a": {
+      "description_zh": "使用Playwright浏览网站、采集内容、自动化网页交互并截图，适用于URL检查、网页下载及需要页面操作的网络研究。",
+      "source": "Browse websites, scrape web content, automate web interactions, and capture screenshots using Playwright. Use when the user asks to browse a website, scrape data, take screenshots, automate web tasks, check a URL, download web content, interact with web pages, or perform web-based research requiring page interaction.",
+      "source_sha256": "dc8d6164563c987c95f74cc18026280bf646221b5e775cfabe78d2ec9db86e5a",
+      "source_path": "skills/web-browse/SKILL.md",
+      "package_sha256": "32bfccf1a0a8de1381769a29d1e6c92d0fba280e8d494b114675db3e1e94ca74",
+      "source_package": "Worker K-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "559e5b1850a7e8a8c7a7a2fb4041ccf2f9b17b448ea145a17e4832b08eaec407": {
+      "description_zh": "创建、读取、编辑和排版Word文档，生成带表格、页眉页脚及样式的信函、报告、备忘录、提案和业务约定书。",
+      "source": "Create, read, edit, and format Word documents (.docx). Generate letters, reports, memos, proposals, engagement letters, and professional documents with tables, headers, footers, and styles. Use when working with Word files, .docx documents, letters, reports, memos, proposals, or document formatting.",
+      "source_sha256": "559e5b1850a7e8a8c7a7a2fb4041ccf2f9b17b448ea145a17e4832b08eaec407",
+      "source_path": "skills/word-processing/SKILL.md",
+      "package_sha256": "32bfccf1a0a8de1381769a29d1e6c92d0fba280e8d494b114675db3e1e94ca74",
+      "source_package": "Worker K-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "659733786c7009c20d467820fa7ceb862b54ad9976c7619be7505d599726311b": {
+      "description_zh": "对开源贡献进行提交前检查，核对项目规则、PR规模、提交格式、代码检查和类型检查，仅报告问题，不推送代码或创建PR。",
+      "source": "Pre-flight checklist for open source contributions. Validates code changes against project rules, PR size limits, commit format, linting, and type-checking. Does NOT push or create PRs — only reports issues.",
+      "source_sha256": "659733786c7009c20d467820fa7ceb862b54ad9976c7619be7505d599726311b",
+      "source_path": "skills/contribution-check/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58f9a88edf17b90139ed61bd632372f623b9af0258f2512d57a3719d78d4b7b0": {
+      "description_zh": "创建Claude Code自定义子代理配置，指导定义职责范围、工具、权限、钩子与系统提示。",
+      "source": "Creates a new Claude Code custom subagent configuration. Guides you through designing agent scope, tools, permissions, hooks, and system prompts.",
+      "source_sha256": "58f9a88edf17b90139ed61bd632372f623b9af0258f2512d57a3719d78d4b7b0",
+      "source_path": "skills/create-agent/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71106802e7790bbe5412ca29ed26f9606c5c78cec3537b1b3d52b2b1704016b3": {
+      "description_zh": "创建Claude Code自定义技能或斜杠命令，指导设计、编写并放置SKILL.md，配置正确的前置元数据、参数和实践约定。",
+      "source": "Creates a new Claude Code custom skill (slash command). Guides you through designing, writing, and placing the SKILL.md file with proper frontmatter, arguments, and best practices.",
+      "source_sha256": "71106802e7790bbe5412ca29ed26f9606c5c78cec3537b1b3d52b2b1704016b3",
+      "source_path": "skills/create-skill/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "158c44db5895a7658b22ac0233a7a2e855bf7f16478e53ffd935a2e2c9b3a9f8": {
+      "description_zh": "使用DB Browser for SQLite或类似图形工具打开日志SQLite数据库。",
+      "source": "Open the journal SQLite database in a GUI viewer (DB Browser for SQLite, or similar).",
+      "source_sha256": "158c44db5895a7658b22ac0233a7a2e855bf7f16478e53ffd935a2e2c9b3a9f8",
+      "source_path": "skills/db-viewer/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "758b525d4b29a83142f258fa858405fc14d893e018efc76d91edc1c5217282ea": {
+      "description_zh": "从代码库的实际模式、约定和示例中提炼概念，生成结构化知识库条目，帮助理解项目中的React hooks、API路由、数据模型或测试模式。",
+      "source": "Distills a codebase concept into a structured knowledge base entry. Analyzes patterns, conventions, and real examples from the code to create reference documentation. Use when you need to understand how something works in this project (e.g., React hooks, API routers, database models, testing patterns).",
+      "source_sha256": "758b525d4b29a83142f258fa858405fc14d893e018efc76d91edc1c5217282ea",
+      "source_path": "skills/distill-concept/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9af12a33458060a0ddfa64baf24865a5874de99bf55099b0878ee8da9affc54b": {
+      "description_zh": "提供workflow-toolkit各技能的使用说明，解释具体功能及调用方法。",
+      "source": "Show usage information for any workflow-toolkit skill. Use when the user asks how to use a specific skill, what a skill does, or needs guidance on workflow-toolkit features. Also triggers on \"help\", \"how do I\", \"what does X do\", or \"usage\" in the context of workflow-toolkit skills.",
+      "source_sha256": "9af12a33458060a0ddfa64baf24865a5874de99bf55099b0878ee8da9affc54b",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1cd1306178e4601d9d3de170fed2847605700aea3e3941437c38526e1bb46ab": {
+      "description_zh": "从本地SQLite数据库列出和筛选跟踪的GitHub问题，支持状态、标签、优先级、跟踪状态及关键词查询。",
+      "source": "List and filter tracked GitHub issues from the local SQLite database. Filter by state, label, priority, tracking status, or search by keyword.",
+      "source_sha256": "d1cd1306178e4601d9d3de170fed2847605700aea3e3941437c38526e1bb46ab",
+      "source_path": "skills/issues-list/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15b4b36e60e85cff75e2c54d6b577bf18b57d108e5bbc38c4d09ece9684bc3ee": {
+      "description_zh": "将GitHub仓库的开放和关闭问题同步到本地SQLite，检测变化并清理过时本地记录；仅只读访问GitHub，不发布内容。",
+      "source": "Sync GitHub issues from the repo into the local SQLite database for tracking. Supports full CRUD — pull open/closed issues, detect changes, and prune stale entries. Read-only on GitHub (never posts).",
+      "source_sha256": "15b4b36e60e85cff75e2c54d6b577bf18b57d108e5bbc38c4d09ece9684bc3ee",
+      "source_path": "skills/issues-sync/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0542bba3601cdc41e4885ccb581c399f103e1a79462ed8650fcf7d28dbfba55": {
+      "description_zh": "更新GitHub问题的本地跟踪元数据，如优先级、跟踪状态和备注，不修改GitHub上的问题。",
+      "source": "Update the local tracking metadata for a GitHub issue. Set priority, tracking status, or add notes. Does not modify the issue on GitHub.",
+      "source_sha256": "d0542bba3601cdc41e4885ccb581c399f103e1a79462ed8650fcf7d28dbfba55",
+      "source_path": "skills/issues-triage/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7055b650862ac2e8d88cb9be93f0e9efe3245ee7578321434ff550e2b6a4477": {
+      "description_zh": "查看指定GitHub问题的完整正文、评论、标签和本地跟踪信息，可获取远端最新资料或读取本地数据库。",
+      "source": "View detailed information about a specific GitHub issue. Shows the full body, comments, labels, and local tracking metadata. Can fetch fresh data from GitHub or read from local DB.",
+      "source_sha256": "a7055b650862ac2e8d88cb9be93f0e9efe3245ee7578321434ff550e2b6a4477",
+      "source_path": "skills/issues-view/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd069b34a60101ebae6b7a5ea6a1b3527e731b26e506377fec05f2311f4d9c44": {
+      "description_zh": "读取和查询工作日志，查看近期活动、按关键词搜索或按日期筛选，支持SQLite和Markdown记录。",
+      "source": "Read and query journal entries. Shows recent activity, search by keyword, or filter by date. Can read from both SQLite and markdown entries.",
+      "source_sha256": "bd069b34a60101ebae6b7a5ea6a1b3527e731b26e506377fec05f2311f4d9c44",
+      "source_path": "skills/journal-read/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb7376ab368249b290e783404b50d02ac83a91be73b5f26141b31d8bb91dd730": {
+      "description_zh": "记录本次会话完成的工作、改动原因和下一步，同时保存到SQLite与带时间戳的Markdown文件。",
+      "source": "Write a journal entry documenting what was done in this session. Records what changed, why, and next steps. Saves to both SQLite and a timestamped markdown file.",
+      "source_sha256": "fb7376ab368249b290e783404b50d02ac83a91be73b5f26141b31d8bb91dd730",
+      "source_path": "skills/journal-write/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "692b30ac081c09a889c385ccb4a2a81bc2bfc5fdab49c42cdbf8edd8fd0df558": {
+      "description_zh": "生成PR标题、正文及检查清单后展示给用户审阅，未经明确同意不创建PR或推送代码。",
+      "source": "Prepares a pull request description. Generates the title, body, and checklist — then STOPS and presents everything for user review. Does NOT create the PR or push code without explicit user consent.",
+      "source_sha256": "692b30ac081c09a889c385ccb4a2a81bc2bfc5fdab49c42cdbf8edd8fd0df558",
+      "source_path": "skills/pr-prepare/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a53874802da9036576b75400a92b5746a5c46454e66a1431e2916867ca9800d0": {
+      "description_zh": "统一创建Claude Code技能、代理或两者组合，配置扩展、实践约定和协同工作流程。",
+      "source": "Creates skills, agents, or both together. A unified factory for building Claude Code extensions with proper configuration, best practices, and coordinated workflows.",
+      "source_sha256": "a53874802da9036576b75400a92b5746a5c46454e66a1431e2916867ca9800d0",
+      "source_path": "skills/skill-and-agent-factory/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "443e471f2a46fcc5bd339710b7b91f39fcbe387d05320dceebd4bb3e2599577b": {
+      "description_zh": "以标题及可选描述、优先级、标签和关联GitHub问题创建本地任务，生成任务文件夹并写入SQLite。",
+      "source": "Create a new task with a title and optional description, priority, tags, and linked GitHub issue. Creates a task folder and inserts into SQLite.",
+      "source_sha256": "443e471f2a46fcc5bd339710b7b91f39fcbe387d05320dceebd4bb3e2599577b",
+      "source_path": "skills/task-create/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c10a358382da162ef375232c68614b1ddec5c53ac11d58887187313ae38ccc0": {
+      "description_zh": "将本地任务标记为完成并记录完成时间，是任务状态更新为done的快捷入口。",
+      "source": "Mark a task as done. Records completion time. Shortcut for /task-update <id> status done.",
+      "source_sha256": "9c10a358382da162ef375232c68614b1ddec5c53ac11d58887187313ae38ccc0",
+      "source_path": "skills/task-done/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7636d0a71d39f08b0e1be4c84fee06176e0c4f75056c732a8660a7d249b485c": {
+      "description_zh": "从SQLite列出和筛选本地任务，支持状态、优先级及关键词条件。",
+      "source": "List and filter local tasks from SQLite. Filter by status, priority, or search by keyword.",
+      "source_sha256": "c7636d0a71d39f08b0e1be4c84fee06176e0c4f75056c732a8660a7d249b485c",
+      "source_path": "skills/task-list/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8cecd66e5c7d39c42f2cf3768cf50e31da20dc2903c3e60e4a5e73df5caa1b1f": {
+      "description_zh": "将本地任务标记为进行中，是任务状态更新为in-progress的快捷入口。",
+      "source": "Mark a task as in-progress. Shortcut for /task-update <id> status in-progress.",
+      "source_sha256": "8cecd66e5c7d39c42f2cf3768cf50e31da20dc2903c3e60e4a5e73df5caa1b1f",
+      "source_path": "skills/task-start/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0d373b386a4d6079dbb4b4463e94eba6cff515e108b12e4677ada85c94a2a57": {
+      "description_zh": "更新任务状态、优先级、标签、备注或描述，并同步SQLite和任务TASK.md文件。",
+      "source": "Update a task's field (status, priority, tags, notes, description). Updates both SQLite and the task's TASK.md file.",
+      "source_sha256": "d0d373b386a4d6079dbb4b4463e94eba6cff515e108b12e4677ada85c94a2a57",
+      "source_path": "skills/task-update/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11be5bc1975cd1ce2d3d322fa0c1d741a64649d0122cbaa950c04183ce3c6f2b": {
+      "description_zh": "按ID或短名查看指定任务的完整信息及TASK.md内容。",
+      "source": "View full details of a specific task by ID or slug, including its TASK.md contents.",
+      "source_sha256": "11be5bc1975cd1ce2d3d322fa0c1d741a64649d0122cbaa950c04183ce3c6f2b",
+      "source_path": "skills/task-view/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a9420d1c06575433e077d664d628438b32e462aca1381ee8debea06e531aa1a": {
+      "description_zh": "初始化并验证workflow-toolkit环境，检查SQLite、创建日志数据库、核对目录结构与gh CLI认证并报告就绪状态，适用于安装后或故障排查。",
+      "source": "Initialize and verify the workflow-toolkit environment. Checks SQLite availability, creates the journal database, verifies directory structure, checks gh CLI auth, and reports readiness. Run this after installing the plugin or when troubleshooting.",
+      "source_sha256": "8a9420d1c06575433e077d664d628438b32e462aca1381ee8debea06e531aa1a",
+      "source_path": "skills/workflow-db-setup/SKILL.md",
+      "package_sha256": "f5a5f76cc62f2b0b36ae29af2430838bb7f69667d580cc18c4726186f107f41c",
+      "source_package": "workflow-toolkit-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e7585de6ba8c733a7b9484b9bdd861bb1e84aa56275de01e31be75be1f6975e": {
+      "description_zh": "打开Workflows Conductor本地实时仪表盘，查看跨项目Claude Code动态工作流及各代理更新，适用于在聊天之外观察和监控运行。",
+      "source": "Open the Workflows Conductor live dashboard — a localhost view of all Claude Code dynamic workflow runs across projects, with live per-agent updates. Use when the user wants to watch workflow runs, see a workflow dashboard, or monitor runs outside chat.",
+      "source_sha256": "9e7585de6ba8c733a7b9484b9bdd861bb1e84aa56275de01e31be75be1f6975e",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "56607392f20c3c4501cc7f9a1ebdf24125e583c1be3438a55c2f0269680fdf0d",
+      "source_package": "Workflows Conductor-1.2.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3dc45ead5559057887278f98264cb284c7960e7b9a1864ee9ac790e7f75853af": {
+      "description_zh": "从历史运行脚本重新启动一次Claude Code动态工作流，适用于被终止或失败的运行及重复执行任务。",
+      "source": "Re-run a Claude Code dynamic workflow from a past run's script — a fresh run, useful for killed/failed runs or repeating a job. Use when the user wants to rerun, relaunch, retry, or restart a workflow run.",
+      "source_sha256": "3dc45ead5559057887278f98264cb284c7960e7b9a1864ee9ac790e7f75853af",
+      "source_path": "skills/rerun/SKILL.md",
+      "package_sha256": "56607392f20c3c4501cc7f9a1ebdf24125e583c1be3438a55c2f0269680fdf0d",
+      "source_package": "Workflows Conductor-1.2.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64b62914195006af0cbc3663d25a94c3a0a156135d6ad78370ca1b6bdf252e44": {
+      "description_zh": "将Claude Code动态工作流运行脚本保存为可复用的斜杠命令工作流，便于保留和再次使用。",
+      "source": "Save a Claude Code dynamic workflow run's script as a reusable slash-command workflow (the \"s\" action from the CLI /workflows panel). Use when the user wants to keep, save, or reuse a workflow run.",
+      "source_sha256": "64b62914195006af0cbc3663d25a94c3a0a156135d6ad78370ca1b6bdf252e44",
+      "source_path": "skills/save/SKILL.md",
+      "package_sha256": "56607392f20c3c4501cc7f9a1ebdf24125e583c1be3438a55c2f0269680fdf0d",
+      "source_package": "Workflows Conductor-1.2.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6db6aaf5fa2b8ec756d07804157826bb41436faf6b86540384b4998e8dff37c": {
+      "description_zh": "读取~/.claude/projects运行记录，列出Claude Code动态工作流的状态、代理、令牌消耗与耗时，展示/workflows面板所包含的信息。",
+      "source": "List Claude Code dynamic workflow runs (status, agents, tokens, duration) by reading run records from ~/.claude/projects. Use when the user asks about workflow runs, ultracode runs, run status, or anything /workflows would show.",
+      "source_sha256": "c6db6aaf5fa2b8ec756d07804157826bb41436faf6b86540384b4998e8dff37c",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "56607392f20c3c4501cc7f9a1ebdf24125e583c1be3438a55c2f0269680fdf0d",
+      "source_package": "Workflows Conductor-1.2.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da3f8a662a091e65f2769251c90dd77cac7b8d39981efda85a9b9863ea7054bf": {
+      "description_zh": "生成或修改在Workiom租户内运行的独立静态内部页面、表单、跟踪器及小应用，使用查看者自己的登录会话操作列表；通过MCP发现真实结构、确认需求、生成并验证后发布，修改既有应用时读取实际源码，交付可打开的在线应用。",
+      "source": "Generate Workiom \"vibe apps\" — self-contained static web apps, one page or several plus any assets they need, that run inside a Workiom tenant at {tenant}.workiom.com/vibe/{appId}/ and interact with Workiom lists using the logged-in viewer's own session. Use this skill whenever the user asks to build, generate, change, or package an internal Workiom page, form, tracker, or mini-app — e.g. \"I need an app that collects bug reports\", \"make a form that writes to our Leads list\", \"add a field to the vibe app we made\". Covers the full pipeline: light intake → schema discovery via the Workiom MCP → schema-grounded requirements confirmation → generation → validation via scripts/vibe-pack.py → optional in-chat preview → publishing through the Workiom MCP. Also edits apps that already exist, by fetching their real source rather than regenerating them. The deliverable is a live app the user can open, not a file to hand off.",
+      "source_sha256": "da3f8a662a091e65f2769251c90dd77cac7b8d39981efda85a9b9863ea7054bf",
+      "source_path": "skills/workiom-vibe-apps/SKILL.md",
+      "package_sha256": "ca231504bc0306be07fe30cb7043e6fcd453f5b157eb80524656a24c57232bba",
+      "source_package": "Workiom-1.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5fcd4396c143b9a260945014624e6737b11b5947aa3421e3199ad655d0e026a6": {
+      "description_zh": "实现、嵌入和排查WorkOS用户管理、用户资料、Admin Portal SSO连接及域名验证组件，识别前端框架、通过对应语言后端SDK生成访问令牌，并依据随包OpenAPI规格连接组件。",
+      "source": "Use when the user is implementing, embedding, or debugging a WorkOS Widget — specifically the User Management, User Profile, Admin Portal SSO Connection, or Admin Portal Domain Verification widgets. Handles the full stack — detecting the frontend (Next.js, React, React Router, TanStack Start, Vite, SvelteKit), generating access tokens via the backend SDK in use (Node, Python, Go, Ruby, PHP, Java, .NET), and wiring up the widget component correctly per the bundled OpenAPI spec. Also use when code imports from @workos-inc/widgets or the user pastes <UserManagement /> or <UserProfile /> JSX.",
+      "source_sha256": "5fcd4396c143b9a260945014624e6737b11b5947aa3421e3199ad655d0e026a6",
+      "source_path": "skills/workos-widgets/SKILL.md",
+      "package_sha256": "1713df3489c1e030625ebd3669f3c47191516ed2b1aa257a16321821e0f2ed25",
+      "source_package": "workos-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bff649f75dc3ce88d4fda6f71a8615283e5089259a1e59ff8e69c977bd6c2702": {
+      "description_zh": "查询WorkOS文档、术语和控制台字段，实施、调试或迁移AuthKit、SSO/SAML、目录同步、RBAC/FGA、MFA、Vault、审计、Admin Portal、应用连接、功能开关、风控、Webhook和自定义域名，亦涵盖CLI运行及从其他认证平台迁移。",
+      "source": "Use when the user asks for a WorkOS docs URL, term, or dashboard field (Sign-in endpoint, initiate_login_uri, Redirect URI, `WORKOS_*` env vars), or is implementing, debugging, or migrating WorkOS — AuthKit, SSO/SAML, Directory Sync, RBAC, FGA, MFA, Vault, Audit Logs, Admin Portal, Pipes (Connected Apps), Feature Flags, Radar (bot/fraud detection), webhooks, Custom Domains, running the `workos` CLI in agent or sandbox sessions (`WORKOS_MODE`, `workos doctor`), or migrating from Auth0, Clerk, Cognito, Firebase, Supabase, Stytch, Descope, or Better Auth. Also triggers on @workos-inc/* imports.",
+      "source_sha256": "bff649f75dc3ce88d4fda6f71a8615283e5089259a1e59ff8e69c977bd6c2702",
+      "source_path": "skills/workos/SKILL.md",
+      "package_sha256": "1713df3489c1e030625ebd3669f3c47191516ed2b1aa257a16321821e0f2ed25",
+      "source_package": "workos-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a53eeb34876e64f2d31c326d7230876e4d45d902dbc3bd5ccbc33f0f0e06d33": {
+      "description_zh": "交互配置Workshop Mode的音乐、触发条件、终端数量及应用布局等环境设置。",
+      "source": "Interactively configure Workshop Mode — music, triggers, terminal count, app layout, and more",
+      "source_sha256": "9a53eeb34876e64f2d31c326d7230876e4d45d902dbc3bd5ccbc33f0f0e06d33",
+      "source_path": "skills/workshop-setup/SKILL.md",
+      "package_sha256": "f515a35f209cb8c3d447da0e23c66c2af9ccb9cf4bcc74fb0ba24b983fac590e",
+      "source_package": "workshop-mode-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5bde33a22f8f7bc7b24aa68a847ee84b41aaf6a6b984c76a15ddcab38d3a2dc3": {
+      "description_zh": "启用Workshop Mode整理开发环境，或通过dry-run预览布局。",
+      "source": "Activate Workshop Mode to arrange your dev environment, or preview the layout with --dry-run",
+      "source_sha256": "5bde33a22f8f7bc7b24aa68a847ee84b41aaf6a6b984c76a15ddcab38d3a2dc3",
+      "source_path": "skills/workshop/SKILL.md",
+      "package_sha256": "f515a35f209cb8c3d447da0e23c66c2af9ccb9cf4bcc74fb0ba24b983fac590e",
+      "source_package": "workshop-mode-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ddb6f3d182e6bff6f2066180e51889cabf544ee943800c86e6c3d7b10d047c2": {
+      "description_zh": "将编程会话叙述记录到Worktale，在每次提交之后自动为每日工作记录补充上下文、决策和意图。",
+      "source": "Narrate your coding session into Worktale — automatically adds context, decisions, and intent to your daily work narrative after each commit",
+      "source_sha256": "1ddb6f3d182e6bff6f2066180e51889cabf544ee943800c86e6c3d7b10d047c2",
+      "source_path": "skills/worktale/SKILL.md",
+      "package_sha256": "27fe75275f0131ac036e4d7c7ea862c92af7cf81b0ea09ec54f71d5f429f6e98",
+      "source_package": "Worktale Claude Code Plugin-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "477a1164d8a37c49a69e5e412b23fb763b03a0bcff0decef7f2752580d087b80": {
+      "description_zh": "撰写技术流程、操作说明、警告和维护手册，使包括非英语母语者在内的读者能够准确理解唯一含义。",
+      "source": "Use when writing technical procedures, instructions, warnings, maintenance manuals, or any text where every reader including non-native English speakers must understand exactly one meaning.",
+      "source_sha256": "477a1164d8a37c49a69e5e412b23fb763b03a0bcff0decef7f2752580d087b80",
+      "source_path": "skills/asd-ste100/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ce3d796d66251f2a597f253531602c292a8dab99a6fc8ebb38278a894f11738": {
+      "description_zh": "以Bob Ross式平静、舒缓且温和指导的语气写作，提供鼓励、把错误转为学习机会，并为紧张读者组织从容的分步说明。",
+      "source": "Write calm, soothing, gently instructional prose in the voice of Bob Ross. Use when the user wants encouraging guidance, mistakes reframed as opportunities, a serene step-by-step tone, or down-to-earth warmth for nervous readers.",
+      "source_sha256": "8ce3d796d66251f2a597f253531602c292a8dab99a6fc8ebb38278a894f11738",
+      "source_path": "skills/bob-ross/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa299967c4a3daf7049fb11b307fb41b288cf6b50b97c6e7cd4cdc86f6bf5b11": {
+      "description_zh": "撰写面向管理层的商务沟通，结论先行、使用主动动词并避免流行空话，适用于备忘录、状态更新、领导邮件、决策简报及会议回顾。",
+      "source": "Write executive-grade business communication with BLUF (bottom line up front), active verbs, and zero buzzwords. Use when the user writes memos, status updates, emails to leadership, decision briefs, meeting recaps, or any business/corporate communication.",
+      "source_sha256": "aa299967c4a3daf7049fb11b307fb41b288cf6b50b97c6e7cd4cdc86f6bf5b11",
+      "source_path": "skills/business-writing/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3bf79eef5569729b3765052291875e0ec3b2f988b9abdabcde5722ae053d9a7b": {
+      "description_zh": "清楚、诚实且适度温暖地撰写内部公司公告、组织调整、政策更新、发布通知和敏感内部消息。",
+      "source": "Write internal corporate communications — announcements, org changes, policy updates, launch messages — with clarity, honesty, and calibrated warmth. Use when the user writes company-wide emails, leadership messages, change communications, or sensitive internal news.",
+      "source_sha256": "3bf79eef5569729b3765052291875e0ec3b2f988b9abdabcde5722ae053d9a7b",
+      "source_path": "skills/corporate-communication/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6060429f2f85099f46b2bfc2be6398abbdde7bc2c2fa544c2ce7c76cfa68302": {
+      "description_zh": "按Google开发者文档风格指南撰写API文档、README、教程、参考指南、错误提示及其他开发者技术内容。",
+      "source": "Use when writing API documentation, READMEs, tutorials, reference guides, error messages, or any technical content for developers using the Google developer documentation style guide.",
+      "source_sha256": "d6060429f2f85099f46b2bfc2be6398abbdde7bc2c2fa544c2ce7c76cfa68302",
+      "source_path": "skills/google-dev-docs/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5646536c3868e0912cbacbea62da940b4126a70369860eb509ce3a71743d8df": {
+      "description_zh": "按GOV.UK风格要求撰写面向公众的内容、政府及公共事务沟通、帮助页面和政策摘要，注重广泛受众的可读性。",
+      "source": "Use when writing public-facing content, government or civic communication, help pages, policy summaries, or content requiring maximum-scope readability according to GOV.UK standards.",
+      "source_sha256": "c5646536c3868e0912cbacbea62da940b4126a70369860eb509ce3a71743d8df",
+      "source_path": "skills/gov-uk-style/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f1f57f76038fec1fd080e61f9014d723afd40edef15ebb3c6814b93b6b3f475": {
+      "description_zh": "以Jack Sparrow船长式华丽、调皮和戏剧化的海盗语气写作，适用于玩笑、冒险、仪式感幽默和轻松娱乐文本。",
+      "source": "Write flamboyant, mischievously grand, baroque-pirate prose in the voice of Captain Jack Sparrow. Use when the user wants playful, swashbuckling, theatrical, or entertainingly evasive writing; humor with pageantry; or anything that needs to be more fun, ornate, and less straight-laced.",
+      "source_sha256": "6f1f57f76038fec1fd080e61f9014d723afd40edef15ebb3c6814b93b6b3f475",
+      "source_path": "skills/jack-sparrow/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74e89f68a3e784795ca42584f6ce201f09ead07ff1811648777e734fe4657bbd": {
+      "description_zh": "按美联社风格手册要点撰写新闻、新闻稿、摘要和媒体公告，规范归属引用、数字与日期，避免加入主观评论。",
+      "source": "Write news, press releases, and journalistic content to the Associated Press Stylebook essentials — attribution, numbers, dates, no editorializing. Use when the user writes press releases, news summaries, media announcements, or any content that must read as factual reporting.",
+      "source_sha256": "74e89f68a3e784795ca42584f6ce201f09ead07ff1811648777e734fe4657bbd",
+      "source_path": "skills/journalism-ap/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5336d915e9c1597461903cba1b3e3934f3816a46feb0b675b119931aee9ab734": {
+      "description_zh": "应用George Orwell在1946年《政治与英语》中提出的六条写作规则，删去陈旧比喻、套话和冗余，减少行话、改被动为主动，使表达清楚而诚实。",
+      "source": "Apply George Orwell's 6 rules for clear, honest, and unpretentious writing from \"Politics and the English Language\" (1946). Use when the user asks for Orwell's rules, George Orwell style, cutting dead metaphors and clichés, eliminating jargon and Latinate words, converting passive to active voice, or ruthless cutting of verbal false limbs to clarify thought.",
+      "source_sha256": "5336d915e9c1597461903cba1b3e3934f3816a46feb0b675b119931aee9ab734",
+      "source_path": "skills/orwells-rules/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f345bb003e8194e43ff2e517334aafd651e50e4ea77f44e496dbf79fd55a54ed": {
+      "description_zh": "以Paddington式极为礼貌、真诚友善的语气写作，以细致礼节和温和正式感表达关怀，并平静宽容地讲述小失误。",
+      "source": "Write exceedingly polite, earnestly kind prose in the voice of Paddington. Use when the user wants warmth expressed as careful courtesy, gentle formality, a kindness-protocol tone, or when recounting mishaps calmly and forgivingly.",
+      "source_sha256": "f345bb003e8194e43ff2e517334aafd651e50e4ea77f44e496dbf79fd55a54ed",
+      "source_path": "skills/paddington/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7d3226e68f275ca6ed1f60f7a0b6add907b166fe5c6637e397c6517e3f24aab": {
+      "description_zh": "参考美国2010年Plain Writing Act及Plain Language Action Network的简明语言方法，使草稿更清楚、简单和简短，适用于公众内容、政府风格文稿及可读性改进。",
+      "source": "Write in plain language per the US Plain Writing Act of 2010 and the Plain Language Action Network. Use when the user wants clearer, simpler, shorter writing; wants to improve readability; writes public-facing or government-style content; or asks to \"plain English\" or \"simplify\" a draft.",
+      "source_sha256": "f7d3226e68f275ca6ed1f60f7a0b6add907b166fe5c6637e397c6517e3f24aab",
+      "source_path": "skills/plain-language/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "348158b372657a36446693140ecf15a67df8912581015192fe3e8e2d49f200d0": {
+      "description_zh": "按Scott Adams商务写作方法简化文字、删除多余词语、设计引起好奇的开头，使用有力短句并组织易于理解的观点。",
+      "source": "Use when the user wants to simplify prose, prune extra words, craft high-curiosity opening hooks, write punchy short sentences, and structure ideas for maximum human brain comprehension based on Scott Adams' famous business writing method.",
+      "source_sha256": "348158b372657a36446693140ecf15a67df8912581015192fe3e8e2d49f200d0",
+      "source_path": "skills/scott-adams/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "625df7d289b8ffb8c876ec7cff47c44f246b80a1658bcd3673fe19407ac3756f": {
+      "description_zh": "以Shrek式冷面、干涩、略带抱怨但温暖的语气写作，用直率幽默、泥土与童话类比及友善讽刺，让过于甜腻的表达更接地气。",
+      "source": "Write deadpan, dry, grumpy-but-warm prose in the voice of Shrek. Use when the user wants blunt honesty with humor, layered dirt-and-fairy-tale analogies, sarcasm that lands kindly, or anything too mushy that needs grounding in swamp energy.",
+      "source_sha256": "625df7d289b8ffb8c876ec7cff47c44f246b80a1658bcd3673fe19407ac3756f",
+      "source_path": "skills/shrek/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a33e7522ed4df9e13d2d6fed6a0cf638e1f4c9bdea1e2dd4705a59750978127f": {
+      "description_zh": "以Ted Lasso式温暖、善解人意和朴实乐观的语气写作，适用于鼓励、动员，以及对困难或负面主题的建设性重新表达。",
+      "source": "Write warm, high-EQ, folksy-optimistic content in the voice of Ted Lasso. Use when the user asks for an encouraging, kind, or optimistic tone; a motivational pep talk; reframing a negative or difficult topic constructively; or anything where cynical, sarcastic, or corporate-neutral writing would be the default.",
+      "source_sha256": "a33e7522ed4df9e13d2d6fed6a0cf638e1f4c9bdea1e2dd4705a59750978127f",
+      "source_path": "skills/ted-lasso/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81e8d8bb4aab10e6c11b7cafa5ec1f1f10f5b9b321c0e7d70936f53ffbb6e09d": {
+      "description_zh": "以Winnie the Pooh式温柔、从容和童真智慧的语气写作，用简单小词表达安慰与善意，并耐心围绕一个想法展开思索。",
+      "source": "Write gentle, unhurried, childlike-wisdom prose in the voice of Winnie the Pooh. Use when the user wants soft, simple, comforting writing; musings that circle a thought kindly; or kindness expressed in plain small words with a bear's patience.",
+      "source_sha256": "81e8d8bb4aab10e6c11b7cafa5ec1f1f10f5b9b321c0e7d70936f53ffbb6e09d",
+      "source_path": "skills/winnie-the-pooh/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3bc8d65a558520ccde0e7bdfbb4a11349ee871af2e66fbe3d1a39feec096162": {
+      "description_zh": "以Yoda式简短、倒装和格言语气写作，用精炼智慧、指导口吻及有力短句表达，可采用趣味性的主宾谓顺序。",
+      "source": "Write in the concise, inverted, aphorism-driven voice of Yoda. Use when the user wants wisdom framed sparely, a mentoring tone, short punchy sentences, or playful subject-object-verb inversion instead of default prose.",
+      "source_sha256": "f3bc8d65a558520ccde0e7bdfbb4a11349ee871af2e66fbe3d1a39feec096162",
+      "source_path": "skills/yoda/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
