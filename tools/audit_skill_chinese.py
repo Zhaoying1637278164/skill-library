@@ -27,6 +27,7 @@ def main():
     assets = json.loads((ROOT / 'assets.json').read_text())
     asset_rows = assets['records'] if isinstance(assets, dict) and 'records' in assets else assets
     body_checked = 0
+    reference_checked = 0
     for path_key, entry in labels.get('by_path', {}).items():
         if not isinstance(entry, dict) or entry.get('method') != METHOD:
             continue
@@ -42,6 +43,17 @@ def main():
             assert body.strip(), path_key
             assert sha(body) == entry['body_sha256'], path_key
             body_checked += 1
+        elif entry.get('evidence_kind') == 'package_reference':
+            asset = next(a for a in asset_rows if a['asset_sha256'] == r['sha256'])
+            with zipfile.ZipFile(args.site / asset['asset_url']) as archive:
+                assert not archive.read(entry['source_path']).strip(), path_key
+                for reference in entry['references']:
+                    body = archive.read(reference['path']).decode('utf-8-sig', errors='replace')
+                    assert sha(body) == reference['body_sha256'], path_key
+                    assert 'trapic-review' in body, path_key
+                    start, end = reference['lines']
+                    assert 1 <= start <= end <= len(body.splitlines()), path_key
+            reference_checked += 1
     details = [json.loads(p.read_text()) for p in sorted((args.site / 'data/pkg').glob('*.json'))]
     rows = {(r['file'], s['path']): s for r in details for s in r['skills']}
     total = translated = 0
@@ -78,7 +90,7 @@ def main():
                 assert s['description_zh'] in search[str(r['id'])][3], (r['file'], s['path'], 'search')
     report = {'total_skills': total, 'translated_skills': translated, 'missing_skill_chinese': len(missing),
               'all_skills_complete': not missing and not unavailable, 'unavailable_source_skills': unavailable, 'unique_missing_descriptions': len({m['description_sha256'] for m in missing}),
-              'body_sources_verified': body_checked,
+              'body_sources_verified': body_checked, 'package_reference_sources_verified': reference_checked,
               'checks': ['body translations match nonempty archived skill body hashes and package paths', 'original names and descriptions unchanged', 'manual translations match source hashes and representative package paths',
                          'Chinese text and no pending placeholders', 'CSV exactly matches package details', 'search contains all Chinese descriptions'],
               'missing_inventory': 'tools/catalog/generated/缺失中文说明.json'}
