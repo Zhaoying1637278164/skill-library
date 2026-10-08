@@ -36169,6 +36169,1086 @@
       "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
       "source_package": "Human Resources-1.3.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6c7b2ce46fdb69c2b8323e287568a5b2b2cc7ccae8df5b52cd2344b7c47ef35": {
+      "description_zh": "跟踪管理招聘管道的各阶段，查看候选人数量与招聘状态，支持寻访、筛选、面试和发放录用通知的进度管理。",
+      "source": "Track and manage recruiting pipeline stages. Trigger with \"recruiting update\", \"candidate pipeline\", \"how many candidates\", \"hiring status\", or when the user discusses sourcing, screening, interviewing, or extending offers.",
+      "source_sha256": "f6c7b2ce46fdb69c2b8323e287568a5b2b2cc7ccae8df5b52cd2344b7c47ef35",
+      "source_path": "skills/recruiting-pipeline/SKILL.md",
+      "package_sha256": "55bad906a5505870940549f0832c098e6e21c35ed94a6c003363d422f0cfc25c",
+      "source_package": "Human Resources-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f3e74bf260c202cf2aee34a5d1abbda35890b47238bbe3814b277ccd3ee4a31": {
+      "description_zh": "依据 ~/.claude/voice-profile.md 的个人写作画像，将文字改为简短、口语化的 Instagram 配文，采用小写、缩略与不刻意规范的语法，去除长破折号；原作者声称可打断检测模式，同时明确直接粘贴到检测器不保证通过。",
+      "source": "Rewrites text for Instagram captions — compact, lowercase, imperfect grammar, no em dashes, abbreviated phrasing. Breaks AI detection patterns and reads like a real person typed it on their phone. Loads your voice profile from ~/.claude/voice-profile.md for personalized output. Pasting the output directly into a classifier does not reliably pass — see the README for the retype workflow that does.",
+      "source_sha256": "2f3e74bf260c202cf2aee34a5d1abbda35890b47238bbe3814b277ccd3ee4a31",
+      "source_path": "skills/humanize-ig/SKILL.md",
+      "package_sha256": "536d60cb83de43cb9fcba9b60dea60b45faf24bb3705973eda8057ea0a881d2c",
+      "source_package": "Humanize Kit-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9484e97c2e26ad27b7936ee3304bd251d4d5038401c713f0d3cd93c735ef990": {
+      "description_zh": "依据保存的个人写作画像改写AI生成文字，使表达更接近用户本人；需先用 voice-profiler 建立画像。原作者声称可打断 Pangram、GPTZero、Copyleaks 的统计模式，但明确直接粘贴不保证通过检测。",
+      "source": "AI pattern interrupter — rewrites AI-generated text to break the statistical patterns detectors (Pangram, GPTZero, Copyleaks) key on, then re-renders in YOUR authentic voice from a saved profile. Requires a voice profile (generate one with /voice-profiler). Use when the user wants to humanize, de-AI, or rewrite AI output to sound like them. Pasting the output directly into a classifier does not reliably pass; see the kit's README for the verbal/manual-retype workflow that does.",
+      "source_sha256": "e9484e97c2e26ad27b7936ee3304bd251d4d5038401c713f0d3cd93c735ef990",
+      "source_path": "skills/humanize/SKILL.md",
+      "package_sha256": "536d60cb83de43cb9fcba9b60dea60b45faf24bb3705973eda8057ea0a881d2c",
+      "source_package": "Humanize Kit-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7559a1e48519f0f3fa5a8bb16214006b5f3892f26677fd47f985295d913f914": {
+      "description_zh": "通过互动访谈和真实写作样本分析个人表达风格，生成供 humanize 使用的写作画像文件，适用于建立个人声音或首次缺少画像时。",
+      "source": "Interactive writing voice profiler — interviews you about your writing style and analyzes your real writing samples to generate a voice profile file for use with /humanize. Run this once, then every piece of humanized content sounds like YOU. Trigger on \"voice profile,\" \"build my voice,\" \"writing voice,\" \"how do I sound,\" or before first use of /humanize when no profile exists.",
+      "source_sha256": "c7559a1e48519f0f3fa5a8bb16214006b5f3892f26677fd47f985295d913f914",
+      "source_path": "skills/voice-profiler/SKILL.md",
+      "package_sha256": "536d60cb83de43cb9fcba9b60dea60b45faf24bb3705973eda8057ea0a881d2c",
+      "source_package": "Humanize Kit-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a6cfff000dfae63e32d9fb043061820b3385f9d28180824bd26213b12b3a820c": {
+      "description_zh": "在不改变原意的前提下，将带AI腔的文字改为更接近作者的表达，处理刻意对比、模板开场结尾、强凑三项、过量破折号、夸大宣传、固定AI词语与填充内容，依据 Wikipedia 的AI写作迹象。",
+      "source": "Rewrite AI-sounding text so it reads like the writer without changing what it says.\nUse when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line\nclosers, staged openers, forced triads, dashes everywhere, inflated claims, sales\nlanguage, stock AI words, bold labels, or filler. Based on Wikipedia's \"Signs of AI writing.\"",
+      "source_sha256": "a6cfff000dfae63e32d9fb043061820b3385f9d28180824bd26213b12b3a820c",
+      "source_path": "SKILL.md",
+      "package_sha256": "57b8b16c39287d7b8d58976ba9668b50aadbfc0bf810d40c058fecb13227ec5c",
+      "source_package": "Humanizer-3.0.0-v2 (1).zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27386fd7af0149343c7c69b32577f6f09c91230f5ef5d2069dd1bee6415f5116": {
+      "description_zh": "在 Hunter 创建并运行邮件拓客序列，配置跟进步骤和模板、从线索添加收件人，支持启动、暂停、恢复及查看效果统计。",
+      "source": "Builds and runs email outreach sequences end to end — create a sequence, add follow-up steps and message templates, add recipients from your leads, then start, pause, resume, or check its stats. Use when the user wants to set up outreach, build an email sequence, add recipients, launch a drip, or check sequence performance.",
+      "source_sha256": "27386fd7af0149343c7c69b32577f6f09c91230f5ef5d2069dd1bee6415f5116",
+      "source_path": "skills/build-sequences/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50bf354de4dd1b8104a19845a282e40a798d481d31af6fc8f495d68837dc2212": {
+      "description_zh": "查询 Hunter 账号的套餐、剩余额度与使用情况，回答可用积分、当前计划及配额消耗问题。",
+      "source": "Reports the Hunter account's plan, remaining credits, and usage. Use when the user asks how many credits they have left, what plan they're on, or how much of their quota they've used.",
+      "source_sha256": "50bf354de4dd1b8104a19845a282e40a798d481d31af6fc8f495d68837dc2212",
+      "source_path": "skills/check-usage/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "060e6a26ea4204250d784da8c44d1dde8c37704f893379d29c730cd46b7ec38a": {
+      "description_zh": "根据公司域名获取行业、规模、地点和简介等详细信息，支持公司背景查询与资料补充。",
+      "source": "Retrieves detailed company information including industry, size, location, and description from a domain name. Use when the user asks about a company, wants company details, or says \"tell me about [company]\".",
+      "source_sha256": "060e6a26ea4204250d784da8c44d1dde8c37704f893379d29c730cd46b7ec38a",
+      "source_path": "skills/company-enrichment/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a938500bc6dfb150273451516cced71476272b3c00e410e14d666bb034e2ed7": {
+      "description_zh": "在 Hunter 保存公司并组织公司清单与文件夹，支持增删成员、清单管理及公司批量复制、移动和删除，适用于目标客户名单整理。",
+      "source": "Saves companies and organizes them into Hunter company lists — save a company, add/remove companies to lists, create and manage lists and folders, and bulk copy/move/delete companies. Use when the user wants to save companies from a search, build a target-account list, or organize companies into lists and folders.",
+      "source_sha256": "7a938500bc6dfb150273451516cced71476272b3c00e410e14d666bb034e2ed7",
+      "source_path": "skills/company-lists/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63e873884c9f15e0b59258b9a5ad0ebee80aea25e29d06b04f0a78e6c92126d9": {
+      "description_zh": "按行业、规模、地区和技术等条件发现公司，估算可用联系人数量并管理保存的搜索，帮助在消耗积分前确定拓客批次规模；原说明称浏览免费。",
+      "source": "Finds companies matching criteria (industry, size, location, technologies), estimates how many contacts exist across them, and manages saved searches. Use when the user wants to find companies, build a target-account list, or size a prospecting batch before spending credits. Browsing is free.",
+      "source_sha256": "63e873884c9f15e0b59258b9a5ad0ebee80aea25e29d06b04f0a78e6c92126d9",
+      "source_path": "skills/discover/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb10aa144d57cf04a19f1c678f8991417a4d9bba094b3084ebf405c425626e75": {
+      "description_zh": "按公司域名查找公开可用的邮箱与联系人，适用于寻找公司员工、域名联系人或组织邮箱。",
+      "source": "Finds all publicly available email addresses and contacts at a company domain. Use when the user asks who works at a company, wants to find contacts at a domain, or needs email addresses for an organization.",
+      "source_sha256": "eb10aa144d57cf04a19f1c678f8991417a4d9bba094b3084ebf405c425626e75",
+      "source_path": "skills/domain-search/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61b1697edfa6bc6c98b03fbe8ea610bab5a48ecc9af863c624be1464b644dc93": {
+      "description_zh": "根据姓名与公司域名查找职业邮箱，帮助定位指定公司人员的联系方式。",
+      "source": "Finds a professional email address from a person's name and company domain. Use when the user asks to find someone's email, look up a contact's email address, or needs to reach a specific person at a company.",
+      "source_sha256": "61b1697edfa6bc6c98b03fbe8ea610bab5a48ecc9af863c624be1464b644dc93",
+      "source_path": "skills/email-finder/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a19e81f0b36e919ee6fd64174df4cc5f7438ca705b1035f565096920b183ce49": {
+      "description_zh": "通过 DNS 与 SMTP 检查邮箱是否可投递，适用于发送前验证地址有效性及投递可能性。",
+      "source": "Verifies whether an email address is deliverable by checking DNS and SMTP records. Use when the user wants to check if an email is valid, verify an email address, or assess deliverability before sending.",
+      "source_sha256": "a19e81f0b36e919ee6fd64174df4cc5f7438ca705b1035f565096920b183ce49",
+      "source_path": "skills/email-verifier/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9457ae85268391f99af551d3c275fce5d2f0541875bc16cf7665dbfbfa960966": {
+      "description_zh": "创建整理 Hunter 线索清单，从联系人或搜索结果填充、合并、收藏并归入文件夹，支持搜索结果保存和名单清理。",
+      "source": "Creates and organizes Hunter leads lists — build a list from contacts or a search, populate it, merge lists, favorite them, and group them into folders. Use when the user wants to build a lead list, save search results to Hunter, organize contacts into lists, or tidy up their lists and folders.",
+      "source_sha256": "9457ae85268391f99af551d3c275fce5d2f0541875bc16cf7665dbfbfa960966",
+      "source_path": "skills/lead-lists/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16fa0d403b446844199f691df444190e8a88229019560a2ff0117554e4b3d0c6": {
+      "description_zh": "在 Hunter 创建、查询、更新或删除单条线索，添加标签及自定义属性，适用于联系人编辑与线索库整理。",
+      "source": "Manages individual leads in Hunter — create, look up, update, or delete leads, tag them, and set custom attributes. Use when the user wants to add or edit a lead, tag contacts, organize leads with custom fields, or clean up their lead database.",
+      "source_sha256": "16fa0d403b446844199f691df444190e8a88229019560a2ff0117554e4b3d0c6",
+      "source_path": "skills/manage-leads/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6870bd2eb7d4a48a2da3885a0ab8d10896d948e5b7e6d8c0e91f9bec678e5f21": {
+      "description_zh": "根据邮箱补充个人姓名、职位、公司和社交资料，适用于已有邮箱的联系人背景查询与信息完善。",
+      "source": "Retrieves detailed information about a person from their email address, including name, position, company, and social profiles. Use when the user asks about a person, wants to enrich a contact, or needs more details about someone whose email they have.",
+      "source_sha256": "6870bd2eb7d4a48a2da3885a0ab8d10896d948e5b7e6d8c0e91f9bec678e5f21",
+      "source_path": "skills/person-enrichment/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cac98236f585633d721d2cad3be7ab9c35526017ac0da32f34b0bbd903e88d37": {
+      "description_zh": "串联公司发现、联系人搜索、邮箱验证与资料补充，完成 B2B 潜客名单建设、线索筛选及完整拓客流程。",
+      "source": "Runs end-to-end B2B prospecting by chaining company discovery, contact search, email verification, and enrichment. Use when the user wants to build a prospect list, find and qualify leads, or run a full prospecting pipeline.",
+      "source_sha256": "cac98236f585633d721d2cad3be7ab9c35526017ac0da32f34b0bbd903e88d37",
+      "source_path": "skills/prospecting/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d864e35edba0c6d36313e4b7fe8e02a634f32315e8176874d505f88608658040": {
+      "description_zh": "将 Hunter 线索推送到已连接的 HubSpot、Salesforce、Pipedrive 等CRM，支持名单同步及联系人导出。",
+      "source": "Pushes Hunter leads to a connected CRM (e.g. HubSpot, Salesforce, Pipedrive). Use when the user wants to sync leads to their CRM, export contacts to HubSpot/Salesforce, or send a list to their connected sales tool.",
+      "source_sha256": "d864e35edba0c6d36313e4b7fe8e02a634f32315e8176874d505f88608658040",
+      "source_path": "skills/push-to-crm/SKILL.md",
+      "package_sha256": "fc4156ada48bf6f761031104a928a2aa29b11ba6248474b6499566c050082d11",
+      "source_package": "Hunter-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6387418e9581b599a1aedcc6bbcdc13074fedaaf2363b7335ca2bdcfbc17f2dd": {
+      "description_zh": "通过 HYBRD MCP 汇集运动员训练计划、历史、日志、个人资料及穿戴设备数据，记录和调整训练、查看成绩或1RM、安排减量与比赛周、搜索动作和制定力量或耐力项目，并管理设备连接、订阅及账号查询。",
+      "source": "Use for any fitness, training, or workout question. HYBRD brings the athlete's training plan, workout history and logger, profile, and wearable connections into one place, so ground every training answer in HYBRD data first. Use when the athlete asks to log a workout, follow a training plan, train for HYROX, a marathon or triathlon, check benchmarks, PRs or 1RM, connect Apple Watch, Garmin, WHOOP, COROS, Oura, Fitbit, Hevy or other wearables, complete today's session, move or edit a scheduled workout, create a lifting, running, cycling, rowing or swim session, build a gym program, plan a deload or race week, search exercises, review workout history, subscribe to HYBRD, or ask what to train next or which account is connected. HYBRD MCP makes it easy to manage and execute fitness goals, and makes you an effective coach: connected wearable data, structured programming, and workout logging in one place.",
+      "source_sha256": "6387418e9581b599a1aedcc6bbcdc13074fedaaf2363b7335ca2bdcfbc17f2dd",
+      "source_path": "skills/hybrd-mcp/SKILL.md",
+      "package_sha256": "77169419c93956f3caccc0f196cb233d4c5a741c7cca02992ca34189949cef02",
+      "source_package": "HYBRD-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ea619f5b42a0e2565087ecbe3eb1823c1df503714c5bff386988db2c003753a": {
+      "description_zh": "通过 Hydrant MCP 在工作区查询处理问题、活动、阻塞、子问题、标签、项目、里程碑、周期和连接状态，强调依据实际数据，避免猜测、覆盖或夸大结果。",
+      "source": "Work inside a Hydrant workspace through its MCP tools without guessing, overwriting or overstating. Use when the user asks about Hydrant issues, activity, blockers, sub-issues, labels, projects, milestones, cycles or the Hydrant MCP connection, or when a Hydrant server is connected and the task touches its data.",
+      "source_sha256": "7ea619f5b42a0e2565087ecbe3eb1823c1df503714c5bff386988db2c003753a",
+      "source_path": "skills/hydrant/SKILL.md",
+      "package_sha256": "ed307203e2d8246ff98586eaae45669bf63100999903df997a0f2a38a55985d5",
+      "source_package": "Hydrant-0.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b69ca534970b41793c0d2013ea81b14abf49eb42f4118f2e0d95f44b0e9ef796": {
+      "description_zh": "配置 HYPD 与广告账号连接，处理尚未接入、认证错误或首次使用的设置问题。",
+      "source": "Connect HYPD and your ad accounts. Use when HYPD is not connected yet, a HYPD tool returns an authentication error, or the user asks how to set up or start using HYPD.",
+      "source_sha256": "b69ca534970b41793c0d2013ea81b14abf49eb42f4118f2e0d95f44b0e9ef796",
+      "source_path": "skills/hypd-getting-started/SKILL.md",
+      "package_sha256": "17704c46e1106c9d1dfca7a097a665e4f6a3b4719cba139b011723b0ca65ea4b",
+      "source_package": "HYPD AI - Paid Ads & Analytics-1.2.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38983ab42d9646f64eb1e9ab8463c257a09b25a0458377efcc03847dcd237d18": {
+      "description_zh": "介绍 HYPD 支持的广告平台、分析功能和斜杠命令，帮助理解能力并选择适合任务的入口。",
+      "source": "What the HYPD plugin can do — platforms, analyses and slash commands. Use when the user asks what HYPD is, what it can do, or which command fits their task.",
+      "source_sha256": "38983ab42d9646f64eb1e9ab8463c257a09b25a0458377efcc03847dcd237d18",
+      "source_path": "skills/hypd-overview/SKILL.md",
+      "package_sha256": "17704c46e1106c9d1dfca7a097a665e4f6a3b4719cba139b011723b0ca65ea4b",
+      "source_package": "HYPD AI - Paid Ads & Analytics-1.2.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eaccd68c71a8238ba8e11064b8bdd9f8519bf3decbb642cdcac48be2c01461e7": {
+      "description_zh": "说明 HYPD 工具的调用方式及必须遵守的约束，适用于会话中首次调用前的操作准备。",
+      "source": "How HYPD's tools work and the invariants to respect when calling them. Load before the first HYPD tool call in a session.",
+      "source_sha256": "eaccd68c71a8238ba8e11064b8bdd9f8519bf3decbb642cdcac48be2c01461e7",
+      "source_path": "skills/hypd-tools/SKILL.md",
+      "package_sha256": "17704c46e1106c9d1dfca7a097a665e4f6a3b4719cba139b011723b0ca65ea4b",
+      "source_package": "HYPD AI - Paid Ads & Analytics-1.2.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11f245472d4fc166c7d0703202beaae7da3cbf7c2b4d0efe30cb1956d2bf99bc": {
+      "description_zh": "审查代码、差异、分支、PR或系统的正确性、风险、安全、性能及可维护性。",
+      "source": "Use when reviewing code, a diff, branch, pull request, or system for correctness, risk, security, performance, or maintainability.",
+      "source_sha256": "11f245472d4fc166c7d0703202beaae7da3cbf7c2b4d0efe30cb1956d2bf99bc",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "5ad79c00f871a0ba8e2117abbb3916ae3be3b4b262e1d573b88ddaff9e446535",
+      "source_package": "hyperflow-6.6.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0da2f8dfa267ac3f43c4fde82eba0d01ce7a089fa3fb8b5f76e8d0aeb38c7ffc": {
+      "description_zh": "在完成全面验证并通过明确的远程操作批准关卡后，提交、发布、推送或部署已完成的工作。",
+      "source": "Use when committing, releasing, pushing, or deploying completed work after full verification and an explicit remote-action gate.",
+      "source_sha256": "0da2f8dfa267ac3f43c4fde82eba0d01ce7a089fa3fb8b5f76e8d0aeb38c7ffc",
+      "source_path": "skills/deploy/SKILL.md",
+      "package_sha256": "5ad79c00f871a0ba8e2117abbb3916ae3be3b4b262e1d573b88ddaff9e446535",
+      "source_package": "hyperflow-6.6.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a707e9dc5acf92a2ae082b022118d274388d8949a41322c8644fcb2811f96ac0": {
+      "description_zh": "通过 Direct、Focused 或 Deep 路径实现明确的构建、修复、重构或已批准任务文件。",
+      "source": "Use when implementing an explicit build, fix, refactor, or approved task file through the Direct, Focused, or Deep lane.",
+      "source_sha256": "a707e9dc5acf92a2ae082b022118d274388d8949a41322c8644fcb2811f96ac0",
+      "source_path": "skills/dispatch/SKILL.md",
+      "package_sha256": "5ad79c00f871a0ba8e2117abbb3916ae3be3b4b262e1d573b88ddaff9e446535",
+      "source_package": "hyperflow-6.6.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f511ec2b5f0ccf733ec2ba0d2f13ec119ddd1e048b8183e94193ecec37f4b253": {
+      "description_zh": "用 Markdown 与精确 Git 引用将已规划任务移交其他会话，或审查移交后返回的成果。",
+      "source": "Use when transferring a planned task to another session or reviewing work returned from one, with Markdown and exact Git refs.",
+      "source_sha256": "f511ec2b5f0ccf733ec2ba0d2f13ec119ddd1e048b8183e94193ecec37f4b253",
+      "source_path": "skills/handoff/SKILL.md",
+      "package_sha256": "5ad79c00f871a0ba8e2117abbb3916ae3be3b4b262e1d573b88ddaff9e446535",
+      "source_package": "hyperflow-6.6.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a5e41298c609074ab2c325fecdc7076fbfec88c931dfbdfbbed3b7933691098": {
+      "description_zh": "通过 Hyperflow 紧凑且可移植的编排核心，组织非简单工程任务的执行路径。",
+      "source": "Use when routing non-trivial engineering work through Hyperflow's compact, portable orchestration kernel.",
+      "source_sha256": "9a5e41298c609074ab2c325fecdc7076fbfec88c931dfbdfbbed3b7933691098",
+      "source_path": "skills/hyperflow/SKILL.md",
+      "package_sha256": "5ad79c00f871a0ba8e2117abbb3916ae3be3b4b262e1d573b88ddaff9e446535",
+      "source_package": "hyperflow-6.6.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2afad7f8a072ad64ca8dd1feecf3dfff7bafbe8f65c6c03e0d88af157c3efc8": {
+      "description_zh": "在实施前规划、设计、探索、界定范围或拆分工作。",
+      "source": "Use when the user asks to plan, design, explore, scope, or decompose work before implementation.",
+      "source_sha256": "d2afad7f8a072ad64ca8dd1feecf3dfff7bafbe8f65c6c03e0d88af157c3efc8",
+      "source_path": "skills/plan/SKILL.md",
+      "package_sha256": "5ad79c00f871a0ba8e2117abbb3916ae3be3b4b262e1d573b88ddaff9e446535",
+      "source_package": "hyperflow-6.6.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "94539b93b785260f7ba82a5bc372917cf9b95cac1b7944593c720c2e2a182ab8": {
+      "description_zh": "先确定根因，再诊断修复缺陷、回归、失败测试及无法解释的行为。",
+      "source": "Use when diagnosing or fixing a bug, regression, failing test, or unexplained behavior by establishing root cause before editing.",
+      "source_sha256": "94539b93b785260f7ba82a5bc372917cf9b95cac1b7944593c720c2e2a182ab8",
+      "source_path": "skills/trace/SKILL.md",
+      "package_sha256": "5ad79c00f871a0ba8e2117abbb3916ae3be3b4b262e1d573b88ddaff9e446535",
+      "source_package": "hyperflow-6.6.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "17895d8370f0e1eb1f799a00a6304912c03d2a41d2002fb374ac4c03d92a6e99": {
+      "description_zh": "通过 IAseguro 比较西班牙寿险、汽车、住房、丧葬、旅行、宠物、摩托车、电动滑板车和责任保险的价格，提供报价与保险公司比较；健康险交由 seguros-de-salud。",
+      "source": "Compara precios de seguros en España con IAseguro — vida, coche, hogar, decesos, viaje, mascotas, moto, patinete eléctrico y responsabilidad civil. Úsalo cuando el usuario quiera saber cuánto cuesta o cuánto pagaría por un seguro, pida una cotización o presupuesto, quiera comparar aseguradoras o encontrar el seguro más barato (\"cuánto cuesta\", \"compárame\", \"qué seguro es más barato\", \"how much is car insurance in Spain\"), aunque no nombre a IAseguro. Para seguros de salud usa el skill seguros-de-salud.",
+      "source_sha256": "17895d8370f0e1eb1f799a00a6304912c03d2a41d2002fb374ac4c03d92a6e99",
+      "source_path": "skills/comparar-seguros/SKILL.md",
+      "package_sha256": "4bd604fe863eb1ee8209d7df6c4882e6e6e20a5579028d838b92b2dc8098a724",
+      "source_package": "IAseguro-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1eaf23a2a8a4d138378c35a268f7cf8ab82469ff388b7419e3dfca58ef7bb2d6": {
+      "description_zh": "依据 IAseguro 知识库解释西班牙保险的保障、担保、限额和除外责任，支持寿险、健康、汽车、住房等险种的一般或指定公司条款及产品差异。",
+      "source": "Explica qué cubre un seguro en España con la base de conocimiento de IAseguro — coberturas, garantías, límites y exclusiones de pólizas de vida, salud, coche, hogar, decesos, viaje, mascotas, moto, patinete y responsabilidad civil, en general o de una aseguradora concreta. Úsalo cuando pregunten \"qué cubre\", \"qué incluye\", \"qué garantías tiene\", \"¿cubre X?\" o \"qué diferencia hay entre\" seguros o productos, aunque no nombren a IAseguro.",
+      "source_sha256": "1eaf23a2a8a4d138378c35a268f7cf8ab82469ff388b7419e3dfca58ef7bb2d6",
+      "source_path": "skills/explicar-coberturas/SKILL.md",
+      "package_sha256": "4bd604fe863eb1ee8209d7df6c4882e6e6e20a5579028d838b92b2dc8098a724",
+      "source_package": "IAseguro-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97a0e2119e02f721b21d26b3e2971bed226f021f7d6ad2ad9b8402edd0969f06": {
+      "description_zh": "通过 IAseguro 推荐比较西班牙私人健康险，涵盖医疗网络、报销或混合模式、自付额、牙科及生育保障，支持价格、适配性与具体产品保障查询。",
+      "source": "Recomienda y compara seguros de salud privados en España con IAseguro (Adeslas, Sanitas, DKV, Asisa, AXA, MAPFRE…) — cuadro médico, reembolso o mixta, con o sin copago, dental y maternidad. Úsalo cuando el usuario busque un seguro médico o de salud, pregunte cuál le conviene, cuánto cuesta o qué cubre uno concreto (\"seguro médico barato con dentista\", \"¿qué seguro de salud me conviene?\", \"private health insurance in Spain\").",
+      "source_sha256": "97a0e2119e02f721b21d26b3e2971bed226f021f7d6ad2ad9b8402edd0969f06",
+      "source_path": "skills/seguros-de-salud/SKILL.md",
+      "package_sha256": "4bd604fe863eb1ee8209d7df6c4882e6e6e20a5579028d838b92b2dc8098a724",
+      "source_package": "IAseguro-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9dea38124e0c577f0ae47ca5243a9207e06f12e936992fe3ec9490974e2b8c87": {
+      "description_zh": "正确解读 Idea Launch 市场测试的验证分数、等级、置信度和建议下一步，帮助判断继续测试或开发及未上线原因，避免夸大单次广告测试能证明的结论。",
+      "source": "Interpret an Idea Launch market read correctly — the validation score, band, confidence, and recommended next move — and report it without overstating what a single ad test proves. Use when the user asks how their Idea Launch test went, what a validation score or band means, whether a result is good, whether to build or keep testing, or why a run is not live yet.",
+      "source_sha256": "9dea38124e0c577f0ae47ca5243a9207e06f12e936992fe3ec9490974e2b8c87",
+      "source_path": "skills/reading-a-market-read/SKILL.md",
+      "package_sha256": "2d2e49bb8a7633186638eb702f8211a4c68cad21cbc537db5f8c5858ef4d0c23",
+      "source_package": "idea-launch-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33b7fd916eb6df99ee89350d94bacc58d6af6bf6327297394ccc9bf3d7a54584": {
+      "description_zh": "为 Idea Launch 产品创意测试编写可定向的具体简报、生成广告素材，并在消耗 Ad Run 前检查启动条件，适用于验证创意、已发布产品投放及启动阻塞排查。",
+      "source": "Set up an Idea Launch test well — write a brief specific enough to target against, generate ad creative, and check every gate before the user spends an Ad Run. Use when the user wants to validate a product idea, test whether something is worth building, get ads running for a product they already shipped, or asks what is blocking their Idea Launch test from starting.",
+      "source_sha256": "33b7fd916eb6df99ee89350d94bacc58d6af6bf6327297394ccc9bf3d7a54584",
+      "source_path": "skills/setting-up-an-idea-test/SKILL.md",
+      "package_sha256": "2d2e49bb8a7633186638eb702f8211a4c68cad21cbc537db5f8c5858ef4d0c23",
+      "source_package": "idea-launch-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "197f914fb1c5732aa1a980acd61df747d05bc814c60624edb9550f0245554f67": {
+      "description_zh": "确认 IDMP AI 可用性和可用数据，查看聊天会话、生成推荐问题或面板、依据提示创建分析或面板，并判断何时用 record 持久保存会话。",
+      "source": "IDMP AI skill. Use it to confirm AI availability and usable data, inspect chat sessions, generate recommended questions or panels, create analyses or panels from prompts, and decide when `record` should persist the session.",
+      "source_sha256": "197f914fb1c5732aa1a980acd61df747d05bc814c60624edb9550f0245554f67",
+      "source_path": "skills/idmp-ai/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54a52cc5babf4e574369e4edf22f8ef69a80e5be043f99d3530676de370385bb": {
+      "description_zh": "列举、搜索、阅读和恢复 IDMP 分析，并检查路径、触发类型、子模板与输出属性，为创建分析准备条件。",
+      "source": "IDMP analysis skill for listing, searching, reading, resuming, and preparing analysis create flows with path, trigger type, sub-template, and output-attribute checks.",
+      "source_sha256": "54a52cc5babf4e574369e4edf22f8ef69a80e5be043f99d3530676de370385bb",
+      "source_path": "skills/idmp-analysis/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96ce2353d76036200f141059ef29f2fa72db0a64a169e228d901104004d5660d": {
+      "description_zh": "读取写入 IDMP 元素注释，明确区分元素注释与事件注释。",
+      "source": "IDMP annotation skill. Use it to read and write element annotations while keeping element annotations separate from event annotations.",
+      "source_sha256": "96ce2353d76036200f141059ef29f2fa72db0a64a169e228d901104004d5660d",
+      "source_path": "skills/idmp-annotation/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "29981aa6c9a10e3518c14fecdb31db33e9940d65837d61c82f9d055dff70f155": {
+      "description_zh": "读取 IDMP 属性定义和值、查询历史、求值表达式、预留名称，并谨慎写入测试数据。",
+      "source": "IDMP attribute skill for reading definitions and values, checking history, evaluating expressions, reserving names, and safely writing test data.",
+      "source_sha256": "29981aa6c9a10e3518c14fecdb31db33e9940d65837d61c82f9d055dff70f155",
+      "source_path": "skills/idmp-attribute/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf890118169a8d651135f37ece8b078fde2f1beb9f3868b7f203c0d4339806f7": {
+      "description_zh": "列出和查看 IDMP 仪表盘、更新布局与顺序、为稳定仪表盘建立模板，并区分仪表盘和面板的生命周期。",
+      "source": "IDMP dashboard skill for listing dashboards, reading details, updating layout and order, templating stable dashboards, and keeping dashboard lifecycle separate from panel lifecycle.",
+      "source_sha256": "bf890118169a8d651135f37ece8b078fde2f1beb9f3868b7f203c0d4339806f7",
+      "source_path": "skills/idmp-dashboard/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fbe9c150a0f2deb15444a59cf278101ffe227ede1c29ca4ddb59cd2a5620554d": {
+      "description_zh": "检查 IDMP 可导出的根元素、查看导入导出记录并下载成果，区分包导出、文件下载和导入流程。",
+      "source": "IDMP data import/export skill. Use it to inspect exportable root elements, review import/export records, download artifacts, and distinguish package export, artifact download, and import flows.",
+      "source_sha256": "fbe9c150a0f2deb15444a59cf278101ffe227ede1c29ca4ddb59cd2a5620554d",
+      "source_path": "skills/idmp-data/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f59ebaa9956da32206cad73fcdcad015b9e1302907d2cdb4745e5f9fbf1c6d8": {
+      "description_zh": "列出检查 IDMP 数据源连接，在深入元数据前验证连通性，诊断数据库或表不可见问题。",
+      "source": "IDMP datasource skill. Use it to list and inspect connections, verify connectivity before deeper metadata reads, and diagnose database or table visibility issues instead of stopping at the connection list.",
+      "source_sha256": "4f59ebaa9956da32206cad73fcdcad015b9e1302907d2cdb4745e5f9fbf1c6d8",
+      "source_path": "skills/idmp-datasource/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f0aabb22993eca5c8d1828f949f891a955ca9a12523d377d200e049e036431e": {
+      "description_zh": "定位 IDMP elementId、解析业务根路径、浏览子元素，为后续分析或面板任务准备上下文。",
+      "source": "IDMP element skill for locating elementId, resolving business-root paths, browsing children, and preparing downstream analysis or panel work.",
+      "source_sha256": "3f0aabb22993eca5c8d1828f949f891a955ca9a12523d377d200e049e036431e",
+      "source_path": "skills/idmp-element/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "573a64620f001dc1a61283687f63a9506eb89917b0c183097b9b99995da971cf": {
+      "description_zh": "沿实际未确认事件流程列举、搜索、确认、重发和注释 IDMP 事件，并读取事件上下文。",
+      "source": "IDMP event skill for listing, searching, confirming, resending, annotating, and reading event context through the real unacknowledged-event workflow.",
+      "source_sha256": "573a64620f001dc1a61283687f63a9506eb89917b0c183097b9b99995da971cf",
+      "source_path": "skills/idmp-event/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73b0c721be11c5048155538d19e13521121ca300d2737e84de71ebca1dc16444": {
+      "description_zh": "检查 IDMP 全局通知配置、联系端点、模板、投递历史、模板级规则及测试发送行为。",
+      "source": "IDMP notification skill. Use it to inspect global notification config, contact points, templates, delivery history, template-level rules, and test-send behavior.",
+      "source_sha256": "73b0c721be11c5048155538d19e13521121ca300d2737e84de71ebca1dc16444",
+      "source_path": "skills/idmp-notification/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99cabd698146db1619a97145cbed001f0f9ed50d0e91d77fff2af393e1d90f36": {
+      "description_zh": "检查 IDMP OpenAPI 的路径、必填输入和生成命令，仅在模式及生成命令无法满足需求后采用原始 API。",
+      "source": "IDMP OpenAPI explorer skill. Use it to inspect schema paths, required inputs, and generated commands; fall back to raw API only after schema and generated commands are exhausted.",
+      "source_sha256": "99cabd698146db1619a97145cbed001f0f9ed50d0e91d77fff2af393e1d90f36",
+      "source_path": "skills/idmp-openapi-explorer/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee8582efab353c6c900ab7f3dc5c50ea23675586c5529e8c10bbb6622d4e7a0b": {
+      "description_zh": "列举查看 IDMP 面板，创建验证面板查询，并区分面板生命周期与仪表盘中的放置关系。",
+      "source": "IDMP panel skill for listing panels, reading details, creating and validating panel queries, and separating panel lifecycle from dashboard placement.",
+      "source_sha256": "ee8582efab353c6c900ab7f3dc5c50ea23675586c5529e8c10bbb6622d4e7a0b",
+      "source_path": "skills/idmp-panel/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b911dc53e0e04e3b3d6357b09f35b1523c9d9c73db5baa7cd0348ae66d98de65": {
+      "description_zh": "提供 IDMP CLI 共用规则，选择元素或模板模式、解析业务根 rootElementId、确认有风险的写入并验证结果。",
+      "source": "Shared IDMP CLI rules for choosing element mode vs template mode, resolving business-root rootElementId, acknowledging risky writes, and verifying results.",
+      "source_sha256": "b911dc53e0e04e3b3d6357b09f35b1523c9d9c73db5baa7cd0348ae66d98de65",
+      "source_path": "skills/idmp-shared/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56db5927d191274872953fc9dc26a2241ac60a68133d47de80a9bda6b1429cf6": {
+      "description_zh": "读取 IDMP 元素模板、属性模板、子模板和触发类型，检查创建名称，避免混淆模板模式与实际元素模式。",
+      "source": "IDMP template skill for reading element templates, template attributes, sub-templates, trigger types, and create-safe names without mixing template mode with live element mode.",
+      "source_sha256": "56db5927d191274872953fc9dc26a2241ac60a68133d47de80a9bda6b1429cf6",
+      "source_path": "skills/idmp-template/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1f175485a01728877313ac0de38bec7c469c32aa7075bb066ce1221fdca95ed": {
+      "description_zh": "检查 IDMP 计量单位类别及类别内单位，支持独立单位查询、搜索和换算，明确区分 get 与 get-get。",
+      "source": "IDMP unit-of-measure skill. Use it to inspect UOM classes, class-scoped units, free UOM lookup, search, and conversion, while keeping `get` and `get-get` clearly separated.",
+      "source_sha256": "d1f175485a01728877313ac0de38bec7c469c32aa7075bb066ce1221fdca95ed",
+      "source_path": "skills/idmp-uom/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "394df835cfd2c636a162f4e66024d46deaf3802b19133727ba428d2ca2c64005": {
+      "description_zh": "检查 IDMP 用户、角色、权限组、可分配角色及已授予角色，区分当前用户读取与管理员分页用户清单。",
+      "source": "IDMP user-access skill. Use it to inspect users, roles, permission groups, assignable roles, and granted roles while keeping current-user reads separate from admin paginated user lists.",
+      "source_sha256": "394df835cfd2c636a162f4e66024d46deaf3802b19133727ba428d2ca2c64005",
+      "source_path": "skills/idmp-user-access/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc8ea99c0be340afcff9af7d40ac635f2710da285f0e31b50111d1a1d5383749": {
+      "description_zh": "准备 IDMP 事件模板并创建 Event 触发分析，通过回读及 Running 状态验证告警创建成功，不主动触发告警。",
+      "source": "IDMP alert creation workflow. Prepare the event template, create the Event-trigger analysis, and treat reread plus Running as success without actively triggering alerts.",
+      "source_sha256": "fc8ea99c0be340afcff9af7d40ac635f2710da285f0e31b50111d1a1d5383749",
+      "source_path": "skills/idmp-workflow-alert-create/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c291e6aa72eb6b4d91458e07c4f32e579a48c444622095ab7cd102301c32d02": {
+      "description_zh": "沿 IDMP 告警处理链排查事件数量与详情、上下文、确认、重发、注释、通知规则和投递历史。",
+      "source": "IDMP alert debugging workflow. Walk the operator chain from event count and detail to context, acknowledgement, resend, annotations, notify rules, and delivery history.",
+      "source_sha256": "2c291e6aa72eb6b4d91458e07c4f32e579a48c444622095ab7cd102301c32d02",
+      "source_path": "skills/idmp-workflow-alert-debug/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f01d11a770265274fa824df292cdc6c421883ba2642b4f72772f17e8034b617": {
+      "description_zh": "组织 IDMP 分析创建流程，解析模式、归属、触发类型与输出属性，生成创建参数并在创建后验证、恢复及清理。",
+      "source": "IDMP analysis creation workflow. Resolve mode, owner, trigger types, output attributes, creation payload, post-create verification, resume, and cleanup.",
+      "source_sha256": "3f01d11a770265274fa824df292cdc6c421883ba2642b4f72772f17e8034b617",
+      "source_path": "skills/idmp-workflow-analysis-create/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8f944d83ba128573aa6fced0910c37df84679f8c2c7df23776146c6fba696c0": {
+      "description_zh": "在 IDMP 建模或数据摄取写入前，读取根元素、路径、模板、属性模板、单位、数据源及记录可见性，建立资产初始化上下文。",
+      "source": "IDMP asset bootstrap workflow. Read roots, paths, templates, attribute templates, UOMs, datasources, and record visibility before any modeling or ingestion write.",
+      "source_sha256": "c8f944d83ba128573aa6fced0910c37df84679f8c2c7df23776146c6fba696c0",
+      "source_path": "skills/idmp-workflow-asset-bootstrap/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e7f685cd203b3ba2c18a18c4ecfbb0485d26d6e1a4571f0ad3a8c9254b34e64e": {
+      "description_zh": "组织 IDMP 数据导入导出，区分包导入导出与数据源 CSV 导入，先读取再谨慎写入，并在每次写入后回读记录。",
+      "source": "IDMP data import and export workflow. Separate package import or export from datasource CSV import, read first, write carefully, and reread records after every write.",
+      "source_sha256": "e7f685cd203b3ba2c18a18c4ecfbb0485d26d6e1a4571f0ad3a8c9254b34e64e",
+      "source_path": "skills/idmp-workflow-data-import-export/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bfceb87a3ab9c7c5c94680657de158f513b55523f510c37ea118ec5f6d6da40b": {
+      "description_zh": "诊断 IDMP 数据源连接，探测连通性、检查数据库元数据及模型映射，在每次探测或写入后回读验证。",
+      "source": "IDMP datasource diagnosis workflow. Read the connection, probe connectivity, inspect databases and metadata, compare model mappings, and reread after every probe or write.",
+      "source_sha256": "bfceb87a3ab9c7c5c94680657de158f513b55523f510c37ea118ec5f6d6da40b",
+      "source_path": "skills/idmp-workflow-datasource-diagnose/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea7b6a06d25cb829a1d9bdc31a504ab80902937516d1da8f2989640577a6ca34": {
+      "description_zh": "组织 IDMP 面板构建，确认归属、预留名称、创建对象、验证查询与SQL输出、放入仪表盘，并安全清理。",
+      "source": "IDMP panel build workflow. Resolve owner, reserve names, create panel objects, verify query and SQL output, place panels into dashboards, and clean up safely.",
+      "source_sha256": "ea7b6a06d25cb829a1d9bdc31a504ab80902937516d1da8f2989640577a6ca34",
+      "source_path": "skills/idmp-workflow-panel-build/SKILL.md",
+      "package_sha256": "d423dc847aa4f55b2e41cac7e474af32b726e1c329c36bd278ed0b7f87628ef3",
+      "source_package": "idmp-plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "edeb3719222f359a501a3e1cd26c000e5fb45e9aa2d4ba7a4a69b135d61290b4": {
+      "description_zh": "使用 IFG 账号登录连接税务资料 MCP 服务，并检查连接是否正常。",
+      "source": "Connect the IFG tax sources MCP server (sign-in with an IFG account) and check that it works.",
+      "source_sha256": "edeb3719222f359a501a3e1cd26c000e5fb45e9aa2d4ba7a4a69b135d61290b4",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "66d3ae708ee642d47db58ec9a135611edaa7410dd55461e5e6ffa01950220fec",
+      "source_package": "IFG-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b656dbd4610044f5c3236955a0963c6fb48fbff80ce0afc41869759026bb72dd": {
+      "description_zh": "依据 IFG 官方资料研究法国、卢森堡、瑞士、比利时、德国、摩纳哥、安道尔、意大利税法，以及税收协定、欧盟税法和 OECD 指引，查找税务事件发生时适用文本并引用官方链接。",
+      "source": "Research tax law with IFG official sources — find the right text, read it at the date of the tax event, and cite its official link. Use for any question on French, Luxembourg, Swiss, Belgian, German, Monegasque, Andorran or Italian tax law, tax treaties, EU tax law or OECD guidance.",
+      "source_sha256": "b656dbd4610044f5c3236955a0963c6fb48fbff80ce0afc41869759026bb72dd",
+      "source_path": "skills/tax-research/SKILL.md",
+      "package_sha256": "66d3ae708ee642d47db58ec9a135611edaa7410dd55461e5e6ffa01950220fec",
+      "source_package": "IFG-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5274599fc0493798b8577490d38d2fcdcda092bc17a8f54edf7a671ae983841": {
+      "description_zh": "通过 iHatePosting MCP 起草、检查、排程和发布社交帖子，默认生成草稿，覆盖 Bluesky、X、LinkedIn、Facebook、Instagram、Threads、Pinterest、TikTok、YouTube、Mastodon、Telegram、Discord、Tumblr和Slack，支持改期、重试与效果查询。",
+      "source": "Draft, check, schedule and publish social posts through the iHatePosting MCP server, drafts by default, to 14 networks (Bluesky, X, LinkedIn, Facebook, Instagram, Threads, Pinterest, TikTok, YouTube, Mastodon, Telegram, Discord, Tumblr, Slack). Use when the user asks to post, schedule, draft, reschedule or retry a post, or asks how posts did.",
+      "source_sha256": "a5274599fc0493798b8577490d38d2fcdcda092bc17a8f54edf7a671ae983841",
+      "source_path": "clawhub/ihateposting/SKILL.md",
+      "package_sha256": "803b55eb3125abc34b2ca35dd240c227c47415259f79e12a29223339fd999789",
+      "source_package": "iHatePosting-0.5.6-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b16e6fc85965b3be1723b62e66b7a887b126bd840d3972af4713709a499526a6": {
+      "description_zh": "通过 iHatePosting MCP 工具为14个社交平台起草、检查、排程、发布和跨平台发帖，支持改期、重试、待发布内容及效果查询。",
+      "source": "Draft, check, schedule and publish social posts to Bluesky, X, LinkedIn, Facebook, Instagram, Threads, Pinterest, TikTok, YouTube, Mastodon, Telegram, Discord, Tumblr and Slack through the iHatePosting MCP tools. Use when the user asks to post, cross-post, schedule, draft, reschedule or retry a post, or to see what is going out and how it did.",
+      "source_sha256": "b16e6fc85965b3be1723b62e66b7a887b126bd840d3972af4713709a499526a6",
+      "source_path": "skills/ihateposting/SKILL.md",
+      "package_sha256": "803b55eb3125abc34b2ca35dd240c227c47415259f79e12a29223339fd999789",
+      "source_package": "iHatePosting-0.5.6-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69d430e49cd3ea81fde423b9b59aa86fc90ef1597e2f66788dd6d044a683eea5": {
+      "description_zh": "通过 ilo CLI 在可复现的容器开发环境运行构建、测试和工具，适用于 ilo、devcontainer、Dockerfile、devfile或compose项目及宿主缺少工具链的情况，提供多语言缓存方案并用 remote-user 保持文件归属。",
+      "source": "Run builds, tests, and other tooling inside a reproducible, containerized dev environment via the `ilo` CLI instead of on the host. Use this whenever a project relies on ilo, devcontainers, or container-based build environments — it has a `.ilo.rc` / `.ilo/ilo.rc`, `dev/` argument files, a `Containerfile`/`Dockerfile`, a `devcontainer.json`, a `devfile.yaml`, or a compose file — or when a command needs a toolchain the host is missing (no local JDK, Node, Go, Rust, Maven, etc.) and the work should happen in a container dev environment. Includes ready-to-use dependency-cache recipes for many languages and build tools, and how to keep files written in the container owned by you on the host (the `--remote-user` flag) when an image runs as root.",
+      "source_sha256": "69d430e49cd3ea81fde423b9b59aa86fc90ef1597e2f66788dd6d044a683eea5",
+      "source_path": "skills/ilo/SKILL.md",
+      "package_sha256": "f628b6f8315111bc63ccfcc1dbbdb6262856fda0d283d0716d95fc33c0ea90e6",
+      "source_package": "ilo-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "949cd63e1543cff193c4d3ae9a766700501f680bc0f88cc6e0d67e0f81e53e55": {
+      "description_zh": "开展图像和视觉研究，从 Openverse、Wikimedia Commons及艺术馆开放授权库寻找参考，把真实网站截图整理成联系表和情绪板，并测量在线网站配色与字体，适用于设计风格、材质及竞品研究。",
+      "source": "Image deep research and visual research - use when a question is better answered by looking than by reading. Finds reference images on open, licensed collections (Openverse, Wikimedia Commons, the Art Institute of Chicago, the Met), renders real websites into screenshot contact sheets, builds a moodboard, measures a live site's palette and typefaces, and reads every picture as a picture. For design references, styles, palettes, typefaces, materials, competitors and moodboards.",
+      "source_sha256": "949cd63e1543cff193c4d3ae9a766700501f680bc0f88cc6e0d67e0f81e53e55",
+      "source_path": "skills/image-deep-research/SKILL.md",
+      "package_sha256": "aef3909248c15626736aa4d80c3b8e946f301ad37e3eef337fab647553e6f456",
+      "source_package": "Image Deep Research-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96e6e5143a7f38e7f4d4021f689a3af4856091a3164c98066a22739bdbc0626c": {
+      "description_zh": "为 Imagen、Gemini Image、GPT Image、DALL·E、Stable Diffusion、Flux等文生图模型编写优化结构化提示，支持API和程序生成插画、照片、标志、海报、样机、信息图与UI图，以及低质量输出排查。",
+      "source": "Best practices for prompting any text-to-image model (e.g. Imagen, Gemini Image, GPT Image, DALL·E, Stable Diffusion, Flux, Ideogram, Leonardo, Midjourney) to produce predictable, production-quality images. Use this skill whenever the task involves calling an image generation API, generating images programmatically, writing or revising prompts for image models, producing illustrations / photos / logos / posters / mockups / infographics / UI shots with AI, or debugging poor image output. Apply this even when the user just says \"generate an image of X\" — well-structured prompts dramatically outperform terse ones across every current model, and the cost of a bad prompt is almost always paid in retries.",
+      "source_sha256": "96e6e5143a7f38e7f4d4021f689a3af4856091a3164c98066a22739bdbc0626c",
+      "source_path": "skills/image-generation/SKILL.md",
+      "package_sha256": "e6d8adb06e766708df42a9f8c77ee001444b32f4f7a5d39944c2a0cfa0afae00",
+      "source_package": "image-generation-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59f3151d352c1d808c443f9ffe5e9bba69c777ed2d0c62b1604ea2d4e0336773": {
+      "description_zh": "在已安装 Imager X 的 Craft CMS 项目中开发审查图像转换与响应式标记，涵盖 Power Pack、快捷和命名转换、自动生成、参数、srcset与sizes、现代格式、占位与颜色、配置、转换器差异及GraphQL查询指令；不用于未安装插件的原生转换或ImageOptimize。",
+      "source": "Imager X — the image transform, optimization and manipulation plugin for Craft CMS, by SpaceCat Ninja. Covers responsive image markup with the Power Pack (pppicture/ppimg/ppplaceholder/pptransform), the quick transform syntax, named transforms, automatic generation of transforms, the full transform parameter set, srcset and sizes best practices, modern formats (WebP/AVIF/JPEG XL), placeholders and colors, imager-x config files, the feature differences between transformers, and Imager X's GraphQL surface (the imagerTransform query and AssetInterface field, and the imagerTransform/imagerSrcset directives). ALWAYS load when writing, editing, reviewing or debugging image transforms or responsive image markup in a Craft project that has Imager X installed. Triggers on: craft.imagerx, craft.imager, transformImage, pppicture, ppimg, ppplaceholder, pptransform, |srcset, imager-x.php, imager-x-transforms.php, imager-x-generate.php, imager-x-power-pack.php, named transform, quick syntax, fillTransforms, fillInterval, fillAttribute, autoFillCount, transformDefaults, configOverrides, generateFlags, displayName, blurhash, blurup, dominantColor, silhouette, lazysizes, lazysizesClass, imagerSystemPath, imagerUrl, safeFileFormats, optimizeType, optimizers, filenamePattern, hashPath, addVolumeToPath, allowUpscale, resizeFilter, smartResizeEnabled, transformerParams, transformerConfig, imagerOverrides, combining transformers, adapterParams, imgixParams, customEncoderOptions, croponly, letterbox, cropZoom, preEffects, effects, watermark, trim, pad, frames, getDominantColor, getColorPalette, getPercievedBrightness, serverSupportsWebp, serverSupportsAvif, clientSupports, isAnimated, base64Pixel, imager-x/generate, imager-x/clear-caches, imager-x/clean, imgix transformer, gumlet transformer, imagekit transformer, imageboss transformer, cloudflareimages transformer, awsserverless transformer, bunny transformer, imgixdownload, imager-x-gumlet-transformer, sourceIsWebProxy, useCloudSourcePath, defaultProfile, signKey, autoPurge, responsive images, srcset, sizes attribute, art direction, picture element, LCP image, fetchpriority, CLS, focal point, object-position, image placeholder, graphql, GraphQL transforms, imagerTransform, imagerSrcset, @imagerTransform, @imagerSrcset, ImagerTransformedImageInterface, safeFileFormats in graphql, headless Craft images, plus verbatim symptoms: 'transform returns null', 'srcset is empty', 'foreach() argument must be of type array|object, string given', 'Unsupported operand types: string / int', 'position has no effect', 'quality is ignored', 'webp quality not applied', 'placeholder division by zero', 'auto generation is not generating', 'transforms regenerate on every request', 'wrong source is picked', 'sources are in the wrong order', 'ratio is ignored', 'getPath returns empty', 'getSize returns empty', 'Unknown directive imagerTransform', 'Cannot query field imagerTransform', 'graphql transform returns null', 'base64 is empty in graphql', 'the directive does nothing'. Do NOT trigger for Craft's native asset transforms (asset.getUrl({width}), craft\\\\elements\\\\Asset transforms, imageTransforms in project config) when Imager X is not installed, or for ImageOptimize.",
+      "source_sha256": "59f3151d352c1d808c443f9ffe5e9bba69c777ed2d0c62b1604ea2d4e0336773",
+      "source_path": "skills/imager-x/SKILL.md",
+      "package_sha256": "8096d7380552dd57727d412a434a475a125a9ffc21f13e9459b29e03159af96c",
+      "source_package": "imager-x-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a7d22a66a69737bb0f2c8eb91c5b446da5d45f0a30bcaee1378fbd2976e39e1": {
+      "description_zh": "在决策发布前向 iMario 基于真实人物建模的合成人群提出研究问题，调查对文案、页面、价格、概念和图像的反应、阻力及分群差异，支持调查、访谈和焦点小组；不用于案头研究、市场规模或已有数据分析。",
+      "source": "Asks an iMario audience, Synthetic Individuals each modelled on a real person, a research question before a decision ships, covering reactions to copy, a page, a price, a concept or an image, objections, segment comparisons, surveys, interviews and focus groups. Use when the user asks how a group would react, what would stop them, wants segments compared or a study run, or says \"@imario\". Not for desk research, market sizing, or analysing data the user already has.",
+      "source_sha256": "4a7d22a66a69737bb0f2c8eb91c5b446da5d45f0a30bcaee1378fbd2976e39e1",
+      "source_path": "skills/imario/SKILL.md",
+      "package_sha256": "34c3e1fa6a2e8a097245a09f9491b7bff05ded4c0cb932f3b98fdfff92c96b53",
+      "source_package": "iMario-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89308c2bf4fedfc925f81ec663f0116de179e9cd2fe8f8578416de4fa085fac0": {
+      "description_zh": "管理 iMessage 通道访问，批准配对、编辑允许名单并设置私信或群组政策，支持允许人员查询和策略修改。",
+      "source": "Manage iMessage channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the iMessage channel.",
+      "source_sha256": "89308c2bf4fedfc925f81ec663f0116de179e9cd2fe8f8578416de4fa085fac0",
+      "source_path": "skills/access/SKILL.md",
+      "package_sha256": "0dbb5ff93be08966187e7e2535f5dfad04c3fa211396f3455944dc4849466cbe",
+      "source_package": "imessage-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8d15f2a4e1517f1769da46995c5e20cda908abbb31c73b8b2312df1e21932ae": {
+      "description_zh": "检查 iMessage 通道配置及访问政策，帮助设置、确认谁可联系助手，并排查短信未到达的问题。",
+      "source": "Check iMessage channel setup and review access policy. Use when the user asks to configure iMessage, asks \"how do I set this up\" or \"who can reach me,\" or wants to know why texts aren't reaching the assistant.",
+      "source_sha256": "d8d15f2a4e1517f1769da46995c5e20cda908abbb31c73b8b2312df1e21932ae",
+      "source_path": "skills/configure/SKILL.md",
+      "package_sha256": "0dbb5ff93be08966187e7e2535f5dfad04c3fa211396f3455944dc4849466cbe",
+      "source_package": "imessage-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69fb4863e7002c05b9568ed0bc0b80a9c048c51d1aeb04205b76fcce66ff3650": {
+      "description_zh": "通过 Iminify 优化项目、文件夹或指定图片并将较小文件覆盖写回，默认压缩，按请求转换WebP、AVIF、JPG、PNG或调整尺寸。",
+      "source": "Optimize the images in a project with Iminify and write the smaller files back in place. Compresses by default; converts to WebP, AVIF, JPG or PNG, or resizes, when asked. Use when the user asks to compress, optimize, shrink, convert or resize the images in a project, a folder or a set of files.",
+      "source_sha256": "69fb4863e7002c05b9568ed0bc0b80a9c048c51d1aeb04205b76fcce66ff3650",
+      "source_path": "skills/optimize-images/SKILL.md",
+      "package_sha256": "7f2e23ba1a847cf0feafd398c16281e4f4c3858eeef551a28d735ecc0ae12927",
+      "source_package": "Iminify-1.0.13-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1149db706982bb232d86c1eb8a394ca989b7d30bdc3ac991e43a191c47e25ce1": {
+      "description_zh": "引导用户完成 Impulse 认证以启用 MCP 工具，适用于首次安装、配置咨询或 auth-required/401 错误。",
+      "source": "Walk the user through authenticating with Impulse so Impulse MCP tools work. Use this when the user first installs the plugin, asks how to set up Impulse, or when an Impulse tool call fails with an auth-required/401 error.",
+      "source_sha256": "1149db706982bb232d86c1eb8a394ca989b7d30bdc3ac991e43a191c47e25ce1",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "9efb1481765ec830e714eafbef91343c8f6c58f8fdf0bc3d4a030e5956adddd9",
+      "source_package": "impulse-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7fc95ff5f8bb0527e0cb07c90ac9335bee0cd89f327887d18680be240150085": {
+      "description_zh": "针对正在发生或即将发生的工作场所火灾、恶劣天气、医疗急症、安全威胁、疏散和封锁等情况，查用组织已批准的危机与安全响应协议；不用于一般业务故障、公关问题或无关个人困难。",
+      "source": "This skill should be used when the user describes an active or imminent workplace safety situation — a fire, severe weather, medical emergency, security threat, evacuation, lockdown, or other event calling for an organization's approved emergency response — or explicitly asks for \"our crisis plan,\" \"the emergency protocol,\" \"the safety plan,\" \"the incident response procedure,\" or similar. Not for general business incidents (outages, PR issues) or personal difficulties unrelated to physical workplace safety — only for situations calling on the organization's own approved crisis/safety protocols.",
+      "source_sha256": "f7fc95ff5f8bb0527e0cb07c90ac9335bee0cd89f327887d18680be240150085",
+      "source_path": "skills/in-case-of-crisis/SKILL.md",
+      "package_sha256": "b72d26afb69c26f9b73c983b1504126330c72ebded62235ee8f7970db190437e",
+      "source_package": "In Case Of Crisis-0.1.0-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ac4ec99de6954c5d442a9ab668056e7142d1b59477fce8c2bc931211e467f83": {
+      "description_zh": "依据团队架构文档解释系统是什么、部署运行位置、依赖及真实云项目、集群、命名空间、主机和存储名称，并通过访谈先确认实际系统情况再编写改进文档，支持故障前上下文定位。",
+      "source": "Answer questions about how a team builds, deploys, and runs its software — what a system is, where it runs, what it depends on, and the real names of things (cloud projects, clusters, namespaces, hostnames, buckets) — from architecture docs wherever they live. Also guides writing those docs: an interview that pins down what each system actually is before anything is written. Use when asked \"how does X run\", \"what is Y\", \"where does Z live\", when grounding a component before debugging it, or when asked to write or improve architecture documentation.",
+      "source_sha256": "3ac4ec99de6954c5d442a9ab668056e7142d1b59477fce8c2bc931211e467f83",
+      "source_path": "skills/architecture/SKILL.md",
+      "package_sha256": "ca8f5c8b2b7e106c98711da8cddd9fe0a08f6574968e9943bc91f353edecd38b",
+      "source_package": "incident.io-0.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e90f9a6326198d3129d12a0f318a7bb405737afd8970eb2443ca4e710d78fcc": {
+      "description_zh": "检查 incident.io 代理体系的插件、技能和连接健康，指出退化与改进项并引导到对应修复入口，本技能仅评审不执行修复，支持一次或周期检查。",
+      "source": "Review the health of your incident.io agent estate — plugins, skills, connections — and say what to fix, without fixing anything itself. Use whenever anyone asks whether their incident.io setup is healthy, what's degraded, or what to improve, in any phrasing — one-off or as a recurring review. Every finding routes to the thing that fixes it.",
+      "source_sha256": "9e90f9a6326198d3129d12a0f318a7bb405737afd8970eb2443ca4e710d78fcc",
+      "source_path": "skills/doctor/SKILL.md",
+      "package_sha256": "ca8f5c8b2b7e106c98711da8cddd9fe0a08f6574968e9943bc91f353edecd38b",
+      "source_package": "incident.io-0.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90248fc567a1a54d5e089c97034387b69f89625e01ea884f0297360bb97271ce": {
+      "description_zh": "复盘指定期间扩展和技能的实际使用，通过相关事故或会话说明有效作用，识别未被技能或运行手册覆盖的事故；体系健康检查交由 doctor。",
+      "source": "Review what your extensions did over a period: the skill loads that made a real difference, told through the incident or conversation each one happened in, and the incidents no skill or runbook covered. Use whenever anyone wants a review, digest, or pulse of extension or skill usage over a window — \"how did our skills do this week\", \"post yesterday's extensions review to our channel\" — one-off or on a schedule. Whether the estate is healthy (sync state, funnels, issues to fix) is the doctor skill, not this one.",
+      "source_sha256": "90248fc567a1a54d5e089c97034387b69f89625e01ea884f0297360bb97271ce",
+      "source_path": "skills/extensions-review/SKILL.md",
+      "package_sha256": "ca8f5c8b2b7e106c98711da8cddd9fe0a08f6574968e9943bc91f353edecd38b",
+      "source_package": "incident.io-0.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c23ad1e906826b384fb3e3c1a01509cacdbe9d3c08c745f209e7a208c29588f0": {
+      "description_zh": "理解并帮助配置管理 incident.io 的插件、技能、连接器和MCP，在编辑前查看现有配置，支持新增事件插件及分诊技能等问题。",
+      "source": "Understand the extensions so that you can help a user configure and manage their incident.io agent estate. Use this when you're asked a question about incident.io  plugins, skills, connectors or MCPs (\"I want to setup an incident plugin\", \"How do I  add a triage skill?\"), or when you need to understand the user's existing configuration before editing a plugin or skill.",
+      "source_sha256": "c23ad1e906826b384fb3e3c1a01509cacdbe9d3c08c745f209e7a208c29588f0",
+      "source_path": "skills/extensions/SKILL.md",
+      "package_sha256": "ca8f5c8b2b7e106c98711da8cddd9fe0a08f6574968e9943bc91f353edecd38b",
+      "source_package": "incident.io-0.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d9f0444597822c478d6aba5485414591818a7be12e5828ca2fda7e67a1d1848": {
+      "description_zh": "创建改进供 incident.io 与编码代理加载的自有插件技能，支持编写、编辑、评审及依据使用反馈或评审意见优化。",
+      "source": "Create and improve the skills in your own plugins — the ones incident.io's agents and your coding agents load. Use whenever you're writing, editing, or reviewing a skill in any way: creating one, improving one from usage feedback or a review brief, or asking what makes a good skill.",
+      "source_sha256": "2d9f0444597822c478d6aba5485414591818a7be12e5828ca2fda7e67a1d1848",
+      "source_path": "skills/skill-authoring/SKILL.md",
+      "package_sha256": "ca8f5c8b2b7e106c98711da8cddd9fe0a08f6574968e9943bc91f353edecd38b",
+      "source_package": "incident.io-0.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c33fbc1cc24bb6cc210122e4c193e9d2e2d774e7de1e5d0d9a971da4dfdb54c": {
+      "description_zh": "组织持续数天或数周的自主备考学习，管理学习会话、到期任务、测验评分、错题和时间安排，先诊断再学习并做两天后冷测与间隔复习；聊天移动端仅有限手动模式，不代写待提交作业或评他人作业，也不用于无跟踪的单次解释测验。",
+      "source": "Use when someone wants to learn, revise or prepare on their own over days or weeks (an exam, course final, certification, interview, language or programming skill): setting up study, starting, continuing or closing a study session, checking what is due, being tested on their material, having answers marked (photos or typed), reviewing their mistakes, or planning and rescheduling study time (their own revision timetable, a calendar), even if they never say \"study plan\". Also for a question on their subject in an indelible workspace (a folder with indelible.json). A strict tutor: onboarding, a diagnostic first, sheets read then closed, a 2-day cold recheck, spaced mistake review. In claude.ai chat or mobile: a limited manual mode. Not for: a single explanation, quiz or flashcard set with nothing to track, even before an exam; code review; work or meeting scheduling; marking other people's work; writing work the learner will hand in for assessment.",
+      "source_sha256": "2c33fbc1cc24bb6cc210122e4c193e9d2e2d774e7de1e5d0d9a971da4dfdb54c",
+      "source_path": "skills/indelible/SKILL.md",
+      "package_sha256": "f495fa8cff6991533c6c242e512c0d05f7aded32953bac1b42053765629ace66",
+      "source_package": "indelible-0.1.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c0dd4cca09242cdfd5fda88ac2ea75ffbe8fe080fb92caf9ae64280311eb9b1": {
+      "description_zh": "仅依据 Informatica CDGC 目录元数据发现表、列、文件、报告、术语、领域和政策，评估可信度、业务意义、所有者、敏感性和适用政策，帮助在通过其他MCP读取实际数据前选择合适资产。",
+      "source": "Enterprise catalog discovery and governance over CDGC. Finds data assets from the catalog — tables, columns, files, reports, glossary terms, domains, policies — and evaluates their trustworthiness, business meaning, ownership, sensitivity, applicable policy, and safe use, grounded exclusively in catalog metadata. Use whenever the user asks a data or metadata question — 'find', 'where is', 'show me', 'what tables have X', 'is there a report on Y', 'give me [topic] data', 'who owns', 'what does column X mean', 'is this the authoritative source', 'can I rely on this', 'is this sensitive / PII', 'what policy applies', 'can I safely use this for [purpose]'. Covers business assets (domains, glossaries, policies) and technical assets (tables, columns, files). Always run BEFORE reading actual data through other MCPs so the caller picks the right, trusted, compliant asset.",
+      "source_sha256": "3c0dd4cca09242cdfd5fda88ac2ea75ffbe8fe080fb92caf9ae64280311eb9b1",
+      "source_path": "skills/catalog-and-data-discovery/SKILL.md",
+      "package_sha256": "2b1a93e6ea5082e65d40aca4af40ce67573decfd62a0c4de137e1106c10e8f6e",
+      "source_package": "Informatica-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "44eed2081a1f5e1e244a617cf012b0f3ba4a845698fd1a8a1bd0b56449ca4e7e": {
+      "description_zh": "通过 Verbalized Sampling 从枚举候选池进行可复现随机抽样，决定问题框定、设计师风格、种子、约束、竞品和字体等输入，构建由目标用户评分的网页、应用、工具和资产，让设计选择可追溯。",
+      "source": "Builds polished, target-user-rated web apps/pages/tools/assets via Verbalized Sampling at every input — framing, designer voice, seeds, constraint, competitors, typography. Use when you want every design choice to trace to a deterministic random sample drawn from an enumerated pool rather than model reach. Triggers on phrases like \"iterate to a perfect score,\" \"no canon,\" \"really diversify the inspiration,\" \"use IFG/VS,\" or explicit \"use inhabited-design.",
+      "source_sha256": "44eed2081a1f5e1e244a617cf012b0f3ba4a845698fd1a8a1bd0b56449ca4e7e",
+      "source_path": "skills/inhabited-design/SKILL.md",
+      "package_sha256": "cf77c739782e1cf890e8a13645f27f5aa44e52e8905118174d7fb56aa4015860",
+      "source_package": "inhabited design-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5c450f16af2c1edc71e582d502f9e856dbc2951dd799708e54e7538e802dd14": {
+      "description_zh": "通过 InsForge CLI 管理后端及云基础设施，包括项目、SQL迁移、RLS、函数、存储、备份部署、计算、密钥配置、排程日志、诊断审查、导入导出、AI与支付和外部数据接入、分支成员、代理记忆及反馈文档；应用SDK代码交由 insforge。",
+      "source": "Use this skill whenever someone needs a backend, or a task touches InsForge backend or cloud infrastructure through the InsForge CLI: projects, SQL, migrations, RLS policies, functions, storage, backups, deployments, compute, secrets, config, schedules, logs, diagnostics, advisor scans and suppressions, import/export, AI/OpenRouter setup and usage overview, Stripe/Razorpay payments, Apify web scraping / data sources, PostHog product analytics, backend branches, organization membership (invite, leave, delete), agent memory (remember/recall project facts and decisions), reporting InsForge-side bugs or doc discrepancies (feedback), or CLI docs. For app code with InsForge or @insforge/sdk, use the insforge app-integration skill instead.",
+      "source_sha256": "c5c450f16af2c1edc71e582d502f9e856dbc2951dd799708e54e7538e802dd14",
+      "source_path": "skills/insforge-cli/SKILL.md",
+      "package_sha256": "f0a22508c647f1f7ffc3ddc7887acfa13e1506a7cecb9ffe3698a8803964a746",
+      "source_package": "InsForge-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "586e7109a3b6c9297a8856ecc69b20e05f86f2b90b10d4f270932fb6e5b02802": {
+      "description_zh": "诊断 InsForge 的SDK或HTTP错误、网关和函数超时、登录OAuth、RLS、实时通道、慢查询及部署失败，也支持安全、性能、健康和上线准备审查。",
+      "source": "Use when diagnosing problems in an InsForge project — reactive failures (SDK error object, HTTP 4xx/5xx, gateway timeout 502/503/504, edge function failure or timeout, login/OAuth/auth errors, RLS denial, realtime channel issues, slow query on one endpoint, edge function or Vercel deploy failure), proactive audits (security/RLS review, performance/index review, system health check, pre-launch readiness), or when the user has an error but doesn't know where to start.",
+      "source_sha256": "586e7109a3b6c9297a8856ecc69b20e05f86f2b90b10d4f270932fb6e5b02802",
+      "source_path": "skills/insforge-debug/SKILL.md",
+      "package_sha256": "f0a22508c647f1f7ffc3ddc7887acfa13e1506a7cecb9ffe3698a8803964a746",
+      "source_package": "InsForge-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c19097d48b14874cd3eba13a81f0bc2830a3fab750619fbd2ab1356e3d287d66": {
+      "description_zh": "为 InsForge 接入 Clerk、Auth0、WorkOS、Kinde、Stytch、Better Auth 等外部认证以实现JWT行级权限，或接入 OKX x402 实现链上按使用量付费。",
+      "source": "Use when wiring an external auth provider (Clerk, Auth0, WorkOS, Kinde, Stytch, Better Auth) into InsForge for JWT-based RLS, or when adding the OKX x402 payment facilitator for onchain pay-per-use billing.",
+      "source_sha256": "c19097d48b14874cd3eba13a81f0bc2830a3fab750619fbd2ab1356e3d287d66",
+      "source_path": "skills/insforge-integrations/SKILL.md",
+      "package_sha256": "f0a22508c647f1f7ffc3ddc7887acfa13e1506a7cecb9ffe3698a8803964a746",
+      "source_package": "InsForge-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01619f6920e4cffd32d773e144922350c6eb928ef07d3d7d89f4b0baac13b2ae": {
+      "description_zh": "使用 InsForge 或 @insforge/sdk 编写数据库CRUD、认证、存储上传与RLS、函数、OpenRouter AI、实时、邮件和支付应用代码，或把S3兼容工具接到InsForge Storage；基础设施、迁移、CLI及支付商配置交由 insforge-cli。",
+      "source": "Use this skill when writing app code with InsForge or @insforge/sdk: database CRUD, auth, storage uploads/storage RLS, functions, OpenRouter AI, realtime, emails, Stripe or Razorpay payments, or pointing S3-compatible tooling (aws CLI, AWS SDKs, rclone, Terraform, boto3) at InsForge Storage. Trigger on requests like add auth, fetch data, upload files, make a bucket public, add checkout, sell subscriptions, or send email. For infrastructure, SQL migrations, CLI commands, or payment provider setup, use insforge-cli instead.",
+      "source_sha256": "01619f6920e4cffd32d773e144922350c6eb928ef07d3d7d89f4b0baac13b2ae",
+      "source_path": "skills/insforge/SKILL.md",
+      "package_sha256": "f0a22508c647f1f7ffc3ddc7887acfa13e1506a7cecb9ffe3698a8803964a746",
+      "source_package": "InsForge-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dbadfe2ad25f03b085de09802f5aa37d15fcb8a83cfadf340c554d97a1a6d483": {
+      "description_zh": "管理 Instagram 通道的允许名单、访问政策、媒体范围和提及匹配，支持允许或移除用户名及查询可联系通道的人员。",
+      "source": "Manage Instagram channel access — allowlists, policy, media scope, mention patterns. Use when the user asks to allow/remove a username, change policy, or check who's allowed to reach the channel.",
+      "source_sha256": "dbadfe2ad25f03b085de09802f5aa37d15fcb8a83cfadf340c554d97a1a6d483",
+      "source_path": "skills/access/SKILL.md",
+      "package_sha256": "aec1b657cd1d778dd647fe2565741eb2915bbba00807decc81fa251ea477b002",
+      "source_package": "instagram-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47cad4face22c75b768240ada72758c04f00ffb9f1093afe22860a5d285fa897": {
+      "description_zh": "配置 Instagram 通道，保存 Graph API 凭据并审查访问政策，适用于提供访问令牌、首次设置、可联系人员和通道状态查询。",
+      "source": "Set up the Instagram channel — save Graph API credentials and review access policy. Use when the user pastes an Instagram access token, asks to configure Instagram, asks \"how do I set this up\" or \"who can reach me,\" or wants to check channel status.",
+      "source_sha256": "47cad4face22c75b768240ada72758c04f00ffb9f1093afe22860a5d285fa897",
+      "source_path": "skills/configure/SKILL.md",
+      "package_sha256": "aec1b657cd1d778dd647fe2565741eb2915bbba00807decc81fa251ea477b002",
+      "source_package": "instagram-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c009875be4fd9d9912a5c37cd7985136aa85c5b452156514fb04f97e2f1af418": {
+      "description_zh": "为 Instagram 传入评论与私信提供对话流程，将公开评论引导至私信，并在私信线程继续沟通。",
+      "source": "Conversation playbook for inbound Instagram comments and DMs — bridges public comments to DMs (comment-to-DM), then continues the conversation in the DM thread. Use whenever an inbound notification from `plugin:instagram:instagram` arrives.",
+      "source_sha256": "c009875be4fd9d9912a5c37cd7985136aa85c5b452156514fb04f97e2f1af418",
+      "source_path": "skills/qualification/SKILL.md",
+      "package_sha256": "aec1b657cd1d778dd647fe2565741eb2915bbba00807decc81fa251ea477b002",
+      "source_package": "instagram-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56b03caea320244aaee0d19b013ff1cb5da622c0d805d512d85cbc561c9a4ec0": {
+      "description_zh": "为产品、公司或项目构思适合品牌的名称，同时通过 Instant MCP 检查对应域名的索引注册状态，让名称建议附有查询结果。",
+      "source": "Brainstorm brandable names for a product, company, or project and check each one's indexed domain registration status in the same pass. Use when the user asks for name ideas, business names, startup names, app names, or \"what should I call this\", and a domain is part of what makes a name usable. Pairs generated ideas with the instant MCP tools so suggestions include checked registration status rather than guesses about availability.",
+      "source_sha256": "56b03caea320244aaee0d19b013ff1cb5da622c0d805d512d85cbc561c9a4ec0",
+      "source_path": "skills/domain-brainstorm/SKILL.md",
+      "package_sha256": "b12efb6ecb7018a9634b1022a56f18309c0f93ff49c94cc03085b4872bb29e3e",
+      "source_package": "Instant-2.0.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25759a01d043867df24c964880b810297e99a02d19330c9db40cff870647a742": {
+      "description_zh": "通过 Instant MCP 查询域名是否已注册、检查多种后缀并寻找替代名称，支持项目命名时同步查域名，以及搜索 USPTO 商标记录与申请详情。",
+      "source": "Check whether domain names are registered and find alternatives using the Instant MCP server. Use whenever the user asks if a domain is available, taken, or free; wants to check a name across extensions (.com, .io, .ai, .dev, and hundreds more); needs alternatives because a name is taken; or is picking a domain for a project, product, startup, or side project. Also use when naming a new app or repository and the user wants domain registration status checked alongside name ideas. Also use when the user asks to search USPTO trademark records or inspect a filing.",
+      "source_sha256": "25759a01d043867df24c964880b810297e99a02d19330c9db40cff870647a742",
+      "source_path": "skills/instant/SKILL.md",
+      "package_sha256": "b12efb6ecb7018a9634b1022a56f18309c0f93ff49c94cc03085b4872bb29e3e",
+      "source_package": "Instant-2.0.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53277604776e66e4a0102ea880541ad2d153228fc0bed79010ad8c060dfd4afc": {
+      "description_zh": "仅在用户明确要求时，针对 Claude Code 指令或上下文的单个改动，用相同提示分别重复运行HEAD与HEAD加未提交差异，生成HTML并排比较报告，验证规则或引用文档是否影响行为；不用于应用代码或已由自动测试覆盖的检查。",
+      "source": "Check whether one change to Claude Code's instructions or context (CLAUDE.md, .claude/rules, referenced docs, skills) actually changes behavior. Runs the same prompts against HEAD and HEAD + the uncommitted diff, N times each, and builds an HTML report for a person to compare the runs side by side. Use it to test adding, deleting, rewording, or moving a rule, or to check whether an @import or a referenced doc is loaded and followed. Not for checking application code or anything automated tests already cover. Only run it when the user explicitly asks for it; never start an experiment on your own.",
+      "source_sha256": "53277604776e66e4a0102ea880541ad2d153228fc0bed79010ad8c060dfd4afc",
+      "source_path": "skills/abdiff/SKILL.md",
+      "package_sha256": "60669bfae91f3c7700a60c4a92a2010e73bd5ec78c61bc596dbddbb8f03d0a2f",
+      "source_package": "Instruction Eval-0.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35e52ecff1b0f72da77a38f54215f6df53d6d7254f579be66c09b5ea466d7c5a": {
+      "description_zh": "只读比较 Intelligo 背调报告的变化与重合，支持同档案同等级跨时间刷新、同档案不同报告等级，以及多个档案或整项目之间的对比，不回写系统。",
+      "source": "Compare Intelligo background-check reports and report what changed or what overlaps. Use this skill whenever the user wants to compare, diff, or cross-reference Intelligo reports or profiles — including \"what changed since the last report\", \"refresh comparison\", \"compare this profile''s new and old report\", \"what''s common between these two profiles\", \"do these subjects share anything\", or comparing every profile in an Intelligo project against each other. Trigger on phrases like \"compare reports\", \"what''s new in this refresh\", \"diff these profiles\", \"shared connections between profiles\", \"what did the upgrade add\", \"compare the two report levels\", and on any request that names two or more Intelligo profiles/reports and asks how they relate. Three modes: REFRESH (same profile over time, same level), LEVEL CHANGE (same profile, two different report levels — upgrade or interim), and CROSS-PROFILE (two or more distinct profiles, including a whole project). Read-only — never writes back to Intelligo.",
+      "source_sha256": "35e52ecff1b0f72da77a38f54215f6df53d6d7254f579be66c09b5ea466d7c5a",
+      "source_path": "skills/intelligo-compare-reports/SKILL.md",
+      "package_sha256": "35d60fd81f958dc1e5d617099f4f1a3599d18760802219e9f62aded788b76f6e",
+      "source_package": "Intelligo-0.5.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ddf1e3a622ae6edbd0c43ee618cea957b5935f97092daee9cec02d4e7b86fb1": {
+      "description_zh": "引导选择 Intelligo 报告或项目的 PDF 导出范围与内容，再调用 exportPdf，支持单份报告、整项目及全部档案下载。",
+      "source": "Guided PDF export from Intelligo — walks the user through scope and content options before calling exportPdf.  Trigger whenever the user wants to download, export, or get a PDF of a report or project in Intelligo,  or says things like \"download this report\", \"export to PDF\", \"get me the PDF for this project\",  \"download all profiles\", \"export the report for [name]\", or anything implying they want a PDF out of Intelligo. Always use this skill instead of calling exportPdf directly — it ensures the right scope and options are chosen first.",
+      "source_sha256": "9ddf1e3a622ae6edbd0c43ee618cea957b5935f97092daee9cec02d4e7b86fb1",
+      "source_path": "skills/intelligo-export-pdf/SKILL.md",
+      "package_sha256": "35d60fd81f958dc1e5d617099f4f1a3599d18760802219e9f62aded788b76f6e",
+      "source_package": "Intelligo-0.5.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d18ee11ce7e3bcc3bf178183092508cbeef0962341073c3a6c760b2ed25bbac": {
+      "description_zh": "按定义、司法辖区与发布机构背景、模式评估及互联网研究四层解释 Intelligo 个人或公司报告中的诉讼、留置权、破产、制裁、观察名单、PEP和执法发现；不自动触发，并区分报告数据与网络资料。",
+      "source": "Explains legal and regulatory findings from Intelligo reports — individuals and companies. Four layers: definition, jurisdiction/issuing body context, pattern assessment, internet research. Trigger on: \"explain this finding\", \"what does this mean\", \"is this serious\", \"is this common in [country]\", \"what does the internet say\", \"is this a red flag\", \"explain this lawsuit\", \"what is a lien\", \"what is a bankruptcy filing\", \"explain this sanction\", \"what does this watchlist mean\", \"is this PEP significant\", \"what does SECO mean\", \"what is OFAC\", \"what does CAATSA listing mean\", \"what is OFSI\", \"explain this enforcement action\", \"what does sanctions list mean\", \"I want to know more on the regulatory findings\", \"how significant is this watchlist hit\", \"what does this designation mean\". Do NOT auto-trigger. Do NOT mix Intelligo data with internet data.",
+      "source_sha256": "4d18ee11ce7e3bcc3bf178183092508cbeef0962341073c3a6c760b2ed25bbac",
+      "source_path": "skills/intelligo-legal-explainer/SKILL.md",
+      "package_sha256": "35d60fd81f958dc1e5d617099f4f1a3599d18760802219e9f62aded788b76f6e",
+      "source_package": "Intelligo-0.5.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "44b096da7a2f5e56b9405b15d862e40f81553893194e3f16ff6c35cbfb2a2a25": {
+      "description_zh": "先简短确认投委会风格与需求，再将 Intelligo 背调发现整理为叙事摘要、幻灯片片段、PDF或PPTX，支持单一对象、整交易项目或整体概览加重点对象的混合范围。",
+      "source": "Convert Intelligo background-check findings into Investment Committee (IC) ready materials — narrative summaries, slide-ready snippets, polished PDFs, or PPTX decks. Works at any scope — single subject report, full deal/project rollup, or hybrid (project overview with one subject in depth). Use whenever an analyst asks to \"prepare for IC\", \"summarize the deal for committee\", \"roll up findings for project X\", \"build IC slides\", \"make an IC summary\", \"format Intelligo findings\", \"create a project one-pager\", \"write the IC memo section\", or wants to share Intelligo output with partners, board, GC, or risk committee. Different funds have very different IC styles, so this skill always conducts a short intake before generating output. Trigger generously — analysts often describe the destination (their IC, their deal, their project) rather than naming the format.",
+      "source_sha256": "44b096da7a2f5e56b9405b15d862e40f81553893194e3f16ff6c35cbfb2a2a25",
+      "source_path": "skills/intelligo-prep-committee-deck/SKILL.md",
+      "package_sha256": "35d60fd81f958dc1e5d617099f4f1a3599d18760802219e9f62aded788b76f6e",
+      "source_package": "Intelligo-0.5.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e318d7a3a38e325a84441b732a04258509830a83900fa1c2cc7900404057f05": {
+      "description_zh": "总结 Intelligo 单个人或公司的背景、信用及社交媒体分析，提供执行摘要、风险标记数量、标记与发现或分标签页视图；项目转交项目摘要，不用于网络研究、监控或行动项。",
+      "source": "High-level factual summary of one Intelligo profile — background check, credit check, and social media analysis, with executive summary, red/yellow flags, and key findings. Summarizes one profile (person or company), not a project; if the query is ambiguous it searches profiles and projects, and hands a project off to the project-summary skill. Use whenever the user wants a summary, recap, key takeaways, risk read, red flags, or major risks on a person or company in due diligence — even without saying \"Intelligo.\" Offers four selectable views (executive summary, flag count, flags + findings, per-tab breakdown) and asks which when unspecified. Triggers: \"summarize X\", \"red flags on X\", \"what did we find on X\", \"how many flags on X\", \"exec summary on X\", \"break X down by tab\". Do NOT use for web research, monitoring, action items, or project-level summaries.",
+      "source_sha256": "0e318d7a3a38e325a84441b732a04258509830a83900fa1c2cc7900404057f05",
+      "source_path": "skills/intelligo-profile-summary/SKILL.md",
+      "package_sha256": "35d60fd81f958dc1e5d617099f4f1a3599d18760802219e9f62aded788b76f6e",
+      "source_package": "Intelligo-0.5.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4dfdb8df0754cc79775ab867a11ecc60d5c4a0ae526bdfa5c8f389597dfb8a3": {
+      "description_zh": "汇总 Intelligo 投资或交易项目全部档案，生成项目执行摘要与各对象简短风险及红黄标记，可单独输出对象清单、概览或对象风险；单档案交由档案摘要，不用于比较、网络研究或监控。",
+      "source": "Deal/project-level summary across every profile in an Intelligo project — a synthesized project executive summary plus a short risk summary per subject (mini exec summary + red/yellow flags). Summarizes a whole investment (a project with multiple profiles), not a single subject; if the query is ambiguous it searches projects and profiles and hands a single profile off to the profile-summary skill. Can return the whole summary or just one part on request — the subject roster, the project overview, or the per-subject risk summaries. Triggers: \"summarize the X project/investment/deal\", \"roll up X\", \"risk across the X deal\", \"red flags across X\", \"what did we find on the X investment\", \"what should I know about the X deal\", \"who''s in the X deal\", \"list the subjects/companies in X\", \"the gist of the X deal\", \"break the X deal down by subject\". Do NOT use for a single person/company (that''s profile-summary), web research, monitoring, action items, or comparisons.",
+      "source_sha256": "b4dfdb8df0754cc79775ab867a11ecc60d5c4a0ae526bdfa5c8f389597dfb8a3",
+      "source_path": "skills/intelligo-project-summary/SKILL.md",
+      "package_sha256": "35d60fd81f958dc1e5d617099f4f1a3599d18760802219e9f62aded788b76f6e",
+      "source_package": "Intelligo-0.5.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9386f9f6e76d4a35829f815ea907eabdbb97ddde8519d0c7405abcce2a442bd5": {
+      "description_zh": "在客户自有 Intelligo 多份背调报告中分析红黄信息标记的时间趋势、主题、突增风险及跨档案关键词，依据实际发现内容推导类别，输出聊天摘要、表、图表或仪表盘。",
+      "source": "Search and surface RISK TRENDS across an Intelligo client''s own background-check reports — patterns across many reports, not one. Use when the user wants: flags trending over time by level (Red/Yellow/Info); flags broken down by theme or finding; newly emerging or spiking risks vs a prior period; comparisons across reports, subjects, or products; or a CROSS-PROFILE search for any entity/keyword (e.g. \"which profiles mention China\"). Flag categories are NOT a stored field — derive meaning from each flag''s finding content, not its config name. Trigger on \"risk trends\", \"flag trends\", \"what risks are increasing\", \"break our flags down\", \"which reports mention X\", \"search across profiles for…\", even when Intelligo isn''t named. Pulls flags and finding content via capabilities, not fixed tool names (see below); returns a chat summary + table, charts, or a dashboard.",
+      "source_sha256": "9386f9f6e76d4a35829f815ea907eabdbb97ddde8519d0c7405abcce2a442bd5",
+      "source_path": "skills/intelligo-risk-trends/SKILL.md",
+      "package_sha256": "35d60fd81f958dc1e5d617099f4f1a3599d18760802219e9f62aded788b76f6e",
+      "source_package": "Intelligo-0.5.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b64b8d34acfb4856ec4410404d9983d5e8edd6e5cb3559ed6e42742ccfdb0eb": {
+      "description_zh": "规划建立新的 Intelligo 尽调项目，确定调查范围及应纳入实体，客户端组织来自已认证会话；不用于项目后跟踪、库查询或一般尽调问题。",
+      "source": "This skill should be used when the user wants to start, scope, or set up a new Intelligo due-diligence project. Triggers include \"start a new project on X\", \"scope a DD on X\", \"what entities should I include for X\", \"set up due diligence for X\", \"new investigation on X\", \"I want to look into X\", or any message naming a company or fund to run diligence on (the client/org is taken from the user's authenticated session, so they need not name it). Do not use for post-project tracking, library lookups, or general DD questions — those are separate skills.",
+      "source_sha256": "0b64b8d34acfb4856ec4410404d9983d5e8edd6e5cb3559ed6e42742ccfdb0eb",
+      "source_path": "skills/intelligo-scope-new-project/SKILL.md",
+      "package_sha256": "35d60fd81f958dc1e5d617099f4f1a3599d18760802219e9f62aded788b76f6e",
+      "source_package": "Intelligo-0.5.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10fb882ca60fe35acad172e32681bdadff9613ba80b92477c778b75b2928c347": {
+      "description_zh": "结合 Intercom 对话历史、账号背景和互动时间线建立完整客户画像，支持邮箱、公司或客户名称的360度背景查询。",
+      "source": "Build a comprehensive customer profile from Intercom data, including conversation history, account context, and interaction timeline. Use when the user asks to \"look up a customer\", \"customer profile\", \"customer 360\", \"tell me about this customer\", \"summarize a customer's history\", or provides a customer email or company name and wants a full picture.",
+      "source_sha256": "10fb882ca60fe35acad172e32681bdadff9613ba80b92477c778b75b2928c347",
+      "source_path": "skills/customer-360/SKILL.md",
+      "package_sha256": "842b3768d3dde86a8145af18d056d3aba17d1e8365913fdee69000db997ad626",
+      "source_package": "Intercom-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52dd9541d48f23e1b9035e594b99cc85e4c9b3ac464325cfb4d7b7a6e1282d21": {
+      "description_zh": "安装并认证 @intercom/cli，让人工或AI代理通过命令行管理 Intercom 工作区。",
+      "source": "Install and authenticate the Intercom CLI (`@intercom/cli`) — a command-line tool for managing Intercom workspaces, designed for both human operators and AI agents. Use when the user asks to \"install the Intercom CLI\", \"set up the intercom command\", \"install @intercom/cli\", or wants shell access to their Intercom workspace.",
+      "source_sha256": "52dd9541d48f23e1b9035e594b99cc85e4c9b3ac464325cfb4d7b7a6e1282d21",
+      "source_path": "skills/install-cli/SKILL.md",
+      "package_sha256": "842b3768d3dde86a8145af18d056d3aba17d1e8365913fdee69000db997ad626",
+      "source_package": "Intercom-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5ce4b2305a20e9af00c56625219f1fdbe149207089b841cfd32bc51514d9ab2": {
+      "description_zh": "在网站或网页应用接入带JWT身份验证的 Intercom Messenger，生成 React、Next.js、Vue、Angular、Ember或普通JS前端，以及Node.js、Python、PHP或Ruby后端代码。",
+      "source": "Install the Intercom Messenger on a website or web application with secure JWT-based identity verification. Generates backend and frontend code for React, Next.js, Vue.js, Angular, Ember, and plain JavaScript. Supports Node.js, Python (Flask/Django), PHP, and Ruby backends. Use when the user asks to \"install Intercom\", \"add the Intercom Messenger\", \"set up Intercom chat widget\", \"add customer chat to my website\", or \"integrate Intercom\".",
+      "source_sha256": "f5ce4b2305a20e9af00c56625219f1fdbe149207089b841cfd32bc51514d9ab2",
+      "source_path": "skills/install-messenger/SKILL.md",
+      "package_sha256": "842b3768d3dde86a8145af18d056d3aba17d1e8365913fdee69000db997ad626",
+      "source_package": "Intercom-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03e85d16539d4e62e263a45bd5faa0f2ae1d2fae921e7b542b7c1d60a85269e5": {
+      "description_zh": "分析 Intercom 对话以发现支持模式、调查客户问题，并查询联系人与公司资料。",
+      "source": "Analyze Intercom conversations to identify support patterns, investigate customer issues, and look up contacts and companies. Use when the user asks to \"analyze conversations\", \"find support patterns\", \"search Intercom\", \"look up a customer\", \"investigate a customer issue\", \"check contact info\", or asks questions about their Intercom data.",
+      "source_sha256": "03e85d16539d4e62e263a45bd5faa0f2ae1d2fae921e7b542b7c1d60a85269e5",
+      "source_path": "skills/intercom-analysis/SKILL.md",
+      "package_sha256": "842b3768d3dde86a8145af18d056d3aba17d1e8365913fdee69000db997ad626",
+      "source_package": "Intercom-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a93ad4f4c9b9cd4501f27a276c555be34a00e17aceb1910cd9a12fc4ea6f374c": {
+      "description_zh": "探查 InternetData 数据库的字段、行粒度和样例，在 Claude Code 中下载副本后做计数查询，分析供应商分布、网络覆盖及地址或地址段是否存在。",
+      "source": "Explore what is inside an InternetData database and analyze it - its columns and what a row means, a first look from its sample rows, and in Claude Code, counts and lookups over a downloaded copy. Use when someone asks what a database contains, wants example rows, or wants numbers from the data such as counts by provider, how much of a network is covered, or whether an address or range is in it.",
+      "source_sha256": "a93ad4f4c9b9cd4501f27a276c555be34a00e17aceb1910cd9a12fc4ea6f374c",
+      "source_path": "skills/analyze-database/SKILL.md",
+      "package_sha256": "09a29f9496cae7c51503fbf186b27c752c72fa1dcf3fc08755ad05976cdcd429",
+      "source_package": "InternetData-1.0.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0334520bd8bb090626f4803604819640df5b3c91d759f223a50ec5d8a1c52b5": {
+      "description_zh": "查看组织获许可的 InternetData IP数据库清单、内容、规模、构建日期、CSV/MMDB格式、校验和、授权状态及下载历史，验证副本完整性并排查下载失败。",
+      "source": "Look into the InternetData IP databases an organization is licensed for - what exists, what is inside one, how big it is, whether a downloaded copy is intact, and why a download failed. Use when someone asks about the downloadable databases, their columns, sample rows, sizes, build dates, formats (CSV or MMDB), checksums, license standing or download history.",
+      "source_sha256": "e0334520bd8bb090626f4803604819640df5b3c91d759f223a50ec5d8a1c52b5",
+      "source_path": "skills/database-files/SKILL.md",
+      "package_sha256": "09a29f9496cae7c51503fbf186b27c752c72fa1dcf3fc08755ad05976cdcd429",
+      "source_package": "InternetData-1.0.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ffc48e0f574a4dd9a634bee13bb86247394c880cb786622d986b499f8e79ca9": {
+      "description_zh": "只读结合 QuickBooks 薪资运行、员工、工资单、付款与公司数据分析薪资费用变化、最高薪人员和成本驱动，考察加班、人数、税费、福利、补贴奖金等因素，并提出成本控制思路，不编造薪资事实。",
+      "source": "Analyze QuickBooks Payroll cost, payroll spend changes, top-paid employees, pay item drivers, and practical payroll cost-control ideas using connected payroll run, employee, payslip, paycheck, and company context data. Use when the user asks why payroll expense increased or decreased, who was paid the most, what drove payroll spend, how to reduce payroll spend, how current payroll compares with a prior period, or whether overtime, headcount, pay rates, employer taxes such as SUI, benefits, employer contributions, reimbursements, bonuses, commissions, allowances, or pay-item mix affected payroll cost. Read only; use available payroll tools and do not invent payroll facts.",
+      "source_sha256": "9ffc48e0f574a4dd9a634bee13bb86247394c880cb786622d986b499f8e79ca9",
+      "source_path": "skills/analyze-payroll-cost/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "261edecf88c9d439d483ded4bb8caabd5c0a7b61492a2f2a308dad9321e65866": {
+      "description_zh": "综合 QuickBooks 多份报告生成经营健康简报，将损益、现金流、资产负债、应收账龄及销售表现整合为一个对话视图，识别当月异常与需关注事项。",
+      "source": "synthesize a QuickBooks business health briefing from multiple Intuit QuickBooks app reports. Use when the user asks broad questions such as \"how's my business doing?\", \"give me the big picture\", \"what should I be worried about?\", \"summarize my financials\", \"anything unusual this month?\", or wants one conversational view of profit and loss, cash flow, balance sheet, receivables aging, and sales performance without opening separate reports.",
+      "source_sha256": "261edecf88c9d439d483ded4bb8caabd5c0a7b61492a2f2a308dad9321e65866",
+      "source_path": "skills/business-health-check/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec48cb5693cf5432511afb6e7a68492bd793fd52a50625c28cb0fbd29aa8b3ed": {
+      "description_zh": "查看 QuickBooks 逾期或未付发票并发送匹配账龄的付款提醒，在发送前确认内容和语气，适用于欠款查询及催收跟进。",
+      "source": "Send payment reminders for invoices with tone matched to aging. ALWAYS use this skill when the user asks to \"send a reminder\", \"send reminder to invoice\", \"remind about invoice\", \"send a reminder to invoice 1234\", \"remind them about 4574\", \"send a firmer reminder for invoice 1042\", \"who owes me money\", \"show me overdue invoices\", \"chase down overdue invoices\", \"follow up on unpaid invoices\", or \"nudge customers who haven't paid\". This skill MUST be loaded before calling qbo_sales_send_invoice_reminder to ensure confirmation and tone-matching.",
+      "source_sha256": "ec48cb5693cf5432511afb6e7a68492bd793fd52a50625c28cb0fbd29aa8b3ed",
+      "source_path": "skills/chase-overdue-invoices/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6d9438888a758fd2f2527e55d2226cb4437f310818d17a7571eec9a4e08f6a2": {
+      "description_zh": "把客户邮件线程中的报价与工作内容转为可发送的 QuickBooks 估价单或发票，减少销售单据逐项重复录入。",
+      "source": "Turn a customer email thread into a ready-to-send QuickBooks estimate or invoice. Use when the user asks to \"create an invoice from my email thread\", \"draft an estimate based on what I quoted this customer over email\", \"bill this customer for the work we discussed and send it to them\", \"turn this email into an invoice\", \"make an estimate from this thread\", or wants to go from an email conversation to a QuickBooks sales document without re-keying line items.",
+      "source_sha256": "e6d9438888a758fd2f2527e55d2226cb4437f310818d17a7571eec9a4e08f6a2",
+      "source_path": "skills/email-to-estimate-invoice/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "176a6f6b532684ddfa25b617e76a8f5b4a028ba482999d57b533525555351036": {
+      "description_zh": "仅使用已连接 QuickBooks 公司的财务数据与同行对标，评估利润率及费用水平；不用于一般行业研究、某地盈利行业、业务类型预期利润或用户自行提供数字的场景。",
+      "source": "benchmark the user's CONNECTED QuickBooks company against industry peers using their QuickBooks financial data. Use only when the numbers come from the user's connected QuickBooks account — \"how does my business compare to similar businesses\", \"are my margins healthy\", \"am I spending too much\", \"benchmark my QuickBooks company\". Do NOT use for industry research, for questions about which industries are most profitable in a location, for expected profit for a business type, or when the user supplies their own figures — those are answered by the Intuit QuickBooks benchmarking tools directly.",
+      "source_sha256": "176a6f6b532684ddfa25b617e76a8f5b4a028ba482999d57b533525555351036",
+      "source_path": "skills/industry-benchmark/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ca7b002bdad02b4bff1936679db80f25023144e22d52c11ba875d97bfe48e89": {
+      "description_zh": "只读解释比较 QuickBooks Capital 定期贷款、信用额度、WebBank发行的商业信用卡和贷款市场，估算还款利息并查询本人余额APR计划及可用额度；不执行支付提款或变更，不作报价审批，也不覆盖申请状态或其他融资产品。",
+      "source": "QuickBooks Capital small-business financing: QuickBooks Term Loan, Line of Credit, Intuit Business Credit Card (issued by WebBank), and the QuickBooks Business Loan Marketplace. Use to explain how these products work (eligibility, rates, fees, terms), compare or choose between them, estimate loan payments (weekly/monthly payment, total interest, total repayment), and answer questions about the signed-in user''s own QuickBooks Capital loans and lines of credit (balance, APR, repayment schedule, payoff, available credit), plus what similar businesses have borrowed. Use proactively when a funding need surfaces from payroll, cash-flow, or invoicing work to check for a drawable line of credit and, with consent, peer offers. Read-only guidance only: never makes payments, draws, or loan changes, and never gives a loan offer, rate, credit limit, or approval decision. Not for loan application status or non-QuickBooks-Capital products (SBA, invoice factoring, merchant cash advances, consumer loans).",
+      "source_sha256": "5ca7b002bdad02b4bff1936679db80f25023144e22d52c11ba875d97bfe48e89",
+      "source_path": "skills/lending/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4ed5ddaac74efe92a1c0164c6ac833569cef3f470386f813eaacc7af5d12e1d": {
+      "description_zh": "依据用户资料、录用通知或员工名单把新员工加入 QuickBooks Payroll，创建前去重、分配现有工作地点并设初始合同薪资，写入前确认并报告剩余配置；不用于既有员工调薪、发薪、税务、直存、福利或合规建议。",
+      "source": "Onboard a new hire into QuickBooks Payroll from user-provided details or onboarding source files such as offer letters and employee rosters. Use when the user wants to add a new payroll employee, onboard a new employee so they can be paid, deduplicate a new hire before creation, assign an existing payroll work location, set initial contract/base pay during onboarding, or review payroll-readiness gaps. Requires confirmation before write actions and reports remaining setup to finish in QuickBooks Payroll. Do not use for existing-employee pay changes outside onboarding, payroll runs, taxes, direct deposit, benefits, deductions, time off, or compliance advice.",
+      "source_sha256": "c4ed5ddaac74efe92a1c0164c6ac833569cef3f470386f813eaacc7af5d12e1d",
+      "source_path": "skills/payroll-employee-onboarding/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73f5be8e346b6f424f412840a8252991541afc0f4305bef1457219a3b9c5974f": {
+      "description_zh": "只读查询已连接 QuickBooks Payroll 的员工、公司配置、最近发薪、工资单、薪酬类型、扣款缴款与休假政策；成本变动或降本分析交由 analyze-payroll-cost，不提供工具不支持的税务法律或操作指导。",
+      "source": "Answer read-only QuickBooks Payroll lookup and setup questions using connected company payroll data. Use for employee roster or lookup, company payroll setup, last payroll run, payslips or paycheck details, pay types, deductions/contributions, and time-off policies. Do not use for payroll cost-driver, spend-reduction, or cost-change analysis; use analyze-payroll-cost when the question asks why payroll cost changed or how to reduce it, including questions involving benefits, employer taxes/SUI, overtime, headcount, pay rates, or pay items. Use only available payroll tools; do not provide unsupported procedural, tax, filing, payment, legal, or compliance guidance.",
+      "source_sha256": "73f5be8e346b6f424f412840a8252991541afc0f4305bef1457219a3b9c5974f",
+      "source_path": "skills/payroll-help/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7c7257e68f6adc640264bc3dd303c77ebb2dbf723e9532b13a66874c717e636": {
+      "description_zh": "在 QuickBooks Payroll 查看设置调整指定员工工资或时薪，支持加减薪、薪酬类型、频率及每周合同时间修改；先读现合同，写入前明确确认，并用员工与合同工具回读验证。",
+      "source": "Set, view, or change employee base pay (salary or hourly rate) in QuickBooks Payroll. Use when the user asks to see current pay, give a raise (absolute, increment, or percentage), reduce or adjust pay, switch between salary and hourly, change pay frequency, or update weekly contracted time for one or more named employees. Reads the current contract first, requires explicit confirmation before writing, then verifies the change using qbo_payroll_search_employee, qbo_payroll_get_employee_contract_details, and qbo_payroll_save_employee_contract_details.",
+      "source_sha256": "b7c7257e68f6adc640264bc3dd303c77ebb2dbf723e9532b13a66874c717e636",
+      "source_path": "skills/set-base-pay/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71074a79e461bc0d2b02da5f4f3d7245005af25e419fd53a6c153233f430ba0f": {
+      "description_zh": "连接并排查 QuickBooks 插件，处理工具不可用、未认证、调用失败、首次安装及登录连接错误。",
+      "source": "Connect and troubleshoot QuickBooks for this plugin. Use when the QuickBooks tools are unavailable, unauthenticated, or failing, when the user has just installed the QuickBooks plugin, or when the user asks how to connect QuickBooks, sign in to QuickBooks, or fix a QuickBooks connection error.",
+      "source_sha256": "71074a79e461bc0d2b02da5f4f3d7245005af25e419fd53a6c153233f430ba0f",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "c6310c785d28c04f8dced7ec6b1b4cfb43881b56eded488759f7afce2b628664",
+      "source_package": "Intuit QuickBooks-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8bd9a78619ac395aa67e8cd9a9ff6647276e1d89ceb707b63ca2c4d768d92654": {
+      "description_zh": "组织 Intuizi 人群、队列和激活流程，构建估算人群、通过相似人群扩展、预览频次范围或交付到目标平台，说明工具调用顺序及用户确认节点。",
+      "source": "Use when working with Intuizi audiences, cohorts or activations - building or sizing an audience, growing one with a lookalike, previewing a frequency range, or delivering an audience to a destination. Covers the order the Intuizi tools are meant to be called in and the points where the user has to confirm.",
+      "source_sha256": "8bd9a78619ac395aa67e8cd9a9ff6647276e1d89ceb707b63ca2c4d768d92654",
+      "source_path": "skills/building-audiences/SKILL.md",
+      "package_sha256": "f438e701ad015d6ea8a7786e0ef99fd2a128ec2753f5c8e6f59be60a2f043605",
+      "source_package": "Intuizi-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7744910f4e744fbb3e59b574b4b57d9d4f4d1062a9a282e166484ec95cdbdbb": {
+      "description_zh": "为卖方并购建立潜在收购方名单，识别战略与财务买家、评估匹配度并确定拓客优先级，支持卖方委托及潜在伙伴分析。",
+      "source": "Build and organize a universe of potential acquirers for sell-side M&A processes. Identifies strategic and financial buyers, assesses fit, and prioritizes outreach. Use when preparing for a sell-side mandate, building a buyer universe, or evaluating potential partners. Triggers on \"buyer list\", \"buyer universe\", \"potential acquirers\", \"who would buy this\", \"strategic buyers\", or \"financial sponsors\".",
+      "source_sha256": "c7744910f4e744fbb3e59b574b4b57d9d4f4d1062a9a282e166484ec95cdbdbb",
+      "source_path": "skills/buyer-list/SKILL.md",
+      "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
+      "source_package": "investment-banking-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea8eb8eff6654aa2c7bf35c3adea041e56da454f1a0f0127fdbe69d35bd6dd35": {
+      "description_zh": "为卖方并购组织起草保密信息备忘录CIM，将公司信息整理为格式一致、叙事连贯且可供投资者阅读的专业材料。",
+      "source": "Structure and draft a Confidential Information Memorandum for sell-side M&A processes. Organizes company information into a professional, investor-ready document with consistent formatting and narrative flow. Use when preparing sell-side materials, drafting a CIM, or organizing company data for a sale process. Triggers on \"CIM\", \"confidential information memorandum\", \"offering memorandum\", \"info memo\", \"draft CIM\", or \"sell-side materials\".",
+      "source_sha256": "ea8eb8eff6654aa2c7bf35c3adea041e56da454f1a0f0127fdbe69d35bd6dd35",
+      "source_path": "skills/cim-builder/SKILL.md",
+      "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
+      "source_package": "investment-banking-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8649c418fc6844a622e96cffa44e04f3c6b1cf23014276bc3d767888ca0967a": {
+      "description_zh": "从CIM、发行备忘录、SEC文件、网络或MCP提取规范化财务数据，生成结构一致、格式规范并记录假设的投委会Excel数据包，适用于并购尽调、私募股权及组合公司报告标准化；不用于简单计算或已完成数据包。",
+      "source": "Build professional financial services data packs from various sources including CIMs, offering memorandums, SEC filings, web search, or MCP servers. Extract, normalize, and standardize financial data into investment committee-ready Excel workbooks with consistent structure, proper formatting, and documented assumptions. Use for M&A due diligence, private equity analysis, investment committee materials, and standardizing financial reporting across portfolio companies. Do not use for simple financial calculations or working with already-completed data packs.",
+      "source_sha256": "c8649c418fc6844a622e96cffa44e04f3c6b1cf23014276bc3d767888ca0967a",
+      "source_path": "skills/datapack-builder/SKILL.md",
+      "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
+      "source_package": "investment-banking-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3606eda17141687114ee92c4cd3bd742b083c164af3393c66b36dd1361340b13": {
+      "description_zh": "跟踪多笔进行中的交易里程碑、截止日期、行动项和状态，维护交易管道并提示临近或逾期事项，支持每周交易评审。",
+      "source": "Track multiple live deals with milestones, deadlines, action items, and status updates. Maintains a deal pipeline view and surfaces upcoming deadlines and overdue items. Use when managing a book of business, tracking process milestones, or preparing for weekly deal reviews. Triggers on \"deal tracker\", \"deal status\", \"where are we on\", \"process update\", \"deal pipeline\", or \"weekly deal review\".",
+      "source_sha256": "3606eda17141687114ee92c4cd3bd742b083c164af3393c66b36dd1361340b13",
+      "source_path": "skills/deal-tracker/SKILL.md",
+      "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
+      "source_package": "investment-banking-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe57ca8db1c3600419e81e079353112df8065258cfef97b8c00ff872891b7c3c": {
+      "description_zh": "为并购建立增厚摊薄模型，分析备考每股收益、协同效应敏感性及购买价格分摊，支持收购评估、推介后果分析和交易条款建议。",
+      "source": "Build accretion/dilution analysis for M&A transactions. Models pro forma EPS impact, synergy sensitivities, and purchase price allocation. Use when evaluating a potential acquisition, preparing merger consequences analysis for a pitch, or advising on deal terms. Triggers on \"merger model\", \"accretion dilution\", \"M&A model\", \"pro forma EPS\", \"merger consequences\", or \"deal impact analysis\".",
+      "source_sha256": "fe57ca8db1c3600419e81e079353112df8065258cfef97b8c00ff872891b7c3c",
+      "source_path": "skills/merger-model/SKILL.md",
+      "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
+      "source_package": "investment-banking-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
