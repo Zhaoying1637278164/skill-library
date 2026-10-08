@@ -63169,6 +63169,1086 @@
       "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
       "source_package": "ScaleSKUs-1.2.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ce9b4cd21fd668948dfeb1d5b0a4c4814f0e667a431d6ba9c06b9c92950aa81": {
+      "description_zh": "通过 ScaleSKUs 找出无销售转化的 Amazon Ads 花费，检查商品匹配后将否定关键词加入待审批队列，适用于减少浪费和降低广告销售成本比 ACoS。",
+      "source": "Find Amazon Ads spend that isn't selling and queue fit-checked negatives through ScaleSKUs. Use when the user wants to cut wasted ad spend, lower ACoS, find negative keywords, or stop paying for searches that don't convert.",
+      "source_sha256": "9ce9b4cd21fd668948dfeb1d5b0a4c4814f0e667a431d6ba9c06b9c92950aa81",
+      "source_path": "skills/cut-waste/SKILL.md",
+      "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
+      "source_package": "ScaleSKUs-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0ba2a0efbe829cd89557fcc859bc42a2932a8a459cbc1d60ca0ce9f40a74487": {
+      "description_zh": "通过 ScaleSKUs 调整 Amazon Ads 关键词与目标竞价，对 ACoS 超目标项降价、对高效项提价，逐项给出计算依据并排队等待批准。",
+      "source": "Right-size Amazon Ads keyword and target bids through ScaleSKUs, with cuts where ACoS runs above target and raises for efficient winners, each with the maths behind it, queued for approval. Use when the user asks to fix their bids, says some keywords cost too much or ACoS is too high on them, or thinks winners are under-bid.",
+      "source_sha256": "b0ba2a0efbe829cd89557fcc859bc42a2932a8a459cbc1d60ca0ce9f40a74487",
+      "source_path": "skills/fix-bids/SKILL.md",
+      "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
+      "source_package": "ScaleSKUs-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b92f264ab1d6429ff7df1c38406fd9f110b31f891c4bd5bbedd1cc8ed1b121ce": {
+      "description_zh": "通过 ScaleSKUs 找出已转化但尚未投放的搜索词，将其作为对应销售商品的精准关键词，并加入审批队列，以扩展有效销售。",
+      "source": "Grow Amazon sales from search terms that already convert, through ScaleSKUs. Finds converting searches the account doesn't target yet, places each as an exact keyword on the product it sells, and queues them for approval. Use when the user wants to grow sales, find new keywords, harvest search terms, or scale what is already working.",
+      "source_sha256": "b92f264ab1d6429ff7df1c38406fd9f110b31f891c4bd5bbedd1cc8ed1b121ce",
+      "source_path": "skills/grow-sales/SKILL.md",
+      "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
+      "source_package": "ScaleSKUs-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "748ef9cd312d61b25d73048ad7a424dc2dacde6e361f58d8a53f6d04af7f83af": {
+      "description_zh": "利用 ScaleSKUs 数据解释 Amazon 总销售或广告销售下降，将竞价预算削减、暂停广告、缺货、商品页问题或自然流量下滑等原因按金额损失排序。",
+      "source": "Explain why Amazon sales or ad sales dropped, using ScaleSKUs data, with causes such as bid or budget cuts, paused ads, stock-outs, listing problems or organic decline ranked by money lost. Use when the user says sales are down, orders fell, revenue dropped, or asks what changed in their Amazon account.",
+      "source_sha256": "748ef9cd312d61b25d73048ad7a424dc2dacde6e361f58d8a53f6d04af7f83af",
+      "source_path": "skills/sales-drop/SKILL.md",
+      "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
+      "source_package": "ScaleSKUs-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50262a03b4dd362af36c52e5f57d4dd8bbd1c281fc3bd3b0879d5d9a8fa63f64": {
+      "description_zh": "使用 ScaleSKUs 连接器从商品和关键词层面全面审计 Amazon Ads，检查浪费、优秀系列资金不足、新搜索词、竞价预算及位置效率，生成每项建议明确商品与关键词的报告，并将用户选定变更送审。",
+      "source": "Product-aware Amazon Ads optimization with the ScaleSKUs connector. Runs a full audit of one advertising account (wasted spend, under-funded winners, category search terms it does not advertise yet, bid, budget and placement efficiency), writes an owner-readable report where every recommendation names a product and a keyword, and queues the changes the user picks for approval. Use when the user asks for an audit or optimization report of their Amazon Ads account, wants every lever reviewed at product and keyword level, asks how to read ScaleSKUs numbers correctly, or is about to queue or apply changes through ScaleSKUs.",
+      "source_sha256": "50262a03b4dd362af36c52e5f57d4dd8bbd1c281fc3bd3b0879d5d9a8fa63f64",
+      "source_path": "skills/scaleskus-optimizer/SKILL.md",
+      "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
+      "source_package": "ScaleSKUs-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de9b53144ab9774bf19610b6201c14649b8e086b2888f6051056ac585a9f2288": {
+      "description_zh": "将简短、含错字或混合语言的 Amazon Ads 请求整理为完整 ScaleSKUs 提示词，明确账号、目标、任务、广告与系列范围、日期、指标限制、不修改项、输出及允许的 Amazon 变更，支持可复用模板。",
+      "source": "Turns a rough, short or mixed-language request about an Amazon Ads account (typos, Hinglish, voice-note style) into one complete, structured prompt for ScaleSKUs in Claude or ChatGPT. The prompt names the account, goal, task, ad types and campaigns in scope, date window, targets and limits, what to leave alone, the output wanted, and what may change on Amazon. Use when a ScaleSKUs user asks to write, structure, rewrite or improve a prompt; says they don't know what to ask or how to phrase it; wants a reusable prompt or template for themselves or their team; or pastes a vague request and asks to make it clear before running it.",
+      "source_sha256": "de9b53144ab9774bf19610b6201c14649b8e086b2888f6051056ac585a9f2288",
+      "source_path": "skills/scaleskus-prompt-builder/SKILL.md",
+      "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
+      "source_package": "ScaleSKUs-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90b1d8f35293027d657379058a4a5c5e713cfa121d4dcf2ee145b0ee76f05e83": {
+      "description_zh": "通过 ScaleSKUs 进行 Amazon Ads 周回顾，检查账号状况、缺货或异常商品仍投放、浪费、有效搜索词与受预算限制的优秀系列，按金额排序并准备审批队列。",
+      "source": "Run a weekly Amazon Ads review through ScaleSKUs covering where the account stands, ads still spending on out-of-stock or broken products, wasted spend to cut, winning search terms to harvest and budget-capped winners to unlock, ranked by money and ready to queue for approval. Use when the user asks for a weekly review, what to do this week, their top priorities, or to optimize their account without asking for a full written audit.",
+      "source_sha256": "90b1d8f35293027d657379058a4a5c5e713cfa121d4dcf2ee145b0ee76f05e83",
+      "source_path": "skills/weekly-review/SKILL.md",
+      "package_sha256": "f427b01b549fbf05ad8bdeaa4c346686b4e81c6503fb4bc7ff74ebd6f91eb8b8",
+      "source_package": "ScaleSKUs-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae2bac1e5fc76a5928a984d2ee8b447b70bfbfc0f6f7068018c469d72d89b3b2": {
+      "description_zh": "加载项目模块缓存，为代码探索、搜索、架构调查和项目结构问答提供上下文；原说明要求会话开始及代码库探索前调用。",
+      "source": "IMPORTANT: Use this proactively at the START of every conversation to load the project module cache. Also use when exploring/searching code, investigating architecture, or when the user asks about project structure. This skill MUST be invoked before any codebase exploration task.",
+      "source_sha256": "ae2bac1e5fc76a5928a984d2ee8b447b70bfbfc0f6f7068018c469d72d89b3b2",
+      "source_path": "skills/auto-context/SKILL.md",
+      "package_sha256": "5b82f80897d260a912d9dff2531c0f654f02621385eec93576f660f130f28c00",
+      "source_package": "scan-modules-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6725299c99bd7c1d518ff4ff667b7ff7446b01f3a3fe3f2776e90d1230582e04": {
+      "description_zh": "审计本仓库每个 Scandit SDK 技能是否包含统一的信任与核验规则，检查规则一致性和缺失情况。",
+      "source": "Use when the user wants to verify that the universal trust-and-verification rules are present in every Scandit SDK skill in this repo. Triggered by \"audit common skill rules\", \"check rule consistency across skills\", or \"audit skills for missing trust rules\".",
+      "source_sha256": "6725299c99bd7c1d518ff4ff667b7ff7446b01f3a3fe3f2776e90d1230582e04",
+      "source_path": "internal/audit-common-skill-rules/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfb0dd9925d28b40ade815953788c99996428b3b401a595a83ca6d4f98d87ce7": {
+      "description_zh": "作为 Scandit SDK 技能库维护工具，审查评估覆盖、跨平台一致性、路由交接表、技能结构及产品功能分类，也用于新技能批次或发布前重新核验目录。",
+      "source": "Maintainer tool for this repo. Use when the user wants to audit the skill catalog — check eval coverage (\"which edge cases have no eval on <platform>?\", \"check eval coverage for <product>\"), check cross-platform consistency (\"are the sparkscan skills consistent?\", \"audit skill quality\"), verify the routing table (\"is the handoff table in sync?\"), lint skill structure, refresh a product feature taxonomy, or run a full audit. Also use when a batch of new skills lands and the catalog needs re-validation, or before a release of the skill repo.",
+      "source_sha256": "dfb0dd9925d28b40ade815953788c99996428b3b401a595a83ca6d4f98d87ce7",
+      "source_path": "internal/skill-auditor/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec2beaa069404103e3317911cd0abe07cb1c2599ed4e7aac067d4ecbefbe11de": {
+      "description_zh": "在原生 Android Kotlin/Java 项目集成 Scandit BarcodeCapture 低层单条码扫描，组合 DataCaptureView 和覆盖层，自行控制界面，不使用 SparkScan 预制 UI；涵盖码制设置、结果、覆盖层、v6 至 v8 迁移、ZXing 或 ML Kit 替换及排查。",
+      "source": "Scandit Barcode Capture (`BarcodeCapture`) in native Android (Kotlin/Java) projects — the low-level, full-control single-barcode scanning mode (BarcodeCapture + DataCaptureView + overlay), without the pre-built SparkScan UI. Use for integration, symbology and scan settings, result handling, overlay customization, SDK version migration (v6→v7→v8), replacing third-party scanners (ZXing, ML Kit), or troubleshooting.",
+      "source_sha256": "ec2beaa069404103e3317911cd0abe07cb1c2599ed4e7aac067d4ecbefbe11de",
+      "source_path": "skills/barcode-capture-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58b0f3010ac0328afd33578c404e052b8f45f58d54781ac0fae4868ddd1a85d7": {
+      "description_zh": "通过 Scandit Capacitor 插件在 Ionic 混合应用集成 BarcodeCapture、DataCaptureView 和覆盖层，处理单条码设置、结果、取景框、反馈及 SDK 迁移；不使用 SparkScan UI，也不属于纯浏览器 Web SDK。",
+      "source": "Capacitor — Scandit Barcode Capture (`BarcodeCapture`) in Capacitor (Ionic) hybrid apps via the Scandit Capacitor plugins (`ScanditCaptureCorePlugin`), the low-level, full-control single-barcode scanning mode (BarcodeCapture + DataCaptureView + BarcodeCaptureOverlay) without the pre-built SparkScan UI, not the browser-only web SDK. Use for integration, symbology settings, result handling, viewfinder and feedback customization, SDK version migration, or troubleshooting.",
+      "source_sha256": "58b0f3010ac0328afd33578c404e052b8f45f58d54781ac0fae4868ddd1a85d7",
+      "source_path": "skills/barcode-capture-capacitor/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6bfc20dba769ad82f49c669514412330f7cf9d5cf384f578fe0e7378c54d9b5a": {
+      "description_zh": "通过 scandit-cordova-datacapture 插件和 window.Scandit 在 Cordova 混合应用集成低层单条码扫描，处理设置、结果、覆盖层连接及版本迁移；不使用 SparkScan UI或纯浏览器 SDK。",
+      "source": "Cordova — Scandit Barcode Capture (`BarcodeCapture`) in Apache Cordova hybrid apps via the `scandit-cordova-datacapture-*` plugins (global `window.Scandit`), the low-level, full-control single-barcode scanning mode (BarcodeCapture + DataCaptureView + BarcodeCaptureOverlay) without the pre-built SparkScan UI, not the browser-only web SDK. Use for integration, scan settings, result handling, overlay wiring, SDK version migration, or troubleshooting.",
+      "source_sha256": "6bfc20dba769ad82f49c669514412330f7cf9d5cf384f578fe0e7378c54d9b5a",
+      "source_path": "skills/barcode-capture-cordova/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abcece35a3589f57c898bae687278665a10a71a09bc9940473fd6ee1f270039f": {
+      "description_zh": "在 Flutter Dart 项目集成 Scandit BarcodeCapture、DataCaptureView 和覆盖层，实现自行控制的单条码扫描，涵盖扫描设置、结果、覆盖层定制、迁移与排查，不使用 SparkScan 预制 UI。",
+      "source": "Scandit Barcode Capture (`BarcodeCapture`) in Flutter (Dart) projects — the low-level, full-control single-barcode scanning mode (BarcodeCapture + DataCaptureView + BarcodeCaptureOverlay), without the pre-built SparkScan UI. Use for integration, scan settings, result handling, overlay customization, SDK version migration, or troubleshooting.",
+      "source_sha256": "abcece35a3589f57c898bae687278665a10a71a09bc9940473fd6ee1f270039f",
+      "source_path": "skills/barcode-capture-flutter/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6669ebd659405b24307cea75ba97e9aed4de82b96821a76f4b4889253df0ecae": {
+      "description_zh": "在原生 iOS Swift 项目集成 Scandit BarcodeCapture 单条码扫描，组合 DataCaptureView 与覆盖层，处理设置、结果、v6 至 v8 迁移及第三方扫描器替换；不使用 SparkScan 预制 UI。",
+      "source": "Scandit Barcode Capture (`BarcodeCapture`) in native iOS (Swift) projects — the low-level, full-control single-barcode scanning mode (BarcodeCapture + DataCaptureView + overlay), without the pre-built SparkScan UI. Use for integration, scan settings, result handling, overlay customization, SDK version migration (v6→v7→v8), replacing a third-party barcode scanner, or troubleshooting.",
+      "source_sha256": "6669ebd659405b24307cea75ba97e9aed4de82b96821a76f4b4889253df0ecae",
+      "source_path": "skills/barcode-capture-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc5107e077e3fd13eb83d093eac787dcbff6996b1bcd20af2e078fb6c4a90419": {
+      "description_zh": "在 Kotlin 与 Compose Multiplatform 项目使用 Scandit KMP SDK 集成低层单条码扫描，处理扫描设置、共享代码结果、覆盖层与取景框；不使用 SparkScan 预制 UI。",
+      "source": "Scandit Barcode Capture (`BarcodeCapture`) in Kotlin Multiplatform (KMP) and Compose Multiplatform projects using Scandit's KMP SDK (`com.kmp.datacapture.*` imports) — the low-level, full-control single-barcode scanning mode without the pre-built SparkScan UI. Use for integration, scan settings, shared-code result handling, overlay and viewfinder customization, or troubleshooting.",
+      "source_sha256": "cc5107e077e3fd13eb83d093eac787dcbff6996b1bcd20af2e078fb6c4a90419",
+      "source_path": "skills/barcode-capture-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9e8c72d303043c29ff9d0704690c70b3b48da096302318292db89c8d30e36ba": {
+      "description_zh": "在非 MAUI 的 .NET Android 项目通过 Scandit.DataCapture.Barcode 集成 BarcodeCapture，处理扫描设置、监听事件、覆盖层、相机生命周期、v6 至 v8 迁移及 ZXing.Net 或 ML Kit 替换；MAUI 使用专用技能，不使用 SparkScan UI。",
+      "source": "Scandit BarcodeCapture in .NET for Android projects (`net*-android` target framework, `Scandit.DataCapture.Barcode` NuGet, non-MAUI — for MAUI apps use barcode-capture-net-maui) — the low-level, full-control barcode scanning mode without the pre-built SparkScan UI. Use for integration, scan settings, listener and event wiring, overlay customization, camera lifecycle, SDK version migration (v6→v7→v8), replacing ZXing.Net or ML Kit bindings, or troubleshooting.",
+      "source_sha256": "d9e8c72d303043c29ff9d0704690c70b3b48da096302318292db89c8d30e36ba",
+      "source_path": "skills/barcode-capture-net-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35e10c110d8d89e2996df635178470b2007e0558f69d688ea3b333cca7466523": {
+      "description_zh": "在非 MAUI 的 .NET iOS 项目通过 Scandit.DataCapture.Barcode 集成 BarcodeCapture，处理扫描设置、事件、覆盖层、相机生命周期、v6 至 v8 迁移及 ZXing.Net.Mobile 或 AVFoundation 替换；MAUI 使用专用技能。",
+      "source": "Scandit BarcodeCapture in .NET for iOS projects (`net*-ios` target framework, `Scandit.DataCapture.Barcode` NuGet, non-MAUI — for MAUI apps use barcode-capture-net-maui) — the low-level, full-control barcode scanning mode without the pre-built SparkScan UI. Use for integration, scan settings, listener and event wiring, overlay customization, camera lifecycle, SDK version migration (v6→v7→v8), replacing ZXing.Net.Mobile or AVFoundation scanners, or troubleshooting.",
+      "source_sha256": "35e10c110d8d89e2996df635178470b2007e0558f69d688ea3b333cca7466523",
+      "source_path": "skills/barcode-capture-net-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8aac9ced104b3f51246ff85c0acfbe759f3cc4c0b307e3460c8962aa989ae09": {
+      "description_zh": "在 .NET MAUI 使用 Scandit.DataCapture.Barcode.Maui，以自有 XAML DataCaptureView 和覆盖层集成 BarcodeCapture，处理设置、结果、生命周期、SDK 迁移及 ZXing.Net.Maui 替换；预制 UI 用 SparkScan，非 MAUI 另用平台技能。",
+      "source": "Scandit BarcodeCapture in .NET MAUI projects (`<UseMaui>true</UseMaui>`, `Scandit.DataCapture.Barcode.Maui` NuGet) — the low-level, full-control barcode scanning mode with your own `<scandit:DataCaptureView>` XAML control and overlay in a MAUI page, without the pre-built SparkScan UI (for that use sparkscan-net-maui); for non-MAUI .NET use barcode-capture-net-android or barcode-capture-net-ios. Use for integration, scan settings, result handling, lifecycle wiring, SDK version migration (v6→v7→v8), replacing ZXing.Net.Maui, or troubleshooting.",
+      "source_sha256": "d8aac9ced104b3f51246ff85c0acfbe759f3cc4c0b307e3460c8962aa989ae09",
+      "source_path": "skills/barcode-capture-net-maui/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2078d5879fecd4e195299a5550cc54e6ed9609915356f00da0d4d9fd01da103d": {
+      "description_zh": "在 React Native 集成 Scandit BarcodeCapture、DataCaptureView 和覆盖层，实现低层单条码扫描，涵盖码制、结果、取景框、反馈定制及迁移排查，不使用 SparkScan 预制 UI。",
+      "source": "Scandit Barcode Capture (`BarcodeCapture`) in React Native projects — the low-level, full-control single-barcode scanning mode (BarcodeCapture + DataCaptureView + BarcodeCaptureOverlay), without the pre-built SparkScan UI. Use for integration, symbology configuration, result handling, viewfinder and feedback customization, SDK version migration, or troubleshooting.",
+      "source_sha256": "2078d5879fecd4e195299a5550cc54e6ed9609915356f00da0d4d9fd01da103d",
+      "source_path": "skills/barcode-capture-rn/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39228a6cc6d69aafac3be68c07fb46807040f70ec065ab78757e8a3a9a769783": {
+      "description_zh": "在 TypeScript/JavaScript 浏览器应用集成 Scandit BarcodeCapture、DataCaptureView 和覆盖层，处理设置、结果、取景框与 Web SDK v6 至 v8 迁移；不使用 SparkScan UI，也不属于 Cordova 或 Capacitor 插件。",
+      "source": "Scandit Barcode Capture (`BarcodeCapture`) in web/browser (TypeScript/JavaScript) projects — the low-level, full-control single-barcode scanning mode (BarcodeCapture + DataCaptureView + overlay), without the pre-built SparkScan UI; not the Cordova or Capacitor hybrid plugins. Use for integration, scan settings, result handling, overlay and viewfinder customization, Scandit Web SDK version migration (v6→v7→v8), or troubleshooting.",
+      "source_sha256": "39228a6cc6d69aafac3be68c07fb46807040f70ec065ab78757e8a3a9a769783",
+      "source_path": "skills/barcode-capture-web/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55b1c7cb9f7af9eec20df4ff1686dc43f750ac9458ae4d6fbf2e7e856642ee70": {
+      "description_zh": "在 Kotlin Multiplatform 集成 BarcodeSelection，通过点击或瞄准从密集场景的多个条码选择一个，使用 Compose DataCaptureView 跨 Android/iOS 共享；涵盖选择策略、结果及覆盖层画刷。",
+      "source": "Barcode Selection (BarcodeSelection) in Kotlin Multiplatform (KMP) projects — com.scandit.datacapture.kmp Maven artifacts, com.kmp.datacapture.barcode.selection imports. Tap-to-select or aim-to-select one barcode among many visible at once in dense scenes, shared across Android/iOS with the Compose Multiplatform DataCaptureView. Use for integration, selection-strategy configuration, result handling, overlay brushes, or troubleshooting selection.",
+      "source_sha256": "55b1c7cb9f7af9eec20df4ff1686dc43f750ac9458ae4d6fbf2e7e856642ee70",
+      "source_path": "skills/barcode-selection-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fef8f3bdae8d778535c945f1d908434f123d1cd67d31030a3f5e3164a6070486": {
+      "description_zh": "帮助选择 Scandit SparkScan、Barcode Capture、MatrixScan、Smart Label Capture、ID Capture 等产品，比较功能、码制、系统要求、设备兼容与定价，并定位平台文档、示例和实现技能。",
+      "source": "Use when a user mentions Scandit, data capture SDK, barcode scanning products, smart data capture, choosing a scanning product, comparing scanning features, supported barcode symbologies, system requirements, device compatibility, or Scandit pricing. Helps choose the right Scandit product (SparkScan, Barcode Capture, MatrixScan, Smart Label Capture, ID Capture, etc.), points to the correct documentation and sample apps for their platform, and hands off to implementation skills.",
+      "source_sha256": "fef8f3bdae8d778535c945f1d908434f123d1cd67d31030a3f5e3164a6070486",
+      "source_path": "skills/data-capture-sdk/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "236ac0a1c2cdfbf2005fe2069fb412a1f55ba847c1d8eced09fd037e9f1de872": {
+      "description_zh": "在 Web 使用 @scandit/web-id-bolt 集成托管证件扫描弹窗，以少量代码扫描护照、驾照和身份证并支持转交手机；涵盖 IdBoltSession、文档选择、验证器、匿名化、主题和工作流，页面内全自定义扫描改用 ID Capture。",
+      "source": "Scandit ID Bolt in web projects (`@scandit/web-id-bolt`) — the hosted, drop-in identity-document scanning pop-up (passports, driver's licenses, ID cards) with built-in handover to the user's phone, for adding ID scanning to a website with minimal code and no camera UI to build. Use for integration (IdBoltSession), document selection, validators, returned-data and anonymization options, theming and workflow customization, or troubleshooting. A different product from ID Capture — for in-page fully-customizable scanning embedded in your own UI use id-capture-web.",
+      "source_sha256": "236ac0a1c2cdfbf2005fe2069fb412a1f55ba847c1d8eced09fd037e9f1de872",
+      "source_path": "skills/id-bolt/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5828eaa28c26ce2d767019265be71e67ade63408614a197ec27e214a1ae7abd": {
+      "description_zh": "在原生 Android Kotlin/Java 集成 IdCapture，通过 MRZ、VIZ、PDF417 或移动证件扫描护照、驾照、身份证、居留证、医保卡和签证；处理接收类型、结果、拒绝规则、AAMVA、匿名化、UI、相机生命周期及迁移。",
+      "source": "Scandit ID Capture (`IdCapture`) in native Android (Kotlin or Java) projects — scanning passports, driver's licenses, ID cards, residence permits, health-insurance cards, visas via MRZ, VIZ, PDF417 barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, CapturedId result handling, rejection rules, AAMVA verification, anonymization, overlay UI, camera lifecycle, and Scandit Android SDK version migration.",
+      "source_sha256": "e5828eaa28c26ce2d767019265be71e67ade63408614a197ec27e214a1ae7abd",
+      "source_path": "skills/id-capture-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5032bcdab1750c970a573c834db15b8c2e96753c5b704c61b62a6b52f0b29c5c": {
+      "description_zh": "在 Capacitor 集成 Scandit IdCapture，通过 MRZ、VIZ、条码或移动证件扫描护照、驾照、身份证、居留证和签证，处理接收配置、字段、匿名化、作废证件检测、欧洲驾照背面解码、AAMVA 校验与迁移。",
+      "source": "Scandit ID Capture (`IdCapture`) in Capacitor projects — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, captured-field result handling, anonymization, add-on capabilities (voided-ID detection, European driving-license back decoding, AAMVA barcode verification), and SDK version migration.",
+      "source_sha256": "5032bcdab1750c970a573c834db15b8c2e96753c5b704c61b62a6b52f0b29c5c",
+      "source_path": "skills/id-capture-capacitor/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45d05aab5a7e47d8ed4419aab66d5693ac7808126a30958ada0367bcd1b926a2": {
+      "description_zh": "在 Cordova/PhoneGap 使用 scandit-cordova-datacapture-id 集成证件扫描，涵盖 MRZ、VIZ、条码及移动证件、接收配置、字段、匿名化、作废检测、欧洲驾照背面解码、AAMVA 校验和版本迁移。",
+      "source": "Scandit ID Capture (`IdCapture`) in Cordova / PhoneGap projects (`scandit-cordova-datacapture-id`) — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, captured-field result handling, anonymization, add-on capabilities (voided-ID detection, European driving-license back decoding, AAMVA barcode verification), and SDK version migration.",
+      "source_sha256": "45d05aab5a7e47d8ed4419aab66d5693ac7808126a30958ada0367bcd1b926a2",
+      "source_path": "skills/id-capture-cordova/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a21438b5642c10cc5a7ec1bb22b2936413430b0915322af8d804940cdcf889d3": {
+      "description_zh": "在 Flutter 集成 Scandit IdCapture，扫描护照、驾照、身份证、居留证和签证，支持 MRZ、VIZ、条码及移动证件；处理配置、字段、匿名化、作废检测、欧洲驾照背面与 AAMVA 扩展及迁移。",
+      "source": "Scandit ID Capture (`IdCapture`) in Flutter projects — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, captured-field result handling, anonymization, add-on capabilities (voided-ID detection, European driving-license back decoding, AAMVA barcode verification), and SDK version migration.",
+      "source_sha256": "a21438b5642c10cc5a7ec1bb22b2936413430b0915322af8d804940cdcf889d3",
+      "source_path": "skills/id-capture-flutter/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c797c71c1fd10daf572a7ae70f7b55c45b3b8313aa7bc9c07727e72182917356": {
+      "description_zh": "在原生 iOS Swift 的 UIKit 或 SwiftUI 集成 IdCapture，扫描护照、驾照、身份证、居留证、医保卡和签证；处理 MRZ、VIZ、PDF417、移动证件、CapturedId、拒绝规则、AAMVA、匿名化、UI及相机生命周期。",
+      "source": "Scandit ID Capture (`IdCapture`) in native iOS Swift projects (UIKit or SwiftUI) — scanning passports, driver's licenses, ID cards, residence permits, health-insurance cards, visas via MRZ, VIZ, PDF417 barcode, or mobile documents on iOS. Use for integration, accepted-document and scanner configuration, CapturedId result handling, rejection rules, AAMVA verification, anonymization, overlay UI, camera lifecycle, and Scandit iOS SDK version migration in Swift, UIKit, or SwiftUI iOS apps.",
+      "source_sha256": "c797c71c1fd10daf572a7ae70f7b55c45b3b8313aa7bc9c07727e72182917356",
+      "source_path": "skills/id-capture-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "503ea0d4400a13aabb8b3b76bac33142131735f58811006e7ea4cdb7a4145faa": {
+      "description_zh": "在 KMP/Compose Multiplatform 的共享 commonMain 使用 com.kmp.datacapture.id 集成 Android/iOS 证件扫描，处理类型配置、CapturedId、拒绝规则、AAMVA、匿名化和共享视图；其 API 与原生 Android/iOS 技能不同。",
+      "source": "Scandit ID Capture (`IdCapture`) in Kotlin Multiplatform (KMP) / Compose Multiplatform projects (`com.kmp.datacapture.id.*`, shared commonMain targeting Android + iOS) — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, PDF417 barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, CapturedId result handling, rejection rules, AAMVA verification, anonymization, and shared-view hosting — not the native Android or native iOS skills, whose APIs differ.",
+      "source_sha256": "503ea0d4400a13aabb8b3b76bac33142131735f58811006e7ea4cdb7a4145faa",
+      "source_path": "skills/id-capture-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64bb0fbfcac79107ac4dfe5382296c26bf2077f15b1a34233594f52cd6839079": {
+      "description_zh": "在 C# .NET Android 通过 Scandit.DataCapture.IdCapture 集成护照、驾照、身份证、居留证与签证扫描，处理 MRZ、VIZ、PDF417、移动证件、结果、拒绝规则、AAMVA、匿名化、UI及 SDK 迁移；MAUI 改用专用技能。",
+      "source": "Scandit ID Capture (`IdCapture`) in .NET for Android projects (`net*-android` target framework, `Scandit.DataCapture.IdCapture` NuGet, C#) — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, PDF417 barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, CapturedId result handling, rejection rules, AAMVA verification, anonymization, overlay UI, and Scandit .NET SDK version migration — for MAUI apps (`<UseMaui>true</UseMaui>`) use id-capture-net-maui instead.",
+      "source_sha256": "64bb0fbfcac79107ac4dfe5382296c26bf2077f15b1a34233594f52cd6839079",
+      "source_path": "skills/id-capture-net-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9eff19472267c477486b5db09ee53ad2b0bd6e9edb1ca71c8cbe6c3e3dca0f83": {
+      "description_zh": "在 C# .NET iOS 通过 Scandit.DataCapture.IdCapture 集成证件扫描，处理护照、驾照、身份证、居留证、签证的 MRZ、VIZ、PDF417 或移动证件，涵盖结果、拒绝规则、AAMVA、匿名化、UI 和迁移；MAUI 使用专用技能。",
+      "source": "Scandit ID Capture (`IdCapture`) in .NET for iOS projects (`net*-ios` target framework, `Scandit.DataCapture.IdCapture` NuGet, C#) — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, PDF417 barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, CapturedId result handling, rejection rules, AAMVA verification, anonymization, overlay UI, and Scandit .NET SDK version migration — for MAUI apps (`<UseMaui>true</UseMaui>`) use id-capture-net-maui instead.",
+      "source_sha256": "9eff19472267c477486b5db09ee53ad2b0bd6e9edb1ca71c8cbe6c3e3dca0f83",
+      "source_path": "skills/id-capture-net-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "770f9b66735e5a0776f23d9d516df54a6cf23f2d29c0d31152535e681ca722c7": {
+      "description_zh": "在 .NET MAUI 集成 Scandit IdCapture，扫描护照、驾照、身份证、居留证和签证，处理文档配置、CapturedId、拒绝规则、AAMVA、视图承载、生命周期和迁移；非 MAUI 改用 .NET Android 或 iOS 技能。",
+      "source": "Scandit ID Capture (`IdCapture`) in .NET MAUI projects (`<UseMaui>true</UseMaui>`, `Scandit.DataCapture.IdCapture` NuGet) — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, PDF417 barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, CapturedId result handling, rejection rules, AAMVA verification, MAUI view hosting and lifecycle, and SDK version migration — for non-MAUI .NET projects use `id-capture-net-android` (`net*-android`) or `id-capture-net-ios` (`net*-ios`) instead.",
+      "source_sha256": "770f9b66735e5a0776f23d9d516df54a6cf23f2d29c0d31152535e681ca722c7",
+      "source_path": "skills/id-capture-net-maui/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d24d440530be5045529baff45bbab7a75b8be396519bacbb6053ff296679431": {
+      "description_zh": "在 React Native 集成 Scandit IdCapture，扫描护照、驾照、身份证、居留证和签证，支持 MRZ、VIZ、条码或移动证件；处理配置、字段、匿名化、作废检测、欧洲驾照背面与 AAMVA 校验及迁移。",
+      "source": "Scandit ID Capture (`IdCapture`) in React Native projects — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, captured-field result handling, anonymization, add-on capabilities (voided-ID detection, European driving-license back decoding, AAMVA barcode verification), and SDK version migration.",
+      "source_sha256": "6d24d440530be5045529baff45bbab7a75b8be396519bacbb6053ff296679431",
+      "source_path": "skills/id-capture-rn/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7035e7c931bd06ee477775696bdc2ab482bd62cb39b476a77c16bf2b2f87da1": {
+      "description_zh": "在 TypeScript/JavaScript 浏览器应用使用 @scandit/web-datacapture-id 集成护照、驾照、身份证、居留证和签证扫描，处理 MRZ、VIZ、PDF417、移动证件、结果、拒绝规则、AAMVA、覆盖层和 SDK 迁移。",
+      "source": "Scandit ID Capture in web/browser projects (`@scandit/web-datacapture-id`) — scanning passports, driver's licenses, ID cards, residence permits, visas via MRZ, VIZ, PDF417 barcode, or mobile documents. Use for integration, accepted-document and scanner configuration, CapturedId result handling, rejection rules, AAMVA verification, overlay UI, and SDK version migration in TypeScript/JavaScript web apps.",
+      "source_sha256": "d7035e7c931bd06ee477775696bdc2ab482bd62cb39b476a77c16bf2b2f87da1",
+      "source_path": "skills/id-capture-web/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "019f7645c423feaafaee948b22f3e1a32b54fbc855efbc527f7fb665cdea1a5a": {
+      "description_zh": "在原生 Android 集成 Scandit LabelCapture，一次从标签提取价格、有效期、序号批号或重量，组合条码、正则文本与预制价格定义；涵盖标签配置、会话、画刷与浮动标记、Validation Flow 和迁移。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in native Android projects — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan, using barcode fields plus text fields with regex patterns and pre-built definitions like price capture. Use for integration, label-definition configuration, captured-session handling, overlay customization (brushes, floating badges), the Validation Flow, and SDK version migration.",
+      "source_sha256": "019f7645c423feaafaee948b22f3e1a32b54fbc855efbc527f7fb665cdea1a5a",
+      "source_path": "skills/label-capture-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "869f1951174193f57886ffa617e93334f001ea497ff04b0b75f66fd022ca2976": {
+      "description_zh": "在 Capacitor 集成 Smart Label Capture，组合条码与正则文本一次提取标签价格、有效期、序号批号和重量，处理定义、结果、Validation Flow 与 SDK 迁移。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in Capacitor projects — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan, using barcode fields plus text fields with regex patterns. Use for integration, label-definition configuration, captured-label handling, the Validation Flow, and SDK version migration.",
+      "source_sha256": "869f1951174193f57886ffa617e93334f001ea497ff04b0b75f66fd022ca2976",
+      "source_path": "skills/label-capture-capacitor/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e541914e63f5b97bc83e13ebd4c163c20629989f957f74d01e1089de5f582c0f": {
+      "description_zh": "在 Cordova/PhoneGap 集成 Smart Label Capture，一次提取标签价格、有效期、序号批号或重量，组合条码与正则文本，处理定义、结果、Validation Flow 和迁移。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in Cordova / PhoneGap projects — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan, using barcode fields plus text fields with regex patterns. Use for integration, label-definition configuration, captured-label handling, the Validation Flow, and SDK version migration.",
+      "source_sha256": "e541914e63f5b97bc83e13ebd4c163c20629989f957f74d01e1089de5f582c0f",
+      "source_path": "skills/label-capture-cordova/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "49c85db90264dc2a5ee488fa04cb3a2a5f8011dbea12877f266bc7999fee8eee": {
+      "description_zh": "在 Flutter 集成 Smart Label Capture，使用条码与正则文本一次读取标签价格、有效期、序号批号和重量，涵盖定义、结果、Validation Flow 及 SDK 迁移。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in Flutter projects — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan, using barcode fields plus text fields with regex patterns. Use for integration, label-definition configuration, captured-label handling, the Validation Flow, and SDK version migration.",
+      "source_sha256": "49c85db90264dc2a5ee488fa04cb3a2a5f8011dbea12877f266bc7999fee8eee",
+      "source_path": "skills/label-capture-flutter/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6f30c396f940bb681dc81e0da0d671c12fcf6aa2bbbb00a3afa24f90b50d4af": {
+      "description_zh": "在原生 iOS 集成 Smart Label Capture，一次提取标签价格、有效期、序号批号或重量，组合条码和正则文本，处理定义、捕获会话、覆盖层、Validation Flow 与迁移。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in native iOS projects — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan, using barcode fields plus text fields with regex patterns. Use for integration, label-definition configuration, captured-session handling, overlay UI, the Validation Flow, and SDK version migration.",
+      "source_sha256": "f6f30c396f940bb681dc81e0da0d671c12fcf6aa2bbbb00a3afa24f90b50d4af",
+      "source_path": "skills/label-capture-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "911eb67f2b58de29832f8d813b76b0302dcf9a0d5cc5c0ca2e8af4f28b070569": {
+      "description_zh": "在 KMP/Compose Multiplatform 共享代码集成 LabelCapture，一次提取价格、有效期、序号批号或重量，支持条码、正则文本及 Kotlin DSL；涵盖定义、会话、共享视图、覆盖层和 Validation Flow，替代单平台技能。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in Kotlin Multiplatform (KMP) / Compose Multiplatform projects (`com.kmp.datacapture.label.*`, shared commonMain consumed by Android and iOS) — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan, using barcode fields, regex text fields, or the Kotlin DSL. Use for integration, label-definition configuration, captured-session handling, shared-view hosting, overlay customization, and the Validation Flow — in place of the single-platform Android or iOS skills.",
+      "source_sha256": "911eb67f2b58de29832f8d813b76b0302dcf9a0d5cc5c0ca2e8af4f28b070569",
+      "source_path": "skills/label-capture-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85920837800fef4de65c3f79c69cf1c1f034f697f2503414500c07d446df2f18": {
+      "description_zh": "在 C# .NET Android 使用 Scandit.DataCapture.Label 一次提取标签多个字段，支持预制 VIN、价格和七段数码定义、会话、覆盖层、Validation Flow 与版本迁移；MAUI 使用专用技能。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in .NET for Android projects (`net*-android` target framework, `Scandit.DataCapture.Label` NuGet, C#) — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan via barcode and text fields. Use for integration, label definitions (including prebuilt VIN, price label, 7-segment), captured-session handling, overlays, the Validation Flow, and Scandit .NET SDK version migration — for MAUI apps (`<UseMaui>true</UseMaui>`) use label-capture-net-maui instead.",
+      "source_sha256": "85920837800fef4de65c3f79c69cf1c1f034f697f2503414500c07d446df2f18",
+      "source_path": "skills/label-capture-net-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4838687d70c86a0b374bddf585f297bb7d276af9b0449036490f9fb164a1934c": {
+      "description_zh": "在 C# .NET iOS 使用 Scandit.DataCapture.Label 集成多字段标签扫描，涵盖 VIN、价格、七段数码定义、会话、覆盖层、Validation Flow 及版本迁移；MAUI 改用专用技能。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in .NET for iOS projects (`net*-ios` target framework, `Scandit.DataCapture.Label` NuGet, C#) — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan via barcode and text fields. Use for integration, label definitions (including prebuilt VIN, price label, 7-segment), captured-session handling, overlays, the Validation Flow, and Scandit .NET SDK version migration — for MAUI apps (`<UseMaui>true</UseMaui>`) use label-capture-net-maui instead.",
+      "source_sha256": "4838687d70c86a0b374bddf585f297bb7d276af9b0449036490f9fb164a1934c",
+      "source_path": "skills/label-capture-net-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "be37494664795b7750a9f473ab940b68412cedf224e8cdbfedd65463d3fb703a": {
+      "description_zh": "在 .NET MAUI 集成 LabelCapture，一次读取标签价格、有效期、序号批号或重量，涵盖预制 VIN、价格、七段数码、会话、视图承载与生命周期、Validation Flow 和迁移；非 MAUI 使用平台技能。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in .NET MAUI projects (`<UseMaui>true</UseMaui>`, `Scandit.DataCapture.Label` NuGet) — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan via barcode and text fields. Use for integration, label definitions (prebuilt VIN, price label, 7-segment), captured-session handling, MAUI view hosting and lifecycle, the Validation Flow, and SDK version migration — for non-MAUI .NET projects use `label-capture-net-android` or `label-capture-net-ios` instead.",
+      "source_sha256": "be37494664795b7750a9f473ab940b68412cedf224e8cdbfedd65463d3fb703a",
+      "source_path": "skills/label-capture-net-maui/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3eaa001c2467ee4a779832e1530c530e7903ae0ddf62693fe5b3fe1908b4eca6": {
+      "description_zh": "在 React Native 集成 LabelCapture，组合条码与正则文本一次提取标签价格、有效期、序号批号和重量，处理定义、结果、Validation Flow 与迁移。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in React Native projects — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan, using barcode fields plus text fields with regex patterns. Use for integration, label-definition configuration, captured-label handling, the Validation Flow, and SDK version migration.",
+      "source_sha256": "3eaa001c2467ee4a779832e1530c530e7903ae0ddf62693fe5b3fe1908b4eca6",
+      "source_path": "skills/label-capture-rn/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09edc79aea74ea08134842e41aeaeb33a709fb81dd8f91104f2cd6bf00314071": {
+      "description_zh": "在 TypeScript/JavaScript 浏览器应用集成 LabelCapture，一次提取价格、有效期、序号批号和重量，组合条码与正则文本，涵盖定义、会话、覆盖层、Validation Flow 和迁移。",
+      "source": "Smart Label Capture (Scandit `LabelCapture`) in web/browser (TypeScript/JavaScript) projects — extracting multiple fields (price, expiry date, serial or lot number, weight) from a label in one scan, using barcode fields plus text fields with regex patterns. Use for integration, label-definition configuration, captured-session handling, overlay UI, the Validation Flow, and SDK version migration.",
+      "source_sha256": "09edc79aea74ea08134842e41aeaeb33a709fb81dd8f91104f2cd6bf00314071",
+      "source_path": "skills/label-capture-web/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c360212340b425650af14c40722fc829d3c457b3093c02fa8a1d96f16a9cd394": {
+      "description_zh": "在 Android Kotlin/Java 集成 MatrixScan AR 的 BarcodeAr，同时扫描多个条码并在跟踪条码上显示 AR 高亮和注释，处理设置、跟踪结果、提供器、版本迁移及故障。",
+      "source": "MatrixScan AR (Barcode AR, BarcodeAr) — scanning multiple barcodes at once with AR highlights and annotations over tracked barcodes in Android (Kotlin/Java) projects. Use for integration, scan settings, tracked-barcode handling, highlight and annotation providers, SDK version migration, or troubleshooting.",
+      "source_sha256": "c360212340b425650af14c40722fc829d3c457b3093c02fa8a1d96f16a9cd394",
+      "source_path": "skills/matrixscan-ar-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84d9e5b4fe6f29e52f77487a9ec79e5a8daf45e18de6580ec29e0a578b864bd1": {
+      "description_zh": "在原生 iOS Swift 的 UIKit/SwiftUI 为 MatrixScan AR 添加信息注释、弹窗、状态图标和响应式注释，控制内容、外观、显示时机及点击；扫描流程使用独立技能，不适用于 C#/.NET。",
+      "source": "MatrixScan AR annotations in native iOS Swift projects (UIKit/SwiftUI — Swift only, not C#/.NET) — info annotations, popovers, status icons, and responsive annotations attached to tracked barcodes. Use for adding annotations, customizing their appearance and content, controlling when they appear, or handling annotation taps — pipeline setup belongs to matrixscan-ar-ios; C#/.NET apps use matrixscan-ar-net-ios or matrixscan-ar-net-maui.",
+      "source_sha256": "84d9e5b4fe6f29e52f77487a9ec79e5a8daf45e18de6580ec29e0a578b864bd1",
+      "source_path": "skills/matrixscan-ar-annotation-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdab69a5b0991253a2d0209a2e042bc8768f7ebc237188f06acf39959ebb949b": {
+      "description_zh": "在 Capacitor Android/iOS 应用将 BarcodeArView 绑定 DOM 元素，集成多条码 AR 高亮与注释，处理码制、提供器、会话及从 BarcodeBatch/Tracking 迁移；不适用于纯 Web。",
+      "source": "Capacitor MatrixScan AR (Barcode AR, BarcodeAr) — scanning multiple barcodes at once with AR highlights and annotations, BarcodeArView attached to a DOM element, in Capacitor iOS/Android apps (not the plain-web sibling). Use for integration, symbology configuration, highlight and annotation providers, session handling, migration from BarcodeBatch/BarcodeTracking, or troubleshooting.",
+      "source_sha256": "bdab69a5b0991253a2d0209a2e042bc8768f7ebc237188f06acf39959ebb949b",
+      "source_path": "skills/matrixscan-ar-capacitor/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1892753d75c413ad579291a56edaa25694eafc9a9c114dda28c790a46619098a": {
+      "description_zh": "通过 Cordova Scandit 插件集成 MatrixScan AR 多条码扫描，在跟踪条码显示高亮、信息注释、弹窗及状态图标，处理码制、提供器、视图定制及 Batch/Tracking 迁移。",
+      "source": "Cordova MatrixScan AR (Barcode AR, BarcodeAr) via the scandit-cordova-datacapture-* plugins — scanning multiple barcodes at once with AR highlights and annotations (info annotations, popovers, status icons) on tracked barcodes. Use for integration, symbology configuration, highlight and annotation providers, BarcodeArView customization, migration from BarcodeBatch/BarcodeTracking, or troubleshooting.",
+      "source_sha256": "1892753d75c413ad579291a56edaa25694eafc9a9c114dda28c790a46619098a",
+      "source_path": "skills/matrixscan-ar-cordova/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2efb99027c32d9f1fc08c94044a965fbafe43813246c500d621a5ef11000f6a7": {
+      "description_zh": "在 Flutter 使用 scandit_flutter_datacapture_barcode_ar 同时扫描多条码并显示 AR 高亮注释，处理扫描设置、提供器、从 Batch/Tracking 迁移和故障。",
+      "source": "MatrixScan AR (Barcode AR, BarcodeAr) in Flutter projects (scandit_flutter_datacapture_barcode_ar) — scanning multiple barcodes at once with AR highlights and annotations over tracked barcodes. Use for integration, scan settings, highlight and annotation providers, migration from BarcodeBatch/BarcodeTracking, or troubleshooting.",
+      "source_sha256": "2efb99027c32d9f1fc08c94044a965fbafe43813246c500d621a5ef11000f6a7",
+      "source_path": "skills/matrixscan-ar-flutter/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf154eaa2113870247aa43a9c8c12a7de1dcd681e7d0158b01beb82679f465f1": {
+      "description_zh": "在 iOS Swift UIKit/SwiftUI 为 MatrixScan AR 跟踪条码添加或修改高亮形状，并处理高亮点击；扫描流程配置使用 matrixscan-ar-ios。",
+      "source": "MatrixScan AR highlights in iOS projects (Swift, UIKit/SwiftUI) — the shapes drawn over tracked barcodes. Use for adding highlights, customizing or modifying existing ones, or handling highlight tap interaction — pipeline setup belongs to matrixscan-ar-ios.",
+      "source_sha256": "bf154eaa2113870247aa43a9c8c12a7de1dcd681e7d0158b01beb82679f465f1",
+      "source_path": "skills/matrixscan-ar-highlight-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db6a8fe2cbce7ad28608b91a872c33047d735be9565cfd9ad1c07499be4559bd": {
+      "description_zh": "在 iOS Swift UIKit/SwiftUI 配置 MatrixScan AR 扫描流程，包含 BarcodeAr 模式设置、视图、监听、反馈、相机和控件，以及从 BarcodeBatch/Tracking 迁移；高亮与注释使用对应技能。",
+      "source": "MatrixScan AR scanning pipeline in iOS projects (Swift, UIKit/SwiftUI) — BarcodeAr mode and settings, BarcodeArView, listener, feedback, camera and controls, plus migration from MatrixScan Batch (BarcodeBatch/BarcodeTracking). Use for integration, configuration, or troubleshooting — highlight and annotation work routes to the sibling skills matrixscan-ar-highlight-ios and matrixscan-ar-annotation-ios.",
+      "source_sha256": "db6a8fe2cbce7ad28608b91a872c33047d735be9565cfd9ad1c07499be4559bd",
+      "source_path": "skills/matrixscan-ar-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfb871ec36265645eb5db1180a7a2bd0409edd295655943775aadf4ac8be3da8": {
+      "description_zh": "在 KMP 共享 commonMain 及 Android/iOS 宿主使用 Compose BarcodeArView 集成多条码 AR 扫描，处理设置、跟踪条码、高亮注释提供器和故障。",
+      "source": "MatrixScan AR (Barcode AR, BarcodeAr, Scandit KMP) in Kotlin Multiplatform (KMP) projects (`com.scandit.datacapture.kmp` packages, `com.kmp.datacapture.*` imports) — scanning multiple barcodes at once with AR highlights and annotations in shared commonMain code with Android/iOS hosts and the Compose Multiplatform BarcodeArView. Use for integration, scan settings, tracked-barcode handling, highlight and annotation providers, or troubleshooting.",
+      "source_sha256": "dfb871ec36265645eb5db1180a7a2bd0409edd295655943775aadf4ac8be3da8",
+      "source_path": "skills/matrixscan-ar-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4e9981e64aafe9986906ef6f810de52ea8cced7bde7c40a6df1ec54b7f02845": {
+      "description_zh": "在非 MAUI .NET Android 使用 Scandit.DataCapture.Barcode 集成多条码 AR 高亮注释，涵盖设置、监听事件、提供器、生命周期与迁移；MAUI 使用专用技能。",
+      "source": "MatrixScan AR (Barcode AR, BarcodeAr) in .NET for Android projects (`net*-android` TFM, `Scandit.DataCapture.Barcode` NuGet, non-MAUI — MAUI apps use matrixscan-ar-net-maui) — scanning multiple barcodes at once with AR highlights and annotations. Use for integration, settings, listeners/events, highlight and annotation providers, lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "b4e9981e64aafe9986906ef6f810de52ea8cced7bde7c40a6df1ec54b7f02845",
+      "source_path": "skills/matrixscan-ar-net-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "67a53659a477119fc4d9ed00b3767a91e9ca6b3103c0555e09dd176a7ded2f1a": {
+      "description_zh": "在非 MAUI C# .NET iOS 集成 MatrixScan AR 多条码高亮和信息注释、弹窗及状态图标，处理事件、提供器、手电筒缩放微距、生命周期与迁移；MAUI 改用专用技能。",
+      "source": "MatrixScan AR (Barcode AR, BarcodeAr) in .NET for iOS projects (`net*-ios` TFM, `Scandit.DataCapture.Barcode` NuGet, non-MAUI — MAUI apps use matrixscan-ar-net-maui) — scanning multiple barcodes at once with AR highlights and annotations (info annotations, popovers, status icons) in C#. Use for integration, settings, listeners/events, highlight and annotation providers, torch/zoom/macro controls, lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "67a53659a477119fc4d9ed00b3767a91e9ca6b3103c0555e09dd176a7ded2f1a",
+      "source_path": "skills/matrixscan-ar-net-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "677331634aa2b91864b05128403c86c1da03bd0ab1a0b98f01016a26557c945c": {
+      "description_zh": "在 .NET MAUI 通过 Scandit.DataCapture.Barcode.Maui 和 XAML BarcodeArView 集成多条码 AR 高亮注释，处理设置、监听事件、提供器、生命周期及迁移；非 MAUI 使用平台技能。",
+      "source": "MatrixScan AR (Barcode AR, BarcodeAr) in .NET MAUI projects (`Scandit.DataCapture.Barcode.Maui` NuGet, XAML BarcodeArView) — scanning multiple barcodes at once with AR highlights and annotations. For non-MAUI .NET projects use matrixscan-ar-net-android or matrixscan-ar-net-ios. Use for integration, settings, listeners/events, highlight and annotation providers, lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "677331634aa2b91864b05128403c86c1da03bd0ab1a0b98f01016a26557c945c",
+      "source_path": "skills/matrixscan-ar-net-maui/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68dc22225adee010e2c56de5bef8ae4487b0ebb17bac3f15c7f38faf71862fea": {
+      "description_zh": "在 React Native 集成 MatrixScan AR 多条码扫描，给跟踪条码添加覆盖层、高亮和注释，处理码制、提供器、会话、反馈及 BarcodeBatch 迁移。",
+      "source": "MatrixScan AR (Barcode AR, BarcodeAr) in React Native projects — scanning multiple barcodes at once with AR overlays, highlights, and annotations on tracked barcodes. Use for integration, symbology configuration, highlight and annotation providers, session handling, feedback, migration from BarcodeBatch, or troubleshooting.",
+      "source_sha256": "68dc22225adee010e2c56de5bef8ae4487b0ebb17bac3f15c7f38faf71862fea",
+      "source_path": "skills/matrixscan-ar-rn/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5ea04f6eb4480eee7cdf58a22c6826cc8a3a197d16575f203e6dfe54b54c24e": {
+      "description_zh": "在 TypeScript/JavaScript 浏览器使用 @scandit/web-datacapture-barcode 集成 MatrixScan AR 多条码覆盖层、高亮和注释，处理码制、提供器、会话及 BarcodeBatch 迁移。",
+      "source": "MatrixScan AR (Barcode AR, BarcodeAr) in web/browser (TypeScript/JavaScript) projects (@scandit/web-datacapture-barcode) — scanning multiple barcodes at once with AR overlays, highlights, and annotations on tracked barcodes. Use for integration, symbology configuration, highlight and annotation providers, session handling, migration from BarcodeBatch, or troubleshooting.",
+      "source_sha256": "a5ea04f6eb4480eee7cdf58a22c6826cc8a3a197d16575f203e6dfe54b54c24e",
+      "source_path": "skills/matrixscan-ar-web/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4572c91f24d9d8b7b45c32f17495ae1adcfebff2c5fd33ae9b536d693ded4a20": {
+      "description_zh": "在 Android Kotlin/Java 集成 MatrixScan Batch 多条码跟踪与扫描，涵盖 BarcodeBatch 和旧 BarcodeTracking、设置码制、跟踪结果、基本及高级覆盖层、生命周期与排查。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, legacy BarcodeTracking) — tracking and scanning multiple barcodes at once in Android (Kotlin/Java) projects. Use for integration, settings and symbologies, tracked-barcode handling, basic/advanced overlay customization, lifecycle, or troubleshooting.",
+      "source_sha256": "4572c91f24d9d8b7b45c32f17495ae1adcfebff2c5fd33ae9b536d693ded4a20",
+      "source_path": "skills/matrixscan-batch-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5476fec02a32cd19f5f558fb8e594aca87f15ebf7d6a669a689d098f8d1d1199": {
+      "description_zh": "在 Capacitor Android/iOS 使用条码插件集成 MatrixScan Batch 多条码扫描和基本高级 AR 覆盖层，处理码制、逐条码画刷、TrackedBarcodeView 注释、生命周期及迁移；不适用于纯 Web。",
+      "source": "Capacitor MatrixScan Batch (scandit-capacitor-datacapture-barcode) — MatrixScan, BarcodeBatch, legacy BarcodeTracking — tracking and scanning multiple barcodes at once with basic/advanced AR overlays in Capacitor iOS/Android apps (not the plain-web sibling). Use for integration, settings and symbologies, per-barcode brushes, TrackedBarcodeView annotations, lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "5476fec02a32cd19f5f558fb8e594aca87f15ebf7d6a669a689d098f8d1d1199",
+      "source_path": "skills/matrixscan-batch-capacitor/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4229291323350a1c4d2b8f1c6941a9dd438fbea40e1c8d1c38c60bf655583904": {
+      "description_zh": "在 Cordova 通过 Scandit 插件集成 MatrixScan Batch 多条码跟踪与扫描，配置基本高级 AR 覆盖层、码制、画刷、TrackedBarcodeView 注释、生命周期及迁移。",
+      "source": "Cordova MatrixScan Batch (scandit-cordova-datacapture-* plugins) — MatrixScan, BarcodeBatch, legacy BarcodeTracking — tracking and scanning multiple barcodes at once with basic/advanced AR overlays. Use for integration, settings and symbologies, per-barcode brushes, TrackedBarcodeView annotations, lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "4229291323350a1c4d2b8f1c6941a9dd438fbea40e1c8d1c38c60bf655583904",
+      "source_path": "skills/matrixscan-batch-cordova/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1c0551cd53f0ee88e5e8fe7e8d1b72322ec33287176891125ed652d20d096e3": {
+      "description_zh": "在 Flutter 使用 scandit_flutter_datacapture_barcode_batch 集成多条码跟踪扫描，处理码制、跟踪结果、逐条码画刷、高级覆盖层 AR 组件及生命周期。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, legacy BarcodeTracking) in Flutter projects (scandit_flutter_datacapture_barcode_batch) — tracking and scanning multiple barcodes at once. Use for integration, settings and symbologies, tracked-barcode handling, per-barcode brushes, advanced-overlay AR widgets, lifecycle, or troubleshooting.",
+      "source_sha256": "d1c0551cd53f0ee88e5e8fe7e8d1b72322ec33287176891125ed652d20d096e3",
+      "source_path": "skills/matrixscan-batch-flutter/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65cde72ee68e1fb0f295891bbbcce845838d01ef8d75298fb4752aa9105064b3": {
+      "description_zh": "在 iOS Swift UIKit/SwiftUI 集成 MatrixScan Batch 多条码跟踪扫描，处理码制、跟踪结果、基本高级覆盖层与生命周期，涵盖 BarcodeBatch 和旧 BarcodeTracking。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, legacy BarcodeTracking) — tracking and scanning multiple barcodes at once in iOS (Swift, UIKit/SwiftUI) projects. Use for integration, settings and symbologies, tracked-barcode handling, basic/advanced overlay customization, lifecycle, or troubleshooting.",
+      "source_sha256": "65cde72ee68e1fb0f295891bbbcce845838d01ef8d75298fb4752aa9105064b3",
+      "source_path": "skills/matrixscan-batch-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b1220ede9b8eca0465e6d0d8f8a6d89a3e0a3338af1ad0c833bedf784c5d20c": {
+      "description_zh": "在 KMP 共享 commonMain 及 Android/iOS 宿主以 Compose DataCaptureView 集成 MatrixScan Batch 多条码跟踪扫描，处理码制、跟踪结果、覆盖层、生命周期与故障。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, Scandit KMP) in Kotlin Multiplatform (KMP) projects (`com.scandit.datacapture.kmp` packages, `com.kmp.datacapture.*` imports) — tracking and scanning multiple barcodes at once in shared commonMain code with Android/iOS hosts and the Compose Multiplatform DataCaptureView. Use for integration, settings and symbologies, tracked-barcode handling, overlay customization, lifecycle, or troubleshooting.",
+      "source_sha256": "7b1220ede9b8eca0465e6d0d8f8a6d89a3e0a3338af1ad0c833bedf784c5d20c",
+      "source_path": "skills/matrixscan-batch-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ed59121cbccf18364c4afaeb4b0e7bb4d305e2288afbaa7ac0f207898381623": {
+      "description_zh": "在非 MAUI .NET Android 使用 Scandit.DataCapture.Barcode 集成 MatrixScan Batch 多条码扫描，处理码制、事件、基本高级覆盖层、相机生命周期及迁移；MAUI 使用专用技能。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, legacy BarcodeTracking) in .NET for Android projects (`net*-android` TFM, `Scandit.DataCapture.Barcode` NuGet, non-MAUI — MAUI apps use matrixscan-batch-net-maui) — tracking and scanning multiple barcodes at once. Use for integration, settings and symbologies, listeners/events, basic/advanced overlay customization, camera lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "9ed59121cbccf18364c4afaeb4b0e7bb4d305e2288afbaa7ac0f207898381623",
+      "source_path": "skills/matrixscan-batch-net-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19c4a64ab0cbd730134b614d4fa3a366b9a5d050d4deb63f004b8ffccce619fa": {
+      "description_zh": "在非 MAUI .NET iOS 使用 Scandit.DataCapture.Barcode 集成 MatrixScan Batch 多条码跟踪扫描，处理码制、事件、基本高级覆盖层、相机生命周期及迁移；MAUI 使用专用技能。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, legacy BarcodeTracking) in .NET for iOS projects (`net*-ios` TFM, `Scandit.DataCapture.Barcode` NuGet, non-MAUI — MAUI apps use matrixscan-batch-net-maui) — tracking and scanning multiple barcodes at once. Use for integration, settings and symbologies, listeners/events, basic/advanced overlay customization, camera lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "19c4a64ab0cbd730134b614d4fa3a366b9a5d050d4deb63f004b8ffccce619fa",
+      "source_path": "skills/matrixscan-batch-net-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2eb15d23f42b56e29455f4a8c2cab427f09a871fe4e6d509bc16d50ba49dcbb": {
+      "description_zh": "在 .NET MAUI 使用 Scandit.DataCapture.Barcode.Maui 和 XAML DataCaptureView 集成 MatrixScan Batch 多条码扫描及基本高级覆盖层，处理设置、事件、生命周期和迁移；非 MAUI 使用平台技能。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, legacy BarcodeTracking) in .NET MAUI projects (`Scandit.DataCapture.Barcode.Maui` NuGet, XAML DataCaptureView) — tracking and scanning multiple barcodes at once with basic/advanced overlays. For non-MAUI .NET projects use matrixscan-batch-net-android or matrixscan-batch-net-ios. Use for integration, settings, listeners/events, overlay customization, lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "a2eb15d23f42b56e29455f4a8c2cab427f09a871fe4e6d509bc16d50ba49dcbb",
+      "source_path": "skills/matrixscan-batch-net-maui/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e4266f01f146712d15245f0ffc53957dc6668a652c6e2fd6de911b265fc529a": {
+      "description_zh": "在 React Native 集成 MatrixScan Batch 多条码跟踪扫描，处理码制、逐条码画刷、高级 AR 注释、点击、手动反馈、生命周期和第三方扫描器替换。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, legacy BarcodeTracking) in React Native projects — tracking and scanning multiple barcodes at once. Use for integration, settings and symbologies, tracked-barcode handling, per-barcode brushes, advanced-overlay AR annotations, tap handling, manual feedback, lifecycle, third-party scanner replacement, or troubleshooting.",
+      "source_sha256": "7e4266f01f146712d15245f0ffc53957dc6668a652c6e2fd6de911b265fc529a",
+      "source_path": "skills/matrixscan-batch-rn/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecaf02ef852d2df60460be8d9f24a8ab2799e137052bb695817a9a19e9ad7754": {
+      "description_zh": "在 TypeScript/JavaScript 浏览器使用条码 SDK 集成 MatrixScan Batch 多条码跟踪扫描，处理码制、逐条码画刷、HTML 元素 AR 覆盖层、手动反馈、生命周期及迁移。",
+      "source": "MatrixScan Batch (MatrixScan, BarcodeBatch, legacy BarcodeTracking) in web/browser (TypeScript/JavaScript) projects (@scandit/web-datacapture-barcode) — tracking and scanning multiple barcodes at once. Use for integration, settings and symbologies, per-barcode brushes, HTML-element AR overlays, manual feedback, lifecycle, SDK version migration, or troubleshooting.",
+      "source_sha256": "ecaf02ef852d2df60460be8d9f24a8ab2799e137052bb695817a9a19e9ad7754",
+      "source_path": "skills/matrixscan-batch-web/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f928938f056ce4e957d01b9a6f081841e771fbd36db2314b3f857d8561ce667": {
+      "description_zh": "在原生 Android Activity 或 Fragment 集成 MatrixScan Count，使用 BarcodeCountView 批量计数收货、对照预期清单、聚类与状态模式，显式管理相机；涵盖码制设置、结果、UI 和故障。",
+      "source": "MatrixScan Count (BarcodeCount) in native Android projects (Kotlin/Java, `com.scandit.datacapture:barcode`) — counting and receiving barcodes in bulk with the BarcodeCountView UI in an Activity or Fragment, scanning against an expected/receiving list, clustering, status mode, explicitly managed camera. Use for integration, settings and symbology configuration, result handling, UI customization, or troubleshooting counting workflows.",
+      "source_sha256": "4f928938f056ce4e957d01b9a6f081841e771fbd36db2314b3f857d8561ce667",
+      "source_path": "skills/matrixscan-count-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "111aa214463bc85d4707f02f2335feb2d847d087b3df61139ab5644875f4a4d4": {
+      "description_zh": "在 Capacitor Android/iOS 应用使用条码插件和绑定 DOM 的 BarcodeCountView 实现扫描计数、盘点、清单收货和状态模式；涵盖集成、码制、结果与视图，React Native 使用专用技能。",
+      "source": "Capacitor MatrixScan Count (BarcodeCount) — plugin scandit-capacitor-datacapture-barcode. Multi-barcode counting and receiving workflows (scan-and-count, inventory count, capture list, status mode) with BarcodeCountView on a DOM element in Capacitor apps, iOS/Android native only. For React Native use matrixscan-count-rn. Use for integration, symbology configuration, result handling, view customization, or troubleshooting counting workflows.",
+      "source_sha256": "111aa214463bc85d4707f02f2335feb2d847d087b3df61139ab5644875f4a4d4",
+      "source_path": "skills/matrixscan-count-capacitor/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53d27bfdc4443f32adba817eecfae3dcd990921c18eb0fd76b2e4819ee39c4a9": {
+      "description_zh": "在 Cordova 使用 BarcodeCountView 实现扫描计数、盘点、对照清单、状态模式和点击取消计数，处理码制、视图、结果及迁移；Capacitor 使用专用技能。",
+      "source": "Cordova MatrixScan Count (BarcodeCount) — plugin scandit-cordova-datacapture-barcode. Counting and receiving workflows (scan-and-count, inventory count, scan against a capture list, status mode, tap-to-uncount) with BarcodeCountView in Cordova apps. For Capacitor use matrixscan-count-capacitor. Use for integration, symbology configuration, view customization, result handling, SDK version migration, or troubleshooting counting workflows.",
+      "source_sha256": "53d27bfdc4443f32adba817eecfae3dcd990921c18eb0fd76b2e4819ee39c4a9",
+      "source_path": "skills/matrixscan-count-cordova/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81cb564f9a0e8c0ae7309263009540d810ac6cb9f8635005738cc191fbc71a69": {
+      "description_zh": "在 Flutter 使用 barcode_count 包与 BarcodeCountView 实现多条码计数、收货、目标清单及状态提供器，处理扫描设置、结果、UI 和 SDK 迁移。",
+      "source": "MatrixScan Count (BarcodeCount) in Flutter projects — scandit_flutter_datacapture_barcode_count package. Multi-barcode counting and receiving workflows (scan-and-count, counting against a target list, status providers) with the BarcodeCountView widget. Use for integration, scan settings, result handling, UI customization, SDK version migration, or troubleshooting counting workflows.",
+      "source_sha256": "81cb564f9a0e8c0ae7309263009540d810ac6cb9f8635005738cc191fbc71a69",
+      "source_path": "skills/matrixscan-count-flutter/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b58cc882853f8c56971a7a79645142b287437a5a5e0549a2566523259f2605c": {
+      "description_zh": "在原生 iOS Swift/Objective-C 的 UIKit 或 SwiftUI 集成 BarcodeCountView，实现批量计数收货、预期清单和空间图，显式管理相机并处理码制、结果、UI及状态模式。",
+      "source": "MatrixScan Count (BarcodeCount) in native iOS projects (Swift/Objective-C, ScanditBarcodeCapture) — counting and receiving barcodes in bulk with the BarcodeCountView UI in UIKit or SwiftUI, scanning against an expected/receiving list, spatial map, explicitly managed camera. Use for integration, settings and symbology configuration, result handling, UI customization, status mode, or troubleshooting counting workflows.",
+      "source_sha256": "4b58cc882853f8c56971a7a79645142b287437a5a5e0549a2566523259f2605c",
+      "source_path": "skills/matrixscan-count-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b23ab68b43f725fd023c255c95d2b3f7377fb96574d2907883ce05ff6b4af180": {
+      "description_zh": "在 KMP 以 Compose 或基础 BarcodeCountView 跨 Android/iOS 共享计数收货流程，处理设置、监听、视图、状态模式与故障。",
+      "source": "MatrixScan Count (BarcodeCount) in Kotlin Multiplatform (KMP) projects — com.scandit.datacapture.kmp:* Maven artifacts (Scandit/datacapture-kmp-spm on iOS), com.kmp.datacapture.barcode.count imports. Counting and receiving workflows shared across Android/iOS with the Compose composable or base BarcodeCountView. Use for integration, settings configuration, listener wiring, view customization, status mode, or troubleshooting counting workflows.",
+      "source_sha256": "b23ab68b43f725fd023c255c95d2b3f7377fb96574d2907883ce05ff6b4af180",
+      "source_path": "skills/matrixscan-count-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43086c244d1a0f8192c53fce85f5bb7aa4f5f5467f0e118f03b4452600fe533c": {
+      "description_zh": "在非 MAUI .NET Android 通过 Scandit.DataCapture.Barcode 集成批量计数收货，使用 BarcodeCountView、收货清单及空间图并显式管理相机；涵盖设置、结果、UI、迁移，MAUI 使用专用技能。",
+      "source": "MatrixScan Count (BarcodeCount) in .NET for Android projects (net*-android, Scandit.DataCapture.Barcode NuGet, non-MAUI) — counting/receiving barcodes in bulk with BarcodeCountView, capture/receiving lists, spatial map, explicitly managed camera. For MAUI apps use matrixscan-count-net-maui. Use for integration, settings configuration, result handling, UI customization, SDK version migration, or troubleshooting counting workflows.",
+      "source_sha256": "43086c244d1a0f8192c53fce85f5bb7aa4f5f5467f0e118f03b4452600fe533c",
+      "source_path": "skills/matrixscan-count-net-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe4c555f35e17ae4fa8746d7dfcbed5849ec3885bbb0a8df4b09580d9be1595b": {
+      "description_zh": "在非 MAUI .NET iOS 的 UIViewController 使用 BarcodeCountView 批量计数收货，涵盖清单、空间图、显式相机管理、结果、UI和迁移；MAUI 使用专用技能。",
+      "source": "MatrixScan Count (BarcodeCount) in .NET for iOS projects (net*-ios, Scandit.DataCapture.Barcode NuGet, non-MAUI) — counting/receiving barcodes in bulk with BarcodeCountView in a UIViewController, capture/receiving lists, spatial map, explicitly managed camera. For MAUI apps use matrixscan-count-net-maui. Use for integration, settings configuration, result handling, UI customization, SDK version migration, or troubleshooting counting workflows.",
+      "source_sha256": "fe4c555f35e17ae4fa8746d7dfcbed5849ec3885bbb0a8df4b09580d9be1595b",
+      "source_path": "skills/matrixscan-count-net-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "628895fc95890042fd067a8dd005b1ab92afc72db5fc5fdf9850c535755e4f54": {
+      "description_zh": "在 .NET MAUI 通过 BarcodeCountView XAML 与收货清单建立计数流程，处理 XAML、构建器链、结果、UI和迁移；非 MAUI 改用平台技能。",
+      "source": "MatrixScan Count (BarcodeCount) in .NET MAUI projects (<UseMaui>true</UseMaui>, Scandit.DataCapture.Barcode.Maui NuGet) — counting/receiving workflows with the BarcodeCountView XAML control and capture/receiving lists. For non-MAUI .NET use matrixscan-count-net-android or matrixscan-count-net-ios. Use for integration, XAML and builder-chain setup, result handling, UI customization, SDK version migration, or troubleshooting counting workflows.",
+      "source_sha256": "628895fc95890042fd067a8dd005b1ab92afc72db5fc5fdf9850c535755e4f54",
+      "source_path": "skills/matrixscan-count-net-maui/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c070f25ac8b891036b097d6ab980040287fd62bb7e16fee3bc84aef583855b1": {
+      "description_zh": "在 React Native 使用 Scandit 条码包和 BarcodeCountView 实现多条码计数、预期清单及状态覆盖层，处理码制、结果和 UI；Capacitor 使用专用技能。",
+      "source": "MatrixScan Count (BarcodeCount) in React Native projects — scandit-react-native-datacapture-barcode package. Multi-barcode counting workflows (scan-and-count, counting against an expected capture list, status overlays) with BarcodeCountView. For Capacitor use matrixscan-count-capacitor. Use for integration, settings and symbology configuration, result handling, UI customization, or troubleshooting counting workflows.",
+      "source_sha256": "6c070f25ac8b891036b097d6ab980040287fd62bb7e16fee3bc84aef583855b1",
+      "source_path": "skills/matrixscan-count-rn/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddffd6bdcef4b7eb7c8067e4516b28212efd83958d5af16d1ea28f253fba23ca": {
+      "description_zh": "在 KMP 跨 Android/iOS 共享 MatrixScan Find 搜寻流程，建立物品清单并从多个条码定位目标，以 Compose 或基础 BarcodeFindView 显示，处理结果、UI与生命周期。",
+      "source": "MatrixScan Find (BarcodeFind) in Kotlin Multiplatform (KMP) projects — com.scandit.datacapture.kmp Maven artifacts, com.kmp.datacapture.barcode.find imports. Search-and-find workflows shared across Android/iOS — build an item list, find specific barcodes among many, BarcodeFindView UI (Compose or base view). Use for integration, item-list setup, result handling, UI customization, lifecycle wiring, or troubleshooting search-and-find workflows.",
+      "source_sha256": "ddffd6bdcef4b7eb7c8067e4516b28212efd83958d5af16d1ea28f253fba23ca",
+      "source_path": "skills/matrixscan-find-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ae6af0a5428797a06790a2a4d41ab8eabff5d69b499f3aa03e28fdcf0029d19": {
+      "description_zh": "在原生 iOS Swift 集成 MatrixScan Pick 拣取放置核验，通过 BarcodePickView、商品提供器、高亮、自动或点击拣取确认物品，处理设置、反馈、完成按钮和故障。",
+      "source": "MatrixScan Pick (BarcodePick) in native iOS projects (Swift, ScanditBarcodeCapture) — pick/put verification workflows where the app confirms each item picked, with BarcodePickView, product provider, highlight styles, and auto-pick or tap-to-pick behavior. Use for integration, settings configuration, highlight styling, feedback, finish-button handling, or troubleshooting pick workflows.",
+      "source_sha256": "2ae6af0a5428797a06790a2a4d41ab8eabff5d69b499f3aa03e28fdcf0029d19",
+      "source_path": "skills/matrixscan-pick-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4423f4d929457082b59b1a7e26b515306e38906e17c6722c79906530de7d63b0": {
+      "description_zh": "在 KMP 跨 Android/iOS 共享 MatrixScan Pick 拣取放置核验，配置 BarcodePickView、商品提供器、高亮和拣取取消确认，处理设置与监听。",
+      "source": "MatrixScan Pick (BarcodePick) in Kotlin Multiplatform (KMP) projects — com.scandit.datacapture.kmp Maven artifacts, com.kmp.datacapture.barcode.pick imports. Pick/put verification workflows shared across Android/iOS — BarcodePickView (Compose composable or platform view), product provider, highlight styles, pick/unpick confirmation. Use for integration, settings configuration, listener wiring, highlight styling, or troubleshooting pick workflows.",
+      "source_sha256": "4423f4d929457082b59b1a7e26b515306e38906e17c6722c79906530de7d63b0",
+      "source_path": "skills/matrixscan-pick-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc17dfe2fcabf6bdb2f9053ef4bb7abda3658474d9444188bbefc3e2b9bddcb5": {
+      "description_zh": "在 KMP commonMain 使用 Scandit Parser 将 GS1 AI、Digital Link、HIBC、瑞士 QR、VIN、IATA 登机牌或 EPC 的条码/RFID 字符串转为 ParsedField；涵盖配置与结果，AAMVA 驾照使用 ID Capture。",
+      "source": "Scandit Parser in Kotlin Multiplatform (KMP) projects — com.scandit.datacapture.kmp:parser artifact, com.kmp.datacapture.parser imports. Parses barcode/RFID data strings (GS1 AI, GS1 Digital Link, HIBC, Swiss QR, VIN, IATA boarding pass, EPC) into ParsedField values in commonMain. AAMVA driver's licenses belong to ID Capture (id-capture-* skills). Use for Parser setup, data-format configuration, parsed-result handling, or troubleshooting parsing.",
+      "source_sha256": "cc17dfe2fcabf6bdb2f9053ef4bb7abda3658474d9444188bbefc3e2b9bddcb5",
+      "source_path": "skills/parser-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "825d65c21432a156fc66d5a6974c327191061890c710b3acc673be80a2ae4400": {
+      "description_zh": "在应用已迁移到 .NET Android、iOS 或 MAUI 后，仅迁移其 Scandit SDK：替换旧 Xamarin 包与命名空间，修复 SDK 8 初始化和视图并验证扫描，再转交平台技能；不迁移整个应用。",
+      "source": "Migrate the Scandit Data Capture SDK integration after a Xamarin app is already on the .NET stack (.NET for Android, .NET for iOS, or .NET MAUI) — e.g. after Microsoft's .NET app-modernization tooling. Use when the project builds as .NET/MAUI but Scandit code still references `Scandit.DataCapture.*.Xamarin(.Forms)` packages, `.Unified` namespaces, or legacy `Scandit.BarcodePicker.Xamarin`. Swaps packages, fixes SDK-8 init, namespaces and views, verifies scanning, and hands off to the matching `*-net-android`/`-net-ios`/`-net-maui` skill. Migrates only the Scandit SDK, not the general app.",
+      "source_sha256": "825d65c21432a156fc66d5a6974c327191061890c710b3acc673be80a2ae4400",
+      "source_path": "skills/scandit-xamarin-to-net-migration/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "948eb6e458a7e83b3afa8c6598970ede9d5899779d7e268ee5c8a0c713923f59": {
+      "description_zh": "在原生 Android Kotlin/Java 集成 SparkScan 预制 UI 单条码扫描，处理设置、结果、UI、SDK 迁移、第三方扫描库替换及故障。",
+      "source": "SparkScan single-barcode scanning with the pre-built scanning UI in native Android (Kotlin/Java) projects. Use for integration, scan settings, result handling, UI customization, SDK version migration, replacing a third-party barcode scanning library, or troubleshooting.",
+      "source_sha256": "948eb6e458a7e83b3afa8c6598970ede9d5899779d7e268ee5c8a0c713923f59",
+      "source_path": "skills/sparkscan-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1292210441b3682fd4426d3d98689308ee6f26394a8d0d680fc3bfe59c2ff2a8": {
+      "description_zh": "在 Capacitor Ionic 混合应用通过 Scandit 插件集成 SparkScan 预制 UI 单条码扫描，处理设置、结果、UI和迁移；不属于纯浏览器 Web SDK。",
+      "source": "Capacitor — SparkScan single-barcode scanning with the pre-built scanning UI in Capacitor (Ionic) hybrid mobile apps via the Scandit Capacitor plugins (`ScanditCaptureCorePlugin`), not the browser-only web SDK. Use for integration, scan settings, result handling, UI customization, SDK version migration, or troubleshooting.",
+      "source_sha256": "1292210441b3682fd4426d3d98689308ee6f26394a8d0d680fc3bfe59c2ff2a8",
+      "source_path": "skills/sparkscan-capacitor/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4c682dcf455136ad79707afa7c48c3d58d3eaf91c5edefa20fb53be955c47b4": {
+      "description_zh": "在 Cordova 混合应用通过 Scandit 插件与 window.Scandit 集成 SparkScan 预制 UI 单条码扫描，处理设置、结果、UI和迁移；不属于纯浏览器 SDK。",
+      "source": "Cordova — SparkScan single-barcode scanning with the pre-built scanning UI in Apache Cordova hybrid apps via the `scandit-cordova-datacapture-*` plugins (global `window.Scandit`), not the browser-only web SDK. Use for integration, scan settings, result handling, UI customization, SDK version migration, or troubleshooting.",
+      "source_sha256": "e4c682dcf455136ad79707afa7c48c3d58d3eaf91c5edefa20fb53be955c47b4",
+      "source_path": "skills/sparkscan-cordova/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22adbe3a8a9219f9804dfd6591b9a93e75b33be821013cfdfdac2e5d79753bc4": {
+      "description_zh": "在 Flutter Dart 使用 SparkScanView 预制 UI 集成单条码扫描，处理设置、结果、UI定制、迁移及故障。",
+      "source": "SparkScan single-barcode scanning with the pre-built scanning UI (`SparkScanView` widget) in Flutter (Dart) projects. Use for integration, scan settings, result handling, UI customization, SDK version migration, or troubleshooting.",
+      "source_sha256": "22adbe3a8a9219f9804dfd6591b9a93e75b33be821013cfdfdac2e5d79753bc4",
+      "source_path": "skills/sparkscan-flutter/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47345b69d0b5660759c2d51650d3f84d6ea0c5316b727263eb94766d6f049522": {
+      "description_zh": "在原生 iOS Swift 使用 SparkScan 预制 UI 集成单条码扫描，处理设置、结果、UI、SDK 迁移和第三方扫描库替换。",
+      "source": "SparkScan single-barcode scanning with the pre-built scanning UI in native iOS (Swift) projects. Use for integration, scan settings, result handling, UI customization, SDK version migration, replacing a third-party barcode scanning library, or troubleshooting.",
+      "source_sha256": "47345b69d0b5660759c2d51650d3f84d6ea0c5316b727263eb94766d6f049522",
+      "source_path": "skills/sparkscan-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b336da7c4893b3a88496a8b23afb4b00540e248e5b0c7f5abd0f41cc674f9933": {
+      "description_zh": "在 KMP/Compose Multiplatform 使用 Scandit KMP SDK 集成 SparkScan 预制单条码 UI，在共享代码嵌入 SparkScanView，处理设置、结果、反馈和界面。",
+      "source": "SparkScan single-barcode scanning with the pre-built scanning UI in Kotlin Multiplatform (KMP) and Compose Multiplatform projects using Scandit's KMP SDK (`com.kmp.datacapture.*` imports). Use for integration, scan settings, result handling, feedback and UI customization, embedding `SparkScanView` in shared code, or troubleshooting.",
+      "source_sha256": "b336da7c4893b3a88496a8b23afb4b00540e248e5b0c7f5abd0f41cc674f9933",
+      "source_path": "skills/sparkscan-kmp/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ae504985d71a3813da65fddbfd2ba9b2fdf4ab6cb5b75b4f558c538d7be32d8": {
+      "description_zh": "在非 MAUI .NET Android 使用 SparkScanView 单条码预制 UI，处理设置、结果、反馈、生命周期、v6 至 v8 迁移与 ZXing.Net 替换；MAUI 使用专用技能。",
+      "source": "SparkScan single-barcode scanning with the pre-built `SparkScanView` UI in .NET for Android projects (`net*-android` target framework, `Scandit.DataCapture.Barcode` NuGet, non-MAUI — for MAUI apps use sparkscan-net-maui). Use for integration, scan settings, result handling, feedback customization, lifecycle wiring, SDK version migration (v6→v7→v8), replacing third-party scanners (ZXing.Net), or troubleshooting.",
+      "source_sha256": "4ae504985d71a3813da65fddbfd2ba9b2fdf4ab6cb5b75b4f558c538d7be32d8",
+      "source_path": "skills/sparkscan-net-android/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5fd9309c5042177ad619c80c7d5be6fd29f3ede92f6ecbe1129ddc278439164": {
+      "description_zh": "在非 MAUI .NET iOS 使用 SparkScanView 单条码预制 UI，处理设置、结果、反馈、扫描生命周期、v6 至 v8 迁移及 ZXing.Net.Mobile 替换；MAUI 使用专用技能。",
+      "source": "SparkScan single-barcode scanning with the pre-built `SparkScanView` UI in .NET for iOS projects (`net*-ios` target framework, `Scandit.DataCapture.Barcode` NuGet, non-MAUI — for MAUI apps use sparkscan-net-maui). Use for integration, scan settings, result handling, feedback customization, scanning lifecycle, SDK version migration (v6→v7→v8), replacing third-party scanners (ZXing.Net.Mobile), or troubleshooting.",
+      "source_sha256": "a5fd9309c5042177ad619c80c7d5be6fd29f3ede92f6ecbe1129ddc278439164",
+      "source_path": "skills/sparkscan-net-ios/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a76dcf1a22a142b0c350f936e7e19aca1554da3423d78d55041ab5da931b7523": {
+      "description_zh": "在 .NET MAUI 使用 Scandit.DataCapture.Barcode.Maui 的 SparkScanView 单条码预制 UI，处理设置、结果、反馈、界面、v6 至 v8 迁移与 ZXing.Net.Maui 替换；非 MAUI 使用平台技能。",
+      "source": "SparkScan single-barcode scanning with the pre-built `SparkScanView` UI in .NET MAUI projects (`<UseMaui>true</UseMaui>`, `Scandit.DataCapture.Barcode.Maui` NuGet) — for non-MAUI .NET projects use sparkscan-net-android or sparkscan-net-ios. Use for integration, scan settings, result handling, feedback and UI customization, SDK version migration (v6→v7→v8), replacing third-party MAUI scanners (ZXing.Net.Maui), or troubleshooting.",
+      "source_sha256": "a76dcf1a22a142b0c350f936e7e19aca1554da3423d78d55041ab5da931b7523",
+      "source_path": "skills/sparkscan-net-maui/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b42682b50e3868b16e44e38fd18eeb219a9589487730e11401d7c48971a179d9": {
+      "description_zh": "在 React Native 使用 SparkScanView 组件的预制 UI 集成单条码扫描，处理设置、结果、界面定制、版本迁移及故障。",
+      "source": "SparkScan single-barcode scanning with the pre-built scanning UI (`SparkScanView` component) in React Native projects. Use for integration, scan settings, result handling, UI customization, SDK version migration, or troubleshooting.",
+      "source_sha256": "b42682b50e3868b16e44e38fd18eeb219a9589487730e11401d7c48971a179d9",
+      "source_path": "skills/sparkscan-rn/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac7cac6f6969ca7ed330f504bb807c107162f6d4f40e748d80793838adc7631a": {
+      "description_zh": "在浏览器及 React、Vite、Next.js 使用 SparkScan 浮动按钮和 spark-scan-view 预制 UI，处理设置、结果、按钮、StrictMode、React 18/19 绑定、相机、HTTPS、COOP-COEP 和迁移；不用于原生或混合平台。",
+      "source": "SparkScan single-barcode scanning with the pre-built scanning UI (floating trigger button, `<spark-scan-view>`) in web/browser projects (`@scandit/web-datacapture-barcode`), including React/Vite/Next.js apps. Use for integration, scan settings, result handling, trigger-button customization, React-specific issues (StrictMode, React 18 vs 19 binding), camera/HTTPS/COOP-COEP troubleshooting, or SDK version migration — not for SparkScan on native or hybrid platforms.",
+      "source_sha256": "ac7cac6f6969ca7ed330f504bb807c107162f6d4f40e748d80793838adc7631a",
+      "source_path": "skills/sparkscan-web/SKILL.md",
+      "package_sha256": "96d6e159f92cee92c530d928f35358f63fee4bff262121ac0df2b9d1071125a0",
+      "source_package": "Scandit SDK-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce9b293760afff12f0ade4d75394a8e2bfa227a4e3e1f9190be568fdf62b4ea1": {
+      "description_zh": "提供科学与研究代码编写规则，适用于数据分析、模拟、数值方法、统计或结果用于科学结论的计算。",
+      "source": "Rules for writing scientific and research code. Activates when writing code for data analysis, simulations, numerical methods, statistical analysis, or any computation whose results feed into scientific conclusions.",
+      "source_sha256": "ce9b293760afff12f0ade4d75394a8e2bfa227a4e3e1f9190be568fdf62b4ea1",
+      "source_path": "skills/scientific-coding/SKILL.md",
+      "package_sha256": "cae67fbc115cf015e179b4aa309d966f1d0bd7e257d96f656e1568b61c44a616",
+      "source_package": "Scientific-Coding-Skill-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "757e20d216bc06fee625dd29b9535ef1930937e12bc0364f3b41f1dab4b5e705": {
+      "description_zh": "从 URL 获取文章、文档和网页内容，按隐私要求选择读取工具。",
+      "source": "Fetch web page content from URLs. Read articles, documentation, and web pages with privacy-aware tool selection. URL取得、ページ読み込み、コンテンツ取得、Webページ、記事取得、ドキュメント取得、fetch、read page、get content",
+      "source_sha256": "757e20d216bc06fee625dd29b9535ef1930937e12bc0364f3b41f1dab4b5e705",
+      "source_path": "skills/fetch/SKILL.md",
+      "package_sha256": "9a707beee3eeba95882e031462a8f9abaa446f0b1f7a0edff39314e9b3ef0197",
+      "source_package": "scout-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "017ddd0bb828aaa0b2a8ee5cc6924f5f4dcc1f1065000d0764cbf4624d8a33e1": {
+      "description_zh": "进行精确的网络搜索与内容获取，寻找相关来源并阅读网页。",
+      "source": "Web search and content fetching. Find relevant sources and read web pages with precision.",
+      "source_sha256": "017ddd0bb828aaa0b2a8ee5cc6924f5f4dcc1f1065000d0764cbf4624d8a33e1",
+      "source_path": "skills/search/SKILL.md",
+      "package_sha256": "9a707beee3eeba95882e031462a8f9abaa446f0b1f7a0edff39314e9b3ef0197",
+      "source_package": "scout-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3d61a8f5dd0b469f41bb9c7b95e7f3751338bc61a7f1fa944026b236f196c0e": {
+      "description_zh": "交互式配置 scout 的搜索引擎和读取工具，涵盖 Context7、Jina Reader、Exa 与 Playwright，处理 API key、新增引擎、获取失败及搜索质量。",
+      "source": "Guided interactive setup for scout's search engines and fetching tools. Covers Context7, Jina Reader, Exa, and Playwright. Triggers when setting up scout, configuring API keys, adding search engines, troubleshooting fetch failures, or improving search quality.",
+      "source_sha256": "d3d61a8f5dd0b469f41bb9c7b95e7f3751338bc61a7f1fa944026b236f196c0e",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "9a707beee3eeba95882e031462a8f9abaa446f0b1f7a0edff39314e9b3ef0197",
+      "source_package": "scout-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ef164b9429b13e9874696b41a0401cc5d96120cb98ef7fb5320c3eadafc2463": {
+      "description_zh": "为当前代码库中的 Web 应用制作 Screen Browser 旁白教程或产品演示，从代码编写通俗操作指南，交给 MCP 创建项目、上传指南并启动录制，取回视频。",
+      "source": "Produce a narrated tutorial video of a web app with Screen Browser. Use when asked to \"make a tutorial video\", \"record a walkthrough\", \"create a product demo\" or \"document this feature as a video\" for the app whose source code you are working in. Writes a plain-language guide from the codebase, hands it to the Screen Browser MCP server (create project, upload guides, start the run) and brings back the video.",
+      "source_sha256": "5ef164b9429b13e9874696b41a0401cc5d96120cb98ef7fb5320c3eadafc2463",
+      "source_path": "skills/screenbrowser/SKILL.md",
+      "package_sha256": "fc51dac0579869b4ea891fca12b1600919bee64ab38fae33e1ce5f773b0fac20",
+      "source_package": "Screen Browser-1.3.6-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58b0e082ce0a77addc131cea8c56f7342258c5912e4a535209127281e3ae259d": {
+      "description_zh": "通过托管 ScreenshotOne MCP 截取网站画面、提取干净 Markdown 或查询 API 配额，用于网站截图、视觉分析、内容提取及额度检查。",
+      "source": "Capture website screenshots, extract clean webpage Markdown, or check ScreenshotOne API usage with the hosted ScreenshotOne MCP server. Use for requested website captures, visual website analysis, content extraction, and capture quota checks.",
+      "source_sha256": "58b0e082ce0a77addc131cea8c56f7342258c5912e4a535209127281e3ae259d",
+      "source_path": "skills/screenshot/SKILL.md",
+      "package_sha256": "c5bf8c37133f0eece85e8ec9e4d2bc8ad1630cb19e5bec1554e1f1e9b807cd8e",
+      "source_package": "ScreenshotOne-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37460692d1ea1ce612605a49453aaba26621c7649537ba2a9bec2cfddc4a02da": {
+      "description_zh": "生成在 scrimba.com 实时渲染的视频讲解，结合旁白、动画、Mermaid、LaTeX 和精确代码走读，解释代码、概念、流程、架构、分支、PR 或差异，也支持课程和播放列表。",
+      "source": "Create a Scrimba video explainer — an instantly generated video with narration, animations, mermaid diagrams, LaTeX maths, and precisely composed code walkthroughs, rendered live on scrimba.com. Use when the user wants something explained visually or as a video, or asks for an explainer or walkthrough of code, a concept, a flow, an architecture, a git branch, a PR, or a diff. Also use for playlists or courses of lessons.",
+      "source_sha256": "37460692d1ea1ce612605a49453aaba26621c7649537ba2a9bec2cfddc4a02da",
+      "source_path": "skills/explain/SKILL.md",
+      "package_sha256": "3ec992e02905188645b980c9769734a1a691b1aeb176ec9add629bdf00be71d1",
+      "source_package": "scrimba-explain-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a44db6540feb263d61113e12838a9a4ceb5b8be85ade7abc7739b61787c1fc7": {
+      "description_zh": "审计项目中可转换为独立脚本的 LLM 指令，展示预计 token 节省和时间估计。",
+      "source": "Audit a project for LLM instructions that could be turned into standalone scripts. Shows token savings and time estimates.",
+      "source_sha256": "0a44db6540feb263d61113e12838a9a4ceb5b8be85ade7abc7739b61787c1fc7",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "9a221140020ef6c5620363da397364c7a6890cea6af20144e0edbafa26f98341",
+      "source_package": "scriptify-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "24c96cd34c7b888a77adcda10e3ec06ac2d734f2f0e28a8d2d613078a85b556f": {
+      "description_zh": "依据审计项或自然语言指令生成独立脚本，以确定性代码替代相应 LLM 调用。",
+      "source": "Generate a standalone script from an audit report item or a natural-language instruction. Replaces LLM calls with deterministic code.",
+      "source_sha256": "24c96cd34c7b888a77adcda10e3ec06ac2d734f2f0e28a8d2d613078a85b556f",
+      "source_path": "skills/generate/SKILL.md",
+      "package_sha256": "9a221140020ef6c5620363da397364c7a6890cea6af20144e0edbafa26f98341",
+      "source_package": "scriptify-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cfcf4e3b29e1a76fea816cbf54ce66c403ef86f1c2a98704e8e8d34cb60eec4c": {
+      "description_zh": "核验生成脚本是否正确复现所替代的原始 LLM 指令行为。",
+      "source": "Verify that generated scripts correctly replicate the behaviour of the original LLM instructions they replace.",
+      "source_sha256": "cfcf4e3b29e1a76fea816cbf54ce66c403ef86f1c2a98704e8e8d34cb60eec4c",
+      "source_path": "skills/verify/SKILL.md",
+      "package_sha256": "9a221140020ef6c5620363da397364c7a6890cea6af20144e0edbafa26f98341",
+      "source_package": "scriptify-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74143deb69bb4c1b77b584de8227d9aa123403a17668cad3ff758c9cd01c234b": {
+      "description_zh": "查找代码库中全部 TODO 注释；此条位于测试夹具示例目录。",
+      "source": "Find all TODO comments in the codebase",
+      "source_sha256": "74143deb69bb4c1b77b584de8227d9aa123403a17668cad3ff758c9cd01c234b",
+      "source_path": "test/fixtures/skills/example/SKILL.md",
+      "package_sha256": "9a221140020ef6c5620363da397364c7a6890cea6af20144e0edbafa26f98341",
+      "source_package": "scriptify-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4e51164d52cd7753a3bc7ed0917333193e1fbc01efd23f332c49a77e5167231": {
+      "description_zh": "从状态适配器读取仅追加的审计日志，生成带 PRISMA 流程风格的综述过程摘要，说明审核发生的操作。",
+      "source": "Use when the user asks for the audit trail, PRISMA flow, or a record of what happened during the review. Reads the append-only audit log from the state adapter and renders it as a PRISMA-flavored summary.",
+      "source_sha256": "c4e51164d52cd7753a3bc7ed0917333193e1fbc01efd23f332c49a77e5167231",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20a9b60469e7b70ebc9ad9a5ce8fb7d635ed037e5c8b40c531499ccfbc4663fa": {
+      "description_zh": "按概念汇总论文证据并进行两阶段同问题检查，区分理论冲突与范围差异，报告同问题分歧、范围变化发现和需人工审查的不确定案例。",
+      "source": "Use when the user asks where papers disagree, wants to surface contradictions, or is preparing a \"limits of the evidence\" section. Groups evidence by concept, then runs a two-stage same-question check before deciding whether direction-mismatch is theoretical conflict or scope variation. Reports three buckets — same-question disagreements, scope-variation findings, and uncertain cases for human review.",
+      "source_sha256": "20a9b60469e7b70ebc9ad9a5ce8fb7d635ed037e5c8b40c531499ccfbc4663fa",
+      "source_path": "skills/contradictions/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a8f976bcd51ad97fa381f1608d80a508f86d7009cf46bd62ce537e3cd1765c22": {
+      "description_zh": "获取保留论文全文或从 PDF 提取方法与发现，通过适合 Cowork 的全文获取流程生成带定位引用的证据行。",
+      "source": "Use when the user asks to pull full text of kept papers, extract methods/findings, or populate evidence from PDFs. Runs the Cowork-appropriate full-text cascade and writes locator-cited evidence rows.",
+      "source_sha256": "a8f976bcd51ad97fa381f1608d80a508f86d7009cf46bd62ce537e3cd1765c22",
+      "source_path": "skills/extract/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a695b8dd730b2208e0712ebe2219bb0b4c3830422d8d642dae03924c324b5c5": {
+      "description_zh": "当用户有论文、章节、学位论文、会议报告或毕业研究意图但缺少明确研究问题时，逐次提问形成可辩护的问题、子问题、边界和研究传统，可接续研究方向或从零开始。",
+      "source": "Use when the user has a topic and a clear intent to write a research-paper-shaped artifact (paper, chapter, dissertation, conference talk, EdD/DBA capstone) but doesn't yet have a defensible research question. Grills the user one question at a time toward a scoped research question, sub-questions, boundaries, and tradition. Works both downstream of `research-direction` (with handoff state inherited) and as cold-start. Fire even when the user doesn't explicitly ask — landing here with a topic but no question is the trigger.",
+      "source_sha256": "5a695b8dd730b2208e0712ebe2219bb0b4c3830422d8d642dae03924c324b5c5",
+      "source_path": "skills/grill-question/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45a39baa7321b599d4f48159e535b95628fb55dd5fb47bf69ebd344d27ff9a49": {
+      "description_zh": "将已完成综述资料上传至 NotebookLM 笔记本并触发 Studio 生成播客、幻灯片、思维导图或视频；未连接时指导用户手动上传。",
+      "source": "Use when the user asks for a podcast, slide deck, mind map, or video of a finished review. Publishes the review's artifacts to a NotebookLM notebook (or guides the user through the manual upload path if NotebookLM is not connected) and triggers Studio artifact generation.",
+      "source_sha256": "45a39baa7321b599d4f48159e535b95628fb55dd5fb47bf69ebd344d27ff9a49",
+      "source_path": "skills/publish/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76b9d9e7ed50746e03de8412839ecd9344f7f7ceea9b745826d084f770f84a50": {
+      "description_zh": "把完成的 synthesis.md、corpus.jsonl 和 evidence.jsonl 渲染为独立 HTML 来源查看器，将每个 paper_id:locator 转为作者年份链接，侧栏展示论文、出处、DOI、支持原话及源链接。",
+      "source": "Use when the user has a finished synthesis (synthesis.md + corpus.jsonl + evidence.jsonl) and wants a click-to-source viewer they can open in the Cowork sidebar, share with their advisor, or paste into a chapter draft. Produces a self-contained HTML artifact via `mcp__cowork__create_artifact` where every `[paper_id:locator]` token in the synthesis renders as a clickable author-year link; clicking opens a side panel showing the paper title, venue, DOI, the verbatim supporting quote at that locator, and a one-click link to the source.",
+      "source_sha256": "76b9d9e7ed50746e03de8412839ecd9344f7f7ceea9b745826d084f770f84a50",
+      "source_path": "skills/render/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "04fa7ec14380b72235427c39bf53ea0d335be6d84d230a921cb61f82b26e258a": {
+      "description_zh": "当用户有研究主题但未明确用途时，围绕目的、受众、产物和深度提问，约 3 至 5 轮后转交下游技能；不用于直接学习主题内容或普通计划决策的追问。",
+      "source": "Use when the user has a research topic but doesn't yet know what they want from engaging with it — could be a podcast, a paper, a chapter, a strategy memo, a teaching module, or just clearer thinking. Grills the user about their relationship to the topic (purpose, audience, artifact, depth) — NOT about the topic's content. Do NOT fire when the user wants to learn the topic itself, and do NOT fire on a bare \"grill me\" about a plan, design, or decision — that request belongs to a general-purpose grilling skill, not this one. Fire when the user has a topic and needs to figure out what to do with it. Routes to the right downstream skill after 3–5 turns.",
+      "source_sha256": "04fa7ec14380b72235427c39bf53ea0d335be6d84d230a921cb61f82b26e258a",
+      "source_path": "skills/research-direction/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f60bdbf927e8d18961d66ca5d236e63350943ac67485a2deafe75b2164a5020d": {
+      "description_zh": "按顺序编排范围、搜索、筛选、提取、综合、矛盾分析、审计和可选发布，端到端完成指定主题或研究问题的文献综述。",
+      "source": "Use when the user asks to run a lit review on a topic or research question end-to-end (\"run a lit review on caffeine and working memory\", \"do a literature review for me on X\"). Orchestrates the full pipeline — scope, search, screen, extract, synthesize, contradictions, audit, and optional publishing — by dispatching to the per-phase skills in order.",
+      "source_sha256": "f60bdbf927e8d18961d66ca5d236e63350943ac67485a2deafe75b2164a5020d",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "915ae585361ef09e03ebd9b39973c8d443018ac221b271414f19182909c51272": {
+      "description_zh": "在搜索前定义文献综述范围，形成经用户批准且驱动后续阶段的范围对象；模糊请求多问，明确请求直接复述确认，也用于综述流程缺少范围时。",
+      "source": "Use when the user asks to scope, frame, or plan a literature review before searching begins, OR when invoked by review, OR when search finds no scope object. Produces a user-approved scope object that drives every downstream phase. Adaptive — vague prompts get many questions, precise prompts skip straight to a recap.",
+      "source_sha256": "915ae585361ef09e03ebd9b39973c8d443018ac221b271414f19182909c51272",
+      "source_path": "skills/scope/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06aad2623318bda637731df6bbcc83fd573fbc2056873a509093e89ce68bffd4": {
+      "description_zh": "在搜索后按年份、语言和必含排除词等标准筛选论文，标记保留或剔除并记录理由，将决定写入审计轨迹。",
+      "source": "Use after search when the user wants to apply inclusion/exclusion criteria (year range, language, must-include/exclude keywords) to the corpus. Marks papers kept or dropped with a reason and records the decision in the audit trail.",
+      "source_sha256": "06aad2623318bda637731df6bbcc83fd573fbc2056873a509093e89ce68bffd4",
+      "source_path": "skills/screen/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0190bc42d2364d691178805ea2cfc3400301e3fb9c6955fc1a7bd90a61a333a": {
+      "description_zh": "读取已批准研究范围，使用已连接学术搜索 MCP 查找论文，去重后通过状态适配器写入语料库，支持初始候选来源及扩充。",
+      "source": "Use when the user asks to find/search/discover papers on a topic, wants candidate sources, or is populating/extending the corpus. Reads the approved scope, runs queries against whichever scholarly-search MCPs are connected, dedupes the results, and writes them to the corpus via the state adapter.",
+      "source_sha256": "b0190bc42d2364d691178805ea2cfc3400301e3fb9c6955fc1a7bd90a61a333a",
+      "source_path": "skills/search/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2c1ac8aeca0735139609157df8ee31abaf1e04be499bffe9b32e7c1f69d93df": {
+      "description_zh": "首次使用或用户询问配置时引导 Scriptorium 入门，检查连接器、选择状态存放位置与基本偏好，无需安装 CLI。",
+      "source": "Use on first run, when the user asks \"set up Scriptorium\", \"what does this plugin do\", or \"configure Scriptorium\". Walks the user through a 60-second onboarding — connector check, state-home selection, basic preferences — without requiring any CLI install.",
+      "source_sha256": "a2c1ac8aeca0735139609157df8ee31abaf1e04be499bffe9b32e7c1f69d93df",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "951e6543b7c12997947ff8c5da295c0708c3b9b6705fda3943c6670bbad422a2": {
+      "description_zh": "起草文献综述章节或证据综合，生成每项主张均带 paper_id:locator 支持的 synthesis.md，并在提交前强制检查引用。",
+      "source": "Use when the user asks to draft a literature review section, write a synthesis, or summarize the evidence. Produces synthesis.md with every claim backed by [paper_id:locator] tokens and runs a mandatory cite-check before committing.",
+      "source_sha256": "951e6543b7c12997947ff8c5da295c0708c3b9b6705fda3943c6670bbad422a2",
+      "source_path": "skills/synthesize/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
