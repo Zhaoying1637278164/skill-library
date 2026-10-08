@@ -58320,7 +58320,7 @@
       "method": "本地逐条人工意译并核对适用范围"
     },
     "5f9d5014e2ecbbb38dfa44ac1d6a7d7d1e71ae3149f52f15d1b1e50291d04bf2": {
-      "description_zh": "在自有Kubernetes环境配置Qdrant Hybrid Cloud，涵盖前置条件、存储CSI与备份、云agent/operator安装、集群暴露及安全、镜像镜像库和秘密轮换，排查存储及连通安装失败。",
+      "description_zh": "在自有Kubernetes环境配置Qdrant Hybrid Cloud，涵盖前置条件、存储CSI与备份、云agent/operator安装、集群暴露及安全、镜像库和秘密轮换，排查存储及连通安装失败。",
       "source": "Setting up and running Qdrant Hybrid Cloud on your own Kubernetes cluster (managed, on-prem, or edge): prerequisites, storage/CSI and backups, installing the Qdrant Cloud agent and operator, creating/exposing/securing clusters, registry mirroring, and secret rotation. Use when someone wants to set up, install, deploy, or configure Hybrid Cloud on their own infrastructure; is running Qdrant on their own EKS, GKE, AKS, OpenShift, or other Kubernetes; asks about the agent or operator, a storage class or volume snapshots for Hybrid Cloud, exposing a cluster, mirroring Qdrant images, or rotating secrets; or when a Hybrid Cloud install is failing on storage or connectivity.",
       "source_sha256": "5f9d5014e2ecbbb38dfa44ac1d6a7d7d1e71ae3149f52f15d1b1e50291d04bf2",
       "source_path": "skills/qdrant-hybrid-cloud-setup/SKILL.md",
@@ -86928,6 +86928,321 @@
       "source_path": "skills/engineering/git-branch/SKILL.md",
       "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
       "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c55e9a4d6eac417e099023078c14fd94d9e5ad89d0359dc7d817e8e6299a6b8": {
+      "description_zh": "引导人员完成父PRD中编码代理无法执行的人工子任务，逐项记录审计轨迹并标记完成，使依赖这些步骤的自动化工作解除阻塞，再交回并行TDD流程。",
+      "source": "Walk a human through the manual-action [HITL] sub-tasks of a parent (PRD) issue — the steps a coding agent physically cannot perform — recording each as an audit trail and marking them done so the dependent [AFK] slices unblock, then hand back to /tdd-parallel. Use when /tdd-parallel skipped HITL slices, when the user wants to clear manual steps before a fanout, or when the user invokes /human-itl directly.",
+      "source_sha256": "2c55e9a4d6eac417e099023078c14fd94d9e5ad89d0359dc7d817e8e6299a6b8",
+      "source_path": "skills/engineering/human-itl/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72cef9a309cce6761dcc1fbd8206e7e1085f57f4bba0b9386996b57dc9bfcd9b": {
+      "description_zh": "依据CONTEXT.md领域语言及ADR决策寻找代码库模块深化和重构机会，整合紧耦合模块，提高可测试性及AI理解能力。",
+      "source": "Find deepening opportunities in a codebase, informed by the domain language in CONTEXT.md and the decisions in docs/adr/. Use when the user wants to improve architecture, find refactoring opportunities, consolidate tightly-coupled modules, or make a codebase more testable and AI-navigable.",
+      "source_sha256": "72cef9a309cce6761dcc1fbd8206e7e1085f57f4bba0b9386996b57dc9bfcd9b",
+      "source_path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc6cfd3d948d03a873c98735a0f91931025a2c948335d8fe432cbd7ddb6f9f5d": {
+      "description_zh": "构建可丢弃原型验证设计，可选择用于状态和业务逻辑的可运行终端应用，或在同一路由切换的多个差异显著UI方案，用于探索数据模型、状态机及界面选择。",
+      "source": "Build a throwaway prototype to flush out a design before committing to it. Routes between two branches — a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route. Use when the user wants to prototype, sanity-check a data model or state machine, mock up a UI, explore design options, or says \"prototype this\", \"let me play with it\", \"try a few designs\".",
+      "source_sha256": "cc6cfd3d948d03a873c98735a0f91931025a2c948335d8fe432cbd7ddb6f9f5d",
+      "source_path": "skills/engineering/prototype/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9946c7fb8f3d3b9802b48deeb9c4a3aea3592e0cd058c17861a66af338c1dfe": {
+      "description_zh": "配置AGENTS.md或CLAUDE.md的Agent skills区块及docs/agents，使工程技能了解问题跟踪器、标签、领域文档、PR或直接推送方式及可选远程代理环境，用于首次使用或上下文缺失时。",
+      "source": "Sets up an `## Agent skills` block in AGENTS.md/CLAUDE.md and `docs/agents/` so the engineering skills know this repo's issue tracker (GitHub, local markdown, or a hybrid local-markdown-plus-GitHub-mirror), triage label vocabulary, domain doc layout, ship style (PR vs direct push), and — optionally — the remote claude.ai environment the overnight agent loop schedules into. Run before first use of `to-issues`, `to-prd`, `triage`, `diagnose`, `tdd`, or `improve-codebase-architecture` — or if those skills appear to be missing context about the issue tracker, triage labels, domain docs, ship style, or remote agent environment.",
+      "source_sha256": "e9946c7fb8f3d3b9802b48deeb9c4a3aea3592e0cd058c17861a66af338c1dfe",
+      "source_path": "skills/engineering/setup-zsl-superpowers/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6765c3731df91f2f6db203a31bc2b4b658c58896e7172d9d587be5022f71ac6e": {
+      "description_zh": "仅用于PR模式仓库，将PRD中无阻塞的自动子任务分派给并行TDD代理并整合至同一分支，验证每个用户故事有有效通过的行为测试、修复缺口后创建集成PR；人工步骤未完成时只执行不依赖它的部分，并保留开放PRD。",
+      "source": "Full-auto PRD pipeline. Fans out the unblocked [AFK] sub-tasks of a parent PRD into parallel /tdd sub-agents, integrates them onto the PRD branch, auto-chains /verify-coverage to prove every user story has a passing non-vacuous test, auto-fixes any gaps (loop), then opens a single integration PR. Runs partially when an open [HITL] slice exists — fans out every slice whose blocker closure is HITL-free, defers the rest, and opens a [partial] PR that leaves the PRD open. Refuses only if no slice is runnable or an in-scope user story isn't expressible as an automatable test. PR-style repos only.",
+      "source_sha256": "6765c3731df91f2f6db203a31bc2b4b658c58896e7172d9d587be5022f71ac6e",
+      "source_path": "skills/engineering/tdd-parallel/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88c90f11af4c5e2569ae2ec92a0604d1f1b79d2578116a55eb15081d7e3125ed": {
+      "description_zh": "以红绿重构循环开展测试驱动开发，适用于按TDD构建功能、修复缺陷、测试先行或集成测试需求。",
+      "source": "Test-driven development with red-green-refactor loop. Use when user wants to build features or fix bugs using TDD, mentions \"red-green-refactor\", wants integration tests, or asks for test-first development.",
+      "source_sha256": "88c90f11af4c5e2569ae2ec92a0604d1f1b79d2578116a55eb15081d7e3125ed",
+      "source_path": "skills/engineering/tdd/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7860a571dd785963ae38299f1cf077461ff22a6bdbdc31b8c583e268770fe6e5": {
+      "description_zh": "交互讲解陌生仓库的领域、架构和约定，阅读权威文档及代码而不修改，用于入门或改动前理解项目。",
+      "source": "On-the-fly conversational tutor that teaches you an unfamiliar repo's domain, architecture, and conventions interactively — reading the canonical docs and code, never writing them. Use when onboarding to a new codebase, when you ask to be taught or walked through how a repo works, or when you want to understand a project's structure before changing it.",
+      "source_sha256": "7860a571dd785963ae38299f1cf077461ff22a6bdbdc31b8c583e268770fe6e5",
+      "source_path": "skills/engineering/teach-me-the-codebase/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca062d7e52b2211303eb990103fe65427b992f89242b496830fb0dc7cab07a03": {
+      "description_zh": "把计划、规格或PRD分解为可独立领取的纵向实现任务，并写入项目问题跟踪器。",
+      "source": "Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices. Use when user wants to convert a plan into issues, create implementation tickets, or break down work into issues.",
+      "source_sha256": "ca062d7e52b2211303eb990103fe65427b992f89242b496830fb0dc7cab07a03",
+      "source_path": "skills/engineering/to-issues/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6b7497eb415573bea283b734318973c4b595b349c0e022218e5b72491846f81": {
+      "description_zh": "将当前对话上下文整理为PRD，并发布到项目问题跟踪器。",
+      "source": "Turn the current conversation context into a PRD and publish it to the project issue tracker. Use when user wants to create a PRD from the current context.",
+      "source_sha256": "c6b7497eb415573bea283b734318973c4b595b349c0e022218e5b72491846f81",
+      "source_path": "skills/engineering/to-prd/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6a61dcaf06b2c9f446c02eb267a8690481452a0e454a2fd51484e09d226c9ea": {
+      "description_zh": "按角色驱动的状态机处理问题分派，支持新建问题、评审缺陷或功能请求、准备自动代理任务及管理工作流程。",
+      "source": "Triage issues through a state machine driven by triage roles. Use when user wants to create an issue, triage issues, review incoming bugs or feature requests, prepare issues for an AFK agent, or manage issue workflow.",
+      "source_sha256": "d6a61dcaf06b2c9f446c02eb267a8690481452a0e454a2fd51484e09d226c9ea",
+      "source_path": "skills/engineering/triage/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1613b29fb2c319c751859b5b7c47e43d4f11f85be0d1e0b423d1ef84ce42664c": {
+      "description_zh": "验证每个PRD用户故事均由有效且通过的行为测试覆盖，优先映射已有测试，否则生成并通过变异验证测试，自动登记缺口子任务并生成覆盖凭证。",
+      "source": "Verify every PRD user story is covered by a passing, non-vacuous behavioral test — Tier A maps to an existing test; Tier B generates one, mutation-proves it, and runs it. Auto-files gaps as new sub-issues and writes a coverage receipt. Used as `/tdd-parallel`'s step-4b subroutine in `--auto` mode (the common path), or invoked directly against any PRD whose slices have shipped.",
+      "source_sha256": "1613b29fb2c319c751859b5b7c47e43d4f11f85be0d1e0b423d1ef84ce42664c",
+      "source_path": "skills/engineering/verify-coverage/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ad8087bdc664b6bb7eca4351ccd0f89e72f6c0fd526177a8f3820e8990dc9f6": {
+      "description_zh": "通过Steampipe查询AWS基础设施，提供准确表名、字段schema及查询模式。",
+      "source": "Use when querying AWS infrastructure via Steampipe. Provides correct table names, column schemas, and query patterns.",
+      "source_sha256": "7ad8087bdc664b6bb7eca4351ccd0f89e72f6c0fd526177a8f3820e8990dc9f6",
+      "source_path": "skills/misc/steampipe/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9110287734fd7f93b7b3772d87ae4e9c23a897916b0b149b9c45f3ba6cb22a71": {
+      "description_zh": "提供共同的设计决策树访谈协议，包含状态标记、示例树、重印规则和节点生命周期，以一次一个问题逐步厘清计划每条分支。",
+      "source": "The shared design-tree interview protocol — the status markers, the example tree, the reprint rules, and the node status-lifecycle. Use when running or structuring a relentless one-question-at-a-time interview that walks a decision tree to resolve every branch of a plan or design. Composed by grill-me and grill-with-docs.",
+      "source_sha256": "9110287734fd7f93b7b3772d87ae4e9c23a897916b0b149b9c45f3ba6cb22a71",
+      "source_path": "skills/productivity/grilling/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "faf4bbd9bc8e5a754b9475fd340e3abafdd01fad0a3bfb6585fce7db20c0614b": {
+      "description_zh": "将当前会话压缩为可续接的交接文档，保存到系统临时目录、脱敏秘密、按路径引用已有产物并建议后续技能，适用于结束会话、移交或切换代理。",
+      "source": "Compact the current conversation into a handoff document so a fresh agent (or session) can continue the work cleanly. Saves to the OS temp directory, redacts secrets, references existing artifacts by path instead of duplicating them, and suggests which skills the next session should invoke. Use when the user wants to end a session, hand off to a teammate, switch agents, says \"wrap this up for next time\", or mentions \"/handoff\".",
+      "source_sha256": "faf4bbd9bc8e5a754b9475fd340e3abafdd01fad0a3bfb6585fce7db20c0614b",
+      "source_path": "skills/productivity/handoff/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd60a624f34d1db4af44fe5f34074325989432108e7a37b9004a9e168f092792": {
+      "description_zh": "按项目汇总近期Claude Code会话历史，生成可复制的工时记录要点、每日站会笔记或当日工作摘要。",
+      "source": "Summarize recent Claude Code session histories into copy/paste-ready timesheet bullets, grouped by project. Use when the user asks \"what did I do today\", wants a timesheet entry, daily standup notes, or a summary of recent Claude Code sessions.",
+      "source_sha256": "dd60a624f34d1db4af44fe5f34074325989432108e7a37b9004a9e168f092792",
+      "source_path": "skills/productivity/timesheet/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "832d699c8578aed481e0fa5ce8f08bc4e7a2759ed64cf13774f7d72948eafc77": {
+      "description_zh": "提供编写优质代理技能的原则与术语，涵盖渐进披露、准确用途和触发、脚本打包时机及精简SKILL.md结构，用于编写、设计、评审或改进技能。",
+      "source": "Principles and vocabulary for authoring great agent skills — progressive disclosure, sharp descriptions/triggers, when to bundle scripts, and the structure that keeps SKILL.md small. Use when writing, designing, reviewing, or improving a skill, or when asked how to make a skill fire reliably.",
+      "source_sha256": "832d699c8578aed481e0fa5ce8f08bc4e7a2759ed64cf13774f7d72948eafc77",
+      "source_path": "skills/productivity/writing-great-skills/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4d8b5b3c4724e0930530a01c1cd3f3b219a2224236d6e6710d769e8cbcbad34": {
+      "description_zh": "交互安排夜间远程并行TDD任务，让人员选择就绪PRD和执行顺序，为各PRD创建一次性远程任务并间隔两小时限流，记录安排声明避免重复预订，翌日交由morning-review检查。",
+      "source": "Interactive local-session scheduler for overnight remote /tdd-parallel runs. Reviews the queue of tracking PRDs with ready-for-agent children, lets the human pick which to run overnight and in what order, then schedules one one-shot remote routine per selected PRD spaced a fixed 2h apart — each fires its own remote claude.ai session running /afk-worker against one PRD. The 2h spacing is a deliberate throttle to stay under the per-5h-window token cap. Places a light scheduled claim on each PRD so a re-run the same evening won't double-book. Morning you walks the results via /morning-review.",
+      "source_sha256": "e4d8b5b3c4724e0930530a01c1cd3f3b219a2224236d6e6710d769e8cbcbad34",
+      "source_path": "skills/remote-agents/afk-fanout/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a680df1708048b707b277a51ab4c73ef340d058357e08d0d2f7430d2f48aee8": {
+      "description_zh": "作为已安排的一次性任务的远程PRD执行器，在独立克隆、工作树和分支无人值守运行并行TDD、创建集成PR，暂停时记录子任务及根因，将结果写入共享afk-runs账本供晨间核对，并尽力发送Telegram提醒；由计划任务触发而非手工调用。",
+      "source": "Remote per-PRD executor fired by an /afk-fanout-scheduled one-shot routine. Runs unattended in its own remote claude.ai session — own clone, own working tree, own branch — so it never contends with other PRDs' workers. Flips the PRD's scheduled claim to in-progress, runs /tdd-parallel <num> --on-review-failure=continue --max 2, opens one integration PR, and on halt records the offending slice + RCA. Reports its outcome (claim state, PR URL or halt RCA) as a per-PRD entry on the shared afk-runs git branch that /morning-review reconciles back into the tracker, and fires a best-effort Telegram heads-up. Invoked by the scheduled routine, not by hand.",
+      "source_sha256": "5a680df1708048b707b277a51ab4c73ef340d058357e08d0d2f7430d2f48aee8",
+      "source_path": "skills/remote-agents/afk-worker/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6191944097e3f45c3dc2ef049f05fa73d4fa0cd0912062d54c9d2a4d4eb94237": {
+      "description_zh": "带人员核对夜间远程任务产物，先将共享afk-runs账本的状态和暂停原因同步至权威跟踪器，再展示需验证合并的PR、待补信息子任务及没有产物的计划任务，按验证环境优先级排序，避免漏掉未启动或被限流的运行。",
+      "source": "Walk a human through the overnight artifacts the /afk-worker routines (scheduled by /afk-fanout) produced. First reconciles the shared afk-runs ledger branch into the canonical .scratch/ tracker — replaying claim flips and halt RCAs that ran in isolated worker clones — across every un-reconciled run, not just last night. Then surfaces integration PRs to verify and merge, halted slices in needs-info to re-triage, and any scheduled PRD that produced no result (cross-checked against the manifest so a worker that never fired or got throttled isn't silently missed). Sorts PRs by their brief's verify-after tag so local-run and staging slices surface first; ci slices are batch-mergeable after a diff skim. Use the morning after an /afk-fanout schedule has run, or mention /morning-review.",
+      "source_sha256": "6191944097e3f45c3dc2ef049f05fa73d4fa0cd0912062d54c9d2a4d4eb94237",
+      "source_path": "skills/remote-agents/morning-review/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91c1ec0ba4c16c95fd9dd2e4d50831c81fabd5dca4294df848d1608842928fc5": {
+      "description_zh": "向Scrapy项目添加空的web-poet页面对象。",
+      "source": "Add an empty web-poet page object to a Scrapy project",
+      "source_sha256": "91c1ec0ba4c16c95fd9dd2e4d50831c81fabd5dca4294df848d1608842928fc5",
+      "source_path": "skills/scrape-add-page-object/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4b06f000ada79af5f3f76e7c07a7ec52894fe14d4186658c7534fbc1c919736": {
+      "description_zh": "从已下载的本地HTML提取所有可用字段及值，可遵循schema；不用于直接URL输入，调用时保留用户完整原始请求，不预先拆解路径或改写。",
+      "source": "Extract structured data (all available fields with values) from a page saved locally as an HTML file, optionally following a schema. Use this skill only to process already downloaded files. Do not invoke when the user provides a URL. When invoking, pass the user's full request verbatim as args — do not pre-parse file paths and don't rephrase it.",
+      "source_sha256": "d4b06f000ada79af5f3f76e7c07a7ec52894fe14d4186658c7534fbc1c919736",
+      "source_path": "skills/scrape-analyze-page/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa49da59c01b8323af5f2c57982b0397d153c639c10386a3afb44f6273c99f88": {
+      "description_zh": "分析HTML页面，生成供代码生成使用的字段提取指令。",
+      "source": "Analyze an HTML page to produce field extraction instructions for code generation",
+      "source_sha256": "fa49da59c01b8323af5f2c57982b0397d153c639c10386a3afb44f6273c99f88",
+      "source_path": "skills/scrape-codegen-analyze/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5bb0e65fd476cb2e42b10684fa32d1548c01d2752b7b7a59598eba242786084": {
+      "description_zh": "依据逐页面提取分析生成web-poet页面对象代码。",
+      "source": "Generate web-poet page object code from per-page extraction analyses",
+      "source_sha256": "b5bb0e65fd476cb2e42b10684fa32d1548c01d2752b7b7a59598eba242786084",
+      "source_path": "skills/scrape-codegen-generate/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "839ee591f713171b5e2501c1190ec3d43c57984bc84f07ed9295f7992b5d2ba9": {
+      "description_zh": "依据提取规格生成web-poet页面对象代码。",
+      "source": "Generate web-poet page object code from an extraction spec",
+      "source_sha256": "839ee591f713171b5e2501c1190ec3d43c57984bc84f07ed9295f7992b5d2ba9",
+      "source_path": "skills/scrape-codegen/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acb9b859dd2d95e92af262392847d4fc92db9034e89675425b71cc4f1923e481": {
+      "description_zh": "生成将页面对象连接起来的Scrapy爬虫。",
+      "source": "Generate a Scrapy spider that wires page objects together",
+      "source_sha256": "acb9b859dd2d95e92af262392847d4fc92db9034e89675425b71cc4f1923e481",
+      "source_path": "skills/scrape-create-spider/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "350ea6426efbe570aca2552c2a062187ab5d6c51b564173dc2cc800b7c619041": {
+      "description_zh": "从URL创建新提取规格，探索详情页、发现字段并快速确认schema。",
+      "source": "Create a new extraction spec from a URL — explore a detail page, discover fields, quick schema approval",
+      "source_sha256": "350ea6426efbe570aca2552c2a062187ab5d6c51b564173dc2cc800b7c619041",
+      "source_path": "skills/scrape-define/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6912fdb3fd846294b5f820c9f033fefeaea228af857b8f4e8c96f9e9512cd22b": {
+      "description_zh": "确保存在支持scrapy-poet和Zyte API的Scrapy项目。",
+      "source": "Ensure a Scrapy project exists with scrapy-poet and Zyte API support",
+      "source_sha256": "6912fdb3fd846294b5f820c9f033fefeaea228af857b8f4e8c96f9e9512cd22b",
+      "source_path": "skills/scrape-ensure-project/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f500bd8a95546497f3fc71e3e952b2d36645edb95983a2623bcf9ddc11420d55": {
+      "description_zh": "探索网站并保存起始页、列表页和详情页等多样页面，同时对链接分类。",
+      "source": "Explore a website to find and save diverse pages (start, list, detail) with classified links",
+      "source_sha256": "f500bd8a95546497f3fc71e3e952b2d36645edb95983a2623bcf9ddc11420d55",
+      "source_path": "skills/scrape-explore-site/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee0ada243369249bcba52ac3d9381c0aa75f0ba514f2d7cabc0f9be0ed2c8c8e": {
+      "description_zh": "生成用于schema和提取数据核对的HTML评审页面。",
+      "source": "Generate an HTML review page for schema and extracted data verification",
+      "source_sha256": "ee0ada243369249bcba52ac3d9381c0aa75f0ba514f2d7cabc0f9be0ed2c8c8e",
+      "source_path": "skills/scrape-review-schema/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b88fab9e4920816abbfcd3d138d163ced5e735e63f63751b0b8c61dd96d5d8fb": {
+      "description_zh": "管理Scrapy Cloud、Zyte Cloud或Scrapinghub项目，部署项目和爬虫、安排远程运行、列出或停止任务，并查看提取条目和日志。",
+      "source": "General-purpose Scrapy Cloud skill — deploy projects, schedule spiders, list/stop jobs, and view items or logs. Use when asked to deploy a project or spider to Scrapy Cloud / Zyte Cloud / Scrapinghub, schedule or run a spider remotely, manage jobs, or inspect scraped items and logs.",
+      "source_sha256": "b88fab9e4920816abbfcd3d138d163ced5e735e63f63751b0b8c61dd96d5d8fb",
+      "source_path": "skills/scrape-scrapy-cloud/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2ab480acc62941f338d0b0fcf24820f94dc76d265bbe5f0793ba299dc1df74b": {
+      "description_zh": "扩展scrape-define生成的规格，下载更多页面、比较HTML变体、提取值，并可在浏览器中评审。",
+      "source": "Expand a spec created by /scrape-define — download more pages, compare HTML variants, extract values, optional browser review",
+      "source_sha256": "c2ab480acc62941f338d0b0fcf24820f94dc76d265bbe5f0793ba299dc1df74b",
+      "source_path": "skills/scrape-spec/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "930a9e00d2e4870c311894bf5deb80f9ff8214ca19addc5294b0da9daa8e8210": {
+      "description_zh": "查询已发生的Zyte API调用用量、费用、数量、响应时间和状态，支持筛选分组分页；仅在用户明确要求以实际已记录用量为基础时外推未来，不用于未运行负载的假设估算、仪表盘配置或账户帮助。",
+      "source": "Query usage stats for Zyte API requests that have already been sent, including cost, request volume, response times, status codes, filters, grouping, and pagination. Use this skill whenever answering the request requires looking up recorded Zyte API usage, spend, request counts, response times, grouped stats, or filtered stats — including projecting future spend or usage when the projection explicitly extrapolates from actual recorded usage (e.g. \"based on this month's usage so far, project month-end spend\"). Do not use it when the user asks what a spider, job, or workload might, would, or could generate — those are hypothetical estimates with no recorded data to query, even if a spider exists in the project. For a projection to qualify, the user must explicitly reference past or current recorded usage as the basis. Also do not use for dashboard setup, documentation, configuration, or account-help questions.",
+      "source_sha256": "930a9e00d2e4870c311894bf5deb80f9ff8214ca19addc5294b0da9daa8e8210",
+      "source_path": "skills/scrape-zyte-api-stats/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "577690c3a8f150f43e924f2629d9c8825fa4795791aa947c7ecc0c25f51deecc": {
+      "description_zh": "配置Zyte账户和凭据，处理登录、注册、API密钥缺失、站点被阻止及Scrapy Cloud部署前准备。",
+      "source": "Set up the user's Zyte account and credentials. Use when the user asks to set up, log in, sign up, or get an API key for Zyte; when ZYTE_API_KEY is missing; when a site is blocked; or before Scrapy Cloud deployment.",
+      "source_sha256": "577690c3a8f150f43e924f2629d9c8825fa4795791aa947c7ecc0c25f51deecc",
+      "source_path": "skills/scrape-zyte-login/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "180207ee25c1987d9f423a8304550988ea4a6a9c623d1b85b296267227203ced": {
+      "description_zh": "从URL到可运行Scrapy爬虫完成全站或多页面采集流程，生成web-poet页面对象；不用于修复、调试或修改既有爬虫。",
+      "source": "End-to-end web scraping workflow — from URL to working spider with web-poet page objects. Use this for full-site or multiple-page crawls that create a new scraping workflow. Do not use for fixing, debugging, or modifying an existing spider.",
+      "source_sha256": "180207ee25c1987d9f423a8304550988ea4a6a9c623d1b85b296267227203ced",
+      "source_path": "skills/scrape/SKILL.md",
+      "package_sha256": "5c69adf42ce585de79a9547eceabfb92be94d21834b27fce5c18ea9c635d6a40",
+      "source_package": "Zyte Web Data-0.2.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20f3d39e307f80d48fbd67fd6a3b22c223f62628d605e273c70a0027329bc11a": {
+      "description_zh": "为日本房地产重要事项说明开展初步调查筛查，根据物业地址生成应查项目完整清单，从已取得PDF提取要点并输出xlsx调查报告，帮助宅建业者在正式说明编制前完成一次调查。",
+      "source": "重説調査（重要事項説明調査）を自動化する一次スクリーニングスキル。「重調クン」「重説調査して」「重要事項説明の調査」「35条書面の調査項目」「物件の法的調査」などのキーワードで必ず起動する。物件住所を入力すれば調査すべき項目の完全チェックリストを生成し、取得済みのPDFを投入すれば要点を抽出し、結果をxlsx形式の調査報告書として出力する。宅建業者・担当者が重説作成前に行う一次調査を大幅に効率化する。",
+      "source_sha256": "20f3d39e307f80d48fbd67fd6a3b22c223f62628d605e273c70a0027329bc11a",
+      "source_path": "skills/jucho-kun/SKILL.md",
+      "package_sha256": "d82626bff3ad32d0934c0af56b1d4e4f831f3fec13ccedf8ba77024d0d38f182",
+      "source_package": "重調クン (Jucho-kun)-1.0.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
     }
   },
