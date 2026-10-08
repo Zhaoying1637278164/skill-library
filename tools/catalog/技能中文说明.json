@@ -64249,6 +64249,1086 @@
       "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
       "source_package": "scriptorium-cowork-0.6.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd6ae87e63f515970f5597575929b5c42a6c66d9f623d7ce50a7a056312bac48": {
+      "description_zh": "作为 Scriptorium 文献研究入口，检查可用 Cowork 连接器并选择状态存放位置，介绍三项研究纪律，再分派范围、搜索、筛选、提取、综合、矛盾、审计、发布或上游方向问题技能。",
+      "source": "Use when the user mentions a literature review, asks to find/screen/synthesize/draft research, or starts a Scriptorium session. Probes which Cowork connectors are available, picks the state home, teaches the three disciplines, and dispatches to the phase-appropriate skill (scope / search / screen / extract / synthesize / contradictions / audit / publish, or the direction skills upstream — research-direction / grill-question).",
+      "source_sha256": "cd6ae87e63f515970f5597575929b5c42a6c66d9f623d7ce50a7a056312bac48",
+      "source_path": "skills/using-scriptorium/SKILL.md",
+      "package_sha256": "e892bf62ba714019afd5e19452876b05617ff787b9717b51dd974549943f723f",
+      "source_package": "scriptorium-cowork-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d57e857b595b80d729bbd9e68e815aab2bd96ff844586bd85d57ebea5124c074": {
+      "description_zh": "执行 Story Driven Development 的远端同步，拉取最新规格、推送本地更新、补充草稿、处理远端草稿和运行 enrich 或 sync worker，连接 SDD Flow 与本地状态。",
+      "source": "Remote sync workflow for Story Driven Development. Use this skill whenever the user asks to pull from remote, push changes to SDD Flow, enrich drafts, update local state from remote, publish local updates, process remote drafts, or run a remote worker job (enrich or sync). Also trigger on phrases like \"sdd pull\", \"sdd push\", \"sync with SDD Flow\", \"enrich this CR\", \"push the remote updates\", \"pull the latest specs\".",
+      "source_sha256": "d57e857b595b80d729bbd9e68e815aab2bd96ff844586bd85d57ebea5124c074",
+      "source_path": "skills/sdd-remote/SKILL.md",
+      "package_sha256": "54110390f2076f580475cf7e12f8e252478ba3563b02525b1a1ae8ff3f99e81a",
+      "source_package": "sdd-1.9.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64439b9851d90577a0fd451f9823cecd739ca4b708565fd10513367807c3b32f": {
+      "description_zh": "为含 .sdd/config.yaml 的项目提供 Story Driven Development 工作流，处理 SDD 同步、规格驱动开发、变更请求和缺陷，以及实现 product/ 或 system/ 中描述的功能。",
+      "source": "Story Driven Development workflow. Use this skill whenever working in a project that has `.sdd/config.yaml`, or when the user mentions SDD, sdd sync, story driven development, spec-driven development, change requests, bugs, or asks to implement a feature described in `product/` or `system/`. Also trigger on phrases like \"sync the docs\", \"mark synced\", \"apply this CR\", \"fix this bug\" when an SDD project is detected.",
+      "source_sha256": "64439b9851d90577a0fd451f9823cecd739ca4b708565fd10513367807c3b32f",
+      "source_path": "skills/sdd/SKILL.md",
+      "package_sha256": "54110390f2076f580475cf7e12f8e252478ba3563b02525b1a1ae8ff3f99e81a",
+      "source_package": "sdd-1.9.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f096fc1f43e0c17e7886a4de19d42793abbf11202a75c383f1f0d4b506988ff4": {
+      "description_zh": "在实现完成且全部测试通过后，帮助决定如何整合开发分支中的工作。",
+      "source": "Use when implementation is complete, all tests pass, and a decision is needed on how to integrate the work",
+      "source_sha256": "f096fc1f43e0c17e7886a4de19d42793abbf11202a75c383f1f0d4b506988ff4",
+      "source_path": "skills/finishing-a-development-branch/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b637301a2c8a1796ed9c54d3f8533e93a129dfe3a87d03457f7c63b8238538bb": {
+      "description_zh": "在收到代码审查反馈后、实施建议前处理审查意见。",
+      "source": "Use when receiving code review feedback, before implementing review suggestions",
+      "source_sha256": "b637301a2c8a1796ed9c54d3f8533e93a129dfe3a87d03457f7c63b8238538bb",
+      "source_path": "skills/receiving-code-review/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2e37acac7bd12bffa8513537cd8a10c4224c052493216a0b96dde37211251c2": {
+      "description_zh": "在用户直接请求评审、合并 main 前或完成主要功能后发起代码审查。",
+      "source": "Use when the user asks for a code review directly, before merging to main, or after completing a major feature",
+      "source_sha256": "e2e37acac7bd12bffa8513537cd8a10c4224c052493216a0b96dde37211251c2",
+      "source_path": "skills/requesting-code-review/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d77ba2117f51412385cfef723df975da5d7a331ff192ddf8ff6b0c2628dbeb18": {
+      "description_zh": "当想法模糊、有多种竞争方案或需技术架构调查时，在制定规格前进行探索与头脑风暴。",
+      "source": "Use when an idea is fuzzy, exploratory, has competing approaches, or needs a technology/architecture decision investigated before specification",
+      "source_sha256": "d77ba2117f51412385cfef723df975da5d7a331ff192ddf8ff6b0c2628dbeb18",
+      "source_path": "skills/sdd-brainstorm/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "367f19d8cbb8a6237ff9c33cda2d4d8008b9adbd490b465fa14e0fe8fbd86439": {
+      "description_zh": "在计划已批准后开始执行实现。",
+      "source": "Use when a plan is approved and implementation should begin",
+      "source_sha256": "367f19d8cbb8a6237ff9c33cda2d4d8008b9adbd490b465fa14e0fe8fbd86439",
+      "source_path": "skills/sdd-execute/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62bcb5f395231da5f3bd4c1254a99cf6c27e09837efdedb1b7dd95af6b17add2": {
+      "description_zh": "初始化尚无 CLAUDE.md 和 docs/specs/ 的新项目。",
+      "source": "Use when starting a new project that has no CLAUDE.md and no docs/specs/ directory",
+      "source_sha256": "62bcb5f395231da5f3bd4c1254a99cf6c27e09837efdedb1b7dd95af6b17add2",
+      "source_path": "skills/sdd-init/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16d67b298bd956bc579e7f61095328e0d5cc1a55cdc6d66dadac24ba1dad0561": {
+      "description_zh": "把用户自定义 Claude Code 技能如 Jira、Confluence 接入 SDD 生命周期节点，或查询已登记的技能集成。",
+      "source": "Use when a user wants to connect their own custom Claude Code skill (e.g. a Jira or Confluence skill) to a point in the SDD lifecycle, or asks what custom skill integrations are registered",
+      "source_sha256": "16d67b298bd956bc579e7f61095328e0d5cc1a55cdc6d66dadac24ba1dad0561",
+      "source_path": "skills/sdd-integrations/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6b828298ed9c089e2cda131c4cffb38be5c82e2b1dcc2ebec0adae50ca74346": {
+      "description_zh": "将已有功能规格转化为技术实现计划。",
+      "source": "Use when a feature spec exists and needs to become a technical implementation plan",
+      "source_sha256": "d6b828298ed9c089e2cda131c4cffb38be5c82e2b1dcc2ebec0adae50ca74346",
+      "source_path": "skills/sdd-plan/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c656c52706fc51f4108e02c26e6ea145c5231da2c96989522bf024e43da6dcd6": {
+      "description_zh": "在规划前检查规格完整性，或在实现宣称完成时核验其与规格的一致性。",
+      "source": "Use when a spec needs a completeness check before planning, or when implementation claims to be complete and needs spec-alignment validation",
+      "source_sha256": "c656c52706fc51f4108e02c26e6ea145c5231da2c96989522bf024e43da6dcd6",
+      "source_path": "skills/sdd-review/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1fb33e99582639d55ad8d97cfae607a77b93b6364811b276a2deecf0bf775bbf": {
+      "description_zh": "在实现前或期间，处理用户对已批准规格提出的变更、补充和纠正。",
+      "source": "Use when a user describes a change, addition, or correction to an approved spec — during or before implementation",
+      "source_sha256": "1fb33e99582639d55ad8d97cfae607a77b93b6364811b276a2deecf0bf775bbf",
+      "source_path": "skills/sdd-spec-update/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80455708965718d5f38a65dd610db1dfbc293ffbb29c263dc2bfd669687e0fb9": {
+      "description_zh": "当新功能、想法或问题尚无规格时，在规划、研究或写代码前定义规格。",
+      "source": "Use when a user describes a new feature, idea, or problem without an existing spec — before any planning, research, or code",
+      "source_sha256": "80455708965718d5f38a65dd610db1dfbc293ffbb29c263dc2bfd669687e0fb9",
+      "source_path": "skills/sdd-specify/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c0582329bc69fdb74c276642dd408583489912768e3f7abb6334aac4bccbd36": {
+      "description_zh": "原说明标明此技能已退役，不应使用，改见 sdd-superpowers:sdd-execute。",
+      "source": "Retired — do not use. See sdd-superpowers:sdd-execute.",
+      "source_sha256": "5c0582329bc69fdb74c276642dd408583489912768e3f7abb6334aac4bccbd36",
+      "source_path": "skills/sdd-tasks/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "788732cdfeb2b7d4dda6e039ae40a85c25f1312fadb6fe5275d18875a940c0f2": {
+      "description_zh": "作为 SDD 项目中开始会话的工作流入口。",
+      "source": "Use when starting any conversation in an SDD project",
+      "source_sha256": "788732cdfeb2b7d4dda6e039ae40a85c25f1312fadb6fe5275d18875a940c0f2",
+      "source_path": "skills/sdd-workflow/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf58edf21a1ebb9f46fc69d9d2a804ff0d782dfe2c31f76ada5b96d24f4a9472": {
+      "description_zh": "在会话结束、上下文丢失前整理候选记忆和叙述性经验。",
+      "source": "Use when ending a session to capture memory candidates and narrative lessons before context is lost",
+      "source_sha256": "bf58edf21a1ebb9f46fc69d9d2a804ff0d782dfe2c31f76ada5b96d24f4a9472",
+      "source_path": "skills/session-wrap/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8013154df7b336c68a8b09d6534f080359c35c01d886a514c3e7c1d28f8b9210": {
+      "description_zh": "处理 SDD 项目的 Git 操作，包括分支、提交、合并提交校验、约定展示和用于并行工作的隔离 worktree。",
+      "source": "Use when any git operation is needed in an SDD project — branch creation, commits, merge commit validation, showing the convention, or setting up an isolated git worktree for parallel work",
+      "source_sha256": "8013154df7b336c68a8b09d6534f080359c35c01d886a514c3e7c1d28f8b9210",
+      "source_path": "skills/using-git/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e244139bf286062815b5cc199958baad358874a13bed285a15704374d148b33c": {
+      "description_zh": "在宣称工作完成、问题修复或检查通过前进行核验。",
+      "source": "Use when about to claim work is complete, fixed, or passing",
+      "source_sha256": "e244139bf286062815b5cc199958baad358874a13bed285a15704374d148b33c",
+      "source_path": "skills/verification-before-completion/SKILL.md",
+      "package_sha256": "b0d6d38ef7ed7ffd2fb17bc81e0646660420a433edab54324debe6f7e081db79",
+      "source_package": "sdd-superpowers-3.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22fb8e5731905e5dec93b7ef06af864080294982608749c29dae08d28be22155": {
+      "description_zh": "记录、审阅并管理架构决策 ADR，由工程师和架构师视角梳理背景、方案、替代与后果，在 adr 目录单调编号保存；支持提议、接受拒绝、替代和弃用，不复用编号或改名，更新后同步索引；不用于 PRD、功能规格或跨功能需求。",
+      "source": "Use when the user wants to record, review, or transition an Architecture\nDecision Record (ADR) — one file per decision, numbered monotonically under\n`02-architecture/adr/`. English triggers: `/sdlc-kit:adr`,\n`/sdlc-kit:adr new <title>`, `/sdlc-kit:adr list`,\n`/sdlc-kit:adr accept <id>`, `/sdlc-kit:adr supersede <old> --by <new>`,\n\"record a decision\", \"write an ADR for X\", \"accept ADR 3\",\n\"deprecate that choice\", \"supersede the old DB decision\". pt-BR triggers:\n\"registrar uma decisão\", \"escrever um ADR para X\", \"aceitar o ADR 3\",\n\"deprecar aquela escolha\", \"substituir a decisão antiga de banco\".\nCo-authored by a duo of expert personas: a **Senior Software Engineer**\n(operational consequences, implementation plan) and a **Software Architect**\n(alternatives considered, pattern fit, consistency with existing ADRs). The\nscript does deterministic file ops only — listing, scaffolding from\n`02-architecture/_templates/adr.md.tpl` with auto-numbered filenames\n(`ADR-NNNN-<slug>.md`, 4-digit zero-padded, max existing + 1), and MADR\nlifecycle transitions (proposed → accepted/rejected → superseded/deprecated).\nThe LLM drives the content interview (context, decision, alternatives,\nconsequences) section-by-section via Edit/Write, mirroring the user's chat\nlanguage. Numbers are never reused and filenames never renamed — history\nstays stable. After scaffold or transition, invokes `/sdlc-kit:sync` so MOCs\nand `_INDEX.md` reflect the change. Do not invoke for product requirements\n(`/sdlc-kit:prd`), feature design (`/sdlc-kit:spec`), or cross-feature\ntechnical requirements (`/sdlc-kit:trd`).",
+      "source_sha256": "22fb8e5731905e5dec93b7ef06af864080294982608749c29dae08d28be22155",
+      "source_path": "skills/sdlc-adr/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3909a2951dd891d75e4c6e25e2229dd93e325ace87b6f20f486a29cc39fd1f0b": {
+      "description_zh": "只读在默认浏览器打开 SDLC vault 根目录 dashboard.html，看板由 sync 维护；通过 marker 或指定路径定位，打开失败则提供绝对路径，不修改或重渲染仪表盘。",
+      "source": "Use when the user wants to open the SDLC Kit vault dashboard in their default\nbrowser — a static `dashboard.html` at the vault root that renders the\nkanban/status view of the current project. Typical triggers are\n`/sdlc-kit:dash`, \"open the dashboard\", \"show the kanban\", \"show the vault\ndashboard\", \"open the vault in the browser\", or in pt-BR: \"abrir dashboard\",\n\"ver o kanban\", \"ver o status visual do projeto\", \"abre o dashboard do\nvault\". Locates the current vault via `.sdlc-kit/marker.json` (or the\nexplicit `--vault-root`), resolves `<vault>/dashboard.html`, and opens it\nwith the OS-native handler — Windows `start`, macOS `open`, Linux\n`xdg-open`. If auto-open fails or is unavailable, prints the absolute path\nso the user can open it manually. Read-only utility; does not scaffold,\nmutate, or re-render the dashboard itself (the dashboard file is maintained\nby `/sdlc-kit:sync`). Do not invoke to *re-render* the dashboard (use\n`/sdlc-kit:sync`), to inspect vault health as JSON (use `/sdlc-kit:status`),\nor when cwd is outside a vault.",
+      "source_sha256": "3909a2951dd891d75e4c6e25e2229dd93e325ace87b6f20f486a29cc39fd1f0b",
+      "source_path": "skills/sdlc-dash/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "261a9520f057a87dfc46b822a1d39a629c5c0ef3b82d21bc02948aadb4562f3e": {
+      "description_zh": "在明确用户意图下初始化 Git 项目的 SDLC vault，先确认新建还是已有项目，再自动发现仓库信息并生成八阶段目录、文档、索引、仪表盘和 SQLite；未经 force 确认不覆盖文件，可为新项目初始化 Git 与 GitHub。",
+      "source": "Use when the user wants to initialize an SDLC (Spec-Driven Development)\nvault in a Git project. English triggers: `/sdlc-kit:init`,\n\"set up the SDLC Kit in this project\", \"initialize SDLC Kit\",\n\"bootstrap the vault\". pt-BR triggers: \"criar o vault SDLC\",\n\"inicializar o SDLC Kit\", \"começar a usar o SDLC Kit neste projeto\".\nDriven by an **onboarding utility** — no persona interview, just a\none-question greenfield/brownfield gate and deterministic scaffold. Runs a\nminimal, low-friction onboarding: asks ONE required question (greenfield\nvs brownfield), auto-detects repo root / owner / remote URL, and scaffolds\n`.sdlc/` with 8 canonical phases (00-steering, 01-planning,\n02-architecture, 03-domain, 04-specs, 05-development, 06-design-system,\n07-retrospectives), CLAUDE.md doctrine, _INDEX.md, dashboard HTML,\nmarker.json, and SQLite tracker. Never overwrites files without explicit\n`--force` confirmation. Intentionally does NOT ask for tech stack,\nbounded contexts, design system, or worktree preferences — those belong\nto dedicated later skills (`/sdlc-kit:steer tech`, ADRs,\n`/sdlc-kit:domain`, etc.). For greenfield projects, optionally bootstraps\n`git init` + GitHub repo via `gh repo create`. Appends a vault pointer to\nthe project root CLAUDE.md and runs the initial librarian scan. Do not\ninvoke without explicit user intent.",
+      "source_sha256": "261a9520f057a87dfc46b822a1d39a629c5c0ef3b82d21bc02948aadb4562f3e",
+      "source_path": "skills/sdlc-init/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a4415e8f488398f9ecfbd9b2d3814e9f5e1ae192110fc5769ef4f46957ea25f2": {
+      "description_zh": "创建、审阅和转换顶层 PRD，定义产品做什么及面向谁，以工程师和架构师视角检查可行性、指标、风险、范围及依赖；按 draft、active、shipped、archived 管理并同步索引，不替代 ADR、功能规格或里程碑。",
+      "source": "Use when the user wants to create, review, or transition a Product\nRequirements Document (PRD) — the top-level \"what + for whom\" doc for an\ninitiative. Triggers: `/sdlc-kit:prd`, `/sdlc-kit:prd new <title>`,\n`/sdlc-kit:prd list`, `/sdlc-kit:prd promote <slug>`,\n`/sdlc-kit:prd archive <slug>`, \"start a PRD for X\",\n\"define product requirements for Y\", \"register a new initiative\",\n\"ship the PRD\", \"archive this initiative\". Mirror the user's chat\nlanguage at runtime. Co-authored by a **Senior Engineer** (feasibility,\ntestable KPIs, implementation risk) and an **Architect** (scope\nboundaries, cross-initiative dependencies, architectural implications).\nEach PRD lives at `01-planning/prd/<slug>.md`. Lifecycle:\n`draft → active → shipped → archived`. After scaffold or transition,\ninvokes `/sdlc-kit:sync`. Do not invoke to record a technical decision\n(`/sdlc-kit:adr`), feature specs (`/sdlc-kit:spec`), or epics/milestones\n(`/sdlc-kit:epic`, `/sdlc-kit:milestone`).",
+      "source_sha256": "a4415e8f488398f9ecfbd9b2d3814e9f5e1ae192110fc5769ef4f46957ea25f2",
+      "source_path": "skills/sdlc-prd/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7abde6f67b7d1aaa71ab0fc206e096f7696fba2b2bc4b5c973138d0e9bf7a074": {
+      "description_zh": "主持并记录迭代回顾，结合敏捷引导师与工程负责人视角，整理保留、改进、停止、带负责人和期限的行动及真实指标，按 draft 到 final 管理稳定文件名并同步索引；不用于 PR 审查、事故复盘或前瞻计划。",
+      "source": "Use when the user wants to hold, facilitate, or close out a sprint / iteration retrospective —\nthe team ritual at the end of a delivery cycle where the team names what went well, what went\nbadly, and commits to concrete action items. One file per retro under\n`07-retrospectives/retros/<slug>.md`, slug-based (e.g. `sprint-42`, `iteration-2026-q2-w3`).\nTypical triggers are `/sdlc-kit:retro`, `/sdlc-kit:retro new <title>`, `/sdlc-kit:retro list`,\n`/sdlc-kit:retro final <slug>`, or phrases like \"hold retrospective\", \"sprint retro\", \"close\niteration\", \"end-of-sprint retro\", \"run the retro\", \"ratify retro actions\", \"fazer retro\",\n\"retrospectiva de sprint\", \"fechar ciclo\", \"encerrar sprint\", \"retrô do time\" — in any\nlanguage the user happens to be using. This skill is co-authored by a duo of expert personas:\nan **Agile Facilitator / Scrum Master** (runs the meeting, keeps the conversation safe and\nbalanced, ensures every voice is heard) and an **Engineering Lead** (ensures every action\nitem is concrete, owned, measurable, and that metrics like velocity, cycle time and bug\ncount are captured with real numbers — not vibes). The script only does deterministic file\nops — listing, scaffolding from `07-retrospectives/_templates/retro.md.tpl`, and the two-state\nlifecycle transition `draft → final`. The LLM drives the live interview (Keep / Improve /\nStop, Actions with owner + due date, team mood, metrics) via Edit/Write, always mirroring the\nuser's active conversation language. Slugs are stable references and retros are never renamed.\nAfter scaffold or transition, invokes `/sdlc-kit:sync` so MOCs and `_INDEX.md` reflect the\nchange. Do NOT invoke for PR reviews (use `/sdlc-kit:review`), for incident post-mortems\n(use `/sdlc-kit:incident`), or forward-looking planning (out of scope).",
+      "source_sha256": "7abde6f67b7d1aaa71ab0fc206e096f7696fba2b2bc4b5c973138d0e9bf7a074",
+      "source_path": "skills/sdlc-retro/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98a891f7e2bf1de3fd7d3301cb7e9340aa20bb729308846f08d316ccdf56c5c7": {
+      "description_zh": "记录和完成 PR 代码审查，结合资深工程师与 AppSec 的完整检查，独立追踪文稿 draft/final 和 pending/approved/changes-requested 等决定；发现须含严重度、代码位置、问题及具体建议，更新后同步，不替代迭代或事故复盘。",
+      "source": "Use when the user wants to record, finalize, or transition a code-review\nrecord for a Pull Request — one file per review under\n`07-retrospectives/reviews/<slug>.md` (slug usually\n`pr-NNNN-<short-topic>`). English triggers: `/sdlc-kit:review`,\n`/sdlc-kit:review new <pr-or-title>`, `/sdlc-kit:review list`,\n`/sdlc-kit:review approve <slug>`,\n`/sdlc-kit:review approve-with-comments <slug>`,\n`/sdlc-kit:review request-changes <slug>`,\n`/sdlc-kit:review finalize <slug>`, \"review PR #42\",\n\"code review the login PR\", \"approve that review\",\n\"request changes on the rate-limiting PR\". pt-BR triggers:\n\"revisar o PR #42\", \"fazer code review do PR de login\",\n\"aprovar aquele review\", \"solicitar mudanças no PR de rate limiting\".\nCo-authored by a duo of expert personas running in parallel through the\nfull checklist: a **Senior Engineer (Code Reviewer)** (design &\narchitecture, code quality, tests, process) and an **AppSec Engineer**\n(security, privacy/LGPD, supply chain). The script tracks two independent\nlifecycle axes: `status` (draft → final — is the write-up delivered?) and\n`decision` (pending → approved | approved-with-comments | changes-requested\n— the reviewer's verdict). Findings are tagged by severity (🔴 Blocker /\n🟡 Major / 🟢 Minor / 🔵 Praise), each with `path/file.ext:NNN`, problem,\nand concrete suggestion — a finding without location or suggestion is not\nactionable. The script does deterministic file ops only — listing,\nscaffolding from `07-retrospectives/_templates/review.md.tpl`, and the two\ntransitions; the LLM drives the section-by-section checklist pass via\nEdit, mirroring the user's chat language. After scaffold, transition, or\ndecide, invokes `/sdlc-kit:sync` so MOCs and `_INDEX.md` reflect the\nchange. Do not invoke for sprint or release retrospectives\n(`/sdlc-kit:retro`), incident post-mortems (`/sdlc-kit:incident`), or\nvault-completeness audits (`/sdlc-kit:status`).",
+      "source_sha256": "98a891f7e2bf1de3fd7d3301cb7e9340aa20bb729308846f08d316ccdf56c5c7",
+      "source_path": "skills/sdlc-review/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd0866d292454cc11c1f651790703f9f01d5cf81df3998248068ee196c3a9789": {
+      "description_zh": "在功能目录建立 requirements、design、tasks 三件套，涵盖 EARS 功能非功能需求、架构安全可观测性与发布设计、TDD 小任务及独立 worktree；需求批准后才设计，设计批准后才列任务，各文档独立管理状态并同步。",
+      "source": "Use when the user wants to create or mature a Spec-Driven Development (SDD)\ntrio — `requirements.md` (EARS notation, FR + NFR across 10 axes),\n`design.md` (architectural drivers, patterns, C4, flows, data model,\ncontracts, threat-modelled security, SLI/SLO observability, resilience,\nrollout) and `tasks.md` (executable TDD + bite-sized task list with Kiro\nmarkers, Conventional Commits branch/commit, and one git worktree per\ntask) — under `04-specs/<feature-slug>/`. English triggers:\n`/sdlc-kit:spec`, `/sdlc-kit:spec new <feature>`,\n`/sdlc-kit:spec requirements approve`,\n`/sdlc-kit:spec design approve`, \"start a spec for X\",\n\"write requirements for Y\", \"approve the design\",\n\"the tasks for feature Z are ready\", \"archive the old login spec\".\npt-BR triggers: \"começar uma spec para X\",\n\"escrever os requisitos para Y\", \"aprovar o design\",\n\"as tasks da feature Z estão prontas\", \"arquivar a spec antiga de login\".\nThe trio is the unit of work: scaffolding creates all three files from\n`04-specs/_templates/` at once, then the LLM drives the interview\nsection-by-section under explicit expert triads — requirements is authored\nby a **Senior PM + Software Engineer + Solutions Architect** triad; design\nis authored by a **Senior Software Engineer + AppSec Engineer + Software\nArchitect** triad; tasks is driven by a TDD-first operator obeying Kiro\nmarkers. Hard approval gates (requirements → design → tasks) ensure design\ncannot start before requirements are approved and tasks cannot start\nbefore design is approved. Status transitions are per-doc\n(`draft` → `approved` → `implemented` → `archived`). Always invokes\n`/sdlc-kit:sync` after any edit. Do not invoke for single technical\ndecisions (`/sdlc-kit:adr`), cross-cutting requirements\n(`/sdlc-kit:trd`), or initiative-level product scope (`/sdlc-kit:prd`).",
+      "source_sha256": "bd0866d292454cc11c1f651790703f9f01d5cf81df3998248068ee196c3a9789",
+      "source_path": "skills/sdlc-spec/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d5b90e7c6aae22d87ba3f7489bbf21351e35bf640348444cc1a75741ed2139be": {
+      "description_zh": "只读查询 SDLC SQLite tracker，输出笔记总数、阶段分布、任务状态和 ADR 状态的 JSON 快照，并读取索引开头用于定位上下文；不刷新或写入，未初始化则提示先 init。",
+      "source": "Use at the start of any session or when the user asks for a quick health\ncheck of the SDLC vault — typically `/sdlc-kit:status`, \"check the vault\",\n\"ver o estado do projeto\", \"status do kit\", \"give me a project snapshot\",\n\"dashboard do SDLC\", \"qual a situação atual\", \"onde estão os ADRs\", \"quantas\ntasks abertas\". Queries the SQLite tracker (`.sdlc-kit/db.sqlite`) for a\nsingle-shot read-only summary: total notes, notes by phase, open vs done\ntasks, ADRs accepted vs proposed. Complements `/sdlc-kit:sync` (which\n*refreshes* the index + MOCs); this one only *reports* what's already in\nthe tracker. Also reads the first lines of `_INDEX.md` so the LLM can\nground itself in the vault before running any other SDLC Kit skill. Emits\na single JSON object on stdout. Never writes. If the DB is not yet\ninitialized, asks the user to run `/sdlc-kit:init` first.",
+      "source_sha256": "d5b90e7c6aae22d87ba3f7489bbf21351e35bf640348444cc1a75741ed2139be",
+      "source_path": "skills/sdlc-status/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07614ddab68ae0e7aabcad6da11a20353288a74fdd54bff0529ca61453fd98a7": {
+      "description_zh": "增量扫描 SDLC vault 到 SQLite，校验各类文档 frontmatter，报告坏链接、孤立文件、重复标题与陈旧更新，再重建阶段 MOC 和八阶段总索引；流程幂等，不删除或自动修复，要求 vault 写权限。",
+      "source": "Use when the user wants to refresh the SDLC vault — typically via\n`/sdlc-kit:sync`, after bulk edits, at the start of a session, or\nautomatically after any Write/Edit/NotebookEdit inside a vault (triggered\nby the PostToolUse hook). English triggers: `/sdlc-kit:sync`, \"sync\",\n\"reindex\", \"run the librarian\", \"refresh the index\",\n\"regenerate the MOCs\". pt-BR triggers: \"sincronizar o vault\",\n\"reindexar\", \"rodar o bibliotecário\", \"atualizar o índice\",\n\"regenerar os MOCs\". This is a librarian utility — no persona interview,\njust deterministic validation and regeneration. Runs the vault librarian:\ndelta-scans the vault into SQLite, validates frontmatter per document type\n(moc, prd, adr, epic, milestone, spec, task, trd, api, retro, review,\nincident, aggregate, event, contract, token, component, pattern,\nworktree, branch), flags broken wikilinks, orphan files, duplicate titles,\nand stale updates, regenerates every `<phase>/_MOC.md` `## Artifacts`\nsection, and rewrites `_INDEX.md` preserving the canonical 8-phase\nstructure with populated tables or onboarding CTAs when empty. Emits a\nsingle JSON report on stdout with scanned count, db deltas, anomalies\n(severity/type/file/detail), and regenerated files. Never deletes\nanything; never auto-fixes without `--fix` (reserved for future use). Safe\nto invoke repeatedly — idempotent. Do not invoke outside a vault or\nwithout write permission on `.sdlc/`.",
+      "source_sha256": "07614ddab68ae0e7aabcad6da11a20353288a74fdd54bff0529ca61453fd98a7",
+      "source_path": "skills/sdlc-sync/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4bf92d11e0631d142be8454e6b5004a6d8af756bf7b4d518ee9b408d258c8c1": {
+      "description_zh": "管理规格 tasks.md 中 TASK 的列出、开始、完成、阻塞和重开，仅切换 Kiro 标记，不创建独立任务文档；采用 TDD、2 至 5 分钟小步和每任务独立 worktree，默认每功能仅一个进行中任务，变更后同步索引。",
+      "source": "Use when the user wants to list, start, complete, block, or reopen a\nTASK-NNN inside a feature's `04-specs/<slug>/tasks.md` — the executable\ntask list authored by `/sdlc-kit:spec`. English triggers:\n`/sdlc-kit:task`, `/sdlc-kit:task list <feature>`,\n`/sdlc-kit:task start <feature> <TASK-NNN>`,\n`/sdlc-kit:task complete <feature> <TASK-NNN>`,\n`/sdlc-kit:task block <feature> <TASK-NNN> \"<reason>\"`,\n`/sdlc-kit:task reopen <feature> <TASK-NNN>`,\n\"start TASK-010 for login\", \"complete TASK-001 on checkout\",\n\"block TASK-022 — waiting on infra\", \"reopen TASK-015\". pt-BR triggers:\n\"começar a TASK-010 do login\", \"finalizar a TASK-001 do checkout\",\n\"bloquear a TASK-022 — esperando infra\", \"reabrir a TASK-015\".\nDriven by a **Senior Engineer** persona — enforces TDD, bite-sized steps\n(2–5 min), one worktree per task, Conventional Commits for branch and\ncommit, and the single-`[-]` invariant per feature. This skill does not\ncreate a standalone `task` document; the spec-tasks file is the single\nsource of truth. The script flips Kiro markers only (`[ ]` queued →\n`[-]` in_progress → `[x]` completed; `[~]` needs_attention with a note).\nEvery task is executed TDD-first, bite-sized, inside a dedicated\n`git worktree` branch named with Conventional Commits\n(`feat(<feature>)/<task-slug>`, `fix(<feature>)/...`, `refactor(...)/...`,\netc.). Only one task per feature may be in `[-]` at a time (the script\nrefuses unless `--allow-multi-active` is passed). Always invokes\n`/sdlc-kit:sync` after any marker change. Do not invoke for creating the\ntask list (`/sdlc-kit:spec`), for grouping features (`/sdlc-kit:epic`),\nor for delivery windows (`/sdlc-kit:milestone`).",
+      "source_sha256": "f4bf92d11e0631d142be8454e6b5004a6d8af756bf7b4d518ee9b408d258c8c1",
+      "source_path": "skills/sdlc-task/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4133d99c49f5d1f43d2302529a090a3ce1f2801e73827d7fc0d0361b64d4bf4b": {
+      "description_zh": "在 SDLC 开发目录记录、创建、登记、关闭、合并或放弃 worktree 与分支，追踪 worktree active 到 merged/abandoned 和分支 CI、PR 信息；工程师与发布负责人共同确认后才标记已合并。",
+      "source": "Use when the user asks to create, register, close, merge, or abandon a git\nworktree or a feature branch — or when they invoke `/sdlc-kit:worktree`.\nMirror triggers such as \"create a worktree\", \"register a branch\", \"open a\nfeature branch\", \"mark worktree as merged\", \"close this worktree\",\n\"abandon the branch\", \"criar worktree\", \"registrar branch\", \"abrir branch\nde feature\", \"marcar worktree como mergeado\", \"fechar worktree\", \"abandonar\nworktree\". Operates under `05-development/` with two kinds, both\ncollections: `worktree` (physical git worktree directory — lifecycle\n`active → merged | abandoned`) and `branch` (git branch record — no formal\nstatus enum, tracks `ci_status`/`pr` instead). The skill scaffolds the file\nand, for worktrees, records the status change. The **Senior Software\nEngineer** and the **Release Engineer / Branch Manager** drive the\nclosure interview together; both must agree before a worktree can be\ntransitioned to `merged`.",
+      "source_sha256": "4133d99c49f5d1f43d2302529a090a3ce1f2801e73827d7fc0d0361b64d4bf4b",
+      "source_path": "skills/sdlc-worktree/SKILL.md",
+      "package_sha256": "8a5cc4a34f34b3e7fb8d64bb4039f11b91a7e6b761e80df241282b61d0807320",
+      "source_package": "sdlc-kit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0133ee0d23573e21c43bd804bb641ed0af42a6f8d95c85d6d99045b807d84cb0": {
+      "description_zh": "编写 REST、异步事件、gRPC 或 webhook 契约，在架构 API 目录按类型独立保存，结合生产方接口与消费方易用性进行访谈，管理 draft、approved 和 deprecated 状态。",
+      "source": "Use when the user asks to document an API, design a REST endpoint, create an\nasync event contract, define a gRPC service, specify a webhook, or when they\ninvoke `/sdlc-kit:api`. Mirror triggers such as \"document an API\", \"design a\nREST endpoint\", \"create async event contract\", \"webhook spec\", \"documentar\nAPI\", \"desenhar endpoint\", \"novo contrato de evento\", \"especificação de\nwebhook\", \"contrato de API\", \"API assíncrona\", \"serviço gRPC\". Operates\nunder `02-architecture/api/` with four kinds, all collections — `rest`,\n`async`, `grpc`, `webhook` (one file per slug per kind). Lifecycle for every\nkind is `draft → approved → deprecated`. The skill scaffolds the file and\nrecords the status change; the **API Designer / Platform Engineer** and\n**Senior Software Engineer (consumer perspective)** drive the content\ninterview together (producer contract vs consumer ergonomics), and the LLM\nmirrors the user's chat language when filling the template.",
+      "source_sha256": "0133ee0d23573e21c43bd804bb641ed0af42a6f8d95c85d6d99045b807d84cb0",
+      "source_path": "skills/sdlc-api/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d88423b06dda1b30ea26e715c316f61b1561d417fd1b77ec8289ee3cf892ba03": {
+      "description_zh": "使用 C4 第 1 至 3 层描述系统上下文、容器和组件，以架构师及工程师视角共同编写 Mermaid；上下文和容器各一份，组件按容器保存，管理草稿、批准与弃用。",
+      "source": "Use when the user asks to document or update the system architecture using\nthe C4 model (levels 1–3), draw a context/container/component diagram, or\ninvokes `/sdlc-kit:c4`. Mirror triggers such as \"draw the C4 context\",\n\"desenhar diagrama de containers\", \"atualizar C4\", \"documentar arquitetura\",\n\"bootstrap C4 for this project\", \"diagrama de componentes do serviço X\".\nOperates under `02-architecture/c4/` with three kinds: `context` and\n`container` (singletons — one file per vault) and `component` (collection —\none file per container). Lifecycle for every kind is `draft → approved →\ndeprecated`. The skill scaffolds the file and records the status change;\nthe **Software Architect** and **Senior Engineer** drive the Mermaid\ncontent together, and the LLM mirrors the user's chat language when\nfilling narrative sections.",
+      "source_sha256": "d88423b06dda1b30ea26e715c316f61b1561d417fd1b77ec8289ee3cf892ba03",
+      "source_path": "skills/sdlc-c4/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e9edf0f9e7fbc40ea52ca60d55f577977e69fa51e26f9656a7baf0c4f2b0746": {
+      "description_zh": "创建设计令牌、UI组件和组合模式文档，梳理值与别名、API变体状态无障碍、结构流程反模式及继承关系；原说明采用 WCAG 2.1 AA，管理 draft、stable、deprecated 并可重开，更新后同步。",
+      "source": "Use when the user wants to create, list, or change the status of a\ndesign-system entry — a design token (atomic value), a component (reusable\nUI spec) or a pattern (recurring combination of components). English\ntriggers: `/sdlc-kit:design-system`,\n`/sdlc-kit:design-system new token <slug>`,\n`/sdlc-kit:design-system new component <slug>`,\n`/sdlc-kit:design-system new pattern <slug>`,\n`/sdlc-kit:design-system list`,\n`/sdlc-kit:design-system {stabilize|deprecate|reopen} <kind> <slug>`,\n\"create a primary-color token\", \"document the Button component\",\n\"the Card pattern is stable now\", \"deprecate the legacy-input token\".\npt-BR triggers: \"criar um token de cor primária\",\n\"documentar o componente Button\", \"o padrão Card está estável\",\n\"deprecar o token legacy-input\", \"marcar o modal como draft de novo\".\nDriven by a **Design System Lead** persona — owns the visual/interaction\nvocabulary, WCAG 2.1 AA compliance, and the token → component → pattern\ninheritance chain. Creates one file per entry under\n`06-design-system/{tokens,components,patterns}/<slug>.md` from the\ncorresponding template. The script handles deterministic operations\n(list / scaffold / transition); the LLM drives the per-kind interview\n(category/base value/aliases for tokens, API/variants/states/accessibility\nfor components, structure/flow/anti-patterns for patterns) section-by-section\nvia Edit, mirroring the user's chat language. Lifecycle: `draft` → `stable`\n→ `deprecated`, reversible to `draft` via `reopen`. Always invokes\n`/sdlc-kit:sync` after any change. Do not invoke for architecture docs\n(`/sdlc-kit:c4`), feature specs (`/sdlc-kit:spec`), or domain modelling\n(`/sdlc-kit:domain`).",
+      "source_sha256": "3e9edf0f9e7fbc40ea52ca60d55f577977e69fa51e26f9656a7baf0c4f2b0746",
+      "source_path": "skills/sdlc-design-system/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "206a04fc9a018857dfde890c3091fec262d9303def11d848d843398b35b00da8": {
+      "description_zh": "作为前端 UX 第三门禁，在 UX 研究和设计系统初始化后检查 criteria、用户流程、线框及令牌组件模式，结合 UX 和前端架构视角生成 go/no-go、缺口和签署报告，获用户批准后才进入 TRD。",
+      "source": "Use as Gate 3 of the frontend UX workflow — validates that UX research\n(Gate 1) and Design System initialization (Gate 2) are complete and\nconsistent before a TRD is authored (Gate 4). Reads ux-criteria.md,\nuser-flows.md, wireframes/, and design-system tokens/components/patterns.\nProduces a go/no-go report and a `06-design-system/design-validation.md`\nartifact with gap analysis and explicit sign-off.\nTriggers: `/sdlc-kit:design-validation`, `/sdlc-kit:design-validation run`,\n`/sdlc-kit:design-validation approve`, \"validate UX design\",\n\"run design gate\", \"is the design ready for TRD?\",\n\"validate before TRD\", \"design review gate\".\npt-BR: \"validar design\", \"rodar gate de design\",\n\"o design está pronto para o TRD?\", \"validação de design\".\nActs as a dual-persona reviewer: **Senior UX Designer** (flow completeness,\nacceptance criteria quality, accessibility gaps) + **Frontend Architect**\n(technical feasibility, design-system coverage, spec gaps that will block\nimplementation). Output: `draft` validation report that the user promotes\nto `approved` (pass) or keeps as `draft` with gap tasks. Do not invoke\nbefore `/sdlc-kit:ux` (Gate 1) and at least one `/sdlc-kit:design-system`\nentry exist.",
+      "source_sha256": "206a04fc9a018857dfde890c3091fec262d9303def11d848d843398b35b00da8",
+      "source_path": "skills/sdlc-design-validation/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a2da393a72856e474097fb4f321faac41432efc08d0f88b57d0c6f868300793": {
+      "description_zh": "在领域目录定义聚合、领域事件、上下文契约、上下文图和通用语言，结合领域建模与工程视角讨论事件风暴、不变量和防腐层，管理 draft、approved、deprecated。",
+      "source": "Use when the user asks to model the domain, define a bounded context, add an\naggregate/domain event/context contract, or curate the ubiquitous language —\nor when they invoke `/sdlc-kit:domain`. Mirror triggers such as \"modelar o\ndomínio\", \"criar agregado\", \"novo evento de domínio\", \"atualizar context\nmap\", \"atualizar linguagem ubíqua\", \"modelar bounded context\". Operates\nunder `03-domain/` with five kinds: `aggregate`, `event`, `contract`\n(collections — one file per slug) and `context-map`, `ubiquitous-language`\n(singletons — one file per vault). Lifecycle for every kind is `draft →\napproved → deprecated`. The skill scaffolds the file and records the status\nchange; the **Domain Modeler** and **Senior Software Engineer** drive the\ncontent interview together (Event Storming, aggregate invariants, ACL\npatterns), and the LLM mirrors the user's chat language when filling the\ntemplate.",
+      "source_sha256": "9a2da393a72856e474097fb4f321faac41432efc08d0f88b57d0c6f868300793",
+      "source_path": "skills/sdlc-domain/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76370742791765fbbd29c9da2652a48823133d45e3114db7d84ee2291402278a": {
+      "description_zh": "从 PRD 分解并管理 epic，结合产品经理与技术负责人定义目标、价值、故事、验收、估算和依赖，按 planned、in-progress、done 或 cancelled 追踪，更新后同步；不替代功能规格或交付窗口。",
+      "source": "Use when the user wants to create, list, or change the status of an epic —\na large deliverable decomposed from a PRD that groups related stories (each\noften becoming a spec trio under `04-specs/`). English triggers:\n`/sdlc-kit:epic`, `/sdlc-kit:epic new <slug>`, `/sdlc-kit:epic start <slug>`,\n`/sdlc-kit:epic done <slug>`, `/sdlc-kit:epic cancel <slug>`,\n`/sdlc-kit:epic list`, \"start an epic for X\",\n\"the auth epic is in progress\", \"mark the onboarding epic as done\",\n\"cancel the legacy-billing epic\". pt-BR triggers: \"criar um epic para X\",\n\"o epic de auth está em andamento\", \"marcar o epic de onboarding como done\",\n\"cancelar o epic legacy-billing\". Co-authored by a duo of expert personas:\na **Product Manager** (owns objective, business value, stories, scope) and\na **Tech Lead** (owns acceptance criteria, estimate, dependencies,\nstory-to-spec decomposition). Creates one file per epic at\n`01-planning/epic/<slug>.md` from `01-planning/_templates/epic.md.tpl`.\nThe script handles deterministic operations only (list / scaffold /\ntransition); the LLM drives the interview and section-by-section editing\nvia Edit, mirroring the user's chat language. Lifecycle: `planned` →\n`in-progress` → `done`, with `cancelled` as a terminal option. Always\ninvokes `/sdlc-kit:sync` after any change. Do not invoke for individual\nfeature specs (`/sdlc-kit:spec`), initiative-level product scope\n(`/sdlc-kit:prd`), or delivery windows grouping multiple epics\n(`/sdlc-kit:milestone`).",
+      "source_sha256": "76370742791765fbbd29c9da2652a48823133d45e3114db7d84ee2291402278a",
+      "source_path": "skills/sdlc-epic/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5168c4d4739b98fa2abbc24a7b18b64903205ecc732ee93408fb3589468eeef5": {
+      "description_zh": "只读沿 vault wikilink 有向图进行有界 BFS 影响分析，查询依赖、被依赖或双向关系，帮助安排迁移；图不含普通文本或代码引用，破坏性操作前需另做代码搜索，不用于自由文本搜索或文档状态修改。",
+      "source": "Use when the user wants a change-impact analysis over the vault's wikilink\ngraph. English triggers: `/sdlc-kit:impact`, `/sdlc-kit:impact <seed>`,\n\"what breaks if I deprecate this?\", \"blast radius\",\n\"what depends on this?\", \"dependents of\", \"dependencies of\",\n\"who links to this note\",\n\"check the blast radius before I change ADR-0007\",\n\"who still references the mobile-client TRD?\",\n\"what does the login-google spec depend on?\". pt-BR triggers:\n\"análise de impacto\", \"raio de impacto\", \"o que quebra se eu mudar\",\n\"o que depende disso\", \"quem depende disso\", \"antes de deprecar\",\n\"antes de renomear\", \"antes de mover\". Driven by a **Software Architect**\npersona — assesses design-time coupling revealed by the graph, flags\naccidental duplication vs healthy inheritance, and advises on migration\nordering before destructive actions. Reads every `.md` under the vault\n(skipping `.sdlc-kit/`, `_templates/`, hidden folders), builds a directed\ngraph of `[[wikilinks]]`, and walks it with a bounded BFS from a seed\nnote. Backward (default) answers \"what depends on this?\"; forward answers\n\"what does this depend on?\"; `both` takes the union. The script is\nread-only and stdlib-only — it never writes to the vault and never shells\nout. The graph reflects only wikilinks; plain-text and code references are\ninvisible, so always cross-check with grep / code search before a\ndestructive action. Do not invoke for free-text concept search, for\nscaffolding or transitioning notes (use the type-specific skill such as\n`/sdlc-kit:adr`, `/sdlc-kit:trd`, `/sdlc-kit:spec`), or when cwd is not\ninside a `.sdlc-kit` vault.",
+      "source_sha256": "5168c4d4739b98fa2abbc24a7b18b64903205ecc732ee93408fb3589468eeef5",
+      "source_path": "skills/sdlc-impact/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78eb5af99a1f465cb702e248bdd41ac12649aee0eeb78eda845d6547f57db5e6": {
+      "description_zh": "记录生产事故及事后经验，结合 SRE 与工程负责人梳理检测、影响、时间线、缓解、RCA和行动，严格追踪 open、mitigated、resolved、post-mortem 与 SEV1至4，自动记缓解恢复时间，保持稳定引用且不删除历史。",
+      "source": "Use when the user wants to record, walk, or close a **production incident** —\nthe real-time event report plus the post-mortem lessons doc. One file per\nincident under `07-retrospectives/incidents/<slug>.md`, slug-based (usually\n`inc-YYYY-MM-DD-<short-topic>`) because the slug is what on-call, responders\nand stakeholders will reference forever after. Typical triggers in English:\n`/sdlc-kit:incident`, `/sdlc-kit:incident new <title>`, `/sdlc-kit:incident\nlist`, `/sdlc-kit:incident mitigate <slug>`, `/sdlc-kit:incident resolve\n<slug>`, `/sdlc-kit:incident post-mortem <slug>`, or phrases like \"log an\nincident\", \"open an incident\", \"we have a SEV1\", \"start an incident record\",\n\"the API is down — capture it\", \"P0 outage\", \"run the post-mortem\",\n\"attach the lessons learned\". Typical triggers in pt-BR: \"registrar um\nincidente\", \"abrir incidente\", \"temos um SEV1\", \"o gateway caiu, documenta\nisso\", \"rodar o pós-mortem\", \"anexar lições aprendidas\", \"incidente P0\". This\nskill is co-authored by a duo of expert personas: an **SRE / On-Call\nEngineer** (drives detection, mitigation, timeline, SLO impact, RCA under\ntime pressure) and an **Engineering Lead** (drives the lessons doc, action\nitems, ownership, and follow-through after the customer pressure is gone).\nIncidents move through a strict 4-state lifecycle (`open → mitigated →\nresolved → post-mortem`). Every severity is enforced (SEV1 | SEV2 | SEV3 |\nSEV4) — no custom severity strings. The script auto-fills `mitigated_at` and\n`resolved_at` frontmatter timestamps when flipping status so the MTTD/MTTM/\nMTTR math in `_INDEX.md` stays honest. The LLM drives the narrative content\n(summary, timeline rows, impact, mitigation applied, lessons) via Edit/Write,\nalways mirroring the user's active conversation language. Slugs are stable\nreferences — incidents are NEVER deleted, even after post-mortem, because\nthe vault's incident history is a learning asset. After scaffold or\ntransition, invokes `/sdlc-kit:sync` so MOCs and `_INDEX.md` reflect the\nchange. Do not invoke for sprint retrospectives (use `/sdlc-kit:retro`), PR\nreviews (use `/sdlc-kit:review`), or general operational tasks\n(use `/sdlc-kit:task`).",
+      "source_sha256": "78eb5af99a1f465cb702e248bdd41ac12649aee0eeb78eda845d6547f57db5e6",
+      "source_path": "skills/sdlc-incident/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f7e10923e4ba407a38d93c8b43ff455f84600dd7e30f45eb93588734d94c0fb": {
+      "description_zh": "管理汇集多个 epic 的交付里程碑，记录目标日期、成功条件、风险和外部依赖，支持 planned、on-track、at-risk、slipped、done、cancelled；RAG 健康由用户定性判断，不按日期或完成率自动推导。",
+      "source": "Use when the user wants to create, list, or change the status of a\nmilestone — a delivery window that groups one or more epics toward a single\ntarget date, with RAG-style health (planned / on-track / at-risk / slipped\n/ done). English triggers: `/sdlc-kit:milestone`,\n`/sdlc-kit:milestone new <slug>`, `/sdlc-kit:milestone start <slug>`,\n`/sdlc-kit:milestone at-risk <slug>`, `/sdlc-kit:milestone slip <slug>`,\n`/sdlc-kit:milestone done <slug>`, `/sdlc-kit:milestone cancel <slug>`,\n`/sdlc-kit:milestone list`, \"create a milestone for Q2\",\n\"the beta-launch milestone is at risk\",\n\"mark the Q2 milestone as slipped\",\n\"we shipped the beta-launch milestone\",\n\"cancel the Q3-rewrite milestone\". pt-BR triggers:\n\"criar um milestone para o Q2\", \"o milestone beta-launch está em risco\",\n\"marcar o milestone Q2 como slipped\", \"entregamos o beta-launch\",\n\"cancelar o milestone Q3-rewrite\". Driven by a **Program Manager**\npersona — owns the delivery window, qualitative RAG health call, and the\nportfolio view of which epics this milestone aggregates. Creates one file\nper milestone at `01-planning/milestone/<slug>.md` from\n`01-planning/_templates/milestone.md.tpl`. The script handles deterministic\noperations only (list / scaffold / transition) plus an optional\n`--target-date YYYY-MM-DD` at scaffold time; the LLM drives the interview\n(target date, aggregated epics, success criteria, active risks, external\ndependencies) section-by-section via Edit, mirroring the user's chat\nlanguage. Lifecycle: `planned` → `on-track` → `done`, with degradation via\n`at-risk` → `slipped`, and `cancelled` as a terminal option from any\nstate. RAG health is a qualitative call the user makes; the script does\nnot auto-derive it from dates or completion percentages. Always invokes\n`/sdlc-kit:sync` after any change. Do not invoke for individual\ndeliverables inside a milestone (`/sdlc-kit:epic`), initiative-level\nproduct scope (`/sdlc-kit:prd`), or feature-level specs\n(`/sdlc-kit:spec`).",
+      "source_sha256": "6f7e10923e4ba407a38d93c8b43ff455f84600dd7e30f45eb93588734d94c0fb",
+      "source_path": "skills/sdlc-milestone/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "558bc11f8b3c830d4f5bb736eda4e5275f4f90dd1e4b9777e003d30a478de7a2": {
+      "description_zh": "定义和更新 SDLC 产品愿景、技术原则和团队标准，由产品、技术和工程管理视角填写 product、tech、standards，按草稿到启用管理并同步索引；不修改用户拥有的 CLAUDE.md，也不替代 ADR 或 TRD。",
+      "source": "Use when the user wants to define or update the project's steering\ndocuments — product vision, technical principles, or team standards.\nEnglish triggers: `/sdlc-kit:steer`, `/sdlc-kit:steer product`,\n`/sdlc-kit:steer tech`, `/sdlc-kit:steer standards`,\n\"define the product vision\", \"register the stack\",\n\"set up team standards\", \"document our principles\". pt-BR triggers:\n\"definir a visão de produto\", \"registrar a stack técnica\",\n\"configurar os padrões do time\", \"documentar nossos princípios\".\nCo-authored by a triad of personas — a **Product Lead** (owns\n`product.md` vision, KPIs, personas), a **Tech Lead** (owns `tech.md`\nstack, principles, platform shape), and an **Engineering Manager** (owns\n`standards.md` team conventions, review gates, definition of done).\nManages the three canonical files in `00-steering/` (`product.md`,\n`tech.md`, `standards.md`). The script handles deterministic operations\nonly — reporting status, scaffolding a doc from its template in\n`00-steering/_templates/`, and promoting `status: draft` to\n`status: active`. The LLM drives the content interview and\nsection-by-section editing via Edit/Write, mirroring the user's chat\nlanguage. NEVER touches `CLAUDE.md` (sovereign, user-owned). After\nedits, invokes `/sdlc-kit:sync` so MOCs and `_INDEX.md` reflect the new\nstate. Do not invoke to discuss architecture decisions (`/sdlc-kit:adr`)\nor technical requirements (`/sdlc-kit:trd`).",
+      "source_sha256": "558bc11f8b3c830d4f5bb736eda4e5275f4f90dd1e4b9777e003d30a478de7a2",
+      "source_path": "skills/sdlc-steer/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b4355252c13a01b1385b33d19c34f35d86ed016d0a363a5d0099874c145266c": {
+      "description_zh": "只读遍历 SDLC frontmatter 和 wikilink，报告 PRD、需求、设计、任务、审查及支持 ADR/TRD 的追溯覆盖，结合业务分析与 QA 视角识别孤立或未实现项；仅报告缺口，不创建或修改产物。",
+      "source": "Use when the user wants a requirement-to-artifact traceability matrix across\nthe SDLC vault — \"trace coverage\", \"traceability\", \"requirement coverage\",\n\"which PRDs have no implementation\", \"which designs have no PRD upstream\",\n\"show the spec/task/review chain for <feature>\"; or in pt-BR \"matriz de\nrastreabilidade\", \"cobertura de requisitos\", \"quais requisitos não têm\nimplementação\", \"quais ADRs estão órfãos\". Typical triggers are\n/sdlc-kit:trace, /sdlc-kit:trace <slug>, /sdlc-kit:trace --format markdown.\nThis skill is **read-only**: it walks the vault, indexes frontmatter and\nwikilinks, and reports the coverage chain PRD → spec-requirements →\nspec-design → spec-tasks → tasks → review, plus supporting ADRs/TRDs.\nIt **never writes** any artifact. The skill is co-authored by two lenses — a\n**Requirements Engineer / BA** (owns the PRD↔spec chain: does every PRD have\na spec? does every spec wikilink back to its PRD?) and a **QA Lead** (owns\nthe spec↔task↔review chain: does every spec-tasks have task records? does\nevery merged feature have a review?). Invoke /sdlc-kit:trace to surface gaps\nbefore a release review, before a quarterly audit, after a big planning\nround, or whenever the team is unsure which requirements actually shipped.\nDo not invoke to *fix* the gaps — the skill reports; creating the missing\nartifacts belongs to /sdlc-kit:prd, /sdlc-kit:spec, /sdlc-kit:task,\n/sdlc-kit:adr, /sdlc-kit:trd or /sdlc-kit:review.",
+      "source_sha256": "3b4355252c13a01b1385b33d19c34f35d86ed016d0a363a5d0099874c145266c",
+      "source_path": "skills/sdlc-trace/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c7c6ee768dd0b8486354f558895b922de6617f3bf273cdebd8d17707a659cf9": {
+      "description_zh": "建立多个功能共同继承的 TRD 非功能基线，涵盖性能、扩展、可靠性、安全隐私、可观测、无障碍、维护、移植和成本；每项明确指标、目标及测量方式，规格遵守或通过 ADR 记录偏离，管理草稿批准弃用并保留稳定名称。",
+      "source": "Use when the user wants to record, review, or transition a Technical\nRequirements Document (TRD) — the cross-cutting non-functional baseline\n(performance, scalability, reliability, security, privacy/LGPD,\nobservability, accessibility, maintainability, portability, cost) that\nmultiple features/services inherit. One file per TRD under\n`02-architecture/trd/<slug>.md`, topic-based (not numbered). English\ntriggers: `/sdlc-kit:trd`, `/sdlc-kit:trd new <title>`,\n`/sdlc-kit:trd list`, `/sdlc-kit:trd approve <slug>`,\n`/sdlc-kit:trd deprecate <slug>`, \"write a TRD for X\",\n\"define platform NFRs\", \"set an availability SLO for the gateway\",\n\"approve the security TRD\", \"deprecate the old caching TRD\". pt-BR\ntriggers: \"escrever um TRD para X\", \"definir os NFRs da plataforma\",\n\"estabelecer um SLO de disponibilidade para o gateway\",\n\"aprovar o TRD de segurança\", \"deprecar o TRD antigo de caching\".\nCo-authored by a triad of expert personas: a **Software Architect**\n(drives scope, platform shape, pattern choices), an **AppSec Engineer**\n(drives security baseline, supply chain, privacy/LGPD, threat-model\ngates) and an **SRE / Platform Engineer** (drives SLIs/SLOs, RPO/RTO,\nobservability, capacity, cost). Every requirement produced is testable\n(named metric + target + measurement method) and inheritable (feature\nspecs either \"comply with [[TRD-<slug>]]\" in their §7 NFR block or request\na documented deviation via an ADR). The script only does deterministic\nfile ops — listing, scaffolding from `02-architecture/_templates/trd.md.tpl`,\nand lifecycle transitions (`draft → approved → deprecated`). The LLM\ndrives the content interview section-by-section via Edit/Write, mirroring\nthe user's chat language. Slugs are stable references and files are never\nrenamed — if a TRD should no longer apply, deprecate it and write a\nsuccessor. After scaffold or transition, invokes `/sdlc-kit:sync` so MOCs\nand `_INDEX.md` reflect the change. Do not invoke for feature-level\nfunctional requirements (`/sdlc-kit:spec`), product requirements\n(`/sdlc-kit:prd`), or single architectural decisions (`/sdlc-kit:adr`).",
+      "source_sha256": "9c7c6ee768dd0b8486354f558895b922de6617f3bf273cdebd8d17707a659cf9",
+      "source_path": "skills/sdlc-trd/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca04e316e0d3e8ac135c4cae04f5aac801d838a80474d10ef36abb4c9eab70c4": {
+      "description_zh": "作为前端 UX 第一门禁，结合研究员与产品设计师定义用户画像、JTBD、验收、用户旅程和低保真线框，原说明采用 WCAG 2.1 AA；管理草稿批准弃用并同步，须先于设计校验门禁。",
+      "source": "Use when the user wants to run Gate 1 of the frontend UX workflow — UX\nResearch + Product Design — for a new initiative or feature with a\nuser-facing surface. Creates or manages: `ux-criteria.md` (personas,\nJTBD, acceptance criteria), `user-flows.md` (user journeys), and\n`wireframes/<slug>.md` (lo-fi screen specs).\nTriggers: `/sdlc-kit:ux`, `/sdlc-kit:ux new <title>`,\n`/sdlc-kit:ux list`, `/sdlc-kit:ux wireframe <slug>`,\n`/sdlc-kit:ux approve`, `/sdlc-kit:ux deprecate`,\n\"define UX for this feature\", \"create user flows\",\n\"scaffold a wireframe for <screen>\", \"document personas\",\n\"run UX research\", \"map the user journey\".\npt-BR: \"definir UX\", \"criar user flows\", \"montar wireframe de <tela>\",\n\"documentar personas\", \"mapear jornada do usuário\".\nCo-authored by a **UX Researcher** (personas, JTBD, behavioral insights)\nand a **Product Designer** (flows, information architecture, wireframes,\nWCAG 2.1 AA compliance). Artifacts live in `06-design-system/`:\n`ux-criteria.md` and `user-flows.md` are singletons; wireframes are\na collection under `wireframes/<slug>.md`. Lifecycle: `draft` →\n`approved` → `deprecated`. Always invokes `/sdlc-kit:sync` after any\nwrite. Must be run before `/sdlc-kit:design-validation` (Gate 3).\nDo not invoke for architecture (`/sdlc-kit:c4`), feature specs\n(`/sdlc-kit:spec`), or domain modelling (`/sdlc-kit:domain`).",
+      "source_sha256": "ca04e316e0d3e8ac135c4cae04f5aac801d838a80474d10ef36abb4c9eab70c4",
+      "source_path": "skills/sdlc-ux/SKILL.md",
+      "package_sha256": "6ebbedcc5b3471f5ac2df037429c2ea3068abe44965c1aaac31f9f2587bdb36c",
+      "source_package": "sdlc-kit-extended-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f4393d03d26f7d3abefd5ea640105fa844462d6365d07231eb2cf62633493cc": {
+      "description_zh": "通过 SE Ranking PPC 数据分析域名或关键词的付费搜索竞争，汇总广告关键词覆盖、文案、共同竞价者及购物广告展示，生成竞争简报和建议竞价词清单。",
+      "source": "Paid-search competitive landscape for a domain or keyword. Pulls SE Ranking's PPC data — domain ad keyword footprint, ad copy patterns, who else bids on the same keywords, SERP shopping/ad-pack visibility — and produces a competitive ads brief plus a recommended bid-keyword shortlist. Use when the user asks \"paid search analysis\", \"competitor ads\", \"PPC competitive\", \"ad copy intelligence\", \"shopping pack\", \"who bids on this keyword\", or \"paid keyword footprint\".",
+      "source_sha256": "7f4393d03d26f7d3abefd5ea640105fa844462d6365d07231eb2cf62633493cc",
+      "source_path": "skills/seo-ads/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "328d23b59a810aa509f9df4d726670fc27677b5eccf04d3c9f86459e87c6d8a6": {
+      "description_zh": "为 SEO 代理机构生成获客落地页，结合目标领域真实竞争和 AI 搜索数据，设计痛点开场、证明、免费审计线索流程及适合冷流量的行动按钮。",
+      "source": "Generate a demand-gen landing page for an SEO agency, complete with pain-point hook, proof, a free-audit lead magnet flow, and CTAs tuned for cold traffic. Pulls real competitive and AI-search data for the agency's target niche to make the copy specific and credible. Use when the user asks for an SEO agency landing page, lead-gen page for an SEO agency, demand-gen page, free-audit landing page, or wants to convert cold traffic into discovery calls.",
+      "source_sha256": "328d23b59a810aa509f9df4d726670fc27677b5eccf04d3c9f86459e87c6d8a6",
+      "source_path": "skills/seo-agency-landing-page/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b1cb5ddea34e7cbf7b1bf6ae75e5de748f8d581c7f979fd987c283eb4540a29": {
+      "description_zh": "比较目标域名与竞争者在 ChatGPT、Perplexity、Gemini、Google AI Overview 和 AI Mode 的声量，获取 AIO 排名榜并抽样引用和品牌提示词，分析各品牌主题覆盖。",
+      "source": "Measure AI Search share of voice for a target domain versus competitors across ChatGPT, Perplexity, Gemini, Google AI Overview, and AI Mode. Pulls the AIO leaderboard, then samples prompts where each domain appears as a source or brand mention, and analyses topic clusters each brand owns. Use when the user asks for AI Search share of voice, LLM visibility tracking, AEO/GEO analysis, AI Overview competitive analysis, or wants to know which brands LLMs cite in their category.",
+      "source_sha256": "8b1cb5ddea34e7cbf7b1bf6ae75e5de748f8d581c7f979fd987c283eb4540a29",
+      "source_path": "skills/seo-ai-search-share-of-voice/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e5fe84936158903dee738fccdbe45f8876bdd100398678a86a7fb9662394c56": {
+      "description_zh": "设计 SE Ranking Data API 和 Project API 集成，读取实时 MCP 工具 Schema，解释端点、参数、JSON、积分、限流及认证，生成 cURL、Python、TypeScript 或工具调用示例；明确确认后可创建项目、关键词、审计和 AIRT 提示组。",
+      "source": "SE Ranking API integration architect. Covers the whole SE Ranking surface — the Data API (keyword research, backlinks, domain & competitor analysis, SERP, website audit, AI Search) and the Project API (rank tracking, project/keyword/backlink management, marketing plan, sub-accounts, AIRT prompts). Answers any \"how do I…\" question about endpoints, parameters, JSON schemas, credit cost, rate limits, or auth, and produces ready-to-paste cURL / Python / TypeScript / MCP-tool-call recipes. With explicit confirmation it also wires up Project API state — creating projects, adding keywords, configuring audits, setting up AIRT prompt groups. Pulls live tool schemas from the connected MCP. Unlike the analysis skills (briefs, audits, reports), seo-api produces integration recipes and wired-up state. Use when the user asks how to use the SE Ranking API, which endpoint returns a metric, how to build a rank tracker, for Postman / cURL / Python recipes, or how to integrate with Looker / n8n / Make.",
+      "source_sha256": "0e5fe84936158903dee738fccdbe45f8876bdd100398678a86a7fb9662394c56",
+      "source_path": "skills/seo-api/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d22e84eda4cb1c4a8ff433350999a3842b2ff5524d1f19aa41530fd4a0158a08": {
+      "description_zh": "发现链接多个竞争者却未链接目标网站的引用域，补充权威度、锚文本样本及联系角度，形成可供外链团队跟进的机会清单。",
+      "source": "Find referring domains that link to multiple competitors but not to your site, then enrich with authority, anchor samples, and outreach angle per row. Produces a prospect list an outreach team can start emailing tomorrow. Use when the user asks for backlink gap analysis, link building opportunities, competitor backlink intersection, link prospecting, or wants referring domains they are missing.",
+      "source_sha256": "d22e84eda4cb1c4a8ff433350999a3842b2ff5524d1f19aa41530fd4a0158a08",
+      "source_path": "skills/seo-backlink-gap/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "523591217264fd281d38d92391c532bdcca341f1cf9cdf87cec8c79a76e3a363": {
+      "description_zh": "审计域名完整外链画像，分析引用域、锚文本、权威度、IP子网多样性和增减趋势，标记潜在有害链接，生成健康评分及可审阅拒绝候选；从不自动 disavow。",
+      "source": "Full backlink profile for a domain — referring domains, anchor text distribution, authority distribution, IP and subnet diversity, growth/decay trend, toxic-candidate flagging. Distinct from `seo-backlink-gap` (which is gap-vs-competitor only). Produces a profile health score and reviewable disavow candidate list (never auto-disavow). Use when the user asks \"backlink profile\", \"link profile audit\", \"anchor distribution\", \"toxic links\", \"disavow candidates\", or \"backlink health\".",
+      "source_sha256": "523591217264fd281d38d92391c532bdcca341f1cf9cdf87cec8c79a76e3a363",
+      "source_path": "skills/seo-backlinks-profile/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a66990b8813f8d36ad9ca00af456676abd57085ce3ded088977f622374d00c8": {
+      "description_zh": "比较目标域名与主要自然搜索竞争者，按意图、搜索量和难度筛选对方有排名而目标缺失的关键词，识别内容空白和机会。",
+      "source": "Compare a target domain to its top organic competitors and surface keywords the competitors rank for that the target does not, filtered by intent, volume, and difficulty. Use when the user asks for a competitor gap analysis, keyword gap, organic content gap, missing keyword opportunities, or wants to see what their competitors are ranking for that they are not.",
+      "source_sha256": "7a66990b8813f8d36ad9ca00af456676abd57085ce3ded088977f622374d00c8",
+      "source_path": "skills/seo-competitor-gap-analysis/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f0527bcd66841f37e7ac05fc3c8209c4c8bbf5e5a3573ce794e6f48802cddbd": {
+      "description_zh": "结合竞争数据、比较意图 SERP 和现有页面起草 SEO 比较或替代方案落地页，包含功能矩阵、结构化数据和转化区块；不同于顶层获客页面。",
+      "source": "Generate SEO-optimized \"X vs Y\" comparison and \"alternatives to X\" landing pages targeting comparative-intent keywords. Pulls competitor data, comparative-intent SERPs, and existing comparison pages to produce a balanced, structured page draft with feature matrix, schema, and conversion blocks. Distinct from `seo-agency-landing-page` (top-of-funnel demand-gen). Use when the user asks for \"comparison page\", \"vs page\", \"alternatives page\", \"X vs Y\", \"alternative to X\", or \"competitor comparison page\".",
+      "source_sha256": "6f0527bcd66841f37e7ac05fc3c8209c4c8bbf5e5a3573ce794e6f48802cddbd",
+      "source_path": "skills/seo-competitor-pages/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c026a5ec8e0afca7996938ee595dbd667e8f46393e8927a23432b73cac7adc62": {
+      "description_zh": "审计已有内容的经验、专业、权威、可信度及 AI 引用准备程度，按 E-E-A-T 和 CITE 评分，指出阻止发布事项并形成发布、修正后发布或不发布决定。",
+      "source": "E-E-A-T + CITE quality audit for an EXISTING piece of content. Scores Experience, Expertise, Authoritativeness, Trustworthiness, and citation-readiness for AI search; surfaces veto items that block publication; produces a publish / publish-with-fixes / no-publish verdict. Distinct from `seo-content-brief` (produces a NEW article from a topic) and from `seo-page` (URL-level keyword/traffic intelligence). Use when the user asks \"content quality audit\", \"E-E-A-T check\", \"is this content good\", \"review this article\", \"content audit\", \"citation readiness\", or \"AI search readiness\".",
+      "source_sha256": "c026a5ec8e0afca7996938ee595dbd667e8f46393e8927a23432b73cac7adc62",
+      "source_path": "skills/seo-content-audit/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90853b2febb7f37d6f5954ae585ec83bdcbabaac6d4ac8d6036fc38d77fca2ea": {
+      "description_zh": "根据目标域名与主题汇总域名、竞争者、关键词缺口、SERP、相关问题、AI 引用及已有内链来源，形成可直接交给作者的完整 SEO 编辑简报。",
+      "source": "Generate a writer-ready SEO content brief from a target domain and topic. Pulls domain overview, competitors, keyword gaps, SERP analysis, related and question keywords, AI Search citations, and existing internal-link sources, then synthesises a complete editorial brief a freelance writer can start from immediately. Use when the user asks for a content brief, blog brief, article outline, editor brief, or wants to capture organic traffic their competitors have.",
+      "source_sha256": "90853b2febb7f37d6f5954ae585ec83bdcbabaac6d4ac8d6036fc38d77fca2ea",
+      "source_path": "skills/seo-content-brief/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f779c0a29ed572f30dbb43f73d301eafe2ec3e3aa576a882a91bd880e6a7768a": {
+      "description_zh": "为域名或 URL 保存 SEO 基线，后续比较权威度、流量、关键词、外链及页面内容并识别回退，支持 baseline、compare、history 及部署前后或月度快照。",
+      "source": "Capture an SEO baseline snapshot for a domain or URL, then on later runs compare the current state and surface regressions. Tracks authority, traffic, keywords, backlinks, and on-page content. Three subcommands — `baseline`, `compare`, `history`. Use when the user asks for \"SEO drift\", \"baseline this site\", \"did anything break\", \"SEO regression check\", \"compare before and after\", \"deployment check\", or \"monthly SEO snapshot\".",
+      "source_sha256": "f779c0a29ed572f30dbb43f73d301eafe2ec3e3aa576a882a91bd880e6a7768a",
+      "source_path": "skills/seo-drift/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "604a70364549967270da159e4c74f0104820adad062d0ece80752021d4667958": {
+      "description_zh": "通过 Firecrawl MCP 抓取、映射和爬取网站，获取原始 HTML、OG、Twitter、JSON-LD、canonical、robots、JS渲染 DOM及截图；用于结构化元数据等原始交付物，不替代关键词流量分析。",
+      "source": "Ad-hoc web scraping, site mapping, and full-site crawling via Firecrawl MCP. Returns raw HTML, parsed metadata (og:*, twitter:*, JSON-LD, canonical, robots), JS-rendered DOM, and screenshots that WebFetch cannot. Distinct from the SE Ranking skills (which give keyword/traffic/SERP data) and from WebFetch (which gives markdown prose only). Use when the user says \"scrape this page\", \"crawl this site\", \"map this site\", \"find all pages on\", \"get the OG tags\", \"get the JSON-LD\", \"render this JS-heavy page\", or any task where raw HTML head metadata, structured-data scripts, or post-JS DOM are the actual deliverable. Also invoked as a sub-step from other skills that need raw HTML.",
+      "source_sha256": "604a70364549967270da159e4c74f0104820adad062d0ece80752021d4667958",
+      "source_path": "skills/seo-firecrawl/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e343a939b291b931df6f94de07cb288c1786360eb9378c9c8eb6280bd16563ec": {
+      "description_zh": "针对单个 URL 分析生成式搜索优化，将 AI Overview 引用限定到页面主要关键词，识别被引用与应引用但未引用的查询，并提出提升模型引用性的页面修改建议。",
+      "source": "URL-level Generative Engine Optimization (GEO) analysis. For a specific URL, pulls AI Overview citation data scoped to the URL's primary keywords, identifies which AIO queries cite the URL vs which don't but should, and recommends page-level changes that improve LLM citability. Distinct from `seo-ai-search-share-of-voice` (domain-level, brand vs brand) — this is one URL, deeper. Use when the user asks \"GEO for this page\", \"AIO citation analysis\", \"AI search readiness for URL\", \"why isn't this page cited\", or \"improve LLM citations\".",
+      "source_sha256": "e343a939b291b931df6f94de07cb288c1786360eb9378c9c8eb6280bd16563ec",
+      "source_path": "skills/seo-geo/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c094fae64464256fc8e6b3540e6e2c67672480c0043c7c675b427da1d7f5607": {
+      "description_zh": "接入 Google 自身 SEO 数据，包括 Search Console、URL检查、站点地图、PageSpeed、CrUX 25周历史、Indexing API、GA4自然流量、YouTube、NLP、知识图谱、Web Risk及关键词规划，用真实搜索和用户指标补充爬取分析。",
+      "source": "Direct access to Google's own SEO data via Search Console (Search Analytics, URL Inspection, Sitemaps), PageSpeed Insights v5, CrUX field data with 25-week history, Indexing API v3, GA4 organic traffic, YouTube video search, Google NLP entity/sentiment analysis, Knowledge Graph entity verification, Web Risk safety, and Google Ads Keyword Planner. Bridges crawl-based analysis (the rest of this catalogue) with Google's real-time field data — actual Chrome user metrics, real indexation status, real search performance, real organic traffic. Use when the user asks \"search console\", \"GSC\", \"PageSpeed\", \"CrUX\", \"field data\", \"indexing API\", \"GA4 organic\", \"URL inspection\", \"google api setup\", \"real CWV data\", \"impressions\", \"clicks\", \"CTR\", \"position data\", \"LCP\", \"INP\", \"CLS\", \"FCP\", \"TTFB\", \"Lighthouse scores\", \"youtube SEO\", \"knowledge graph\", \"keyword planner\", or \"real google data\".",
+      "source_sha256": "3c094fae64464256fc8e6b3540e6e2c67672480c0043c7c675b427da1d7f5607",
+      "source_path": "skills/seo-google/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22b92b22812c6307f6aa22a7e746800d0456d05dc168a20831daac3b21a2055b": {
+      "description_zh": "审计多语言多区域网站 hreflang，跨页面 HTML、SE Ranking 审计和 XML站点地图检查语言地区码、返回标签、x-default、canonical一致及冲突。",
+      "source": "Hreflang and international SEO audit for multi-language and multi-region sites. Validates language-region codes, return tags, x-default, canonical alignment, and conflict detection across the per-URL HTML, the SE Ranking audit, and the XML sitemap. Use when the user asks \"hreflang\", \"international SEO\", \"i18n\", \"language targeting\", \"x-default\", \"regional sites\", or \"multi-language SEO\".",
+      "source_sha256": "22b92b22812c6307f6aa22a7e746800d0456d05dc168a20831daac3b21a2055b",
+      "source_path": "skills/seo-hreflang/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54a12d5912f18d2e1649b5371f2b48f88065d24ea0ba54739c8a1c3e97ce0fb9": {
+      "description_zh": "通过 Firecrawl 获取图片清单，审计 alt、WebP/AVIF、响应式尺寸、懒加载与 LCP、CLS安全尺寸、文件名及 ImageObject；可交叉 PageSpeed 估计节省字节，输出优先整改与可粘贴 picture 和 Schema。",
+      "source": "Image SEO audit for a URL or domain. Pulls raw image inventory via Firecrawl, then audits alt-text quality, modern-format coverage (WebP / AVIF), responsive sizing (`srcset` / `sizes`), lazy-loading and LCP signals (`loading`, `fetchpriority`, `decoding`), CLS-safe dimensions, descriptive file names, and `ImageObject` JSON-LD. Optional PageSpeed Insights cross-reference for real byte-saving estimates. Produces a prioritised remediation list plus paste-ready picture-element markup and `ImageObject` schema. Distinct from `seo-technical-audit` (which surfaces audit-flagged image issues at the site level) and from `seo-schema` (which generates page-level JSON-LD but not image-specific markup). Use when the user asks for \"image SEO\", \"image audit\", \"alt-text audit\", \"WebP coverage\", \"AVIF\", \"responsive images\", \"lazy loading\", \"CLS images\", \"image schema\", \"ImageObject\", \"image rich results\", \"licensable images\", or \"optimise images\".",
+      "source_sha256": "54a12d5912f18d2e1649b5371f2b48f88065d24ea0ba54739c8a1c3e97ce0fb9",
+      "source_path": "skills/seo-images/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33ed698c38e346d5194c06e6e1756c0b2def357116ba1987dcaa32207e8ca874": {
+      "description_zh": "从种子关键词建立按意图分组的内容集群，设计支柱和分支、H1/H2建议、建设顺序及内链图，适用于多篇文章主题地图和内容日历，不用于单篇简报或单页审计。",
+      "source": "Build a content cluster plan from seed keywords — intent-grouped clusters, pillar+spokes architecture with H1/H2 suggestions per spoke, prioritised build order, and an internal-linking map. Plans a content tier across many articles (vs `seo-content-brief` which produces a single article from a topic; vs `seo-page` which audits one existing URL). Use when the user asks for keyword clustering, topical map, pillar content strategy, content cluster plan, or content calendar from a keyword list.",
+      "source_sha256": "33ed698c38e346d5194c06e6e1756c0b2def357116ba1987dcaa32207e8ca874",
+      "source_path": "skills/seo-keyword-cluster/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f5c850caf9f0c892eb3b15a3de6fdbb8f80b0f875b4269a2f03065992707a2d": {
+      "description_zh": "批量挖掘主题的长尾及问题关键词，形成含模板、URL模式、样例页和质量门禁的内容层计划，适用于程序化 SEO 或持续编辑，不同于宽泛种子的支柱集群规划。",
+      "source": "Mine longtail keywords + question keywords for a topic at scale to surface niche content opportunities. Outputs a content tier plan (template + URL pattern + sample pages + quality gates) suitable for programmatic publishing or steady editorial output. Distinct from `seo-keyword-cluster` (which plans pillar+spoke architecture from broad seeds) — this skill goes deeper into the long tail. Use when the user asks \"longtail keywords\", \"question keywords\", \"niche content\", \"content opportunities at scale\", \"programmatic SEO\", \"content mining\", or \"what should I write about for {topic}\".",
+      "source_sha256": "2f5c850caf9f0c892eb3b15a3de6fdbb8f80b0f875b4269a2f03065992707a2d",
+      "source_path": "skills/seo-keyword-niche/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45662b9be92caa23905606947f51496572a331dbbe201825270977e5f945c42b": {
+      "description_zh": "审计实体门店、服务区域及多地点企业的本地 SEO，检查网站 GBP信号、名称地址电话一致性、本地排名、主要目录引用及 Google、Yelp、Trustpilot 评论；LocalBusiness 标记转交 Schema 技能。",
+      "source": "Local SEO audit for brick-and-mortar, service-area, and multi-location businesses. Covers Google Business Profile signals on the website, NAP consistency across page and schema, local-pack rank tracking, citation samples on Tier-1 directories, and reviews on Google / Yelp / Trustpilot. Distinct from `seo-page` (URL-level keywords, no local layer) and from `seo-schema` (which generates LocalBusiness markup — this skill defers to it). Use when the user asks \"local SEO\", \"GBP\", \"Google Business Profile\", \"NAP\", \"local pack\", \"citations\", \"near me\", \"service area\", or \"multi-location SEO\".",
+      "source_sha256": "45662b9be92caa23905606947f51496572a331dbbe201825270977e5f945c42b",
+      "source_path": "skills/seo-local/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a677296e11696fe6910cf62e666c1826c11cabc1c5cd48f8cb1c06b5509dad66": {
+      "description_zh": "分析单个 URL 的排名词、流量、排名历史、SERP背景与 AI引用状态，提出保留、更新、合并或移除判断；不同于技术健康审计和新文章简报。",
+      "source": "URL-level SEO intelligence — which keywords this page ranks for, traffic captured, position history, SERP context, and AI Search citation status. Produces a keep / refresh / consolidate / kill verdict for one page. Distinct from `seo-technical-audit` (which checks technical health, not keyword/traffic performance) and from `seo-content-brief` (which produces a NEW article from a topic). Use when the user asks \"analyze this page\", \"page SEO performance\", \"what does this URL rank for\", \"page traffic\", \"should I refresh this page\", or provides a single URL for analysis.",
+      "source_sha256": "a677296e11696fe6910cf62e666c1826c11cabc1c5cd48f8cb1c06b5509dad66",
+      "source_path": "skills/seo-page/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd80cf453e9bbcda311d1b6f352841d3fd9441da78e2b739993c22cdc68ffa95": {
+      "description_zh": "综合竞争位置、内容缺口、技术债务和 AI搜索准备，汇总多个审计规划技能形成按季度分阶段 SEO路线，明确顺序、负责人及成功指标。",
+      "source": "Build a phased SEO roadmap for a domain — quarter-by-quarter, tied to the site's competitive position, content gaps, technical debt, and AI Search readiness. Synthesises the outputs of multiple skills (`seo-technical-audit`, `seo-content-audit`, `seo-keyword-cluster`, `seo-competitor-gap-analysis`, `seo-ai-search-share-of-voice`) into one site-level plan with sequencing, owners, and success metrics. Distinct from `seo-keyword-cluster` (keyword architecture for one topic), `seo-content-brief` (one article), and `seo-keyword-niche` (longtail content tier). Use when the user asks for an \"SEO plan\", \"SEO strategy\", \"SEO roadmap\", \"90-day plan\", \"quarterly SEO plan\", \"site SEO strategy\", or \"where do we focus next\".",
+      "source_sha256": "fd80cf453e9bbcda311d1b6f352841d3fd9441da78e2b739993c22cdc68ffa95",
+      "source_path": "skills/seo-plan/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1699491885b210c720a34ed252c6c8a7053773adb4cde7b970e7080d8dce9bb5": {
+      "description_zh": "检测页面 JSON-LD，按 Google 富结果要求校验并补充 Article、Product、LocalBusiness、FAQPage 和 BreadcrumbList 等标记，生成可粘贴脚本。",
+      "source": "Detect existing JSON-LD structured data on a page, validate against Google's rich-result requirements, and generate missing schema markup (Article, Product, LocalBusiness, FAQPage, BreadcrumbList). Produces paste-ready JSON-LD script blocks. Use when the user asks for \"schema markup\", \"structured data\", \"JSON-LD\", \"rich results\", \"schema validation\", or \"fix the schema on this page\".",
+      "source_sha256": "1699491885b210c720a34ed252c6c8a7053773adb4cde7b970e7080d8dce9bb5",
+      "source_path": "skills/seo-schema/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8cd50a62842c8efdb32d8de97d543a905d0d759d8e5cace2f365c45b3e2809e": {
+      "description_zh": "获取 XML站点地图及其索引，与最新 SE Ranking审计比对，找出爬虫未发现条目、遗漏审计页面、404及 lastmod不一致。",
+      "source": "Pull a domain's XML sitemap (and sitemap-of-sitemaps), then compare against the most recent SE Ranking website audit. Surfaces (a) sitemap entries the crawler couldn't find (orphans from the sitemap), (b) audit pages missing from the sitemap (probably an oversight), (c) sitemap entries that are now 404, (d) lastmod inconsistencies. Use when the user asks for \"sitemap analysis\", \"check my sitemap\", \"sitemap vs audit\", \"missing pages\", \"orphan pages\", or \"sitemap health\".",
+      "source_sha256": "e8cd50a62842c8efdb32d8de97d543a905d0d759d8e5cace2f365c45b3e2809e",
+      "source_path": "skills/seo-sitemap/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "318f244ad29c28f44ab6ac20a35ab2b9cced07ce15f6fae8a8096ac9a62cfaf5": {
+      "description_zh": "列出域名子域并分析各自概览、关键词、竞争者与外链，绘制主题归属，识别分散和是否应整合。",
+      "source": "Subdomain ownership map for a domain. Lists subdomains, queries overview/keywords/competitors/backlinks per subdomain, surfaces which subdomains own which topic clusters, where there's fragmentation, and whether consolidation is warranted. Use when the user asks \"subdomain analysis\", \"subdomain ownership\", \"subdomain SEO\", \"blog vs main domain\", \"support vs docs subdomain\", or \"should I consolidate subdomains\".",
+      "source_sha256": "318f244ad29c28f44ab6ac20a35ab2b9cced07ce15f6fae8a8096ac9a62cfaf5",
+      "source_path": "skills/seo-subdomain/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6cddfde59f9cae75f296a2dddde7835f9c01fdeb4e7c7cb0b8f71ae1b55f1274": {
+      "description_zh": "从 SERP反推目标词偏好的页面类型，以多个角色视角评估候选页是否匹配，诊断意图或格式错位并建议页面形式和线框。",
+      "source": "Diagnose why a page is not ranking by reading the SERP backwards. Identifies the page type Google rewards for the target keyword, scores the candidate page against that pattern from multiple persona perspectives, and recommends the page format that would win the SERP. Use when the user asks \"why isn't this page ranking\", \"page type mismatch\", \"SXO\", \"search experience optimization\", \"intent mismatch\", or wants a wireframe.",
+      "source_sha256": "6cddfde59f9cae75f296a2dddde7835f9c01fdeb4e7c7cb0b8f71ae1b55f1274",
+      "source_path": "skills/seo-sxo/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9848494304937b3543d08282546f1b0e9ef529266ceb6e749c1539846b0b4f78": {
+      "description_zh": "一次性审计域名技术 SEO的可爬取、可索引、安全、移动、结构化数据及 JS渲染；不用于跨期变化或单页关键词流量评估。",
+      "source": "Focused one-shot technical SEO audit for a domain. Crawlability, indexability, security, mobile, structured data, JS rendering — single-pass deliverable, not a diff. Distinct from `seo-drift` (which tracks changes over time) and from `seo-page` (which audits keywords/traffic for one URL, not technical health). Use when the user asks \"technical audit\", \"site audit\", \"audit my site\", \"crawl issues\", \"indexation issues\", or \"technical SEO check\".",
+      "source_sha256": "9848494304937b3543d08282546f1b0e9ef529266ceb6e749c1539846b0b4f78",
+      "source_path": "skills/seo-technical-audit/SKILL.md",
+      "package_sha256": "8059b3f540c6201ef39d3afd426a3da52ecc1d9be282dd36604c48f9749ae87c",
+      "source_package": "SE Ranking-2.10.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4463fb9153c29a83c0b5b2ff25fe18ed18500a6703c16fd792f1d416c9dd5f39": {
+      "description_zh": "通过 Search1API连接器实时搜索、读取网页、查新闻、探索链接及 GitHub或 Hacker News趋势，并以引用来源回答研究、核验或 URL摘要请求。",
+      "source": "Live web research through the Search1API connector: search the web, read a page, find recent news, explore a site's links, and see what is trending, then answer with cited sources. Use whenever the user wants to search the web, look something up, research a topic, fact-check a claim, read or summarize a URL, check current news, explore a site, or see what is popular on GitHub or Hacker News. Trigger on phrases like \"search for\", \"look up\", \"find out about\", \"what's happening with\", \"any news on\", \"latest on\", \"what does this link say\", \"read this page\", \"summarize this URL\", \"what's trending\", \"搜一下\", \"查一下\", \"最新消息\", \"总结这个链接\", or when the user shares a bare URL.",
+      "source_sha256": "4463fb9153c29a83c0b5b2ff25fe18ed18500a6703c16fd792f1d416c9dd5f39",
+      "source_path": "skills/search1api/SKILL.md",
+      "package_sha256": "6aa30fce943f87474b6826a1614d6bb3473c4108e55aa597aaeaff8f474a3142",
+      "source_package": "Search1API-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fafc7b957d63ecdb3d4abfa940378ff7a4f6a8d461945306adce20d261477a40": {
+      "description_zh": "作为 SearchAtlas基础路由和参数参考，将 SEO、GBP、PPC、内容、AI可见性、外链、品牌及 OTTO任务转交对应命令，按 Schema发现、异步轮询及不硬编码 ID的规则使用 MCP。",
+      "source": "Foundational routing rules, golden rules, and parameter reference for the SearchAtlas toolkit. Use whenever the user works on SEO, Google Business Profile (GBP), PPC / Google Ads, content generation, AI/LLM visibility, backlinks, brand vaults, OTTO projects, or any SearchAtlas task — to route the request to the right /searchatlas:* command and apply correct MCP usage patterns (schema discovery, async polling, never hardcoding IDs).",
+      "source_sha256": "fafc7b957d63ecdb3d4abfa940378ff7a4f6a8d461945306adce20d261477a40",
+      "source_path": "skills/using-searchatlas/SKILL.md",
+      "package_sha256": "e2dd93d22af6f40ce5789b2f89bf185172c84bb2832f2149153f7e0e38faaa41",
+      "source_package": "SearchAtlas Toolkit-2.2.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68ba3a596c9314d285b537ec4822838bdfac20c840c2197a0ce84cb78de808c6": {
+      "description_zh": "分析并改善品牌在 ChatGPT、Claude、Gemini和 Perplexity等 AI回答中的出现、提及和推荐情况，适用于 GEO、AEO及模型可见性跟踪。",
+      "source": "Analyze and improve how a brand appears in AI-generated responses (ChatGPT, Claude, Gemini, Perplexity). Use when the user asks about \"AI visibility\", \"AI tracking\", \"how does my brand appear in AI\", \"AI mentions\", \"LLM visibility\", \"AI search optimization\", \"GEO\", \"generative engine optimization\", \"answer engine optimization\", \"AEO\", or wants their brand to be recommended by AI assistants.",
+      "source_sha256": "68ba3a596c9314d285b537ec4822838bdfac20c840c2197a0ce84cb78de808c6",
+      "source_path": "skills/ai-visibility/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ec6955d2e992aaa325cb6b43badc9dc4d70d57df9ca8e18a1b9cb6d55cd8390": {
+      "description_zh": "查找和修复网站或代码库指向不存在页面的链接，支持失效 URL、404和断链审计。",
+      "source": "Find and fix broken links on a website or in a codebase. Use when the user asks to \"check broken links\", \"find dead links\", \"fix 404s\", \"link checker\", \"broken link audit\", \"find dead URLs\", or wants to identify and repair links that lead to non-existent pages.",
+      "source_sha256": "0ec6955d2e992aaa325cb6b43badc9dc4d70d57df9ca8e18a1b9cb6d55cd8390",
+      "source_path": "skills/broken-links/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "053f47367a3bffc42befee369cdd08cd65b3c30276cc88301ef05c863ffe7e39": {
+      "description_zh": "为指定文章或页面生成详细内容简报与结构化写作提纲，在撰稿前明确计划。",
+      "source": "Generate a detailed content brief for a specific article or page. Use when the user asks to \"create a content brief\", \"write a brief\", \"article outline\", \"blog brief\", \"writing brief\", \"content outline\", or wants a structured plan before writing content.",
+      "source_sha256": "053f47367a3bffc42befee369cdd08cd65b3c30276cc88301ef05c863ffe7e39",
+      "source_path": "skills/content-brief/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cac209db3d0a858264d2d568239ae1f225e0a83649d0b233be7f5b36356e289f": {
+      "description_zh": "为网站 SEO和自然增长制定内容策略、主题研究、缺口分析、编辑日历及选题计划。",
+      "source": "Develop a content strategy for SEO and organic growth. Use when the user asks to \"plan content\", \"content strategy\", \"content calendar\", \"what should I write about\", \"content gap analysis\", \"topic research\", \"editorial plan\", or wants to plan what content to create for their website.",
+      "source_sha256": "cac209db3d0a858264d2d568239ae1f225e0a83649d0b233be7f5b36356e289f",
+      "source_path": "skills/content-strategy/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b563c72de9095ef237a4344fab10b9bf95fce5fdcfe186e5040404e4285421f": {
+      "description_zh": "面向国际 SEO翻译与本地化网站内容，支持多语言、hreflang及新语言市场扩展。",
+      "source": "Translate and localize website content for international SEO. Use when the user asks to \"translate content\", \"localize my site\", \"multilingual SEO\", \"translate to [language]\", \"international SEO\", \"hreflang\", \"multi-language website\", or wants to expand content to new languages and markets.",
+      "source_sha256": "8b563c72de9095ef237a4344fab10b9bf95fce5fdcfe186e5040404e4285421f",
+      "source_path": "skills/content-translation/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddc350c37894feca506cbebb859117eb48226e12121dd5b8753b85a8f86ef38e": {
+      "description_zh": "分析并改善网站内链结构、页面连接、孤立页、链接权重与页面权威分配。",
+      "source": "Analyze and improve internal linking strategy for a website. Use when the user asks about \"internal links\", \"link structure\", \"site architecture\", \"link strategy\", \"orphan pages\", \"link equity\", \"page authority distribution\", or wants to improve how pages connect to each other.",
+      "source_sha256": "ddc350c37894feca506cbebb859117eb48226e12121dd5b8753b85a8f86ef38e",
+      "source_path": "skills/internal-linking/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f912dbac18657292cad642a95c6231052ff728fe0e18e459f715db349d05c690": {
+      "description_zh": "将关键词按主题分组、映射并组织为 SEO内容计划。",
+      "source": "Cluster and organize keywords into topical groups for SEO. Use when the user asks to \"cluster keywords\", \"group keywords\", \"organize keywords\", \"keyword mapping\", \"topic clusters\", \"keyword grouping\", or has a list of keywords they want structured into a content plan.",
+      "source_sha256": "f912dbac18657292cad642a95c6231052ff728fe0e18e459f715db349d05c690",
+      "source_path": "skills/keyword-clustering/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac5557806c99147f4acf6838d6d51a91211537fa2c183d50ca2cd6102723130d": {
+      "description_zh": "优化指定页面的页内 SEO、元标签及目标关键词排名表现。",
+      "source": "Optimize a specific page for on-page SEO. Use when the user asks to \"optimize this page\", \"improve SEO for this page\", \"on-page optimization\", \"optimize meta tags\", \"improve rankings for [keyword]\", or wants to make a specific page rank better.",
+      "source_sha256": "ac5557806c99147f4acf6838d6d51a91211537fa2c183d50ca2cd6102723130d",
+      "source_path": "skills/on-page-seo/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7a04b9c84135b5fc27ef50d7ac7d7bc45aef78910a7372c1e7329456c7f6d9c": {
+      "description_zh": "为网页生成 JSON-LD和 schema.org结构化数据，支持富摘要和搜索展示优化。",
+      "source": "Generate JSON-LD structured data / schema markup for web pages. Use when the user asks to \"add schema\", \"generate JSON-LD\", \"structured data\", \"schema markup\", \"rich snippets\", \"add schema.org\", or wants to improve how their pages appear in search results.",
+      "source_sha256": "d7a04b9c84135b5fc27ef50d7ac7d7bc45aef78910a7372c1e7329456c7f6d9c",
+      "source_path": "skills/schema-markup/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "832f5932a32d9144b946738e36666defd0ab9f6b7c6b20f306410758c5b5bb1d": {
+      "description_zh": "对网站或代码库执行全面 SEO审计，识别健康、技术和其他搜索优化问题。",
+      "source": "Run a comprehensive SEO audit on a website or codebase. Use when the user asks to \"audit SEO\", \"check my site's SEO\", \"find SEO issues\", \"SEO health check\", \"technical SEO review\", \"site audit\", or wants to identify SEO problems on their website.",
+      "source_sha256": "832f5932a32d9144b946738e36666defd0ab9f6b7c6b20f306410758c5b5bb1d",
+      "source_path": "skills/seo-audit/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78e7e5f070a3520d48b9700522db49fefce1c4823cf94b137ed5bcd5ce72b022": {
+      "description_zh": "审计网站技术 SEO，包括速度、核心 Web指标、抓取、索引、robots、站点地图、渲染阻塞和移动适配。",
+      "source": "Perform a technical SEO audit on a website or codebase. Use when the user asks for \"technical SEO\", \"site speed\", \"core web vitals\", \"crawlability\", \"indexation issues\", \"robots.txt\", \"sitemap check\", \"render blocking\", \"page speed\", \"mobile-friendly check\", or wants to fix technical factors affecting search rankings.",
+      "source_sha256": "78e7e5f070a3520d48b9700522db49fefce1c4823cf94b137ed5bcd5ce72b022",
+      "source_path": "skills/technical-seo/SKILL.md",
+      "package_sha256": "0ae0086097a6e6815fa4f33cda96f5eb6d59c50e88313abede055ca64efe5e6c",
+      "source_package": "SearchFit SEO-1.0.0-v40.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "748f143cb282b2dc3550ff357c54ba84bac655357b22c27fbfe10638f0203099": {
+      "description_zh": "评估 LLM插件、技能包和代理的安全，分析威胁模型、提示注入、hook滥用、权限提升及数据外传模式。",
+      "source": "LLM extension security analysis — threat model, attack patterns, and heuristics for evaluating Claude Code plugins and skills for prompt injection, hook script abuse, permission escalation, and data exfiltration. Load when reviewing any LLM extension, skill pack, or agent for security.",
+      "source_sha256": "748f143cb282b2dc3550ff357c54ba84bac655357b22c27fbfe10638f0203099",
+      "source_path": "skills/plugin-security/SKILL.md",
+      "package_sha256": "abbd24a1bda25e8b4cec3603dc041372c31b076a3d8b19684beee8ce144710e6",
+      "source_package": "security-watchdog-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64e5714e621ce69c5941688c870c3665df702d66523c907ded3b0e4422150f90": {
+      "description_zh": "为调用 LLM或运行代理的应用提供安全设计，覆盖提示构建、工具调用、MCP、RAG、文档摄取、输出及自动化；安全控制须在模型外围代码实现，不能仅依赖提示。",
+      "source": "Secure design patterns for applications that call LLMs or run agents. Use this skill whenever building, modifying, or reviewing AI features: prompt construction, chat endpoints, agent loops, tool/function calling, MCP servers and clients, RAG and vector search, document ingestion for AI, model output handling, or AI-driven automation. Trigger on 'prompt injection', 'jailbreak', 'agent', 'tool calling', 'function calling', 'RAG', 'embeddings', 'vector store', 'system prompt', 'MCP server', 'AI feature', or any use of an LLM SDK (OpenAI, Anthropic, Gemini, LangChain, LlamaIndex, Vercel AI SDK). Enforces the rule that security is implemented in code around the model, never in the prompt.",
+      "source_sha256": "64e5714e621ce69c5941688c870c3665df702d66523c907ded3b0e4422150f90",
+      "source_path": "skills/llm-app-security/SKILL.md",
+      "package_sha256": "131f7b4c99fa0de2afecf3fd394fd392dab48578ddbb28e55399a29cd01a8561",
+      "source_package": "securitymaxxing-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d847af10bc37ad4f623cfc8d8e5544ea7eb3f8e16fa89ae4f327fa2e5695d4b": {
+      "description_zh": "在应用代码中采用默认安全模式，覆盖 HTTP接口、认证会话、SQL、资源权限、文件路径上传、子进程、用户提供 URL、HTML渲染、加密随机数、密钥配置及安全头。",
+      "source": "Secure-by-default patterns to apply while writing or modifying application code. Use this skill whenever building or editing code that touches a security-relevant surface: HTTP routes, API endpoints, controllers, resolvers, or webhook handlers; login, signup, sessions, passwords, tokens, or JWTs; database queries, especially raw SQL or dynamic query building; anything that reads a user/tenant/resource ID from a request; file uploads, downloads, or filesystem paths; shell or subprocess execution; outbound HTTP requests to URLs that come from user input; rendering user content as HTML; encryption, hashing, or random token generation; secrets, API keys, and environment configuration; CORS, cookies, and security headers. Also use when the user asks to 'make this secure', 'harden', or 'add auth'. Provides the correct pattern to write the first time, so the vulnerability never exists.",
+      "source_sha256": "3d847af10bc37ad4f623cfc8d8e5544ea7eb3f8e16fa89ae4f327fa2e5695d4b",
+      "source_path": "skills/secure-coding/SKILL.md",
+      "package_sha256": "131f7b4c99fa0de2afecf3fd394fd392dab48578ddbb28e55399a29cd01a8561",
+      "source_package": "securitymaxxing-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10498bc705c4a168f0e2d2d155cd1ccdbc6e1f843e89c4deab5b529d994f3a33": {
+      "description_zh": "规范安全审查的证据纪律，要求从输入源到危险操作证明漏洞，明确严重度、发现格式及防误报规则，用于代码、PR、扫描结果和漏洞分诊。",
+      "source": "The evidence discipline for any security review, audit, threat model, or vulnerability triage. Use this skill whenever performing or reporting on application security work: auditing code for vulnerabilities, reviewing a diff or PR for security impact, triaging a scanner result, judging whether a finding is real, or assigning severity. Trigger on 'security review', 'security audit', 'is this vulnerable', 'pentest my code', 'find vulnerabilities', 'CVE', 'CWE', 'OWASP', 'severity', 'false positive', 'exploitable'. Defines the source-to-sink proof requirement, the severity rubric, the finding format, and the anti-false-positive rules that every securitymaxxing command depends on.",
+      "source_sha256": "10498bc705c4a168f0e2d2d155cd1ccdbc6e1f843e89c4deab5b529d994f3a33",
+      "source_path": "skills/security-review-method/SKILL.md",
+      "package_sha256": "131f7b4c99fa0de2afecf3fd394fd392dab48578ddbb28e55399a29cd01a8561",
+      "source_package": "securitymaxxing-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9dc109fdb19b3b9a73c8fb689a28702139b174682d143226e5cf61a304c446e": {
+      "description_zh": "初始化或扩展 Django项目，集成认证双因素、Stripe、REST、后台任务、ASGI/WebSocket、Tailwind、SEO、邮件、S3、日志、健康检查、Docker、CI、部署、备份及错误监控。",
+      "source": "Bootstrap a new Django project, or add components — auth (allauth, magic-link, axes, 2FA), payments (Stripe, dj-stripe), REST (django-modern-rest, django-bolt), Celery / Django Tasks, async views & WebSockets (ASGI, uvicorn worker, django-channels, channels-redis), Tailwind+DaisyUI, favicon, SEO meta tags + sitemap, HTML email templates, S3 storage, structlog, healthchecks, Docker, CI, deploy (VPS / Fly / GitHub-SSH), dbbackup, Sentry/Bugsink — to an existing Django codebase. Use whenever the user wants to scaffold Django, integrate a Django package, set up async / WebSockets, set up production deploys, wire CI/CD, or extend an existing Django project.",
+      "source_sha256": "f9dc109fdb19b3b9a73c8fb689a28702139b174682d143226e5cf61a304c446e",
+      "source_path": "skills/django-seedkit/SKILL.md",
+      "package_sha256": "d3013e2b337573bbcead46334372902f0ccb0e0b382d8a60a285f61e48bf2196",
+      "source_package": "seedkit-26.34.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b5f89eec68383833a0127309c08ea16af14c39114bcbf209c81fd175cd483af": {
+      "description_zh": "通过访谈创建或修改 Seguno营销邮件，默认生成 newsletter，使用商店搜索支持内容，规划区块并应用有效 update_email操作，保存后预览；适用于促销、新品、季节和购后邮件。",
+      "source": "create or revise Seguno marketing emails by interviewing the user, creating a newsletter by default, grounding content with store search, planning sections, applying valid `update_email` actions, and previewing the saved result. Use for promotional emails, newsletters, product launches, seasonal emails, post-purchase emails, feedback emails, or existing Seguno newsletter updates.",
+      "source_sha256": "8b5f89eec68383833a0127309c08ea16af14c39114bcbf209c81fd175cd483af",
+      "source_path": "skills/seguno-email-creator/SKILL.md",
+      "package_sha256": "a8753561b9e4e0fdae1e5c047f05b1c25001028f20df6f3de7b1270b2f5155d4",
+      "source_package": "Seguno-0.1.0-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b767bcc5901965e83d77ed182efc2052ca9363bb85ab882c9cb3ce89cb3c06a2": {
+      "description_zh": "独立审查计划、规格、设计或 RFC，可发送文件到 Anthropic、OpenAI、Codex外部评审者或在工作区内评审，返回带信心程度与发现的结构化结论。",
+      "source": "Use when the user asks to \"review my plan\", \"judge this spec\", \"verify this design doc\", \"second opinion on this RFC\", \"run seldon\", or wants an independent verdict on a plan, spec, or design document. Sends the files to an external judge (Anthropic, OpenAI, or Codex) or performs an inline workspace review, and returns a structured verdict with confidence and findings.",
+      "source_sha256": "b767bcc5901965e83d77ed182efc2052ca9363bb85ab882c9cb3ce89cb3c06a2",
+      "source_path": "skills/seldon/SKILL.md",
+      "package_sha256": "2f7504adda84c3ac5c2b20697755cf1c20f2ee61d6823377e7c27d966478f05d",
+      "source_package": "Seldon-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b0c5654b8126669312835927be254f8b876f495efbdae1ab3ff676a0ce93a59": {
+      "description_zh": "与用户编写自定义 Semgrep规则，加入 guardian用户或仓库范围，并创建应触发规则的文件验证有效性，用于检测现有遗漏或约束生成代码规范。",
+      "source": "write a custom semgrep rule with the user, add it to guardian in either user or repo scope, and prove it fires by writing a file that should trip it. use when someone wants guardian to catch something it currently misses, asks to write or add a semgrep rule, or wants a project convention enforced on the code claude writes.",
+      "source_sha256": "0b0c5654b8126669312835927be254f8b876f495efbdae1ab3ff676a0ce93a59",
+      "source_path": "skills/add-and-validate-guardian-developer-semgrep-rule/SKILL.md",
+      "package_sha256": "01ac4f50143536848a991f1dd5c06c0ef863e52f1d0ac2dfb638328197226f66",
+      "source_package": "Semgrep Guardian-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3f413f8af2ae74fb58686501b3eb1dab61585628d06d1029327936295fbaa99": {
+      "description_zh": "安装并配置 mfw Semgrep Malware Firewall CLI，处理信任库、PATH代理、shell集成和后台守护进程，在实际决策点询问；检测 Nix、chezmoi、stow等管理的 rc文件，修改其真实源配置而非覆盖链接。",
+      "source": "Install the mfw (Semgrep Malware Firewall) CLI via the curl|sh installer and walk the user through setup — trust store, PATH shims, shell integration, and the background daemon — asking questions at real decision points. Detects when the user's shell rc files are *managed* (symlinked into nix / home-manager / chezmoi / GNU stow / a dotfiles git repo) and, instead of clobbering them, adds mfw's source line to the right source-of-truth. Use when the user wants to install, set up, or onboard mfw on this machine.",
+      "source_sha256": "e3f413f8af2ae74fb58686501b3eb1dab61585628d06d1029327936295fbaa99",
+      "source_path": "skills/install-mfw/SKILL.md",
+      "package_sha256": "01ac4f50143536848a991f1dd5c06c0ef863e52f1d0ac2dfb638328197226f66",
+      "source_package": "Semgrep Guardian-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "972920a5b17c8de0cfc6ca728ba5276a3130addf3408d8b8d8e06b522a5c361a": {
+      "description_zh": "列出并定位 Guardian自定义 Semgrep规则，在用户或仓库规则目录删除或编辑对应条目，用于停止误报、禁用规则或腾出配额。",
+      "source": "Remove a custom Semgrep rule from Guardian — list what is installed, work out which file holds the rule, and delete or edit it out of the user or repo rules directory. Use when someone wants Guardian to stop flagging something, asks to remove, delete or disable a custom rule, or wants to clear room under the rule limit.",
+      "source_sha256": "972920a5b17c8de0cfc6ca728ba5276a3130addf3408d8b8d8e06b522a5c361a",
+      "source_path": "skills/remove-guardian-developer-semgrep-rule/SKILL.md",
+      "package_sha256": "01ac4f50143536848a991f1dd5c06c0ef863e52f1d0ac2dfb638328197226f66",
+      "source_package": "Semgrep Guardian-2.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1215db01da957126c796b576bafa95ae9867926c565a631fd130a7e6354f689d": {
+      "description_zh": "诊断事务邮件投递和域名认证，检查 SPF、DKIM、DMARC、MX、对齐、信誉与退信，使用 DNS工具生成准确记录并核验；支持 SenderKit及其他提供方，代码集成和实际测试发送使用专用技能。",
+      "source": "Diagnose and fix email deliverability and domain authentication so transactional email lands in the inbox instead of spam. Use whenever emails go to spam or are not arriving, or a user wants to set up, fix, or verify SPF, DKIM, DMARC, MX, or DMARC alignment, authenticate a sending domain, improve sender reputation, reduce bounces, or check why mail is rejected or filtered. Works whether mail is sent directly via SenderKit or routed through a provider (Resend, SendGrid, Postmark, Mailgun, SES, SMTP). Diagnoses current DNS with standard tools (dig/nslookup), generates the exact records to add, then verifies them. For wiring sends into code use senderkit-integration; for live test sends use senderkit-mcp-messaging-operations.",
+      "source_sha256": "1215db01da957126c796b576bafa95ae9867926c565a631fd130a7e6354f689d",
+      "source_path": "skills/senderkit-email-deliverability/SKILL.md",
+      "package_sha256": "262536986eaba700a34ccd69897a14fcdcac10005c14a057202ff03d79a05bb1",
+      "source_package": "SenderKit-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "931fec6ab3bc006941e290daa9bcb034c20c7c4bff6c61bee7667248c2ffa5f7": {
+      "description_zh": "为应用集成 SenderKit事务邮件、短信、推送或 Web推送，支持直接发送或路由其他提供方，处理模板、密钥、幂等、状态及 webhook；已有发送供应商时先提出替换或路由方案并确认后改接。",
+      "source": "Integrate transactional email, SMS, push, or web-push notifications into a new or existing app — welcome emails, password resets, OTP/verification codes, receipts, magic links, order/shipping updates, or a notification system. Use whenever a user wants to add or wire up email/SMS/push sending, build notifications, set up an email/messaging provider, switch or replace one (Resend, SendGrid, Postmark, Mailgun, SES, SMTP, Twilio, FCM, APNs, Expo), or remove vendor lock-in. This skill adds SenderKit, which sends email/SMS/push directly and can also route through those providers. Covers template and raw sends, API keys, idempotency, delivery status checks, and webhooks. If the project already sends via another provider, propose SenderKit (replace it or route through it) and confirm before rewiring.",
+      "source_sha256": "931fec6ab3bc006941e290daa9bcb034c20c7c4bff6c61bee7667248c2ffa5f7",
+      "source_path": "skills/senderkit-integration/SKILL.md",
+      "package_sha256": "262536986eaba700a34ccd69897a14fcdcac10005c14a057202ff03d79a05bb1",
+      "source_package": "SenderKit-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1dc62d7b12d9462f83c5391e5981b526de1885db13f786d3b66b22b90c16543a": {
+      "description_zh": "通过已连接 SenderKit MCP实际发送或管理邮件、短信及推送，查询投递状态、排查失败、管理模板和近期消息、检查或取消排队定时发送；不用于修改应用集成代码。",
+      "source": "Send and operate transactional messages — email, SMS, push, or web-push — at runtime through the connected SenderKit MCP server. Use whenever the SenderKit MCP tools (senderkit_*) are available and a user wants to actually send a message (a test or live send, a welcome/OTP/notification message), check delivery or message status, debug a failed or stuck send, look up/draft/regenerate templates, filter recent messages, check scheduled sends, or cancel a scheduled or queued message — rather than editing application code (that is the senderkit-integration skill).",
+      "source_sha256": "1dc62d7b12d9462f83c5391e5981b526de1885db13f786d3b66b22b90c16543a",
+      "source_path": "skills/senderkit-mcp-messaging-operations/SKILL.md",
+      "package_sha256": "262536986eaba700a34ccd69897a14fcdcac10005c14a057202ff03d79a05bb1",
+      "source_package": "SenderKit-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12c63c1482eab1336a9150d98fafc2db57cf6c10c189abd5075549bc3fad57e8": {
+      "description_zh": "构建、审查和排查 Sendly欢迎、滴灌及入驻邮件自动化，包括流程解释和延迟修改；新建工作流默认禁用。",
+      "source": "Builds, reviews, and troubleshoots Sendly workflow automations such as welcome, drip, and onboarding email series; new workflows are created disabled. Use when the user asks to 'build a welcome series for new signups', 'create a drip campaign', 'set up an onboarding email sequence', 'what does this workflow do', 'why isn't my onboarding workflow running', 'change the delay before the second email', or wants to automate lifecycle emails.",
+      "source_sha256": "12c63c1482eab1336a9150d98fafc2db57cf6c10c189abd5075549bc3fad57e8",
+      "source_path": "skills/building-onboarding-workflows/SKILL.md",
+      "package_sha256": "f1f789aa9fa07d8d0dd8aff3dc65cfb0f6aee6f05682b4bbbb486a588b3f41c9",
+      "source_package": "Sendly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e473e80b752f30a645cde82accef32ae64e84faac016866744128011386c61f5": {
+      "description_zh": "诊断 Sendly邮件未到达、垃圾邮件或退信，检查域名、DKIM/SPF/DMARC、验证、抑制名单和地址清理；变更前先确认。",
+      "source": "Diagnoses why Sendly mail is not landing and fixes the sending setup: domain health, DKIM, SPF, and DMARC records, sending-domain verification, suppressions, and address validation or list cleaning. Use when the user asks 'why is mail from my domain not landing', 'why do my emails go to spam', 'why are emails bouncing', 'what DNS records do I need for DKIM', 'verify my sending domain', 'who is suppressed', or 'clean this list before I send'. Changes are confirmed first.",
+      "source_sha256": "e473e80b752f30a645cde82accef32ae64e84faac016866744128011386c61f5",
+      "source_path": "skills/checking-email-deliverability/SKILL.md",
+      "package_sha256": "f1f789aa9fa07d8d0dd8aff3dc65cfb0f6aee6f05682b4bbbb486a588b3f41c9",
+      "source_package": "Sendly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86c6626007465eead83c62a1f69db04ddfd29761ccc9a4c8f67c4e939d33991e": {
+      "description_zh": "只读报告 Sendly发送、打开、退信、活动统计、单封邮件历史及接近发送上限的情况，生成邮件表现分析。",
+      "source": "Reports how the user's Sendly email performed: sends, opens, bounces, campaign stats, a single email's history, and how close the project is to its sending limits. Use when the user asks 'how did my emails do this week', 'did anything bounce', 'what is my open rate', 'how did the newsletter perform', 'what happened to this email', 'how close are we to our sending limit', or wants an email analytics report. Read-only.",
+      "source_sha256": "86c6626007465eead83c62a1f69db04ddfd29761ccc9a4c8f67c4e939d33991e",
+      "source_path": "skills/reviewing-email-performance/SKILL.md",
+      "package_sha256": "f1f789aa9fa07d8d0dd8aff3dc65cfb0f6aee6f05682b4bbbb486a588b3f41c9",
+      "source_package": "Sendly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "532b759f9f995cea0b09732ec643a458aaf318979ab4a787c1d96b02162fa513": {
+      "description_zh": "选择受众、起草 Sendly营销活动、发送测试，并在用户确认接收人数后才发送正式活动。",
+      "source": "Picks an audience, drafts a Sendly email campaign, sends a test, and sends the campaign only after the user confirms the recipient count. Use when the user asks to 'draft a September newsletter for premium members', 'write an email announcement', 'prepare a campaign', 'who is in this segment', 'send me a test email', 'send the campaign', or run an email marketing send or email blast.",
+      "source_sha256": "532b759f9f995cea0b09732ec643a458aaf318979ab4a787c1d96b02162fa513",
+      "source_path": "skills/sending-email-campaigns/SKILL.md",
+      "package_sha256": "f1f789aa9fa07d8d0dd8aff3dc65cfb0f6aee6f05682b4bbbb486a588b3f41c9",
+      "source_package": "Sendly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "94f1020c9cafa36f44ad90c351f9be5e9eb012ca261a2ccd453324a2f8107e80": {
+      "description_zh": "指导将 Sendly MCP连接到 claude.ai、Desktop、Cowork或 Claude Code，解释登录同意页面并以一次只读调用核验，处理工具缺失和连接故障。",
+      "source": "Connects the Sendly MCP server to Claude and verifies it with one read-only call: where to connect in claude.ai, Claude Desktop, Cowork, or Claude Code, what the Sendly sign-in and consent screen asks, and how to recover when a tool is missing. Use when the user asks to 'set up Sendly', 'connect Sendly to Claude', 'install the Sendly connector', 'sign in to Sendly', 'why can't Claude see my Sendly data', 'Sendly tools are missing', or reports 'Tool not found' for a Sendly tool.",
+      "source_sha256": "94f1020c9cafa36f44ad90c351f9be5e9eb012ca261a2ccd453324a2f8107e80",
+      "source_path": "skills/setup-sendly/SKILL.md",
+      "package_sha256": "f1f789aa9fa07d8d0dd8aff3dc65cfb0f6aee6f05682b4bbbb486a588b3f41c9",
+      "source_package": "Sendly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ed538b1b8332d40de9ae3636fbe666fca44a3cd271996c569b691bd1ca636c3": {
+      "description_zh": "作为 Python、Bash、Apps Script、JavaScript及 Swift严谨结对工程伙伴，支持评审、讲解、原型、调试与审计模式，采用规格、计划、TDD和核验流程，按阶段落实安全、备份、测试及部署质量门禁。",
+      "source": "A strict code reviewer, pair programmer, debugger, and mentor for Python, Bash, Google Apps Script, JavaScript, and Swift/Apple platforms. Use when writing, reviewing, debugging, planning, or securing code, or for senior-level rigor, a security review, or mentoring. Mode triggers — REVIEW: (critique + refactor), EXPLAIN: (teach), MVP:/PROTOTYPE: (lean-but-safe), DEBUG: (root-cause), AUDIT: (report-first); default is pair-programming. Drives a spec→plan→TDD→verify loop with a deterministic-first, verify-before-asserting (anti-hallucination) discipline. Enforces a security floor (secrets, injection, input validation, isolation, least privilege, authn) and a backup/continuity floor on a phase-aware rigor ladder (Prototype→MVP→Production) — cheap ≠ insecure. Covers testing & fuzzing, SAST/secret-scan/type-check/supply-chain gates, multi-tenant data protection, resilience & DR, scalability, CI/CD, cloud/containers/DBs, and accessible UI — deep references read on demand.",
+      "source_sha256": "0ed538b1b8332d40de9ae3636fbe666fca44a3cd271996c569b691bd1ca636c3",
+      "source_path": "SKILL.md",
+      "package_sha256": "eba1621d9bede18b8ecd21bc188e5ed9f65b9277384a65c4fcc2a983d050b080",
+      "source_package": "Senior Engineering Partner-1.28.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "49d43a336089865b71f05690fab79d3bcd9e2e41269e3a1506020112ceed3d9c": {
+      "description_zh": "遇 GitHub issue链接或编号时读取 Projects状态，选择分析、开发或恢复流程；原说明要求行动前始终与用户确认。",
+      "source": "MUST use when the message contains a GitHub issue reference — URL (github.com/.../issues/N) or number (#N) — regardless of other content in the message. This skill takes priority over any other skill when a GitHub issue is referenced. Reads issue status from GitHub Projects and adapts: analysis, development, or resume. Always confirms with the user before acting.",
+      "source_sha256": "49d43a336089865b71f05690fab79d3bcd9e2e41269e3a1506020112ceed3d9c",
+      "source_path": "skills/work-on-issue/SKILL.md",
+      "package_sha256": "112d9ada13276a0e495fd108152db4b6bd5a90a4592bb80c2efb185eee866d77",
+      "source_package": "senior-developer-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a60555cae9149ecbea540023a6dc4218095a0f8f06f7dc142fe9631108b6a72b": {
+      "description_zh": "生成与当前项目相关、带验收条件的练习。",
+      "source": "Generate a project-relevant exercise with acceptance criteria",
+      "source_sha256": "a60555cae9149ecbea540023a6dc4218095a0f8f06f7dc142fe9631108b6a72b",
+      "source_path": "skills/challenge-me/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e15a88fd71768a43884e026aa4994b439cf36a3b330eaab892c719102b51b8a8": {
+      "description_zh": "展示可用教学命令及其触发方式。",
+      "source": "Show available commands and their triggers",
+      "source_sha256": "e15a88fd71768a43884e026aa4994b439cf36a3b330eaab892c719102b51b8a8",
+      "source_path": "skills/commands/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "077ccf49132e865ad5ceaf05108e5262f791f7b71c3341d0613aa0fb821297ca": {
+      "description_zh": "以简报和技能状态检查开启教学会话。",
+      "source": "Open a teaching session with briefing and skill pulse",
+      "source_sha256": "077ccf49132e865ad5ceaf05108e5262f791f7b71c3341d0613aa0fb821297ca",
+      "source_path": "skills/dojo-open/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3bb7a77188928cd722d0c289dacdc9d406579c3d1488a89942fdeff3630c5d54": {
+      "description_zh": "依据 Concept Index使用间隔重复向学习者提问。",
+      "source": "Quiz the student using spaced repetition from the Concept Index",
+      "source_sha256": "3bb7a77188928cd722d0c289dacdc9d406579c3d1488a89942fdeff3630c5d54",
+      "source_path": "skills/notecards/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4d6e67ebfe70546ec5422d5e85b2a8aadd2dc1bcf21db18c315c181fd13396a": {
+      "description_zh": "结束教学会话并更新进度跟踪文件。",
+      "source": "Close the session and update progress tracking files",
+      "source_sha256": "f4d6e67ebfe70546ec5422d5e85b2a8aadd2dc1bcf21db18c315c181fd13396a",
+      "source_path": "skills/pizza-time/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e582547cd7cc3419461dcb78f0fcaa6258e7c079f12596aaa0817cc3b24c6af7": {
+      "description_zh": "可视化汇总掌握程度和学习进度。",
+      "source": "Visual summary of mastery levels and learning progress",
+      "source_sha256": "e582547cd7cc3419461dcb78f0fcaa6258e7c079f12596aaa0817cc3b24c6af7",
+      "source_path": "skills/progress-report/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad12cd11b3076144f4a1be2aaff544898ce3dd8da534982e036556d8ebfd0633": {
+      "description_zh": "当角色语气或苏格拉底式教学纪律偏离时，恢复 Sensei教学模式。",
+      "source": "Re-establish Sensei teaching mode if character voice or Socratic discipline has drifted",
+      "source_sha256": "ad12cd11b3076144f4a1be2aaff544898ce3dd8da534982e036556d8ebfd0633",
+      "source_path": "skills/reset/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9d8e192de2abebe82ea0782e5f8e5c47ddc93f32e611967096bc5892afcb401": {
+      "description_zh": "校验 Sensei配置，确认 CONFIG.md、角色、安全词、ROADMAP.md和 PROGRESS.md齐备。",
+      "source": "Validate Sensei setup — confirms CONFIG.md, character, safeword, ROADMAP.md, and PROGRESS.md are present",
+      "source_sha256": "a9d8e192de2abebe82ea0782e5f8e5c47ddc93f32e611967096bc5892afcb401",
+      "source_path": "skills/sensei-check/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e46a1d0012941d84be77b5a0e368fa61da9d91f2bba51620779b9f3d20ff5925": {
+      "description_zh": "在项目过程中切换学习模式。",
+      "source": "Change learning mode mid-project",
+      "source_sha256": "e46a1d0012941d84be77b5a0e368fa61da9d91f2bba51620779b9f3d20ff5925",
+      "source_path": "skills/set-mode/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ea072d5e030077cfedaf757929b33d0d06658ea4dd5c576b7cc16e5a4a5ff3c": {
+      "description_zh": "在当前项目初始化 Sensei。",
+      "source": "Initialize sensei in the current project",
+      "source_sha256": "5ea072d5e030077cfedaf757929b33d0d06658ea4dd5c576b7cc16e5a4a5ff3c",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18753b16e133c16641a83b6f2e0dfc0ff0af918be2f2865090b5d08d2ba1c1ce": {
+      "description_zh": "以先预测再演示的方式提供带注释代码示范，并引导反思。",
+      "source": "Prediction-driven annotated code demo with reflection",
+      "source_sha256": "18753b16e133c16641a83b6f2e0dfc0ff0af918be2f2865090b5d08d2ba1c1ce",
+      "source_path": "skills/show-me/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8446362f41e28fd9816c7e77d2f68f392db2b0c4bb46a7099209a92ecbe44ee": {
+      "description_zh": "通过尝试、比较和差距分析循环进行刻意练习。",
+      "source": "Attempt-compare-gap loop for deliberate practice",
+      "source_sha256": "e8446362f41e28fd9816c7e77d2f68f392db2b0c4bb46a7099209a92ecbe44ee",
+      "source_path": "skills/spar/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a013a5d20903ff1cb7e950d5fd73626034dfe5b044a04bed41b55a7abb8c7fa5": {
+      "description_zh": "让学习者向 Sensei复述概念，以检验心智模型。",
+      "source": "Explain a concept back to your sensei to test your mental model",
+      "source_sha256": "a013a5d20903ff1cb7e950d5fd73626034dfe5b044a04bed41b55a7abb8c7fa5",
+      "source_path": "skills/teach-back/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69247f3c6acdc2ce38180bfc6db976d7dcc635ffc357ddfa524505ab506febe8": {
+      "description_zh": "深入讲解模式或概念背后的推理。",
+      "source": "Deep-dive into the reasoning behind a pattern or concept",
+      "source_sha256": "69247f3c6acdc2ce38180bfc6db976d7dcc635ffc357ddfa524505ab506febe8",
+      "source_path": "skills/why/SKILL.md",
+      "package_sha256": "150443e6778f65b84bd2c1c38c477800836781e21f91f2c6dbde16b25762642d",
+      "source_package": "sensei-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab6956bc93cffb5d94b97de7ca348ee94b0ba2ce6ceacee80d06201fdd9840ce": {
+      "description_zh": "分析 Sent投递、webhook及活动数据，解释漏斗流失、失败、阅读率差距、渠道回退和异常表现，涵盖 RCS、WhatsApp和 SMS。",
+      "source": "Analyzes Sent message delivery, webhook, and activity data to explain funnel drop-offs, delivery failures, read-rate gaps, channel fallback, and suspicious performance changes. Use when a user says MDR, delivery report, message activity, webhook event, failed messages, low delivery rate, RCS fallback, WhatsApp read rate, SMS filtering, campaign performance, or asks why messages did not arrive.",
+      "source_sha256": "ab6956bc93cffb5d94b97de7ca348ee94b0ba2ce6ceacee80d06201fdd9840ce",
+      "source_path": "skills/messaging-performance-analyzer/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e52ef7fc632fbbf5edd3fce8354894fc359bb27f99344ab6eadcedee4e08c34": {
+      "description_zh": "规划执行从 Twilio、Sinch、Infobip、Vonage或 Bird迁移到 Sent v3，映射发送调用、状态、签名、退订、模板及租户模型，通过双跑、回滚和核验门禁安全切换。",
+      "source": "Plans and executes a migration from Twilio, Sinch, Infobip, Vonage, or MessageBird/Bird to Sent v3 — mapping send calls, status vocabularies, webhook signature schemes, opt-out stores, templates, and tenancy models, then cutting over safely with dual-run and rollback. Use when replacing an incumbent CPaaS provider, translating provider code or webhook handlers to Sent, or planning a phased cutover and its verification gates.",
+      "source_sha256": "9e52ef7fc632fbbf5edd3fce8354894fc359bb27f99344ab6eadcedee4e08c34",
+      "source_path": "skills/migrate-to-sent/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1710a9ca5cbb7e81a29f495d5e63fdfdb3373e37b8e37db06e8dc72dc736c8e8": {
+      "description_zh": "指导 Sent RCS和 RBM入驻、上线证据、运营商审批、文本及建议按钮模板、Sender Profile准备和安全路由，支持回退、固定渠道测试及防止广播。",
+      "source": "Guides current Sent RCS and RBM onboarding, launch evidence, carrier approval, text and suggestion-chip templates, Sender Profile readiness, and safe routing. Use for RCS launch, fallback, pinned-channel tests, or broadcast prevention.",
+      "source_sha256": "1710a9ca5cbb7e81a29f495d5e63fdfdb3373e37b8e37db06e8dc72dc736c8e8",
+      "source_path": "skills/rcs-agent-onboarding/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a9151ba11b3d137a6cc65fe0b6df10cfa1fb8db4f0bd4bef05d4312131aa112": {
+      "description_zh": "设计 Sent多租户、多品牌、多渠道 Sender Profile，处理 API key范围、x-profile-id、隔离继承、共享计费、WABA、10DLC、webhook与租户退出。",
+      "source": "Designs Sent Sender Profile architecture for multi-tenant, multi-brand, and multi-channel systems. Use for API-key scoping, x-profile-id, isolation, inheritance, sharing, billing, WABA, 10DLC campaigns, webhooks, or tenant offboarding.",
+      "source_sha256": "8a9151ba11b3d137a6cc65fe0b6df10cfa1fb8db4f0bd4bef05d4312131aa112",
+      "source_path": "skills/sender-profile-architect/SKILL.md",
+      "package_sha256": "479382ad0aca959c9ad09d69c14f408054c7da6e701a53d22b2e4d2d2b3b4b19",
+      "source_package": "Sent-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
