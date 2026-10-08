@@ -23209,6 +23209,1086 @@
       "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
       "source_package": "cto-toolkit-3.0.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b7eacbb324a83eda94286a0ef2d4d634329859dd0d4aedb9b0f151cffde6fa7": {
+      "description_zh": "审查数据库模式、迁移、查询优化、索引策略和性能，覆盖PostgreSQL、MySQL、MongoDB、DynamoDB、Redis与ORM，分析执行计划、死锁和连接池等问题。",
+      "source": "**Database Design & SQL Review**: Expert guide for schema design, database migrations, query optimization, indexing strategy, and database performance. Covers relational (PostgreSQL, MySQL) and NoSQL (MongoDB, DynamoDB, Redis). Use whenever the user mentions 'database', 'schema', 'migration', 'SQL', 'query optimization', 'slow query', 'index', 'N+1', 'normalization', 'denormalization', 'PostgreSQL', 'MySQL', 'MongoDB', 'DynamoDB', 'Redis', 'ORM', 'TypeORM', 'Prisma', 'Sequelize', 'query plan', 'EXPLAIN', 'deadlock', 'connection pool', or asks about database design, data modeling, or performance tuning.",
+      "source_sha256": "5b7eacbb324a83eda94286a0ef2d4d634329859dd0d4aedb9b0f151cffde6fa7",
+      "source_path": "database-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb2fae62cef97bc577a62401ae286b5028f8c53b049c1a7536c8438da3d61bb4": {
+      "description_zh": "解释软件设计模式、SOLID、整洁代码与架构及领域驱动设计，指导重构、组织代码、依赖注入、耦合和内聚。",
+      "source": "**Design Patterns, SOLID & Clean Architecture**: Reference guide and advisor for software design patterns, SOLID principles, Clean Code practices, and Clean Architecture. Use whenever the user asks about design patterns, SOLID principles, Clean Code, Clean Architecture, DDD, refactoring, code organization, coupling, cohesion, or wants guidance on how to structure their code. Trigger when the user mentions 'pattern', 'SOLID', 'clean code', 'clean architecture', 'DDD', 'domain-driven', 'refactor', 'abstraction', 'dependency injection', 'repository pattern', or asks 'how should I structure this' or 'what pattern should I use'.",
+      "source_sha256": "cb2fae62cef97bc577a62401ae286b5028f8c53b049c1a7536c8438da3d61bb4",
+      "source_path": "design-patterns/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4f40324f3566d03215c6d0846c8650d7a301d9d3ff7ae2182582850f6b28e7a": {
+      "description_zh": "评估与改善开发者体验，包括构建及CI/CD速度、入职摩擦、工具、文档、开发者门户、调查、平台工程和生产力指标。",
+      "source": "**Developer Experience (DX) Audit**: Assesses and improves developer productivity and satisfaction — build times, CI/CD speed, onboarding friction, tooling quality, documentation, and internal developer portal. Covers developer surveys, golden paths, platform engineering, and DX metrics. Use when the user mentions developer experience, DX, developer productivity, build times, slow CI, onboarding friction, internal tooling, developer portal, platform engineering, or wants to improve engineering team happiness and velocity.",
+      "source_sha256": "f4f40324f3566d03215c6d0846c8650d7a301d9d3ff7ae2182582850f6b28e7a",
+      "source_path": "developer-experience/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d49284352c64a1f29c2704303b2e9e4e2a756e50632820cef54e4234bb2430af": {
+      "description_zh": "创建或审查Docker配置、AWS架构、CI/CD、Kubernetes、监控和消息基础设施，指导基础设施代码、部署、扩容及Kafka和AWS消息服务。",
+      "source": "**DevOps & Infrastructure (Docker, AWS, Messaging)**: Helps with Docker configuration, AWS architecture, CI/CD pipelines, Kubernetes, monitoring, and messaging infrastructure (Kafka, SQS, SNS). Use whenever the user wants to review or create Dockerfiles, docker-compose configs, AWS architecture, CI/CD pipelines, infrastructure as code, or mentions Docker, Kubernetes, ECS, Lambda, S3, RDS, CloudFront, Terraform, GitHub Actions, Jenkins, Kafka, SQS, SNS, monitoring, alerting, or asks about deployment strategies, scaling, or infrastructure design.",
+      "source_sha256": "d49284352c64a1f29c2704303b2e9e4e2a756e50632820cef54e4234bb2430af",
+      "source_path": "devops-infra/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c795dd497b9c6ea7f4dc975b1c8490800ac50b4d527f462334499b9cc8eca32": {
+      "description_zh": "提供领域驱动设计实践，涵盖事件风暴、限界上下文、聚合与领域建模模式。",
+      "source": "DDD practical guide: Event Storming, Bounded Contexts, Aggregates and domain-driven design patterns",
+      "source_sha256": "3c795dd497b9c6ea7f4dc975b1c8490800ac50b4d527f462334499b9cc8eca32",
+      "source_path": "domain-modeling/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b843f62bdb95bb28e91c31c9a48c33146dccf7e1dccd2302c7ab169c85664b2": {
+      "description_zh": "审查Elixir与Phoenix代码，检查OTP、GenServer、LiveView、容错与并发模式。",
+      "source": "Review Elixir/Phoenix code: OTP patterns, GenServer, LiveView, fault tolerance and concurrency",
+      "source_sha256": "5b843f62bdb95bb28e91c31c9a48c33146dccf7e1dccd2302c7ab169c85664b2",
+      "source_path": "elixir-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e938fad67781876e71be1cdc335706eecb7b0ac74475670a21d8b0193ddaa86": {
+      "description_zh": "制定工程预算，预测人员规模，建立基础设施成本模型并分析投资回报。",
+      "source": "Engineering budget planning, headcount forecasting, infrastructure cost modeling and ROI analysis",
+      "source_sha256": "7e938fad67781876e71be1cdc335706eecb7b0ac74475670a21d8b0193ddaa86",
+      "source_path": "engineering-budget/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88f0d5cea55f02f69c63e87838a68a5598c702da17f3bd62196d33f76500cc0d": {
+      "description_zh": "定义和衡量工程团队绩效，使用DORA、部署频率、交付前置时间、故障恢复时间、变更失败率、周期时间与体验调查，分析工程健康和投入分配。",
+      "source": "**Engineering Metrics & DORA**: Defines, measures, and improves engineering team performance using DORA metrics, developer productivity metrics, and engineering health indicators. Covers deployment frequency, lead time, MTTR, change failure rate, cycle time, developer experience surveys, and engineering investment allocation. Use when the user mentions DORA, engineering metrics, deployment frequency, lead time, MTTR, change failure rate, developer productivity, cycle time, velocity, engineering health, or wants to measure team performance.",
+      "source_sha256": "88f0d5cea55f02f69c63e87838a68a5598c702da17f3bd62196d33f76500cc0d",
+      "source_path": "engineering-metrics/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63f823d03e4407643b5954bcd76d50e7869fd9894ebe03e36ee6ce13a46f33a0": {
+      "description_zh": "设计和审查事件驱动系统，覆盖事件溯源、CQRS、Saga、领域事件、消息代理、编排与协同及最终一致性。",
+      "source": "**Event-Driven Architecture Review**: Reviews and designs event-driven systems — Event Sourcing, CQRS, Saga patterns, Domain Events, message brokers, and eventual consistency. Use when the user mentions events, event sourcing, CQRS, saga, choreography vs orchestration, Kafka architecture, event store, projections, read models, domain events, or wants to design or review an event-driven system.",
+      "source_sha256": "63f823d03e4407643b5954bcd76d50e7869fd9894ebe03e36ee6ce13a46f33a0",
+      "source_path": "event-driven-architecture/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0504373ac9484103e00030bffd5ace873ee8bda6dd2277b82326d19ab5cc6417": {
+      "description_zh": "设计功能开关策略、渐进发布、紧急停用机制和开关生命周期。",
+      "source": "Feature flag strategies, rollout patterns, kill switches and flag lifecycle management",
+      "source_sha256": "0504373ac9484103e00030bffd5ace873ee8bda6dd2277b82326d19ab5cc6417",
+      "source_path": "feature-flags/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d289db90aff615cabcbffe36e0cf14bf24d2f34281e174cc65a563ed3f262046": {
+      "description_zh": "审查Flutter与Dart应用的组件架构、状态管理、语言惯例、性能和平台差异，覆盖BLoC、Riverpod、Provider及平台通道。",
+      "source": "**Flutter & Dart Code Review**: Expert review of Flutter applications focusing on widget architecture, state management, Dart best practices, performance, and platform-specific considerations. Use whenever the user wants a review of Flutter/Dart code, widget design, state management patterns, or mentions Flutter, Dart, widgets, BLoC, Riverpod, Provider, Cubit, or asks to review mobile app code. Also trigger for Flutter performance reviews, platform channel audits, and app architecture analysis.",
+      "source_sha256": "d289db90aff615cabcbffe36e0cf14bf24d2f34281e174cc65a563ed3f262046",
+      "source_path": "flutter-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22f945dc919ea7cd58f1cba438a654735bdec5305c608216374adb0ab4cb90ec": {
+      "description_zh": "审查Angular与React前端代码，关注组件、状态管理、性能、可访问性、UI模式、响应式布局与构建包分析。",
+      "source": "**Frontend Code Review (Angular & React)**: Expert review of frontend code focusing on Angular, React, component architecture, state management, performance, accessibility, and UI patterns. Use whenever the user wants a review of frontend code, component design, state management, or mentions Angular, React, TypeScript, RxJS, Redux, hooks, components, CSS, responsive design, or asks to review client-side code. Also trigger for frontend performance reviews, bundle analysis, and accessibility audits.",
+      "source_sha256": "22f945dc919ea7cd58f1cba438a654735bdec5305c608216374adb0ab4cb90ec",
+      "source_path": "frontend-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f63cc005f8f5a79c4544870f6801745ab3433fd9e4622fa671fab0cd2072871": {
+      "description_zh": "依次协调多个专门技能开展全面代码审查，汇总代码质量、安全、性能、数据库、架构与测试报告。",
+      "source": "**Full Code Review Orchestrator**: Runs a comprehensive multi-dimensional code review by orchestrating multiple specialized review skills in sequence. Produces a consolidated report covering code quality, security, performance, database, architecture, and testing. Use when the user wants a 'full review', 'complete review', 'comprehensive code review', 'review everything', or wants the deepest possible analysis of their code or project.",
+      "source_sha256": "2f63cc005f8f5a79c4544870f6801745ab3433fd9e4622fa671fab0cd2072871",
+      "source_path": "full-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bcc7c52c62dc45d88ab65ae4ecddd13b0030b79faf109e4d3f927e162d1dbcf8": {
+      "description_zh": "制定与落实Git Flow、GitHub Flow或主干开发等分支策略，编写提交说明、管理发布，并处理冲突、变基和拣选提交。",
+      "source": "**Git Workflow & Branching Strategy**: Helps define and follow Git branching strategies (Git Flow, GitHub Flow, Trunk-Based), write good commit messages, manage releases, and resolve merge conflicts. Use whenever the user asks about Git workflow, branching strategy, commit conventions, release management, merge conflicts, or mentions 'git flow', 'branching', 'commit message', 'conventional commits', 'release branch', 'hotfix', 'merge conflict', 'rebase', 'cherry-pick', or asks how to organize their Git workflow.",
+      "source_sha256": "bcc7c52c62dc45d88ab65ae4ecddd13b0030b79faf109e4d3f927e162d1dbcf8",
+      "source_path": "git-flow/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41c158beb130d5b8f0d250600e690d1be38ecf8f9621591e19cb008ee86be9a5": {
+      "description_zh": "审查Go代码的惯用模式、错误处理、并发安全与性能，覆盖goroutine、通道、接口、错误包装及上下文传递。",
+      "source": "**Go Code Review**: Reviews Go code for idiomatic patterns, error handling, concurrency safety, and performance. Covers goroutines, channels, interfaces, error wrapping, context propagation, and common Go anti-patterns. Use when the user wants a review of Go code, mentions .go files, Go modules, goroutines, channels, gin, echo, fiber, gRPC, or any Go framework.",
+      "source_sha256": "41c158beb130d5b8f0d250600e690d1be38ecf8f9621591e19cb008ee86be9a5",
+      "source_path": "go-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90c0c012804b00fc795bed62b4575649959631f72556f498027c1878ecc98fd8": {
+      "description_zh": "审查GraphQL模式、解析器与配置的设计、安全和性能，覆盖DataLoader防N+1、查询复杂度限制、认证授权、联邦与订阅。",
+      "source": "**GraphQL Design & Security Review**: Reviews GraphQL schemas, resolvers, and configurations for design quality, security, performance, and best practices. Covers schema design, N+1 prevention (DataLoader), query complexity limits, authentication, authorization, federation, and subscriptions. Use when the user mentions GraphQL, schema, resolvers, mutations, queries, subscriptions, Apollo, Relay, DataLoader, federation, or .graphql files.",
+      "source_sha256": "90c0c012804b00fc795bed62b4575649959631f72556f498027c1878ecc98fd8",
+      "source_path": "graphql-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45eab6f3112f77e8591ebfc68db1ecdf427e7ce1ca6c0f8a71138916334ad9fd": {
+      "description_zh": "依次协调架构审查、技术债分析与安全审计智能体，生成统一项目健康仪表板，提供评分、趋势和改进优先路线图。",
+      "source": "**Project Health Check Orchestrator**: Runs a comprehensive project health assessment by invoking the architecture-reviewer, tech-debt-analyzer, and security-auditor agents in sequence. Produces a unified Project Health Dashboard with scores, trends, and a prioritized improvement roadmap. Use when the user wants a 'health check', 'project assessment', 'codebase audit', 'project health', 'how healthy is this project', or wants an executive-level overview of project quality.",
+      "source_sha256": "45eab6f3112f77e8591ebfc68db1ecdf427e7ce1ca6c0f8a71138916334ad9fd",
+      "source_path": "health-check/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b329be56ca23dac7ccc62cbcc35db0ec0d4eb45a6badb46bedf5bbcf6853b0d": {
+      "description_zh": "编写无责事故复盘、根因分析、事件报告和响应手册，记录生产故障，并完善升级流程、值班响应与SLA文档。",
+      "source": "**Incident Response & Postmortem**: Creates blameless postmortem documents and incident response runbooks. Use this skill whenever the user wants to write a postmortem, incident report, root cause analysis (RCA), create an incident runbook, document an outage, or analyze what went wrong in production. Trigger when the user mentions 'postmortem', 'incident', 'outage', 'RCA', 'root cause', 'production issue', 'downtime', 'war room', 'on-call', or wants to improve their incident response process. Also trigger when the user asks to create escalation procedures or SLA documentation.",
+      "source_sha256": "2b329be56ca23dac7ccc62cbcc35db0ec0d4eb45a6badb46bedf5bbcf6853b0d",
+      "source_path": "incident-postmortem/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd022e2ec62db0efa59fb209624432fad62a3b26a2be5b304da926f044adedcd": {
+      "description_zh": "审查Kubernetes清单、Helm图表和云原生配置的安全、可靠性与资源管理，覆盖RBAC、网络策略、自动扩容、PDB、安全上下文及GitOps。",
+      "source": "**Kubernetes & Cloud-Native Review**: Reviews Kubernetes manifests, Helm charts, and cloud-native configurations for security, reliability, resource management, and best practices. Covers pods, deployments, services, ingress, RBAC, network policies, HPA, PDB, security contexts, and GitOps patterns. Use when the user mentions Kubernetes, k8s, kubectl, Helm, pods, deployments, services, ingress, operators, ArgoCD, Flux, or any container orchestration.",
+      "source_sha256": "bd022e2ec62db0efa59fb209624432fad62a3b26a2be5b304da926f044adedcd",
+      "source_path": "kubernetes-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9c62d34246d50e290e0c1a86bc315aac9cd0a98f1140ab890b40e0cab1897f9": {
+      "description_zh": "规划与审查大规模系统迁移，包括单体拆微服务、上云、数据库迁移、框架升级和语言转换，覆盖渐进替代、并行运行、功能对齐与回滚。",
+      "source": "**Migration Strategy**: Plans and reviews large-scale system migrations — monolith to microservices, cloud migration, database migration, framework upgrades, and language transitions. Covers strangler fig pattern, parallel running, data migration, feature parity tracking, and rollback strategies. Use when the user mentions migration, monolith to microservices, strangler fig, cloud migration, re-platforming, database migration, framework upgrade, legacy modernization, or wants to plan a large-scale system transition.",
+      "source_sha256": "d9c62d34246d50e290e0c1a86bc315aac9cd0a98f1140ab890b40e0cab1897f9",
+      "source_path": "migration-strategy/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f83636d09400d4e2beba50f1a5cbf3c8764cb016ea93768f627d07aa1c35121": {
+      "description_zh": "指导多租户架构的行级、模式级与数据库级隔离，以及租户路由。",
+      "source": "Multi-tenant architecture patterns: row-level, schema-level, database-level isolation and tenant routing",
+      "source_sha256": "3f83636d09400d4e2beba50f1a5cbf3c8764cb016ea93768f627d07aa1c35121",
+      "source_path": "multi-tenancy/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d19f8b23a5c0dd92e132b779ed39f2295798cf1f51972891becae1d6bd0e03b7": {
+      "description_zh": "指导日志、指标与追踪可观测性，建立监控告警、SLO与SLI、错误预算、仪表板和事件检测，使用常见监控与OpenTelemetry工具改善生产可见性。",
+      "source": "**Observability, Monitoring & SRE**: Comprehensive guide for implementing observability (logs, metrics, traces), setting up monitoring and alerting, defining SLOs/SLIs/SLAs, creating dashboards, and incident detection. Use whenever the user mentions 'observability', 'monitoring', 'alerting', 'logging', 'metrics', 'tracing', 'SLO', 'SLI', 'SLA', 'error budget', 'dashboard', 'Grafana', 'Prometheus', 'DataDog', 'CloudWatch', 'New Relic', 'Jaeger', 'OpenTelemetry', 'OTEL', 'uptime', 'latency', 'p99', 'alert fatigue', 'on-call', 'PagerDuty', or asks 'how do I know if my system is healthy', 'what should I monitor', or wants to improve production visibility.",
+      "source_sha256": "d19f8b23a5c0dd92e132b779ed39f2295798cf1f51972891becae1d6bd0e03b7",
+      "source_path": "observability/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e5603f88cb5cd8c464792cb87c7b1d616dd184d11f10988335f7ef82d53d643": {
+      "description_zh": "设计值班轮换、升级层级、运行手册标准和防止值班耗竭的措施。",
+      "source": "On-call rotation design, escalation tiers, runbook standards and burnout prevention",
+      "source_sha256": "5e5603f88cb5cd8c464792cb87c7b1d616dd184d11f10988335f7ef82d53d643",
+      "source_path": "on-call-design/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1cc8ab881816575a642bfe30edfb77b30ff9ff63770f6748ab682f23fa44b81c": {
+      "description_zh": "准备和记录与直属员工、跨级员工或主管的一对一会议，组织反馈、职业发展、绩效与困难管理对话。",
+      "source": "**1:1 Meeting Prep & Notes**: Helps prepare for and document one-on-one meetings with direct reports, skip-levels, and your own manager. Use this skill whenever the user wants to prepare for a 1:1, create meeting notes, structure feedback conversations, plan career development discussions, or handle difficult management conversations. Trigger when the user mentions '1:1', 'one-on-one', 'check-in with', 'meeting with [person]', 'feedback for', 'performance review', 'career conversation', or asks how to have a difficult conversation with a team member.",
+      "source_sha256": "1cc8ab881816575a642bfe30edfb77b30ff9ff63770f6748ab682f23fa44b81c",
+      "source_path": "one-on-one/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6ccdaa5bd1dc00bab649c367c8f43504f585d96dd8fa9b7800207a510de9cda9": {
+      "description_zh": "提供网页、API与基础设施的结构化渗透测试方法、漏洞评估框架和安全清单，涵盖伦理测试、威胁建模及攻击面分析。",
+      "source": "**Penetration Testing & Ethical Hacking Methodology**: Provides structured penetration testing methodology, security checklists, vulnerability assessment frameworks, and ethical hacking guidance for web applications, APIs, and infrastructure. Use whenever the user mentions 'pentest', 'penetration testing', 'vulnerability assessment', 'security audit', 'ethical hacking', 'OWASP', 'bug bounty', 'security testing', 'threat modeling', 'attack surface', 'CVE', 'security scan', or asks 'how secure is this', 'what vulnerabilities should I check', or wants to test the security of their application or infrastructure.",
+      "source_sha256": "6ccdaa5bd1dc00bab649c367c8f43504f585d96dd8fa9b7800207a510de9cda9",
+      "source_path": "pentest/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b710a81854c172af6c0bb56beb296d396a8a5a2e7203315c3835245a02809048": {
+      "description_zh": "诊断和优化内存泄漏、CPU瓶颈、慢查询、延迟与吞吐问题，结合剖析工具、火焰图、负载测试和缓存策略处理Node.js、Java、Flutter与网页应用性能。",
+      "source": "**Performance Profiling & Optimization**: Helps diagnose and fix performance issues including memory leaks, CPU bottlenecks, slow queries, high latency, and throughput problems. Covers profiling tools, flame graphs, load testing, caching strategies, and optimization techniques for Node.js, Java, Flutter, and web applications. Use whenever the user mentions 'performance', 'slow', 'memory leak', 'OOM', 'high CPU', 'latency', 'throughput', 'flame graph', 'profiling', 'load test', 'benchmark', 'cache', 'optimization', 'p99', 'response time', 'bottleneck', 'event loop', 'garbage collection', 'heap', or says 'my app is slow', 'why is this endpoint slow', 'we're running out of memory'.",
+      "source_sha256": "b710a81854c172af6c0bb56beb296d396a8a5a2e7203315c3835245a02809048",
+      "source_path": "performance-profiling/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "739d900f58dc627b0abf8c76881a1d9e7324a949648a312edcf9f5d558394ef6": {
+      "description_zh": "根据分支变化撰写完整拉取请求说明，提供背景、影响分析及审查指引，支持GitHub或GitLab PR与合并请求流程。",
+      "source": "**PR Description Writer**: Generates comprehensive, senior-level pull request descriptions with context, impact analysis, and review guidance. Use whenever the user wants to create a PR, write a PR description, summarize branch changes for a pull request, open a pull request, or mentions 'PR', 'pull request', 'merge request', 'MR', 'code review description', or asks to 'describe my changes'. Also trigger when the user runs git commands related to pushing branches or asks for help with GitHub/GitLab PR workflows.",
+      "source_sha256": "739d900f58dc627b0abf8c76881a1d9e7324a949648a312edcf9f5d558394ef6",
+      "source_path": "pr-description/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3f0fb6bf36b6fbe21e44b2867e39e26caa501241940dbd7446408d8c12f4e29": {
+      "description_zh": "审查Python及Django、FastAPI、Flask、异步与数据处理代码，关注类型提示、错误处理、惯用模式、安全、性能与测试。",
+      "source": "**Python Code Review**: Reviews Python code for quality, patterns, and best practices across Django, FastAPI, Flask, async/await, data processing, and general Python. Covers type hints, error handling, Pythonic patterns, security, performance, and testing. Use when the user wants a review of Python code, mentions .py files, Django, FastAPI, Flask, Celery, SQLAlchemy, Pydantic, or any Python framework.",
+      "source_sha256": "c3f0fb6bf36b6fbe21e44b2867e39e26caa501241940dbd7446408d8c12f4e29",
+      "source_path": "python-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9a4624faacbf90598309c28d68bd3d97f6d676e29caa12dab7298973c4051ba": {
+      "description_zh": "作为其他技能引用的质量标准，规定资深架构审查视角、自我核验、边界分析、任务分解和质量门槛，用于审查、规范、计划与PR说明等交付，不直接触发。",
+      "source": "**Quality Standard Protocol**: Defines the senior architect mindset that all other skills must follow. Enforces self-verification, edge case analysis, decomposition rules, anti-pattern awareness, and quality gates. This skill is NOT triggered directly — it is referenced by other skills to ensure every output has the depth, precision, and rigor of a 20-year veteran architect. Other skills should read this file when producing deliverables (reviews, specs, stories, plans, PR descriptions).",
+      "source_sha256": "b9a4624faacbf90598309c28d68bd3d97f6d676e29caa12dab7298973c4051ba",
+      "source_path": "quality-standard/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e8f0c0d73a9fa48b30b39893a2653e657889ca6adf4cff82cba74ce9f9a40d5": {
+      "description_zh": "审查Rust所有权、生命周期、unsafe、Result与Option、并发和惯用模式，覆盖异步运行时、trait、宏与性能。",
+      "source": "**Rust Code Review**: Reviews Rust code for ownership patterns, lifetime management, unsafe usage, error handling with Result/Option, concurrency safety, and idiomatic Rust patterns. Covers async Rust (tokio/async-std), trait design, macro hygiene, and performance. Use when the user wants a review of Rust code, mentions .rs files, Cargo.toml, ownership, borrowing, lifetimes, tokio, actix, axum, or any Rust ecosystem tool.",
+      "source_sha256": "4e8f0c0d73a9fa48b30b39893a2653e657889ca6adf4cff82cba74ce9f9a40d5",
+      "source_path": "rust-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "772620db79645d4cc680c85d48055f75a025d53347f566a3413fef2fb06be7a3": {
+      "description_zh": "审查代码中的认证、授权、API、数据保护、支付及常见攻击风险，覆盖OAuth2、JWT、RBAC、CORS、CSRF、XSS、SQL注入、密钥和加密，并支持威胁建模与渗透测试分析。",
+      "source": "**Security Code Review**: Reviews code for security vulnerabilities including authentication (OAuth2, JWT), authorization (RBAC, roles), API security, data protection, payment security, and common attack vectors. Use whenever the user wants a security review, penetration test analysis, threat model, or mentions OAuth2, JWT, authentication, authorization, RBAC, roles, permissions, CORS, CSRF, XSS, SQL injection, secrets management, encryption, PCI, or asks about securing their application. Also trigger when reviewing payment flows, financial transactions, or handling sensitive user data.",
+      "source_sha256": "772620db79645d4cc680c85d48055f75a025d53347f566a3413fef2fb06be7a3",
+      "source_path": "security-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79b16ff9a6bc88572c63097cc1c9c6723f07217bff1c2e9c61f8165c9cb93b0d": {
+      "description_zh": "组织冲刺与发布计划，梳理待办、编写用户故事、估算任务、安排路线图和功能优先级，支持规划会议。",
+      "source": "**Sprint & Release Planning**: Helps with sprint planning, backlog grooming, story estimation, release planning, and roadmap creation. Use this skill whenever the user wants to plan a sprint, groom the backlog, write user stories, estimate tasks, plan a release, create a roadmap, prioritize features, or structure a planning meeting. Trigger when the user mentions 'sprint', 'backlog', 'story points', 'estimation', 'velocity', 'roadmap', 'release plan', 'prioritization', 'epic', 'user story', or asks about how to organize upcoming work.",
+      "source_sha256": "79b16ff9a6bc88572c63097cc1c9c6723f07217bff1c2e9c61f8165c9cb93b0d",
+      "source_path": "sprint-planning/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "edf513d9c980ca61dd0b0e2d6476b3253dd351266ee7853b8dbf350f2c25a2b9": {
+      "description_zh": "审查Swift与iOS代码，覆盖SwiftUI、Combine、UIKit、App Store指南和iOS架构。",
+      "source": "Review Swift/iOS code: SwiftUI, Combine, UIKit, App Store guidelines and iOS architecture",
+      "source_sha256": "edf513d9c980ca61dd0b0e2d6476b3253dd351266ee7853b8dbf350f2c25a2b9",
+      "source_path": "swift-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c883e64fd48e2da21c4864a13a635a8ffdac9871540d96a489d69b286ce8500d": {
+      "description_zh": "用结构化方法诊断和修复各技术栈缺陷，结合科学调试、二分定位、日志、内存性能及分布式排查，处理间歇故障、不稳定测试和竞态。",
+      "source": "**Systematic Debugging Methodology**: Provides structured approaches to diagnose and fix bugs in any technology stack. Covers scientific debugging method, binary search for bugs, log analysis, memory/performance debugging, distributed system debugging, and production incident investigation. Use whenever the user is stuck debugging, says 'I can't figure out this bug', 'why is this failing', 'this doesn't work', 'help me debug', 'what's wrong with this code', 'error investigation', 'production issue', 'intermittent bug', 'flaky test', 'memory leak', 'race condition', or is dealing with any kind of software defect they need help diagnosing.",
+      "source_sha256": "c883e64fd48e2da21c4864a13a635a8ffdac9871540d96a489d69b286ce8500d",
+      "source_path": "systematic-debugging/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a1b45b3bf8520478b9b9738ddd5340374f611115d372eb1f05b2f1dd33e3dfff": {
+      "description_zh": "设计工程组织、职业阶梯、招聘与团队拓扑，定义岗位、面试框架、自主权和从初创到企业的扩展方式。",
+      "source": "**Team Scaling & Engineering Organization**: Designs engineering org structures, career ladders, hiring processes, and team topologies. Covers engineering levels, job descriptions, interview frameworks, org design patterns, team autonomy, and scaling from startup to enterprise. Use when the user mentions team scaling, org design, engineering ladder, career levels, hiring, team topologies, engineering manager, tech lead, staff engineer, or wants to grow and organize their engineering team.",
+      "source_sha256": "a1b45b3bf8520478b9b9738ddd5340374f611115d372eb1f05b2f1dd33e3dfff",
+      "source_path": "team-scaling/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a4036c5ed04228c3ea6be0020e46b939f591e728013ac5e47c4661d46081252e": {
+      "description_zh": "使用RICE评分识别、量化并排列技术债优先级。",
+      "source": "Framework for identifying, quantifying and prioritizing technical debt with RICE scoring",
+      "source_sha256": "a4036c5ed04228c3ea6be0020e46b939f591e728013ac5e47c4661d46081252e",
+      "source_path": "tech-debt-prioritization/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec1d722a5ef8a161cd4220250423e026bbfdee60cfaa0757f5c2f1afadb52459": {
+      "description_zh": "为功能、系统与集成编写详细技术规范、RFC、设计文档或提案，帮助在编码前思考架构和实现计划。",
+      "source": "**Technical Specification Document**: Creates detailed technical specs (RFCs, design docs) for features, systems, and integrations. Use this skill whenever the user wants to write a tech spec, design doc, RFC, technical proposal, system design, or API specification. Also trigger when the user says 'spec out', 'design document', 'technical plan', 'how should we build', 'system design for', or wants to plan the implementation of a feature before coding. Trigger even for informal requests like 'I need to think through how to build X' or 'help me plan the architecture for Y'.",
+      "source_sha256": "ec1d722a5ef8a161cd4220250423e026bbfdee60cfaa0757f5c2f1afadb52459",
+      "source_path": "tech-spec/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3535ea9760078144e622e28275bdc0464fdba964e9750f7cccaa5f8f859a15b": {
+      "description_zh": "设计结构化技术面试计划，提供评分标准、系统设计题、编码挑战、行为面试与招聘评估框架。",
+      "source": "**Technical Interview Design**: Creates structured interview plans with rubrics, system design questions, coding challenges, and evaluation scorecards. Covers behavioral interviews, technical assessments, system design interviews, and hiring decision frameworks. Use when the user mentions interview, hiring, technical assessment, coding challenge, system design interview, interview rubric, scorecard, or wants to design a fair and effective interview process.",
+      "source_sha256": "a3535ea9760078144e622e28275bdc0464fdba964e9750f7cccaa5f8f859a15b",
+      "source_path": "technical-interview/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c8c9017223e69b636ff67587e81b20eb89b78a295242a461a61a662db47ac9f": {
+      "description_zh": "编写、审查与组织Terraform配置和模块，管理状态、远程状态与多环境基础设施，指导IaC、Terragrunt和OpenTofu实践。",
+      "source": "**Terraform & Infrastructure as Code**: Helps write, review, and structure Terraform configurations, modules, state management, and IaC best practices. Use whenever the user mentions 'terraform', 'IaC', 'infrastructure as code', '.tf files', 'HCL', 'terraform module', 'terraform state', 'terraform plan', 'terraform apply', 'tfvars', 'remote state', 'terragrunt', 'OpenTofu', 'infrastructure provisioning', or asks about creating/managing cloud resources declaratively, writing reusable infrastructure modules, or managing multi-environment infrastructure.",
+      "source_sha256": "2c8c9017223e69b636ff67587e81b20eb89b78a295242a461a61a662db47ac9f",
+      "source_path": "terraform-iac/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60c413d3507f4bdcf651274860c3a8024c4f6fc780f9f2ee3d8fee140c525eef": {
+      "description_zh": "制定测试和QA策略，指导TDD、BDD、单元、集成及端到端测试，编写测试计划并审查覆盖、模拟与常见测试工具用法。",
+      "source": "**Testing Strategy (TDD, BDD, QA)**: Expert guide for test-driven development, behavior-driven development, unit testing, integration testing, E2E testing, and QA processes. Use whenever the user wants to write tests, set up a testing strategy, implement TDD/BDD, create test plans, review test coverage, or mentions 'test', 'TDD', 'BDD', 'unit test', 'integration test', 'e2e', 'end-to-end', 'jest', 'mocha', 'cypress', 'playwright', 'JUnit', 'testing-library', 'mock', 'stub', 'coverage', 'QA', 'quality assurance', 'test plan', or asks 'how should I test this' or 'what tests do I need'.",
+      "source_sha256": "60c413d3507f4bdcf651274860c3a8024c4f6fc780f9f2ee3d8fee140c525eef",
+      "source_path": "testing-strategy/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f20c3b4d2dee00c61390a97b5ced5678da7f78f2728a7819fd06d9db9697af2a": {
+      "description_zh": "审查UI、原型、线框与应用截图的可用性、可访问性、一致性、布局和用户流程，支持移动端、响应式和设计系统反馈。",
+      "source": "**UX/UI Review & Mockup Feedback**: Reviews user interfaces, mockups, and wireframes for usability, accessibility, consistency, and user experience best practices. Use whenever the user wants feedback on a UI design, mockup, wireframe, screenshot of their app, or mentions 'UX', 'UI', 'mockup', 'wireframe', 'user experience', 'usability', 'design review', 'layout', 'navigation', 'user flow', or asks 'does this look right', 'how can I improve this screen', or shares a screenshot wanting design feedback. Also trigger for mobile UI review (iOS/Android/Flutter), responsive design review, and design system evaluation.",
+      "source_sha256": "f20c3b4d2dee00c61390a97b5ced5678da7f78f2728a7819fd06d9db9697af2a",
+      "source_path": "ux-review/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a7202803c2e48edbabe56a2bf4ca17a58b257cb80ae194d5ee3b7cfa2523dff": {
+      "description_zh": "建立自建或采购评分表，评估供应商锁定风险、SLA谈判和供应商管理。",
+      "source": "Build vs Buy scorecard, vendor lock-in risk, SLA negotiation and vendor management",
+      "source_sha256": "7a7202803c2e48edbabe56a2bf4ca17a58b257cb80ae194d5ee3b7cfa2523dff",
+      "source_path": "vendor-evaluation/SKILL.md",
+      "package_sha256": "3fba8fac59c1b0f97b125bdeae681413111a5419e0baaaa9a97417ac9b52ec0f",
+      "source_package": "cto-toolkit-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14294971f71339d2aeafba58d2b2b03491416ea81b94daf7bac5211546dd6f00": {
+      "description_zh": "使用已索引ctx CLI探索仓库、定位符号与调用者、检查已有实现及变更影响，落实架构规则、评分分支、识别热点重复并分析代码健康趋势。",
+      "source": "Codebase intelligence and evidence-driven governance with the indexed ctx CLI. Use when exploring an unfamiliar repository, locating symbols or callers, checking for existing implementations, estimating change impact, enforcing architecture rules, scoring a branch, finding hotspots or duplication, or analyzing codebase-health trends across commits and releases.",
+      "source_sha256": "14294971f71339d2aeafba58d2b2b03491416ea81b94daf7bac5211546dd6f00",
+      "source_path": "skills/ctx/SKILL.md",
+      "package_sha256": "91006d25d4fbc90a6dd4ba11a477f2d5932b451f5175cb611d68b7798061b927",
+      "source_package": "ctx-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f11c0df42ca732eeac6c4a14b6197b12cb8634719634c9ab97d1021c038bd46a": {
+      "description_zh": "为工程、产品或管理层准备客户问题升级材料，完整说明背景，适用于超出常规支持的缺陷、多客户共性问题、流失威胁或超过SLA未解决事项。",
+      "source": "Package an escalation for engineering, product, or leadership with full context. Use when a bug needs engineering attention beyond normal support, multiple customers report the same issue, a customer is threatening to churn, or an issue has sat unresolved past its SLA.",
+      "source_sha256": "f11c0df42ca732eeac6c4a14b6197b12cb8634719634c9ab97d1021c038bd46a",
+      "source_path": "skills/customer-escalation/SKILL.md",
+      "package_sha256": "341423d3fa15962ec3d628d5aa75dfd2bd67faeae1ff37108fff0960d54ca6bc",
+      "source_package": "Customer Support-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e77ddac8e0a88d8372fe9e501a220151340469c18a5b530e0713fec274e2aefd": {
+      "description_zh": "针对客户问题进行多来源研究并标注出处，查找历史缺陷、以往向账户提供的答复及回复所需背景。",
+      "source": "Multi-source research on a customer question or topic with source attribution. Use when a customer asks something you need to look up, investigating whether a bug has been reported before, checking what was previously told to a specific account, or gathering background before drafting a response.",
+      "source_sha256": "e77ddac8e0a88d8372fe9e501a220151340469c18a5b530e0713fec274e2aefd",
+      "source_path": "skills/customer-research/SKILL.md",
+      "package_sha256": "341423d3fa15962ec3d628d5aa75dfd2bd67faeae1ff37108fff0960d54ca6bc",
+      "source_package": "Customer Support-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "adca83e94c5a2d8d7e79db51f4aa906f6e2ca3e896331aeda6963a96fa1b9aad": {
+      "description_zh": "按情境与客户关系起草专业回复，涵盖产品问题、升级、故障、延期或不修复通知、功能拒绝及账单问题。",
+      "source": "Draft a professional customer-facing response tailored to the situation and relationship. Use when answering a product question, responding to an escalation or outage, delivering bad news like a delay or won't-fix, declining a feature request, or replying to a billing issue.",
+      "source_sha256": "adca83e94c5a2d8d7e79db51f4aa906f6e2ca3e896331aeda6963a96fa1b9aad",
+      "source_path": "skills/draft-response/SKILL.md",
+      "package_sha256": "341423d3fa15962ec3d628d5aa75dfd2bd67faeae1ff37108fff0960d54ca6bc",
+      "source_package": "Customer Support-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57bdd6afd638aad560db986edb84c4fa5c7ee9ba94fc096d6857018a11f97245": {
+      "description_zh": "根据已解决问题或常见问答起草知识库文章，用于自助服务、重复提问、变通方案及已知问题说明。",
+      "source": "Draft a knowledge base article from a resolved issue or common question. Use when a ticket resolution is worth documenting for self-service, the same question keeps coming up, a workaround needs to be published, or a known issue should be communicated to customers.",
+      "source_sha256": "57bdd6afd638aad560db986edb84c4fa5c7ee9ba94fc096d6857018a11f97245",
+      "source_path": "skills/kb-article/SKILL.md",
+      "package_sha256": "341423d3fa15962ec3d628d5aa75dfd2bd67faeae1ff37108fff0960d54ca6bc",
+      "source_package": "Customer Support-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "271de51e6331be45ff24e1ec678151aebf16991623ee6c607b5578f3aba822cf": {
+      "description_zh": "分类和分流支持工单，确定P1至P4优先级、负责团队，并在转交前检查重复或已知问题。",
+      "source": "Triage and prioritize a support ticket or customer issue. Use when a new ticket comes in and needs categorization, assigning P1-P4 priority, deciding which team should handle it, or checking whether it's a duplicate or known issue before routing.",
+      "source_sha256": "271de51e6331be45ff24e1ec678151aebf16991623ee6c607b5578f3aba822cf",
+      "source_path": "skills/ticket-triage/SKILL.md",
+      "package_sha256": "341423d3fa15962ec3d628d5aa75dfd2bd67faeae1ff37108fff0960d54ca6bc",
+      "source_package": "Customer Support-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ae983912e63e074cf397335eba0f1fa803823b15ce3c0d3b07a45e64af89990": {
+      "description_zh": "创建、编辑、审查与发布Customer.io Design Studio邮件、组件、全局样式及已连接邮件，并检查邮件可访问性和质量。",
+      "source": "Customer.io Design Studio. Use when the user wants to create, edit, review, or publish Design Studio emails, components, global styles, connected emails, or email accessibility/QA. Triggers: \"Design Studio\", \"draft an email\", \"email component\", \"global styles\", \"publish connected email\", \"review this email\".",
+      "source_sha256": "7ae983912e63e074cf397335eba0f1fa803823b15ce3c0d3b07a45e64af89990",
+      "source_path": "skills/customerio-design-studio/SKILL.md",
+      "package_sha256": "f666e23358cdad81f26724eea20a7bd1927f038e08f7d071ff1edaaebc7ac0c6",
+      "source_package": "Customer.io-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80d044cefaef53a121d4c86bc53ffca3a195d52e6e82723cb5e377ab88eb3761": {
+      "description_zh": "管理Customer.io Journeys自动化、营销活动、广播、一次性发送、个人资料、客户群、订阅主题、事务消息及应用内消息。",
+      "source": "Customer.io Journeys. Use when the user wants to create, list, edit, or review automations, campaigns, broadcasts, one-time sends, profiles, people, customers, segments, newsletters, subscription topics, transactional messages, or in-app messages. Triggers: \"list automations\", \"create a campaign\", \"win-back segment\", \"people who haven't opened\", \"find profiles\", \"transactional send\", \"in-app message\".",
+      "source_sha256": "80d044cefaef53a121d4c86bc53ffca3a195d52e6e82723cb5e377ab88eb3761",
+      "source_path": "skills/customerio-journeys/SKILL.md",
+      "package_sha256": "f666e23358cdad81f26724eea20a7bd1927f038e08f7d071ff1edaaebc7ac0c6",
+      "source_package": "Customer.io-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "100224b95fde9f278d5260c1b1489d26d9f94909f57c454917219b398c343cb3": {
+      "description_zh": "配置和检查Customer.io CDP数据管道的来源、目标、反向ETL与数据库同步，处理identify、track、page、screen事件和CRM、仓库及广告受众集成。",
+      "source": "Customer.io Data Pipelines (CDP). Use when the user wants to add or inspect sources, destinations, reverse ETL, database syncs, identify/track/page/screen calls, or data in/out integrations (Salesforce, HubSpot, Segment, warehouses, ad audiences). Triggers: \"add a JavaScript source\", \"Pipelines\", \"CDP\", \"destination\", \"reverse ETL\", \"identify and track\", \"send data to Salesforce\".",
+      "source_sha256": "100224b95fde9f278d5260c1b1489d26d9f94909f57c454917219b398c343cb3",
+      "source_path": "skills/customerio-pipelines/SKILL.md",
+      "package_sha256": "f666e23358cdad81f26724eea20a7bd1927f038e08f7d071ff1edaaebc7ac0c6",
+      "source_package": "Customer.io-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd729d45214469035b73f4f9ac40b42c28f1ed4b9c914ac0615021e0f1b531fb": {
+      "description_zh": "安装和排查Customer.io网页、Node、iOS、Android、React Native、Expo与Flutter SDK，支持沙箱、首次发送、实时活动通知和上线。",
+      "source": "Customer.io SDK and app integration. Use when the user wants to install or troubleshoot JavaScript, Node, iOS, Android, React Native, Expo, or Flutter SDKs, sandbox testing, first send, Live Activities / Live Notifications, or going live. Triggers: \"add Customer.io to my React Native app\", \"JS snippet\", \"iOS SDK\", \"sandbox\", \"test send\", \"go live\", \"Live Activities\".",
+      "source_sha256": "cd729d45214469035b73f4f9ac40b42c28f1ed4b9c914ac0615021e0f1b531fb",
+      "source_path": "skills/customerio-sdk/SKILL.md",
+      "package_sha256": "f666e23358cdad81f26724eea20a7bd1927f038e08f7d071ff1edaaebc7ac0c6",
+      "source_package": "Customer.io-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78eb74b672e2bc88ccbbccb126862eb9463c2dbbbdcf72417aa10ac87c43f786": {
+      "description_zh": "作为Customer.io MCP初始化入口，处理Journeys、CDP、Design Studio、SDK、沙箱、事务消息、账单、来源目标与上线，并排查相关域名错误。",
+      "source": "Customer.io MCP bootstrap. Use for Customer.io, Journeys, CDP Pipelines, Design Studio, builder onboarding, sandbox testing, app integration, SDK setup, transactional messaging, billing, going live, sources, destinations, identify/track events, and fly.customer.io / cdp.customer.io errors. Trigger even when the user does not name MCP or Customer.io.",
+      "source_sha256": "78eb74b672e2bc88ccbbccb126862eb9463c2dbbbdcf72417aa10ac87c43f786",
+      "source_path": "skills/customerio/SKILL.md",
+      "package_sha256": "f666e23358cdad81f26724eea20a7bd1927f038e08f7d071ff1edaaebc7ac0c6",
+      "source_package": "Customer.io-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4850f5106a00941e266b4ed36e4547bd9cf1eae77338de30c138fd1c189f1a92": {
+      "description_zh": "依据用户事实从零起草英语或俄语简历，输出标准cv-builder/v1 Markdown，可填入配套骨架并通过open_builder交给浏览器CV Builder。",
+      "source": "Draft a new resume from the user's facts as canonical cv-builder/v1 Markdown. Use when the user asks to create, write, or build a resume or CV from scratch (English or Russian), optionally filling a shipped CV Builder skeleton and handing the result to the browser-based CV Builder through the open_builder MCP tool.",
+      "source_sha256": "4850f5106a00941e266b4ed36e4547bd9cf1eae77338de30c138fd1c189f1a92",
+      "source_path": "skills/create-resume/SKILL.md",
+      "package_sha256": "0a4336dfd426b470b3d95f29f47db3529b939c54963990725e30a1608a8e2157",
+      "source_package": "CV Builder-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "152b9b946d2de4cbcdb62017b0f6c7d3d6be4ea88dac16acca67b3273161fa36": {
+      "description_zh": "按照CV Builder预检标准审查简历内容、结构和ATS兼容性，提供评价与修改建议。",
+      "source": "Review a resume's content, structure, and ATS safety using the same criteria as the CV Builder's preflight. Use when the user asks to review, critique, check, or give feedback on a resume or CV.",
+      "source_sha256": "152b9b946d2de4cbcdb62017b0f6c7d3d6be4ea88dac16acca67b3273161fa36",
+      "source_path": "skills/review-resume/SKILL.md",
+      "package_sha256": "0a4336dfd426b470b3d95f29f47db3529b939c54963990725e30a1608a8e2157",
+      "source_package": "CV Builder-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "efce9079cf1e3aa80e0b62c70805a344ae00563a7345eab22e2b7214f4829c92": {
+      "description_zh": "把简历经历和成就改写成行动与结果形式，采用诚实的量化表达增强描述。",
+      "source": "Rewrite resume bullets or entries into action-result form with honest quantification. Use when the user asks to improve, strengthen, or rewrite experience bullets, achievements, or role descriptions.",
+      "source_sha256": "efce9079cf1e3aa80e0b62c70805a344ae00563a7345eab22e2b7214f4829c92",
+      "source_path": "skills/rewrite-achievements/SKILL.md",
+      "package_sha256": "0a4336dfd426b470b3d95f29f47db3529b939c54963990725e30a1608a8e2157",
+      "source_package": "CV Builder-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "753ab92840a977a61246db047063c0d6a84b90d8c9639c15be3d14c90c74e3c7": {
+      "description_zh": "根据目标职位调整已有简历，评估匹配、对应真实关键词、指出差距，输出标准cv-builder/v1 Markdown，不编造事实。",
+      "source": "Adapt an existing resume to a target job posting without inventing facts: assess fit, map truthful keywords, flag gaps, and deliver canonical cv-builder/v1 Markdown. Use when the user provides a resume (cv-builder/v1 Markdown or plain text) plus a vacancy or job description and asks to tailor, target, or adjust the resume to it.",
+      "source_sha256": "753ab92840a977a61246db047063c0d6a84b90d8c9639c15be3d14c90c74e3c7",
+      "source_path": "skills/tailor-resume/SKILL.md",
+      "package_sha256": "0a4336dfd426b470b3d95f29f47db3529b939c54963990725e30a1608a8e2157",
+      "source_package": "CV Builder-0.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af64565eb8962a8883777dc0ebe274afc1804d0e79f9065cb32e40a9d4db484d": {
+      "description_zh": "在M5设备完成初始化后迭代Cardputer-Adv MicroPython应用包，新增应用、单独推送修改的.py、查看串口日志或执行一次REPL命令，无需重新刷机。",
+      "source": "Iterate on the Cardputer-Adv MicroPython app bundle (Claude Buddy, Snake, Hello) after the device is already provisioned via m5-onboard. Use when the user wants to add a new app, push a single changed .py without re-flashing, watch device serial logs, or run a one-shot REPL command. Trigger on \"add an app\", \"push to the cardputer\", \"tail the device\", \"run on the device\", or follow-up work after /maker-setup.",
+      "source_sha256": "af64565eb8962a8883777dc0ebe274afc1804d0e79f9065cb32e40a9d4db484d",
+      "source_path": "skills/cardputer-buddy/SKILL.md",
+      "package_sha256": "f7d41f9d3cf28a922423e6893ae2effb5a27326727c74489f745ed4a461513ec",
+      "source_package": "cwc-makers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "576e76c4cebdbd00cc0b136464a3ea293f576a846e14d219578c7fc5229b842e": {
+      "description_zh": "为新接入USB的M5Stack ESP32设备完成识别、UIFlow 2.0刷机与Claude Buddy MicroPython应用包安装，支持Cardputer、Core、CoreS3与Stick等初始化或重置。",
+      "source": "End-to-end onboarding for a freshly-plugged-in M5Stack ESP32 device (Cardputer, Cardputer-Adv, Core, CoreS3, Stick) — detect on USB, flash UIFlow 2.0 firmware, and install the Claude Buddy MicroPython app bundle. Use whenever the user plugs in or wants to flash/provision/reset an M5Stack or ESP32 board, or says \"m5-onboard go\".",
+      "source_sha256": "576e76c4cebdbd00cc0b136464a3ea293f576a846e14d219578c7fc5229b842e",
+      "source_path": "skills/m5-onboard/SKILL.md",
+      "package_sha256": "f7d41f9d3cf28a922423e6893ae2effb5a27326727c74489f745ed4a461513ec",
+      "source_package": "cwc-makers-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1a79e3c1692584acb280fae9825fca637d991a31dc491539b18696169a9dc88": {
+      "description_zh": "在明确提及devguard时解释其钩子、模式、配置与限制，指导使用或停用，并将具体路径检查转交status命令。",
+      "source": "This skill should be used when the request names devguard and asks what it does or how to use it - \"/cyberine-devguard:help\", \"devguard lam gi\", \"what does devguard do\", \"how do I configure devguard\", \"devguard modes\", \"turn devguard off\". Explains the hook, the modes, the configuration surfaces and the limits, and routes to /cyberine-devguard:status for a concrete path. Never fires without a devguard anchor.",
+      "source_sha256": "d1a79e3c1692584acb280fae9825fca637d991a31dc491539b18696169a9dc88",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "dd2595d52923112e3b87e6afaa9d648af5ea3d1166bbd027f143f21f4a83ad8c",
+      "source_package": "Cyberine DevGuard-0.1.12-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6469fa7a8ae9cf1b347c079c45aaf5025408062cedabc0a3394c680c7eb1d4e": {
+      "description_zh": "查看devguard当前会话允许的写入范围及拦截原因，输出会话仓库、允许目录、实际配置，并对指定路径给出判断。",
+      "source": "This skill should be used when the user asks what devguard allows in this session or why a write was stopped - \"/cyberine-devguard:status\", \"devguard status\", \"why did devguard ask\", \"is this path allowed\", \"tai sao devguard hoi\", \"path nay co duoc ghi khong\", \"which repos can this session write to\". Prints the session repository, the allowed directories, the effective configuration, and the verdict for a path when one is given.",
+      "source_sha256": "f6469fa7a8ae9cf1b347c079c45aaf5025408062cedabc0a3394c680c7eb1d4e",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "dd2595d52923112e3b87e6afaa9d648af5ea3d1166bbd027f143f21f4a83ad8c",
+      "source_package": "Cyberine DevGuard-0.1.12-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0baec1252b67ddad20998236204944f23dee7aa9153e7a2beb90cc7da7ff96d": {
+      "description_zh": "检查软件包、压缩包或构建产物是否泄露源码或密钥，打包真实归档或读取指定文件目录，运行shipsafe门禁并解释发现与修复方法，不发布或部署。",
+      "source": "Use when the user wants to know whether a package, archive or build output would leak source or secrets, without publishing or deploying it. Packs the real tarball (or takes a given file or build directory), runs the shipsafe gate, and explains each finding with its fix.",
+      "source_sha256": "a0baec1252b67ddad20998236204944f23dee7aa9153e7a2beb90cc7da7ff96d",
+      "source_path": "skills/check/SKILL.md",
+      "package_sha256": "dad4facd8ae2ff6e409b702474443a0ea2322617edc1140b54b6c30dae1c651b",
+      "source_package": "Cyberine ReleaseGuard-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9dff52d2f4b87458e2b740a3b36f09ba748bab3cf3f2dd16cab72e05fae4b14": {
+      "description_zh": "解释Cyberine ReleaseGuard或shipsafe能力，并按任务转交release、init、check、verify或incident命令，仅在明确提及该插件时触发。",
+      "source": "Use when the request names Cyberine ReleaseGuard, releaseguard or shipsafe but not which `/cyberine-releaseguard:*` command answers it, such as what the plugin can do or which command fits a task. Routes to the one skill that answers it (release, init, check, verify, incident). Does not fire without a shipsafe or releaseguard anchor; a bare publish request goes to /cyberine-releaseguard:release directly.",
+      "source_sha256": "e9dff52d2f4b87458e2b740a3b36f09ba748bab3cf3f2dd16cab72e05fae4b14",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "dad4facd8ae2ff6e409b702474443a0ea2322617edc1140b54b6c30dae1c651b",
+      "source_package": "Cyberine ReleaseGuard-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "045354fc8a50c52e9006663cc2d51dc63a2e7ecc17b17b2a7532ce6f4f567723": {
+      "description_zh": "用shipsafe审计已发布npm版本可能的源码或密钥泄露，区分凭据与源码暴露，指导先轮换密钥并按npm规则取消发布或弃用，不保证能移除。",
+      "source": "Use when a published npm package may have leaked source or a secret, including requests to audit published versions or to unpublish or deprecate a leaked version. Scans published versions with shipsafe audit, separates credential exposure (rotate first) from source exposure, and walks the user through npm's unpublish and deprecate rules without promising removal.",
+      "source_sha256": "045354fc8a50c52e9006663cc2d51dc63a2e7ecc17b17b2a7532ce6f4f567723",
+      "source_path": "skills/incident/SKILL.md",
+      "package_sha256": "dad4facd8ae2ff6e409b702474443a0ea2322617edc1140b54b6c30dae1c651b",
+      "source_package": "Cyberine ReleaseGuard-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f675952b7acba7691922590e4a6f643cc5807f824f459bda1473fe38168acc74": {
+      "description_zh": "为npm发布仓库配置防止误发源码的发布门禁，审查package.json和构建配置、提出修复，并对真实tarball进行首轮检查。",
+      "source": "Use when a repo that publishes to npm should be set up so its releases cannot ship source by accident. Audits package.json and the build config, proposes the fixes, and runs a first gate on a real tarball.",
+      "source_sha256": "f675952b7acba7691922590e4a6f643cc5807f824f459bda1473fe38168acc74",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "dad4facd8ae2ff6e409b702474443a0ea2322617edc1140b54b6c30dae1c651b",
+      "source_package": "Cyberine ReleaseGuard-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b55e5bd55c85313bae79a4e13708b333891241fe67cad99ff9077065e9a268b": {
+      "description_zh": "在npm发布前构建并打包真实tarball，通过shipsafe检查后交给用户准确发布命令和OTP步骤；技能自身不发布。",
+      "source": "Use when the user is about to publish or release an npm package, or asks how to ship a package without its source. Builds, packs the real tarball, gates it with shipsafe, and hands the human the exact publish command for their OTP; never publishes.",
+      "source_sha256": "8b55e5bd55c85313bae79a4e13708b333891241fe67cad99ff9077065e9a268b",
+      "source_path": "skills/release/SKILL.md",
+      "package_sha256": "dad4facd8ae2ff6e409b702474443a0ea2322617edc1140b54b6c30dae1c651b",
+      "source_package": "Cyberine ReleaseGuard-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abc02b12f9118f09cc84fc779d3247607a69c65e9bb3bbeec49ddef33804a2b3": {
+      "description_zh": "npm发布后比较注册表dist.integrity与本地.tgz，确认注册表内容一致，并运行禁用脚本的安装冒烟检查。",
+      "source": "Use after an npm publish to prove the registry holds exactly the tarball that was checked. Compares the registry's dist.integrity for name@version with the local .tgz and runs a no-scripts install smoke test.",
+      "source_sha256": "abc02b12f9118f09cc84fc779d3247607a69c65e9bb3bbeec49ddef33804a2b3",
+      "source_path": "skills/verify/SKILL.md",
+      "package_sha256": "dad4facd8ae2ff6e409b702474443a0ea2322617edc1140b54b6c30dae1c651b",
+      "source_package": "Cyberine ReleaseGuard-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e147b8d9759aaff94769fa8aeed59b78e2fd06dde7b90d164528f035068796f": {
+      "description_zh": "创建、更新和修复Cypress端到端或组件测试，处理新增规格、失败和不稳定测试；仅解释或审查时使用cypress-explain。",
+      "source": "Creates, updates, and fixes Cypress tests (E2E/end-to-end and component tests). Use when the user asks to create tests, add tests, write tests, update tests, test this file/component, new spec, or fix a failing or flaky test. Apply even when the user does not say 'Cypress' (e.g. 'create tests for this file'). Prefer cypress-explain when the user only wants to explain or review tests without changing code.",
+      "source_sha256": "2e147b8d9759aaff94769fa8aeed59b78e2fd06dde7b90d164528f035068796f",
+      "source_path": "skills/cypress-author/SKILL.md",
+      "package_sha256": "6d7ed35e54b47a1ee36aaac96427e2255984c6bf495329a2d6792c418a9bb37b",
+      "source_package": "Cypress-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32cc2a43ef351eee80b4f353a660f555d3b72fe4c86007ca29841bb69cf0dcd5": {
+      "description_zh": "使用cy-cloud CLI查看Cypress Cloud组织、项目、运行、测试、失败截图及Test Replay，分析已记录测试失败与不稳定运行。",
+      "source": "Runs the cy-cloud CLI to inspect Cypress Cloud organizations, projects, runs, specs, tests, failure screenshots, and Test Replay data. Use when the user mentions Cypress Cloud, cy-cloud, cypress-cloud-cli, a Cloud run or test URL, failing or flaky Cypress tests, Test Replay, run triage, Cloud artifacts, or asks why a recorded test failed.",
+      "source_sha256": "32cc2a43ef351eee80b4f353a660f555d3b72fe4c86007ca29841bb69cf0dcd5",
+      "source_path": "skills/cypress-cloud-cli/SKILL.md",
+      "package_sha256": "6d7ed35e54b47a1ee36aaac96427e2255984c6bf495329a2d6792c418a9bb37b",
+      "source_package": "Cypress-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2921dba64e0f3a5506a4bc3ce155821d74b813e6a89e9d8fd9b99d4d271ce98b": {
+      "description_zh": "从Cypress官方文档搜索和提取信息，优先使用LLM Markdown，不给出未经核验的API或行为结论。",
+      "source": "Search and extract Cypress information from official documentation (docs.cypress.io, cypress.io); prefer LLM markdown under /llm/* and refuse unverified API or behavior claims.",
+      "source_sha256": "2921dba64e0f3a5506a4bc3ce155821d74b813e6a89e9d8fd9b99d4d271ce98b",
+      "source_path": "skills/cypress-docs/SKILL.md",
+      "package_sha256": "6d7ed35e54b47a1ee36aaac96427e2255984c6bf495329a2d6792c418a9bb37b",
+      "source_package": "Cypress-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f796c90d450bb715541fb912ed727d237f6bd62493685f977df320cd2c42ab7": {
+      "description_zh": "解释Cypress端到端和组件测试的工作方式，回答使用与行为问题，支持不修改代码的测试审查；编写或修复交给cypress-author。",
+      "source": "Explains Cypress tests (E2E and component tests), and answers questions about Cypress use and behavior. Use when the user asks to explain how a test works, explain how Cypress works, review or critique a test without writing code. Apply even when the user does not say 'Cypress' (e.g. 'explain this test'). Prefer the cypress-author skill when the user wants to create, fix, or update tests.",
+      "source_sha256": "3f796c90d450bb715541fb912ed727d237f6bd62493685f977df320cd2c42ab7",
+      "source_path": "skills/cypress-explain/SKILL.md",
+      "package_sha256": "6d7ed35e54b47a1ee36aaac96427e2255984c6bf495329a2d6792c418a9bb37b",
+      "source_package": "Cypress-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a404ed454fe50a0514173de26d4d527802d239568129bf1a7ca792a83852d09": {
+      "description_zh": "通过cypress tap操作已运行的Cypress开放模式会话，运行或重跑规格、等待新结果、读取日志、查DOM和回退快照，帮助定位选择器与调试；需15.21以上版本及Chromium，不用于一次性无界面运行。",
+      "source": "Drives a running Cypress open-mode session through `cypress tap` to run and rerun specs, wait for fresh results, inspect reporter and command logs, and query or rewind the app under test through DOM, accessibility, styles, and snapshots. Use when authoring or debugging Cypress e2e or component specs, discovering selectors, diagnosing failures, or verifying test behavior without GUI interaction. Not for one-shot headless runs. Requires Cypress 15.21+, a Chromium-family browser, and a running `cypress open` session.",
+      "source_sha256": "0a404ed454fe50a0514173de26d4d527802d239568129bf1a7ca792a83852d09",
+      "source_path": "skills/cypress-tap/SKILL.md",
+      "package_sha256": "6d7ed35e54b47a1ee36aaac96427e2255984c6bf495329a2d6792c418a9bb37b",
+      "source_package": "Cypress-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb0f5ed6e6e86e56d8f6665ff9f76f2fea45e5a54920d07ddc47d4a392d90b5c": {
+      "description_zh": "使用免费d0ma1n.app API查找域名的同形异字与相似字符仿冒域，判断注册、上线、停放和邮件接收状态，解析可疑域模仿对象，用于品牌冒用与钓鱼报告。",
+      "source": "Finds lookalike domains of a real domain (IDN homograph and homoglyph domains made with confusable characters) and says which are registered, live, parked or able to receive email, using the free d0ma1n.app API. Use when someone asks whether their brand or domain is being impersonated, wants a list of homoglyph, homograph or punycode lookalike domains, is checking a suspicious link or email sender domain (such as paypal.com spelt with a Cyrillic а), or is writing a phishing, typosquatting or brand-protection report. Also reads a suspicious domain back to the real domain it imitates.",
+      "source_sha256": "bb0f5ed6e6e86e56d8f6665ff9f76f2fea45e5a54920d07ddc47d4a392d90b5c",
+      "source_path": "skills/lookalike-domains/SKILL.md",
+      "package_sha256": "c58424ffb341f3c3cabfd7a32f14882738ff5f1584d89ae6e90c6cc92862984c",
+      "source_package": "d0ma1n-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b66c32a72fb551811459ebb0dda13cca31aeccf592338860d34124f842ec8da7": {
+      "description_zh": "查询Daily Journal公开新闻API获取全球时事，以巴西葡萄牙语结构化JSON返回政治、经济、金融、科技、科学和体育等报道及来源媒体。",
+      "source": "Query Daily Journal's public news API for world news coverage in Portuguese. Use when the user asks about current events globally — politics, economy, business, finance, technology, science, world affairs, sports — or asks for \"the latest on X\" for any topic, person, or event. Returns structured JSON with cited source outlets. Content is Portuguese (pt-BR).",
+      "source_sha256": "b66c32a72fb551811459ebb0dda13cca31aeccf592338860d34124f842ec8da7",
+      "source_path": "skills/daily-journal-api/SKILL.md",
+      "package_sha256": "fd8e82ec32a3abb354e9e418cc4613c8c92649c09a780725fd7bc19fa5006683",
+      "source_package": "daily-journal-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "792bfa5dd84da44a57478138523282216a92518398d14807982dfffc707f77fc": {
+      "description_zh": "通过Dailybot向指定邮箱发送用户要求的通知、摘要或后续邮件。",
+      "source": "Send emails to any address via Dailybot. Use for notifications, summaries, or follow-ups the user asks you to send.",
+      "source_sha256": "792bfa5dd84da44a57478138523282216a92518398d14807982dfffc707f77fc",
+      "source_path": "skills/email/SKILL.md",
+      "package_sha256": "46952a6f038dbd26f3b71845084c9036242f875e5b347f0dca23e5fd69a4154d",
+      "source_package": "dailybot-2.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "085a45426adb4f0fbfb1b8952d251ebff7ca22156a422f4c584d0b021fed6921": {
+      "description_zh": "向Dailybot通告智能体状态并接收待处理消息，适用于会话开始、长会话定期检查或结束。",
+      "source": "Announce agent status to Dailybot and receive pending messages. Use at session start, periodically during long sessions, or at session end.",
+      "source_sha256": "085a45426adb4f0fbfb1b8952d251ebff7ca22156a422f4c584d0b021fed6921",
+      "source_path": "skills/health/SKILL.md",
+      "package_sha256": "46952a6f038dbd26f3b71845084c9036242f875e5b347f0dca23e5fd69a4154d",
+      "source_package": "dailybot-2.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d52c6ed2ff033927837f52cef5c630949410d3f7d711899574c268e3f5811e8e": {
+      "description_zh": "通过Dailybot检查团队待处理消息与指示，了解任务安排和团队输入。",
+      "source": "Check for pending messages and instructions from your team via Dailybot. Use when starting a session, checking what to work on, or reviewing team input.",
+      "source_sha256": "d52c6ed2ff033927837f52cef5c630949410d3f7d711899574c268e3f5811e8e",
+      "source_path": "skills/messages/SKILL.md",
+      "package_sha256": "46952a6f038dbd26f3b71845084c9036242f875e5b347f0dca23e5fd69a4154d",
+      "source_package": "dailybot-2.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60a3338e243482a071ce51246fd3b29666eb964757aa33b6ef500e7cbc9e3994": {
+      "description_zh": "向Dailybot报告任务或子任务进展及变化原因，原说明要求完成独立任务或修改三个以上文件后报告。",
+      "source": "Report work progress to Dailybot. Use after completing a discrete task or subtask, or after any batch of edits that modifies 3 or more files. Do not wait for permission. Include what changed and why.",
+      "source_sha256": "60a3338e243482a071ce51246fd3b29666eb964757aa33b6ef500e7cbc9e3994",
+      "source_path": "skills/report/SKILL.md",
+      "package_sha256": "46952a6f038dbd26f3b71845084c9036242f875e5b347f0dca23e5fd69a4154d",
+      "source_package": "dailybot-2.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34b0bc8f45898a0a4d7ec28266520346e47c4663b95f38905df8d0f1bee63d6c": {
+      "description_zh": "设置Dailybot插件，安装CLI、完成认证并配置智能体档案，适用于首次安装或重做设置。",
+      "source": "Set up the Dailybot plugin — install the CLI, authenticate, and configure the agent profile. Use on first install or when setup needs to be redone.",
+      "source_sha256": "34b0bc8f45898a0a4d7ec28266520346e47c4663b95f38905df8d0f1bee63d6c",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "46952a6f038dbd26f3b71845084c9036242f875e5b347f0dca23e5fd69a4154d",
+      "source_package": "dailybot-2.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "621e9f0c1ddc8d2838846da39b52697c9d85a0190903d094a0aae206cf11ad66": {
+      "description_zh": "生成数据预处理笔记本，处理缺失值、重复、异常值和类型转换。",
+      "source": "데이터 전처리 파이프라인. 결측값, 중복, 이상치, 타입 변환을 처리하는 노트북을 생성한다. 트리거: \"dalykit:clean\", \"전처리\", \"결측값 처리\".",
+      "source_sha256": "621e9f0c1ddc8d2838846da39b52697c9d85a0190903d094a0aae206cf11ad66",
+      "source_path": "skills/clean/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f39b1667a24f648c4406c25d5e7eda457b47df4bcd968fcb17086a7ef3627395": {
+      "description_zh": "检查DalyKit分析环境并安装所需依赖。",
+      "source": "DalyKit 분석 환경 점검 및 의존성 설치. 트리거: \"dalykit:doctor\", \"dalykit:doctor install\", \"환경 점검\", \"의존성 설치\".",
+      "source_sha256": "f39b1667a24f648c4406c25d5e7eda457b47df4bcd968fcb17086a7ef3627395",
+      "source_path": "skills/doctor/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1a849e9af6bf39f9ea97e0df935aa9f75e7fcc490a30169e99ab2dcefd5d628": {
+      "description_zh": "将用户自由编写的领域资料整理为结构化domain.md，供Claude后续技能引用。",
+      "source": "domain.md 구조화. 사용자가 자유롭게 작성한 도메인 정보를 Claude가 후속 스킬에서 참조하기 좋은 구조로 정리한다. 트리거: \"dalykit:domain\", \"도메인 파일 작성\", \"도메인 정보 정리\".",
+      "source_sha256": "d1a849e9af6bf39f9ea97e0df935aa9f75e7fcc490a30169e99ab2dcefd5d628",
+      "source_path": "skills/domain/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e61096dd0e38501c0de0af3cb98e18beac84544b7f063c344b33ed6f70088664": {
+      "description_zh": "读取原始数据，自动生成探索性数据分析笔记本和结果文件。",
+      "source": "탐색적 데이터 분석 자동화. raw 데이터를 읽고 EDA 노트북과 결과 파일을 생성한다. 트리거: \"dalykit:eda\", \"EDA 해줘\", \"데이터 탐색\".",
+      "source_sha256": "e61096dd0e38501c0de0af3cb98e18beac84544b7f063c344b33ed6f70088664",
+      "source_path": "skills/eda/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82abd8be4965fd21eeec8cc6d841e70c2e34851fe48f4a218a616a52d2f00d42": {
+      "description_zh": "基于预处理数据生成特征工程笔记本，执行编码、缩放、衍生变量与特征选择。",
+      "source": "피처 엔지니어링. 전처리된 데이터에서 인코딩, 스케일링, 파생 변수 생성, 피처 선택을 수행하는 노트북을 생성한다. 트리거: \"dalykit:feature\", \"피처 엔지니어링\".",
+      "source_sha256": "82abd8be4965fd21eeec8cc6d841e70c2e34851fe48f4a218a616a52d2f00d42",
+      "source_path": "skills/feature/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1869975d2d1123ac8184bd7e261b89626af034e6cd4548faf709e5e21319281c": {
+      "description_zh": "介绍DalyKit技能列表和使用方法。",
+      "source": "DalyKit 스킬 목록 및 사용법 안내. 트리거: \"dalykit:help\", \"스킬 목록\", \"도움말\".",
+      "source_sha256": "1869975d2d1123ac8184bd7e261b89626af034e6cd4548faf709e5e21319281c",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47a338859639d74c8ee168d08eb44d63066b48c3982a9f473d5e859138d575f7": {
+      "description_zh": "初始化DalyKit项目，创建dalykit目录与按kit组织的子目录，并复制配套模板。",
+      "source": "DalyKit 프로젝트 구조 초기화. dalykit/ 폴더와 kit 기반 하위 디렉토리를 생성하고 번들된 템플릿을 프로젝트에 복사한다. 트리거: \"dalykit:init\", \"프로젝트 초기화\".",
+      "source_sha256": "47a338859639d74c8ee168d08eb44d63066b48c3982a9f473d5e859138d575f7",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90b17e6ced0a86a90bd8246ec066a4b62a98a60d7c242151357255e2666323c5": {
+      "description_zh": "管理DalyKit kit，查看当前活动kit、创建、列出或切换kit。",
+      "source": "DalyKit kit 관리. 현재 활성 kit 확인, 새 kit 생성, 목록 조회, 전환을 수행한다. 트리거: \"dalykit:kit\", \"dalykit:kit new\", \"dalykit:kit list\", \"dalykit:kit switch\".",
+      "source_sha256": "90b17e6ced0a86a90bd8246ec066a4b62a98a60d7c242151357255e2666323c5",
+      "source_path": "skills/kit/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "019e96c46bf05b61cb1f878b914b44f022045188058bd0fcccf0bb6759431b53": {
+      "description_zh": "训练和评估机器学习模型，自动选择或使用指定模型执行训练评估循环并保存结果。",
+      "source": "머신러닝 모델 학습 및 평가. 자동 모델 선택 또는 지정 모델로 학습/평가 루프를 실행하고 결과를 저장한다. 트리거: \"dalykit:ml\", \"dalykit:ml report\", \"모델 학습\".",
+      "source_sha256": "019e96c46bf05b61cb1f878b914b44f022045188058bd0fcccf0bb6759431b53",
+      "source_path": "skills/ml/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "baef5899832e0ad2478e24bb147f3d343b5fed7fc178e2f8ef7a45b0c9239991": {
+      "description_zh": "读取当前活动kit与阶段产物，推荐下一条应运行的命令。",
+      "source": "현재 활성 kit과 stage 산출물을 읽어 다음에 실행할 명령을 추천한다. 트리거: \"dalykit:next\", \"다음 단계\", \"다음에 뭐해?\".",
+      "source_sha256": "baef5899832e0ad2478e24bb147f3d343b5fed7fc178e2f8ef7a45b0c9239991",
+      "source_path": "skills/next/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fd448349b2b0f0a11b44ef9a6ba1f422edf53b915a1dc7882924484bf8f8dcb": {
+      "description_zh": "创建或更新DalyKit进展文档progress.md。",
+      "source": "DalyKit 진행 현황 문서를 생성하거나 갱신한다. 트리거: \"dalykit:progress\", \"진행 현황\", \"progress.md\".",
+      "source_sha256": "8fd448349b2b0f0a11b44ef9a6ba1f422edf53b915a1dc7882924484bf8f8dcb",
+      "source_path": "skills/progress/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d63f72c318fb0ff4d62178310b970d54b1a3338f825b0a49fe253d90b8696666": {
+      "description_zh": "进行统计分析与假设检验，选择合适检验并生成、执行Python脚本。",
+      "source": "통계 분석 및 가설 검정. 적합한 검정을 선택해 .py 스크립트를 생성하고 실행한다. 트리거: \"dalykit:stat\", \"통계 분석\", \"가설 검정\".",
+      "source_sha256": "d63f72c318fb0ff4d62178310b970d54b1a3338f825b0a49fe253d90b8696666",
+      "source_path": "skills/stat/SKILL.md",
+      "package_sha256": "61166e377989d5ee279ab6d9de7d01ba95406fd6165270b5277af11d54e0dd2c",
+      "source_package": "DalyKit-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae9ba089a9e7959270982f0133fa151d71d77bc1de614bc810b4975f4f123942": {
+      "description_zh": "在学习模式或用户希望理解变更时，于编写或修改文件后自动解释代码模式与决策，提供概念拆解、模式分析及可选测验。",
+      "source": "Automatically explains code patterns and decisions after writing or editing files. Activates when the user is in learning mode or asks to understand code changes. Generates concept breakdowns, pattern analysis, and optional quiz questions.",
+      "source_sha256": "ae9ba089a9e7959270982f0133fa151d71d77bc1de614bc810b4975f4f123942",
+      "source_path": "skills/teach/SKILL.md",
+      "package_sha256": "b649175edadc348b3f22b4acd386e3152cfc5f56122b39451888a24b72f6eb0f",
+      "source_package": "darce-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa6a5b1d25168738f13fd0e2bc2045beb3f5e600fb83dc5c6df9c859baee70aa": {
+      "description_zh": "依据规范API设计指南审查指定代码，检查是否符合API设计原则。",
+      "source": "Reviews the specified code against the canonical API Design guidelines. Use this skill when the user asks for an API review or to check code against API design principles.",
+      "source_sha256": "aa6a5b1d25168738f13fd0e2bc2045beb3f5e600fb83dc5c6df9c859baee70aa",
+      "source_path": ".agents/agents/reidbaker-agent/skills/api-review/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56a5bd79cc0998977b5d3f0b28d509f2eccef61a120b248e98af8ffd3814c541": {
+      "description_zh": "指导Dart、Python和TypeScript代码文档编写，涵盖docstring、JSDoc、dartdoc和实现注释，提高清晰度与可维护性。",
+      "source": "Guide for writing effective code documentation, including docstrings, JSDoc, dartdoc, and implementation comments. Use this skill when writing new code, adding features, or improving existing documentation in Dart, Python, or TypeScript to ensure clarity and maintainability.",
+      "source_sha256": "56a5bd79cc0998977b5d3f0b28d509f2eccef61a120b248e98af8ffd3814c541",
+      "source_path": ".agents/agents/reidbaker-agent/skills/code-documentation/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb410c522aa94297dc7bdab5728432ff2e353a2b0fc6fb0976e06e8d1950304c": {
+      "description_zh": "对拉取请求或本地变化进行多步骤完整代码审查，通过生成、批判和综合的迭代给出可执行反馈。",
+      "source": "Performs a comprehensive, multi-step code review of pull requests or local code changes, using iterative refinement (generation, critique, synthesis) to ensure high-quality, actionable feedback. Use when you need to review code changes thoroughly.",
+      "source_sha256": "bb410c522aa94297dc7bdab5728432ff2e353a2b0fc6fb0976e06e8d1950304c",
+      "source_path": ".agents/agents/reidbaker-agent/skills/code-review/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a04f2a162d4f9317ec13d7daade97e0af3de3ff7fce0119849b66b24a585af2d": {
+      "description_zh": "为分析文档、PR说明和技术文档等长文本提供自然、准确与易读的写作规则。",
+      "source": "Contains well-defined rules for creating natural, accurate, and readable writing. Use whenever authoring longer text, like analysis documents, PR or CL descriptions, or documentation.",
+      "source_sha256": "a04f2a162d4f9317ec13d7daade97e0af3de3ff7fce0119849b66b24a585af2d",
+      "source_path": ".agents/agents/reidbaker-agent/skills/natural-writing/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "195136c159df1bd4ae9da8dd39823f50ef367c47cdd61a7824bbc470a740a4d5": {
+      "description_zh": "提供macOS和BSD Unix安全、可移植且高效的命令行模式，覆盖搜索、文本处理、代码导航、脚本与并行执行，并介绍ripgrep和fd等替代工具。",
+      "source": "Safe, portable, and efficient command-line patterns for macOS/BSD Unix tools (grep, find, sed, awk, xargs, mdfind, pbcopy, open) and modern alternatives (ripgrep, fd). Covers common shell scripting and one-liner use cases including fast searching, text processing, codebase navigation, and parallel execution.",
+      "source_sha256": "195136c159df1bd4ae9da8dd39823f50ef367c47cdd61a7824bbc470a740a4d5",
+      "source_path": ".agents/agents/reidbaker-agent/skills/unix-cli-best-practices/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47fafa0b4e24c60ae86ad874f2b0625fabb42f24f36fe2382de4a7e0b91a9a54": {
+      "description_zh": "使用package:test为Dart函数、方法和类编写与组织单元测试，验证新逻辑与缺陷修复。",
+      "source": "Write and organize unit tests for functions, methods, and classes using `package:test`. Use when creating new logic or fixing bugs to ensure code remains correct and regression-free.",
+      "source_sha256": "47fafa0b4e24c60ae86ad874f2b0625fabb42f24f36fe2382de4a7e0b91a9a54",
+      "source_path": "skills/dart-add-unit-test/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e484defa87e25b2f69c3b4ca378af33b9388eea3b0117125053ebef1a13fb8cb": {
+      "description_zh": "设计Dart命令行应用的架构、入口、退出码、流路由和子进程，使用package:args解析参数，配置可执行项与编译原生CLI；不用于Flutter UI、网页或独立HTTP服务。",
+      "source": "Architectural patterns, entrypoint structure, exit codes, stream routing, and subprocess spawning for Dart command-line interface (CLI) applications. Use when building CLI tools, console utilities, scripts, argument parsing with `package:args` (ArgParser or CommandRunner), handling exit codes, configuring executables in pubspec.yaml, spawning Dart subprocesses, or compiling native CLI binaries. Don't use for Flutter UI widgets, web applications, or standalone HTTP backend servers.",
+      "source_sha256": "e484defa87e25b2f69c3b4ca378af33b9388eea3b0117125053ebef1a13fb8cb",
+      "source_path": "skills/dart-build-cli-app/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "709cbdd1faf4cf04bd7e813a4dec33e88f2196c4766c3ab805edd166e7615dcb": {
+      "description_zh": "通过Dart coverage包收集测试覆盖率并生成LCOV报告。",
+      "source": "Collect coverage using the coverage packge and create an LCOV report",
+      "source_sha256": "709cbdd1faf4cf04bd7e813a4dec33e88f2196c4766c3ab805edd166e7615dcb",
+      "source_path": "skills/dart-collect-coverage/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0602b9bc69dd632531e20385817c35aa5e526b35d6a556bb52b86968a32632fd": {
+      "description_zh": "通过get_runtime_errors和语言服务获取活动堆栈，定位Dart出错行、修复并用热重载验证。",
+      "source": "Uses get_runtime_errors and lsp to fetch an active stack trace, locate the failing line, apply a fix, and verify resolution via hot_reload.",
+      "source_sha256": "0602b9bc69dd632531e20385817c35aa5e526b35d6a556bb52b86968a32632fd",
+      "source_path": "skills/dart-fix-runtime-errors/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "007dc25968d9302cc94f174e07be5c1eae8a6eefd1ef4db18e47902ddbd5f3ba": {
+      "description_zh": "使用package:mockito和build_runner为Dart外部依赖定义、生成模拟对象，支持依赖API或数据库的类单元测试。",
+      "source": "Define and generate mock objects for external dependencies using `package:mockito` and `build_runner`. Use when unit testing classes that depend on complex external services like APIs or databases.",
+      "source_sha256": "007dc25968d9302cc94f174e07be5c1eae8a6eefd1ef4db18e47902ddbd5f3ba",
+      "source_path": "skills/dart-generate-test-mocks/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f1301e455a9d1ff2d1997866461cbaf3333d49fdfa5c4fc26ddfa605f5c2090": {
+      "description_zh": "将Dart package:matcher的expect等断言迁移为package:checks对应写法。",
+      "source": "Replace the usage of `expect` and similar functions from `package:matcher`\nto `package:checks` equivalents.",
+      "source_sha256": "5f1301e455a9d1ff2d1997866461cbaf3333d49fdfa5c4fc26ddfa605f5c2090",
+      "source_path": "skills/dart-migrate-to-checks-package/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f046b1d475657632e2d13b1c00c138dfdac8306c71f842829613e2abd4f90a9d": {
+      "description_zh": "排查Dart依赖版本冲突，解决pub get因不兼容版本失败的问题。",
+      "source": "Workflow for fixing package version conflicts. Use this when `pub get` fails due to incompatible package versions.",
+      "source_sha256": "f046b1d475657632e2d13b1c00c138dfdac8306c71f842829613e2abd4f90a9d",
+      "source_path": "skills/dart-resolve-package-conflicts/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c4daad9b6282d236a07c2343c2d84ca428e6ab0de6c25ea8cbf457bfebfa5f4": {
+      "description_zh": "运行dart analyze识别警告与错误，并通过dart fix --apply处理机械性lint问题，用于开发与提交前代码检查。",
+      "source": "Execute `dart analyze` to identify warnings and errors, and use `dart fix --apply` to automatically resolve mechanical lint issues. Use during development to ensure code quality and before committing changes.",
+      "source_sha256": "4c4daad9b6282d236a07c2343c2d84ca428e6ab0de6c25ea8cbf457bfebfa5f4",
+      "source_path": "skills/dart-run-static-analysis/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fc193373535d9652a82ffe620c5e9a1d6cb00e14aaf27d8f96c27d15229d24c": {
+      "description_zh": "使用Dart Native Assets构建与链接钩子编译和打包C或C++静态、动态库，配置hooks与native_toolchain_c，支持哈希校验二进制下载及链接器裁剪。",
+      "source": "Guides agents in compiling and packaging C/C++ source code into dynamic or static libraries (Code Assets) using Dart's Native Assets hook system (via hook/build.dart and hook/link.dart utilizing package:hooks and package:native_toolchain_c). Use when a user asks to: 'setup native assets', 'compile C/C++ source code', 'bundle dynamic libraries', 'build native C code', 'link native assets', 'implement build.dart or link.dart hooks', or 'integrate C/C++ interop in Dart/Flutter'. Helps agents avoid manual toolchain orchestration and configures secure hash-validated binary downloads or advanced linker tree-shaking with package:record_use mapping.",
+      "source_sha256": "9fc193373535d9652a82ffe620c5e9a1d6cb00e14aaf27d8f96c27d15229d24c",
+      "source_path": "skills/dart-setup-ffi-assets/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4983f2912755c636151358dcbf42e8299f74602ed33cc145ce9e75d6c3d4164e": {
+      "description_zh": "用Dartdoc的{@example}指令引用外部代码示例，并通过hide、region和endregion标记筛选展示内容。",
+      "source": "How to inject external code examples into Dartdoc using the {@example} directive, and how to filter those files using #hide, #region, and #endregion tags.",
+      "source_sha256": "4983f2912755c636151358dcbf42e8299f74602ed33cc145ce9e75d6c3d4164e",
+      "source_path": "skills/dart-use-doc-examples/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc4cc497998d321909481ce25038e35a70e38115b770bec0acc28c6cff2e1e2d": {
+      "description_zh": "使用package:ffigen自动生成FFI绑定，新增或扩展C、Objective-C及Swift集成，替换手工dart:ffi实现。",
+      "source": "Guide agents to use `package:ffigen` to automatically generate FFI bindings instead of writing them manually. Use this skill when a task involves writing new FFI bindings, extending C/Objective-C/Swift integrations, or replacing hand-crafted `dart:ffi` setups.",
+      "source_sha256": "fc4cc497998d321909481ce25038e35a70e38115b770bec0acc28c6cff2e1e2d",
+      "source_path": "skills/dart-use-ffigen/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "526edbd5749803d75cd9d3e718cf1223a4cb3773cef6d2a6acbdbd728e47bdff": {
+      "description_zh": "通过package:path和package:file跨平台处理文件目录路径、分段、扩展名和上下文转换，替换原始字符串路径操作；不用于网络URI、SQL或普通字符串。",
+      "source": "Cross-platform file and directory path manipulation, segment splitting, extension extraction, and context conversion using `package:path` and `package:file`. Use when writing, inspecting, joining, splitting, or refactoring file paths, directory names, or extensions, or replacing raw string path operations (`.split('/')`, `'$dir/$file'`, `.endsWith('.ext')`, `.replaceAll('\\\\', '/')`). Don't use for HTTP network URI routing, database query strings, or non-path string processing.",
+      "source_sha256": "526edbd5749803d75cd9d3e718cf1223a4cb3773cef6d2a6acbdbd728e47bdff",
+      "source_path": "skills/dart-use-path-package/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "386b91a1d396ff3f42e75b221a4c899e42aca72246fb68ed91e6abc8564dfe9f": {
+      "description_zh": "使用Dart 3模式匹配、switch表达式和解构验证数据模式、处理代数类型、拆分控制流及检查sealed类穷尽性，适用于复杂分支与多态JSON。",
+      "source": "Applies Dart 3 pattern matching, switch expressions, and destructuring idiomatically to validate data schemas, handle algebraic data types, and decompose control flow. Use when refactoring complex if-else chains, parsing polymorphic JSON or API responses, destructuring Records or Maps, or enforcing exhaustiveness on sealed classes. Don't use for simple boolean conditions, single-variable type promotion (use `is`), or basic collection filtering.",
+      "source_sha256": "386b91a1d396ff3f42e75b221a4c899e42aca72246fb68ed91e6abc8564dfe9f",
+      "source_path": "skills/dart-use-pattern-matching/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b9d0e62e090f97855abc468df4f7338425f7057f09e9ebff759ba869b9b72d4": {
+      "description_zh": "指导正确使用和迁移Dart主构造函数，包括空体分号、函数体内初始化列表与简洁构造语法。",
+      "source": "Help users write syntactically and semantically correct primary constructors in Dart, and migrate/use the new constructor syntax, empty-body semicolon syntax, in-body initializer list syntax, and abbreviated concise constructor syntax.",
+      "source_sha256": "9b9d0e62e090f97855abc468df4f7338425f7057f09e9ebff759ba869b9b72d4",
+      "source_path": "skills/dart-use-primary-constructors/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9cbd5a96ecc7f613b319957747b1c0ddb46890f8564451911d2cd94cebf8fce": {
+      "description_zh": "依据Effective Dart为库、类、方法和变量等声明编写/// API文档与注释，遵循格式和写作规则。",
+      "source": "Rules and formatting guidelines for writing Dart /// API documentation and doc comments. Use when documenting Dart code, writing doc comments for any Dart declaration (libraries, classes, methods, variables, etc.), or when instructed to follow the Effective Dart documentation guidelines.",
+      "source_sha256": "f9cbd5a96ecc7f613b319957747b1c0ddb46890f8564451911d2cd94cebf8fce",
+      "source_path": "skills/dart-write-documentation/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "817a4a3764389694e58378f1b6b48a576bb8fe66d79814f0ece9e83b69e051e0": {
+      "description_zh": "配置Flutter Driver进行应用交互，将MCP操作转成可保存的集成测试，支持integration_test与用户流程自动化。",
+      "source": "Configures Flutter Driver for app interaction and converts MCP actions into permanent integration tests. Use when adding integration testing to a project, exploring UI components via MCP, or automating user flows with the integration_test package.",
+      "source_sha256": "817a4a3764389694e58378f1b6b48a576bb8fe66d79814f0ece9e83b69e051e0",
+      "source_path": "skills/flutter-add-integration-test/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "191fb6b52772830656006117c1d1187a4b3c0c881cf84f880121d2fdec96385b": {
+      "description_zh": "通过previews.dart系统为Flutter组件添加交互预览，支持新组件和既有页面的一致性检查与交互测试。",
+      "source": "Adds interactive widget previews to the project using the previews.dart system. Use when creating new UI components or updating existing screens to ensure consistent design and interactive testing.",
+      "source_sha256": "191fb6b52772830656006117c1d1187a4b3c0c881cf84f880121d2fdec96385b",
+      "source_path": "skills/flutter-add-widget-preview/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9568664f496970c6320b9b0518ae18ce6593bd0beca30912cac8e4722dc342a6": {
+      "description_zh": "使用WidgetTester编写Flutter组件测试，验证数据渲染、点击、滚动、文本输入及事件响应。",
+      "source": "Implement a component-level test using `WidgetTester` to verify UI rendering and user interactions (tapping, scrolling, entering text). Use when validating that a specific widget displays correct data and responds to events as expected.",
+      "source_sha256": "9568664f496970c6320b9b0518ae18ce6593bd0beca30912cac8e4722dc342a6",
+      "source_path": "skills/flutter-add-widget-test/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbc2f67c0ccdc519ca1d6a4f8b3d6a6cd22ae192f94e1e8ff2034137036874aa": {
+      "description_zh": "按UI、逻辑与数据分层设计Flutter应用，用于新项目组织或可扩展性重构。",
+      "source": "Architects a Flutter application using the recommended layered approach (UI, Logic, Data). Use when structuring a new project or refactoring for scalability.",
+      "source_sha256": "cbc2f67c0ccdc519ca1d6a4f8b3d6a6cd22ae192f94e1e8ff2034137036874aa",
+      "source_path": "skills/flutter-apply-architecture-best-practices/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "924da0452e9810982b5b528f973521939c162e00232869959c4a29e2f3ae09b9": {
+      "description_zh": "使用LayoutBuilder、MediaQuery和Expanded或Flexible构建适应手机、平板与桌面尺寸的Flutter布局。",
+      "source": "Use `LayoutBuilder`, `MediaQuery`, or `Expanded/Flexible` to create a layout that adapts to different screen sizes. Use when you need the UI to look good on both mobile and tablet/desktop form factors.",
+      "source_sha256": "924da0452e9810982b5b528f973521939c162e00232869959c4a29e2f3ae09b9",
+      "source_path": "skills/flutter-build-responsive-layout/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d03bcbdefe550631adc213c6147e9cbc5dce3a0e1bc96fa231a4bbe4845f58c0": {
+      "description_zh": "通过Dart和Flutter MCP排查布局溢出与无界约束，修复RenderFlex和视口高度等布局错误。",
+      "source": "Fixes Flutter layout errors (overflows, unbounded constraints) using Dart and Flutter MCP tools. Use when addressing \"RenderFlex overflowed\", \"Vertical viewport was given unbounded height\", or similar layout issues.",
+      "source_sha256": "d03bcbdefe550631adc213c6147e9cbc5dce3a0e1bc96fa231a4bbe4845f58c0",
+      "source_path": "skills/flutter-fix-layout-issues/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7dd88679561806a29de5cd66720884a44160d6069cd592f65a62042f79ac8984": {
+      "description_zh": "使用dart:convert为简单Flutter数据结构创建带fromJson和toJson的模型类，手工映射JSON键与属性。",
+      "source": "Create model classes with `fromJson` and `toJson` methods using `dart:convert`. Use when manually mapping JSON keys to class properties for simple data structures.",
+      "source_sha256": "7dd88679561806a29de5cd66720884a44160d6069cd592f65a62042f79ac8984",
+      "source_path": "skills/flutter-implement-json-serialization/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "734cb63cc7be724652888896937dbb7823c3fb38c8c52f77e5e217a340c71658": {
+      "description_zh": "通过go_router等包配置MaterialApp.router，支持Flutter网页或移动应用的URL导航、深链接与浏览器历史。",
+      "source": "Configure `MaterialApp.router` using a package like `go_router` for advanced URL-based navigation. Use when developing web applications or mobile apps that require specific deep linking and browser history support.",
+      "source_sha256": "734cb63cc7be724652888896937dbb7823c3fb38c8c52f77e5e217a340c71658",
+      "source_path": "skills/flutter-setup-declarative-routing/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
