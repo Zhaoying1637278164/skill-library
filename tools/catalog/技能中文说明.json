@@ -85849,6 +85849,1086 @@
       "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
       "source_package": "Zoom-1.1.0-v39.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88b2b915ffce04fa197f7d8fe468e51ac75453a3d66262614b66086557d494c6": {
+      "description_zh": "使用Windows原生C++ Zoom Meeting SDK在桌面应用中嵌入会议，涵盖自定义界面、原始音视频、无界面机器人、会议功能深度集成、SDK架构及Windows消息循环。",
+      "source": "Zoom Meeting SDK for Windows - Native C++ SDK for embedding Zoom meetings into Windows desktop applications. Supports custom UI architecture with raw video/audio data, headless bots, and deep integration with meeting features. Includes SDK architecture patterns and Windows message loop handling.",
+      "source_sha256": "88b2b915ffce04fa197f7d8fe468e51ac75453a3d66262614b66086557d494c6",
+      "source_path": "skills/meeting-sdk/windows/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "797956fc1a1caf3a024d6c8ae3d200ddd66ae7f3b9af00e3207e55734538e01e": {
+      "description_zh": "在Zoom认证流程中选择应用凭据、授权类型、权限范围及令牌刷新方式，并排查OAuth失败。",
+      "source": "Reference skill for Zoom authentication. Use after routing to an auth workflow when choosing app credentials, grant types, scopes, token refresh behavior, or debugging Zoom OAuth failures.",
+      "source_sha256": "797956fc1a1caf3a024d6c8ae3d200ddd66ae7f3b9af00e3207e55734538e01e",
+      "source_path": "skills/oauth/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78ee76e93096d9b6740b8ecda135fd8f81dc133d5a27fc7f080f504431eed11b": {
+      "description_zh": "在电话流程中提供Zoom Phone参考，实施OAuth、Phone API、Webhook、Smart Embed事件、URI方案、CRM及CTI拨号器和呼叫自动处理。",
+      "source": "Reference skill for Zoom Phone. Use after routing to a phone workflow when implementing OAuth, Phone APIs, webhooks, Smart Embed events, URI schemes, CRM or CTI dialers, or call handling automation.",
+      "source_sha256": "78ee76e93096d9b6740b8ecda135fd8f81dc133d5a27fc7f080f504431eed11b",
+      "source_path": "skills/phone/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ced346512ae8776ca844dceb16a4fe9214046298a156fd45fb5d093a3931f39a": {
+      "description_zh": "把Zoom集成想法转为实施计划，明确架构、认证、交付里程碑、分阶段顺序、风险及下一步建议。",
+      "source": "Turn a Zoom integration idea into an implementation plan with architecture, auth, and delivery milestones. Use when you need a practical build plan, phased delivery sequence, risk list, and next-step recommendation.",
+      "source_sha256": "ced346512ae8776ca844dceb16a4fe9214046298a156fd45fb5d093a3931f39a",
+      "source_path": "skills/plan-zoom-integration/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "583dd5cf155cf5f6cf4e9ffc6cd51d354ce30767a4cc78b3b6e3fc803a6ded12": {
+      "description_zh": "为具体产品或集成目标选择Zoom构建方式，解释REST API、Webhook、WebSocket、Meeting SDK、Video SDK、Zoom Apps SDK、电话、联络中心及MCP的取舍。",
+      "source": "Choose the right Zoom building surface for a use case and explain the tradeoffs clearly. Use when deciding between REST API, Webhooks, WebSockets, Meeting SDK, Video SDK, Zoom Apps SDK, Phone, Contact Center, or MCP for a specific product idea or integration goal.",
+      "source_sha256": "583dd5cf155cf5f6cf4e9ffc6cd51d354ce30767a4cc78b3b6e3fc803a6ded12",
+      "source_path": "skills/plan-zoom-product/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11215f67677cc798eb5aa62da43750fb612efeec9bbcb4225ac063a4d2959f91": {
+      "description_zh": "使用Zoom Probe SDK在入会前检查浏览器兼容、媒体权限、音视频诊断及网络准备情况。",
+      "source": "Reference skill for Zoom Probe SDK. Use after routing to a preflight workflow when testing browser compatibility, media permissions, audio or video diagnostics, and network readiness before users join.",
+      "source_sha256": "11215f67677cc798eb5aa62da43750fb612efeec9bbcb4225ac063a4d2959f91",
+      "source_path": "skills/probe-sdk/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4dd414e6ae8d77431966e95df60cab8440bf5a05c3633f404b5ee3d036e74a82": {
+      "description_zh": "在已选定API流程中提供Zoom REST API参考，选择端点、组织资源管理、核对OAuth要求、速率限制并排查API错误。",
+      "source": "Reference skill for Zoom REST API. Use after choosing an API-based workflow when you need endpoint selection, resource-management patterns, OAuth requirements, rate-limit awareness, or API error debugging.",
+      "source_sha256": "4dd414e6ae8d77431966e95df60cab8440bf5a05c3633f404b5ee3d036e74a82",
+      "source_path": "skills/rest-api/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a8e04c505ec9536890a67039fd1a511cd3603fb07bd39f249ec1017ccce433a7": {
+      "description_zh": "在Rivet服务端流程中提供Zoom Rivet SDK参考，处理认证、Webhook消费、API包装、多模块组合及Lambda接收器模式。",
+      "source": "Reference skill for Zoom Rivet SDK. Use after routing to a Rivet-based server workflow when implementing auth handling, webhook consumers, API wrappers, multi-module composition, or Lambda receiver patterns.",
+      "source_sha256": "a8e04c505ec9536890a67039fd1a511cd3603fb07bd39f249ec1017ccce433a7",
+      "source_path": "skills/rivet-sdk/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a506ced2a387796109c2820d25f28f195302cc33e4e035429397a80f220ef7b": {
+      "description_zh": "在实时媒体流程中使用Zoom RTMS处理音频、视频、聊天、转录、屏幕分享或联络中心语音流。",
+      "source": "Reference skill for Zoom RTMS. Use after routing to a live-media workflow when processing real-time audio, video, chat, transcripts, screen share, or contact-center voice streams.",
+      "source_sha256": "8a506ced2a387796109c2820d25f28f195302cc33e4e035429397a80f220ef7b",
+      "source_path": "skills/rtms/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b81d5e83f92601d8d037f53c2a5bea77c0354ebe90bfe222f63c249b1a52b8f5": {
+      "description_zh": "在转录流程中使用Zoom AI Services Scribe处理上传或已存媒体、Build平台JWT认证、快速转录、批量任务及转录管道设计。",
+      "source": "Reference skill for Zoom AI Services Scribe. Use after routing to a transcription workflow when handling uploaded or stored media, Build-platform JWT auth, fast mode transcription, batch jobs, or transcript pipeline design.",
+      "source_sha256": "b81d5e83f92601d8d037f53c2a5bea77c0354ebe90bfe222f63c249b1a52b8f5",
+      "source_path": "skills/scribe/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21367f45c94037677a2d0d368d07dcbc7f3e1d608babc85c665b78dc5a4feddf": {
+      "description_zh": "判断Zoom MCP是否适合任务，为Claude生成安全配置计划，支持Zoom数据上的AI流程、MCP与REST选择及混合架构设计。",
+      "source": "Decide when Zoom MCP is the right fit and produce a safe setup plan for Claude. Use when planning AI workflows over Zoom data, deciding between MCP and REST, or defining a hybrid MCP architecture.",
+      "source_sha256": "21367f45c94037677a2d0d368d07dcbc7f3e1d608babc85c665b78dc5a4feddf",
+      "source_path": "skills/setup-zoom-mcp/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d01a545367a3770229b0571c917054e5a1b61d9f3a61e2f4db27e20a108b65a9": {
+      "description_zh": "正确实施Zoom认证，配置应用凭据、选择OAuth授权、请求权限范围、刷新令牌并排查认证失败。",
+      "source": "Implement Zoom authentication correctly. Use when setting up app credentials, choosing an OAuth grant, requesting scopes, handling token refresh, or debugging auth failures.",
+      "source_sha256": "d01a545367a3770229b0571c917054e5a1b61d9f3a61e2f4db27e20a108b65a9",
+      "source_path": "skills/setup-zoom-oauth/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f615aab1472bc15da62f011dda3f6ab0b0214c36eb372ad9374be425836cb26": {
+      "description_zh": "作为Zoom集成和应用构想入口，选择适合的产品接口、形成架构并进入对应实施技能，无需先阅读全文档集。",
+      "source": "Start here for any Zoom integration or app idea. Use when you need to choose the right Zoom surface, shape the architecture, or route into the correct implementation skill without reading the whole Zoom doc set first.",
+      "source_sha256": "2f615aab1472bc15da62f011dda3f6ab0b0214c36eb372ad9374be425836cb26",
+      "source_path": "skills/start/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "657f8ef43a21e0a24a9f3ebb64945fe24d9fc7229dc295c64e10e76dc04615e2": {
+      "description_zh": "在聊天流程中提供Zoom Team Chat参考，构建用户范围的消息集成、机器人、富卡片、按钮、斜杠命令及聊天Webhook。",
+      "source": "Reference skill for Zoom Team Chat. Use after routing to a chat workflow when building user-scoped messaging integrations, chatbot experiences, rich cards, buttons, slash commands, or chat webhooks.",
+      "source_sha256": "657f8ef43a21e0a24a9f3ebb64945fe24d9fc7229dc295c64e10e76dc04615e2",
+      "source_path": "skills/team-chat/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76cc0032e1f141d6d5aa213a785adf2bcf2ebbe5db0237ac05a24807d673a6c7": {
+      "description_zh": "在Web视频流程中使用Zoom Video SDK UI Toolkit的预制React界面，减少完全自定义视频界面的开发。",
+      "source": "Reference skill for Zoom Video SDK UI Toolkit. Use after routing to a web video workflow when you want prebuilt React UI instead of building a fully custom Video SDK interface.",
+      "source_sha256": "76cc0032e1f141d6d5aa213a785adf2bcf2ebbe5db0237ac05a24807d673a6c7",
+      "source_path": "skills/ui-toolkit/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "66049f01dda3cfe10b56a58679c6157e676ca0e16c37959b2c665c8ca9faaa3d": {
+      "description_zh": "在需要全面控制视频体验的自定义会话流程中提供Zoom Video SDK参考，适用对象为自定义视频会话而非实际Zoom会议。",
+      "source": "Reference skill for Zoom Video SDK. Use after routing to a custom-session workflow when the user needs full control over the video experience rather than an actual Zoom meeting.",
+      "source_sha256": "66049f01dda3cfe10b56a58679c6157e676ca0e16c37959b2c665c8ca9faaa3d",
+      "source_path": "skills/video-sdk/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02931c6cabe951db733f3e99c269d7246c163d8b69b7d7e04cb48c91ac7814a6": {
+      "description_zh": "使用Android Zoom Video SDK构建自定义视频体验，控制完整UI、会话令牌、原始媒体及事件驱动的参与者状态。",
+      "source": "Zoom Video SDK for Android native apps. Use when building custom Android video experiences with full UI control, session tokens, raw media options, and event-driven participant state.",
+      "source_sha256": "02931c6cabe951db733f3e99c269d7246c163d8b69b7d7e04cb48c91ac7814a6",
+      "source_path": "skills/video-sdk/android/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff3262df967331b4ab2dd2e547cab1de04e825657359e5cb72fc4f594c5718e9": {
+      "description_zh": "使用flutter_zoom_videosdk构建Flutter自定义视频会话应用，处理事件驱动架构、会话生命周期和移动平台集成。",
+      "source": "Zoom Video SDK for Flutter. Use when building custom video session apps in Flutter with flutter_zoom_videosdk, event-driven architecture, session lifecycle handling, and mobile platform integration patterns.",
+      "source_sha256": "ff3262df967331b4ab2dd2e547cab1de04e825657359e5cb72fc4f594c5718e9",
+      "source_path": "skills/video-sdk/flutter/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d81ad954fbd3b5eea40a341a0e0238bf828039242fd287bf57015aa43f60d93d": {
+      "description_zh": "使用iOS Zoom Video SDK构建自定义视频会话，控制完整UI、令牌认证及事件驱动的媒体和参与者流程。",
+      "source": "Zoom Video SDK for iOS native apps. Use when building custom iOS video sessions with full UI control, token-based session auth, and event-driven media/participant flows.",
+      "source_sha256": "d81ad954fbd3b5eea40a341a0e0238bf828039242fd287bf57015aa43f60d93d",
+      "source_path": "skills/video-sdk/ios/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fbbcecab0a3d93c18b9f7dc8fb1b57b28a1c0f702c71013fe37652242ec04471": {
+      "description_zh": "使用Linux Zoom Video SDK构建C++无界面机器人，捕获或注入原始音视频，集成Qt/GTK并支持Docker。",
+      "source": "Zoom Video SDK for Linux - C++ headless bots, raw audio/video capture/injection, Qt/GTK integration, Docker support",
+      "source_sha256": "fbbcecab0a3d93c18b9f7dc8fb1b57b28a1c0f702c71013fe37652242ec04471",
+      "source_path": "skills/video-sdk/linux/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f13798bd8ff175802fcf1138f9fa9448541f345554a2336ad2ed8bfd1cfecca6": {
+      "description_zh": "使用macOS Zoom Video SDK构建自定义桌面视频会话，处理原生界面、令牌入会及桌面媒体和设备流程。",
+      "source": "Zoom Video SDK for macOS native desktop apps. Use when building custom macOS video sessions with native UI control, tokenized join, and desktop-oriented media/device workflows.",
+      "source_sha256": "f13798bd8ff175802fcf1138f9fa9448541f345554a2336ad2ed8bfd1cfecca6",
+      "source_path": "skills/video-sdk/macos/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e33b5d4c00a64f8de6d3a581af56b7fed3f61ecaba739879fe60d2c932d38e6": {
+      "description_zh": "使用@zoom/react-native-videosdk构建React Native自定义移动视频会话，处理事件监听、辅助API和后端JWT令牌流程。",
+      "source": "Zoom Video SDK for React Native. Use when building custom mobile video session experiences with @zoom/react-native-videosdk, event listeners, helper-based APIs, and backend JWT token flows.",
+      "source_sha256": "5e33b5d4c00a64f8de6d3a581af56b7fed3f61ecaba739879fe60d2c932d38e6",
+      "source_path": "skills/video-sdk/react-native/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2dfe1821f68797e823e36c1a076149d61b68ed2a5efec86a934ad773c56a56c8": {
+      "description_zh": "通过Unity包装集成Zoom Video SDK构建自定义视频会话，将场景和UI状态映射至SDK事件。",
+      "source": "Zoom Video SDK for Unity wrapper integrations. Use when building custom Unity-based video session experiences and mapping Unity scene/UI state to Video SDK events.",
+      "source_sha256": "2dfe1821f68797e823e36c1a076149d61b68ed2a5efec86a934ad773c56a56c8",
+      "source_path": "skills/video-sdk/unity/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ce7a3524c31994a9822fa83f5a0d6ce25808f9d45ce38c0369b7bc799f4bdab": {
+      "description_zh": "以JavaScript或TypeScript集成Web Zoom Video SDK，提供浏览器视频会话、实时通信、屏幕共享、录制和实时转录。",
+      "source": "Zoom Video SDK for Web - JavaScript/TypeScript integration for browser-based video sessions, real-time communication, screen sharing, recording, and live transcription",
+      "source_sha256": "3ce7a3524c31994a9822fa83f5a0d6ce25808f9d45ce38c0369b7bc799f4bdab",
+      "source_path": "skills/video-sdk/web/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a791f2504f3b00d9bb75c59bef27ff1dbf3d40faaed05ddf24c5aff41b6f89b": {
+      "description_zh": "以C++集成Windows Zoom Video SDK，提供视频会话、原始音视频捕获、屏幕共享、录制和实时通信。",
+      "source": "Zoom Video SDK for Windows - C++ integration for video sessions, raw audio/video capture, screen sharing, recording, and real-time communication",
+      "source_sha256": "3a791f2504f3b00d9bb75c59bef27ff1dbf3d40faaed05ddf24c5aff41b6f89b",
+      "source_path": "skills/video-sdk/windows/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a4c56b7c361707fcb14313309a4c0bf72956ad92bd34fc778caf84e829c6758": {
+      "description_zh": "在虚拟代理流程中提供Zoom Virtual Agent参考，处理网页嵌入、Android及iOS包装、知识库同步、生命周期和故障排查。",
+      "source": "Reference skill for Zoom Virtual Agent. Use after routing to a virtual-agent workflow when implementing web embeds, Android or iOS wrapper integrations, knowledge-base sync, lifecycle handling, or troubleshooting.",
+      "source_sha256": "9a4c56b7c361707fcb14313309a4c0bf72956ad92bd34fc778caf84e829c6758",
+      "source_path": "skills/virtual-agent/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc634a50d66ccccf177e7d4306be897642e63a2d64d7b91a4b0f61c0460ef494": {
+      "description_zh": "通过Android WebView集成Zoom Virtual Agent，处理Java/Kotlin桥接回调、原生URL、support_handoff转发及生命周期安全嵌入。",
+      "source": "Zoom Virtual Agent Android integration via WebView. Use for Java/Kotlin bridge callbacks, native URL handling, support_handoff relay, and lifecycle-safe embedding.",
+      "source_sha256": "dc634a50d66ccccf177e7d4306be897642e63a2d64d7b91a4b0f61c0460ef494",
+      "source_path": "skills/virtual-agent/android/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e77615af02f930a301812d0a41ac45169012ddc6d44502be8dbd6109c4c51f3e": {
+      "description_zh": "通过iOS WKWebView集成Zoom Virtual Agent，处理Swift/Objective-C脚本注入、消息处理、support_handoff转发及URL路由策略。",
+      "source": "Zoom Virtual Agent iOS integration via WKWebView. Use for Swift/Objective-C script injection, message handlers, support_handoff relay, and URL routing policies.",
+      "source_sha256": "e77615af02f930a301812d0a41ac45169012ddc6d44502be8dbd6109c4c51f3e",
+      "source_path": "skills/virtual-agent/ios/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "574548cd8766a6a575caa420d7d833ab1979a6bfc6b20cca3d3b7613b3e1c8bd": {
+      "description_zh": "在Web嵌入Zoom Virtual Agent SDK，通过活动或入口ID启动聊天，处理事件控制、用户上下文更新及符合CSP的部署。",
+      "source": "Zoom Virtual Agent SDK for web embeds. Use for campaign or entry ID chat launch, event-driven controls, user context updates, and CSP-safe deployment.",
+      "source_sha256": "574548cd8766a6a575caa420d7d833ab1979a6bfc6b20cca3d3b7613b3e1c8bd",
+      "source_path": "skills/virtual-agent/web/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa55a8b16749f794b544180def4234438c8160a5fc9226dd0b72d2001ae2eb95": {
+      "description_zh": "在事件驱动流程中实施Zoom Webhook订阅、签名验证、投递处理、重试及事件类型选择。",
+      "source": "Reference skill for Zoom webhooks. Use after routing to an event-driven workflow when implementing subscriptions, signature verification, delivery handling, retries, or event-type selection.",
+      "source_sha256": "aa55a8b16749f794b544180def4234438c8160a5fc9226dd0b72d2001ae2eb95",
+      "source_path": "skills/webhooks/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a0140a77d9af15c388e4eb1b01adfb594219e37d45e4ee314b87339b801ac17": {
+      "description_zh": "在低延迟事件流程中实施Zoom WebSocket，适用于需要持久连接、更快事件交付或安全约束使其更适合的场景。",
+      "source": "Reference skill for Zoom WebSockets. Use after routing to a low-latency event workflow when persistent connections, faster event delivery, or security constraints make WebSockets preferable to webhooks.",
+      "source_sha256": "5a0140a77d9af15c388e4eb1b01adfb594219e37d45e4ee314b87339b801ac17",
+      "source_path": "skills/websockets/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "deab61035539485d8d4a9fc365ecd75872d48a715de22023681de7eb460d7734": {
+      "description_zh": "在客户端内应用流程中使用Zoom Apps SDK，构建运行于会议、网络研讨会、主客户端或Zoom Phone中的网页应用。",
+      "source": "Reference skill for Zoom Apps SDK. Use after routing to an in-client app workflow when building web apps that run inside Zoom meetings, webinars, the main client, or Zoom Phone.",
+      "source_sha256": "deab61035539485d8d4a9fc365ecd75872d48a715de22023681de7eb460d7734",
+      "source_path": "skills/zoom-apps-sdk/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1011e0a5abd52271bcce2ededcea97ffe8ffeecd6712b016acdc7e20784713a3": {
+      "description_zh": "为随包Zoom MCP连接器规划或排查会议、录制、会议资产及转录的工具访问，将Docs需求分派至专用Docs MCP，将白板需求分派至白板技能。",
+      "source": "Guidance for the bundled Zoom MCP connectors. Use after routing to an MCP workflow when planning or troubleshooting tool-based access to meetings, recordings, meeting assets, or transcripts. Route Zoom Docs requests to the dedicated Docs MCP server and Whiteboard-specific requests to `zoom-mcp/whiteboard`.",
+      "source_sha256": "1011e0a5abd52271bcce2ededcea97ffe8ffeecd6712b016acdc7e20784713a3",
+      "source_path": "skills/zoom-mcp/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fea74f3c0fc9671c2e35bd88d62748bbe48a1b17db9fb69d8948e059372def50": {
+      "description_zh": "提供Zoom Whiteboard MCP连接器的认证、端点、ID映射及工具工作流指导，包括列出和获取白板，适用于专门的白板MCP需求。",
+      "source": "Guidance for the bundled Zoom Whiteboard MCP connector. Use for Whiteboard MCP auth, endpoints, ID mapping, and tool workflows such as list_whiteboards and get_a_whiteboard. Prefer this skill when the request is specifically about Whiteboard MCP rather than general Zoom MCP.",
+      "source_sha256": "fea74f3c0fc9671c2e35bd88d62748bbe48a1b17db9fb69d8948e059372def50",
+      "source_path": "skills/zoom-mcp/whiteboard/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31f4f0de57587b72f1adefee744c73a90c8ccc30bc7d86786c9302504058c778": {
+      "description_zh": "结合近期沟通的情绪轨迹、风险信号、互动时间线及公司研究快照评估客户健康，服务于续约或QBR前风险判断；严格依据证据，不编造风险，记录不足时向用户补问。",
+      "source": "Assess the health of an account from its recent conversations — sentiment trajectory and risk signals — backed by an engagement timeline and an account_research snapshot. Identify the account by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone asks \"how healthy is Acme\", \"are we at risk of churn here\", \"what''s the sentiment trend\", or wants a risk read before a QBR or renewal. Strictly evidence-based: it does not invent risk or generic advice, and it asks the user for input where the conversations do not settle the question.",
+      "source_sha256": "31f4f0de57587b72f1adefee744c73a90c8ccc30bc7d86786c9302504058c778",
+      "source_path": "skills/account-health/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12726ec36dd876c08329957b0cd517ae97bc4dd0113f7c25f78fb575248df5b0": {
+      "description_zh": "结合公司研究和公司范围的沟通记录，回顾最近几次互动中客户关系如何变化，用于联络前了解现状，不推论超出近期互动的历史。",
+      "source": "Recap where things stand with a company across recent conversations, with emphasis on how the relationship is evolving. Identify the account by ZoomInfo company ID (preferred) or by name or domain (triggers a lookup). Blends account_research for deal and firmographic context with company-scoped conversation_intelligence for what has actually been said recently. Use when someone asks \"where are we with Acme\", \"how is the relationship trending\", \"recap our recent conversations with this account\", or wants a relationship read before a check-in. Reasons over the last few engagements only.",
+      "source_sha256": "12726ec36dd876c08329957b0cd517ae97bc4dd0113f7c25f78fb575248df5b0",
+      "source_path": "skills/account-relationship-recap/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80d3f07a9bb5736fcec76dadbe513aab748982c1d5140eecb7c854a8d57695d1": {
+      "description_zh": "依据市场拓展上下文为目标公司生成完整情报简报，涵盖企业属性、CRM、意向信号、新闻、线索和竞争格局，结论先行并说明研究原因；优先使用ZoomInfo公司ID定位。",
+      "source": "Produce a full intelligence brief on a target company — firmographics, CRM/account context, intent signals, recent news, scoops, and competitive landscape — framed by your GTM context and led with a TL;DR summary. Identify the account by ZoomInfo account/company ID (preferred) or by company name, domain, or ticker (which triggers a lookup step). Include detailed context on why the brief is being pulled.",
+      "source_sha256": "80d3f07a9bb5736fcec76dadbe513aab748982c1d5140eecb7c854a8d57695d1",
+      "source_path": "skills/account-research/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b866e076314de235b51ae9c41139dfb7e74abed6c6204168ed3a10f2d0ce8618": {
+      "description_zh": "从销售沟通生成AE到客户成功经理的交接简报，建立互动时间线、提取需求、成功标准、利益相关者和协作偏好及关系状态，用于成交后的清晰交接。",
+      "source": "Produce an AE-to-CS handoff brief — everything the incoming CSM needs from the sales conversations. Builds an engagement timeline, then runs conversation_intelligence in parallel on the key engagements to pull requirements, success criteria, stakeholders and how they like to work, and the relationship state. Identify the account by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone says \"build the handoff for Acme\", \"what does the CSM need to know\", \"prep the post-sale transition\", or closes a deal that needs a clean handoff.",
+      "source_sha256": "b866e076314de235b51ae9c41139dfb7e74abed6c6204168ed3a10f2d0ce8618",
+      "source_path": "skills/ae-cs-handoff/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa02dd2d7a894bdd9713673cd959a85af354927a1812ae905caf929e6c0125df": {
+      "description_zh": "按自然语言条件生成可导出的联系人或公司表格，支持职位、资历、部门、行业、规模、地区、技术栈和增长率等筛选。",
+      "source": "Build a list of contacts or companies matching specific criteria. Describe what you're looking for in natural language and get a structured, tabular list you can export. Supports filtering by title, seniority, department, industry, company size, location, tech stack, growth rate, and more. Outputs a clean table artifact.",
+      "source_sha256": "aa02dd2d7a894bdd9713673cd959a85af354927a1812ae905caf929e6c0125df",
+      "source_path": "skills/build-list/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b5468d839efbebc0f5d6e209a525b43477d2dd7ddec4addd2e8927d19db5840": {
+      "description_zh": "绘制目标客户采购决策团队，识别决策者、前三优先联系人、关系覆盖缺口和多线沟通风险，以紧凑表格呈现并深入核查关键人以识别过时记录，结合交易背景及角色优先级。",
+      "source": "Map the buying committee at a target account. Identifies decision-makers, prioritizes who to engage, and surfaces gaps and multi-thread risks. Leads with a TL;DR (top 3 to engage, biggest gap, multi-thread risk), uses compact tables, and deep-researches top stakeholders to catch stale records. Identify the account by ZoomInfo account/company ID (preferred) or by company name, domain, or ticker (which triggers a lookup step). Include detailed context on the deal, situation, and persona priorities driving the map.",
+      "source_sha256": "1b5468d839efbebc0f5d6e209a525b43477d2dd7ddec4addd2e8927d19db5840",
+      "source_path": "skills/buying-committee/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76726103f7901ee39406052ce727bbbf0be2847a73b74226fe522173473edd9b": {
+      "description_zh": "针对一次具体销售通话提供辅导，依据真实沟通分析需求发现、异议处理、对话动态和下一通电话重点；可从近期电话选择确认，每次仅分析一通。",
+      "source": "Coach a rep on how they handled a specific call — discovery quality, objection handling, talk dynamics, and next-call focus. Name the call if you know it, or let the skill pull recent calls and identify the most likely candidate to confirm. Uses conversation_intelligence to read how the conversation actually went. Use when someone asks \"how did I do on the Acme call\", \"coach me on my last discovery call\", \"where did I lose them\", or wants actionable feedback before the next conversation. Analyzes one call at a time.",
+      "source_sha256": "76726103f7901ee39406052ce727bbbf0be2847a73b74226fe522173473edd9b",
+      "source_path": "skills/call-coaching/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9feb5009858f85c821a4f425e2e7c84d7ae641832f0789bd4715751eb200bc7": {
+      "description_zh": "回顾近期通话的摘要、决策、行动项和开放问题，读取实际对话并补充交易上下文，可按要求只输出决策或待办。",
+      "source": "Recap a recent call with a tight summary, the decisions made, action items, and open questions. Name the call (account and/or date) if you know it, or let the skill pull your most recent calls and offer a shortlist to pick from. Uses conversation_intelligence to read what was actually said, with light account_research for deal context. Use when someone says \"recap my last call\", \"what came out of the Acme meeting\", \"summarize yesterday's call\", or needs a post-call writeup. The output adapts to the request — for example decisions-only or action-items-only.",
+      "source_sha256": "a9feb5009858f85c821a4f425e2e7c84d7ae641832f0789bd4715751eb200bc7",
+      "source_path": "skills/call-recap/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ba2cdae08e3214d713cc87ba2ded2b851ef98f6767b9f2a7c6179d2cf4e5af7": {
+      "description_zh": "依据客户或联系人的最近几次互动建立双方承诺及未完成事项台账，主要使用真实沟通记录，不涵盖完整历史。",
+      "source": "Build a ledger of what we promised versus what they promised, and what is still outstanding, across the last few engagements with an account or contact. Uses conversation_intelligence as the primary source. Identify the account or contact by ZoomInfo ID (preferred) or name (triggers a lookup), or point it at specific calls. Use when someone asks \"what did we commit to\", \"what are they supposed to send us\", \"what's still outstanding with this account\", or wants an accountability check before a follow-up. Covers the last few engagements only, not full history.",
+      "source_sha256": "5ba2cdae08e3214d713cc87ba2ded2b851ef98f6767b9f2a7c6179d2cf4e5af7",
+      "source_path": "skills/commitment-ledger/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "783d13d0338f9d597d5b5616b6bc5ab1d38ce429749810b753d8505b80fccbfe": {
+      "description_zh": "查看单个公司的近期购买意向及研究主题，结合市场拓展上下文评估与产品和理想客户画像的匹配，用于客户优先级判断。",
+      "source": "Monitor a company's buyer-intent signals and assess fit against your GTM context. Uses company signals scoped to intent for a single account, returns the recent topics it is researching, and analyzes which ones align with your offerings and ICP. Identify the company by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone asks \"what is Acme researching\", \"are they showing intent on anything we sell\", \"monitor intent for this account\", or wants an intent read before prioritizing an account.",
+      "source_sha256": "783d13d0338f9d597d5b5616b6bc5ab1d38ce429749810b753d8505b80fccbfe",
+      "source_path": "skills/company-intent-monitor/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00c46eb6bbf7174f873f742943365441935fc27d1d5fc36a0539b43d7fa47214": {
+      "description_zh": "为单个公司汇总近期新闻和业务事件，按类型及新旧程度分组并解释业务含义，用于联络前了解近况。",
+      "source": "Monitor recent news and business events for a company and deliver a quick digest. Uses company signals scoped to news and scoops for a single account, grouped by type and recency, with a \"so what\" for each. Identify the company by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone asks \"what's the latest news on Acme\", \"any recent developments at this account\", \"catch me up on what's happening there\", or wants a news digest before a touchpoint.",
+      "source_sha256": "00c46eb6bbf7174f873f742943365441935fc27d1d5fc36a0539b43d7fa47214",
+      "source_path": "skills/company-news-monitor/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d01071918caa7dbf5bbd4dab21d55a0e0ad56cb1f807148c22e4e1aa10357541": {
+      "description_zh": "结合ZoomInfo公司、新闻线索、意向、高管及相似公司数据和网络研究，生成事实驱动的竞争情报简报，比较战略、定位、理想客户重叠及探索问题，并说明支持的决策。",
+      "source": "Produce a fact-led competitive intel brief on one or more competitors — firmographics, recent strategic moves, product positioning, ICP overlap, and discovery questions. Defaults to your configured competitors from GTM context if none specified. Combines ZoomInfo data (account_research, scoops, intent, exec teams, similar companies) with web search for product/pricing/customer-sentiment intelligence. Identify competitors by ZoomInfo account/company ID (preferred) or name; include rich context on why the brief is being pulled and what decision it supports.",
+      "source_sha256": "d01071918caa7dbf5bbd4dab21d55a0e0ad56cb1f807148c22e4e1aa10357541",
+      "source_path": "skills/competitor-analysis/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f98ed3e1e4540d80fb4da692c3f221813da0278f0d6c5e17179dd69e18aa5f4a": {
+      "description_zh": "结合联系人近期真实沟通和职业背景回顾关系变化，如是否仍为内部支持者；只依据最近几次互动进行判断。",
+      "source": "Recap where things stand with a specific person across recent conversations, with emphasis on how the relationship is evolving. Identify the contact by ZoomInfo contact ID (preferred) or by name plus company (triggers a lookup). Blends contact-scoped conversation_intelligence for what this person has actually said recently with contact_research for their role and background. Use when someone asks \"where are we with Jane\", \"is this person still our champion\", \"recap my conversations with this contact\", or wants a read on an individual relationship before reaching out. Reasons over the last few engagements only.",
+      "source_sha256": "f98ed3e1e4540d80fb4da692c3f221813da0278f0d6c5e17179dd69e18aa5f4a",
+      "source_path": "skills/contact-relationship-recap/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "680f33bbdd60ed89d4b5a6856e9a956204239da61b91c548d916e3d6084154a2": {
+      "description_zh": "读取指定日期的会议日程，为每场综合现状、建议重点和跟进事项，并研究公司、参会者及既往沟通；整天逐场研究可能消耗较多AI额度，原流程先确认范围。",
+      "source": "Brief the user on their day. Pull today's (or a named day's) meetings and, for each, synthesize the current state of play, a suggested focus or objective, and any follow-ups needed. Uses browse_engagements for the schedule, then account_research, contact_research, and conversation_intelligence per meeting. Use when someone says \"what's on my plate today\", \"brief me for my meetings\", \"prep my day\", or wants a morning rundown before back-to-back calls. Because it researches every meeting, it can consume meaningful AI credits — it confirms scope before fanning out across a full day.",
+      "source_sha256": "680f33bbdd60ed89d4b5a6856e9a956204239da61b91c548d916e3d6084154a2",
+      "source_path": "skills/daily-brief/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f70616d232e2e88b1f849a967f35ec9cacd97e9930c90d385e8f3ac05cf7e0a": {
+      "description_zh": "从近期通话明确客户实际说出的采购标准、时间线、步骤及审批人，用于MEDDIC式交易评估，缺失信息标为未知而非推测。",
+      "source": "Map a prospect's buying process as voiced on recent calls — their stated decision criteria, timeline, steps, and approvers. Uses conversation_intelligence over an account's recent engagements, with account_research for stakeholder context. Identify the account by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone asks \"what's their buying process\", \"who actually signs off\", \"what's the timeline and what do they need to decide\", or wants to qualify a deal against MEDDIC-style criteria. Captures only what was actually stated; gaps are marked as unknown rather than inferred.",
+      "source_sha256": "8f70616d232e2e88b1f849a967f35ec9cacd97e9930c90d385e8f3ac05cf7e0a",
+      "source_path": "skills/decision-process-mapper/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f125c2649de80e8596047ee91421ffe099e84ca32b9087347af356cbbd20b0c": {
+      "description_zh": "从通话中实际达成的承诺和下一步起草简洁、友善专业的跟进邮件，可选择近期电话，不虚构未获支持的承诺。",
+      "source": "Draft a follow-up email after a call by extracting the commitments and next steps that were actually agreed, then writing a compact, friendly-professional message. Name the call if you know it, or let the skill pull recent calls to pick from. Uses conversation_intelligence to read what was said and committed. Use when someone says \"draft a follow-up to that call\", \"send a recap email\", \"write the follow-up for my Acme meeting\", or needs a post-call note. Drafts only what the conversation supports — it does not invent commitments.",
+      "source_sha256": "6f125c2649de80e8596047ee91421ffe099e84ca32b9087347af356cbbd20b0c",
+      "source_path": "skills/draft-follow-up/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79b4d9c172740e2507eb1ce9313101d5b34645ee2e8471d00bd2d07302be5ce7": {
+      "description_zh": "每次读取一个邮件线程的实际正文，汇总当前状态、决策、重点及开放问题，可按客户、联系人、主题或近期线程选择。",
+      "source": "Summarize a long email thread into its current state, the decisions and key points, and the open questions. Finds the thread with browse_engagements (emails), then uses conversation_intelligence with includeContent to read the actual thread body. Name the account, contact, or subject if you know it, or let the skill list recent threads to pick from. Use when someone says \"summarize this email thread\", \"what's the state of the Acme thread\", \"catch me up on this email chain\", or faces a long back-and-forth before replying. Summarizes one thread at a time.",
+      "source_sha256": "79b4d9c172740e2507eb1ce9313101d5b34645ee2e8471d00bd2d07302be5ce7",
+      "source_path": "skills/email-thread-summarizer/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "819fb64843492a640d33cca71e3c9fadd817dbcc49072646e4c23f9c0a3282ad": {
+      "description_zh": "按日期范围建立客户或联系人会议与邮件时间线，默认最近90天并可扩展，提供类型分布和各参与者互动次数，保留互动ID供后续查看讨论内容。",
+      "source": "Build a timeline of engagements (meetings and emails) with an account or contact over a date range. Identify the account or contact by ZoomInfo ID (preferred), or by name or domain (triggers a lookup), or omit both to time-line your own recent engagements. Defaults to the last 90 days and can slide the window further back for a longer history. Returns a chronological timeline, a breakdown by engagement type, and a participant list with per-person engagement counts — and keeps each engagement's ID in context so you can immediately double-click any one to ask what was discussed. Use when someone asks \"when did we last meet with X\", \"how often have we engaged this account\", \"show me the history with this contact\", or wants a relationship timeline before a call.",
+      "source_sha256": "819fb64843492a640d33cca71e3c9fadd817dbcc49072646e4c23f9c0a3282ad",
+      "source_path": "skills/engagement-timeline/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d35bab85aa115c165cf0379ffce1bcf9c58a8ccc6da48f7ce8e5ef4af00ccfbb": {
+      "description_zh": "按公司名称、域名、证券代码或ZoomInfo公司ID查询完整公司档案，包括企业属性、财务、组织结构、增长信号及联系人数量。",
+      "source": "Look up a company's full profile. Provide a company name, domain, ticker symbol, or ZoomInfo company ID. Returns firmographics, financials, corporate structure, growth signals, and contact counts.",
+      "source_sha256": "d35bab85aa115c165cf0379ffce1bcf9c58a8ccc6da48f7ce8e5ef4af00ccfbb",
+      "source_path": "skills/enrich-company/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64f3db57f993581878588265a70f6104123d0a4d3c02cfd83670ea0e45ca1a2d": {
+      "description_zh": "按姓名与公司、邮箱、电话或ZoomInfo人员ID查询职业档案，返回职位、部门、联系方式、准确度分数及公司信息。",
+      "source": "Look up a person's full professional profile. Provide a name and company, email address, phone number, or ZoomInfo person ID. Returns title, department, contact details, accuracy score, and company info.",
+      "source_sha256": "64f3db57f993581878588265a70f6104123d0a4d3c02cfd83670ea0e45ca1a2d",
+      "source_path": "skills/enrich-contact/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd4fbb9ddba9540e1c7944f1269662363f02348e01355ac4e93e918eb1396676": {
+      "description_zh": "为缺少背景的高管生成约两分钟可读的一页通话简报，综合公司及交易状态、已谈和未决事项及参会者背景。",
+      "source": "Produce a succinct one-pager for an executive dropping into a call with zero context. Blends account_research (who they are, deal state), conversation_intelligence (what has been discussed and what is open), and contact_research (who is in the room). Identify the account by ZoomInfo company ID (preferred) or name/domain (triggers a lookup); name the key attendees if known. Use when someone says \"brief the VP for the Acme call\", \"exec one-pager for tomorrow\", \"my SVP is joining cold\", or needs a tight pre-call brief for a senior stakeholder. Built to be read in two minutes.",
+      "source_sha256": "cd4fbb9ddba9540e1c7944f1269662363f02348e01355ac4e93e918eb1396676",
+      "source_path": "skills/exec-brief/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91a341fb94461a732d3577f53021904b0cbb23b57d42223264d6275c3e7a20fb": {
+      "description_zh": "按参考公司或联系人查找相似对象，返回按相似度评分排序的列表，用于销售区域扩展、市场规模分析、竞争映射、采购网络及目标线索名单。",
+      "source": "Find companies or contacts similar to a given reference. Provide a company name/domain or a person's name/email and get a ranked list of lookalikes scored by similarity. Useful for territory expansion, TAM analysis, competitive mapping, expanding buyer networks, and building targeted prospecting lists.",
+      "source_sha256": "91a341fb94461a732d3577f53021904b0cbb23b57d42223264d6275c3e7a20fb",
+      "source_path": "skills/find-similar/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31b03641e51f10c43aa74275138e4c559d8d081fe045e2fdc48f11803d66e976": {
+      "description_zh": "为销售或客户会议、QBR、续约和演示生成适合30分钟会议的准备简报，涵盖参会者关系状态、过往未决沟通、优先话题、探索问题、议程及应避免事项，可从即将到来的日程选择。",
+      "source": "Prepare for an upcoming meeting with a company. Identify the account by ZoomInfo account/company ID (preferred) or by company name, domain, or ticker (which triggers a lookup step) — or name no account at all and let the skill pick the meeting from your upcoming calendar. Provide attendee names or emails and rich context on the meeting purpose, stakes, and known dynamics to get a tight, decision-ready brief — headline, relationship posture per attendee, prior-conversation context (open threads and unresolved questions from past calls and emails), ranked talking points, discovery questions, suggested agenda, and what NOT to do. Use when prepping for a sales or customer call, QBR, renewal, or demo. Optimized for a 30-min slot.",
+      "source_sha256": "31b03641e51f10c43aa74275138e4c559d8d081fe045e2fdc48f11803d66e976",
+      "source_path": "skills/meeting-prep/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ff10c60832ad0829be482fe6ae08a2e6c8663e99c4f6bc2c3e5f464934fab9c": {
+      "description_zh": "从近期通话实际讨论的步骤、责任人及时间建立双方共同行动计划，用于成交或上线；只规划已讨论事项，目标日期未明确时向用户补问。",
+      "source": "Build a mutual action plan (MAP) from what was actually discussed on recent calls — the shared, dated set of steps each side owns to reach the goal. Reviews recent engagements and goes deep with conversation_intelligence scoped to individual calls to pull open items, agreed next steps, owners, and the timelines discussed. Identify the account by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone says \"build a mutual action plan for Acme\", \"turn our last calls into a MAP\", \"what are the next steps and dates on both sides\", or needs a close or onboarding plan. Evidence-based: it plans only what was discussed and asks for the target date if one was not stated.",
+      "source_sha256": "8ff10c60832ad0829be482fe6ae08a2e6c8663e99c4f6bc2c3e5f464934fab9c",
+      "source_path": "skills/mutual-action-plan/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d2609a2d0610bf174c8e592e4ea827806bd8cd11b66653bc7a0a3a946c303dc": {
+      "description_zh": "依据最近几次沟通状态及交易背景建议客户或关系的下一行动，提供证据支撑而非通用话术，不推论完整历史。",
+      "source": "Recommend the next best action on a deal or relationship, grounded in the current conversation state. Uses conversation_intelligence as the primary source, with account_research for deal context. Identify the account or contact by ZoomInfo ID (preferred) or name (triggers a lookup), or point it at a specific engagement. Use when someone asks \"what should I do next with Acme\", \"what's my next move here\", \"how do I advance this deal\", or wants an evidence-based recommendation rather than a generic playbook. Reasons over the last few engagements only.",
+      "source_sha256": "4d2609a2d0610bf174c8e592e4ea827806bd8cd11b66653bc7a0a3a946c303dc",
+      "source_path": "skills/next-best-action/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2202146490fb172625809f058da2101250734738531e8843f9aeff86e5407536": {
+      "description_zh": "跟踪最近几次互动中尚未解决的交易异议和障碍及其变化，用于预测或下次通话准备，不覆盖整个交易历史。",
+      "source": "Track the open objections and blockers on a deal and how they have evolved across recent calls. Uses conversation_intelligence over an account's or contact's recent engagements. Identify the account or contact by ZoomInfo ID (preferred) or name (triggers a lookup). Use when someone asks \"what objections are still open with Acme\", \"what's blocking this deal\", \"how has the security concern evolved\", or wants a blocker check before a forecast or a next call. Reasons over the last few engagements only, so it tracks recent movement rather than full deal history.",
+      "source_sha256": "2202146490fb172625809f058da2101250734738531e8843f9aeff86e5407536",
+      "source_path": "skills/objection-blocker-tracker/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8da8e18593468f3ad864c32699ebd19c6a4f5a47c45f6e5aba610451c1faaa08": {
+      "description_zh": "为单个销售对象生成1至3个个性化邮件版本，包含主题、便于手机阅读的正文及理由链；冷外联连接信号、痛点和定位，跟进、演示回顾、续约等依赖既往上下文和下一步。",
+      "source": "Generate 1-3 personalized email variants for a single prospect. The composition bar adapts to the use case — cold_outbound demands a signal → pain → positioning chain; follow-ups / recaps / renewals lean on prior context and next-step framing. Supports cold_outbound, discovery_follow_up, demo_recap, re_engagement, renewal, expansion, objection_handling. Returns subject lines and mobile-readable bodies with a rationale chain. Use for sales prospecting, lead generation, account-based selling, buyer-intent-driven outreach, B2B prospecting. Triggers on phrases like \"write a cold email\", \"personalize an email\", \"draft outreach\", \"follow up on this prospect\", \"email this prospect\", \"outbound to X\", \"send a chaser\".",
+      "source_sha256": "8da8e18593468f3ad864c32699ebd19c6a4f5a47c45f6e5aba610451c1faaa08",
+      "source_path": "skills/personalize-email/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cdf3bf63de40f60915e4fc0d6ccdc69217b7344fdbbaa753b186010ee968e4f": {
+      "description_zh": "结合公司研究、CRM及客户近期真实沟通准备QBR资料包，包含价值时刻、使用和采用主题、风险、开放事项及交易关系快照，不以假设补充成果或风险。",
+      "source": "Assemble a QBR prep pack for a business review — value moments, usage and adoption themes, risks, and open items, with a deal and relationship snapshot. Combines account_research for the account picture with conversation_intelligence over recent calls (scoped to individual engagements) for what the customer actually said. Identify the account by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone says \"prep me for the Acme QBR\", \"build a QBR pack\", \"what should I cover in the business review\", or needs a review-ready summary. Evidence-based: value moments, themes, and risks come from the conversations and CRM, not from assumption.",
+      "source_sha256": "5cdf3bf63de40f60915e4fc0d6ccdc69217b7344fdbbaa753b186010ee968e4f",
+      "source_path": "skills/qbr-prep/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "076c92348ed9c418bea176e69a148e729a6ed8915126a7da72e82fdc1adea6ba": {
+      "description_zh": "依据ZoomInfo互动历史为目标公司推荐联系人，可提供公司名称或域名及可选用途。",
+      "source": "Get AI-powered contact recommendations at a target company based on your ZoomInfo interaction history. Provide a company name or domain and optionally a use case.",
+      "source_sha256": "076c92348ed9c418bea176e69a148e729a6ed8915126a7da72e82fdc1adea6ba",
+      "source_path": "skills/recommend-contacts/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5bdc7fa39203e0b054ce21450018a24407b221106eb567d8536ec9bde1933300": {
+      "description_zh": "从近期沟通和公司研究准备续约简报，汇总已交付价值、风险和利益相关者状态；不假定续约日期或条款，未提供时先补问。",
+      "source": "Prepare for a renewal by assembling pre-renewal context — value delivered and value moments, risk handles, and stakeholder state — from recent conversations and account_research. Identify the account by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone asks \"prep me for the Acme renewal\", \"what''s our case for renewal\", \"what are the risks going into this renewal\", or wants a renewal brief. Strictly evidence-based: it does not assume the renewal date or terms; if those are not provided, it asks the user before drafting.",
+      "source_sha256": "5bdc7fa39203e0b054ce21450018a24407b221106eb567d8536ec9bde1933300",
+      "source_path": "skills/renewal-prep/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1344c430837c11b56ca418f2d725e4de00f09ae441cc7ab6efc60dc9abe9f08": {
+      "description_zh": "按理想客户匹配、购买意向、近期触发及互动给公司名单评分，输出0至100综合分、A/B/C分层、可解释分项、行动时机及可保存筛选权重，支持迭代调整，模糊公司匹配需明确确认。",
+      "source": "Score and rank a list of accounts (mixed ZoomInfo company IDs, names, or domains) by ICP fit + buying intent + recent triggers. Returns per-account composite score (0–100), tier (A/B/C), explainable component breakdown (fit / intent / trigger / engagement), a specific \"why now\" sentence per account, and the working weight set as a saveable search filter set. Resolves name/domain inputs via search_companies with explicit confirmation for ambiguous matches. Iteratively refinable — adjust weights, swap axes, retier, or drill into a specific account. Use for account-based selling, ABM list prioritization, territory planning, sales prospecting prioritization, signal-based selling, buyer intent ranking, B2B prospecting. Triggers on phrases like \"score these accounts\", \"prioritize this list\", \"rank by ICP fit and intent\", \"which accounts should I work first\", \"build a tiered account list\".",
+      "source_sha256": "e1344c430837c11b56ca418f2d725e4de00f09ae441cc7ab6efc60dc9abe9f08",
+      "source_path": "skills/score-accounts/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11d7767f09f6afc1274e335246d966a0c95e55d879ad5c6b678e3e3bcbe7f092": {
+      "description_zh": "为线索或冷联系人分热温冷层级，结合人物和公司匹配、来源及触发信号给出响应时限、行动时机及核实的联系人资料，可按用途调整；邮箱错误明确报错而不自动回退，姓名加公司必要时验证。",
+      "source": "Score and prioritize leads or cold contacts (mixed ZoomInfo person IDs, emails, or name+company rows). Returns Hot / Warm / Cold tier per lead with a response-time SLA tuned to the use case (live inbound routing, MQL triage, event follow-up, PQL triage, content follow-up, SDR queue ordering), per-axis breakdown (person fit · account fit · source signal · trigger), a \"why now\" reasoning snippet per lead, and recommended next action with verified contact data. Resolution by email is deterministic; name+company surfaces verification when needed; typo'd emails fail explicitly rather than fall back. Iteratively refinable. Triggers on phrases like \"score these leads\", \"which lead/contact should I call first\", \"prioritize my MQLs\", \"rank inbound\", \"who should I prioritize?\", \"tier this list\".",
+      "source_sha256": "11d7767f09f6afc1274e335246d966a0c95e55d879ad5c6b678e3e3bcbe7f092",
+      "source_path": "skills/score-leads/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "319ed579ad18e0978b70838a29147bb585b663a26fadf56691a91b5e1296ef12": {
+      "description_zh": "用ZoomInfo公司数据库估算理想客户画像对应的可服务市场，与用户迭代企业和技术条件，返回公司数量及可供名单构建、评分等技能复用的筛选集。",
+      "source": "Size the total addressable market (TAM) for an Ideal Customer Profile (ICP) using ZoomInfo's verified company database. Iteratively refine the firmographic and technographic filter set with the user until the account universe matches their intent — then return both the count and the working filter set that other skills (build-list, score-accounts) can consume. Use for territory and capacity design, investor-ready market sizing, and ICP sharpening. Triggers on phrases like \"size the market\", \"TAM for\", \"addressable market\", \"how many companies match\", \"is my ICP too broad/narrow\", \"refine my ICP filters\".",
+      "source_sha256": "319ed579ad18e0978b70838a29147bb585b663a26fadf56691a91b5e1296ef12",
+      "source_path": "skills/tam-sizer/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f669e36a99b2edffa1c928cd60be2f1fcdf7878946dd8eecea237544e4718f7d": {
+      "description_zh": "按ZoomInfo数据库记录为公司生成技术栈快照，分类展示CRM、营销、销售、数仓和分析等工具，识别竞争替换及伙伴集成角度并诚实标注覆盖缺口，显式处理对象匹配歧义。",
+      "source": "Produce a technology-stack snapshot for one or more companies — what CRM, marketing automation, sales engagement, data warehouse, analytics, conversation intelligence, and other tools they have tagged in ZoomInfo's database. Groups detected products by category, surfaces displacement plays for competitive tools, integration angles for partner tools, and coverage gaps honestly. Resolves mixed-identifier inputs (IDs / names / domains) with explicit ambiguity surfacing. Useful for sales prospecting, account-based selling, competitive battle-card prep, integration partner research, technographic signal analysis, B2B prospecting. Triggers on phrases like \"what tech does X use\", \"tech stack for\", \"technographic snapshot\", \"what's in their stack\", \"do they use Salesforce\", \"competitive displacement angle\".",
+      "source_sha256": "f669e36a99b2edffa1c928cd60be2f1fcdf7878946dd8eecea237544e4718f7d",
+      "source_path": "skills/tech-stack-snapshot/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0a303016c1c4e99956b660fe18a46f17de945e44c2ef8ae7162c505b041562b": {
+      "description_zh": "结合公司意向、新闻、业务线索、公司研究、市场拓展上下文及网络资料，提出当前联系公司的时机和开场角度，每项将真实信号对应到具体产品。",
+      "source": "Build a \"why now\" case for reaching out to a company — the timing thesis and the specific hooks to lead with — by combining company signals (intent, news, scoops), account_research, your GTM context, and web research. Identify the company by ZoomInfo company ID (preferred) or name/domain (triggers a lookup). Use when someone asks \"why should I reach out to Acme now\", \"what's our angle into this account\", \"give me a reason to call\", or is planning outbound and needs timely, evidence-based hooks. Each hook ties a real signal to one of your offerings.",
+      "source_sha256": "f0a303016c1c4e99956b660fe18a46f17de945e44c2ef8ae7162c505b041562b",
+      "source_path": "skills/why-now/SKILL.md",
+      "package_sha256": "496fc3a24cda754e7888947da8bf602aa704fb21075046e4a7eac62389047a30",
+      "source_package": "ZoomInfo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18781967d0b460e5d0ea9fbc51de0b61ed5d14dfd048ae3a405f8e3d7e860ccf": {
+      "description_zh": "跨ZPA、ZIA、ZDX及ZCC排查用户连接和应用变慢，依次检查客户端状态与注册、体验评分、应用分段及访问策略、URL过滤和SSL检查策略。",
+      "source": "Cross-product troubleshooting of user connectivity issues spanning ZPA, ZIA, ZDX, and ZCC. Investigates end-to-end: (1) ZCC client status and enrollment, (2) ZDX digital experience scores and metrics, (3) ZPA application segment and access policy configuration, (4) ZIA URL filtering and SSL inspection policies. Use when an administrator reports 'user cannot access application', 'connectivity issues', or 'application is slow.",
+      "source_sha256": "18781967d0b460e5d0ea9fbc51de0b61ed5d14dfd048ae3a405f8e3d7e860ccf",
+      "source_path": "skills/cross-product/troubleshoot-user-connectivity/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ccfe62363dd70bd2d3aa81ea875808c62b9260fff2f955842b904ee3433379be": {
+      "description_zh": "使用Zscaler EASM检查企业外部攻击面，查看暴露服务、漏洞和错误配置、识别相似域名，并生成按优先级排列的风险摘要。",
+      "source": "Review the organization's external attack surface using Zscaler EASM. Lists organizations, retrieves findings (exposed services, vulnerabilities, misconfigurations), checks for lookalike domains, and generates a prioritized risk summary. Use when a security team asks: 'What is our external exposure?', 'Are there any critical findings?', or 'Check for lookalike domains.",
+      "source_sha256": "ccfe62363dd70bd2d3aa81ea875808c62b9260fff2f955842b904ee3433379be",
+      "source_path": "skills/easm/review-attack-surface/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70d1f06f9a742e4f97c41791e51dffbeeca9c9d3e798d069adf7d9b2b2db62c5": {
+      "description_zh": "为指定ZCC用户生成一次性退出登录密码，按邮箱或设备名查询设备、确认后取得logout_otp并安全交付，用于凭据重置、遗失或退役设备、疑似入侵及离职；不用于卸载、退出程序、版本回退或临时停用服务的其他OTP。",
+      "source": "Generate a One-Time Logout Password (OTP) for a Zscaler Client Connector (ZCC) user. Walks the admin from a user identifier (email or device name) through device lookup → confirmation → OTP retrieval → secure delivery, surfacing logout_otp from the ZCC OTP bundle. Use when an admin needs to remotely sign a specific user out of ZCC — for example after a credential reset, lost / decommissioned device, suspected compromise (incident response), or routine offboarding. DO NOT USE WHEN: the admin needs to uninstall ZCC, exit ZCC, revert to a prior ZCC version, or temporarily disable a service (ZIA/ZPA/ZDX/ZDP) on the device — those use other OTPs from the same bundle and warrant their own confirmation flow.",
+      "source_sha256": "70d1f06f9a742e4f97c41791e51dffbeeca9c9d3e798d069adf7d9b2b2db62c5",
+      "source_path": "skills/zcc/generate-logout-otp/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7bdfb6b4bc1ced9d013a3567e0b3b416341706e8db9c59498cc6d49f95e444ae": {
+      "description_zh": "使用ZDX评分、指标及受影响用户分布分析应用健康，识别性能下降应用、瓶颈指标和最受影响用户，支持应用评分及告警影响查询。",
+      "source": "Analyze the health of one or more monitored applications across the organization using ZDX scores, metrics, and affected-user breakdowns. Identifies which applications are degraded, which metrics are the bottleneck, and which users are most impacted. Aligned with ZDX Copilot analytics use cases. Use when an administrator asks: 'How are my applications performing?', 'Which apps have low ZDX scores?', 'Show me the number of applications impacted by alerts', or 'What is the ZDX Score for Zoom?",
+      "source_sha256": "7bdfb6b4bc1ced9d013a3567e0b3b416341706e8db9c59498cc6d49f95e444ae",
+      "source_path": "skills/zdx/analyze-application-health/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a48cfc13d124f6bcdac71c0869ef9830b0821f318bd84f5ee38ca46cc514212a": {
+      "description_zh": "用ZDX审计组织设备的软件清单，按地区、部门或用户筛选并查看具体版本，用于合规、漏洞和过时软件检查。",
+      "source": "Audit the software inventory across devices in the organization using ZDX data. Lists installed software, filters by location, department, or user, and drills into specific software version details. Use for compliance audits, security vulnerability assessments, or identifying outdated software. Use when an administrator asks: 'What software is installed on our devices?', 'Find all devices running Chrome version X', 'Audit software versions across the organization', or 'Which departments have outdated Java?",
+      "source_sha256": "a48cfc13d124f6bcdac71c0869ef9830b0821f318bd84f5ee38ca46cc514212a",
+      "source_path": "skills/zdx/audit-software-inventory/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7013a0e2d45006aec03072fc1e64976a4d6b0504af5ed5c9a1c50527814363d": {
+      "description_zh": "用ZDX比较办公地点、部门和地域的应用数字体验，识别表现最好或最差地区及局部问题，并提出优化建议。",
+      "source": "Compare digital experience across locations, departments, and geolocations using ZDX data. Identifies which offices or regions have the best and worst experience for specific applications, detects location-specific issues, and provides optimization recommendations. Aligned with ZDX Copilot analytics and optimization use cases. Use when an administrator asks: 'Which office has the worst experience?', 'Compare application performance between locations', 'Is the Dallas office having network issues?', or 'Show me ZDX scores by department.",
+      "source_sha256": "c7013a0e2d45006aec03072fc1e64976a4d6b0504af5ed5c9a1c50527814363d",
+      "source_path": "skills/zdx/compare-location-experience/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a84d065ebeef6f95ec87101fd65a2e03791bd36507f61ae7f5b975e0e468b0d": {
+      "description_zh": "启动或分析ZDX深度跟踪诊断会话，检查网页探针、云路径拓扑、设备健康、主要进程和事件时间线，以定位网络和设备问题根因。",
+      "source": "Run a ZDX deep trace diagnostics session to investigate network and device issues. Start new sessions, analyze web probe metrics, cloud path topology, device health, top processes, and event timelines to pinpoint root cause. Use when an administrator asks: 'Start a deep trace for this user', 'Analyze the diagnostics session', 'Why is the network path slow?', 'Check cloud path for packet loss', or 'What happened during the trace?",
+      "source_sha256": "2a84d065ebeef6f95ec87101fd65a2e03791bd36507f61ae7f5b975e0e468b0d",
+      "source_path": "skills/zdx/diagnose-deeptrace/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6acd862cc6bbc80c3bed914ef5f7a4118a426033f7b66e27dc6c3ddc984cab5": {
+      "description_zh": "调查当前及历史ZDX告警，分析范围、根因和影响，关联受影响设备与应用指标，识别随时间出现的模式及ISP问题。",
+      "source": "Investigate active and historical ZDX alerts to understand their scope, root cause, and impact. Drills into affected devices, correlates with application metrics, and identifies patterns across time. Aligned with ZDX Copilot troubleshooting use cases. Use when an administrator asks: 'Show me ongoing alerts', 'What incidents happened in the last 48 hours?', 'How many users are affected by this alert?', or 'Is there an ISP issue?",
+      "source_sha256": "e6acd862cc6bbc80c3bed914ef5f7a4118a426033f7b66e27dc6c3ddc984cab5",
+      "source_path": "skills/zdx/investigate-alerts/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad4010d9eaea9fa3fe7ba41278c5853a4e1b908dfd5a6b7755fcbd7a3d289fc9": {
+      "description_zh": "针对某办公地点的多应用故障关联ZDX告警、受影响设备和共同云路径节点，比较各SaaS网络路径，找出共享瓶颈并提出有证据支持的建议。",
+      "source": "Diagnose a multi-application outage scoped to one location by correlating ZDX alerts, affected devices, and shared cloud-path hops. Identifies the devices affected at a specific office, compares the per-application network path across multiple SaaS apps to surface the common network bottleneck, and produces an evidence-backed recommendation. Use when an admin reports: 'A ZDX alert shows users in the Columbus office cannot reach Salesforce and ServiceNow', 'Identify affected devices and the common network path issue', 'Multiple users at Dallas are having issues with several SaaS apps', 'What do these failing apps have in common at this office?', or 'Find the shared network bottleneck for the New York users hitting Workday and Box.",
+      "source_sha256": "ad4010d9eaea9fa3fe7ba41278c5853a4e1b908dfd5a6b7755fcbd7a3d289fc9",
+      "source_path": "skills/zdx/investigate-multi-app-outage/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "264a6d7d94d338e5349dcf1e80216b55950136f6d9e7edb6919df7f7c5032b0d": {
+      "description_zh": "使用ZDX设备健康、应用评分、网络路径指标和活动告警排查指定用户的数字体验及性能瓶颈。",
+      "source": "Troubleshoot a user's digital experience using ZDX data. Investigates device health, application scores, network path metrics, and active alerts to identify performance bottlenecks. Use when an administrator reports: 'User says app is slow', 'Check user experience', or 'Why is the application score low?",
+      "source_sha256": "264a6d7d94d338e5349dcf1e80216b55950136f6d9e7edb6919df7f7c5032b0d",
+      "source_path": "skills/zdx/troubleshoot-user-experience/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01507266611f91ed4b9f25e2ec3a3ad75b7a7cad40aff7cf9a38a2756eb51552": {
+      "description_zh": "仅审计ZIA SSL检查规则及配置，识别哪些应用、URL类别、用户或组受到检查、不检查或不解密动作影响，查找解密与绕过例外。",
+      "source": "Audit ZIA SSL inspection rules to identify which applications, URL categories, users, or groups are subject to INSPECT, DO_NOT_INSPECT, or DO_NOT_DECRYPT actions. This skill focuses exclusively on SSL inspection rules and their configuration. Use when a security administrator asks: 'What SSL rules are in decryption mode?', 'What is bypassing SSL inspection?', 'Are there SSL bypass exceptions?', or 'Audit our SSL inspection policy.",
+      "source_sha256": "01507266611f91ed4b9f25e2ec3a3ad75b7a7cad40aff7cf9a38a2756eb51552",
+      "source_path": "skills/zia/audit-ssl-inspection-bypass/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35e3c54540c0e8ca5cf0641a518b909cd60428a2df5f2e84a89fdf47d5decfb1": {
+      "description_zh": "按优先级评估指定用户或组访问URL时适用的ZIA策略，结合URL分类、过滤、SSL检查、DLP及云防火墙给出访问判断和阻止原因。",
+      "source": "Determine whether a specific user or group is allowed to access a given URL by evaluating all applicable ZIA policies in order. Performs URL category lookup, then evaluates URL filtering rules, SSL inspection rules, DLP rules, and cloud firewall rules in priority order to produce a definitive access verdict. Use when an administrator asks: 'Can user X access site Y?', 'Why is a URL blocked?', or 'What policies apply to this user and URL?",
+      "source_sha256": "35e3c54540c0e8ca5cf0641a518b909cd60428a2df5f2e84a89fdf47d5decfb1",
+      "source_path": "skills/zia/check-user-url-access/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbaf4fbd0e44c44647d05188e8fd0fe5c29bce8fe904da6466f8dfee369d2b32": {
+      "description_zh": "创建ZIA云应用控制规则，对文件上传、附件、AI使用、编辑和社交发布等动作执行细粒度控制；按规则类别、应用及动作组合校验，多应用请求为每个应用分别创建规则，必要时查询规范应用名和复用时间安排。",
+      "source": "Create ZIA Cloud App Control rules that enforce granular, action-level decisions on cloud applications (Dropbox, OneDrive, Google Drive, ChatGPT, GitHub, YouTube, Slack, etc.). Cloud App Control is action-level, not block/allow at the connection layer — actions are things like ALLOW_FILE_SHARE_UPLOAD, BLOCK_WEBMAIL_ATTACH, ISOLATE_AI_ML_WEB_USE, DENY_AI_ML_CHAT, BLOCK_SOCIAL_NETWORKING_POST. Each rule belongs to a category (rule_type) such as FILE_SHARE, WEBMAIL, AI_ML, SYSTEM_AND_DEVELOPMENT, SOCIAL_NETWORKING, STREAMING_MEDIA, etc. Action vocabulary is surfaced at the category level, but the API validates per (rule_type, application, action) tuple — combining multiple apps in a single rule frequently fails with INVALID_INPUT_ARGUMENT, so this skill creates one rule per cloud application when the admin names multiple apps. Use when an admin asks to 'allow Dropbox uploads', 'block ChatGPT', 'restrict GitHub edits', 'isolate AI tools', 'block YouTube uploads', 'allow only viewing on OneDrive', 'block file uploads to personal cloud storage (Dropbox, Google Drive, OneDrive)', or 'create a Cloud App Control rule for X'. Chains to `zia-look-up-cloud-app-name` and `zia-manage-time-interval` when needed.",
+      "source_sha256": "bbaf4fbd0e44c44647d05188e8fd0fe5c29bce8fe904da6466f8dfee369d2b32",
+      "source_path": "skills/zia/create-cloud-app-control-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7fda1a438f4427b5304756f88183f34c06bc17cf4e915d57580266a70ab6123": {
+      "description_zh": "创建一条ZIA云防火墙过滤规则，按源目标IP、国家、网络应用服务、设备信任、用户组部门、地点及可选周期时段控制流量，支持允许、丢弃、重置、ICMP阻止和应用评估，周期安排交由时间区间技能处理。",
+      "source": "Create a ZIA Cloud Firewall Filtering rule that controls network traffic by source/destination IP, country, network application, network service, device trust level, user/group/department, location, and optional time-of-day schedule (Time Interval). Supported actions: ALLOW, BLOCK_DROP, BLOCK_RESET, BLOCK_ICMP, EVAL_NWAPP. Use when an admin asks to 'create a firewall rule', 'block traffic to X', 'allow traffic from Y', 'block country Z', 'restrict access during business hours', or 'add a firewall exception'. This skill creates exactly one Cloud Firewall rule and chains to `zia-manage-time-interval` when the admin's request includes a recurring schedule.",
+      "source_sha256": "b7fda1a438f4427b5304756f88183f34c06bc17cf4e915d57580266a70ab6123",
+      "source_path": "skills/zia/create-firewall-filtering-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c1e7396acc8e35e0e6b2625152d6e63e0ad3d99f5e4314fbb74e6b80fbd49fd": {
+      "description_zh": "创建ZIA SSL检查规则，对TLS流量阻止、解密检查或不解密，按应用、URL类别、人员组织、地点、设备、平台、IP组和ZPA应用分段限定范围；不支持周期时段，纯审计已有绕过使用只读技能。",
+      "source": "Create a ZIA SSL Inspection rule that controls how Zscaler handles SSL/TLS encrypted traffic — BLOCK (drop the SSL connection), DECRYPT (decrypt and inspect), or DO_NOT_DECRYPT (pass through without decryption). Scopes the rule by cloud applications, URL categories, users, groups, departments, locations, device trust levels, platforms, source/destination IP groups, and ZPA application segments. SSL Inspection rules do NOT support a recurring time-of-day schedule — for time-of-day enforcement, use a different rule type (Cloud Firewall Filtering, URL Filtering, etc.). Use when an admin asks to 'create an SSL inspection rule', 'do not decrypt traffic to X', 'decrypt SSL for Y', 'block SSL for Z', or 'add an SSL bypass exception'. For pure auditing of existing SSL bypass posture, see `zia-audit-ssl-inspection-bypass` (read-only).",
+      "source_sha256": "0c1e7396acc8e35e0e6b2625152d6e63e0ad3d99f5e4314fbb74e6b80fbd49fd",
+      "source_path": "skills/zia/create-ssl-inspection-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d5b2e2e66f172a4ed171860cca264836e6a8d04096c4b89025f20cb271a16266": {
+      "description_zh": "创建一条ZIA URL过滤规则，按URL类别、协议、请求方法、user agent、用户组织、地点和设备信任允许、阻止、警告或隔离访问，支持周期时段及一次性日期范围。",
+      "source": "Create a ZIA URL Filtering rule that controls user access to web content by URL category, protocol, request method, user agent, user/group/department, location, device trust level, and optional time-of-day schedule (Time Interval). Supported actions: ALLOW, BLOCK, CAUTION, ISOLATE. Use when an admin asks to 'create a URL filtering rule', 'block category X', 'allow category Y', 'show a caution page for Z', 'isolate access to risky sites', 'block social media during work hours', or 'add a URL filtering exception'. Supports both recurring schedules (`time_windows`) and one-shot date-range validity (`enforce_time_validity`). This skill creates exactly one URL Filtering rule and chains to `zia-manage-time-interval` when the admin's request includes a recurring schedule.",
+      "source_sha256": "d5b2e2e66f172a4ed171860cca264836e6a8d04096c4b89025f20cb271a16266",
+      "source_path": "skills/zia/create-url-filtering-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ff662536d93fd9b5cf6d76c6236e59f975562353308957626432ab0ce187cba": {
+      "description_zh": "调查ZIA沙箱文件分析、隔离及安全策略执行，结合报告、配额、行为分析、文件哈希和SSL检查，排查文件为何允许、阻止、停留隔离或未被分析。",
+      "source": "Investigate ZIA Sandbox file analysis results, quarantine issues, and security policy enforcement. Uses sandbox report, quota, behavioral analysis, and file hash tools combined with SSL inspection checks to diagnose why files are blocked, allowed, or stuck in quarantine. Incorporates runbook knowledge for Malware Protection, ATP, and Sandbox policy troubleshooting. Use when an administrator asks 'why is this file blocked?', 'check sandbox report for this hash', 'file stuck in quarantine', or 'sandbox is not analyzing files.",
+      "source_sha256": "7ff662536d93fd9b5cf6d76c6236e59f975562353308957626432ab0ce187cba",
+      "source_path": "skills/zia/investigate-sandbox/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9df7982673fe539192b4bebef8a43681bb3aef2bc3c95e0f6a88ec6b042b15e7": {
+      "description_zh": "查找特定URL或类别在ZIA URL过滤、DLP、SSL检查及云防火墙规则中的引用，展示类别使用及策略影响。",
+      "source": "Investigate where a specific URL or URL category is referenced across all ZIA policy rules. Searches URL filtering rules, DLP web rules, SSL inspection rules, and cloud firewall rules to provide a comprehensive view of how a category is used. Use when an administrator asks: 'Where is this URL category used?', 'What rules apply to this URL?', or 'Show me the policy impact of this category.",
+      "source_sha256": "9df7982673fe539192b4bebef8a43681bb3aef2bc3c95e0f6a88ec6b042b15e7",
+      "source_path": "skills/zia/investigate-url-category/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "185e4ccffc6beecaafcdd153dda236d8c9fabc8e4b00cb10364e3323d4c6e0c6": {
+      "description_zh": "将管理员输入的友好名称、模糊说法或Shadow IT数字ID解析为ZIA云应用规范名，供应用控制、SSL、DLP、文件类型和带宽等规则使用，避免错误名称被转为NONE而使规则无效。",
+      "source": "Look up the canonical ZIA cloud-application name (e.g. ONEDRIVE, GOOGLE_DRIVE, SHAREPOINT_ONLINE, DROPBOX) given whatever the admin typed — friendly names like 'OneDrive', 'Google Drive', 'share point online', loose phrasings like 'sharepoint', or even numeric Shadow IT IDs. Cloud App Control, SSL Inspection, Web DLP, File Type Control, Bandwidth Classes, and Advanced Settings rules all require the canonical ZIA name in their `cloud_applications` field; passing the friendly name or a Shadow IT ID silently coerces to `NONE` and the rule does nothing. Use whenever an admin asks to add, remove, or filter on cloud applications in any policy rule, or asks 'what's the right name for X?'.",
+      "source_sha256": "185e4ccffc6beecaafcdd153dda236d8c9fabc8e4b00cb10364e3323d4c6e0c6",
+      "source_path": "skills/zia/look-up-cloud-app-name/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca6abab4d776449d55a75c185f274dcaf5c1524cecf2408434b53a862cb5f4ab": {
+      "description_zh": "在创建或更新ZIA规则前查询用户、组、部门、地点、URL类别、设备、标签及时间窗口等范围字段的真实ID或规范字符串；空结果视为不存在，不编造ID、不静默替换或扩散重试。",
+      "source": "Look up the shared 'who/where/when/what-device' fields that every ZIA rule resource scopes by — users, groups, departments, locations, location_groups, url_categories, devices, device_groups, workload_groups, labels, and time_windows — and return the IDs (or canonical strings) the rule API expects. Use this skill from inside any ZIA rule create/update workflow (Cloud Firewall, DNS, IPS, URL Filtering, SSL Inspection, Web DLP, File Type Control, Sandbox, Cloud App Control) when the admin names a user, group, location, label, etc. by display name and you need the ID before building the rule payload. Centralises the read-before-write lookup convention so individual rule skills stay short and accurate. The skill enforces the project's hard rules: empty list = does not exist, never invent IDs, never silently substitute, never fan-out retries.",
+      "source_sha256": "ca6abab4d776449d55a75c185f274dcaf5c1524cecf2408434b53a862cb5f4ab",
+      "source_path": "skills/zia/look-up-rule-targets/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e254688f432b48b37441f0f6d074d90dfae80c9083919c2d5b20ef0a7018866a": {
+      "description_zh": "按名称寻找或创建可复用ZIA时间区间，返回供规则time_windows引用的ID，支持周期工作日及日内时段；SSL检查规则不支持该字段。",
+      "source": "Find an existing ZIA Time Interval by name, or create a new one when no match exists, then return the interval ID so the caller can attach it to a policy rule via its `time_windows` field. Time Intervals are reusable schedule objects (start time, end time, days of the week) that ZIA Cloud Firewall Filtering, URL Filtering, Cloud App Control, File Type Control, and Sandbox rules reference to enforce recurring time-of-day / day-of-week schedules (e.g. 'only between 8am-5pm Monday-Friday'). Note: SSL Inspection rules do NOT support `time_windows` and cannot consume the output of this skill. Use when an admin asks for 'a schedule', 'business hours', 'after-hours', 'weekends only', 'time window', 'time interval', or any rule that should fire on a recurring time pattern. Other ZIA rule-creation skills chain to this one when the admin's request includes a schedule.",
+      "source_sha256": "e254688f432b48b37441f0f6d074d90dfae80c9083919c2d5b20ef0a7018866a",
+      "source_path": "skills/zia/manage-time-interval/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab255ef33de2b8990a9c9e36540edede0e72d419ba42167beb125b67aace0e41": {
+      "description_zh": "完整接入新ZIA办公地点及流量转发依赖，依次配置出口静态IP、IPSec VPN凭据、引用这些对象的地点及可选子地点，支持UFQDN或需先有静态IP的IP凭据流程。",
+      "source": "End-to-end onboarding of a new ZIA location with its traffic forwarding dependencies. Walks through the full dependency chain: (1) Create a static IP for the site's egress point, (2) Create VPN credentials (UFQDN or IP-based) for the IPSec tunnel, (3) Create the location referencing the static IP and VPN credentials, (4) Optionally create a sub-location. Covers both UFQDN-based (simple) and IP-based (requires static IP first) VPN credential flows. Use when an administrator asks: 'Add a new office location', 'Onboard a branch office', or 'Set up traffic forwarding for a new site.",
+      "source_sha256": "ab255ef33de2b8990a9c9e36540edede0e72d419ba42167beb125b67aace0e41",
+      "source_path": "skills/zia/onboard-location/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d64628f9cef201a597a28666ced62f80bb417541c07385c93b319694ef7b899a": {
+      "description_zh": "使用Zscaler Z-Insights分析网页流量的地区分布、HTTP及HTTPS协议、威胁类别、DLP违规和流量趋势。",
+      "source": "Analyze web traffic patterns using Zscaler Analytics (Z-Insights). Examines traffic distribution by location, protocol breakdown (HTTP vs HTTPS), threat categories, DLP violations, and volume trends over time. Use when an administrator asks: 'Show me web traffic by location', 'What protocols are in use?', 'Are there any DLP violations?', 'What does our traffic look like?', or 'Show traffic trends.",
+      "source_sha256": "d64628f9cef201a597a28666ced62f80bb417541c07385c93b319694ef7b899a",
+      "source_path": "skills/zins/analyze-web-traffic/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08be38f3afe7f3b5afee6376085ad52d38b55103f2bdbe45d196c61027d96bca": {
+      "description_zh": "使用Z-Insights按允许阻止比例、地区活动、网络服务使用及规则命中数评估零信任防火墙效果，生成网络安全报告。",
+      "source": "Assess network security posture using Zscaler Analytics (Z-Insights). Analyzes Zero Trust Firewall effectiveness by action distribution (allow/block ratios), location-based firewall activity, network service usage, and firewall rule hit counts. Use when a security team asks: 'How effective is our firewall?', 'What is being blocked?', 'Show firewall activity by location', 'Which network services are in use?', or 'Generate a firewall report.",
+      "source_sha256": "08be38f3afe7f3b5afee6376085ad52d38b55103f2bdbe45d196c61027d96bca",
+      "source_path": "skills/zins/assess-network-security/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21bf8e6b834075e18002000db83e061e53350329d87cb86c98f3a39dbcbe82ca": {
+      "description_zh": "使用Z-Insights审计影子IT和SaaS使用，发现未批准应用及风险、查看CASB保护的使用和向影子应用的数据传输，并审查IoT设备清单。",
+      "source": "Audit shadow IT and SaaS application usage using Zscaler Analytics (Z-Insights). Discovers unsanctioned applications, assesses risk scores, monitors CASB-protected SaaS usage, tracks data transfers to shadow apps, and reviews IoT device inventory. Use when a security team asks: 'What shadow IT apps are being used?', 'Show me unsanctioned SaaS usage', 'What is our SaaS risk exposure?', 'How many IoT devices are on our network?', or 'Generate a shadow IT report.",
+      "source_sha256": "21bf8e6b834075e18002000db83e061e53350329d87cb86c98f3a39dbcbe82ca",
+      "source_path": "skills/zins/audit-shadow-it/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a6264def4dc26b4a9c6ba134fdc7de35505db48a82bcff895f2c516715803f28": {
+      "description_zh": "使用Z-Insights关联威胁类别、事件趋势、防火墙动作、网页流量和影子IT数据调查安全事件，形成完整事件时间线。",
+      "source": "Investigate security incidents using Zscaler Z-Insights analytics. Correlates threat categories, cyber incident trends, firewall actions, web traffic patterns, and shadow IT data to build a comprehensive incident timeline. Use when a security analyst asks: 'What threats were detected?', 'Show me incident trends', 'Investigate this security event', or 'What shadow IT is being used?",
+      "source_sha256": "a6264def4dc26b4a9c6ba134fdc7de35505db48a82bcff895f2c516715803f28",
+      "source_path": "skills/zins/investigate-security-incident/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc255c19fe6a2369a5c937f3d5e1cc1487e96c513d7fc48e968148e43b38e960": {
+      "description_zh": "分析Zscaler微分段策略优化机会，检查自定义和默认规则、过时未用及过宽权限、跨区域通信模式和默认拒绝状态。",
+      "source": "Analyze Zscaler Microsegmentation (ZMS) policy rules for optimization opportunities. Reviews custom and default policy rules, identifies stale or unused rules, detects overly permissive rules, maps cross-zone communication patterns, and assesses default security posture. Use when an administrator asks: 'Are there unused policy rules?', 'Which rules are too broad?', 'Optimize our segmentation policies', 'Review our default deny posture', 'Show me policy rule coverage', or 'Analyze our ZMS policies.",
+      "source_sha256": "bc255c19fe6a2369a5c937f3d5e1cc1487e96c513d7fc48e968148e43b38e960",
+      "source_path": "skills/zms/analyze-policy-rules/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc976ff2a1caea2c7ed187f5fe712cabda4cebbf4a8930edcfa0726e9540c5e7": {
+      "description_zh": "评估Zscaler微分段工作负载保护覆盖，检查资源状态、资源组成员、按云和地区的未保护负载及无策略资源组，识别保护缺口。",
+      "source": "Assess Zscaler Microsegmentation (ZMS) workload protection coverage and identify protection gaps. Investigates resource protection status, resource group membership, unprotected workloads by cloud and region, and resource group coverage gaps. Use when an administrator asks: 'Which workloads are unprotected?', 'What is our microsegmentation coverage?', 'Find protection gaps', 'Which resource groups have no policies?', 'Show me unprotected resources', or 'What is our workload coverage percentage?",
+      "source_sha256": "bc976ff2a1caea2c7ed187f5fe712cabda4cebbf4a8930edcfa0726e9540c5e7",
+      "source_path": "skills/zms/assess-workload-protection/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "727c495c24de85100863ef8f0d318525657bb0f26d42e117acdb2844098ed2e8": {
+      "description_zh": "审计Zscaler微分段总体部署，检查代理健康、工作负载覆盖、资源组、策略、应用区域、应用目录及标签分类。",
+      "source": "Audit the overall Zscaler Microsegmentation (ZMS) deployment posture. Reviews agent fleet health, workload protection coverage, resource group structure, policy rules, app zones, application catalog, and tag-based classification. Use when an administrator asks: 'What is our microsegmentation coverage?', 'How many workloads are protected?', 'Show me our ZMS policies', 'Review our microsegmentation deployment', or 'Audit our ZMS posture.",
+      "source_sha256": "727c495c24de85100863ef8f0d318525657bb0f26d42e117acdb2844098ed2e8",
+      "source_path": "skills/zms/audit-microsegmentation-posture/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea80c362a4f451b9f8355e9f0cf84f4323ec272cb34f1fae5dffdd143809fb51": {
+      "description_zh": "检查Zscaler微分段标签分类、应用发现及标签到资源组映射，涵盖自定义、外部及机器学习命名空间、键值和基于标签的资源组成员。",
+      "source": "Review Zscaler Microsegmentation (ZMS) tag classification, application discovery, and tag-to-resource-group mapping. Investigates tag namespaces (CUSTOM, EXTERNAL, ML), tag keys and values, application catalog entries, and how tags drive managed resource group membership. Use when an administrator asks: 'Show me our tag structure', 'What cloud tags are imported?', 'How are resource groups using tags?', 'What applications were discovered?', 'Review tag classification', or 'Are ML tags being used?",
+      "source_sha256": "ea80c362a4f451b9f8355e9f0cf84f4323ec272cb34f1fae5dffdd143809fb51",
+      "source_path": "skills/zms/review-tag-classification/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25bbcdbca065e8414a8ea2b09b9735f9e5239d91b298bdf8521cf7fab12d9ac6": {
+      "description_zh": "排查Zscaler微分段代理部署和连接故障，检查健康、连接、版本、代理组配置、配置密钥及TOTP秘密。",
+      "source": "Troubleshoot Zscaler Microsegmentation (ZMS) agent deployment and connectivity issues. Investigates agent fleet health, connection status, version compliance, agent group configuration, provisioning keys, and TOTP secrets. Use when an administrator reports: 'Agents are disconnected', 'Agent enrollment failing', 'How do I provision new agents?', 'Check agent versions', or 'Agent not connecting.",
+      "source_sha256": "25bbcdbca065e8414a8ea2b09b9735f9e5239d91b298bdf8521cf7fab12d9ac6",
+      "source_path": "skills/zms/troubleshoot-agent-deployment/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cd0cb96fb4323c45ada31232a45856e368af23f71255fb59718ab9e7b6bc4fa": {
+      "description_zh": "仅在明确要求Browser Access时完整接入ZPA客户端免装的网页应用，配置连接器组、服务器组、分段组、TLS证书、含apps_config的浏览器应用分段及访问策略；常规客户端路由应用另用对应技能。",
+      "source": "End-to-end onboarding of a new Browser Access (BA) application in Zscaler Private Access. Walks through the full dependency chain — App connector group, server group, segment group, BA TLS certificate, BA application segment with apps_config, and access policy rule — for web apps that should be reachable through the browser without Zscaler Client Connector. Use only when the admin explicitly asks for Browser Access. DO NOT USE WHEN: the admin wants a regular client-routed application segment (use zpa-application_segment-onboard instead).",
+      "source_sha256": "5cd0cb96fb4323c45ada31232a45856e368af23f71255fb59718ab9e7b6bc4fa",
+      "source_path": "skills/zpa/application_segment-ba-onboard/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3748969b8db8ca07ae5b2c1a919a2081cb497922d715049c5dd795421c92e4c0": {
+      "description_zh": "完整接入ZPA内部应用，依次配置应用连接器组、服务器组、分段组、含域名端口的应用分段及授予用户或组访问的策略。",
+      "source": "End-to-end onboarding of a new application in Zscaler Private Access. Walks through the complete dependency chain: (1) App connector group, (2) Server group, (3) Segment group, (4) Application segment with domain names and ports, (5) Access policy rule to grant user/group access. Use when an administrator needs to make an internal application accessible through ZPA.",
+      "source_sha256": "3748969b8db8ca07ae5b2c1a919a2081cb497922d715049c5dd795421c92e4c0",
+      "source_path": "skills/zpa/application_segment-onboard/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0c5b25c8e25fe349d67951841fa771f4013a5f9422965574dc32d620f949a18": {
+      "description_zh": "在明确要求PRA、RDP、SSH或堡垒访问时完整接入ZPA特权远程访问，配置连接器、服务器及分段组、PRA凭据和门户、目标应用分段及访问策略，不要求原生RDP/SSH客户端或ZCC；常规路由和免客户端网页另用对应流程。",
+      "source": "End-to-end onboarding of a new Privileged Remote Access (PRA) application in Zscaler Private Access. Walks through the full dependency chain — App connector group, server group, segment group, PRA credential, PRA portal, PRA application segment with apps_config (RDP/SSH targets), and access policy rule — for RDP and SSH targets brokered through the PRA portal without requiring a native RDP/SSH client or Zscaler Client Connector. Use only when the admin explicitly asks for Privileged Remote Access (PRA), RDP, SSH, jump-host, or bastion access. DO NOT USE WHEN: the admin wants a regular client-routed application segment (use zpa-application_segment-onboard) or a clientless web app (use zpa-application_segment-ba-onboard).",
+      "source_sha256": "c0c5b25c8e25fe349d67951841fa771f4013a5f9422965574dc32d620f949a18",
+      "source_path": "skills/zpa/application_segment-pra-onboard/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d1c3c7fc60fa19f22c085e616a2c6671edaa6c55b4105aa55596e1657385204": {
+      "description_zh": "只读按ZPA Baseline Recommendations v1.0审计租户，盘点连接器、服务器、应用分段、访问转发超时策略及可用LSS配置，对七类约26项配置检查评分，生成可检索筛选的交互HTML及可选JSX报告，提供发现证据、整改和框架引用，可浏览器打印PDF；不修改租户。",
+      "source": "Read-only audit of a ZPA tenant against the Zscaler ZPA Baseline Recommendations v1.0 document. Inventories app connector groups, server groups, application segments, access policy rules, forwarding policy rules, timeout policy rules, and (when available) LSS configs, then scores ~26 configuration-only checks across 7 categories and renders an interactive Zscaler-styled web report (single-file HTML, plus an optional .jsx component) — searchable, filterable by category, severity, and security framework (NIST SP 800-53 Rev. 5 and CIS Critical Security Controls v8), with per-finding evidence, remediation, and framework citations suitable as supporting evidence for SOC 2, FedRAMP, ISO 27001, and NIST CSF assessments, and printable to PDF from the browser. Use when an administrator asks to audit ZPA against best practices, run a baseline-compliance review, get a ZPA health check, gather compliance evidence, or see how their tenant compares to the recommended baseline. NEVER mutates the tenant — read-only.",
+      "source_sha256": "7d1c3c7fc60fa19f22c085e616a2c6671edaa6c55b4105aa55596e1657385204",
+      "source_path": "skills/zpa/audit-baseline-compliance/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47917fcebcb4e1578f43b30b6b91613ab3a908f37b76e672b945981f5c1c0f30": {
+      "description_zh": "使用v2条件创建ZPA访问策略，先确认需求并查询SAML或SCIM身份属性，再构建应用组、平台、国家、设备状态、网络、风险、客户端、机器组和位置等组合条件。",
+      "source": "Create ZPA access policy rules with v2 conditions. Supports all condition object types: APP, APP_GROUP, SAML, SCIM, SCIM_GROUP, PLATFORM, COUNTRY_CODE, POSTURE, TRUSTED_NETWORK, RISK_FACTOR_TYPE, CLIENT_TYPE, MACHINE_GRP, LOCATION, and CHROME_ENTERPRISE. Walks through: (1) gathering requirements, (2) looking up identity attributes (SAML/SCIM), (3) building the conditions payload, (4) creating the rule. Includes ready-to-use examples for common scenarios: SCIM group access, SAML attribute matching, platform restrictions, country-based access, posture checks, and combined conditions.",
+      "source_sha256": "47917fcebcb4e1578f43b30b6b91613ab3a908f37b76e672b945981f5c1c0f30",
+      "source_path": "skills/zpa/create-access-policy-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b1bdb406d44c30af63e6ef995e8aaa3ed35a328be38b5b1a39e3871e3b21e9a": {
+      "description_zh": "创建ZPA多条件私有应用访问规则，组合SCIM/SAML身份、按UDID引用的设备状态配置、ZCC报告的平台、国家及风险等级；不推测状态配置内部检查内容，会话时长和重认证使用独立资源流程。",
+      "source": "Create a ZPA Access Policy rule that gates access to a private application on multiple combined checks: identity (SCIM group / SAML), one or more named device posture profiles (associated by UDID; ZPA does not introspect what each profile checks), platform reported by ZCC, country, and risk-score level. Use when an admin asks for 'conditional access', 'multi-check access rule', 'attach posture profile X and risk level low to this rule', or 'allow only if posture passes and risk is low' for a private application. For session-duration / re-auth requirements, see `zpa-create-session-duration-rule` (separate ZPA resource type).",
+      "source_sha256": "8b1bdb406d44c30af63e6ef995e8aaa3ed35a328be38b5b1a39e3871e3b21e9a",
+      "source_path": "skills/zpa/create-conditional-access-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "300167147ba25832a1a2ef64b29b8eec9a1bec498f7704fb0121ab7dfb0ca30e": {
+      "description_zh": "创建ZPA客户端转发策略，控制ZCC流量直接访问互联网、经ZPA转发或仅可达时转发，按应用、身份、平台、国家、设备状态、受信网络和客户端限定条件。",
+      "source": "Create ZPA client forwarding policy rules that control how traffic is routed from the Zscaler Client Connector. Supports actions: BYPASS (direct internet), INTERCEPT (route through ZPA), INTERCEPT_ACCESSIBLE (route only if reachable). Conditions support APP, APP_GROUP, SAML, SCIM, SCIM_GROUP, PLATFORM, COUNTRY_CODE, POSTURE, TRUSTED_NETWORK, and CLIENT_TYPE. Use when an administrator asks: 'Bypass ZPA for specific apps', 'Route traffic directly', or 'Create a forwarding exception.",
+      "source_sha256": "300167147ba25832a1a2ef64b29b8eec9a1bec498f7704fb0121ab7dfb0ca30e",
+      "source_path": "skills/zpa/create-forwarding-policy-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76c02055c666f0f25ef504803f7dd9a07711f8cd105ba46fcfa5f258013d0922": {
+      "description_zh": "创建具备依赖的ZPA服务器组，先查询应用连接器组，不存在时创建，再引用真实连接器组ID建立服务器组并验证结果。",
+      "source": "Create a ZPA server group with all required dependencies. Server groups require app connector groups to exist first. This skill walks through the dependency chain: (1) Check for existing app connector groups, (2) Create an app connector group if none exist, (3) Create the server group referencing the connector group IDs, (4) Verify the server group was created correctly. Use when an administrator needs to set up a new server group for application access.",
+      "source_sha256": "76c02055c666f0f25ef504803f7dd9a07711f8cd105ba46fcfa5f258013d0922",
+      "source_path": "skills/zpa/create-server-group/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ece3b23266078c0e3d308355de0b4f7c423afd185c7320e8a3603e03b03693a": {
+      "description_zh": "创建ZPA超时策略以规定会话持续时间、强制重认证及可选空闲超时，按SCIM组、SAML属性、应用分段、平台和设备状态限定；只创建超时规则，不修改或自动配对访问规则。",
+      "source": "Create a ZPA Timeout Policy rule that enforces session duration — i.e. forces re-authentication after N minutes/hours/days, optionally with an idle-timeout. Use this skill when an admin asks for 'session duration', 'auto-revoke', 're-authentication interval', 'force re-auth after X hours', or 'session must expire after a workday' for ZPA. Scopes by SCIM group, SAML attribute, application segment, platform, and posture. ZPA Timeout Policy is a separate resource type from Access Policy; this skill creates timeout rules only and does not modify or pair with access rules.",
+      "source_sha256": "7ece3b23266078c0e3d308355de0b4f7c423afd185c7320e8a3603e03b03693a",
+      "source_path": "skills/zpa/create-session-duration-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfd86594cdb4c66ac7d1bf0b5dc6870fc21cf1c4c092e4a4b461aff333422984": {
+      "description_zh": "创建ZPA超时策略，配置活动会话重认证间隔及空闲会话超时，支持应用组、客户端、SAML/SCIM身份、平台和设备状态条件。",
+      "source": "Create ZPA timeout policy rules that control session re-authentication and idle timeout behavior. Configures how long a user session remains active (reauth_timeout) and how long an idle session persists (reauth_idle_timeout) before requiring re-authentication. Supports conditions: APP, APP_GROUP, CLIENT_TYPE, SAML, SCIM, SCIM_GROUP, PLATFORM, and POSTURE. Use when an administrator asks: 'Set session timeout', 'Configure idle timeout', 'Require re-authentication after X hours', or 'Set different timeouts per app or user group.",
+      "source_sha256": "dfd86594cdb4c66ac7d1bf0b5dc6870fc21cf1c4c092e4a4b461aff333422984",
+      "source_path": "skills/zpa/create-timeout-policy-rule/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05db242f97da1a98490626241f741a156b5a881a6870cfa0a25696935425d1da": {
+      "description_zh": "排查ZPA App Connector注册、升级、Public Service Edge连接及CPU内存磁盘高占用，通过MCP检查连接器组、配置密钥、服务器组和应用分段，并提供运行手册指导的修复步骤。",
+      "source": "Troubleshoot ZPA App Connector issues including enrollment failures, upgrade problems, Public Service Edge connectivity, and high CPU/memory/disk utilization. Uses MCP tools to inspect connector groups, provisioning keys, server groups, and application segments, then provides runbook-guided remediation steps. Use when an administrator reports 'connector is down', 'connector not enrolling', 'connector upgrade failed', or 'connector high CPU.",
+      "source_sha256": "05db242f97da1a98490626241f741a156b5a881a6870cfa0a25696935425d1da",
+      "source_path": "skills/zpa/troubleshoot-app-connector/SKILL.md",
+      "package_sha256": "6332c80509ae0f42925907bed8cfc4291403cc0480c80199ece4da73d98946f2",
+      "source_package": "Zscaler MCP Server-0.15.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78bc2b310c21eb35fb6206bdef09f3fa76db986ae55914369ed5dbd90be5b095": {
+      "description_zh": "在工作过程中交互查找适合当前任务的ZSL技能，解释如何使用并引导进入正确流程环节。",
+      "source": "Interactive router that helps you find the right ZSL skill for what you're doing right now, without leaving your work. Use when you're mid-session and unsure which skill fits — \"which ZSL skill should I use\", \"how do I do X with these skills\", or when you want to be routed to the right part of the loop.",
+      "source_sha256": "78bc2b310c21eb35fb6206bdef09f3fa76db986ae55914369ed5dbd90be5b095",
+      "source_path": "skills/engineering/ask-zsl/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76469bea4b8185da14adfb60114803451c9c8fa52368f5707fe3cebd75191441": {
+      "description_zh": "在创建PR前全面评审当前分支，以问题为主报告代码发现，应用修复前经过批准。",
+      "source": "Comprehensive pre-PR code review of the current branch with an issues-only tone and an approval gate before applying fixes. Use when user wants a code review, mentions /code-review, or asks to scan the branch before opening a PR.",
+      "source_sha256": "76469bea4b8185da14adfb60114803451c9c8fa52368f5707fe3cebd75191441",
+      "source_path": "skills/engineering/code-review/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "44e1f5628302d2424c4fee6641d0f73d753de599d8631fbb1e0a785c894c47dc": {
+      "description_zh": "提供深模块设计的共同术语，讨论模块深度、接口、接缝和适配器，支持可测试接口设计及替代方案比较，供架构改进和TDD流程组合使用。",
+      "source": "Shared vocabulary and refinements for reasoning about module depth, interfaces, seams, and adapters — the deep-module design language. Use when discussing module/interface design, whether a module is deep or shallow, where to place a seam, how to design an interface for testability, or when exploring alternative interfaces for a module. Composed by /improve-codebase-architecture and /tdd.",
+      "source_sha256": "44e1f5628302d2424c4fee6641d0f73d753de599d8631fbb1e0a785c894c47dc",
+      "source_path": "skills/engineering/codebase-design/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6925f39c7310b5ceb94d9c350b5204722c6382ff7681a19e9d1ba898a64e2534": {
+      "description_zh": "一次完成会话修改提交、分支推送和创建PR，拒绝在仓库默认分支运行；提交交由专门技能后设置远端上游并通过gh建PR，适用于功能分支完整交付。",
+      "source": "Commit session changes, push the branch, and open a PR — in one shot. Refuses to run on the repo's default branch (main/master) so the PR step can't fail. Delegates the commit step to `/zsl:commit`, then pushes with `-u`, then opens the PR via `gh`. Use when user wants to ship a feature branch end-to-end, says \"/commit-push-pr\", or asks to commit, push, and open a PR.",
+      "source_sha256": "6925f39c7310b5ceb94d9c350b5204722c6382ff7681a19e9d1ba898a64e2534",
+      "source_path": "skills/engineering/commit-push-pr/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7b34ef4fa82eafad25b0a59ea91febe0c86b23e947a0a4d34df0f87259ae02d": {
+      "description_zh": "自主规划和提交本会话产生的修改，跨会话脏文件纳入前需确认，仅使用显式文件列表，不使用git add -A，也不添加Claude署名。",
+      "source": "Plan and create git commits autonomously for changes made in this session (no per-commit approval prompt). Cross-session dirty files — files modified outside this conversation's tool calls — get confirmed before inclusion. Explicit file lists only, never `git add -A`. No Claude attribution lines. Use when the user wants to commit, says \"/commit\", or asks to land changes — and composable by any skill that needs to land changes (e.g. commit-push-pr, tdd-parallel).",
+      "source_sha256": "f7b34ef4fa82eafad25b0a59ea91febe0c86b23e947a0a4d34df0f87259ae02d",
+      "source_path": "skills/engineering/commit/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c55b6a07b40b2102b3d114c40e08a765697395d74a40f0cc8ae18da6e788a0b": {
+      "description_zh": "将模糊且跨会话的想法整理为有先后顺序的决策与任务图，展示依赖和粗略构建顺序，使其在形成PRD前成熟。",
+      "source": "Turn a loose, multi-session idea into a sequenced map of the decisions and tickets it implies, so it matures before becoming a PRD. Use at the front of the loop when an idea is still fuzzy, spans several sessions, or you want to see the decision dependencies and a rough build order before committing to a PRD.",
+      "source_sha256": "3c55b6a07b40b2102b3d114c40e08a765697395d74a40f0cc8ae18da6e788a0b",
+      "source_path": "skills/engineering/decision-mapping/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0549476c01fc2bc36f7a6d81d60e826cc23506fa9678382b1ad6b5dc1497dec": {
+      "description_zh": "按复现、最小化、假设、插桩、修复和回归测试循环诊断复杂缺陷及性能回退。",
+      "source": "Disciplined diagnosis loop for hard bugs and performance regressions. Reproduce → minimise → hypothesise → instrument → fix → regression-test. Use when user says \"diagnose this\" / \"debug this\", reports a bug, says something is broken/throwing/failing, or describes a performance regression.",
+      "source_sha256": "d0549476c01fc2bc36f7a6d81d60e826cc23506fa9678382b1ad6b5dc1497dec",
+      "source_path": "skills/engineering/diagnose/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d597c19a6651118e4f0405e22a0c880200a7890fb47959926df6639215dfcb51": {
+      "description_zh": "支持领域文档推理，组织CONTEXT.md统一语言、ADR及领域驱动设计规则，用于领域术语、决策记录、子域分类、有界上下文关系和文档结构。",
+      "source": "The home for domain-doc reasoning — the CONTEXT.md Ubiquitous Language format, the ADR format, and the Domain-Driven Design book-rules. Use when capturing or sharpening a project's domain language, deciding whether a decision deserves an ADR, classifying subdomains, naming bounded-context relationships, or writing/structuring CONTEXT.md or docs/adr/. Composed by grill-with-docs and improve-codebase-architecture.",
+      "source_sha256": "d597c19a6651118e4f0405e22a0c880200a7890fb47959926df6639215dfcb51",
+      "source_path": "skills/engineering/domain-modeling/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12543b6881eb86a1fcf5084ddf116338614178ae3db031888e10f901db1f2008": {
+      "description_zh": "按GitHub自动PR流程要求创建带feature、fix、chore、refactor或env前缀的Git分支，用于开始功能或新分支工作。",
+      "source": "Create a git branch with the prefix convention (`feature/`, `fix/`, `chore/`, `refactor/`, `env/`) required by GitHub auto-PR workflows. Use when user wants to start a branch, says \"new branch\", or asks to begin a feature.",
+      "source_sha256": "12543b6881eb86a1fcf5084ddf116338614178ae3db031888e10f901db1f2008",
+      "source_path": "skills/engineering/git-branch/SKILL.md",
+      "package_sha256": "46dad2142b2aeadc7cd50816bcbd233846ae21bdba80044bbd8a43da60af83b9",
+      "source_package": "ZSL Superpowers-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
