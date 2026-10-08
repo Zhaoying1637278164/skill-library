@@ -59929,6 +59929,1086 @@
       "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
       "source_package": "reef-1.1.4-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a092542059d01c10c53d1c83f2e6da22e8d204053335d81950c2133aae8020c": {
+      "description_zh": "验证reef产物并报告资料的新鲜程度。",
+      "source": "Validate artifacts and report freshness",
+      "source_sha256": "5a092542059d01c10c53d1c83f2e6da22e8d204053335d81950c2133aae8020c",
+      "source_path": "skills/health/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee2ca815fcf8df01c28b8fc4e597ca77af00c22ba7c76fdd79c9ab18aad3f026": {
+      "description_zh": "显示可用技能、reef状态及建议的下一步。",
+      "source": "Show available skills, reef status, and recommended next action",
+      "source_sha256": "ee2ca815fcf8df01c28b8fc4e597ca77af00c22ba7c76fdd79c9ab18aad3f026",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b0a1b00afaff4b1a2b4033ac15a9c686350b607817379891f6cf5b4b24e10e4": {
+      "description_zh": "根据代码库初始化新的reef知识Wiki。",
+      "source": "Bootstrap a new reef wiki from your codebase",
+      "source_sha256": "5b0a1b00afaff4b1a2b4033ac15a9c686350b607817379891f6cf5b4b24e10e4",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7e20575d243f265179164054d4afd50ed4865a12f28c2d873ababd6625170a0": {
+      "description_zh": "检查reef产物的格式和结构错误，并自动修复。",
+      "source": "Lint artifacts for format and structural errors, with auto-fix",
+      "source_sha256": "f7e20575d243f265179164054d4afd50ed4865a12f28c2d873ababd6625170a0",
+      "source_path": "skills/lint/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c6572acc69a91e79d27d788b4bc96a778198bd30ac81913a85cd895b28ff78e": {
+      "description_zh": "依据snorkel与source输出及清单驱动生成产物，自动深化知识。",
+      "source": "Automated knowledge deepening — manifest-driven artifact generation from snorkel+source output",
+      "source_sha256": "9c6572acc69a91e79d27d788b4bc96a778198bd30ac81913a85cd895b28ff78e",
+      "source_path": "skills/scuba/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50669de7dda38fa6bc326a55c7b0b3f40692183ea28a7a2af21bc86426b22ad6": {
+      "description_zh": "从代码中为每个来源自动发现5至10个草稿产物。",
+      "source": "Auto-discover 5-10 draft artifacts per source from code",
+      "source_sha256": "50669de7dda38fa6bc326a55c7b0b3f40692183ea28a7a2af21bc86426b22ad6",
+      "source_path": "skills/snorkel/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e80c3a5e847d3e1352dc1fa72261ee17054f78dd09b9cddebf50681c57e323a2": {
+      "description_zh": "按分层流程从源码仓库提取完整API规范和实体关系图。",
+      "source": "Extract full API specs and ERDs from source repos using a tiered protocol",
+      "source_sha256": "e80c3a5e847d3e1352dc1fa72261ee17054f78dd09b9cddebf50681c57e323a2",
+      "source_path": "skills/source/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53d3aa3c034c1e4935f9c4f9f8015bf4f02b576ef202feb12f723bda4f55a641": {
+      "description_zh": "用用户问题库测试reef知识内容。",
+      "source": "Test the reef against your question bank",
+      "source_sha256": "53d3aa3c034c1e4935f9c4f9f8015bf4f02b576ef202feb12f723bda4f55a641",
+      "source_path": "skills/test/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1773043f6b67f43c9c544e396c72a0b81f7a172baca1cc1d156a5994a71c258b": {
+      "description_zh": "重新索引来源并更新过时产物。",
+      "source": "Re-index sources and update stale artifacts",
+      "source_sha256": "1773043f6b67f43c9c544e396c72a0b81f7a172baca1cc1d156a5994a71c258b",
+      "source_path": "skills/update/SKILL.md",
+      "package_sha256": "6eeb5369657bd06c0e86de161200f4c59bd02d67fff4feba0c68fda2fb8e8acb",
+      "source_package": "reef-1.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6226a817a995fd4fe202fc21318a399c95e61c803576e26add315b43d9a288f9": {
+      "description_zh": "在向客户开票前整理和审查Referent预账单，收集未计费工时和支出，核验说明、标记可能核减的项目并与费用协议比较，适用于月末和在制工作审查。",
+      "source": "Assemble and review a pre-bill in Referent before an invoice goes to a client — collecting unbilled time and disbursements, auditing narratives, flagging write-off candidates, and checking the bill against the fee agreement. Use when the user mentions billing, invoicing, a pre-bill, month-end, WIP review, or getting bills out.",
+      "source_sha256": "6226a817a995fd4fe202fc21318a399c95e61c803576e26add315b43d9a288f9",
+      "source_path": "skills/billing-prep/SKILL.md",
+      "package_sha256": "c4c47ad9f08df3a1573734f8e466db0e6657958eafdb94cde71c39eab8ecc884",
+      "source_package": "Referent-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5365795accb954608a62f74c24a23e1eb0378bde571f1ab755e45cb209eb784c": {
+      "description_zh": "汇总 Referent 中某项案件或法律事务的状态、时间线、近期截止日期、文件往来、待办任务及财务情况，适用于状态更新、交接、客户通话或听证准备，以及查询本周到期事项。",
+      "source": "Get up to speed on a matter in Referent — status, chronology, upcoming deadlines, recent documents and correspondence, open tasks, and financial position. Use when the user asks what is happening on a matter, wants a status update or handover note, is preparing for a client call or hearing, or asks what is due this week.",
+      "source_sha256": "5365795accb954608a62f74c24a23e1eb0378bde571f1ab755e45cb209eb784c",
+      "source_path": "skills/matter-brief/SKILL.md",
+      "package_sha256": "c4c47ad9f08df3a1573734f8e466db0e6657958eafdb94cde71c39eab8ecc884",
+      "source_package": "Referent-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38dd8e2f6899bf726ec160bbc92e90ff398003d389f6952972c23c415cb32bb1": {
+      "description_zh": "办理 Referent 的新客户和新事务接入：检查利益冲突、记录当事人、确定服务范围及收费条款、开立事务，并准备交由律师签署的委托函。适用于新咨询、客户入驻或冲突审查。",
+      "source": "Run new client and new matter intake in Referent — conflicts check, party capture, scope and fee terms, opening the matter, and preparing an engagement letter for the lawyer to sign. Use when the user mentions a new client, a new enquiry, opening a matter, onboarding, or running a conflicts check.",
+      "source_sha256": "38dd8e2f6899bf726ec160bbc92e90ff398003d389f6952972c23c415cb32bb1",
+      "source_path": "skills/matter-intake/SKILL.md",
+      "package_sha256": "c4c47ad9f08df3a1573734f8e466db0e6657958eafdb94cde71c39eab8ecc884",
+      "source_package": "Referent-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ae683d9378d3c2694f715f5aea4baca60c40d904847f6b77260978a06e4c4c1": {
+      "description_zh": "在 Referent 记录可计费工时，并撰写可向客户展示的工作说明；支持登记工时、从当天工作重建时间表，以及在账单发出前整理含糊或合并计费的条目。",
+      "source": "Capture billable time into Referent and write client-ready narratives. Use when the user wants to log time, bill hours, record what they worked on, reconstruct a timesheet from the day's work, or clean up vague or block-billed entries before they reach a client.",
+      "source_sha256": "1ae683d9378d3c2694f715f5aea4baca60c40d904847f6b77260978a06e4c4c1",
+      "source_path": "skills/time-entry/SKILL.md",
+      "package_sha256": "c4c47ad9f08df3a1573734f8e466db0e6657958eafdb94cde71c39eab8ecc884",
+      "source_package": "Referent-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08f9039461fa06d0f4781a803c4fee81d0d1bdca9e405ffba676f68f82f235ff": {
+      "description_zh": "通过实时查询 regai 语料库核实越南法律知识库的覆盖范围，判断某部法律、主题或文件是否收录；适用于查询可研究内容，或在认定主题超出范围之前检查，避免依赖可能过时的记忆。",
+      "source": "Use when the user asks what the regai knowledge base covers, whether a particular law/topic/document is in it (\"do you have labor law?\", \"is Nghị định 13/2023 in the corpus?\", \"can you research tax?\"), or before telling a user that a topic is out of scope. Determines coverage by probing the live corpus, never from memory — the corpus grows over time as documents are added from the remote.",
+      "source_sha256": "08f9039461fa06d0f4781a803c4fee81d0d1bdca9e405ffba676f68f82f235ff",
+      "source_path": "skills/regai-listing-coverage/SKILL.md",
+      "package_sha256": "3f919e8dc277b6aca892d854564cb84a5b7ca58ff4571a6ae43ec13a082469cb",
+      "source_package": "regai — Vietnamese Legal Consultant-0.9.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "016652933abeb5eb4f6cf8b7bdafa5c2ca87cf082498ef1155ec4386ed63a48c": {
+      "description_zh": "利用 regai 最新实时数据源研究越南法律的条件与程序、文件现行效力、法律配套法令或通知，以及具体条文；通过检索与引用校验循环形成有出处的研究结果。",
+      "source": "Use when the user asks anything about Vietnamese law against the latest live data source — conditions/procedures for something (\"điều kiện chào bán chứng khoán\", \"what do I need to issue shares?\"), whether a document is still valid (\"Nghị định 58/2012 còn hiệu lực không?\", \"is decree X still in force?\"), which Nghị định/Thông tư implements a Luật, or to quote a specific Điều. Drives the regai retrieval tools and the cite-correctly research loop.",
+      "source_sha256": "016652933abeb5eb4f6cf8b7bdafa5c2ca87cf082498ef1155ec4386ed63a48c",
+      "source_path": "skills/regai-live-check/SKILL.md",
+      "package_sha256": "3f919e8dc277b6aca892d854564cb84a5b7ca58ff4571a6ae43ec13a082469cb",
+      "source_package": "regai — Vietnamese Legal Consultant-0.9.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "553a38eecc626afc357275f3974d9e68d251177f6e7b962edaa4c378897f72b8": {
+      "description_zh": "首次在工作区开展法律任务、.regai/context.md 缺失或尚为空时，简短访谈用户并建立组织背景与行文风格资料，为后续任务提供明确上下文；也适用于用户主动要求配置公司资料。",
+      "source": "Use the first time a user works on a legal goal in a workspace, when `.regai/context.md` is missing or still empty (only the seed comment), or when the user says \"set up regai for my company\", \"regai doesn't know my org\", \"onboard me\", \"tell regai about us\", or runs /regai-onboard. Interviews the user briefly and writes their org/house-style profile so every later mission is grounded in their context instead of guessing.",
+      "source_sha256": "553a38eecc626afc357275f3974d9e68d251177f6e7b962edaa4c378897f72b8",
+      "source_path": "skills/regai-onboard/SKILL.md",
+      "package_sha256": "3f919e8dc277b6aca892d854564cb84a5b7ca58ff4571a6ae43ec13a082469cb",
+      "source_package": "regai — Vietnamese Legal Consultant-0.9.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85a9b8b19871a790432e965f9048a1b86e121c468b51abe683f3c2ce342b953c": {
+      "description_zh": "推进起草保密协议或服务合同、合同风险审查、产品方案审查、法律备忘录及合规流程等多步骤目标：先规划并取得批准，再按检查点执行，以 regai 语料支持法律主张并积累会话经验；单次法律问答改用实时查询技能。",
+      "source": "Use when the user gives a multi-step legal GOAL to carry to completion — \"draft an NDA / service contract\", \"review this contract for risks\", \"review this product proposal\", \"write a legal memo on X\", \"build a compliance process\". Plans the work, gets approval, then executes like a legal associate with checkpoints, grounding every legal claim in the regai corpus and compounding what it learns across sessions. For one-off questions about what the law says, use regai-live-check instead.",
+      "source_sha256": "85a9b8b19871a790432e965f9048a1b86e121c468b51abe683f3c2ce342b953c",
+      "source_path": "skills/regai-shipping-goal/SKILL.md",
+      "package_sha256": "3f919e8dc277b6aca892d854564cb84a5b7ca58ff4571a6ae43ec13a082469cb",
+      "source_package": "regai — Vietnamese Legal Consultant-0.9.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9d7727668fc9cb9266a9424de0f3c12a18167ab3a5375dc1ce81a20b1a928c1": {
+      "description_zh": "直接搜索本地 vault/ 中的越南法律资料，支持离线或无 MCP、Supabase 的研究，也用于实时检索工具不可用后继续工作；研究目标与实时查询技能相同，检索方式改为本地文本搜索和读取。",
+      "source": "Use when the user asks anything about Vietnamese law and you want to search the local vault/ folder directly (offline, no MCP/Supabase), or when the user asks to continue after the live MCP tools are unavailable. Same research goals as regai-live-check but uses grep/Read over vault/ instead of the remote tools.",
+      "source_sha256": "b9d7727668fc9cb9266a9424de0f3c12a18167ab3a5375dc1ce81a20b1a928c1",
+      "source_path": "skills/regai-vault-search/SKILL.md",
+      "package_sha256": "3f919e8dc277b6aca892d854564cb84a5b7ca58ff4571a6ae43ec13a082469cb",
+      "source_package": "regai — Vietnamese Legal Consultant-0.9.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d98725de48cc19c97f589b4fea641f4e7f1ff199a408d3e5ae32f0092de5f0d5": {
+      "description_zh": "首次安装或重新配置监管监测时，通过访谈建立关注清单、索引政策库并确定重大性阈值；支持重做配置及检查连接器是否实际响应，使监测结果按用户关注程度筛选。",
+      "source": "Cold-start interview — builds your watchlist, indexes the policy library, and learns your materiality threshold so the monitor surfaces signal instead of noise. Use on fresh install, when reconfiguring (--redo), or when re-checking what connectors are actually responding (--check-integrations).",
+      "source_sha256": "d98725de48cc19c97f589b4fea641f4e7f1ff199a408d3e5ae32f0092de5f0d5",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13e36e32cb3bd30a60cb919668c96e47f2dcf1e2558f89adc5fd660d6f0b211d": {
+      "description_zh": "检查拟议规则制定公告（NPRM）的开放征求意见期，提示截止日期并记录是否提交意见的决定；可追踪已提交、不提交或放弃的状态。",
+      "source": "Review open NPRM comment periods, log decisions, track deadlines. Use when an NPRM has a comment window open and you need to surface deadlines, decide whether to file, or record a filing / not-filing / waived decision (--decide CMT-ID).",
+      "source_sha256": "13e36e32cb3bd30a60cb919668c96e47f2dcf1e2558f89adc5fd660d6f0b211d",
+      "source_path": "skills/comments/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13bd7e863b43ee442abccd6ee9647185e2b594cd5edaff56732d561458d925d9": {
+      "description_zh": "单独调整监管执业配置，无需重做完整初始化访谈；支持修改关注监管机构、政策库索引、重大性阈值、缺口处理流程、信息源配置及事务工作区路径。",
+      "source": "Guided customization of your regulatory practice profile — change one thing without re-running the whole cold-start interview. Adjust watched regulators, policy library index, materiality threshold, gap response process, feed configuration, or matter workspace paths. Use when the user says \"change my [thing]\", \"add a regulator\", \"update my watchlist\", \"edit my threshold\", or \"customize\".",
+      "source_sha256": "13bd7e863b43ee442abccd6ee9647185e2b594cd5edaff56732d561458d925d9",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5403d5e44bd3d52bd9689e42de02094ae1d9257303699ad17e14499cb430caf7": {
+      "description_zh": "为监管缺口和意见追踪技能提供共用参考框架：接收政策差异分析发现的缺口，记录整改状态、展示未关闭及积压事项并分配负责人；通过 Slack 通知负责人时，每次发送均需确认。",
+      "source": "Reference: shared gap- and comment-tracker framework backing /regulatory-legal:gaps and /regulatory-legal:comments. Tracks open policy gaps with remediation status, ingests gaps from policy-diff, surfaces what's open and aging, routes to owners, and notifies gap owners via Slack with per-send confirmation. Loaded by the gaps and comments skills before doing substantive work.",
+      "source_sha256": "5403d5e44bd3d52bd9689e42de02094ae1d9257303699ad17e14499cb430caf7",
+      "source_path": "skills/gap-surfacer/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d80f92461e45f095dd88adb830963771864f603ce3fd2de5f72be1c1bb7af5fa": {
+      "description_zh": "查看尚未关闭的政策或合规缺口及整改状态，并按编号关闭已处理事项或记录风险接受决定，适用于查询缺口清单与跟踪整改进展。",
+      "source": "Open gaps tracker — what's flagged and not yet closed. Use when the user asks \"what gaps are open\", \"gap tracker\", \"remediation status\", or wants to close (--close GAP-ID) or risk-accept (--accept GAP-ID) a tracked gap.",
+      "source_sha256": "d80f92461e45f095dd88adb830963771864f603ce3fd2de5f72be1c1bb7af5fa",
+      "source_path": "skills/gaps/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b868fcac37ad6ac7ae38e43864489b20fbb91f5d45d5cda3f40e9ed466b31ca": {
+      "description_zh": "创建、列出、切换、关闭或解除当前法律事务工作区，保持不同客户及委托的上下文分离，并为实质性工作提供明确的当前事务范围。",
+      "source": "Manage matter workspaces — create, list, switch, close, or detach the active matter (practice-level). Use when working across multiple clients or matters and you need to keep one engagement's context separate from another, or when a substantive skill needs to know which matter it's working in.",
+      "source_sha256": "9b868fcac37ad6ac7ae38e43864489b20fbb91f5d45d5cda3f40e9ed466b31ca",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37f544b646f780453ec6bc865d9b1fe7ebefa9ee3e428a837c91d001678c4c1f": {
+      "description_zh": "将某项监管变化与已索引政策库逐项比对，识别受影响政策及现有缺口；适用于监管变更、政策影响或缺口分析，也可接收监管信息监测转交的重大事项。",
+      "source": "Diff a specific regulatory change against the indexed policy library. Use when a reg has changed and you need to know which policies it touches and what the gap is, when the user says \"diff this reg against our policies\", \"which policy does this affect\", or \"gap analysis\", or when reg-feed-watcher hands off a material item.",
+      "source_sha256": "37f544b646f780453ec6bc865d9b1fe7ebefa9ee3e428a837c91d001678c4c1f",
+      "source_path": "skills/policy-diff/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b6ee17e37e7d2230f861376e80ac6027634a622b6cee357afcc3e1cb1fb31ea9": {
+      "description_zh": "针对缺口追踪或政策差异分析发现的问题，生成带修订标记的政策修改建议稿，供内部审阅；该结果是初稿，不能直接应用到已批准的政策文件。",
+      "source": "Produce a proposed marked-up policy redraft that closes a gap found by /regulatory-legal:gaps or /regulatory-legal:policy-diff. A first draft for internal review — not for direct application to approved policy documents. Use when the user says \"redraft the policy\", \"draft the policy fix\", \"mark up the policy\", or when gap-surfacer hands off a gap for drafting.",
+      "source_sha256": "b6ee17e37e7d2230f861376e80ac6027634a622b6cee357afcc3e1cb1fb31ea9",
+      "source_path": "skills/policy-redraft/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26cac885f9751d3437c9c7d1bcd859b2831596e9b018882756fd06c8303479fa": {
+      "description_zh": "即时检查监管信息源，汇报上次检查之后的新增事项，并按重大性阈值过滤；支持手动检查、定时代理运行，以及对用户粘贴的监管动态进行分类和差异分析。",
+      "source": "Check regulatory feeds now and report what's new since the last check, filtered by your materiality threshold. Use when the user says \"check the feeds\", \"what's new\", \"regulatory update\", when running from the scheduled agent, or when manually pasting a regulatory development for classification and diff.",
+      "source_sha256": "26cac885f9751d3437c9c7d1bcd859b2831596e9b018882756fd06c8303479fa",
+      "source_path": "skills/reg-feed-watcher/SKILL.md",
+      "package_sha256": "3ab3e4a352e47a9ed86be8b6f57a33d560a990a2007b92d9396f9b3bf6910411",
+      "source_package": "regulatory-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00ed39c75068c6441ae9e3eebb661079d2fa7e601d868819e45d86f7dd43ce2d": {
+      "description_zh": "保存当前会话状态，便于下次会话清晰接续工作。",
+      "source": "Save session state for clean continuation next session.",
+      "source_sha256": "00ed39c75068c6441ae9e3eebb661079d2fa7e601d868819e45d86f7dd43ce2d",
+      "source_path": "skills/remember/SKILL.md",
+      "package_sha256": "b46bdbe550c8db9140330eb650eda1473e254f5c01ffb8d38b4b1c35583cea65",
+      "source_package": "remember-0.29.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45f32dcf800b5a2f69db4d2cea675d0c03e36da795635fab42d1f618e7bbf0de": {
+      "description_zh": "配置 Remote.com REST API 集成认证与访问令牌，区分客户 API token 和合作伙伴 OAuth，涵盖合作伙伴授权流程、公司同意、环境主机选择、令牌刷新及 401/403 排查；不用于编辑器内 MCP 登录、端点查询或表单与入职流程。原说明中 JWT bearer 的部分内容已隐藏。",
+      "source": "Authenticate to the Remote.com REST API and obtain access tokens for an integration. Use when setting up API access, choosing between customer (API token) and partner (OAuth) auth, implementing the four partner flows (client_credentials, authorization_code, refresh_token, JWT bearer [已隐藏], getting company consent, picking the environment/base host, handling token lifecycle/refresh, or resolving 401/403 errors. Do NOT use for the in-editor Remote MCP session (browser OAuth, handled by the host plugin), endpoint discovery (remote-api-integration), form bodies (remote-api-forms), onboarding (remote-api-onboarding), or webhooks (remote-api-webhooks).",
+      "source_sha256": "45f32dcf800b5a2f69db4d2cea675d0c03e36da795635fab42d1f618e7bbf0de",
+      "source_path": "skills/remote-api-auth/SKILL.md",
+      "package_sha256": "07db3c1c00359f248c6173a5810ae3f81fcbf0fbf56f897e70c6a6edebdce5df",
+      "source_package": "Remote.com-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4bcf037ce2cf4154dd5319846a07b50cc7e4f37247b7558cd4485c2d1d51f771": {
+      "description_zh": "按照 Remote.com 动态 JSON Schema 获取表单结构并构建、校验请求体，处理必填项、枚举、组合与条件规则、禁止字段、展示及货币属性和 422 错误；适用于公司、个人资料、合同变更、离职、承包商及福利等表单写入，完整雇用流程另用入职技能。",
+      "source": "Build and validate request bodies for Remote.com's dynamic JSON-Schema form endpoints - the schema-first mechanism behind most REST writes. Use when fetching a form schema (GET /v1/countries/{country_code}/{form}, /v1/companies/schema, /v1/contract-amendments/schema, and similar), honoring required/enum/oneOf/if-then-else, handling conditionally-forbidden fields or x-jsf-* presentation/currency, or 422 validation on any form-driven write - company creation, personal-details, contract amendments, terminations, contractor onboarding, legal-entity details, benefits. For the multi-form hire sequence use remote-api-onboarding. Do NOT use to operate via the MCP, for auth (remote-api-auth), endpoint discovery (remote-api-integration), or webhooks (remote-api-webhooks).",
+      "source_sha256": "4bcf037ce2cf4154dd5319846a07b50cc7e4f37247b7558cd4485c2d1d51f771",
+      "source_path": "skills/remote-api-forms/SKILL.md",
+      "package_sha256": "07db3c1c00359f248c6173a5810ae3f81fcbf0fbf56f897e70c6a6edebdce5df",
+      "source_package": "Remote.com-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d6d2221f23a754c6702242d4bf8d9e1aa63af84ab8e3168fc3f88b0d26b679e": {
+      "description_zh": "开发 Remote.com 全球人事、薪资及名义雇主服务的 REST API 集成，查找端点和权限范围、理解接口约定、编码金额与日期、分页及处理错误和限流；作为 REST 集成入口，不用于操作个人工作区、获取令牌或专门的表单、入职和 webhook 流程。",
+      "source": "Build integrations that call the Remote.com REST API (developer.remote.com) - global HR/payroll/EOR. Use when finding the right endpoint or scope, reading an endpoint's contract, calling REST endpoints, encoding money/dates, paging, or handling errors and rate limits - the entry point and router for any Remote REST integration task. Do NOT use to operate your own workspace (use the Remote MCP operator skills), to obtain tokens (remote-api-auth), to build a dynamic-form body (remote-api-forms), to run the hire sequence (remote-api-onboarding), or for webhooks (remote-api-webhooks).",
+      "source_sha256": "9d6d2221f23a754c6702242d4bf8d9e1aa63af84ab8e3168fc3f88b0d26b679e",
+      "source_path": "skills/remote-api-integration/SKILL.md",
+      "package_sha256": "07db3c1c00359f248c6173a5810ae3f81fcbf0fbf56f897e70c6a6edebdce5df",
+      "source_package": "Remote.com-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5deef90f18cb36c863dcfa4564af1c0222199b426faedde2cf498ebec5a21443": {
+      "description_zh": "通过 Remote.com REST API 办理员工和承包商雇用与入职，按基本信息、地址、个人资料、合同、定价及邀请的多表单顺序执行，覆盖 EOR、Global Payroll 和承包商变体；通用表单写入使用表单技能。",
+      "source": "Hire/onboard employees and contractors through the Remote.com REST API - the multi-form sequence built on remote-api-forms. Use when creating an employment (hire/onboard): the basic-information then address then personal-details then contract then pricing sequence (POST then PATCH then invite), and the EOR vs Global Payroll vs contractor variants. For generic form mechanics and non-hire form writes (amendments, personal-details, company creation) use remote-api-forms. Do NOT use to operate via the MCP, for auth (remote-api-auth), or webhooks (remote-api-webhooks).",
+      "source_sha256": "5deef90f18cb36c863dcfa4564af1c0222199b426faedde2cf498ebec5a21443",
+      "source_path": "skills/remote-api-onboarding/SKILL.md",
+      "package_sha256": "07db3c1c00359f248c6173a5810ae3f81fcbf0fbf56f897e70c6a6edebdce5df",
+      "source_package": "Remote.com-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df8023cf7d9d1172013f3bc59309f47a8c82d6cd068a33f8cfa66d61086b506f": {
+      "description_zh": "在集成中订阅、接收和验证 Remote.com webhook，构建接收端、解析扁平事件、选择事件类型并处理去重与幂等；按原始请求体、冒号和毫秒时间戳计算 HMAC-SHA256 十六进制签名并校验 X-Remote-Signature。",
+      "source": "Receive and verify Remote.com webhooks in an integration. Use when subscribing to events (POST /v1/webhook-callbacks), building a receiver, verifying the X-Remote-Signature HMAC, parsing the flat event payload, deduping/idempotency, or choosing which event_type to listen for. Covers HMAC-SHA256 hex over raw_body + ':' + millisecond timestamp. Do NOT use to operate via the MCP, for auth (remote-api-auth), outbound API calls (remote-api-integration), or form writes/onboarding (remote-api-forms / remote-api-onboarding).",
+      "source_sha256": "df8023cf7d9d1172013f3bc59309f47a8c82d6cd068a33f8cfa66d61086b506f",
+      "source_path": "skills/remote-api-webhooks/SKILL.md",
+      "package_sha256": "07db3c1c00359f248c6173a5810ae3f81fcbf0fbf56f897e70c6a6edebdce5df",
+      "source_package": "Remote.com-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf9bc0dcb2884d8a4c890ca78e9c4951ed5cd328becd8b5912d4eab8c6eb212d": {
+      "description_zh": "在 Remote 查询员工工资单、薪资历史、净收入、扣除项及工资周期明细，供员工和雇主查看；适用于 EOR、Global Payroll 和 PEO 雇佣，承包商使用发票而非工资单。",
+      "source": "View payslips, salary history, and payroll breakdowns in Remote for employees and employers. Use when the user mentions payslips, pay stubs, paychecks, salary, net pay, deductions, payroll period, pay history, or compensation breakdowns. Applies to EOR, Global Payroll, and PEO employments only — contractors use invoices instead.",
+      "source_sha256": "cf9bc0dcb2884d8a4c890ca78e9c4951ed5cd328becd8b5912d4eab8c6eb212d",
+      "source_path": "skills/remote-payroll-and-payslips/SKILL.md",
+      "package_sha256": "07db3c1c00359f248c6173a5810ae3f81fcbf0fbf56f897e70c6a6edebdce5df",
+      "source_package": "Remote.com-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c22bc4e67e952c4b9626e8252819ea83c9e7a6cc45059fbc33569c8af53d8b3": {
+      "description_zh": "为 Remote 雇主通过工具创建和下载报告，支持报告库与构建器、薪资报告、筛选条件、运行后生成文件，以及 CSV、XLS、XLSX 数据导出。",
+      "source": "Create and download reports via tools for employers. Use when asked about reports, reporting library, report builder, payroll reports, exporting report data, CSV/XLS/XLSX downloads, filtered report runs, generated report files, or required report filters.",
+      "source_sha256": "3c22bc4e67e952c4b9626e8252819ea83c9e7a6cc45059fbc33569c8af53d8b3",
+      "source_path": "skills/remote-reporting/SKILL.md",
+      "package_sha256": "07db3c1c00359f248c6173a5810ae3f81fcbf0fbf56f897e70c6a6edebdce5df",
+      "source_package": "Remote.com-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9aeb8e4a00885d0377ec8d4345f70eb6bf46fd5f4eaee8883459fa861cd7c8f0": {
+      "description_zh": "在 Remote 提交、批准、拒绝或取消休假申请，查询休假余额与待审批事项，并管理公共假日和休假政策；适用于带薪休假、年假、病假等休假工作流。",
+      "source": "Submit, approve, decline, or cancel time-off requests, check leave balances, and manage public holidays in Remote. Use when the user mentions PTO, vacation, sick days, leave, days off, time-off balances, listing pending requests, booking time off, approving or declining requests, cancelling leave, holidays, or leave policies.",
+      "source_sha256": "9aeb8e4a00885d0377ec8d4345f70eb6bf46fd5f4eaee8883459fa861cd7c8f0",
+      "source_path": "skills/remote-time-off-workflow/SKILL.md",
+      "package_sha256": "07db3c1c00359f248c6173a5810ae3f81fcbf0fbf56f897e70c6a6edebdce5df",
+      "source_package": "Remote.com-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f1b24826f5eae63b70b44a45f1c03b53de43e7eeb78abe1077ee25b8211f3ed": {
+      "description_zh": "作为 Remotion 技能的统一路由入口，将相关需求转交到对应技能。",
+      "source": "Router for all Remotion skills",
+      "source_sha256": "4f1b24826f5eae63b70b44a45f1c03b53de43e7eeb78abe1077ee25b8211f3ed",
+      "source_path": "skills/remotion-best-practices/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f7ebf06a3245590dd27ac0da314f61eea1ddb55b74ce637a8db1bce59cb8723": {
+      "description_zh": "在 Remotion 中转写字幕、显示字幕并制作字幕动画。",
+      "source": "Transcribing, displaying and animating captions",
+      "source_sha256": "5f7ebf06a3245590dd27ac0da314f61eea1ddb55b74ce637a8db1bce59cb8723",
+      "source_path": "skills/remotion-captions/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "516b5acfd25ec4ea2e7998c1aa80ad67161d9b7f5a82de2f92e26f3855f18384": {
+      "description_zh": "创建新的 Remotion 视频。",
+      "source": "Create a new Remotion video",
+      "source_sha256": "516b5acfd25ec4ea2e7998c1aa80ad67161d9b7f5a82de2f92e26f3855f18384",
+      "source_path": "skills/remotion-create/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59a3e22f3d4018b586862315e5a90cd28415375952757406d62e3bd2f3c51afd": {
+      "description_zh": "搜索 Remotion 文档。",
+      "source": "Search Remotion documentation",
+      "source_sha256": "59a3e22f3d4018b586862315e5a90cd28415375952757406d62e3bd2f3c51afd",
+      "source_path": "skills/remotion-docs/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87fa740dad6a2096e84654316118ca9e567b109836bf967f314592d27eef5ca9": {
+      "description_zh": "组织 Remotion 标记结构，以支持交互行为。",
+      "source": "Structure Remotion markup for interactivity",
+      "source_sha256": "87fa740dad6a2096e84654316118ca9e567b109836bf967f314592d27eef5ca9",
+      "source_path": "skills/remotion-interactivity/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c222ca5bcee2b1e2dbca25b960a3f4c950058660ffbe04060ecb8bc04fba9e9a": {
+      "description_zh": "提供 Remotion 地图动画的相关知识。",
+      "source": "Remotion Map animation knowledge",
+      "source_sha256": "c222ca5bcee2b1e2dbca25b960a3f4c950058660ffbe04060ecb8bc04fba9e9a",
+      "source_path": "skills/remotion-maps/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "377c686049df23815f182cea5f8eaff44ed9f7394ea53e915fb536eacf469175": {
+      "description_zh": "提供 Remotion 内容、动画和效果制作的最佳实践。",
+      "source": "Content, animation and effects best practices",
+      "source_sha256": "377c686049df23815f182cea5f8eaff44ed9f7394ea53e915fb536eacf469175",
+      "source_path": "skills/remotion-markup/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3821c6223032311b3b629c0f671ccd37f519c89d4821bd36571de4841c0793f": {
+      "description_zh": "处理 Remotion 与 Mediabunny 的交互。",
+      "source": "Interacting with Mediabunny",
+      "source_sha256": "a3821c6223032311b3b629c0f671ccd37f519c89d4821bd36571de4841c0793f",
+      "source_path": "skills/remotion-multimedia/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d833fe9e1c897622ca34548727bfe5da9a1476e5177f6b0dd19e7645d195582": {
+      "description_zh": "导出 Remotion 视频。",
+      "source": "Export a Remotion video",
+      "source_sha256": "2d833fe9e1c897622ca34548727bfe5da9a1476e5177f6b0dd19e7645d195582",
+      "source_path": "skills/remotion-render/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1aac29c6b3553da872f2167704c7355303d2fa1f678621ae243055ea2d340eb5": {
+      "description_zh": "使用 Remotion 构建应用。",
+      "source": "Build an app with Remotion",
+      "source_sha256": "1aac29c6b3553da872f2167704c7355303d2fa1f678621ae243055ea2d340eb5",
+      "source_path": "skills/remotion-saas/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "17cda31fe72a619b20c8502a4e8cfa6bdfbaa4191edc37a48ea4f2258c026270": {
+      "description_zh": "预览 Remotion 视频。",
+      "source": "Preview a Remotion video",
+      "source_sha256": "17cda31fe72a619b20c8502a4e8cfa6bdfbaa4191edc37a48ea4f2258c026270",
+      "source_path": "skills/remotion-studio/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a6d7dbca2e943c41eaea34bb7c8cdd2f6585ce9011487acc9ef53072e7e3d161": {
+      "description_zh": "升级 Remotion 及相关软件包。",
+      "source": "Upgrade Remotion, and related packages",
+      "source_sha256": "a6d7dbca2e943c41eaea34bb7c8cdd2f6585ce9011487acc9ef53072e7e3d161",
+      "source_path": "skills/remotion-upgrade/SKILL.md",
+      "package_sha256": "f3e6e6595775d4bc0754d4a399e9ca2e71f8522255d38b5bbea3e5270c80b031",
+      "source_package": "Remotion-4.0.528-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07d917553ba7c8d52e85e61f10985601424b530c8ba45209253420a183e842b0": {
+      "description_zh": "在 Render 配置消费队列的后台工作进程，支持 Celery、Sidekiq、BullMQ、Asynq 和 Oban 等异步任务框架；涵盖连接 Key Value、SIGTERM 优雅退出，以及后台进程与定时任务的选型。",
+      "source": "Sets up and configures background workers on Render for queue-based job processing. Use when the user needs to process async jobs, consume from a queue, run Celery/Sidekiq/BullMQ/Asynq/Oban workers, handle graceful shutdown with SIGTERM, wire a worker to Key Value (Redis), or choose between workers and cron jobs for background work. Trigger terms: background worker, async jobs, queue consumer, Celery, Sidekiq, BullMQ, Asynq, Oban, job processing, SIGTERM, graceful shutdown.",
+      "source_sha256": "07d917553ba7c8d52e85e61f10985601424b530c8ba45209253420a183e842b0",
+      "source_path": "skills/render-background-workers/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31a074dd7e2c048f50d0a541c980a6ff2ba108c0cacbe103f05e355ba13ba9be": {
+      "description_zh": "编写与校验 Render 基础设施的 render.yaml Blueprint，使用数据库、服务及环境变量组引用连接多服务应用；支持项目、环境、预览环境配置、Schema 校验及不可变字段错误修复。",
+      "source": "Authors and validates render.yaml Blueprints for Render infrastructure. Use when the user needs to write or edit a render.yaml, wire services together with fromDatabase/fromService/fromGroup, set up projects and environments for multi-service apps, configure preview environments, validate against the schema, or fix immutable field errors. Trigger terms: render.yaml, Blueprint, IaC, fromDatabase, fromService, envVarGroups, previews, projects, environments.",
+      "source_sha256": "31a074dd7e2c048f50d0a541c980a6ff2ba108c0cacbe103f05e355ba13ba9be",
+      "source_path": "skills/render-blueprints/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c3e7afb22ac01b5e101327d7aac9ef638aa62e358afd7bb1e2d5c405ee52db6": {
+      "description_zh": "安装与使用 Render CLI 进行部署、日志查看、SSH、psql、Blueprint 校验和自动化；支持 API key 认证、非交互服务查询、CI/CD 部署脚本及命令行认证故障排查。",
+      "source": "Installs and uses the Render CLI for deploys, logs, SSH, psql, Blueprint validation, and automation. Use when the user needs to run Render CLI commands, script deploys in CI/CD, authenticate with an API key, query services non-interactively, or troubleshoot CLI auth issues. Trigger terms: render CLI, render login, render deploys, render logs, render ssh, render psql, render blueprints validate, render skills, RENDER_API_KEY, non-interactive, CI/CD deploy.",
+      "source_sha256": "4c3e7afb22ac01b5e101327d7aac9ef638aa62e358afd7bb1e2d5c405ee52db6",
+      "source_path": "skills/render-cli/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2950d48b71faec384933269d5813b77182b6f241c25ed02f41c92bfcf14e2b9e": {
+      "description_zh": "通过 Render cron job 服务配置和排查定时任务，包括 cron 表达式、周期任务、从 Heroku Scheduler 迁移，以及定时任务与后台工作进程的选型和未触发问题诊断。",
+      "source": "Configures and troubleshoots scheduled tasks on Render using cron job services. Use when the user needs to run something on a schedule, write a cron expression, set up a periodic job, migrate from Heroku Scheduler, choose between cron jobs and background workers, or fix a cron that isn''t firing. Trigger terms: cron job, scheduled task, periodic job, cron expression, schedule, run every, timer, Heroku Scheduler migration.",
+      "source_sha256": "2950d48b71faec384933269d5813b77182b6f241c25ed02f41c92bfcf14e2b9e",
+      "source_path": "skills/render-cron-jobs/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c9084a32317682b39fd5ed2c641b67033dde548ae94d426e3d6e00e59bc9066": {
+      "description_zh": "结合日志、指标及数据库状态诊断 Render 部署失败或服务无法启动的问题，识别环境变量缺失、端口绑定、内存不足等错误并提出修复建议。",
+      "source": "Debug failed Render deployments by analyzing logs, metrics, and database state. Identifies errors (missing env vars, port binding, OOM, etc.) and suggests fixes. Use when deployments fail, services won't start, or users mention errors, logs, or debugging.",
+      "source_sha256": "8c9084a32317682b39fd5ed2c641b67033dde548ae94d426e3d6e00e59bc9066",
+      "source_path": "skills/render-debug/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9668037c7fed3876bb1fb1d34ed2a484a97434899a0d45aa361296dcb0ce755f": {
+      "description_zh": "分析代码库、生成 render.yaml Blueprint 并提供控制台直达链接，协助在 Render 云平台部署、托管或发布应用。",
+      "source": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform.",
+      "source_sha256": "9668037c7fed3876bb1fb1d34ed2a484a97434899a0d45aa361296dcb0ce755f",
+      "source_path": "skills/render-deploy/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a5340f034104fdb852f1ec7d909a46c10c97ddff5051629990acecdcbac1d3a": {
+      "description_zh": "为 Render 服务挂载和管理持久磁盘，配置挂载路径、容量、快照、文件传输及恢复；适用于上传文件、自建数据库或 CMS 媒体存储，并解释单实例约束对横向扩容和零停机部署的影响。",
+      "source": "Attaches and manages persistent disks on Render services—mount paths, sizing, snapshots, file transfers, and single-instance constraints. Use when the user needs persistent storage, file uploads, a custom database on disk, CMS media storage, or needs to understand why their service can''t scale horizontally or use zero-downtime deploys. Trigger terms: persistent disk, disk, storage, mount path, sizeGB, SSD, file uploads, snapshots, disk restore, ephemeral filesystem.",
+      "source_sha256": "7a5340f034104fdb852f1ec7d909a46c10c97ddff5051629990acecdcbac1d3a",
+      "source_path": "skills/render-disks/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0353be1831fddfb83e06385d5ef7246b430f6a6d1a9a9d632d9080abe41630f2": {
+      "description_zh": "在 Render 构建和部署 Docker 容器，处理 Dockerfile、多阶段构建、Blueprint Docker 字段、私有镜像仓库、层缓存及平台限制，也适用于优化容器构建。",
+      "source": "Builds and deploys Docker containers on Render—Dockerfiles, multi-stage builds, Blueprint Docker fields, private registries, layer caching, and platform constraints. Use when the user mentions Docker, Dockerfile, container images, multi-stage builds, container registry, GHCR, ECR, BuildKit, dockerContext, runtime docker or image, or optimizing Docker builds on Render.",
+      "source_sha256": "0353be1831fddfb83e06385d5ef7246b430f6a6d1a9a9d632d9080abe41630f2",
+      "source_path": "skills/render-docker/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b788bbc49253aee8a9df73ca5c6d05cf1f0bc9ceffac3a923782a11a0d1625ee": {
+      "description_zh": "配置 Render 自定义域名与 TLS 证书，处理 DNS、CNAME、根域、通配域、域名验证及证书签发故障；也支持停用 onrender.com 子域名。",
+      "source": "Configures custom domains and TLS certificates on Render—DNS setup, CNAME records, apex domains, wildcard domains, and certificate troubleshooting. Use when the user needs to add a custom domain, configure DNS, set up HTTPS/TLS, troubleshoot certificate issuance, disable the onrender.com subdomain, or add a wildcard domain. Trigger terms: custom domain, DNS, CNAME, TLS, SSL, HTTPS, certificate, apex domain, wildcard domain, onrender.com, domain verification.",
+      "source_sha256": "b788bbc49253aee8a9df73ca5c6d05cf1f0bc9ceffac3a923782a11a0d1625ee",
+      "source_path": "skills/render-domains/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1c8fe5218939d3a5bb2812485f3793bb7acd5361d51dfb4cbc7535e2ff8140b": {
+      "description_zh": "在 Render 配置环境变量、密钥和环境变量组，跨服务连接密钥并使用 generateValue、sync: false 等 Blueprint 配置；排查控制台或 Blueprint 中缺失、错误的变量值。",
+      "source": "Configures environment variables, secrets, and env groups on Render. Use when the user needs to set env vars, wire secrets between services, create env groups, use generateValue, set sync: false, or troubleshoot missing or incorrect environment variable values in Blueprints or the Dashboard.",
+      "source_sha256": "f1c8fe5218939d3a5bb2812485f3793bb7acd5361d51dfb4cbc7535e2ff8140b",
+      "source_path": "skills/render-env-vars/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63510f4e87c7462295337a5309d0e7c88bb9f6b6bf0e6805822d682346019c53": {
+      "description_zh": "创建和配置 Render Key Value 实例，用于缓存、会话存储及任务队列；原说明将其描述为兼容 Redis 的 Valkey 8，涵盖内存淘汰策略、IP 允许列表、连接字符串与内外网访问。",
+      "source": "Provisions and configures Render Key Value (Redis-compatible Valkey 8) instances for caching, session storage, and job queues. Use when the user needs Redis, Key Value, Valkey, a cache, session store, job queue backend, or needs to configure maxmemory policy, ipAllowList, connection strings, or internal vs external access. Trigger terms: Key Value, Redis, Valkey, cache, session store, REDIS_URL, maxmemory, ipAllowList, allkeys-lru, noeviction.",
+      "source_sha256": "63510f4e87c7462295337a5309d0e7c88bb9f6b6bf0e6805822d682346019c53",
+      "source_path": "skills/render-keyvalue/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3e780f2d97893a73a6592f4baea575c1b90198e8d668d83ace86f98500039c7": {
+      "description_zh": "为 Cursor、Claude Code、Codex 等编码工具连接和配置 Render MCP，处理认证、工作区选择、工具目录及故障排查；适用于首次配置、list_services 失败或依赖 MCP 的技能尚未连接。原说明部分 Bearer 内容已隐藏。",
+      "source": "Connects and configures the Render MCP server for AI coding tools—setup per tool (Cursor, Claude Code, Codex), authentication, workspace selection, tool catalog, and troubleshooting. Use when MCP is not configured, list_services() fails, the user asks about Render MCP setup, or an action skill needs MCP but it''s not connected yet. Trigger terms: MCP, Render MCP, list_services, MCP setup, MCP server, OAuth, API key, Bearer [已隐藏], mcp.render.com, workspace selection.",
+      "source_sha256": "b3e780f2d97893a73a6592f4baea575c1b90198e8d668d83ace86f98500039c7",
+      "source_path": "skills/render-mcp/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b894dcac341918e4c76fd83a5869e83520569423143bc49328d40ba45890ede": {
+      "description_zh": "读取本地 Procfile、依赖及应用配置，将 Heroku 应用迁移为等效 Render 服务；可通过 Heroku MCP 补充实时变量、附加服务与 dyno 规格，再用 Render MCP 或 Blueprint YAML 创建服务。",
+      "source": "Migrate from Heroku to Render by reading local project files and generating equivalent Render services. Triggers: any mention of migrating from Heroku, moving off Heroku, Heroku to Render migration, or switching from Heroku. Reads Procfile, dependency files, and app config from the local repo. Optionally uses Heroku MCP to enrich with live config vars, add-on details, and dyno sizes. Uses Render MCP or Blueprint YAML to create services.",
+      "source_sha256": "6b894dcac341918e4c76fd83a5869e83520569423143bc49328d40ba45890ede",
+      "source_path": "skills/render-migrate-from-heroku/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "17d108a8db4e68acb011db2b008a8a42981544373ccb24a548c0cd564e671def": {
+      "description_zh": "实时查看 Render 服务健康状态、性能指标、日志和资源使用量，适用于服务状态检查、性能监测及部署健康验证。",
+      "source": "Monitor Render services in real-time. Check health, performance metrics, logs, and resource usage. Use when users want to check service status, view metrics, monitor performance, or verify deployments are healthy.",
+      "source_sha256": "17d108a8db4e68acb011db2b008a8a42981544373ccb24a548c0cd564e671def",
+      "source_path": "skills/render-monitor/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21a25bcc219a629f80e97598f1a1aaa6b01f07ae463142b7269c3afbac886035": {
+      "description_zh": "通过 Render 私有网络连接服务，配置内部 DNS、服务发现和跨服务通信，排查内部主机名与连通性，并理解环境隔离和服务可达范围。",
+      "source": "Connects Render services over the private network—internal DNS, service discovery, and cross-service communication. Use when the user needs to wire services together, resolve internal hostnames, troubleshoot connectivity between services, configure environment isolation, or understand which services can reach each other.",
+      "source_sha256": "21a25bcc219a629f80e97598f1a1aaa6b01f07ae463142b7269c3afbac886035",
+      "source_path": "skills/render-networking/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99cdd12ee5ba819d07828347369a5f5cf7a05f47b2a18c07451998b8b67e53f9": {
+      "description_zh": "设置和优化 Render 托管 PostgreSQL，涵盖内外网连接字符串、创建约束、存储自动扩容、连接上限、高可用、只读副本、备份和 MCP 检查；也支持连接池及数据库连接故障排查。",
+      "source": "Sets up and optimizes Managed PostgreSQL on Render—connection strings (internal vs external), creation constraints, storage autoscaling, connection limits, high availability, read replicas, backups, and MCP inspection. Use when the user mentions Postgres, PostgreSQL, Render database, connection string, DATABASE_URL, backups, snapshots, replicas, HA, disk storage, connection pooling, or troubleshooting DB connectivity.",
+      "source_sha256": "99cdd12ee5ba819d07828347369a5f5cf7a05f47b2a18c07451998b8b67e53f9",
+      "source_path": "skills/render-postgres/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df0e186ebc75003842d1f7ae84cbd982b8119cf71d91f71e9cdb71f89474a6c1": {
+      "description_zh": "配置仅接收 Render 私有网络内部流量的私有服务，适用于内部 API、微服务、gRPC 或 sidecar；帮助判断应采用私有服务还是后台工作进程。",
+      "source": "Configures Render private services—internal-only apps that accept traffic exclusively from other Render services over the private network. Use when the user needs an internal API, microservice, gRPC server, sidecar, or any service that should not be publicly accessible. Also use when choosing between a private service and a background worker. Trigger terms: private service, pserv, internal service, internal API, microservice, gRPC, not public, private network service.",
+      "source_sha256": "df0e186ebc75003842d1f7ae84cbd982b8119cf71d91f71e9cdb71f89474a6c1",
+      "source_path": "skills/render-private-services/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "886163feecb1049ebceaa65ae080c004369a42adf0678dbd7f431861449643b1": {
+      "description_zh": "扩缩 Render 服务，配置自动扩容目标、实例规格及手动实例数量，并优化成本；适用于流量增长、缩容缓慢、实例卡住或其他扩缩容行为排查。",
+      "source": "Scales Render services—configures autoscaling targets, chooses instance types, sets manual instance counts, and optimizes cost. Use when the user needs to handle more traffic, set up autoscaling, pick the right instance type, reduce costs, or troubleshoot scaling behavior like slow scale-down or stuck instances.",
+      "source_sha256": "886163feecb1049ebceaa65ae080c004369a42adf0678dbd7f431861449643b1",
+      "source_path": "skills/render-scaling/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "569535edfc8d5f77f1141822c6329f82fb3059c8a1c91dc27f1bd664ca335480": {
+      "description_zh": "在 Render 全球 CDN 部署和配置静态站点，设置构建命令、发布路径、单页应用回退路由、重定向、自定义响应头和 PR 预览；支持 React、Vue、Hugo、Gatsby 等前端与静态站点或 Web 服务选型。",
+      "source": "Deploys and configures static sites on Render''s global CDN—build commands, publish paths, SPA routing, redirects, custom headers, and PR previews. Use when the user needs to deploy a static site, set up a React/Vue/Hugo/Gatsby frontend, configure SPA fallback routing, add redirect rules, customize response headers, or choose between a static site and a web service for their frontend. Trigger terms: static site, CDN, SPA, single-page app, React deploy, Vue deploy, Hugo, Gatsby, Docusaurus, Jekyll, staticPublishPath.",
+      "source_sha256": "569535edfc8d5f77f1141822c6329f82fb3059c8a1c91dc27f1bd664ca335480",
+      "source_path": "skills/render-static-sites/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "456259d4d594059f12b6e9767479f4cd5a30624b4f1827c1f087e1824a7ff27e": {
+      "description_zh": "配置 Render Web 服务的端口、TLS、健康检查、域名、自动部署、PR 预览、持久磁盘和部署生命周期；排查健康检查失败及端口绑定问题，并设置零停机部署。",
+      "source": "Configures Render web services—port binding, TLS, health checks, custom domains, auto-deploy, PR previews, persistent disks, and deploy lifecycle. Use when the user needs to set up a web service, fix health check failures, add a custom domain, configure zero-downtime deploys, or troubleshoot port binding issues.",
+      "source_sha256": "456259d4d594059f12b6e9767479f4cd5a30624b4f1827c1f087e1824a7ff27e",
+      "source_path": "skills/render-web-services/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4500f83d30c713ab7134644ac689ad8800178324587b23dbe09a66c149742c29": {
+      "description_zh": "搭建、开发、测试和部署 Render Workflows，涵盖命令行或手动脚手架、Python 或 TypeScript SDK、重试、子任务、扇出模式、本地开发及控制台部署和故障排查。",
+      "source": "Sets up, develops, tests, and deploys Render Workflows. Covers first-time scaffolding (via CLI or manual), SDK installation (Python or TypeScript), task patterns (retries, subtasks, fan-out), local development, Dashboard deployment, and troubleshooting. Use when a user wants to set up Render Workflows for the first time, scaffold a workflow service, add or modify workflow tasks, test workflows locally, or deploy workflows to Render.",
+      "source_sha256": "4500f83d30c713ab7134644ac689ad8800178324587b23dbe09a66c149742c29",
+      "source_path": "skills/render-workflows/SKILL.md",
+      "package_sha256": "114837c4f9807cc4c5a8b70fb73103f1c0364e6270d8cbc55dfefafcd5ec2f5c",
+      "source_package": "Render-0.2.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "640f578dc9213b86a1f669299ffc9fa083d218cca7f5824082de11b5907f28e8": {
+      "description_zh": "编写 HTML/SVG 并用本地无头 Chromium 渲染清晰的 PNG、JPEG 或 PDF 图表、幻灯片和社交卡片，提供八种主题、确定性的 Mermaid 流程排版及截图或照片设备边框与形状裁切；不用于数据集绘图、实时 UI 截图或照片精修，无 shell 环境可改写内联 SVG。",
+      "source": "**DELIVERY SKILL** — Produce polished diagrams, slides and social cards as crisp PNGs, JPEGs or PDFs by authoring HTML/SVG and rendering it with a local headless Chromium. Eight themes (ember, slate, paper, terminal, blueprint, frost, neon, sepia), one flag. Lays mermaid flowchart text out into a figure, deterministically. Also frames screenshots and photos in a browser, phone or terminal frame, or cropped to a shape. USE FOR: architecture and flow diagrams, slide decks, og/social cards, blog and README figures, any designed image a doc needs. DO NOT USE FOR: data charts from datasets (use a plotting library), capturing a live UI, photo retouching, or any surface without a shell — write inline SVG. TRIGGERS: mermaid, flowchart TD, graph TD, diagram, flow chart, architecture visual, swimlane, tree view, cluster, deployment, mind map, slide deck, presentation, og card, social card, banner, blog figure, browser frame, device mockup, render a png, export a pdf or jpeg, make an image, visual.",
+      "source_sha256": "640f578dc9213b86a1f669299ffc9fa083d218cca7f5824082de11b5907f28e8",
+      "source_path": "skills/render-visual/SKILL.md",
+      "package_sha256": "31a11653bbb962d123a6d6262e69aeb7d5237eaec183f018c80c419b630f4eb8",
+      "source_package": "render-visual-skill-1.0.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1237aff2c91161db82b1183d40c8ccc4d694c2a8d0cacc2917cebb1a9be78b28": {
+      "description_zh": "以证据分级审计 CLAUDE.md、AGENTS.md、规则目录等代理上下文及周边配置，按加载方式和强制执行依据分类每条规则，检验是否应保留、提升、降低、合并、删除或测量；仅输出建议差异，不自动应用。",
+      "source": "Every always-loaded line pays rent or gets cut. Evidence-tiered audit of agent context files (CLAUDE.md, AGENTS.md, rules dirs) and the surface around them: classifies every rule by load class and enforcement backing, applies removal and reality tests with cited evidence tiers, and returns KEEP/PROMOTE/DEMOTE/MERGE/CUT/MEASURE verdicts as proposed diffs — never auto-applied.",
+      "source_sha256": "1237aff2c91161db82b1183d40c8ccc4d694c2a8d0cacc2917cebb1a9be78b28",
+      "source_path": "skills/rent-check/SKILL.md",
+      "package_sha256": "180e4ede206f40f28747b16d15c7b1f611e33f6483fceaef06719e79d16e3a93",
+      "source_package": "rent-check-0.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5af09fce25a96b05705a0fc0b1ca71d5c022d6ea748748843e62c7d9a749a983": {
+      "description_zh": "通过 reo_get_account_research 复合端点生成公司的可视化客户研究报告，汇总销售背景、买方情报、招聘信号、互动活动和联系人资料，适用于公司简报与客户通话准备；输出内联显示的深色 HTML 仪表盘。",
+      "source": "Generate a comprehensive, visual account research dashboard for any company using the fast reo_get_account_research composite endpoint. Use this skill whenever the user asks to \"research an account\", \"pull up account intel\", \"get me a brief on [company]\", \"show me what's going on at [company]\", \"run account research\", or anything similar. Also trigger this skill when the user mentions a company name or domain and wants sales context, buyer intel, hiring signals, engagement activity, or contact information. Even vague prompts like \"what do we know about [company]?\" or \"prep me for my call with [company]\" should trigger this skill. Output is always a dark-mode HTML dashboard rendered inline.",
+      "source_sha256": "5af09fce25a96b05705a0fc0b1ca71d5c022d6ea748748843e62c7d9a749a983",
+      "source_path": "skills/account-research-v2/SKILL.md",
+      "package_sha256": "0dbbce965ae00a0b9940a508c9f766a3fbdce5bb92de3d130e838b12aa85ea15",
+      "source_package": "Reo.Dev Your Developer GTM Copilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71de41fdeb830b6627dd904d9a6183ed3fbfb231f59a9e36bc727a3ca1f3c3ef": {
+      "description_zh": "利用 reo_get_daily_focus_list 一次获取已评分、排序和补充资料的客户，结合理想客户匹配度、开发者漏斗阶段、活动分数及近期动量，按区域和 CRM 阶段严格筛选，生成 SDR 或客户经理当天应重点跟进的客户清单。",
+      "source": "Generates a holistic, scored, SDR/AE-ready list of accounts to focus on today —\ncombining ICP fit, dev funnel stage, activity score, and recency momentum signals\nfrom reo, with territory and CRM stage acting as hard filters. Uses the fast\nreo_get_daily_focus_list composite endpoint — a single API call that returns\npre-scored, pre-ranked, pre-enriched accounts. Use this skill whenever someone\nasks: \"what accounts should I focus on today?\", \"give me my daily account list\",\n\"who should I call today?\", \"prioritize my accounts\", \"show me my hot list\",\n\"rank accounts by fit\", \"build my SDR list\", \"score my accounts\", or any request\nfor a ranked or scored account list. Always trigger this skill for daily pipeline\ntriage workflows.",
+      "source_sha256": "71de41fdeb830b6627dd904d9a6183ed3fbfb231f59a9e36bc727a3ca1f3c3ef",
+      "source_path": "skills/daily-account-prioritizer-v2/SKILL.md",
+      "package_sha256": "0dbbce965ae00a0b9940a508c9f766a3fbdce5bb92de3d130e838b12aa85ea15",
+      "source_package": "Reo.Dev Your Developer GTM Copilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18ebe3595eed7f3900410d2464e443b0ec54cea8c57edfee11e32fc35917765e": {
+      "description_zh": "利用 reo 公开 LinkedIn 资料构建目标公司的工程组织树，按 CTO、主管、经理及个人贡献者层级和平台、数据、前后端、运维及安全等子团队分组；叠加活动信号，以绿、黄、灰区分活跃、过期及无信号人员，输出交互式 HTML。",
+      "source": "Builds a visual, top-to-bottom engineering org chart for any target account using reo open data (LinkedIn profiles) with reo activity signals overlaid on every node. Shows the full engineering hierarchy — CTO/VP Eng → Directors → Managers → Senior ICs → ICs — grouped by sub-team (Platform, Data/ML, Backend, Frontend, DevOps/SRE, Security). Signal-active employees are highlighted green; stale signals are amber; no signals are grey. Output is always an interactive HTML tree diagram rendered inline via show_widget.\nUse this skill whenever the user asks for: \"engineering org chart for [company]\", \"map the eng team at [company]\", \"show me the engineering hierarchy at [company]\", \"who leads engineering at [company]\", \"top to bottom eng team for [company]\", \"who are the engineers at [company]\", \"build me an org chart\", or any request to visualise, map, or understand the engineering structure at a named account. Also trigger when researching a company's engineering team size, leadership, or sub-team breakdown.",
+      "source_sha256": "18ebe3595eed7f3900410d2464e443b0ec54cea8c57edfee11e32fc35917765e",
+      "source_path": "skills/engineering-org-chart/SKILL.md",
+      "package_sha256": "0dbbce965ae00a0b9940a508c9f766a3fbdce5bb92de3d130e838b12aa85ea15",
+      "source_package": "Reo.Dev Your Developer GTM Copilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e48e352b41f9a7fec243f5e818df6161104417248fd4a00fdcb7bb41562e5be5": {
+      "description_zh": "读取 Google Calendar 中当天、指定日期或整周客户会议，通过 reo-gateway MCP 为每场生成结构化准备简报，结合客户互动、招聘和潜在客户信号，以及按邮箱与姓名匹配的参会者情报；原说明称其取代旧版通话准备与周会议摘要技能。",
+      "source": "Preps customer meetings for a sales rep — fetches events from Google Calendar (today, a specific day, or the whole week) and generates a structured brief for each meeting using the reo-gateway MCP. Each brief combines per-meeting account intel (engagement, signals, hiring, prospects) with per-attendee intel matched by email and name. Supersedes the older call-prep-sheet and weekly-meeting-digest skills that were built on the legacy reo MCP. Trigger this skill whenever the user asks to \"prep my calls\", \"prep today\", \"prep my week\", \"what's on my calendar\", \"get me ready for my meetings\", \"prep [company] call\", \"Monday briefing\", \"call prep\", or any phrasing that implies \"help me get ready for the customer meetings on my calendar\". Also trigger when the user references a specific meeting they have coming up and wants background on it.",
+      "source_sha256": "e48e352b41f9a7fec243f5e818df6161104417248fd4a00fdcb7bb41562e5be5",
+      "source_path": "skills/sales-call-prep/SKILL.md",
+      "package_sha256": "0dbbce965ae00a0b9940a508c9f766a3fbdce5bb92de3d130e838b12aa85ea15",
+      "source_package": "Reo.Dev Your Developer GTM Copilot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "630e19edad1bbcc29245ec8a63cf6b2233dc68d405d03f0633ba8ca7b8ad0184": {
+      "description_zh": "将指定品牌的颜色、字体或标识应用到 Replo 站点、页面或区块，保留用户指定的作用范围与属性。",
+      "source": "Use when applying a brand to a Replo site, page, or section, including requested colors, fonts, or logo. Preserve the requested surface and attributes.",
+      "source_sha256": "630e19edad1bbcc29245ec8a63cf6b2233dc68d405d03f0633ba8ca7b8ad0184",
+      "source_path": "skills/apply-branding/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffd811f99c364952edfb4af6aab51e8e122871185489529fb01184899467c869": {
+      "description_zh": "克隆并编辑采用 Next.js App Router 的 Replo 站点代码，创建、修改、扩展或重新设计页面和区块，涵盖落地页、商品与集合页、布局、样式、图片、翻译和路由；部署使用发布技能。",
+      "source": "Use when creating, editing, extending, or restyling any page or section of a Replo site — landing pages, product and collection pages, layouts, styling, images, translations, or routing. Replo sites are Next.js App Router repos you clone and edit. Triggers: make me a page, create a landing page, build a product page, update the about page, add a section, restyle this, make this a component, translate my site. To deploy, use the publish skill.",
+      "source_sha256": "ffd811f99c364952edfb4af6aab51e8e122871185489529fb01184899467c869",
+      "source_path": "skills/building-replo-pages/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9d470c87fee566d76db7ba833dd82e49c104846c0973c0cc0fb915dce4229ec": {
+      "description_zh": "连接、添加、验证或排查 Replo 自定义域名，配置根域或子域 DNS，诊断验证失败、待处理或过期状态、拒绝连接及异常跳转，并查询已有域名所需 DNS 记录。",
+      "source": "Use when a user asks to connect, add, verify, check, or troubleshoot a custom domain, configure DNS records, set up a root/apex/naked domain, or set up a subdomain. Also use when DNS verification fails, a domain is stuck pending, the user needs to see what DNS records to configure for an existing domain, or a domain shows \"refused to connect\" or redirects unexpectedly. Triggers: \"connect my domain\", \"add a custom domain\", \"set up example.com\", \"DNS records\", \"domain not working\", \"domain pending\", \"domain stale\", \"verify my domain\", \"activate domain\", \"what DNS records do I need\", \"domain stuck\", \"domain not verifying\", \"refused to connect\", \"www not working\", \"domain redirecting\".",
+      "source_sha256": "f9d470c87fee566d76db7ba833dd82e49c104846c0973c0cc0fb915dce4229ec",
+      "source_path": "skills/custom-domains/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "344052f6c6ce7ffce56de3b60410fdbfcbb436984db7254f9576a4a9b79fdfcf": {
+      "description_zh": "通过项目的 Figma 连接读取文件、节点、组件和样式，按 Figma 设计构建或重建页面，并修正对应字体、布局、间距及图片，使页面与指定设计相符。",
+      "source": "REQUIRED when the user wants to build, rebuild, recreate, replicate, or match a Figma design, frame, or page, or to correct the fonts, layout, spacing, or imagery of a page built from one. Triggers: a figma.com link, \"from Figma\", \"this Figma file\", \"match the Figma\". Also covers reading Figma files, nodes, components, and styles through the project's Figma connection.",
+      "source_sha256": "344052f6c6ce7ffce56de3b60410fdbfcbb436984db7254f9576a4a9b79fdfcf",
+      "source_path": "skills/figma/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2698154e92590d4102ea70bfc7b3f0947014e04bda5bd69f56e0e2076505ca46": {
+      "description_zh": "通过 git.replo.app 或站点 clone_url 在 Replo 外克隆、拉取、推送或运行站点代码，适用于本机、CI 或编码代理开发；解释分支、PR 与审阅支持、推送 main 是否发布，以及如何避免未完成工作上线。",
+      "source": "Use when cloning, pulling, pushing, or running a Replo site's code outside Replo — on a laptop, in CI, or from a coding agent — through git.replo.app or a site's clone_url. Also use when the user asks which branches Replo supports, whether Replo has pull requests or review, whether pushing to main deploys or publishes, why pushed changes did or did not go live, or how to keep unfinished local work from being published. Triggers: \"clone my site\", \"work on my site locally\", \"replo-git\", \"git.replo.app\", \"push to main\", \"does pushing deploy\", \"branches\", \"pull request\", \"review before publishing\", \"local dev server\".",
+      "source_sha256": "2698154e92590d4102ea70bfc7b3f0947014e04bda5bd69f56e0e2076505ca46",
+      "source_path": "skills/local-development/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "945dd095302fe88229ddf54210cae277d64188abe35e598dde6a28f32105b700": {
+      "description_zh": "为使用 Okendo 评论数据的 Replo 页面提供数据加载模式；原说明要求生成页面前读取，以避免采用错误的架构。",
+      "source": "REQUIRED before generating pages with Okendo review data. Contains mandatory data loading patterns — code generated without reading this skill will use incorrect architecture.",
+      "source_sha256": "945dd095302fe88229ddf54210cae277d64188abe35e598dde6a28f32105b700",
+      "source_path": "skills/okendo/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb85cd45d4705ea305a49c20e3fa267641d86ed4a39fad0fd11ba92effd0ae15": {
+      "description_zh": "为展示商品数据的页面或组件规定商品展示、定价及描述渲染规则，适用于 Shopify 与 Replo 商品；原说明要求构建前读取。",
+      "source": "REQUIRED when building any page or component that displays product data. Contains product display requirements, pricing guidelines, and description rendering rules. Applies to both Shopify and Replo products.",
+      "source_sha256": "eb85cd45d4705ea305a49c20e3fa267641d86ed4a39fad0fd11ba92effd0ae15",
+      "source_path": "skills/product-display/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "872fab22eeef62bf436837445ebf28f0ecca764a27525de39d82c3e3513aad1b": {
+      "description_zh": "处理 Replo 站点发布、部署与上线；原说明规定先读取此技能，且仅通过 publish_site 工具发布，不能直接在 bash 运行构建或部署命令。",
+      "source": "REQUIRED when the user asks to publish, deploy, go live, push live, make changes live, or ship. You MUST load this skill before taking any publish action. The `publish_site` tool is the ONLY way to publish — never run build or deploy commands directly via bash. Triggers: \"publish\", \"deploy\", \"go live\", \"make it live\", \"push live\", \"ship it\", \"publish the site\", \"deploy my changes\", \"publish all\", \"publish everything\", \"publish all my sites\".",
+      "source_sha256": "872fab22eeef62bf436837445ebf28f0ecca764a27525de39d82c3e3513aad1b",
+      "source_path": "skills/publish/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c1fedd36de0eba6b4bd318631151d3e6f197ba5c1137a3757b9acdbb2887296": {
+      "description_zh": "使用 query_replo_analytics MCP 工具对 Replo 分析数据运行 ClickHouse SQL，查询浏览量、会话、购买和转化率或构建自定义分析；也涵盖像素、特定 Meta 广告及广告组查询。",
+      "source": "Guide for using the `query_replo_analytics` MCP tool to run ClickHouse SQL queries against Replo analytics data.\nReference when: the agent needs to query analytics data, understand page views, sessions, purchases, conversion rates, or build custom analytics queries.\nAlso load for pixel-related queries, e.g. when querying for specific meta ads/adsets, etc",
+      "source_sha256": "9c1fedd36de0eba6b4bd318631151d3e6f197ba5c1137a3757b9acdbb2887296",
+      "source_path": "skills/querying-analytics/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5f2c13fb36e934020e3208e716ac8f3b566016f4b2c2ca3b97741bb873614c4": {
+      "description_zh": "为使用 Rebuy 商品推荐数据的 Replo 页面提供数据加载模式；原说明要求生成页面前读取，以避免架构错误。",
+      "source": "REQUIRED before generating pages with Rebuy product recommendation data. Contains mandatory data loading patterns — code generated without reading this skill will use incorrect architecture.",
+      "source_sha256": "b5f2c13fb36e934020e3208e716ac8f3b566016f4b2c2ca3b97741bb873614c4",
+      "source_path": "skills/rebuy/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "422115cbcd1b73c91ff1b837b3173bef17ca3969b8d8b6d51cec042baf55fe8d": {
+      "description_zh": "通过向 Replo 会话描述需求，创建或更新品牌套件，从网站或 Figma URL 提取品牌并应用品牌样式。",
+      "source": "Use when creating or updating a Replo brand kit — extracting a brand from a website URL, handling a Figma URL as the brand source, and applying the brand — all by prompting a Replo session.",
+      "source_sha256": "422115cbcd1b73c91ff1b837b3173bef17ca3969b8d8b6d51cec042baf55fe8d",
+      "source_path": "skills/replo-branding/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c531f2f7343e036c4941b4e6ae9103edf2f25da7c6c26fc4930e5e5a0faab3b3": {
+      "description_zh": "作为 Replo 连接器工作入口，解释项目结构、各部分的读写工具以及只能通过会话描述完成的操作，涵盖电商站点、品牌套件、分析报告、商品订单、媒体、集成、域名、定时任务、技能和计划。",
+      "source": "Use whenever a request touches Replo through the Replo connector: ecommerce sites and pages, brand kits (Brand Studio), Insights analytics and reports, Replo-managed products and orders, media assets, integrations, custom domains, scheduled tasks, skills, or plans. Explains how a Replo project is structured, which connector tools read or write each part, and what can only be done by describing it to a Replo session. Triggers include \"build me a landing page\", \"set up my brand\", \"how is my site performing\", \"publish my site\", \"connect my domain\", \"schedule a weekly report\", \"make me a store\".",
+      "source_sha256": "c531f2f7343e036c4941b4e6ae9103edf2f25da7c6c26fc4930e5e5a0faab3b3",
+      "source_path": "skills/replo/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "258e1917aa7ca6c4965c9a0fd85c62d1fffea3ca75aa54eb7576b5d92c9af876": {
+      "description_zh": "诊断 Replo 页面在编辑器或 Chrome 正常、在移动端、Safari/iOS 或发布后异常的渲染差异，包括图片变形、区块高度、溢出、圆角裁切、固定底栏、工具栏遮挡、粘性页眉、渐变文字、自动播放及动画闪烁；重点检查 WebKit 差异。",
+      "source": "Use when a page looks correct in the editor/preview or on the user''s laptop but wrong somewhere else — especially \"only on mobile\", \"only on my phone/iPhone/iPad\", \"only on the live page\", \"only after publishing\", \"broken in Safari\", \"fine in Chrome but not Safari\", images that collapse/squish/stretch, sections shorter than expected, content overflowing, rounded corners not clipping, a sticky/fixed bottom bar or footer/checkout/CTA that is cut off or won''t stay pinned to the bottom on mobile, content hidden behind the toolbar or home indicator, sticky headers jumping, gradient text showing solid, autoplay video not playing on mobile, or animation flicker. These are almost always WebKit (Safari/iOS) rendering differences, not editor bugs. Load before diagnosing or \"fixing\" a difference that only appears on a real device or the published URL.",
+      "source_sha256": "258e1917aa7ca6c4965c9a0fd85c62d1fffea3ca75aa54eb7576b5d92c9af876",
+      "source_path": "skills/safari-rendering/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8986341f2933cd875278b714bd217a44ceb296336dbf7e138d5625c1f79a8880": {
+      "description_zh": "提供 Replo 中 Shopify、Shop Pay、商品、metafield 和 metaobject 的数据加载模式；原说明要求使用 Shopify 工具或生成含商品数据页面前读取。",
+      "source": "REQUIRED before using any Shopify tools or generating pages with product data. Contains mandatory data loading patterns — code generated without reading this skill will use incorrect architecture. Use when user asks about Shopify, Shop Pay, Shopify products, metafields or metaobjects, etc",
+      "source_sha256": "8986341f2933cd875278b714bd217a44ceb296336dbf7e138d5625c1f79a8880",
+      "source_path": "skills/shopify/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9a38074f2c4af7c94ef6ddc46990a5aea7bbf42d1d448885cdbcbe99c019118": {
+      "description_zh": "按 Replo 站点元数据约定修改标题、描述、OG 图片、社交预览、favicon 及 noindex 搜索可见性等站点设置。",
+      "source": "Use when the user asks to change the site's title, description, OG image, social preview, favicon, or search-engine visibility (noindex), or any field they describe as \"site settings\". Triggers include \"update the OG image\", \"change the site title\", \"set the description\", \"fix the social preview\", \"hide from Google\", \"add a favicon\".",
+      "source_sha256": "c9a38074f2c4af7c94ef6ddc46990a5aea7bbf42d1d448885cdbcbe99c019118",
+      "source_path": "skills/site-metadata-conventions/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21fb97e52f8174c5a3d258970db5cd48a040f51f107f149ed8a30666c6b78913": {
+      "description_zh": "为使用 Smile.io 数据的会员忠诚度落地页提供数据加载模式；原说明要求构建页面前读取，以避免架构错误。",
+      "source": "REQUIRED before building loyalty landing pages with Smile.io data. Contains mandatory data loading patterns — code generated without reading this skill will use incorrect architecture.",
+      "source_sha256": "21fb97e52f8174c5a3d258970db5cd48a040f51f107f149ed8a30666c6b78913",
+      "source_path": "skills/smile-io-integration/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4abf7bfb78eaa5bf8ae5453ab735afca1553b184ef9211689c630034c74f03af": {
+      "description_zh": "在 Replo 页面开展 Statsig A/B 实验前采用规定的服务端分组模式，结合稳定 ID cookie 与数据加载器，避免错误版本闪现、访客分组错误或实验结果未记录。",
+      "source": "REQUIRED before running a Statsig A/B experiment on a page. Contains the mandatory SSR cohorting pattern (stable-ID cookie + data loader) — code generated without reading this skill will flash the wrong variant, mis-bucket visitors, or fail to record results.",
+      "source_sha256": "4abf7bfb78eaa5bf8ae5453ab735afca1553b184ef9211689c630034c74f03af",
+      "source_path": "skills/statsig/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b768f01a07d7f15147b75b6ab7c6ce76f7a00741baf567364582077c2af87227": {
+      "description_zh": "在 Replo 添加、安装、移除或修改分析与营销追踪脚本、像素和标签，涵盖 GA4、GTM、Meta 等平台；也处理 Cookiebot、同意管理平台、同意横幅样式及运行时尊重用户同意的脚本逻辑。",
+      "source": "Use when the user asks to add, install, remove, or change an analytics or marketing tracking script, pixel, or tag — GA4 / Google Analytics, Google Tag Manager (GTM), Meta / Facebook pixel, TikTok, Pinterest, Reddit, Snapchat, Hotjar, Microsoft Clarity, Contentsquare, Triple Whale, Elevar, Segment, Northbeam, Converge, Cookiebot — or pastes a raw `<script>` tag and says \"put this on my page\", or mentions cookie consent, Cookiebot, a consent management platform (CMP), GDPR/CCPA compliance, customizing/restyling/replacing the cookie consent banner, or making a script respect consent at runtime (window.Replo.customerPrivacy / visitorConsentCollected).",
+      "source_sha256": "b768f01a07d7f15147b75b6ab7c6ce76f7a00741baf567364582077c2af87227",
+      "source_path": "skills/tracking-scripts/SKILL.md",
+      "package_sha256": "da0d2abbc568e3171ae36470ea3e22137b180108ec209c9dc63e1e3c7160be1b",
+      "source_package": "Replo-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6270d560d4250d8978fc36bb16d19b3bda037c419c5953b998b91b9532314bff": {
+      "description_zh": "对已有代码库实施 Repo Hygiene 清理，按可审阅的阶段编排其他整理技能，避免将大量文件变更集中成一次巨型差异。",
+      "source": "Use when the user asks to \"clean up\", \"apply repo-hygiene to\", or \"fix the hygiene of\" an existing codebase — orchestrates the other hygiene skills in a phased, reviewable order rather than firing a 200-file mega-diff",
+      "source_sha256": "6270d560d4250d8978fc36bb16d19b3bda037c419c5953b998b91b9532314bff",
+      "source_path": "skills/cleaning-existing-codebase/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b85b9dd7e7653cc43786d93443dd25bc2db4761c56ba8e27fcecd18f419e899": {
+      "description_zh": "在提交、合并或推送前执行测试、类型检查与 lint，确认变更聚焦，并检查文档、测试和 docstring 等配套内容，使提交请求仍经过质量门禁。",
+      "source": "Use when about to commit, merge, or push — runs verification (tests, typecheck, lint), confirms focus, and checks sibling hygiene (docs, tests, docstrings) BEFORE the commit lands, so \"user said commit\" doesn't bypass quality",
+      "source_sha256": "9b85b9dd7e7653cc43786d93443dd25bc2db4761c56ba8e27fcecd18f419e899",
+      "source_path": "skills/gating-commits/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f00657adc370c8e7c5739ff88ead88d167922410a7b7c3513a97757426864d6": {
+      "description_zh": "在导出、签名、返回类型、参数、路由、环境变量、Schema 或弃用等公开 API 变化后、提交前同步 README、docs、CHANGELOG 与内联引用，使文档和代码一致。",
+      "source": "Use when changing a public API surface — renamed export, changed signature/return type, new or removed flag/route/env var, schema migration, deprecation — before committing, so README, docs/, CHANGELOG, and inline references stay coherent with the code",
+      "source_sha256": "6f00657adc370c8e7c5739ff88ead88d167922410a7b7c3513a97757426864d6",
+      "source_path": "skills/keeping-docs-fresh/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a816d89b17a099fd7440e554c6de47776d379c3cd5ca5f29c1e601298b2abb0": {
+      "description_zh": "在现有源文件增加代码、文件超过约 400 行或决定新代码位置时检查拆分方式，防止单文件积累多个职责并不断膨胀。",
+      "source": "Use when about to add lines to an existing source file, when a single file passes ~400 lines, or when proposing where to put new code — prevents files from sprawling into multi-concern god-modules",
+      "source_sha256": "8a816d89b17a099fd7440e554c6de47776d379c3cd5ca5f29c1e601298b2abb0",
+      "source_path": "skills/keeping-files-small/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27a4379a4813278aa019458fcbc8ec052e8a5ec910ff3e8bb76392a34d5bb381": {
+      "description_zh": "在陌生仓库开展实质工作前了解其目的、技术栈、约定与布局，尤其适用于业务逻辑、公开 API、构建或基础设施变更，再开展具体搜索和修改。",
+      "source": "Use when starting substantive work in an unfamiliar repo, before diving into task-specific grep or edits — especially when the task touches business logic, public API, build, or infra, or you don't yet know the repo's purpose, stack, conventions, or layout",
+      "source_sha256": "27a4379a4813278aa019458fcbc8ec052e8a5ec910ff3e8bb76392a34d5bb381",
+      "source_path": "skills/orienting-to-repo/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c744bf82216e9831e2190ac1510d83a7afe7a14af1d7586569fd61aecf9751c9": {
+      "description_zh": "在采用 Repo Hygiene 的仓库新增或修改业务逻辑、分支逻辑、公开 API 或修复缺陷时，为新增路径建立测试，并在提交前完成。",
+      "source": "Use when adding or modifying business logic, branching code, public API, or fixing a bug in a repo using repo-hygiene — tests for the new code paths must exist before the change is committed, not \"later\" or \"if the user asks",
+      "source_sha256": "c744bf82216e9831e2190ac1510d83a7afe7a14af1d7586569fd61aecf9751c9",
+      "source_path": "skills/testing-new-code/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7af15dda6236fad5a8ef0e62906b18ad635ed30be90d11ec9d4ff7e42e2c0830": {
+      "description_zh": "作为 Repo Hygiene 技能集入口，说明各子技能及其在仓库工作流程中适用的时机。",
+      "source": "Use when starting any conversation in a repo — establishes the repo-hygiene skill set and the moments each sub-skill applies",
+      "source_sha256": "7af15dda6236fad5a8ef0e62906b18ad635ed30be90d11ec9d4ff7e42e2c0830",
+      "source_path": "skills/using-repo-hygiene/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3dc0ba3b084972583e37c1e279a2adb01f2c89c54e9d53c447b59e6125d4137c": {
+      "description_zh": "规范提交信息写法：使用少于 72 字符的祈使式标题，变更动机无法从差异看出时补充正文，避免复杂修复仅写笼统的一行标题。",
+      "source": "Use when drafting any commit message — sets format (imperative subject under 72 chars, explanatory body when the why isn't obvious from the diff) and prevents the \"Fix X\" one-liner reflex for non-trivial fixes",
+      "source_sha256": "3dc0ba3b084972583e37c1e279a2adb01f2c89c54e9d53c447b59e6125d4137c",
+      "source_path": "skills/writing-commit-messages/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1237dde12bc424da27cae96b0acad2c8adb3b6549910481d6ce1f028a97ada4": {
+      "description_zh": "在采用 Repo Hygiene 的仓库编写或修改函数、方法、类及源文件时补充 docstring，覆盖公开 API、内部辅助函数和新文件；单行 lambda 与简单访问器除外。",
+      "source": "Use when writing or modifying any function, method, class, or source file in a repo using repo-hygiene — public API, internal helpers, and new files all require docstrings; only one-line lambdas and trivial accessors are excluded",
+      "source_sha256": "e1237dde12bc424da27cae96b0acad2c8adb3b6549910481d6ce1f028a97ada4",
+      "source_path": "skills/writing-docstrings/SKILL.md",
+      "package_sha256": "cf8adffd94a4791f1065957190d63ecf4ae53f154e9d756359f66812b7d61161",
+      "source_package": "Repo Hygiene-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0bdf98f13a0d5605da16da88ca22a59a8fdcd34fb971d9d2cade6ce368af196f": {
+      "description_zh": "逐文件读取内容，为每个目录生成完整文件词汇表，以统一语气和固定行格式写入目录索引，并用已提交 lint 持续校验；通过受控并行读取与归一化处理纠正索引漂移，发现不实文件头时作为问题报告。",
+      "source": "Give every directory a complete glossary of itself: one row per file, written from the file rather than from a listing, in one voice, on a fixed row grammar the committed lint holds forever. A gated fan-out reads every file it writes about, a normalization pass makes many agents sound like one, and a file header the sweep catches lying is reported as a finding rather than copied into a row. Use when a repo''s folder READMEs describe directories nobody re-read, when an index has drifted, or when a directory grew files nobody catalogued.",
+      "source_sha256": "0bdf98f13a0d5605da16da88ca22a59a8fdcd34fb971d9d2cade6ce368af196f",
+      "source_path": "skills/atlas/SKILL.md",
+      "package_sha256": "91c6846a1128284881dc1aad748ab8746c04b880eb0c332ce850a567485b5451",
+      "source_package": "Repo Standard Toolkit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80fe83e85821d5dc9acbae85e18cd746606fb8e3e4e8eea3f19992dfbaf2392f": {
+      "description_zh": "应用户要求建立可持续校验的仓库视觉标识，由单一清单确定性生成横幅和标签，从仓库设计令牌或预设提取配色，并把标签值追溯到真实文件；写入前提供渲染预览，以 lint 检查覆盖、风格和漂移。",
+      "source": "Give a repo a generated visual identity it can keep true forever: a deterministic banner and pill system rendered from one manifest, with the palette derived from the repo''s own design tokens (or a preset), every pill value traced to a real file so the lint can re-verify it, a rendered preview before anything is written, and lint enforcement of coverage, idiom, and zero drift. Asked, never assumed. Use when a repo wants per-folder READMEs and a front page that looks intentional, or to reconcile an identity that has drifted.",
+      "source_sha256": "80fe83e85821d5dc9acbae85e18cd746606fb8e3e4e8eea3f19992dfbaf2392f",
+      "source_path": "skills/identity/SKILL.md",
+      "package_sha256": "91c6846a1128284881dc1aad748ab8746c04b880eb0c332ce850a567485b5451",
+      "source_package": "Repo Standard Toolkit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2c5c802ed3136060ff821d693ce6ae895f89da29165df6bfc258e4d14c6733c": {
+      "description_zh": "为新建或已有仓库建立、补齐或协调企业规范文档，涵盖 README、CHANGELOG、CONVENTIONS、CONTRIBUTING、行为准则、安全和许可证；保留已有正文，并安装无依赖 lint 与 CI 门禁，支持幂等重复运行。",
+      "source": "Bootstrap or reconcile enterprise repo hygiene in the current repo: sense greenfield vs. mid-project, scaffold the missing meta docs (README / CHANGELOG / CONVENTIONS / CONTRIBUTING / CODE_OF_CONDUCT / SECURITY / LICENSE) from standards-grounded templates, bring drifted ones into compliance without clobbering prose, and install the committed dependency-free lint + CI gate so the standard polices itself on every push with or without Claude. Idempotent, so it is safe to re-run on any repo at any maturity. Use on a fresh repo, on a repo whose front matter has drifted, or to adopt the standard mid-project.",
+      "source_sha256": "b2c5c802ed3136060ff821d693ce6ae895f89da29165df6bfc258e4d14c6733c",
+      "source_path": "skills/scaffold/SKILL.md",
+      "package_sha256": "91c6846a1128284881dc1aad748ab8746c04b880eb0c332ce850a567485b5451",
+      "source_package": "Repo Standard Toolkit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02a5c5edc118e2df7516806e8cd1bb5bb0a5fdfa47bf6f70b75a1cd0ff5b997e": {
+      "description_zh": "扫描受管文档中的破折号、空话及模板化写作迹象，逐句提出改写差异并由操作者批准，再启用配置中的写作规范，让已提交 lint 约束后续推送；流程可逆，未获同意不改写。",
+      "source": "Bring a repo''s prose up to the enterprise writing standard and then lock it: scan every governed doc for em dashes in any form and for the filler and AI-writing tells, rewrite each hit sentence by sentence with the operator approving the diff, then switch the profile on in the config so the committed lint holds the line on every future push. Gated and reversible; nothing is rewritten without a yes. Use before adopting the profile on an existing repo, or to clear a sweep the lint is now failing.",
+      "source_sha256": "02a5c5edc118e2df7516806e8cd1bb5bb0a5fdfa47bf6f70b75a1cd0ff5b997e",
+      "source_path": "skills/voice/SKILL.md",
+      "package_sha256": "91c6846a1128284881dc1aad748ab8746c04b880eb0c332ce850a567485b5451",
+      "source_package": "Repo Standard Toolkit-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "860542b7cf10382e0f48418db9d462a2462a02eed7f728c932eef20e5b48e47e": {
+      "description_zh": "为代码仓库建立和维护结构化中文 docs 知识库，支持 AGENTS.md、架构文档、产品规格、执行计划及质量评分报告，整理项目文档并帮助代理理解项目结构。",
+      "source": "Build and maintain a structured Chinese knowledge base (docs/ system) for any code repository.\nUse this skill whenever: the user wants to init docs for a project, write AGENTS.md,\ncreate ARCHITECTURE.md, set up a docs/ directory, update product-specs or exec-plans,\ngenerate a QUALITY_SCORE.md report, or mentions \"knowledge base\", \"design docs\",\n\"product specs\", \"exec plans\". Also use when the user wants AI agents to better\nunderstand their project structure. Trigger even for requests like \"organize my project docs\",\n\"build a docs system\", \"help me document this codebase\", or \"create an AGENTS.md file\".",
+      "source_sha256": "860542b7cf10382e0f48418db9d462a2462a02eed7f728c932eef20e5b48e47e",
+      "source_path": "skills/repo-docs-system/SKILL.md",
+      "package_sha256": "eae68f0965bf087d8f223ecbc1d929e076b628bc0f47ea9c1164a00226c65ebb",
+      "source_package": "repo-docs-system-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ed88329eddf5d8a7ae0175ab08e21c65fd3730ef29e0a9a7397c11de9732a79": {
+      "description_zh": "初始化多仓库工作区，调查范围内各仓库并分两阶段生成仓库地图，编写以带锚点子节记录全部跨仓库连接的工作区清单，再进行整体校验；该清单是跨仓库连接的唯一权威来源。",
+      "source": "Bootstrap a multi-repo workspace — survey every in-scope repo, generate per-repo atlases in two phases, write the workspace manifest with all bridges as anchored sub-sections, and validate workspace-wide. The workspace manifest is the single source of truth for cross-repo bridges.",
+      "source_sha256": "5ed88329eddf5d8a7ae0175ab08e21c65fd3730ef29e0a9a7397c11de9732a79",
+      "source_path": "skills/atlas-bootstrap-workspace/SKILL.md",
+      "package_sha256": "98cce66196bf1cb0b3235b4f92ae2b2b767fbc6f0b1a7f68fe560fdfb803a760",
+      "source_package": "RepoAtlas-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e95decf631e68edb867d5a225496aee643668c45575724d877445516e21b213c": {
+      "description_zh": "依据已确认的领域标签方案，为单个仓库分六阶段写入完整 ATLAS.md 与 .atlas/ 地图树，使用 _models/、_entrypoints/ 两个平铺入口，不创建逐领域章节目录。",
+      "source": "Write a complete atlas tree (ATLAS.md + .atlas/) for one repo from a confirmed domain-tag proposal. Performs filesystem writes; six phases with two flat escape hatches (_models/, _entrypoints/) and no per-domain chapter directories.",
+      "source_sha256": "e95decf631e68edb867d5a225496aee643668c45575724d877445516e21b213c",
+      "source_path": "skills/atlas-generate-tree/SKILL.md",
+      "package_sha256": "98cce66196bf1cb0b3235b4f92ae2b2b767fbc6f0b1a7f68fe560fdfb803a760",
+      "source_package": "RepoAtlas-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63442712369cd201a61da6a80beea2c0319b69df870e3e383e35bd142e794ebd": {
+      "description_zh": "在仓库调查后、地图生成前提出 3 至 10 个领域标签，提供 kebab 命名、理由和各标签的功能数量估计；仅形成方案，不写文件。",
+      "source": "Propose 3–10 domain tags for a repo before atlas generation — kebab names, rationales, and per-tag feature-count estimates. Use after atlas-survey-repo and before atlas-generate-tree; produces a domain-tag proposal, no files written.",
+      "source_sha256": "63442712369cd201a61da6a80beea2c0319b69df870e3e383e35bd142e794ebd",
+      "source_path": "skills/atlas-identify-domains/SKILL.md",
+      "package_sha256": "98cce66196bf1cb0b3235b4f92ae2b2b767fbc6f0b1a7f68fe560fdfb803a760",
+      "source_package": "RepoAtlas-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cfbab00b410772e4b6fc078a53ed594727915982216142f84470471adfb96cf5": {
+      "description_zh": "只读使用一个或多个 Repo Atlas 回答代码路由、影响分析、缺陷分诊及跨仓库追踪问题，仅在地图信息不足时读取源代码。",
+      "source": "Answer routing, impact-analysis, bug-triage, and cross-repo trace questions using one or more Repo Atlases without reading source code unless the atlas is insufficient. Read-only.",
+      "source_sha256": "cfbab00b410772e4b6fc078a53ed594727915982216142f84470471adfb96cf5",
+      "source_path": "skills/atlas-query/SKILL.md",
+      "package_sha256": "98cce66196bf1cb0b3235b4f92ae2b2b767fbc6f0b1a7f68fe560fdfb803a760",
+      "source_package": "RepoAtlas-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da65f045dc28b8a0e231131fa6ae53724ba3b75db31cbad0f4b500b05617f1cf": {
+      "description_zh": "根据上次核验后的代码变更增量更新已有仓库地图，包含 atlas.workspace.md 跨仓库连接、_models/ 提升或降低，以及跨仓库相互对应关系。",
+      "source": "Incrementally update an existing atlas to reflect code changes since its last verification, including bridge changes (in atlas.workspace.md), `_models/` promotion/demotion, and cross-repo reciprocity.",
+      "source_sha256": "da65f045dc28b8a0e231131fa6ae53724ba3b75db31cbad0f4b500b05617f1cf",
+      "source_path": "skills/atlas-refresh/SKILL.md",
+      "package_sha256": "98cce66196bf1cb0b3235b4f92ae2b2b767fbc6f0b1a7f68fe560fdfb803a760",
+      "source_package": "RepoAtlas-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51e8765d765893d06983369a0f08b196e035f03f4adb2784ee0444bb34959e60": {
+      "description_zh": "在地图生成前只读调查仓库，记录 HEAD SHA、清单、顶层布局、候选领域标签及入口类型；作为第一阶段输出结构化调查记录，不写文件。",
+      "source": "Read-only reconnaissance of a repository before atlas generation — capture HEAD SHA, manifests, top-level layout, candidate domain tags, and entry-point types. Phase 1 of atlas generation; emits a structured survey note, writes no files.",
+      "source_sha256": "51e8765d765893d06983369a0f08b196e035f03f4adb2784ee0444bb34959e60",
+      "source_path": "skills/atlas-survey-repo/SKILL.md",
+      "package_sha256": "98cce66196bf1cb0b3235b4f92ae2b2b767fbc6f0b1a7f68fe560fdfb803a760",
+      "source_package": "RepoAtlas-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31e3883b9d1618259b2f29808b59fcf8581a99ddc012cf65c6f3b614389d3083": {
+      "description_zh": "只读审计单仓库或工作区 Repo Atlas，检查行数预算、必需章节、字母排序、仓库内外对应关系、连接锚点完整性，以及 _models/、_entrypoints/ 阈值。",
+      "source": "Audit an existing Repo Atlas (single repo or workspace) — line budgets, required sections, alphabetical ordering, intra-repo and cross-repo reciprocity, bridge anchor integrity, and `_models/` and `_entrypoints/` thresholds. Read-only.",
+      "source_sha256": "31e3883b9d1618259b2f29808b59fcf8581a99ddc012cf65c6f3b614389d3083",
+      "source_path": "skills/atlas-validate/SKILL.md",
+      "package_sha256": "98cce66196bf1cb0b3235b4f92ae2b2b767fbc6f0b1a7f68fe560fdfb803a760",
+      "source_package": "RepoAtlas-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d416beab15e0ff7c45733976c0344cef8bf7afe712d958ba76aaa8e35ea94cb": {
+      "description_zh": "设计让邮件内容触发操作的系统，如代理收件箱、自动客服与邮件转任务流程；通过发件人允许列表、内容过滤及沙箱处理，防止不可信入站邮件控制系统。",
+      "source": "Use when building any system where email content triggers actions — AI agent inboxes, automated support handlers, email-to-task pipelines, or any workflow processing untrusted inbound email. Always use this skill when the user wants to receive emails and act on them programmatically, even if they don't mention \"agent\" — the skill contains critical security patterns (sender allowlists, content filtering, sandboxed processing) that prevent untrusted email from controlling your system.",
+      "source_sha256": "7d416beab15e0ff7c45733976c0344cef8bf7afe712d958ba76aaa8e35ea94cb",
+      "source_path": "skills/agent-email-inbox/SKILL.md",
+      "package_sha256": "2429a1a713789d44bff7a4c6166b31d16e4530793d855c71bf60f9c733e14b5f",
+      "source_package": "resend-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0a5c05c2e1eaef6b343e11e0fd53ce0eddc5973c8ea8c51209da6c44df83409": {
+      "description_zh": "建设邮件功能并排查垃圾邮件和高退信率，配置 SPF、DKIM、DMARC，处理邮件收集、webhook、重试及无障碍展示，并区分事务邮件与营销邮件；原说明涵盖 CAN-SPAM、GDPR、CASL 合规。",
+      "source": "Use when building email features, emails going to spam, high bounce rates, setting up SPF/DKIM/DMARC authentication, implementing email capture, ensuring compliance (CAN-SPAM, GDPR, CASL), handling webhooks, retry logic, making emails accessible (alt text, headings, contrast, screen readers), or deciding transactional vs marketing.",
+      "source_sha256": "d0a5c05c2e1eaef6b343e11e0fd53ce0eddc5973c8ea8c51209da6c44df83409",
+      "source_path": "skills/email-best-practices/SKILL.md",
+      "package_sha256": "2429a1a713789d44bff7a4c6166b31d16e4530793d855c71bf60f9c733e14b5f",
+      "source_package": "resend-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52403c4c7ba626265f79a9eacd4e93a1acee31644ce4672d91225d225042bdbf": {
+      "description_zh": "使用 React 组件构建 HTML 邮件模板、渲染为 HTML 或通过 Resend 发送，并将 React Email 可视化编辑器嵌入应用；适用于欢迎、密码重置、通知、订单确认、通讯及事务邮件。",
+      "source": "Use when building HTML email templates with React components, adding a visual email editor to an application using the React Email visual editor, rendering emails to HTML, or sending emails with Resend. Covers welcome emails, password resets, notifications, order confirmations, newsletters, transactional emails, and the embeddable email editor component.",
+      "source_sha256": "52403c4c7ba626265f79a9eacd4e93a1acee31644ce4672d91225d225042bdbf",
+      "source_path": "skills/react-email/SKILL.md",
+      "package_sha256": "2429a1a713789d44bff7a4c6166b31d16e4530793d855c71bf60f9c733e14b5f",
+      "source_package": "resend-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4faf0db206809ac1a21ab1628a366a2a64886474320ddce746a1c8418bbf05e": {
+      "description_zh": "通过 resend CLI 在终端、脚本或 CI/CD 操作邮件平台，发送或预览含 React Email .tsx 的模板，并管理域名、联系人、广播、模板、webhook、API key、日志、自动化和事件；包含非交互参数约定及常见失败陷阱。",
+      "source": "Operate the Resend platform from the terminal — send emails (including React Email .tsx templates via --react-email), manage domains, contacts, broadcasts, templates, webhooks, API keys, logs, automations, and events via the `resend` CLI. Use when the user wants to run Resend commands in the shell, scripts, or CI/CD pipelines, or send/preview React Email templates. Always load this skill before running `resend` commands — it contains the non-interactive flag contract and gotchas that prevent silent failures.",
+      "source_sha256": "f4faf0db206809ac1a21ab1628a366a2a64886474320ddce746a1c8418bbf05e",
+      "source_path": "skills/resend-cli/SKILL.md",
+      "package_sha256": "2429a1a713789d44bff7a4c6166b31d16e4530793d855c71bf60f9c733e14b5f",
+      "source_package": "resend-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4410e7aaa9ae9568b0729284dc066ff53ce4de6f588a36ff59b3b7a4372fb68": {
+      "description_zh": "使用 Resend API 或 SDK 发送单封、批量事务邮件，接收入站 webhook，管理模板、域名、联系人、广播、密钥、自动化与事件，并查看请求日志和投递情况；涵盖幂等键、webhook 校验及模板变量语法。",
+      "source": "Use when working with the Resend email API — sending transactional emails (single or batch), receiving inbound emails via webhooks, managing email templates, tracking delivery events, managing domains, contacts, broadcasts, webhooks, API keys, automations, events, viewing API request logs, or setting up the Resend SDK. Always use this skill when the user mentions Resend, even for simple tasks like \"send an email with Resend\" — the skill contains critical gotchas (idempotency keys, webhook verification, template variable syntax) that prevent common production issues.",
+      "source_sha256": "d4410e7aaa9ae9568b0729284dc066ff53ce4de6f588a36ff59b3b7a4372fb68",
+      "source_path": "skills/resend/SKILL.md",
+      "package_sha256": "2429a1a713789d44bff7a4c6166b31d16e4530793d855c71bf60f9c733e14b5f",
+      "source_package": "resend-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0dede5e0402e8f65dedeb7e4f3e20b82125c185d3474c4eadd6e130aa905929": {
+      "description_zh": "在当前环境配置、连接或安装 Revelara，用于首次代码扫描前准备，也适用于 Revelara MCP 工具认证失败时的配置排查。",
+      "source": "Set up Revelara in this environment. Use when the user asks to set up, connect, or install Revelara, when a Revelara MCP tool fails with an authentication error, or before the first Revelara code scan.",
+      "source_sha256": "e0dede5e0402e8f65dedeb7e4f3e20b82125c185d3474c4eadd6e130aa905929",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "3ffec01ee23b5016baf17e5918fbe87bdd0bb8fe5298d73cc1c9b231d1ea0de7",
+      "source_package": "Revelara-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
