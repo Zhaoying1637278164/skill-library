@@ -75049,6 +75049,1086 @@
       "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
       "source_package": "Tackle-0.1.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32234b4aa81572b2d3bb8e9d4dbf4dce3d1935da62d2e10f00fc229d911a3ec4": {
+      "description_zh": "并行调查多个相互独立且无需共享状态的问题，例如无关测试失败或不同子系统问题。",
+      "source": "Use when facing several independent problems, such as unrelated test failures or separate subsystems, that could be investigated at the same time without sharing state",
+      "source_sha256": "32234b4aa81572b2d3bb8e9d4dbf4dce3d1935da62d2e10f00fc229d911a3ec4",
+      "source_path": "skills/investigating-in-parallel/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2119aea90a4705f5601c34a43f6c1a4aa17adf1884a824f2f763a7ba41537cd0": {
+      "description_zh": "为需要与当前工作树隔离的工作准备独立工作区，适用于风险变更、并行功能和长时间执行的计划。",
+      "source": "Use when starting work that should be kept apart from the current working tree, such as risky changes, parallel features, or long-running plans",
+      "source_sha256": "2119aea90a4705f5601c34a43f6c1a4aa17adf1884a824f2f763a7ba41537cd0",
+      "source_path": "skills/isolating-workspaces/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8685ec623d82ed93ee4a91d291ee3f8b58a3332f49ab1b2eaa6f980efecba6d": {
+      "description_zh": "在设计已达成共识或需求清晰时，规划多步骤工作的顺序、边界和检查项。",
+      "source": "Use when there is an agreed design or clear requirements for multi-step work and the order, boundaries, or checks are not yet worked out",
+      "source_sha256": "d8685ec623d82ed93ee4a91d291ee3f8b58a3332f49ab1b2eaa6f980efecba6d",
+      "source_path": "skills/planning-work/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82009519f4ae4894fea97b83d296dcca6a0bd76f6490a0dc7a78d914eb65a912": {
+      "description_zh": "在依据人工或审查代理的代码反馈修改代码前，先分析并处理反馈。",
+      "source": "Use when receiving code review feedback from a person or a reviewer agent, before changing code in response to it",
+      "source_sha256": "82009519f4ae4894fea97b83d296dcca6a0bd76f6490a0dc7a78d914eb65a912",
+      "source_path": "skills/receiving-review/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba7cd5abc3241842b9091d1bf65f9d88626f1e56c0381b2b785162996b169083": {
+      "description_zh": "在重要或高风险工作完成、合并前，或需要第二视角发现遗漏时请求审查。",
+      "source": "Use when substantial or risky work is complete, before merging, or when a second perspective would catch what you might have missed",
+      "source_sha256": "ba7cd5abc3241842b9091d1bf65f9d88626f1e56c0381b2b785162996b169083",
+      "source_path": "skills/requesting-review/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6b883e4bd4ce00e88cd6895811c5c32463c66efe308d2a69456465016fd8ba3": {
+      "description_zh": "在用户希望构建或修改内容但目标、范围或方法尚不明确时，梳理设计方案。",
+      "source": "Use when the user wants to build or change something and the goal, scope, or approach is not yet clear enough to start",
+      "source_sha256": "c6b883e4bd4ce00e88cd6895811c5c32463c66efe308d2a69456465016fd8ba3",
+      "source_path": "skills/shaping-designs/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08c7b3aae01eb0ecde57746021660823baa283ce0dc867a86097bac7ed0db4fb": {
+      "description_zh": "在实现或改变应有自动化测试的代码行为前先开展测试，包含缺陷修复。",
+      "source": "Use when about to implement or change behavior in code that has, or should have, automated tests, including bug fixes",
+      "source_sha256": "08c7b3aae01eb0ecde57746021660823baa283ce0dc867a86097bac7ed0db4fb",
+      "source_path": "skills/testing-first/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93b2be02700bd3ba4c5180e705c48c1b34b0fe0180f8616fe4a9e685ead8efec": {
+      "description_zh": "判断编码任务需要多少流程，并选择合适的 Tackle 技能。",
+      "source": "Use when deciding how much process a coding task needs, or when unsure which Tackle skill fits the work in front of you",
+      "source_sha256": "93b2be02700bd3ba4c5180e705c48c1b34b0fe0180f8616fe4a9e685ead8efec",
+      "source_path": "skills/using-tackle/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c08d2c543bacd0957b830c707ed5f94a4288267aa805182e4faa100e5399fde5": {
+      "description_zh": "在声称完成、修复、测试通过或可交付之前验证结果，也适用于提交、创建 PR 或转入下一任务前。",
+      "source": "Use when about to say work is done, fixed, passing, or ready, or before committing, opening a PR, or moving to the next task",
+      "source_sha256": "c08d2c543bacd0957b830c707ed5f94a4288267aa805182e4faa100e5399fde5",
+      "source_path": "skills/verifying-before-claiming/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a41ddcc06ac19ccefc52e3d588941e4335fddfbeb39b3bfd30854a025822ae3e": {
+      "description_zh": "创建或编辑 Tackle 技能，并检查它是否按预期改变代理行为。",
+      "source": "Use when creating a new Tackle skill, editing an existing one, or checking that a skill changes agent behavior the way it should",
+      "source_sha256": "a41ddcc06ac19ccefc52e3d588941e4335fddfbeb39b3bfd30854a025822ae3e",
+      "source_path": "skills/writing-skills/SKILL.md",
+      "package_sha256": "c6302308a5c7904fbaecf31c054e594279e146113f297c94fba337f16d092fcd",
+      "source_package": "Tackle-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "725e6d54aa00c2e1c0a0b5114b006362cb55023af3df1a5a2324b18adf5bd9b7": {
+      "description_zh": "使用 Tafheem 方法为陌生主题、技术、系统、领域、流程、机构或理论建立分层理解，先介绍定义、边界、组成及关系，再逐步解释运行机制、原理和深入细节。适用于新岗位或项目中理解复杂内容；不用于单事实、日期、单行定义、选项决策、翻译、测验、调试、代码生成或代码库分析。",
+      "source": "Builds a layered mental model of an unfamiliar topic, technology, system, field, process, institution, or theory using the Tafheem method: an overview map first (what it is, its boundary, its parts, how they relate), then how it works, why it works, and deeper parts one step at a time. Use when the user asks 'what is X', 'how does X work', or 'why does X work'. Use whenever someone wants to truly understand how something works rather than get a quick answer: 'how does X actually work', 'explain or walk me through X', 'give me the big picture of X', 'break down the moving parts', 'I don't get X', or getting up to speed on something unfamiliar for a new job, role, or project. Also use for any message mentioning Tafheem. Use it even when you could answer inline. Do not use for single facts or dates, one-line definitions, choosing between options, translation, flashcards or quizzes, debugging, code generation, or codebase analysis.",
+      "source_sha256": "725e6d54aa00c2e1c0a0b5114b006362cb55023af3df1a5a2324b18adf5bd9b7",
+      "source_path": "tafheem/SKILL.md",
+      "package_sha256": "f5f3039fa99febd41c836abccf88e429fef34caf883a2ae1cf8084be176907eb",
+      "source_package": "Tafheem-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f3e65e0d64bc22dc5316262f011a9ad7552c9182897aef8434165be9f1e9258": {
+      "description_zh": "根据自然语言请求调整 tailproxy 路由和出口，支持域名、IP 段、端口或应用的代理、取消代理、阻断及改路由，以及出口增删改；测试结果并在不重启的情况下重载配置。",
+      "source": "Change tailproxy's routing rules or exits from a plain-language request (\"send YouTube through the Japan exit\", \"stop proxying example.com\", \"add my new VPS as an exit\"), test the result and reload without restarting. Use when the user wants to route, unroute, block or re-route domains, IP ranges, ports or apps through tailproxy, or add / change / remove an exit.",
+      "source_sha256": "7f3e65e0d64bc22dc5316262f011a9ad7552c9182897aef8434165be9f1e9258",
+      "source_path": "skills/rules/SKILL.md",
+      "package_sha256": "26a8b36162448c05836297cc849acc697423359720599d1304708ede76af59bd",
+      "source_package": "Tailproxy-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b59b1964af3c4d0dcd5c766d74038849a98fbb7067c1006a652eb5d90c98c1de": {
+      "description_zh": "逐步安装配置 tailproxy，选择 SOCKS5、整机 TUN、Linux 路由器或 VPS 中继部署，下载校验发行包、编写验证 config.yaml、登录 Tailscale、启动并确认流量经过预期出口。",
+      "source": "Install and configure tailproxy step by step — pick a deployment (this computer via SOCKS5, whole-computer TUN, Linux router, or a VPS relay), download and verify the release, write and validate config.yaml (exits and routing rules), log in to Tailscale, start it and check that traffic takes the intended exit. Use when the user wants to set up, install, deploy or reconfigure tailproxy, or route certain apps / sites / domains through a specific Tailscale exit node or VPS.",
+      "source_sha256": "b59b1964af3c4d0dcd5c766d74038849a98fbb7067c1006a652eb5d90c98c1de",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "26a8b36162448c05836297cc849acc697423359720599d1304708ede76af59bd",
+      "source_package": "Tailproxy-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5aa5d5786ae221349dc53ec8e81d9d1c4941ae8e997e8a66bd5a3311244fa149": {
+      "description_zh": "读取 tailproxy 状态、连接和日志，诊断出口不符、登录卡住或离线、DNS／FakeIP、TUN 或路由捕获失效、面板或 tpctl 不可达等问题，并按文档修复。",
+      "source": "Diagnose tailproxy problems — a site not going through the intended exit, exits stuck logging in or offline, DNS / FakeIP issues, TUN or router capture not taking effect, the panel or tpctl not reachable — by reading status, connections and logs and applying the documented fix. Use when tailproxy is not working as expected.",
+      "source_sha256": "5aa5d5786ae221349dc53ec8e81d9d1c4941ae8e997e8a66bd5a3311244fa149",
+      "source_path": "skills/troubleshoot/SKILL.md",
+      "package_sha256": "26a8b36162448c05836297cc849acc697423359720599d1304708ede76af59bd",
+      "source_package": "Tailproxy-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e7a1e0279b3a9f7125b3ffb2eefaa7a971addc79b338f4022c1fec7e315e87c": {
+      "description_zh": "通过 Tailwind 审查已连接 Pinterest 账户的画板组织，检查命名一致性、画板列表覆盖、失效列表项和发布时间段，可追加公开群组画板基准比较。",
+      "source": "Audit how a connected Pinterest account's boards are organized through Tailwind — naming consistency, board list coverage, dead list entries, and publishing timeslots, with optional public group board benchmarks. Use when the user asks for a board audit or wants to review their board setup.",
+      "source_sha256": "8e7a1e0279b3a9f7125b3ffb2eefaa7a971addc79b338f4022c1fec7e315e87c",
+      "source_path": "skills/tailwind-pinterest-board-audit/SKILL.md",
+      "package_sha256": "2332c5995850320f9428994bfe242ecfa6a8416d053a712b1ad7c4c8be7c7655",
+      "source_package": "Tailwind App-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3bdfdc0bffe7a80c13d3501b9e34aa97c8e111e5dc7e39800045bd963cba9b0": {
+      "description_zh": "通过 Tailwind 检查已连接 Pinterest 账户的授权、域名验证和个人资料完整性，适用于账户体检及无法发布的诊断。",
+      "source": "Audit the health of a connected Pinterest account's profile through Tailwind — authorization, domain verification, and profile completeness. Use when the user asks for a profile audit, an account checkup, or why their account may not be publishing.",
+      "source_sha256": "e3bdfdc0bffe7a80c13d3501b9e34aa97c8e111e5dc7e39800045bd963cba9b0",
+      "source_path": "skills/tailwind-pinterest-profile-audit/SKILL.md",
+      "package_sha256": "2332c5995850320f9428994bfe242ecfa6a8416d053a712b1ad7c4c8be7c7655",
+      "source_package": "Tailwind App-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b10f293b7980aaf489d98ffb4b5c419c57b5b662cff1f59448e1c6976ce0b59": {
+      "description_zh": "通过 Tailwind 创建、排期和审查 Pinterest Pin，选择画板、管理草稿及检查待发布队列。",
+      "source": "Create, schedule, and review Pinterest Pins through Tailwind. Use when the user wants to schedule Pins, pick a Pinterest Board, manage drafts, or check what is queued to publish.",
+      "source_sha256": "6b10f293b7980aaf489d98ffb4b5c419c57b5b662cff1f59448e1c6976ce0b59",
+      "source_path": "skills/tailwind-pinterest-scheduling/SKILL.md",
+      "package_sha256": "2332c5995850320f9428994bfe242ecfa6a8416d053a712b1ad7c4c8be7c7655",
+      "source_package": "Tailwind App-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52a61767b2c9eac88cf9183c30c4363496cd1ba7fb0a6ff56301bcb2da7e5500": {
+      "description_zh": "将经过 /takshak:design 强化且获批的 SDD 拆成至多八个按依赖排序的原子任务，创建 Claude Code 任务及可选 Jira 子任务，并写入 task_state.json；未经过设计强化的 SDD 不接受。",
+      "source": "Decompose a hardened SDD into at most 8 atomic, dependency-ordered tasks, create them as Claude Code tasks and (optionally) Jira subtasks, and write task_state.json. Refuses SDDs that have not been through /takshak:design hardening. Use after an SDD is approved as a design.",
+      "source_sha256": "52a61767b2c9eac88cf9183c30c4363496cd1ba7fb0a6ff56301bcb2da7e5500",
+      "source_path": "skills/breakdown/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0a2197f1f50cf486499786b354463cb83680f6db91a4d3b664b84514fa0d488": {
+      "description_zh": "展示、写入或清除 Takshak 恢复检查点，也可清除当前计划，适用于保存进度、丢弃中断会话或放弃任务计划。",
+      "source": "Show, write, or clear takshak's resume checkpoint, or clear the current plan. Use when the user asks to save progress, discard an interrupted session, or abandon the current task plan.",
+      "source_sha256": "e0a2197f1f50cf486499786b354463cb83680f6db91a4d3b664b84514fa0d488",
+      "source_path": "skills/checkpoint/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6469e6ed70bc714cf6447776957f1c66bcfecba711dd3e3e7685d86a37527dc2": {
+      "description_zh": "打开只读 Takshak 流水线仪表板，展示风险、任务、设计修订、预算、模式和收件箱，并指出待处理事项，适用于状态查询和整体概览。",
+      "source": "Open the read-only takshak pipeline dashboard (risks, tasks, amendments, budget, patterns, inbox) and call out anything that needs action. Use when the user asks for status, the dashboard, or an overview of the pipeline.",
+      "source_sha256": "6469e6ed70bc714cf6447776957f1c66bcfecba711dd3e3e7685d86a37527dc2",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1e35931a5153644769688ee2e180a1874a490f2d141a6ac2c0262f94855ab1e": {
+      "description_zh": "诊断 Takshak 安装，检查 Python、framework.json、测试／lint／类型检查／构建命令是否能实际运行，以及 Jira、状态栏和旧钩子连接，适用于设置后检查或流程未触发。",
+      "source": "Diagnose a takshak installation — Python version, framework.json, whether the configured test/lint/typecheck/build commands actually run, Jira config, statusline wiring, and legacy hook wiring. Use when something in the pipeline seems not to fire, or after setup.",
+      "source_sha256": "c1e35931a5153644769688ee2e180a1874a490f2d141a6ac2c0262f94855ab1e",
+      "source_path": "skills/doctor/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "faaaaf21c84eddb54aaa3e653d1fd94fdbda920587ec4dcbddfe5a89d6bb34a3": {
+      "description_zh": "在当前项目初始化 Takshak，识别技术栈、生成 .claude/framework.json 及状态文件、连接预算状态栏并初始化 CLAUDE.md。可提交团队配置共享插件，并迁移旧式复制安装的钩子。",
+      "source": "Set up takshak in the current project in one step — detects the stack, writes .claude/framework.json and state files, wires the budget statusline, seeds CLAUDE.md, optionally commits team settings so every teammate gets the plugin, and migrates legacy copy-installed hooks. Use when the user wants to install, set up, onboard, or migrate takshak.",
+      "source_sha256": "faaaaf21c84eddb54aaa3e653d1fd94fdbda920587ec4dcbddfe5a89d6bb34a3",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cca215eddb9de991cebecdb6fe039b683bdd5648a8adc978e87b4a6af7347444": {
+      "description_zh": "把项目决策、纠正、反模式或约定保存为持久记忆，由 Takshak 在会话开始和设计时重新注入；适用于用户要求记住内容，或需记录模式告警及已暂存风格修正。",
+      "source": "Save a durable project learning — a decision, a correction, an anti-pattern, or a convention — as a memory that takshak re-injects at session start and design time. Use when the user says remember this, or when a pattern alert or staged style correction needs to be written down.",
+      "source_sha256": "cca215eddb9de991cebecdb6fe039b683bdd5648a8adc978e87b4a6af7347444",
+      "source_path": "skills/remember/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ad0b4c6aa887de09017f70b21e43ce5964752defd83557a73f9f0dadd7832d1": {
+      "description_zh": "从 .claude/checkpoint.json 恢复中断的 Takshak 工作，报告停止位置、检查预算窗口重置，并继续具体的下一项操作。",
+      "source": "Continue interrupted takshak work from .claude/checkpoint.json — reports where it stopped, checks the budget window has reset, and picks up the literal next action. Use when the user says resume, continue, or pick up where we left off.",
+      "source_sha256": "2ad0b4c6aa887de09017f70b21e43ce5964752defd83557a73f9f0dadd7832d1",
+      "source_path": "skills/resume/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ef201c3b1f4b87a12f74584cae18316f4c38116cbadf518e3ad87eae9aebc75": {
+      "description_zh": "在功能实现后开展结构化复盘，对照计划与提交、提出四个问题、保存持久记忆、向 CLAUDE.md 追加经验，并标记过时记忆；可在 Jira 留评论，但不改变其工作流状态。",
+      "source": "Structured feature retrospective once implementation finishes — diffs plan vs. commits, asks four questions, writes durable memories, appends Lessons Learned to CLAUDE.md, flags stale memories, and comments (never transitions) on Jira. Use when the user wants a retro or when all takshak tasks are complete.",
+      "source_sha256": "1ef201c3b1f4b87a12f74584cae18316f4c38116cbadf518e3ad87eae9aebc75",
+      "source_path": "skills/retro/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "849a1c40978f9aee93043805a7ecb4f1daafa66d78b69181f421d8422220dd4d": {
+      "description_zh": "根据 SDD 逐项实施已批准的 Takshak 任务，在实施—缺陷修复循环中推进，同时暂存设计修订并保存检查点，适用于已有 SDD 和 .claude/task_state.json 批准任务清单的功能。",
+      "source": "Implement an approved takshak plan task by task from its SDD, staying in the implement-bug-fix loop without process interruptions while silently staging design amendments and checkpointing. Use when the user says to implement, build, or continue a feature that has an SDD and an approved task list in .claude/task_state.json.",
+      "source_sha256": "849a1c40978f9aee93043805a7ecb4f1daafa66d78b69181f421d8422220dd4d",
+      "source_path": "skills/sdd-implementer/SKILL.md",
+      "package_sha256": "11508efa018dc43e9abffb4544401ef8c115284c09c9244d56643db6941aa4e8",
+      "source_package": "Takshak-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "235369654ebf59efe5f8b52f18645acde6660c9ee9c52c99dd0b98aa8d93f892": {
+      "description_zh": "指导开发者构建面向生产的 Tavily 集成，在代理工作流、RAG 或自主代理中实现网页搜索、内容提取、抓取和研究，供 Claude Code、Cursor 等编码助手参考。",
+      "source": "Build production-ready Tavily integrations with best practices baked in. Reference documentation for developers using coding assistants (Claude Code, Cursor, etc.) to implement web search, content extraction, crawling, and research in agentic workflows, RAG systems, or autonomous agents.",
+      "source_sha256": "235369654ebf59efe5f8b52f18645acde6660c9ee9c52c99dd0b98aa8d93f892",
+      "source_path": "skills/tavily-best-practices/SKILL.md",
+      "package_sha256": "43ba68bcfa299f32f6442c34e51e7b0bfc01ffb597bff5ccdca6423100d71505",
+      "source_package": "Tavily-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dcf805aed6e743d1d7f40995fbd0e53b087eddc0b66ddfbc8238ac096aeff03c": {
+      "description_zh": "设置、认证、更新和排查 Tavily CLI，说明安装技能、首次设置、无密钥限制及命令选择。普通网页任务由 search、extract、map、crawl、research 或 dynamic-search 专用技能处理。",
+      "source": "Set up, authenticate, update, troubleshoot, or choose between Tavily CLI web commands. Use when the user asks about the Tavily CLI, installing Tavily skills, first-time setup, authentication, keyless limits, CLI updates, or which Tavily command to use. For an ordinary web task, use the specific search, extract, map, crawl, research, or dynamic-search skill instead.",
+      "source_sha256": "dcf805aed6e743d1d7f40995fbd0e53b087eddc0b66ddfbc8238ac096aeff03c",
+      "source_path": "skills/tavily-cli/SKILL.md",
+      "package_sha256": "43ba68bcfa299f32f6442c34e51e7b0bfc01ffb597bff5ccdca6423100d71505",
+      "source_package": "Tavily-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "372ab51b3225884aed3ee8909de79636cca9a955f0b675d2960fb5928c0e4522": {
+      "description_zh": "通过 Tavily CLI 抓取网站并提取多页内容，适用于文档章节下载、批量页面提取及保存本地 Markdown。支持深度和广度控制、路径过滤、语义指令及逐页保存。",
+      "source": "Crawl websites and extract content from multiple pages via the Tavily CLI. Use this skill when the user wants to crawl a site, download documentation, extract an entire docs section, bulk-extract pages, save a site as local markdown files, or says \"crawl\", \"get all the pages\", \"download the docs\", \"extract everything under /docs\", \"bulk extract\", or needs content from many pages on the same domain. Supports depth/breadth control, path filtering, semantic instructions, and saving each page as a local markdown file.",
+      "source_sha256": "372ab51b3225884aed3ee8909de79636cca9a955f0b675d2960fb5928c0e4522",
+      "source_path": "skills/tavily-crawl/SKILL.md",
+      "package_sha256": "43ba68bcfa299f32f6442c34e51e7b0bfc01ffb597bff5ccdca6423100d71505",
+      "source_package": "Tavily-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6642a5ed9d534d9c485cf4cef57befca6e05f070c1dedf4b7024fd0cdd4994e3": {
+      "description_zh": "以编程方式执行隔离上下文的 Tavily 搜索，先筛选、去重或分步分诊大批搜索提取结果，再纳入模型上下文；普通检索用 tavily-search，完整带引用综合研究用 tavily-research。",
+      "source": "Programmatic Tavily search with context isolation. Use when web search or extraction will return large results that need filtering, deduplication, or multi-step triage before they enter the model context. Use tavily-search for ordinary lookups and tavily-research for end-to-end cited synthesis.",
+      "source_sha256": "6642a5ed9d534d9c485cf4cef57befca6e05f070c1dedf4b7024fd0cdd4994e3",
+      "source_path": "skills/tavily-dynamic-search/SKILL.md",
+      "package_sha256": "43ba68bcfa299f32f6442c34e51e7b0bfc01ffb597bff5ccdca6423100d71505",
+      "source_package": "Tavily-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c67424cc0c8cf224d168c1a12f807e69097be11fec506320318184cdf0c7e54f": {
+      "description_zh": "通过 Tavily CLI 从指定网址提取干净的 Markdown 或文本，支持 JavaScript 渲染页面、面向 LLM 的输出及按查询聚焦分块；原说明称单次可处理至多 20 个网址。",
+      "source": "Extract clean markdown or text content from specific URLs via the Tavily CLI. Use this skill when the user has one or more URLs and wants their content, says \"extract\", \"grab the content from\", \"pull the text from\", \"get the page at\", \"read this webpage\", or needs clean text from web pages. Handles JavaScript-rendered pages, returns LLM-optimized markdown, and supports query-focused chunking for targeted extraction. Can process up to 20 URLs in a single call.",
+      "source_sha256": "c67424cc0c8cf224d168c1a12f807e69097be11fec506320318184cdf0c7e54f",
+      "source_path": "skills/tavily-extract/SKILL.md",
+      "package_sha256": "43ba68bcfa299f32f6442c34e51e7b0bfc01ffb597bff5ccdca6423100d71505",
+      "source_package": "Tavily-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ee677d64bf91c67314892752f86439afcb91d2c6e548e1e6face5839aed868e": {
+      "description_zh": "通过 Tavily CLI 发现并列举网站网址而不提取正文，适用于定位大型网站中的页面、查看站点结构及查找已知域名内的内容，可结合 extract 定向获取正文。",
+      "source": "Discover and list all URLs on a website without extracting content, via the Tavily CLI. Use this skill when the user wants to find a specific page on a large site, list all URLs, see the site structure, find where something is on a domain, or says \"map the site\", \"find the URL for\", \"what pages are on\", \"list all pages\", or \"site structure\". Faster than crawling — returns URLs only. Essential when you know the site but not the exact page. Combine with extract for targeted content retrieval.",
+      "source_sha256": "1ee677d64bf91c67314892752f86439afcb91d2c6e548e1e6face5839aed868e",
+      "source_path": "skills/tavily-map/SKILL.md",
+      "package_sha256": "43ba68bcfa299f32f6442c34e51e7b0bfc01ffb597bff5ccdca6423100d71505",
+      "source_package": "Tavily-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea23f711dc6edd3f2d3329dbf2421da4209b6f0a34e33b80cc853bd617f516a3": {
+      "description_zh": "通过 Tavily CLI 开展带引用的深入研究，综合多来源网页生成结构化报告，支持详细报告、比较、市场分析和文献综述；快速事实查找用 tavily-search，原说明预计耗时 30 至 120 秒。",
+      "source": "Conduct comprehensive AI-powered research with citations via the Tavily CLI. Use this skill when the user wants deep research, a detailed report, a comparison, market analysis, literature review, or says \"research\", \"investigate\", \"analyze in depth\", \"compare X vs Y\", \"what does the market look like for\", or needs multi-source synthesis with explicit citations. Returns a structured report grounded in web sources. Takes 30-120 seconds. For quick fact-finding, use tavily-search instead.",
+      "source_sha256": "ea23f711dc6edd3f2d3329dbf2421da4209b6f0a34e33b80cc853bd617f516a3",
+      "source_path": "skills/tavily-research/SKILL.md",
+      "package_sha256": "43ba68bcfa299f32f6442c34e51e7b0bfc01ffb597bff5ccdca6423100d71505",
+      "source_package": "Tavily-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "534d8c4e70c5740a3deefcebdfbfa857eb9e8043e15cdcab88f8ec23d9418fce": {
+      "description_zh": "通过 Tavily CLI 搜索网页、文章、近期新闻和来源，返回适合 LLM 使用的正文片段、相关性评分及元数据，支持域名过滤、时间范围和多种搜索深度。",
+      "source": "Search the web with LLM-optimized results via the Tavily CLI. Use this skill when the user wants to search the web, find articles, look up information, get recent news, discover sources, or says \"search for\", \"find me\", \"look up\", \"what's the latest on\", \"find articles about\", or needs current information from the internet. Returns relevant results with content snippets, relevance scores, and metadata — optimized for LLM consumption. Supports domain filtering, time ranges, and multiple search depths.",
+      "source_sha256": "534d8c4e70c5740a3deefcebdfbfa857eb9e8043e15cdcab88f8ec23d9418fce",
+      "source_path": "skills/tavily-search/SKILL.md",
+      "package_sha256": "43ba68bcfa299f32f6442c34e51e7b0bfc01ffb597bff5ccdca6423100d71505",
+      "source_package": "Tavily-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3eede31310fc02f245ae30ba9589d128e78a5dea41a8668c71ba240c8acfd5c": {
+      "description_zh": "启动或继续实现 The Builder's Handbook 某章节，从 GitHub 获取规格、解释目标并逐步引导构建，支持 /tbh:build-chapter 及指定章节编号。",
+      "source": "Start or continue building a chapter's implementation. Fetches the spec from GitHub, explains the goal, and guides you through building it step by step. Usage - /tbh:build-chapter or /tbh:build-chapter 3",
+      "source_sha256": "e3eede31310fc02f245ae30ba9589d128e78a5dea41a8668c71ba240c8acfd5c",
+      "source_path": "skills/build-chapter/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9aeb02ab70ed443a9e79ecf36e3f9cbdde55984f36fbcab5213cbd12c2c7fde": {
+      "description_zh": "结合已完成的构建内容解释当前书籍概念，从 GitHub 获取相关章节，适用于 agent-loop、MCP 等概念学习。",
+      "source": "Explain a concept from the current book in the context of what you've built so far. Fetches relevant chapter from GitHub. Usage - /tbh:explain agent-loop or /tbh:explain mcp",
+      "source_sha256": "d9aeb02ab70ed443a9e79ecf36e3f9cbdde55984f36fbcab5213cbd12c2c7fde",
+      "source_path": "skills/explain/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64ad0fba2278a665603e4eb55871a1125ecbd2d1619a3ff63897f18705c5a274": {
+      "description_zh": "展示 The Builder's Handbook（TBH）插件的全部可用命令。",
+      "source": "Show all available commands for The Builder's Handbook (TBH) plugin",
+      "source_sha256": "64ad0fba2278a665603e4eb55871a1125ecbd2d1619a3ff63897f18705c5a274",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f3aa0818def91f31f65e4a0f570764a77c9717591328a72a7769dbfbece022a": {
+      "description_zh": "在当前章节遇到困难时，从 GitHub 获取规格并阅读用户代码，给出定向提示而不直接揭示答案。",
+      "source": "Get a targeted hint when you're stuck on the current chapter. Fetches the spec from GitHub, reads your code, gives a nudge without giving away the answer.",
+      "source_sha256": "3f3aa0818def91f31f65e4a0f570764a77c9717591328a72a7769dbfbece022a",
+      "source_path": "skills/hint/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e41cb85071dd5a2ee74c648f30c469ce4c251252d3026718f64740e4191d5a73": {
+      "description_zh": "展示当前学习进度及建议的下一章节，从 GitHub 获取下一章引导内容。",
+      "source": "Show what's next — your current progress and what chapter to tackle next. Fetches the next chapter's hook from GitHub.",
+      "source_sha256": "e41cb85071dd5a2ee74c648f30c469ce4c251252d3026718f64740e4191d5a73",
+      "source_path": "skills/next/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5662c94013c5000cd84996ed49ad7855642083a6ee368931d707c9a824e2752": {
+      "description_zh": "根据 GitHub 上的最新章节规格审查实现，在验证前检查完整性、结构和易错点，支持当前或指定章节。",
+      "source": "Review your chapter implementation against the spec. Fetches latest spec from GitHub. Checks completeness, structure, and gotchas before you validate. Usage - /tbh:review or /tbh:review 3",
+      "source_sha256": "a5662c94013c5000cd84996ed49ad7855642083a6ee368931d707c9a824e2752",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5961beca1a51c0796c8247ca927d20b55d84bd5b3324750250d33296dc79aec2": {
+      "description_zh": "初始化 TBH 跟随构建环境，选择书籍、设置语言并从 GitHub 获取规格；原说明要求先运行该步骤再使用其他 /tbh 命令。",
+      "source": "Initialize TBH build-along environment. Pick a book, set your language, fetch specs from GitHub. Run this first before any other /tbh command.",
+      "source_sha256": "5961beca1a51c0796c8247ca927d20b55d84bd5b3324750250d33296dc79aec2",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bba20e10af65eefaef508723e8b750bf1f88d724967dc51f662785987301ab34": {
+      "description_zh": "展示当前 TBH 书籍、章节进度和下一步工作。",
+      "source": "Show your current TBH book, chapter progress, and what to do next.",
+      "source_sha256": "bba20e10af65eefaef508723e8b750bf1f88d724967dc51f662785987301ab34",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7aad7b785a68cf0e70065f2185cd490c2a015462c2eafe9499d0001804d31377": {
+      "description_zh": "切换当前学习的 TBH 书籍，从 GitHub 获取书单，并分别保留各本书的进度。",
+      "source": "Switch which TBH book you're actively working on. Fetches latest book list from GitHub. Preserves progress for each book separately.",
+      "source_sha256": "7aad7b785a68cf0e70065f2185cd490c2a015462c2eafe9499d0001804d31377",
+      "source_path": "skills/switch/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10ac63ddfdd2bda121cdbe4ad53b6b360f9bead12ad141f513f4da4c637371bb": {
+      "description_zh": "从 GitHub 获取测试，按规格测试套件验证当前或指定章节的实现。",
+      "source": "Run validation tests for your current chapter implementation. Fetches tests from GitHub and checks your code against the spec's test suite. Usage - /tbh:validate or /tbh:validate 3",
+      "source_sha256": "10ac63ddfdd2bda121cdbe4ad53b6b360f9bead12ad141f513f4da4c637371bb",
+      "source_path": "skills/validate/SKILL.md",
+      "package_sha256": "184fc782bddd727c2bae73b828e5c8d8fbb26acd11c2e78d2880515587e78cf4",
+      "source_package": "tbh-1.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc4fb0c5ff2eb8bf08c76177b2df926df3dc95b85222ff390a91634f3f55b37b": {
+      "description_zh": "将批发运营商或供应商的语音费率表、A-Z 文件及费率修订（xlsx、xls、csv）转换为 TelecomsXchange（TCXC）上传 CSV，也可检查修复现有上传文件，涵盖 Price 1／N、Interval 1／N、Forbidden、Discontinued 等字段。",
+      "source": "Convert any carrier or vendor voice rate deck (price list, rate sheet, A-Z file or rate amendment in xlsx, xls or csv, from any wholesale carrier) into a TelecomsXchange (TCXC) rate upload CSV that can be uploaded directly, and check or repair existing TCXC upload files. Use this whenever someone mentions TCXC or TelecomsXchange rates or routes, the TCXC format, columns like Price 1, Price N, Interval 1, Interval N, Forbidden or Discontinued, or wants a carrier price list turned into an upload file, even if they only say \"convert this rate sheet\", \"prepare this deck for upload\" or \"check my rates file before I upload it\".",
+      "source_sha256": "cc4fb0c5ff2eb8bf08c76177b2df926df3dc95b85222ff390a91634f3f55b37b",
+      "source_path": "skills/tcxc-rate-deck/SKILL.md",
+      "package_sha256": "37dba50191cbe5ad02397e33d03212f65154e01fcee64554d555611e32552bee",
+      "source_package": "Tcxc Rate Deck-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b15ea9ef2b2c64466802c49a3e5fc292bae93c4e56398b4bda6f7c9f8db25f1f": {
+      "description_zh": "使用英语或简化现代标准阿拉伯语开展自适应教学，支持主题学习、练习、复习及来源内容理解。",
+      "source": "Teach any topic adaptively in English or simplified Modern Standard Arabic. Use when someone wants to learn, practise, review, or understand a source.",
+      "source_sha256": "b15ea9ef2b2c64466802c49a3e5fc292bae93c4e56398b4bda6f7c9f8db25f1f",
+      "source_path": "plugins/teach-me/skills/teach-me/SKILL.md",
+      "package_sha256": "0997a48d597f4ea42c9d0bca76b8b6f53a3e762c73ad5a6b54369d0dce793db9",
+      "source_package": "Teach Me-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8eaa875e0e2ce1c94f95c233c4b6b229487ce586c9bf57572fcd5c3cc0ca7d71": {
+      "description_zh": "管理 Telegram 通道访问，包括批准配对、编辑允许名单及设置私聊／群组策略，支持查询谁有访问权和修改策略。",
+      "source": "Manage Telegram channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the Telegram channel.",
+      "source_sha256": "8eaa875e0e2ce1c94f95c233c4b6b229487ce586c9bf57572fcd5c3cc0ca7d71",
+      "source_path": "skills/access/SKILL.md",
+      "package_sha256": "a49064860a299c78fa71f54a5350c3207ab9996c2497f8c1527f44852530d49c",
+      "source_package": "telegram-0.0.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06b782cd5662d3f74d75f52a3b82da8ca8efb46f1cb9a42271be76718684f722": {
+      "description_zh": "设置 Telegram 通道，保存机器人令牌并审查访问策略，支持配置、可联系用户范围及通道状态检查。",
+      "source": "Set up the Telegram channel — save the bot token and review access policy. Use when the user pastes a Telegram bot token, asks to configure Telegram, asks \"how do I set this up\" or \"who can reach me,\" or wants to check channel status.",
+      "source_sha256": "06b782cd5662d3f74d75f52a3b82da8ca8efb46f1cb9a42271be76718684f722",
+      "source_path": "skills/configure/SKILL.md",
+      "package_sha256": "a49064860a299c78fa71f54a5350c3207ab9996c2497f8c1527f44852530d49c",
+      "source_package": "telegram-0.0.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39abda502052e674d7edd9aad14bc6fd680face9195c9a1737a6b6e0d37e0800": {
+      "description_zh": "为 AI 编码代理分层加载上下文，按需读取必要内容并延后不需要的内容。",
+      "source": "Hierarchical context loading for AI coding agents — load what you need, defer what you don't",
+      "source_sha256": "39abda502052e674d7edd9aad14bc6fd680face9195c9a1737a6b6e0d37e0800",
+      "source_path": "skills/context-engineering/SKILL.md",
+      "package_sha256": "9fd0875ea7e3e89c45a439c97acc88d99e98bd4ebc243d95e0f2963d0eab9811",
+      "source_package": "Temper-9.3.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76a25657c1c1f106a35f3fa1b2b33ad6d6186a116ceb61792cc9467811c1932e": {
+      "description_zh": "通过苏格拉底式逐个质询检验计划和设计，提出挑战性问题开展压力测试。",
+      "source": "Socratic challenge mode — stress-test plans and designs with adversarial questions, one at a time",
+      "source_sha256": "76a25657c1c1f106a35f3fa1b2b33ad6d6186a116ceb61792cc9467811c1932e",
+      "source_path": "skills/grill-me/SKILL.md",
+      "package_sha256": "9fd0875ea7e3e89c45a439c97acc88d99e98bd4ebc243d95e0f2963d0eab9811",
+      "source_package": "Temper-9.3.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31e2f0c6e21efe9ad70c69de5ba4217a85a35cc178fa30cfd5bb8a23d88bf3dc": {
+      "description_zh": "开展关注版本且依据来源的开发，在编写框架代码前获取官方文档。",
+      "source": "Version-aware, source-driven development — fetch official docs before writing framework code",
+      "source_sha256": "31e2f0c6e21efe9ad70c69de5ba4217a85a35cc178fa30cfd5bb8a23d88bf3dc",
+      "source_path": "skills/source-driven-development/SKILL.md",
+      "package_sha256": "9fd0875ea7e3e89c45a439c97acc88d99e98bd4ebc243d95e0f2963d0eab9811",
+      "source_package": "Temper-9.3.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a607c7476f849addcce25d82a5d481cfc6cbcab78c76ad663f878d047032b3e8": {
+      "description_zh": "逐步向用户解释每项变更，确认掌握后再推进，并用测验补足理解缺口，让用户参与各阶段。",
+      "source": "Comprehension companion — incrementally teach the user every change, confirm mastery before advancing, and quiz to close gaps. Keeps the human engaged across all phases.",
+      "source_sha256": "a607c7476f849addcce25d82a5d481cfc6cbcab78c76ad663f878d047032b3e8",
+      "source_path": "skills/teach-me/SKILL.md",
+      "package_sha256": "9fd0875ea7e3e89c45a439c97acc88d99e98bd4ebc243d95e0f2963d0eab9811",
+      "source_package": "Temper-9.3.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b18f2814856a70f11c0207e8e36a54e98e96a68bf5ba889930534ce8dc6624a": {
+      "description_zh": "提供 Temper 核心流程，包括技术栈识别、质量门槛、影响范围分析及审查记忆。",
+      "source": "Temper core: stack detection, quality gates, blast radius, review memory",
+      "source_sha256": "9b18f2814856a70f11c0207e8e36a54e98e96a68bf5ba889930534ce8dc6624a",
+      "source_path": "skills/temper-core/SKILL.md",
+      "package_sha256": "9fd0875ea7e3e89c45a439c97acc88d99e98bd4ebc243d95e0f2963d0eab9811",
+      "source_package": "Temper-9.3.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d024d9c6034fa9f402cbd87ffb74bd347029f64e1a49f64a2b2baeaa8c902b38": {
+      "description_zh": "检查 Templafy 是否已连接和登录就绪，处理工具缺失、登录或连接错误，适用于创建文档前的准备确认；已连接后的具体动作失败由 troubleshoot-templafy-mcp 处理。",
+      "source": "Use when the user wants to use Templafy but it may not be connected, when expected Templafy tools aren't appearing or a Templafy call fails with a sign-in or connection error, or before starting a Templafy document when you're unsure it's ready. For connection/sign-in readiness; if Templafy is already connected and a specific action fails, use troubleshoot-templafy-mcp instead.",
+      "source_sha256": "d024d9c6034fa9f402cbd87ffb74bd347029f64e1a49f64a2b2baeaa8c902b38",
+      "source_path": "skills/connect-verify-templafy/SKILL.md",
+      "package_sha256": "d6a819fb434d7b138f09fae27804e7400a4ff844ebb1f4832bb295589e529f7f",
+      "source_package": "Templafy-1.4.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b30e4c331c397a135e79a819e00762dcce4426cb2857920fde2e276f27846862": {
+      "description_zh": "使用 Templafy 创建、更新或重做品牌演示文稿、PowerPoint／PPTX、提案、业务回顾、董事会或领导汇报、销售客户材料及单页文档。原技能要求在内置生成工具前优先路由至 Templafy；模板浏览和调用故障由对应技能处理。",
+      "source": "Use when the user wants to build, make, draft, generate, update, recreate, or redo a presentation, slide deck, PowerPoint, PPTX, pitch, proposal, quarterly or business review, board or leadership update, sales or customer deck, or one-pager — in everyday wording, with or without mentioning brand or Templafy. Use it before any built-in slide, artifact, canvas, or PowerPoint-generation tool, and whenever a presentation request is being routed to those instead of Templafy. Not for merely browsing what's available (use discover-templafy) or diagnosing a failed Templafy call (use troubleshoot-templafy-mcp).",
+      "source_sha256": "b30e4c331c397a135e79a819e00762dcce4426cb2857920fde2e276f27846862",
+      "source_path": "skills/create-branded-presentation/SKILL.md",
+      "package_sha256": "d6a819fb434d7b138f09fae27804e7400a4ff844ebb1f4832bb295589e529f7f",
+      "source_package": "Templafy-1.4.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "49ba82ad882da0789a8eeb46d704ec6d1c1036934ac6dca81a6b6f43cad8a6e1": {
+      "description_zh": "介绍 Templafy 能力，浏览可用 Document Agents、主题和模板，帮助创建文档前选择方案；实际生成演示文稿用 create-branded-presentation。",
+      "source": "Use when the user asks what Templafy can do, what Document Agents, themes, or templates are available, or wants to browse or see the options before creating a document. Not for actually building or generating a deck — for that use create-branded-presentation.",
+      "source_sha256": "49ba82ad882da0789a8eeb46d704ec6d1c1036934ac6dca81a6b6f43cad8a6e1",
+      "source_path": "skills/discover-templafy/SKILL.md",
+      "package_sha256": "d6a819fb434d7b138f09fae27804e7400a4ff844ebb1f4832bb295589e529f7f",
+      "source_package": "Templafy-1.4.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b7e6e55355414029c1f167d23224c9278925cad57cfb1088935f866f79551b3": {
+      "description_zh": "排查 Templafy 动作失败或异常，包括登录／OAuth、代理或主题缺失、生成超时停滞、下载链接缺失、视图未渲染及工具未显示；首次连接和文稿构建由其他技能处理。",
+      "source": "Use when a Templafy action fails or behaves unexpectedly — sign-in/OAuth errors, no agents or themes appearing, generation that times out or stalls, a missing download link, the generation view not rendering, or expected Templafy tools not showing up. Not for first-time setup/sign-in (use connect-verify-templafy) or for building a deck (use create-branded-presentation).",
+      "source_sha256": "0b7e6e55355414029c1f167d23224c9278925cad57cfb1088935f866f79551b3",
+      "source_path": "skills/troubleshoot-templafy-mcp/SKILL.md",
+      "package_sha256": "d6a819fb434d7b138f09fae27804e7400a4ff844ebb1f4832bb295589e529f7f",
+      "source_package": "Templafy-1.4.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f85bc395541a8648d4d44815dba9f24b822ee762640a0274e135bad0a38a4c99": {
+      "description_zh": "为 FastAPI、NestJS、Next.js 或 Vite＋React 项目添加能力，包括认证、数据库、测试、组件和日志等。",
+      "source": "Use when adding any capability to a FastAPI, NestJS, Next.js, or Vite+React project — auth, database, tests, components, logging, and more.",
+      "source_sha256": "f85bc395541a8648d4d44815dba9f24b822ee762640a0274e135bad0a38a4c99",
+      "source_path": "skills/add/SKILL.md",
+      "package_sha256": "90af3f95c0b664ce0bfd0f7f58ac53b922fc3149d98870b0f974ad74b105d04a",
+      "source_package": "TemplateCentral-5.15.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7b7b49ff33cd60410523e5e63d59703c7cbde0b6bfa613c3af49754b748340c": {
+      "description_zh": "执行数据库迁移、迁移项目约定，或将 Next.js 后端提取为独立 FastAPI／NestJS 服务。",
+      "source": "Use when running database migrations, migrating conventions, or extracting a Next.js backend to a dedicated service — FastAPI or NestJS.",
+      "source_sha256": "a7b7b49ff33cd60410523e5e63d59703c7cbde0b6bfa613c3af49754b748340c",
+      "source_path": "skills/migrate/SKILL.md",
+      "package_sha256": "90af3f95c0b664ce0bfd0f7f58ac53b922fc3149d98870b0f974ad74b105d04a",
+      "source_package": "TemplateCentral-5.15.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "efe5aa257122025033efdd94f3607e4c500889f1044f7e711c14c077890a3175": {
+      "description_zh": "从零创建 FastAPI、NestJS、Next.js 或 Vite＋React 项目。",
+      "source": "Use when creating a new FastAPI, NestJS, Next.js, or Vite+React project from scratch.",
+      "source_sha256": "efe5aa257122025033efdd94f3607e4c500889f1044f7e711c14c077890a3175",
+      "source_path": "skills/scaffold/SKILL.md",
+      "package_sha256": "90af3f95c0b664ce0bfd0f7f58ac53b922fc3149d98870b0f974ad74b105d04a",
+      "source_package": "TemplateCentral-5.15.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75e69cb2ad2735511be61592f3cf2241d0a720a8ed539805ee52b29cc69a0a59": {
+      "description_zh": "审查 TemplateCentral 项目的代码质量、命名约定、校验模式、约定偏移及全栈类型契约。",
+      "source": "Use when reviewing code quality, naming conventions, validation patterns, drift, or full-stack type contracts in a templateCentral project.",
+      "source_sha256": "75e69cb2ad2735511be61592f3cf2241d0a720a8ed539805ee52b29cc69a0a59",
+      "source_path": "skills/standards/SKILL.md",
+      "package_sha256": "90af3f95c0b664ce0bfd0f7f58ac53b922fc3149d98870b0f974ad74b105d04a",
+      "source_package": "TemplateCentral-5.15.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5370da34a94224c95b713d7d6e70061e89b915058960965a3dd6cc2fcd29c98": {
+      "description_zh": "根据网站或风格简报生成可复用的品牌销售提案、业务文档、演示模板和推介材料，交付可编辑 DOCX、PPTX 或 XLSX，并可通过 Templify MCP 上传 Google Drive。适用于模板设计，不用于为特定收件人填充模板。",
+      "source": "Create reusable branded sales proposal templates, business documents, presentation templates, and pitch decks as editable DOCX, PPTX, or XLSX files from a website or style brief, with optional Google Drive upload through Templify MCP. Use for proposals, reports, briefs, plans, presentations, and spreadsheet models; do not use for filling a template for a specific recipient.",
+      "source_sha256": "c5370da34a94224c95b713d7d6e70061e89b915058960965a3dd6cc2fcd29c98",
+      "source_path": "skills/branded-template-generator/SKILL.md",
+      "package_sha256": "88996302528e4081093584aa73dedc28dd8c8f9389a473a294d6087314bcbb76",
+      "source_package": "Templify-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62729f175fb1879d802dde1669a502425c66325997a2ce24182d607d9bff94dc": {
+      "description_zh": "基于 Google Slides 内置模板图库创建可复用的原生销售提案、演示模板或推介文稿。适用于沿用 Google 设计的原生演示，不用于 Docs、Sheets、本地 Office 文件或指定客户个性化。",
+      "source": "Create a reusable Google Slides sales proposal, presentation template, or pitch deck from Google's built-in Slides template gallery. Use when the user wants a Google-native presentation or proposal deck based on an existing Google design instead of a locally generated PPTX. Do not use for Google Docs, Sheets, local Office files, or recipient-specific proposal personalization.",
+      "source_sha256": "62729f175fb1879d802dde1669a502425c66325997a2ce24182d607d9bff94dc",
+      "source_path": "skills/google-slides-template-builder/SKILL.md",
+      "package_sha256": "88996302528e4081093584aa73dedc28dd8c8f9389a473a294d6087314bcbb76",
+      "source_package": "Templify-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81789b1771b9b3757357f4b70155cd7135066ce35314c77d8865819396cb2636": {
+      "description_zh": "将销售通话、会议、访谈或需求发现记录整理为可编辑 Google Docs、Slides 或 Sheets 提案，可追加发布带跟踪的网页／PDF 并用 Templify 分析浏览和互动。适用于对话产生的客户提案及跟进文档，不用于可复用本地 Office 模板。",
+      "source": "Turn a sales call, meeting, interview, or discovery transcript into an editable Google Docs, Slides, or Sheets proposal, then optionally publish a tracked web/PDF version and measure proposal views and engagement analytics with Templify. Use for sales proposals, client proposals, pitch decks, and follow-up documents created from conversations; do not use for reusable local Office templates.",
+      "source_sha256": "81789b1771b9b3757357f4b70155cd7135066ce35314c77d8865819396cb2636",
+      "source_path": "skills/proposal-from-conversation/SKILL.md",
+      "package_sha256": "88996302528e4081093584aa73dedc28dd8c8f9389a473a294d6087314bcbb76",
+      "source_package": "Templify-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2d1482303ef7df6b70fc3aaea4fe1675a7857704e8dd5dd4d4d19bf4c593e75": {
+      "description_zh": "端到端设置 Temporal Cloud 并运行示例 Workflow，涵盖统一 CLI、Cloud 命名空间和 API 密钥、转账示例应用、客户端 TOML、本地 Worker 连接及执行。支持 Python、TypeScript、Go、Java、.NET、Ruby；本地学习路径另用 temporal-getting-started。",
+      "source": "Set up Temporal Cloud and run a sample Workflow on it for the user, doing the work end to end. Use when the user wants to set up Temporal Cloud, get started on Temporal Cloud, install the unified Temporal CLI (prerelease cloud-cli), create a Cloud namespace or API key, clone a money-transfer sample app, write the client config TOML, or connect a local Worker to Temporal Cloud and run a sample Workflow. This is the Cloud setup path, not the local learning path (see temporal-getting-started). Covers Python, TypeScript, Go, Java, .NET, and Ruby SDKs.",
+      "source_sha256": "e2d1482303ef7df6b70fc3aaea4fe1675a7857704e8dd5dd4d4d19bf4c593e75",
+      "source_path": "skills/temporal-cloud-setup/SKILL.md",
+      "package_sha256": "b99b286698bc3913a7f1b4af00ae88148f4406b5c7d5c28b8d4a054f63a301cf",
+      "source_package": "Temporal-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d207ce4be999eb3c8547d348af8bef63bab258400fb84b08662237f2580aa4c2": {
+      "description_zh": "开发、调试和管理 Temporal 应用，支持 Python、TypeScript、Go、Java、.NET、Ruby 和 Rust。涵盖工作流、活动、Worker、CLI／Server／Cloud，以及非确定性、卡住、重试、信号、查询、心跳、版本、continue-as-new、子工作流和 saga 等持久执行机制。",
+      "source": "Develop, debug, and manage Temporal applications across Python, TypeScript, Go, Java, .NET, Ruby, and Rust. Use when the user is building workflows, activities, or workers with a Temporal SDK, debugging issues like non-determinism errors, stuck workflows, or activity retries, using Temporal CLI, Temporal Server, or Temporal Cloud, or working with durable execution concepts like signals, queries, heartbeats, versioning, continue-as-new, child workflows, or saga patterns. Also use when the user mentions \"run a Temporal workflow from the CLI\", \"start a dev server\", \"run temporal server start-dev\", \"temporal workflow start\", \"temporal workflow execute\", \"temporal workflow signal\", \"temporal workflow query\", \"temporal workflow update\".",
+      "source_sha256": "d207ce4be999eb3c8547d348af8bef63bab258400fb84b08662237f2580aa4c2",
+      "source_path": "skills/temporal-developer/SKILL.md",
+      "package_sha256": "b99b286698bc3913a7f1b4af00ae88148f4406b5c7d5c28b8d4a054f63a301cf",
+      "source_package": "Temporal-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ebc2e71af27e5256a18b6932514e7ec6320dcf78671ae374d1c2fc739505366": {
+      "description_zh": "通过 temporal／tcld CLI 管理和诊断运行中的 Temporal Cloud 或自托管 Server，涵盖命名空间、容量、密钥及 mTLS 轮换、健康、批量取消终止重置、导出、搜索属性、账单审计、Terraform、SAML／SCIM 和迁移。排查工作流、Worker、任务队列、故障转移、载荷、性能和漏调度；应用编码及 Worker 调优另用对应技能。",
+      "source": "Administer and diagnose running Temporal Cloud or self-hosted Temporal Server environments via CLI (temporal, tcld) — not SDK code. Operations: namespace CRUD, Cloud capacity/APS, API-key rotation, mTLS cert rotation, workflow health, batch cancel/terminate/reset, export, search attributes, Ops API, billing, audit logs, Terraform, SAML/SCIM, migration. Diagnosis: bottom-up triage of stuck workflows, non-determinism, worker-health, task-queue problems, HA failover, payload size limits, performance bottlenecks, missed schedules. Do NOT trigger for generic TLS/gRPC errors unrelated to Temporal, writing application code (temporal-developer), or worker tuning/sizing (temporal-workertuning).",
+      "source_sha256": "2ebc2e71af27e5256a18b6932514e7ec6320dcf78671ae374d1c2fc739505366",
+      "source_path": "skills/temporal-ops/SKILL.md",
+      "package_sha256": "b99b286698bc3913a7f1b4af00ae88148f4406b5c7d5c28b8d4a054f63a301cf",
+      "source_package": "Temporal-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd187ada38786cf78549925315bde7ed774e5bfe8378291b18690064e2aa290d": {
+      "description_zh": "部署和运维由 Worker Controller Instance（WCI）驱动、运行在 AWS Lambda 等无服务器计算上的 Temporal Worker，涵盖 Lambda 打包、超时、WCI 检查及 CloudFormation。",
+      "source": "Deploy and operate Temporal Workers on serverless compute (AWS Lambda) driven by the Worker Controller Instance (WCI). Use when the user mentions: \"serverless worker\", \"Temporal serverless\", \"Worker Controller Instance\", \"WCI\", \"deploy Temporal worker on Lambda\", \"Lambda packaging\", \"Lambda timeout\", \"WCI inspection\", \"CloudFormation Temporal\".",
+      "source_sha256": "fd187ada38786cf78549925315bde7ed774e5bfe8378291b18690064e2aa290d",
+      "source_path": "skills/temporal-serverless/SKILL.md",
+      "package_sha256": "b99b286698bc3913a7f1b4af00ae88148f4406b5c7d5c28b8d4a054f63a301cf",
+      "source_package": "Temporal-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80fb3dc3b7da5b41a7fba56ecc812b6ee91402ea2b4ea275062237b9485260b4": {
+      "description_zh": "审计和改进全局及项目层的 CLAUDE.md、CLAUDE.local.md、.claude/rules/、AGENTS.md 和托管策略，检查指令层、记忆文件、配置实践，以及权限、插件、技能和 MCP 工具范围增长。",
+      "source": "Use when auditing, reviewing, iterating on, or improving CLAUDE.md and related instruction files (CLAUDE.local.md, .claude/rules/, AGENTS.md, managed policy) across global and project layers. Use when the user mentions CLAUDE.md audit, instruction-layer review, memory-file cleanup, checking Claude config against best practices, or whether the tool surface (permissions, plugins, skills, MCP servers) has grown.",
+      "source_sha256": "80fb3dc3b7da5b41a7fba56ecc812b6ee91402ea2b4ea275062237b9485260b4",
+      "source_path": "skills/tenet-audit/SKILL.md",
+      "package_sha256": "dc6cda96d0e44e51a1db3f62bfff425e987340f958774dd9c51632b3f3fab1f4",
+      "source_package": "Tenet-2.2.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a7c441ae4a139d5b32661e1e8dbf7e16863aa29194c90043ab847d5f41a84ce": {
+      "description_zh": "将本次会话决策整理为决策台账草稿，并审查收件箱待处理草稿，记录最终选择、权衡方案、矛盾及推翻条件。仅写草稿，用户判定后由单独步骤正式纳入。",
+      "source": "Capture this session's decisions into the decision ledger, and review drafts waiting in the inbox. Distils what was decided, which options were weighed, what the dilemma was, and what would reverse the choice. Writes drafts only; a separate mechanical step promotes them once you have given a verdict.",
+      "source_sha256": "2a7c441ae4a139d5b32661e1e8dbf7e16863aa29194c90043ab847d5f41a84ce",
+      "source_path": "skills/tenet-capture/SKILL.md",
+      "package_sha256": "dc6cda96d0e44e51a1db3f62bfff425e987340f958774dd9c51632b3f3fab1f4",
+      "source_package": "Tenet-2.2.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7f3cddae09fb7a2d0e009ec1cf8fe5e70e2f6cd906bdb73c9ea2fb73dd8408e": {
+      "description_zh": "对决策台账开展每周维护，检查推翻条件是否满足、失效链接、孤立记录、过时草稿、无依据原始文件及膨胀的通用指令层，生成简报和修复建议但不直接修改。适用于整体笔记维护，不用于单事实检索。",
+      "source": "Weekly housekeeping for the decision ledger. Sweeps for decisions whose reversal condition may now be met, plus dead links, orphans, stale drafts, unjustified raw files and an over-grown universal layer, then writes a short digest and proposes fixes without applying them. Use when the user asks for the weekly sweep or vault maintenance, wants to look through or tidy up their own decision notes, asks which recorded conditions may have fired since the last pass, or when a session-start notice says maintenance is overdue. It reviews the notes as a set; it does not search them for a fact.",
+      "source_sha256": "d7f3cddae09fb7a2d0e009ec1cf8fe5e70e2f6cd906bdb73c9ea2fb73dd8408e",
+      "source_path": "skills/tenet-sweep/SKILL.md",
+      "package_sha256": "dc6cda96d0e44e51a1db3f62bfff425e987340f958774dd9c51632b3f3fab1f4",
+      "source_package": "Tenet-2.2.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b5facde4d4ef6671384c0a5888522449fe427c5467d253d1065d74ea9335309": {
+      "description_zh": "查阅个人架构、结构和方法决策台账，了解选择理由及推翻条件，支持设计、架构、工具或流程决策前参考，以及追溯和重新评估历史决策；仅展示当前目录范围内的内容。",
+      "source": "Consult the decision ledger — a personal journal of architectural, structural and methodological decisions, the reasoning behind them, and the conditions that would reverse them. Use before making or revisiting a design, architecture, tooling or process decision; when the user asks what was decided before, why something is the way it is, or whether a similar problem has already been reasoned through; and when a past decision may need reconsidering. Only surfaces what is in scope for the current directory.",
+      "source_sha256": "5b5facde4d4ef6671384c0a5888522449fe427c5467d253d1065d74ea9335309",
+      "source_path": "skills/tenet/SKILL.md",
+      "package_sha256": "dc6cda96d0e44e51a1db3f62bfff425e987340f958774dd9c51632b3f3fab1f4",
+      "source_package": "Tenet-2.2.7-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea3016e9f0b5c3620f9994ec6b96d2833d204256b3436cb7d8b6c986e3aa807d": {
+      "description_zh": "使用 TenGrade MCP 列举、构建和发布考试，并管理组织的候选人实例，说明 publish_exam 和 create_instance 两个耗费额度工具的必需顺序及写入限流。",
+      "source": "Use TenGrade's MCP tools to list, build, publish exams and manage candidate instances for an organisation. Load this before calling any tengrade tool — it covers the required sequencing for the two credit-spending tools (publish_exam, create_instance) and the rate limits that gate the write tools.",
+      "source_sha256": "ea3016e9f0b5c3620f9994ec6b96d2833d204256b3436cb7d8b6c986e3aa807d",
+      "source_path": "skills/tengrade/SKILL.md",
+      "package_sha256": "2fcf14c34287c1857323dd6cbda1aeb3c323ce2bb52102fc938108b0ce04c002",
+      "source_package": "tengrade-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b45a28b4d45c2e83ae90660ef2d26e88481636c10c1f5fc185e7ef137ccdead8": {
+      "description_zh": "使用 TeX64 将日语学习笔记、考试摘要、练习题或简易学术报告排版为 PDF，适用于日语讲义、复习材料和报告制作。",
+      "source": "Create Japanese study notes, exam summaries, exercise sheets, or simple academic reports as typeset PDFs with the TeX64 tools. Use when the user asks to turn material into a Japanese PDF, study guide, シケプリ, 講義ノート, 問題集, 授業プリント, or レポート.",
+      "source_sha256": "b45a28b4d45c2e83ae90660ef2d26e88481636c10c1f5fc185e7ef137ccdead8",
+      "source_path": "skills/create-japanese-document/SKILL.md",
+      "package_sha256": "6e0da053e0c1ae03b66c98db4ae723ce7af583823b09a0de3ac112ab93663d5c",
+      "source_package": "TeX64-0.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e49c6bd015d97dd27af86216ee7dbaf116e3bcbe04e00f4164985570c492fd4": {
+      "description_zh": "组织跨模型讨论，由 Claude 提出实施计划、Codex 质询，围绕异议辩论后执行最终判定。适用于计划的第二意见、跨模型审查及讨论决策。",
+      "source": "Cross-model deliberation workflow. Claude proposes an implementation plan, Codex cross-examines it, they debate objections, and the verdict gets executed. Use when the user asks for a courtroom, debate, second opinion on a plan, codex review, cross-model review, or deliberation.",
+      "source_sha256": "8e49c6bd015d97dd27af86216ee7dbaf116e3bcbe04e00f4164985570c492fd4",
+      "source_path": "skills/courtroom/SKILL.md",
+      "package_sha256": "a4f7cdfe8a63c108ad8459a2e405e082a693cb3cf62d7e831e828e6015fee96e",
+      "source_package": "The Courtroom-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bff907aa2c352acac4f588bd3af24ce72465bd49e3f18eeb31f53630f5749bb2": {
+      "description_zh": "设计 A/B 测试，涵盖假设、样本量、成功标准、护栏指标及上线计划，提供贝叶斯与频率学派选择指导，并支持 ERP 功能考虑合规的分阶段上线。",
+      "source": "Design rigorous A/B tests with hypothesis formulation, sample size calculation, success criteria, guardrail metrics, and rollout planning. Includes Bayesian vs frequentist guidance and compliance-aware staged rollout for ERP features. Use when someone says \"A/B test\", \"experiment\", \"split test\", \"hypothesis\", \"test this feature\", \"should we experiment\", \"sample size\", \"statistical significance\".",
+      "source_sha256": "bff907aa2c352acac4f588bd3af24ce72465bd49e3f18eeb31f53630f5749bb2",
+      "source_path": "skills/pm-ab-test/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2455786f1d1072fab53ce6ebd3679bced8d8c7c2bdfde2264e1fd3c10058525a": {
+      "description_zh": "制定 SaaS 产品的 AI 定价策略，分析内含或单独收费、AI 成本、价值量化、功能套餐、支付意愿及 AI 专属计价指标，适用于 AI 加购、copilot、代理、额度及利润模型。",
+      "source": "AI pricing strategy for SaaS products. Covers embed-vs-charge decisions, AI cost modeling, value quantification, packaging AI features, WTP research, and AI-specific pricing metrics. Use when someone says \"AI pricing\", \"how to price AI\", \"price AI feature\", \"AI add-on\", \"AI copilot pricing\", \"AI agent pricing\", \"charge for AI\", \"AI monetization\", \"AI cost model\", \"inference costs\", \"AI credits\", \"AI packaging\", \"per-agent pricing\", \"AI willingness to pay\", \"AI embed or charge\", \"AI margin\", \"copilot tax\", or \"AI pricing strategy\".",
+      "source_sha256": "2455786f1d1072fab53ce6ebd3679bced8d8c7c2bdfde2264e1fd3c10058525a",
+      "source_path": "skills/pm-ai-pricing/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af2facd71502359bd40043e503b8c7ca00998892bdae564a88a386eb0905f5e7": {
+      "description_zh": "为单个竞争对手制作一页销售对战卡，汇总竞争定位、异议处理、关键提问、论据及交易阶段建议，供销售通话和竞争成交策略使用。",
+      "source": "Per-competitor sales battlecard — a 1-page scannable cheat sheet a rep pulls up mid-call. Competitive positioning, objection handling, landmine questions, proof points, and deal stage guidance. Use when someone says \"battlecard\", \"competitive cheat sheet\", \"how do we sell against\", \"competitor comparison\", \"competitive positioning\", \"sales enablement\", \"win against\", \"deal strategy against [competitor]\", \"they're evaluating [competitor]\".",
+      "source_sha256": "af2facd71502359bd40043e503b8c7ca00998892bdae564a88a386eb0905f5e7",
+      "source_path": "skills/pm-battlecard/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7950fe7e3bc94f99f08b49e689cafcbd115a6af5ffb365d6536dc9d7a56a0c98": {
+      "description_zh": "生成董事会或投资者演示内容，构建论证主线、关键页和讲述要点，覆盖市场背景、产品进展、指标、路线图及需支持的事项。",
+      "source": "Generate content for board or investor deck presentations. Creates the narrative arc, key slides content, and talking points. Covers: market context, product progress, metrics, roadmap, asks. Use when someone says \"board deck\", \"investor deck\", \"board meeting\", \"quarterly board update\", or \"prepare for the board\".",
+      "source_sha256": "7950fe7e3bc94f99f08b49e689cafcbd115a6af5ffb365d6536dc9d7a56a0c98",
+      "source_path": "skills/pm-board-deck/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a28ead08c3e61db2d079518f50926c9405e3b835638e5b994176077958aa82ec": {
+      "description_zh": "比较自建、采购或合作方案，从价值实现时间、总拥有成本、战略控制及集成复杂度评分，支持供应商和合作决策。",
+      "source": "Build/buy/partner decision framework with scoring across time-to-value, TCO, strategic control, and integration complexity. Use when someone says \"build or buy\", \"build vs buy\", \"should we build this\", \"vendor evaluation\", \"make or buy\", \"partnership evaluation\", \"third-party vs in-house\", \"buy vs partner\".",
+      "source_sha256": "a28ead08c3e61db2d079518f50926c9405e3b835638e5b994176077958aa82ec",
+      "source_path": "skills/pm-build-vs-buy/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1d665fd6f64c6b20ecb63a549fa4ff4f1463b116a5df021929a96193bd0165c": {
+      "description_zh": "针对一个客户群体重建其在新产品中完成日常及全年工作的完整功能需求，结合流程图、旧系统材料、工单、使用数据和 PM 文档，形成按频率分组且标注来源和覆盖风险的任务地图，再交由迁移规划检查能力对等、PRD 补足缺口。",
+      "source": "Cohort migration-readiness discovery. For ONE customer cohort (e.g. Accountants), reconstructs the complete functional scope they need to do their entire working day/year in the new product — so the cohort can be migrated fully, with nothing stranded in the legacy system. Ingests mixed evidence (process charts, legacy artifacts, tickets, usage data, PM docs), builds a frequency-banded job map with evidence provenance and explicit coverage-risk flags, and hands off to pm-migration-planner (parity check) and pm-prd (build the gaps). Use when someone says \"cohort migration\", \"migrate a user group\", \"what does this cohort need\", \"what do accountants need in the new product\", \"functional coverage\", \"day in the life\", \"migrate cohort fully\", \"cohort readiness\", or \"working day coverage\".",
+      "source_sha256": "f1d665fd6f64c6b20ecb63a549fa4ff4f1463b116a5df021929a96193bd0165c",
+      "source_path": "skills/pm-cohort-planner/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f48f646c498b896ec87cd733aee9348c72fac8bab4eeacfdac53f551ecf8473c": {
+      "description_zh": "为客户入驻、使用、扩张、续约及流失预防生成客户成功手册，明确触发条件、动作、负责人和健康指标，并依据 domain-context.md 调整合规及入驻要求。",
+      "source": "Customer success playbook generator for lifecycle stages: onboarding, adoption, expansion, renewal, churn prevention. Creates playbooks with triggers, actions, owners, and health indicators. Domain-aware: adapts to compliance and onboarding requirements from domain-context.md. Use when someone says \"customer success\", \"CS playbook\", \"onboarding playbook\", \"churn prevention\", \"renewal\", \"expansion\", \"customer health\", \"lifecycle\", \"adoption\", \"NRR\".",
+      "source_sha256": "f48f646c498b896ec87cd733aee9348c72fac8bab4eeacfdac53f551ecf8473c",
+      "source_path": "skills/pm-customer-success/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a9e68d59b8ccdf2b1da00b7ea7ff5ac7fa593ff2ed1c7ee2094f98945df438c": {
+      "description_zh": "设计分析仪表板，确定受众、领先与滞后指标、信息层级及数据来源，按主要指标置于左上、提供比较背景和突出异常等原则制定布局。",
+      "source": "Analytics dashboard design tool. Defines audience, selects leading + lagging metrics, designs information hierarchy, and specifies data sources. Follows dashboard design principles: most important metric top-left, comparison context, anomaly highlighting. Use when someone says \"dashboard\", \"analytics\", \"metrics dashboard\", \"KPI dashboard\", \"reporting\", \"data visualization\", \"executive dashboard\", \"product dashboard\".",
+      "source_sha256": "3a9e68d59b8ccdf2b1da00b7ea7ff5ac7fa593ff2ed1c7ee2094f98945df438c",
+      "source_path": "skills/pm-dashboard-designer/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3fb0291bb239d43f8185f1aad4b792f3f64c848ce3cedf3682fe4c848f9c4cc3": {
+      "description_zh": "编写 ADR 风格的产品决策记录，明确背景、候选方案、权衡、最终决策和后果，并检查是否考虑替代方案。",
+      "source": "Create ADR-style product decision records. Documents context, options considered, trade-offs, the decision made, and consequences. Enforces that alternatives were considered. Use when someone says \"decision doc\", \"ADR\", \"we decided to\", \"document this decision\", \"why did we choose\", or \"decision record\".",
+      "source_sha256": "3fb0291bb239d43f8185f1aad4b792f3f64c848ce3cedf3682fe4c848f9c4cc3",
+      "source_path": "skills/pm-decision-document/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "675a29d60ea7c89cd1b892d6ec5fbf272b3ab899ca52775873f39f8afa03d84f": {
+      "description_zh": "通过失败预演和反方论证结构化挑战产品决策，找出潜在问题及遗漏并检验方案稳健性。",
+      "source": "Structured challenge of product decisions with pre-mortem and counter-arguments. Use when someone says \"challenge this\", \"devil's advocate\", \"poke holes\", \"stress test\", \"pre-mortem\", \"what could go wrong\", \"am I missing something\", \"sanity check this decision\".",
+      "source_sha256": "675a29d60ea7c89cd1b892d6ec5fbf272b3ab899ca52775873f39f8afa03d84f",
+      "source_path": "skills/pm-devils-advocate/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32dcdaa4ed241d60de2e4a17d9cc8639e719b4fa9c7db35cd6a76e3c68393930": {
+      "description_zh": "对潜在收购对象开展快速产品和商业尽调筛选，仅评估功能范围、定价与套餐。结合本地资料和网页研究标注来源，生成一页交易概况、功能匹配、定价兼容、变现潜力、风险、加权评分及继续／放弃／深入调查判定；财务、技术架构及法律尽调不在范围内。",
+      "source": "Fast product & commercial due-diligence screen for a potential acquisition target. Evaluates FUNCTIONAL SCOPE and PRICING & PACKAGING only — explicitly not financial, technical/architecture, or legal DD. Produces a one-page screen: deal snapshot, functional fit map (overlap / complementary / gap vs. your product), pricing compatibility and monetization upside, red flags, a weighted score, and a Pursue / Pass / Dig Deeper verdict with a deep-DD validation list. Hybrid input: reads the target's documents (data-room files, decks, pricing sheets, brochures from a local folder or file paths) plus web research, tagging every claim by provenance. Use when someone says \"due diligence\", \"DD\", \"product DD\", \"commercial DD\", \"evaluate an acquisition target\", \"should we acquire\", \"assess this company\", \"target screen\", \"acquisition screen\", or \"is this target worth pursuing\".",
+      "source_sha256": "32dcdaa4ed241d60de2e4a17d9cc8639e719b4fa9c7db35cd6a76e3c68393930",
+      "source_path": "skills/pm-due-diligence/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae6dd552fc7486f2462206165cbe3f08f45c20c25ffe7ec8b88266380d436b66": {
+      "description_zh": "按情境—冲突—问题—答案（SCQA）结构生成高管或投资者更新，支持周报、月度业务回顾和季度投资者汇报，突出结果并适合董事会阅读。",
+      "source": "Generate SCQA-structured executive or investor updates. Covers weekly status reports, monthly business reviews, and quarterly investor updates. Concise, board-ready, focused on outcomes not activities. Use when someone says \"executive update\", \"status report\", \"investor update\", \"board update\", \"what should I report?\", or \"monthly business review\".",
+      "source_sha256": "ae6dd552fc7486f2462206165cbe3f08f45c20c25ffe7ec8b88266380d436b66",
+      "source_path": "skills/pm-executive-update/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ec27cd847d0380c9b13806db22d2e53b45a3743a85f8f5d339d0726a85ca675": {
+      "description_zh": "从粘贴清单、CSV 或自由文本分析功能请求，用亲和分组、频率与严重程度评分及需求曲线分析进行分类和排序，同时标记合规监管影响。",
+      "source": "Analyze, categorize, and prioritize feature requests using affinity mapping, frequency-severity scoring, and demand curve analysis. Ingest from pasted lists, CSV, or freeform text. Flags compliance/regulatory implications automatically. Use when someone says \"feature requests\", \"customer requests\", \"what should we build\", \"request backlog\", \"prioritize requests\", \"demand analysis\", \"feature voting\".",
+      "source_sha256": "2ec27cd847d0380c9b13806db22d2e53b45a3743a85f8f5d339d0726a85ca675",
+      "source_path": "skills/pm-feature-requests/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78b6358b720a8e8b92d0c86f87c5d267f92a45790d2e8c60e41c7431ece75026": {
+      "description_zh": "汇集多来源用户反馈、去重并归纳主题，按频率、严重程度和情绪评分，输出含代表性原话及建议动作的主题图，区分缺陷、功能请求、易用性问题和好评。",
+      "source": "Categorize user feedback using affinity mapping. Ingest from multiple sources, de-duplicate, cluster into themes, score by frequency + severity + sentiment, and output a theme map with representative quotes and recommended actions. Distinguishes bugs, feature requests, usability issues, and praise. Use when someone says \"categorize feedback\", \"sort feedback\", \"feedback analysis\", \"NPS comments\", \"what are users saying\", \"support themes\", \"voice of customer\".",
+      "source_sha256": "78b6358b720a8e8b92d0c86f87c5d267f92a45790d2e8c60e41c7431ece75026",
+      "source_path": "skills/pm-feedback-categorizer/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aee86301af8a812476a2cb2ea2b2b35c4434b3758c125833374fba67b85418e2": {
+      "description_zh": "诊断转化漏斗流失，提出假设和干预措施及成功指标，提供统计显著性指导，并依据 domain-context.md 使用领域特定阶段，适用于激活、入驻、留存、流失及试用转付费分析。",
+      "source": "Diagnose conversion funnel drop-offs, generate hypotheses, and recommend interventions with success metrics. Includes statistical significance guidance and domain-specific funnel stages from domain-context.md. Use when someone says \"funnel\", \"conversion\", \"drop-off\", \"activation\", \"onboarding\", \"churn\", \"retention\", \"pipeline\", \"trial to paid\".",
+      "source_sha256": "aee86301af8a812476a2cb2ea2b2b35c4434b3758c125833374fba67b85418e2",
+      "source_path": "skills/pm-funnel-analyzer/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad7c55cdb15897298777019ccf50ab922e5e7b792b32a62d37b87f5081b981c3": {
+      "description_zh": "为功能、模块或产品制定上市发布手册，生成跨职能检查清单、赋能时间表、沟通计划和成功指标，可从轻量 P2 发布扩展至完整 P0 GTM 流程。",
+      "source": "Go-to-market launch playbook for a feature, module, or product. Generates cross-functional checklists, enablement timelines, communication plans, and success metrics. Scales from lightweight P2 launches to full P0 GTM motions. Use when someone says \"launch plan\", \"go-to-market\", \"GTM\", \"launch playbook\", \"launch checklist\", \"feature launch\", \"product launch\", \"release planning\", \"launch readiness\", or \"launch brief\".",
+      "source_sha256": "ad7c55cdb15897298777019ccf50ab922e5e7b792b32a62d37b87f5081b981c3",
+      "source_path": "skills/pm-gtm-launch/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4920d3510d6b5da9640ce8cd296cc913a22c5a47917f782265b04f731cb13564": {
+      "description_zh": "作为 PM Toolkit 主入口，按类别列举产品管理技能，并根据用户意图路由到合适技能，适用于模糊产品管理请求。",
+      "source": "Master PM skill router. Lists all available PM skills by category and routes to the right one based on user intent. Use when someone says \"help me with PM work\", \"what PM skills are available\", \"I need to write a...\", or any vague product management request. Entry point for the PM Toolkit plugin.",
+      "source_sha256": "4920d3510d6b5da9640ce8cd296cc913a22c5a47917f782265b04f731cb13564",
+      "source_path": "skills/pm-hub/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ec86c8d2b3ca4caf1840abde1ca4d68d0b2fd88e1271cbbcddd563e8d4186d8": {
+      "description_zh": "绘制从认知到续约的完整客户旅程，逐阶段整理动作、触点、情绪、痛点和机会，并依据 domain-context.md 纳入合规及入驻里程碑。",
+      "source": "Customer journey mapping across the full lifecycle: awareness through renewal. Maps actions, touchpoints, emotions, pain points, and opportunities per stage. Domain-aware: includes compliance and onboarding milestones from domain-context.md. Use when someone says \"journey map\", \"customer journey\", \"user journey\", \"experience map\", \"touchpoints\", \"pain points\", \"customer experience\", \"CX mapping\".",
+      "source_sha256": "5ec86c8d2b3ca4caf1840abde1ca4d68d0b2fd88e1271cbbcddd563e8d4186d8",
+      "source_path": "skills/pm-journey-map/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf4a845eddf123be4a858d46664ce866b6143b65c77a96f32b59843eba4dd5e4": {
+      "description_zh": "用 Christensen／Ulwick 方法开展 JTBD 需求发现，支持编写访谈脚本、从访谈记录提取任务陈述，以及按重要性与满意度排序目标结果。",
+      "source": "Jobs-to-be-Done discovery and analysis using Christensen/Ulwick methodology. Three modes: write JTBD interview scripts, extract job statements from transcripts, or prioritize outcomes by importance vs satisfaction. Use when someone says \"JTBD\", \"jobs to be done\", \"interview script\", \"customer jobs\", \"outcome-driven\", \"what are customers trying to do\", \"job statements\".",
+      "source_sha256": "cf4a845eddf123be4a858d46664ce866b6143b65c77a96f32b59843eba4dd5e4",
+      "source_path": "skills/pm-jtbd/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5de1f3ed8ffbc5915dc626e339439dfb7e0075a228ca0347bb1ecbc2f93fc8b5": {
+      "description_zh": "从原始笔记、访谈记录或已有记忆生成结构化产品会议纪要，包含决策、行动项、开放问题及暂缓事项。",
+      "source": "Create structured PM meeting notes with decisions, action items, open questions, and parking lot. Works from raw notes, transcripts, or memory. Use when someone says \"meeting notes\", \"action items\", \"what did we decide?\", \"summarize this meeting\", or \"process these notes\".",
+      "source_sha256": "5de1f3ed8ffbc5915dc626e339439dfb7e0075a228ca0347bb1ecbc2f93fc8b5",
+      "source_path": "skills/pm-meeting-notes/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddcba4a9985ee26285a2eaa95d9b1c2ef453d9652d7ab15a6ea282ee84a128a6": {
+      "description_zh": "建立跨客户触点一致的沟通框架，涵盖定位陈述、价值支柱、简短介绍，以及按用户画像和竞争对手区分的产品销售信息。",
+      "source": "Messaging framework for consistent customer-facing language across all touchpoints. Positioning statements, value pillars, elevator pitches, per-persona and per-competitor messaging. Use when someone says \"messaging framework\", \"positioning statement\", \"elevator pitch\", \"value pillars\", \"how do we talk about this\", \"sales messaging\", \"competitive messaging\", \"product messaging\", \"positioning\", \"tagline\", \"one-liner\", \"how do we position against\".",
+      "source_sha256": "ddcba4a9985ee26285a2eaa95d9b1c2ef453d9652d7ab15a6ea282ee84a128a6",
+      "source_path": "skills/pm-messaging-framework/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1abb7e8fa620367b7db4c707cdc73c07754211e5990af8976cd880529fcc08a3": {
+      "description_zh": "构建从北极星指标到输入、健康和制衡指标的完整层级，要求每层结合领先及滞后指标，并提供埋点指导及 AARRR／自定义框架拆解。",
+      "source": "Build a complete metric hierarchy from North Star through input metrics, health metrics, and counter metrics. Enforces leading + lagging indicators at every level. Includes instrumentation guidance and AARRR/custom framework decomposition. Use when someone says \"metric framework\", \"measurement plan\", \"KPI hierarchy\", \"AARRR metrics\", \"pirate metrics\", \"health metrics\", \"counter metrics\", \"leading indicators\", \"instrumentation\", \"analytics plan\", or \"how do we measure success\".",
+      "source_sha256": "1abb7e8fa620367b7db4c707cdc73c07754211e5990af8976cd880529fcc08a3",
+      "source_path": "skills/pm-metric-framework/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4c95893e2fd280e2112ef49d5bbc42d5e1214ba095a372121305a63f4d9da67": {
+      "description_zh": "规划平台、数据、产品整合、供应商／API 替换及合规驱动的迁移，生成功能对等矩阵、数据方案、实施与暂停门槛、客户沟通手册和旧系统退役计划。",
+      "source": "Migration planning skill for platform migrations, data migrations, product consolidations, vendor/API swaps, and compliance-driven migrations. Generates feature parity matrices, data migration plans, go/no-go gate frameworks, customer communication playbooks, and legacy sunset plans. Use when someone says \"migration plan\", \"platform migration\", \"data migration\", \"product consolidation\", \"vendor migration\", \"API migration\", \"compliance migration\", \"feature parity\", \"cutover plan\", \"migration readiness\", \"legacy sunset\", \"decommission\", \"strangler fig\", \"parallel run\", or \"migration strategy\".",
+      "source_sha256": "c4c95893e2fd280e2112ef49d5bbc42d5e1214ba095a372121305a63f4d9da67",
+      "source_path": "skills/pm-migration-planner/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10d7a812a0de063a81d2698c54d4c0a6dd72b57d181b5ef9cf903846e58830af": {
+      "description_zh": "为 B2B SaaS 定义并验证北极星指标，按 Sean Ellis 标准检验，并构建直至团队级输入指标的完整指标树。",
+      "source": "Define and validate a North Star metric and its input metric tree for a B2B SaaS product. Uses Sean Ellis criteria for validation. Builds the full metric hierarchy from North Star down to team-level input metrics. Use when someone says \"north star metric\", \"what should we measure\", \"product metric\", \"input metrics\", \"metric tree\", \"Sean Ellis\", \"one metric that matters\", \"how do we know if we're winning\", or \"product health metric\".",
+      "source_sha256": "10d7a812a0de063a81d2698c54d4c0a6dd72b57d181b5ef9cf903846e58830af",
+      "source_path": "skills/pm-north-star/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a85e6e92a98b79ff037fe00829295d8aeb14688922cbc322da2c23dcdf0e9b8": {
+      "description_zh": "按类别生成销售异议处理手册，帮助识别表面异议背后的真实顾虑，并以证据回应价格、竞争、规模或买方疑虑。",
+      "source": "Objection handling playbook organized by category. Teaches reps to diagnose the real concern behind the stated objection and respond with evidence, not clever comebacks. Use when someone says \"objection handling\", \"how do we respond when they say\", \"too expensive\", \"competitor says\", \"they have concerns about\", \"common objections\", \"sales objections\", \"objection playbook\", \"why do we lose deals\", \"buyer pushback\", \"handle pricing objection\", \"they think we're too small\".",
+      "source_sha256": "2a85e6e92a98b79ff037fe00829295d8aeb14688922cbc322da2c23dcdf0e9b8",
+      "source_path": "skills/pm-objection-handler/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2d9cbdd2eb2d4c88a6f850177b1c0daafcdabebc797ee38bbd8ddcbd64ee3de": {
+      "description_zh": "管理 OKR 从制定、优化、进度检查到评分及跨组织对齐的生命周期，强调结果导向、领先与滞后关键结果平衡和战略关联。",
+      "source": "Full OKR lifecycle: define, refine, check-in, score, and align OKRs across organizational levels. Enforces outcome-over-output writing standards, leading vs lagging KR balance, and strategic alignment mapping. Use when someone says \"OKRs\", \"objectives and key results\", \"write OKRs\", \"review our OKRs\", \"OKR check-in\", \"score OKRs\", \"grade OKRs\", \"mid-quarter review\", \"OKR alignment\", \"cascade OKRs\", \"are our OKRs good\", \"help me write key results\", \"quarterly goals\", \"OKR scoring\", \"OKR retrospective\", or \"team objectives\".",
+      "source_sha256": "d2d9cbdd2eb2d4c88a6f850177b1c0daafcdabebc797ee38bbd8ddcbd64ee3de",
+      "source_path": "skills/pm-okr/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2228d8d6212190f454c470f6114744225c2f1dd44e5fe1539e63b35ee4f88f7": {
+      "description_zh": "设计 SaaS 入驻流程，分析首次价值实现时间、定义激活指标、采用渐进披露，梳理现状并识别关键价值感知时刻，优化激活路径。",
+      "source": "Design SaaS onboarding flows with time-to-first-value analysis, activation metric definition, and progressive disclosure patterns. Maps current flows, identifies the \"aha moment\", and designs optimal paths to activation. Use when someone says \"onboarding\", \"time to value\", \"activation\", \"first-run experience\", \"setup wizard\", \"aha moment\", \"TTFV\", \"user activation\", \"onboarding checklist\", \"empty states\", \"progressive disclosure\", or \"new user experience\".",
+      "source_sha256": "d2228d8d6212190f454c470f6114744225c2f1dd44e5fe1539e63b35ee4f88f7",
+      "source_path": "skills/pm-onboarding-flow/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e2057f4b55370cadaf6c5272ac2f7edf921b9ed5b5324392e1f67b89a7ca022": {
+      "description_zh": "为项目倡议或提案生成至多一页的高管简报，按问题、方法、指标、时间表和所需支持组织。",
+      "source": "Create an executive one-pager for initiatives and proposals. Structured as: Problem, Approach, Metrics, Timeline, Ask. Maximum one page. Use when someone says \"one pager\", \"executive summary\", \"initiative brief\", \"proposal\", \"I need to pitch this\", or \"summarize this for leadership\".",
+      "source_sha256": "6e2057f4b55370cadaf6c5272ac2f7edf921b9ed5b5324392e1f67b89a7ca022",
+      "source_path": "skills/pm-one-pager/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f3e4e0e5e350932ce7273c38f50deeb24b5d235c2eb5755d8e5a1d3502d50e0": {
+      "description_zh": "运用 Teresa Torres 的机会解决方案树，把目标结果、机会空间、方案及实验关联，支持持续需求发现及构建方向选择。",
+      "source": "Teresa Torres Opportunity Solution Tree: outcome, opportunity space, solutions, experiments. Use when someone says \"opportunity tree\", \"OST\", \"opportunity solution tree\", \"discovery\", \"what should we build\", \"map opportunities\", \"Teresa Torres\", \"continuous discovery\".",
+      "source_sha256": "6f3e4e0e5e350932ce7273c38f50deeb24b5d235c2eb5755d8e5a1d3502d50e0",
+      "source_path": "skills/pm-opportunity-tree/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "298e3ab0ec4e56f3a0b91684cf1f4362ce57c05e9d3b02136ae5eedd13cac1b5": {
+      "description_zh": "为私募股权运营合伙人生成一页迁移进度仪表板，覆盖 ARR 迁移、分波次进度、协同收益、风险及客户健康，支持董事会快速浏览投资组合迁移状态。",
+      "source": "PE board migration progress report generator. Produces a 1-page dashboard for PE operating partners covering ARR migration status, wave progress, synergy realization, risks, and customer health. Designed for busy board members who scan 10-15 portfolio reports per month. Use when someone says \"PE report\", \"migration board update\", \"PE operating review\", \"ARR migration status\", \"synergy report\", \"portfolio migration update\", \"board migration progress\".",
+      "source_sha256": "298e3ab0ec4e56f3a0b91684cf1f4362ce57c05e9d3b02136ae5eedd13cac1b5",
+      "source_path": "skills/pm-pe-migration-report/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dcc990bdadde40d9f5388c90732e60508c5e3bdb704e9a1a58f5c0b2cd6af862": {
+      "description_zh": "根据行为模式创建数据驱动的用户画像，从原始数据形成经验证的目标、困扰、决策标准和工具使用特征，支持客户分群及理想客户画像分析。",
+      "source": "Data-driven persona creation grounded in behavioral patterns, not demographics. Guides you from raw data to validated persona profiles with goals, frustrations, decision criteria, and tools. Use when someone says \"persona\", \"user profile\", \"who are our users\", \"customer segments\", \"target audience\", \"ICP\", \"ideal customer profile\".",
+      "source_sha256": "dcc990bdadde40d9f5388c90732e60508c5e3bdb704e9a1a58f5c0b2cd6af862",
+      "source_path": "skills/pm-persona-generator/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d312c0352ca17d651075ae1600788cf2c4ad278218e36d39bf6be9ca14bbeb9": {
+      "description_zh": "采用五问法进行无责事件复盘，生成时间线、促成因素、纠正措施和经验，并跟踪平均恢复时间 MTTR 及发现时间。",
+      "source": "Blameless incident and failure post-mortem generator using 5 Whys root cause analysis. Produces structured post-mortem documents with timeline, contributing factors, corrective actions, and lessons learned. Tracks MTTR and detection time metrics. Use when someone says \"post-mortem\", \"postmortem\", \"incident review\", \"root cause analysis\", \"5 whys\", \"what happened\", \"outage review\", \"failure analysis\", \"RCA\".",
+      "source_sha256": "1d312c0352ca17d651075ae1600788cf2c4ad278218e36d39bf6be9ca14bbeb9",
+      "source_path": "skills/pm-postmortem/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a3201b5ed78e442c0c4f2e589195dedbb35278b8773a91c61e5713e1facc24e": {
+      "description_zh": "编写以客户和结果为中心的 PRD，支持新功能完整文档、迭代级轻量规格、已发布功能 V2，以及迁移／合规规格。明确问题、客户、结果假设、产出到结果追踪、领先与滞后指标、非目标及可测试客户可见验收标准，技术实现方案交由工程团队。",
+      "source": "Generate a customer- and outcome-centric Product Requirements Document (PRD) with four modes: Full PRD for net-new features, Lightweight Feature Spec for sprint-level work, Iteration/V2 Spec for follow-ups on shipped features, and Migration/Compliance Spec for regulatory or API migrations. Defines the problem, the customer, and the outcome to achieve — then stops at the boundary of \"how\" and leaves the technical solution to engineering. Enforces problem-first thinking, an explicit outcome hypothesis, output-to-outcome traceability, leading + lagging metrics, non-goals, and testable customer-observable acceptance criteria. Use when someone says \"PRD\", \"product requirements\", \"feature spec\", \"write a spec\", \"requirements document\", \"what to build\", \"engineering spec\", \"technical requirements\", \"migration spec\", \"compliance spec\", \"V2 spec\", or \"iteration spec\".",
+      "source_sha256": "3a3201b5ed78e442c0c4f2e589195dedbb35278b8773a91c61e5713e1facc24e",
+      "source_path": "skills/pm-prd/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eaec439a0d294630f7937b34befacb226cbdd081ad0c3a47b90708b66e3e5da1": {
+      "description_zh": "分析 SaaS 定价，涵盖价值计量、套餐、支付意愿、竞争定位和计价模型，支持 Van Westendorp、Gabor-Granger、价格敏感度、行为定价及变现失败诊断。",
+      "source": "SaaS pricing analysis. Covers value metrics, packaging, willingness-to-pay research, competitive positioning, and pricing model design. Use when someone says \"pricing strategy\", \"how should we price this\", \"packaging\", \"willingness to pay\", \"Van Westendorp\", \"price sensitivity\", \"monetization\", \"competitive pricing\", \"premium tier\", \"pricing page\", \"value metric\", \"Gabor-Granger\", \"behavioral pricing\", \"feature shock\", \"pricing failure\", \"WTP segmentation\", \"monetization failure\", or \"pricing integrity\".",
+      "source_sha256": "eaec439a0d294630f7937b34befacb226cbdd081ad0c3a47b90708b66e3e5da1",
+      "source_path": "skills/pm-pricing/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e7504deb8c14543bb42ddd79639d2ab460fa1533f92a02e0820efa9e25632b9": {
+      "description_zh": "为产品管理流程生成标准操作规程和执行手册，说明步骤、决策点、清单、负责人及合规检查点。",
+      "source": "SOP and runbook generator for PM processes. Documents steps, decision points, checklists, ownership, and compliance checkpoints. Produces actionable runbooks. Use when someone says \"SOP\", \"standard operating procedure\", \"runbook\", \"process doc\", \"how do we do X\", \"document the process\", \"playbook\", \"checklist\", \"workflow documentation\".",
+      "source_sha256": "8e7504deb8c14543bb42ddd79639d2ab460fa1533f92a02e0820efa9e25632b9",
+      "source_path": "skills/pm-process-docs/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d1967dfd628d647ed3c07d3937da30eac461a2ad38defe5d845a73d226000f7": {
+      "description_zh": "使用亚马逊式逆向工作法生成至多一页的轻量产品简报，先描述客户结果或新闻稿，再反推需求。",
+      "source": "Create a lightweight product brief using Amazon-style working-backwards method. Starts with the customer outcome (press release), then works back to requirements. One page max. Use when someone says \"product brief\", \"working backwards\", \"PR/FAQ\", \"pitch this feature\", \"one-page brief\", or \"write the press release first\".",
+      "source_sha256": "7d1967dfd628d647ed3c07d3937da30eac461a2ad38defe5d845a73d226000f7",
+      "source_path": "skills/pm-product-brief/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96a7369cc04028ce18300ad5ce0ce7b62690baab988d33df936b14a5d6f73a73": {
+      "description_zh": "从销售通话、用户访谈或支持记录中逐项提取客户需求，保留客户原话、说话人归属和产品领域关联，再经 Productboard Notes API 创建 Notes；官方规格 MCP 仅用于关联功能。使用 PRODUCTBOARD_API_TOKEN 认证，适用于反馈到 Productboard 的整理流程。",
+      "source": "Distill customer demands from a transcript (sales call, user interview, support session) into atomic, verbatim Insights and push them into Productboard as Notes via the Productboard Notes API using a Bearer [已隐藏] (PRODUCTBOARD_API_TOKEN); the official spec MCP is used only to link insights to features. Extracts one insight per demand, preserves the customer's own words, attributes each to a speaker/customer, and links to product areas before pushing. Use when someone says \"Productboard\", \"push insights to Productboard\", \"turn this call into Productboard insights\", \"log this feedback in Productboard\", \"transcript to insights\", or \"create notes in Productboard\".",
+      "source_sha256": "96a7369cc04028ce18300ad5ce0ce7b62690baab988d33df936b14a5d6f73a73",
+      "source_path": "skills/pm-productboard-insights/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc7a31cca6eb013731fcf3e0736eae7489c7690b6da7812fdfe1d88252722d82": {
+      "description_zh": "规划整个季度，明确战略主题、容量分配、依赖关系、投入规模及承诺计划。",
+      "source": "Full quarter planning: strategic themes, capacity allocation, dependency mapping, bet sizing, and commitment plans. Use when someone says \"plan next quarter\", \"quarterly planning\", \"Q2 planning\", \"capacity planning\", \"what should we build next quarter\", \"quarter kickoff\".",
+      "source_sha256": "dc7a31cca6eb013731fcf3e0736eae7489c7690b6da7812fdfe1d88252722d82",
+      "source_path": "skills/pm-quarterly-planning/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5886943f794a23917c3e64a0ce760b85d1b51bae85d9785e9149c56ab44f13d": {
+      "description_zh": "根据 Git 日志、变更日志或人工输入生成面向客户的发布说明，突出客户收益，支持博客、邮件片段、应用内通知及变更日志条目。",
+      "source": "Generate customer-facing release notes from git logs, changelogs, or manual input. Narrative style focused on customer benefit, not feature names. Supports multiple output formats: blog post, email snippet, in-app notification, changelog entry. Use when someone says \"release notes\", \"changelog\", \"what shipped\", \"customer update\", \"release communication\", \"what's new\", \"product update email\", \"in-app notification\", \"ship log\", or \"announce this release\".",
+      "source_sha256": "e5886943f794a23917c3e64a0ce760b85d1b51bae85d9785e9149c56ab44f13d",
+      "source_path": "skills/pm-release-notes/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a66273864aa780f56f0d3d732b1480123f9206f190ce9418aea08ee307c7779": {
+      "description_zh": "在正式审查前按产品负责人标准检查 PRD、战略文档、单页简报等材料，对问题清晰度、指标质量、范围纪律和合规意识评分。",
+      "source": "Pre-review quality gate that checks any PM artifact (PRD, strategy doc, one-pager, brief) against Head of Product standards. Scores problem clarity, metrics quality, scope discipline, and compliance awareness. Acts as \"the HoP reviewing your work before the real HoP sees it.\" Use when someone says \"review this\", \"check this PRD\", \"is this ready for review\", \"quality check\", \"does this meet the bar\", or \"pre-review my spec\".",
+      "source_sha256": "8a66273864aa780f56f0d3d732b1480123f9206f190ce9418aea08ee307c7779",
+      "source_path": "skills/pm-review/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3d74835f799d16a2a3495c43bece8c883a87233a28f5a894018ded97795b840": {
+      "description_zh": "识别产品风险、评分并绘制风险矩阵，制定缓解计划，支持风险登记和审查。",
+      "source": "Product risk identification, scoring, matrix plotting, and mitigation planning. Use when someone says \"risk register\", \"risk assessment\", \"what could go wrong\", \"risk matrix\", \"risk mitigation\", \"identify risks\", \"risk planning\", \"risk review\".",
+      "source_sha256": "c3d74835f799d16a2a3495c43bece8c883a87233a28f5a894018ded97795b840",
+      "source_path": "skills/pm-risk-register/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6f4bf65654b9671aff570b1c64828803001146d19409884ca3130dfef7acd13": {
+      "description_zh": "生成销售或推介演示的内容，包括叙述结构、逐页文字、讲述要点和预期异议，适用于 B2B 销售、竞争推介和演示开场；视觉设计不在范围内。",
+      "source": "Generate sales and pitch deck CONTENT — narrative structure, slide-by-slide content, talk tracks, and anticipated objections. NOT visual design. Covers B2B sales presentations, competitive pitches, and demo intros. Use when someone says \"sales deck\", \"pitch deck\", \"sales presentation\", \"customer pitch\", \"demo deck\", \"prospect presentation\", \"deal deck\", or \"competitive pitch\".",
+      "source_sha256": "c6f4bf65654b9671aff570b1c64828803001146d19409884ca3130dfef7acd13",
+      "source_path": "skills/pm-sales-deck/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eab38b36ed252eba28aab59c28ca48ef37e5a46f50a423afc0c438de36e51cc9": {
+      "description_zh": "用 Start／Stop／Continue 或 4Ls 格式引导迭代复盘，生成含行动项、负责人和截止日期的结构化结果。",
+      "source": "Sprint retrospective facilitator with Start/Stop/Continue and 4Ls formats. Generates structured retro outputs with action items, owners, and deadlines. Use when someone says \"retro\", \"retrospective\", \"sprint review\", \"what went well\", \"start stop continue\", \"4Ls\", \"team reflection\", \"iteration review\".",
+      "source_sha256": "eab38b36ed252eba28aab59c28ca48ef37e5a46f50a423afc0c438de36e51cc9",
+      "source_path": "skills/pm-sprint-retro/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6732f8361cc35689ce63310fe2a5eb511d9646957478b6fe5d6f44ac6cfe98c5": {
+      "description_zh": "模拟不同利益相关方对产品变更的反应，在正式会议前识别异议、顾虑和组织关系影响，支持会议准备。",
+      "source": "Simulate how different stakeholders would react to a proposed product change. Surface objections, concerns, and political dynamics before the real meeting. Use when someone says \"how will X react?\", \"stakeholder analysis\", \"what objections will I face?\", \"prepare me for the meeting\", or \"simulate the room\".",
+      "source_sha256": "6732f8361cc35689ce63310fe2a5eb511d9646957478b6fe5d6f44ac6cfe98c5",
+      "source_path": "skills/pm-stakeholder-simulator/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df7d0793be7b940a14a10e58c8bc958f70cab535a61d915476ad2f83f1caf291": {
+      "description_zh": "以叙述方式生成季度末战略回顾，并用战略投入评分卡检验季度重点举措和结果。",
+      "source": "End-of-quarter strategic review in narrative style with a bets scorecard. Use when someone says \"quarter review\", \"strategic review\", \"what happened last quarter\", \"quarterly retro\", \"bets scorecard\", \"review our bets\", \"end of quarter report\".",
+      "source_sha256": "df7d0793be7b940a14a10e58c8bc958f70cab535a61d915476ad2f83f1caf291",
+      "source_path": "skills/pm-strategic-review/SKILL.md",
+      "package_sha256": "9c5fa253b0cfbc929f123bf7b732adc65499d6eb0495b22dbad2b2b166d55f04",
+      "source_package": "The Pragmatic PM Toolkit-1.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
