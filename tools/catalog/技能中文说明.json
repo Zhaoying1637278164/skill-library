@@ -70729,6 +70729,1086 @@
       "package_sha256": "3852cbeceffb856b69a22eeb92c2d5ba0591e68eb358635f11a06a278f60f3bd",
       "source_package": "spaitial-ai-0.5.1-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da7ae70071b143c534163cee52123199c90d73279b9a16819fcd05e04b88a862": {
+      "description_zh": "通过 SpAItial MCP 查看管理已生成世界，列出任务、查询状态、下载既有 splat 或全景、修改标题和公开私有可列出状态、分享或取消运行任务。新世界及网格分别由 create-world 和 export-mesh 处理。",
+      "source": "This skill should be used when the user wants to view or manage worlds they already generated with SpAItial — e.g. \"list my worlds\", \"show my recent generations\", \"check the status of req_…\", \"is my world done yet?\", \"rename this world\", \"make world req_… public / private / listed\", \"share my world\", or \"cancel that running job\". Lists jobs, polls status, downloads existing splats/panoramas, updates title and visibility, and cancels in-flight jobs via the SpAItial MCP server. Use the companion create-world skill to generate new worlds and export-mesh to produce mesh files.",
+      "source_sha256": "da7ae70071b143c534163cee52123199c90d73279b9a16819fcd05e04b88a862",
+      "source_path": "skills/manage-worlds/SKILL.md",
+      "package_sha256": "3852cbeceffb856b69a22eeb92c2d5ba0591e68eb358635f11a06a278f60f3bd",
+      "source_package": "spaitial-ai-0.5.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10da26df31b0fb1f5a3c4c5c9b6da8336925cba0eb012729b90ea5ef22adf74b": {
+      "description_zh": "只读静态比较 SPEC_CHECKLIST.md 要求与工作目录实际文件，在声明完成或要求验收时报告偏移，逐项标记缺失、改变、静默失败、硬编码债务或完成。",
+      "source": "Compares the requirements recorded in SPEC_CHECKLIST.md against the actual files in the working directory and reports requirement drift. Use whenever a completion is claimed (\"done\", \"finished\", \"implemented\", \"completed\"), when the user asks to verify that a task is really finished, or when auditing whether an implementation still matches what was originally asked for. Classifies each item as missing, changed, silent-fail, hardcode-debt, or done, using read-only static analysis.",
+      "source_sha256": "10da26df31b0fb1f5a3c4c5c9b6da8336925cba0eb012729b90ea5ef22adf74b",
+      "source_path": "skills/drift-detection/SKILL.md",
+      "package_sha256": "534e9d979a9bb157b2a788f7a4090d52b26431fbdcea3e5dead66efb72281a43",
+      "source_package": "Spec Drift Detector-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1798b3e650b6d6d3fe37e4c0cb466501b57fbdd16c00bdcf8447ca3c06059d47": {
+      "description_zh": "在新编码任务开始时提取用户功能要求及易遗漏的权限角色、UI 状态、API 成败路径，写入 SPEC_CHECKLIST.md 供后续验证，最多提出三个真正影响范围的澄清问题。",
+      "source": "Extracts an explicit requirement checklist from a user's task request and writes it to SPEC_CHECKLIST.md so it can be verified later. Use at the START of a new coding task, whenever a user describes a feature to build, or when the user asks to capture, track, or pin down requirements before implementation begins. Pulls out stated functional requirements plus commonly-forgotten implicit ones (all permission roles, all UI states, all API success/failure paths) and surfaces up to three clarifying questions for genuinely ambiguous scope.",
+      "source_sha256": "1798b3e650b6d6d3fe37e4c0cb466501b57fbdd16c00bdcf8447ca3c06059d47",
+      "source_path": "skills/requirement-extraction/SKILL.md",
+      "package_sha256": "534e9d979a9bb157b2a788f7a4090d52b26431fbdcea3e5dead66efb72281a43",
+      "source_package": "Spec Drift Detector-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0cadf7d8429d98d0b3c3946de93802e4c4fee8b0de9e7d008c973538d8f0df51": {
+      "description_zh": "暂存并提交修改，使用 Conventional Commits 格式的提交信息。",
+      "source": "Stage and commit changes with conventional commit messages",
+      "source_sha256": "0cadf7d8429d98d0b3c3946de93802e4c4fee8b0de9e7d008c973538d8f0df51",
+      "source_path": ".claude/skills/commit/SKILL.md",
+      "package_sha256": "7b73b04a2275e8e983f7c5294ad2552a25519b633665ebd39bcd56fbf6e227f3",
+      "source_package": "spec-driven-dev-1.11.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f69a0517d3ef0b97bbd81620dd031cb039bf080a3941d8d5217812d9d31051e": {
+      "description_zh": "逐步执行已评审实施计划，进行验证和标准复核。",
+      "source": "Execute a reviewed implementation plan step by step with verification and standards review",
+      "source_sha256": "7f69a0517d3ef0b97bbd81620dd031cb039bf080a3941d8d5217812d9d31051e",
+      "source_path": "skills/implement-plan/SKILL.md",
+      "package_sha256": "7b73b04a2275e8e983f7c5294ad2552a25519b633665ebd39bcd56fbf6e227f3",
+      "source_package": "spec-driven-dev-1.11.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "719f4c12cef573ff494a8ca0cac6f6c1dbc088209c83dacbc9f838fdff3ab7a0": {
+      "description_zh": "在主会话完成小改动，再通过隔离的事实、标准及最终复核。",
+      "source": "Make a small change in the main session, then review it through isolated fact, standards and final passes",
+      "source_sha256": "719f4c12cef573ff494a8ca0cac6f6c1dbc088209c83dacbc9f838fdff3ab7a0",
+      "source_path": "skills/small-change/SKILL.md",
+      "package_sha256": "7b73b04a2275e8e983f7c5294ad2552a25519b633665ebd39bcd56fbf6e227f3",
+      "source_package": "spec-driven-dev-1.11.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "399a1e8dbbd13371e738d06c79d42a9848f8e89f7bfadde9ae419e208a6f0bf2": {
+      "description_zh": "讨论功能、起草实施计划，并通过隔离复核完善计划。",
+      "source": "Discuss a feature, draft an implementation plan, and review it through isolated passes",
+      "source_sha256": "399a1e8dbbd13371e738d06c79d42a9848f8e89f7bfadde9ae419e208a6f0bf2",
+      "source_path": "skills/write-plan/SKILL.md",
+      "package_sha256": "7b73b04a2275e8e983f7c5294ad2552a25519b633665ebd39bcd56fbf6e227f3",
+      "source_package": "spec-driven-dev-1.11.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f2b07cf449e317710656e21eeb8d4f06905ccf750289d9fa73e8a188745191c": {
+      "description_zh": "通过并行智能体生成精简文档。",
+      "source": "Generate minimal documentation through parallel agents",
+      "source_sha256": "8f2b07cf449e317710656e21eeb8d4f06905ccf750289d9fa73e8a188745191c",
+      "source_path": "skills/document/SKILL.md",
+      "package_sha256": "54c33ee2ddcfce939fae5392dc8e05b8b57d512050634bb07a52229012500baa",
+      "source_package": "spec-first-2.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1912721ee4001622ed34d5b156b39e29b6bfda992fbce061bc1cc12976b0febc": {
+      "description_zh": "通过学习现有模式实现代码。",
+      "source": "Implement through pattern learning",
+      "source_sha256": "1912721ee4001622ed34d5b156b39e29b6bfda992fbce061bc1cc12976b0febc",
+      "source_path": "skills/implement/SKILL.md",
+      "package_sha256": "54c33ee2ddcfce939fae5392dc8e05b8b57d512050634bb07a52229012500baa",
+      "source_package": "spec-first-2.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20cfb71230d1fb46f542ac4d50ffcd64dfbdfb2fc6ed72d12f552b48094094da": {
+      "description_zh": "依据需求创建规格。",
+      "source": "Create specifications from requirements",
+      "source_sha256": "20cfb71230d1fb46f542ac4d50ffcd64dfbdfb2fc6ed72d12f552b48094094da",
+      "source_path": "skills/spec/SKILL.md",
+      "package_sha256": "54c33ee2ddcfce939fae5392dc8e05b8b57d512050634bb07a52229012500baa",
+      "source_package": "spec-first-2.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "892283365756b277116d669c7bdc25acf182bf616ca8052f0e1799cd18ada55a": {
+      "description_zh": "在常规 SpecDD 工作前，通过 CLI 为项目加入 SpecDD 或更新框架文件。",
+      "source": "Use when Claude Code needs to add SpecDD to a project or update SpecDD framework files through the CLI before normal SpecDD work begins.",
+      "source_sha256": "892283365756b277116d669c7bdc25acf182bf616ca8052f0e1799cd18ada55a",
+      "source_path": "skills/specdd-adopt/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e40064c49d5b58c929a6b5e6de78fd2c839f94e1779ed54ff46e526c66084835": {
+      "description_zh": "在已有 SpecDD 项目编写或修订 .sdd 规格。",
+      "source": "Use when Claude Code needs to author or revise SpecDD `.sdd` specs in an existing SpecDD project.",
+      "source_sha256": "e40064c49d5b58c929a6b5e6de78fd2c839f94e1779ed54ff46e526c66084835",
+      "source_path": "skills/specdd-author/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97573f18b37c791ba30414eabc8ac379d4e09293f7356a8336a2bc289e841ef3": {
+      "description_zh": "通过 specdd CLI 设置、更新、发现检查规格或执行 lint。",
+      "source": "Use when Claude Code needs to use the `specdd` CLI for setup, updates, spec discovery, inspection, or linting.",
+      "source_sha256": "97573f18b37c791ba30414eabc8ac379d4e09293f7356a8336a2bc289e841ef3",
+      "source_path": "skills/specdd-cli/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4694f848ac8dfe6317aeefa12f48619589f93dbf6f0f4950158c2a89cf45a1b": {
+      "description_zh": "依据当前有效 SpecDD 规格诊断和修复缺陷。",
+      "source": "Use when Claude Code needs to diagnose or fix a bug against active SpecDD specs.",
+      "source_sha256": "e4694f848ac8dfe6317aeefa12f48619589f93dbf6f0f4950158c2a89cf45a1b",
+      "source_path": "skills/specdd-debug/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "022efd27551e93d3657c688da21ba6f0164b8d5b2605912a51f53bee39bc62ac": {
+      "description_zh": "在当前有效 SpecDD 规格约束下修改代码、文档、测试、任务或规格。",
+      "source": "Use when Claude Code needs to implement a code, docs, tests, task, or spec change under active SpecDD authority.",
+      "source_sha256": "022efd27551e93d3657c688da21ba6f0164b8d5b2605912a51f53bee39bc62ac",
+      "source_path": "skills/specdd-do/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f45f4b03cd7afebc9259cdece47d68b6fb3bae41c7d84b895740e13f0e3de0f0": {
+      "description_zh": "依据当前有效 SpecDD 规格编写或更新文档。",
+      "source": "Use when Claude Code needs to write or update documentation from active SpecDD specs.",
+      "source_sha256": "f45f4b03cd7afebc9259cdece47d68b6fb3bae41c7d84b895740e13f0e3de0f0",
+      "source_path": "skills/specdd-docs/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0631f1a9818d0f8e0437cf99faa7c3ae9f8fad61a232e0274b929dd91c24841e": {
+      "description_zh": "只读解释 SpecDD 规格、目标、行为及实际生效的规格链。",
+      "source": "Use when Claude Code needs to explain a SpecDD spec, target, behavior, or effective spec chain without editing it.",
+      "source_sha256": "0631f1a9818d0f8e0437cf99faa7c3ae9f8fad61a232e0274b929dd91c24841e",
+      "source_path": "skills/specdd-explain/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37077b873521bd6dc87ec1f95567e60d513654007c3bdd02b85a60ebb99ea9d8": {
+      "description_zh": "只读了解 SpecDD 项目，为后续工作建立背景，不修改文件。",
+      "source": "Use when Claude Code needs to get oriented in a SpecDD project before later work, while making no edits.",
+      "source_sha256": "37077b873521bd6dc87ec1f95567e60d513654007c3bdd02b85a60ebb99ea9d8",
+      "source_path": "skills/specdd-orient/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a75165cf37b33953c5583ed8161d77e8bb72a7a5274853ead65acf52090b60a": {
+      "description_zh": "规划 SpecDD 工作，在修改前澄清范围、权威依据、风险和验证要求。",
+      "source": "Use when Claude Code is asked to plan SpecDD work or needs to resolve unclear scope, authority, risk, or verification before editing.",
+      "source_sha256": "6a75165cf37b33953c5583ed8161d77e8bb72a7a5274853ead65acf52090b60a",
+      "source_path": "skills/specdd-plan/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ee92be53a3ad8831a33527619a6ebc606121a11abb254cd38b3ec0554d2435e": {
+      "description_zh": "在保持当前 SpecDD 行为的前提下重构代码、测试、文档、规格或项目结构。",
+      "source": "Use when Claude Code needs to refactor code, tests, docs, specs, or project structure while preserving active SpecDD behavior.",
+      "source_sha256": "3ee92be53a3ad8831a33527619a6ebc606121a11abb254cd38b3ec0554d2435e",
+      "source_path": "skills/specdd-refactor/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e24a2b267b5a2dea6a4496d7814cb63d402ad63fbe3a98c209fdf6fc7d908ad": {
+      "description_zh": "对照当前有效 SpecDD 规格评审变更。",
+      "source": "Use when Claude Code needs to review changes against active SpecDD specs.",
+      "source_sha256": "0e24a2b267b5a2dea6a4496d7814cb63d402ad63fbe3a98c209fdf6fc7d908ad",
+      "source_path": "skills/specdd-review/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31de7658507aae65c4c9e127c3ccdc4fd4834ef0c87bee8c82387b88330f058b": {
+      "description_zh": "在 SpecDD 工作开始前进行风险分类。",
+      "source": "Use when Claude Code needs to classify risk before SpecDD work starts.",
+      "source_sha256": "31de7658507aae65c4c9e127c3ccdc4fd4834ef0c87bee8c82387b88330f058b",
+      "source_path": "skills/specdd-risk/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33aa4d513e602327c5103468ebc48076dbfd7bf83d8509bb6685e66c2674748b": {
+      "description_zh": "查找、添加、解释、组织和更新 SpecDD Tasks 条目。",
+      "source": "Use when Claude Code needs to find, add, interpret, organize, or update SpecDD `Tasks` entries.",
+      "source_sha256": "33aa4d513e602327c5103468ebc48076dbfd7bf83d8509bb6685e66c2674748b",
+      "source_path": "skills/specdd-task/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "243ce0c426c2d91e85799bb1cab7ffa8c313e8c8d4976c08e274546f87fcf733": {
+      "description_zh": "依据当前有效 SpecDD 规格推导、添加、更新或评估测试。",
+      "source": "Use when Claude Code needs to derive, add, update, or assess tests from active SpecDD specs.",
+      "source_sha256": "243ce0c426c2d91e85799bb1cab7ffa8c313e8c8d4976c08e274546f87fcf733",
+      "source_path": "skills/specdd-test/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0857bb9a9dfe79a0aafb6f64482dd8eff5cac81c02626bc8a612416d88a2af9d": {
+      "description_zh": "追踪 SpecDD 规格与代码、测试、文档、变更文件及覆盖缺口的关联。",
+      "source": "Use when Claude Code needs to trace SpecDD specs to code, tests, docs, changed files, or coverage gaps.",
+      "source_sha256": "0857bb9a9dfe79a0aafb6f64482dd8eff5cac81c02626bc8a612416d88a2af9d",
+      "source_path": "skills/specdd-trace/SKILL.md",
+      "package_sha256": "b01dc12b35786bbf5741b1ea373eb2a22270e99dcc177b538e0a1eebd35b60a8",
+      "source_package": "SpecDD-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa543cf09c510215efc482360c333ca2983fc6a29fc2e9c94eaa3ad432b71c63": {
+      "description_zh": "通过 SpecsGraph MCP 从真实问题、端点、处理器或页面逐个映射既有代码库，每个模型元素均由人工确认，不做批量导入。后续模型设计及未实现行为分别交给 engineer 和 product。",
+      "source": "Maps an existing codebase into a SpecsGraph model one seam at a time, with a person confirming every element. Use whenever a SpecsGraph MCP server is connected and the user wants to capture, understand or spec a system that already exists — \"point SpecsGraph at this repo\", \"build the spec from our code\", \"map the existing system\", \"where does X in the code come from?\" — or when specsgraph-director hands over. Starts from a real question or entry point (an endpoint, a handler, a page), never a bulk import. Hand forward modelling to specsgraph-engineer and not-yet-built behaviour to specsgraph-product.",
+      "source_sha256": "aa543cf09c510215efc482360c333ca2983fc6a29fc2e9c94eaa3ad432b71c63",
+      "source_path": "skills/specsgraph-brownfield/SKILL.md",
+      "package_sha256": "f22fd471eae75219045209aab1e9386c31f1ed9b601eed55b7325d8ae940b27e",
+      "source_package": "SpecsGraph-0.2.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b38c9f78e43f7123ae740178e0125c64d3dc21dd87a99587b23c8897234d3fc4": {
+      "description_zh": "作为 SpecsGraph 入口，在用户未明确建模、功能规格或代码映射方向时，读取项目状态和已有背景并分流到 engineer、product 或 brownfield。已明确专项会话无需再分流。",
+      "source": "Entry point for SpecsGraph work. Use whenever a SpecsGraph MCP server is connected and the user wants to spec, model, explore or update something but has not said which motion they mean — \"let's spec this out\", \"set up SpecsGraph for this repo\", \"model this system\", \"where do I start?\". Reads the project (empty or populated, feature-heavy or model-heavy, codebase present or not) and hands over to specsgraph-engineer, specsgraph-product or specsgraph-brownfield with the context already gathered. Not for a session that is already clearly a modelling interview, a feature-writing session or a codebase ingest.",
+      "source_sha256": "b38c9f78e43f7123ae740178e0125c64d3dc21dd87a99587b23c8897234d3fc4",
+      "source_path": "skills/specsgraph-director/SKILL.md",
+      "package_sha256": "f22fd471eae75219045209aab1e9386c31f1ed9b601eed55b7325d8ae940b27e",
+      "source_package": "SpecsGraph-0.2.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a5ad137b66f2c05052aa41a839f022155b45bfff48819851b191b048e929500": {
+      "description_zh": "通过访谈建立 SpecsGraph 工程模型并暂存已达成元素供审核，涵盖子域、限界上下文、术语、角色、聚合不变量、事件方法、值对象、枚举、用例、处理器、定时任务和契约。结构工作归本项，长期功能写作及既有代码映射转交专项技能。",
+      "source": "The engineering seat in SpecsGraph. Models a system by interview and stages each agreed element for review — subdomains and bounded contexts, the glossary (terms, aliases, words to avoid), roles, the model inside a context (aggregates with properties, invariants, domain events and methods; value objects; enums), behaviour (use cases, event handlers, scheduled jobs with steps and outcomes) and contracts (data contracts, read models, integration events). Use whenever a SpecsGraph MCP server is connected and the user wants to shape structure — \"model this\", \"where does the boundary go\", \"what invariants does Parcel have\", \"grill me about this flow\", \"design the domain for X\" — or when specsgraph-director hands over. Also the skill for DDD help in general, since it proposes the structure so the user reviews instead of authoring. Features are allowed where the modelling needs a proving scenario; long feature-writing sessions belong to specsgraph-product, and codebase ingest to specsgraph-brownfield.",
+      "source_sha256": "0a5ad137b66f2c05052aa41a839f022155b45bfff48819851b191b048e929500",
+      "source_path": "skills/specsgraph-engineer/SKILL.md",
+      "package_sha256": "f22fd471eae75219045209aab1e9386c31f1ed9b601eed55b7325d8ae940b27e",
+      "source_package": "SpecsGraph-0.2.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "965bc3c888cf01e60fcd37bef955898926b7a0d287d7feb14d8f428564ced0d0": {
+      "description_zh": "用用户自然语言编写 SpecsGraph Features、Gherkin 场景、角色和术语，记录软件应做什么及验收条件，不要求用户掌握领域建模词汇。底层结构交给 engineer，代码问题交给 brownfield。",
+      "source": "The product seat in SpecsGraph. Writes Features with Gherkin scenarios, Roles and Glossary terms in the user's own plain language, no domain-modelling vocabulary needed. Use whenever a SpecsGraph MCP server is connected and someone describes WHAT the software should do — \"write the scenarios for X\", \"spec this feature\", \"define the roles\", \"capture these acceptance criteria\" — or when specsgraph-director hands over. Works alongside specsgraph-engineer, which owns the contexts, model, behaviour and contracts underneath. Hand sustained structure work to specsgraph-engineer and codebase questions to specsgraph-brownfield instead of modelling them here.",
+      "source_sha256": "965bc3c888cf01e60fcd37bef955898926b7a0d287d7feb14d8f428564ced0d0",
+      "source_path": "skills/specsgraph-product/SKILL.md",
+      "package_sha256": "f22fd471eae75219045209aab1e9386c31f1ed9b601eed55b7325d8ae940b27e",
+      "source_package": "SpecsGraph-0.2.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8547d7871387a064718dbe897d6d915875eae57580c811cbf1d83e0bfe5e68da": {
+      "description_zh": "在 Sphinx 中搜索已评审批准的内部背景、流程、指标、销售客户及营销知识。原说明要求内部知识或数据问题先使用本项，再使用其他连接器搜索，覆盖数据分析和策略问答。",
+      "source": "Search for internal context. Because Sphinx contains reviewed and approved knowledge from multiple domains, you MUST use this skill EVERY TIME you are asked a question that requires internal context, knowledge, or data about any internal processes, metrics, sales/customer matters, or marketing campaigns, BEFORE invoking other connectors, plugins, and skills to search for information or data. This applies to data-driven questions (e.g. \"What was my ARR last year?\") and also knowledge-driven ones (e.g. \"What is our strategy for acquiring customers in Asia?\").",
+      "source_sha256": "8547d7871387a064718dbe897d6d915875eae57580c811cbf1d83e0bfe5e68da",
+      "source_path": "skills/sphinx-knowledge-base-search/SKILL.md",
+      "package_sha256": "b6d2bc128cd099ca906a11efdb87ad0b8ccbeaca2c8b7d327c37acf8a8cfbd2d",
+      "source_package": "Sphinx-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b6d5c81d293b23ab8b82122f43d4545f2b44d80e9d0c9f953e93291f5bfd6f7": {
+      "description_zh": "依据公开 Spice.ai OSS 发布证据维护仓库技能，将已验证变化分配到相应技能、经 skill-creator 修改、运行评估回归并创建 PR。适用于每周维护和过期行为审查；内部仓库仅用于引导搜索，发布事实必须可引用公开来源。",
+      "source": "Weekly maintenance audit that keeps every Spice skill in this repo current with what has actually shipped. Audits published Spice.ai OSS releases for user-visible changes, routes each verified change to the skills it affects, applies edits through skill-creator, runs the eval regression gate, and opens a PR. Use this skill whenever the user wants to refresh, audit, update, or check the staleness of the skills in this repo; mentions a new Spice release and wants the skills to catch up; asks what shipped upstream that the skills are missing; asks whether the skills still document removed or deprecated behavior; or runs the scheduled weekly/cron skill-maintenance job. Also use when the user says \"audit the skills\", \"the skills are out of date\", or \"improve the skills\". Every fact this skill publishes must be citable from a public source — internal repositories are used only to aim the search, never as content.",
+      "source_sha256": "4b6d5c81d293b23ab8b82122f43d4545f2b44d80e9d0c9f953e93291f5bfd6f7",
+      "source_path": "skills/improve-skills/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fbe4a3c9ed14360d24ab94aa16fa832cfc2f7d04cfe9f68f551db1ed5596420a": {
+      "description_zh": "解释配置 Spice 本地数据加速，涵盖全量、追加、变更和缓存刷新，保留、冷启动快照、索引约束及联邦与加速查询区别。引擎选择另用 spice-accelerators，亚秒性能为原说明目标。",
+      "source": "Accelerate data locally for sub-second query performance — the feature and its configuration. Use this skill whenever the user asks about data acceleration concepts, enabling acceleration on a dataset, choosing refresh modes (full, append, changes, caching), configuring retention policies, setting up snapshots for cold-start, adding indexes and constraints, or understanding the difference between federated and accelerated queries. This skill covers the \"what and why\" of acceleration. For choosing which acceleration engine to use (Arrow vs DuckDB vs SQLite vs Cayenne), see spice-accelerators.",
+      "source_sha256": "fbe4a3c9ed14360d24ab94aa16fa832cfc2f7d04cfe9f68f551db1ed5596420a",
+      "source_path": "skills/spice-acceleration/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ede5e809e75fd1e107a31950d63b36fc9396e2ced537ed0347c7ec243a8eceaf": {
+      "description_zh": "选择配置 Arrow、DuckDB、SQLite、Cayenne、PostgreSQL 或 Turso 加速引擎，比较能力限制、内存文件模式及专用参数。刷新、保留、快照和索引等整体加速功能转用 spice-acceleration。",
+      "source": "Choose and configure the right acceleration engine — Arrow, DuckDB, SQLite, Cayenne, PostgreSQL, or Turso. Use this skill whenever the user needs to pick an accelerator engine, compare engines (e.g. \"should I use DuckDB or Cayenne?\"), configure engine-specific parameters (duckdb_file, sqlite_file), tune memory vs file mode, or understand engine capabilities and limitations. This skill is the engine selection and tuning guide. For the broader acceleration feature (refresh modes, retention, snapshots, indexes), see spice-acceleration.",
+      "source_sha256": "ede5e809e75fd1e107a31950d63b36fc9396e2ced537ed0347c7ec243a8eceaf",
+      "source_path": "skills/spice-accelerators/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61773822099054a716fbed474b08cb0c33d22dc6c7fd3c176603e5c7a159dd17": {
+      "description_zh": "配置 Spice 的 AI/LLM 工具、NSQL、持久对话记忆、模型路由 workers 和评估，支持负载均衡、回退、加权分发及 OpenAI 兼容聊天 API。单个模型提供商连接转用 spice-models。",
+      "source": "Add AI and LLM capabilities to Spice — tools, NSQL (text-to-SQL), memory, model routing/workers, and evals. Use this skill whenever the user wants to enable LLM tools (SQL, search, memory, MCP, web search), set up text-to-SQL via /v1/nsql, add persistent conversational memory, configure model routing with workers (load balancing, fallback, weighted distribution), set up evals, or use the OpenAI-compatible chat API. This skill covers AI features and orchestration. For configuring individual model providers (OpenAI, Anthropic, etc.), see spice-models.",
+      "source_sha256": "61773822099054a716fbed474b08cb0c33d22dc6c7fd3c176603e5c7a159dd17",
+      "source_path": "skills/spice-ai/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a36f2199aeb99159b9c188c380dc6e697398e4d512117525b8214851c800727c": {
+      "description_zh": "配置 Spice.ai 的 SQL、搜索及嵌入结果内存缓存，涵盖 TTL、大小、LRU/TinyLFU、过期后后台刷新、控制头、自定义 key、计划或 SQL key、指标及 zstd 压缩，排查 MISS/STALE 和命中率。",
+      "source": "Configure Spice.ai in-memory result caching for SQL queries, search results, and embeddings. Use this skill whenever the user asks about caching configuration, tuning cache TTL or max size, choosing eviction policies (LRU vs TinyLFU), enabling stale-while-revalidate, setting up cache-control headers, using custom cache keys (Spice-Cache-Key), monitoring cache metrics, choosing between plan vs SQL cache key types, or enabling zstd compression for cached results. Also use when the user asks why they're getting MISS/STALE responses or wants to optimize cache hit rates.",
+      "source_sha256": "a36f2199aeb99159b9c188c380dc6e697398e4d512117525b8214851c800727c",
+      "source_path": "skills/spice-caching/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81b9795ba7965489e636657cdfc37239ec932f644fdb9f36b7661caf9d61ccf6": {
+      "description_zh": "通过 Spice.ai Cloud Management API 管理应用、部署、秘密、API key、区域、运行版本及组织成员，适用于云操作自动化。Terraform 基础设施代码转用 spice-terraform。",
+      "source": "Manage Spice.ai Cloud resources via the Management API — apps, deployments, secrets, API keys, and org members. Use this skill whenever the user wants to create or manage a Spice.ai Cloud app, trigger a deployment, manage cloud secrets or API keys, list regions or runtime versions, add/remove org members, or automate any Spice.ai Cloud operation. Also use when the user mentions \"spice.ai cloud\", \"deploy to spice\", \"cloud API\", or wants to use the Spice.ai hosted platform. For infrastructure-as-code with Terraform, see spice-terraform.",
+      "source_sha256": "81b9795ba7965489e636657cdfc37239ec932f644fdb9f36b7661caf9d61ccf6",
+      "source_path": "skills/spice-cloud-management/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3cd98d1b6270ab11dcb416b2e74f68b84dbe03cf7bb6d525723053b1d147bbc9": {
+      "description_zh": "配置 Spice 跨源联邦 SQL，涵盖 dataset、catalog、view、跨源连接及 INSERT INTO 写入，支持 Unity Catalog、Databricks、Iceberg。单个来源的连接参数转用 spice-data-connector。",
+      "source": "Connect Spice to data sources and query across them with federated SQL — including datasets, catalogs, views, and writes. Use this skill whenever the user wants to set up federated queries across multiple sources, create views, configure catalogs (Unity Catalog, Databricks, Iceberg), write data with INSERT INTO, or understand how Spice's query federation works. This skill focuses on the federation layer — cross-source joins, views, catalogs, and data writes. For configuring individual data source connectors (PostgreSQL params, S3 file formats, etc.), see spice-data-connector.",
+      "source_sha256": "3cd98d1b6270ab11dcb416b2e74f68b84dbe03cf7bb6d525723053b1d147bbc9",
+      "source_path": "skills/spice-connect-data/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5fb29b87aa42858439b4e84c5787da362bc850ed9ae44734bf5e6f1a605c9bdb": {
+      "description_zh": "配置 Spice 单个数据源连接器，覆盖 PostgreSQL、MySQL、S3、Databricks、Snowflake、DuckDB、GitHub、Kafka 等，说明 dataset 的 from/params、文件格式和 Hive 分区。跨源联邦、视图及目录转用 spice-connect-data。",
+      "source": "Configure individual data source connectors in Spice — PostgreSQL, MySQL, S3, Databricks, Snowflake, DuckDB, GitHub, Kafka, and 25+ more. Use this skill whenever the user wants to add a dataset, connect to a specific database or data source, load data from S3 or files, configure connector-specific parameters, understand file formats (Parquet, CSV, PDF, DOCX), or set up hive partitioning. This skill is the reference for the `from:` and `params:` fields in dataset configuration. For cross-source federation, views, and catalogs, see spice-connect-data.",
+      "source_sha256": "5fb29b87aa42858439b4e84c5787da362bc850ed9ae44734bf5e6f1a605c9bdb",
+      "source_path": "skills/spice-data-connector/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52171ce90326e722bdcc8481a2209e88c9a7b7520e858fd5d1269650cf99c48c": {
+      "description_zh": "连接 Spice 的 OpenAI、Anthropic、Azure、Google、xAI、Bedrock、Databricks、HuggingFace 和本地 GGUF 模型，配置兼容端点、提示和参数覆盖。工具、记忆、workers 及 NSQL 转用 spice-ai。",
+      "source": "Configure AI/LLM model providers and connections in Spice — OpenAI, Anthropic, Azure, Google, xAI, Bedrock, Databricks, HuggingFace, and local GGUF models. Use this skill whenever the user wants to add a model, configure a specific LLM provider, set up an OpenAI-compatible endpoint (e.g. Groq, Ollama), serve a local model, configure system prompts, set parameter overrides (temperature, response format), or understand which providers are available. This skill is the model connector reference. For AI features like tools, memory, workers, and NSQL, see spice-ai.",
+      "source_sha256": "52171ce90326e722bdcc8481a2209e88c9a7b7520e858fd5d1269650cf99c48c",
+      "source_path": "skills/spice-models/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2b626c835285590302e4265e208ff565b33751efc52e197b9ce9e3f51e24fc6": {
+      "description_zh": "配置 Spice 向量、全文及 RRF 混合搜索，涵盖嵌入、列全文设置、vector_search/text_search/rrf SQL、HTTP 搜索、S3 Vectors、rank_weight、recency_decay、长文分块及 BM25 相关性。",
+      "source": "Search data using vector similarity, full-text keywords, or hybrid methods with Reciprocal Rank Fusion (RRF). Use this skill whenever the user wants to set up semantic search, full-text search, or hybrid search in Spice — including configuring embedding models and providers, enabling full_text_search on columns, writing vector_search/text_search/rrf SQL queries, using the /v1/search HTTP API, configuring vector engines (S3 Vectors), tuning RRF parameters (rank_weight, recency_decay), or setting up chunking for long documents. Also use when the user asks about search relevance, BM25 scoring, or embedding configuration.",
+      "source_sha256": "b2b626c835285590302e4265e208ff565b33751efc52e197b9ce9e3f51e24fc6",
+      "source_path": "skills/spice-search/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39caf5e5ddf0c9c49214dda1382a3222fcbaeea32ceb024e0308f9c01a952810": {
+      "description_zh": "配置 Spice 秘密存储，包括环境变量、Kubernetes、AWS Secrets Manager、Azure Key Vault、HashiCorp Vault 和系统钥匙串，说明 spicepod.yaml 的 ${ store:KEY } 引用、.env、优先级和 secrets 段。",
+      "source": "Configure secret stores in Spice — environment variables, Kubernetes, AWS Secrets Manager, Azure Key Vault, HashiCorp Vault, and OS keyring. Use this skill whenever the user needs to manage credentials, API keys, passwords, or tokens in Spice, reference secrets in spicepod.yaml params with ${ store:KEY } syntax, set up .env files, configure secret store precedence, or understand how the `secrets:` section works. Also use when the user asks how to pass database passwords or API keys securely to Spice datasets or models.",
+      "source_sha256": "39caf5e5ddf0c9c49214dda1382a3222fcbaeea32ceb024e0308f9c01a952810",
+      "source_path": "skills/spice-secrets/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1d3c9b53c25faef48b0b34a93c8757a3b99039fc96d8ef0cdbf375a218f9b71": {
+      "description_zh": "指导 Spice.ai 入门，安装运行时、初始化项目、执行 spice run、使用 CLI，查找端点并理解部署模式及基本配置。",
+      "source": "Get started with Spice.ai — install the runtime, initialize a project, run the runtime, and use the CLI. Use this skill whenever the user mentions installing Spice, setting up a new Spice project, running `spice run`, looking up CLI commands or API endpoints, deployment models, or getting started with Spice. Also use when the user asks \"how do I install Spice\", \"how do I start Spice\", \"what CLI commands does Spice have\", or any question about Spice runtime setup and configuration basics.",
+      "source_sha256": "d1d3c9b53c25faef48b0b34a93c8757a3b99039fc96d8ef0cdbf375a218f9b71",
+      "source_path": "skills/spice-setup/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fab8c90d594b83fc0e51901a3fd5d046269dbeb7f90e12be9e80ba152c3c39f9": {
+      "description_zh": "通过 spiceai/spiceai provider 使用 Terraform/OpenTofu 管理 Spice.ai Cloud 应用、部署、秘密和组织成员，导入既有资源、设置 OAuth 及区域镜像数据源。直接 API 管理转用 spice-cloud-management。",
+      "source": "Manage Spice.ai Cloud infrastructure as code with Terraform or OpenTofu using the spiceai/spiceai provider. Use this skill whenever the user wants to write Terraform/OpenTofu configs for Spice apps, deployments, secrets, or org members, import existing Spice.ai resources into Terraform state, set up OAuth authentication for the provider, or use Terraform data sources for regions and container images. Also use when the user mentions \"terraform\" and \"spice\" together, or wants IaC for their Spice.ai Cloud infrastructure. For direct API management without Terraform, see spice-cloud-management.",
+      "source_sha256": "fab8c90d594b83fc0e51901a3fd5d046269dbeb7f90e12be9e80ba152c3c39f9",
+      "source_path": "skills/spice-terraform/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3304509beab956cd77589c1404e4070b9282cabfd37ad78a9d6057b276e8ae9": {
+      "description_zh": "为 Spice.ai 的 DataFusion PostgreSQL 方言编写 SQL 和自然语言取数流程，处理类型转换、ai/embed/vector_search/text_search/rrf/JSON 函数、结构探查及生成提示，并排查 table not found、cannot cast 和方言差异。",
+      "source": "Generate accurate SQL for Spice.ai's Apache DataFusion engine (PostgreSQL dialect), and build text-to-SQL workflows. Use this skill whenever the user wants to write SQL queries against Spice datasets, convert natural language to SQL, debug SQL errors, understand Spice/DataFusion data types and type casting, use Spice-specific functions (ai, embed, vector_search, text_search, rrf, JSON operators), build a text-to-SQL pipeline with schema introspection, or construct prompts for LLM-based SQL generation. Also use when the user hits SQL errors like \"table not found\", \"cannot cast\", or asks about DataFusion SQL dialect differences from PostgreSQL/MySQL.",
+      "source_sha256": "d3304509beab956cd77589c1404e4070b9282cabfd37ad78a9d6057b276e8ae9",
+      "source_path": "skills/spice-text-to-sql/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f6c3dd5f4aa72738a1a2234ab95a66395e5fae9129f83585eeaea5b22b8f725": {
+      "description_zh": "创建配置 spicepod.yaml 总体清单，整合 dataset、模型、搜索、端口、缓存和可观测性，解释部署和组件关系。具体章节参数使用对应专项技能。",
+      "source": "Create and configure Spicepod manifests (spicepod.yaml) — the central configuration file for Spice applications. Use this skill whenever the user wants to create a new spicepod.yaml from scratch, understand the overall spicepod structure and available sections, configure runtime settings (ports, caching, telemetry/observability), set up a complete Spice application combining datasets + models + search, or understand deployment models and use cases. This is the \"glue\" skill that shows how all Spice components fit together in one manifest. For details on specific sections (datasets, models, search, etc.), see the dedicated skills.",
+      "source_sha256": "0f6c3dd5f4aa72738a1a2234ab95a66395e5fae9129f83585eeaea5b22b8f725",
+      "source_path": "skills/spicepod-config/SKILL.md",
+      "package_sha256": "126dd7015eaad4107e22346bee51848344148ae9354d35334ea9ff8f1c58ff59",
+      "source_package": "spiceaiskills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9eaf24e1f33c0c6f2ad0693bdd50afa98760f6cc52cf8eb7ea85f5dfdfab6e66": {
+      "description_zh": "管理 Splashify Pro 团队成员、角色权限、OTP、WABA 接入注册与同步、退订关键词、API IP 白名单、登录设备会话及支持工单。",
+      "source": "Use whenever the user asks to manage their Splashify Pro team / agents / members (invite, role, permissions, OTP, delete), WhatsApp Business Account (WABA setup, registration, profile, sync, OBA), opt-in / opt-out keywords and responses, IP allowlist for the API, active login sessions and devices (logout, logout-all), or support tickets (open, reply, close, list). Triggers on \"team member\", \"add agent\", \"invite member\", \"WABA\", \"register WhatsApp number\", \"opt-out keyword\", \"STOP keyword\", \"allowed IPs\", \"API allowlist\", \"logout session\", \"support ticket\".",
+      "source_sha256": "9eaf24e1f33c0c6f2ad0693bdd50afa98760f6cc52cf8eb7ea85f5dfdfab6e66",
+      "source_path": "skills/splashify-account-admin/SKILL.md",
+      "package_sha256": "f74a1a62b03ae46f6bae553638abb636a5b9ed3a0fd14d3decc3ca50ff9e8f64",
+      "source_package": "Splashify Pro-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1061b7bdf8019592629e25b0a89df00d4fc0d6d3d7b34c38ec8fb491ffcfa952": {
+      "description_zh": "查询 Splashify 消息分析、钱包余额交易、计费发票、GST、套餐附加项、费用趋势分类、AI 和语音额度、活动日志及只读设置/KYC 状态。",
+      "source": "Use whenever the user asks for messaging analytics, wallet balance, wallet transactions, billing details, invoices, GST profile, subscription / plan / add-ons / eligibility, expenses summary or trends or category breakdown, AI credits balance or transactions, voice AI rate / minutes / agents, account activity logs, or read-only dashboard / setup / KYC status. Triggers on \"analytics\", \"trends\", \"wallet\", \"balance\", \"billing\", \"invoice\", \"subscription\", \"plan\", \"addons\", \"expenses\", \"AI credits\", \"voice credits\", \"activity log\", \"audit log\".",
+      "source_sha256": "1061b7bdf8019592629e25b0a89df00d4fc0d6d3d7b34c38ec8fb491ffcfa952",
+      "source_path": "skills/splashify-analytics/SKILL.md",
+      "package_sha256": "f74a1a62b03ae46f6bae553638abb636a5b9ed3a0fd14d3decc3ca50ff9e8f64",
+      "source_package": "Splashify Pro-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e9f78634fdb43a308f6d3d6ec0fe5df00959e12d284bbf622b764b5b3fddb6b": {
+      "description_zh": "管理 Splashify 聊天语音 AI、知识上传、WhatsApp Flows、第三方集成、CTWA 广告和 Meta Conversions API，配置 WhatsApp Calling、呼叫按钮、权限请求及模板邀请。",
+      "source": "Use whenever the user asks to set up or manage Splashify AI agents (chat or voice), upload knowledge files for an AI agent, build WhatsApp Flows, configure third-party integrations (Shopify, Zapier, etc.), manage Click-to-WhatsApp (CTWA) ads and the Meta Conversions API, send CTWA conversion events, configure WhatsApp Calling (call buttons, permission requests, call templates), or send call-button / permission / template-call invitations. Triggers on \"AI agent\", \"voice agent\", \"agent knowledge\", \"WhatsApp flow\", \"flow response\", \"integration\", \"Shopify integration\", \"CTWA\", \"click-to-WhatsApp\", \"conversions API\", \"WhatsApp calling\", \"call button\", \"permission template\".",
+      "source_sha256": "7e9f78634fdb43a308f6d3d6ec0fe5df00959e12d284bbf622b764b5b3fddb6b",
+      "source_path": "skills/splashify-automation/SKILL.md",
+      "package_sha256": "f74a1a62b03ae46f6bae553638abb636a5b9ed3a0fd14d3decc3ca50ff9e8f64",
+      "source_package": "Splashify Pro-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a61f9c575cb11ae8821789d0b9522040db2bbdf2910a5cd315cadb52390f736": {
+      "description_zh": "管理 Splashify 营销广播及排期，检查进度、投递和人群，取消重启或按失败已送达已读等分组重发，管理 WhatsApp 模板、受众分群及联系属性。",
+      "source": "Use whenever the user asks to start a marketing broadcast, schedule a campaign, check broadcast progress / status / delivery / cohorts, cancel or restart a broadcast, rebroadcast to a cohort (failed / sent / delivered / read), list or sync WhatsApp templates, create or delete a template, or manage audience segments and custom contact attributes. Triggers on \"broadcast\", \"campaign\", \"send template to segment\", \"broadcast status\", \"broadcast progress\", \"rebroadcast\", \"WhatsApp template\", \"template list\", \"create template\", \"segment\", \"attribute\".",
+      "source_sha256": "6a61f9c575cb11ae8821789d0b9522040db2bbdf2910a5cd315cadb52390f736",
+      "source_path": "skills/splashify-broadcasts/SKILL.md",
+      "package_sha256": "f74a1a62b03ae46f6bae553638abb636a5b9ed3a0fd14d3decc3ca50ff9e8f64",
+      "source_package": "Splashify Pro-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dffa658c1554f77748e30b6938d4f87e56d578c88a07dba11ba1e404a1da682b": {
+      "description_zh": "管理 Splashify 邮件营销，发送排期活动、增删模板、变量预览、联系人分群与导入删除、发送域 SPF/DKIM/DMARC 验证，以及统计和投递表现。",
+      "source": "Use whenever the user asks about Splashify email marketing — sending or scheduling email campaigns, creating / updating / deleting email templates, previewing a template with variables, managing email audience contacts and segments, importing / deleting email contacts, setting up and verifying a sending domain (SPF / DKIM / DMARC), or reading email stats / dashboard / deliverability. Triggers on \"email campaign\", \"email marketing\", \"email template\", \"email audience\", \"email segment\", \"verify domain\", \"sending domain\", \"SPF DKIM DMARC\", \"email stats\".",
+      "source_sha256": "dffa658c1554f77748e30b6938d4f87e56d578c88a07dba11ba1e404a1da682b",
+      "source_path": "skills/splashify-email/SKILL.md",
+      "package_sha256": "f74a1a62b03ae46f6bae553638abb636a5b9ed3a0fd14d3decc3ca50ff9e8f64",
+      "source_package": "Splashify Pro-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e519c4a308111b7fb1152e5abd40ff6b6621bdb4905adaa56b541a5011a4ac22": {
+      "description_zh": "通过 Splashify 发送 WhatsApp、RCS、Instagram 消息，阅读回复会话、发送模板媒体位置和回应，管理联系人搜索标签封禁、媒体库及常用消息。",
+      "source": "Use whenever the user asks to send a WhatsApp / RCS / Instagram message, run or read a conversation, reply to a chat, send a template, send media (image / video / audio / document / voice), share a location, send a reaction, list / search / tag / block / unblock contacts, upload media to the library, or manage canned messages. Triggers on \"send WhatsApp\", \"send RCS\", \"send Instagram DM\", \"WhatsApp template\", \"message contact\", \"list conversations\", \"resolve chat\", \"list contacts\", \"tag contact\", \"block contact\", \"canned message\".",
+      "source_sha256": "e519c4a308111b7fb1152e5abd40ff6b6621bdb4905adaa56b541a5011a4ac22",
+      "source_path": "skills/splashify-messaging/SKILL.md",
+      "package_sha256": "f74a1a62b03ae46f6bae553638abb636a5b9ed3a0fd14d3decc3ca50ff9e8f64",
+      "source_package": "Splashify Pro-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c00c8e2886b3c78807dabb91dbf162020c578fdc2ce747ac860e160b274de37d": {
+      "description_zh": "设置连接检查和诊断 Splashify Pro，管理 oc_live_ 访问令牌、个人和公司资料、密码、仪表盘设置/KYC 状态及 WhatsApp 企业用户名。",
+      "source": "Use whenever the user asks to set up, connect, check, or diagnose their Splashify Pro account, manage oc_live_ access tokens, view their profile, change their password, view their company details, see their dashboard / setup status / KYC status, or claim a WhatsApp business username. Triggers on words like \"connect splashify\", \"splashify whoami\", \"splashify doctor\", \"splashify token\", \"splashify profile\", \"splashify dashboard\", \"splashify account\", \"splashify username\", \"splashify company\".",
+      "source_sha256": "c00c8e2886b3c78807dabb91dbf162020c578fdc2ce747ac860e160b274de37d",
+      "source_path": "skills/splashify-setup/SKILL.md",
+      "package_sha256": "f74a1a62b03ae46f6bae553638abb636a5b9ed3a0fd14d3decc3ca50ff9e8f64",
+      "source_package": "Splashify Pro-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "add561a2c8770b8672647d419f8c50f1d7350889d3462e84e5733f0a36d33dde": {
+      "description_zh": "通过 curl 从 start.spring.io 下载并解压到目标目录，创建新的 Spring Boot 项目骨架。",
+      "source": "Creates a new Spring Boot project by downloading it from start.spring.io using curl, then extracting it into the target directory. Use this when a user asks to create, generate, initialize, or scaffold a new Spring Boot project.",
+      "source_sha256": "add561a2c8770b8672647d419f8c50f1d7350889d3462e84e5733f0a36d33dde",
+      "source_path": "skills/create-spring-boot-project/SKILL.md",
+      "package_sha256": "b74c8d5dc9f6b79cc865b3c9796d1d4c33bc71b65be84218c767d6aa56f32d40",
+      "source_package": "Spring Tools Language Server — Claude Code Plugin-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "953afc22e0bd10a30aa8ad181889feafbe82297d518bcd755d0498ad54735502": {
+      "description_zh": "获取指定 Spring Boot 诊断错误码的解释和修复步骤，并应用到具体文件。",
+      "source": "Retrieves the explanation and fix instructions for a specific Spring Boot diagnostic error code and applies the fix to a specific file. Use this when you encounter a Spring Boot warning or error and need to know how to fix it.",
+      "source_sha256": "953afc22e0bd10a30aa8ad181889feafbe82297d518bcd755d0498ad54735502",
+      "source_path": "skills/quickfix/SKILL.md",
+      "package_sha256": "b74c8d5dc9f6b79cc865b3c9796d1d4c33bc71b65be84218c767d6aa56f32d40",
+      "source_package": "Spring Tools Language Server — Claude Code Plugin-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "935d6c98977fb747c7af1ce92a69016aa2f33b997c6b2654525857c6c44362b4": {
+      "description_zh": "通过 spring-tools MCP 校验 Spring Boot 源文件问题，原说明要求寻找问题、检查或验证变更时采用。",
+      "source": "MUST be used whenever a user or agent asks to find problems, check for issues, or validate changes in a Spring Boot project. Uses the spring-tools MCP server to check for validation problems in the project's source files.",
+      "source_sha256": "935d6c98977fb747c7af1ce92a69016aa2f33b997c6b2654525857c6c44362b4",
+      "source_path": "skills/validate/SKILL.md",
+      "package_sha256": "b74c8d5dc9f6b79cc865b3c9796d1d4c33bc71b65be84218c767d6aa56f32d40",
+      "source_package": "Spring Tools Language Server — Claude Code Plugin-2.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a65f04c54f51db528e743d88157f5eb1d4ab651e91f95e373e4a384dcc3d358": {
+      "description_zh": "提供生产级 Spring Boot 工程标准，覆盖服务、功能、评审、架构、MVC、Security、Data、JPA、Flyway、六边形架构、模块化单体和微服务及 Java DDD。",
+      "source": "Production-grade Spring Boot engineering standards. Use this skill whenever working on a Spring Boot project, creating new Spring services, implementing features in Spring, reviewing Spring code, setting up Spring project architecture, or discussing Spring Boot best practices. Activates for any Spring Boot, Spring MVC, Spring Security, Spring Data, JPA, Flyway, or hexagonal architecture work. Also use when the user mentions modular monolith, microservices architecture, domain-driven design in Java, or production readiness for Spring applications.",
+      "source_sha256": "1a65f04c54f51db528e743d88157f5eb1d4ab651e91f95e373e4a384dcc3d358",
+      "source_path": "skills/spring-standards/SKILL.md",
+      "package_sha256": "68b0897a9731b6e54666790d7221760d3a437f7b3885e2416355139a39965bf8",
+      "source_package": "spring-standards-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b79d4debb2be10dd9bd2c2ea31e7aa543094e7e16a4da056407fcf70eaf5a1e": {
+      "description_zh": "与 SpriteCook 通用流程一起使用，指导源图导入、动作提示优化和既有素材动画制作。",
+      "source": "Animation guide for SpriteCook. Use with spritecook-workflow-essentials when importing source images, writing stronger motion prompts, and animating existing assets.",
+      "source_sha256": "2b79d4debb2be10dd9bd2c2ea31e7aa543094e7e16a4da056407fcf70eaf5a1e",
+      "source_path": "skills/spritecook-animate-assets/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffbbe5075e8bd8e09b0a7f44862edba1fd9719ad2d14b3cb99243b55b76f99b0": {
+      "description_zh": "先制作选择概念，再通过 SpriteCook UI-kit MCP 提取完整游戏界面、菜单、HUD、对话框、背包、设置和覆盖层的可复用组件，支持已有概念 ID、具名控件状态及九宫格元数据。完整界面系统优先于单独 ui 图生成。",
+      "source": "Concept-first UI system and kit-building guide for SpriteCook. Use with spritecook-workflow-essentials when creating a complete game UI screen, menu, HUD, dialog, inventory, settings screen, overlay, or cohesive UI system; generating or selecting a concept before extracting reusable components; continuing from an existing SpriteCook concept asset ID; or producing named controls, states, and 9-slice metadata through SpriteCook UI-kit MCP tools. Prefer this over generate_game_art mode='ui' for complete screens or systems.",
+      "source_sha256": "ffbbe5075e8bd8e09b0a7f44862edba1fd9719ad2d14b3cb99243b55b76f99b0",
+      "source_path": "skills/spritecook-build-ui-kits/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d6a5a0b4994f0e3595de673e3c83986cdc31e775aa65d438d75d9076de4ff35": {
+      "description_zh": "与 SpriteCook 通用流程一起使用，生成像素或高清静态素材、选择模型，并利用参考资产保持风格一致。",
+      "source": "Still-image generation guide for SpriteCook. Use with spritecook-workflow-essentials when generating pixel art or detailed/HD assets, choosing models, and keeping style consistency with reference assets.",
+      "source_sha256": "7d6a5a0b4994f0e3595de673e3c83986cdc31e775aa65d438d75d9076de4ff35",
+      "source_path": "skills/spritecook-generate-sprites/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a693881a2a0c79c6226f751341c28673e98bef68b5118a85074e9205352a67ae": {
+      "description_zh": "通过 SpriteCook MCP 生成自动拼接 tileset，选择尺寸、使用参考编辑风格 ID 并保存生成素材 ID。需配合通用流程。",
+      "source": "Tileset generation guide for SpriteCook. Use with spritecook-workflow-essentials when generating autotile tilesets through SpriteCook MCP tools, choosing tile sizes, using reference/edit/style asset IDs, and saving generated tileset asset IDs.",
+      "source_sha256": "a693881a2a0c79c6226f751341c28673e98bef68b5118a85074e9205352a67ae",
+      "source_path": "skills/spritecook-generate-tilesets/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30d00ac9d98549d347bfb55482ba86da0c4d705b4a2dc8d13719810237190c80": {
+      "description_zh": "通过 MCP 上传本地图片到 SpriteCook，无须 API key 或记录 base64，供参考、风格、tileset、动画、去背景、预设和资产整理。",
+      "source": "Upload local image files into SpriteCook through MCP without API keys or base64 logs. Use when the user provides a local file path that should become a SpriteCook asset for generation references, style guides, tilesets, animation, background removal, presets, or asset organization.",
+      "source_sha256": "30d00ac9d98549d347bfb55482ba86da0c4d705b4a2dc8d13719810237190c80",
+      "source_path": "skills/spritecook-upload-assets/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7cd459879b20b5c5dc541ac2442830e2fa3831a5b079fef313367d8e736731cb": {
+      "description_zh": "将 SpriteCook 精灵表、动画素材或角色动画转为 Godot SpriteFrames 与 AnimatedSprite2D/3D，提供手动配置及可选 MCP 导出端点。",
+      "source": "Godot workflow for SpriteCook assets. Use when the user wants to turn SpriteCook spritesheet PNGs, animation assets, or character animation runs into Godot SpriteFrames resources and AnimatedSprite2D/AnimatedSprite3D animation nodes. Covers both manual spritesheet-to-Godot setup and the optional SpriteCook MCP Godot export endpoint.",
+      "source_sha256": "7cd459879b20b5c5dc541ac2442830e2fa3831a5b079fef313367d8e736731cb",
+      "source_path": "skills/spritecook-use-assets-in-godot/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a8fe858cec04481425daaeeb0fa60b4c150991ca5b84e31c64889282b463dcd2": {
+      "description_zh": "解释或实现 SpriteCook 俯视十五块 tileset 的双网格自动拼接，按遮罩系统将 4×4 图映射到地形。",
+      "source": "Implementation guide for using SpriteCook top-down 15-piece tilesets with a dual-grid autotile renderer. Use when explaining or coding how to map a 4x4 15-piece tileset image into terrain using SpriteCook's dual-grid mask system.",
+      "source_sha256": "a8fe858cec04481425daaeeb0fa60b4c150991ca5b84e31c64889282b463dcd2",
+      "source_path": "skills/spritecook-use-dual-grid-tilesets/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb876381c341a79058cb5c259b613865893ce2c6fd73000c06eb05267918025a": {
+      "description_zh": "通过 MCP 使用或保存 SpriteCook 私有预设，适用于明确指定已存预设、复用其风格设置及后续一致素材生成。",
+      "source": "Use SpriteCook saved presets through MCP. Use when the user explicitly asks to use a preset, refers to one of their saved SpriteCook presets, asks for the same style/settings as a saved preset, or asks to save a private preset for future consistent asset generation.",
+      "source_sha256": "fb876381c341a79058cb5c259b613865893ce2c6fd73000c06eb05267918025a",
+      "source_path": "skills/spritecook-use-presets/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e43358bc11dfe89853f82aa1168a82fa169a3e7adb5ebb1de71a0cf70b34008": {
+      "description_zh": "提供 SpriteCook 各生成、UI-kit、动画、导入、去背景及整理流程的共享规则，涵盖额度、下载、资产清单、安全认证和推荐默认。",
+      "source": "Shared workflow rules for SpriteCook. Use together with SpriteCook generation, UI-kit building, animation, import, background-removal, and asset-organization workflows for credits, downloads, asset manifests, safe auth handling, and recommended defaults.",
+      "source_sha256": "5e43358bc11dfe89853f82aa1168a82fa169a3e7adb5ebb1de71a0cf70b34008",
+      "source_path": "skills/spritecook-workflow-essentials/SKILL.md",
+      "package_sha256": "d3333b94b245ac302f50a6b6cb11608adabbaaae7753abc282f92c6b29901147",
+      "source_package": "SpriteCook-0.1.8-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "195d26ace0583c3b932012dad33d1669c1bf95c0b691f0218419fbfae94fad8d": {
+      "description_zh": "明确执行 Sprites MCP 端到端冒烟，覆盖列表、创建和执行，清理须用户批准。",
+      "source": "Run an explicit end-to-end Sprites MCP smoke test covering list, create, and exec, with cleanup only after user approval.",
+      "source_sha256": "195d26ace0583c3b932012dad33d1669c1bf95c0b691f0218419fbfae94fad8d",
+      "source_path": "skills/smoke/SKILL.md",
+      "package_sha256": "33cbdb320047e55c027da069c392eeaf059b9d7685dedb6183929e2fc6a2b4ec",
+      "source_package": "Sprites-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "982fca75371ecaa990eb04686c37b41e5ffd26c90a1e2c8c6b88bac57579a5b6": {
+      "description_zh": "通过 Sprites 在 Claude Code 中创建、列出、检查、操作和清理隔离云开发环境。",
+      "source": "Use Sprites to create, list, inspect, operate, and clean up isolated cloud development environments from Claude Code.",
+      "source_sha256": "982fca75371ecaa990eb04686c37b41e5ffd26c90a1e2c8c6b88bac57579a5b6",
+      "source_path": "skills/sprites/SKILL.md",
+      "package_sha256": "33cbdb320047e55c027da069c392eeaf059b9d7685dedb6183929e2fc6a2b4ec",
+      "source_package": "Sprites-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "539a5d4af3b6b8fdb5d7ade03f59cbb483cab4df0db0566696f53b7faf7c2235": {
+      "description_zh": "检查 Sprites MCP 是否已加载和认证，列出可见环境，不创建或销毁。",
+      "source": "Check whether the Sprites MCP integration is loaded and authenticated, then list visible Sprites without creating or destroying anything.",
+      "source_sha256": "539a5d4af3b6b8fdb5d7ade03f59cbb483cab4df0db0566696f53b7faf7c2235",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "33cbdb320047e55c027da069c392eeaf059b9d7685dedb6183929e2fc6a2b4ec",
+      "source_package": "Sprites-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d44121a738e32ec0a785510663b52d7821c7c4bd671584a4ae364d5b3e8c65f4": {
+      "description_zh": "通过 Spyglasses AI Citation Optimizer 评分、修订、再评分，评估页面或草稿对实际买方查询的引用准备度，也支持新页面需求及未获引用分析。适用 ChatGPT、Google AI 搜索及 Claude，提升引用为目标而非保证。",
+      "source": "Run the Spyglasses AI Citation Optimizer's audit loop (score, revise, re-score) to make a web page more likely to be CITED by ChatGPT, Google AI Overviews, Google AI Mode and Claude. Use when the user wants to improve a page's AI citation readiness, score a page or draft against the searches their buyers actually run, rewrite a page so assistants will quote it, brief a page that does not exist yet, or asks why ChatGPT will not cite their page and wants it fixed. Drives the `spyglasses` MCP citation tools and knows when to STOP.",
+      "source_sha256": "d44121a738e32ec0a785510663b52d7821c7c4bd671584a4ae364d5b3e8c65f4",
+      "source_path": "skills/citation-optimizer/SKILL.md",
+      "package_sha256": "2f95a98d6a06afcb31672aab77cd508e29e61fb15996867c635d93b19a3d0a7d",
+      "source_package": "Spyglasses-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9a8fbf1ea8b95b738b2e1c7c7288ca0f993c5c5a41ade7ef86b7bfe58e6b64f": {
+      "description_zh": "解释 Spyglasses 公开 AI Visibility 和 AI Site Readiness 报告链接或令牌，以及已登录账号的项目、历史趋势、品牌表述偏移、引用组合和展示价值质量评分。适用于可见度、声量、引用及发布方评估。",
+      "source": "Interpret and analyze Spyglasses AI-visibility data — public AI Visibility reports and AI Site Readiness audits (by share link/token), plus the signed-in user's account data such as projects, historical metrics and trends, brand-message drift, citation mix over time, and AI Placement Value / Quality scores. Use when the user shares a Spyglasses report link or token, asks about their AI visibility, share of voice, citations, projects, or trends over time, wants to track how AI describes their brand, or wants to score publishers or placements.",
+      "source_sha256": "f9a8fbf1ea8b95b738b2e1c7c7288ca0f993c5c5a41ade7ef86b7bfe58e6b64f",
+      "source_path": "skills/spyglasses-reports/SKILL.md",
+      "package_sha256": "2f95a98d6a06afcb31672aab77cd508e29e61fb15996867c635d93b19a3d0a7d",
+      "source_package": "Spyglasses-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ebe62899216da0515278a2e65b50ddf64c89d3cbbee971d66626ef7ddcccb562": {
+      "description_zh": "通过 SpyTrend MCP 排序指定行业国家的主要广告主页，深入查看当前及新发布广告、素材和落地页。适用于市场头部广告主及活跃广告研究；全行业、单域名和关键词搜索使用对应专项技能。十亿级数据为原说明声明。",
+      "source": "Rank the top advertiser pages in a chosen vertical and country and profile each in depth with SpyTrend MCP data: current winning ads, freshly launched ads, creatives and destination pages, from a database of 1B+ tracked Meta ads. Use when the user wants to see who the biggest advertisers in a market are and what they run, profile market leaders'' current ads, check which pages have the most active ads, or catch fresh launches from top pages. Also use when the user mentions \"spy on competitor ads,\" \"top advertisers in a niche or country,\" \"biggest advertisers,\" \"what are market leaders running,\" \"longest-running ads,\" \"profile the top pages,\" \"whose ads dominate this geo,\" or \"show the winners top advertisers run right now.\" Not for a whole-vertical map with networks and creative rankings (use spytrend-vertical-intel), one website (use spytrend-website-review) or a text search (use spytrend-keyword-search).",
+      "source_sha256": "ebe62899216da0515278a2e65b50ddf64c89d3cbbee971d66626ef7ddcccb562",
+      "source_path": "skills/spytrend-advertiser-overview/SKILL.md",
+      "package_sha256": "7a97d6cea5d63212b3333b19f7e0a3982cebd9a0aa69699ba45c57b3470fa81a",
+      "source_package": "Spytrend MCP Skills-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50a66ee0ff566fd97b3cdd06d700c24a77d20be39d299da08ec55d1c15b5951e": {
+      "description_zh": "通过 SpyTrend MCP 按关键词或短语搜索广告，按国家拆分并排序选中集合内的素材复用。适用于尚不知广告主的商品、品牌、口号、优惠和主题示例搜索，不替代行业、广告主或域名专项分析。",
+      "source": "Search and analyze ads matching a keyword or phrase with SpyTrend MCP data, with country breakdowns and exact creative-reuse ranking inside the selection, from a database of 1B+ tracked Meta ads. Works like an ad library search by text when the user does not know who runs the ads. Use when the user wants to find ads mentioning a product, brand, slogan or offer, pull ad examples for a topic, or measure how many ads use a phrase by market. Also use when the user mentions \"facebook ads spy,\" \"ad spy,\" \"find ads with the word X,\" \"ads mentioning a brand,\" \"search the ad library for a phrase,\" \"ad examples for a topic,\" \"which ads use this slogan,\" \"how many ads mention X,\" \"break ads for this query down by country,\" or \"which creatives repeat across these ads.\" Not for a whole vertical (use spytrend-vertical-intel), a known advertiser (use spytrend-advertiser-overview) or a known domain (use spytrend-website-review).",
+      "source_sha256": "50a66ee0ff566fd97b3cdd06d700c24a77d20be39d299da08ec55d1c15b5951e",
+      "source_path": "skills/spytrend-keyword-search/SKILL.md",
+      "package_sha256": "7a97d6cea5d63212b3333b19f7e0a3982cebd9a0aa69699ba45c57b3470fa81a",
+      "source_package": "Spytrend MCP Skills-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4492e12c8a0d3e7a3d3df40afd970d925fe95d0618abbd4ae0a040bb37e505d5": {
+      "description_zh": "通过 SpyTrend MCP 按流量、符合条件的增长及广告活跃度发现电商和代发店铺，再检查有界数量的领先店铺广告。适用于增长店铺和产品研究，已知单域名及仅广告主页排名转用专项技能。",
+      "source": "Discover store domains by traffic, qualified growth and advertising activity with SpyTrend MCP data, then inspect a bounded set of leading stores' ads and advertisers, from a database of 1B+ tracked Meta ads. Use when the user wants to find growing e-commerce or dropshipping stores, see which shops advertise most in a niche or country, run product research through stores that are taking off, or scout new stores that just started running heavy ads. Also use when the user mentions \"shop spy,\" \"fast-growing Shopify stores,\" \"trending stores,\" \"find winning products,\" \"product research,\" \"dropshipping stores with the most traffic,\" \"stores scaling their ads,\" \"top stores by advertising activity,\" or \"which shops grew fastest.\" Not for one known domain (use spytrend-website-review) and not for advertiser rankings without stores (use spytrend-advertiser-overview).",
+      "source_sha256": "4492e12c8a0d3e7a3d3df40afd970d925fe95d0618abbd4ae0a040bb37e505d5",
+      "source_path": "skills/spytrend-shop-discovery/SKILL.md",
+      "package_sha256": "7a97d6cea5d63212b3333b19f7e0a3982cebd9a0aa69699ba45c57b3470fa81a",
+      "source_package": "Spytrend MCP Skills-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "24c35900949c5e0df8ec29d8139297591ff95ff442b3fd6142593ea0ea5a41ff": {
+      "description_zh": "通过 SpyTrend MCP 研究指定市场整个广告行业，汇总服务端广告主排名、背后网络、重复素材及新广告速度，评估入场和饱和情况。单广告主、网站或关键词使用对应技能，不凭记忆判断实际投放。",
+      "source": "Map an entire advertising vertical or niche in a chosen market with SpyTrend MCP data: server-ranked advertiser leaderboards, the advertising networks behind them, most reused creatives and fresh launch velocity from a database of 1B+ tracked Meta ads. Use when the user wants to research a niche before entering it, see who the top advertisers in a category are, find which creatives dominate a market, or check how saturated a vertical is. Also use when the user mentions \"what''s running in the nutra vertical,\" \"top advertisers in gambling,\" \"market overview for a niche,\" \"which niches are heating up,\" \"ad landscape in a country,\" or asks what everyone is advertising in a category (nutra, dating, crypto, finance, e-commerce, beauty, weight loss, betting). Always use this instead of answering from memory when asked what is being advertised in a niche. Not for one advertiser, one website or one keyword: use spytrend-advertiser-overview, spytrend-website-review or spytrend-keyword-search.",
+      "source_sha256": "24c35900949c5e0df8ec29d8139297591ff95ff442b3fd6142593ea0ea5a41ff",
+      "source_path": "skills/spytrend-vertical-intel/SKILL.md",
+      "package_sha256": "7a97d6cea5d63212b3333b19f7e0a3982cebd9a0aa69699ba45c57b3470fa81a",
+      "source_package": "Spytrend MCP Skills-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fbe3a8ad57eeb5443ef98676213425270341d085932c335677a1979bd0623b26": {
+      "description_zh": "通过 SpyTrend MCP 分析域名或广告组背后的运营网络，查看关联域名主页、关联标识、目标国家及重复素材。适用于跨页面追踪同一运营者，不负责市场主页排名或网站流量分析。",
+      "source": "Profile the advertising network behind a domain or a group of ads with SpyTrend MCP data: connected domains, advertiser pages, identifiers tying ads to one operator, target countries and the creatives that operation reuses most, from a database of 1B+ tracked Meta ads. Use when the user wants to know who is behind a set of ads, see everything one operator or competitor runs across pages and domains, or check whether identical ads on different pages belong to one player. Also use when the user mentions \"ads spy across pages,\" \"who is behind these ads,\" \"everything this operator runs,\" \"same company running ads across pages,\" \"what other domains does this advertiser operate,\" \"the whole operation,\" \"network behind a landing domain,\" or \"trace who launched these ads.\" Not for ranking advertiser pages in a market (use spytrend-advertiser-overview) and not for a website''s traffic review (use spytrend-website-review).",
+      "source_sha256": "fbe3a8ad57eeb5443ef98676213425270341d085932c335677a1979bd0623b26",
+      "source_path": "skills/spytrend-webmaster-overview/SKILL.md",
+      "package_sha256": "7a97d6cea5d63212b3333b19f7e0a3982cebd9a0aa69699ba45c57b3470fa81a",
+      "source_package": "Spytrend MCP Skills-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c66c70f21daf53c1bb02ed7d436094e11347a13af5112cdc834fc141958860e": {
+      "description_zh": "通过 SpyTrend MCP 分析已知网站店铺的月流量估计、历史广告足迹、投放主页及主要素材。适用于给定域名广告与流量研究，不猜测数据，店铺发现、行业及运营网络另用专项技能。",
+      "source": "Review one website or store domain with SpyTrend MCP data: monthly traffic estimate, advertising footprint over time, which advertiser pages run ads to it and its leading creatives, from a database of 1B+ tracked Meta ads. Use when the user gives a domain or URL and wants its traffic, whether and since when it runs ads, who sends paid traffic to it, or how its ad volume changed month by month. Also use when the user mentions \"store spy,\" \"does this site run ads,\" \"how much traffic does this store get,\" \"check this domain: traffic, ads, creatives,\" \"competitor website traffic,\" \"ads that lead to this domain,\" \"is this store ad-driven or organic,\" or pastes a store link asking for advertising research. Always use this instead of guessing when asked about a specific site''s ads or traffic. Not for discovering new stores (use spytrend-shop-discovery), whole niches (use spytrend-vertical-intel) or the operation behind the ads (use spytrend-webmaster-overview).",
+      "source_sha256": "5c66c70f21daf53c1bb02ed7d436094e11347a13af5112cdc834fc141958860e",
+      "source_path": "skills/spytrend-website-review/SKILL.md",
+      "package_sha256": "7a97d6cea5d63212b3333b19f7e0a3982cebd9a0aa69699ba45c57b3470fa81a",
+      "source_package": "Spytrend MCP Skills-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbc0fa64365d55f48cb174f9466bbaae4cd7076fe10f84f174551cd19df6a5c7": {
+      "description_zh": "在修改公开 API、数据库结构、持久格式、生成契约或外部消费行为时，要求明确且可逆的契约过渡。",
+      "source": "Apply when changing public APIs, database schemas, serialized or persisted formats, generated contracts, or behavior consumed by other systems. Requires an explicit, reversible contract transition.",
+      "source_sha256": "cbc0fa64365d55f48cb174f9466bbaae4cd7076fe10f84f174551cd19df6a5c7",
+      "source_path": "plugins/build-squad/skills/squad-breaking-change/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f93893a3eb8d40baf54439eb18219c736041372a591df88f0cf1bdb6e76750b": {
+      "description_zh": "依据已封闭规格交付，验证契约，在限定阶段委派 UX、开发、测试、审计和文档，并验证每个验收条件。",
+      "source": "Delivery pipeline for a closed specification. Validates the contract, delegates UX/development/testing/audit/documentation in bounded stages, and verifies each acceptance criterion.",
+      "source_sha256": "1f93893a3eb8d40baf54439eb18219c736041372a591df88f0cf1bdb6e76750b",
+      "source_path": "plugins/build-squad/skills/squad-build/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d25ca787c3ecf682a85df0564e964b3cc8d5677d4f820f9b6fa50542b30ac8fb": {
+      "description_zh": "通过访谈明确功能、产品或已有规格的范围，形成可验证实施契约供 squad-build 使用。",
+      "source": "Conversational specification mode for a feature, product idea, or existing spec. Interviews the user until the scope closes, then writes a verifiable implementation contract for squad-build.",
+      "source_sha256": "d25ca787c3ecf682a85df0564e964b3cc8d5677d4f820f9b6fa50542b30ac8fb",
+      "source_path": "plugins/build-squad/skills/squad-define/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f834b34e8e6542ddc0a532897af18b75ed6f2e8455146eca76aaba0c3032a5e9": {
+      "description_zh": "按变更风险选择充分且最小的已记录构建、测试、lint、类型、生成、配置及文档验证目标，默认顺序运行测试。",
+      "source": "Proportional final validation policy for builds, tests, lint, type checks, generation, configuration, and documentation. Selects the smallest sufficient documented targets and runs tests sequentially by default.",
+      "source_sha256": "f834b34e8e6542ddc0a532897af18b75ed6f2e8455146eca76aaba0c3032a5e9",
+      "source_path": "plugins/build-squad/skills/squad-final-validation/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d145d985cdd22c07a431645dd69cbf70b72fe073657f1c27540eced79c8a25f5": {
+      "description_zh": "先以失败测试记录缺陷再修改生产代码，验证最小修复并扫描同类位置的复现优先修复流程。",
+      "source": "Reproduce-first bug-fix pipeline. Captures a defect in a failing test before production changes, verifies the minimal fix, and scans for sibling occurrences.",
+      "source_sha256": "d145d985cdd22c07a431645dd69cbf70b72fe073657f1c27540eced79c8a25f5",
+      "source_path": "plugins/build-squad/skills/squad-fix/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "548e4e9304f8a0118dc44521a675f1bd745a888c2ddce7b616716f420986d305": {
+      "description_zh": "保持行为的重构流程，冻结既有测试作为不变量，委派实现与审计，拒绝隐含行为变更。",
+      "source": "Behavior-preserving restructuring pipeline. Freezes existing test results as the invariant, delegates implementation and audit, and rejects hidden behavior changes.",
+      "source_sha256": "548e4e9304f8a0118dc44521a675f1bd745a888c2ddce7b616716f420986d305",
+      "source_path": "plugins/build-squad/skills/squad-refactor/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f99fa6bfca6713ef90492df25805d54c67772888acffd39668f7bbad20f591ef": {
+      "description_zh": "只读团队评审差异、分支或 PR，合并安全、契约、覆盖、架构和 UX 发现，按严重程度给出结论，不修改文件。",
+      "source": "Read-only team review of a diff, branch, or PR. Merges security, contract, coverage, architecture, and UX findings into a severity-ranked verdict without modifying files.",
+      "source_sha256": "f99fa6bfca6713ef90492df25805d54c67772888acffd39668f7bbad20f591ef",
+      "source_path": "plugins/build-squad/skills/squad-review/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0b9fbc1203b751ff7a1d53154db0f00b7c026f8eb57c758b8563ea6359cb7b0": {
+      "description_zh": "处理生命周期、启停归档、管理与操作列表、共享选择器及依状态写入的语义架构，要求共享语义而非复制过滤逻辑。",
+      "source": "Apply to lifecycle states, active/inactive or archived resources, management versus operational lists, shared selectors, state-dependent writes, and reused operational filters. Requires semantic architecture rather than copied filtering logic.",
+      "source_sha256": "f0b9fbc1203b751ff7a1d53154db0f00b7c026f8eb57c758b8563ea6359cb7b0",
+      "source_path": "plugins/build-squad/skills/squad-semantic-architecture/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ab44b64ad1373924271b3a6bae5fa01d977a6b3975fc203dc5a0f0a75a24db4": {
+      "description_zh": "在 API、响应、数据库、持久格式、事件消息或其他消费接口改变时，盘点消费者、确定兼容扩展/扩展收缩/版本策略，安排迁移回填和废弃路径，并测试新旧共存行为。",
+      "source": "Apply when a task changes a public API, endpoint signature or response shape, database schema, serialized or persisted format, event/message contract, or any interface other code or systems consume. Enforces closing the transition safely — consumer inventory, compatibility decision (compatible extension / expand–contract / explicit versioning), migration and backfill plan, deprecation path, and a test strategy covering old and new behavior while both live.",
+      "source_sha256": "1ab44b64ad1373924271b3a6bae5fa01d977a6b3975fc203dc5a0f0a75a24db4",
+      "source_path": "skills/breaking-change/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f627b03fa1e0350613ef76fbae4c2f21a34b29b9f6db34b7a04d1c43b13026e0": {
+      "description_zh": "从已封闭规格开展交付，机械核验可验证验收和排除范围，按需要执行 UX、开发、并行测试审计、发现修复循环和文档，逐项验证。适用于实现规格文件。",
+      "source": "Delivery pipeline from a closed spec — validates the spec mechanically (verifiable acceptance criteria, explicit excluded scope), then runs UX (if user-facing) → developer → tester ∥ auditor → findings loop → documentator, verifying each acceptance criterion from the spec. Use when the user asks to build/implement a spec file, typically one produced by /squad:define.",
+      "source_sha256": "f627b03fa1e0350613ef76fbae4c2f21a34b29b9f6db34b7a04d1c43b13026e0",
+      "source_path": "skills/build/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e2d8d237ed87795350befb463989fdbdb151588ee6f2dab01126f87769081c3": {
+      "description_zh": "主会话逐轮访谈直至产品定义封闭，编写带可验证验收的规格供 squad:build，也支持恢复修订已有规格。适用于模糊需求和功能定义。",
+      "source": "Conversational spec mode — the main session interviews the user, round by round, until the product definition closes; then writes a spec file with verifiable acceptance criteria, ready for /squad:build. Use when the user wants to define, spec, or shape a feature or product, or when a request is too vague to build directly. Also resumes/revises an existing spec file.",
+      "source_sha256": "3e2d8d237ed87795350befb463989fdbdb151588ee6f2dab01126f87769081c3",
+      "source_path": "skills/define/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e93cae4e490a5d024887e63a8c063577d042219ef73f36a031e12e54d8bb758f": {
+      "description_zh": "在代码交付前选择覆盖真实风险的最小最终构建/测试/lint 集合，在末尾执行而非每次小改后，禁止并行测试，并报告目标、结果及选择理由。",
+      "source": "Use before delivering ANY code change to choose and run final validation — the smallest set of build/test/lint targets that covers the real risk of the change, run at the end (not after every tiny edit), never running test commands in parallel, and reporting targets executed, results, and selection rationale.",
+      "source_sha256": "e93cae4e490a5d024887e63a8c063577d042219ef73f36a031e12e54d8bb758f",
+      "source_path": "skills/final-validation/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5dfd6f6fc2c61ad1c6312c882075a1149607a3a8f1aa991001464745516639c2": {
+      "description_zh": "接收缺陷报告或截图并澄清，测试人员先写失败复现才允许开发修改生产代码，修复后验证并扫描同类。确实不能预先复现时，修复后立即补回归测试。",
+      "source": "Bug-fix pipeline, reproduce-first — the tester captures the bug as a failing test BEFORE the developer may touch production code, then verifies the fix and scans for sibling occurrences of the same defect. Accepts an informal report or a screenshot and clarifies interactively in the main session first; when the bug genuinely cannot be reproduced up front, falls back to writing the regression test right after the fix. Use when the user reports a bug, regression, or broken behavior and wants the team to fix it.",
+      "source_sha256": "5dfd6f6fc2c61ad1c6312c882075a1149607a3a8f1aa991001464745516639c2",
+      "source_path": "skills/fix/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8534a92fdf69b6e5eb758558a4daa9fe048626da64d2470373c413fb7fe12d86": {
+      "description_zh": "在不改变行为的前提下重构、提取、集中或简化代码，既有测试冻结且前后完全通过，开发者不得修改这些测试，由审计者判断结构是否改善。",
+      "source": "Behavior-preserving restructuring — the existing tests become the frozen invariant that must pass identically before and after, the developer restructures without touching them, and the auditor judges whether the new structure is actually better. Use when the user wants to refactor, restructure, extract, centralize, simplify, or pay down technical debt WITHOUT changing behavior.",
+      "source_sha256": "8534a92fdf69b6e5eb758558a4daa9fe048626da64d2470373c413fb7fe12d86",
+      "source_path": "skills/refactor/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c091cb48c262427c5c138187bef53843279590a49b32c06bf1a7e6058623fe0": {
+      "description_zh": "并行安排审计、测试及按需 UX 对差异、分支和 PR 只读评审，合并去重并按严重程度输出发现及结论，不修改文件。",
+      "source": "Read-only team review of a diff, branch, or PR — the auditor (security, structure), tester (contract protection, coverage gaps), and ux (only if user-facing surfaces change) review in parallel; findings are merged, deduplicated, severity-ranked, and delivered with a verdict. Nothing is modified. Use when the user asks the team to review changes without implementing anything.",
+      "source_sha256": "9c091cb48c262427c5c138187bef53843279590a49b32c06bf1a7e6058623fe0",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0abe5c3c32fa77d1f0b39a933211c0dd5afe64e0501a8dd3fb9dcda0b28de46": {
+      "description_zh": "为启停归档、可见性和生命周期、管理操作列表及选择器区分可查看与可使用规则，统一基础函数、语义包装、后端写入校验及历史处理，禁止重复过滤逻辑。",
+      "source": "Apply when a task involves active/inactive states, archiving, visibility or lifecycle; lists reused between management and operational contexts; shared selectors (comboboxes, pickers, multi-selects); different rules for \"can be viewed\" vs \"can be used\"; write-path validations that depend on state; or operational filters reused across screens. Enforces closing the semantic architecture — shared base function, semantic wrappers, backend write guard, history handling — and forbids duplicated filtering logic.",
+      "source_sha256": "a0abe5c3c32fa77d1f0b39a933211c0dd5afe64e0501a8dd3fb9dcda0b28de46",
+      "source_path": "skills/semantic-architecture/SKILL.md",
+      "package_sha256": "c8c6cdbd14a8f5ef10469c46b2b27e906dc5854309d1387e864e32163d2a1543",
+      "source_package": "squad-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86f23ee7ef8e0e42ed237847fc38493dbecf79d4b0696912b80caf8a5c04cf79": {
+      "description_zh": "生成图示并插入已有 Stable Baseline 文档，适用于添加图、图表或调用 sb-create-diagram。",
+      "source": "Generate and insert a diagram into an existing Stable Baseline document. Use when user wants to create a diagram, add a diagram, insert a chart, or run sb-create-diagram.",
+      "source_sha256": "86f23ee7ef8e0e42ed237847fc38493dbecf79d4b0696912b80caf8a5c04cf79",
+      "source_path": "skills/sb-create-diagram/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af3defd2342a5fa2ede046020a4b67243bf8a978805ff67efbafbfd4bd12a8ad": {
+      "description_zh": "创建新的 Stable Baseline CDMD 文档，可后续插入图示或图片。",
+      "source": "Create a new Stable Baseline document (CDMD) with optional follow-up diagram/image insertion. Use when user wants to create a document, write docs, or run sb-create-doc.",
+      "source_sha256": "af3defd2342a5fa2ede046020a4b67243bf8a978805ff67efbafbfd4bd12a8ad",
+      "source_path": "skills/sb-create-doc/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b168d9a31388fee981d47a27491b49b0e713082d4bd837da59d93d966a9ae35": {
+      "description_zh": "创建 Stable Baseline 白板，可手动使用模板、架构图标、便签、嵌入图和自由绘制，或使用付费 AI 多智能体设计，适用于架构流程草图及白板需求。",
+      "source": "Create a Stable Baseline whiteboard, either by hand (stencils, architecture icons, sticky notes, embedded diagrams, freedraw) or with the premium AI multi-agent designer. Use when user wants to create a whiteboard, design a board, sketch an architecture or flow visually, or run sb-create-whiteboard.",
+      "source_sha256": "3b168d9a31388fee981d47a27491b49b0e713082d4bd837da59d93d966a9ae35",
+      "source_path": "skills/sb-create-whiteboard/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f40f93f9498ba69c6fb2c7bc6fa2e46a694f67a5d13a9a8cf867a3b6d2b0b3a4": {
+      "description_zh": "通过逐行补丁或批量查找替换编辑已有 Stable Baseline 文档，采用正确的乐观锁。",
+      "source": "Edit an existing Stable Baseline document using line-based patches or bulk find-and-replace, with proper optimistic locking. Use when user wants to edit a document, update docs, or run sb-edit-doc.",
+      "source_sha256": "f40f93f9498ba69c6fb2c7bc6fa2e46a694f67a5d13a9a8cf867a3b6d2b0b3a4",
+      "source_path": "skills/sb-edit-doc/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f7352781a80581f7f9fcc796b36d8179c236fb930e8f6b22fd55f3a49e944ce": {
+      "description_zh": "修改已有 Stable Baseline 白板，添加移动改样式或移除元素、嵌入图示图片并重新渲染。",
+      "source": "Update an existing Stable Baseline whiteboard: add, move, restyle, or remove elements, embed diagrams or images, and re-render. Use when user wants to edit a whiteboard, update a board, change something on a board, or run sb-edit-whiteboard.",
+      "source_sha256": "3f7352781a80581f7f9fcc796b36d8179c236fb930e8f6b22fd55f3a49e944ce",
+      "source_path": "skills/sb-edit-whiteboard/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4eef0be6fc81513d4e258c492d87ab1310ff020209e68adc75d67e496ab10910": {
+      "description_zh": "上传、引用和管理 CSV、JSON、TSV 数据文件，用于 Stable Baseline 文档中的 Vega/Vega-Lite 图表。",
+      "source": "Upload, reference, and manage data files (CSV, JSON, TSV) for Vega/Vega-Lite diagrams in a Stable Baseline document. Use when user wants to upload data files, create charts with data, or run sb-manage-data.",
+      "source_sha256": "4eef0be6fc81513d4e258c492d87ab1310ff020209e68adc75d67e496ab10910",
+      "source_path": "skills/sb-manage-data/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7161df4b1036ae8c5ecce48f48a0ffe7d5f2980b5038f765b4bf7e3b634741eb": {
+      "description_zh": "通过上传会话流程上传、插入、更新或删除 Stable Baseline 文档图片，适用于截图等媒体管理。",
+      "source": "Upload, insert, update, or delete images in a Stable Baseline document using the upload-session flow. Use when user wants to manage images, add screenshots, or run sb-manage-images.",
+      "source_sha256": "7161df4b1036ae8c5ecce48f48a0ffe7d5f2980b5038f765b4bf7e3b634741eb",
+      "source_path": "skills/sb-manage-images/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc7eab1e3e82f40ce42faa0cb662098988709aef7bdcf6cb3ee1d18bd0c8a89a": {
+      "description_zh": "搜索 Stable Baseline 公司共享知识图谱，查找文档、实体及相关内容并回答问题。",
+      "source": "Search the Stable Baseline knowledge graph (the shared company brain) to find documents, answer questions, surface related content, and look up entities across the workspace. Use when user wants to search docs, ask the company brain, find related documents, or run sb-search.",
+      "source_sha256": "cc7eab1e3e82f40ce42faa0cb662098988709aef7bdcf6cb3ee1d18bd0c8a89a",
+      "source_path": "skills/sb-search/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "972114715f9197bf3b0d597c91d76b5721da6542803f1a7baa2874c28b59e234": {
+      "description_zh": "将仓库接入 Stable Baseline，发现编号、分析代码库、创建定制文档结构，并向 AGENTS.md 加入同步规则。",
+      "source": "Onboard a repository into Stable Baseline: discover IDs, analyse the repo, create a bespoke documentation structure, and augment AGENTS.md with sync rules. Use when user wants to set up Stable Baseline, onboard a project, generate initial documentation, or run sb-setup.",
+      "source_sha256": "972114715f9197bf3b0d597c91d76b5721da6542803f1a7baa2874c28b59e234",
+      "source_path": "skills/sb-setup/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb9c19a4284086b1aabf76cfd7f372a4e24a9fb85e7af9d03101f24ab808eac6": {
+      "description_zh": "生成更新 AGENTS.md 中 Stable Baseline 同步段，支持跨 IDE 自动同步，保留原有全部内容。",
+      "source": "Generate or update the Stable Baseline section in AGENTS.md for cross-IDE auto-sync. Preserves all existing AGENTS.md content. Use when user wants to sync AGENTS.md, regenerate sync rules, or run sb-sync.",
+      "source_sha256": "eb9c19a4284086b1aabf76cfd7f372a4e24a9fb85e7af9d03101f24ab808eac6",
+      "source_path": "skills/sb-sync/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7126a5763437b0e06827f7058bcd1733ac1602eacc3ffdd5674f675b955d1dc4": {
+      "description_zh": "把当前对话中的架构变更、关键决策和实施知识更新到 Stable Baseline 文档，适用于会话中捕获变化和同步文档。",
+      "source": "Update Stable Baseline documentation with changes, decisions, and knowledge from the current conversation. Use mid-conversation when architectural changes, key decisions, or important implementation details need to be captured. Use when user says sb-update, update docs, sync docs, or capture changes.",
+      "source_sha256": "7126a5763437b0e06827f7058bcd1733ac1602eacc3ffdd5674f675b955d1dc4",
+      "source_path": "skills/sb-update/SKILL.md",
+      "package_sha256": "c41cb98736f6ba087c7246e6a9391c4c50066c43923a825de2a9a01dcf3f2af7",
+      "source_package": "Stable Baseline-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7680897c4639325d66b42db01bf6981c21372139734d8565224b1734bfa763b4": {
+      "description_zh": "通过 hawk op CLI 只读查询 StackHawk 平台安全状况、发现、待分流、应用和扫描历史。运行扫描转用 hawkscan，本项不修复代码或漏洞。",
+      "source": "Use this skill when a user or agent needs to query the StackHawk platform for security reporting, findings analysis, or app management. Triggers include: \"stackhawk api\", \"security posture\", \"findings report\", \"show me findings\", \"untriaged findings\", \"which apps\", \"scan history\", \"security dashboard\", \"triage\", \"what needs attention\". Uses the hawk CLI (`hawk op` subcommand) for all platform queries. Do NOT use for running scans (use the hawkscan skill for \"scan my app\", \"hawkscan\", \"stackhawk.yml\", \"DAST\") or for fixing/remediating code or vulnerabilities — this skill only reads and reports platform data.",
+      "source_sha256": "7680897c4639325d66b42db01bf6981c21372139734d8565224b1734bfa763b4",
+      "source_path": "skills/api/SKILL.md",
+      "package_sha256": "c5af140ccb80860d10e39ed1b4ce7ac43a553ac0807c02df3d4ac9b355d9df6c",
+      "source_package": "StackHawk API-2.6.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ff1d3cba3e00dcdcf4114afb2c7ae3ff191401a460d9267a2580ecc3be62689": {
+      "description_zh": "执行 HawkScan DAST 配置、扫描、修复全部报告漏洞及复扫循环，先从代码发现重点并按代码预期验证扫描质量。原说明要求代码变更后自动运行；资料问答、只改配置、文档、安装和明确跳过不触发，已有平台发现查询使用 api。",
+      "source": "Runs the HawkScan DAST security loop — configure, scan, fix all reported vulnerabilities (not just your changes), rescan to verify. Performs code-first discovery to configure high-value scans, and quality-gates every scan against code-derived expectations before findings are parsed. Use when the user asks to run or perform a security/DAST scan, to test an app or API for vulnerabilities, or to verify a vulnerability is fixed; and AUTONOMOUSLY right after you complete a code change (feature, bugfix, refactor) — \"done\" means \"done and secure,\" so run the loop without asking permission. Do NOT trigger for: informational questions about what HawkScan is, detects, or how it works (e.g. \"what vulnerabilities does HawkScan find?\"); editing stackhawk.yml or other config without running a scan; querying existing findings, security posture, untriaged counts, or scan history (use the stackhawk-api skill); documentation-only changes; installing or setting up the CLI; or when the user explicitly says to skip scanning.",
+      "source_sha256": "3ff1d3cba3e00dcdcf4114afb2c7ae3ff191401a460d9267a2580ecc3be62689",
+      "source_path": "skills/hawkscan/SKILL.md",
+      "package_sha256": "1f8b6f93443d7a3cbc9e2f4508da0894e622939732b67951c69559bae6bc923e",
+      "source_package": "stackhawk-hawkscan-2.6.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "469eec675df99fb1bada4e8491907d233d1f894f4af44338b80f2398afc185ea": {
+      "description_zh": "取消已获批准的财政单据，若情况不适合取消则提交更正函。",
+      "source": "Cancel an authorized fiscal document, or file a correction letter when cancelling is not what the situation needs.",
+      "source_sha256": "469eec675df99fb1bada4e8491907d233d1f894f4af44338b80f2398afc185ea",
+      "source_path": "skills/cancel-invoice/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7fbe896e012dd7352c2a0efbe58b2034f4bdf8b33b2e462f956c94e3f8910508": {
+      "description_zh": "按访问 key 或公司历史查找财政单据并报告当前状态。",
+      "source": "Find a fiscal document and report its current state, by access key or by searching the company's history.",
+      "source_sha256": "7fbe896e012dd7352c2a0efbe58b2034f4bdf8b33b2e462f956c94e3f8910508",
+      "source_path": "skills/consult-invoice/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1cb441d33734263d6af04a9f0529c198fa7ad0dea66eacf2f8b357ae1140681e": {
+      "description_zh": "对已批准 NF-e 提交 CC-e 更正函，并判断何时不应使用更正。",
+      "source": "File a correction letter (CC-e) against an authorized NF-e — and know when a correction is not what the situation needs.",
+      "source_sha256": "1cb441d33734263d6af04a9f0529c198fa7ad0dea66eacf2f8b357ae1140681e",
+      "source_path": "skills/correct-invoice/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3bc071f1f3fb6492bd18f2a6ee2319cc59251794a2694f311c38497425cd535": {
+      "description_zh": "依据税务机关实际回复解释财政单据拒绝原因及需要调整的内容。",
+      "source": "Explain why a fiscal document was rejected and what has to change, using what the tax authority actually answered.",
+      "source_sha256": "f3bc071f1f3fb6492bd18f2a6ee2319cc59251794a2694f311c38497425cd535",
+      "source_path": "skills/diagnose-invoice/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "188e9476c671948bb1025f9cde84a607c4ba46e8c04d48c9943aa565cd5fe0ad": {
+      "description_zh": "在开具单据前查证 NCM、CFOP、CEST 等公开财政代码，不猜测编码。",
+      "source": "Resolve an NCM, CFOP, CEST or other published fiscal code before it goes on a document, instead of guessing one.",
+      "source_sha256": "188e9476c671948bb1025f9cde84a607c4ba46e8c04d48c9943aa565cd5fe0ad",
+      "source_path": "skills/fiscal-lookup/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3dacc76130d6f4750a1f9e3082eea1377fd3c5d894a48255cf5121d68ed918f6": {
+      "description_zh": "向 SEFAZ 声明已预留但从未使用的 NF-e 编号区间，解释编号空缺。",
+      "source": "Declare an NF-e numbering range that was reserved and never used, so the gap is explained to the SEFAZ.",
+      "source_sha256": "3dacc76130d6f4750a1f9e3082eea1377fd3c5d894a48255cf5121d68ed918f6",
+      "source_path": "skills/invalidate-numbering/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86709684e4fb572df9cec44025b6b8f381cb0ae827856c6a1ea19dbe28b323d4": {
+      "description_zh": "开具巴西货物 NF-e 或服务 NFS-e，在提交税务机关前校验数据。",
+      "source": "Issue a Brazilian fiscal document — an NF-e for goods or an NFS-e for services — checking the data before it reaches the tax authority.",
+      "source_sha256": "86709684e4fb572df9cec44025b6b8f381cb0ae827856c6a1ea19dbe28b323d4",
+      "source_path": "skills/issue-invoice/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d9a8483f2ae35cc4a94a1fe1d7d607795e33abdfdfdc3b9fe2ee219e0da1dc9": {
+      "description_zh": "读取其他公司向本公司开具的 NF-e，并申报本公司对这些单据的立场。",
+      "source": "Read the NF-e documents other companies issued against this one, and file the company's position on them.",
+      "source_sha256": "5d9a8483f2ae35cc4a94a1fe1d7d607795e33abdfdfdc3b9fe2ee219e0da1dc9",
+      "source_path": "skills/received-invoices/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8e7dfbf43954289ca7c8d350a765c05a34f25d3dd2e02f48fe1752154ed6b3e": {
+      "description_zh": "通过纳税人登记库精确匹配税号，开票前确认对应主体。",
+      "source": "Confirm who a tax id belongs to before invoicing them, by exact match against the taxpayer registry.",
+      "source_sha256": "c8e7dfbf43954289ca7c8d350a765c05a34f25d3dd2e02f48fe1752154ed6b3e",
+      "source_path": "skills/taxpayer-lookup/SKILL.md",
+      "package_sha256": "074a6e59c3cba47da117da45c88b7a88531656176d0e03fc312d0f3e376f0b3c",
+      "source_package": "Stackin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1bcf505306f1e0835c81566d5b9be250405225893260a1a536901d59bd401be": {
+      "description_zh": "配置 StackQL 提供商认证，指导 Google、AWS、Azure、GitHub 等凭据设置，生成 --auth JSON 并可选持久保存。",
+      "source": "Configure authentication for StackQL providers. Walks through credential setup for Google, AWS, Azure, GitHub, and other providers. Generates the --auth JSON string and optionally persists it.",
+      "source_sha256": "f1bcf505306f1e0835c81566d5b9be250405225893260a1a536901d59bd401be",
+      "source_path": "skills/auth-setup/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "224ee4b5e1a364d832d100bae6bd1d771d0fdc46dd9554799ea025a98fce63c9": {
+      "description_zh": "以自然语言或提供商路径交互探索 StackQL 层级，发现服务、资源、方法及字段。",
+      "source": "Navigate the StackQL provider hierarchy interactively. Discover services, resources, methods, and fields for any provider. Use natural language or direct provider paths.",
+      "source_sha256": "224ee4b5e1a364d832d100bae6bd1d771d0fdc46dd9554799ea025a98fce63c9",
+      "source_path": "skills/explore/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8b536a61b20fc4d7c612dbebbe3d12585f647557c189e4b48124599cca73d58": {
+      "description_zh": "识别平台并通过适合的包管理器或安装器安装更新 StackQL CLI，--update 用于检查应用更新。",
+      "source": "Install or update the StackQL CLI. Detects the platform and uses the appropriate package manager or installer. Pass --update to check for and apply updates.",
+      "source_sha256": "e8b536a61b20fc4d7c612dbebbe3d12585f647557c189e4b48124599cca73d58",
+      "source_path": "skills/install-stackql/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d5a64e8e8ad5ed978b30a6124325dffb029590909e1e47b6568249db94e54a3": {
+      "description_zh": "向已有 Jupyter notebook 插入 StackQL 查询，生成 Markdown 标题和 %%stackql 单元，可选可视化，使用 pystackql magic 扩展。",
+      "source": "Generate and insert StackQL query cells into an existing Jupyter notebook. Creates a markdown heading cell and a %%stackql query cell, with optional visualization. Works with the pystackql magic extension.",
+      "source_sha256": "3d5a64e8e8ad5ed978b30a6124325dffb029590909e1e47b6568249db94e54a3",
+      "source_path": "skills/notebook-cell/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2dd619dc7d6a0240c19dc7f2bcb42d50173fa20647de67f6b5806f6eddbe9a95": {
+      "description_zh": "依据描述或提供商资源目标创建完整 StackQL Jupyter notebook，包含设置、提供商拉取、认证、查询和可选可视化。",
+      "source": "Create a StackQL Jupyter notebook using the pystackql magic commands. Generates a complete notebook with setup, provider pulls, auth, queries, and optional visualizations from a description or provider resource target.",
+      "source_sha256": "2dd619dc7d6a0240c19dc7f2bcb42d50173fa20647de67f6b5806f6eddbe9a95",
+      "source_path": "skills/notebook/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01259e5ca8c6fb9b15dd7a41a7bee08b6fd86c167283c5e9cbdc1a569bb3d234": {
+      "description_zh": "从注册表拉取一个或多个 StackQL 提供商，以 name@version 固定版本，--list 查看可用提供商。",
+      "source": "Pull one or more StackQL providers from the registry. Supports version pinning with name@version syntax. Lists available providers when called with --list.",
+      "source_sha256": "01259e5ca8c6fb9b15dd7a41a7bee08b6fd86c167283c5e9cbdc1a569bb3d234",
+      "source_path": "skills/pull-provider/SKILL.md",
+      "package_sha256": "74fe24d439a6d596df17bd0552211c46824f2653b880755198d967f832fbf8bc",
+      "source_package": "stackql-skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
