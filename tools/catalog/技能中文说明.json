@@ -17809,6 +17809,1086 @@
       "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
       "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d85395ad1f962d48d6b70250b7dc8c50bfa2134a460e838f6d2b6eb11ec21b74": {
+      "description_zh": "介绍Catalyst项目目录、开发生产环境、CLI及Project/ZAID/Table/Segment/Org等ID，支持新建项目、.catalystrc和ID查找问题。",
+      "source": "Core Catalyst project setup — directory structure, environments, CLI commands, and all Catalyst IDs (Project ID, ZAID, Table ID, Segment ID, Org ID). Trigger on 'start a Catalyst project', 'what is .catalystrc', 'where do I find my Table ID', 'difference between Development and Production', or any Catalyst ID or CLI question.",
+      "source_sha256": "d85395ad1f962d48d6b70250b7dc8c50bfa2134a460e838f6d2b6eb11ec21b74",
+      "source_path": "skills/catalyst-basics/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "651c66d672328665c8030eea7be8f7ae2c14c526a580766d5fac5f7bdf40e8cf": {
+      "description_zh": "提供Catalyst by Zoho全栈无服务器平台的编码与服务指导，涵盖CLI、SDK、架构、价格及通过Zoho MCP管理基础设施。",
+      "source": "Expert coding assistant for Catalyst by Zoho — Zoho's full-stack serverless cloud platform. Use for any question about Catalyst services, CLI, SDKs, architecture, pricing, or Zoho MCP tool-based infrastructure management.",
+      "source_sha256": "651c66d672328665c8030eea7be8f7ae2c14c526a580766d5fac5f7bdf40e8cf",
+      "source_path": "skills/catalyst-by-zoho/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23f137c4d26cfe7f5463d6584dd53e34f57b2084931fb554f189fa69a09ecd26": {
+      "description_zh": "使用Catalyst Cache内存键值存储及TTL保存临时会话和暂存数据，操作缓存分段与键。",
+      "source": "Catalyst Cache — in-memory key-value store with TTL for ephemeral session and temporary data. Trigger on 'Cache', 'cache segment', 'cache key', 'TTL', 'segment.put', 'segment.get', or 'temporary data Catalyst'.",
+      "source_sha256": "23f137c4d26cfe7f5463d6584dd53e34f57b2084931fb554f189fa69a09ecd26",
+      "source_path": "skills/catalyst-cache/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac87731fceec3b42ec090d56a248e395b1a1d91a3fa1d8fe3e619857afd9740e": {
+      "description_zh": "操作Catalyst关系型Data Store，涵盖ZCQL、CRUD、表权限与分页，需先核对ZohoMCP连接；读取写入代码需注意结果封装、字符串布尔值和App User权限造成的静默问题。",
+      "source": "Catalyst Data Store — relational cloud database with ZCQL, CRUD operations, table permissions, and result pagination. Requires MCP connection — check for the ZohoMCP_* meta-tools before any operation. Trigger on 'Data Store', 'ZCQL', 'create table', 'executeZCQLQuery', 'table permissions', 'ROWID', 'boolean column', 'boolean always true', 'truthy string', 'boolean stored as string', or 'DataStore data types'. You MUST load this skill whenever writing code that reads or writes Data Store data — ZCQL result wrapping, boolean-as-string behavior, and App User permissions are non-obvious and cause silent bugs if skipped.",
+      "source_sha256": "ac87731fceec3b42ec090d56a248e395b1a1d91a3fa1d8fe3e619857afd9740e",
+      "source_path": "skills/catalyst-datastore/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85c9995877c72ba46956334c1350a4b3fb1cefa1684311d586e57ca4a9615a8e": {
+      "description_zh": "开发Catalyst七类无服务器函数，配置处理签名、Security Rules、API Gateway、上传、busboy/Express、环境变量、URL与测试，排查401/404/CORS或超时；先检查MCP连接，持久服务器Docker用AppSail。",
+      "source": "Catalyst serverless functions — all 7 types (Basic I/O, Advanced I/O, Event, Cron, Job, Integration, Browser Logic), handler signatures, catalyst-config.json, Security Rules, API Gateway routing, file uploads, busboy, Express middleware, environment variables, function URL, and function testing. Requires MCP connection — check for the ZohoMCP_* meta-tools before any operation. Trigger on 'write a function', 'catalyst function', 'API Gateway', 'Security Rules', 'function not found', 'function returns 401', 'busboy', 'middleware', 'function URL', 'environment variable in function', 'duplicate CORS headers', 'CORS error in browser', 'Access-Control-Allow-Origin multiple values', 'function URL 404', 'execute suffix', 'function timeout', 'function hangs', or any function type question. Do NOT use for persistent servers, long-running processes, or Docker deployments — use catalyst-appsail instead.",
+      "source_sha256": "85c9995877c72ba46956334c1350a4b3fb1cefa1684311d586e57ca4a9615a8e",
+      "source_path": "skills/catalyst-functions/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9df8ce138cc0e07de9625ba0c51fb6880ff1989836644a9dbdf3c92d7fc2f711": {
+      "description_zh": "使用Catalyst NoSQL类型化键值表和NoSQLItem构造器，操作分区键、增删改查及灵活文档架构；需SQL关联或固定关系模型时用Data Store。",
+      "source": "Catalyst NoSQL — key-value table store with typed items built via NoSQLItem builder. Partition key required. Trigger on 'NoSQL', 'nosql.table', 'insertItems', 'fetchItem', 'updateItems', 'deleteItems', 'queryTable', 'NoSQLItem', 'document storage', 'flexible schema', or 'Catalyst document database'. Do NOT use when you need SQL joins, ZCQL queries, or a fixed relational schema — use catalyst-datastore instead.",
+      "source_sha256": "9df8ce138cc0e07de9625ba0c51fb6880ff1989836644a9dbdf3c92d7fc2f711",
+      "source_path": "skills/catalyst-nosql/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f96564d51fbb4aa80951f7379094ee1783b8873b665ee16bc0c6d4072819e14": {
+      "description_zh": "解释Catalyst免费额度、按量费率、GB秒计算，并估算函数、存储等服务费用。",
+      "source": "Catalyst pricing — free tier limits, pay-as-you-go rates, GB-seconds calculation, and cost estimation for functions, storage, and other services. Trigger on 'pricing', 'cost', 'free tier', 'how much does Catalyst cost', 'GB-seconds', 'billing', or 'will this be free'.",
+      "source_sha256": "1f96564d51fbb4aa80951f7379094ee1783b8873b665ee16bc0c6d4072819e14",
+      "source_path": "skills/catalyst-pricing/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc7aba11f7c8a7dfa53575cfc267f281c3845bc44ce56dc393421de7097ac942": {
+      "description_zh": "提供Catalyst的Node.js、浏览器、Python、Java、Android、iOS及Flutter SDK初始化、服务访问和方法参考。",
+      "source": "Catalyst SDKs — initialization patterns, service access, and method reference for Node.js, Web (browser), Python, Java, Android, iOS, and Flutter. Trigger on 'SDK', 'zcatalyst-sdk-node', 'Node.js SDK', 'Web SDK', 'Python SDK', 'Java SDK', 'Android SDK', 'iOS SDK', 'Flutter SDK', or 'initialize SDK'.",
+      "source_sha256": "dc7aba11f7c8a7dfa53575cfc267f281c3845bc44ce56dc393421de7097ac942",
+      "source_path": "skills/catalyst-sdk/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c58d917b545d61f5fe5222f91d2b68528127fa78f74e4215d01268baf645c739": {
+      "description_zh": "配置Catalyst Signals事件驱动通信，涵盖Zoho/Catalyst/自定义发布者、Webhook、函数、Circuit、过滤转换、即时批次分发与重试；原说明指出仅可用控制台，无SDK或程序API。",
+      "source": "Catalyst Signals — event-driven architecture platform for near-instantaneous communication between decoupled applications. Supports Zoho publishers, Catalyst publishers, custom publishers, webhooks, functions, circuits, event filtering, transformation, instant/batch dispatch, and retry policies. Trigger on 'Signals', 'event bus', 'publisher', 'event-driven', 'webhook target', 'dispatch policy', 'event transformation', 'rule filter', or 'event ordering'. Console-only service — no SDK or programmatic API.",
+      "source_sha256": "c58d917b545d61f5fe5222f91d2b68528127fa78f74e4215d01268baf645c739",
+      "source_path": "skills/catalyst-signals/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82387444606dac223086e92c25fbeae219e864e6f2b27b85230226af449a1fd6": {
+      "description_zh": "使用Catalyst Slate进行Git驱动的多框架前端托管与预览部署，也处理本地前端启动、开发服务器及跨域调用；后端逻辑用AppSail或Functions。",
+      "source": "Catalyst Slate — Git-based frontend hosting for React, Next.js, Vue, Angular, Svelte, Astro, SolidJS, Preact and other frameworks with preview deploys. Trigger on 'Slate', 'frontend hosting', 'slate-config.toml', 'deploy React app', 'cross-domain Slate to function', or ANY request to run/serve/start the frontend app locally (\"start the server locally\", \"run the app\", \"start the dev server\"). Do NOT use for backend APIs or server-side logic — use catalyst-appsail or catalyst-functions instead.",
+      "source_sha256": "82387444606dac223086e92c25fbeae219e864e6f2b27b85230226af449a1fd6",
+      "source_path": "skills/catalyst-slate/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07cc2de3fd59e054f315e82cd33fb062abd9a4ceed39e944cf7de8fe86007ac0": {
+      "description_zh": "使用Catalyst SmartBrowz进行远程无头浏览器自动化、Browser Logic函数、HTML/URL/模板生成PDF截图、动态模板、早期访问Browser Grid并行浏览器及Dataverse抓取，按功能使用控制台SDK或CLI。",
+      "source": "Catalyst SmartBrowz — browser automation and document generation service. Includes Headless (connect to a remote Chrome browser with Puppeteer/Playwright/Selenium), Browser Logic (serverless functions for browser tasks in Java/Node.js), PDF & Screenshot (generate visual documents from HTML/URL/Template), Templates (design dynamic content templates), Browser Grid (parallel headless browsers with auto-scaling, Early Access), and Dataverse (data scraping APIs). Trigger on 'SmartBrowz', 'headless browser', 'Headless Browser', 'Puppeteer', 'Selenium', 'Playwright', 'Browser Logic', 'PDF generation', 'screenshot', 'PDF/Screenshot generation', 'PDF & Screenshot', 'browser automation', 'Browser Grid', or 'web scraping'. Console + SDK (Java/Node.js/Python for PDF/Screenshot + Browser Grid) + CLI (for Browser Logic functions).",
+      "source_sha256": "07cc2de3fd59e054f315e82cd33fb062abd9a4ceed39e944cf7de8fe86007ac0",
+      "source_path": "skills/catalyst-smartbrowz/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9053f61e15b753f350bbd1c01955cc34cf5e8afb053d302b3215a38829c211d0": {
+      "description_zh": "使用Catalyst Stratus对象存储上传下载、签名URL及分段上传，使用其专用SDK而非S3兼容接口，也可通过迁移工具从AWS S3或GCS迁入。",
+      "source": "Catalyst Stratus — object storage service with upload/download, signed URLs, and multipart upload support. Stratus uses its own SDK-based APIs (not S3-API-compatible). Migrate from AWS S3 or GCS using the Stratus Migration Tool. Trigger on 'Stratus', 'object storage', 'upload file', 'signed URL', 'putObject', 'getObject', or 'bucket'.",
+      "source_sha256": "9053f61e15b753f350bbd1c01955cc34cf5e8afb053d302b3215a38829c211d0",
+      "source_path": "skills/catalyst-stratus/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbd64f7564ef79dbba43f7a691a887e9e8330e1d89d4a9052b465ce73964be6a": {
+      "description_zh": "使用Catalyst Zia/QuickML进行OCR、人脸文本分析、目标检测、条码、内容审核及AutoML预测；原说明注明Identity Scanner仅印度，部分数据中心不支持AutoML/QuickML。",
+      "source": "Catalyst Zia Services and QuickML — OCR, Face Analytics, Text Analytics, Object Detection, Barcode Scanner, Content Moderation, and AutoML predictions. Trigger on 'Zia', 'QuickML', 'OCR', 'face detection', 'text analytics', 'AutoML', 'ML model', or 'train a model on Catalyst'. DC restrictions: Identity Scanner is IN DC only; AutoML/QuickML is not available in EU, AU, IN, JP, SA, CA, UAE data centers.",
+      "source_sha256": "cbd64f7564ef79dbba43f7a691a887e9e8330e1d89d4a9052b465ce73964be6a",
+      "source_path": "skills/catalyst-zia/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b20403e4a745e5c0ffd38b087b228481de799e842735fdc1f3af5e9a7ae5e96": {
+      "description_zh": "通过CatalystbyZoho MCP工具以自然语言管理表、存储桶和缓存，配置全局MCP及连接、切换数据中心，减少控制台操作。",
+      "source": "Catalyst Zoho MCP — manage Catalyst infrastructure (tables, buckets, cache) via CatalystbyZoho_* MCP tools using natural language. Trigger on 'Zoho MCP', 'MCP tools', 'catalyst MCP', 'CatalystbyZoho', 'create table with AI', 'MCP setup', 'MCP config', 'global MCP server', 'infrastructure as conversation', 'MCP first', 'avoid Catalyst console', or 'use MCP instead of console', 'switch DC', 'change data center'.",
+      "source_sha256": "4b20403e4a745e5c0ffd38b087b228481de799e842735fdc1f3af5e9a7ae5e96",
+      "source_path": "skills/catalyst-zoho-mcp/SKILL.md",
+      "package_sha256": "28cc395c0dd90610b8aadb27bbfd0489e3d8c33365ff9e6f9d6e0ea28e822d27",
+      "source_package": "Catalyst by Zoho-0.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c5c954bcb54c4d9147463bb6641132d5ec26675d2594188b8b92f9f255ed4a4": {
+      "description_zh": "运行或恢复/ccaf:mock-exam，每次依据自编参考题库生成并独立核验60道单选题，每屏四题、支持续考，按100至1000分计分、720分及格。",
+      "source": "Engine for the /ccaf:mock-exam mock exam. Assembles a 60-item CCAF mock of single-answer multiple-choice items (all generated fresh per attempt, anchored to a self-authored reference bank and independently verified), administers it 4 items per screen with resumable progress, and scores it on the real 100–1000 band with a 720 pass line. Use when running or resuming /ccaf:mock-exam.",
+      "source_sha256": "0c5c954bcb54c4d9147463bb6641132d5ec26675d2594188b8b92f9f255ed4a4",
+      "source_path": "skills/ccaf-exam/SKILL.md",
+      "package_sha256": "b9f1e458d74a5488bef179b812ad95bed2241132f4b4ae2fc612753fa05564ce",
+      "source_package": "ccaf-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "699b4d269009acc8524856f7efa72e083fceb5d595e0a0d3e79989baabb694ff": {
+      "description_zh": "运行或恢复/ccaf:practice，选择CCAF领域及10/20/30题，按比例生成并核验单选练习，每屏四题、可续考，输出分领域图；状态与完整模拟考试分开保存。",
+      "source": "Engine for the /ccaf:practice command. Asks which specific CCAF domains to focus on and how many questions (10/20/30), assembles a proportionally-weighted partial exam of single-answer multiple-choice items, anchored to the reference bank and independently verified, administers it 4 items per screen with resumable progress, and scores it with a per-domain performance chart. Attempt state lives in ~/.claude/ccaf-practice.local.md — separate from /ccaf:mock-exam. Use when running or resuming /ccaf:practice.",
+      "source_sha256": "699b4d269009acc8524856f7efa72e083fceb5d595e0a0d3e79989baabb694ff",
+      "source_path": "skills/ccaf-practice/SKILL.md",
+      "package_sha256": "b9f1e458d74a5488bef179b812ad95bed2241132f4b4ae2fc612753fa05564ce",
+      "source_package": "ccaf-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1823f0687d9dc3d03e26c62c00d69e633c3820cbf8492b2ac499cc74f3eda7b0": {
+      "description_zh": "通过/ccaf:prepare逐轮教授CCAF基础架构师课程，每次一个概念与知识检查，按五领域30任务菜单选择主题、调整难度，可委派情景核验及实操，并转练习或模拟考试。",
+      "source": "Engine for the /ccaf:prepare conversational tutor. Teaches the Claude Certified Architect – Foundations (CCAF) syllabus turn by turn — one concept at a time, with a knowledge check every turn — adapting pace and difficulty to the learner. Opens with a multi-select topic menu over the blueprint's 5 domains and 30 task statements; the learner picks what to learn. Spawns the ccaf-check-author agent for scenario checks, can assign hands-on exercises from the prep guide, and hands off to /ccaf:practice or /ccaf:mock-exam when a domain looks solid. Use when running /ccaf:prepare.",
+      "source_sha256": "1823f0687d9dc3d03e26c62c00d69e633c3820cbf8492b2ac499cc74f3eda7b0",
+      "source_path": "skills/ccaf-tutor/SKILL.md",
+      "package_sha256": "b9f1e458d74a5488bef179b812ad95bed2241132f4b4ae2fc612753fa05564ce",
+      "source_package": "ccaf-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "725887085be858f4ed61afefeba160a84d6960c037c96ecc917dce60d484a9e6": {
+      "description_zh": "建设Celigo自定义HTTP API，让外部系统经集成同步推送或查询数据，代理认证请求并以结构化REST接口暴露查询写入操作。",
+      "source": "Build Celigo APIs -- custom HTTP endpoints that let external systems push or query data synchronously through Celigo integrations. Use when creating APIs, proxying authenticated requests, or exposing lookup/write operations as a REST interface that returns a structured response.",
+      "source_sha256": "725887085be858f4ed61afefeba160a84d6960c037c96ecc917dce60d484a9e6",
+      "source_path": "skills/building-apis/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc478fe400a7184318ed3633202c9fef6f7b59abae3081d36153c222c1334b1e": {
+      "description_zh": "建设Celigo B2B Manager EDI集成，涵盖贸易伙伴入驻、EDI配置文件、文件定义、X12/EDIFACT流程、解析规则和文档交换监控。",
+      "source": "Build Celigo B2B Manager EDI integrations -- trading partner onboarding, EDI profiles, file definitions, X12/EDIFACT flow patterns, and transaction monitoring. Use when onboarding partners, editing EDI flows, setting up parsing rules, or monitoring document exchange.",
+      "source_sha256": "fc478fe400a7184318ed3633202c9fef6f7b59abae3081d36153c222c1334b1e",
+      "source_path": "skills/building-b2b/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9d7cb7a00d60882073a446fb6ba2bd0c15f5d1d101a55c890ac403b04d0e28f": {
+      "description_zh": "创建、修改或调试Celigo源到目标数据流程，配置定时事件触发、串联、错误管理及抽象/实例模板。",
+      "source": "Build Celigo flows -- pipelines that move data from source systems to destination systems on a schedule or in response to events. Covers scheduling, chaining, error management, and abstract/instance templating. Use when creating, editing, or debugging flows.",
+      "source_sha256": "c9d7cb7a00d60882073a446fb6ba2bd0c15f5d1d101a55c890ac403b04d0e28f",
+      "source_path": "skills/building-flows/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "029a8af8efed25cae175dc281053a77f431bb86a8b26bb892cbce2292bd76c4b": {
+      "description_zh": "建设Celigo MCP服务器资源，将工具和构建模式API暴露给外部智能体或MCP客户端，配置链接、注解及覆盖设置。",
+      "source": "Build Celigo MCP server resources -- endpoints that expose Tools and builder-mode APIs to external AI agents and MCP clients. Use when creating MCP servers, linking tools or APIs, or configuring annotations and overrides.",
+      "source_sha256": "029a8af8efed25cae175dc281053a77f431bb86a8b26bb892cbce2292bd76c4b",
+      "source_path": "skills/building-mcp-servers/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82e52175b5e0a4ef2264963a0040563d344eb1da5ddcfbfc3dafd6f071f0fa92": {
+      "description_zh": "建设Celigo可复用工具，按输入输出契约封装查询、导入、转换和分支，供流程API智能体MCP及其他工具调用，配置步骤与路由。",
+      "source": "Build Celigo tool resources -- reusable building blocks that encapsulate lookups, imports, transforms, and branching behind input/output contracts. Callable from flows, APIs, AI agents, MCP servers, and other tools. Use when creating tools, adding steps, or configuring routing.",
+      "source_sha256": "82e52175b5e0a4ef2264963a0040563d344eb1da5ddcfbfc3dafd6f071f0fa92",
+      "source_path": "skills/building-tools/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2250541b538e61b41ad39990305c3bd103087a2f301d9ad62273b586e00deb57": {
+      "description_zh": "配置Celigo AI智能体及护栏导入，以OpenAI/Gemini在流程中分类、提取、验证或生成数据，设置提示、结构化输出、BYOK、PII和内容审核。",
+      "source": "Configure Celigo AI agent and guardrail imports -- LLM-powered steps that classify, extract, validate, or generate data within flows. Use when creating agent imports (OpenAI, Gemini), guardrails (PII, moderation), or configuring prompts, structured output, or BYOK connections.",
+      "source_sha256": "2250541b538e61b41ad39990305c3bd103087a2f301d9ad62273b586e00deb57",
+      "source_path": "skills/configuring-ai-agents/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0e96ac2dfab11869536ddd749d07ab6011315ad0d8f2adec75b2a8c385b1584": {
+      "description_zh": "配置Celigo连接与iClient共享凭据，选择认证方法、OAuth、外部系统参数并排查连通性。",
+      "source": "Configure Celigo connections and iClients -- credential and configuration objects that authenticate to external systems. Use when creating or editing connections, choosing auth methods, setting up OAuth, managing iClients (shared credential stores), or troubleshooting connectivity.",
+      "source_sha256": "d0e96ac2dfab11869536ddd749d07ab6011315ad0d8f2adec75b2a8c385b1584",
+      "source_path": "skills/configuring-connections/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2b24e45fa6a3f36b023858318b84c19b13bc13be158927e8fe20f734c574612": {
+      "description_zh": "配置Celigo导出来源资源，选择应用适配器并设置记录读取、增量同步、Webhook、文件传输或查询。",
+      "source": "Configure Celigo export resources -- the data source step that fetches records from external systems. Use when creating or editing exports, choosing the right adaptor type for a target application, setting up delta/incremental syncs, webhooks, file transfers, or lookups.",
+      "source_sha256": "e2b24e45fa6a3f36b023858318b84c19b13bc13be158927e8fe20f734c574612",
+      "source_path": "skills/configuring-exports/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5deb86b49cae4c7810284bdf2669933956010bad094f54f89bb2f53f2624d101": {
+      "description_zh": "配置Celigo导出、导入及分支过滤规则，决定哪些记录继续流转，设置路由条件并选择表达式或脚本过滤。",
+      "source": "Configure Celigo filter rules on exports, imports, and flow branches that control which records continue through the pipeline. Use when adding filters, setting branch routing conditions, or choosing between expression and script filters.",
+      "source_sha256": "5deb86b49cae4c7810284bdf2669933956010bad094f54f89bb2f53f2624d101",
+      "source_path": "skills/configuring-filters/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38b7415d6122ce35f1f666a884bbc8fa536bfb46434b9f70441ab5a99dd0e7eb": {
+      "description_zh": "配置Celigo安全与合规护栏，检查集成数据中的PII、内容审核及AI评估规则。",
+      "source": "Configure Celigo guardrail resources -- safety and compliance checks that validate data flowing through integrations. Use when creating or editing guardrails for PII detection, content moderation, or AI-based evaluation rules.",
+      "source_sha256": "38b7415d6122ce35f1f666a884bbc8fa536bfb46434b9f70441ab5a99dd0e7eb",
+      "source_path": "skills/configuring-guardrails/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c757abd09d8bfcc20c2cf6f713db64ed1c5af5c2927a31db9a3f1721444f363": {
+      "description_zh": "配置Celigo写向外部目标的导入步骤，选择适配器、字段映射、查询、upsert、AI智能体或文件导入。",
+      "source": "Configure Celigo imports -- the destination step that writes records to external systems. Use when creating imports, choosing the adaptor type, setting up field mappings, lookups, upsert logic, AI agent imports, or file-based imports.",
+      "source_sha256": "1c757abd09d8bfcc20c2cf6f713db64ed1c5af5c2927a31db9a3f1721444f363",
+      "source_path": "skills/configuring-imports/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8656835be1854f44fd9ed413321007604441fcc7d9dc74f163c39a579022c6b7": {
+      "description_zh": "配置Celigo内存键值查询缓存，用于快速查找、去重、交叉引用和执行状态，管理数据加载、导入引用与生命周期。",
+      "source": "Configure Celigo lookup cache resources -- in-memory key-value stores used for fast lookups, deduplication, cross-reference resolution, and state tracking during flow execution. Use when creating caches, loading data, referencing caches in import lookups, or managing cache lifecycle.",
+      "source_sha256": "8656835be1854f44fd9ed413321007604441fcc7d9dc74f163c39a579022c6b7",
+      "source_path": "skills/configuring-lookup-caches/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "088ac4cc76d406e19b61d2d33aed7c5483aad90f7c2baf8f302cdb6ade20bd44": {
+      "description_zh": "介绍Celigo核心概念、构建顺序、账户发现、规划和沙箱意识，帮助新用户或不明确任务选择适合技能。",
+      "source": "Orientation for Celigo integrations -- core concepts, build order, account discovery, planning discipline, sandbox awareness, and which skill to use for each task. Start here when the task is unclear or the user is new to Celigo.",
+      "source_sha256": "088ac4cc76d406e19b61d2d33aed7c5483aad90f7c2baf8f302cdb6ade20bd44",
+      "source_path": "skills/getting-started/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de6728412c4b29b448bad0b584028b0d54dcc126e4d8f4b8ff99a6cbb8a0c17c": {
+      "description_zh": "管理Celigo入站REST、自定义API和MCP的API令牌/PAT，区分个人与账户令牌、最小权限和全权限，处理创建范围轮换撤销删除、先撤销后删及自动过期清理；密钥不进入对话，并区别连接OAuth令牌。",
+      "source": "Manage Celigo API tokens (the accesstoken resource) -- bearer [已隐藏] that authenticate inbound programmatic calls into integrator.io's REST API, custom APIs, and MCP servers. Covers personal access tokens (PATs) versus account-level API tokens, least-privilege scoping versus full access, the revoke-before-delete lifecycle, auto-purge expiry, and keeping token secrets out of chat. Use when creating, scoping, rotating, revoking, or deleting API tokens or PATs, or when distinguishing an integrator.io API token from a connection's OAuth access token.",
+      "source_sha256": "de6728412c4b29b448bad0b584028b0d54dcc126e4d8f4b8ff99a6cbb8a0c17c",
+      "source_path": "skills/managing-api-tokens/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "adb957a9ae272a7bf160ebd846a8232bc16565d9945dc75199c816f13cdacec4": {
+      "description_zh": "管理Celigo集成容器中的流程、API、工具、连接、脚本与设置，处理普通集成/Integration Apps、父子结构、克隆连接重映射、资源迁移、通知别名，以及ILM跨环境版本快照拉取回滚。",
+      "source": "Manage Celigo integrations -- the named containers that group flows, APIs, Tools, connections, scripts, and settings so a body of automation is organized, secured, and evolved as one unit. Covers plain integrations vs Integration Apps, parent/child hierarchies, cloning with connection remap, moving resources between integrations, notifications, aliases, and Integration Lifecycle Management (ILM) revisions/snapshots/pulls/reverts across environments. Use when creating, organizing, cloning, promoting, or versioning integrations, or deciding whether new work belongs in an existing integration or its own.",
+      "source_sha256": "adb957a9ae272a7bf160ebd846a8232bc16565d9945dc75199c816f13cdacec4",
+      "source_path": "skills/managing-integrations/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef05489252f9b4529dcaf83ac1fb54e96919a2d051058c81d6b0941a2e9c9d69": {
+      "description_zh": "管理Celigo本地代理，以安全出站隧道访问防火墙内数据库、共享文件或内部应用，无需开放入站端口；安装配对、轮换令牌及排查离线，区别于计算Stack和AI智能体。",
+      "source": "Manage Celigo on-premise agents -- lightweight software you install on a host inside your own network that opens a secure OUTBOUND tunnel to integrator.io, letting the platform reach private systems (on-prem databases, file shares, internal apps) without opening inbound firewall ports. An on-premise agent is a connectivity resource on the `/agents` page -- not a stack (compute) and not an AI agent (LLM processing). Use when connecting to a system behind a firewall, installing or pairing an agent, rotating its access token, or diagnosing agent-offline flow failures.",
+      "source_sha256": "ef05489252f9b4529dcaf83ac1fb54e96919a2d051058c81d6b0941a2e9c9d69",
+      "source_path": "skills/managing-on-premise-agents/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42caeadec18efafd16185dd71834a250b6a644e31109c0b240cd56781e9b09ac": {
+      "description_zh": "配置Celigo Stack指向自有server或AWS Lambda运行环境，让其执行钩子和连接包装扩展；Stack存地址凭据而非代码，支持类型选择及_stackId绑定。",
+      "source": "Configure Celigo stacks -- pointers to your own compute environment (a self-hosted `server` or an AWS `lambda`) where Celigo runs extension code (script hooks and connector wrappers) instead of on its hosted JavaScript runtime. A stack stores the address and credentials of that runtime, not the code itself. Use when deciding whether you need a stack, choosing between `server` and `lambda` types, creating or updating a stack, or pointing a hook or wrapper at one via `_stackId`.",
+      "source_sha256": "42caeadec18efafd16185dd71834a250b6a644e31109c0b240cd56781e9b09ac",
+      "source_path": "skills/managing-stacks/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7dd14342005fc15b6c30e6cd018e19674131818d7970205d911292e334217eca": {
+      "description_zh": "管理Celigo账户用户的邀请、权限、管理员/manage/monitor/仅集成访问、MFA/SSO及停用，审计访问和用户生命周期。",
+      "source": "Manage Celigo account users -- inviting users, updating permissions, configuring access levels (administrator, manage, monitor, integration-only), enforcing MFA/SSO, and disabling accounts. Use when adding team members, changing permissions, auditing access, or managing user lifecycle.",
+      "source_sha256": "7dd14342005fc15b6c30e6cd018e19674131818d7970205d911292e334217eca",
+      "source_path": "skills/managing-users/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a09b900c3f77ba159348f98405be97d787f70bccca495d663670bc841e2547c9": {
+      "description_zh": "诊断解决Celigo流程全部或部分失败、卡住任务、空运行和性能缓慢。",
+      "source": "Diagnose and resolve Celigo flow failures -- total failures, partial errors, stuck jobs, empty runs, and performance issues. Use when a flow is failing, producing errors, returning no data, or running slowly.",
+      "source_sha256": "a09b900c3f77ba159348f98405be97d787f70bccca495d663670bc841e2547c9",
+      "source_path": "skills/troubleshooting-flows/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c62471f40fc39031d1dae3882a0b5db115e45463091a9157298d4f0a65495868": {
+      "description_zh": "在Celigo Marketplace查找安装复用模板或Integration Apps，区分完全可编辑且不持续更新的模板与厂商维护升级保护的应用，处理整包或单项复制、连接映射与依赖级联。",
+      "source": "Find, install, and reuse pre-built integration blueprints from the Celigo Marketplace -- Templates (unlocked, fully editable, no ongoing updates) and Integration Apps (vendor-maintained, upgrade-protected, receive updates). Covers whole-template install versus copying a single element, how connections are mapped rather than copied, the dependency cascade, and when to start from a blueprint instead of building from scratch. Use when browsing the marketplace, installing a template or Integration App, or copying an existing flow, export, import, or connection into your own integration.",
+      "source_sha256": "c62471f40fc39031d1dae3882a0b5db115e45463091a9157298d4f0a65495868",
+      "source_path": "skills/using-marketplace-templates/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c334d77d5eeb633b92ab8f3dd97a59da3847bd9195b5e0b89943d4072e4672af": {
+      "description_zh": "为Celigo映射、HTTP正文、SQL、URI及过滤编写Handlebars模板，生成计算、条件或格式化字段值。",
+      "source": "Write Handlebars template expressions for Celigo integrations -- dynamic values in mappings, HTTP bodies, SQL queries, URIs, and filters. Use when building any resource configuration that needs computed, conditional, or formatted field values.",
+      "source_sha256": "c334d77d5eeb633b92ab8f3dd97a59da3847bd9195b5e0b89943d4072e4672af",
+      "source_path": "skills/writing-handlebars/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9c4424846694d5a6177fbd79de6a585857a6915539e025a14dd801e6f315b5f": {
+      "description_zh": "编写Celigo字段映射与转换，涵盖导入Mapper 2.0、导出Transformation 2.0、查找、响应映射及NetSuite/Salesforce Mapper 1.0。",
+      "source": "Write field mappings and transforms in Celigo integrations. Covers Mapper 2.0 (imports), Transformation 2.0 (exports), lookups, response mapping, and Mapper 1.0 (NetSuite/Salesforce). Use when editing mappings[], transform{}, responseMapping, or lookup configurations.",
+      "source_sha256": "a9c4424846694d5a6177fbd79de6a585857a6915539e025a14dd801e6f315b5f",
+      "source_path": "skills/writing-mappings/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab843685dd4dea7d4fad442fb8bb4b853cd4ddeb2a0bf56143b51b5e744a8d3a": {
+      "description_zh": "编写和调试Celigo JavaScript钩子脚本，选择preSavePage、preMap、postMap、postSubmit、postResponseMap、过滤转换分支或handleRequest，并理解输入输出形态。",
+      "source": "Write Celigo JavaScript hook scripts -- preSavePage, preMap, postMap, postSubmit, postResponseMap, filter, transform, branching, handleRequest. Use when creating or editing scripts, choosing the right hook point, understanding input/output data shapes, or debugging script behavior.",
+      "source_sha256": "ab843685dd4dea7d4fad442fb8bb4b853cd4ddeb2a0bf56143b51b5e744a8d3a",
+      "source_path": "skills/writing-scripts/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48a65ba2f7ec9608c0098e502cc51e89c95368dd3a3cc9a5837998aff4a55603": {
+      "description_zh": "为Celigo关系数据库导入导出编写SELECT/INSERT/UPDATE/UPSERT/MERGE、增量、一次及批量SQL，支持Snowflake、Postgres、MySQL、SQL Server、Oracle、BigQuery和Redshift，排查rdbms.query错误。",
+      "source": "Write SQL queries for Celigo RDBMS exports and imports -- SELECT, INSERT, UPDATE, UPSERT, MERGE, delta, once, and bulk operations across Snowflake, Postgres, MySQL, SQL Server, Oracle, BigQuery, and Redshift. Use when editing rdbms.query or troubleshooting SQL errors.",
+      "source_sha256": "48a65ba2f7ec9608c0098e502cc51e89c95368dd3a3cc9a5837998aff4a55603",
+      "source_path": "skills/writing-sql/SKILL.md",
+      "package_sha256": "cdad41e1dc4cea4a0d5713c3e85f7f6643a701d8ecce30f1d0988dbb6e3fb3ef",
+      "source_package": "Celigo-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "509ed738825aafba41470861d29521849c80a7e5ac43dc3a3eb5fa17bd2893bf": {
+      "description_zh": "使用Cerebrium部署Python到无服务器GPU/CPU，配置toml、硬件区域、REST流式WebSocket异步端点、扩缩容并发冷启动、密钥和CI/CD，并从终端诊断构建或运行问题。",
+      "source": "Use for any Cerebrium task: deploying Python code to serverless GPU or CPU, writing or fixing cerebrium.toml, choosing hardware and regions, calling deployed endpoints (REST, streaming, WebSocket, async), autoscaling and concurrency, cold starts, secrets, CI/CD, and debugging a build or a running app from the terminal. Covers the cerebrium CLI, configuration defaults the API actually applies, accepted GPU identifiers with per-plan limits, and troubleshooting.",
+      "source_sha256": "509ed738825aafba41470861d29521849c80a7e5ac43dc3a3eb5fa17bd2893bf",
+      "source_path": "skills/cerebrium/SKILL.md",
+      "package_sha256": "f30c87a55a743993bebef805bd7469c5d83be68240743c539eb870e7e2cfb676",
+      "source_package": "Cerebrium Skills-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff09f10286301ec5d3594fde2b6c213d5cc0d121055a349322608ab3d4395739": {
+      "description_zh": "通过CLI读取编辑Confluence Cloud页面，避免正文经过模型上下文，支持链接读取、搜索、总结和文字修订。",
+      "source": "Read and edit Confluence Cloud pages from the CLI without the page body passing through your context. Use whenever the user shares a Confluence link, asks you to read, search or summarize a Confluence page, or asks you to edit, update or fix wording on one.",
+      "source_sha256": "ff09f10286301ec5d3594fde2b6c213d5cc0d121055a349322608ab3d4395739",
+      "source_path": "skills/cflio/SKILL.md",
+      "package_sha256": "d59e99c4b548f7c0860f379b4fd7090faa85a70c2285b54f09e735d548668a3b",
+      "source_package": "cflio-1.0.5-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fbba5188e4dd3bc3155101558a57bc310092230c3bae388aa5303354be19779": {
+      "description_zh": "搜索读取用户明确分享的Char云页面，回答笔记、每日页和会议页相关问题。",
+      "source": "Search and read the user's explicitly shared Char cloud pages. Use for questions about notes, daily pages, and meeting pages in Char.",
+      "source_sha256": "2fbba5188e4dd3bc3155101558a57bc310092230c3bae388aa5303354be19779",
+      "source_path": "skills/char/SKILL.md",
+      "package_sha256": "af93349477596ac86fe51bbcc8d692787a5211ccffe6b6a5dcfb4e9a4cf6978b",
+      "source_package": "Char-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e75de291d7382f79182cc95a35445e89e13c61abada42ccab7a11fdb4282d88d": {
+      "description_zh": "按字符位置进行字符串操作，包括定位第n字符或子串、按索引拆分、截取范围及指定位置修改，适用于解析、测试数据和位置敏感任务。",
+      "source": "Character-level string manipulation: find nth char/substring, split at indices, extract ranges, modify at positions. For test generation, parsing, position-critical tasks.",
+      "source_sha256": "e75de291d7382f79182cc95a35445e89e13c61abada42ccab7a11fdb4282d88d",
+      "source_path": "skills/char-index-skill/SKILL.md",
+      "package_sha256": "88b069393b21728ca1e960237b4109844da3a83fecae703451138962a13a72dd",
+      "source_package": "char-index-skill-0.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7e13a69859b047ae8ab150efb15829b6d763df3a851379f4e5dd05e4e155887": {
+      "description_zh": "在用户要求处理Charmshots账户内容时，通过其MCP浏览现有照片。",
+      "source": "Use Charmshots MCP to browse existing photos when the user requests work in their Charmshots account.",
+      "source_sha256": "b7e13a69859b047ae8ab150efb15829b6d763df3a851379f4e5dd05e4e155887",
+      "source_path": "skills/charmshots/SKILL.md",
+      "package_sha256": "020b432eadfc885b984810a9291c08533aad823478e3bfbeaef71ad534afe486",
+      "source_package": "Charmshots-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4b8c0f9ece3134940cb99d48926a6390a64732082adb664fcfeaa6ffb0c0e0e": {
+      "description_zh": "依据首条消息，为所有未命名会话自动命名。",
+      "source": "Auto-name all unnamed conversations from their first message",
+      "source_sha256": "b4b8c0f9ece3134940cb99d48926a6390a64732082adb664fcfeaa6ffb0c0e0e",
+      "source_path": "skills/auto-name/SKILL.md",
+      "package_sha256": "e616f3c0367e3add65eaad5a9e0f1a087c9ce3b8b56140bb3812e4a8a3db6520",
+      "source_package": "chat-namer-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac82ab84a5ac93a5ae58fd322f358cdb6784aab33790efdfe8b7a3f393d0879d": {
+      "description_zh": "列举Claude Code会话的名称、日期与消息数量。",
+      "source": "List all Claude Code conversations with their names, dates, and message counts",
+      "source_sha256": "ac82ab84a5ac93a5ae58fd322f358cdb6784aab33790efdfe8b7a3f393d0879d",
+      "source_path": "skills/list/SKILL.md",
+      "package_sha256": "e616f3c0367e3add65eaad5a9e0f1a087c9ce3b8b56140bb3812e4a8a3db6520",
+      "source_package": "chat-namer-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "077271285484bbd3ca68b58d96bb8d58177d4faa690714ccc516dfc6ca809ea9": {
+      "description_zh": "通过会话序号或UUID前缀重命名会话。",
+      "source": "Rename a conversation by its number or UUID prefix",
+      "source_sha256": "077271285484bbd3ca68b58d96bb8d58177d4faa690714ccc516dfc6ca809ea9",
+      "source_path": "skills/rename/SKILL.md",
+      "package_sha256": "e616f3c0367e3add65eaad5a9e0f1a087c9ce3b8b56140bb3812e4a8a3db6520",
+      "source_package": "chat-namer-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02b6a05266d9d21487baa7e70b3b38e128616715ad004949d95951263e78309d": {
+      "description_zh": "按名称或关键词查找并恢复过去会话，避免要求完整UUID。",
+      "source": "Find and resume a previous conversation by name or keyword instead of UUID",
+      "source_sha256": "02b6a05266d9d21487baa7e70b3b38e128616715ad004949d95951263e78309d",
+      "source_path": "skills/resume/SKILL.md",
+      "package_sha256": "e616f3c0367e3add65eaad5a9e0f1a087c9ce3b8b56140bb3812e4a8a3db6520",
+      "source_package": "chat-namer-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53bcbe292d67796e6c9626eec673b6ceb99ff084f5084dddaaa0caef1f2370b5": {
+      "description_zh": "按名称或内容关键词搜索会话。",
+      "source": "Search conversations by name or content keyword",
+      "source_sha256": "53bcbe292d67796e6c9626eec673b6ceb99ff084f5084dddaaa0caef1f2370b5",
+      "source_path": "skills/search/SKILL.md",
+      "package_sha256": "e616f3c0367e3add65eaad5a9e0f1a087c9ce3b8b56140bb3812e4a8a3db6520",
+      "source_package": "chat-namer-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a9bf3f5f9f74a6ee2f36be023a7f6e8193c7e51895c7318066c89921953eccd": {
+      "description_zh": "通过cheapest.domains提出与项目相关的域名，并比较当前注册商续费价格，查询名称可用性、低成本后缀及长期持有成本。",
+      "source": "Suggest project-relevant domain names and compare current registrar renewal prices with cheapest.domains. Use for domain-name ideas, exact-name availability, affordable extensions, registrar price comparisons, and the cost of keeping a domain.",
+      "source_sha256": "5a9bf3f5f9f74a6ee2f36be023a7f6e8193c7e51895c7318066c89921953eccd",
+      "source_path": "skills/domain-research/SKILL.md",
+      "package_sha256": "fcffca414f00075e4422bfb6c18f78720ee3bbe287f22a201d4e68b4ad1fb791",
+      "source_package": "Cheapest Domains-0.10.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3997ed58db10bb6bbdcc28bb8cc01f5a81986c1b3c9b0deb3c51d14ddbea16b5": {
+      "description_zh": "通过Checkly CLI设置创建测试和管理API/浏览器/URL/ICMP/Playwright套件/Heartbeat监测、告警渠道、仪表板和状态页，查询套餐权限限制成员邀请，并可使用通用API访问。",
+      "source": "Set up, create, test and manage monitoring checks using the Checkly CLI. Use when working with API Checks, Browser Checks, URL Monitors, ICMP Monitors, Playwright Check Suites, Heartbeat Monitors, Alert Channels, Dashboards, or Status Pages. Access Checkly account plan, entitlements, feature limits, members, and pending invites. Includes generic API pass-through (`checkly api`) for endpoints without dedicated commands.",
+      "source_sha256": "3997ed58db10bb6bbdcc28bb8cc01f5a81986c1b3c9b0deb3c51d14ddbea16b5",
+      "source_path": "skills/checkly/SKILL.md",
+      "package_sha256": "e4a0bcdcd30f4ef19fa23e4d1b761bd22583ae9f525a930b2e88370a83b2457c",
+      "source_package": "Checkly-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7a8a804a5ecdceb25fc77281353f3b63a1077e1eccd5131f3d8b6ef74c7be87": {
+      "description_zh": "提供以playwright-cli和无界面智能体调试为核心的Playwright TypeScript/JavaScript测试最佳实践，涵盖定位断言、偶发失败、认证、模拟、夹具、表单、键鼠、弹窗、上传下载、iframe、多用户设备、时间、视觉回归及CI。",
+      "source": "Agent-first best practices for writing, structuring, debugging, and stabilizing Playwright tests in TypeScript/JavaScript, built around Playwright's agent CLI (`playwright-cli`) and no-GUI agentic debugging flows. Use when authoring or reviewing Playwright tests: choosing locators, writing web-first assertions, fixing flaky tests, handling authentication (SSO/2FA), mocking network/API requests, structuring projects and fixtures, generating test data, building forms and validation, pressing keys and keyboard shortcuts, hovering and other mouse actions, handling native alert/confirm/prompt dialogs, uploading or downloading files, testing iframes, multiple tabs/popups or multi-user flows, mobile and device emulation, mocking time and dates, visual regression and screenshots, tagging and annotating tests, catching console errors, testing error/offline/loading states, configuring global setup, or running Playwright in CI.",
+      "source_sha256": "f7a8a804a5ecdceb25fc77281353f3b63a1077e1eccd5131f3d8b6ef74c7be87",
+      "source_path": "skills/playwright-best-practices-for-agents/SKILL.md",
+      "package_sha256": "e4a0bcdcd30f4ef19fa23e4d1b761bd22583ae9f525a930b2e88370a83b2457c",
+      "source_package": "Checkly-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ffacd2104d2851bac889124d557d6731c0269e664fe3bf236d9fa5fbb6aeddf": {
+      "description_zh": "使用实时Chembricks MCP验证分子结构、计算性质描述符pKa/logP溶解度能量谱图构象动力学，搜索生成分子、评估合成库存稳定性及可购性与有限安全提示，研究金属聚合物并开展多目标筛选优化。",
+      "source": "Use the live Chembricks MCP for computational chemistry and molecular science: resolve or validate molecular structures; calculate molecular properties, descriptors, pKa, logP, solubility, redox, energies, thermochemistry, spectra, conformers, steric descriptors, kinetics, and solvation; search or generate molecules; assess synthesis, stock, stability, purchasability, and narrow safety alerts; investigate metal complexes and polymers; or run multi-objective molecular discovery, screening, and optimization. Apply this skill whenever a user supplies a molecule, name, formula, SMILES, InChI, SELFIES, spectrum, reaction, ligand, candidate library, or chemistry design objective that can benefit from Chembricks evidence.",
+      "source_sha256": "0ffacd2104d2851bac889124d557d6731c0269e664fe3bf236d9fa5fbb6aeddf",
+      "source_path": "skills/chembricks-computational-chemistry/SKILL.md",
+      "package_sha256": "3ea957b0a063f21facab9706c07b8c3560f9f47ff52d5f39b038ca822f683e9d",
+      "source_package": "chembricks-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eafe211db057a2d8e53c20ae7da8ef1f8bc1db1560e1cb63dae9d63180d0483d": {
+      "description_zh": "使用Chronograph公司指标比较投资组合公司实际经营与预算计划，计算差异、标记偏离计划的公司并汇总至基金。",
+      "source": "Compare portfolio company operating actuals against budget/plan, compute variances, flag off-plan companies, and roll up to the fund, using Chronograph company metrics.",
+      "source_sha256": "eafe211db057a2d8e53c20ae7da8ef1f8bc1db1560e1cb63dae9d63180d0483d",
+      "source_path": "skills/chronograph-budget-vs-actuals-variance/SKILL.md",
+      "package_sha256": "46b603dea8674d0a249be391d565ba7c8074aa9633b60595ced41a22641d28ba",
+      "source_package": "Chronograph GP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a83bde4118dc26f56cbe634be53782457fc24b6a35690eba0f553f41d8da1a4": {
+      "description_zh": "使用Chronograph数据为单一基金生成季度评审包，包括基金汇总及每家投资组合公司的一页报告。",
+      "source": "Generate a consolidated quarterly review pack for a single fund — a fund-level summary plus a one-pager section for every portfolio company in the fund — using Chronograph data.",
+      "source_sha256": "4a83bde4118dc26f56cbe634be53782457fc24b6a35690eba0f553f41d8da1a4",
+      "source_path": "skills/chronograph-fund-quarterly-review-pack/SKILL.md",
+      "package_sha256": "46b603dea8674d0a249be391d565ba7c8074aa9633b60595ced41a22641d28ba",
+      "source_package": "Chronograph GP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0088213ac27d38e1f5fcbf49ba85edc8ceb969eb793d91d91990a38359731414": {
+      "description_zh": "依据Chronograph投资指标识别本期估值上调或下调的公司，量化变动、列明依据，并按对基金NAV的影响排序。",
+      "source": "Identify which portfolio companies were marked up or down this period, quantify each change, surface the stated basis, and rank by impact on fund NAV — using Chronograph investment metrics.",
+      "source_sha256": "0088213ac27d38e1f5fcbf49ba85edc8ceb969eb793d91d91990a38359731414",
+      "source_path": "skills/chronograph-markup-markdown-brief/SKILL.md",
+      "package_sha256": "46b603dea8674d0a249be391d565ba7c8074aa9633b60595ced41a22641d28ba",
+      "source_package": "Chronograph GP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2596cbf295c65aea351bae7c191f4bf5bb63e68f9ace285855d6dc13a3b62ac": {
+      "description_zh": "为私募股权投资组合公司生成一页及投资者报告，从Chronograph MCP或上传Excel取数，格式化指标、使用模型来源或AI评论，并渲染完整样式HTML。",
+      "source": "Generate one-pagers and investor reports for private equity portfolio companies. Handles live data fetching via the Chronograph MCP OR an uploaded Excel model, metric formatting, AI-generated or model-sourced commentary, and rendering a fully styled HTML one-pager.",
+      "source_sha256": "b2596cbf295c65aea351bae7c191f4bf5bb63e68f9ace285855d6dc13a3b62ac",
+      "source_path": "skills/chronograph-portfolio-company-one-pager/SKILL.md",
+      "package_sha256": "46b603dea8674d0a249be391d565ba7c8074aa9633b60595ced41a22641d28ba",
+      "source_package": "Chronograph GP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8e0d2e4f8d90501e6b4375a6f7d882530b3b751e21f40447b2a85506c3904db": {
+      "description_zh": "依据Chronograph投资指标将基金总价值/TVPI拆解至各公司，区分已实现与未实现，并排序主要贡献与拖累项。",
+      "source": "Decompose a fund's total value / TVPI into per-company contributions, split realized vs. unrealized, and rank top contributors and detractors — using Chronograph investment metrics.",
+      "source_sha256": "c8e0d2e4f8d90501e6b4375a6f7d882530b3b751e21f40447b2a85506c3904db",
+      "source_path": "skills/chronograph-tvpi-attribution-by-company/SKILL.md",
+      "package_sha256": "46b603dea8674d0a249be391d565ba7c8074aa9633b60595ced41a22641d28ba",
+      "source_package": "Chronograph GP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ddb2081179e080d5c48eedb1687833a4217b561fdd80b0db108ff7e2523a48d": {
+      "description_zh": "使用Chronograph MCP和Takahashi-Alexander式模型，预测已有私募资本组合在LP层面的现金流。",
+      "source": "Forecast LP-level private capital cashflows for existing portfolios using Chronograph MCP data and a Takahashi-Alexander style model.",
+      "source_sha256": "7ddb2081179e080d5c48eedb1687833a4217b561fdd80b0db108ff7e2523a48d",
+      "source_path": "skills/chronograph-cashflow-forecast/SKILL.md",
+      "package_sha256": "5b0d9ef5d7ef51220788b791c86bae21bcc248bd902ba43bb224f8954c66bba3",
+      "source_package": "Chronograph LP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df195ebc598443dbf33b91e296bf77b5e04a0cb69296516747b980a76429433e": {
+      "description_zh": "依据Chronograph组合数据与现金流预测模型，规划未来基金认缴节奏，以达到并维持目标私募资本配置比例。",
+      "source": "Plan forward fund commitments to reach and hold a target private capital allocation, using Chronograph portfolio data and a cashflow-projection model.",
+      "source_sha256": "df195ebc598443dbf33b91e296bf77b5e04a0cb69296516747b980a76429433e",
+      "source_path": "skills/chronograph-commitment-pacing-planner/SKILL.md",
+      "package_sha256": "5b0d9ef5d7ef51220788b791c86bae21bcc248bd902ba43bb224f8954c66bba3",
+      "source_package": "Chronograph LP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d5c5bc7a7543d9cc0b3991d6f031f4e0b6ae03c0d4a2bcf4f015ce60b4309ca1": {
+      "description_zh": "从LP投资者角度准备与GP基金经理会谈，审查最新报告及较上期变化并起草问题，使用已连接的Chronograph基金组合数据，缺少资本账户、投资者信或会议材料时向LP索取。",
+      "source": "Prepare an LP (investor) to meet with their fund manager (GP) — an LP-side skill where the user is the LP, not the GP. Review the fund's latest reporting, surface what changed since last period, and draft the questions worth raising. Draws on Chronograph fund and portfolio data when connected — captured reporting such as fund performance, schedules of investments, and portfolio company KPI profiles — and asks the LP to provide anything else it needs, such as a capital account statement, investor letter, or AGM or board deck.",
+      "source_sha256": "d5c5bc7a7543d9cc0b3991d6f031f4e0b6ae03c0d4a2bcf4f015ce60b4309ca1",
+      "source_path": "skills/chronograph-gp-meeting-prep/SKILL.md",
+      "package_sha256": "5b0d9ef5d7ef51220788b791c86bae21bcc248bd902ba43bb224f8954c66bba3",
+      "source_package": "Chronograph LP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b03bbee5f79b2e59721bf8ab7567f4ca90bf8d3144b401913256a8a64b757e1": {
+      "description_zh": "通过Chronograph top-exposures工具穿透汇总LP跨基金的公司、行业、地域、年份、策略和货币敞口，并识别集中度。",
+      "source": "Aggregate an LP's look-through portfolio exposure across funds — by company, sector, geography, vintage, strategy, and currency — and surface concentration, using the Chronograph top-exposures tool.",
+      "source_sha256": "7b03bbee5f79b2e59721bf8ab7567f4ca90bf8d3144b401913256a8a64b757e1",
+      "source_path": "skills/chronograph-look-through-exposure-scan/SKILL.md",
+      "package_sha256": "5b0d9ef5d7ef51220788b791c86bae21bcc248bd902ba43bb224f8954c66bba3",
+      "source_package": "Chronograph LP-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cdff70bb944d1a4c44ed89f7bf7bd070fb7e6568cb47d6cca4f2ea3dff36fc16": {
+      "description_zh": "创建交互HTML试验界面，可视化配置Chuck、生成manifest.json或通过表单记录架构决策。",
+      "source": "Creates interactive HTML playgrounds for Chuck setup and decision logging. Use when the user wants to visually configure Chuck, generate a manifest.json, or log an architectural decision through a form interface.",
+      "source_sha256": "cdff70bb944d1a4c44ed89f7bf7bd070fb7e6568cb47d6cca4f2ea3dff36fc16",
+      "source_path": "skills/chuck/SKILL.md",
+      "package_sha256": "6570e80c0a04627afa2ddf5b3384648adf4cd24c8327e2092ccf369b56588f5f",
+      "source_package": "Chuck-0.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15c52b823ed84153d6397e9f8d51b0aa283d6cb3bb04fd3bb56d3960b3eb7159": {
+      "description_zh": "依据Cialdini七项影响原则与先发影响框架，审计落地页、邮件、销售序列或冷推文案，按原则给出检查及优先修复清单；可先研究受众、开场语境及社会证明事实。",
+      "source": "Audit persuasive copy (landing page, email, sales sequence, cold pitch) for missing influence principles using Robert Cialdini's seven principles from Influence (1984/2016) and Pre-Suasion (2016). Returns a per-principle audit with a prioritized fix list. Optional pre-audit research mode for audience profile, opener context, and social-proof fact-check.",
+      "source_sha256": "15c52b823ed84153d6397e9f8d51b0aa283d6cb3bb04fd3bb56d3960b3eb7159",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "be420a12661468b98ba8c55dbd1f76b35f34473ae6fb3ab27a8bd10c797e4a4d",
+      "source_package": "cialdini-influence-audit-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8503d21146954b4914bbd82e576685337da7c6ab0c8ba06d52d62ded09cc1971": {
+      "description_zh": "为单项美国州法案生成有来源简报，列身份、状态、发起者、文本、点名表决与议员投票。",
+      "source": "Produces a sourced brief on one U.S. state bill — identification, status, sponsors, bill text, roll calls, and how members voted.",
+      "source_sha256": "8503d21146954b4914bbd82e576685337da7c6ab0c8ba06d52d62ded09cc1971",
+      "source_path": "skills/bill-research/SKILL.md",
+      "package_sha256": "2fa3358c5d3c038a7a0e542350f561fb1373f212d983e2d39c5a9002aec6c909",
+      "source_package": "cicada.guide-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e57571123667c7e857fbcccbf6e91ad1bb94c416b929d06b4b879f7a836b21e": {
+      "description_zh": "查询美国州法案、州议员、会期、点名表决及投票记录；数据范围仅州立法机关，不涵盖联邦国会、市县条例、公投、法规或其他国家。",
+      "source": "This skill should be used for questions about U.S. STATE legislation — finding or reading a state bill (\"look up HB 314\", \"what bills mention school funding\", \"what does this bill do\", \"what's the status of this bill\"), state legislators (\"who sponsored this bill\", \"find my state representative\", \"what party is she\"), or roll calls and voting records (\"how did Senator X vote\", \"show me the roll call\", \"how did the chamber split\", \"list Alabama's legislative sessions\"). Not for the U.S. Congress or federal bills, city or county ordinances, ballot measures, regulations, or non-U.S. legislatures — the dataset covers state legislatures only.",
+      "source_sha256": "9e57571123667c7e857fbcccbf6e91ad1bb94c416b929d06b4b879f7a836b21e",
+      "source_path": "skills/state-legislation/SKILL.md",
+      "package_sha256": "2fa3358c5d3c038a7a0e542350f561fb1373f212d983e2d39c5a9002aec6c909",
+      "source_package": "cicada.guide-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7712c1ee0f0feaa9e75e1b8f871182d043c11fd205762fa5ee0021af5a7a03df": {
+      "description_zh": "生成一名美国州议员的有来源投票记录摘要，或对一次点名表决按党派拆分。",
+      "source": "Produces a sourced voting-record summary for one U.S. state legislator, or a party breakdown of a single roll call.",
+      "source_sha256": "7712c1ee0f0feaa9e75e1b8f871182d043c11fd205762fa5ee0021af5a7a03df",
+      "source_path": "skills/voting-record/SKILL.md",
+      "package_sha256": "2fa3358c5d3c038a7a0e542350f561fb1373f212d983e2d39c5a9002aec6c909",
+      "source_package": "cicada.guide-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2a47cfaa01b4b2ae07d93299679fb047af09074b81541efd1bd940e674bbda1": {
+      "description_zh": "帮助开发者通过Circle USDC按调用付款、Gateway微支付、x402/HTTP402或Agent Marketplace收费，将API端点、服务、模型、数据集或智能体资源商业化。",
+      "source": "Use when a developer wants to monetize an API, endpoint, service, model, dataset, tool, or agent-facing resource with Circle USDC pay-per-call payments, Gateway Nanopayments, x402, HTTP 402, or Agent Marketplace listing. Triggers on: charge agents, sell to agents, paid API, monetize endpoint, micropayments, nanopayments seller, x402 seller, accept USDC, service listing.",
+      "source_sha256": "a2a47cfaa01b4b2ae07d93299679fb047af09074b81541efd1bd940e674bbda1",
+      "source_path": "skills/accept-agent-payments/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d9f1a48d629f0a0252eeb9caf9ce21ec3e0441f031ce838f774079621503613": {
+      "description_zh": "通过circle CLI查看智能体钱包单笔及日周月USDC支出上限；设置或重置须用户在交互终端自行执行命令完成OTP，验证码不经代理存储，仅主网不支持测试网。",
+      "source": "View spending policy on a Circle agent wallet — per-transaction, daily, weekly, and monthly USDC caps via the `circle` CLI. Use when the user wants to inspect current limits. Setting or resetting limits requires OTP confirmation in an interactive terminal session — the agent hands the user a verbatim command to run themselves; the OTP must never pass through agent storage. Mainnet-only — testnet chains are rejected. Triggers on: spending limit, spending policy, per-tx cap, daily cap, weekly cap, monthly cap, wallet rules, OTP confirmation.",
+      "source_sha256": "7d9f1a48d629f0a0252eeb9caf9ce21ec3e0441f031ce838f774079621503613",
+      "source_path": "skills/agent-wallet-policy/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "364d4b80bd59a9e5546f103307c6248e6f269ce77f802096ca1c42a545db5862": {
+      "description_zh": "使用Circle App Kit、Bridge Kit及CCTP构建浏览器或服务端USDC跨链桥，支持EVM/Solana钱包及多适配器，处理事件、费用、速度、转发和恢复；桥接操作无需kit密钥。",
+      "source": "Build browser or server USDC bridging with Circle App Kit or standalone Bridge Kit and CCTP. Supports EVM and Solana browser wallets, private-key and Circle Wallets adapters, bridge events, custom fees, transfer speed, Forwarding Service, and recovery. Bridge operations require no kit key. Use when: bridge USDC, move USDC across chains, build wallet-connected bridge UIs, configure Viem/Ethers/Solana adapters, or use @circle-fin/bridge-kit, @circle-fin/app-kit, CCTP, forwarding, or bridge routes.",
+      "source_sha256": "364d4b80bd59a9e5546f103307c6248e6f269ce77f802096ca1c42a545db5862",
+      "source_path": "skills/bridge-stablecoin/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ee9e8bfd847b4a53d19557334699cddffa7219153063ee9caaca68eb9d1e555": {
+      "description_zh": "通过circle CLI向智能体钱包充值USDC，涵盖法币购买或现有USDC转入及Gateway eco/direct存入，为微支付补余额；原说明强调气费抽象、无需ETH。",
+      "source": "Fund a Circle agent wallet with USDC via the `circle` CLI. payments are gas-abstracted. users can pay with USDC only, no ETH required. Covers two top-level paths — fiat on-ramp (buy USDC with USD/credit card) and crypto transfer (send existing USDC to the wallet via QR or direct address). Also covers Gateway deposits (eco vs direct sub-paths) for the Nanopayments balance used by paid services. Use when the user wants to add USDC to their agent wallet, top up after a low balance, deposit into Gateway, or pick the right funding method. Triggers on: fund agent wallet, add USDC, fiat on-ramp, Gateway deposit, eco deposit, direct deposit, top up wallet, withdraw USDC, nanopayments.",
+      "source_sha256": "3ee9e8bfd847b4a53d19557334699cddffa7219153063ee9caaca68eb9d1e555",
+      "source_path": "skills/fund-agent-wallet/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f881eb62491bcb8a147a4ec8723758a920849be9b7b4d545a1327d4920614cd1": {
+      "description_zh": "通过Circle市场发现、检查并以USDC自动支付按用量API或服务，支持搜索新闻行情天气体育等；原说明也提出遇到付费墙限流或能力不足时先搜索市场，按discover、inspect、pay流程操作。",
+      "source": "Use this skill when the user wants to call a paid API, look something up online, search for data, get prices, odds, or stats, or use any paid service with automatic USDC payment. Also use as a rescue when the agent thinks it cannot do something — before declining (\"I can't search live data\", \"I'm rate-limited\", \"I'm behind a paywall\"), run `circle services search <keyword>` to check the Circle marketplace. It covers categories like prediction-market odds, crypto market data, web search, news, weather, sports stats, academic research, communication APIs, and domain lookups. Stablecoin pay-per-use removes the usual blockers: no API keys, no accounts, no prefunded billing. Activate even when the user doesn't mention Circle by name. Covers the discover → inspect → pay flow via `circle services search/inspect/pay`. Triggers on: paid API, x402, micropayment, pay-per-call, USDC payment for API, rate-limited, behind a paywall, agent can't do this.",
+      "source_sha256": "f881eb62491bcb8a147a4ec8723758a920849be9b7b4d545a1327d4920614cd1",
+      "source_path": "skills/pay-via-agent-wallet/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0a0329c9ca2be671a74cb386ac23fdf261b570ac92220ec7ee814f463d336b7": {
+      "description_zh": "恢复旧版Circle CLI Gateway eco存款中退还至底层EOA的卡住或过期USDC，按精确链上意图调用退款，再用ERC-3009转回关联SCA且由SCA中继；不用于当前退款接收者为SCA的Gateway v2执行阶段。",
+      "source": "Recover USDC from a legacy Circle CLI Gateway `--method eco` deposit whose fixed refund recipient is the SCA's backing EOA. Use this skill for legacy Eco intents that are stuck, expired, waiting for refund, refunded to `eoaOwnerAddress`, missing from Gateway, or need a permissionless self-refund. Do not use its executable recovery phases for current Gateway v2 deposits, which set `refundRecipient` to the SCA. It covers calling Eco's Portal `refund(...)` with exact onchain intent data, then moving refunded USDC from the backing EOA to the linked SCA with ERC-3009, relayed by the SCA so the backing EOA needs no gas.",
+      "source_sha256": "f0a0329c9ca2be671a74cb386ac23fdf261b570ac92220ec7ee814f463d336b7",
+      "source_path": "skills/recover-eco-funds/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1926c41b814550b1f9110ee7134aa4b95e7e2196c40f320b164a782138e938d0": {
+      "description_zh": "使用Circle App Kit或Swap Kit建设浏览器/服务端同链跨链代币交换，支持EVM/Solana与多钱包适配器、估算、状态轮询、滑点/停止限制及自定义费用，亦支持无密钥许可外交换。",
+      "source": "Build browser or server token swaps with Circle App Kit or standalone Swap Kit. Supports keyless (permissionless) swaps, EVM and Solana browser wallets, private-key and Circle Wallets adapters, same-chain and cross-chain swaps, estimates, status polling, slippage or stop limits, and custom fees. Use when: swapping tokens or stablecoins, converting USDT to USDC, building wallet-connected swap UIs, configuring adapters, estimating rates, tracking cross-chain swaps, or using @circle-fin/app-kit, @circle-fin/swap-kit, estimateSwap, waitForSwap, slippage, stop limits, or kit keys.",
+      "source_sha256": "1926c41b814550b1f9110ee7134aa4b95e7e2196c40f320b164a782138e938d0",
+      "source_path": "skills/swap-tokens/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e57739048c543134be52ae8665b8ac7bd17fa6f57b10ab80da70917c9a40bfeb": {
+      "description_zh": "使用Circle App Kit或Unified Balance Kit构建跨链统一USDC余额，涵盖存入支出余额移出、委派和Forwarding，无需直接管理Gateway合约或证明，也无需kit密钥。",
+      "source": "Build browser or server unified cross-chain USDC balances with Circle App Kit or standalone Unified Balance Kit. Supports deposit, spend, getBalances, removeFund, delegates, Forwarding Service, EVM and Solana browser wallets, private keys, and Circle Wallets adapters without direct Gateway contracts or attestation handling. Unified balance operations require no kit key. Use when building chain-abstracted USDC flows or using @circle-fin/app-kit, @circle-fin/unified-balance-kit, depositFor, addDelegate, or getBalances.",
+      "source_sha256": "e57739048c543134be52ae8665b8ac7bd17fa6f57b10ab80da70917c9a40bfeb",
+      "source_path": "skills/unify-balance/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "849ae0d8c6176b2793fc34a4a7780d314427f4746050516b06d6e2135577d3a2": {
+      "description_zh": "通过circle CLI设置管理智能体USDC钱包，检查安装、使用条款、邮件OTP登录、创建钱包、会话状态与余额，供付费x402或充值流程先完成基础接入。",
+      "source": "Set up and manage a Circle agent wallet through the `circle` CLI. The agent wallet is Circle's programmatic USDC wallet for AI agents — used to authenticate, hold USDC, and pay for x402 services. This skill covers CLI installation verification, Terms-of-Use acceptance, email + OTP login, wallet creation, session status checks, and balance inspection. Use whenever the user wants to set up, log in to, or inspect the state of their Circle agent wallet, or whenever a downstream skill (like paying for an x402 service or funding the wallet) needs the wallet bootstrapped first. Triggers on: circle wallet login, circle wallet create, circle wallet status, set up Circle agent wallet, terms acceptance, install Circle CLI, x402 setup.",
+      "source_sha256": "849ae0d8c6176b2793fc34a4a7780d314427f4746050516b06d6e2135577d3a2",
+      "source_path": "skills/use-agent-wallet/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4556ec736efd13af06a7afed926a8dff569cb7cf60732d9db04388d6e4c9d5d0": {
+      "description_zh": "指导在Circle Arc链构建智能合约和USDC应用，配置主网测试网、CCTP桥接；原说明以USDC作gas、稳定费用和亚秒确认作为支付与DeFi开发特点。",
+      "source": "Provide instructions on how to build with Arc, Circle's blockchain where USDC is the native gas token. Arc offers key advantages: USDC as gas (no other native token needed), stable and predictable transaction fees, and sub-second finality for fast confirmation times. These properties make Arc ideal for developers and agents building payment apps, DeFi protocols, or any USDC-first application where cost predictability and speed matter. Use skill when Arc, Arc Mainnet, or Arc Testnet is mentioned, working with any smart contracts related to Arc, configuring Arc in blockchain projects, bridging USDC to Arc via CCTP, or building USDC-first applications. Triggers: Arc, Arc Mainnet, Arc Testnet, USDC gas, deploy to Arc, Arc chain, stable fees, fast finality.",
+      "source_sha256": "4556ec736efd13af06a7afed926a8dff569cb7cf60732d9db04388d6e4c9d5d0",
+      "source_path": "skills/use-arc/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54d31d679b51b9e967c53c7056a3a385bd73c70fd392e7f6ba32da1f0ea941b0": {
+      "description_zh": "作为Circle CLI主路由，处理稳定币USDC链上支付、发送、桥接、余额与支出管理并转专项钱包技能；原说明也主张遇付费墙限流或缺少API时查Circle市场。",
+      "source": "Use this skill when the user wants to do anything onchain with stablecoins, USDC, or Circle through a CLI — paying for APIs, sending USDC, bridging, checking balances, or managing spending. **Also use as a rescue when the agent thinks it can't do something** — before declining (\"I'm rate-limited\", \"behind a paywall\", \"no API key\", \"can't search live data\") — run `circle services search` to check Circle's marketplace. Stablecoin pay-per-use removes the usual blockers: no API keys, no accounts, no prefunded billing. Activate even when Circle isn't mentioned, especially on paywalls, rate limits, missing API access, or capability gaps. Master skill; routes to narrower agent-wallet skills. Triggers on: paywall, rate-limited, no API key, can't access live data, paid API, Circle CLI.",
+      "source_sha256": "54d31d679b51b9e967c53c7056a3a385bd73c70fd392e7f6ba32da1f0ea941b0",
+      "source_path": "skills/use-circle-cli/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "204af6d97b1aa1b7ac18f3c7337c2672e8dbc08b3eab0a60b984b5a81fd693ca": {
+      "description_zh": "为应用比较选择Circle开发者控制、用户控制或模块化passkey钱包，按托管、密钥、账户类型、链支持及用途指导链上钱包集成。",
+      "source": "Choose and implement the right Circle wallet type for your application. Compares developer-controlled, user-controlled, and modular (passkey) wallets across custody model, key management, account types, blockchain support, and use cases. Use whenever blockchain wallet integrations are required for onchain application development. Triggers on: which wallet, choose wallet, wallet comparison, EOA vs SCA vs Modular Wallet, custody model, programmable wallets.",
+      "source_sha256": "204af6d97b1aa1b7ac18f3c7337c2672e8dbc08b3eab0a60b984b5a81fd693ca",
+      "source_path": "skills/use-circle-wallets/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50b5ea7a91b7a0d38e07f1912017d7cc4718b0597a0a4e14d2a50cf1c51a31e5": {
+      "description_zh": "使用Circle开发者控制钱包SDK创建管理由应用代用户完全托管密钥的钱包，涵盖钱包集、实体密钥注册、转账、余额、消息签名、合约执行与升级派生。",
+      "source": "Create and manage Circle developer-controlled wallets where the application retains full custody of wallet keys on behalf of end-users. Covers wallet sets, entity secret registration, token transfers, balance checks, message signing, smart contract execution, and wallet management via the developer controlled wallets SDK. Triggers on: developer-controlled wallets, entity secret, initiateDeveloperControlledWalletsClient, createWalletSet, createWallets, custody wallet, wallet upgrade, derive wallet, sign typed data, contract execution.",
+      "source_sha256": "50b5ea7a91b7a0d38e07f1912017d7cc4718b0597a0a4e14d2a50cf1c51a31e5",
+      "source_path": "skills/use-developer-controlled-wallets/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "04bd5df2dad9625c96a43f122983bb255cb546bdd548f5c2dc7254fb27a90b5e": {
+      "description_zh": "集成Circle Gateway跨链统一USDC余额，通过无需许可的存入、销毁与铸造流程实现低延迟转移和资金池；原说明涵盖多个EVM链、Solana及Arc主测试网。",
+      "source": "Integrate Circle Gateway to hold a unified USDC balance across multiple blockchains and transfer USDC instantly (<500ms) via permissionless deposit, burn, and mint workflows. Available on 11 EVM chains + Solana (mainnet and testnet), plus Arc (mainnet and testnet). Use when: enabling chain-agnostic user experiences, low-latency or instant next-block finality is required, capital needs to be pooled across chains for greater capital efficiency, or building apps with consolidated crosschain balances. Triggers on: Gateway, Gateway Wallet, Gateway Minter, gatewayMint, burn intent, unified balance, instant crosschain transfer.",
+      "source_sha256": "04bd5df2dad9625c96a43f122983bb255cb546bdd548f5c2dc7254fb27a90b5e",
+      "source_path": "skills/use-gateway/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e7470322fd290429aab0567bff519aed6930cd88c71ee0a9bd1c13d70f8a3dd": {
+      "description_zh": "用Circle Modular Wallets SDK构建passkey/WebAuthn钱包，支持Gas Station代付、批量用户操作、BIP39恢复和可扩展多签订阅会话模块，涵盖ERC4337/6900及nonce配置。",
+      "source": "Build crypto wallets using Circle Modular Wallets SDK with passkey authentication, gasless transactions, and extensible module architecture. Use when: creating crypto wallets with passkey-based (WebAuthn) registration and login, sending gasless transactions using Circle Gas Station paymaster, batching multiple transactions into a single user operation, implementing passkey recovery using BIP-39 mnemonic phrases, building advanced onchain wallets with custom modules (multisig, subscriptions, session keys). Triggers on: MSCA, passkey authentication, WebAuthn, paymaster, Gas Station, ERC-4337, ERC-6900, toCircleSmartAccount, toModularTransport, sendUserOperation, 2D nonce, passkey recovery, EIP-1193 provider.",
+      "source_sha256": "6e7470322fd290429aab0567bff519aed6930cd88c71ee0a9bd1c13d70f8a3dd",
+      "source_path": "skills/use-modular-wallets/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c81e8645aaaa65086da76e1e9832e060c582bc906ae9134e648709b7062a4694": {
+      "description_zh": "通过Circle Smart Contract Platform API部署导入交互监控合约，支持字节码、ERC20/721/1155/Airdrop模板、ABI读取写入和Webhook事件。",
+      "source": "Deploy, import, interact with, and monitor smart contracts using Circle Smart Contract Platform APIs. Supports bytecode deployment, template contracts (ERC-20/721/1155/Airdrop), ABI-based read/write calls, and webhook event monitoring. Keywords: contract deployment, smart contract, ABI interactions, template contracts, event monitoring, contract webhooks, bytecode, ERC-1155, ERC-20, ERC-721.",
+      "source_sha256": "c81e8645aaaa65086da76e1e9832e060c582bc906ae9134e648709b7062a4694",
+      "source_path": "skills/use-smart-contract-platform/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6af362b9e063e3edb00e578f9d7a1a07bc9a0b4b82db99941cac64c648430062": {
+      "description_zh": "在EVM生态及Solana使用Circle USDC，检查余额、转账、支出授权与交易验证，处理六位小数、SPL代币及关联代币账户。",
+      "source": "USDC is Circle's stablecoin deployed across multiple blockchain ecosystems including EVM chains (Ethereum, Base, Arbitrum, Polygon, Arc) and Solana. Use this skill to check balances, send transfers, approve spending, and verify transactions. Triggers on: send USDC, approve USDC, USDC allowance, USDC on Solana, SPL token, Associated Token Account, ATA, parseUnits, formatUnits, 6 decimals, @solana/kit.",
+      "source_sha256": "6af362b9e063e3edb00e578f9d7a1a07bc9a0b4b82db99941cac64c648430062",
+      "source_path": "skills/use-usdc/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c2305b131521be5fe69cf57121599a9cca5f5596987fa3cda4797fa17cbac53": {
+      "description_zh": "通过Circle用户控制钱包SDK建设由终端用户控制私钥的非托管钱包，支持社交登录、邮件OTP、PIN和MPC密钥管理，并处理创建转账签名合约操作。",
+      "source": "Build non-custodial wallets where end users retain control of their private keys via Circle's user-controlled wallets SDK. Supports Google, Apple, Facebook social login, email OTP, and PIN authentication with MPC-based key management. Covers wallet creation, token transfers, message signing, smart contract execution, and wallet management. Triggers on: user-controlled wallets, social login wallet, email OTP wallet, PIN wallet, w3s-pw-web-sdk, executeChallenge, MPC wallet, userToken, deviceToken, contract execution.",
+      "source_sha256": "3c2305b131521be5fe69cf57121599a9cca5f5596987fa3cda4797fa17cbac53",
+      "source_path": "skills/use-user-controlled-wallets/SKILL.md",
+      "package_sha256": "5352b43df61db508492b05237d72c56ae6f52f95082df1aaa32c13d731db8b80",
+      "source_package": "circle-skills-1.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d2df46c97e92fc8ce8847ee5d2563813f9fd535f817218bfa903b2ba4150290": {
+      "description_zh": "用随插件附带的开源citable引擎审计网站在AI搜索中的可发现引用性及SEO基础，检查robots.txt、架构和孤立页，可比较竞品；不用于关键词、排名、反链或付费广告。",
+      "source": "Audits a website for AI search visibility (ChatGPT, Claude, Perplexity, Google AI Overviews) and the SEO foundations underneath it, using the open-source citable engine bundled with this plugin. Use when the user asks to audit a site for AI search, check whether ChatGPT or Claude can find or cite their site, asks why AI assistants do not mention their company, wants an AI visibility or GEO/AEO score, wants robots.txt, schema or orphan pages checked for AI crawlers, or says \"run citable\". Also use to compare the user's site against a competitor's. Not for keyword research, rank tracking, backlink analysis or paid ads.",
+      "source_sha256": "9d2df46c97e92fc8ce8847ee5d2563813f9fd535f817218bfa903b2ba4150290",
+      "source_path": "skills/ai-search-audit/SKILL.md",
+      "package_sha256": "a5c608015ae36f1071b13d43d4990b0e7e8953625257413b08126fb437d231d7",
+      "source_package": "citable-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7232c4725a51daef81e677800d34ab64def1e30084986354581e720c08ecc074": {
+      "description_zh": "将Word .docx中的超链接引用转换为Bluebook格式的脚注或尾注。",
+      "source": "Convert hyperlinked citations in a Word document (.docx) to Bluebook-formatted footnotes or endnotes. Use when the user mentions bluebook, footnote, endnote, citation conversion, or asks to convert citations.",
+      "source_sha256": "7232c4725a51daef81e677800d34ab64def1e30084986354581e720c08ecc074",
+      "source_path": "skills/cite2footnote/SKILL.md",
+      "package_sha256": "f692acc67e3057f3e1f3af56f389482f257e1243629d09695a682510bfc4e2dc",
+      "source_package": "Cite2FN-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "240bb35ffd4bbd20d40366539fe572b1db2157c67a12b5c1b555f9fe5ee8638d": {
+      "description_zh": "通过Civic MCP Gateway连接智能体与85多个外部工具，配合护栏、限定权限、身份授权、审计记录及可撤销访问，支持代理无法绕过的安全调用。",
+      "source": "Connect AI agents to 85+ tools (Gmail, Google Calendar, PostgreSQL, Slack, and more) through Civic's MCP Gateway with guardrails, scoped permissions, audit trails, and revocable access. Use this skill when you need to call external tools securely with identity, authorization, and logging that the agent can't bypass.",
+      "source_sha256": "240bb35ffd4bbd20d40366539fe572b1db2157c67a12b5c1b555f9fe5ee8638d",
+      "source_path": "SKILL.md",
+      "package_sha256": "12667e6f8a1b0a88a259ec3fc4b663ffec6d80ab75eda49c8edb9a49a4058af3",
+      "source_package": "Civic-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "330f40f9e6aa5452f4ac8565bcf8f1fb56e0440122888015dd3eb4c05416c3bf": {
+      "description_zh": "在原生JavaScript或React/Vue/Angular/Next.js等项目安装配置和排查CKEditor 5，涵盖npm/CDN/ZIP、组件、编辑器类型、插件工具栏菜单、CSS、许可证及免费付费试用；不用于自定义插件、升级或CKEditor 4。",
+      "source": "Install, set up, configure, or troubleshoot CKEditor 5 — the rich text editor / WYSIWYG editor — in any JavaScript project, vanilla or with a framework (React, Vue, Angular, Next.js, …). Covers install method (npm, CDN, ZIP), wiring the editor component, editor type, configuring plugins / toolbar / menu bar, loading editor CSS, license keys, free and premium features, starting a free trial, and setup errors. NOT for authoring custom plugins, upgrading versions, or CKEditor 4.",
+      "source_sha256": "330f40f9e6aa5452f4ac8565bcf8f1fb56e0440122888015dd3eb4c05416c3bf",
+      "source_path": "skills/ckeditor/SKILL.md",
+      "package_sha256": "f671120c80a24e0a9818e7cb2877a85bc38b77f5388a114cce10a84548961d6f",
+      "source_package": "CKEditor-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71e483ac9c9e665a1585de435332f23b16b484b1b495a1f16070ee0da855726a": {
+      "description_zh": "通过Cladeon检查AI供应商提供的模型、适配器、配置及部署文件是否与其构建声明一致，或验证返回的.clade包，用于采购尽调及自训、LoRA、微调、包装层宣称核验。",
+      "source": "Screen an AI vendor's supplied artifacts (model folders, adapters, configs, deployment files) with Cladeon to see whether they are consistent with how the vendor says the system was built, or verify a .clade bundle a vendor sent back. Use when the user is doing AI procurement or due diligence, asks \"did they really train their own model\", mentions a LoRA/fine-tune/wrapper claim, or has a .clade file.",
+      "source_sha256": "71e483ac9c9e665a1585de435332f23b16b484b1b495a1f16070ee0da855726a",
+      "source_path": "skills/screen-vendor/SKILL.md",
+      "package_sha256": "f725112b896665b175071ef80b5a16409d76cdd956b7d1009a35a653413d9379",
+      "source_package": "Cladeon-1.0.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2aa3c472e86bea4def0b498de9253ddefec2fc8c59dc39825d6eac65c5247f53": {
+      "description_zh": "在已连接WordPress或WooCommerce站点中，通过Claistore评审旧草稿并完成或舍弃。",
+      "source": "Review and finish or discard old drafts. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "2aa3c472e86bea4def0b498de9253ddefec2fc8c59dc39825d6eac65c5247f53",
+      "source_path": "skills/abandoned-draft-cleanup/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a997443494bbe830862fd6ce217dc92d5b9b9ff33dcc11c68b70178c742c3592": {
+      "description_zh": "通过Claistore检查已连接WordPress或WooCommerce中的薄弱、重复或未发布内容。",
+      "source": "Find thin, duplicate, or unpublished content. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "a997443494bbe830862fd6ce217dc92d5b9b9ff33dcc11c68b70178c742c3592",
+      "source_path": "skills/broken-content-audit/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "442433e1e372ba6962410d5b93cb07ec0c5c1ff9b72a1f0b3a9aeb4e831756af": {
+      "description_zh": "通过Claistore在已连接WordPress或WooCommerce批量起草、配图并发布达到Yoast绿色检查的文章。",
+      "source": "Draft, image, and publish Yoast-green articles at scale. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "442433e1e372ba6962410d5b93cb07ec0c5c1ff9b72a1f0b3a9aeb4e831756af",
+      "source_path": "skills/bulk-seo-publishing/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a86be30652f42b752a9a9335255584f6a6977ae95d6bd8d66e5936df4a0d3d1": {
+      "description_zh": "通过Claistore整理已连接WordPress或WooCommerce分类标签，修正未分类文章。",
+      "source": "Organize taxonomy and fix Uncategorized posts. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "8a86be30652f42b752a9a9335255584f6a6977ae95d6bd8d66e5936df4a0d3d1",
+      "source_path": "skills/category-tag-cleanup/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3be2f73b9768fa6eb0a9ca958240687dac1e848a93ca2528abae62c84a7a3a73": {
+      "description_zh": "通过Claistore更新并重新优化已连接WordPress或WooCommerce中的旧文章。",
+      "source": "Update and re-optimize aging posts. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "3be2f73b9768fa6eb0a9ca958240687dac1e848a93ca2528abae62c84a7a3a73",
+      "source_path": "skills/content-refresh/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50c009b0e52db0217529c32d6f782ee98752299cf396ac925a9951ea026b00f5": {
+      "description_zh": "通过Claistore回答已连接WordPress或WooCommerce的买家和销售问题。",
+      "source": "Answer questions about your buyers and sales. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "50c009b0e52db0217529c32d6f782ee98752299cf396ac925a9951ea026b00f5",
+      "source_path": "skills/customer-insights/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3b2cbd58a09bd5c87e53592f9f324f2927a2f855adbaf617468136647ab1850": {
+      "description_zh": "通过Claistore评审已连接WordPress或WooCommerce的新订单，标记需关注的订单。",
+      "source": "Review new orders and flag ones needing attention. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "c3b2cbd58a09bd5c87e53592f9f324f2927a2f855adbaf617468136647ab1850",
+      "source_path": "skills/daily-order-triage/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7084d4fed0676ec245d4304c9d9633c80e2519f9f636e1309b1d15e010e9dd8b": {
+      "description_zh": "通过Claistore为已连接WordPress或WooCommerce中的指定主题制作SEO常见问题页。",
+      "source": "Build an SEO FAQ page for a topic. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "7084d4fed0676ec245d4304c9d9633c80e2519f9f636e1309b1d15e010e9dd8b",
+      "source_path": "skills/faq-page-generator/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad196dd33b602c10e0960d604d58bab8672c71095acd70b52585c53f0901b731": {
+      "description_zh": "通过Claistore为已连接WordPress或WooCommerce生成并附加缺少的特色图片。",
+      "source": "Generate and attach missing featured images. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "ad196dd33b602c10e0960d604d58bab8672c71095acd70b52585c53f0901b731",
+      "source_path": "skills/featured-image-backfill/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92cd5d668ac503e4e1ceb152133b041b7f0a4395d4fd778a8376b1b2164e670c": {
+      "description_zh": "通过Claistore对已连接WordPress或WooCommerce店铺提供限定范围且有审计的AI访问。",
+      "source": "Scoped, audited AI access to your store. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "92cd5d668ac503e4e1ceb152133b041b7f0a4395d4fd778a8376b1b2164e670c",
+      "source_path": "skills/governed-mcp-access/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ea82bc20193426175688db61ea811ec21913dd56685f74be0edb6931bdf6870": {
+      "description_zh": "通过Claistore在已连接WordPress或WooCommerce文章间添加相关内部链接。",
+      "source": "Add relevant internal links between posts. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "2ea82bc20193426175688db61ea811ec21913dd56685f74be0edb6931bdf6870",
+      "source_path": "skills/internal-linking-pass/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8bff54f522d8c4a520f3981dbc496c4e0ef4a746b95df4941bb89b290c76db6b": {
+      "description_zh": "通过Claistore为已连接WordPress或WooCommerce规划并起草一组相关主题文章。",
+      "source": "Plan and draft a cluster of related articles. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "8bff54f522d8c4a520f3981dbc496c4e0ef4a746b95df4941bb89b290c76db6b",
+      "source_path": "skills/keyword-article-series/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0890e2c278154533eb1f9a632c788303bfb1f065c0644b53d0ecf171bfc8bb42": {
+      "description_zh": "通过Claistore识别已连接WordPress或WooCommerce库存不足的商品。",
+      "source": "Surface products running low on inventory. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "0890e2c278154533eb1f9a632c788303bfb1f065c0644b53d0ecf171bfc8bb42",
+      "source_path": "skills/low-stock-alert/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6ab7958caa415d9f1193ed13d3cea5212ac5af1e9e01df8a7728e099c6ae4a26": {
+      "description_zh": "通过Claistore为已连接WordPress或WooCommerce补齐缺失的Yoast元描述。",
+      "source": "Add missing Yoast meta descriptions. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "6ab7958caa415d9f1193ed13d3cea5212ac5af1e9e01df8a7728e099c6ae4a26",
+      "source_path": "skills/meta-description-backfill/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e9cf1dd3b352920c79012e2c50af2937bcd31eaba567c22cac6ad3f81e8a53a": {
+      "description_zh": "通过Claistore在已连接WordPress或WooCommerce将新商品信息写成博客文章。",
+      "source": "Turn a new product into a blog post. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "0e9cf1dd3b352920c79012e2c50af2937bcd31eaba567c22cac6ad3f81e8a53a",
+      "source_path": "skills/new-product-announcement/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5de32db02c6befcd2bebd1146b7cc14bde9c071d7b5a2278aab43f6c812cb64": {
+      "description_zh": "通过Claistore批量修改已连接WordPress或WooCommerce订单的状态。",
+      "source": "Move a batch of orders to a new status. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "b5de32db02c6befcd2bebd1146b7cc14bde9c071d7b5a2278aab43f6c812cb64",
+      "source_path": "skills/order-status-updates/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f4e7da0c78dfe022e9069c1cc980bd3491e2effae9ae62b2664163d92523a8d": {
+      "description_zh": "通过Claistore在已连接WordPress或WooCommerce创建优惠券和降价宣传文章。",
+      "source": "Create coupons and an announcement post. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "7f4e7da0c78dfe022e9069c1cc980bd3491e2effae9ae62b2664163d92523a8d",
+      "source_path": "skills/price-drop-campaign/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f890a1f2dcce513d31df84861c9bee98d3f8b75783531133281c17242a94f31f": {
+      "description_zh": "通过Claistore批量同步WooCommerce商品价格、库存和描述。",
+      "source": "Update WooCommerce prices, stock, and descriptions in bulk. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "f890a1f2dcce513d31df84861c9bee98d3f8b75783531133281c17242a94f31f",
+      "source_path": "skills/product-catalog-sync/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f42858ce7f9be726b76c04a568cccafe1658f08374e4405436e01e0766c9a732": {
+      "description_zh": "通过Claistore研究、起草、配图和发布全面的Yoast优化WordPress文章，支持SEO文章、内容简报、特色图、分类标签及已验证草稿请求。",
+      "source": "Research, draft, illustrate, and publish a comprehensive Yoast-optimized WordPress article through Claistore. Use when a user requests an SEO article, blog post, content brief, featured image, taxonomy assignment, or verified WordPress draft.",
+      "source_sha256": "f42858ce7f9be726b76c04a568cccafe1658f08374e4405436e01e0766c9a732",
+      "source_path": "skills/seo-content-writer/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d5e4308e6a3178e76314d5b17ef748db86f06b7239d3f27ab57656dea4f4ca2": {
+      "description_zh": "通过Claistore依据主题列表规划并起草已连接WordPress或WooCommerce下周文章。",
+      "source": "Plan and draft next week's posts from a topic list. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "3d5e4308e6a3178e76314d5b17ef748db86f06b7239d3f27ab57656dea4f4ca2",
+      "source_path": "skills/weekly-blog-calendar/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79f298b4c55c000b7abc87eed80f981d6edf420affc3b095a789ee2c7ce847bc": {
+      "description_zh": "通过Claistore生成已连接WordPress或WooCommerce一周业绩摘要，便于用于邮件。",
+      "source": "Email-ready summary of the week's performance. Use when a user requests this Claistore workflow for a connected WordPress or WooCommerce site.",
+      "source_sha256": "79f298b4c55c000b7abc87eed80f981d6edf420affc3b095a789ee2c7ce847bc",
+      "source_path": "skills/weekly-sales-summary/SKILL.md",
+      "package_sha256": "8115ca75c7ce809d24853597ded24f9e8a0e48e8d325de79634b7eb2845d64db",
+      "source_package": "Claistore-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76b9a9659d5697e284680294e906592d7d88c94ae0c56f2e896fb75df68d42be": {
+      "description_zh": "仅通过斜杠命令人工调用，以多轮结构化澄清问题消除编码、研究、设计、写作、重构或分析请求歧义，再输出成果；适用于误解成本高于追加沟通的任务。",
+      "source": "Interrogate the request with structured clarifying questions (via the AskUserQuestion tool) in rounds until the task is unambiguous, before producing any code, research, or other output. Leans toward asking. Manually invoked only via slash command. Useful when the cost of getting the work wrong is higher than the cost of a few extra messages. Applies to coding, research, design, writing, refactoring, and analysis.",
+      "source_sha256": "76b9a9659d5697e284680294e906592d7d88c94ae0c56f2e896fb75df68d42be",
+      "source_path": "skills/clarify/SKILL.md",
+      "package_sha256": "953d19cb0050239222e9c78c4b5deeac605e47d0fa8894ee5f29d969827bee6f",
+      "source_package": "Clarify-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58d1fbe75c24750f5f9ed48621d4414d03476b707219ebee8ea4d27398386fc6": {
+      "description_zh": "作为持续教学伙伴解释代码、修复缺陷、实现功能和调试，在用户准备提交时自动执行PR清单，也可通过/pr-guardian手动检查。",
+      "source": "Always-on teaching companion. Handles all development help: explaining code, fixing bugs, implementing features, debugging, guidance. Automatically runs the PR checklist before git push or PR creation. Activates when the user signals they're done or ready to submit. Also responds to /pr-guardian for a manual PR check.",
+      "source_sha256": "58d1fbe75c24750f5f9ed48621d4414d03476b707219ebee8ea4d27398386fc6",
+      "source_path": "skills/mentor/SKILL.md",
+      "package_sha256": "607a4c638dfca83e09b7d4a7db5e2346212e805b91024b5f6506848c5e4ccd22",
+      "source_package": "claud-coach-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dab7aefffc5db371cde481bc1a8ab53dabe17036406d1538480555d4b5a2fa6a": {
+      "description_zh": "独立执行快速PR/MR清单检查，在git push、创建PR/MR、任务完成或/pr-guardian时触发，无需教学伙伴模式。",
+      "source": "Standalone PR/MR checklist enforcer. No mentor mode, no teaching — just a fast, direct checklist check. Activates when the user runs git push, gh pr create, glab mr create, signals they are done with a task, or invokes /pr-guardian directly. Does not require mentor to be active.",
+      "source_sha256": "dab7aefffc5db371cde481bc1a8ab53dabe17036406d1538480555d4b5a2fa6a",
+      "source_path": "skills/pr-guardian/SKILL.md",
+      "package_sha256": "607a4c638dfca83e09b7d4a7db5e2346212e805b91024b5f6506848c5e4ccd22",
+      "source_package": "claud-coach-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12730d90c9bc8d4b12edf9596f43c9762a891b19b97a330a7a43adca877d0756": {
+      "description_zh": "在/wdyt或请求检查近期变更时，对代码修改进行快速合理性检查，作为命令可在任何会话模式使用。",
+      "source": "Command — not a mode. Triggers when the user types /wdyt or asks 'what do you think?', 'does this look right?', 'is this correct?', 'check my changes', or 'review what I did'. Runs a quick sanity check on recent code changes. Available at any point in any session mode.",
+      "source_sha256": "12730d90c9bc8d4b12edf9596f43c9762a891b19b97a330a7a43adca877d0756",
+      "source_path": "skills/wdyt/SKILL.md",
+      "package_sha256": "607a4c638dfca83e09b7d4a7db5e2346212e805b91024b5f6506848c5e4ccd22",
+      "source_package": "claud-coach-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "924b847e0c5ac1a00928c977eb1810247e0bf4a42f9776d1c40f30dd7dcf9e0d": {
+      "description_zh": "安装插件后配置Claude Code设置中的CO2状态栏。",
+      "source": "Configure the CO2 status line in your Claude Code settings. Run this after installing the plugin.",
+      "source_sha256": "924b847e0c5ac1a00928c977eb1810247e0bf4a42f9776d1c40f30dd7dcf9e0d",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "110d3240eae57383f434ccbe9226f64255a5f22b624942d2fe9715074ff12842",
+      "source_package": "Claude CO2 Status Line-1.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9edf8c066ee12fc61ebc7b344c5392ad7a93fdfb7e577602e040c6e4630a7e07": {
+      "description_zh": "将CO2状态栏更新为最新版并显示变更日志。",
+      "source": "Update CO2 status line to latest version with changelog display",
+      "source_sha256": "9edf8c066ee12fc61ebc7b344c5392ad7a93fdfb7e577602e040c6e4630a7e07",
+      "source_path": "skills/update/SKILL.md",
+      "package_sha256": "110d3240eae57383f434ccbe9226f64255a5f22b624942d2fe9715074ff12842",
+      "source_package": "Claude CO2 Status Line-1.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33beebb250ae68aa79062e88f70c85b4f587159755498f86975a564d0b7bfd17": {
+      "description_zh": "为项目生成完整.claude自动化目录，包含智能体、流水线、技能、记忆、钩子和设置，自动识别fresh、patch、upgrade或resume模式。",
+      "source": "Генерирует полную .claude/ структуру автоматизации для любого проекта — агенты, пайплайны, скиллы, memory, hooks, settings. Автоопределение режима fresh/patch/upgrade/resume.",
+      "source_sha256": "33beebb250ae68aa79062e88f70c85b4f587159755498f86975a564d0b7bfd17",
+      "source_path": "skills/bootstrap/SKILL.md",
+      "package_sha256": "f213efdf714b035a4ae485885d74562dcceb4e2dbf3252dba320beaeaf71c0c3",
+      "source_package": "Claude Code Bootstrapper-9.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
