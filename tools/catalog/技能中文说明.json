@@ -69649,6 +69649,1086 @@
       "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
       "source_package": "Snagly-1.3.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f089111d8e1f88542a25965408ccc330acdbd336b8eb945ef2aac90fc0ca225": {
+      "description_zh": "在真实浏览器触发注册、邀请、重置密码、订单确认等流程，确认邮件实际到达受控测试邮箱、内容符合承诺，并沿链接返回浏览器完成闭环。验证投递和内容，令牌重用过期语义转交 auth-session-audit，不把页面声称已发送当邮件验收。",
+      "source": "Verify the email half of a web flow end to end — trigger the flow in a real browser (signup, invite, password reset, order confirmation, notification), confirm the email actually arrives in a test-controlled inbox, check its content against what the flow promised, and follow its links back into the browser to complete the loop. Use whenever the user wants to test that an email is sent, arrives, reads correctly, or its links work — trigger on phrases like \"verify the password reset email,\" \"does the invite email arrive,\" \"check the confirmation email content,\" \"test the email flow,\" even without the word Playwright. Distinct from flow-runner (which stops at \"the app said it sent an email\") and auth-session-audit (which owns token lifecycle semantics like reuse/expiry — this skill verifies delivery and content, then hands token-semantics questions there).",
+      "source_sha256": "6f089111d8e1f88542a25965408ccc330acdbd336b8eb945ef2aac90fc0ca225",
+      "source_path": "skills/email-verification/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50b7ed2d4d51bae86e8298f74a445a047ed5309e26b3a7a0501508425cbb79f2": {
+      "description_zh": "结合 Figma MCP 设计与真实浏览器实现，逐项对比结构、标签、必填标记、下拉选项、条件状态和视觉样式，形成带证据差异报告。适用于设计稿与站点对照，不是同站跨时间像素差异或单纯截图。",
+      "source": "Compare a Figma design against its live web implementation using the Figma MCP server (design side) and a real browser via Playwright MCP or @playwright/cli (implementation side), producing an evidence-backed diff report — field-by-field structure, labels, required markers, dropdown option lists, conditional states, and visual styling. Use whenever the user provides a Figma URL and a site URL and wants to know if the implementation matches the design — trigger on phrases like \"compare the Figma design against...\", \"does the site match the design,\" \"design QA,\" \"verify this screen against the mock,\" or \"check the implementation against Figma,\" even if they never say Playwright or MCP. Distinct from visual-regression (which pixel-diffs two captures of the same site over time — no Figma involved) and visual-snapshot (capture only, no comparison). This skill compares design intent to built reality, which is judgment work, not pixel math.",
+      "source_sha256": "50b7ed2d4d51bae86e8298f74a445a047ed5309e26b3a7a0501508425cbb79f2",
+      "source_path": "skills/figma-compare/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d1f84bbf81a5a01295ecf315860c1e7ab570b8edfd0246c8f51b4b708c8f95b": {
+      "description_zh": "在当前构建中忠实重跑已有缺陷的最小复现，逐项判断 FIXED、STILL BROKEN、REGRESSED 或 BLOCKED，并更新证据包及缺陷账本。没有已记录复现步骤时先用 bug-triage。",
+      "source": "Re-verify previously-found defects against the current build using a real browser — take one or more defect IDs (or \"all open defects\"), locate each one's recorded minimal repro, re-run it faithfully at the original rigor, and deliver a per-defect verdict of FIXED, STILL BROKEN, REGRESSED, or BLOCKED, updating the bug bundle and defect ledger in place. Use whenever the user wants to know if a fix landed, whether known bugs are still present on the latest build, or to refresh the defect ledger after a deploy — trigger on phrases like \"is D4 fixed,\" \"re-check the open bugs,\" \"did the fix for the invite bug land,\" \"verify the fixes,\" or \"re-run the defect checks on the new build,\" even without the word Playwright. Distinct from bug-triage, which investigates something newly suspected broken and produces the repro this skill consumes — if a defect has no recorded minimal repro yet, triage comes first.",
+      "source_sha256": "2d1f84bbf81a5a01295ecf315860c1e7ab570b8edfd0246c8f51b4b708c8f95b",
+      "source_path": "skills/fix-verifier/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f99f5eb1497e2f1bcc91c4d6ade93ae3a124c381c0f151f0a00aec761b045947": {
+      "description_zh": "通过 Playwright MCP 或 CLI 在真实浏览器执行登录、注册、结账、搜索和多步表单等端到端旅程，形成有证据的结构化通过失败报告。适用于实际验证、冒烟、场景运行及浏览器自动化测试，而非只描述方案。",
+      "source": "Drive and verify end-to-end user flows (login, signup, checkout, search, multi-step forms/wizards, etc.) in a real browser using Playwright, via either the Playwright MCP server or the @playwright/cli, and produce a structured pass/fail run report with evidence. Use this whenever the user wants to test, verify, walk through, smoke-test, or reproduce a user journey in a web app — phrases like \"test the checkout flow,\" \"walk through login and make sure it works,\" \"does the signup form actually work,\" \"run this scenario against staging,\" \"make sure this didn't break,\" or \"reproduce this bug in the browser\" should all trigger it, even if the user never says \"Playwright,\" \"E2E,\" or \"MCP\" explicitly. Also trigger when the user asks to write or run a browser automation test, not just describe one.",
+      "source_sha256": "f99f5eb1497e2f1bcc91c4d6ade93ae3a124c381c0f151f0a00aec761b045947",
+      "source_path": "skills/flow-runner/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e563587a8c4b2b46708863961e649ee8d0eceb5ad1c82d1d4c177bcda1f6268d": {
+      "description_zh": "用空值、边界长度、Unicode、异常格式和姓名撇号等现实但少见输入检查表单稳健性，验证提示、崩溃、数据和布局。仅为 UX 检查，不使用注入载荷、不绕过认证或访问非自有数据；安全相关发现仅标记供正式复核。",
+      "source": "Test form fields with unusual-but-realistic inputs (empty, boundary-length, unicode, malformed formats, real-but-uncommon characters like apostrophes in names) using a real browser, to verify the app degrades gracefully — clear validation messages, no crashes, no data corruption, no broken layout. Use whenever the user wants to test form robustness, input validation, edge-case inputs, or how a form handles unusual data — trigger on phrases like \"test form validation,\" \"fuzz this form,\" \"check edge-case inputs,\" or \"does this form handle unusual input gracefully.\" This is explicitly a UX/robustness check, not a security or penetration test — it never uses injection payloads, never attempts to bypass authentication or access data that isn't its own, and never tries to confirm or exploit a vulnerability. If something observed looks security-relevant, the job is to flag it for proper review, not investigate further.",
+      "source_sha256": "e563587a8c4b2b46708863961e649ee8d0eceb5ad1c82d1d4c177bcda1f6268d",
+      "source_path": "skills/form-fuzzing/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2892d9ed4575736466f1305cd6de7304a9acc5a5ad78fec88e89b65ca6f65078": {
+      "description_zh": "通过真实浏览器检查网站支持地区语言的切换、原始翻译键泄漏、RTL、文本溢出、跨导航保持、hreflang 配对及日期币种数字格式。评估机械正确性，可指出明显未翻译内容，不评价语言地道度或文化质量。",
+      "source": "Check internationalization correctness across a site's supported locales using a real browser — text actually changes per locale, no leaked raw translation keys, right-to-left layouts don't visually break, translated text doesn't overflow its container, locale selection persists across navigation, hreflang tags correctly pair locale variants, and date/currency/number formatting matches the locale. Use whenever the user wants to check translations, locale switching, RTL layout, or multi-language correctness — trigger on phrases like \"check our translations,\" \"test locale switching,\" \"does RTL work,\" or \"audit our i18n.\" This checks mechanical correctness, not translation quality — it can flag obviously broken or untranslated text but doesn't grade whether a translation is idiomatic or culturally appropriate, the same kind of judgment call this toolkit stays out of for visual design.",
+      "source_sha256": "2892d9ed4575736466f1305cd6de7304a9acc5a5ad78fec88e89b65ca6f65078",
+      "source_path": "skills/i18n-audit/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed9d63a0012e7fcbcdbe4d90e957f252854afdbf2807409927e4370285fceb9c": {
+      "description_zh": "作为 Jira Cloud 通用读写组件，获取 issue、执行 JQL、列出项目字段及状态转换，或创建工单、评论和变更状态，供 bug-analyzer、bug-creator 等上层技能调用。",
+      "source": "Use when the user wants to read from or write to Jira Cloud — fetch an issue, run a JQL search, list projects/fields/transitions, or create issues, comments, and status transitions. The reusable Jira building block that higher-level QE skills (bug-analyzer, bug-creator) call. e.g. \"get PROJ-123\", \"find open bugs assigned to me\", \"create a bug in PROJ\".",
+      "source_sha256": "ed9d63a0012e7fcbcdbe4d90e957f252854afdbf2807409927e4370285fceb9c",
+      "source_path": "skills/jira-connector/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c49c5a1032fbdac579cd78f40143c1ec2e512552b052196fbe8b348765411be": {
+      "description_zh": "通过真实浏览器完整发现内部链接和图片，再以轻量 HTTP 检查状态，标记 404、5xx、重定向循环、长跳转链和坏图。侧重全面机械验证，区别于 scenario-mapper 的浅层精选场景。",
+      "source": "Crawl a site exhaustively (deeper and wider than scenario-mapper's shallow, curated pass) using a real browser to discover every internal link and image, then verify each one's status via lightweight HTTP requests — flagging 404s, 5xx errors, redirect loops, long redirect chains, and broken images. Use whenever the user wants a broken-link check, dead-link audit, crawl for 404s, or link validation across the site — trigger on phrases like \"check for broken links,\" \"crawl the site for dead links,\" \"find 404s,\" or \"audit our links.\" This is mechanical and exhaustive by design, unlike scenario-mapper's curated \"worth testing\" list — a link is either broken or it isn't, so completeness matters more than prioritization here.",
+      "source_sha256": "8c49c5a1032fbdac579cd78f40143c1ec2e512552b052196fbe8b348765411be",
+      "source_path": "skills/link-audit/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b135f935e0192cae35c87ae6bda6cdee64fdf3c6a7e947bbfa6dc0612b41b79": {
+      "description_zh": "在 Playwright 浏览器会话观察、断言及模拟网络/API，验证状态码、数据形态、重复或意外请求，模拟错误、慢响应、超时和空状态。补充 UI 流程及负向场景，使后端故障可重复触发。",
+      "source": "Observe, assert on, and mock network/API traffic during a browser session using Playwright (route interception via @playwright/cli, the MCP server's browser_route/network tools, or raw page.route()) — simulate error responses, slow responses, and empty states without a real backend, and assert on real traffic like status codes, payload shape, duplicate calls, or calls to unexpected endpoints. Use whenever the user wants to test an API error state, loading state, or empty state; verify what network calls a page makes; simulate a backend failure, timeout, or 500; check that no unwanted or duplicate requests fire; or assert on a request/response payload — trigger even without the words \"mock,\" \"route,\" or \"Playwright.\" Complements flow-runner (executes the UI-level flow) and scenario-mapper (whose \"Negative\" scenario_class entries — API failures, timeouts — usually need this skill's mocking to actually happen, since a live backend won't reliably fail on demand).",
+      "source_sha256": "8b135f935e0192cae35c87ae6bda6cdee64fdf3c6a7e947bbfa6dc0612b41b79",
+      "source_path": "skills/network-assertion/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e382fbacbb8b199d1c90e18c5e072cf35bb4d6213c0387b380966bb86e5c84f3": {
+      "description_zh": "在关键页面通过真实浏览器注入 web-vitals，测量 LCP、INP、CLS 等性能并按 Google 发布阈值评价。明确结果为实验室测量，区别于 CrUX 和真实用户现场数据，不把两者当同一数字。",
+      "source": "Measure Core Web Vitals (LCP, INP, CLS) and related performance signals on a site's key pages using a real browser (via Playwright MCP or @playwright/cli), by injecting the web-vitals library the same way axe-core gets injected for accessibility, and rate results against Google's published thresholds. Use whenever the user wants a performance audit, Core Web Vitals check, page speed review, or wants to know if a page is \"slow\" or would fail Google's page experience signals — trigger on phrases like \"check Core Web Vitals,\" \"is this page slow,\" \"performance audit,\" \"check LCP/CLS/INP,\" or \"will this pass Google's speed requirements.\" Always distinguishes lab measurement (what this skill produces) from the field data (CrUX, real users) Google actually grades against — these are related but not the same number.",
+      "source_sha256": "e382fbacbb8b199d1c90e18c5e072cf35bb4d6213c0387b380966bb86e5c84f3",
+      "source_path": "skills/performance-audit/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed16844b28e1d36737dcd7bf8b207bb616db1deee8072b68f1fddb4899852c8c": {
+      "description_zh": "为新 QA 同事编写测试入门文档，依据 test-plan 汇总范围、P0、频率、环境和数据约定，介绍工具选择、近期缺陷与已知难点，并建议第一周路径。只综合已有材料，不运行浏览器；区别于面向终端用户的产品指南。",
+      "source": "Write an onboarding document for a new QA teammate joining this team's testing practice — the site's testing landscape (scope, P0 areas, cadence, environment/test data conventions, pulled from test-plan), a curated tour of which skill in this toolkit to reach for and when, known trouble spots pulled from recent bug-triage/report-generator output, and a suggested first-week path. Use whenever the user wants to onboard a new QA hire, write a \"getting started\" doc for the testing practice, or introduce someone to how this team tests this site. Distinct from user-guide, which documents the product for end users in plain language — this documents the testing practice for a technical teammate, and uses this team's testing vocabulary freely rather than avoiding it. Doesn't drive a browser — this is a synthesis skill, same character as test-plan and report-generator.",
+      "source_sha256": "ed16844b28e1d36737dcd7bf8b207bb616db1deee8072b68f1fddb4899852c8c",
+      "source_path": "skills/qa-onboarding/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "275ce0c07203cc0bb36dca6481b128ea3b6839ca7264b537485ce93aac5c117d": {
+      "description_zh": "综合场景 CSV、运行报告、缺陷调查、审查发现和跨浏览器矩阵，形成按优先级排序的人类可读报告，支持跨会话测试状态及未结缺陷汇总。只读取已有产物，不自行测试或在没有测试时编造结论。",
+      "source": "Synthesize outputs from the other testing skills in this toolkit (scenario CSVs, run reports, bug-triage writeups, audit findings, cross-browser matrices) — potentially from several sessions across a testing cycle — into a single prioritized, human-readable report. Use whenever the user wants a summary, status update, or write-up of testing results — \"summarize what we found,\" \"give me a report I can send,\" \"what's our testing status,\" \"put this in a doc for the team\" — especially when more than one prior run or skill's output needs pulling together. Also covers register-shaped questions about accumulated results — \"which defects are still open,\" \"what have we found across these cycles.\" Does not drive a browser or run tests itself — it only reads and synthesizes artifacts the other skills already produced; if nothing has been tested yet, run one of the other skills first rather than fabricating a report.",
+      "source_sha256": "275ce0c07203cc0bb36dca6481b128ea3b6839ca7264b537485ce93aac5c117d",
+      "source_path": "skills/report-generator/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90827f640ad17c44f2940ff0669c4b02de0457a4610a5be6589fd36aa2eab4b5": {
+      "description_zh": "通过真实浏览器探索网站，发现值得测试的关键流程并生成候选冒烟场景 CSV。只进行发现和优先排序，不验证或断言，后续由 flow-runner 执行。",
+      "source": "Explore a live website with a real browser (via the Playwright MCP server or @playwright/cli) to discover what's worth testing, and output a CSV of candidate sanity-test scenarios. Use this whenever the user wants to explore, audit, or map out a site before testing it — phrases like \"explore this site and figure out what to test,\" \"give me a test plan,\" \"what are the critical flows here,\" \"identify sanity testing scenarios,\" \"map out what could break,\" or \"what should we cover before we ship\" should all trigger it, even without the word \"Playwright.\" This is a discovery/reconnaissance step, not execution — it does not verify or assert anything, it produces a prioritized list. Pairs with the flow-runner skill, which executes and verifies the scenarios this one discovers.",
+      "source_sha256": "90827f640ad17c44f2940ff0669c4b02de0457a4610a5be6589fd36aa2eab4b5",
+      "source_path": "skills/scenario-mapper/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "deb2ded9635825b231523fa32bb87360fd0894205f2ebdb4f4eb6d010ddae166": {
+      "description_zh": "被动检查 HTTPS、混合内容、Cookie 标志、安全响应头、常见意外公开文件及 Retire.js 已知漏洞库版本。仅为基础卫生检查，不注入、不绕过认证、不验证可利用性；全部通过也不证明网站安全。",
+      "source": "Check basic web security hygiene using a real browser — HTTPS enforcement and mixed content, cookie security flags (Secure/HttpOnly/SameSite), common security response headers (CSP, X-Content-Type-Options, X-Frame-Options, HSTS), a narrow check for commonly-exposed accidental files (.env, .git/config, source maps), and known-vulnerable JS library versions via Retire.js. Use whenever the user wants a security hygiene check, wants to verify cookie flags or security headers, or check for accidentally exposed files. This is explicitly hygiene, not a security audit or penetration test — every check here is passive observation (reading a header, a cookie attribute, a file the server already serves to anyone) — it never attempts SQL injection, XSS, auth bypass, or any exploit, and never tries to confirm a finding is actually exploitable. Passing every check here is not evidence the site is secure.",
+      "source_sha256": "deb2ded9635825b231523fa32bb87360fd0894205f2ebdb4f4eb6d010ddae166",
+      "source_path": "skills/security-hygiene/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b24c2b89005c9642ddea74da53d010927d5132edbd1d0a96d7c562161e273e88": {
+      "description_zh": "通过真实浏览器验证技术 SEO 的标题、描述、canonical、robots、Open Graph、JSON-LD、robots.txt 和站点地图 URL。检查存在、有效和正确性，不做关键词策略、内容质量评价或搜索排名效果承诺。",
+      "source": "Check technical/structural SEO elements across a site using a real browser — title tags, meta descriptions, canonical tags, meta robots (catching accidental noindex), Open Graph tags, structured data (JSON-LD) validity, and robots.txt/sitemap.xml sanity, including whether sitemap URLs actually resolve. Use whenever the user wants an SEO audit, metadata check, or wants to verify titles/descriptions/canonicals/structured data are present and valid — trigger on phrases like \"check our SEO,\" \"audit page metadata,\" \"check structured data,\" or \"verify robots.txt and sitemap.\" This is technical/structural validation — presence, validity, correctness — not SEO strategy, keyword advice, content quality judgment, or any claim about actual search ranking impact, none of which is something this skill (or anything without live access to a search engine's actual behavior) can verify.",
+      "source_sha256": "b24c2b89005c9642ddea74da53d010927d5132edbd1d0a96d7c562161e273e88",
+      "source_path": "skills/seo-audit/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d2657f709614e741ec51578ec19f1d4bd0f7b3d1db836b44dbaa7ca4bd6851a": {
+      "description_zh": "当用户希望测试但未明确方法时，介绍可用测试并分流适合的检查。已明确无障碍、视觉比较或缺陷复现等类型时直接调用专项技能，避免多余转接。",
+      "source": "Use whenever someone wants to test something but hasn't said (or doesn't know) which kind of check they need — \"what can you test here\", \"what can you test on this site\", \"what can you do here\", \"what should I check\", \"can you test this site\", \"is the site okay\", \"help me run a test\", \"where do I start\", \"run the usual checks\", \"check this before we ship\", \"I want to test something\". Also use when a request names a target but not a method (\"check the signup flow\", \"have a look at staging\"), or when someone new to the repo asks what testing is available here. Do not use when the request already clearly names a kind of check — an accessibility audit, a visual comparison, a bug reproduction — those skills should trigger directly, and routing through this one only adds a detour.",
+      "source_sha256": "7d2657f709614e741ec51578ec19f1d4bd0f7b3d1db836b44dbaa7ca4bd6851a",
+      "source_path": "skills/start-testing/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2545a15cafaed05a25f898f98774569521b102c640c8ecc9fee33733d73d352e": {
+      "description_zh": "将简要场景写成独立持久 E2E 测试用例文档，包含前置条件、数据、编号步骤及逐步预期结果和后置条件，供审核签署或人工 QA 使用。不会执行测试或操作浏览器。",
+      "source": "Expand a terse scenario (from a scenario-mapper row, or a plain description) into a detailed, persistent E2E test-case document — preconditions, test data, numbered steps each with its own expected result, postconditions — as a standalone artifact that exists before anything gets executed. Use whenever the user wants a written test case, a detailed test spec, a test case someone can review or sign off on, or a document to hand to manual QA. Distinct from flow-runner's step plan, which is written immediately before execution and thrown away — this produces a reviewable document that persists on its own, independent of whether or when it gets run. Does not execute anything or touch a browser directly.",
+      "source_sha256": "2545a15cafaed05a25f898f98774569521b102c640c8ecc9fee33733d73d352e",
+      "source_path": "skills/test-case-writer/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a1d54bb9bb96e172e02ac18591034ab4d84049401df25d0f17d8e8f5dda6cb3": {
+      "description_zh": "编写更新战略测试计划，确定范围、风险优先级、各项检查频率、发布退出条件、环境数据约定及自动化和人工覆盖账本。通常不操作浏览器，需了解实际结构时可先执行场景发现。",
+      "source": "Write or update a strategic test plan — scope, risk-based priorities, cadence for each of the other skills in this toolkit, release exit criteria, environment/data conventions, and a coverage ledger of what's automated versus manual-only. Use whenever the user wants a test strategy, testing roadmap, release readiness criteria, or a document describing what testing approach the team should follow — \"what should our testing strategy be,\" \"write a test plan,\" \"when should we run each kind of check,\" \"what are our release criteria,\" \"set up a testing roadmap.\" This sits above the execution skills — scenario-mapper discovers what's testable, this decides when and how thoroughly each of the other skills should run, and what has to be true before a release ships. Does not drive a browser itself unless it needs to run scenario-mapper first to ground itself in the site's actual structure.",
+      "source_sha256": "8a1d54bb9bb96e172e02ac18591034ab4d84049401df25d0f17d8e8f5dda6cb3",
+      "source_path": "skills/test-plan/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "597d0e2c623aa606e968ecee42c32e937e9dffdc54979064fd23f445e0bfb5a1": {
+      "description_zh": "依据已验证流程，在真实浏览器逐步截图并突出相关控件，用界面实际标签编写终端用户指南。只记录 flow-runner 或标记 Verified 的测试文档已验证流程，不使用 QA 术语或为未经验证流程写操作说明。",
+      "source": "Generate an end-user-facing how-to guide for a site feature by walking through a verified flow with a real browser, capturing a screenshot with the relevant element visually highlighted at each step, and writing a plain-language instruction using the interface's own button/field labels. Use whenever the user wants a user guide, help doc, how-to article, or step-by-step walkthrough for end users — trigger on phrases like \"write a user guide for checkout,\" \"create a how-to doc for signup,\" or \"document how to use this feature.\" Only documents flows already verified by flow-runner (or a test-case-writer document marked Verified) — never writes user-facing instructions for a flow nobody's confirmed actually works. Written for end users, not for QA — no testing jargon, no assertions, no priorities.",
+      "source_sha256": "597d0e2c623aa606e968ecee42c32e937e9dffdc54979064fd23f445e0bfb5a1",
+      "source_path": "skills/user-guide/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6bc66f9385850768a3be8457a742e52d1d5482686fa3827d299b5bf4168a1cc1": {
+      "description_zh": "对视觉快照的基线和当前两次捕获进行像素差异比较，屏蔽动态区域并容忍普通抗锯齿噪声，报告非预期视觉变化。没有基线时先建立快照，不凭空比较。",
+      "source": "Compare two runs of visual-snapshot's screenshot capture — a baseline and a current run — using pixel-level diffing (pixelmatch, or @playwright/test's native toHaveScreenshot if a real Playwright Test project exists) to flag unintended visual changes, while masking known-dynamic regions and tolerating ordinary anti-aliasing noise. Use whenever the user wants to check for visual regressions, compare before/after a change, verify a redesign or refactor didn't break the look of pages, or catch unintended CSS/layout drift — trigger on phrases like \"check for visual regressions,\" \"compare screenshots before and after,\" \"did this change break how anything looks,\" or \"diff the site against the last version.\" Requires two visual-snapshot captures to compare — if there's no baseline yet, this skill's job is to establish one (using visual-snapshot), not to invent a comparison from nothing.",
+      "source_sha256": "6bc66f9385850768a3be8457a742e52d1d5482686fa3827d299b5bf4168a1cc1",
+      "source_path": "skills/visual-regression/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4b7fefb3934bea9cfa9af26121252f24ad205ee76c0de5a0b3cbf3f5d0a5b74": {
+      "description_zh": "在一致条件下访问网站主要页面，捕获全页截图并形成默认 HTML 图库，供人工集中查看当前视觉状态。只采集当前状态，不比较历史或判断回归。",
+      "source": "Navigate a site's main pages using a real browser (via Playwright MCP or @playwright/cli), capture full-page screenshots under consistent conditions, and compile them into a single reviewable gallery (HTML by default) so a human can see what every page currently looks like without clicking through the site themselves. Use whenever the user wants a visual overview, screenshot gallery, visual review doc, or to \"see what all the pages look like\" — trigger on phrases like \"screenshot every page,\" \"visual snapshot of the site,\" \"compile a gallery of pages,\" or \"show me what the site looks like right now,\" even without the word Playwright. This captures current state for review — it does not compare against anything or flag regressions (that's a future visual-regression skill's job, which would diff two runs of this same capture).",
+      "source_sha256": "f4b7fefb3934bea9cfa9af26121252f24ad205ee76c0de5a0b3cbf3f5d0a5b74",
+      "source_path": "skills/visual-snapshot/SKILL.md",
+      "package_sha256": "42de2aede015760b50c9f0aa6dfa0a5e9b412f434c1046a53d37c0648f1c5829",
+      "source_package": "Snagly-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a6c4297e92b9e944bb1519e6044403b081b3674e6ea0f21dded7980e50722065": {
+      "description_zh": "阅读 SnapVisor 构建、测试或媒体评论，汇总讨论、回复、回应、解决重开线程及关注构建；每次变更均需确认。",
+      "source": "Reads and joins the comment threads on a SnapVisor build, test, or media item: summarizes the discussion, replies, reacts, resolves or reopens threads, and follows builds, each change after confirmation. Use when the user asks to 'summarize the comments on build 42', 'show open review threads', 'reply to the open thread and resolve it', 'post a comment on this diff', 'reopen that thread', or 'follow this build'.",
+      "source_sha256": "a6c4297e92b9e944bb1519e6044403b081b3674e6ea0f21dded7980e50722065",
+      "source_path": "skills/discussing-builds/SKILL.md",
+      "package_sha256": "30a34ea0e1849b055b9205432dca116eb7dbf255de77b1ea3625c7d22c19522a",
+      "source_package": "SnapVisor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f6f3d6774c3a2debc0349b13edebd4687f539304d0c5eeb971d46f257239237": {
+      "description_zh": "处理 SnapVisor 不稳定或已知视觉变化，经确认忽略或取消忽略，查找不稳定测试并列出项目已忽略项。",
+      "source": "Handles flaky or known visual changes in SnapVisor: ignores or un-ignores a change after confirmation, finds flaky tests, and lists the ignored changes for a project. Use when the user asks to 'ignore the date-widget change, it's the flaky clock again', 'which tests are flaky', 'stop flagging this change', 'un-ignore this change', 'show ignored changes', or deal with noisy screenshot diffs.",
+      "source_sha256": "4f6f3d6774c3a2debc0349b13edebd4687f539304d0c5eeb971d46f257239237",
+      "source_path": "skills/handling-flaky-changes/SKILL.md",
+      "package_sha256": "30a34ea0e1849b055b9205432dca116eb7dbf255de77b1ea3625c7d22c19522a",
+      "source_package": "SnapVisor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "312266ee9e78123ba761f3762dda86416376a07f52f3b8f9f84252442bb51c4c": {
+      "description_zh": "只读报告 SnapVisor 账号活动及访问情况，按周期汇总构建截图、繁忙项目、日周月趋势、成员和待处理邀请。",
+      "source": "Reports SnapVisor account activity and access: builds and screenshots per period, busiest projects, daily, weekly, or monthly trends, members, and pending invites. Use when the user asks 'how many builds did we run this month', 'how many screenshots did we use', 'which projects are busiest', 'show usage trends', 'who is on the team', or 'which invites are pending'. Read-only.",
+      "source_sha256": "312266ee9e78123ba761f3762dda86416376a07f52f3b8f9f84252442bb51c4c",
+      "source_path": "skills/reporting-snapvisor-usage/SKILL.md",
+      "package_sha256": "30a34ea0e1849b055b9205432dca116eb7dbf255de77b1ea3625c7d22c19522a",
+      "source_package": "SnapVisor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9eb4a34b7f5ef542862e68f252a73c0574c185a493050f9f6db457c44be448f2": {
+      "description_zh": "审查 SnapVisor 分支或提交的截图差异，解释视觉变化，并在用户确认后批准或拒绝构建。",
+      "source": "Reviews a SnapVisor visual regression build: shows what changed in the screenshot diffs for a branch or commit and approves or rejects the build after the user confirms. Use when the user asks 'what changed in the latest build', 'show the screenshot diffs', 'review the visual changes on this branch', 'approve build 42, the nav restyle is intentional', 'reject this build', or asks about visual testing or UI regression results.",
+      "source_sha256": "9eb4a34b7f5ef542862e68f252a73c0574c185a493050f9f6db457c44be448f2",
+      "source_path": "skills/reviewing-visual-builds/SKILL.md",
+      "package_sha256": "30a34ea0e1849b055b9205432dca116eb7dbf255de77b1ea3625c7d22c19522a",
+      "source_package": "SnapVisor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16b8bfa82cce4ee299f5ebf56de799cbfe3f5003b5519217b35821e8886720fb": {
+      "description_zh": "连接 SnapVisor MCP 到 Claude，通过一次只读调用验证，说明 claude.ai、Desktop、Cowork 和 Code 接入、登录同意及工具缺失恢复。",
+      "source": "Connects the SnapVisor MCP server to Claude and verifies it with one read-only call: where to connect in claude.ai, Claude Desktop, Cowork, or Claude Code, what the SnapVisor sign-in and consent screen asks, and how to recover when a tool is missing. Use when the user asks to 'set up SnapVisor', 'connect SnapVisor to Claude', 'install the SnapVisor connector', 'sign in to SnapVisor', 'why can't Claude see my SnapVisor data', 'SnapVisor tools are missing', or reports 'Tool not found' for a SnapVisor tool.",
+      "source_sha256": "16b8bfa82cce4ee299f5ebf56de799cbfe3f5003b5519217b35821e8886720fb",
+      "source_path": "skills/setup-snapvisor/SKILL.md",
+      "package_sha256": "30a34ea0e1849b055b9205432dca116eb7dbf255de77b1ea3625c7d22c19522a",
+      "source_package": "SnapVisor-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32b9e3a62176cca605f389ff1132df6bcc890ef8a871a289b4a2edb99f464845": {
+      "description_zh": "用巴菲特长期投资、护城河、估值、治理和人生复利框架分析重大决策，明确为单一立场而非中立综述。不用于日内交易、技术分析、加密投机或确定性宏观预测，早期技术选择需结合其他框架。",
+      "source": "Apply Warren Buffett''s ~70-year operating system — investing, moats, valuation, governance, macro worldview, and life philosophy — to any consequential decision. Trigger on: \"what would Buffett do\", stock / business / VC deal / M&A evaluation, economic moats, intrinsic value, margin of safety, Mr. Market, circle of competence, Berkshire Hathaway, long-term compounding, corporate governance, \"never bet against America\", lifelong compounding of money / skill / reputation / relationships. Trigger broadly — users often describe the need without naming Buffett (e.g., \"is this a good business?\", \"should I hold or sell?\", \"how do I evaluate a CEO?\", \"is the market overvalued?\"). Do NOT use for day-trading, technical analysis, crypto speculation, or confident macro forecasting. Opinionated single-framework by design — not a neutral survey. For early-stage tech S-curve selection (vertical AI, blockchain, frontier models), pair with complementary frameworks (Perez, Christensen, scaling-law / adoption-curve analyses); do not auto-trigger on pure technology-selection questions.",
+      "source_sha256": "32b9e3a62176cca605f389ff1132df6bcc890ef8a871a289b4a2edb99f464845",
+      "source_path": "skills/snowball/SKILL.md",
+      "package_sha256": "33109739844c114e33fbae35e1addb075f58060fe553fa70b0c7fb5d72b5c809",
+      "source_package": "snowball-2026.07.17-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4118e9b198e12c50b57e793192a87a532a8fe3b0b9549ceb205b2d1cb0148342": {
+      "description_zh": "由提示过滤 hook 自动加载，将 Snowflake 操作分流到 Cortex Code CLI。不直接调用，手动入口为 cortex-run。",
+      "source": "Auto-routing skill loaded by the prompt filter hook. Routes Snowflake-related operations to Cortex Code CLI. Not for direct invocation — use $cortex-run instead.",
+      "source_sha256": "4118e9b198e12c50b57e793192a87a532a8fe3b0b9549ceb205b2d1cb0148342",
+      "source_path": "skills/cortex-router/SKILL.md",
+      "package_sha256": "04ea2b9e385ad8f5f2e1452adae8f97e1c65f1922f59887ca720f873f2bce3a7",
+      "source_package": "snowflake-cortex-code-3.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "070fee2a522aa9f55844291363c4e82e3455e4637f9e94ee9330a928e09a329e": {
+      "description_zh": "仅在用户明确输入 $cortex-run 或 /cortex-run 时加载；不因自动路由或关键词触发，自动提示应使用 cortex-router。",
+      "source": "ONLY load this skill when the user explicitly types $cortex-run or /cortex-run. NEVER load this skill from auto-routing hooks or keyword matching. For auto-routed prompts, use snowflake-cortex-code:cortex-router instead.",
+      "source_sha256": "070fee2a522aa9f55844291363c4e82e3455e4637f9e94ee9330a928e09a329e",
+      "source_path": "skills/cortex-run/SKILL.md",
+      "package_sha256": "04ea2b9e385ad8f5f2e1452adae8f97e1c65f1922f59887ca720f873f2bce3a7",
+      "source_package": "snowflake-cortex-code-3.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c336f21b26d7c3e6ecb4f51517abf110663f25dc3e326462d250f6498a3da37e": {
+      "description_zh": "安装 Snowflake CLI 和 Cortex Code CLI，适用于首次设置、Cortex 未安装或路由因缺少 CLI 失败。",
+      "source": "Install Snowflake CLI and Cortex Code CLI. Use when cortex is not installed, when the user asks to set up Cortex Code, or when routing fails because the CLI is missing. Triggers: setup cortex, install cortex, cortex not found, CLI not installed, set up snowflake.",
+      "source_sha256": "c336f21b26d7c3e6ecb4f51517abf110663f25dc3e326462d250f6498a3da37e",
+      "source_path": "skills/cortex-setup/SKILL.md",
+      "package_sha256": "04ea2b9e385ad8f5f2e1452adae8f97e1c65f1922f59887ca720f873f2bce3a7",
+      "source_package": "snowflake-cortex-code-3.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b0db342afdf4209329772418cae3beb122e96db8dd5102b7175db406acef6a4": {
+      "description_zh": "通过 Social Post Flow CLI 跨 Facebook、X、LinkedIn、Instagram、Threads、Pinterest、TikTok、Mastodon、Bluesky、Telegram 和 Google Business Profiles 发布排期管理帖子，要求 app.socialpostflow.com 的有效 API 令牌。",
+      "source": "Use this skill when the user wants to publish, schedule, or manage social media posts across multiple networks (Facebook, X, LinkedIn, Instagram, Threads, Pinterest, TikTok, Mastodon, Bluesky, Telegram, Google Business Profiles). Triggers on requests like \"schedule a tweet\", \"post this to all my socials\", \"share to LinkedIn and Facebook\", \"queue up a post for tomorrow\", or any reference to scheduling/publishing content across networks. Requires the Social Post Flow CLI (this skill) and a valid API token from app.socialpostflow.com.",
+      "source_sha256": "0b0db342afdf4209329772418cae3beb122e96db8dd5102b7175db406acef6a4",
+      "source_path": "agent-skill/socialpostflow/SKILL.md",
+      "package_sha256": "3ea299a3700acda5d70d67f858f58b89c2552a201f23c1ed16a6096f83e65bf6",
+      "source_package": "Social Post Flow-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df246e7912e36a41633321948167b1edde895becea58a98309a41f25b2a11fb3": {
+      "description_zh": "通过 Social Post Flow 的 OAuth MCP 跨多个社交平台发布、排期和管理帖子，无须配置 API 令牌，首次使用由用户在浏览器批准访问。",
+      "source": "Use this skill when the user wants to publish, schedule, or manage social media posts across multiple networks (Facebook, X, LinkedIn, Instagram, Threads, Pinterest, TikTok, Mastodon, Bluesky, Telegram, Google Business Profiles). Triggers on requests like \"schedule a tweet\", \"post this to all my socials\", \"share to LinkedIn and Facebook\", \"queue up a post for tomorrow\", or any reference to scheduling/publishing content across networks. This plugin ships an OAuth-authenticated MCP server, so no API token setup is required — the user approves access in a browser on first use.",
+      "source_sha256": "df246e7912e36a41633321948167b1edde895becea58a98309a41f25b2a11fb3",
+      "source_path": "skills/socialpostflow/SKILL.md",
+      "package_sha256": "3ea299a3700acda5d70d67f858f58b89c2552a201f23c1ed16a6096f83e65bf6",
+      "source_package": "Social Post Flow-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c1cc40884c00f1ccafdb750a66a1502535ac0a1f4af4490ca5487b0ce56451e": {
+      "description_zh": "依据 Socialinsider 复盘活动、发布、标签或内容主题的发布量、互动、最佳帖子及相对非活动内容表现。",
+      "source": "Recap a social media campaign or content pillar using Socialinsider data — volume published, engagement earned, best posts, and how it compares to non-campaign output. Use when the user asks how a campaign, launch, hashtag or content pillar performed, wants a campaign wrap-up or post-mortem, or asks whether a content theme is working.",
+      "source_sha256": "0c1cc40884c00f1ccafdb750a66a1502535ac0a1f4af4490ca5487b0ce56451e",
+      "source_path": "skills/campaign-recap/SKILL.md",
+      "package_sha256": "fde6e733979e206ae307e316ed82e645b61e3bbeb072b4539c1074c4fc0004f4",
+      "source_package": "Socialinsider-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "17ce2c23de243f28b6621cc1f935045366bbe998247cfebf58c14f6e703b4925": {
+      "description_zh": "依据 Socialinsider 并列比较品牌和竞品的互动份额、发布节奏、互动率与内容格式组合，适用于行业基准、声量份额和平台竞争分析。",
+      "source": "Benchmark a brand against its competitors on social media using Socialinsider data — share of engagement, posting cadence, engagement rate and format mix side by side. Use when the user asks how they compare to competitors, wants a competitive or industry benchmark, share-of-voice analysis, or asks who is winning on a platform.",
+      "source_sha256": "17ce2c23de243f28b6621cc1f935045366bbe998247cfebf58c14f6e703b4925",
+      "source_path": "skills/competitor-benchmark/SKILL.md",
+      "package_sha256": "fde6e733979e206ae307e316ed82e645b61e3bbeb072b4539c1074c4fc0004f4",
+      "source_package": "Socialinsider-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d32c9139507b00e59e910835385c4d10c474ecd23c6d243122659ed593e9695": {
+      "description_zh": "依据 Socialinsider 审查单个账号周期表现，包括粉丝互动趋势、帖子汇总指标、类型组合和有效帖子，适用于月报及触达互动变化分析。",
+      "source": "Audit how one social media profile performed over a period using Socialinsider data — followers and engagement trend, aggregate post metrics, post-type mix, and the posts that actually worked. Use when the user asks how a profile, account, brand or channel is doing, wants a performance review, monthly report, engagement-rate check, or asks why reach or engagement moved.",
+      "source_sha256": "0d32c9139507b00e59e910835385c4d10c474ecd23c6d243122659ed593e9695",
+      "source_path": "skills/profile-audit/SKILL.md",
+      "package_sha256": "fde6e733979e206ae307e316ed82e645b61e3bbeb072b4539c1074c4fc0004f4",
+      "source_package": "Socialinsider-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ace8596104640d41b1664e87b192387949d5539913d8933413365c2957633c64": {
+      "description_zh": "通过 SocialRobot 创建、排期、发布和分析 Instagram、LinkedIn、X、TikTok、Facebook、Threads、Pinterest、Bluesky 或 Mastodon 内容。连接 socialrobot.io/api/mcp 的远程 OAuth MCP，使用账号、发帖、排期和分析工具。",
+      "source": "Schedule and analyze social media posts with SocialRobot. Use whenever the user wants to create, schedule, or publish social media content to Instagram, LinkedIn, X (Twitter), TikTok, Facebook, Threads, Pinterest, Bluesky, or Mastodon, or wants to review post performance. Connect the SocialRobot MCP server (remote OAuth at socialrobot.io/api/mcp), which exposes tools for connected accounts, post creation, scheduling, publishing, and analytics.",
+      "source_sha256": "ace8596104640d41b1664e87b192387949d5539913d8933413365c2957633c64",
+      "source_path": "skills/socialrobot-post-scheduling/SKILL.md",
+      "package_sha256": "8817951f7ca77a27da3f58961f6405c8262f95eba4b9302e63c25da7fabbc3c0",
+      "source_package": "SocialRobot-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa6c2bd8d7691d98a0b7876ab15c8f1e1802ede9f46cf8b184844f8d925dbbd4": {
+      "description_zh": "指导 REST API 设计，涵盖 HTTP 方法、状态码、错误处理、版本、分页和限流，形成清晰可理解的接口契约。",
+      "source": "API Design — REST principles, HTTP methods, status codes, error handling, versioning, pagination, rate limiting. Clean API contracts that other developers (and your future self) can actually understand.",
+      "source_sha256": "aa6c2bd8d7691d98a0b7876ab15c8f1e1802ede9f46cf8b184844f8d925dbbd4",
+      "source_path": "api-design/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e398beedd62964cbd77a634c0253a97d7101e8427211d332973973046468850": {
+      "description_zh": "用 git bisect、二分搜索和 delta debugging，在多个候选中以对数级步骤定位原因，适用于回归排查、缩小故障时间窗及发现最小复现输入。",
+      "source": "Bisection — git bisect, binary search, delta debugging. Isolate 'one cause among N candidates' in log N steps. Regression hunting, outage window narrowing, minimal reproducer input discovery.",
+      "source_sha256": "1e398beedd62964cbd77a634c0253a97d7101e8427211d332973973046468850",
+      "source_path": "bisection/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b485de334a3cea0338e0cc2abe08cc10a963464438b42a311d9c1867252eecb0": {
+      "description_zh": "介绍持续集成部署基础，包括 GitHub Actions、Docker、蓝绿及金丝雀部署和环境管理，面向独立开发者及小团队的基本运维。",
+      "source": "CI/CD Basics — Continuous Integration and Continuous Deployment fundamentals. GitHub Actions, Docker basics, deployment strategies (blue-green, canary), environment management. The minimum viable DevOps for solo developers and small teams.",
+      "source_sha256": "b485de334a3cea0338e0cc2abe08cc10a963464438b42a311d9c1867252eecb0",
+      "source_path": "cicd-basics/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "671bf82aeafc3d31a3acd3f5e807e4925c91a63d6007c49361caa1264148c1e2": {
+      "description_zh": "作为软件工程分流入口，从十五种调试、架构、设计、韧性、演进、团队、安全、CI/CD 和 API 框架中选择，结合韩国企业增长及金融监管背景、遗留替换和团队扩张，提供反模式提示、阶段默认和逆康威策略。",
+      "source": "Software engineering meta-router — auto-selects from 15 frameworks (debugging, architecture, design, resilience, evolution, team topology, security, CI/CD, API design). Real Korean growth scenarios (Toss, Kakao, Coupang, Naver), Korean financial regulatory context (FSC, 전자금융업, PG integration), legacy replacement, and team expansion. Includes anti-pattern warnings, stage-based defaults, and the Inverse Conway Maneuver.",
+      "source_sha256": "671bf82aeafc3d31a3acd3f5e807e4925c91a63d6007c49361caa1264148c1e2",
+      "source_path": "code/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "141b7aa2b6e23ffd5eba58344b68d127c56f40a99cb01af3da2e302e3368735d": {
+      "description_zh": "通过领域驱动设计的语言、边界和模型处理复杂业务，涵盖战略层限界上下文、上下文映射、统一语言，以及实体、值对象、聚合和领域事件。",
+      "source": "Domain-Driven Design (Eric Evans) — tackles complex business domains through language, boundaries, and models. Strategic (bounded context, context map, ubiquitous language) + Tactical (entity, value object, aggregate, domain event).",
+      "source_sha256": "141b7aa2b6e23ffd5eba58344b68d127c56f40a99cb01af3da2e302e3368735d",
+      "source_path": "ddd/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad1df6f5f1a867b9bc16dda30674acca4f1cb8233f6ec471fa2567702dfb527c": {
+      "description_zh": "使用事件溯源与 CQRS，将事件而非当前状态作为存储依据，由事件折叠得到状态并分开读写模型。适用于财务账簿、审计、历史回溯和读负载分离。",
+      "source": "Event Sourcing + CQRS (Greg Young) — store events instead of state; state is a fold of events. Separate write and read models. Powerful for financial ledgers, auditing, time travel, and offloading read workloads.",
+      "source_sha256": "ad1df6f5f1a867b9bc16dda30674acca4f1cb8233f6ec471fa2567702dfb527c",
+      "source_path": "event-sourcing-cqrs/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93fea9526c33f8a050ffb43d8b7e6c5cd6445cdb8fb1d6665cddbdc25b72e71a": {
+      "description_zh": "按六边形架构的端口与适配器，将领域逻辑与数据库、HTTP、队列及 UI 分离，提高可测试性、可替换性和技术独立性。",
+      "source": "Hexagonal Architecture (Ports & Adapters) — Alistair Cockburn. Isolate domain logic from I/O (DB, HTTP, queues, UI). Testability, replaceability, technology independence.",
+      "source_sha256": "93fea9526c33f8a050ffb43d8b7e6c5cd6445cdb8fb1d6665cddbdc25b72e71a",
+      "source_path": "hexagonal/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1163236110e2552926376968d4e403283c5b12cf809657c2d4d3afa87789c39": {
+      "description_zh": "在单个部署单元内建立严格模块边界，结合 Shopify 和 Basecamp 案例分析模块化单体，兼顾边界收益及未来拆分，避免过早承担微服务复杂性。",
+      "source": "Modular Monolith — an architecture that enforces strict module boundaries within a single deployment unit. Shopify and Basecamp case studies. The benefits of boundaries without the complexity of microservices. A safe starting point for future separation.",
+      "source_sha256": "e1163236110e2552926376968d4e403283c5b12cf809657c2d4d3afa87789c39",
+      "source_path": "modular-monolith/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b44b46bfdf0260cc55df7a69f394bf5fbd36f3710796cfead37b8aecf688a589": {
+      "description_zh": "依据指标、日志及追踪推断系统内部状态，结合 USE、RED 和 Google SRE 四个黄金信号进行性能及事故诊断。",
+      "source": "Observability — Infer internal system state from external signals using USE (Gregg) + RED (Wilkie) + Four Golden Signals (Google SRE). 3 pillars (metrics/logs/traces). The standard lens for performance and incident diagnosis.",
+      "source_sha256": "b44b46bfdf0260cc55df7a69f394bf5fbd36f3710796cfead37b8aecf688a589",
+      "source_path": "observability/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93742aa04480c28cdb210d70c29683a4cc643c777db0d1dfcce1759dca7f6d9d": {
+      "description_zh": "以 OWASP Top 10 为框架检查 SQL 注入、XSS、认证和配置等 Web 风险，特别面向使用 AI 构建应用的非开发者。具体版本和完整清单以原资料及当前标准核对。",
+      "source": "OWASP Top 10 — the 10 most critical web application security risks. SQL Injection, XSS, broken auth, security misconfiguration, and more. Essential checklist for every web app, especially for non-developers using AI to build apps.",
+      "source_sha256": "93742aa04480c28cdb210d70c29683a4cc643c777db0d1dfcce1759dca7f6d9d",
+      "source_path": "owasp-security/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "111e9a01ebd65809a6ec779ac4b140cf114fbf918cc3fcd35639ccc273c196db": {
+      "description_zh": "依据 Release It! 的韧性模式设计断路器、舱壁、背压、限流、抖动重试和超时，降低外部依赖故障对服务的拖累。",
+      "source": "Resilience Patterns — Circuit Breaker·Bulkhead·Back-pressure·Rate Limiting·Retry with jitter·Timeout. Based on Nygard's *Release It!* Keep external dependency failures from dragging your service down.",
+      "source_sha256": "111e9a01ebd65809a6ec779ac4b140cf114fbf918cc3fcd35639ccc273c196db",
+      "source_path": "resilience-patterns/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a40c29dbe85009dd45479fbbbbf105b80fd4d5bf3b4feb1637e642443a07148": {
+      "description_zh": "按观察、假设、实验、验证循环进行科学调试，将故障拆为可证伪假设，依据 Why Programs Fail 的方法定位问题。",
+      "source": "Scientific Debugging — hypothesis-driven debugging. Treat bugs not as mysteries but as a chain of falsifiable hypotheses. Observation→Hypothesis→Experiment→Verification loop. Based on Zeller's *Why Programs Fail*.",
+      "source_sha256": "8a40c29dbe85009dd45479fbbbbf105b80fd4d5bf3b4feb1637e642443a07148",
+      "source_path": "scientific-debugging/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f3df0060a0f2ae6ed277011c142434f7fffdf4642e44b885b946b8f7cee2bdf": {
+      "description_zh": "应用面向对象 SOLID 的单一职责、开闭、里氏替换、接口隔离和依赖倒置原则，同时提示过度使用风险并参考 CUPID 替代思路。",
+      "source": "SOLID Principles (Robert Martin) — SRP/OCP/LSP/ISP/DIP. Classic principles of OO design. Includes warnings against over-application. References Dan North's CUPID alternative.",
+      "source_sha256": "0f3df0060a0f2ae6ed277011c142434f7fffdf4642e44b885b946b8f7cee2bdf",
+      "source_path": "solid/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "66b8f5c31a189a21777a50b4cccdc57d17678fb463d57cee6f622967487410a2": {
+      "description_zh": "使用绞杀者模式围绕遗留系统逐步构建和替换，结合抽象分支及并行变更，避免一次性整体重写。",
+      "source": "Strangler Fig Pattern (Martin Fowler) — don't rip out legacy all at once; grow a new system around it and replace it gradually. Includes Branch by Abstraction and Parallel Change. The alternative to failed rewrites.",
+      "source_sha256": "66b8f5c31a189a21777a50b4cccdc57d17678fb463d57cee6f622967487410a2",
+      "source_path": "strangler-fig/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3fdfb882c6cc117f5e68c9f853afba2bc4259b6a99ef93ecf232ef79ee88311c": {
+      "description_zh": "依据 Team Topologies 的四类团队、三种互动模式、认知负荷和逆康威策略分析组织与架构，适用于团队扩张、平台化及微服务组织设计。",
+      "source": "Team Topologies (Skelton & Pais) — 4 team types + 3 interaction modes + cognitive load + Inverse Conway Maneuver. Team structure shapes architecture. For team scaling, platformization, and microservices organization design.",
+      "source_sha256": "3fdfb882c6cc117f5e68c9f853afba2bc4259b6a99ef93ecf232ef79ee88311c",
+      "source_path": "team-topologies/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d04ae252c5d6a3412c56e23f6b87e51ad9999408a8f0bd6f427d6512ed3ab7cf": {
+      "description_zh": "按 Twelve-Factor App 十二原则检查云应用配置、依赖、端口、日志、进程等部署运维和扩展基础。",
+      "source": "Twelve-Factor App (Adam Wiggins, Heroku) — the 12 principles for cloud-native apps. Baseline hygiene for deployment, operations, and scaling. Check along 12 axes: config, dependencies, port binding, logs, processes, and more.",
+      "source_sha256": "d04ae252c5d6a3412c56e23f6b87e51ad9999408a8f0bd6f427d6512ed3ab7cf",
+      "source_path": "twelve-factor/SKILL.md",
+      "package_sha256": "9ffdd9ae7577676164378f35b1e5a0270a58779eafd1b73b664ab96aad9e1f42",
+      "source_package": "software-framework-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83be2a6ff275c7ba32344d76d8569f8aa054db60da2681647bc15b803eaa84d2": {
+      "description_zh": "通过 SonarQube 分析单个文件的代码质量和安全问题。",
+      "source": "Analyze a file for quality and security issues using SonarQube",
+      "source_sha256": "83be2a6ff275c7ba32344d76d8569f8aa054db60da2681647bc15b803eaa84d2",
+      "source_path": "skills/sonar-analyze/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc5de23b4f2d5da10efb6bf074fde3dd1a927fa291910282c71c5dd9c36c2150": {
+      "description_zh": "查找 SonarQube 项目低测试覆盖文件并检查未覆盖行。MCP 已设置默认项目时可省略项目 key。",
+      "source": "Find files with low test coverage and inspect uncovered lines in a SonarQube project (project key optional when MCP integration already defines the default project)",
+      "source_sha256": "dc5de23b4f2d5da10efb6bf074fde3dd1a927fa291910282c71c5dd9c36c2150",
+      "source_path": "skills/sonar-coverage/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7f2224c185f52c93f7fe55fb7fe6d9bf90deb619aedb29c7f907db089c001a8": {
+      "description_zh": "搜索 SonarQube 项目的软件成分分析依赖风险，MCP 已定义默认项目时项目 key 可选。",
+      "source": "Search for software composition analysis (SCA) dependency risks in a SonarQube project (project key optional when MCP integration already defines the default project)",
+      "source_sha256": "f7f2224c185f52c93f7fe55fb7fe6d9bf90deb619aedb29c7f907db089c001a8",
+      "source_path": "skills/sonar-dependency-risks/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95bb9e1a5248d8ab2fdcbd66f437a227aac2ccb04109c5cc83eab5ff56bfa0d6": {
+      "description_zh": "查找 SonarQube 项目重复代码文件并查看具体重复区块。MCP 已定义默认项目时可省略项目 key。",
+      "source": "Find files with code duplications in a SonarQube project and inspect duplication blocks for a file (project key optional when MCP integration already defines the default project)",
+      "source_sha256": "95bb9e1a5248d8ab2fdcbd66f437a227aac2ccb04109c5cc83eab5ff56bfa0d6",
+      "source_path": "skills/sonar-duplication/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f7634c4e6c37704ad03a5dc1240a9d83340022683005dd4938000bc24fe143b": {
+      "description_zh": "依据规则 key 和位置修复指定 SonarQube 代码问题。",
+      "source": "Fix a specific SonarQube issue in code by rule key and location",
+      "source_sha256": "0f7634c4e6c37704ad03a5dc1240a9d83340022683005dd4938000bc24fe143b",
+      "source_path": "skills/sonar-fix-issue/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06129c7ec3c2e2b1fccb3e84c8dbfc4128de99e071c74aca0561091b45c5fa16": {
+      "description_zh": "按需安装 sonarqube-cli、认证并接入当前智能体，安装分析 hook 和 SonarQube MCP Server。适用于配置或初始集成。",
+      "source": "Installs sonarqube-cli if not already installed, authenticates, and integrates SonarQube with the current agent (installs analysis hooks & SonarQube MCP Server). Use when the user wants to set up SonarQube integration or asks to configure SonarQube.",
+      "source_sha256": "06129c7ec3c2e2b1fccb3e84c8dbfc4128de99e071c74aca0561091b45c5fa16",
+      "source_path": "skills/sonar-integrate/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85fff1d58ed4d7ae0f6ba77bbf6fe6fb8005caa6a3ee8d8abab1d3aa4c33efa2": {
+      "description_zh": "通过 sonarqube-cli 搜索过滤项目、分支或 PR 的 SonarQube 问题，CLI 始终要求 -p，从用户参数或 sonar-project.properties 确定项目 key。",
+      "source": "Search and filter SonarQube issues for a project, branch, or pull request via sonarqube-cli (`-p` is always required on the CLI; resolve the key from user arguments or sonar-project.properties)",
+      "source_sha256": "85fff1d58ed4d7ae0f6ba77bbf6fe6fb8005caa6a3ee8d8abab1d3aa4c33efa2",
+      "source_path": "skills/sonar-list-issues/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a40de92252efd550d1e2fa2820828d65d6adfa6cd69110ef3099fc0241e52d22": {
+      "description_zh": "列出当前用户有权访问的 SonarQube 项目。",
+      "source": "List SonarQube projects accessible to the current user",
+      "source_sha256": "a40de92252efd550d1e2fa2820828d65d6adfa6cd69110ef3099fc0241e52d22",
+      "source_path": "skills/sonar-list-projects/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4474fa52c107780ef58b74ba6c1861d55a3c4dd09fe8fc316e4bbe6501aff381": {
+      "description_zh": "展示 SonarQube 项目质量关卡的通过失败及每项条件的指标 key、阈值和实际值，MCP 已定义默认项目时项目 key 可选。",
+      "source": "Show SonarQube quality gate status for a project — pass/fail and each condition (metric key, threshold, actual value). Project key optional when MCP integration already defines the default project.",
+      "source_sha256": "4474fa52c107780ef58b74ba6c1861d55a3c4dd09fe8fc316e4bbe6501aff381",
+      "source_path": "skills/sonar-quality-gate/SKILL.md",
+      "package_sha256": "9a91703aa1f9acbca40ea3c35066334e59feb299f834d5c37a880adc9fb91e54",
+      "source_package": "SonarQube-2.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56dc625ce3f65de18ec8d17c38782e7fa41a2d3a93b5cc206ae163099f396a4a": {
+      "description_zh": "通过 Sonatype Guide MCP 检查依赖漏洞、开发者信任评分、许可证、恶意包和政策合规。原说明要求安装、添加、升级、选型或审查依赖前使用，覆盖各包管理器及依赖清单，不未经检查安装或推荐。",
+      "source": "MUST use before installing, adding, or upgrading any dependency. Trigger when: running pip install, npm install, cargo add, go get, or any package manager command; adding a package to requirements.txt, package.json, pyproject.toml, Cargo.toml, go.mod, pom.xml, build.gradle, or Gemfile; choosing which library to use for a task; upgrading or changing dependency versions; or auditing existing dependencies. Uses the Sonatype Guide MCP server to check vulnerabilities, Developer Trust Scores, license risks, malicious package detection, and policy compliance. Do not install or recommend a dependency without checking it here first.",
+      "source_sha256": "56dc625ce3f65de18ec8d17c38782e7fa41a2d3a93b5cc206ae163099f396a4a",
+      "source_path": "skills/sonatype-guide/SKILL.md",
+      "package_sha256": "5ff4248457484ad712b84ec70ba8ac6aeb1f354e170f69c1510afde27dd675a3",
+      "source_package": "sonatype-guide-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "283d3ce313b8bdf209d881240baac544df020401d52519b6e85eeb973456be96": {
+      "description_zh": "按需执行 SOSA 智能体治理、合规和审计报告，查看信任评分、工具影响、预算令牌、行为日志和安全问题，也支持重置信任及治理仪表盘。",
+      "source": "SOSA Governor for on-demand governance audits, compliance checks, and reporting. Use this skill when the user says \"run SOSA audit\", \"check compliance\", \"show trust scores\", \"SOSA report\", \"governance status\", \"audit my agents\", \"token budget report\", \"which tools are high impact\", \"reset trust for\", \"show audit log\", \"SOSA dashboard\", or any reference to agent governance, compliance levels, or security auditing. Also trigger on \"what did my agents do today\", \"how many tokens did I use\", or \"are there any security issues\".",
+      "source_sha256": "283d3ce313b8bdf209d881240baac544df020401d52519b6e85eeb973456be96",
+      "source_path": "skills/sosa-governor/SKILL.md",
+      "package_sha256": "94cb345c9d409c5d2f334e889a95d774256dc2ff840750362601c99f52abedb6",
+      "source_package": "sosa-governor-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "739ccf4dfedf3ac40c4063fd922492ff71375b048cd024fcad36ae081ad0f371": {
+      "description_zh": "检查认证代码中的弱密码存储、JWT 校验缺陷、退出后会话存活及缺少 MFA。适用于登录、会话、密码、凭据、记住登录及 API key 管理。",
+      "source": "Detects weak password storage, flawed JWT validation, sessions surviving logout, and missing MFA in authentication code. Use when writing login flows, session management, password storage, JWT handling, MFA implementation, credential validation, or any code that authenticates users. Also invoke when implementing \"remember me\" functionality or API key management.",
+      "source_sha256": "739ccf4dfedf3ac40c4063fd922492ff71375b048cd024fcad36ae081ad0f371",
+      "source_path": ".claude/skills/authentication-failures/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "448300d1a9a16da63513f34b425335a2f586d5944318cfdc7486c4e478d292fc": {
+      "description_zh": "检查资源所有权和角色执行缺失及 IDOR，适用于授权、对象级访问控制、外部 URL 服务端请求和访问控制中间件。",
+      "source": "Detects missing ownership checks, broken role enforcement, and IDOR vulnerabilities that let users access other users' resources. Use when writing code that checks authorization, enforces resource ownership, handles IDOR (object-level authorization), processes server-side requests to external URLs, or implements access control middleware.",
+      "source_sha256": "448300d1a9a16da63513f34b425335a2f586d5944318cfdc7486c4e478d292fc",
+      "source_path": ".claude/skills/broken-access-control/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b50466ec1d60c41a2b4b6765cf02f14f99ec5b512718c20af3c9b0afb77a4483": {
+      "description_zh": "检查并发正确性，包括持锁执行阻塞操作、锁顺序死锁、原子内存序错误及双重检查初始化缺屏障。适用于多锁、显式原子序、懒加载及锁区内 I/O、sleep、await 或阻塞通道。",
+      "source": "Detects multi-threaded code where a lock is held across a blocking operation, lock acquisition order risks deadlock, lock-free atomics use the wrong memory ordering, or double-checked locking is missing the necessary barrier. Use when writing or modifying code that acquires multiple locks, uses atomic operations with explicit memory orders (std::memory_order_*, atomic.LoadAcquire, Ordering::Relaxed), implements lazy initialization with double-checked locking, or calls a blocking operation (I/O, sleep, await, blocking channel send) inside a locked region.",
+      "source_sha256": "b50466ec1d60c41a2b4b6765cf02f14f99ec5b512718c20af3c9b0afb77a4483",
+      "source_path": ".claude/skills/concurrency-correctness/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37f75648fcd83fb27102208a4c21a88c375a4ef986d6ed5f8f3b4351e974dbad": {
+      "description_zh": "深入审查调用方假设与实现执行的 API 契约差异，寻找不变量缺口、信任锚混淆及谓词误命名，面向夜间 CI、发布前或人工深审。原说明预计数十分钟，区别于单次 OWASP 检查。",
+      "source": "Deep review that audits API contracts for mismatches between what callers assume and what implementations enforce. Designed for nightly CI, pre-release scans, or manual deep audits — runs in tens of minutes, not seconds. Surfaces bugs that single-pass OWASP review misses — caller/callee invariant gaps, trust-anchor confusion, predicate misnaming.",
+      "source_sha256": "37f75648fcd83fb27102208a4c21a88c375a4ef986d6ed5f8f3b4351e974dbad",
+      "source_path": ".claude/skills/contract-review/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb97ed42ec61baf92e1f1e401aec67b90d94464e30401c22276bc4b1749d24d1": {
+      "description_zh": "检查直接使用加密原语的内部正确性，包括 AEAD nonce 重用、ECDSA k 重用、裸哈希长度扩展、可区分填充错误及按秘密分支。区别于应用层算法选择，适用于直接加解密、签名和原始哈希调用。",
+      "source": "Detects library-internal cryptographic correctness bugs that pattern matchers and crypto-failures skills miss — AEAD nonce reuse, ECDSA k-value reuse, length-extension on bare hashes, padding-oracle exception distinguishability, and branching on secret material. Use when writing code that calls a crypto primitive directly (AEAD encrypt/decrypt, ECDSA/DSA sign, raw hash, RSA decrypt). Distinct from cryptographic-failures, which covers application-layer choices like MD5 for passwords; this skill is about how primitives are wired up.",
+      "source_sha256": "fb97ed42ec61baf92e1f1e401aec67b90d94464e30401c22276bc4b1749d24d1",
+      "source_path": ".claude/skills/crypto-library-misuse/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7c465883b54a6eccb33f021626af4d5a40e390c6f4282ea3d2dae3839187ee7": {
+      "description_zh": "检查可能导致密码恢复、令牌伪造和敏感数据解密的弱加密，适用于加解密、密码令牌哈希、安全随机、密钥、TLS/SSL 和静态敏感存储。",
+      "source": "Detects weak or broken cryptography that lets attackers recover plaintext passwords, forge tokens, or decrypt sensitive data. Use when writing code that encrypts or decrypts data, hashes passwords or tokens, generates random values for security purposes, manages cryptographic keys, or configures TLS/SSL settings. Also invoke when storing sensitive data at rest.",
+      "source_sha256": "c7c465883b54a6eccb33f021626af4d5a40e390c6f4282ea3d2dae3839187ee7",
+      "source_path": ".claude/skills/cryptographic-failures/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "541659aec4057d8023db4f5615e455369719dbf618863b332558cd15ed6371a5": {
+      "description_zh": "检查表单和状态变更端点缺少 CSRF 保护，适用于 POST/PUT/DELETE、会话 Cookie、中间件及框架中禁用或绕过保护的配置。",
+      "source": "Detects forms and state-changing endpoints missing CSRF protection. Use when writing HTML forms that submit POST/PUT/DELETE requests, configuring session cookies, or setting up CSRF middleware for web applications. Also invoke when disabling or bypassing CSRF protections in framework configuration.",
+      "source_sha256": "541659aec4057d8023db4f5615e455369719dbf618863b332558cd15ed6371a5",
+      "source_path": ".claude/skills/csrf/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c198d300c921d420c93debdc4c52c471c5de07604ed3460fad6b0029d2e3cc3f": {
+      "description_zh": "检查错误处理泄漏堆栈或异常后放行，适用于异常捕获、try/catch/finally、API 错误响应和向终端用户暴露堆栈的路径。",
+      "source": "Detects error handlers that leak stack traces or fail open on exception. Use when writing error handlers, exception catching blocks, try/catch/finally constructs, or API error responses. Also invoke when an application could fail open on exception, or when stack traces might reach end users.",
+      "source_sha256": "c198d300c921d420c93debdc4c52c471c5de07604ed3460fad6b0029d2e3cc3f",
+      "source_path": ".claude/skills/exceptional-conditions/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8df300690fb1355615f342f372bc1c03ccd06c073f95a55ebb6066e997e571e": {
+      "description_zh": "检查自主智能体未经人工批准执行不可逆或高影响动作，适用于 LLM 多步流程及由模型输出触发文件、API、邮件、数据库或代码执行的工具工作流。",
+      "source": "Detects autonomous agents that take irreversible or high-impact actions without human approval. Use when building autonomous LLM agents, implementing multi-step agent pipelines, writing code where LLM output triggers real-world actions (file writes, API calls, emails, database changes, code execution), or designing agentic workflows with tool use.",
+      "source_sha256": "e8df300690fb1355615f342f372bc1c03ccd06c073f95a55ebb6066e997e571e",
+      "source_path": ".claude/skills/excessive-agency/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc1d0dbf90ec0408e8dda8cba0664aa2e296cfa9684c3b12cefb041440d44c28": {
+      "description_zh": "检查上传处理是否未校验可执行内容或将文件写入网页可访问位置，适用于 multipart、磁盘云存储、用户文件名及公开上传目录。",
+      "source": "Detects file upload handlers that accept executable content or write to web- accessible paths without validation. Use when writing file upload handlers, processing multipart form data, saving uploaded files to disk or cloud storage. Also invoke when accepting user-supplied filenames or storing uploads in a web-accessible directory.",
+      "source_sha256": "bc1d0dbf90ec0408e8dda8cba0664aa2e296cfa9684c3b12cefb041440d44c28",
+      "source_path": ".claude/skills/file-upload/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26eebed11d6836659d0d089f309024a4a0cbe8b71242fd869c4d10a6cdb6c408": {
+      "description_zh": "检查 GraphQL schema 和服务器缺少深度限制、成本分析或 introspection 控制，适用于解析器以及 Apollo、graphql-yoga、Strawberry、gqlgen 等配置。",
+      "source": "Detects GraphQL schemas without depth limits, cost analysis, or introspection controls. Use when writing GraphQL schemas, resolvers, or server configuration. Also invoke when setting up Apollo Server, graphql-yoga, Strawberry, gqlgen, or any GraphQL framework without explicit depth limiting, cost analysis, or introspection controls.",
+      "source_sha256": "26eebed11d6836659d0d089f309024a4a0cbe8b71242fd869c4d10a6cdb6c408",
+      "source_path": ".claude/skills/graphql-security/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3b6841bd9a30ecb39cd08bdce6d75d34d762a638a51a635dca9c10ef14cfda1": {
+      "description_zh": "检查源代码、配置、环境脚本及可能提交的测试夹具中硬编码的 API key、密码、令牌、连接串和私钥。",
+      "source": "Detects API keys, passwords, tokens, and credentials embedded directly in source code. Use when writing code that contains API keys, passwords, tokens, connection strings, or private keys as string literals. Also invoke when embedding credentials in configuration files, environment setup scripts, or test fixtures that could be committed to version control.",
+      "source_sha256": "e3b6841bd9a30ecb39cd08bdce6d75d34d762a638a51a635dca9c10ef14cfda1",
+      "source_path": ".claude/skills/hardcoded-secrets/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "67975f5ef1327cf0a1212d5a6710e02c01ddd51c095dfc52538fa9e7673dd3da": {
+      "description_zh": "检查用户输入构造 HTTP 或邮件头导致 CRLF 注入的风险，涵盖 Content-Disposition 文件名及 Location 等调用方控制字符串。",
+      "source": "Detects HTTP response header construction from user input vulnerable to CRLF injection. Use when writing code that sets HTTP response headers using values from user input, request parameters, or external data. Also invoke when constructing email headers, Content-Disposition filenames, or Location headers from caller-controlled strings.",
+      "source_sha256": "67975f5ef1327cf0a1212d5a6710e02c01ddd51c095dfc52538fa9e7673dd3da",
+      "source_path": ".claude/skills/header-injection/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e2f9d5f6f9a12c27226646d89eb62276836a4638d330f352aaf4c9ac2a3dda6": {
+      "description_zh": "绘制代码库安全敏感位置及攻击面，帮助分流和优先安排安全评审。",
+      "source": "Maps security-sensitive code locations in a codebase to focus review effort. Use when the user asks to identify security-sensitive areas in a codebase, map the attack surface, or find where a security review should focus. Also invoke when asked to triage or prioritize security effort across a repository.",
+      "source_sha256": "4e2f9d5f6f9a12c27226646d89eb62276836a4638d330f352aaf4c9ac2a3dda6",
+      "source_path": ".claude/skills/hotspots/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1af0d008dccba1c7f0cd02a87dea55856b9578736f11daced48a9fa72b6c5ccb": {
+      "description_zh": "检查未参数化用户输入进入解释器导致 SQL、命令或模板注入的路径，适用于查询字符串、Shell、动态代码及外部解释器。",
+      "source": "Detects SQL, command, and template injection caused by user input reaching an interpreter without parameterization. Use when writing code that constructs database queries, builds SQL strings, executes shell commands, processes templates with user input, evaluates code dynamically, or passes user- controlled data to any external interpreter.",
+      "source_sha256": "1af0d008dccba1c7f0cd02a87dea55856b9578736f11daced48a9fa72b6c5ccb",
+      "source_path": ".claude/skills/injection/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a60fe6c6d148eb50d944d53e3cd7f0946884d7024b70654cd1d1c942a03564f": {
+      "description_zh": "检查设计阶段缺少限流、MFA 和再次认证等控制，适用于认证、金融或权限敏感业务及应用层安全要求。",
+      "source": "Detects missing security controls — rate limits, MFA, re-auth — that should have been designed in from the start. Use when designing authentication flows, implementing rate limiting, building business logic for financial or access-sensitive operations, or writing code that enforces security requirements at the application layer.",
+      "source_sha256": "4a60fe6c6d148eb50d944d53e3cd7f0946884d7024b70654cd1d1c942a03564f",
+      "source_path": ".claude/skills/insecure-design/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f585940925b25a5a73b9855e7be9d86ae14ce441dbad676b5ab239549296b828": {
+      "description_zh": "检查凭据、令牌和个人信息写入未加密本地文件、平台偏好、SQLite 或 localStorage 的情况。",
+      "source": "Detects sensitive data written to unprotected local files, preference stores, or SQLite. Use when writing code that stores sensitive data (credentials, tokens, PII) to local files, platform preference stores (NSUserDefaults, SharedPreferences, UserDefaults), SQLite databases, or localStorage without encryption at rest.",
+      "source_sha256": "f585940925b25a5a73b9855e7be9d86ae14ce441dbad676b5ab239549296b828",
+      "source_path": ".claude/skills/insecure-local-storage/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72c882cfcfca9653a39cfb6fb08ac54eb4c9b2d0a1046a4d68cbaa5b079d29da": {
+      "description_zh": "检查 LLM 输出在 UI 渲染、代码执行或下游 API/数据库传递时导致 XSS、命令和二阶注入的风险，涵盖模型 Markdown/HTML 显示。",
+      "source": "Detects unsafe rendering or execution of LLM output that enables XSS, command injection, or second-order injection. Use when writing code that renders LLM output to a UI, executes LLM-generated code or shell commands, or passes LLM responses to downstream APIs or databases. Also invoke when displaying markdown or HTML from an LLM response.",
+      "source_sha256": "72c882cfcfca9653a39cfb6fb08ac54eb4c9b2d0a1046a4d68cbaa5b079d29da",
+      "source_path": ".claude/skills/insecure-output-handling/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9aab0990fb7d5cea4adfb0e6fc3dc12c0dd1369c3250e742e23d50ec7c42506b": {
+      "description_zh": "检查 LLM 工具、函数 schema 及插件处理缺少参数校验，让提示注入升级为文件、Shell 或网络访问的风险。",
+      "source": "Detects LLM tool definitions without parameter validation, allowing prompt injection to escalate into file/shell/network access. Use when writing LLM tool definitions, function schemas for tool use, plugin or extension handlers, or any code that defines what actions an LLM can take via tools. Also invoke when implementing tool parameter validation.",
+      "source_sha256": "9aab0990fb7d5cea4adfb0e6fc3dc12c0dd1369c3250e742e23d50ec7c42506b",
+      "source_path": ".claude/skills/insecure-plugin-design/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c1bf9b0014c0106032e893b177bfba08020bef1e711e84757dbdcd97618304c": {
+      "description_zh": "检查不安全反序列化、未验证软件更新和被篡改 CI 产物，适用于 pickle/marshal、更新机制、下载产物及不可信对象重建。",
+      "source": "Detects unsafe deserialization, unverified software updates, and tampered CI artifacts. Use when writing deserialization code, processing pickled or marshalled data, implementing software update mechanisms, consuming CI/CD artifact downloads, or handling data from untrusted sources that gets reconstructed into objects.",
+      "source_sha256": "4c1bf9b0014c0106032e893b177bfba08020bef1e711e84757dbdcd97618304c",
+      "source_path": ".claude/skills/integrity-failures/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e498eaf0438af6877e90c315ef916134b1508489795f716f16013bb83e685b5": {
+      "description_zh": "检查 IPC 接收端未验证调用者身份或来源，涵盖 URL scheme、Android intent/导出活动、管道套接字、XPC 和其他进程通信入口。",
+      "source": "Detects IPC receivers that accept input without verifying caller identity. Use when writing URL scheme handlers, Android intent receivers or exported activities, named pipe or socket listeners, XPC service handlers, or any IPC endpoint that processes caller-supplied input without validating the caller's identity or origin.",
+      "source_sha256": "2e498eaf0438af6877e90c315ef916134b1508489795f716f16013bb83e685b5",
+      "source_path": ".claude/skills/ipc-security/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a92efb7bac030a09ece149946ad01dfba6aa443ad02366e74ef827a42792d886": {
+      "description_zh": "检查从未验证来源、浮动标签或未审注册表加载被篡改模型的供应链风险，适用于预训练下载、模型路径、第三方提供商、版本选择及自动更新。",
+      "source": "Detects compromised or backdoored models loaded from unverified sources, floating tags, or unreviewed registries. Use when writing code that downloads pre-trained models, loads models from registries or file paths, integrates third-party LLM providers, or manages model version selection. Also invoke when setting up automated model updates.",
+      "source_sha256": "a92efb7bac030a09ece149946ad01dfba6aa443ad02366e74ef827a42792d886",
+      "source_path": ".claude/skills/llm-supply-chain/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f57d2aefeb127e79c6708f05fe1305ee1beb581a6012a1a506d99a9f25880b04": {
+      "description_zh": "检查安全日志缺失、秘密写日志及输入造成日志注入，适用于审计、错误、认证事件和涉及敏感数据的系统动作记录。",
+      "source": "Detects missing security event logs, logged secrets, and log injection through user input. Use when writing logging code, audit trails, error handlers that log, authentication event recording, or any code that writes security- relevant events. Also invoke when logging user inputs, API responses, or system actions that touch sensitive data.",
+      "source_sha256": "f57d2aefeb127e79c6708f05fe1305ee1beb581a6012a1a506d99a9f25880b04",
+      "source_path": ".claude/skills/logging-failures/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48caa3b2a922f17682b7d8a1483699916a3e5b15912d07e4acef5c17bbd1b35b": {
+      "description_zh": "检查请求体、表单或 JSON 未经字段白名单直接展开、合并或解构到 ORM create/update 的批量赋值风险。",
+      "source": "Detects ORM create/update calls that spread request bodies without an explicit field allowlist. Use when writing code that creates or updates database records from request body, form data, or JSON input. Also invoke when spreading, merging, or destructuring request payloads directly into ORM model create/update calls without an explicit field allowlist.",
+      "source_sha256": "48caa3b2a922f17682b7d8a1483699916a3e5b15912d07e4acef5c17bbd1b35b",
+      "source_path": ".claude/skills/mass-assignment/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78bd6a0dedae994ab9af5f042e048c92a2f0bd6985fbebefcc5cbe58237d80de": {
+      "description_zh": "检查 MCP schema 和工具处理器中的恶意输入、硬编码秘密及无限制文件或 Shell 访问，适用于服务器、工具注册和暴露网络或系统权限的扩展。",
+      "source": "Detects MCP tool handlers vulnerable to malicious inputs, hardcoded secrets, or unrestricted file/shell access. Use when writing MCP server definitions, tool schemas, or tool handler code. Also invoke when registering tools with Claude or building Claude Code extensions that expose file system, shell, or network access.",
+      "source_sha256": "78bd6a0dedae994ab9af5f042e048c92a2f0bd6985fbebefcc5cbe58237d80de",
+      "source_path": ".claude/skills/mcp-security/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27c54430a030880c7b341735090731e172412f5ad1790f01eec08c29e1ce7dc7": {
+      "description_zh": "检查 C/C++ 和 Rust unsafe 函数内存及资源 API 误用，包括未查分配结果、错误路径释放竞争、锁初始化和跨 exec 描述符泄漏。覆盖分配、映射、锁、文件及裸指针调用。",
+      "source": "Detects function-local misuse of memory and resource APIs in C, C++, and Rust unsafe — allocations whose return value is not checked, frees on error paths that race the success path, locks initialized incorrectly, file descriptors leaked across exec. Use when writing or modifying C or C++ code that calls malloc/calloc/realloc/free, mmap/munmap, pthread_mutex_*, fopen/open, or any kernel/library memory or resource primitive. Use when writing Rust code inside an unsafe block that calls a raw allocation or pointer API.",
+      "source_sha256": "27c54430a030880c7b341735090731e172412f5ad1790f01eec08c29e1ce7dc7",
+      "source_path": ".claude/skills/memory-api-misuse/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b75b8e763f4a1d879cced592eb52bfed963bb9d77531d2606f97686687a392e": {
+      "description_zh": "检查 LLM 接口缺少令牌上限、限流或提示长度限制导致的成本与资源耗尽，适用于推理、聊天后端、服务配置和用户提示接收。",
+      "source": "Detects LLM endpoints missing token caps, rate limits, or prompt-length bounds, enabling cost and resource exhaustion. Use when writing LLM API call handlers, setting up inference endpoints, implementing chatbot backends, or configuring token limits for LLM services. Also invoke when accepting user- provided prompts without length constraints.",
+      "source_sha256": "2b75b8e763f4a1d879cced592eb52bfed963bb9d77531d2606f97686687a392e",
+      "source_path": ".claude/skills/model-dos/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e7f4e6a2bcad473e3413b6c08f2b7be68fbdc3f86845fad0d1fc64fc3c81548b": {
+      "description_zh": "检查推理端点缺少认证或节流导致模型窃取及权重重建的风险，适用于模型服务部署、访问控制和推理 API 限流配置。",
+      "source": "Detects inference endpoints without authentication or throttling, allowing model weight reconstruction. Use when writing inference API endpoints, deploying LLM-serving infrastructure, implementing model access controls, or configuring rate limiting and authentication for model endpoints.",
+      "source_sha256": "e7f4e6a2bcad473e3413b6c08f2b7be68fbdc3f86845fad0d1fc64fc3c81548b",
+      "source_path": ".claude/skills/model-theft/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4965c895b043d4153e4518e13321788e2eb95573ac560375bae58d3231f29bf5": {
+      "description_zh": "检查智能体间调用缺少认证、授权或权限范围，适用于子智能体、多智能体管道、消息传递、编排委派及共享工具权限。",
+      "source": "Detects agent-to-agent calls without authentication, authorization, or permission scoping. Use when writing code that calls other agents, spawns subagents, builds multi-agent pipelines, or passes messages between LLM agents. Also invoke when an orchestrator delegates tasks to worker agents or when agents share tools and permissions.",
+      "source_sha256": "4965c895b043d4153e4518e13321788e2eb95573ac560375bae58d3231f29bf5",
+      "source_path": ".claude/skills/multi-agent-trust/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41d03fd4415cbdc37c0e1ab9471c5dbf66b38e7909b9696393fc38b7461069f3": {
+      "description_zh": "检查 MongoDB、Elasticsearch 等 NoSQL 查询未校验输入进入运算符、过滤条件或动态聚合的注入风险。",
+      "source": "Detects MongoDB and other NoSQL queries that mix user input into operators or filters without validation. Use when writing MongoDB queries, Elasticsearch queries, or other NoSQL database operations that include user-supplied input. Also invoke when building query filters from request parameters or constructing aggregation pipelines with dynamic values.",
+      "source_sha256": "41d03fd4415cbdc37c0e1ab9471c5dbf66b38e7909b9696393fc38b7461069f3",
+      "source_path": ".claude/skills/nosql-injection/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69604e2436553a7b32c63c66f0658165ffc714281321c2859c96d8e3b54a0f3d": {
+      "description_zh": "检查不可信数值经解析、转换、符号变更或缩窄后未再次校验边界，却用于长度、分配、索引、文件偏移或权限比较的情况。涵盖 atoi、strtol、parseInt、strconv.Atoi 等及 memcpy 长度。",
+      "source": "Detects untrusted numeric input that flows through a conversion, cast, or parser into a length, size, index, or authorization comparison without bounds-checking the post-conversion value. Use when writing or modifying code that calls atoi/strtol/parseInt/strconv.Atoi on user-supplied or network-supplied input, casts between signed and unsigned integer types, narrows an integer width before a bounds check, or uses an untrusted integer as an allocation size, array index, file offset, length argument to memcpy, or comparison gate for authorization or permission decisions.",
+      "source_sha256": "69604e2436553a7b32c63c66f0658165ffc714281321c2859c96d8e3b54a0f3d",
+      "source_path": ".claude/skills/numeric-trust-boundary/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61ea34b67c1fbe6060824038cbce1444999ad9645db25a751faa77545e6e204e": {
+      "description_zh": "检查 OAuth/OIDC 的 JWT 校验、redirect_uri 匹配和 state 参数缺陷，适用于授权流程、令牌端点、回调和 JWT 解析验证。",
+      "source": "Detects weak JWT validation, loose redirect_uri matching, and missing state parameters in OAuth/OIDC flows. Use when writing OAuth2 or OpenID Connect flows, JWT validation logic, token endpoint handling, or redirect URI processing. Also invoke when implementing any code that parses or verifies JWTs.",
+      "source_sha256": "61ea34b67c1fbe6060824038cbce1444999ad9645db25a751faa77545e6e204e",
+      "source_path": ".claude/skills/oauth-implementation/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e4c212f0365df89b649f584ad59e4004756d7ae62255706b152c7b5b8ff3034": {
+      "description_zh": "检查调用方控制 URL 的开放重定向，适用于请求参数跳转、登录返回地址及 OAuth 回调，识别钓鱼或回调滥用风险。",
+      "source": "Detects redirects to user-controlled URLs that enable phishing and OAuth callback abuse. Use when writing code that redirects users to a URL from request parameters, form input, or any caller-controlled source. Also invoke when building login flows with \"return to\" URLs or OAuth callback redirects.",
+      "source_sha256": "2e4c212f0365df89b649f584ad59e4004756d7ae62255706b152c7b5b8ff3034",
+      "source_path": ".claude/skills/open-redirect/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "331fc879cd1d5419ae6f69682ee7b8bed57848f2f6b3782df040273077ade20c": {
+      "description_zh": "检查在重大决策中未经人工复核将 LLM 输出视为权威事实或据此控制结果的系统，涵盖模型判断驱动下游动作的自动管道。",
+      "source": "Detects systems that treat LLM output as authoritative fact in consequential decisions without human review. Use when writing code that displays LLM output as authoritative fact, uses LLM decisions to gate consequential outcomes without human review, or builds automated pipelines where LLM judgment drives downstream actions.",
+      "source_sha256": "331fc879cd1d5419ae6f69682ee7b8bed57848f2f6b3782df040273077ade20c",
+      "source_path": ".claude/skills/overreliance/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3ffe9b9155ce6fc0f01fae952499055cf8d458cb5d04b8f8a79cb67f0a5e97d": {
+      "description_zh": "检查用户路径导致 ../、绝对路径或符号链接逃逸，适用于文件读写删除、静态服务、按名称下载及 URL/请求体路径解析。",
+      "source": "Detects file operations with user-controlled paths vulnerable to ../ traversal, absolute paths, or symlink escapes. Use when writing code that opens, reads, writes, or deletes files using paths constructed from user input. Also invoke when serving static files, handling file downloads by name, or resolving paths from URL parameters or request bodies.",
+      "source_sha256": "a3ffe9b9155ce6fc0f01fae952499055cf8d458cb5d04b8f8a79cb67f0a5e97d",
+      "source_path": ".claude/skills/path-traversal/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa67e512c7da266f05d53af2a22568cea97e90736e0e8ad53ce28b35b615b60d": {
+      "description_zh": "在小型 PR 差异的变更文件中单次检查严重及高危 OWASP/LLM 问题，作为 CI 阻断关卡，不分派子智能体或执行威胁模型及攻击链分析。",
+      "source": "Lightweight per-PR security gate that detects Critical and High severity OWASP/LLM issues in changed files only. Use when scanning a small git diff in CI for blocking findings. Single-pass; does not dispatch subagents and does not perform threat modeling or attack-chain analysis.",
+      "source_sha256": "aa67e512c7da266f05d53af2a22568cea97e90736e0e8ad53ce28b35b615b60d",
+      "source_path": ".claude/skills/pr-review/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59b064140f821b2c603ca84e322fce55713cd600de49861f10eab2ff040612cd": {
+      "description_zh": "检查 SUID/SGID、权限提升下降、环境变量信任、umask、临时文件竞争及符号链接问题，适用于特权代码和 /tmp 等公共可写目录的文件操作。",
+      "source": "Detects unsafe privilege handling in SUID/SGID binaries, environment-variable trust in privileged code, insecure umask, temp-file races, and symlink-follow bugs in /tmp. Use when writing or modifying SUID/SGID-installed code, code that drops or elevates privileges via setuid/setgid/seteuid/seteuid_r, anything that reads PATH/LD_*/IFS environment variables, code that creates files in /tmp or other world-writable directories, or anything that opens a file whose path may contain a symlink controlled by a less-privileged user.",
+      "source_sha256": "59b064140f821b2c603ca84e322fce55713cd600de49861f10eab2ff040612cd",
+      "source_path": ".claude/skills/privilege-handling/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9897b629aef057aec62730b439fc64d4b8711e0f7d49dccfa3a1093dcefcca8e": {
+      "description_zh": "检查用户或检索文档进入提示后劫持模型指令的风险，适用于系统提示、RAG、外部文档及影响 LLM 上下文的数据。",
+      "source": "Detects LLM prompts built from user input or retrieved documents that let attackers hijack the model's instructions. Use when writing code that constructs LLM prompts from user input, builds system prompts, implements RAG pipelines, or processes external documents fed to a model. Also invoke when external data can influence LLM context.",
+      "source_sha256": "9897b629aef057aec62730b439fc64d4b8711e0f7d49dccfa3a1093dcefcca8e",
+      "source_path": ".claude/skills/prompt-injection/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fcf3b301e76a067d997e6ea776fc80b4b80fc48bc79488bc6cec8b5ba3255f2c": {
+      "description_zh": "检查 JavaScript/TypeScript 对不可信对象深合并、克隆、动态属性或递归复制导致 Object.prototype 污染，涵盖 lodash merge/set 和动态 Object.assign。",
+      "source": "Detects JavaScript deep-merges or property assignment from user input that can pollute Object.prototype. Use when writing JavaScript or TypeScript code that deep-merges, clones, or extends objects using user-controlled input. Also invoke when using lodash merge/set, Object.assign with dynamic keys, or recursive property copy on untrusted data.",
+      "source_sha256": "fcf3b301e76a067d997e6ea776fc80b4b80fc48bc79488bc6cec8b5ba3255f2c",
+      "source_path": ".claude/skills/prototype-pollution/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13bc8d17223d9ae172ccc009b52592726128c0b9729050d098c7c5301ef387ef": {
+      "description_zh": "检查共享状态先检查后操作的 TOCTOU 竞争，适用于文件存在检查、无锁余额更新及同一资源非原子操作。",
+      "source": "Detects check-then-act sequences on shared state vulnerable to TOCTOU manipulation. Use when writing check-then-act sequences on shared state, file operations that check existence before read/write, balance updates without locking, or any code where two operations on the same resource are not atomic.",
+      "source_sha256": "13bc8d17223d9ae172ccc009b52592726128c0b9729050d098c7c5301ef387ef",
+      "source_path": ".claude/skills/race-condition/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9243b8a7064d7be6d5f687a7c2463c6a74c25fbe2ac3960068cbe2f6c47dbcb": {
+      "description_zh": "检查 RAG 外部文档未经净化或信任关卡进入向量库及 LLM 上下文，适用于 URL 获取、文档解析和外部检索。",
+      "source": "Detects RAG pipelines that ingest external documents into LLM context without sanitization or trust gating. Use when building RAG pipelines, ingesting external documents into vector stores, or retrieving content from external sources to include in LLM context. Also invoke when writing code that fetches URLs or parses documents for LLM prompts.",
+      "source_sha256": "a9243b8a7064d7be6d5f687a7c2463c6a74c25fbe2ac3960068cbe2f6c47dbcb",
+      "source_path": ".claude/skills/rag-security/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd36cb72dd7b475a263b3216473ba98b9043a378e90681940895e2bc851c2b01": {
+      "description_zh": "检查用户输入适用的正则是否存在灾难性回溯，涵盖外部配置正则、输入校验及不可信文本解析。",
+      "source": "Detects regex patterns vulnerable to catastrophic backtracking on crafted inputs. Use when writing regular expressions that will be applied to user- supplied input. Also invoke when compiling regexes from external configuration, building input validation patterns, or parsing untrusted strings with regex.",
+      "source_sha256": "bd36cb72dd7b475a263b3216473ba98b9043a378e90681940895e2bc851c2b01",
+      "source_path": ".claude/skills/redos/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fdfb2471d7ac29bc03cf03619284e8bf6778bb827a0609154a366f836d2b43b0": {
+      "description_zh": "实施 /security-review 所报告安全发现的修复，适用于清理和整改已发现问题。",
+      "source": "Applies fixes for security findings produced by /security-review. Use when the user wants to fix security issues found by /security-review or when they ask to clean up, remediate, or apply fixes for security findings.",
+      "source_sha256": "fdfb2471d7ac29bc03cf03619284e8bf6778bb827a0609154a366f836d2b43b0",
+      "source_path": ".claude/skills/security-cleanup/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a2cf70d3b530a3dd82062fa6fd866fc4eef916a599e42e6b4e90f73f354bd1d": {
+      "description_zh": "检查不安全默认、过宽 CORS、公开调试端点及缺少安全头，适用于服务器、环境变量、默认凭据、基础设施及响应头中间件。",
+      "source": "Detects insecure defaults, overly permissive CORS, exposed debug endpoints, and missing security headers. Use when writing server configuration, setting environment variables, configuring CORS policies, enabling debug modes, setting up default credentials, or deploying application infrastructure. Also invoke when writing security headers middleware.",
+      "source_sha256": "2a2cf70d3b530a3dd82062fa6fd866fc4eef916a599e42e6b4e90f73f354bd1d",
+      "source_path": ".claude/skills/security-misconfiguration/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a961967597272200b45dafffba1c031b52b9d026b241108171ebac0d3afa5c2": {
+      "description_zh": "在用户输入 /security-review 或明确要求完整安全审计时，通过隔离子智能体执行 OWASP/CWE 全面代码审查。",
+      "source": "Runs a full OWASP/CWE security audit via isolated subagents. Use when the user types /security-review or explicitly requests a full security audit of the current code.",
+      "source_sha256": "4a961967597272200b45dafffba1c031b52b9d026b241108171ebac0d3afa5c2",
+      "source_path": ".claude/skills/security-review/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4501a9b65aca749ae40712a2a6036cbefbd037a2df4c310527e4b83b65270493": {
+      "description_zh": "检查个人信息、凭据、健康数据或秘密传入 LLM API、嵌入系统提示，以及回答潜在训练数据泄漏和记忆上下文持久化的风险。",
+      "source": "Detects PII, credentials, and secrets passed to LLM APIs or embedded in system prompts. Use when writing code that passes sensitive data (PII, credentials, health data) to an LLM API, constructs system prompts containing secrets, returns LLM responses that could contain training data, or implements memory/context persistence.",
+      "source_sha256": "4501a9b65aca749ae40712a2a6036cbefbd037a2df4c310527e4b83b65270493",
+      "source_path": ".claude/skills/sensitive-disclosure/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e0179f9aa49e3dab4e2f2bcc02a36fcbf396d2bf82455e7086c5353e65e9258": {
+      "description_zh": "检查用户控制 HTTP URL 可访问内部服务或云元数据的 SSRF，涵盖资源获取、代理、webhook 和 URL 预览。",
+      "source": "Detects HTTP requests to user-controlled URLs that can reach internal services or cloud metadata endpoints. Use when writing code that makes HTTP requests to URLs constructed from user input, fetches resources from caller-specified addresses, or proxies requests on behalf of users. Also invoke when implementing webhook receivers or URL preview features.",
+      "source_sha256": "9e0179f9aa49e3dab4e2f2bcc02a36fcbf396d2bf82455e7086c5353e65e9258",
+      "source_path": ".claude/skills/ssrf/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e970df347d56335d038543a6693b2214795df133435399c67765d700323fa28d": {
+      "description_zh": "检查依赖清单、锁文件、安装和 CI 的供应链风险，包括无锁文件或漏洞扫描、未验证安装、远程内容直接传 Shell 及 AI 虚构包名。",
+      "source": "Detects supply-chain risks in dependency manifests, lockfiles, install commands, and CI pipelines — missing lockfiles, absent vulnerability scanners, unverified installs, install hooks that pipe remote content to a shell, and AI-hallucinated package names. Use when writing package install commands, dependency manifests, CI/CD configs, build scripts, or code that loads external packages.",
+      "source_sha256": "e970df347d56335d038543a6693b2214795df133435399c67765d700323fa28d",
+      "source_path": ".claude/skills/supply-chain/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07f2c4466ddf77a6889eb1ca7382bacb5ccf740af7da22b574f738db24486152": {
+      "description_zh": "在新功能或组件实现前明确用途、部署、可信和不可信输入，形成威胁模型。适用于 API、数据管道、智能体循环、新信任边界、用户数据、认证和外部集成。",
+      "source": "Produces a threat model — purpose, deployment, trusted inputs, untrusted inputs — for a new feature or component before it's implemented. Use when writing an implementation plan for a new API endpoint, data pipeline, agent loop, or system component. Also invoke when a plan introduces new trust boundaries, handles user-supplied data, adds authentication flows, or integrates external services.",
+      "source_sha256": "07f2c4466ddf77a6889eb1ca7382bacb5ccf740af7da22b574f738db24486152",
+      "source_path": ".claude/skills/threat-model/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "67d60e6958ea75a3cc2c02554653b59d8102967515c7f644d8121dafd1ff41f3": {
+      "description_zh": "检查用户文本进入 LLM 前未规范化 Unicode，导致 RTL 控制、零宽字符和同形字攻击的风险，适用于外部提示及不可见格式字符处理。",
+      "source": "Detects user input passed to LLMs without Unicode normalization, allowing RTL overrides, zero-width joiners, and homoglyph attacks. Use when writing code that passes user-supplied strings to an LLM, constructs prompts from external data, or processes text that may contain Unicode control characters, homoglyphs, or invisible formatting characters.",
+      "source_sha256": "67d60e6958ea75a3cc2c02554653b59d8102967515c7f644d8121dafd1ff41f3",
+      "source_path": ".claude/skills/token-smuggling/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "681f3b7e04afdc8061ea4c696afba9901e0dcbb77f61dc2903a62c26071401eb": {
+      "description_zh": "检查训练及微调管道未经完整性关卡接收外部数据，涵盖数据集摄取、网络抓取、用户贡献及自动整理。",
+      "source": "Detects training and fine-tuning pipelines that ingest external data without integrity gating. Use when writing fine-tuning pipelines, dataset ingestion scripts, external training data loaders, or code that collects and processes data for model training. Also invoke when automating dataset curation from web scraping or user-contributed sources.",
+      "source_sha256": "681f3b7e04afdc8061ea4c696afba9901e0dcbb77f61dc2903a62c26071401eb",
+      "source_path": ".claude/skills/training-data-poisoning/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc8e6a4debf52c9f46877a0c2aa2732690cb4d853a2a2555b4f171d99f6bef36": {
+      "description_zh": "检查第三方 API、webhook、回调及合作方响应未经类型校验或净化即反序列化和执行的风险。",
+      "source": "Detects code that consumes third-party API responses without type validation or sanitization. Use when writing code that calls third-party APIs, parses responses from external services, or integrates with webhooks and callbacks from external systems. Also invoke when deserializing or acting on data received from partner or vendor APIs without validation.",
+      "source_sha256": "fc8e6a4debf52c9f46877a0c2aa2732690cb4d853a2a2555b4f171d99f6bef36",
+      "source_path": ".claude/skills/unsafe-api-consumption/SKILL.md",
+      "package_sha256": "919be4bfc0d95988223fcf8ecd4b5158a8ffc2faadb4c8a03eaad664ad2f9d90",
+      "source_package": "soundcheck-1.17.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9e7c6c8c58c26618462c7deca7f8c793f80ad8ad9ebdc63bf8ba07e8503d822": {
+      "description_zh": "在有 docs/overview.md 规格目录的项目中维护事实依据，适用于生产代码增删改及能力存在性检查、功能完成后同步，以及路线图、使命、原则和规格更新；也支持初次建立目录。",
+      "source": "Use in a project that has a docs/overview.md spec catalog, or when the user asks to set one up: before writing, modifying, or deleting production code in that project (refactors and bug fixes included) or checking whether a capability already exists; after a feature ships there or the user signals completion; when the user wants to change the project's roadmap, mission, or constitution, or to update/sync the spec docs.",
+      "source_sha256": "e9e7c6c8c58c26618462c7deca7f8c793f80ad8ad9ebdc63bf8ba07e8503d822",
+      "source_path": "skills/source-of-truth/SKILL.md",
+      "package_sha256": "2297b7030b1c22d01f05af4e423075ec0b0ec6f0ba3e4d5d260280b728ffcb76",
+      "source_package": "Source Of Truth-1.9.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4320b5ee265b2f57d9283b4e297b413bce477dea2eb11563d614081f6d5ca499": {
+      "description_zh": "通过 Sourcegraph MCP 有纪律地搜索导航代码，定位实现、理解系统、调试修复及评审。",
+      "source": "Use when the user needs to search or navigate code with Sourcegraph MCP tools. Provides disciplined search workflows for finding implementations, understanding systems, debugging issues, fixing bugs, and reviewing code.",
+      "source_sha256": "4320b5ee265b2f57d9283b4e297b413bce477dea2eb11563d614081f6d5ca499",
+      "source_path": "skills/searching-sourcegraph/SKILL.md",
+      "package_sha256": "96665794fd72a4404abf524a0228fb0e9fc6448ac06692481a7ca9235eaf759c",
+      "source_package": "Sourcegraph-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddc7307b8c897270bc40612daf3f863b7764f108eb089441f29ba4719030b905": {
+      "description_zh": "通过 SpAItial MCP 从文字、图片 URL、本地图片或等距柱状全景生成 3D 世界、场景或 Gaussian splat，等待完成后提供托管查看链接、缩略图并下载 splat。",
+      "source": "This skill should be used when the user wants to generate a 3D world, scene, or Gaussian splat with SpAItial — e.g. \"make a 3D world of…\", \"turn this photo into a 3D scene\", \"generate a splat from this image\", \"create a world from a text prompt\", or \"build a world from this 360 panorama\". Handles text prompts, image URLs, local image files, and equirectangular panoramas; submits the job through the SpAItial MCP server, waits for it to finish, returns the hosted viewer link and thumbnail, and downloads the splat. Triggers on mentions of spaitial, world generation, .spz/.sog splat files, or 3D scene generation from an image.",
+      "source_sha256": "ddc7307b8c897270bc40612daf3f863b7764f108eb089441f29ba4719030b905",
+      "source_path": "skills/create-world/SKILL.md",
+      "package_sha256": "3852cbeceffb856b69a22eeb92c2d5ba0591e68eb358635f11a06a278f60f3bd",
+      "source_package": "spaitial-ai-0.5.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "efd6f90da77081c8e865712803cde40f2b76027476682a5aa23946f4cd877636": {
+      "description_zh": "通过全景编辑流程修改既有 SpAItial 世界的物体、颜色和风格，支持最多三张参考图，让用户检查各 pano 结果，再从接受的全景创建新世界。",
+      "source": "Use this skill when the user wants to edit or restyle an existing SpAItial world through the app-style panorama edit flow — e.g. \"change the rug to yellow\", \"remove that object\", \"add this sofa\", \"make this room cyberpunk\", \"iterate on this world\", or \"create a new world from this edited pano\". Edits the world panorama, supports up to 3 reference images, lets the user inspect each pano_ result, and finally creates a new world from the accepted panorama.",
+      "source_sha256": "efd6f90da77081c8e865712803cde40f2b76027476682a5aa23946f4cd877636",
+      "source_path": "skills/edit-world/SKILL.md",
+      "package_sha256": "3852cbeceffb856b69a22eeb92c2d5ba0591e68eb358635f11a06a278f60f3bd",
+      "source_package": "spaitial-ai-0.5.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd4e7c4c438bf2a0e4faaf70a0cc72bdfb4efd26fcf0af942a43a835f96ac37c": {
+      "description_zh": "通过 SpAItial MCP 将已完成世界导出为全分辨率或简化 .ply 多边形网格，等待完成并下载，供 Blender、Unreal、Unity 等使用。先创建世界，request_id 通过 manage-worlds 查找。",
+      "source": "This skill should be used when the user wants a polygon mesh from a finished SpAItial world — e.g. \"export a mesh of req_…\", \"give me the .ply mesh\", \"I need a mesh for Blender / Unreal / Unity\", \"export a simplified / low-poly mesh\", or \"convert my world to a 3D model\". Starts a mesh export through the SpAItial MCP server, waits for it to finish, and downloads the .ply file (full-resolution or simplified). Use create-world to generate the world first and manage-worlds to find a world's request_id.",
+      "source_sha256": "fd4e7c4c438bf2a0e4faaf70a0cc72bdfb4efd26fcf0af942a43a835f96ac37c",
+      "source_path": "skills/export-mesh/SKILL.md",
+      "package_sha256": "3852cbeceffb856b69a22eeb92c2d5ba0591e68eb358635f11a06a278f60f3bd",
+      "source_package": "spaitial-ai-0.5.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
