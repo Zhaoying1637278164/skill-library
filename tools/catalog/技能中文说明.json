@@ -30769,6 +30769,1086 @@
       "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
       "source_package": "Fellowship-1.2.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2aaff5161ac03d059c5681aab5c8cbf21f75b774e4ed02dd61d08418ed5ba66": {
+      "description_zh": "通过浏览器服务展示可点击的 HTML 原型，让用户并排比较布局、界面方向或设计稿并选择，再读取选择迭代方案；适用于需要视觉比较的设计决策。",
+      "source": "Use when design decisions require visual comparison — layouts, UI directions, mockups, side-by-side options. Runs a browser server that shows HTML mockups the user clicks to choose. Write HTML, user clicks, you read their selection and iterate.",
+      "source_sha256": "f2aaff5161ac03d059c5681aab5c8cbf21f75b774e4ed02dd61d08418ed5ba66",
+      "source_path": "skills/visual-exploration/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1519f0a19d1bdea3427d114a7386cd84ce8fef746ec99b6331176f4426cc4b03": {
+      "description_zh": "使用 FET 为学校和大学创建、生成、编辑、检查或求解 .fet 课表，运行 FET/fet-cl、排查超时和数据错误、读取导出活动 XML/CSV/HTML、验证约束并打印班级或教师课表。",
+      "source": "Work with FET (Free Evolutionary Timetabling) for school and university timetables. Use it to create, generate, edit, check or solve a .fet file, run FET/fet-cl from the command line, find out why FET finds no solution (\"Time exceeded\", \"Cannot precompute - data is wrong\"), read and export the generated timetable (*_activities.xml, CSV, HTML), verify that a timetable respects its constraints, or print timetables per class or teacher. Also triggers on \"timetable\", \"school schedule\", \"class schedule\", \"orario\", \"orario lezioni\" when FET is involved.",
+      "source_sha256": "1519f0a19d1bdea3427d114a7386cd84ce8fef746ec99b6331176f4426cc4b03",
+      "source_path": "skills/fet/SKILL.md",
+      "package_sha256": "d3d81be1223b6f4a5980998e49761b8f344169e6f1c1fbcca709b7656e95fd14",
+      "source_package": "fet-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f546731178bfba6df810d9714731a9779e85866486cf0530dccb160be5940bdc": {
+      "description_zh": "将自然语言视频或音频操作转为 FFmpeg 命令，涵盖转码、裁剪、拼接、抽音频、调整分辨率/码率/编码、滤镜、图文叠加、缩略图/GIF、烧录字幕和流封装。",
+      "source": "Use when the user describes a video or audio operation in natural language and needs the corresponding FFmpeg command — transcoding, trimming, concatenating, extracting audio, changing resolution/bitrate/codec, applying filters, overlaying text or images, generating thumbnails or GIFs, burning subtitles, or muxing streams.",
+      "source_sha256": "f546731178bfba6df810d9714731a9779e85866486cf0530dccb160be5940bdc",
+      "source_path": "skills/ffmpeg-command/SKILL.md",
+      "package_sha256": "af0798bf88e5c9392838d54f4d83c3ec2adad931b3706d40541ce1734d012b49",
+      "source_package": "ffmpeg-llm-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8edd971fb7db9099f7db0741568cd4c21743a5b7533c4f930ca3028d42592665": {
+      "description_zh": "创建和管理 Fiber AI 受众，批量搜索、补全和导出企业或联系人的名单，用于潜客名单及规模化数据操作。",
+      "source": "Create and manage Fiber AI audiences for bulk operations — search, enrich, and export lists of companies or contacts at scale. Use when the user wants to build a prospecting list or do bulk data operations.",
+      "source_sha256": "8edd971fb7db9099f7db0741568cd4c21743a5b7533c4f930ca3028d42592665",
+      "source_path": "skills/audience/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54825c3ba6c11babbc78ddfe8a5a13ca5bb068a3ad5c225f1550d1a8cd8e6e64": {
+      "description_zh": "在用户自己的样本上开展预先登记且可复现的 Fiber AI 与其他数据提供方比较，支持有凭据的 People Data Labs、Apollo、Clearbit 等 API，并如实报告 Fiber 表现较差的项目；用于数据质量测试和供应商切换评估。",
+      "source": "Run a reproducible, pre-registered benchmark comparing Fiber AI to a competing data provider (People Data Labs, Apollo, Clearbit, ZoomInfo, Coresignal, or any other API the user has credentials for) on the user's own sample. Reports honest side-by-side numbers including where Fiber underperformed. Use this when the user says \"compare Fiber to <vendor>\", \"bake-off\", \"benchmark data quality\", \"which provider is better for my segment\", \"test data providers\", \"evaluate Fiber AI\", or \"should I switch from <vendor> to Fiber\".",
+      "source_sha256": "54825c3ba6c11babbc78ddfe8a5a13ca5bb068a3ad5c225f1550d1a8cd8e6e64",
+      "source_path": "skills/benchmark-vs-competitor/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1e189a5a36bd332fe78eb26fffd073d5fe44e9c5906656f3774490027e13e2f": {
+      "description_zh": "使用 Fiber AI 搜索招聘候选人，补全工作与个人邮箱、获取电话并导出潜客 CSV，用于按岗位和企业建立可保存、导出的招聘联系名单。",
+      "source": "Build a recruiting-grade audience of candidates using Fiber AI - search, enrich work and personal emails, reveal phones, and export prospect CSVs. Use this when the user says \"build a recruiting list\", \"find me candidates for role X at companies like Y\", \"talent audience\", \"recruiting audience\", \"sourcing list\", \"candidate outreach list\", \"recruiting prospect list\", or otherwise asks for a saved, exportable list of people for hiring.",
+      "source_sha256": "e1e189a5a36bd332fe78eb26fffd073d5fe44e9c5906656f3774490027e13e2f",
+      "source_path": "skills/build-recruiting-audience/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e02ca6a110f4c86df604fbe6deab28d5e5cd18bf76339fd9a8a988447e53e64": {
+      "description_zh": "通过 Fiber AI 将 GitHub 用户名或个人主页 URL 对应到 LinkedIn 档案，并补全联系资料；用于开发者、开源贡献者及技术候选人名单。",
+      "source": "Resolve GitHub handles or profile URLs into LinkedIn profiles and full contact enrichment using Fiber AI. Use this when the user says \"I have GitHub handles\", \"enrich these engineers by GitHub\", \"find LinkedIn for these GitHub users\", \"developer enrichment\", \"OSS contributors list\", \"dev candidate enrichment\", or otherwise starts from GitHub identifiers and wants LinkedIn or contact data.",
+      "source_sha256": "8e02ca6a110f4c86df604fbe6deab28d5e5cd18bf76339fd9a8a988447e53e64",
+      "source_path": "skills/enrich-github-handles/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f3ba66e23d231315407316205b883839607714c4c7165158688b0ada329aa94": {
+      "description_zh": "使用 Fiber AI 为一组 LinkedIn URL 或人员 CSV 批量补全工作邮箱、个人邮箱和电话号码。",
+      "source": "Enrich a list of LinkedIn URLs with work emails, personal emails, and phone numbers using Fiber AI. Use this when the user says \"enrich these LinkedIn URLs\", \"I have a CSV of people\", \"bulk reveal emails for these profiles\", \"get contact info for this list\", \"decorate these contacts with phone/email\", or otherwise hands over a set of LinkedIn identifiers and wants contact data back.",
+      "source_sha256": "3f3ba66e23d231315407316205b883839607714c4c7165158688b0ada329aa94",
+      "source_path": "skills/enrich-linkedin-csv/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54f8fe7db000286c788acd6f6ac4141add8e2558b6f479f70ce0d8b22f462f8f": {
+      "description_zh": "使用 Fiber AI 为企业或联系人补全邮箱、电话和详细档案，用于获取联系信息或更多公司与个人资料。",
+      "source": "Enrich companies or contacts with emails, phone numbers, and detailed profiles using Fiber AI. Use when the user wants to reveal contact information or get more details about a company or person.",
+      "source_sha256": "54f8fe7db000286c788acd6f6ac4141add8e2558b6f479f70ce0d8b22f462f8f",
+      "source_path": "skills/enrich/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d135b44625a5c15bf328326a74c405865b0c9407b7d4f41f199558e184a1994e": {
+      "description_zh": "使用 Fiber AI 反向邮箱查询将邮箱名单扩展为人员和企业记录，再按需获取最新 LinkedIn 信息与更多联系字段；用于 CRM 邮箱补全或未知客户身份与企业特征查询。",
+      "source": "Turn a list of email addresses into full people + company records using Fiber AI reverse email lookup, then optionally pull fresh LinkedIn data and extra contact fields. Use this when the user says \"I have emails, give me more info\", \"reverse lookup these emails\", \"I have a list of emails from our CRM\", \"decorate emails with LinkedIn/company\", \"who are these people (by email)?\", \"unknown customers enrichment\", or otherwise starts from raw emails and wants identity + firmographic data back.",
+      "source_sha256": "d135b44625a5c15bf328326a74c405865b0c9407b7d4f41f199558e184a1994e",
+      "source_path": "skills/expand-from-email-list/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3dc435f048753444216950788f01bb6837a2b5561c4faed17fbe2b28650c5a1": {
+      "description_zh": "按职位和公司条件使用 Fiber AI 找到潜客，再为短名单补全邮箱与电话；适用于如特定行业 CTO、某融资阶段 CMO 等岗位与企业组合筛选。",
+      "source": "Find prospects by role + company criteria and enrich a shortlist with contact details using Fiber AI. Use this when the user says \"find VPs of Engineering at fintech startups\", \"CMOs at Series B SaaS\", \"heads of sales at X companies\", \"find me 20 CTOs in healthcare\", \"prospect by role + company\", \"sales target research\", or otherwise wants to discover people by role and immediately get emails / phones back.",
+      "source_sha256": "d3dc435f048753444216950788f01bb6837a2b5561c4faed17fbe2b28650c5a1",
+      "source_path": "skills/find-and-enrich-by-role/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78018173e9b435f0ed520c0ac1e4f8cdf233ffef2bea2fbc4f5ee7e973a8302c": {
+      "description_zh": "从一个或多个种子客户出发，通过 Fiber AI 查找相似企业、竞争者或类似优质客户的账户，扩展 ABM 候选名单。",
+      "source": "Find lookalike companies from one or more seed accounts using Fiber AI. Use this when the user says \"find companies like <seed>\", \"competitors of <seed>\", \"similar to <seed>\", \"lookalike accounts\", \"companies that look like our best customers\", \"ABM lookalikes\", \"seed-based company search\", or otherwise asks to expand a known account into a larger candidate list.",
+      "source_sha256": "78018173e9b435f0ed520c0ac1e4f8cdf233ffef2bea2fbc4f5ee7e973a8302c",
+      "source_path": "skills/find-similar-companies/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "160ce74ee5c6086e60924709126465972d325a91f3bd515d49555b660fe36fd1": {
+      "description_zh": "介绍 Fiber AI 的能力、可用命令及使用方法，为一般使用问题提供指导。",
+      "source": "Show what Fiber AI can do and how to use it. Use when the user asks about Fiber AI capabilities, available commands, or needs general guidance.",
+      "source_sha256": "160ce74ee5c6086e60924709126465972d325a91f3bd515d49555b660fe36fd1",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2f4aa789bd6777da78ce567b3ce1fe9f73964956329dbc6861f0165e04c2c80": {
+      "description_zh": "为首次使用 Fiber AI 提供快速引导，验证 API 密钥、搜索用户行业的企业并获取一个联系人；原文目标是60秒内演示价值，适用于安装后的试用和演示。",
+      "source": "Guided first-run experience that proves Fiber AI value in under 60 seconds. Verifies the API key, searches for companies in the user's industry, and reveals one contact - all in one flow. Use this when the user says \"quickstart\", \"get started\", \"first run\", \"try Fiber\", \"show me what Fiber can do\", \"demo\", \"test Fiber\", or has just installed the plugin and does not know where to start.",
+      "source_sha256": "b2f4aa789bd6777da78ce567b3ce1fe9f73964956329dbc6861f0165e04c2c80",
+      "source_path": "skills/quickstart/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a3f35ba899b39c95c9cf0eee190819eb605b4e7c8156fba0bc19719492b894e": {
+      "description_zh": "使用 fiberai Python 包编写以编程方式调用 Fiber AI API 的应用、脚本和自动化。",
+      "source": "Help writing Python code using the fiberai package. Use when the user wants to build a Python application, script, or automation that calls Fiber AI APIs programmatically.",
+      "source_sha256": "4a3f35ba899b39c95c9cf0eee190819eb605b4e7c8156fba0bc19719492b894e",
+      "source_path": "skills/sdk-py/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5bbdd83729b583010605d068ba5ccf5fa688517040a2165687ece98eb6bc8224": {
+      "description_zh": "使用 @fiberai/sdk 编写 TypeScript 或 JavaScript 应用、集成和自动化，程序化调用 Fiber AI API。",
+      "source": "Help writing TypeScript or JavaScript code using the @fiberai/sdk package. Use when the user wants to build an application, integration, or automation that calls Fiber AI APIs programmatically.",
+      "source_sha256": "5bbdd83729b583010605d068ba5ccf5fa688517040a2165687ece98eb6bc8224",
+      "source_path": "skills/sdk-ts/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a9100a8b72f45476c417ea46a3bdd5111f92ffcbf633f4f586515a5db11cb25": {
+      "description_zh": "使用 Fiber AI 按地点、行业、规模、技术栈等条件搜索企业，或查找单个潜客。",
+      "source": "Search for companies or people using Fiber AI. Use when the user wants to find companies by criteria (location, industry, size, tech stack) or search for individual prospects.",
+      "source_sha256": "1a9100a8b72f45476c417ea46a3bdd5111f92ffcbf633f4f586515a5db11cb25",
+      "source_path": "skills/search/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbb20d2dee27605bd3ec88a0df83c5ac985f5bc61bdd71ca8d784f74411f6136": {
+      "description_zh": "在当前环境配置 Fiber AI 工具，包括 API 密钥设置、MCP 连接验证和 SDK 安装。",
+      "source": "Set up Fiber AI tools in the current environment. Use when the user needs to configure API keys, verify MCP connection, or install SDKs.",
+      "source_sha256": "cbb20d2dee27605bd3ec88a0df83c5ac985f5bc61bdd71ca8d784f74411f6136",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fd73a7dc48296bb1bf4ef2e23bfb1be0bf22018fb6bcedc474b003a86d51eab": {
+      "description_zh": "通过 Fiber AI 跟踪种子人员与企业名单的购买和招聘信号，包括 Journeyman 职位变化、招聘岗位、LinkedIn 动态和融资轮次；用于 ABM 监控、跳槽提醒及将静态名单转为意向信息流。",
+      "source": "Track buying and hiring signals on a seed list of people and companies - job changes (Journeyman), hiring intent (job postings), social activity (LinkedIn posts), and funding rounds - using Fiber AI. Use this when the user says \"track signals\", \"watch these accounts for hiring intent\", \"alert me when these people change jobs\", \"monitor my ABM list\", \"job-change alerts\", \"who is hiring for <role> at <companies>\", \"recent posts from this exec\", \"recent funding at my targets\", or otherwise wants to turn a static list into a live intent feed.",
+      "source_sha256": "2fd73a7dc48296bb1bf4ef2e23bfb1be0bf22018fb6bcedc474b003a86d51eab",
+      "source_path": "skills/track-signals/SKILL.md",
+      "package_sha256": "fa87500a23d8c10d788bbaa9d3dd5f3a124e3d42e6fde6dd1af6482af3bf901e",
+      "source_package": "fiber-ai-plugin-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9ad17f70a94ae169d2dc5360c2d240caf1d17a48dac0ceb3c5f41e1232ada82": {
+      "description_zh": "通过 Playwright MCP 操作 FiftyOne App，验证插件和操作器、录制演示或做端到端界面自动化；涵盖 reload_dataset 后导航崩溃、远程启动与触发文件 IPC、MUI 输入与下拉框、侧栏标签、data-cy、弹窗滚动、会话刷新和清理。",
+      "source": "Use when driving the FiftyOne App via the Playwright MCP — plugin/operator verification, demo or screencast recording, or any end-to-end UI automation against `fo.launch_app(...)`. Covers the critical \"do not navigate after reload_dataset\" crash, launcher patterns (remote=True, trigger-file IPC), MUI-specific input/dropdown gotchas, sidebar tag filtering, `data-cy` selectors, dialog scrolling, session refresh strategies, and cleanup. Trigger on mentions of \"Playwright + FiftyOne\", \"automate FiftyOne App\", \"operator demo\", \"browser_navigate crash\", \"reload_dataset\", or any FiftyOne session that silently dies after a UI action.",
+      "source_sha256": "c9ad17f70a94ae169d2dc5360c2d240caf1d17a48dac0ceb3c5f41e1232ada82",
+      "source_path": "skills/fiftyone-app-playwright/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97da4cf70373eda56545b2fe08817c25380c1e79438839dc08c391a6bc065eda": {
+      "description_zh": "按 FiftyOne 官方惯例编写 Python 代码，用于贡献代码、插件开发或代码库集成。",
+      "source": "Writes Python code following FiftyOne's official conventions. Use when contributing to FiftyOne, developing plugins, or writing code that integrates with FiftyOne's codebase.",
+      "source_sha256": "97da4cf70373eda56545b2fe08817c25380c1e79438839dc08c391a6bc065eda",
+      "source_path": "skills/fiftyone-code-style/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b4a1ab043c5056e946dca4efc548bbab84deab89ebd74bfd89e1717cb83afd6": {
+      "description_zh": "为 FiftyOne 工作流创建 Jupyter 笔记本，包括入门、教程、配方及完整机器学习流水线，覆盖数据加载、探索、推理、评估和导出。",
+      "source": "Creates Jupyter notebooks for FiftyOne workflows including getting-started guides, tutorials, recipes, and full ML pipelines. Use when creating notebooks, writing tutorials, building demos, or generating FiftyOne walkthroughs covering data loading, exploration, inference, evaluation, and export.",
+      "source_sha256": "6b4a1ab043c5056e946dca4efc548bbab84deab89ebd74bfd89e1717cb83afd6",
+      "source_path": "skills/fiftyone-create-notebook/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cfe1257adcfb6127016696a0b142760ce75a2e84c6bd0c1d4120f87b19a0056": {
+      "description_zh": "在 FiftyOne 中开展计算机视觉数据集整理，检查结构和质量、审计标注、分析类别分布、探索嵌入、查找重复、创建精选子集并划分训练/验证/测试集。",
+      "source": "End-to-end dataset curation for FiftyOne: inspect schema and quality, audit annotations, analyze class distributions, explore embeddings, find duplicates, create curated subsets, and build train/val/test splits. Works with any computer vision dataset type.",
+      "source_sha256": "5cfe1257adcfb6127016696a0b142760ce75a2e84c6bd0c1d4120f87b19a0056",
+      "source_path": "skills/fiftyone-dataset-curation/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cec8fdbc028aa47cb38a5db57856e9061ede5ce3f03d2d9e7a94886981fb5f12": {
+      "description_zh": "将 FiftyOne 数据集导出为 COCO、YOLO、VOC、CVAT、CSV 等标准格式或发布到 Hugging Face Hub，用于训练、格式转换、归档与共享。",
+      "source": "Exports FiftyOne datasets to standard formats (COCO, YOLO, VOC, CVAT, CSV, etc.) and Hugging Face Hub. Use when converting datasets, exporting for training, creating archives, sharing data in specific formats, or publishing datasets to Hugging Face.",
+      "source_sha256": "cec8fdbc028aa47cb38a5db57856e9061ede5ce3f03d2d9e7a94886981fb5f12",
+      "source_path": "skills/fiftyone-dataset-export/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bcd9eb81fddfaf3a414c932c3fcd05e501770535544edab1c7887d53829fa0ca": {
+      "description_zh": "自动识别格式并将本地或 Hugging Face 数据集导入 FiftyOne，支持图像、视频、点云、COCO/YOLO/VOC/KITTI 标注、多模态分组与自动驾驶数据。",
+      "source": "Imports datasets into FiftyOne with automatic format detection. Supports all media types (images, videos, point clouds), label formats (COCO, YOLO, VOC, KITTI), multimodal grouped datasets, and Hugging Face Hub datasets. Use when importing datasets from local files or Hugging Face, loading autonomous driving data, or creating grouped datasets.",
+      "source_sha256": "bcd9eb81fddfaf3a414c932c3fcd05e501770535544edab1c7887d53829fa0ca",
+      "source_path": "skills/fiftyone-dataset-import/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "beb98297a384e7fa89edc72296cb7c8a816c9e1b187f5b00ab217c7f18d35c7d": {
+      "description_zh": "在 FiftyOne 数据集上运行检测、分类、分割或嵌入模型推理，从 Zoo、插件操作器或自定义来源动态发现可用模型，不假定固定模型清单。",
+      "source": "Run ML model inference on FiftyOne datasets. Use when running models for detection, classification, segmentation, or embeddings. Discovers available models dynamically from the Zoo, plugin operators, or custom sources — never assumes a fixed model list.",
+      "source_sha256": "beb98297a384e7fa89edc72296cb7c8a816c9e1b187f5b00ab217c7f18d35c7d",
+      "source_path": "skills/fiftyone-dataset-inference/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddd9b5083f169b7c04dccc2d53d81eb2de15012cefaf169ab8c08a9aad547794": {
+      "description_zh": "从零开发 FiftyOne 操作器与面板插件，扩展自定义操作、构建交互面板或集成外部 API。",
+      "source": "Develops custom FiftyOne plugins (operators and panels) from scratch. Use when creating plugins, extending FiftyOne with custom operators, building interactive panels, or integrating external APIs.",
+      "source_sha256": "ddd9b5083f169b7c04dccc2d53d81eb2de15012cefaf169ab8c08a9aad547794",
+      "source_path": "skills/fiftyone-develop-plugin/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0d2b7cf3ee56164dbd6c965fc09684e9b08e4ccf0d2c192bd41426395f3bda6": {
+      "description_zh": "通过嵌入结合 UMAP 或 t-SNE 将数据集可视化为二维视图，用于探索结构、聚类、异常点和数据分布。",
+      "source": "Visualizes datasets in 2D using embeddings with UMAP or t-SNE dimensionality reduction. Use when exploring dataset structure, finding clusters, identifying outliers, or understanding data distribution.",
+      "source_sha256": "e0d2b7cf3ee56164dbd6c965fc09684e9b08e4ccf0d2c192bd41426395f3bda6",
+      "source_path": "skills/fiftyone-embeddings-visualization/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45eaba815b362b687a4c68c0a003883fc71dc86765a2a7967a14cc47691ede1e": {
+      "description_zh": "评估 FiftyOne 插件质量、安全和代理可用性，适用于安装前审查、现有插件审计和新插件验证，输出包含评分与可执行建议的结构化报告。",
+      "source": "Evaluates FiftyOne plugins for quality, security, and agent-readiness. Use when reviewing a plugin before installation, auditing an existing plugin, validating a plugin you just built, or assessing community plugins for safety. Produces a structured report with scores and actionable recommendations.",
+      "source_sha256": "45eaba815b362b687a4c68c0a003883fc71dc86765a2a7967a14cc47691ede1e",
+      "source_path": "skills/fiftyone-eval-plugin/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7caf281b101c95efa605ab938136c417822e6b7a33a18a8b18dcc024db649ea4": {
+      "description_zh": "使用 FiftyOne brain 相似度计算查找重复或近似重复图像，用于去重、找相似图和移除冗余样本。",
+      "source": "Finds duplicate or near-duplicate images in FiftyOne datasets using brain similarity computation. Use when deduplicating datasets, finding similar images, or removing redundant samples.",
+      "source_sha256": "7caf281b101c95efa605ab938136c417822e6b7a33a18a8b18dcc024db649ea4",
+      "source_path": "skills/fiftyone-find-duplicates/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96685bb7dee107213ede5acb5943aac2e652262f50782e4d2564579cfd29fad2": {
+      "description_zh": "根据外部数据库模式生成 FiftyOne Data Lens 连接器，将 PostgreSQL、BigQuery、Databricks、MySQL 等来源接入，以便在 FiftyOne App 浏览或导入数据。",
+      "source": "Generate a Data Lens connector from an external database schema. Use when users want to connect an external data source (PostgreSQL, BigQuery, Databricks, MySQL, etc.) to FiftyOne Data Lens, or when they have a database schema and want to browse/import that data through the FiftyOne App.",
+      "source_sha256": "96685bb7dee107213ede5acb5943aac2e652262f50782e4d2564579cfd29fad2",
+      "source_path": "skills/fiftyone-generate-data-lens-connector/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc25fbd9b54be1d0f7a6eecd66a184d5b102110b615e55eaeaddf6513a692286": {
+      "description_zh": "分类处理 voxel51/fiftyone 的 GitHub 问题，判断已修复、不修复、无法复现或仍有效，用于缺陷分诊与陈旧问题清理。",
+      "source": "Triages FiftyOne GitHub issues by categorizing as fixed, won't fix, not reproducible, or still valid. Use when reviewing GitHub issues, triaging bugs, or closing stale issues in the voxel51/fiftyone repository.",
+      "source_sha256": "dc25fbd9b54be1d0f7a6eecd66a184d5b102110b615e55eaeaddf6513a692286",
+      "source_path": "skills/fiftyone-issue-triage/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba703b75031f404793b67dd9a1f6c71e26426b8a563077cd08c94bb5079a325a": {
+      "description_zh": "采用 COCO、Open Images 或自定义协议对照真实标注评估模型预测，计算 mAP、精确率、召回率、混淆矩阵并分析 TP/FP/FN 样例，覆盖检测、分类、分割和回归。",
+      "source": "Evaluate model predictions against ground truth using COCO, Open Images, or custom protocols. Use when computing mAP, precision, recall, confusion matrices, or analyzing TP/FP/FN examples for detection, classification, segmentation, or regression tasks.",
+      "source_sha256": "ba703b75031f404793b67dd9a1f6c71e26426b8a563077cd08c94bb5079a325a",
+      "source_path": "skills/fiftyone-model-evaluation/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0fa98f1671d9855eb05d2b38245b17d56f4328888778900d21541d18bddaf36": {
+      "description_zh": "以可运行代码回答 FiftyOne Python SDK 问题，适用于没有技能或操作器覆盖的目标，或需要确认方法、参数、字段路径与 API 用法时。",
+      "source": "Answers FiftyOne Python SDK questions with accurate, runnable code. Use when the user asks how to do something in the FiftyOne Python SDK, asks a docs question, no skill or operator covers their goal, or the agent is unsure of the correct FiftyOne method, argument, or field path while writing code — e.g. \"how do I do X in Python\", \"show me the SDK for filtering\", \"there's no operator for this, can I do it in code\", \"what's the API for embeddings\", \"write me a Python script to do Y\".",
+      "source_sha256": "d0fa98f1671d9855eb05d2b38245b17d56f4328888778900d21541d18bddaf36",
+      "source_path": "skills/fiftyone-sdk-guidance/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f88e1d6ea93773bc20dd37360f5d94ddd03870353ffa890a7fbc5b9c1314cdb": {
+      "description_zh": "诊断并修复 FiftyOne 常见问题，包括数据集消失、App 无法打开、修改不保存、MongoDB 错误、视频编码、笔记本连接和操作器缺失。",
+      "source": "Diagnose and fix common FiftyOne issues automatically. Use when a dataset disappeared, the App won't open, changes aren't saving, MongoDB errors occur, video codecs fail, notebook connectivity breaks, operators are missing, or any recurring FiftyOne pain point needs solving.",
+      "source_sha256": "7f88e1d6ea93773bc20dd37360f5d94ddd03870353ffa890a7fbc5b9c1314cdb",
+      "source_path": "skills/fiftyone-troubleshoot/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "507a51546aca7295bbe0ac85008f686c3d3dce6c448a8fcdfc794068c425faa9": {
+      "description_zh": "使用 FiftyOne 官方 React 组件库 VOODO（@voxel51/voodo）构建插件面板、交互界面与应用样式，并动态获取完整组件 API 参考。",
+      "source": "Build FiftyOne UIs using VOODO (@voxel51/voodo), the official React component library. Use when building plugin panels, creating interactive UIs, or styling FiftyOne applications. Fetches complete component API reference dynamically.",
+      "source_sha256": "507a51546aca7295bbe0ac85008f686c3d3dce6c448a8fcdfc794068c425faa9",
+      "source_path": "skills/fiftyone-voodo-design/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b8be68ca3be78647a80cb43af5941e2f252b3a7c3662014878f5572496237a9": {
+      "description_zh": "将检测、分类、分割、嵌入、关键点或视觉语言模型接入 FiftyOne 远程模型 Zoo，通过注册、加载及 dataset.apply_model 使用；也排查 manifest、fom.Model/TorchModelMixin、DataLoader 序列化和子进程导入错误。",
+      "source": "Use when integrating a model into FiftyOne's remote model zoo — detection, classification, segmentation, embedding, keypoint, or vision-language (VLM) models loaded via `register_zoo_model_source` and `load_zoo_model`, then applied with `dataset.apply_model`. Also for debugging zoo registration, `manifest.json` issues, custom `fom.Model` / `TorchModelMixin` subclasses, DataLoader pickle errors, or worker `ModuleNotFoundError` from spawned DataLoader workers.",
+      "source_sha256": "1b8be68ca3be78647a80cb43af5941e2f252b3a7c3662014878f5572496237a9",
+      "source_path": "skills/fiftyone-zoo-remote-model/SKILL.md",
+      "package_sha256": "e3f16862133fa782f5629eae930ec97f8cca69df8b969b94d6afb318ea48899f",
+      "source_package": "fiftyone-1.0.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47e73737249f0ecb0d0b2084bb8c2f2329e39a509cbdfba1b7f253e939093850": {
+      "description_zh": "结合 PRD 和代码库背景交互式生成 FigJam 项目计划板，按研究、章节建议、逐节深入研究与内容/块形状确认、创建骨架、填充和绘图推进；各类内容块有独立参考，适用于需要逐节确认内容与呈现的计划。",
+      "source": "Generate a FigJam project plan board from a PRD plus codebase context. Interactive flow: research → propose sections → per-section deep research → per-section content + block-shape proposal → create FigJam → skeleton → fill → diagrams → wrap. Each content block (section, nested section, intro callout, table, multi-column text, sticky column, diagram section, metadata strip) has its own subskill reference file. Use when the user asks for 'project plan in FigJam', 'interactive project plan', '/generate-project-plan', or provides a PRD and wants per-section confirmation on content + rendering.",
+      "source_sha256": "47e73737249f0ecb0d0b2084bb8c2f2329e39a509cbdfba1b7f253e939093850",
+      "source_path": "workflow-skills/generate-project-plan/SKILL.md",
+      "package_sha256": "0130989f27b881613d17ab80a9760ae22f248ffe62b50db1ae57a3af89ecfcc8",
+      "source_package": "Figma-2.2.118-v55.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "012f006c6b0fa8fd6126e6a25fe789d7149052c9618fc39ec3812d726b40ac56": {
+      "description_zh": "分析界面录屏，提取关键画面并推断交互触发条件，使用上传截图和原生 Figma 注释构建交互状态故事板；适用于录屏到 Figma、交互拆解、设计评审和关键时刻标注。",
+      "source": "This skill should be used when the user asks to analyze a UI screen recording and map interaction states into Figma. Trigger for requests such as \"put video frames in Figma\", \"extract states from my recording\", \"map interactions from video to Figma\", \"analyze this screen recording\", \"create a storyboard from my video\", \"deconstruct this interaction in Figma\", \"annotate the UI states in my recording\", or \"pull the key moments from this video into Figma\". Also trigger when the user references a video file (.mp4, .mov, .webm, .avi) together with Figma, design review, interaction analysis, prototypes, or UI states. The skill extracts key visual moments from a video, infers interaction triggers, and builds an annotated Figma Design storyboard using native Figma annotations and uploaded screenshot assets.",
+      "source_sha256": "012f006c6b0fa8fd6126e6a25fe789d7149052c9618fc39ec3812d726b40ac56",
+      "source_path": "workflow-skills/video-interaction-mapper/SKILL.md",
+      "package_sha256": "0130989f27b881613d17ab80a9760ae22f248ffe62b50db1ae57a3af89ecfcc8",
+      "source_package": "Figma-2.2.118-v55.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d19eaa8d15c3fe8ad0f816facf399d65066ef407feba9cca15f41fb8d5024248": {
+      "description_zh": "双向同步代码与 Figma 的设计令牌、变量和组件，使用 Zod 校验组件映射，映射代码 props 与 Figma 属性及 Code Connect；也生成组件库、组合新页面和审计设计合规。",
+      "source": "Bidirectional design system sync between code and Figma — tokens/variables, components, and a Zod-validated code<->Figma component mapping — plus component library generation, screen design composition, and design audit. Use when syncing design tokens or components to/from Figma, keeping code and Figma components in sync, mapping code props to Figma properties (incl. Code Connect), building Figma component libraries, designing new screens in Figma, or auditing Figma files for compliance.",
+      "source_sha256": "d19eaa8d15c3fe8ad0f816facf399d65066ef407feba9cca15f41fb8d5024248",
+      "source_path": "skills/figma-suite/SKILL.md",
+      "package_sha256": "7aa9f1aaf2a521e25ff2bbe15f0140063a146bc901f94495fc95dcc150858749",
+      "source_package": "figma-suite-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "526565a8b590ced373d7241e2cc7803cc00683478c8667de89b0ba00f3043ea0": {
+      "description_zh": "诊断 Filestack API 错误，适用于 filestackapi.com、filestackcontent.com 和处理端点的异常返回、401/403/404/429 状态或用户提供的错误信息。",
+      "source": "Use when user encounters Filestack API errors. Activates on: domain tokens (filestackapi.com, filestackcontent.com, process.filestackapi.com), error shapes ({'result': 'error', 'error':, {'error':, result: null in Filestack context), HTTP 401/403/404/429 from Filestack endpoints, or when user pastes a Filestack API error message.",
+      "source_sha256": "526565a8b590ced373d7241e2cc7803cc00683478c8667de89b0ba00f3043ea0",
+      "source_path": "skills/filestack-error-diagnosis/SKILL.md",
+      "package_sha256": "7f0d2236eeb0e506b8d71a75834b21683088b456d876f0935068c43f7e6f4334",
+      "source_package": "Filestack Claude Plugin-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96b270ac723fba550af3d8688df8647cbae9d305b45bd390117b8853444da4b8": {
+      "description_zh": "使用 Filestack AI/ML 分析文件内容，涵盖图像标签、NSFW/SFW 分类、内容审核、OCR、图像描述、版权检查、文档检测与情绪分析，以及 Rekognition/Cloud Vision 相关处理流程。",
+      "source": "Use when the user wants to analyze a file's content with AI/ML — content tagging, NSFW detection, OCR, image captioning, copyright check, document detection, or sentiment. Activates on: image tagging, NSFW/SFW classification, content moderation, OCR text extraction, image caption generation, \"what's in this image\", document scan/detection, sentiment analysis, AWS Rekognition, Google Cloud Vision, content classification, AI moderation pipeline, image analysis, or tokens like `filestack_analyze`, `/tags/`, `/sfw/`, `/caption/`, `/ocr/`, `/doc_detection/`.",
+      "source_sha256": "96b270ac723fba550af3d8688df8647cbae9d305b45bd390117b8853444da4b8",
+      "source_path": "skills/filestack-intelligence/SKILL.md",
+      "package_sha256": "7f0d2236eeb0e506b8d71a75834b21683088b456d876f0935068c43f7e6f4334",
+      "source_package": "Filestack Claude Plugin-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb74cb7b5d25283a7ab8f81e590985f6754815f10cdc3447c4a1745ed1f2cd40": {
+      "description_zh": "帮助集成 Filestack SDK/API，配置文件选择器、上传、文件类型、来源及存储位置，适用于 filestack-js、Python 客户端或为应用增加 Filestack 文件上传。",
+      "source": "Use when the user is working with Filestack SDK or API. Activates on: import tokens (filestack-js, filestack-loader, loadModule, from filestack import, filestack.Client), usage tokens (FilestackClient, client.upload(, client.picker(, new Picker(, PickerOptions), config tokens (acceptedFileTypes, fromSources, storeTo), or when user asks how to add file upload to their app using Filestack.",
+      "source_sha256": "eb74cb7b5d25283a7ab8f81e590985f6754815f10cdc3447c4a1745ed1f2cd40",
+      "source_path": "skills/filestack-sdk-integration/SKILL.md",
+      "package_sha256": "7f0d2236eeb0e506b8d71a75834b21683088b456d876f0935068c43f7e6f4334",
+      "source_package": "Filestack Claude Plugin-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a335d3f6125d8ebac43566724fd666edfe569d200ea92bd6de6d52a7e0f2398c": {
+      "description_zh": "配置 Filestack webhook 端点和事件通知，涵盖 FS-Signature、FS-Timestamp、上传、转换、删除、覆盖、扫描、导出及 fs.workflow 等事件。",
+      "source": "Use when user is setting up Filestack webhook endpoints. Activates on: FS-Signature, FS-Timestamp, fp.upload, fp.converse, fp.delete, fp.overwrite, fp.video_converse, fp.scan, fp.export, fs.workflow, filestack_webhook, webhook_url, or when user asks about Filestack event notifications.",
+      "source_sha256": "a335d3f6125d8ebac43566724fd666edfe569d200ea92bd6de6d52a7e0f2398c",
+      "source_path": "skills/filestack-webhook-setup/SKILL.md",
+      "package_sha256": "7f0d2236eeb0e506b8d71a75834b21683088b456d876f0935068c43f7e6f4334",
+      "source_package": "Filestack Claude Plugin-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79269952cbbc286d5db8ca09f2aa4a842576b08d13edfc0e1951a98b3fc584f9": {
+      "description_zh": "设计、运行或排查 Filestack 多步骤文件处理工作流，支持条件处理、病毒扫描、视频智能、异步流水线，以及 runWorkflow/run_workflow、工作流 UUID、wf.json 和 webhook。",
+      "source": "Use when the user wants to design, run, or troubleshoot a Filestack Workflow — a multi-step file processing pipeline. Activates on: workflow design, multi-step processing, conditional file processing, automated pipelines, virus scanning workflow, video intelligence pipelines, async file processing, `runWorkflow` policy call, `run_workflow` task, `filestack_run_workflow`, `fs.workflow` webhook event, `wf.json`, workflow UUID, Filestack Workflows UI / Developer Portal Workflows.",
+      "source_sha256": "79269952cbbc286d5db8ca09f2aa4a842576b08d13edfc0e1951a98b3fc584f9",
+      "source_path": "skills/filestack-workflow-design/SKILL.md",
+      "package_sha256": "7f0d2236eeb0e506b8d71a75834b21683088b456d876f0935068c43f7e6f4334",
+      "source_package": "Filestack Claude Plugin-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14662cb90644a1402ef4993ce710f46999a9aa55b3d934022c2753cc650cda9b": {
+      "description_zh": "通过 Fine Structure MCP 构建、更新、部署和运维平台应用，涵盖域名连接、应用数据、机密管理及平台能力介绍。",
+      "source": "How to build, update, deploy and operate apps on the Fine Structure platform through its MCP server. Use whenever the user wants to deploy to Fine Structure, create or update a Fine Structure app, connect a domain, manage app data or secrets, or asks what Fine Structure can do.",
+      "source_sha256": "14662cb90644a1402ef4993ce710f46999a9aa55b3d934022c2753cc650cda9b",
+      "source_path": "skills/fine-structure/SKILL.md",
+      "package_sha256": "39361ed0bcc9892708014a048c9aefd9f82f9a88d5e36cbccf418a8e50d2d0bf",
+      "source_package": "Fine Structure-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c429dbe2e062d03d738b7761e6b7f383253b6ca7676f119eb5ec7337c6cbadb4": {
+      "description_zh": "为用户拥有或获准评估的目标提供穷尽式代码审查与安全审计，支持不同语言、仓库、文件、改动和 PR，也涵盖二进制、固件、线上系统、云/SaaS 账户及合约等；结合漏洞根因、46个维度、78类专业检查、历史模式、威胁模型和证据等级形成报告。",
+      "source": "Exhaustive code review and security audit checklist for any language or language mix, for targets the user owns or is authorized to assess. Use when asked to review, audit or security-check code: directories, packages, repositories (including GitHub or GitLab URLs), files, changes or pull requests, with exclusions, or non-source targets such as binaries, installers, extensions, firmware, images, published packages, live URLs, hosts, clusters, cloud and SaaS accounts, logs, contract addresses or design docs. Core: root-cause facets from real vulnerabilities, asked of every object; plus 46 dimensions, 78 specialties by target type (including SSO, mobile, payments, enclaves, industrial control, search, smart contracts, DeFi, bridges, wallets, ZK), historical patterns, language pitfall tables, threat model, evidence levels and report format. 中文：穷尽式代码审查与安全审计清单，不限语言，只用于用户拥有或获得授权评估的目标。用户要求审查、审计、代码评审、安全检查、找问题时使用；目标可以是目录、包、仓库（含 GitHub、GitLab 网址）、文件、改动或合并请求，可带排除项，也可以是二进制、固件、线上地址、云账号、合约地址等非源码目标。",
+      "source_sha256": "c429dbe2e062d03d738b7761e6b7f383253b6ca7676f119eb5ec7337c6cbadb4",
+      "source_path": "skills/finecomb/SKILL.md",
+      "package_sha256": "4a76bafbb7ecb6071e02a6a48c8c53092eafa7f0e17ad015f3f01d66d0fa11fd",
+      "source_package": "finecomb_ exhaustive code review and security audit-0.1.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "639dba9243cbd71923ee6f65a1497929ddf76010426568c74a14737438068ff8": {
+      "description_zh": "指导在项目中接入 Fingerprint，包括前端身份识别、服务端验证及完整入门流程。",
+      "source": "Use this guide to integrate Fingerprint into a project: frontend identification, server-side verification, and the rest of the Get Started flow.",
+      "source_sha256": "639dba9243cbd71923ee6f65a1497929ddf76010426568c74a14737438068ff8",
+      "source_path": "skills/onboarding/SKILL.md",
+      "package_sha256": "0eb6882997cb1f6d7d837ce769ea7b8ef19c8cb4f0a3d5931a59a39364f3d881",
+      "source_package": "Fingerprint-0.1.15-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b244d9ac3a296b9140b043e36510b8b73fc1b4f05a9055900b32c021cc1bfd81": {
+      "description_zh": "为 FinSharpe 顾问业务起草面向客户的邮件、入驻或复盘邀请、市场评论、费用/续约通知、困难沟通、会议总结和通俗投资组合说明，匹配语气与合规要求；短 WhatsApp 信息交由 client-whatsapp-comms，不用于内部笔记、平台营销或品牌 PDF。",
+      "source": "Draft any client-facing communication for the FinSharpe advisory practice across channels: emails (onboarding, review invitations, market commentary, fee/renewal notes, difficult conversations like drawdowns or delays), review-meeting summaries, portfolio explainer notes for non-finance audiences, and broadcast vs individual messages — with the right tone, compliance posture, and none of the tells that make a message read as AI-written. Use this skill whenever the user wants to \"write to a client\", \"draft an email\", \"explain this to the client\", \"send a review summary\", \"inform clients about\", handle an unhappy client, or make any client-facing draft \"sound more human\" — even when the channel isn''t named. For short WhatsApp messages specifically, this skill routes to client-whatsapp-comms which owns that channel. Do NOT use for internal notes, marketing copy for the platform, or branded PDF deliverables (finsharpe-report-studio).",
+      "source_sha256": "b244d9ac3a296b9140b043e36510b8b73fc1b4f05a9055900b32c021cc1bfd81",
+      "source_path": "skills/client-communications/SKILL.md",
+      "package_sha256": "dbd37d39c7a846dc6fcfc3aa435a955b0368f52578420ff96bc18977689fb08c",
+      "source_package": "finsharpe-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60d86cc79fe82e3558dd77d4f935c7ef1069378dda3baf9782e7930acf0c1fb7": {
+      "description_zh": "分析 ETF 与指数基金的跟踪误差及跟踪差异、价格相对 iNAV 的溢折价、场内流动性与冲击成本、AUM 可持续性和费率，并关注印度国际 ETF 的海外投资额度及申购暂停风险；不用于主动基金或单只股票。",
+      "source": "Analyse ETFs and index funds the way passive vehicles must be analysed: tracking error and tracking difference against the underlying index, market price vs iNAV premium/discount, on-exchange liquidity and impact cost, AUM viability, expense ratio, and the special risks of international ETFs in India (unit-creation suspensions under overseas investment limits, wide premiums). Use this skill whenever the user asks about an ETF, index fund, \"passive fund\", tracking error, premium/discount, \"ETF vs index fund\", gold or silver ETFs, or international ETFs like MAHKTECH/MON100 — even if they call it just \"a fund\", if the vehicle is passive this skill applies. Do NOT use for actively managed mutual funds (mf-analyst) or single stocks (stock-analyst).",
+      "source_sha256": "60d86cc79fe82e3558dd77d4f935c7ef1069378dda3baf9782e7930acf0c1fb7",
+      "source_path": "skills/etf-analyst/SKILL.md",
+      "package_sha256": "dbd37d39c7a846dc6fcfc3aa435a955b0368f52578420ff96bc18977689fb08c",
+      "source_package": "finsharpe-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0d104ed8eb2e57d323d90abddf00c63728f14c44d1faddaa2616c2e4a1989e0": {
+      "description_zh": "按 FinSharpe 的奶油色、森林绿和金色及指定字体制作品牌一致的 IPS、财务规划、风险摘要、配置单页、复盘演示和研究报告，可改用合作方品牌；管理布局、封面、PDF 设置、研究来源页脚与无长破折号风格，用于分析后的 PDF、Word、演示或工作簿交付。",
+      "source": "Render white-labelled, brand-consistent FinSharpe deliverables: IPS, financial plan report, risk-profile summary, allocation and product one-pagers, review decks, plus research deliverables (equity research notes, MF and ETF reports, portfolio X-ray reports, market briefings from the analysis skills), all built to the FinSharpe design system (cream, forest green, gold; Fraunces / Inter / IBM Plex Mono) with optional white-labelling to a partner''s branding. Use this skill whenever the user wants to \"produce the report\", \"make it look professional\", \"brand this\", \"white-label it\", \"build the client PDF / deck\", or turn any planning or analysis output into a polished document. Trigger it as the final stage after ips-builder or any analysis skill, whenever a FinSharpe-branded PDF, Word doc, deck or workbook is the deliverable. It owns palette, fonts, layout, cover pages, PDF build settings, the research provenance footer, and the no-em-dash house style.",
+      "source_sha256": "b0d104ed8eb2e57d323d90abddf00c63728f14c44d1faddaa2616c2e4a1989e0",
+      "source_path": "skills/finsharpe-report-studio/SKILL.md",
+      "package_sha256": "dbd37d39c7a846dc6fcfc3aa435a955b0368f52578420ff96bc18977689fb08c",
+      "source_package": "finsharpe-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42886c290b075c0b34e7d042a4248096c2fde8ea386d745af75efbc5c2e7b51e": {
+      "description_zh": "通过 FinSharpe MCP 获取印度市场概览、涨跌广度、FII/DII 机构资金流及衍生品仓位，按受众和渠道生成晨报、收盘、周报或事件评论；不用于个股新闻和基金问题。",
+      "source": "Produce a data-grounded Indian market summary at any cadence: morning brief, end-of-day wrap, weekly note, or event-driven commentary. Pulls the market overview, advance-decline breadth, institutional (FII/DII) flows and derivatives positioning from the FinSharpe MCP toolkit and composes it for the chosen audience and channel. Use this skill whenever the user asks \"what''s happening in the market\", \"market update\", \"how did markets do today/this week\", \"morning brief\", \"FII flows\", \"market positioning\", or wants market commentary drafted for clients or a newsletter — even a casual \"kya chal raha hai market mein\". Do NOT use for single-stock news (stock-analyst) or fund questions (mf-analyst).",
+      "source_sha256": "42886c290b075c0b34e7d042a4248096c2fde8ea386d745af75efbc5c2e7b51e",
+      "source_path": "skills/market-summary/SKILL.md",
+      "package_sha256": "dbd37d39c7a846dc6fcfc3aa435a955b0368f52578420ff96bc18977689fb08c",
+      "source_package": "finsharpe-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2129e12e68781a397b0a1539ca1766cf483608e9ba3dfad56213d29126b24bb7": {
+      "description_zh": "开展 FinSharpe 共同基金研究，识别基金方案、分析历史持仓与经理行为、放入类别筛选背景、核对 TRI 基准，生成事实性基金说明或类别量化扫描；用于持仓变化、换经理、同类比较和基金重叠，不用于 ETF、个股或整个组合诊断。",
+      "source": "Run the FinSharpe mutual fund research workflow: resolve a scheme, analyse its holdings history and manager behaviour, place it in category context via the screener, check the correct TRI benchmark, and produce a factual scheme note or a category-level quantitative scan. Use this skill whenever the user names a mutual fund scheme or MF category and wants analysis, a review, \"is this fund good\", holdings changes, manager churn, category comparison, overlap between funds, or a quantitative look at a category (e.g. arbitrage funds, smallcap funds) — even if they just paste a scheme name with a question mark. Do NOT use for ETFs or index funds where tracking mechanics matter (etf-analyst), single stocks (stock-analyst), or whole-portfolio diagnosis (portfolio-xray).",
+      "source_sha256": "2129e12e68781a397b0a1539ca1766cf483608e9ba3dfad56213d29126b24bb7",
+      "source_path": "skills/mf-analyst/SKILL.md",
+      "package_sha256": "dbd37d39c7a846dc6fcfc3aa435a955b0368f52578420ff96bc18977689fb08c",
+      "source_package": "finsharpe-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba8cd82b70c0300d6a1fb69e7792dd522aac25e1ce4ff6895c6612fbe6a9fcaa": {
+      "description_zh": "诊断已有股票和共同基金组合，解析持仓和证券标识，检查股票/行业/市值/AMC 集中度、基金重叠、底层质量与风险信号、各资产风险贡献和费用拖累，并对比既有目标配置；不用于从零配置或单个产品研究。",
+      "source": "Diagnose an existing portfolio of stocks and/or mutual funds: parse the holdings, resolve every symbol and scheme, then run the full X-ray — concentration (stock, sector, market-cap, AMC), fund overlap, quality and red-flag screen on underlying names, per-asset risk contributions via the quant toolkit, cost drag, and gap versus a target allocation if one exists. Use this skill whenever the user shares a list of holdings (typed, pasted, or in a file/statement) and asks any whole-portfolio question: \"review my portfolio\", \"what''s wrong with this portfolio\", \"am I too concentrated\", \"analyse these holdings\", \"X-ray this\", \"check overlap in my funds\", or a prospect''s incoming portfolio during onboarding. Do NOT use for building a fresh allocation from scratch (asset-allocation-architect) or single-security questions (stock-analyst / mf-analyst / etf-analyst).",
+      "source_sha256": "ba8cd82b70c0300d6a1fb69e7792dd522aac25e1ce4ff6895c6612fbe6a9fcaa",
+      "source_path": "skills/portfolio-xray/SKILL.md",
+      "package_sha256": "dbd37d39c7a846dc6fcfc3aa435a955b0368f52578420ff96bc18977689fb08c",
+      "source_package": "finsharpe-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6ae68392376454fe15d99eed2b1cdfaa26ad815e1857c268a99ebe70b53908c1": {
+      "description_zh": "研究 NSE 上市公司，获取 FinSharpe 基本面、评分、技术和机构持仓，核对近期披露并筛查净利润增长、杠杆、质押与现金转化风险，形成事实报告；也可对2至3只股票按一致指标比较且不宣布胜者，不用于组合、基金或期权仓位。",
+      "source": "Run the full FinSharpe single-stock research workflow for any NSE-listed company: resolve the symbol, pull fundamentals, scores, technicals and institutional ownership from the FinSharpe MCP toolkit, check recent filings, run the red-flag screen (PAT growth, leverage, pledging, cash conversion), and produce a factual research note or branded report. Also handles head-to-head stock comparisons (2-3 names, aligned metrics, no winner declared). Use this skill whenever the user names a stock and wants analysis, research, a deep dive, a \"view\", fundamentals, a health check, red flags, \"what''s going on with X\", or a comparison like \"X vs Y\" — even if they don''t say \"research\" or \"report\" explicitly. Do NOT use for portfolio-level questions (portfolio-xray), mutual funds or ETFs (mf-analyst / etf-analyst), or options positioning (that is F&O analysis).",
+      "source_sha256": "6ae68392376454fe15d99eed2b1cdfaa26ad815e1857c268a99ebe70b53908c1",
+      "source_path": "skills/stock-analyst/SKILL.md",
+      "package_sha256": "dbd37d39c7a846dc6fcfc3aa435a955b0368f52578420ff96bc18977689fb08c",
+      "source_package": "finsharpe-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26a66ba1840d019ed328e8f738f7199f4b2ac3740ec617318c18d058ce060aff": {
+      "description_zh": "将重复 FinSharpe 工作流转为 Claude 技能、项目指令、API 系统提示或 FinSharpeGPT 代理规格，保留防编造、不提供推荐、SEBI 合规、MCP 委派和设计规范；也审查改进已有指令，仅生成复用指令，不执行底层任务。",
+      "source": "Turn a recurring FinSharpe task or workflow into a reusable instruction artifact: a Claude skill (SKILL.md), Claude Project instructions, an API system prompt, or a FinSharpeGPT agent spec — written in FinSharpe house conventions (anti-fabrication, no recommendations, SEBI compliance language, MCP-tool delegation, design system references). Use this skill whenever the user says \"turn this into a skill\", \"make a prompt for this\", \"write system instructions\", \"I keep doing this manually\", \"build an agent for X\", \"make this repeatable\", or wants to capture a workflow from the current conversation into something reusable. Also use it to review or tighten an existing prompt or skill. Do NOT use for one-off task execution — this skill builds the instructions, it does not perform the underlying task.",
+      "source_sha256": "26a66ba1840d019ed328e8f738f7199f4b2ac3740ec617318c18d058ce060aff",
+      "source_path": "skills/system-instructions-builder/SKILL.md",
+      "package_sha256": "dbd37d39c7a846dc6fcfc3aa435a955b0368f52578420ff96bc18977689fb08c",
+      "source_package": "finsharpe-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6899b439765938b75be0e07d266530c36b7ab8ed04d661810fc507ca58f725dd": {
+      "description_zh": "自主从多个网页提取符合模式的结构化 JSON，用于价格档位、产品列表等超出单页抓取的网站数据。",
+      "source": "Autonomous multi-page extraction into structured JSON. Use when the user wants website data matching a schema — pricing tiers, product listings — beyond a single-page scrape.",
+      "source_sha256": "6899b439765938b75be0e07d266530c36b7ab8ed04d661810fc507ca58f725dd",
+      "source_path": "skills/firecrawl-agent/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d019d21a509954928b4bcda77266a2f276f37d188a51bb3f36e291c5d119a33": {
+      "description_zh": "批量提取同一网站或目录下互相链接的多页内容，适用于整站抓取或 /docs 等区段采集。",
+      "source": "Bulk-extract many pages from one site or section. Use for \"crawl\", \"everything under /docs\", or content spanning linked pages.",
+      "source_sha256": "8d019d21a509954928b4bcda77266a2f276f37d188a51bb3f36e291c5d119a33",
+      "source_path": "skills/firecrawl-crawl/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef27bbe0f5b4d656823cb6eb3b8356307d5c14541e3bbb1c11a9eb7b59f57f97": {
+      "description_zh": "检索问题、已合并 PR、README 和文档，回答库或 API 行为、错误含义及缺陷是否修复，原文建议优先于一般网页来源。",
+      "source": "Search issues, merged pull requests, READMEs, and documentation. Use when the question is how a library or API behaves, what an error means, or whether a bug was fixed; prefer this over a general web page.",
+      "source_sha256": "ef27bbe0f5b4d656823cb6eb3b8356307d5c14541e3bbb1c11a9eb7b59f57f97",
+      "source_path": "skills/firecrawl-developer-index/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c498a406c71c309540caf02eb8f7f87042238c5b15e928c2d5cae78174de9e3d": {
+      "description_zh": "将网站或区段保存为本地 Markdown、截图等文件，用于离线文档和参考副本。",
+      "source": "Save a site or section as local files (markdown, screenshots). Use for \"download the site\", offline docs, or a local copy for reference.",
+      "source_sha256": "c498a406c71c309540caf02eb8f7f87042238c5b15e928c2d5cae78174de9e3d",
+      "source_path": "skills/firecrawl-download/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbf2e5bb1101dfdceebdeb7c75373edeedc324b37d8502b4be1d1944bb14a48d": {
+      "description_zh": "在抓取页面的实时浏览器中点击、填表、登录、翻页和无限滚动，用于必须交互才能读取内容或抓取失败、内容不完整的页面。",
+      "source": "Drive a live browser on a scraped page: click, fill forms, log in, paginate, infinite-scroll. Use when content requires interaction or a scrape failed or returned incomplete content.",
+      "source_sha256": "cbf2e5bb1101dfdceebdeb7c75373edeedc324b37d8502b4be1d1944bb14a48d",
+      "source_path": "skills/firecrawl-interact/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b985e02c12ad80319cd560c9b16f779a28da0a681adc1507e25ec40c52529dc7": {
+      "description_zh": "发现和列出网站 URL 并按搜索条件过滤，用于已知网站但不知具体页面、查找某页地址或了解站点结构。",
+      "source": "Discover and list a site's URLs, with search filtering. Use for \"map the site\" or \"find the URL for\" requests — when the user knows the site but not the exact page, or wants site structure.",
+      "source_sha256": "b985e02c12ad80319cd560c9b16f779a28da0a681adc1507e25ec40c52529dc7",
+      "source_path": "skills/firecrawl-map/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abcc26e4d99c43e905a880d488e2155e510fa3b66d313c20f24408aa0ab5c5d2": {
+      "description_zh": "定期检查已知 URL 的网页变化，或按查询与目标监控全网新结果，再通过 webhook 或邮件告警；原文建议用持续监控替代重复单次抓取。",
+      "source": "Alert by webhook/email on web changes — use for \"monitor/watch/track/alert me when\": recurring checks on known URLs (prefer over repeated one-off scrapes) or web-wide watches for new results (queries + goal).",
+      "source_sha256": "abcc26e4d99c43e905a880d488e2155e510fa3b66d313c20f24408aa0ab5c5d2",
+      "source_path": "skills/firecrawl-monitor/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "77ff287c98a7b32c35aed123f93e5a4bb242ff0ccc960b1a0ba2f195616e0b65": {
+      "description_zh": "将本地 PDF、DOCX、XLSX、HTML 等文件转换为 Markdown，或回答其内容问题；适用于输入为文件路径的场景。",
+      "source": "Convert a local file (PDF, DOCX, XLSX, HTML, …) to markdown, or answer questions about its content. Use whenever the input is a file path, not a URL.",
+      "source_sha256": "77ff287c98a7b32c35aed123f93e5a4bb242ff0ccc960b1a0ba2f195616e0b65",
+      "source_path": "skills/firecrawl-parse/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40287ec3ea01d20d3cc8f3021afe32f2955976e7defc72a07eb8da5e3d34e2cc": {
+      "description_zh": "通过 Firecrawl 论文索引的语义搜索、语义/结构扩展和正文验证查找论文，覆盖以生物医学和生命科学为主的 PubMed、bioRxiv、medRxiv，以及 arXiv 计算机、物理和数学预印本；该索引仅由 research MCP/CLI 访问，与普通网页搜索 research 分类不同。",
+      "source": "Find the papers that answer a research query in Firecrawl's research paper index — a corpus of paper abstracts whose largest share is biomedical and life-science literature (PubMed, bioRxiv, medRxiv), alongside arXiv preprints in CS, physics, and math — using semantic search, semantic and structural expansion, and in-body verification. Use this skill for literature-finding and paper-retrieval tasks of any kind, including clinical, biomedical, drug, gene, disease, and other life-science questions, whether the answer is a single paper or a full multi-paper set. The index is reached only through the `firecrawl_research_*` MCP tools or the `firecrawl research` CLI subcommands. Calling `firecrawl_search` with its `categories` option set to `[\"research\"]` is a different feature — it filters ordinary web search to research-affiliated websites (the list includes PubMed, bioRxiv, medRxiv, arXiv, and publisher sites) and returns page results from them, without querying the paper records in this index.",
+      "source_sha256": "40287ec3ea01d20d3cc8f3021afe32f2955976e7defc72a07eb8da5e3d34e2cc",
+      "source_path": "skills/firecrawl-research-index/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f9edf74e731e7fb91bc69ad06c1cc12ca6b6d0256c3f5e2261a41cdb3ff494e": {
+      "description_zh": "将给定 URL 内容提取为干净 Markdown，包括 JavaScript 渲染页面，原文建议用于用户给出网址并需要正文时。",
+      "source": "Extract a URL's content as clean markdown, including JS-rendered pages. Use whenever the user provides a URL and wants its content; prefer over WebFetch.",
+      "source_sha256": "7f9edf74e731e7fb91bc69ad06c1cc12ca6b6d0256c3f5e2261a41cdb3ff494e",
+      "source_path": "skills/firecrawl-scrape/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "efb27f1395765eac581398ce393507b7ac7acf8b64bc6f61403eb47527d5846f": {
+      "description_zh": "在未知 URL 时进行带完整页面内容的网页搜索，寻找来源、文章或新闻；论文和库/API/错误/缺陷问题分别交由研究与开发者索引技能。",
+      "source": "Web search with full page content. Use when no URL is known: finding sources, articles, or news. For papers use firecrawl-research-index; for library, API, error, or bug questions use firecrawl-developer-index.",
+      "source_sha256": "efb27f1395765eac581398ce393507b7ac7acf8b64bc6f61403eb47527d5846f",
+      "source_path": "skills/firecrawl-search/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c24b0ce1a5df49f0a4a7007fdae126318e24ec3e08bd75cbc9401f9ca318cc0": {
+      "description_zh": "通过 Firecrawl CLI 执行网页搜索、读取提取、来源整理、URL 发现、批量抓取、站点下载、变更提醒及需要点击登录的网页任务；本地文件、论文和开发者问题分别路由到专用技能。",
+      "source": "Any live-web task via the Firecrawl CLI — including ordinary web research: searching the web, reading or extracting pages, gathering sources, discovering site URLs, bulk extraction, downloading a site, change alerts, or pages needing clicks/login — web only; local files route to firecrawl-parse. For papers use firecrawl-research-index; for library, API, error, or bug questions use firecrawl-developer-index.",
+      "source_sha256": "4c24b0ce1a5df49f0a4a7007fdae126318e24ec3e08bd75cbc9401f9ca318cc0",
+      "source_path": "skills/firecrawl/SKILL.md",
+      "package_sha256": "98aee21a98ae0e9a7106a03fc6d6e7ce8fdde4613ba0e8d81ba5d4770bc653e6",
+      "source_package": "firecrawl-1.0.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d692a49745ee93a0ad3acbaad346c67599d0a936dbe54545183912bbbb84a9dc": {
+      "description_zh": "创建 Firetiger 监控代理、安装预置代理并配置触发器和日程，用于自动监控、周期或单次分析及事件自动化；保留代理需开启、触发器为独立资源及 scheduled-agent-runs 是单次运行的限制。",
+      "source": "Use when creating a Firetiger monitoring agent, installing a prebuilt catalog agent, or configuring an agent's triggers and schedules — monitoring something automatically, scheduling recurring or one-off analysis, or wiring event-driven automation. Always use this skill to create or automate an agent — it carries the critical gotchas (prefer create_agent_with_goal and answer the planner, agents must be AGENT_STATE_ON to fire, triggers are separate resources with six config types, scheduled-agent-runs are one-shot not cron).",
+      "source_sha256": "d692a49745ee93a0ad3acbaad346c67599d0a936dbe54545183912bbbb84a9dc",
+      "source_path": "skills/firetiger-create-agent/SKILL.md",
+      "package_sha256": "4974c64bf05e577950b8bea1bed249a5ed4db6ee99be08096fad62d8b948da15",
+      "source_package": "Firetiger-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d05a03874460545c1905c3fdc5b16b7d8378c3afdf115931c5f131fbae7579d": {
+      "description_zh": "为 Node.js、Next.js、Python、Go 或 Rust 应用接入 OpenTelemetry 并向 Firetiger 发送遥测，配置追踪和 OTLP 导出；原文强调初始化先于其他导入、接入使用 HTTP Basic 认证且凭据由 MCP 获取。",
+      "source": "Use when adding OpenTelemetry instrumentation to an application so it sends telemetry to Firetiger — setting up tracing, configuring the OTLP exporter, or connecting a Node.js, Next.js, Python, Go, or Rust app to Firetiger. Always use this skill when instrumenting for Firetiger — it carries the critical gotchas (init must load before any other import, Firetiger ingest uses HTTP Basic auth not Bearer, credentials come from the get_ingest_credentials MCP tool) that make telemetry actually show up.",
+      "source_sha256": "1d05a03874460545c1905c3fdc5b16b7d8378c3afdf115931c5f131fbae7579d",
+      "source_path": "skills/firetiger-instrument/SKILL.md",
+      "package_sha256": "4974c64bf05e577950b8bea1bed249a5ed4db6ee99be08096fad62d8b948da15",
+      "source_package": "Firetiger-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85df510411a9b22de9a39e922fead87d385422fab7256b355a3ded548066d0a2": {
+      "description_zh": "通过 Firetiger 发起或读取调查，以遥测诊断事件并处理调查发现；调查是 AI 代理会话、状态由服务端设定，问题由专家代理管理，需通过引导代理推进。",
+      "source": "Use when diagnosing an issue or incident with Firetiger — launching or reading a Firetiger investigation, troubleshooting with telemetry, or working the issues an investigation surfaces. Always use this skill for incident diagnosis — it carries the critical gotchas (an investigation is an AI agent session, not a findings form; its status is server-set; issues are managed by an expert agent you steer rather than mutate) that keep you working with the product instead of against it.",
+      "source_sha256": "85df510411a9b22de9a39e922fead87d385422fab7256b355a3ded548066d0a2",
+      "source_path": "skills/firetiger-investigate/SKILL.md",
+      "package_sha256": "4974c64bf05e577950b8bea1bed249a5ed4db6ee99be08096fad62d8b948da15",
+      "source_package": "Firetiger-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e09601e1ef2d58085074cc08a8cd2e6434785fb1e79338fabe61b6bf66988bbe": {
+      "description_zh": "使用 Firetiger 监控 PR 或部署并查看结果，涵盖 @firetiger 评论流程、CI/CD 部署登记和监控报告；需完整 PR URL 和已连接 GitHub App，检查点以实际部署后的10分钟、1小时、24小时和72小时为基准。",
+      "source": "Use when monitoring a PR or deployment with Firetiger and reviewing what it found — watching a deploy, setting up the @firetiger comment flow, registering deployments from CI/CD, or reading a monitoring agent's results. Always use this skill for deploy monitoring — it carries the critical gotchas (monitor_pr needs the full PR URL, the @firetiger flow needs a connected GitHub App, checks run at 10m/1h/24h/72h anchored to the real deploy, register deploys with Basic auth so checkpoints fire on the right release).",
+      "source_sha256": "e09601e1ef2d58085074cc08a8cd2e6434785fb1e79338fabe61b6bf66988bbe",
+      "source_path": "skills/firetiger-monitor-deploy/SKILL.md",
+      "package_sha256": "4974c64bf05e577950b8bea1bed249a5ed4db6ee99be08096fad62d8b948da15",
+      "source_package": "Firetiger-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e48a5f8db9acb807527215c2867f67802b738f50de328afea0c677ba3f86f70": {
+      "description_zh": "通过 Firetiger MCP query 用 SQL 查询追踪、日志、指标、错误、慢请求和延迟分位数，也访问连接的数据库与监控源；涵盖带斜杠表名引用、计算时长、整数状态码、结构属性及 connections/{name} 完整限定。",
+      "source": "Use when querying Firetiger telemetry with SQL — finding traces, searching logs, inspecting metrics, locating errors or slow requests, computing latency percentiles, aggregating observability data, or querying a connected source (Postgres, MySQL, ClickHouse, Datadog, Prometheus, GCP Monitoring) through the Firetiger MCP `query` tool. Always use this skill before writing a Firetiger query — it carries the critical gotchas (slashed table names must be quoted, duration is computed not stored, status codes are integers, attributes are structs not maps, fully-qualify \"connections/{name}\".table to reach a connected source) that make queries succeed.",
+      "source_sha256": "3e48a5f8db9acb807527215c2867f67802b738f50de328afea0c677ba3f86f70",
+      "source_path": "skills/firetiger-query/SKILL.md",
+      "package_sha256": "4974c64bf05e577950b8bea1bed249a5ed4db6ee99be08096fad62d8b948da15",
+      "source_package": "Firetiger-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d34c2b8523fce9084c62fabe86631d7238484f8bed9bb00e7f9d4242f0ae34f": {
+      "description_zh": "为项目完整接入 Firetiger，涵盖认证订阅、技术栈识别、多源遥测接入、GitHub/Slack/数据库/云集成、部署登记、服务发现和监控代理创建；保留自动提供凭据、Basic 接入及服务发现所需 GitHub 与遥测条件。",
+      "source": "Use when onboarding a project to Firetiger end-to-end — authenticate, subscribe, detect the stack, wire telemetry from any source (OTLP SDK, platform log/trace drains, Datadog Agent, Prometheus, Vector, or a generic HTTP sink), connect integrations (GitHub, Slack, databases, cloud, observability backends), register deployments, let discovery map services, and create a monitoring agent. Always use this skill for first-time setup — it carries the gotchas (credentials auto-provision, Basic-auth ingest, connect GitHub + telemetry to unlock discovery) that finish onboarding in one pass.",
+      "source_sha256": "2d34c2b8523fce9084c62fabe86631d7238484f8bed9bb00e7f9d4242f0ae34f",
+      "source_path": "skills/firetiger-setup/SKILL.md",
+      "package_sha256": "4974c64bf05e577950b8bea1bed249a5ed4db6ee99be08096fad62d8b948da15",
+      "source_package": "Firetiger-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e1b2b4b134503ea2abe9fa93ff6859e5b1868ece7bcaa2cc48d5ed83e06d506": {
+      "description_zh": "作为 Firetiger 可观测任务入口，将设置、OpenTelemetry 接入、SQL 查询、事件调查、PR/部署监控及代理创建路由到相应技能，涵盖 Basic 接入、按服务表的 DuckDB SQL 和评论流程。",
+      "source": "Use when the user mentions Firetiger or wants to work with their observability data — setting up Firetiger, instrumenting an app with OpenTelemetry, querying traces/logs/metrics with SQL, investigating an incident, monitoring a PR or deployment, or creating a monitoring agent. Always use this skill when the user says \"Firetiger\", even for simple asks — it routes to the specialized skill that carries the critical gotchas (Basic-auth ingest, DuckDB SQL over per-service tables, the @firetiger comment flow) that prevent common mistakes.",
+      "source_sha256": "1e1b2b4b134503ea2abe9fa93ff6859e5b1868ece7bcaa2cc48d5ed83e06d506",
+      "source_path": "skills/firetiger/SKILL.md",
+      "package_sha256": "4974c64bf05e577950b8bea1bed249a5ed4db6ee99be08096fad62d8b948da15",
+      "source_package": "Firetiger-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c559ac9d9c7d1c9da71b7449e184d6a5d41dce0c961c63950f1352d4f929c833": {
+      "description_zh": "对有实际影响或反复出现的缺陷修复整个错误类别：以失败测试复现、命名类别、搜索相同模式、修复或记录所有命中，并增加规则、不变量、辅助函数或检查防止复发；轻微评审项另行记录。",
+      "source": "Bug-fix routine that fixes the whole class of bug, not just the reported instance. Use for any bug report, failing production behaviour, monitoring alert, audit finding or review finding that does real harm (a smaller review finding goes on the item's list, as ship-check says), and whenever the same kind of bug has been seen before. Reproduces it with a failing test, names the failure class, searches the codebase for the same pattern, fixes or records every hit, and adds the rule, invariant, helper or check that stops it coming back.",
+      "source_sha256": "c559ac9d9c7d1c9da71b7449e184d6a5d41dce0c961c63950f1352d4f929c833",
+      "source_path": "skills/fix-the-class/SKILL.md",
+      "package_sha256": "db1df7dfa2365ea17ba0117264f433aec08e05a45d892db245805761b32a0a5f",
+      "source_package": "First Pass-0.5.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc7b985d992a93dd4ba6d098564b3f830cecc6723e050c440dee575998afff13": {
+      "description_zh": "从用户近期 Claude Code 实际输入中识别可能降低回答质量的习惯提示词，说明影响与后续问题、提出替代表达，并将词语映射到应触发的检查规则；用于学习、刷新或审阅习惯提示。",
+      "source": "Learns the words a user habitually writes to their coding agent that make its answers worse (\"be 100% sure\", \"don't assume\", \"full review\", \"are you sure?\", \"all fine, right?\"), from what they actually typed in their recent Claude Code sessions. Shows what each one does, what went wrong after it, and what to say instead, then writes the habit words block that maps each word to the checks it should trigger, so the checks run without the words. Use when asked to learn, read, refresh or review the user's habit words or prompts, \"which of my words make you worse\", from setup-first-pass's profile step, or when the start-of-session check says the habit words are due.",
+      "source_sha256": "cc7b985d992a93dd4ba6d098564b3f830cecc6723e050c440dee575998afff13",
+      "source_path": "skills/habit-words/SKILL.md",
+      "package_sha256": "db1df7dfa2365ea17ba0117264f433aec08e05a45d892db245805761b32a0a5f",
+      "source_package": "First Pass-0.5.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "294725f7b16cd7bfa424c134cca0433d7fb5c51389cca909eb72fafe0c0343fb": {
+      "description_zh": "设置、检查或调整可选 Jev/TypeSafe 判断模型，供 ship-check 评估审查项实际影响、轻微问题是否立即修复及所需证据；显示各仓库状态与所用密钥、切换启停并发送测试请求，仅在用户明确调用时运行。",
+      "source": "Sets up, checks or changes the optional Jev judge, the TypeSafe decision model that ship-check asks about review findings (is this real harm, is a small one worth fixing now, what proof does a small fix need). Shows whether it is on for each repo, which key it uses, switches it on or off, and sends one test request. Runs only when the user types it.",
+      "source_sha256": "294725f7b16cd7bfa424c134cca0433d7fb5c51389cca909eb72fafe0c0343fb",
+      "source_path": "skills/jev/SKILL.md",
+      "package_sha256": "db1df7dfa2365ea17ba0117264f433aec08e05a45d892db245805761b32a0a5f",
+      "source_package": "First Pass-0.5.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b24585c0dfd4647ff971d32fe17e21fb3ba860dd41ccea61ae23f34872d7fa0b": {
+      "description_zh": "在涉及数据、作业、资金、外部服务或用户行为的修改前预判故障，按原文列明的重复执行、半途失败、外部调用、失败非空值、相邻影响、结束状态、资金、恶意用户、文案、规模与时间等故障类别检查代码，将答案写入计划。",
+      "source": "Run before writing or changing code for any feature, bug fix or refactor that touches data, jobs, money, outside services or user-facing behaviour. Finds where the change will break before it is built, by walking ten named failure classes (twice, halfway, outside call, failure-is-not-empty, neighbors, endings, money, hostile user, words, scale and time) against the code, and writes the answers into the plan. Use when planning a change, when asked to \"think it through\", \"cover the gaps\", \"make sure it's bug free\", or before any edit to payment, publishing, deletion, auth or background-job code.",
+      "source_sha256": "b24585c0dfd4647ff971d32fe17e21fb3ba860dd41ccea61ae23f34872d7fa0b",
+      "source_path": "skills/premortem/SKILL.md",
+      "package_sha256": "db1df7dfa2365ea17ba0117264f433aec08e05a45d892db245805761b32a0a5f",
+      "source_package": "First Pass-0.5.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64f2cf991c31dcec38a02f96f369330a108d9eb412b01ab026d91adc6b7e434b": {
+      "description_zh": "合并前审查当前分支（含未提交修改）或指定 PR/仓库/分支，结合基线、工单、失败 CI 和评论，重新审查并追踪受影响代码，证明或标注未证实发现，列明构建、环境变量、迁移及部署顺序和验证方式；不发 GitHub 评论，报告后才提出修复，仅明确调用时运行。",
+      "source": "Reviews a change before it is merged, from little or no input. With nothing typed it reviews the branch you are on, uncommitted work included, against its base, its PR and its ticket, so a developer can check their own work before asking for review. With PR links, repo#N or a branch it reviews someone else's change the same way, several repos at once. It judges the failed CI checks and every Bugbot and reviewer comment, gets a fresh breaker review, traces every other piece of code that uses what changed, proves each finding or marks it unproven, says what the merge needs (a build, env vars, migrations, deploy order) and how to check the deploy, never posts to GitHub, and offers fixes only after the report. Runs only when the user types it.",
+      "source_sha256": "64f2cf991c31dcec38a02f96f369330a108d9eb412b01ab026d91adc6b7e434b",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "db1df7dfa2365ea17ba0117264f433aec08e05a45d892db245805761b32a0a5f",
+      "source_package": "First Pass-0.5.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f352643a8d80e95a80db0f4f661da9db1f18b1062553b21a05b69b0ff01a1732": {
+      "description_zh": "为多仓库主目录或单仓库设置 First Pass 工作规则，建立工作区地图、各仓库实际命令、测试限制、不变量与钩子索引；用于首次安装、补充交付规则或漂移后的更新。",
+      "source": "Set up first-pass for a main folder that holds many repos, or for one repo. In a main folder it writes one set of working rules at the root that every session loads, a workspace map, and a section in each repo with that repo's real commands, test limits and invariants, and it lists each repo's own hooks so first-pass can run them from the main folder. In one repo it writes the rules and the section into that repo. Use when asked to set up, install, add, update or re-run first-pass, to \"add the shipping rules\", or when the start-of-session check says something drifted. Re-run to update.",
+      "source_sha256": "f352643a8d80e95a80db0f4f661da9db1f18b1062553b21a05b69b0ff01a1732",
+      "source_path": "skills/setup-first-pass/SKILL.md",
+      "package_sha256": "db1df7dfa2365ea17ba0117264f433aec08e05a45d892db245805761b32a0a5f",
+      "source_package": "First Pass-0.5.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73820df4d9c7fc47d4369a5a87ceb863122714a168fd9718fa1c0d3df0b511d4": {
+      "description_zh": "在执行前重写命令后的提示，把混合请求拆成编号事项、将笼统保证转为具体检查，保留名称、路径、数字和引文，仅需猜测时提问；只在用户明确调用时运行。",
+      "source": "Rewrites the prompt typed after the command before any work starts, then works from the rewrite. Splits a mixed-up message into a numbered list of asks, turns words like \"be 100% sure\", \"cover all cases\" or \"don't break anything\" into the checks they stand for, keeps every name, path, number and quote exactly, and stops to ask only where it would have to guess. Runs only when the user types it.",
+      "source_sha256": "73820df4d9c7fc47d4369a5a87ceb863122714a168fd9718fa1c0d3df0b511d4",
+      "source_path": "skills/sharpen/SKILL.md",
+      "package_sha256": "db1df7dfa2365ea17ba0117264f433aec08e05a45d892db245805761b32a0a5f",
+      "source_package": "First Pass-0.5.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8f66c618e18142bbb061bb3de93ec1d3a9957a45cef7078f1f4bb07d88c6bb8": {
+      "description_zh": "在宣布功能或缺陷修改完成前核对交付条件，检查故障预判、证明测试在旧代码失败、重新审查、干净检出中运行 CI 检查、核对用户文案并生成证据报告。",
+      "source": "The definition of done. Run before calling any change done, fixed, verified, ready or shippable, for features and bug fixes alike. Checks the pre-mortem was answered, proves the tests fail on the old code, gets a fresh breaker review, runs CI's own checks in a clean checkout, checks the user-facing words, and writes the evidence report. Also use when asked \"is it done\", \"is it ready\", \"did you verify it\" or \"can we merge\".",
+      "source_sha256": "b8f66c618e18142bbb061bb3de93ec1d3a9957a45cef7078f1f4bb07d88c6bb8",
+      "source_path": "skills/ship-check/SKILL.md",
+      "package_sha256": "db1df7dfa2365ea17ba0117264f433aec08e05a45d892db245805761b32a0a5f",
+      "source_package": "First Pass-0.5.2-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e2be4ac62e353344ad14e4af235567599560a898eed25c9577f3aa80135d6f5": {
+      "description_zh": "通过 FlightQueue MCP 查询航空公司随身和托运行李规则、费用及遗失行李记录，用于比较行李政策和托运风险。",
+      "source": "Look up airline baggage rules and lost-bag records with the FlightQueue MCP server. Use when the user asks \"what is the carry-on size for Delta\", \"how much is a checked bag on United\", \"which airline loses the fewest bags\", or \"is it safe to check a bag on this airline\".",
+      "source_sha256": "6e2be4ac62e353344ad14e4af235567599560a898eed25c9577f3aa80135d6f5",
+      "source_path": "skills/flightqueue-baggage/SKILL.md",
+      "package_sha256": "adbeb1a0bd61c2cf0c3756311cdf99efc8fb21a02ecf2346c7a88d0c23c00039",
+      "source_package": "flightqueue-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aef5f2ff5c4048daf95535c12a95bfef89d33ec859b9ba958a826f56531c89d2": {
+      "description_zh": "通过 FlightQueue MCP 比较出发或转机机场，包括安检排队等因素，帮助选择出发机场或中转枢纽。",
+      "source": "Choose which airport to fly from with the FlightQueue MCP server. Use when the user asks \"should I fly from JFK or Newark\", \"which London airport has the shortest security queue\", \"compare LAX and SFO\", or which hub to connect through.",
+      "source_sha256": "aef5f2ff5c4048daf95535c12a95bfef89d33ec859b9ba958a826f56531c89d2",
+      "source_path": "skills/flightqueue-compare-airports/SKILL.md",
+      "package_sha256": "adbeb1a0bd61c2cf0c3756311cdf99efc8fb21a02ecf2346c7a88d0c23c00039",
+      "source_package": "flightqueue-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "838069ad75ab084eac037d98bd52b0bd4ff42633f4d0fc330a177fce279fa223": {
+      "description_zh": "通过 FlightQueue MCP 阅读旅客提交的机场等待报告，并在用户位于机场时提交其实际体验，用于核对安检排队情况。",
+      "source": "Read traveller-submitted airport wait reports, and submit one when the user is at the airport, with the FlightQueue MCP server. Use when the user asks \"what are people reporting at security\", \"is the queue really that long\", or says \"I just got through security in 20 minutes\".",
+      "source_sha256": "838069ad75ab084eac037d98bd52b0bd4ff42633f4d0fc330a177fce279fa223",
+      "source_path": "skills/flightqueue-crowd-reports/SKILL.md",
+      "package_sha256": "adbeb1a0bd61c2cf0c3756311cdf99efc8fb21a02ecf2346c7a88d0c23c00039",
+      "source_package": "flightqueue-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e8dd95540ac53e91f7c19f313c8575ff9708f7d240834cb045cb3ffda8118c9": {
+      "description_zh": "通过 FlightQueue MCP 查询欧盟 EES 边检队列和申根90/180天停留额度，用于了解入境等待、剩余停留天数和行程是否超期。",
+      "source": "Check EU Entry/Exit System (EES) border queues and the Schengen 90/180-day allowance with the FlightQueue MCP server. Use when the user asks \"how long is passport control at Lisbon\", \"what is the EES queue\", \"how many Schengen days do I have left\", or \"will this trip overstay\".",
+      "source_sha256": "5e8dd95540ac53e91f7c19f313c8575ff9708f7d240834cb045cb3ffda8118c9",
+      "source_path": "skills/flightqueue-ees-schengen/SKILL.md",
+      "package_sha256": "adbeb1a0bd61c2cf0c3756311cdf99efc8fb21a02ecf2346c7a88d0c23c00039",
+      "source_package": "flightqueue-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a41ff1c8cb6a38a4bf1bcc53e56b18cb786a6d290df781a145357672863ceaf2": {
+      "description_zh": "通过 FlightQueue MCP 规划航班当天安排，包括何时出发或到机场、当天延误、航站楼与休息室选择。",
+      "source": "Plan the day of a flight with the FlightQueue MCP server. Use when the user asks \"when should I leave for the airport\", \"what time should I get to JFK\", \"is my airport delayed today\", or which terminal or lounge to use.",
+      "source_sha256": "a41ff1c8cb6a38a4bf1bcc53e56b18cb786a6d290df781a145357672863ceaf2",
+      "source_path": "skills/flightqueue-trip-day/SKILL.md",
+      "package_sha256": "adbeb1a0bd61c2cf0c3756311cdf99efc8fb21a02ecf2346c7a88d0c23c00039",
+      "source_package": "flightqueue-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "107c1eadb3094a24626a13baf3ff9746bf316648d139a57db318f81f8dd5befd": {
+      "description_zh": "根据 FlightSeatMap 座位详情和旅客评价比较航班上2至4个指定座位并选出较优者，也可检查已分配座位。",
+      "source": "Compare two to four specific seats on a flight and pick a winner using FlightSeatMap seat details and passenger reviews. Use when a user asks \"12A or 31K?\", \"is this seat worse than that one\", or wants to check a seat they were assigned.",
+      "source_sha256": "107c1eadb3094a24626a13baf3ff9746bf316648d139a57db318f81f8dd5befd",
+      "source_path": "skills/compare-seats/SKILL.md",
+      "package_sha256": "80717c4b779b40d4f8abfa569bd5c457035e092e97931120c9a5673388aba45a",
+      "source_package": "FlightSeatMap-6.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f2dbe89c64ce75c89b56d118d5586a6a083c882682f2d5e7acce91c899ff44e": {
+      "description_zh": "查找航班中腿部空间较大的紧急出口排、隔板座和加大空间经济舱，并解释各自取舍，适用于高个旅客与空间需求。",
+      "source": "Find the seats with the most legroom on a flight — exit rows, bulkheads, and extra-legroom economy — and explain the trade-offs of each. Use when a user is tall, asks for more legroom, or asks about exit rows or bulkhead seats.",
+      "source_sha256": "2f2dbe89c64ce75c89b56d118d5586a6a083c882682f2d5e7acce91c899ff44e",
+      "source_path": "skills/extra-legroom-seats/SKILL.md",
+      "package_sha256": "80717c4b779b40d4f8abfa569bd5c457035e092e97931120c9a5673388aba45a",
+      "source_package": "FlightSeatMap-6.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac1a8a00a72e1cd2e0d1a39b184c010f8b5fe6cccea278238bc764ce2d730bd9": {
+      "description_zh": "使用 FlightSeatMap 座位图、逐座详情和旅客评价选择商业航班上的最佳可用座位，用于选座、评估指定座位或了解客舱布局。",
+      "source": "Pick the best available seat on any commercial flight using FlightSeatMap's seat maps, seat-level detail, and passenger reviews. Use when a user asks which seat to choose, whether a specific seat is good, or what a cabin looks like.",
+      "source_sha256": "ac1a8a00a72e1cd2e0d1a39b184c010f8b5fe6cccea278238bc764ce2d730bd9",
+      "source_path": "skills/find-the-best-seat/SKILL.md",
+      "package_sha256": "80717c4b779b40d4f8abfa569bd5c457035e092e97931120c9a5673388aba45a",
+      "source_package": "FlightSeatMap-6.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f96aecf29aeabbcc72cfae09a081a1d036ddbe8e4a38aa7870dc5ad67030a8c3": {
+      "description_zh": "查看、清理和替换 FlightSeatMap 座位提醒，用于查询已有提醒、停止提醒或调整监控条件。",
+      "source": "Review, clean up, and replace a user's FlightSeatMap seat alerts. Use when a user asks what alerts they have, wants to stop an alert, or wants to change what an alert watches for.",
+      "source_sha256": "f96aecf29aeabbcc72cfae09a081a1d036ddbe8e4a38aa7870dc5ad67030a8c3",
+      "source_path": "skills/manage-seat-alerts/SKILL.md",
+      "package_sha256": "80717c4b779b40d4f8abfa569bd5c457035e092e97931120c9a5673388aba45a",
+      "source_package": "FlightSeatMap-6.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "587886aee194f9195f947aa62577aee0f056bb70719d6f62f0e1f919947a44a4": {
+      "description_zh": "查找航班上相邻座位供情侣、家庭或团体同坐，并在整组座位释放时提醒。",
+      "source": "Find adjacent seats so a couple, family, or group can sit together on a flight, and alert them when a block of seats opens up. Use when a user travels with others and asks where they can sit together.",
+      "source_sha256": "587886aee194f9195f947aa62577aee0f056bb70719d6f62f0e1f919947a44a4",
+      "source_path": "skills/sit-together/SKILL.md",
+      "package_sha256": "80717c4b779b40d4f8abfa569bd5c457035e092e97931120c9a5673388aba45a",
+      "source_package": "FlightSeatMap-6.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e31059d7901e6f768513861b0556d076fafbbc33d32afbab3afea79df39fb64f": {
+      "description_zh": "通过 FlightSeatMap 监控航班座位，在靠窗、过道、紧急出口或相邻座等更合适的位置释放时发邮件提醒。",
+      "source": "Watch a flight and email the user when a better seat frees up, using FlightSeatMap seat alerts. Use when a user is stuck in a bad seat, wants a window/aisle/exit row that is currently taken, or wants two seats together.",
+      "source_sha256": "e31059d7901e6f768513861b0556d076fafbbc33d32afbab3afea79df39fb64f",
+      "source_path": "skills/track-seat-availability/SKILL.md",
+      "package_sha256": "80717c4b779b40d4f8abfa569bd5c457035e092e97931120c9a5673388aba45a",
+      "source_package": "FlightSeatMap-6.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf181c83ef62252c0f06f623c6820fd25697e84d4c70f0bf01d6ed289d0680ef": {
+      "description_zh": "使用后台 AI 代理编辑 Flint 托管网站，修改、更新或添加网站内容。",
+      "source": "Edit a Flint website using a background AI agent. Use when the user wants to modify, update, or add content to their Flint managed website.",
+      "source_sha256": "cf181c83ef62252c0f06f623c6820fd25697e84d4c70f0bf01d6ed289d0680ef",
+      "source_path": "skills/edit-site/SKILL.md",
+      "package_sha256": "a5d9fcbb38e80a0855071134c737db0267c3830efee9fb71bb4addfae22b17ff",
+      "source_package": "Flint-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d47dd9dbbc198676a9a9e8d05dd2eec143f2bc335d0997448b23b8c724c3ad8c": {
+      "description_zh": "为通过 FlowStudio MCP 接入 Power Automate 提供认证、Python/Node.js 可复用辅助工具、list_skills/tool_search 发现和超大响应处理；专门构建、调试、监控或治理交由对应技能，需 FlowStudio MCP 订阅或兼容服务。",
+      "source": "Foundation skill for Power Automate via FlowStudio MCP — auth setup, the reusable MCP helper (Python + Node.js), tool discovery via `list_skills` / `tool_search`, and oversized-response handling. Load this skill first when connecting an agent to Power Automate. For specialized workflows, load `flowstudio-power-automate-build`, `flowstudio-power-automate-debug`, `flowstudio-power-automate-monitoring` (Pro+), or `flowstudio-power-automate-governance` (Pro+) — each contains the workflow narrative, this skill provides the plumbing they all rely on. Requires a FlowStudio MCP subscription or compatible server — see https://mcp.flowstudio.app",
+      "source_sha256": "d47dd9dbbc198676a9a9e8d05dd2eec143f2bc335d0997448b23b8c724c3ad8c",
+      "source_path": "awesome-copilot/skills/flowstudio-power-automate-mcp/SKILL.md",
+      "package_sha256": "7db162ff43e56b84fba096a332b82f8a35b987d480f591d93234257055a8616d",
+      "source_package": "Flow Studio Power Automate-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d9ba14f920da9387edc3d59e5cf0a89b74454564bae82fe164128368363e3e1": {
+      "description_zh": "通过 FlowStudio MCP 缓存数据做租户级 Power Automate 聚合监控，涵盖失败率、运行健康趋势、创建者/应用清单、失活所有者和合规报告；需 Teams 或 MCP Pro+，不用于单环境、单流程、运行控制或根因调试。",
+      "source": "Pro+ subscription required. Tenant-wide Power Automate monitoring using the FlowStudio MCP cached store: failure rates, run-health trends, maker/app inventory, inactive owners, and compliance/health reports. Use only for aggregated tenant views. For one environment, one flow, run control, or root-cause debugging, use flowstudio-power-automate-mcp, flowstudio-power-automate-debug, or the server monitor-flow bundle. Requires FlowStudio for Teams or MCP Pro+.",
+      "source_sha256": "8d9ba14f920da9387edc3d59e5cf0a89b74454564bae82fe164128368363e3e1",
+      "source_path": "awesome-copilot/skills/flowstudio-power-automate-monitoring/SKILL.md",
+      "package_sha256": "7db162ff43e56b84fba096a332b82f8a35b987d480f591d93234257055a8616d",
+      "source_package": "Flow Studio Power Automate-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a843c67a8c6c949f3b4dd7c175b11ca6bd71e4d3936efe48cd740ca0604de88": {
+      "description_zh": "为通过 FlowStudio MCP 使用 Power Automate 提供认证配置、Python/Node.js 辅助工具、工具发现和超大响应处理；作为构建、调试、监控与治理技能共用基础，需 MCP 订阅或兼容服务器。",
+      "source": "Foundation skill for Power Automate via FlowStudio MCP — auth setup, the reusable MCP helper (Python + Node.js), tool discovery via `list_skills` / `tool_search`, and oversized-response handling. Load this skill first when connecting an agent to Power Automate. For specialized workflows, load `power-automate-build`, `power-automate-debug`, `power-automate-monitoring` (Pro+), or `power-automate-governance` (Pro+) — each contains the workflow narrative, this skill provides the plumbing they all rely on. Requires a FlowStudio MCP subscription or compatible server — see https://mcp.flowstudio.app",
+      "source_sha256": "5a843c67a8c6c949f3b4dd7c175b11ca6bd71e4d3936efe48cd740ca0604de88",
+      "source_path": "skills/power-automate-mcp/SKILL.md",
+      "package_sha256": "7db162ff43e56b84fba096a332b82f8a35b987d480f591d93234257055a8616d",
+      "source_package": "Flow Studio Power Automate-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14e4df0070f80623e84f4552ebb55429f6feabc92d99fd7fe30eab68296780c5": {
+      "description_zh": "使用 FlowStudio MCP 缓存存储开展租户级 Power Automate 失败率、健康趋势、创建者/应用清单、失活所有者及合规监控；需 Teams 或 MCP Pro+，单流程操作与根因调查交由基础、调试或 monitor-flow 工具组。",
+      "source": "Pro+ subscription required. Tenant-wide Power Automate monitoring using the FlowStudio MCP cached store: failure rates, run-health trends, maker/app inventory, inactive owners, and compliance/health reports. Use only for aggregated tenant views. For one environment, one flow, run control, or root-cause debugging, use power-automate-mcp, power-automate-debug, or the server monitor-flow bundle. Requires FlowStudio for Teams or MCP Pro+.",
+      "source_sha256": "14e4df0070f80623e84f4552ebb55429f6feabc92d99fd7fe30eab68296780c5",
+      "source_path": "skills/power-automate-monitoring/SKILL.md",
+      "package_sha256": "7db162ff43e56b84fba096a332b82f8a35b987d480f591d93234257055a8616d",
+      "source_package": "Flow Studio Power Automate-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "092045022507102fc5d4daac2ea3fbcc5a973d602184571f61d32c748cffb6cb": {
+      "description_zh": "查询 Flowsery 隐私优先网页分析数据，获取实时访客、时间序列、设备/页面/国家/来源/活动/渠道/UTM/退出链接等24维细分、访客活动时间线、自定义目标和收入归因。",
+      "source": "Query web analytics data from Flowsery Analytics — a privacy-first web analytics platform. Retrieve real-time visitor counts, time series data, breakdowns by 24 dimensions (device, page, country, referrer, campaign, channel, UTM params, exit links, etc.), visitor profiles with activity timelines, custom goal tracking, and revenue attribution.",
+      "source_sha256": "092045022507102fc5d4daac2ea3fbcc5a973d602184571f61d32c748cffb6cb",
+      "source_path": "skills/flowsery/SKILL.md",
+      "package_sha256": "dc0bed58568fcd8667a55ed07ad2696f339f4c90e333f99e84cf42066291d962",
+      "source_package": "Flowsery-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a38b582757fecdbe9a91e0ab533298fc8451ac8d797dc6567944c2901f0483a": {
+      "description_zh": "为 Webflow 开发提供仅基于直接观察验证的手册，记录 MCP 2.0.1 变化、元素与样式陷阱、CMS 绑定、Collection Lists、组件属性、响应断点、设计画布行为及诊断探针，配合 flowy 路由和验证技能。",
+      "source": "Use when building on Webflow and you need to know what is actually true — a verified-only field manual of directly-observed behaviours, traps, schema quirks and fixes. Covers what changed in MCP 2.0.1, element and style traps, CMS bindings and Collection Lists, components and props, responsive breakpoints, Designer-canvas behaviours, and live diagnostic probes. Use alongside the flowy skill (which hand) and flowy-verify (did it land).",
+      "source_sha256": "8a38b582757fecdbe9a91e0ab533298fc8451ac8d797dc6567944c2901f0483a",
+      "source_path": "skills/flowy-manual/SKILL.md",
+      "package_sha256": "996e3121b835c28ebf973eb5cd80cb06c7839caf6f428ac9c7cd05cfbdcd67eb",
+      "source_package": "flowy-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c78976f769b21cd3fd564e17e34a945a0b699c0fb6a6c933f96b50eb14670b2a": {
+      "description_zh": "在 Webflow MCP 批量写入元素、样式、CMS、组件、变量、脚本、素材或发布后独立核验实际落地，检查被静默丢弃的类、平台注入默认样式、表面异常绑定和陈旧线上页面。",
+      "source": "Use after a batch of Webflow MCP writes (data_whtml_builder, data_element_builder, data_element_tool, data_element_settings_tool, data_style_tool, data_cms_tool, data_component_tool, data_component_props_tool, data_component_variants_tool, data_variable_tool, data_scripts_tool, asset_tool, data_sites_tool publish) to verify the writes actually landed — catching silently-dropped classes, Webflow-injected style defaults, bindings that only look broken, and stale live-page state. A PostToolUse hook shipped with the flowy plugin reminds the agent to invoke this skill.",
+      "source_sha256": "c78976f769b21cd3fd564e17e34a945a0b699c0fb6a6c933f96b50eb14670b2a",
+      "source_path": "skills/flowy-verify/SKILL.md",
+      "package_sha256": "996e3121b835c28ebf973eb5cd80cb06c7839caf6f428ac9c7cd05cfbdcd67eb",
+      "source_package": "flowy-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1799a258d5951c217cc6391798aa8ded3a44447e8bc3e3446f22d2eeb56d0f48": {
+      "description_zh": "作为 Webflow 构建、设计、样式、布局、CMS、组件与编辑任务入口，选择 MCP 或 Chrome Designer 操作路径，管理新建和既有站点会话，并规定第三方组件优先粘贴的流程。",
+      "source": "Use when starting or planning ANY Webflow build, design, styling, layout, CMS, component, or edit task — before choosing tools — and the moment you are about to reach for a Webflow MCP write tool to do VISUAL or detail work. Owns which-hand routing (Webflow MCP vs the Chrome-driven Designer), the session lifecycle for both new builds and already-built sites, and the paste-first rule for third-party components. Invoke FIRST, before flowy-manual or flowy-verify.",
+      "source_sha256": "1799a258d5951c217cc6391798aa8ded3a44447e8bc3e3446f22d2eeb56d0f48",
+      "source_path": "skills/flowy/SKILL.md",
+      "package_sha256": "996e3121b835c28ebf973eb5cd80cb06c7839caf6f428ac9c7cd05cfbdcd67eb",
+      "source_package": "flowy-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e18ebd9fecc48b262b618366220af100e766a0112c5defe6cc692a990da64a5": {
+      "description_zh": "检索专利现有技术并将发明特征映射到参考资料，支持语义检索、相似专利和含特征覆盖的结构化报告；用于发明披露及新颖性初步评估，作为专利顾问辅助，不构成法律意见，原文建议继续检索与律师审阅。",
+      "source": "Search patent prior art and map invention features against references. Use when evaluating ideas or invention disclosures, conducting semantic patent searches, finding similar patents, or preparing prior art search reports. Produces structured reports with feature coverage mapping. Supports patent counsel—does not constitute legal advice; further searching and attorney review recommended. Triggers on \"patentability search\", \"patentability assessment\", \"novelty search\", \"is my invention patentable\", \"prior art search for patentability\", \"find prior art for my invention\", \"invention disclosure\", \"can I patent this\".",
+      "source_sha256": "0e18ebd9fecc48b262b618366220af100e766a0112c5defe6cc692a990da64a5",
+      "source_path": "skills/patentability/SKILL.md",
+      "package_sha256": "96320e7488aeb46f67e5a6cec6d8ff2a911685b17cc66efc71344f50b24fd2d4",
+      "source_package": "FluidityIQ Patent Intelligence-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "314ca758794a30ae001042c0ca1244d5c6c790d8202a8c815a26122483339ebf": {
+      "description_zh": "提供采用 Riverpod 3.0、Freezed、go_router 和按功能组织架构的 Flutter/Dart 开发实践。",
+      "source": "Flutter development best practices with Riverpod 3.0, Freezed, go_router, and feature-first architecture. Auto-invoked when writing Flutter/Dart code.",
+      "source_sha256": "314ca758794a30ae001042c0ca1244d5c6c790d8202a8c815a26122483339ebf",
+      "source_path": "skills/flutter-dev/SKILL.md",
+      "package_sha256": "0752e158e9d9050dd43f376bcd98af2e2464f18a47bda82675cada5db3012401",
+      "source_package": "flutter-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60a42fd48a23452896d537e1fed701935e0bc18d5b661ca5adb77205b498a46a": {
+      "description_zh": "按功能优先架构为新 Flutter 功能生成模型、provider、仓库、页面、组件和测试完整骨架。",
+      "source": "Scaffold a complete new feature with models, providers, repositories, screens, widgets, and tests following feature-first architecture",
+      "source_sha256": "60a42fd48a23452896d537e1fed701935e0bc18d5b661ca5adb77205b498a46a",
+      "source_path": "skills/flutter-feature/SKILL.md",
+      "package_sha256": "0752e158e9d9050dd43f376bcd98af2e2464f18a47bda82675cada5db3012401",
+      "source_package": "flutter-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1eb7bc949f5e8d6a48805a1689f057f6e6d89f621a981f8d8a50fa7f75af52c": {
+      "description_zh": "使用 Flame Engine、Rive 动画和现代游戏架构开发 Flutter 二维或三维游戏、小游戏及游戏化功能。",
+      "source": "Create 2D/3D games with Flutter using Flame Engine, Rive animations, and modern game architecture. Use when building games, mini-games, or gamified features.",
+      "source_sha256": "e1eb7bc949f5e8d6a48805a1689f057f6e6d89f621a981f8d8a50fa7f75af52c",
+      "source_path": "skills/flutter-game/SKILL.md",
+      "package_sha256": "0752e158e9d9050dd43f376bcd98af2e2464f18a47bda82675cada5db3012401",
+      "source_package": "flutter-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3917464189decfbfb9af574f9ad7592dbe885ef43d8a722bc649a51d43a64712": {
+      "description_zh": "生成支持 JSON 序列化、可选状态类和工厂的 Freezed 数据模型，用于新模型或 DTO。",
+      "source": "Generate a Freezed data model with JSON serialization, optional state class, and factory. Use when creating new data models or DTOs.",
+      "source_sha256": "3917464189decfbfb9af574f9ad7592dbe885ef43d8a722bc649a51d43a64712",
+      "source_path": "skills/flutter-model/SKILL.md",
+      "package_sha256": "0752e158e9d9050dd43f376bcd98af2e2464f18a47bda82675cada5db3012401",
+      "source_package": "flutter-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5fcf9f3e3522551c4044d4ef74810b1770569aff07b90945e65db0d18651b36a": {
+      "description_zh": "生成包含 notifier、状态管理及 AwBaseNotifier 生命周期的 Riverpod 3.0 provider，用于功能状态管理。",
+      "source": "Generate a Riverpod 3.0 provider with notifier, state management, and AwBaseNotifier lifecycle. Use when creating state management for features.",
+      "source_sha256": "5fcf9f3e3522551c4044d4ef74810b1770569aff07b90945e65db0d18651b36a",
+      "source_path": "skills/flutter-provider/SKILL.md",
+      "package_sha256": "0752e158e9d9050dd43f376bcd98af2e2464f18a47bda82675cada5db3012401",
+      "source_package": "flutter-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06bc6282ec8bd2f43008796862c08106f17ae3163f7ad1e1200d278704d7da7a": {
+      "description_zh": "生成带 go_router 路由、Riverpod 状态管理及适当生命周期的 Flutter 页面。",
+      "source": "Generate a Flutter screen with go_router routing, Riverpod state management, and proper lifecycle. Use when creating new pages/screens.",
+      "source_sha256": "06bc6282ec8bd2f43008796862c08106f17ae3163f7ad1e1200d278704d7da7a",
+      "source_path": "skills/flutter-screen/SKILL.md",
+      "package_sha256": "0752e158e9d9050dd43f376bcd98af2e2464f18a47bda82675cada5db3012401",
+      "source_package": "flutter-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d41d13e9623763bd719424ecaab32c5a7f7a341523d0360b2ac0ca6d7c75bbfe": {
+      "description_zh": "为 Flutter provider、仓库和组件生成全面测试，使用 mockito 模拟与 Riverpod 覆盖。",
+      "source": "Generate comprehensive tests for Flutter providers, repositories, and widgets with mockito mocks and Riverpod overrides",
+      "source_sha256": "d41d13e9623763bd719424ecaab32c5a7f7a341523d0360b2ac0ca6d7c75bbfe",
+      "source_path": "skills/flutter-test/SKILL.md",
+      "package_sha256": "0752e158e9d9050dd43f376bcd98af2e2464f18a47bda82675cada5db3012401",
+      "source_package": "flutter-skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a655b5504f42b2fc298d76c41f424f6961e5013e841428de6a71d337d9deb0b2": {
+      "description_zh": "通过 FlyBest 连接器搜索和预订酒店，查询房态、价格、详情与权益，获取付款链接并查看或取消自己的酒店订单；仅覆盖酒店，不覆盖航班。",
+      "source": "Search and book hotels through the FlyBest connector (ai.flybest.org). Use whenever the user wants hotel availability, rates, hotel details or perks, wants to book a room, asks for a payment link, or wants to see or cancel their own hotel bookings. Hotels only — never flights.",
+      "source_sha256": "a655b5504f42b2fc298d76c41f424f6961e5013e841428de6a71d337d9deb0b2",
+      "source_path": "skills/flybest-hotels/SKILL.md",
+      "package_sha256": "ac113bd1a5d9c3c024eaed660cddb923e4822b62cca76d3c9b14f63fa86051c7",
+      "source_package": "FlyBest Hotels — AI Travel Booking-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cc1affdf0c1e08748c77e90bb2da60f46e3f280cb5c4cbfdae6c06ed42baf90": {
+      "description_zh": "通过 Foliade OAuth MCP 上传发布 PDF，定制阅读器、主题与章节，配置潜客采集、交互元素、跟踪链接和数字书架；支持免费访客上传，账户功能受套餐限制。",
+      "source": "Use Foliade to upload and publish PDFs, personalize readers and themes, configure chapters, lead capture, interactive elements, tracking links and digital shelves through OAuth MCP. Supports free guest PDF uploads and account features according to plan.",
+      "source_sha256": "5cc1affdf0c1e08748c77e90bb2da60f46e3f280cb5c4cbfdae6c06ed42baf90",
+      "source_path": "skills/publier-flipbook/SKILL.md",
+      "package_sha256": "247c3af5c6a9cae845c3a8df6b4ec1deeac44aca57bb359e8b32d8ef35bd6228",
+      "source_package": "Foliade-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c63d0db849113e336924491312e5dc9be0884c5e814add8d9a79cfb9e6921ea1": {
+      "description_zh": "查看用户 Folio 收件箱中已保存文章，查找、摘要、整理待读队列或将多篇打包成一期发送到设备。",
+      "source": "Look through the articles already saved in the user's Folio inbox — find one, summarise it, tidy the queue, or bundle a few into an issue and send them to a device.",
+      "source_sha256": "c63d0db849113e336924491312e5dc9be0884c5e814add8d9a79cfb9e6921ea1",
+      "source_path": "skills/read-the-inbox/SKILL.md",
+      "package_sha256": "56ae96190c894c4147a4d97d17e8cf19f42d465127560f80d6a09f55d324b80c",
+      "source_package": "Folio-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc54bc5a954793b2a05ff761ecdb246b0f60b038f8124f385659ccfc21eb4a80": {
+      "description_zh": "研究主题、总结对话或筛选应读材料，再以排版 PDF 将内容发送到 reMarkable、Kindle、Dropbox 或 Google Drive。",
+      "source": "Research a topic, summarise a conversation, or triage what the user should read, then deliver the write-up to their reMarkable, Kindle, Dropbox or Google Drive as a typeset PDF.",
+      "source_sha256": "cc54bc5a954793b2a05ff761ecdb246b0f60b038f8124f385659ccfc21eb4a80",
+      "source_path": "skills/research-and-send/SKILL.md",
+      "package_sha256": "56ae96190c894c4147a4d97d17e8cf19f42d465127560f80d6a09f55d324b80c",
+      "source_package": "Folio-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3a85fcd990886657d982458e784cce8bb36dc69679266663c6789a2cf5e36bf": {
+      "description_zh": "将链接、文章或文本保存到 Folio 收件箱，供用户稍后在电子墨水设备阅读。",
+      "source": "Save a link, article, or written text to the user's Folio inbox so they can read it later on their e-ink device.",
+      "source_sha256": "c3a85fcd990886657d982458e784cce8bb36dc69679266663c6789a2cf5e36bf",
+      "source_path": "skills/save-to-folio/SKILL.md",
+      "package_sha256": "56ae96190c894c4147a4d97d17e8cf19f42d465127560f80d6a09f55d324b80c",
+      "source_package": "Folio-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a1dd192d951172356355c3a88154ab81b60b18acce762ab9256cb5460531949": {
+      "description_zh": "将内容排版为适合电子墨水设备的 PDF 或 EPUB，并发送到 reMarkable、Kindle、Dropbox 或 Google Drive。",
+      "source": "Turn content into a PDF or EPUB laid out for the user's e-ink device and deliver it to their reMarkable, Kindle, Dropbox or Google Drive.",
+      "source_sha256": "1a1dd192d951172356355c3a88154ab81b60b18acce762ab9256cb5460531949",
+      "source_path": "skills/send-to-device/SKILL.md",
+      "package_sha256": "56ae96190c894c4147a4d97d17e8cf19f42d465127560f80d6a09f55d324b80c",
+      "source_package": "Folio-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b12b1b2ec220df4381cb5c717d5e1abe73851b17ba6367ae2efb0454e6c393f": {
+      "description_zh": "设置、修改、暂停或解释 Folio 定期投递，包括晨报、周摘要和 RSS 订阅，让刊物按日程到达用户设备。",
+      "source": "Set up, change, pause or explain a recurring Folio delivery — a morning brief, a weekly digest, an RSS subscription that feeds it — so issues arrive on the user's device on a schedule.",
+      "source_sha256": "7b12b1b2ec220df4381cb5c717d5e1abe73851b17ba6367ae2efb0454e6c393f",
+      "source_path": "skills/set-up-routines/SKILL.md",
+      "package_sha256": "56ae96190c894c4147a4d97d17e8cf19f42d465127560f80d6a09f55d324b80c",
+      "source_package": "Folio-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3181867f816e0d140902b179bd6b1297cb8dfdb01810076953d83879cf47e4d": {
+      "description_zh": "创建适合手写的计划本、练习表或笔记模板并发送到电子墨水设备，支持子弹笔记、康奈尔笔记、GTD 周计划和习惯跟踪等布局及模板构思。",
+      "source": "Create a planner, worksheet, or note template laid out for handwriting and deliver it to the e-ink device the user writes on. Also use when the user asks for template ideas or names a known layout (bullet journal, Cornell notes, GTD weekly, habit tracker).",
+      "source_sha256": "f3181867f816e0d140902b179bd6b1297cb8dfdb01810076953d83879cf47e4d",
+      "source_path": "skills/write-on-templates/SKILL.md",
+      "package_sha256": "56ae96190c894c4147a4d97d17e8cf19f42d465127560f80d6a09f55d324b80c",
+      "source_package": "Folio-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4200d6f67a87bcee391e7bf78684cc7a6df624687626c157ea2fd1d4e64dfab9": {
+      "description_zh": "创建、设置品牌、发布、更新、查找和分析 Foliyo 页面，涵盖提案、报告、演示、客户交接和项目更新，将 HTML 分享为 Foliyo 链接，或查询已有链接与读者信息。",
+      "source": "Create, brand, publish, update, find, and report on Foliyo pages. Use when the user says “create me a Foliyo”, wants a Foliyo proposal, report, deck, client handover or project update, asks to share finished HTML as a Foliyo link, or asks about an existing Foliyo link or its readers.",
+      "source_sha256": "4200d6f67a87bcee391e7bf78684cc7a6df624687626c157ea2fd1d4e64dfab9",
+      "source_path": "skills/foliyo/SKILL.md",
+      "package_sha256": "e1fc55fff2af16806045a10ae26d250394bffeab9fa4ea93b2a8433c8872072d",
+      "source_package": "Foliyo-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
