@@ -44809,6 +44809,1086 @@
       "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
       "source_package": "meta-dev-0.6.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3f7434cddc9e346aa32c8b71c268f0245a3838d6277f9908385c77142f118ba": {
+      "description_zh": "设计编写Claude Code Hook，实现事件自动化、自动阻止动作或在编辑和会话启动时执行规则；已有Hook审计调试使用review-hook。",
+      "source": "Design and author a Claude Code hook for event automation or enforcement. Use when the user asks to add or create a hook, block an action automatically, run something on every edit or session start, or enforce a rule with a hook. Not for auditing or debugging an existing hook — that routes to review-hook.",
+      "source_sha256": "d3f7434cddc9e346aa32c8b71c268f0245a3838d6277f9908385c77142f118ba",
+      "source_path": "skills/create-hook/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37072891d19e10bd91fce7a8361e7260b469105b023ad49786a30c39b47359a0": {
+      "description_zh": "从零创建智能体技能，将工作流、会话或知识转成新能力；已有技能修改通过skill-creation路由至更新、优化或重构。",
+      "source": "Create a brand-new Agent Skill from scratch. Use when the user asks to make, build, or scaffold a new skill, wants to turn a workflow, conversation, or body of knowledge into a skill, or needs a capability no existing skill covers. Not for skills that already exist — route edits to update-skill, improve-skill, or restructure-skill via skill-creation.",
+      "source_sha256": "37072891d19e10bd91fce7a8361e7260b469105b023ad49786a30c39b47359a0",
+      "source_path": "skills/create-skill/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d62a9798c5c7710344c5a06f424de487fdd158427d3a970edc0b26c59dad11f": {
+      "description_zh": "按可衡量标准精简优化已有子智能体提示、说明触发或工具清单，保留委派行为与返回契约；行为改变使用update-agent。",
+      "source": "Raise an existing subagent's quality against a measurable criterion WITHOUT changing its delegation behavior or return contract. Use when the user asks to debloat or tighten an agent, says an agent's prompt is bloated, wants its description or triggering fixed, or asks to audit its tool list. Behavior changes (what the agent does or returns) belong to update-agent.",
+      "source_sha256": "3d62a9798c5c7710344c5a06f424de487fdd158427d3a970edc0b26c59dad11f",
+      "source_path": "skills/improve-agent/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc2255402d81e65ea2797d84f2ffb73b613ada6240825154dd8edcb697f5f622": {
+      "description_zh": "精简清理CLAUDE.md、AGENTS.md和参考指令，提高可读性而保留既有承诺；事实规则改变与首次初始化另用对应技能。",
+      "source": "Raise the quality of a project's instruction files (CLAUDE.md, AGENTS.md, references) WITHOUT changing what they commit to. Use when the user asks to clean up, debloat, or tighten CLAUDE.md or AGENTS.md, audit instruction files, or says their constitution is bloated, messy, or hard to read. Fact or guard changes belong to update-instructions; first-time bootstrap belongs to setup-instructions.",
+      "source_sha256": "fc2255402d81e65ea2797d84f2ffb73b613ada6240825154dd8edcb697f5f622",
+      "source_path": "skills/improve-instructions/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f7654ff251b3c9053d9666bac8b55959422e12a45436a87d9b874dab74eeb0e": {
+      "description_zh": "按可衡量标准优化已有技能篇幅、格式、措辞及已诊断的触发不足，支持自动说明优化循环；行为变更或超篇幅重构分别用其他技能。",
+      "source": "Raise an existing skill's quality against a measurable criterion WITHOUT changing its intended behavior. Use when the user asks to debloat, tighten, shorten, or clean up a skill, fix its formatting or wording, rewrite a description already diagnosed as under-triggering (diagnosing why belongs to review-skill), or run the automated description-optimization loop. Behavior changes belong to update-skill; skills over their size budget belong to restructure-skill.",
+      "source_sha256": "2f7654ff251b3c9053d9666bac8b55959422e12a45436a87d9b874dab74eeb0e",
+      "source_path": "skills/improve-skill/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19a40ee0696bb5c06d6895b46ff2632b71afb81317faa0429569e78726d750d2": {
+      "description_zh": "重组技能架构，拆分、合并重叠技能或在SKILL.md、参考和脚本间移动内容，处理篇幅超限、触发碰撞及加载层次不当。",
+      "source": "Reorganize skill architecture — split one skill into several, merge overlapping skills, or move content between SKILL.md, references, and scripts. Use when a skill exceeds its size budgets, when skills overlap or their descriptions collide, when content sits at the wrong loading level, or when the user asks to split, merge, rename, or reorganize skills. Content edits within one healthy skill belong to update-skill or improve-skill.",
+      "source_sha256": "19a40ee0696bb5c06d6895b46ff2632b71afb81317faa0429569e78726d750d2",
+      "source_path": "skills/restructure-skill/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8ead54c751231db0747561e00921abbe2c811d3c8bca80ce9654abb5532989f": {
+      "description_zh": "安全删除、弃用或归档已有Claude Code子智能体；仅存在于插件缓存的随包智能体，原说明要求报告后停止。",
+      "source": "Safely delete, deprecate, or archive an existing Claude Code subagent. Use when the user asks to remove, delete, retire, or uninstall an agent, says an agent is superseded or unused, or wants to clean up unused agents. Not for plugin-shipped agents living only in the plugin cache — this reports and stops for those.",
+      "source_sha256": "d8ead54c751231db0747561e00921abbe2c811d3c8bca80ce9654abb5532989f",
+      "source_path": "skills/retire-agent/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb5a3a3c236c99c7b5d94c1e867314fa7e689c529b6d6974ac274a108c2da1df": {
+      "description_zh": "删除、弃用或归档已有智能体技能，用于被替代、过时、废弃或未使用技能清理。",
+      "source": "Safely delete, deprecate, or archive an existing Agent Skill. Use when the user asks to remove, delete, retire, uninstall, or archive a skill, when a skill is superseded, obsolete, or abandoned, or when cleaning up unused skills.",
+      "source_sha256": "eb5a3a3c236c99c7b5d94c1e867314fa7e689c529b6d6974ac274a108c2da1df",
+      "source_path": "skills/retire-skill/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58afd746361c865e1e01643bb12bef099d1061bc41498897574c847c8c318fc1": {
+      "description_zh": "只读审计已有Claude Code子智能体，诊断未被选中委派、工具列表及交付质量，不直接修改；修复交由更新或优化技能。",
+      "source": "Read-only audit of an existing Claude Code subagent — never modifies it. Use when the user asks to review, check, or audit an agent, asks why an agent isn't getting picked or delegated to, wants its tool list checked, or wants a second opinion on an agent before shipping it. Not for applying fixes — route those to update-agent or improve-agent.",
+      "source_sha256": "58afd746361c865e1e01643bb12bef099d1061bc41498897574c847c8c318fc1",
+      "source_path": "skills/review-agent/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aca5dca5e66796dec06fc7d80914cf5d1f07050347c07ffe0b7355bd6b5ab59b": {
+      "description_zh": "只读审计Claude Code Hook配置和脚本，诊断未触发、未阻止调用及安全正确性，不负责编写修复。",
+      "source": "Read-only audit of Claude Code hook configuration and scripts — never modifies them. Use when the user asks to review or audit hooks, asks why a hook didn't fire or didn't block a tool call, or asks whether a hook is safe or correct. Not for authoring or fixing a hook.",
+      "source_sha256": "aca5dca5e66796dec06fc7d80914cf5d1f07050347c07ffe0b7355bd6b5ab59b",
+      "source_path": "skills/review-hook/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a064dbcfba59f29ddb9f56bf697e72158256aaac0dd0aead726d5dd68e5c39ae": {
+      "description_zh": "只读审查AGENTS.md、CLAUDE.md和规则，逐项对照实际代码核验事实，发现过时错误、跨文件矛盾和冗余，修复及初始化使用对应技能。",
+      "source": "Read-only audit of a project's instruction files (AGENTS.md, CLAUDE.md, .claude/rules) — never edits them. Use to review, check, audit, or diagnose instruction files, verify every documented claim against the actual codebase, find stale or wrong facts, spot cross-file contradictions or bloat, or get a quality report before deciding what to change. Not for applying fixes (update-instructions / improve-instructions) or first-time bootstrap (setup-instructions).",
+      "source_sha256": "a064dbcfba59f29ddb9f56bf697e72158256aaac0dd0aead726d5dd68e5c39ae",
+      "source_path": "skills/review-instructions/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70d612e94c89bd5117b86695bdf6b8e92415560a10d4be421124ed3b59238ff4": {
+      "description_zh": "只读评审、评分或诊断已有技能，检查未触发和行为异常，形成发布或共享前质量报告，不直接修改受审技能。",
+      "source": "Read-only audit of an existing Agent Skill — it never modifies the skill under review. Use when the user asks to review, check, grade, audit, or diagnose a skill, asks why a skill isn't triggering or is misbehaving, wants a quality report before deciding what to do, or wants a second opinion on a skill before shipping or sharing it.",
+      "source_sha256": "70d612e94c89bd5117b86695bdf6b8e92415560a10d4be421124ed3b59238ff4",
+      "source_path": "skills/review-skill/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e45fc11bb28e7c65be818939e932ad61af75e764e26b70253c0e56c5c6692e2": {
+      "description_zh": "按用户调用，依据全部已安装技能与真实代码重新生成顶层AGENTS.md及路径规则布局，连接适用技能、移除不适用项并核验主张；用户路线图和随手笔记仅报告候选，不改写。",
+      "source": "User-invoked pass that re-derives a project's Claude-native instruction layout — a surface AGENTS.md plus path-scoped .claude/rules/ — as a projection of the installed skill set and the actual codebase. Enumerates every available skill, maps which applies to which path (wiring unwired-but-needed ones, dropping inapplicable ones), grounds every claim against the code, discloses only non-code-recoverable info per path, and drops the inert references/ layer. Read-only toward user-owned notes (roadmaps, scratchpads) — it reports promotion candidates, never rewrites them. Invoke as /meta-dev:revise-agents-md.",
+      "source_sha256": "3e45fc11bb28e7c65be818939e932ad61af75e764e26b70253c0e56c5c6692e2",
+      "source_path": "skills/revise-agents-md/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "843a4b1b346640e5a164b2961bbe419059b6781379e4db52e218b281ec66353e": {
+      "description_zh": "搭建新的Claude Code插件并连接技能、智能体或Hook，使工作流可安装共享；已有插件审计使用validate-plugin。",
+      "source": "Scaffold a new Claude Code plugin and wire its components. Use when the user asks to create or scaffold a plugin, package skills, agents, or hooks as a plugin, or make a workflow installable/shareable. Not for auditing an existing plugin — route that to validate-plugin.",
+      "source_sha256": "843a4b1b346640e5a164b2961bbe419059b6781379e4db52e218b281ec66353e",
+      "source_path": "skills/scaffold-plugin/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a150b1a2d13d1905bbf73b93a8169ab871900b046017e73feae38e8ed8a3559": {
+      "description_zh": "从已安装技能与实际代码首次建立项目顶层AGENTS.md及路径规则；已有内容修改、精简或整布局重建分别使用其他技能。",
+      "source": "Bootstrap a project's instruction files from scratch — a surface AGENTS.md plus path-scoped .claude/rules/ derived from the installed skills and the actual code. Use when the user asks to set up CLAUDE.md/AGENTS.md, bootstrap instruction files or project memory, or initialize the layout for a repo that has none. Not for editing an existing layout's content (update-instructions), tightening one already in place (improve-instructions), or re-deriving the whole layout of a repo that already has one (revise-agents-md).",
+      "source_sha256": "9a150b1a2d13d1905bbf73b93a8169ab871900b046017e73feae38e8ed8a3559",
+      "source_path": "skills/setup-instructions/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6430a334d5b8197cd544e337c48cc3ffb182d3fdf97440b8405ba2688ae0e1c3": {
+      "description_zh": "作为全部技能工作的入口，路由创建、编辑、扩展、精简、重构、审计和移除，适用于操作不清、混合或跨多项技能的请求。",
+      "source": "Entry point and router for ALL work on Agent Skills. Use whenever the user wants anything done to a skill — make, build, edit, extend, tighten, reorganize, audit, or remove one — especially when the operation is unclear, mixed, or spans several, or when the user invokes skill-creation by name.",
+      "source_sha256": "6430a334d5b8197cd544e337c48cc3ffb182d3fdf97440b8405ba2688ae0e1c3",
+      "source_path": "skills/skill-creation/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c641c987d9be91f4ef5fe4bd51e98f9ecd702c91617e608c9805766190b17f1": {
+      "description_zh": "按需对照当前官方Claude Code文档核查meta-dev标准与生命周期变化，并通过更新流程处理偏差。",
+      "source": "On-demand currency check: diffs meta-dev''s standards and lifecycles against current official Claude Code docs and routes drift through the update lifecycles.",
+      "source_sha256": "5c641c987d9be91f4ef5fe4bd51e98f9ecd702c91617e608c9805766190b17f1",
+      "source_path": "skills/sync-docs/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74bacdee7662ce0c41580dbdcd650d7fb198c687036bcd3dcc4706d22a01fa4c": {
+      "description_zh": "按新需求修改已有智能体行为，包括提示、工具、模型和预载技能；仅质量清理、只读审计及删除分别使用其他技能。",
+      "source": "Change an existing agent's behavior — its prompt, tools, model, or preloaded skills — for new requirements. Use for \"update/extend agent X\", \"give the agent tool Y\", \"change what the reviewer agent does\". Not for quality-only cleanup with unchanged behavior (improve-agent), read-only auditing (review-agent), or deleting/deprecating an agent (retire-agent).",
+      "source_sha256": "74bacdee7662ce0c41580dbdcd650d7fb198c687036bcd3dcc4706d22a01fa4c",
+      "source_path": "skills/update-agent/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78ce4fe599a06e8f17287b531c46ee5f23089f272800d139a627967ab0532609": {
+      "description_zh": "修改AGENTS.md、CLAUDE.md和路径规则中的事实、技能或内容，并在作用范围扩张时拆分或重定规则；初始化、仅精简和整布局重建另行处理。",
+      "source": "Change a project's instruction-file content — AGENTS.md, CLAUDE.md, and .claude/rules/ — and re-scope a rule when its area outgrows it. Use for \"add/change X in AGENTS.md\", \"update a rule's skills or facts\", \"the stack table is out of date\", \"split the app rule\". Not for quality-only cleanup with unchanged facts (improve-instructions), a fresh repo with no layout yet (setup-instructions), or a full re-derivation of the whole layout (revise-agents-md).",
+      "source_sha256": "78ce4fe599a06e8f17287b531c46ee5f23089f272800d139a627967ab0532609",
+      "source_path": "skills/update-instructions/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23e60be77cff30ffe7c4cc89076639e7bf719a42ab14cecf110a93e3d0de2b3b": {
+      "description_zh": "扩展或改变已有技能行为以涵盖新功能、用例或知识；行为不变的优化及跨技能文件重组分别使用其他技能。",
+      "source": "Extend or change an EXISTING skill's behavior to meet new requirements. Use when the user asks to add functionality, cover a new case, change what a skill does, or fold new knowledge into a skill — any behavioral edit. Not for quality-only cleanups with unchanged behavior (improve-skill) and not for reorganizing files across skills (restructure-skill).",
+      "source_sha256": "23e60be77cff30ffe7c4cc89076639e7bf719a42ab14cecf110a93e3d0de2b3b",
+      "source_path": "skills/update-skill/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "efe9726a213621fa2d4ce6a4f8b3a3b7fe776d4730917592ac8b596d0e479ec2": {
+      "description_zh": "只读验证审计Claude Code插件或市场，检查加载失败、清单和发布就绪状态，不修改检查对象。",
+      "source": "Read-only validation and audit of a Claude Code plugin or marketplace — never modifies what it inspects. Use when the user asks to validate a plugin or marketplace, wonders why a plugin won't load, wants the manifest checked, or asks if a plugin is ready to publish.",
+      "source_sha256": "efe9726a213621fa2d4ce6a4f8b3a3b7fe776d4730917592ac8b596d0e479ec2",
+      "source_path": "skills/validate-plugin/SKILL.md",
+      "package_sha256": "cb8647b663fc0811bd2fa4a33d2bb441783b55f697f48d3bb60e23e15e19b6fa",
+      "source_package": "meta-dev-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98fea26ef9e4762c2d39e17b4f981390027796f33a55bedbfd24a40dc14495a4": {
+      "description_zh": "检查订单行ATP或CTP可承诺性，以现存库存扣除占用并加在途量对照需求，查看下个可生产时段，计算最早交期；在承诺权限内确认同步报价或升级例外。",
+      "source": "Available- / capable-to-promise (ATP / CTP) feasibility check (uc-deliver-atp-ctp) - nets available inventory (on-hand minus all claims) plus in-transit against an order line, checks the next capable build slot (CTP) in planning, computes the honest earliest date, and within promise limits confirms and syncs it to the quote or escalates the exception. Use when an inbound order or quote line needs a promise date, a configure-to-order / CTO line is short on stock, sales wants a delivery date inside a live quote, on-hand covers only part of the ask, the words ATP / available-to-promise / ATC / available-to-commit, capable-to-promise / CTP against a build slot, split-ship vs push the full date, over-promise, promise-vs-actual, or order promising against Kinaxis / o9 / IBP planning and a Manhattan OMS.",
+      "source_sha256": "98fea26ef9e4762c2d39e17b4f981390027796f33a55bedbfd24a40dc14495a4",
+      "source_path": "skills/business-workflows/atp-ctp-check/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f1e88b3a1b82aac292f698e14643768eee232d3a919630b713cc1afc50af13c": {
+      "description_zh": "将单项供应商EDI 855交期延误经MRP追踪至生产工单和客户承诺，按周与客户量化影响，比较重排、加急、双来源、拆分或吸收成本供采购批准。",
+      "source": "Take a single supplier confirmation slip (an EDI 855 order acknowledgment) on a PO, peg it forward through MRP to the affected production / work orders and customer commitments, size the downstream impact by week and by customer, and price the reschedule options (accept the slip and re-time the build, expedite or dual-source an alternate, split, escalate a pull-in, or hold and absorb) for a buyer to approve. Use when an EDI 855 or supplier-portal acknowledgment confirms a PO date later than promised (a lead-time slip), when a confirmed date lands past its committed need date, when someone asks which work orders or customer commits move, whether to dual-source or re-time or absorb, or mentions uc-resched-slip, confirmation slip, PO date change, schedule-line confirmation, MRP pegging, reschedule-in / reschedule-out, expedite spend, over-expediting, penalty commit, or a slipped critical component.",
+      "source_sha256": "6f1e88b3a1b82aac292f698e14643768eee232d3a919630b713cc1afc50af13c",
+      "source_path": "skills/business-workflows/confirmation-slip-reschedule/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd4609f4e53944d44d0d3862f9aa8049caba1fd546656f25a3703ab043a701ad": {
+      "description_zh": "分析同商品多家独立供应商集中延迟与涨价是否构成市场挤压，衡量全部开放PO和生产敞口，比较提前采购、替代资格与重排方案，准备多PO采购行动；单项延误用对应技能。",
+      "source": "Correlated multi-supplier slip and market-squeeze response (uc-resched-correlated) - two or more independent suppliers confirm later dates on the SAME commodity within days during an industry-wide uptick; read together it is a squeeze building, not two isolated blips. Size the category exposure across every open PO and build, decide squeeze vs coincidence, and price a forward-buy vs qualifying an alternate or re-timing builds, then stage the multi-PO action for sourcing. Use when several confirmation slips cluster on one commodity, a commodity price is climbing, someone asks whether to forward-buy or lock coverage, whether two slips are a pattern or coincidence, which SKUs to protect first, or mentions market squeeze, correlated slip, commodity inflation, forward buy, category exposure, panel or component shortage, allocation, or working-capital lock-up. For a single slip on one PO, use confirmation-slip-reschedule.",
+      "source_sha256": "cd4609f4e53944d44d0d3862f9aa8049caba1fd546656f25a3703ab043a701ad",
+      "source_path": "skills/business-workflows/correlated-supplier-slip/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5b9b07e27a08349284d1a48427b38e93e48769dd343f26f1439c29ed60f749d": {
+      "description_zh": "对当日出库订单做HS或ECCN分类与拒绝交易方、制裁筛查，区分权限内常规放行与命中、受控或低置信行，将异常交指定贸易合规人员逐行决定放行、扣留或升级。",
+      "source": "Export-control classification (HS/ECCN) and denied-party/sanctions screening of the day's outbound order lines, separating the routine bulk that auto-clears within limits from the hits, controlled parts, and low-confidence lines a named trade-compliance officer must adjudicate (uc-strat-customs-screening). Use when the day's outbound orders need HS/ECCN classification and denied-party/sanctions screening before release, a fuzzy name match hits an SDN/OFAC or BIS Entity/Denied-Persons list, a low-confidence ECCN sits on a controlled assembly, alert fatigue could bury the one real hit, someone must decide clear/hold/escalate per line, or the user mentions denied-party screening, SPL/RPS/DPS, sanctioned party list, SDN match, HS/ECCN classification, ITAR/EAR/USML controlled part, export license, deemed export, or a customs release hold across SAP GTS, Descartes, e2open, or ONESOURCE.",
+      "source_sha256": "b5b9b07e27a08349284d1a48427b38e93e48769dd343f26f1439c29ed60f749d",
+      "source_path": "skills/business-workflows/customs-screen-shipment/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4817b2cd774ce079b5372daebf560c01eaf40d75f62d20120d9a36343ddfd61a": {
+      "description_zh": "对日常循环盘点和系统库存差异分流，区分容差噪声与实质偏差、追踪原因并量化ATP影响，在设定限额内自动调整或安排复点、升级及冻结可用量。",
+      "source": "Triage a day's cycle-count discrepancies against system on-hand - split tolerance noise from real variance, trace each material gap to a likely cause, size it by available-to-promise impact, then auto-post within a set limit, recount, or escalate and hold availability. Use when daily cycle counts or a physical inventory disagree with WMS or ERP on-hand, when a count discrepancy list needs triage, when deciding auto-adjust vs recount vs escalate, or on mention of cycle count variance, inventory adjustment, tolerance calibration, on-hand mismatch, short-pick or mis-put, phantom inventory, ATP corruption, a Manhattan cycle count, or an SAP physical-inventory count difference (use case uc-inv-health-cyclecount).",
+      "source_sha256": "4817b2cd774ce079b5372daebf560c01eaf40d75f62d20120d9a36343ddfd61a",
+      "source_path": "skills/business-workflows/cycle-count-triage/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "276e4ceef8886cbf42b23eb7a3644378df7ebf4f0ccd8d46a0fe3b9df33ba87c": {
+      "description_zh": "在出库波次截止前将紧缺配送中心库存分配给门店和直接客户，按库存天数、促销陈列、失销与SLA风险排序，比价三种分配，经批准写入WMS并更新部署计划。",
+      "source": "Split scarce DC stock across stores and direct-customer orders under an outbound wave clock - size the shortfall against available-to-deploy, rank nodes by days-of-supply, promo/planogram priority, lost-sale risk and SLA exposure, price three deployment splits, and on approval write the allocation to the WMS wave and update the deployment plan (use-case uc-inv-deploy-allocation). Use when overnight replenishment shows DC on-hand covering less than the network pull for a fast-mover, stores plus open customer orders exceed available-to-deploy, a promo or planogram store risks going short on a flat fair-share split, or the user mentions scarce stock allocation, deployment split, DC-to-store allocation, days-of-supply, protect the promo node, demand-weighted vs fair-share, outbound wave cut-off, or which stores get the units before the trucks load.",
+      "source_sha256": "276e4ceef8886cbf42b23eb7a3644378df7ebf4f0ccd8d46a0fe3b9df33ba87c",
+      "source_path": "skills/business-workflows/dc-stock-split/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af85247a2330b9b31a58c18a127cff33b1a548dbe1b8027556cd359086975b2f": {
+      "description_zh": "共享组件或产线无法覆盖SKU家族总需求时，追踪MRP关联并按收入、服务和罚款影响排序，比较重分配、提前延后、加急与安全库存消耗，形成可解释供给分配。",
+      "source": "Demand-supply rebalance across a SKU family when a shared constraint (a component or a line) cannot cover total demand - trace the peg per SKU across the horizon, rank the gaps by revenue / service / penalty impact, and price the rebalancing moves (reallocate, pull-in, push-out, expedite, safety-stock draw-down) into a defensible split. Use when the weekly supply plan flags a shared constraint pegged across many SKUs, a single- or limited-source component starves a whole family, high-margin and strategic-customer SKUs compete for the same short supply, or someone asks how to split constrained supply, avoid a naive pro-rata / fair-share, decide which customer commits hold vs slip, or whether to expedite vs reallocate. Covers allocation, constrained master plan, MRP peg, coverage, penalty clause, air-freight premium; plan lives in Kinaxis / SAP IBP / o9 / Blue Yonder. Use-case uc-plan-ds-rebalance.",
+      "source_sha256": "af85247a2330b9b31a58c18a127cff33b1a548dbe1b8027556cd359086975b2f",
+      "source_path": "skills/business-workflows/demand-supply-rebalance/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84641d27c04c844e233a63e742e6d792d0c9a3f8f15819b540b89c4174e0b465": {
+      "description_zh": "对比加急运费与交付延误的OTIF罚款、零售扣款和失销敞口，结合TMS、合同条款、ETA、客户优先级及费率，建议加急、部分加急或吸收延误。",
+      "source": "Expedite-or-absorb - price the transport expedite premium against the OTIF penalty, retailer chargeback, and lost-sale exposure of letting a committed shipment slip, then recommend expedite, partial-expedite, or absorb. Use when a shipment is tracking late against its committed OTIF / delivery window, a carrier ETA breaches the OTIF buffer, a top account risks a late delivery, someone asks whether to pay premium freight / air / team-drive / expedited mode or eat the miss, or the words expedite vs absorb, premium freight, OTIF penalty, chargeback, TONU, service-level miss, late shipment, at-risk load, or should we expedite come up. Covers uc-deliver-expedite - the high-frequency expedite-vs-absorb call across TMS (Oracle OTM, SAP TM), CLM (Icertis) penalty terms, carrier ETA feeds, CRM account priority, and premium-mode rates.",
+      "source_sha256": "84641d27c04c844e233a63e742e6d792d0c9a3f8f15819b540b89c4174e0b465",
+      "source_path": "skills/business-workflows/expedite-or-absorb/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3fb9be1a31473012edab0f6af50c3f5f9e16905d451d6fd2648f5fdaf4c9ef04": {
+      "description_zh": "对照客户EDI 830或门户预测、内部统计预测与共识计划，量化增幅并分解偏差、证据支持的新需求和一次性噪声，给信号加权，在承诺供给前建议接受、减弱或暂缓。",
+      "source": "Reconciles a customer's committed/planned forecast (EDI 830 or supplier portal) against the internal statistical forecast and the consensus plan, quantifies the step-up, decomposes it into bias, corroborated new-demand, and one-off noise, weights the signal, and recommends accept / dampen / hold before any supply is committed. Use when a key customer's 830 or portal forecast jumps and POS sell-through or the sales account view stays flat, or the user mentions customer forecast reconciliation, EDI 830 / 862 release, a planning-schedule step-up, consensus demand vs customer signal, forecast bias weighting, phantom demand, chasing a customer step-up, signal vs noise, or expedite risk from a forecast spike.",
+      "source_sha256": "3fb9be1a31473012edab0f6af50c3f5f9e16905d451d6fd2648f5fdaf4c9ef04",
+      "source_path": "skills/business-workflows/forecast-reconciliation/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe1f897ee807bb301e81f289fdf1de84aa1176705432952a1f2654512f579cd1": {
+      "description_zh": "在服务达标而库存天数持续增长时优化多级安全库存位置，按SKU与区域重估波动、提前期、需求相关性和集中风险共担，比较持有及服务成本，准备释放营运资金的库存目标调整。",
+      "source": "Multi-echelon safety-stock positioning - decide WHERE across the network safety stock should sit (central/upstream DC vs forward-deployed stocking points) when service holds but days-of-inventory keeps climbing. Re-segments demand variability per SKU-region, computes the per-node service-vs-holding tradeoff (demand std over lead time, the risk-pooling benefit of centralizing vs decentralizing given demand correlation, cost-to-serve), prices a re-position on freed working capital vs service risk, and stages target changes plus re-position tasks for the inventory network lead (use-case uc-strat-inv-positioning). Use when fill rate is at target but days-of-inventory climbed for months, working capital is trapped in the wrong echelon, the demand-variability profile shifted by channel (e-comm vs store), or the user mentions multi-echelon inventory optimization, MEIO, safety-stock re-cut, inventory positioning, risk pooling, where to hold safety stock, or push stock upstream vs forward-deploy.",
+      "source_sha256": "fe1f897ee807bb301e81f289fdf1de84aa1176705432952a1f2654512f579cd1",
+      "source_path": "skills/business-workflows/inventory-positioning/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "008005fc9cda7c454e18a094aa1185df2583873e950bd769130bc8c3ae2b14c4": {
+      "description_zh": "逐行核对被阻止的供应商发票、PO、收货与合同价格，将差异拆成单价、数量或收货时点，分类多收、短发、收货错误或合法调价，付款前建议少付、争议或全付。",
+      "source": "Invoice 3-way match exception - reconcile a blocked supplier invoice against the PO, the goods receipt, and the governing contract price line by line, split the gap into unit-price variance vs quantity variance vs receipt-timing, classify the cause (price overbill, short-ship, receiving error, or a legitimate price change), and recommend short-pay, dispute, or pay-in-full before the payment run. Use when an invoice fails the automated three-way match on a price or quantity variance, a blocked / parked invoice sits in an AP or procurement exception queue ahead of the payment run, an invoice does not agree with its PO or goods receipt, someone asks whether to pay, short-pay, or dispute a supplier overbill, or the words 3-way match, price variance, quantity variance, GR/IR, MIRO block, invoice tolerance, short-pay, chargeback recovery, or contract price come up. Covers uc-source-3way-match across SAP/ERP (PO + invoice), WMS goods receipt, and CLM price terms.",
+      "source_sha256": "008005fc9cda7c454e18a094aa1185df2583873e950bd769130bc8c3ae2b14c4",
+      "source_path": "skills/business-workflows/invoice-3way-match/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6240df68378147899cf1cd37c380f7282e6680fea359ec54585385799407bc0b": {
+      "description_zh": "生产线停机时诊断设备、缺件或质量约束，比较就地修理、改线改厂重排、备件横向调拨和加急，按恢复时长、报废闲置与履约敞口定价并协调事故任务。",
+      "source": "Line-down war room - from a stopped production line, diagnose the constraint (equipment fault, missing part, material/quality hold), find the fastest restart path (repair in place, reroute or resequence to another line/plant, lateral-transfer the nearest spare, expedite the part), price each path by hours-to-restart against the scrap-and-idle burn plus missed-commitment exposure, and orchestrate the war-room task fan-out on an incident bridge. Use when a line or critical asset trips or stops, an MES downtime code fires (E-45, a press or stamping line down on the night shift), commitments run through the stopped line, someone asks how do we restart, repair vs reroute vs hold, which orders resequence, is there a spare, can we expedite the part, or mentions line down, line-down, war room, incident bridge, plant-floor crisis, scrap and idle burn, hours to restart, lateral transfer, alternate line, changeover, resequence production orders, CMMS history, or uc-risk-linedown-warroom.",
+      "source_sha256": "6240df68378147899cf1cd37c380f7282e6680fea359ec54585385799407bc0b",
+      "source_path": "skills/business-workflows/linedown-warroom/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95e57eb968b466de635180d97e55e8e4658e3dccc758f77131e0db7ad31c55e9": {
+      "description_zh": "来料或在制批次检验不合格后，处理质量冻结及处置选择，比较照用、返工、报废、退供应商或材料评审委员会升级，形成可审计理由并考虑已消耗批次及CAPA。",
+      "source": "Nonconformance to hold and disposition (uc-make-ncr-disposition) - a lot fails incoming or in-process inspection, auto-holds, and must be dispositioned use-as-is, rework, scrap, return-to-vendor, or escalated to the material review board, with an audit-ready justification. Use when a LIMS or QM inspection posts an OOS or out-of-tolerance result, a nonconformance (NCR) blocks lot release or a build, stock sits on quality hold or in quality-inspection (QI) stock, someone must weigh a disposition against quality, cost, and schedule, downstream WIP already consumed the lot, or a recurring defect may warrant a CAPA; triggers on NCR, MRB, material review board, OOS investigation, disposition, use-as-is, deviation, concession, quarantine, quality hold, scrap-vs-rework, or return-to-supplier.",
+      "source_sha256": "95e57eb968b466de635180d97e55e8e4658e3dccc758f77131e0db7ad31c55e9",
+      "source_path": "skills/business-workflows/nonconformance-disposition/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "377ad20c6d830b1a2719c21e41f943da20e063bf48439f97cf132b0da4c16afd": {
+      "description_zh": "针对确认缺陷或污染批次执行召回，沿批次谱系追踪配送中心、客户、货架和在途出口，隔离库存、建立逆向拉回订单、按期限通知并记录完成与有效性。",
+      "source": "Recall execution and field pull (uc-return-recall-execution) - a defect or contamination is confirmed on specific lots, and every downstream location holding affected product must be traced, quarantined, and pulled from the field on a regulator clock with a provably complete trail. Use when a LIMS/QMS confirms a defect or contamination on specific lots/batches, a product recall / field action / withdrawal is called, affected lots must be traced forward through genealogy to every DC, customer site, retail shelf, or in-transit export, stock must be quarantined and reverse-logistics pull orders raised, regulators and customers notified on a clock, or someone scopes a recall (lots, date range, batches) and tracks completion and effectiveness; triggers on recall, field action, field pull, market withdrawal, lot genealogy, forward trace, where-distributed, batch recall, reverse logistics, quarantine hold, recall register, FDA recall class, reportable food, or recall effectiveness check.",
+      "source_sha256": "377ad20c6d830b1a2719c21e41f943da20e063bf48439f97cf132b0da4c16afd",
+      "source_path": "skills/business-workflows/recall-execution/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21da25c646feff441870cc2ad2629677567138df0d935e697bdcae0fcef8317a": {
+      "description_zh": "将RFx报价统一为落地价、运费税费、付款资金成本、劣质成本和可定价风险的TCO，按锁定权重评价价格质量交付风险可持续性，形成单一或拆分授标建议。",
+      "source": "Supplier selection and RFx scoring - normalize bids to a like-for-like total-cost-of-ownership basis (landed price + freight/duty + payment-terms cost-of-cash + cost of poor quality + priceable risk), score a weighted scorecard (price, quality, delivery, risk, sustainability) on locked weights, rank, and stage a defensible, audit-ready award recommendation (single or split). Use when an RFx / RFP / RFQ / reverse auction closes and bids must be leveled and awarded before the incumbent lapses, when quotes arrive in mixed incoterms / currencies / terms that resist apples-to-apples comparison, when the cheapest quote hides weak quality or thin financials, or someone asks who to award or whether to split to keep a second source; also bid leveling, weighted scorecard, TCO normalization, should-cost, save on price, low bid, single vs dual source. Covers uc-source-rfx-scoring across sourcing suites (SAP Ariba, Jaggaer, Ivalua, GEP, Coupa), ERP spend (SAP MM), and risk feeds (Everstream, Resilinc).",
+      "source_sha256": "21da25c646feff441870cc2ad2629677567138df0d935e697bdcae0fcef8317a",
+      "source_path": "skills/business-workflows/rfx-scoring/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7aa98b4b780145bba1624af36fd481d5569af989c35d83478940845be16e0c2": {
+      "description_zh": "沿多级BOM将上游次级供应商短缺追踪到零件、成品与客户承诺，按周量化收入风险，比较提前采购、缓冲、替代资格、双来源、加急和重分配；原说明仅建议，须人工批准。",
+      "source": "Trace a supply shortage that starts N tiers up (a tier-3 sub-supplier or raw-material event) down your multi-level BOM to the affected parts, finished SKUs, and customer commits; size the exposure by week and revenue-at-risk; and assemble priced mitigation options (pre-buy or buffer, qualify an alternate sub-source, dual-source, expedite, reallocate) for a human to approve. Advise-only, no autonomous action. Use when a tier-N risk feed (Everstream, Resilinc, Interos) flags a sub-tier fire, force majeure, allocation, or shutdown that no tier-1 has confirmed and it is not yet in the PO book; when someone asks which of our products depend on this node, how much revenue is at risk, or whether to pre-empt now or wait for tier-1 confirmation; or mentions tier-3 shortage, sub-tier pegging, multi-level BOM where-used, n-tier exposure, uc-net-subtier-shortage, revenue-at-risk, penalty commit, or pre-buy vs wait.",
+      "source_sha256": "a7aa98b4b780145bba1624af36fd481d5569af989c35d83478940845be16e0c2",
+      "source_path": "skills/business-workflows/subtier-shortage/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b32649610c64203635b6c9bad65a81d83d73e2c03065b0a1cec6989d9c83c9a": {
+      "description_zh": "在连接供应链系统下单、取消、库存预测调整、供应商变更、会计入账或外发数据前，说明客户自治等级及行为，并准备受控行动供批准。",
+      "source": "Use BEFORE taking any action on a connected supply-chain system (create/submit/cancel a PO or order, adjust inventory or a forecast, switch or update a supplier, post to an accounting period, send data outside the company). Explains the customer's autonomy dial, how each level behaves, and how to present a gated action for approval. Triggers on - place order, submit/cancel PO, reorder, replenish, adjust stock, switch supplier, expedite, \"just do it\", \"approve this\", \"skip approval\", \"the CFO said\".",
+      "source_sha256": "4b32649610c64203635b6c9bad65a81d83d73e2c03065b0a1cec6989d9c83c9a",
+      "source_path": "skills/gating/supply-chain-gating/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ea57b92ff47c95532fc42abc3d81d88ccb85bee4ace846ed51ac909d02bab79": {
+      "description_zh": "操作DocuSign电子签署与CLM，覆盖信封状态、收件人认证和顺序、签署字段锚定、纠正作废、完成证书、模板批量发送及合同生成、条款、仓库和义务。",
+      "source": "DocuSign eSignature and CLM - safe operation of the e-signature engine and the DocuSign contract lifecycle - envelopes and their states (created, sent, delivered, signed, completed, declined, voided), recipients and signing/routing order, recipient authentication (access code, SMS, KBA, ID Verification), tabs and anchor tagging, correcting or voiding an envelope, the Certificate of Completion, templates, PowerForms and bulk send, plus DocuSign CLM (contract generation, workflow, clause library, repository, obligations). Use when the signing platform is DocuSign, or the user names an envelope, sending for signature, a signer or CC or certified-delivery recipient, routing/signing order, sequential vs parallel signing, access code or SMS or KBA or IDV auth, a signature or date-signed tab, anchor tagging or AutoPlace, a declined or completed or voided envelope, the Certificate of Completion, an authoritative copy, a template or PowerForm or bulk send, or DocuSign CLM (formerly SpringCM).",
+      "source_sha256": "2ea57b92ff47c95532fc42abc3d81d88ccb85bee4ace846ed51ac909d02bab79",
+      "source_path": "skills/platforms/contracts/docusign-clm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4971e9744b15cdbebd7615b0b6ba665eefd40b2f85179a82521d87fc3737b948": {
+      "description_zh": "操作Icertis合同生命周期，覆盖请求、模板条款、谈判修订、偏差批准、授权签署、电子执行、义务里程碑、变更续约终止及DiscoverAI导入。",
+      "source": "Icertis Contract Intelligence (ICI) - safe operation of contract lifecycle management: contract requests, authoring from templates and the clause library, negotiation and redlining, deviation approvals, delegation-of-authority sign-off, e-signature and execution, obligation and milestone management, amendments, renewals, and termination. Use when the connected CLM is Icertis (ICI), or the user names Icertis-specific things: an ICI agreement or contract record, the clause library or a fallback clause, a deviation or deviation approval, an association, DiscoverAI bulk import, or ICI for Word; and, once Icertis is the system in play, when they mention a template, an amendment or renewal, an auto-renewal or evergreen notice window, an obligation or commitment, third-party paper, a signature-authority matrix or DoA, sending a contract out for signature, or executing or terminating a contract.",
+      "source_sha256": "4971e9744b15cdbebd7615b0b6ba665eefd40b2f85179a82521d87fc3737b948",
+      "source_path": "skills/platforms/contracts/icertis/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "322823e06f51bcb8584123635860b35724147e5781d4e3bc2c549a59167bd7cf": {
+      "description_zh": "操作SAP Ariba Contracts合同请求与工作区、模板条款行项、审批谈判签署任务、DocuSign发送、发布变更、到期续约和履约累计。",
+      "source": "SAP Ariba Contracts (CLM within SAP Ariba) - safe operation of the contract lifecycle - contract requests and workspaces, authoring the main agreement from templates and the clause library, contract terms and line items, approval and signature tasks, e-signature via DocuSign, publishing and amendments, expiration and renewal, and compliance tracking. Use when the connected CLM is SAP Ariba Contracts, or the user names Ariba CLM things - a contract workspace (CW), contract terms or contract line items, a contract template, the clause library or a fallback or conditional clause, an assembled main agreement, a deviation report, a review or approval or negotiation or signature task, publishing or republishing a contract, an amendment type, a renewal or termination amendment, term type (fixed, auto renew, evergreen, perpetual), an expiration notification, a contract hierarchy or sub-agreement, contract compliance accumulators, or sending a contract to DocuSign for signature.",
+      "source_sha256": "322823e06f51bcb8584123635860b35724147e5781d4e3bc2c549a59167bd7cf",
+      "source_path": "skills/platforms/contracts/sap-ariba-clm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "521f56c71b9b1f01f57c24bfe0ac681ec901715ff5ea7d04741706ec4f69f1a3": {
+      "description_zh": "在Dataverse上的Dynamics 365 CRM管理账户、联系人、线索商机、报价订单发票、服务案例、活动工单、价格表、安全角色及自动化，涵盖批量修改与客户数据导出。",
+      "source": "Microsoft Dynamics 365 Customer Engagement (CE / CRM - Sales, Customer Service, Field Service) on Dataverse - safe operation of accounts, contacts, leads, opportunities, quotes, orders, invoices, cases (incidents), activities, price lists, work orders, security roles, business units, and plug-in / workflow / Power Automate automation. Use when the connected CRM is Microsoft Dynamics 365 or Dataverse, or the user mentions Dynamics CE or CRM, a Sales / Customer Service / Field Service record, qualifying or disqualifying a lead, an opportunity stage or business process flow (BPF), closing an opportunity won or lost, activating a quote, a sales order or invoice, resolving a case or incident, statecode or statuscode, a work order, a plug-in or real-time vs background workflow or Power Automate flow, a security role or business unit or access team, column (field-level) security, a price list (pricelevel), merging or bulk-updating or bulk-deleting records, or exporting customer PII.",
+      "source_sha256": "521f56c71b9b1f01f57c24bfe0ac681ec901715ff5ea7d04741706ec4f69f1a3",
+      "source_path": "skills/platforms/crm/dynamics-crm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5130004fc9c383442d0dc72c8af76d026af6ea4c3e949af9296358d755a097c": {
+      "description_zh": "在Salesforce Sales Cloud或Service Cloud管理线索客户商机、报价CPQ、订单案例、审批、Flow与触发器、价格表和共享权限，并处理批量操作与SOQL。",
+      "source": "Salesforce CRM (Sales Cloud / Service Cloud) - safe operation of leads, accounts, contacts, opportunities (stage, close date, forecast), quotes and CPQ, orders, cases, activities, approval processes, Flow/trigger automation, price books, and the sharing model (org-wide defaults, role hierarchy, profiles/permission sets). Use when the connected CRM is Salesforce, or the user mentions Salesforce, Sales Cloud, Service Cloud, a lead or lead conversion, an account/contact/opportunity, an opportunity stage or close date, pipeline or forecast, a quote or CPQ, an order or order activation, a case (escalate/close), an approval process or a locked record, a Flow, Process Builder, workflow rule, Apex trigger, a validation rule, a roll-up summary, org-wide defaults (OWD) / role hierarchy / sharing rule / profile / permission set / field-level security, a price book, merging accounts or contacts, a mass update / mass delete / Data Loader, SOQL, or exporting customer PII.",
+      "source_sha256": "a5130004fc9c383442d0dc72c8af76d026af6ea4c3e949af9296358d755a097c",
+      "source_path": "skills/platforms/crm/salesforce/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39332168b3b6aa914193729bfbd873af322b9fdf2f8c8f7ae1540d268270807e": {
+      "description_zh": "在Descartes全球贸易平台处理海关申报、电子舱单、受限交易方筛查、HS与出口管制分类、关税落地成本及MacroPoint货运可见性。",
+      "source": "Descartes Systems Group (Global Logistics Network / GLN) - safe operation of global trade and customs - customs filing and declarations (US ACE entry / AES EEI, Canada ACI, EU ICS2, ocean/air AMS, ISF 10+2, e-manifest), denied-party / restricted-party screening (Visual Compliance, MK Denied Party Screening; OFAC SDN, BIS Entity/Denied Persons/Unverified, EU/UN/UK), HS classification and export control (ECCN/USML) via CustomsInfo, duty/tariff and landed cost, plus MacroPoint freight visibility. Use when the connected trade/customs system is Descartes and the work touches a customs entry/declaration, an AES EEI / ITN, an ACE / ACI / ICS2 filing, an ISF, an e-manifest, a denied-party or restricted-party screening hit, releasing a shipment or party that failed screening, an ECCN/ITAR classification, an HS/HTS code, a duty/landed-cost calc, a PGA hold, liquidation, or MacroPoint tracking, or the user mentions Descartes, GLN, Visual Compliance, MK denied party, RPS, or a blocked filing.",
+      "source_sha256": "39332168b3b6aa914193729bfbd873af322b9fdf2f8c8f7ae1540d268270807e",
+      "source_path": "skills/platforms/customs/descartes/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef1e35f78c686ad679dc5227f43161a54d2448dbac6468152c984eae301d99a5": {
+      "description_zh": "在e2open或Amber Road全球贸易管理中处理HS与出口分类、受限交易方精确模糊匹配、许可制裁、海关落地成本及自贸原产地资格和供应商声明。",
+      "source": "e2open Global Trade Management (GTM, formerly Amber Road) - safe operation of cloud multi-enterprise trade compliance - HS and ECCN/USML classification, Restricted Party Screening (RPS) against denied-party lists (OFAC SDN, BIS Entity/Denied Persons/Unverified, EU/UN/UK) with exact + fuzzy matching, export license determination, embargo and sanctions checks, customs entry filing and landed cost, and FTA / preferential-origin qualification with supplier solicitation and certificate issuance, on the Global Knowledge content feed. Use when the connected trade system is e2open or Amber Road and the work touches an RPS / denied-party hit, releasing a shipment or party that failed screening, an ECCN/ITAR/EAR classification, license determination, a customs entry, landed cost, an FTA / preference / rules-of-origin / RVC qualification, a supplier declaration or LTVD, a certificate of origin, an FTZ or duty drawback, or the user mentions e2open, Amber Road, GTM, Global Knowledge, or RPS.",
+      "source_sha256": "ef1e35f78c686ad679dc5227f43161a54d2448dbac6468152c984eae301d99a5",
+      "source_path": "skills/platforms/customs/e2open-gts/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6dfdf090b4626f2872d1b935f89a055cc0a111dc0065880d2232341573d2d578": {
+      "description_zh": "在ONESOURCE Global Trade或Integration Point处理商品出口分类、拒绝交易方筛查、许可、自贸原产地证、外贸区、ACE与AES申报和关税落地成本。",
+      "source": "Thomson Reuters ONESOURCE Global Trade - safe operation of the content-led trade platform over one or many ERPs - HS and export (ECCN/USML) classification off the Global Trade Content database, restricted-party / Denied Party Screening (DPS) against OFAC SDN, BIS Entity/Denied Persons, EU/UN/UK lists, license determination, FTA / preference and origin qualification (supplier solicitation, rules of origin, certificates), Foreign-Trade Zone (FTZ) management, customs filing (ACE import entry, AES EEI / ITN export), and duty / landed-cost calc. Use when the connected trade system is ONESOURCE Global Trade (or Integration Point) and the work touches a Denied Party Screening / DPS hit, releasing a screening-blocked party or shipment, an ECCN/ITAR or HS/HTS classification, a license determination, an FTA / preference or certificate-of-origin solicitation, an FTZ admission / weekly entry, an ACE entry or AES filing, or the user mentions ONESOURCE, Global Classification, or DPS.",
+      "source_sha256": "6dfdf090b4626f2872d1b935f89a055cc0a111dc0065880d2232341573d2d578",
+      "source_path": "skills/platforms/customs/onesource-gts/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e948785320a03c24e40ec74653bf7c13625d9bc776c5642536118af7736a25c8": {
+      "description_zh": "在SAP GTS处理进口出口合规，覆盖HS与ECCN或USML分类、制裁方精确模糊筛查、禁运法律控制、许可额度、被阻止贸易文件、申报与优惠原产地。",
+      "source": "SAP GTS (Global Trade Services / GTS edition for HANA) - the safe operation of export and import trade compliance: HS and ECCN/USML classification, Sanctioned Party List (SPL) / denied-party screening with exact and fuzzy name matching (OFAC SDN, BIS Entity/Denied Persons, EU/UN/UK lists), embargo and legal-control checks, export license determination and depletion, blocked trade/customs documents, customs declarations, and preference/origin determination. Use when the connected trade system is SAP GTS and the work touches a compliance block, an SPL or SDN hit, releasing a blocked sales order or delivery, an ECCN/ITAR/EAR classification, license determination, an embargo or legal-control check, a customs declaration, or preference/origin, or the user mentions GTS, SPL screening, denied party, sanctioned party list, good-guy list, control class, EAR99, USML, deemed export, de-minimis, or a blocked export document.",
+      "source_sha256": "e948785320a03c24e40ec74653bf7c13625d9bc776c5642536118af7736a25c8",
+      "source_path": "skills/platforms/customs/sap-gts/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "706b37ae01a71fd6fd5dab389d64c6a13ba88df19700b2bea44219a46ace94b3": {
+      "description_zh": "在Dynamics 365 F&O或AX处理采购申请订单、确认变更、收货、供应商发票两方三方匹配、总账凭证、期间状态、库存结账成本、财务维度和编号。",
+      "source": "Microsoft Dynamics 365 Finance & Operations (F&O; lineage Dynamics AX) - safe operation of Procurement, product receipt, accounts payable and vendor invoice matching, general ledger, inventory, and Warehouse management (WHS): purchase requisitions and orders, PO confirmation and change management, product receipt posting, vendor invoice two- and three-way matching, subledger-to-GL vouchers, GL journals, fiscal and ledger calendar period status (Open / On hold / Closed / Permanently closed), inventory close and costing, item model group, financial dimensions, and number sequences. Use when the connected ERP is Dynamics 365 F&O, Supply Chain Management, or Finance (or Dynamics AX / AX 2012), or the work touches a PO confirmation, product receipt, packing slip, vendor invoice, a matching discrepancy or matching policy, a voucher, a general journal, a closed or on-hold period, an inventory close, financial dimensions, or a number sequence.",
+      "source_sha256": "706b37ae01a71fd6fd5dab389d64c6a13ba88df19700b2bea44219a46ace94b3",
+      "source_path": "skills/platforms/erp/dynamics365-fo/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "299277289a1775266e6f95267ad2ac68e2eb94193bbd8a7c160d87a0b4545406": {
+      "description_zh": "在Infor M3、LN或SyteLine ERP处理采购收货、应付发票三方匹配、总账、库存估价、ION审批和期间，保留各产品对象界面差异；EAM维护另用专门技能。",
+      "source": "Infor ERP - safe operation of the CloudSuite family and its product lines M3 (process/distribution), LN (ex-Baan, discrete/project), and SyteLine / CloudSuite Industrial (CSI): purchase orders and receiving, AP supplier invoices and three-way matching, general ledger, inventory, valuation and costing, ION approvals, and accounting periods. The lines name objects and address screens differently (M3 programs like PPS200/MMS060, LN sessions like tdpur/tfacp/whinh, SyteLine named forms) but share the same posting, period, and approval invariants. Use when the connected ERP is Infor and the work touches a purchase order, goods receipt, supplier invoice or voucher, a three-way match or hold, an integration transaction, a journal or GL posting, an open or closed period, item cost, an ION workflow, or mentions Infor M3, LN, Baan, SyteLine, CloudSuite, Infor OS, or a BOD. Not for SAP (sap-mm/sap-fi), Oracle (oracle-erp), or Infor EAM (infor-eam).",
+      "source_sha256": "299277289a1775266e6f95267ad2ac68e2eb94193bbd8a7c160d87a0b4545406",
+      "source_path": "skills/platforms/erp/infor/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74b24e2b5f1afa08610b4a4e937566380b70b88f3602c7258244e87a2f7b9811": {
+      "description_zh": "在NetSuite管理过账与非过账交易、SuiteFlow审批、期间锁定关闭、OneWorld子公司抵销、库存批号序号成本，以及保存搜索、CSV导入和批量更新。",
+      "source": "Oracle NetSuite - safe operation of the mid-market cloud ERP: records and posting vs non-posting transactions (sales order, purchase order, item receipt, item fulfillment, vendor bill, invoice, journal entry, intercompany JE), SuiteFlow approval routing, accounting periods (open, locked, closed) and the period-close checklist, OneWorld subsidiaries and intercompany elimination, inventory costing and lot/serial, and saved searches vs mass-update and inline edits. Use when the connected ERP is NetSuite and the work approves or transmits a PO, receives or bills it, fulfills or invoices an SO, posts a journal, edits or voids or deletes a posted transaction, hits a locked or closed period, touches received-not-billed or three-way match, or runs a saved search, CSV import, or mass update. Not for Oracle Fusion or EBS (oracle-erp) or SAP (sap-mm, sap-fi).",
+      "source_sha256": "74b24e2b5f1afa08610b4a4e937566380b70b88f3602c7258244e87a2f7b9811",
+      "source_path": "skills/platforms/erp/netsuite/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "567eb6bc70f319c67ea7f7134c4ea48e8ab4961f29e323bf2387f1a554d1ccef": {
+      "description_zh": "在Oracle Fusion或EBS处理采购审批、收货更正退货、应付发票冻结及多方匹配、子账会计、总账期间、预算资金预留和库存成本。",
+      "source": "Oracle ERP (Fusion Cloud ERP and E-Business Suite / EBS) - safe operation of Procurement, Receiving, Payables, General Ledger, and Inventory: requisitions and purchase orders, approval hierarchies (AME / approval rules), receipts, corrections and returns, AP invoices, invoice holds, 2-/3-/4-way matching, Subledger Accounting (SLA), GL journals, accounting periods, encumbrance / budgetary control, on-hand and item cost. Use when the connected ERP is Oracle Fusion or EBS and the work touches a purchase order, requisition, receipt, AP invoice, an invoice hold, a 3-way match, Create Accounting, a GL journal, an open or closed accounting period, an approval hierarchy, funds reservation, on-hand or item cost, or the user mentions Oracle Payables, Purchasing, iProcurement / Self-Service Procurement, Receiving, Cost Management, or Subledger Accounting.",
+      "source_sha256": "567eb6bc70f319c67ea7f7134c4ea48e8ab4961f29e323bf2387f1a554d1ccef",
+      "source_path": "skills/platforms/erp/oracle-erp/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8221d6b60ad7c983d102b79d9d17aa4cea82fc15bf7484996ddd326ad4e20850": {
+      "description_zh": "处理SAP FI总账与应付应收、凭证过账键、特别总账、未清项清账、MM收货发票接口、暂存过账冲销、税码、跨公司外币和期间结账。",
+      "source": "SAP Financial Accounting (FI) - the ledger side of SAP S/4HANA or ECC: G/L postings, the AP and AR sub-ledgers, document types and posting keys, special G/L indicators, open-item clearing, the GR/IR interface from MM, parked vs posted documents, document reversal, fiscal periods and close, tax codes, cross-company and foreign-currency postings. Use when the connected ERP is SAP and the work touches financial postings or the ledger, or the user mentions SAP FI, FB50/FB01, FB60/FB65, FB70/FB75, F-32/F-44/F-03 clearing, FB08 reversal, FBRA reset, F110 payment run, OB52 posting periods, a G/L or reconciliation account, an open item, a special G/L down payment, a parked document, a tax code, or the GR/IR clearing account.",
+      "source_sha256": "8221d6b60ad7c983d102b79d9d17aa4cea82fc15bf7484996ddd326ad4e20850",
+      "source_path": "skills/platforms/erp/sap-fi/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4b1e9f69d6e554e0da980497d42aba641e91bacb1a0b63906e85b2bd08116b9": {
+      "description_zh": "处理SAP MM采购至收货和库存，涵盖物料主数据、申请订单、货物移动、发票收货、库存类型、估价、审批策略、批序号及过账期间。",
+      "source": "SAP Materials Management (MM) - the safe operation of procure-to-receive and inventory in SAP S/4HANA or ECC: material master, requisitions, purchase orders, goods movements, invoice receipt, stock types and special stock, valuation, release strategies, and posting periods. Use when the connected ERP is SAP and the work touches MM/inventory postings, or the user mentions SAP MM, MIGO, MIRO, ME21N/ME23N, a goods receipt / material document, a movement type (101/102/261/311…), GR/IR, MMBE/MB52, batch or serial stock, split valuation, consignment/subcontracting, a release strategy, or a posting period.",
+      "source_sha256": "b4b1e9f69d6e554e0da980497d42aba641e91bacb1a0b63906e85b2bd08116b9",
+      "source_path": "skills/platforms/erp/sap-mm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3cca8262cccb00fd21cff3048b04c7caf81bcf5b13259f66b1339ee1d048f6b": {
+      "description_zh": "在IBM Maximo管理资产位置、维护工单状态、作业计划预防维护、备件预留领用转移、采购收货、计量状态监控和服务请求。",
+      "source": "IBM Maximo (EAM / CMMS) - safe operation of asset management and maintenance in Maximo Application Suite (MAS) Manage or classic Maximo EAM 7.6: assets and locations, work orders and their status flow (WAPPR -> APPR -> INPRG -> COMP -> CLOSE), job plans, preventive maintenance (PM), spare-parts inventory in storerooms (reservations, issues, returns, transfers), purchasing (PR / PO / receipts / invoices), meters and condition monitoring, and service requests / tickets. Use when the maintenance or asset system is IBM Maximo (MAS Manage, Maximo Manage, or Maximo EAM) and the work touches a work order, approving or closing a WO, a job plan or PM schedule, issuing or reserving spare parts, a storeroom balance, a purchase requisition or PO receipt, a meter reading or condition-monitoring alarm, a rotating asset, or the user mentions WAPPR, APPR, INPRG, COMP, CLOSE, a work order status, reorder point, or a service request / ticket.",
+      "source_sha256": "a3cca8262cccb00fd21cff3048b04c7caf81bcf5b13259f66b1339ee1d048f6b",
+      "source_path": "skills/platforms/maintenance/ibm-maximo/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df839c7188698075bbda5407bca3abb5da29a9e48bb0006b3cd9b5d5d715605b": {
+      "description_zh": "在Infor或HxGN EAM管理设备层级、工单系统状态映射、固定浮动或表计预防维护、巡检、仓库备件、采购和状态监控，区别于Infor ERP估价。",
+      "source": "Infor EAM (enterprise asset management; ex-Datastream 7i, now HxGN EAM) - operate maintenance and assets safely: the Location/System/Position/Asset equipment hierarchy; work orders whose user status codes map to system statuses (Unfinished, Released, Completed, Closed); PM schedules (fixed vs floating, meter-based) and Routes; spare parts in Stores (reserve, issue, transfer, reorder); purchasing (requisition, PO, receipt); meters and condition monitoring. Use when the maintenance/asset system is Infor EAM / HxGN EAM (MP5) and work touches a work order, releasing/completing/closing a WO, a PM schedule or route, issuing or reserving parts, a store balance, a requisition or PO receipt, a meter reading or condition alarm, an asset installed in a position, or mentions Infor EAM, Datastream, HxGN EAM, work order status, R-Type, or reorder point. Not for SAP PM (sap-pm), IBM Maximo (ibm-maximo), Infor ERP (infor), or ERP valuation (sap-mm).",
+      "source_sha256": "df839c7188698075bbda5407bca3abb5da29a9e48bb0006b3cd9b5d5d715605b",
+      "source_path": "skills/platforms/maintenance/infor-eam/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84aeff6a8b2c51b5394330802791547fddc657289d751e1386e4e38bab7d2711": {
+      "description_zh": "在SAP PM管理技术位置设备、维护通知、工单从创建至关闭、组件预留领用、工时确认、测点计数、任务工具、维护计划与结算。",
+      "source": "SAP Plant Maintenance (PM / EAM inside SAP S/4HANA or ECC) - safe operation of maintenance execution across technical objects (functional locations, equipment), maintenance notifications (malfunction M2, request M1, activity M3), maintenance and work orders (order types PM01-PM04; status CRTD -> REL -> TECO -> CLSD), operations and components (stock reservations, non-stock purchase requisitions), time confirmations, goods issue to the order (261), measuring points and counters, task lists, PRTs, maintenance plans, and settlement. Use when the maintenance system is SAP PM and the work touches a PM/work order, releasing or TECO-ing or settling an order, a maintenance notification, issuing or reserving a spare, a confirmation, a functional location or equipment, a counter reading, a maintenance plan schedule, or the user mentions IW21/IW31/IW32/IW41/IW42/IW45, IL01/IE01, IP10/IP30, KO88, order type PM01-PM04, CRTD, REL, TECO, CLSD, movement 261, or a settlement rule.",
+      "source_sha256": "84aeff6a8b2c51b5394330802791547fddc657289d751e1386e4e38bab7d2711",
+      "source_path": "skills/platforms/maintenance/sap-pm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb00c9d184bc08baeeb575a00a87759c71c70cfee47103d71de020e9cacd79fa": {
+      "description_zh": "在AVEVA或Wonderware MES执行工单、在制确认、反冲批谱系、OEE停机、SPC质量冻结与电子签署并衔接ERP；保留原说明中共享平台连接可能写入SCADA或PLC设定命令的风险边界。",
+      "source": "AVEVA MES (ex-Wonderware MES; Operations, Performance, and Quality modules) - safe shop-floor execution and the ERP hand-off - work orders, WIP confirmation, backflush and lot genealogy, OEE and downtime reason codes, SPC against spec / control limits, quality holds, and e-signatures - plus the hazard AVEVA's shared System Platform (ArchestrA / Galaxy) and Historian make ever-present, where the same connection that reads a device value can write a setpoint or command down to SCADA / PLC. Use when the connected MES is AVEVA or Wonderware MES, or the user mentions AVEVA MES Operations / Performance / Quality, a work / production order, an operation confirm / complete, WIP or backflush, lot genealogy, OEE / downtime / a reason code, SPC or a spec / control limit, a quality hold, an e-signature, AVEVA System Platform / ArchestrA / a Galaxy, AVEVA or Wonderware Historian, InTouch / OMI, an OI Server / DAServer, a device attribute / tag, or writing a setpoint or command to the line.",
+      "source_sha256": "bb00c9d184bc08baeeb575a00a87759c71c70cfee47103d71de020e9cacd79fa",
+      "source_path": "skills/platforms/mes/aveva-mes/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7486b70dc89b7052781f600e181ca79725505eb827bf43b739fa7c0e7e71d41e": {
+      "description_zh": "在Rockwell FactoryTalk管理生产、主控配方、阶段状态命令、设备绑定、称量消耗、谱系、电子批记录、偏差例外、电子签署及设备集成。",
+      "source": "Rockwell FactoryTalk MES / production management - safe shop-floor execution across FactoryTalk ProductionCentre (FTPC), PharmaSuite (GxP), FactoryTalk Batch (ISA-88 procedural control), and FactoryTalk Historian: production / work orders, master and control recipes, procedures / operations / phases, the phase state model and commands (Start / Hold / Restart / Stop / Abort / Reset), equipment arbitration and unit binding, weigh-and-dispense and material consumption, genealogy, electronic batch records (EBR), exceptions and deviations, review by exception, electronic signatures (21 CFR Part 11 / GxP), equipment integration (PhaseManager / Logix). Use when the connected MES is Rockwell or FactoryTalk, or the user mentions FTPC, PharmaSuite, FactoryTalk Batch, a master or control recipe, a phase or operation, phase hold / abort / restart, weigh and dispense, an EBR, a deviation or exception, review by exception, an e-signature, Part 11 / GxP, a batch abort, or line clearance.",
+      "source_sha256": "7486b70dc89b7052781f600e181ca79725505eb827bf43b739fa7c0e7e71d41e",
+      "source_path": "skills/platforms/mes/rockwell-factorytalk/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c710ba0b3d971bb8565c3984c9e75711bb201021bf4d990c20152a7e96dd9c5": {
+      "description_zh": "在SAP Digital Manufacturing或ME、MII执行生产工艺工单、POD与SFC状态、启完工签核、限值采集、装配反冲、谱系、不合格冻结与电子批准，并向ERP确认人工和货物移动。",
+      "source": "SAP Digital Manufacturing (DM / DMC, cloud MES; lineage SAP ME + SAP MII) - safe discrete and process shop-floor execution and the S/4HANA hand-off - production / process / shop orders, routings and operations, the Plant Operations Dashboard (POD), SFC (shop-floor-control) numbers and status, Start / Complete / Sign-off, data collection against limits, component assembly / backflush and as-built genealogy, nonconformance (NC) and holds, buyoff / e-signature, and order confirmation to ERP (labor activity + goods issue 261 + goods receipt 101). Use when the connected MES is SAP Digital Manufacturing, SAP DM, DMC, SAP ME, or SAP MII, or the user mentions a POD, an SFC number, a shop / production / process order, an operation Start / Complete / sign-off, a routing or production process, data collection, an NC / nonconformance disposition, a hold, a buyoff, assembly / component consumption or backflush, genealogy / as-built, or a production confirmation / goods receipt back to S/4HANA.",
+      "source_sha256": "9c710ba0b3d971bb8565c3984c9e75711bb201021bf4d990c20152a7e96dd9c5",
+      "source_path": "skills/platforms/mes/sap-dm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "220f1555e17a6c250b93d30b546fe16779288890e271545614051ec62f9ff202": {
+      "description_zh": "在Siemens Opcenter或Camstar管理各制造行业工单、工艺操作、在制跟踪、消耗反冲、批谱系、限值采集、不合格冻结、例外评审、电子批记录签署及设备集成。",
+      "source": "Siemens Opcenter Execution (MES/MOM; lineage Camstar + SIMATIC IT) - safe shop-floor execution across Opcenter EX Discrete, Process, Pharma, Semiconductor, Electronics, and Medical Device: production / work / manufacturing orders, routing and operations, WIP tracking, material consumption and backflush, genealogy / as-built, data collection against spec limits, nonconformance and holds / containment, review by exception, electronic signatures (GxP / 21 CFR Part 11), and equipment / automation integration. Use when the connected MES is Siemens Opcenter or Camstar, or the user mentions Opcenter Execution, SIMATIC IT, a manufacturing / work / production order, a routing or workflow spec, Track In / Track Out, Move In / Move Out / Move Std, a container / lot / wafer / sublot, a nonconformance (NC) / MRB disposition, a hold or future hold, an electronic batch record (eBR / MBR), line clearance, an electronic signature, 21 CFR Part 11 / GxP, or equipment integration (SECS/GEM, OPC UA).",
+      "source_sha256": "220f1555e17a6c250b93d30b546fe16779288890e271545614051ec62f9ff202",
+      "source_path": "skills/platforms/mes/siemens-opcenter/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "518015f2ba014cf114c1e1fc4f1f6482747627bfb1dc22e8472dda18e7f2ea96": {
+      "description_zh": "在Fluent Commerce事件驱动OMS处理Rubix工作流、订单履约、虚拟库存与ATP、门店配送和自提、预留欠单拆分、支付捕获退款及退换补偿。",
+      "source": "Fluent Order Management (Fluent Commerce) - safe operation of cloud, event-driven omnichannel order orchestration - order and fulfilment lifecycle run by the Rubix rules engine (workflows, rulesets, events), inventory and availability (Virtual Position / Catalogue, Available-to-Sell / ATP, Controls, Inventory Position / Quantity), sourcing (ship-from-store, DC, drop-ship vendor / DSV, click-and-collect), reservation, backorder, split fulfilment, payment (authorize / capture / refund), returns, exchanges, appeasements. Use when the OMS is Fluent Commerce (Fluent OMS) and the work touches committing or sourcing an order, ATS / ATP, releasing a fulfilment, a Rubix workflow / ruleset / event, ship-from-store or click-and-collect, an order / fraud / payment hold, a backorder, reserving inventory, a capture or refund, an appeasement, a return or exchange, event idempotency, Virtual Catalogue, or oversell. Not Manhattan Active Omni (that is manhattan-oms).",
+      "source_sha256": "518015f2ba014cf114c1e1fc4f1f6482747627bfb1dc22e8472dda18e7f2ea96",
+      "source_path": "skills/platforms/oms/fluent-oms/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06fde037374936a99eafb977efddf6e54b37a35f60123e3e8848b1932d9ced35": {
+      "description_zh": "在Manhattan Active Omni管理全渠道订单生命周期、ATC或ATP、分布式寻源、门店配送自提、节点分配预留、欠单拆发、支付结算退款及退换补偿。",
+      "source": "Manhattan Active Omni Order Management (Active Omni / OMS) - safe operation of omnichannel order orchestration across the fulfillment network - order capture and lifecycle, Available-to-Commit / Available-to-Promise availability, distributed order sourcing and fulfillment (ship-from-store, DC, dropship, BOPIS, curbside, ship-to-store), allocation and reservation, backorder, split shipment, payment authorization / settlement / refund, returns, exchanges, and appeasements. Use when the order system is Manhattan Active Omni (or Manhattan DOM / Enterprise Order Management) and the work touches committing or sourcing an order, ATC / ATP availability, releasing to a fulfillment node, ship-from-store, BOPIS, an order or fraud or payment hold, a backorder, a payment auth or settlement, a refund, an appeasement, a return or exchange, or the user mentions distributed order management, order orchestration, sourcing rules, node capacity, safety stock, promise date, oversell, or de-allocation.",
+      "source_sha256": "06fde037374936a99eafb977efddf6e54b37a35f60123e3e8848b1932d9ced35",
+      "source_path": "skills/platforms/oms/manhattan-oms/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9f0d5a4063f22fedba265c1c6138ddd124ce04e9bab9e6cee106639fc9ad74dd": {
+      "description_zh": "在Anaplan管理模型模块行项、列表层级、版本视图与UX页面、导入导出删除流程和ALM同步；保留原说明中读与假设分析可逆，导入删除、边界切换和生产同步可能批量覆盖且无逐项撤销的限制。",
+      "source": "Anaplan connected-planning platform - the safe operation of models, modules and line items, lists / numbered lists / hierarchies, versions, the Hyperblock in-memory engine, saved views, dashboards and UX Apps / Pages, data-integration actions (import / export / delete / process), and ALM dev-to-prod model sync. Viewing, filtering and version / what-if analysis are safe; running an import, export, delete or process action, switching the current period or version actuals boundary, and ALM-syncing dev to prod are the committing or destructive events - a delete or bad import can wipe or overwrite list data at scale, with no per-action undo. Use when the connected planning system is Anaplan, or the user mentions a model, module, line item, a list or numbered list, a version, Hyperblock or Polaris, a saved view, a Page / App, an import / export / delete action or process, CloudWorks or Anaplan Connect, selective access or DCA, a revision tag, ALM or model sync, or dev vs prod models.",
+      "source_sha256": "9f0d5a4063f22fedba265c1c6138ddd124ce04e9bab9e6cee106639fc9ad74dd",
+      "source_path": "skills/platforms/planning/anaplan/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5486c5d630a8fb82fed4a1c243bfd349db5a3956b4d472061f33514c329f5a37": {
+      "description_zh": "在Blue Yonder规划需求预测、ESP受限主计划、MPS或DRP、部署推荐运输、多级库存与情景快照；区分读取模拟和会改变运行计划、下发ERP订单的发布动作。",
+      "source": "Blue Yonder Luminate Planning (heritage JDA, i2, Manugistics) - demand planning (statistical / ML forecast, Cognitive Demand, Demand Edge sensing), Enterprise Supply Planning (ESP) constrained master planning (MPS + DRP), Deployment and Recommended Shipments, multi-echelon Inventory Optimization, what-if scenarios vs the published / baseline plan, snapshots, and releasing planned orders to execution / ERP. Reads and what-if are safe; publishing a plan, releasing planned orders, and overwriting the operating plan are committing / destructive. Use when the connected planning system is Blue Yonder or Luminate Planning, or the user mentions JDA, i2, Manugistics, ESP, MPS / DRP, a demand or consensus forecast, Cognitive Demand, Demand Edge / demand sensing, a planned order or firm planned order (FPO), a Recommended Shipment / RecShip / STO, Inventory Optimization / MEIO / safety stock, SKU-Location / SKUL, a what-if scenario, publish / commit a plan, or a time fence / frozen zone.",
+      "source_sha256": "5486c5d630a8fb82fed4a1c243bfd349db5a3956b4d472061f33514c329f5a37",
+      "source_path": "skills/platforms/planning/blueyonder-planning/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b2aa8ffbfdd33ad78cda529d758a9197828edefc7a4030e29d818e1547cfae9": {
+      "description_zh": "在Kinaxis RapidResponse或Maestro处理情景基线、计划与下发订单、CTP、工作表、约束净算和提醒；区分可逆读取模拟与需受控的提交发布释放订单。",
+      "source": "Kinaxis RapidResponse / Maestro concurrent supply-chain planning (APS) - scenarios vs the baseline plan, planned / firmed / released orders, commit and publish, capable-to-promise, worksheets, constraints, netting, and alerts. Reads, simulations and what-if analysis are safe and reversible; commit, publish and release are the high-consequence, gated actions - they promote changes into the shared plan and can release orders to ERP. Use when the connected planning system is Kinaxis, or the user mentions RapidResponse, Maestro, a scenario, commit or publish a plan, releasing or firming planned orders, capable-to-promise or CTP / ATP, available-to-promise, a worksheet or workbook, netting, a constraint, sourcing / substitution, or a planning alert.",
+      "source_sha256": "0b2aa8ffbfdd33ad78cda529d758a9197828edefc7a4030e29d818e1547cfae9",
+      "source_path": "skills/platforms/planning/kinaxis/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cab470c05874c36bf069269e53a9abbd70fd42c946f7e3f9f4076dc4beb2305f": {
+      "description_zh": "在o9企业知识图谱处理需求、供应、库存和S&OP或IBP，涵盖指标维度、驱动计划、IBPL、版本情景、求解器、分解摊分及基线发布与ERP下发。",
+      "source": "o9 Solutions (the Digital Brain) - the safe operation of demand, supply, inventory and S&OP/IBP planning on o9's Enterprise Knowledge Graph: measures and dimensions, driver-based planning, IBPL rules, versions and scenarios, what-if simulation, solvers/plugins, and publishing or committing a plan into the baseline and releasing it to execution/ERP. Use when the connected planning system is o9, or the work mentions o9, the Digital Brain, the Enterprise Knowledge Graph / EKG, a measure or dimension, driver-based planning, IBPL, a plan version or baseline / mainline, a scenario or what-if, a solver or plugin (demand forecast, supply, inventory optimization), consensus demand, an active view or planning workbook, aggregation / disaggregation / spreading, or publishing / committing / releasing a plan to ERP.",
+      "source_sha256": "cab470c05874c36bf069269e53a9abbd70fd42c946f7e3f9f4076dc4beb2305f",
+      "source_path": "skills/platforms/planning/o9/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffcbdd1132fca7e78e2534261751dc2a6937ad10d15b2dadfcb9ad1a2bbfc216": {
+      "description_zh": "在SAP IBP处理计划区域层级、关键指标、版本情景快照、规划算子任务、Excel与Fiori界面，并区分模拟和保存、基线分享发布与向ERP释放供应。",
+      "source": "SAP IBP (Integrated Business Planning), cloud - the safe operation of demand, supply, inventory, and S&OP planning: planning areas, key figures and planning levels, versions, scenarios and snapshots, planning operators and application jobs, the IBP Excel add-in and Fiori planning UI, and sharing or releasing a plan into the baseline and to execution. Use when the connected planning system is SAP IBP, or the work mentions IBP for Demand / Response and Supply / Inventory Optimization / S&OP, a planning area or planning level, a key figure (consensus demand, statistical forecast, projected stock, safety stock), a version / baseline / scenario, a copy / snapshot / S&OP supply / inventory-optimization operator, Simulate vs Save Data in the Excel add-in, disaggregation, an application job, or publishing a version to the baseline and releasing supply to S/4HANA / ERP / execution.",
+      "source_sha256": "ffcbdd1132fca7e78e2534261751dc2a6937ad10d15b2dadfcb9ad1a2bbfc216",
+      "source_path": "skills/platforms/planning/sap-ibp/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f0bb0bcbb42c335c1fac189f8685a41209c2d9b6c958a35759dbe145989d9f2": {
+      "description_zh": "在Oracle Agile PLM管理物料版本生命周期、BOM和批准厂家供应商清单、红线变更、ECR或ECO及制造场地变更、CCB审批、生效期与产品合规；不适用Agile PLM for Process。",
+      "source": "Oracle Agile PLM (Agile 9 / A9) - the safe operation of product definition and change: items and item revisions (lifecycle phases Preliminary / Prototype / Production / Inactive, plus a change-driven Pending revision state), BOMs and AML/AVL (approved manufacturer / vendor list, manufacturer parts / MPNs), redline BOM/AML, change management (ECR, ECO, MCO manufacturer change order, SCO site change order, deviation, stop ship), CCB approval routing, change analyst, sites, effectivity, file folders, and PG&C product compliance. Use when the connected PLM is Oracle Agile (not Windchill or Teamcenter) and the work touches an item, a revision, a BOM or AML, or a change; or the user mentions Agile PLM, Agile 9 / A9, an ECR / ECO / MCO / SCO, a deviation or stop ship, AML / AVL / manufacturer part / MPN, a pending revision, redline BOM, CCB / change analyst, a lifecycle phase, sites, PG&C / RoHS / REACH, or a file folder. Not Agile PLM for Process (recipe / spec) - a different product.",
+      "source_sha256": "5f0bb0bcbb42c335c1fac189f8685a41209c2d9b6c958a35759dbe145989d9f2",
+      "source_path": "skills/platforms/plm/oracle-agile-plm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1c69010f7bedba4576560df8160939f01c8dbcaa8a81fd029563593e96f92dd": {
+      "description_zh": "在PTC Windchill管理零件与CAD文档、迭代修订、EBOM或MBOM、生命周期晋升、变更流程、配置规格、生效期基线及上下文访问权限。",
+      "source": "PTC Windchill (PDMLink) - the safe operation of product definition and change: parts (WTPart) vs CAD documents (EPMDocument / Creo), iteration vs revision vs version, BOMs (EBOM / MBOM via views and MPMLink transformation), lifecycle states, promotion requests, change management (PR -> CR -> CN -> change task), config specs (Latest / Released / Baseline / Effectivity / As-Stored), effectivity (date / lot / serial), baselines, and access via contexts and domain policies. Use when the connected PLM is Windchill and the work touches product data or a change, or the user mentions Windchill, PDMLink, a WTPart or CAD document / EPMDocument, Creo / Workgroup Manager, iteration vs revision (A.1 / B.1), Revise vs Save As, a config spec, EBOM / MBOM, MPMLink, effectivity, a baseline, check-in / check-out or undo checkout, a lifecycle state or promotion request, supersede / obsolete, where-used, a problem report / change request / change notice (CN / ECN), an OIR, or options and variants.",
+      "source_sha256": "f1c69010f7bedba4576560df8160939f01c8dbcaa8a81fd029563593e96f92dd",
+      "source_path": "skills/platforms/plm/ptc-windchill/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69accfdb0b8a52df8996a048528310f3526f892ae6f16525c0ebc035b64ed10e": {
+      "description_zh": "在Siemens Teamcenter管理物料修订、产品结构BOM、CAD数据、修订规则与生效期、审批发布状态、工程变更、变体配置和ACL访问。",
+      "source": "Siemens Teamcenter (PLM) - the safe operation of product definition and change: items and item revisions, product structure / BOMs (EBOM and MBOM, BOM View Revision), CAD datasets, revision rules and effectivity (date / unit / serial), workflows and approvals, release status and maturity, change management (problem report / ECR / ECN / ECO), variants and configurations, and access via Access Manager rules / ACLs. Use when the connected PLM is Teamcenter and the work touches product data or a change, or the user mentions Teamcenter, Active Workspace / AWC, an item or item revision, Revise vs Save As, Structure Manager / Multi-Structure Manager, a BOM View Revision (BVR), EBOM / MBOM, a revision rule (Latest Working / Latest Released / Precise), effectivity, a dataset / named reference / NX, checkout / checkin, a workflow or release status, supersede / obsolete, where-used, an ECR / ECN / ECO / problem report, or a variant / configured structure.",
+      "source_sha256": "69accfdb0b8a52df8996a048528310f3526f892ae6f16525c0ebc035b64ed10e",
+      "source_path": "skills/platforms/plm/siemens-teamcenter/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f448d0df58c0558d6d354b11176b88565af986e71452391fced142dbe484a7b7": {
+      "description_zh": "在Coupa处理采购至付款，覆盖申请审批、PO收货、供应商门户发票、预算、应付冻结、匹配例外、合同与付款。",
+      "source": "Coupa business spend management (BSM) - safe operation of procure-to-pay: requisitions, approval chains, purchase orders, receipts, supplier invoices via the Coupa Supplier Portal (CSP), budgets, AP holds, match exceptions, contracts, and payment. Use when the connected spend system is Coupa, or the user mentions Coupa, a requisition or PR, an approval chain or force-approve, a PO issued to a supplier, the CSP or SAN, a supplier invoice, an AP hold or match exception, a budget hard block or soft warning, an overbill or short-pay, voiding an invoice, disputing one back to a supplier, a PO amendment, or a supplier on hold.",
+      "source_sha256": "f448d0df58c0558d6d354b11176b88565af986e71452391fced142dbe484a7b7",
+      "source_path": "skills/platforms/procurement/coupa/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4519f1983e8f5188006dcc97ec0c9fbf4fcd9d6fc8635440661c7c725cfae82a": {
+      "description_zh": "在GEP SMART统一平台处理支出分析、RFx竞拍优化和授标、合同、供应商资格风险、引导采购目录、申请至发票多方匹配和无接触应付，遵循客户配置工作流。",
+      "source": "GEP SMART source-to-pay - safe operation of the unified, cloud-native single-platform suite (one data model on GEP QUANTUM low-code, automated by GEP MINERVA / QUANTUM Intelligence AI agents) spanning Spend Analysis, Sourcing (RFx, e-auctions, sourcing optimization, award scenarios), Contract Management, Supplier Management (onboarding, qualification, risk), and Procure-to-Pay (guided buying, hosted/punchout catalogs, requisition to PO to receipt to invoice, N-way match, touchless AP), via client-configured workflows. Use when the connected S2P suite is GEP, or the user mentions GEP SMART, GEP QUANTUM, GEP MINERVA, an RFx / RFI / RFP / RFQ, an e-auction, sourcing optimization or an award scenario, a requisition or PO, a blanket order, an N-way / 2-way / 3-way match, a match exception, hold, or tolerance, touchless invoicing, a non-PO invoice, a guided-buying policy, a punchout catalog, contract compliance, supplier onboarding / qualification / risk, or an AI matching / approval agent.",
+      "source_sha256": "4519f1983e8f5188006dcc97ec0c9fbf4fcd9d6fc8635440661c7c725cfae82a",
+      "source_path": "skills/platforms/procurement/gep/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ab6866add0176d4038d26e4be14928be678f45e72d8e7ba9f03e7edc4cde6bd": {
+      "description_zh": "在Ivalua可配置统一平台处理寻源竞拍授标、条款义务、供应商主记录资格风险、采购收货发票智能匹配、目录搜索和支出分析。",
+      "source": "Ivalua source-to-pay - safe operation of the configurable single-platform suite (unified data model, no-code/low-code configuration) spanning Sourcing (RFx, eAuctions, Sourcing Decision Center, award scenarios), Contracts/CLM (clauses, obligations, compliance), Supplier Management (SIM, Supplier 360, Golden Record, qualification, Risk Center), Procure-to-Pay (requisition to PO to receipt to invoice, catalogs/punchout/Search 360, smart matching), and Spend Analysis, all via client-configured workflows. Use when the connected S2P suite is Ivalua, or the user mentions Ivalua, a sourcing event or RFx / RFI / RFP / RFQ, an eAuction or reverse auction, an award scenario, the Sourcing Decision Center, a requisition or PO, a receipt, a match exception, tolerance, or hold, smart matching, a non-PO invoice, a punchout catalog, contract compliance or an obligation, supplier qualification / registration / segmentation, Golden Record, a Risk Center hold, or a no-code / configurable workflow.",
+      "source_sha256": "3ab6866add0176d4038d26e4be14928be678f45e72d8e7ba9f03e7edc4cde6bd",
+      "source_path": "skills/platforms/procurement/ivalua/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff007810d01ad49b8fcd20ceb6465e58e5b542f4a518443817c271bb8bcf780e": {
+      "description_zh": "在JAGGAER ONE处理RFx、逆向日式竞拍和ASO优化、合同合规、目录采购至发票、应付匹配及供应商网络资格风险，支持Direct的VMI、预测与质量协作。",
+      "source": "JAGGAER ONE (formerly SciQuest) source-to-pay - safe operation of the suite: Sourcing (RFI/RFP/RFQ, reverse and Japanese auctions, sealed-bid / two-envelope, the Advanced Sourcing Optimizer / ASO), Contracts and contract compliance, eProcurement (requisition -> PO -> receipt -> invoice) with guided buying and punchout, invoicing / AP with match exceptions, and Supplier Management (SXM: registration, qualification, risk) on the JAGGAER Supplier Network (JSN); plus JAGGAER Direct (VMI, forecast and quality collaboration). Use when the connected S2P suite is JAGGAER, or the user mentions JAGGAER, JAGGAER ONE, SciQuest, the JAGGAER Supplier Network / JSN, a sourcing event or RFx, a reverse or Japanese auction, ASO / expressive bidding, an award scenario, a JAGGAER contract or accumulator, a requisition or PO, a punchout or hosted catalog, a receipt, an invoice match exception or AP hold, supplier qualification / registration / risk, a supplier hold, or JAGGAER Direct / POOL4TOOL / VMI.",
+      "source_sha256": "ff007810d01ad49b8fcd20ceb6465e58e5b542f4a518443817c271bb8bcf780e",
+      "source_path": "skills/platforms/procurement/jaggaer/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e43fca8838b923da772cd70725efe2786ad4f2412fb97a5ab3e339cbdc97ff2d": {
+      "description_zh": "在Oracle Fusion Procurement处理自助采购目录申请、PO及框架协议、变更审批、RFI或RFQ竞拍授标、供应商注册支出授权资格及采购合同。",
+      "source": "Oracle Procurement Cloud (Oracle Fusion Procurement) - safe operation of the buy side: Self-Service Procurement (requisitions, catalogs, punchout), Purchasing (purchase orders, blanket and contract purchase agreements, change orders), approvals via the approval hierarchy (approval rules / AMX / AME), Sourcing (RFI / RFQ / auction, awards), Supplier Management (registration, spend authorization, Supplier Qualification Management), and Procurement Contracts. Use when the connected system is Oracle Fusion / Oracle Procurement Cloud, or the user mentions a requisition or Self-Service Procurement / iProcurement, a PO, a blanket or contract purchase agreement (BPA/CPA) or release, a change order, an approval rule or approval hierarchy, a sourcing negotiation, RFI/RFQ/auction or two-stage RFQ, an award, a supplier registration, a prospective vs spend-authorized supplier, SQM, a qualification/assessment, a procurement agent or Procurement BU, the Supplier Portal, or communicating a PO over Oracle Business Network.",
+      "source_sha256": "e43fca8838b923da772cd70725efe2786ad4f2412fb97a5ab3e339cbdc97ff2d",
+      "source_path": "skills/platforms/procurement/oracle-procurement/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ff1d0e7e0528f5aba88bafd7f9e15da34cb05e48d338842d1ae486e69043d18": {
+      "description_zh": "在SAP Ariba处理RFx竞拍授标、引导采购至收货发票、发票核对例外、供应商生命周期风险和合同合规，通过SAP Business Network传输订单确认及发货通知。",
+      "source": "SAP Ariba source-to-pay - safe operation of the suite: Sourcing (RFx, reverse auctions, awards), Guided Buying and Buying & Invoicing (requisition -> PO -> receipt -> invoice), invoice reconciliation and exceptions, Supplier Lifecycle & Performance (SLP) and Supplier Risk, contract compliance, and transmission over SAP Business Network (Ariba Network). Use when the connected S2P suite is SAP Ariba, or the user mentions Ariba, SAP Business Network / Ariba Network, a sourcing event or RFx / RFP / RFQ / RFI, a reverse auction, an award or award scenario, guided buying, a requisition or PR, an Ariba approval flow / approvable, an issued PO or cXML OrderRequest, a punchout or CIF catalog, an order confirmation or ship notice / ASN, a receipt or service entry sheet, an invoice reconciliation (IR) or match exception, a tolerance, contract compliance or an accumulator, supplier qualification / registration / preferred status, an SLP questionnaire, or a supplier risk hold.",
+      "source_sha256": "1ff1d0e7e0528f5aba88bafd7f9e15da34cb05e48d338842d1ae486e69043d18",
+      "source_path": "skills/platforms/procurement/sap-ariba/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7db108b0f6c544201e3e64b8058835bb32e045e96cbefe6865680a02817086ed": {
+      "description_zh": "在LabWare LIMS或ELN处理样本登记、结果录入二人复核与电子批准、规格限值、批次放行、分析证书、OOS或OOT、稳定性与仪器，保留不可变审计轨迹。",
+      "source": "LabWare LIMS and ELN - safe operation of a validated (GxP, 21 CFR Part 11) laboratory information management system: sample login, result entry, second-person review and result authorization (e-signature), specifications and spec/warning limits, in-spec vs out-of-spec flagging, batch/lot disposition and release on spec, certificates of analysis (COA), out-of-specification (OOS) and out-of-trend (OOT) handling, stability studies, and instruments on an immutable audit trail. Use when the connected lab system is LabWare, or the user mentions LabWare LIMS or ELN, a sample login or backlog, an analysis/test/result, result entry, review/verify or authorize/approve a result, an e-signature / 21 CFR Part 11 / GxP, a specification or spec limits, in-spec/out-of-spec, an OOS or OOT investigation, a reportable result, a stability study or pull/timepoint, an instrument interface or calibration, a batch/lot release on spec, a certificate of analysis (COA), LIMS Basic, or the audit trail.",
+      "source_sha256": "7db108b0f6c544201e3e64b8058835bb32e045e96cbefe6865680a02817086ed",
+      "source_path": "skills/platforms/quality/labware/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2db3d47e83d914b122d4a28177244934b0b19adbec88178d77784e2d8cf01bbb": {
+      "description_zh": "在MasterControl质量与制造套件处理偏差NCR、CAPA有效性、投诉变更审计、受控文档培训、审批任务、电子批记录例外评审及签署审计轨迹。",
+      "source": "MasterControl Quality Excellence (Qx) and Manufacturing Excellence (Mfg-Ex) - safe operation of a validated (GxP, 21 CFR Part 11) quality and manufacturing suite: quality events (deviations/NCR, CAPA and effectiveness verification, complaints and reportability, change control, audits/findings), document control (DCC), training/exams, routes and tasks (workflow/signature engine), electronic batch/production records (EBR, review by exception), e-signatures, and the immutable audit trail. Use when the connected quality or manufacturing system is MasterControl, or the user mentions Qx or Mfg-Ex, a route or task, a deviation/NCR, a CAPA or effectiveness check, a complaint or reportability/MDR, a change control, an audit/finding, a controlled SOP / document control / DCC / periodic review, a training/curriculum/exam, an electronic batch record / production record / review by exception, a batch/lot release, an e-signature / 21 CFR Part 11 / GxP, a disposition or verdict, or the audit trail.",
+      "source_sha256": "2db3d47e83d914b122d4a28177244934b0b19adbec88178d77784e2d8cf01bbb",
+      "source_path": "skills/platforms/quality/mastercontrol/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d7a449492e803ff96188232e7ae515dd1fe87b9790e1baf2aec368230bd4179": {
+      "description_zh": "在SAP QM管理检验批来源、计划特性、结果录入、接受拒绝返工的使用决定及质检库存过账、质量通知和可阻止采购销售的质量信息记录。",
+      "source": "SAP Quality Management (QM) - inspection and quality disposition in SAP S/4HANA or ECC: inspection lots and origins, inspection plans and master inspection characteristics, results recording, the usage decision (accept / reject / rework) and its stock postings out of quality-inspection stock, quality notifications for defects and complaints, and quality info records that release or block a procurement or sales source. Use when the connected ERP is SAP and the work touches quality inspection or disposition, or the user mentions SAP QM, an inspection lot, QA01/QA02/QA03, a usage decision (QA11/QA12/QA13), results recording (QE01/QE51N), an inspection plan (QP01/QP03), a master inspection characteristic (QS21), a quality notification (QM01/QM02), a quality info record (QI01/QI02), QI / quality-inspection stock, a UD code, accept/reject/scrap/return, a certificate of analysis (CoA), batch restricted vs unrestricted status, or skip-lot / dynamic modification.",
+      "source_sha256": "0d7a449492e803ff96188232e7ae515dd1fe87b9790e1baf2aec368230bd4179",
+      "source_path": "skills/platforms/quality/sap-qm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecf8868a7e9ef874fabdc64da83aa51a43b428843ab98d4264b88ff6e8824872": {
+      "description_zh": "在Veeva Vault QMS处理偏差、CAPA、投诉、变更、审计与有效性，管理生命周期工作流、电子签署、处置、QualityDocs关联、访问共享和不可变审计轨迹。",
+      "source": "Veeva Vault QMS - safe operation of a validated (GxP, 21 CFR Part 11) life-sciences quality system: quality events (deviations, CAPA, complaints, change control, audits), effectiveness checks, lifecycle states and workflows, electronic signatures, dispositions/verdicts, controlled-document linkage to Vault QualityDocs, and the immutable audit trail. Use when the connected quality system is Veeva Vault Quality/QMS, or the user mentions Veeva Vault, a quality event, a deviation, a CAPA (corrective and preventive action), a product complaint or reportability/MDR, a change control, an audit or finding, an effectiveness check, an OOS/OOT investigation, a lifecycle state change, a workflow task, an e-signature / electronic signature / 21 CFR Part 11 / Annex 11 / GxP, a disposition or verdict, an object type, dynamic access control / sharing settings, QualityDocs or a controlled SOP, a sandbox vs production vault, VQL, or the audit trail.",
+      "source_sha256": "ecf8868a7e9ef874fabdc64da83aa51a43b428843ab98d4264b88ff6e8824872",
+      "source_path": "skills/platforms/quality/veeva-vault-qms/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef4f22a213461d4c75b47c85536a83365128608a6d2c59cf5991e314bfa8c9ba": {
+      "description_zh": "在Everstream读取供应链风险评分、多级供应商图、天气地缘财务ESG等中断、影响范围、监控清单和情景，并回写风险标记；原说明按数据敏感度和外发界定行动。",
+      "source": "Everstream Analytics - the safe operation of supply-chain risk intelligence and multi-tier (n-tier) supplier visibility. Because it is mostly a read/intelligence system, actions are classified by data sensitivity and egress, not money or stock. Use when the connected risk system is Everstream and the work touches a risk score or unified risk score, a sub-tier / tier-2 / tier-3 / tier-N supplier map, a disruption alert or incident (weather, geopolitical, financial, ESG, forced-labor / UFLPA, cyber, port congestion), an exposure or impact-radius / geofence assessment, a watchlist or monitored network, a scorecard weighting, or a scenario; or the user mentions Everstream Discover, Explore, or Reveal, unified risk score, sub-tier visibility, supplier risk monitoring, or pushing a supplier risk flag back to the ERP or procurement system.",
+      "source_sha256": "ef4f22a213461d4c75b47c85536a83365128608a6d2c59cf5991e314bfa8c9ba",
+      "source_path": "skills/platforms/risk/everstream/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cdf01d596c99abe9409404659ed132ed395d1f3e1032b6b2134022177ef96781": {
+      "description_zh": "在Interos关系图分析i-Score和财务运营治理地缘ESG网络风险、多级供应商、集中共同节点及级联传播，管理监控和风险回写；按数据敏感度与外发分类。",
+      "source": "Interos - the safe operation of continuous supply-chain risk and resilience intelligence built on an AI-modeled interconnected relationship graph. Because it is mostly a read/intelligence system, actions are classified by data sensitivity and egress, not money or stock. Use when the connected risk system is Interos and the work touches the i-Score or a factor score (financial, operational, restrictions/governance, geopolitical, ESG, cyber), a multi-tier / n-tier / sub-tier supplier relationship graph, continuous monitoring or a risk event/alert, concentration or single-source or shared-node exposure, risk propagation / cascading through the graph, an entity-resolution question, a watchlist or portfolio, a scorecard weighting, or a restricted-party / sanctions / forced-labor flag; or the user mentions Interos, the Interos Resilience Cloud, i-Score, the supply-chain knowledge graph, concentration risk, or pushing an Interos risk flag back into the ERP or procurement system.",
+      "source_sha256": "cdf01d596c99abe9409404659ed132ed395d1f3e1032b6b2134022177ef96781",
+      "source_path": "skills/platforms/risk/interos/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbdb6eff691493b9e23eb8b707355765441422d0eed41f56d88e458b75b5cf91": {
+      "description_zh": "在Resilinc分析供应商自报多级映射、零件场地BOM敞口、韧性风险评分、恢复及存续时间、风险收入、事件与业务连续计划、模拟和调查；按数据敏感度与外发分类。",
+      "source": "Resilinc - the safe operation of supply-chain risk and supplier-resiliency intelligence built on supplier-attested data. Because it is mostly a read/intelligence system, actions are classified by data sensitivity and egress, not money or stock. Use when the connected risk system is Resilinc and the work touches multi-tier / n-tier / sub-tier supplier mapping, part-site / BOM exposure mapping, a Resiliency Score or a RiskShield financial / ESG / cyber / restricted-party risk score, Time-to-Recover (TTR) / Time-to-Survive (TTS), Revenue-at-Risk, an EventWatch / EventWatchAI disruption alert or incident, a supplier business-continuity (BCP) plan or recovery data, a war-game / what-if simulation, a supplier data-collection campaign or survey, a watchlist or monitored network; or the user mentions Resilinc, EventWatch, RiskShield, Resiliency Score, supplier-attested / self-reported sub-tier data, or pushing a Resilinc supplier risk flag back into the ERP or procurement system.",
+      "source_sha256": "bbdb6eff691493b9e23eb8b707355765441422d0eed41f56d88e458b75b5cf91",
+      "source_path": "skills/platforms/risk/resilinc/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23ad1b897a6de96817aea8f24b8a25ea1878224601568001e211941dc94fc713": {
+      "description_zh": "在Blue Yonder TMS处理订单运输、合载优化、费率、路线指南、承运商顺序或现货招标、海铁预订、运费审计支付和月台预约。",
+      "source": "Blue Yonder Transportation Management (Blue Yonder TMS / Luminate Logistics transportation; ex-JDA TMS, lineage i2 / Manugistics) - safe operation of transportation execution across order and shipment intake, load consolidation and optimization, rating, the routing guide, carrier tendering (routing-guide/sequential tender, spot bid, accept/decline), booking ocean and rail capacity, freight audit and payment / freight settlement, and dock appointment scheduling. Use when the connected TMS is Blue Yonder and the work touches an order or shipment, load consolidation, a load ID, the transportation optimizer, rating or a rate table, the routing guide, tendering a load to a carrier (SCAC), a spot tender, an EDI 204/990/210/214, a booking, freight settlement, freight audit and payment (FAP), self-invoice, an auto-tender, or a dock appointment; or the user says Blue Yonder TMS, Luminate, JDA TMS, or Transportation Manager/Planner.",
+      "source_sha256": "23ad1b897a6de96817aea8f24b8a25ea1878224601568001e211941dc94fc713",
+      "source_path": "skills/platforms/transportation/blueyonder-tms/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3d1b3348f1be3b6ac1c44d8000af39623eaf8cd39980ea7736f6d17bd26658c": {
+      "description_zh": "在Manhattan Active TM或SCALE运输系统处理订单、构建优化货载、费率比价、承运商瀑布或现货招标、预订包裹清单、月台及运费审计结算。",
+      "source": "Manhattan Active Transportation Management (Active TM, part of Manhattan Active Supply Chain; legacy on-prem is Manhattan SCALE TMS / TLM / Manhattan Carrier) - safe operation of transportation planning and execution on Manhattan's unified cloud platform, covering orders and shipments, load building and optimization, rating and rate shopping, the routing guide, carrier tendering (waterfall / spot bid / accept / decline), booking, parcel manifesting, dock appointment scheduling, and Freight Audit and Payment (FAP) settlement. Use when the connected TMS is Manhattan Active TM (or Manhattan SCALE / TLM / Carrier) and the work touches an order or shipment, a load, load optimization, a rate or rate shop, the routing guide, tendering a load to a carrier, a spot bid, a booking, a parcel manifest, a dock appointment, freight audit and payment, self-billing or auto-pay, an accessorial, an EDI 204 load tender, or the user says Manhattan TMS, SCAC, waterfall tender, continuous move, TONU, or FAP.",
+      "source_sha256": "e3d1b3348f1be3b6ac1c44d8000af39623eaf8cd39980ea7736f6d17bd26658c",
+      "source_path": "skills/platforms/transportation/manhattan-tms/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad96289d70fe16835783edae5cd5fb521eef0bdfaba6c17898d38cf167b5dbb4": {
+      "description_zh": "在Oracle OTM处理订单基础与释放、批量计划构建运输、费率行程、承运招标、预订、发票匹配审批凭证、自动化智能体与月台预约。",
+      "source": "Oracle Transportation Management (Oracle OTM / Oracle Cloud OTM, formerly G-Log / GLog) - the safe operation of transportation execution: order base and order release, bulk plan and shipment building, rating, itineraries, carrier tendering (tender / accept / decline / spot bid), booking, freight payment and settlement (match / approve / voucher), automation agents, and appointment scheduling. Use when the connected TMS is Oracle OTM and the work touches order releases, ship units, buy vs sell shipments, a rate offering or rate record, tendering a shipment to a service provider, broadcast or spot bid tender, secure resources, continuous move, a routing guide, freight settlement / match invoice / voucher / allocation, an EDI 204 tender, an automation agent, or a dock appointment; or the user says OTM, GlogXML, order base, service provider, un-tender, or freight audit.",
+      "source_sha256": "ad96289d70fe16835783edae5cd5fb521eef0bdfaba6c17898d38cf167b5dbb4",
+      "source_path": "skills/platforms/transportation/oracle-otm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d49afba1177d4c3c0d1aeffaf346f2b24dd9c77dfe9f59f814aae64e7b44f14b": {
+      "description_zh": "在SAP TM处理运输需求、货运单位订单和预订、Transportation Cockpit VSR优化、承运商选择招标分包、费用计算及向ERP或FI传递的运费结算。",
+      "source": "SAP Transportation Management (SAP TM) - the safe operation of transportation planning and execution, embedded in S/4HANA or standalone: transportation requirements (OTR/DTR), forwarding orders, freight units, freight orders and bookings, VSR-optimizer planning in the Transportation Cockpit, carrier selection and tendering (subcontracting a freight order to a carrier), transportation charge calculation, and freight settlement (which transfers cost to ERP/FI). Use when the connected TMS is SAP TM and the work touches a freight unit (FU), freight order (FO), freight booking (FB), forwarding order (FWO), a transportation requirement, the VSR optimizer, carrier selection, peer-to-peer / broadcast / open tendering, subcontracting, a transportation charge or freight agreement, a freight settlement document (FSD) or forwarding settlement document (FWSD), a /SCMTMS/ transaction, the Transportation Cockpit, TOR, or the user says SAP TM, S/4HANA TM, embedded TM, consignment order, or freight settlement.",
+      "source_sha256": "d49afba1177d4c3c0d1aeffaf346f2b24dd9c77dfe9f59f814aae64e7b44f14b",
+      "source_path": "skills/platforms/transportation/sap-tm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5e96d4ca87af30cbb4fae83c58ea4493ca9ffeaa6b3850afbb67bcb7a47c8f2": {
+      "description_zh": "在FourKites跟踪多模式货运、预测ETA、追踪评分、车载连接、里程碑地理围栏、异常停留、月台场院和海运免箱期限，并处理数据共享；主要遥测操作按敏感度与外发分类。",
+      "source": "FourKites (the Real-Time Transportation Visibility Platform, RTTVP) - safe operation of multimodal load / shipment tracking: predictive ETAs, Tracking Score, carrier / ELD / telematics / Tracker connections, milestones and geofence events, exceptions, Notifications, Watchlist, dwell and detention, Appointment Manager dock scheduling, Dynamic Yard, and Dynamic Ocean (last free day, demurrage / detention). Predominantly read / telemetry, so actions classify by data sensitivity and egress, not money or stock. Use when the connected system is FourKites and work touches a load / shipment status, a predictive ETA, a Tracking Score, a tracking method (ELD, telematics, Tracker, EDI 214), a milestone or geofence event, a tracking gap or stale ping, an exception (late, at-risk, dwelling, detention, off-route, temperature), an ocean container or last free day, a dock/yard appointment, the Tracey AI assistant, or sharing / exporting shipment, customer, or location data to another party/system.",
+      "source_sha256": "a5e96d4ca87af30cbb4fae83c58ea4493ca9ffeaa6b3850afbb67bcb7a47c8f2",
+      "source_path": "skills/platforms/visibility/fourkites/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0fccccff4d2086a6cf229bcd1329d4d64f0dd81979ad5e89e31739c239dcd380": {
+      "description_zh": "在project44 Movement跟踪海空包裹零担整车铁路订单、动态ETA、承运车载连接、里程碑异常、在途库存、海运滞箱和机场状态，并处理货运客户位置数据共享。",
+      "source": "project44 (the Movement platform) - safe operation of real-time multimodal transportation visibility across ocean / air / parcel / LTL / truckload / rail: shipment and order tracking, predictive / dynamic ETAs, carrier and telematics / ELD connections, milestone and status events, exception detection, and inventory-in-transit. Use when the connected visibility system is project44 or Movement and the work touches a predicted or dynamic ETA, a carrier connection or tracking method (ELD, telematics, mobile driver app, API, EDI 214), a shipment / load / order status, a milestone or geofence arrival / departure event, a tracking gap or stale ping, an exception (late, at-risk, dwelling, detention, off-route, temperature excursion), an ocean container / booking / bill of lading / last free day / demurrage, an air waybill / flight status, a parcel scan, a dock or yard appointment, or sharing / exporting shipment, customer, or location data to another party.",
+      "source_sha256": "0fccccff4d2086a6cf229bcd1329d4d64f0dd81979ad5e89e31739c239dcd380",
+      "source_path": "skills/platforms/visibility/project44/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42c3cded26c9a0d594442f00c463d93252a5bdef523d0ee0d2fbe7a769b8f263": {
+      "description_zh": "在Blue Yonder WMS管理可用现存库存、入出库牌号、库位波次、分配与RF拣选上架补货盘点、ASN收货、包装装运、调整冻结及ERP集成；原说明任务确认会过账库存移动。",
+      "source": "Blue Yonder Warehouse Management (heritage RedPrairie DLx / JDA WMS; the MOCA- and policy-driven WMS, on-prem or cloud-native Luminate) - safe operation of warehouse execution and on-hand inventory: available vs on-hand, ILPN (inbound license plate) and OLPN (outbound carton), locations and zones, wave / waveless release (allocates + generates task work), allocation, directed RF task work (pick / put-away / replenishment / cycle-count; task confirm posts the inventory move), receiving / ASN, pack / load / ship confirm, inventory adjustment and status holds, labor, and host / ERP integration. Use when the warehouse system is Blue Yonder WMS (or RedPrairie, JDA WMS, DLx, Luminate Warehouse) and the work touches on-hand, an ILPN or OLPN, a wave or waveless release, a task or directed work, allocation, a cycle count, an inventory adjustment or hold, receiving, pick / pack / ship, a MOCA command or a policy (poltype / polvalue), catch weight, or a goods movement published to the ERP.",
+      "source_sha256": "42c3cded26c9a0d594442f00c463d93252a5bdef523d0ee0d2fbe7a769b8f263",
+      "source_path": "skills/platforms/warehouse/blueyonder-wms/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62cbc57010064561be755cbb7b4401e8767c5f6f957e8ce1c4c07618a7159736": {
+      "description_zh": "在Korber或HighJump WMS管理现存可用库存、牌号容器库位、波次分配与RF工作、收货ASN、包装装运、调整冻结、3PL货主及Architect规则；工作确认会过账库存移动。",
+      "source": "Korber WMS (ex-HighJump; Korber Supply Chain Software / K.Motion Warehouse Advantage and Warehouse Edge) - safe operation of warehouse execution and on-hand inventory: available vs on-hand, LPN / license plate and nested containers, locations and zones, wave release and work creation (allocates + directs RF task work), allocation, directed work (pick / put-away / replenishment / cycle count; confirming work posts the inventory move), receiving / ASN, pack / load / ship confirm, inventory adjustment and status holds, multi-client / owner 3PL stock, and the HighJump Architect workflow / business-rules configuration layer. Use when the warehouse system is Korber WMS (or HighJump, K.Motion, Warehouse Advantage, Warehouse Edge, Accellos) and the work touches on-hand, an LPN, a wave or work, allocation, a cycle count, an inventory adjustment or hold, receiving, pick / pack / ship, an Architect business-rule or workflow change, or a goods movement posted to the host / ERP.",
+      "source_sha256": "62cbc57010064561be755cbb7b4401e8767c5f6f957e8ce1c4c07618a7159736",
+      "source_path": "skills/platforms/warehouse/korber/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d27de14dba08aac703d320e47d9f4413001166c1afbf061cd38778a3483c861e": {
+      "description_zh": "在Manhattan Active WM或SCALE管理现存与可用库存、牌号、波次订单流、分配、拣选上架补货盘点任务、ASN、包装装运及质量损坏冻结和库存调整。",
+      "source": "Manhattan Active Warehouse Management (Active WM) - safe operation of warehouse execution and on-hand inventory: available vs on-hand stock, LPN / license plate and nested containers, locations and zones, wave release and order streaming, allocation, pick / put-away / replenishment / cycle-count work and task confirmation, receiving and ASN, pack / load / ship confirm, inventory holds, QA and damaged stock, and inventory adjustments. Use when the warehouse system is Manhattan Active WM (or Manhattan WMS / SCALE) and the work touches on-hand, an LPN, a wave or order streaming, a warehouse task or work confirmation, allocation, a cycle count, an inventory adjustment or status hold, receiving, pick / pack / ship, or the user mentions license plate, short pick, replenishment, staging, manifest, de-allocation, or a goods movement published to the ERP.",
+      "source_sha256": "d27de14dba08aac703d320e47d9f4413001166c1afbf061cd38778a3483c861e",
+      "source_path": "skills/platforms/warehouse/manhattan-wms/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59da238c210c4be3554fec3b531cbc0f741ae13301348dbb71ded6ff674686e5": {
+      "description_zh": "在SAP EWM管理库位区域、HU与库存量、仓库任务订单、波次上架移出、收发货ERP过账、库存类型变化、盘点差异清理及质检处置。",
+      "source": "SAP Extended Warehouse Management (EWM) - safe operation of warehouse execution and warehouse-managed stock in S/4HANA embedded or decentralized EWM: storage bins, types, sections and activity areas; handling units (HUs) and quants; warehouse tasks (WT) and warehouse orders (WO); waves and putaway / stock-removal strategies; goods receipt and goods issue that post the ERP material document (often an FI value document); posting changes for stock type and status; physical inventory and difference clearing; and quality-inspection disposition. Use when the warehouse system is SAP EWM and the work touches a storage bin, a handling unit, a warehouse task or warehouse order, a wave, putaway or stock removal, a goods receipt or goods issue posted to the ERP, a posting change, physical inventory or a stock difference, quality-inspection stock, or the user mentions /SCWM/ transactions, /SCWM/MON, a warehouse process type (WPT), stock type F1 / Q / B, an availability group, or a quant.",
+      "source_sha256": "59da238c210c4be3554fec3b531cbc0f741ae13301348dbb71ded6ff674686e5",
+      "source_path": "skills/platforms/warehouse/sap-ewm/SKILL.md",
+      "package_sha256": "1b781cece32f9059483fa97f83e3366cde152f20f76eb44dcb40eb4c5d6ff8ac",
+      "source_package": "MetaFloor Supply Chain-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "572342c826ad7092eb5765c3ff1c65e606b55e1153c6c526b7a71f107241f073": {
+      "description_zh": "检查Meticulous CLI和技能是否安装且最新，缺失或过期时安装更新；原说明作为其他Meticulous技能的先行步骤。",
+      "source": "Check whether the Meticulous CLI (@alwaysmeticulous/cli) and skills are installed and up to date, and install/update them if not. Invoked at the start of every other Meticulous skill, since the CLI and skills are under active development with frequent changes and improvements.",
+      "source_sha256": "572342c826ad7092eb5765c3ff1c65e606b55e1153c6c526b7a71f107241f073",
+      "source_path": "skills/meticulous-cli-update/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4aa7c1d72e17cdf80a9b46462cfa978780d4f4c5163b467fa25e15f7abbd0eeb": {
+      "description_zh": "介绍Meticulous CLI可用命令及适用于所有命令的全局选项。",
+      "source": "Overview of the Meticulous CLI tool and its global options. Use when asking about the meticulous CLI in general, available commands, or global flags that apply to all commands.",
+      "source_sha256": "4aa7c1d72e17cdf80a9b46462cfa978780d4f4c5163b467fa25e15f7abbd0eeb",
+      "source_path": "skills/meticulous-cli/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fcc5b3bb0c63ae345c5957532060720e74e3d47809d7f706f357052ea4fc9a06": {
+      "description_zh": "依据已完成Meticulous测试中被评审拒绝的视觉差异及评论，实现相应修复。",
+      "source": "Fix the visual diffs that have been reviewed and rejected on a Meticulous test run, following their review comments if given. Use when a user has reviewed the results of a test run and is handing off to an agent to implement the fixes.",
+      "source_sha256": "fcc5b3bb0c63ae345c5957532060720e74e3d47809d7f706f357052ea4fc9a06",
+      "source_path": "skills/meticulous-fix/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8658d0a8b367ffb6f0a29c2bef6c77eea6aec17566f74e886ccd82a27d701441": {
+      "description_zh": "将低覆盖文件追踪至真实UI操作，通过录制浏览器会话执行并对比覆盖率提升；对结构上不会在浏览器执行的代码，开PR建议.meticulousignore项。",
+      "source": "Increase coverage for a Meticulous project by tracing specific under-covered files back to a real UI action in the codebase, driving that action with a real recorded browser session, and validating the improvement with a clean coverage comparison. Also opens a PR proposing .meticulousignore entries for code that structurally never executes in-browser. Use when asked to \"increase coverage\", \"find untested code\", or \"add .meticulousignore entries\" for a project.",
+      "source_sha256": "8658d0a8b367ffb6f0a29c2bef6c77eea6aec17566f74e886ccd82a27d701441",
+      "source_path": "skills/meticulous-increase-coverage/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb1b7bcaf63770a074b70bcd30fea577784f57a444f507909e9d38523f32b22a": {
+      "description_zh": "在多步前端开发中逐步用Meticulous验证视觉变化，在最终云测试前捕捉回归与意外副作用。",
+      "source": "Iterative frontend development loop using Meticulous for per-step visual validation. Use when implementing a multi-step frontend change and want to catch visual regressions and unintended side effects at each step, before the final cloud test run.",
+      "source_sha256": "eb1b7bcaf63770a074b70bcd30fea577784f57a444f507909e9d38523f32b22a",
+      "source_path": "skills/meticulous-iterative-dev/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e419a339bf1cbf47b20e971ce131dd18ad9148232760896b068825c290a3bd6c": {
+      "description_zh": "审查完成的Meticulous测试，将差异对照PR说明区分预期与潜在回归，支持当前提交或指定测试ID及SHA，并用于跟踪CI。",
+      "source": "Analyze a completed Meticulous test run — compare the diffs against the PR description to see what's expected, then focus on finding and flagging potential regressions. Resolves the test run from the local repo's current commit (the default), or from an explicit test-run ID or commit SHA. Use when asked to review Meticulous test results, when babysitting a pull/merge request's Meticulous Tests CI check, or right after implementing a frontend change yourself.",
+      "source_sha256": "e419a339bf1cbf47b20e971ce131dd18ad9148232760896b068825c290a3bd6c",
+      "source_path": "skills/meticulous-review/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b48cec6c3e6275a55749ae4185aa6dcf102b1af31063193e4caa2ba110cf825": {
+      "description_zh": "对线上URL模拟Meticulous会话，直接看截图或与基线比较像素及HTML差异，检查特定会话视觉回归。",
+      "source": "Run a Meticulous session simulation against a live URL and analyze the visual output — either by inspecting screenshots directly (quick-check mode) or by comparing pixel and HTML diffs against a base replay. Use when checking whether a code change has introduced visual regressions for a specific session.",
+      "source_sha256": "7b48cec6c3e6275a55749ae4185aa6dcf102b1af31063193e4caa2ba110cf825",
+      "source_path": "skills/meticulous-simulate-and-diff/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d124454c249f69589c5e15c5038ab9fcd722218caeabc09daaf25742e985aa0": {
+      "description_zh": "前端实现后运行Meticulous测试并移交review分类视觉变化，仅上传一次构建，可对不同基线重跑并支持未提交改动。",
+      "source": "Run a Meticulous test run after implementing a frontend change, then hand off to the `meticulous-review` skill to classify each visual change as intended or unintended. Uploads the build once — the same build can be re-triggered against different bases without rebuilding — and it works with uncommitted changes. Use when implementing a feature autonomously end-to-end before creating a PR.",
+      "source_sha256": "2d124454c249f69589c5e15c5038ab9fcd722218caeabc09daaf25742e985aa0",
+      "source_path": "skills/meticulous-test/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2afd3f6ba69f395b42053719f454f02014f8de24c9cd83b0545a9000af2a83da": {
+      "description_zh": "下载结构化Meticulous用户流程与网络模拟数据，用于理解测试覆盖的交互API及编写本地测试。",
+      "source": "Download and use structured Meticulous session data (user flows + network mocks) for testing code changes locally. Use when you need to understand what user interactions and API calls a test covers, or when you want network mocks for writing tests.",
+      "source_sha256": "2afd3f6ba69f395b42053719f454f02014f8de24c9cd83b0545a9000af2a83da",
+      "source_path": "skills/meticulous-use-session-data/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90f062472cc510821957ebee67741e83b6fe31081119bd00b42131ff973c3a1a": {
+      "description_zh": "对预期UI无变化的依赖升级、重构或迁移，以Meticulous作为实施循环，直至视觉差异清零再开PR。",
+      "source": "Implement a task for which no visual diffs are expected end to end, using Meticulous to drive the implementation to a clean visual diff before opening a PR. Use when the task's whole premise is \"the UI shouldn't change\" — a dependency/version upgrade, a code refactor, a migration, or similar. Meticulous isn't just a final check here, it's the loop you iterate against while implementing.",
+      "source_sha256": "90f062472cc510821957ebee67741e83b6fe31081119bd00b42131ff973c3a1a",
+      "source_path": "skills/meticulous-zero-diff-task/SKILL.md",
+      "package_sha256": "de764ecdb719799940e30a3b298ae4bcef952c7a9b7a532eeb84cb1ad8ea20b1",
+      "source_package": "Meticulous-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b629bce11b6b19f2481a1d71e340720d944704f39694cc75ee3d60d0b9b3f41b": {
+      "description_zh": "生成Mibba案件档案月度或年度活动报告，统计限定期间活跃、修改或当前关闭的档案。",
+      "source": "Produces complete monthly or annual Mibba dossier activity reports. Use when the user asks how many dossiers were active, modified, or currently closed over a year or bounded period.",
+      "source_sha256": "b629bce11b6b19f2481a1d71e340720d944704f39694cc75ee3d60d0b9b3f41b",
+      "source_path": "skills/activity-report/SKILL.md",
+      "package_sha256": "74be4f4afc048cb65ae2e9d97d060dcb296615a118a9e36a7752b4b1c72f07fc",
+      "source_package": "Mibba-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9eb89a563b161bd0f829726d86d4065f3740a7df6b2394570fee1c624934e776": {
+      "description_zh": "审计Mibba案件文件清单、引用附件、证据与法律期限，识别存在缺失、附件可用性及需关注期限。",
+      "source": "Audits a Mibba dossier's document inventory, cited pieces, evidence, and legal deadlines. Use when the user asks what is present or missing, whether an act's annexes are available, or which dossier deadlines need attention.",
+      "source_sha256": "9eb89a563b161bd0f829726d86d4065f3740a7df6b2394570fee1c624934e776",
+      "source_path": "skills/document-audit/SKILL.md",
+      "package_sha256": "74be4f4afc048cb65ae2e9d97d060dcb296615a118a9e36a7752b4b1c72f07fc",
+      "source_package": "Mibba-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f529296a1df93ffd90959d9457041f3f1496474e5aa363cae029d60988dc99fe": {
+      "description_zh": "以可追踪证据研究Mibba公证档案，查找、查看、比较和汇总客户、参与者、房产、文件与存储事实。",
+      "source": "Researches Mibba notarial dossiers and their documents with traceable evidence. Use when the user asks to find, inspect, compare, or summarize a dossier, client, participant, property, document, or fact stored in Mibba.",
+      "source_sha256": "f529296a1df93ffd90959d9457041f3f1496474e5aa363cae029d60988dc99fe",
+      "source_path": "skills/dossier-research/SKILL.md",
+      "package_sha256": "74be4f4afc048cb65ae2e9d97d060dcb296615a118a9e36a7752b4b1c72f07fc",
+      "source_package": "Mibba-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab026521030cf7f586e6c65c06f21a1ec234f683c86c68d37998a4cae9e9f018": {
+      "description_zh": "Microsoft Learn MCP不可用时，通过Microsoft Learn CLI获取当前官方文档和代码示例，支持技术、SDK、API、配置限额、教程和错误排查。",
+      "source": "Use the Microsoft Learn CLI to retrieve current official Microsoft documentation and code samples when Microsoft Learn MCP tools are unavailable. Use for questions about Microsoft technologies, SDKs, APIs, configuration, limits, best practices, tutorials, or Microsoft-specific coding errors that would otherwise benefit from current official documentation.",
+      "source_sha256": "ab026521030cf7f586e6c65c06f21a1ec234f683c86c68d37998a4cae9e9f018",
+      "source_path": "cli/assets/microsoft-learn-cli/SKILL.md",
+      "package_sha256": "d9b1f81081679e2bcb0c2636c6847f10f4b4329f3d5fef77949f463ec7b84475",
+      "source_package": "microsoft-docs-0.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33db94119c5537166223a01c97f247e6f52cb6a89fbf7e703accd6cf70d6a0b5": {
+      "description_zh": "根据官方文档查找可运行代码、核验API签名并修复Microsoft SDK、.NET、Azure客户端及Microsoft API错误，识别不存在方法、错误签名和弃用模式。",
+      "source": "Find working code samples, verify API signatures, and fix Microsoft SDK errors using official docs. Use whenever the user is writing, debugging, or reviewing code that touches any Microsoft SDK, .NET library, Azure client library, or Microsoft API—even if they don't ask for a \"reference.\" Catches hallucinated methods, wrong signatures, and deprecated patterns. If the task involves producing or fixing Microsoft-related code, this is the right skill.",
+      "source_sha256": "33db94119c5537166223a01c97f247e6f52cb6a89fbf7e703accd6cf70d6a0b5",
+      "source_path": "skills/microsoft-code-reference/SKILL.md",
+      "package_sha256": "d9b1f81081679e2bcb0c2636c6847f10f4b4329f3d5fef77949f463ec7b84475",
+      "source_package": "microsoft-docs-0.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3f3b22ac07cfd3b668b6286b9595331e6b816ecdfeefb312066e747537855dd": {
+      "description_zh": "查询Microsoft官方文档理解Azure、.NET、M365、Windows及Power Platform概念，获取教程、配置、限额配额与最佳实践；代码编写用代码参考技能。",
+      "source": "Understand Microsoft technologies by querying official documentation. Use whenever the user asks how something works, wants tutorials, needs configuration options, limits, quotas, or best practices for any Microsoft technology (Azure, .NET, M365, Windows, Power Platform, etc.)—even if they don't mention \"docs.\" If the question is about understanding a concept rather than writing code, this is the right skill.",
+      "source_sha256": "c3f3b22ac07cfd3b668b6286b9595331e6b816ecdfeefb312066e747537855dd",
+      "source_path": "skills/microsoft-docs/SKILL.md",
+      "package_sha256": "d9b1f81081679e2bcb0c2636c6847f10f4b4329f3d5fef77949f463ec7b84475",
+      "source_package": "microsoft-docs-0.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "beeffacb98a2015bda84e14f95bd142150fd97690d54c57c3e8ff7f18c3bb3c6": {
+      "description_zh": "依据Microsoft官方文档创建Azure、.NET、M365、VS Code或Bicep等智能体技能，本地保留核心知识并通过动态检索扩展深度。",
+      "source": "Create agent skills for Microsoft technologies using official documentation. Use whenever the user wants to build, generate, or scaffold a skill for any Microsoft technology (Azure, .NET, M365, VS Code, Bicep, etc.)—even phrased casually like \"make a skill for Cosmos DB.\" Investigates the topic via official docs, then generates a hybrid skill with essential knowledge stored locally and dynamic lookups for depth.",
+      "source_sha256": "beeffacb98a2015bda84e14f95bd142150fd97690d54c57c3e8ff7f18c3bb3c6",
+      "source_path": "skills/microsoft-skill-creator/SKILL.md",
+      "package_sha256": "d9b1f81081679e2bcb0c2636c6847f10f4b4329f3d5fef77949f463ec7b84475",
+      "source_package": "microsoft-docs-0.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd26646f8863ab5fa966ddb69f12362b6e2b1e4706a62a88d53b4ca4f9c84ad3": {
+      "description_zh": "端到端建立发布Mida A/B测试，编写假设、创建实验变体、绑定目标、上线前预览，再判断数据是否足够作结论，亦支持评审已有测试。",
+      "source": "Build and launch a Mida A/B test end to end: writing the hypothesis, creating the experiment and its variants, attaching a goal, previewing the variant before it goes live, launching, and deciding when there is enough data to call it. Use when the user asks to test, try, or experiment with a change to their site (\"test a new headline\", \"try a different CTA\", \"does the shorter form convert better\"), or to review a test someone has already set up.",
+      "source_sha256": "fd26646f8863ab5fa966ddb69f12362b6e2b1e4706a62a88d53b4ca4f9c84ad3",
+      "source_path": "skills/mida-experiments/SKILL.md",
+      "package_sha256": "f8b5456299803c3cd49982756f075f266f5256fb191ed844f2f633c749aeaae3",
+      "source_package": "mida-so-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d25105e3f0707f08f8e12b938b2d1011c337aa3fa02be49f021221b314d1d31": {
+      "description_zh": "作为Mida网站实验入口，创建、发布、检查、暂停、结束和推广A/B测试及个性化，正确解释贝叶斯优于原版概率与p值，并管理目标事件和保持数据干净的操作顺序。",
+      "source": "Working with Mida: A/B testing, split tests, and personalization on a live website. Use whenever \"Mida\" is mentioned, and as the entry point for any request to create, launch, check, pause, conclude, or roll out an experiment on a site that runs the Mida tag. Also covers reading Mida results correctly (Bayesian \"chance to beat original\" vs. p-value), goals and events, and the order of operations that keeps a test''s data clean.",
+      "source_sha256": "1d25105e3f0707f08f8e12b938b2d1011c337aa3fa02be49f021221b314d1d31",
+      "source_path": "skills/mida/SKILL.md",
+      "package_sha256": "f8b5456299803c3cd49982756f075f266f5256fb191ed844f2f633c749aeaae3",
+      "source_package": "mida-so-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a02f577f805170f6602d6859c11a310aa29e9a27d3f6604541c7e0a99e4f70b4": {
+      "description_zh": "为AWS智能体评估AgentCore、ECS、EKS或Lambda，按工作负载澄清评分、设计部署服务、粗估成本并生成推荐、迁移计划和可部署PoC；账户实际构建须明确选择，Temporal编排不改写为Step Functions，纯非智能体迁移另用其他技能。",
+      "source": "Unified entry point for AI-agent work on AWS: evaluate and pick a runtime, generate a full migration plan (for existing workloads), and build an executable POC — all in one flow. Triggers on: which runtime for my agent, AgentCore vs ECS vs EKS vs Lambda, AgentCore vs Lambda MicroVMs, deploy an AI agent on AWS, agent architecture on AWS, I have an agent idea what do I build, move my agents to AWS, migrate my agents to AWS with a plan, agent migration plan, add AgentCore services, add memory/gateway/identity/policy to my agent, enable AgentCore Memory, add observability to my agent, I'm already on AWS and want to add agent capabilities, migrate Temporal workers to AWS, Temporal to AWS, run Temporal on AWS, Temporal workers on AWS, we use Temporal and want to move to AWS, our service is orchestrated by Temporal, what do I build on AWS for my Temporal workers, move a Temporal-based service to AWS, Temporal Cloud or self-hosted on AWS. Runs a phased flow: Intake (entry point + technical background), Discover (lightweight code detection), Clarify (adaptive questions), deterministic scoring, Design (runtime + deployment model + services + model), Estimate (coarse cost), Generate (layered recommendation doc + scaffolding), then optional gated stages: Migration Plan (full plan generated in-skill by reusing this plugin's gcp-to-aws engine, with the advisor's decisions carried over) and POC (deployment plan + deployable proof-of-concept on the recommended runtime — AgentCore, ECS, EKS, or Lambda; generated deliverables by default, or assisted build in your account on explicit opt-in). Systems with several workloads (interacting or independent agents, batch jobs, services) are decomposed into workload units, each getting its own verdict with a consolidation option. An add-capabilities branch (for teams already running agents on AWS) recommends which AgentCore services to enable on any runtime — no runtime scoring. Temporal systems dissolve into the same unit flow — worker polling tiers and Activity execution classes become units (rules in the Temporal decision reference); Workflow orchestration code is never rewritten — never a Step Functions translation. Requires at least one agentic component: a purely non-agent system (only plain services / batch jobs / HTTP endpoints, or a Temporal worker whose Activities are all non-agent) is out of scope — Clarify halts it (scope gate) and points to migration-to-aws / heroku-to-aws / llm-to-bedrock. Not for: pure compute/data migration with no AI agent; pure LLM SDK rewrite without agent architecture (use llm-to-bedrock); or detailed per-model pricing.",
+      "source_sha256": "a02f577f805170f6602d6859c11a310aa29e9a27d3f6604541c7e0a99e4f70b4",
+      "source_path": "skills/agent-advisor/SKILL.md",
+      "package_sha256": "a84eb6f13637d786c0f171e1863666ba03ce92c1908cedb3f6db1a10db9df7ee",
+      "source_package": "migration-to-aws-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dde8eca79779a6460212783315af5235c84481da3b6a2d39d924d44b5992b6b5": {
+      "description_zh": "快速捕获独立想法、笔记或思考，自动识别客户、产品、个人或运营背景并保存到合适位置，无法判断时放入inbox。",
+      "source": "Captures a quick idea, note, or thought with minimum friction — auto-classifies the context (client, product, personal, operational) and saves it to the right place, or routes to inbox/ when uncertain. Use when the user says 'note this', 'quick note', 'idea:', 'capture this', 'jot down', 'save this thought', or shares a standalone thought without framing it as a task or meeting.",
+      "source_sha256": "dde8eca79779a6460212783315af5235c84481da3b6a2d39d924d44b5992b6b5",
+      "source_path": "skills/capture-idea/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b37ebf67767a684b9b78cb5291f0c07d0531adebab22a784d0b2872bdcf56a4": {
+      "description_zh": "扫描知识库任务并对照当日日历，生成晨间简报，包含议程、紧急任务、逾期跟进及久未联系的背景，按原说明控制在两分钟阅读量。",
+      "source": "Generates the morning situational briefing — today's agenda, urgent tasks, overdue follow-ups, and contexts without recent contact. Use ALWAYS when the user says 'brief', 'what do I have today', 'daily summary', 'what's overdue', 'catch me up', 'morning update', or opens the system in the morning without a specific request. Scans all task files in the vault, cross-references the day's calendar, and delivers a situation panel in under 2 minutes of reading.",
+      "source_sha256": "5b37ebf67767a684b9b78cb5291f0c07d0531adebab22a784d0b2872bdcf56a4",
+      "source_path": "skills/daily-brief/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72d199405db56bef39aeb25b839bc3a52d20581d0167cd05a8775545cfce250b": {
+      "description_zh": "按主题问题搜索个人知识库，综合回答并用wikilink关联来源笔记，支持先前讨论、决策与积累知识查询。",
+      "source": "Searches the vault by topic or question and returns a synthesized answer with wikilinks to the source notes. Use when the user says 'what do I know about X', 'everything we discussed about Y', 'find notes on Z', 'what did we decide about...', 'search the vault for...', or asks any question that should be answered from the user's own accumulated knowledge rather than general reasoning.",
+      "source_sha256": "72d199405db56bef39aeb25b839bc3a52d20581d0167cd05a8775545cfce250b",
+      "source_path": "skills/knowledge-search/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c06fb560ee52c4d3370343d76b9ec90c56cc78fb9e1b8f6c3af32c81dd05aae": {
+      "description_zh": "为即将举行的会议汇总相关客户、产品或人员近期会议、未结任务、待决事项与未完成跟进，形成会前简报。",
+      "source": "Prepares a briefing for an upcoming meeting by pulling recent meetings, open tasks, pending decisions, and unresolved follow-ups for the relevant client, product, or person. Use when the user says 'prep for meeting with X', 'what should I talk about with X', 'brief me on X before the call', 'what's pending with X', or mentions a meeting that is about to happen.",
+      "source_sha256": "2c06fb560ee52c4d3370343d76b9ec90c56cc78fb9e1b8f6c3af32c81dd05aae",
+      "source_path": "skills/meeting-prep/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "608bb1a5346189798e11c23d144820ec955f7cddf374607777fa3975dd970a21": {
+      "description_zh": "将架构或业务决策保存为结构化ADR，记录背景、决定、后果及被否决选项。",
+      "source": "Records an architecture or business decision as a structured ADR (Architecture Decision Record) with context, decision, consequences, and rejected alternatives. Use when the user says 'record a decision', 'new ADR', 'document this decision', 'we decided X', 'create a decision doc', or describes a choice that deserves to be memorialized.",
+      "source_sha256": "608bb1a5346189798e11c23d144820ec955f7cddf374607777fa3975dd970a21",
+      "source_path": "skills/new-decision/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d05458fe7b242fb6d84dd84328586a0ca72382eac871b35f348395a051c82d91": {
+      "description_zh": "处理会议、转录、原始笔记及自动转录邮件，保存会议记录并同步任务和仪表板。",
+      "source": "Processes a meeting and updates the vault. Use this skill whenever the user mentions a meeting, transcript, meeting notes, or automatic transcription email (Gemini, Fireflies, Otter). Trigger when the user says 'I had a meeting with X', 'process this transcript', 'save this meeting', 'log this call', or pastes raw notes. Every processed meeting results in a saved note + updated tasks + updated dashboard.",
+      "source_sha256": "d05458fe7b242fb6d84dd84328586a0ca72382eac871b35f348395a051c82d91",
+      "source_path": "skills/new-meeting/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "776629118686bb4408c447533297a2743cb8e4b51929ad3dbc2b261453dbed53": {
+      "description_zh": "分流inbox中无目的地文件，依据别名、领域映射及知识库约定提出位置，确认后才移动；原说明明确不自动移动。",
+      "source": "Triages the inbox/ folder — sorts files with no defined destination. Use this skill when the user says 'process inbox', 'what's in the inbox', 'organize inbox', 'triage files', 'clean inbox', or similar. Lists all files, identifies context via aliases and domain mapping, proposes a destination following vault conventions, and waits for confirmation before moving anything. Never moves files automatically.",
+      "source_sha256": "776629118686bb4408c447533297a2743cb8e4b51929ad3dbc2b261453dbed53",
+      "source_path": "skills/process-inbox/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
