@@ -29689,6 +29689,1086 @@
       "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
       "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f70c158cbc12e68b11431c14fd8c75a9efe0d384d8a4187e665ee906f9738078": {
+      "description_zh": "使用EODHD对单家公司综合分析资料、基本面、价格、新闻情感、内部人活动与技术指标，形成结构化简报。",
+      "source": "Comprehensive single-company analysis using EODHD data — profile, fundamentals, price action, news sentiment, insider activity, and technicals, presented as a structured company brief. Invoke as /eodhd-analyze <ticker>.",
+      "source_sha256": "f70c158cbc12e68b11431c14fd8c75a9efe0d384d8a4187e665ee906f9738078",
+      "source_path": "skills/eodhd-analyze/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65d1859af7c1837fe50a2ede73d0a76aac563fa7e0f7f3cefd67d3d465aa4fe0": {
+      "description_zh": "通过EODHD API获取历史价格、基本面、期权、技术指标、新闻、宏观、公司事件、ESG、风险、银行、国债和交易时间，用于财务分析与工具开发。",
+      "source": "Fetch financial data from EODHD API — historical prices, fundamentals, options, technical indicators, news, sentiment, macro indicators, corporate events, ESG scores, risk analytics, bank data, US Treasury rates, and trading hours. Use when the user asks for stock prices, company fundamentals, financial analysis, market data, earnings, dividends, splits, IPOs, insider transactions, screener, or building financial tools with EODHD data.",
+      "source_sha256": "65d1859af7c1837fe50a2ede73d0a76aac563fa7e0f7f3cefd67d3d465aa4fe0",
+      "source_path": "skills/eodhd-api/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e786ae70f23b347d12f5a32b88b69aa403fc98aaf35535836db5deb2053bf3a5": {
+      "description_zh": "使用EODHD并排比较多家企业估值、财务、盈利、表现与股息，生成对照表。",
+      "source": "Side-by-side comparison of two or more companies using EODHD data — valuation, financials, profitability, performance, and dividends in comparison tables. Invoke as /eodhd-compare <ticker1> <ticker2> ...",
+      "source_sha256": "e786ae70f23b347d12f5a32b88b69aa403fc98aaf35535836db5deb2053bf3a5",
+      "source_path": "skills/eodhd-compare/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23921d847d93597781064b3511a2d20bbb27cc2c025bf39346e3b71a2b413713": {
+      "description_zh": "使用EODHD生成指定国家或地区宏观仪表板，汇总GDP、CPI、失业、利率、国债曲线、实际收益及事件。",
+      "source": "Macro-economic dashboard using EODHD data — GDP, CPI, unemployment, interest rates, Treasury yield curve, real yields, and the economic events calendar. Invoke as /eodhd-macro [country or region].",
+      "source_sha256": "23921d847d93597781064b3511a2d20bbb27cc2c025bf39346e3b71a2b413713",
+      "source_path": "skills/eodhd-macro/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7515cdc9c3dafe53fc41874b692672a0b21d7b7f1395d8f9044fbff59aeef3fb": {
+      "description_zh": "通过EODHD汇总地区主要指数、板块、国债曲线、宏观与商品，形成市场概览。",
+      "source": "Comprehensive market overview using EODHD data — major indices, sector performance, Treasury yield curve, macro snapshot, and commodities. Invoke as /eodhd-market [region].",
+      "source_sha256": "7515cdc9c3dafe53fc41874b692672a0b21d7b7f1395d8f9044fbff59aeef3fb",
+      "source_path": "skills/eodhd-market/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "848c3c8e54a074b6cda81d1c5f451258411687af3723e0a31e38f8bd9e473b57": {
+      "description_zh": "按市值、估值、股息、板块、交易所和技术信号筛选EODHD股票，并考虑币种阈值。",
+      "source": "Screen stocks by fundamental and technical criteria using the EODHD screener — market cap, P/E, dividend yield, sector, exchange, and signals, with currency- aware thresholds. Invoke as /eodhd-screen <criteria>.",
+      "source_sha256": "848c3c8e54a074b6cda81d1c5f451258411687af3723e0a31e38f8bd9e473b57",
+      "source_path": "skills/eodhd-screen/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc1cf717934f8938a0c8e3d61a0f0859bda3a944c7cfe09a8f1a9147207b6ae6": {
+      "description_zh": "生成GDP、CPI、失业、利率、国债、贸易余额和事件的宏观仪表板。",
+      "source": "Macro-economic dashboard — GDP, CPI, unemployment, interest rates, Treasury yields, trade balance, and economic events calendar. Use when the user asks about the economy, macro trends, interest rates, or economic indicators.",
+      "source_sha256": "dc1cf717934f8938a0c8e3d61a0f0859bda3a944c7cfe09a8f1a9147207b6ae6",
+      "source_path": "skills/macro-dashboard/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89cfeef8326f93c8c4c355bc28e87673eb2efaa60838d8cd96319935543ca243": {
+      "description_zh": "生成大盘、板块、涨跌、宏观、国债和商品的市场概览，为每日摘要或投资背景提供资料。",
+      "source": "Generate a broad market overview — major indices, sector performance, top movers, macro indicators, Treasury rates, and commodities. Use when the user asks \"how's the market?\", wants a daily market summary, or needs a macro context for investment decisions.",
+      "source_sha256": "89cfeef8326f93c8c4c355bc28e87673eb2efaa60838d8cd96319935543ca243",
+      "source_path": "skills/market-overview/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d3eabc087e41268a1f9bc6dc8a04f0d03858d6c7d47b815c3ff41c8f4030010": {
+      "description_zh": "依据EODHD Marketplace期权数据分析链、隐含波动、希腊值与策略收益。",
+      "source": "Analyze options chains, implied volatility, Greeks, and strategy payoffs using EODHD Marketplace options data. Use when the user asks about options, implied volatility, Greeks, or options strategies.",
+      "source_sha256": "5d3eabc087e41268a1f9bc6dc8a04f0d03858d6c7d47b815c3ff41c8f4030010",
+      "source_path": "skills/options-analyzer/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b513de3da8f55689cbefc2cbc597d1e80f547d73cb458811ed8796de97c2dadd": {
+      "description_zh": "结合技术指标、情感、内部人提醒、ESG和波动评估投资组合风险及持仓风险回报。",
+      "source": "Analyze portfolio risk — technical indicators, sentiment shifts, insider alerts, ESG scores, and volatility metrics. Use when the user asks about portfolio risk, wants to assess holdings, or needs risk/reward analysis.",
+      "source_sha256": "b513de3da8f55689cbefc2cbc597d1e80f547d73cb458811ed8796de97c2dadd",
+      "source_path": "skills/portfolio-risk/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3df731798051180e72803e79fbb8acd74141984f9a5c1fc970249297e236c4c2": {
+      "description_zh": "使用EODHD按市值、估值、股息、板块与信号等基本面技术条件筛选股票。",
+      "source": "Screen stocks by fundamental and technical criteria using EODHD screener — filter by market cap, P/E, dividend yield, sector, signals, and more. Use when the user wants to find stocks matching specific criteria.",
+      "source_sha256": "3df731798051180e72803e79fbb8acd74141984f9a5c1fc970249297e236c4c2",
+      "source_path": "skills/stock-screener/SKILL.md",
+      "package_sha256": "51a3bc299212d87296d732683678255eff668ac90f0f6d705ee0d9370676a95d",
+      "source_package": "EODHD Financial Data APIs-0.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28fae2fa73bd9cc9e2eb5cebec1d825cdb3d44cb3cac4f77d3aef12c0aa96551": {
+      "description_zh": "引导将AWS来源账户接入Eon，查看连接、部署CloudFormation IAM角色、登记角色ARN并发现资源。",
+      "source": "Guide users through connecting their AWS source accounts to the Eon platform. Covers viewing existing connections, deploying the Eon CloudFormation stack to provision the IAM role, registering the role ARN with Eon, and triggering resource discovery.",
+      "source_sha256": "28fae2fa73bd9cc9e2eb5cebec1d825cdb3d44cb3cac4f77d3aef12c0aa96551",
+      "source_path": "skills/aws-onboarding/SKILL.md",
+      "package_sha256": "5792129a358ffabe9cf25acf6d0b03d793f40c6aff5336e08ce21a8ec37e42a4",
+      "source_package": "Eon-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb7e215c560082e33503ead59a850d4eab0a1c7a79e386a4f4251bac2ea5a6b3": {
+      "description_zh": "引导创建Eon备份政策，先查看既有政策，再选择类型、资源筛选、计划、保险库和保留期并提交。",
+      "source": "Guide users through creating a backup policy in Eon: choosing the policy type, defining the resource selector, configuring schedules with vaults and retention, and submitting the create request. Also covers viewing existing policies before creating a new one.",
+      "source_sha256": "eb7e215c560082e33503ead59a850d4eab0a1c7a79e386a4f4251bac2ea5a6b3",
+      "source_path": "skills/backup-policy-creation/SKILL.md",
+      "package_sha256": "5792129a358ffabe9cf25acf6d0b03d793f40c6aff5336e08ce21a8ec37e42a4",
+      "source_package": "Eon-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9e7c055d9623532f480371034be0cbdeeb82ab6e9e0d4e4605737069eb7bc9f": {
+      "description_zh": "查询Eon云资源消费，按账户、项目或部门及时间范围汇总GB、金额或积分，分析月度、资源、前N和环比支出。",
+      "source": "Answer Eon customer questions about cloud-resource consumption — how many GB/month or USD/credits an account, project, or department spent on EC2, RDS, S3, Azure, or GCP storage, across any time range, with per-month or per-resource breakdowns. Use whenever the user asks how much was consumed, who is spending the most, top-N resources by usage, or month-over-month cost trends.",
+      "source_sha256": "d9e7c055d9623532f480371034be0cbdeeb82ab6e9e0d4e4605737069eb7bc9f",
+      "source_path": "skills/cost-explorer-query/SKILL.md",
+      "package_sha256": "5792129a358ffabe9cf25acf6d0b03d793f40c6aff5336e08ce21a8ec37e42a4",
+      "source_package": "Eon-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "685d85a20e7ab2aef8229891d9be6b456368fd183084a43a8061024735def769": {
+      "description_zh": "引导将GCP组织、文件夹和项目接入Eon，准备环境、查看连接并发现资源。",
+      "source": "Guide users through onboarding their GCP cloud accounts to the Eon platform. Covers viewing existing connections, preparing the GCP environment, connecting organizations/folders/projects, and triggering resource discovery.",
+      "source_sha256": "685d85a20e7ab2aef8229891d9be6b456368fd183084a43a8061024735def769",
+      "source_path": "skills/gcp-onboarding/SKILL.md",
+      "package_sha256": "5792129a358ffabe9cf25acf6d0b03d793f40c6aff5336e08ce21a8ec37e42a4",
+      "source_package": "Eon-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe603626ecadc4c9e9340f4ecdda7391c4eb452085738371d75f4fc1e4abe735": {
+      "description_zh": "调查Eon保护资源的勒索、恶意软件和数据异常，读取扫描与图证据、确认干净恢复点和模板，经人工确认及多方审批交接执行批量恢复。",
+      "source": "Investigate ransomware, malware, and data-anomaly findings on Eon-protected resources, and build a remediation playbook to restore affected resources to their last verified-clean recovery point. Covers counting and listing infected resources, reading security-scan evidence and anomaly graphs, resolving a clean snapshot and restore template per resource, and executing a human-confirmed bulk restore including the multi-party-approval handoff. Use whenever the user asks about ransomware/malware/data-anomaly detections, infected resources, or wants to clean up, remediate, or recover from a security incident.",
+      "source_sha256": "fe603626ecadc4c9e9340f4ecdda7391c4eb452085738371d75f4fc1e4abe735",
+      "source_path": "skills/ransomware-remediation/SKILL.md",
+      "package_sha256": "5792129a358ffabe9cf25acf6d0b03d793f40c6aff5336e08ce21a8ec37e42a4",
+      "source_package": "Eon-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a6d39a85af6d96fd0a6f02b4d699eec8624c58685cce340326849f936014757": {
+      "description_zh": "维护覆盖股票的近期催化事件日历，包括盈利、会议、产品、监管与宏观事件，安排关注优先级。",
+      "source": "Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regulatory decisions, and macro events. Helps prioritize attention and position ahead of events. Triggers on \"catalyst calendar\", \"upcoming events\", \"what's coming up\", \"earnings calendar\", \"event calendar\", or \"catalyst tracker\".",
+      "source_sha256": "6a6d39a85af6d96fd0a6f02b4d699eec8624c58685cce340326849f936014757",
+      "source_path": "skills/catalyst-calendar/SKILL.md",
+      "package_sha256": "bc8186ea831474fd0da5dec3f79d0046552bfe14f64ae9ff098aeb810710c84b",
+      "source_package": "equity-research-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fdda509221b9db2b8c1f6a650af6b186285e9b799ebedf9bc5b416e1ed3e0f98": {
+      "description_zh": "通过公司研究、财务模型、估值、图表与最终报告五项独立任务生成首次股票研究报告，验证前提和依赖，交付文档、Excel、图表与Word。",
+      "source": "Create institutional-quality equity research initiation reports through a 5-task workflow. Tasks must be executed individually with verified prerequisites - (1) company research, (2) financial modeling, (3) valuation analysis, (4) chart generation, (5) final report assembly. Each task produces specific deliverables (markdown docs, Excel models, charts, or DOCX reports). Tasks 3-5 have dependencies on earlier tasks.",
+      "source_sha256": "fdda509221b9db2b8c1f6a650af6b186285e9b799ebedf9bc5b416e1ed3e0f98",
+      "source_path": "skills/initiating-coverage/SKILL.md",
+      "package_sha256": "bc8186ea831474fd0da5dec3f79d0046552bfe14f64ae9ff098aeb810710c84b",
+      "source_package": "equity-research-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e7ca7d3d698dd36f3792337e79f9cb6536f4851bfe17b7cf108dede2851888a": {
+      "description_zh": "维护持仓和观察名单投资论点，记录关键数据、催化与里程碑，依据新信息检查论点完整性。",
+      "source": "Maintain and update investment theses for portfolio positions and watchlist names. Track key data points, catalysts, and thesis milestones over time. Use when updating a thesis with new information, reviewing position rationale, or checking if a thesis is still intact. Triggers on \"update thesis for [company]\", \"is my thesis still intact\", \"thesis check\", \"add data point to [company]\", or \"review my positions\".",
+      "source_sha256": "6e7ca7d3d698dd36f3792337e79f9cb6536f4851bfe17b7cf108dede2851888a",
+      "source_path": "skills/thesis-tracker/SKILL.md",
+      "package_sha256": "bc8186ea831474fd0da5dec3f79d0046552bfe14f64ae9ff098aeb810710c84b",
+      "source_package": "equity-research-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b1d803fbb767ee1155304fe5a70ea1cc5a83a729079f0ce88993e7a1362bd2d4": {
+      "description_zh": "通过Observer MCP诊断在线Ergo节点性能、泄漏、内存、网络、事件扩散、重启和卡住进程，提供活性与时间观察并遵守可变更能力范围。",
+      "source": "Diagnose production issues on running Ergo Framework nodes through the MCP surface of the Observer application. Covers performance bottlenecks, process leaks, memory growth, network problems, event fanout, restart loops and stuck processes. Provides the resource and tool catalog, liveness analysis, watching over time, and the capability model that bounds what may be changed. Use when investigating issues on live Ergo nodes.",
+      "source_sha256": "b1d803fbb767ee1155304fe5a70ea1cc5a83a729079f0ce88993e7a1362bd2d4",
+      "source_path": "skills/devops/SKILL.md",
+      "package_sha256": "dd45512cc23e90a16f73ffdbff0fd945e05a56f04fbe0d70f4a9b65981ed8d3f",
+      "source_package": "ergo-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec1cfaba264dc34868ae8d293aa62318fbf874dffc5fe1a1dfe395545b43ae16": {
+      "description_zh": "使用Go Ergo构建分布式Actor系统，处理生命周期、监督、消息、I/O、集群、序列化、测试及扩展库。",
+      "source": "Build distributed actor-based systems with Ergo Framework in Go. Covers actor lifecycle, supervision, message patterns, meta processes for I/O, cluster configuration, EDF serialization, unit testing with fluent assertions, and extension libraries (health, leader, metrics, observer, pulse, radar). Use when implementing Ergo applications or working with actor-based distributed systems.",
+      "source_sha256": "ec1cfaba264dc34868ae8d293aa62318fbf874dffc5fe1a1dfe395545b43ae16",
+      "source_path": "skills/framework/SKILL.md",
+      "package_sha256": "dd45512cc23e90a16f73ffdbff0fd945e05a56f04fbe0d70f4a9b65981ed8d3f",
+      "source_package": "ergo-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8523adbf63e5d87e18c5913dcec3f1f1118d2234f53aded6b737cf3d3c0fc5f7": {
+      "description_zh": "指导ESP32选型、ESP-IDF与PlatformIO固件，处理内存、GPIO安全、LVGL和Waveshare硬件及优化C或C++。",
+      "source": "Expert Embedded Systems guidance for ESP32 hardware, ESP-IDF firmware, and PlatformIO projects. Use for chip selection (S3, C3, C6, etc.), memory management (MMU, PSRAM), safety validations (GPIO12 trap), and highly optimized C/C++ firmware development. Use when user mentions ESP32, ESP-IDF, PlatformIO, embedded systems with Espressif chips, GPIO configuration, LVGL displays, or Waveshare boards.",
+      "source_sha256": "8523adbf63e5d87e18c5913dcec3f1f1118d2234f53aded6b737cf3d3c0fc5f7",
+      "source_path": "skills/esp32/SKILL.md",
+      "package_sha256": "43ae69afbc1bca13045e08251f3c65437391812057e4c593b879eace052e4e51",
+      "source_package": "ESP32-AI-Agent-Skill-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15b3156a578ff5613e465f60ebb6d6aa59c4380eaa813a20449b7ce2e6cdf089": {
+      "description_zh": "按Jira键实时获取工单并新增估算历史完整记录，无需重新同步；覆盖旧记录前确认，字段修改另用edit。",
+      "source": "Add tickets to the estimator history by Jira key — fetched live from Jira and written as new records — without re-running `sync`. Use when the user wants to add / record specific tickets into the history (e.g. \"add ABC-7777 to history\", \"add these tickets to the estimator history\", \"add missing tickets 7777, 7780\"). Adds whole records (overrides an existing one only after confirmation); field-level editing is the edit skill.",
+      "source_sha256": "15b3156a578ff5613e465f60ebb6d6aa59c4380eaa813a20449b7ce2e6cdf089",
+      "source_path": "skills/add/SKILL.md",
+      "package_sha256": "aa7c6b0858aa7b6611d9c279899eb4a786856ba93102c765f366b5925c0ca4ea",
+      "source_package": "estimator-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c8b494424e93048007b038d7ca03b21780664e72fdd7396da5e063b901fdc6f": {
+      "description_zh": "按Jira键修改既有估算历史字段或删除记录，不新增记录。",
+      "source": "Edit fields of existing estimator history records, or delete records, selected by Jira key. Use when the user wants to change / fix / update a stored record's fields or remove records (e.g. \"edit ABC-7777\", \"fix the story points on ABC-1\", \"delete ABC-2, ABC-3 from history\"). Does NOT add new records.",
+      "source_sha256": "1c8b494424e93048007b038d7ca03b21780664e72fdd7396da5e063b901fdc6f",
+      "source_path": "skills/edit/SKILL.md",
+      "package_sha256": "aa7c6b0858aa7b6611d9c279899eb4a786856ba93102c765f366b5925c0ca4ea",
+      "source_package": "estimator-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff44f31d3d30f1b8b80039dedfd4e144d55ceb40ab1701cae0e0cdda95b04117": {
+      "description_zh": "通过Atlassian MCP获取Jira工单，与团队历史数据比较建议故事点并记录结果。",
+      "source": "Estimate a Jira ticket's story points using the team's historical dataset. Use when the user asks to estimate/size/point a ticket (e.g. \"estimate ABC-7777\", \"how many points is this ticket\", \"estimate 7777\", or pastes a Jira ticket link). Fetches the ticket via the Atlassian MCP, compares it to ~/.estimator history, suggests an estimate, then records the outcome.",
+      "source_sha256": "ff44f31d3d30f1b8b80039dedfd4e144d55ceb40ab1701cae0e0cdda95b04117",
+      "source_path": "skills/estimate/SKILL.md",
+      "package_sha256": "aa7c6b0858aa7b6611d9c279899eb4a786856ba93102c765f366b5925c0ca4ea",
+      "source_package": "estimator-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01f145016607e99ae5238a7d935d0c29080657bdba77f00252c09d9c8fab4532": {
+      "description_zh": "把估算历史CSV及可选配置导出到用户路径，用于备份、快照与复制。",
+      "source": "Export / back up the estimator's stored dataset (history.csv, and optionally config.json) to a file path the user chooses. Use when the user wants to back up, export, snapshot, or copy out their estimation history (e.g. \"export my history to ~/backups\", \"back up the estimator data\", \"save a copy of the history before resetting\"). Counterpart to the import skill.",
+      "source_sha256": "01f145016607e99ae5238a7d935d0c29080657bdba77f00252c09d9c8fab4532",
+      "source_path": "skills/export/SKILL.md",
+      "package_sha256": "aa7c6b0858aa7b6611d9c279899eb4a786856ba93102c765f366b5925c0ca4ea",
+      "source_package": "estimator-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93e3cb82fb602f71c625fb7d741d0398f299d6b83a79e52bc33f323d1db518fd": {
+      "description_zh": "按Jira键查找并显示估算历史中的单条或多条记录。",
+      "source": "Look up one or more records in the estimator history by Jira key. Use when the user wants to find / show / inspect a stored ticket record (e.g. \"find ABC-7777 in history\", \"show the record for 7777\", \"look up ABC-1, ABC-2\").",
+      "source_sha256": "93e3cb82fb602f71c625fb7d741d0398f299d6b83a79e52bc33f323d1db518fd",
+      "source_path": "skills/find/SKILL.md",
+      "package_sha256": "aa7c6b0858aa7b6611d9c279899eb4a786856ba93102c765f366b5925c0ca4ea",
+      "source_package": "estimator-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98262217268727f44b552ef3e2a34c087884ea2863a510f42037c7bab606e309": {
+      "description_zh": "从已有CSV导入估算历史，支持合并或替换当前记录，而非重新从Jira构建。",
+      "source": "Import an existing history CSV into the estimator from a file path, instead of building it with `sync`. Use when the user wants to load / import an existing estimation history (e.g. \"import my history from ./history.csv\", \"load this dataset\", \"import estimator history\"). Supports merging into or replacing the current history.",
+      "source_sha256": "98262217268727f44b552ef3e2a34c087884ea2863a510f42037c7bab606e309",
+      "source_path": "skills/import/SKILL.md",
+      "package_sha256": "aa7c6b0858aa7b6611d9c279899eb4a786856ba93102c765f366b5925c0ca4ea",
+      "source_package": "estimator-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5fcc510e2eed8192775b28ce3892ef5e61a942892b6d104d78a2b0174ce902d": {
+      "description_zh": "通过Atlassian MCP抓取Jira已解决工单，首次建立或定期更新估算历史数据集。",
+      "source": "Build or update the estimator's history dataset by fetching Jira tickets via the Atlassian MCP — both the initial setup and periodic top-ups (new or missing resolved tickets). Use when the user wants to set up the estimator, or (re)build / refresh / sync the estimation history from Jira.",
+      "source_sha256": "b5fcc510e2eed8192775b28ce3892ef5e61a942892b6d104d78a2b0174ce902d",
+      "source_path": "skills/sync/SKILL.md",
+      "package_sha256": "aa7c6b0858aa7b6611d9c279899eb4a786856ba93102c765f366b5925c0ca4ea",
+      "source_package": "estimator-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18142b620e8dadd5d4e2ab20257e75784ff489eb387b8346a9e0da65d8c20eef": {
+      "description_zh": "为货运批次准备EUDR尽调证据包，检查地块和供应商资料缺口，整理可申报与不可申报材料及附件二声明。",
+      "source": "Prepare an EUDR evidence pack for a consignment — check the plots, find the gaps in the supplier file, and assemble what is filable and what is not. Use when someone asks to prepare, assemble, or draft EUDR evidence, a due diligence file, or an Annex II statement for a shipment.",
+      "source_sha256": "18142b620e8dadd5d4e2ab20257e75784ff489eb387b8346a9e0da65d8c20eef",
+      "source_path": "skills/evidence-pack/SKILL.md",
+      "package_sha256": "b4b82252427c8315bea64b0f2a80592b601b16525a8d4d484cab5f460fef53fa",
+      "source_package": "EUDR compliance-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b70053a31475732de5755d5de59559d2162c012ccae2056045afc7f970a02da": {
+      "description_zh": "查找仍缺少 EUDR 第9(1)条所要求资料的供应商，并为各供应商起草补件请求；适用于核对缺失信息、催办事项或判断供应商档案是否具备申报资料。",
+      "source": "Find which suppliers still need documentation under EUDR Article 9(1), and draft what to request from each. Use when asked which suppliers are missing information, what to chase, or whether a supplier file is ready to file on.",
+      "source_sha256": "1b70053a31475732de5755d5de59559d2162c012ccae2056045afc7f970a02da",
+      "source_path": "skills/supplier-gaps/SKILL.md",
+      "package_sha256": "b4b82252427c8315bea64b0f2a80592b601b16525a8d4d484cab5f460fef53fa",
+      "source_package": "EUDR compliance-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b71c6bf2a7c54cf2a8b876e7562f42a35bc1c01fcb530c0bb9babd7ab2100ebe": {
+      "description_zh": "核验 EUDR 尽职调查声明或供应商报告背后的证据：检查签名、重新计算内容地址，并逐页查看所依据的卫星事实；用于审计他人提供的声明、回执或证据完整性。",
+      "source": "Verify the evidence behind an EUDR due diligence statement or supplier report — check the signature, re-derive the content address, and page the satellite facts it rests on. Use when asked to verify, audit, or check the integrity of a statement, receipt, or evidence someone else supplied.",
+      "source_sha256": "b71c6bf2a7c54cf2a8b876e7562f42a35bc1c01fcb530c0bb9babd7ab2100ebe",
+      "source_path": "skills/verify-statement/SKILL.md",
+      "package_sha256": "b4b82252427c8315bea64b0f2a80592b601b16525a8d4d484cab5f460fef53fa",
+      "source_package": "EUDR compliance-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c73fcb3c3ad314475a4f70319ce9f3bb0ebf5d1fc3bc368a3d60c55e03227d3": {
+      "description_zh": "通过 Eversince 创意代理规划并执行图像、视频和音频任务，在专用环境中协调 AI 模型、工具、技能与记忆；适用于单次创作或代理间工作流中的持续创意工作。",
+      "source": "Eversince is a creative agent that plans and executes across image, video, and audio. It orchestrates the latest AI models and operates in a purpose-built environment with tools, skills, and memory. Works for one-off tasks or as a creative employee in any agent-to-agent workflow.",
+      "source_sha256": "2c73fcb3c3ad314475a4f70319ce9f3bb0ebf5d1fc3bc368a3d60c55e03227d3",
+      "source_path": "skills/eversince/SKILL.md",
+      "package_sha256": "86e1bc061ac1aad76f3fdce3783b714d3043cef940d6fedbd3cffc74e5487d44",
+      "source_package": "Eversince-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f34feb046597a59b2c2745876ee3a6960f16cca1b01ec643939b479261a1295f": {
+      "description_zh": "使用 Exa Agent 开展多步骤网络研究、名单整理、资料补全和结构化输出，续接已有研究并验证覆盖范围；可接入 fiber、financial_datasets、similarweb、baselayer、affiliate、particle 和 jinko 等数据提供方。",
+      "source": "Use Exa Agent for multi-step web research, list-building, enrichment, structured output, run continuation, and coverage validation. Exa Agent can access additional data providers: fiber, financial_datasets, similarweb, baselayer, affiliate, particle, and jinko.",
+      "source_sha256": "f34feb046597a59b2c2745876ee3a6960f16cca1b01ec643939b479261a1295f",
+      "source_path": "skills/exa-agent/SKILL.md",
+      "package_sha256": "cd4f21a3bc79be0eabbe671969c930c4f17eca12508ae3678c2ae2b8e9203a50",
+      "source_package": "Exa Deep Research-3.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55804f4fe80101d13f6e838c6c9ce23804705d7f7be523f622125287f1f86f95": {
+      "description_zh": "使用 Exa 做需要多轮检索的深入研究，适用于销售线索、文献综述、专题调查和竞争分析，以及一次搜索不足以覆盖的问题。",
+      "source": "Deep research powered by Exa. Use for lead generation, literature reviews, deep dives, competitive analysis, or any query where one search falls short, including phrases like 'research this', 'find everything about', 'find me all', or 'deep dive on'.",
+      "source_sha256": "55804f4fe80101d13f6e838c6c9ce23804705d7f7be523f622125287f1f86f95",
+      "source_path": "skills/search/SKILL.md",
+      "package_sha256": "cd4f21a3bc79be0eabbe671969c930c4f17eca12508ae3678c2ae2b8e9203a50",
+      "source_package": "Exa Deep Research-3.4.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc283eea2452f4620deb24efb353a3fd9192a50b2999757db76afe8fd8167d2b": {
+      "description_zh": "根据自然语言生成 Excalidraw 架构图、系统图、组件图、服务地图或框箭头关系图，适用于绘图和系统可视化请求。",
+      "source": "Generates Excalidraw architecture diagrams from natural language. Triggers on: \"draw a diagram\", \"architecture diagram\", \"visualize the system\", \"excalidraw\", \"system diagram\", \"generate diagram\", \"box and arrow diagram\", \"component diagram\", \"service map\"",
+      "source_sha256": "cc283eea2452f4620deb24efb353a3fd9192a50b2999757db76afe8fd8167d2b",
+      "source_path": "skills/excalidraw/SKILL.md",
+      "package_sha256": "8d295047dfb424eab2fc20ca857275a7cd684f21c7a3e8fc71dcf32177a46b33",
+      "source_package": "excalidraw-plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8dc71699737bdf26741ef7accc1a8ce265656536439c012ec14c1c035f66200": {
+      "description_zh": "通过付费 EAS 服务构建并提交 Expo 原生应用至 iOS App Store、Google Play 和 TestFlight，配置 eas.json 构建与提交档案、版本号和构建号，并管理商店元数据与 ASO；网站和 API 路由发布交由 eas-hosting。",
+      "source": "EAS service (paid). Deploy Expo apps to the app stores with EAS - build and submit to the iOS App Store, Google Play Store, and TestFlight, configure eas.json build and submit profiles, manage app versions and build numbers, and publish App Store metadata and ASO. Use whenever the user wants to deploy, release, or ship an app to production or the app stores, is preparing a production build, running eas build or eas submit, shipping to TestFlight, bumping version or build numbers, or setting up store listing metadata. For deploying an Expo website or API routes, use the eas-hosting skill.",
+      "source_sha256": "f8dc71699737bdf26741ef7accc1a8ce265656536439c012ec14c1c035f66200",
+      "source_path": "skills/eas-app-stores/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5552d3407e5abae49b355080ad8da57acb1ae073a90bdbb4642f430c28a5b2d2": {
+      "description_zh": "通过付费 EAS Hosting 发布 Expo 网站和 Expo Router API 路由，导出网页包、部署生产或 PR 预览、管理环境机密与自定义域名，并处理 Cloudflare Workers 运行环境；也涵盖 +api.ts、HTTP 方法、请求处理和 CORS，原生商店发布交由 eas-app-stores。",
+      "source": "EAS service (paid). Deploy Expo websites and Expo Router API routes to EAS Hosting - export the web bundle, run eas deploy for production and PR preview URLs, manage environment secrets and custom domains, and work within the Cloudflare Workers runtime. Also covers authoring API routes (+api.ts handlers, HTTP methods, request handling, CORS). Use when deploying an Expo web app or API routes, setting up EAS Hosting, or configuring hosting environments and domains. Not for native builds or store releases - use the eas-app-stores skill for those.",
+      "source_sha256": "5552d3407e5abae49b355080ad8da57acb1ae073a90bdbb4642f430c28a5b2d2",
+      "source_path": "skills/eas-hosting/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20467e1b0d676b8fcbeb6072a96b623ae1b1f694473bc7d27da4746c8b6218f3": {
+      "description_zh": "配置和使用付费 EAS Observe：接入 expo-observe、页面指标、自定义事件、错误报告和采样参数，通过 EAS CLI 查询会话、路由、事件及版本指标，并解释冷暖启动、TTR、TTI、更新下载和设备网络参数以排查性能问题；也适用于第三方包中的 Observe 集成。",
+      "source": "EAS service (paid). Use for anything related to EAS Observe - adding `expo-observe` to an Expo project (AppMetricsRoot/ObserveRoot HOC, markInteractive and ObserveInteractiveMarker, the useObserve hook, the Expo Router / React Navigation integrations for per-route metrics, user-defined events via `Observe.logEvent`, error reporting via ObserveErrorBoundary and `Observe.reportError`, and runtime config such as sampleRate and dispatchInDebug), querying via the EAS CLI (`eas observe:metrics-summary`, `observe:metrics`, `observe:routes`, `observe:events`, `observe:session`, `observe:versions`), interpreting the resulting metrics (cold/warm launch, TTR, TTI, navigation cold/warm TTR, update download, and the TTI frameRate/device/network params for triaging slow startups), or shipping an Observe integration inside a third-party package.",
+      "source_sha256": "20467e1b0d676b8fcbeb6072a96b623ae1b1f694473bc7d27da4746c8b6218f3",
+      "source_path": "skills/eas-observe/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e079ff19c68b3af7c4d38fde88cd4192203995ffecb514035113b2a222de8a06": {
+      "description_zh": "在付费 EAS 云端运行和控制远程 iOS 或 Android 模拟器，支持安装应用、截图、浏览器流式查看、实时重载及代理操作；适用于缺少本地模拟器或需要远程、可共享会话的场景，macOS 普通本地模拟器请求不自动采用，且不用于实体设备、网页预览或 EAS Build/Update。",
+      "source": "EAS service (paid). Run and control a user's app on a remote iOS/Android simulator hosted on EAS cloud. Read before running any `eas simulator:*` commands - it has the current syntax for this experimental API. Use whenever the user needs a simulator they can't run locally - 'run my app on a cloud simulator', 'use eas simulator to run/install/screenshot my app', 'I'm on Linux/Cursor and need an iOS device', 'no sim on this box / headless CI', 'let an agent click through my app and screenshot it', 'test my dev build on a remote sim with live reload', 'stream a sim to my browser' - even when they don't say 'EAS Simulator' or 'cloud'. On a host WITHOUT a local simulator (Linux, CI, cloud sandbox) it's the default; on macOS, do NOT auto-trigger for a plain 'run on the simulator' - use it only for a cloud/remote/shareable sim, an iOS version they lack, or an agent-driven session. NOT for local sims (expo run:ios, Xcode, Android Studio), EAS Build/Update, web preview, or physical devices.",
+      "source_sha256": "e079ff19c68b3af7c4d38fde88cd4192203995ffecb514035113b2a222de8a06",
+      "source_path": "skills/eas-simulator/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "77428809d55beb531ad4f23da6532e41eab38e4d2d247a689e4909f1cb4bfa8c": {
+      "description_zh": "通过付费 EAS Update Insights 检查已发布更新的崩溃率、安装与启动次数、独立用户、包大小，以及各频道内置版本与 OTA 用户占比；用于判断灰度发布健康度或设置 CI 更新健康门槛。",
+      "source": "EAS service (paid). Check the health of published EAS Update: crash rates, install/launch counts, unique users, payload size, and the split between embedded and OTA users per channel. Use when the user asks how an update is performing, whether a rollout is healthy, how many users are on the embedded build vs OTA, or wants to gate CI on update health.",
+      "source_sha256": "77428809d55beb531ad4f23da6532e41eab38e4d2d247a689e4909f1cb4bfa8c",
+      "source_path": "skills/eas-update-insights/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "985570ce368a8c039f505bd96435024dbbcb574c344cafd4ceb071e67380feb0": {
+      "description_zh": "使用付费 EAS Update、expo-updates 与 EAS CLI 配置和发布 JavaScript 及资源的 OTA 更新，管理预览、预发布和生产频道，解释分支、频道与运行版本，并排查安装应用或 TestFlight 冷启动后仍显示旧代码的问题；采用率和崩溃监测交由 eas-update-insights。",
+      "source": "EAS service (paid). Configure and use EAS Update for over-the-air JavaScript and asset updates with expo-updates and EAS CLI. Use when setting up OTA updates, running eas update:configure or eas update, publishing to preview/staging/production channels, explaining branches/channels/runtime versions, testing updates, or debugging why an installed build still shows old code. Load for TestFlight, preview, or production updates that do not appear, including questions about cold launches or reopening the app. Not for update health metrics; use eas-update-insights for adoption, crashes, and rollout monitoring.",
+      "source_sha256": "985570ce368a8c039f505bd96435024dbbcb574c344cafd4ceb071e67380feb0",
+      "source_path": "skills/eas-update/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b063ef10687b06533727d77e9efae4c95359b50430c560e0382f04ff960e5ffd": {
+      "description_zh": "理解并编写 Expo 项目的付费 EAS 工作流 YAML，适用于 CI/CD、.eas/workflows/、构建流水线和部署自动化。",
+      "source": "EAS service (paid). Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when the user asks about CI/CD or workflows in an Expo or EAS context, mentions .eas/workflows/, or wants help with EAS build pipelines or deployment automation.",
+      "source_sha256": "b063ef10687b06533727d77e9efae4c95359b50430c560e0382f04ff960e5ffd",
+      "source_path": "skills/eas-workflows/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53906418664066ac7aa182b4bd40331565c48fe8573d71c44b897f9609fa87d5": {
+      "description_zh": "在 React Native 与 Expo 中实现动画和手势，依次判断是否需要动画、执行线程、属性、弹簧或时序、手势交接及降级方式，使用 Reanimated、Gesture Handler、Expo Router 与 expo-haptics；用于弹层、转场、按压反馈、触觉反馈及设备动画卡顿修复，网页动画交由 animate。",
+      "source": "Framework (OSS). Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.",
+      "source_sha256": "53906418664066ac7aa182b4bd40331565c48fe8573d71c44b897f9609fa87d5",
+      "source_path": "skills/expo-animation/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f023d38d5f05c91318d064f3a3bae1ef959c5299de7c0415892e3a30e4a08e80": {
+      "description_zh": "为 Expo 应用增加 iOS App Clip 目标，配置 AASA、apple-app-site-association、智能应用横幅等，让轻量 Clip 能通过 URL 与主应用配合启动。",
+      "source": "Framework (OSS). Add an iOS App Clip target to an Expo app. Use when the user mentions App Clip, AASA, apple-app-site-association, appclips, smart app banner, or wants to ship a lightweight iOS Clip invoked from a URL alongside their parent app.",
+      "source_sha256": "f023d38d5f05c91318d064f3a3bae1ef959c5299de7c0415892e3a30e4a08e80",
+      "source_path": "skills/expo-app-clip/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "127f3b856682ab6b0e6bf876a41ad5fba48a51fe31eb3ea16f2f232af476ef89": {
+      "description_zh": "将 Expo 与 React Native 集成到已有 iOS 或 Android 原生应用，涵盖隔离式与集成式方案，以及 Kotlin/Swift 项目中的嵌入、AAR 和 XCFramework。",
+      "source": "Framework (OSS). Integrate Expo and React Native into an existing native iOS or Android app. Use when the user mentions brownfield, embedding React Native in a native app, AAR/XCFramework, or adding Expo to an existing Kotlin/Swift project. Covers both the isolated approach and the integrated approach.",
+      "source_sha256": "127f3b856682ab6b0e6bf876a41ad5fba48a51fe31eb3ea16f2f232af476ef89",
+      "source_path": "skills/expo-brownfield/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "015d5ee4acf703065eab81a3d8853c4fd8ee4c5fac6e8048feceeae332f66535": {
+      "description_zh": "实现或调试 Expo 的网络请求、API 调用与数据获取，涵盖 fetch、React Query、SWR、错误处理、缓存、离线支持及 Expo Router 的 useLoaderData。",
+      "source": "Framework (OSS). Use when implementing or debugging ANY network request, API call, or data fetching. Covers fetch API, React Query, SWR, error handling, caching, offline support, and Expo Router data loaders (`useLoaderData`).",
+      "source_sha256": "015d5ee4acf703065eab81a3d8853c4fd8ee4c5fac6e8048feceeae332f66535",
+      "source_path": "skills/expo-data-fetching/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aadd99adaf1f168f8a7dcd5740c1ae0b08b98bb7b48958ebd6c94dacbae165cd": {
+      "description_zh": "在 Expo 应用内建立和维护设计系统，统一颜色、间距、字体、圆角、阴影和动画令牌，规范组件变体、尺寸与状态，并判断何时提取共享组件；用于主题组织、NativeWind/Tamagui/Restyle/Unistyles 扩展、组件库和硬编码样式漂移审计，平台规范及新项目目录分别交由相关技能。",
+      "source": "Framework (OSS). Build and maintain a design system inside an Expo app - a reusable theme of design tokens (color, spacing, typography, radius, shadow, motion), reusable component structure with variant/size/state prop conventions, and rules for when to extract a repeated view into a shared component. Use when creating or organizing theme files and design tokens (theme.ts / theme/), extending an existing theme or styling library (NativeWind, Tamagui, Restyle, Unistyles) in its own idiom, standardizing styles so screens (including AI-generated ones) look consistent and polished, building an in-app component library, or auditing an app for design-system drift (hardcoded colors, spacing, fonts). For platform styling specifics (semantic colors, HIG rules, native controls) use expo-native-ui; for folder layout of a new app use expo-project-structure.",
+      "source_sha256": "aadd99adaf1f168f8a7dcd5740c1ae0b08b98bb7b48958ebd6c94dacbae165cd",
+      "source_path": "skills/expo-design-system/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abc8b1273e2917f59149abff355042d90608bc81ecbccf1cdf54bb1dcbb9d49f": {
+      "description_zh": "在本地或通过 TestFlight 构建并分发 Expo 开发客户端供内部测试；生产 TestFlight 和商店提交交由 eas-app-stores。",
+      "source": "Framework (OSS). Build and distribute Expo development clients locally or via TestFlight for internal testing. For production TestFlight releases and store submission, use the eas-app-stores skill.",
+      "source_sha256": "abc8b1273e2917f59149abff355042d90608bc81ecbccf1cdf54bb1dcbb9d49f",
+      "source_path": "skills/expo-dev-client/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c54e285a692ac056a5e71cf16b2e1c796f1c3411c3bff637107d1f5618a8960": {
+      "description_zh": "使用 Expo DOM 组件在原生 WebView 中运行网页代码，并在网页端直接复用，逐步迁移网页代码到原生；整站迁移交由 expo-web-to-native。",
+      "source": "Framework (OSS). Use Expo DOM components to run web code in a webview on native and as-is on web. Migrate web code to native incrementally. For the end-to-end migration of a whole web app, use the expo-web-to-native skill.",
+      "source_sha256": "4c54e285a692ac056a5e71cf16b2e1c796f1c3411c3bff637107d1f5618a8960",
+      "source_path": "skills/expo-dom/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85d435b413a5bb05c96393b700bd6ec456e5414587c95296ab0dcb5417f12226": {
+      "description_zh": "使用 expo/examples 中约70个官方 with-* 集成示例，为现有 Expo 应用接入 Stripe、Clerk、Supabase、地图、SQLite 等库或服务，采用匹配版本的参考模式；也可通过 npx create-expo --example 初始化项目。",
+      "source": "Framework (OSS). Expo's official example projects - the expo/examples repo of ~70 `with-*` integrations (Stripe, Clerk, Supabase, OpenAI, maps, Reanimated, SQLite, Skia, NativeWind, and more). Use when integrating a third-party library or service into an existing Expo app and you want the canonical, version-matched pattern to adapt, or when scaffolding a new project from one with `npx create-expo --example`.",
+      "source_sha256": "85d435b413a5bb05c96393b700bd6ec456e5414587c95296ab0dcb5417f12226",
+      "source_path": "skills/expo-examples/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38ffea08151f50eef82b2ee53230c1ec6fea7cf49173950b8badf4de17595956": {
+      "description_zh": "使用 Expo Modules API 编写或修改 Swift、Kotlin、TypeScript 原生模块和视图，涵盖定义 DSL、共享对象、配置插件、生命周期、自动链接和类型系统；既有 Swift 模块迁移到 API 2.0 宏交由 expo-migrate-module。",
+      "source": "Framework (OSS). Guide for creating and writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript). Covers module definition DSL, native views, shared objects, config plugins, lifecycle hooks, autolinking, and type system. Use when building or modifying native modules for Expo. Not for migrating an existing Swift module from the definition DSL to the Expo Modules API 2.0 macros; use expo-migrate-module (from the expo-experiments plugin) for that.",
+      "source_sha256": "38ffea08151f50eef82b2ee53230c1ec6fea7cf49173950b8badf4de17595956",
+      "source_path": "skills/expo-module/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "381015b2a8feae0f89de4d9dbc1e78021e6cf040117e58c1cf2b8e9969da0dcc": {
+      "description_zh": "构建具有原生体验的 Expo 页面，涵盖 Apple HIG、语义颜色、原生控件、SF Symbols、媒体、视觉效果、渐变、存储和响应布局；路由与动画分别交由 expo-router 和 expo-animation。",
+      "source": "Framework (OSS). Build beautiful, native-feeling Expo screens. Covers Apple HIG styling, semantic colors, native controls, SF Symbols, media, visual effects, gradients, storage, and responsive layout. For routing and navigation, use the expo-router skill; for motion and animation, use the expo-animation skill.",
+      "source_sha256": "381015b2a8feae0f89de4d9dbc1e78021e6cf040117e58c1cf2b8e9969da0dcc",
+      "source_path": "skills/expo-native-ui/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db34129465a572bd3bea2530d902e35570213e282e8454d8c61aebcb931aaeea": {
+      "description_zh": "作为 Expo/EAS 任务的入口，识别实际目标、选择相应技能并统一设置规则；适用于需求提及 Expo、EAS、Expo Go、expo-* 包或项目有 expo 依赖时，包括页面实现、导航、取数、SDK 升级、原生集成和商店发布；没有这些信号的普通 React Native 项目不适用。",
+      "source": "Framework (OSS). Entry point and router for every Expo or EAS task. Load this skill first — before writing code and before choosing another expo-* / eas-* skill — when the request, PRD, or spec mentions Expo, EAS, Expo Go, or an expo-* package, or the project has an `expo` dependency in `package.json`. Within that gate it also covers app specs and designs to implement (tabs, stacks, maps, lists, navigation, building from a screenshot), and phrasings like 'implement a mobile app', 'make my app look native', 'add navigation', 'fetch some data', 'upgrade my SDK', 'add Expo to my existing native app', 'ship to the App Store', or 'I'm new to Expo, where do I start'. A fully specified request (SDK pinned, libraries named, layout given) still routes through here — the shared setup rules still apply. Do NOT load it when neither signal is present: a bare React Native project with no `expo` dependency is not Expo work. Detects the real goal, routes to the right expo-* / eas-* skill, and owns the shared setup rules.",
+      "source_sha256": "db34129465a572bd3bea2530d902e35570213e282e8454d8c61aebcb931aaeea",
+      "source_path": "skills/expo-overview/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e0598d0fb40de1fc4c930b0f8a6456d57c5c19e353425fae215eb361da59a57": {
+      "description_zh": "规划新 Expo Router 项目的文件夹结构和文件归属，仅适用于新项目初始化，不将既有应用重构为该结构。",
+      "source": "Framework (OSS). Folder structure for a new Expo app. Use when scaffolding or laying out a new Expo project with Expo Router, or deciding where a file should live in one. For new projects only — never restructure an existing app to match.",
+      "source_sha256": "1e0598d0fb40de1fc4c930b0f8a6456d57c5c19e353425fae215eb361da59a57",
+      "source_path": "skills/expo-project-structure/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "66d143dfbfe4ea66e6a44146380c8df2bdb571820281aa84e6fd1da6f45db24f": {
+      "description_zh": "实现 Expo Router 的导航与路由，涵盖文件路由、分组、动态路由、目录组织、带预览和菜单的 Link、原生 Stack、标题、模态页、表单弹层、NativeTabs、工具栏及标题栏搜索。",
+      "source": "Framework (OSS). Navigation and routing for Expo Router. Covers file-based routes, groups and dynamic routes, folder organization, Link with previews and context menus, native Stack, page titles, modals and form sheets, NativeTabs, headers and toolbars, and header search bars.",
+      "source_sha256": "66d143dfbfe4ea66e6a44146380c8df2bdb571820281aa84e6fd1da6f45db24f",
+      "source_path": "skills/expo-router/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59984b7f71ccb449ed713337ef7e43399cdfae8920184c099b8d982c1e835655": {
+      "description_zh": "提交 Expo 技能、Expo 本身、CLI、文档或 MCP 的具体反馈，记录代理反复失败或需要人工接管的评估案例；也可查看和控制匿名使用遥测，其默认关闭且需主动选择启用。",
+      "source": "Submit feedback on an Expo skill—or Expo itself—and control bundled anonymous usage telemetry (off by default / opt-in). Submit feedback with: npx --yes submit-expo-feedback@latest \"ACTIONABLE_FEEDBACK\". Optionally add either or both: --category \"CATEGORY\" and --subject \"SUBJECT\". Replace the uppercase placeholders before running. Use when a skill was useful, confusing, broken, missing context, or worth improving; when Expo, Expo CLI, EAS CLI, docs, or MCP worked well or fell short; when an AI agent repeatedly failed, got stuck, or needed the user to take over an Expo task (report it as an eval candidate); or when the user explicitly asks to enable or disable telemetry (tracking), check its status, or understand what it collects.",
+      "source_sha256": "59984b7f71ccb449ed713337ef7e43399cdfae8920184c099b8d982c1e835655",
+      "source_path": "skills/expo-skill-feedback/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "653f90f08ed07ab3452c5c145a4d0e518c12e94cb13cb1a9aeaabd99345ad3b8": {
+      "description_zh": "使用 @expo/ui 构建 iOS SwiftUI 与 Android Jetpack Compose 原生界面，涵盖 Host、行列、按钮、表单、选择器、滑块、开关、菜单和 BottomSheet，以及平台专用组件树；原文优先采用该包，缺失控件才回退 React Native 内置组件，List 是原生分组行且不虚拟化，大数据应使用 FlatList/FlashList；不涵盖导航、动画或取数。",
+      "source": "Framework (OSS). Build native UI with the @expo/ui package: real SwiftUI on iOS and Jetpack Compose on Android. Default to @expo/ui for sheets (BottomSheet), pickers, sliders, toggles, menus, and grouped-form sections — do NOT reach for Reanimated, @gorhom/bottom-sheet, or RN built-in Picker/Switch; use @expo/ui instead. Fall back to RN built-ins only when @expo/ui is missing the component. NOTE: @expo/ui List renders native grouped rows like an iOS Settings screen — it is NOT a virtualized list; use FlatList/FlashList for large datasets. Covers universal components (Host, Column, Row, Button, Text, List, BottomSheet, FieldGroup, Switch, Slider, Picker, Menu), drop-in replacements for RN community libraries, and platform-specific SwiftUI/Jetpack Compose trees. Not for Expo Router navigation, Reanimated, or data fetching.",
+      "source_sha256": "653f90f08ed07ab3452c5c145a4d0e518c12e94cb13cb1a9aeaabd99345ad3b8",
+      "source_path": "skills/expo-ui/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b0cf3ec604b2c040a342f85215fe1724b76022383b7b552abaa7d86c7645952": {
+      "description_zh": "提供 Expo SDK 版本升级和依赖问题修复指南。",
+      "source": "Framework (OSS). Guidelines for upgrading Expo SDK versions and fixing dependency issues",
+      "source_sha256": "1b0cf3ec604b2c040a342f85215fe1724b76022383b7b552abaa7d86c7645952",
+      "source_path": "skills/expo-upgrade/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "deb470ad4118d4d02a21ef3026f77bf539b0466873ac064a7771da1da5ed0223": {
+      "description_zh": "将现有 React 网页应用迁移为 Expo iOS/Android 原生应用，覆盖 Next.js、Vite、CRA 代码迁移、渐进复用，以及 DOM、CSS、React Router、localStorage、window 到原生机制的映射；这是完整迁移流程，DOM 组件机制交由 expo-dom。",
+      "source": "Framework (OSS). Migrate an existing web React app to a native iOS/Android app with Expo. Use when the user wants to turn a website into a mobile app, port a Next.js/Vite/CRA React codebase to React Native, reuse web code on native incrementally, or asks how web idioms (the DOM, CSS, React Router, localStorage, window) map to native. This is the end-to-end migration guide; use the `expo-dom` skill for the DOM-component mechanism itself.",
+      "source_sha256": "deb470ad4118d4d02a21ef3026f77bf539b0466873ac064a7771da1da5ed0223",
+      "source_path": "skills/expo-web-to-native/SKILL.md",
+      "package_sha256": "5fc920f8db674c0d766dabdc0359e46323c70d3cfcbf230ea6b16dc874d113e6",
+      "source_package": "expo-1.12.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b321de0a579cf1ad0fb0cec5d322af0eb314aa1a7e5aa3212c0ab989b40cc08": {
+      "description_zh": "使用 Python、TypeScript、Java 或 Go 对接 Extend 文档处理 API/SDK，开发提取、分类、拆分、解析、PDF 表单填充及工作流集成，编写提取模式并处理 webhook。",
+      "source": "Use when writing code against the Extend document processing API or SDKs - building extraction, classification, splitting, parsing, PDF form-filling, or workflow integrations, authoring extraction schemas, or handling Extend webhooks - in Python, TypeScript, Java, or Go.",
+      "source_sha256": "2b321de0a579cf1ad0fb0cec5d322af0eb314aa1a7e5aa3212c0ab989b40cc08",
+      "source_path": "skills/extend-api/SKILL.md",
+      "package_sha256": "88f127f034976a365a2e7839e60b263a59859226a77121d7fd35800e17629df2",
+      "source_package": "Extend-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15b7ce744caa0ed7444b8075b64017d3641184fc5253486ecf44300b5e9f8d5d": {
+      "description_zh": "通过 Extend CLI 从 PDF 或图像提取结构化数据、OCR、解析为文本或 Markdown、识别合同类型、拆分组合文档、按值模式填写 PDF 和检测表单字段；也支持多步骤文档 AI 工作流、按运行 ID 查看和跟踪任务、上传文档及管理 file_xxx 标识。",
+      "source": "Use when extracting structured data from PDFs or images, parsing documents to text or markdown, classifying or identifying the type of a document (e.g. telling MSA from SOW from NDA), splitting multi-document bundles into segments, filling PDF forms via a values schema, detecting form fields to scaffold an edit schema, running multi-step document AI workflows, inspecting, watching, or listing Extend runs by ID (exr_, pr_, clr_, splr_, edr_, sgr_, workflow_run_), or uploading documents to an Extend workspace and managing the resulting file_xxx IDs - even if the user describes the task without naming Extend (e.g. \"pull line items from these invoices\", \"OCR these receipts\", \"categorize this contract\", \"fill out this PDF form\", or \"split this combined PDF into individual statements\").",
+      "source_sha256": "15b7ce744caa0ed7444b8075b64017d3641184fc5253486ecf44300b5e9f8d5d",
+      "source_path": "skills/extend-cli/SKILL.md",
+      "package_sha256": "88f127f034976a365a2e7839e60b263a59859226a77121d7fd35800e17629df2",
+      "source_package": "Extend-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f93f1522e468e44a79cfc8ffb7f54526dd474043a1a6263414b416f1a7d90f6": {
+      "description_zh": "对具有白底与黑底成对版本的 AI 生成图像使用两次差分抠图，去除背景并得到透明图像。",
+      "source": "Remove background from AI-generated (e.g. Gemini) images using two-pass difference matting. Use when the user has white/black background image pairs that need transparent backgrounds.",
+      "source_sha256": "5f93f1522e468e44a79cfc8ffb7f54526dd474043a1a6263414b416f1a7d90f6",
+      "source_path": "skills/extract/SKILL.md",
+      "package_sha256": "8d6244a65345cf080109ddf00f493402579b6a432400c9574e0581eccdc70140",
+      "source_package": "Extract Alpha-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9a2e49d747be9bc192d4c752acfbc666f5c4c1409bb327663b70984285d2918": {
+      "description_zh": "为 extract-alpha 透明图像流程生成一对白底和黑底 AI 图像提示词，供后续提取透明度使用。",
+      "source": "Generate a pair of AI image prompts (white + black background) ready for alpha extraction. Use when the user wants to create an image with transparency using the extract-alpha workflow.",
+      "source_sha256": "f9a2e49d747be9bc192d4c752acfbc666f5c4c1409bb327663b70984285d2918",
+      "source_path": "skills/prompt/SKILL.md",
+      "package_sha256": "8d6244a65345cf080109ddf00f493402579b6a432400c9574e0581eccdc70140",
+      "source_package": "Extract Alpha-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "073bb0cf8ca8f18b94be2fe5b06f2230e586357665fb29eb54860195db8a525d": {
+      "description_zh": "为 fable-baton 做一次性配置与健康检查，按原文将 ~/.claude/settings.json 的默认模型设为 best（Fable 5，Opus 备用），并核验插件完整安装；适用于设置、验证或排错。",
+      "source": "One-time setup and health check for fable-baton. Use when the user asks to set up, configure, verify, or troubleshoot fable-baton - sets the default model to \"best\" (Fable 5 with Opus fallback) in ~/.claude/settings.json and verifies the plugin is fully installed.",
+      "source_sha256": "073bb0cf8ca8f18b94be2fe5b06f2230e586357665fb29eb54860195db8a525d",
+      "source_path": "skills/baton-setup/SKILL.md",
+      "package_sha256": "5dd4fdd77985826c459864d6a65f05f7f34486aa341990a4da40dd809d894ca1",
+      "source_package": "fable-baton-1.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25bb9f93af31fd8c4692fada40e5f3c9e102d0c5e26b8a76ab2b01302c6d66ab": {
+      "description_zh": "在用户的 Facehunch 账户中查看已保存的反向图片搜索报告和来源链接，不发起新的图片搜索。",
+      "source": "Review saved reverse image search reports and source links when the user requests work in their Facehunch account. Does not start a new image search.",
+      "source_sha256": "25bb9f93af31fd8c4692fada40e5f3c9e102d0c5e26b8a76ab2b01302c6d66ab",
+      "source_path": "skills/facehunch/SKILL.md",
+      "package_sha256": "913b00859d2e3ea1ec3a83e800dcec7ae4b8194ce06c78481050b6a34a7fd28d",
+      "source_package": "Facehunch-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85aa736168e43a6740d50c9d653fb2796a7c2f30f7a553bfca946bfc15ce7338": {
+      "description_zh": "规定 Fairmind 项目设计令牌的命名和使用方式，涵盖基础与语义令牌分层、文件布局及 token-analyzer 标记的反模式；用于编写或审计涉及颜色、间距、字体、圆角、阴影和边框的 CSS、SCSS、Tailwind。",
+      "source": "Conventions for naming and using design tokens in a Fairmind project. Use when authoring or auditing CSS, SCSS, or Tailwind code that touches color, spacing, typography, radius, shadow, or border. Defines the primitive vs semantic split, the file layout, and the anti-patterns that token-analyzer flags.",
+      "source_sha256": "85aa736168e43a6740d50c9d653fb2796a7c2f30f7a553bfca946bfc15ce7338",
+      "source_path": "skills/design-token-conventions/SKILL.md",
+      "package_sha256": "05bfd74b146a7e60c2e9e6b7e0de902e43129fefc9dff14b0277d709923d91fa",
+      "source_package": "Fairmind Design-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e333c7f105836ed0e45a5e507004e71b798b9391b2406d09c50cdafe7569f41": {
+      "description_zh": "提供集成 fairmind-design 插件的项目 CLAUDE.md 模板与写作指导，用于新项目初始化、设计系统变更后的规则刷新，或处理合规检查器提示的未记录规则。",
+      "source": "Reference template and guidance for writing a project CLAUDE.md that integrates the fairmind-design plugin. Use when bootstrapping a new project, when refreshing CLAUDE.md after the design system evolves, or when the compliance checker keeps flagging undocumented rules. Ships a copy-paste template under templates/CLAUDE.md.example.",
+      "source_sha256": "8e333c7f105836ed0e45a5e507004e71b798b9391b2406d09c50cdafe7569f41",
+      "source_path": "skills/fairmind-design-claude-md/SKILL.md",
+      "package_sha256": "05bfd74b146a7e60c2e9e6b7e0de902e43129fefc9dff14b0277d709923d91fa",
+      "source_package": "Fairmind Design-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f3628f8c4ed097827bd629977e5ada263be544ff1b00a0c2df915b889546a39": {
+      "description_zh": "指导 Figma MCP 的设计转代码工作，读取设计上下文、截图、变量与 Code Connect 映射，涵盖 URL 解析、工具选择及映射流程。",
+      "source": "How to use the Figma MCP tools for design-to-code work. Use when retrieving design context, screenshots, variables, or Code Connect mappings from a Figma source. Covers URL parsing, when to use each MCP tool, and the Code Connect mapping flow.",
+      "source_sha256": "6f3628f8c4ed097827bd629977e5ada263be544ff1b00a0c2df915b889546a39",
+      "source_path": "skills/figma-mcp-workflow/SKILL.md",
+      "package_sha256": "05bfd74b146a7e60c2e9e6b7e0de902e43129fefc9dff14b0277d709923d91fa",
+      "source_package": "Fairmind Design-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e17f326df2b689e7ac55b1d05291271ded552238bcf978706148aafcfceb8152": {
+      "description_zh": "提供 Fairmind 无障碍代理引用的 WCAG 2.1 成功标准速查，包括标准文本、常见失败和修复建议，用于解释审计发现、规划修复或判断是否满足 AA。",
+      "source": "Quick reference for the WCAG 2.1 success criteria cited by the Fairmind accessibility agents. Use when interpreting an audit finding, when planning a fix, or when deciding whether a behavior meets AA. Includes criterion text, common failures, and recommended fixes.",
+      "source_sha256": "e17f326df2b689e7ac55b1d05291271ded552238bcf978706148aafcfceb8152",
+      "source_path": "skills/wcag-quick-reference/SKILL.md",
+      "package_sha256": "05bfd74b146a7e60c2e9e6b7e0de902e43129fefc9dff14b0277d709923d91fa",
+      "source_package": "Fairmind Design-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f05f63a25ab0c9107b29b4336f7fad56463f4de26d25b063e7989af42b334cd6": {
+      "description_zh": "使用 falco 检查、测试、模拟和格式化 Fastly VCL，并通过其实现完整方言的 Go 源码查询函数签名、变量作用域和子程序行为；用于语法与类型错误、逻辑调试、断言单元测试及本地 VCL 开发环境。",
+      "source": "Lints, tests, simulates, and formats Fastly VCL code using the falco tool. Also serves as the authoritative VCL reference via the falco Go source, which implements Fastly's full VCL dialect. Use when validating VCL syntax, running VCL linting, testing VCL locally, simulating VCL request handling, formatting VCL files, writing VCL unit tests with assertions, debugging VCL logic errors, looking up VCL function signatures or variable scopes, understanding VCL subroutine behavior, or running `falco lint`/`falco simulate`/`falco test`/`falco fmt`. Also applies when working with VCL syntax errors, type mismatches in VCL, choosing which VCL subroutine to use, or setting up a local VCL development and testing environment.",
+      "source_sha256": "f05f63a25ab0c9107b29b4336f7fad56463f4de26d25b063e7989af42b334cd6",
+      "source_path": "skills/falco/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe9238bad27e48cfcdf136742aac5b59356293d5a87206f42972c4227e5b9af2": {
+      "description_zh": "使用 fastlike 本地运行 Fastly Compute WASM，并借助源码理解主机 ABI、缓存清理、KV/配置/机密存储、限流、ACL、请求生命周期及后端抓取；内置请求分析器涵盖主机调用、后端瀑布、CPU 样本与可选细指标，原文建议非 Rust Compute 和平台 API 参考优先使用它。",
+      "source": "Runs Fastly Compute WASM binaries locally and serves as the authoritative reference for Compute platform internals. The fastlike source code is highly readable and covers the host ABI, caching and purging APIs, KV/config/secret store interfaces, rate limiting with counters and penalty boxes, ACL lookups, the full request lifecycle, backend fetch semantics, and a built-in per-request profiler with hostcall spans, backend waterfalls, native CPU samples, and optional deep metrics (body bytes, cache outcomes, header summaries, wasm heap curve). Use when working with Compute runtime internals or host calls, understanding how edge data stores behave at runtime, profiling local Compute apps, or testing WASM binaries locally. Prefer this skill over Viceroy for any non-Rust Compute work — its source code is easier to understand as a Fastly Compute API reference.",
+      "source_sha256": "fe9238bad27e48cfcdf136742aac5b59356293d5a87206f42972c4227e5b9af2",
+      "source_path": "skills/fastlike/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "066cb6a472a21a44da89602fb592a0fd8b7eac2612d19486379cca820f9df170": {
+      "description_zh": "使用 Fastly CLI 管理 CDN 服务、Compute 部署及边缘基础设施，涵盖服务增删改查、版本与自动克隆、后端/域名/VCL 片段、缓存清理、日志、TLS、数据存储、统计、SSO、fastly.toml 和常见命令错误排查。",
+      "source": "Executes Fastly CLI commands for managing CDN services, Compute deploys, and edge infrastructure. Use when running `fastly` CLI commands, creating or managing Fastly services from the terminal, deploying Fastly Compute applications, managing backends/domains/VCL snippets via command line, purging cache, configuring log streaming, setting up TLS certificates, managing KV/config/secret stores, checking service stats, authenticating with Fastly SSO, or working with fastly.toml. Also applies when working with Fastly service IDs in CLI context, or with `fastly service`, `fastly compute`, `fastly auth`, or any Fastly CLI subcommand. Covers service CRUD, version management, autocloning, and troubleshooting common CLI errors.",
+      "source_sha256": "066cb6a472a21a44da89602fb592a0fd8b7eac2612d19486379cca820f9df170",
+      "source_path": "skills/fastly-cli/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45bb15385ab99c6d82dfd341c4e10f873daeb4a5143136b0e28a5cba58a00f04": {
+      "description_zh": "通过 Fastly Fiddle 在真实边缘环境测试 VCL，编写断言测试、生成可分享的故障复现链接、运行 CI 集成测试及远程语法检查，并处理 clientFetch、events、originFetches 测试表达式。",
+      "source": "Use when testing VCL against real Fastly edge infrastructure, writing assertion-based Fiddle tests, producing shareable fiddle URLs for bug reproductions, running VCL integration tests in CI, linting VCL remotely via the Fiddle API, or working with clientFetch/events/originFetches test expressions.",
+      "source_sha256": "45bb15385ab99c6d82dfd341c4e10f873daeb4a5143136b0e28a5cba58a00f04",
+      "source_path": "skills/fastly-fiddle/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a8841ff60b9b041ad5e733575903e46a5b03ee2bf77e6e4f696c3b977773683": {
+      "description_zh": "审计 Fastly Next-Gen WAF 工作区关键模板保护规则是否配置并启用，检查登录、信用卡及礼品卡校验规则、识别未覆盖的登录端点，并对比攻击与拦截流量验证实际阻断效果。",
+      "source": "Performs an internal audit of Fastly Next-Gen WAF (NGWAF) workspaces to audit that critical templated protection rules are configured and enabled. Use when auditing NGWAF workspace security posture, checking for missing or disabled login protection rules (LOGINDISCOVERY, LOGINATTEMPT, LOGINSUCCESS, LOGINFAILURE), auditing credit card validation rules (CC-VAL-ATTEMPT, CC-VAL-FAILURE, CC-VAL-SUCCESS), auditing gift card protection rules (GC-VAL-ATTEMPT, GC-VAL-FAILURE, GC-VAL-SUCCESS), identifying potential login endpoints not covered by NGWAF rules, or comparing attack traffic against blocked traffic to confirm enabled rules are actually blocking.",
+      "source_sha256": "7a8841ff60b9b041ad5e733575903e46a5b03ee2bf77e6e4f696c3b977773683",
+      "source_path": "skills/fastly-ngwaf/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b89e2d6e47968540752c38401a990ed26bd053fa25fba8b0aec5077c7aa0f99": {
+      "description_zh": "使用精选 GitHub 仓库中的可运行 Fastly 参考架构，帮助设计或实现单个 Compute 应用及跨多个 Fastly 产品的系统；适用于需要完整组合示例的场景，单项工具或 API 用法交由对应技能。",
+      "source": "Curated GitHub repositories demonstrating working reference architectures on the Fastly platform, from single Compute applications to systems combining multiple Fastly products. Use when designing a new solution on Fastly and a worked example of the target pattern would help, or when implementing and a concrete assembled reference would clarify the shape of the code. Not for documentation of how a specific Fastly tool or API works on its own — see the tool-specific skills for that.",
+      "source_sha256": "3b89e2d6e47968540752c38401a990ed26bd053fa25fba8b0aec5077c7aa0f99",
+      "source_path": "skills/fastly-reference-architectures/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1724ce2f51a4164b9e33f1561c8cedc85f6797d6808608a8ad4e2c46854e5c0": {
+      "description_zh": "查询 Fastly 服务的缓存命中率、带宽、请求数、状态码与错误率、边缘和源站流量、实时 QPS、源站延迟、域名流量及账户用量和账单总额，涵盖 fastly stats 与历史、实时、源站/域名 Inspector API。",
+      "source": "Fastly traffic numbers: cache hit ratio, bandwidth, request counts, status-code and error rates, edge vs origin traffic, real-time requests-per-second, origin latency, per-domain traffic, account usage and billing totals. Owns the `fastly stats` CLI commands and the Historical Stats, Real-Time and Origin/Domain Inspector HTTP APIs. Use for any question that needs a number about how a Fastly service is performing or how much it is being used.",
+      "source_sha256": "c1724ce2f51a4164b9e33f1561c8cedc85f6797d6808608a8ad4e2c46854e5c0",
+      "source_path": "skills/fastly-stats/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c780ffa578208adbdf266082a35329c42aad27021d7e4fb934211fbe9e51a875": {
+      "description_zh": "配置、管理和排查 Fastly CDN，包括服务与后端、缓存/VCL、DDoS/WAF/NGWAF、限流与机器人管理、TLS、缓存清理、Compute 和 REST API；也覆盖 503、证书不匹配、日志、负载均衡、ACL 和边缘字典，原文要求在编写 API 调用前核对字段参考以避免误配置。",
+      "source": "Configures, manages, and debugs the Fastly CDN platform — covering service and backend setup, caching and VCL, security features like DDoS/WAF/NGWAF/rate limiting/bot management, TLS certificates and cache purging, the Compute platform, and the REST API. Use when working with Fastly services or domains, setting up edge caching or origin shielding, configuring security features, making Fastly API calls, enabling products, or looking up Fastly documentation. Also applies when troubleshooting 503 errors or SSL/TLS certificate mismatches on Fastly, and for configuring logging endpoints, load balancing, ACLs, or edge dictionaries. Read the relevant reference file before writing any Fastly API call or curl command — request field names (e.g. the backend fields override_host, ssl_cert_hostname, ssl_sni_hostname, use_ssl) are easy to misremember, and a wrong name causes a silent 503 instead of an error, so do not rely on training-knowledge field names.",
+      "source_sha256": "c780ffa578208adbdf266082a35329c42aad27021d7e4fb934211fbe9e51a875",
+      "source_path": "skills/fastly/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e861c4d81918c5066a80ccb42c1eee592c3df069230d9b0840be1c52e7bce50": {
+      "description_zh": "使用 Viceroy 本地运行 Fastly Compute 的 Rust 与 Component Model 项目，配置 fastly.toml 后端和存储、以 cargo-nextest 测试运行时、调试应用及适配核心 WASM 模块；非 Rust 开发和 API 内部参考交由 fastlike。",
+      "source": "Runs Fastly Compute WASM applications locally with Viceroy, specifically for Rust and Component Model projects. Use when starting a local Fastly Compute dev server with Viceroy, configuring fastly.toml for local backend overrides and store definitions, running Rust unit tests with cargo-nextest against the Compute runtime, debugging Compute apps locally, adapting core WASM modules to the Component Model, or troubleshooting local Compute testing issues (connection refused, missing backends, store config). For non-Rust Compute work or understanding the Compute API, prefer the fastlike skill instead — its source code is easier to understand as a Fastly Compute API reference.",
+      "source_sha256": "6e861c4d81918c5066a80ccb42c1eee592c3df069230d9b0840be1c52e7bce50",
+      "source_path": "skills/viceroy/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cde655f31abf0843f1e4089c54213559a6d11edb3195394c2c5094c8b788ac27": {
+      "description_zh": "通过 XVCL 将带循环、函数、常量、宏、条件和 include 的 .xvcl 编译为标准 Fastly VCL，用于重复后端/路由/请求头生成、复用返回值函数、常量化及模块拆分；也涵盖 uvx xvcl 编译和 falco 本地测试。",
+      "source": "Extends Fastly VCL with loops, functions, constants, macros, conditionals, and includes via XVCL — a VCL transpiler that compiles .xvcl files into standard VCL. Use when writing VCL for Fastly, working with .xvcl files, generating repetitive VCL (multiple backends, routing rules, headers) with loops, defining reusable VCL functions with return values, using compile-time constants instead of magic numbers, or writing any Fastly VCL configuration. XVCL syntax is not in training data so this skill is required. Also applies when writing and testing VCL locally (compile with `uvx xvcl`, test with falco), reducing VCL code duplication, splitting large VCL into modular includes, or doing any VCL development task for Fastly — even without explicitly mentioning XVCL.",
+      "source_sha256": "cde655f31abf0843f1e4089c54213559a6d11edb3195394c2c5094c8b788ac27",
+      "source_path": "skills/xvcl/SKILL.md",
+      "package_sha256": "54d2a857256aa882407abbd7ddc3cb48b89a00f35c1a756b6e2ff9981f7904b3",
+      "source_package": "Fastly-0.1.0-v53.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eefcacc6d39ce0edb050695700c2bedd68a03fe6ef78d68334ffba7ef091b516": {
+      "description_zh": "读取日历并在自己的日历预留无参会者的时间段，再起草建议该时间的回复；用于安排通话、会议、复盘及查找可用时段。",
+      "source": "Turn 'we should talk' into a held slot and a drafted reply: read the calendar, hold the time on your own calendar with no guests, and draft the message that proposes it. Use when the user wants to book a call, schedule a meeting, find a slot, set up the review call, propose times, or get a call in the diary.",
+      "source_sha256": "eefcacc6d39ce0edb050695700c2bedd68a03fe6ef78d68334ffba7ef091b516",
+      "source_path": "skills/fcxo-book-call/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8bfb21d2f6fd4c4d1633e9ab2e4906d944281339c88093e3c5b893ee7fca46b6": {
+      "description_zh": "围绕计划、决策或报价持续访谈和追问，将每次回答保存到捕获文件；用于压力测试计划、头脑风暴或需求探索。",
+      "source": "Interview the user relentlessly about a plan, decision, or offer, checkpointing every answer to a capture file so nothing is lost. Use to stress-test a plan, run a brainstorm or discovery session, or when the user says 'grill me'.",
+      "source_sha256": "8bfb21d2f6fd4c4d1633e9ab2e4906d944281339c88093e3c5b893ee7fca46b6",
+      "source_path": "skills/fcxo-brainstorm/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "096cc18d484d63de29e3bd5a98a6f9ae0d86e66572e72df6faca8a5e44907d3b": {
+      "description_zh": "为兼职高管的文档设置或调整品牌强调色、标志、字体与开票资料，适用于初次品牌配置、改色、添加标志或匹配网站风格。",
+      "source": "Set up or adjust the visual brand for a fractional executive's documents: accent color, logo, fonts, and billing details. Use when the user wants to set up branding, change a brand color, add a logo, or match their website.",
+      "source_sha256": "096cc18d484d63de29e3bd5a98a6f9ae0d86e66572e72df6faca8a5e44907d3b",
+      "source_path": "skills/fcxo-brand/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f5295bec97a47a7f5133076646052dbe6939305284bf213ddb18c3d5c0397bb": {
+      "description_zh": "为需求探索、销售或客户通话生成一页准备材料，列明目标、精简议程、要问的问题及希望达成的下一步。",
+      "source": "Build a one-page prep before a discovery, sales, or client call: the objective, a tight agenda, the questions to ask, and the next step to land. Use when the user wants call prep, to prep for a call, prepare for a meeting, a discovery call agenda, or sales call preparation.",
+      "source_sha256": "5f5295bec97a47a7f5133076646052dbe6939305284bf213ddb18c3d5c0397bb",
+      "source_path": "skills/fcxo-call-prep/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d7b5c726511cb08649b2bec156a0a23538aee3e26d19c0d03c284ff79090b56": {
+      "description_zh": "将通话笔记或转录整理为行动项、跟进邮件草稿和内部摘要，用于会议回顾与跟进准备。",
+      "source": "Turn call notes or a transcript into action items, a follow-up email draft, and an internal summary. Use when the user wants to summarize a call, process notes, write a follow-up, or recap a meeting.",
+      "source_sha256": "6d7b5c726511cb08649b2bec156a0a23538aee3e26d19c0d03c284ff79090b56",
+      "source_path": "skills/fcxo-call-summary/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60db28ac8d364509b78c22b6fb4041171bf173e95b89f7ce5a086ea63522fd84": {
+      "description_zh": "将已结束或达到里程碑的客户项目整理为匿名、可复用的成功案例，供提案与宣传文章使用。",
+      "source": "Turn a finished or milestone-passing engagement into an anonymized, reusable win story that feeds proposals and posts. Use when the user wants a case study, a win story, to write up an engagement, a success story, or to turn this client work into marketing material.",
+      "source_sha256": "60db28ac8d364509b78c22b6fb4041171bf173e95b89f7ce5a086ea63522fd84",
+      "source_path": "skills/fcxo-case-study/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8bb28c6a72dfb6b8bcc70a718a9b5c6cedbfdddf4687842ed7b3b1bb979fdd04": {
+      "description_zh": "依据用户的职务视角生成可供董事会审阅的决策备忘录，涵盖现状、方案、建议和风险；用于决策报告、高管简报与选项分析。",
+      "source": "Build a board-ready decision memo (situation, options, recommendation, risks) framed in the user's role lens. Use when the user wants a decision report, board memo, exec brief, or options analysis.",
+      "source_sha256": "8bb28c6a72dfb6b8bcc70a718a9b5c6cedbfdddf4687842ed7b3b1bb979fdd04",
+      "source_path": "skills/fcxo-decision-report/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5520c5d5377d31e4ba14220ea12dbab6780b0dada6982c5d4dbf742c37401432": {
+      "description_zh": "按工作类型列出 FCxO Toolkit 技能并解释用途，根据目标推荐技能或执行顺序；用于了解工具包、选择起点与后续步骤，以及获取客户、收款或建立业务实践。",
+      "source": "List the FCxO Toolkit skills grouped by job, explain when to use each, and answer a stated goal with the right skill or the sequence of skills that gets there. Use when the user asks what can this do, list the skills, what skills are there, how do I use the toolkit, where do I start, what comes next, which skill for X, or how do I win this client / get paid / set up my practice.",
+      "source_sha256": "5520c5d5377d31e4ba14220ea12dbab6780b0dada6982c5d4dbf742c37401432",
+      "source_path": "skills/fcxo-help/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e9500ebecff59270c73d1b0853e5cc0630ed1ac6534eca0018ea3a905af967c": {
+      "description_zh": "首次初始化兼职高管的业务工作区，用于建立实践空间或开始使用 FCxO Toolkit。",
+      "source": "First-time setup of a fractional executive's practice workspace. Use when the user wants to set up their practice, initialize an FCxO workspace, or get started with the FCxO Toolkit.",
+      "source_sha256": "7e9500ebecff59270c73d1b0853e5cc0630ed1ac6534eca0018ea3a905af967c",
+      "source_path": "skills/fcxo-init/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14c11437c091a4574882bb7193c98ab62a7ca348d1aacb540c07a76ead19a565": {
+      "description_zh": "根据客户项目和开票资料为兼职高管生成带品牌样式的发票，用于客户收费与账单制作。",
+      "source": "Generate a branded invoice for a fractional executive from an engagement and their billing details. Use when the user wants to create an invoice, bill a client, or generate a bill.",
+      "source_sha256": "14c11437c091a4574882bb7193c98ab62a7ca348d1aacb540c07a76ead19a565",
+      "source_path": "skills/fcxo-invoice/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0dc0a0492fd7713aec86b89ecc503f7c4dd1db9c66a749b2a42519d1449f4a1b": {
+      "description_zh": "将流程、SOP、文档、示例或链接整理为可用斜杠命令调用的可复用技能，研究任务的良好做法并写入 skills/<name>/SKILL.md，再说明如何上传到 Claude 账户；书面 SOP 是其优先输入。",
+      "source": "Turn a procedure into a reusable skill you can call with a slash command. Its best input is a written SOP, and the path to one is a complete argument. Use when the user says learn a skill, build me a skill, turn this SOP into a skill, make a skill from this doc or example or url, or save what we just did as a skill. Researches how the task is done well, writes skills/<name>/SKILL.md, and tells the user how to upload it to their Claude account.",
+      "source_sha256": "0dc0a0492fd7713aec86b89ecc503f7c4dd1db9c66a749b2a42519d1449f4a1b",
+      "source_path": "skills/fcxo-learn-skill/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "049a7a04defcf2d3e9e4f791ce2cfb527686db9322530a14256193dd32bc825f": {
+      "description_zh": "将客户或潜客收到、发出的邮件、私信和笔记记入对应沟通线程，用于保存询盘、记录对方表述或更新对话档案。",
+      "source": "Record an incoming or sent message from a client or a lead (email, DM, note) into its communications thread. Use when the user wants to log a message, save a client email, log an email from a prospect, record what a client or a lead said, file an inbound enquiry, or update a conversation thread.",
+      "source_sha256": "049a7a04defcf2d3e9e4f791ce2cfb527686db9322530a14256193dd32bc825f",
+      "source_path": "skills/fcxo-log-message/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d5bef8035827a5615534f96c36b47f7a31865b81fcff02290b882d00c445998": {
+      "description_zh": "在兼职高管业务工作区新增客户或服务项目，适用于客户入驻、新项目或长期顾问服务开始。",
+      "source": "Add a new client or engagement to a fractional executive's practice workspace. Use when the user wants to add a client, onboard one, or start a new engagement, project, or retainer.",
+      "source_sha256": "4d5bef8035827a5615534f96c36b47f7a31865b81fcff02290b882d00c445998",
+      "source_path": "skills/fcxo-new-client/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "44d06b3c2e824021f66235de14f32bf23ba76aaacb82e2da3c1000ba816d2456": {
+      "description_zh": "依据新项目实际范围和用户职务视角制定首季度30/60/90天计划，按诊断、设计、交付组织入驻与启动工作。",
+      "source": "Build a 30-60-90 plan (Diagnose - Design - Deliver) for a new engagement's first quarter, grounded in its actual scope and framed in the user's role lens. Use when the user wants an onboarding plan, a 30-60-90, a first 90 days plan, a kickoff plan, or an engagement start plan.",
+      "source_sha256": "44d06b3c2e824021f66235de14f32bf23ba76aaacb82e2da3c1000ba816d2456",
+      "source_path": "skills/fcxo-onboarding-plan/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3498a703207a605cbab7999bc58779a6805505ac0778abd92367500bdd980d30": {
+      "description_zh": "以用户自身语气起草个性化陌生、熟悉、转介绍或关系维护联系消息，用于潜客邮件、请求推荐和久未联系对象的问候。",
+      "source": "Draft personalized cold, warm, referral, or network-touch outreach in the user's own voice. Use when the user wants to draft outreach, write a cold email, message a prospect, ask for a referral, or check in with a warm contact they haven't spoken to in a while.",
+      "source_sha256": "3498a703207a605cbab7999bc58779a6805505ac0778abd92367500bdd980d30",
+      "source_path": "skills/fcxo-outreach/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b0066be6ecd1b0b22231c345b9d8670077a02663ace7aee995140b9b966294c": {
+      "description_zh": "为兼职高管开展每周销售管道和客户组合复盘，排列线索优先级、标记风险并生成简短行动计划。",
+      "source": "Weekly pipeline and client-portfolio review for a fractional executive: prioritize leads, flag risks, and produce a short action plan. Use when the user wants to review their pipeline or plan their week.",
+      "source_sha256": "3b0066be6ecd1b0b22231c345b9d8670077a02663ace7aee995140b9b966294c",
+      "source_path": "skills/fcxo-pipeline-review/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c92b31993bc3ffddcc34e9d77291341b1db28059a9deb487981e0e5aec3a60a": {
+      "description_zh": "按兼职高管自身语气起草或定稿简短专业文章，使用随反馈调整的语气与风格指南；适用于社交内容和个人品牌建设。",
+      "source": "Draft or finalize a short professional post in the fractional executive's own voice, enforcing a voice and style guide that learns from feedback. Use when the user wants to write a post, draft social content, finalize a post, or work on their personal brand.",
+      "source_sha256": "8c92b31993bc3ffddcc34e9d77291341b1db28059a9deb487981e0e5aec3a60a",
+      "source_path": "skills/fcxo-post/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18cb1ea2d6f99be4aa0a1e2e1242de15c24086ebcbb88a40ce0e9c3fbb34c0f2": {
+      "description_zh": "起草将合格线索转为服务项目的提案、SOW 或协议函，以买方表述说明问题、界定具体范围、提供基于用户服务报价的单一价格和下一步；用于提案、条款准备与项目定价。",
+      "source": "Draft the proposal, SOW, or letter of agreement that converts a qualified lead into an engagement: the buyer's problem in their words, a concrete scope with clear edges, one price anchored to the user's offers, and one next step. Use when the user wants to write a proposal, draft an SOW / statement of work, prepare a letter of agreement, send terms, or price an engagement.",
+      "source_sha256": "18cb1ea2d6f99be4aa0a1e2e1242de15c24086ebcbb88a40ce0e9c3fbb34c0f2",
+      "source_path": "skills/fcxo-proposal/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e871008047526d0ec2668e9feb17d47220d360e54169a2468c46725f52ca901d": {
+      "description_zh": "在销售联系或通话前研究目标企业和决策者，生成符合用户职务视角、可用于行动的简报。",
+      "source": "Research a target company and decision-maker before outreach or a sales call, and produce an actionable brief tuned to the user's role. Use when the user wants to research a company or prospect, or prep before reaching out.",
+      "source_sha256": "e871008047526d0ec2668e9feb17d47220d360e54169a2468c46725f52ca901d",
+      "source_path": "skills/fcxo-prospect-research/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bef071cab57f736063496cdeb28c37599e9c482f9b0c302296bb09168d71126": {
+      "description_zh": "评估兼职高管潜客的匹配程度、紧迫性与预算，建议服务项目形式并给出是否继续跟进的判断。",
+      "source": "Qualify a lead for a fractional executive: assess fit, urgency, and budget, recommend an engagement shape, and give a go/no-go. Use when the user wants to qualify a lead or decide whether to pursue a client.",
+      "source_sha256": "1bef071cab57f736063496cdeb28c37599e9c482f9b0c302296bb09168d71126",
+      "source_path": "skills/fcxo-qualify/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25b4551b9d6969a910bc3d98ddc312bf9868664e1d79f782e989aa41f4f4cde7": {
+      "description_zh": "为现有项目准备续约或季度业务复盘，以证据对比结果与计划，并提供内部对是否续约及续约条件的判断；用于 QBR 和续约谈话准备。",
+      "source": "Prepare the renewal checkpoint for an active engagement: an evidence-backed results-vs-plan review for the client plus an honest internal read on whether and on what terms to renew. Use when the user wants a renewal review, a QBR or quarterly business review, to prepare a renewal conversation, or asks should I renew this client.",
+      "source_sha256": "25b4551b9d6969a910bc3d98ddc312bf9868664e1d79f782e989aa41f4f4cde7",
+      "source_path": "skills/fcxo-renewal-review/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11c0c61762100c09e40a8ff01413a2d18570c274a34920926338593a76785f10": {
+      "description_zh": "仅依据已记录的客户对话线程起草一条回复，匹配原有语气和语言；只生成草稿，由用户发送。",
+      "source": "Draft one reply inside an existing client thread, using only the logged thread as context and mirroring its tone and language. Draft only - you send it. Use when the user wants to reply to a client, answer an email in a thread, or continue a conversation.",
+      "source_sha256": "11c0c61762100c09e40a8ff01413a2d18570c274a34920926338593a76785f10",
+      "source_path": "skills/fcxo-reply/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ec30cca6101d7a26b84f2f46fd977db04bc6a22a7041a72393349021f6da4de": {
+      "description_zh": "将现有提案、报告或交付文档渲染为与 Markdown 并列保存、带品牌样式且自包含的 HTML；没有文档时先撰写报告，适用于客户报告、评估材料和备忘录转客户 PDF。",
+      "source": "Render an existing document (proposal, report, deliverable) as a branded, self-contained HTML file beside its markdown, or compose the report first when none exists. Use when the user wants a client report, an assessment report, a branded document, to render a proposal or deliverable, or to turn a memo into a client PDF.",
+      "source_sha256": "1ec30cca6101d7a26b84f2f46fd977db04bc6a22a7041a72393349021f6da4de",
+      "source_path": "skills/fcxo-report/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4624321d705d53c74c4718ec6b4303aef34fbce17c0e5fe8792e790b31aba6d8": {
+      "description_zh": "生成简短且标明题目类型的平台中立问卷规范，可粘贴到表单工具；也可在收回后综合分析回答，适用于研究、利益相关者提问和员工调查。",
+      "source": "Build a short, typed questionnaire as a platform-neutral form spec ready to paste into any forms tool, or synthesize the responses once they come back. Use when the user wants a research form, questionnaire, or survey, stakeholder questions, an employee survey, to collect input from the client's team, or to analyze survey responses.",
+      "source_sha256": "4624321d705d53c74c4718ec6b4303aef34fbce17c0e5fe8792e790b31aba6d8",
+      "source_path": "skills/fcxo-research-form/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69c1a3713f596e94f18eef3b414bd6c602ede404e2dad93e2a3eee70d065f95a": {
+      "description_zh": "为某类文档建立视觉样式并保持内容模板与版式匹配，可从 Claude 中设计的布局或没有布局的 Markdown 模板出发，复用到提案、报告和发票等。",
+      "source": "Give a document type its look, and keep the content template and the layout matched. Works from either end: a layout designed in Claude, or a markdown template that has no layout yet. Use when the user says set up a template, add a document template, use this design for my proposals, brand my reports, make my invoices look like this, give my invoice template a design, my proposal template has no layout, or I designed a layout in Claude and want to reuse it.",
+      "source_sha256": "69c1a3713f596e94f18eef3b414bd6c602ede404e2dad93e2a3eee70d065f95a",
+      "source_path": "skills/fcxo-setup-template/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70d2ab108b05b0075a15a1a19c01f0d672066f1fae2ca93e5f7aae19b837cf69": {
+      "description_zh": "根据工作区记录起草客户定期状态更新，将进展关联项目目标，列明请求与风险，并单独检查范围蔓延；用于周报与客户进度报告。",
+      "source": "Draft a client's periodic status update from the workspace record - progress tied to engagement goals, explicit asks, risks - plus a private scope-creep check. Use when the user wants to send a status update, weekly update, client update, or progress report, or asks what should I send my client this week.",
+      "source_sha256": "70d2ab108b05b0075a15a1a19c01f0d672066f1fae2ca93e5f7aae19b837cf69",
+      "source_path": "skills/fcxo-status-update/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41b89c70464af52c0d0a66d59bb23080537a0c4a680164c5ac3a168a6d3c8702": {
+      "description_zh": "将已有过程证据整理为 sop/<Procedure> - SOP.md；资料充分时少量提问且不联网研究，仅有目标时先研究并提出流程供用户执行完善，适用于记录过程、制定 SOP 和周期性工作流程。",
+      "source": "Use when the user says write down my process, document this procedure, capture how I do this, turn this into an SOP, or I do this every week and want it on paper, AND when the user hands a bare goal with no procedure yet: write me an SOP for X, set up a procedure for onboarding a client, automate lead generation. It grades what it is given: rich evidence gets captured into sop/<Procedure> - SOP.md with few questions and no web research; a bare goal gets researched and built into the same file as a proposed procedure the user refines by running it.",
+      "source_sha256": "41b89c70464af52c0d0a66d59bb23080537a0c4a680164c5ac3a168a6d3c8702",
+      "source_path": "skills/fcxo-write-sop/SKILL.md",
+      "package_sha256": "807ebf34b54a481d18b34b40115ee1468acc2e56eb9c40ffd121cc487eda6708",
+      "source_package": "fcxo-toolkit-0.2.9-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0dd53f841d2b52282d947f61f97e505fc78b9ac9a6a24421971272758cdc1ab0": {
+      "description_zh": "管理飞书渠道访问，审批配对、编辑允许名单及私聊/群组策略；用于核对获准人员或调整渠道规则。",
+      "source": "Manage Feishu channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the Feishu channel.",
+      "source_sha256": "0dd53f841d2b52282d947f61f97e505fc78b9ac9a6a24421971272758cdc1ab0",
+      "source_path": "skills/access/SKILL.md",
+      "package_sha256": "e286bed0a5353048160d6c73974a2c1b7bd545f14e3429ee62c7aac1e6088b91",
+      "source_package": "feishu-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56a19a11fb821cd26a7d6d2440795f034ded518597d8be0596bf4cf87603e942": {
+      "description_zh": "配置飞书渠道，保存应用凭据并复核访问策略；用于首次设置、确认谁可联系用户或检查渠道状态。",
+      "source": "Set up the Feishu channel — save app credentials and review access policy. Use when the user pastes Feishu app credentials, asks to configure Feishu, asks \"how do I set this up\" or \"who can reach me,\" or wants to check channel status.",
+      "source_sha256": "56a19a11fb821cd26a7d6d2440795f034ded518597d8be0596bf4cf87603e942",
+      "source_path": "skills/configure/SKILL.md",
+      "package_sha256": "e286bed0a5353048160d6c73974a2c1b7bd545f14e3429ee62c7aac1e6088b91",
+      "source_package": "feishu-0.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff884d570845cd1c8f4af49bb87a06b7683487b951bee6c142859e398e9d4e67": {
+      "description_zh": "审计无障碍问题、修复 WCAG 违规、构建无障碍组件及运行读屏测试，涵盖 WCAG 2.2、VoiceOver/NVDA/JAWS/TalkBack、ARIA 修复和自动化测试；可为 ux-audit 提供更深入参考。",
+      "source": "Use when auditing for accessibility violations, fixing WCAG issues, building accessible components, or running screen reader tests. Covers WCAG 2.2 patterns, screen reader testing (VoiceOver, NVDA, JAWS, TalkBack), ARIA remediation, and automated testing. Pair with `ux-audit` when its WCAG layer needs deeper reference.",
+      "source_sha256": "ff884d570845cd1c8f4af49bb87a06b7683487b951bee6c142859e398e9d4e67",
+      "source_path": "skills/accessibility/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d65a3665b642a3b9957c09599c271ea26c5901f3128f35d5d7d05f8a93790562": {
+      "description_zh": "当 Fellowship 代理反馈日志反复出现失败或需要定期改进时，围绕评估场景执行基线、迭代与报告组成的自主改善循环。",
+      "source": "Use when an agent file shows recurring failures in a feedback log, or when running a scheduled improvement pass on a Fellowship companion. Autonomous improvement loop with baseline, cycles, and report phases against eval scenarios.",
+      "source_sha256": "d65a3665b642a3b9957c09599c271ea26c5901f3128f35d5d7d05f8a93790562",
+      "source_path": "skills/autoimprove/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d243a2b29f0e0158e469f16f08902ac321311c05283c85dc3f6a4f4fc33d84bb": {
+      "description_zh": "在新功能、组件或复杂工作规划前通过协作对话探索想法、作出决策并形成设计规格，持续记录决策。",
+      "source": "Use before creating features, building components, or planning complex work. Collaborative dialogue to explore ideas, make decisions, and produce a design spec. Captures decisions throughout.",
+      "source_sha256": "d243a2b29f0e0158e469f16f08902ac321311c05283c85dc3f6a4f4fc33d84bb",
+      "source_path": "skills/brainstorming/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6176497b18032ae5dac0cd5d84f057e501565995e19e89d8f6733b722e70878": {
+      "description_zh": "进入陌生代码库或代理缺少结构背景时，将技术栈、架构、惯例、目录和关注事项整理成所有伙伴可用的一份指导参考文件。",
+      "source": "Use when entering an unfamiliar codebase, or when companions report missing structural context. Maps the stack, architecture, conventions, structure, and concerns into a single prescriptive reference file all companions can use.",
+      "source_sha256": "f6176497b18032ae5dac0cd5d84f057e501565995e19e89d8f6733b722e70878",
+      "source_path": "skills/codebase-map/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a95d46973eb09fadf876f85278912af24c8f7de8eee64e71ece24e20ed41cbd0": {
+      "description_zh": "并行探索多种差异明显的模块或 API 设计，并按深度、简洁程度和复用价值比较，用于新模块架构决策和 API 方案选择。",
+      "source": "Generate multiple radically different module/API designs in parallel and compare them on depth, simplicity, and leverage. Merry's skill for architectural decisions where multiple module shapes are worth exploring before committing. Use when designing a new module, exploring API options, comparing module shapes, or when the user mentions \"design it twice,\" \"explore multiple module shapes,\" or \"compare API options.\" The first instinct is rarely the best — this skill forces a second.",
+      "source_sha256": "a95d46973eb09fadf876f85278912af24c8f7de8eee64e71ece24e20ed41cbd0",
+      "source_path": "skills/design-it-twice/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "935fbcc798b495d32fdcabbe611f7746a112180a5b06ee6a71679009626989e8": {
+      "description_zh": "按调查、假设、修复、验证的顺序诊断缺陷、测试失败、部署问题与异常行为，先确认根因再提出修复。",
+      "source": "Use when diagnosing a bug, test failure, deploy issue, or any unexpected behavior. Systematic root-cause methodology: investigate → hypothesize → fix → verify. No fix without root cause. Load before proposing any fix.",
+      "source_sha256": "935fbcc798b495d32fdcabbe611f7746a112180a5b06ee6a71679009626989e8",
+      "source_path": "skills/investigate/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14255cd3f69917e537c4984470cabc0cf37c2c7a17173898c2aa634ace5bbbce": {
+      "description_zh": "复核、清理或导出 Fellowship 各代理的记忆，用于询问记住了什么、引用陈旧或明确调用 learn；作为整理者，修改记忆需 Frodo 批准。",
+      "source": "Use when Frodo asks 'what do you remember?', when memory references feel stale, or on explicit /fellowship:learn invocation. Reviews, prunes, or exports per-agent memory across the Fellowship. Curator only — never modifies memory without Frodo's approval.",
+      "source_sha256": "14255cd3f69917e537c4984470cabc0cf37c2c7a17173898c2aa634ace5bbbce",
+      "source_path": "skills/learn/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0de6e95598d51a2242ddf4132c9a5c3414c6032634f9a6daf3000e3d0d7ec140": {
+      "description_zh": "在头脑风暴后将设计规格转为实施计划，生成含任务拆分、伙伴分工和执行顺序的任务日志。",
+      "source": "Use after brainstorming to turn a design spec into an implementation plan. Creates a quest log with task breakdown, companion assignments, and execution order.",
+      "source_sha256": "0de6e95598d51a2242ddf4132c9a5c3414c6032634f9a6daf3000e3d0d7ec140",
+      "source_path": "skills/planning/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c0117670aff48a4a1175e8acf98628d515affc360127466876b9708cff8df40": {
+      "description_zh": "在 Fellowship 项目对话开始时建立 Gandalf 协调角色，定义表达风格、路由层级、记忆规则和任务分派决策。",
+      "source": "Use when starting any conversation in a Fellowship project — establishes Gandalf as orchestrator, defines voice, routing tiers, memory rules, and dispatch decisions",
+      "source_sha256": "8c0117670aff48a4a1175e8acf98628d515affc360127466876b9708cff8df40",
+      "source_path": "skills/using-fellowship/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd1ecf4aef20ccd2460312229edf3225bb8878f58891ff745bd862d1f0e12116": {
+      "description_zh": "指导被分派到 .claude/worktrees/ 隔离 Git 工作树的代理工作，涵盖启动检查、构建者提交约定、协调者合并与已知失败模式，避免并行修改冲突。",
+      "source": "Use when dispatched into an isolated git worktree (path under .claude/worktrees/) so parallel agent work does not collide on main — covers the startup checks, the builder commit contract, the orchestrator's eager merge, and the failure modes Fellowship has hit in practice.",
+      "source_sha256": "bd1ecf4aef20ccd2460312229edf3225bb8878f58891ff745bd862d1f0e12116",
+      "source_path": "skills/using-worktrees/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87c6fa43eded06a04f5bf6517ec1e883deeaeba55f10a1852ad5ff3a73edbde5": {
+      "description_zh": "审计已实现前端的设计质量并生成带分数的 UX 报告，按文案、视觉、颜色、字体、间距和体验六方面评1至4分，给出 BLOCK/FLAG/PASS 结论；WCAG 深入参考可配合 accessibility。",
+      "source": "Use when running a design-quality audit of implemented frontend code or producing a scored UX report. 6-pillar methodology (copywriting, visuals, color, typography, spacing, experience) with 1–4 scoring and BLOCK/FLAG/PASS verdicts. Pair with `accessibility` when the WCAG layer needs deeper reference.",
+      "source_sha256": "87c6fa43eded06a04f5bf6517ec1e883deeaeba55f10a1852ad5ff3a73edbde5",
+      "source_path": "skills/ux-audit/SKILL.md",
+      "package_sha256": "5172cdd33b13c05ddf407514bbfd1a5d8a57936d5dc6dc8741ea0ffa9e4cf241",
+      "source_package": "Fellowship-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
