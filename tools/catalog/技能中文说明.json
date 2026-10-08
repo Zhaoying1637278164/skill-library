@@ -40489,6 +40489,1086 @@
       "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
       "source_package": "Litigación Civil España-1.3.2-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e4d11ae81c26c72a73865319d764f28ed5c30afead82917d6799269b6b3f66e": {
+      "description_zh": "依据案件接收资料起草Word格式西班牙burofax正式送达函，应用权利保留或MASC筛选，并生成包含回执和内容证明的发送后清单。",
+      "source": "Redactar burofax saliente en Word desde el intake. Aplica filtros como sin perjuicio o MASC. Genera checklist post-envio con acuse y certificado de contenido. Usar con redactar burofax.",
+      "source_sha256": "1e4d11ae81c26c72a73865319d764f28ed5c30afead82917d6799269b6b3f66e",
+      "source_path": "skills/burofax-draft/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5073f3c60119d09cf48dff336496e658e4223e94e5a444f192feabd6518b8fe1": {
+      "description_zh": "在burofax起草前收集当事人、事实、法律依据、谈判筹码、BATNA、合理期限及保密要求，支持索赔准备。",
+      "source": "Pre-redaccion de burofax. Recoge contexto sobre partes, hechos, base juridica, leverage, BATNA, plazo razonable y filtros de confidencialidad. Usar con preparar burofax o necesito reclamar.",
+      "source_sha256": "5073f3c60119d09cf48dff336496e658e4223e94e5a444f192feabd6518b8fe1",
+      "source_path": "skills/burofax-intake/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40bb6c3066c9b28d2064e77a1b5c0fd89412c68726133c8011b2ac4e3f707564": {
+      "description_zh": "初筛收到的burofax，提取字段、匹配案件库、评估实质理由，并提出选项与建议。",
+      "source": "Triage de burofax entrante. Extrae campos, cruza con cartera, evalua merito y presenta opciones con recomendacion. Usar con hemos recibido un burofax o triagear esto.",
+      "source_sha256": "40bb6c3066c9b28d2064e77a1b5c0fd89412c68726133c8011b2ac4e3f707564",
+      "source_path": "skills/burofax-received/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87242d58277dc7754db5a17403a6617c475bbe1a7ee9ba706ec5fd342cdb1852": {
+      "description_zh": "配置西班牙民事诉讼事务所画像，收集专业领域、省份、风险偏好、协作者和文书风格。",
+      "source": "Configurar perfil de despacho de litigacion civil España. Captura especialidad, provincia, calibracion de riesgo, colaboradores, estilo de la casa. Usar con configurar plugin, cold-start, setup, redo.",
+      "source_sha256": "87242d58277dc7754db5a17403a6617c475bbe1a7ee9ba706ec5fd342cdb1852",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ed72fff920841c974d910e5cd84adb32b74b5b4ba73d9e7a1d4cadb6ff7af482": {
+      "description_zh": "处理西班牙普通审判中证据提出与异议及举证后结论，依据原说明LEC281至287、427和433条生成排版Word文书或发言稿。",
+      "source": "Fase intermedia del juicio ordinario — proposición e impugnación de prueba en la audiencia previa (arts. 281-287, 427 LEC) y escrito/intervención de conclusiones tras la práctica de la prueba (art. 433 LEC). Word maquetado. Usar con escrito de conclusiones, conclusiones del juicio ordinario, proposición de prueba, impugnar prueba de la contraria, audiencia previa, art. 433.",
+      "source_sha256": "ed72fff920841c974d910e5cd84adb32b74b5b4ba73d9e7a1d4cadb6ff7af482",
+      "source_path": "skills/conclusiones-y-prueba-ordinario/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3334c480b51d01c697f6cc628b5cf08e9f16d32208bfbfa38f9b9b8eec9f688d": {
+      "description_zh": "依据原说明LEC63至65条提出管辖或审判权异议，涵盖客观、地域、职能、国际管辖及仲裁调解约定，考虑强制期限与中止效果。",
+      "source": "Declinatoria de los arts. 63-65 LEC para denunciar la falta de jurisdiccion o de competencia (objetiva, territorial, funcional, internacional) o la sumision del asunto a arbitraje o mediacion. Plazo perentorio y efecto suspensivo. Usar con declinatoria, falta de competencia, falta de jurisdiccion, sumision a arbitraje, competencia territorial, competencia objetiva, arts. 63-65 LEC.",
+      "source_sha256": "3334c480b51d01c697f6cc628b5cf08e9f16d32208bfbfa38f9b9b8eec9f688d",
+      "source_path": "skills/declinatoria/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bee6c4c35c624bcebe7c6cd6488c2cf95818ada7a1685eee1723d66bd400f0b3": {
+      "description_zh": "依据原说明LEC549条准备执行申请，支持生效判决等司法及公证契据汇票等非司法执行依据；原说明称无需MASC。",
+      "source": "Demanda ejecutiva LEC 549. Titulos judiciales como sentencias firmes y extrajudiciales como escrituras y letras de cambio. MASC no requerido. Usar con iniciar ejecucion, demanda ejecutiva o despachar ejecucion.",
+      "source_sha256": "bee6c4c35c624bcebe7c6cd6488c2cf95818ada7a1685eee1723d66bd400f0b3",
+      "source_path": "skills/demanda-ejecutiva/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a881db3ddbdfa173879b219b38ed894757e31d536139bd3f4428239b996b683": {
+      "description_zh": "依据原说明LEC461及LO1/2025，逐项反对对方上诉并质疑原判不利部分，列示送达后10日期限及5至10份已核验最高法院判例要求。",
+      "source": "Oposicion al recurso de apelacion de la contraria e impugnacion de la sentencia apelada conforme a LEC 461 y LO 1/2025, en el plazo de 10 dias desde el traslado del escrito de interposicion. Oposicion motivo a motivo mas impugnacion de los pronunciamientos desfavorables. Cinco a diez STS verificadas. Usar con oponerse a la apelacion, impugnar la apelacion de la contraria, oposicion al recurso de apelacion o impugnacion de la sentencia apelada.",
+      "source_sha256": "6a881db3ddbdfa173879b219b38ed894757e31d536139bd3f4428239b996b683",
+      "source_path": "skills/impugnacion-apelacion/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2341b0cdd2e30fe6f7a73779ef1ba29ace8102b2bd5a73eb4175f3ea0276d940": {
+      "description_zh": "依据原说明LEC244至246及LO1/2025，对不应计入费用或过高律师专家费用提出异议，考虑三分之一限额与10日期限，输出排版Word。",
+      "source": "Impugnacion de la tasacion de costas de la contraria conforme a LEC 244-246 y LO 1/2025. Por partidas indebidas (245.2) o por honorarios excesivos del abogado o perito (246), con limite del tercio (394.3). Plazo 10 dias. Word maquetado obligatorio. Usar con impugnar la tasacion de costas, costas indebidas, honorarios excesivos, impugnacion de costas de la contraria, arts. 245-246 LEC.",
+      "source_sha256": "2341b0cdd2e30fe6f7a73779ef1ba29ace8102b2bd5a73eb4175f3ea0276d940",
+      "source_path": "skills/impugnacion-tasacion-costas/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54146feae59cf5f19449bd3932627373b0c0e0966a8b2bd359201c00f42237fe": {
+      "description_zh": "依据原说明LEC228、LOPJ241及宪法基本权利，准备对不可再上诉生效裁判的例外程序无效请求，考虑20日期限及宪法救济前置关系。",
+      "source": "Incidente excepcional de nulidad de actuaciones (art. 228 LEC / art. 241 LOPJ) contra resoluciones firmes irrecurribles que vulneran un derecho fundamental del art. 53.2 CE (tipicamente art. 24 CE, indefension). Plazo veinte dias. Paso previo al recurso de amparo. Usar con incidente de nulidad de actuaciones, nulidad de actuaciones, vulneracion de derecho fundamental, indefension, art. 241 LOPJ.",
+      "source_sha256": "54146feae59cf5f19449bd3932627373b0c0e0966a8b2bd359201c00f42237fe",
+      "source_path": "skills/incidente-nulidad-actuaciones/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51ee39d01f1ce63a3af180613811568e25a32f1acfedfd104eb067f50c78ea36": {
+      "description_zh": "依据原说明LEC34或35，通过诉讼代理人费用核定或律师对客户程序追索未付报酬。",
+      "source": "Jura de cuentas del procurador LEC 34 o procedimiento del abogado contra cliente LEC 35 por honorarios no satisfechos. Usar con jurar cuentas o reclamar honorarios al cliente.",
+      "source_sha256": "51ee39d01f1ce63a3af180613811568e25a32f1acfedfd104eb067f50c78ea36",
+      "source_path": "skills/jura-cuentas/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89dfd87f94dbcfc26c530faaccea9dd9d42688cc04823c52a0cb977fccf8c16d": {
+      "description_zh": "依据原说明Ley1/2025第5条生成已尝试MASC争议解决的证明，支持非豁免诉讼受理前置材料。",
+      "source": "Generar documento de acreditacion del intento MASC art 5 Ley 1/2025. Requisito de admisibilidad de la demanda en juicios no exentos. Usar con preparar MASC o acreditar intento previo.",
+      "source_sha256": "89dfd87f94dbcfc26c530faaccea9dd9d42688cc04823c52a0cb977fccf8c16d",
+      "source_path": "skills/masc-acta/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4f0e742a67a56638d5e95dde804901c5b7d5f9220c5f8a7c33496d748948102": {
+      "description_zh": "依据原说明LEC721至747准备临时措施申请，论证权利表面成立、迟延风险和担保，涵盖预防扣押、登记、保管、干预及临时停止。",
+      "source": "Solicitud de medidas cautelares LEC 721-747 con fumus boni iuris, periculum in mora y caucion. Embargo preventivo, anotacion preventiva, deposito, intervencion, cese cautelar. Usar con medidas cautelares o embargo preventivo.",
+      "source_sha256": "d4f0e742a67a56638d5e95dde804901c5b7d5f9220c5f8a7c33496d748948102",
+      "source_path": "skills/medidas-cautelares/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee0f793f8c5638b1d6ca217f529f834f390d45caf4abd036953f975c1c7733c3": {
+      "description_zh": "通过五阶段起草西班牙消费者合同不公平条款无效诉状，涵盖房贷底线费用、IRPH、循环信用高利及银行手续费，依据原说明法规并输出排版Word。",
+      "source": "Redaccion de demandas de nulidad de clausulas abusivas en contratos con consumidores (clausula suelo, gastos hipotecarios, IRPH, tarjetas revolving/usura, comisiones de apertura/descubierto/reclamacion de posiciones) conforme a TRLGDCU, LCGC, Directiva 93/13/CEE y LO 1/2025. No redacta al primer disparo, recorre cinco fases. Word maquetado obligatorio. Usar con nulidad de clausula abusiva, clausula suelo, gastos hipotecarios, IRPH, revolving, usura, comision de apertura, reclamar al banco, control de transparencia.",
+      "source_sha256": "ee0f793f8c5638b1d6ca217f529f834f390d45caf4abd036953f975c1c7733c3",
+      "source_path": "skills/nulidad-clausulas-abusivas/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "673433ca242769f6d6a00ac55914fce0b3a4163885fad5cc3a4dabc3bb28c8a6": {
+      "description_zh": "依据原说明LEC556至559及LO1/2025起草执行异议，区分司法依据限定理由、非司法依据含不公平条款及程序缺陷，输出排版Word。",
+      "source": "Escrito de oposicion a la ejecucion conforme a los arts. 556-559 LEC y LO 1/2025. Defiende al ejecutado distinguiendo titulos judiciales (motivos tasados art. 556), titulos no judiciales (art. 557, incluida clausula abusiva) y defectos procesales (art. 559). Word maquetado obligatorio. Usar con oponerse a la ejecucion, oposicion al despacho de ejecucion, defender al ejecutado, motivos de oposicion, arts. 556-559.",
+      "source_sha256": "673433ca242769f6d6a00ac55914fce0b3a4163885fad5cc3a4dabc3bb28c8a6",
+      "source_path": "skills/oposicion-ejecucion/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b17e86fe701a4c181c0d7c78caa427b9b56dda65f740cc5a9569125220be9bae": {
+      "description_zh": "依据原说明LEC301至316或360至381准备当事人或证人询问提纲，按诉讼主张和反驳材料组织问题。",
+      "source": "Outline de interrogatorio de parte LEC 301-316 o testigo LEC 360-381. Preguntas organizadas por la tesis y material de impugnacion. Usar con preparar interrogatorio o guion para la vista.",
+      "source_sha256": "b17e86fe701a4c181c0d7c78caa427b9b56dda65f740cc5a9569125220be9bae",
+      "source_path": "skills/preparacion-interrogatorio/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "614e80447bc816d20a7fa26d34c9fc25a88588edbd86d877185bd48de281328b": {
+      "description_zh": "依据原说明LEC458及LO1/2025准备向省级法院民事上诉，从事实与法律依据两方面提出挑战，要求5至10份核验最高法院判例。",
+      "source": "Recurso de apelacion civil ante Audiencia Provincial conforme a LEC 458 y LO 1/2025 sin anuncio. Doble ataque a hechos y fundamentos. Cinco a diez STS verificadas. Usar con apelar sentencia, interponer apelacion o recurso de apelacion.",
+      "source_sha256": "614e80447bc816d20a7fa26d34c9fc25a88588edbd86d877185bd48de281328b",
+      "source_path": "skills/recurso-apelacion/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2aa0c6fab2305b3215e8543b74a146826dee0e3ba973e7cd723f9696d2c1fcd0": {
+      "description_zh": "依据原说明LEC477及494准备最高法院民事法律审和拒绝受理救济，优先Jurisprudenciator检索并输出排版Word。",
+      "source": "Recurso de casacion civil ante la Sala Primera del Tribunal Supremo (art. 477 LEC tras el RDL 5/2023, eje del interes casacional) y recurso de queja (art. 494 LEC) contra la denegacion de un recurso. Jurisprudenciator primero. Word maquetado obligatorio. Usar con recurso de casacion, casacion civil, interes casacional, recurrir ante el Tribunal Supremo, recurso de queja, denegacion de recurso, arts. 477 y 494 LEC.",
+      "source_sha256": "2aa0c6fab2305b3215e8543b74a146826dee0e3ba973e7cd723f9696d2c1fcd0",
+      "source_path": "skills/recurso-casacion-y-queja/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6931816d93a98d5dfcba42631c04ead752ea36af3942630766d40dc7142d7d85": {
+      "description_zh": "依据原说明LEC451至454对非终局司法命令或LAJ程序行为提出复议，列示5日期限。",
+      "source": "Recurso de reposicion LEC 451-454 contra providencias y autos no definitivos del Tribunal de Instancia y contra diligencias del LAJ. Plazo cinco dias. Usar con recurso de reposicion o recurrir providencia.",
+      "source_sha256": "6931816d93a98d5dfcba42631c04ead752ea36af3942630766d40dc7142d7d85",
+      "source_path": "skills/recurso-reposicion/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "facbf69a5b7e744579bee071bbbef904d4556e04816de5518375beb99dca9498": {
+      "description_zh": "通过五阶段起草普通或口头程序的答辩，包含程序抗辩、实体回应、适用时反诉和核验判例；原说明列20个工作日期限。",
+      "source": "Redaccion de contestacion a la demanda en juicio ordinario o verbal. Cinco fases con excepciones procesales, contestacion al fondo, reconvencion si procede, jurisprudencia verificada. Plazo de veinte dias habiles. Usar con redactar contestacion o contestar la demanda.",
+      "source_sha256": "facbf69a5b7e744579bee071bbbef904d4556e04816de5518375beb99dca9498",
+      "source_path": "skills/redactar-contestacion/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d811182a9d4ac8d99e6353a6af121ea02356f7d165d760103f711e7991345b90": {
+      "description_zh": "依据原说明LEC及LO1/2025，经过五阶段全面起草民事、商事、家事、督促支付或驱逐等诉状，输出排版Word，不直接首次即成文。",
+      "source": "Redaccion exhaustiva de demandas civiles, mercantiles y de familia conforme a LEC y LO 1/2025. No redacta al primer disparo, recorre cinco fases. Word maquetado obligatorio. Usar con redactar demanda, preparar demanda, interponer, monitorio, verbal, ordinario, desahucio.",
+      "source_sha256": "d811182a9d4ac8d99e6353a6af121ea02356f7d165d760103f711e7991345b90",
+      "source_path": "skills/redactar-demanda/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4f32345d4031e4d0b423757095c18c2df9cc690b1d740c1b4957588190df2a5": {
+      "description_zh": "初筛司法要求、协助请求、公函及LEC256初步调查，分类分析范围、期限和可提出的异议。",
+      "source": "Triage de requerimientos judiciales, exhortos, oficios y diligencias preliminares art 256 LEC. Clasifica, analiza alcance, plazo y oposicion. Usar con hemos recibido requerimiento judicial o exhorto.",
+      "source_sha256": "d4f32345d4031e4d0b423757095c18c2df9cc690b1d740c1b4957588190df2a5",
+      "source_path": "skills/requerimiento-judicial-triage/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87bc37f19c9ae430ee822b7d94fafc86297ab914c935fa196b5de4d9b0f6243d": {
+      "description_zh": "依据原说明LEC241至246申请诉讼费用核定，涵盖律师费、诉讼代理费和专家费用，并考虑三分之一限额。",
+      "source": "Solicitud de tasacion de costas LEC 241-246 con limite del tercio. Honorarios letrado, derechos procurador, gastos periciales. Usar con tasar costas o impugnar tasacion.",
+      "source_sha256": "87bc37f19c9ae430ee822b7d94fafc86297ab914c935fa196b5de4d9b0f6243d",
+      "source_path": "skills/tasacion-costas/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f02e9d7c998be15f4717693b1a5e1b540e59eb4bd669f4662fe33a58572aaf8": {
+      "description_zh": "依据原说明LEC19至22及LO1/2025起草提前终结民事程序的简短文书，涵盖承认请求、撤诉放弃、庭外满足或对象消失，包含请求与费用事项。",
+      "source": "Redaccion de escritos de terminacion anticipada del proceso civil conforme a los arts. 19-22 LEC y LO 1/2025 — allanamiento (art. 21), desistimiento y renuncia (arts. 19-20) y satisfaccion extraprocesal o carencia sobrevenida de objeto (art. 22). Escritos breves de tramite con su SUPLICO y mencion de costas. Usar con allanamiento, allanarse a la demanda, desistir, desistimiento, renuncia a la accion, satisfaccion extraprocesal, carencia sobrevenida de objeto, terminar el pleito, poner fin al proceso.",
+      "source_sha256": "1f02e9d7c998be15f4717693b1a5e1b540e59eb4bd669f4662fe33a58572aaf8",
+      "source_path": "skills/terminacion-anticipada/SKILL.md",
+      "package_sha256": "e395efa9da2ad875242c937928493da540b4e912173a22a4758ad3ff31404559",
+      "source_package": "Litigación Civil España-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db5222c6962dac833504a311d33050e1facea7eb27e4da56e6eb92b4e7576a33": {
+      "description_zh": "向西班牙行政诉讼案件历史追加带日期事件并刷新日志，记录通知、卷宗交付、临时裁定、状态变化及风险重评。",
+      "source": "Añade evento fechado al historial del asunto contencioso-administrativo y refresca el log. Captura notificaciones, entrega del expediente, resoluciones cautelares, cambios de estado y re-evaluaciones de riesgo. Usar con anota en el asunto o actualiza el asunto.",
+      "source_sha256": "db5222c6962dac833504a311d33050e1facea7eb27e4da56e6eb92b4e7576a33",
+      "source_path": "skills/actualizar-asunto/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53b128cc00b82709538c627884d114ea63273e6fbe932210ece46e638315f8d4": {
+      "description_zh": "在起草前依据原说明LJCA69检查审判权、当事人资格、可诉行为、行政救济穷尽、材料、管辖及期限，仅做受理诊断，并按是否穷尽转交行政复议或行政诉讼提起技能。",
+      "source": "Checklist de DIAGNÓSTICO previo (art. 69 LJCA) que debe correrse ANTES de redactar cualquier escrito, administrativo o judicial. Comprueba jurisdicción, legitimación, acto impugnable, agotamiento de la vía, documentos del art. 45.2, competencia objetiva y plazo. Activar con \"¿es recurrible esto?\", \"¿puedo recurrir?\", \"¿me lo van a inadmitir?\", \"control de admisibilidad\", \"¿esto agota la vía administrativa?\", \"¿recurro en alzada o voy directo al contencioso?\", \"acto de trámite\", \"acto confirmatorio\", \"acto firme y consentido\", \"legitimación\", \"acuerdo corporativo\", \"¿qué juzgado es competente?\", \"antes de redactar la demanda\". No redacta escritos: solo decide. Si el resultado es que falta agotar la vía administrativa, el escrito lo redacta /recurso-alzada-reposicion-ca; si la vía ya está agotada, se pasa a /interposicion-recurso-contencioso-ca.",
+      "source_sha256": "53b128cc00b82709538c627884d114ea63273e6fbe932210ece46e638315f8d4",
+      "source_path": "skills/admisibilidad-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1363853cbd396e6fdb8a22084ec9c6b3966c0ed3c5a69ffb6c16a637b5d507fd": {
+      "description_zh": "接收新西班牙行政诉讼案件，收集身份冲突、被诉行为、先行救济、LJCA46期限、机关程序、风险及卷宗。",
+      "source": "Intake de un nuevo asunto contencioso-administrativo. Recoge identificación, conflictos, acto impugnado, agotamiento de la vía previa, plazo de caducidad del art. 46 LJCA, órgano y procedimiento, triage de riesgo y expediente. Usar con nuevo asunto o intake este asunto.",
+      "source_sha256": "1363853cbd396e6fdb8a22084ec9c6b3966c0ed3c5a69ffb6c16a637b5d507fd",
+      "source_path": "skills/asunto-intake/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ea9fa93ea0cbc8ad8683c643897f9cdf5608fa72ea3251357dc2494b605c873": {
+      "description_zh": "依据原说明LJCA8.6处理独立进入住宅或限制场所司法许可的反对和越权进入后异议，覆盖行政税务执行、检查与卫生措施；仅针对物理进入，暂停行政行为转临时措施。",
+      "source": "Procedimiento AUTÓNOMO de autorización judicial de entrada en domicilio y lugares de acceso restringido del art. 8.6 LJCA — oposición del afectado a la autorización pedida por la Administración (ejecución forzosa de actos, entrada de la Administración Tributaria incluso previa al inicio formal del procedimiento, inspección de la CNMC, ratificación de medidas sanitarias) e impugnación posterior de la entrada que excedió de lo autorizado. Activar con \"autorización de entrada en domicilio\", \"art. 8.6 LJCA\", \"entrada de Hacienda en la empresa\", \"la Inspección quiere entrar\", \"nos han pedido autorización judicial de entrada\", \"oponernos a la entrada\", \"registro de la CNMC\", \"ratificación de medidas sanitarias\", \"van a entrar a ejecutar la demolición\", \"han entrado más allá de lo autorizado\". Su objeto es la entrada física, no el acto que se ejecuta: si lo que se pretende es suspender la ejecutividad del acto administrativo mientras se recurre, usar /medidas-cautelares-ca.",
+      "source_sha256": "1ea9fa93ea0cbc8ad8683c643897f9cdf5608fa72ea3251357dc2494b605c873",
+      "source_path": "skills/autorizacion-entrada-domicilio-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33f71625fc357e1fd7502b56c28f9b1b94d99147cfeb1fc5c23a827f0b5df944": {
+      "description_zh": "深入整理行政诉讼案件当前位置、被诉行为、先行救济、期限、卷宗、临时措施、开放问题及风险重评。",
+      "source": "Briefing profundo de un asunto contencioso-administrativo. Posición actual, acto impugnado, vía previa, plazo de caducidad, expediente, medidas cautelares, cuestiones abiertas y re-evaluación de riesgo. Usar con briefing o dónde estamos con el asunto.",
+      "source_sha256": "33f71625fc357e1fd7502b56c28f9b1b94d99147cfeb1fc5c23a827f0b5df944",
+      "source_path": "skills/briefing-asunto/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d71556a9d58073dd55dceb7b5ae3cbeab4c07b73e5aacc33a00717615044f13": {
+      "description_zh": "关闭行政诉讼案件，记录生效裁判、撤诉、承认、行政认可或协议等终结方式、费用、待执行及经验，归档移出活跃案件而不删除。",
+      "source": "Cerrar un asunto contencioso-administrativo. Captura el modo de terminación (sentencia firme, desistimiento, allanamiento, reconocimiento en vía administrativa, acuerdo), costas, ejecución pendiente y lecciones, y archiva fuera de la cartera activa sin borrar. Usar con cerrar asunto o asunto terminado.",
+      "source_sha256": "4d71556a9d58073dd55dceb7b5ae3cbeab4c07b73e5aacc33a00717615044f13",
+      "source_path": "skills/cerrar-asunto/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12d888d5d85fb46da3cdde010ebe07b3fa0cb54d817bb68826fb5e687710fcc2": {
+      "description_zh": "按西班牙行政诉讼案件的外部协作者分组，起草每周进展邮件，覆盖诉讼代理人、医疗专家、建筑规划与经济估价专家，并标记临近期限的事项。",
+      "source": "Genera borradores semanales de emails de estado a colaboradores externos del despacho contencioso-administrativo (procurador ante Salas, perito medico, arquitecto-urbanista, economico-tasador). Agrupa por colaborador y marca los asuntos con plazo de caducidad proximo. Usar con estado a colaboradores o emails al procurador esta semana.",
+      "source_sha256": "12d888d5d85fb46da3cdde010ebe07b3fa0cb54d817bb68826fb5e687710fcc2",
+      "source_path": "skills/colaboradores-status/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e91cf6446a6f72aefd645087aedc749737ae6d371ed6d75c9b47c3abb1ac0e4e": {
+      "description_zh": "配置西班牙行政诉讼律所初始档案，采集业务领域、自治区域及地方规范、法院、诉讼地位、协作者和文书风格，支持首次设置与重新配置。",
+      "source": "Configurar el perfil de despacho de litigacion contencioso-administrativa en España. Captura areas (sancionador, urbanismo, responsabilidad patrimonial, personal, tributario local, extranjeria, contratacion, subvenciones, expropiacion), CCAA y normativa autonomica, organos judiciales, posicion procesal, colaboradores y estilo de la casa. Usar con configurar plugin, cold-start, setup, redo.",
+      "source_sha256": "e91cf6446a6f72aefd645087aedc749737ae6d371ed6d75c9b47c3abb1ac0e4e",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83cd5bfeac198196e35d7b175c3dc3eec70a2bd308c2dcc9a4197c303e13741c": {
+      "description_zh": "依据原说明计算和审查西班牙行政诉讼期限，覆盖起诉期限、行政沉默、八月期间与程序内部期限，确定通知后的起算日、到期日及是否逾期。",
+      "source": "Calcula y audita los plazos del orden contencioso-administrativo — caducidad de la interposición (art. 46 LJCA), silencio administrativo, mes de agosto (art. 128.2 LJCA) y plazos internos del proceso. Activar con \"cuándo vence el plazo\", \"cuánto tiempo tengo para recurrir\", \"calcula el plazo\", \"¿he perdido el plazo?\", \"estoy en plazo\", \"fecha de caducidad\", \"dies a quo\", \"hasta cuándo puedo interponer\", \"me notificaron el día X\", \"silencio administrativo\", \"cuándo se produce el acto presunto\", \"agosto cuenta\", \"plazo para la demanda\", \"plazo para apelar o preparar casación\".",
+      "source_sha256": "83cd5bfeac198196e35d7b175c3dc3eec70a2bd308c2dcc9a4197c303e13741c",
+      "source_path": "skills/computo-plazos-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a5ea404a338e32fbb985e91bf6d4bca9eb320b23ad871337f05028cbf238b2a": {
+      "description_zh": "起草行政诉讼客户的资料保全通知，说明应保留附回执的通知、提交登记凭证、专家报告及医疗案件病历，并识别需立即索取的行政卷宗材料。",
+      "source": "Comunicacion al cliente sobre que documentacion debe conservar y cual hay que pedir ya en un asunto contencioso-administrativo. La prueba central es el expediente administrativo, que lo tiene la Administracion. El cliente conserva las notificaciones con su acuse (determinan el dies a quo), las alegaciones con justificante de registro, los informes periciales y, en sanitario, la historia clinica. Usar con comunicar al cliente que conserve documentacion.",
+      "source_sha256": "8a5ea404a338e32fbb985e91bf6d4bca9eb320b23ad871337f05028cbf238b2a",
+      "source_path": "skills/conservacion-documental/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a8281084e0b670787cdd0efd4043e86bbbca9bc976f0acec5a533b7f632bcbc": {
+      "description_zh": "从被告行政机关、共同被告或被通知参加诉讼的利害关系人立场，起草西班牙行政诉讼答辩及LJCA第58条前置抗辩，涵盖保险人、中标人与许可持有人。",
+      "source": "Redacta la contestación a la demanda contencioso-administrativa y las alegaciones previas del art. 58 LJCA desde la posición PASIVA — defendiendo a la Administración demandada, a un codemandado (aseguradora, adjudicatario de un contrato, titular de una licencia) o a un tercero interesado emplazado ex art. 49 LJCA. Activar con \"contestar la demanda contencioso\", \"nos demandan en el contencioso\", \"defender a la Administración\", \"somos codemandados\", \"alegaciones previas\", \"inadmisibilidad del recurso\", \"me han emplazado como interesado\", \"defendemos a la aseguradora del ayuntamiento\", \"oponernos al recurso\".",
+      "source_sha256": "1a8281084e0b670787cdd0efd4043e86bbbca9bc976f0acec5a533b7f632bcbc",
+      "source_path": "skills/contestacion-demanda-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64b75c57c2c09811274cac5eb095cfdaed20e12286c4f3ce0c6c0d889a010c36": {
+      "description_zh": "目录型技能，未含模板；依据原说明评估西班牙行政诉讼败诉费用风险及争议金额三分之一上限，起草因事实或法律重大疑问免除费用的申请，审查不当或过高费用计价。",
+      "source": "Catálogo (sin plantilla). Costas en el orden contencioso-administrativo (art. 139 LJCA, redacción del RD-ley 6/2023 en vigor 20-3-2024) y tasación e impugnación por remisión a la LEC (arts. 242-246). Estima el riesgo de costas del cliente aplicando el tope de un tercio de la cuantía, redacta la solicitud de no imposición por serias dudas de hecho o de derecho, y revisa tasaciones detectando partidas indebidas, excesivas o que superen el tope. Activar con \"costas\", \"condena en costas\", \"riesgo de costas\", \"cuánto me puede costar si pierdo\", \"tope de costas\", \"tercio de la cuantía\", \"tasación de costas\", \"impugnar la tasación\", \"costas excesivas\", \"costas indebidas\", \"no imposición de costas\", \"serias dudas de derecho\", \"minuta del abogado del Estado\", \"¿me van a condenar en costas?\", \"art. 139 LJCA\".",
+      "source_sha256": "64b75c57c2c09811274cac5eb095cfdaed20e12286c4f3ce0c6c0d889a010c36",
+      "source_path": "skills/costas-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7c207487b34f3e887b780548de4f67d085f8a528f1df656b85495b6552ce9b28": {
+      "description_zh": "制作行政救济与司法诉讼双轨时间线，以行政卷宗页码定位事件，依据原说明突出通知日、期限起算日和LJCA第46条起诉到期日。",
+      "source": "Cronologia contencioso-administrativa de doble carril (via administrativa y via procesal) anclada al folio del expediente administrativo. Calcula y destaca la fecha de notificacion, el dies a quo y la caducidad del art. 46 LJCA. Usar con cronologia o timeline del asunto.",
+      "source_sha256": "7c207487b34f3e887b780548de4f67d085f8a528f1df656b85495b6552ce9b28",
+      "source_path": "skills/cronologia/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb2898f4c83b57142ecfb915a551d90a283e671e6c7ed2a1c405a66582363969": {
+      "description_zh": "制作行政诉讼请求的证明要素表，每项列出LJCA、LPAC或LRJSP条文、案件事实、卷宗页码和状态，设置共同的可受理性检查行并识别证据缺口。",
+      "source": "Cuadro de elementos de la pretension contencioso-administrativa. Una fila por elemento a probar con articulo de LJCA/LPAC/LRJSP, hecho del caso, folio del expediente y estado. Fila transversal obligatoria de admisibilidad. Deteccion de gaps. Usar con cuadro de elementos o que nos falta para probar.",
+      "source_sha256": "cb2898f4c83b57142ecfb915a551d90a283e671e6c7ed2a1c405a66582363969",
+      "source_path": "skills/cuadro-elementos/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8a9eaa4e20bbb9aee660ff439230467f8c6141ccc0b46f7f6927b8ee02a057af": {
+      "description_zh": "直接修改行政诉讼律所档案中的单项配置，无需重做初始访谈；支持自治区域规范、法院、业务领域、诉讼地位、协作者、风险尺度、模板与集成。",
+      "source": "Editar un campo del perfil de despacho contencioso-administrativo sin re-correr todo el cold-start. Cambiar CCAA y normativa autonomica, organos judiciales (Juzgados de lo CA, Sala del TSJ, AN, TS Sala Tercera), areas de practica, posicion procesal, colaboradores, calibracion de riesgo, plantillas, integraciones. Usar con cambiar mi perfil o customize.",
+      "source_sha256": "8a9eaa4e20bbb9aee660ff439230467f8c6141ccc0b46f7f6927b8ee02a057af",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42b4fc8492307303eba42f0631fdc17e05676cdd7e42e01fc657435a976ddc92": {
+      "description_zh": "在普通行政诉讼已立案且收到行政卷宗后，起草正式起诉状，以卷宗支持事实、无效或可撤销理由、金额、证据和请求；首次立案及简易程序分别使用对应技能。",
+      "source": "Redacta la demanda contencioso-administrativa del procedimiento ordinario (arts. 52-56 LJCA), en el trámite posterior a la entrega del expediente administrativo — hechos anclados al expediente, motivos de nulidad y anulabilidad, cuantía, prueba y suplico del art. 31. Activar con \"formalizar la demanda del contencioso\", \"ya tengo el expediente y toca demandar\", \"art. 56 LJCA\", \"redactar la demanda tras el emplazamiento\". Requisito previo: el recurso YA está interpuesto y el expediente entregado. Si aún no se ha presentado nada, empezar por /interposicion-recurso-contencioso-ca. Si el asunto va por procedimiento abreviado (materias del art. 78.1 LJCA —personal, extranjería, inadmisión de asilo— o cuantía inferior a 30.000 €), la demanda es la inicial y directa de /procedimiento-abreviado-ca.",
+      "source_sha256": "42b4fc8492307303eba42f0631fdc17e05676cdd7e42e01fc657435a976ddc92",
+      "source_path": "skills/demanda-contencioso-administrativa/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e260c1e00dbe3f2ff0de781222e6230655a2181ffeda3bdfb079f47e839d3492": {
+      "description_zh": "协助执行本人参与诉讼取得的对行政机关判决，涵盖履行催告、强制罚款、无法履行时替代赔偿、金钱判决与执行争议；请求适用他人判决效果时转用判决效果扩张技能。",
+      "source": "Asiste en la ejecución de sentencias contra la Administración obtenidas por el propio recurrente (arts. 103-113 LJCA) — requerimiento de ejecución, multas coercitivas, indemnización sustitutoria por imposibilidad legal o material, condenas dinerarias e incidente de ejecución. Activar con \"ejecutar mi sentencia contra la Administración\", \"incidente de ejecución contencioso\", \"la Administración no cumple la sentencia que gané\", \"multas coercitivas\", \"art. 104 LJCA\", \"art. 108 LJCA\", \"ejecución forzosa del fallo\". Requisito previo: FUISTE PARTE en el pleito y la sentencia es tuya. Si no litigaste y lo que quieres es que se te apliquen los efectos de una sentencia firme obtenida por un tercero en idéntica situación (arts. 110-111 LJCA), usar /extension-efectos-ca.",
+      "source_sha256": "e260c1e00dbe3f2ff0de781222e6230655a2181ffeda3bdfb079f47e839d3492",
+      "source_path": "skills/ejecucion-sentencias-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba81802d672eea0db9b0e6c5ba8dba0de14c71de05d8a967000b09eec4cbbbb6": {
+      "description_zh": "依据原说明起草行政诉讼书面结案意见，覆盖普通程序LJCA第64条的10日环节及简易程序，适用于绝对无效、医疗行政责任、城市规划与社会保障事项。",
+      "source": "Redacta el escrito de conclusiones del proceso contencioso-administrativo — trámite escrito del art. 64 LJCA (ordinario, 10 días) y conclusiones del procedimiento abreviado (art. 78). Cubre nulidad de pleno derecho, responsabilidad patrimonial sanitaria, urbanismo y Seguridad Social. Activar con \"conclusiones contencioso\", \"escrito de conclusiones\", \"evacuar traslado de conclusiones\", \"me han dado traslado para conclusiones\".",
+      "source_sha256": "ba81802d672eea0db9b0e6c5ba8dba0de14c71de05d8a967000b09eec4cbbbb6",
+      "source_path": "skills/escrito-conclusiones-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b884e67ba3fd578a65046e0e82dd97358affb91c719eb519e8a3e7b60c58b34d": {
+      "description_zh": "将律所既定文风应用于行政诉讼司法文书，采用三段结构、对照说明、先解释原因后提出结论，并将事实锚定卷宗页码；行政机关程序文书使用其自身语气。",
+      "source": "Capa de estilo que aplica la pluma de la casa a los escritos contencioso-administrativos. Estructura tripartita, contrastes, explicacion del por que antes del que, cero adjetivos vacios, anclaje al folio del expediente. No se aplica a los escritos de la via administrativa, que tienen tono propio. Usar con aplica mi estilo o pluma de la casa.",
+      "source_sha256": "b884e67ba3fd578a65046e0e82dd97358affb91c719eb519e8a3e7b60c58b34d",
+      "source_path": "skills/estilo-escritos-judiciales/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aac1d2679091e45bc2bc7c52abd9443e10b2475e86506616c51b42d7ce77755d": {
+      "description_zh": "管理、审查和利用行政卷宗，依据原说明处理索取与补充遗漏材料，识别缺页和程序瑕疵，建立页码及引文索引，并处理电子卷宗与第三方数据保护。",
+      "source": "Gestión, auditoría y explotación estratégica del expediente administrativo — reclamación (art. 48 LJCA), ampliación de lo omitido (art. 55 LJCA), detección de huecos y vicios, foliado e índice de citas, expediente electrónico y protección de datos de terceros. Activar con \"ha llegado el expediente\", \"el expediente está incompleto\", \"faltan documentos en el expediente\", \"reclamar el expediente\", \"no lo han remitido\", \"ampliación del expediente\", \"art. 55\", \"auditar el expediente\", \"citar por folio\", \"índice del expediente\", \"qué vicios tiene el procedimiento\".",
+      "source_sha256": "aac1d2679091e45bc2bc7c52abd9443e10b2475e86506616c51b42d7ce77755d",
+      "source_path": "skills/expediente-administrativo-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "796c781b6152d5325c6e50d5ba10559179700d2f08b07b77d93c5f5d35662a3d": {
+      "description_zh": "目录型技能，未含模板；依据原说明申请将他人生效判决的效果扩张至相同法律处境的第三人，覆盖税务、公职与市场统一事项、一年期限及排除情形；本人判决未履行则转用执行技能。",
+      "source": "Catálogo (sin plantilla). Extensión de efectos de sentencias firmes a terceros en idéntica situación jurídica (arts. 110 y 111 LJCA), en materia tributaria, de personal al servicio de las AAPP y de unidad de mercado. Permite obtener los efectos de una sentencia AJENA sin haber pleiteado. Cubre requisitos, plazo de un año, causas tasadas de desestimación, la trampa del acto firme y consentido, y la apelabilidad del art. 81.2.e) LJCA. Activar con \"extensión de efectos\", \"art. 110 LJCA\", \"art. 111 LJCA\", \"aprovechar una sentencia de un compañero\", \"ya hay sentencia para otro funcionario igual\", \"a un compañero se lo han reconocido\", \"pleito suspendido por otro preferente\", \"recurso testigo\", \"me pueden aplicar esa sentencia\", \"extender los efectos de la sentencia\". Requisito previo: NO fuiste parte en el proceso en que recayó la sentencia. Si la sentencia es tuya y la Administración no la cumple, lo que procede es su ejecución → /ejecucion-sentencias-ca.",
+      "source_sha256": "796c781b6152d5325c6e50d5ba10559179700d2f08b07b77d93c5f5d35662a3d",
+      "source_path": "skills/extension-efectos-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b02260e6c155c6d6368a3a0b58d8fb90475980a1b09461cdd1cb56a8c358278": {
+      "description_zh": "生成排版好的行政诉讼法律服务委托Word文件，包含律师信息、争议对象、费用、原说明中的诉讼费用上限和期限提醒、RGPD条款及职业保密要求。",
+      "source": "Hoja de encargo profesional para asuntos contencioso-administrativos conforme al EGA, Ley 10/2010 PBC y RGPD. Genera Word maquetado con datos del letrado, objeto del encargo en terminos contenciosos (recurso contra resolucion administrativa), honorarios, advertencia de costas del art. 139 LJCA con el tope del tercio, advertencia de plazos de caducidad, clausula RGPD y secreto profesional. Usar con redactar hoja de encargo, contrato de servicios juridicos, aceptar nuevo asunto o documentar el encargo del cliente.",
+      "source_sha256": "1b02260e6c155c6d6368a3a0b58d8fb90475980a1b09461cdd1cb56a8c358278",
+      "source_path": "skills/hoja-encargo/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "414f23438bb2cd9f007cd8e4da13ee7c5efb5f83ce9f977978720dad41c49c7e": {
+      "description_zh": "协助挑战法规、市政条例、规划等一般性规范，覆盖直接诉讼、针对具体适用行为的间接诉讼、违法性问题及撤销判决对所有人的效力。",
+      "source": "Impugnación de reglamentos, ordenanzas municipales, planes y demás disposiciones de carácter general — recurso directo (art. 46.1 LJCA), recurso indirecto contra actos de aplicación (art. 26 LJCA), cuestión de ilegalidad (arts. 27 y 123-126 LJCA) y efectos erga omnes de la sentencia anulatoria (art. 72.2 LJCA). Activar con \"recurrir un reglamento\", \"impugnar una ordenanza\", \"recurso contra el plan general\", \"recurso indirecto\", \"cuestión de ilegalidad\", \"la ordenanza es ilegal\", \"se me pasó el plazo para recurrir el reglamento\", \"atacar la norma en que se basa la multa\", \"anular el plan urbanístico\", \"efectos erga omnes de la anulación\".",
+      "source_sha256": "414f23438bb2cd9f007cd8e4da13ee7c5efb5f83ce9f977978720dad41c49c7e",
+      "source_path": "skills/impugnacion-disposiciones-generales-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe25ae59d2fb261605d7c4f0df3f05e1d442dc017697fbd7c04d9de29efac78c": {
+      "description_zh": "起草普通行政诉讼的首份立案申请并请求行政卷宗，依据原说明检查期限、可诉行为、资格、行政救济穷尽、管辖与附件；收到卷宗后再用正式起诉状技能。",
+      "source": "Redacta el PRIMER escrito del proceso contencioso ordinario —el de interposición del recurso (art. 45 LJCA), que abre el pleito y reclama el expediente— y verifica la admisibilidad antes de presentarlo: plazo, acto impugnable, legitimación, agotamiento de la vía, competencia y documentos del art. 45.2. Activar con \"interponer recurso contencioso\", \"escrito de interposición\", \"art. 45 LJCA\", \"llevar esto al juzgado de lo contencioso\", \"quiero demandar a la Administración\", \"¿estoy todavía en plazo para recurrir?\". El proceso ordinario es de DOBLE ESCRITO: aquí se empieza siempre; la demanda propiamente dicha se redacta después, ya recibido el expediente, con /demanda-contencioso-administrativa.",
+      "source_sha256": "fe25ae59d2fb261605d7c4f0df3f05e1d442dc017697fbd7c04d9de29efac78c",
+      "source_path": "skills/interposicion-recurso-contencioso-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f17e1deb1d1992e715c755142a61a5db94c67e3783fd3abeb54c076f7a37890d": {
+      "description_zh": "创建、列出、切换、关闭或解除关联行政诉讼案件工作区，展示当前案件的到期风险、前置行政救济及卷宗状态。",
+      "source": "Gestionar workspaces de asunto contencioso-administrativo. Crear, listar, cambiar, cerrar o desligar el asunto activo, con vista de caducidades, vía previa y expediente. Usar con cambiar asunto, listar mis asuntos o asunto activo.",
+      "source_sha256": "f17e1deb1d1992e715c755142a61a5db94c67e3783fd3abeb54c076f7a37890d",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e890d1c5afd78e773733a59f24c3d1629caf7473ba80e548cf928ae0e274d2b3": {
+      "description_zh": "起草行政诉讼临时措施和被诉行政行为暂停执行申请，涵盖紧急单方措施；用于已提起或同时提起诉讼的行为效力暂停，进入住所或营业场所则使用独立授权程序技能。",
+      "source": "Redacta solicitudes de medidas cautelares y de suspensión del ACTO administrativo impugnado en el orden contencioso-administrativo (arts. 129-136 LJCA), incluida la cautelarísima inaudita parte del art. 135. Activar con \"suspensión del acto\", \"medida cautelar contencioso\", \"pieza separada de medidas cautelares\", \"cautelarísima\", \"suspender la ejecución de la sanción\", \"que no me ejecuten mientras dure el recurso\". Su objeto es paralizar la eficacia del acto dentro de un recurso contencioso ya interpuesto o que se interpone a la vez. Si lo que está en juego es la ENTRADA física en un domicilio o local para ejecutar el acto, ese es un procedimiento autónomo distinto → /autorizacion-entrada-domicilio-ca.",
+      "source_sha256": "e890d1c5afd78e773733a59f24c3d1629caf7473ba80e548cf928ae0e274d2b3",
+      "source_path": "skills/medidas-cautelares-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40a60ac3501682d528b097d8eff13fce76da45c2ec62306d0ff502917ccf93ba": {
+      "description_zh": "汇总行政诉讼案件组合，按风险与事项分布展示临近期限、未穷尽行政救济、未收到卷宗、待提交起诉状及待决临时措施。",
+      "source": "Rollup de la cartera de asuntos contencioso-administrativos. Distribución por riesgo y materia, plazos de caducidad próximos, vía previa sin agotar, expedientes no recibidos, demandas en plazo del art. 52.1 LJCA y cautelares pendientes. Usar con dónde estoy, estado cartera o cuántos asuntos abiertos.",
+      "source_sha256": "40a60ac3501682d528b097d8eff13fce76da45c2ec62306d0ff502917ccf93ba",
+      "source_path": "skills/portfolio-status/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f181693709070ac3fd1947d084e92d57f1afd62f6a3894da10208a64bf981c2": {
+      "description_zh": "准备行政诉讼专家询问和参与公务人员的证人询问提纲；依据原说明突出简易程序的特殊规则，包括不使用预拟问卷、书面问题及证人资格异议。",
+      "source": "Prueba personal en el contencioso-administrativo, donde la prueba reina es el expediente y la pericial. Interrogatorio del perito y testifical de los funcionarios intervinientes. Reglas propias del abreviado (art. 78.13-78.17 LJCA) que desplazan a la LEC: sin pliegos, sin escritos de preguntas, SIN TACHAS. Usar con preparar interrogatorio o guion para la vista.",
+      "source_sha256": "5f181693709070ac3fd1947d084e92d57f1afd62f6a3894da10208a64bf981c2",
+      "source_path": "skills/preparacion-interrogatorio/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58e9bd8686ff9a0486cf8c8673672932b08acf8fedd6ad817d2795ba47da40d1": {
+      "description_zh": "向原审审判庭起草行政诉讼最高法院上诉的准备文书，依据原说明阐明客观上诉审理价值，以争取西班牙最高法院第三庭受理。",
+      "source": "Redacta el escrito de PREPARACIÓN del recurso de casación contencioso-administrativo ante la Sala de instancia, para su admisión por la Sala Tercera del TS por interés casacional objetivo (arts. 86-89 LJCA). Activar con \"preparar casación contencioso\", \"interés casacional objetivo\", \"recurso de casación Sala Tercera\", \"casación contra sentencia del TSJ\", \"recurso de queja casación\".",
+      "source_sha256": "58e9bd8686ff9a0486cf8c8673672932b08acf8fedd6ad817d2795ba47da40d1",
+      "source_path": "skills/preparacion-recurso-casacion-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd3c74060879950e31a54e61dc79dd8d7177a0614abd5c6f26a513da23de3628": {
+      "description_zh": "依据原说明指导并起草西班牙司法行政诉讼简易程序材料，涵盖事项与金额门槛、直接起诉状、庭审请求、电子卷宗和口头判决；须先穷尽行政救济，再按事项金额区分普通程序。",
+      "source": "Guía y redacción del procedimiento abreviado contencioso-administrativo en sede JUDICIAL (art. 78 LJCA, redacción LO 1/2025) — ámbito por materia y por cuantía, demanda inicial directa, vista rogada y motivada, expediente electrónico y sentencia oral. Activar con \"procedimiento abreviado contencioso\", \"art. 78 LJCA\", \"demanda abreviado\", \"llevar la multa ya firme en vía administrativa al juzgado\", \"recurso de personal\", \"extranjería\", \"asunto de menos de 30.000 euros\". Requisito previo: vía administrativa AGOTADA. Si la sanción está todavía en tramitación administrativa (pliego de cargos, propuesta de resolución, alzada o reposición pendientes), usar antes /procedimiento-sancionador-ca; para decidir entre ordinario y abreviado hace falta conocer materia y cuantía → si el asunto no encaja en el art. 78.1 ni baja de 30.000 €, va por ordinario (/interposicion-recurso-contencioso-ca y después /demanda-contencioso-administrativa).",
+      "source_sha256": "cd3c74060879950e31a54e61dc79dd8d7177a0614abd5c6f26a513da23de3628",
+      "source_path": "skills/procedimiento-abreviado-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "323b8512d6bf9623cb92b617f754e049cf5445b28e0e11d4f743b93d23e2fc37": {
+      "description_zh": "目录型技能，未含模板；在行政处罚仍处行政机关阶段或仍可行政复议时准备辩护，审查期限、时效、行为构成、过错、通知与自愿减额缴款，并衔接上级复议、原机关复议和司法诉讼。",
+      "source": "Catálogo (sin plantilla). Defensa en la fase ADMINISTRATIVA del procedimiento sancionador (arts. 25-31 Ley 40/2015 y arts. 53, 64, 77, 85, 89-90, 95-96 LPAC), antes de llegar al juzgado. Cubre caducidad, prescripción de infracciones y sanciones, atipicidad, culpabilidad, presunción de veracidad de las actas, defectos de notificación, pago voluntario con reducción y el recorrido alzada/reposición → contencioso. Activar con \"expediente sancionador\", \"pliego de cargos\", \"alegaciones a la denuncia\", \"propuesta de resolución\", \"caducidad del expediente\", \"prescripción de la infracción\", \"boletín de denuncia\", \"me han multado\", \"denuncia de un agente\", \"pago con reducción\", \"pronto pago\", \"todavía estoy en vía administrativa\". Requisito previo: la sanción sigue en tramitación administrativa o cabe recurso administrativo. Una vez agotada la vía y ya en sede judicial, el cauce es /procedimiento-abreviado-ca.",
+      "source_sha256": "323b8512d6bf9623cb92b617f754e049cf5445b28e0e11d4f743b93d23e2fc37",
+      "source_path": "skills/procedimiento-sancionador-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9860b2b426504740f3d0fea87c81970096633681b12a707f6236cc9935fe254": {
+      "description_zh": "起草西班牙个人基本权利保护特别程序文书，依据原说明适用LJCA第114至122条及宪法第53.2条优先、简易司法保护流程。",
+      "source": "Redacta escritos del procedimiento especial para la protección de los derechos fundamentales de la persona (arts. 114-122 LJCA), el amparo judicial preferente y sumario del art. 53.2 CE. Activar con \"protección de derechos fundamentales\", \"procedimiento preferente y sumario\", \"amparo judicial\", \"art. 114 LJCA\", \"me han vulnerado un derecho fundamental\", \"recurso de 10 días derechos fundamentales\".",
+      "source_sha256": "b9860b2b426504740f3d0fea87c81970096633681b12a707f6236cc9935fe254",
+      "source_path": "skills/proteccion-derechos-fundamentales-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e2df0cae9ac9ed333415fab4ea3e2587dc474a19ae78734a197971008a1c040": {
+      "description_zh": "在已确定行政救济路径后，起草向上级机关的行政复议或原机关自愿复议；判断行政行为能否争议、救济是否穷尽及期限时，先使用可受理性检查技能。",
+      "source": "REDACTA los recursos administrativos de alzada (arts. 121-122 Ley 39/2015) y de reposición potestativa (arts. 123-124) en la vía administrativa previa, una vez decidido que ese es el escrito que procede. Activar con \"redactar un recurso de alzada\", \"recurso de reposición administrativo\", \"recurrir en vía administrativa\", \"me han notificado una resolución y voy a recurrirla antes de ir al juzgado\". Es el paso posterior al diagnóstico: para decidir ANTES si el acto agota o no la vía administrativa, si es impugnable y en qué plazo, correr primero el checklist de /admisibilidad-ca.",
+      "source_sha256": "6e2df0cae9ac9ed333415fab4ea3e2587dc474a19ae78734a197971008a1c040",
+      "source_path": "skills/recurso-alzada-reposicion-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65777b89b11e36f4dc7a60d38b92f356f8e0a8ec60e2bd0b637be14edf89d8bb": {
+      "description_zh": "起草针对行政诉讼法院判决及裁定的上诉或上诉答辩，向自治区域高级法院或国家法院相关审判庭提交，涵盖临时措施裁定。",
+      "source": "Redacta el recurso de apelación contencioso-administrativo contra sentencias y autos de los Juzgados de lo Contencioso-administrativo (arts. 80-85 LJCA), ante la Sala del TSJ o de la Audiencia Nacional. Activar con \"apelación contencioso\", \"recurrir sentencia del Juzgado de lo Contencioso\", \"art. 85 LJCA\", \"apelar el auto de medidas cautelares\", \"oposición a la apelación\".",
+      "source_sha256": "65777b89b11e36f4dc7a60d38b92f356f8e0a8ec60e2bd0b637be14edf89d8bb",
+      "source_path": "skills/recurso-apelacion-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0cca4943271b0c76d1d45f0fa13571c98852e3220a4967f9f4db58726c5a7cbc": {
+      "description_zh": "起草行政诉讼文书的指定章节，包括法院抬头、卷宗支持的事实、程序与实体法律理由、LJCA第31条请求和附加申请。",
+      "source": "Redactar una seccion concreta de un escrito contencioso-administrativo: encabezamiento a Sala o Juzgado de lo Contencioso, hechos anclados al expediente, fundamentos procesales y de fondo, suplico del art. 31 LJCA y otrosies. Usar con redacta los hechos o saca el suplico.",
+      "source_sha256": "0cca4943271b0c76d1d45f0fa13571c98852e3220a4967f9f4db58726c5a7cbc",
+      "source_path": "skills/redactor-escrito-seccion/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0fd79cb3fbc6819b97438011211baf9e34a55b10d3aaeed7150726117ce24714": {
+      "description_zh": "分流行政诉讼相关通知与要求，识别行政决定、强制征收通知、机关间催告、事实行为前置催告、利害关系人传唤及补正要求，并依据原说明确定启动的期限与到期日。",
+      "source": "Triage de notificaciones y requerimientos en materia contencioso-administrativa: notificacion de resolucion administrativa, providencia de apremio, requerimiento del art. 44 LJCA entre Administraciones, requerimiento previo a la via de hecho del art. 30 LJCA, emplazamiento como interesado del art. 49 LJCA y subsanacion del art. 45.3 LJCA. Identifica que plazo arranca, si es de caducidad y cuando vence. Usar con hemos recibido una notificacion, requerimiento o providencia de apremio.",
+      "source_sha256": "0fd79cb3fbc6819b97438011211baf9e34a55b10d3aaeed7150726117ce24714",
+      "source_path": "skills/requerimiento-judicial-triage/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "685927c14a2c49b8ad6a5c2daea197160f1c319ed6b00003f926ddb18f6f01d2": {
+      "description_zh": "协助提出行政机关损害赔偿责任请求及后续行政诉讼，覆盖公共医疗、道路、公共服务运行与立法国家责任等事项。",
+      "source": "Asiste en reclamaciones de responsabilidad patrimonial de la Administración (arts. 32-37 Ley 40/2015, procedimiento de la Ley 39/2015) y en su posterior impugnación contenciosa. Cubre responsabilidad sanitaria, viaria, por funcionamiento de servicios y del Estado legislador. Activar con \"responsabilidad patrimonial\", \"reclamación de daños a la Administración\", \"lex artis\", \"infección nosocomial\", \"negligencia médica hospital público\", \"caída en la vía pública\", \"reclamar al ayuntamiento por daños\".",
+      "source_sha256": "685927c14a2c49b8ad6a5c2daea197160f1c319ed6b00003f926ddb18f6f01d2",
+      "source_path": "skills/responsabilidad-patrimonial-ca/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39ee59ba42d62faf5df8203a102f5d6d019695b6dbb1c69bdb16b2f3341dc33e": {
+      "description_zh": "对行政诉讼通信和文件做律师职业保密初步分类，依据原说明标记受保护、存疑和不受保护材料，并识别行政卷宗中的第三方数据。",
+      "source": "Primera pasada de clasificacion de comunicaciones y documentos bajo el secreto profesional del abogado (art. 542.3 LOPJ y art. 5 del Codigo Deontologico) en asuntos contencioso-administrativos. Marca cubiertos, dudosos y no cubiertos, y detecta datos de terceros en el expediente administrativo. Usar con revisar secreto profesional.",
+      "source_sha256": "39ee59ba42d62faf5df8203a102f5d6d019695b6dbb1c69bdb16b2f3341dc33e",
+      "source_path": "skills/revision-secreto-profesional/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eeefd5e1bba1abce4e8e52fa95c0115927df6448352b188232df09dbd0087e2c": {
+      "description_zh": "润色审查行政诉讼文书，将LJCA、LPAC、LRJSP及行业规范、判例与卷宗事实连接；原说明要求通过jurisprudenciator MCP获取判例。",
+      "source": "Pulido y revision de escritos contencioso-administrativos para conectar norma y jurisprudencia con los hechos del expediente. Silogismo sobre LJCA/LPAC/LRJSP y normativa sectorial. Jurisprudencia SIEMPRE con el conector MCP jurisprudenciator. Usar con pulir escrito o conectar jurisprudencia.",
+      "source_sha256": "eeefd5e1bba1abce4e8e52fa95c0115927df6448352b188232df09dbd0087e2c",
+      "source_path": "skills/subsuncion-juridica/SKILL.md",
+      "package_sha256": "a3b871b4934071dcf222c112a74f2bb0b7f7c07419714a597598d39d57bcb851",
+      "source_package": "Litigación Contencioso-Administrativa España-0.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "612d019d6eb7e41e834973e33b58f5a22caf3c4b9a5aa190fa7891d53f24abb8": {
+      "description_zh": "登记新的西班牙劳动或社会保障案件，采集身份、利益冲突、来源、事实、风险、SMAC调解或前置行政请求路径，以及关键期限。",
+      "source": "Intake de un nuevo asunto laboral o de Seguridad Social. Recoge identificacion, conflictos, fuente, hechos, triage de riesgo, via de procedibilidad (SMAC o reclamacion previa) y fechas criticas de caducidad. Usar con nuevo asunto o intake este asunto.",
+      "source_sha256": "612d019d6eb7e41e834973e33b58f5a22caf3c4b9a5aa190fa7891d53f24abb8",
+      "source_path": "skills/asunto-intake/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cdb438327208e38aea0246f97fa888008fff19c15e0ac2a1b5ee77ecd8189490": {
+      "description_zh": "设置西班牙劳动诉讼律所档案，采集专业领域、通常代表员工或企业的立场、省份、风险尺度、协作者与文书风格，支持初次和重新设置。",
+      "source": "Configurar perfil de despacho de litigacion laboral España. Captura especialidad, lado habitual (trabajador o empresa), provincia, calibracion de riesgo, colaboradores, estilo de la casa. Usar con configurar plugin, cold-start, setup, redo.",
+      "source_sha256": "cdb438327208e38aea0246f97fa888008fff19c15e0ac2a1b5ee77ecd8189490",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12b903370aa43ffa94b134cd6e1d04e536a36e330aa7cc8851080de9ddac247f": {
+      "description_zh": "起草不涉及劳动合同终止的集体争议诉状，涵盖法律、集体协议、约定及企业集体决定的解释适用和重大集体工作条件变更；集体裁员则使用专门挑战技能。",
+      "source": "Redaccion de demanda de conflicto colectivo (arts. 153-162 LRJS) sobre interpretacion o aplicacion de norma estatal, convenio colectivo, pacto o decision empresarial de caracter colectivo SIN extinciones de contratos, incluidas MSCT colectivas y practicas de empresa. Usar con \"conflicto colectivo\", \"interpretacion del convenio\", \"practica de empresa\", \"MSCT colectiva\", \"demanda del comite o sindicato\". Requisito previo: la medida colectiva NO comporta extincion de puestos de trabajo. Si la empresa ha extinguido contratos por la via del art. 51 ET, el cauce es la impugnacion del despido colectivo, con caducidad de 20 dias → /impugnacion-despido-colectivo.",
+      "source_sha256": "12b903370aa43ffa94b134cd6e1d04e536a36e330aa7cc8851080de9ddac247f",
+      "source_path": "skills/conflicto-colectivo/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab1cea8509e48e9b4fa56c30ef995f8499e3b484f78597dbf4968dfaf74d0862": {
+      "description_zh": "起草劳动判决执行文书，覆盖一般金钱执行、解雇判决中的复职或赔偿、诉讼期间工资、不复职争议及临时执行。",
+      "source": "Redaccion de escritos de ejecucion de sentencias laborales, tanto dineraria general como la especifica de sentencias de despido (readmision/indemnizacion, salarios de tramitacion, incidente de no readmision) y ejecucion provisional. Usar con \"ejecucion laboral\", \"ejecutar sentencia despido\", \"incidente no readmision\", \"ejecucion provisional\".",
+      "source_sha256": "ab1cea8509e48e9b4fa56c30ef995f8499e3b484f78597dbf4968dfaf74d0862",
+      "source_path": "skills/ejecucion-laboral/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c43e36f1ace879f6d9498f42932fb6e2413c665440debb4492249c62385fd3ff": {
+      "description_zh": "因雇主严重违约为员工起草解除劳动合同请求，覆盖欠薪、持续迟发工资、损害尊严的变更及骚扰，并处理赔偿、合同维持、临时措施和后续解雇合并；企业方生成风险说明。",
+      "source": "Prepara la demanda de extinción del contrato a instancia del trabajador por incumplimiento grave del empresario (art. 50 ET): modificaciones sin respetar el art. 41 que menoscaban la dignidad, impago o retrasos continuados del salario (definición legal vigente y doctrina sobre gravedad), acoso y otros incumplimientos graves; indemnización de despido improcedente, mantenimiento del contrato y cautelares del art. 79.7 LRJS, acumulación con un despido posterior (art. 32 LRJS). Para el trabajador, la demanda; para la empresa demandada, la nota de riesgo. Úsala con «quiero irme con indemnización», «artículo 50», «no me pagan a tiempo», «nos piden la extinción». Si solo quiere cobrar, reclamacion-cantidad; si quiere seguir y que cese la conducta, tutela-derechos-fundamentales; si ya le despidieron, redactar-demanda-despido.",
+      "source_sha256": "c43e36f1ace879f6d9498f42932fb6e2413c665440debb4492249c62385fd3ff",
+      "source_path": "skills/extincion-contrato-trabajador/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "489df254e420b2680cc81f1f5140fe38ad4f53d09aced08c634e02698ef5e656": {
+      "description_zh": "挑战涉及合同终止的集体裁员，覆盖员工代表集体诉状、企业确认诉状及受影响员工个别诉状，依据原说明处理20日期限与无效规则；无解雇的集体争议转用对应技能。",
+      "source": "Impugnacion del despido colectivo (art. 124 LRJS): demanda colectiva de los representantes de los trabajadores, demanda empresarial de \"jactancia\" y demanda individual del trabajador afectado (art. 124.13). Plazos de caducidad de 20 dias y reglas de nulidad. Usar con \"despido colectivo\", \"ERE\", \"impugnar el ERE\", \"demanda 124 LRJS\", \"nos han extinguido los contratos por el art. 51 ET\". Requisito previo: hay EXTINCIONES de contratos por la via del art. 51 ET. Si la medida colectiva no comporta extinciones y solo se discute la interpretacion o aplicacion de una norma, convenio o decision empresarial (incluida una MSCT colectiva), usar /conflicto-colectivo.",
+      "source_sha256": "489df254e420b2680cc81f1f5140fe38ad4f53d09aced08c634e02698ef5e656",
+      "source_path": "skills/impugnacion-despido-colectivo/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e62cc6af1b0c3778ad0458c5f52f77e149b6b4365d462e2ea744167f95d1e2b2": {
+      "description_zh": "依据匿名化律所模板起草针对INSS的永久劳动能力丧失等级请求，涵盖完全、绝对及严重等级、改善复查与重新定级，并谨慎处理健康数据；疾病是否工伤的争议使用另一技能。",
+      "source": "Redaccion de demanda en reclamacion del GRADO de incapacidad permanente (total, absoluta o gran invalidez), incluidas revisiones por mejoria y recalificaciones de grado, frente al INSS. Basada en plantilla real del despacho, anonimizada. Maneja datos de salud con extremo cuidado. Usar con \"incapacidad permanente\", \"incapacidad absoluta\", \"incapacidad total\", \"revision de grado\", \"me han denegado la incapacidad\". El objeto del pleito es el GRADO reconocido. Si lo que se discute es el ORIGEN de la dolencia (accidente de trabajo o enfermedad profesional frente a enfermedad comun), ese es un litigio distinto y previo → /seguridad-social-contingencia.",
+      "source_sha256": "e62cc6af1b0c3778ad0458c5f52f77e149b6b4365d462e2ea744167f95d1e2b2",
+      "source_path": "skills/incapacidad-permanente/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f8149fe8037fd21947febd78cc5c370df3e300e770769f47666e7c91a35e6e5": {
+      "description_zh": "起草劳动诉讼前置调解或调停申请，涵盖解雇、欠款、员工解除与处罚，列明事实、金额和请求以衔接诉状；支持企业应对、报价与未出席风险，原说明豁免事项直接转相应诉讼技能。",
+      "source": "Redacta la papeleta de conciliación o la solicitud de mediación previa ante el servicio autonómico de mediación, arbitraje y conciliación (arts. 63-68 LRJS) para demandar por despido, cantidad, extinción del art. 50 ET o sanción, con hechos, cuantías desglosadas y petición que protejan la demanda posterior frente a la variación sustancial (art. 80.1.c LRJS). Sirve al trabajador (redactarla) y a la empresa que la recibe o que reclama a un trabajador (postura para el acto, oferta, riesgo de costas por no comparecer). Úsala con «papeleta», «SMAC», «conciliación previa», «me citan a conciliación», «presentar la conciliación antes de la demanda». Si la materia está exenta (tutela sin despido, vacaciones, modificación sustancial, movilidad, ERTE, monitorio), ve directamente a la demanda o a su skill.",
+      "source_sha256": "2f8149fe8037fd21947febd78cc5c370df3e300e770769f47666e7c91a35e6e5",
+      "source_path": "skills/papeleta-conciliacion/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d05b068411dd40cc3d2b6d8cda3ec241b5cf94fb7e9b68ac0bf864c5ed70dabc": {
+      "description_zh": "为劳动庭审准备当事人或证人询问提纲，按论证主张和可用于质疑的材料组织问题。",
+      "source": "Outline de interrogatorio de parte (art. 91 LRJS) o testigo (art. 92 LRJS) para el acto del juicio laboral. Preguntas organizadas por la tesis y material de impugnacion. Usar con preparar interrogatorio o guion para el juicio.",
+      "source_sha256": "d05b068411dd40cc3d2b6d8cda3ec241b5cf94fb7e9b68ac0bf864c5ed70dabc",
+      "source_path": "skills/preparacion-interrogatorio/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e34fe44f88bd5c58146dcceb2b71cd9720c0bedab62168d39aa0c610d074132c": {
+      "description_zh": "准备劳动欠款普通诉讼或支付令请求，逐月分解欠薪、薪级差、加班、额外工资与未休假结算，依据原说明筛查时效、迟付利息、FOGASA及上诉条件；企业方提供反向计算、报价和风险说明。",
+      "source": "Prepara la reclamación de cantidad laboral por el procedimiento ordinario o el monitorio (LRJS arts. 80-101): salarios impagados, diferencias de convenio o de categoría, horas extraordinarias y su prueba sin registro de jornada, pagas extra, vacaciones no disfrutadas al extinguirse el contrato y liquidación. Cuadro de desglose mes a mes, filtro de prescripción de un año (art. 59 ET), interés por mora del art. 29.3 ET, FOGASA y acceso a suplicación (arts. 191-192 LRJS). Para el trabajador, la demanda o la petición monitoria; para la empresa reclamada, la nota de riesgo con cálculo contradictorio y oferta. Úsala con «me deben nóminas», «diferencias salariales», «horas extra», «finiquito mal pagado», «nos reclaman cantidad». Si el trabajador quiere además irse por los impagos, extincion-contrato-trabajador; si solo hay que revisar un finiquito, finiquito-liquidacion.",
+      "source_sha256": "e34fe44f88bd5c58146dcceb2b71cd9720c0bedab62168d39aa0c610d074132c",
+      "source_path": "skills/reclamacion-cantidad/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1e1653c947a73b54ca307f9b4d3fbed6efdebff4af3439cec1da412c81cec7b": {
+      "description_zh": "依据匿名化律所模板起草向INSS或TGSS的前置行政请求，作为社会保障案件专门前置程序并谨慎处理健康数据；被请求方是企业时转用SMAC调解申请。",
+      "source": "Redaccion de la reclamacion previa administrativa frente al INSS/TGSS, requisito de procedibilidad ESPECIFICO de las materias de Seguridad Social, que sustituye a la papeleta de conciliacion (art. 71 LRJS). Basada en plantilla real del despacho, anonimizada. Maneja datos de salud con cuidado. Usar con \"reclamacion previa INSS\", \"reclamacion previa incapacidad\", \"recurrir resolucion INSS via administrativa\", \"tramite previo frente al INSS o la TGSS\". Solo cuando el demandado es una entidad gestora de la Seguridad Social: si el demandado es la EMPRESA, el tramite previo es la conciliacion ante el SMAC → /papeleta-conciliacion.",
+      "source_sha256": "f1e1653c947a73b54ca307f9b4d3fbed6efdebff4af3439cec1da412c81cec7b",
+      "source_path": "skills/reclamacion-previa-seguridad-social/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53daa82fdac850f8b323fcd2b780ba5cf8dab8e43ed97d0b69468dadc7dfe041": {
+      "description_zh": "依据匿名化模板为已登记TRADE合同且经济依赖单一客户的自雇者，起草因企业违约解除合同、追索未付发票及损害赔偿诉状；雇佣关系欠薪转用劳动欠款技能。",
+      "source": "Redaccion de demanda de resolucion de contrato del Trabajador Autonomo Economicamente Dependiente (TRADE) por incumplimiento de la empresa y reclamacion de cantidad por facturas impagadas y danos y perjuicios. Basada en plantilla real del despacho, anonimizada. Usar con \"TRADE\", \"trabajador autonomo dependiente\", \"resolucion contrato TRADE\", \"reclamacion facturas TRADE\", \"soy autonomo y facturo casi todo a un solo cliente\". Requisito previo: el reclamante es TRADE (autonomo con contrato TRADE registrado y dependencia economica del art. 11 LETA), no trabajador por cuenta ajena. Si hay relacion laboral y nominas impagadas, usar /reclamacion-cantidad.",
+      "source_sha256": "53daa82fdac850f8b323fcd2b780ba5cf8dab8e43ed97d0b69468dadc7dfe041",
+      "source_path": "skills/reclamacion-trade/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5db7c4d321a1162660b0c444d0bfcbb82d450428643544eebb5ec4ab0a6ae259": {
+      "description_zh": "依据匿名化模板起草向西班牙最高法院社会庭统一判例的上诉，精确列出自治区域高级法院上诉判决与生效对照判决的矛盾；争议仍为劳动法院一审判决时先用普通劳动上诉技能。",
+      "source": "Redaccion del recurso de casacion para la unificacion de doctrina CONTRA sentencias de suplicacion del TSJ, ante la Sala de lo Social del Tribunal Supremo, incluida la relacion precisa de contradicciones entre sentencias. Basada en plantilla real del despacho, anonimizada. Usar con \"casacion unificacion doctrina\", \"RCUD\", \"recurso contra la sentencia de suplicacion del TSJ\", \"contradiccion de sentencias\", \"sentencia de contraste\". Requisito previo: existe sentencia del TSJ dictada EN SUPLICACION y una sentencia de contraste firme (art. 219 LRJS). Si la sentencia que se quiere recurrir es la del Juzgado de lo Social, usar /recurso-suplicacion.",
+      "source_sha256": "5db7c4d321a1162660b0c444d0bfcbb82d450428643544eebb5ec4ab0a6ae259",
+      "source_path": "skills/recurso-casacion-unificacion-doctrina/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91e7665ac8e0a3dbef1ad3ef3ec17dc4532681690624c600e358dc38d101e992": {
+      "description_zh": "依据匿名化模板起草向自治区域高级法院挑战劳动法院一审判决的上诉或对方答辩；已有高级法院上诉判决时转用最高法院统一判例上诉技能。",
+      "source": "Redaccion del recurso de suplicacion ANTE el TSJ contra sentencias del Juzgado de lo Social, y del escrito de impugnacion por la parte recurrida. Basada en plantilla real del despacho, anonimizada. Usar con \"recurso de suplicacion\", \"recurrir la sentencia del Juzgado de lo Social\", \"impugnar suplicacion\", \"anuncio de suplicacion\". Requisito previo: la sentencia recurrida es la de INSTANCIA (Juzgado de lo Social). Si la sentencia que se quiere recurrir es la ya dictada por el TSJ resolviendo una suplicacion, el cauce es el RCUD ante el Tribunal Supremo → /recurso-casacion-unificacion-doctrina.",
+      "source_sha256": "91e7665ac8e0a3dbef1ad3ef3ec17dc4532681690624c600e358dc38d101e992",
+      "source_path": "skills/recurso-suplicacion/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "568a70e3bb5ac960d045b70901d61f48440f726d45fdf509e9c1de5bd2fc8f6b": {
+      "description_zh": "起草纪律、客观或临时合同期满解雇诉状，主张无效及备位违法解雇，依据原说明处理证据线索、事前听取意见、紧急程序、必要参加方及工资赔偿；企业方生成庭审辩护说明。",
+      "source": "Redacta la demanda de despido disciplinario, objetivo o de fin de contrato temporal (LRJS arts. 103-113 y 120-123; ET arts. 53-56) pidiendo la nulidad con su panorama de indicios (Ley 15/2022, LRJS arts. 181-183) y, subsidiariamente, la improcedencia; alega la falta de audiencia previa al despido disciplinario, activa el trámite urgente si no se tramitó la baja (art. 103.4 LRJS), cita al FOGASA y al Fiscal cuando toca y cuantifica indemnización y salarios. Para el trabajador, la demanda; para la empresa demandada, la nota de defensa para el juicio (no hay contestación escrita). Úsala con «demanda de despido», «me han despedido», «despido nulo», «despido estando embarazada o de baja», «nos han demandado por despido». Si aún no hay papeleta, papeleta-conciliacion; si la empresa quiere redactar la carta, carta-despido-disciplinario o carta-despido-objetivo.",
+      "source_sha256": "568a70e3bb5ac960d045b70901d61f48440f726d45fdf509e9c1de5bd2fc8f6b",
+      "source_path": "skills/redactar-demanda-despido/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "899d523575ffdca72bed86dacfef430a0b4e144a321dc5697cdfa8329a7186c6": {
+      "description_zh": "分流劳动与社会保障领域通知、调解和庭审传票、INSS决定、补正要求与执行裁定，分析范围、期限和应对动作。",
+      "source": "Triage de notificaciones y requerimientos en el orden social: citaciones a conciliacion y juicio, resoluciones del INSS, requerimientos de subsanacion, autos de ejecucion, oficios y citaciones del SMAC. Clasifica, analiza alcance, plazo y reaccion. Usar con hemos recibido notificacion, citacion o requerimiento.",
+      "source_sha256": "899d523575ffdca72bed86dacfef430a0b4e144a321dc5697cdfa8329a7186c6",
+      "source_path": "skills/requerimiento-judicial-triage/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc075c32f1d60d8c075a0a10c5b6d2b37d6a5d66a9b25b805ec055d32dbf8a13": {
+      "description_zh": "依据匿名化律所模板起草疾病或伤害是否属于工伤、职业病的社会保障诉状，覆盖职业倦怠等工作相关病症与相关机构，并谨慎处理健康数据；劳动能力丧失等级争议使用专门技能。",
+      "source": "Redaccion de demanda en materia de Seguridad Social sobre determinacion de CONTINGENCIA (accidente de trabajo/enfermedad profesional frente a enfermedad comun), incluidos supuestos de burnout y otras patologias derivadas del trabajo, frente al INSS, TGSS, empresa y mutua. Basada en plantilla real del despacho, anonimizada. Maneja datos de salud con extremo cuidado. Usar con \"determinacion de contingencia\", \"que se declare accidente de trabajo\", \"enfermedad profesional\", \"burnout laboral\", \"demanda mutua\". El objeto del pleito es el ORIGEN de la dolencia, no el grado: si lo que se reclama es la declaracion de incapacidad permanente total, absoluta o gran invalidez, usar /incapacidad-permanente.",
+      "source_sha256": "cc075c32f1d60d8c075a0a10c5b6d2b37d6a5d66a9b25b805ec055d32dbf8a13",
+      "source_path": "skills/seguridad-social-contingencia/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33af4236636aa446efcca68c8e53f51ce4483a03541145b52f238ee9c263add5": {
+      "description_zh": "劳动关系仍存续且尚未解雇时，准备基本权利保护诉状，覆盖骚扰、歧视、报复、工会自由、隐私与数字监控，依据原说明处理举证、赔偿和临时措施；企业方生成客观适度理由的辩护说明。",
+      "source": "Prepara la demanda de tutela de derechos fundamentales y libertades públicas del orden social (LRJS arts. 177-184) cuando la relación laboral sigue y no hay despido: acoso, discriminación (Ley 15/2022, LO 3/2007), garantía de indemnidad, libertad sindical, intimidad y control digital. Panorama de indicios e inversión de la carga (art. 181.2), indemnización por daño moral y material con el criterio orientativo de la LISOS (art. 183), Ministerio Fiscal y medidas cautelares (art. 180). Para el trabajador, la demanda; para la empresa demandada, la nota de defensa con la justificación objetiva y proporcionada. Úsala con «acoso en el trabajo», «me discriminan», «represalia por reclamar», «tutela de derechos fundamentales», «nos demandan por acoso». Si hubo despido, la nulidad va en la demanda de despido (art. 184): redactar-demanda-despido; si quiere irse, extincion-contrato-trabajador.",
+      "source_sha256": "33af4236636aa446efcca68c8e53f51ce4483a03541145b52f238ee9c263add5",
+      "source_path": "skills/tutela-derechos-fundamentales/SKILL.md",
+      "package_sha256": "b9d55b5e861dc6d2629e32caf4be9b1a22643f10e2bbaa8bbe70288dd4ecbb36",
+      "source_package": "Litigación Laboral España-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fafacc2803c67ec455618e51d513170adc3625441775dccea92d463f0ef4f25e": {
+      "description_zh": "为刑事案件历史追加带日期事件并刷新日志，记录通知、裁定、侦查期限延长、人身状态、临时措施、认罪合意及风险重新评估。",
+      "source": "Añade evento fechado al historial de un asunto penal y refresca el log. Captura notificaciones, autos, prorrogas de instruccion del art. 324 LECrim, cambios de situacion personal, medidas cautelares, conformidad y re-evaluaciones de riesgo. Usar con anota en el asunto o actualiza el asunto.",
+      "source_sha256": "fafacc2803c67ec455618e51d513170adc3625441775dccea92d463f0ef4f25e",
+      "source_path": "skills/actualizar-asunto/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8ef65ee90584f7707ea1acf8ed38e5cafa44180dafd3024ec2ce8a3e2579e2e": {
+      "description_zh": "在侦查阶段尚未作出终止或归档裁定时，为控方起草反对终止诉讼的意见；已作出并通知裁定、进入上诉期限时，使用归档裁定复议与上诉技能。",
+      "source": "Redacta escritos de alegaciones de la acusación oponiéndose al archivo o sobreseimiento en fase de instrucción, ANTES de que el auto se dicte. Actívala ante \"me van a archivar la causa\", \"el fiscal pide el sobreseimiento\", \"el fiscal no acusa\", \"existen indicios racionales de criminalidad\", \"no procede el archivo\", \"sobreseimiento libre o provisional\", \"traslado del art. 779\", \"superior jerárquico del fiscal\", \"art. 782\", o cuando se dé traslado a la acusación para alegar sobre el archivo. Requisito previo: el auto de sobreseimiento NO se ha dictado todavía y aún se está a tiempo de alegar. Si el auto de archivo YA está dictado y notificado y corre el plazo de recurso, usar /recurso-reforma-apelacion-auto-archivo.",
+      "source_sha256": "d8ef65ee90584f7707ea1acf8ed38e5cafa44180dafd3024ec2ce8a3e2579e2e",
+      "source_path": "skills/alegaciones-oposicion-sobreseimiento/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f47ff95112cd82fee31fbcf0d8053c0491693070fdf7638c5b4753f77d2a709": {
+      "description_zh": "协助律师在警署和值班法院为被拘留者提供常规援助，依据原说明检查拘留、权利、关键材料访问、事件记录、事前保密会见及是否陈述；紧急挑战拘留合法性转用人身保护令技能。",
+      "source": "Asistencia letrada ORDINARIA al detenido en comisaría y en el juzgado de guardia (art. 520 LECrim) — checklist de control de la detención, los 10 derechos del art. 520.2, acceso a los elementos esenciales (520.2.d), consignación en acta de incidencias (520.6.b), entrevista reservada previa (520.6.d), incomunicación (arts. 509 y 527) y decisión razonada sobre declarar o no. Actívala ante \"me han detenido a un cliente\", \"guardia\", \"asistencia al detenido\", \"estoy en comisaría\", \"me llaman del Colegio\", \"tengo una asistencia\", \"detención\", \"juzgado de guardia\", \"¿declara o no declara?\". Es el acompañamiento del letrado durante la detención, dentro de sus plazos normales. Si lo que se pretende es impugnar la LEGALIDAD de la detención ante el juez y pedir la puesta en libertad o a disposición judicial inmediata, el cauce urgente es /habeas-corpus.",
+      "source_sha256": "6f47ff95112cd82fee31fbcf0d8053c0491693070fdf7638c5b4753f77d2a709",
+      "source_path": "skills/asistencia-detenido/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f0c018a0296248a66b2329fdddb8f02039b49cbc07bed9ff04f6c5684ed9b1b": {
+      "description_zh": "登记新刑事案件，采集诉讼地位、阶段、程序、法院、犯罪与发生日期，依据原说明记录侦查期限、追诉时效、人身状态、临时措施、拘留、认罪合意和民事责任。",
+      "source": "Intake de un nuevo asunto penal. Recoge posicion procesal, fase, procedimiento, organo, delitos y fecha de los hechos, plazo de instruccion del art. 324 LECrim, prescripcion del art. 131 CP, situacion personal y medidas cautelares, detenido, conformidad y responsabilidad civil. Usar con nuevo asunto o intake este asunto.",
+      "source_sha256": "4f0c018a0296248a66b2329fdddb8f02039b49cbc07bed9ff04f6c5684ed9b1b",
+      "source_path": "skills/asunto-intake/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c828335169bdffeeba3bcec98a15a988540d3185cd1fca8665f22e5314ab2e2c": {
+      "description_zh": "依据原说明准备简易刑事程序LECrim第785条预备庭审，处理先决问题、程序无效及认罪合意；须已开启审判且排期，值班法院快速审理认罪与陪审团程序另用对应技能。",
+      "source": "Prepara la AUDIENCIA PRELIMINAR del art. 785 LECrim, el trámite nuevo creado por la LO 1/2025 (vigente 3-4-2025) que reordenó el juicio oral del procedimiento abreviado y trasladó a él la conformidad. Actívala ante \"audiencia preliminar\", \"art. 785\", \"cuestiones previas\", \"artículos de previo pronunciamiento\", \"vista previa del abreviado\", \"conformidad en la audiencia preliminar\", \"negociar la conformidad antes de la vista previa\", \"cuándo se plantea la nulidad\", \"el 785 ya no es admisión de prueba\", \"señalamiento del juicio\", \"qué llevo a la audiencia preliminar\". Requisito previo: procedimiento ABREVIADO con juicio oral ya abierto y audiencia preliminar señalada. Si la conformidad es en el juzgado de guardia (art. 801), usar /juicio-rapido; si se trata de comparar cauces de conformidad, /conformidad-penal-catalogo; si el procedimiento es ante el Tribunal del Jurado, su audiencia preliminar es la del art. 30 LOTJ → /tribunal-jurado.",
+      "source_sha256": "c828335169bdffeeba3bcec98a15a988540d3185cd1fca8665f22e5314ab2e2c",
+      "source_path": "skills/audiencia-preliminar-abreviado/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd251fbe2ac6958517feb2da07145664425ad7db4ed80048efb87161220ad956": {
+      "description_zh": "形成刑事案件深度简报，汇总阶段、罪名及适用法律，依据原说明检查侦查期限、追诉时效、人身状态和临时措施，整理辩护路线、下一期限与风险复评。",
+      "source": "Briefing profundo de un asunto penal. Fase, delitos y ley aplicable, control del plazo de instruccion del art. 324 LECrim, prescripcion, situacion personal y medidas cautelares, linea de defensa, proximo plazo y re-evaluacion de riesgo. Usar con briefing o donde estamos con el asunto.",
+      "source_sha256": "dd251fbe2ac6958517feb2da07145664425ad7db4ed80048efb87161220ad956",
+      "source_path": "skills/briefing-asunto/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ea6375e3c998a1b87e1d2f5f680e5461685c60190a7ec49cec5da8233e39fcc": {
+      "description_zh": "关闭刑事案件，记录终止、归档、无罪或有罪判决、认罪合意及追诉时效等结案方式，检查是否仍有执行事项，再移出活跃案件组合并保留归档。",
+      "source": "Cerrar un asunto penal. Captura el modo de terminacion (sobreseimiento libre o provisional, archivo, sentencia absolutoria o condenatoria, conformidad, prescripcion), verifica que no queda ejecutoria viva y archiva fuera de la cartera activa sin borrar. Usar con cerrar asunto o asunto terminado.",
+      "source_sha256": "1ea6375e3c998a1b87e1d2f5f680e5461685c60190a7ec49cec5da8233e39fcc",
+      "source_path": "skills/cerrar-asunto/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e24292464832858edb5838c72f4f9895e7f85562b21c0b8078d6dee26841fe1": {
+      "description_zh": "起草刑事律所外部协作者进展邮件，涵盖诉讼代理人、委托法医、笔迹专家、电子取证专家、估价师、犯罪学专家及调查人员。",
+      "source": "Genera borradores de emails de estado a colaboradores externos del despacho penal — procurador, medico forense de parte, caligrafo, informatico forense, tasador, criminologo, detective. Usar con estado a colaboradores o emails al procurador esta semana.",
+      "source_sha256": "9e24292464832858edb5838c72f4f9895e7f85562b21c0b8078d6dee26841fe1",
+      "source_path": "skills/colaboradores-status/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25e3df156ac3e1e79d3489c3fcfb971927313dcc417a261d766167f04dfce6ff": {
+      "description_zh": "设置西班牙刑事诉讼律所档案，采集刑事业务领域、司法辖区、法律援助和值班安排、诉讼地位、协作者、专家及文书风格。",
+      "source": "Configurar el perfil de despacho de litigacion PENAL España. Captura areas penales, partido judicial, turno de oficio y guardia, posicion procesal, colaboradores, peritos y estilo de la casa. Usar con configurar plugin, cold-start, setup, redo.",
+      "source_sha256": "25e3df156ac3e1e79d3489c3fcfb971927313dcc417a261d766167f04dfce6ff",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "476f754bbb79cc2fca1f1a5618e25f6d9e632caecb5399d697b2d243a93b8507": {
+      "description_zh": "依据原说明计算和审查西班牙刑事期限，覆盖侦查及延长、超期调查效力、犯罪与刑罚时效、上诉、72小时拘留、临时羁押，以及非工作日和八月的计算。",
+      "source": "Calcula y audita plazos penales — plazo máximo de instrucción y sus prórrogas (art. 324 LECrim, con detección de diligencias inválidas del 324.3), prescripción del delito (arts. 131 y 132 CP, con el régimen de interrupción y el dies a quo en delitos contra menores), prescripción de la pena (arts. 133 y 134 CP), plazos de recurso (reforma, apelación, casación), plazos de la detención (72 h) y de la prisión provisional (art. 504), y cómputo de días inhábiles y agosto (arts. 182-183 LOPJ y 201 LECrim). Actívala ante \"cuándo prescribe\", \"está prescrito\", \"se ha pasado el plazo de instrucción\", \"art. 324\", \"cuántos días tengo para recurrir\", \"calcula el plazo\", \"cuándo vence\", \"¿llego a tiempo?\", \"agosto cuenta\", \"lleva mucho en prisión provisional\".",
+      "source_sha256": "476f754bbb79cc2fca1f1a5618e25f6d9e632caecb5399d697b2d243a93b8507",
+      "source_path": "skills/computo-plazos-penal/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "255475a9eb05696b523cae436742816e7125e842b882ce74176cabf9e64277ea": {
+      "description_zh": "目录型技能，未含模板；比较简易程序预备庭审、值班法院快速审理、辩护书及普通侦查程序中的认罪合意路径，并生成告知被辩护人协议内容的书面文件；已明确程序阶段时转用对应技能。",
+      "source": "Catálogo (sin plantilla) de las conformidades penales — audiencia preliminar del abreviado (art. 785.4-785.11 LECrim), conformidad premiada del juzgado de guardia (art. 801), conformidad en el escrito de defensa (art. 784.3) y conformidad en el sumario (art. 655). Genera además el documento del art. 785.7 in fine (información escrita al defendido sobre el acuerdo). Actívala ante \"escrito de conformidad\", \"conformidad con la acusación\", \"rebaja del tercio de la pena\", \"conformidad premiada\", \"acuerdo con el fiscal\", \"sentencia de conformidad\", \"conformarse antes del juicio\", \"hasta cuándo puedo conformarme\". Es la skill TRANSVERSAL que compara los cuatro cauces: úsala cuando aún no esté claro en qué momento procesal se va a conformar. Si la conformidad se plantea en el juzgado de guardia dentro de un juicio rápido (art. 801), usar /juicio-rapido; si el asunto ya está en abreviado con audiencia preliminar señalada, usar /audiencia-preliminar-abreviado.",
+      "source_sha256": "255475a9eb05696b523cae436742816e7125e842b882ce74176cabf9e64277ea",
+      "source_path": "skills/conformidad-penal-catalogo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "671b4aaea1c64021e2a043bb8519771a1f7b4c9ca25338fb1ae905ec22d07a23": {
+      "description_zh": "起草刑事客户无罪或免责材料保全通知，并保留原说明中律师不得建议销毁、篡改或隐匿证据的明确要求。",
+      "source": "Comunicacion al cliente sobre conservacion de documentacion exculpatoria en un procedimiento penal. Incluye la advertencia critica de que el abogado NUNCA puede aconsejar destruir, alterar u ocultar prueba (arts. 451, 464, 465 CP). Usar con comunicar al cliente que conserve documentacion o que documentacion guarda el cliente.",
+      "source_sha256": "671b4aaea1c64021e2a043bb8519771a1f7b4c9ca25338fb1ae905ec22d07a23",
+      "source_path": "skills/conservacion-documental/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23c685b539f931af6cd373ba759a917b170c1c2a4fbe1d02dfc716ff93a9b248": {
+      "description_zh": "制作犯罪事实与刑事程序双轨时间线，依据原说明关联适用刑法版本、时效、侦查及延长、指控、辩护、预备庭审、判决、上诉与执行，并锚定卷宗页码。",
+      "source": "Cronologia penal de doble carril — carril de los HECHOS (fija la redaccion del CP aplicable ex art. 2 CP y el computo de prescripcion del art. 131 CP) y carril PROCESAL (incoacion, plazo del art. 324 LECrim y sus prorrogas, transformacion, acusacion, defensa, audiencia preliminar del art. 785, juicio, sentencia, recursos, ejecutoria). Anclaje al folio de las actuaciones. Usar con cronologia del asunto, timeline penal, control del plazo de instruccion.",
+      "source_sha256": "23c685b539f931af6cd373ba759a917b170c1c2a4fbe1d02dfc716ff93a9b248",
+      "source_path": "skills/cronologia/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b429cc49aca685c023375abdda88d448bc29bf70cab9cd194bfafe908f95bedc": {
+      "description_zh": "制作犯罪构成与证据对应表，先检查时效、侦查期限、非法证据、无罪推定和较有利法律，再逐项列出客观及主观构成、违法性、责任、可罚性、犯罪阶段、参与及修正情节，以卷宗页码支持证据。",
+      "source": "Cuadro de subsuncion del tipo penal. Fila 0 transversal (prescripcion art. 131 CP, plazo de instruccion art. 324 LECrim, prueba ilicita art. 11.1 LOPJ, presuncion de inocencia art. 24.2 CE, ley mas favorable art. 2.2 CP) y despues tipicidad objetiva, tipicidad subjetiva, antijuridicidad, culpabilidad, punibilidad, iter criminis, autoria y participacion y circunstancias modificativas. Prueba anclada al folio. Usar con cuadro de elementos, subsuncion del tipo, que falta para acusar o para defender.",
+      "source_sha256": "b429cc49aca685c023375abdda88d448bc29bf70cab9cd194bfafe908f95bedc",
+      "source_path": "skills/cuadro-elementos/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "634cb99dac1885576c870115a6f41e56de3feba29e739335ce4c348915071851": {
+      "description_zh": "无需重做初始设置，直接修改刑事律所档案中的司法辖区、法律援助安排、业务领域、协作者、专家、法院及集成。",
+      "source": "Editar un campo del perfil de despacho penal sin re-correr todo el cold-start. Cambiar partido judicial, turno de oficio, areas penales, colaboradores y peritos, organos, integraciones. Usar con cambiar mi perfil o customize.",
+      "source_sha256": "634cb99dac1885576c870115a6f41e56de3feba29e739335ce4c348915071851",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb34cdfe6cdc583442f123fb6428974d23e764944b4bbea53c159c3b2c549bbb": {
+      "description_zh": "依据原说明指导西班牙轻微犯罪即时或普通审理，覆盖传唤、无律师出庭、缺席、判决、5日上诉、公共利益不足终止、一年时效及重复轻微盗窃诈骗的修法分类。",
+      "source": "Juicio sobre delitos leves (arts. 962-977 LECrim) — juicio inmediato ante la Sección de Instrucción en funciones de guardia, juicio ordinario por delito leve, citación, celebración sin abogado, incomparecencia, sentencia y apelación en 5 días. Incluye el sobreseimiento por falta de interés público (art. 963.1.1.ª, que debe pedir el Fiscal), la prescripción de un año y la conversión de hurtos y estafas leves en menos graves por multirreincidencia (LO 1/2026). Actívala ante \"delito leve\", \"juicio de faltas\", \"juicio inmediato\", \"hurto de menos de 400 euros\", \"me han citado por un delito leve\", \"juicio sin abogado\", \"sobreseimiento por escasa gravedad\", \"prescripción del delito leve\", \"multirreincidencia\".",
+      "source_sha256": "eb34cdfe6cdc583442f123fb6428974d23e764944b4bbea53c159c3b2c549bbb",
+      "source_path": "skills/delitos-leves/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52e4445654a4a1f1c7a8602a637c6d41189dd997890253b2b9fc61cf1fae6cb2": {
+      "description_zh": "起草启动劳动者权利侵犯或劳动事故刑事案件的报案书，覆盖安全措施缺失、伤亡、承包商责任及过失伤害或致死；已完成侦查并进入正式指控阶段时转用劳动事故指控书技能。",
+      "source": "Redacta denuncias que INICIAN el proceso penal por delito contra los derechos de los trabajadores y siniestralidad laboral (arts. 311-318 CP), en su caso en concurso con lesiones u homicidio imprudentes. Actívala ante \"denuncia por accidente laboral\", \"accidente de trabajo\", \"siniestro laboral\", \"falta de medidas de seguridad\", \"delito contra la seguridad de los trabajadores\", \"riesgo grave para la vida del trabajador\", \"caída de altura\", \"acta de la Inspección de Trabajo\", \"responsabilidad del contratista o subcontratista\", \"coordinador de seguridad\", \"recargo de prestaciones\", \"concurso con lesiones imprudentes\", \"art. 316\", \"art. 317\", \"explotación laboral\", \"trabajadores sin alta en la Seguridad Social\", o cuando un trabajador resulte lesionado o fallecido por defectos de prevención. Es el escrito de ARRANQUE, antes de que haya instrucción: si la causa ya está incoada e instruida y toca calificar y pedir la apertura del juicio oral, usar /escrito-acusacion-accidente-laboral.",
+      "source_sha256": "52e4445654a4a1f1c7a8602a637c6d41189dd997890253b2b9fc61cf1fae6cb2",
+      "source_path": "skills/denuncia-derechos-trabajadores/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8305952206414a14c355e54f0c903d3f5df8d659e54bdb1f710b70785fa997a": {
+      "description_zh": "起草向西班牙初审法院侦查部门提交的诈骗报案书，覆盖投资与金字塔骗局、交易欺诈、加重或持续诈骗、网络钓鱼、CEO欺诈及计算机诈骗。",
+      "source": "Redacta denuncias por delito de estafa (arts. 248, 250 y 251 CP) ante la Sección de Instrucción del Tribunal de Instancia. Actívala cuando el usuario pida \"denunciar una estafa\", \"me han estafado\", \"escrito de denuncia por engaño\", \"estafa de inversión\", \"estafa piramidal\", \"timo\", \"estafa en una compraventa\", \"me han dado un pufo\", \"engaño bastante\", \"negocio civil criminalizado\", \"dolo antecedente\", \"estafa agravada\", \"estafa procesal\", \"estafa continuada\", \"phishing\", \"fraude del CEO\", \"estafa informática\", o mencione impago fraudulento, disposición patrimonial, ánimo de lucro, cooperador necesario, o estafa cometida por una sociedad.",
+      "source_sha256": "b8305952206414a14c355e54f0c903d3f5df8d659e54bdb1f710b70785fa997a",
+      "source_path": "skills/denuncia-estafa/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5794ac3ded4192f2cbc736ce179c50a4301b8bf1ad429c027e2e09a7219dd461": {
+      "description_zh": "目录型技能，未含模板；依据原说明起草刑事执行文件，处理监禁暂缓执行、刑期计算、临时羁押折抵、刑罚合并、替代驱逐及反对撤销暂缓执行。",
+      "source": "Catálogo (sin plantilla). Redacta escritos de ejecución penal: solicitud de suspensión de la ejecución de la pena privativa de libertad (art. 80 CP, reformado por la LO 1/2026), liquidación de condena, abono de la prisión provisional (art. 58 CP), refundición/acumulación (art. 988 LECrim y 76 CP), expulsión (art. 89 CP) y oposición a la revocación (art. 86 CP). Actívala ante \"solicitar la suspensión de la pena\", \"art. 80 CP\", \"liquidación de condena\", \"abono de prisión preventiva\", \"refundición de condenas\", \"acumulación jurídica\", \"expulsión sustitutiva\", \"revocación de la suspensión\", \"revisión de condena por ley más favorable\", o \"ejecutoria penal\".",
+      "source_sha256": "5794ac3ded4192f2cbc736ce179c50a4301b8bf1ad429c027e2e09a7219dd461",
+      "source_path": "skills/ejecucion-penal-liquidacion-condena-suspension-catalogo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e4f9cd4fd9a81c34d87449c9a7ea46322b33931ee01f3919c9e5edf891b5507": {
+      "description_zh": "在劳动事故刑事案件已经立案、侦查结束并进入定性环节后，起草临时指控与开启审判申请，涵盖安全义务犯罪与过失伤害或致死；尚未立案时先用劳动者权利报案技能。",
+      "source": "Redacta el escrito de acusación (calificación provisional y solicitud de apertura de juicio oral) en causa por accidente de trabajo o siniestralidad laboral — arts. 316-318 CP en concurso con lesiones u homicidio imprudente. Actívala ante \"escrito de acusación por accidente laboral\", \"calificar la siniestralidad laboral al terminar la instrucción\", \"acusación por falta de medidas de seguridad\", \"solicitar apertura de juicio oral\", o cuando actúes como acusación particular del trabajador perjudicado. Requisito previo: causa penal YA incoada e instrucción concluida, con traslado para calificar. Si todavía no hay procedimiento penal abierto y lo que procede es iniciarlo con el acta de la Inspección de Trabajo y el parte de la caída de altura, usar /denuncia-derechos-trabajadores.",
+      "source_sha256": "8e4f9cd4fd9a81c34d87449c9a7ea46322b33931ee01f3919c9e5edf891b5507",
+      "source_path": "skills/escrito-acusacion-accidente-laboral/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91c2cb958ffd86fc5f37008ae588ec44bf9bbdbff384c71624ee952b2eb192f7": {
+      "description_zh": "起草妨碍执行犯罪的临时指控与开启审判申请，涵盖转移财产逃债、隐匿资产及虚假财产清单。",
+      "source": "Redacta el escrito de acusación (calificación provisional y solicitud de apertura de juicio oral) por delitos de frustración de la ejecución — alzamiento de bienes, ocultación patrimonial y presentación de relación de bienes mendaz (arts. 257 a 258 ter CP). Actívala ante \"acusación por frustración de la ejecución\", \"alzamiento de bienes\", \"insolvencia punible\", \"el deudor ha ocultado bienes para no pagar\", \"vaciamiento patrimonial\", \"el ejecutado no declaró sus bienes\", \"denuncia penal tras ejecución civil infructuosa\" o \"me han embargado y no hay nada\".",
+      "source_sha256": "91c2cb958ffd86fc5f37008ae588ec44bf9bbdbff384c71624ee952b2eb192f7",
+      "source_path": "skills/escrito-acusacion-frustracion-ejecucion/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26462131e47a95cf588151c1f44b0cbc703a462d9f348673938ffed8f9984e2a": {
+      "description_zh": "简易刑事程序移交辩护环节后，起草逐项结论、证据申请及附加请求；依据原说明，开启审判裁定通常只能就人身状态上诉，实体反驳应通过本辩护书提出。",
+      "source": "Redacta el escrito de defensa (calificación de la defensa) en procedimiento abreviado tras el traslado del art. 784.1 LECrim, con conclusiones correlativas, proposición de prueba y otrosíes. Actívala ante \"escrito de defensa\", \"conclusiones provisionales de la defensa\", \"contestar a la acusación\", \"disconformidad con el escrito de acusación\", \"proponer prueba para juicio\", \"me han dado traslado para defensa\", \"tengo diez días para el escrito de defensa\" o \"solicitar la libre absolución\". Es también la VÍA ÚTIL para combatir una acusación tras la apertura del juicio oral: como el auto de apertura es irrecurrible salvo en cuanto a la situación personal, \"quiero recurrir la apertura de juicio oral\" se canaliza normalmente por aquí y no por /recurso-reforma-apelacion-auto-apertura-jo.",
+      "source_sha256": "26462131e47a95cf588151c1f44b0cbc703a462d9f348673938ffed8f9984e2a",
+      "source_path": "skills/escrito-defensa-calificacion/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "760dab75d7e94a8df7976c1fcd0a8664d3e4f6b5219767a2fb5f966ca0240651": {
+      "description_zh": "将律所文风应用于刑事司法文书，采用三段结构、对照、先原因后结论和卷宗页码定位，并保留LECrim第650条编号结论及客观事实叙述。",
+      "source": "Capa de estilo que aplica la pluma de la casa a cualquier escrito judicial penal. Estructura tripartita, contrastes, explicacion del por que antes del que, cero adjetivos vacios, anclaje al folio de las actuaciones. Respeta la estructura por conclusiones numeradas del art. 650 LECrim y el tono objetivo del relato de hechos. Usar con aplica mi estilo o pluma de la casa.",
+      "source_sha256": "760dab75d7e94a8df7976c1fcd0a8664d3e4f6b5219767a2fb5f966ca0240651",
+      "source_path": "skills/estilo-escritos-judiciales/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "106475a8c50a2a0aed42f157d191c06386ef5b5be7941b3254abd3acf812c0c7": {
+      "description_zh": "依据原说明准备人身保护令申请，紧急挑战仍在持续的拘留合法性并请求立即交由法院或释放，覆盖资格、管辖、申请及24小时处理；司法临时羁押争议与常规律师援助另用对应技能。",
+      "source": "Procedimiento de habeas corpus (LO 6/1984 y art. 17.4 CE) — supuestos de detención ilegal (art. 1), legitimación (art. 3, incluido el abogado defensor tras la LO 5/2024), competencia (art. 2), escrito de solicitud (art. 4, sin abogado ni procurador preceptivos), tramitación y resolución en 24 horas (art. 7) y resoluciones posibles (art. 8). Actívala ante \"habeas corpus\", \"detención ilegal\", \"lleva más de 72 horas detenido\", \"no lo ponen a disposición judicial\", \"está detenido y no le dejan ver al abogado\", \"detención sin motivo\". Cauce URGENTE y exclusivo para cuestionar la LEGALIDAD de una privación de libertad todavía en curso y forzar la puesta a disposición judicial o en libertad. No sirve para pedir, oponerse ni recurrir la prisión o la libertad provisional acordadas por el juez (eso es /medidas-cautelares-penales-catalogo), ni sustituye a la asistencia letrada ordinaria en comisaría (/asistencia-detenido).",
+      "source_sha256": "106475a8c50a2a0aed42f157d191c06386ef5b5be7941b3254abd3acf812c0c7",
+      "source_path": "skills/habeas-corpus/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03d721101b324aaa0f517c902e437dbcdc75f90a8f4bf9a4293fd18b6e049a13": {
+      "description_zh": "生成排版好的刑事法律服务委托Word文件，列明案件对象、侦查至执行各阶段范围、刑事诉讼费用规则、认罪合意提醒及签署栏。",
+      "source": "Hoja de encargo profesional del despacho penal conforme a EGA, Ley 10/2010 PBC y RGPD. Genera Word maquetado con objeto del encargo en clave penal, extension por fases (instruccion, intermedia, juicio oral, recursos, ejecutoria), regimen propio de costas penales, advertencia de conformidad y firmas. Usar con redactar hoja de encargo, contrato de servicios juridicos, aceptar nuevo asunto penal o documentar el encargo del cliente.",
+      "source_sha256": "03d721101b324aaa0f517c902e437dbcdc75f90a8f4bf9a4293fd18b6e049a13",
+      "source_path": "skills/hoja-encargo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0a6bf3d179553891697d438e441ba8a28c87d6baf1e25325f0a3c019116ac0f": {
+      "description_zh": "依据原说明指导特定犯罪快速审理，覆盖值班侦查部门紧急调查、即时开启审判、认罪减刑三分之一、策略计算与5日上诉；已进入简易程序预备庭审时转用对应技能。",
+      "source": "Enjuiciamiento rápido de determinados delitos (arts. 795-803 LECrim) — ámbito y catálogo del art. 795, diligencias urgentes ante la Sección de Instrucción en funciones de guardia, apertura de juicio oral en el acto (art. 800) y conformidad premiada del art. 801 con reducción de un tercio. Incluye el cálculo estratégico de conformarse o no en la guardia y el plazo de apelación de 5 días. Actívala ante \"juicio rápido\", \"diligencias urgentes\", \"guardia\", \"juzgado de guardia\", \"me han citado para mañana en el juzgado\", \"conformidad con rebaja de un tercio en la guardia\", \"atestado y juicio rápido\", \"alcoholemia\", \"seguridad vial\", \"delito flagrante\". Es la conformidad de la GUARDIA (art. 801), en horas y sin instrucción real: si el asunto ya está tramitándose como abreviado con audiencia preliminar señalada, usar /audiencia-preliminar-abreviado; para comparar todos los cauces de conformidad, /conformidad-penal-catalogo.",
+      "source_sha256": "a0a6bf3d179553891697d438e441ba8a28c87d6baf1e25325f0a3c019116ac0f",
+      "source_path": "skills/juicio-rapido/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d365ef519bd06f0aba4973b997b513c4a1030680d6d8ac9ceaf0f962680db253": {
+      "description_zh": "依据原说明判断犯罪事实应适用的刑法版本及后续法律是否对被告更有利，比较刑罚、追溯适用和过渡规则，覆盖原文提及的LO 1/2025、LO 1/2026及生效判决复查。",
+      "source": "Determina qué redacción del Código Penal se aplica a unos hechos y si la ley posterior es más favorable al reo (arts. 2 y 7 CP, art. 9.3 CE), con aplicación concreta a la LO 1/2026 de multirreincidencia (vigente 10-4-2026) y a la LO 1/2025. Actívala ante \"ley más favorable\", \"ley penal en el tiempo\", \"retroactividad\", \"irretroactividad\", \"qué ley se aplica\", \"los hechos son de antes de la reforma\", \"revisión de condena\", \"revisar la condena\", \"revisar la sentencia firme\", \"la reforma me beneficia\", \"multirreincidencia\", \"me denegaron la suspensión\", \"antecedentes irrelevantes\", \"disposición transitoria\", \"comparación de penas\".",
+      "source_sha256": "d365ef519bd06f0aba4973b997b513c4a1030680d6d8ac9ceaf0f962680db253",
+      "source_path": "skills/ley-penal-en-el-tiempo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6273b90afddd9b066ec7afdd9e2565e070c364591d9561281f2c87787ea5732a": {
+      "description_zh": "创建、列出、切换、关闭或解除关联刑事案件工作区，展示阶段、诉讼地位、人身状态及原说明中的侦查期限。",
+      "source": "Gestionar workspaces de asunto penal. Crear, listar, cambiar, cerrar o desligar el asunto activo, mostrando fase, posicion, situacion personal y el plazo de instruccion del art. 324 LECrim. Usar con cambiar asunto, listar mis asuntos o asunto activo.",
+      "source_sha256": "6273b90afddd9b066ec7afdd9e2565e070c364591d9561281f2c87787ea5732a",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35112b96d6d8628180c7ea79008c3a5aa361d41e715a37e90743cbf5d0847ed0": {
+      "description_zh": "目录型技能，未含模板；起草刑事人身与财产临时措施申请、反对意见和上诉，覆盖羁押、保释、接近限制、保护令、保证金与查封；警察拘留合法性及家庭、性别或儿童暴力另用专门技能。",
+      "source": "Catálogo (sin plantilla). Redacta solicitudes, oposiciones e impugnaciones de medidas cautelares penales personales y reales (prisión provisional, libertad provisional con fianza, prohibiciones del art. 544 bis, orden de protección del 544 ter, fianza y embargo). Actívala ante \"solicitar prisión provisional\", \"oponerse a la prisión provisional\", \"medidas cautelares penales\", \"orden de alejamiento en caso NO de violencia de género\", \"prohibición de aproximación\", \"fianza y embargo art. 589\", \"comparecencia del art. 505\", \"recurrir el auto de prisión\", o \"medida cautelar frente al investigado\". Presupone una causa penal en marcha y una medida que pedir, combatir o recurrir ante el juez de instrucción. NO es la skill para cuestionar la legalidad de una detención policial aún no judicializada: eso es /habeas-corpus. Si el caso es de violencia de género, doméstica o contra la infancia, la orden de protección tiene régimen especializado → /violencia-genero-orden-proteccion.",
+      "source_sha256": "35112b96d6d8628180c7ea79008c3a5aa361d41e715a37e90743cbf5d0847ed0",
+      "source_path": "skills/medidas-cautelares-penales-catalogo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d35970ca6e2cb5e8f01f6efb9f5235d9fb90dda300586cece5e31b76e9056af": {
+      "description_zh": "目录型技能，未含模板；在刑事案件已开启后，起草受害人作为私人控方参加诉讼的申请，涵盖权利、期限、授权及民事请求保留；需从零启动案件时转用刑事控告技能。",
+      "source": "Catálogo (sin plantilla). Redacta el escrito de personación del perjudicado como acusación particular en una causa YA INICIADA. Actívala ante \"personarme como acusación particular\", \"mostrarse parte en la causa\", \"constituirse en acusación particular\", \"ofrecimiento de acciones\", \"me han ofrecido las acciones\", \"¿hasta cuándo puedo personarme?\", \"plazo para personarse\", \"apud acta\", \"designación apud acta\", \"reservar la acción civil\", \"renunciar a la indemnización\", \"derechos de la víctima\", \"Estatuto de la víctima\", \"quiero acusar además del fiscal\", \"el fiscal va a conformar\", o cuando la víctima o perjudicado quiera intervenir en la causa tras los arts. 109, 109 bis o 776 LECrim. Requisito previo: existe ya procedimiento penal abierto. Si aún no hay causa y hay que iniciarla siendo parte desde el primer momento, usar /querella-catalogo.",
+      "source_sha256": "4d35970ca6e2cb5e8f01f6efb9f5235d9fb90dda300586cece5e31b76e9056af",
+      "source_path": "skills/personacion-acusacion-particular-catalogo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2d0b390087f22994db8d67fb9cded9518f6fcee90821d470b580e48013901cf": {
+      "description_zh": "按阶段、诉讼地位和风险汇总刑事案件组合，依据原说明提醒侦查与追诉时效、上诉期限、临时羁押、72小时拘留、辩护文书及庭审排期。",
+      "source": "Rollup de la cartera de asuntos penales. Distribucion por fase, posicion y riesgo; alertas de plazo de instruccion del art. 324 LECrim, prescripcion, plazos de recurso, prision provisional, detenido en 72 h, escrito de defensa y juicios señalados. Usar con donde estoy, estado cartera o cuantos asuntos abiertos.",
+      "source_sha256": "e2d0b390087f22994db8d67fb9cded9518f6fcee90821d470b580e48013901cf",
+      "source_path": "skills/portfolio-status/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "83be92f3e859536afda6b98de67443d98d2fdb0cc28c189ca08cea862401e6dd": {
+      "description_zh": "为刑事审判准备被告、证人、专家及受害人询问提纲，依据原说明保留被告沉默权和非证人身份，并以卷宗页码关联先前证言，组织证人及专家质疑。",
+      "source": "Preparacion del interrogatorio en el juicio oral penal. El acusado NO es testigo — tiene derecho a guardar silencio y no hay ficta confessio (arts. 24.2 CE, 118 y 520.2 LECrim). Interrogatorio del acusado o su silencio estrategico, contradiccion de testigos con la declaracion sumarial (art. 714 LECrim) anclada al folio, contradiccion del perito, y victima como testigo con su estatuto (Ley 4/2015). Usar con preparar interrogatorio, guion para el juicio oral penal.",
+      "source_sha256": "83be92f3e859536afda6b98de67443d98d2fdb0cc28c189ca08cea862401e6dd",
+      "source_path": "skills/preparacion-interrogatorio/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99761b950148b524775983b39aab9fa8f0e6cfc3b35e430d56b165fd5902d835": {
+      "description_zh": "分析侵犯基本权利取得的证据和程序无效，准备简易刑事程序预备庭审意见，覆盖非法搜查、通信与手机监控、定位、卧底、保管链、无律师陈述及超期调查。",
+      "source": "Analiza y ataca la prueba obtenida con vulneración de derechos fundamentales (art. 11.1 LOPJ) y la nulidad de actuaciones (arts. 238 y 240 LOPJ), y prepara la alegación para la AUDIENCIA PRELIMINAR del art. 785 LECrim. Actívala ante \"prueba ilícita\", \"nulidad de la prueba\", \"nulidad de actuaciones\", \"el registro fue ilegal\", \"entraron sin orden\", \"entrada y registro nula\", \"pinchazo telefónico\", \"intervención de comunicaciones sin motivación\", \"me miraron el móvil\", \"registro del móvil\", \"geolocalización\", \"agente encubierto\", \"cadena de custodia rota\", \"declaró sin abogado\", \"sin información de derechos\", \"efecto reflejo\", \"conexión de antijuridicidad\", \"frutos del árbol envenenado\", \"diligencias fuera de plazo del 324\", \"cuestiones previas\".",
+      "source_sha256": "99761b950148b524775983b39aab9fa8f0e6cfc3b35e430d56b165fd5902d835",
+      "source_path": "skills/prueba-ilicita-nulidad/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc534cbdaee319a9dc52df1acdbd639af4de03106fd44d5f8460321a2f7303e1": {
+      "description_zh": "目录型技能，未含模板；起草启动刑事案件的正式控告，依据原说明处理公众控诉、特别授权、保证金、受理与不受理上诉；案件已存在且受害人只需参加时转用私人控方加入技能。",
+      "source": "Catálogo (sin plantilla). Redacta querellas conforme a los arts. 270-281 LECrim ante la Sección de Instrucción del Tribunal de Instancia. Actívala ante \"presentar querella\", \"querella criminal\", \"interponer querella\", \"querellarse contra\", \"acusación popular\", \"ejercer la acción popular\", \"poder especial para querellarse\", \"fianza del querellante\", \"diferencia entre querella y denuncia\", \"me han admitido/inadmitido la querella\", \"recurso contra la inadmisión de la querella\". Requisito previo: la causa penal NO está iniciada y hay que incoarla con este escrito. Si ya existe un procedimiento en marcha (denuncia, atestado o querella de otro) y la víctima solo quiere mostrarse parte en él, usar /personacion-acusacion-particular-catalogo.",
+      "source_sha256": "dc534cbdaee319a9dc52df1acdbd639af4de03106fd44d5f8460321a2f7303e1",
+      "source_path": "skills/querella-catalogo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0fe564c17fd9da47953502683d2b46cfdff0fa9a345c908ccba43a8d261f1f2": {
+      "description_zh": "目录型技能，未含模板；起草针对初审法院刑事部门或省级法院一审刑事判决的上诉，涵盖证据评价错误、刑法适用、审判无效及附带加入上诉。",
+      "source": "Catálogo (sin plantilla). Redacta recurso de apelación penal contra sentencia de la Sección de lo Penal del Tribunal de Instancia (antes Juzgado de lo Penal) o de la Audiencia Provincial en primera instancia. Actívala ante \"recurrir la sentencia penal\", \"recurso de apelación contra sentencia condenatoria/absolutoria\", \"sentencia del juzgado de lo penal\", \"error en la valoración de la prueba\", \"infracción de precepto penal\", \"apelar ante la Audiencia Provincial\", \"nulidad del juicio\", o \"adherirse a la apelación\".",
+      "source_sha256": "c0fe564c17fd9da47953502683d2b46cfdff0fa9a345c908ccba43a8d261f1f2",
+      "source_path": "skills/recurso-apelacion-sentencia-penal-catalogo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "111ca96afdef5392e5652aef5a276b2453178396380fed6192c107110070df4c": {
+      "description_zh": "目录型技能，未含模板；准备并向西班牙最高法院第二庭提出刑事上诉，先依据原说明按被挑战裁判类型确定可受理理由，包括法律违反与程序瑕疵。",
+      "source": "Catálogo (sin plantilla). Prepara e interpone recurso de casación penal ante la Sala Segunda del Tribunal Supremo, determinando primero qué motivos son admisibles según la resolución recurrida (art. 847 LECrim). Actívala ante \"recurso de casación penal\", \"casación por infracción de ley art. 849\", \"quebrantamiento de forma art. 850/851\", \"preparar casación\", \"casación contra sentencia de apelación de la Audiencia Provincial\", \"recurrir ante el Tribunal Supremo en lo penal\", o \"¿cabe casación contra esta sentencia?\".",
+      "source_sha256": "111ca96afdef5392e5652aef5a276b2453178396380fed6192c107110070df4c",
+      "source_path": "skills/recurso-casacion-penal-catalogo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac807e3301e18762b73985ccc3eb03685e6cff9d826a75134d75fdddafdebb50": {
+      "description_zh": "依据原说明分析开启刑事审判裁定的可上诉范围，并起草可行请求或分流；通常仅人身状态部分可上诉，实体指控应通过辩护书反驳，亦涵盖亲属间免责事由。",
+      "source": "Analiza la recurribilidad del auto de apertura de juicio oral (art. 783.3 LECrim — IRRECURRIBLE salvo en lo relativo a la situación personal del acusado) y redacta el recurso procedente o redirige a la vía útil. Cubre la excusa absolutoria del art. 268 CP entre parientes. Actívala ante \"recurrir la situación personal acordada en el auto de apertura\", \"¿es recurrible el auto de apertura de juicio oral?\", \"solicitar sobreseimiento pese a la apertura\", \"excusa absolutoria entre parientes\", \"art. 268 CP\", \"acusación infundada\". Aviso: en la inmensa mayoría de los casos el auto NO es recurrible, de modo que si lo que se quiere es combatir la acusación de fondo, el cauce correcto es el escrito de defensa → /escrito-defensa-calificacion.",
+      "source_sha256": "ac807e3301e18762b73985ccc3eb03685e6cff9d826a75134d75fdddafdebb50",
+      "source_path": "skills/recurso-reforma-apelacion-auto-apertura-jo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe04e839e069ab22f6bab7ae401613d428a0185dccf2e73d8d35b3dc552aea9b": {
+      "description_zh": "为私人控方或受害人起草针对侦查阶段已作出、已通知的终止和归档裁定的复议及备位上诉；尚未作出裁定时使用事前反对终止的意见技能。",
+      "source": "Redacta recurso de reforma y subsidiario de apelación contra el auto de sobreseimiento y archivo YA DICTADO en instrucción, para la acusación particular o el perjudicado. Actívala ante \"recurrir el archivo de la causa\", \"recurso contra el auto de sobreseimiento ya notificado\", \"reforma y subsidiaria apelación\", \"han archivado mis diligencias\", \"auto de sobreseimiento inmotivado\", \"quiero reabrir la causa\", \"el juez ha archivado sin practicar mis diligencias\" o cuando la acusación quiera revocar un archivo ya acordado. Requisito previo: existe auto de archivo notificado y corre el plazo de recurso. Si todavía no hay auto y solo se ha dado traslado a la acusación para alegar sobre el archivo propuesto, lo que procede es oponerse antes → /alegaciones-oposicion-sobreseimiento.",
+      "source_sha256": "fe04e839e069ab22f6bab7ae401613d428a0185dccf2e73d8d35b3dc552aea9b",
+      "source_path": "skills/recurso-reforma-apelacion-auto-archivo/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7afacdba0852c376910a7d54603a68e9426847431200cc9c4a9c46440e829d0": {
+      "description_zh": "起草刑事文书指定章节，包括法院抬头、LECrim第650条编号结论中的事实、定性、参与、修正情节、刑罚与民事责任，以及程序背景、上诉理由、请求和附加申请，并定位卷宗页码。",
+      "source": "Redactar una seccion concreta de un escrito penal — encabezamiento a la Seccion de Instruccion del Tribunal de Instancia, Audiencia Provincial o Sala Segunda del TS; conclusiones numeradas del escrito de calificacion (art. 650 LECrim: hechos, calificacion, participacion, circunstancias modificativas, pena y responsabilidad civil); antecedentes procesales, motivos de recurso, suplico y otrosies. Anclaje al folio de las actuaciones. Usar con redacta las conclusiones, saca el suplico penal, redacta el motivo del recurso.",
+      "source_sha256": "a7afacdba0852c376910a7d54603a68e9426847431200cc9c4a9c46440e829d0",
+      "source_path": "skills/redactor-escrito-seccion/SKILL.md",
+      "package_sha256": "74bd978264b7dd900b71e7650fb66afb46e0c34ad39a6acab9e9db09def3d2ea",
+      "source_package": "Litigación Penal España-0.5.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
