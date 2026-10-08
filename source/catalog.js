@@ -67,6 +67,17 @@ function feedback(text){const el=$('fileFeedback');el.textContent=text;el.hidden
 async function initializeCatalog(){const res=await fetch('data/list.json');if(!res.ok)throw Error('目录请求失败');DATA=await res.json();TOPICS=await fetch('topics.json').then(r=>r.json());allRecords=DATA.records;for(const r of allRecords){r._title=title(r);r.skills=r.skills||[];r.commands=r.commands||[];r.taxons=r.taxons||[];r.mcp_servers=r.mcp_servers||[];r.duplicates=r.duplicates||[]}R=deduplicate(allRecords);S=DATA.stats;const old=new URLSearchParams(location.hash.slice(1));if(old.has('cat')||old.has('q'))location.hash=old.get('q')?'#/s?q='+encodeURIComponent(old.get('q')):catHref(old.get('cat'),old.get('scene')||'',old.get('task')||'');const args=Object.fromEntries(new URLSearchParams(location.search));if(args.package)applyLinked(args);await renderRoute();}
 function applyLinked(args){if(!args?.package)return;location.hash='#/p/'+encodeURIComponent(args.package)+(args.file?'/file/'+encodeURIComponent(args.file):'')}
 $('menu').innerHTML=icon('menu');$('menu').onclick=()=>{const on=$('nav').classList.toggle('open');$('menu').setAttribute('aria-expanded',on);$('menu').setAttribute('aria-label',on?'关闭菜单':'打开菜单');$('menu').innerHTML=icon(on?'x':'menu')};$('nav').onclick=()=>{$('nav').classList.remove('open');$('menu').setAttribute('aria-expanded','false')};$('searchIcon').innerHTML=icon('search');$('clearQuery').innerHTML=icon('x');$('searchForm').onsubmit=e=>{e.preventDefault();if($('query').value.trim())location.hash='#/s?q='+encodeURIComponent($('query').value.trim())};let searchTimer;$('query').oninput=()=>{$('clearQuery').hidden=!$('query').value;clearTimeout(searchTimer);searchTimer=setTimeout(()=>{if($('query').value.trim())location.hash='#/s?q='+encodeURIComponent($('query').value.trim());else location.hash='#/'},350)};$('clearQuery').onclick=()=>{$('query').value='';location.hash='#/';$('query').focus()};window.addEventListener('hashchange',()=>{catalogReady.then(()=>renderRoute())});window.addEventListener('message',e=>{if(e.source===window.parent&&e.data?.type==='streamlit:render')catalogReady.then(()=>applyLinked(e.data.args))});
-if(window.parent!==window){window.parent.postMessage({isStreamlitMessage:true,type:'streamlit:componentReady',apiVersion:1},'*');window.parent.postMessage({isStreamlitMessage:true,type:'streamlit:setFrameHeight',height:900},'*')}
+function syncFrameHeight(){
+ if(window.parent===window)return;
+ let lastHeight=0,pending=false;
+ const report=()=>{pending=false;const height=Math.ceil(document.body.getBoundingClientRect().height);if(height>0&&height!==lastHeight){lastHeight=height;window.parent.postMessage({isStreamlitMessage:true,type:'streamlit:setFrameHeight',height},'*')}};
+ const schedule=()=>{if(!pending){pending=true;requestAnimationFrame(report)}};
+ window.parent.postMessage({isStreamlitMessage:true,type:'streamlit:componentReady',apiVersion:1},'*');
+ new ResizeObserver(schedule).observe(document.body);
+ addEventListener('resize',schedule);
+ schedule();
+}
+syncFrameHeight();
+// END STREAMLIT HEIGHT
 // Started after guide and file-reader modules have been loaded.
 catalogReady=new Promise(resolve=>setTimeout(resolve,0)).then(initializeCatalog).catch(e=>{$('main').textContent='目录加载失败：'+e.message;throw e});

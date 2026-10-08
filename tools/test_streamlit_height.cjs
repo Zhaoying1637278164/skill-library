@@ -1,0 +1,18 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const html=fs.readFileSync('source/catalog.js','utf8');
+const start=html.indexOf('function syncFrameHeight()');
+assert(start>=0,'Component must report its content height');
+const end=html.indexOf('// END STREAMLIT HEIGHT',start);
+assert(end>start);
+let height=7408,observer,queued=[],messages=[];
+const context={window:{parent:{postMessage:m=>messages.push(m)}},document:{body:{getBoundingClientRect:()=>({height})}},Math,requestAnimationFrame:fn=>{queued.push(fn);return queued.length},ResizeObserver:class{constructor(fn){observer=fn}observe(){}},addEventListener:()=>{}};
+vm.runInNewContext(html.slice(start,end),context);
+while(queued.length)queued.shift()();
+assert.equal(messages.at(-1).height,7408);
+height=1600;observer();while(queued.length)queued.shift()();
+assert.equal(messages.at(-1).height,1600,'Shorter routes must shrink the frame');
+height=9200;observer();while(queued.length)queued.shift()();
+assert.equal(messages.at(-1).height,9200,'Expanded skill/file content must stay reachable');
+const count=messages.length;observer();while(queued.length)queued.shift()();assert.equal(messages.length,count,'Unchanged height must not resend');
+assert(!fs.readFileSync('streamlit_app.py','utf8').includes('height:100vh'),'Wrapper must not override measured content height');
+console.log('PASS: Streamlit frame tracks long, short, and expanded content');
