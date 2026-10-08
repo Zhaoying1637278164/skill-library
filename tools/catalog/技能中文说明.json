@@ -78289,6 +78289,1086 @@
       "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
       "source_package": "Turbocharge-2.8.1-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1fc10e0fbf5bc0cf2ec6a0b2e936789d1ec99ce1b6afb6844a542045541eecd5": {
+      "description_zh": "在实现与评审完成后整合工作：核验测试，提供合并、创建PR、保留或放弃等结构化选择，并处理清理。",
+      "source": "Use when implementation and review are complete and you need to integrate the work. Verifies tests, presents structured options for merge, PR, keep, or discard, and handles cleanup.",
+      "source_sha256": "1fc10e0fbf5bc0cf2ec6a0b2e936789d1ec99ce1b6afb6844a542045541eecd5",
+      "source_path": "skills/ship/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7240255fe80449a676b39d6fd24e0d858526f8cbd38cf602becc17d8c3d93728": {
+      "description_zh": "将需求、PRD或功能描述转为符合INVEST原则的可实施用户故事，并附可测试的验收标准。",
+      "source": "Use when you have requirements, PRDs, or feature descriptions that need to become implementable work. Transforms requirements into INVEST-compliant user stories with testable acceptance criteria.",
+      "source_sha256": "7240255fe80449a676b39d6fd24e0d858526f8cbd38cf602becc17d8c3d93728",
+      "source_path": "skills/story/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26077d5b31a1dc185ed8eb04710170f440a9d387a21b1c0404dc555a25895f61": {
+      "description_zh": "在结束会话、休息或上下文接近容量时，记录会话状态及决策，生成下次恢复提示，保持多次会话工作的连续性。",
+      "source": "Use when ending a session, taking a break, or context is getting full. Captures session state, decisions, and generates a resume prompt for the next session. Critical for multi-session continuity.",
+      "source_sha256": "26077d5b31a1dc185ed8eb04710170f440a9d387a21b1c0404dc555a25895f61",
+      "source_path": "skills/wrap/SKILL.md",
+      "package_sha256": "a4a52bd0205f705e541db7a1ffe1efd353ae020a2eb20ec4bd4d5ed08ddc402c",
+      "source_package": "Turbocharge-2.8.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac160bbbe857db83269c4f88b79e079995e98383145e3a9c1ccb3b91eda987bd": {
+      "description_zh": "显示turn navigator的键盘快捷键。",
+      "source": "Show turn navigator keybindings",
+      "source_sha256": "ac160bbbe857db83269c4f88b79e079995e98383145e3a9c1ccb3b91eda987bd",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "37a71167847157776e292774eefc7bf1ecfc2f70253cdf1696862d47ae3ad072",
+      "source_package": "turn-navigator-1.1.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c3e7c6f52aaabf3d61d4e7124c3136ead67d4f75a6cc96a7769c4f8a07b0ceb": {
+      "description_zh": "把Turtini MCP服务器接入Claude Code，创建或轮换TURTINI_API_KEY、验证连接并展示IDE智能体可用工具；用于CRM或运营后台接入及连接故障排查。",
+      "source": "Wire the Turtini MCP server into Claude Code, mint an API key, verify the connection, and surface the tools the IDE agent gets. Use when the user mentions \"Turtini\", asks how to \"set up Turtini MCP\", wants to give their Claude Code agent access to a CRM / ops backend, or needs help getting / rotating their TURTINI_API_KEY. Also use when the user is debugging a failing Turtini MCP connection.",
+      "source_sha256": "5c3e7c6f52aaabf3d61d4e7124c3136ead67d4f75a6cc96a7769c4f8a07b0ceb",
+      "source_path": "skills/turtini/SKILL.md",
+      "package_sha256": "bcf76d48c2a6d2f421dfb7b6f3143de64d8d1655dd84f9a254bf56503a57f28e",
+      "source_package": "turtini-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4118052bb29036aa8d385af73f4e8ed20d6c1ae4d9ff3e13c977155aaca5a826": {
+      "description_zh": "从Tuteliq整理合规证据：导出账户数据、审计日志与回执，管理同意记录、记录跟踪数据泄露，并处理数据主体访问或删除请求；支持原文所列KOSA、DSA、COPPA或GDPR证据包及审计说明。",
+      "source": "Produce compliance evidence from Tuteliq. Export account data, pull audit logs and receipts, manage consent records, log and track breaches, and answer GDPR subject requests. Use when asked to prepare a KOSA, DSA, COPPA or GDPR evidence pack, respond to a data subject access or erasure request, or show an auditor what was detected and what was done about it.",
+      "source_sha256": "4118052bb29036aa8d385af73f4e8ed20d6c1ae4d9ff3e13c977155aaca5a826",
+      "source_path": "skills/compliance-export/SKILL.md",
+      "package_sha256": "dc97d758ce0736ebce1162e69686f4059ce5d1ad73ffe167a80bed50ea041688",
+      "source_package": "Tuteliq-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a2d314ed2621d861ec0046a3a259d280613b3047d4845f8ef638ae3fd9bc3f6d": {
+      "description_zh": "用Tuteliq审查聊天记录、私信或消息历史中的未成年人诱骗风险，评估成人与儿童对话及持续诱骗策略，同时审查同一材料中的霸凌、自伤和不安全内容。",
+      "source": "Audit a conversation for grooming risk using Tuteliq. Use when asked to review a chat log, DM thread, or message history for predatory behaviour toward a minor, to check whether an adult-to-child conversation is safe, or to assess grooming tactics across a conversation trajectory. Also covers bullying, self-harm and unsafe-content review of the same material.",
+      "source_sha256": "a2d314ed2621d861ec0046a3a259d280613b3047d4845f8ef638ae3fd9bc3f6d",
+      "source_path": "skills/grooming-audit/SKILL.md",
+      "package_sha256": "dc97d758ce0736ebce1162e69686f4059ce5d1ad73ffe167a80bed50ea041688",
+      "source_package": "Tuteliq-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "526ff94ca071c6071c3d4cec33c73965027493ddf3abc686a2362c474273040c": {
+      "description_zh": "处理Tuteliq内容审核队列：分流事件、查看详情、采取处置并生成报告；用于审核标记内容、清理积压、检查待关注项、升级或驳回事件及指定事件或期间报告。",
+      "source": "Work a Tuteliq moderation queue. Triage incidents, inspect detail, action them, and produce incident reports. Use when asked to review flagged content, clear a moderation backlog, check what needs attention, escalate or dismiss incidents, or generate a report for a specific incident or time period.",
+      "source_sha256": "526ff94ca071c6071c3d4cec33c73965027493ddf3abc686a2362c474273040c",
+      "source_path": "skills/incident-review/SKILL.md",
+      "package_sha256": "dc97d758ce0736ebce1162e69686f4059ce5d1ad73ffe167a80bed50ea041688",
+      "source_package": "Tuteliq-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e18f02c2ac9b375d2969f54c1bfc21e01914199c49858e8661d68968ad2fb33": {
+      "description_zh": "上传、列出或删除TwelveLabs资产，即实体与异步分析使用的图片或视频参考文件，适用于明确的资产管理请求。",
+      "source": "Upload, list, or delete TwelveLabs assets — generic reference files (images or videos) used by entities and async-analyze. Triggers on \"upload this image\", \"upload this video as an asset\", \"delete that asset\", or any explicit asset-management request.",
+      "source_sha256": "7e18f02c2ac9b375d2969f54c1bfc21e01914199c49858e8661d68968ad2fb33",
+      "source_path": "skills/assets/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15793ad885b7fd441847a3ec124a1aafc6376f20ff5408096f672691a5253104": {
+      "description_zh": "按URL、本地文件自动上传、资产ID或base64异步分析视频，无须预先索引；支持超过一小时视频、时间元数据提取、参考图片的多模态提示、结构化JSON输出及分析任务查询、列出或删除。",
+      "source": "Asynchronously analyze a video — by URL, local file path (auto-uploaded), asset ID, or base64 — no prior indexing required. Use for URL inputs, videos over 1 hour, time-based metadata extraction, multimodal prompting with reference images, structured JSON output, or when the user asks to check/list/delete async analysis tasks.",
+      "source_sha256": "15793ad885b7fd441847a3ec124a1aafc6376f20ff5408096f672691a5253104",
+      "source_path": "skills/async-analyze/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13dad8fa3e889b4bd6a08cd5dae960093db19c148ad7d8ad02e0ba13068dd5f7": {
+      "description_zh": "创建视频嵌入向量，检查生成状态并获取结果，适用于视频向量生成与检索。",
+      "source": "Create, check, and retrieve video embeddings. Use when user wants to generate embeddings from a video, check embedding status, or retrieve embeddings for a video.",
+      "source_sha256": "13dad8fa3e889b4bd6a08cd5dae960093db19c148ad7d8ad02e0ba13068dd5f7",
+      "source_path": "skills/embed/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d4662e887fddde84ec1245001b823cb8050e1e86cb701ec36b40143daf679e1": {
+      "description_zh": "配置实体搜索，在视频中查找特定人物或物体，跨视频跟踪人物，并设置人脸或物体识别。",
+      "source": "Set up and search for specific people or objects in videos using entity search. Use when the user wants to find a specific person, track someone across videos, or set up face/object recognition. Triggers on phrases like \"find this person\", \"set up entity search\", \"track this person in my videos\", \"who is in this video\".",
+      "source_sha256": "7d4662e887fddde84ec1245001b823cb8050e1e86cb701ec36b40143daf679e1",
+      "source_path": "skills/entity-search/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72e77007ae481f1c2370ac6d78622770197ceb850607afe294d2a89911969d6b": {
+      "description_zh": "使用参考图片配合文字描述搜索视频，细化视觉匹配结果。",
+      "source": "Search videos using an image combined with text for refined results. Use when the user wants to search with a reference image, says \"find videos matching this image\", \"search with this picture\", or wants to combine visual reference with text description.",
+      "source_sha256": "72e77007ae481f1c2370ac6d78622770197ceb850607afe294d2a89911969d6b",
+      "source_path": "skills/image-search/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d12971d39ad8e6cf53dbdad332d28b041284ab945e735519623aad4a9bbcc97a": {
+      "description_zh": "为视频文件或URL建立索引，使视频可用于AI搜索及分析。",
+      "source": "Index video files or URLs for AI search and analysis. Use when user wants to add a video for processing, says \"index this video\", \"add this video for analysis\", or mentions a video file they want to work with.",
+      "source_sha256": "d12971d39ad8e6cf53dbdad332d28b041284ab945e735519623aad4a9bbcc97a",
+      "source_path": "skills/index/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65e8a97c4af8a814f28836091d94e7c8b5ff2d185ebbc9901859003b8b5bbe44": {
+      "description_zh": "列出已索引的视频及可用索引，查看已有视频并查找分析所需的视频ID。",
+      "source": "List indexed videos and available indexes. Use when user wants to know what videos they have indexed, asks \"what videos do I have?\", \"show my videos\", or needs to find a video ID for analysis.",
+      "source_sha256": "65e8a97c4af8a814f28836091d94e7c8b5ff2d185ebbc9901859003b8b5bbe44",
+      "source_path": "skills/list/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "797faeb701eb9e4f217f4034756cd95aa8bad45c5a28a1445f72234fb9ccf817": {
+      "description_zh": "用自然语言搜索已索引视频中的特定内容、片段或场景，定位相关时刻。",
+      "source": "Search indexed videos using natural language. Use when the user wants to find specific content, moments, or scenes in their indexed videos. Triggers on phrases like \"find the part where...\", \"search for...\", \"look for...\", \"where does...\", \"when does...\".",
+      "source_sha256": "797faeb701eb9e4f217f4034756cd95aa8bad45c5a28a1445f72234fb9ccf817",
+      "source_path": "skills/search/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "028a60ca7f960a49bdf5da7677e71cfe7e342c09c97ab4267492e7cfd287e9f0": {
+      "description_zh": "检查视频索引任务状态和处理进度，确认视频是否已可搜索或分析。",
+      "source": "Check the status of video indexing tasks. Use when user asks about indexing progress, says \"is my video ready?\", \"how long until indexing is done?\", or wants to know if they can search/analyze yet.",
+      "source_sha256": "028a60ca7f960a49bdf5da7677e71cfe7e342c09c97ab4267492e7cfd287e9f0",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25e1a50b54b0bb7b1d246ded5bf307930f599b0f8e70919c6fccdf3b07b1931f": {
+      "description_zh": "同步分析视频内容，支持已索引videoId、直接视频URL、已上传资产或本地文件自动上传，用于视频摘要、分析及内容问答。",
+      "source": "Synchronously analyze a video to understand its content. Accepts an indexed videoId, a direct video URL, a previously uploaded asset, or a local file path (auto-uploaded). Use when the user asks \"what is this video about?\", \"summarize the video\", \"analyze this video\", or has questions about video content.",
+      "source_sha256": "25e1a50b54b0bb7b1d246ded5bf307930f599b0f8e70919c6fccdf3b07b1931f",
+      "source_path": "skills/sync-analyze/SKILL.md",
+      "package_sha256": "043c168febb9f30e83407ed6654c46023d61f8e08ab58567f08f4c69dc0afa20",
+      "source_package": "TwelveLabs-1.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ebaae92730b4e06e81357c12ac73c323a7391d20522e30d759d723c83570fee": {
+      "description_zh": "配置SendGrid邮件账户：创建SG.前缀API密钥，通过CNAME设置DKIM/SPF域名认证、测试用单发件人验证和SDK安装，并说明与Twilio凭据的关系；用于其他SendGrid技能之前，不适用于Twilio Email API。",
+      "source": "Set up a SendGrid account for email delivery. Covers API key creation (SG.-prefix), domain authentication (DKIM/SPF via CNAME records), Single Sender Verification for testing, SDK installation, and the relationship between SendGrid and Twilio credentials. Use before any other SendGrid skill. This skill is for SendGrid only — not the Twilio Email API (comms.twilio.com).",
+      "source_sha256": "0ebaae92730b4e06e81357c12ac73c323a7391d20522e30d759d723c83570fee",
+      "source_path": "skills/sendgrid/twilio-sendgrid-account-setup/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c30eea1301a4d1265295c51986228a8418c0d29db7f6960ce605aba1783506e0": {
+      "description_zh": "诊断邮件进入垃圾箱、被拦截、退信或未到收件箱等送达问题，分析发件人信誉；覆盖SendGrid的SPF、DKIM、DMARC、BIMI、IP预热、名单卫生、退信及垃圾邮件率和SEQ。不适用于Twilio Email API或一般发送操作。",
+      "source": "Diagnostic and advisory skill for email deliverability problems. Use when a developer asks why emails are going to spam, not reaching the inbox, getting blocked, bouncing, or how to improve sender reputation — with or without a specified platform. Covers SendGrid-specific tooling: SPF, DKIM, DMARC, BIMI, IP warmup, list hygiene, bounce/spam rate thresholds, and Engagement Quality Score (SEQ). Do NOT use for Twilio Email (comms.twilio.com / Account SID + Auth Token) — use twilio-email-deliverability-advisor instead. Do NOT use for general email sending questions — use twilio-sendgrid-email-send (SendGrid) or twilio-email-deliverability-advisor instead.",
+      "source_sha256": "c30eea1301a4d1265295c51986228a8418c0d29db7f6960ce605aba1783506e0",
+      "source_path": "skills/sendgrid/twilio-sendgrid-deliverability-advisor/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "839d989116bbb548fc6f466f75ce6ececa3240eb9a72d54e46ae629e8605c437": {
+      "description_zh": "通过SendGrid v3 Mail Send API发送事务或批量邮件，支持动态模板个性化批发、定时发送与取消、附件及沙箱测试；需要SG.前缀API密钥，不适用于Twilio Email API。",
+      "source": "Send transactional and bulk email via the SendGrid v3 Mail Send API. Covers single sends, personalized batch sends with dynamic templates, scheduled sends with cancellation, attachments, and sandbox mode for testing. Use this skill when the caller has a SendGrid API key (SG.-prefix). Do NOT use this skill if the caller is using the Twilio Email API (comms.twilio.com) — that is a separate product with different credentials.",
+      "source_sha256": "839d989116bbb548fc6f466f75ce6ececa3240eb9a72d54e46ae629e8605c437",
+      "source_path": "skills/sendgrid/twilio-sendgrid-email-send/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d5f2803374fca38e7e14e8d8e178049d8765166ae712f97bf116c864e11ad32": {
+      "description_zh": "配置SendGrid的Handlebars动态模板、打开与点击及订阅跟踪、自定义跟踪域名链接品牌和HTML、纯文本或AMP内容；需要SG.前缀API密钥，不适用于Twilio Email API。",
+      "source": "Configure SendGrid dynamic templates (Handlebars), tracking settings (opens, clicks, subscriptions), link branding for custom tracking domains, and content types (HTML, plain text, AMP). Use when customizing SendGrid email content, tracking behavior, or branded links. Requires a SendGrid API key (SG.-prefix) — not applicable to the Twilio Email API (comms.twilio.com).",
+      "source_sha256": "4d5f2803374fca38e7e14e8d8e178049d8765166ae712f97bf116c864e11ad32",
+      "source_path": "skills/sendgrid/twilio-sendgrid-email-settings/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0902825cb84efb164380e59866348320948b83246de0210136be6fdf3aa8dbf2": {
+      "description_zh": "用SendGrid Engagement Quality评分监控邮件项目健康，覆盖SEQ接口、互动近期性、打开率、退信分类、退信率和垃圾邮件率五项指标及资格条件，辅助送达问题和信誉诊断；需要SendGrid密钥，不适用于Twilio Email API。",
+      "source": "Monitor email program health with SendGrid Engagement Quality (SEQ) scores. Covers the SEQ API endpoints, the 5 scoring metrics (engagement recency, open rate, bounce classification, bounce rate, spam rate), eligibility requirements, and interpreting scores for deliverability improvement. Use when diagnosing SendGrid deliverability issues or monitoring sender reputation. Requires a SendGrid API key (SG.-prefix) — not applicable to the Twilio Email API (comms.twilio.com).",
+      "source_sha256": "0902825cb84efb164380e59866348320948b83246de0210136be6fdf3aa8dbf2",
+      "source_path": "skills/sendgrid/twilio-sendgrid-engagement-quality/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3644daa1ef7863faa48b95b8968f2cbe5287105029671394fd6bed325bdfa39a": {
+      "description_zh": "通过SendGrid Inbound Parse webhook接收邮件，配置MX记录、解析或原始模式并处理附件及常见问题，用于邮件创建工单或处理流水线；需要SendGrid密钥，不适用于Twilio Email API。",
+      "source": "Receive inbound email via SendGrid Inbound Parse webhook. Covers MX record setup, parsed vs raw mode, handling attachments, and common pitfalls. Use when building email-to-app workflows like support ticket creation or email processing pipelines. Requires a SendGrid API key (SG.-prefix) — not applicable to the Twilio Email API (comms.twilio.com).",
+      "source_sha256": "3644daa1ef7863faa48b95b8968f2cbe5287105029671394fd6bed325bdfa39a",
+      "source_path": "skills/sendgrid/twilio-sendgrid-inbound-parse/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2bb55308a44389e18436c27463b5b3f343dbd58821a1be782bb36592915694c": {
+      "description_zh": "管理SendGrid的退信、拦截、垃圾邮件举报、无效地址、全局退订和ASM抑制组，说明移除条件、信誉影响及分类退订；用于送达排查或退订流程，需要SendGrid密钥，不适用于Twilio Email API。",
+      "source": "Manage SendGrid email suppressions: bounces, blocks, spam reports, invalid emails, global unsubscribes, and ASM suppression groups. Covers when and how to remove suppressions, reputation impact, and category-based unsubscribe management. Use when debugging SendGrid delivery issues or building unsubscribe flows. Requires a SendGrid API key (SG.-prefix) — not applicable to the Twilio Email API (comms.twilio.com).",
+      "source_sha256": "e2bb55308a44389e18436c27463b5b3f343dbd58821a1be782bb36592915694c",
+      "source_path": "skills/sendgrid/twilio-sendgrid-suppressions/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "919e6048cceb8b24e308bcb01f0869efba56235af0ae9dbad57b30971286c861": {
+      "description_zh": "通过SendGrid Event Webhooks追踪送达与互动，覆盖原文列出的11种事件、处理器实现、ECDSA签名验证、批处理及调试；用于送达跟踪、互动分析或退信处理，需要SendGrid密钥，不适用于Twilio Email API。",
+      "source": "Track email delivery and engagement via SendGrid Event Webhooks. Covers all 11 event types (delivery + engagement), webhook handler implementation, ECDSA signature verification, batched event processing, and common debugging patterns. Use when building SendGrid delivery tracking, engagement analytics, or bounce handling. Requires a SendGrid API key (SG.-prefix) — not applicable to the Twilio Email API (comms.twilio.com).",
+      "source_sha256": "919e6048cceb8b24e308bcb01f0869efba56235af0ae9dbad57b30971286c861",
+      "source_path": "skills/sendgrid/twilio-sendgrid-webhooks/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f087a3ada48f801a298576bbca0ec24e8f264aacf9d0c9218febc9e5754340cf": {
+      "description_zh": "从零创建配置Twilio账户，处理试用及限制、Account SID和Auth Token、号码购买、试用接收号码验证、SDK及首个API调用；管理子账户继承、隔离和限制，启用AI Assistants、Conversations、Verify、ConversationRelay或WhatsApp。组织治理另用组织设置技能。",
+      "source": "Create and configure a Twilio account from scratch. Covers free trial signup, trial limitations, getting credentials (Account SID and Auth Token), buying a phone number, verifying recipient numbers for trial use, SDK installation, first API call, subaccount management (creation, inheritance, credential isolation, limits), and enabling specific products (AI Assistants, Conversations, Verify, ConversationRelay, WhatsApp). Use this skill before any other Twilio skill if you do not yet have a Twilio account or need to enable a product. For Organization-level governance (SSO, SCIM, multi-team), see `twilio-organizations-setup`.",
+      "source_sha256": "f087a3ada48f801a298576bbca0ec24e8f264aacf9d0c9218febc9e5754340cf",
+      "source_path": "skills/twilio/twilio-account-setup/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99bf4ffc40a137f0bf19db9822dbdd46f41a2b41cafac05541d07f6f7ac84536": {
+      "description_zh": "规划用实时AI增强人工客服，根据辅导、合规、质量检查及路由需求推荐Conversation Intelligence、Conversation Memory与TaskRouter架构，并支持脚本遵循分析操作器配置。",
+      "source": "Planning skill for augmenting human agents with real-time AI intelligence. Qualifies the developer's use case across coaching, compliance, QA, and routing to recommend the right Conversation Intelligence + Conversation Memory + TaskRouter architecture. Handles both \"I want to add AI coaching to my call center\" and \"configure Conversation Intelligence operators for script adherence.\"",
+      "source_sha256": "99bf4ffc40a137f0bf19db9822dbdd46f41a2b41cafac05541d07f6f7ac84536",
+      "source_path": "skills/twilio/twilio-agent-augmentation-architect/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "beb62efeb8e19e8004a8ed279b18e776a11b798593b7eeb59dd1e78d87586abb": {
+      "description_zh": "规划AI对话智能体，按结果复杂度、入口及客户类型推荐Twilio Conversations架构与实现技能，覆盖语音AI助手及ConversationRelay连接OpenAI后端等需求。",
+      "source": "Planning skill for AI-powered conversational agents. Qualifies the developer's use case across outcome sophistication, entry point, and customer profile to recommend the right Twilio Conversations architecture and implementation skills. Handles both high-level requests (\"build me a voice AI assistant\") and specific ones (\"integrate ConversationRelay with my OpenAI backend\").",
+      "source_sha256": "beb62efeb8e19e8004a8ed279b18e776a11b798593b7eeb59dd1e78d87586abb",
+      "source_path": "skills/twilio/twilio-ai-agent-architect/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7c1f73bfe1f5fd8b0bb4e7329eaec4467534687fd4a39f9cd44a32528f05771": {
+      "description_zh": "配置Twilio语音通话录音，区分语音留言的Record动词和通话录音的Dial record，覆盖双通道质检、PCI场景中途暂停、会议录音及ConversationRelay替代方式。",
+      "source": "Record Twilio voice calls correctly. Covers the critical distinction between Record verb (voicemail) and Dial record (call recording), dual-channel for QA, mid-call pause for PCI, Conference recording, and the ConversationRelay workaround. Use this skill whenever you need to capture call audio for compliance, QA, or analytics.",
+      "source_sha256": "c7c1f73bfe1f5fd8b0bb4e7329eaec4467534687fd4a39f9cd44a32528f05771",
+      "source_path": "skills/twilio/twilio-call-recordings/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5985ada7256ee45fe7bf453c19d6916669842f823e100b2d6bbbaf638807f141": {
+      "description_zh": "通过Twilio CLI在终端管理资源，覆盖安装、凭据配置、号码开通、短信邮件发送、webhook、本地隧道开发、watch和日志调试、无服务器部署及插件，用于直接执行命令的任务。",
+      "source": "Twilio CLI reference for managing Twilio resources from the terminal. Covers installation, credential profiles, phone number provisioning, sending SMS and email, webhook configuration, local development with a tunneling service, debugging with watch and logs, serverless deployment, and plugin ecosystem. Use when the developer asks to \"just do it\", \"set this up\", \"run a command\", mentions \"CLI\", \"command line\", or \"terminal\", or when an AI agent can execute a task directly instead of writing application code.",
+      "source_sha256": "5985ada7256ee45fe7bf453c19d6916669842f823e100b2d6bbbaf638807f141",
+      "source_path": "skills/twilio/twilio-cli-reference/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de4a33a91c76775e32e650dd4e048d493297f17447f4fe882d774a3ea7bd0bd9": {
+      "description_zh": "说明Twilio流量开通前所需注册，覆盖A2P 10DLC、免费号码验证、WhatsApp WABA、RCS、短码及字母发件人，以及STIR/SHAKEN、Voice Integrity、Branded Calling和CNAM；按号码或发件人类型梳理注册及流量阻断条件。",
+      "source": "Registrations required BEFORE Twilio traffic works. Covers messaging programs (A2P 10DLC, toll-free verification, WhatsApp WABA, RCS, short code, alphanumeric sender) and voice trust programs (STIR/SHAKEN, Voice Integrity, Branded Calling, CNAM). Each number/sender type has its own program — registration blocks traffic until complete.",
+      "source_sha256": "de4a33a91c76775e32e650dd4e048d493297f17447f4fe882d774a3ea7bd0bd9",
+      "source_path": "skills/twilio/twilio-compliance-onboarding/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a58af66f7186f78bbbbaff30b9ec8f6c11a0cdef5ecb68e9115660de760041c5": {
+      "description_zh": "梳理Twilio消息和语音流量的合规规则及同意管理模式，覆盖原文所列TCPA、GDPR、PCI DSS、HIPAA、FDCPA、CAN-SPAM、WhatsApp政策和SHAKEN/STIR主题，辅助已运行流量的合规检查。",
+      "source": "Rules you must follow for Twilio messaging and voice traffic. Covers TCPA (consent tiers, quiet hours, DNC), GDPR (EU consent, right to deletion), PCI DSS (payment recording, Pay verb), HIPAA (BAA, PHI), FDCPA (debt collection limits), CAN-SPAM, WhatsApp policies, SHAKEN/STIR, and consent management patterns. Use this skill proactively when developers have working traffic to ensure they follow the rules.",
+      "source_sha256": "a58af66f7186f78bbbbaff30b9ec8f6c11a0cdef5ecb68e9115660de760041c5",
+      "source_path": "skills/twilio/twilio-compliance-traffic/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4b7c2a74f993d3f603fa16142c1ace306e55c7d468c46b12b0dbfa7836a7ecd": {
+      "description_zh": "使用Twilio Conference构建多方通话，支持暖转与冷转、耳语辅导、保持与静音、参与者模式及主管介入，用于联系中心、支持热线及转接场景。",
+      "source": "Build multi-party calls using Twilio Conference. Covers warm transfer, cold transfer, coaching (whisper), hold vs mute, participant modes, and supervisor barge. Use this skill for any contact center, support line, or scenario requiring transfers, holds, or multi-party calls.",
+      "source_sha256": "d4b7c2a74f993d3f603fa16142c1ace306e55c7d468c46b12b0dbfa7836a7ecd",
+      "source_path": "skills/twilio/twilio-conference-calls/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dcceba5bf098ade829a52aa06a6f30f04005f12dfa1424e288e5b813e6d15cbd": {
+      "description_zh": "通过Twilio Content API创建、管理和发送WhatsApp、SMS、RCS及MMS模板，配置变量、WhatsApp Meta审批和ContentSid发送，适用于需预审或跨渠道统一格式的结构化消息。",
+      "source": "Create, manage, and send message templates using Twilio's Content API. Covers template creation for WhatsApp, SMS, RCS, and MMS; variable usage; WhatsApp Meta approval; and sending templates via ContentSid. Use this skill when building structured messages that require pre-approval or consistent formatting across channels.",
+      "source_sha256": "dcceba5bf098ade829a52aa06a6f30f04005f12dfa1424e288e5b813e6d15cbd",
+      "source_path": "skills/twilio/twilio-content-template-builder/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2a7ec3acdf2b29c1d3bc4b9d25de96acc57334bbfb0728a5675441318f395ac": {
+      "description_zh": "开发Twilio Conversation Intelligence实时或通话后分析，构建语言操作器流水线、情绪分析、客服辅助及跨渠道分析，并查询情绪趋势、升级率或仪表板等汇总洞察。",
+      "source": "Twilio Conversation Intelligence development guide. Use when building real-time or post-call conversation analysis, language operator pipelines, sentiment analysis, agent assist, cross-channel analytics, or querying aggregated conversation insights (sentiment trends, escalation rates, dashboards).",
+      "source_sha256": "c2a7ec3acdf2b29c1d3bc4b9d25de96acc57334bbfb0728a5675441318f395ac",
+      "source_path": "skills/twilio/twilio-conversation-intelligence/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "daa80630c44a2e9521902d767c6686aaaff3eeb27a41b52c53a77c595dd0185c": {
+      "description_zh": "通过Twilio Conversation Memory存储检索对话上下文，配置Memory Store、档案、特征、观察、对话摘要及语义Recall，为AI或人工客服提供跨会话、跨渠道记忆。",
+      "source": "Store and retrieve conversation context using Twilio Conversation Memory. Covers Memory Store provisioning, profile management, traits, observations, conversation summaries, and semantic Recall. Use this skill to give AI agents or human agents persistent memory of conversations across sessions and channels.",
+      "source_sha256": "daa80630c44a2e9521902d767c6686aaaff3eeb27a41b52c53a77c595dd0185c",
+      "source_path": "skills/twilio/twilio-conversation-memory/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ea2562c6545d07d06f910cec39dcdb52120c7047faa8475dee9517f79e94641": {
+      "description_zh": "配置Twilio Conversation Orchestrator自动捕获与路由，设置渠道规则、分组、状态超时、Memory Store及Intelligence关联和对话生命周期，将SMS、语音、WhatsApp、RCS和网页聊天流量汇入统一对话。",
+      "source": "Configure automatic conversation capture and routing with Twilio Conversation Orchestrator. Covers Configuration creation, channel capture rules, grouping types, status timeouts, Memory Store linkage, Intelligence linkage, and conversation lifecycle. Use this skill to automatically capture SMS, voice, WhatsApp, RCS, and web chat traffic into unified conversations without manually creating conversations or participants.",
+      "source_sha256": "3ea2562c6545d07d06f910cec39dcdb52120c7047faa8475dee9517f79e94641",
+      "source_path": "skills/twilio/twilio-conversation-orchestrator/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fd99b0d892cbc9c325c18c592b5b6df77dd32ead59ca7f553fd2756244d98d8": {
+      "description_zh": "用Twilio Conversations经典API构建多渠道消息体验，创建对话、添加SMS、WhatsApp或聊天参与者、发送消息及处理webhook，支持持续多方和多渠道对话。",
+      "source": "Build multi-channel messaging experiences using Twilio Conversations (classic) API. Covers creating conversations, adding participants (SMS, WhatsApp, chat), sending messages, and handling webhooks. Use this skill to manage persistent multi-party or multi-channel conversations beyond single-message SMS/WhatsApp.",
+      "source_sha256": "9fd99b0d892cbc9c325c18c592b5b6df77dd32ead59ca7f553fd2756244d98d8",
+      "source_path": "skills/twilio/twilio-conversations-classic-api/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70a931a5a5d84d8ea6368ef83092867aeac3a39affbe3b769fba669e7ebf3a2d": {
+      "description_zh": "规划客户服务与支持系统，按自助服务、AI客服到联系中心的支持层级、渠道组合及规模推荐Twilio架构，适用于新建呼叫中心或给既有热线增加IVR。",
+      "source": "Planning skill for building customer service and support systems. Qualifies the developer's needs across the support ladder (self-service → AI agents → contact center), channel mix, and scale to recommend the right Twilio architecture. Handles both \"build me a call center\" and \"add an IVR to my existing support line.\"",
+      "source_sha256": "70a931a5a5d84d8ea6368ef83092867aeac3a39affbe3b769fba669e7ebf3a2d",
+      "source_path": "skills/twilio/twilio-customer-support-architect/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "688bfa86b3066f1ce2490f36079768db2359b5fcd8c70fd7cc74a95d453c71f9": {
+      "description_zh": "调试Twilio集成并配置生产监控，覆盖Console Debugger、Monitor Alerts API、错误日志Event Streams、状态回调、常见错误码及系统排查，适用于发送失败、异常掉话和部署监控。",
+      "source": "Debug Twilio integrations and set up production observability. Covers the Console Debugger, Monitor Alerts API, Event Streams for error log streaming, status callback tracking, common error codes, and a systematic debugging workflow. Use this skill whenever a Twilio integration produces errors, messages fail to deliver, calls drop unexpectedly, or you need to set up monitoring for a production deployment.",
+      "source_sha256": "688bfa86b3066f1ce2490f36079768db2359b5fcd8c70fd7cc74a95d453c71f9",
+      "source_path": "skills/twilio/twilio-debugging-observability/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2eeee4be9324d73bbf8c2db67d16440c50344e23c8a6c72fca84abfd22e4756": {
+      "description_zh": "专门诊断Twilio Email API的邮件送达问题，仅用于明确提到Twilio Email、comms.twilio.com或非SendGrid的Twilio邮件项目；通用及其他送达问题另用SendGrid顾问。",
+      "source": "Deliverability advisor for the Twilio Email API specifically. Use ONLY when the developer explicitly mentions Twilio Email, comms.twilio.com, or a Twilio (non-SendGrid) email program. For all other deliverability questions — including generic ones — use twilio-sendgrid-deliverability-advisor.",
+      "source_sha256": "e2eeee4be9324d73bbf8c2db67d16440c50344e23c8a6c72fca84abfd22e4756",
+      "source_path": "skills/twilio/twilio-email-deliverability-advisor/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0ed738b2d19438af54da64b2c3cb5640e6d4ac416876835ea5a6931686c8afa": {
+      "description_zh": "使用Twilio的Account SID与Auth Token或API Key SID与Secret，通过comms.twilio.com/v1/Emails发送邮件；覆盖单发、原文所述最多一万接收人的批发、Liquid个性化、操作跟踪及错误处理，不适用于SG.前缀SendGrid密钥。",
+      "source": "Use when the caller has Twilio credentials (Account SID + Auth Token or API Key SID + Secret) and needs to send email via comms.twilio.com/v1/Emails. This is Twilio-native email — NOT SendGrid. Do NOT use if the caller has a SendGrid API key (SG.-prefix) — use twilio-sendgrid-email-send instead. Covers single sends, batch sends up to 10,000 recipients, Liquid personalization, operation tracking, and error handling.",
+      "source_sha256": "d0ed738b2d19438af54da64b2c3cb5640e6d4ac416876835ea5a6931686c8afa",
+      "source_path": "skills/twilio/twilio-email-send/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c44d91057188e16ff9d8914d33a5f0d80808cc6d833141d712c018bd1b2d6821": {
+      "description_zh": "通过Twilio Enterprise Knowledge为AI智能体加入RAG，创建知识库，上传网页URL、PDF和原始文本，在运行时语义检索相关片段，使回答依据组织批准的FAQ、政策和产品文档。",
+      "source": "Add knowledge retrieval (RAG) to AI agents using Twilio Enterprise Knowledge. Covers provisioning Knowledge Bases, uploading sources from web URLs, PDFs, and raw text, and running semantic search to retrieve relevant chunks at runtime. Use this skill to ground agent responses in your organization's actual approved content — FAQs, policies, product docs — rather than hallucinated answers.",
+      "source_sha256": "c44d91057188e16ff9d8914d33a5f0d80808cc6d833141d712c018bd1b2d6821",
+      "source_path": "skills/twilio/twilio-enterprise-knowledge/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99f1addcc47c5139f4e65fb22fef08df8130c50b022a7345abbeeea0fb9c78c5": {
+      "description_zh": "设置管理Twilio Auth Token、Standard/Main/Restricted API密钥、客户端SDK Access Token及凭据轮换，作为API调用的认证基础。",
+      "source": "Set up and manage Twilio authentication credentials: Auth Tokens, API keys (Standard, Main, Restricted), Access Tokens for client-side SDKs, and credential rotation. Use this skill as a prerequisite foundation before making any Twilio API calls.",
+      "source_sha256": "99f1addcc47c5139f4e65fb22fef08df8130c50b022a7345abbeeea0fb9c78c5",
+      "source_path": "skills/twilio/twilio-iam-auth-setup/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ebd2455479fb8181b10133c929f45edb855e55db4f958cc4884c2addd340ae42": {
+      "description_zh": "规划身份验证与防欺诈，按认证方式、渠道、风险等级和用户体验推荐Twilio Verify与Lookup架构，覆盖登录、注册、密码重置及风险自适应验证。",
+      "source": "Planning skill for identity verification and fraud prevention. Qualifies the developer's needs across authentication method, channel selection, fraud risk level, and user experience to recommend the right Twilio Verify + Lookup architecture. Handles login, signup, password reset, and risk-adaptive verification.",
+      "source_sha256": "ebd2455479fb8181b10133c929f45edb855e55db4f958cc4884c2addd340ae42",
+      "source_path": "skills/twilio/twilio-identity-verification-advisor/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "44c4cfa6889c6a1631261ef0abe9c93b12b62400ae9c54755bfc55e5dbcffb9d": {
+      "description_zh": "通过Twilio Lookup v2查询号码情报，验证号码、识别手机/固话/VoIP线路、检查SIM换卡、来电姓名、身份匹配及短信刷量风险，为消息或呼叫前的验证和风险评估提供依据。",
+      "source": "Look up phone number intelligence via Twilio Lookup v2 API. Covers number validation, line type detection (mobile/landline/VoIP), SIM swap detection, caller name, identity match, and SMS pumping risk scoring. Use this skill to validate numbers or assess fraud risk before sending messages or calls.",
+      "source_sha256": "44c4cfa6889c6a1631261ef0abe9c93b12b62400ae9c54755bfc55e5dbcffb9d",
+      "source_path": "skills/twilio/twilio-lookup-phone-intelligence/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5249eef90d00bb3c1571500855d49070e7109d7000c93d1d5e3df9dc674dc148": {
+      "description_zh": "规划Twilio营销活动架构，评估渠道、合规准备、受众规模、地区及送达跟踪，适用于WhatsApp推广或促销短信方案选择；已明确方案的API及实现细节另用实现技能。",
+      "source": "Planning skill for marketing and promotional messaging. Use when a developer is figuring out how to set up or architect a marketing campaign on Twilio — channel selection, compliance readiness, audience size, geography, and delivery tracking. Handles open-ended requests like \"how do I set up a WhatsApp marketing campaign\" or \"what's the best way to run promotional SMS.\" Skip this skill when the developer already knows what they want and is asking for API specs or implementation details.",
+      "source_sha256": "5249eef90d00bb3c1571500855d49070e7109d7000c93d1d5e3df9dc674dc148",
+      "source_path": "skills/twilio/twilio-marketing-promotions-advisor/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7936ed46b1c54fffca408afba215215250b0225f30e961bf51654ab920ffc178": {
+      "description_zh": "按内容类型、地区、营销/通知/OTP/支持用途、成本和品牌展示选择Twilio SMS、MMS、RCS或WhatsApp渠道，并评估富内容、国际覆盖及回退或多渠道方案。",
+      "source": "Planning skill that helps the developer pick the right Twilio messaging channel — SMS, MMS, RCS, or WhatsApp — for a given use case. Qualifies intent across content type, geography, use case (marketing / notifications / OTP / support), cost model, and brand presence. Use when the developer asks \"which channel should I use\", \"SMS vs RCS vs WhatsApp\", mentions a country or region, asks about branded messaging, rich content, or fallback — and proactively when the developer says \"send SMS\" or \"text\" but the use case (rich content, international reach, branded experience, marketing campaign, transactional notification) would benefit from a different or multi-channel approach. Also invoke alongside twilio-marketing-promotions-advisor or twilio-notifications-alerts-advisor whenever the developer has not yet confirmed a specific channel.",
+      "source_sha256": "7936ed46b1c54fffca408afba215215250b0225f30e961bf51654ab920ffc178",
+      "source_path": "skills/twilio/twilio-messaging-channel-advisor/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "29cc569c9687cf3f4c399b981652249756ffcd43a85b9c560251fc8592c4f38e": {
+      "description_zh": "介绍Twilio Messaging的SMS、WhatsApp、RCS和Facebook Messenger渠道及统一Messages API，指导渠道选择和从首条消息到生产监控的接入顺序。",
+      "source": "Twilio Messaging channel overview and onboarding guide. Covers all channels (SMS, WhatsApp, RCS, Facebook Messenger), the unified Messages API, channel selection guidance, and the recommended setup sequence from first message to production monitoring. Start here before choosing a specific messaging channel.",
+      "source_sha256": "29cc569c9687cf3f4c399b981652249756ffcd43a85b9c560251fc8592c4f38e",
+      "source_path": "skills/twilio/twilio-messaging-overview/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e5619d56bf1ad592ef28a2e2682ba85ee45dae9d5243ce134e189dba3c0daba": {
+      "description_zh": "创建配置生产用Twilio Messaging Services，管理发件人池、地区匹配、固定发件人、定时发送、合规工具、短信刷量防护、短链接及智能告警。",
+      "source": "Create and configure Twilio Messaging Services for production messaging. Covers sender pools, geo-match, sticky sender, message scheduling, compliance toolkit, SMS pumping protection, link shortening, and intelligent alerts. Use this skill when setting up production-ready messaging infrastructure.",
+      "source_sha256": "2e5619d56bf1ad592ef28a2e2682ba85ee45dae9d5243ce134e189dba3c0daba",
+      "source_path": "skills/twilio/twilio-messaging-services/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7b3af3585458b6954cf26454dbaa61563ec1b349a23b32d6309169ff878769e": {
+      "description_zh": "通过Twilio webhook接收回复SMS、MMS、WhatsApp和RCS入站消息并实时跟踪出站送达，覆盖请求参数、TwiML回复、签名验证及状态回调。",
+      "source": "Receive and respond to inbound messages and track outbound delivery status via Twilio webhooks — across SMS, MMS, WhatsApp, and RCS. Covers webhook request parameters, replying with TwiML, validating webhook signatures for security, and handling status callbacks. Use this skill whenever an agent needs to handle incoming messages on any channel or track outbound message delivery in real time.",
+      "source_sha256": "a7b3af3585458b6954cf26454dbaa61563ec1b349a23b32d6309169ff878769e",
+      "source_path": "skills/twilio/twilio-messaging-webhooks/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf6561c7f9f6cbc02215cf5dd55e29f9aedd6e21eaad6a3c67765d0570fec5f9": {
+      "description_zh": "把自建的Programmable Messaging短信OTP流程迁移到Twilio Verify托管验证码生成、投递、过期、限流及Fraud Guard；创建Verify Service、替换发送检查逻辑，处理Lookup的E.164格式、自定义验证码、错误码映射及逐步切换。",
+      "source": "Migrate an existing OTP / one-time-passcode flow from the Twilio Programmable Messaging API (self-built: generate code → send SMS → validate) to the Twilio Verify API (managed code generation, delivery, expiry, rate limiting, and Fraud Guard). Covers what Verify replaces, creating a Verify Service, replacing send + check logic, E.164 formatting with Lookup, bring-your-own custom codes, error-code translation, and a safe incremental cutover. Use when a developer is moving OTP/2FA delivery off Programmable Messaging onto Verify, or asks \"should I use Verify instead of sending my own SMS codes?\".",
+      "source_sha256": "cf6561c7f9f6cbc02215cf5dd55e29f9aedd6e21eaad6a3c67765d0570fec5f9",
+      "source_path": "skills/twilio/twilio-migrate-messaging-to-verify/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33c1f982f468055ba90120310b421ea5089516a94be5c0f6d6b2256d68fa0bdd": {
+      "description_zh": "规划事务通知、告警和提醒，按紧急程度、渠道、送达确认及回退需求推荐Twilio架构，适用于物流更新及具确认和回退机制的多渠道告警。",
+      "source": "Planning skill for transactional notifications, alerts, and reminders. Qualifies the developer's needs across urgency, channel selection, delivery confirmation, and fallback patterns to recommend the right Twilio notification architecture. Handles both \"send shipping updates to customers\" and \"build a multi-channel alert system with delivery confirmation and fallback.\"",
+      "source_sha256": "33c1f982f468055ba90120310b421ea5089516a94be5c0f6d6b2256d68fa0bdd",
+      "source_path": "skills/twilio/twilio-notifications-alerts-advisor/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "94d1be758e0497f9b39aa602d59e8fed59402bad6bf8716c2f06286ce9345bf3": {
+      "description_zh": "在开发前选择Twilio号码和发件人类型，比较本地、免费、短码、移动号码、字母发件人ID、WhatsApp和RCS，梳理国际可用性、监管资料包及各类型合规项目。",
+      "source": "Choose the right Twilio number type and sender BEFORE building. Covers phone numbers (local, toll-free, short code, mobile), alphanumeric sender IDs, WhatsApp senders, RCS agents, international availability, and regulatory bundles. Each number type has its own compliance program — choosing wrong means rebuilding. Use this skill first.",
+      "source_sha256": "94d1be758e0497f9b39aa602d59e8fed59402bad6bf8716c2f06286ce9345bf3",
+      "source_path": "skills/twilio/twilio-numbers-senders/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "598cc035c3c6946affc7b9d81a8e90047fcf1f86dcd6ad7ad1099c6310dfee93": {
+      "description_zh": "设置管理Twilio Organizations，按组织、账户、子账户层级集中治理用户，配置Owner/Admin/Standard角色、受管与独立账户、域名注册、SSO、SCIM及组织合并，适用于多团队账户管理。",
+      "source": "Set up and manage Twilio Organizations for centralized account and user governance. Covers the Organization > Account > Subaccount hierarchy, roles (Owner/Admin/Standard), managed vs independent accounts, domain registration, SSO enforcement, SCIM provisioning, and Organization merging. Use this skill when managing multiple Twilio accounts or users across teams.",
+      "source_sha256": "598cc035c3c6946affc7b9d81a8e90047fcf1f86dcd6ad7ad1099c6310dfee93",
+      "source_path": "skills/twilio/twilio-organizations-setup/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3870034f8e8b51f9dffad4f46ed702be612f4465fbb430fd3e4a3a780fc4e11": {
+      "description_zh": "通过Twilio发送RCS商业消息，覆盖原文所述美国七部分合规接入、发件人档案、富卡片和轮播、SMS回退、Android及iOS 18支持限制和常见错误，用于RCS开发及发件人接入。",
+      "source": "Send RCS Business Messages via Twilio. Covers compliance onboarding (7-part US process), sender profile setup, sending rich cards and carousels, SMS fallback, device support (Android + iOS 18 caveats), and common errors. Use this skill when building RCS messaging or onboarding an RCS sender.",
+      "source_sha256": "c3870034f8e8b51f9dffad4f46ed702be612f4465fbb430fd3e4a3a780fc4e11",
+      "source_path": "skills/twilio/twilio-rcs-messaging/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "adf35b1d2a72ea42b5ab0512c9661bce1569310321371a86b92167971c257e91": {
+      "description_zh": "管理国际电话号码的监管资料包，确定国家要求，创建最终用户和证明文件，评估提交、修复失败并在法规变化时更新，支持ISV多账户模式，适用于美国以外号码开通。",
+      "source": "Manage regulatory compliance for international phone numbers. Covers what bundles are, which countries require them, how to create End-Users and Supporting Documents, evaluate and submit bundles, fix evaluation failures, update bundles when regulations change, and ISV multi-account patterns. Use this skill when provisioning numbers outside the US.",
+      "source_sha256": "adf35b1d2a72ea42b5ab0512c9661bce1569310321371a86b92167971c257e91",
+      "source_path": "skills/twilio/twilio-regulatory-compliance-bundles/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03a82c3cf64d1e234671787e81eed29dd502b2298fc6b3937f2d0d8fe3662ccb": {
+      "description_zh": "为规模化Twilio集成处理限流、重试及失败，覆盖429的带抖动指数退避、单号码吞吐、StatusCallback韧性、轻量接收器及回退链，用于批量消息、呼叫和生产系统。",
+      "source": "Handle rate limits, retries, and failures when building on Twilio at scale. Covers 429 exponential backoff with jitter, per-number throughput limits, StatusCallback resilience, thin-receiver pattern, and fallback chains. Use this skill whenever sending messages or making calls at volume, or when building production-grade Twilio integrations.",
+      "source_sha256": "03a82c3cf64d1e234671787e81eed29dd502b2298fc6b3937f2d0d8fe3662ccb",
+      "source_path": "skills/twilio/twilio-reliability-patterns/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a407f41cb40652ff2d6c226d3d03de1643ddf598de1a2c979e686cc2d02959f": {
+      "description_zh": "选择并实现Twilio认证方式，区分测试用Auth Token、生产API密钥、OAuth2 client_credentials限时Bearer认证、客户端SDK Access Token及测试凭据，用于生产API调用前。",
+      "source": "Choose the right Twilio authentication method and implement it correctly. Covers Auth Token (testing only), API Keys (production standard), OAuth2 client_credentials (time-limited bearer [已隐藏], Access Tokens (client-side SDKs), and test credentials. Use this skill before making any Twilio API calls in production.",
+      "source_sha256": "7a407f41cb40652ff2d6c226d3d03de1643ddf598de1a2c979e686cc2d02959f",
+      "source_path": "skills/twilio/twilio-security-api-auth/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d322018dc350b6dff347eaa4d0b6bd8fb8f032b71cd39dfb2ef99a3955f83fa": {
+      "description_zh": "为Twilio医疗工作流梳理HIPAA账户配置，覆盖BAA、HIPAA Project标记、适用服务、Voice/SMS/ConversationRelay/Conversation Intelligence/Flex/Verify要求、消息脱敏及不适用项。",
+      "source": "Configure Twilio accounts for HIPAA compliance. Covers BAA requirements, HIPAA Project designation (self-service and support), eligible services list, per-product requirements (Voice, SMS, ConversationRelay, Conversation Intelligence, Flex, Verify), message redaction, and what is NOT eligible. Use this skill when developers are building healthcare workflows on Twilio.",
+      "source_sha256": "0d322018dc350b6dff347eaa4d0b6bd8fb8f032b71cd39dfb2ef99a3955f83fa",
+      "source_path": "skills/twilio/twilio-security-compliance-hipaa/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2961283275f33e943bed073d82b9a60f0e7bc48a2b09343d1d8687953d180159": {
+      "description_zh": "加固Twilio应用，处理API密钥与Auth Token管理、webhook签名验证、PCI DSS、HIPAA账户要求、短信刷量防护、地区权限及账户隔离。",
+      "source": "Secure Twilio applications against common attacks. Covers credential management (API keys vs auth tokens), request validation (webhook signature verification), PCI DSS compliance, HIPAA account requirements, SMS pumping prevention, geo-permissions, and account isolation patterns. Use this skill when developers are building or deploying Twilio apps.",
+      "source_sha256": "2961283275f33e943bed073d82b9a60f0e7bc48a2b09343d1d8687953d180159",
+      "source_path": "skills/twilio/twilio-security-hardening/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30c747da5ada40afe39e0fe4004771f8e8eb4e4161238f8f9014371fe7b02e71": {
+      "description_zh": "通过Twilio Programmable Messaging API发送SMS、MMS、RCS及WhatsApp消息，支持文字、媒体、卡片/轮播/按钮、模板、Messaging Services及状态回调，并说明原文所述WhatsApp 24小时服务窗口；渠道选择先作评估。",
+      "source": "Send messages via Twilio's Programmable Messaging API across all channels — SMS, MMS, RCS, and WhatsApp. Covers text messages, media, rich content (cards, carousels, buttons), template-based sends, Messaging Services, status callbacks, and WhatsApp's 24-hour service window. Use when the user wants to send a message — whether they say \"send SMS\", \"text message\", \"branded message\", \"rich message\", \"WhatsApp message\", \"RCS message\", \"notification\", or \"alert\". For picking the right channel for a use case, first consult twilio-messaging-channel-advisor.",
+      "source_sha256": "30c747da5ada40afe39e0fe4004771f8e8eb4e4161238f8f9014371fe7b02e71",
+      "source_path": "skills/twilio/twilio-send-message/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1813d57322566758b88a1ff70ffd6927f0cfad6e544db979eab085284ecce85d": {
+      "description_zh": "指导ISV在多租户SaaS中构建Twilio短信能力，覆盖客户A2P及免费号码合规接入、子账户架构、发件人管理、计费模式及常见问题，供客户向最终用户发送消息。",
+      "source": "Best practices for ISVs (Independent Software Vendors) building SMS features into multi-tenant SaaS platforms using Twilio. Covers customer onboarding for A2P and toll-free compliance, subaccount architecture, sender management, billing patterns, and common ISV pitfalls. Use this when building SMS capabilities that your customers will use to message their end users.",
+      "source_sha256": "1813d57322566758b88a1ff70ffd6927f0cfad6e544db979eab085284ecce85d",
+      "source_path": "skills/twilio/twilio-sms-isv-setup/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d37ef30a3abfa47849f9898d23643cc645ad80170e774072887aa79bfde30ced": {
+      "description_zh": "深入排查SMS/MMS送达，覆盖短信错误码、过滤拦截检查、原文限定美国/加拿大/澳大利亚的MMS媒体支持及短信刷量迹象；用于专项细节和故障，发送操作另用统一发送技能。",
+      "source": "SMS and MMS deep-dive reference. Covers SMS-specific error codes, message filtering troubleshooting (\"Messages Being Filtered or Blocked?\" diagnostic checklist), MMS media support (US/CA/AU only), and SMS pumping indicators. For sending SMS, use twilio-send-message instead. Use this skill only when debugging SMS delivery issues or needing SMS-specific details not in the consolidated send skill.",
+      "source_sha256": "d37ef30a3abfa47849f9898d23643cc645ad80170e774072887aa79bfde30ced",
+      "source_path": "skills/twilio/twilio-sms-send-message/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7981a3a4f568cae955c8d8f2936974444cb3eedc699597ffcb01517a5d4d801b": {
+      "description_zh": "编写流程定义JSON并通过Studio REST API创建、验证、部署或更新Twilio Studio的可视IVR、SMS/WhatsApp及对话自动化，覆盖流程封装、组件、跳转、Liquid和草稿/发布生命周期，并比较自定义TwiML或代码。",
+      "source": "Build and deploy Twilio Studio flows — visual IVR, SMS/WhatsApp, and conversation automation — by authoring the flow definition JSON and managing it through the Studio REST API. Covers the flow envelope, widgets, transitions, Liquid templating, the draft/published lifecycle, and when to use Studio vs. custom TwiML/code. Use this skill to create, validate, deploy, or update a Studio flow programmatically.",
+      "source_sha256": "7981a3a4f568cae955c8d8f2936974444cb3eedc699597ffcb01517a5d4d801b",
+      "source_path": "skills/twilio/twilio-studio-flows/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3c805828f525bb125c8b81d1dc441a9f0539509de663089aca2d84d023b18e0": {
+      "description_zh": "通过Twilio TaskRouter把任务路由给客服或智能体，配置Workers、队列、Workflows、Reservations及技能路由，处理连字符属性、HAS操作符和预留级联，用于联系中心、支持队列或AI升级路由。",
+      "source": "Route tasks to agents using Twilio TaskRouter. Covers Workers, Task Queues, Workflows, Reservations, skills-based routing, and common gotchas (hyphen attributes, HAS operator, reservation cascade). Use this skill for any multi-agent contact center, support queue, or AI agent escalation routing.",
+      "source_sha256": "a3c805828f525bb125c8b81d1dc441a9f0539509de663089aca2d84d023b18e0",
+      "source_path": "skills/twilio/twilio-taskrouter-routing/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02d6771d7d887c63e8d0b6c3e0e1b4f335f9729fd48573103f11f921b8fff772": {
+      "description_zh": "通过Twilio Verify发送验证SMS、语音、邮件或WhatsApp一次性验证码，支持可用时SMS自动升级RCS、创建服务、代码检查、WhatsApp到SMS回退及配置；TOTP另属Factors API，适用于号码、邮箱验证和双因素认证。",
+      "source": "Send and verify one-time passcodes (OTPs) via Twilio Verify over SMS (auto-upgraded to RCS where supported), voice, email, or WhatsApp. Covers creating a Verify Service, sending tokens, checking submitted codes, automatic WhatsApp-to-SMS fallback, and service configuration. TOTP is supported via the Factors API (a separate family from channel-based OTP). Use this skill to add phone or email verification or two-factor authentication to any application.",
+      "source_sha256": "02d6771d7d887c63e8d0b6c3e0e1b4f335f9729fd48573103f11f921b8fff772",
+      "source_path": "skills/twilio/twilio-verify-send-otp/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fe96b772240765bb997c3079461ba1dc7f68f1b6d97dbc6088e6222e185ee40": {
+      "description_zh": "使用Twilio ConversationRelay构建AI语音智能体，借WebSocket实现实时ASR、TTS及双向音频流，配置TwiML、消息类型、LLM、流式回复和语音供应商，适用于语音机器人、IVR替代及实时助手。",
+      "source": "Build AI-powered voice agents using Twilio ConversationRelay. Handles real-time speech recognition (ASR), text-to-speech (TTS), and bidirectional audio streaming via WebSocket. Covers TwiML setup, WebSocket message types, LLM integration, streaming responses, and voice provider configuration. Use this skill to build voice bots, IVR replacements, or real-time AI voice assistants on Twilio calls.",
+      "source_sha256": "9fe96b772240765bb997c3079461ba1dc7f68f1b6d97dbc6088e6222e185ee40",
+      "source_path": "skills/twilio/twilio-voice-conversation-relay/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7efe8ae870bf2ef1b713d500aa491db78da513e885cd5ed6833ce636b06ab29": {
+      "description_zh": "通过Twilio Programmable Voice REST API发起外呼，覆盖calls.create、答录机检测、会议式客服桥接、录音、状态跟踪及SIP Trunking，适用于外呼、销售拨号器和语音API查询。",
+      "source": "Make outbound phone calls via Twilio's Programmable Voice REST API. Covers the full voice platform: calls.create(), answering machine detection (AMD), conference-based agent bridging, call recording, status tracking, and SIP Trunking. Use this skill for outbound calls, sales dialers, or when asking what voice APIs are available.",
+      "source_sha256": "f7efe8ae870bf2ef1b713d500aa491db78da513e885cd5ed6833ce636b06ab29",
+      "source_path": "skills/twilio/twilio-voice-outbound-calls/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a4eaff522848276c726c956c4218a24ac1663b51302fd658304cac0b5f1bfb79": {
+      "description_zh": "用TwiML定义入站或出站通话行为，覆盖Say、Play、Gather、Dial、Record、Conference核心动词，Python和Node.js SDK生成及完整入站IVR示例。",
+      "source": "Build voice call logic using TwiML (Twilio Markup Language). Covers the core verbs (Say, Play, Gather, Dial, Record, Conference), generating TwiML with Python and Node.js SDKs, and a complete inbound call IVR example. Use this skill to define call behavior for inbound or outbound calls.",
+      "source_sha256": "a4eaff522848276c726c956c4218a24ac1663b51302fd658304cac0b5f1bfb79",
+      "source_path": "skills/twilio/twilio-voice-twiml/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6ec0855c5a453e427f2121eb4c82edd73126c4c09934a59f3782daba3994abed": {
+      "description_zh": "设计、保护并运行Twilio webhook端点，处理入站事件、状态回调、签名验证、重试与超时连接覆盖、本地开发隧道及生产加固，适用于消息、语音、Verify或Event Streams回调。",
+      "source": "Design, secure, and operate Twilio webhook endpoints. Covers inbound event handling, status callbacks, signature validation, connection overrides for retry and timeout tuning, local development tunneling, and production hardening. Use this skill whenever an agent needs to receive HTTP callbacks from Twilio for any product -- messaging, voice, verify, or event streams.",
+      "source_sha256": "6ec0855c5a453e427f2121eb4c82edd73126c4c09934a59f3782daba3994abed",
+      "source_path": "skills/twilio/twilio-webhook-architecture/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e94b79177110451156ecdf378ff892c2a8cfc4081eaa39532e2ecdf14457fbb": {
+      "description_zh": "通过Twilio Channels Senders API创建配置管理WhatsApp Business发件人，支持程序化注册、档案、webhook、生命周期状态及ISV流程，用于规模化生产发件人管理。",
+      "source": "Create, configure, and manage WhatsApp Business senders via Twilio's Channels Senders API. Covers programmatic sender registration, profile setup, webhook configuration, sender lifecycle statuses, and ISV flows. Use this skill to register and manage production WhatsApp senders at scale.",
+      "source_sha256": "3e94b79177110451156ecdf378ff892c2a8cfc4081eaa39532e2ecdf14457fbb",
+      "source_path": "skills/twilio/twilio-whatsapp-manage-senders/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57fdcd012752f6ea97697938bfdfabb85166636c408c464fedb92adfabae3f94": {
+      "description_zh": "深入说明WhatsApp的24小时服务窗口、自由格式与模板模式、测试沙箱、模板审批、生产发件人要求及专项错误处理，适用于首次接入或送达排查；实际发送另用统一发送技能。",
+      "source": "WhatsApp messaging deep-dive reference. Covers the 24-hour service window rules (free-form vs template mode), sandbox setup for testing, template approval workflow, production sender requirements, and WhatsApp-specific error handling. For sending WhatsApp messages, use twilio-send-message instead. Use this skill when setting up WhatsApp for the first time or debugging WhatsApp-specific delivery behavior.",
+      "source_sha256": "57fdcd012752f6ea97697938bfdfabb85166636c408c464fedb92adfabae3f94",
+      "source_path": "skills/twilio/twilio-whatsapp-send-message/SKILL.md",
+      "package_sha256": "373b74d1bc5bcbc06a07bf774ad8afc20d5ccdb2220ea2d2dd3564b62e0e4f74",
+      "source_package": "twilio-developer-kit-0.3.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3cd03d5101d1fe3b699622caba6168daa46755cc68cf29860a258115c6c3610b": {
+      "description_zh": "在构建AI功能前根据输入证据选择确定性工作流、判断点用模型的工作流、单次模型调用、带工具的单智能体或多智能体，生成偏向最简单可行方案的架构决策记录；也覆盖Agentforce的Flow、提示模板、Agent Script、主题动作及多智能体编排选择。",
+      "source": "Decides the architecture for an AI feature before it is built, whether the work should be a deterministic workflow, a workflow with a model at the judgment points, a single model call, a single agent with tools, or multi-agent. Use when someone is scoping or designing a new AI use case, asking whether it needs an agent, reviewing a PRD, ticket, or spec for an agent, or pushing back on a design that reaches for an agent where a workflow would do. Also covers Salesforce Agentforce designs, deciding whether a use case should be a Flow, a prompt template, Agent Script, an Agentforce topic with actions, or Multi-Agent Orchestration. Reads the design input, extracts the deciding signals with evidence, runs a deterministic verdict, and writes an architecture decision record that biases toward the simplest thing that works.",
+      "source_sha256": "3cd03d5101d1fe3b699622caba6168daa46755cc68cf29860a258115c6c3610b",
+      "source_path": "skills/design-gate/SKILL.md",
+      "package_sha256": "a73966a52a64d88d4f6ba5de9631866c56f33c8406800d424f4f2a6fc85b328d",
+      "source_package": "two-gates-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f05df697ef7ea91c81464e0e8d3901c3f13653d09fef44580652f1d43615dc3": {
+      "description_zh": "把生产或测试中的AI智能体故障、复盘、轨迹、缺陷报告及错误回答重建分类，写成供应商中立的黄金评估案例和便携回归测试，并用确定性脚本验证，帮助防止同类故障复发。",
+      "source": "Turns a production AI agent incident into a golden eval case, a portable regression test that makes the failure unrepeatable. Use when an agent did something wrong in production or testing, when someone has a postmortem, trace, bug report, or a paragraph describing an agent failure, when someone asks how to stop an agent failure from happening again, or when converting incidents, escalations, or wrong answers into evals, test cases, or a regression suite. Reconstructs the incident, classifies the failure against an agent-specific taxonomy, writes a vendor-neutral eval case, and validates it with a deterministic script.",
+      "source_sha256": "8f05df697ef7ea91c81464e0e8d3901c3f13653d09fef44580652f1d43615dc3",
+      "source_path": "skills/incident-to-eval/SKILL.md",
+      "package_sha256": "a73966a52a64d88d4f6ba5de9631866c56f33c8406800d424f4f2a6fc85b328d",
+      "source_package": "two-gates-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "646d8630dfb06b1fb8f88c2057798349e90e7ced5013315f3ed0e55aad5e139a": {
+      "description_zh": "从评估、成本、可观测性、护栏、人工监督、可靠性和治理审查AI智能体上线准备，生成基于证据的评分卡及按优先级排序的缺口，适用于发布审查和原型加固。",
+      "source": "Reviews an AI agent for production readiness across evaluation, cost, observability, guardrails, human oversight, reliability, and governance. Use when someone is preparing an agent for production or a go-live, asking whether an agent is ready to ship, reviewing an agent's design, prompt, tools, or deployment, or hardening a working prototype into a dependable system. Produces an evidence-based scorecard and a prioritized list of the gaps to close.",
+      "source_sha256": "646d8630dfb06b1fb8f88c2057798349e90e7ced5013315f3ed0e55aad5e139a",
+      "source_path": "skills/ship-gate/SKILL.md",
+      "package_sha256": "a73966a52a64d88d4f6ba5de9631866c56f33c8406800d424f4f2a6fc85b328d",
+      "source_package": "two-gates-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfbf294fdbe73d8f4acb83f1fd30475d313965d72e6b438d71cec21c6ae4e504": {
+      "description_zh": "在本地构建、部署和测试typemux-cc Claude Code插件，覆盖cargo构建、缓存清理、市场注册、安装及LSP验证完整周期。",
+      "source": "Builds, deploys, and tests the typemux-cc Claude Code plugin locally. Handles the full cycle from cargo build through cache clearing, marketplace registration, plugin install, and LSP verification. Triggers on: 'plugin test', 'test plugin', 'plugin cycle', 'deploy and test', 'try new build', 'test the plugin'.",
+      "source_sha256": "dfbf294fdbe73d8f4acb83f1fd30475d313965d72e6b438d71cec21c6ae4e504",
+      "source_path": ".claude/skills/plugin-test-cycle/SKILL.md",
+      "package_sha256": "2b77b45d57b876b5f6a15045e1cadff3985c7b72f6023431b6d8e7353d9b2d07",
+      "source_package": "typemux-cc-0.2.18-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f53c57667e3d2778d4f10fdc41d177e2df01e54b8788bdd58831710d2bdf8c8": {
+      "description_zh": "通过功能分支及PR准备版本升级，合并到main后自动打标签并发布版本，适用于typemux-cc发布或版本递增。",
+      "source": "Prepare a version bump through a feature branch and pull request; merging to main auto-tags and publishes the release. Triggers on 'publish', 'release', 'bump version'.",
+      "source_sha256": "1f53c57667e3d2778d4f10fdc41d177e2df01e54b8788bdd58831710d2bdf8c8",
+      "source_path": ".claude/skills/publish/SKILL.md",
+      "package_sha256": "2b77b45d57b876b5f6a15045e1cadff3985c7b72f6023431b6d8e7353d9b2d07",
+      "source_package": "typemux-cc-0.2.18-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08d3f78d01382edca80e728902f8dbb856ab74dabe87d87a9c17930770806813": {
+      "description_zh": "利用Ubersuggest AI Search Visibility数据报告品牌在ChatGPT、Perplexity、Google AI Overviews和Claude回答中的可见性、提及份额、情绪及被推荐竞争者，支持AEO/GEO分析。",
+      "source": "Report how visible a brand is inside AI answers (ChatGPT, Perplexity, Google AI Overviews, Claude) using Ubersuggest's AI Search Visibility data. Use when the user asks whether ChatGPT or other AI tools mention their brand, about AI search visibility, share of voice in AI answers, AEO or GEO, brand sentiment in LLM responses, or which competitors get recommended instead of them.",
+      "source_sha256": "08d3f78d01382edca80e728902f8dbb856ab74dabe87d87a9c17930770806813",
+      "source_path": "skills/ai-visibility/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f04a7ec3994b224447385b52db8b0e5e06372b25305266ae262b16b93491dc55": {
+      "description_zh": "分析域名及自然搜索竞争者，报告关键词和内容缺口、竞争排名及流量页面，支持域名对比、概览和流量估计。",
+      "source": "Analyse a domain and its organic competitors, then report the keyword and content gaps. Use when the user asks who their competitors are, why a competitor outranks them, what keywords a competitor ranks for, which pages drive a competitor's traffic, how their domain compares to another, or asks for a domain overview or traffic estimate for any site.",
+      "source_sha256": "f04a7ec3994b224447385b52db8b0e5e06372b25305266ae262b16b93491dc55",
+      "source_path": "skills/competitor-analysis/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "607f165a6e341fc102258b3ed1168d6b6482ac7ce97ca89dc2f5e54cd4505208": {
+      "description_zh": "分析目标关键词当前排名页面及原因，形成有数据依据的内容简报，建议文章结构、标题主题、长度和竞争改进方向或内容创意。",
+      "source": "Build a data-backed content brief for a target keyword by analysing who currently ranks and why. Use when the user asks what to write about a keyword, how to outline or structure an article, what headings or topics to cover, how long a post should be, how to beat the pages currently ranking, or asks for content ideas for a topic.",
+      "source_sha256": "607f165a6e341fc102258b3ed1168d6b6482ac7ce97ca89dc2f5e54cd4505208",
+      "source_path": "skills/content-brief/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f49623b07057c4c48bca2bb8e2b50b23ac4ec19f29956585e6eab55e65bce74": {
+      "description_zh": "把业务描述转成50个面向客户的内容机会，整理问题群、客户问题及回答它们的文章或视频，形成内容需求地图，用于内容计划、策略、编辑日历和选词前需求探索。",
+      "source": "Turn a business description into 50 customer-driven content opportunities — a Content Demand Map of problem clusters, the questions customers ask, and the articles or videos that answer them. Use when the user does not know what to write about, asks for a content plan, content strategy, editorial calendar, blog or video ideas for their business, or wants to know what their customers are searching for before committing to keywords.",
+      "source_sha256": "6f49623b07057c4c48bca2bb8e2b50b23ac4ec19f29956585e6eab55e65bce74",
+      "source_path": "skills/content-demand-finder/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "978f8800c30d8656f7676cd4dac1cfd9560e437246fd7b42711d9c96f0adeb2d": {
+      "description_zh": "针对主题、细分领域、产品或业务进行关键词研究，返回分群且按优先级排序的列表，覆盖搜索量、难度、长尾及低竞争词。",
+      "source": "Run a full keyword research pass for a topic, niche, product or business and return a prioritised keyword list grouped into clusters. Use when the user asks to find keywords, do keyword research, discover what people search for, check search volume or difficulty for a topic, or find long-tail or low-competition keywords.",
+      "source_sha256": "978f8800c30d8656f7676cd4dac1cfd9560e437246fd7b42711d9c96f0adeb2d",
+      "source_path": "skills/keyword-research/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d25d68614a93e2850b2de2081639175f756887ba9438c57382abcf0b6c0c45af": {
+      "description_zh": "首次为网站配置Ubersuggest，创建项目、描述业务、选择竞争者、AI回答跟踪主题和提示以及排名关键词，适用于新用户、添加域名、排名或品牌监控。",
+      "source": "Set a website up in Ubersuggest for the first time — create the project, describe the business, pick competitors, choose the topics and prompts tracked in AI answers, and select keywords to rank-track. Use when the user has no project yet, says they just signed up, asks how to get started, wants to track a site, add a domain, set up rank tracking, or start monitoring their brand in ChatGPT and other AI assistants.",
+      "source_sha256": "d25d68614a93e2850b2de2081639175f756887ba9438c57382abcf0b6c0c45af",
+      "source_path": "skills/project-setup/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "920fc2a3f3b51e1d3c9aa2fe41379133ef36d112b7dcdd1cd95110da7ebd09a9": {
+      "description_zh": "检查网站并用通俗语言确定下一步SEO动作及优先顺序，适用于不知道从哪开始、无流量、网站质量疑问或只提供域名的用户。",
+      "source": "Look at a website and decide what its owner should do next about SEO, in plain language, without making them choose. Use when the user does not know where to start, asks what is wrong with their site, whether their SEO is any good, why they get no traffic, what to do first, or hands over a domain with no specific question. Also the right entry point for anyone who does not know SEO terminology.",
+      "source_sha256": "920fc2a3f3b51e1d3c9aa2fe41379133ef36d112b7dcdd1cd95110da7ebd09a9",
+      "source_path": "skills/seo-action-plan/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4aea2d157616d539c6315a7ddf335be2cf75c0fb85ec76fc89a8d24ec0ce82eb": {
+      "description_zh": "提供SEO基础知识并把用户目标映射到Ubersuggest MCP工具，覆盖关键词、搜索量、排名、自然流量、竞争、外链、域名权威、网站健康、Core Web Vitals、内容及AI品牌可见性，加载认证、地区、配额和积分成本共同规则。",
+      "source": "Core SEO know-how and the map from a user's goal to the right Ubersuggest MCP tool. Use whenever the user asks anything about SEO, keywords, search volume, rankings, organic traffic, competitors, backlinks, domain authority, site health, Core Web Vitals, content strategy, or brand visibility in AI answers (ChatGPT, Perplexity, AI Overviews). Also use before any other ubersuggest skill, to load the shared rules on auth, locations, quotas and credit costs.",
+      "source_sha256": "4aea2d157616d539c6315a7ddf335be2cf75c0fb85ec76fc89a8d24ec0ce82eb",
+      "source_path": "skills/seo-foundations/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "207a3563cbee7516f4da9ed586c65396df6ef8264e6803d61faf2eec71dd4e3c": {
+      "description_zh": "爬取网站检查技术SEO，结合Core Web Vitals报告优先修复项，涵盖速度、断链、缺失标题或H1、重复内容、PageSpeed和健康评分。",
+      "source": "Crawl a site for technical SEO problems and report prioritised fixes with Core Web Vitals. Use when the user asks for a site audit, a technical SEO check, why their site is slow, whether their site has SEO errors, about broken links, missing titles or H1s, duplicate content, Core Web Vitals, PageSpeed or a health score.",
+      "source_sha256": "207a3563cbee7516f4da9ed586c65396df6ef8264e6803d61faf2eec71dd4e3c",
+      "source_path": "skills/site-audit/SKILL.md",
+      "package_sha256": "e316a163d1683116adfa3ae70a3d3129ee122fa1103aea264466eaa48d4e28e1",
+      "source_package": "Ubersuggest-0.2.1-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eff7a1613b28f9ed6d593764fe75a3aaef234affc07c7a6cd5d6b829e1ad742b": {
+      "description_zh": "在UI Consistency仓库运行/uic-auditing时，按技能编写和Claude提示指导审查该插件技能及文档，以表格报告发现和拟议问题。",
+      "source": "Audits this plugin's skills and documents against the current guidance for writing skills and for prompting the current Claude models, and reports what to change as a table of findings and proposed issues. Use when somebody runs /uic-auditing in this repository.",
+      "source_sha256": "eff7a1613b28f9ed6d593764fe75a3aaef234affc07c7a6cd5d6b829e1ad742b",
+      "source_path": ".claude/skills/uic-auditing/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8d28d954f5615707feeab874738aeafa5bfaba107f91153132deea8d2c3adc4": {
+      "description_zh": "按Anthropic技能编写实践撰写编辑UI Consistency插件的技能及文档，随后修复编辑遗留的过时引用和矛盾，适用于该仓库技能、USING、README、CLAUDE、AGENTS、CONTRIBUTING、docs及rules修改。",
+      "source": "Writes and edits this plugin's skills and documents to Anthropic's skill authoring practices, then finds and fixes the stale references and contradictions the edit left. Use when changing a skill, USING.md, README.md, .claude/CLAUDE.md, AGENTS.md, CONTRIBUTING.md, docs/ or .claude/rules/ in this repository.",
+      "source_sha256": "d8d28d954f5615707feeab874738aeafa5bfaba107f91153132deea8d2c3adc4",
+      "source_path": ".claude/skills/uic-writing/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09d6c48501d3f1c644a4fa4d1ebb76011cb76c918465500e39dcb3f01ba4234d": {
+      "description_zh": "针对用户可见页面按指定无障碍标准检查对比度、焦点、键盘可达、标签、文本替代及目标尺寸，评估能否阅读和无鼠标使用。",
+      "source": "For what the end user sees — checks whether it can be read and used without a mouse (contrast, focus, keyboard reach, labels, text alternatives, target size) against a standard. Use when asked whether a page meets an accessibility standard, or when the project states an accessibility requirement.",
+      "source_sha256": "09d6c48501d3f1c644a4fa4d1ebb76011cb76c918465500e39dcb3f01ba4234d",
+      "source_path": "skills/accessibility/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acba55bf38c314f741a93c90414077ce7c11abcff4bc8555c2739d81a55c18a2": {
+      "description_zh": "为既有单页的一个区域准备修改，只读取项目其他页面对应位置并编写供实现使用的检查表，适用于标签、数值、字段、按钮或控件行为调整，不涉及新页或跨页改动。",
+      "source": "For what the end user sees — prepares a change to one region of one existing page. It reads only that position across the project's other pages and writes the checklist for it, which implementing builds from. Use when changing a label, a value, a field, a button or what a control does on one page, when no new page and no change across pages is asked for.",
+      "source_sha256": "acba55bf38c314f741a93c90414077ce7c11abcff4bc8555c2739d81a55c18a2",
+      "source_path": "skills/adjusting/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7100185263acb310357bee29c08b74085ce96ccb859695e92e4eed6bd67d147e": {
+      "description_zh": "统计项目页面的表现和文案写法，区分共同约定与单页习惯，供记录其他页面用法数量或复核检查表使用。",
+      "source": "For what the end user sees — counts what a project's pages do, so a convention is told apart from one page's habit. Use when a count of how the other pages write something is about to be recorded, or when a checker recounts a line of a checklist.",
+      "source_sha256": "7100185263acb310357bee29c08b74085ce96ccb859695e92e4eed6bd67d147e",
+      "source_path": "skills/conventions/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9db1cf1d07b16885a579aed869a48abf12784f79682bbf60a218eddaae296e3": {
+      "description_zh": "在请求、指定页面、共享组件及其他页面写法不一致时，按决策次序解决用户可见页面规范冲突，确定需要人工决定的事项。",
+      "source": "For what the end user sees — the order that settles how a page is written when the project disagrees with itself, and what waits on a person. Use when the request, a named page, a shared piece and the other pages do not all agree on how a page is written, or before anything is put to a person.",
+      "source_sha256": "f9db1cf1d07b16885a579aed869a48abf12784f79682bbf60a218eddaae296e3",
+      "source_path": "skills/decisions/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "794cd74f7da38b9c36a2f66dbfdd0eae19e671dd34ba5312f7271f2d9339464f": {
+      "description_zh": "读取已有页面设计；没有可参照近似页面时，在编码前与用户确认由项目自身组件组成的页面结构树，仅在被要求时绘图，适用于设计稿、图片、屏幕描述或预览需求。",
+      "source": "For what the end user sees — reads the design for a page where there is one, and where there is none agrees the page's shape with the person, as a tree of the project's own pieces, before any code; draws it only when asked. Use when a request comes with a design, a picture or a described screen, when a new page has no page near enough to follow, or when somebody wants to see how a page will look before it is built.",
+      "source_sha256": "794cd74f7da38b9c36a2f66dbfdd0eae19e671dd34ba5312f7271f2d9339464f",
+      "source_path": "skills/design/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c333ed4cac0c96d6948bc35f7fe5ebfca14214aa9a030fa6d5012961017b994": {
+      "description_zh": "在写UI代码前查找项目同类页面复用的组件、主题值、验证及错误处理模式并编成检查表，适用于用户可见页面、屏幕、表单或组件的新建修改，以及分派首项UI任务前。",
+      "source": "For what the end user sees — finds how this project already builds that kind of page (the components its pages reuse, theme values, validation, error handling) and writes it as a checklist before any UI code. Use when anything the end user sees is built or changed — a page, screen, form or component — whether or not the request names a page to follow, and before a plan's first task that changes what the user sees is handed to anyone, whichever process wrote the plan.",
+      "source_sha256": "6c333ed4cac0c96d6948bc35f7fe5ebfca14214aa9a030fa6d5012961017b994",
+      "source_path": "skills/finding-patterns/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f0da3e07d9e5dbe79ac915b09ac9b2508613206cb59b7a83bde4ffbc23fdf04": {
+      "description_zh": "按各页面检查表实现或修改UI，每个任务处理一页，适用于逐页执行计划、多页重构或单页小修改。",
+      "source": "For what the end user sees — builds each page from its checklist, one page per task. Use when writing or changing UI and a checklist or UI plan exists, whether executing that plan page by page, refactoring a set of pages, or making a small change to one page.",
+      "source_sha256": "1f0da3e07d9e5dbe79ac915b09ac9b2508613206cb59b7a83bde4ffbc23fdf04",
+      "source_path": "skills/implementing/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e7dcdfd3960814801d0d695aa7a6ed299c247253991e598a6bd758d4fdf8d3b": {
+      "description_zh": "把各页面检查表转成每页一个可检查任务的UI计划，适用于跨步骤或跨页面功能、多页重构及全页共同修改。",
+      "source": "For what the end user sees — turns each page's checklist into a plan of one checkable task per page. Use when UI work spans several steps or pages (a new feature, a refactor of many pages, one change applied to every page), including when another planning skill is about to write that plan.",
+      "source_sha256": "4e7dcdfd3960814801d0d695aa7a6ed299c247253991e598a6bd758d4fdf8d3b",
+      "source_path": "skills/planning/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c7e40cfee0bea2f08742ed09a8b11f4247fcbcfce49d1db2ba9cb8f5c30e5044": {
+      "description_zh": "梳理项目用户可见界面的主题、间距、字体及各语义角色对应元素，用于记录、编写或检查数值和元素，以及询问主题或尺度。",
+      "source": "For what the end user sees — how this project sets its values and elements — its theme, spacing, typography, and the element each role comes out as. Use when a phase needs a value or an element recorded, written or checked, or when somebody asks what the project's theme or scale is.",
+      "source_sha256": "c7e40cfee0bea2f08742ed09a8b11f4247fcbcfce49d1db2ba9cb8f5c30e5044",
+      "source_path": "skills/values/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bfdd2c76191df6af1c417b3a760431d9342a28063ced777816fd869c372808b1": {
+      "description_zh": "由独立智能体对照检查表和项目其他页面核验已写UI，报告不一致，适用于完成或开PR前及页面外观行为一致性检查。",
+      "source": "For what the end user sees — a separate agent checks written pages against their checklist and the rest of the project, and reports what differs. Use when UI has been written, before calling it done or opening a PR, or when asked whether pages match (\"does this match\", \"did I miss a page\", a page that looks or behaves unlike its neighbours).",
+      "source_sha256": "bfdd2c76191df6af1c417b3a760431d9342a28063ced777816fd869c372808b1",
+      "source_path": "skills/verifying/SKILL.md",
+      "package_sha256": "ee40fd96722ccc96c26163b3a06c1f18c402a755a5b0890a130c95afc28a17bc",
+      "source_package": "UI Consistency-1.0.1-v4.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88d02792bde2e1db095a877e7a4eb4bf8192f6b1f6ee59858adb95503f4a8249": {
+      "description_zh": "把可设告警的Ultralayer端点变成实时监控，通过邮件、Telegram或webhook推送新结果，支持创建、查询、执行、启用、停用及删除告警。",
+      "source": "Turn any alertable Ultralayer endpoint into a realtime monitor that emails, telegrams, or webhooks new results. Operations are create_alert, get_alerts, execute_alert, activate_alert, deactivate_alert, and delete_alert.",
+      "source_sha256": "88d02792bde2e1db095a877e7a4eb4bf8192f6b1f6ee59858adb95503f4a8249",
+      "source_path": "skills/alerts/SKILL.md",
+      "package_sha256": "806ab4c6772814e603196534c45de8e23e20661c68057b5d690f8ff9ee6e0058",
+      "source_package": "Ultralayer-3.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9bca202303ef72272c70f15b4c020c3d9bf1aeee688d8ec6e1553860ad71c3e": {
+      "description_zh": "用list_changes比较本次与上次财报新闻稿措辞，识别公司新增、停止或改变的表述。",
+      "source": "Wording changes between one earnings press release and the last — what the company started saying, stopped saying, or now says differently. Operation is list_changes.",
+      "source_sha256": "b9bca202303ef72272c70f15b4c020c3d9bf1aeee688d8ec6e1553860ad71c3e",
+      "source_path": "skills/changes/SKILL.md",
+      "package_sha256": "806ab4c6772814e603196534c45de8e23e20661c68057b5d690f8ff9ee6e0058",
+      "source_package": "Ultralayer-3.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce9eff715b0dd3d7552dcbc032c75beffc541fcf1708c884d1000a04444e725f": {
+      "description_zh": "查询带影响评分与来源引用的市场进展，并将其聚合为持续性事件，支持进展搜索、详情、事件搜索及事件关联进展获取。",
+      "source": "Structured market narratives — impact-scored, source-cited developments clustered into longer-lived events. Operations are search_developments, retrieve_development, search_events, and retrieve_event_developments.",
+      "source_sha256": "ce9eff715b0dd3d7552dcbc032c75beffc541fcf1708c884d1000a04444e725f",
+      "source_path": "skills/developments-and-events/SKILL.md",
+      "package_sha256": "806ab4c6772814e603196534c45de8e23e20661c68057b5d690f8ff9ee6e0058",
+      "source_package": "Ultralayer-3.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31290fd73bfa4dfe743566cb0f05a48835d98b7eb7af6a75deea850b9adb8692": {
+      "description_zh": "用retrieve_entity获取单个实体的实时背景包，包含身份、近期高相关新闻、14天情绪和主要共同提及对象。",
+      "source": "Realtime context package for one entity — identity, recent high-relevance headlines, 14-day sentiment, and top co-mentions. Operation is retrieve_entity.",
+      "source_sha256": "31290fd73bfa4dfe743566cb0f05a48835d98b7eb7af6a75deea850b9adb8692",
+      "source_path": "skills/entity-retrieval/SKILL.md",
+      "package_sha256": "806ab4c6772814e603196534c45de8e23e20661c68057b5d690f8ff9ee6e0058",
+      "source_package": "Ultralayer-3.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f6445cb48804f3cf369fcdd2804e443e3029a4dfe614ca637c28410339d20e34": {
+      "description_zh": "查询公司官方业绩展望、修订情况、与已披露实际结果的比较及汇总评分，支持list_guidance、list_guidance_outcomes和guidance_bias。",
+      "source": "Official company outlooks, how they revised, how they compared to the reported actual, and the aggregate score of that. Operations are list_guidance, list_guidance_outcomes, and guidance_bias.",
+      "source_sha256": "f6445cb48804f3cf369fcdd2804e443e3029a4dfe614ca637c28410339d20e34",
+      "source_path": "skills/guidance/SKILL.md",
+      "package_sha256": "806ab4c6772814e603196534c45de8e23e20661c68057b5d690f8ff9ee6e0058",
+      "source_package": "Ultralayer-3.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7213b896007a2d864d3ce473be79e918983ccffcbd61c263c53be616e13d3d9a": {
+      "description_zh": "用market_signal获取行业、国家或资产类别的每日市场信号条目。",
+      "source": "Daily market signal bars for a sector, country, or asset class. Operation is market_signal.",
+      "source_sha256": "7213b896007a2d864d3ce473be79e918983ccffcbd61c263c53be616e13d3d9a",
+      "source_path": "skills/signals/SKILL.md",
+      "package_sha256": "806ab4c6772814e603196534c45de8e23e20661c68057b5d690f8ff9ee6e0058",
+      "source_package": "Ultralayer-3.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fc0569ac5f6b1ad2662343244ca368dcddb9c29c0a5c6326659c444e6f6fc1a": {
+      "description_zh": "将市场情境映射到按次序排列的上市公司受益及受损对象，返回经核验代码、有正负方向的影响分数、引用原话及因素比较矩阵。",
+      "source": "Map a market situation to ranked public-company winners and losers with verified tickers, signed impact scores, cited quotes, and a factor comparison matrix. Operation is identify_stakeholders.",
+      "source_sha256": "9fc0569ac5f6b1ad2662343244ca368dcddb9c29c0a5c6326659c444e6f6fc1a",
+      "source_path": "skills/stakeholder-identification/SKILL.md",
+      "package_sha256": "806ab4c6772814e603196534c45de8e23e20661c68057b5d690f8ff9ee6e0058",
+      "source_package": "Ultralayer-3.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "197ce46dbd9792fe563301af226f6cb33576ffbf773d1bba980aecd58b80ff3a": {
+      "description_zh": "获取可实时使用及回测的财经新闻流，按新颖性聚类标题，附实体提及、行业与资产标签和可信度/重要性评分，支持list_wire和wire_storyline。",
+      "source": "Realtime and backtestable financial news wire — novelty-clustered headlines with entity mentions, sector and asset tags, and trust/importance scores. Operations are list_wire and wire_storyline.",
+      "source_sha256": "197ce46dbd9792fe563301af226f6cb33576ffbf773d1bba980aecd58b80ff3a",
+      "source_path": "skills/wire/SKILL.md",
+      "package_sha256": "806ab4c6772814e603196534c45de8e23e20661c68057b5d690f8ff9ee6e0058",
+      "source_package": "Ultralayer-3.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0476a5c19a45ede9be95f0ec1d6ff5a890e9871a0f8c31b3fca15bc3a3f0534b": {
+      "description_zh": "用于需自主多步推理及工具调用、且预先不知道步骤数量的任务。",
+      "source": "Use when a task requires autonomous multi-step reasoning with tool calls, where the number of steps is not known in advance.",
+      "source_sha256": "0476a5c19a45ede9be95f0ec1d6ff5a890e9871a0f8c31b3fca15bc3a3f0534b",
+      "source_path": "skills/agent-loop/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b62c556c39628a0eeda66063e8174c29606d16b57d1fdef14cbadbae59961234": {
+      "description_zh": "用于Angular前端开发，覆盖组件、服务、依赖注入、signals、独立组件及测试。",
+      "source": "Use when building frontend applications with Angular — covers components, services, dependency injection, signals, standalone components, and testing.",
+      "source_sha256": "b62c556c39628a0eeda66063e8174c29606d16b57d1fdef14cbadbae59961234",
+      "source_path": "skills/angular-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2386f4dcac138b4e815df26764dbbe7bb1da95e0749a960093b7a7f976452252": {
+      "description_zh": "用于REST API设计，确定URL结构、错误响应、分页及版本管理。",
+      "source": "Use when designing REST APIs, choosing URL structures, handling errors in responses, implementing pagination, or planning API versioning.",
+      "source_sha256": "2386f4dcac138b4e815df26764dbbe7bb1da95e0749a960093b7a7f976452252",
+      "source_path": "skills/api-design/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ff9ba407cb4635faa268084f2b597c63ed3532f95637d09ad5c6896a27c7f53": {
+      "description_zh": "用于系统架构决策，选择单体或微服务、架构模式及系统边界。",
+      "source": "Use when making system-level architecture decisions, choosing between monolith and microservices, selecting architectural patterns, or designing system boundaries.",
+      "source_sha256": "7ff9ba407cb4635faa268084f2b597c63ed3532f95637d09ad5c6896a27c7f53",
+      "source_path": "skills/architecture/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe73667644fc949e822c79ae69be90de1ee0edfd124dc31d4261a56335f69289": {
+      "description_zh": "用于实现认证、授权及安全控制，覆盖身份、访问管理和常见漏洞防护。",
+      "source": "Use when implementing authentication, authorization, or security controls — covering identity, access, and defense against common vulnerabilities.",
+      "source_sha256": "fe73667644fc949e822c79ae69be90de1ee0edfd124dc31d4261a56335f69289",
+      "source_path": "skills/auth-security/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7482510f4ce9d6454affdab64c17b025a82d3002b911147b0f9c090fc3a615a7": {
+      "description_zh": "用于设计请求响应周期之外的任务队列、异步工作进程或事件驱动处理。",
+      "source": "Use when designing task queues, async workers, or event-driven processing that runs outside the request-response cycle.",
+      "source_sha256": "7482510f4ce9d6454affdab64c17b025a82d3002b911147b0f9c090fc3a615a7",
+      "source_path": "skills/background-jobs/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "491c242efa73e9b8e4fe8f9cfc6e40c1778c5a40b5467a0f33760dd08027c2fd": {
+      "description_zh": "帮助AI智能体操作网站，导航页面、填写表单、点击按钮、截屏、提取数据或自动化浏览器任务。",
+      "source": "Use when an AI agent needs to interact with websites — navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, or automating any browser task",
+      "source_sha256": "491c242efa73e9b8e4fe8f9cfc6e40c1778c5a40b5467a0f33760dd08027c2fd",
+      "source_path": "skills/browser-automation/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2190edf8f9057e0f5266fb43ba276938cd2e29b0c75c7767dfe530dbe059c3c5": {
+      "description_zh": "用于编写或审查C/C++代码，覆盖内存管理、RAII、智能指针、const正确性、CMake、sanitizers及常见未定义行为。",
+      "source": "Use when writing or reviewing C/C++ code. Covers memory management, RAII, smart pointers, const correctness, CMake, sanitizers, and common undefined behavior pitfalls.",
+      "source_sha256": "2190edf8f9057e0f5266fb43ba276938cd2e29b0c75c7767dfe530dbe059c3c5",
+      "source_path": "skills/c-cpp-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8cc2ed73b89996334b9a096aee8ceb8881a0ee3d162d5986c6fa0dccda573f7c": {
+      "description_zh": "用于系统缓存接入、策略选择、失效逻辑设计及缓存相关缺陷诊断。",
+      "source": "Use when adding caching to a system, choosing cache strategies, designing invalidation logic, or diagnosing cache-related bugs.",
+      "source_sha256": "8cc2ed73b89996334b9a096aee8ceb8881a0ee3d162d5986c6fa0dccda573f7c",
+      "source_path": "skills/caching/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3d0d0c8c9600f89ea5e50f9fc926efe9808bdce1195161df97bab1509311f68": {
+      "description_zh": "用于设计持续集成与部署流水线，覆盖阶段、部署策略、回滚及流水线性能。",
+      "source": "Use when designing continuous integration and deployment pipelines — covering stages, deployment strategies, rollback, and pipeline performance.",
+      "source_sha256": "f3d0d0c8c9600f89ea5e50f9fc926efe9808bdce1195161df97bab1509311f68",
+      "source_path": "skills/ci-cd/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7205aed90bc7d71272f764d03801d1ec445ef77e9f040832f96d7f1446daa394": {
+      "description_zh": "用于编写审查C#代码，覆盖语言惯用法、工具、项目布局及测试约定；SOLID、TDD和整洁架构等通用原则另见相关分类技能。",
+      "source": "Use when writing or reviewing C# code. Covers C#-specific idioms, tooling, project layout, and testing conventions. For universal principles (SOLID, TDD, clean architecture) see the relevant category skills.",
+      "source_sha256": "7205aed90bc7d71272f764d03801d1ec445ef77e9f040832f96d7f1446daa394",
+      "source_path": "skills/csharp-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee308689bf048951345397c47447da09416367e72ae45c11da9e20d5c9956feb": {
+      "description_zh": "用于步骤间有依赖、部分步骤可并行且涉及共享状态或条件路由的多步流程。",
+      "source": "Use when a multi-step process has dependencies between steps, some of which can run in parallel, with shared state and conditional routing.",
+      "source_sha256": "ee308689bf048951345397c47447da09416367e72ae45c11da9e20d5c9956feb",
+      "source_path": "skills/dag-workflows/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
