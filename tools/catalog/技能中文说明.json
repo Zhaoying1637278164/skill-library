@@ -57769,6 +57769,1086 @@
       "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
       "source_package": "Propper-1.1.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eff565f308b0207678ff27a5eb33c72968ba3518fd3e232fb2d07668ba296c7a": {
+      "description_zh": "审计DocuSign模板或信封导出，明确可直接迁移、需改变结构和需重建的部分，再导入；适用于模板JSON、平台迁移评估及已有信封和字段搬迁。",
+      "source": "Audit a DocuSign template or envelope export and report exactly what carries over, what changes shape, and what needs rebuilding — then import it. Use when someone has DocuSign template JSON, is evaluating a move off DocuSign, asks what their templates would look like elsewhere, or wants existing envelopes and tabs brought across.",
+      "source_sha256": "eff565f308b0207678ff27a5eb33c72968ba3518fd3e232fb2d07668ba296c7a",
+      "source_path": "skills/migrate-from-docusign/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48f684f93c854ed73fb78f36fcc40b831217c2200210688fc4cb44e4a69e08f1": {
+      "description_zh": "确定文档签名、姓名首字母、日期和姓名字段位置，生成准确定位的标注，适用于PDF/DOCX签署区无可填写字段、错位或将签名线转为锚点或坐标字段。",
+      "source": "Work out where signature, initial, date and name fields belong on a document and emit correctly positioned annotations for them. Use when a PDF or DOCX has signature blocks but no fillable fields, when fields land in the wrong place, when a signer has nothing to sign, or when converting signature lines into anchor-based or coordinate-based tabs.",
+      "source_sha256": "48f684f93c854ed73fb78f36fcc40b831217c2200210688fc4cb44e4a69e08f1",
+      "source_path": "skills/place-signature-fields/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b19aa532c50c68adf09cb63148404fbca0e8ce3c7e68f91b25ff3f8f19393172": {
+      "description_zh": "作为Propper协议任务基础，处理认证、工具选择、协议状态及权限范围错误；用于创建、发送、跟踪、作废或导入前准备，以及认证、scope或状态排障。",
+      "source": "Foundation for every Propper agreement task — authenticate, route to the right tool, read the agreement status model, and triage scope and permission errors. Load this before creating, sending, tracking, voiding or importing anything in Propper, and whenever a Propper tool returns an authentication, scope or state error.",
+      "source_sha256": "b19aa532c50c68adf09cb63148404fbca0e8ce3c7e68f91b25ff3f8f19393172",
+      "source_path": "skills/propper/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92e58675f3cf5140c37e69e020f92a02f56ba4d9a0b9c5ce4b0b926afa5610e1": {
+      "description_zh": "端到端准备并发送电子签署文件，从本地PDF/DOCX、模板或生成内容出发，确认签署人及顺序、布置字段并发送，适用于对外签署及审批签署流程。",
+      "source": "Send a document out for electronic signature end to end — take a PDF or DOCX from disk, a template or generated content, confirm the signers and signing order, place the signature fields, and dispatch it. Use for any request to get something signed, sent for signature, out to a counterparty, or routed for approval and signature.",
+      "source_sha256": "92e58675f3cf5140c37e69e020f92a02f56ba4d9a0b9c5ce4b0b926afa5610e1",
+      "source_path": "skills/send-for-signature/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "715a52c54cca7c7faae0721c0eb424f99a94ecd8da33b5e02acac69994d2520d": {
+      "description_zh": "发送签署前检查合同是否准备完整，发现未填空白、占位符、当事人名称不一致、缺失附件或签署区，以及错误或过期日期。",
+      "source": "Pre-flight a contract or agreement before anyone signs it — find unfilled blanks and placeholders, inconsistent party and entity names, missing or unattached exhibits, absent signature blocks, and dates that are wrong or stale. Use before sending a document for signature, when asked to check or proof a contract, or when a document is about to go to a counterparty.",
+      "source_sha256": "715a52c54cca7c7faae0721c0eb424f99a94ecd8da33b5e02acac69994d2520d",
+      "source_path": "skills/signature-ready-check/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76051823689cba67028310b6bb6954ddc1e2ac4393d2602f58f48e71765a4dfd": {
+      "description_zh": "查询协议进度、已签署者、阻塞方及待办，支持催办、取消或取回已完成副本，适用于已发送协议的状态盘点和下载。",
+      "source": "Answer where an agreement stands and what to do about it — who has signed, who is holding it up, what is still outstanding across everything in flight, and how to cancel or retrieve a completed copy. Use when someone asks whether a document came back, who has not signed yet, what is waiting on a counterparty, for a sweep of open agreements, or to chase, cancel or download something already sent.",
+      "source_sha256": "76051823689cba67028310b6bb6954ddc1e2ac4393d2602f58f48e71765a4dfd",
+      "source_path": "skills/track-agreements/SKILL.md",
+      "package_sha256": "98599f53b5a5acd333bd5d25ceb20e34ba0e45711ad78f00c9b7425a925d477e",
+      "source_package": "Propper-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e006a9f407fe044067c82742e9656aeec5bed89800c9e152b7bfb40309d92184": {
+      "description_zh": "为MCP服务逐工具配置安全策略，阻止危险工具、限制昂贵调用频率，或要求敏感操作先经人工审批。",
+      "source": "Wrap an MCP server with per-tool security policies. Use when the user wants to block dangerous tools, rate-limit expensive ones, or require human approval for sensitive operations.",
+      "source_sha256": "e006a9f407fe044067c82742e9656aeec5bed89800c9e152b7bfb40309d92184",
+      "source_path": "skills/enforce/SKILL.md",
+      "package_sha256": "5ac44290eed7c30c267211915de3eea046a94596dd785bd16d496bd0c698344b",
+      "source_package": "protect-mcp-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc17def62f73fe353db78fe1432d119145b4e0b88be0ab651eea59a96e5f38ec": {
+      "description_zh": "对MCP安全策略运行攻击测试集，验证其阻挡效果，适用于策略基准、防御测试及OWASP MCP Top 10覆盖核验。",
+      "source": "Run attack suites against MCP security policies to verify they block what they should. Use when the user wants to benchmark a policy, test defenses, or validate OWASP MCP Top 10 coverage.",
+      "source_sha256": "bc17def62f73fe353db78fe1432d119145b4e0b88be0ab651eea59a96e5f38ec",
+      "source_path": "skills/red-team/SKILL.md",
+      "package_sha256": "5ac44290eed7c30c267211915de3eea046a94596dd785bd16d496bd0c698344b",
+      "source_package": "protect-mcp-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3dd42cc725e9c13faa138f76dcb85997fbf4f37196d6e6d50c39f018aefa932a": {
+      "description_zh": "以影子模式封装MCP服务，记录所有工具调用而不拦截，用于观察代理调用及正式启用策略前的监测。",
+      "source": "Wrap an MCP server in shadow mode to log all tool calls without blocking. Use when the user wants to audit or observe what an MCP server is doing, see what tools agents are calling, or start monitoring before enforcing policies.",
+      "source_sha256": "3dd42cc725e9c13faa138f76dcb85997fbf4f37196d6e6d50c39f018aefa932a",
+      "source_path": "skills/shadow/SKILL.md",
+      "package_sha256": "5ac44290eed7c30c267211915de3eea046a94596dd785bd16d496bd0c698344b",
+      "source_package": "protect-mcp-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf0ffccb394ec32391db56358df4f7c1de8d6066195b28e553f1f9d452a422d7": {
+      "description_zh": "离线验证Ed25519签名的决策回执，检查完整性、签名及验证自测。",
+      "source": "Verify Ed25519-signed decision receipts offline. Use when the user wants to check receipt integrity, validate signatures, or run verification self-tests.",
+      "source_sha256": "cf0ffccb394ec32391db56358df4f7c1de8d6066195b28e553f1f9d452a422d7",
+      "source_path": "skills/verify/SKILL.md",
+      "package_sha256": "5ac44290eed7c30c267211915de3eea046a94596dd785bd16d496bd0c698344b",
+      "source_package": "protect-mcp-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd74e8f2b6dc62654d307c7d3c0a04204b25b8ab36fe94dbfc380e2bd9f55f1f": {
+      "description_zh": "在宣称改进或发布行为变更前建立可证伪测量循环：提出假设、只改一个因素、以等预算公平基线衡量真实结果、按方差做足试验，有测得收益才保留，否则回滚，并持久记录包括负面结果。",
+      "source": "Measure a change before you ship it. Use this skill BEFORE claiming an improvement, optimization, or fix works — and before approving, merging, or shipping a behavior change. It installs a falsifiable loop: hypothesis → isolate one lever → fair floor baseline at equal budget → score on the real outcome (not a proxy) → enough trials for the variance → keep only on measured benefit, else revert → record the result (incl. negatives) durably. Trigger whenever you catch yourself saying \"this is faster / better / fixes it\" without a number, when tuning a parameter or swapping a model/algorithm/prompt, or when asked to evaluate or benchmark anything.",
+      "source_sha256": "cd74e8f2b6dc62654d307c7d3c0a04204b25b8ab36fe94dbfc380e2bd9f55f1f",
+      "source_path": "skills/empirical-method/SKILL.md",
+      "package_sha256": "9327fe43765fa2011de71e6c1dce103c8f5054117b51be903fb7939de2ce9070",
+      "source_package": "prove-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5031235e4c58b401d8cfcc25bce4f027a1fe2300fdcf0502602f4e9a10857da7": {
+      "description_zh": "依据代码差异或指定函数编写并运行变更基准，必要时建立bench框架，生成对照实现和含对抗案例的起始用例，展示用例供快速确认后运行并汇报结论。",
+      "source": "Measure a proposed change for the developer — author and run the experiment, don't hand them a blank template. Use when someone asks \"is X better?\", \"should I ship this?\", \"did this improve Y?\", or proposes swapping/tuning an implementation. Reads the change from the code (git diff / the named functions), scaffolds the bench/ harness if absent, WRITES the arms + a starter case set (including adversarial cases) by reading the repo, shows the cases for a quick human OK, runs it, and reports the verdict. The developer's whole job is: ask the question, eyeball the cases, read the result.",
+      "source_sha256": "5031235e4c58b401d8cfcc25bce4f027a1fe2300fdcf0502602f4e9a10857da7",
+      "source_path": "skills/scaffold-benchmark/SKILL.md",
+      "package_sha256": "9327fe43765fa2011de71e6c1dce103c8f5054117b51be903fb7939de2ce9070",
+      "source_package": "prove-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93b156c41b7b7a535eb45093b25e2ed21e3a6e5b829b7ad7a188dacf41a0b414": {
+      "description_zh": "在仓库公开或开源前审计秘密、个人信息、内部基础设施引用及许可问题，并提出供用户批准的整改计划。",
+      "source": "Use when the user asks to \"make this repo public ready\", \"publicize the repo\", \"genericize the repo\", \"public-ready check\", or any similar request to audit a codebase before open-sourcing or public exposure. Audits for secrets, PII, internal infrastructure references, and licensing issues, then produces a remediation plan for user approval.",
+      "source_sha256": "93b156c41b7b7a535eb45093b25e2ed21e3a6e5b829b7ad7a188dacf41a0b414",
+      "source_path": "skills/public-repo-readiness/SKILL.md",
+      "package_sha256": "fa2238edbe5552a9c648c96a6579a8957aef7a36d7d797952a882cf7422f4f9a",
+      "source_package": "public-repo-readiness-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d42204fe2b9c221981abaa28afe2351d1c9061120eb85c0188b42b6733402c3": {
+      "description_zh": "按文字生成PlantUML、从图片反向提取PUML并在本地渲染PNG/SVG/PDF，也可调试语法；原说明覆盖语言参考v1.2025.0的UML、甘特、思维导图、ER及标准库，支持macOS/Windows/Linux并自动准备Java、Python和PlantUML。",
+      "source": "Full-stack PlantUML expert: create PUML from descriptions, convert images to PUML (vision reverse engineering), render locally (PNG/SVG/PDF) with no internet. macOS/Windows/Linux; auto-installs PlantUML+Java+Python. Covers all 27 chapters of the PlantUML Language Reference Guide v1.2025.0 (607 pages): Sequence, Use Case, Class, Object, Activity (legacy+new), Component, Deployment, State, Timing, JSON, YAML, nwdiag, Salt/Wireframe, Archimate, Gantt, MindMap, WBS, Maths, ER, Common Commands, Creole, Sprites, Skinparam, Preprocessing, Unicode, StdLib (C4/AWS/Azure/K8s/ArchiMate). Use for: draw a diagram, create PUML, convert image to PUML, render .puml, debug PUML, explain PlantUML syntax, any UML task.",
+      "source_sha256": "1d42204fe2b9c221981abaa28afe2351d1c9061120eb85c0188b42b6733402c3",
+      "source_path": "skills/puml-plantuml/SKILL.md",
+      "package_sha256": "97ba60b79127da320e41874d6a44e205c4a1e8ae3f5c0204b6812349def01b6b",
+      "source_package": "PUML - PlantUML-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3bca51779930bdafcf9a41c373e51cf016f8fe3a4c268f2b8fb77d5f514a9912": {
+      "description_zh": "回答PurchasePlus产品使用和界面操作问题，原说明要求获取learn.purchaseplus.com最新帮助文章再解释。",
+      "source": "Use for any PurchasePlus how-to, \"how do I\", UI walkthrough, or product-usage question. Always fetch the latest help articles from https://learn.purchaseplus.com/ instead of answering from memory.",
+      "source_sha256": "3bca51779930bdafcf9a41c373e51cf016f8fe3a4c268f2b8fb77d5f514a9912",
+      "source_path": "skills/purchaseplus-how-to/SKILL.md",
+      "package_sha256": "6e272ce30abc782ed9260ffb4416e521c515b7333e71c7bcf8e2fb29166eed9c",
+      "source_package": "PurchasePlus-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa02a51e7a7508cd4e364eb9c6940665d553adc106d339c71e98533a07ac7f08": {
+      "description_zh": "通过托管OAuth采购方MCP读取或修改PurchasePlus数据，覆盖请购、订单、收货、发票文件、贷项、对账单、商品供应商目录、报告、采购清单、配方、库存盘点、文档发票上传及含价格目录CSV导入。",
+      "source": "Use when reading or changing PurchasePlus data through the hosted OAuth purchaser MCP (https://purchaseplus.com/mcp). Covers requisitions, purchase orders, receiving notes, invoices, invoice files, credit notes, statements, products, suppliers, catalogues, reports, buy lists, recipes, inventory, stocktakes, invoice-from-document upload, and priced-catalogue CSV import.",
+      "source_sha256": "aa02a51e7a7508cd4e364eb9c6940665d553adc106d339c71e98533a07ac7f08",
+      "source_path": "skills/purchaseplus-mcp/SKILL.md",
+      "package_sha256": "6e272ce30abc782ed9260ffb4416e521c515b7333e71c7bcf8e2fb29166eed9c",
+      "source_package": "PurchasePlus-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "29cc45809ba58a9eb25940620e47fbabe2435e1e4cabff6dfa250414b19eb24d": {
+      "description_zh": "通过托管OAuth供应商MCP读取供应商组织的PurchasePlus连接、目录商品、客户采购订单、发票和获授权报告导出。",
+      "source": "Use when reading supplier-organisation PurchasePlus data through the hosted OAuth supplier MCP (https://purchaseplus.com/mcp/supplier). Covers connections, catalogues, catalogued products, customer purchase orders, invoices, and entitled report export.",
+      "source_sha256": "29cc45809ba58a9eb25940620e47fbabe2435e1e4cabff6dfa250414b19eb24d",
+      "source_path": "skills/purchaseplus-supplier-mcp/SKILL.md",
+      "package_sha256": "6e272ce30abc782ed9260ffb4416e521c515b7333e71c7bcf8e2fb29166eed9c",
+      "source_package": "PurchasePlus-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d80e7275fb04ce8abba4838d8f58dabf716dbaa50d921719c78ec8cceeb777d": {
+      "description_zh": "为PurchasePlus问题选择帮助中心、采购方MCP或供应商组织MCP工作流，覆盖采购、发票、商品目录、库存和连接等业务对象。",
+      "source": "Use when the user mentions PurchasePlus, Purchase Plus, P+, requisitions, purchase orders, POs, invoices, credit notes, receiving notes, suppliers, products, catalogues, buy lists, recipes, inventory, stock locations, stocktakes, connections, or PurchasePlus MCP tools. Routes how-to questions to the help center skill, purchaser data/actions to the purchaser MCP skill, and supplier-org data/actions to the supplier MCP skill.",
+      "source_sha256": "2d80e7275fb04ce8abba4838d8f58dabf716dbaa50d921719c78ec8cceeb777d",
+      "source_path": "skills/purchaseplus/SKILL.md",
+      "package_sha256": "6e272ce30abc782ed9260ffb4416e521c515b7333e71c7bcf8e2fb29166eed9c",
+      "source_package": "PurchasePlus-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b23af90d724b10214294e9af3f5b2a51d236d1449dbfbd2ef2c1bf54f089d697": {
+      "description_zh": "通过PushNotifi MCP在手机进行人工审批，用于生产写入门槛、模糊决策及代理继续前的明确确认；覆盖请求、等待确认、响应模板和超时处理。",
+      "source": "Human-in-the-loop approvals on the phone via PushNotifi MCP. Use when the user needs production-write gates, ambiguous decisions, or explicit human ack before the agent continues. Covers pushnotifi_request_ack, pushnotifi_await_ack, response_template values, and timeout safety.",
+      "source_sha256": "b23af90d724b10214294e9af3f5b2a51d236d1449dbfbd2ef2c1bf54f089d697",
+      "source_path": "skills/pushnotifi-ack-workflow/SKILL.md",
+      "package_sha256": "7242cf16dbe7956021477e2e94fcf1687a61d200073e34308ae26e16797be106",
+      "source_package": "pushnotifime - human in the loop-0.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5e640def4388aead20b9113f32a7eafcf9389ad7c1d434eca555876cce3d280": {
+      "description_zh": "提供PushNotifi常见运维告警模板，覆盖定时任务失败、webhook签名不符、数据库迁移失败、外部API错误率阈值及入站webhook的shell/CI快捷调用。",
+      "source": "Opinionated PushNotifi recipes for common operational alert patterns — failed cron jobs, webhook signature mismatches, DB migration failures, external-API error-rate thresholds, and shell/CI shortcuts via inbound webhook tokens. Use when the user describes one of these patterns or asks for a \"monitor X\" / \"alert me when Y\" template.",
+      "source_sha256": "a5e640def4388aead20b9113f32a7eafcf9389ad7c1d434eca555876cce3d280",
+      "source_path": "skills/pushnotifi-recipes/SKILL.md",
+      "package_sha256": "7242cf16dbe7956021477e2e94fcf1687a61d200073e34308ae26e16797be106",
+      "source_package": "pushnotifime - human in the loop-0.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af63616e123eb416b73d1abaef9e469c999d4611153f04087a0836af96242e39": {
+      "description_zh": "生成Node、Python、Go、shell/curl、Next.js或Express中的PushNotifi.me通知调用，说明SDK约定、默认应用、幂等和带类型的错误处理。",
+      "source": "Generate PushNotifi.me notification calls in Node, Python, Go, shell/curl, Next.js, or Express. Use when the user asks to \"send a push\", \"notify\", \"alert\", or \"wire up PushNotifi\". Encodes the canonical SDK contract, default-application semantics, idempotency, and typed error handling.",
+      "source_sha256": "af63616e123eb416b73d1abaef9e469c999d4611153f04087a0836af96242e39",
+      "source_path": "skills/pushnotifi-scaffold/SKILL.md",
+      "package_sha256": "7242cf16dbe7956021477e2e94fcf1687a61d200073e34308ae26e16797be106",
+      "source_package": "pushnotifime - human in the loop-0.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "299a8b669f9a739000a8348ed1dd4c294458553a417ba6cb914f0d30bb37dfe5": {
+      "description_zh": "为API设计、规划及审查提供一致的REST约定，覆盖状态码、响应结构、分页、过滤、版本和验证。",
+      "source": "API design standards — consistent, predictable, documented endpoints. Use this skill whenever the user is building, reviewing, or planning an API. Also use when they mention REST endpoints, API routes, request/response shapes, status codes, pagination, versioning, or say things like 'design the API', 'what should this endpoint look like', 'review my API', or 'add an endpoint for X'. Covers REST conventions, status codes, response envelopes, pagination, filtering, versioning, and validation.",
+      "source_sha256": "299a8b669f9a739000a8348ed1dd4c294458553a417ba6cb914f0d30bb37dfe5",
+      "source_path": "skills/pwp-api-design/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4c7fd9c8d101df0485a145d7c3feef340ca874c05b545b3198e3b7a26e5d99f": {
+      "description_zh": "从空目录初始化新项目，配置仓库、工具、目录结构和CI/CD，并验证Hello World，原说明旨在建立可交付的基础。",
+      "source": "New project initialization protocol — from empty directory to production-ready foundation in one session. Use this skill whenever the user wants to start a new project, initialize a repo, scaffold an application, or set up a codebase from scratch. Also use when they say 'new project', 'start fresh', 'initialize a repo', 'scaffold this', 'set up the project', or 'create a new app'. Covers repo setup, tooling config, folder structure, hello world verification, and CI/CD.",
+      "source_sha256": "e4c7fd9c8d101df0485a145d7c3feef340ca874c05b545b3198e3b7a26e5d99f",
+      "source_path": "skills/pwp-bootstrap/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73403ce60274ebd8cbd6e8d351e663efcfd6540cab42d2caec28da51a1b08d7e": {
+      "description_zh": "系统审查代码、PR或文件变更，给出具体实现质量反馈，覆盖正确性、安全、可读性、性能、维护及测试。",
+      "source": "Systematic code review protocol — review code with rigor and specificity. Use this skill whenever the user asks you to review code, check a PR, audit a file, look over changes, or give feedback on implementation quality. Also use when they say 'review this', 'is this code good', 'check my work', 'what do you think of this implementation', or 'any issues with this'. Covers correctness, security, readability, performance, maintainability, and testing.",
+      "source_sha256": "73403ce60274ebd8cbd6e8d351e663efcfd6540cab42d2caec28da51a1b08d7e",
+      "source_path": "skills/pwp-code-review/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b46eff7fe076b42e9852f44939b4ce66167118c9f6140ec9964663e3bf18e493": {
+      "description_zh": "按复现、隔离、根因、修复和验证流程系统排查缺陷，适用于错误、崩溃、异常行为和堆栈信息。",
+      "source": "Systematic debugging protocol — diagnose, isolate, and fix bugs with discipline. Use this skill whenever the user reports a bug, error, crash, or unexpected behavior. Also use when they say things like 'this is broken', 'not working', 'something's wrong', 'fix this', 'why is this failing', or share an error message or stack trace. Covers reproduce → isolate → root cause → fix → verify workflow.",
+      "source_sha256": "b46eff7fe076b42e9852f44939b4ce66167118c9f6140ec9964663e3bf18e493",
+      "source_path": "skills/pwp-debug/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8d19bf6aafeaa63a3a5209f6510aba911d59d8541adf81b6d9672cef173afd0": {
+      "description_zh": "组织从main到生产的可观察、可回滚部署，覆盖环境层级、发布前检查、策略、数据库迁移、特性开关、回滚及部署后验证。",
+      "source": "Deployment protocol — safe, observable, reversible releases from main to production. Use this skill whenever the user is deploying, releasing, shipping, or pushing to production. Also use when they say 'deploy this', 'ship it', 'push to production', 'release', 'go live', 'pre-deploy check', 'rollback', 'feature flags', or ask about deployment strategies, staging, CI/CD pipelines, or monitoring setup. Covers environment ladder, pre-deploy checklist, deployment strategies, database migration safety, feature flags, rollback plans, and post-deploy verification.",
+      "source_sha256": "d8d19bf6aafeaa63a3a5209f6510aba911d59d8541adf81b6d9672cef173afd0",
+      "source_path": "skills/pwp-deploy/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd6a2bca5328cc970d44b31ce192233b0cb626b0e510d5fcff50a6047df27d2b": {
+      "description_zh": "创建、更新和组织可追溯的项目文档，维护功能标识、变更日志、架构说明和完成后的导览材料。",
+      "source": "Documentation lifecycle protocol — living docs that stay current and traceable. Use this skill whenever the user needs to create, update, or organize project documentation. Also use when they say 'update the docs', 'write documentation', 'update the changelog', 'document this', 'add to the README', 'architecture docs', 'create a plan document', or ask about documentation structure, feature traceability, or post-completion walkthroughs. Covers living documents, feature traceability IDs, changelog management, architecture docs, and walkthrough artifacts.",
+      "source_sha256": "dd6a2bca5328cc970d44b31ce192233b0cb626b0e510d5fcff50a6047df27d2b",
+      "source_path": "skills/pwp-docs/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b7422eeecf0024241999a76aa8a47e90b9d9b5a141541cabd4b784faa32b581": {
+      "description_zh": "为数据库模式、数据转换、平台搬迁及主要依赖升级制定可回滚且经验证的迁移流程。",
+      "source": "Data and schema migration protocol — safe, reversible, verified migrations. Use this skill whenever the user needs to do a database migration, schema change, data transformation, platform move, or major dependency upgrade. Also use when they say 'add a column', 'change the schema', 'upgrade the database', 'move to a new host', 'backfill data', or 'major version upgrade'. Covers schema, data, platform, and dependency migrations with rollback strategies.",
+      "source_sha256": "2b7422eeecf0024241999a76aa8a47e90b9d9b5a141541cabd4b784faa32b581",
+      "source_path": "skills/pwp-migrate/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfa98a99f13efc2221f5fd433e7bd2fda5aa480ae20e969ba3a99e6ac3438fb5": {
+      "description_zh": "先测量再优化性能并验证前后结果，覆盖Web指标、剖析、瓶颈、加载时间、包大小、渲染、内存及查询性能。",
+      "source": "Performance optimization protocol — measure first, optimize second, verify always. Use this skill whenever the user reports something is slow, asks about performance, wants to optimize, or mentions load times, bundle size, rendering speed, memory usage, or database query performance. Also use when they say 'this is slow', 'speed this up', 'optimize this', 'reduce bundle size', 'improve load time', or 'why is this taking so long'. Covers web vitals, profiling, bottleneck identification, and before/after verification.",
+      "source_sha256": "dfa98a99f13efc2221f5fd433e7bd2fda5aa480ae20e969ba3a99e6ac3438fb5",
+      "source_path": "skills/pwp-perf/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb558b6c5319c236a041b5e3d28e709fcb3bc72873ad065f8b5a24a406681eab": {
+      "description_zh": "在保留行为的前提下重构代码，采用提取、重命名、移动、内联和简化模式，配合安全核验降低重复及复杂度。",
+      "source": "Safe refactoring protocol — restructure code without breaking behavior. Use this skill whenever the user asks to refactor, restructure, reorganize, clean up, simplify, or decompose code. Also use when they say 'this file is too big', 'too much duplication', 'split this up', 'make this cleaner', 'reduce complexity', or 'extract this into its own thing'. Covers extract, rename, move, inline, and simplify patterns with safety verification.",
+      "source_sha256": "eb558b6c5319c236a041b5e3d28e709fcb3bc72873ad065f8b5a24a406681eab",
+      "source_path": "skills/pwp-refactor/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae601a9f7dc3fdb40844885df5c622e9d4ede93ea1a0c6c52e0081da49461a01": {
+      "description_zh": "系统审查常见漏洞和安全实践，覆盖秘密、输入验证、认证、授权、数据保护、依赖及错误处理，适用于OWASP、XSS、SQL注入和安全审计问题。",
+      "source": "Security review protocol — systematic checks for common vulnerabilities and security hygiene. Use this skill whenever the user asks about security, wants a security audit, mentions vulnerabilities, OWASP, XSS, SQL injection, authentication issues, or secrets management. Also use when they say 'is this secure', 'check for vulnerabilities', 'security review', 'audit this for security', or 'are there any security issues'. Covers secrets, input validation, auth, authorization, data protection, dependencies, and error handling.",
+      "source_sha256": "ae601a9f7dc3fdb40844885df5c622e9d4ede93ea1a0c6c52e0081da49461a01",
+      "source_path": "skills/pwp-security-audit/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cff0379ac08e1450e772fcee98cab61960b3e9f6539270e2c88e2cabd27243f8": {
+      "description_zh": "制定和实现测试策略，覆盖测试金字塔、命名、覆盖目标、测试数据工厂及不同场景应测试的内容，用于新增测试和提高质量保障。",
+      "source": "Testing strategy and implementation protocol — structured quality assurance that catches real bugs. Use this skill whenever the user asks to write tests, add test coverage, set up a testing strategy, or asks 'how should I test this'. Also use when they say 'add tests', 'write tests for this', 'test coverage', 'what should I test', 'this needs tests', or 'set up testing'. Covers test pyramid, naming conventions, coverage targets, test data factories, and when to test what.",
+      "source_sha256": "cff0379ac08e1450e772fcee98cab61960b3e9f6539270e2c88e2cabd27243f8",
+      "source_path": "skills/pwp-test/SKILL.md",
+      "package_sha256": "bcb0c3c92e63354e3b03dd259190a87cba0b44be971e381fae6129dd357d88f1",
+      "source_package": "PWP-Project Workflow Protocol-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b105f6c588f5f3013ca9600a194b6603302fe0e01f4e1e70e93fdf8bed236816": {
+      "description_zh": "提供pxkit的TypeScript、React和Next.js代码规范，覆盖命名、组件、hooks状态、服务及Result/ErrorKey边界、数据整理、shadcn/ui与Tailwind样式、结构和测试，用于代码编写及审查。",
+      "source": "The pxkit house style for TypeScript, React, and Next.js — naming, components, hooks and state, services and Result/ErrorKey boundaries, data shaping, styling with shadcn/ui and Tailwind, structure, and testing. Use this whenever you write, edit, refactor, or review any .ts/.tsx file — a component, hook, service, server action, route handler, type, or stylesheet — even for a \"small\" change or when the user does not mention conventions. Also use it when the user asks whether code \"follows the house style\" or \"matches the repo\".",
+      "source_sha256": "b105f6c588f5f3013ca9600a194b6603302fe0e01f4e1e70e93fdf8bed236816",
+      "source_path": "skills/pxkit-conventions/SKILL.md",
+      "package_sha256": "ef4500f7053303964ef91831d7fdb13ff8db78b8d573f7ec0c6abb8b9e8f08a7",
+      "source_package": "px-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e560ba9a920bca9564cbcd445f4d45f4f5ba032a6eeefcf5c3196d24dd137e3": {
+      "description_zh": "按pxkit方法排查TypeScript、React和Next.js缺陷：复现后从页面到分区和基础组件定位，双向查引用、追踪错误值根因，并评估修复影响范围。",
+      "source": "The pxkit debugging method for TypeScript, React, and Next.js — reproduce, localize top-down (page → section → primitive), map references both ways, trace to the root cause (interrogating where/why/how for wrong-value bugs), and account for the blast radius before fixing. Use whenever the user reports a bug, regression, crash, flaky behavior, \"wrong value\", \"it used to work\", or asks why something renders or computes incorrectly — even when they only ask for a quick fix.",
+      "source_sha256": "4e560ba9a920bca9564cbcd445f4d45f4f5ba032a6eeefcf5c3196d24dd137e3",
+      "source_path": "skills/pxkit-debug/SKILL.md",
+      "package_sha256": "ef4500f7053303964ef91831d7fdb13ff8db78b8d573f7ec0c6abb8b9e8f08a7",
+      "source_package": "px-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "028a1276f52a1aefcdc858afbd0e46f5fab061bfc9f7bbf0df3924331f2fde4d": {
+      "description_zh": "按pxkit约定新建或扩展功能模块，默认与路由或功能同目录，按责任分层并直接导入，仅有至少两个使用方时提取共享包。",
+      "source": "Scaffold or extend a feature module the pxkit way — colocated route or feature folder by default, responsibility-based directories, direct imports, and a shared package only when 2+ consumers exist. Use whenever the user asks to add a feature, module, domain area, \"section of the app\", or to add hooks/actions/services to an existing one, and whenever a task would create a new folder under app/, features/, or packages/ — even if they don't say \"feature\".",
+      "source_sha256": "028a1276f52a1aefcdc858afbd0e46f5fab061bfc9f7bbf0df3924331f2fde4d",
+      "source_path": "skills/pxkit-feature/SKILL.md",
+      "package_sha256": "ef4500f7053303964ef91831d7fdb13ff8db78b8d573f7ec0c6abb8b9e8f08a7",
+      "source_package": "px-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b7d26ba6234cc21c5b1f430675ca303045d003957af171b206970303305b4f6": {
+      "description_zh": "按pxkit构建表单，先定义zod模式和错误键，再实现react-hook-form逻辑、shadcn Field布局及控件选择，通过返回Result的action或服务提交；覆盖注册登录、结账、设置和多步向导。",
+      "source": "Build or extend a form the pxkit way — zod schema and error keys first, react-hook-form logic, shadcn Field/FieldGroup markup, a control chooser, and submit through a Result-returning action or service. Use whenever the user asks for a form, sign-up/login/checkout/contact/settings screen, input validation, a multi-step wizard, or a submit flow, and whenever a task adds two or more inputs that get submitted together — even if they only say \"add a couple of fields\".",
+      "source_sha256": "1b7d26ba6234cc21c5b1f430675ca303045d003957af171b206970303305b4f6",
+      "source_path": "skills/pxkit-form/SKILL.md",
+      "package_sha256": "ef4500f7053303964ef91831d7fdb13ff8db78b8d573f7ec0c6abb8b9e8f08a7",
+      "source_package": "px-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3cbbc99d9bcef3fd7245b70f0c1c33787a67083ec6fc7683d7cff6ff84e2b292": {
+      "description_zh": "按pxkit构建Next.js App Router页面、路由组或营销分区，以薄服务端页面组合区块，将客户端边界放到叶级文件，通过工厂和根标题模板生成元数据，并统一注册类型化路由。",
+      "source": "Build a Next.js App Router page, route group, or landing section the pxkit way — a thin server page composing section components, client boundaries pushed to leaf re-export files, metadata through the root title template and a createPageMetadata factory, routes registered in one typed config. Use whenever the user asks for a new page, route, landing/marketing section, hero, pricing or about page, layout, route group, SEO metadata, or sitemap entry — even when they only say \"add a page for X\".",
+      "source_sha256": "3cbbc99d9bcef3fd7245b70f0c1c33787a67083ec6fc7683d7cff6ff84e2b292",
+      "source_path": "skills/pxkit-nextjs-page/SKILL.md",
+      "package_sha256": "ef4500f7053303964ef91831d7fdb13ff8db78b8d573f7ec0c6abb8b9e8f08a7",
+      "source_package": "px-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5ab69ecb0b9d046f13ddfc2c1c265eeaad830f7a99f2fad1c2a7bec26e8e5260": {
+      "description_zh": "按pxkit创建服务或服务端边界，使用共享HTTP客户端、zod校验、DTO到领域类型映射及明确Result错误键，避免向UI抛异常；适用于API、action、webhook、数据库及供应商SDK集成。",
+      "source": "Scaffold a service or server boundary the pxkit way — one shared http client, zod-validated payloads, DTO mapping to domain types, a narrowed Result with SCREAMING_SNAKE ErrorKeys, and no throws to the UI. Use whenever the user asks to call an API, fetch or submit data, add a server action, route handler, webhook, database query, or integrate a vendor SDK (Stripe, Slack, GitHub, …) — and whenever a task would write fetch(), axios, or process.env in feature code, even if they don't say \"service\".",
+      "source_sha256": "5ab69ecb0b9d046f13ddfc2c1c265eeaad830f7a99f2fad1c2a7bec26e8e5260",
+      "source_path": "skills/pxkit-service/SKILL.md",
+      "package_sha256": "ef4500f7053303964ef91831d7fdb13ff8db78b8d573f7ec0c6abb8b9e8f08a7",
+      "source_package": "px-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26099c8009916e840fe1aac7b9b208ab9858166ba30c44db7eead283e0845f86": {
+      "description_zh": "为SQLAlchemy 2.x项目建立Alembic迁移流程，覆盖接入、生成、自动差异审查、损坏迁移修复和安全模式演进。",
+      "source": "Production-safe Alembic migration workflows for SQLAlchemy 2.x projects. Use this skill when adding Alembic, generating migrations, reviewing autogenerate diffs, fixing broken migrations, or establishing a safe schema evolution workflow in a Python backend.",
+      "source_sha256": "26099c8009916e840fe1aac7b9b208ab9858166ba30c44db7eead283e0845f86",
+      "source_path": "skills/alembic-migrations/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecbba1fc66c210d389bc53dfbede62b2bc1a7959d11281150ae1d12d0fc7638c": {
+      "description_zh": "为FastAPI和Python服务的后台执行设定边界，防止误用进程内后台任务，例如FastAPI BackgroundTasks。",
+      "source": "Guardrails for background work in FastAPI and Python services. Prevent misuse of in-process background execution (e.g. FastAPI BackgroundTasks).",
+      "source_sha256": "ecbba1fc66c210d389bc53dfbede62b2bc1a7959d11281150ae1d12d0fc7638c",
+      "source_path": "skills/background-jobs-boundaries/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f92e1e06dcc9be11e14a999d3cb43c871df10c6431f6eadcd96e3c312141491": {
+      "description_zh": "审查已有Python Click命令行工具，识别架构、反模式和用户体验问题，提出少量高价值修复。",
+      "source": "Audit and improve existing Python Click CLIs by identifying architecture problems, anti-patterns, and CLI UX issues, then proposing minimal, high-value fixes.",
+      "source_sha256": "7f92e1e06dcc9be11e14a999d3cb43c871df10c6431f6eadcd96e3c312141491",
+      "source_path": "skills/click-cli-linter/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82efa2f3e44d2078be837fb0091c862a0a2520d9ab3e017399dfc993d4c94f87": {
+      "description_zh": "使用Python Click设计、生成及改进命令行工具，关注惯用架构、命令分组、模块布局和CLI体验，避免常见反模式。",
+      "source": "Design, generate, and improve Python CLIs using the Click library. Focus on idiomatic architecture, command groups, modular layouts, CLI UX conventions, and avoiding common Click anti-patterns.",
+      "source_sha256": "82efa2f3e44d2078be837fb0091c862a0a2520d9ab3e017399dfc993d4c94f87",
+      "source_path": "skills/click-cli/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "04e02584df038ecb03b07c4e7e049a1198a613fdcd604d4e5ac028d4ea27f562": {
+      "description_zh": "为Python仓库配置Ruff、pre-commit和Markdown检查的代码健康工具栈，优先整合而非重复工具，除非要求迁移否则保留现有可工作结构，并提供渐进采用路径。",
+      "source": "Opinionated code health stack for Python repos using Ruff, pre-commit, and Markdown linting. Prefers consolidation over redundant tooling, preserves working repos unless migration is requested, and provides a simple adoption path for both new and existing projects.",
+      "source_sha256": "04e02584df038ecb03b07c4e7e049a1198a613fdcd604d4e5ac028d4ea27f562",
+      "source_path": "skills/code-quality/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1611f30333b3d2faf2846ca3c1aa3f45155bcb82a7e48cadcc80fb5b47521eda": {
+      "description_zh": "为已有Python项目生成本地开发Docker Compose环境，根据项目特征产出多阶段Dockerfile、Compose、环境配置和dockerignore。",
+      "source": "Generate a local-development Docker Compose setup for an existing Python project. Produces a multi-stage Dockerfile, Compose file, env config, and dockerignore based on detected project signals.",
+      "source_sha256": "1611f30333b3d2faf2846ca3c1aa3f45155bcb82a7e48cadcc80fb5b47521eda",
+      "source_path": "skills/dockerize-service/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f09c7a88f341716b3b72049374d514a1e11e4f2ea9e765bb1250c11be9cd5b9e": {
+      "description_zh": "建立FastAPI统一错误架构，使用单一内部异常层级、构造器消息、一致API错误响应及意外失败集中日志。",
+      "source": "Opinionated error architecture for FastAPI services. Enforces a single internal exception hierarchy, constructor-based messages, consistent API error responses, and centralized logging for unexpected failures.",
+      "source_sha256": "f09c7a88f341716b3b72049374d514a1e11e4f2ea9e765bb1250c11be9cd5b9e",
+      "source_path": "skills/fastapi-errors/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e9ddd25c8b2f001523bad70ca44e500a99f18d99dced6ad0789f500dd7713b42": {
+      "description_zh": "从零搭建FastAPI服务，包括uv、标准目录、uvicorn、Click入口和pytest测试，配置依赖注入覆盖、AsyncClient及异步SQLite夹具；适用于新Python API或微服务项目。",
+      "source": "Scaffold a complete, production-ready FastAPI project from scratch. Use this skill whenever the user wants to create, initialize, start, or bootstrap a FastAPI service, REST API, or Python web service — even if they just say \"new service\", \"new API\", or \"new microservice\". Handles uv setup, standard FastAPI directory layout, uvicorn runner, click CLI entry point, and a full pytest suite with DI overrides, AsyncClient, and async SQLite fixtures. Always invoke for new Python API projects.",
+      "source_sha256": "e9ddd25c8b2f001523bad70ca44e500a99f18d99dced6ad0789f500dd7713b42",
+      "source_path": "skills/fastapi-init/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b4a54ae3b9ec6b87b3ac1eeb05f1560ce880d7b10c87114a2c5b468cc11c322": {
+      "description_zh": "为Python后端接入异步HTTP客户端，规范外部API边界、重试、超时和返回数据验证，适用于供应商客户端及零散HTTP调用重构。",
+      "source": "Production-ready async HTTP client integration for Python backend services. Use this skill when adding or refactoring outbound API calls, building a vendor client, introducing retries and timeouts, validating external payloads, or replacing ad-hoc HTTP usage with a disciplined integration boundary.",
+      "source_sha256": "6b4a54ae3b9ec6b87b3ac1eeb05f1560ce880d7b10c87114a2c5b468cc11c322",
+      "source_path": "skills/http-client-integration/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0b69aee818d5a4ec58ff8d363ded80216a516fbe0818df063b5d815b72331d1": {
+      "description_zh": "以行为目标优先、最小修改的方法推进Python/FastAPI功能实施，将端点或新能力需求转成可验证、可审查的变更；提供实施流程而非特定框架工具。",
+      "source": "Orchestrate feature implementation with a behavior-first, minimal-patch discipline. Use this skill whenever the user asks you to implement a feature, add functionality, build an endpoint, wire up a new capability, or make any non-trivial code change in a Python/FastAPI project. Also use when the user says \"build this\", \"add support for X\", \"implement X\", or describes a feature they want working. This skill is about the *process* of turning intent into a verified, reviewable change - not about any single framework or tool.",
+      "source_sha256": "f0b69aee818d5a4ec58ff8d363ded80216a516fbe0818df063b5d815b72331d1",
+      "source_path": "skills/implementation-protocol/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cff2b4ac87fdce55a46583727583378572f65b46eb3b0f9abf8d455010be6e54": {
+      "description_zh": "使用Pydantic v2规范Python API的请求、响应、查询、命令、批次及分页模式，避免新项目的数据结构漂移。",
+      "source": "Opinionated schema architecture for Python API projects using Pydantic v2. Defines request, response, query, command, batch, and pagination schema patterns to prevent schema drift in new projects.",
+      "source_sha256": "cff2b4ac87fdce55a46583727583378572f65b46eb3b0f9abf8d455010be6e54",
+      "source_path": "skills/pydantic-schemas/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62a7fac4a9acd2264af72e0c4af45fe6afe080241c789e499987a794a2b81ed5": {
+      "description_zh": "为FastAPI编写pytest后端测试，覆盖夹具、工厂、异步SQLAlchemy、内存SQLite、AsyncClient、依赖覆盖及外部客户端模拟，减少脆弱和重复测试。",
+      "source": "Write disciplined backend tests for FastAPI services with pytest. Use this skill when adding tests to a Python/FastAPI service, setting up async SQLAlchemy test fixtures, wiring AsyncClient with DI overrides, mocking external clients, or improving test maintainability. Covers fixture design, factory patterns, async SQLite in-memory databases, app.dependency_overrides, and avoiding fragile or redundant tests.",
+      "source_sha256": "62a7fac4a9acd2264af72e0c4af45fe6afe080241c789e499987a794a2b81ed5",
+      "source_path": "skills/pytest-service/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aef2efe5de0e0c1a5b0a3ef8f63c13726dec48b6a7cab019f628abd72222cfe5": {
+      "description_zh": "通过contextvars贯通HTTP处理器、服务、外部请求、后台作业和异步任务的关联ID，并保证异常只记录一次；也适用于Celery、CLI和普通asyncio。",
+      "source": "Enforce end-to-end request correlation across HTTP handlers, services, outbound HTTP calls, background jobs, and async tasks using contextvars. Use this skill whenever request tracing, correlation IDs, observability wiring, or propagating context across task/job boundaries is involved — even outside FastAPI (Celery workers, CLI tasks, plain asyncio apps). Ensures correlation IDs propagate across boundaries and exceptions are logged exactly once.",
+      "source_sha256": "aef2efe5de0e0c1a5b0a3ef8f63c13726dec48b6a7cab019f628abd72222cfe5",
+      "source_path": "skills/request-correlation/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02866cab151c09ade7f2e14ab3f4e627c214995de6c666b50e4e216fcc05b3c0": {
+      "description_zh": "用pydantic-settings统一Python后端配置和环境变量，替换散落的os.getenv，添加设置模块及.env支持。",
+      "source": "Production-ready configuration management for Python backend projects using pydantic-settings. Use this skill when the user needs to add environment variable management, introduce pydantic-settings, replace scattered os.getenv usage, add a settings module, or set up .env support in a FastAPI service or Python backend.",
+      "source_sha256": "02866cab151c09ade7f2e14ab3f4e627c214995de6c666b50e4e216fcc05b3c0",
+      "source_path": "skills/settings-config/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a8f74b8954230035c6c75a441f55d9007d80fd0c7d29534f6e8616772af6f7e": {
+      "description_zh": "提供SQLAlchemy 2.x ORM模式，定义模型关系、统一DeclarativeBase、共享mixin及models目录，修正FastAPI或Python后端模型结构不一致。",
+      "source": "Production-ready SQLAlchemy 2.x model patterns for Python backend projects. Use this skill when the user needs to define ORM models, add relationships, introduce a canonical DeclarativeBase, create shared mixins, organize a models package, or fix inconsistent SQLAlchemy model structure in a FastAPI or Python backend.",
+      "source_sha256": "9a8f74b8954230035c6c75a441f55d9007d80fd0c7d29534f6e8616772af6f7e",
+      "source_path": "skills/sqlalchemy-models/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5d51bca60251bbcd0f6ed65ae4771757240d224162146568a98bd8bc934f7dd": {
+      "description_zh": "指导Python项目正确使用uv，覆盖依赖、环境、命令执行、从pip/poetry/pip-tools迁移、锁文件正确性及反模式。",
+      "source": "Expert guidance for correct uv usage in Python projects. Handles dependency management, environments, command execution, migration from pip/poetry/pip-tools, lockfile correctness, and uv anti-patterns.",
+      "source_sha256": "b5d51bca60251bbcd0f6ed65ae4771757240d224162146568a98bd8bc934f7dd",
+      "source_path": "skills/uv/SKILL.md",
+      "package_sha256": "5cd6a68aa466411f2eeaa0a390551655a0428a7b9fdc64b1b6598773b7b6f0d2",
+      "source_package": "py-pit-4.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "626653e42e91c762e0e513a833afac6b0cec137cdf5c1736f6e1160c011ea986": {
+      "description_zh": "使用Pydantic AI构建代理，覆盖工具与按需能力加载、结构化输出、流式响应、测试、YAML定义及多代理模式。",
+      "source": "Build AI agents with Pydantic AI — tools, capabilities (including on-demand loading), structured output, streaming, testing, and multi-agent patterns. Use when the user mentions Pydantic AI, imports pydantic_ai, or asks to build an AI agent, add tools/capabilities, defer capability loading, stream output, define agents from YAML, or test agent behavior.",
+      "source_sha256": "626653e42e91c762e0e513a833afac6b0cec137cdf5c1736f6e1160c011ea986",
+      "source_path": "skills/building-pydantic-ai-agents/SKILL.md",
+      "package_sha256": "7ced9b92cbdbfd8610865a7e77e858c3bad733b88b9d8971e3b198afce074506",
+      "source_package": "pydantic-ai-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0846b6b7bd5f19b1d98c59e3001bdd64604fa836874c25d41e0974c9fa6f7d6": {
+      "description_zh": "只读查找、复现并确认代码缺陷，以证据报告结果而不改代码；原说明即使请求同时要求修复，也将修复排除在此技能范围，已明确问题的单纯修复不属于缺陷搜寻。",
+      "source": "Find, reproduce, and confirm bugs in a codebase and report them with evidence — a read-only QA pass that never modifies code. ALWAYS use this skill when the request carries any bug-finding intent — find / hunt / audit for bugs, QA a target, reproduce or confirm a specific bug — INCLUDING when that same request also asks for a fix. \"Find the bug in X and fix it\" and \"audit this module and fix what you find\" ARE bug hunts and DO use this skill: hunt, confirm and report the bug with evidence, then decline the fix as out of scope and never modify the code. Asking for a fix alongside the finding never disqualifies a request — only the total absence of bug-finding intent does. Examples that use this skill: \"find bugs in X\", \"QA this PR\", \"audit this module for defects\", \"reproduce this bug\", \"is this a bug?\", \"find the bug in X and fix it\". It does NOT apply when nothing is being hunted — building, implementing, refactoring, or repairing an already-identified problem (\"fix the login bug\", \"this crashes, fix it\", \"add pagination\") — where it is inert and must not constrain the work or other tools.",
+      "source_sha256": "a0846b6b7bd5f19b1d98c59e3001bdd64604fa836874c25d41e0974c9fa6f7d6",
+      "source_path": "skills/qa-bug-hunter/SKILL.md",
+      "package_sha256": "ef14c2fabc57a06b195173ca42d8efd8aa69b9fa3d79eae58d5c11fa3b9eb280",
+      "source_package": "QA Bug Hunter-1.9.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b112ad4aa9ff8ed3ba5283f75837a801ea2571ede818a29cf89d35f7f3592722": {
+      "description_zh": "与用户共同进行游戏化Web QA，用户在自己的真实Chrome会话操作，代理制作任务关卡和页内HUD、准备状态、收集问题并记录可供AI处理的事项；原说明还会后台派发修复或计划子代理，并将验证会话整理为回归测试。",
+      "source": "Runs a gamified co-op QA session (a \"QA quest\") against a web app. The human operator plays the app in their own real Chrome (real fingerprint, real session, passes bot-protection that automated browsers cannot); the agent co-pilots. It generates a quest level from the release content, injects an in-page HUD, seeds state, polls for bug reports and objectives, auto-dispatches fix-or-plan subagents in the background and records each finding as an ai-ready tracker issue, and compiles the validated session into regression tests. Use whenever the user says \"qa quest\", \"QA session\", \"let's QA this release\", \"play the release\", \"co-op QA\", asks to manually test a release together, or wants to hunt bugs in a staging build before shipping.",
+      "source_sha256": "b112ad4aa9ff8ed3ba5283f75837a801ea2571ede818a29cf89d35f7f3592722",
+      "source_path": "skills/qa-quest/SKILL.md",
+      "package_sha256": "8ae5c8fba4ed13eaa591784aa2cb45223a79900c5f215a6a0c66c021051139cf",
+      "source_package": "qa-quest-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e1d4610a9aea3163dfac20f4d15e1322e94f7bcf37083b0def61825c62754a7": {
+      "description_zh": "从skills.qdrant.tech按需读取最新官方技能，诊断Qdrant性能、内存、索引、扩缩分片、搜索质量、混合检索、模型迁移、版本、观测、部署及SDK问题，优先使用当前官方指导而非记忆。",
+      "source": "Diagnose, troubleshoot, and advise on any Qdrant deployment by loading the latest official Qdrant skills live from skills.qdrant.tech. Use this whenever someone raises a Qdrant problem or question — slow or degraded search, high or growing memory / OOM crashes, optimizer stuck or slow, indexing slowness, scaling and sharding decisions (node count, QPS, latency, multitenancy, vertical vs horizontal), poor or irrelevant search results, hybrid search and reranking, embedding-model migration, version upgrades and compatibility, monitoring and observability (Prometheus, Grafana, health checks, /metrics, /telemetry), deployment choices (local, Docker, self-hosted, Qdrant Cloud, embedded), or client-SDK questions (Python, TypeScript, Rust, Go, .NET, Java). Trigger especially when the context is clearly a Qdrant cluster, collection, or vector-search deployment. Always prefer this skill over answering from memory: it pulls current, authoritative guidance and only the relevant context.",
+      "source_sha256": "8e1d4610a9aea3163dfac20f4d15e1322e94f7bcf37083b0def61825c62754a7",
+      "source_path": "meta/qdrant-advisor/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d22fd6fc3c448779b1b74155513dfa5f10c8cd40906ff9e1da21b8dab24533e": {
+      "description_zh": "介绍Qdrant各编程语言客户端SDK，用于与Qdrant部署集成。",
+      "source": "Qdrant provides client SDKs for various programming languages, allowing easy integration with Qdrant deployments.",
+      "source_sha256": "0d22fd6fc3c448779b1b74155513dfa5f10c8cd40906ff9e1da21b8dab24533e",
+      "source_path": "skills/qdrant-clients-sdk/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0bf6815b770de4a163415973e9ca6fcf711ec5467f25e113c479c6b37dacb6fb": {
+      "description_zh": "帮助选择Qdrant部署方式，比较本地、Docker、自托管、云、嵌入及EDGE方案，适用于新项目或低延迟部署选择。",
+      "source": "Guides Qdrant deployment selection. Use when someone asks 'how to deploy Qdrant', 'Docker vs Cloud', 'local mode', 'embedded Qdrant', 'Qdrant EDGE', 'which deployment option', 'self-hosted vs cloud', or 'need lowest latency deployment'. Also use when choosing between deployment types for a new project.",
+      "source_sha256": "0bf6815b770de4a163415973e9ca6fcf711ec5467f25e113c479c6b37dacb6fb",
+      "source_path": "skills/qdrant-deployment-options/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46778b4f5a9e7b3d828311d95474e165296aefe5bbd3eabadde4c7f880968785": {
+      "description_zh": "指导开发Qdrant Edge进程内嵌入式分片，覆盖与服务器或云同步、BM25和关键词、混合搜索、设备端嵌入、快照及部分快照，排查插入后搜索为空，并区分内置能力与需自建逻辑。",
+      "source": "Guides building on Qdrant Edge, the embedded in-process shard. Use when someone asks 'how to sync Edge with the server', 'keep a local shard in sync with Qdrant Cloud', 'BM25 or keyword search on Edge', 'hybrid search on Edge', 'embeddings on device', 'Edge snapshots', 'apply a partial snapshot', 'why is my Edge search empty after inserts', or is writing custom sync, BM25, or fusion code against qdrant-edge. Also use when deciding what Edge ships built-in versus what you must implement.",
+      "source_sha256": "46778b4f5a9e7b3d828311d95474e165296aefe5bbd3eabadde4c7f880968785",
+      "source_path": "skills/qdrant-edge/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f9d5014e2ecbbb38dfa44ac1d6a7d7d1e71ae3149f52f15d1b1e50291d04bf2": {
+      "description_zh": "在自有Kubernetes环境配置Qdrant Hybrid Cloud，涵盖前置条件、存储CSI与备份、云agent/operator安装、集群暴露及安全、镜像镜像库和秘密轮换，排查存储及连通安装失败。",
+      "source": "Setting up and running Qdrant Hybrid Cloud on your own Kubernetes cluster (managed, on-prem, or edge): prerequisites, storage/CSI and backups, installing the Qdrant Cloud agent and operator, creating/exposing/securing clusters, registry mirroring, and secret rotation. Use when someone wants to set up, install, deploy, or configure Hybrid Cloud on their own infrastructure; is running Qdrant on their own EKS, GKE, AKS, OpenShift, or other Kubernetes; asks about the agent or operator, a storage class or volume snapshots for Hybrid Cloud, exposing a cluster, mirroring Qdrant images, or rotating secrets; or when a Hybrid Cloud install is failing on storage or connectivity.",
+      "source_sha256": "5f9d5014e2ecbbb38dfa44ac1d6a7d7d1e71ae3149f52f15d1b1e50291d04bf2",
+      "source_path": "skills/qdrant-hybrid-cloud-setup/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31e14f6e4534fa2edd00e102843531c3ada0f1fe6527a4aa7c55dfba05b1a686": {
+      "description_zh": "使用Qdrant Migration Tool CLI从其他向量数据库迁入向量、元数据和稀疏嵌入，覆盖中断续传、速度、集合创建、批次大小、host网络选择及迁移后验证。",
+      "source": "Guides use of the Qdrant Migration Tool CLI to move vectors, metadata, and sparse embeddings from another vector database into Qdrant. Use when someone asks 'how do I migrate from Pinecone/Weaviate/Milvus/Elasticsearch/OpenSearch/pgvector/s3/Azure/Chroma/Redis/MongoDB/FAISS/Solr to Qdrant', 'move my vector database to Qdrant', 'is there a migration tool for Qdrant', 'my migration got interrupted, how do I resume it', 'migration is too slow', or 'collection wasn't created after migration'. Also use when picking migration batch size, deciding on `--net=host`, or verifying data after a migration.",
+      "source_sha256": "31e14f6e4534fa2edd00e102843531c3ada0f1fe6527a4aa7c55dfba05b1a686",
+      "source_path": "skills/qdrant-migration-tool/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "255639eebb66cc69fef47aa3bbdb953af7345c71dac1da5820c0497f8a5413b0": {
+      "description_zh": "指导Qdrant嵌入模型不停机迁移，覆盖重新嵌入、维度升级、供应商切换、两模型并存及A/B测试。",
+      "source": "Guides embedding model migration in Qdrant without downtime. Use when someone asks 'how to switch embedding models', 'how to migrate vectors', 'how to update to a new model', 'zero-downtime model change', 'how to re-embed my data', or 'can I use two models at once'. Also use when upgrading model dimensions, switching providers, or A/B testing models.",
+      "source_sha256": "255639eebb66cc69fef47aa3bbdb953af7345c71dac1da5820c0497f8a5413b0",
+      "source_path": "skills/qdrant-model-migration/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e25a09f4b2154495363250ab4b5f282a4414cbaefd851c7bc6b84b56bfc17c7a": {
+      "description_zh": "配置Qdrant监控及可观测性，选择指标、健康检查和告警，接入Prometheus、Grafana及集中日志，并用指标排查优化器、内存和请求性能问题。",
+      "source": "Guides Qdrant monitoring and observability setup. Use when someone asks 'how to monitor Qdrant', 'what metrics to track', 'is Qdrant healthy', 'optimizer stuck', 'why is memory growing', 'requests are slow', 'set up alerts', 'cluster health check', or needs to set up Prometheus, Grafana, health checks, or log centralization. Also use when debugging production issues that require metric analysis.",
+      "source_sha256": "e25a09f4b2154495363250ab4b5f282a4414cbaefd851c7bc6b84b56bfc17c7a",
+      "source_path": "skills/qdrant-monitoring/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "221badbb4855f94f71e025de8ba36b502d86ea8b0505b06bcda6dab820c465d0": {
+      "description_zh": "利用指标和可观测工具诊断Qdrant生产问题，覆盖优化器卡住、索引慢、内存过高、OOM和查询延迟突增，以及无明显配置变化的性能退化。",
+      "source": "Diagnoses Qdrant production issues using metrics and observability tools. Use when someone reports 'optimizer stuck', 'indexing too slow', 'memory too high', 'OOM crash', 'queries are slow', 'latency spike', or 'search was fast now it's slow'. Also use when performance degrades without obvious config changes.",
+      "source_sha256": "221badbb4855f94f71e025de8ba36b502d86ea8b0505b06bcda6dab820c465d0",
+      "source_path": "skills/qdrant-monitoring/debugging/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e7c05f805c1b217d717a1cc1e16a21f06ba8334ea0ccc61880ad1e01687a4570": {
+      "description_zh": "配置Qdrant的Prometheus抓取、健康探针、Hybrid Cloud指标、告警、集中日志及审计日志。",
+      "source": "Guides Qdrant monitoring setup including Prometheus scraping, health probes, Hybrid Cloud metrics, alerting, and log centralization. Use when someone asks 'how to set up monitoring', 'Prometheus config', 'Grafana dashboard', 'health check endpoints', 'how to scrape Hybrid Cloud', 'what alerts to set', 'how to centralize logs', or 'audit logging'.",
+      "source_sha256": "e7c05f805c1b217d717a1cc1e16a21f06ba8334ea0ccc61880ad1e01687a4570",
+      "source_path": "skills/qdrant-monitoring/setup/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9b0d1ac514fedf4faf3b1b855574be06caa534d8177d35e3f31f08dfa675c5b": {
+      "description_zh": "设计Qdrant多租户或多用户隔离，选择集合和payload分区，处理数据地区驻留要求及单个大租户占用资源造成的影响。",
+      "source": "Guides tenant isolation architecture in Qdrant for multi-tenant or multi-user applications. Use when someone asks 'how to isolate customer data', 'how to build multi-tenant search/RAG', 'how many collections should I create', 'how to partition tenants by payload', 'a customer's data legally has to stay in a certain country or region'. Also use when they describe a symptom: one customer's data is way bigger than the rest and slowing everyone down, or one tenant is hogging resources.",
+      "source_sha256": "c9b0d1ac514fedf4faf3b1b855574be06caa534d8177d35e3f31f08dfa675c5b",
+      "source_path": "skills/qdrant-multitenancy/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3fda1decb5f3a74dc68d8d8e87cdb93e9c0a8fa4e8e8c4345caf7ac2e45047f": {
+      "description_zh": "作为Qdrant主动调优入口，将搜索速度、索引性能和内存优化分派到对应子技能；用于配置及容量规划，当前生产故障和实际指标分析转交监控技能。",
+      "source": "Navigation hub linking sub-skills for proactive Qdrant tuning: search speed, indexing performance, and memory usage optimization. Use when planning configuration or capacity changes to improve speed and efficiency. For diagnosing an active production slowdown or analyzing live metrics, use qdrant-monitoring instead.",
+      "source_sha256": "e3fda1decb5f3a74dc68d8d8e87cdb93e9c0a8fa4e8e8c4345caf7ac2e45047f",
+      "source_path": "skills/qdrant-performance-optimization/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33a5dbf34bff2c6d9b5eafe61c63b838117c92495ee804580bbc562995e1f7ef": {
+      "description_zh": "诊断和改善Qdrant索引及摄取缓慢，检查优化器错误、HNSW构建时长、分段合并、索引阈值和上传后搜索质量。",
+      "source": "Diagnoses and fixes slow Qdrant indexing and data ingestion. Use when someone reports 'uploads are slow', 'indexing takes forever', 'optimizer is stuck', 'HNSW build time too long', or 'data uploaded but search is bad'. Also use when optimizer status shows errors, segments won't merge, or indexing threshold questions arise.",
+      "source_sha256": "33a5dbf34bff2c6d9b5eafe61c63b838117c92495ee804580bbc562995e1f7ef",
+      "source_path": "skills/qdrant-performance-optimization/indexing-performance-optimization/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c026bf3be0b4a06e203728fc2393344799c3d014f153ccb036536e21bcc109f4": {
+      "description_zh": "诊断并降低Qdrant内存占用，处理RAM增长、OOM、恢复时崩溃、与估算不符及量化后未改善等问题。",
+      "source": "Diagnoses and reduces Qdrant memory usage. Use when someone reports 'memory too high', 'RAM keeps growing', 'node crashed', 'out of memory', 'memory leak', or asks 'why is memory usage so high?', 'how to reduce RAM?'. Also use when memory doesn't match calculations, quantization didn't help, or nodes crash during recovery.",
+      "source_sha256": "c026bf3be0b4a06e203728fc2393344799c3d014f153ccb036536e21bcc109f4",
+      "source_path": "skills/qdrant-performance-optimization/memory-usage-optimization/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46c0f15108e503e784b85d6cb27286b6017da23925f67f82fd7a85c050109b60": {
+      "description_zh": "诊断和改善Qdrant慢搜索、高延迟、低QPS及过滤查询性能，适用于配置变化或数据增长后的性能退化。",
+      "source": "Diagnoses and fixes slow Qdrant search. Use when someone reports 'search is slow', 'high latency', 'queries take too long', 'low QPS', 'throughput too low', 'filtered search is slow', or 'search was fast but now it's slow'. Also use when search performance degrades after config changes or data growth.",
+      "source_sha256": "46c0f15108e503e784b85d6cb27286b6017da23925f67f82fd7a85c050109b60",
+      "source_path": "skills/qdrant-performance-optimization/search-speed-optimization/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4db31832436dcec9c52fca8f7b78ffd5ca2c7c4a629723988d7ef3acc1c70ef9": {
+      "description_zh": "指导Qdrant扩容决策，分析节点数、存储、CPU、QPS、尾延迟、租户、分片、垂直或水平扩展，以及大结果查询和时间保留窗口。",
+      "source": "Guides Qdrant scaling decisions. Use when someone asks 'how many nodes do I need', 'data doesn't fit on one node', 'need more throughput or QPS', 'CPU is pegged / can't keep up with the request rate', 'one query is slow / p99 or tail latency too high', 'cluster is slow', 'too many tenants', 'vertical or horizontal', 'how to shard', 'need to add capacity', 'large limit / pagination / scroll is slow', or 'only recent data matters / expiring old vectors / retention window'.",
+      "source_sha256": "4db31832436dcec9c52fca8f7b78ffd5ca2c7c4a629723988d7ef3acc1c70ef9",
+      "source_path": "skills/qdrant-scaling/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f843bbd515726782b531eb64de9ce2a20cfe984d39488d1189a07f610af04ed": {
+      "description_zh": "优化Qdrant查询延迟，处理单次搜索慢、p99及尾延迟过高和延迟突增。",
+      "source": "Guides Qdrant query latency optimization. Use when someone asks 'search is slow', 'how to reduce latency', 'p99 is too high', 'tail latency', 'single query too slow', 'how to make search faster', or 'latency spikes'.",
+      "source_sha256": "5f843bbd515726782b531eb64de9ce2a20cfe984d39488d1189a07f610af04ed",
+      "source_path": "skills/qdrant-scaling/minimize-latency/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c001dbed9082c54ae2758957124bc0ebc4376e4ece7ce40c9c1235275842cfc": {
+      "description_zh": "按数据规模规划Qdrant容量，比较垂直和水平扩容、租户扩展及时间窗口轮换，处理单节点放不下或数据增长超容量。",
+      "source": "Guides Qdrant data volume scaling decisions. Use when someone asks 'data doesn't fit on one node', 'too much data', 'need more storage', 'vertical or horizontal scaling', 'tenant scaling', 'time window rotation', or 'data growth exceeds capacity'.",
+      "source_sha256": "8c001dbed9082c54ae2758957124bc0ebc4376e4ece7ce40c9c1235275842cfc",
+      "source_path": "skills/qdrant-scaling/scaling-data-volume/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f05c84f0d0589fd70cfa8698ea368dd269fe3f7fabd27447dcb8ab13b635385": {
+      "description_zh": "规划Qdrant水平扩容，选择节点数和分片数，处理新增节点、重新分片及数据增长超过部署容量。",
+      "source": "Diagnoses and guides Qdrant horizontal scaling decisions. Use when someone asks 'vertical or horizontal?', 'how many nodes?', 'how many shards?', 'how to add nodes', 'resharding', 'data doesn't fit', or 'need more capacity'. Also use when data growth outpaces current deployment.",
+      "source_sha256": "4f05c84f0d0589fd70cfa8698ea368dd269fe3f7fabd27447dcb8ab13b635385",
+      "source_path": "skills/qdrant-scaling/scaling-data-volume/horizontal-scaling/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8d06215a2d2d239e7d4f40690a56f92ef5aff6527dcc0ba94032796a044a7066": {
+      "description_zh": "使用滑动时间窗口管理Qdrant数据规模，有效过期和轮换旧向量，适用于仅保留最近若干月的新闻、社交内容或日志检索。",
+      "source": "Guides sliding time window scaling in Qdrant. Use when someone asks 'only recent data matters', 'how to expire old vectors', 'time-based data rotation', 'delete old data efficiently', 'social media feed search', 'news search', 'log search with retention', or 'how to keep only last N months of data'.",
+      "source_sha256": "8d06215a2d2d239e7d4f40690a56f92ef5aff6527dcc0ba94032796a044a7066",
+      "source_path": "skills/qdrant-scaling/scaling-data-volume/sliding-time-window/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f9bdcdf6ec855c3ed718377e9b2fb2a6654152b8e3d2bbfb1490e4e7714bf71": {
+      "description_zh": "规划Qdrant多租户扩展，比较每租户集合、隔离及专属分片，处理租户性能和共享基础设施容量不足。",
+      "source": "Guides Qdrant multi-tenant scaling. Use when someone asks 'how to scale tenants', 'one collection per tenant?', 'tenant isolation', 'dedicated shards', or reports tenant performance issues. Also use when multi-tenant workloads outgrow shared infrastructure.",
+      "source_sha256": "6f9bdcdf6ec855c3ed718377e9b2fb2a6654152b8e3d2bbfb1490e4e7714bf71",
+      "source_path": "skills/qdrant-scaling/scaling-data-volume/tenant-scaling/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b85798847c8b20ec6596c03074d4f429501219c4522cd0ddb4e2186b00f1b62b": {
+      "description_zh": "规划Qdrant垂直扩容，调整节点RAM、CPU和规格，比较扩大单节点与增加节点，适用于希望减少水平扩容复杂度的场景。",
+      "source": "Guides Qdrant vertical scaling decisions. Use when someone asks 'how to scale up a node', 'need more RAM', 'upgrade node size', 'vertical scaling', 'resize cluster', 'scale up vs scale out', or when memory/CPU is insufficient on current nodes. Also use when someone wants to avoid the complexity of horizontal scaling.",
+      "source_sha256": "b85798847c8b20ec6596c03074d4f429501219c4522cd0ddb4e2186b00f1b62b",
+      "source_path": "skills/qdrant-scaling/scaling-data-volume/vertical-scaling/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68a0ed6681e87d8691e7948bf50046bc49f493fca380525c6abb2069c2d1e472": {
+      "description_zh": "扩展Qdrant查询吞吐量QPS，分析批量搜索、只读副本及更多并发请求的处理。",
+      "source": "Guides Qdrant query throughput (QPS) scaling. Use when someone asks 'how to increase QPS', 'need more throughput', 'queries per second too low', 'batch search', 'read replicas', or 'how to handle more concurrent queries'.",
+      "source_sha256": "68a0ed6681e87d8691e7948bf50046bc49f493fca380525c6abb2069c2d1e472",
+      "source_path": "skills/qdrant-scaling/scaling-qps/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1338b3229d51fc51c66f58a3a635b14d1866f93f05d1903987644e2d123d4129": {
+      "description_zh": "优化Qdrant大量查询结果处理，覆盖大limit、scroll、分页、大批向量获取及高基数结果。",
+      "source": "Guides Qdrant query volume scaling. Use when someone asks 'query returns too many results', 'scroll performance', 'large limit values', 'paginating search results', 'fetching many vectors', or 'high cardinality results'.",
+      "source_sha256": "1338b3229d51fc51c66f58a3a635b14d1866f93f05d1903987644e2d123d4129",
+      "source_path": "skills/qdrant-scaling/scaling-query-volume/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9294e606c322339ad6b8ea90bcdfa8b0017dc126c6ec8882dc76d62e751e0841": {
+      "description_zh": "诊断并改善Qdrant检索相关性、精确率和召回率，选择嵌入模型、混合搜索、融合、重排或反馈，并建立黄金集及recall@k评估，处理量化或数据增长后的质量退化。",
+      "source": "Diagnoses and improves Qdrant search relevance. Use when someone reports 'search results are bad', 'wrong results', 'low precision', 'low recall', 'irrelevant matches', 'missing expected results', or asks 'how to improve search quality?', 'which embedding model?', 'should I use hybrid search?', 'how to combine keyword and vector search / fusion / RRF / prefetch?', 'should I use reranking?', 'relevance feedback?', 'how to measure retrieval quality?', 'build a golden set', 'ground truth dataset', or 'how to score recall@k?'. Also use when search quality degrades after quantization, model change, or data growth.",
+      "source_sha256": "9294e606c322339ad6b8ea90bcdfa8b0017dc126c6ec8882dc76d62e751e0841",
+      "source_path": "skills/qdrant-search-quality/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6c8db8821009b262bab4abd41a72a2a46289107f2ae618505b6d8426e8132acb": {
+      "description_zh": "诊断Qdrant错误或缺失匹配、低召回及近似搜索劣于精确搜索，核查模型和量化影响，并用黄金集、真实标注及recall@k衡量检索质量。",
+      "source": "Diagnoses Qdrant search quality issues. Use when someone reports 'results are bad', 'wrong results', 'not relevant results', 'missing matches', 'recall is low', 'approximate search worse than exact', 'which embedding model', 'quality dropped after quantization', 'how to measure retrieval quality', 'build a golden set', 'ground truth dataset', or 'how to score recall@k'. Also use when search quality degrades without obvious changes.",
+      "source_sha256": "6c8db8821009b262bab4abd41a72a2a46289107f2ae618505b6d8426e8132acb",
+      "source_path": "skills/qdrant-search-quality/diagnosis/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "087a873078c4eb656c6f8616c8d4dce981398e26511ff434b4c905665f17ec30": {
+      "description_zh": "选择Qdrant搜索策略，处理相关性不足、遗漏关键词及结果过度相似，覆盖混合搜索、重排、MMR多样性、相关性反馈、推荐和发现API。",
+      "source": "Guides Qdrant search strategy selection. Use when someone asks 'should I use hybrid search?', 'how to rerank?', 'results are not relevant', 'I don't get needed results from my dataset but they're there', 'retrieval quality is not good enough', 'results too similar', 'need diversity', 'MMR', 'relevance feedback', 'recommendation API', 'discovery API', or 'missing keyword matches",
+      "source_sha256": "087a873078c4eb656c6f8616c8d4dce981398e26511ff434b4c905665f17ec30",
+      "source_path": "skills/qdrant-search-quality/search-strategies/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "280a7a677d67442da43c09c36ee015e94b64ee28ed1c5e970524f60149091fcf": {
+      "description_zh": "解释并配置Qdrant混合检索，结合关键词与语义、稀疏与稠密向量和多表示结果，同时说明IDF范围及租户之间的评分影响。",
+      "source": "Explains hybrid search in Qdrant. Use when someone asks 'how do I setup hybrid search?', 'how to combine keyword and semantic search?', 'sparse plus dense vectors?', 'missing keyword matches', 'how to combine results from multiple searches?' and 'combining multiple representations'. Also use for how a hybrid query is scoped: 'how is IDF scoped?', 'can one tenant's data contaminate another tenant's scoring?",
+      "source_sha256": "280a7a677d67442da43c09c36ee015e94b64ee28ed1c5e970524f60149091fcf",
+      "source_path": "skills/qdrant-search-quality/search-strategies/hybrid-search/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0eb7a28a52783e8efb424f526125c3cf4f3cd4fdc8c60b23f91f5be9e6b7693c": {
+      "description_zh": "把多路Qdrant搜索分数融合成统一排名，选择RRF、DBSF或自定义融合，处理稀疏稠密组合和融合效果不足。",
+      "source": "Fusing scores from multiple searches into a single ranked result (RRF, DBSF, custom fusion). Use when someone asks 'RRF or DBSF?', 'how to combine sparse and dense', 'how to combine scores from multiple searches?', 'custom fusion', or 'fusion is not producing good results",
+      "source_sha256": "0eb7a28a52783e8efb424f526125c3cf4f3cd4fdc8c60b23f91f5be9e6b7693c",
+      "source_path": "skills/qdrant-search-quality/search-strategies/hybrid-search/combining-searches/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0280e135e2acbf50081212b1108535e2d3772e2559cb3e780c5ddca667861b4": {
+      "description_zh": "为Qdrant混合检索构建prefetch查询，覆盖稀疏稠密及多字段组合，比较payload关键词与稀疏向量，并选择BM25或SPLADE等稀疏嵌入模型。",
+      "source": "Constructing prefetch queries for hybrid retrieval, including sparse/dense and multi-field setups, and choosing a sparse embedding model. Use when someone asks 'dense and sparse in one search?', 'how to combine multiple fields for retrieval?', 'payloads or sparse vectors for lexical?', 'which sparse embedding model to use?', or 'BM25 vs SPLADE?",
+      "source_sha256": "e0280e135e2acbf50081212b1108535e2d3772e2559cb3e780c5ddca667861b4",
+      "source_path": "skills/qdrant-search-quality/search-strategies/hybrid-search/search-types/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "350035155d5f9fcc18ec2469608eb670cdbb05be094ac37f7ce774cfe074c917": {
+      "description_zh": "使用Qdrant相关性反馈扩大初始候选池，在稠密检索较弱时评估其作为重排替代方案的适用性，用于召回改善、寻找初始结果之外的文档及反馈循环。",
+      "source": "Expanding the candidate pool via relevance feedback, as an alternative to reranking when a dense retriever is too weak. Use when someone asks about 'Qdrant's Relevance Feedback API', 'improving dense search relevance/recall', 'how to discover/get more relevant results from vector search', 'cheaper/better alternative to reranking', 'using a more heavy/big embedding model for dense search but can't afford it', 'finding more relevant documents beyond the initial search pool', or 'feedback loops'. Also trigger when the user has a search quality problem due to a dense retriever being weak and is considering reranking as a solution — this API may be a better fit",
+      "source_sha256": "350035155d5f9fcc18ec2469608eb670cdbb05be094ac37f7ce774cfe074c917",
+      "source_path": "skills/qdrant-search-quality/search-strategies/relevance-feedback/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f188069d99a2ef4c62a1fa3443b1379594b6fd80337eb943bd75c7c24a91142f": {
+      "description_zh": "在采购或部署前估算Qdrant容量，根据向量数和维度选择RAM、节点及实例类型，并复核已有估算是否足以容纳数据。",
+      "source": "Sizes a Qdrant deployment before it is provisioned. Use when someone asks 'how much RAM do I need', 'how many nodes', 'how big should my cluster be', 'sizing', 'capacity planning', 'will N vectors fit', 'what instance type should I pick', or gives a vector count and dimensions and asks what to provision. Also use when an existing estimate needs checking before hardware or a cluster tier is bought.",
+      "source_sha256": "f188069d99a2ef4c62a1fa3443b1379594b6fd80337eb943bd75c7c24a91142f",
+      "source_path": "skills/qdrant-sizing/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39ddebec01b076a6357864cd014560a0b10e46e1952ea7825092dfa85b42fe1d": {
+      "description_zh": "指导Qdrant服务器和SDK升级，核对版本兼容、客户端与服务器顺序、升级前检查及滚动可用性，并处理升级后变化，保持数据完整性。",
+      "source": "Covers upgrading Qdrant server and SDKs without interrupting availability or losing data integrity. Use when someone asks 'how do I upgrade Qdrant', 'can I jump from 1.15 to 1.18', 'rolling upgrade without downtime', 'do I upgrade the client or the server first', 'which SDK version matches my server', 'what should I check before upgrading', or 'something changed after we upgraded'.",
+      "source_sha256": "39ddebec01b076a6357864cd014560a0b10e46e1952ea7825092dfa85b42fe1d",
+      "source_path": "skills/qdrant-version-upgrade/SKILL.md",
+      "package_sha256": "6addb9d0f59d9d8612ad90aff94892b1d7e1c0fbb3ff30315a7d50ffcf3015e2",
+      "source_package": "Qdrant-1.0.0-v52.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0a7c87483b61979c98045bd018e86b637be1b5cae0c46f479018499acb71080": {
+      "description_zh": "通过QkConvert API创建ZIP压缩包或检查其内容，适用于文件打包、归档及列出包内文件。",
+      "source": "Create ZIP archives or inspect ZIP contents using the QkConvert API. Use when the user asks to \"zip files\", \"create a ZIP\", \"archive files\", \"inspect a ZIP\", \"list ZIP contents\", or needs to bundle files into a ZIP.",
+      "source_sha256": "f0a7c87483b61979c98045bd018e86b637be1b5cae0c46f479018499acb71080",
+      "source_path": "skills/archive/SKILL.md",
+      "package_sha256": "a3fc95e589cff623fabc0fa2cbfd9a6858752f0a2b7d682b7be3b3c4763c7a10",
+      "source_package": "QkConvert-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11668e1d550215c756fe967b16b3f163f12030f60a9cbe6554bc1bb1b6c16765": {
+      "description_zh": "通过QkConvert API转换、裁剪、合并、分割或音量归一化音频，也可生成波形，原说明支持MP3、WAV、FLAC、OGG、AAC和AIFF。",
+      "source": "Convert, trim, merge, split, or normalize audio using the QkConvert API. Use when the user asks to \"convert audio\", \"trim a clip\", \"merge audio files\", \"normalize volume\", \"generate a waveform\", or needs to process MP3, WAV, FLAC, OGG, AAC, or AIFF files.",
+      "source_sha256": "11668e1d550215c756fe967b16b3f163f12030f60a9cbe6554bc1bb1b6c16765",
+      "source_path": "skills/convert-audio/SKILL.md",
+      "package_sha256": "a3fc95e589cff623fabc0fa2cbfd9a6858752f0a2b7d682b7be3b3c4763c7a10",
+      "source_package": "QkConvert-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27d945bdfd1ce3497a108d80e65c77b74b52470a2ae2a22a95b47a008b629ac3": {
+      "description_zh": "通过QkConvert API在CSV、JSON、XML、YAML、XLSX、TOML及Markdown等数据格式间转换，也可将Markdown转为HTML。",
+      "source": "Convert between data formats using the QkConvert API. Use when the user asks to \"convert CSV to JSON\", \"convert JSON to YAML\", \"convert XML to CSV\", \"convert TOML to JSON\", \"convert XLSX to JSON\", \"convert Markdown to HTML\", or needs to transform between CSV, JSON, XML, YAML, XLSX, TOML, and Markdown.",
+      "source_sha256": "27d945bdfd1ce3497a108d80e65c77b74b52470a2ae2a22a95b47a008b629ac3",
+      "source_path": "skills/convert-data/SKILL.md",
+      "package_sha256": "a3fc95e589cff623fabc0fa2cbfd9a6858752f0a2b7d682b7be3b3c4763c7a10",
+      "source_package": "QkConvert-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92d89a5ac25385e46c8df4f6fe7e12c9b9372ba325d21e7abd5114254c09219a": {
+      "description_zh": "通过QkConvert API转换、缩放、优化、裁剪、加水印及批量处理图片，覆盖去EXIF、blurhash、OCR、GIF制作帧提取倒放和二维码条码生成；支持JPEG、PNG、WebP、AVIF、GIF、BMP、TIFF、ICO和SVG。",
+      "source": "Convert, resize, optimize, crop, watermark, or batch-process images using the QkConvert API. Use when the user asks to \"convert an image\", \"resize a photo\", \"compress an image\", \"convert PNG to WebP\", \"strip EXIF\", \"add watermark\", \"crop an image\", \"generate blurhash\", \"OCR an image\", \"create a GIF\", \"extract GIF frames\", \"reverse a GIF\", \"batch convert\", \"generate QR code\", \"create barcode\", \"make QR\", or needs to transform image files. Supports JPEG, PNG, WebP, AVIF, GIF, BMP, TIFF, ICO, SVG.",
+      "source_sha256": "92d89a5ac25385e46c8df4f6fe7e12c9b9372ba325d21e7abd5114254c09219a",
+      "source_path": "skills/convert-image/SKILL.md",
+      "package_sha256": "a3fc95e589cff623fabc0fa2cbfd9a6858752f0a2b7d682b7be3b3c4763c7a10",
+      "source_package": "QkConvert-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16c101c4fedc6590ccdf790a97d0905645bd04e655d366f6198a5c911ad65218": {
+      "description_zh": "通过QkConvert API计算文件MD5、SHA-1、SHA-256、SHA-512或CRC32校验值，用于完整性核验和文件比较。",
+      "source": "Compute cryptographic hashes of a file using the QkConvert API. Use when the user asks to \"hash a file\", \"get a checksum\", \"calculate SHA-256\", \"verify file integrity\", \"get MD5\", \"compare file checksums\", or needs MD5, SHA-1, SHA-256, SHA-512, or CRC32.",
+      "source_sha256": "16c101c4fedc6590ccdf790a97d0905645bd04e655d366f6198a5c911ad65218",
+      "source_path": "skills/hash-file/SKILL.md",
+      "package_sha256": "a3fc95e589cff623fabc0fa2cbfd9a6858752f0a2b7d682b7be3b3c4763c7a10",
+      "source_package": "QkConvert-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50d40af05111d056f97ae8b58b8bed2dcf6c7571c80d84f7818a2334e584ac37": {
+      "description_zh": "通过QkConvert API合并、拆分、压缩、文本提取及保护PDF，支持图片互转、水印、密码保护，以及Word或Office转PDF。",
+      "source": "Process PDF documents using the QkConvert API. Use when the user asks to \"merge PDFs\", \"split a PDF\", \"compress a PDF\", \"extract text from PDF\", \"convert PDF to images\", \"add watermark to PDF\", \"create PDF from images\", \"convert text to PDF\", \"protect a PDF\", \"password protect PDF\", \"convert Word to PDF\", or \"convert Office to PDF\".",
+      "source_sha256": "50d40af05111d056f97ae8b58b8bed2dcf6c7571c80d84f7818a2334e584ac37",
+      "source_path": "skills/process-document/SKILL.md",
+      "package_sha256": "a3fc95e589cff623fabc0fa2cbfd9a6858752f0a2b7d682b7be3b3c4763c7a10",
+      "source_package": "QkConvert-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa1d88aa97d8f494d8b9bd488d4fe2df1a5fb34b365edb6a2a3a79809fded1d8": {
+      "description_zh": "为Qlik加载后数据质量验证提供查询和脚本模式，检查空值率、引用完整性、分布、行数、孤儿记录、稀疏字段及重复；有MCP或加载后访问时可查询，也可将检查嵌入加载脚本。",
+      "source": "Post-load data quality validation patterns for Qlik development. Provides query templates for null rate analysis, referential integrity checks, value distribution analysis, row count validation, orphaned record detection, sparse field identification, and duplicate detection. Usable by the qa-reviewer when MCP or post-load data access is available. Also provides patterns for embedding validation checks directly into load scripts. Load when performing data quality validation or writing diagnostic scripts.",
+      "source_sha256": "fa1d88aa97d8f494d8b9bd488d4fe2df1a5fb34b365edb6a2a3a79809fded1d8",
+      "source_path": "skills/data-quality-validator/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "063915450867d25010e95e6c3726244d9b3bce1bd658459ef484bde4f3051851": {
+      "description_zh": "记录既有Qlik平台规范，整理应用清单、共享子程序、命名映射、数据连接、QVD存储及组织编码标准，供需求阶段理解背景和开发阶段兼容平台。",
+      "source": "Captures existing platform patterns for brownfield Qlik projects. Provides structured templates for documenting existing app inventory, shared subroutine catalogs, naming convention maps, data connection standards, QVD storage conventions, and organizational coding standards. Used by requirements-analyst during Phase 0 context ingestion and by script-developer during Phase 4 for platform compatibility. Load when ingesting platform context or writing scripts that must integrate with existing platform conventions.",
+      "source_sha256": "063915450867d25010e95e6c3726244d9b3bce1bd658459ef484bde4f3051851",
+      "source_path": "skills/platform-conventions/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e5d1c6cb6c2b749481abe6b6ea51fc0c9d73e72f8ef52dd959a0b9c87819840": {
+      "description_zh": "登记Qlik Cloud MCP能力，将工具映射到开发阶段，说明检测、调用顺序及实测陷阱，覆盖表达式验证、参考应用分析、可视化搭建和数据质量检查。",
+      "source": "Capability registry for the Qlik Cloud MCP server. Maps MCP tools to pipeline phases, provides MCP detection patterns, documents behavioral gotchas not covered by tool definitions, and defines multi-step workflows for expression validation, reference app analysis, visualization scaffolding, and data quality checks. Load whenever an agent needs to interact with a live Qlik Cloud tenant. The tool definitions themselves document parameters, response structures, and basic usage -- this skill covers framework integration, sequencing, and pitfalls discovered through live testing.",
+      "source_sha256": "5e5d1c6cb6c2b749481abe6b6ea51fc0c9d73e72f8ef52dd959a0b9c87819840",
+      "source_path": "skills/qlik-cloud-mcp/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a92573859abc82819d6928be77c7773b9266aad96f0f724fcb13b2e5855b9af2": {
+      "description_zh": "指导Qlik Sense数据模型设计及审查，涵盖星型模式、键解析、合成键预防、QVD分层、多应用架构、源架构消费及关联引擎行为。",
+      "source": "Star schema patterns, key resolution strategies, synthetic key prevention, QVD layer design, multi-app architecture patterns, source architecture consumption strategies, and associative engine behavior for Qlik Sense data modeling. Load when designing or reviewing data models.",
+      "source_sha256": "a92573859abc82819d6928be77c7773b9266aad96f0f724fcb13b2e5855b9af2",
+      "source_path": "skills/qlik-data-modeling/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59f3b2dcf8aea1e3f708fcfd94a9245bbb75d61916b2453859b0c7eef72ab74f": {
+      "description_zh": "提供Qlik Sense Cloud和客户自管环境部署流程，包括应用导入、数据连接、任务排期、安全、开发测试生产晋级、QVD存储及部署后验证，用于部署材料和运行手册。",
+      "source": "Deployment procedures for Qlik Sense Cloud and client-managed environments. Covers app import, data connection setup, task scheduling, security configuration, environment promotion (dev/test/prod), QVD storage setup, and post-deployment validation. Invoke manually with /qlik-deploy when preparing deployment artifacts or writing operational runbooks.",
+      "source_sha256": "59f3b2dcf8aea1e3f708fcfd94a9245bbb75d61916b2453859b0c7eef72ab74f",
+      "source_path": "skills/qlik-deploy/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6db1899fe86df305600c643872d810564b64ad2064ce0184c82250e638ba6f56": {
+      "description_zh": "指导Qlik表达式编写与审查，覆盖集合分析、聚合、TOTAL、Aggr、条件、空值、美元符号展开、性能及计算条件，识别常见反模式。",
+      "source": "Set analysis syntax and patterns, aggregation functions, TOTAL qualifier usage, Aggr() patterns, conditional expressions, null handling in expressions, dollar-sign expansion, expression performance optimization, calculation conditions, and common anti-patterns for Qlik Sense expression development. Load when writing or reviewing Qlik expressions.",
+      "source_sha256": "6db1899fe86df305600c643872d810564b64ad2064ce0184c82250e638ba6f56",
+      "source_path": "skills/qlik-expressions/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2e9f33bc58c4332eefecec8c3efeda8e66f31bddcae7f1846860a7f33e23606": {
+      "description_zh": "提供Qlik加载脚本参考，覆盖QVD优化、插入更新删除及SCD2双时间戳增量、主日历、变量、日志、空值、诊断、子程序和防御性质量检查，并说明SET/LET及展开时机限制。",
+      "source": "Script syntax reference, QVD optimization, incremental load patterns (insert-only, insert/update, insert/update/delete, dual-timestamp for SCD2), master calendar generation, variable definitions, error handling, logging patterns, null handling patterns, diagnostic and validation patterns, subroutine integration, and platform gotchas (SET vs LET, dollar-sign expansion timing, SET variable comma limitation). Load when writing, reviewing, or debugging Qlik load scripts, QVD operations, STORE/LOAD syntax, preceding LOAD, NullAsValue, script organization, or data quality defensive coding.",
+      "source_sha256": "e2e9f33bc58c4332eefecec8c3efeda8e66f31bddcae7f1846860a7f33e23606",
+      "source_path": "skills/qlik-load-script/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5156c69a5f79878394d8a874a8811c061a3cf01e5f4b0ee2c5e370358c531f30": {
+      "description_zh": "规范Qlik字段实体点前缀、表名、v变量、%键和文件名，梳理从来源到抽取转换模型及UI的跨层映射、Mapping RENAME和变量字段对齐。",
+      "source": "Field naming with entity-prefix dot notation, table naming, variable naming (v prefix), expression naming, file naming (.qvs, QVD), key field conventions (% prefix, HideSuffix), cross-layer field mapping from source through extract/transform/model to UI, field rename layer using Mapping RENAME, variable-to-field-name alignment, and naming anti-patterns. Load when naming, renaming, prefixing, aliasing, or mapping fields, tables, variables, or expressions in Qlik Sense.",
+      "source_sha256": "5156c69a5f79878394d8a874a8811c061a3cf01e5f4b0ee2c5e370358c531f30",
+      "source_path": "skills/qlik-naming-conventions/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01a61efef227f30d8f32dda73f7dc7246d6113374aa0a140253872dcce52f6fc": {
+      "description_zh": "优化Qlik性能，以基础RAM、峰值RAM和重载时间三指标分析键编码、QVD优化加载、表达式、缓存、内存安排及数据精简。",
+      "source": "Performance optimization for Qlik Sense: three-metric framework (Base RAM, Peak RAM, Reload Time), key encoding hierarchy, QVD optimized load rules, expression performance (If vs set analysis, Aggr caution, master items for caching), memory choreography, and data reduction techniques. Load when optimizing or reviewing performance-sensitive artifacts.",
+      "source_sha256": "01a61efef227f30d8f32dda73f7dc7246d6113374aa0a140253872dcce52f6fc",
+      "source_path": "skills/qlik-performance/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae040ec2a5f4db24c86c5ea223a9457ee2d503399895e8505eb41a0453bb05de": {
+      "description_zh": "按标准目录、输入子目录、产物阶段和依赖跟踪模板初始化Qlik项目。",
+      "source": "Initialize a new Qlik project with standard directory structure, input subdirectories, artifact phases, and dependency tracking template.",
+      "source_sha256": "ae040ec2a5f4db24c86c5ea223a9457ee2d503399895e8505eb41a0453bb05de",
+      "source_path": "skills/qlik-project-scaffold/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a92f70036977d6257072ec6c81f1dfe0a298377e0d16c9b2c6c3c854d9eb7b4": {
+      "description_zh": "提供Qlik开发完整QA清单，检查数据模型、命名、脚本、表达式、安全、跨产物一致性、阻塞依赖和数据质量，可由审查代理或手动调用。",
+      "source": "Complete QA checklist used by the qa-reviewer agent for validating Qlik development artifacts. Covers data model integrity, naming convention compliance, script quality, expression correctness, security gaps, cross-artifact consistency, blocked dependency audit, and data quality validation. Also available for manual invocation outside the pipeline via /qlik-review-checklist.",
+      "source_sha256": "1a92f70036977d6257072ec6c81f1dfe0a298377e0d16c9b2c6c3c854d9eb7b4",
+      "source_path": "skills/qlik-review-checklist/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dbe0f523be3c5c58ee65d4d85a827d47035a1c8dcbbd0ae550b8168284f8da2d": {
+      "description_zh": "设计和审查Qlik安全配置，覆盖Section Access、行级安全、数据精简、OMIT字段、混合模型及云与自管差异。",
+      "source": "Section access patterns, row-level security, data reduction, OMIT field usage, hybrid security models, and Cloud vs. client-managed security differences. Use when designing or reviewing security configurations.",
+      "source_sha256": "dbe0f523be3c5c58ee65d4d85a827d47035a1c8dcbbd0ae550b8168284f8da2d",
+      "source_path": "skills/qlik-security/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fac987c1141cfa35eb110904476471967b04a69114c48313dac8033d5fad25f": {
+      "description_zh": "依据数据关系选择Qlik图表，设计布局响应式、可访问颜色格式及过滤器，提供无障碍实践和参考应用反向分析模式。",
+      "source": "Chart type selection guide with decision criteria based on data relationships, layout patterns and responsive design, color and formatting standards including accessibility-safe palettes, filter design strategies, responsive mode behavior, accessibility best practices, and reference app reverse-engineering patterns for Qlik Sense visualization design. Load when designing or reviewing sheets, visualizations, and filter panes.",
+      "source_sha256": "2fac987c1141cfa35eb110904476471967b04a69114c48313dac8033d5fad25f",
+      "source_path": "skills/qlik-visualization/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62ab7d7d05237d084aaf360f533aed17f1c3aa44d4c74a131469c9f7a11f7ccd": {
+      "description_zh": "为Qlik开发探查数据源模式、类型、基数、空值、样例及质量；有MCP时执行模板查询，无连接时生成手工填写模板，并记录表架构角色、键、可变性和增量消费方式。",
+      "source": "Data source profiling capability for Qlik development. When MCP connections are available, provides query templates and profiling procedures to assess source schemas, field types, cardinality, null rates, sample values, and data quality indicators. When MCP is unavailable, generates a structured Source Profile Template for manual completion. Includes source architecture classification (annotating tables with architectural role, key structure, mutability, incremental load pattern, and consumption implications). Load during requirements gathering or source profiling phases.",
+      "source_sha256": "62ab7d7d05237d084aaf360f533aed17f1c3aa44d4c74a131469c9f7a11f7ccd",
+      "source_path": "skills/source-profiler/SKILL.md",
+      "package_sha256": "ef81caf1263141bf5852552b9cb9f1675ac2873ee5bc49ad95bcfcefa881d273",
+      "source_package": "Qlik Agents-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7c571de1ef0e75183c2240fb12c8dcb439da89fb057e985be5bc570b85f875a7": {
+      "description_zh": "获取并应用与实施、规划、重构或审查相关的Qodo编码规则，同工作区仓库和任务范围内复用既有规则，范围变化时刷新。",
+      "source": "Retrieve and apply Qodo coding rules relevant to implementation, planning, refactoring, or code review. Use on \"get rules\", \"load qodo rules\", or \"relevant standards\" and when starting a concrete coding task. Reuse rules already retrieved for the same workspace, repository, and task scope; refresh when that scope changes.",
+      "source_sha256": "7c571de1ef0e75183c2240fb12c8dcb439da89fb057e985be5bc570b85f875a7",
+      "source_path": "skills/qodo-get-rules/SKILL.md",
+      "package_sha256": "114276014cfd2cfb49b8361c1a504cd6a3f0088584a04ad913fa50b6624a4504",
+      "source_package": "Qodo Standards-2.0.12-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "44d5512ac624043a976b9e8499e7433aec3bd0ee78969b4a9beeb09d816dc1fa": {
+      "description_zh": "用Qodo CLI管理审查规则，创建、修改、停用、调整仓库范围和严重级别，并接受或拒绝待定建议；只处理规则实体变更，读取应用规则另用对应技能。",
+      "source": "Create, edit, and administer Qodo Review Standards from conversation — capture a convention just discussed as a new rule, change or deactivate an existing one, re-scope rules to a repo, and triage pending suggestions (accept/reject) — using the qodo CLI's managed rules tools. Use on \"make this a rule\", \"make a rule for this repo\", \"deactivate/disable the X rule\", \"change the X rule to an error\", \"re-scope the X rule to this repo\", \"show pending suggestions\", \"let's triage suggestions\", \"accept/reject this suggestion\", or \"bulk deactivate rules\"; skip reading or applying rules (use qodo-get-rules) and anything that isn't a rules-entity change.",
+      "source_sha256": "44d5512ac624043a976b9e8499e7433aec3bd0ee78969b4a9beeb09d816dc1fa",
+      "source_path": "skills/qodo-manage-standards/SKILL.md",
+      "package_sha256": "114276014cfd2cfb49b8361c1a504cd6a3f0088584a04ad913fa50b6624a4504",
+      "source_package": "Qodo Standards-2.0.12-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e023ff5e2318b67212e4eda6b2880e49bcaf4433b911aac932abc6b0f6da3fb": {
+      "description_zh": "用Qodo CLI受管工具理解代码、历史实现和仓库耦合，支持问答、变更规划、回归诊断及修复范围分析，尤其适用于未签出仓库或跨仓库工作。",
+      "source": "Understand how code works, how a change was done before, and which repos are coupled — to answer a question, plan a code change, debug a regression, or scope a fix, using the qodo CLI's managed tools. Use when a task needs to understand a codebase, its history, or how its repos relate — especially for a repo you don't have checked out or work spanning repos — \"how does X work\", \"where is X defined\", \"who changed X\", \"explain this service\", \"plan the change for X\", \"what would changing X affect\", \"which repos depend on X\", \"why did X regress / when did it break\", \"has this been fixed before\", \"how did we solve X\".",
+      "source_sha256": "4e023ff5e2318b67212e4eda6b2880e49bcaf4433b911aac932abc6b0f6da3fb",
+      "source_path": "skills/qodo-codebase-wisdom/SKILL.md",
+      "package_sha256": "e4987326c0c0eb394ed569f398a0b34751da5f046e86a94f0e30e85f1db55600",
+      "source_package": "Qodo-2.0.12-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3be3a9a4c062ff62d07f4512e06c7c19b7b76f9534cac5257a3efc49e872813e": {
+      "description_zh": "通过Qodo CLI读取PR审查状态、已审提交SHA和JSON发现，可带详细证据，再选择处理未关闭事项并记录结果，单次或循环至清理完成；原说明不用抓取评论替代结构化接口。",
+      "source": "Read or resolve a pull request's Qodo review with the qodo CLI — fetch structured status, reviewed commit SHA, and findings for ANY PR as JSON, with optional extended details and citation evidence for audits, then optionally resolve open findings and record outcomes, once or until clean. Use this — never `gh`/`curl` scraping of review comments — for \"is the review clean on PR",
+      "source_sha256": "3be3a9a4c062ff62d07f4512e06c7c19b7b76f9534cac5257a3efc49e872813e",
+      "source_path": "skills/qodo-review-resolver/SKILL.md",
+      "package_sha256": "e4987326c0c0eb394ed569f398a0b34751da5f046e86a94f0e30e85f1db55600",
+      "source_package": "Qodo-2.0.12-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27dfc5dbded81d3ef4dbcd96f588f66e1a84b2cfaf14a1d2317963fec0b4547f": {
+      "description_zh": "在实质编码里程碑、PR前及交接前用Qodo审查本地变更，后台做轻量检查点并结合会话评估发现，交接前最终审查；PR既有发现转交resolver技能。",
+      "source": "Review local changes with Qodo during substantive coding milestones and before a PR or completed-work handoff. Use light background checkpoints while coding, collect and assess findings with session context, and run a final review before handing off. Also use for \"review my local diff\", \"pre-PR review\", or \"run qodo review\". Use qodo-review-resolver for findings already posted on a PR.",
+      "source_sha256": "27dfc5dbded81d3ef4dbcd96f588f66e1a84b2cfaf14a1d2317963fec0b4547f",
+      "source_path": "skills/qodo-review/SKILL.md",
+      "package_sha256": "e4987326c0c0eb394ed569f398a0b34751da5f046e86a94f0e30e85f1db55600",
+      "source_package": "Qodo-2.0.12-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f4c134ed3356a0c1197b452bfac319793439168ab4bd327f4997e865c162779": {
+      "description_zh": "在编码代理中设置Qodo，安装CLI、登录并验证工具，适用于初次安装及缺少CLI或认证时。",
+      "source": "Set up Qodo in a coding agent — install the CLI, sign in, and verify tools. Use after plugin installation, on setup requests, or when a Qodo skill finds a missing CLI or login.",
+      "source_sha256": "5f4c134ed3356a0c1197b452bfac319793439168ab4bd327f4997e865c162779",
+      "source_path": "skills/qodo-setup/SKILL.md",
+      "package_sha256": "e4987326c0c0eb394ed569f398a0b34751da5f046e86a94f0e30e85f1db55600",
+      "source_package": "Qodo-2.0.12-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71f45474adbea2e3c2681598e0d6522744cf3e9071311fb85546b38918c7c17b": {
+      "description_zh": "生成或更新Qt 6 CMake项目，编辑CMakeLists.txt、加入源码资源并定义可执行程序、QML模块或库目标。",
+      "source": "Use to generate or update Qt 6 CMake projects or edit CMakeLists.txt, add sources/resources or define targets (executable, QML module, library).",
+      "source_sha256": "71f45474adbea2e3c2681598e0d6522744cf3e9071311fb85546b38918c7c17b",
+      "source_path": "skills/qt-cmake-project/SKILL.md",
+      "package_sha256": "528deaf4a1c976ab9bb8e90524a64b7c2870e9a494849f8c170f7aec63e03020",
+      "source_package": "Qt Development Skills-1.6.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2f0d4e79be02fc5c8933e79410c079a46038ecc41ad952186e958dcaa7739fd": {
+      "description_zh": "为Qt/C++头文件、源码、Widgets类、Quick后端、模块、工具函数、结构体或main入口生成独立Markdown参考文档，支持单文件、粘贴代码及项目目录；不输出QDoc格式。",
+      "source": "Generates standalone Markdown reference documentation for any Qt/C++ source files — Qt Widgets classes, Qt Quick backends, Qt/C++ modules, plain C++ utilities, structs, free-function headers, and entry points like main.cpp. Use this skill to document any .h or .cpp file: Qt classes, plain C++ code, utility helpers, or application startup files. Triggers on: \"document this class\", \"write docs for my C++\", \"document main.cpp\", \"C++ API docs\", \"document my Qt app\", or whenever C++ or header files are provided and documentation is needed. Works with single files, pasted code, or entire project folders. DO NOT use if the user asks for QDoc format output.",
+      "source_sha256": "c2f0d4e79be02fc5c8933e79410c079a46038ecc41ad952186e958dcaa7739fd",
+      "source_path": "skills/qt-cpp-docs/SKILL.md",
+      "package_sha256": "528deaf4a1c976ab9bb8e90524a64b7c2870e9a494849f8c170f7aec63e03020",
+      "source_package": "Qt Development Skills-1.6.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3fa020875ec9110c9feb293a8edc9778a7d2d2c51206a8aea80a9bca72fdb175": {
+      "description_zh": "只读审查Qt6 C++代码，先运行原说明的60余项确定性检查，再由六个并行分析代理审查模型约定、所有权、线程、API、错误和性能，仅报告高置信问题及缓解措施，不改代码。",
+      "source": "Invoke when the user asks to review, check, audit, or look over Qt6 C++ code — or suggest before committing. Runs deterministic linting (60+ rules) then six parallel deep- analysis agents covering model contracts, ownership, threading, API correctness, error handling, and performance. Reports only high-confidence issues (>80/100) with structured mitigations. Read-only — never modifies code.",
+      "source_sha256": "3fa020875ec9110c9feb293a8edc9778a7d2d2c51206a8aea80a9bca72fdb175",
+      "source_path": "skills/qt-cpp-review/SKILL.md",
+      "package_sha256": "528deaf4a1c976ab9bb8e90524a64b7c2870e9a494849f8c170f7aec63e03020",
+      "source_package": "Qt Development Skills-1.6.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8f834a70a64184bc8dbeb09d860a8426db641bd05a1e3c6a23585f050189a5f": {
+      "description_zh": "从Figma设计系统逐个读取组件并生成QML控件，映射变体、状态、尺寸及token到Qt Quick Controls 2；前提是已有design-tokens.json和QML设计系统单例。",
+      "source": "Extract component metadata from a Figma design system and generate production-ready QML controls. Use this skill whenever someone wants to turn Figma components into QML files — whether they say \"generate components from Figma\", \"create QML controls based on a design system\", \"convert Figma components to QML\", \"build the component library\", \"extract button/input/checkbox from Figma\", or anything similar. Requires design-tokens.json and QML design system singletons to already exist (from the token extraction skill). Uses Figma MCP to inspect components one at a time and maps variants, states, sizing, and token usage to idiomatic Qt Quick Controls 2 patterns. Trigger this skill at the component generation step of any QML design-system workflow.",
+      "source_sha256": "d8f834a70a64184bc8dbeb09d860a8426db641bd05a1e3c6a23585f050189a5f",
+      "source_path": "skills/qt-figma-component-generation/SKILL.md",
+      "package_sha256": "528deaf4a1c976ab9bb8e90524a64b7c2870e9a494849f8c170f7aec63e03020",
+      "source_package": "Qt Development Skills-1.6.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
