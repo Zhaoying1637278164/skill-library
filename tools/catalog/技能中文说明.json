@@ -84769,6 +84769,1086 @@
       "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
       "source_package": "Writing Skills-0.6.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de501b17564f89d99d2ec7b5b85fe809209a7ae806acb4eb9501ac8c8514a5af": {
+      "description_zh": "写作技能的未填写模板：要求用一句话说明产物及采用的标准或角色，并补充具体触发语句和适用场景；原文尚无实际用途，不能视为可直接使用的完成技能。",
+      "source": "One sentence stating what this skill produces and per which standard or character. Use when the user [concrete trigger situations, the actual phrases they'd type, and the contexts where this beats default prose].",
+      "source_sha256": "de501b17564f89d99d2ec7b5b85fe809209a7ae806acb4eb9501ac8c8514a5af",
+      "source_path": "template/SKILL.md",
+      "package_sha256": "c43616fbd0c88d6a07f37a5ff020586e4bab7cbe35b9010087caaf5dcf9e6a10",
+      "source_package": "Writing Skills-0.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5bec6fe64e008dac947f1b48cd6dbf07dcebf2f316f1445cce70d034bef4ce92": {
+      "description_zh": "用于备忘录、规格、PRD、操作文档、管理层摘要、提案、项目计划及结构化商务交付物，检查读者意图、决策支持、可执行性和证据。",
+      "source": "Use for memos, specs, PRDs, operating docs, executive summaries, proposals, project plans, and structured business deliverables where reader intent, decisions, actionability, and evidence matter.",
+      "source_sha256": "5bec6fe64e008dac947f1b48cd6dbf07dcebf2f316f1445cce70d034bef4ce92",
+      "source_path": "skills/business-writing-intent-enforcer/SKILL.md",
+      "package_sha256": "8ef03110ee4c4ff88bf57950797057043d0f89e578aa44de165bd11f5c194f58",
+      "source_package": "writing-quality-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5ba0751c28526b6a62fc45135c10ae517049f4afd9586a6372aa2bf1e581de5": {
+      "description_zh": "区分文章中有依据、无依据、不确定及非事实陈述，在写作可能超出所供资料、用户要求主张审计或涉及当前重要事实时生成经验证的主张台账，同时避免将普通编辑变为无必要的研究。",
+      "source": "Separates supported, unsupported, uncertain, and non-factual statements in prose. Use when editing or drafting could introduce factual claims beyond supplied sources, when a user asks for a claim audit, or when current and high-stakes facts need explicit boundaries. Produces a validated claim ledger without turning ordinary writing work into unnecessary research.",
+      "source_sha256": "f5ba0751c28526b6a62fc45135c10ae517049f4afd9586a6372aa2bf1e581de5",
+      "source_path": "skills/claim-boundary-checker/SKILL.md",
+      "package_sha256": "8ef03110ee4c4ff88bf57950797057043d0f89e578aa44de165bd11f5c194f58",
+      "source_package": "writing-quality-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68913964c769bf59b15c5a6d90670f5321bbf9add4dfba6772db68a1087296d4": {
+      "description_zh": "按本地完整47种Unslop模式检查或改写普通文章，保留来源支持的语气和需精确保留的材料；支持仅报告的DETECT检查模式，只有获得改写授权才使用REWRITE。",
+      "source": "Applies the complete local 47-pattern Unslop method to ordinary prose while preserving source-backed voice and exact protected material. Use when the user asks to humanize, tighten, clean up, remove AI patterns, make prose sound like them, audit writing without rewriting, or validate a draft. Supports DETECT for report-only review and REWRITE only when the user authorizes prose changes.",
+      "source_sha256": "68913964c769bf59b15c5a6d90670f5321bbf9add4dfba6772db68a1087296d4",
+      "source_path": "skills/writing-enforcer/SKILL.md",
+      "package_sha256": "8ef03110ee4c4ff88bf57950797057043d0f89e578aa44de165bd11f5c194f58",
+      "source_package": "writing-quality-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fef356283fc32cd6d4859f74407d3deb6b7b4c5c2e2ccb2ee2fdb116dc2025c": {
+      "description_zh": "将写作请求分派到意图结构设计、改写、仅检测评审或验证流程，适用于介入程度不清的起草、精简和润色任务，保留来源主张并分开诊断与修改。",
+      "source": "Routes writing requests to intent architecture, rewriting, detect-only review, or validation. Use when a user asks to draft, rewrite, tighten, humanize, review, or quality-check prose and the correct degree of intervention is unclear. Preserves source claims, separates diagnosis from mutation, and validates the route before execution.",
+      "source_sha256": "2fef356283fc32cd6d4859f74407d3deb6b7b4c5c2e2ccb2ee2fdb116dc2025c",
+      "source_path": "skills/writing-quality-router/SKILL.md",
+      "package_sha256": "8ef03110ee4c4ff88bf57950797057043d0f89e578aa44de165bd11f5c194f58",
+      "source_package": "writing-quality-0.2.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbdb17ba22affe022b3d3e49dc4af70e6354f0edd93f9e7a777dcd8131c6f9aa": {
+      "description_zh": "在Wyatt工作区查找、读取、总结、创建和安全编辑Markdown文档，用于查找知识、处理既有文档或保存新资料。",
+      "source": "Find, read, summarize, create, and safely edit markdown documents in a Wyatt workspace. Use when the user wants to locate workspace knowledge, work with a Wyatt document, or save new material into Wyatt.",
+      "source_sha256": "cbdb17ba22affe022b3d3e49dc4af70e6354f0edd93f9e7a777dcd8131c6f9aa",
+      "source_path": "skills/wyatt-documents/SKILL.md",
+      "package_sha256": "f4dfc47f6b1efb7289c5217d9853c67cc93a9e022e0ba30abf2770f5890d8eff",
+      "source_package": "Wyatt-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "647b19accdf3f9cdde519fd900a0f689012f5f82885baf3bb3fc743883fff60e": {
+      "description_zh": "查看、创建、更新和解决Wyatt工作区任务，理解下一优先行动，并可将持久任务交给后台Wyatt代理异步处理。",
+      "source": "Inspect, create, update, and resolve tasks in a Wyatt workspace, understand prioritized next actions, and delegate durable work to a background Wyatt agent. Use when the user asks what is on their plate, wants task status, wants to add or complete a Wyatt task, or asks Wyatt to run work asynchronously.",
+      "source_sha256": "647b19accdf3f9cdde519fd900a0f689012f5f82885baf3bb3fc743883fff60e",
+      "source_path": "skills/wyatt-tasks/SKILL.md",
+      "package_sha256": "f4dfc47f6b1efb7289c5217d9853c67cc93a9e022e0ba30abf2770f5890d8eff",
+      "source_package": "Wyatt-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85d47ac5573ccf209b775aecc651eaeaebecf28e6e56888e1b10e49ca41d4f0a": {
+      "description_zh": "连接并定位Wyatt工作区，读取概览、近期文档、开放任务和优先行动，用于开始工作、追踪近况或理解工作区当前情况。",
+      "source": "Connect to a Wyatt workspace and get oriented by resolving the workspace and loading its overview, recent documents, open tasks, and prioritized next actions. Use at the start of Wyatt work or when the user asks to connect, catch up, or understand what is happening in a workspace.",
+      "source_sha256": "85d47ac5573ccf209b775aecc651eaeaebecf28e6e56888e1b10e49ca41d4f0a",
+      "source_path": "skills/wyatt-workspace/SKILL.md",
+      "package_sha256": "f4dfc47f6b1efb7289c5217d9853c67cc93a9e022e0ba30abf2770f5890d8eff",
+      "source_package": "Wyatt-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6221058e75f757a40589ca323984345606f975aa9c816dd46b863b9d9d3f2bcc": {
+      "description_zh": "根据社区洞察和趋势为X/Twitter起草帖子、线程、回复及内容日历，适配指定社区语气并制定周发布计划。",
+      "source": "Generate X (Twitter) content based on community insights and trends. Use this skill when the user asks to \"write a tweet\", \"create X content\", \"generate posts for X\", \"draft a thread\", \"write something for Twitter\", \"create a content calendar for X\", \"draft replies for X\", \"help me post on X\", \"write posts that match this community\", \"generate engagement content\", \"create a posting schedule\", \"write a reply to this tweet\", or any request to create content for X/Twitter. Also trigger when the user wants to generate content that matches a specific community's tone, create a weekly posting plan, or draft engagement replies.",
+      "source_sha256": "6221058e75f757a40589ca323984345606f975aa9c816dd46b863b9d9d3f2bcc",
+      "source_path": "skills/x-content-generator/SKILL.md",
+      "package_sha256": "9ab27dd51dcaffd69195d1c79957b79f45e9dfaefd27f4c57eb7699267c1a7ee",
+      "source_package": "x-content-intelligence-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "535364f2e091c8e6e98b578ff949dbf572eb41f6aa07b8a527ef74d190ba5312": {
+      "description_zh": "采集并分析X/Twitter内容，研究帖子、时间线、社区、指定账号、互动模式和热门主题，用于趋势洞察及话题研究。",
+      "source": "Scrape and analyze X (Twitter) content for insights. Use this skill when the user asks to \"scrape X\", \"analyze tweets\", \"scan my X feed\", \"get X insights\", \"what's trending on X\", \"analyze this X community\", \"research X topics\", \"find popular posts on X\", \"scan X for trends\", \"what are people saying about X topic\", \"community analysis on X\", or any request to gather and analyze content from X/Twitter. Also trigger when the user wants to understand engagement patterns, discover trending topics, analyze a specific account's content, or scan X for information on any subject.",
+      "source_sha256": "535364f2e091c8e6e98b578ff949dbf572eb41f6aa07b8a527ef74d190ba5312",
+      "source_path": "skills/x-insights/SKILL.md",
+      "package_sha256": "9ab27dd51dcaffd69195d1c79957b79f45e9dfaefd27f4c57eb7699267c1a7ee",
+      "source_package": "x-content-intelligence-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0922c7775d0b408653f4e570e36aa1bb898c1c74f33ba4fbcb23ee07a1fd1845": {
+      "description_zh": "检查与Xestando的连接，并展示当前可执行的功能。",
+      "source": "Comprueba la conexión con Xestando y muestra qué puedes hacer desde aquí",
+      "source_sha256": "0922c7775d0b408653f4e570e36aa1bb898c1c74f33ba4fbcb23ee07a1fd1845",
+      "source_path": "skills/conectar/SKILL.md",
+      "package_sha256": "a7fc70f74e1228c7d2b1a88ace36e167dcb4182daf6304473511bafb5f711173",
+      "source_package": "Xestando-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8931d0e6edb025e439b7dede1e2e40f18189bf5d964d9402861793167f1af28": {
+      "description_zh": "搜索Xestando中的企业知识及规章制度。",
+      "source": "Busca en el conocimiento y las normas de la empresa en Xestando",
+      "source_sha256": "d8931d0e6edb025e439b7dede1e2e40f18189bf5d964d9402861793167f1af28",
+      "source_path": "skills/conocimiento/SKILL.md",
+      "package_sha256": "a7fc70f74e1228c7d2b1a88ace36e167dcb4182daf6304473511bafb5f711173",
+      "source_package": "Xestando-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "293dba4e3dd8f6d58b8f9c6b393cb89bf2b343d17d4167590156c41958bff55f": {
+      "description_zh": "根据描述或文件在Xestando中准备发票。",
+      "source": "Prepara una factura en Xestando a partir de una descripción o de un fichero",
+      "source_sha256": "293dba4e3dd8f6d58b8f9c6b393cb89bf2b343d17d4167590156c41958bff55f",
+      "source_path": "skills/factura/SKILL.md",
+      "package_sha256": "a7fc70f74e1228c7d2b1a88ace36e167dcb4182daf6304473511bafb5f711173",
+      "source_package": "Xestando-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af8d030ddbf6f5494ab2af6a123bf056ac475fe2a3a9074bb1af3ada0f19bf4d": {
+      "description_zh": "查询Xestando的客户、供应商及员工资料。",
+      "source": "Consulta clientes, proveedores y empleados de Xestando",
+      "source_sha256": "af8d030ddbf6f5494ab2af6a123bf056ac475fe2a3a9074bb1af3ada0f19bf4d",
+      "source_path": "skills/fichas/SKILL.md",
+      "package_sha256": "a7fc70f74e1228c7d2b1a88ace36e167dcb4182daf6304473511bafb5f711173",
+      "source_package": "Xestando-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c3a5f85f1ac385788140a83c34d11f46abca230095e7f5538e93cd72ea3e882": {
+      "description_zh": "读取磁盘上的发票或小票，在Xestando中登记费用。",
+      "source": "Registra gastos en Xestando leyendo facturas o tickets del disco",
+      "source_sha256": "9c3a5f85f1ac385788140a83c34d11f46abca230095e7f5538e93cd72ea3e882",
+      "source_path": "skills/gasto/SKILL.md",
+      "package_sha256": "a7fc70f74e1228c7d2b1a88ace36e167dcb4182daf6304473511bafb5f711173",
+      "source_package": "Xestando-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71822dec65068da71d2f8e825bdb4132e359c6b2995c1ec6fc6c866fecc882ad": {
+      "description_zh": "生成HTML报告并在Xestando中保存为模板。",
+      "source": "Genera un informe en HTML y lo guarda como plantilla en Xestando",
+      "source_sha256": "71822dec65068da71d2f8e825bdb4132e359c6b2995c1ec6fc6c866fecc882ad",
+      "source_path": "skills/informe/SKILL.md",
+      "package_sha256": "a7fc70f74e1228c7d2b1a88ace36e167dcb4182daf6304473511bafb5f711173",
+      "source_package": "Xestando-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0c1f836cf4eb5725c807e054cc7944f5094fb9de6db26557154a51182aaf498": {
+      "description_zh": "根据工作范围或仓库代码在Xestando中准备报价。",
+      "source": "Prepara un presupuesto en Xestando a partir de un alcance o de código del repo",
+      "source_sha256": "f0c1f836cf4eb5725c807e054cc7944f5094fb9de6db26557154a51182aaf498",
+      "source_path": "skills/presupuesto/SKILL.md",
+      "package_sha256": "a7fc70f74e1228c7d2b1a88ace36e167dcb4182daf6304473511bafb5f711173",
+      "source_package": "Xestando-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7908d5496021fddcbbeb24e88c8158ac88700d21a5fb4c2aca61c580049a26f": {
+      "description_zh": "通过Xestando MCP处理企业业务数据，包括发票、费用、报价、联系人、日历、邮件与LinkedIn帖子、模板、报告、知识检索及客户供应商员工和文件读取；所有写入均经过应用内批准流程。",
+      "source": "Use when working with the user's business data in Xestando — creating invoices, expenses, quotes, contacts, calendar events, email or LinkedIn posts, templates, generating reports, searching company knowledge, or reading clients, providers, employees and stored files through the Xestando MCP tools. Explains the approve-in-app flow that every write goes through.",
+      "source_sha256": "f7908d5496021fddcbbeb24e88c8158ac88700d21a5fb4c2aca61c580049a26f",
+      "source_path": "skills/xestando/SKILL.md",
+      "package_sha256": "a7fc70f74e1228c7d2b1a88ace36e167dcb4182daf6304473511bafb5f711173",
+      "source_package": "Xestando-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f84e205e1951883e77555d6c0e11b0638901f8b77479ce9d387eb433fb38d9eb": {
+      "description_zh": "通过xpost起草、排期、编辑、跨平台发布或撤下社交内容，并核对投递与表现，覆盖X、Instagram、LinkedIn、Facebook、TikTok、YouTube、Threads、Bluesky和Pinterest，遵循服务端品牌规则及项目规定的审批。",
+      "source": "Post to social media through xpost — draft, schedule, edit and check delivery across X, Instagram, LinkedIn, Facebook, TikTok, YouTube, Threads, Bluesky and Pinterest, with their brand rules enforced server-side and their approval where the project asks for it. Use whenever asked to post, schedule, cross-post or take down social content, or to check whether a post went out and how it did.",
+      "source_sha256": "f84e205e1951883e77555d6c0e11b0638901f8b77479ce9d387eb433fb38d9eb",
+      "source_path": "skills/xpost/SKILL.md",
+      "package_sha256": "39e9003fd191e33b030dd77fb06b8b7d510391ef546d803cfb756bdefb6394ee",
+      "source_package": "xpost-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4020d1c747ed103d865c8d9355e09a658c80037de9b090366d444c7fb68ead4": {
+      "description_zh": "为需求尚不明确的新XL1去中心化应用提供交互规划，在搭建前明确应用类型、模式、网络、多方角色和无界面验证规格；已有完整规格时直接进入脚手架流程。",
+      "source": "Interactive planning wizard for new XL1 dApps. Refines a vague or exploratory build request into a concrete spec (archetype, patterns, network, multi-party roles, headless verification) before any scaffolding runs. Activates when the user wants to build, design, or plan something on XL1 but hasn't fully specified what — phrases like \"I want to build something on XL1\", \"help me design a dApp\", \"what could I build\", or any \"build me X on XL1\" prompt where X is under-specified. Do NOT activate when the user has already given a concrete, complete spec (e.g., names the archetype, the patterns, the network) — defer directly to [xl1-scaffold](../xl1-scaffold/SKILL.md) in that case.",
+      "source_sha256": "b4020d1c747ed103d865c8d9355e09a658c80037de9b090366d444c7fb68ead4",
+      "source_path": "skills/xl1-build/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dbcac9b0d85b3431dc55b2dd86e3837ecc1541a8274fc61ec08b579f83c719ee": {
+      "description_zh": "设计和评审基于@xyo-network/dapp-kit的可移植无界面XL1应用架构，涵盖定义配置计划、xl1.dapp.json、应用接口、效果日志与崩溃恢复、持久事件、Node和浏览器宿主、Vercel及Cloudflare部署组合和一致性证据，并区分协议引擎与UI客户端。",
+      "source": "Portable headless XL1 dApp architecture via @xyo-network/dapp-kit*. Covers definition/config/plan/incarnation, xl1.dapp.json, application ports, effect journals and crash recovery, durable events vs Event Kit wakes, Node/browser hosts, Vercel/Cloudflare target composition, and conformance evidence. Also holds the architecture principles for any multi-party XL1 dApp (engine vs clients, evidence-derived state, written protocol, house role, constant-cost indexed loads, verifiable indexes). Activates when designing or reviewing an XL1 dApp's architecture, building or migrating toward dapp-kit, writing xl1.dapp.json, hosting a headless runtime, or distinguishing UI clients from the protocol application. Complements xl1-patterns domain recipes and xl1-scaffold React+service apps — does not replace gateway/chain knowledge.",
+      "source_sha256": "dbcac9b0d85b3431dc55b2dd86e3837ecc1541a8274fc61ec08b579f83c719ee",
+      "source_path": "skills/xl1-dapp-kit/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f1f2f6051907b484992b1e21a93192826e29e6920fe4ef41000637d53e6a21b": {
+      "description_zh": "提供XYO Layer One区块链开发知识，涵盖链、数据湖、通用及浏览器和Node网关、FinalizedBlockStream、网站集成、REST-over-RPC传输规则、身份及Statement Graph和dapp-kit应用基础。",
+      "source": "XL1 blockchain development (XYO Layer One). Covers the XL1 chain, datalakes, gateway (generic, browser, and Node — including FinalizedBlockStream), website integration via @xyo-network/xl1-browser-system and the REST-over-RPC transport rule, identity, and pointers to application substrates (Statement Graph, dapp-kit). Activates when building on XL1, integrating XL1 into a website, working with @xyo-network/xl1-* packages, or developing blockchain-backed applications.",
+      "source_sha256": "0f1f2f6051907b484992b1e21a93192826e29e6920fe4ef41000637d53e6a21b",
+      "source_path": "skills/xl1-knowledge/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a715357a4a16477e122034afd75a47836bdee11b3acd3ebea5963d9066f937ca": {
+      "description_zh": "提供XL1应用设计模式，涵盖浏览器体验、链数据索引、提交揭示、多方托管交换、预测市场、页内数据湖、铭文与代币、签名关系声明图和认证事件唤醒；测试及无界面应用契约由独立技能处理。",
+      "source": "Prescriptive design patterns for XL1 dApps. Covers browser UX, chain data indexing, commit-reveal schemes, in-page datalakes, prediction markets, atomic exchange (multi-party escrow), inscription substrates, fungible tokens, Statement Graph relationship claims, and Event Kit authenticated wake delivery. Activates when building application-level features on XL1 that require structured data access, multi-party fairness, atomic asset exchange, client-side chain queries, ownable artifacts, token protocols, signed relationship graphs, wallet-JWT wakes, or dApp UI conventions. (Testing and headless verification now live in the xl1-testing skill. Headless application contracts live in xl1-dapp-kit.)",
+      "source_sha256": "a715357a4a16477e122034afd75a47836bdee11b3acd3ebea5963d9066f937ca",
+      "source_path": "skills/xl1-patterns/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a121edd7af41b4ca08f2cc3e52617b8e41e02f94b3fb00fc1f90716d79e3f37": {
+      "description_zh": "为新XL1项目生成脚手架，可创建React应用、xl1-service后端、Node服务或CLI，以及含共享TypeScript库的全栈pnpm仓库；不用于既有项目修改。",
+      "source": "Bootstrap a new XL1 application — a single React dApp, a single xl1-service backend, a plain Node.js service/CLI, or a full-stack pnpm monorepo with React + xl1-service + a shared TypeScript library. Activates when the user wants to create, start, bootstrap, initialize, or scaffold a new XL1 project. Do NOT activate for work in an existing project.",
+      "source_sha256": "0a121edd7af41b4ca08f2cc3e52617b8e41e02f94b3fb00fc1f90716d79e3f37",
+      "source_path": "skills/xl1-scaffold/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c10046b2ce78aabc42a224dfb152e50bf01240931dfc3089571bba50c242582": {
+      "description_zh": "选择并运行XL1验证方式，包括Sequence测试网、本地开发链、链与Aries数据存储组合、完整本地应用后端、无人值守钱包CLI及Vitest和Playwright无界面浏览器测试，并遵循仅测试网的共同安全规则。",
+      "source": "How to test and verify XL1 work — choosing and running the right verification approach. Groups headless verification methods: Sequence testnet verification (in-process seed-phrase signer), local dev-chain verification (public xl1 CLI or vitest-owned chains via public @xyo-network/dapp-kit-vitest-config local-xl1, or XYO-internal @xyo-network/xl1-vitest-config apiLocal), composed local chain + Aries data-store verification, full local dApp backend verification (aries-dapp-core classic path or dapp-kit local path), unattended Sequence testing via @xyo-network/wallet-xl1-cli, and headless browser-mode testing (vitest + Playwright). Includes shared testnet-only safety rules. Activates when an agent needs to test, verify, or smoke-test an XL1 dApp or protocol change, run on-chain tests against a local chain or Sequence, run headless browser tests, or set up unattended / CI testing.",
+      "source_sha256": "4c10046b2ce78aabc42a224dfb152e50bf01240931dfc3089571bba50c242582",
+      "source_path": "skills/xl1-testing/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd1add4f5a0c99e453e40df03769d43ae6902a575eb03f2abe610ca9014484b2": {
+      "description_zh": "仅为重定向占位：xy-development的正式文档位于ariestools/ariestools-skills，涵盖TypeScript规范、Git流程、测试原则和完成标准；本副本不能作为实际开发文档使用。",
+      "source": "REDIRECT ONLY. Canonical xy-development lives in ariestools/ariestools-skills. Install that pack and read its xy-development skill for TypeScript conventions, Git workflow, testing principles, and the definition of done. This xyo-skills copy is a temporary redirect stub — do not use it as documentation.",
+      "source_sha256": "fd1add4f5a0c99e453e40df03769d43ae6902a575eb03f2abe610ca9014484b2",
+      "source_path": "skills/xy-development/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e15f294c816abc56aac990567730b1c6cc962d2fb979dc532b358b4375cf427f": {
+      "description_zh": "仅为重定向占位：xy-toolchain的正式文档位于ariestools/ariestools-skills，涵盖工具链、xy CLI、ESLint、TypeScript、Vitest、deplint、仓库规则及工作跟踪；本副本不能作为实际工具链文档使用。",
+      "source": "REDIRECT ONLY. Canonical xy-toolchain lives in ariestools/ariestools-skills. Install that pack and read its xy-toolchain skill for @ariestools/toolchain, the xy CLI, ESLint flat configs, TypeScript configs, Vitest, deplint, repository policy, skills, and work tracking. This xyo-skills copy is a temporary redirect stub — do not use it as documentation.",
+      "source_sha256": "e15f294c816abc56aac990567730b1c6cc962d2fb979dc532b358b4375cf427f",
+      "source_path": "skills/xy-toolchain/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "064534e2d882b41c16527fdaeb029dbbdcb36e34ae8ee92ddb3fe01684538567": {
+      "description_zh": "提供XYO Protocol 2.0领域知识，涵盖载荷、绑定见证、schema、archivist/diviner/witness/sentinel/node模块、账号、钱包和协议实践，用于XYO及@xyo-network包开发。",
+      "source": "XYO Protocol 2.0 domain knowledge. Covers payloads, bound witnesses, schemas, the module system (archivist, diviner, witness, sentinel, node), accounts, wallets, and protocol best practices. Activates when building on XYO or working with @xyo-network packages.",
+      "source_sha256": "064534e2d882b41c16527fdaeb029dbbdcb36e34ae8ee92ddb3fe01684538567",
+      "source_path": "skills/xyo-knowledge/SKILL.md",
+      "package_sha256": "4e4a57ee7273a92aa7babee4b8d8a8a8ebc93396870a07b493f702dc4349be0e",
+      "source_package": "XYO & XYO Layer 1 (XL1) Integration-1.1.35-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6c244f2657d787e7bd3473533818e639915767a32e9c05aab6438a5438f2529": {
+      "description_zh": "跨任务搜索、引用和维护用户私有本地Yaps Markdown知识库，用于已记事实、项目上下文、笔记及明确的记忆或整理请求；会议录音转写使用notes。",
+      "source": "Search, cite, and maintain the user's private local Yaps Markdown vault across tasks. Use for remembered facts, project context, notes, and explicit requests to remember or organize information. Use notes for transcribing a meeting recording.",
+      "source_sha256": "d6c244f2657d787e7bd3473533818e639915767a32e9c05aab6438a5438f2529",
+      "source_path": "skills/yaps-memory/SKILL.md",
+      "package_sha256": "4e15eb25c151f9bd9f2e0dbabaa82c686e1faeab3c3866c92353c6048eb77165",
+      "source_package": "yaps-memory-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5bd26f6c212f654c5be69c434791c491008c2d8cac5a9fecd4914926d303ea2a": {
+      "description_zh": "按YC Office Hours方式对新想法、产品方向及是否值得构建的问题开展结构化产品思考，先研究再输出。",
+      "source": "YC Office Hours: structured product thinking for new ideas, directions, and ''is this worth building'' questions. Research-first, not output-first.",
+      "source_sha256": "5bd26f6c212f654c5be69c434791c491008c2d8cac5a9fecd4914926d303ea2a",
+      "source_path": "skills/ycofficehour/SKILL.md",
+      "package_sha256": "74de4b43b65ca5a301827252fc6a6fbed6f89c4fdb1ab1b2f26b183afe911448",
+      "source_package": "ycofficehour-2026.07.17-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "059aeb8c30ce346f91a0e650574879b2caa967b5c04ddfb08960cbdef71d65d0": {
+      "description_zh": "诊断Yes2SDK故障或平台规则校验失败，包括广告不显示、广告后音频失效、奖励未发、加载界面不消失、规则ID失败及平台模块支持问题。",
+      "source": "Diagnoses a Yes2SDK symptom or compliance failure. Use when ads will not show, audio stays dead after an ad, a reward is not granted, a loading screen never dismisses, a verify run FAILs on a rule id, or a platform may not support a module.",
+      "source_sha256": "059aeb8c30ce346f91a0e650574879b2caa967b5c04ddfb08960cbdef71d65d0",
+      "source_path": "skills/yes2sdk-diagnose/SKILL.md",
+      "package_sha256": "fa2595ea8400b0e1904b943c12f9dc5b073e833983c68836d25a57f5a5ef2ddc",
+      "source_package": "Yes2SDK-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40a3a31b7127ad43d4d92cfbc3ac819e73009224c3e83d076a69b137a842ec24": {
+      "description_zh": "在Unity、Defold或JavaScript项目中添加Yes2SDK并确认依赖可解析，适用于编写SDK代码前、项目初始化或引用编译失败。",
+      "source": "Adds Yes2SDK to a Unity, Defold or JS project and confirms it resolves. Use before writing Yes2SDK code, when setting up or onboarding a project, or when a Yes2SDK reference will not compile.",
+      "source_sha256": "40a3a31b7127ad43d4d92cfbc3ac819e73009224c3e83d076a69b137a842ec24",
+      "source_path": "skills/yes2sdk-install/SKILL.md",
+      "package_sha256": "fa2595ea8400b0e1904b943c12f9dc5b073e833983c68836d25a57f5a5ef2ddc",
+      "source_package": "Yes2SDK-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6dc7b3b3b50e0ed350900e8848722f738180a9c8fb61beb51e4df34a7d6d9926": {
+      "description_zh": "按Yes2SDK MCP提供的权威信息处理跨平台集成规则及合规修复，适用于Poki、CrazyGames、Yandex、GameDistribution和YouTube。",
+      "source": "Cross-platform Yes2SDK rules; the yes2sdk MCP is source of truth. Use when integrating Yes2SDK or fixing compliance for Poki, CrazyGames, Yandex, GameDistribution, YouTube.",
+      "source_sha256": "6dc7b3b3b50e0ed350900e8848722f738180a9c8fb61beb51e4df34a7d6d9926",
+      "source_path": "skills/yes2sdk-platform-rules/SKILL.md",
+      "package_sha256": "fa2595ea8400b0e1904b943c12f9dc5b073e833983c68836d25a57f5a5ef2ddc",
+      "source_package": "Yes2SDK-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5806d84499f381bbadd7c1d9a21dd0a0f16acf3fd438c77d7bbd78b25782139f": {
+      "description_zh": "提供各/verify-*命令共同执行的验证流程。",
+      "source": "Shared verify procedure the /verify-* commands run.",
+      "source_sha256": "5806d84499f381bbadd7c1d9a21dd0a0f16acf3fd438c77d7bbd78b25782139f",
+      "source_path": "skills/yes2sdk-verify/SKILL.md",
+      "package_sha256": "fa2595ea8400b0e1904b943c12f9dc5b073e833983c68836d25a57f5a5ef2ddc",
+      "source_package": "Yes2SDK-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9133b48a043388dd44ab348df722db44734f13381fe00b46c30fe640108eb62d": {
+      "description_zh": "通过YnotOne报告连接器回答招生团队的线索、来源渠道、校区、人员、电话结果、响应速度、呼叫节奏、预约、转化、入学、邮件短信和活动支出进度问题，并比较校区、人员、来源或期间。",
+      "source": "Answers questions about an admissions team's YnotOne (Ynot LMS) data — leads, lead sources and channels, campuses, reps, calls and call outcomes, speed to lead, call cadence adherence, appointments, conversions, enrollments and starts, email and SMS, campaign spend and pacing — using the YnotOne reporting connector. Use whenever a question needs those numbers, names a Ynot report, or asks to compare campuses, reps, sources or periods.",
+      "source_sha256": "9133b48a043388dd44ab348df722db44734f13381fe00b46c30fe640108eb62d",
+      "source_path": "skills/ynot-reporting/SKILL.md",
+      "package_sha256": "06c7d6c8a7c28f6e5efa9b72712231ce3d063ddb4184f8a7702851c71f571bbe",
+      "source_package": "YnotOne-0.1.8-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b2f0d77b32b1f15b1daf5b5a55ad7a8956f4b7ca0617c6bd8ca33668b34f3fd": {
+      "description_zh": "对改变行为的功能和修复采用测试驱动开发，覆盖测试先行、红绿重构、探索性纵向实现、集成及公开接口行为测试；文档、单纯改名、格式或机械事务除非明确要求可跳过。",
+      "source": "Use test-driven development for behavior-changing feature or fix work, and whenever the user mentions TDD, test-first, red-green-refactor, tracer bullets, integration tests, or public-interface behavior tests. Skip for docs-only, path-only rename, formatting-only, or purely mechanical chores unless explicitly requested.",
+      "source_sha256": "5b2f0d77b32b1f15b1daf5b5a55ad7a8956f4b7ca0617c6bd8ca33668b34f3fd",
+      "source_path": ".agents/skills/tdd/SKILL.md",
+      "package_sha256": "338c912e53b68c587a4662ef4544e6c86865ed9d8e20e798cbda1c2f889b549e",
+      "source_package": "youdotcom-agent-skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d40a91d0baecf16712bd1ffcf6a01a01891e1ee1a8172005ec16f0bf0d5aaa06": {
+      "description_zh": "通过you-discover MCP、Docs MCP及直接API方案组织You.com集成规划。",
+      "source": "Route You.com integration planning through the you-discover MCP tool, Docs MCP, and direct API options.",
+      "source_sha256": "d40a91d0baecf16712bd1ffcf6a01a01891e1ee1a8172005ec16f0bf0d5aaa06",
+      "source_path": "skills/you-discover/SKILL.md",
+      "package_sha256": "338c912e53b68c587a4662ef4544e6c86865ed9d8e20e798cbda1c2f889b549e",
+      "source_package": "youdotcom-agent-skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "66f6cd3bbb2598c6289da1e0a052dc79808de5f77537d5d5968e8f77c63dbab7": {
+      "description_zh": "通过You.com的you-finance MCP回答财务问题，为没有API密钥的宿主选择考虑支付条件的备用方案。",
+      "source": "Answer finance questions through the You.com you-finance MCP tool, with payment-aware fallbacks for keyless hosts.",
+      "source_sha256": "66f6cd3bbb2598c6289da1e0a052dc79808de5f77537d5d5968e8f77c63dbab7",
+      "source_path": "skills/you-finance/SKILL.md",
+      "package_sha256": "338c912e53b68c587a4662ef4544e6c86865ed9d8e20e798cbda1c2f889b549e",
+      "source_package": "youdotcom-agent-skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "682f9b2e22dde4fa401818f90222d857a811403e734553c51c8b6281ea9aac08": {
+      "description_zh": "使用免费的You.com MCP配置，在无需认证时仅通过you-search开展基础网页搜索。",
+      "source": "Use the free You.com MCP profile for unauthenticated basic web search with `you-search` only.",
+      "source_sha256": "682f9b2e22dde4fa401818f90222d857a811403e734553c51c8b6281ea9aac08",
+      "source_path": "skills/you-free/SKILL.md",
+      "package_sha256": "338c912e53b68c587a4662ef4544e6c86865ed9d8e20e798cbda1c2f889b549e",
+      "source_package": "youdotcom-agent-skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "425e911eceffd8bbccd9dad625faa0277cbcf5dad9aebdbc4798957cd0361727": {
+      "description_zh": "在重视成本的代理搜索流程与You.com you-research工具之间选择研究方式，后者用于一次生成带引用的综合结果。",
+      "source": "Route research tasks between a cost-conscious agentic search workflow and the You.com you-research MCP tool for one-shot cited synthesis.",
+      "source_sha256": "425e911eceffd8bbccd9dad625faa0277cbcf5dad9aebdbc4798957cd0361727",
+      "source_path": "skills/you-research/SKILL.md",
+      "package_sha256": "338c912e53b68c587a4662ef4544e6c86865ed9d8e20e798cbda1c2f889b549e",
+      "source_package": "youdotcom-agent-skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "04fe6a890f8081650895e6d43673cc3fd85073bc7551168402de9931d558412e": {
+      "description_zh": "任务需要外部事实、最新信息、原文阅读、事实核验或带引用综合结果时，使用You.com搜索及内容读取工具。",
+      "source": "Use You.com search and contents tools when a task needs external facts, current information, source reading, factual verification, or cited synthesis.",
+      "source_sha256": "04fe6a890f8081650895e6d43673cc3fd85073bc7551168402de9931d558412e",
+      "source_path": "skills/you-web/SKILL.md",
+      "package_sha256": "338c912e53b68c587a4662ef4544e6c86865ed9d8e20e798cbda1c2f889b549e",
+      "source_package": "youdotcom-agent-skills-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ef73cf2c553e603ee04f13d3ff52e83457b8cf348e35ef657d6080b6ab4c2f4": {
+      "description_zh": "从浏览器直接提取YouTube视频和播放列表的自动字幕，生成文本转录；原说明无需API密钥或外部转写服务，适用于视频内容查询及字幕提取。",
+      "source": "Transcribe YouTube videos and playlists by extracting auto-generated captions directly from the browser — no API key, no external service, completely free. Trigger on: \"transcribe this video\", \"transcribe this playlist\", \"get the transcript\", \"extract captions\", \"what does this video say\", \"תמלל את הסרטון\", \"תמלל פלייליסט\", or any request involving extracting text/captions/subtitles from a YouTube video or playlist URL. Also trigger when the user pastes a YouTube URL and asks about its content.",
+      "source_sha256": "2ef73cf2c553e603ee04f13d3ff52e83457b8cf348e35ef657d6080b6ab4c2f4",
+      "source_path": "skills/youtube-transcriber/SKILL.md",
+      "package_sha256": "f27f214c2614341eb19f6fcdab901ff18921661cb10af2c3d5978d3489769a27",
+      "source_package": "YouTube Transcriber-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "279f5a29129a75a8601f632b818baf1874d23b1daa126970a2f9a696b6b16d44": {
+      "description_zh": "将缺陷以ID、严重程度及所属路线图里程碑记录到docs/BUGS.md，仅登记不修复，并可列出开放缺陷。",
+      "source": "Log a bug to docs/BUGS.md with an ID, severity and the roadmap milestone it belongs to, without fixing it. `/zaha:bug list` shows open bugs.",
+      "source_sha256": "279f5a29129a75a8601f632b818baf1874d23b1daa126970a2f9a696b6b16d44",
+      "source_path": "skills/bug/SKILL.md",
+      "package_sha256": "eb9568997cddf800b3997353f82e711e1b46cb0177730e227ca79e5156ff4dfd",
+      "source_package": "zaha-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9a5cd8aa4d2f8d1bb7eb16a34961e8522c2d2d2acedcbba5a2cb6e5d64ab83d": {
+      "description_zh": "在清空会话前记录简短交接，包含目标、当前状态、决策和准确下一步，使新会话能够续接。",
+      "source": "Before /clear, write a short handoff of the current session (goal, state, decisions, exact next step) so a fresh session can continue without the old context.",
+      "source_sha256": "c9a5cd8aa4d2f8d1bb7eb16a34961e8522c2d2d2acedcbba5a2cb6e5d64ab83d",
+      "source_path": "skills/handoff/SKILL.md",
+      "package_sha256": "eb9568997cddf800b3997353f82e711e1b46cb0177730e227ca79e5156ff4dfd",
+      "source_package": "zaha-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "305ff7eed39e4460af03c5210abeeb7507761c44fb6d2eae859808b3e0461256": {
+      "description_zh": "选择路线图任务、缺陷或新想法作为工作对象，逐个问题澄清后写出分步计划，获得用户批准后实施。",
+      "source": "Pick what to work on (a roadmap task, a bug, or a new idea), clear up what is unclear by asking one question at a time, write a step-by-step plan, and implement only after I approve it.",
+      "source_sha256": "305ff7eed39e4460af03c5210abeeb7507761c44fb6d2eae859808b3e0461256",
+      "source_path": "skills/planning/SKILL.md",
+      "package_sha256": "eb9568997cddf800b3997353f82e711e1b46cb0177730e227ca79e5156ff4dfd",
+      "source_package": "zaha-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "def2ed8745ea9098daa0082db26ce49d6e2baf4ae4db5eaa5f109acf8d552cb7": {
+      "description_zh": "将上次回顾以来的提交、未提交工作及会话决策写入docs/HISTORY.md，勾选完成任务和已修复缺陷，并提出下一步。",
+      "source": "Summarize what changed since the last recap (commits, uncommitted work, decisions from this session) into docs/HISTORY.md, tick finished roadmap tasks and fixed bugs, and suggest the next step.",
+      "source_sha256": "def2ed8745ea9098daa0082db26ce49d6e2baf4ae4db5eaa5f109acf8d552cb7",
+      "source_path": "skills/recap/SKILL.md",
+      "package_sha256": "eb9568997cddf800b3997353f82e711e1b46cb0177730e227ca79e5156ff4dfd",
+      "source_package": "zaha-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eef33a3bf9e3bd1300ea87c6f3b996406139efd5ba7e6d07667cf565468479f5": {
+      "description_zh": "创建或展示docs/ROADMAP.md中的项目路线图与可勾选任务；首次依据Git历史、文档及既有状态或待办文件生成，后续展示进度和下一事项。",
+      "source": "Build or show the project roadmap in docs/ROADMAP.md (milestones with checkable tasks). First run scaffolds it from git history, docs and existing STATUS/BACKLOG files; later runs show where the project is and what comes next.",
+      "source_sha256": "eef33a3bf9e3bd1300ea87c6f3b996406139efd5ba7e6d07667cf565468479f5",
+      "source_path": "skills/roadmap/SKILL.md",
+      "package_sha256": "eb9568997cddf800b3997353f82e711e1b46cb0177730e227ca79e5156ff4dfd",
+      "source_package": "zaha-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3087a612a8d6a919232b5969a3a8a4ab4d684a05a08842b1a1dae9602dd7dde3": {
+      "description_zh": "运行项目测试，优先受影响部分并过滤输出，简短报告失败，可把原有失败登记为缺陷。",
+      "source": "Run the project's tests, affected ones first, with filtered output, and report failures briefly. Offers to log pre-existing failures as bugs.",
+      "source_sha256": "3087a612a8d6a919232b5969a3a8a4ab4d684a05a08842b1a1dae9602dd7dde3",
+      "source_path": "skills/test/SKILL.md",
+      "package_sha256": "eb9568997cddf800b3997353f82e711e1b46cb0177730e227ca79e5156ff4dfd",
+      "source_package": "zaha-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f294b21195212fa21264eb4a50e6d6d9266d9cfa0e1857ef77fead0cfa08229d": {
+      "description_zh": "当上一条消息未被理解时，用朴素易懂的语言重新解释。",
+      "source": "Re-explain the last message in plain words when it didn't land.",
+      "source_sha256": "f294b21195212fa21264eb4a50e6d6d9266d9cfa0e1857ef77fead0cfa08229d",
+      "source_path": "skills/what/SKILL.md",
+      "package_sha256": "eb9568997cddf800b3997353f82e711e1b46cb0177730e227ca79e5156ff4dfd",
+      "source_package": "zaha-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5574d1846ef6f79d77d6787248037fae79d70805b90bd26dfe0f91403edc4f0e": {
+      "description_zh": "引导新用户配置并实际运行第一个Zapier动作，了解常用应用后推荐一个读取动作，在mcp.zapier.com启用并在同一聊天中演示最小可用示例。",
+      "source": "Walk a new user through setting up their first Zapier action and running it live — the smallest possible win. Asks what app they use, recommends one read action to enable, guides them to mcp.zapier.com to add it, then demonstrates it working in the same chat. Use when the user asks \"show me how Zapier works\", \"set up my first action\", \"give me a quick demo\", \"I want to try it\", \"what's the fastest way to see this work\", \"minimal setup\", \"hello world\", or \"smallest example\".",
+      "source_sha256": "5574d1846ef6f79d77d6787248037fae79d70805b90bd26dfe0f91403edc4f0e",
+      "source_path": "skills/zapier-demo/SKILL.md",
+      "package_sha256": "afc8218691cfb479776237c5f80679e7ece4f4be11c0876553d37b28fdb70970",
+      "source_package": "Zapier-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a72064364e916f54a68816e9bafaae71719b5a9f7d101e491f066316eaca4a5": {
+      "description_zh": "根据用户角色和常用应用探索Zapier MCP用途，推荐具体按需提示及工作流，并引导启用实现这些场景的动作，适合作为初次演示后的扩展。",
+      "source": "Explore what Zapier MCP can do for the user — interview them about their role and the apps they live in, suggest specific use cases as on-demand prompts, then walk them through enabling the actions to make those use cases real. The natural next step after `zapier-demo`. Use when the user asks \"what else can Zapier do for me\", \"set up more tools\", \"add a starter pack for my role\", \"what should I enable next\", \"suggest workflows\", \"help me figure out what to do with Zapier\", \"I don't know where to start\", or \"give me Zapier examples\".",
+      "source_sha256": "7a72064364e916f54a68816e9bafaae71719b5a9f7d101e491f066316eaca4a5",
+      "source_path": "skills/zapier-explore/SKILL.md",
+      "package_sha256": "afc8218691cfb479776237c5f80679e7ece4f4be11c0876553d37b28fdb70970",
+      "source_package": "Zapier-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a7f792a23c968a92d028c95ec6a8f60c792635be1641924bba2ba5861d7aaa9": {
+      "description_zh": "引导新用户理解Zapier MCP、完成认证，并按配置状态进入合适流程，亦用于连接故障排查。",
+      "source": "Onboard a new user to Zapier MCP — introduce what it can do, walk through authentication, and route into the right flow based on the state of their setup. Use when getting started, troubleshooting connection issues, or when the user asks \"what is Zapier MCP\", \"how do I get started with Zapier\", \"set me up\", \"what can I do with Zapier\", or \"tell me about Zapier\".",
+      "source_sha256": "3a7f792a23c968a92d028c95ec6a8f60c792635be1641924bba2ba5861d7aaa9",
+      "source_path": "skills/zapier-onboard/SKILL.md",
+      "package_sha256": "afc8218691cfb479776237c5f80679e7ece4f4be11c0876553d37b28fdb70970",
+      "source_package": "Zapier-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2211d40d9c3b5b6285194038b7264804902a53aace769aa8cdb49207647bb10b": {
+      "description_zh": "检查Zapier MCP配置健康，支持仪表盘健康检查、重复与浪费审计及系统性故障诊断。",
+      "source": "Check the health of your Zapier MCP setup. Three modes — health check (dashboard view), audit (find waste and duplicates), diagnose (systematic troubleshooting). Use when asking \"is my MCP working?\", \"check my tools\", \"audit my setup\", \"what's broken?\", or \"zapier status\".",
+      "source_sha256": "2211d40d9c3b5b6285194038b7264804902a53aace769aa8cdb49207647bb10b",
+      "source_path": "skills/zapier-status/SKILL.md",
+      "package_sha256": "afc8218691cfb479776237c5f80679e7ece4f4be11c0876553d37b28fdb70970",
+      "source_package": "Zapier-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec49aeba7903c97389515056a58df08db87f8c063408ff2ee3008dd2068943db": {
+      "description_zh": "通过Zeeg MCP评审AI电话代理通话，为提示词、问题和路由提出具体改进，分析失败、提前结束及来电者需求。",
+      "source": "Review a Zeeg AI phone agent's calls through the Zeeg MCP tools and suggest concrete improvements to its prompt, questions and routing. Use when the user asks how their voice agent is doing, why calls fail or end early, what callers ask for, or how to improve the agent.",
+      "source_sha256": "ec49aeba7903c97389515056a58df08db87f8c063408ff2ee3008dd2068943db",
+      "source_path": "skills/agent-tuning/SKILL.md",
+      "package_sha256": "0f5dc87fb06fd8dc12cdff8403f69e6437b1797a48fc8a7aff87cdec7e376921",
+      "source_package": "Zeeg-0.1.4-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6fa8d40e871c2751343cf39ad23ee5025ab42c081f1c838987c71bc4a190b3f9": {
+      "description_zh": "通过Zeeg MCP预约、改期、取消或移交会议，标记未到场并查找空闲时段和既有安排。",
+      "source": "Book, reschedule, cancel or hand over Zeeg meetings, mark no-shows, and find open times, through the Zeeg MCP tools. Use when the user asks to schedule someone, find a slot, move or cancel a booking, see what is booked, hand a meeting to a colleague, or record that an invitee did not turn up.",
+      "source_sha256": "6fa8d40e871c2751343cf39ad23ee5025ab42c081f1c838987c71bc4a190b3f9",
+      "source_path": "skills/booking-operations/SKILL.md",
+      "package_sha256": "0f5dc87fb06fd8dc12cdff8403f69e6437b1797a48fc8a7aff87cdec7e376921",
+      "source_package": "Zeeg-0.1.4-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31b075082d104bfad629a0f3c635e0f4bcf1f7e59e37307ff697ab34bc51bf0b": {
+      "description_zh": "通过Zeeg MCP清理CRM，发现重复或不完整的个人及公司记录，从预约和表单上下文补字段，并关联联系人与公司。",
+      "source": "Keep the Zeeg CRM clean through the Zeeg MCP tools - find duplicate or incomplete people and companies, fill missing fields from booking and form context, and link people to their companies. Use when the user asks to tidy, dedupe, enrich or update CRM contacts, companies or custom records in Zeeg.",
+      "source_sha256": "31b075082d104bfad629a0f3c635e0f4bcf1f7e59e37307ff697ab34bc51bf0b",
+      "source_path": "skills/crm-hygiene/SKILL.md",
+      "package_sha256": "0f5dc87fb06fd8dc12cdff8403f69e6437b1797a48fc8a7aff87cdec7e376921",
+      "source_package": "Zeeg-0.1.4-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b1f35401872e25797b983b3cb7fd50c31d318045d55744e74f9ddf48d56dcddd": {
+      "description_zh": "通过zentropi-labeler CLI及Zentropi CoPE模型构建、测试、优化和运行内容分类器，将自然语言规则转为分类器，管理测试集、评估精确率召回率与F1、开展AI辅助优化，并对文本或图片进行单项或规模化分类。",
+      "source": "Build, test, optimize, and run content classifiers (\"labelers\") with Zentropi's CoPE model through the unified `zentropi-labeler` CLI. Use to create labelers from plain-English policies, manage test datasets, benchmark accuracy (precision/recall/F1), run AI-assisted optimization, use community labelers, and classify text or images — one item or at production volume.",
+      "source_sha256": "b1f35401872e25797b983b3cb7fd50c31d318045d55744e74f9ddf48d56dcddd",
+      "source_path": "skills/zentropi-labeler/SKILL.md",
+      "package_sha256": "bca3a6d4a08c2aaaf4894c1f55a3674156d64343d1e54955de707ea0b6333e8e",
+      "source_package": "zentropi-0.11.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d682235fa82e3d8adbb306a30692fd4cfeb9651e4568b038f1d07ff71f16d8b9": {
+      "description_zh": "仅使用指定年份之前已公开的来源，重建当时某主题的已发表证据实际包含什么。",
+      "source": "Reconstruct what the published evidence on a topic actually contained in a given year, using only sources available by then.",
+      "source_sha256": "d682235fa82e3d8adbb306a30692fd4cfeb9651e4568b038f1d07ff71f16d8b9",
+      "source_path": "skills/as-of/SKILL.md",
+      "package_sha256": "fdf7669594173e51bfe639aa8d984280f5ce655b663318a7ca0ea23295c9834a",
+      "source_package": "Zetesis-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "532c9744cc5dc5053e2ce71295670d8db3552e7090dafd349f012294cad7f3e6": {
+      "description_zh": "核查文本每条引用是否支持对应句子，并标记无法解析的文献标识符。",
+      "source": "Check whether each citation in a text actually supports the sentence it is attached to, and flag identifiers that do not resolve.",
+      "source_sha256": "532c9744cc5dc5053e2ce71295670d8db3552e7090dafd349f012294cad7f3e6",
+      "source_path": "skills/cite-check/SKILL.md",
+      "package_sha256": "fdf7669594173e51bfe639aa8d984280f5ce655b663318a7ca0ea23295c9834a",
+      "source_package": "Zetesis-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d75f748fefe7ddac276b9f5674bedd40013b4a7a913b8b19843bdd7654909922": {
+      "description_zh": "回答或评审科学技术主张前检索真实证据，涵盖生物医学、临床、药理、基因、化学、材料、能源、物理和AI/ML，支持论文与预印本、创业项目、基金和尽调评审，检查复现、撤稿更正及审稿疑问，并确保引用实际检索取得。",
+      "source": "Ground an empirical scientific or technical claim in real retrieved evidence before answering. Use whenever a scientific, biomedical, clinical, pharmacological, genomic, chemical, materials, energy, physics, or AI/ML claim is asserted, questioned, or written down, including \"is it true that X\", \"does the evidence support X\", a pasted abstract or preprint, a claim in a draft the user is writing, or a company's stated result. Use it equally for diligence and review requests, which are the same job under different words: due diligence on a claim, a pitch deck, a startup's science, a grant, a manuscript, or a portfolio company's data; screening, sanity-checking, pressure-testing, poking holes in, or red-teaming a result; whether a finding replicates or is reproducible, whether anything has been retracted or corrected, or what a reviewer would ask. Also use before you cite a paper, trial, or statistic in your own answer, so the citation is retrieved rather than recalled.",
+      "source_sha256": "d75f748fefe7ddac276b9f5674bedd40013b4a7a913b8b19843bdd7654909922",
+      "source_path": "skills/evidence-check/SKILL.md",
+      "package_sha256": "fdf7669594173e51bfe639aa8d984280f5ce655b663318a7ca0ea23295c9834a",
+      "source_package": "Zetesis-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41d4f58ffc8c4ca3ba683206b88355d1882cef775a46114de923ce895ca0618b": {
+      "description_zh": "用检索到的文献核对文档中的经验性主张，报告有支持、依据薄弱及没有支持的部分。",
+      "source": "Check the empirical claims in a document against retrieved literature and report which hold, which are thin, and which have no support.",
+      "source_sha256": "41d4f58ffc8c4ca3ba683206b88355d1882cef775a46114de923ce895ca0618b",
+      "source_path": "skills/ground/SKILL.md",
+      "package_sha256": "fdf7669594173e51bfe639aa8d984280f5ce655b663318a7ca0ea23295c9834a",
+      "source_package": "Zetesis-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40a07ff0c7600f64ea6d7252b88000e6564f88a410b918f496cb130c424fbcc8": {
+      "description_zh": "审查预埋缺陷的AI风格产物，用于练习评审AI输出或获得学习阶段的第五颗星。",
+      "source": "Bug Hunt — audit an AI-style artifact with planted flaws. Use when the user wants to practice reviewing AI output, or to earn a stage's 5th star.",
+      "source_sha256": "40a07ff0c7600f64ea6d7252b88000e6564f88a410b918f496cb130c424fbcc8",
+      "source_path": "skills/hunt/SKILL.md",
+      "package_sha256": "1398fa473935999815472aec71b2574a26e1db08ae79c5cd8c149e37591c79cf",
+      "source_package": "Zhixing Dojo-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e7b12d3c3ab54941d253491037b8b753f7c299e54da41a4557eab832f55d10f": {
+      "description_zh": "按知行道场的六步学习循环开展课程，用于学习主题、从零学习技术或继续训练。",
+      "source": "Lessons through the dojo's six-step loop. Use when the user wants to learn a subject, study a technology from scratch, or continue their training.",
+      "source_sha256": "8e7b12d3c3ab54941d253491037b8b753f7c299e54da41a4557eab832f55d10f",
+      "source_path": "skills/learn/SKILL.md",
+      "package_sha256": "1398fa473935999815472aec71b2574a26e1db08ae79c5cd8c149e37591c79cf",
+      "source_package": "Zhixing Dojo-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d6468e42beb7c4f17ef31c5a089739149484ddb1fec04115898a7d5d4d0851a": {
+      "description_zh": "展示学习地图和知识树，包括掌握星级、连续学习记录、等级及待复习队列。",
+      "source": "The learning map — knowledge tree with mastery stars, streak, rank tier, and review backlog.",
+      "source_sha256": "2d6468e42beb7c4f17ef31c5a089739149484ddb1fec04115898a7d5d4d0851a",
+      "source_path": "skills/map/SKILL.md",
+      "package_sha256": "1398fa473935999815472aec71b2574a26e1db08ae79c5cd8c149e37591c79cf",
+      "source_package": "Zhixing Dojo-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46c11529ecfb19a83a7841662e995029bd8b4b608f42a88887b992b7b51eb07b": {
+      "description_zh": "测验已学道场内容，适用于用户自测或章节Boss Battle挑战。",
+      "source": "Checks on learned dojo material. Use when the user wants to be quizzed, or to take a chapter Boss Battle.",
+      "source_sha256": "46c11529ecfb19a83a7841662e995029bd8b4b608f42a88887b992b7b51eb07b",
+      "source_path": "skills/quiz/SKILL.md",
+      "package_sha256": "1398fa473935999815472aec71b2574a26e1db08ae79c5cd8c149e37591c79cf",
+      "source_package": "Zhixing Dojo-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d9ee7c2e4acfbc8c2d8262aa2e71375e542bd8c4ee8eea484399719bed9d95b": {
+      "description_zh": "按间隔重复法复习道场内容，处理到期复习卡片。",
+      "source": "Spaced-repetition review of dojo material. Use when the user wants to review, or to clear due cards.",
+      "source_sha256": "2d9ee7c2e4acfbc8c2d8262aa2e71375e542bd8c4ee8eea484399719bed9d95b",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "1398fa473935999815472aec71b2574a26e1db08ae79c5cd8c149e37591c79cf",
+      "source_package": "Zhixing Dojo-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8ea5f583c8ff3ece9706602358481a733bd79b11b7ece43a7c1ffa544e40a1e": {
+      "description_zh": "初始化道场学习档案并记录全局偏好，也可重新运行以修改偏好。",
+      "source": "One-time dojo setup — creates the learning archive and records global preferences. Rerun anytime to change preferences.",
+      "source_sha256": "e8ea5f583c8ff3ece9706602358481a733bd79b11b7ece43a7c1ffa544e40a1e",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "1398fa473935999815472aec71b2574a26e1db08ae79c5cd8c149e37591c79cf",
+      "source_package": "Zhixing Dojo-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0897339e8ab996b6030a8a342bc7cce7912ffbece1a05b37b87ac46f7282473a": {
+      "description_zh": "用费曼复述法向学徒阿呆讲解已学概念，以证明理解或获得学习阶段的第四颗星。",
+      "source": "Feynman teach-back to apprentice A-Dai. Use when the user wants to explain a learned concept to prove they understand it, or to earn a stage's 4th star.",
+      "source_sha256": "0897339e8ab996b6030a8a342bc7cce7912ffbece1a05b37b87ac46f7282473a",
+      "source_path": "skills/teach/SKILL.md",
+      "package_sha256": "1398fa473935999815472aec71b2574a26e1db08ae79c5cd8c149e37591c79cf",
+      "source_package": "Zhixing Dojo-0.7.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5913e214dbbe1353578065fa5bb5b127680589bfc74d33f400d6a88bfb4c0a09": {
+      "description_zh": "管理Zilliz Cloud组织和项目自定义角色及策略，授予或撤销成员角色并绑定SCIM用户组；属于云级RBAC，Milvus数据库内部用户权限使用user-role技能。",
+      "source": "Use when the user wants to manage Zilliz Cloud access control -- custom org or project roles and their policies, granting or revoking a role for an organization member, or binding roles to a SCIM user group. This is cloud-level RBAC over organizations, projects, and clusters -- for database users and privileges inside Milvus see the user-role skill.",
+      "source_sha256": "5913e214dbbe1353578065fa5bb5b127680589bfc74d33f400d6a88bfb4c0a09",
+      "source_path": "skills/acl/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bfd6050fe5a7a7b6b00deae32b5ef835c0dcde6a23c8dad67ece6ecf1efbb8de": {
+      "description_zh": "提供Zilliz Cloud入门和使用支持，涵盖套餐与费用估算、容量及集群配置、SDK与schema、搜索和重排、迁移排错、MCP及Terraform、自动扩容、监控告警、备份恢复，以及Functions、Volumes和Global Clusters等功能。",
+      "source": "Zilliz Cloud onboarding and usage assistant. Helps users understand Zilliz Cloud, choose the right plan, estimate costs, write code, debug issues, and adopt new features like Functions, Volumes, and Global Clusters.\n\nUse this skill whenever the user asks about Zilliz Cloud — including plan selection, pricing, cost estimation, capacity planning, cluster configuration, SDK usage, schema design, search patterns, migration, troubleshooting, MCP server setup, Terraform, auto-scaling, metrics/alerts, backup/restore, or any \"how do I do X with Zilliz Cloud\" question. Also trigger when the user mentions keywords like: \"Zilliz\", \"zilliz cloud\", \"vector database\", \"which plan\", \"serverless vs dedicated\", \"CU\", \"vCU\", \"Milvus cloud\", \"pymilvus\", \"collection\", \"embedding function\", \"hybrid search\", \"rerank\", \"BM25\", \"global cluster\", \"BYOC\", \"tiered storage\", \"volume\", \"data import\", \"MCP server\", \"partition key\", or error messages from Zilliz Cloud.",
+      "source_sha256": "bfd6050fe5a7a7b6b00deae32b5ef835c0dcde6a23c8dad67ece6ecf1efbb8de",
+      "source_path": "skills/ask-zilliz/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3928b3dcbb1645418e89dc31cfdbf7214b2a6673f748fd9ef0657a32e0d3e34": {
+      "description_zh": "在Zilliz Cloud创建、列出、查看、删除、导出或恢复备份，并管理备份策略。",
+      "source": "Use when the user wants to create, list, describe, delete, export, or restore backups, or manage backup policies on Zilliz Cloud.",
+      "source_sha256": "d3928b3dcbb1645418e89dc31cfdbf7214b2a6673f748fd9ef0657a32e0d3e34",
+      "source_path": "skills/backup/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86a1905af8cf9ea03a0d767911dbaaf19906eed7b2c14264e5e1540d758211b6": {
+      "description_zh": "查看Zilliz Cloud用量和账单，并管理支付方式。",
+      "source": "Use when the user wants to check usage, view invoices, or manage payment methods on Zilliz Cloud.",
+      "source_sha256": "86a1905af8cf9ea03a0d767911dbaaf19906eed7b2c14264e5e1540d758211b6",
+      "source_path": "skills/billing/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f5686488dbfdabc3b5b2eb3d9c4ad97aaa0ea77644d95a8ebcd6811e82e9b675": {
+      "description_zh": "创建、列出、查看、删除、暂停、恢复或修改Zilliz Cloud集群。",
+      "source": "Use when the user wants to create, list, describe, delete, suspend, resume, or modify Zilliz Cloud clusters.",
+      "source_sha256": "f5686488dbfdabc3b5b2eb3d9c4ad97aaa0ea77644d95a8ebcd6811e82e9b675",
+      "source_path": "skills/cluster/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16c3891b976c6d4f82b5d8836ba858ea92fb01044ef2063513f127af2b1d6bb6": {
+      "description_zh": "在Milvus创建、列出、查看、删除、改名、加载或释放集合，并管理集合别名。",
+      "source": "Use when the user wants to create, list, describe, drop, rename, load, release, or manage collections and collection aliases in Milvus.",
+      "source_sha256": "16c3891b976c6d4f82b5d8836ba858ea92fb01044ef2063513f127af2b1d6bb6",
+      "source_path": "skills/collection/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "29406dca076a8c61fad80d84e5737594803e037521306a9b783266dd9d1c08d0": {
+      "description_zh": "在Milvus创建、列出、查看或删除数据库。",
+      "source": "Use when the user wants to create, list, describe, or drop databases in Milvus.",
+      "source_sha256": "29406dca076a8c61fad80d84e5737594803e037521306a9b783266dd9d1c08d0",
+      "source_path": "skills/database/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59c0935ba69a10aa86501e93d3680712febcdfd909bac2ceb78db8519082a6ff": {
+      "description_zh": "诊断Zilliz Cloud集群或Milvus集合的不健康、变慢、卡住、错误和配额问题。",
+      "source": "Use when the user reports that a Zilliz Cloud cluster or Milvus collection is unhealthy, slow, stuck, returning errors, hitting quotas, or otherwise misbehaving — or when they ask \"what's wrong with...\", \"why is ... slow\", \"diagnose ...\", \"troubleshoot ...\".",
+      "source_sha256": "59c0935ba69a10aa86501e93d3680712febcdfd909bac2ceb78db8519082a6ff",
+      "source_path": "skills/diagnose/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8756f2c4b7a8cf4b8ae9515c71ea9b23ef749139c3ab09f65ee531dc5d62c371": {
+      "description_zh": "为Vector Lake等外部数据源支持的集合触发、查看或列出刷新任务，属于数据面的刷新流程；集合创建、删除及加载由collection技能处理。",
+      "source": "Use when the user wants to trigger, describe, or list refresh jobs for an external collection (a collection backed by an external data source such as Vector Lake). Note this is the data-plane refresh workflow, not collection CRUD -- for create/drop/load see the collection skill.",
+      "source_sha256": "8756f2c4b7a8cf4b8ae9515c71ea9b23ef749139c3ab09f65ee531dc5d62c371",
+      "source_path": "skills/external-collection/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7afca5422cd141c9e9eae049be348ea2151c34b076d982fc3600fc1cc838f35c": {
+      "description_zh": "通过Zilliz Cloud导入任务将批量数据写入Milvus集合，并管理导入任务引用的预上传文件存储区。",
+      "source": "Use when the user wants to import bulk data into a Milvus collection via Zilliz Cloud import jobs, or manage import stages (pre-uploaded file holders that import jobs reference).",
+      "source_sha256": "7afca5422cd141c9e9eae049be348ea2151c34b076d982fc3600fc1cc838f35c",
+      "source_path": "skills/import/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76bd0cce7ee5f4ba5627bc809ffa7c0b598f4f7cf4e6de2b9609ebc7ade1f9f2": {
+      "description_zh": "在Milvus集合上创建、列出、查看或删除索引。",
+      "source": "Use when the user wants to create, list, describe, or drop indexes on Milvus collections.",
+      "source_sha256": "76bd0cce7ee5f4ba5627bc809ffa7c0b598f4f7cf4e6de2b9609ebc7ade1f9f2",
+      "source_path": "skills/index/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34a379ccc54e9ebd47f11a00c029b43c410485ec9d352635c6e120bdcffdd92b": {
+      "description_zh": "查看备份、恢复、迁移、导入或克隆等异步云任务状态，并等待长时操作完成。",
+      "source": "Use when the user wants to check the status of an async Cloud Job (backup, restore, migration, import, or clone). Also use when the user wants to wait for a long-running operation to complete.",
+      "source_sha256": "34a379ccc54e9ebd47f11a00c029b43c410485ec9d352635c6e120bdcffdd92b",
+      "source_path": "skills/job/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "148a6d8d693ebf179e8beaa9df64a50aa639bbbeb3cb9c981207be466f95c1fd": {
+      "description_zh": "检查Zilliz Cloud集群状态、集合统计和加载状态，或查看云资源概览。",
+      "source": "Use when the user wants to check cluster status, collection statistics, load states, or get an overview of their Zilliz Cloud resources.",
+      "source_sha256": "148a6d8d693ebf179e8beaa9df64a50aa639bbbeb3cb9c981207be466f95c1fd",
+      "source_path": "skills/monitoring/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4edb56c514c8c53757b714659479fa67070ba4ccd93ed0b18c3ef43ba0f53c30": {
+      "description_zh": "创建、列出、查看或删除按需Vector Lake集群，用于临时查询工作负载；原说明集群在空闲TTL之后自动暂停。",
+      "source": "Use when the user wants to create, list, describe, or delete an on-demand (Vector Lake / VectorLake) cluster. On-demand clusters auto-suspend after an idle TTL and are intended for ad-hoc query workloads against a Vector Lake.",
+      "source_sha256": "4edb56c514c8c53757b714659479fa67070ba4ccd93ed0b18c3ef43ba0f53c30",
+      "source_path": "skills/on-demand-cluster/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01ad609e0f37139c79e07fe95ed343ebcd057bdb83b0f9fc17ddb5bb42741732": {
+      "description_zh": "在Milvus集合中创建、列出、加载、释放或删除分区。",
+      "source": "Use when the user wants to create, list, load, release, or drop partitions in a Milvus collection.",
+      "source_sha256": "01ad609e0f37139c79e07fe95ed343ebcd057bdb83b0f9fc17ddb5bb42741732",
+      "source_path": "skills/partition/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d94a90d869c84d6e106dba988248a4f61a48473b46c90ca98e9e798633ef68c": {
+      "description_zh": "列出Zilliz Cloud可用PrivateLink端点服务，在项目中创建、列出或删除端点，并管理端点白名单。",
+      "source": "Use when the user wants to list available PrivateLink endpoint services, list/create/delete PrivateLink endpoints for a project, or manage the endpoint whitelist on Zilliz Cloud.",
+      "source_sha256": "7d94a90d869c84d6e106dba988248a4f61a48473b46c90ca98e9e798633ef68c",
+      "source_path": "skills/privatelink/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f18108bebda90462834bd3b0d6ec4098118cf41add3c0e4c2cf4f92002caecb": {
+      "description_zh": "管理Zilliz Cloud项目或存储卷；云区域及提供商相关操作使用cluster技能。",
+      "source": "Use when the user wants to manage Zilliz Cloud projects or storage volumes. For cloud regions and providers, see the cluster skill.",
+      "source_sha256": "0f18108bebda90462834bd3b0d6ec4098118cf41add3c0e4c2cf4f92002caecb",
+      "source_path": "skills/project-region/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "874bd55fbe185c620b196ede25a18bce22a087bfcea6ada564a9bfb254870503": {
+      "description_zh": "首次配置Zilliz Cloud CLI和集群上下文，一次完成安装、认证及配置入门。",
+      "source": "Use when the user wants to set up, install, authenticate, or configure the Zilliz Cloud CLI and cluster context for the first time (one-shot onboarding).",
+      "source_sha256": "874bd55fbe185c620b196ede25a18bce22a087bfcea6ada564a9bfb254870503",
+      "source_path": "skills/quickstart/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba245e40b3987593ae87e484c5e09cf1e3f5d3ef3305c081c2d4ff31c3c82182": {
+      "description_zh": "安装zilliz-cli、登录Zilliz Cloud、配置凭据并设置活动集群上下文，亦用于补齐其他技能报告的缺失前置条件。",
+      "source": "Use when the user needs to install zilliz-cli, log in to Zilliz Cloud, configure credentials, or set the active cluster context. Also use when any other skill reports a missing prerequisite.",
+      "source_sha256": "ba245e40b3987593ae87e484c5e09cf1e3f5d3ef3305c081c2d4ff31c3c82182",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2d488cf0a64145eb159706a7d5512ea3a80aa74bbc7d3ab2b2ac63d4e90257a": {
+      "description_zh": "提供当前Zilliz Cloud环境的全面概览，包含上下文、集群详情、数据库及集合统计。",
+      "source": "Use when the user wants a comprehensive overview of their current Zilliz Cloud environment — context, cluster details, databases, and collections with stats.",
+      "source_sha256": "b2d488cf0a64145eb159706a7d5512ea3a80aa74bbc7d3ab2b2ac63d4e90257a",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c71426a17da6b151b1820481adf0941b33743b3b6dd27bd704811c03f2c1f50": {
+      "description_zh": "管理Milvus数据库用户、角色、密码及访问权限。",
+      "source": "Use when the user wants to manage database users, roles, passwords, or access privileges in Milvus.",
+      "source_sha256": "3c71426a17da6b151b1820481adf0941b33743b3b6dd27bd704811c03f2c1f50",
+      "source_path": "skills/user-role/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0721a17f7adbd5860c36e5ae1f54fde97242f258be7c458604bc05d1b9b62f14": {
+      "description_zh": "在Milvus集合中搜索、查询、插入、upsert、读取或删除向量。",
+      "source": "Use when the user wants to search, query, insert, upsert, get, or delete vectors in a Milvus collection.",
+      "source_sha256": "0721a17f7adbd5860c36e5ae1f54fde97242f258be7c458604bc05d1b9b62f14",
+      "source_path": "skills/vector/SKILL.md",
+      "package_sha256": "eebe8bf09000936502d985173186e960168fa72c9248522ba4ac4e3ed1d2de35",
+      "source_package": "zilliz-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d03cac255e0a41feda3d2d666450f270f98a3fc6a47ccccd00c1235d3e32d62": {
+      "description_zh": "从顾问自身客户记录识别流失风险，按超出惯常联系周期的沉默、此前情绪和下降趋势、是否停止主动沟通及提及其他顾问来排序，建议优先联系及开场，生成再互动名单、家庭简报或邮件草稿；必须使用Zocks MCP，不接受转录、上传或其他来源替代。",
+      "source": "Finds the clients an advisor is quietly losing from their own book, ranking the households that have gone silent past their usual rhythm by how they felt last time, whether their sentiment was already falling, whether they stopped driving the conversation, and whether they have named another advisor. Says who to call first and how to open. Use whenever the user asks who is at risk, who has gone quiet, who they haven't spoken to in a while, who to call this week, or whether they are losing anyone — and for a re-engagement list, a brief on one household, or a draft re-engagement email. Requires Zocks MCP — will not run from transcripts, uploads, or any other source.",
+      "source_sha256": "4d03cac255e0a41feda3d2d666450f270f98a3fc6a47ccccd00c1235d3e32d62",
+      "source_path": "skills/client-attrition-risk/SKILL.md",
+      "package_sha256": "488f8d6b2c2632bb10ec12b5a943583f943f424a302f68070e4be8c86e76e9df",
+      "source_package": "Zocks Advisor Intelligence-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec867a77f3e16e46c5bdfd0389013b52ba91ef43711b1d678e16b40b7e363bd9": {
+      "description_zh": "为顾问客户或家庭提供关系升温、稳定或降温的快速判断及完整行为画像，分析动机、忧虑、决策方式、声称风险承受力与行为一致性和参与度，建议下一次沟通姿态；必须使用Zocks MCP，不接受转录、上传或其他来源替代。",
+      "source": "Reads one advisory client or household two ways — a fast temperature check on whether they are cooling, steady or warming, and a full behavioral profile covering what motivates them, what they are afraid of, how they decide, whether their stated risk tolerance matches their behaviour, and how engaged they have been — then a calibrated stance for the next conversation. Use whenever the user asks what a client is like, how to approach them, what motivates them, how a meeting went, what the mood is, why they won't commit, or whether a relationship is cooling or warming. Requires Zocks MCP — will not run from transcripts, uploads, or any other source.",
+      "source_sha256": "ec867a77f3e16e46c5bdfd0389013b52ba91ef43711b1d678e16b40b7e363bd9",
+      "source_path": "skills/client-behavioral-profile/SKILL.md",
+      "package_sha256": "488f8d6b2c2632bb10ec12b5a943583f943f424a302f68070e4be8c86e76e9df",
+      "source_package": "Zocks Advisor Intelligence-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0a24757b8c1ca20bfdbe729408aab19b24d1debcfe754f346842a238aad269e": {
+      "description_zh": "为单个家庭生成可向客户展示的旅程报告，包括五阶段生命周期、家庭和受益人关系树、外部专业团队、生活事件时间线、动机忧虑及重要事实的佐证和新旧程度，并指出尚未询问的问题；必须使用Zocks MCP，不接受其他资料源替代。",
+      "source": "Builds a client-ready Client Journey for one household — a five-stage lifecycle timeline marking where the family sits today, a relationship tree including beneficiaries never met, their outside professional team, a dated timeline of life events and turning points, and every motivator, worry and consequential fact on record with its corroboration and age — plus what they have never been asked that the rest of the book covers. Use whenever the user wants everything known about a household, a family tree or lifecycle report, who is who in a family, what is new on a client, or a comprehensive picture polished enough to walk a client through. Requires Zocks MCP — will not run from transcripts, uploads, or any other source.",
+      "source_sha256": "d0a24757b8c1ca20bfdbe729408aab19b24d1debcfe754f346842a238aad269e",
+      "source_path": "skills/client-journey/SKILL.md",
+      "package_sha256": "488f8d6b2c2632bb10ec12b5a943583f943f424a302f68070e4be8c86e76e9df",
+      "source_package": "Zocks Advisor Intelligence-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3dc06d85610c87eb615a8b14464c838608b6753205b40c2c07b7de2449412f9": {
+      "description_zh": "从顾问近期会议识别并按家庭排序外部资产整合机会，如旧401(k)、外部证券账户、继承、企业出售、房地产和配偶资产，标记首次、再提、无更新、已建任务或客户同意状态；必须使用Zocks MCP，不接受转录或上传资料替代。",
+      "source": "Ranked pipeline of held-away asset opportunities from the advisor's own recent meetings — old 401(k)s, outside brokerage accounts, inheritances, business sale proceeds, real estate, spouse assets — grouped by household and marked new, raised again, nothing new since, task created, or client agreed. Use whenever the user asks what held-away or outside money came up recently, wants their consolidation pipeline or money in motion, mentions old 401(k)s or outside accounts, or says things like \"run the radar\" or \"held-away opportunities\". Requires Zocks MCP — will not run from transcripts, uploads, or any other source.",
+      "source_sha256": "c3dc06d85610c87eb615a8b14464c838608b6753205b40c2c07b7de2449412f9",
+      "source_path": "skills/held-away-radar/SKILL.md",
+      "package_sha256": "488f8d6b2c2632bb10ec12b5a943583f943f424a302f68070e4be8c86e76e9df",
+      "source_package": "Zocks Advisor Intelligence-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57e8aa0fd57ae751c44c5b985f9ea58f236329a3f807e7abad7c108a625493d6": {
+      "description_zh": "依据过去12至24个月准备客户家庭年度或半年度回顾，比较目标、财务生活变化、决策承诺及需交接给会计师和律师等事项，生成顾问摘要，并可按要求提供客户信函、公司模板演示及外部专业人士简报；必须使用Zocks MCP，不接受其他来源替代。",
+      "source": "Prepares an annual or semi-annual household review from the last 12 to 24 months — goals then versus now, what changed in their finances and their life, the decisions taken, the commitments made, and the handoffs the review creates for the client's CPA, attorney and other professionals. Produces an advisor summary, and on request a client letter in a chosen tone, a client-facing review presentation on the firm's own template, and a brief for each outside professional. Use whenever the user is preparing for or writing up a client review, wants a year-in-review letter or a review deck, or asks what happened with a household this year, what they promised them, or who needs to know afterwards. Requires Zocks MCP — will not run from transcripts, uploads, or any other source.",
+      "source_sha256": "57e8aa0fd57ae751c44c5b985f9ea58f236329a3f807e7abad7c108a625493d6",
+      "source_path": "skills/household-review-pack/SKILL.md",
+      "package_sha256": "488f8d6b2c2632bb10ec12b5a943583f943f424a302f68070e4be8c86e76e9df",
+      "source_package": "Zocks Advisor Intelligence-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7eb622fcd85e87c44a96217e5b8e90ebdea92a1c2cdce018129fb9e422070ec2": {
+      "description_zh": "深入分析单个客户家庭，找出并论证价值最高的下一行动，涵盖未用税务空间、Roth转换窗口、RMD及IRMAA顺序、社保与遗属计算、不可逆养老金选择、税负及保障遗产缺口，说明淘汰的备选和需由外部专业人士行动的事项，不只复述待办；必须使用Zocks MCP。",
+      "source": "Deep single-household analysis naming the one highest-value next action and proving why — unused tax space, a closing Roth conversion window, RMD and IRMAA sequencing, Social Security and survivor math, irreversible pension elections, tax drag, protection and estate gaps. Never the advisor's own open tasks read back. Shows the runner-ups it rejected and names who outside the firm has to act. Use whenever the user asks what to do for a client, the best move, the biggest opportunity, what they are missing with someone, or wants a household's situation analysed. For a household's full tax picture, tax-opportunity-scan is the skill. Requires Zocks MCP — will not run from transcripts, uploads, or any other source.",
+      "source_sha256": "7eb622fcd85e87c44a96217e5b8e90ebdea92a1c2cdce018129fb9e422070ec2",
+      "source_path": "skills/next-best-action/SKILL.md",
+      "package_sha256": "488f8d6b2c2632bb10ec12b5a943583f943f424a302f68070e4be8c86e76e9df",
+      "source_package": "Zocks Advisor Intelligence-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7eec18f9c1fc1d6cdabe8731fed6ac2f72f934a050f2823b640545ca7f1f1735": {
+      "description_zh": "从已分析会议构建客户家庭税务机会全景，区分有截止日期的当年事项和未来3至5年策略，按影响排序、引用会议来源、指出未问的税务问题和未跟进事项，用于税务评审及会计师交接；仅为顾问信息支持而非税务建议，必须使用Zocks MCP。",
+      "source": "Builds a household's full tax opportunity picture from every analyzed meeting on record, across two horizons — current-year items with deadlines (deferral capacity, a second plan nobody checked, taxable-account drag, giving structure, equity dates, education vehicles) and multi-year strategies 3-5 years out (conversion windows, drawdown sequencing, the survivor's position, business structure, property sales). Ranks by impact, cites the meeting each item came from, names the tax questions nobody has asked, and flags what the household raised that went nowhere. Use whenever the user asks about tax planning, tax opportunities or tax exposure for a client, wants a tax review or CPA handoff, asks what they are missing on someone's taxes, mentions Roth conversions, deferral capacity, tax drag, harvesting, charitable giving or equity comp timing, or asks what to cover before year end or tax season. Advisor intelligence, not advice. Requires Zocks MCP — will not run from transcripts, uploads, or any other source.",
+      "source_sha256": "7eec18f9c1fc1d6cdabe8731fed6ac2f72f934a050f2823b640545ca7f1f1735",
+      "source_path": "skills/tax-opportunity-scan/SKILL.md",
+      "package_sha256": "488f8d6b2c2632bb10ec12b5a943583f943f424a302f68070e4be8c86e76e9df",
+      "source_package": "Zocks Advisor Intelligence-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "727f0b428da52813d98bcd8b65eaea6bd5e9eea4a644871efb085996b1f31843": {
+      "description_zh": "构建Zoom会议机器人、录制器或实时媒体流程，用于程序化入会、实时媒体和转录处理，以及Meeting SDK、RTMS与后端服务组合。",
+      "source": "Build a Zoom meeting bot, recorder, or real-time media workflow. Use when joining meetings programmatically, processing live media or transcripts, or combining Meeting SDK, RTMS, and backend services.",
+      "source_sha256": "727f0b428da52813d98bcd8b65eaea6bd5e9eea4a644871efb085996b1f31843",
+      "source_path": "skills/build-zoom-bot/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b42c767a891d8841286cca0d1639ce5ca176d546893721653d3716c8cd0a9804": {
+      "description_zh": "构建或嵌入Zoom会议流程，实施Meeting SDK入会、网页或移动端嵌入及会议生命周期，并选择Meeting SDK或Video SDK。",
+      "source": "Build or embed a Zoom meeting flow. Use when implementing Meeting SDK joins, web or mobile meeting embeds, meeting lifecycle flows, or when deciding between Meeting SDK and Video SDK.",
+      "source_sha256": "b42c767a891d8841286cca0d1639ce5ca176d546893721653d3716c8cd0a9804",
+      "source_path": "skills/build-zoom-meeting-app/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27cd1a64d957d679123824ef391759a8b2f14337a87fbc2196b8d5531ce9d506": {
+      "description_zh": "按场景选择Zoom架构，比较REST API、Webhook、WebSocket、Meeting SDK、Video SDK、Zoom Apps SDK、MCP、电话、联络中心及混合方案。",
+      "source": "Choose the right Zoom architecture for a use case. Use when deciding between REST API, Webhooks, WebSockets, Meeting SDK, Video SDK, Zoom Apps SDK, Zoom MCP, Phone, Contact Center, or a hybrid approach.",
+      "source_sha256": "27cd1a64d957d679123824ef391759a8b2f14337a87fbc2196b8d5531ce9d506",
+      "source_path": "skills/choose-zoom-approach/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e0de7ae0583093e7f27f32ea649d94347063ef5ae7ae4c1cd4220d692a0a70e": {
+      "description_zh": "在协作支持流程中提供Zoom Cobrowse SDK参考，用于浏览器共同浏览、标注、隐私遮罩、远程协助及PIN会话分享。",
+      "source": "Reference skill for Zoom Cobrowse SDK. Use after routing to a collaborative-support workflow when implementing browser co-browsing, annotation tools, privacy masking, remote assist, or PIN-based session sharing.",
+      "source_sha256": "7e0de7ae0583093e7f27f32ea649d94347063ef5ae7ae4c1cd4220d692a0a70e",
+      "source_path": "skills/cobrowse-sdk/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "952c057923e94763c3d4e94d2f2d00f748aa782638d86239744f1f4054659f6c": {
+      "description_zh": "在联络中心流程中提供Zoom Contact Center参考，用于应用、网页和原生集成、互动上下文与状态、活动、回拨及版本漂移排错。",
+      "source": "Reference skill for Zoom Contact Center. Use after routing to a contact-center workflow when implementing app, web, or native integrations; engagement context and state handling; campaigns; callbacks; or version-drift troubleshooting.",
+      "source_sha256": "952c057923e94763c3d4e94d2f2d00f748aa782638d86239744f1f4054659f6c",
+      "source_path": "skills/contact-center/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f441d2fd15a2dd955c047982995abf1d6317b990e6115fc62346fa8abfeec598": {
+      "description_zh": "在Android原生应用中集成Zoom Contact Center聊天、视频、虚拟代理及定时回拨，处理活动模式、服务生命周期和重新加入。",
+      "source": "Zoom Contact Center SDK for Android. Use for native Android chat/video/ZVA/scheduled callback integrations, campaign mode, service lifecycle, and rejoin handling.",
+      "source_sha256": "f441d2fd15a2dd955c047982995abf1d6317b990e6115fc62346fa8abfeec598",
+      "source_path": "skills/contact-center/android/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6784bce6b22bbf8d501c46950b376e30105db2ac5ecef20193b71504ca667ef5": {
+      "description_zh": "在iOS原生应用中集成Zoom Contact Center聊天、视频、虚拟代理及定时回拨，处理应用生命周期桥接、重新加入和回拨。",
+      "source": "Zoom Contact Center SDK for iOS. Use for native iOS chat/video/ZVA/scheduled callback integrations, app lifecycle bridging, rejoin flow, and callback handling.",
+      "source_sha256": "6784bce6b22bbf8d501c46950b376e30105db2ac5ecef20193b71504ca667ef5",
+      "source_path": "skills/contact-center/ios/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59a48be9b373187daa2baf7a1d94095b78ba8b66c443bd2b9fae12f4d9184d3a": {
+      "description_zh": "在网页中嵌入Zoom Contact Center聊天、视频及活动，处理互动事件、应用上下文和Smart Embed的postMessage流程。",
+      "source": "Zoom Contact Center SDK for Web. Use for web chat/video/campaign embeds, engagement event handling, app-context integrations, and Smart Embed postMessage workflows.",
+      "source_sha256": "59a48be9b373187daa2baf7a1d94095b78ba8b66c443bd2b9fae12f4d9184d3a",
+      "source_path": "skills/contact-center/web/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee506bea70a51373cd83455dfb087589e9146f99f4f6ad3a631a31d0ec372bef": {
+      "description_zh": "快速排查Zoom认证、Webhook、SDK入会、MCP传输及实时媒体故障，先定位发生故障的层再提出修复。",
+      "source": "Debug broken Zoom implementations quickly. Use when auth, webhooks, SDK joins, MCP transport, or real-time media workflows are failing and you need to isolate the layer before proposing a fix.",
+      "source_sha256": "ee506bea70a51373cd83455dfb087589e9146f99f4f6ad3a631a31d0ec372bef",
+      "source_path": "skills/debug-zoom-integration/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59bca7f21c40f0aefbffdf0650270debf0b66cd667ce053fe93658777020c89b": {
+      "description_zh": "定位Zoom集成失败点并引导至对应参考资料，针对认证、API、Webhook、SDK和MCP异常给出按优先级排列的假设及验证步骤。",
+      "source": "Debug a broken Zoom integration by isolating the failure point and routing into the right Zoom references. Use when auth, API, webhook, SDK, or MCP behavior is failing and you need a ranked hypothesis list plus verification steps.",
+      "source_sha256": "59bca7f21c40f0aefbffdf0650270debf0b66cd667ce053fe93658777020c89b",
+      "source_path": "skills/debug-zoom/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39e4a1d22996593369956d2c6ba91564b55daecb58ac192382a58749b0a804e3": {
+      "description_zh": "为Claude设计Zoom MCP工作流，判断MCP是否适合任务、规划工具驱动的AI流程，并区分MCP和REST API职责。",
+      "source": "Design a Zoom MCP workflow for Claude. Use when deciding whether Zoom MCP fits a task, when planning tool-based AI workflows, or when separating MCP responsibilities from REST API responsibilities.",
+      "source_sha256": "39e4a1d22996593369956d2c6ba91564b55daecb58ac192382a58749b0a804e3",
+      "source_path": "skills/design-mcp-workflow/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d77f8ce2cc22467eddae940decb0a6466c3b2deec13c4b6693460327e9d6715": {
+      "description_zh": "在流程明确后提供Zoom跨产品平台参考，涵盖应用模型比较、认证上下文、权限范围、应用市场考虑及API与MCP选择。",
+      "source": "Cross-product Zoom reference skill. Use after the workflow is clear when you need shared platform guidance, app-model comparisons, authentication context, scopes, marketplace considerations, or API-vs-MCP routing.",
+      "source_sha256": "3d77f8ce2cc22467eddae940decb0a6466c3b2deec13c4b6693460327e9d6715",
+      "source_path": "skills/general/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c6552c8ecf57ed4c7036c082acb835edaded7d9ff83fae2704dbd68629b2ead": {
+      "description_zh": "在会议嵌入流程中提供Zoom Meeting SDK参考，处理真实Zoom入会、平台差异、认证与入会流程、等候室问题及会议机器人模式。",
+      "source": "Reference skill for Zoom Meeting SDK. Use after routing to a meeting-embed workflow when implementing real Zoom meeting joins, platform-specific SDK behavior, auth and join flows, waiting room issues, or meeting bot patterns.",
+      "source_sha256": "2c6552c8ecf57ed4c7036c082acb835edaded7d9ff83fae2704dbd68629b2ead",
+      "source_path": "skills/meeting-sdk/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6dcfb92b615df3160b2eed072aa1d9bf71a3832152dff8c1a05263e2e907dea2": {
+      "description_zh": "在Android原生应用中嵌入Zoom会议，涵盖默认或自定义界面、PKCE及SDK认证、加入和主持会议流程及Meeting SDK API集成。",
+      "source": "Zoom Meeting SDK for Android native apps. Use when embedding Zoom meetings in Android with default/custom UI, PKCE + SDK auth, join/start flows, and Meeting SDK API integration.",
+      "source_sha256": "6dcfb92b615df3160b2eed072aa1d9bf71a3832152dff8c1a05263e2e907dea2",
+      "source_path": "skills/meeting-sdk/android/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32d122c1e8385f2edf1c68e545ae5fcd264cae35561ec2a274eb8b936e5b8e7a": {
+      "description_zh": "在Electron桌面应用中嵌入Zoom会议，涵盖Node原生扩展包装、JWT认证、入会和开会、设置控制器及原始数据集成。",
+      "source": "Zoom Meeting SDK for Electron desktop applications. Use when embedding Zoom meetings in an Electron app with the Node addon wrapper, JWT auth, join/start flows, settings controllers, and raw data integration.",
+      "source_sha256": "32d122c1e8385f2edf1c68e545ae5fcd264cae35561ec2a274eb8b936e5b8e7a",
+      "source_path": "skills/meeting-sdk/electron/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "04cac7451d5097a4edde51e4c2215bd1e9c6ca54dc877e1a865ac7e50b0c75b1": {
+      "description_zh": "在iOS原生应用中嵌入Zoom会议，涵盖默认或自定义界面、PKCE及SDK认证、使用ZAK主持开会和移动生命周期。",
+      "source": "Zoom Meeting SDK for iOS native apps. Use when embedding Zoom meetings in iOS with default/custom UI, PKCE + SDK auth, host start with ZAK, and mobile lifecycle handling.",
+      "source_sha256": "04cac7451d5097a4edde51e4c2215bd1e9c6ca54dc877e1a865ac7e50b0c75b1",
+      "source_path": "skills/meeting-sdk/ios/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca1421507c5c8fd97dfd9c3652ae8bf38cfffbeff816aa1f292cd7139ca03a6f": {
+      "description_zh": "使用Linux Zoom Meeting SDK构建C++无界面会议机器人，访问原始音视频、转录和录制，并接入AI以实现服务端自动化。",
+      "source": "Zoom Meeting SDK for Linux - C++ headless meeting bots with raw audio/video access, transcription, recording, and AI integration for server-side automation",
+      "source_sha256": "ca1421507c5c8fd97dfd9c3652ae8bf38cfffbeff816aa1f292cd7139ca03a6f",
+      "source_path": "skills/meeting-sdk/linux/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cac775a99137020ded4b94ff590b4469f7d4a2b6c3b55209e783f3e930151856": {
+      "description_zh": "在macOS原生应用中嵌入Zoom会议，涵盖默认或自定义界面、PKCE及SDK认证、主持开会与入会和桌面会议功能控制器。",
+      "source": "Zoom Meeting SDK for macOS native apps. Use when embedding Zoom meetings in macOS with default/custom UI, PKCE + SDK auth, host start/join flows, and desktop meeting feature controllers.",
+      "source_sha256": "cac775a99137020ded4b94ff590b4469f7d4a2b6c3b55209e783f3e930151856",
+      "source_path": "skills/meeting-sdk/macos/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b35ad1109f1de2d1e82ef00307cf022b543ec42c9851794c06c8a8d1e75c070e": {
+      "description_zh": "使用@zoom/meetingsdk-react-native在React Native的iOS及Android应用中嵌入Zoom会议，处理JWT认证、入会开会、平台配置及原生桥接故障。",
+      "source": "Zoom Meeting SDK for React Native. Use when embedding Zoom meetings in React Native iOS/Android apps with @zoom/meetingsdk-react-native, JWT auth, join/start flows, platform setup, and native bridge troubleshooting.",
+      "source_sha256": "b35ad1109f1de2d1e82ef00307cf022b543ec42c9851794c06c8a8d1e75c070e",
+      "source_path": "skills/meeting-sdk/react-native/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5b21ea4923ab89bbb34c6117fecb476cc421099c251b44d5e6f47ebc22324c1": {
+      "description_zh": "在Unreal Engine项目中通过C++和Blueprint包装嵌入Zoom会议，处理包装接口与SDK的映射。",
+      "source": "Zoom Meeting SDK for Unreal Engine wrapper integrations. Use when building Unreal projects that embed Zoom meetings with C++ and Blueprint wrappers, including wrapper-to-SDK mapping concerns.",
+      "source_sha256": "e5b21ea4923ab89bbb34c6117fecb476cc421099c251b44d5e6f47ebc22324c1",
+      "source_path": "skills/meeting-sdk/unreal/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b29e38b2f86ce40701cf4393a0f456783a3526489dfa07da085baf4607339f73": {
+      "description_zh": "在Web应用中嵌入Zoom Meeting SDK，选择完整页面Client View或基于Promise的嵌入Component View，并配置高清、画廊及虚拟背景所需SharedArrayBuffer。",
+      "source": "Zoom Meeting SDK for Web - Embed Zoom meeting capabilities into web applications. Two integration options: Client View (full-page, familiar Zoom UI) and Component View (embeddable, Promise-based API). Includes SharedArrayBuffer setup for HD video, gallery view, and virtual backgrounds.",
+      "source_sha256": "b29e38b2f86ce40701cf4393a0f456783a3526489dfa07da085baf4607339f73",
+      "source_path": "skills/meeting-sdk/web/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b33690de198b5cddaaf28f15414bdf68ab7839181b09a48473d43211fb404b2f": {
+      "description_zh": "使用Zoom Meeting SDK Web Client View提供与Zoom Web Client相同的全页面会议界面，通过ZoomMtg全局单例及回调API快速集成，适用于少量定制。",
+      "source": "Zoom Meeting SDK Web - Client View. Full-page Zoom meeting experience with the familiar Zoom interface. Uses ZoomMtg global singleton with callback-based API. Ideal for quick integration with minimal customization. Provides the same UI as Zoom Web Client.",
+      "source_sha256": "b33690de198b5cddaaf28f15414bdf68ab7839181b09a48473d43211fb404b2f",
+      "source_path": "skills/meeting-sdk/web/client-view/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a500d065ca20a9fe5a45aa23266d2c20637d042139757066a562296cd78afdb": {
+      "description_zh": "使用Zoom Meeting SDK Web Component View提供可嵌入会议组件，通过ZoomMtgEmbedded和Promise及async/await实现灵活布局，适用于React、Vue和Angular应用。",
+      "source": "Zoom Meeting SDK Web - Component View. Embeddable Zoom meeting components with Promise-based API for flexible integration. Ideal for React/Vue/Angular apps and custom layouts. Uses ZoomMtgEmbedded with async/await patterns and embeddable UI containers.",
+      "source_sha256": "2a500d065ca20a9fe5a45aa23266d2c20637d042139757066a562296cd78afdb",
+      "source_path": "skills/meeting-sdk/web/component-view/SKILL.md",
+      "package_sha256": "e09838df8a1ba7f6b89e7f3eb401006f0c1da4724fab50edbab07c31d3845443",
+      "source_package": "Zoom-1.1.0-v39.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {

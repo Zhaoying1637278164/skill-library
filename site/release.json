@@ -1,17 +1,17 @@
 {
-  "release": "2026-10-08-skill-chinese-batch-71",
-  "previous_commit": "edd04f5",
+  "release": "2026-10-08-skill-chinese-batch-72",
+  "previous_commit": "ac2fd6e",
   "source_ui_commit": "92bd6f5",
-  "index_sha256": "0270985e8001a8256a66744ccd961d6365287f98b9546ecc1c6f7f8fe6268be7",
+  "index_sha256": "17618eec256d59a8c749ce07e5bc8cbc4fdd5115e1b0b8acbd2e252d196b26d0",
   "package_bytes_unchanged": true,
   "editorial_notice": {
     "template_summaries": 879,
-    "missing_skill_chinese": 275
+    "missing_skill_chinese": 155
   },
   "skill_chinese_progress": {
-    "baseline_missing": 395,
+    "baseline_missing": 275,
     "newly_covered": 120,
-    "translated_total": 10154,
+    "translated_total": 10274,
     "total": 10429,
     "all_complete": false,
     "new_source_definitions": 120,
@@ -34,6 +34,11 @@
       "file": "batocera-1.0.1-v2.zip",
       "path": "template/SKILL.md",
       "issue": "未填写的技能编写模板，具体业务用途未确认"
+    },
+    {
+      "file": "Writing Skills-0.6.0-v1.zip",
+      "path": "template/SKILL.md",
+      "issue": "未填写的写作技能模板，中文说明保留模板性质，不视为真实业务技能"
     }
   ]
 }
