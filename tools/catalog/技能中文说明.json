@@ -642,6 +642,94 @@
       "source_description": "Produce a .xlsx file on disk (headless) instead of driving a live Excel workbook — for managed-agent sessions with no open Office app.",
       "source_sha256": "7b6ec09a452681076fea05257cfccda1c11dce3ddf271429cc2503032388ebc5",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/benefits/SKILL.md": {
+      "description_zh": "根据 Cashflow 的收支数据，初步筛查可能尚未申领的美国 EITC、SNAP、LIHEAP、WIC 和 Medicaid 等福利，并整理免费社区援助机构预约所需的资料。适用于财务困难、账单或房租压力、询问政府援助等情形；筛查结果不等于正式资格认定。",
+      "source": "Screen for unclaimed safety-net benefits (EITC, SNAP, LIHEAP, WIC, Medicaid) using the user's Cashflow data, then generate a prep packet for a free Community Action Agency appointment. Triggered by \"am I missing any benefits\", \"do I qualify for SNAP\", \"food stamps\", \"EITC\", \"help with bills\", \"help with rent\", \"I can't afford\", \"money is tight\", \"community action\", \"211\", \"free tax prep\", \"VITA\". Use this skill whenever the user mentions financial hardship, asks about any government assistance program, mentions struggling to make ends meet, OR — when invoked from a recap/check-in — when their data shows likely eligibility (income under ~200% FPL, heavy debt service, utility-bill stress). Don't wait for the user to know the right name for the program — surface it when the data calls for it.",
+      "source_sha256": "905709219319b983569547889a3cb9987f7a4f89ec253de9b6e1c1a3d0ba853a",
+      "source_path": "skills/benefits/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/burnrate/SKILL.md": {
+      "description_zh": "汇总周期性账单、订阅和其他固定财务义务，按类别拆分每月支出，并标出金额变化，帮助了解每月必须承担的基础开销。",
+      "source": "Calculate total recurring financial obligations, break them down by category, and flag changes. Triggered by \"burn rate\", \"monthly burn\", \"recurring bills\", \"subscriptions\", \"what do I pay for\", \"fixed costs\", \"how much are my bills\", \"monthly obligations\", \"what are my recurring charges\". Use this skill whenever the user asks about their recurring spending, fixed costs, or wants to understand their baseline monthly obligations.",
+      "source_sha256": "015901da78f55da29a23240f8e64e27aef2bd2a5f2dc641a6c547b6a9565e661",
+      "source_path": "skills/burnrate/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/cards/SKILL.md": {
+      "description_zh": "结合消费类别和各张信用卡的奖励规则，分析积分、返现与用卡选择。先检查是否产生信用卡利息；若存在利息支出，优先提示偿债问题，再讨论奖励优化。",
+      "source": "Triggered by \"optimize my cards\", \"which card should I use\", \"card recommendations\", \"maximize points\", \"credit card optimizer\", \"best card for\", \"rewards optimization\", \"point optimization\", \"card strategy\", \"am I using the right card\". Use this skill whenever the user asks about credit card rewards, points, cashback optimization, or which card to use for purchases — even if they don't say \"optimize\" explicitly.",
+      "source_sha256": "cbcec832fb55c9ae970d9588466857cb5558b550fb84aa28746025a2932129bd",
+      "source_path": "skills/cards/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/debt/SKILL.md": {
+      "description_zh": "盘点已连接 Plaid 与未连接账户中的债务，估算每年的债务成本，并对比先还小额债务的雪球法和先还高利率债务的雪崩法，帮助选择还款方案；支持银行连接不完整的情况。",
+      "source": "Build a debt payoff plan — inventory all debts (Plaid-connected and not), put a number on what the debt is costing per year, and simulate snowball vs avalanche payoff side-by-side so the user can pick. Triggered by \"pay off debt\", \"snowball\", \"avalanche\", \"when will I be debt free\", \"credit card debt\", \"student loan\", \"should I pay off X or Y first\", \"how much is my debt costing me\", \"debt strategy\", \"best way to pay down\", \"I'm drowning in debt\", and the slash command `/debt`. Use this skill whenever the user asks about paying off debt, comparing payoff strategies, or what their debt costs — even if they don't say \"snowball\" or \"avalanche\". Also the right skill when the user has consumer debt and asks \"where do I start\" or \"make a plan.\" Built to handle partial Plaid coverage.",
+      "source_sha256": "94cd6d4896d5fe37581aacc9007e545ca9ba26a28a65b46992bacf09e3c4ffd4",
+      "source_path": "skills/debt/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/drift/SKILL.md": {
+      "description_zh": "对比最近 12 个月与此前 12 个月的收入和支出，识别支出是否增长得更快，量化差额并定位具体类别，帮助判断涨薪后的财务改善与生活开销膨胀。",
+      "source": "Compare the last 12 months to the 12 before them and show whether expenses grew faster than income — by how much, and in which categories. Triggered by \"lifestyle inflation\", \"lifestyle creep\", \"am I drifting\", \"spending creep\", \"did the raise help\", \"where did my raise go\", \"am I keeping pace\", \"treading water\", \"expenses up year over year\", \"is my spending growing\", \"am I getting ahead\", and the slash command `/drift`. Use this skill whenever the user asks about year-over-year change in spending, especially in relation to income — including casual phrasings like \"did the raise actually help?\" or \"am I getting ahead?",
+      "source_sha256": "bb2adbc5eefa551e22c7b958b667ac2835181f75803d6517b81d4469c2f86353",
+      "source_path": "skills/drift/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/enveloping/SKILL.md": {
+      "description_zh": "建立或复核信封预算，把房租、账单等必要支出与可自由使用的资金分开，规划每次发薪后的账户分配、账单账户和自动付款安排。",
+      "source": "Help the user set up or review an envelope budgeting system — physically separating non-discretionary bills from discretionary spending money so the bills are always covered and the rest is guilt-free. Use this skill whenever the user asks about envelope budgeting, paycheck splitting, automating bill payments, separating bills from spending, structuring multiple accounts, setting up a \"bill pay\" or \"fixed costs\" account, \"what should I move to my bill account each paycheck\", \"how do I make sure my rent is covered\", \"how much can I actually spend\", or references Ramit Sethi's Conscious Spending Plan or any three-bucket framework. Trigger even when the user doesn't know the term \"enveloping\" — phrases like \"I keep accidentally spending my rent money\", \"I want to know what's safe to spend without worrying\", \"I want my bills to come out of a different account\", or \"I want to pay myself first\" all mean this skill.",
+      "source_sha256": "6999bcd279d46ee4e22aca8220d7181ce22934a2974440732ff25ee402176393",
+      "source_path": "skills/enveloping/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/leaks/SKILL.md": {
+      "description_zh": "审查订阅、闲置订阅、涨价及试用转付费，排查银行手续费、利息、重复扣款和账单错误，并关注短期借款、先买后付叠加及赌博入金等资金流失线索。",
+      "source": "Comprehensive audit of money leaving the user's accounts in ways they're likely not tracking — subscriptions (active, zombie, price-creeped, free-trial converts), fees (overdraft, NSF, ATM, foreign-transaction, late, account, wire), interest charges and finance fees, predatory products (EWA, payday, BNPL stacking), gambling deposits with escalation patterns, and unintended leaks like duplicate charges and billing errors. Triggered by \"where am I leaking money\", \"audit my subscriptions\", \"find hidden charges\", \"anything fishy\", \"what am I paying for\", \"check for duplicates\", \"fees\", \"interest\", \"subscriptions\", \"where's my money going wrong\", \"bank fees\", \"what's draining my account\". Use this skill whenever the user asks about money leaks, recurring charges, fees, fraud, anomalies, suspicious activity, subscription audits, or wants a comprehensive look at what's bleeding from their accounts beyond their intentional spending.",
+      "source_sha256": "a868adb610c545463ce662cec9a07fdce1c953abebff437e98e447cab6d3d437",
+      "source_path": "skills/leaks/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/recap/SKILL.md": {
+      "description_zh": "为指定期间生成文字财务回顾，对比支出、收入、趋势和异常，适用于周度、月度、季度或年度的收支复盘。",
+      "source": "Generate a narrative financial review comparing spending, income, trends, and anomalies across any time period. Triggered by \"monthly recap\", \"how did I do this month\", \"spending summary\", \"financial review\", \"weekly recap\", \"quarterly review\", \"year in review\". Use this skill whenever the user asks about how they did financially over a period, wants a spending summary, or asks for a financial review — even casually like \"how'd this month go?",
+      "source_sha256": "760ade36c00c502b7c0637b00e9205202c0d9f179bd07b28a9b69c65f10abfa9",
+      "source_path": "skills/recap/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/setup/SKILL.md": {
+      "description_zh": "银行账户通过 Plaid 连接后，首次读取账户、收支、周期性交易和已有规则，概述值得关注的问题并询问下一步。首轮仅做只读检查，用户确认后才修改数据。",
+      "source": "One-time onboarding after connecting bank accounts. Pulls a wide read in parallel, surfaces what stands out, and asks the user what to do next. Read-only on first turn — applies changes only when the user confirms. Triggered by \"set up my accounts\", \"just connected my bank\", \"first time setup\", \"onboarding\", \"get started\", \"configure cashflow\", \"now what\", or by the system immediately after a successful Plaid link.",
+      "source_sha256": "c7e6e213457473527c8d9ede47fca641f2926185e6235dfe3d0f8bb64132b125",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/tidy/SKILL.md": {
+      "description_zh": "逐步分类未归类的交易，修正错误分类，合并重复的商户名称，并为经常出现的商户建立规则，改善交易数据质量。",
+      "source": "Incrementally categorize uncategorized transactions, fix miscategorized items, consolidate duplicate merchant names, and create rules for recurring merchants. Triggered by \"tidy up\", \"clean up transactions\", \"categorize uncategorized\", \"organize my transactions\", \"fix categories\", \"clean up merchants\". Use this skill whenever the user wants to improve their transaction data quality — even if they just say something like \"my transactions are messy\" or \"lots of uncategorized stuff.",
+      "source_sha256": "13910b3def3aa3dafdc5dc909f2c1e93ace481dbcee872baa10c1b95037d4385",
+      "source_path": "skills/tidy/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cashflow-0.4.0-v1.zip:skills/trips/SKILL.md": {
+      "description_zh": "结合交易日期、地点与邮件确认信息，将旅行交易归入对应行程并批量打标签，帮助识别费用所属行程和汇总旅行成本。",
+      "source": "Cluster travel transactions into trips using date/location signals and email confirmations, then tag them in bulk. Triggered by \"tag travel\", \"tag trips\", \"travel expenses\", \"organize trips\", \"trip tagging\", \"which trip was this\". Use this skill whenever the user wants to organize travel spending by trip, figure out which trip a charge belongs to, or get a breakdown of trip costs.",
+      "source_sha256": "e2879606778e0c855ec1868c4a0d59883f8b3a83f5fcb5759465abef48e462e2",
+      "source_path": "skills/trips/SKILL.md",
+      "package_sha256": "6e2fb231777f0b909cab17c8e53c947fcf4d8d1a3408a7f0092917b290fec5ec",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   }
 }
