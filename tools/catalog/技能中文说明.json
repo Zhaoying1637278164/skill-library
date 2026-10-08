@@ -19969,6 +19969,1086 @@
       "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
       "source_package": "clawpage-1.2.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b183feebf0dd418c29680f0ae81349cd1b4328576444493a561b3d9373ac82f": {
+      "description_zh": "管理用户Clawpage服务端KV表的创建权限删除、记录CRUD、深合并、自动键追加及导入导出，用于评论点赞配置计数等持久状态；数据位于用户子域，所有者sk_令牌不得进入浏览器HTML。",
+      "source": "Manage a user's Clawpage KV data tables — create/permission/delete tables, CRUD records, deep-merge updates, auto-keyed appends, export/import. Use whenever a page needs server-side persisted data (comments, reactions, likes, visitor state, configs, content CMS, simple counters). The data lives under the user's own subdomain; the sk_ owner token is NEVER allowed to ship in browser HTML.",
+      "source_sha256": "6b183feebf0dd418c29680f0ae81349cd1b4328576444493a561b3d9373ac82f",
+      "source_path": "skills/manage-data/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd88a592b638022a6bc812b2142a827dcb0148f039ea99dccf689b7ac318750d": {
+      "description_zh": "创建列举修改删除映射到Clawpage页面的短链接，目标仅限*.clawpage.ai，可分享公开或访问码预览及首页，外部URL不支持。",
+      "source": "Create, list, update, or delete short links that map https://clawpage.ai/s/<slug> → a *.clawpage.ai URL. Use when the user wants to share a cleaner/shorter URL for their own Clawpage page (public page, preview with pagecode, home page, etc.). Target URLs are restricted to *.clawpage.ai only — external URLs are rejected.",
+      "source_sha256": "cd88a592b638022a6bc812b2142a827dcb0148f039ea99dccf689b7ac318750d",
+      "source_path": "skills/manage-links/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d4e7dcde2616be4b4ecc16d45c78293151ae74ea8fa0f78fce2d9ebd326b57a": {
+      "description_zh": "介绍clawpage preview本地预览体验，供创建更新页面在发布前预览时引用；仅参考文档，不直接调用。",
+      "source": "Reference doc explaining the local preview UX shipped by `clawpage preview`. Linked from create-page and update-page when the user opts to preview before publishing. Not directly invoked — for documentation only.",
+      "source_sha256": "9d4e7dcde2616be4b4ecc16d45c78293151ae74ea8fa0f78fce2d9ebd326b57a",
+      "source_path": "skills/preview-flow/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c01232f8b6ce63c1c8e4fdccd055f314f6ba988a3a3ab7502609fdc98f71676": {
+      "description_zh": "修改并重新发布已有Clawpage项目，保留pageId及公开根URL；需识别真实已有页面，无法识别时应新建而非编造ID。",
+      "source": "Update an existing clawpage page project and republish — preserves the same `pageId` / `publicUrl` / `rootUrl`. Trigger when the user mentions a known `pageId`, says \"update existing page\", \"rework\", \"revise\", \"republish\", or refers to an existing local page project (`~/.clawpage/pages/<name>` or `./.pages/<name>`, or \"基于旧页面\"). NEVER fabricate a `pageId` — if no existing page is identifiable, this is a `create-page` task instead.",
+      "source_sha256": "5c01232f8b6ce63c1c8e4fdccd055f314f6ba988a3a3ab7502609fdc98f71676",
+      "source_path": "skills/update-page/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d3e1c3f90265119317640274a806cb44952baa71e28773b8a4ffb1db9065c6bb": {
+      "description_zh": "更新已有Clawpage模板的结构样式交互与文档，保留发布兼容所需__SYSTEM__占位符和meta元数据。",
+      "source": "Update an existing clawpage template's structure / styles / interactions / docs while preserving publish compatibility (required `__SYSTEM__` placeholders + meta.md metadata). Trigger when user says \"improve template\", \"模板改版\", \"update <name> template\", or wants to evolve a shared template that other pages depend on.",
+      "source_sha256": "d3e1c3f90265119317640274a806cb44952baa71e28773b8a4ffb1db9065c6bb",
+      "source_path": "skills/update-template/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a94cd8ac1236d306c76730732e9a9adff372da90291bff9c2a97c9f39360d2d1": {
+      "description_zh": "使用Clawpage浏览器SDK为HTML加入持久数据、短链接、访问计数和文件上传等动态功能；不得在页面JavaScript嵌入sk_令牌。",
+      "source": "Use the Clawpage Browser SDK to quickly add persistent data, short links, view counts, or file uploads to a Clawpage HTML page. Load when the user wants to \"make my page interactive\", \"add comments\", \"track likes\", \"upload an image to my page\", \"count visits\", or any dynamic feature that needs server-side state. One `<script>` tag covers it all; never embed sk_ token in page JS.",
+      "source_sha256": "a94cd8ac1236d306c76730732e9a9adff372da90291bff9c2a97c9f39360d2d1",
+      "source_path": "skills/use-sdk/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0332deba1b9365e9bbce6cbdab811c65ea88ae328d4e9b0bbc31dfcadfcd1f0": {
+      "description_zh": "展示Clawpage各页面日访问量趋势、热门页面、首页和短链接点击；仅记录时间与页面，不采集IP、用户代理或地理位置。",
+      "source": "Show page-view counts and day-by-day trends for the user's Clawpage pages. Use when the user asks \"how many views has my page got\", \"what's my traffic\", \"which page is most popular\". Covers public named pages, user home page, and short-link clicks. Privacy note — only timestamp + page are tracked; no IP, UA, or geo.",
+      "source_sha256": "a0332deba1b9365e9bbce6cbdab811c65ea88ae328d4e9b0bbc31dfcadfcd1f0",
+      "source_path": "skills/view-stats/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19f225331a9357832cda8f9e46dffce64329021f84b239b81382e5906f6fa727": {
+      "description_zh": "指导设计编写评审后端端点、支付及状态变更、数据库操作、服务调用、后台任务、风险变更发布和生产告警值班。",
+      "source": "Use when designing, writing, or reviewing backend code — HTTP endpoints, payment or state-changing flows, database reads and writes, calls to other services, background jobs, rolling out a risky change, or production alerting and on-call.",
+      "source_sha256": "19f225331a9357832cda8f9e46dffce64329021f84b239b81382e5906f6fa727",
+      "source_path": "skills/clean-backend/SKILL.md",
+      "package_sha256": "1a6f956bbb7ae3e97b797a109cf2294f605115627209c7e4067c01af2c097881",
+      "source_package": "Clean-Backend-2.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78f812cac63ccd2bf202d9a42727fd81ab8cb8b33f0c3870174cae410a4f1e4d": {
+      "description_zh": "在注册结账、CRM同步和批任务代码接入ClearBounce邮件验证REST API，说明端点返回形态、沙箱免积分测试与验证结果处理。",
+      "source": "Integrate ClearBounce email verification into code — signup forms, checkout flows, CRM syncs, batch jobs. Use when the user wants to call the ClearBounce REST API, needs the endpoint/response shapes, wants to test without spending credits (sandbox keys), or asks how to handle verification results in their app.",
+      "source_sha256": "78f812cac63ccd2bf202d9a42727fd81ab8cb8b33f0c3870174cae410a4f1e4d",
+      "source_path": "skills/clearbounce-api/SKILL.md",
+      "package_sha256": "14831ea9c88efbab3129c4ba89c8050eb00e3a1bc1d655bd460c8ec59922f7c2",
+      "source_package": "ClearBounce Email Verification-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "66b3c0e6dfb780ccbd89f8525c2c6d95702a54a29927452b7466300a70bb32d6": {
+      "description_zh": "通过ClearBounce验证邮箱有效性与可送达性、清洗CSV表格文本名单、查找商务邮箱或查询积分。",
+      "source": "Verify email addresses or clean an email list with ClearBounce. Use when the user asks whether an address is valid/deliverable, wants to clean, validate or de-bounce a list (CSV, spreadsheet, text), wants to find someone's business email, or asks about their ClearBounce credits.",
+      "source_sha256": "66b3c0e6dfb780ccbd89f8525c2c6d95702a54a29927452b7466300a70bb32d6",
+      "source_path": "skills/email-verification/SKILL.md",
+      "package_sha256": "14831ea9c88efbab3129c4ba89c8050eb00e3a1bc1d655bd460c8ec59922f7c2",
+      "source_package": "ClearBounce Email Verification-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54a945ffef7845589015cdf0dee5ae619f1d8f8cb3c52e31a7f672ee412e8145": {
+      "description_zh": "配置插件附带的ClickHouse MCP连接，支持首次安装或连接故障。",
+      "source": "Guides users through setting up the ClickHouse MCP server connection bundled with this plugin. Use when the user first installs the plugin or has trouble connecting to ClickHouse.",
+      "source_sha256": "54a945ffef7845589015cdf0dee5ae619f1d8f8cb3c52e31a7f672ee412e8145",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "201e746343b445298032c0a172745ade9a983b44e86abbeee368ed7e404bfab3",
+      "source_package": "ClickHouse-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f649cf432e65838b0dc81542e556354d3db34270ad9a83979c54fc1d5fccad44": {
+      "description_zh": "使用chDB DataStore以pandas式API和ClickHouse引擎过滤聚合关联表格、加速pandas，也可将S3及多数据库湖表读为DataFrame并跨来源关联；不用于原生SQL、服务管理或非Python接口。",
+      "source": "Use when the user has tabular data (pandas DataFrame, parquet, csv, Arrow, json) and wants to filter, group, aggregate, join, or speed up slow pandas. Provides chDB DataStore — same pandas API, ClickHouse engine underneath. Also handles reading from S3, MySQL, PostgreSQL, MongoDB, ClickHouse Cloud, Iceberg, Delta Lake as DataFrames and joining across sources. TRIGGER when: user mentions DataFrame, parquet, csv, \"fast pandas\", \"speed up pandas\", or cross-source DataFrame joins; user imports `chdb.datastore` or `from datastore import DataStore`. SKIP this skill for raw SQL syntax (use chdb-sql instead), ClickHouse server administration, or non-Python DataStore API work.",
+      "source_sha256": "f649cf432e65838b0dc81542e556354d3db34270ad9a83979c54fc1d5fccad44",
+      "source_path": "skills/chdb-datastore/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "427680599087e3b720e1454c0fe4dcd4dcb102ae644469b617516afbeaacd96c": {
+      "description_zh": "用嵌入Python的chDB在本地文件、URL、S3和远程数据库湖表运行分析SQL，无需服务器；支持Session多步、参数化、窗口及跨来源函数，不用于DataFrame链式API或服务管理。",
+      "source": "Use when the user wants to run SQL — especially analytical SQL — on local files (parquet/csv/json), URLs, S3 paths, or remote databases (Postgres, MySQL, MongoDB, ClickHouse Cloud, Iceberg, Delta Lake) without setting up a server. Provides chDB — embedded ClickHouse SQL in Python with 1000+ functions, Session for stateful multi-step pipelines, parametrized queries, and cross-source joins via `s3()`, `mysql()`, `postgresql()`, `iceberg()`, `deltaLake()`, `remoteSecure()` table functions. TRIGGER when: user wants SQL on parquet/csv/files or across remote analytical sources; uses ClickHouse SQL features (window functions, windowFunnel, geoToH3, JSON path ops, Session, parametrized queries); imports `chdb` or calls `chdb.query()`. SKIP this skill for pandas-style DataFrame method-chaining (use chdb-datastore instead) or ClickHouse server administration.",
+      "source_sha256": "427680599087e3b720e1454c0fe4dcd4dcb102ae644469b617516afbeaacd96c",
+      "source_path": "skills/chdb-sql/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d825092ca7b9a0098111b9968d92610bb793a8605d62aa77ae8bf6341feaedb4": {
+      "description_zh": "为ClickHouse架构、接入及建模模式提供按工作负载的决策框架和明确来源标识，补充通用最佳实践。",
+      "source": "MUST USE when designing ClickHouse architectures, selecting between ingestion or modeling patterns, or translating best practices into workload-specific system designs. Complements clickhouse-best-practices with decision frameworks and explicit provenance labels.",
+      "source_sha256": "d825092ca7b9a0098111b9968d92610bb793a8605d62aa77ae8bf6341feaedb4",
+      "source_path": "skills/clickhouse-architecture-advisor/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d49ad785efe6c225d4e7e4cc08343170a095f28877deb5632bc98daded511452": {
+      "description_zh": "使用@clickhouse/client编写Node.js应用，配置客户端、连接检查、插入格式、查询解析、参数、会话临时表和数据类型；不用于浏览器客户端。",
+      "source": "Write idiomatic application code with the ClickHouse Node.js client (`@clickhouse/client`). Use this skill whenever a user is *building* against the Node.js client — configuring the client, pinging, inserting rows in JSON or raw formats, selecting and parsing results, binding query parameters, managing sessions and temporary tables, working with data types or customizing JSON parsing. Do NOT use for browser/Web client code.",
+      "source_sha256": "d49ad785efe6c225d4e7e4cc08343170a095f28877deb5632bc98daded511452",
+      "source_path": "skills/clickhouse-js-node-coding/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b3d262a6a3d3f5e994a019f32a704c395e01a988cf28ce304834b64ab2ce551": {
+      "description_zh": "生成Node.js TypeScript/JavaScript代码，编码解码ClickHouse RowBinary及附带列名类型的HTTP流；不涵盖浏览器。",
+      "source": "Generate TypeScript/JavaScript code that reads/decodes AND writes/encodes ClickHouse RowBinary streams for the ClickHouse HTTP server. Use this skill whenever a user wants to parse or produce `RowBinary`, `RowBinaryWithNames`, or `RowBinaryWithNamesAndTypes`. Node.js only, doesn't cover browsers.",
+      "source_sha256": "1b3d262a6a3d3f5e994a019f32a704c395e01a988cf28ce304834b64ab2ce551",
+      "source_path": "skills/clickhouse-js-node-rowbinary/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f22498b8367a09b19f01cf240839004c6d7b12c8e4efe09a6e56dfff6a20ed18": {
+      "description_zh": "排查ClickHouse Node.js客户端断连、Keep-Alive、流、类型、只读权限、代理TLS及长查询超时，即使症状尚不明确；不用于Web客户端。",
+      "source": "Troubleshoot and resolve common issues with the ClickHouse Node.js client (@clickhouse/client). Use this skill whenever a user reports errors, unexpected behavior, or configuration questions involving the Node.js client specifically — including socket hang-up errors, Keep-Alive problems, stream handling issues, data type mismatches, read-only user restrictions, proxy/TLS setup problems, or long-running query timeouts. Trigger even when the user hasn't precisely named the issue; vague symptoms like \"my inserts keep failing\" or \"connection drops randomly\" in a Node.js context are strong signals to use this skill. Do NOT use for browser/Web client issues.",
+      "source_sha256": "f22498b8367a09b19f01cf240839004c6d7b12c8e4efe09a6e56dfff6a20ed18",
+      "source_path": "skills/clickhouse-js-node-troubleshooting/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b519625e3bd8ada941a4db0495dc4bc0229c5496b3e52396e19df61362d85cd8": {
+      "description_zh": "依据Prometheus系统指标和Slow Query Patterns逐摘要证据，调查ClickHouse托管Postgres性能根因并提出修复建议，不自动应用。",
+      "source": "MUST USE when investigating performance issues on a ClickHouse-managed Postgres instance. Provides an evidence-based RCA workflow that scrapes the Prometheus endpoint for system signal, pulls per-digest evidence from the Slow Query Patterns API, and recommends (does not apply) a fix.",
+      "source_sha256": "b519625e3bd8ada941a4db0495dc4bc0229c5496b3e52396e19df61362d85cd8",
+      "source_path": "skills/clickhouse-managed-postgres-rca/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b807d7726a01e24351c4349dc364549521d95a4102f63a4ec6759c3fddc1f3bd": {
+      "description_zh": "通过Docker或配置现有OpenTelemetry Collector接入ClickHouse Cloud Managed ClickStack，发送丰富合成遥测并验证在ClickStack可见。",
+      "source": "Use when a user wants to wire an OpenTelemetry collector into a Managed ClickStack service on ClickHouse Cloud, either by deploying a new local collector (Docker run or Docker Compose) or by configuring their own existing collector, then send rich synthetic telemetry and verify it is visible in ClickStack.",
+      "source_sha256": "b807d7726a01e24351c4349dc364549521d95a4102f63a4ec6759c3fddc1f3bd",
+      "source_path": "skills/clickstack-otel-collector/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "03f39afaedecbb568757130f225e4cd0b494b64255361437b8ee17884c14c323": {
+      "description_zh": "用clickhousectl安装运行本地ClickHouse开发服务器，创建管理生产Cloud服务，处理认证、建表、迁移与应用连接以及本地到云。",
+      "source": "Sets up and manages ClickHouse using the clickhousectl CLI — installs and runs a local ClickHouse server for development, and creates managed ClickHouse Cloud services for production (authentication, service creation, schema migration, application connection). Use when the user wants to build an application with ClickHouse, set up a local ClickHouse dev environment, create tables and start querying, deploy ClickHouse to production or ClickHouse Cloud, or migrate from a local setup to the cloud.",
+      "source_sha256": "03f39afaedecbb568757130f225e4cd0b494b64255361437b8ee17884c14c323",
+      "source_path": "skills/infra-clickhouse/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aeb4bf7405d4bf9f35def108958036b0d6c2bda32d9f76c7a4250d91a2af19e8": {
+      "description_zh": "用clickhousectl运行Docker本地Postgres及管理ClickHouse Cloud托管Postgres，涵盖连接TLS配置、只读副本、故障转移和时间点恢复。",
+      "source": "Sets up and manages Postgres using the clickhousectl CLI — runs a local Docker-backed Postgres for development, and creates and operates managed ClickHouse Cloud Postgres services (connections, TLS, runtime config, read replicas, failover, point-in-time restore). Use when the user wants a Postgres or PostgreSQL database for their application, a local Postgres dev environment, psql access, or a managed/production Postgres in ClickHouse Cloud, or mentions moving a local Postgres to production.",
+      "source_sha256": "aeb4bf7405d4bf9f35def108958036b0d6c2bda32d9f76c7a4250d91a2af19e8",
+      "source_path": "skills/infra-postgres/SKILL.md",
+      "package_sha256": "4235c0b08a33a2fec9112d34728855416c6cc29d30f729d55dca4ffc66a3b844",
+      "source_package": "clickhouse-best-practices-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbb70a747310d45b33ee77a5fdcb06e229de90f5b96fdcb51c3e98b6a483c51b": {
+      "description_zh": "审计ClickTrail或归因实现的同意、PII、不安全目标、租户伪造、信任边界和测试缺失，用于隐私与发布前检查。",
+      "source": "Audit an existing ClickTrail or attribution implementation for consent, PII, unsafe destinations, tenant spoofing, trust-boundary errors, and missing tests. Use for tracking reviews, privacy checks, or pre-release audits.",
+      "source_sha256": "cbb70a747310d45b33ee77a5fdcb06e229de90f5b96fdcb51c3e98b6a483c51b",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "b9b10fc9bc0daf4526486c8166cf05e4682b6ed6e08177e05ff8b40834b54ac7",
+      "source_package": "Clicktrail-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d2bd7154e9fb92db587a145f492b0084158a626dc1aab277a176f359e106b64": {
+      "description_zh": "诊断落地页、重定向、同意、表单、CRM和离线转化间点击ID丢失，处理GCLID等与UTM、GA4/Google Ads差异及CRM线索关联。",
+      "source": "Diagnose lost click IDs and attribution handoffs across landing pages, redirects, consent, forms, CRM records, and offline conversions. Use when someone asks to check my click tracking, debug GCLID/GBRAID/WBRAID/FBCLID/MSCLKID loss, preserve UTMs, fix offline conversion tracking, explain a GA4 versus Google Ads discrepancy, or attach click IDs to a CRM lead.",
+      "source_sha256": "6d2bd7154e9fb92db587a145f492b0084158a626dc1aab277a176f359e106b64",
+      "source_path": "skills/click-tracking-audit/SKILL.md",
+      "package_sha256": "b9b10fc9bc0daf4526486c8166cf05e4682b6ed6e08177e05ff8b40834b54ac7",
+      "source_package": "Clicktrail-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa2725f6a6e6dbd3b07f0a7d19718c46d90b5e781ae277460dd54d7b287977ff": {
+      "description_zh": "按元数据允许清单和同意感知生命周期，加入已明确批准的ClickTrail事件或集成，支持页面、转化、销售、表单和应用事件。",
+      "source": "Add an explicitly approved ClickTrail event or integration using a metadata allowlist and consent-aware lifecycle. Use when the user asks to instrument a page, conversion, sale, form, or application event.",
+      "source_sha256": "fa2725f6a6e6dbd3b07f0a7d19718c46d90b5e781ae277460dd54d7b287977ff",
+      "source_path": "skills/instrument/SKILL.md",
+      "package_sha256": "b9b10fc9bc0daf4526486c8166cf05e4682b6ed6e08177e05ff8b40834b54ac7",
+      "source_package": "Clicktrail-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c0f1b14fac0c3b6d5e420254305846cab6aa06fcf3982999d5e14eddd1e0953f": {
+      "description_zh": "为Astro、Nuxt、Vue、React、Next.js或浏览器JavaScript准备遵守同意设置的ClickTrail安装配置计划。",
+      "source": "Prepare a consent-safe ClickTrail installation plan for Astro, Nuxt, Vue, React, Next.js, or browser JavaScript projects. Use when the user asks to install, add, configure, or set up ClickTrail.",
+      "source_sha256": "c0f1b14fac0c3b6d5e420254305846cab6aa06fcf3982999d5e14eddd1e0953f",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "b9b10fc9bc0daf4526486c8166cf05e4682b6ed6e08177e05ff8b40834b54ac7",
+      "source_package": "Clicktrail-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ed50cc240f9c7b34ba5952960cb90000a71aa0b03d3d22950b06d00bf452278": {
+      "description_zh": "通过本地测试、包元数据、同意场景、载荷检查与构建证据验证ClickTrail集成，支持调试、发布关卡和上线准备。",
+      "source": "Verify a ClickTrail integration with local tests, package metadata, consent scenarios, payload checks, and build evidence. Use when validating, debugging, gating, or preparing a ClickTrail release.",
+      "source_sha256": "0ed50cc240f9c7b34ba5952960cb90000a71aa0b03d3d22950b06d00bf452278",
+      "source_path": "skills/verify/SKILL.md",
+      "package_sha256": "b9b10fc9bc0daf4526486c8166cf05e4682b6ed6e08177e05ff8b40834b54ac7",
+      "source_package": "Clicktrail-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87b90796552d7057170adff71d0c39b28f47211b991a2a79f705c4ca47cd9c2b": {
+      "description_zh": "根据ClickUp开放工作起草每日站会，询问变化并回写状态评论，再交付可分享摘要；不只是列任务。",
+      "source": "Runs a daily standup or check-in against ClickUp — drafts the standup from the user's open work, asks what changed, writes their answers back as task statuses and comments, then hands over the finished summary to share. Use when the user says 'standup', 'run my standup', 'daily check-in', 'morning check-in', 'EOD update', or 'post my standup'. Not for simply listing tasks — this skill asks questions and writes changes back to ClickUp.",
+      "source_sha256": "87b90796552d7057170adff71d0c39b28f47211b991a2a79f705c4ca47cd9c2b",
+      "source_path": "skills/daily-standup/SKILL.md",
+      "package_sha256": "f33eb9b0e15bc6a2242f7c2c54b6f7f826f50558d49920c8583e461de2871e0a",
+      "source_package": "ClickUp-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b249756d9813fd62f6c3bd78b72637c0238d35d1197f20d4c2802571970d953": {
+      "description_zh": "读取已有项目真实结构，为新客户或周期重建副本，替换实例信息并平移全部日期、保留顺序；先预览批准再创建，不用于单任务复制或子任务拆分。",
+      "source": "Rebuilds a job that has already been run as a fresh copy for a new client, cycle or engagement. Reads the real structure of the source list, swaps the previous instance's details for the new one's, shifts every date onto a new start or delivery date, and recreates the tasks with their sequencing intact. Always previews the rebuilt plan and waits for approval before creating anything. Use when the user says 'do this again', 'same as last time', 'set this up for the new client', 'repeat this project', 'run this playbook again', or names a past project as the model for a new one. Not for breaking a single task into subtasks — that is task-decomposition — and not for simply listing or duplicating one task.",
+      "source_sha256": "9b249756d9813fd62f6c3bd78b72637c0238d35d1197f20d4c2802571970d953",
+      "source_path": "skills/repeat-project/SKILL.md",
+      "package_sha256": "f33eb9b0e15bc6a2242f7c2c54b6f7f826f50558d49920c8583e461de2871e0a",
+      "source_package": "ClickUp-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75c0288cb70821c74574ddb1fe9ca52e0dad8d43c8aa6f7dd56757d3ae0124e5": {
+      "description_zh": "将目标或大型父任务拆成少量有序ClickUp子任务，可含估算依赖；先预览计划并获批准再创建。",
+      "source": "Breaks a goal, initiative, or oversized parent task into a small set of ordered subtasks in ClickUp, with optional estimates and dependency links. Always previews the plan and waits for approval before creating anything. Use when the user says 'break this down', 'decompose this task', 'plan the subtasks', 'scope this work', 'create a breakdown', or asks how to split up a piece of work.",
+      "source_sha256": "75c0288cb70821c74574ddb1fe9ca52e0dad8d43c8aa6f7dd56757d3ae0124e5",
+      "source_path": "skills/task-decomposition/SKILL.md",
+      "package_sha256": "f33eb9b0e15bc6a2242f7c2c54b6f7f826f50558d49920c8583e461de2871e0a",
+      "source_package": "ClickUp-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14ef71e70b6ffa614db6a613afdd325df5195fb9165412519ca14ed07e8c6179": {
+      "description_zh": "通过Clinch自定义连接器读取销售代表个人赢单丢单数据与当前竞品战卡，回答竞争表现并生成指定竞品异议应对话术，避免猜测。",
+      "source": "Use this skill when a sales rep asks a question about their own competitive performance or wants a live objection handler against a specific competitor. Triggers on phrases like \"how am I doing against Klue?\", \"what's my win rate?\", \"what should I say when they push back on pricing vs Crayon?\", \"give me talk tracks for Klue\", or \"remind me what they have over us\". Pulls the rep's personal win/loss numbers and the current battlecard so the answer is grounded in their data, not a guess. Requires the Clinch custom connector.",
+      "source_sha256": "14ef71e70b6ffa614db6a613afdd325df5195fb9165412519ca14ed07e8c6179",
+      "source_path": "skills/clinch-deal-coach/SKILL.md",
+      "package_sha256": "0632d81483619148ac7bf979b61dc115ff9fd4c668b35d129f859d42f689a740",
+      "source_package": "Clinch-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cc0247e21c71b87b4194fe976c649972a410232c48abad17b16b980410b95d4": {
+      "description_zh": "将用户已安装CRM连接器中的成交数据导入Clinch，支持Salesforce/HubSpot/Pipedrive/Lightfield等、指定季度或竞品交易；需Clinch带写权限的自定义连接器。",
+      "source": "Use this skill when the user wants to bring deal data from their CRM into Clinch. Triggers on phrases like \"import my closed deals from Salesforce / HubSpot / Pipedrive / Lightfield\", \"log last quarter's losses to Clinch\", \"sync my CRM with Clinch\", \"from my pipeline, log every deal where {competitor} was on it\", or \"fill in Clinch from my CRM\". CRM-agnostic by design. Claude uses whichever CRM connector the user has installed. Requires the Clinch custom connector with write scope.",
+      "source_sha256": "5cc0247e21c71b87b4194fe976c649972a410232c48abad17b16b980410b95d4",
+      "source_path": "skills/clinch-import-from-crm/SKILL.md",
+      "package_sha256": "0632d81483619148ac7bf979b61dc115ff9fd4c668b35d129f859d42f689a740",
+      "source_package": "Clinch-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2bbea0ee0165177d0529080f5c6f9bbfc1097ef1924536dfad16229a20859849": {
+      "description_zh": "依据可访问CRM、转录、内部文档和用户陈述初始化Clinch工作空间，发现竞品并核实URL、填充竞争语境和自身公司资料；需写权限连接器，必要时先安装来源连接器。",
+      "source": "Use this skill when a user wants to populate their Clinch workspace from everything Claude already has access to. Triggers on phrases like \"set up Clinch from my CRM and docs\", \"onboard Clinch using my Notion / Salesforce / Lightfield / Drive\", \"populate Clinch from my existing knowledge\", \"fill in Clinch from what I have\", or after a fresh Pro signup when the user says \"make Clinch good.\" Discovers competitors mentioned across their sources, adds them with verified URLs, and fills in per-competitor rivalry context plus the org's own company profile by pulling evidence from CRM records, meeting transcripts, internal docs, and the user's own statements. Requires the Clinch custom connector with the write scope; ask the user to install other Claude connectors first if they want CRM / docs / transcripts to inform the setup.",
+      "source_sha256": "2bbea0ee0165177d0529080f5c6f9bbfc1097ef1924536dfad16229a20859849",
+      "source_path": "skills/clinch-onboard-workspace/SKILL.md",
+      "package_sha256": "0632d81483619148ac7bf979b61dc115ff9fd4c668b35d129f859d42f689a740",
+      "source_package": "Clinch-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82877eeb1a7d2ea511ac7200a72c212f40e7e2f1b2a2857df1b1a5a98b000256": {
+      "description_zh": "销售通话后通过Clinch记录交易结果与竞品提及，支持笔记或转录，使用log_deal_outcome/log_competitor_mention，需写权限连接器。",
+      "source": "Use this skill after a sales call to record what happened in Clinch. Triggers on phrases like \"we lost that deal to Klue, integration concerns\", \"log this call\", \"I just got off with Acme, they mentioned Crayon on pricing\", or when the user shares a call transcript and a competitor name appears in it. The skill writes back to Clinch via the log_deal_outcome and log_competitor_mention tools, so the rep does not have to open the dashboard. Requires the Clinch custom connector with write scope.",
+      "source_sha256": "82877eeb1a7d2ea511ac7200a72c212f40e7e2f1b2a2857df1b1a5a98b000256",
+      "source_path": "skills/clinch-post-call-capture/SKILL.md",
+      "package_sha256": "0632d81483619148ac7bf979b61dc115ff9fd4c668b35d129f859d42f689a740",
+      "source_package": "Clinch-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d40a615b75daa1c1f606be03872687e9941845963280313c5810235ec9266ed": {
+      "description_zh": "为即将到来的竞争性销售通话生成一页资料，涵盖潜客、参与竞品及应对重点，支持具名潜客日历事件；需Clinch自定义写权限连接器。",
+      "source": "Use this skill when the user is about to be on a sales call with a prospect and needs a one-page pre-call brief covering the prospect, the competitor in play, and what to say. Triggers on phrases like \"I have a call in 20 min with Acme, they're evaluating us vs Klue\", \"prep me for a competitive call\", \"give me a quick brief on this deal\", or when the user references an upcoming calendar event with a known prospect domain. Requires the Clinch custom connector with write scope.",
+      "source_sha256": "2d40a615b75daa1c1f606be03872687e9941845963280313c5810235ec9266ed",
+      "source_path": "skills/clinch-pre-call-brief/SKILL.md",
+      "package_sha256": "0632d81483619148ac7bf979b61dc115ff9fd4c668b35d129f859d42f689a740",
+      "source_package": "Clinch-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b055a3b474d831cefab4c82820117a67ed89575cfab04cc4df5d0c04eb4e66c4": {
+      "description_zh": "在Claude内设置Clinch，依据CRM、文档、邮件、Slack或通话转录完成入门和工作空间填充，支持/clinch:setup。",
+      "source": "Set up Clinch from inside Claude. Use when the user runs /clinch:setup, or asks to set up, onboard, populate, or fill in Clinch from their CRM, docs, email, Slack, or call transcripts.",
+      "source_sha256": "b055a3b474d831cefab4c82820117a67ed89575cfab04cc4df5d0c04eb4e66c4",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "0632d81483619148ac7bf979b61dc115ff9fd4c668b35d129f859d42f689a740",
+      "source_package": "Clinch-1.3.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09a142c327105fe2dfb64eabf976da2806a11e6ec386cef1ac5613aeaf88f848": {
+      "description_zh": "只读通过get_bug_blast_radius判断缺陷影响，显示报告人、严重度、商业价值及最近报告时间，反映已报告的痛点。",
+      "source": "Answer how important a bug is: who reported it, how badly, what it is worth, and when it was last reported. Uses get_bug_blast_radius. Read only; reflects reported pain.",
+      "source_sha256": "09a142c327105fe2dfb64eabf976da2806a11e6ec386cef1ac5613aeaf88f848",
+      "source_path": "skills/closedloop-bug-blast-radius/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1c0ac35cccb18465c74eb3ba566ce3e5b45752addf7a83902fa0ea08bed0e8f": {
+      "description_zh": "依据ClosedLoop AI证据寻找客户案例、ROI验证、深入叙事或采访对象，使用find_case_study_candidates；不发送邮件，也不授权发布。",
+      "source": "Scout case-study and customer-story candidates from ClosedLoop AI evidence. Use when marketing asks for named customer stories, ROI validation, deeper narrative candidates, or interview targets. Uses find_case_study_candidates. Does not send email or grant publication permission.",
+      "source_sha256": "f1c0ac35cccb18465c74eb3ba566ce3e5b45752addf7a83902fa0ea08bed0e8f",
+      "source_path": "skills/closedloop-case-study-scout/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52249490c628ab798f33bc50db8e9bb3a7ad63ec3eba3d52f851a66b54a01a7f": {
+      "description_zh": "依据实际客户对话和交易语境开展竞品分析，显示客户评价、赢输原因及商业影响。",
+      "source": "Competitive intelligence from your actual customer conversations. Shows what customers say about each competitor, where you're winning, where you're losing, and what's at stake commercially. Not desk research — real customer voice with deal context.",
+      "source_sha256": "52249490c628ab798f33bc50db8e9bb3a7ad63ec3eba3d52f851a66b54a01a7f",
+      "source_path": "skills/closedloop-competitor-gap/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "104aee441935590756efb2cc8904d509187888ae9eeb601e26a7f62cb92c5a3f": {
+      "description_zh": "为客户成功和账户经理生成90秒可读的会前情报，提炼重点、雷区、变化、客户原话、开放事项及共享痛点客户数量。",
+      "source": "90-second pre-call intelligence brief for CSMs and account managers. One opinionated headline, landmines, what changed, their top concerns in their own words, open threads, and how many other customers share the same pain. Not a data dump — a judgment call.",
+      "source_sha256": "104aee441935590756efb2cc8904d509187888ae9eeb601e26a7f62cb92c5a3f",
+      "source_path": "skills/closedloop-csm-prep/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64ca142f36027c0d03a0fcdbde3fd0e89fac9a2ee7a6d851c851f463d52322e9": {
+      "description_zh": "为已选择的ClosedLoop营销证明候选起草网站社交销售案例或现场推荐使用许可邮件，使用prepare_customer_proof_outreach；仅草稿，不发送或宣称获许可。",
+      "source": "Draft permission outreach for one selected marketing proof candidate returned by find_customer_proof. Use when the user chooses a customer proof candidate and wants a permission email for website, social, sales, case-study, or live-reference use. Uses prepare_customer_proof_outreach. Draft only; never sends messages or claims permission was granted.",
+      "source_sha256": "64ca142f36027c0d03a0fcdbde3fd0e89fac9a2ee7a6d851c851f463d52322e9",
+      "source_path": "skills/closedloop-customer-proof-outreach/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "25a50ed37409213547c9b507eef802e8948e6ee8a2c0997ed84799f4de03ad95": {
+      "description_zh": "通过find_customer_proof寻找营销可用的引语、推荐、案例、价值ROI、采用故事和参考客户证据；请求许可草稿时将所选候选交配套触达技能。",
+      "source": "Find marketing-ready customer proof from ClosedLoop AI evidence. Use when marketing, product marketing, sales enablement, CMO, CEO, or leadership asks for quotes, testimonials, case-study candidates, customer love, launch proof, ROI/value proof, adoption stories, social proof, or reference candidates. Uses find_customer_proof. Do not use for permission outreach drafts; hand selected candidates to closedloop-customer-proof-outreach.",
+      "source_sha256": "25a50ed37409213547c9b507eef802e8948e6ee8a2c0997ed84799f4de03ad95",
+      "source_path": "skills/closedloop-customer-proof/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6fc9a3600e318a19450e922a70cf562cc399b520275051f40fd7078b43cb0140": {
+      "description_zh": "对主题深入读取ClosedLoop AI全部匹配洞察信号并查受影响客户CRM，综合客户表述、严重程度、收入风险、竞品及替代做法。",
+      "source": "Deep-dive into any topic against ALL customer evidence from ClosedLoop AI. Reads every matching insight and signal, looks up CRM data for affected customers, and synthesizes the complete picture — what customers say, how severe it is, what revenue is at stake, what competitors are doing, and what workarounds exist.",
+      "source_sha256": "6fc9a3600e318a19450e922a70cf562cc399b520275051f40fd7078b43cb0140",
+      "source_path": "skills/closedloop-deep-dive/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51007e715d9ebbb35e1a265f40409a45a3f79ec7e67632dcff76620949718d95": {
+      "description_zh": "为产品经理准备探索访谈简报，明确学习目标、知识缺口、有数据依据的问题，并判断客户痛点是市场信号或个例，不作账户健康摘要。",
+      "source": "Pre-call discovery brief for product managers. Not account health — learning goals, knowledge gaps, data-grounded questions, and whether this customer's pain is a market signal or an outlier. Turns a customer call into a research instrument.",
+      "source_sha256": "51007e715d9ebbb35e1a265f40409a45a3f79ec7e67632dcff76620949718d95",
+      "source_path": "skills/closedloop-pm-prep/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8bdda6a2bbd3a4d5ba06330875617e773b75e28f69aeb8a4951559d2beb1f32": {
+      "description_zh": "为已选择的ClosedLoop产品大使候选起草介绍、测试验证、设计伙伴或产品反馈触达，使用prepare_product_ambassador_outreach；不用于找候选或营销证明。",
+      "source": "Draft product ambassador outreach from a selected ClosedLoop AI product ambassador candidate. Use after a customer candidate has been selected from find_product_ambassadors, especially when the user asks to draft an email, ask for an intro, invite a customer to beta validation, request design partner feedback, or prepare product validation outreach. Uses prepare_product_ambassador_outreach. Do not use for finding candidates, marketing quotes, testimonials, public proof, references, case studies, or customer-love requests.",
+      "source_sha256": "f8bdda6a2bbd3a4d5ba06330875617e773b75e28f69aeb8a4951559d2beb1f32",
+      "source_path": "skills/closedloop-product-ambassador-outreach/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3e53078ff2a388f79253fea4965c3dc22e44bcc45cc1a5a6a05624761dcbc3e": {
+      "description_zh": "通过find_product_ambassadors寻找设计伙伴、测试验证、工作流程探索、专家评审、内部倡导或功能反馈客户；不用于触达草稿或营销引语案例。",
+      "source": "Find product ambassador candidates from ClosedLoop AI evidence. Use when a product manager, product leader, or founder wants customers for design partnership, beta validation, workflow discovery, expert review, internal championing, or feature feedback for a product area or feature. Uses find_product_ambassadors. Do not use for drafting outreach, marketing quotes, testimonials, case studies, launch proof, references, social proof, or customer-love requests.",
+      "source_sha256": "a3e53078ff2a388f79253fea4965c3dc22e44bcc45cc1a5a6a05624761dcbc3e",
+      "source_path": "skills/closedloop-product-ambassadors/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2215e6d7a2b0c4e80dbb4c6d85ad6b686c29eebd047f95d5fd10db5339106f63": {
+      "description_zh": "通过ClosedLoop创建查询更新证明许可请求和状态，用于所选证据候选；只记录模拟邮件，不发送客户邮件。",
+      "source": "Log and test proof permission requests for selected ClosedLoop AI proof candidates. Uses create_proof_permission_request, get_proof_permission_request, and update_proof_permission_status. Logs fake email only; never sends customer email.",
+      "source_sha256": "2215e6d7a2b0c4e80dbb4c6d85ad6b686c29eebd047f95d5fd10db5339106f63",
+      "source_path": "skills/closedloop-proof-permissions/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eee9db50803b5211e1a37e814c878be6b258436b02cbf5b7e84417280c1f6cba": {
+      "description_zh": "通过find_reference_customers寻找可私下向潜客推荐的客户候选，按用例、细分或异议匹配；不发送邮件或批准介绍。",
+      "source": "Find private reference customer candidates from ClosedLoop AI evidence. Use when sales or customer-facing teams ask who could be a reference for a prospect, use case, segment, or objection. Uses find_reference_customers. Does not send email or approve introductions.",
+      "source_sha256": "eee9db50803b5211e1a37e814c878be6b258436b02cbf5b7e84417280c1f6cba",
+      "source_path": "skills/closedloop-reference-customers/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b262816a3e551289cb5a274056e475b45fb22df6964a8b0b953030848f7c27e": {
+      "description_zh": "依据真实客户引语、替代方案和竞品缺口制作痛点销售话术，可按主题通用或针对客户附同类客户社会证明。",
+      "source": "Pain-point sales talk tracks from real customer quotes, workarounds, and competitor gaps. General playbook per topic, or micro-targeted for a specific customer with social proof from their peers.",
+      "source_sha256": "4b262816a3e551289cb5a274056e475b45fb22df6964a8b0b953030848f7c27e",
+      "source_path": "skills/closedloop-sales-playbook/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c145dc05b1f2b4a2d3dc086ed0808562cd639442d11533c1acde6601da4ce75b": {
+      "description_zh": "通过find_sales_proof制作面向潜客沟通的客户例子、佐证、片段、话术和跟进文案包；不发送邮件或宣称获得许可。",
+      "source": "Build sales proof packets from ClosedLoop AI evidence. Use when sales, sales enablement, marketing, founders, or leadership need customer examples, proof points, snippets, talk tracks, or follow-up copy for prospect conversations. Uses find_sales_proof. Does not send email or claim permission.",
+      "source_sha256": "c145dc05b1f2b4a2d3dc086ed0808562cd639442d11533c1acde6601da4ce75b",
+      "source_path": "skills/closedloop-sales-proof/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a140148ec955819e414da71d8f1f62bc70f1c25c6ae22283cf68e35e6768bd8b": {
+      "description_zh": "只读将规范、PRD或工单与客户证据核对，指出需明确拆分合并的要求、遗漏需求和无证据项；不建议停止建设任何功能。",
+      "source": "Check a spec, PRD, or ticket against customer evidence before it gets built, and say what to change about it: which requirements to sharpen and how, which to split or merge, which customer needs the spec misses, and which have no evidence behind them. Uses check_scope_evidence. Read only; never recommends against building anything.",
+      "source_sha256": "a140148ec955819e414da71d8f1f62bc70f1c25c6ae22283cf68e35e6768bd8b",
+      "source_path": "skills/closedloop-scope-guard/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48591c84d6f5f0c3cdec1effac780e62224fc34b31ab7efd1105b431bb3aed16": {
+      "description_zh": "向ClosedLoop AI团队发送平台自身缺陷、功能、数据质量、输出困惑或赞扬反馈；不用于记录用户客户对自身产品的反馈。",
+      "source": "Send feedback about ClosedLoop AI to the ClosedLoop AI team: bugs, feature requests, missing or low-quality data, confusing outputs, or praise about the platform itself. Uses send_closedloop_feedback. Not for logging the user's own customers' product feedback.",
+      "source_sha256": "48591c84d6f5f0c3cdec1effac780e62224fc34b31ab7efd1105b431bb3aed16",
+      "source_path": "skills/closedloop-send-feedback/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48cc541a2dd572330cf9997133a676cfa1a0480ceb885d63bbb86ea0e81698c7": {
+      "description_zh": "找到所有曾要求刚上线功能的客户并起草个性化发布跟进，使用find_launch_audience；不发送客户邮件。",
+      "source": "Find every customer who asked for something you just shipped, then draft personalized launch follow-up. Uses find_launch_audience. Draft only; never sends customer email.",
+      "source_sha256": "48cc541a2dd572330cf9997133a676cfa1a0480ceb885d63bbb86ea0e81698c7",
+      "source_path": "skills/closedloop-ship-notify/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b69aa11224439f678b544cc3e36b14281c6e38778abb3588a7ebbbe2b016975b": {
+      "description_zh": "依据客户原话与现有代码模式编写Google设计文档式技术规范，每个设计决策引用证据或已有文件；只读，不修改代码和数据。",
+      "source": "Write a Google-design-doc technical spec for a feature, grounded in what customers actually said and in the patterns already in your codebase. Every design decision cites evidence or an existing file. Read only; writes no code and changes no data.",
+      "source_sha256": "b69aa11224439f678b544cc3e36b14281c6e38778abb3588a7ebbbe2b016975b",
+      "source_path": "skills/closedloop-spec/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e65807ce637c4dff2739af5f60816753898285b2075582345c673550f886df81": {
+      "description_zh": "将客户或细分群体模拟为有真实转录、反馈、CRM和公开研究依据的AI人物，用于功能验证、会前准备、理解客户及测试消息。",
+      "source": "Talk to any customer or segment as an AI persona grounded in real data — call transcripts, product feedback, CRM profiles, and public research. The persona knows what they said, how they talk, what frustrates them, and what they care about. Use when validating features, preparing for calls, understanding a customer's perspective, or testing messaging.",
+      "source_sha256": "e65807ce637c4dff2739af5f60816753898285b2075582345c673550f886df81",
+      "source_path": "skills/closedloop-synthetic-customer/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34269316501a69817d56849c91b628133cc9fcdb2cbd849f40af3088638d5d24": {
+      "description_zh": "为ClosedLoop产品洞察配置阈值通知监视，在跨过阈值时通过Slack、Teams或应用内提醒。",
+      "source": "Set up a notification watch — get alerted (Slack / Teams / in-app) when something crosses a threshold in your ClosedLoop AI product insights.",
+      "source_sha256": "34269316501a69817d56849c91b628133cc9fcdb2cbd849f40af3088638d5d24",
+      "source_path": "skills/closedloop-watch/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4717ad923af6e9a9f924c81f7dd6d7d16496dddc6dbff7544f7275f45bdd5ec5": {
+      "description_zh": "读取ClosedLoop全部峰值、交易阻碍、流失风险和竞品提及背后证据，综合为约40行、供CPO一分钟阅读的周度情报。",
+      "source": "Weekly product intelligence brief from ClosedLoop AI. Reads ALL evidence behind every spike, deal blocker, churn risk, and competitor mention — then synthesizes into a 40-line brief a CPO can scan in 60 seconds. Use when the user asks for a weekly brief, weekly summary, weekly update, or what happened this week.",
+      "source_sha256": "4717ad923af6e9a9f924c81f7dd6d7d16496dddc6dbff7544f7275f45bdd5ec5",
+      "source_path": "skills/closedloop-weekly-brief/SKILL.md",
+      "package_sha256": "b3128b07795d59a437f23b65569c2e45ab042102467754155034da9a7de948c4",
+      "source_package": "closedloop-skills-0.10.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa05121b593a0e596b3a21321f911f4cfb6e524826bc3be0d8069851be1cb037": {
+      "description_zh": "连续审计代码库、评分、自动生成执行修复任务并重评，循环直到达到用户目标分数。",
+      "source": "Run a continuous audit-fix-audit loop that scores a codebase and automatically fixes gaps until a target score is reached. Use when the user asks to \"get us to 10/10\", \"keep improving until perfect\", \"run a continuous improvement loop\", \"audit and fix automatically\", or wants an autonomous cycle of scoring, generating fix tasks, executing them, and re-scoring.",
+      "source_sha256": "fa05121b593a0e596b3a21321f911f4cfb6e524826bc3be0d8069851be1cb037",
+      "source_path": "skills/audit-loop/SKILL.md",
+      "package_sha256": "121538ecf5ad8aef490716b17f80fb49a00d9bed6bed1791f83851ce12051982",
+      "source_package": "cloud-coder-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f4309dac021a24d5db34ea31df7395f3e497e6bbf7e65422752adbf4613bbb4": {
+      "description_zh": "查询Cloud Coder运行任务进度，区分已完成、运行中与剩余工作，支持夜间运行状态检查。",
+      "source": "Check the progress of running Cloud Coder tasks. Use when the user asks \"what's the progress\", \"how's the overnight run going\", \"check on the runner\", \"status update\", \"what tasks are done\", or wants to see which tasks have completed, which are running, and what's left.",
+      "source_sha256": "1f4309dac021a24d5db34ea31df7395f3e497e6bbf7e65422752adbf4613bbb4",
+      "source_path": "skills/check-progress/SKILL.md",
+      "package_sha256": "121538ecf5ad8aef490716b17f80fb49a00d9bed6bed1791f83851ce12051982",
+      "source_package": "cloud-coder-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ffc82c5124b2f32bc8af0a772c2b4a850ab59580f4da7d3421d72164642b682": {
+      "description_zh": "创建并执行本地Claude CLI的无人值守夜间任务队列，按序运行批量编码任务。",
+      "source": "Create and run an autonomous overnight task queue. Use when the user asks to \"run tasks overnight\", \"queue up work\", \"create an overnight queue\", \"batch these tasks\", \"run this while I sleep\", or wants to execute a list of coding tasks sequentially using the local Claude CLI without supervision.",
+      "source_sha256": "7ffc82c5124b2f32bc8af0a772c2b4a850ab59580f4da7d3421d72164642b682",
+      "source_path": "skills/run-queue/SKILL.md",
+      "package_sha256": "121538ecf5ad8aef490716b17f80fb49a00d9bed6bed1791f83851ce12051982",
+      "source_package": "cloud-coder-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "be157e3646227c4291927b91a886ef7692d0455c598ea93d15a14a120e6563a7": {
+      "description_zh": "列举CloudBees Unify组织中的组件服务，或在后续操作前查询组件名称和ID。",
+      "source": "List CloudBees Unify components in an organization. Use when the user asks \"what components do I have\", \"list services\", or needs to look up a component name/ID before another operation.",
+      "source_sha256": "be157e3646227c4291927b91a886ef7692d0455c598ea93d15a14a120e6563a7",
+      "source_path": "skills/list-components/SKILL.md",
+      "package_sha256": "cbcf83344a699a412f8756b6b89465bbf60773a71058bbc12271ae7cabdeac45",
+      "source_package": "CloudBees Unify AI plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7073d11c77b6f200451a90eca73f9fbf1e7d813ae3b33aae45adc4824d235a23": {
+      "description_zh": "将GitHub仓库接入CloudBees Unify，创建一个或多个组件并触发安全扫描，支持注册项目或连接仓库请求。",
+      "source": "Onboard a GitHub repository to CloudBees Unify by creating one or more components and triggering a security scan. Use when the user says things like \"onboard this repo to Unify\", \"add this project to CloudBees Unify\", \"register this repo in Unify\", \"create a Unify component for this repo\", \"set up this repo in CloudBees\", or \"connect my repo and run a security scan\".",
+      "source_sha256": "7073d11c77b6f200451a90eca73f9fbf1e7d813ae3b33aae45adc4824d235a23",
+      "source_path": "skills/onboard-repo-to-unify/SKILL.md",
+      "package_sha256": "cbcf83344a699a412f8756b6b89465bbf60773a71058bbc12271ae7cabdeac45",
+      "source_package": "CloudBees Unify AI plugin-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f638751ce1475af10e1787dff4ee024e57543547c693ef431bcb6d264e7093b": {
+      "description_zh": "使用agents包构建、调试或评审Cloudflare Agents SDK应用。",
+      "source": "Build, debug, or review Cloudflare Agents SDK applications using the agents package.",
+      "source_sha256": "0f638751ce1475af10e1787dff4ee024e57543547c693ef431bcb6d264e7093b",
+      "source_path": "skills/agents-sdk/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58da4779c12d3621ecdafc569a93f056e6a6d753970a633f436ed314de1ff482": {
+      "description_zh": "实现或排查Cloudflare邮件发送和路由集成及投递配置。",
+      "source": "Implement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration.",
+      "source_sha256": "58da4779c12d3621ecdafc569a93f056e6a6d753970a633f436ed314de1ff482",
+      "source_path": "skills/cloudflare-email-service/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3fe12694fad9328e60d257d546f69603996c68f5a98648f0fc2fa78ecb26b1a2": {
+      "description_zh": "评估规划从既有VPN、SWG或SASE迁移至Cloudflare One，涵盖策略映射、能力缺口和推广。",
+      "source": "Assess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout.",
+      "source_sha256": "3fe12694fad9328e60d257d546f69603996c68f5a98648f0fc2fa78ecb26b1a2",
+      "source_path": "skills/cloudflare-one-migrations/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f9d763ffa908bf50fd04f5dbe52155ad15425d706a79d74f662e31b0d19b7af": {
+      "description_zh": "设计配置排查或评审Cloudflare One Zero Trust与SASE部署，其他供应商迁移规划使用配套技能。",
+      "source": "Design, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments. Use cloudflare-one-migrations for migration planning from other vendors.",
+      "source_sha256": "8f9d763ffa908bf50fd04f5dbe52155ad15425d706a79d74f662e31b0d19b7af",
+      "source_path": "skills/cloudflare-one/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "012f452a41fdd3d1866f53d27e76d6b59a4e11044342e38fb92af76ca3e91f78": {
+      "description_zh": "按应用API智能体存储网络安全需求发现并选择Cloudflare产品，开展架构选择后定位相应技能文档。",
+      "source": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security. Use for architecture and product selection, including when the user describes a need without naming a Cloudflare product; then find the relevant skill or documentation.",
+      "source_sha256": "012f452a41fdd3d1866f53d27e76d6b59a4e11044342e38fb92af76ca3e91f78",
+      "source_path": "skills/cloudflare/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f8c4de0d1e5e8d6d508c54f3c9e9c6dd0869178c9a502abc591ea2a55937d30": {
+      "description_zh": "编写调试评审Cloudflare Durable Objects代码，用于持久状态与协同。",
+      "source": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination.",
+      "source_sha256": "5f8c4de0d1e5e8d6d508c54f3c9e9c6dd0869178c9a502abc591ea2a55937d30",
+      "source_path": "skills/durable-objects/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1535083ad7e08ede3bcf433710b1837a9813209209003f3f44c075a558853a85": {
+      "description_zh": "通过vinext在Cloudflare Workers新建迁移部署Next.js应用，选择vinext或OpenNext；设置迁移部署时若缺上游技能先安装并读取。",
+      "source": "Build, migrate, and deploy Next.js apps on Cloudflare Workers with vinext. Use when starting a Next.js project on Cloudflare, moving an existing app to Workers, choosing between vinext and OpenNext, or setting up vinext for Workers. For setup, migration, or deployment, install vinext's upstream skills with `npx skills add cloudflare/vinext` if missing, then read and follow the applicable skill and docs.",
+      "source_sha256": "1535083ad7e08ede3bcf433710b1837a9813209209003f3f44c075a558853a85",
+      "source_path": "skills/nextjs-on-cloudflare/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68e0b1b6f2e5e85f2e20689b2629429907fb130b09ea0ff4cbf7c1764351cde3": {
+      "description_zh": "将稳定版@cloudflare/sandbox应用迁移至SDK 1.0预览版@cloudflare/sandbox@next，已在预览版的应用用sandbox-next。",
+      "source": "Migrate Cloudflare Sandbox apps from stable @cloudflare/sandbox to @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-next for apps already on the preview.",
+      "source_sha256": "68e0b1b6f2e5e85f2e20689b2629429907fb130b09ea0ff4cbf7c1764351cde3",
+      "source_path": "skills/sandbox-migrate-to-next/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "654b30c98c2c7a1d973e209ffbca34cda4437dcbc1fe176b46357d01317952c8": {
+      "description_zh": "构建维护Cloudflare Sandbox SDK 1.0预览应用，稳定版迁入用sandbox-migrate-to-next。",
+      "source": "Build or maintain Cloudflare Sandbox apps on @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-migrate-to-next when porting a stable app.",
+      "source_sha256": "654b30c98c2c7a1d973e209ffbca34cda4437dcbc1fe176b46357d01317952c8",
+      "source_path": "skills/sandbox-next/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "adfd34f8efdf4e15a8207989add876f858f0cf9c67c7b968b28bd21a4e78e7a8": {
+      "description_zh": "构建维护稳定版@cloudflare/sandbox应用，预览或迁移分别用对应技能。",
+      "source": "Build or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package. Use sandbox-next for preview apps and sandbox-migrate-to-next for stable-to-preview migrations.",
+      "source_sha256": "adfd34f8efdf4e15a8207989add876f858f0cf9c67c7b968b28bd21a4e78e7a8",
+      "source_path": "skills/sandbox-stable/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "762c1d067e74fa3c8adf2415f1081f5d45147a1280b9110fe1e889a88893ef9c": {
+      "description_zh": "在已有前后端设置修复或迁移Cloudflare Turnstile反机器人验证，包括服务端Siteverify。",
+      "source": "Set up, repair, or migrate to Cloudflare Turnstile bot verification in an existing frontend and backend, including server-side Siteverify.",
+      "source_sha256": "762c1d067e74fa3c8adf2415f1081f5d45147a1280b9110fe1e889a88893ef9c",
+      "source_path": "skills/turnstile-spin/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "625ea67980d335125820a278e3048315c4d8367740b38370f8b3b6ae92c0d8fd": {
+      "description_zh": "审计诊断优化网站加载与交互性能、Core Web Vitals和Lighthouse得分。",
+      "source": "Audit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores.",
+      "source_sha256": "625ea67980d335125820a278e3048315c4d8367740b38370f8b3b6ae92c0d8fd",
+      "source_path": "skills/web-perf/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e4b5618e32f5dc60d757d1861d29d8150d39cadaa9677578af74e2756ebaa71": {
+      "description_zh": "在编写评审或配置Cloudflare Workers生产应用时应用最佳实践。",
+      "source": "Cloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers.",
+      "source_sha256": "2e4b5618e32f5dc60d757d1861d29d8150d39cadaa9677578af74e2756ebaa71",
+      "source_path": "skills/workers-best-practices/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f73d16c067ed067fafd8cab6d856ae3622a8ad9a22155021907275bde076a60": {
+      "description_zh": "运行排查Wrangler CLI，配置Worker项目的本地开发、部署与Cloudflare资源管理。",
+      "source": "Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, deployment, and Cloudflare resource management.",
+      "source_sha256": "3f73d16c067ed067fafd8cab6d856ae3622a8ad9a22155021907275bde076a60",
+      "source_path": "skills/wrangler/SKILL.md",
+      "package_sha256": "095507c367fdf1b51e743a19faeeaa8c5ff7177fd186c89d0cc7e61b034969e2",
+      "source_package": "Cloudflare-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a3d9057fda198424ac7de9f6f3f395798bad83e19a6e46abf010cda151b3fc3": {
+      "description_zh": "当Cloudinary任务因无URL或凭据不能开始时，创建无需注册的Claimable Cloud；已有可用凭据不使用。",
+      "source": "Provision a working Cloudinary cloud with no signup (a Claimable Cloud) when the user wants to build with Cloudinary but has no credentials. Use when a Cloudinary task such as an upload, transformation or SDK setup can't proceed because no CLOUDINARY_URL or API credentials are available. Do not use when working credentials already exist.",
+      "source_sha256": "6a3d9057fda198424ac7de9f6f3f395798bad83e19a6e46abf010cda151b3fc3",
+      "source_path": "skills/claimable-cloud/SKILL.md",
+      "package_sha256": "cf933c753c1a0853e74c7b1ef2c055a75cb0b0c86178d2c44d751a147686ca3b",
+      "source_package": "Cloudinary-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0072fec18059573fb04166fad5549dab1ffb8f6ee965d45fb71f8adda9a1f8d4": {
+      "description_zh": "通过相关llms.txt查询最新Cloudinary上传管理SDK/API/Webhook集成文档，优先专用技能，超出范围时配合查询。",
+      "source": "Looks up implementation details in the latest Cloudinary docs via the relevant llms.txt file. Use when building code or answering questions relating to image or video uploads, management, SDKs, APIs, webhooks, or integrations. For topics covered by a specialized Cloudinary skill, prefer that skill. Use this skill alongside it when the full use-case requires capabilities outside that skill's scope.",
+      "source_sha256": "0072fec18059573fb04166fad5549dab1ffb8f6ee965d45fb71f8adda9a1f8d4",
+      "source_path": "skills/cloudinary-docs/SKILL.md",
+      "package_sha256": "cf933c753c1a0853e74c7b1ef2c055a75cb0b0c86178d2c44d751a147686ca3b",
+      "source_package": "Cloudinary-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96c4ff67d31f11b0a922443c7dd2a91f12e4faf0457419449673b1cec1c46d61": {
+      "description_zh": "根据自然语言创建调试Cloudinary媒体转换交付URL，处理图像视频变换、优化及语法错误。",
+      "source": "Create and debug Cloudinary transformation URLs from natural language instructions. Use when building Cloudinary delivery URLs, applying image/video transformations, optimizing media, or debugging transformation syntax errors.",
+      "source_sha256": "96c4ff67d31f11b0a922443c7dd2a91f12e4faf0457419449673b1cec1c46d61",
+      "source_path": "skills/cloudinary-transformations/SKILL.md",
+      "package_sha256": "cf933c753c1a0853e74c7b1ef2c055a75cb0b0c86178d2c44d751a147686ca3b",
+      "source_package": "Cloudinary-1.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b37696496b2e4b1fe1b5c589d2e7cbfb34bd85717a3e61b9b4bcd58d27d873a8": {
+      "description_zh": "在CMUX_SOCKET_PATH已设置的cmux终端中，参考CLI管理工作区面板界面、浏览器、多代理、侧栏元数据、通知及tmux迁移。",
+      "source": "cmux CLI reference for Claude Code: workspace/pane/surface management, browser automation, multi-agent orchestration, sidebar metadata, notifications, and tmux migration. Use when running inside cmux terminal (CMUX_SOCKET_PATH is set).",
+      "source_sha256": "b37696496b2e4b1fe1b5c589d2e7cbfb34bd85717a3e61b9b4bcd58d27d873a8",
+      "source_path": "skills/cmux/SKILL.md",
+      "package_sha256": "a77e9bc57634a259df8b20b56ed00e48574a17874c684da006cb5de81a9330f7",
+      "source_package": "cmux-ultimate-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f3e5b46c6eded1644b2136be0ee9c134a49be97386d11e76d48fa22c3cb1e27": {
+      "description_zh": "使用Cobrain查询用户笔记记忆、客户项目等跟踪对象、历史决定与近期状态，也可记录工作中的可持续决策发现和接续状态。",
+      "source": "Use when the user mentions their brain, Cobrain, their notes or memory, or names a client, project, student or anything else they track there; when they ask what was decided, what happened recently or where something is written; or when something worth keeping comes up during the work (a decision, a finding, a status to resume later).",
+      "source_sha256": "7f3e5b46c6eded1644b2136be0ee9c134a49be97386d11e76d48fa22c3cb1e27",
+      "source_path": "skills/cobrain/SKILL.md",
+      "package_sha256": "67d066f4ae2b4ec9f487d783f5982f58a6e31ad80292c53c42829db905f43fa1",
+      "source_package": "Cobrain-1.0.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0cf6139e44795eb9ef52e710809cfa1af5cae136ee61a93eef911cdab78393b": {
+      "description_zh": "在明确法律研究、Westlaw Deep Research或CoCounsel Legal请求，以及需解释分析综合美国法律时提供研究支持。",
+      "source": "Use this skill whenever a user specifically requests legal research or Westlaw Deep Research, asks for CoCounsel Legal or cocounsel legal support, or asks a question that requires explaining, analyzing, or synthesizing U.S. law.",
+      "source_sha256": "e0cf6139e44795eb9ef52e710809cfa1af5cae136ee61a93eef911cdab78393b",
+      "source_path": "skills/deep-research/SKILL.md",
+      "package_sha256": "5dd3f926e04d2624e41b397c8bf1a446a9170f204df3f178c03ed574cb7f0ce8",
+      "source_package": "cocounsel-legal-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79167236593bc3168492922e16053fb0fc18a5685e44eb0d3570bca8e11cc7c5": {
+      "description_zh": "生成自包含交互HTML代码地图，支持缩放节点、详情、搜索、层过滤、流程讲解与矩阵，每节点引用真实文件，适用于全系统架构或单条业务数据流程。",
+      "source": "Generate an interactive, self-contained HTML map of a codebase — a pan/zoom node graph with a detail panel, search, layer filters, flow walkthroughs, and matrices, with every node cited to real files. Use when exploring or documenting a codebase's architecture, onboarding to an unfamiliar system, or explaining one specific pipeline / business-logic flow end to end. Two modes — architecture (whole system) and flow (one path).",
+      "source_sha256": "79167236593bc3168492922e16053fb0fc18a5685e44eb0d3570bca8e11cc7c5",
+      "source_path": "skills/code-map/SKILL.md",
+      "package_sha256": "228ea5d66079b7e9e8b256747d4dd1484a8fda8b4c225684642da22194145e2c",
+      "source_package": "code-map-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27aecbd2f07cfad891ce18d6bd4a72d0c652da38675b6f28495264026d56560c": {
+      "description_zh": "通过code-parser先建立Dart/Python/TypeScript类方法和行范围结构索引，再定向读取代码，支持导航修改重构调试评审，原说明要求包括单文件任务也先索引以减少上下文。",
+      "source": "Use this skill whenever you need to read, understand, navigate, edit, refactor, or reason about a codebase written in Dart, Python, or TypeScript — especially before reading any source files directly. This skill runs `code-parser` to build a lightweight structural index (classes, methods, line ranges) of the codebase first, then uses that index to read only the specific lines that matter. This drastically reduces token consumption and prevents context window overflow.\nTrigger this skill when the user says things like: \"read this codebase\", \"understand my project\", \"refactor this class\", \"find where X is defined\", \"explain how Y works\", \"add a method to Z\", \"what does this file do\", \"help me debug\", \"review my code\", or any task that would otherwise require loading entire source files. Always use this skill before reading .dart, .py, or .ts/.tsx files — even for single-file tasks. Do NOT skip this skill just because the request seems simple; the index step is always cheaper than full file reads.",
+      "source_sha256": "27aecbd2f07cfad891ce18d6bd4a72d0c652da38675b6f28495264026d56560c",
+      "source_path": "skills/code-parser/SKILL.md",
+      "package_sha256": "b7dee14f12687eb2fb7ea7dcb5a67b2e61b9663ee3d73c3c54bccd79a3a28af4",
+      "source_package": "code-parser-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "faf4bd612298ee46a761c6ea4a605c79e912703f671aca8477e1776b54b96086": {
+      "description_zh": "以日语作为独立代码评审Evaluator实际运行代码查找静态分析遗漏的问题；须在此前未处理该代码库的新Claude Code会话执行。",
+      "source": "コードレビューハーネスの独立したEvaluator（日本語版）。 コードを読むだけでなく実際に動かして確認することで、静的解析では見逃すバグを発見する。 TRIGGER when: ユーザーがハーネスレビューまたは独立したコードレビューを依頼した場合。 IMPORTANT: このコードベースで以前作業したセッションとは別の、新規セッションで実行すること。 コンテキストの汚染はハーネスの目的を無効にする。",
+      "source_sha256": "faf4bd612298ee46a761c6ea4a605c79e912703f671aca8477e1776b54b96086",
+      "source_path": "skills/harness-review-ja/SKILL.md",
+      "package_sha256": "3cc651b4195d9237b4d40ad59ac09ad9eaf9d9c2567715d5cb2463a26db83250",
+      "source_package": "code-review-harness-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee1344ee9a27ee802d534dd3c8ab5840521cdbb3de2bf1bf4d97d104c85ac855": {
+      "description_zh": "在此前未处理代码库的新Claude Code会话开展独立代码评审，通过实际运行而非仅阅读验证问题，避免既有上下文影响。",
+      "source": "Independent Evaluator for code review harness. Reviews from a completely separate perspective by ACTUALLY RUNNING the code — not just reading it. TRIGGER when: user requests harness review or independent code review. IMPORTANT: Must be run in a fresh Claude Code session that has not previously worked on this codebase. Context contamination defeats the purpose of the harness.",
+      "source_sha256": "ee1344ee9a27ee802d534dd3c8ab5840521cdbb3de2bf1bf4d97d104c85ac855",
+      "source_path": "skills/harness-review/SKILL.md",
+      "package_sha256": "3cc651b4195d9237b4d40ad59ac09ad9eaf9d9c2567715d5cb2463a26db83250",
+      "source_package": "code-review-harness-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a9223c3fbd8b56b73c20a3f969f43053389f07e22e49a7f2b3acec34db15e65": {
+      "description_zh": "在CodeAlive已索引的代码文档中进行语义搜索、grep和问答，列举来源仓库、读取产物及跨仓库跟踪调用图。",
+      "source": "Semantic search, grep, and Q&A across codebases and documentation indexed in CodeAlive. Use when the user mentions \"CodeAlive\", asks to list or get data sources, list indexed repositories, search code or docs across remote repos, fetch artifact content, or trace call graphs across repositories.",
+      "source_sha256": "4a9223c3fbd8b56b73c20a3f969f43053389f07e22e49a7f2b3acec34db15e65",
+      "source_path": "skills/codealive-context-engine/SKILL.md",
+      "package_sha256": "18d7bec27d2236112df0d834d221e4523f1006dddbc6baef76d30df2c17afb70",
+      "source_package": "codealive-context-engine-3.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7f2049cec70eb3863459078641b35e6d6fb418a1fe7c221c1fec8a69147c9de": {
+      "description_zh": "使用Codeflash优化代码性能。",
+      "source": "Optimize code for performance using Codeflash",
+      "source_sha256": "a7f2049cec70eb3863459078641b35e6d6fb418a1fe7c221c1fec8a69147c9de",
+      "source_path": "skills/optimize/SKILL.md",
+      "package_sha256": "b1dc593310917518c52cf7082c9aedffc9e36561372b08bb38fefeef67386fab",
+      "source_package": "Codeflash-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc8984f851fb01cfb892b2cff4a211906e2f86f91c06b2f250245f679186d9f6": {
+      "description_zh": "解决Codeflash安装认证或项目配置缺失，通过pip/uv安装、认证并配置pyproject.toml。",
+      "source": "This skill should be used when codeflash fails to run due to missing installation, authentication issues, or missing project configuration. It handles installing codeflash (via pip or uv), authenticating, and configuring pyproject.toml. Trigger phrases: \"setup codeflash\", \"configure codeflash\", \"codeflash is not installed\", \"codeflash auth failed\", \"fix codeflash setup\".",
+      "source_sha256": "dc8984f851fb01cfb892b2cff4a211906e2f86f91c06b2f250245f679186d9f6",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "b1dc593310917518c52cf7082c9aedffc9e36561372b08bb38fefeef67386fab",
+      "source_package": "Codeflash-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0cdfa88fdf30b5abb532ecb87c7f69c166a53882731aac903f1d09e73667c6f7": {
+      "description_zh": "检查代码异味与SOLID、DRY、KISS、YAGNI、迪米特法则违背，提出可执行重构建议。",
+      "source": "Sniff out code smells and design principle violations (SOLID, DRY, KISS, YAGNI, Law of Demeter) with actionable refactoring suggestions. Use when you want a code quality review of your project.",
+      "source_sha256": "0cdfa88fdf30b5abb532ecb87c7f69c166a53882731aac903f1d09e73667c6f7",
+      "source_path": "skills/codehog/SKILL.md",
+      "package_sha256": "dceadff9df047380777ab2194aeae476b7cb9f38787abaaeb8f81757f4104330",
+      "source_package": "codehog-0.1.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8a02f81ca242bcce59ec4fa424688a181ab83d863ef133c45a67e83980a2a4c": {
+      "description_zh": "会话结束时将Codelux检查点写入项目接续日志，记录完成、未完成、陷阱、下一步及值得保存的事实决策。",
+      "source": "Close the session by writing a Codelux checkpoint (what was done, what is open, traps, next step) to the project's continuation journal, plus facts and decisions worth keeping.",
+      "source_sha256": "c8a02f81ca242bcce59ec4fa424688a181ab83d863ef133c45a67e83980a2a4c",
+      "source_path": "skills/checkpoint/SKILL.md",
+      "package_sha256": "272af4430d4ff739a2f3ec64417c075c7374eb0ef376452b51a2cda4dd4d0d52",
+      "source_package": "Codelux-3.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a6d73b00d015e088b2d2199cbe8aba712f955ce128f983ca95d559b789288bf": {
+      "description_zh": "为项目接入Codelux，检查本地守护进程、引导下载首次启动和账户、注册当前目录并验证MCP；处理服务缺失失败或目录未索引。",
+      "source": "Set up Codelux for this project - check that the local Codelux daemon is running, guide the user through download, first start and account creation if it is not, register the current folder as a Codelux project, and confirm the codelux MCP tools answer. Use when the codelux MCP server is missing or failing, when a Codelux tool says the folder \"is not indexed\", or when the user asks to install, connect or configure Codelux.",
+      "source_sha256": "9a6d73b00d015e088b2d2199cbe8aba712f955ce128f983ca95d559b789288bf",
+      "source_path": "skills/codelux-setup/SKILL.md",
+      "package_sha256": "272af4430d4ff739a2f3ec64417c075c7374eb0ef376452b51a2cda4dd4d0d52",
+      "source_package": "Codelux-3.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b9c5f85af2a93a88ea9c5291470f74908a1e597e76a6d3ede280360f667353cc": {
+      "description_zh": "在Codelux已索引项目中使用MCP开展编码，先恢复记忆、按符号搜索、压缩读取，通过file_edit修改并记录决策和结束检查点。",
+      "source": "How to work on a Codelux-indexed project with the codelux MCP tools - recover memory before exploring, search by symbol instead of reading whole files, read files compressed, write through file_edit, record decisions and leave a checkpoint at the end. Use whenever the codelux MCP tools are available and you start, continue or close a coding task in this project.",
+      "source_sha256": "b9c5f85af2a93a88ea9c5291470f74908a1e597e76a6d3ede280360f667353cc",
+      "source_path": "skills/codelux-usage/SKILL.md",
+      "package_sha256": "272af4430d4ff739a2f3ec64417c075c7374eb0ef376452b51a2cda4dd4d0d52",
+      "source_package": "Codelux-3.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7901be52f0fc756f5cb5cb13f307cab707069f912fe1c6c4bff220c71df7f3af": {
+      "description_zh": "从Codelux记忆回顾项目近期笔记、修改、工具调用和最近检查点。",
+      "source": "Recall what was recently done in this project from Codelux memory - notes, edits, tool calls and the last checkpoints.",
+      "source_sha256": "7901be52f0fc756f5cb5cb13f307cab707069f912fe1c6c4bff220c71df7f3af",
+      "source_path": "skills/memory/SKILL.md",
+      "package_sha256": "272af4430d4ff739a2f3ec64417c075c7374eb0ef376452b51a2cda4dd4d0d52",
+      "source_package": "Codelux-3.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "440eefc085887b3587d17cdbf2cd7109c2c252fd4d432319792a385ab6899694": {
+      "description_zh": "查看本地Codelux守护进程运行、账户计划和当前目录索引状态。",
+      "source": "Show whether the local Codelux daemon is running, which account plan it has, and whether the current folder is an indexed Codelux project.",
+      "source_sha256": "440eefc085887b3587d17cdbf2cd7109c2c252fd4d432319792a385ab6899694",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "272af4430d4ff739a2f3ec64417c075c7374eb0ef376452b51a2cda4dd4d0d52",
+      "source_package": "Codelux-3.5.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b33307336750081f60b50c612f9cdeeeb57b2d3c1c5af874cc3929be99df9797": {
+      "description_zh": "仅在CODEMAN_MUX=1的Codeman管理会话中，通过HTTP管理工作会话、派提示、等待输出、读取及清理，可跨Claude会话消息；不在该环境时拒绝操作。",
+      "source": "Drive Codeman, the session manager this agent is running inside, over its HTTP API: list sessions, start worker sessions, send them prompts, block until they finish (wait / wait-output / send-and-wait), read their output, and clean up; where available, message claude workers directly (Claude Code cross-session messaging). Use when asked to orchestrate or parallelize work across Codeman sessions, watch another session, or start and manage workers. Only usable inside a Codeman-managed session (CODEMAN_MUX=1); refuse to act otherwise.",
+      "source_sha256": "b33307336750081f60b50c612f9cdeeeb57b2d3c1c5af874cc3929be99df9797",
+      "source_path": "skills/codeman/SKILL.md",
+      "package_sha256": "8819c58ad27529a90a99799f29a38d96e199232810830a68f4669f561353a92d",
+      "source_package": "codeman-1.33.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "487bee95be5e8b2a60491aa27e28046368377b00aaaf8330388ea6f464af1c75": {
+      "description_zh": "查询CodeQR短链接和二维码点击、流量、地域、设备及表现指标。",
+      "source": "Query CodeQR analytics data. Use when the user wants to check link clicks, view traffic statistics, see geographic data, analyze device types, or get performance metrics for their short links and QR codes.",
+      "source_sha256": "487bee95be5e8b2a60491aa27e28046368377b00aaaf8330388ea6f464af1c75",
+      "source_path": "skills/analytics/SKILL.md",
+      "package_sha256": "8ca3ca75c73d72f8a8ebeedb9630cca0c3368c2f9e36303a78c410d3d2620f9a",
+      "source_package": "CodeQR-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4fdf49d277dfe9c72338cec40a9ec7edb11a865458f3d43a724a0b924bf097b8": {
+      "description_zh": "通过CodeQR创建品牌短链接、重定向和追踪URL，支持自定义slug、标签和到期日期。",
+      "source": "Create shortened links with CodeQR. Use when the user wants to shorten a URL, create a branded short link, set up link redirects, or generate trackable links with custom slugs, tags, and expiration dates.",
+      "source_sha256": "4fdf49d277dfe9c72338cec40a9ec7edb11a865458f3d43a724a0b924bf097b8",
+      "source_path": "skills/create-link/SKILL.md",
+      "package_sha256": "8ca3ca75c73d72f8a8ebeedb9630cca0c3368c2f9e36303a78c410d3d2620f9a",
+      "source_package": "CodeQR-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e6678e54a27dfe54dbfbd1b923986f7be80e27f6da027d78642cbf6c02cef2b": {
+      "description_zh": "通过CodeQR为URL生成二维码，配置标志、颜色和品牌外观。",
+      "source": "Generate QR codes with CodeQR. Use when the user wants to create a QR code for a URL, customize QR code appearance, or generate branded QR codes with logos and colors.",
+      "source_sha256": "8e6678e54a27dfe54dbfbd1b923986f7be80e27f6da027d78642cbf6c02cef2b",
+      "source_path": "skills/create-qrcode/SKILL.md",
+      "package_sha256": "8ca3ca75c73d72f8a8ebeedb9630cca0c3368c2f9e36303a78c410d3d2620f9a",
+      "source_package": "CodeQR-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "704e2c77dc8aeb8509e42396473ac68fa1827166705b8d881c479722bf4ab322": {
+      "description_zh": "在CodeQR添加配置列举移除短链接自定义域名。",
+      "source": "Manage custom domains in CodeQR. Use when the user wants to add, configure, list, or remove custom domains for their short links.",
+      "source_sha256": "704e2c77dc8aeb8509e42396473ac68fa1827166705b8d881c479722bf4ab322",
+      "source_path": "skills/manage-domains/SKILL.md",
+      "package_sha256": "8ca3ca75c73d72f8a8ebeedb9630cca0c3368c2f9e36303a78c410d3d2620f9a",
+      "source_package": "CodeQR-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f9e987033a847882c595dd65f965667abc9fe357c0fe17ea9814d8cbab63a42": {
+      "description_zh": "列举修改删除或查询已有CodeQR短链接。",
+      "source": "Manage existing CodeQR short links. Use when the user wants to list, update, delete, or look up information about their short links.",
+      "source_sha256": "2f9e987033a847882c595dd65f965667abc9fe357c0fe17ea9814d8cbab63a42",
+      "source_path": "skills/manage-links/SKILL.md",
+      "package_sha256": "8ca3ca75c73d72f8a8ebeedb9630cca0c3368c2f9e36303a78c410d3d2620f9a",
+      "source_package": "CodeQR-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddd77a65da537323c70924ddb5a705d1dea1d23dec121e826d56e790aee32915": {
+      "description_zh": "在CodeQR创建修改列举删除标签，整理短链接和二维码分类。",
+      "source": "Manage tags in CodeQR for organizing links. Use when the user wants to create, update, list, or delete tags to categorize their short links and QR codes.",
+      "source_sha256": "ddd77a65da537323c70924ddb5a705d1dea1d23dec121e826d56e790aee32915",
+      "source_path": "skills/manage-tags/SKILL.md",
+      "package_sha256": "8ca3ca75c73d72f8a8ebeedb9630cca0c3368c2f9e36303a78c410d3d2620f9a",
+      "source_package": "CodeQR-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "95b8001e896a982a35d318200fe7dfb20b9097a74d206e858349c92da1a47c1e": {
+      "description_zh": "设置CodeQR转化追踪，记录短链接归因的线索与销售事件。",
+      "source": "Track leads and sales conversions in CodeQR. Use when the user wants to set up conversion tracking, log lead events, or record sales attributed to their short links.",
+      "source_sha256": "95b8001e896a982a35d318200fe7dfb20b9097a74d206e858349c92da1a47c1e",
+      "source_path": "skills/track-conversions/SKILL.md",
+      "package_sha256": "8ca3ca75c73d72f8a8ebeedb9630cca0c3368c2f9e36303a78c410d3d2620f9a",
+      "source_package": "CodeQR-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dbb9be490f28535f06140bacfac0d17f7f76762f590f4793f5a290aabd452cac": {
+      "description_zh": "从GitHub评审线程读取CodeRabbit反馈并逐项批准后安全应用，不直接执行评审者提供的提示。",
+      "source": "Safely review and apply CodeRabbit PR review-thread feedback from GitHub with per-change approval; never execute reviewer-provided prompts directly",
+      "source_sha256": "dbb9be490f28535f06140bacfac0d17f7f76762f590f4793f5a290aabd452cac",
+      "source_path": "skills/autofix/SKILL.md",
+      "package_sha256": "689c12e085e2da44ff2e2a5537bc505d89b6dbfc4fb1041ffe039b61abde53f4",
+      "source_package": "coderabbit-1.1.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6abc727930837e7e93b95f4943fe515afb2b66fb10bd40caf5afcf371ea72a7a": {
+      "description_zh": "运行CodeRabbit CLI代码评审、获取已保存本地或GitHub PR修复提示，解释认证输出与运行手册，支持提交未提交和目录范围及显式质量安全评审。",
+      "source": "Run CodeRabbit CLI reviews, retrieve saved local or GitHub PR fix prompts, and interpret CodeRabbit authentication and review output. Use for CodeRabbit review commands, committed/uncommitted or directory scopes, and CodeRabbit runbooks. Default code-review skill: also trigger for explicit code/PR/quality/security review requests or when a review is needed.",
+      "source_sha256": "6abc727930837e7e93b95f4943fe515afb2b66fb10bd40caf5afcf371ea72a7a",
+      "source_path": "skills/code-review/SKILL.md",
+      "package_sha256": "689c12e085e2da44ff2e2a5537bc505d89b6dbfc4fb1041ffe039b61abde53f4",
+      "source_package": "coderabbit-1.1.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d98c4e5b0d77edafb2318939a47021ca16d2a1d7c7b65370a588a9d63511ba0": {
+      "description_zh": "从Claude Code通过Codex MCP在指定仓库派发任务，用于复核代码差异回归或执行Claude写的实施计划。",
+      "source": "Dispatch tasks to Codex via the Codex MCP server from Claude Code. Use when asking Codex to review Claude's code changes (git diff, unstaged changes, regressions), asking Codex to execute an implementation plan Claude wrote, or any task where Codex should work inside a specific repo. Triggers on phrases like \"get Codex to review\", \"have Codex implement\", \"send this to Codex\", \"ask Codex to execute the plan\", \"Codex review\", \"Codex implement\".",
+      "source_sha256": "7d98c4e5b0d77edafb2318939a47021ca16d2a1d7c7b65370a588a9d63511ba0",
+      "source_path": "SKILL.md",
+      "package_sha256": "49b2590d026d99ddd3a6861cb9d3163f368f13469d415233fa21e73a44e8adc4",
+      "source_package": "Codex Dispatch-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6da6b6a611a2efce55675d129c27f9c9f7823b236c4d78cd92f859a4a89603d1": {
+      "description_zh": "将当前会话代码差异交OpenAI Codex CLI评审缺陷、安全、性能和质量。",
+      "source": "Send code changes from the current session to OpenAI Codex CLI for review. Codex reviews the diff for bugs, security, performance, and quality.",
+      "source_sha256": "6da6b6a611a2efce55675d129c27f9c9f7823b236c4d78cd92f859a4a89603d1",
+      "source_path": "skills/code/SKILL.md",
+      "package_sha256": "08a191e263fe3c56289927ad65fd6cdeca0e1014054d39fa67b9f3b1c8cc7473",
+      "source_package": "codex-review-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc02a973047997edd0c8b2ae6b849aa1f1db2d18256c6e3e450bb4cd9e80d7a1": {
+      "description_zh": "将当前计划交OpenAI Codex CLI迭代评审，Claude与Codex来回讨论直至认可。",
+      "source": "Send the current plan to OpenAI Codex CLI for iterative review. Claude and Codex go back-and-forth until Codex approves the plan.",
+      "source_sha256": "cc02a973047997edd0c8b2ae6b849aa1f1db2d18256c6e3e450bb4cd9e80d7a1",
+      "source_path": "skills/plan/SKILL.md",
+      "package_sha256": "08a191e263fe3c56289927ad65fd6cdeca0e1014054d39fa67b9f3b1c8cc7473",
+      "source_package": "codex-review-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "622dc5b4a33154c3998cd340a73fcdfd5080bf60c6ce7de94db301172b1842b3": {
+      "description_zh": "采访开发者提取编码偏好、分析代码库模式，生成更新编码规范，用于项目或开发者入门及规范刷新。",
+      "source": "Interview a developer to extract their coding preferences, analyze their codebase for patterns, and generate/update coding-standards files. Use when onboarding a new project, onboarding a new developer, or when standards need a refresh.",
+      "source_sha256": "622dc5b4a33154c3998cd340a73fcdfd5080bf60c6ce7de94db301172b1842b3",
+      "source_path": "skills/coding-interview/SKILL.md",
+      "package_sha256": "b73d10d0e5e2a44a86ea49c24c420659fad242d4d471d6461846145786a3390a",
+      "source_package": "Coding Standards (Interview)-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "897f1c6bd70a7dced569ab5065b7e79f2c891d66a2f44c75dddadc6c1d38657f": {
+      "description_zh": "提供编码规则、约定和质量标准的统一来源，会话开始加载基础内容，按当前工作加载子文件。",
+      "source": "Single source of truth for all coding rules, conventions, and quality standards. Auto-loaded at conversation start. Sub-files loaded on-demand based on the work being done.",
+      "source_sha256": "897f1c6bd70a7dced569ab5065b7e79f2c891d66a2f44c75dddadc6c1d38657f",
+      "source_path": "skills/coding-standards/SKILL.md",
+      "package_sha256": "b73d10d0e5e2a44a86ea49c24c420659fad242d4d471d6461846145786a3390a",
+      "source_package": "Coding Standards (Interview)-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07143b475dfa26a6a03a38d3582f00a3f432350778908a53580a42f3943815db": {
+      "description_zh": "自动识别技术栈并套用coding-standards规则审计代码质量，支持/lint全项目或指定文件目录。",
+      "source": "Run a comprehensive code quality audit on any codebase. Auto-detects stack, applies matching rules from coding-standards. Use /lint to run on the full project or /lint path/to/file for a specific file or directory.",
+      "source_sha256": "07143b475dfa26a6a03a38d3582f00a3f432350778908a53580a42f3943815db",
+      "source_path": "skills/lint/SKILL.md",
+      "package_sha256": "b73d10d0e5e2a44a86ea49c24c420659fad242d4d471d6461846145786a3390a",
+      "source_package": "Coding Standards (Interview)-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "900e790f6904a37b62fc8f6c36f19f04546b4ece7c164f6fe2c33fced9f33981": {
+      "description_zh": "审计并将项目文件夹重组为领域驱动结构，识别框架语言、提出分组并移动文件及更新导入。",
+      "source": "Audit and reorganize any project folder into domain-driven structure. Detects framework/language, applies best practices, proposes groupings, and executes moves with import updates.",
+      "source_sha256": "900e790f6904a37b62fc8f6c36f19f04546b4ece7c164f6fe2c33fced9f33981",
+      "source_path": "skills/organize/SKILL.md",
+      "package_sha256": "b73d10d0e5e2a44a86ea49c24c420659fad242d4d471d6461846145786a3390a",
+      "source_package": "Coding Standards (Interview)-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f430406411e6289567d060ffea546975d45d7877dda3e82c36f22a857d9c5de7": {
+      "description_zh": "分析用户输入正则的ReDoS、单请求CPU峰值、上传压缩文件/XML或解析器的算法复杂度攻击风险，支持相关安全评审与公告响应。",
+      "source": "This skill should be used when the user asks \"is this regex safe\", \"what is ReDoS\", \"why does CPU spike on one request\", \"how do I safely accept uploads or XML\", \"is this parser safe against untrusted input\", or is reviewing a regex over user input, handling compressed files, or responding to a ReDoS advisory.",
+      "source_sha256": "f430406411e6289567d060ffea546975d45d7877dda3e82c36f22a857d9c5de7",
+      "source_path": "skills/algorithmic-complexity-attacks/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9b0be055a471593a6d7c3f214616d55b218edd756351c447a97f1eb96ec7b87": {
+      "description_zh": "诊断缓存到期清空发布后的惊群、大量重复源请求、缺失键与热点节点，指导TTL和未命中处理；重试风暴及卸载用retry-amplification。",
+      "source": "This skill should be used when the user asks \"how do I stop a thundering herd\", \"why does load spike when a cache key expires\", \"how should I set cache TTLs\", \"how do I handle cache misses for keys that do not exist\", or reports many identical origin requests after an expiry, a spike after a cache flush or deploy, or one key saturating a cache node. Covers cache-expiry herds specifically. For retry storms and load shedding use `retry-amplification`.",
+      "source_sha256": "d9b0be055a471593a6d7c3f214616d55b218edd756351c447a97f1eb96ec7b87",
+      "source_path": "skills/cache-stampede/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7b1db0e241b7ec0223cfc53d21ebed0ca79225c26a5a41b3e11681992c213f7": {
+      "description_zh": "处理墙钟、单调钟和逻辑钟，指导耗时测量、跨机时间事件排序、时区DST偏差及cron重复；数据库事务排序另用隔离异常技能。",
+      "source": "This skill should be used when the user asks \"how do I measure elapsed time correctly\", \"why do timestamps disagree across servers\", \"how do I order events across machines\", \"should I use timestamptz\", \"why did the cron job run twice\", or is handling time zones, DST, clock skew, or logical clocks. Covers wall-clock, monotonic, and logical clocks. For database transaction ordering use `isolation-anomalies`.",
+      "source_sha256": "a7b1db0e241b7ec0223cfc53d21ebed0ca79225c26a5a41b3e11681992c213f7",
+      "source_path": "skills/clocks-and-time/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c373fc268f685b661621faf2608eea4de94663bf573ed6cbf337d453aa6f69a": {
+      "description_zh": "挖掘Git变更频率、复杂度、共同修改与人员依赖等代码健康信号，排序重构候选和技术债风险。",
+      "source": "This skill should be used when the user asks \"where should we start refactoring\", \"which files are riskiest\", \"what is our tech debt priority\", \"which files always change together\", \"what is the bus factor\", or asks to mine git history for code health signals. Combines change frequency with complexity to rank refactoring candidates.",
+      "source_sha256": "8c373fc268f685b661621faf2608eea4de94663bf573ed6cbf337d453aa6f69a",
+      "source_path": "skills/code-hotspots/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a698e6f8b2e643ee58755129cf77fa5e604f355ad28b9faec666a08fe4b5123a": {
+      "description_zh": "以精确分类和强度评估耦合，检查位置参数、魔法值、调用顺序、共享可变状态与重复算法，并判断模块边界耦合或解耦方案。",
+      "source": "This skill should be used when the user asks \"why is this so tightly coupled\", \"how do I decouple these\", \"is this coupling acceptable across a module boundary\", or when reviewing positional arguments, magic values, required call ordering, shared mutable state, or duplicated algorithms. Provides a taxonomy that names and ranks kinds of coupling precisely.",
+      "source_sha256": "a698e6f8b2e643ee58755129cf77fa5e604f355ad28b9faec666a08fe4b5123a",
+      "source_path": "skills/connascence/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff1441709fd9bae6207f3982273a9b2c1ff4c28e8edea7e299a6b201f79eedc0": {
+      "description_zh": "配置数据库连接池数量及max_connections，诊断耗尽、PgBouncer事务池、预处理语句、RDS Proxy及无服务器负载；通用池容量数学用排队利用率技能。",
+      "source": "This skill should be used when the user asks \"how many database connections should I use\", \"why is the database out of connections\", \"should I use PgBouncer\", \"what is transaction pooling\", \"why do prepared statements fail behind a pooler\", or is configuring pool size, max_connections, RDS Proxy, or a serverless database workload. Covers database connections specifically. For general pool sizing math use `queueing-and-utilization`.",
+      "source_sha256": "ff1441709fd9bae6207f3982273a9b2c1ff4c28e8edea7e299a6b201f79eedc0",
+      "source_path": "skills/connection-pooling/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86d636afbb91ff2a737352e09b8ebf489adb8544f520c369c2f5ea37d7a8821d": {
+      "description_zh": "通过一致性或rendezvous哈希设计变化节点集的键分区与缓存分片，处理扩容重哈希或热点分片；单热点键缓存行为用cache-stampede。",
+      "source": "This skill should be used when the user asks \"how do I shard this data\", \"how do I add a node without rehashing everything\", \"what is consistent hashing\", \"should I use rendezvous hashing\", \"how do I fix a hot shard\", or is designing key partitioning or cache sharding across a changing set of nodes. Covers distributing keys across nodes. For caching behavior of a single hot key use `cache-stampede`.",
+      "source_sha256": "86d636afbb91ff2a737352e09b8ebf489adb8544f520c369c2f5ea37d7a8821d",
+      "source_path": "skills/consistent-hashing/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "602f4448ebc7d62ead2e6c057f9d3d8e9cf4725b118858a289d6bfe19194e225": {
+      "description_zh": "检验负载测试是否漏记排队等待导致延迟过好，解释生产与测试p99差异、跨服务器分位聚合和工具选择；已正确测量的尾延迟优化另用tail-latency。",
+      "source": "This skill should be used when the user asks \"why is production latency worse than our load test\", \"is this benchmark trustworthy\", \"how do I aggregate p99 across servers\", \"which load testing tool should I use\", or when writing or interpreting a load test whose p99 looks suspiciously good. Covers whether latency numbers are measured correctly. For reducing an accurately measured tail use `tail-latency`.",
+      "source_sha256": "602f4448ebc7d62ead2e6c057f9d3d8e9cf4725b118858a289d6bfe19194e225",
+      "source_path": "skills/coordinated-omission/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59ce5925fa0a9fd624107eccde46a0aba08c02849fbe4152417b57cb855015eb": {
+      "description_zh": "评估函数分支及圈复杂度、设置阈值、识别和简化复杂函数，解释radon、ESLint、gocyclo、PMD或lizard报告。",
+      "source": "This skill should be used when the user asks \"how complex is this function\", \"count the branches\", \"find overly complex functions\", \"set a complexity threshold\", \"reduce cyclomatic complexity\", or asks to interpret a complexity report from radon, ESLint, gocyclo, PMD, or lizard. Also applies when a function \"has too many if statements\" and needs simplifying.",
+      "source_sha256": "59ce5925fa0a9fd624107eccde46a0aba08c02849fbe4152417b57cb855015eb",
+      "source_path": "skills/cyclomatic-complexity/SKILL.md",
+      "package_sha256": "4932d6abdc410a09f18ed06653b24a9a056fc4520de2239afb60bb20c09da143",
+      "source_package": "coding-skills-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
