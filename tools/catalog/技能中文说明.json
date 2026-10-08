@@ -48049,6 +48049,1086 @@
       "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
       "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c08d5523e79f9a0997f06f3e88c34ec709b014fdeef0b9fc36091363478e00c": {
+      "description_zh": "查询 SuiteScript 记录和字段参考，涵盖原说明中的 272 类 NetSuite 记录的字段 ID、类型、必填状态及搜索能力，帮助开发时正确使用字段。",
+      "source": "SuiteScript records and fields reference. Look up field IDs, types, required status, and search capabilities for all 272 NetSuite record types. Use this when building SuiteScript to ensure correct field usage.",
+      "source_sha256": "0c08d5523e79f9a0997f06f3e88c34ec709b014fdeef0b9fc36091363478e00c",
+      "source_path": "skills/netsuite-suitescript-records-reference/SKILL.md",
+      "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
+      "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e414e3c579d596688bfda324ce62e1f4a6f224109db38f2ef5a2e2ea7442915": {
+      "description_zh": "分析、转换、解释并验证 SuiteScript 1.0、2.0 或 2.x 到 2.1 的迁移，覆盖 125 项以上 API 映射、34 类对象转换、13 项未映射 API 替代方法、入口变化和 16 类行为兼容问题。",
+      "source": "SuiteScript 1.0, 2.0, and 2.x to 2.1 migration assistant. Analyzes, converts, explains, and validates script upgrades. Covers 125+ API mappings, 34 object conversions, 13 unmapped API workarounds, all script type entry point changes, SuiteScript 2.0/2.x to 2.1 upgrade guidance, and 16 categories of breaking behavioral changes. Essential for modernizing legacy SuiteScript codebases.",
+      "source_sha256": "1e414e3c579d596688bfda324ce62e1f4a6f224109db38f2ef5a2e2ea7442915",
+      "source_path": "skills/netsuite-suitescript-upgrade/SKILL.md",
+      "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
+      "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8341f9d1283a796532dab30ac7a970f1529af15ad397b024dbfa5f431d1f6a9c": {
+      "description_zh": "为创建、修改和调试 NetSuite UIF SPA 组件查询 @uif-js/core 与 @uif-js/component 的 API、类型、构造器、方法、属性、枚举、hooks 和组件选项。",
+      "source": "Use when building, modifying, or debugging NetSuite UIF SPA components. Provides API/type lookup for `@uif-js/core` and `@uif-js/component` (constructors, methods, props, enums, hooks, and component options).",
+      "source_sha256": "8341f9d1283a796532dab30ac7a970f1529af15ad397b024dbfa5f431d1f6a9c",
+      "source_path": "skills/netsuite-uif-spa-reference/SKILL.md",
+      "package_sha256": "ac34285d9055579641d5fbdb7a030e56ae2c725326fa636988d4ebbbf399548b",
+      "source_package": "NetSuite SuiteCloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9cb83cdad876529b25bf9fd772ac4b0991343640bf8b4c1c2d29e59bfd1a5a1": {
+      "description_zh": "利用 New Relic APM 及事务分析调查应用错误、响应变慢、吞吐问题和事务级故障。",
+      "source": "Application Performance Monitoring and transaction analysis. Use when investigating application errors, slow response times, throughput issues, or transaction-level problems.",
+      "source_sha256": "a9cb83cdad876529b25bf9fd772ac4b0991343640bf8b4c1c2d29e59bfd1a5a1",
+      "source_path": "skills/apm/SKILL.md",
+      "package_sha256": "18c99a0553c0e18ea6765fff7e8103eb1df622313134d05cebec76aa735e37b9",
+      "source_package": "New Relic-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48f3855627e5fcf589ca5c95bdfc0c33cb32f4bed21b5f69a50128dcc2e24fbc": {
+      "description_zh": "利用 New Relic 分析 AWS、Azure、GCP 云支出、异常峰值、预算和账单；要求账号已将 Cloud Cost Intelligence 数据导入 CloudCostV2Test 表。",
+      "source": "Cloud FinOps cost analysis. Use when investigating cloud spend, cost anomalies, cost spikes, budget analysis, or any questions about AWS, Azure, GCP costs and billing. Requires a New Relic account with Cloud Cost Intelligence data ingested into the CloudCostV2Test table.",
+      "source_sha256": "48f3855627e5fcf589ca5c95bdfc0c33cb32f4bed21b5f69a50128dcc2e24fbc",
+      "source_path": "skills/finops/SKILL.md",
+      "package_sha256": "18c99a0553c0e18ea6765fff7e8103eb1df622313134d05cebec76aa735e37b9",
+      "source_package": "New Relic-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "975e4066161e627b5789cbc34a40800411134b2b51e16aac38748ade26001c73": {
+      "description_zh": "利用 New Relic 遥测诊断 Kubernetes pod 崩溃、CrashLoopBackOff、OOMKill、驱逐、调度失败、重启、节点压力、HPA 扩缩容及服务中断；要求已导入 nri-kubernetes/kube-state-metrics 数据。",
+      "source": "Kubernetes diagnosis and debugging using New Relic telemetry. Use when investigating pod crashes, CrashLoopBackOff, OOMKills, pod evictions, scheduling failures, container restarts, node pressure, HPA/scaling issues, service disruptions, or other Kubernetes workload problems. Requires a New Relic account with nri-kubernetes / kube-state-metrics data ingested.",
+      "source_sha256": "975e4066161e627b5789cbc34a40800411134b2b51e16aac38748ade26001c73",
+      "source_path": "skills/kubernetes/SKILL.md",
+      "package_sha256": "18c99a0553c0e18ea6765fff7e8103eb1df622313134d05cebec76aa735e37b9",
+      "source_package": "New Relic-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b163146192b1d17c3aa7698544745a278f3faa044ed75a5893ad83180ecad5e": {
+      "description_zh": "提供 New Relic MCP 的工具、NRQL 语法及多步工作流，查询分析日志、指标、追踪、APM、告警、事件、看板、基础设施和合成监控，调查生产性能与错误。",
+      "source": "Use this skill whenever the user wants to query, debug, monitor, or analyze anything in New Relic — including logs, metrics, traces, APM data, alerts, incidents, dashboards, or infrastructure. Triggers on phrases like \"check New Relic\", \"query NRQL\", \"look at alerts\", \"analyze performance\", \"what's happening in production\", \"check error rate\", \"find slow transactions\", \"investigate incident\", or any request to pull observability or monitoring data. Also triggers when the user mentions APM, distributed tracing, golden signals, Errors Inbox, or synthetic monitors. Always use this skill rather than guessing — it contains the tool list, NRQL syntax, and multi-step workflows needed to do it right.",
+      "source_sha256": "5b163146192b1d17c3aa7698544745a278f3faa044ed75a5893ad83180ecad5e",
+      "source_path": "skills/newrelic-mcp/skill.md",
+      "package_sha256": "18c99a0553c0e18ea6765fff7e8103eb1df622313134d05cebec76aa735e37b9",
+      "source_package": "New Relic-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90e79c5cd4b25a2d1e508a1bb7df4e0ad8c755694cdfde68ca63aad478e326fb": {
+      "description_zh": "通过 Newlogic Online MCP 编辑、构建和部署其托管静态网站，发现站点、运行编辑会话、下载重建、预览测试、上传媒体、连接表单、管理备份回滚及发布生产版本。",
+      "source": "Edit, build, and deploy static websites hosted on Newlogic Online through its MCP server. Use whenever the user wants to change, create, preview, or publish a website managed by Newlogic Online — discover accessible sites, run an edit session, download and rebuild a project or edit files directly, deploy to Test, upload media, connect site forms, manage backups and rollback, or publish to Production.",
+      "source_sha256": "90e79c5cd4b25a2d1e508a1bb7df4e0ad8c755694cdfde68ca63aad478e326fb",
+      "source_path": "skills/newlogic-online/SKILL.md",
+      "package_sha256": "bd680e0657b82b83c1f8aad5c84e7169e541eb2e9b518572ab84d6a181e1e940",
+      "source_package": "Newlogic Online-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8742370b3ab0a9426f46525d76d4d369ae605aabc63faf2cedfb59e0d979ab18": {
+      "description_zh": "通过已配置 Substack MCP 读取刊物上下文、复用已有作品，并准备或审阅私密草稿。",
+      "source": "Read publication context, reuse existing Substack work, and prepare or review private drafts using the configured Substack MCP tools.",
+      "source_sha256": "8742370b3ab0a9426f46525d76d4d369ae605aabc63faf2cedfb59e0d979ab18",
+      "source_path": "skills/substack-creator-workflow/SKILL.md",
+      "package_sha256": "b4e9fbf13af62e3b9f2e467e39cc32121df3354c25e2e2baa9d5aff27ab3bf6e",
+      "source_package": "Newsletter Creator Tools-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf7c75169d30785c3f64f0acfc19cb7e8374b1cc6466636b8d51383719ad7b42": {
+      "description_zh": "按照 Angular CLI 约定生成组件、服务、pipe、指令、guard、interceptor、路由和 store，用于新增代码或搭建功能骨架。",
+      "source": "Generate Angular artifacts (components, services, pipes, directives, guards, interceptors, routes, stores). Use automatically when the user asks to create any Angular code, scaffold a feature, or add a new file to an Angular project. Mirrors Angular CLI conventions.",
+      "source_sha256": "bf7c75169d30785c3f64f0acfc19cb7e8374b1cc6466636b8d51383719ad7b42",
+      "source_path": "skills/angular-generate/SKILL.md",
+      "package_sha256": "f80e67232e9e20895ac6e453631d2fc7e353692e303ca8f2e5b002554a175368",
+      "source_package": "ng-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7fa31d9ef90a74f461df342efaa54b25efba3188637e77bb31fcefe6b84ad5e9": {
+      "description_zh": "将已弃用 Angular 模式迁移为现代等价写法，适用于 NgModule 文件和弃用 API 修改。",
+      "source": "Migrate deprecated Angular patterns to modern equivalents. Auto-invoked when editing NgModule files or using deprecated APIs.",
+      "source_sha256": "7fa31d9ef90a74f461df342efaa54b25efba3188637e77bb31fcefe6b84ad5e9",
+      "source_path": "skills/angular-migration/SKILL.md",
+      "package_sha256": "f80e67232e9e20895ac6e453631d2fc7e353692e303ca8f2e5b002554a175368",
+      "source_package": "ng-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e9e0f68eeb31a3a6effbfef776640ea9ed0e2dff939db551a527a065463baa3": {
+      "description_zh": "审阅优化 Angular 性能，应用 OnPush、signals、defer、懒加载及虚拟滚动模式。",
+      "source": "Angular performance patterns — OnPush, signals, defer, lazy loading, virtual scroll. Auto-invoked when reviewing or optimizing Angular code.",
+      "source_sha256": "8e9e0f68eeb31a3a6effbfef776640ea9ed0e2dff939db551a527a065463baa3",
+      "source_path": "skills/angular-performance/SKILL.md",
+      "package_sha256": "f80e67232e9e20895ac6e453631d2fc7e353692e303ca8f2e5b002554a175368",
+      "source_package": "ng-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b600fb1c26858f960e8d4b8a61bf46cf393b684b323a4734817ab1d8b581af56": {
+      "description_zh": "提供 Angular 的 RxJS 操作符、signals 互操作、清理和常见用法，支持 observable 代码。",
+      "source": "RxJS patterns in Angular — operators, signals interop, cleanup, and common recipes. Auto-invoked when using observables in Angular files.",
+      "source_sha256": "b600fb1c26858f960e8d4b8a61bf46cf393b684b323a4734817ab1d8b581af56",
+      "source_path": "skills/angular-rxjs/SKILL.md",
+      "package_sha256": "f80e67232e9e20895ac6e453631d2fc7e353692e303ca8f2e5b002554a175368",
+      "source_package": "ng-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0061f838e3ff6602b9a04f33ba7e69f14a8e36567d3f7631d2224cc9d8e5fa8d": {
+      "description_zh": "编写审阅 Angular 单元测试及 .spec.ts，覆盖组件、服务、pipe、指令和 guard，支持 Jest、Jasmine/Karma 并参考 Angular 测试文档。",
+      "source": "Write Angular unit tests. Use automatically when creating .spec.ts files, when asked to test Angular components/services/pipes/directives/guards, or when reviewing test coverage. Supports Jest and Jasmine/Karma. Mirrors Angular testing documentation.",
+      "source_sha256": "0061f838e3ff6602b9a04f33ba7e69f14a8e36567d3f7631d2224cc9d8e5fa8d",
+      "source_path": "skills/angular-testing/SKILL.md",
+      "package_sha256": "f80e67232e9e20895ac6e453631d2fc7e353692e303ca8f2e5b002554a175368",
+      "source_package": "ng-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2596f39048758b73438a581dd26124e1715365f91b7755f363791e6a2c5e79a9": {
+      "description_zh": "提供 NgRx actions、reducers、selectors 和 effects 的实践，适用于状态存储文件开发。",
+      "source": "NgRx best practices for actions, reducers, selectors, and effects. Auto-invoked when working with NgRx store files.",
+      "source_sha256": "2596f39048758b73438a581dd26124e1715365f91b7755f363791e6a2c5e79a9",
+      "source_path": "skills/ngrx-patterns/SKILL.md",
+      "package_sha256": "f80e67232e9e20895ac6e453631d2fc7e353692e303ca8f2e5b002554a175368",
+      "source_package": "ng-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "88554afbe5ece811b69c942542f92147016d348d3cdd000a393987b1abd10963": {
+      "description_zh": "通过 ngrok 隧道向公网开放本地 HTTP 或 TCP 服务，可用 Traffic Policy 添加 OAuth 或 WAF；支持共享开发预览、SSH/RDP/数据库及访问无公网 IP 设备。",
+      "source": "Expose a local service to the public internet using ngrok. Starts a tunnel, optionally adds OAuth or WAF via Traffic Policy. Handles HTTP services and raw TCP (SSH, RDP, databases). Use when asked to expose, tunnel, share, or make a local service publicly accessible, or to reach a machine that has no public IP. Also covers sharing work-in-progress with a specific person and the dev-server quirks that break a shared preview.",
+      "source_sha256": "88554afbe5ece811b69c942542f92147016d348d3cdd000a393987b1abd10963",
+      "source_path": "skills/expose-localhost/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9590963fa4322f1ea29086758ddd1411c7cd5a542ef72540e547206480326ad1": {
+      "description_zh": "作为 ngrok 参考说明端点及边缘流量模型，涵盖 agent、cloud、internal 端点、HTTP/TLS/TCP 绑定和由阶段、CEL 表达式及动作组成的 Traffic Policy，原说明含 26 项动作目录；供其他技能引用。",
+      "source": "Reference for ngrok's traffic model - what an endpoint is and what happens to traffic at the edge. Covers endpoint types (agent, cloud, internal), bindings and protocols (HTTP, TLS, TCP), and Traffic Policy - the YAML rule language of phases, CEL expressions, and actions, with a generated catalog of all 26 actions. Other ngrok skills point here to decide what to build, then to ngrok-surfaces to apply it. Not a standalone task - load when another skill references it.",
+      "source_sha256": "9590963fa4322f1ea29086758ddd1411c7cd5a542ef72540e547206480326ad1",
+      "source_path": "skills/ngrok-engine/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "910132e7520ad4f277a3dc474ebfeef85604492f756dc5c1dfce42b05c44c083": {
+      "description_zh": "检测并配置 ngrok 的 CLI、SDK 或基础设施代码使用环境，完成一次性 authtoken 认证并路由到对应方式，排查认证和配置错误。",
+      "source": "Get authenticated and ready to use ngrok on whatever surface the task needs - agent CLI, an SDK, or infrastructure-as-code. Detects what is already installed, walks the one-time authtoken step, and routes to the right surface. Use before other ngrok tasks, or whenever an ngrok command fails with an authentication or configuration error. Use when the user says \"set up ngrok\", \"install ngrok\", \"add my authtoken\", \"ngrok isn't authenticated\", or \"getting an auth error from ngrok\".",
+      "source_sha256": "910132e7520ad4f277a3dc474ebfeef85604492f756dc5c1dfce42b05c44c083",
+      "source_path": "skills/ngrok-setup/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1361494311ead75a6cd54423d9006a6adccce1483e0707cd342f259f99a7bd6c": {
+      "description_zh": "按用户项目选择 ngrok CLI/ngrok.yml、Go/JavaScript/Python/Rust SDK、REST API、Terraform 或 Kubernetes Operator，应用端点和 Traffic Policy；作为其他技能的实施参考。",
+      "source": "How to apply an ngrok endpoint and Traffic Policy on whichever surface the user is actually working in - the agent CLI and ngrok.yml, the ngrok SDKs (Go, JavaScript, Python, Rust), the REST API at api.ngrok.com, the Terraform provider, and the Kubernetes Operator. Routes from signals in the user's project to the right surface, then to that surface's reference file. Other ngrok skills point here once they know what to build. Not a standalone task - load when another skill references it.",
+      "source_sha256": "1361494311ead75a6cd54423d9006a6adccce1483e0707cd342f259f99a7bd6c",
+      "source_path": "skills/ngrok-surfaces/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e7b20d79eeaa2666d69139912cbbac5fd925d74e34bb89d6964e7db94fd91f57": {
+      "description_zh": "为动态创建隔离环境的平台配置每个沙箱、容器、设备或租户独立的 ngrok 端点，涵盖服务用户、保留地址域名、ACL 限定 authtoken、cloud 到私有 internal 转发、工作负载配置及销毁。",
+      "source": "Give every sandbox, container, device, or tenant its own isolated ngrok endpoint, provisioned programmatically at runtime from a controlplane. Covers the per-workload resource set - service user, reserved address or domain, ACL-scoped authtoken, cloud endpoint forwarding to a private internal endpoint - plus the agent config that runs inside the workload, and teardown. Use when the user is building a platform that spins up isolated environments.",
+      "source_sha256": "e7b20d79eeaa2666d69139912cbbac5fd925d74e34bb89d6964e7db94fd91f57",
+      "source_path": "skills/provision-sandbox-access/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "571b8b0c98206d8ede5693dddcfc2283b247e902a4d485e704d1a50877b309ac": {
+      "description_zh": "在边缘验证 Stripe、GitHub、Twilio、Slack 或 Shopify 等 webhook 签名，将回调转发给本地或防火墙后的私有服务，无需公开后端或编写验证代码；支持集中网关与受监管网络场景。",
+      "source": "Receive and verify inbound webhooks from providers like Stripe, GitHub, Twilio, Slack, or Shopify and deliver them to a local or private service without exposing that service to the public internet. Verify signatures at the edge with no app code; route third-party callbacks to a service behind a firewall, including regulated (HIPAA/PCI) environments or a centralized webhook gateway shared across teams. Use when the user needs to receive, test, or debug webhooks locally, wants signature verification without writing it, or must route callbacks to a private service.",
+      "source_sha256": "571b8b0c98206d8ede5693dddcfc2283b247e902a4d485e704d1a50877b309ac",
+      "source_path": "skills/receive-webhooks/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae4a826e7aee183a8d2ed548998064cfd7dbd2135cfbac0c6ad4e1bf58e47e78": {
+      "description_zh": "为开发中的 MCP server 设置 ngrok cloud 入口，按模型厂商分别认证并检查流量，转发到私有本地服务供远程 AI 客户端测试；原说明的 bearer 凭据部分已隐藏，由 Vaults 管理。",
+      "source": "Expose an in-development MCP (Model Context Protocol) server for remote testing against AI model providers like Claude and OpenAI, with per-provider authentication and traffic inspection. Puts a cloud endpoint in front of your local MCP server, authenticates each provider with its own bearer [已隐藏] via Vaults, and forwards to your server kept off the public internet. Use when the user is building or testing an MCP server and needs a remote AI client to reach it. Use when the user says \"test my MCP server\", \"expose my MCP server to Claude\", \"connect my MCP server to OpenAI\", or \"front door for my MCP server\".",
+      "source_sha256": "ae4a826e7aee183a8d2ed548998064cfd7dbd2135cfbac0c6ad4e1bf58e47e78",
+      "source_path": "skills/run-mcp-gateway/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b3de682d0f37c2c8c1ed3e2a52001e743dcf1cdb005f87158ee1810adb695a1": {
+      "description_zh": "通过 ngrok Traffic Policy 为端点添加 OAuth/OIDC、限流、IP 限制、请求阻断、维护页、自定义响应及 header 注入删除，无需修改应用代码。",
+      "source": "Put authentication, rate limiting, IP restrictions, header rules, or a custom response in front of an ngrok endpoint using a Traffic Policy, without changing application code. Covers requiring login (OAuth/OIDC), locking to specific IPs, blocking or denying requests, returning a maintenance page or custom response, and injecting or stripping headers. Use when the user wants to protect, gate, throttle, or add an API-gateway layer to an endpoint. Use when the user says \"add auth to my ngrok URL\", \"require Google login\", \"rate limit my endpoint\", \"restrict by IP\", \"block a path\", or \"put up a maintenance page\".",
+      "source_sha256": "9b3de682d0f37c2c8c1ed3e2a52001e743dcf1cdb005f87158ee1810adb695a1",
+      "source_path": "skills/secure-endpoint/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d913f63b8c98dba5cc0696007eee4837afbe6ea61a2d646e7b2a4948ddffe6c": {
+      "description_zh": "依据 ngrok 错误码诊断离线端点、认证连接失败、上游或隧道拒绝连接及 Traffic Policy 错误，解释具体原因和修复方法。",
+      "source": "Diagnose and fix common ngrok errors and connection problems - offline endpoints (ERR_NGROK_3200), agent authentication and connection failures, upstream/tunnel connection refused, and Traffic Policy errors. Reads the error code and explains the specific cause and fix. Use when an ngrok URL returns an error, a tunnel won't come up, or the agent reports a connection problem. Use when the user says \"ngrok says endpoint offline\", \"ERR_NGROK_3200\", \"my tunnel isn't working\", \"why is my ngrok URL down\", or pastes an ngrok error code.",
+      "source_sha256": "3d913f63b8c98dba5cc0696007eee4837afbe6ea61a2d646e7b2a4948ddffe6c",
+      "source_path": "skills/troubleshoot-ngrok/SKILL.md",
+      "package_sha256": "269c13fbab41d568f9786a33ea82e8a5f2f3b70e03b450f8a27ea93cc71bef3f",
+      "source_package": "Ngrok Agent Skills-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad4b2c3c04681baacf9720f26da960f73051a4e8acfa199a801fc0492cbc999d": {
+      "description_zh": "通过 NightVision API Discovery 从源码提取 OpenAPI 规格，处理 swagger extract、框架支持、提取故障、未解析变量、规格对比和 Code Traceback。",
+      "source": "Guide for agents to help users extract OpenAPI specs from source code using NightVision API Discovery. Use when running swagger extract, identifying framework support, troubleshooting extraction, handling unresolved variables, comparing API specs, or understanding Code Traceback.",
+      "source_sha256": "ad4b2c3c04681baacf9720f26da960f73051a4e8acfa199a801fc0492cbc999d",
+      "source_path": "skills/api-discovery/SKILL.md",
+      "package_sha256": "9201a294ed1848687de3e0c6d6f758992c041699f0b6e8b4d52c327950bae6d4",
+      "source_package": "nightvision-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e21794de2acd9a64172fbf1286030980046bb3cfb03f8d251d667de83d0ab337": {
+      "description_zh": "对刚创建或修改的本地、私有、预发布或内部 Web 应用/API 采用 DAST 优先的 NightVision 扫描，驱动 MCP 的 run-app-security-scan 流程。",
+      "source": "DAST-first NightVision scan for an app you just built or changed. Use when a user, or a project or org agent-instructions rule, wants a local, private, staging, or internal web app/API security-scanned. Drives the NightVision MCP `run-app-security-scan` harness.",
+      "source_sha256": "e21794de2acd9a64172fbf1286030980046bb3cfb03f8d251d667de83d0ab337",
+      "source_path": "skills/app-security-scan/SKILL.md",
+      "package_sha256": "9201a294ed1848687de3e0c6d6f758992c041699f0b6e8b4d52c327950bae6d4",
+      "source_package": "nightvision-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "447cafa9f6f438b630a2c5af7c84d972565186e85b1e3c8917c67172013e8442": {
+      "description_zh": "将 NightVision DAST 接入 GitHub Actions、GitLab CI、Azure DevOps、Jenkins、BitBucket 或 JFrog，配置令牌目标、运行扫描、导出 SARIF/CSV 并检测 API 破坏性变化。",
+      "source": "Guide for agents to help users integrate NightVision DAST scanning into CI/CD pipelines. Use when setting up security scans in GitHub Actions, GitLab CI, Azure DevOps, Jenkins, BitBucket, or JFrog pipelines, configuring NightVision tokens, creating targets, running scans, exporting results as SARIF/CSV, or detecting API breaking changes.",
+      "source_sha256": "447cafa9f6f438b630a2c5af7c84d972565186e85b1e3c8917c67172013e8442",
+      "source_path": "skills/ci-cd-integration/SKILL.md",
+      "package_sha256": "9201a294ed1848687de3e0c6d6f758992c041699f0b6e8b4d52c327950bae6d4",
+      "source_package": "nightvision-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb6d7cbeea3b89064fd6ede851b6c0f7e67ba07acc1f19f3d7b61275f17ae014": {
+      "description_zh": "配置 NightVision DAST 目标、Playwright/header/cookie 认证、HTTP 流量录制、项目、范围排除和私有网络扫描。",
+      "source": "Guide for agents to help users configure NightVision DAST scans. Use when creating targets, setting up authentication (Playwright, headers, cookies), recording HTTP traffic, managing projects, configuring scope exclusions, or preparing private network scans.",
+      "source_sha256": "bb6d7cbeea3b89064fd6ede851b6c0f7e67ba07acc1f19f3d7b61275f17ae014",
+      "source_path": "skills/scan-configuration/SKILL.md",
+      "package_sha256": "9201a294ed1848687de3e0c6d6f758992c041699f0b6e8b4d52c327950bae6d4",
+      "source_package": "nightvision-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abe9e52a368e9876fcb2b153dcfd95ba97f3df9a670a758a059250c2b6391652": {
+      "description_zh": "解释处理 NightVision SARIF/CSV 扫描结果，定位漏洞代码、用 curl 验证、按严重度排序并建议修复或标记误报。",
+      "source": "Guide for agents to help users interpret and act on NightVision DAST scan results. Use when reading SARIF/CSV findings, explaining vulnerabilities, locating vulnerable code, validating findings with curl, prioritizing by severity, suggesting remediations, or marking false positives.",
+      "source_sha256": "abe9e52a368e9876fcb2b153dcfd95ba97f3df9a670a758a059250c2b6391652",
+      "source_path": "skills/scan-triage/SKILL.md",
+      "package_sha256": "9201a294ed1848687de3e0c6d6f758992c041699f0b6e8b4d52c327950bae6d4",
+      "source_package": "nightvision-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "039ba8a778be14e6b35038c846e34f8f0e408be6c6b7a35f3a13038b6ebb8a51": {
+      "description_zh": "扫描社交平台、博客、新闻和评论中的品牌提及，按覆盖、传播速度、情绪及风险主题评分，分为危机、关注、互动或记录并建议负责人和响应时间；按 B2B/消费市场调整来源，不用于单次公司调查或竞品定位及经营信号分析。",
+      "source": "Scans Reddit, X, LinkedIn, Instagram, TikTok, YouTube, blogs, news, and review platforms\nfor brand mentions — scoring each across four dimensions (reach, velocity, sentiment, and\nrisk-topic match) so teams can respond before one spirals. Sources adapt to the market: B2B\nbrands weight LinkedIn, G2, and trade press; consumer brands weight TikTok, Instagram, and\nYouTube. Each is bucketed into Crisis / Watch / Engage / Log with a suggested owner and\nresponse window.\n\nUse when asked to \"monitor brand mentions\", \"scan for brand mentions\", \"what are people\nsaying about [brand]\", \"brand monitoring\", \"social listening\", \"run a brand sweep\",\n\"find high-risk mentions\", or any variation of brand monitoring across web and social.\n\nDo NOT use for one-time company research or due diligence — use company-deep-dive instead.\nDo NOT use for competitor messaging/positioning analysis — use competitor-positioning instead.\nDo NOT use for funding/hiring/business signals on a competitor — use competitor-intel instead.",
+      "source_sha256": "039ba8a778be14e6b35038c846e34f8f0e408be6c6b7a35f3a13038b6ebb8a51",
+      "source_path": "skills/brand-mention-monitor/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18532db596741c86cd912437fc9fc493fe187d9112f227853cecf4ae8f584559": {
+      "description_zh": "用实时网页资料研究指定公司，生成附日期和网址的全景报告，涵盖融资、管理层、产品技术、市场位置、新闻及战略展望；用于投资、合作或销售评估，多公司监控和参会人准备使用对应技能。",
+      "source": "Use this skill ANY TIME the user asks about a specific company. Triggers:\n\"tell me about [company]\", \"research [company]\", \"what does [company] do\",\n\"who is [company]\", \"look up [company]\", \"company deep dive\", \"due diligence\non [company]\", \"background on [company]\", \"dig into [company]\", \"analyze\n[company]\", or evaluating a company for investment, partnership, or sales.\nMUST be used instead of answering from memory — fetches real-time web data\n(funding, leadership changes, product launches, news) your training data\nlacks. Use even for well-known companies.\n\nProduces a sourced 360° report covering funding, leadership, product/tech,\nmarket position, news, and strategic outlook with dates and URLs.\n\nDo NOT use for multi-company competitor monitoring (use competitor-intel)\nor meeting prep with attendees (use meeting-prep).",
+      "source_sha256": "18532db596741c86cd912437fc9fc493fe187d9112f227853cecf4ae8f584559",
+      "source_path": "skills/company-deep-dive/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a7b25cd01de39b00e045b96fc968471433f19a4d095f83874f722f8e50fbc01": {
+      "description_zh": "通过 Nimble API/CLI 搜索竞品新闻、产品发布、招聘和融资，并与先前发现比较突出新增变化，形成竞争情报简报；不用于单公司深度调查或会议参会人准备。",
+      "source": "Searches the live web via Nimble APIs to monitor competitors and produce a\nstructured intelligence briefing. Runs parallel searches for news, product\nlaunches, hiring signals, and funding — then compares against previous\nfindings to highlight only what's new.\n\nUse this skill when the user asks about competitors, competitive intelligence,\nor what rival companies are doing. Common triggers: \"what are my competitors\ndoing\", \"competitor update\", \"competitor news\", \"competitive landscape\",\n\"market intel\", \"what's new with [company]\", \"track [company]\", \"competitor\nbriefing\", \"who's making moves\", \"competitive analysis\", \"losing deals to\n[company]\", \"battlecard\". Also use before board meetings or strategy sessions\nwhen the user wants competitive context.\n\nRequires the Nimble CLI (nimble search, nimble extract) for live web data.\nDo NOT use for single-company deep dives (use company-deep-dive), meeting\nprep with attendees (use meeting-prep), or non-business queries.",
+      "source_sha256": "3a7b25cd01de39b00e045b96fc968471433f19a4d095f83874f722f8e50fbc01",
+      "source_path": "skills/competitor-intel/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "59abf3cbee05c0060f5c08ede4d7186665c2ab11e7470dfd998f4c8313b61a46": {
+      "description_zh": "抓取竞品首页、功能、定价及博客，提取信息表达、价值主张、行动号召和定价模型，与历史快照比较定位变化，生成信息矩阵、内容缺口、市场空白及竞争卡片素材。",
+      "source": "Tracks how competitors position themselves online — scrapes homepages,\nfeatures, pricing, and blogs to extract messaging, value props, CTAs, and\npricing models. Compares against previous snapshots to surface positioning\nshifts with before/after tracking. Produces messaging matrices, content gap\nanalysis, white space maps, and battlecard inputs.\n\nUse when anyone asks about competitor messaging, positioning, website copy,\ncontent strategy, or how competitors present themselves. Triggers: \"competitor\npositioning\", \"messaging comparison\", \"content gap\", \"what changed on their\nsite\", \"competitor homepage\", \"landing page teardown\", \"marketing battlecard\",\n\"how do they describe their product\", \"share of voice\", \"counter-messaging\".\n\nDo NOT use for business signals like funding/hiring (use competitor-intel),\nsingle-company deep dives (use company-deep-dive), or meeting prep (use\nmeeting-prep).",
+      "source_sha256": "59abf3cbee05c0060f5c08ede4d7186665c2ab11e7470dfd998f4c8313b61a46",
+      "source_path": "skills/competitor-positioning/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "64a511ad342afcbc34812b031c168bbe8abd348d3e8e39e95fcc7213fb06f6ea": {
+      "description_zh": "根据 CSV、Google Sheet 或粘贴的医疗从业者名单，搜索诊所网站补充电话、资历、专科、联系方式、教育、评论及监管信息，并通过 WSA 补充临床试验和认证；资质验证使用对应技能。",
+      "source": "Fills gaps in existing healthcare practitioner lists — adds missing phone numbers,\ncredentials, specialties, contact info, education, reviews, and regulatory data.\n\nTriggers: \"enrich my provider list\", \"fill in missing data\", \"add phone numbers\nto these doctors\", \"complete this practitioner database\", \"enrich CRM export\",\n\"fill gaps in my provider data\", \"supplement this healthcare list\".\n\nAccepts CSV, Google Sheet URL, or pasted data. Searches for each provider's\npractice website, extracts missing fields, and enriches with reviews, clinical\ntrials, and accreditation via WSAs.\n\nDo NOT use for extracting providers from practice URLs — use healthcare-providers-extract instead.\nDo NOT use for validating credentials — use healthcare-providers-verify instead.\nDo NOT use for discovering practices — use market-finder or local-places instead.\nDo NOT use for general extraction — use nimble-web-expert instead.",
+      "source_sha256": "64a511ad342afcbc34812b031c168bbe8abd348d3e8e39e95fcc7213fb06f6ea",
+      "source_path": "skills/healthcare-providers-enrich/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5dfb9db6d0ee8dbfdb6d8926760d697df7a7993c149aab4808136d5d5f6ecf87": {
+      "description_zh": "从医疗机构网站提取从业者姓名、资历、专科、联系方式和教育信息，支持单站或批量 URL，也可按专科及地点定位诊所；已有名单补全和资质核验使用对应技能。",
+      "source": "Extracts structured practitioner data from healthcare practice websites.\nReturns names, credentials, specialties, contact info, and education for\nevery provider on a practice's site.\n\nUse when user asks to extract, pull, or list doctors, providers, or staff\nfrom practice websites. Triggers: \"extract doctors from\", \"pull providers\nfrom\", \"who are the providers at\", \"build a provider database\", \"list all\ndoctors at\", \"scrape the team page\", \"get practitioner data from\".\n\nAccepts practice URLs (pasted, CSV, Google Sheet) or discovers practices\nvia Google Maps when given specialty + location. Single sites or 100+ URLs.\n\nDo NOT use for filling data gaps — use healthcare-providers-enrich instead.\nDo NOT use for credential validation — use healthcare-providers-verify instead.\nDo NOT use for discovering practices — use market-finder or local-places instead.\nDo NOT use for general extraction — use nimble-web-expert instead.",
+      "source_sha256": "5dfb9db6d0ee8dbfdb6d8926760d697df7a7993c149aab4808136d5d5f6ecf87",
+      "source_path": "skills/healthcare-providers-extract/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3d41432f8e41ebbef642712964a7cbd1457d95b37f4e68eb0f45351097c42ef": {
+      "description_zh": "按原说明，将医疗从业者名单与 NPI 注册资料交叉核对专科、资历、执照状态及地址，输出已验证、部分验证、未验证或需关注状态，附差异和来源网址；支持 CSV、Google Sheet 或粘贴数据。",
+      "source": "Validates practitioner credentials and license status against the NPI registry.\nCross-references specialties, credentials, and practice addresses against\nofficial records. Returns Verified / Partially Verified / Unverified / Flagged\nper practitioner with mismatch details and source URLs.\n\nTriggers: \"verify these doctors\", \"check provider credentials\", \"validate\nlicenses\", \"verify NPI numbers\", \"cross-check credentials against NPI\",\n\"compliance audit on providers\", \"are these practitioners still licensed\",\n\"validate my provider list\". Accepts CSV, Google Sheet URL, or pasted data.\n\nDo NOT use for extracting providers from practice URLs — use healthcare-providers-extract instead.\nDo NOT use for filling data gaps — use healthcare-providers-enrich instead.\nDo NOT use for discovering practices — use market-finder or local-places instead.\nDo NOT use for general extraction — use nimble-web-expert instead.",
+      "source_sha256": "b3d41432f8e41ebbef642712964a7cbd1457d95b37f4e68eb0f45351097c42ef",
+      "source_path": "skills/healthcare-providers-verify/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53e078eb79993a6843043fbcfe4e9a9bd51f811392c8b7c0536afcf2db0235fa": {
+      "description_zh": "围绕产品发布窗口监测媒体、社交、开发者社区及竞品渠道，按紧急程度分析情绪、错误描述和竞品反应，生成实时信号、误述跟踪、竞品面板及情绪变化看板；常态品牌或竞品监控使用对应技能。",
+      "source": "Monitors press, social, developer communities, and competitor channels from any point around\na product launch — tracking sentiment, flagging mischaracterizations, surfacing competitor\nresponses, and recommending actions in real time. Covers press, Reddit, LinkedIn,\nJavaScript-heavy pages, and live community forums, triaging every signal by urgency.\nDelivers a Response War Room dashboard with a live signal feed, mischaracterization tracker,\ncompetitor response panel, and sentiment velocity chart.\n\nUse when asked to \"monitor this launch\", \"track the launch\", \"what's being said about the\nlaunch\", \"flag any mischaracterizations\", \"competitor response to the launch\", \"post-launch\ncoverage\", \"check press coverage for the launch\", or \"what's the reaction to the\nannouncement\".\n\nDo NOT use for ongoing brand monitoring unrelated to a launch — use brand-mention-monitor\ninstead. Do NOT use for ongoing competitor intelligence unrelated to a specific launch\nwindow — use competitor-intel instead.",
+      "source_sha256": "53e078eb79993a6843043fbcfe4e9a9bd51f811392c8b7c0536afcf2db0235fa",
+      "source_path": "skills/launch-monitor/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72cc5ec7fbc5167126b6624f4bd08a21140f1ae1963ede31ec5aa3385957cb02": {
+      "description_zh": "利用 Nimble WSA 和网页数据发现社区本地商家，补充评论与社交信息，按置信度评分排序并生成交互地图；需已配置 Nimble CLI，不用于一般抓取、公司深度研究或竞品监控。",
+      "source": "Discovers, enriches, and scores local businesses in any neighborhood using\nNimble Web Search Agents (WSAs) and web data. Returns a structured, ranked\nlist with confidence scores, reviews, social presence, and an interactive map.\n\nUse this skill when the user asks about local businesses, places, or\nneighborhood discovery. Common triggers: \"find all coffee shops in\",\n\"map every bar in\", \"local businesses in\", \"discover gyms near\",\n\"what restaurants are in\", \"neighborhood guide for\", \"local places in\",\n\"find places near\", \"list all [business type] in [area]\", \"best [type]\nnear [location]\", \"build a neighborhood guide\", \"local place search\".\n\nRequires the Nimble CLI (nimble extract:templates run, nimble search, nimble extract)\nfor live web data via WSAs and fallback search.\nDo NOT use for competitor analysis or monitoring (use competitor-intel),\ncompany research or deep dives (use company-deep-dive), general web search\nor extraction (use nimble-web-expert).",
+      "source_sha256": "72cc5ec7fbc5167126b6624f4bd08a21140f1ae1963ede31ec5aa3385957cb02",
+      "source_path": "skills/local-places/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e28ccf54f1c466f0e13682edb3847c51ac00cd3ee8b69a9bce87e0dea4b24d96": {
+      "description_zh": "通过 Nimble WSA 按行业及地区发现企业，或把已有 CSV、Google Sheet、粘贴名单与新发现比较，区分匹配、仅新发现和仅参考名单项；支持医疗、SaaS、餐饮、法律及汽车家居预设，用于市场规模和客户全集分析。",
+      "source": "Discovers all businesses of a given type in any geography using Nimble\nWSAs. Two modes: Discovery finds businesses from scratch; Audit compares\na user's existing list (Google Sheet, CSV, inline) against fresh\ndiscovery, categorizing entries as matched, discovered-only, or\nreference-only. Vertical presets (Healthcare, SaaS, Restaurants, Legal,\nAuto/Home) auto-select WSA routing.\n\nTriggers: \"find all X in Y\", \"build a list of\", \"market sizing\",\n\"account universe\", \"how many X in Y\", \"TAM for\", \"discover all\",\n\"audit my list\", \"compare against\", \"what am I missing\", \"gap analysis\",\n\"verify my business list\", \"prospect list\".\n\nDo NOT use for competitor monitoring — use competitor-intel instead.\nDo NOT use for company deep dives — use company-deep-dive instead.\nDo NOT use for neighborhood-level exploration with social enrichment\n— use local-places instead.",
+      "source_sha256": "e28ccf54f1c466f0e13682edb3847c51ac00cd3ee8b69a9bce87e0dea4b24d96",
+      "source_path": "skills/market-finder/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d735f8d2d78a2ae2b18cf7e1a58435c45036ee0167b97810e5bdc3e1c81ddf0": {
+      "description_zh": "在会议前利用实时网页资料研究参会人及其公司，汇总职位、近期活动、公司背景和谈话要点，映射参会人关系；需要 Nimble CLI，不用于无参会人的公司深度调查或多公司监控。",
+      "source": "Researches meeting attendees and their companies before any meeting using\nreal-time web data. Surfaces roles, recent activity, company context, and\ntalking points — then maps cross-attendee relationships.\n\nUse this skill when the user asks to prepare for a meeting, research someone\nthey're meeting, or wants context on attendees. Common triggers: \"prepare me\nfor my meeting\", \"who am I meeting with\", \"research this person\", \"meeting\nprep\", \"brief me on [person]\", \"I have a meeting with [person/company]\",\n\"get me ready for my call\", \"what should I know about [person]\",\n\"background on [person] before our meeting\", \"attendee research\".\n\nRequires the Nimble CLI (nimble search, nimble extract) for live web data.\nDo NOT use for multi-company competitor monitoring (use competitor-intel)\nor single-company deep dives without attendees (use company-deep-dive).",
+      "source_sha256": "5d735f8d2d78a2ae2b18cf7e1a58435c45036ee0167b97810e5bdc3e1c81ddf0",
+      "source_path": "skills/meeting-prep/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3483a81beaae753e96d6a89c4214d1b53ec422b144db6239df1e820e17214890": {
+      "description_zh": "把实时网页数据端到端落入 Databricks，选择 Nimble 数据智能体、抓取到 Delta 表，并创建 AI/BI 看板或部署 Databricks App；适用于网页数据到表、看板、应用的产品或演示流程。",
+      "source": "Builds Databricks data products from live web data, end to end: discovers the right Nimble\nweb-data agents, scrapes into Delta tables, and produces an AI/BI dashboard and/or a deployed\nDatabricks App — a table → dashboard → app workflow, for production data products or quick demos.\nUse whenever a request pairs live or scraped web data WITH a Databricks destination — e.g. \"scrape\nAmazon/Walmart prices into a Delta table and build a dashboard\", \"load Zillow/Instagram/Maps/search\nresults into Databricks and build a dashboard or app\", \"showcase Nimble + Databricks to a prospect\".\nPrefer it over nimble-web-expert or competitor-intel when the data lands in Databricks. Do NOT use\nfor one-off web fetches or CSV exports with no Databricks destination — use nimble-web-expert\ninstead. Do NOT use for competitor or company research briefings — use competitor-intel or\ncompany-deep-dive instead. Do NOT use for generic Databricks work with no Nimble/web-data angle —\nuse the official databricks-* skills instead.",
+      "source_sha256": "3483a81beaae753e96d6a89c4214d1b53ec422b144db6239df1e820e17214890",
+      "source_path": "skills/nimble-databricks-data-products/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5492c894eb31dfe0e294dfe017da1f4278921e28adea1236b73b0017b2612f4f": {
+      "description_zh": "通过 Nimble 获取网页数据，读取 URL、抓取价格评论职位等内容、运行站点提取模板与 WSA、发现批量 URL、调用公开 REST/XHR、搜索研究和批量爬取；要求已安装认证的 CLI，原说明最低版本为 1.2.0。",
+      "source": "Get web data now — fast, incremental, immediately responsive to what the user needs.\nThe only way Claude can access live websites.\n\nUSE FOR:\n- Fetching any URL or reading any webpage\n- Scraping prices, listings, reviews, jobs, stats, docs from any site\n- Running Extraction Templates — reusable, site-specific structured scrapers\n- Running Web Search Agents — open-ended research, enrichment, and dataset building with citations\n- Discovering URLs on a site before bulk extraction\n- Calling public REST/XHR API endpoints\n- Web search and research (8 focus modes)\n- Bulk crawling website sections\n\nMust be pre-installed and authenticated. Run `nimble --version` to verify (>= 1.2.0).",
+      "source_sha256": "5492c894eb31dfe0e294dfe017da1f4278921e28adea1236b73b0017b2612f4f",
+      "source_path": "skills/nimble-web-expert/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1e79a06d5d7a9cdd8b0a081b46df6d0313c1098b9b4ff551ecfe33a0b71e7fc": {
+      "description_zh": "用 Nimble CLI 实时抓取网站及搜索结果开展 SEO 研究、排名跟踪、站点审计、内容缺口、竞品关键词、GitHub SEO 和五个平台的 AI 可见度审查；不臆造指标，竞品经营信号及营销定位使用对应技能。",
+      "source": "SEO intelligence toolkit covering the full lifecycle via live web data:\nkeyword research, rank tracking, site audits, content gap analysis,\ncompetitor keyword reverse-engineering, AI visibility across five platforms\n(ChatGPT, Perplexity, Google AI, Gemini, Grok), and GitHub repo SEO.\nCrawls real sites and SERPs via Nimble CLI — no fabricated metrics.\n\nTriggers: \"SEO\", \"keywords\", \"rank tracker\", \"site audit\", \"content gap\",\n\"competitor keywords\", \"AI visibility\", \"GitHub SEO\", \"SERP analysis\",\n\"keyword research\", \"technical SEO\", \"keyword difficulty\", \"topic\nclusters\", \"ranking delta\", \"on-page SEO\", \"AI citation audit\".\n\nDo NOT use for competitor business signals — use `competitor-intel`\ninstead. Do NOT use for competitor messaging — use\n`competitor-positioning` instead. Do NOT use for general web scraping\n— use `nimble-web-expert` instead.",
+      "source_sha256": "c1e79a06d5d7a9cdd8b0a081b46df6d0313c1098b9b4ff551ecfe33a0b71e7fc",
+      "source_path": "skills/seo-intel/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0afa35adbe9099ad2cc58508f3419865c95c55cbe2c46a00934429f64c1f4863": {
+      "description_zh": "依据职位描述、岗位名称或请求，通过 Nimble WSA 搜索 LinkedIn、Indeed、GitHub 等职业平台，生成带档案、技能和联系信号的候选人排序名单；不用于工资基准或单个已知人物调查。",
+      "source": "Finds qualified candidates for a role by searching LinkedIn, Indeed, GitHub,\nand other professional platforms using Nimble Web Search Agents. Accepts a\njob description, role title, or freeform request and returns a ranked\ncandidate list with profiles, skills, and contact signals.\n\nUse this skill when the user wants to find, source, or recruit candidates for\na role. Common triggers: \"find candidates for\", \"source engineers in\",\n\"who can I hire for\", \"find me a [role]\", \"recruiting for\", \"talent search\",\n\"find a [role] in [city]\", \"build a candidate list\", \"sourcing for [role]\",\n\"who's available for\", \"find potential hires\". Also triggers on a pasted job\ndescription followed by a sourcing request.\n\nDo NOT use for job market research or salary benchmarking — use\nmarket-finder instead. Do NOT use for researching a single known person\n— use company-deep-dive or meeting-prep instead.",
+      "source_sha256": "0afa35adbe9099ad2cc58508f3419865c95c55cbe2c46a00934429f64c1f4863",
+      "source_path": "skills/talent-sourcing/SKILL.md",
+      "package_sha256": "6bd7251d02a27bcac09d1a6adac237e0532a2f2be1527e3305a3939385f12154",
+      "source_package": "Nimble-1.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3238fdf6441c681ecf08eaa907a674351af69c9b279bf7aea31c2ca4a28d7f16": {
+      "description_zh": "查询 Nitrosend 账号、营销活动、自动化流程或消息的实时表现，分析打开率、投递和统计，并给出限定于证据的建议。",
+      "source": "Inspect Nitrosend account, campaign, flow, or message performance and turn live metrics into bounded recommendations. Use when: \"email analytics\", \"campaign performance\", \"how are my emails doing\", \"email insights\", \"check my stats\", \"open rate\", or \"deliverability report\".",
+      "source_sha256": "3238fdf6441c681ecf08eaa907a674351af69c9b279bf7aea31c2ca4a28d7f16",
+      "source_path": "skills/analytics/SKILL.md",
+      "package_sha256": "19e02e39c7fdd0dd4b4113204ce313c7846e46bbf38eeb4732f20a3c62d3c724",
+      "source_package": "Nitrosend-2.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3223f105fba67bf9a3ca9acf2a77be4ce624ff3b8890d6278a604db2af6ac68b": {
+      "description_zh": "搭建 Nitrosend 邮件或短信自动化，配置触发、步骤、等待、分支及 webhook，覆盖欢迎、弃购、购买后、召回、浏览放弃和自定义事件流程。",
+      "source": "Build email/SMS automation flows with triggers, steps, waits, splits, and webhooks. Covers welcome series, cart abandonment, post-purchase, win-back, browse abandonment, and custom event-driven flows. Use when: \"automation flow\", \"welcome series\", \"drip campaign\", \"cart abandonment flow\", \"win-back flow\", \"build flow\", or \"email sequence\".",
+      "source_sha256": "3223f105fba67bf9a3ca9acf2a77be4ce624ff3b8890d6278a604db2af6ac68b",
+      "source_path": "skills/build-flow/SKILL.md",
+      "package_sha256": "19e02e39c7fdd0dd4b4113204ce313c7846e46bbf38eeb4732f20a3c62d3c724",
+      "source_package": "Nitrosend-2.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc67bb6e68f9c69467dc04f24d5356125f28a7f40cbd76db2c3dfcffcf7fedcf": {
+      "description_zh": "用 Nitrosend 分区设计器创建编辑邮件模板，安排布局、内容和品牌样式，支持预览及测试发送。",
+      "source": "Create or edit email templates with Nitrosend's section-based designer. Guides through layout, content, and brand styling. Supports preview and test sends. Use when: \"compose email\", \"design template\", \"create email\", \"email template\", \"edit template\", or \"update email design\".",
+      "source_sha256": "dc67bb6e68f9c69467dc04f24d5356125f28a7f40cbd76db2c3dfcffcf7fedcf",
+      "source_path": "skills/compose-email/SKILL.md",
+      "package_sha256": "19e02e39c7fdd0dd4b4113204ce313c7846e46bbf38eeb4732f20a3c62d3c724",
+      "source_package": "Nitrosend-2.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b082ebc45d39726a9bef37020398ea73fe4c880480d2e48872a521a1e07d8d7": {
+      "description_zh": "应用长期有效的邮件营销原则指导策略、自动化、投递、文案、分群、衡量和平台评估；原说明要求不把静态基准、法律、功能或价格当成当前事实。",
+      "source": "Apply durable email-marketing principles without treating static benchmarks, laws, vendor features, or prices as current facts. Use for strategy, flows, deliverability, copy, segmentation, measurement, and platform evaluation.",
+      "source_sha256": "7b082ebc45d39726a9bef37020398ea73fe4c880480d2e48872a521a1e07d8d7",
+      "source_path": "skills/email-marketing-bible/SKILL.md",
+      "package_sha256": "19e02e39c7fdd0dd4b4113204ce313c7846e46bbf38eeb4732f20a3c62d3c724",
+      "source_package": "Nitrosend-2.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "021f83fffd9a04929f6da869e2768e0ce93f7cebf004c12b6edce3a37d86a8fd": {
+      "description_zh": "从内联记录或 CSV 导入 Nitrosend 联系人，处理邮件订阅同意、短信 TCPA 合规、名单分配和标签。",
+      "source": "Import contacts into Nitrosend from inline records or CSV. Handles email opt-in, SMS TCPA compliance, list assignment, and tagging. Use when: \"import contacts\", \"add subscribers\", \"upload contacts\", \"add to list\", \"bulk add contacts\", or \"import CSV\".",
+      "source_sha256": "021f83fffd9a04929f6da869e2768e0ce93f7cebf004c12b6edce3a37d86a8fd",
+      "source_path": "skills/import-contacts/SKILL.md",
+      "package_sha256": "19e02e39c7fdd0dd4b4113204ce313c7846e46bbf38eeb4732f20a3c62d3c724",
+      "source_package": "Nitrosend-2.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a487a519b9f94039dba4bc3f12a373ee8c7bf7267b5875bb7af395367dc1dce": {
+      "description_zh": "完整组织 Nitrosend 邮件或短信活动，依次创建、设计、选受众、预览、测试和批准，再发送或定时安排。",
+      "source": "End-to-end campaign workflow: create, design, target audience, preview, test, approve, and send or schedule an email or SMS campaign. Use when: \"send campaign\", \"email blast\", \"newsletter\", \"send to my list\", \"broadcast email\", or \"schedule campaign\".",
+      "source_sha256": "2a487a519b9f94039dba4bc3f12a373ee8c7bf7267b5875bb7af395367dc1dce",
+      "source_path": "skills/send-campaign/SKILL.md",
+      "package_sha256": "19e02e39c7fdd0dd4b4113204ce313c7846e46bbf38eeb4732f20a3c62d3c724",
+      "source_package": "Nitrosend-2.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22e8d7811625c5d0fefe2a657bc1e37f3f3a0f78e59223180fd85250a5af970d": {
+      "description_zh": "发送应用触发的单收件人事务邮件或短信，如收据、密码重置、OTP、订单确认、物流通知及系统提醒；原说明将其设为即时交付且无需营销活动审批的流程。",
+      "source": "Send transactional emails or SMS for app-triggered communications: receipts, password resets, OTPs, order confirmations, shipping notifications, system alerts. Single recipient, immediate delivery, no campaign or approval needed. Use when: \"transactional email\", \"receipt email\", \"password reset email\", \"send notification email\", \"order confirmation\", \"OTP email\", or \"system email\".",
+      "source_sha256": "22e8d7811625c5d0fefe2a657bc1e37f3f3a0f78e59223180fd85250a5af970d",
+      "source_path": "skills/send-transactional/SKILL.md",
+      "package_sha256": "19e02e39c7fdd0dd4b4113204ce313c7846e46bbf38eeb4732f20a3c62d3c724",
+      "source_package": "Nitrosend-2.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76eeec34c44392f64f623dc8e0b1ff0ec6a862279a8d7999f0a97431cbe84feb": {
+      "description_zh": "引导 Nitrosend 初始配置，包括远程 MCP、Brand Kit、品牌子域或客户域验证和默认发件人，并可配置每日、每周或每月主动分析报告。",
+      "source": "Guided Nitrosend onboarding. Walks through remote MCP connection, Brand Kit identity setup, brand-subdomain preparation or customer-domain verification, and sender defaults. Also offers to configure proactive analytics (daily/weekly/monthly reports). Use when: \"set up nitrosend\", \"configure email\", \"onboard\", \"get started with nitrosend\", or when nitro_get_status shows incomplete onboarding.",
+      "source_sha256": "76eeec34c44392f64f623dc8e0b1ff0ec6a862279a8d7999f0a97431cbe84feb",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "19e02e39c7fdd0dd4b4113204ce313c7846e46bbf38eeb4732f20a3c62d3c724",
+      "source_package": "Nitrosend-2.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63c35859467e628b7444b91d99797855ae27a3743bb7e393758c1d2a4a5651bf": {
+      "description_zh": "在新功能、组件或项目需求不完整或有歧义时，先澄清要求再设计或编码。",
+      "source": "Use when starting a new feature, component, or project whose requirements are underspecified or ambiguous — before designing or writing code",
+      "source_sha256": "63c35859467e628b7444b91d99797855ae27a3743bb7e393758c1d2a4a5651bf",
+      "source_path": "skills/clarifying-requirements/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d59f0957a21a7e193fe57c7ebcb11275b1261a10bc6f147ebb6a2de4ad560348": {
+      "description_zh": "为跨会话工作将计划保存到磁盘，从已保存计划恢复执行，或完成计划文件描述的修改。",
+      "source": "Use when planned work will outlive the current session — persisting a plan to disk, resuming work from an on-disk plan, or landing changes a plan file describes",
+      "source_sha256": "d59f0957a21a7e193fe57c7ebcb11275b1261a10bc6f147ebb6a2de4ad560348",
+      "source_path": "skills/durable-plans/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3519dee61ffaa24df36867c785de9643198b0ad34a39a680d657b5181a9f4e3d": {
+      "description_zh": "当同一问题反复尝试失败且没有新证据时，先升级处理，避免继续尝试上一修复的变体。",
+      "source": "Use when repeated attempts at the same problem keep failing without producing new evidence — before trying another variation of the last fix",
+      "source_sha256": "3519dee61ffaa24df36867c785de9643198b0ad34a39a680d657b5181a9f4e3d",
+      "source_path": "skills/escalate-dont-thrash/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb1f27056b3ece5edc24b139c4b25526dd361c44cffe5f33f48fc816937e8277": {
+      "description_zh": "在从模糊想法启动新项目或重要功能时先探索方案，尤其用户已有偏好路径时，在细化需求和规划前比较方向。",
+      "source": "Use when starting a new project or significant feature from a vague idea — before clarifying details or planning, especially when the user already has a preferred approach",
+      "source_sha256": "fb1f27056b3ece5edc24b139c4b25526dd361c44cffe5f33f48fc816937e8277",
+      "source_path": "skills/exploring-approaches/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8c640578bd9fab1df7bdf4e61642a214a67082c54a52a7db3e1e35a34c16bed5": {
+      "description_zh": "指导编写错误处理路径，包括 try/catch、回退值、默认参数和重试，使失败明确呈现。",
+      "source": "Use when writing error handling — try/catch blocks, fallback values, default parameters, retries, or any code path that handles failure",
+      "source_sha256": "8c640578bd9fab1df7bdf4e61642a214a67082c54a52a7db3e1e35a34c16bed5",
+      "source_path": "skills/fail-loud/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05e3dbd5c98c5446c0ad466ad525cc55692689f1b92ad13856fb628287b22bb3": {
+      "description_zh": "在性能改进或优化疑似慢代码前先测量实际表现。",
+      "source": "Use when asked to improve performance, or when about to optimize code believed to be slow",
+      "source_sha256": "05e3dbd5c98c5446c0ad466ad525cc55692689f1b92ad13856fb628287b22bb3",
+      "source_path": "skills/measure-before-optimizing/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42f03ea312bfd1435290453543e08d077b6761d14bc6cc5afa63aefabf9f6577": {
+      "description_zh": "在实施代码评审建议或技术纠正前，先理解并评估收到的反馈。",
+      "source": "Use when receiving code review comments, reviewer suggestions, or technical corrections — before implementing any of them",
+      "source_sha256": "42f03ea312bfd1435290453543e08d077b6761d14bc6cc5afa63aefabf9f6577",
+      "source_path": "skills/receiving-feedback/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abf4ebcacaed48ce53406c4c6969204b349246db126c80a0f5497aa9c1810e59": {
+      "description_zh": "遇到缺陷、测试失败、回归、不稳定测试或异常行为时，先调查根因再提出或应用修复。",
+      "source": "Use when encountering a bug, test failure, regression, flaky test, or unexpected behavior — before proposing or applying any fix",
+      "source_sha256": "abf4ebcacaed48ce53406c4c6969204b349246db126c80a0f5497aa9c1810e59",
+      "source_path": "skills/root-cause-debugging/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4a085189938e9a01dff3ef60126f3eb8d106ba37f104ff91eb6a5ad167c95126": {
+      "description_zh": "在重组、重命名、移动或提取正常工作的代码前，采用安全重构流程。",
+      "source": "Use when restructuring, renaming, moving, or extracting code that already works — before making the first edit",
+      "source_sha256": "4a085189938e9a01dff3ef60126f3eb8d106ba37f104ff91eb6a5ad167c95126",
+      "source_path": "skills/safe-refactoring/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ee595307a5b46a4d456a42b00c6315cebf83ba732d855ef34f2dc3e14d6c26b": {
+      "description_zh": "为有真实数据的系统编写数据库 schema 迁移，检查表、列、索引和约束变更的安全性。",
+      "source": "Use when writing database schema migrations or changing tables, columns, indexes, or constraints on a system with real data",
+      "source_sha256": "1ee595307a5b46a4d456a42b00c6315cebf83ba732d855ef34f2dc3e14d6c26b",
+      "source_path": "skills/schema-migration-safety/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e114916e9ad2f8b3283030110166127082821035c875829f1a5278b22aca457e": {
+      "description_zh": "在既有代码库中修复缺陷、添加小功能或修改代码时，控制改动范围。",
+      "source": "Use when editing existing code — bug fixes, small features, or any change inside a codebase you didn't just write",
+      "source_sha256": "e114916e9ad2f8b3283030110166127082821035c875829f1a5278b22aca457e",
+      "source_path": "skills/surgical-changes/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63dbf0a6a52a0513f73f2a761984be23a2112842768137136740d64e4b1ed446": {
+      "description_zh": "在声称完成、修复或测试通过前做验证，适用于提交、开 PR、标记任务完成及转述子智能体成功报告之前。",
+      "source": "Use when about to claim work is complete, fixed, or passing — before committing, opening a PR, marking a task done, or relaying a subagent's success report",
+      "source_sha256": "63dbf0a6a52a0513f73f2a761984be23a2112842768137136740d64e4b1ed446",
+      "source_path": "skills/verify-before-done/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e469433498c155b2f778139c962bfd40091e562c88947f296c84157b55b9d010": {
+      "description_zh": "指导编写修改有意义的测试，审视 mock 使用和向生产代码添加仅测试方法的做法。",
+      "source": "Use when writing or modifying tests, adding mocks, or tempted to add test-only methods to production code",
+      "source_sha256": "e469433498c155b2f778139c962bfd40091e562c88947f296c84157b55b9d010",
+      "source_path": "skills/writing-meaningful-tests/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5e122b221ec38ff046a0bc10b51955958f461e00493658f3af5300fcc3863c0": {
+      "description_zh": "在实施前设计多步骤功能、重构或规格，并形成可靠执行计划。",
+      "source": "Use when designing or planning a multi-step feature, refactor, or spec before implementation begins",
+      "source_sha256": "e5e122b221ec38ff046a0bc10b51955958f461e00493658f3af5300fcc3863c0",
+      "source_path": "skills/writing-solid-plans/SKILL.md",
+      "package_sha256": "0ba29d6c40cc8dbbedec429f7555d1b98e96d327bc622e99ea40e90b378ad354",
+      "source_package": "no-cape-2.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f050fa44cd4e87659f8199ddb205e5df9ce19b030a1ae26e02c19a02ab35cea": {
+      "description_zh": "结合自动扫描及 Noibu 流量数据审计网站 WCAG 2.1 AA 无障碍问题，检查对比度、标题和屏幕阅读器支持，生成报告，并可起草修复 PR 或工单。",
+      "source": "Audit a website for WCAG 2.1 AA accessibility violations using automated scanning and Noibu traffic data, and optionally draft the fixes. Use when you want to know what's inaccessible across the store, check WCAG or ADA compliance, find contrast or heading errors, audit for screen reader support, generate an accessibility report, or fix accessibility violations with pull requests or tickets.",
+      "source_sha256": "5f050fa44cd4e87659f8199ddb205e5df9ce19b030a1ae26e02c19a02ab35cea",
+      "source_path": "skills/accessibility-audit/SKILL.md",
+      "package_sha256": "8781d233f7cc50dd2729c9d594409bb7099e8ae7c7f0d9ee8a232faca0fd6ada",
+      "source_package": "Noibu-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ad83dbd7f6cffa762df7151172fc605b79db6aad3dd1e59fba2eaefec7d576e": {
+      "description_zh": "通过企业网页研究和用户访谈建立 CLAUDE.md/context.md 业务上下文，记录目标、收入损失、部署流程和团队信息，并保存到 Noibu 对应域名后端，帮助技能依据真实业务推理。",
+      "source": "Builds a rich business-context Markdown file (a CLAUDE.md / context.md) so Noibu skills and Claude stop hallucinating and reason with real context about the business. Use this skill whenever someone wants to create, set up, or improve their business context file, onboard a new store to Noibu, 'build my MD file', 'make a context file', 'set up my CLAUDE.md', capture company background for the AI, or asks why Claude keeps getting their business wrong. Also trigger on looser phrasings like 'help Claude understand my business', 'document my store for the AI', 'what should I tell Claude about my company', or when a user is starting with Noibu and has no context file yet. Even if the user just says 'build the MD file' or 'set up context', use this skill. It does deep web research on the business (always via a subagent), interviews the user about goals, money leaks, deployment process, and team setup, writes a clean Markdown file, then persists the context to the Noibu backend for the domain.",
+      "source_sha256": "4ad83dbd7f6cffa762df7151172fc605b79db6aad3dd1e59fba2eaefec7d576e",
+      "source_path": "skills/build-business-context/SKILL.md",
+      "package_sha256": "8781d233f7cc50dd2729c9d594409bb7099e8ae7c7f0d9ee8a232faca0fd6ada",
+      "source_package": "Noibu-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a1d12b213b4d0554bc44efdcc8f2267b89f524712a2cbdb6e18766c002bee455": {
+      "description_zh": "利用 Noibu 分析结账漏斗流失、支付及配送方式、低完成率、关键错误以及购物车和订单价值表现。",
+      "source": "Analyze checkout performance and health using Noibu data. Use when you want to know where shoppers drop off in the checkout funnel, what payment or delivery methods customers are using, why completion rates are low, what priority errors are hurting checkout, or how cart and order values benchmark.",
+      "source_sha256": "a1d12b213b4d0554bc44efdcc8f2267b89f524712a2cbdb6e18766c002bee455",
+      "source_path": "skills/checkout-analysis/SKILL.md",
+      "package_sha256": "8781d233f7cc50dd2729c9d594409bb7099e8ae7c7f0d9ee8a232faca0fd6ada",
+      "source_package": "Noibu-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ba1c62e790652810b97e36e45e9077b6326893911b646e7606b032beb260c23": {
+      "description_zh": "利用 Noibu 分析商品与集合表现，识别畅销品类、低转化商品、有浏览无销量和产品漏斗流失。",
+      "source": "Analyze product and collection performance using Noibu data. Use when you want to know which products are underperforming, what your best-selling product type is, why a product isn't converting, how your collections are performing, which products get views but no sales, or where shoppers drop off in the product funnel.",
+      "source_sha256": "1ba1c62e790652810b97e36e45e9077b6326893911b646e7606b032beb260c23",
+      "source_path": "skills/product-analysis/SKILL.md",
+      "package_sha256": "8781d233f7cc50dd2729c9d594409bb7099e8ae7c7f0d9ee8a232faca0fd6ada",
+      "source_package": "Noibu-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ccb224d70220d13edb31d5cbb64013aaf3d4144c8528caf74b04cd0bd0c1489": {
+      "description_zh": "作为调用 noibu_* 工具的配套参考，说明字段指标语义、orderBy、行数上限、唯一指标约束、rationale 参数及域名解析，并解析 console.noibu.com 链接；与主题技能共同使用。",
+      "source": "Required reference for calling `noibu_*` tools — field and measure semantics,   query constraints (the `orderBy` requirement, row caps,   unique-measure rule), the `rationale` argument convention, and domain   resolution. Also covers parsing of pasted `console.noibu.com` URLs.   Loads alongside topical Noibu skills   (e.g., `checkout-analysis`, `tech-diagnosis`), not instead of them — they   own routing for their respective domains.",
+      "source_sha256": "8ccb224d70220d13edb31d5cbb64013aaf3d4144c8528caf74b04cd0bd0c1489",
+      "source_path": "skills/querying-noibu-data/SKILL.md",
+      "package_sha256": "8781d233f7cc50dd2729c9d594409bb7099e8ae7c7f0d9ee8a232faca0fd6ada",
+      "source_package": "Noibu-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7bba6ac730847c154028a8dbbf8c6cfa2e894701fb83701b085f5295a0a9e3a8": {
+      "description_zh": "利用 Noibu 比较渠道、设备、国家和客户分群的流量与转化表现，分析移动端与桌面差异及最好最差客群。",
+      "source": "Analyze segment and traffic performance using Noibu data. Use when you want to know which channels, devices, or countries convert best, how mobile compares to desktop, where your traffic is coming from, which segments are underperforming, or where to find your best and worst converting customer segments.",
+      "source_sha256": "7bba6ac730847c154028a8dbbf8c6cfa2e894701fb83701b085f5295a0a9e3a8",
+      "source_path": "skills/segment-analysis/SKILL.md",
+      "package_sha256": "8781d233f7cc50dd2729c9d594409bb7099e8ae7c7f0d9ee8a232faca0fd6ada",
+      "source_package": "Noibu-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "184ff7452b7e46c9179948aa3dfe3ea2c5f5a8770cc3cda14ca6335d77916a29": {
+      "description_zh": "快速概览店铺过去 24 小时健康状态，可保存为实时 Cowork 看板或安排周期摘要。",
+      "source": "An instant, at-a-glance read on your store's health from the last 24 hours — with the option to save it as a live Cowork dashboard artifact or schedule a recurring report. Use to check on how the overall store is doing, save a live dashboard, or schedule a recurring summary.",
+      "source_sha256": "184ff7452b7e46c9179948aa3dfe3ea2c5f5a8770cc3cda14ca6335d77916a29",
+      "source_path": "skills/store-pulse/SKILL.md",
+      "package_sha256": "8781d233f7cc50dd2729c9d594409bb7099e8ae7c7f0d9ee8a232faca0fd6ada",
+      "source_package": "Noibu-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b73ffebf039c1a01fcf720bf86325046a36740f8ea254954b24d576a90f3233": {
+      "description_zh": "利用 Noibu 诊断技术故障和 Core Web Vitals 性能问题，定位错误原因、集中位置、错误率峰值及页面性能根因，并建议修复。",
+      "source": "Diagnose technical issues and Core Web Vital performance problems using Noibu data, and recommend a fix. Use when you want to know what's broken across the store, why an error is happening, what's causing errors, the root cause of poor page performance, how to fix a technical issue, why an error rate spiked, or where errors are concentrated.",
+      "source_sha256": "3b73ffebf039c1a01fcf720bf86325046a36740f8ea254954b24d576a90f3233",
+      "source_path": "skills/tech-diagnosis/SKILL.md",
+      "package_sha256": "8781d233f7cc50dd2729c9d594409bb7099e8ae7c7f0d9ee8a232faca0fd6ada",
+      "source_package": "Noibu-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d88d185d6dd36d7cc11b97c88a5ad346db88e7181eb854c9c5cf9ff794d8af08": {
+      "description_zh": "提供 NORMA 的欧盟合规方法及 32 个模板，覆盖 AI Act、ISO 42001/27001/22301/27701、NIS2、DORA、CRA 等八类框架及 GDPR 相关映射，用于差距、控制、政策、风险、符合性、AI 分类、连续性、隐私及漏洞披露评估。",
+      "source": "EU compliance methodology and templates. Use this skill when the user asks about EU AI Act, ISO 42001 (AIMS), ISO 27001 (ISMS), ISO 22301 (BCMS), ISO 27701 (PIMS), NIS2 Directive, DORA, CRA (Cyber Resilience Act), GDPR-adjacent topics, or any combination — gap analysis, control mapping, policy/procedure drafting, risk assessment, conformity assessment, AI risk classification, third-party assessment, business continuity, privacy impact assessment, incident response, vulnerability disclosure, SBOM, or generic \"compliance\" requests with no specific framework named. Also use for cross-framework mapping (NIST AI RMF, ENISA, GDPR Art. 30 RoPA), high-risk AI Annex III classification, Statement of Applicability authoring, or template selection across the 8 supported frameworks. Provides 32 curated templates and 8 framework methodologies adapted from the NORMA corpus by Kynosure.",
+      "source_sha256": "d88d185d6dd36d7cc11b97c88a5ad346db88e7181eb854c9c5cf9ff794d8af08",
+      "source_path": "skills/norma/SKILL.md",
+      "package_sha256": "8aacb9411b1ae0dddd7a82b9d02bf9bb29245095647d6df9c10b86792af61e03",
+      "source_package": "norma-claude-skill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df9fa5f4e48955ceef803331167c1746d0b492013dc5a43dc4295839c0ac98ee": {
+      "description_zh": "只读查询 Notifly 活动记录，检查邮件、短信、推送、聊天和应用内通知是否及如何送达订阅者，排查缺失通知；不发送消息。",
+      "source": "Finds out whether and how a Notifly notification reached a subscriber across email, SMS, push, chat, and in-app channels, from the activity feed. Use when the user asks 'did the welcome email go out to dana@example.com', 'why didn't this subscriber get the reset email', 'what was this user sent recently', 'did the SMS deliver', 'check notification delivery', or wants to debug a missing notification. Read-only; never sends.",
+      "source_sha256": "df9fa5f4e48955ceef803331167c1746d0b492013dc5a43dc4295839c0ac98ee",
+      "source_path": "skills/checking-notification-delivery/SKILL.md",
+      "package_sha256": "4781f02f424353176e5f439e91531392451e40195344eecd18041b7b53e575a7",
+      "source_package": "Notifly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ea1b1a34b20ba2f23115d265866b9189dcd00e00007a172f90074157839441f3": {
+      "description_zh": "只读审阅 Notifly 环境的通知工作流、步骤、渠道、主题和近期投递活动，提供配置概览；不发送消息。",
+      "source": "Reviews a Notifly environment's notification setup: workflows with their steps and channels, topics, and recent delivery activity. Use when the user asks 'which workflows do we have and on which channels', 'what does this workflow do', 'what topics exist', 'audit our notification setup', 'which workflows send SMS', or wants an overview of their notification workflows. Read-only; never sends.",
+      "source_sha256": "ea1b1a34b20ba2f23115d265866b9189dcd00e00007a172f90074157839441f3",
+      "source_path": "skills/reviewing-notification-workflows/SKILL.md",
+      "package_sha256": "4781f02f424353176e5f439e91531392451e40195344eecd18041b7b53e575a7",
+      "source_package": "Notifly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "36d01eba7f149409ad0f7aabc518e7bc14d4904f4579cff07ba6b840f2744a58": {
+      "description_zh": "按两步确认流程向 Notifly 订阅者或主题触发真实通知，仅在用户确认具体预览后发送，并在活动记录验证。",
+      "source": "Sends a Notifly workflow to a subscriber or topic through the two-step confirmation contract and verifies it in the activity feed. Use when the user asks to 'send the order-confirmation workflow to subscriber wc-1020', 'trigger a notification', 'fire the welcome email', 'send a push notification', 'notify this user', or 'send this to a topic'. The notification is real and goes out only after the user confirms the exact preview.",
+      "source_sha256": "36d01eba7f149409ad0f7aabc518e7bc14d4904f4579cff07ba6b840f2744a58",
+      "source_path": "skills/sending-notifications/SKILL.md",
+      "package_sha256": "4781f02f424353176e5f439e91531392451e40195344eecd18041b7b53e575a7",
+      "source_package": "Notifly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69adca6b21dfbe780d78e00d093696c65c6c0b1ab1bb4461065199a7f8b37d94": {
+      "description_zh": "把 Notifly MCP 连接 Claude 并用一次只读调用验证，说明不同 Claude 环境的连接、登录同意与工具缺失恢复步骤。",
+      "source": "Connects the Notifly MCP server to Claude and verifies it with one read-only call: where to connect in claude.ai, Claude Desktop, Cowork, or Claude Code, what the Notifly sign-in and consent screen asks, and how to recover when a tool is missing. Use when the user asks to 'set up Notifly', 'connect Notifly to Claude', 'install the Notifly connector', 'sign in to Notifly', 'why can't Claude see my Notifly data', 'Notifly tools are missing', or reports 'Tool not found' for a Notifly tool.",
+      "source_sha256": "69adca6b21dfbe780d78e00d093696c65c6c0b1ab1bb4461065199a7f8b37d94",
+      "source_path": "skills/setup-notifly/SKILL.md",
+      "package_sha256": "4781f02f424353176e5f439e91531392451e40195344eecd18041b7b53e575a7",
+      "source_package": "Notifly-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a37a035eb4d08a57fc86285145e6da7a04f97fc0824d07f98a32740f4d1be0c": {
+      "description_zh": "检查 notify 桌面通知配置，确认 terminal-notifier/notify-send、notify.sh、settings.json hooks 和 notify-config.json 是否存在并可用。",
+      "source": "Health check for notify — verifies terminal-notifier/notify-send installed, notify.sh script exists, hook entries in settings.json, and notify-config.json. Use when user asks whether notifications are working, wants to verify notify setup, or mentions missing notifications.",
+      "source_sha256": "1a37a035eb4d08a57fc86285145e6da7a04f97fc0824d07f98a32740f4d1be0c",
+      "source_path": "skills/check/SKILL.md",
+      "package_sha256": "113ec0c399b4980218f4c1970160f5a46ac9321c303e8c54a35eae6d2afb3617",
+      "source_package": "notify-2.0.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "241920be2404d2a433169c4a34ea472772e7fa17e2b36c96836ff8fc847e3931": {
+      "description_zh": "仅在用户明确运行 notify:setup 时，一次性安装配置跨平台桌面通知，连接 Stop、Notification 和 SubagentStop hooks。",
+      "source": "Use only when the user explicitly invokes /notify:setup — one-time setup of cross-platform desktop notifications (installs the notifier, wires the Stop/Notification/SubagentStop hooks). User-invoked only.",
+      "source_sha256": "241920be2404d2a433169c4a34ea472772e7fa17e2b36c96836ff8fc847e3931",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "113ec0c399b4980218f4c1970160f5a46ac9321c303e8c54a35eae6d2afb3617",
+      "source_package": "notify-2.0.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02325f92fb4e2d4983df152fc702c537c63085588aabffd05204c25b115c172a": {
+      "description_zh": "仅在用户明确运行 notify:uninstall 时，移除 notify hooks 与配置，保留其他设置。",
+      "source": "Use only when the user explicitly invokes /notify:uninstall — removes notify's hooks and config while leaving other settings intact. User-invoked only.",
+      "source_sha256": "02325f92fb4e2d4983df152fc702c537c63085588aabffd05204c25b115c172a",
+      "source_path": "skills/uninstall/SKILL.md",
+      "package_sha256": "113ec0c399b4980218f4c1970160f5a46ac9321c303e8c54a35eae6d2afb3617",
+      "source_package": "notify-2.0.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a74212fc689c2662b9a37537abe186f1af2e0630af8db8fdc7d9f6c4de58d1e": {
+      "description_zh": "通过交互问答设置通知声音、时长、匹配正则及事件开关；作为 notify setup 内部模块，不是用户直接调用入口。",
+      "source": "Interactive Q&A for customizing notification preferences (sounds, durations, matcher regex, per-event toggles). Internal building block invoked by the notify setup skill — not user-invocable.",
+      "source_sha256": "0a74212fc689c2662b9a37537abe186f1af2e0630af8db8fdc7d9f6c4de58d1e",
+      "source_path": "skills/wizard/SKILL.md",
+      "package_sha256": "113ec0c399b4980218f4c1970160f5a46ac9321c303e8c54a35eae6d2afb3617",
+      "source_package": "notify-2.0.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8269d8c1aa90fc4e852b35d38bc96867b73edb7ce171f3dd9ba55dc6fb1aa9d5": {
+      "description_zh": "发布 notion-markdown-sync 插件，分析改动、起草更新记录、升级版本、提交、打标签、推送并创建 GitHub release。",
+      "source": "Release workflow for the notion-markdown-sync plugin. Analyzes changes, drafts changelog entry, bumps version, commits, tags, pushes, and creates a GitHub release. Use when the user says \"ship\", \"release\", or \"cut a release\".",
+      "source_sha256": "8269d8c1aa90fc4e852b35d38bc96867b73edb7ce171f3dd9ba55dc6fb1aa9d5",
+      "source_path": ".claude/skills/ship/SKILL.md",
+      "package_sha256": "06d044533cad714564ebc6cf61ffa12946035c6bd9cddefcdb0a91f63f63ce8a",
+      "source_package": "Notion Markdown Sync-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc242cfc25fa17cb68fb7f02c4ccd28321b09001603faa868d6e42d35a9af691": {
+      "description_zh": "通过原说明中的 Notion Markdown API v2026-03-11 双向同步本地 Markdown 与 Notion 页面，处理冲突、增强格式、同步状态、批量上传、frontmatter 元数据和数据库属性及过期文件 URL；不用于从零写 SDK、配置集成或重组工作区。",
+      "source": "Two-way sync between local markdown files and Notion pages using the Notion Markdown API (v2026-03-11). Use this skill whenever the user wants to: push/upload a local markdown file to create or update a Notion page, pull/download a Notion page to a local markdown file, sync content between local files and Notion (including conflict detection), validate that a markdown file is compatible with Notion's enhanced markdown format (callouts, toggles, tables, colors, etc.), check sync status of tracked files, read/fetch a Notion page's content, batch push multiple markdown files to Notion, fix Notion markdown formatting issues (e.g. converting GitHub-flavored syntax to Notion format), or deal with expired pre-signed file URLs from pulled pages. This skill knows the exact Notion enhanced markdown syntax for all block types and handles YAML frontmatter with sync metadata and database page properties. Do NOT use for: writing Notion SDK/API scripts from scratch, setting up Notion integrations, designing database schemas, Notion workspace reorganization, converting markdown to non-Notion formats, or syncing with non-Notion services (Obsidian, Confluence, etc.).",
+      "source_sha256": "bc242cfc25fa17cb68fb7f02c4ccd28321b09001603faa868d6e42d35a9af691",
+      "source_path": "skills/notion-markdown-sync/SKILL.md",
+      "package_sha256": "06d044533cad714564ebc6cf61ffa12946035c6bd9cddefcdb0a91f63f63ce8a",
+      "source_package": "Notion Markdown Sync-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c966f928c9b5e7af5765c668f17c0cee2c24e3c6a44b39a7a6d8430b414f70f3": {
+      "description_zh": "在技术、软件或 AI/ML 实现交付前审视问题、想法、方案、代码或仓库，评分检查正确性、完整性、扩展、安全和可维护性，并参考真实事故复盘。",
+      "source": "Use when someone presents a technical, software, or AI/ML implementation — whether a problem, idea, approach, code snippet, or full repository — and needs it challenged before shipping. Forces correctness, completeness, scalability, security, and maintainability review with scored ratings and real-world postmortem evidence.",
+      "source_sha256": "c966f928c9b5e7af5765c668f17c0cee2c24e3c6a44b39a7a6d8430b414f70f3",
+      "source_path": "skills/challenging-implementations/SKILL.md",
+      "package_sha256": "ee4bed70bc999da4b32119072b24976144151f61dd954b2bf6b38db220023989",
+      "source_package": "nova-thesis-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d1851bdca0d064ff7ce3a880cad3eec3a1fe600d6c4fbf2831ec940d2ed0aa3": {
+      "description_zh": "独立生成网络小说基础设计文档，定义作品概念、世界观、类型、平台策略和卖点；用于只需梗概或基础设定，需角色情节整合时使用 design。",
+      "source": "웹소설의 부트스트랩 문서를 단독으로 생성한다. 작품 컨셉, 세계관, 장르 설정, 플랫폼 전략, 셀링포인트를 정의하는 기초 설계 문서. 부트스트랩만 필요할 때(시놉시스 작성, 세계관 설정, 작품 컨셉 수립) 이 스킬을 사용할 것. 캐릭터/플롯과 함께 통합 설계가 필요하면 design을 사용하라.",
+      "source_sha256": "5d1851bdca0d064ff7ce3a880cad3eec3a1fe600d6c4fbf2831ec940d2ed0aa3",
+      "source_path": "skills/bootstrap/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26ce96ff7b2a00d169bc87d8bc7405a7cb5a2fe30cfec5bcd1c6f21c8b44d977": {
+      "description_zh": "独立生成网络小说人物设定，设计全书人物档案、关系网及成长弧线，并细化每 25 章的人物变化；与基础设定和情节整合时使用 design。",
+      "source": "웹소설의 캐릭터 시트를 단독으로 생성한다. 전체 소설 캐릭터 프로필/관계망/성장 아크(큰 설계)와 25화 단위 세부 캐릭터 변화(작은 설계)를 수행. 캐릭터만 단독으로 필요할 때(인물 시트, 관계도, 성장 곡선, 적대자 설계) 이 스킬을 사용할 것. 부트스트랩/플롯과 함께 통합 설계가 필요하면 design을 사용하라.",
+      "source_sha256": "26ce96ff7b2a00d169bc87d8bc7405a7cb5a2fe30cfec5bcd1c6f21c8b44d977",
+      "source_path": "skills/character/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e93dee1cf206914582f65677032cb2032d5dc4f36364bf0bdcd85fcfc28bef6e": {
+      "description_zh": "依据人物、情节和基础设定文档顺序创作网络小说章节，支持项目、指定章节及章节范围，按 novel-config.md 映射与约束检查人物、数值、吸引点和情节合理性。",
+      "source": "웹소설 에피소드 창작 오케스트레이터. 설정문서(캐릭터시트·플롯가이드·부트스트랩)에 따라 에피소드를 순차 창작한다. '/create', '/create {프로젝트명}', '/create EP051', '/create {프로젝트명} EP001-EP010', '에피소드 창작', '에피소드 집필', '에피소드 작성', '새 에피소드', '본문 작성', '에피소드 쓰기' 으로 실행. novel-config.md의 설정문서 매핑과 가드레일을 적용하여 캐릭터 입체성, 수치 일관성, 훅 강도, 개연성을 보장한다.",
+      "source_sha256": "e93dee1cf206914582f65677032cb2032d5dc4f36364bf0bdcd85fcfc28bef6e",
+      "source_path": "skills/create/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "238e2012a176e8f6d7b7c985f72ecdcee5afec02669e48ce5784816615dde6a7": {
+      "description_zh": "统筹网络小说全书层面的整体设计，研究专业领域资料后生成基础设定、人物表和情节吸引点指南；整体加局部设计使用 design，局部或单项需求使用对应技能。",
+      "source": "웹소설의 큰 설계(전체 소설)를 수행하는 오케스트레이터. 부트스트랩+캐릭터 시트+플롯 훅 가이드를 생성한다. 자동 리서치(domain-researcher 서브에이전트)로 전문 분야 자료를 수집한 후 설계를 진행한다. '큰 설계', '전체 소설 설계', '소설 설계', '부트스트랩부터 캐릭터 플롯까지' 요청에 이 스킬을 사용할 것. 통합 설계(큰+작은 둘 다)나 모호한 요청은 design 라우터를, 작은 설계만 필요하면 design-small을, 단일 영역만 필요하면 bootstrap/character/plot-hook을 사용하라.",
+      "source_sha256": "238e2012a176e8f6d7b7c985f72ecdcee5afec02669e48ce5784816615dde6a7",
+      "source_path": "skills/design-big/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5660edac2b1fde91bfdc13cbcbf21266081d68371c33ba5d357256f039db14ac": {
+      "description_zh": "在已有全书基础设定、人物表和情节指南的前提下，以每 25 章为单位细化网络小说人物和情节吸引点，先研究相关故事弧资料；用于局部章节设计，全书或整合需求使用对应技能。",
+      "source": "웹소설의 작은 설계(25화 단위 세부 설계)를 수행하는 오케스트레이터. 세부 캐릭터 시트 + 세부 플롯 훅 가이드를 생성한다. 큰 설계 문서(부트스트랩, 캐릭터 시트, 플롯 훅 가이드)가 전제 조건. 자동 리서치(domain-researcher 서브에이전트)로 해당 아크의 세부 자료를 수집한 후 설계를 진행한다. '작은 설계', '세부 설계', '25화 설계', 'N~M화 설계', '에피소드별 플롯', '회차별 훅' 요청에 이 스킬을 사용할 것. 큰 설계(전체 소설)가 필요하면 design-big을, 통합 설계나 모호한 요청은 design 라우터를, 단일 영역만 필요하면 bootstrap/character/plot-hook을 사용하라.",
+      "source_sha256": "5660edac2b1fde91bfdc13cbcbf21266081d68371c33ba5d357256f039db14ac",
+      "source_path": "skills/design-small/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2c5923c260d7bb1fb5506d91e7d54e1481bdb08d6e402746e82821732f8eda6": {
+      "description_zh": "路由网络小说整合设计，协调全书和局部设计，或澄清范围模糊的策划请求；单项设计使用对应技能，尚无概念的新小说想法转入 propose。",
+      "source": "웹소설의 통합 설계 라우터. 큰 설계와 작은 설계를 '둘 다' 수행하거나, 사용자의 모호한 설계/제안 요청을 적절한 스킬로 안내한다. '통합 설계', '큰 설계와 작은 설계 둘 다', '웹소설 기획 부탁해', '소설 설계' 등 범위가 불분명한 요청에 이 스킬을 사용할 것. 큰 설계만 명확히 요청하면 design-big을, 작은 설계만 명확히 요청하면 design-small을 직접 사용하라. 단일 영역만 필요하면 bootstrap/character/plot-hook을 직접 사용하라. '새 소설', '소설 제안', '아이디어' 등 아직 컨셉이 없는 요청은 propose로 안내하라.",
+      "source_sha256": "d2c5923c260d7bb1fb5506d91e7d54e1481bdb08d6e402746e82821732f8eda6",
+      "source_path": "skills/design/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61d4263e9ec0e7ba80cdea52b1db5bcc9cfeb450d3e1ceda387898bfaef9389b": {
+      "description_zh": "独立生成网络小说情节与吸引点指南，设计全书叙事弧、情绪释放节奏和付费转化策略，以及每 25 章的情节和逐章吸引点；需结合人物基础设定时使用 design。",
+      "source": "웹소설의 플롯 구조와 훅 가이드를 단독으로 생성한다. 전체 서사 아크/카타르시스 리듬/유료 전환 전략(큰 설계)과 25화 세부 플롯/회차별 훅(작은 설계)을 수행. 플롯/훅만 단독으로 필요할 때(서사 구조, 에피소드 구성, 훅 전략, 유료 전환 기획) 이 스킬을 사용할 것. 부트스트랩/캐릭터와 함께 통합 설계가 필요하면 design을 사용하라.",
+      "source_sha256": "61d4263e9ec0e7ba80cdea52b1db5bcc9cfeb450d3e1ceda387898bfaef9389b",
+      "source_path": "skills/plot-hook/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11260c4c29a8c546ce42ab0a28f760b766e8a8385519e0cfcb25de084bff666f": {
+      "description_zh": "润色网络小说章节，按原说明组合六名专业智能体的并行与顺序处理，并读取项目 novel-config.md 自动应用设定文档、约束及自定义检查维度。",
+      "source": "웹소설 윤문 스킬. 6명의 전문 에이전트를 병렬/순차 조합으로 운용하여 에피소드를 순차 윤문. '/polish', '/lint', '/polish start', '/polish EP051', '/polish {프로젝트명}', '/polish {프로젝트명} EP051' 으로 실행. 프로젝트별 novel-config.md를 읽어 설정문서·가드레일·커스텀 축을 자동 적용. '윤문', '린트', 'polish', 'lint' 모두 이 스킬을 트리거한다.",
+      "source_sha256": "11260c4c29a8c546ce42ab0a28f760b766e8a8385519e0cfcb25de084bff666f",
+      "source_path": "skills/polish/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "29ec87925437ec89d6b650923315ac223bda1571c8ebf877053a83f9f57c2f90": {
+      "description_zh": "根据目标类型、概念和平台提出三个差异化网络小说方案，平台限于 Munpia、Naver Series、Kakao Page、Ridi、Joara 和 Novelpia；未指定类型平台时询问，已有项目修改使用 design。",
+      "source": "타겟 장르, 컨셉, 타겟 플랫폼을 입력하면 3개의 차별화된 웹소설 설계안을 제안한다. 플랫폼은 문피아, 네이버시리즈, 카카오페이지, 리디, 조아라, 노벨피아로 제한한다. 장르와 플랫폼이 지정되지 않으면 사용자에게 물어본다. 이미 설계가 진행 중인 프로젝트의 수정/보완은 이 스킬이 아니라 design을 사용하라.",
+      "source_sha256": "29ec87925437ec89d6b650923315ac223bda1571c8ebf877053a83f9f57c2f90",
+      "source_path": "skills/propose/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ef82256bee16e72e891ee315ab9d2d942e95b551f1274b064f7e3f57d3213f41": {
+      "description_zh": "在人物、情节或基础设定变更后分析重写已有网络小说章节，支持指定项目、章节及范围，也适用于人物层次不足需要大幅修改的情况。",
+      "source": "에피소드 재작성(rewrite) 스킬. 설정문서(캐릭터시트, 플롯가이드, 부트스트랩) 변경에 따라 기존 에피소드를 분석하고 재작성한다. '/rewrite', '/revise', '/rewrite {프로젝트명}', '/rewrite EP051', '/rewrite {프로젝트명} EP001-EP010' 으로 실행. '에피소드 재작성', '리바이즈', '리라이트', 'rewrite', 'revise' 모두 트리거. 설정문서가 바뀌어서 에피소드를 다시 써야 할 때, 캐릭터 입체성이 부족해서 대폭 수정이 필요할 때 사용.",
+      "source_sha256": "ef82256bee16e72e891ee315ab9d2d942e95b551f1274b064f7e3f57d3213f41",
+      "source_path": "skills/rewrite/SKILL.md",
+      "package_sha256": "89e07cb7655404cecd7f37a7851e8d6b565580e4f560159b9619876f40d1a438",
+      "source_package": "novel-studio-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11e5c2aef79f0b96f0efc4d28626dde82f3ec275ccfb031aed382dee0c52721d": {
+      "description_zh": "把 package.json/lockfile 前后快照或指定依赖升级转成确定的 PASS/WARN/FAIL，供 CI 检查或 PR 状态机器人使用，判断是否阻止合并；不用于普通差异解释或单包信任调查。",
+      "source": "Turn a dependency change — a before/after package.json/lockfile snapshot, or one or more named \"bump X from A to B\" upgrades — into one deterministic PASS/WARN/FAIL verdict formatted for a CI check or PR-comment bot, not a conversational report. Use when the user explicitly wants a mergeable/blocking verdict, a \"CI gate,\" a PR status comment, or asks \"should this PR be blocked,\" \"is this safe to merge,\" \"gate this dependency bump.\" Not for a plain explanation of what changed in a diff (dependency-audit's own snapshot-diff flow already covers that conversationally) and not for a single already-installed package's trust investigation (package-trust-check).",
+      "source_sha256": "11e5c2aef79f0b96f0efc4d28626dde82f3ec275ccfb031aed382dee0c52721d",
+      "source_path": "skills/ci-pr-gate/SKILL.md",
+      "package_sha256": "90178eb826887a7b16044fa92e85634528d5af0ded009fb94c8cf7cfb36c85ac",
+      "source_package": "NPMScan-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8341e41785b87c34d5897da552865f0ee7fd7bc9d09a21c495a58244424df77c": {
+      "description_zh": "在安装、升级或交付前审计项目 npm 依赖的已知漏洞、危险安装脚本及许可证合规，支持 package.json、lockfile、依赖名单和两份快照对比。",
+      "source": "Audit a project's npm dependencies for known vulnerabilities and risky install scripts before installing, upgrading, or shipping. Use when the user pastes or attaches a package.json/lockfile, lists dependencies, or asks to check/audit/scan their packages for security issues — including comparing two snapshots (a PR diff) or checking license compliance.",
+      "source_sha256": "8341e41785b87c34d5897da552865f0ee7fd7bc9d09a21c495a58244424df77c",
+      "source_path": "skills/dependency-audit/SKILL.md",
+      "package_sha256": "90178eb826887a7b16044fa92e85634528d5af0ded009fb94c8cf7cfb36c85ac",
+      "source_package": "NPMScan-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "74d57277ad212405c06b76b7081018c8a942b58ce448cee24821564c285c176e": {
+      "description_zh": "把 npm 供应链可疑或已标记问题转成具体修复处置步骤，支持非技术性的异常描述；初始信任和漏洞调查使用对应技能。",
+      "source": "Turn a flagged npm supply-chain finding — or just a vague, non-technical description of one (\"this package looks sketchy,\" \"someone said we got hacked,\" \"npm install did something weird\") — into concrete remediation steps. Use whenever the user wants to know what to actually do about a suspicious/compromised/flagged package, however precisely or vaguely they describe it — not for the initial trust/vulnerability investigation itself (see package-trust-check/dependency-audit for that).",
+      "source_sha256": "74d57277ad212405c06b76b7081018c8a942b58ce448cee24821564c285c176e",
+      "source_path": "skills/incident-response/SKILL.md",
+      "package_sha256": "90178eb826887a7b16044fa92e85634528d5af0ded009fb94c8cf7cfb36c85ac",
+      "source_package": "NPMScan-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e58f3e74ae1482fd87e15c6357871db051bcde44a59f68dc1dbdc63520c5ac37": {
+      "description_zh": "在安装新 npm 依赖前比较 2 至 5 个候选，或按需求及真实同类库评估单个候选并形成清单；不用于已用依赖审计或单包被攻陷调查。",
+      "source": "Help decide what to add as a NEW npm dependency — comparing 2-5 named candidates for the same job, evaluating one named candidate against its real peers, or shortlisting candidates from a described need, before anything is installed. Use for \"which should we use for X,\" \"axios vs got vs node-fetch,\" \"is X a good pick for Y,\" \"what should we use to do Z,\" \"should we add X or is there something better.\" Not for auditing packages already in the project (see dependency-audit), not for a deep single-package compromise/trust investigation (see package-trust-check), and not for a plain factual question with no choice being made (\"what does X do\").",
+      "source_sha256": "e58f3e74ae1482fd87e15c6357871db051bcde44a59f68dc1dbdc63520c5ac37",
+      "source_path": "skills/new-dependency-evaluation/SKILL.md",
+      "package_sha256": "90178eb826887a7b16044fa92e85634528d5af0ded009fb94c8cf7cfb36c85ac",
+      "source_package": "NPMScan-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "939b93d2504640251217feb2229f27f03261668f8a22400f82e054ce857cd5e3": {
+      "description_zh": "调查单个 npm 包的可信度，包括维护者或所有权接管、发布来源不一致和危险安装脚本；不用于整个依赖文件审计或仅解释包用途。",
+      "source": "Investigate whether one specific npm package is trustworthy — maintainer/ownership takeover signals, publish-provenance mismatches, and risky install scripts. Use when the user asks if a single named package is safe, compromised, hijacked, suspicious, or \"can I trust this\" — not for auditing a full package.json/lockfile (see dependency-audit) and not for a plain factual question like \"what does X do.",
+      "source_sha256": "939b93d2504640251217feb2229f27f03261668f8a22400f82e054ce857cd5e3",
+      "source_path": "skills/package-trust-check/SKILL.md",
+      "package_sha256": "90178eb826887a7b16044fa92e85634528d5af0ded009fb94c8cf7cfb36c85ac",
+      "source_package": "NPMScan-3.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f3ed56e8e88577181ac1685d48c5246b0968c93443f89dda0248631e3da5e08": {
+      "description_zh": "通过 @nuberea/sdk CLI 在 NuBerea 账号登记自有数据连接器，建立租户、信任、连接器和工具链，支持公开或受限 Hugging Face Parquet 数据集，以及通过无密钥 OIDC 连接自有 S3 的 Glue/Athena。",
+      "source": "Register a bring-your-own-data (BYO-data) connector on a user''s NuBerea account so their own data becomes queryable through the NuBerea MCP server. Use this when a user asks to \"connect my data\", \"add a data source\", \"register a connector\", \"expose my Hugging Face dataset / AWS data catalog to NuBerea\", or to create the tenant → trust → connector → tool chain. This skill drives the NuBerea SDK CLI (`@nuberea/sdk`), which handles OAuth sign-in and the catalog control plane. Supports two connector kinds: hf_dataset (Hugging Face Parquet datasets, public or gated) and glue_athena (AWS Glue Data Catalog + Athena over the user''s own S3, via secretless OIDC trust).",
+      "source_sha256": "2f3ed56e8e88577181ac1685d48c5246b0968c93443f89dda0248631e3da5e08",
+      "source_path": "skills/register-data-connector/SKILL.md",
+      "package_sha256": "a4460ab7e7dc09766e731df7e52e046439a9e7b0c3c173866c821f1b41d1d8b4",
+      "source_package": "nuberea-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "865cd874bcca7de824fe671fb9d28515a4dceddfa1e14eccbd46c4c1db86af92": {
+      "description_zh": "为 NVIDIA 产品、GPU、Jetson、CUDA、NIM、NeMo、Omniverse、RAPIDS、TensorRT 等请求查找相关 NVIDIA 技能；不用于泛化的非 NVIDIA 开发、数据或基础设施任务。",
+      "source": "Use for NVIDIA-related requests where an NVIDIA skill might help, even if the user did not ask for a skill. Trigger on NVIDIA products, hardware, software, SDKs, GPUs, Jetson/JetPack/L4T/BSP/SDK Manager/driver/flashing/setup, CUDA, NIM, NeMo, Omniverse/OpenUSD/SimReady, RAPIDS/cuDF, cuPyNumeric, cuOpt, Dynamo, Holoscan, TensorRT, DeepStream, VSS, TAO, NGC/NVCF. Do not use for generic non-NVIDIA route, optimize, deploy, AI, video, data, or infrastructure tasks.",
+      "source_sha256": "865cd874bcca7de824fe671fb9d28515a4dceddfa1e14eccbd46c4c1db86af92",
+      "source_path": "skills/nvidia-skill-finder/SKILL.md",
+      "package_sha256": "6dd5adde1a2a4797ab864de7d78fd416394755604481444e22b4214a0998e49e",
+      "source_package": "NVIDIA Skills-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b8b1ea9ec4cd1956cdd21cf13cfaa7453a561fdb6300150e20bd072bbb3cbba": {
+      "description_zh": "配置 Kubernetes 服务的 OpenTelemetry 上下文传播，涵盖 OTEL_PROPAGATORS、W3C/B3、traceparent 与 baggage，尤其处理 mirrord 拦截流量时的下游追踪；支持环境变量、Instrumentation CRD、compose、Spring Boot 和本地设置。",
+      "source": "Configure OpenTelemetry context propagation (OTEL_PROPAGATORS) for services running in Kubernetes, especially when using mirrord to intercept or steal traffic. Use this skill whenever the user mentions OTEL_PROPAGATORS, OpenTelemetry propagators, trace context headers, W3C tracecontext, B3 headers, distributed tracing setup, OTel auto-instrumentation configuration, or configuring header propagation for mirrord sessions. Also trigger when someone asks about traceparent headers, baggage propagation, connecting local dev tracing to a cluster, or ensuring downstream services see the correct trace context when traffic is intercepted by mirrord. This skill covers env vars, Kubernetes Instrumentation CRDs, docker-compose, Spring Boot properties, and local dev config for mirrord users.",
+      "source_sha256": "5b8b1ea9ec4cd1956cdd21cf13cfaa7453a561fdb6300150e20bd072bbb3cbba",
+      "source_path": "skills/setup-otel-propagation/SKILL.md",
+      "package_sha256": "834c9b615b70ae1cbdbbcd9574311968509bdefa3ad5a516f65ed8fc11f8f30a",
+      "source_package": "Observability Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4d7bc8b64cbc7dff0da0887fe9db08d2cb424dd39b2fda5d00948e9db2b90ea": {
+      "description_zh": "将项目 Markdown 和 PDF 文档同步到 Obsidian vault，用于统一知识管理和整理项目资料。",
+      "source": "Sync project documentation files (.md, .pdf) to an Obsidian vault for unified knowledge management. This skill should be used when the user says \"sync to obsidian\", \"obsidian sync\", \"同步到obsidian\", \"文档同步\", \"move docs to obsidian\", \"sync docs\", or wants to organize project documentation in Obsidian.",
+      "source_sha256": "d4d7bc8b64cbc7dff0da0887fe9db08d2cb424dd39b2fda5d00948e9db2b90ea",
+      "source_path": "skills/obsidian-sync/SKILL.md",
+      "package_sha256": "070d26f941faac47eab2b2b8263bd7ee81cfc12079194f73537673c9abaec806",
+      "source_package": "obsidian-sync-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6086c549bd097ddd770660507a0701bb8d4128462ee5cc7b42a75e1cb26dca3e": {
+      "description_zh": "创建修改 OBTO 应用、页面、路由和脚本，采用无状态契约、可靠性优先构建循环及完成前冒烟检查。",
+      "source": "This skill should be used when the user asks to \"build an app on OBTO\", \"create an OBTO app\", \"scaffold an app\", \"add a page/route/script to my OBTO app\", or any task that creates or modifies OBTO application artifacts. Covers the stateless contract, the reliability-first build loop, and the done-means-done smoke gate.",
+      "source_sha256": "6086c549bd097ddd770660507a0701bb8d4128462ee5cc7b42a75e1cb26dca3e",
+      "source_path": "skills/obto-build-loop/SKILL.md",
+      "package_sha256": "5c63edad869d04a236a51dc5691304d69ce26bbc51b5a859c1585194c70eae7b",
+      "source_package": "OBTO-0.12.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c5b8c198f320abb48fcf578bbda3dd16c6bbcb53699573b23a08240d6751287c": {
+      "description_zh": "向 OBTO 部署脚本或模块，按顺序选择 patch、upsert、分块或引用部署，处理大文件、from_url、SHA256 完整性和部署后验证。",
+      "source": "This skill should be used when the user asks to \"deploy to OBTO\", \"upload a large file/module to OBTO\", \"ship this artifact\", \"push this script to the platform\", or when any single artifact source is too large for one tool call. Covers deployment order, choosing the write path (patch vs. upsert vs. chunked vs. deploy-by-reference), the chunked-upload and from_url paths with sha256 verification, and post-deploy verification.",
+      "source_sha256": "c5b8c198f320abb48fcf578bbda3dd16c6bbcb53699573b23a08240d6751287c",
+      "source_path": "skills/obto-deploy/SKILL.md",
+      "package_sha256": "5c63edad869d04a236a51dc5691304d69ce26bbc51b5a859c1585194c70eae7b",
+      "source_package": "OBTO-0.12.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd3bcac805443f720307c5ffe75cf638b2535d278332cbb0e8e9ea56cfdb7669": {
+      "description_zh": "读取 OBTO DevZone 审阅反馈、摘要、Agent Bridge 消息和标注截图，确定待修复项并关闭已完成反馈；用于有人审阅的应用修改。",
+      "source": "This skill should be used whenever an agent works on an OBTO app that people review through DevZone — when the user mentions reviewers, feedback, \"what did they circle\", marked-up screenshots, or asks what needs fixing; when a tool result carries \"[obto-feedback] N open reviewer feedback item(s)\"; when the Agent Bridge thread `feedback-<app>` has new messages; and, quietly, at the start of any session that edits an app. It tells the agent how reviewer feedback reaches it (obto_list_feedback / obto_get_feedback, the injected digest, the bridge thread), how to read the annotated screenshot, and how a fix is closed out.",
+      "source_sha256": "dd3bcac805443f720307c5ffe75cf638b2535d278332cbb0e8e9ea56cfdb7669",
+      "source_path": "skills/obto-feedback/SKILL.md",
+      "package_sha256": "5c63edad869d04a236a51dc5691304d69ce26bbc51b5a859c1585194c70eae7b",
+      "source_package": "OBTO-0.12.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5dcda676f43cf9422fe42d0634f2c5457d37f3b0c9036d1b964f1165ccbbbf2f": {
+      "description_zh": "扩展每租户 OBTO MCP 的工具、资源和提示词，定义 schema、handler 及必要 annotations，处理 Zod v4 注意点并保持目录更新。",
+      "source": "This skill should be used when the user asks to \"create a custom MCP tool on OBTO\", \"add a tool to my domain\", \"publish a guide/resource through the OBTO MCP server\", \"register an MCP prompt\", \"extend the OBTO MCP surface\", or mentions obto_create_mcp_tool / dynamic tools. Covers the per-tenant MCP triad (tools, resources, prompts): schema and handler rules, the required annotations, Zod v4 traps, and catalog-freshness discipline.",
+      "source_sha256": "5dcda676f43cf9422fe42d0634f2c5457d37f3b0c9036d1b964f1165ccbbbf2f",
+      "source_path": "skills/obto-mcp-extend/SKILL.md",
+      "package_sha256": "5c63edad869d04a236a51dc5691304d69ce26bbc51b5a859c1585194c70eae7b",
+      "source_package": "OBTO-0.12.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac2f3e8d2f74cf12ab463ac9181ac6310d44769c8ca78ea480785c09ba10ff44": {
+      "description_zh": "通过 OBTO 的 obto_remember/obto_recall 保存或检索跨会话应用上下文，选择正确范围并遵循有效使用规范。",
+      "source": "This skill should be used when the user asks to \"remember something about this app\", \"recall what we know\", \"keep context across conversations\", mentions OBTO memory/Hindsight, or when an agent needs durable context on the OBTO platform. Covers obto_remember / obto_recall scoping modes and the discipline for using them effectively.",
+      "source_sha256": "ac2f3e8d2f74cf12ab463ac9181ac6310d44769c8ca78ea480785c09ba10ff44",
+      "source_path": "skills/obto-memory/SKILL.md",
+      "package_sha256": "5c63edad869d04a236a51dc5691304d69ce26bbc51b5a859c1585194c70eae7b",
+      "source_package": "OBTO-0.12.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8de83d55b4418b270627f49acfe17f39a8e080b760aef790944b1e57a430727f": {
+      "description_zh": "在 OBTO 出现已保存未生效、错误主机、404、DNS/证书或能力激活错误时，识别平台边界并采用 MCP 诊断路径；原说明禁止客户端越界重启基础设施、SSH 或修改 DNS。",
+      "source": "This skill should be used whenever work on OBTO stalls on something that looks like infrastructure — code that was saved but is not live, a host or URL that serves the wrong thing, a route that 404s after being created, DNS or certificate questions, a tool that refuses with a capability or activation error, or any moment where the next idea is \"restart it\", \"recycle the pods\", \"check the cluster\", \"kubectl\", \"ssh in\", or \"edit the DNS record\". It defines the platform boundary an OBTO client must never cross and the MCP-only path to take instead.",
+      "source_sha256": "8de83d55b4418b270627f49acfe17f39a8e080b760aef790944b1e57a430727f",
+      "source_path": "skills/obto-platform-boundary/SKILL.md",
+      "package_sha256": "5c63edad869d04a236a51dc5691304d69ce26bbc51b5a859c1585194c70eae7b",
+      "source_package": "OBTO-0.12.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a07df0d663fb250473c6c744b6347ce7f0c89fc21012dc7fb154fbe3f0d8191e": {
+      "description_zh": "依据 OBTO 结构化错误排查 allowlist、appName/domain、host mismatch、scope ownership、过期工具及应用日志问题。",
+      "source": "This skill should be used when the user reports an OBTO error, asks \"why did this OBTO call fail\", mentions errors like collection_not_in_allowlist, must pass appName/domain, host_mismatch, scope_ownership_mismatch, stale tools, or wants to debug an OBTO app via logs. Covers the structured error envelope and the standard diagnosis paths.",
+      "source_sha256": "a07df0d663fb250473c6c744b6347ce7f0c89fc21012dc7fb154fbe3f0d8191e",
+      "source_path": "skills/obto-troubleshooting/SKILL.md",
+      "package_sha256": "5c63edad869d04a236a51dc5691304d69ce26bbc51b5a859c1585194c70eae7b",
+      "source_package": "OBTO-0.12.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de2233ca9807e8588291d81331d2ec03d2ff3df5eab71463e4228bdeb23fc387": {
+      "description_zh": "把本地图片、视频、PDF 或其他二进制媒体上传 OBTO 文件存储并获取查看/CDN URL，采用签名 URL、完整性校验分块回退或服务端抓取；脚本模块源码部署使用 obto-deploy。",
+      "source": "This skill should be used when the user asks to upload a LOCAL binary/media file (image, video, PDF, or other asset) into OBTO and get back a served/CDN URL — \"upload this image to OBTO\", \"host this file on OBTO\", \"get a served URL for this asset\", \"obto_request_upload_url\", \"obto_upload_media\", \"obto_stage_chunk\". Covers the signed-URL direct-upload path (primary), the chunked integrity-gated fallback, server-side URL fetch, and the domain/body rules. This is for MEDIA/BINARY into the file store (served via a viewer URL) — for deploying artifact SOURCE (scripts/modules) into collections, use obto-deploy.",
+      "source_sha256": "de2233ca9807e8588291d81331d2ec03d2ff3df5eab71463e4228bdeb23fc387",
+      "source_path": "skills/obto-upload/SKILL.md",
+      "package_sha256": "5c63edad869d04a236a51dc5691304d69ce26bbc51b5a859c1585194c70eae7b",
+      "source_package": "OBTO-0.12.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "223315ef67279c38250303cbc756aa38340a11c019d1cce6d01d4d7da6cb8c4a": {
+      "description_zh": "用 OctoDoc 查找经审阅 PDF 表单、填写用户事实、阅读审阅、准备签署及离线核验封存摘要；原说明摘要功能会将限定正文送往 Vercel AI Gateway，bearer 凭据内容已隐藏且不单独授权发送或签署，需绑定交易的在场确认或明确委托。",
+      "source": "Find reviewed reusable PDF forms, fill facts the user supplied, open, review, summarize and prepare signable documents with OctoDoc, and check a sealed PDF offline against the digest its sender published. Invoke with /octodoc or $octodoc. Use for a contract, NDA, agreement, signature request, e-signature, sealed PDF, or signing status. Review and verification stay local, while summarize sends bounded canonical document text through Vercel AI Gateway and returns model output. A bearer [已隐藏] never authorizes a send or signature by itself: binding acts require a transaction-bound attended assertion or an explicit delegation mandate.",
+      "source_sha256": "223315ef67279c38250303cbc756aa38340a11c019d1cce6d01d4d7da6cb8c4a",
+      "source_path": "skills/octodoc/SKILL.md",
+      "package_sha256": "219006b9610c83a1e3951c8598b794026211843e99f8a64c3c2c8e5c2775daa3",
+      "source_package": "OctoDoc-0.1.3-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "724a3c7edd5a1bc8a0d45bd986f285ba438079e07b6301e32f41c65dc8f41aad": {
+      "description_zh": "检查开放 PR 的 Octopus 评审意见，应用修复并推送更新。",
+      "source": "Check open PRs for Octopus review comments, apply fixes, and push updates",
+      "source_sha256": "724a3c7edd5a1bc8a0d45bd986f285ba438079e07b6301e32f41c65dc8f41aad",
+      "source_path": "skills/autofix/SKILL.md",
+      "package_sha256": "49b51c9c8685bcfae880ca775246e0a85d77be4f4425311b870008cf554c971b",
+      "source_package": "Octopus-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ae0e3dcdbbbe1281874bd7c6b122d2faf77818627aee6458e7c6d1d2cbc6abe": {
+      "description_zh": "使用 Octopus 开展 AI 辅助代码评审。",
+      "source": "AI-powered code review using Octopus",
+      "source_sha256": "1ae0e3dcdbbbe1281874bd7c6b122d2faf77818627aee6458e7c6d1d2cbc6abe",
+      "source_path": "skills/code-review/SKILL.md",
+      "package_sha256": "49b51c9c8685bcfae880ca775246e0a85d77be4f4425311b870008cf554c971b",
+      "source_package": "Octopus-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd2421e77851834c350b31ac832f7dd691a907a9c54f0e76651eb40e478b1138": {
+      "description_zh": "依据书面规格、需求文档或工单实现修复代码，适用于时间紧、快速修复、最小改动和交付前检查。",
+      "source": "Use when implementing or fixing code against a written spec, requirements doc, or ticket — especially under time pressure, \"quick fix\" or \"minimal change\" requests, or when about to declare work ready to ship.",
+      "source_sha256": "fd2421e77851834c350b31ac832f7dd691a907a9c54f0e76651eb40e478b1138",
+      "source_path": "skills/off-by-none/SKILL.md",
+      "package_sha256": "67b766d405779b274b78e1c0ea84253880fa77b2e11a85a1408e6e4da317d46d",
+      "source_package": "off-by-none-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd1f7d14f191e31d6b59f1ba3a96a983f6c9847e30f053b0f418349b849e3193": {
+      "description_zh": "开展 okrdev 每周检查，先依据 Git 和已合并 PR 起草信心表、进展、偏移检查和健康指标，再引导人员完成必须由人判断的部分，支持负责人异步贡献。",
+      "source": "Run the weekly okrdev check-in — pre-drafts the confidence table, \"what moved\" from git and merged PRs, the drift check, and health metrics before the humans arrive, then walks them through the parts only they can do. Use when someone says \"run our check-in\", \"weekly check-in\", \"let's do the OKR check-in\", \"time for the checkin\", when a check-in is overdue and the user agrees to catch up, or when a single DRI wants to file their async contribution to this week's check-in.",
+      "source_sha256": "bd1f7d14f191e31d6b59f1ba3a96a983f6c9847e30f053b0f418349b849e3193",
+      "source_path": "skills/checkin/SKILL.md",
+      "package_sha256": "e0133d759322bdae50e84f9400a81185ccf5c8162964dcb18eca7abfcfc8aae5",
+      "source_package": "okrdev-0.10.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b716b7e38a55570b88d75b77c71606b25c320f3d66ef2c4233bed789611e4c0": {
+      "description_zh": "按需检查 okrdev 进展和目标对齐，说明信心趋势、上次检查后的偏移、健康、开放 PR 及支线、维护、紧急任务预算，用于周中状态与今日优先事项判断。",
+      "source": "On-demand status and alignment check from the okrdev coach — confidence trends, drift since the last check-in, health metrics, open-PR status in plain language, and side-quest/maintenance/emergency budget usage. Use when someone asks \"how are we doing\", \"where do we stand on the OKRs\", \"is this aligned?\", \"should I build this?\", \"what should I work on today?\", \"what's drifting\", \"any red flags this week\", or wants a mid-week pulse without running a full check-in.",
+      "source_sha256": "3b716b7e38a55570b88d75b77c71606b25c320f3d66ef2c4233bed789611e4c0",
+      "source_path": "skills/coach/SKILL.md",
+      "package_sha256": "e0133d759322bdae50e84f9400a81185ccf5c8162964dcb18eca7abfcfc8aae5",
+      "source_package": "okrdev-0.10.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2bb6592e33e5e8430aec7a2c86d3abb7a1460b3c414f23e7add7a58c10db5fd7": {
+      "description_zh": "在仓库安装、升级或提高 okrdev 采用等级，按 Level 0、1、2 及可选技术栈生成模板文件，把 coach 区块追加到 CLAUDE.md/AGENTS.md，并合并保留已有内容。",
+      "source": "Install, upgrade, or level-up okrdev in the current repo. Walks the adoption ladder — Level 0 parking lot, Level 1 method, Level 2 collaboration rails, optional stack module — creating okrdev/ files from templates, appending the marked coach block to the host agent's instructions file (CLAUDE.md or AGENTS.md), and merging (never overwriting) anything that already exists. Use when someone says \"install okrdev\", \"set up okrdev\", \"add okrdev to this repo\", \"upgrade okrdev\", \"move us to Level 1/2\", or asks how to get started with okrdev.",
+      "source_sha256": "2bb6592e33e5e8430aec7a2c86d3abb7a1460b3c414f23e7add7a58c10db5fd7",
+      "source_path": "skills/install/SKILL.md",
+      "package_sha256": "e0133d759322bdae50e84f9400a81185ccf5c8162964dcb18eca7abfcfc8aae5",
+      "source_package": "okrdev-0.10.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
