@@ -78471,7 +78471,7 @@
       "method": "本地逐条人工意译并核对适用范围"
     },
     "839d989116bbb548fc6f466f75ce6ececa3240eb9a72d54e46ae629e8605c437": {
-      "description_zh": "通过SendGrid v3 Mail Send API发送事务或批量邮件，支持动态模板个性化批发、定时发送与取消、附件及沙箱测试；需要SG.前缀API密钥，不适用于Twilio Email API。",
+      "description_zh": "通过SendGrid v3 Mail Send API发送事务或批量邮件，支持动态模板个性化批量发送、定时发送与取消、附件及沙箱测试；需要SG.前缀API密钥，不适用于Twilio Email API。",
       "source": "Send transactional and bulk email via the SendGrid v3 Mail Send API. Covers single sends, personalized batch sends with dynamic templates, scheduled sends with cancellation, attachments, and sandbox mode for testing. Use this skill when the caller has a SendGrid API key (SG.-prefix). Do NOT use this skill if the caller is using the Twilio Email API (comms.twilio.com) — that is a separate product with different credentials.",
       "source_sha256": "839d989116bbb548fc6f466f75ce6ececa3240eb9a72d54e46ae629e8605c437",
       "source_path": "skills/sendgrid/twilio-sendgrid-email-send/SKILL.md",
@@ -78669,7 +78669,7 @@
       "method": "本地逐条人工意译并核对适用范围"
     },
     "d0ed738b2d19438af54da64b2c3cb5640e6d4ac416876835ea5a6931686c8afa": {
-      "description_zh": "使用Twilio的Account SID与Auth Token或API Key SID与Secret，通过comms.twilio.com/v1/Emails发送邮件；覆盖单发、原文所述最多一万接收人的批发、Liquid个性化、操作跟踪及错误处理，不适用于SG.前缀SendGrid密钥。",
+      "description_zh": "使用Twilio的Account SID与Auth Token或API Key SID与Secret，通过comms.twilio.com/v1/Emails发送邮件；覆盖单发、原文所述最多一万接收人的批量发送、Liquid个性化、操作跟踪及错误处理，不适用于SG.前缀SendGrid密钥。",
       "source": "Use when the caller has Twilio credentials (Account SID + Auth Token or API Key SID + Secret) and needs to send email via comms.twilio.com/v1/Emails. This is Twilio-native email — NOT SendGrid. Do NOT use if the caller has a SendGrid API key (SG.-prefix) — use twilio-sendgrid-email-send instead. Covers single sends, batch sends up to 10,000 recipients, Liquid personalization, operation tracking, and error handling.",
       "source_sha256": "d0ed738b2d19438af54da64b2c3cb5640e6d4ac416876835ea5a6931686c8afa",
       "source_path": "skills/twilio/twilio-email-send/SKILL.md",
@@ -79368,6 +79368,1086 @@
       "source_path": "skills/dag-workflows/SKILL.md",
       "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
       "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3da679a9f0e2bea50edbe3d05af757f497ea311633d1ad94564a96598699cb64": {
+      "description_zh": "用于编写或审查Dart代码，覆盖语言惯用法、工具、项目布局及测试约定；SOLID、TDD和整洁架构等通用原则另见相关分类技能。",
+      "source": "Use when writing or reviewing Dart code. Covers Dart-specific idioms, tooling, project layout, and testing conventions. For universal principles (SOLID, TDD, clean architecture) see the relevant category skills.",
+      "source_sha256": "3da679a9f0e2bea50edbe3d05af757f497ea311633d1ad94564a96598699cb64",
+      "source_path": "skills/dart-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e11ecec8638c305d81c5d53137fe14ebe1be8c3e64a11c509ae99d47e7fc92af": {
+      "description_zh": "用于数据库模式设计、迁移编写、查询优化和索引选择，并权衡规范化与反规范化。",
+      "source": "Use when designing schemas, writing migrations, optimizing queries, choosing indexes, or deciding between normalization and denormalization.",
+      "source_sha256": "e11ecec8638c305d81c5d53137fe14ebe1be8c3e64a11c509ae99d47e7fc92af",
+      "source_path": "skills/database-design/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d82ef59f88e579ab21ca133b0bb4a0b91bd29c79fbffe99bd3a8ccbc82d9416": {
+      "description_zh": "用于结构设计决策，应用SOLID原则，选择继承或组合，并判断何时引入抽象。",
+      "source": "Use when making structural design decisions, applying SOLID principles, choosing between inheritance and composition, or deciding when to introduce an abstraction.",
+      "source_sha256": "7d82ef59f88e579ab21ca133b0bb4a0b91bd29c79fbffe99bd3a8ccbc82d9416",
+      "source_path": "skills/design-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df7a49f984ed2ac839e61e9a763d67d5ecd04174086ad1563a963862e7e681c9": {
+      "description_zh": "用于Django的Python Web开发，覆盖模型、视图、ORM、迁移、管理后台、Django REST Framework及测试。",
+      "source": "Use when building Python web applications with Django — covers models, views, ORM, migrations, admin, Django REST Framework, and testing.",
+      "source_sha256": "df7a49f984ed2ac839e61e9a763d67d5ecd04174086ad1563a963862e7e681c9",
+      "source_path": "skills/django-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50ccf7d0f70e0d5e3b3989d1e2a762a5eb4c6e445bd278b2e9a4b1873bac27f8": {
+      "description_zh": "用于编写端到端UI测试、配置Playwright或Cypress及排查不稳定测试，覆盖结构、选择器、等待策略和CI集成。",
+      "source": "Use when writing end-to-end UI tests, setting up Playwright or Cypress, or debugging flaky tests — covers test structure, selectors, waiting strategies, and CI integration",
+      "source_sha256": "50ccf7d0f70e0d5e3b3989d1e2a762a5eb4c6e445bd278b2e9a4b1873bac27f8",
+      "source_path": "skills/e2e-testing/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35beecf52bfc9621e158dcf2bb3fcb71b449e9e8ac313221c776c772945d46f4": {
+      "description_zh": "用于设计错误处理策略，选择异常或结果类型、验证输入及构建可靠系统，适用于各种语言。",
+      "source": "Use when designing error handling strategies, choosing between exceptions and result types, validating inputs, or building resilient systems in any language.",
+      "source_sha256": "35beecf52bfc9621e158dcf2bb3fcb71b449e9e8ac313221c776c772945d46f4",
+      "source_path": "skills/error-handling/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22ff9ee892cbf8f9347186f378742b2c398cddc0bb4434c6dfc4ff59f9c9f475": {
+      "description_zh": "用于Express的Node.js Web服务器开发，覆盖中间件链、路由、错误处理、安全和测试。",
+      "source": "Use when building Node.js web servers with Express — covers middleware chains, routing, error handling, security, and testing.",
+      "source_sha256": "22ff9ee892cbf8f9347186f378742b2c398cddc0bb4434c6dfc4ff59f9c9f475",
+      "source_path": "skills/express-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48eb97f94e77d6a82ef51d987befd1dc37edd00dc76667498a21a45c3ccc9bf7": {
+      "description_zh": "用于FastAPI的Python API开发，覆盖异步端点、依赖注入、Pydantic模型、中间件及测试。",
+      "source": "Use when building Python APIs with FastAPI — covers async endpoints, dependency injection, Pydantic models, middleware, and testing.",
+      "source_sha256": "48eb97f94e77d6a82ef51d987befd1dc37edd00dc76667498a21a45c3ccc9bf7",
+      "source_path": "skills/fastapi-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c83c5285a086bc2a099f7019775def10d03dd17f0cbd71bcb841f3f97d8f3b0": {
+      "description_zh": "用于Flask的Python Web开发，覆盖蓝图、扩展、应用工厂、上下文管理和测试。",
+      "source": "Use when building Python web applications with Flask — covers blueprints, extensions, application factory, context management, and testing.",
+      "source_sha256": "4c83c5285a086bc2a099f7019775def10d03dd17f0cbd71bcb841f3f97d8f3b0",
+      "source_path": "skills/flask-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c80993215080a58fe58f95bbd827ef0c200891ac247258a1bd862df092d3314": {
+      "description_zh": "指导构建Web组件、页面或应用，创建有鲜明特色且达到生产要求的前端界面，避免通用AI模板式视觉。",
+      "source": "Use when building web components, pages, or applications — guides creation of distinctive, production-grade frontend interfaces that avoid generic AI aesthetics",
+      "source_sha256": "4c80993215080a58fe58f95bbd827ef0c200891ac247258a1bd862df092d3314",
+      "source_path": "skills/frontend-design/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c5663aa3dfc419d3ff0b1a7ee62216da1b4aaa3fcae538a524016e1e3c318a1": {
+      "description_zh": "用于编写审查Go代码，涵盖惯用法、工具、项目布局及测试约定；通用SOLID、TDD和整洁架构原则另见相关技能。",
+      "source": "Use when writing or reviewing Go code. Covers Go-specific idioms, tooling, project layout, and testing conventions. For universal principles (SOLID, TDD, clean architecture) see the relevant category skills.",
+      "source_sha256": "0c5663aa3dfc419d3ff0b1a7ee62216da1b4aaa3fcae538a524016e1e3c318a1",
+      "source_path": "skills/go-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f24dce2c552958b89dcd770b35245e88873a156a86896eeb121ea4f6d0fd220e": {
+      "description_zh": "用于编写审查Java代码，涵盖惯用法、工具、项目布局及测试约定；通用SOLID、TDD和整洁架构原则另见相关技能。",
+      "source": "Use when writing or reviewing Java code. Covers Java-specific idioms, tooling, project layout, and testing conventions. For universal principles (SOLID, TDD, clean architecture) see the relevant category skills.",
+      "source_sha256": "f24dce2c552958b89dcd770b35245e88873a156a86896eeb121ea4f6d0fd220e",
+      "source_path": "skills/java-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa523969abc946dde498e50be401fe51d4433de7aae574016afb71ecaa1b580c": {
+      "description_zh": "为非TypeScript项目提供现代JavaScript模式，涵盖ES2024及以后惯用法、工具和常见陷阱。",
+      "source": "Modern JavaScript patterns for non-TypeScript projects covering ES2024+ idioms, tooling, and common pitfalls",
+      "source_sha256": "fa523969abc946dde498e50be401fe51d4433de7aae574016afb71ecaa1b580c",
+      "source_path": "skills/javascript-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01d569a9af64dde9a527bdb0cf05a0608121a8c2206c5bcdeab2446fc062a74d": {
+      "description_zh": "用于编写审查Kotlin代码，涵盖惯用法、工具、项目布局及测试约定；通用SOLID、TDD和整洁架构原则另见相关技能。",
+      "source": "Use when writing or reviewing Kotlin code. Covers Kotlin-specific idioms, tooling, project layout, and testing conventions. For universal principles (SOLID, TDD, clean architecture) see the relevant category skills.",
+      "source_sha256": "01d569a9af64dde9a527bdb0cf05a0608121a8c2206c5bcdeab2446fc062a74d",
+      "source_path": "skills/kotlin-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac8785465c4616653f1cbbc79e26e330771ae36052cf27d804d8898463fc4211": {
+      "description_zh": "用于Laravel的PHP Web开发，涵盖Eloquent ORM、中间件、队列、Blade模板、Livewire及测试。",
+      "source": "Use when building PHP web applications with Laravel — covers Eloquent ORM, middleware, queues, Blade templates, Livewire, and testing.",
+      "source_sha256": "ac8785465c4616653f1cbbc79e26e330771ae36052cf27d804d8898463fc4211",
+      "source_path": "skills/laravel-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "baa00cfccf50c185ebd758ab5e12e4aac48c56963abf7661bea1421578956f75": {
+      "description_zh": "用于需要对立观点辅助的决策，减少单次LLM调用的偏差及遗漏边界情况。",
+      "source": "Use when a decision benefits from adversarial perspectives, where a single LLM call might be biased or miss edge cases.",
+      "source_sha256": "baa00cfccf50c185ebd758ab5e12e4aac48c56963abf7661bea1421578956f75",
+      "source_path": "skills/multi-agent-debate/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "657108216e47aefa806fbc4f589d69ba72846c3d1c8ecbc5bb0ee26e1f0ae344": {
+      "description_zh": "用于跨多个领域的对话，根据上下文在专门智能体之间路由和交接。",
+      "source": "Use when a conversation spans multiple domains and should be routed between specialized agents based on context.",
+      "source_sha256": "657108216e47aefa806fbc4f589d69ba72846c3d1c8ecbc5bb0ee26e1f0ae344",
+      "source_path": "skills/multi-agent-handoffs/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87f0f1f44e93f4a3249387c91ce2a548d8cae5a105f24336c7aec33c77a26931": {
+      "description_zh": "用于NestJS的Node.js后端开发，涵盖模块、控制器、providers、pipes、guards、拦截器及测试。",
+      "source": "Use when building Node.js backends with NestJS — covers modules, controllers, providers, pipes, guards, interceptors, and testing.",
+      "source_sha256": "87f0f1f44e93f4a3249387c91ce2a548d8cae5a105f24336c7aec33c77a26931",
+      "source_path": "skills/nestjs-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c9bdf70e4e93772eb71f5e9fa21fead3be32ed4856ce63ee0d91fc9f1da8779": {
+      "description_zh": "用于构建审查Next.js应用，涵盖App Router、Server Components、Server Actions、数据获取、缓存、ISR及中间件。",
+      "source": "Use when building or reviewing Next.js applications. Covers App Router, Server Components, Server Actions, data fetching, caching, ISR, and middleware patterns.",
+      "source_sha256": "3c9bdf70e4e93772eb71f5e9fa21fead3be32ed4856ce63ee0d91fc9f1da8779",
+      "source_path": "skills/nextjs-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "066abe99f4fd32c5e084c93449a52b3a8f1ee575915695af17c59405cccbef9b": {
+      "description_zh": "通过结构化日志、指标和分布式追踪为系统增加生产可观测性。",
+      "source": "Use when instrumenting systems with structured logging, metrics, and distributed tracing to achieve production visibility.",
+      "source_sha256": "066abe99f4fd32c5e084c93449a52b3a8f1ee575915695af17c59405cccbef9b",
+      "source_path": "skills/observability/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "857c25546cc5567c50d6f6c9c9d3874236679e9539e11ca0126de5a8de339d21": {
+      "description_zh": "用于可拆成子任务且适合专门提示或模型处理的复杂任务编排。",
+      "source": "Use when a complex task can be decomposed into subtasks that benefit from specialized prompts or models.",
+      "source_sha256": "857c25546cc5567c50d6f6c9c9d3874236679e9539e11ca0126de5a8de339d21",
+      "source_path": "skills/orchestrator-workers/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a99e8a15c21b51437d257a247b481e73e4893c6f589a9aa2e88efc8dffd7b3da": {
+      "description_zh": "用于对同一输入做多项独立分析，或重复同一任务进行投票和冗余验证。",
+      "source": "Use when the same input needs multiple independent analyses, or the same task should be run multiple times for voting or redundancy.",
+      "source_sha256": "a99e8a15c21b51437d257a247b481e73e4893c6f589a9aa2e88efc8dffd7b3da",
+      "source_path": "skills/parallelization/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7de8f222468020571a60769cdff18793bc2f0d9b5138d77fc2815655c4ee7b31": {
+      "description_zh": "用于编写审查PHP代码，涵盖惯用法、工具、项目布局及测试约定；通用SOLID、TDD和整洁架构原则另见相关技能。",
+      "source": "Use when writing or reviewing PHP code. Covers PHP-specific idioms, tooling, project layout, and testing conventions. For universal principles (SOLID, TDD, clean architecture) see the relevant category skills.",
+      "source_sha256": "7de8f222468020571a60769cdff18793bc2f0d9b5138d77fc2815655c4ee7b31",
+      "source_path": "skills/php-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe0cebf81b2f01089fee9c95b7a37914e20c72a9d178cb1d1d00ea79969fb000": {
+      "description_zh": "用于创建、组织、验证和发布Claude Code插件及自托管市场，涵盖plugin.json、技能编写、市场配置、版本及多平台分发。",
+      "source": "Use when creating, structuring, validating, or publishing Claude Code plugins and self-hosted marketplaces — covers plugin.json manifests, skill authoring, marketplace setup, versioning, and multi-platform distribution.",
+      "source_sha256": "fe0cebf81b2f01089fee9c95b7a37914e20c72a9d178cb1d1d00ea79969fb000",
+      "source_path": "skills/plugin-development/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0c461df67af35421d114e900dfd2b60f11ca755878416f3c94e6e2dfd87ae63a": {
+      "description_zh": "用于编写审查Python代码，涵盖Python惯用法、uv/ruff/pyright工具、项目布局及pytest约定。",
+      "source": "Use when writing or reviewing Python code. Covers Pythonic idioms, modern tooling (uv, ruff, pyright), project layout, and pytest conventions.",
+      "source_sha256": "0c461df67af35421d114e900dfd2b60f11ca755878416f3c94e6e2dfd87ae63a",
+      "source_path": "skills/python-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9670eb2a6620cb37389a8c3f9d5ac620356304ea41109e7678d009c9bc2355fd": {
+      "description_zh": "用于构建检索增强生成流水线，涵盖分块、嵌入向量、向量搜索及重排，为LLM回答提供检索依据。",
+      "source": "Use when building retrieval-augmented generation pipelines — covering chunking, embeddings, vector search, and reranking for grounded LLM responses.",
+      "source_sha256": "9670eb2a6620cb37389a8c3f9d5ac620356304ea41109e7678d009c9bc2355fd",
+      "source_path": "skills/rag-ai/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "206ddbcba3f92da054866542013a210a2cd93ee7881bdef8c405a9e588da89ef": {
+      "description_zh": "用于Ruby on Rails开发，涵盖约定优于配置、ActiveRecord、concerns、后台任务及测试。",
+      "source": "Use when building Ruby on Rails applications — covers convention over configuration, ActiveRecord, concerns, jobs, and testing.",
+      "source_sha256": "206ddbcba3f92da054866542013a210a2cd93ee7881bdef8c405a9e588da89ef",
+      "source_path": "skills/rails-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d565603d0ee540fbb162719c88711e7600dc4296a41e6e44932c3c0b07da7ec": {
+      "description_zh": "用于ratatui终端界面开发，涵盖Elm/TEA架构、crossterm EventStream异步循环、tui-term的PTY渲染、终端窗格、配色、快照测试及与axum等HTTP服务共运行。",
+      "source": "Use when building terminal user interfaces with ratatui — covers app architecture (Elm/TEA), async event loops with crossterm EventStream, PTY rendering with tui-term, terminal pane management, color theming, snapshot testing, and co-running with HTTP servers like axum.",
+      "source_sha256": "7d565603d0ee540fbb162719c88711e7600dc4296a41e6e44932c3c0b07da7ec",
+      "source_path": "skills/ratatui-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "186bdc0f94ad12d46c7269ead800abbd4b5415266ece9c6382cd93daa6fceead": {
+      "description_zh": "用于编写、审查或重构React/Next.js代码，按影响优先排序原文所列8类62条性能优化规则。",
+      "source": "Use when writing, reviewing, or refactoring React/Next.js code — 62 performance optimization rules across 8 categories, prioritized by impact",
+      "source_sha256": "186bdc0f94ad12d46c7269ead800abbd4b5415266ece9c6382cd93daa6fceead",
+      "source_path": "skills/react-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "154a90551fa3b61da8785cafe4d9fef10b1f596bf833caec2149341d388c7eff": {
+      "description_zh": "提供React应用的组件设计、hooks、状态管理及数据获取常用模式。",
+      "source": "Canonical patterns for React applications covering component design, hooks, state management, and data fetching",
+      "source_sha256": "154a90551fa3b61da8785cafe4d9fef10b1f596bf833caec2149341d388c7eff",
+      "source_path": "skills/react-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3efdc79ed46eaa961d38c968f1c10c293c63c1855112d0c8d34fd313e65ebed9": {
+      "description_zh": "用于构建能应对临时故障、网络分区及下游服务退化的系统。",
+      "source": "Use when building systems that must survive transient failures, network partitions, and downstream service degradation.",
+      "source_sha256": "3efdc79ed46eaa961d38c968f1c10c293c63c1855112d0c8d34fd313e65ebed9",
+      "source_path": "skills/resilience/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a881f1118d84bfea28af4ccc00d8fba8c75c5410eae7d738b6550b47dc32f030": {
+      "description_zh": "用于编写审查Ruby代码，涵盖惯用法、工具、项目布局及测试约定；通用SOLID、TDD和整洁架构原则另见相关技能。",
+      "source": "Use when writing or reviewing Ruby code. Covers Ruby-specific idioms, tooling, project layout, and testing conventions. For universal principles (SOLID, TDD, clean architecture) see the relevant category skills.",
+      "source_sha256": "a881f1118d84bfea28af4ccc00d8fba8c75c5410eae7d738b6550b47dc32f030",
+      "source_path": "skills/ruby-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f52c569240a9adfba01df4e2830785ce9284860716f1a0fb59c0243a1f7cc8c": {
+      "description_zh": "用于编写审查Rust代码，涵盖所有权惯用法、cargo、Result/Option错误处理、模块布局及测试约定。",
+      "source": "Use when writing or reviewing Rust code. Covers ownership idioms, cargo tooling, error handling with Result/Option, module layout, and testing conventions.",
+      "source_sha256": "8f52c569240a9adfba01df4e2830785ce9284860716f1a0fb59c0243a1f7cc8c",
+      "source_path": "skills/rust-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e76c341d0ce702f188739982dc33e50df605b8b2eb0f58db5f52ba4d85fd388e": {
+      "description_zh": "用于构建审查Spring Boot应用，涵盖自动配置、分层架构、Bean生命周期、profiles、actuator及MockMvc测试。",
+      "source": "Use when building or reviewing Spring Boot applications. Covers auto-configuration, layered architecture, Bean lifecycle, profiles, actuator, and testing with MockMvc.",
+      "source_sha256": "e76c341d0ce702f188739982dc33e50df605b8b2eb0f58db5f52ba4d85fd388e",
+      "source_path": "skills/spring-boot-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "06bbe1adfff9f4a0cd79369a94d327973961e9bfe9d303450bfc24841b03a902": {
+      "description_zh": "用于编写审查SQL查询，涵盖PostgreSQL、MySQL及SQLite的查询优化、索引、JOIN、CTE、窗口函数及EXPLAIN分析。",
+      "source": "Use when writing or reviewing SQL queries. Covers query optimization, indexing strategies, JOINs, CTEs, window functions, and EXPLAIN analysis across PostgreSQL, MySQL, and SQLite.",
+      "source_sha256": "06bbe1adfff9f4a0cd79369a94d327973961e9bfe9d303450bfc24841b03a902",
+      "source_path": "skills/sql-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e34661675614ef20f7678f4ecaa1b7bca26ee685dc086bd268f256770ce719b4": {
+      "description_zh": "用于Supabase开发，涵盖平台内行级安全、实时订阅、边缘函数、认证及PostgreSQL实践。",
+      "source": "Use when building with Supabase. Covers row-level security, realtime subscriptions, edge functions, auth, and PostgreSQL best practices within the Supabase platform.",
+      "source_sha256": "e34661675614ef20f7678f4ecaa1b7bca26ee685dc086bd268f256770ce719b4",
+      "source_path": "skills/supabase-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "682ea53ad8facac70b68729cc87eb05c97bf587c2987a6c3767b6b9d8d52642e": {
+      "description_zh": "用于编写审查Swift代码，涵盖惯用法、工具、项目布局及测试约定；通用SOLID、TDD和整洁架构原则另见相关技能。",
+      "source": "Use when writing or reviewing Swift code. Covers Swift-specific idioms, tooling, project layout, and testing conventions. For universal principles (SOLID, TDD, clean architecture) see the relevant category skills.",
+      "source_sha256": "682ea53ad8facac70b68729cc87eb05c97bf587c2987a6c3767b6b9d8d52642e",
+      "source_path": "skills/swift-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "579ecb062170f9f252d0260d25f9a23a34ba795689ce6e1894aba742a9dfcd5b": {
+      "description_zh": "用于Tailwind CSS界面开发，涵盖实用类优先方法、设计令牌、响应式模式、自定义主题、插件及组件提取。",
+      "source": "Use when building UIs with Tailwind CSS. Covers utility-first approach, design tokens, responsive patterns, custom themes, plugin system, and component extraction.",
+      "source_sha256": "579ecb062170f9f252d0260d25f9a23a34ba795689ce6e1894aba742a9dfcd5b",
+      "source_path": "skills/tailwind-patterns/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3aa6ccffc47f118d9fb438b79449144d8acce290111cf563906ce9f5a867bc0": {
+      "description_zh": "用于编写测试、实践TDD、设计测试套件及决定测试对象和方式，适用于各种语言或框架。",
+      "source": "Use when writing tests, practicing test-driven development, designing test suites, or deciding what and how to test in any language or framework.",
+      "source_sha256": "e3aa6ccffc47f118d9fb438b79449144d8acce290111cf563906ce9f5a867bc0",
+      "source_path": "skills/testing-tdd/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "885e8fb3d241119a6b2788a1da2c02512c654b766a2bffbc66610e5f11e61dee": {
+      "description_zh": "用于LLM通过结构化函数调用与外部系统、API或数据源交互。",
+      "source": "Use when an LLM needs to interact with external systems, APIs, or data sources through structured function calls.",
+      "source_sha256": "885e8fb3d241119a6b2788a1da2c02512c654b766a2bffbc66610e5f11e61dee",
+      "source_path": "skills/tool-calling/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7913997422e14adef19865fa343d18c6ecf296ed790ed184c61a4d0a0b1320b6": {
+      "description_zh": "利用类型系统在编译阶段防止缺陷，涵盖泛型、契约、类型收窄及用类型表达文档。",
+      "source": "Use when leveraging type systems to prevent bugs at compile time — covering generics, contracts, narrowing, and using types as documentation.",
+      "source_sha256": "7913997422e14adef19865fa343d18c6ecf296ed790ed184c61a4d0a0b1320b6",
+      "source_path": "skills/type-safety/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34445f079f4d77d0c1b43df374047d97f544060fef2079ec0c5c05f1208441f2": {
+      "description_zh": "用于编写审查TypeScript代码，涵盖类型系统模式、biome/vitest工具、tsconfig设置及测试约定。",
+      "source": "Use when writing or reviewing TypeScript code. Covers type system patterns, modern tooling (biome, vitest), tsconfig settings, and testing conventions.",
+      "source_sha256": "34445f079f4d77d0c1b43df374047d97f544060fef2079ec0c5c05f1208441f2",
+      "source_path": "skills/typescript-best-practices/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f789116657dc13d23a6e412705919bf261c801f1744db3e5d9c95d9273122fc": {
+      "description_zh": "用于审查UI代码、检查无障碍、设计审计、UX评审及网站最佳实践核查。",
+      "source": "Use when asked to review UI code, check accessibility, audit design, review UX, or check a site against best practices",
+      "source_sha256": "3f789116657dc13d23a6e412705919bf261c801f1744db3e5d9c95d9273122fc",
+      "source_path": "skills/web-design-guidelines/SKILL.md",
+      "package_sha256": "b7ed8acec7e1a580033f31c847676e9896f0cce8caaaf8a39feefc59065957cd",
+      "source_package": "ultrapowers-dev-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c9ab8263280fb97c5dd3d2289af8b06fe2c4d17cede0cced76ef1ba3029d60d": {
+      "description_zh": "用undercover建立测试覆盖反馈循环，在测试后识别未覆盖改动，处理带--include-files的部分测试，配置SimpleCov、CI及覆盖率合并。",
+      "source": "Test coverage feedback loop using undercover. Guides Claude to run undercover\nafter tests to identify untested code changes, handle partial test runs with\n--include-files, and set up SimpleCov, CI pipelines, and coverage merging.",
+      "source_sha256": "4c9ab8263280fb97c5dd3d2289af8b06fe2c4d17cede0cced76ef1ba3029d60d",
+      "source_path": "skills/coverage/SKILL.md",
+      "package_sha256": "eef5d5c44b9f80f8a54aaf432be3ff25c244d45c466d291a0cd0dce4e75bce9e",
+      "source_package": "undercover-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40d7c574f7883cc78d079ab4a27117f5ac9f45d345210d46a205302009d0ffc7": {
+      "description_zh": "查找品牌应在AI回答中被引用却缺席的提示词及取而代之的对象，按AI搜索量排序内容缺口；全面诊断另用可见性审计，持续监测另用提及跟踪。",
+      "source": "When the user wants to find the prompts where their brand should be cited in AI answers but isn't — and who owns the answer instead — prioritized by AI search volume so content can attack the biggest gaps first. Also use on \"AI answer gap,\" \"AI content gap,\" \"where am I missing from AI answers,\" \"what prompts am I losing in AI,\" \"GEO content gaps,\" \"prompts I should own but don't,\" or \"find my AI visibility gaps.\" For the full diagnostic audit, see ai-visibility-audit. For ongoing tracking, see llm-mention-tracking.",
+      "source_sha256": "40d7c574f7883cc78d079ab4a27117f5ac9f45d345210d46a205302009d0ffc7",
+      "source_path": "skills/ai-visibility-agent/ai-answer-gap/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6f15301099167030339178864f8eac855a4da027b903c1074bf71a157eac774": {
+      "description_zh": "审计品牌或域名在重要查询的AI Overviews、ChatGPT及AI搜索回答中的引用，并与竞争者比较，适用于GEO/AEO可见性诊断；持续跟踪和缺口排序另用专项技能。",
+      "source": "When the user wants to know whether their brand or domain is cited in AI answers — AI Overviews, ChatGPT, or AI search — for the queries that matter, and how they stack up against competitors. Also use on \"AI visibility audit,\" \"am I cited in AI answers,\" \"do I show up in ChatGPT,\" \"AI Overviews audit,\" \"GEO audit,\" \"answer engine audit,\" \"AEO audit,\" \"why isn't my brand in AI results,\" or \"who gets cited instead of me.\" The GEO equivalent of an SEO audit. For ongoing mention tracking, see llm-mention-tracking. For prioritizing the gaps, see ai-answer-gap.",
+      "source_sha256": "d6f15301099167030339178864f8eac855a4da027b903c1074bf71a157eac774",
+      "source_path": "skills/ai-visibility-agent/ai-visibility-audit/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7cdc9eab1bc650f56a2fe9ea08efcb0b43ccf516e57fd55b2f8eb111cdb84523": {
+      "description_zh": "根据已有AI可见性、GEO、回答缺口或引用证据形成按优先级排序的改善计划；从零发现缺口先做审计或回答缺口分析。",
+      "source": "When the user has AI visibility, GEO, AI answer gap, or AI citation evidence and wants a prioritized plan to improve where the brand is cited or mentioned in AI answers. Also use on \"AI visibility fixes,\" \"AI visibility fix plan,\" \"generative engine optimization fixes,\" \"AI citation fixes,\" \"answer engine optimization fixes,\" \"fix AI answer gaps,\" or \"how do we get cited in ChatGPT/AI Overviews.\" For finding gaps from scratch, run ai-visibility-audit or ai-answer-gap first.",
+      "source_sha256": "7cdc9eab1bc650f56a2fe9ea08efcb0b43ccf516e57fd55b2f8eb111cdb84523",
+      "source_path": "skills/ai-visibility-agent/ai-visibility-fix-plan/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07a694cd8b637461b8d493c89f047e0ddb8cff89ca221a66db7f19224b133cce": {
+      "description_zh": "在一组提示词上持续跟踪品牌或域名在ChatGPT及AI搜索引擎中的提及频次、相对指定竞争者的声量份额和趋势；单次审计另用可见性审计。",
+      "source": "When the user wants to track how often their brand or domain gets mentioned across ChatGPT and AI search engines over a set of prompts, and how that share of voice compares to named competitors over time. Also use on \"LLM mention tracking,\" \"track AI mentions,\" \"share of voice in AI,\" \"AI share of voice,\" \"brand mentions in ChatGPT,\" \"am I being mentioned more or less,\" \"AI visibility trend,\" or \"monitor AI citations over time.\" For a one-time audit of a prompt set, see ai-visibility-audit.",
+      "source_sha256": "07a694cd8b637461b8d493c89f047e0ddb8cff89ca221a66db7f19224b133cce",
+      "source_path": "skills/ai-visibility-agent/llm-mention-tracking/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4067355b3f3d3d0b83f07a65afff58d759fdc734e3a62011fe198bbc9125e93b": {
+      "description_zh": "跟踪指定竞争者发布或公告及X、LinkedIn、YouTube、Reddit和新闻中的公开反应；完整长期竞争者档案另用画像技能。",
+      "source": "When the user wants to track a named competitor's launch or announcement and the public reaction to it across X, LinkedIn, YouTube, Reddit, and news. Also use on \"competitor launch monitor,\" \"what did [competitor] just ship,\" \"track [competitor]'s announcement,\" \"how is [competitor]'s launch landing,\" \"competitor product launch,\" \"monitor competitor news,\" \"watch a competitor,\" \"competitor reaction,\" or \"is [competitor]'s launch working.\" For a full standing profile of the competitor, see competitor-profiling.",
+      "source_sha256": "4067355b3f3d3d0b83f07a65afff58d759fdc734e3a62011fe198bbc9125e93b",
+      "source_path": "skills/competitive-intelligence-agent/competitor-launch-monitor/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d07685a6c78087ad5797441561f91253eef0e118d0804dafeffe08944bdca27": {
+      "description_zh": "从竞争者网站、搜索SEO、外链、社交及定位等公开足迹研究竞争格局，根据名称或URL形成结构化且附来源的档案；具体发布跟踪另用发布监控。",
+      "source": "When the user wants to research, profile, or analyze a competitor from its public footprint — site, search/SEO, backlinks, social, and positioning. Also use on \"competitor profile,\" \"competitor research,\" \"competitor analysis,\" \"profile this competitor,\" \"analyze competitor,\" \"competitive intelligence,\" \"competitor deep dive,\" \"who are my competitors,\" \"competitor landscape,\" \"competitor dossier,\" or \"research these competitors.\" Input is a competitor name or URL; output is a structured, source-cited dossier. For tracking a specific launch and its reception, see competitor-launch-monitor.",
+      "source_sha256": "4d07685a6c78087ad5797441561f91253eef0e118d0804dafeffe08944bdca27",
+      "source_path": "skills/competitive-intelligence-agent/competitor-profiling/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e29f2cc22b569e912807b6f0add97c67ffbc29561430fa55bd8704016232dec1": {
+      "description_zh": "把主题或受众转为按次序排列且有真实需求依据的内容机会，每项关联证明受众在提问的公开来源；全面内容支柱和节奏规划另用内容策略。",
+      "source": "When the user wants to turn a topic or audience into a ranked list of content opportunities backed by real demand. Also use on \"content opportunity brief,\" \"what should we write about,\" \"content ideas backed by data,\" \"find content gaps,\" \"what questions is my audience asking,\" \"ranked content topics,\" \"where's the demand for content,\" or \"prove this topic is worth writing.\" Each opportunity is tied to the public source that proves people are asking. For the broader plan (pillars, cadence), see content-strategy. For the underlying audience language, see customer-research.",
+      "source_sha256": "e29f2cc22b569e912807b6f0add97c67ffbc29561430fa55bd8704016232dec1",
+      "source_path": "skills/content-strategy-agent/content-opportunity-brief/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a64c47b21ea0f20882c7ea11a9daa2f2216f5a02a18c125e8d022e8e5103e88": {
+      "description_zh": "根据真实公开需求规划内容策略，确定主题群、内容支柱、博客或营销方向、编辑日历和路线图；单份机会列表及受众语言分析另用专项技能。",
+      "source": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \"content strategy,\" \"what should I write about,\" \"content ideas,\" \"blog strategy,\" \"topic clusters,\" \"content planning,\" \"editorial calendar,\" \"content marketing,\" \"content roadmap,\" \"content pillars,\" or \"I don't know what to write.\" Use this whenever someone needs help deciding what content to produce — grounded in real public demand, not guesswork. For a single ranked opportunity list, see content-opportunity-brief. For the audience language behind it, see customer-research.",
+      "source_sha256": "7a64c47b21ea0f20882c7ea11a9daa2f2216f5a02a18c125e8d022e8e5103e88",
+      "source_path": "skills/content-strategy-agent/content-strategy/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4912ec19f0d131e918a5b336112cfa187fe7f301e04313e4cc8ab190a65e46a5": {
+      "description_zh": "通过UnifAPI从公开社区、论坛及评论获取真实客户语言、痛点、异议和情绪，研究ICP、人物画像、JTBD及购买流失原因，为内容和文案提供依据。",
+      "source": "When the user wants to research customers from public communities, or synthesize customer language, pains, and objections. Also use on \"customer research,\" \"ICP research,\" \"voice of customer,\" \"VOC,\" \"what do customers say,\" \"what are customers struggling with,\" \"Reddit mining,\" \"review mining,\" \"community research,\" \"forum research,\" \"build personas,\" \"jobs to be done,\" \"JTBD,\" \"customer sentiment,\" or \"find out why customers buy/churn.\" Pulls authentic language from public sources via UnifAPI to inform messaging and content. For turning the findings into topics, see content-opportunity-brief. For writing copy from them, see copywriting.",
+      "source_sha256": "4912ec19f0d131e918a5b336112cfa187fe7f301e04313e4cc8ab190a65e46a5",
+      "source_path": "skills/content-strategy-agent/customer-research/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2be2e625af94d1e7aab03a10fa13183620ed2bf428c38466407b7e4c3d0af8cb": {
+      "description_zh": "对照附近牙科或正畸诊所比较公开评分、评论增长及本地地图结果展示，研究牙医相关查询排名问题；只读公开商户信息，用于营销研究，不提供牙科或临床建议。",
+      "source": "When a dental practice, dentist, or orthodontic office wants to benchmark its public reviews and local-pack presence against nearby practices, or understand why it is losing the \"dentist near me\" map pack. Also use on \"dental reviews benchmark,\" \"why aren't we in the map pack,\" \"compare our rating to other dentists,\" \"review velocity,\" \"Google reviews for my dental office,\" or \"dental reputation.\" Reads public listing data only — marketing research, not dental or clinical advice.",
+      "source_sha256": "2be2e625af94d1e7aab03a10fa13183620ed2bf428c38466407b7e4c3d0af8cb",
+      "source_path": "skills/dental-marketing/dental-reputation-benchmark/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b8b2b49e6a36938882defb9619c3f8a0bf2ab8a695903cb8d6695deefd27e2e": {
+      "description_zh": "从公开数据研究患者预约前对牙齿美白、种植牙、Invisalign等服务的真实问题，转成优先内容计划并检查AI回答可见性；用于牙科营销研究，不提供临床建议。",
+      "source": "When a dental practice wants to know the real questions patients ask about its services and turn them into a prioritized content plan. Also use on \"dental content ideas,\" \"what do patients ask before booking,\" \"teeth whitening / implants / Invisalign questions,\" \"dental blog topics,\" \"content for my dental website,\" or \"are we showing up in AI answers for dental questions.\" Reads public data only — marketing research, not dental or clinical advice.",
+      "source_sha256": "7b8b2b49e6a36938882defb9619c3f8a0bf2ab8a695903cb8d6695deefd27e2e",
+      "source_path": "skills/dental-marketing/patient-question-content/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "48a7195a154cee5df97a94cd1af88b17dcf599eebe970333185b710352c686db": {
+      "description_zh": "通过UnifAPI读取Hacker News的top/new/best/ask/show/jobs信息流、条目、评论树及用户karma，支持发布和情绪研究；无关键词搜索，须扫描信息流，先连接unifapi，只读且不发帖。",
+      "source": "When a workflow needs public Hacker News data through UnifAPI — the top/new/best/ask/show/jobs story feeds, item metadata, comment trees, or user karma. Also use on \"did our launch land on HN,\" \"scan Show HN for,\" \"read this HN thread,\" \"Hacker News sentiment,\" or when another skill (launch monitor, social listening) needs the deterministic HN read path. No keyword search — scan the feeds. Connect via the `unifapi` skill first. Read-only research, never posts.",
+      "source_sha256": "48a7195a154cee5df97a94cd1af88b17dcf599eebe970333185b710352c686db",
+      "source_path": "skills/hacker-news-agent/hacker-news/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3710268ce72e983a9668e42373bb4616feabcd383adb02d17d5bc33fbc550998": {
+      "description_zh": "为暖通、管道、屋顶、电气或综合承包商研究房主真实问题及费用疑问，形成优先内容计划，并研究维修问题的AI可见性；只读公开营销研究。",
+      "source": "When a home-services business (HVAC, plumbing, roofing, electrical, or general contractor) wants to know the real problem and cost questions homeowners ask about its services, and turn them into a prioritized content plan. Also use on \"what do homeowners search,\" \"home services content ideas,\" \"cost-to-replace content,\" \"why is my ac freezing content,\" \"trade SEO content plan,\" \"questions homeowners ask,\" or \"are we showing up in AI answers for repair questions.\" Reads public data only — read-only marketing research.",
+      "source_sha256": "3710268ce72e983a9668e42373bb4616feabcd383adb02d17d5bc33fbc550998",
+      "source_path": "skills/home-services-marketing/homeowner-question-content/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8709e8ca1f587eebe84d87cfb66d80db51efc05073ff1b42f0c9963085af3be2": {
+      "description_zh": "根据服务城市和邮编审计家庭服务企业在Google本地地图结果中的排名，识别暖通、管道、屋顶、电气等业务弱覆盖区域；只读公开地图和搜索结果。",
+      "source": "When a home-services business (HVAC, plumbing, roofing, electrical, or general contractor) wants to know where it ranks in Google's local pack for its services across every city and ZIP it serves. Also use on \"service area ranking,\" \"am I in the map pack for [city],\" \"ac repair [city] ranking,\" \"which service areas are weak,\" \"near me ranking by location,\" \"multi-area local SEO,\" or \"why aren't we showing up in the next town over.\" Reads public map and SERP data only — read-only research.",
+      "source_sha256": "8709e8ca1f587eebe84d87cfb66d80db51efc05073ff1b42f0c9963085af3be2",
+      "source_path": "skills/home-services-marketing/service-area-rank-audit/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fecda050b4b62bb0cd5ecb45a0870e32d9f1a589e002cc0bbae748245c27e7c6": {
+      "description_zh": "合作前根据创作者公开帖子及互动检查受众匹配和品牌安全，支持KOL尽调及赞助评估；只读研究，不执行联系。",
+      "source": "When the user wants to vet a specific creator's audience fit and brand-safety before working with them. Also use on \"is this influencer a good fit,\" \"vet this creator,\" \"brand safety check,\" \"does their audience match,\" \"should we work with [handle],\" \"creator due diligence,\" \"check this KOL before outreach,\" or \"is this account safe to sponsor.\" Reads public posts and engagement only. Read-only research, not outreach.",
+      "source_sha256": "fecda050b4b62bb0cd5ecb45a0870e32d9f1a589e002cc0bbae748245c27e7c6",
+      "source_path": "skills/influencer-marketing-agent/audience-fit-check/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff2184cd9adab7a320cf1927c299d2ed74b876bdc1c4f12016d13f337080fded": {
+      "description_zh": "为网红营销研究完整漏斗流程，形成活动设置、创作者匹配、预算和价格预测、联系确认资料、内容审查表、发布跟踪及复盘报告；只读公开和用户提供数据，不执行联系或活动管理。",
+      "source": "When the user wants a full-funnel influencer marketing campaign workflow: campaign setup, creator matching, budget and pricing forecast, outreach/confirmation pack, content review checklist, launch tracking, or post-campaign report. Also use on \"plan an influencer campaign,\" \"run creator campaign ops,\" \"compare predicted vs actual,\" \"track influencer results,\" \"review creator content,\" or \"creator campaign workflow agent.\" Reads public data and user-provided campaign data only; read-only research, not outreach or campaign management.",
+      "source_sha256": "ff2184cd9adab7a320cf1927c299d2ed74b876bdc1c4f12016d13f337080fded",
+      "source_path": "skills/influencer-marketing-agent/creator-campaign-ops/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f837d40a1f764b93f30b875a10b26caff3a9a5075fee9018e3db43ea8061831": {
+      "description_zh": "根据活动简报生成按优先级排序且有证据的创作者候选名单及联系切入角度，支持TikTok、YouTube、Instagram或X等平台研究；不执行联系。",
+      "source": "When the user has a campaign brief and needs a ranked shortlist of creators to work with. Also use on \"find influencers for,\" \"build a creator list,\" \"who should we sponsor,\" \"shortlist KOLs,\" \"influencer shortlist,\" \"find creators in [niche],\" \"creators on TikTok/YouTube/Instagram/X for,\" or \"who fits this campaign.\" Turns a brief into a ranked, evidence-backed shortlist with outreach angles. Read-only research, not outreach.",
+      "source_sha256": "8f837d40a1f764b93f30b875a10b26caff3a9a5075fee9018e3db43ea8061831",
+      "source_path": "skills/influencer-marketing-agent/creator-shortlist/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e7cd4ca66f6a6bd99936b9976723e35c6656c66764fd0aa98e34a7d7259ecf01": {
+      "description_zh": "先确认产品背景，再通过UnifAPI读取公开X数据，按确定性流程为X/Twitter KOL定价、排序或批量分析及ROI研究；只读研究，不执行联系。",
+      "source": "When pricing, ranking, or researching X/Twitter KOLs for a creator marketing campaign. Also use on \"how much should I pay this influencer,\" \"price these handles,\" \"batch KOL analysis,\" \"KOL ROI,\" \"creator pricing,\" \"is this KOL worth it,\" or \"agent-native KOL Pricing framework.\" Require product context first, read public X data through UnifAPI, then run the deterministic pricing workflow. Read-only research, not outreach.",
+      "source_sha256": "e7cd4ca66f6a6bd99936b9976723e35c6656c66764fd0aa98e34a7d7259ecf01",
+      "source_path": "skills/influencer-marketing-agent/kol-pricing/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72343fa67799a8d02026a323f4c310da7875019144d7e164d41c9e0edb32db34": {
+      "description_zh": "通过UnifAPI读取Instagram公开档案、粉丝、帖子、reels、互动、评论、地点及搜索数据，支持创作者及合作研究；先连接unifapi，不发帖或私信。",
+      "source": "When a workflow needs public Instagram data through UnifAPI — profiles and follower size, posts and reels with engagement, post comments, location pages, or search. Also use on \"research these IG creators,\" \"pull posts for,\" \"Instagram follower count,\" \"comments on this post,\" \"is this a paid partnership,\" or when another skill (KOL pricing, creator shortlist, audience fit) needs the deterministic Instagram read path. Connect via the `unifapi` skill first. Read-only research, never posts or DMs.",
+      "source_sha256": "72343fa67799a8d02026a323f4c310da7875019144d7e164d41c9e0edb32db34",
+      "source_path": "skills/instagram-agent/instagram/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87a65934fa73dee0897f208c4f15785d717e96bed23392de9819d49e00df844d": {
+      "description_zh": "将律所或律师的公开评价及本地地图展示与竞争律所比较，分析评分、评论增长及律师查询地图排名；只读公开商户数据，用于营销研究，不提供法律建议。",
+      "source": "When a law firm or attorney wants to benchmark its public reviews and local-pack presence against competing firms, or understand why it's losing the map pack for attorney searches. Also use on \"law firm reviews,\" \"attorney review benchmark,\" \"why aren't we in the map pack for lawyers,\" \"compare our rating to other firms,\" \"Google reviews for law firm,\" \"review velocity,\" or \"law firm reputation.\" Reads public listing data only — marketing research, not legal advice.",
+      "source_sha256": "87a65934fa73dee0897f208c4f15785d717e96bed23392de9819d49e00df844d",
+      "source_path": "skills/law-firm-marketing/attorney-reputation-benchmark/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8178db15876a0e4a06899fec60fa09a5d7a848be49896dedc87770b389b278f": {
+      "description_zh": "按执业领域与城市组合审计律师或律所的搜索及本地地图排名，查找阻碍因素和内容缺口；只读公开SERP和地图数据，用于营销研究，不提供法律建议。",
+      "source": "When a law firm or attorney wants to know where it ranks for each practice-area + city query and what's holding it back. Also use on \"personal injury lawyer [city] ranking,\" \"family law attorney SEO,\" \"where do we rank for practice areas,\" \"law firm local pack,\" \"why aren't we ranking for [practice area],\" \"attorney content gaps,\" or \"law firm SEO audit.\" Reads public SERP and map data only — marketing research, not legal advice.",
+      "source_sha256": "f8178db15876a0e4a06899fec60fa09a5d7a848be49896dedc87770b389b278f",
+      "source_path": "skills/law-firm-marketing/practice-area-rank-audit/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad223fff6b08dc54d49587c10911ef7a3311758a41fb48a159bf89929010cefd": {
+      "description_zh": "把目标客户公司近期融资、领导变动、扩张、发布及合作等公开新闻转为带日期和来源的销售联系切入点；只读新闻和公司页面，发送由操作者自行完成。",
+      "source": "When a seller or SDR wants recent public news about a target account — funding, leadership changes, expansion, launches, partnerships — turned into dated, sourced outreach hooks. Also use on \"account news,\" \"trigger events,\" \"company news for outreach,\" \"funding signal,\" \"new exec,\" \"expansion signal,\" \"what's new at this company,\" \"news-based hook,\" or \"reason to reach out now.\" Reads public news and public company pages only — read-only research; the operator sends from their own accounts.",
+      "source_sha256": "ad223fff6b08dc54d49587c10911ef7a3311758a41fb48a159bf89929010cefd",
+      "source_path": "skills/lead-company-research-agent/account-news-signals/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb8dbaeef732d13051c4ade9a0e325057fcc1efb46b31f66f3f25b83e0a2ef99": {
+      "description_zh": "从公司LinkedIn公开页面、帖子、招聘、员工及可见档案形成B2B客户简报，研究采购委员会、优先事项、招聘信号及沟通问题；仅按URL slug读取公开面，不读登录后或私有数据。",
+      "source": "When a seller, SDR, or founder wants a B2B account brief built from a company's public LinkedIn presence — its page, posts, open jobs, employees, and visible profiles. Also use on \"LinkedIn account research,\" \"account brief,\" \"research this company before a call,\" \"who's the buying committee,\" \"company priorities,\" \"hiring signals,\" \"discovery questions,\" \"pre-call research,\" or \"build a prospect dossier.\" Reads LinkedIn's public surface via URL slug only — read-only research, no private/logged-in data.",
+      "source_sha256": "eb8dbaeef732d13051c4ade9a0e325057fcc1efb46b31f66f3f25b83e0a2ef99",
+      "source_path": "skills/lead-company-research-agent/linkedin-account-research/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09cd10d6d94a5c1b89c1d15fc3a6e97ee12c8c103b8f69e7a3cf9aebd4818f9a": {
+      "description_zh": "通过UnifAPI读取LinkedIn公开公司页、粉丝员工数、招聘、会员洞察、人物、帖子及互动，为客户和竞争研究提供数据；先连接unifapi，不添加联系人或发送消息。",
+      "source": "When a workflow needs public LinkedIn data through UnifAPI — company pages, follower/employee counts, open jobs and job-count, member insights, people, posts, or engagement. Also use on \"research this company on LinkedIn,\" \"who works at,\" \"open roles at,\" \"LinkedIn profile for,\" \"company posts,\" or when another skill (account research, news signal, buying signal, competitor profiling) needs the deterministic LinkedIn read path. Connect via the `unifapi` skill first. Read-only research, never connects or messages.",
+      "source_sha256": "09cd10d6d94a5c1b89c1d15fc3a6e97ee12c8c103b8f69e7a3cf9aebd4818f9a",
+      "source_path": "skills/linkedin-agent/linkedin/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "797961c12e595dcb8175b928914dd5bafdc5fc7e3a9f00439a623a7b5729285e": {
+      "description_zh": "检查本地商户公开地图及商户信息的准确完整性，核对名称、地址、分类、电话、评分和评论展示及NAP一致性；仅只读研究。",
+      "source": "When a local business wants to check that its public map/local listing is accurate and complete — name, address, category, phone, rating, and review presence. Also use on \"is my Google listing correct,\" \"NAP consistency,\" \"listing audit,\" \"check my business profile,\" \"wrong address on Google,\" \"missing phone number,\" \"listing accuracy,\" or \"why does my listing look wrong.\" Reads public listing data only — read-only research.",
+      "source_sha256": "797961c12e595dcb8175b928914dd5bafdc5fc7e3a9f00439a623a7b5729285e",
+      "source_path": "skills/local-seo-agent/listing-accuracy-audit/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4138f6f2c06244774952129c7820aa51cb6a13395de60cf83944adcbe008dad": {
+      "description_zh": "研究在目标查询本地地图结果中领先的竞争商户，比较分类、评分、评论数及自身缺口；仅只读公开地图和SERP数据。",
+      "source": "When a local business wants to map the competitors winning the local pack for its target queries — their categories, ratings, review counts, and what they have that it lacks. Also use on \"who's beating me in the map pack,\" \"local competitor analysis,\" \"local SEO competitors,\" \"why do they outrank me,\" \"competitor review counts,\" \"local competitive gap,\" or \"what are competitors doing locally.\" Reads public map and SERP data only — read-only research.",
+      "source_sha256": "c4138f6f2c06244774952129c7820aa51cb6a13395de60cf83944adcbe008dad",
+      "source_path": "skills/local-seo-agent/local-competitor-scan/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5cc43f23d7b224ab69d399a650656d9191e01ae6cb9e657997517b332b5753fe": {
+      "description_zh": "审计本地企业在单地点或多地点关键查询中的Google本地地图结果排名，支持地区排名跟踪及本地可见性诊断；只读公开地图和SERP数据。",
+      "source": "When a local business wants to know where it ranks in Google's local pack / map results for its key queries — in one location or across many. Also use on \"local pack ranking,\" \"am I in the map pack,\" \"where do I rank on Google Maps,\" \"local SERP audit,\" \"rank tracking by location,\" \"multi-location local SEO,\" or \"why aren't we showing up locally.\" Reads public map and SERP data only — read-only research.",
+      "source_sha256": "5cc43f23d7b224ab69d399a650656d9191e01ae6cb9e657997517b332b5753fe",
+      "source_path": "skills/local-seo-agent/local-pack-audit/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10cd95f28ea3f50f822e54da6b47cde8b45b13f61c37c2fb0f617c364dcbaa6c": {
+      "description_zh": "比较医美机构或美容诊所与近邻竞争者的公开评论、评分、增长和本地地图展示，研究排名缺口；只读公开商户数据，用于营销研究，不提供医疗建议。",
+      "source": "When a med spa, medical spa, or aesthetics clinic wants to benchmark its public reviews and local-pack standing against the nearest competitors, or understand why it is losing the map pack. Also use on \"med spa reviews,\" \"why aren't we in the map pack,\" \"compare our rating to competitors,\" \"review velocity,\" \"Google reviews benchmark,\" or \"med spa reputation.\" Reads public listing data only — marketing research, not medical advice.",
+      "source_sha256": "10cd95f28ea3f50f822e54da6b47cde8b45b13f61c37c2fb0f617c364dcbaa6c",
+      "source_path": "skills/med-spa-marketing/med-spa-reputation-benchmark/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b23282307c48242a47b16e3503e768114f8d473a6cd2990cb750d713f0d7590b": {
+      "description_zh": "为医美机构研究本地疗程需求、趋势、TikTok热度及AI回答可见性，确定内容和推广优先方向；只读公开数据，用于营销研究，不提供医疗建议。",
+      "source": "When a med spa or aesthetics clinic wants to know which treatments are in demand locally and what content or offers to prioritize. Also use on \"med spa content ideas,\" \"which treatments are trending,\" \"treatment demand,\" \"what should we promote,\" \"med spa SEO content,\" \"is [treatment] trending on TikTok,\" or \"are we showing up in AI answers for treatments.\" Reads public data only — marketing research, not medical advice.",
+      "source_sha256": "b23282307c48242a47b16e3503e768114f8d473a6cd2990cb750d713f0d7590b",
+      "source_path": "skills/med-spa-marketing/treatment-demand-radar/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb06e4bb261087e475128b4f06ad262dc5a16c0c4b7788007725583dd6f8db66": {
+      "description_zh": "比较房产经纪人或经纪公司与附近竞争者的公开评价及本地地图展示，分析城市或社区房源查询表现；只读商户和SERP数据，用于营销研究，不提供房产建议。",
+      "source": "When a real estate agent or brokerage wants to benchmark its public reviews and local-pack presence against nearby competitors for queries like \"realtor [city]\" or \"homes for sale [neighborhood].\" Also use on \"realtor reviews benchmark,\" \"why aren't we in the map pack for realtor,\" \"compare our Google reviews to other agents,\" \"agent reputation,\" \"local pack for real estate,\" or \"how do I beat the top agent locally.\" Reads public listing and SERP data only — marketing research, not real-estate advice.",
+      "source_sha256": "bb06e4bb261087e475128b4f06ad262dc5a16c0c4b7788007725583dd6f8db66",
+      "source_path": "skills/real-estate-marketing/agent-reputation-benchmark/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7894d5bad174079c6c622242f9ef059b68cb042429a4e8da0da97c07b33971e2": {
+      "description_zh": "寻找社区级搜索和内容机会，识别Zillow及大型门户较弱而本地意图较强的主题，支持社区指南和本地市场报告；只读公开搜索及SERP，用于营销研究，不提供房产建议。",
+      "source": "When a real estate agent or brokerage wants to find the neighborhood-level search and content opportunities it can actually own — where Zillow and the big portals are weak and local intent is high. Also use on \"neighborhood guide ideas,\" \"hyperlocal SEO for realtors,\" \"what should I write to get found locally,\" \"rank for homes for sale [neighborhood],\" \"local market report content,\" or \"where can I beat Zillow.\" Reads public search and SERP data only — marketing research, not real-estate advice.",
+      "source_sha256": "7894d5bad174079c6c622242f9ef059b68cb042429a4e8da0da97c07b33971e2",
+      "source_path": "skills/real-estate-marketing/neighborhood-guide-opportunity/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdd2997540e43a73cfd6a02033ddb9daf1b36517f62a39f62ea7a0c991b7a73e": {
+      "description_zh": "通过UnifAPI读取Reddit公开社区档案规则、评论树、用户活动karma、home/news/popular信息流及热门搜索；该数据路径无关键词搜索，依靠种子发现，先连接unifapi，只读不发帖。",
+      "source": "When a workflow needs public Reddit data through UnifAPI — subreddit profiles and rules, thread comment trees, user activity and karma, the home/news/popular feeds, or trending searches. Also use on \"research this subreddit,\" \"what does r/... discuss,\" \"pull this Reddit thread,\" \"Reddit user activity,\" or when another skill (community research, social listening, customer research) needs the deterministic Reddit read path. Reddit has no keyword search — discovery is seed-driven. Connect via the `unifapi` skill first. Read-only research, never posts.",
+      "source_sha256": "bdd2997540e43a73cfd6a02033ddb9daf1b36517f62a39f62ea7a0c991b7a73e",
+      "source_path": "skills/reddit-agent/reddit/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d23c5ba5d65fe1d34c4f2eaebef0dd47b0f83973e7a8c2ea7c07c7142baddff8": {
+      "description_zh": "为餐厅、咖啡馆或酒吧研究本地菜品及菜系需求、TikTok趋势和AI回答可见性，确定内容或推广优先方向；只读公开营销研究，不管理菜单、商户信息或预订。",
+      "source": "When a restaurant, cafe, or bar wants to know which dishes and cuisine angles are in demand locally and what content or promotions to prioritize. Also use on \"restaurant content ideas,\" \"which dishes are trending,\" \"menu demand,\" \"what should we promote,\" \"is [dish] trending on TikTok,\" \"restaurant SEO content,\" or \"are we showing up in AI answers for [cuisine].\" Reads public data only — marketing research, not menu, listing, or reservation management.",
+      "source_sha256": "d23c5ba5d65fe1d34c4f2eaebef0dd47b0f83973e7a8c2ea7c07c7142baddff8",
+      "source_path": "skills/restaurant-marketing/menu-demand-radar/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4eae96fbf5fdc5ca8b28000d9db81917e89ebd553a6d61e21e7cc66d137f295b": {
+      "description_zh": "审计餐厅、咖啡馆或酒吧的本地菜系城市查询排名、评论主题及TikTok近期热度；只读公开商户和社交营销研究，不管理商户信息或预订。",
+      "source": "When a restaurant, cafe, or bar wants to audit how it shows up for local diners — local-pack rank for its cuisine/city queries, review themes, and recent social buzz (TikTok) about the venue and its category. Also use on \"are we in the map pack for [cuisine] near me,\" \"restaurant reviews,\" \"why aren't we showing up for dinner near me,\" \"what are people saying about us,\" \"is our restaurant trending on TikTok,\" or \"restaurant local marketing.\" Reads public listing and social data only — marketing research, not listing or reservation management.",
+      "source_sha256": "4eae96fbf5fdc5ca8b28000d9db81917e89ebd553a6d61e21e7cc66d137f295b",
+      "source_path": "skills/restaurant-marketing/restaurant-local-buzz/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af9a17a29b4a2892520917f96c906215053c0c4b106faf4ed32c5442c3b45048": {
+      "description_zh": "研究关键词机会、竞争排名及词汇缺口，建立主题群并分析搜索量、难度和长尾词；既有网站诊断及结构化标记另用专项技能。",
+      "source": "When the user wants to research keywords, find keyword opportunities, run a keyword gap analysis, build topic clusters, or compare what competitors rank for. Also use on \"keyword research,\" \"keyword gaps,\" \"what should I target,\" \"competitor keywords,\" \"search volume,\" \"keyword difficulty,\" \"keyword opportunities,\" \"long-tail keywords,\" \"topic clusters,\" \"what keywords am I missing,\" or \"find keywords for my niche.\" For diagnosing an existing site, see the seo-audit skill. For structured data, see the schema skill.",
+      "source_sha256": "af9a17a29b4a2892520917f96c906215053c0c4b106faf4ed32c5442c3b45048",
+      "source_path": "skills/seo-agent/keyword-research/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e7c7fcfe2f86188609995131628823ff6eb82d59e5be2d1d9e2084db2425bda": {
+      "description_zh": "为网站添加、修复或优化schema标记和结构化数据，涵盖JSON-LD、FAQ、产品、评论、面包屑及Google增强结果和知识面板需求；广泛SEO问题另用审计技能。",
+      "source": "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"product schema,\" \"review schema,\" \"breadcrumb schema,\" \"Google rich results,\" \"knowledge panel,\" \"star ratings in search,\" or \"add structured data.\" Use this whenever someone wants their pages to show enhanced results in Google. For broader SEO issues, see the seo-audit skill.",
+      "source_sha256": "0e7c7fcfe2f86188609995131628823ff6eb82d59e5be2d1d9e2084db2425bda",
+      "source_path": "skills/seo-agent/schema/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "049a1c3b1db730c6eeea7ef3c63a98a11864f822f54f441ad151c71d470c72fb": {
+      "description_zh": "审计诊断网站技术及页面SEO、元标签、排名流量下降、速度、Core Web Vitals、抓取索引、外链及有害链接或链接缺口；关键词竞争缺口及结构化数据另用专项技能。",
+      "source": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO health check,\" \"my traffic dropped,\" \"lost rankings,\" \"not showing up in Google,\" \"site isn't ranking,\" \"Google update hit me,\" \"page speed,\" \"core web vitals,\" \"crawl errors,\" \"indexing issues,\" \"backlink audit,\" \"toxic links,\" or \"link gap.\" Use this even if the user just says something vague like \"my SEO is bad\" or \"help with SEO\" — start with an audit. For keyword and competitor gaps, see the keyword-research skill. For structured data, see the schema skill.",
+      "source_sha256": "049a1c3b1db730c6eeea7ef3c63a98a11864f822f54f441ad151c71d470c72fb",
+      "source_path": "skills/seo-agent/seo-audit/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "288e0742c554542b464c0e99aa0e5132df6033b5477768fdf298f3558d172850": {
+      "description_zh": "根据已有SEO审计证据形成具体且按优先级排序的修复计划，把问题转成任务；从零诊断先审计，schema实现另用专项技能。",
+      "source": "When the user has SEO audit evidence and wants a concrete, prioritized plan for what to fix next. Also use on \"SEO fixes,\" \"SEO fix plan,\" \"technical SEO fixes,\" \"on-page fix list,\" \"prioritize SEO issues,\" \"turn this SEO audit into tasks,\" \"SEO remediation plan,\" or \"what should I fix first for SEO.\" For diagnosing issues from scratch, run seo-audit first; for schema implementation details, see schema.",
+      "source_sha256": "288e0742c554542b464c0e99aa0e5132df6033b5477768fdf298f3558d172850",
+      "source_path": "skills/seo-agent/seo-fix-plan/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c029922cb3ff57ac5af073cbce8e798b946fdb68905860c4717cc14bcf31c188": {
+      "description_zh": "从公开Reddit帖子和评论研究细分领域的重要社区、重复问题、异议及真实受众语言，输出社区研究简报；不发帖、评论或私信，多平台监控另用社交监听。",
+      "source": "When the user wants to understand the Reddit communities around a niche — which subreddits matter, what questions and objections keep coming up, and the exact language people use. Also use on \"Reddit research,\" \"subreddit research,\" \"where does my audience hang out on Reddit,\" \"community research,\" \"what do people ask on Reddit about X,\" \"Reddit objections,\" \"voice of customer from Reddit,\" \"find relevant subreddits,\" or \"outreach-safe threads.\" Outputs a community research brief from public posts and comments. Reads public Reddit only — never posts, comments, or DMs. For multi-platform brand monitoring, see social-listening-brief.",
+      "source_sha256": "c029922cb3ff57ac5af073cbce8e798b946fdb68905860c4717cc14bcf31c188",
+      "source_path": "skills/social-listening-agent/reddit-community-research/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a70458c5e4c90c3f9eb1cce30f19f352349fc7d0af46a1a707c0115e4453b3c0": {
+      "description_zh": "按相关性、社区规则、对话意图及联系风险评估Reddit讨论是否值得回复、引用、监控或避开，确定参与优先级；广泛社区图谱先用社区研究。",
+      "source": "When the user wants to decide which Reddit threads are worth replying to, citing, monitoring, or avoiding based on relevance, subreddit rules, conversation intent, and outreach risk. Also use on \"Reddit thread fit,\" \"is this Reddit thread safe to reply to,\" \"find outreach-safe Reddit threads,\" \"prioritize Reddit replies,\" \"Reddit participation risk,\" or \"which Reddit posts should we engage.\" For broader subreddit mapping, run reddit-community-research first.",
+      "source_sha256": "a70458c5e4c90c3f9eb1cce30f19f352349fc7d0af46a1a707c0115e4453b3c0",
+      "source_path": "skills/social-listening-agent/reddit-thread-fit-check/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "146032e208b66abc2ed9980fa7559b80556b93ac71f48d1938323bb54058206f": {
+      "description_zh": "监控社交和新闻中对品牌、产品、类别或发布的公开讨论，返回重复主题及示例帖的简明报告，支持提及和情绪研究；不制作仪表板，也不发帖、回复或私信。",
+      "source": "When the user wants to monitor what people are publicly saying about a brand, product, category, or launch across social and news. Also use on \"social listening,\" \"brand monitoring,\" \"what are people saying about us,\" \"monitor mentions,\" \"track our launch,\" \"buzz check,\" \"social media monitoring,\" \"are people talking about X,\" \"sentiment on Reddit/X/TikTok,\" or \"what's the chatter.\" Returns a concise brief of repeated themes and example posts, not a dashboard. Reads public posts only — never posts, replies, or DMs. For deep subreddit mapping, see reddit-community-research.",
+      "source_sha256": "146032e208b66abc2ed9980fa7559b80556b93ac71f48d1938323bb54058206f",
+      "source_path": "skills/social-listening-agent/social-listening-brief/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70b3fabd06f5e49ffcfee041b24f33d2aece784275f751025842b1236aa6af99": {
+      "description_zh": "从X和LinkedIn公开帖子发现工具需求、竞争产品抱怨或切换及招聘所示采购信号，辅助销售线索研究；只读，发送联系由操作者自行完成。",
+      "source": "When a seller or SDR wants to catch public buying intent on X/Twitter and LinkedIn — someone asking for a tool they sell, complaining about or switching off a competitor, or hiring for a role that implies a need. Also use on \"buying signals,\" \"intent signals,\" \"social listening for sales,\" \"warm leads,\" \"who's looking for a tool like ours,\" \"people switching vendors,\" \"hiring signal,\" \"trigger event,\" \"find prospects on Twitter/LinkedIn,\" or \"monitor for sales triggers.\" Reads public posts only — read-only research; the operator sends from their own accounts.",
+      "source_sha256": "70b3fabd06f5e49ffcfee041b24f33d2aece784275f751025842b1236aa6af99",
+      "source_path": "skills/social-selling-agent/buying-signal-monitor/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1e8ca787c5932f24c35d62120b1f429186688e8d25993f39695e8ccb64bc4967": {
+      "description_zh": "通过UnifAPI读取Meta Threads的关键词近期热门帖子、档案及账号帖子、回复和转发，为社交监听和内容研究提供数据；先连接unifapi，只读不发帖。",
+      "source": "When a workflow needs public Threads (Meta) data through UnifAPI — recent and top post search on a term, profiles, or a handle's posts, replies, and reposts. Also use on \"what's being said on Threads about,\" \"newest vs top Threads posts,\" \"Threads profile for,\" or when another skill (social listening, content opportunity) needs the deterministic Threads read path. Connect via the `unifapi` skill first. Read-only research, never posts.",
+      "source_sha256": "1e8ca787c5932f24c35d62120b1f429186688e8d25993f39695e8ccb64bc4967",
+      "source_path": "skills/threads-agent/threads/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd42fb675491b026bac8d9efdb8b83f3ffdce3d8c3d577613486d46e1463bc6e": {
+      "description_zh": "通过UnifAPI读取TikTok公开创作者、互动、视频、评论、话题标签、音乐信息流及搜索，用于候选创作者、受众和需求研究；先连接unifapi，只读不发帖。",
+      "source": "When a workflow needs public TikTok data through UnifAPI — creator profiles and engagement, videos and comments, hashtag and music feeds, or search. Also use on \"find TikTok creators for,\" \"pull videos for,\" \"TikTok follower count,\" \"search TikTok for,\" \"rising hashtags,\" or when another skill (creator shortlist, audience fit, demand radar, local buzz) needs the deterministic TikTok read path. Connect via the `unifapi` skill first. Read-only research, never posts.",
+      "source_sha256": "dd42fb675491b026bac8d9efdb8b83f3ffdce3d8c3d577613486d46e1463bc6e",
+      "source_path": "skills/tiktok-agent/tiktok/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a7d8b61115cd4087605ad703a992c6f0db87e35d00d02ee95173fd766606d6b6": {
+      "description_zh": "用于UnifAPI公开数据API和MCP接入，连接OAuth客户端、发现操作、调用社交/搜索/抓取/新闻接口、排查认证并选择OAuth或API密钥回退，作为凭据及工具使用前的接入指导。",
+      "source": "Use when working with UnifAPI public-data APIs or the UnifAPI MCP server: connecting OAuth MCP clients, discovering operations, calling social/search/scrape/news APIs, troubleshooting UnifAPI auth, or deciding between MCP OAuth and API-key fallback. Always use before asking for UnifAPI credentials or calling UnifAPI tools.",
+      "source_sha256": "a7d8b61115cd4087605ad703a992c6f0db87e35d00d02ee95173fd766606d6b6",
+      "source_path": "skills/unifapi/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "105b71623d0a79cf2980f37d9b6f67cd7d73a6236a65145f2f2d4c68fa521567": {
+      "description_zh": "通过UnifAPI读取X/Twitter公开档案、帖子、互动、粉丝关注、近期搜索、自动补全及趋势，为KOL、线索和竞争研究提供数据；先连接unifapi，只读不发帖。",
+      "source": "When a workflow needs public X/Twitter data through UnifAPI — profiles, posts, engagement, followers/following, recent search, autocomplete, or trends. Also use on \"read this X handle,\" \"pull tweets for,\" \"X follower count,\" \"search X for,\" \"Twitter engagement,\" \"X trends,\" or when another skill (KOL pricing, creator shortlist, buying signals, competitor/listening) needs the deterministic X read path. Connect via the `unifapi` skill first. Read-only research, never posts.",
+      "source_sha256": "105b71623d0a79cf2980f37d9b6f67cd7d73a6236a65145f2f2d4c68fa521567",
+      "source_path": "skills/x-twitter-agent/x-twitter/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "795527c5cad284b22ac50fd4e0f8293a1323df0de4d99420821f8e4908241d62": {
+      "description_zh": "通过UnifAPI读取YouTube公开频道、视频、列表、数量、评论、字幕轨、社区帖、相关推荐、趋势及标签视频，并跨视频频道列表搜索；先连接unifapi，只读不上传。",
+      "source": "When a workflow needs public YouTube data through UnifAPI — channel, video, and playlist metadata, subscriber/view/like counts, video comments, caption tracks, channel community posts, related and trending videos, hashtag videos, and search across videos, channels, and playlists. Also use on \"who owns this topic on YouTube,\" \"pull this channel's videos,\" \"YouTube view counts,\" \"what are commenters saying,\" \"get this video's captions/transcript,\" \"this channel's playlists,\" or when another skill (creator vetting, competitor reception, content demand) needs the deterministic YouTube read path. Connect via the `unifapi` skill first. Read-only research, never uploads.",
+      "source_sha256": "795527c5cad284b22ac50fd4e0f8293a1323df0de4d99420821f8e4908241d62",
+      "source_path": "skills/youtube-agent/youtube/SKILL.md",
+      "package_sha256": "4914af484a03cd35d590b83717ba71e369142e230121650713deb2f8975725d5",
+      "source_package": "UnifAPI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8cd316a4368250160b77fbcf7aa09f60b1e1aab1a1467d74a9c8358ca822e7ba": {
+      "description_zh": "处理Uniform图片媒体资产，定义asset参数，用imageFrom渲染src并读取原始资产字段，区分DAM库及custom-url，初始化迁移composition资产值并处理参数类型切换；支持带焦点的响应式变换图像。",
+      "source": "Working with Uniform image/media assets end to end — defining an `asset` parameter, rendering an image `src` with `imageFrom` (the graceful, future-proof default), reading other fields off the raw asset item, the stored asset-value shape, DAM library assets vs external `custom-url` assets, seeding/migrating asset values in compositions, and the traps around parameter type transitions. Use when a component needs an image/photo/video from Uniform, when converting a `text` URL field to an `asset` field, when you want responsive/transformed images with focal points.",
+      "source_sha256": "8cd316a4368250160b77fbcf7aa09f60b1e1aab1a1467d74a9c8358ca822e7ba",
+      "source_path": "skills/uniform-assets/SKILL.md",
+      "package_sha256": "91349a524c90ec199bdac7b52adbbeebf6447a418777084e4f244c290ab991af",
+      "source_package": "Uniform-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b4b4e11813ab4ec96ee42dee08c1ab8ee74c06046cbb441b16da3c95901fcab": {
+      "description_zh": "设计审查Uniform内容模型，确定字段、验证、命名、结构化内容与体验层边界、分类标签及引用关系，组织搜索和回答引擎可发现性、多渠道、复用及本地化；支持从其他CMS迁移。",
+      "source": "Best practices for content modeling in Uniform — designing content types with well-chosen fields, validations, and naming, deciding what belongs in structured content vs the experience layer, modeling content classification (categories, tags, taxonomies), modeling relationships between entries with references, designing content for discoverability across search and answer engines and multi-channel delivery, and organizing entries for reuse and localization. Use when creating or updating Uniform content types or entries, migrating structured content from another CMS into Uniform, or reviewing an existing content model for best-practice violations.",
+      "source_sha256": "5b4b4e11813ab4ec96ee42dee08c1ab8ee74c06046cbb441b16da3c95901fcab",
+      "source_path": "skills/uniform-content-modeling/SKILL.md",
+      "package_sha256": "91349a524c90ec199bdac7b52adbbeebf6447a418777084e4f244c290ab991af",
+      "source_package": "Uniform-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91941bbf6b559b8c558034b0f4978ac78534db829e1e4b75d47c404d6d79990c": {
+      "description_zh": "在Uniform与React/Next.js项目中按Context enrichment分数提升Content API结果，生成按访客兴趣排序的产品、文章或促销推荐，覆盖boost orderBy及ufvd cookie相关需求。",
+      "source": "Add personalized, relevance-ranked content recommendations to a Uniform + React/Next.js project by boosting Content API results with Uniform Context enrichment scores. Use when a user wants visitor-personalized recommendations, dynamic product/article/promotion lists ranked by interest, enrichment-based content ranking, or mentions enrichment boosting, boost orderBy, or the `ufvd` cookie with Uniform.",
+      "source_sha256": "91941bbf6b559b8c558034b0f4978ac78534db829e1e4b75d47c404d6d79990c",
+      "source_path": "skills/uniform-enrichment-recommendations/SKILL.md",
+      "package_sha256": "91349a524c90ec199bdac7b52adbbeebf6447a418777084e4f244c290ab991af",
+      "source_package": "Uniform-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db2898c82b2a562e68669efd3256f66cd9e0f6129d56657df6e5c9b28e97a40c": {
+      "description_zh": "设计审查Uniform体验模型，确定组件参数、slots、编辑器和命名，选择slots或参数、blocks或slots、通用或特定内容组件及粒度，使用覆盖、模式数据资源、slot sections和本地化，并映射代码组件或设计系统。",
+      "source": "Best practices for experience modeling in Uniform — designing component definitions with well-chosen parameters, slots, editors, and naming, deciding between slots and parameters, blocks and slots, content-agnostic and content-specific components, choosing component granularity (atomic building blocks vs pre-composed components), and using component and composition patterns well (overrides, pattern data resources, slot sections, localization). Use when creating or updating Uniform component definitions or patterns, mapping code components (React, etc.) or a design system to Uniform components, or reviewing an existing component library for best-practice violations.",
+      "source_sha256": "db2898c82b2a562e68669efd3256f66cd9e0f6129d56657df6e5c9b28e97a40c",
+      "source_path": "skills/uniform-experience-modeling/SKILL.md",
+      "package_sha256": "91349a524c90ec199bdac7b52adbbeebf6447a418777084e4f244c290ab991af",
+      "source_package": "Uniform-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08cb31fb2edb127dba4185b6989ce39f2be3506b50189afc8c48355c9156ef84": {
+      "description_zh": "指导Uniform CMS与Next.js Page Router集成，配置项目、registerUniformComponent注册、withUniformGetServerSideProps获取composition、slots和参数渲染、上下文编辑预览、Context个性化和A/B测试，并说明与App Router差异。",
+      "source": "Guides integration of Uniform CMS with Next.js Page Router. Covers project setup, component registration with registerUniformComponent, fetching compositions with withUniformGetServerSideProps, rendering slots and parameters, contextual editing preview, personalization and A/B testing with Uniform Context, and how the Page Router integration differs from the App Router. Use when adding Uniform to a Next.js Page Router project, creating registered Uniform components, or configuring personalization and A/B testing.",
+      "source_sha256": "08cb31fb2edb127dba4185b6989ce39f2be3506b50189afc8c48355c9156ef84",
+      "source_path": "skills/uniform-nextjs-page-router/SKILL.md",
+      "package_sha256": "91349a524c90ec199bdac7b52adbbeebf6447a418777084e4f244c290ab991af",
+      "source_package": "Uniform-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2dd8050ddcd5abca4f383c35749ab408c0753c6c2faf749abde862f757ca232": {
+      "description_zh": "提供Uniform SDK认证、CLI、路由及内容API客户端参考，用于前端接入、Route API和composition、entry、content type读写，覆盖EntryManagement/Delivery、CompositionManagement及原文已弃用的Canvas/Content客户端。",
+      "source": "Uniform SDK developer reference covering authentication, CLI configuration, routing, and the content API clients that read and write compositions, entries, and content types. Use when setting up Uniform in a frontend project, configuring the CLI, working with the Route API, or reading or writing Uniform content in code with EntryManagementClient, EntryDeliveryClient, CompositionManagementClient, or the deprecated CanvasClient and ContentClient.",
+      "source_sha256": "b2dd8050ddcd5abca4f383c35749ab408c0753c6c2faf749abde862f757ca232",
+      "source_path": "skills/uniform-sdk/SKILL.md",
+      "package_sha256": "91349a524c90ec199bdac7b52adbbeebf6447a418777084e4f244c290ab991af",
+      "source_package": "Uniform-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55b8a609bf05189e94ef36285bf9eef71e42b0df90fbbd69cd15f5ee4728ff69": {
+      "description_zh": "构建、连接或评审平台与市场的Unipaas嵌入支付集成，覆盖authorize令牌、Checkout Page、Web SDK安全字段、Pay-in、买家结账、供应商接入、账户、拆分结算、订阅、Direct Debit及授权接入webhook。",
+      "source": "Building, wiring, or reviewing a Unipaas embedded-payments integration for a platform or marketplace - the /authorize access-token flow, accepting payments (Checkout Page, Web SDK secure fields, Pay-in API), client-side buyer checkout, vendor onboarding, accounts, payouts, subscriptions, Direct Debit, and webhooks. Use when wiring up Unipaas, building a checkout or payment form, embedding secure card fields or platform embeds, onboarding vendors, splitting or paying out funds, or handling authorization and onboarding webhooks.",
+      "source_sha256": "55b8a609bf05189e94ef36285bf9eef71e42b0df90fbbd69cd15f5ee4728ff69",
+      "source_path": "skills/unipaas/SKILL.md",
+      "package_sha256": "86374b6b68e1e77aa2bd7e23dc966b276583fff1ece9c6f47a277c702c750281",
+      "source_package": "unipaas-0.0.3-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75b59cc237ccdc446fab820e5505598d17e6225fc1b201713bdd238f3f73b9a4": {
+      "description_zh": "为Unity复古风或像素画2D游戏设置、诊断和修复像素完美渲染。",
+      "source": "Sets up, diagnoses, and fixes pixel perfect 2D rendering in Unity projects. Use when working on any retro-style or pixel art 2D game.",
+      "source_sha256": "75b59cc237ccdc446fab820e5505598d17e6225fc1b201713bdd238f3f73b9a4",
+      "source_path": "skills/2d-pixel-perfect/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69a6084d5ffe248fd0f01e3661b009f40dcb7bc56dec3266cc220880c244bad9": {
+      "description_zh": "扫描Unity场景及音频资产，按声音类型把Audio Source路由到既有Mixer Groups并清理分配；不自动创建混音器组或设置音量，盘点后提示用户补充缺项。",
+      "source": "Scans the scene and audio assets to appropriately route Audio Sources into existing Audio Mixer Groups, classifying each source by what it plays. Use when the user asks about cleaning up mixer assignments, routing audio through a mixer, or which group a sound belongs in. Creating mixers and groups, and setting volumes, are not automated — the skill inventories what exists and asks the user to add anything missing.",
+      "source_sha256": "69a6084d5ffe248fd0f01e3661b009f40dcb7bc56dec3266cc220880c244bad9",
+      "source_path": "skills/audio-setup-mixers/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63f2ca00e83093501a6a2b9273c328c70c21ae425738b5f2b978b7d91e0a7d00": {
+      "description_zh": "使用Unity Services构建运营在线游戏后台，涵盖通行证、成就、成长、云存档、榜单、匹配、虚拟经济、服务器权威逻辑、反作弊、账户认证、远程配置、功能开关、A/B测试、分析及云资源部署。",
+      "source": "Build and operate a live game using Unity Services. Use when the user needs to implement, connect, or debug backend-driven features — battle passes, achievements, player progression, cloud saves, leaderboards, matchmaking, virtual economies, server-authoritative logic, anti-cheat, player accounts and authentication, remote configuration, feature flags, A/B testing, analytics, or cloud resource deployment. Triggers on live-ops, live service, backend, server authority, cloud code, cloud save, remote config, player data, retention, monetization loop, season pass, ranking, multiplayer sessions, lobbies, or any Unity Services integration.",
+      "source_sha256": "63f2ca00e83093501a6a2b9273c328c70c21ae425738b5f2b978b7d91e0a7d00",
+      "source_path": "skills/build-live-game/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "21deda25bdeaa4c7cc414e58fc24142c5bd041bc2526f295c27fbd8cd01ff8a8": {
+      "description_zh": "生成Unity Search或Quick Search查询并打开搜索窗，只读查找当前项目或场景的具体资产和对象，如材质、纹理、预制体、脚本、组件、灯光相机、UI、标签路径及引用；不用于一般项目概览、编程问答、仓库文本搜索或结果修改。",
+      "source": "Generates Unity Search / Quick Search queries and opens the Unity Search window for read-only Unity Editor asset or scene-object lookup requests. Always use when the user asks to find, search, show, locate, filter, look up, query, or list concrete assets or scene objects in the current project or scene, even if Unity Search is not named. Covers materials, textures, prefabs, scenes, scripts, shaders, GameObjects, components, Lights, Cameras, UI objects, labels, paths, references, selected or named assets, and asset types. Also use when the user explicitly mentions Unity Search, Quick Search, Search window, open Search, or asks what Unity Search query to use. Do not use for general project overview, project structure, folder-purpose summaries, gameplay/system explanations, how-to programming questions, web search, repository text search, build logs, package installation, menu or settings search, modifying results, or non-Unity filesystem search unless the user explicitly asks to use Unity Search.",
+      "source_sha256": "21deda25bdeaa4c7cc414e58fc24142c5bd041bc2526f295c27fbd8cd01ff8a8",
+      "source_path": "skills/generate-editor-search-query/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f5833d667a299455b88fc9d8d65c7039bf52f06ae9f68bf02c825f3bc05d83b": {
+      "description_zh": "实现配置调试Unity IAP，覆盖商店连接、商品、消耗/非消耗/订阅、待确认两步流程、回执和权益、恢复、Apple及Google扩展、D2C和Stripe/Coda；支持从原生账单或RevenueCat/Adapty/Essential Kit/Unipay迁移。",
+      "source": "Implement, configure, and debug Unity In-App Purchases (IAP) — store connection, product catalog, consumable/non-consumable/subscription purchases, two-step pending-confirm flow, receipt validation, entitlement checking, restore transactions, Apple extensions (promotional purchases, Ask-to-Buy, code redemption), and Google Play extensions (subscription upgrade/downgrade), D2C Capabilities(direct to customer), 3rd party payment provider (Stripe/Coda) via Unity IAP/Unity Cloud. Use when the user needs to add, modify, debug, or migrate from native Android/iOS billing, 3rd party packages(RevenueCat/Adapty/Essential Kit/Unipay supported) to IAP. Triggers on microtransactions (MTX), monetization, real-money purchases, store purchases, buying items, support D2C, purchase via Stripe/Coda, migrate from native billing(Google's BillingClient or Apple's StoreKit/SKPaymentQueue/SKProduct)/RevenueCat/Adapty/EssentialKit/Unipay.",
+      "source_sha256": "3f5833d667a299455b88fc9d8d65c7039bf52f06ae9f68bf02c825f3bc05d83b",
+      "source_path": "skills/implement-in-app-purchases/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4cdc5653247b1bf8d5c835951be1d52394ecb526ddbd2a9fb81fc2b7bb89b735": {
+      "description_zh": "设置Unity AI Navigation的NavMesh表面、agents、障碍、链接、修饰符、区域及成本，用于可行走网格、巡逻、避障挖孔、跨网格连接、动画联动及导航排障。",
+      "source": "Sets up and configures the Unity AI Navigation system — NavMesh surfaces, NavMesh agents, obstacles, links, modifiers, areas and costs. Use when creating walkable navigation meshes, adding pathfinding agents, setting up patrol routes, configuring obstacle avoidance and carving, connecting separate NavMeshes with links, coupling navigation with animation, or troubleshooting navigation issues.",
+      "source_sha256": "4cdc5653247b1bf8d5c835951be1d52394ecb526ddbd2a9fb81fc2b7bb89b735",
+      "source_path": "skills/initialize-ai-navigation/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2454f7d96b8288120c363a9d1b53be98cfff13d750531b2e64b36e4fbe53d408": {
+      "description_zh": "通过Ads Mediation UPM集成LevelPlay广告SDK，配置激励/插屏/横幅广告、聚合和网络、广告单元、ATT隐私及ILRD，处理Android Gradle或iOS CocoaPods依赖、初始化和命名空间问题，并支持IronSource或Unity Ads迁移。",
+      "source": "Integrates the LevelPlay Mediation SDK via the Ads Mediation UPM package. Use when a developer asks about adding ads to a Unity game, implementing rewarded, interstitial, or banner ads, setting up ad mediation, configuring ad networks, installing or updating the Ads Mediation package, troubleshooting LevelPlay namespace errors, resolving Android gradle or iOS CocoaPods dependency issues for ads, configuring ATT or privacy settings for ad compliance, tracking impression-level revenue (ILRD), initializing the LevelPlay SDK, or setting up ad unit IDs. Also use when a developer wants to monetize their Unity game with ads, asks how to get started with LevelPlay, ads, or mediation, or needs help with any part of the LevelPlay integration workflow including platform-specific setup for iOS or Android. Also use when upgrading the LevelPlay or IronSource SDK version, migrating from deprecated IronSource.Agent APIs, or migrating a game from Unity Ads to LevelPlay.",
+      "source_sha256": "2454f7d96b8288120c363a9d1b53be98cfff13d750531b2e64b36e4fbe53d408",
+      "source_path": "skills/levelplay-unity-integration/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f8c6f7b95b2b37a5fa68f1d10b3edf710ae0e16a60d6842d81e6221c9638e2d": {
+      "description_zh": "配置Unity Localization的语言区域、String/Asset Tables、CJK字体及Addressables，支持UI翻译、TMP亚洲文字和多语言游戏。",
+      "source": "Sets up and configures Unity Localization, including locales, String/Asset Tables, CJK font support, and Addressables workflows. Use when the user wants to add languages to a project, translate UI text, support Asian (CJK) languages with TMP fonts, or mentions i18n, l10n, multilingual support, or making a game support multiple languages.",
+      "source_sha256": "5f8c6f7b95b2b37a5fa68f1d10b3edf710ae0e16a60d6842d81e6221c9638e2d",
+      "source_path": "skills/localization/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c311c8999a698e611cd3901767b8c476107b4dd067c28dbfabcc12406f158bd8": {
+      "description_zh": "以IPreprocessBuildWithReport构建前流水线管理SpriteAtlas，配置主图集、变体、纹理、打包和平台设置，支持自动生成及运行时访问；仅明确要求时采用手工编制。",
+      "source": "Manage SpriteAtlas using prebuild pipeline with IPreprocessBuildWithReport (DEFAULT approach). Use it to configure master atlases, variant atlases, texture settings, packing settings, and platform-specific configurations. Use when the user asks about creating sprite atlases, optimizing sprites, configuring atlas settings, adding sprites to atlases, creating variant atlases, implementing automated atlas generation, or runtime sprite atlas access. Always use prebuild approach unless user explicitly requests manual authoring.",
+      "source_sha256": "c311c8999a698e611cd3901767b8c476107b4dd067c28dbfabcc12406f158bd8",
+      "source_path": "skills/manage-sprite-atlas/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d72695fd06125cd6c804c4f252558c8ba221817cba3c8b5712e0163ff8337b4c": {
+      "description_zh": "规划执行排查Unity从内置渲染管线到URP的迁移，转换项目、场景、材质和shader，修复粉红材质，处理URP 2D、光照、质量、后处理、烘焙光照贴图及反射探针问题。",
+      "source": "Plans, executes, and troubleshoots Unity projects moving from the Built-in Render Pipeline (BiRP/BIRP/Built-in RP) to the Universal Render Pipeline (URP). Use when the user asks to upgrade, convert, switch, or migrate a project, scene, material, or shader to URP/Universal Render Pipeline; fix pink or magenta materials after URP; convert Built-in materials/shaders; move a 2D project to URP 2D; review lighting, quality, post-processing, baked lightmaps, or reflection probes after URP; or diagnose visual problems after a render-pipeline migration.",
+      "source_sha256": "d72695fd06125cd6c804c4f252558c8ba221817cba3c8b5712e0163ff8337b4c",
+      "source_path": "skills/migrate-birp-to-urp/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1448bdb0973cc85fcc342d73344668e27e0ac5554c0c9e777a8baaa2aa079c38": {
+      "description_zh": "引导从零创建Unity游戏项目，收集概念、目标平台及变现方式，安装Editor、建立项目和版本控制及包，并交由CLI、包管理和变现专项技能处理；不生成玩法代码骨架。",
+      "source": "Use when starting a brand-new Unity game or project from scratch — \"make/start/create a new game\", \"bootstrap a Unity project\", \"I want to build a [genre] game\", \"scaffold/prototype a game\", game jam, greenfield, blank project, project setup. A guided flow that gathers the concept, target platforms, and monetization, installs the Editor in the background while it asks, then creates the project and source control and installs packages — delegating the mechanics to the unity-cli and unity-package-management skills and handing off monetization to the dedicated skills. Does not scaffold gameplay code.",
+      "source_sha256": "1448bdb0973cc85fcc342d73344668e27e0ac5554c0c9e777a8baaa2aa079c38",
+      "source_path": "skills/new-unity-project/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1148dda34ca9fea819d85ec1985de382daadc0e677b8ee32f5b3730ac1ca7ea": {
+      "description_zh": "通过导入和Mixer配置优化Unity 6音频内存、CPU及播放质量，选择短音效/音乐/环境音Load Type、采样率编码、3D单声道及减少深层组或静默效果开销。",
+      "source": "Optimizes Unity 6 audio memory, CPU cost, and playback quality through correct import settings and mixer configuration. Use when the user wants to reduce audio memory usage, choose the right Load Type for short clips versus music versus ambient beds, configure platform-appropriate sample rates and codecs, force 3D audio to mono, or reduce AudioMixer CPU cost from deep group trees or effects running on silent paths.",
+      "source_sha256": "d1148dda34ca9fea819d85ec1985de382daadc0e677b8ee32f5b3730ac1ca7ea",
+      "source_path": "skills/optimize-audio/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f64b6b28324700a5f655b53d8636e97ee9220263c796d2eb2c421691f8820c92": {
+      "description_zh": "优化TextMeshPro字体栈、动态回退图集、padding采样、SDF16、AutoSize、世界空间与UGUI及Memory Profiler字体捕获，处理CJK混排、字体回退、渲染性能和内存；不处理UI Toolkit布局或非TMP uGUI。",
+      "source": "Covers TextMeshPro font stacks, dynamic fallback atlases, padding and sampling ratios, SDF16, AutoSize discipline, worldspace vs UGUI, and Memory Profiler font-data capture. Use when the user mentions TextMeshPro, Text Mesh Pro, TMP (TextMeshPro), font asset, dynamic atlas, TMP localization, CJK (Chinese, Japanese, Korean) fonts, font alignment across scripts, mixed western and eastern fonts, text rendering performance, profiler markers related to text generation or glyph rasterization, font fallback strategy, font normalization, multilingual or localized text rendering, SDF font quality, or text-related memory issues—not for UI Toolkit layout (unity-ui-toolkit) or non-TMP uGUI (unity-ui).",
+      "source_sha256": "f64b6b28324700a5f655b53d8636e97ee9220263c796d2eb2c421691f8820c92",
+      "source_path": "skills/optimize-text-mesh-pro/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d2e7fdadb5a2d8ac11a0da0e23d95f790d2d5b641d44b54e469e2e838805902": {
+      "description_zh": "优化Unity 6 WebGL和WebGPU构建的下载体积、首屏加载及浏览器性能，处理卡顿耗电、CDN服务器压缩、资源裁剪、shader变体、KTX纹理、质量及网页性能分析。",
+      "source": "Optimizes Unity 6 WebGL and WebGPU builds for smaller download size, faster initial load, and efficient browser runtime performance. Use when the user's web build is too large, stutters in a specific browser, consumes excessive battery, needs CDN/server compression configured, or needs guidance on resource stripping, shader variant reduction, KTX textures, quality settings, or web profiling.",
+      "source_sha256": "5d2e7fdadb5a2d8ac11a0da0e23d95f790d2d5b641d44b54e469e2e838805902",
+      "source_path": "skills/optimize-web/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e63dc0de6f834888bcac564a77139f062081178a1bd5da87a89b8d4ff5e8e94d": {
+      "description_zh": "诊断MonoBehaviour项目的3D PhysX碰撞与触发、穿透、Raycast遗漏、布娃娃爆炸、静止后AddForce失效及MeshCollider规则；2D或DOTS物理仅提供有限参考，有专门技能时交由其处理。",
+      "source": "3D PhysX collision and trigger diagnostics for MonoBehaviour-based Unity projects. Primary scope: OnCollisionEnter / OnTriggerEnter not firing, objects passing through each other, Physics.Raycast missing, ragdoll explosion, AddForce stops working after settling, MeshCollider rules, and similar 3D PhysX symptoms. Adjacent topics (2D physics, OTS / Unity Physics package): provides a brief best-effort answer with a scope disclaimer and a documentation link, rather than refusing outright. When dedicated specialist skills (physics-2d, physics-dots) are installed, those should handle their respective domains and this skill defers to them.",
+      "source_sha256": "e63dc0de6f834888bcac564a77139f062081178a1bd5da87a89b8d4ff5e8e94d",
+      "source_path": "skills/physics-3d-collision/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8f5b8d83508f23b21780dc64741ca047e5d7ae80b8b9a527856c8b49f7d3122": {
+      "description_zh": "使用Unity Multiplayer Services开发实时连接互动，选择拓扑、玩家分组、托管、匹配、发现、网络及房间/队伍/大厅会话；无实时玩家连接的榜单、云存档等后台功能另用在线游戏技能。",
+      "source": "Guides the development of online multiplayer experiences where players connect, group, and interact in real-time using Unity Multiplayer Services. Use when the user asks for topology choice, player grouping, hosting, matchmaking, discovery, network setup, and session-based play (rooms, parties, lobbies) using the Unity Multiplayer Services APIs. Not for leaderboards, cloud saves, or backend features that involve no real-time connection between players; those belong to the build-live-game skill.",
+      "source_sha256": "b8f5b8d83508f23b21780dc64741ca047e5d7ae80b8b9a527856c8b49f7d3122",
+      "source_path": "skills/setup-multiplayer-services/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99c6f368b1087dd0f8d5267e5380c15dddd3929e17822b1b628157b65fcbe869": {
+      "description_zh": "用Unity Vivox接入配置游戏语音文字聊天，覆盖Android/iOS麦克风权限、VAD、音量静音及发言UI、3D近距语音、团队/队伍/大厅/公会频道、按键讲话、私聊、SDK初始化认证及旧版迁移。",
+      "source": "Add and configure in-game voice chat and text chat for Unity multiplayer games using Unity Vivox. Covers microphone setup and mic permissions on Android/iOS, voice activity detection (VAD) tuning, voice volume and mute controls in a settings UI (VoiceVadMinimumVolume, mic slider, mute button, speaking indicator), proximity/3D spatial voice for FPS/co-op games, team/party/lobby/guild voice channels, push-to-talk, muting self and other players, whisper/direct messages, in-game text chat, and Vivox SDK init + Unity Authentication sign-in. Use when the user asks to add voice chat, voice comms, microphone/mic support, a voice-chat settings UI, mute button, VAD threshold, push-to-talk, proximity or spatial voice, team voice, party chat, lobby chat, direct messages, or mentions Vivox, VivoxService, com.unity.services.vivox, JoinGroupChannelAsync, JoinPositionalChannelAsync, LoginAsync, or migrating from legacy Vivox (Client.Instance / LoginSession / AccountId).",
+      "source_sha256": "99c6f368b1087dd0f8d5267e5380c15dddd3929e17822b1b628157b65fcbe869",
+      "source_path": "skills/setup-vivox-voice-chat/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "78c1a9131c5cc11b117c2bcab3a19ca82ee2ede2e59f9019803c9c07303290a7": {
+      "description_zh": "从HLSL代码生成自定义Shader Graph节点，或把既有HLSL接为反射函数节点。",
+      "source": "Generates custom Shader Graph nodes from HLSL code. Use when the user wants to create a new Shader Graph node or make existing HLSL code work as a reflected function node.",
+      "source_sha256": "78c1a9131c5cc11b117c2bcab3a19ca82ee2ede2e59f9019803c9c07303290a7",
+      "source_path": "skills/shader-graph-create-custom-node/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ab29094ea672a94ab258082e0a7ba49b17cacaf48542b494ad4db4184de06cc": {
+      "description_zh": "通过ISpriteEditorDataProvider生成C#编辑脚本修改Unity精灵矩形、边框、轴心、轮廓及自动/网格/等距切片，适用于精灵资产、spritesheet和纹理图集。",
+      "source": "Edits Unity sprite properties by generating C# editor scripts using ISpriteEditorDataProvider APIs. Handles sprite rectangles, borders, pivots, outlines, and slicing operations (automatic, grid, isometric). Use when working with sprite assets, sprite sheets, texture atlases, or sprite slicing.",
+      "source_sha256": "2ab29094ea672a94ab258082e0a7ba49b17cacaf48542b494ad4db4184de06cc",
+      "source_path": "skills/sprite-editor/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8c996c37d1b7944dc9aa391399bf2ef2aae81b1a50856e5c4f5eeaf3f6842a7": {
+      "description_zh": "将Sprite纹理分成3×3格，识别中心格主色并输出哪些格匹配中心色的文本图案，用于精灵结构和颜色分布分析记录。",
+      "source": "Analyze Sprite textures and output a 3x3 grid representation based on color matching. Segments a Sprite into a 3x3 grid, identifies the majority color of the center cell, and outputs a text pattern showing which cells match the center color. Use when analyzing sprite patterns, documenting sprite structure, or describing sprite color distribution.",
+      "source_sha256": "d8c996c37d1b7944dc9aa391399bf2ef2aae81b1a50856e5c4f5eeaf3f6842a7",
+      "source_path": "skills/sprite-segment-3x3grid/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f09ed92d04eb1f5962a7cd2c4e9a5d2484adba58f2f52bd53d3d39a16e47de00": {
+      "description_zh": "创建Tile Palette资产以组织2D关卡瓦片，可选择矩形、六边形或等距Grid布局。",
+      "source": "Creates a Tile Palette asset. Use when the user wants to organize tiles for 2D level design or create a new Tile Palette from scratch. The user can specify the Grid layout, eg. Rectangular, Hexagonal, Isometric.",
+      "source_sha256": "f09ed92d04eb1f5962a7cd2c4e9a5d2484adba58f2f52bd53d3d39a16e47de00",
+      "source_path": "skills/tilemap-palette-create/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d722c3b82551d29d8d87b758d03d3f345de58b4705c5fb3ad2d09fac370556d7": {
+      "description_zh": "仅在未提供或引用精灵且需自定义规则的空白RuleTile、HexagonalRuleTile或IsometricRuleTile时创建空资产；已有精灵、地形图、边缘瓦片或瓦片目录另用分段生成技能。",
+      "source": "Creates an empty RuleTile asset without Sprite or Spritesheet inputs. Use ONLY when the user wants a blank RuleTile, HexagonalRuleTile, or IsometricRuleTile for custom rule configuration AND has not provided or referenced any sprites. If the user mentions existing sprites, terrain art, edge tiles, or a tiles folder, use tilemap-ruletile-createfromsegment instead, never this skill.",
+      "source_sha256": "d722c3b82551d29d8d87b758d03d3f345de58b4705c5fb3ad2d09fac370556d7",
+      "source_path": "skills/tilemap-ruletile-createempty/SKILL.md",
+      "package_sha256": "c1347769136e4a4bdaaf9e945869b962a3f332705bf74977fedaeb5125d2dba5",
+      "source_package": "Unity-0.1.2-beta-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
     }
   },
