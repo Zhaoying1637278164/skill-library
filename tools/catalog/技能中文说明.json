@@ -24289,6 +24289,1086 @@
       "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
       "source_package": "Dart and Flutter-1.0.5-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84b9ef4310a82f356984ce32e5c6c1ef33a10bbf62ba581481a59fddafb78778": {
+      "description_zh": "为新Flutter项目初始化本地化，添加flutter_localizations和intl依赖，在pubspec启用生成并创建l10n.yaml配置。",
+      "source": "Add `flutter_localizations` and `intl` dependencies, enable \"generate true\" in `pubspec.yaml`, and create an `l10n.yaml` configuration file. Use when initializing localization support for a new Flutter project.",
+      "source_sha256": "84b9ef4310a82f356984ce32e5c6c1ef33a10bbf62ba581481a59fddafb78778",
+      "source_path": "skills/flutter-setup-localization/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ebbaa5e2866b7f9251b10fd674e918ffe8d6fc791fc277f75bce1c4b8c0801d0": {
+      "description_zh": "使用http包执行GET、POST、PUT和DELETE，向REST API读取或发送数据。",
+      "source": "Use the `http` package to execute GET, POST, PUT, or DELETE requests. Use when you need to fetch from or send data to a REST API.",
+      "source_sha256": "ebbaa5e2866b7f9251b10fd674e918ffe8d6fc791fc277f75bce1c4b8c0801d0",
+      "source_path": "skills/flutter-use-http-package/SKILL.md",
+      "package_sha256": "9613c8de0a3a47a31c06d6a8cf8e953885ad26ea9c9ee53fffcb3da31428b096",
+      "source_package": "Dart and Flutter-1.0.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ef042af594fc5fe7dc2e20913b66dd7c2904ac03a76b3d605fc6cb3744b529b": {
+      "description_zh": "在本地安装和运行Dash0 GitHub Copilot CLI插件，针对真实copilot会话开发测试、迭代或拆除环境，无需推送或发布GitHub。",
+      "source": "Install and run the Dash0 GitHub Copilot CLI plugin (the copilot/ package) locally for development/testing — no GitHub push or release needed. Use when you want to try or test the Copilot plugin against a real `copilot` session, iterate on it, or tear the setup down.",
+      "source_sha256": "4ef042af594fc5fe7dc2e20913b66dd7c2904ac03a76b3d605fc6cb3744b529b",
+      "source_path": ".claude/skills/copilot-local-dev/SKILL.md",
+      "package_sha256": "08cc4795721ee28de60e5fa69efcbe3703d8ff0a3d14d605e13017c88972ebdd",
+      "source_package": "dash0-0.1.28-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98199428cc10dfe431cebe6427091c6cf7b108ebf747bd1446303c8b64161f6f": {
+      "description_zh": "写入Claude Code用户级或项目级Dash0配置，完成遥测集成、凭据和团队名称设置，修复未激活或未配置团队的问题。",
+      "source": "Set up or finish setting up the Dash0 → Claude Code telemetry integration by writing ~/.claude/dash0-agent-plugin.local.md (or the project-local equivalent). Use when the user wants to configure Dash0, enable telemetry, paste credentials, fix an inactive plugin install, or act on a \"dash0: no team configured\" message — spans carry no dash0.team.name until the team name is set.",
+      "source_sha256": "98199428cc10dfe431cebe6427091c6cf7b108ebf747bd1446303c8b64161f6f",
+      "source_path": "claude/skills/dash0-configure/SKILL.md",
+      "package_sha256": "08cc4795721ee28de60e5fa69efcbe3703d8ff0a3d14d605e13017c88972ebdd",
+      "source_package": "dash0-0.1.28-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a55f20441046592a80cf5e5ef9d2a708429f8720633b0d073bc41f41aa85ca8": {
+      "description_zh": "配置Dash0与GitHub Copilot CLI遥测，写入OTLP地址和认证令牌，并安装启用原生OpenTelemetry的启动函数，采集每轮令牌、成本和模型信息及团队名称。",
+      "source": "Configure the Dash0 → GitHub Copilot CLI telemetry integration — write the OTLP URL and auth token to ~/.copilot/dash0-agent-plugin.local.md (or the project-local equivalent) AND install the launch shell function that enables Copilot''s native OpenTelemetry (the per-turn token/cost/model source). Use when the user wants to set up Dash0, enable telemetry, paste credentials, fix an inactive plugin install, or act on a \"dash0: no team configured\" message — spans carry no dash0.team.name until the team name is set.",
+      "source_sha256": "0a55f20441046592a80cf5e5ef9d2a708429f8720633b0d073bc41f41aa85ca8",
+      "source_path": "copilot/skills/dash0-configure/SKILL.md",
+      "package_sha256": "08cc4795721ee28de60e5fa69efcbe3703d8ff0a3d14d605e13017c88972ebdd",
+      "source_package": "dash0-0.1.28-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a4035f6841556d843f7fdf28a5a0cacfc034e7bd33e012fb2c7ea0c9e2ce3c7": {
+      "description_zh": "写入Cursor用户级或项目级Dash0配置，完成遥测、凭据与团队名称设置，修复插件未激活或团队未配置。",
+      "source": "Set up or finish setting up the Dash0 → Cursor telemetry integration by writing ~/.cursor/dash0-agent-plugin.local.md (or the project-local equivalent). Use when the user wants to configure Dash0, enable telemetry, paste credentials, fix an inactive plugin install, or act on a \"dash0: no team configured\" message — spans carry no dash0.team.name until the team name is set.",
+      "source_sha256": "5a4035f6841556d843f7fdf28a5a0cacfc034e7bd33e012fb2c7ea0c9e2ce3c7",
+      "source_path": "cursor/skills/dash0-configure/SKILL.md",
+      "package_sha256": "08cc4795721ee28de60e5fa69efcbe3703d8ff0a3d14d605e13017c88972ebdd",
+      "source_package": "dash0-0.1.28-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3e1eee9b9b43c58fb32aea66470de56850e98b6b5dd1c23a149c5403b5eafebe": {
+      "description_zh": "在任务需要输出QA标记时，通过Shell命令打印准确字符串QA-SKILL-MARKER。",
+      "source": "Print the exact marker string QA-SKILL-MARKER by running a shell command. Use this whenever the task is to emit the QA marker.",
+      "source_sha256": "3e1eee9b9b43c58fb32aea66470de56850e98b6b5dd1c23a149c5403b5eafebe",
+      "source_path": "qa/skill-fixture/qa-echo/SKILL.md",
+      "package_sha256": "08cc4795721ee28de60e5fa69efcbe3703d8ff0a3d14d605e13017c88972ebdd",
+      "source_package": "dash0-0.1.28-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ad03e76db258abca57cda8b9b04a17d88e03ac8b6dfbf7590b1742b2a1c1d05": {
+      "description_zh": "围绕Aurora DSQL管理模式、查询、迁移、性能诊断和数据加载，覆盖IAM认证、多租户、MySQL与PostgreSQL转换、OCC重试、ORM、DDL、CloudWatch诊断及批量导入。",
+      "source": "Build with Aurora DSQL — manage schemas, execute queries, handle migrations, diagnose query plans, diagnose cluster performance, load data, and develop applications with a serverless, distributed SQL database. Covers IAM auth, multi-tenant patterns, MySQL-to-DSQL and PostgreSQL-to-DSQL schema conversion, foreign key constraints, OCC retry patterns, ORM migration (Django/EF Core/Hibernate/Rails/SQLAlchemy), DDL operations, query plan explainability, system diagnostics via CloudWatch AAS, SQL compatibility validation, and bulk data loading. Triggers on phrases like: DSQL, Aurora DSQL, distributed SQL database, serverless PostgreSQL-compatible database, migrate to DSQL, DSQL query plan, DSQL EXPLAIN ANALYZE, DSQL ENUM, DSQL foreign key, DSQL OCC retry, DSQL multi-region, DSQL JSONB, DSQL GIN index, load into DSQL, load CSV into DSQL, bulk load DSQL, aurora-dsql-loader, DSQL slow, DSQL performance, DSQL wait events, DSQL AAS.",
+      "source_sha256": "9ad03e76db258abca57cda8b9b04a17d88e03ac8b6dfbf7590b1742b2a1c1d05",
+      "source_path": "skills/dsql/SKILL.md",
+      "package_sha256": "8d274f81768271adacc11696fe494e3a76619c81bc030d9631c4ea7202fa6260",
+      "source_package": "databases-on-aws-1.9.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11b2ef0eefd6778a85dbdc5cf1ad06b27aa049ea074dd98bae763d43c2292ab8": {
+      "description_zh": "创建Databricks Agent Bricks知识助手以支持文档问答，或创建监督智能体协调多智能体工作。",
+      "source": "Create Agent Bricks: Knowledge Assistants (KA) for document Q&A and Supervisor Agents for multi-agent orchestration (MAS).",
+      "source_sha256": "11b2ef0eefd6778a85dbdc5cf1ad06b27aa049ea074dd98bae763d43c2292ab8",
+      "source_path": "skills/databricks-agent-bricks/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a1f45cc24fa43a05f429421014672484bd3c23c6593a96249ca6f036ce66ae6": {
+      "description_zh": "在Databricks SQL和PySpark中使用内置AI函数进行分类、提取、摘要、脱敏、翻译、情感、查询与预测，无需管理模型端点，并支持文档解析和自定义RAG流水线。",
+      "source": "Use Databricks built-in AI Functions (ai_classify, ai_extract, ai_summarize, ai_mask, ai_translate, ai_fix_grammar, ai_gen, ai_analyze_sentiment, ai_similarity, ai_parse_document, ai_prep_search, ai_query, ai_forecast) to add AI capabilities directly to SQL and PySpark pipelines without managing model endpoints. Also covers document parsing and building custom RAG pipelines (parse → prep_search → index → query).",
+      "source_sha256": "0a1f45cc24fa43a05f429421014672484bd3c23c6593a96249ca6f036ce66ae6",
+      "source_path": "skills/databricks-ai-functions/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc4d344816b3cfd2d91d4cfe05b9324db89bc5c3d164d784d39f7abb5d959916": {
+      "description_zh": "创建、更新或部署Databricks AI/BI Lakeview仪表板，遵循其专用JSON结构，原说明要求部署前通过CLI测试全部SQL。",
+      "source": "Create Databricks AI/BI dashboards. Must use when creating, updating, or deploying Lakeview dashboards as Databricks Dashboard have a unique json structure. CRITICAL: You MUST test ALL SQL queries via CLI BEFORE deploying. Follow guidelines strictly.",
+      "source_sha256": "cc4d344816b3cfd2d91d4cfe05b9324db89bc5c3d164d784d39f7abb5d959916",
+      "source_path": "skills/databricks-aibi-dashboards/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51f885765c6a466fa9398d291f04be58fad4952af0778117d456cf9f5f005b22": {
+      "description_zh": "为自定义Databricks AppKit与React数据应用设计KPI、报表、图表、表格和Genie聊天界面，选择组件、布局、语义颜色及加载空白错误状态，并展示AI生成SQL与来源；托管Lakeview仪表板另用对应技能。",
+      "source": "Design the UX of custom-code Databricks Apps (AppKit/React) data screens — KPI/overview pages, reports, charts, tables, and Genie/chat data assistants — mapped to concrete AppKit components. Use when BUILDING or reviewing the UI of an AppKit/React app that displays data or answers data questions: choosing genre, layout, charts, KPIs, semantic color, required states (loading/empty/error), IBCS notation, and AI-result trust (showing generated SQL/sources for Genie/chat). A plain \"create a dashboard\" request means a managed AI/BI (Lakeview) dashboard → use databricks-aibi-dashboards, NOT this skill. Also NOT for non-data frontend (forms, settings, auth, marketing) or scaffolding/build/deploy (→ databricks-apps). Complements databricks-apps; use it alongside whenever a custom app has a chart, table, KPI, report, or Genie/chat/AI surface.",
+      "source_sha256": "51f885765c6a466fa9398d291f04be58fad4952af0778117d456cf9f5f005b22",
+      "source_path": "skills/databricks-app-design/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "be88624bd1c176fba6a89f9d037e2744a0f2a8c5880c686bf4fbebace21dcf00": {
+      "description_zh": "为明确需要Python的Databricks应用开发FastAPI、Flask、Dash、Streamlit等后端，处理OAuth、SQL仓库、Lakebase、模型与向量搜索API以及部署；新应用默认入口为AppKit技能。",
+      "source": "Python backend for Databricks Apps — FastAPI (default), Flask, Dash, Streamlit, Gradio, Reflex. **Default for a new Databricks App is `databricks-apps` (AppKit — Node/TypeScript/React) — reach for it first.** Use this skill only when the user asks for a Python backend, extends an existing Python app, or the team is Python-only. Covers OAuth auth, app resources, SQL warehouse and Lakebase connectivity, foundation-model / Vector Search / model-serving APIs (via `databricks-python-sdk`), and deployment via CLI or DABs.",
+      "source_sha256": "be88624bd1c176fba6a89f9d037e2744a0f2a8c5880c686bf4fbebace21dcf00",
+      "source_path": "skills/databricks-apps-python/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddefba3a506a0eaebec0418ab2f9f6930294f853deff19df3b9237959e1293ba": {
+      "description_zh": "在Databricks Apps平台构建数据应用、分析工具及交互可视化，实现前评估分析型或Lakebase同步表访问模式；普通托管仪表板请求使用AI/BI技能。",
+      "source": "Build apps on Databricks Apps platform. Use when asked to create data apps, analytics tools, or custom interactive visualizations. A plain \"create a dashboard\" request means a managed AI/BI (Lakeview) dashboard → use databricks-aibi-dashboards, not this skill. Evaluates data access patterns (analytics vs Lakebase synced tables) before scaffolding. Invoke BEFORE starting implementation.",
+      "source_sha256": "ddefba3a506a0eaebec0418ab2f9f6930294f853deff19df3b9237959e1293ba",
+      "source_path": "skills/databricks-apps/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54c132e26d5073f06ad73a61b2d40e8c5a42188dc69d5866866a2d275560a889": {
+      "description_zh": "作为Databricks CLI入口处理认证、配置档案与自动化包，再路由产品技能；数据发现、问答和SQL编写使用data-discovery。",
+      "source": "Databricks CLI operations and the parent/entry-point skill for Databricks CLI use: authentication, profile selection, and bundles. Load this first for CLI, auth, profile, and bundle tasks, then load the matching product skill. For finding or exploring data, answering questions about the data, or generating SQL, load the databricks-data-discovery skill (it routes to Genie One). Contains up-to-date guidelines for Databricks-related CLI tasks.",
+      "source_sha256": "54c132e26d5073f06ad73a61b2d40e8c5a42188dc69d5866866a2d275560a889",
+      "source_path": "skills/databricks-core/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa3a84d201c20e4cf69f74ba33c31e8848b3f23674f0915f1d73bc821df3183b": {
+      "description_zh": "创建、配置、验证、部署、运行和管理Databricks声明式自动化包DABs，组织仪表板、作业、管道、告警、卷与应用。",
+      "source": "Create, configure, validate, deploy, run, and manage Declarative Automation Bundles (DABs, formerly Databricks Asset Bundles). Use when working with Databricks resources via DABs including dashboards, jobs, pipelines, alerts, volumes, and apps.",
+      "source_sha256": "aa3a84d201c20e4cf69f74ba33c31e8848b3f23674f0915f1d73bc821df3183b",
+      "source_path": "skills/databricks-dabs/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73116eb944384dd714d2186a0d30632d7d7ef0dd77387a9e3ae5225d091e8c5e": {
+      "description_zh": "通过Genie的CLI等效能力发现、探索和查询Databricks数据，定位目录模式中的表，回答自然语言数据问题并编写SQL。",
+      "source": "Discover, explore, and query Databricks data via Genie — the CLI equivalent of the Genie One MCP. MUST be invoked whenever the user asks to find or locate data ('what tables are in X', 'where does X live', 'which catalog/schema has Y'), answer a natural-language question about the data, or write a SQL query.",
+      "source_sha256": "73116eb944384dd714d2186a0d30632d7d7ef0dd77387a9e3ae5225d091e8c5e",
+      "source_path": "skills/databricks-data-discovery/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ddde17f6fe5c5bd8bb2228cca3656545235eb8bc7a47254045779d1e25bbd9f": {
+      "description_zh": "指导Databricks SQL与SQL仓库高级能力，包括脚本与存储过程、物化视图、管道语法、空间SQL、排序规则、AI函数、远程查询、联邦、递归CTE、事务和临时对象。",
+      "source": "Databricks SQL (DBSQL) advanced features and SQL warehouse capabilities. This skill MUST be invoked when the user mentions: \"DBSQL\", \"Databricks SQL\", \"SQL warehouse\", \"SQL scripting\", \"stored procedure\", \"CALL procedure\", \"materialized view\", \"CREATE MATERIALIZED VIEW\", \"pipe syntax\", \"|>\", \"geospatial\", \"H3\", \"ST_\", \"spatial SQL\", \"collation\", \"COLLATE\", \"ai_query\", \"ai_classify\", \"ai_extract\", \"ai_gen\", \"AI function\", \"http_request\", \"remote_query\", \"read_files\", \"Lakehouse Federation\", \"recursive CTE\", \"WITH RECURSIVE\", \"multi-statement transaction\", \"temp table\", \"temporary view\", \"pipe operator\". SHOULD also invoke when the user asks about SQL best practices, data modeling patterns, or advanced SQL features on Databricks.",
+      "source_sha256": "1ddde17f6fe5c5bd8bb2228cca3656545235eb8bc7a47254045779d1e25bbd9f",
+      "source_path": "skills/databricks-dbsql/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4f1fb7f87a0af185fdfb1459d8d4fa85a571a0a7cd60e7ef0b70efcefe5f56e": {
+      "description_zh": "通过llms.txt索引查阅Databricks权威文档，补充其他技能未覆盖的功能、API、配置及平台能力。",
+      "source": "Databricks documentation reference via llms.txt index. Use when other skills do not cover a topic, looking up unfamiliar Databricks features, or needing authoritative docs on APIs, configurations, or platform capabilities.",
+      "source_sha256": "c4f1fb7f87a0af185fdfb1459d8d4fa85a571a0a7cd60e7ef0b70efcefe5f56e",
+      "source_path": "skills/databricks-docs/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3950c21afc2ba6303341b3ffe02f4247f41a4841e5692b0a5084ea16c46bf1fe": {
+      "description_zh": "在Databricks无服务器、经典或交互集群运行Python、Scala、SQL和R，并创建、调整或删除集群与SQL仓库。",
+      "source": "Execute code and manage compute on Databricks: run Python/Scala/SQL/R via serverless, classic, or interactive clusters, and create/resize/delete clusters and SQL warehouses.",
+      "source_sha256": "3950c21afc2ba6303341b3ffe02f4247f41a4841e5692b0a5084ea16c46bf1fe",
+      "source_path": "skills/databricks-execution-compute/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d86c3ad0ed2278df78c381e3bd7e7c6f90f7f0738ddaf74eaa967db09285c3d": {
+      "description_zh": "创建、管理和查询特定Databricks Genie智能体，支持构建、导入导出、跨工作区迁移与Conversation API问答；全工作区通用数据发现交给data-discovery。",
+      "source": "Create, manage, and query Databricks Genie Agents — curated, per-data natural-language agents (formerly Genie Spaces): build, export/import, migrate across workspaces, and ask questions of a *specific* Agent via the Conversation API. For general data questions or finding data across your workspace, use databricks-data-discovery (Genie One) instead.",
+      "source_sha256": "2d86c3ad0ed2278df78c381e3bd7e7c6f90f7f0738ddaf74eaa967db09285c3d",
+      "source_path": "skills/databricks-genie-agents/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0a472ed71c640e098551a85f8375501461cfab348069c9ebb09fcdd181d7e45": {
+      "description_zh": "指导Databricks Iceberg表、外部Iceberg读取、兼容模式、REST目录和v3，配置外部引擎访问、凭据下发及Snowflake、PyIceberg和Spark互操作。",
+      "source": "Apache Iceberg tables on Databricks — Managed Iceberg tables, External Iceberg Reads (fka Uniform), Compatibility Mode, Iceberg REST Catalog (IRC), Iceberg v3, Snowflake interop, PyIceberg, OSS Spark, external engine access and credential vending. Use when creating Iceberg tables, enabling External Iceberg Reads (uniform) on Delta tables (including Streaming Tables and Materialized Views via compatibility mode), configuring external engines to read Databricks tables via Unity Catalog IRC, integrating with Snowflake catalog to read Foreign Iceberg tables",
+      "source_sha256": "e0a472ed71c640e098551a85f8375501461cfab348069c9ebb09fcdd181d7e45",
+      "source_path": "skills/databricks-iceberg/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b50510a5facedbf63cb6b5688b9d8be7f75fb89723d6854bedc4704cf01b1419": {
+      "description_zh": "通过DABs、Python SDK或CLI开发与部署Databricks Lakeflow Jobs，组织笔记本、Python wheel、SQL、dbt及管道任务。",
+      "source": "Develop and deploy Lakeflow Jobs on Databricks via DABs, Python SDK, or the CLI. Use when creating data engineering jobs with notebooks, Python wheels, SQL, dbt, or pipelines. Invoke BEFORE starting implementation.",
+      "source_sha256": "b50510a5facedbf63cb6b5688b9d8be7f75fb89723d6854bedc4704cf01b1419",
+      "source_path": "skills/databricks-jobs/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "633a20a2a5b4caa2bbf8f920e36d752a92daa745262d91bf510f2bd75f43f84a": {
+      "description_zh": "管理Databricks Lakebase Postgres项目、扩缩容、连接、同步表与Data API，用于OLTP存储及应用数据库接入。",
+      "source": "Databricks Lakebase Postgres: projects, scaling, connectivity, Lakebase synced tables, and Data API. Use when asked about Lakebase databases, OLTP storage, or connecting apps to Postgres on Databricks.",
+      "source_sha256": "633a20a2a5b4caa2bbf8f920e36d752a92daa745262d91bf510f2bd75f43f84a",
+      "source_path": "skills/databricks-lakebase/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a05a1b3586e5c92d06c1669ff1b6026d57d00d9b992f11d54b80644feda03210": {
+      "description_zh": "使用Lakeflow Connect将SaaS应用与数据库数据通过无服务器托管管道接入Unity Catalog，涵盖SQL Server及公开预览阶段的PostgreSQL和MySQL CDC。",
+      "source": "Build managed ingestion pipelines into Databricks using Lakeflow Connect. Use when ingesting from SaaS apps (Salesforce, Workday Reports, ServiceNow, Google Analytics 4, HubSpot, Confluence) or databases (SQL Server cloud and on-prem; PostgreSQL/MySQL CDC in PuPr) into Unity Catalog with serverless pipelines.",
+      "source_sha256": "a05a1b3586e5c92d06c1669ff1b6026d57d00d9b992f11d54b80644feda03210",
+      "source_path": "skills/databricks-lakeflow-connect/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69d3cebd9c7a132f609e11646ecc8c6660d9dfbb9b3e1507af4290a3e572fa7e": {
+      "description_zh": "用YAML定义、创建、查询和管理Unity Catalog指标视图，为KPI、收入与订单等可复用业务指标提供跨团队一致口径。",
+      "source": "Unity Catalog metric views: define, create, query, and manage governed business metrics in YAML. Use when building standardized KPIs, revenue metrics, order analytics, or any reusable business metrics that need consistent definitions across teams and tools.",
+      "source_sha256": "69d3cebd9c7a132f609e11646ecc8c6660d9dfbb9b3e1507af4290a3e572fa7e",
+      "source_path": "skills/databricks-metric-views/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd0c5dd74425dc5b8616c82bda7d7fb8392d8548bbbc06246321f8f967b5b8a1": {
+      "description_zh": "在Databricks训练分类、回归与深度学习模型，支持调参、批量评分、自定义PyFunc与ResponsesAgent、特征表和时点关联、在线存储及声明式流式特征；端点运维和MLflow评估另行处理。",
+      "source": "Train ML models on Databricks. Use for: classification/regression/deep-learning (XGBoost, scikit-learn, LightGBM, PyTorch) with Optuna, @prod/@challenger aliases, batch scoring (spark_udf for plain models, fe.score_batch for feature-store-backed), custom PyFunc, custom ResponsesAgent (LangGraph + UC Function/Vector Search); UC feature tables + FeatureLookup + point-in-time joins + Lakebase online store; declarative Feature Views (create_feature, DeltaTableSource, RollingWindow/SlidingWindow/TumblingWindow, materialize_features, streaming Kafka features). NOT for: endpoint ops (databricks-model-serving), MLflow evaluation (databricks-mlflow-evaluation).",
+      "source_sha256": "bd0c5dd74425dc5b8616c82bda7d7fb8392d8548bbbc06246321f8f967b5b8a1",
+      "source_path": "skills/databricks-ml-training/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "943fc87eb533033563af54e517999a65ee794da7e3bd197fc2b3fdad46f8ff58": {
+      "description_zh": "使用MLflow 3评估生成式AI智能体，编写评估与评分器、从追踪建立数据集、设置生产监控，以专家反馈校准裁判，并通过GEPA优化提示。",
+      "source": "MLflow 3 GenAI agent evaluation. Use when writing mlflow.genai.evaluate() code, creating @scorer functions, using built-in scorers (Guidelines, Correctness, Safety, RetrievalGroundedness), building eval datasets from traces, setting up trace ingestion and production monitoring, aligning judges with MemAlign from domain expert feedback, or running optimize_prompts() with GEPA for automated prompt improvement.",
+      "source_sha256": "943fc87eb533033563af54e517999a65ee794da7e3bd197fc2b3fdad46f8ff58",
+      "source_path": "skills/databricks-mlflow-evaluation/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ad3caee39cdf8d45cfff26e2b2e381972f40a15dca919c5671eb7d7d516dc5b": {
+      "description_zh": "管理Databricks模型服务端点、流量分配、A/B与灰度发布、版本切换、日志指标权限及AI Gateway限流，集成应用与外部流式客户端；训练、智能体构建和评估另用对应技能。",
+      "source": "Databricks Model Serving endpoint lifecycle and ops. Use when asked to: CRUD serving endpoints (CLI or MLflow Deployments client); configure traffic routing for A/B / canary deploys and zero-downtime version swaps; retrieve OpenAPI schemas; inspect logs, metrics, or permissions; manage AI Gateway rate limits; discover Foundation Model API endpoints at runtime; integrate endpoints into Databricks Apps; or stream from off-platform clients (Vercel AI SDK v6, standalone Node.js). NOT for: training, MLflow autologging, UC registration, custom PyFunc/ResponsesAgent authoring (databricks-ml-training); Knowledge Assistants/Supervisor Agents (databricks-agent-bricks); MLflow evaluation (databricks-mlflow-evaluation).",
+      "source_sha256": "9ad3caee39cdf8d45cfff26e2b2e381972f40a15dca919c5671eb7d7d516dc5b",
+      "source_path": "skills/databricks-model-serving/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acf1e44566aa7872ebe32ce881d7337e6dfd983dd3436bbf27e4cb5564bdd5a4": {
+      "description_zh": "开发Databricks Lakeflow Spark声明式管道，使用Python或SQL构建批量和流式数据处理，原名Delta Live Tables。",
+      "source": "Develop Lakeflow Spark Declarative Pipelines (formerly Delta Live Tables) on Databricks. Use when building batch or streaming data pipelines with Python or SQL. Invoke BEFORE starting implementation.",
+      "source_sha256": "acf1e44566aa7872ebe32ce881d7337e6dfd983dd3436bbf27e4cb5564bdd5a4",
+      "source_path": "skills/databricks-pipelines/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "72bb8c78345023619a9ed1ea12f8bca8612a2ec9b9c629dfc6d55cfaafba32cd": {
+      "description_zh": "指导Databricks Python SDK、Databricks Connect、CLI与REST API开发，用于相关SDK、连接和接口任务。",
+      "source": "Databricks development guidance including Python SDK, Databricks Connect, CLI, and REST API. Use when working with databricks-sdk, databricks-connect, or Databricks APIs.",
+      "source_sha256": "72bb8c78345023619a9ed1ea12f8bca8612a2ec9b9c629dfc6d55cfaafba32cd",
+      "source_path": "skills/databricks-python-sdk/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb76ecf86413d180cbb8a209e430d7f220152d11608d5608a2141c7700d177c8": {
+      "description_zh": "将Databricks笔记本、作业、管道和Scala JAR从经典集群迁移到无服务器计算，核对兼容性并处理Spark Connect架构差异；不用于经典运行时升级或经典集群内部调整。",
+      "source": "Migrate Databricks workloads from classic compute to serverless compute. Use when migrating notebooks, jobs, pipelines, or Scala JARs (`spark_jar_task`) from classic clusters to serverless, checking if existing code is serverless-compatible, or writing new serverless-compatible code. Provides concrete fixes for the serverless Spark Connect architecture and guides the full migration. Not for classic DBR version upgrades or cluster configuration changes within classic compute.",
+      "source_sha256": "eb76ecf86413d180cbb8a209e430d7f220152d11608d5608a2141c7700d177c8",
+      "source_path": "skills/databricks-serverless-migration/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93aeefb5856f033864910aa077109b1c2ddc8a0c27ff1f2c0d64512fb4524699": {
+      "description_zh": "通过databricks environments setup-local预览、创建和排查uv管理的Python虚拟环境，用于Databricks Connect、集群、无服务器、作业任务及自动化包目标。",
+      "source": "Previews, provisions, or diagnoses a uv-managed local Python .venv with `databricks environments setup-local`. Use when the user wants to set up or fix one for Databricks Connect, cluster or serverless compute, `--job-task`, or a bundle target, or when setup-local fails.",
+      "source_sha256": "93aeefb5856f033864910aa077109b1c2ddc8a0c27ff1f2c0d64512fb4524699",
+      "source_path": "skills/databricks-setup-local/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46dc3e0a1c80434113692d3b83401a5d10a37434e22b7ad0938c70aefc053569": {
+      "description_zh": "指导生产Spark Structured Streaming，涵盖Kafka、实时模式、触发器、水位线与状态、检查点、流关联、多目标写入以及流式成本性能优化。",
+      "source": "Comprehensive guide to Spark Structured Streaming for production workloads. Use when building streaming pipelines, working with Kafka ingestion, implementing Real-Time Mode (RTM), configuring triggers (processingTime, availableNow), handling stateful operations with watermarks, optimizing checkpoints, performing stream-stream or stream-static joins, writing to multiple sinks, or tuning streaming cost and performance.",
+      "source_sha256": "46dc3e0a1c80434113692d3b83401a5d10a37434e22b7ad0938c70aefc053569",
+      "source_path": "skills/databricks-spark-structured-streaming/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6317c3efa2cf3625aac9c85968016f7fb1aac1e707096c4d5d6b07da871c79bc": {
+      "description_zh": "优先使用Spark与Faker生成逼真合成测试数据，可无服务器运行并输出Parquet、JSON、CSV或Delta，扩展至百万行；小于一万行可本地生成后上传卷。",
+      "source": "Generate realistic synthetic data using Spark + Faker (strongly recommended). Supports serverless execution, multiple output formats (Parquet/JSON/CSV/Delta), and scales from thousands to millions of rows. For small datasets (<10K rows), can optionally generate locally and upload to volumes. Use when user mentions 'synthetic data', 'test data', 'generate data', 'demo dataset', 'Faker', or 'sample data'.",
+      "source_sha256": "6317c3efa2cf3625aac9c85968016f7fb1aac1e707096c4d5d6b07da871c79bc",
+      "source_path": "skills/databricks-synthetic-data-gen/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71460965f773a8071053dc340da715262ca3c74419de2b469e2377a4a3fc3f57": {
+      "description_zh": "管理Unity Catalog治理、权限、所有权、行级安全和列掩码，配置外部位置与存储凭据，组织目录、模式、表与卷，并查询审计、血缘和账单系统表。",
+      "source": "Unity Catalog governance, access control, and observability. Use to grant or revoke access (GRANT/REVOKE), reason about the privilege model and ownership, set up row-level security and column masks, create external locations and storage credentials, define catalogs/schemas/tables/volumes, answer \"who can read this table\", and query system tables (audit, lineage, billing) or work with volume files in /Volumes/.",
+      "source_sha256": "71460965f773a8071053dc340da715262ca3c74419de2b469e2377a4a3fc3f57",
+      "source_path": "skills/databricks-unity-catalog/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3493d386e53fd1c1f42617dd4075eb422e46d58269112e46a68f233734f82e38": {
+      "description_zh": "为Databricks RAG或文档助手生成合成PDF与评估数据，本地创建后上传Unity Catalog卷，并为每份文档配检索测试问题。",
+      "source": "Build RAG / unstructured-document evaluation datasets and demo documents (e.g. for Knowledge Assistant) on Databricks: generate synthetic PDFs locally, upload to Unity Catalog volumes, and pair each document with test questions for retrieval evaluation.",
+      "source_sha256": "3493d386e53fd1c1f42617dd4075eb422e46d58269112e46a68f233734f82e38",
+      "source_path": "skills/databricks-unstructured-pdf-generation/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41ba1e8dab2c92211246c034ced4169e6dc236224c9449f648052d22d3f9ef90": {
+      "description_zh": "配置Databricks Vector Search端点与索引，解释索引类型、搜索模式和端到端RAG模式。",
+      "source": "Databricks Vector Search endpoints and indexes for RAG and semantic search; covers index types, search modes, end-to-end RAG patterns",
+      "source_sha256": "41ba1e8dab2c92211246c034ced4169e6dc236224c9449f648052d22d3f9ef90",
+      "source_path": "skills/databricks-vector-search/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c18c4b085d1368cf3fdd37ffdf3c767c27a5dd96c42cff0817be1575378e402": {
+      "description_zh": "通过Zerobus Ingest SDK和gRPC构建近实时Delta表写入客户端，无需消息总线，支持Python、Java、Go、TypeScript、Rust及Protobuf、ACK与重试。",
+      "source": "Build Zerobus Ingest clients for near real-time data ingestion into Databricks Delta tables via gRPC. Use when creating producers that write directly to Unity Catalog tables without a message bus, working with the Zerobus Ingest SDK in Python/Java/Go/TypeScript/Rust, generating Protobuf schemas from UC tables, or implementing stream-based ingestion with ACK handling and retry logic.",
+      "source_sha256": "5c18c4b085d1368cf3fdd37ffdf3c767c27a5dd96c42cff0817be1575378e402",
+      "source_path": "skills/databricks-zerobus-ingest/SKILL.md",
+      "package_sha256": "f1a087065ab0d749d27b45fc1a3cba0321fe0d8582f59fd0d377427576c1bb5b",
+      "source_package": "databricks-0.2.22-v5.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b39d38d2b5a05ca66f97ae027943e32a301e832b474bceb6ed3347fe86744961": {
+      "description_zh": "仅在明确创建新Datadog App项目时建立脚手架或初始化@datadog/apps；不处理普通可观测性查询、既有项目、部署发布或认证CI。",
+      "source": "Use ONLY when the user explicitly asks to create, scaffold, or initialize a new Datadog App project — they must use action words like \"create\", \"scaffold\", \"new\", or \"build\" together with \"Datadog App\" or \"@datadog/apps\" or \"npm create @datadog/apps\". Do NOT use for any question that does not involve creating a new project from scratch — questions about Datadog observability products (logs, metrics, APM, traces, monitors, dashboards), working inside an existing project, deploying, publishing, auth, or CI/CD.",
+      "source_sha256": "b39d38d2b5a05ca66f97ae027943e32a301e832b474bceb6ed3347fe86744961",
+      "source_path": "skills/datadog-app/SKILL.md",
+      "package_sha256": "88e6263b123da3037bf0a6df286f50b159e885dda38c5351be1ac980065c48a4",
+      "source_package": "Datadog-0.7.17-v24.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89681a24d1b22de028bb67426215d036271cb499b3226ba617c9d3bfd91e6470": {
+      "description_zh": "配置或排查插件Datadog MCP服务器，修改域名、切换组织或修复既有配置不响应的问题。",
+      "source": "Configures or troubleshoots the plugin's Datadog MCP server. Use when the user wants to change the Datadog domain, switch organizations, or when the server was previously configured but is not responding.",
+      "source_sha256": "89681a24d1b22de028bb67426215d036271cb499b3226ba617c9d3bfd91e6470",
+      "source_path": "skills/ddconfig/SKILL.md",
+      "package_sha256": "88e6263b123da3037bf0a6df286f50b159e885dda38c5351be1ac980065c48a4",
+      "source_package": "Datadog-0.7.17-v24.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a270f27cb80cefc9284862b74988a6d764161bfe6f61752e39bea175152ad4bf": {
+      "description_zh": "首次初始化插件Datadog MCP服务器，为仪表板、监控、告警、日志、指标、APM、SLO及服务健康等数据访问建立连接。",
+      "source": "First-time initialization of the plugin's Datadog MCP server. When fulfilling requests that involve Datadog, use MCP tools from the plugin's Datadog MCP server over other methods. If MCP tools from the plugin's Datadog MCP server are not in your tool list, you MUST run this skill's setup procedure before attempting to fulfill the request. Relevant when the user wants to view or list dashboards or monitors, check alerts, view logs, query metrics, inspect APM traces, investigate SLOs or incidents, debug production issues, investigate errors, analyze performance, investigate a named service's health, errors, or dependencies, or access any Datadog data.",
+      "source_sha256": "a270f27cb80cefc9284862b74988a6d764161bfe6f61752e39bea175152ad4bf",
+      "source_path": "skills/ddsetup/SKILL.md",
+      "package_sha256": "88e6263b123da3037bf0a6df286f50b159e885dda38c5351be1ac980065c48a4",
+      "source_package": "Datadog-0.7.17-v24.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b33371d08fc696970144c43a91e27d76173cfd491fc5d5fb20624d4ada3378d": {
+      "description_zh": "查看、启用或禁用Datadog MCP工具集，控制服务器可用工具。",
+      "source": "Manages toolsets for the plugin's Datadog MCP server. Use when the user wants to view, enable, or disable toolsets that control which tools are available on the MCP server.",
+      "source_sha256": "6b33371d08fc696970144c43a91e27d76173cfd491fc5d5fb20624d4ada3378d",
+      "source_path": "skills/ddtoolsets/SKILL.md",
+      "package_sha256": "88e6263b123da3037bf0a6df286f50b159e885dda38c5351be1ac980065c48a4",
+      "source_package": "Datadog-0.7.17-v24.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d588e9ec78266cd6ee3f2cfeffaef31bbfff1d7541ed7ad85dbca008af2ff93": {
+      "description_zh": "在macOS启用、关闭或查看Datadog可视化面板ddviz状态。",
+      "source": "Enables, disables, or reports the status of the Datadog visualization panel (ddviz). macOS only. Use when the user wants to turn ddviz on or off, or check whether it's currently enabled.",
+      "source_sha256": "6d588e9ec78266cd6ee3f2cfeffaef31bbfff1d7541ed7ad85dbca008af2ff93",
+      "source_path": "skills/ddviz/SKILL.md",
+      "package_sha256": "88e6263b123da3037bf0a6df286f50b159e885dda38c5351be1ac980065c48a4",
+      "source_package": "Datadog-0.7.17-v24.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a8152206ed2647c99c8aef7ae86122cd1f068da6401243441811f69c49cf421": {
+      "description_zh": "用自然语言查询已连接数据库，回答数据问题、运行查询、探索模式及处理SQL。",
+      "source": "Query connected databases using natural language. Use when the user wants to ask questions about their data, run queries, explore database schemas, or work with SQL.",
+      "source_sha256": "6a8152206ed2647c99c8aef7ae86122cd1f068da6401243441811f69c49cf421",
+      "source_path": "skills/db/SKILL.md",
+      "package_sha256": "9133ab3038382d1a6968b0faff7ecbcc95586025b1a44eaa59ef59e533498fe9",
+      "source_package": "DataFrey-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec06b47097e1230263f957b211bb598ee37d0b5c4a49513851a5b3fc4547486d": {
+      "description_zh": "核验和排查DataHub Cloud连接，确认MCP可达、认证正常且Claude可访问目录。",
+      "source": "Verify and troubleshoot the DataHub Cloud connection — confirm the MCP server is reachable, authentication is working, and Claude can access the catalog. Use when the user wants to set up DataHub, test the connection, or fix connectivity issues.",
+      "source_sha256": "ec06b47097e1230263f957b211bb598ee37d0b5c4a49513851a5b3fc4547486d",
+      "source_path": "skills/datahub-setup/SKILL.md",
+      "package_sha256": "362c58fe6616a51e04cd2304417f2d098523831763184c8524f16b06d80259d0",
+      "source_package": "DataHub Cloud-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffc4923489478d42c344b0b7d395c07ffccf75c0b3b3d739211be11fcc779e40": {
+      "description_zh": "规划新的DataHub采集连接器，分类与研究来源系统，生成包含实体映射和架构决策的_PLANNING.md蓝图。",
+      "source": "Plans new DataHub connectors by classifying the source system, researching it using a dedicated agent or inline research, and generating a _PLANNING.md blueprint with entity mapping and architecture decisions. Use when building a new connector, researching a source system for DataHub, or designing connector architecture. Triggers on: \"plan a connector\", \"new connector for X\", \"research X for DataHub\", \"design connector for X\", \"create planning doc\", or any request to plan/research/design a DataHub ingestion source.",
+      "source_sha256": "ffc4923489478d42c344b0b7d395c07ffccf75c0b3b3d739211be11fcc779e40",
+      "source_path": "skills/datahub-connector-planning/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "173eba75a10b2042607d5e431cf0e2f8446c2f6863ce592be13befb258c325d6": {
+      "description_zh": "按照22项DataHub连接器标准审查实现，检查合规、代码质量、静默失败、测试、类型设计及是否适合合并。",
+      "source": "Reviews DataHub connector implementations against 22 golden standards for compliance, code quality, silent failures, test coverage, type design, and merge readiness. Use when reviewing connector code, checking a PR, auditing a connector implementation, or verifying connector standards compliance.",
+      "source_sha256": "173eba75a10b2042607d5e431cf0e2f8446c2f6863ce592be13befb258c325d6",
+      "source_path": "skills/datahub-connector-pr-review/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b212d5e2230f96611e75ffda2249559baba0dbd0fce7ba7d80d9d4247e944b10": {
+      "description_zh": "在DataHub新增或更新描述、标签、术语、所有者、弃用、域、数据产品、结构化属性、文档及字段元数据。",
+      "source": "Use this skill when the user wants to add or update metadata in DataHub: descriptions, tags, glossary terms, ownership, deprecation, domains, data products, structured properties, documents, or field-level metadata. Triggers on: \"add tag to X\", \"update description for X\", \"set owner of X\", \"add glossary term\", \"deprecate X\", \"create a domain\", \"create a glossary term\", \"add a document\", or any request to modify DataHub metadata.",
+      "source_sha256": "b212d5e2230f96611e75ffda2249559baba0dbd0fce7ba7d80d9d4247e944b10",
+      "source_path": "skills/datahub-enrich/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22b01344cc2100793ce167d4fe47ba237702751d5317f7b2cd46dcfce508c589": {
+      "description_zh": "运行DataHub保存的评估，在独立智能体中逐题回答，通过Cloud CLI提交，并读取DataHub裁判判定，支持回归、答案评分与智能体比较。",
+      "source": "Use this skill to run DataHub's saved evals and report answers for judging. Triggers on: \"run our evals\", \"run the eval suite\", \"run eval urn:li:eval:...\", \"how are our evals doing\", \"check for eval regressions\", \"upload this answer as an eval result\", \"score this answer with the DataHub judge\", \"compare two agents on the same eval\". Answers each eval in a fresh agent with the DataHub tools attached, reports the answer through the DataHub Cloud CLI, and reads back the verdict DataHub's own judge produced.",
+      "source_sha256": "22b01344cc2100793ce167d4fe47ba237702751d5317f7b2cd46dcfce508c589",
+      "source_path": "skills/datahub-evals/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32fa2421268d5d3f29bf81d3f06dc6b1aedf613a43050a26915701c76ac8049b": {
+      "description_zh": "配置DataHub加载和显示微前端应用，注册应用、添加导航入口，支持本地、生产及Kubernetes设置和加载排查。",
+      "source": "Configure a DataHub instance to load and display a Micro Frontend (MFE) app. Use when the user wants to register an MFE with DataHub, add an MFE to the nav sidebar, set up MFE config for local dev or production/k8s, or troubleshoot MFE loading issues.",
+      "source_sha256": "32fa2421268d5d3f29bf81d3f06dc6b1aedf613a43050a26915701c76ac8049b",
+      "source_path": "skills/datahub-mfe-configure-app/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1174ff65cad30a73c3e10f5a72a55575151998f864abf12658ded75d0c483398": {
+      "description_zh": "为DataHub微前端、远程应用或Module Federation应用生成完整脚手架文件。",
+      "source": "Scaffold a new DataHub Micro Frontend (MFE) app with all boilerplate files. Use when the user wants to create a new micro frontend, MFE, remote app, or Module Federation app for DataHub.",
+      "source_sha256": "1174ff65cad30a73c3e10f5a72a55575151998f864abf12658ded75d0c483398",
+      "source_path": "skills/datahub-mfe-create-app/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8b5432c60ee61d7c35913accc5c7ee6f554dda0bce7278ea6dc64db5f7e55efb": {
+      "description_zh": "搜索与浏览DataHub目录，发现数据集和实体，按平台或领域回答所有者、敏感字段与列等元数据问题；血缘和系统审计另用对应技能。",
+      "source": "Use this skill when the user wants to search the DataHub catalog, discover entities, answer ad-hoc questions about their data, find datasets, or browse by platform or domain. Triggers on: \"search DataHub\", \"find datasets\", \"who owns X\", \"what tables contain PII\", \"what columns does X have\", or any request to search, discover, browse, or answer one-off questions about DataHub metadata. For lineage questions (\"what feeds into X\"), use `/datahub-lineage`. For systematic audits (\"how complete is our metadata\"), use `/datahub-audit`.",
+      "source_sha256": "8b5432c60ee61d7c35913accc5c7ee6f554dda0bce7278ea6dc64db5f7e55efb",
+      "source_path": "skills/datahub-search/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "43b635004d803f3cea31ccc56383c1fd08c94803be8a51f3a23b3adba522e5c0": {
+      "description_zh": "建立DataHub连接，安装CLI、配置认证、验证连通、设置默认范围及智能体配置档案。",
+      "source": "Use this skill when the user needs to set up a DataHub connection, install the DataHub CLI, configure authentication, verify connectivity, set default scopes, or create agent configuration profiles. Triggers on: \"set up DataHub\", \"connect to DataHub\", \"install datahub CLI\", \"configure DataHub\", \"set default platform\", \"focus on domain X\", \"create profile\", or any request to establish, configure, or troubleshoot DataHub connectivity.",
+      "source_sha256": "43b635004d803f3cea31ccc56383c1fd08c94803be8a51f3a23b3adba522e5c0",
+      "source_path": "skills/datahub-setup/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80c24579d732f3cd93674c79f1d0c22e2982a865f9621bab252ea70a252bb909": {
+      "description_zh": "在DataHub连接器开发或审查前加载全部22项黄金标准，提供完整开发指南供引用。",
+      "source": "Loads all 22 DataHub connector golden standards into context. Use before starting connector development or review work to ensure the full set of standards is available for reference. Triggers on: \"load standards\", \"show standards\", \"what are the connector standards\", \"load golden standards\", \"review standards\", or any request to load DataHub connector development guidelines.",
+      "source_sha256": "80c24579d732f3cd93674c79f1d0c22e2982a865f9621bab252ea70a252bb909",
+      "source_path": "skills/load-standards/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc9001c571b4d660b2556837609353b50e43d7ff0a51a2510dac815144880461": {
+      "description_zh": "作为会话自动加载的DataHub路由指南，将用户意图映射到对应交互技能，不直接调用。",
+      "source": "This skill provides routing guidance for all DataHub interaction skills. It is injected at session start and helps map user intent to the correct skill. Do not invoke this skill directly — it is loaded automatically.",
+      "source_sha256": "bc9001c571b4d660b2556837609353b50e43d7ff0a51a2510dac815144880461",
+      "source_path": "skills/using-datahub/SKILL.md",
+      "package_sha256": "aa9ef988b67182cef0f30f40df6f96ece2df20c7433382ea1f74dd1e2253b0d1",
+      "source_package": "datahub-skills-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91a2a23cfac45fa20097aa8c899bd1fa8b012bf6d083e70199865f4c921db926": {
+      "description_zh": "设计仪表板布局、KPI层次、组件和注意力顺序，用于监控、指标展示及管理摘要。",
+      "source": "Designs dashboard layouts with KPI hierarchy, component selection, and attention choreography. Use when creating dashboards, KPI displays, monitoring screens, or executive summary views.",
+      "source_sha256": "91a2a23cfac45fa20097aa8c899bd1fa8b012bf6d083e70199865f4c921db926",
+      "source_path": "skills/dashboard-design/SKILL.md",
+      "package_sha256": "549943aac959a0147eee71cf6141d1881a1cd599e11e58a5ee7d02b36c07c897",
+      "source_package": "dataink-3.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30f493063b3fee2ace14646eea2c1b740837445d06f539020518ad4957e5c82a": {
+      "description_zh": "组织数据演示与报告的叙事、逻辑和流程，用于幻灯片、管理摘要、报告提纲与决策表达。",
+      "source": "Structures the narrative arc, flow, and logic of data-driven presentations and reports. Use when building slide decks, structuring executive summaries, outlining reports, framing decisions, or improving narrative flow.",
+      "source_sha256": "30f493063b3fee2ace14646eea2c1b740837445d06f539020518ad4957e5c82a",
+      "source_path": "skills/data-storyteller/SKILL.md",
+      "package_sha256": "549943aac959a0147eee71cf6141d1881a1cd599e11e58a5ee7d02b36c07c897",
+      "source_package": "dataink-3.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f075935c310cc62126d66800eb968eab93198076168e28563a76b8d7aefdbffc": {
+      "description_zh": "选择与改进数据图表，使其清晰、准确和可访问，处理图型、视觉杂乱、品牌颜色及单个图表设计。",
+      "source": "Selects, designs, and refines data visualizations for clarity, accuracy, and accessibility. Use when choosing chart types, improving graphs, reducing clutter, applying brand colors, or designing individual charts.",
+      "source_sha256": "f075935c310cc62126d66800eb968eab93198076168e28563a76b8d7aefdbffc",
+      "source_path": "skills/data-visualization/SKILL.md",
+      "package_sha256": "549943aac959a0147eee71cf6141d1881a1cd599e11e58a5ee7d02b36c07c897",
+      "source_package": "dataink-3.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "76612427b90631ed3c836f9ef4cc74062546425019d39353ad4ace6639368559": {
+      "description_zh": "设计数据驱动信息图的布局、颜色与叙事结构，适用于可视化摘要、单页报告及多个数据点的整合呈现。",
+      "source": "Designs the layout, color strategy, and narrative structure of data-driven infographics. Use when creating infographics, visual summaries, one-page data reports, or combining multiple data points into a single visual.",
+      "source_sha256": "76612427b90631ed3c836f9ef4cc74062546425019d39353ad4ace6639368559",
+      "source_path": "skills/infographic-creator/SKILL.md",
+      "package_sha256": "549943aac959a0147eee71cf6141d1881a1cd599e11e58a5ee7d02b36c07c897",
+      "source_package": "dataink-3.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b04400b2f22c712c6c5cd17cdbfe88576c8157e4c109d0c41c0217956219b12c": {
+      "description_zh": "设计清晰易读的数据表，处理结构、对齐、数字格式、分组与汇总行，适用于精确数值、查找表和表格报告。",
+      "source": "Designs clear, readable data tables — structure, alignment, number formatting, grouping, and summary rows. Use when presenting exact values, building reference or lookup tables, formatting tabular reports, or when a chart is the wrong medium.",
+      "source_sha256": "b04400b2f22c712c6c5cd17cdbfe88576c8157e4c109d0c41c0217956219b12c",
+      "source_path": "skills/table-design/SKILL.md",
+      "package_sha256": "549943aac959a0147eee71cf6141d1881a1cd599e11e58a5ee7d02b36c07c897",
+      "source_package": "dataink-3.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "61cc634d426c8e2dc89eeab87b3cda47bf1844bd6916f0d7bf7f8f62ae6ff575": {
+      "description_zh": "按P0可访问性与数据完整性、P1清晰度、P2完善度审查和改进可视化，检查图表、仪表板及常见反模式。",
+      "source": "Critiques and improves existing data visualizations using a prioritized rule system (P0 accessibility and integrity, P1 clarity, P2 polish). Use when reviewing charts, auditing dashboards, checking accessibility compliance, or identifying anti-patterns.",
+      "source_sha256": "61cc634d426c8e2dc89eeab87b3cda47bf1844bd6916f0d7bf7f8f62ae6ff575",
+      "source_path": "skills/visualization-review/SKILL.md",
+      "package_sha256": "549943aac959a0147eee71cf6141d1881a1cd599e11e58a5ee7d02b36c07c897",
+      "source_package": "dataink-3.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "22a0c3fa43fc864f363d1252523a603f8ae2ea53dd28795ca622b41e73ce1f6a": {
+      "description_zh": "使用DataKart补全联系人、工作邮箱与电话，执行瀑布式补全和批量CSV任务，确认积分、监控进展并下载完整结果。",
+      "source": "Use when the user wants to enrich contacts, find work emails or phone numbers, run email/phone waterfall enrichment, enrich a DataKart prospecting file or an uploaded CSV, check enrichment credits, monitor a bulk enrichment job, or download enriched results. Covers enrichment_submit, bulk_enrichment_* tools, credit confirmation, and full-file delivery.",
+      "source_sha256": "22a0c3fa43fc864f363d1252523a603f8ae2ea53dd28795ca622b41e73ce1f6a",
+      "source_path": "skills/datakart-enrichment/SKILL.md",
+      "package_sha256": "28bc3fca09526ecaf1a1e667fde6927a6b68149d48d56e21468fd5cb65cdd87f",
+      "source_package": "Datakart-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e56350b09067b5b60bd65beda812e9ec88e55ecddbc500f0b9acf9edc4e97ed": {
+      "description_zh": "根据理想客户画像搜索DataKart潜客、决策人、企业与联系人，调整搜索版本、查询会话进展，并导出和交付完整名单文件。",
+      "source": "Use when the user wants to find prospects, leads, decision makers, companies, accounts, or people matching an ICP, build a lead list, refine a prospecting search, or export/pull/download DataKart prospecting results to a file. Covers prospecting_start, session polling, search versions, file export, and full-file delivery.",
+      "source_sha256": "2e56350b09067b5b60bd65beda812e9ec88e55ecddbc500f0b9acf9edc4e97ed",
+      "source_path": "skills/datakart-prospecting/SKILL.md",
+      "package_sha256": "28bc3fca09526ecaf1a1e667fde6927a6b68149d48d56e21468fd5cb65cdd87f",
+      "source_package": "Datakart-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a6debc86ddeaf171c557a6ad122ba93c914e910fbf0ac2b3ec062757a436fdb": {
+      "description_zh": "对Finance OS表全部历史检测数据异常，客户端依据MCP基准聚合计算发现、严重度和质量评分，生成多表Excel质量工作簿；与仅最近完整财年聊天分析采用不同基准。",
+      "source": "Detect data anomalies and generate a comprehensive data-quality Excel WORKBOOK from Finance OS tables, computed over the table's ALL-TIME history (use the anomalies skill for a chat-only answer scoped to the latest fiscal year — the two baselines differ by design, so counts won't match). The MCP tools return baseline aggregates only; this skill derives findings, severity buckets, and the Data Quality Score client-side, then writes a multi-sheet workbook. Self-contained — pass --table-id to target a table directly, or it discovers the financials table on its own; no profile or setup step required.",
+      "source_sha256": "7a6debc86ddeaf171c557a6ad122ba93c914e910fbf0ac2b3ec062757a436fdb",
+      "source_path": "skills/anomalies-report/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d8a1a76610967a100b1a9ba624cc5c19ee9c556d8018ac3d6a75ab50ae0151e": {
+      "description_zh": "对单个Datarails Finance OS表最近完整财年检测异常值、重复、缺失及稀有值，客户端计算严重度排序并在聊天回答，不生成文件。",
+      "source": "Detect data anomalies in one Datarails Finance OS table and answer IN CHAT — severity-ranked outliers, duplicates, missing/null rates, rare values — scoped to the latest complete fiscal year. Writes no file (use the anomalies-report skill for an Excel workbook; use the profile skill for unscoped whole-history statistics). The MCP profiling and aggregation tools return baseline aggregates only (raw rows come from the separate get_data_by_* calls); this skill computes the findings client-side.",
+      "source_sha256": "5d8a1a76610967a100b1a9ba624cc5c19ee9c556d8018ac3d6a75ab50ae0151e",
+      "source_path": "skills/anomalies/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2f10942816caaedf589332ab90f1e32815081918afc6b28a023d7249d473d97": {
+      "description_zh": "基于Finance OS生成完整性、对账、映射一致性与实质样本审计支持证据，交付PDF和Excel；不提供SOX认证，访问控制、变更管理与IT通用控制不在范围内。",
+      "source": "Generate an audit-support evidence package over FinanceOS data - completeness, reconciliation, mapping-integrity, and substantive-sample checks with a PDF report and Excel evidence workbook. Not a SOX certification - access-control, change-management, and IT-general-control evidence is out of scope.",
+      "source_sha256": "d2f10942816caaedf589332ab90f1e32815081918afc6b28a023d7249d473d97",
+      "source_path": "skills/audit/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "494ba2b5b501d73277c4a9ed981bcce3331326e569b9567049d2839e0c670d34": {
+      "description_zh": "对最新已关闭月份生成KPI快照，排除进行中月份，交付Excel仪表板和单页PowerPoint；完整财年叙事和分析另用insights或intelligence。",
+      "source": "Executive KPI dashboard — a ONE-MONTH metrics snapshot for the latest closed month (not real-time; the in-progress month is excluded) — Excel dashboard + single-slide PowerPoint one-pager. For a full-fiscal-year narrative deck use insights; for a year-long analysis workbook use intelligence; for a raw data export use extract.",
+      "source_sha256": "494ba2b5b501d73277c4a9ed981bcce3331326e569b9567049d2839e0c670d34",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a83a61c9ca45b95bc62421746716f910bb304eccdc74b3b16feb71ed2c6ad3d3": {
+      "description_zh": "按部门分析损益和绩效，生成部门报告与比较分析，输出Excel与PowerPoint。",
+      "source": "Analyze P&L and performance by department. Creates departmental reports and comparative analysis with Excel and PowerPoint outputs.",
+      "source_sha256": "a83a61c9ca45b95bc62421746716f910bb304eccdc74b3b16feb71ed2c6ad3d3",
+      "source_path": "skills/departments/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8ad1a7cfebc94f35865bbd0464cb2dbc2aae60bbfe2c4c539692d0ff6b8ed17": {
+      "description_zh": "下钻Datarails单元格解释数字或差异，实时Excel使用插件下钻，文件模式解析DR.GET与隐藏过滤条件后查询核对，也支持直接提供公式或结构化条件。",
+      "source": "Drill down on a cell in the Datarails Excel Add-in to see underlying detail — also the skill to use when the user asks to \"explain the variance\", \"explain this number\", \"what's driving this\", \"what's behind this cell\", or break a figure into its line items. In a live Excel context (add-in agent bridge available) DR formula cells drill through the add-in's own drill-down; with an .xlsx file (Claude Code) it resolves DR.GET formulas, reads hidden \"dr control\" filters, queries Datarails, and validates totals; with no workbook at all, the user can paste a DR.GET formula or give structured filters (no-file mode). Self-contained — discovers the client's financials table and fields on its own, no profile or setup step required.",
+      "source_sha256": "b8ad1a7cfebc94f35865bbd0464cb2dbc2aae60bbfe2c4c539692d0ff6b8ed17",
+      "source_path": "skills/drilldown/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13286e94fb1cf24b56aeea318817d7eb9793163d6ab0bed0744919b8dd095aa9": {
+      "description_zh": "从真实聚合数据分析主要费用类别、月度趋势和集中度，自动发现客户财务表与字段。",
+      "source": "Top expense categories, monthly expense trends, and concentration analysis from real aggregated data. Self-contained — discovers the client's financials table and fields itself, no profile or setup step required.",
+      "source_sha256": "13286e94fb1cf24b56aeea318817d7eb9793163d6ab0bed0744919b8dd095aa9",
+      "source_path": "skills/expense-analysis/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2585dfe9979378649648f74e13b023dd2926bfc26173a77a103eb93f1286ca0d": {
+      "description_zh": "从Datarails导出经过核验的完整年度原始财务数据，生成损益、资产负债、可获取KPI与校验四表Excel，不提供分析或叙事。",
+      "source": "Extract validated financial data from Datarails Finance OS to Excel — a RAW FULL-YEAR export — a 4-sheet workbook (P&L, Balance Sheet, KPIs including SaaS metrics where sourceable from the org's data, and validation checks); no analysis or narrative. For an analyzed workbook use intelligence; for an executive deck use insights. Self-contained — discovers the client's tables and fields on its own, no profile or setup step required.",
+      "source_sha256": "2585dfe9979378649648f74e13b023dd2926bfc26173a77a103eb93f1286ca0d",
+      "source_path": "skills/extract/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ce88741046fcb6c9bd31af183c03e4c8a7dfd676410b99c15e6cb5b6139d2f1": {
+      "description_zh": "根据真实聚合总额快速汇总收入、费用、毛利及利润率，自动发现财务表和字段。",
+      "source": "Quick snapshot of revenue, expenses, gross profit, and margin from real aggregated totals. Self-contained — discovers the client's financials table and fields on its own, no profile or setup step required.",
+      "source_sha256": "7ce88741046fcb6c9bd31af183c03e4c8a7dfd676410b99c15e6cb5b6139d2f1",
+      "source_path": "skills/financial-summary/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1eb21c2017d69721f34b5af22d54c449cbbe0b3ce8c4975074659298324fedb2": {
+      "description_zh": "比较预算、预测与实际的多情景财务差异，用于规划与绩效审查。",
+      "source": "Analyze budget vs forecast vs actual variances. Compares multi-scenario financial data for planning and performance review.",
+      "source_sha256": "1eb21c2017d69721f34b5af22d54c449cbbe0b3ce8c4975074659298324fedb2",
+      "source_path": "skills/forecast-variance/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fa20c832e667544e4bd7acb457563e5c63e2a3c100efcdf949a77afd1c1a5702": {
+      "description_zh": "生成带DR.GET公式的Excel工作簿，实时拉取Datarails财务数据，建立损益、预算与差异模板，并验证维度值。",
+      "source": "Generate Excel workbooks with DR.GET formulas that pull live financial data from Datarails. Creates P&L templates, budget models, and variance reports with validated dimension values. Self-contained — discovers the client's financials table and fields on its own, no profile or setup step required.",
+      "source_sha256": "fa20c832e667544e4bd7acb457563e5c63e2a3c100efcdf949a77afd1c1a5702",
+      "source_path": "skills/get-formula/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "20f961f97aad6224c166e2e9c561938ed66838fd60f5e01ea206825a24e084be": {
+      "description_zh": "为完整财年生成管理层趋势洞察与可视化叙事，交付多页PowerPoint和支撑Excel数据册。",
+      "source": "Executive-ready insights with trend analysis and visualizations — a FULL-FISCAL-YEAR narrative deck — multi-slide PowerPoint presentation plus a supporting Excel data book. For a one-month KPI snapshot use dashboard; for a 10-sheet analysis workbook (no PowerPoint) use intelligence.",
+      "source_sha256": "20f961f97aad6224c166e2e9c561938ed66838fd60f5e01ea206825a24e084be",
+      "source_path": "skills/insights/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "055e2fd577f37deb999e9cd6adc7155f28694b55558fa71bb9e80c2ab3227219": {
+      "description_zh": "为完整财年生成最多10表的FP&A分析Excel，自动识别并排序洞察、发现与建议，提供专业格式，不生成PowerPoint。",
+      "source": "Comprehensive FP&A financial-analysis intelligence workbook for a FULL FISCAL YEAR — Excel, up to 10 sheets, with ranked auto-detected insights, findings and recommendations, and professional formatting; no PowerPoint. For a one-month KPI snapshot use dashboard; for an executive deck use insights. Self-contained — discovers the client's tables and fields on its own, no profile or setup step required.",
+      "source_sha256": "055e2fd577f37deb999e9cd6adc7155f28694b55558fa71bb9e80c2ab3227219",
+      "source_path": "skills/intelligence/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31afdf2064fc829c62d83f5f4bf2d10d2464e73b51ccbf47bb3b6810db076b37": {
+      "description_zh": "分析Datarails字段全历史分布，客户端推导范围、近似分位、空值率、基数和区间异常标记；不按时期筛选或排序严重度，财年异常另用anomalies。",
+      "source": "Profile Datarails Finance OS table fields — how is a field distributed? Per-field statistics over the table's whole history — ranges, approximate percentiles, null rates, cardinality interpretation, and range-outlier flags — no severity ranking, no period scope. The MCP tools return baseline aggregates (SUM/AVG/MIN/MAX/COUNT for numeric, distinct-value samples for categorical); this skill derives the statistics client-side. For severity-ranked data-quality findings scoped to the latest fiscal year, use the anomalies skill.",
+      "source_sha256": "31afdf2064fc829c62d83f5f4bf2d10d2464e73b51ccbf47bb3b6810db076b37",
+      "source_path": "skills/profile/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55b37254edcf2273b09f5e55ec8bc1f6d26b9144206529ef102401af9e2d1160": {
+      "description_zh": "按值列表、比较、范围、文本、空值和日期等条件查询Datarails表，获取特定记录或分页调查。",
+      "source": "Query Datarails Finance OS tables with filters. Fetch specific records or page through rows for investigation. The filter API supports value-list AND advanced operators — comparisons, ranges, text matching, null checks, and date ranges all work.",
+      "source_sha256": "55b37254edcf2273b09f5e55ec8bc1f6d26b9144206529ef102401af9e2d1160",
+      "source_path": "skills/query/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3826107103b8a10b1c5bb73a0ba94f9611d136a1eba2ea34545ad48d083957ea": {
+      "description_zh": "生成全时期一致性核对工作簿，检查Finance OS端点一致、资产负债恒等式、跨粒度汇总及情景时期完整性，验证管道和映射，不验证源系统或逐指标分层。",
+      "source": "Whole-period consistency WORKBOOK - run independent-source checks across Finance OS data (cross-endpoint agreement, balance-sheet identity, cross-grain roll-ups, scenario/period integrity). Validates the data pipeline and mappings, not source systems. NOT a per-metric layer comparison - that is the dev-only cross-layer-reconcile harness.",
+      "source_sha256": "3826107103b8a10b1c5bb73a0ba94f9611d136a1eba2ea34545ad48d083957ea",
+      "source_path": "skills/reconciliation/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39ebdfa1ed4833481e2f9775babe526f11e9d24b101d09cdb2a3f28c036a5ddc": {
+      "description_zh": "根据真实月度聚合分析收入趋势、增长率与构成，自动发现财务表和字段。",
+      "source": "Revenue trends, growth rates, and composition from real aggregated monthly data. Self-contained — discovers the client's financials table and fields itself, no profile or setup step required.",
+      "source_sha256": "39ebdfa1ed4833481e2f9775babe526f11e9d24b101d09cdb2a3f28c036a5ddc",
+      "source_path": "skills/revenue-trends/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc84bf0d45feca2bcf2e4fa86a38ccf5cc5c1273f6ff2c1e0526186e530db24d": {
+      "description_zh": "列出和探索Datarails可用表，查看字段、类型与值域以了解模式，可在Excel内通过MCP查询组织级表；字段统计另用profile。",
+      "source": "List and explore Datarails Finance OS tables — discover what data is available and view one table's SCHEMA (fields, types, distinct values of a field) to understand its structure. For per-field STATISTICS (ranges, percentiles, null rates, cardinality) use the profile skill. Works with or without an open workbook — in Excel, \"list my Datarails tables/models/fields\" still routes HERE via the MCP connector (the Excel bridge's agent.list_functions lists workbook widgets, not org tables).",
+      "source_sha256": "cc84bf0d45feca2bcf2e4fa86a38ccf5cc5c1273f6ff2c1e0526186e530db24d",
+      "source_path": "skills/tables/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47146e698efdda81eb54276351dce8daa68e536d0d395605b1ebdea7ca282bd7": {
+      "description_zh": "测试Datarails API字段聚合兼容性与性能，自动发现候选字段，对失败字段建议相邻替代项并报告结果。",
+      "source": "Test API field compatibility and performance. Discovers which fields work with aggregation and suggests sibling alternatives for failed fields, then reports the results. Self-contained — discovers the client's financials table and candidate fields on its own, no profile or setup step required.",
+      "source_sha256": "47146e698efdda81eb54276351dce8daa68e536d0d395605b1ebdea7ca282bd7",
+      "source_path": "skills/test/SKILL.md",
+      "package_sha256": "018e4932acb0c6c51988fd3d8b38528fa6040ebc0680f5db085eeef6469dcbfa",
+      "source_package": "Datarails financeos-3.4.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0423a9625a0dfa293c8fb0a90f5d421fa55630d07d478dc355f32bc0ea50ca50": {
+      "description_zh": "将大型DataRobot技能的详细内容移入直接链接的参考文件，保留原意，减少上下文窗口压力并实现渐进披露。",
+      "source": "Refactor large DataRobot skill files by moving detailed content into directly linked reference files while preserving meaning. Use when a skill triggers context-window warnings, needs progressive disclosure, or should be chunked without changing guidance.",
+      "source_sha256": "0423a9625a0dfa293c8fb0a90f5d421fa55630d07d478dc355f32bc0ea50ca50",
+      "source_path": ".skills/progressive-disclosure/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f05e1fcb70aee4cde1f9a5b71d7b27ad30b69fd5a521f06f5d7895d20938aba": {
+      "description_zh": "设计、构建、模拟、强化和部署DataRobot AI智能体，覆盖agent_spec、LLM Gateway预演、对抗群体模拟、框架模板、MCP、后端及React前端；不用于预测模型。",
+      "source": "Use when the user wants to design, build, code, simulate, or deploy an AI agent (not a predictive model) to DataRobot; mentions agent_spec.md, dr-assist, datarobot-agent-assist, dress rehearsal, swarm simulation, or the DataRobot agent template; wants to scaffold a LangGraph, CrewAI, LlamaIndex, NAT, or Base agent targeting DataRobot; wants to add an MCP server, backend API, or React frontend to a DataRobot agent application; or uses the DataRobot CLI (dr) to build or deploy an agentic custom application; or wants to harden, stress-test, or battle-test an agent. Covers the full workflow: agent design, agent_spec.md authoring, dress-rehearsal simulation via the DataRobot LLM Gateway, adversarial swarm simulation, template-based coding, and deployment.",
+      "source_sha256": "6f05e1fcb70aee4cde1f9a5b71d7b27ad30b69fd5a521f06f5d7895d20938aba",
+      "source_path": "skills/datarobot-agent-assist/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5fcd7db2d24e56c52bb4c0489b26547b35fc6ce7af642079f2c27060eddc456b": {
+      "description_zh": "为DataRobot设计、编码和部署AI智能体，支持agent_spec、预演、LangGraph、CrewAI、LlamaIndex、NAT及Base模板、MCP、后端和自定义前端。",
+      "source": "Use when the user wants to design, build, code, or deploy an AI agent on DataRobot; mentions agent_spec.md, dress rehearsal, the DataRobot agent template, LangGraph, CrewAI, LlamaIndex, NAT, Base agents, MCP servers, backend APIs, custom frontends, or the DataRobot CLI.",
+      "source_sha256": "5fcd7db2d24e56c52bb4c0489b26547b35fc6ce7af642079f2c27060eddc456b",
+      "source_path": "skills/datarobot-agent-assist/agent-assist-build/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91537043c054b9fe4c3639e0703e3c70afbb155463aff933250252d7c65a6a4c": {
+      "description_zh": "部署前对已实现智能体进行对抗测试、评估与强化，支持群体模拟、攻击与持久性测试、评估标准和eval_report。",
+      "source": "Use when the user wants to adversarially test, evaluate, or harden an implemented AI agent before deployment; mentions swarm simulation, attack testing, persistence testing, evaluation criteria, or eval_report.md.",
+      "source_sha256": "91537043c054b9fe4c3639e0703e3c70afbb155463aff933250252d7c65a6a4c",
+      "source_path": "skills/datarobot-agent-assist/agent-assist-simulate/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1710eaf493b22b75bd58f6f5f81cd6f87f9978bcb6f15ea41cb0cd57ab9be188": {
+      "description_zh": "读取DataRobot项目llm.yml的真实选项并访谈用户，选择模型、网关、部署模型、外部服务或其他已配置集成，再通过sync_llm_env.py合并环境配置与凭据。",
+      "source": "Use when the user wants to configure LLM integration for a DataRobot agent application. This skill helps to change LLM model, switch between the LLM integrations the project supports (LLM Gateway, a DataRobot-deployed LLM, an external provider, an LLM Blueprint, and any others its config declares), or set up provider credentials. The skill reads the project's .datarobot/cli/llm.yml for the real options, interviews the user, then runs sync_llm_env.py with the chosen values as CLI args to merge into .env.",
+      "source_sha256": "1710eaf493b22b75bd58f6f5f81cd6f87f9978bcb6f15ea41cb0cd57ab9be188",
+      "source_path": "skills/datarobot-agent-llm-selection/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "690f18ac0b84b917e348c3928ea671a7dc35a3d851e2b73cb154fd6a708e6c6e": {
+      "description_zh": "为DataRobot应用模板配置GitLab或GitHub Actions CI/CD，并通过Pulumi管理基础设施与部署。",
+      "source": "Guidance for setting up CI/CD pipelines for DataRobot application templates using GitLab, GitHub Actions, and Pulumi for infrastructure as code. Use when setting up CI/CD pipelines, configuring deployments, or managing infrastructure for DataRobot application templates.",
+      "source_sha256": "690f18ac0b84b917e348c3928ea671a7dc35a3d851e2b73cb154fd6a708e6c6e",
+      "source_path": "skills/datarobot-app-framework-cicd/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "106bf69a4a460f3dce4453c474546feed44c5c91ffd0f0300838ca6450b38644": {
+      "description_zh": "指导DataRobot数据上传、数据集管理、校验及项目数据准备。",
+      "source": "Tools and guidance for data upload, dataset management, data validation, and preparing data for DataRobot projects. Use when uploading datasets, managing data, or validating data for DataRobot.",
+      "source_sha256": "106bf69a4a460f3dce4453c474546feed44c5c91ffd0f0300838ca6450b38644",
+      "source_path": "skills/datarobot-data-preparation/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82342e4f13e30bf57f159f5776ffbfa63d675cfb8d9ff919477a4cdc1abf3d77": {
+      "description_zh": "直接查询实时DataRobot目录，发现任务所需技能、MCP、智能体与平台资源，避免第三方索引滞后；配置DATAROBOT_ENDPOINT时也查询用户实例。",
+      "source": "Use when the user wants to find DataRobot capabilities — skills, MCP servers, agents, or platform resources — for a task. Fetches the live DataRobot catalog directly so results are always current, regardless of third-party search index lag. Also checks the user's own DataRobot instance if DATAROBOT_ENDPOINT is set.",
+      "source_sha256": "82342e4f13e30bf57f159f5776ffbfa63d675cfb8d9ff919477a4cdc1abf3d77",
+      "source_path": "skills/datarobot-discover/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de45044ea4d61b92ced721c78340fffcd18737b463685404445f0976d2b80ab0": {
+      "description_zh": "为外部或既有AI智能体添加OpenTelemetry埋点，将追踪、日志与指标发送到DataRobot用于监控、可观测性和治理。",
+      "source": "Instrument any external or existing AI agent with OpenTelemetry to send traces, logs, and metrics to DataRobot for monitoring, observability, and governance. Use when the user says \"add tracing/observability/monitoring to my agent\", wants to instrument an existing agent project in their IDE, or wants to send agent traces, logs, or metrics to DataRobot.",
+      "source_sha256": "de45044ea4d61b92ced721c78340fffcd18737b463685404445f0976d2b80ab0",
+      "source_path": "skills/datarobot-external-agent-monitoring/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f00b1961c2a7e534fe3ac4d90e67414910a77bd2ab230f724ef8122bc9d51d4f": {
+      "description_zh": "指导DataRobot特征工程、特征发现与重要性分析，并解释自动特征工程能力。",
+      "source": "Guidance for feature engineering, feature discovery, feature importance analysis, and understanding DataRobot's automated feature engineering capabilities. Use when working with feature engineering, feature discovery, or analyzing feature importance in DataRobot.",
+      "source_sha256": "f00b1961c2a7e534fe3ac4d90e67414910a77bd2ab230f724ef8122bc9d51d4f",
+      "source_path": "skills/datarobot-feature-engineering/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "672ddb452c4381e3c1a126f57e62fcc4f1231bcbe5b8bdb395fed76c4d2fbd30": {
+      "description_zh": "部署DataRobot模型，创建或更新部署、配置预测环境并处理部署运维。",
+      "source": "Tools and guidance for deploying DataRobot models, managing deployments, configuring prediction environments, and deployment operations. Use when deploying models, creating or updating deployments, or configuring prediction environments.",
+      "source_sha256": "672ddb452c4381e3c1a126f57e62fcc4f1231bcbe5b8bdb395fed76c4d2fbd30",
+      "source_path": "skills/datarobot-model-deployment/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9cf7e5ca8f17360d54d25be3f760623bd18face995f4a21a387b01ce58afa83d": {
+      "description_zh": "分析DataRobot模型解释、特征影响、SHAP值与分布、异常及模型行为诊断。",
+      "source": "Tools and guidance for model explainability, prediction explanations, feature impact analysis, SHAP values, SHAP distributions, anomaly assessment, and model diagnostics. Use when analyzing model explanations, feature impact, SHAP values, SHAP distributions, anomaly assessment, or diagnosing model behavior.",
+      "source_sha256": "9cf7e5ca8f17360d54d25be3f760623bd18face995f4a21a387b01ce58afa83d",
+      "source_path": "skills/datarobot-model-explainability/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1282e3c2559fe6898dca0307aeb14f174546fd0a2246329bea2073e1f9b63794": {
+      "description_zh": "监控DataRobot模型性能、数据漂移和健康，调查预测异常。",
+      "source": "Tools and guidance for monitoring model performance, tracking data drift, managing model health, and detecting prediction anomalies. Use when monitoring deployed models, tracking drift, or investigating prediction anomalies.",
+      "source_sha256": "1282e3c2559fe6898dca0307aeb14f174546fd0a2246329bea2073e1f9b63794",
+      "source_path": "skills/datarobot-model-monitoring/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7ff7022cfb77b1a086f600f96d63e76b0a836a2ec865a009cb19bd0aac4a14c9": {
+      "description_zh": "指导DataRobot项目创建、AutoML设置、特征工程与模型选择，完成模型训练。",
+      "source": "Comprehensive guidance for training models in DataRobot, including project creation, AutoML configuration, feature engineering, and model selection. Use when training models, creating AutoML projects, or selecting models in DataRobot.",
+      "source_sha256": "7ff7022cfb77b1a086f600f96d63e76b0a836a2ec865a009cb19bd0aac4a14c9",
+      "source_path": "skills/datarobot-model-training/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a67000be6ec0740ee78342aa415846b10b69dd181782ab7a3f23ee78fc3ef69c": {
+      "description_zh": "通过DataRobot部署进行实时预测或批量评分，生成预测数据集，并使用SHAP或XEMP解释单次预测。",
+      "source": "Tools and guidance for making predictions with DataRobot deployments, including real-time predictions, batch scoring, prediction dataset generation, and prediction explanations (SHAP/XEMP). Use when making predictions, running batch scoring, generating prediction datasets, or explaining individual predictions from a deployment.",
+      "source_sha256": "a67000be6ec0740ee78342aa415846b10b69dd181782ab7a3f23ee78fc3ef69c",
+      "source_path": "skills/datarobot-predictions/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f10be0d449891ba46ed6b234c022def720c199c3fab9a14c17a4b07a64b4491b": {
+      "description_zh": "设置DataRobot本地开发环境，安装Python SDK、dr-cli、Agent Assist与依赖，处理首次使用、重新认证及缺失无效凭据恢复。",
+      "source": "Sets up DataRobot for local development including Python SDK, dr-cli, Agent Assist, and all required dependencies. Use when the user has not yet worked with DataRobot on this machine, OR when any DataRobot task fails due to missing or invalid credentials. Covers first-time setup, re-authentication, and credential recovery.",
+      "source_sha256": "f10be0d449891ba46ed6b234c022def720c199c3fab9a14c17a4b07a64b4491b",
+      "source_path": "skills/datarobot-setup/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4670a2337ecad94e95959ca764add7e136a846b31e70dfd6b59e95a4c22a687f": {
+      "description_zh": "通过DataRobot Workload API创建、扩缩容、诊断和滚动发布容器工作负载，选择CPU或GPU、管理副本、构建及锁定产物，分析崩溃、镜像、内存、探针、日志与遥测。",
+      "source": "Use when the user wants to create, configure, scale, debug, observe, or roll out container workloads on DataRobot''s Workload API. Triggers include: deploying a container as a managed service, listing/starting/stopping workloads, changing replica counts or autoscaling, picking CPU/GPU compute bundles, injecting DataRobot credentials as env vars, diagnosing workloads that are stuck / errored / crash-looping (CrashLoopBackOff, ImagePullBackOff, OOMKilled, probe failures, exec format error), pulling application logs / OpenTelemetry traces / metrics / request stats, creating or iterating container artifacts, building images server-side, locking artifacts for production, or doing a zero-downtime rolling artifact replacement.",
+      "source_sha256": "4670a2337ecad94e95959ca764add7e136a846b31e70dfd6b59e95a4c22a687f",
+      "source_path": "skills/datarobot-workload-api/SKILL.md",
+      "package_sha256": "16ce7c89889918722bb10829df77d99d7da0ee360bab629c3891f7042a899527",
+      "source_package": "DataRobot Agent Skills-1.8.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82da176956b000887629efdcef8a15ff4507af1289bb3dc3e4208646067d28bf": {
+      "description_zh": "作为内部开发工具全面审查营销技能与智能体，检查描述重叠、格式、功能采用及结构一致性，用于技能健康检查或发布前审计。",
+      "source": "Internal development tool that performs a comprehensive quality audit of all marketing skills and agents. Reviews description overlap, format consistency, feature adoption, and structural patterns. Use when the user says \"audit skills\", \"skill quality review\", \"check skill health\", \"are my skills consistent\", \"monthly skill review\", or before releasing a new version of the skills repo.",
+      "source_sha256": "82da176956b000887629efdcef8a15ff4507af1289bb3dc3e4208646067d28bf",
+      "source_path": "skills/ds-audit/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c09e38dc637a9b3209fcb771694a1ae9ca68c1148e669c7d8d0a9bfc8b1f7102": {
+      "description_zh": "将付费、自然、内容与留存渠道联系起来进行跨职能营销战略分析，寻找隐藏关系并给出重点建议，原说明使用并行子智能体；可通过Dataslayer MCP或手工数据工作。",
+      "source": "Use this skill when the user wants a strategic, cross-functional analysis that connects paid, organic, content, and retention into one unified view. This is NOT a weekly summary — it is a decision engine that finds the hidden connections between channels. Activate when the user says \"full marketing review\", \"how is everything doing\", \"weekly brain\", \"give me the full picture\", \"marketing intelligence report\", \"what should I focus on this week\", \"retention and acquisition together\", \"connect the dots across channels\", or any request that implies synthesizing all marketing dimensions into one strategic recommendation. Do NOT use for simple weekly overviews or single-channel questions — those belong to ds-channel-report or the individual channel skills. This skill launches parallel subagents. Works best with Dataslayer MCP connected. Also works with manual data.",
+      "source_sha256": "c09e38dc637a9b3209fcb771694a1ae9ca68c1148e669c7d8d0a9bfc8b1f7102",
+      "source_path": "skills/ds-brain/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "363c75f233c22816ce01590af581dd68e13aee5e51ae108f9141897cf4c9b238": {
+      "description_zh": "生成轻量跨渠道周度或定期营销报告，展示数字与异常，不使用子智能体或进行战略综合，可读取Dataslayer MCP或手工数据。",
+      "source": "Use this skill when the user wants a quick, factual weekly or periodic overview of marketing metrics across channels. This is a lightweight report with numbers and anomalies — no subagents, no strategic synthesis. Activate when the user says \"weekly report\", \"how did we do this week\", \"give me a marketing summary\", \"cross-channel report\", \"what happened with our marketing\", \"channel performance\", \"marketing digest\", \"weekly metrics\", or asks for a combined view of organic and paid results. Do NOT use when the user wants strategic recommendations or cross-channel connections — that belongs to ds-brain. Works best with Dataslayer MCP connected. Also works with manual data.",
+      "source_sha256": "363c75f233c22816ce01590af581dd68e13aee5e51ae108f9141897cf4c9b238",
+      "source_path": "skills/ds-channel-report/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4f04d683c4f86974d1a12845bb55d956418ef74ae2368123fb227730bd1fc841": {
+      "description_zh": "识别可能流失账户、取消原因和早期信号，分析使用下降、低活跃、订阅健康与留存，支持Dataslayer的Stripe和分析数据或手工资料。",
+      "source": "Use this skill when the user wants to identify accounts at risk of churning, understand why users are cancelling, or find early warning signals before churn happens. Activate when the user says \"churn analysis\", \"who might cancel\", \"accounts at risk\", \"why are people leaving\", \"usage drop\", \"inactive accounts\", \"retention analysis\", \"predict churn\", or asks about subscription health, cancellation patterns, or which users are disengaged. Works best with Dataslayer MCP connected (Stripe + analytics). Also works with manual data.",
+      "source_sha256": "4f04d683c4f86974d1a12845bb55d956418ef74ae2368123fb227730bd1fc841",
+      "source_path": "skills/ds-churn-signals/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fac8f303a68acc42fb03eac0f8bca9c3db037fa924a7ead9134202d7b997a2ce": {
+      "description_zh": "分析博客与内容的流量、互动、注册和转化关系，识别有效文章与下一步主题，可结合Dataslayer GA4、Search Console或手工数据。",
+      "source": "Use this skill when the user wants to understand how their blog or content is performing in terms of traffic, engagement, and conversions. Activate when the user says \"how is our blog doing\", \"which posts are driving trials\", \"content performance\", \"is our content working\", \"what should we write next\", \"which articles bring the most signups\", \"content audit\", \"blog SEO\", \"content SEO performance\", or asks about the relationship between content and registrations or conversions. Works best with Dataslayer MCP connected (GA4 + Search Console). Also works with manual data.",
+      "source_sha256": "fac8f303a68acc42fb03eac0f8bca9c3db037fa924a7ead9134202d7b997a2ce",
+      "source_path": "skills/ds-content-perf/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6413ace51a1c6a12ce005f1fe42951d8017dd45a12430f2faabad8c95798f000": {
+      "description_zh": "从YAML测试案例检查用户输入与全部技能描述的触发匹配，用于验证描述修改后的触发准确性。",
+      "source": "Internal development tool that tests whether skill descriptions trigger correctly for different user inputs. Reads test cases from a YAML file and evaluates each one by matching the input against all skill descriptions. Use when the user says \"run triggering eval\", \"test skill descriptions\", \"check triggering accuracy\", \"eval skills\", or after editing a skill description to verify it still triggers correctly.",
+      "source_sha256": "6413ace51a1c6a12ce005f1fe42951d8017dd45a12430f2faabad8c95798f000",
+      "source_path": "skills/ds-eval/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08129696b9c403fd4049490eceb459cfa0d502827995869778dae8cdd70356dd": {
+      "description_zh": "按Claude Code规范校验SKILL.md与智能体Markdown，检查元数据完整、字段、工具声明、行数、硬编码路径及描述质量。",
+      "source": "Internal development tool that validates all SKILL.md and agent .md files against the Claude Code spec. Checks frontmatter completeness, field validity, allowed-tools presence, line count, hardcoded paths, and description quality. Use when the user says \"lint skills\", \"validate skills\", \"check skill quality\", \"run the linter\", \"are my skills valid\", or before shipping changes to the skills repo.",
+      "source_sha256": "08129696b9c403fd4049490eceb459cfa0d502827995869778dae8cdd70356dd",
+      "source_path": "skills/ds-lint/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1fefac69bd113983e22d2db592934fce781c25b728e54100b7b41c0b505d860": {
+      "description_zh": "审计与诊断Google、Meta、LinkedIn、TikTok等付费广告活动，分析表现、CPA及问题，支持Dataslayer MCP或手工数据。",
+      "source": "Use this skill when the user wants to audit, review, or diagnose their paid media campaigns. Activate when the user says \"audit my campaigns\", \"check my Google Ads\", \"why is my CPA high\", \"review my paid media\", \"what's wrong with my ads\", \"analyze my campaigns\", or asks about campaign performance on Google Ads, Meta, LinkedIn Ads, TikTok Ads, or any other paid channel. Works best with Dataslayer MCP connected. Also works with manual data.",
+      "source_sha256": "f1fefac69bd113983e22d2db592934fce781c25b728e54100b7b41c0b505d860",
+      "source_path": "skills/ds-paid-audit/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6642547d07fe102af00e090a7e1945fa8fdeb31c867b2d3847b4ecb52f2322af": {
+      "description_zh": "根据营销绩效生成可下载分享的专业PDF报告，服务客户或内部使用，可读取dataslayer-config.json品牌配置，支持MCP或手工数据。",
+      "source": "Use this skill when the user wants to generate a professional PDF report for a client or for internal use. Activate when the user says \"generate a PDF report\", \"create a client report\", \"export to PDF\", \"make a report for my client\", \"monthly report PDF\", \"branded report\", or any request that implies a downloadable, shareable, professional document with marketing performance data. Works best with Dataslayer MCP connected. Also works with manual data. Reads branding config from dataslayer-config.json if present.",
+      "source_sha256": "6642547d07fe102af00e090a7e1945fa8fdeb31c867b2d3847b4ecb52f2322af",
+      "source_path": "skills/ds-report-pdf/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6fce371e165e2beaa103e4f1bb9eac19b252f8cd9bd89ebaa66a71f562cd7ea7": {
+      "description_zh": "审查自然搜索表现、排名下降和SEO机会，分析查询、曝光与点击率，结合Dataslayer Search Console、GA4或手工数据。",
+      "source": "Use this skill when the user wants to review organic search performance, identify SEO opportunities, or diagnose ranking drops. Activate when the user says \"SEO report\", \"how is our organic doing\", \"check Search Console\", \"why did we lose rankings\", \"find quick wins for SEO\", \"which queries should we target\", \"impressions dropped\", \"CTR is low\", or any question about organic traffic, rankings, or search visibility. Works best with Dataslayer MCP connected (Search Console + GA4). Also works with manual data.",
+      "source_sha256": "6fce371e165e2beaa103e4f1bb9eac19b252f8cd9bd89ebaa66a71f562cd7ea7",
+      "source_path": "skills/ds-seo-weekly/SKILL.md",
+      "package_sha256": "190feb9313f83497e3b7adb37b464a63ff23004876d7609f33b4b927430dfed2",
+      "source_package": "dataslayer-marketing-skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38446ffe76c164047a3e4bf7db76671b7274dc2cbeb0d7f9171d9c42db8f38a4": {
+      "description_zh": "在Daytona平台创建和管理隔离云沙箱与专用运行环境，支持安全代码执行及Python、TypeScript、Java、Go和Ruby SDK、API与CLI。",
+      "source": "Creates and manages isolated cloud sandboxes (secure code execution environments with dedicated runtimes) on the Daytona platform. Use when a task needs an isolated runtime, sandbox, secure compute, or Daytona SDK/API/CLI operations. Covers Python, TypeScript, Java, Go, and Ruby SDKs.",
+      "source_sha256": "38446ffe76c164047a3e4bf7db76671b7274dc2cbeb0d7f9171d9c42db8f38a4",
+      "source_path": "skills/daytona/SKILL.md",
+      "package_sha256": "87f56552bd3a8e0c6fe5aff81c58923731c376d3ef3e032f67f3320248e188bb",
+      "source_package": "Daytona-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d4ba1d9540103ccca6d12e898d18cdf5011808fc15a959bb24a7dbc82f85366": {
+      "description_zh": "在创建或修改数据库迁移时自动分析文件安全性，支持模式变化、增删列、重命名和迁移审查。",
+      "source": "This skill should be used when the user creates or edits a database migration, mentions \"migration safety\", \"schema change\", \"database migration\", \"add column\", \"drop column\", \"rename table\", \"migration review\", or discusses database schema changes. Provides automatic safety analysis of migration files.",
+      "source_sha256": "6d4ba1d9540103ccca6d12e898d18cdf5011808fc15a959bb24a7dbc82f85366",
+      "source_path": "skills/migrate-check/SKILL.md",
+      "package_sha256": "9660937628e8fe6d376f0a31ae367b58836cf7aad0449ba787c7bd780c774123",
+      "source_package": "db-migration-guard-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6b803b10441aae4ee36c2421ec52cfa783bc20393aec04a060ac71462c7c5e0": {
+      "description_zh": "解析dbt运行结果，探索manifest、比较状态并检查catalog。",
+      "source": "Parse run results, explore manifest, compare states, inspect catalog",
+      "source_sha256": "d6b803b10441aae4ee36c2421ec52cfa783bc20393aec04a060ac71462c7c5e0",
+      "source_path": "skills/dbt-artifacts/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6254024ec98ceb2779c1afc190e87ee61a1f570b9bb5d8035a3989daff1094c9": {
+      "description_zh": "主动检查dbt健康，涵盖测试与文档覆盖、物化方式及排序和分布键。",
+      "source": "Proactive health checks — test coverage, docs, materialization, sort/dist keys",
+      "source_sha256": "6254024ec98ceb2779c1afc190e87ee61a1f570b9bb5d8035a3989daff1094c9",
+      "source_path": "skills/dbt-audit/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ebae988bf0a40febd25d5125cbe401c4c70ea954856a9633152691fa110feedd": {
+      "description_zh": "探索dbt模型物化、增量策略与来源设计决策；原说明标注为v2计划，尚未实现。",
+      "source": "Explore model design decisions — materialization, incremental strategy, sources (v2 — not yet implemented)",
+      "source_sha256": "ebae988bf0a40febd25d5125cbe401c4c70ea954856a9633152691fa110feedd",
+      "source_path": "skills/dbt-brainstorming/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5a02e9ecd389a1bb08ad9d4f4e7cbca627a3632ff5dd40f74b6a7a761505b5fa": {
+      "description_zh": "按SQL质量、配置、测试与文档清单审查dbt模型；原说明标注为v2计划，尚未实现。",
+      "source": "Model review checklist — SQL quality, config, tests, docs (v2 — not yet implemented)",
+      "source_sha256": "5a02e9ecd389a1bb08ad9d4f4e7cbca627a3632ff5dd40f74b6a7a761505b5fa",
+      "source_path": "skills/dbt-code-review/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69966e7de66a39915851c4d7ca104c5ec82d18207713cadfb9de50628bd6ff13": {
+      "description_zh": "系统排查dbt连接、编译、SQL和测试失败。",
+      "source": "Systematic troubleshooting for connection, compilation, SQL, and test failures",
+      "source_sha256": "69966e7de66a39915851c4d7ca104c5ec82d18207713cadfb9de50628bd6ff13",
+      "source_path": "skills/dbt-debug/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f8ad96ad356f278dd30e89f8f7918e5d4896b9de30a633732dc0fb9b4ad74b8": {
+      "description_zh": "安装与管理dbt-utils、dbt-expectations及自定义dbt依赖包。",
+      "source": "Install and manage dbt packages — dbt-utils, dbt-expectations, custom packages",
+      "source_sha256": "5f8ad96ad356f278dd30e89f8f7918e5d4896b9de30a633732dc0fb9b4ad74b8",
+      "source_path": "skills/dbt-deps/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8f5353ee6aba31d39d55abc6052caff92ac3fa31a4729d951443bf3cf2bc013": {
+      "description_zh": "为dbt新模型生成脚手架，编译预览SQL、探索血缘并重构。",
+      "source": "Scaffold new models, compile and preview SQL, explore lineage, refactor",
+      "source_sha256": "c8f5353ee6aba31d39d55abc6052caff92ac3fa31a4729d951443bf3cf2bc013",
+      "source_path": "skills/dbt-develop/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b2985753b0ee7f7f172359c9844531c41fc0a2c71a4ea73adb003540eed3d90a": {
+      "description_zh": "生成dbt文档、检查覆盖率并批量补充模型说明。",
+      "source": "Generate documentation, audit coverage, bulk document models",
+      "source_sha256": "b2985753b0ee7f7f172359c9844531c41fc0a2c71a4ea73adb003540eed3d90a",
+      "source_path": "skills/dbt-docs/SKILL.md",
+      "package_sha256": "41ba21b064e1b21226f06c09b2f2e8ec03ed160571b91b9c272b304e473bc664",
+      "source_package": "dbt-toolkit-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
