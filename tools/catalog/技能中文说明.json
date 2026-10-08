@@ -45889,6 +45889,1086 @@
       "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
       "source_package": "Mind++ for Claude-1.2.5-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac2cf1de85283d16fe1a74c84077789413681a424d277eb9cda9c63f9e8b1438": {
+      "description_zh": "自动处理 Gemini Meeting Notes、Fireflies、Otter 等会议转录邮件，提取会议内容，以至少 80% 的置信度归入相应上下文，并在知识库中生成结构化纪要和行动项；支持手动触发或定时流程。",
+      "source": "Automatic pipeline that ingests meeting transcription emails and creates structured notes in the vault. Use this skill when the user says 'process meeting emails', 'new meeting in email', 'run meeting pipeline', 'process transcripts', or when triggered by an automatic scheduled task. Searches for transcription emails (Gemini Meeting Notes, Fireflies, Otter, or similar), extracts meeting content, classifies contexts with ≥80% confidence, and generates formatted notes in the vault — no action is lost.",
+      "source_sha256": "ac2cf1de85283d16fe1a74c84077789413681a424d277eb9cda9c63f9e8b1438",
+      "source_path": "skills/process-meeting-emails/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af70160f6070b08f7af02dec50e7a4e7195b635f7e57bec3fa788e1d0cca7a93": {
+      "description_zh": "从零配置 Mind++ 第二大脑：创建知识库目录、采集用户档案并生成配置文件；用于首次安装、尚无知识库结构，以及重置或更新基础配置。",
+      "source": "Sets up the Mind++ second brain from scratch — creates vault folder structure, captures the user profile, and generates configuration files. Use this skill when the user installs the plugin for the first time, says 'set up my second brain', 'set up mind plus plus', 'setup-mind-plus-plus', 'start from scratch', 'configure vault', or when no vault structure is found. Also trigger when the user wants to reset or update the base configuration of the system.",
+      "source_sha256": "af70160f6070b08f7af02dec50e7a4e7195b635f7e57bec3fa788e1d0cca7a93",
+      "source_path": "skills/setup-mind-plus-plus/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b573af06f0b0434d60a2f6cd057b6b500c12b110a2db4d0e0dc7fc00a8f718c": {
+      "description_zh": "将请求交给相应领域专家，并依据知识库内容产出结果；原说明当前仅支持 marketing 领域及 bi 专业，用于营销活动表现、ROAS/ROI、数据一致性和数据驱动建议。",
+      "source": "Routes a request to the right domain specialists and produces a vault-grounded deliverable. The domain is the first argument. Use when the user says '/specialist marketing ...', 'aciona um especialista de marketing', 'analisa a performance da campanha ...', 'qual o ROAS/ROI de ...', 'que números temos sobre ...', or asks for data analysis, media performance, data consistency, or a data-driven recommendation. Today the only domain is `marketing` (with the `bi` discipline).",
+      "source_sha256": "5b573af06f0b0434d60a2f6cd057b6b500c12b110a2db4d0e0dc7fc00a8f718c",
+      "source_path": "skills/specialist/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54854a3a17165210480d11db6ed106c63d9cd498eb97a2f9adef9dcb9bc68d85": {
+      "description_zh": "依据知识库中的近期会议、决策、未完成任务、风险和下一步，生成客户、产品或项目的进展报告，便于向利益相关方沟通状态。",
+      "source": "Generates a status update for a client, product, or project from vault content — recent meetings, decisions, open tasks, risks, and next steps. Use when the user says 'status update on X', 'client report for X', 'update for {stakeholder}', 'weekly status for the X project', 'prep a client-facing summary', or needs to communicate progress to someone external.",
+      "source_sha256": "54854a3a17165210480d11db6ed106c63d9cd498eb97a2f9adef9dcb9bc68d85",
+      "source_path": "skills/stakeholder-update/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0eefa74e04660faabba6d6970e41fc69d0bd8ba42eb48dc124a1b95acec3be1d": {
+      "description_zh": "采集、更新和查询用户档案，记录职业背景、项目、个人目标及工作偏好；用于补充个人信息或反映换工作、新客户、目标及情境变化。",
+      "source": "Captures, updates, and consults the user profile — who they are, their professional context, projects, personal goals, and work preferences. Use when the user wants the system to learn more about them, says 'do you know me?', 'update my profile', 'I want you to know that...', 'I am...', or shares personally relevant information. Also trigger proactively when the user mentions a job change, new client, new personal goal, or change of context.",
+      "source_sha256": "0eefa74e04660faabba6d6970e41fc69d0bd8ba42eb48dc124a1b95acec3be1d",
+      "source_path": "skills/user-profile/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30823fe71e5a2a130c95a6a783b2fa48054273210e09b56e99bd1b8de0868371": {
+      "description_zh": "扫描知识库任务与会议记录，汇总本周完成事项、风险、长期未联系的上下文和未归档会议，并生成保存周回顾及下周预览。",
+      "source": "Weekly review that consolidates tasks, unlogged meetings, at-risk contexts, and a preview of next week. Use ALWAYS when the user says 'weekly review', 'friday review', 'how was the week', 'close the week', 'week summary', or similar. Scans all task files in the vault, identifies what was completed, what is at risk, contexts without recent contact, and meetings without a logged note, then generates and saves the review.",
+      "source_sha256": "30823fe71e5a2a130c95a6a783b2fa48054273210e09b56e99bd1b8de0868371",
+      "source_path": "skills/weekly-review/SKILL.md",
+      "package_sha256": "5c235feb722c2501603db41d49b771d2ca42cbbf9943171f7f77a9d4aa8a2850",
+      "source_package": "Mind++ for Claude-1.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "67a4c19d9ceeb216b72a21fe3a81275e36ad4df3c0174f7724a4b6fa36a7e123": {
+      "description_zh": "根据文件、网址、粘贴文本或主题生成可交互的 Markmap 思维导图。",
+      "source": "Generate an interactive Markmap mindmap from a file, a URL, pasted text, or a topic.",
+      "source_sha256": "67a4c19d9ceeb216b72a21fe3a81275e36ad4df3c0174f7724a4b6fa36a7e123",
+      "source_path": "skills/mindmap/SKILL.md",
+      "package_sha256": "08b9d88f8893f833a6ce5ac4cbca36b9ef153d3e5722b55d295678fa3867de95",
+      "source_package": "mindmap-skills-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "488ea026b8493ab9358719b7d2573a3b95447dc62b2326c33bd8ff1c7e94e10c": {
+      "description_zh": "仅在用户明确指定时，为仓库配置长期 EAGD 顾问机制，使后续智能体会话能按触发条件调用 Advise、Grade、Dream 角色；支持具有子智能体工具的运行环境，通过探测确认模型，并在重新配置时保留已有绑定。",
+      "source": "Opt-in only. Do not trigger from general conversation about process, agent-instruction files (CLAUDE.md, AGENTS.md, Copilot or Cursor rules), or multi-agent architecture. Invoke only when the user explicitly asks for it by name, by running /bootstrap-eagd-pattern where the harness supports slash commands, or by saying something like \"set up EAGD for this repo\" or \"give this repo a mechanism to spawn an advisor agent\". Installs a standing, repo-wide mechanism, as live instructions in the project's anchor doc or kept outside the repo when it can't hold agent files, that lets a future agent session in this repo autonomously spawn an Advise/Grade/Dream role agent when it hits a matching trigger. Works on any harness with a sub-agent tool (optimised for Claude Code), with a probe-verified model per tool. Also handles re-runs, keeping existing model bindings. Runs once per setup or re-calibration.",
+      "source_sha256": "488ea026b8493ab9358719b7d2573a3b95447dc62b2326c33bd8ff1c7e94e10c",
+      "source_path": "skills/bootstrap-eagd-pattern/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b709208bab6d1df83ccb7b648470795cc6485eb6927dc72c7724973eb1a63779": {
+      "description_zh": "仅在用户明确指定时，按项目规模、团队和风险配置 CLAUDE.md/AGENTS.md 及缺陷、决策、复盘、任务记录；以完成定义和测试计划组织任务审批，并检查方案是否过度复杂。",
+      "source": "Opt-in only — do not trigger automatically from general conversation about process, CLAUDE.md, or project setup. Invoke only when the user explicitly runs /bootstrap-way-of-working or directly asks by name. Sets up a CLAUDE.md/AGENTS.md and companion docs (bug log, decision log, retrospective log, task ledger) encoding a disciplined way of working — task approval via Definition-of-Done + Test Plan, bug/decision/retro logging with distinct triggers for each, and a proportionality check against overengineering — calibrated to the target project's actual size, team, and risk profile rather than transplanted wholesale from the source project.",
+      "source_sha256": "b709208bab6d1df83ccb7b648470795cc6485eb6927dc72c7724973eb1a63779",
+      "source_path": "skills/bootstrap-way-of-working/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "482b683b4c27496b1a00a73e1af03ecd19bc262895bc46aeb599767ecb5ed353": {
+      "description_zh": "帮助快速熟悉陌生代码库：依据真实文件提取架构和业务逻辑，分析权衡、数据归属、故障模式与扩展限制，经独立上下文核验后将笔记和首个 PR 清单保存到仓库外；可补充图示，不用于单文件问答或设计新架构。",
+      "source": "Fast onboarding into an unfamiliar codebase: a new job, an old project handed back, or an open-source dive. Reverse-extracts architecture and business-logic specs with file evidence, including a solution-architect read of the existing design (tradeoffs, structural decisions, data ownership, failure modes, scaling limits), has a fresh-context pass verify every claim, then saves notes plus a first-PR checklist outside the repo. On request, also a diagram and repo-agnostic design concepts. Use when the user needs a project's core fast, just joined or picked a codebase back up, and wants a durable orientation, not one answer. Do NOT use for a quick one-file/function/flow question (answer it directly), onboarding docs for others, designing or reviewing a proposed new architecture, learning system design or building a new project (learn-technology-by-building), being stuck on one function (goal-to-code-unblock), or debugging/reviewing one change.",
+      "source_sha256": "482b683b4c27496b1a00a73e1af03ecd19bc262895bc46aeb599767ecb5ed353",
+      "source_path": "skills/codebase-onboarding/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08be30622b9b42f211d45112552f0ba90b20f0c695146df69cc719f7a2660e02": {
+      "description_zh": "辅导学习者亲自把模糊目标写成代码，智能体负责审阅而不代写实现；适用于新语言或框架练习时卡在一个函数、单次问题或具体代码行，不用于直接交付成品或长期课程规划。",
+      "source": "Coaches the user to turn a vague goal into working code themselves — the agent reviews but never writes the implementation. Use when the user is learning a new language, framework, or concept and says things like \"I don't know where to start,\" \"my mind goes blank,\" \"I don't know how to begin,\" \"give me an exercise,\" or wants hands-on practice rather than a delivered solution. Also use for step-by-step learning exercises, building coding intuition, or references to \"the unblock skill\" / \"the goal-to-code skill\" from a prior session. Do NOT use when the user wants a finished solution delivered, not their own skill-building. Scope: one function or single-sitting problem, not a multi-week curriculum — for a full roadmap prefer learn-technology-by-building, and hand off to this skill only when the learner freezes on one specific line.",
+      "source_sha256": "08be30622b9b42f211d45112552f0ba90b20f0c695146df69cc719f7a2660e02",
+      "source_path": "skills/goal-to-code-unblock/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "049078e5bfde1d7d177f5083ba1c953281278f4d85858cf9244c6c6c4b42bbe8": {
+      "description_zh": "通过一个持续累积的项目学习编程语言、框架、平台、开发工具或系统设计，结合架构与运行图、每周检查点和进度记录开展多次实践；用于技术学习，遇到具体代码行卡顿时转入单点辅导。",
+      "source": "Mentors the user through learning a new programming language, framework, platform, developer tool, system design/architecture topic, or other technology by building one cumulative project and visualizing structural/runtime knowledge with diagrams. Use when the user asks for a learning plan, starts/continues a hands-on project, says \"next\", \"continue\", or \"done\" during guided study, wants progress tracked, needs a course/video mapped to a practical gap, wants architecture-diagram practice, or wants a concept explained within their project. Preserves the user's coding-first, weekly-checkpoint, copy-disturb-transfer-and-visualize process across subjects. Scope: the multi-session arc, not one-line freezes — hand off to goal-to-code-unblock when the learner blanks on one line, then resume here. Technical/software learning only, not language, finance, or instrument skills.",
+      "source_sha256": "049078e5bfde1d7d177f5083ba1c953281278f4d85858cf9244c6c6c4b42bbe8",
+      "source_path": "skills/learn-technology-by-building/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6332dee0b5203ac76872b3bc8482aeb5005b17214d79d53e9df69da9e822096d": {
+      "description_zh": "为疲惫、过载或难以思考的学习者安排短时、接近被动的学习活动，减少主动产出负担以保持学习习惯；可独立使用，也可配合技术项目学习与代码辅导。",
+      "source": "Runs a short, near-passive learning session for a user whose brain is tired, overloaded, or unable to think, so the learning habit survives without demanding generation effort. Use when the user says things like \"my brain is fried\", \"too tired to code\", \"can't think today\", \"I feel mindless\", \"brain is mush\", \"no energy but I don't want to skip learning\", \"give me something easy\", or wants to keep a streak alive on a low-energy day. Also use, even without an explicit ask, when the user is mid-technology and reports fatigue, burnout, or overwhelm. Fully standalone; cooperates with learn-technology-by-building and goal-to-code-unblock if installed. Do NOT use when the user has normal energy and wants to practice or build — active learning or direct help fits better.",
+      "source_sha256": "6332dee0b5203ac76872b3bc8482aeb5005b17214d79d53e9df69da9e822096d",
+      "source_path": "skills/low-power-learning/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "453942147db70d1fef6ae7be20cef9941631aa6c7a64da7add9aac5514a2aedf": {
+      "description_zh": "把个人目标整理成可执行计划，核对依赖顺序、可用精力、缓冲、风险、替代方案、回退和复盘；可增强其他领域技能生成的计划而不覆盖其专业逻辑，并明确不确定性及调整条件。",
+      "source": "Create realistic, execution-ready personal plans or harden plans produced by other skills without overriding their domain logic. Use when the user asks to plan, schedule, roadmap, organize, execute, or make a goal actionable; when another planning skill needs feasibility, capacity, buffer, risk, fallback, rollback, or review support; or when a proposed plan looks vague, overloaded, calendar-driven, or falsely precise. Operate in enhancer mode when another domain skill owns the plan, and standalone mode otherwise. Prefer evidence, dependency-aware sequencing, conservative commitments, explicit uncertainty, and adaptive replanning over wishlists or rigid schedules.",
+      "source_sha256": "453942147db70d1fef6ae7be20cef9941631aa6c7a64da7add9aac5514a2aedf",
+      "source_path": "skills/personal-planner-engine/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "069288dc0d9bb60012cbc88455d90b55e4cd6fd882e93c0269f622ec4d1f0839": {
+      "description_zh": "围绕求职机会、潜在客户及可转化的专业认可建立个人品牌，包括定位、内容策略、渠道、帖子与效果评估；可把项目和工作经历转成公开内容，以实际结果衡量进展。",
+      "source": "Help build a personal brand — positioning, content strategy, writing posts, choosing channels, measuring progress — with the explicit goal of producing real-world outcomes (job opportunities, inbound leads, recognition that converts into something), not the illusion of a brand made of vanity metrics. Use whenever the user wants to build a personal brand, grow a professional presence, plan content strategy for LinkedIn/X/other platforms, write posts about their work or projects for that purpose, or asks to evaluate whether their branding effort is actually working. Also use when the user wants to turn a project or work experience into public content as part of building recognition.",
+      "source_sha256": "069288dc0d9bb60012cbc88455d90b55e4cd6fd882e93c0269f622ec4d1f0839",
+      "source_path": "skills/real-personal-branding/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b8ac515d02beadf03b8141c83f15e9d5d165acc6a8715995589faeb64138700": {
+      "description_zh": "创建并开展测验、模拟考试或面试练习，判断学习水平、重点、难度及常见错误，按回答调整题目；说明假设，必要时核实事实，并审阅每题是否有一个明确最佳答案。",
+      "source": "Create and run thoughtful quizzes for almost any subject from a simple request such as “Test me on SQL” or “Help me prepare for an interview.” Use when someone wants a quiz, practice test, interview practice, or questions that check real understanding. Work out the likely level, important topics, difficulty, common mistakes, and question mix. Say what you assumed, ask only when the topic is truly unclear, adjust the quiz based on answers, check facts when needed, and review every question so there is one clearly best answer without obvious guessing clues.",
+      "source_sha256": "7b8ac515d02beadf03b8141c83f15e9d5d165acc6a8715995589faeb64138700",
+      "source_path": "skills/smart-quiz-maker/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "478be700511c69f7a023184c6434e051149edd5300fc307a29ff19b89a47d25a": {
+      "description_zh": "仅在用户明确选择苏格拉底式讨论时，先让用户提出设计或策略想法，再通过追问检验假设，最后给出直接反馈及缺失信息；覆盖技术架构、数据模型、工具选择和产品定位等决策。",
+      "source": "Runs a design or strategy decision through a lead-with-question loop instead of answering directly — the user proposes a rough or \"crazy\" idea first, gets probed with follow-up questions to stress-test it themselves, and only then receives the agent's direct feedback or missing information. Covers both technical design decisions (architecture, data model, which tool to use) and non-technical strategy decisions (positioning, USP, product direction). OPT-IN ONLY — do not trigger this automatically just because a design or strategy question appears. Use this only when the user explicitly asks for it by name (\"dùng socratic-brainstorm\", \"brainstorm kiểu Socratic\", \"hỏi ngược tôi trước\", \"dùng skill hỏi-đáp\") or explicitly says they want to be questioned before getting an answer. If the user asks a design question without invoking this skill, just answer normally — do not silently start interrogating them.",
+      "source_sha256": "478be700511c69f7a023184c6434e051149edd5300fc307a29ff19b89a47d25a",
+      "source_path": "skills/socratic-brainstorm/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0eed82981fb9af443b338ac3abe7710be4039e81411ab612dd538b860eb2bbb3": {
+      "description_zh": "编辑智能体撰写的邮件、帖子、文章、报告、提案、消息及摘要，或润色用户草稿，使表达更自然并体现作者语气；用于改善模板化、机械或缺乏个人声音的文字。",
+      "source": "Makes any prose the agent writes read like a real person wrote it, not an AI — the agent's own output first, the user's pasted drafts second. Apply this by default before delivering any substantial piece of writing on the user's behalf: emails, LinkedIn posts, blog drafts, reports, proposals, messages, summaries with real prose in them. Also use whenever the user shares their own text and asks for it to sound more human or natural — triggers include \"too AI,\" \"too ChatGPT,\" \"too robotic,\" \"sounds generic,\" \"humanize this,\" \"make it sound like a real person,\" \"give it more voice,\" or any request to edit a draft for authenticity and tone. Do not skip this just because the user didn't ask for it by name — AI-sounding prose is a default failure mode to actively avoid, not an opt-in fix.",
+      "source_sha256": "0eed82981fb9af443b338ac3abe7710be4039e81411ab612dd538b860eb2bbb3",
+      "source_path": "skills/sound-human/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32ee9dff07b3b186f8e5faec04f9908a9ab40ebe99baef96bd456ec86c12e419": {
+      "description_zh": "通过有意练习提升用户自己的写作能力，帮助把事实、经历和故事组织成句子；适用于技术、创作、商业、学术和个人写作练习，不代替用户直接完成整篇成稿。",
+      "source": "Coach the user to genuinely improve their own writing ability through deliberate practice — not to produce a finished piece for them. Use when the user says they want to practice writing, get better at writing, are stuck or blocked on turning real material into prose, feel overwhelmed by open questions about their own experience, or explicitly ask to train their writing skill. Also use when the user has raw facts or a story they can recall but can't shape into sentences. Works for any kind of writing and any domain — technical, creative, business, academic, personal — the skill being built is writing itself, not writing about any one subject.",
+      "source_sha256": "32ee9dff07b3b186f8e5faec04f9908a9ab40ebe99baef96bd456ec86c12e419",
+      "source_path": "skills/writing-practice/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "13aea55f4bd35dc295c4c2ecfaabd3d1d2915eb288838b7018b689e00e5f2098": {
+      "description_zh": "依据 YouTube 视频元数据和转录内容，批判性评估视频质量及是否值得观看；原说明要求先确认 youtube-mcp-cli 工具可用，用于审阅用户提供的视频链接或评价请求。",
+      "source": "Evaluate a YouTube video with critical thinking to decide if it is worth the viewer's time. Use whenever the user shares a youtube.com or youtu.be link and asks things like \"is this worth watching\", \"should I watch this\", \"đánh giá video này\", \"video này có đáng xem không\", \"review video giúp tôi\", or asks for a critical/objective opinion on a YouTube video. Also trigger when the user asks to judge, rate, or assess the value of a YouTube video, even without using the word \"evaluate\". Requires the youtube-mcp-cli tools (https://github.com/johncegom/go-youtube-mcp-cli) for metadata and transcript access — check for these tools before starting.",
+      "source_sha256": "13aea55f4bd35dc295c4c2ecfaabd3d1d2915eb288838b7018b689e00e5f2098",
+      "source_path": "skills/youtube-video-critic/SKILL.md",
+      "package_sha256": "597de5731479cb9469d333d1b4e74fc122383e9b974e70ee6f9eab7ec1ca80eb",
+      "source_package": "minh-toolkit-0.16.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4f01488ddae18e39b20f19b67039c7254cde9cfc89acebf3ba75426f820fd4b": {
+      "description_zh": "利用 Minz.ai CRM 的公司、联系人、在途商机、历史交易、近期活动和相关任务，为与指定客户或潜在客户的电话、会议、拜访准备背景简报。",
+      "source": "Prepare a brief before a call or meeting with a customer or prospect, using Minz.ai CRM data (company, contacts, open deals, deal history, recent activities, related tasks). Use when the user asks to prepare for, get ready for, or get background on a call, meeting or visit with a named company or person.",
+      "source_sha256": "d4f01488ddae18e39b20f19b67039c7254cde9cfc89acebf3ba75426f820fd4b",
+      "source_path": "skills/call-prep/SKILL.md",
+      "package_sha256": "d042df2e971a4503aa672d895e2550d15faedc886b90a5e3760630853da616a0",
+      "source_package": "Minz.ai-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb9add474c3ae3a07ff7486e2f1c5b7e56a396a1e95e9a55bd24443870b5c42a": {
+      "description_zh": "查询 Minz.ai 中 MinzSpend 的费用及报销单，区分已提交、待审批、已批准、驳回和已报销状态，并按期间、状态、类别或供应商汇总金额。",
+      "source": "Check MinzSpend expenses and expense reports in Minz.ai, including what the user submitted, what is waiting for approval, and what was approved, rejected or reimbursed in a period, with totals by status, category or vendor. Use when the user asks about their expenses, claims, reimbursements, settlements or spending in a period.",
+      "source_sha256": "eb9add474c3ae3a07ff7486e2f1c5b7e56a396a1e95e9a55bd24443870b5c42a",
+      "source_path": "skills/expense-review/SKILL.md",
+      "package_sha256": "d042df2e971a4503aa672d895e2550d15faedc886b90a5e3760630853da616a0",
+      "source_package": "Minz.ai-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7687b8c39f689aa0a8cf42828f026508476326b3b3fbc4bb0851be13e10cb802": {
+      "description_zh": "利用 Minz.ai 汇总今天、本周或其他短期的日程与工作负荷，包括会议、逾期及即将到期任务和近期销售活动，帮助安排每日或每周工作。",
+      "source": "Summarize the user's schedule and workload from Minz.ai, including meetings, overdue and upcoming tasks, and recent sales activities, for today, this week or another short period. Use when the user asks what is on their plate, what is coming up, what is overdue, or to plan their day or week.",
+      "source_sha256": "7687b8c39f689aa0a8cf42828f026508476326b3b3fbc4bb0851be13e10cb802",
+      "source_path": "skills/my-week/SKILL.md",
+      "package_sha256": "d042df2e971a4503aa672d895e2550d15faedc886b90a5e3760630853da616a0",
+      "source_package": "Minz.ai-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0955c960824004fb7f8a77caa60f0435896b64af06d7353a24be08134366e4d7": {
+      "description_zh": "审阅 Minz.ai 销售管道，按阶段汇总金额，识别近期预计成交、停滞及风险商机，用于销售周会、管理检查和月度或季度预测。",
+      "source": "Review the Minz.ai sales pipeline, including totals by stage, deals expected to close soon, and deals that look stalled or at risk, for a weekly sales meeting or a manager check-in. Use when the user asks about their pipeline, forecast, deals closing this month or quarter, or which deals need attention.",
+      "source_sha256": "0955c960824004fb7f8a77caa60f0435896b64af06d7353a24be08134366e4d7",
+      "source_path": "skills/pipeline-review/SKILL.md",
+      "package_sha256": "d042df2e971a4503aa672d895e2550d15faedc886b90a5e3760630853da616a0",
+      "source_package": "Minz.ai-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4ad4ead3765ac2a65925a4209a48a726f8cf0d732e4598ea7a19e497579e934": {
+      "description_zh": "依据真实仓库内容，在 Miro 白板上生成精简且符号规范的架构、结构或行为图，包括流程图、UML 类图、时序图和 ERD，并附简短说明文档。",
+      "source": "Use when the user wants to explain or visualize a codebase on a Miro board — produces a minimal, notation-correct set of architecture / structure / behavior diagrams (flowchart, UML class, UML sequence, ERD) plus a short companion document, grounded in real repo artifacts.",
+      "source_sha256": "b4ad4ead3765ac2a65925a4209a48a726f8cf0d732e4598ea7a19e497579e934",
+      "source_path": "skills/miro-code-explain-on-board/SKILL.md",
+      "package_sha256": "0eb52f22b56bfe20e6400989f63d93d7006da075382e056eb810cab64d25aef8",
+      "source_package": "Miro-2.0.0-v42.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63d4018c91e45bad4d08da739782e9fbc554c5ced47d06ce8fd9b0ac1ce4dd2a": {
+      "description_zh": "将 PR/MR、本地未提交改动或分支差异整理为 Miro 可视化代码审查，生成文件变更表、摘要、架构及安全文档和架构图，并从 PR/MR 链接回这些材料。",
+      "source": "Use when the user wants to create a visual code review on a Miro board from a pull/merge request (GitHub, GitLab, or any forge), local uncommitted changes, or a branch comparison — produces a file-changes table, summary/architecture/security docs, and architecture diagrams, then links them back from the PR/MR.",
+      "source_sha256": "63d4018c91e45bad4d08da739782e9fbc554c5ced47d06ce8fd9b0ac1ce4dd2a",
+      "source_path": "skills/miro-code-review/SKILL.md",
+      "package_sha256": "0eb52f22b56bfe20e6400989f63d93d7006da075382e056eb810cab64d25aef8",
+      "source_package": "Miro-2.0.0-v42.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb4479d784c10d27d979c7c0066e863434e4a34831b5aa19b574d1d5bc09d515": {
+      "description_zh": "根据 Miro 白板网址或单个项目网址，将文档、图表、原型、表格、框架及图片等规格提取到本地 .miro/specs/，用于 AI 辅助规划与实现。",
+      "source": "Use when the user wants to extract a Miro board's specs (documents, diagrams, prototypes, tables, frames, images) to local `.miro/specs/` files for AI-assisted planning and implementation — accepts a board URL or single-item URL.",
+      "source_sha256": "eb4479d784c10d27d979c7c0066e863434e4a34831b5aa19b574d1d5bc09d515",
+      "source_path": "skills/miro-code-spec/SKILL.md",
+      "package_sha256": "0eb52f22b56bfe20e6400989f63d93d7006da075382e056eb810cab64d25aef8",
+      "source_package": "Miro-2.0.0-v42.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "671851729ac27416845d443513670c08b8958d6e74ec7fbcfad880464ffaf6be": {
+      "description_zh": "通过 mirrord chaos CLI 管理会话级规则，在出站流量中注入延迟、连接重置、超时或拒绝等故障，测试网络退化时的应用表现并接入 CI；原说明要求采用此方式替代已弃用的 _experimental_.latency 配置。",
+      "source": "Help users chaos test their app with mirrord: inject artificial latency or connection errors into a mirrord session''s outgoing traffic via per-session chaos rules managed with the `mirrord chaos` CLI. Use when a user wants to add latency or delay to outgoing connections or a dependency (e.g. a slow database), simulate connection failures (reset, timed out, refused), test app behavior under degraded network conditions, or wire chaos rules into CI test runs. Always use this skill instead of the deprecated _experimental_.latency mirrord config option.",
+      "source_sha256": "671851729ac27416845d443513670c08b8958d6e74ec7fbcfad880464ffaf6be",
+      "source_path": "skills/mirrord-chaos/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8f5d59a58975b507036452768eb407e7d39a256d66f1905331754d8496c3632": {
+      "description_zh": "在 CI 中配置 mirrord，使端到端、集成或自动化测试连接真实 Kubernetes 预发布或共享集群环境。",
+      "source": "Help users set up mirrord in CI pipelines for testing against real Kubernetes environments. Use when users want to run end-to-end tests, integration tests, or automated tests in CI using mirrord to connect to staging/shared clusters.",
+      "source_sha256": "b8f5d59a58975b507036452768eb407e7d39a256d66f1905331754d8496c3632",
+      "source_path": "skills/mirrord-ci/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c15bc7c41b8f147e263bbae790534df9003e3f3f608ca21f43cd2327c447d12a": {
+      "description_zh": "生成、编辑并验证 mirrord.json，配置本地进程连接 Kubernetes 时的环境变量、文件系统与网络功能，并检查 JSON 格式及 schema 符合性。",
+      "source": "Helps users generate, edit, and validate mirrord.json configuration files for mirrord (MetalBear). Use when the user wants to connect their local process to a Kubernetes environment, configure features (env/fs/network), or needs feedback on an existing mirrord.json. Always ensures output JSON is valid and schema-conformant.",
+      "source_sha256": "c15bc7c41b8f147e263bbae790534df9003e3f3f608ca21f43cd2327c447d12a",
+      "source_path": "skills/mirrord-config/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "380b46a399690b8f8b792e3648a9ea8967fea3486f990f1dbf0a17182ab0cefe": {
+      "description_zh": "配置 mirrord.json 数据库分支，为开发和测试建立隔离副本；支持 MySQL、MariaDB、PostgreSQL、MSSQL、MongoDB、Redis、DynamoDB、ClickHouse、Google Spanner 及通用分支，涵盖复制模式、连接来源、迁移、IAM 认证与分支管理。",
+      "source": "Helps users configure mirrord.json for database branching, enabling isolated database copies for safe development and testing. Use when the user wants to set up MySQL, MariaDB, PostgreSQL, MSSQL, MongoDB, Redis, DynamoDB, ClickHouse, Google Spanner, or generic branches, configure copy modes, connection sources, schema migrations, IAM authentication, or manage database branches.",
+      "source_sha256": "380b46a399690b8f8b792e3648a9ea8967fea3486f990f1dbf0a17182ab0cefe",
+      "source_path": "skills/mirrord-db-branching/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d226ce1c5961aa4456314d2f85cb662efb200aee9c6a82f9bf48a615c9ed221": {
+      "description_zh": "为 mirrord Operator 配置 Kafka 队列拆分，生成 MirrordSplitConfig、MirrordPropertyList CRD、mirrord.json 的消息与 jq 过滤配置及 Helm 指引；支持排查 Kafka Streams、MSK IAM 等场景，原说明注明属于 Team/Enterprise 功能，旧 CRD 已弃用但仍支持。",
+      "source": "Helps DevOps engineers configure mirrord Operator's Kafka queue splitting feature end-to-end. Generates the MirrordSplitConfig and MirrordPropertyList Kubernetes CRD YAMLs (the current resources; MirrordKafkaTopicsConsumer + MirrordKafkaClientConfig are deprecated but still supported), the matching mirrord.json split_queues section with message_filter and jq_filter, and Helm value guidance. Use this skill whenever the user mentions Kafka splitting with mirrord, MirrordSplitConfig, MirrordPropertyList, MirrordKafkaClientConfig, MirrordKafkaTopicsConsumer, Kafka queue/topic splitting, configuring mirrord with Kafka, Kafka Streams splitting, MSK IAM auth, or troubleshooting Kafka splitting sessions. Also trigger on split_queues with queue_type Kafka, or connecting mirrord to a Kafka cluster. This is a Team/Enterprise feature of mirrord.",
+      "source_sha256": "2d226ce1c5961aa4456314d2f85cb662efb200aee9c6a82f9bf48a615c9ed221",
+      "source_path": "skills/mirrord-kafka/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "47c689776b263d9d11feb1a2479c3825d55ed514f3be19d1f34a4a58bc643784": {
+      "description_zh": "安装配置团队或企业版 mirrord Operator，处理 Helm、云 API 密钥或许可证、离线授权、内部镜像仓库、OpenShift/GKE Autopilot、RBAC，以及队列拆分、数据库分支、预览环境和多集群功能。",
+      "source": "Help users install and configure the mirrord Operator for team/enterprise environments. Use when users ask about operator setup, Helm installation, cloud API key or license configuration, air-gapped/offline licensing, enabling features (queue splitting, DB branching, preview environments, multi-cluster), internal registries, OpenShift/GKE Autopilot, RBAC, or multi-user mirrord deployments.",
+      "source_sha256": "47c689776b263d9d11feb1a2479c3825d55ed514f3be19d1f34a4a58bc643784",
+      "source_path": "skills/mirrord-operator/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40c29090416316dc7c1bc9b6b84ff99784db6cdb6d472721ade542b924e9fd6a": {
+      "description_zh": "在共享 Kubernetes 集群以隔离 pod 运行修改后的服务，通过环境键和 HTTP/队列过滤建立 mirrord 预览；支持临时运行、共享链接及 GitHub Action 的逐 PR 预览与最小权限集群访问。",
+      "source": "Help users create and manage mirrord preview environments — running a modified service as an isolated pod in a shared Kubernetes cluster, scoped by an environment key and HTTP/queue traffic filtering, so teams can validate and review changes against real traffic without affecting live services. Use when a developer wants to run \"mirrord preview\" ad hoc, share a preview via a link (mirrord-share-ingress), or wire preview environments into CI with the metalbear-co/mirrord-preview GitHub Action (e.g. per-PR previews, least-privilege cluster access).",
+      "source_sha256": "40c29090416316dc7c1bc9b6b84ff99784db6cdb6d472721ade542b924e9fd6a",
+      "source_path": "skills/mirrord-prev-env/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a22e510a92758d2adee4dbfb051593f5467c2f4e2f3a64b81bbf6c38a06ea882": {
+      "description_zh": "引导初次使用者安装 mirrord，连接 Kubernetes 集群并运行首个有效会话。",
+      "source": "Guide users from zero to their first working mirrord session. Use when a user is new to mirrord, wants to install it, or needs help running their first session connecting to a Kubernetes cluster.",
+      "source_sha256": "a22e510a92758d2adee4dbfb051593f5467c2f4e2f3a64b81bbf6c38a06ea882",
+      "source_path": "skills/mirrord-quickstart/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6331c62f96fe65fe488947acf3ae6ba517faa3dad65e61d1f3beac3b87853100": {
+      "description_zh": "配置 mirrord Operator 的 Temporal 任务队列拆分，生成 CRD、mirrord.json 消息与 jq 过滤及 Helm 指引，将工作流或活动任务路由到本地 worker 并排查会话；原说明注明为 Team/Enterprise 的 alpha 功能。",
+      "source": "Helps DevOps engineers configure mirrord Operator's Temporal task queue splitting feature end-to-end. Generates the MirrordSplitConfig and MirrordPropertyList Kubernetes CRD YAMLs, the matching mirrord.json split_queues section with message_filter and jq_filter, and Helm value guidance. Use this skill whenever the user mentions Temporal splitting with mirrord, Temporal task queue splitting, splitting a Temporal worker, configuring mirrord with Temporal or Temporal Cloud, routing Temporal workflow or activity tasks to a local worker, or troubleshooting Temporal splitting sessions. Also trigger on split_queues with queue_type Temporal, or connecting mirrord to a Temporal frontend. This is an alpha Team/Enterprise feature of mirrord.",
+      "source_sha256": "6331c62f96fe65fe488947acf3ae6ba517faa3dad65e61d1f3beac3b87853100",
+      "source_path": "skills/mirrord-temporal/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca931490df14f39fa7ab0405eb1e72cbfdc235898eb68380bda9fca0b382f370": {
+      "description_zh": "通过一个 mirrord-up.yaml 同时管理多个 mirrord 会话，以类似 compose 的方式联合调试关联微服务，并用单条命令管理会话生命周期。",
+      "source": "Helps users run multiple concurrent mirrord sessions from a single mirrord-up.yaml (compose-style multi-service local debugging). Use when the user mentions mirrord up, mirrord-up.yaml, mirrord up init, debugging several related microservices together, or managing multiple mirrord sessions' lifecycle in one command.",
+      "source_sha256": "ca931490df14f39fa7ab0405eb1e72cbfdc235898eb68380bda9fca0b382f370",
+      "source_path": "skills/mirrord-up/SKILL.md",
+      "package_sha256": "bc1c43b333d12a0de55758050aa177117c0fd88d9b70765e6ad3413da1c9a359",
+      "source_package": "mirrord Agent Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0ea8ec4eba043cb8b178dac78cd0177f27b3160e69f69e945b02e449bda7afa3": {
+      "description_zh": "读取 .mission/ 中的计划和进度，从最后完成的里程碑恢复任务；适用于清空上下文、新会话或上下文过长时继续执行。",
+      "source": "Resume a mission from the last completed milestone. Use after /clear, in a new session, or when context is getting long. Reads plan and progress from .mission/ files and picks up where you left off.",
+      "source_sha256": "0ea8ec4eba043cb8b178dac78cd0177f27b3160e69f69e945b02e449bda7afa3",
+      "source_path": "skills/continue/SKILL.md",
+      "package_sha256": "ba5fec2ca69eab6ad4b4417a106066320af1e1b31123a1d4af4109dff66d9224",
+      "source_package": "Mission-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb1a93a452e3f14fc177d535ee478d42c28e7c90e9c6667420c957ddd2b5d9d9": {
+      "description_zh": "在任务执行途中调整计划，处理路线不合适、需求变化、里程碑需拆分或范围需更新的情况。",
+      "source": "Mid-flight mission plan adjustment. Use when the approach is wrong, requirements changed, a milestone needs splitting, or scope needs updating. Boyd's \"destruction and creation\" applied to the plan.",
+      "source_sha256": "bb1a93a452e3f14fc177d535ee478d42c28e7c90e9c6667420c957ddd2b5d9d9",
+      "source_path": "skills/pivot/SKILL.md",
+      "package_sha256": "ba5fec2ca69eab6ad4b4417a106066320af1e1b31123a1d4af4109dff66d9224",
+      "source_package": "Mission-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ad66a406caee652511237ef35f7eeae5c8d82449bd493bf44d34a4c41fc98ee": {
+      "description_zh": "交互式规划任务：研究代码库、澄清需求，将工作拆成带验收标准的里程碑并保存批准后的计划，作为 mission:start 的前置步骤。",
+      "source": "Interactive mission planning — research the codebase, ask clarifying questions, decompose work into milestones with acceptance criteria, and save an approved plan. Start here before /mission:start.",
+      "source_sha256": "3ad66a406caee652511237ef35f7eeae5c8d82449bd493bf44d34a4c41fc98ee",
+      "source_path": "skills/plan/SKILL.md",
+      "package_sha256": "ba5fec2ca69eab6ad4b4417a106066320af1e1b31123a1d4af4109dff66d9224",
+      "source_package": "Mission-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86665b68f4fe6d81a7bcaecc200cac2428bce2567ca102a6ed852327021290ba": {
+      "description_zh": "从第一个里程碑开始顺序执行已批准的任务计划，并在里程碑之间设置验证关卡；要求已有 .mission/plan.md，先完成 mission:plan。",
+      "source": "Begin executing an approved mission plan from milestone 1. Requires .mission/plan.md to exist. Runs milestones sequentially with validation gates between each. Use /mission:plan first.",
+      "source_sha256": "86665b68f4fe6d81a7bcaecc200cac2428bce2567ca102a6ed852327021290ba",
+      "source_path": "skills/start/SKILL.md",
+      "package_sha256": "ba5fec2ca69eab6ad4b4417a106066320af1e1b31123a1d4af4109dff66d9224",
+      "source_package": "Mission-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b00328bf1b765b00617be3c6e31fa6848d651017ffa264d6dd0d6703be470d3c": {
+      "description_zh": "只读展示当前任务进度，包括已完成和当前里程碑、剩余工作与阻碍，不执行任务。",
+      "source": "Show current mission progress — milestones completed, current milestone, remaining work, and any blockers. Pure observation, no execution.",
+      "source_sha256": "b00328bf1b765b00617be3c6e31fa6848d651017ffa264d6dd0d6703be470d3c",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "ba5fec2ca69eab6ad4b4417a106066320af1e1b31123a1d4af4109dff66d9224",
+      "source_package": "Mission-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac98697f7581cbfd157b963baedfb200de89eeba984e7a853bdd121e3bc6b4e0": {
+      "description_zh": "运行当前或全部里程碑的验收标准并报告通过或失败；只做检查，不推进里程碑或自动修复。",
+      "source": "Run acceptance criteria for the current milestone (or all milestones). Reports pass/fail. Pure observation — does not advance or fix anything.",
+      "source_sha256": "ac98697f7581cbfd157b963baedfb200de89eeba984e7a853bdd121e3bc6b4e0",
+      "source_path": "skills/validate/SKILL.md",
+      "package_sha256": "ba5fec2ca69eab6ad4b4417a106066320af1e1b31123a1d4af4109dff66d9224",
+      "source_package": "Mission-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3d694e12ff4da19bb3b330c932a5095d7d01ce07306bdcae87bae4311ce204e": {
+      "description_zh": "解读现有 Mixpanel 图表、报告或保存查询，说明展示内容、显著模式及值得进一步查看之处；默认不追查根因，不用于新建图表或整份看板审查，需已有 Mixpanel 引擎。",
+      "source": "Read and explain a Mixpanel report or chart — what it shows, what's notable, and what's worth a closer look. Use whenever the user asks to interpret, explain, summarize, review, or break down an existing chart, report, or saved query in Mixpanel. Trigger phrases: \"what does this chart show\", \"explain this report\", \"interpret this chart\", \"summarize this for me\", \"what's notable here\", \"anything weird in this chart\", \"tell me what's happening\", \"review this insight\", \"walk me through this report\", \"what's the takeaway from this\". Also trigger when the user pastes a Mixpanel chart or report URL and asks anything about it. Lean by default — surfaces what the report shows and flags notable patterns, but does not chase root causes. Do NOT trigger for building new charts, reviewing entire dashboards, or full root-cause diagnostic workflows (for \"why did this change\" questions, use monitor-metrics). Requires a Mixpanel engine — run /mixpanel:install if not set up.",
+      "source_sha256": "e3d694e12ff4da19bb3b330c932a5095d7d01ce07306bdcae87bae4311ce204e",
+      "source_path": "skills/analyze-report/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc260175d055e1bfcfbf73f2e31549722e2c74055e6e5de7f4e16c56d93f001e": {
+      "description_zh": "创建 Mixpanel 看板，组织布局、文本卡片、报告验证和叙事结构，也可把调查结果整理成实时看板。",
+      "source": "Creates a well-designed Mixpanel dashboard. Use when the user asks you to build, create, or design a dashboard, or when you need to present findings from an investigation as a live dashboard. Handles layout, text cards, report validation, and narrative structure.",
+      "source_sha256": "dc260175d055e1bfcfbf73f2e31549722e2c74055e6e5de7f4e16c56d93f001e",
+      "source_path": "skills/create-dashboard/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62570ca280d1bcdf5e80e5c217b8c2e2acdd0ba78c26e77a3ecdac61042e20da": {
+      "description_zh": "在 Mixpanel 开展结构化指标调查，先确定项目、事件和属性范围及调查计划，再循环查询、解释和提出假设，分析趋势驱动因素与指标变化原因。",
+      "source": "Conducts a structured metric investigation in Mixpanel. Use when the user asks why a metric changed, what's driving a trend, requests a \"deep dive\" or \"root cause,\" or wants to understand a phenomenon in their data. Walks through project / event / property scoping, plan confirmation, and an iterative query → interpret → hypothesise loop.",
+      "source_sha256": "62570ca280d1bcdf5e80e5c217b8c2e2acdd0ba78c26e77a3ecdac61042e20da",
+      "source_path": "skills/deep-research/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "610cf80d07466b7f56d5d9927ad474fddf2b95c61a55f82aba5292927999f33e": {
+      "description_zh": "为项目选择并配置 Mixpanel 引擎，可使用 MCP server、mixpanel-headless Python SDK 或用户集成，并切换引擎或区域；需交互式选择，不用于应用埋点代码或直接查询分析。",
+      "source": "Set up Mixpanel for this project — set up an engine for the other Mixpanel skills to use (Mixpanel MCP server, mixpanel-headless Python SDK, or the user's own integration). Use whenever the user asks to set up, install, configure, or connect Mixpanel, switch Mixpanel engine or region, or when any Mixpanel skill finds no engine set up. Trigger phrases: \"set up mixpanel\", \"configure mixpanel\", \"connect mixpanel\", \"install mixpanel\", \"switch mixpanel region\", \"use mixpanel headless\", \"change mixpanel engine\", \"add another engine\". Do NOT use for adding Mixpanel tracking code to an application (use tracking-implementation) or for running analytics queries. Interactive — asks the user to choose; do not run in non-interactive sessions.",
+      "source_sha256": "610cf80d07466b7f56d5d9927ad474fddf2b95c61a55f82aba5292927999f33e",
+      "source_path": "skills/install/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41d1270d93b192597767b9189fd75b56ad9f57bbc21d3bcbc1c0f227a199ab0b": {
+      "description_zh": "通过交互式模块引导用户了解 Mixpanel MCP 能力、可提问题和起步方式；具体报表、看板、查询、埋点、实验与 Lexicon 管理交由对应技能。",
+      "source": "Onboard users to the Mixpanel MCP server through guided, interactive modules. Use when the user asks \"how do I use MCP\", \"what can I ask\", \"what should I try first\", \"show me what MCP can do\", or is figuring out where to start (e.g. \"what now?\"). Always invoke this skill when the user asks about MCP capabilities, even if the question seems simple. Do NOT use for: creating reports or dashboards, running queries, tracking setup, experiment analysis, or Lexicon management — use the dedicated skills for those tasks.",
+      "source_sha256": "41d1270d93b192597767b9189fd75b56ad9f57bbc21d3bcbc1c0f227a199ab0b",
+      "source_path": "skills/learn-mcp/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73c7e26ad94ed7e3ac7308a7ec127c937a6639dd97cb1dc48e4fd8ef054e8946": {
+      "description_zh": "管理 Mixpanel 看板全生命周期，包括创建、模板化、复制、盘点、更新重命名、删除及清理过时看板，支持跨项目团队标准化；需已有引擎，不用于实验、功能开关或事件属性元数据治理。",
+      "source": "Full lifecycle dashboard management for Mixpanel — create, template, clone, clean up, inventory, and update dashboards across projects and teams. ALWAYS use when a user asks to: create a dashboard, build a board, template or clone a dashboard, clean up stale dashboards, audit dashboards, list all dashboards, inventory boards, update or rename a dashboard, delete a dashboard, or standardize boards across projects. Also trigger on \"duplicate board\", \"stale dashboards\", \"empty boards\", \"board management\", or when dashboards are mentioned with \"governance\", \"cleanup\", \"template\", \"onboarding\", or \"standardize\". Do NOT use for A/B experiments (use `manage-experiment`), feature-flag rollouts (use `manage-feature-flags`), or Lexicon/event-and-property metadata cleanup (use `manage-lexicon`). Requires a Mixpanel engine — run /mixpanel:install if not set up.",
+      "source_sha256": "73c7e26ad94ed7e3ac7308a7ec127c937a6639dd97cb1dc48e4fd8ef054e8946",
+      "source_path": "skills/manage-boards/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fa94817e25cea100da5363293f24ee09da9a9e34cd446441ef04ca579f79379": {
+      "description_zh": "辅导 Mixpanel 实验的设计、上线、监控和结果解释，涵盖假设、指标、样本量、统计模型、CUPED、缩尾及多重检验、SRM、护栏、提前终止和分群分析；保留原说明中上线不可逆的限制，不用于无衡量目标的纯功能开关发布。",
+      "source": "Coach the user through any phase of a Mixpanel experiment — design (hypothesis framing, metric selection, sizing, statistical-model choice, advanced features like CUPED / Winsorization / multiple-testing correction), launch (pre-launch readiness check and the irreversible launch), monitor (mid-flight safety: SRM, sample pace, guardrail peeks, terminate-early calls), and interpret (read results, decide ship / iterate / kill / wait, read health checks like SRM and Retro A/A, break down by segment, use session replays). Use when the user mentions an experiment or A/B test, a ship/kill decision, MDE, sample ratio mismatch, CUPED, or statistical significance, or asks things like \"set up an experiment\", \"is my experiment SRM-ing\", \"should we ship\", \"what's my MDE\", or \"audit my experiment\". Do NOT use for plain feature-flag rollouts with no measurement criterion — that belongs to the `manage-feature-flags` skill.",
+      "source_sha256": "8fa94817e25cea100da5363293f24ee09da9a9e34cd446441ef04ca579f79379",
+      "source_path": "skills/manage-experiment/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f4248531a22106fc55d076bc39c9c125fef498d085c2c6568214dc92c08b58b": {
+      "description_zh": "管理 Mixpanel 功能开关，选择 Feature Gate、Dynamic Config 或 Experiment，配置名称与键、分阶段放量、紧急关闭、曝光排查及归档恢复；实验样本量、统计监控和结果决策使用实验技能。",
+      "source": "Coach the user through Mixpanel feature-flag work — picking the right flag-shaped product (Feature Gate vs Dynamic Config vs Experiment), naming and keying, staged rollouts, the kill switch, exposure debugging, and archive/restore. Use when the user wants to create, configure, ramp, kill, archive, restore, debug, or clean up a Mixpanel feature flag, or asks why exposures are zero, why a rollout-percentage change had no effect, whether to use a flag or an experiment, or how to clean up stale flags. Trigger on phrasings like 'create a feature flag', 'roll out X to 10%', 'kill the flag', 'why doesn't my flag work', 'archive these stale flags', or 'is this a feature flag or an experiment'. Do NOT use for experiment design ('how should I size this A/B test?', 'what MDE can I detect?'), launch, mid-flight monitoring, or results interpretation ('should we ship?', 'what does this SRM failure mean?') — those belong to the `manage-experiment` skill.",
+      "source_sha256": "0f4248531a22106fc55d076bc39c9c125fef498d085c2c6568214dc92c08b58b",
+      "source_path": "skills/manage-feature-flags/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d036452e70e927dfed58f19e8fb131042bb15b8c721de1498b45e800dfef586e": {
+      "description_zh": "审计和评分 Mixpanel Lexicon 事件及属性元数据，批量补充说明、显示名与标签，处理类型漂移、空值、量异常、重置及标签更名删除；需已有引擎，不用于删除事件数据或用户档案。",
+      "source": "Audit, score, enrich, or clean up the Lexicon (events and properties metadata) for a Mixpanel project. Use whenever the user wants to score Lexicon health, bulk-fill missing descriptions / display names / tags, reset metadata, triage data quality issues (type drift, null values, volume anomalies), or rename and delete tags. Also use when the user describes the problem in their own words — \"score lexicon\", \"enrich lexicon\", \"bulk enrich\", \"auto-tag events\", \"reset lexicon\", \"wipe tags\", \"review data quality issues\", \"rename/delete Lexicon tags\", \"event names are a mess\", \"half my events have no descriptions\", \"tracking plan audit\", \"clean up the schema\", \"score our instrumentation\" — as long as Mixpanel is the context. Do NOT use for: deleting event data or user profiles; dashboard cleanup; cohort tagging; customer health scoring. Requires a Mixpanel engine — run /mixpanel:install if not set up.",
+      "source_sha256": "d036452e70e927dfed58f19e8fb131042bb15b8c721de1498b45e800dfef586e",
+      "source_path": "skills/manage-lexicon/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68217283f5508fa1c062a845218d26f4bccff1fc592c77070c50f1bc5a248825": {
+      "description_zh": "监控和诊断 Mixpanel 指标的异常、漂移与变化根因，覆盖 KPI、转化、留存、事件量、漏斗及已保存报告或看板指标；需已有引擎，组合健康检查和采用率报告使用对应技能。",
+      "source": "Monitor and diagnose a Mixpanel metric for anomalies, drift, and root cause. Use whenever the user asks to investigate, debug, monitor, or explain a change in a metric tracked in Mixpanel — a saved Metric, KPI, conversion rate, retention, event count, funnel step, or anything tracked in a saved report or dashboard. Trigger phrases: \"monitor [metric]\", \"what's going on with [metric]\", \"why did [metric] drop/spike\", \"diagnose this metric\", \"check for anomalies\", \"has [metric] drifted\", \"what's driving the drop\", \"where is the movement coming from\", \"run RCA on this metric\". Also trigger when the user shares a Mixpanel report/dashboard/metric link and asks what's happening, or describes a metric in prose and wants to know if the movement is real. Do NOT trigger for portfolio health checks (use `weekly-pulse`) or adoption reports (use `gtm-customer-intelligence`). Requires a Mixpanel engine — run /mixpanel:install if not set up.",
+      "source_sha256": "68217283f5508fa1c062a845218d26f4bccff1fc592c77070c50f1bc5a248825",
+      "source_path": "skills/monitor-metrics/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9058b804c45e55ecc41a59649cb463aaf883f23b769cc07948b0bf10b7960021": {
+      "description_zh": "为 Mixpanel 组织或项目的 AI 助手整理业务上下文与 Lexicon 元数据，导入信息、填补缺口并检查 AI 准备程度；需已有引擎，不用于看板或指标分析。",
+      "source": "Gets a Mixpanel org or project ready for its AI assistants — business context and Lexicon metadata. Use to set up or import context, fill gaps, or check AI-readiness: \"set us up for Mixpanel AI\", \"how ready are we for the agent\". Not for dashboards or metrics. Requires a Mixpanel engine — run /mixpanel:install if not set up.",
+      "source_sha256": "9058b804c45e55ecc41a59649cb463aaf883f23b769cc07948b0bf10b7960021",
+      "source_path": "skills/prepare-ai-readiness/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "315833eac2f347a8222b226d48449ad92e4220010f433f2a94985d29284ca70a": {
+      "description_zh": "指导编码智能体实施 Mixpanel 分析埋点，支持首次事件快速接入、完整生产实施、扩展已有埋点及实施审计。",
+      "source": "Guides a coding agent through helping a Mixpanel customer implement analytics correctly. Covers Quick Start (first events in one session), Full Implementation (complete production-ready setup), Add Tracking (extend existing implementation), and Implementation Audit. Use when a user wants to implement Mixpanel, set up Mixpanel, add Mixpanel tracking, configure a new Mixpanel project, or is a Mixpanel customer starting or extending their implementation.",
+      "source_sha256": "315833eac2f347a8222b226d48449ad92e4220010f433f2a94985d29284ca70a",
+      "source_path": "skills/tracking-implementation/SKILL.md",
+      "package_sha256": "c0e3fb2a04e82f9f32f469f803577ca6f8425230030652a663ce21d3312e417e",
+      "source_package": "Mixpanel-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "210f776a7cc040369b7708217c195cba2582a96a865fb2fd284d41bfdb60b0dd": {
+      "description_zh": "对表格、时间序列、文本或图像等机器学习训练、微调、调参和评估采用 16 步流程，从检查原始数据开始，按原说明逐阶段取得用户明确许可，并生成带 matplotlib 图表的 marimo 笔记本。",
+      "source": "MANDATORY whenever a task involves training, fine-tuning, tuning, or evaluating a machine-learning model on data (tabular, time series, text, images — any modality). Enforces a strict 16-step pipeline that starts with inspecting the raw data, gates each phase behind the user's explicit permission, and produces marimo notebooks with matplotlib visuals so the user can see and understand every step. Never jump straight to model training.",
+      "source_sha256": "210f776a7cc040369b7708217c195cba2582a96a865fb2fd284d41bfdb60b0dd",
+      "source_path": "skills/ml-pipeline/SKILL.md",
+      "package_sha256": "6f12c58fcfdabaae9c5c2ba86790f0b9c7c9374574b9fa80ec45a48adf66e058",
+      "source_package": "ml-pipeline-0.4.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2f1273ca1946f5286cf18eaac8cb585228311698cecfd0d9a33ccbc03a06619": {
+      "description_zh": "用 MLflow 的数据集、评分器和追踪系统评估改进现有 LLM 智能体的工具选择、答案质量、成本及错误响应；覆盖追踪配置、数据集、评分定义和执行，原说明要求同时使用 instrumenting-with-mlflow-tracing。",
+      "source": "Use this when you need to EVALUATE OR IMPROVE or OPTIMIZE an existing LLM agent's output quality - including improving tool selection accuracy, answer quality, reducing costs, or fixing issues where the agent gives wrong/incomplete responses. Evaluates agents systematically using MLflow evaluation with datasets, scorers, and tracing. IMPORTANT - Always also load the instrumenting-with-mlflow-tracing skill before starting any work. Covers end-to-end evaluation workflow or individual components (tracing setup, dataset creation, scorer definition, evaluation execution).",
+      "source_sha256": "d2f1273ca1946f5286cf18eaac8cb585228311698cecfd0d9a33ccbc03a06619",
+      "source_path": "agent-evaluation/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fdf3c7d598c58a404fb870cc7ffca4afb44820e38e5f50bf5bd381dfa4914883": {
+      "description_zh": "分析 MLflow 会话中的多轮追踪，调试聊天过程、审阅会话历史，定位出错轮次并识别跨轮次模式。",
+      "source": "Analyzes an MLflow session — a sequence of traces from a multi-turn chat conversation or interaction. Use when the user asks to debug a chat conversation, review session or chat history, find where a multi-turn chat went wrong, or analyze patterns across turns. Triggers on \"analyze this session\", \"what happened in this conversation\", \"debug session\", \"review chat history\", \"where did this chat go wrong\", \"session traces\", \"analyze chat\", \"debug this chat\".",
+      "source_sha256": "fdf3c7d598c58a404fb870cc7ffca4afb44820e38e5f50bf5bd381dfa4914883",
+      "source_path": "analyze-mlflow-chat-session/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c9a98d11f0a0de15ed3a916be5b2d644bf636b28ef153a7f204c7e48c30ff558": {
+      "description_zh": "依据给定 trace ID 分析单条 MLflow 追踪，定位错误、失败根因、行为问题和输出质量。",
+      "source": "Analyzes a single MLflow trace to answer a user query about it. Use when the user provides a trace ID and asks to debug, investigate, find issues, root-cause errors, understand behavior, or analyze quality. Triggers on \"analyze this trace\", \"what went wrong with this trace\", \"debug trace\", \"investigate trace\", \"why did this trace fail\", \"root cause this trace\".",
+      "source_sha256": "c9a98d11f0a0de15ed3a916be5b2d644bf636b28ef153a7f204c7e48c30ff558",
+      "source_path": "analyze-mlflow-trace/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9dc3dfc6e3f87974b0aadaccb2a48d6b2be66082a95ebd0aed7354f2cae0a218": {
+      "description_zh": "理解智能体、RAG、LLM 应用或生成式 AI 流程，从少量原子质量标准建立 MLflow 评估原型，并为每项标准选择成本最低且可靠的评分器，支持评判器选择、创建与迭代。",
+      "source": "Help the user go from zero to a shipped MLflow evaluation prototype by understanding their app, generalizing a small set of atomic quality criteria, and implementing each criterion with the cheapest reliable scorer. Use when the user wants help choosing, creating, or iterating MLflow judges/scorers for an agent, RAG app, LLM app, or GenAI workflow.",
+      "source_sha256": "9dc3dfc6e3f87974b0aadaccb2a48d6b2be66082a95ebd0aed7354f2cae0a218",
+      "source_path": "build-a-scorer/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb342552b237772ba94ce92f583d74f7140daa1a3512e5ca49c23834540ba195": {
+      "description_zh": "以 MLflow 追踪为证据，按探索、计划、实现和验证循环修复或改变智能体行为；用 @mlflow.test 的 pytest 与 mlflow.genai.evaluate 建立回归标准，迭代智能体直到通过，并检查工具、检索来源或能力缺口而非只改提示词。",
+      "source": "Drives a disciplined explore → plan → implement → verify loop for changing an AI agent''s behavior with confidence — whether fixing a reported failure or introducing a new requirement, business rule, or policy. Grounds the diagnosis in MLflow traces, codifies the desired behavior as a regression test suite (`mlflow.genai.evaluate` assertions in `@mlflow.test` pytest tests), and iterates the agent — not the test — until green, resisting quick system-prompt patches when the real fix is upstream (missing tool, retrieval source, or capability). Use whenever the user wants to fix or change how an agent behaves — e.g. \"fix this issue in my agent\", \"this answer is wrong\", \"the agent is hallucinating\", \"improve my agent based on this trace\", \"make the agent do X instead of Y\", \"I want the agent to lead with/prioritize/recommend X\", \"new business rule: the agent should X\", \"always/never do X\", \"change the agent''s default behavior\" — or when you are debugging an agent''s behavior mid-loop and reaching for source code and output files — \"debug this agent\", \"figure out why the agent did X\", \"the agent''s output is wrong\", \"why did the agent produce this\" — where the trace is the evidence to read first — or shares a trace they want addressed.",
+      "source_sha256": "bb342552b237772ba94ce92f583d74f7140daa1a3512e5ca49c23834540ba195",
+      "source_path": "fix-agent-issue/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7743c9166176a0adf61165e766a385d95a2182900c6ea5ad8f7d49afc5a8f0e7": {
+      "description_zh": "为 Python 或 TypeScript 的智能体及 LLM 应用接入 MLflow Tracing，提供可观测性和评估所需追踪；覆盖 LangGraph、LangChain、OpenAI、Gemini、DSPy、CrewAI、AutoGen 等框架。",
+      "source": "Instruments Python and TypeScript code with MLflow Tracing for observability. Must be loaded when setting up tracing as part of any workflow including agent evaluation. Triggers on adding tracing, instrumenting agents/LLM apps, getting started with MLflow tracing, tracing specific frameworks (LangGraph, LangChain, OpenAI, Gemini, DSPy, CrewAI, AutoGen), or when another skill references tracing setup. Examples - \"How do I add tracing?\", \"Instrument my agent\", \"Trace my LangChain app\", \"Set up tracing for evaluation",
+      "source_sha256": "7743c9166176a0adf61165e766a385d95a2182900c6ea5ad8f7d49afc5a8f0e7",
+      "source_path": "instrumenting-with-mlflow-tracing/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0b205c410c8a9f0b2b859a878a34ea0063341ab58e1669c01c1d958bacd1645": {
+      "description_zh": "作为 MLflow 工作流总入口，将追踪、评估、调试、改进智能体或项目接入请求路由到相应 MLflow 子技能。",
+      "source": "Master dispatcher for all MLflow workflows. Use this skill when the user wants to do anything with MLflow — tracing, evaluating, debugging, or improving an agent. Routes to the right MLflow sub-skill automatically. Triggers on: \"use mlflow\", \"help with mlflow\", \"mlflow agent\", \"add mlflow to my project\", \"trace my agent\", \"evaluate my agent\", or any MLflow task without a specific skill in mind.",
+      "source_sha256": "b0b205c410c8a9f0b2b859a878a34ea0063341ab58e1669c01c1d958bacd1645",
+      "source_path": "mlflow-agent/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75c59241c1f1d98c4f33d4cff92c271cf9d281672f590b6f026df7b3d547a3b8": {
+      "description_zh": "判断用户是在开发生成式 AI 智能体应用还是传统机器学习及深度学习，并引导相应 MLflow 快速入门和初始集成；可用实验 ID 辅助识别用途。",
+      "source": "Onboards users to MLflow by determining their use case (GenAI agents/apps or traditional ML/deep learning) and guiding them through relevant quickstart tutorials and initial integration. If an experiment ID is available, it should be supplied as input to help determine the use case. Use when the user asks to get started with MLflow, set up tracking, add observability, or integrate MLflow into their project. Triggers on \"get started with MLflow\", \"set up MLflow\", \"onboard to MLflow\", \"add MLflow to my project\", \"how do I use MLflow\".",
+      "source_sha256": "75c59241c1f1d98c4f33d4cff92c271cf9d281672f590b6f026df7b3d547a3b8",
+      "source_path": "mlflow-onboarding/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdef5942391526cd48b61cc86ee1bc8c63d1e6ee9e5d2a5dfed70ab22af12177": {
+      "description_zh": "从 MLflow tracking server 查询汇总追踪指标，包括 token 用量、延迟、追踪数量和质量评估，用于分析 LLM 成本、使用趋势及统计。",
+      "source": "Fetches aggregated trace metrics (token usage, latency, trace counts, quality evaluations) from MLflow tracking servers. Triggers on requests to show metrics, analyze token usage, view LLM costs, check usage trends, or query trace statistics.",
+      "source_sha256": "bdef5942391526cd48b61cc86ee1bc8c63d1e6ee9e5d2a5dfed70ab22af12177",
+      "source_path": "querying-mlflow-metrics/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2a710d943e1f6720c03b54039a0ba7c6493090a53bbe0127916014940e81d85": {
+      "description_zh": "通过 CLI 或 Python API 获取 MLflow 追踪，按 ID、状态、标签、元数据和执行耗时搜索过滤，用于查询或调试失败追踪。",
+      "source": "Retrieves MLflow traces using CLI or Python API. Use when the user asks to get a trace by ID, find traces, filter traces by status/tags/metadata/execution time, query traces, or debug failed traces. Triggers on \"get trace\", \"search traces\", \"find failed traces\", \"filter traces by\", \"traces slower than\", \"query MLflow traces\".",
+      "source_sha256": "e2a710d943e1f6720c03b54039a0ba7c6493090a53bbe0127916014940e81d85",
+      "source_path": "retrieving-mlflow-traces/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18db03af31d871681640207676754cffcf12740fa9df08eea1888c46b7aa7a0c": {
+      "description_zh": "使用 SageMaker Managed MLflow 的 mlflow-app 或 mlflow-tracking-server ARN 连接后端，再交由其他 MLflow 技能开展相应工作。",
+      "source": "Connect to SageMaker Managed MLflow (mlflow-app or mlflow-tracking-server ARN) as an MLflow backend, then hand off to the other MLflow skills. Triggers on a SageMaker MLflow ARN (arn:aws:sagemaker:...:mlflow-app/... or arn:aws:sagemaker:...:mlflow-tracking-server/...) or \"SageMaker Managed MLflow\".",
+      "source_sha256": "18db03af31d871681640207676754cffcf12740fa9df08eea1888c46b7aa7a0c",
+      "source_path": "sagemaker-mlflow/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3a5f2ed74092f4f9871ae773dbef032b79d6fa9f77bbaefb84519e4dd665e65": {
+      "description_zh": "从 MLflow 官方文档站检索功能、API、集成、追踪和实验跟踪说明，回答用法或查找文档请求。",
+      "source": "Searches and retrieves MLflow documentation from the official docs site. Use when the user asks about MLflow features, APIs, integrations (LangGraph, LangChain, OpenAI, etc.), tracing, tracking, or requests to look up MLflow documentation. Triggers on \"how do I use MLflow with X\", \"find MLflow docs for Y\", \"MLflow API for Z\".",
+      "source_sha256": "e3a5f2ed74092f4f9871ae773dbef032b79d6fa9f77bbaefb84519e4dd665e65",
+      "source_path": "searching-mlflow-docs/SKILL.md",
+      "package_sha256": "c51453f29f69ed38cc44c844aa40890afe95428ec47a916c7f107f28215eaa97",
+      "source_package": "MLflow Skills-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e7705256d816959da56b901a5671658b181e69dde930d272884d6622de188ef": {
+      "description_zh": "在 Modelence 移动应用中处理 Expo Router 的 URL、路由组语义、标准标签页布局和完成检查；用于创建、移动、重命名或链接 mobile/app/ 下的页面。",
+      "source": "Expo Router rules for Modelence mobile apps — URL and group segment semantics, the canonical tabs layout, and the pre-completion checklist. Use before creating, moving, renaming, or linking any screen under mobile/app/.",
+      "source_sha256": "8e7705256d816959da56b901a5671658b181e69dde930d272884d6622de188ef",
+      "source_path": "skills/expo-router/SKILL.md",
+      "package_sha256": "87c47a78b3f6389f7ef4d007048d5d194aead11b0c3e4e12f006cd0332177bf9",
+      "source_package": "modelence-0.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f2cf3edc93061e4e0461e1d3bf2bd1882b454056605db06e106565cc2e865203": {
+      "description_zh": "提供 Modelence 的 Module、Store、查询、变更、configSchema、定时任务及 React 页面完整示例，用于创建修改模块、迁移和调用 modelenceQuery/modelenceMutation 的客户端页面。",
+      "source": "Complete working examples of Modelence framework patterns — Module, Store, queries, mutations, configSchema, cron jobs, and React pages using modelenceQuery/modelenceMutation. Use when creating or modifying Modelence modules, stores, queries, mutations, cron jobs, migrations, or client pages that call them.",
+      "source_sha256": "f2cf3edc93061e4e0461e1d3bf2bd1882b454056605db06e106565cc2e865203",
+      "source_path": "skills/modelence-patterns/SKILL.md",
+      "package_sha256": "87c47a78b3f6389f7ef4d007048d5d194aead11b0c3e4e12f006cd0332177bf9",
+      "source_package": "modelence-0.3.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8c1a9b336f0ba8c0cc9be4886c12943595ee5e12d1623dda9cfa243911ae1d1": {
+      "description_zh": "依据 Manifest V3 实践创建、修改、调试和理解 Chrome 扩展，覆盖内容脚本、service worker、弹窗、侧栏及 chrome.* API；支持 Chrome Web Store 发布准备、审核驳回响应、权限理由和隐私政策草稿。",
+      "source": "Build and publish Chrome Extensions using Manifest V3 best practices. Use this skill whenever the user asks to create, modify, debug, or understand Chrome browser extensions, add-ons, or anything involving the Chrome Extensions API. Trigger on mentions of: 'Chrome extension', 'browser extension', 'manifest.json', 'content script', 'service worker' (in browser context), 'popup' (in browser extension context), 'side panel', 'chrome.* API', 'declarativeNetRequest', 'omnibox', 'context menu' (in extension context), 'userScripts', 'user script', 'script manager', or any request to build functionality that integrates with the Chrome browser UI. Also trigger for publishing to the Chrome Web Store: 'publish extension', preparing an extension for publishing, responding to a review rejection, writing permission justifications, or drafting a privacy policy.",
+      "source_sha256": "b8c1a9b336f0ba8c0cc9be4886c12943595ee5e12d1623dda9cfa243911ae1d1",
+      "source_path": "skills/chrome-extensions/SKILL.md",
+      "package_sha256": "091580a0fef0bbbeb220a4df9aef43cc501eb85ca226b8b9c0a2de3abe1e15a6",
+      "source_package": "Modern Web Guidance-0.0.190-v23.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe4bdeea1b4440819acf29f14bd85330e21d3c7199bdf50e28dae9c00470d88c": {
+      "description_zh": "检索现代 Web 开发实践，覆盖 HTML/CSS、客户端 JavaScript、布局、表单、滚动动画、性能指标、浏览器 API 及前端框架样式；原说明要求在相关开发前使用，不适用于后端、CI/CD 或通用本地脚本。",
+      "source": "Search tool for modern web development best practices. MANDATORY: Execute FIRST for all HTML/CSS and clientside JS tasks. Do NOT skip — web APIs evolve rapidly and training weights contain obsolete patterns. Trigger immediately for: - UI/Layout: Modals, dialogs, popovers, Glassmorphism/backdrop-filters, anchor positioning, container queries, `:has()`, `:user-valid`. - Scroll/Motion: View Transitions, Scroll-driven animations, scroll parallax/reveals. - Performance: CWV (LCP, INP), content-visibility, Fetch Priority, image optimization. - System/APIs: Local filesystem access, WebUSB, WebSockets sync, WebAssembly widgets. - Frameworks: Adapting layout/styles in React, Vue, Angular. - General Frontend: Forms, autofill, advanced inputs, custom scrollbars, modern component states, etc. DO NOT trigger for: - Backend: Database SQL, ORMs, Express API routes. - Pipelines: CI/CD deployment, Docker, Actions. - Generic: Local scripts (Python/Go tools), ESLint, Git.",
+      "source_sha256": "fe4bdeea1b4440819acf29f14bd85330e21d3c7199bdf50e28dae9c00470d88c",
+      "source_path": "skills/modern-web-guidance/SKILL.md",
+      "package_sha256": "091580a0fef0bbbeb220a4df9aef43cc501eb85ca226b8b9c0a2de3abe1e15a6",
+      "source_package": "Modern Web Guidance-0.0.190-v23.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d3647a2fae189b6fd011d32b483d803f84a078ed53a3823d76f336d36e351c9": {
+      "description_zh": "在 Mokaru 管理求职申请管道，保存职位、更新申请状态、查看面试阶段、跟进事项并记录联系人。",
+      "source": "Manages the user's job application pipeline in Mokaru - saving jobs, updating status, reviewing what stage each application is at, and tracking contacts. Use when the user asks about applications they sent, interview stages, follow-ups, or their job search pipeline.",
+      "source_sha256": "3d3647a2fae189b6fd011d32b483d803f84a078ed53a3823d76f336d36e351c9",
+      "source_path": "skills/application-tracker/SKILL.md",
+      "package_sha256": "630e94c72342a20570f9ea501432ab6533db1ec576b1de65f2e45600e800e1c7",
+      "source_package": "Mokaru-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69dbdf09d66e37700390be9c4d790d726aa65a3fd5ca131fee68582b9419bff0": {
+      "description_zh": "搜索 Mokaru 职位数据库，按地点、行业或工作安排呈现匹配岗位及申请链接。",
+      "source": "Searches the Mokaru job database and presents matches with apply links. Use when the user is looking for jobs, vacancies, or roles, or asks what is open in a location, industry, or work arrangement.",
+      "source_sha256": "69dbdf09d66e37700390be9c4d790d726aa65a3fd5ca131fee68582b9419bff0",
+      "source_path": "skills/job-search/SKILL.md",
+      "package_sha256": "630e94c72342a20570f9ea501432ab6533db1ec576b1de65f2e45600e800e1c7",
+      "source_package": "Mokaru-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ad5ea43627809264a00e964a95b1ea42cb8985ff3c24b1bc32be3daa96615d9": {
+      "description_zh": "读取编辑 Mokaru 简历内容，包括经历、教育、技能、证书、项目、奖项、出版物、兴趣、摘要和自定义章节，支持添加、纠正或删除。",
+      "source": "Reads and edits the content of a Mokaru resume - experience, education, skills, certificates, projects, awards, publications, interests, summaries, and custom sections. Use when the user wants to add, correct, or remove something on their CV or career profile.",
+      "source_sha256": "4ad5ea43627809264a00e964a95b1ea42cb8985ff3c24b1bc32be3daa96615d9",
+      "source_path": "skills/resume-content/SKILL.md",
+      "package_sha256": "630e94c72342a20570f9ea501432ab6533db1ec576b1de65f2e45600e800e1c7",
+      "source_package": "Mokaru-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8703f469b6c2fa8c1cd0e1de8f731413149c1af6d0341d2457c550e5d74dd0f2": {
+      "description_zh": "利用 AI 按指定职位或招聘信息定制 Mokaru 简历，生成独立岗位版本并保留基础简历。",
+      "source": "Tailors a Mokaru resume to a specific job with AI, producing a job-specific copy without touching the base resume. Use when the user wants their CV rewritten, optimized, or matched for a particular role or job posting.",
+      "source_sha256": "8703f469b6c2fa8c1cd0e1de8f731413149c1af6d0341d2457c550e5d74dd0f2",
+      "source_path": "skills/tailor-resume/SKILL.md",
+      "package_sha256": "630e94c72342a20570f9ea501432ab6533db1ec576b1de65f2e45600e800e1c7",
+      "source_package": "Mokaru-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "49b32034dbe243c6b44be80ae62d03a80b6779f5f28191097551f06c0ec84343": {
+      "description_zh": "分析已有代码库中的可授权能力、高级功能、API 配额、导出、集成和商业化候选项，将发现区分为访问门槛或用量限制。",
+      "source": "Use when: analyzing an existing codebase to identify licensable capabilities, premium features, API quotas, exports, integrations, or monetization candidates; classifies findings as access gates or rate limits.",
+      "source_sha256": "49b32034dbe243c6b44be80ae62d03a80b6779f5f28191097551f06c0ec84343",
+      "source_path": "skills/analyze-codebase/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ece89c52c88f33e2306c17f6e6160637176b97b15dd031240b6410b92892656": {
+      "description_zh": "设计 Monaiq 定价、分层、订阅、试用、永久授权或按用量计费及可转入目录的方案；仅设计，不创建目录实体。",
+      "source": "Use when: designing pricing strategy, tiers, subscriptions, trials, perpetual licenses, usage-based billing, or catalog-ready offering plans; does not create catalog entities.",
+      "source_sha256": "3ece89c52c88f33e2306c17f6e6160637176b97b15dd031240b6410b92892656",
+      "source_path": "skills/design-monetization/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ebd4780a780d0299e31cd826b842c0dda225bd021507e05870b1d8a04b1ac4d": {
+      "description_zh": "解释 Monaiq 领域概念与实体关系，包括 FeatureKey 语义、命名空间位置、产品、功能、方案、许可证、凭据及结账术语。",
+      "source": "Use when: explaining Monaiq domain concepts, entity relationships, FeatureKey semantics, namespace locations, products, features, offerings, licenses, credentials, or checkout terminology.",
+      "source_sha256": "8ebd4780a780d0299e31cd826b842c0dda225bd021507e05870b1d8a04b1ac4d",
+      "source_path": "skills/domain-reference/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f7f73edf0512b1e20a6ae593366855bceb6d9dfd841d6bbce1ebe20601c6c96": {
+      "description_zh": "帮助新用户或回访用户开始使用 Monaiq，建立会话、检查档案和目录状态，并选择下一步授权工作流。",
+      "source": "Use when: onboarding a new or returning Monaiq user, establishing a session, checking profile/catalog state, choosing the next licensing workflow, or asking where to start.",
+      "source_sha256": "1f7f73edf0512b1e20a6ae593366855bceb6d9dfd841d6bbce1ebe20601c6c96",
+      "source_path": "skills/getting-started/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f77f95277c5d1da0bfa2350935002c61f4a1295915f76ff6f1c6d3a99c0d6772": {
+      "description_zh": "在已接入 Monaiq SDK 的应用中添加功能门控、访问检查、高级功能限制、速率断言、消耗记录和许可证功能验证。",
+      "source": "Use when: adding Monaiq feature gates, access checks, premium feature enforcement, rate-limit assertions, consumption recording, or license feature checks to an SDK-integrated app.",
+      "source_sha256": "f77f95277c5d1da0bfa2350935002c61f4a1295915f76ff6f1c6d3a99c0d6772",
+      "source_path": "skills/implement-feature/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "71d2e8186bc34b92c51d8f3ff2f18cc9bc3af22f2363fe1fb4409e39f3ba38fd": {
+      "description_zh": "将 Monaiq 授权 SDK 接入 .NET 或 React 应用，安装包、配置凭据和端点、注册服务或 provider，并验证运行时许可证检查。",
+      "source": "Use when: integrating the Monaiq licensing SDK into a .NET or React app, installing packages, configuring credentials/endpoints, registering services/providers, or verifying runtime license validation.",
+      "source_sha256": "71d2e8186bc34b92c51d8f3ff2f18cc9bc3af22f2363fe1fb4409e39f3ba38fd",
+      "source_path": "skills/implement-licensing/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbdd862cbc47c000570a0422dff8a52dc89be09b2ae66b8b159fb9b978e579f2": {
+      "description_zh": "实现应用内 Monaiq 许可证购买流程，包括购买按钮、Stripe checkout 会话、结账结果处理、凭据持久化及购买后 SDK 刷新。",
+      "source": "Use when: adding an in-app license purchase flow, buy button, Stripe checkout session, checkout result handling, credential persistence, or post-purchase SDK refresh.",
+      "source_sha256": "cbdd862cbc47c000570a0422dff8a52dc89be09b2ae66b8b159fb9b978e579f2",
+      "source_path": "skills/implement-purchase-flow/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7cf1ad28b6f63418210218489ce3b2d48228c1e785204e2fa2c504555cfb19ec": {
+      "description_zh": "维护 Monaiq 实施日志，记录状态、检查点、路由材料、证据、清单进度及验证失败，以支持可恢复交接。",
+      "source": "Use when: maintaining Monaiq implementation state, checkpoints, route packets, journal evidence, checklist progress, validation failures, or resumable handoffs.",
+      "source_sha256": "7cf1ad28b6f63418210218489ce3b2d48228c1e785204e2fa2c504555cfb19ec",
+      "source_path": "skills/maintain-implementation-journal/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f8e8a53a1557f8c00a652135adc1ece7cc41725b7d331a1935d1a47c1c2dd51a": {
+      "description_zh": "在完成入门或商业化设计后，创建管理 Monaiq 产品目录、产品、功能、方案、价格层级及功能分配。",
+      "source": "Use when: creating or managing a Monaiq product catalog, products, features, offerings, pricing tiers, and feature assignments after onboarding or monetization design.",
+      "source_sha256": "f8e8a53a1557f8c00a652135adc1ece7cc41725b7d331a1935d1a47c1c2dd51a",
+      "source_path": "skills/manage-catalog/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "de3cb40058db611a4f49bd9461ea89de9460674342281290acbfb3c3afbbcb77": {
+      "description_zh": "查看 Monaiq 经销商档案状态、获取经销商 ApiKey 和 IssuerClientId，并审阅条款及隐私文档。",
+      "source": "Use when: viewing Monaiq reseller profile status, retrieving reseller ApiKey and IssuerClientId, or reviewing terms and privacy documents.",
+      "source_sha256": "de3cb40058db611a4f49bd9461ea89de9460674342281290acbfb3c3afbbcb77",
+      "source_path": "skills/profile-onboarding/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d7c776c8722ffe0764238863971b68aa36c2bc3eae4ceb126335076ab49a6a3": {
+      "description_zh": "在定价设计前，按应用类型比较订阅、试用、永久授权、免费增值、分层及按用量授权模式，并推荐适合的场景。",
+      "source": "Use when: recommending a licensing model for an app type, comparing subscription, trial, perpetual, freemium, tiered, or usage-based scenarios before pricing design.",
+      "source_sha256": "5d7c776c8722ffe0764238863971b68aa36c2bc3eae4ceb126335076ab49a6a3",
+      "source_path": "skills/scenario-advisor/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5403798cd078967e81a0fff5a7f19458f50521e5f863d3e503d7b75f19070a1a": {
+      "description_zh": "诊断 Monaiq SDK 接入、配置、认证、许可证验证、结账及用量消耗跟踪问题。",
+      "source": "Use when: diagnosing Monaiq SDK integration issues, setup failures, authentication errors, license validation problems, checkout failures, or usage/consumption tracking bugs.",
+      "source_sha256": "5403798cd078967e81a0fff5a7f19458f50521e5f863d3e503d7b75f19070a1a",
+      "source_path": "skills/troubleshoot-integration/SKILL.md",
+      "package_sha256": "c5c05eb30a64645bf5834e197e5b4a9634f64d356fe13d5bc3f77bfd68a795c9",
+      "source_package": "Monaiq-2.0.10-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8eeff0c4fafbdd4af4158bd2ece722ac913dbf2663e284479e307def9fb500ea": {
+      "description_zh": "分析 monday CRM 活动数据，比较销售人员表现、电话和邮件数量、团队活动分布及互动统计，支持指定期间的外联和活动报告。",
+      "source": "Analyze CRM activity data — rep performance, call and email volume, team activity breakdowns, and engagement stats. Use when someone says \"how many calls did the team make\", \"show me rep activity\", \"who's the most active rep\", \"activity breakdown this week\", \"how is the team performing\", \"what's our outreach volume\", \"compare rep activity\", \"call stats\", \"email volume by rep\", \"activity report\", or \"team engagement stats\".",
+      "source_sha256": "8eeff0c4fafbdd4af4158bd2ece722ac913dbf2663e284479e307def9fb500ea",
+      "source_path": "skills/activity-insights/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb5ca687d7301431def2de695e62d491cad2897f8ca1508dc0da4fd618c75deb": {
+      "description_zh": "用自然语言在 monday CRM 看板创建、查看及管理自动化规则，如赢单通知、日期提醒和自动移动商机，无需手动提供块 ID。",
+      "source": "Set up, view, and manage automations on monday CRM boards using natural language — no block IDs or technical knowledge required. Use when someone says \"set up an automation\", \"automate this\", \"when a deal is won notify me\", \"remind me when a date passes\", \"move deals automatically\", \"what automations do I have\", \"turn off automation\", \"create a workflow\", \"automate my pipeline\", or \"set up a rule\".",
+      "source_sha256": "fb5ca687d7301431def2de695e62d491cad2897f8ca1508dc0da4fd618c75deb",
+      "source_path": "skills/automate-crm/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82a4efa9f63676a867ac10b980bf9cf2c365b91dcba88424cd4c2fafd64b4684": {
+      "description_zh": "为 monday CRM 生成按优先级排序的每日简报，汇总商机、联系人、客户、线索及需要关注的事项；原说明支持不同 CRM 配置，甚至尚无看板的情况。",
+      "source": "Start your day with a prioritized CRM briefing — works for any monday CRM setup: pipeline, contacts, accounts, leads, or no board at all. Use when someone says 'morning briefing', 'daily brief', 'what's on my plate today', 'catch me up on my deals', 'what needs attention', 'what needs my attention', 'anything urgent in my deals', 'what's hot in my pipeline', 'pipeline summary', 'start my day', or 'daily standup prep'.",
+      "source_sha256": "82a4efa9f63676a867ac10b980bf9cf2c365b91dcba88424cd4c2fafd64b4684",
+      "source_path": "skills/daily-briefing/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f739bf04451e09e993e4c1eb8a2479dd6d2b8e64931f8f293f7ff4557c0f65a": {
+      "description_zh": "检查 monday CRM 看板的数据健康并评分，识别缺失字段、停滞商机、废弃列和自动化缺口；也可批量规范电话、补充邮件与国家代码、分配负责人及修正过时日期。",
+      "source": "Check your CRM board's health and clean up messy data — run a scored health check (missing fields, stalled deals, abandoned columns, automation gaps) as a report, or fix data in bulk (phone formats, missing emails, country codes, unowned deals, stale dates). Use when someone says \"clean my CRM\", \"fix my data\", \"normalize my phone numbers\", \"fill in missing owners\", \"run a board health check\", \"audit my CRM board\", \"what's broken in my CRM\", \"what are the data gaps on my board\", \"board is messy\", or \"clean up before my kickoff call\".",
+      "source_sha256": "2f739bf04451e09e993e4c1eb8a2479dd6d2b8e64931f8f293f7ff4557c0f65a",
+      "source_path": "skills/data-cleanup/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a21515b1b4fd9beb61e88c649156d160428160530760a2f66bd7ce19faa76b2c": {
+      "description_zh": "在 monday 创建按成交月份组织的销售预测看板，以真实看板组件展示已承诺、最佳情形和管道视图，支持加权管道、配额进度及商机汇总。",
+      "source": "Build a forecast dashboard in monday — committed, best-case, and pipeline views by close month, rendered as real dashboard widgets. Use when someone says \"build me a forecast\", \"show me Q2 pipeline\", \"Salesforce-style forecast\", \"forecast dashboard\", \"commit vs best-case\", \"what's our number this quarter\", \"how are we tracking to quota\", \"weighted pipeline\", \"deal rollup\", \"Clari-style\", \"pipeline by month\", or \"what's in commit\".",
+      "source_sha256": "a21515b1b4fd9beb61e88c649156d160428160530760a2f66bd7ce19faa76b2c",
+      "source_path": "skills/forecast/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2421631cb4f9eb6f76730cfb41f5a3a40ba4cdff3c0dfa5a70bbd9799d21a3a6": {
+      "description_zh": "在 CRM 项目时间线记录或更新电话、会议、笔记和活动，结构化保存参与者、结果与跟进事项，并查询活动历史。",
+      "source": "Log calls, meetings, notes, and other activities to CRM item timelines — structured records with attendees, outcomes, and follow-ups. Use when someone says \"log my call with\", \"add a note to the deal\", \"what activities happened on\", \"record this meeting\", \"update my note on\", \"track a call with\", \"log a meeting with\", \"what's the activity history for\", \"add meeting notes to\", \"I just spoke with\", \"note on the account\", or \"update the activity I logged\".",
+      "source_sha256": "2421631cb4f9eb6f76730cfb41f5a3a40ba4cdff3c0dfa5a70bbd9799d21a3a6",
+      "source_path": "skills/log-activity/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6b29521f418799dfe6296ca34a5132534733bb3c99367f89876efb92c56fdae": {
+      "description_zh": "把会议转录中的重点、承诺和下一步自动写入匹配的 CRM 商机，并为新参会者创建联系人，用于通话后更新交易记录。",
+      "source": "Turn meeting transcripts into deal updates — key points, commitments, and next steps posted to matching CRM deals automatically. Auto-creates contacts for new attendees. Use when someone says \"log my meetings to deals\", \"update CRM from calls\", \"what did I commit to in meetings\", \"sync notetaker\", \"log this meeting\", \"I just had a call with [company]\", \"what did I promise in that meeting\", \"add notes from today's calls\", or \"update the deal after my call\".",
+      "source_sha256": "e6b29521f418799dfe6296ca34a5132534733bb3c99367f89876efb92c56fdae",
+      "source_path": "skills/meeting-to-deal/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1487a0f0de28ff5d298b52e92aaf534fbddeee54964d7bb3ee6cd1386a8e181f": {
+      "description_zh": "管理 CRM 触达序列，列出、创建、复制、加入联系人、启停并跟踪表现，查询成员及历史，用于欢迎、培育、滴灌或冷启动外联流程。",
+      "source": "Manage CRM sequences end-to-end — list, create, enroll contacts, activate/deactivate, duplicate, and track performance. Use when someone says \"what sequences do I have\", \"create a welcome sequence\", \"enroll this contact in a sequence\", \"add these leads to my nurture sequence\", \"deactivate the cold outreach sequence\", \"activate my new sequence\", \"how is my nurture sequence doing\", \"show me sequence analytics\", \"create a drip campaign\", \"who is enrolled in\", \"duplicate this sequence\", \"set up a new outreach flow\", \"check this contact's sequence history\", or \"what sequences is this lead in\".",
+      "source_sha256": "1487a0f0de28ff5d298b52e92aaf534fbddeee54964d7bb3ee6cd1386a8e181f",
+      "source_path": "skills/run-sequence/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdb24e26170d0ea4cb809ecd4612365fac5fdb81538cbb33f47e044a9c21414a": {
+      "description_zh": "依据业务描述从零创建 monday CRM 工作区、看板、列和销售管道阶段；已有看板的状态或数据问题使用简报及清理技能。",
+      "source": "Build a CRM workspace from scratch — describe your business and get boards, columns, and pipeline stages created in monday. Use when someone says \"set up my CRM\", \"build me a CRM\", \"create CRM boards for me\", \"I need a new sales pipeline\", \"help me get started in monday\", \"I don't know how to set up my pipeline\", or \"build me a CRM from scratch\". Do not use for questions about an existing board — those belong to daily-briefing or data-cleanup.",
+      "source_sha256": "bdb24e26170d0ea4cb809ecd4612365fac5fdb81538cbb33f47e044a9c21414a",
+      "source_path": "skills/workspace-builder/SKILL.md",
+      "package_sha256": "3768cf7cc391c86c31185a2a9e840f437a3bac7e6555cf2bd8201cd8e767fd20",
+      "source_package": "monday CRM-0.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc84ff8cff738bbaf41a381a6caade7c3462f04711c5443af2326f7f0c4b4752": {
+      "description_zh": "创建配置 monday.com 看板的分组、列和初始项目，用于项目跟踪、CRM 管道、缺陷跟踪、内容日历及其他工作流。",
+      "source": "Creates and configures monday.com boards with proper structure including groups,\ncolumns, and initial items. monday.com boards are flexible enough to manage any\nworkflow - project trackers, CRM pipelines, bug trackers, content calendars,\nand more. Use when user asks to \"create a board\", \"set up a project\", \"new board\nfor\", \"build a tracker\", \"organize my project\", \"create a board for tracking\",\nor \"set up a workflow\".",
+      "source_sha256": "cc84ff8cff738bbaf41a381a6caade7c3462f04711c5443af2326f7f0c4b4752",
+      "source_path": "skills/board-setup/SKILL.md",
+      "package_sha256": "af01faa761b1ea339d42f4d0e1fa698fac4802ff70df89823d3e5b531574ee27",
+      "source_package": "monday.com-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da6c1192c77a099bed1afefd49cb5ef4dc469abc31cae691dfa61b0164dd67cf": {
+      "description_zh": "创建、阅读、编辑及评论 monday.com docs，用于会议纪要、RFC、操作手册、周报和复盘；支持嵌入实时看板列值、提及用户文档或看板，并按正确 update_doc 操作修改。",
+      "source": "Creates, reads, edits, and comments on monday.com docs - the rich-content\nsurface inside monday for meeting notes, RFCs, runbooks, weekly updates,\npostmortems, and any work-adjacent writing. Goes beyond markdown shuffling\nby embedding live board column values inline (so the doc reflects real-time\nstatus), tagging users / docs / boards via mentions, scaffolding common doc\nshapes, and routing each edit through the correct update_doc operation.\nUse when user asks to \"create a doc\", \"make a monday doc\", \"draft meeting\nnotes\", \"write an RFC\", \"scaffold a runbook\", \"summarize a meeting in a\ndoc\", \"add a section to my doc\", \"edit my doc\", \"update the doc\",\n\"comment on a doc\", \"tag someone in a doc\", \"embed a status in a doc\",\n\"show live board data in a doc\", \"rename a doc\", or \"show me my docs\".",
+      "source_sha256": "da6c1192c77a099bed1afefd49cb5ef4dc469abc31cae691dfa61b0164dd67cf",
+      "source_path": "skills/docs-collaborator/SKILL.md",
+      "package_sha256": "af01faa761b1ea339d42f4d0e1fa698fac4802ff70df89823d3e5b531574ee27",
+      "source_package": "monday.com-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "79aabbab42054f57615994d6169168ba3d684b64008ec28e2c2abad7ff4c66e7": {
+      "description_zh": "创建编辑 monday.com WorkForms，将公开表单响应转成关联看板的新项目；用于请求、缺陷、线索、活动报名或内部提交，支持题目调整、发布共享、品牌设置及停用。",
+      "source": "Creates and edits monday.com WorkForms - public intake forms that capture\nresponses as new items on a backing board. Useful for request intake, bug\nreports, lead capture, event signups, internal submissions, and any flow\nthat turns a user-submitted form into a tracked work item.\nUse when user asks to \"create a form\", \"build an intake form\", \"make a\nWorkForm\", \"add a question to my form\", \"edit form questions\", \"publish\na form\", \"share a form link\", \"set up a request form\", \"add a form to a\nboard\", \"remove the monday branding from my form\", or \"deactivate the\nform\".",
+      "source_sha256": "79aabbab42054f57615994d6169168ba3d684b64008ec28e2c2abad7ff4c66e7",
+      "source_path": "skills/forms-builder/SKILL.md",
+      "package_sha256": "af01faa761b1ea339d42f4d0e1fa698fac4802ff70df89823d3e5b531574ee27",
+      "source_package": "monday.com-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d34960bee100f3ce7dd7f9a052320e6b061a888ef3897726f08d047897bed6f8": {
+      "description_zh": "从一个或多个 monday.com 看板生成结构化项目状态报告，突出逾期事项、阻碍、工作负荷分布和近期活动。",
+      "source": "Generates structured project status reports from monday.com - a customizable AI work\nplatform with dedicated products for work management, CRM, dev, service, and campaigns.\nSurfaces overdue items, blockers,\nworkload distribution, and recent activity across one or more boards.\nUse when user asks for \"project status\", \"board summary\", \"what's overdue\",\n\"status report\", \"how's the project going\", \"weekly update\", \"board overview\",\n\"progress update\", or \"team workload\".",
+      "source_sha256": "d34960bee100f3ce7dd7f9a052320e6b061a888ef3897726f08d047897bed6f8",
+      "source_path": "skills/project-status-report/SKILL.md",
+      "package_sha256": "af01faa761b1ea339d42f4d0e1fa698fac4802ff70df89823d3e5b531574ee27",
+      "source_package": "monday.com-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d6a5583bc31bf2471700da9506c3851f0801a01cd13de0f5cb3d682d412b6215": {
+      "description_zh": "在 monday.com 看板创建、更新、分配和管理项目及子项目，处理各列类型的值格式，支持状态、负责人、到期日、优先级、移动及评论。",
+      "source": "Creates, updates, assigns, and manages items across monday.com boards. monday.com\nis a customizable AI work platform with dedicated products for work management,\nCRM, dev, service, and campaigns. Handles correct column value formatting for all column types.\nUse when user asks to \"create a task\", \"add an item\", \"update status\", \"assign to\",\n\"change due date\", \"move item\", \"mark as done\", \"create a subitem\", \"add a comment\",\nor \"update the priority\".",
+      "source_sha256": "d6a5583bc31bf2471700da9506c3851f0801a01cd13de0f5cb3d682d412b6215",
+      "source_path": "skills/task-management/SKILL.md",
+      "package_sha256": "af01faa761b1ea339d42f4d0e1fa698fac4802ff70df89823d3e5b531574ee27",
+      "source_package": "monday.com-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50d9d8a809bf29f9e4471a279a37f825fe80199810beb62c9ba1626113b58022": {
+      "description_zh": "为 Monl 创建完整的商业和交易市场界面，适用于契约中包含产品、商品条目、价格、库存、购物车、订单、支付、履约、配送和买卖双方的应用。",
+      "source": "Build complete premium commerce and marketplace interfaces for Monl. Use when a contract contains products, listings, prices, stock, carts, orders, purchases, payments, fulfillment, delivery, sellers, or buyers.",
+      "source_sha256": "50d9d8a809bf29f9e4471a279a37f825fe80199810beb62c9ba1626113b58022",
+      "source_path": "skills/monl-commerce/SKILL.md",
+      "package_sha256": "303d4cbac04929d7c523f99fe9830824e0e6ae2b0c7b3f0d5170e5c22b810c84",
+      "source_package": "monl — compilateur de backends-0.9.0-beta.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e3df0ca9963717dd2c8a476a6da57c7da59015ad8cd1ee115608e506b62daf6": {
+      "description_zh": "在前端实施前，把已验证的 Monl 契约转成具体设计系统，规定页面模式、设计 token、素材计划、反模式、无障碍及交付关卡。",
+      "source": "Turn a validated Monl contract into a concrete design system before frontend implementation, with page patterns, tokens, asset planning, anti-patterns, accessibility and delivery gates.",
+      "source_sha256": "9e3df0ca9963717dd2c8a476a6da57c7da59015ad8cd1ee115608e506b62daf6",
+      "source_path": "skills/monl-design-system/SKILL.md",
+      "package_sha256": "303d4cbac04929d7c523f99fe9830824e0e6ae2b0c7b3f0d5170e5c22b810c84",
+      "source_package": "monl — compilateur de backends-0.9.0-beta.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d45a4ee1c38f42e179e4fd912ff79f5cef0df76d6a02108d83461a4ee504897e": {
+      "description_zh": "为 Monl 构建运营工作区，覆盖看板、库存、财务、任务、内容审核、社区管理、报表和审批队列等多实体、按角色组织的应用。",
+      "source": "Build professional operational workspaces for Monl. Use for dashboards, inventory, finance, task management, moderation, community administration, reporting, approval queues, and other multi-entity role-based applications.",
+      "source_sha256": "d45a4ee1c38f42e179e4fd912ff79f5cef0df76d6a02108d83461a4ee504897e",
+      "source_path": "skills/monl-operations/SKILL.md",
+      "package_sha256": "303d4cbac04929d7c523f99fe9830824e0e6ae2b0c7b3f0d5170e5c22b810c84",
+      "source_package": "monl — compilateur de backends-0.9.0-beta.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0f78a14fab172d308f230ac90211ad186fb61164d40fd9f6a24ae1c3d10317a": {
+      "description_zh": "创建或提升面向公众的 Monl Web 界面、演示项目和设计质量，在保留生成 API 契约的前提下完善界面细节并开展前端质量审查。",
+      "source": "Build or refine dense, distinctive, demo-grade Monl web interfaces. Use for every public-facing Monl frontend, showcase project, design upgrade, or frontend quality review that must preserve the generated API contract while reaching production-level polish.",
+      "source_sha256": "e0f78a14fab172d308f230ac90211ad186fb61164d40fd9f6a24ae1c3d10317a",
+      "source_path": "skills/monl-showcase/SKILL.md",
+      "package_sha256": "303d4cbac04929d7c523f99fe9830824e0e6ae2b0c7b3f0d5170e5c22b810c84",
+      "source_package": "monl — compilateur de backends-0.9.0-beta.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f1a4faf36cd8a9d0de2d04394b86323b962740f995b58d0ce2d00d5193253bb": {
+      "description_zh": "用 monl 的 .ml 规格描述应用，确定性编译为 FastAPI、SQLite 和 JWT 后端，并对真实服务器验证；用于创建、修改、检查后端或编写修正 .ml 文件。",
+      "source": "Décrire une application en spécification monl (.ml), la compiler en backend FastAPI + SQLite + JWT déterministe, et la vérifier contre un vrai serveur. À utiliser quand on demande de créer, modifier ou vérifier le backend d'une application avec monl, ou d'écrire/corriger un fichier .ml.",
+      "source_sha256": "6f1a4faf36cd8a9d0de2d04394b86323b962740f995b58d0ce2d00d5193253bb",
+      "source_path": "skills/monl-spec/SKILL.md",
+      "package_sha256": "303d4cbac04929d7c523f99fe9830824e0e6ae2b0c7b3f0d5170e5c22b810c84",
+      "source_package": "monl — compilateur de backends-0.9.0-beta.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a62248b39c269c0524bef7e9334dd77974fae653864c26e88b6c8cc0be88009b": {
+      "description_zh": "以本地独立 UI 模式组合 Monl 前端，参考组件注册库的思路，避免引入 React、Tailwind、CDN 或臆造业务行为。",
+      "source": "Compose Monl frontends from local, autonomous UI patterns inspired by component registries, without importing React, Tailwind, CDNs or invented business behavior.",
+      "source_sha256": "a62248b39c269c0524bef7e9334dd77974fae653864c26e88b6c8cc0be88009b",
+      "source_path": "skills/monl-ui-patterns/SKILL.md",
+      "package_sha256": "303d4cbac04929d7c523f99fe9830824e0e6ae2b0c7b3f0d5170e5c22b810c84",
+      "source_package": "monl — compilateur de backends-0.9.0-beta.10-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7c08b95ff913b8386180dac50fd7064210d3d80b6666367fa9e1a1e3056d5835": {
+      "description_zh": "提供通过 Monta MCP 使用 API 的核心知识，涵盖电动汽车充电点、会话、站点、团队、钱包、价格组、认证令牌及 webhook，以及领域模型、认证范围、分页、日期、速率限制和需确认的操作。",
+      "source": "Core knowledge for working with the Monta API through the Monta MCP tools. Use whenever the user asks about Monta, EV charge points, chargers, charging sessions, sites, teams, wallets, price groups, charge auth tokens, or webhooks, or when calling any get-*, post-*, patch-*, put-*, or delete-* Monta tool. Covers the domain model, auth and scopes, pagination, dates, rate limits, and which operations need confirmation.",
+      "source_sha256": "7c08b95ff913b8386180dac50fd7064210d3d80b6666367fa9e1a1e3056d5835",
+      "source_path": "skills/monta-api/SKILL.md",
+      "package_sha256": "c391817cf79874f59f855f7189626a4ea5369f193295aedfedc3130b57b87844",
+      "source_package": "Monta-0.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b8c8ccffa1910df6fc8f78a57d2e20bcc67563acf137f02990172cffa6b16c75": {
+      "description_zh": "为 Monta 充电运营提供逐步流程，调查失败、卡住或零电量充电、离线及错误充电桩，分析站点利用率，将充电与钱包交易或发票对账，并接入新站点或充电点；依赖 monta-api。",
+      "source": "Step-by-step workflows for EV charging operators using Monta. Use when the user wants to investigate a failed, stuck, or zero-kWh charge, check why a charger is offline or in error, pull site or charger utilisation, reconcile charges against wallet transactions or invoices, or onboard a new site or charge point. Builds on the monta-api skill.",
+      "source_sha256": "b8c8ccffa1910df6fc8f78a57d2e20bcc67563acf137f02990172cffa6b16c75",
+      "source_path": "skills/monta-charging-operations/SKILL.md",
+      "package_sha256": "c391817cf79874f59f855f7189626a4ea5369f193295aedfedc3130b57b87844",
+      "source_package": "Monta-0.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f11d492b57fe4a7fffa7faf7e422c5e1df920dcc09527f2a35a77f541eefa186": {
+      "description_zh": "连接 Claude 与 Monta API 并验证连接，指导获取 API 凭据，处理工具缺失、401/403 或连接异常，用于安装插件及 monta:setup。",
+      "source": "Connect Claude to the Monta API and verify the connection. Use when the user installs the Monta plugin, runs /monta:setup, asks how to get Monta API credentials, or when Monta tools are missing, return 401 or 403, or the connection looks broken.",
+      "source_sha256": "f11d492b57fe4a7fffa7faf7e422c5e1df920dcc09527f2a35a77f541eefa186",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "c391817cf79874f59f855f7189626a4ea5369f193295aedfedc3130b57b87844",
+      "source_package": "Monta-0.1.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da5bd6161d28e99d676e2e839ba0e0bfe0216191762fbd92c2c8ef047e7d12c8": {
+      "description_zh": "在视频已导入后，通过 Montage MCP 创建可编辑的片段或 moment，并交付编辑器链接。",
+      "source": "Create an editable moment (clip) from an ingested video via the Montage MCP tools and deliver an editor link. Use after video ingestion when the user wants a clip/moment created from their video.",
+      "source_sha256": "da5bd6161d28e99d676e2e839ba0e0bfe0216191762fbd92c2c8ef047e7d12c8",
+      "source_path": "skills/create-moment/SKILL.md",
+      "package_sha256": "2d1281518a7283b981da1ea61760f689c16bc6a8eb89db03f12a76a79aad0eef",
+      "source_package": "Montage-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecfbb41beacd50c8248e49317c517bc0bd1506f1ec32eb8c274fe183ed524b0d": {
+      "description_zh": "从 Google Drive 或公开网址向 Montage 上传导入视频，并跟踪 upload_video 导入流程各阶段。",
+      "source": "Use when the user wants to ingest, upload, or import a video into Montage from a Google Drive or public URL, or asks to track/poll an upload_video ingestion workflow through its pipeline steps.",
+      "source_sha256": "ecfbb41beacd50c8248e49317c517bc0bd1506f1ec32eb8c274fe183ed524b0d",
+      "source_path": "skills/ingest-video/SKILL.md",
+      "package_sha256": "2d1281518a7283b981da1ea61760f689c16bc6a8eb89db03f12a76a79aad0eef",
+      "source_package": "Montage-0.2.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "078226b67b559e383f73574d87114a4a9dd47e610033c6255d8acbc9751e50bf": {
+      "description_zh": "按主题分类查找 Morningstar 官方数据项名称，如费用率、夏普比率或 ESG 指标，支持浏览和列举数据项。",
+      "source": "Finds official Morningstar datapoint names using topic-organized buckets. Use when the user asks to find, browse, or name a datapoint — e.g. \"what's the datapoint for expense ratio\", \"find the datapoint name for Sharpe ratio\", or \"list datapoints for ESG\".",
+      "source_sha256": "078226b67b559e383f73574d87114a4a9dd47e610033c6255d8acbc9751e50bf",
+      "source_path": "skills/datapoint-finder/SKILL.md",
+      "package_sha256": "67cba3bc3da778a970656eb36ab257a9958744edbf42be0627bcc48f43fd9b04",
+      "source_package": "Morningstar-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c95b969d4f5daf02e549956673b86db25f5080484d515814440748b27ae8c907": {
+      "description_zh": "用 Morningstar 先比较恰好两只基金或 ETF 的结构，生成 Markdown 概览并支持针对性追问；经用户确认后可生成独立 HTML 对比报告。",
+      "source": "Compares exactly 2 funds or ETFs using a structural-first Morningstar analysis. Starts with a Markdown structural snapshot, supports targeted follow-up analysis, and can generate a self-contained HTML report after the user confirms. Use when the user says “compare SPY and QQQ,” “compare two ETFs,” “create a fund comparison report,” or requests a side-by-side Morningstar comparison of two fund tickers.",
+      "source_sha256": "c95b969d4f5daf02e549956673b86db25f5080484d515814440748b27ae8c907",
+      "source_path": "skills/fund-comparison/SKILL.md",
+      "package_sha256": "67cba3bc3da778a970656eb36ab257a9958744edbf42be0627bcc48f43fd9b04",
+      "source_package": "Morningstar-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58d1f210e9dc854b53474f284f43f6f215e42a42517d48f7981996857e7d7096": {
+      "description_zh": "按 Morningstar 类别、评级、费用、资产规模、收益或风险筛选基金与 ETF。",
+      "source": "Use when screening funds or ETFs by Morningstar category, ratings, fees, assets, returns, or risk.",
+      "source_sha256": "58d1f210e9dc854b53474f284f43f6f215e42a42517d48f7981996857e7d7096",
+      "source_path": "skills/fund-screener/SKILL.md",
+      "package_sha256": "67cba3bc3da778a970656eb36ab257a9958744edbf42be0627bcc48f43fd9b04",
+      "source_package": "Morningstar-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "84d4491a45d53d603be00e890ca73779f0fb00321977d07be6398f92838a9cb0": {
+      "description_zh": "利用 Morningstar 评级、收益、风险、持仓和费用概述基金或 ETF，并列明限制和注意事项。",
+      "source": "Use when summarizing a fund or ETF with Morningstar ratings, returns, risk, holdings, fees, and caveats.",
+      "source_sha256": "84d4491a45d53d603be00e890ca73779f0fb00321977d07be6398f92838a9cb0",
+      "source_path": "skills/fund-summarizer/SKILL.md",
+      "package_sha256": "67cba3bc3da778a970656eb36ab257a9958744edbf42be0627bcc48f43fd9b04",
+      "source_package": "Morningstar-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c200bb5e15a0ddb9a3bb54e2cb65ea941c8d155c1f012b1f09a9c11c8bc6f95d": {
+      "description_zh": "使用实时 Morningstar MCP 数据，按代码、名称或 Morningstar ID 分析基金 Medalist Rating，涵盖支柱评分、评级历史及 PDF 报告。",
+      "source": "Analyze a fund's Morningstar Medalist Rating using live Morningstar MCP data. Use when asked to rate, analyze, or look up a specific fund by ticker, name, or Morningstar ID, including pillar scores, rating history, and PDF reports.",
+      "source_sha256": "c200bb5e15a0ddb9a3bb54e2cb65ea941c8d155c1f012b1f09a9c11c8bc6f95d",
+      "source_path": "skills/medalist-rating-analyzer/SKILL.md",
+      "package_sha256": "67cba3bc3da778a970656eb36ab257a9958744edbf42be0627bcc48f43fd9b04",
+      "source_package": "Morningstar-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d554ed0be9bd9d6d0f267ad46987b8bd176856af6ea638ca9bef724e1292b11c": {
+      "description_zh": "在 Morphed 工作区使用相应额度生成、编辑、动画化或迭代 AI 图片与视频。",
+      "source": "Create AI images or videos in Morphed. Use when the user asks to generate, edit, animate, or iterate on visual media with their Morphed workspace and credits.",
+      "source_sha256": "d554ed0be9bd9d6d0f267ad46987b8bd176856af6ea638ca9bef724e1292b11c",
+      "source_path": "skills/morphed-generate/SKILL.md",
+      "package_sha256": "8908140c7c250b9ec91366704cd15f945256922383f3f2ec5f0bb1f7d36ae47a",
+      "source_package": "Morphed-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "15228188d05e6172846b8081400428011538087fe5e752f06232e55f31de8522": {
+      "description_zh": "在 Morphed 构建视觉方向一致的产品图片与视频营销系列，用于发布素材、广告、社交版本和产品摄影，并保持产品身份与视觉风格统一。",
+      "source": "Build a coherent product image and video campaign in Morphed. Use for launch assets, ads, social variants, product photography, or a campaign system that must preserve the same product and visual direction.",
+      "source_sha256": "15228188d05e6172846b8081400428011538087fe5e752f06232e55f31de8522",
+      "source_path": "skills/morphed-product-campaign/SKILL.md",
+      "package_sha256": "8908140c7c250b9ec91366704cd15f945256922383f3f2ec5f0bb1f7d36ae47a",
+      "source_package": "Morphed-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
