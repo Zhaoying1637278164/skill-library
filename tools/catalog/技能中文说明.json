@@ -50209,6 +50209,1086 @@
       "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
       "source_package": "OpenSearch Agent Skills-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dd411c8842d6e96ae4de4437dad575cf5e32f653eb56fa9cf9ed37296df0c0d8": {
+      "description_zh": "创建或删除 OpenSearch Serverless collection、建立 collection group、配置 AOSS NextGen，或清理 AOSS 资源。",
+      "source": "Use when provisioning or deprovisioning OpenSearch Serverless collections, creating collection groups, setting up AOSS NextGen, or tearing down AOSS resources",
+      "source_sha256": "dd411c8842d6e96ae4de4437dad575cf5e32f653eb56fa9cf9ed37296df0c0d8",
+      "source_path": "skills/opensearch-skills/cloud/aws-setup/aoss/aoss-nextgen-provisioning/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d92f7a1fee3866c000f823d85204dc18141b1f972e3266897c874330c48651fa": {
+      "description_zh": "通过 OSIS 在 Amazon OpenSearch 批量接入文档，先将 JSONL 分块上传 S3 再索引，可用 semantic_enrichment 自动创建 ASE 索引；原说明直接上传 PDF/DOCX 云端解析属于私有 beta。",
+      "source": "Ingest documents at scale into Amazon OpenSearch using OpenSearch Ingestion Service (OSIS) pipelines. Upload pre-generated JSONL chunks to S3 and OSIS indexes them — optionally using semantic_enrichment in the sink to create the index with ASE automatically. Cloud ingestion — uploading raw PDF/DOCX and letting document_extractor parse them in the cloud — is available via private beta. Use this skill when the user wants to ingest documents into a cloud OpenSearch domain or collection, process documents at full volume beyond local limits, or set up an OSIS pipeline. Activate even if the user says OSIS, ingestion pipeline, document extraction, S3 ingestion, managed ingestion, or cloud processing.",
+      "source_sha256": "d92f7a1fee3866c000f823d85204dc18141b1f972e3266897c874330c48651fa",
+      "source_path": "skills/opensearch-skills/cloud/managed-ingestion-service/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f215c0b339382775c9d4bc25c58fef779ff4d1ed92e44332408c0da74d87247": {
+      "description_zh": "用 Docling 将 PDF 或非结构化文档处理成可搜索的 JSONL 分块，并评估分块质量；云端大规模接入使用 managed-ingestion-service。",
+      "source": "Process unstructured documents into search-ready chunks. Use this skill when the user wants to process PDFs or unstructured documents into JSONL chunks using Docling. Activate even if the user says document processing, chunking, Docling, PDF processing, or chunk quality evaluation. For cloud-scale ingestion via OSIS pipelines, see cloud/managed-ingestion-service.",
+      "source_sha256": "7f215c0b339382775c9d4bc25c58fef779ff4d1ed92e44332408c0da74d87247",
+      "source_path": "skills/opensearch-skills/ingest/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9707a404365a3bccb5b820f8a42e832cd8b0c81e6358be9ec22fbc871a163adf": {
+      "description_zh": "在本地用 Docling 将 PDF、DOCX、PPTX、XLSX 转成可索引 JSONL 分块，评估质量并准备搜索文本，无需 AWS 或云服务。",
+      "source": "Process unstructured documents (PDF, DOCX, PPTX, XLSX) into search-ready JSONL chunks using Docling. Runs locally — no AWS or cloud services needed. Use this skill when the user wants to prepare documents for indexing, chunk documents, evaluate chunk quality, or convert PDFs to searchable text. Activate even if the user says process documents, chunk my files, prepare for search, or Docling.",
+      "source_sha256": "9707a404365a3bccb5b820f8a42e832cd8b0c81e6358be9ec22fbc871a163adf",
+      "source_path": "skills/opensearch-skills/ingest/document-processing/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9bc47ad89a121a23a2d906af00c427e23e3290754c87ab3e8c35d7af9fbbcfd6": {
+      "description_zh": "在 OpenSearch 分析日志和调查追踪，支持 PPL、错误模式、日志模式、堆栈健康、延迟、异常与可观测性任务。",
+      "source": "Analyze logs and investigate traces in OpenSearch. Use this skill when the user wants to query logs with PPL, analyze error patterns, discover log patterns, investigate traces, check stack health, or perform any observability task. Activate even if the user says log analysis, Fluent Bit, Fluentd, Logstash, syslog, traceId, OpenTelemetry, PPL, span, latency, error rate, anomaly detection, or log analytics without mentioning OpenSearch.",
+      "source_sha256": "9bc47ad89a121a23a2d906af00c427e23e3290754c87ab3e8c35d7af9fbbcfd6",
+      "source_path": "skills/opensearch-skills/observability/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b18ca0836a735b7f335bd58269e63bffba88ec99a4d8b36c53f6a0f6e92b5512": {
+      "description_zh": "用 OpenSearch PPL 和 Query DSL 查询日志，分析错误率、模式和异常，依据日志排查应用问题。",
+      "source": "Analyze logs in OpenSearch using PPL and Query DSL. Use this skill when the user wants to query logs, analyze error patterns, discover log patterns, check error rates, perform anomaly detection on logs, or investigate application issues through log data. Activate even if the user says log analysis, Fluent Bit, Fluentd, Logstash, syslog, PPL, error rate, anomaly detection, log patterns, or log analytics without mentioning OpenSearch.",
+      "source_sha256": "b18ca0836a735b7f335bd58269e63bffba88ec99a4d8b36c53f6a0f6e92b5512",
+      "source_path": "skills/opensearch-skills/observability/log-analytics/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "36e966f468fec6d3ac1f9be8e46a3742f0bbca8cc756467d04cf7e2fc64b725e": {
+      "description_zh": "在 OpenSearch 调查分布式 trace/span，分析慢调用、错误、智能体调用、token 使用、追踪树和服务图。",
+      "source": "Investigate distributed traces and spans in OpenSearch. Use this skill when the user wants to analyze traces, investigate slow spans, find error spans, track agent invocations, measure token usage, reconstruct trace trees, query service maps, or debug distributed systems through trace data. Activate even if the user says traceId, spanId, OpenTelemetry, OTel, distributed tracing, latency, span duration, service map, or trace investigation without mentioning OpenSearch.",
+      "source_sha256": "36e966f468fec6d3ac1f9be8e46a3742f0bbca8cc756467d04cf7e2fc64b725e",
+      "source_path": "skills/opensearch-skills/observability/trace-analytics/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90ca6c9d86f2a0690edd103a33ae74ffe3b671467bb9a817d8bd9143da8f638b": {
+      "description_zh": "用 OpenSearch 构建搜索应用，涵盖索引、架构、语义向量混合搜索、BM25、稠密稀疏向量、RAG、嵌入、KNN、文档接入和搜索质量评估。",
+      "source": "Build search applications with OpenSearch. Use this skill when the user mentions search app, index setup, search architecture, semantic search, vector search, hybrid search, BM25, dense vector, sparse vector, agentic search, RAG, embeddings, KNN, PDF ingestion, document processing, search quality evaluation, or any related search topic.",
+      "source_sha256": "90ca6c9d86f2a0690edd103a33ae74ffe3b671467bb9a817d8bd9143da8f638b",
+      "source_path": "skills/opensearch-skills/search/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "142323b779ac9b585352e099646a9e16cd87da4cda901a3a93923de990f618af": {
+      "description_zh": "从零构建 OpenSearch 搜索应用，并支持索引、语义向量混合检索、RAG、文档处理、nDCG、precision 和相关性调优。",
+      "source": "Build search applications with OpenSearch from scratch. Use this skill when the user mentions search app, index setup, search architecture, semantic search, vector search, hybrid search, BM25, dense vector, sparse vector, agentic search, RAG, embeddings, KNN, PDF ingestion, document processing, or any related search topic. Activate even if the user says search quality, evaluation, nDCG, precision, relevance tuning, or search builder without mentioning OpenSearch.",
+      "source_sha256": "142323b779ac9b585352e099646a9e16cd87da4cda901a3a93923de990f618af",
+      "source_path": "skills/opensearch-skills/search/opensearch-launchpad/SKILL.md",
+      "package_sha256": "5d140cd028ff81c5b8c136b04e3673da1e35da57849a1f644b961ecfb1ceafa8",
+      "source_package": "OpenSearch Agent Skills-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26c4175c0a0266726d1fa8ef1516586b8d10685e07a9fdb9c84c2f7a28b04ef1": {
+      "description_zh": "在 OpenTriangle 搜索商家并预约服务。",
+      "source": "Search for businesses and book appointments on OpenTriangle",
+      "source_sha256": "26c4175c0a0266726d1fa8ef1516586b8d10685e07a9fdb9c84c2f7a28b04ef1",
+      "source_path": "skills/book/SKILL.md",
+      "package_sha256": "e68984952747299627afb189fbef5dd46498e4b006a9fad21058b64f9a7a8041",
+      "source_package": "opentriangle-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8679b9625ef5e935f811c50864564694fec76cca5928b46aed41641a7f1d510": {
+      "description_zh": "分析团队工作量、资源利用率及未来需求，支持季度容量规划、招聘或降优先级决策，以及判断未来项目是否匹配现有人力。",
+      "source": "Plan resource capacity — workload analysis and utilization forecasting. Use when heading into quarterly planning, the team feels overallocated and you need the numbers, deciding whether to hire or deprioritize, or stress-testing whether upcoming projects fit the people you have.",
+      "source_sha256": "e8679b9625ef5e935f811c50864564694fec76cca5928b46aed41641a7f1d510",
+      "source_path": "skills/capacity-plan/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2629d37680dcb8a6c7205f991ebb1ac9e1a73b5fcc3fbeb43bdede82e0a33ab7": {
+      "description_zh": "创建带影响分析和回退计划的变更管理申请，支持 CAB 审阅、部署前风险记录及利益相关方沟通规划。",
+      "source": "Create a change management request with impact analysis and rollback plan. Use when proposing a system or process change that needs approval, preparing a change record for CAB review, documenting risk and rollback steps before a deployment, or planning stakeholder communications for a rollout.",
+      "source_sha256": "2629d37680dcb8a6c7205f991ebb1ac9e1a73b5fcc3fbeb43bdede82e0a33ab7",
+      "source_path": "skills/change-request/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "70afc4a10f1b22140a2ab7278a3fda531199858923766ba10b1e62ce32ec8a82": {
+      "description_zh": "跟踪合规要求和审计准备度，记录准备 SOC 2、ISO 27001、GDPR 或其他监管合规活动。",
+      "source": "Track compliance requirements and audit readiness. Trigger with \"compliance\", \"audit prep\", \"SOC 2\", \"ISO 27001\", \"GDPR\", \"regulatory requirement\", or when the user needs help tracking, preparing for, or documenting compliance activities.",
+      "source_sha256": "70afc4a10f1b22140a2ab7278a3fda531199858923766ba10b1e62ce32ec8a82",
+      "source_path": "skills/compliance-tracking/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aedf2b48ead7ecb93f17e468f550561c112d2d4ab7d14d98801959417015bf00": {
+      "description_zh": "用流程图、RACI 和 SOP 记录业务过程，明确职责、交接、审计要求和真实执行中的异常边界。",
+      "source": "Document a business process — flowcharts, RACI, and SOPs. Use when formalizing a process that lives in someone's head, building a RACI to clarify who owns what, writing an SOP for a handoff or audit, or capturing the exceptions and edge cases of how work actually gets done.",
+      "source_sha256": "aedf2b48ead7ecb93f17e468f550561c112d2d4ab7d14d98801959417015bf00",
+      "source_path": "skills/process-doc/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81400893c5f4b0ef8282cc791efa72642f9a6f2a16069154818c306e5af373da": {
+      "description_zh": "分析改进低效业务流程，识别步骤过多、速度慢和瓶颈，简化工作流。",
+      "source": "Analyze and improve business processes. Trigger with \"this process is slow\", \"how can we improve\", \"streamline this workflow\", \"too many steps\", \"bottleneck\", or when the user describes an inefficient process they want to fix.",
+      "source_sha256": "81400893c5f4b0ef8282cc791efa72642f9a6f2a16069154818c306e5af373da",
+      "source_path": "skills/process-optimization/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "34f15cd88b3c75b72d80709b4813ad2cc4a1b73217d07af6928a759bf6070083": {
+      "description_zh": "识别评估并缓解项目、供应商、流程或决策的运营风险，建立风险记录。",
+      "source": "Identify, assess, and mitigate operational risks. Trigger with \"what are the risks\", \"risk assessment\", \"risk register\", \"what could go wrong\", or when the user is evaluating risks associated with a project, vendor, process, or decision.",
+      "source_sha256": "34f15cd88b3c75b72d80709b4813ad2cc4a1b73217d07af6928a759bf6070083",
+      "source_path": "skills/risk-assessment/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5c16ecfbba1528d154bbf0e7197c5eef7190e76bf804a22b28f31988fd5743f": {
+      "description_zh": "创建更新可重复执行的运维手册，把经验转成具体步骤命令，并加入故障排查、回退及升级路径。",
+      "source": "Create or update an operational runbook for a recurring task or procedure. Use when documenting a task that on-call or ops needs to run repeatably, turning tribal knowledge into exact step-by-step commands, adding troubleshooting and rollback steps to an existing procedure, or writing escalation paths for when things go wrong.",
+      "source_sha256": "e5c16ecfbba1528d154bbf0e7197c5eef7190e76bf804a22b28f31988fd5743f",
+      "source_path": "skills/runbook/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb04426ba60d392388335d6b4d1899b17224aa6369ed284b55bf51c8adb9ef8d": {
+      "description_zh": "生成包含 KPI、风险和行动项的周月状态报告，以红黄绿概括项目健康并提出待决事项。",
+      "source": "Generate a status report with KPIs, risks, and action items. Use when writing a weekly or monthly update for leadership, summarizing project health with green/yellow/red status, surfacing risks and decisions that need stakeholder attention, or turning a pile of project tracker activity into a readable narrative.",
+      "source_sha256": "eb04426ba60d392388335d6b4d1899b17224aa6369ed284b55bf51c8adb9ef8d",
+      "source_path": "skills/status-report/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5d6ed85a5b9064b16db613eb9f68d9b42150e09e31e8a182fba93b78fad59402": {
+      "description_zh": "评估供应商成本、风险和建议，比较续约替换方案，整理 TCO 与采购批准前的谈判要点。",
+      "source": "Evaluate a vendor — cost analysis, risk assessment, and recommendation. Use when reviewing a new vendor proposal, deciding whether to renew or replace a contract, comparing two vendors side-by-side, or building a TCO breakdown and negotiation points before procurement sign-off.",
+      "source_sha256": "5d6ed85a5b9064b16db613eb9f68d9b42150e09e31e8a182fba93b78fad59402",
+      "source_path": "skills/vendor-review/SKILL.md",
+      "package_sha256": "5bc7aee1e441d936937b123c38ec1a59d4c652ddb5c4637dd1b48146ed381b24",
+      "source_package": "Operations-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f48f9bc81e03ec6c188404da4f0535368fd98b609cb5f5384d97b43a39a89fb": {
+      "description_zh": "说明 PostgreSQL 索引模式和 Prisma 限制，支持慢查询、N+1、部分表达式索引、GIN/GiST/BRIN 及 EXPLAIN 诊断。",
+      "source": "PostgreSQL indexing patterns and Prisma's limitations. Use when adding indexes, diagnosing slow queries, dealing with N+1 problems, or needing partial, expression, GiST, or BRIN indexes. Triggers on \"index\", \"@@index\", \"performance\", \"slow query\", \"EXPLAIN\", \"N+1\", \"partial index\", \"GIN\", \"GiST\", \"BRIN\".",
+      "source_sha256": "0f48f9bc81e03ec6c188404da4f0535368fd98b609cb5f5384d97b43a39a89fb",
+      "source_path": "skills/indexing/SKILL.md",
+      "package_sha256": "2429821970d23c9ad13c250c9875b40b47b61bd0c3c6beb2075259ea1934d53b",
+      "source_package": "Opinionated Prisma Skills-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6889006391972b3862b22c07dec0640d58d87057f10e525ed45316dc5c0527fd": {
+      "description_zh": "为 PostgreSQL 采用安全 Prisma 迁移流程，支持现有表加列、大表索引、约束修改、create-only、并发和回退。",
+      "source": "Safe Prisma migration workflows for PostgreSQL. Use when planning or running prisma migrate, adding columns to existing tables, creating indexes on large tables, or making constraint changes. Triggers on \"migrate\", \"migration\", \"prisma migrate\", \"--create-only\", \"ALTER TABLE\", \"NOT NULL\", \"CONCURRENTLY\", \"rollback\", \"deploy\".",
+      "source_sha256": "6889006391972b3862b22c07dec0640d58d87057f10e525ed45316dc5c0527fd",
+      "source_path": "skills/migration-safety/SKILL.md",
+      "package_sha256": "2429821970d23c9ad13c250c9875b40b47b61bd0c3c6beb2075259ea1934d53b",
+      "source_package": "Opinionated Prisma Skills-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "16d41688c295b956854f2cb8612d380e657458f365402bc1728493a254c1c03d": {
+      "description_zh": "介绍 Prisma ORM 与 PostgreSQL 模式及前提，帮助初始数据库配置、ID 策略和子技能选择。",
+      "source": "Overview and prerequisites for Prisma ORM + PostgreSQL patterns. Use when first setting up a database, establishing ID strategy, or needing guidance on which specific skill to use. Triggers on \"prisma\", \"database\", \"postgresql\", \"postgres\".",
+      "source_sha256": "16d41688c295b956854f2cb8612d380e657458f365402bc1728493a254c1c03d",
+      "source_path": "skills/opinionated-prisma/SKILL.md",
+      "package_sha256": "2429821970d23c9ad13c250c9875b40b47b61bd0c3c6beb2075259ea1934d53b",
+      "source_package": "Opinionated Prisma Skills-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9ee2ddd28e0425fdfa9abe0adaf94286b52088178e7e5b66927976763d50e56": {
+      "description_zh": "判断使用 $queryRaw 还是 Prisma 查询 API，支持窗口函数、CTE、全文搜索、JSONB 和复杂聚合。",
+      "source": "Decision logic for when to use $queryRaw vs Prisma's query API. Use when deciding whether raw SQL is warranted, writing window functions, CTEs, full-text search, JSONB operators, or complex aggregations. Triggers on \"$queryRaw\", \"raw sql\", \"window function\", \"CTE\", \"full-text search\", \"JSONB\", \"ROW_NUMBER\", \"RANK\", \"Prisma.sql\", \"EXPLAIN ANALYZE\".",
+      "source_sha256": "d9ee2ddd28e0425fdfa9abe0adaf94286b52088178e7e5b66927976763d50e56",
+      "source_path": "skills/raw-sql-boundary/SKILL.md",
+      "package_sha256": "2429821970d23c9ad13c250c9875b40b47b61bd0c3c6beb2075259ea1934d53b",
+      "source_package": "Opinionated Prisma Skills-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3db7444a89308f7f26bd29788ceb74a47719b30e4a2d1bb610f622e6764a056": {
+      "description_zh": "规定 Prisma schema 命名、主键、枚举、关系及软删除，支持模型字段和枚举字符串选择。",
+      "source": "Prisma schema design conventions: naming, primary keys, enums, relations, soft delete. Use when designing models, adding fields, choosing between enums and strings, or setting up a new Prisma schema. Triggers on \"schema\", \"model\", \"relation\", \"enum\", \"field\", \"prisma.schema\", \"@@map\", \"@map\", \"uuid\", \"slug\".",
+      "source_sha256": "b3db7444a89308f7f26bd29788ceb74a47719b30e4a2d1bb610f622e6764a056",
+      "source_path": "skills/schema-design/SKILL.md",
+      "package_sha256": "2429821970d23c9ad13c250c9875b40b47b61bd0c3c6beb2075259ea1934d53b",
+      "source_package": "Opinionated Prisma Skills-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4fd47c1498918fa36e9bbfabdb3a3c7e512a6021b9f56eceb41e7903be7f85f2": {
+      "description_zh": "提供 Prisma 事务和批量操作模式，选择交互或顺序事务，处理关联批量创建、upsert、条件更新、原子性和超时。",
+      "source": "Prisma transaction and bulk operation patterns. Use when writing transactions, choosing interactive vs sequential, bulk creates with relations, bulk upserts, or conditional bulk updates. Triggers on \"transaction\", \"$transaction\", \"bulk\", \"createMany\", \"upsert\", \"batch\", \"atomicity\", \"timeout\".",
+      "source_sha256": "4fd47c1498918fa36e9bbfabdb3a3c7e512a6021b9f56eceb41e7903be7f85f2",
+      "source_path": "skills/transactions/SKILL.md",
+      "package_sha256": "2429821970d23c9ad13c250c9875b40b47b61bd0c3c6beb2075259ea1934d53b",
+      "source_package": "Opinionated Prisma Skills-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "026087279c7e4239c6d422f181abba3aca56e291ccff691daf7a3418c5ef9bfd": {
+      "description_zh": "按 OPORD 检查人员手动执行多技能计划的各步骤输出，应用调整规则、阶段性确认计划前提并写执行报告；不用于自动运行或一般 QA。",
+      "source": "Monitors a multi-skill plan the operator is running by hand against its operations order (OPORD) — checking each step's output, applying the order's adaptation rules, asking whether the plan's frame still holds at phase boundaries, and writing the execution report. Use when the operator is running an OPORD's skills themselves and wants each step checked, asks to assess or monitor execution, or wants a partly-run plan evaluated. Not for code review, QA, or general assessments, and not for automated execution (ops-run).",
+      "source_sha256": "026087279c7e4239c6d422f181abba3aca56e291ccff691daf7a3418c5ef9bfd",
+      "source_path": "skills/ops-assess/SKILL.md",
+      "package_sha256": "2ca9bf9a166945b7ac10a4d38b9d7db338786dff67ce85c892404b19a56af671",
+      "source_package": "ops-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd5710151287f48b55e89d90d8e9ae4f593f3768e8335b6d3a83c62c4e522bf3": {
+      "description_zh": "将重复成功的技能序列从模式队列提升到 ops-plan 优先参考的开局库，记录失败序列并淘汰久未使用计划，闭合执行学习循环。",
+      "source": "Promotes recurring, successful skill sequences from the ops pattern queue into the opening book that ops-plan consults first, records known-bad sequences, and ages out plans that have gone unused. Use when the operator asks to update or review the opening book, promote learned patterns, or close the learning loop after several ops-run or ops-assess executions. Not for model training or general \"what did we learn\" retrospectives.",
+      "source_sha256": "cd5710151287f48b55e89d90d8e9ae4f593f3768e8335b6d3a83c62c4e522bf3",
+      "source_path": "skills/ops-learn/SKILL.md",
+      "package_sha256": "2ca9bf9a166945b7ac10a4d38b9d7db338786dff67ce85c892404b19a56af671",
+      "source_package": "ops-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b4972b9893d6439bc800e90557e08e09d968b4928c07ea28a5e700b1bc36093": {
+      "description_zh": "把 ops-plan 建议转成 ops-run 可执行的五段式 OPORD，明确各技能任务、备选技能及预先约定的调整规则；不用于一般任务清单。",
+      "source": "Turns the recommended plan from ops-plan into a full five-paragraph operations order (OPORD) that ops-run can execute, with per-skill tasking, backup skills, and pre-committed adaptation rules. Use when the operator has a plan from ops-plan and wants it made executable, asks for an OPORD, or wants tasking and contingencies written before running a multi-skill effort. Not for general task lists, project plans, or tickets.",
+      "source_sha256": "1b4972b9893d6439bc800e90557e08e09d968b4928c07ea28a5e700b1bc36093",
+      "source_path": "skills/ops-order/SKILL.md",
+      "package_sha256": "2ca9bf9a166945b7ac10a4d38b9d7db338786dff67ce85c892404b19a56af671",
+      "source_package": "ops-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37fd75347b655a3fcc8d877d4341b2ecc8c817aec6d68f6bb463b70dff9e3424": {
+      "description_zh": "为需要多个技能的问题选择已安装技能及执行顺序，比较方案并撰写战术评估和推荐计划；不用于通用路线图或军事理论问答。",
+      "source": "Works out which installed skills to run, in what order, for a problem that needs more than one skill, and writes a tactical assessment with a recommended plan. Use when the operator asks which skills to use for a goal, wants a multi-step effort planned or its options compared before running anything, or says \"plan this\" about work their skill library could do. Not for general project planning, roadmaps, or questions about military doctrine itself.",
+      "source_sha256": "37fd75347b655a3fcc8d877d4341b2ecc8c817aec6d68f6bb463b70dff9e3424",
+      "source_path": "skills/ops-plan/SKILL.md",
+      "package_sha256": "2ca9bf9a166945b7ac10a4d38b9d7db338786dff67ce85c892404b19a56af671",
+      "source_package": "ops-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1f6a0784bc75f302710cc44f78ee3812f1716f2873466814aa79171915a5baa": {
+      "description_zh": "盘点当前项目和用户已安装的 Agent Skills，按能力类型与等级整理技能编组，为多技能规划提供最新清单。",
+      "source": "Inventories the Agent Skills installed for the current project and user and sorts them into a force roster by kind of work (capability class) and weight (tier). Use when the operator asks what skills they have, wants their skill library inventoried or mapped, or before planning a multi-skill effort with ops-plan when no fresh roster exists. Not for questions about how a single skill works, or about the agent host's own features.",
+      "source_sha256": "c1f6a0784bc75f302710cc44f78ee3812f1716f2873466814aa79171915a5baa",
+      "source_path": "skills/ops-recon/SKILL.md",
+      "package_sha256": "2ca9bf9a166945b7ac10a4d38b9d7db338786dff67ce85c892404b19a56af671",
+      "source_package": "ops-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b16ef745ea5b1f6fcec74d3dd5974942d713435e3f7be3a8edabd3be63d04fe": {
+      "description_zh": "按阶段执行 ops-order 的 OPORD，将各技能交给子智能体，应用预定调整规则、在人为检查点暂停并保存可恢复状态；不用于制定计划或检查人员手动执行。",
+      "source": "Executes an operations order (OPORD) from ops-order phase by phase — launching each skill as a subagent, applying its pre-committed adaptation rules, stopping at operator checkpoints, and keeping resumable state. Use when the operator wants an OPORD executed, asks to run or resume the plan, or wants to start from a given phase. Not for producing the plan (ops-plan, ops-order), for monitoring skills the operator runs by hand (ops-assess), or for running a single skill directly.",
+      "source_sha256": "0b16ef745ea5b1f6fcec74d3dd5974942d713435e3f7be3a8edabd3be63d04fe",
+      "source_path": "skills/ops-run/SKILL.md",
+      "package_sha256": "2ca9bf9a166945b7ac10a4d38b9d7db338786dff67ce85c892404b19a56af671",
+      "source_package": "ops-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "590941b011921f86a4847fb63e4452266d1afc8e9ec52c9695d008ddd620de3c": {
+      "description_zh": "针对真实代码库开展风险导向架构分析，检查系统设计、认证路由、失败模式和技术权衡，并生成架构图。",
+      "source": "Risk-focused architecture analysis that unearths deep insights specific to the codebase. Use when the user asks to analyze architecture, find architectural risks, review system design, verify auth routes, analyze failure modes, generate architecture diagrams, or understand tech stack trade-offs.",
+      "source_sha256": "590941b011921f86a4847fb63e4452266d1afc8e9ec52c9695d008ddd620de3c",
+      "source_path": "skills/architecture-analyze/SKILL.md",
+      "package_sha256": "f2b0bc0b83cffb9b4271b024625791127adff0f3dd4bd67a0e54f900b05c3b41",
+      "source_package": "Opsera DevSecOps-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a5beb472369280421a0a42a7a13744634430e1ba5714bcc7c0b5d5a7531127cc": {
+      "description_zh": "依据证据开展 SOC2、HIPAA、PCI-DSS 和 ISO 27001 合规审计，评估准备度、控制缺口、认证要求和审计材料。",
+      "source": "Evidence-based compliance auditing for SOC2, HIPAA, PCI-DSS, and ISO 27001 frameworks. Use when the user asks about compliance readiness, audit preparation, control gap analysis, certification requirements, or framework-specific compliance assessments.",
+      "source_sha256": "a5beb472369280421a0a42a7a13744634430e1ba5714bcc7c0b5d5a7531127cc",
+      "source_path": "skills/compliance-audit/SKILL.md",
+      "package_sha256": "f2b0bc0b83cffb9b4271b024625791127adff0f3dd4bd67a0e54f900b05c3b41",
+      "source_package": "Opsera DevSecOps-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "699e5a958c191268bd33cd7b44e520aba630a062f47f31b08b3c0d1a5285e594": {
+      "description_zh": "在 Git 提交前用 Opsera 扫描全仓库，把发现区分为暂存新增与已有问题，仅在暂存修改存在严重或高风险问题时阻止提交。",
+      "source": "Automatic security scan triggered before git commits. Runs the Opsera security scan tool against the entire repo, categorizes findings into new (staged) vs existing, and blocks commits only if staged changes have critical/high issues.",
+      "source_sha256": "699e5a958c191268bd33cd7b44e520aba630a062f47f31b08b3c0d1a5285e594",
+      "source_path": "skills/pre-commit-scan/SKILL.md",
+      "package_sha256": "f2b0bc0b83cffb9b4271b024625791127adff0f3dd4bd67a0e54f900b05c3b41",
+      "source_package": "Opsera DevSecOps-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6df7cf3a4a7ade1599ad9b1d87716bfd78f1fba3e7df3e16f0c1b59dca900627": {
+      "description_zh": "扫描漏洞、秘密、SAST、容器和基础设施代码安全问题，用于代码及环境的技术安全检查。",
+      "source": "Technical security scanning for vulnerabilities, secrets, SAST, container security, and infrastructure-as-code issues. Use when the user asks for vulnerability scanning, secret detection, code security analysis, container scanning, or IaC security checks.",
+      "source_sha256": "6df7cf3a4a7ade1599ad9b1d87716bfd78f1fba3e7df3e16f0c1b59dca900627",
+      "source_path": "skills/security-scan/SKILL.md",
+      "package_sha256": "f2b0bc0b83cffb9b4271b024625791127adff0f3dd4bd67a0e54f900b05c3b41",
+      "source_package": "Opsera DevSecOps-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50ceedbd6b0e564179a76eb92624adc9d12539ed9e83ae92f380b40b9ddd5ca2": {
+      "description_zh": "对 Databricks 或一般 SQL 开展 AI 安全扫描和自动修复，检查注入、数据库个人信息、合规及权限。",
+      "source": "AI-powered SQL security scanning and auto-fix for Databricks and general SQL. Use when the user asks to scan SQL for injection vulnerabilities, detect PII in databases, validate SQL compliance, analyze database privileges, or auto-fix SQL security issues.",
+      "source_sha256": "50ceedbd6b0e564179a76eb92624adc9d12539ed9e83ae92f380b40b9ddd5ca2",
+      "source_path": "skills/sql-security/SKILL.md",
+      "package_sha256": "f2b0bc0b83cffb9b4271b024625791127adff0f3dd4bd67a0e54f900b05c3b41",
+      "source_package": "Opsera DevSecOps-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fc41d97ac61746458b8b2f2de17cee1d99999b3bead082f3f8fe02bd6592e5ac": {
+      "description_zh": "用 Optibot 进行代码差异、分支和改动审阅，管理认证或 API key，支持通过 optibot setup ci 接入 GitHub Actions、GitLab CI 和 Jenkins。",
+      "source": "Run AI code reviews with Optibot. Use when the user wants to review code changes, compare branches, review diffs, manage authentication or API keys, or set up Optibot in CI/CD (GitHub Actions, GitLab CI, Jenkins). For CI/CD requests, route through `optibot setup ci`.",
+      "source_sha256": "fc41d97ac61746458b8b2f2de17cee1d99999b3bead082f3f8fe02bd6592e5ac",
+      "source_path": "skills/optibot/SKILL.md",
+      "package_sha256": "0ef842d919c37479f98c539e9496607fe43136e11bb736d2d1162646a5db782a",
+      "source_package": "Optibot-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f242a57901d09c9ec2c91423ea00c29d7c23f0fa1b04a4c88c7f7597e38e7833": {
+      "description_zh": "按 Optise 的引用率、显著度和竞品差异三个指标，为品牌建立每周 AI 搜索引用跟踪，生成 CSV、评分公式和周计划；至少四周后分析提示词效果，仅做前瞻跟踪，不编造历史数据。",
+      "source": "Sets up weekly AEO citation tracking for a brand across ChatGPT, Perplexity, Gemini, and Claude using the proprietary Optise 3-KPI rubric (Citation Rate, Prominence, Competitor Delta). Generates CSV column spec, week-1 instructions, weekly cadence checklist, and scoring formulas. Analyzes tracking data after 4+ weeks to surface working prompts, dead prompts, and recommend refreshes. Use when the user wants to track AI search citations, set up AEO measurement, analyze tracker data, or understand which prompts are converting in AI engines. Never invents historical citation data — tracking is forward-looking only. Authored by Optise + Helix GTM Consulting.",
+      "source_sha256": "f242a57901d09c9ec2c91423ea00c29d7c23f0fa1b04a4c88c7f7597e38e7833",
+      "source_path": "skills/optise-helix-aeo-tracker/SKILL.md",
+      "package_sha256": "9e5d08ad951095ab0a3f3a7e5d10e733cad391c2f087a4d67a54de552017b008",
+      "source_package": "Optise and Helix AEO and GEO Toolkit-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0072b29740f3ac2713d729ab2e87414a3c9b32c9c75696f903e2064400048c10": {
+      "description_zh": "按买方问题类型为 B2B 页面写可提取引用的 BLUF 答案块，提供 40、50、60 词版本，匹配已有语气并标记问题过宽的情况，避免营销夸张。",
+      "source": "Writes a 40-60 word Bottom Line Up Front (BLUF) answer block for a B2B webpage that AI search engines (ChatGPT, Perplexity, Gemini, Claude) can extract and cite. Uses 6 proprietary Optise patterns matched to the buyer's prompt type, produces 3 length variants (40/50/60 words), matches the page's existing voice when a sample is provided, and flags when a prompt is too broad for a 40-60 word answer. Use whenever the user asks for a BLUF, answer block, AI-citable introduction, page opener for AEO, or needs help rewriting an existing intro to be citation-ready. Never generates marketing language or superlatives. Authored by Optise + Helix GTM Consulting.",
+      "source_sha256": "0072b29740f3ac2713d729ab2e87414a3c9b32c9c75696f903e2064400048c10",
+      "source_path": "skills/optise-helix-bluf-writer/SKILL.md",
+      "package_sha256": "9e5d08ad951095ab0a3f3a7e5d10e733cad391c2f087a4d67a54de552017b008",
+      "source_package": "Optise and Helix AEO and GEO Toolkit-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5694afe4f144a6e243d55beadabd192e309a1c5d06f918f1d931db1b444a984c": {
+      "description_zh": "起草审阅欧盟 Trust Centre 页面，覆盖 GDPR、存储驻留、DPA、分包商、收集保留、第三方 AI 和安全标准等八类买方问题，包含答案块、JSON-LD 与 DPA 入口；不编造驻留、认证或分包商。",
+      "source": "Generates a complete EU Trust Centre page that answers the 8 canonical EU buyer questions (GDPR compliance, data storage, residency, DPA, subprocessors, data collection and retention, third-party AI providers, security standards). Produces the full page in extractable format with BLUF, answer blocks, JSON-LD schema, and a DPA request CTA. Uses proprietary Optise answer ordering (Q1→Q2→Q3→Q8→Q4→Q5→Q6→Q7) optimized for European procurement review flows. Use whenever the user needs to draft, audit, or expand a Trust Centre page, trust portal, GDPR FAQ, security centre, or any page answering EU compliance questions. Never invents data residency, certifications, or subprocessors. Authored by Optise + Helix GTM Consulting.",
+      "source_sha256": "5694afe4f144a6e243d55beadabd192e309a1c5d06f918f1d931db1b444a984c",
+      "source_path": "skills/optise-helix-eu-trust-centre/SKILL.md",
+      "package_sha256": "9e5d08ad951095ab0a3f3a7e5d10e733cad391c2f087a4d67a54de552017b008",
+      "source_package": "Optise and Helix AEO and GEO Toolkit-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f82b8fb07930fabb584e0379ed91266a58450dcaeddee34d0783da0422f27f0f": {
+      "description_zh": "抓取渲染后的 B2B 页面，按 Optise FITq 的可发现性、意图匹配、信任和可引用性评估 AI 引用准备度，给出总分 100 的四信号卡、五项优先修复和首项前后差异。",
+      "source": "Audits a B2B webpage against the proprietary Optise FITq™ framework (Findability, Intent match, Trust, Quoteability) to determine AI search citation readiness for ChatGPT, Perplexity, Gemini, and Claude. Fetches the URL, analyzes rendered HTML, and returns specific fixes ranked by impact — not generic best practices. Use whenever the user asks for an AEO audit, FITq audit, AI visibility check, ChatGPT citation readiness check, or wants to know why their page isn't being cited by AI engines, including URL audit requests related to AI search visibility. Returns a 4-signal scorecard (0-100 total), top 5 fixes ranked by impact, and a before/after diff for the highest-priority fix. Authored by Optise + Helix GTM Consulting under the Optise EU AEO Playbook methodology.",
+      "source_sha256": "f82b8fb07930fabb584e0379ed91266a58450dcaeddee34d0783da0422f27f0f",
+      "source_path": "skills/optise-helix-fitq-audit/SKILL.md",
+      "package_sha256": "9e5d08ad951095ab0a3f3a7e5d10e733cad391c2f087a4d67a54de552017b008",
+      "source_package": "Optise and Helix AEO and GEO Toolkit-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0bb0d93ad22692fe5ef972762bd3cb53f2f2e1cddf38ea471c043bd715a8f493": {
+      "description_zh": "为欧洲 B2B 公司生成 25 条 AEO 买方提示词，按入围、定价、实施、隐私、集成和角色六类及成交影响排序，输出 Markdown 表和前十项建设顺序。",
+      "source": "Build a 25-prompt AEO pack for a B2B company in Europe, ranked by \"decides deals\" likelihood across the six Optise categories (shortlist, pricing, implementation, EU privacy, integrations, role-based). Use whenever someone asks for AEO prompts, AI search prompts, ChatGPT prompts buyers use, prompt research, prompt pack, shortlist prompts, or wants to know what European B2B buyers ask AI engines about a category, including \"what should we rank for in ChatGPT\" or \"what do buyers ask AI about us\" type questions. Returns a ranked markdown table plus a top-10 build order. Authored by Optise + Helix GTM Consulting under the Optise EU AEO Playbook methodology.",
+      "source_sha256": "0bb0d93ad22692fe5ef972762bd3cb53f2f2e1cddf38ea471c043bd715a8f493",
+      "source_path": "skills/optise-helix-prompt-pack-builder/SKILL.md",
+      "package_sha256": "9e5d08ad951095ab0a3f3a7e5d10e733cad391c2f087a4d67a54de552017b008",
+      "source_package": "Optise and Helix AEO and GEO Toolkit-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87b06e1a737a3b7b3ffd17ddc51e467a49bf428a250d8b8c9c1881003ab7f037": {
+      "description_zh": "按 Optise RACE 的需求、动作、约束和证据审阅 B2B 页面的智能体可读性，给出四信号评分、五项修复、不适用场景模板及首项前后差异；与 FITq 引用评估不同。",
+      "source": "Audits a B2B webpage against the proprietary Optise RACE™ framework (Requirements, Actions, Constraints, Evidence) to determine AI agent evaluation readiness — how well AI agents running multi-step buyer workflows can evaluate, recommend, or shortlist this page. Distinct from FITq (which scores AI search citation readiness) — RACE scores agent-readability. Fetches the URL, analyzes rendered HTML, and returns ranked fixes. Use when the user asks for a RACE audit, agent-readiness audit, AI agent evaluation check, or wants to know if AI agents will recommend their page. Returns a 4-signal scorecard (0-100), top 5 fixes, a \"not ideal for\" template if that signal is weak, and a before/after diff for the highest-priority fix. Authored by Optise + Helix GTM Consulting under the Optise EU AEO Playbook methodology.",
+      "source_sha256": "87b06e1a737a3b7b3ffd17ddc51e467a49bf428a250d8b8c9c1881003ab7f037",
+      "source_path": "skills/optise-helix-race-audit/SKILL.md",
+      "package_sha256": "9e5d08ad951095ab0a3f3a7e5d10e733cad391c2f087a4d67a54de552017b008",
+      "source_package": "Optise and Helix AEO and GEO Toolkit-1.4.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "441beacec81cca99088b7573f7a80fd45f742469d7739b0bcc120ad45fe0e431": {
+      "description_zh": "以 YAML 定义批流流水线的收敛验收契约，仅在连续 K 个查询窗口结果为零时判通过，适用于流式任务、缓慢回填和待处理队列清空验证。",
+      "source": "YAML-driven acceptance contract for batch and streaming pipelines that need convergence verification, not just \"no exceptions\". Declares PASS only after K consecutive zero-result windows (consecutive-zero-window convergence). Use for streaming jobs, slowly-draining backfills, or any pipeline whose success is \"the pending queue is empty\".",
+      "source_sha256": "441beacec81cca99088b7573f7a80fd45f742469d7739b0bcc120ad45fe0e431",
+      "source_path": "skills/aidp-acceptance-contract/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf35fa47a7aa81c48143a2c0f08e99497a2a393968a7009daddad1f61c2c7254": {
+      "description_zh": "配置迁移中的 S3 到 OCI bucket/namespace 映射，用于外部表文件路径重写、数据可用性缺映射错误和 DDL bucket 警告。",
+      "source": "Configure the s3:// → oci:// bucket / namespace mapping the migrator uses to rewrite paths during notebook + catalog migration. Use when (a) the user has external tables / files at s3:// paths that need to land on OCI Object Storage, OR (b) check_data_availability reports \"S3 bucket X not found in OCI bucket mapping\", OR (c) DDL rewriter logs a missing-bucket warning.",
+      "source_sha256": "bf35fa47a7aa81c48143a2c0f08e99497a2a393968a7009daddad1f61c2c7254",
+      "source_path": "skills/aidp-bucket-mapping/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1a30ab01637439fd846ffb99df34d88da13a2ee8fecf84f8509f38d24b088528": {
+      "description_zh": "从 Databricks 工作区路径或 workflow ID 建立执行 DAG，追踪 %run 和 dbutils.notebook.run 依赖，生成 reports/<job>_manifest.json 供迁移技能使用。",
+      "source": "Build a migration manifest (the execution DAG) from a Databricks workspace path or workflow ID. Walks %run dependency chains, captures dbutils.notebook.run invocations, and emits reports/<job>_manifest.json — the input every other execute-skill consumes. Use when the user wants to see what would migrate, or before invoking aidp-migrate-job for the first time on a new workload.",
+      "source_sha256": "1a30ab01637439fd846ffb99df34d88da13a2ee8fecf84f8509f38d24b088528",
+      "source_path": "skills/aidp-build-dag/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec3080163b035615b5d58cd26a8ccdf4c03338f32aa4129c8612a3d9769c1e26": {
+      "description_zh": "在迁移前扫描 manifest 中 notebook 的表、Parquet 和 saveAsTable 引用，探测 AIDP 目标 schema、表和路径是否存在，先于实际集群执行检查数据可用性。",
+      "source": "Pre-migration data-availability scan. Reads every notebook in a migration manifest, extracts every spark.read.table / spark.read.parquet / saveAsTable reference, and probes whether each target schema/table/path exists on the AIDP cluster BEFORE you spend Pass-2 cluster time. Use after aidp-build-dag and before aidp-migrate-job, especially the first time you migrate against a target environment.",
+      "source_sha256": "ec3080163b035615b5d58cd26a8ccdf4c03338f32aa4129c8612a3d9769c1e26",
+      "source_path": "skills/aidp-check-data/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b6d4851eca2b249579c1f370d9bbcdd3e862d88f7804013ca7e3ed9108ac61a": {
+      "description_zh": "对迁移后 PARTIAL 或指定错误 cell 从历史索引或范围重新执行，注入修复原因并循环执行、验证及修正。",
+      "source": "Targeted rewind of a migrated notebook. Re-executes cells from history index N onwards (or a specific cell range) through the execute+verify+fix loop, with a 'why' reason injected so Claude knows what to fix. Use when aidp-migrate-job left a notebook at RESULT=PARTIAL or the user identifies a specific cell that is wrong post-migration.",
+      "source_sha256": "2b6d4851eca2b249579c1f370d9bbcdd3e862d88f7804013ca7e3ed9108ac61a",
+      "source_path": "skills/aidp-fixup-cell/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b1ea9a0699be6cb9342081ad7af7ae853163baac29bc4d37924ccf955e47733": {
+      "description_zh": "将 Databricks Unity Catalog/HMS schema 与表迁入 AIDP，提取重写再批量重放 DDL，应用三段名扁平化、S3/OCI 映射、格式保留及属性清理，拒绝 MV/streaming；先于 notebook 迁移创建 schema。",
+      "source": "Migrate Databricks Unity Catalog / HMS schemas + tables onto AIDP. Two-stage extract→rewrite→replay pipeline. The rewriter applies 18 DDL rules (3-part→2-part flatten, s3://→oci:// via bucket-map, source-format preserved (Delta stays Delta) with delta.* property scrub, MV/streaming rejection, CREATE SCHEMA COMMENT-colon strip). Batched single-WebSocket DDL replay works around AIDP's per-statement-discard quirk. Use BEFORE aidp-migrate-job — schemas must exist before notebook reads.",
+      "source_sha256": "7b1ea9a0699be6cb9342081ad7af7ae853163baac29bc4d37924ccf955e47733",
+      "source_path": "skills/aidp-migrate-catalog/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28c43bc04223bc01d66c4094c41857fb4c6f4b1ffaca49f249d7cb139b6f5330": {
+      "description_zh": "根据 manifest 完整迁移 Databricks 至 AIDP：先重写依赖 notebook API，再在真实集群逐 cell 执行，检查错误、stderr、Spark 日志及 Opus 评价，最多重试十次；原说明每任务通常需 10 至 60 分钟。",
+      "source": "Run the full Databricks→AIDP migration against a manifest. Pass-1 walks the %run dep tree and rewrites Databricks APIs in each dep notebook code-only. Pass-2 executes each task cell-by-cell on a live AIDP cluster, runs 4-way verify (exec error / stderr patterns / Spark logs / Opus eval), and re-attempts up to 10 times via Claude with tool use. Use when the user is ready to actually port the workload (not just plan it). Long-running — typical job takes 10–60 minutes per task depending on cell count.",
+      "source_sha256": "28c43bc04223bc01d66c4094c41857fb4c6f4b1ffaca49f249d7cb139b6f5330",
+      "source_path": "skills/aidp-migrate-job/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2d927f445b5973b6a3bb812830442cc3af1da72bc536a08820e02626b7a178b1": {
+      "description_zh": "检查 Oracle AIDP 迁移环境的 Python 依赖、OCI 认证、集群连接和 env-coords 文件，适用于首次使用或认证连接故障。",
+      "source": "One-shot environment readiness check for the Oracle AIDP Databricks migrator. Verifies Python deps, OCI auth, AIDP cluster reachability, and your env-coords file. Use the first time the user invokes the migrator on a workstation, or when any other skill fails with an auth / connectivity error.",
+      "source_sha256": "2d927f445b5973b6a3bb812830442cc3af1da72bc536a08820e02626b7a178b1",
+      "source_path": "skills/aidp-migrator-bootstrap/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "699e0412e662504dca4c151d4e5b0fb36e5840a107cbf9521076711436283c98": {
+      "description_zh": "作为 Databricks notebook、作业、目录和调度迁入 Oracle AIDP 的入口，介绍工具、两遍迁移架构及各阶段子技能，不新增 API。",
+      "source": "Router skill. Read this first whenever the user mentions migrating a Databricks workload (notebooks, jobs, catalogs, schedules) onto Oracle AI Data Platform (AIDP). Lays out the toolkit, the two-pass migration architecture, and which of the other aidp-* skills handles each phase. Compose those skills; this one adds no API surface.",
+      "source_sha256": "699e0412e662504dca4c151d4e5b0fb36e5840a107cbf9521076711436283c98",
+      "source_path": "skills/aidp-migrator-overview/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff62d2dab4ce662c2529c1a83d5bf296ea9600de4a858cf29b738ecd4b4f420f": {
+      "description_zh": "利用内存及集群缓存跳过已迁移 notebook，恢复因中断、重启、网络或手动修复依赖而暂停的 AIDP 迁移。",
+      "source": "Resume an interrupted migration. The migrator caches already-migrated notebooks (in-memory + on-cluster) so subsequent runs skip them. Use when a prior aidp-migrate-job run was killed mid-flight (Ctrl-C, cluster restart, network drop) or when resuming after a manual fix to a specific dep notebook.",
+      "source_sha256": "ff62d2dab4ce662c2529c1a83d5bf296ea9600de4a858cf29b738ecd4b4f420f",
+      "source_path": "skills/aidp-resume-migration/SKILL.md",
+      "package_sha256": "0a30123044c8e8a4dc362240427e692ae608f2c646e97bcb75592c2df813b8ab",
+      "source_package": "Oracle AI Data Platform Workbench Databricks Migrator-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8517725520a7d5b5d2125224d9fdc1398895dd2eeb3cb0fafa6497f86629019d": {
+      "description_zh": "通过原说明的 Limited-Availability AgentFlows REST API 创建、检查、部署运行 AIDP flow，管理会话、guardrail、计算和外连 MCP_TOOL；先实时核验，MCP 列表工具只作为可选读取加速。",
+      "source": "Discover, author, deploy, and run AIDP agent flows. Use when the user wants to list/inspect agent flows, or create/update/deploy/run a flow, manage sessions/guardrails, attach compute, or attach a remote MCP server to a flow (an MCP_TOOL node — AIDP's \"Native MCP Client Support\" LA feature, where the flow connects OUT to OAC/ADW/OIC/any MCP-compatible service). Everything runs over the Limited-Availability AgentFlows REST API via `oci raw-request`; verify live first. (An `aidp` MCP `list_agent_flows`, if configured, is an optional read accelerator only.)",
+      "source_sha256": "8517725520a7d5b5d2125224d9fdc1398895dd2eeb3cb0fafa6497f86629019d",
+      "source_path": "skills/aidp-agent-flows/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f30da72d53d72f7b4a0271e0b8c4286d949758f31d331ef6880920ae708d049": {
+      "description_zh": "用 aidputils 和 LangGraph 的 Python 代码构建 AIDP 智能体、自定义或多智能体 supervisor，支持模型和工具配置；低代码节点图使用 aidp-agent-flows。",
+      "source": "Build AIDP agents in high-code Python with aidputils + LangGraph (the code-first alternative to the low-code agent-flow canvas). Use when the user wants to write an agent in Python, use LangGraph / create_react_agent / StateGraph, call aidputils (OCIAIConf, AIDPToolConf, init_oci_llm, create_langgraph_tool), build a custom or multi-agent supervisor flow in code, or asks \"how do I code an AIDP agent\". For the low-code/REST node-graph path use aidp-agent-flows.",
+      "source_sha256": "3f30da72d53d72f7b4a0271e0b8c4286d949758f31d331ef6880920ae708d049",
+      "source_path": "skills/aidp-agent-highcode/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05a161baef72c812fb6e71959450ec9893bb75d0e77a00dcc3e61a4526874668": {
+      "description_zh": "在 AIDP Spark SQL 中使用 ai_generate 调用 LLM，对行做摘要、分类、提取、丰富及聚合叙述或有依据 RAG；原说明模型参数在前，可用模型需实时确认。",
+      "source": "Run LLM functions inside Spark SQL on AIDP via ai_generate(). Use when the user wants to summarize/classify/extract/enrich rows with an LLM directly in SQL, generate narratives over aggregated results, or do grounded RAG-style analysis in the lakehouse. Signature is model-first; available models must be confirmed live before relying on it.",
+      "source_sha256": "05a161baef72c812fb6e71959450ec9893bb75d0e77a00dcc3e61a4526874668",
+      "source_path": "skills/aidp-ai-sql/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "04637c3e372b5ad103b990c07804fa0a5c58c9e715631b738790e8c3772b92dd": {
+      "description_zh": "依据 .aidp/catalog.md 和 semantic.md、优先复用已验证查询，用 Spark SQL 回答 AIDP 湖仓的数量、排名、趋势和收入等业务问题，并通过 aidp_sql.py 执行。",
+      "source": "Answer business questions over the AIDP lakehouse with Spark SQL. Use when the user asks a data question (\"how many…\", \"top N…\", \"show me…\", \"trend of…\", \"revenue by…\") or wants to run ad-hoc Spark SQL. Grounds in .aidp/catalog.md + .aidp/semantic.md and reuses validated verified queries before generating SQL, then executes via the bundled aidp_sql.py helper.",
+      "source_sha256": "04637c3e372b5ad103b990c07804fa0a5c58c9e715631b738790e8c3772b92dd",
+      "source_path": "skills/aidp-analyzing-data/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "069c98d9ade999762e61e92feae4266d2516c32e573e949f348d82df0e9f7199": {
+      "description_zh": "启停 AIDP 审计、设置保留期和查询 DataLake 活动日志，查明操作及合规记录；优先官方 aidp audit CLI，raw-request 回退。",
+      "source": "Manage and search AIDP audit logs — enable/disable auditing, set retention, and query audit-log entries for a DataLake. Use when the user asks about audit logging, who did what, compliance/retention of AIDP activity, or wants to search audit events. Self-contained — official `aidp audit` CLI preferred, `oci raw-request` fallback.",
+      "source_sha256": "069c98d9ade999762e61e92feae4266d2516c32e573e949f348d82df0e9f7199",
+      "source_path": "skills/aidp-audit/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec76aff6b19d4375487786703eb5b3b6a263b5168b949f805ee581639ddd6fe4": {
+      "description_zh": "将 AIDP 资源作为 bundle 创建、原子部署、查询状态和清理，用于资源组晋级发布；原说明为 Preview API，使用前实时确认。",
+      "source": "Deploy AIDP resources as a bundle — create a bundle, deploy all its assets atomically, query deployment status, and purge. Use when the user wants to promote/deploy a set of AIDP resources together, manage a deployment bundle, check bundle deployment status, or tear one down. Preview API via `oci raw-request`; verify live first.",
+      "source_sha256": "ec76aff6b19d4375487786703eb5b3b6a263b5168b949f805ee581639ddd6fe4",
+      "source_path": "skills/aidp-bundle/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "df9c941a297a15b59e36c819973f4aade597d476909474efbff61c2efb371a75": {
+      "description_zh": "实时浏览 AIDP catalog、schema、表和 volume，检查列属性并把用户名称解析为目录键，为其他操作确定对象。",
+      "source": "Browse the AIDP data catalog live — list catalogs, schemas, tables, and volumes, inspect a table's columns/properties, and resolve a human name to its catalog key. Use when the user asks \"what catalogs/schemas/tables exist\", \"describe table X\", \"what columns does Y have\", or needs a catalog/schema/table key for another operation.",
+      "source_sha256": "df9c941a297a15b59e36c819973f4aade597d476909474efbff61c2efb371a75",
+      "source_path": "skills/aidp-catalog-explore/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc908adff7aaace705f77f03eb93e5110dcba36617a80e418e348c5491778ea6": {
+      "description_zh": "首次发现 AIDP 数据目录，将表、字段、外键或关联提示及取值字典写入可版本管理的 .aidp/catalog.md 缓存。适用于初始化湖仓地图、配置数据发现或问数前尚无目录缓存的场景；结构变化后用 --refresh 更新。",
+      "source": "One-time AIDP catalog discovery that writes a cached, version-controllable .aidp/catalog.md grounding file (tables, columns, FK/join hints, value dictionaries). Use when the user says \"/aidp-catalog-init\", asks to \"map/discover my lakehouse\", set up data discovery, or before answering data questions when no catalog cache exists. Re-run with --refresh when the schema changes.",
+      "source_sha256": "cc908adff7aaace705f77f03eb93e5110dcba36617a80e418e348c5491778ea6",
+      "source_path": "skills/aidp-catalog-init/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91d753d43f0fb2560c6948ffcf7a7cfaefaa0512286524bd2b94c996463ea216": {
+      "description_zh": "管理 AIDP Spark 计算集群的清单、状态、启停、重启和 JAR/Python 库，并配置新集群规格、扩缩容、GPU/RAPIDS 与 AI Compute。适用于运行数据任务前选择集群，或通过 JDBC/ODBC 连接 Tableau、Power BI、DBeaver 等工具。",
+      "source": "Manage AIDP Spark compute clusters — list, status, start/stop/restart, installed libraries (JARs/Python), provision/scale a new cluster (driver/worker shapes, autoscale, GPU/RAPIDS, AI Compute), and connect external BI tools (JDBC/ODBC). Use when the user asks about clusters, needs to start/stop compute, create or scale a cluster, install libraries, set up a GPU cluster, use AI Compute for agent flows, connect Tableau/Power BI/DBeaver, or pick a cluster before running data work.",
+      "source_sha256": "91d753d43f0fb2560c6948ffcf7a7cfaefaa0512286524bd2b94c996463ea216",
+      "source_path": "skills/aidp-cluster-ops/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "210c3b62790f5cd35c6233cfee318bcdb58d35aeeb116b25173f3e1570be6158": {
+      "description_zh": "管理 AIDP 工作流使用的集中凭据库，支持查看、新建、更新、轮换和删除秘密或连接凭据。优先使用官方 aidp credentials CLI，无 CLI 时采用 oci raw-request 调用同一预览 REST API；依赖端点前需实时验证。",
+      "source": "Manage the AIDP credential store (secrets) — list, get, create, update, delete credentials used by AIDP workflows. Use when the user wants to store/rotate a secret centrally instead of embedding it, or manage connection credentials. Primary engine is the official `aidp` CLI (`aidp credentials …`); the same Preview REST API via `oci raw-request` is the no-CLI fallback. Verify the endpoint live before relying on it.",
+      "source_sha256": "210c3b62790f5cd35c6233cfee318bcdb58d35aeeb116b25173f3e1570be6158",
+      "source_path": "skills/aidp-credentials/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "527d74ac89dec502190982f18d658c0d5d23e5fa657c7cb1dcb655127a962718": {
+      "description_zh": "用有界 Spark SQL 检查 AIDP 表的非空、唯一性、允许范围或集合、引用完整性与新鲜度，报告通过或失败及违规记录数。适用于发现空值、重复、孤立记录、字段域异常，或设置流水线质量门槛。",
+      "source": "Run data-quality rule checks on AIDP tables — not-null, uniqueness, allowed ranges/sets, referential integrity, and freshness. Use when the user wants to validate data, check for nulls/duplicates/orphans, assert a column's domain, or gate a pipeline on quality. Expresses each rule as bounded Spark SQL and reports pass/fail with offending counts.",
+      "source_sha256": "527d74ac89dec502190982f18d658c0d5d23e5fa657c7cb1dcb655127a962718",
+      "source_path": "skills/aidp-data-quality/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f38c0bf64b02323c79250749950180e23a6bd3fcbe946a5bb6d07df53383772": {
+      "description_zh": "通过 Delta Sharing 创建和管理 AIDP 数据共享，添加数据资产、维护接收方、授予权限并管理令牌有效期。适用于跨团队或组织共享表和模式；优先使用官方 aidp delta-share CLI，无 CLI 时调用同一 GA REST API。",
+      "source": "Share AIDP data via Delta Sharing — create/manage shares, add data assets, manage recipients, and grant access/permissions. Use when the user wants to share a table/schema with another team or org, set up Delta Sharing, manage recipients, or control share permissions/token expiry. Primary engine is the official `aidp` CLI (`aidp delta-share …`); the same GA REST API via `oci raw-request` is the no-CLI fallback.",
+      "source_sha256": "7f38c0bf64b02323c79250749950180e23a6bd3fcbe946a5bb6d07df53383772",
+      "source_path": "skills/aidp-data-sharing/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b66c51f2e347b60269c72ff1e2282b575aedcb000387cb95d147b2dc8ad78c48": {
+      "description_zh": "完成自包含 AIDP 插件的首次配置：验证 OCI CLI 和 DEFAULT api_key 配置，安装包内 Python 依赖，发现区域、DataLake OCID 与工作区，再分别测试控制面的 GET /catalogs 和 SQL 的 SELECT 1。适用于初次安装或认证、配置故障；原说明称无需安装 MCP。",
+      "source": "First-run setup for the self-contained AIDP plugin. Verifies the oci CLI + a DEFAULT api_key profile, installs the bundled Python deps, discovers region + DataLake OCID + workspace, then smoke-tests both engines (a control-plane GET /catalogs via oci raw-request and a trivial SELECT 1 cell via scripts/aidp_sql.py). Use on first run, when the user asks to \"set up / configure / install / bootstrap AIDP\", or when control-plane or SQL calls fail with auth/config errors. No MCP install required.",
+      "source_sha256": "b66c51f2e347b60269c72ff1e2282b575aedcb000387cb95d147b2dc8ad78c48",
+      "source_path": "skills/aidp-engineer-bootstrap/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1950194dad4c7df0d98cca6c42e1720fc79861df979a8f83f2e2e37424d9756": {
+      "description_zh": "为 Oracle AIDP 数据工程任务选择对应 aidp-* 技能，并处理公共环境、认证、工作区或集群配置问题。适用于了解 AIDP 能力、按任务描述寻找入口，或排查设置与认证错误。",
+      "source": "Router + setup/auth troubleshooting for Oracle AI Data Platform (AIDP) data-engineering work. Use when the user mentions AIDP and isn't sure which skill applies, asks \"what can you do with AIDP\", describes a task by capability, or hits an AIDP auth/workspace/cluster error. Routes to the right aidp-* skill and carries the shared environment + auth-ladder rules.",
+      "source_sha256": "e1950194dad4c7df0d98cca6c42e1720fc79861df979a8f83f2e2e37424d9756",
+      "source_path": "skills/aidp-engineer-overview/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc5ea907272c1939092f2545ae7e9d42d51482c7fba18d2c31fd8880947cd1fa": {
+      "description_zh": "在同一 AIDP Spark 会话或笔记本中组合多个来源的数据，例如 Oracle ADB/ExaCS、Fusion、Snowflake、S3 和湖仓表，并进行跨来源关联分析。复用 spark-connectors 插件提供的连接器，不另行复制连接器实现。",
+      "source": "Federate across multiple data sources in one AIDP Spark session — read from several connectors (Oracle ADB/ExaCS, Fusion, Snowflake, S3, lakehouse tables, …) and join them in a single notebook. Use when the user wants to combine/join data from more than one source, blend an external system with the lakehouse, or do cross-source analysis. Composes the spark-connectors plugin; does not duplicate connectors.",
+      "source_sha256": "dc5ea907272c1939092f2545ae7e9d42d51482c7fba18d2c31fd8880947cd1fa",
+      "source_path": "skills/aidp-federate/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dce88a853bc1804e2d87b73cc89c4c4667450d2965fd91c8493beb37bf1b7321": {
+      "description_zh": "在 AIDP 工作区原生 Git 仓库中管理分支、检出、提交、推送、拉取、合并、变基、重置、差异及冲突。适用于对工作区笔记本和代码做版本管理；通过 oci raw-request 使用预览 GitService API，须先实时验证。",
+      "source": "Operate native Git in an AIDP workspace — branches, checkout, commit/push, pull, merge, rebase, reset, diff, and conflict resolution on workspace git repositories. Use when the user wants to version workspace notebooks/code in Git, manage branches, commit/push changes, or resolve conflicts inside AIDP. Preview GitService API via `oci raw-request`; verify live first.",
+      "source_sha256": "dce88a853bc1804e2d87b73cc89c4c4667450d2965fd91c8493beb37bf1b7321",
+      "source_path": "skills/aidp-git/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "839ebff306aa197d5545ef754082e704de1c0cb319e54fd84c0260f56ef0f29d": {
+      "description_zh": "将 CSV、JSON、Parquet 等数据文件导入受管 AIDP Delta 表，适用于从文件建表或把原始数据落入湖仓。支持一步导入，以及上传、推断结构、建表的三步路径，控制面操作使用官方 aidp CLI。",
+      "source": "Load a data file (CSV/JSON/Parquet/etc.) into a managed AIDP Delta table. Use when the user wants to ingest a file into a table, create a table from a file, or land raw data in the lakehouse. Supports the 1-step path and the 3-step upload→infer→create path. Control-plane via the official `aidp` CLI.",
+      "source_sha256": "839ebff306aa197d5545ef754082e704de1c0cb319e54fd84c0260f56ef0f29d",
+      "source_path": "skills/aidp-ingest-file-to-table/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e07ef89400a92a146375a36c9c7c5d20119c217d0588c185b46eed49c2510ec4": {
+      "description_zh": "为 RAG 创建和维护 AIDP 知识库，配置嵌入模型、切块、HNSW/IVF 向量索引、卷或表数据源、摄取任务及权限。适用于文档检索、向量或语义搜索；本技能负责语料与索引，查询智能体由 aidp-agent-flows 或 aidp-agent-highcode 编写。",
+      "source": "Build and manage AIDP Knowledge Bases for RAG — create a KB over catalog data, pick an embedding model + chunking, build an HNSW/IVF vector index, add data sources (volume/table), run ingestion jobs, and manage KB permissions. Use when the user wants RAG, a knowledge base, document/vector search, embeddings, semantic retrieval, or to feed a RAG_TOOL agent-flow node. This is the corpus/index layer; the agent that queries it is authored in aidp-agent-flows (RAG_TOOL) or aidp-agent-highcode.",
+      "source_sha256": "e07ef89400a92a146375a36c9c7c5d20119c217d0588c185b46eed49c2510ec4",
+      "source_path": "skills/aidp-knowledge-bases/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4826354553f9f3b77899e33da6adc9bc6f46acfefb2f840f3d7a89057b754f1b": {
+      "description_zh": "规划并编排从 Databricks 等平台迁移笔记本和作业到 AIDP 湖仓的工作。组合其他自包含 aidp-* 技能完成迁移，不新增独立 API。",
+      "source": "Guide a migration of notebooks/jobs from another platform (e.g. Databricks) into AIDP. Use when the user wants to port Databricks notebooks/jobs to AIDP, move workloads onto the AIDP lakehouse, or plan a migration. Orchestration-only — it composes the other self-contained aidp-* skills; it adds no new API surface.",
+      "source_sha256": "4826354553f9f3b77899e33da6adc9bc6f46acfefb2f840f3d7a89057b754f1b",
+      "source_path": "skills/aidp-migration/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "54b145f5d16d02d5018475ab748622c2a48dd54d57c21e1027aea9bedf06f1f3": {
+      "description_zh": "管理 AIDP 兼容 MLflow 的实验、运行、指标、参数、注册模型和版本，支持记录实验、查询结果及转换模型版本阶段。优先使用官方 aidp mlops CLI；无 CLI 时调用预览 MLflow REST API，须先实时验证。",
+      "source": "Track ML work in AIDP's MLflow-compatible MLOps — experiments, runs, metrics/params, registered models, and model versions. Use when the user wants to log/track experiments, list runs or metrics, register a model, transition a model-version stage, or query the model registry. Primary engine is the official `aidp` CLI (`aidp mlops …`); the same Preview MLflow REST API via `oci raw-request` is the no-CLI fallback. Verify live first.",
+      "source_sha256": "54b145f5d16d02d5018475ab748622c2a48dd54d57c21e1027aea9bedf06f1f3",
+      "source_path": "skills/aidp-mlops/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1558d6287d0cc8864febde6cd46a87627df06dd10434b05b3225642f590ee74": {
+      "description_zh": "列出 AIDP DataLake 可用或已安装模型并查看参数，同时浏览 MLOps 注册模型及版本。适用于为 ai_generate() 或智能体流程选择模型名称；注册表使用官方 CLI，原说明称 LA Models 平台目录 API 已验证，可作无 CLI 的备用路径。",
+      "source": "List the models available/installed in the AIDP DataLake and inspect their parameters, and browse the MLOps model registry. Use when the user asks \"what models are available\", needs a model name for ai_generate()/agent flows, wants a model's parameters, or wants to list registered models / versions. Registry browse uses the official `aidp` CLI (folded into the `mlops` group); the LA `Models` platform-catalog API via `oci raw-request` is verified and the no-CLI fallback.",
+      "source_sha256": "e1558d6287d0cc8864febde6cd46a87627df06dd10434b05b3225642f590ee74",
+      "source_path": "skills/aidp-models-catalog/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e04b053cc95e2e3724139165be0bc5e52312cd315db659ec380b716228327634": {
+      "description_zh": "创建、编辑和执行 AIDP 笔记本，管理内核会话及其集群挂接、分离，支持结合控件、Spark SQL 和 Plotly 编写交互分析。文件操作通过 Notebook contents REST API，单元执行通过 scripts/aidp_sql.py。",
+      "source": "Create, edit, and execute AIDP notebooks and manage their kernel sessions. Use when the user wants to author a notebook, run cells/code on a cluster, attach/detach a kernel session, or build an interactive notebook (e.g. with widgets + Spark SQL + Plotly). Notebook FILE ops run via the Notebook contents REST API; CELL EXECUTION runs via scripts/aidp_sql.py.",
+      "source_sha256": "e04b053cc95e2e3724139165be0bc5e52312cd315db659ec380b716228327634",
+      "source_path": "skills/aidp-notebooks/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e9fd496ffe5656ef549f7c28dfa447f19a2a4cae0f9a95b8879f0f3646badbe": {
+      "description_zh": "通过官方 aidp CLI 查看最近访问资源和长时间异步操作的状态、完成情况或等待过程。适用于了解近期活动、正在运行的任务，或跟踪资源配置、大型提交等操作是否完成。",
+      "source": "Surface AIDP operational state — recently accessed resources and long-running async operations (status, completion, waiting). Use when the user asks \"what happened recently\", \"what's running\", \"is that operation done yet\", or needs to track/await an async AIDP operation (e.g. provisioning, large commits). Runs over the official `aidp` CLI.",
+      "source_sha256": "5e9fd496ffe5656ef549f7c28dfa447f19a2a4cae0f9a95b8879f0f3646badbe",
+      "source_path": "skills/aidp-observability/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cad616dfcac044bb8979f38ac448314e99145a7224a7e6c0444eb4d2aa2046ae": {
+      "description_zh": "编写、调度、执行和监控 AIDP Jobs，以笔记本或 Python 任务组成 DAG 并配置 cron。适用于创建或更新流水线、安排周期运行、查看运行状态和任务输出，或取消运行。",
+      "source": "Author, schedule, run, and monitor AIDP Jobs (task DAGs of notebooks/python with cron). Use when the user wants to build a pipeline, create/update/run a Job, schedule a recurring run, check a run's status, read a task's output, or cancel a run.",
+      "source_sha256": "cad616dfcac044bb8979f38ac448314e99145a7224a7e6c0444eb4d2aa2046ae",
+      "source_path": "skills/aidp-pipelines/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09869578218a385f57a9fe8f55e55e0be3465ceeb9c8502ed54febfb68aca92d": {
+      "description_zh": "用包内 aidp_sql.py 执行有界 Spark SQL，探查 AIDP 表的行数、各列空值比例、去重数、最小值、最大值、均值及高频取值。适用于使用数据前了解结构、获取字段统计或查看质量快照。",
+      "source": "Profile an AIDP table — row count, per-column null %, distinct count, min/max/mean, and top-K values. Use when the user asks to profile a table, wants column statistics or a data-quality snapshot, or needs to understand a dataset's shape before using it. Runs bounded Spark SQL via the bundled aidp_sql.py helper.",
+      "source_sha256": "09869578218a385f57a9fe8f55e55e0be3465ceeb9c8502ed54febfb68aca92d",
+      "source_path": "skills/aidp-profiling-tables/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6ef2be515d36f842960be325a973741bdbb1f6c06a4048559ad1d1bc9a6bc89": {
+      "description_zh": "管理 AIDP 角色、成员和资源权限，覆盖目录、模式、表、视图、卷、工作区、工作区对象及集群。字段遮蔽和分类通过受限视图及本体敏感级别实现，原说明明确没有遮蔽 REST API；优先用官方 CLI，必要时采用 REST 备用路径。",
+      "source": "Manage AIDP roles and access — list roles, view permissions, create roles, add/remove members, and grant/revoke per-resource permissions on catalogs, schemas, tables, views, volumes, workspaces, workspace objects, and clusters. Also covers column masking/classification (restricted views + ontology sensitivity — no masking REST API exists). Use when the user asks about roles/RBAC, who can access what, granting/revoking access on any resource, adding someone to a role, or masking/classifying columns. Primary engine is the official `aidp` CLI; the same REST API via `oci raw-request` is the no-CLI fallback.",
+      "source_sha256": "e6ef2be515d36f842960be325a973741bdbb1f6c06a4048559ad1d1bc9a6bc89",
+      "source_path": "skills/aidp-roles-access/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "08f4f85ecdf81d866cecce35a6c6959eb4213fd79b9eae31bc6af41a5c840c2e": {
+      "description_zh": "维护 .aidp/semantic.md 语义依据，记录逻辑实体、SQL 指标定义、关联基数、同义词和取值字典。适用于统一收入、客户等业务口径、提高自然语言转 SQL 准确度，并供分析、已验证查询、探查及质量检查复用。",
+      "source": "Maintain a semantic grounding layer (.aidp/semantic.md) for AIDP — logical entity names, SQL-defined metrics, joins with cardinality, synonyms, and value dictionaries. Use when the user wants to define metrics/business terms, improve NL-to-SQL accuracy, standardize \"revenue/customers/etc.\", or set up a semantic model. Read by analyzing-data, verified-queries, profiling, and data-quality.",
+      "source_sha256": "08f4f85ecdf81d866cecce35a6c6959eb4213fd79b9eae31bc6af41a5c840c2e",
+      "source_path": "skills/aidp-semantic-model/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "377e630da588d3547df2f0c72ab197321c86fab074d7ad7a23b55961813aa331": {
+      "description_zh": "利用 AIDP 集群日志、指标及 Spark UI REST API 诊断慢查询或失败作业，查看阶段和任务耗时、倾斜、shuffle、spill、执行器及 SQL 执行细节。负责轻量排障，深入性能调优交由 aidp-spark-optimization。",
+      "source": "Diagnose slow or failed AIDP Spark work using cluster logs, metrics, and the Spark UI REST API. Use when a job/query is slow or failed, the user asks \"why did this fail / why is it slow\", or you need stage/task timings, skew, shuffle/spill, executor, or SQL-execution details. Lightweight triage — for deep performance tuning (skew/spill/shuffle/joins/AQE/Delta) use the `aidp-spark-optimization` skill.",
+      "source_sha256": "377e630da588d3547df2f0c72ab197321c86fab074d7ad7a23b55961813aa331",
+      "source_path": "skills/aidp-spark-debugging/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b5a9e739b014f3689899dfdc4a1187f8d71f5c456de244d8a271aad464f7aa4": {
+      "description_zh": "针对慢作业、SLA 未达标、spill、内存溢出、小文件过多或严重 shuffle/倾斜，检查 Spark/PySpark 代码和 Spark UI。覆盖原说明所列 Apache Spark 3.5.0 与 Delta Lake 的分区、关联、文件布局、内存、代码生成、缓存、AQE、压缩及配置调优。",
+      "source": "Use when a Spark job/notebook is slow, missing an SLA, spilling, OOMing, generating too many small files, or shuffling/skewing heavily; when reviewing Spark/PySpark code or a Spark UI for performance; or before running a large Spark workload. Covers open-source Apache Spark 3.5.0 (+ Delta Lake) tuning -- partitions, shuffle, joins, skew, file layout, memory, codegen, caching, AQE, compression, and configuration.",
+      "source_sha256": "9b5a9e739b014f3689899dfdc4a1187f8d71f5c456de244d8a271aad464f7aa4",
+      "source_path": "skills/aidp-spark-optimization/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cae0b5f4924e454b478da8162060e02d9f55aa96983129ad2b2a9a2f439581bc": {
+      "description_zh": "在 AIDP 湖仓执行 Spark SQL 写操作，包括表、视图和模式的 DDL，插入、更新、删除、MERGE，以及 Delta 的优化、清理、时间旅行、恢复、结构演进和液态聚簇。只读分析使用 aidp-analyzing-data，CLI/REST 控制面生命周期使用 aidp-table-management。",
+      "source": "Write-side Spark SQL on the AIDP lakehouse — DDL (CREATE/ALTER/DROP table·view·schema), DML (INSERT/UPDATE/DELETE/MERGE upsert), and Delta maintenance (OPTIMIZE, VACUUM, time travel, RESTORE, schema evolution, liquid clustering). Use when the user wants to create/alter/drop a table or view, insert/update/delete/merge rows, upsert, compact/optimize/vacuum a Delta table, query an old version (time travel), restore, evolve a schema, or run any non-SELECT SQL. For read-only analytics use aidp-analyzing-data; for control-plane (CLI/REST) table lifecycle use aidp-table-management.",
+      "source_sha256": "cae0b5f4924e454b478da8162060e02d9f55aa96983129ad2b2a9a2f439581bc",
+      "source_path": "skills/aidp-sql-ddl/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75db2286c8b7503892d668b4fdc9454da9793b3c87c0b2b3dd9100124cac2b52": {
+      "description_zh": "通过 AIDP 控制面创建、更新、删除或刷新表、视图、模式和目录，并将 ALH、ADW 或对象存储连接注册为持久外部目录。适用于刷新元数据或测试连接；SQL 原生 DDL、文件导入和目录浏览分别由对应技能处理。",
+      "source": "Control-plane lifecycle for AIDP catalog objects — create/update/delete/refresh tables, views, schemas, and catalogs, and register an EXTERNAL catalog/connection (ALH/ADW/object-storage) as a persistent catalog object. Use when the user wants to create or drop a table/view/schema/catalog via the control plane (not a SELECT), register an external data source as a catalog, refresh catalog metadata, or test a connection. For SQL-native CREATE/ALTER/DROP use aidp-sql-ddl; for file→table ingestion use aidp-ingest-file-to-table; for browsing use aidp-catalog-explore.",
+      "source_sha256": "75db2286c8b7503892d668b4fdc9454da9793b3c87c0b2b3dd9100124cac2b52",
+      "source_path": "skills/aidp-table-management/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40b44e1af9014012af255ffb2634714bd35627f01f3db1e5ea2c576f06245114": {
+      "description_zh": "创建、维护和测试可被多个 AIDP 智能体流程按键引用的独立工具，包括 SQL、Prompt、RAG、HTTP、Custom 和 MCP 工具。适用于复用工具的增删改查；单个流程内的节点挂接参见 aidp-agent-flows。",
+      "source": "Create and manage standalone reusable AIDP agent Tools — SQL, Prompt, RAG, HTTP, Custom, and MCP tools that can be shared across agent flows by key. Use when the user wants to define a reusable tool (not inline in one flow), list/create/update/delete a tool, test a tool, or build a tool an agent/agent-flow node will reference. For attaching a tool inside a single flow as a node, see aidp-agent-flows + references/agent-flow-nodes.md.",
+      "source_sha256": "40b44e1af9014012af255ffb2634714bd35627f01f3db1e5ea2c576f06245114",
+      "source_path": "skills/aidp-tools/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5110d0dea09468db5d44998c8752decda5d79461558743f56c6b5c23211801f": {
+      "description_zh": "查看和管理 DataLake 中的 AIDP 用户偏好及设置条目，支持列举、读取、新建、更新和删除。适用于修改工作台偏好；优先用官方 aidp user-setting CLI，无 CLI 时用 oci raw-request。",
+      "source": "Manage AIDP user settings / preferences — list, get, create, update, delete a user's settings for the DataLake. Use when the user wants to view or change their AIDP workbench preferences/settings, or manage stored user-setting entries. Self-contained — official `aidp user-setting` CLI preferred, `oci raw-request` fallback.",
+      "source_sha256": "b5110d0dea09468db5d44998c8752decda5d79461558743f56c6b5c23211801f",
+      "source_path": "skills/aidp-user-settings/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92ab4e8befd329289934dac1b15b4816e86458cf2861d53c7176d09eaf26de63": {
+      "description_zh": "将可复用的问题与 Spark SQL 配对保存到 .aidp/verified-queries.md，供智能体优先复用可信查询。适用于建立标准查询库或提高重复问数的可靠性；每个配对须在集群验证后才标记为已验证。",
+      "source": "Register and validate reusable question→Spark-SQL pairs in .aidp/verified-queries.md so the agent reuses trusted SQL before generating new SQL. Use when the user wants to save a working query as canonical, build a verified-query repository, or improve answer reliability for recurring questions. Validates each pair on the cluster before marking it verified.",
+      "source_sha256": "92ab4e8befd329289934dac1b15b4816e86458cf2861d53c7176d09eaf26de63",
+      "source_path": "skills/aidp-verified-queries/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b33971b589b4248be24cf18a9b64d5a5c7aa1de1eff633ea52bc4f81a1eb55ac": {
+      "description_zh": "管理 AIDP 卷，列出卷、浏览卷内文件、通过 PAR 流程上传或下载并创建目录。适用于暂存大型或二进制文件、移入移出卷数据；区别于工作区文件系统，控制面使用官方 aidp CLI。",
+      "source": "Work with AIDP volumes — list volumes, browse files inside a volume, upload/download via the PAR flow, and create directories. Use when the user mentions volumes, needs to stage large/binary files, or move data in/out of a volume (distinct from the workspace filesystem). Control-plane via the official `aidp` CLI.",
+      "source_sha256": "b33971b589b4248be24cf18a9b64d5a5c7aa1de1eff633ea52bc4f81a1eb55ac",
+      "source_path": "skills/aidp-volumes/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "056232b4e7908fd15e9e44746b4edeeb424a9da436df2f08afa9073ee7febe38": {
+      "description_zh": "配置和检查 AIDP DataLake 实例及工作区，包括接入客户 VCN/子网的私有网络工作区。适用于创建、列举、读取环境或复制客户配置；原说明要求创建、删除及资源配置前进行确认。",
+      "source": "Provision and inspect AIDP DataLake instances and workspaces, including private-network workspaces attached to a customer VCN/subnet. Use when the user wants to create/list/get a workspace or DataLake instance, set up a new (e.g. private) AIDP environment, or replicate a customer setup. Create/delete are guarded — confirm before any provisioning.",
+      "source_sha256": "056232b4e7908fd15e9e44746b4edeeb424a9da436df2f08afa9073ee7febe38",
+      "source_path": "skills/aidp-workspace-admin/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf3c4d6c011e79ce9179f0e02f31a286e848d37da203c260380d18cebdae7a87": {
+      "description_zh": "管理 AIDP 工作区文件系统中的文件、文件夹和笔记本，支持列举、上传、下载、读取、创建、移动、重命名及删除。适用于放入脚本、笔记本或配置，以及整理 Shared/ 目录。",
+      "source": "Manage files and notebooks in the AIDP workspace filesystem — list, upload, download, read, create, move, rename, delete files/folders/notebooks. Use when the user wants to put a script/notebook/config into the workspace, read or move workspace files, or organize Shared/ folders.",
+      "source_sha256": "bf3c4d6c011e79ce9179f0e02f31a286e848d37da203c260380d18cebdae7a87",
+      "source_path": "skills/aidp-workspace-files/SKILL.md",
+      "package_sha256": "8e6f9e05b4664a9a86d01a8a2afdd1cee69fc5534082b191826fc05c9813dc35",
+      "source_package": "Oracle AI Data Platform Workbench Engineer Agent-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "00478abb6b9761dd0a8ac8ff389afa65be153abc10df8bc206ce2fdb957fc5e4": {
+      "description_zh": "将 AWS 的 S3、Glue、Athena、EMR 和 SageMaker 数据栈迁移至 Oracle AIDP。适用于盘点 AWS 数据资产、规划迁移、把 Athena SQL 或 Glue ETL/PySpark 转为 AIDP Spark，以及核验迁移输出；封装 aws-aidp CLI 的 inventory、plan、migrate 和 verify 命令。",
+      "source": "Migrate an AWS data stack (S3, Glue, Athena, EMR, SageMaker) to Oracle AI Data Platform (AIDP). Use when the user wants to inventory an AWS data estate, plan a migration to AIDP, translate Athena SQL or Glue ETL/PySpark to Spark on AIDP, or verify a migration's output. Wraps the `aws-aidp` CLI, with the verbs inventory, plan, migrate and verify.",
+      "source_sha256": "00478abb6b9761dd0a8ac8ff389afa65be153abc10df8bc206ce2fdb957fc5e4",
+      "source_path": "skills/aws-aidp-migrator/SKILL.md",
+      "package_sha256": "48318bfa73ab185bf7ad2a51f05d7629cd6700d8c45512900efbb599e5fcd954",
+      "source_package": "oracle-ai-data-platform-workbench-aws-migrator-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b63aa53cba5efb53f336b8fe78178fae6a2075be2ca70d2efc0daff26312828a": {
+      "description_zh": "从 AIDP 笔记本连接 Oracle AI Lakehouse、ADW 或 ATP。钱包、密码及 catalog.id 路径优先使用 aidataplatform Spark 连接器的 ORACLE_ALH/ORACLE_ATP 类型；原说明称该连接器尚不支持 IAM 数据库令牌认证，此场景改用原生 Spark JDBC。",
+      "source": "Connect from an AIDP notebook to Oracle AI Lakehouse (ALH), Autonomous Data Warehouse (ADW), or Autonomous Transaction Processing (ATP). Prefer the AIDP `aidataplatform` Spark format handler for wallet/password and catalog.id paths (`ORACLE_ALH` / `ORACLE_ATP`), but use raw Spark JDBC for IAM DB-token because the AIDP connector does not support DB-token auth yet.",
+      "source_sha256": "b63aa53cba5efb53f336b8fe78178fae6a2075be2ca70d2efc0daff26312828a",
+      "source_path": "skills/aidp-alh/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2491b3c585639fa10fb93b0bd434f8ffaaae190aaaaed89f5bee255d8c749a5": {
+      "description_zh": "在 AIDP 笔记本中通过 s3a:// 读写 AWS S3，使用 Hadoop S3A 连接器和 access key、secret key 认证。适用于接入 S3 桶；列举、复制等非 Spark 管理操作也可使用 boto3。",
+      "source": "Read and write AWS S3 (`s3a://`) from an AIDP notebook. Use when the user mentions S3, AWS S3 bucket, s3a, or has AWS access keys. Auth is access key + secret key via the Hadoop S3A connector. boto3 is also available for non-Spark management operations (list, copy).",
+      "source_sha256": "c2491b3c585639fa10fb93b0bd434f8ffaaae190aaaaed89f5bee255d8c749a5",
+      "source_path": "skills/aidp-aws-s3/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8376251e4e204372347c69c857f0f1f944a7847c22a66890994034c0f2ffcb19": {
+      "description_zh": "从 AIDP 笔记本通过 abfss:// 读写 Azure Data Lake Storage Gen2。适用于 ADLS 或多云 Azure 数据摄取，采用服务主体的 client_id、secret、tenant 进行 OAuth 客户端凭据认证。",
+      "source": "Read and write Azure Data Lake Storage Gen2 (`abfss://`) from an AIDP notebook. Use when the user mentions ADLS, Azure Data Lake, abfss, or wants to ingest from a multi-cloud Azure source. Auth is OAuth client-credentials (Service Principal client_id + secret + tenant).",
+      "source_sha256": "8376251e4e204372347c69c857f0f1f944a7847c22a66890994034c0f2ffcb19",
+      "source_path": "skills/aidp-azure-adls/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62cc8a653f58fb0b899f509ce0e5fac8c8da74db83f20aa42ebc7269d00e3d37": {
+      "description_zh": "在 AIDP 笔记本中通过 aidataplatform Spark 连接器读写 Azure SQL Database。适用于 AZURE_SQLSERVER 或 database.windows.net 端点，采用 SQL 用户名和密码认证。",
+      "source": "Read or write Azure SQL Database from an AIDP notebook through the AIDP `aidataplatform` Spark format handler. Use when the user mentions Azure SQL, Azure SQL Database, AZURE_SQLSERVER, or a database.windows.net endpoint. Auth is SQL username/password.",
+      "source_sha256": "62cc8a653f58fb0b899f509ce0e5fac8c8da74db83f20aa42ebc7269d00e3d37",
+      "source_path": "skills/aidp-azuresql/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "77162240611a29bedb657cd2fb9eca5aa2888bd6fcba796e1722d79b16d92267": {
+      "description_zh": "首次安装或配置 AIDP Spark 连接器辅助包，使用 AIDP MCP 工具将包上传至 /Workspace/Shared/，再执行导入检查。适用于刚安装插件或需要安装工作区辅助代码的场景。",
+      "source": "First-time setup. Use when the user wants to install/upload the AIDP Spark connectors helper package into their AIDP workspace, or has just installed this plugin and asks \"how do I set it up\", \"first-time setup\", \"install the helpers\", \"bootstrap aidp connectors\". Drives the AIDP MCP tools to push the helper package to /Workspace/Shared/ and runs a sanity import.",
+      "source_sha256": "77162240611a29bedb657cd2fb9eca5aa2888bd6fcba796e1722d79b16d92267",
+      "source_path": "skills/aidp-connectors-bootstrap/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "82bf9b07b731e1669363aeb281c27a9f8bcca95c99bfed525c1436e16ed2cdbf": {
+      "description_zh": "按 AIDP 笔记本的数据来源选择连接器，适用于多来源任务或不确定连接方法的场景。原说明覆盖 26 类来源，包括 Oracle 数据库和业务系统、对象存储、Iceberg、主流关系库、Snowflake、ADLS、S3、Salesforce、NetSuite、REST、自定义 JDBC 与 Excel。",
+      "source": "Help the user pick the right connector skill for their data source from an AIDP notebook. Use as a router when the user mentions multiple sources, isn't sure which connector applies, or asks \"how do I connect to X from AIDP\". Covers 26 data sources — Oracle Autonomous DB family (ALH/ADW/ATP), generic Oracle DB, ExaCS, PeopleSoft, Siebel, Fusion ERP/BICC, EPM Cloud, Essbase, OCI Streaming, Object Storage, Iceberg, plus PostgreSQL, MySQL/HeatWave, DB2, SQL Server, Azure SQL, Hive, Snowflake, Azure ADLS, AWS S3, Salesforce, NetSuite, generic REST, custom JDBC, Excel.",
+      "source_sha256": "82bf9b07b731e1669363aeb281c27a9f8bcca95c99bfed525c1436e16ed2cdbf",
+      "source_path": "skills/aidp-connectors-overview/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9cb7d7de62facb506bac36becc155df7a2a796538bb28c5c12c5112ca4dc08e9": {
+      "description_zh": "通过 AIDP 的 aidataplatform Spark 连接器读写 IBM Db2/LUW。适用于 DB2 数据源，使用主机、端口、数据库名称及用户名、密码连接。",
+      "source": "Read or write IBM DB2 from an AIDP notebook through the AIDP `aidataplatform` Spark format handler. Use when the user mentions DB2, IBM Db2, LUW, or `type=DB2`. Auth is host/port + database name + user/password.",
+      "source_sha256": "9cb7d7de62facb506bac36becc155df7a2a796538bb28c5c12c5112ca4dc08e9",
+      "source_path": "skills/aidp-db2/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "26c20fd5a7430de456483f2035f9e62c0eab90404071876c89128201cea5d4d0": {
+      "description_zh": "从 Oracle EPM Cloud Planning/EPBCS 导出规划数据切片并转换为 AIDP 笔记本中的 Spark DataFrame。适用于 Hyperion Planning、规划应用或 MDX 导出数据，采用带身份域前缀用户名的 HTTP Basic 认证。",
+      "source": "Run a Planning data-slice export against Oracle EPM Cloud (Planning / EPBCS) and materialize as a Spark DataFrame in an AIDP notebook. Use when the user mentions EPM Cloud, EPBCS, Hyperion Planning, planning app, MDX export, or wants Planning data in Spark. HTTP Basic auth with identity-domain-prefixed username.",
+      "source_sha256": "26c20fd5a7430de456483f2035f9e62c0eab90404071876c89128201cea5d4d0",
+      "source_path": "skills/aidp-epm-cloud/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3dd3dbfbc5b14157a87c6101fa46aaafa5e019c538f84d26dca651dafe08b305": {
+      "description_zh": "对 Oracle Essbase 21c 多维数据集执行 MDX 查询，将结果转换为 AIDP Spark DataFrame。适用于读取 OLAP 立方体数据，采用 HTTP Basic 认证。",
+      "source": "Run an MDX query against an Oracle Essbase 21c cube and materialize the result as a Spark DataFrame in an AIDP notebook. Use when the user mentions Essbase, MDX, Essbase 21c, OLAP cube, or wants to read cube data into Spark. Auth is HTTP Basic.",
+      "source_sha256": "3dd3dbfbc5b14157a87c6101fa46aaafa5e019c538f84d26dca651dafe08b305",
+      "source_path": "skills/aidp-essbase/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0465f9d72e01c4103d44e633e1155725b7598cdf8db74a5b8ef5ce4891620d7": {
+      "description_zh": "通过 AIDP aidataplatform Spark 连接器读写 Oracle Exadata Cloud Service。适用于 ExaCS、RAC SCAN 监听器或私有子网 Oracle 数据库；优先采用官方 ORACLE_EXADATA 样例的 catalog.id、pushdown.sql 和连接器写入模式。",
+      "source": "Read or write Oracle Exadata Cloud Service (ExaCS) from an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions ExaCS, Exadata, Exadata Cloud, RAC SCAN listener, or has a private-subnet Oracle DB. Prefer the official `ORACLE_EXADATA` connector sample with catalog.id, pushdown.sql, and connector write modes.",
+      "source_sha256": "b0465f9d72e01c4103d44e633e1155725b7598cdf8db74a5b8ef5ce4891620d7",
+      "source_path": "skills/aidp-exacs/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99df13cea8bd559df72a371d0a8f688b9f75623c999b05d4e58dc3c36d7448c4": {
+      "description_zh": "在 AIDP 笔记本中把卷或对象存储里的 .xlsx/.xls 文件读取为 Spark DataFrame。可使用需要集群 JAR 的 com.crealytics.spark.excel 格式，或采用无需 JAR 的 pandas 转 CSV 再由 Spark 读取路径。",
+      "source": "Read Excel (.xlsx, .xls) files into a Spark DataFrame from an AIDP notebook. Use when the user mentions Excel, .xlsx, .xls, or has spreadsheet files in a Volume / Object Storage bucket. Two paths — the `com.crealytics.spark.excel` Spark format (cluster jar required) and a `pandas → CSV → spark.read.csv` fallback that needs no jars.",
+      "source_sha256": "99df13cea8bd559df72a371d0a8f688b9f75623c999b05d4e58dc3c36d7448c4",
+      "source_path": "skills/aidp-excel/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e765bc1d13eb4222f4500ce2d6183bbec1ce61e3eaa28dc0ac86a40f104d70f5": {
+      "description_zh": "将 Oracle Fusion BICC 批量抽取结果读取为 AIDP Spark DataFrame。适用于 BICC、PVO 或 Fusion 超过 5 万行的批量需求；采用与官方样例一致的内置 aidataplatform 连接器及 HTTP Basic 认证。",
+      "source": "Pull a Fusion BICC bulk extract into a Spark DataFrame from an AIDP notebook. Use when the user mentions BICC, Fusion bulk extract, BI Cloud Connector, PVO, or needs >50k rows from Fusion. The recommended path uses AIDP's built-in `spark.read.format(\"aidataplatform\")` connector (matches the official Oracle AIDP sample). HTTP Basic auth.",
+      "source_sha256": "e765bc1d13eb4222f4500ce2d6183bbec1ce61e3eaa28dc0ac86a40f104d70f5",
+      "source_path": "skills/aidp-fusion-bicc/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09cdb97da69c02ae40c01eb858a8ae29315f7bb91cb5b2a0a23843b7b032c201": {
+      "description_zh": "从 Oracle Fusion ERP/HCM/SCM REST API 获取实时数据并转为 AIDP Spark DataFrame，仅使用 HTTP Basic 认证。原说明将超过每页 499 行或批量抽取的需求转交 aidp-fusion-bicc。",
+      "source": "Pull data from Oracle Fusion ERP / HCM / SCM REST APIs into a Spark DataFrame from an AIDP notebook. Use when the user mentions Fusion ERP, Fusion REST API, FA REST, Cloud ERP, or wants live data from a Fusion pod. HTTP Basic auth only. For volumes >499 rows/page or bulk extracts, route to aidp-fusion-bicc.",
+      "source_sha256": "09cdb97da69c02ae40c01eb858a8ae29315f7bb91cb5b2a0a23843b7b032c201",
+      "source_path": "skills/aidp-fusion-rest/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a4c3f6e01bf67c0ca9d6ef273b64e6bcbfcbe5310bc1df3955cc71f672ff8a49": {
+      "description_zh": "在 AIDP 笔记本中通过 aidataplatform Spark 连接器读写 Apache Hive。适用于 HiveServer2、HS2、HCatalog 或 Hive 元存储接入，采用主机、端口及用户名、密码认证。",
+      "source": "Read or write Apache Hive from an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions Hive, HiveServer2, HS2, HCatalog, or has a Hive metastore host/port. Auth is host/port + user/password. Read-write.",
+      "source_sha256": "a4c3f6e01bf67c0ca9d6ef273b64e6bcbfcbe5310bc1df3955cc71f672ff8a49",
+      "source_path": "skills/aidp-hive/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce8a8ef4a76cc8ce87bcb0319fa7ec67800195d2e41090745a611b80b64c3420": {
+      "description_zh": "从 AIDP 笔记本读写 OCI Object Storage 上的 Apache Iceberg 表，支持时间旅行、快照、模式与分区演进以及数据湖文件 ACID 事务。使用 oci:// 上的 Iceberg Hadoop 目录，认证隐式依赖工作区 IAM 身份。",
+      "source": "Read and write Apache Iceberg tables backed by OCI Object Storage from an AIDP notebook. Use when the user mentions Iceberg, Apache Iceberg, time travel, snapshots, schema evolution, partition evolution, or wants ACID transactions on data lake files. Uses the Iceberg Hadoop catalog on `oci://` — auth is implicit via the workspace IAM identity.",
+      "source_sha256": "ce8a8ef4a76cc8ce87bcb0319fa7ec67800195d2e41090745a611b80b64c3420",
+      "source_path": "skills/aidp-iceberg/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f717e715013c678b244012b61a9f10488365b7367fd9f60c99e3b038e33df79b": {
+      "description_zh": "在 AIDP 笔记本中使用原生 Spark JDBC 连接具有 JDBC 驱动的数据库。适用于没有专用 AIDP 连接器的 SQLite、ClickHouse、DuckDB、通用 JDBC URL 或自定义上传驱动；认证方式由具体驱动决定。",
+      "source": "Connect to ANY database that has a JDBC driver from an AIDP notebook using Spark's native `format(\"jdbc\")`. Use when the user mentions a DB without a dedicated AIDP connector — SQLite, ClickHouse, DuckDB, generic JDBC URL — or wants to use a custom JDBC driver they uploaded. Auth is driver-specific.",
+      "source_sha256": "f717e715013c678b244012b61a9f10488365b7367fd9f60c99e3b038e33df79b",
+      "source_path": "skills/aidp-jdbc-custom/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ca574f7153e40e1339aec2e14c5c7979cd6f3d76951154df46d49554611d74e": {
+      "description_zh": "通过 AIDP aidataplatform Spark 连接器读写 MySQL 或 OCI MySQL HeatWave。适用于 MySQL Database Service/MDS 等数据源，使用主机、端口及用户名、密码认证。",
+      "source": "Read or write MySQL or OCI MySQL HeatWave from an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions MySQL, HeatWave, MySQL Database Service, MDS, or has a MySQL host/port. Auth is host/port + user/password.",
+      "source_sha256": "1ca574f7153e40e1339aec2e14c5c7979cd6f3d76951154df46d49554611d74e",
+      "source_path": "skills/aidp-mysql/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40bfa510ffd1a0fd66d79ed1376748a30cce7c67c1e7767600e0f5c652d9782a": {
+      "description_zh": "在 AIDP 笔记本中通过 aidataplatform 连接器只读访问 NetSuite SuiteAnalytics Connect。支持账户、角色和访问令牌配置，以及用户名密码或 OAuth access-token 认证。",
+      "source": "Read NetSuite SuiteAnalytics Connect data from an AIDP notebook through the AIDP `aidataplatform` Spark format handler. Use when the user mentions NetSuite, SuiteAnalytics Connect, ns.account.id, ns.role.id, or ns.access.token. Supports username/password or OAuth access-token authentication. Read-only.",
+      "source_sha256": "40bfa510ffd1a0fd66d79ed1376748a30cce7c67c1e7767600e0f5c652d9782a",
+      "source_path": "skills/aidp-netsuite/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b9e4de521a64a385282fd14f58f82e7e8b4f644e503666f63f1c6cced24a5ad": {
+      "description_zh": "在 AIDP 笔记本中通过 oci:// 原生读写 OCI Object Storage，适用于外部卷、对象存储外部表以及桶中的 CSV、Parquet、JSON、Delta 文件。使用工作区 IAM 身份隐式认证，无需在笔记本中写入密钥。",
+      "source": "Read and write OCI Object Storage natively from an AIDP notebook using the `oci://` URI scheme. Use when the user mentions OCI Object Storage, \"oci://\", external volumes, external tables backed by Object Storage, CSV/Parquet/JSON/Delta files in a bucket, or wants to land data in OCI buckets. Auth is implicit via the workspace's IAM identity — no keys in the notebook.",
+      "source_sha256": "0b9e4de521a64a385282fd14f58f82e7e8b4f644e503666f63f1c6cced24a5ad",
+      "source_path": "skills/aidp-object-storage/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a63d7c9e017fddf358a8ae09889c0d5d9be17257013f5ddf2a4455f75bd2888": {
+      "description_zh": "通过 AIDP aidataplatform Spark 连接器读写非 Autonomous 的 Oracle Database，包括 Compute、Base DB、本地部署及原说明列出的 19c、21c、23ai、26ai。适用于普通 Oracle/JDBC 或 1521 端口连接，使用主机、端口、数据库名称及用户名、密码认证。",
+      "source": "Read or write an Oracle Database (Compute / Base DB / on-prem / Oracle 19c, 21c, 23ai, 26ai non-Autonomous) from an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions Oracle Database, generic Oracle DB, on-prem Oracle, plain Oracle JDBC, port 1521, non-Autonomous Oracle. Read-write. Auth is host/port + database name + user/password.",
+      "source_sha256": "0a63d7c9e017fddf358a8ae09889c0d5d9be17257013f5ddf2a4455f75bd2888",
+      "source_path": "skills/aidp-oracle-db/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7ddd50705ef8af56259b52bf70b697b6bd0baa869bcdcd98ee502c5f0b8a8b5": {
+      "description_zh": "通过 AIDP aidataplatform Spark 连接器只读获取 Oracle PeopleSoft 数据并转为 Spark DataFrame。适用于 PSFT、HCM、FSCM 或 Campus Solutions，使用主机、端口、数据库名称及用户名、密码认证。",
+      "source": "Read from Oracle PeopleSoft into a Spark DataFrame in an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions PeopleSoft, PSFT, HCM, FSCM, Campus Solutions, or has a PeopleSoft host/port. Auth is host/port + database name + user/password. Read-only.",
+      "source_sha256": "f7ddd50705ef8af56259b52bf70b697b6bd0baa869bcdcd98ee502c5f0b8a8b5",
+      "source_path": "skills/aidp-peoplesoft/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b07829ee1d50c76c1835cc6519b985f25528454a39af17043d64971f5d638203": {
+      "description_zh": "通过 AIDP aidataplatform Spark 连接器读写 PostgreSQL，优先遵循官方 POSTGRESQL 样例。若必须使用 SSL 而内置连接器无法表达 sslmode=require，则采用原生 Spark JDBC 备用路径。",
+      "source": "Read or write PostgreSQL from an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions PostgreSQL, Postgres, \"psql\", or has a Postgres host/port to connect to. Prefer the official `POSTGRESQL` connector sample; use native Spark JDBC only as an SSL-required fallback when the built-in connector cannot express sslmode=require.",
+      "source_sha256": "b07829ee1d50c76c1835cc6519b985f25528454a39af17043d64971f5d638203",
+      "source_path": "skills/aidp-postgresql/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "938cb80b22356884bb93adf4d611b2833f9ddd2ac41e7c978011f6ed53d62ecc": {
+      "description_zh": "通过 AIDP Generic REST 连接器将通用 REST API 数据读取为 Spark DataFrame。适用于非 Fusion/EPM/Essbase、提供 manifest.url 描述结构的端点，采用 HTTP Basic 认证，并由派生属性驱动查询参数。",
+      "source": "Pull data from any REST API into a Spark DataFrame using the AIDP `aidataplatform` Generic REST connector. Use when the user has a non-Fusion / non-EPM / non-Essbase REST endpoint with a `manifest.url` describing the schema. Auth is HTTP Basic with derived properties driving query parameters.",
+      "source_sha256": "938cb80b22356884bb93adf4d611b2833f9ddd2ac41e7c978011f6ed53d62ecc",
+      "source_path": "skills/aidp-rest-generic/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca278eead7a6515c99a22ec11fcbcb91447627bb803d0b133e7c4d7552d16e2d": {
+      "description_zh": "通过 AIDP aidataplatform Spark 连接器只读获取 Salesforce 数据并转为 Spark DataFrame。适用于 SFDC、Sales Cloud、Service Cloud、Account、Opportunity、Lead、sObject 或 SOQL，原说明采用主机、端口及用户名、密码认证。",
+      "source": "Read from Salesforce into a Spark DataFrame in an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions Salesforce, SFDC, Sales Cloud, Service Cloud, Account, Opportunity, Lead, sObject, SOQL. Auth is host/port + user/password. Read-only.",
+      "source_sha256": "ca278eead7a6515c99a22ec11fcbcb91447627bb803d0b133e7c4d7552d16e2d",
+      "source_path": "skills/aidp-salesforce/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4631ea116c1bfb1704e3c75a3c73d82b819cb7d5b08c24c5f5d972105eefdd2": {
+      "description_zh": "通过 AIDP aidataplatform Spark 连接器只读获取 Oracle Siebel CRM 数据并转为 Spark DataFrame。适用于 S_CONTACT、S_ORG_EXT 等 Siebel 数据，使用主机、端口、数据库名称及用户名、密码认证。",
+      "source": "Read from Oracle Siebel CRM into a Spark DataFrame in an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions Siebel, Siebel CRM, S_CONTACT, S_ORG_EXT, or has a Siebel host/port. Auth is host/port + database name + user/password. Read-only.",
+      "source_sha256": "d4631ea116c1bfb1704e3c75a3c73d82b819cb7d5b08c24c5f5d972105eefdd2",
+      "source_path": "skills/aidp-siebel/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "101a3f6f9d70892947c2e579d51978c9002a4f9112b0e01fff4d7a915f734571": {
+      "description_zh": "在 AIDP 笔记本中通过 aidataplatform Spark 连接器读取 Snowflake，支持 Basic 或密钥对认证及私钥文件、内容配置。原说明明确 AIDP 4.0 不支持写入 Snowflake。",
+      "source": "Read Snowflake from an AIDP notebook through the AIDP `aidataplatform` Spark format handler. Use when the user mentions Snowflake, Snowflake warehouse, Basic authentication, KeyPair authentication, private.key.file, or private.key.content. Snowflake writes are not supported in AIDP 4.0.",
+      "source_sha256": "101a3f6f9d70892947c2e579d51978c9002a4f9112b0e01fff4d7a915f734571",
+      "source_path": "skills/aidp-snowflake/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb0c721ac498a0715af49d6efdceb64d2d0b748825a12e847134297fdaecfdbd": {
+      "description_zh": "通过 AIDP aidataplatform Spark 连接器读写 Microsoft SQL Server。适用于 SQL Server、MSSQL 或 TDS 端点，使用主机、端口、数据库及用户名、密码认证。",
+      "source": "Read or write Microsoft SQL Server from an AIDP notebook via the AIDP `aidataplatform` Spark format handler. Use when the user mentions SQL Server, MSSQL, or has a TDS host/port. Auth is host/port + database + user/password.",
+      "source_sha256": "bb0c721ac498a0715af49d6efdceb64d2d0b748825a12e847134297fdaecfdbd",
+      "source_path": "skills/aidp-sqlserver/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "91eb9e28512dbd76ebbe791a5e683fd9b3ce4c7c99e50f90b661352f46a642d4": {
+      "description_zh": "在 AIDP 笔记本中使用 Spark Structured Streaming 以 Kafka 兼容方式消费 OCI Streaming 消息。适用于流池和流式读取，采用 OCI auth token 配合 SASL/PLAIN 认证，模式遵循官方 Oracle AIDP 样例。",
+      "source": "Consume an OCI Streaming stream from an AIDP notebook via Spark structured streaming (Kafka-compat). Use when the user mentions OCI Streaming, Kafka on OCI, stream pool, structured streaming, or wants to read Kafka messages into Spark. Auth is SASL/PLAIN with an OCI auth token. Pattern matches the official Oracle AIDP sample.",
+      "source_sha256": "91eb9e28512dbd76ebbe791a5e683fd9b3ce4c7c99e50f90b661352f46a642d4",
+      "source_path": "skills/aidp-streaming-kafka/SKILL.md",
+      "package_sha256": "f6e555ade2506dbb43963fb596bbe7ddbf630765bbacce8ae1e3492581c532e6",
+      "source_package": "oracle-ai-data-platform-workbench-spark-connectors-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f21c26bff3916d2c8efd233eca1e1eb504fa7185f394cd92f991942e61b483a1": {
+      "description_zh": "将当前讨论转为 GitHub Issue，为无人值守任务编写可验证的验收标准，检查 Issue 是否足够清晰供 AI 智能体交付，或拆分大型任务。仅当 Orbi 已负责目标仓库交付时，将起草的 Issue 交给 Orbi。",
+      "source": "Use when the user wants to turn the current discussion into a GitHub Issue, wants a task done without watching it, asks whether an Issue is clear enough for an AI agent to deliver, or wants to split a big task into several Issues. Drafts an Issue with verifiable acceptance criteria and hands it to Orbi when Orbi already delivers the target repository.",
+      "source_sha256": "f21c26bff3916d2c8efd233eca1e1eb504fa7185f394cd92f991942e61b483a1",
+      "source_path": "skills/write-ai-ready-issue/SKILL.md",
+      "package_sha256": "0f69bd0d5855a30daf7cc1f2da4dda66a33bfebe398ca1adfd7106f40c3b05ee",
+      "source_package": "Orbi-0.1.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
