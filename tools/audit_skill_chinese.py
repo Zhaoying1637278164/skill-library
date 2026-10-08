@@ -1,5 +1,5 @@
 """Audit source-linked Chinese skill descriptions without executing archives."""
-import argparse, csv, hashlib, json, re
+import argparse, csv, hashlib, json, re, zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,9 +24,28 @@ def main():
                 r, s = sources[entry['source_package'], entry['source_path']]
                 assert r['sha256'] == entry['package_sha256'], key
                 assert sha(s['description']) == key, key
+    assets = json.loads((ROOT / 'assets.json').read_text())
+    asset_rows = assets['records'] if isinstance(assets, dict) and 'records' in assets else assets
+    body_checked = 0
+    for path_key, entry in labels.get('by_path', {}).items():
+        if not isinstance(entry, dict) or entry.get('method') != METHOD:
+            continue
+        r, skill = sources[entry['source_package'], entry['source_path']]
+        assert path_key == entry['source_package'] + ':' + entry['source_path']
+        assert r['sha256'] == entry['package_sha256'], path_key
+        assert sha(skill['description']) == entry['source_sha256'] == sha(entry['source']), path_key
+        if entry.get('evidence_kind') == 'skill_body':
+            asset = next(a for a in asset_rows if a['asset_sha256'] == r['sha256'])
+            with zipfile.ZipFile(args.site / asset['asset_url']) as archive:
+                raw = archive.read(entry['source_path'])
+            body = raw.decode('utf-8-sig', errors='replace')
+            assert body.strip(), path_key
+            assert sha(body) == entry['body_sha256'], path_key
+            body_checked += 1
     details = [json.loads(p.read_text()) for p in sorted((args.site / 'data/pkg').glob('*.json'))]
     rows = {(r['file'], s['path']): s for r in details for s in r['skills']}
     total = translated = 0
+    unavailable = []
     missing = []
     matched = set()
     for r in details:
@@ -35,6 +54,9 @@ def main():
             original = originals[r['id'], s['path']]
             assert s['name'] == original['name'], (r['file'], s['path'], 'original name')
             assert s['description'] == original['description'], (r['file'], s['path'], 'original description')
+            label = labels.get('by_path', {}).get(r['file'] + ':' + s['path'], {})
+            if isinstance(label, dict) and label.get('source_kind') == 'empty_source':
+                unavailable.append({'file': r['file'], 'path': s['path']})
             zh = s.get('description_zh', '')
             if zh:
                 assert re.search(r'[\u3400-\u9fff]', zh), (r['file'], s['path'], 'not Chinese')
@@ -55,8 +77,9 @@ def main():
             if s.get('description_zh'):
                 assert s['description_zh'] in search[str(r['id'])][3], (r['file'], s['path'], 'search')
     report = {'total_skills': total, 'translated_skills': translated, 'missing_skill_chinese': len(missing),
-              'all_skills_complete': not missing, 'unique_missing_descriptions': len({m['description_sha256'] for m in missing}),
-              'checks': ['original names and descriptions unchanged', 'manual translations match source hashes and representative package paths',
+              'all_skills_complete': not missing and not unavailable, 'unavailable_source_skills': unavailable, 'unique_missing_descriptions': len({m['description_sha256'] for m in missing}),
+              'body_sources_verified': body_checked,
+              'checks': ['body translations match nonempty archived skill body hashes and package paths', 'original names and descriptions unchanged', 'manual translations match source hashes and representative package paths',
                          'Chinese text and no pending placeholders', 'CSV exactly matches package details', 'search contains all Chinese descriptions'],
               'missing_inventory': 'tools/catalog/generated/缺失中文说明.json'}
     (ROOT / 'tools/catalog/generated/缺失中文说明.json').write_text(json.dumps(missing, ensure_ascii=False, indent=2) + '\n')

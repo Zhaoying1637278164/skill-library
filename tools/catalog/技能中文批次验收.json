@@ -1,10 +1,18 @@
 {
   "total_skills": 10429,
-  "translated_skills": 503,
-  "missing_skill_chinese": 9926,
+  "translated_skills": 1529,
+  "missing_skill_chinese": 8900,
   "all_skills_complete": false,
-  "unique_missing_descriptions": 9411,
+  "unavailable_source_skills": [
+    {
+      "file": "trapic-0.7.0-v2.zip",
+      "path": "skills/trapic-review/SKILL.md"
+    }
+  ],
+  "unique_missing_descriptions": 8900,
+  "body_sources_verified": 132,
   "checks": [
+    "body translations match nonempty archived skill body hashes and package paths",
     "original names and descriptions unchanged",
     "manual translations match source hashes and representative package paths",
     "Chinese text and no pending placeholders",
