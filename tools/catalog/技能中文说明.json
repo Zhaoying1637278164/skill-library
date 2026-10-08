@@ -18889,6 +18889,1086 @@
       "package_sha256": "f213efdf714b035a4ae485885d74562dcceb4e2dbf3252dba320beaeaf71c0c3",
       "source_package": "Claude Code Bootstrapper-9.2.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffe15d96e50fbde53cd01a1dc43a99fb84ce3cbff8cae018705294c2b14a3955": {
+      "description_zh": "依据Anthropic实时bug_report.yml访谈并整理规范的Claude Code缺陷报告，按表单格式通过gh issue create提交至anthropics/claude-code。",
+      "source": "File a well-formed bug report against anthropics/claude-code. Use when the user wants to \"report a bug\", \"file a bug\", \"open an issue\", or describes unexpected/broken behavior in Claude Code they want Anthropic to fix. Interviews the user against Anthropic's live bug_report.yml issue form, renders the body exactly as the form expects, and submits via `gh issue create`.",
+      "source_sha256": "ffe15d96e50fbde53cd01a1dc43a99fb84ce3cbff8cae018705294c2b14a3955",
+      "source_path": "skills/feedback-bug/SKILL.md",
+      "package_sha256": "94e9b3020164694dcf63f1d8c5814c61f89dfd04c858e534d1f2dc9ba70d8dbd",
+      "source_package": "Claude Code Feedback-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da21dc179832768d00cb83a7c33569c7bac684e2f1f72832244e05fe039c3700": {
+      "description_zh": "向anthropics/claude-code提交文档问题，涵盖缺失、过期、错误、与行为矛盾或改进建议。",
+      "source": "File a documentation issue against anthropics/claude-code — missing docs, outdated docs, incorrect docs, or docs improvements. Use when the user says \"the docs are wrong\", \"can't find docs for X\", \"the docs contradict the behavior\", or similar.",
+      "source_sha256": "da21dc179832768d00cb83a7c33569c7bac684e2f1f72832244e05fe039c3700",
+      "source_path": "skills/feedback-docs/SKILL.md",
+      "package_sha256": "94e9b3020164694dcf63f1d8c5814c61f89dfd04c858e534d1f2dc9ba70d8dbd",
+      "source_package": "Claude Code Feedback-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ceaff28de440bb33c63306a8f3fbcdb7e204fc780e98fdf0a6766da55513876a": {
+      "description_zh": "依据实时feature_request.yml收集信息并通过gh issue create向anthropics/claude-code提交功能增强请求。",
+      "source": "File a well-formed feature request against anthropics/claude-code. Use when the user wants to \"request a feature\", \"suggest an enhancement\", \"propose an improvement\", or describes something they wish Claude Code could do that it currently can't. Interviews the user against Anthropic's live feature_request.yml issue form and submits via `gh issue create`.",
+      "source_sha256": "ceaff28de440bb33c63306a8f3fbcdb7e204fc780e98fdf0a6766da55513876a",
+      "source_path": "skills/feedback-feature-request/SKILL.md",
+      "package_sha256": "94e9b3020164694dcf63f1d8c5814c61f89dfd04c858e534d1f2dc9ba70d8dbd",
+      "source_package": "Claude Code Feedback-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b3ce9e02422d7d662ef09e5d70dfd85284f50df76412a44e13ea436b8434b40": {
+      "description_zh": "向anthropics/claude-code报告模型回答或行为问题，如错误拒绝、幻觉、策略误触或代码质量，区别于CLI和工具框架缺陷。",
+      "source": "File a report about Claude's model behavior (bad responses, refusals, hallucinations, policy misfires, poor code quality) against anthropics/claude-code. Use when the user is unhappy with *what Claude said or did* — as opposed to a CLI/tool bug. Distinct from the bug skill, which covers CLI/harness issues.",
+      "source_sha256": "1b3ce9e02422d7d662ef09e5d70dfd85284f50df76412a44e13ea436b8434b40",
+      "source_path": "skills/feedback-model-behavior/SKILL.md",
+      "package_sha256": "94e9b3020164694dcf63f1d8c5814c61f89dfd04c858e534d1f2dc9ba70d8dbd",
+      "source_package": "Claude Code Feedback-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d4cb854d7fb718b9720cebde04d2bacf0b66ab075b7b03b710011d6a93be681": {
+      "description_zh": "刷新缓存的Anthropic Claude Code Issue表单，检查变化并发现上游新模板类型，适用于更新请求或此前发现模板漂移。",
+      "source": "Refresh cached Anthropic claude-code issue-form templates and detect drift or new template types. Use when the user says \"refresh templates\", \"update feedback templates\", \"check for template changes\", or when a previous feedback-skill run reported drift. Also discovers newly-added issue-template types in the upstream repo.",
+      "source_sha256": "0d4cb854d7fb718b9720cebde04d2bacf0b66ab075b7b03b710011d6a93be681",
+      "source_path": "skills/feedback-refresh-templates/SKILL.md",
+      "package_sha256": "94e9b3020164694dcf63f1d8c5814c61f89dfd04c858e534d1f2dc9ba70d8dbd",
+      "source_package": "Claude Code Feedback-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bf838fa8ca5af4ad7b1b3da31d7a3dbe67f75e3b8cc51fecbaaed317b92c5a57": {
+      "description_zh": "为客户或家庭会议准备另类投资简报，从iCapital/Addepar取持仓、NAV认缴已缴未缴、流动和平台IRR/TVPI等，与流动资产及IPS目标并列，标记催缴现金、占比集中和过期数据；逐项注明平台，不推荐基金或预测模拟。",
+      "source": "Prepare a meeting-ready alternative-investments brief for a client, household, IRA, trust, or named account before a review — pulls the alts book from iCapital or Addepar (positions, NAV vs. commitment, called and unfunded amounts, contributions/distributions/subscriptions/redemptions, lockups, and the platform's own IRR/TVPI/DPI/RVPI) and sits it beside the liquid book and IPS target from the connected portfolio system (Orion Connect, Addepar, or Envestnet), then flags cash needed for capital calls, alts % vs. target, concentration, unfunded concentration, and stale as-of data. Cites the source platform on every figure and keeps disclosures on the page. Does not recommend funds, forecast NAVs/IRRs, or simulate allocation changes. Triggers on \"alts brief\", \"/alts-brief\", \"prep the [client]'s alts review\", \"what's going on with [client]'s PE/private investments\", \"how's [client] doing on their alts\", or any request to review a household's alternative investment positions before a meeting.",
+      "source_sha256": "bf838fa8ca5af4ad7b1b3da31d7a3dbe67f75e3b8cc51fecbaaed317b92c5a57",
+      "source_path": "skills/alts-brief/SKILL.md",
+      "package_sha256": "97515eccc87a2e1b96127feb5e73b7f1396c0a393b1429b165501f71330f7fa8",
+      "source_package": "Claude for Financial Advisors-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abc11d536b8daf76da53e2720dc34ba12f2755bc1cdf8214041eb190ba1ba8c7": {
+      "description_zh": "按SEC投资顾问营销、受托反欺诈、记录保留及适用Reg BI规则审核面向客户的邮件、演示或其他材料，输出通过/提示/失败标注、披露、记录草条和归档交接提醒。",
+      "source": "Review any client-facing message or material (emails, letters, newsletters, social posts, website copy, presentations, performance reports, proposals) for compliance with SEC rules that govern investment advisers — the Marketing Rule (206(4)-1), fiduciary duty / antifraud provisions (206), Books and Records (204-2), and Reg BI where broker-dealer activity applies. Produces a pass/flag/fail markup, required disclosures, a books-and-records scratch-pad entry, and an archiving handoff reminder. Triggers on \"compliance check\", \"/compliance\", \"is this compliant\", \"review this before I send it\", \"can I say this to a client\", \"check this email/post/deck\". Use it whenever an advisor asks to check, review, or look over anything before it goes to a client or prospect — \"check this before I send it\", \"look this over before it goes out\" — even a routine note, because deciding that a message needs no changes is part of the review, not a reason to skip it.",
+      "source_sha256": "abc11d536b8daf76da53e2720dc34ba12f2755bc1cdf8214041eb190ba1ba8c7",
+      "source_path": "skills/compliance/SKILL.md",
+      "package_sha256": "97515eccc87a2e1b96127feb5e73b7f1396c0a393b1429b165501f71330f7fa8",
+      "source_package": "Claude for Financial Advisors-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b87115700145d4b12e239a7be260e073fb5a72df655b109ab542708956060f9": {
+      "description_zh": "为家庭准备遗产与税务会议简报，核对CRM进展、Wealth.com计划签署资产、上年税务及当年参数，与托管和投资账户名义及受益人匹配，排序缺口；仅可经批准建CRM任务，不起草法律条款或更改账户受益人。",
+      "source": "Prepare a meeting-ready estate and tax brief for a household — opens with what was discussed and actioned since the last meeting (Wealthbox/Redtail/Salesforce), pulls the estate plan from Wealth.com (structure, key documents and whether each is signed, balance sheet) plus the prior-year tax look-back and that year's tax constants, and cross-checks it against how accounts are titled and beneficiaried at the custodian and portfolio platforms (Schwab, Orion/Addepar, iCapital) — surfacing unfunded trusts, titling mismatches, and beneficiary gaps as a prioritized flags list. The only write is creating advisor-approved follow-up tasks in the CRM (optional, approved first). Never drafts trust language, gives legal advice, retitles an account, or changes a beneficiary. Triggers on \"estate brief\", \"estate meeting brief\", \"estate and tax brief\", \"estate plan review for [client]\", \"check [client]'s trust funding\", \"are [client]'s beneficiaries up to date\", or \"does [client]'s estate plan match their accounts\".",
+      "source_sha256": "1b87115700145d4b12e239a7be260e073fb5a72df655b109ab542708956060f9",
+      "source_path": "skills/estate-and-tax-brief/SKILL.md",
+      "package_sha256": "97515eccc87a2e1b96127feb5e73b7f1396c0a393b1429b165501f71330f7fa8",
+      "source_package": "Claude for Financial Advisors-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01159a2d9c61c206bafdb8803ef1715058b305ef7f9a5aa9b57ba3e53c9c199d": {
+      "description_zh": "为Claude for Financial Advisors新用户入门，了解RIA痛点工具、连接系统、介绍技能、进行实时会前演示和定制教学，并推荐下一技能。",
+      "source": "Welcome and set up a new Claude for Financial Advisors user. Gets to know the advisor's RIA, learns their day-to-day pain points and tech stack, walks them through connecting their tools, explains the plugin and how skills work, runs a live pre-meeting demo, shows them how to customize skills, and closes with a personalized recommendation for which skill to try next. Use when the advisor is getting started or says any of: \"onboarding,\" \"/onboarding,\" \"get started,\" \"help me get started,\" \"set up claude for financial advisors,\" \"claude for financial advisors setup,\" \"what can this plugin do,\" \"I'm new to this,\" \"show me around,\" or is in their first session with the plugin.",
+      "source_sha256": "01159a2d9c61c206bafdb8803ef1715058b305ef7f9a5aa9b57ba3e53c9c199d",
+      "source_path": "skills/onboarding/SKILL.md",
+      "package_sha256": "97515eccc87a2e1b96127feb5e73b7f1396c0a393b1429b165501f71330f7fa8",
+      "source_package": "Claude for Financial Advisors-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9c7ecfc752233906a454e699ec02c2e77fb17007446bba6bbd189018bf786224": {
+      "description_zh": "依据Orion业绩、IPS或模型组合检查客户或家庭配置偏离，映射模型、准备税务感知再平衡机会及合规档案中的理由备忘录。",
+      "source": "Run a portfolio review for a client or household — performance pulled from Orion, allocation drift analysis vs. IPS or model portfolio, model-portfolio mapping, rebalance preparation with tax-aware rebalance opportunities to consider, and a rebalance rationale memo for the compliance file. Triggers on \"portfolio review\", \"/portfolio-rebalance-review\", \"drift analysis\", \"rebalance [client]\", \"how is [client]'s portfolio positioned\", \"rebalance rationale\", or \"map [client] to a model\".",
+      "source_sha256": "9c7ecfc752233906a454e699ec02c2e77fb17007446bba6bbd189018bf786224",
+      "source_path": "skills/portfolio-rebalance-review/SKILL.md",
+      "package_sha256": "97515eccc87a2e1b96127feb5e73b7f1396c0a393b1429b165501f71330f7fa8",
+      "source_package": "Claude for Financial Advisors-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "472a3ef7f997148c84091e5c906cb837675e10262f0bc03b82682a29df9362f7": {
+      "description_zh": "将Zocks、Wealthbox或粘贴转录中的客户会议转为财务顾问跟进，匹配家庭、起草CRM笔记行动机会，集中供批准后只写认可事项，并可归档Drive。",
+      "source": "Turn a client meeting into next-best-action follow-up for a financial advisor — no drafting required. Given a meeting (via Zocks, Wealthbox, or a pasted transcript), finds the right household, drafts a CRM note plus the action items and opportunities it heard, shows them all in one batch for approval, then writes what's approved and offers to file the record in Drive. Triggers on \"log the meeting\", \"log my meeting with [client]\", \"meeting follow-up\", \"post meeting\", \"/post-meeting\", or \"follow up on my meeting with [client]\".",
+      "source_sha256": "472a3ef7f997148c84091e5c906cb837675e10262f0bc03b82682a29df9362f7",
+      "source_path": "skills/post-meeting/SKILL.md",
+      "package_sha256": "97515eccc87a2e1b96127feb5e73b7f1396c0a393b1429b165501f71330f7fa8",
+      "source_package": "Claude for Financial Advisors-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c4268d4abed8904eb57e11ad857ba2bf5d11703114d7dc241f8ebd9002588608": {
+      "description_zh": "按家庭和复核时间段，综合CRM、投资组合、遗产税务、会议记录、往来邮件及MoneyGuide计划，生成含议程、谈话重点和行动的客户评审会前材料。",
+      "source": "Prepare a complete client review meeting prep document for a financial advisor, for whatever timeframe the review covers (quarterly, annual, ad hoc). Given a household name or email and a timeframe, pulls CRM context (Salesforce/Redtail/Wealthbox), portfolio data (Orion/Addepar/Envestnet-Tamarac), estate & tax status (Wealth.com), meeting notes (Zocks or CRM), recent correspondence (Gmail/Outlook), and the household's plan snapshot (MoneyGuide), then assembles a meeting-ready prep doc with agenda, talking points, and action items. Triggers on \"pre meeting\", \"/pre-meeting\", \"prep for [client]\", \"quarterly review prep\", \"get me ready for my meeting with [client]\", or \"client meeting tomorrow\".",
+      "source_sha256": "c4268d4abed8904eb57e11ad857ba2bf5d11703114d7dc241f8ebd9002588608",
+      "source_path": "skills/pre-meeting/SKILL.md",
+      "package_sha256": "97515eccc87a2e1b96127feb5e73b7f1396c0a393b1429b165501f71330f7fa8",
+      "source_package": "Claude for Financial Advisors-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fd264daeef7fa9dadd0b51e5ad7bfa78532a8896fc52ea5e6ce7f3a2333b0e09": {
+      "description_zh": "受理新潜客，资料尚缺时先检索连接系统或请求上传，清洗账户报表导出截图，生成易懂摘要、分析交接和后续预期说明，可批准后作Gmail草稿；不产出提案、不推荐配置或报价。",
+      "source": "Start a new prospect's intake, with or without their files in hand — a request naming a new prospect and attaching no documents is a normal starting point, because Step 1 searches the connected tools or asks the advisor to upload. Cleans and normalizes their account files (statements, exports, screenshots) into a consolidated view, then hands back a plain-English prospect summary, a detailed analyst handoff the full proposal gets built from, and a friendly \"what to expect\" memo, offered as a Gmail draft on approval. Does not produce the proposal, recommend an allocation, or quote fees. Triggers on \"prospect intake\", \"/prospect-intake\", \"new prospect intake\", \"clean up [prospect]'s statements\", \"process [prospect]'s files\", \"what to expect note for [prospect]\" — and on how an advisor raises a new prospect before any file exists: \"I met with a potential client/customer\", \"[name] is interested in becoming a client\", \"I have a new prospect\", \"how should I proceed with [name]\".",
+      "source_sha256": "fd264daeef7fa9dadd0b51e5ad7bfa78532a8896fc52ea5e6ce7f3a2333b0e09",
+      "source_path": "skills/prospect-intake/SKILL.md",
+      "package_sha256": "97515eccc87a2e1b96127feb5e73b7f1396c0a393b1429b165501f71330f7fa8",
+      "source_package": "Claude for Financial Advisors-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fe1c3b61bfeacb933e910867a396907f77381d6acd15e922e33a89aeeec6ff9": {
+      "description_zh": "用渐进披露优化过大的CLAUDE.md、AGENTS.md及copilot-instructions.md，自动识别格式和内容层级、采用各自原生机制生成子文档并改写主文件，确保信息无损。",
+      "source": "Optimize oversized agent instruction files using progressive disclosure. Handles CLAUDE.md (Claude Code), AGENTS.md (OpenAI Codex / GitHub Copilot agents), and copilot-instructions.md (GitHub Copilot). Auto-detects all three formats in your repo, analyzes content tiers, creates sub-documents using each format's native mechanism, and rewrites the main file with zero information loss. Triggers: optimize CLAUDE.md, AGENTS.md too long, reduce copilot-instructions.md, agent instructions file too large, shrink context file, apply progressive disclosure, instructions file bloated",
+      "source_sha256": "2fe1c3b61bfeacb933e910867a396907f77381d6acd15e922e33a89aeeec6ff9",
+      "source_path": "SKILL.md",
+      "package_sha256": "d8cfd3ce765db8bb9b56f8f011be719fb32aa980b130b29a427c6b4c3d8bec0d",
+      "source_package": "Claude MD Optimizer-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e28d9f9f83e0862cb978d19f68fd9219d75ac49c4743a9b752368ea3e6c7e01a": {
+      "description_zh": "自动评审代码变更，展示发现供人工批注，再派修复团队处理并循环至无问题。",
+      "source": "Automated code review and swarm remediation — reviews changes, presents findings for human annotation, then dispatches a fixer team to remediate. Loops until clean.",
+      "source_sha256": "e28d9f9f83e0862cb978d19f68fd9219d75ac49c4743a9b752368ea3e6c7e01a",
+      "source_path": "skills/review-loop/SKILL.md",
+      "package_sha256": "30bcd3b82fa629beb88f48c80599bef2a7339153fa1237bbd3769b3bf31d1040",
+      "source_package": "Claude Review Loop-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abe839aef6be957a761f184a527cf3e5bfe4675c55c79bd7fb4f9ce7a45619f0": {
+      "description_zh": "依据Claude插件或技能仓库URL/路径，导出转换或打包为Perplexity Computer、Mistral Vibe Work、ChatGPT等Agent Skills兼容平台，并检查可移植性。",
+      "source": "Cárgala cuando el usuario dé una URL o ruta de un repositorio con un plugin o skills de Claude y quiera exportarlas, convertirlas o empaquetarlas para otra plataforma — Perplexity Computer, Mistral Vibe Work, ChatGPT u otro agente compatible con Agent Skills. Se activa con \"exporta este plugin\", \"conviértelo para Perplexity\", \"hazme el zip para Mistral\", \"¿es portable esta skill?\", \"/exportar-skills\".",
+      "source_sha256": "abe839aef6be957a761f184a527cf3e5bfe4675c55c79bd7fb4f9ce7a45619f0",
+      "source_path": "skills/plugin-to-agentskills/SKILL.md",
+      "package_sha256": "5def79624cede90bacdfd0a04031deb38d3d7d5aa89e77b798a0d3d04615df20",
+      "source_package": "Claude Skills Exporter-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f11c88c685717f3806e88a6d213cdbc5aead313f50829f19542e49bb4e820955": {
+      "description_zh": "检查插件技能更新、审计已安装版本或升级Claude Code插件至最新版本。",
+      "source": "Use when the user wants to check for plugin/skill updates, audit installed versions, or update Claude Code plugins to their latest versions. Triggers on \"check updates\", \"update skills\", \"update plugins\", \"audit plugins\".",
+      "source_sha256": "f11c88c685717f3806e88a6d213cdbc5aead313f50829f19542e49bb4e820955",
+      "source_path": "skills/skills-updater/SKILL.md",
+      "package_sha256": "7fbeeb153748f0d1516e856a8243665141e21df52ef2c9adee8ff6fc759ef6b4",
+      "source_package": "Claude skills updater-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14379860ca2c802e36367263359bcaecfddf70d013c0169b36490600049f9066": {
+      "description_zh": "按项目和时间线展示Claude Code令牌用量与估算API成本。",
+      "source": "Show Claude Code token usage and estimated API cost broken down by project and timeline.",
+      "source_sha256": "14379860ca2c802e36367263359bcaecfddf70d013c0169b36490600049f9066",
+      "source_path": "skills/claude-stats/SKILL.md",
+      "package_sha256": "3dc12322e8d93626c1f040c8b74896710edc576ea40c8c01bd87b08c76bf8c83",
+      "source_package": "Claude Stats-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d723f8f20bdb529dc00f15b054e77dc7aa50672563dbae15937f7c921718ad7": {
+      "description_zh": "管理Claude Code配置及会话备份，同步、列举恢复会话和查看状态，支持环境迁移。",
+      "source": "Manage Claude Code backups — sync config and sessions, list/restore sessions, check status. Use when the user asks about backups, restoring sessions, or migrating their Claude environment.",
+      "source_sha256": "3d723f8f20bdb529dc00f15b054e77dc7aa50672563dbae15937f7c921718ad7",
+      "source_path": "skills/backup/SKILL.md",
+      "package_sha256": "9ed9572fb20858747acd6f9d3559496223cef6c8100f27b1d84a388446ea364d",
+      "source_package": "claude-backup-3.2.5-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7081da199a4dbb649959e1a5df6fb32dc58142ea9195227331116809fcefc773": {
+      "description_zh": "作为博客发布双模式助手，按简报写作润色SEO架构分析再利用QA八步发布新文，或审计旧文提出优先改进；必须安装AgriciDaniel/claude-blog，缺失时停止并说明安装。",
+      "source": "Dual-mode blog publishing assistant. Mode 1 (Ship) walks a user through the 8-step lifecycle to publish a new post (brief, write, humanize, SEO check, schema, analyze, repurpose, final QA). Mode 2 (Score) retroactively audits an existing published post against the same 8-step checklist and returns a prioritized retrofit list. REQUIRES the AgriciDaniel/claude-blog plugin installed (hard dependency). Detects missing plugin at startup and aborts with a clear install message.",
+      "source_sha256": "7081da199a4dbb649959e1a5df6fb32dc58142ea9195227331116809fcefc773",
+      "source_path": "skills/assistant/SKILL.md",
+      "package_sha256": "7a7c732e756dd436367105405ba0be30d868ff6e014cbe1279e933513f99b286",
+      "source_package": "claude-blog-assistant-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c08704651536db7f70c3341b1ced8913b2a0e60729cca901dfe27af495414d8": {
+      "description_zh": "仅人工调用，对工作树、差异或GitHub PR开展六位独立只读专家的全面评审，覆盖正确性、安全、策略边界、测试证据、架构和接口，合并发现为报告。",
+      "source": "Use when the user asks for a thorough, multi-angle code review of a working tree, git diff, or GitHub pull request before merging — dispatches six independent read-only specialists (correctness, security, policy/trust-boundary, test-evidence, architecture, interface) and aggregates their findings into one report. Manual invocation only.",
+      "source_sha256": "5c08704651536db7f70c3341b1ced8913b2a0e60729cca901dfe27af495414d8",
+      "source_path": "skills/review-council/SKILL.md",
+      "package_sha256": "4d67d9128cf9ccf10bdf7d29be6e5ad0e141b25387bc909c2f0f903e31fecec0",
+      "source_package": "claude-code-review-council-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db90afcde3c999d6770d79032c8558d89b45cddd23275621967955d5b3982eb3": {
+      "description_zh": "分析代码库并推荐适合的Claude Code钩子、子代理、技能、插件与MCP自动化，用于初始化或改善项目工作流程。",
+      "source": "Analyze a codebase and recommend Claude Code automations (hooks, subagents, skills, plugins, MCP servers). Use when user asks for automation recommendations, wants to optimize their Claude Code setup, mentions improving Claude Code workflows, asks how to first set up Claude Code for a project, or wants to know what Claude Code features they should use.",
+      "source_sha256": "db90afcde3c999d6770d79032c8558d89b45cddd23275621967955d5b3982eb3",
+      "source_path": "skills/claude-automation-recommender/SKILL.md",
+      "package_sha256": "cade180f4d0e20ee0f5efee5e44659a217b1e374d7410b4e071ee7e1cc6ca96f",
+      "source_package": "claude-code-setup-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d17765b6787008b05a68bea018807c8de9b621b272917c256a834e2f6b92454c": {
+      "description_zh": "临时为今天所有令牌上限添加额外额度，延后触及配额。",
+      "source": "Snooze the token quota — temporarily adds extra tokens to all limits for today",
+      "source_sha256": "d17765b6787008b05a68bea018807c8de9b621b272917c256a834e2f6b92454c",
+      "source_path": "skills/snooze/SKILL.md",
+      "package_sha256": "2d1b18fa0d0b72cea8b38398800af8fea206e6506331640a25f389c38b7f3ffd",
+      "source_package": "claude-code-tokenbudget-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "30736a1a8243a6c758f0b17417e626b64bf9dec1c8a8f0b06ed57d63a894a416": {
+      "description_zh": "展示今日Claude Code令牌使用和额度状态。",
+      "source": "Show today's Claude Code token usage and quota status",
+      "source_sha256": "30736a1a8243a6c758f0b17417e626b64bf9dec1c8a8f0b06ed57d63a894a416",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "2d1b18fa0d0b72cea8b38398800af8fea206e6506331640a25f389c38b7f3ffd",
+      "source_package": "claude-code-tokenbudget-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf138feb8038b4d399a28cfd343addb5510d5e51c341aae715cecb1215adc9cb": {
+      "description_zh": "循环分诊PR评论、解决明确冲突及修复CI，使PR持续具备合并条件。",
+      "source": "Keep a PR merge-ready by triaging comments, resolving clear conflicts, and fixing CI in a loop.",
+      "source_sha256": "cf138feb8038b4d399a28cfd343addb5510d5e51c341aae715cecb1215adc9cb",
+      "source_path": "cursor-config/skills-cursor/babysit/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "50d23fd9dee38a20197a369beabcdb01bfd9d01fa6de7386867cb301d3c69c70": {
+      "description_zh": "在Cursor聊天旁创建实时React Canvas展示独立分析成品，如数量分析、账单调查、安全架构审计、图表时间线或交互工具；原说明要求优先将MCP数据成果置于Canvas，并在处理.canvas.tsx时读取技能。",
+      "source": "A Cursor Canvas is a live React app that the user can open beside the chat. You MUST use a canvas when the agent produces a standalone analytical artifact — quantitative analyses, billing investigations, security audits, architecture reviews, data-heavy content, timelines, charts, tables, interactive explorations, repeatable tools, or any response that benefits from visual layout. Especially prefer a canvas when presenting results from MCP tools (Datadog, Databricks, Linear, Sentry, Slack, etc.) where the data is the deliverable — render it in a rich canvas rather than dumping it into a markdown table or code block. If you catch yourself about to write a markdown table, stop and use a canvas instead. You MUST also read this skill whenever you create, edit, or debug any .canvas.tsx file.",
+      "source_sha256": "50d23fd9dee38a20197a369beabcdb01bfd9d01fa6de7386867cb301d3c69c70",
+      "source_path": "cursor-config/skills-cursor/canvas/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65e95355db3475487baebfc72e92c5f8f09a2b26d2cc21982bc3ac7d8eb5c0e4": {
+      "description_zh": "创建Cursor钩子、hooks.json和钩子脚本，以自动化智能体事件前后行为。",
+      "source": "Create Cursor hooks. Use when you want to create a hook, write hooks.json, add hook scripts, or automate behavior around agent events.",
+      "source_sha256": "65e95355db3475487baebfc72e92c5f8f09a2b26d2cc21982bc3ac7d8eb5c0e4",
+      "source_path": "cursor-config/skills-cursor/create-hook/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "009f4d9fa1b2e9e66a4d11de5f0c2c7389d3ed72d634b76737d06209f956bb59": {
+      "description_zh": "创建Cursor持久规则、编码规范、项目约定、文件模式及RULE.md，指导.cursor/rules和AGENTS.md配置。",
+      "source": "Create Cursor rules for persistent AI guidance. Use when you want to create a rule, add coding standards, set up project conventions, configure file-specific patterns, create RULE.md files, or asks about .cursor/rules/ or AGENTS.md.",
+      "source_sha256": "009f4d9fa1b2e9e66a4d11de5f0c2c7389d3ed72d634b76737d06209f956bb59",
+      "source_path": "cursor-config/skills-cursor/create-rule/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "32c202c6902f8a689a4b44b4340c1d04e20e40069c7286417f879639df1233c6": {
+      "description_zh": "指导编写Cursor Agent Skills，说明技能结构、最佳实践及SKILL.md格式。",
+      "source": "Guides users through creating effective Agent Skills for Cursor. Use when you want to create, write, or author a new skill, or asks about skill structure, best practices, or SKILL.md format.",
+      "source_sha256": "32c202c6902f8a689a4b44b4340c1d04e20e40069c7286417f879639df1233c6",
+      "source_path": "cursor-config/skills-cursor/create-skill/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1ff251de38475fb74fdcfbe8d5666b29b6b631f35be3ca764cff1faacf2fbc88": {
+      "description_zh": "创建有自定义提示的Cursor专用子代理，包括代码评审、调试或领域助手及任务专属代理。",
+      "source": "Create custom subagents for specialized AI tasks. Use when you want to create a new type of subagent, set up task-specific agents, configure code reviewers, debuggers, or domain-specific assistants with custom prompts.",
+      "source_sha256": "1ff251de38475fb74fdcfbe8d5666b29b6b631f35be3ca764cff1faacf2fbc88",
+      "source_path": "cursor-config/skills-cursor/create-subagent/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2914c772c6da5d8aa2cf711ea4ff89489eabb675292fc10406267225d2baeaa6": {
+      "description_zh": "将Cursor智能应用的.mdc规则和.md斜杠命令转换为.cursor/skills下Agent Skills的SKILL.md格式，支持规则命令迁移与整合。",
+      "source": "Convert 'Applied intelligently' Cursor rules (.cursor/rules/*.mdc) and slash commands (.cursor/commands/*.md) to Agent Skills format (.cursor/skills/). Use when you want to migrate rules or commands to skills, convert .mdc rules to SKILL.md format, or consolidate commands into the skills directory.",
+      "source_sha256": "2914c772c6da5d8aa2cf711ea4ff89489eabb675292fc10406267225d2baeaa6",
+      "source_path": "cursor-config/skills-cursor/migrate-to-skills/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "177ff8461b4376e91b8bb411ae5c6ad5146091bd716a538ff7723303cce5d2f9": {
+      "description_zh": "仅在用户明确调用/shell时，将后续文字作为原样Shell命令在终端执行。",
+      "source": "Runs the rest of a /shell request as a literal shell command. Use only when the user explicitly invokes /shell and wants the following text executed directly in the terminal.",
+      "source_sha256": "177ff8461b4376e91b8bb411ae5c6ad5146091bd716a538ff7723303cce5d2f9",
+      "source_path": "cursor-config/skills-cursor/shell/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "918543e351975ee3eaaa6bee98e5208990bc89fe8f1c6370a594abce4cc51572": {
+      "description_zh": "将当前会话变更、分支或PR拆分为较小、便于评审的拉取请求。",
+      "source": "Split current work into small reviewable PRs. Use when the user asks to split a chat, set of changes, branch, or PR.",
+      "source_sha256": "918543e351975ee3eaaa6bee98e5208990bc89fe8f1c6370a594abce4cc51572",
+      "source_path": "cursor-config/skills-cursor/split-to-prs/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f0888368be6c064aca4cff0f74d62350d36d4061248c19ee800456dbd150775a": {
+      "description_zh": "配置CLI自定义状态栏或提示底部，添加提示上方的会话上下文。",
+      "source": "Configure a custom status line in the CLI. Use when the user mentions status line, statusline, statusLine, CLI status bar, prompt footer customization, or wants to add session context above the prompt.",
+      "source_sha256": "f0888368be6c064aca4cff0f74d62350d36d4061248c19ee800456dbd150775a",
+      "source_path": "cursor-config/skills-cursor/statusline/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a2dc646ace81d842eff7ca085cdb4d13f55fffc66435866f86e66eb0c65516e": {
+      "description_zh": "查看修改~/.cursor/cli-config.json中的Cursor CLI设置，包括权限、批准模式、vim、显示、沙箱及其他偏好。",
+      "source": "View and modify Cursor CLI configuration settings in ~/.cursor/cli-config.json. Use when the user wants to change CLI settings, configure permissions, switch approval mode, enable vim mode, toggle display options, configure sandbox, or manage any CLI preferences.",
+      "source_sha256": "9a2dc646ace81d842eff7ca085cdb4d13f55fffc66435866f86e66eb0c65516e",
+      "source_path": "cursor-config/skills-cursor/update-cli-config/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5777f9cc4c3d2c0bdc5ed2864b22fe248d97b7851fd32ff566a5d90c7e7f15bd": {
+      "description_zh": "修改Cursor/VSCode用户settings.json中的编辑器、主题、字体、制表、保存格式化、自动保存和快捷键等设置。",
+      "source": "Modify Cursor/VSCode user settings in settings.json. Use when you want to change editor settings, preferences, configuration, themes, font size, tab size, format on save, auto save, keybindings, or any settings.json values.",
+      "source_sha256": "5777f9cc4c3d2c0bdc5ed2864b22fe248d97b7851fd32ff566a5d90c7e7f15bd",
+      "source_path": "cursor-config/skills-cursor/update-cursor-settings/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd42d138fb5bdf654900ba7c03210e9b7f16e3dcdd81f43482820252c4e8b069": {
+      "description_zh": "依据Claude Code提供的大纲、模板、颜色和内容指令，实现面向企业的单HTML演示幻灯片，提供43种模板及14种动画。",
+      "source": "法人向けHTMLプレゼンスライドの実装エンジン。Claude Codeから指示書（アウトライン＋テンプレート指定＋カラー＋コンテンツ）を受け取り、単一HTMLファイルとして実装する。43種テンプレート＋14種アニメーション。トリガー：プレゼン実装、スライドHTML生成、提案資料コーディング。",
+      "source_sha256": "bd42d138fb5bdf654900ba7c03210e9b7f16e3dcdd81f43482820252c4e8b069",
+      "source_path": "cursor-config/skills/biz-presentation-engine/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "283184378b9ed0630b7ea9f5811aeeda53e748d1b5cea7281b228304f4a7bfdf": {
+      "description_zh": "编写Cursor.mdc规则与自定义子代理，支持重构拆分大规则、选择子代理或技能、配置模型/只读/后台以及替代重复委派提示。",
+      "source": "Authors Cursor Rules (.cursor/rules/*.mdc) and custom Subagents (.cursor/agents/*.md or ~/.cursor/agents). Use when creating or refactoring rules/subagents, splitting large rules, choosing subagent vs skill, setting model/readonly/background, or replacing repeated delegation prompts.",
+      "source_sha256": "283184378b9ed0630b7ea9f5811aeeda53e748d1b5cea7281b228304f4a7bfdf",
+      "source_path": "cursor-config/skills/create-cursor-agent/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5246ae727918f6d93a5326ad04febdc5e919b6089d84135bcf22a96a0f191690": {
+      "description_zh": "为Cursor个人或项目范围编写可复用SKILL.md，创建拆分重构技能、标准化结构并将重复聊天提示沉淀为技能，补充内置create-skill。",
+      "source": "Authors reusable Agent Skills (SKILL.md) for personal (~/.cursor/skills/) or project (.cursor/skills/) scope. Use when the user wants to create, split, or refactor a skill; standardize skill shape; or migrate repeated chat prompts into a skill. Complements Cursor's built-in create-skill in skills-cursor.",
+      "source_sha256": "5246ae727918f6d93a5326ad04febdc5e919b6089d84135bcf22a96a0f191690",
+      "source_path": "cursor-config/skills/create-cursor-skill/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b302b19e2191e8e605418559096821945a527cd3caadfa74e40bb30dc9eae99": {
+      "description_zh": "将Google Stitch格式DESIGN.md作为UI契约，使用awesome-design-md预设或自定义参考，映射Tailwind/shadcn令牌并解决与站点或体验文档冲突。",
+      "source": "Uses Google Stitch–format DESIGN.md as the UI contract: VoltAgent awesome-design-md (https://github.com/VoltAgent/awesome-design-md.git) presets or custom DESIGN.md, token mapping to Tailwind/shadcn, conflict rules vs docs/site or docs/ux-design. Use when the user clones or copies from awesome-design-md, adds DESIGN.md, picks a preset site, or wants strong agent-readable UI reference without Figma. Always Read this SKILL before reading preset DESIGN.md files per global-agent-workflow.mdc.",
+      "source_sha256": "1b302b19e2191e8e605418559096821945a527cd3caadfa74e40bb30dc9eae99",
+      "source_path": "cursor-config/skills/design-md-reference/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "061588fbb49aafe058e491ce62355605523bc18d1d59298235420c79e8771f1d": {
+      "description_zh": "通过Figma MCP组织在Figma内完成设计的工作，从用户优先成果进入Canvas/MCP执行，需figma-use并联动官方配套技能。",
+      "source": "Figma MCP で「設計を Figma 上で完結」させる進行役。ユーザーファースト成果物→Canvas/MCP 実行。figma-use 必須・公式付属 Skill 連携（全PJ共通）。",
+      "source_sha256": "061588fbb49aafe058e491ce62355605523bc18d1d59298235420c79e8771f1d",
+      "source_path": "cursor-config/skills/figma-mcp-design-orchestrator/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f56cecc2ea7c927b372fc3ae5aa513683d308d45db4c0bc2320db96711aa9ff8": {
+      "description_zh": "在编码前设计产品UI/UX、信息结构、流程、状态、视觉、可访问性及交接，适用于仪表板SaaS和应用设计系统；落地页与企业站点转site-build-orchestrator。",
+      "source": "プロダクトの UI/UX・画面体験をコード前に設計する（全PJ共通）。情報設計、フロー、状態設計、視覚方針、アクセシビリティ、ハンドオフ。LP/コーポサイト中心は site-build-orchestrator。トリガー例：UIが微妙、UX見直し、画面設計、ワイヤー、情報設計、ダッシュボード、SaaS、アプリUI、デザインシステム、デザイン承認前の設計。",
+      "source_sha256": "f56cecc2ea7c927b372fc3ae5aa513683d308d45db4c0bc2320db96711aa9ff8",
+      "source_path": "cursor-config/skills/product-ui-ux-design/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f11d55730a7941adc9f5ed599a8c6b70aebc5871684ffb1f6d1c2f9f1e54f8fa": {
+      "description_zh": "帮助作者处理评审意见，按严重性分诊、核验优先和批次决定实施顺序，支持有依据反驳、文档改写与集中回应，不限GitHub行内评论。",
+      "source": "レビュー指摘を受けた作者向け。重大度トリアージ・反論パターン・バッチ処理で、検証ファーストに実装順序を決める。GitHub インラインに限らず文書改稿・議事・一括応答にも対応する。",
+      "source_sha256": "f11d55730a7941adc9f5ed599a8c6b70aebc5871684ffb1f6d1c2f9f1e54f8fa",
+      "source_path": "cursor-config/skills/receiving-code-review/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "27de78091d99ac56d7b62ba938001c18fe4d737b980130166997dd70b8dc1561": {
+      "description_zh": "帮助作者准备评审包，明确差异、风险、关注点与环境，适用于代码PR、咨询文档和设计计划，并对接各评审技能的共用输出契约。",
+      "source": "レビュー依頼者（作者）が依頼パッケージを整え、差分定義・リスク・観点・環境を揃える。コード PR に限らずコンサル成果物・文書・設計計画にも使い、各 review-* スキルの共通出力契約に接続する。",
+      "source_sha256": "27de78091d99ac56d7b62ba938001c18fe4d737b980130166997dd70b8dc1561",
+      "source_path": "cursor-config/skills/requesting-code-review/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7994e5a6d6c186e02a93dae84293955e5c98aedf705fbb4ac81ab48bebebfc1": {
+      "description_zh": "评审前端变更，依据WCAG 2.1核验可访问性、状态和打包体积，并检查UI差异与规范流程一致性。",
+      "source": "フロントエンド変更のレビュー。WCAG 2.1 の観点に沿って a11y・状態・バンドルを検証し、UI 差分と仕様プロセスの整合を扱う。",
+      "source_sha256": "f7994e5a6d6c186e02a93dae84293955e5c98aedf705fbb4ac81ab48bebebfc1",
+      "source_path": "cursor-config/skills/review-frontend/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7f6e91724e572e41159053c70237f824ba85546e6ab5118e18f88c5b2e51d61": {
+      "description_zh": "基于OWASP Top 10评审变更安全，核验认证、授权、密钥、输入及依赖。",
+      "source": "変更差分のセキュリティレビュー。OWASP Top 10 を起点に認証・認可・秘密・入力・依存関係を検証する。",
+      "source_sha256": "d7f6e91724e572e41159053c70237f824ba85546e6ab5118e18f88c5b2e51d61",
+      "source_path": "cursor-config/skills/review-security/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a605e9585c627ef2e08b1c89025f94a45fdb80bfcbf57be1906280042dbc8340": {
+      "description_zh": "为shadcn/ui与Motion构建的营销企业界面制定设计简报，涵盖可访问性、动效、区块结构及组件复用标准。",
+      "source": "shadcn/ui と Motion を使うマーケ・コーポ向け UI の判断基準。a11y・motion・セクション構造・コンポーネント再利用のブリーフ作成用（全PJ共通）。",
+      "source_sha256": "a605e9585c627ef2e08b1c89025f94a45fdb80bfcbf57be1906280042dbc8340",
+      "source_path": "cursor-config/skills/shadcn-motion-ui-brief/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6d80769023de09989ced442178f6de6f81a8e373db9bc1bc1021736bc60f8b94": {
+      "description_zh": "编排落地页、企业站和服务页面制作，通过技能及子代理分阶段处理战略、设计、计划批准、实现、审计和Playwright/MCP端到端验证。",
+      "source": "LP・コーポレート・サービスページのサイト制作（全PJ共通）。Skill + Subagent で Phase 委譲。戦略→設計→（計画承認）→実装→監査→E2E（Playwright / MCP）。",
+      "source_sha256": "6d80769023de09989ced442178f6de6f81a8e373db9bc1bc1021736bc60f8b94",
+      "source_path": "cursor-config/skills/site-build-orchestrator/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ebb0fcc138e6d264246b18f6562a1e8a4e93ae09de1c32517328cfafb6e0a77d": {
+      "description_zh": "为营销网站开展E2E验证，选择Playwright CLI、Cursor终端或Playwright MCP，以docs/site/e2e-scenarios.md作为统一场景依据。",
+      "source": "マーケサイト向け E2E。Playwright CLI、Cursor エージェントのターミナル実行、Playwright MCP（user-playwright）の使い分け。docs/site/e2e-scenarios.md を単一の真実にする（全PJ共通）。",
+      "source_sha256": "ebb0fcc138e6d264246b18f6562a1e8a4e93ae09de1c32517328cfafb6e0a77d",
+      "source_path": "cursor-config/skills/site-e2e-playwright/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e2516b71afbb5702cb77a240d3eaaa61cc0c0264b52b28e41b83f2329e39b71": {
+      "description_zh": "规范产品级Tailwind使用，包括cn()、设计令牌、减少任意值、字体层级及容器查询的选择。",
+      "source": "プロダクト品質の Tailwind 運用。cn()、デザイントークン、任意値の抑制、タイポ階層、コンテナクエリの判断（全PJ共通）。",
+      "source_sha256": "4e2516b71afbb5702cb77a240d3eaaa61cc0c0264b52b28e41b83f2329e39b71",
+      "source_path": "cursor-config/skills/tailwind-product-ui-conventions/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "260b4fbf2a2e93d85cc9a45ef6276ee9a6671b4190653762779e761c86f5a1df": {
+      "description_zh": "制定应用与Web产品的用户优先设计，先明确目的、任务、认知负荷、错误与可访问性，再进入UI、Figma和实现。",
+      "source": "アプリ・Web 製品のユーザーファースト設計の正本。目的・タスク・認知負荷・エラー・Accessibility を先に固定してから UI/Figma/実装に進む（全PJ共通）。",
+      "source_sha256": "260b4fbf2a2e93d85cc9a45ef6276ee9a6671b4190653762779e761c86f5a1df",
+      "source_path": "cursor-config/skills/user-first-product-design/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b94c11a90fef8fdfd0f05da8bf1cde2d87faff76675841314d99b5b09e37fd6e": {
+      "description_zh": "编排应用开发，将编码工作委派给Cursor Agent。",
+      "source": "App Development Orchestrator - delegates coding to Cursor Agent",
+      "source_sha256": "b94c11a90fef8fdfd0f05da8bf1cde2d87faff76675841314d99b5b09e37fd6e",
+      "source_path": "skills/app-development/SKILL.md",
+      "package_sha256": "66ed411af483235717182aa6755fb8a46021f8ca22d0b4c70b897bfc12f0bdeb",
+      "source_package": "claude-cursor-orchestration-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fdf67e3912bcec5d65156e864ddd92e821d91c64e0592a5bcfdf511bff34a06e": {
+      "description_zh": "以第一性原理分析问题，揭示隐藏假设、找出基础事实、重新构建方案并识别影响最大的行动。",
+      "source": "First-principles analyst. Surfaces hidden assumptions, finds foundational truths, rebuilds from scratch, identifies the high-leverage move.",
+      "source_sha256": "fdf67e3912bcec5d65156e864ddd92e821d91c64e0592a5bcfdf511bff34a06e",
+      "source_path": "skills/deconstruct/SKILL.md",
+      "package_sha256": "f074a298f232d5ff248a7e3b2a343266f3b01c8ae8e8182bc5b169374b005095",
+      "source_package": "claude-deconstruct-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c39ceda13a31f900170e9436dcc9a11a5a559f1dca97af16cc304811cf79b28": {
+      "description_zh": "在隔离的模拟HOME中执行claude-for-msft-365-install管理脚本和命令，验证变更。",
+      "source": "Verify changes to the claude-for-msft-365-install admin scripts and commands by driving them against an isolated fake $HOME.",
+      "source_sha256": "4c39ceda13a31f900170e9436dcc9a11a5a559f1dca97af16cc304811cf79b28",
+      "source_path": ".claude/skills/verify/SKILL.md",
+      "package_sha256": "bf6a5bb0918b761c520ff4800ba64ab8e2fa9319b1ecdeae0a3da14fb5dfb703",
+      "source_package": "claude-for-msft-365-install-0.1.13-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e95562dab75228a87d4a4681583303e7ed82c56074a4d9a75dfcddff668dcbb": {
+      "description_zh": "为当前仓库运行确定的平台健康检查，总结就绪状态并建议下一步。",
+      "source": "Run the deterministic platform health check, summarize readiness, and recommend the next step for this repository.",
+      "source_sha256": "8e95562dab75228a87d4a4681583303e7ed82c56074a4d9a75dfcddff668dcbb",
+      "source_path": "skills/bootstrap/SKILL.md",
+      "package_sha256": "0a72d287a81d35f5abc1b25c33d2d5593c5ca06fa04de9d2068b26eee60937d8",
+      "source_package": "claude-forge-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb383bb6df717c84bcdb8a35500222545488fe76bff8f4f53877791106e72b7c": {
+      "description_zh": "实施中发现已批准规范与仓库实际不一致时，记录结构化差距说明。",
+      "source": "Record a structured note when the approved spec and repository reality diverge during implementation.",
+      "source_sha256": "fb383bb6df717c84bcdb8a35500222545488fe76bff8f4f53877791106e72b7c",
+      "source_path": "skills/gap-note/SKILL.md",
+      "package_sha256": "0a72d287a81d35f5abc1b25c33d2d5593c5ca06fa04de9d2068b26eee60937d8",
+      "source_package": "claude-forge-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d295aa33328d67f32e1069f325bb6f68363b5d05a58a95f27cf3ee7b928bff68": {
+      "description_zh": "生成标准里程碑完成报告，包含证据、修改文件、验证结果、剩余风险与下一待办。",
+      "source": "Produce a standardized milestone completion report with evidence, changed files, verification results, residual risks, and the next todo.",
+      "source_sha256": "d295aa33328d67f32e1069f325bb6f68363b5d05a58a95f27cf3ee7b928bff68",
+      "source_path": "skills/milestone-report/SKILL.md",
+      "package_sha256": "0a72d287a81d35f5abc1b25c33d2d5593c5ca06fa04de9d2068b26eee60937d8",
+      "source_package": "claude-forge-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da3523d88047bdb337e9832144317a2c1e79de6ed0f839960318a38354ef8a49": {
+      "description_zh": "在实施前组织从需求到共识的多轮评审与结构化分析。",
+      "source": "Orchestrate a multi-review pass from requirements through consensus. Use when you want a structured analysis cycle before implementation.",
+      "source_sha256": "da3523d88047bdb337e9832144317a2c1e79de6ed0f839960318a38354ef8a49",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "0a72d287a81d35f5abc1b25c33d2d5593c5ca06fa04de9d2068b26eee60937d8",
+      "source_package": "claude-forge-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b31c5d094da37afbb2ec91e5e83fcc9c33dbe1dbe1a60558211fe80cb8701cd": {
+      "description_zh": "在结束会话或切换里程碑前，为下一Claude Code会话生成精确交接包。",
+      "source": "Generate a precise handoff packet for the next Claude Code session. Use before ending a session or when switching to a new milestone.",
+      "source_sha256": "6b31c5d094da37afbb2ec91e5e83fcc9c33dbe1dbe1a60558211fe80cb8701cd",
+      "source_path": "skills/session-handoff/SKILL.md",
+      "package_sha256": "0a72d287a81d35f5abc1b25c33d2d5593c5ca06fa04de9d2068b26eee60937d8",
+      "source_package": "claude-forge-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8e9a68e341c9739926a3fc27081791326610a220d5c20d6a2bcabd3e874c06a": {
+      "description_zh": "执行结构化验证、记录真实命令结果，并区分已验证和未验证事项。",
+      "source": "Run structured verification, capture actual command outcomes, and summarize what is verified versus unverified.",
+      "source_sha256": "d8e9a68e341c9739926a3fc27081791326610a220d5c20d6a2bcabd3e874c06a",
+      "source_path": "skills/test/SKILL.md",
+      "package_sha256": "0a72d287a81d35f5abc1b25c33d2d5593c5ca06fa04de9d2068b26eee60937d8",
+      "source_package": "claude-forge-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3cf0b16c3e0e4e3b5a393508e2690fae4d8f3aa0c1e85bb6c722833dd59aefd9": {
+      "description_zh": "为当前Git分支编写或更新交接笔记，记录目标、决策理由、实施陷阱、完成与待办、关键代码及验证方式，供新代理接续；支持工作段结束、/handoff、跨仓库workstream或prune清理，后续同分支由钩子自动加载。",
+      "source": "Write or refresh the current git branch's handoff note — the non-code knowledge (goal, decisions and their rationale, gotchas found while implementing, what's done, what's still open, where the key code lives, how to verify) that a fresh agent on this branch should start with. Invoke when finishing a chunk of work on a branch, at the end of implementing a plan, or whenever the user types /handoff. Optionally takes free-text instructions to steer this note (what to focus on, include, or omit), or a subcommand — `workstream …` to set up/manage a multi-repo workstream, or `prune` to clean up orphan notes/workstreams. The note is auto-loaded into future sessions on the same branch by the branch-handoff SessionStart hook.",
+      "source_sha256": "3cf0b16c3e0e4e3b5a393508e2690fae4d8f3aa0c1e85bb6c722833dd59aefd9",
+      "source_path": "skills/handoff/SKILL.md",
+      "package_sha256": "17b83734ea8569a18beda2c4a8f843119b25da6cdaf51fca94578315b2cb0e04",
+      "source_package": "claude-handoff-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc6fd20aec25d3700bbb73cc2af7cc2c45e56279c039cd7dcef8aa3e6be8f47c": {
+      "description_zh": "访问Jira搜索总结分析工单或团队摘要，也支持创建分配、状态变更、关联、评论和字段更新。",
+      "source": "Access Jira to search, summarize, and analyze tickets. Use when the user mentions a Jira ticket key (e.g. PROJ-1234), asks for a team digest, or wants to search/query Jira. Also use when the user wants to create issues, assign tickets, change ticket status, link issues, add comments, update fields, or do anything Jira-related — even if they don't explicitly say \"Jira\".",
+      "source_sha256": "dc6fd20aec25d3700bbb73cc2af7cc2c45e56279c039cd7dcef8aa3e6be8f47c",
+      "source_path": "skills/jira/SKILL.md",
+      "package_sha256": "b522101641585471cf2d525eb8a8aa978d5470abd6def9715802f0909db4d1e8",
+      "source_package": "claude-jira-skill-1.0.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33d1334a5e76edc8239619789e2fdc8f01779462509d14057c4768985d013cd4": {
+      "description_zh": "审计编写重构CLAUDE.md以控制令牌预算，支持根目录、功能子目录、用户级及本地文件，处理过长、层级组织、去冗余与负向规则改写。",
+      "source": "Audit, compose, and refactor CLAUDE.md files so they stay under the token budget. Use when the user says \"audit my CLAUDE.md\", \"my CLAUDE.md is too long\", \"compose a CLAUDE.md\", \"refactor CLAUDE.md\", \"CLAUDE.md is eating tokens\", \"flip negative rules\", \"extract bloat out of CLAUDE.md\", \"set up the CLAUDE.md hierarchy\", \"write a CLAUDE.md for this project\", or any request to create, shrink, or reorganize a CLAUDE.md file. Works on the root CLAUDE.md, feature-level CLAUDE.md (in subdirs), user-level ~/.claude/CLAUDE.md, and local CLAUDE.local.md.",
+      "source_sha256": "33d1334a5e76edc8239619789e2fdc8f01779462509d14057c4768985d013cd4",
+      "source_path": "skills/claude-md-composer/SKILL.md",
+      "package_sha256": "a909d2d832c8cbbdba96e1f75e1cd4899cd8facd6d78faa77ccb7bb16aeaa72f",
+      "source_package": "claude-md-composer-1.0.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "983b0daec178f0ee6150697eec3126dfcd762355dcb84e28228c9fd933f096d6": {
+      "description_zh": "扫描仓库所有CLAUDE.md，按模板评估质量、输出报告并进行针对性改进，用于项目记忆维护优化。",
+      "source": "Audit and improve CLAUDE.md files in repositories. Use when user asks to check, audit, update, improve, or fix CLAUDE.md files. Scans for all CLAUDE.md files, evaluates quality against templates, outputs quality report, then makes targeted updates. Also use when the user mentions \"CLAUDE.md maintenance\" or \"project memory optimization\".",
+      "source_sha256": "983b0daec178f0ee6150697eec3126dfcd762355dcb84e28228c9fd933f096d6",
+      "source_path": "skills/claude-md-improver/SKILL.md",
+      "package_sha256": "d519a4e78a7cb4aef20c71ed0089d423643c6921fb2cdd46ba97dceb8bd2cb37",
+      "source_package": "claude-md-management-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a8eb78d308025ef2b921fa0012a2b30ac45ad8cfdf5ce10cb352bd80aa621e35": {
+      "description_zh": "通过/meeting-todos从会议笔记提取行动并加入待办，区分本人和他人任务；不用于一般任务管理或获取完整转录。",
+      "source": "Extract action items from a meeting note and add them to the to-do list. Separates your tasks from others' tasks. Trigger /meeting-todos. Do NOT use for general task management or pulling full meeting transcripts.",
+      "source_sha256": "a8eb78d308025ef2b921fa0012a2b30ac45ad8cfdf5ce10cb352bd80aa621e35",
+      "source_path": "skills/meeting-todos/SKILL.md",
+      "package_sha256": "7a50d5f242036e2ebef06059729e6e7e97e5bac5a02e6aebde725c04b2745443",
+      "source_package": "claude-meeting-todos-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b1af5c6ca61c5615980d926d619770a338ce7eaaba9389b5dbbe33a4f37d2e43": {
+      "description_zh": "为项目设置跨会话记忆，保存历史决策、偏好和上下文，并解释记忆类型、应记录内容与系统工作方式。",
+      "source": "This skill should be used when the user asks to \"set up memory\", \"configure memory\", \"add memory to my project\", \"remember things across sessions\", or mentions wanting Claude to recall past decisions, preferences, or context between conversations. Also activates when the user asks about memory types, what to remember, or how the memory system works.",
+      "source_sha256": "b1af5c6ca61c5615980d926d619770a338ce7eaaba9389b5dbbe33a4f37d2e43",
+      "source_path": "skills/structured-memory/SKILL.md",
+      "package_sha256": "700fe06ec3963dbc26b99b8d255551663f007816520a65d20ed95ab84122aa9d",
+      "source_package": "claude-memory-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ac511393d7c41b993d5fb293d27e856674f9527f9ddfd1cc43c5e4cb83a776a": {
+      "description_zh": "添加或移除Telegram、Slack、Teams、Lark及Webhook通知渠道。",
+      "source": "Add or remove notification channels (telegram, slack, teams, lark, webhook)",
+      "source_sha256": "3ac511393d7c41b993d5fb293d27e856674f9527f9ddfd1cc43c5e4cb83a776a",
+      "source_path": ".claude/skills/setup/SKILL.md",
+      "package_sha256": "fed5f8fc20d43cc62c92bea8647a87999df552a1c427a345146b296e74ba12f5",
+      "source_package": "claude-notify-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f0ab62f86a8ef2388bab7b58c6ba0ac9ced0b0395b17528be78be866a6388e4": {
+      "description_zh": "将Claude Sonnet 4.0/4.5或Opus 4.1代码、提示和API迁移至Opus 4.5，更新模型字符串及行为差异提示；不迁移Haiku 4.5。",
+      "source": "Migrate prompts and code from Claude Sonnet 4.0, Sonnet 4.5, or Opus 4.1 to Opus 4.5. Use when the user wants to update their codebase, prompts, or API calls to use Opus 4.5. Handles model string updates and prompt adjustments for known Opus 4.5 behavioral differences. Does NOT migrate Haiku 4.5.",
+      "source_sha256": "7f0ab62f86a8ef2388bab7b58c6ba0ac9ced0b0395b17528be78be866a6388e4",
+      "source_path": "skills/claude-opus-4-5-migration/SKILL.md",
+      "package_sha256": "8380ffe843ac935a0e89121f090c47dbf79717263892d93f006dcebe85227e9d",
+      "source_package": "claude-opus-4-5-migration-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c6c497f3a20f20ba47296ca43da44d069362d3479c0bb8e40663a7a11051ea5": {
+      "description_zh": "扫描近期会话、日志及决策的重复模式，沉淀为CLAUDE.md规则、概念笔记、写作素材或技能改进，可在周回顾后或会话结束自动检测；不替代周期日志回顾或单次决策。",
+      "source": "Instinct Engine — scans recent sessions, journals, and decisions for recurring patterns and turns them into concrete captures (CLAUDE.md rules, concept notes, writing seeds, skill improvements). Run after a weekly review or whenever you sense a pattern hardening. Also runs semi-autonomously via session-end auto-detection triggers. Do NOT use for weekly/monthly journal reviews, daily journaling, or one-off decisions.",
+      "source_sha256": "1c6c497f3a20f20ba47296ca43da44d069362d3479c0bb8e40663a7a11051ea5",
+      "source_path": "skills/patterns/SKILL.md",
+      "package_sha256": "7bf4e05b4c9f8848e8fd35d2b2fbfae94b0f32089979a44e91d8e998bfe73a39",
+      "source_package": "claude-patterns-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fcb6a38ef4856e30aedbda25dd860d1e17af448760c38c47fdd3e3f81d2514c3": {
+      "description_zh": "读取Claude Code会话JSONL生成每周表现报告，计算活动、一次编辑、子代理轮数、模型、项目分配和钩子六指标，按阈值诊断并将调整规则写至用户CLAUDE.md。",
+      "source": "Use this skill when the user says /performance, /digest, asks for a weekly Claude performance report, or wants to review how their Claude Code sessions have been going. Reads JSONL session files from ~/.claude/projects/, computes six effectiveness metrics (activity distribution, one-shot edit rate, subagent turn count, model mix, project allocation, hookify firings), fires diagnostic rules when thresholds breach, and writes behavioral rules into ~/.claude/CLAUDE.md so future sessions adapt. Closes the measurement loop for self-improving AI workflows.",
+      "source_sha256": "fcb6a38ef4856e30aedbda25dd860d1e17af448760c38c47fdd3e3f81d2514c3",
+      "source_path": "skills/performance/SKILL.md",
+      "package_sha256": "97313e0d7980c68c251a8e6b5317b6a9429b5b6443e6da0ef6fa8f389a5498f7",
+      "source_package": "claude-performance-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "99fcb1a7825eb69d06774174272effdd67b9df70636217d18443b73e8f27ce87": {
+      "description_zh": "执行完整项目发布流程，包含版本升级、测试、文档审查、需批准的发布说明、提交推送和GitHub Release，支持项目配置与生命周期覆盖；单独升版、标签或npm操作不触发完整流程。",
+      "source": "Use this skill when the user invokes `/claude-release:release` or asks to ship, cut, tag, or publish a release of the current project. Drives the full release workflow — version bump, tests, docs review, release-notes draft with approval gate, commit, push, and GitHub release. Trigger phrases include \"ship a release\", \"cut version X\", \"release this\", \"release v2.1\", \"tag a release\", \"publish a version\", \"make a release\", \"bump and tag\", \"/release\", \"/claude-release:release\". Does NOT trigger for partial release steps in isolation (\"just bump the version\", \"only push to npm\", \"only create the tag\") — those are direct tool calls, not the full flow. Auto-detects project context for typical projects; reads optional per-project config from `.claude/release.config.json` and lifecycle markdown overrides in `.claude/release/`.",
+      "source_sha256": "99fcb1a7825eb69d06774174272effdd67b9df70636217d18443b73e8f27ce87",
+      "source_path": "skills/release/SKILL.md",
+      "package_sha256": "2fa1622fc7dfdb82075317ba4703248614c7e25569ac8af58f686c504fe29110",
+      "source_package": "claude-release-2026.9.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ece4f9c913a1198201b58f6d1d602a8f80bfc043f8e49dd6636be4110322f716": {
+      "description_zh": "提供Claude Security工作菜单，选择全库或局部扫描、分支PR或提交差异扫描，或生成经代理小组核验的定向补丁供用户决定应用。",
+      "source": "The Claude Security menu — pick a job: scan the codebase (the whole repository or a scoped part of it), scan changes (this branch's or a pull request's diff, or one commit), or suggest patches (findings turned into targeted patch files, each verified by a panel of agents, that you apply when you choose).",
+      "source_sha256": "ece4f9c913a1198201b58f6d1d602a8f80bfc043f8e49dd6636be4110322f716",
+      "source_path": "skills/claude-security/SKILL.md",
+      "package_sha256": "ea6364bc155f53367a5f8e3aa5b11974835045efa0ff198e207faa877c1ad636",
+      "source_package": "claude-security-0.11.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e65f3fd4a78f86aae9a8cb9f99af3399d0f8089fdc64fed18f4b6e4da9e27d86": {
+      "description_zh": "在收到attachment_kind为voice的Telegram消息时下载语音并自动转写，以理解用户口述内容。",
+      "source": "Automatically transcribe Telegram voice messages. Activates when an inbound Telegram message has attachment_kind=\"voice\". Downloads the voice file and transcribes it so the user's spoken words are understood.",
+      "source_sha256": "e65f3fd4a78f86aae9a8cb9f99af3399d0f8089fdc64fed18f4b6e4da9e27d86",
+      "source_path": "skills/voice-transcription/SKILL.md",
+      "package_sha256": "25157705c2aaa31df36c2778e96861eb0634a8d613490335b6f2c80d0e99702c",
+      "source_package": "claude-telegram-voice-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1942c7d2f3b5b19a0a0a04506d19ed8c4478f3fc71ebead0a52b6ebf6262a58c": {
+      "description_zh": "为特定行业客户制作培训或咨询交付包，通过多代理并行研究、痛点与AI方案映射生成Word报告及交互HTML幻灯片。",
+      "source": "This skill should be used when the user asks to \"prepare training materials\", \"create training for [industry/client]\", \"制作培训材料\", \"准备培训\", \"给客户做培训方案\", \"Train_Prep\", or wants to generate a consulting deliverable package (Word report + interactive HTML slides) for a specific industry/client. Involves multi-agent parallel research, pain point analysis, AI solution mapping, Word report generation, and interactive HTML presentation creation.",
+      "source_sha256": "1942c7d2f3b5b19a0a0a04506d19ed8c4478f3fc71ebead0a52b6ebf6262a58c",
+      "source_path": "skills/Train_Prep/SKILL.md",
+      "package_sha256": "d7961020b47b91c8c2506f295ec364beae8f7d9d51850cd0d0abf3d76e422046",
+      "source_package": "claude-train-prep-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "374c16500ba2a18d5ac722ca076353c46dca4f05a25e096b39bf0bf6e709f939": {
+      "description_zh": "选择PGE流水线评估后端，可用默认Claude、Codex或Gemini，按项目或全局保存。",
+      "source": "Select the evaluator backend for PGE pipeline — claude (default), codex, or gemini. Setting persists per-project or globally.",
+      "source_sha256": "374c16500ba2a18d5ac722ca076353c46dca4f05a25e096b39bf0bf6e709f939",
+      "source_path": "skills/pge-eval-backend/SKILL.md",
+      "package_sha256": "99e486a57799175b13ac1f5a809d0add0195c4365d7a568bf0ebf8a9a176e83c",
+      "source_package": "Claude-Trinity-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c1a04a55731af5d9505de0ab7b391e85d48b99f480f4836a07e0af44bfa1d0e": {
+      "description_zh": "运行PGE God Mode最高质量流水线，每个迭代以4.5/5半分门槛执行十轮一致评估，直到需求全部满足持续重试。",
+      "source": "PGE God Mode — absolute maximum quality pipeline. Runs evaluator-godmode (4.5/5 half-point threshold) × 10 rounds unanimous per sprint. Infinite retry loop until requirements are 100% satisfied.",
+      "source_sha256": "5c1a04a55731af5d9505de0ab7b391e85d48b99f480f4836a07e0af44bfa1d0e",
+      "source_path": "skills/pge-god/SKILL.md",
+      "package_sha256": "99e486a57799175b13ac1f5a809d0add0195c4365d7a568bf0ebf8a9a176e83c",
+      "source_package": "Claude-Trinity-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "875a85160e90b5d303a9b2bd44a66ad8ad23c5154ac57f9f3464bcfe49b41b3c": {
+      "description_zh": "运行PGE不限令牌优先质量流水线，每个迭代以质量评估器进行五轮一致共识。",
+      "source": "PGE idontcaretokenanymore — premium unlimited-token pipeline. Runs evaluator-quality × 5 rounds unanimous consensus per sprint. Maximum quality, token cost irrelevant.",
+      "source_sha256": "875a85160e90b5d303a9b2bd44a66ad8ad23c5154ac57f9f3464bcfe49b41b3c",
+      "source_path": "skills/pge-idontcaretokenanymore/SKILL.md",
+      "package_sha256": "99e486a57799175b13ac1f5a809d0add0195c4365d7a568bf0ebf8a9a176e83c",
+      "source_package": "Claude-Trinity-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f800e3dd21aeb521bf181f710dc97671e09f29dbf3fad3e3c4a5cca7bb668ca": {
+      "description_zh": "设置或取消PGE使用量自动暂停阈值，达到5小时或周限额百分比时保存检查点并停止，限额重置后可用pge --resume继续。",
+      "source": "Set or clear a usage-based auto-pause threshold for PGE pipelines. When Claude Code usage reaches the specified percentage of the 5h or weekly limit, PGE saves a checkpoint and stops gracefully. Resume after limit resets with: pge --resume",
+      "source_sha256": "6f800e3dd21aeb521bf181f710dc97671e09f29dbf3fad3e3c4a5cca7bb668ca",
+      "source_path": "skills/pge-limit/SKILL.md",
+      "package_sha256": "99e486a57799175b13ac1f5a809d0add0195c4365d7a568bf0ebf8a9a176e83c",
+      "source_package": "Claude-Trinity-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdc1ee6e7d282e08613734a4545ba7150c5631fb3a7f8126728a42e4b4157cad": {
+      "description_zh": "运行PGE规划、生成、评估完整流水线，质量模式每项要求4/5，并除Playwright外强制代码评审和性能观察。",
+      "source": "PGE Quality Orchestrator — runs the full Planner→Generator→Evaluator pipeline with the quality evaluator. Pass threshold is 4/5 per criterion (not 3/5). Includes mandatory code review and performance observation in addition to Playwright testing.",
+      "source_sha256": "bdc1ee6e7d282e08613734a4545ba7150c5631fb3a7f8126728a42e4b4157cad",
+      "source_path": "skills/pge-quality/SKILL.md",
+      "package_sha256": "99e486a57799175b13ac1f5a809d0add0195c4365d7a568bf0ebf8a9a176e83c",
+      "source_package": "Claude-Trinity-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af0bc292a2cf81465a4b78260198375e99a802af77e4c88eff2fc4b61f56f152": {
+      "description_zh": "运行PGE严格偏向失败的规划生成评估流程，必须覆盖边缘情况，门槛仍3/5但要求更严格。",
+      "source": "PGE Strict Orchestrator — runs the full Planner→Generator→Evaluator pipeline with the strict (FAIL-biased) evaluator. Same pipeline as pge, but evaluation defaults assume FAIL and edge cases are mandatory. Pass threshold remains 3/5 but is significantly harder to achieve.",
+      "source_sha256": "af0bc292a2cf81465a4b78260198375e99a802af77e4c88eff2fc4b61f56f152",
+      "source_path": "skills/pge-strict/SKILL.md",
+      "package_sha256": "99e486a57799175b13ac1f5a809d0add0195c4365d7a568bf0ebf8a9a176e83c",
+      "source_package": "Claude-Trinity-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9b6a0dc10de6d6debe8e23c913187b71ee7e235e1c8a40dc8f9cd0a8ef6cec33": {
+      "description_zh": "运行PGE多评估器流程，可用标准严格质量共识或单评估器重复N轮，仅满足配置的一致阈值后通过迭代。",
+      "source": "PGE Ultra Orchestrator — runs the full PGE pipeline with multi-evaluator evaluation per sprint. Supports all-evaluator consensus mode (standard+strict+quality) and single-evaluator repeated mode (any evaluator × N rounds). Sprint passes only when the configured consensus threshold is met.",
+      "source_sha256": "9b6a0dc10de6d6debe8e23c913187b71ee7e235e1c8a40dc8f9cd0a8ef6cec33",
+      "source_path": "skills/pge-ultra/SKILL.md",
+      "package_sha256": "99e486a57799175b13ac1f5a809d0add0195c4365d7a568bf0ebf8a9a176e83c",
+      "source_package": "Claude-Trinity-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63e4680fc9146ae3d4bc32a548c4a5b88604d51a61b1fa693df5389050986d0e": {
+      "description_zh": "自主运行多迭代产品构建的Planner、Generator、Evaluator流水线，支持标准、严格和质量评估模式。",
+      "source": "PGE Orchestrator — autonomously runs Planner → Generator → Evaluator pipeline for multi-sprint product builds. Supports --evaluator flag for standard/strict/quality evaluation modes.",
+      "source_sha256": "63e4680fc9146ae3d4bc32a548c4a5b88604d51a61b1fa693df5389050986d0e",
+      "source_path": "skills/pge/SKILL.md",
+      "package_sha256": "99e486a57799175b13ac1f5a809d0add0195c4365d7a568bf0ebf8a9a176e83c",
+      "source_package": "Claude-Trinity-2.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3d1fe60f1c0a4ce1e7a7386564e36f83ea2a044995701209d2d8cfdddb13365": {
+      "description_zh": "将工作流程depends_on解析为DAG，用Kahn算法计算并行执行层级，核验循环和步骤输出引用的传递性，作为解析结果到执行器的中间阶段。",
+      "source": "파싱된 워크플로우의 depends_on을 DAG로 해석하고, Kahn 알고리즘으로 병렬 실행 레벨을 계산하며, 순환 참조와 step output 참조의 전이성을 검증하는 스킬. dependency-planner 에이전트가 사용. \"DAG\", \"병렬 레벨\", \"실행 순서\", \"의존성\", \"순환 감지\", \"토폴로지 정렬\", \"step output 참조 검증\" 언급 시 반드시 이 스킬로 처리. Parser 출력을 Executor 입력으로 변환하는 필수 중간 단계.",
+      "source_sha256": "a3d1fe60f1c0a4ce1e7a7386564e36f83ea2a044995701209d2d8cfdddb13365",
+      "source_path": ".claude/skills/dependency-planning/SKILL.md",
+      "package_sha256": "aeba35fe806dd9035278c112b8ec2dd7433d7adc72a19e463f4c9984677f6db4",
+      "source_package": "claude-workflow-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d74ccdb927c08579df5421a955bb2d883424e88357f9071b346c7e3534aec6c1": {
+      "description_zh": "组织四位解析、依赖规划、执行和验证专家执行YAML流水线，处理重跑部分重跑及补充修改，保存中间文件以便审计和恢复，区别于单技能简单执行。",
+      "source": "YAML 워크플로우 파이프라인 실행을 조율하는 오케스트레이터 스킬. workflow-parser, dependency-planner, step-executor, workflow-verifier 4명의 전문 에이전트 팀을 구성하여 파싱 → 계획 → 실행 → 검증 라이프사이클을 수행한다. \"워크플로우 실행\", \"pipeline\", \"파이프라인 조율\", \"run workflow\", \"워크플로우 파이프라인\", \"팀으로 워크플로우 실행\", \"workflow-builder run\"의 고급 경로, \"다시 실행\", \"재실행\", \"부분 재실행\", \"이전 결과 기반으로\", \"보완\", \"수정\"이 언급되면 반드시 이 스킬로 처리. 단일 workflow-builder SKILL.md를 사용하는 단순 실행과 달리, 이 스킬은 전문가 팀 분산 실행을 제공하며 중간 산출물을 파일로 남겨 감사 추적과 부분 재실행을 가능하게 한다.",
+      "source_sha256": "d74ccdb927c08579df5421a955bb2d883424e88357f9071b346c7e3534aec6c1",
+      "source_path": ".claude/skills/pipeline-orchestration/SKILL.md",
+      "package_sha256": "aeba35fe806dd9035278c112b8ec2dd7433d7adc72a19e463f4c9984677f6db4",
+      "source_package": "claude-workflow-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff729f12ec7f2edd14c6bebc9d1b102cdd237ba4602071dfb317042d947b7e7d": {
+      "description_zh": "按计划的并行层级逐序执行命令、AI及批准步骤，捕获输出并遵循on_failure策略，作为工作流程执行核心。",
+      "source": "계획된 병렬 레벨을 순서대로 실행하고, command/ai/approval step을 각 타입에 맞게 처리하며, step output을 캡처하고 on_failure 정책을 따르는 스킬. step-executor 에이전트가 사용. \"step 실행\", \"명령 실행\", \"파이프라인 run\", \"병렬 실행\", \"on_failure\", \"output 캡처\" 언급 시 반드시 이 스킬로 처리. 워크플로우 실행의 심장부이므로 run 요청에는 무조건 트리거.",
+      "source_sha256": "ff729f12ec7f2edd14c6bebc9d1b102cdd237ba4602071dfb317042d947b7e7d",
+      "source_path": ".claude/skills/step-execution/SKILL.md",
+      "package_sha256": "aeba35fe806dd9035278c112b8ec2dd7433d7adc72a19e463f4c9984677f6db4",
+      "source_package": "claude-workflow-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecbd3ce4349fa1f4ac318c063fbf71308f1f804460cac1ad6aa29b7abc0aee12": {
+      "description_zh": "查找解析YAML流程，按config.base、profiles及--set优先级合并变量并核验架构，完成执行前结构化预处理。",
+      "source": "YAML 워크플로우 파일을 찾고, 파싱하고, config.base/profiles/--set의 우선순위대로 변수를 병합하고, 스키마를 검증하는 스킬. workflow-parser 에이전트가 사용. 파이프라인 실행 전처리, \"워크플로우 로드\", \"변수 병합\", \"스키마 검증\", \"YAML 파싱\" 언급 시 반드시 이 스킬로 처리. 단순 파일 읽기가 아니라 워크플로우 구조를 이해해야 하는 모든 작업에 우선 트리거.",
+      "source_sha256": "ecbd3ce4349fa1f4ac318c063fbf71308f1f804460cac1ad6aa29b7abc0aee12",
+      "source_path": ".claude/skills/workflow-parsing/SKILL.md",
+      "package_sha256": "aeba35fe806dd9035278c112b8ec2dd7433d7adc72a19e463f4c9984677f6db4",
+      "source_package": "claude-workflow-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "12a6abda96d87f719d62a8873abac0282772089118d3fc09028fa44a6d1a2b65": {
+      "description_zh": "交叉核验已执行工作流程的结构一致性、步骤输出引用契约和确定性，生成QA报告，作为validate及结果可信度检查阶段。",
+      "source": "실행된 워크플로우의 구조 정합성, step output 참조 계약, 결정성을 교차 비교로 검증하고 QA 리포트를 생성하는 스킬. workflow-verifier 에이전트가 사용. \"검증\", \"verify\", \"QA\", \"determinism\", \"워크플로우 리포트\", \"품질 체크\" 언급 시 반드시 이 스킬로 처리. 파이프라인 실행 후 결과 신뢰도 확인이 필요한 모든 상황에 우선 트리거. validate 서브커맨드의 핵심 단계.",
+      "source_sha256": "12a6abda96d87f719d62a8873abac0282772089118d3fc09028fa44a6d1a2b65",
+      "source_path": ".claude/skills/workflow-verification/SKILL.md",
+      "package_sha256": "aeba35fe806dd9035278c112b8ec2dd7433d7adc72a19e463f4c9984677f6db4",
+      "source_package": "claude-workflow-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1875fc65da849078f5a162ef6545510958c9870a172ae60dc7fe6b3a5be49c8d": {
+      "description_zh": "生成并执行工作流程YAML，可通过/workflow-builder直接调用。",
+      "source": "워크플로우 YAML을 생성하고 실행하는 스킬. \"워크플로우\", \"workflow\", \"배포 플로우\", \"작업 흐름\" 언급 시 사용. /workflow-builder로 직접 호출 가능.",
+      "source_sha256": "1875fc65da849078f5a162ef6545510958c9870a172ae60dc7fe6b3a5be49c8d",
+      "source_path": "skills/workflow-builder/SKILL.md",
+      "package_sha256": "aeba35fe806dd9035278c112b8ec2dd7433d7adc72a19e463f4c9984677f6db4",
+      "source_package": "claude-workflow-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42634b80eba8d171ab44734e73c2628524c4efe8a72202887737e875d5a0e441": {
+      "description_zh": "在Figma建设卡片导航区块组件时，先查库组件、使用正确Auto Layout和语义节点命名；视觉属性绑定转figma-style-binding。",
+      "source": "Triggers when building any UI element in Figma — 'create a card', 'build a nav', 'add a section', 'make a component'. Enforces library-first component lookup, correct Auto Layout structure, and semantic node naming. For visual property binding (colors, text styles, spacing values), defer to figma-style-binding.",
+      "source_sha256": "42634b80eba8d171ab44734e73c2628524c4efe8a72202887737e875d5a0e441",
+      "source_path": ".claude/skills/component-rules/SKILL.md",
+      "package_sha256": "49c9c6f9de63a3ab7dfee3ecf7e1c21e44f4e4298fd6d46e2d94889561d2b9c9",
+      "source_package": "Claude2Figma-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2871dc2099596790d96017ffc00dac9395876d7b7617918d77e8b108d5a088e1": {
+      "description_zh": "在Figma会话开始或首次接收文件URL时，验证MCP、读取CLAUDE.md、审计已连接库并加载全部样式变量的Token Map，作为设计前检查。",
+      "source": "Triggers on 'let's start', 'begin', 'preflight', 'start the session', or when a Figma file URL is first shared. Verifies MCP connection, reads CLAUDE.md, audits connected libraries, and loads a Token Map of all Styles and Variables — required before any design work.",
+      "source_sha256": "2871dc2099596790d96017ffc00dac9395876d7b7617918d77e8b108d5a088e1",
+      "source_path": ".claude/skills/figma-preflight/SKILL.md",
+      "package_sha256": "49c9c6f9de63a3ab7dfee3ecf7e1c21e44f4e4298fd6d46e2d94889561d2b9c9",
+      "source_package": "Claude2Figma-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ce8b2ef214ed003af9036de2cb70a1f6132b7fd12d39dc49c501ca51c44e367": {
+      "description_zh": "在Figma创建文字、设色或修改间距内边距圆角等视觉属性时，将全部值绑定Styles或Variables，避免硬编码，并进行写入后QA。",
+      "source": "Triggers on any visual property change in Figma — creating text, setting colors, adjusting spacing/padding/gap/radius. Enforces that ALL values bind to Figma Styles or Variables, never hardcoded. Includes post-write QA verification.",
+      "source_sha256": "9ce8b2ef214ed003af9036de2cb70a1f6132b7fd12d39dc49c501ca51c44e367",
+      "source_path": ".claude/skills/figma-style-binding/SKILL.md",
+      "package_sha256": "49c9c6f9de63a3ab7dfee3ecf7e1c21e44f4e4298fd6d46e2d94889561d2b9c9",
+      "source_package": "Claude2Figma-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0df63970d087dbd9c3d866fe9fd9cbcd6e34e94d2f27dcd233428d7486e85c31": {
+      "description_zh": "解读用户提供的截图、图片、URL或设计描述，生成将视觉意图映射至设计令牌的结构化简报；用户确认后才开始设计。",
+      "source": "Triggers when user shares a screenshot, image, URL, or design description — or says 'analyze this', 'make a brief', 'interpret this reference'. Outputs a structured Design Brief mapping visual intent to design system tokens. Waits for 'confirmed' before designing.",
+      "source_sha256": "0df63970d087dbd9c3d866fe9fd9cbcd6e34e94d2f27dcd233428d7486e85c31",
+      "source_path": ".claude/skills/reference-interpreter/SKILL.md",
+      "package_sha256": "49c9c6f9de63a3ab7dfee3ecf7e1c21e44f4e4298fd6d46e2d94889561d2b9c9",
+      "source_package": "Claude2Figma-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7301241eda2cd626c2314532430023d258d161e971a233eccab74b5d50713d2b": {
+      "description_zh": "列举所有Claude Code项目，并删除孤立项目。",
+      "source": "List every Claude Code project; delete the orphaned ones",
+      "source_sha256": "7301241eda2cd626c2314532430023d258d161e971a233eccab74b5d50713d2b",
+      "source_path": "skills/projects/SKILL.md",
+      "package_sha256": "746faa06659b6f94300c9cbd9c0254e6d2a83fae4c1313ddd4853ccc93c95e6b",
+      "source_package": "Claudestrophobic-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9fc5574c3d3e82802a823cbc236cc0eb425d049a35bc82a16d6d85f1a03f599a": {
+      "description_zh": "列举和管理当前项目的会话。",
+      "source": "List and manage sessions in the current project",
+      "source_sha256": "9fc5574c3d3e82802a823cbc236cc0eb425d049a35bc82a16d6d85f1a03f599a",
+      "source_path": "skills/sessions/SKILL.md",
+      "package_sha256": "746faa06659b6f94300c9cbd9c0254e6d2a83fae4c1313ddd4853ccc93c95e6b",
+      "source_package": "Claudestrophobic-0.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "07ff1b03ed5ba981db5fd560210eb7269ad2109c7fbc7298a5364c860c3cb65f": {
+      "description_zh": "按Claude Code官方最佳实践，为已有仓库初始化整洁的.claude目录结构。",
+      "source": "Bootstrap a clean .claude/ folder structure for any existing repo following official Claude Code best practices",
+      "source_sha256": "07ff1b03ed5ba981db5fd560210eb7269ad2109c7fbc7298a5364c860c3cb65f",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "71bd9b8d921a9c22c46f3230f0f1f21a0e60e4ae4789e23e971bb65e61b86c85",
+      "source_package": "Claudify-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "75fc42dad405fe841577dcf1878d34b128a678a66bea45370dcc53a598f59dd5": {
+      "description_zh": "通过claude-md-management让CLAUDE.md与当前代码库保持同步。",
+      "source": "Keep CLAUDE.md files in sync with the current codebase using claude-md-management",
+      "source_sha256": "75fc42dad405fe841577dcf1878d34b128a678a66bea45370dcc53a598f59dd5",
+      "source_path": "skills/update/SKILL.md",
+      "package_sha256": "71bd9b8d921a9c22c46f3230f0f1f21a0e60e4ae4789e23e971bb65e61b86c85",
+      "source_package": "Claudify-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f7163c07e25ebd3acdd853208f620e5e8f68b377ddc6cdef3f1b9ef0dabbb774": {
+      "description_zh": "在AI智能体代码工作中自动识别治理配置缺口。",
+      "source": "Automatically detect governance gaps when working on AI agent code",
+      "source_sha256": "f7163c07e25ebd3acdd853208f620e5e8f68b377ddc6cdef3f1b9ef0dabbb774",
+      "source_path": "skills/config/SKILL.md",
+      "package_sha256": "a2f47139194a44c0356305d61c3a2624d8c1eb69960424375a91a7ceb51ef9fd",
+      "source_package": "Claw Maven plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e079794ef8520c677dc51fb5fb7ded780a8878205615d792f24f4ebd7743408": {
+      "description_zh": "依据ClawMaven标准审计AI智能体治理配置。",
+      "source": "Audit an AI agent's governance configuration against ClawMaven standards",
+      "source_sha256": "9e079794ef8520c677dc51fb5fb7ded780a8878205615d792f24f4ebd7743408",
+      "source_path": "skills/governance-audit/SKILL.md",
+      "package_sha256": "a2f47139194a44c0356305d61c3a2624d8c1eb69960424375a91a7ceb51ef9fd",
+      "source_package": "Claw Maven plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "961b4cfc296d0a9b8f110a38c8faa8b0b91a435bf9cc5a06490810017afbcdff": {
+      "description_zh": "为AI智能体项目的治理状态评分。",
+      "source": "Score the governance posture of an AI agent project",
+      "source_sha256": "961b4cfc296d0a9b8f110a38c8faa8b0b91a435bf9cc5a06490810017afbcdff",
+      "source_path": "skills/posture-score/SKILL.md",
+      "package_sha256": "a2f47139194a44c0356305d61c3a2624d8c1eb69960424375a91a7ceb51ef9fd",
+      "source_package": "Claw Maven plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ec4c52c2c28ea9a92f134c38c41d764387c020e03c8a1e083caf146a3f67b68": {
+      "description_zh": "为AI智能体部署生成带签名的信任清单。",
+      "source": "Generate a signed trust manifest for an AI agent deployment",
+      "source_sha256": "4ec4c52c2c28ea9a92f134c38c41d764387c020e03c8a1e083caf146a3f67b68",
+      "source_path": "skills/trust-manifest/SKILL.md",
+      "package_sha256": "a2f47139194a44c0356305d61c3a2624d8c1eb69960424375a91a7ceb51ef9fd",
+      "source_package": "Claw Maven plugin-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "42d65e2eb102ff4ac087ad85a38d9ff473af1aaefe20f8f330712df13b1728bb": {
+      "description_zh": "配置Clawback渠道，保存连接令牌并检查状态，适用于提供令牌、配置请求或渠道状态检查。",
+      "source": "Set up the Clawback channel — save the connection token and check status. Use when the user pastes a connection token, asks to configure Clawback, or wants to check channel status.",
+      "source_sha256": "42d65e2eb102ff4ac087ad85a38d9ff473af1aaefe20f8f330712df13b1728bb",
+      "source_path": "skills/configure/SKILL.md",
+      "package_sha256": "a3ee26f76ab79754b863d6d72d092fcdfa8280f22dc728cffa4773e7081fe508",
+      "source_package": "clawback-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe9e5ab77e566f117da308e36b618f1ec03a0374e74f1bb2d97d6d7f082081b6": {
+      "description_zh": "根据自然语言创建Clawness规则，生成包含标签、触发条件和示例的YAML文件。",
+      "source": "Create a new Clawness rule from a natural language description. Describe what you want enforced and this will generate the YAML rule file with proper tags, triggers, and examples.",
+      "source_sha256": "fe9e5ab77e566f117da308e36b618f1ec03a0374e74f1bb2d97d6d7f082081b6",
+      "source_path": "skills/add/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a021bc61118185ca2193a02869b1da3e11271cfc24fe24602e10e0efe74e5579": {
+      "description_zh": "面向维护者逐域审查Clawness规则与当前官方文档的一致性，在每条规则记录applies_to/verified/sources版本标记，报告判断但不改写规则正文。",
+      "source": "Review one domain of the Clawness rule corpus for correctness against current official documentation, then record what was established as a version stamp (applies_to / verified / sources) on each rule individually. For maintainers and fork maintainers. Reports verdicts and writes stamps; never rewrites rule text.",
+      "source_sha256": "a021bc61118185ca2193a02869b1da3e11271cfc24fe24602e10e0efe74e5579",
+      "source_path": "skills/audit-rules/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b8baf8bce2e11d6947bebefcccbbbbf2cfc99cf68c58e6f372a9a19ced37adf": {
+      "description_zh": "为Clawness尚无规则库的技术栈研究官方约定、起草少量项目规则并lint验证；列出建议并在写入前停止等待批准，适用于覆盖为空提示或新技术栈。",
+      "source": "Author a starter set of Clawness rules for a project whose stack Clawness ships no corpus for (Ruby, PHP, Elixir, Haskell, C#, Swift, Dart, Scala, Clojure, ...). Researches the stack's current conventions from official documentation, drafts a small set of project rules into .clawness/rules/, lint-validates them, and stops for approval before writing anything. Run it when the SessionStart empty-coverage note fires, or whenever you want project rules for an uncovered stack.",
+      "source_sha256": "0b8baf8bce2e11d6947bebefcccbbbbf2cfc99cf68c58e6f372a9a19ced37adf",
+      "source_path": "skills/bootstrap/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b57f86ea8eeed50f590f65528c535eda9678a525eacd89d0e081b2970ebf19c": {
+      "description_zh": "精简过大的CLAUDE.md，测量逐轮常驻指令成本，删除代码已有说明，将路径专属和提示专属指导分移至相应规则目录，保留关键禁止撤销约束；属于有意的删除修改。",
+      "source": "Shrink an oversized CLAUDE.md. Measures what the project's always-loaded instructions cost per turn, then works through it section by section — cutting what the codebase already says, moving path-specific guidance to .claude/rules/ and prompt-specific conventions to .clawness/rules/, and leaving load-bearing \"don't undo this\" content where it is. Destructive and deliberate: run it when you have the session to spend.",
+      "source_sha256": "7b57f86ea8eeed50f590f65528c535eda9678a525eacd89d0e081b2970ebf19c",
+      "source_path": "skills/claude-md/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6e34aebcc36d0f4cf46885d840056a91691318f1ac2a5193dbce085277308425": {
+      "description_zh": "创建运行项目专属检索评测，编写提示到预期规则案例，比较改动前后MRR@k和命中率，验证规则或基础提示精简后重要知识仍可检索。",
+      "source": "Build and run a project-specific retrieval eval so changes to your rules or base prompt are scored, not eyeballed. Mirrors tests/ground_truth.json + `clawness eval`: you write prompt→expected-rule cases, then measure MRR@k and hit-rate before and after an edit. Run it after trimming a base prompt into ranked retrieval (see openclaw-audit / claude-md), or whenever you change rules and want proof retrieval still surfaces what matters.",
+      "source_sha256": "6e34aebcc36d0f4cf46885d840056a91691318f1ac2a5193dbce085277308425",
+      "source_path": "skills/eval-set/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1fa113bddcaa45e264e4b0fe0fc232c7ac836d8c2de89cc4e6a19c204b74704": {
+      "description_zh": "精简OpenClaw常驻系统文件，测量SOUL/AGENTS/IDENTITY/USER/MEMORY逐轮成本，移出可检索惯例和简短陷阱，保留关键人格身份；属于有意的删除修改。",
+      "source": "Trim an OpenClaw workspace's base system prompt. Measures what the always-injected workspace files (SOUL.md, AGENTS.md, IDENTITY.md, USER.md, MEMORY.md) cost per turn, then works through them section by section — cutting what the tools or codebase already say, moving durable conventions to Clawness ranked retrieval (.clawness/rules/) and one-line traps to .clawness/memory.md, and leaving load-bearing persona and identity where they are. Destructive and deliberate: run it when you have the session to spend.",
+      "source_sha256": "c1fa113bddcaa45e264e4b0fe0fc232c7ac836d8c2de89cc4e6a19c204b74704",
+      "source_path": "skills/openclaw-audit/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a0ff31e1f57a84757372b9fbf47c39a589e539f802c07555de57de6b5b73cfc": {
+      "description_zh": "审计项目或指定模块性能，检查N+1、不必要重渲染、内存泄漏、包体积及慢算法。",
+      "source": "Run a performance audit on the project or a specific module. Checks for N+1 queries, unnecessary re-renders, memory leaks, bundle size issues, and slow algorithms.",
+      "source_sha256": "6a0ff31e1f57a84757372b9fbf47c39a589e539f802c07555de57de6b5b73cfc",
+      "source_path": "skills/perf/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9f7a89811c7d59d8f9f1649801f6f01678149abc63999e22d183dc91318e092": {
+      "description_zh": "依据项目实际安装使用的框架版本更新Clawness规则，研究验证后变化并准备版本正确的覆盖项，列清单后先等待批准再写入。",
+      "source": "Bring this project's Clawness rules up to date with the framework version it actually runs. Establishes what is installed and what the codebase uses, looks up what changed since the rules were verified, and writes version-corrected overrides into .clawness/rules/ — reporting the list and stopping for approval before it writes anything. Run it when the SessionStart version-gap note fires, or whenever a major upgrade lands.",
+      "source_sha256": "d9f7a89811c7d59d8f9f1649801f6f01678149abc63999e22d183dc91318e092",
+      "source_path": "skills/refresh/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d528115d78146a13c4d1d052f9b02fdaa5bdd587520d489a58b217f40091b43e": {
+      "description_zh": "对暂存变更或指定文件开展对抗式代码评审，委派code-critic发现缺陷、性能与遗漏边缘情况，用于提交或合并前。",
+      "source": "Run an adversarial code review on staged changes or a specific file. Spawns the code-critic agent to find bugs, performance issues, and missed edge cases. Use before merging PRs or committing.",
+      "source_sha256": "d528115d78146a13c4d1d052f9b02fdaa5bdd587520d489a58b217f40091b43e",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "931f5a0032dbd56ad6953e204eb7f4df3f447f4af4e2f48a7b8dfc7d6f907888": {
+      "description_zh": "对项目或模块开展有状态红蓝队安全审计，先用确定性clawness scan枚举攻击面，再累积发现台账，仅评估新增事项以收敛，适用于上线前或认证支付用户数据修改后。",
+      "source": "Run a stateful red team / blue team security audit on the current project or a specific module. First enumerates the attack surface deterministically with `clawness scan` (zero LLM tokens, identical every run) and accumulates verdicts in a findings ledger, so each pass adjudicates only what is NEW instead of re-scanning blind — turning a 5-10 run scan into 1-2 converging passes. Reach for this whenever the user asks for a security audit, a vulnerability scan, a code security review, or hardening — before deployment, after adding auth/ payment/user-data code, or on a schedule — even if they don't type the command.",
+      "source_sha256": "931f5a0032dbd56ad6953e204eb7f4df3f447f4af4e2f48a7b8dfc7d6f907888",
+      "source_path": "skills/security-audit/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "426833814227c2884056867928afac3f16f5f8d0d83f74a6c706803174be9bf0": {
+      "description_zh": "展示当前Clawness加载规则、可用代理及钩子配置，了解项目向Claude提供了哪些规则。",
+      "source": "Show the current Clawness configuration: which rules are loaded, which agents are available, and how the hook is configured. Use to understand what rules Claude is seeing for this project.",
+      "source_sha256": "426833814227c2884056867928afac3f16f5f8d0d83f74a6c706803174be9bf0",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "813708a91e5353e5458ac6cc9de86beb14087277047492cf84c9fe11024b6420": {
+      "description_zh": "依据已有测试模式与项目风格，为文件模块生成覆盖正常、边缘、错误及边界值的测试。",
+      "source": "Generate comprehensive tests for a file or module. Reads existing test patterns and matches the project's style. Covers happy paths, edge cases, error conditions, and boundary values.",
+      "source_sha256": "813708a91e5353e5458ac6cc9de86beb14087277047492cf84c9fe11024b6420",
+      "source_path": "skills/test/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecb5205c9d709d10c172af6b72b2b05b7bd7a475d42e76f6002a880a71b1b8be": {
+      "description_zh": "扫描项目UI与公共API/CLI推断真实用户任务，按Diátaxis教程操作参考解释标准起草简洁终端用户或开发者文档；先提纲，批准后写入。",
+      "source": "Write user documentation for a project by scanning its codebase — its UI screens and its public API/CLI — inferring what someone can actually do with it, and drafting brief, task-oriented docs to the Diátaxis standard (tutorial / how-to / reference / explanation). Handles both non-technical end-user docs and developer docs. Use when asked to document the app, write user or API docs, generate a getting-started guide, or when the project's docs are missing or out of date. Scans and proposes an outline, then writes only after you approve it.",
+      "source_sha256": "ecb5205c9d709d10c172af6b72b2b05b7bd7a475d42e76f6002a880a71b1b8be",
+      "source_path": "skills/user-docs/SKILL.md",
+      "package_sha256": "b765d44085f2c21228a30535caacdc154028af99d3e3be89b5ea48351c5dd65c",
+      "source_package": "Clawness-1.18.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b1e531041e5ba5da03013a6595e4031f55b04e1f1313470a2687f39782e7bf2": {
+      "description_zh": "创建更新只读clawpage页面管理仪表板，默认3小时TTL和pagecode保护；浏览器JavaScript不得嵌入sk_令牌，即使有访问码保护。",
+      "source": "Create or refresh a read-only dashboard listing all of the user's clawpage pages. Trigger keywords — \"管理页\", \"页面管理\", \"列出所有页面\", \"pages dashboard\", \"admin page\", \"read-only page list\", \"manage all my pages\". Default policy is 3h TTL plus pagecode-protected. SECURITY-CRITICAL — never embed `sk_*` tokens in browser-shipped JS, even on a pagecode-protected page.",
+      "source_sha256": "3b1e531041e5ba5da03013a6595e4031f55b04e1f1313470a2687f39782e7bf2",
+      "source_path": "skills/create-management-page/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e5bcbe853b03d9bf9b6fa1c54988dbef84a437a007fbb39e783dc1b8f0229b46": {
+      "description_zh": "从内置模板创建公开URL上的单HTML clawpage，可把复杂回答、仪表板或单页应用独立分享；默认访问码保护且3小时TTL，明确选择后才公开永久，输出相关URL；编辑模板另用对应技能。",
+      "source": "Create a new clawpage page (single-file HTML hosted at a public URL) from a built-in template. TRIGGER PROACTIVELY when the user wants to convert a long/complex response into a distinct shareable URL, build a dashboard, or generate a single-page app for sharing. Default publish policy is private + 3h TTL (pagecode-required, ttlMs=10800000) unless the user explicitly opts public/permanent. Output must include `publicUrl`/`rootUrl`/`accessUrl`. Do NOT use for editing an existing page (use the `update-page` skill) or for template authoring (use `create-template`).",
+      "source_sha256": "e5bcbe853b03d9bf9b6fa1c54988dbef84a437a007fbb39e783dc1b8f0229b46",
+      "source_path": "skills/create-page/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81aeecddab26a4e254442524ac1abcf754e7d7a67db707ff56cded11cb92c2cb": {
+      "description_zh": "创建可复用clawpage模板的HTML/CSS/JS/meta文件，为未来页面提供风格基础；模板不带SDK脚本，需要动态能力时由页面另行加入。",
+      "source": "Create a new reusable clawpage template (`index.html` / `default.css` / `default.js` / `meta.md`) that page projects can scaffold from. Trigger when user says \"new template\", \"create a clawpage template\", \"模板搭建\", or wants to author a stylistic foundation for future pages. Templates ship without the SDK script — pages that need dynamic features add it via the `use-sdk` skill.",
+      "source_sha256": "81aeecddab26a4e254442524ac1abcf754e7d7a67db707ff56cded11cb92c2cb",
+      "source_path": "skills/create-template/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "941a89675c337944e99209f7c4545701f47225a21a818298b989d48d7a01f877": {
+      "description_zh": "按明确pageId永久删除用户指定clawpage页面，无回收站且不可逆；不用于本地项目删除、临时下线或短链接KV文件等子资源。",
+      "source": "Permanently delete a clawpage page by its `pageId` via DELETE /api/pages/<pageId>. Trigger when the user explicitly asks to delete / remove / take down / destroy / 删除 / 下线 a specific page they own and a `pageId` (or a clearly identifiable single page) is in scope. Deletion is irreversible — there is no soft-delete or trash. NEVER fabricate a `pageId`. Do NOT use for removing a local page project only (just `rm -rf` the directory), do NOT use for unpublishing temporarily (use `update-page` to set a short TTL or `pagecode` instead), do NOT use for sub-resources like short links / KV records / blobs (use `manage-links` / `manage-data` / `manage-blobs` respectively).",
+      "source_sha256": "941a89675c337944e99209f7c4545701f47225a21a818298b989d48d7a01f877",
+      "source_path": "skills/delete-page/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d5d7977bc3cb48a730b6c0e89fca71a815f1c70a39e4f9bb71c557ede0ff26c7": {
+      "description_zh": "初始化本机clawpage CLI，注册账户并保存API令牌至keys.local.json，已初始化时可幂等调用，强制换账户须明确选择--force。",
+      "source": "Initialize the clawpage cli on this machine — register a clawpage.ai account and save the API token to ~/.clawpage/keys.local.json. Trigger when the user says \"init clawpage\", \"setup clawpage\", \"初始化\", or starts a clawpage workflow without an existing token. Idempotent — safe to call when already initialized; exit code 2 means the user explicitly opted into --force to switch accounts.",
+      "source_sha256": "d5d7977bc3cb48a730b6c0e89fca71a815f1c70a39e4f9bb71c557ede0ff26c7",
+      "source_path": "skills/init/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0959d7f8e8ac27f5c148d9649767fb570aa7720b0fcaae61890d5db8b1841316": {
+      "description_zh": "上传图片或文件至Cloudflare R2并获得供Clawpage嵌入的公开URL，支持图片替换PDF分享和持久存储；所有上传均可由持有URL者查看。",
+      "source": "Upload images and files to Cloudflare R2 storage, get public URLs to embed in HTML pages. Use when the user wants to \"upload a photo\", \"add an image to my page\", \"share a PDF\", \"replace the image\", or needs persistent file storage for their Clawpage site. All uploads are public (anyone with the URL can view).",
+      "source_sha256": "0959d7f8e8ac27f5c148d9649767fb570aa7720b0fcaae61890d5db8b1841316",
+      "source_path": "skills/manage-blobs/SKILL.md",
+      "package_sha256": "72b139d4f8b33efcb7d0af5ceaca9cfee5a0bfd0808b55662c56ab3e9ef20be0",
+      "source_package": "clawpage-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
