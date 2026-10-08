@@ -37249,6 +37249,1086 @@
       "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
       "source_package": "investment-banking-0.2.1-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "37ff6fad44ab5414229087459ef515fd6fb1421fccbee4bc6758111f961d684c": {
+      "description_zh": "为卖方并购起草流程函及竞标说明，涵盖初步意向书IOI要求、最终报价程序和管理层会议安排。",
+      "source": "Draft process letters and bid instructions for sell-side M&A processes. Covers initial indication of interest (IOI) instructions, final bid procedures, and management meeting logistics. Triggers on \"process letter\", \"bid instructions\", \"IOI letter\", \"bid procedures\", \"final round letter\", or \"management meeting invite\".",
+      "source_sha256": "37ff6fad44ab5414229087459ef515fd6fb1421fccbee4bc6758111f961d684c",
+      "source_path": "skills/process-letter/SKILL.md",
+      "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
+      "source_package": "investment-banking-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98b56bd80d66e710413fc8d612abb62d3304203b82f82fcc4d91e71ced0a3c75": {
+      "description_zh": "为投资银行推介材料、交易文件和客户演示生成专业公司条形简介，输出1至4页信息密集的象限布局幻灯片、图表和表格。",
+      "source": "Creates professional investment banking strip profiles (company profiles) for pitch books, deal materials, and client presentations. Generates 1-4 information-dense slides with quadrant layouts, charts, and tables.",
+      "source_sha256": "98b56bd80d66e710413fc8d612abb62d3304203b82f82fcc4d91e71ced0a3c75",
+      "source_path": "skills/strip-profile/SKILL.md",
+      "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
+      "source_package": "investment-banking-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7d33fd83186e1983682f8d027f95f40b84fe503625856a9d850018a8cf5fa265": {
+      "description_zh": "为卖方并购起草匿名单页公司预告材料，在不透露身份的前提下突出吸引力，供签署保密协议前试探买方兴趣。",
+      "source": "Draft anonymous one-page company teasers for sell-side M&A processes. Creates a compelling summary without revealing the company's identity, designed to gauge buyer interest before NDA execution. Triggers on \"teaser\", \"blind teaser\", \"anonymous profile\", \"one-pager for process\", or \"draft teaser for sell-side\".",
+      "source_sha256": "7d33fd83186e1983682f8d027f95f40b84fe503625856a9d850018a8cf5fa265",
+      "source_path": "skills/teaser/SKILL.md",
+      "package_sha256": "08cf03bc81453b79c462ec09b3006b39d7437befb03a999744dec5ea620fc33c",
+      "source_package": "investment-banking-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "378c07fa3468e8a93b9eaee43e6569653c8ff0ad07bea53ff318a732652841d2": {
+      "description_zh": "通过删减和重组降低技能目录的上下文token成本，可把少用内容移到带加载条件的references，实施前检查规则、例外、命令与阈值仍保留；不改frontmatter，只建议描述修改，代理定义交由 subagent-optimizer。",
+      "source": "Use when asked to shrink, trim, compress or optimize an agent skill (a folder with a SKILL.md) so it costs fewer tokens, or when a skill feels too long. Cuts by deletion and restructuring only, can move rarely needed sections into references/ behind a load trigger, and checks that every rule, exception, command and threshold survives before anything is applied. Never edits the frontmatter; suggests description changes instead. Subagent definitions in .claude/agents/ and Codex agents in .codex/agents/ are a different thing, handled by subagent-optimizer. Triggers: \"optimize this skill\", \"shrink my skill\", \"this skill is too long\", \"trim SKILL.md\", \"my skills eat my context\", \"skill optimizer\".",
+      "source_sha256": "378c07fa3468e8a93b9eaee43e6569653c8ff0ad07bea53ff318a732652841d2",
+      "source_path": "skills/skill-optimizer/SKILL.md",
+      "package_sha256": "7266d952f64b9ca61c5f28b472677a08b883a1259caa9eefa17e833eea4d4661",
+      "source_package": "Ionden Skills-0.8.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d762f74c3c97b6ea8d93e84950cd877b329e30bcc69ba43d7641d8edb428d88": {
+      "description_zh": "优化 Claude Code .claude/agents/*.md 与 Codex .codex/agents/*.toml 自定义代理，调整工具允许名单、清除不兼容字段、压缩重复系统提示、改进触发描述和模型推理配置；SKILL目录交由 skill-optimizer。",
+      "source": "Optimizes Claude Code subagents (.claude/agents/*.md) and Codex custom agents (.codex/agents/*.toml); agent skills (SKILL.md folders) are handled by skill-optimizer. Use when asked to audit, optimise, slim down, or fix those agents: set a proper `tools` allowlist on a Claude subagent (one with no `tools` field inherits every tool on each launch), remove Claude keys that make Codex skip an agent, cut bloated or duplicated system prompts, tighten descriptions so they trigger reliably, and right-size the model and reasoning effort. Triggers: \"optimize my subagents\", \"optimise my agents\", \"audit my subagents\", \"subagent optimizer\", \"audit my codex agents\", \"my agent uses too many tokens\", \"fix my agent''s tools list\", \"review .claude/agents\", \"review .codex/agents\", \"make my agents cheaper\".",
+      "source_sha256": "9d762f74c3c97b6ea8d93e84950cd877b329e30bcc69ba43d7641d8edb428d88",
+      "source_path": "skills/subagent-optimizer/SKILL.md",
+      "package_sha256": "7266d952f64b9ca61c5f28b472677a08b883a1259caa9eefa17e833eea4d4661",
+      "source_package": "Ionden Skills-0.8.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e995ab9073973a9c4a1f561000bc8b82c64b797f2e17087ebebc4869cd139f91": {
+      "description_zh": "编写审查修复各语言框架的测试，检查模拟依赖、首次即通过的新增测试、高覆盖仍漏错和失败测试处理，帮助避免仅修改测试来掩盖代码缺陷。",
+      "source": "Use when writing, reviewing or fixing tests in any language or framework: before committing tests, when about to mock or stub a dependency, when a new test passes on its first run, when coverage looks high but bugs still ship, or when an existing test goes red and the quick fix would be to change the test instead of the code. Triggers: \"write tests\", \"add unit tests\", \"review these tests\", \"make the tests pass\", \"fix the failing test\", \"increase coverage\", \"mock this\".",
+      "source_sha256": "e995ab9073973a9c4a1f561000bc8b82c64b797f2e17087ebebc4869cd139f91",
+      "source_path": "skills/writing-tests-that-can-fail/SKILL.md",
+      "package_sha256": "7266d952f64b9ca61c5f28b472677a08b883a1259caa9eefa17e833eea4d4661",
+      "source_package": "Ionden Skills-0.8.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "af9fd4b8244cd155831cc9717e84069baa16c60a92314410ffdd7fbb577e8350": {
+      "description_zh": "起草与维权立场匹配的停止侵权函，或评估收到的函件并整理选项备忘录和建议。",
+      "source": "Draft a cease-and-desist letter (send mode) or triage one you received (receive mode). Use when asserting your rights against an infringer with a demand letter calibrated to your enforcement posture, or when an incoming C&D needs triage into a structured options memo with a recommendation.",
+      "source_sha256": "af9fd4b8244cd155831cc9717e84069baa16c60a92314410ffdd7fbb577e8350",
+      "source_path": "skills/cease-desist/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "521c403414a739b2450c340e81f3029868a7583661c6f1bb7d290db9d11b82a9": {
+      "description_zh": "为新商标进行初步排除及近似商标搜索，整理风险标记和混淆因素供专业全面检索使用，不出具可注册或已清除风险的意见。",
+      "source": "Trademark clearance first pass — knockout + similar-marks check producing a flag list, not a clearance opinion. Use when a new mark is proposed, when asked whether a mark is available or to run a knockout search, or when assessing likelihood-of-confusion factors before a full professional search. This skill never concludes a mark is clear.",
+      "source_sha256": "521c403414a739b2450c340e81f3029868a7583661c6f1bb7d290db9d11b82a9",
+      "source_path": "skills/clearance/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aeab274f71a707bdfd6327e655a12913f320043ce54d6292cc35c34d0446b060": {
+      "description_zh": "通过初次访谈了解知识产权执业业务并建立实践画像，适用于首次安装缺少画像、画像仍有占位、重新入门或MCP变更后的集成复查。",
+      "source": "Run the cold-start interview to learn your IP practice and write your practice profile. Use on first install when the practice profile is missing or still contains placeholders, when re-onboarding with --redo, or when re-probing integrations with --check-integrations after connecting or disconnecting an MCP. This is the ONLY skill that should run on a fresh install.",
+      "source_sha256": "aeab274f71a707bdfd6327e655a12913f320043ce54d6292cc35c34d0446b060",
+      "source_path": "skills/cold-start-interview/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "51da016029f13006a614175bbb8fc65457ad3af88988cb4a73578e0d1440f89e": {
+      "description_zh": "引导单项调整知识产权实践画像，包括风险立场、升级联系人、资产范围、品牌保护、维权策略、商标检索阈值、开源审查规则和案件路径，无需重做完整入门访谈。",
+      "source": "Guided customization of your IP practice profile — change one thing without re-running the whole cold-start interview. Adjust risk posture, escalation contacts, portfolio scope, brand protection strategy, enforcement posture, clearance thresholds, OSS review rules, or matter workspace paths. Use when the user says \"change my [thing]\", \"update my profile\", \"edit my config\", or \"customize\".",
+      "source_sha256": "51da016029f13006a614175bbb8fc65457ad3af88988cb4a73578e0d1440f89e",
+      "source_path": "skills/customize/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62c15f333451d7632a0ba70b502965b518b7730d76c52c380a77d3b5e829a73b": {
+      "description_zh": "对产品、流程或功能可能受阻的专利做自由实施初筛，建立潜在专利权利要求对照表供律师评审，不出具FTO意见或产品可放心上线结论。",
+      "source": "Freedom-to-operate triage — a structured first look at potentially blocking patents, not an FTO opinion. Use when a product, process, or feature is being evaluated for blocking patents, when asked whether anything stops a launch, or to build a claim-chart first pass against the most plausible patents before patent counsel review. This skill never concludes a product is clear to launch.",
+      "source_sha256": "62c15f333451d7632a0ba70b502965b518b7730d76c52c380a77d3b5e829a73b",
+      "source_path": "skills/fto-triage/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bbdd0c17cdbf0d34d6ad52f8943d6188afdd3bdac7db047448a2195f620e91ad": {
+      "description_zh": "对商标、版权、专利及商业秘密侵权做初筛，列出风险标记与各方向因素，帮助判断仿冒、复制或案件是否值得追究及路径，不作侵权认定。",
+      "source": "Infringement triage across trademark, copyright, patent, and trade secret — a flag list with the factors cutting each way, not a finding. Use when assessing whether someone is infringing your IP or whether you might be infringing theirs, when a knockoff or copycat surfaces, or when deciding whether a matter is worth pursuing and how.",
+      "source_sha256": "bbdd0c17cdbf0d34d6ad52f8943d6188afdd3bdac7db047448a2195f620e91ad",
+      "source_path": "skills/infringement-triage/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73ef55d8e8d71f84adacd4a86cac4a8c23067161d8abdd86e8c49ff242325bd3": {
+      "description_zh": "初筛发明披露的新颖性、显而易见性、美国§101资格、法定期限、可发现性及战略价值，决定后续先前技术检索、专利律师审查、进一步调查或不推进。",
+      "source": "Invention disclosure first-pass screen — novelty, obviousness, §101 eligibility, bar dates, detectability, and strategic value. Use when an invention disclosure comes in and needs triage on whether to pursue a prior-art search and patent counsel review, investigate further, or decline.",
+      "source_sha256": "73ef55d8e8d71f84adacd4a86cac4a8c23067161d8abdd86e8c49ff242325bd3",
+      "source_path": "skills/invention-intake/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c674da1e960764208456f2c3a01e2017be2a11326b7790d17523694c5ee3c731": {
+      "description_zh": "审查雇佣、咨询、工作说明书、供应商或许可协议中的知识产权转让、所有权、许可授权、保证及赔偿条款。",
+      "source": "Review the IP clauses in an agreement — assignment, ownership, license grants, warranties, indemnities. Use when reviewing IP terms in employment, consulting, SOW, vendor, or licensing agreements, when asked to check the assignment language or license scope, or when an agreement with IP provisions is pasted or attached.",
+      "source_sha256": "c674da1e960764208456f2c3a01e2017be2a11326b7790d17523694c5ee3c731",
+      "source_path": "skills/ip-clause-review/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c80d117d5fb260a498402bdd8b30a3e884805069ae6090d943bed9779a5e96cf": {
+      "description_zh": "创建、列举、切换、关闭或脱离当前案件工作区，帮助多客户执业隔离各案件上下文并确定技能工作的案件。",
+      "source": "Manage matter workspaces — create, list, switch, close, or detach the active matter. Use in multi-client private practice to keep one client's context separate from another, or when a substantive skill needs to know which matter it's working in.",
+      "source_sha256": "c80d117d5fb260a498402bdd8b30a3e884805069ae6090d943bed9779a5e96cf",
+      "source_path": "skills/matter-workspace/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c93f00d5cd8ec31f2775373ff7c5b0a2941b1db16f0dc54e9aed647e4d6ec4a9": {
+      "description_zh": "审查依赖清单、单库、SBOM、仓库或待开放代码的开源许可义务与兼容性，支持copyleft合规及能否随产品发布的评估。",
+      "source": "Open source license compliance check for a dependency list, a single library, or outbound code. Use when reviewing a manifest, SBOM, or repo for copyleft obligations and license compatibility, when asked whether a library can ship, or when preparing code to be open-sourced.",
+      "source_sha256": "c93f00d5cd8ec31f2775373ff7c5b0a2941b1db16f0dc54e9aed647e4d6ec4a9",
+      "source_path": "skills/oss-review/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3afea600ce64d6a8724bdd18ed4af5f9f49cc1b03605788651f128bad4405644": {
+      "description_zh": "跟踪知识产权资产的注册、续展、维持费和使用声明，添加更新资产、记录维护申请，并审查遗漏、失效与商业使用问题，接收申请和商标检索流程移交。",
+      "source": "Track the IP portfolio — registrations, renewals, maintenance fees, and use declarations. Use when checking what's renewing, adding or updating an asset, recording a maintenance filing, or auditing the register for gaps, lapses, and use-in-commerce questions. Receives handoffs from prosecution and clearance work.",
+      "source_sha256": "3afea600ce64d6a8724bdd18ed4af5f9f49cc1b03605788651f128bad4405644",
+      "source_path": "skills/portfolio/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "949836300d13279edb1230b497e110b653da487fb66ff06416a7af9625b31285": {
+      "description_zh": "起草DMCA下架通知、评估收到的通知或准备§512(g)反通知，考虑合理使用、伪证声明及联邦管辖同意要求，整理遵从、反通知、交涉或忽略等选择。",
+      "source": "Draft a DMCA takedown notice, triage one you received, or draft a §512(g) counter-notice. Use when asserting copyright through a §512(c)(3) takedown with the fair-use and perjury gates, when an incoming takedown needs triage into comply / counter / engage / ignore options, or when drafting a §512(g)(3) counter-notice with the consent-to-federal-jurisdiction gate.",
+      "source_sha256": "949836300d13279edb1230b497e110b653da487fb66ff06416a7af9625b31285",
+      "source_path": "skills/takedown/SKILL.md",
+      "package_sha256": "d92a3683bb55105f68a02acfa3f273bf41a171306a1d76185e3f1ebf442e7709",
+      "source_package": "ip-legal-1.0.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "630a9a2acd385d1dc47013ff5faefbf494d96ebc64e5a8a999acca24a70c9abd": {
+      "description_zh": "在Linux上无需sudo通过USB将iPhone完整或增量加密iTunes式备份保存到外置盘，同时建立仅新增照片归档，支持更新备份及从备份提取照片。",
+      "source": "Back up an iPhone over USB on Linux without sudo, as a full or incremental encrypted iTunes-style backup plus an add-only photo archive, onto an external disk. Use when asked to back up an iPhone, update an iPhone backup, archive iPhone photos, or pull photos out of an iPhone backup.",
+      "source_sha256": "630a9a2acd385d1dc47013ff5faefbf494d96ebc64e5a8a999acca24a70c9abd",
+      "source_path": "skills/iphone-backup/SKILL.md",
+      "package_sha256": "7e13f616522e42ee52cc1f1a63adb0391b5416845ee13eb862b2fae8b8dbcfde",
+      "source_package": "iPhone Backup for Linux-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3a75a8c677dd8c9fbbfe5508b26782e82ccfd4a61e05c90eed9679d3a521c3bd": {
+      "description_zh": "采用I-Lang结构化指令实现AI对AI的代码审查协议，将评审路由到指定模型。",
+      "source": "I-Lang powered AI-to-AI code review protocol. Route reviews to any model using structured I-Lang instructions.",
+      "source_sha256": "3a75a8c677dd8c9fbbfe5508b26782e82ccfd4a61e05c90eed9679d3a521c3bd",
+      "source_path": "skills/ireview/SKILL.md",
+      "package_sha256": "2020162676a918f52875ccb6b2e15acf7fd661e889de2d58af36e15b8569cf49",
+      "source_package": "Ireview-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40653102380952546a70c5b22610ec4ff8eaa07e492160f5bf4c37a2dfdb3f0f": {
+      "description_zh": "为Codex响应应用原作者基于ISO 24495的简明语言规则，并分派到相应行业技能。",
+      "source": "Hold every response to the ISO 24495 plain-language rules, and route to the sector skills. Codex has no output style, so these rules are a skill.",
+      "source_sha256": "40653102380952546a70c5b22610ec4ff8eaa07e492160f5bf4c37a2dfdb3f0f",
+      "source_path": "codex-skills/iso-24495-style/SKILL.md",
+      "package_sha256": "e2a33d2b26f05f2115bfc08316eed27d14e0118f38b719427a8490499f385246",
+      "source_package": "ISO 24495 Plain Language-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9351e1ead48ae9e813545f6cfda8bfc0e8019b06539cf9edf1c5608f79d52659": {
+      "description_zh": "依据原说明所列ISO 24495-1:2023简明语言原则组织面向用户的回答，使内容清楚、有结构、易查找、易理解并可行动。",
+      "source": "Core Plain Language standard (ISO 24495-1:2023). Governs all user-facing responses to ensure clear, structured, findable, understandable, and actionable output.",
+      "source_sha256": "9351e1ead48ae9e813545f6cfda8bfc0e8019b06539cf9edf1c5608f79d52659",
+      "source_path": "skills/iso-24495-1/SKILL.md",
+      "package_sha256": "e2a33d2b26f05f2115bfc08316eed27d14e0118f38b719427a8490499f385246",
+      "source_package": "ISO 24495 Plain Language-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3523bc4da94e28f60b38a984af8b270cf2178b3e94a9446176ae59d1a6bba5f3": {
+      "description_zh": "依据原说明所列ISO 24495-2:2025法律沟通简明语言规则，支持合同起草、许可审查及法律合规写作。",
+      "source": "Sector-specific Plain Language standard for legal communication (ISO 24495-2:2025). Applied during contract drafting, license review, and legal/compliance writing.",
+      "source_sha256": "3523bc4da94e28f60b38a984af8b270cf2178b3e94a9446176ae59d1a6bba5f3",
+      "source_path": "skills/iso-24495-2/SKILL.md",
+      "package_sha256": "e2a33d2b26f05f2115bfc08316eed27d14e0118f38b719427a8490499f385246",
+      "source_package": "ISO 24495 Plain Language-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c985f7b5feb1454f7a73bcc0ea53a69d562047c67a8322d4d1755a7ea40b778": {
+      "description_zh": "依据原说明所列ISO 24495-3:2026科学技术简明语言规则，支持软件文档、架构规格和技术分析。",
+      "source": "Sector-specific Plain Language standard for science and technical writing (ISO 24495-3:2026). Applied during software documentation, architecture specs, and technical analysis.",
+      "source_sha256": "2c985f7b5feb1454f7a73bcc0ea53a69d562047c67a8322d4d1755a7ea40b778",
+      "source_path": "skills/iso-24495-3/SKILL.md",
+      "package_sha256": "e2a33d2b26f05f2115bfc08316eed27d14e0118f38b719427a8490499f385246",
+      "source_package": "ISO 24495 Plain Language-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c8c5ee50b1adeb8c7bd97306130b1d32d11db36f80c9a81ddb11da384423def5": {
+      "description_zh": "依据ISO/CD 24495-4委员会草案建立暂行组织实施技能，用于简明语言差距评估、政策、审查流程及未来标准准备，不用于普通单篇写作改写审阅。",
+      "source": "Provisional task skill for organisational plain language implementation (based on ISO/CD 24495-4, committee draft). Activates for plain language gap analysis, policy drafting, review workflow design, and organisational readiness for the future published standard. Does not activate for ordinary writing, rewriting, or reviewing of individual documents.",
+      "source_sha256": "c8c5ee50b1adeb8c7bd97306130b1d32d11db36f80c9a81ddb11da384423def5",
+      "source_path": "skills/iso-24495-4/SKILL.md",
+      "package_sha256": "e2a33d2b26f05f2115bfc08316eed27d14e0118f38b719427a8490499f385246",
+      "source_package": "ISO 24495 Plain Language-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "11f34e18c29ddeb887f77c7fdaab24095cdb76bb593025d1d73699396a6035ad": {
+      "description_zh": "依据仍在开发的ISO/WD 24495-5形成暂行文档设计指导，用布局、视觉层级和导航辅助组织复杂文档，帮助读者查找内容。",
+      "source": "Provisional sector-specific Plain Language standard for document design (based on ISO/WD 24495-5, under development). Applied when structuring complex documents so readers can find and navigate content through layout, visual hierarchy, and navigation aids.",
+      "source_sha256": "11f34e18c29ddeb887f77c7fdaab24095cdb76bb593025d1d73699396a6035ad",
+      "source_path": "skills/iso-24495-5/SKILL.md",
+      "package_sha256": "e2a33d2b26f05f2115bfc08316eed27d14e0118f38b719427a8490499f385246",
+      "source_package": "ISO 24495 Plain Language-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a578128d2ae78c19541337d1d663bc8ef811065d9facec4ac497ac381b8e3355": {
+      "description_zh": "将ISO 24495-1:2023简明语言原则应用到源码单元顺序、命名、注释和错误信息，适用于编写重组代码，不用于代码解释。",
+      "source": "Plain language applied to source code (ISO 24495-1:2023 principles). Governs the parts of code a person reads: the order units appear in, their names, comments, and error messages. Applied when writing or restructuring code, not when explaining it.",
+      "source_sha256": "a578128d2ae78c19541337d1d663bc8ef811065d9facec4ac497ac381b8e3355",
+      "source_path": "skills/iso-24495-code/SKILL.md",
+      "package_sha256": "e2a33d2b26f05f2115bfc08316eed27d14e0118f38b719427a8490499f385246",
+      "source_package": "ISO 24495 Plain Language-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae2cf5e0320eefad579b2ce5d3563510e61999077a4b37ef99527aff93c6f70b": {
+      "description_zh": "仅在用户明确调用时，对其选定的Markdown或文本文件开展可复现的简明语言问题审计。",
+      "source": "Audit user-selected Markdown or text files for deterministic plain-language findings. Use only when the user explicitly invokes this skill.",
+      "source_sha256": "ae2cf5e0320eefad579b2ce5d3563510e61999077a4b37ef99527aff93c6f70b",
+      "source_path": "skills/iso-24495-text-audit/SKILL.md",
+      "package_sha256": "e2a33d2b26f05f2115bfc08316eed27d14e0118f38b719427a8490499f385246",
+      "source_package": "ISO 24495 Plain Language-0.6.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc8356a170ade904cb350bc20542dcf39cd55278a1e0fbfdc9098f217871e7e1": {
+      "description_zh": "依据已批准的solution-design.md完整实施Itential方案，创建工作流、模板、项目与配置并逐项测试，处理中途构建失败或QA反馈，完成后交由qa-agent负责验收和实建记录。",
+      "source": "Use this skill when someone has an approved solution design and is ready to build. Trigger it for phrases like \"solution design is approved\", \"go ahead and build\", \"implement the design\", \"create the workflows\", \"build everything per the design\", or \"the design is locked — implement it\". Also trigger it when a build is failing mid-way and needs debugging, or when /qa-agent hands back a failing test case for a fix. This skill implements the approved solution-design.md end-to-end — creating all workflows, templates, projects, and configs, and testing each component individually. If the user has a solution-design.md and wants to turn it into working automation, this is the right skill. Invoke after /solution-arch-agent produces an approved solution-design.md. Hands off to /qa-agent once the build is complete — /qa-agent owns acceptance testing and the as-built record.",
+      "source_sha256": "bc8356a170ade904cb350bc20542dcf39cd55278a1e0fbfdc9098f217871e7e1",
+      "source_path": ".claude/skills/builder-agent/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4c67caaf3b1ce68b05e019282f07f26855de74f1de7c60efc06ad33c3a9c15cc": {
+      "description_zh": "调查编目Itential平台中不属于指定项目的全局工作流、模板、LCM模型、golden config和OM自动化，按用例归组并生成各用例customer-spec、solution-design及总README；不用于单项目文档或新建自动化。",
+      "source": "Use this skill to survey and catalog an Itential platform — when someone wants to know what's on their platform, document global assets (workflows, templates, LCM models, golden config, OM automations) that are NOT inside a named project, group them into logical use cases, and produce a master catalog or README. Trigger it for phrases like \"document everything on the platform\", \"what use cases do we have?\", \"catalog all our global workflows\", \"I inherited this platform and have no idea what's there\", \"group our automations by use case\", or \"produce a platform README\". The output is a structured catalog: customer-spec.md + solution-design.md per use case + master README. NOT for documenting a specific named project — use /project-to-spec for that. NOT for building new automation.",
+      "source_sha256": "4c67caaf3b1ce68b05e019282f07f26855de74f1de7c60efc06ad33c3a9c15cc",
+      "source_path": ".claude/skills/documentation/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "98ec9c8051c8175dba697ab83a6d0a09756a729b672119a4f217e9201478214b": {
+      "description_zh": "连接 Itential 平台自由浏览适配器、工作流及能力，查看环境资产和运行状态，无需启动正式交付；也支持不经过完整规格、设计、构建流程的临时工作。",
+      "source": "Use this skill whenever someone wants to connect to an Itential platform and browse, inspect, or discover what's there — without starting a formal delivery. Trigger it for phrases like \"connect to my platform\", \"show me what adapters are running\", \"authenticate and pull platform data\", \"I want to poke around before starting\", \"what workflows exist?\", \"give me an inventory of the platform\", \"browse capabilities freely\", \"check if adapter X is running\", or \"I just set up a new environment — show me what's there\". Also use it for ad-hoc freestyle work where the user wants to build something directly without going through the full spec→design→build lifecycle.",
+      "source_sha256": "98ec9c8051c8175dba697ab83a6d0a09756a729b672119a4f217e9201478214b",
+      "source_path": ".claude/skills/explore/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f867017fc2af291b4c7c590436e097a9a0fa11f8e86e4172c054caa90ccf672f": {
+      "description_zh": "读取 FlowAgent 定义、工具及会话历史，将代理执行的用例转为结构化确定性自动化要求，输出customer-spec.md。",
+      "source": "Convert a FlowAgent into a deterministic workflow spec. Reads the agent definition, tools, and session history (Agent Project Service / Agent Session Manager APIs) to understand what the agent does, then produces a customer-spec.md that describes the same use case as structured, deterministic automation. Turns agentic → deterministic.",
+      "source_sha256": "f867017fc2af291b4c7c590436e097a9a0fa11f8e86e4172c054caa90ccf672f",
+      "source_path": ".claude/skills/flowagent-to-spec/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56f80e46f83122d0a7c76af9cb6f15ae8e7da2f8e06dc38d3a0bfe2713b1b256": {
+      "description_zh": "在 Itential 平台创建运行AI代理，配置LLM供应商、工具与装饰器，管理跟踪会话，让代理调用适配器、工作流和IAG服务完成目标。",
+      "source": "Create and run AI agents on the Itential Platform (Agent Project Service, Model Registry Service, Tools Service, Agent Session Manager). Agents use LLMs to autonomously call platform tools (adapters, workflows, IAG services) to complete objectives. Use when setting up agents, configuring LLM provider profiles, managing tools and decorators, or running/tracking agent sessions.",
+      "source_sha256": "56f80e46f83122d0a7c76af9cb6f15ae8e7da2f8e06dc38d3a0bfe2713b1b256",
+      "source_path": ".claude/skills/flowagent/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3fb2fc94f594fb90e18220ab5dc5dac9e3e7f76b39c7a3d7b8244c44ebdb274": {
+      "description_zh": "只读评估 Itential Gateway4 向 Gateway5 的迁移准备，分析平台工作流与JSON表单以及Gateway4脚本、playbook、角色和清单，生成手动操作Markdown报告；支持仅本地文件模式，不执行迁移或修改平台。",
+      "source": "Assess how ready an environment is to move from Itential Automation Gateway 4 (IAG4) to Gateway 5 (IAG5). Use for phrases like \"am I ready to move to IAG5\", \"assess my IAG4 to IAG5 migration\", \"what do I need to change to switch off gateway 4\", \"scan my workflows for automation gateway usage\", \"which workflows use IAG4\", \"IAG4 readiness report\", or \"evaluate my gateway migration\". This skill does NOT perform the migration — it analyzes IAP assets (workflows in and out of projects, JSON forms) and IAG4 assets (scripts, playbooks, roles, inventory), then writes a deterministic markdown guideline of the manual actions the user must take. It is strictly READ-ONLY against IAP and IAG — it never creates, updates, or deletes anything on the platform; its only write is the report in the working directory. It can also run in a LOCAL-FILES-ONLY mode with no API access. The rendered report uses the terms \"Itential Gateway4\"/\"Gateway4\" and \"Itential Gateway5\"/\"Gateway5\" (never \"IAG\"). For actually building IAG5 services, use /iag.",
+      "source_sha256": "a3fb2fc94f594fb90e18220ab5dc5dac9e3e7f76b39c7a3d7b8244c44ebdb274",
+      "source_path": ".claude/skills/gateway4-to-gateway5/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1dd8f212da435c6c6cd283b9c7ddc3ec6ab85a0acdcd1e334b33102f97b0f5cc": {
+      "description_zh": "构建运行 Itential Automation Gateway 服务，包括Python脚本、Ansible playbook和OpenTofu计划，用YAML定义并经iagctl导入，通过GatewayManager从工作流调用。",
+      "source": "Build and run IAG (Itential Automation Gateway) services — Python scripts, Ansible playbooks, OpenTofu plans. YAML-driven service definitions, imported with iagctl. Call services from Itential workflows via GatewayManager.",
+      "source_sha256": "1dd8f212da435c6c6cd283b9c7ddc3ec6ab85a0acdcd1e334b33102f97b0f5cc",
+      "source_path": ".claude/skills/iag/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "45533a73be8bf4abe9d04f90a95fdc4d6d77f55c26198a5432660297ff11ef80": {
+      "description_zh": "在 Itential Configuration Manager 管理网络设备、配置、备份、差异、设备分组及模板。",
+      "source": "Manage network devices, backups, diffs, device groups, and device templates in Itential Configuration Manager. Use when the user needs to work with device inventory, configs, or backups.",
+      "source_sha256": "45533a73be8bf4abe9d04f90a95fdc4d6d77f55c26198a5432660297ff11ef80",
+      "source_path": ".claude/skills/itential-devices/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb4a59d268c667ca5e510c0b8271a35259ea519ba9556ef2da2fe2e580d87faf": {
+      "description_zh": "建立标准配置树、规格及合规计划，运行设备合规检查、评分报告并修复违规配置。",
+      "source": "Build golden config trees, config specs, compliance plans, run compliance checks, grade reports, and remediate violations. Use when the user needs to define configuration standards or check device compliance.",
+      "source_sha256": "bb4a59d268c667ca5e510c0b8271a35259ea519ba9556ef2da2fe2e580d87faf",
+      "source_path": ".claude/skills/itential-golden-config/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "577a7415fc0ac5ae5df7baea57d2585e54144a56efed6af81947af4037ac0d4a": {
+      "description_zh": "在 Itential Inventory Manager 管理设备清单、节点、动作与标签，支持Gateway5清单批量填充及对清单设备执行动作。",
+      "source": "Manage device inventories, nodes, actions, and tags in Itential Inventory Manager. Use when working with IAG5 inventory, bulk node population, or running actions against inventory devices.",
+      "source_sha256": "577a7415fc0ac5ae5df7baea57d2585e54144a56efed6af81947af4037ac0d4a",
+      "source_path": ".claude/skills/itential-inventory/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f47f99da0b0b0225701ede5bd5042341e73782381692da09f5d2e3ca85698ef4": {
+      "description_zh": "创建更新 IAP JSON表单，配置静态枚举、REST实时和级联下拉字段，为手动触发、ShowJsonForm任务或其他界面提供结构化输入。",
+      "source": "Build IAP JSON Forms — static-enum dropdowns, REST-bound dropdowns (live data pulled from IAP endpoints), and cascading dropdowns (aka field dependency — one field's value drives another's URL path param). Use when creating, updating, or wiring forms consumed by manual triggers, manual tasks (ShowJsonForm), or any UI surface that needs a structured input panel.",
+      "source_sha256": "f47f99da0b0b0225701ede5bd5042341e73782381692da09f5d2e3ca85698ef4",
+      "source_path": ".claude/skills/itential-json-forms/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6cca94507c8f4f60a3eac2b5ccd928bec59f8f8e145a00423e1e23cf9959b9da": {
+      "description_zh": "在 Itential Lifecycle Manager 管理资源模型、实例、动作与生命周期执行，定义可复用服务模型并跟踪动作历史。",
+      "source": "Manage resource models, instances, actions, and lifecycle execution in Itential Lifecycle Manager. Use when defining reusable service models, running actions against resource instances, or tracking action execution history.",
+      "source_sha256": "6cca94507c8f4f60a3eac2b5ccd928bec59f8f8e145a00423e1e23cf9959b9da",
+      "source_path": ".claude/skills/itential-lcm/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8af2f7ee578e64318ad46aeaf923d7cf5d4e8b94b946ed692dfc0ee441a409a5": {
+      "description_zh": "建立带验证规则的命令模板，对设备执行CLI检查，并通过分析模板比较前后输出，支持show命令的前置、后置及合规验证。",
+      "source": "Build command templates with validation rules, run CLI checks against devices, and use analytic templates for pre/post comparison. Use when building pre-checks, post-checks, or compliance validations that run show commands and evaluate output.",
+      "source_sha256": "8af2f7ee578e64318ad46aeaf923d7cf5d4e8b94b946ed692dfc0ee441a409a5",
+      "source_path": ".claude/skills/itential-mop/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a49215040f960aaad6297520c87f9639d054c1a4af87ef84b04070036d659552": {
+      "description_zh": "读取指定现有 Itential 项目的工作流、模板和MOP组件，逆向整理业务目的及设计决定，生成customer-spec.md与solution-design.md，支持无文档项目及重建基线；全平台全局资产交由documentation。",
+      "source": "Use this skill when a user names a specific existing Itential project and wants it documented — reverse-engineered into a requirements spec and solution design. Trigger it for phrases like \"document the DNS_Management project\", \"create a spec from the Firewall_Rule_Lifecycle project\", \"reverse-engineer project X into a spec\", \"I have a project with no docs — produce a customer-spec and solution design for it\", or \"use this project as a baseline for a rebuild\". Reads the project's workflows, templates, and MOP components, infers business purpose and design decisions, and produces customer-spec.md + solution-design.md. For documenting global/unprojectized assets across the whole platform, use /documentation instead.",
+      "source_sha256": "a49215040f960aaad6297520c87f9639d054c1a4af87ef84b04070036d659552",
+      "source_path": ".claude/skills/project-to-spec/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6db0df8fdc0bb23af33363fba94b12dec9aafd19c3222696a09fd7826afdb694": {
+      "description_zh": "在 Itential 构建完成后依据批准验收标准拟定测试计划，获工程师批准后运行结构和实时作业测试，输出test-report，通过后写as-built；失败时携证据交回builder-agent，不自行修改工作流。",
+      "source": "Use this skill when a build is complete and needs to be verified before customer sign-off. Trigger it for phrases like \"the build is done, let's test it\", \"run acceptance tests\", \"verify this against the acceptance criteria\", \"test the delivery\", \"is this ready to ship\", \"produce the as-built record\", \"write the as-built documentation\", \"sign off on this delivery\", or \"certify this is working\". This skill drafts a test plan from the approved acceptance criteria, gets engineer approval, generates and runs both static (structural) and acceptance (live job) test cases, produces test-report.md, and — once tests pass — writes as-built.md. On any test failure, it reports the failure with evidence and hands back to /builder-agent for a fix; it never edits workflows itself. Invoke after /builder-agent completes a build. This is the last technical stage before customer delivery.",
+      "source_sha256": "6db0df8fdc0bb23af33363fba94b12dec9aafd19c3222696a09fd7826afdb694",
+      "source_path": ".claude/skills/qa-agent/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8528b2cedab549e2b1f4e6aadd49a5d51998e7015b825423547e5759e0c0167f": {
+      "description_zh": "依据已批准customer-spec连接Itential实时平台核查适配器与能力，评估可行性并生成feasibility和solution-design；需求稳定但实现计划变化时支持仅设计，设计批准后交给builder-agent。",
+      "source": "Use this skill when someone has approved requirements (a customer-spec.md) and needs to assess platform feasibility or produce a solution design. Trigger it for phrases like \"requirements are approved\", \"my spec is done\", \"check if the platform supports this\", \"run feasibility\", \"connect to the platform and design the solution\", \"I have a customer-spec — now what?\", or \"produce a solution-design.md\". This skill connects to the live platform, checks what adapters and capabilities are available, and produces feasibility.md and solution-design.md. Also trigger it in design-only mode when the implementation plan needs to change but requirements are stable. Invoke after /spec-agent produces an approved customer-spec.md. Hands off to /builder-agent after design approval.",
+      "source_sha256": "8528b2cedab549e2b1f4e6aadd49a5d51998e7015b825423547e5759e0c0167f",
+      "source_path": ".claude/skills/solution-arch-agent/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f268139c664e45c4375932f4cc0c34d9ba2778515fc93a08fb91453a9d204fc5": {
+      "description_zh": "作为Itential新自动化交付入口，从22个内置用例或从零开始，与工程师明确需求并生成批准的customer-spec，批准后转入方案架构；临时平台探索交由explore。",
+      "source": "Use this skill to start any new automation delivery — when someone wants to automate something, build a new use case, figure out requirements, write up an HLD, or kick off a project on the Itential Platform. Trigger it for phrases like \"I want to automate X\", \"help me build a workflow for Y\", \"we're starting a new automation project\", \"I need to define requirements for Z\", \"kick off a delivery\", or \"let's start with requirements\". This is the entry point for the spec-driven delivery lifecycle. It picks from 22 built-in use case specs or starts from scratch, refines requirements with the engineer, and produces an approved customer-spec.md. Use it whenever someone is at the beginning of building something new and hasn't yet defined what they're building. For ad-hoc platform exploration, use /explore instead. Hands off to /solution-arch-agent after approval.",
+      "source_sha256": "f268139c664e45c4375932f4cc0c34d9ba2778515fc93a08fb91453a9d204fc5",
+      "source_path": ".claude/skills/spec-agent/SKILL.md",
+      "package_sha256": "e47d0e7abe0f9c118bb917aa26a408c0e1b75e4bb1fd45f6986657669b767a00",
+      "source_package": "itential-builder-1.5.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b850b61547fabe5e74b21ea283529fe1b5ff17bd7fb7f284deed55d51126d5e9": {
+      "description_zh": "通过Jam MCP读取缺陷报告的控制台、网络、用户事件、截图、视频帧和转录，完成结构化端到端调查并提出根因假设，接受Jam链接或ID。",
+      "source": "Structured workflow for analyzing a Jam bug report end-to-end — pulls diagnostics from the Jam MCP server (console, network, user events, screenshots, video frames, transcript) and produces a root-cause hypothesis. Invoke with `/investigate-bug <jam-url-or-id>`.",
+      "source_sha256": "b850b61547fabe5e74b21ea283529fe1b5ff17bd7fb7f284deed55d51126d5e9",
+      "source_path": "skills/investigate-bug/SKILL.md",
+      "package_sha256": "f390ae4b109f468a0f30b0a4edae5628e780aaa4e78390d6f13ad748c0225330",
+      "source_package": "Jam-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "371d1b4e40180463690a2aaa80e5bff32f42a5ac219a1eabfdbfb4022871d9ee": {
+      "description_zh": "在Jam MCP未连接或需要可组合命令行输出时使用jam CLI，读取控制台、网络、帧和转录，并用record run记录修复证据，涵盖安装、令牌认证、分诊和验证流程。",
+      "source": "Use the `jam` CLI when the Jam MCP server is not connected (Cloud Agents, CI, headless shells) or when you need shell-composable output. Reads a Jam's console, network, frames, and transcript with `jam get`, and records proof of a fix with `jam record run`. Install, auth with JAM_TOKEN, and the triage and proof loops.",
+      "source_sha256": "371d1b4e40180463690a2aaa80e5bff32f42a5ac219a1eabfdbfb4022871d9ee",
+      "source_path": "skills/jam-cli/SKILL.md",
+      "package_sha256": "f390ae4b109f468a0f30b0a4edae5628e780aaa4e78390d6f13ad748c0225330",
+      "source_package": "Jam-1.4.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33ca7e99c9b51d36acafc7f5c48cb9d6c1a0a8dedbab49431bae63f2c740b19d": {
+      "description_zh": "提供jambonz语音应用实现方案，涵盖对话AI、工具调用、IVR输入、呼叫桥接转接、SIP、队列会议、录音及SIPREC，优先JS/TS SDK并提供Python原始JSON，与决策技能和MCP模式查询配合。",
+      "source": "Implementation recipes for jambonz voice app features. Use when writing code to build conversational voice AI agents (s2s, agent verb, vendor shortcuts, tool calling), collect input via IVR menus and gather, bridge or transfer calls (dial, SIP, queue, conference, recording, SIPREC), or configure applications via env_vars. Contains @jambonz/sdk JavaScript/TypeScript patterns (preferred) and raw-JSON examples for Python. Pair with the jambonz skill (decision-making) and the jambonz MCP server (schema lookups).",
+      "source_sha256": "33ca7e99c9b51d36acafc7f5c48cb9d6c1a0a8dedbab49431bae63f2c740b19d",
+      "source_path": "skills/jambonz-recipes/SKILL.md",
+      "package_sha256": "e8f0b6974b701ed91cdc4ad57e45246f7e33b84d64776bf048ddf47655d60466",
+      "source_package": "jambonz-skills-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f01ff99c4109fbf7405ac8d22825c6c9a39d105a136b5851fe7c66b2e524594f": {
+      "description_zh": "为Claude Code、Cursor、Codex、Windsurf或VS Code Copilot配置jambonz MCP，支持远程HTTP或本地stdio传输，包含各IDE设置、验证和故障排查。",
+      "source": "Set up the jambonz MCP server in AI coding tools. Use when the user wants to connect Claude Code, Cursor, Codex, Windsurf, or VS Code Copilot to the jambonz MCP server at https://mcp-server.jambonz.app/mcp, or run the server locally via stdio. Covers HTTP and stdio transport, per-IDE configuration, verification, and troubleshooting.",
+      "source_sha256": "f01ff99c4109fbf7405ac8d22825c6c9a39d105a136b5851fe7c66b2e524594f",
+      "source_path": "skills/jambonz-setup-mcp/SKILL.md",
+      "package_sha256": "e8f0b6974b701ed91cdc4ad57e45246f7e33b84d64776bf048ddf47655d60466",
+      "source_package": "jambonz-skills-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2f31aef2d8b615d6f503f1ae356129accaca2439ae62a7ea3e9ad1fb24c5297": {
+      "description_zh": "提供可克隆或脚手架化的jambonz完整语音应用示例，覆盖多个语音AI供应商、IVR、拨号、录音、排队和实时翻译，指向SDK示例与一行克隆命令。",
+      "source": "Ready-to-run jambonz starter applications. Use when the user wants to clone or scaffold a complete working voice app rather than assemble one from recipes — voice AI agents (OpenAI Realtime, Deepgram, ElevenLabs, Ultravox, Retell, Bedrock, AssemblyAI), IVR menus, dialers, recording, queuing, real-time translation, and more. Points at the @jambonz/sdk examples directory with one-line clone commands.",
+      "source_sha256": "c2f31aef2d8b615d6f503f1ae356129accaca2439ae62a7ea3e9ad1fb24c5297",
+      "source_path": "skills/jambonz-starters/SKILL.md",
+      "package_sha256": "e8f0b6974b701ed91cdc4ad57e45246f7e33b84d64776bf048ddf47655d60466",
+      "source_package": "jambonz-skills-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b81cd722187487f7327880ec0418273b70b09822485fd13a9cc87b57d00da9e6": {
+      "description_zh": "规划jambonz语音应用呼叫流程，选择say、gather、dial、agent、transcribe和s2s等动作、Webhook或WebSocket传输，理解会话生命周期并规避常见问题，结合实现配方、示例及MCP使用。",
+      "source": "Build voice applications on jambonz, a voice AI orchestration platform and CPaaS. Use when planning or reasoning about jambonz call flows — selecting verbs (say/gather/dial/agent/transcribe/s2s), choosing between webhook and WebSocket transport, understanding session lifecycle, or avoiding common pitfalls. Works with @jambonz/sdk (JavaScript or TypeScript, preferred) or raw JSON from Python. Pair with jambonz-recipes for implementation patterns, jambonz-starters for runnable scaffolds, and the jambonz MCP server for schema lookups.",
+      "source_sha256": "b81cd722187487f7327880ec0418273b70b09822485fd13a9cc87b57d00da9e6",
+      "source_path": "skills/jambonz/SKILL.md",
+      "package_sha256": "e8f0b6974b701ed91cdc4ad57e45246f7e33b84d64776bf048ddf47655d60466",
+      "source_package": "jambonz-skills-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3177f18178108201cd92a12c553c92c170ad251474e3613dac25df00ce16a5ae": {
+      "description_zh": "为Jamdesk文档站创建MDX页面、配置docs.json、组件和导航，使用CLI及撰写文档内容，按需求加载组件、配置和导航详细参考。",
+      "source": "Comprehensive reference for building Jamdesk documentation sites. Use when creating MDX pages, configuring docs.json, adding components, setting up navigation, working with Jamdesk CLI commands, or writing documentation content. Routes to detailed reference files for components, configuration, and navigation patterns.",
+      "source_sha256": "3177f18178108201cd92a12c553c92c170ad251474e3613dac25df00ce16a5ae",
+      "source_path": "skills/jamdesk/SKILL.md",
+      "package_sha256": "c538efb3eb67d79a74d4ba391bc8855feb733a6bb653684366d5fc6640d767c8",
+      "source_package": "Jamdesk-1.0.22-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f98506dffc15b11c858fbd208b0f1677b34e9adca05b3fcf8526ef9c8efa5615": {
+      "description_zh": "探查Java JAR文件，搜索类、包和方法并反编译源码。",
+      "source": "Explore Java JAR files — search classes, packages, methods, decompile source",
+      "source_sha256": "f98506dffc15b11c858fbd208b0f1677b34e9adca05b3fcf8526ef9c8efa5615",
+      "source_path": "skills/explore-jar/SKILL.md",
+      "package_sha256": "4b3860616ec24e0a9823885fed354222430b9637500ef30306705ba8b264397c",
+      "source_package": "jar-explorer-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4bc29d1c850059341490eb827f943dca35189ddc55a3c00339b47613741b2470": {
+      "description_zh": "切换Java反编译提供者，支持native或vineflower。",
+      "source": "Switch the decompiler provider (native or vineflower)",
+      "source_sha256": "4bc29d1c850059341490eb827f943dca35189ddc55a3c00339b47613741b2470",
+      "source_path": "skills/set-provider/SKILL.md",
+      "package_sha256": "4b3860616ec24e0a9823885fed354222430b9637500ef30306705ba8b264397c",
+      "source_package": "jar-explorer-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3a0bc9fe3f30c7c16164a345a712b607f7cb087a9a800a6d5584288b9f9008b": {
+      "description_zh": "通过JFrog CLI和Agent Guard发现搜索JFrog AI Catalog上的代理技能插件，查看版本与已安装项，安装更新移除或发布到Artifactory目录。",
+      "source": "Discover, search, install, update, remove, and publish agent skills and plugins hosted in the JFrog AI Catalog (Artifactory) via the JFrog CLI (`jf skills`, `jf agent plugins`) and JFrog Agent Guard. Use whenever the user asks what skills or plugins are available or installed, wants to browse/search the catalog, see versions, install/update/uninstall/delete a skill or plugin, or publish/upload/release one to JFrog / Artifactory / the AI Catalog.",
+      "source_sha256": "f3a0bc9fe3f30c7c16164a345a712b607f7cb087a9a800a6d5584288b9f9008b",
+      "source_path": "skills/jfrog-ai-catalog/SKILL.md",
+      "package_sha256": "43972845cbe43849c6d764dcabce21cd764b0c813540cc97ad7331748cfeaf65",
+      "source_package": "JFrog-0.3.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3aedeb486120ff7a879fe38c8f9892541d71d8707615d82b66c841029d49c152": {
+      "description_zh": "配置验证JFrog插件，适用于首次安装、初始设置及损坏配置排查。",
+      "source": "Set up and verify the JFrog plugin. Run on first install, to complete initial configuration, or to diagnose a broken setup.",
+      "source_sha256": "3aedeb486120ff7a879fe38c8f9892541d71d8707615d82b66c841029d49c152",
+      "source_path": "skills/jfrog-init/SKILL.md",
+      "package_sha256": "43972845cbe43849c6d764dcabce21cd764b0c813540cc97ad7331748cfeaf65",
+      "source_package": "JFrog-0.3.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "02782dd94cadafc3a747f1296c8694d89ad9a8696119d9bed64bdc4963bd2dc7": {
+      "description_zh": "通过JFrog Agent Guard查询受治理目录中可用批准的MCP，安装、列举、配置或移除服务并更新代理配置，以目录而非单独本地IDE允许名单为依据。",
+      "source": "Use to install, list, or remove MCP servers, and to discover which MCPs the user can install — including questions about available, approved, or allowed MCPs for a project. That governed catalog is the authoritative answer; do not answer those questions from local IDE/settings allowlists alone. Use whenever the user wants to add/enable/install/list/remove/uninstall/configure an MCP or write/update the agent's MCP config — even if they name a package like `@scope/pkg` and even without saying \"MCP\" or \"JFrog\". Never install an MCP any other way. All of this goes through the JFrog Agent Guard (npx @jfrog/agent-guard).",
+      "source_sha256": "02782dd94cadafc3a747f1296c8694d89ad9a8696119d9bed64bdc4963bd2dc7",
+      "source_path": "skills/jfrog-mcp-management/SKILL.md",
+      "package_sha256": "43972845cbe43849c6d764dcabce21cd764b0c813540cc97ad7331748cfeaf65",
+      "source_package": "JFrog-0.3.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96718094328545a90a8d38fdfd3698ed1dc20f96cc9967da28e28d4c715ab811": {
+      "description_zh": "通过JFrog目录和存储检查npm、Maven、PyPI或Go包版本、安全与策展许可，并从Artifactory下载，排查ETARGET、403、缺版本及豁免问题；纯漏洞查询和MCP管理交由专门入口。",
+      "source": "Check/download a package (npm, Maven, PyPI, Go...) via JFrog — safe, allowed, curated? Or: package op fails/blocked (ETARGET, 403, blocked by curation policy, missing version, waiver) — root cause it. Checks the JFrog Public Catalog and stored packages for a version, interprets catalog security signals, and downloads through Artifactory (JFrog Platform locations, remote cache, curation-aware package managers, or repo proxy). Do NOT use for pure CVE or vulnerability lookups (e.g. \"details on CVE-2021-23337\") — those are handled by the jfrog skill''s Public security domain queries without this workflow. Do NOT use for installing, listing, or approving MCP servers/tools (even when named like a package, e.g. `@scope/pkg`) — that''s `jfrog-mcp-management`.",
+      "source_sha256": "96718094328545a90a8d38fdfd3698ed1dc20f96cc9967da28e28d4c715ab811",
+      "source_path": "skills/jfrog-package-curation/SKILL.md",
+      "package_sha256": "43972845cbe43849c6d764dcabce21cd764b0c813540cc97ad7331748cfeaf65",
+      "source_package": "JFrog-0.3.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4564a4603611edbf537b15bcb4b1f4a9447b5d5a633766a19dff8d9b0bdbb94f": {
+      "description_zh": "仅以JFrog官方参考架构为事实依据，规划Artifactory/Xray拓扑容量、部署、多站点、SaaS或自管、高可用、隔离和灾备；不用于制品下载、权限管理、漏洞查询、实例CLI操作或包策展。",
+      "source": "Guides JFrog Platform topology, sizing (RPM, t-shirt templates), deployment, multi-site use cases, SaaS vs self-managed, HA, air-gapped, and disaster recovery using the official Reference Architecture site as the sole source of facts. Use this skill when the user asks how to size Artifactory or Xray, which deployment pattern to choose, single vs multi site, active-active, active-passive, CI/CD separation, Helm/Kubernetes install planning, or reference architecture (live WebFetch from jfrog.com/reference-architecture). Do NOT use for artifact search or download, repository or permission admin, CVE or vulnerability lookups, live jf CLI operations against their instance, or package curation — use the jfrog base skill or jfrog-package-curation instead.",
+      "source_sha256": "4564a4603611edbf537b15bcb4b1f4a9447b5d5a633766a19dff8d9b0bdbb94f",
+      "source_path": "skills/jfrog-reference-architecture/SKILL.md",
+      "package_sha256": "43972845cbe43849c6d764dcabce21cd764b0c813540cc97ad7331748cfeaf65",
+      "source_package": "JFrog-0.3.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d5aadb531c5e937140cd96b02d84776f9112db9993d8b632ec2daeb4806a350c": {
+      "description_zh": "通过jf setup与本地package-resolution绑定文件，将npm、pip、uv、Maven、Gradle、Go、Docker或Helm等包管理器接入Artifactory；已有同仓库绑定时跳过，依据解析结果选择仓库，失败时报告原错误而不切换服务器。",
+      "source": "Use this skill when the user asks to set up, configure, bind, or connect a package manager (npm, pip, uv, pipenv, maven, gradle, go, docker, helm, ...) to JFrog Artifactory via `jf setup` and `.jfrog/local/package-resolution.json`; when a workspace manifest exists with no matching binding entry; or when a session hook reports package-manager config missing. Skip when the binding already has the same repo key. Never pick a repo by discovery; use resolver output only (unless the user names or asks to browse repos). On unresolved or failed setup, ask with the failure verbatim — never switch servers. NOT for installing packages, general Artifactory repo operations (use the base jfrog skill), or MCP server setup (use jfrog-mcp-management).",
+      "source_sha256": "d5aadb531c5e937140cd96b02d84776f9112db9993d8b632ec2daeb4806a350c",
+      "source_path": "skills/jfrog-setup-package-managers/SKILL.md",
+      "package_sha256": "43972845cbe43849c6d764dcabce21cd764b0c813540cc97ad7331748cfeaf65",
+      "source_package": "JFrog-0.3.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6fa3717f2c2aaab58e42719f381f63689383cd939a748b889998a8d56510785e": {
+      "description_zh": "通过JFrog CLI、MCP及REST/GraphQL管理平台仓库、制品、构建、权限用户令牌、服务器、属性复制、项目、安全扫描与CVE、Advanced Security暴露结果、发布包生命周期和数据导出；不用于MCP服务管理。",
+      "source": "Interact with the JFrog Platform via the JFrog CLI, JFrog MCP server and REST/GraphQL APIs. Use this skill when the user wants to manage Artifactory repositories, upload or download artifacts, manage builds, configure permissions, manage users and groups, work with access tokens, configure JFrog CLI servers, search artifacts, manage properties, set up replication, manage JFrog Projects, run security audits or scans, look up CVE details, query exposures scan results from JFrog Advanced Security, manage release bundles and lifecycle operations, aggregate or export platform data, or perform any JFrog Platform administration task. Also use when the user mentions jf, jfrog, artifactory, xray, distribution, evidence, apptrust, onemodel, graphql, workers, mission control, curation, advanced security, exposures, or any JFrog product name. Do NOT use this skill to install, add, remove, list, or manage MCP servers.",
+      "source_sha256": "6fa3717f2c2aaab58e42719f381f63689383cd939a748b889998a8d56510785e",
+      "source_path": "skills/jfrog/SKILL.md",
+      "package_sha256": "43972845cbe43849c6d764dcabce21cd764b0c813540cc97ad7331748cfeaf65",
+      "source_package": "JFrog-0.3.6-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4150793b7a8345a8d113b4964da0b16966db363f7b5c8ee3d4a110c11b89f580": {
+      "description_zh": "将已不再活跃岗位的定制简历与求职信归档，保持Applications工作目录简洁，支持用户清理请求或夜间清理任务。",
+      "source": "Archive tailored resumes and cover letters for roles that are no longer active, keeping the working Applications folder short. Use when the user says \"clean up my tailored docs\", \"archive old application materials\", \"tidy my resume folder\", or when a nightly cleanup task fires.",
+      "source_sha256": "4150793b7a8345a8d113b4964da0b16966db363f7b5c8ee3d4a110c11b89f580",
+      "source_path": "skills/docs-cleanup/SKILL.md",
+      "package_sha256": "43408bc07fd3f6dfd3f63c35a31333e8c6fcb0c319bb869b4bbc3280e752023b",
+      "source_package": "Job Hunt HQ-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc920aa206a33fc8d86ac17e498a6c0f214aca75ba01d25e3346e5b0e5a06468": {
+      "description_zh": "为求职跟踪器中待申请且尚无文档的岗位生成定制简历和求职信，并关联到岗位卡片，支持指定公司及排程或按钮触发。",
+      "source": "Generate a tailored resume and cover letter for tracker roles in \"To Apply\" that don't have documents yet, and stamp them onto the cards. Use when the user says \"generate my application docs\", \"tailor my resume for my to-apply roles\", \"make documents for a specific company\", or when a docs-generation task fires (scheduled or via the Generate Now button).",
+      "source_sha256": "bc920aa206a33fc8d86ac17e498a6c0f214aca75ba01d25e3346e5b0e5a06468",
+      "source_path": "skills/generate-docs/SKILL.md",
+      "package_sha256": "43408bc07fd3f6dfd3f63c35a31333e8c6fcb0c319bb869b4bbc3280e752023b",
+      "source_package": "Job Hunt HQ-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1b4155a7282478012c54f966d1a1754c6023b17f64f8be2ccf220ebfe5e0fff9": {
+      "description_zh": "按用户求职定位扫描招聘网站的新岗位，与跟踪器去重后加入Screening筛选列，支持手动或每日排程。",
+      "source": "Scan job boards for new openings matching the user's job thesis, dedupe against their tracker, and add matches to the Screening column. Use when the user says \"run a job scrub\", \"find new roles\", \"look for new openings\", \"any new jobs today?\", or when a scheduled daily scrub fires.",
+      "source_sha256": "1b4155a7282478012c54f966d1a1754c6023b17f64f8be2ccf220ebfe5e0fff9",
+      "source_path": "skills/job-scrub/SKILL.md",
+      "package_sha256": "43408bc07fd3f6dfd3f63c35a31333e8c6fcb0c319bb869b4bbc3280e752023b",
+      "source_package": "Job Hunt HQ-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "abba85afbd16ea87c67c10e7e6f27a051909a19bd2c1f37c975ef6440e9f0db4": {
+      "description_zh": "通过邮件连接器检查求职回复，更新匹配岗位卡片为电话筛选、面试中或拒绝等状态，支持手动查询或排程监控。",
+      "source": "Scan the user's email for replies to job applications and advance the matching tracker cards (Phone Screen, Interviewing, Rejected, etc.). Use when the user says \"check for job replies\", \"any word from companies?\", \"scan my email for application updates\", or when a scheduled reply monitor fires. Requires an email connector.",
+      "source_sha256": "abba85afbd16ea87c67c10e7e6f27a051909a19bd2c1f37c975ef6440e9f0db4",
+      "source_path": "skills/reply-monitor/SKILL.md",
+      "package_sha256": "43408bc07fd3f6dfd3f63c35a31333e8c6fcb0c319bb869b4bbc3280e752023b",
+      "source_package": "Job Hunt HQ-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2b906a97ce1e7f53920b125305aba23ed5e79f9557f25d64b8d066aa24866243": {
+      "description_zh": "安装Job Hunt HQ本地跟踪应用，建立个人求职定位与主简历，并可选配置自动化，适用于开始求职及首次设置。",
+      "source": "Set up the Job Hunt HQ system — install the local tracker app into the user's folder, build their personal job thesis and master resume, and optionally wire up automations. Use when the user says \"set up my job tracker\", \"install job hunt hq\", \"start my job hunt\", \"get me set up for job hunting\", or has just installed this plugin and asks how to begin.",
+      "source_sha256": "2b906a97ce1e7f53920b125305aba23ed5e79f9557f25d64b8d066aa24866243",
+      "source_path": "skills/setup-job-tracker/SKILL.md",
+      "package_sha256": "43408bc07fd3f6dfd3f63c35a31333e8c6fcb0c319bb869b4bbc3280e752023b",
+      "source_package": "Job Hunt HQ-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c718790a2a074d30a3963a10dd821729b280e51064c653444d67d4a4d4e3bb41": {
+      "description_zh": "创建JointJS拖拽式可视构建工具，从侧栏组合节点生成SQL、正则、cron、决策树、API规格或管道等结构化输出，也支持嵌入调用图的差异和代码评审工具。",
+      "source": "Creates any interactive visual builder playground — a drag-and-drop JointJS canvas where users compose nodes from a sidebar to build a structured output (SQL, regex, cron expression, decision tree, API spec, pipeline, etc.). Also handles diff/code-review tools with embedded JointJS call graphs. Use when the user asks to build an interactive builder, visual designer, drag-and-drop tool, canvas-based composer, or code reviewer for ANY domain. Examples: 'build a regex builder', 'build a regex explorer', 'build a JointJS builder playground', 'create a JointJS visual playground', 'create a visual API designer', 'make a data pipeline builder', 'build a SQL query builder', 'create a cron schedule builder', 'build a decision tree', 'create a rule engine', 'build a PR diff reviewer', 'create a GitHub Actions workflow builder', 'build a state machine', 'make a docker compose builder'.",
+      "source_sha256": "c718790a2a074d30a3963a10dd821729b280e51064c653444d67d4a4d4e3bb41",
+      "source_path": "skills/canvas-builder/SKILL.md",
+      "package_sha256": "6cae84f085de1cb01ccddf0932bdb2d313dbf471e907d071f0a66e9f04a46c8c",
+      "source_package": "JointJS Code Playground-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "916aaa0d78ee523bff126a9dbbd440b7e39bfaf449ab47ddce90b74acb2fe757": {
+      "description_zh": "为库或代码库架构创建交互式JointJS代码地图，包含分层颜色、类型连接、预设视图、路径高亮、路由切换及点击注释，支持模块关系和本地项目结构探索。",
+      "source": "Creates an interactive code map playground for any library or codebase architecture — an animated JointJS node graph with layer-colored nodes, typed connections, preset views, path highlighting, router toggle, and click-to-annotate notes. Use when the user asks to visualize a library's structure, explore a codebase architecture, map module relationships, or analyze a local project. Examples: 'create a code map for React', 'show me how Express.js is organized', 'build an architecture explorer for Vue 3', 'visualize the module relationships in JointJS', 'build a code map for this codebase', 'map out this project', 'explore the architecture of this repo', 'visualize this project structure', 'build a JointJS playground', 'create a JointJS code playground', 'jointjs playground'.",
+      "source_sha256": "916aaa0d78ee523bff126a9dbbd440b7e39bfaf449ab47ddce90b74acb2fe757",
+      "source_path": "skills/codemap/SKILL.md",
+      "package_sha256": "6cae84f085de1cb01ccddf0932bdb2d313dbf471e907d071f0a66e9f04a46c8c",
+      "source_package": "JointJS Code Playground-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a61e9fd6a464d784871e8377bec6567f597fccfa3f67082df24b468d53b2924d": {
+      "description_zh": "依据本地模式、ORM、迁移或描述创建JointJS数据结构探索器，展示数据库、API模型和实体关系，包含主键字段数量、字段搜索、PK/FK/UQ/NN完整字段表、样例查询及BFS路径高亮。",
+      "source": "Creates an interactive data explorer playground for any database schema, API data model, or entity-relationship diagram — an animated JointJS graph with two-tone entity nodes showing PK and field count, field-level search, full field table modal with PK/FK/UQ/NN badges, sample queries, router toggle, and BFS path highlighting. Use when the user wants to visualize data structures, table relationships, JSON schemas, or entity models — from local schema files, ORM models, migration files, or described schemas. Examples: 'visualize my database schema', 'create a data map for our API models', 'show me the entity relationships in our app', 'explore this Postgres schema', 'build a data explorer for this project', 'map out our database', 'explore our migrations', 'build a JointJS data playground', 'create a JointJS schema explorer'.",
+      "source_sha256": "a61e9fd6a464d784871e8377bec6567f597fccfa3f67082df24b468d53b2924d",
+      "source_path": "skills/data-explorer/SKILL.md",
+      "package_sha256": "6cae84f085de1cb01ccddf0932bdb2d313dbf471e907d071f0a66e9f04a46c8c",
+      "source_package": "JointJS Code Playground-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8019f391468f259241f877215ff2f5b6a32e131c718750963fba97d4ee805455": {
+      "description_zh": "创建交互式PR或差异评审工具，以并排HTML呈现逐行评论、差异块批准拒绝，并通过JointJS调用图展示修改和依赖。",
+      "source": "Creates an interactive PR/diff review tool — a side-by-side HTML viewer with line-by-line inline commenting, hunk approve/reject, and a JointJS call graph showing what changed and what depends on it. Use when the user asks to review a diff, review a PR, review code changes, visualize a pull request, or see a code review with call graph. Examples: 'review this PR', 'show me what changed in this diff', 'create a code review tool', 'build a PR reviewer with call graph', 'visualize what functions changed'.",
+      "source_sha256": "8019f391468f259241f877215ff2f5b6a32e131c718750963fba97d4ee805455",
+      "source_path": "skills/diff-review/SKILL.md",
+      "package_sha256": "6cae84f085de1cb01ccddf0932bdb2d313dbf471e907d071f0a66e9f04a46c8c",
+      "source_package": "JointJS Code Playground-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a32c0f0657df31a10e3b43bae9aefe05e5cb558d84970424c5066bdc139965ba": {
+      "description_zh": "创建可缩放JointJS网站树，按章节组织文档或营销网站页面，提供搜索与点击打开，展示页面层级和站点结构。",
+      "source": "Creates an interactive website map — a zoomable JointJS tree showing every page of a documentation or marketing site, grouped by section, with click-to-open and search. Use when the user wants to visualize the structure of a website, explore a docs site, create a sitemap tree, or map out page hierarchy. Examples: 'create a site map for docs.jointjs.com', 'build a website explorer for react.dev', 'show me the structure of the Next.js docs', 'map out this documentation site', 'visualize the page hierarchy of stripe.com/docs', 'build a sitemap tree for our website'.",
+      "source_sha256": "a32c0f0657df31a10e3b43bae9aefe05e5cb558d84970424c5066bdc139965ba",
+      "source_path": "skills/site-explorer/SKILL.md",
+      "package_sha256": "6cae84f085de1cb01ccddf0932bdb2d313dbf471e907d071f0a66e9f04a46c8c",
+      "source_package": "JointJS Code Playground-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c2050975f8d02eddb3fe56976ba0a9da9c8cc19ec05d77a11f6a65e3b962cb0f": {
+      "description_zh": "仅响应用户/jot命令，将请求分派到Jotbook暂存、评审、成文、草稿或初始化技能；自动暂存交由jotbook-stage。",
+      "source": "Toolkit dispatcher for `/jot` — routes user slash invocations to the appropriate jotbook skill (stage, review, ink, pencil, init). **User-triggered only; never auto-invoke.** Auto-staging is handled by `jotbook-stage`, not this skill.",
+      "source_sha256": "c2050975f8d02eddb3fe56976ba0a9da9c8cc19ec05d77a11f6a65e3b962cb0f",
+      "source_path": "skills/jot/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e4bc3ff323b4adfe05c415a5af0643206e84b1f0097ba54e83ae890645f5f03": {
+      "description_zh": "在当前项目初始化Jotbook，写入.claude/jotbook.local.md设置、搭建目录，并可选修改.gitignore。",
+      "source": "Initialize a jotbook in the current project — writes a starter `.claude/jotbook.local.md` settings file, scaffolds the directory structure, and optionally amends `.gitignore`.",
+      "source_sha256": "9e4bc3ff323b4adfe05c415a5af0643206e84b1f0097ba54e83ae890645f5f03",
+      "source_path": "skills/jotbook-init/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfc76ab69a7f19133681077fc98e83c670d1d0697e654bd2d7cfabb89c3b4a15": {
+      "description_zh": "作为Jotbook成文入口，无参数时引导整理笔记积压，指定笔记slug时生成完整长文，优先提升已有草稿而非重写。",
+      "source": "Primary jotbook entry point. With no arguments, runs the guided curation session over the jot backlog. With one or more jot slugs, inks those jots into finished long-form entries (promotes any existing pencil instead of regenerating).",
+      "source_sha256": "dfc76ab69a7f19133681077fc98e83c670d1d0697e654bd2d7cfabb89c3b4a15",
+      "source_path": "skills/jotbook-ink/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d452a5bfb363423611d822be71d226cc99aabf9cddb791edb2986dbff369edc": {
+      "description_zh": "仅用户触发时扫描已成文Jotbook条目，找出相关但未链接的内容，经确认后添加适合格式的交叉链接，连接旧文和新文。",
+      "source": "Cross-link sweep over the inked jotbook. Walks the entries in entries_dir, surfaces pairs of topically related entries that aren't yet linked, and — on your confirmation — adds small format-appropriate links between them. Use it to connect older entries to ones inked after them. User-triggered only; never auto-invoke.",
+      "source_sha256": "9d452a5bfb363423611d822be71d226cc99aabf9cddb791edb2986dbff369edc",
+      "source_path": "skills/jotbook-link/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e1c48cc2e6beaf2f84f997e1a174834357c0f7e5cc867e7729d2b6f4ecd8cde": {
+      "description_zh": "审查Jotbook临时长文草稿积压，决定成文、删除、修订、编辑或保留。",
+      "source": "Review the pencil backlog and decide which provisional drafts to ink, drop, revise, edit, or keep.",
+      "source_sha256": "5e1c48cc2e6beaf2f84f997e1a174834357c0f7e5cc867e7729d2b6f4ecd8cde",
+      "source_path": "skills/jotbook-pencil-review/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e16d74b6969fb4c56d94768e49de1b88368e17cad5d187f9a449736388befaa7": {
+      "description_zh": "将一条或多条笔记转为供后续评估的临时长文草稿，新主题先暂存为笔记，保留原笔记且不写交叉链接，之后通过pencil-review提升。",
+      "source": "Render one or more jots — or a fresh subject, which is staged as a jot first — into a provisional long-form draft (a \"pencil\") for later evaluation. Source jots are preserved and no cross-links are written — promotion happens later via `/jotbook-pencil-review`.",
+      "source_sha256": "e16d74b6969fb4c56d94768e49de1b88368e17cad5d187f9a449736388befaa7",
+      "source_path": "skills/jotbook-pencil/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a4dfdf38422c284934c1c4fc1d7da5cdf130385cca9e5290fd8814f09e29dfa6": {
+      "description_zh": "评审Jotbook笔记积压，识别主题重合及正在起草的条目，并执行删除、合并、微调、起草或成文的整理决定。",
+      "source": "Review the jot backlog and dispatch decisions in place — drop, merge, tweak, pencil, or ink. Surfaces overlap between related jots and flags any with a pencil already in progress.",
+      "source_sha256": "a4dfdf38422c284934c1c4fc1d7da5cdf130385cca9e5290fd8814f09e29dfa6",
+      "source_path": "skills/jotbook-review/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b31734444a3b07869646bed7664ec1b1296b450dc43bb32248eb9a0750467598": {
+      "description_zh": "把近期讨论的领域概念暂存为轻量笔记指针，在配置的jots目录写小文件而非完整文章；原说明设计为实质多段解释后的自动捕获。",
+      "source": "Stage a recently-discussed concept as a lightweight jot. **CRITICAL — auto-invoke this skill at the end of any turn where you delivered a substantive multi-paragraph explanation of a domain concept (a system, mechanism, piece of code, design rationale, or pattern the user might want to revisit). Don't ask permission, don't hedge, don't skip because the topic feels minor — staging is cheap and reversible; failing to capture is permanent. Stage and report in one line.** Writes a small pointer file under the configured jots directory; does not write the full entry.",
+      "source_sha256": "b31734444a3b07869646bed7664ec1b1296b450dc43bb32248eb9a0750467598",
+      "source_path": "skills/jotbook-stage/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d1dfdef1543bb943f5e9f499122901adfb456d4ddf4d7b077f28778f0aad3d0": {
+      "description_zh": "仅用户触发时为Jotbook设计模板HTML输出，按视觉需求选完整评审或快速路径，生成样式、令牌化模板、预览和约定文档，机械验证后经批准绑定输出格式与模板路径。",
+      "source": "Design a templated-HTML output for this jotbook — a full judge-panel workflow or a streamlined quick path, recommended from the project's visual richness — that produces a stylesheet, tokenized template, preview, and token-conventions doc, verifies them mechanically, and wires output_format/template_path on your sign-off. User-triggered only; never auto-invoke.",
+      "source_sha256": "3d1dfdef1543bb943f5e9f499122901adfb456d4ddf4d7b077f28778f0aad3d0",
+      "source_path": "skills/jotbook-template/SKILL.md",
+      "package_sha256": "6f001976a7b70529eec6c333667d36a1b811e0024d396db343bac97a24df60da",
+      "source_package": "Jotbook-0.5.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "803d67fcbbbd60a6ea3ad460485e75dc9a3cdef364624026b4de44ab37d9eee1": {
+      "description_zh": "为日本市场构建本地化网页、应用和组件，处理CJK字体与日文排版、文化界面模式、表单、纵排、注音、语言属性及日元格式。",
+      "source": "Build Japanese-ready web interfaces with correct CJK typography, cultural UI patterns, and localization best practices. Use this skill whenever building a website, app, or component for the Japanese market, when the UI includes Japanese text (kanji, hiragana, katakana), when adding Japanese language support or i18n/l10n for Japan, when designing forms for Japanese users, when implementing vertical text (tategaki), when working with CJK font loading, or when the user mentions Japanese, Japan, 日本語, nihongo, CJK, kanji, hiragana, katakana, furigana, or any Japanese-specific design requirement. Also trigger when localizing an existing product for Japan, adding a lang=\"ja\" attribute, or handling yen currency formatting.",
+      "source_sha256": "803d67fcbbbd60a6ea3ad460485e75dc9a3cdef364624026b4de44ab37d9eee1",
+      "source_path": "skills/jp-design/SKILL.md",
+      "package_sha256": "08a5951952936e411ea17282db7278428f0f0adf848b8325f44afc17ad488cd8",
+      "source_package": "jp-web-design-guardrails-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fe1610417bbcdd4b10d873e19b35a2d3fb8091226850aa20e6d82f0fec33774": {
+      "description_zh": "为Juniper Square工作区构建投资实体或投资人所有权结构图，在每条连线上显示持有比例，支持实体树内持仓汇总和卡片报告或表；不用于募资管道、实体树外NAV绩效或数据室。",
+      "source": "Build an investment-entity org chart for a Juniper Square workspace — boxes and lines, with ownership percentages on every edge. Use when the user says \"org chart\", \"organizational chart\", \"entity structure diagram\", \"ownership chart\", \"ownership graph\", \"nested entity structure\", \"boxes and lines\", \"draw my fund structure\", \"visualize my entities\", \"where is investor X invested\", \"show me Fund Y's structure\", \"what does Fund Y own\", or asks for a roll-up of all positions owned by an investment entity. Use whenever the deliverable is an entity-to-entity (or investor-to-entity) ownership picture, rendered as a stacked-card report or as a roll-up table. Do NOT trigger for fundraise pipeline questions, performance / NAV roll-ups outside an entity tree, or documents / data-room questions.",
+      "source_sha256": "8fe1610417bbcdd4b10d873e19b35a2d3fb8091226850aa20e6d82f0fec33774",
+      "source_path": "skills/entity-org-chart/SKILL.md",
+      "package_sha256": "c3bc6ca2007d4893de55a4b44e55f14c26a0aa8994cc5e11e23b01510cffcf60",
+      "source_package": "Juniper Square-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f6db3d335561b946613c5de546176a2755e0913937b2d6bed4acb37f02dfeb9": {
+      "description_zh": "为GP与LP或潜在投资人会面准备带来源归属的速览，结合Juniper Square连接器、公开背景及工作工具呈现募资和投资事实，支持独立使用。",
+      "source": "Prep a GP for an LP or prospect interaction with a source-attributed tearsheet. Pulls Juniper Square connector data, scans the contact's public footprint, surfaces fundraising and investment facts, and produces a scannable briefing. Triggers; \"tearsheet for [contact]\", \"LP tearsheet\", \"pull a tearsheet on [contact]\", \"prep me for my meeting with [LP]\", \"GP meeting prep for [contact]\", \"brief me on [LP]\". Standalone-capable; supercharged by the Juniper Square connector and workplace tools.",
+      "source_sha256": "5f6db3d335561b946613c5de546176a2755e0913937b2d6bed4acb37f02dfeb9",
+      "source_path": "skills/investor-tearsheet/SKILL.md",
+      "package_sha256": "c3bc6ca2007d4893de55a4b44e55f14c26a0aa8994cc5e11e23b01510cffcf60",
+      "source_package": "Juniper Square-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff9e398263f075ed0b719a9648f005cad49636d09bfd50033380b90d8a490553": {
+      "description_zh": "为可保存的Juniper Square速览、募资行动、实体结构、组合管道及财务报告应用经验证示例驱动的品牌呈现层，内容由调用技能负责；不用于临时聊天回答或一次性小组件。",
+      "source": "Render kept, branded Juniper Square (JSQ) report deliverables in the output window — tearsheets, fundraise action reports, entity org charts, portfolio/pipeline summaries, financial briefs. A thin brand layer driven by vetted reference renders. NOT for ephemeral in-chat answers or throwaway inline widgets. Consumer skills own report content; this skill owns the brand layer, the reference examples, and the render contract.",
+      "source_sha256": "ff9e398263f075ed0b719a9648f005cad49636d09bfd50033380b90d8a490553",
+      "source_path": "skills/jsq-report-render/SKILL.md",
+      "package_sha256": "c3bc6ca2007d4893de55a4b44e55f14c26a0aa8994cc5e11e23b01510cffcf60",
+      "source_package": "Juniper Square-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ec576849fed05e26588b3c4c10e66bec87e9fbe07995661427ef05d34e2059fd": {
+      "description_zh": "解释Juniper Square联系人、账户、发行、潜客、认购、持仓、投资实体与活动等对象关系，支持查询前术语映射、同名消歧及聚合，区分认购承诺与已执行持仓等口径。",
+      "source": "Reference for the Juniper Square data model — the core objects (Contact, Account, Offering, Prospect, Subscription, Position, Investment Entity, Activity, etc.), how they relate, and how to reason about them when answering questions or calling Juniper Square MCP tools. Use this skill whenever a user asks about Juniper Square data — investors, fundraises, offerings, subscriptions, capital calls, NAV, distributions, GP workspaces — or any time you need to resolve what a term like \"entity\" or \"investor\" maps to before querying. Also use when aggregating across Juniper Square records, when disambiguating objects that share a name, or when deciding which object holds the answer (e.g., Subscription vs. Position for committed vs. executed capital).",
+      "source_sha256": "ec576849fed05e26588b3c4c10e66bec87e9fbe07995661427ef05d34e2059fd",
+      "source_path": "skills/juniper-square-data-model/SKILL.md",
+      "package_sha256": "c3bc6ca2007d4893de55a4b44e55f14c26a0aa8994cc5e11e23b01510cffcf60",
+      "source_package": "Juniper Square-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5bc8a1ed13ce55bec711d5ea131191edc950d56938a983e6795ace86fbc4b692": {
+      "description_zh": "为Juniper Square单一发行生成以今日行动为首的静态HTML募资报告，依据认购状态展示漏斗、每位投资人的确切阶段及数据室参与，识别卡点和结案进度，不使用潜客状态。",
+      "source": "Build a single-offering fundraise ACTION report for a Juniper Square GP — a static HTML page that leads with what to do today, then backs it with the subscription funnel, the exact subscription step each in-flight investor is on (from mainStates.stages), and data-room engagement. Use whenever a GP asks for a fundraise status, \"what needs my attention on [offering]\", where investors are stuck, a subscription / closing status check, a daily raise update, or \"action report for [offering]\". Trigger even when the user doesn't say \"action report\" — a request to see the state of one fundraise and what to act on is enough. Built entirely on SUBSCRIPTION STATUS; it does not use prospect status.",
+      "source_sha256": "5bc8a1ed13ce55bec711d5ea131191edc950d56938a983e6795ace86fbc4b692",
+      "source_path": "skills/offering-action-report/SKILL.md",
+      "package_sha256": "c3bc6ca2007d4893de55a4b44e55f14c26a0aa8994cc5e11e23b01510cffcf60",
+      "source_package": "Juniper Square-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "befbaeab967bd4dcb95bca21de3769f7a1eb519e829cdec911c2220733804e55": {
+      "description_zh": "组织大型项目分阶段执行并保留上下文，支持多步计划全程实施、并行代理协调、多会话进度板和交接、夜间构建部署及既有成果维护调试。",
+      "source": "Multi-phase plan execution and context preservation. Use whenever the user wants to break a large project into phases, execute a multi-step implementation plan start-to-finish, run work across parallel agents without conflicts, manage work across multiple sessions, preserve context with a live board or handoffs, run an end-of-day autonomous build/deploy pipeline, or maintain and debug previously completed work. Trigger on phrases like: 'break this into phases', 'implementation plan', 'this will take multiple sessions', 'execute this plan', 'scrum master', 'orchestrate agents', 'parallel agents', 'continue where we left off', 'resume the plan', 'handoff', 'the board', 'night build', 'end of day build', 'context is getting long', 'context rot', or any large-scope coding task that clearly cannot be done in a single response.",
+      "source_sha256": "befbaeab967bd4dcb95bca21de3769f7a1eb519e829cdec911c2220733804e55",
+      "source_path": "SKILL.md",
+      "package_sha256": "2dc49a5c258936339c81496f589fa00754dd4a5b7ff9b72f57aa9afbe3be3b4f",
+      "source_package": "Just Keep Swimming-2.3.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35329d278a43b6f5bf781ab28ae42f38791a7267e70db0133015353a4527829b": {
+      "description_zh": "通过Just Domain为新业务或产品提出候选名称，同次查询域名并返回选定名称的注册链接；只读，不订购预留付款，也不作商标或公司登记检查。",
+      "source": "Proposes names for a new business or product and finds a domain for the one the user likes, with Just Domain (justdomain.ai). Suggests candidate names, checks their domains in one call, shows which can be registered, and hands back a link to register the chosen name on justdomain.ai. Use when the user says \"I need a name for my business\", \"help me name my company\", \"find me a name and a domain for my bakery\", \"what should I call my business\", or has a business or product idea but no name yet. Not a trademark or company-registry check. Read-only: nothing is ordered, reserved or paid in the chat.",
+      "source_sha256": "35329d278a43b6f5bf781ab28ae42f38791a7267e70db0133015353a4527829b",
+      "source_path": "skills/find-a-name/SKILL.md",
+      "package_sha256": "bc8cfc381d4a13e29ec258298028afa55520a2cabf7f8acc227194a1f82c398e",
+      "source_package": "Just.-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f5cb78aa100c267899d6a57620867a6725ad7aa5e177cf536a6fd58a903bb00": {
+      "description_zh": "通过Just Domain查询指定域名可用性、注册续费价格及注册链接，并检查转入阻塞、当前注册商、DNS连续性和完整周期转入费用；只读，不付款续费改DNS解锁转移或索要EPP码。",
+      "source": "Checks specific domain names with Just Domain (justdomain.ai): whether each is available, what it costs to register and renew, and a link to register it there. Also checks whether anything blocks moving a domain held elsewhere to Just Domain: the blockers, where it is registered today, whether DNS keeps working, and the full-term transfer price. Use when the user asks \"is example.com available\", \"check example.io and example.ai\", \"what does this domain cost\", \"give me a link to register it\", \"can I move my domain to Just Domain\" or \"why won''t my domain transfer\". Read-only: it never orders, pays, renews, edits DNS, unlocks or transfers a domain in the chat, and never asks for or relays an authorization (EPP) code.",
+      "source_sha256": "2f5cb78aa100c267899d6a57620867a6725ad7aa5e177cf536a6fd58a903bb00",
+      "source_path": "skills/just-domain/SKILL.md",
+      "package_sha256": "bc8cfc381d4a13e29ec258298028afa55520a2cabf7f8acc227194a1f82c398e",
+      "source_package": "Just.-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85a0c3821d39202f15413ef76a0a72ef12378ce96a195408f52e40b68decab58": {
+      "description_zh": "连接JuzPost与Claude、选择工作区，并用JuzPost工具解决登录、工作区或套餐问题。",
+      "source": "Connect JuzPost to Claude, pick the workspace, and fix sign-in, workspace or plan problems with the JuzPost tools.",
+      "source_sha256": "85a0c3821d39202f15413ef76a0a72ef12378ce96a195408f52e40b68decab58",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "a5bf9c878d0d5e1a72b9cd6accbc409a26d13e31a6ea6433f79c6a0f8c09840c",
+      "source_package": "JuzPost-0.1.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f873a80a0bdf26f173db6ba35f03016533f3fec2a18cabb6f6ef230519d50f2": {
+      "description_zh": "通过JuzPost工具为YouTube、Instagram、Facebook、TikTok、X、LinkedIn、Pinterest、Bluesky、Threads、Tumblr和WordPress起草排程发布帖子，所有发布前先与用户确认。",
+      "source": "Draft, schedule and publish social media posts to YouTube, Instagram, Facebook, TikTok, X, LinkedIn, Pinterest, Bluesky, Threads, Tumblr and WordPress with the JuzPost tools, confirming with the user before anything is published.",
+      "source_sha256": "5f873a80a0bdf26f173db6ba35f03016533f3fec2a18cabb6f6ef230519d50f2",
+      "source_path": "skills/social-media-scheduler/SKILL.md",
+      "package_sha256": "a5bf9c878d0d5e1a72b9cd6accbc409a26d13e31a6ea6433f79c6a0f8c09840c",
+      "source_package": "JuzPost-0.1.1-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6a4a00067db1a30f6f7f3c3c420f0294cbf55bcc316df7c4403d0395ae362a45": {
+      "description_zh": "通过Kabuken MCP工具为一家日本上市公司建立财务快照。",
+      "source": "Build a financial snapshot of one Japanese listed company using Kabuken MCP tools.",
+      "source_sha256": "6a4a00067db1a30f6f7f3c3c420f0294cbf55bcc316df7c4403d0395ae362a45",
+      "source_path": "skills/company-snapshot/SKILL.md",
+      "package_sha256": "8322dd8274fd7f82f28c4dd0d6646ee6300df9cb87093623e5eb6bcbdb2aac2d",
+      "source_package": "Kabuken-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96a54336dc024cddcb254cf91f11665e26e6c0c06e8748192d4639e8155344d8": {
+      "description_zh": "引导连接Kabuken MCP服务，选择OAuth登录或API密钥，解释各订阅等级可用功能，并处理认证和连接故障。",
+      "source": "Guide the user through connecting the Kabuken MCP server, choosing between OAuth sign-in and an API key, and explaining what each subscription tier unlocks. Use when the user asks to set up, connect, authenticate, or troubleshoot the Kabuken MCP server.",
+      "source_sha256": "96a54336dc024cddcb254cf91f11665e26e6c0c06e8748192d4639e8155344d8",
+      "source_path": "skills/kabuken-setup/SKILL.md",
+      "package_sha256": "8322dd8274fd7f82f28c4dd0d6646ee6300df9cb87093623e5eb6bcbdb2aac2d",
+      "source_package": "Kabuken-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "835466d7791eea268678d919d0239d1ac129ac648d05344b33aed62727441665": {
+      "description_zh": "通过Kabuken MCP工具并排比较2至5家日本上市公司。",
+      "source": "Compare 2-5 Japanese listed companies side by side using Kabuken MCP tools.",
+      "source_sha256": "835466d7791eea268678d919d0239d1ac129ac648d05344b33aed62727441665",
+      "source_path": "skills/peer-comparison/SKILL.md",
+      "package_sha256": "8322dd8274fd7f82f28c4dd0d6646ee6300df9cb87093623e5eb6bcbdb2aac2d",
+      "source_package": "Kabuken-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f66c2902a2f2ad329b3331cb7600b3040abe9194ff69b71cdd41dc83e94974e0": {
+      "description_zh": "通过Kabuken MCP工具查看日本上市公司申报文件中的业务分部或地区构成。",
+      "source": "Show the business-segment or geographic breakdown for a Japanese listed company's filing using Kabuken MCP tools.",
+      "source_sha256": "f66c2902a2f2ad329b3331cb7600b3040abe9194ff69b71cdd41dc83e94974e0",
+      "source_path": "skills/segment-breakdown/SKILL.md",
+      "package_sha256": "8322dd8274fd7f82f28c4dd0d6646ee6300df9cb87093623e5eb6bcbdb2aac2d",
+      "source_package": "Kabuken-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f38c9c7c8a6a1f3f530d0f9971856d5ff177d2a82e3acc0ba2437906df78938": {
+      "description_zh": "用kap MCP回答伊斯坦布尔交易所BIST及KAP问题，选择披露、公司资料、官方财务报表、附件、价格和新闻工具并引用来源，适用于土耳其股票、报表、分红和利润查询。",
+      "source": "How to answer Borsa İstanbul / KAP questions with the kap MCP tools — which tool to call for disclosures, company profiles, official financial statements, attachments, prices and news, and how to cite sources. Use whenever a user mentions BIST, KAP, a Turkish ticker (THYAO, ASELS…), Turkish company filings, bilanço, temettü or kâr.",
+      "source_sha256": "5f38c9c7c8a6a1f3f530d0f9971856d5ff177d2a82e3acc0ba2437906df78938",
+      "source_path": "skills/kap/SKILL.md",
+      "package_sha256": "fe46a80c242c606105c3648183c0d4ca643bba4caeb8f3c0228f8f8739cb92d7",
+      "source_package": "kap-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "63916bfb862edfb6871648ceb7754ed17a1994609a41bd9d5e19de77ef13edb9": {
+      "description_zh": "用JDB连接运行中的JVM调试Java应用，设置断点、检查状态并导航执行过程以找出缺陷根因。",
+      "source": "Debug a Java application using JDB. Attaches to a running JVM, sets breakpoints, inspects state, and navigates execution to find the root cause of bugs.",
+      "source_sha256": "63916bfb862edfb6871648ceb7754ed17a1994609a41bd9d5e19de77ef13edb9",
+      "source_path": "skills/jdb-debug/SKILL.md",
+      "package_sha256": "ccc02ddc3ea268b03aab6ca48675db00b213c12fad2c0252d1933b0ef0f8efe1",
+      "source_package": "karellen-jdb-mcp-0.0.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf250462debf626936d2b102c8cfdaa1caa930335afa4ecfd20ab80224ad53e1": {
+      "description_zh": "注册项目后通过LSP定义、引用、调用和类型层级、悬浮信息及诊断探查代码结构、追踪缺陷并评估变更影响。",
+      "source": "Investigate code using LSP tools. Register a project, then use definitions, references, call hierarchies, type hierarchies, hover, and diagnostics to understand code structure, trace bugs, and assess change impact.",
+      "source_sha256": "cf250462debf626936d2b102c8cfdaa1caa930335afa4ecfd20ab80224ad53e1",
+      "source_path": "skills/lsp-investigate/SKILL.md",
+      "package_sha256": "23e0450bed406ac58bfd0e1e85a986997adce4e4149e2331c17160dcf50082ac",
+      "source_package": "karellen-lsp-mcp-0.1.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e3809d386e9f95e715cce7f8293a5f88da1ae1d76c43aea414c09d6f260c36f": {
+      "description_zh": "为LSP代码智能注册项目，自动识别语言构建系统或接受显式配置，支持clangd、jdtls、pyright、rust-analyzer及自定义服务。",
+      "source": "Register a project for LSP code intelligence. Auto-detects language and build system, or accepts explicit configuration. Handles C/C++ (clangd), Java/Kotlin (jdtls), Python (pyright), Rust (rust-analyzer), and custom LSP servers.",
+      "source_sha256": "2e3809d386e9f95e715cce7f8293a5f88da1ae1d76c43aea414c09d6f260c36f",
+      "source_path": "skills/lsp-register/SKILL.md",
+      "package_sha256": "23e0450bed406ac58bfd0e1e85a986997adce4e4149e2331c17160dcf50082ac",
+      "source_package": "karellen-lsp-mcp-0.1.7-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f965d4a582b1a6449029106ffc72b816c4869799aa43d0593b96a772f201033": {
+      "description_zh": "用rr调试错误输出、值或行为，在缺陷可观察处设断点，再反向执行定位计算出错位置。",
+      "source": "Debug a logic bug (wrong output, wrong value, incorrect behavior) using rr. Sets breakpoints at the point where the bug is observable, then reverse-executes to find where the computation went wrong.",
+      "source_sha256": "5f965d4a582b1a6449029106ffc72b816c4869799aa43d0593b96a772f201033",
+      "source_path": "skills/rr-debug-logic/SKILL.md",
+      "package_sha256": "5e113702ef21a5c9dd21fedd3cae8b5734fc20053c11300ba00759666825d370",
+      "source_package": "karellen-rr-mcp-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d52d2c4dc6f8fa479bf2b1775f14fe9bcbd661b645f4b57fa4e6bd43928b0a51": {
+      "description_zh": "用rr记录并确定性重放程序，通过线程检查与观察点找到造成数据竞争或并发缺陷的具体交错过程。",
+      "source": "Debug a data race or concurrency bug using rr. Records the program, then uses deterministic replay with thread inspection and watchpoints to find the exact interleaving that caused the race.",
+      "source_sha256": "d52d2c4dc6f8fa479bf2b1775f14fe9bcbd661b645f4b57fa4e6bd43928b0a51",
+      "source_path": "skills/rr-debug-race/SKILL.md",
+      "package_sha256": "5e113702ef21a5c9dd21fedd3cae8b5734fc20053c11300ba00759666825d370",
+      "source_package": "karellen-rr-mcp-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d85b0a84e9b94a869dd0e173be25596f8843ac7c2c5d4c01ed1dc53aef20f7f5": {
+      "description_zh": "用rr记录失败测试套件、识别失败子进程，并仅针对该进程反向调试找根因。",
+      "source": "Debug a failing test using rr. Records the test suite, identifies the failing subprocess, and reverse-debugs just that process to find the root cause.",
+      "source_sha256": "d85b0a84e9b94a869dd0e173be25596f8843ac7c2c5d4c01ed1dc53aef20f7f5",
+      "source_path": "skills/rr-debug-test/SKILL.md",
+      "package_sha256": "5e113702ef21a5c9dd21fedd3cae8b5734fc20053c11300ba00759666825d370",
+      "source_package": "karellen-rr-mcp-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "445732df3865ffacb02e6569cd7ee86a3e6a40ce33bf163cc8b759ba7aa49a1b": {
+      "description_zh": "用rr记录重放命令，从崩溃或测试失败处反向追踪根因。",
+      "source": "Debug a crash or test failure using rr reverse debugging. Records a command, replays it, and works backwards from the failure to find the root cause.",
+      "source_sha256": "445732df3865ffacb02e6569cd7ee86a3e6a40ce33bf163cc8b759ba7aa49a1b",
+      "source_path": "skills/rr-debug/SKILL.md",
+      "package_sha256": "5e113702ef21a5c9dd21fedd3cae8b5734fc20053c11300ba00759666825d370",
+      "source_package": "karellen-rr-mcp-0.2.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "722d524d5281d90d4d6336c9b876ce957299a62cb6fe983e6b4ae1dc688a1483": {
+      "description_zh": "在设计计划提交批准前进行对抗评审，在实现声明完成前执行验证测试，通过质疑和核验发现设计及实现漏洞。",
+      "source": "Use at TWO moments, always. (1) When you have FINISHED a design / plan and are about to ask the user to approve it (e.g. closing the Design section of an /add-task, before the approval checkpoint) — run an adversarial critic that tries to demolish it FIRST. (2) When you have FINISHED implementing something and are about to declare it done — run a verifier + tester FIRST. Turns thesis into antithesis into synthesis (what survives). Addresses the loop-bug FM4; un-confuted design and un-verified implementation are the reason real bugs accumulate.",
+      "source_sha256": "722d524d5281d90d4d6336c9b876ce957299a62cb6fe983e6b4ae1dc688a1483",
+      "source_path": "skills/adversarial-review/SKILL.md",
+      "package_sha256": "bc71e35b93ff7dd5c7f9318f1f76bfd95a53cf2fec09bb20b3dddb54c71fc7fe",
+      "source_package": "Keel-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a49690a1d138a5c72f196870de183ce066bf230588ce93b39b8ca5eeb35074b3": {
+      "description_zh": "对涉及约3个以上文件、新功能或架构决策的非简单实施及快速笔记采用Design-Log流程，保留重要工作决策记录。",
+      "source": "Use when the user asks to implement, build, add, change, or fix something non-trivial (touches ~3+ files, is a new feature, or involves an architectural decision), OR when the user asks to capture a quick note (a \"note\"/\"segna\" verb). Ensures significant work never bypasses the Design-Log process, even as sessions grow long.",
+      "source_sha256": "a49690a1d138a5c72f196870de183ce066bf230588ce93b39b8ca5eeb35074b3",
+      "source_path": "skills/design-log-method/SKILL.md",
+      "package_sha256": "bc71e35b93ff7dd5c7f9318f1f76bfd95a53cf2fec09bb20b3dddb54c71fc7fe",
+      "source_package": "Keel-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b691cbd740e6e126fbf7cb1924618055bcc1d0df0c999e84fe00e6966721ec1": {
+      "description_zh": "在重要决定、实施、任务启动切换或压缩恢复前，检查与项目NORTH_STAR本质和不变量、当前FOCUS及核心原则一致，防止局部任务偏离整体目标。",
+      "source": "Use BEFORE any significant decision or implementation, and especially when STARTING or SWITCHING a task (e.g. after /add-task) or resuming after a break/compaction — to verify it aligns with the project's NORTH_STAR (essence + invariants), the current FOCUS objective, and the cardinal principles. Catches hyper-focusing on the immediate sub-task while forgetting the overarching goal (e.g. building a feature while forgetting the project is a SaaS sold to clients).",
+      "source_sha256": "5b691cbd740e6e126fbf7cb1924618055bcc1d0df0c999e84fe00e6966721ec1",
+      "source_path": "skills/guardian/SKILL.md",
+      "package_sha256": "bc71e35b93ff7dd5c7f9318f1f76bfd95a53cf2fec09bb20b3dddb54c71fc7fe",
+      "source_package": "Keel-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3203314c0fcfe0be81a6901a2b632a4f700d4c6141e8d430554c73cd8b2bed68": {
+      "description_zh": "在提出修复前系统观察真实执行流、设计运行测试、读取输出并比较期望实际，再形成假设修复，记录可审计Debug-log；反复失败时查项目经验并质疑架构。",
+      "source": "Use when something is BROKEN or not behaving as expected — a bug, a failed test, a crash, a wrong output, 'it doesn't work' — BEFORE proposing or trying any fix. Forces the systematic protocol (instrument/observe the real flow, design tests/scenarios, run and READ the real output, diff expected vs actual, only then hypothesize and fix) instead of blind trial-and-error, writes an auditable Debug-log (expected vs actual), and after repeated failed fixes stops to consult the project LEARNED and question the architecture. This is the method's own debugging discipline (self-contained), tied to the project principi/GUARDIAN — not a generic reminder.",
+      "source_sha256": "3203314c0fcfe0be81a6901a2b632a4f700d4c6141e8d430554c73cd8b2bed68",
+      "source_path": "skills/methodical-debugging/SKILL.md",
+      "package_sha256": "bc71e35b93ff7dd5c7f9318f1f76bfd95a53cf2fec09bb20b3dddb54c71fc7fe",
+      "source_package": "Keel-0.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d6b74d99aebb3e48d4c59eec4d6638361424aea3eeacf25d47f57bfcd9518e7": {
+      "description_zh": "指导使用Kemory持久记忆，先回忆再重复推导、评价所用记忆、记录长期事实，并使内容便于语义检索，适用于kemory工具或记忆库问题。",
+      "source": "How to use kemory persistent memory well - recall before re-deriving, rate what you use, store durable facts as they happen, and write memories so semantic search can find them again. Load when working with kemory_* tools or when the user asks about their memory vault.",
+      "source_sha256": "1d6b74d99aebb3e48d4c59eec4d6638361424aea3eeacf25d47f57bfcd9518e7",
+      "source_path": "skills/kemory/SKILL.md",
+      "package_sha256": "1bef35c6fed61b7b60ab950687cff83d66e4b77943b9c83c828d172b139f91f6",
+      "source_package": "Kemory Plugin-0.8.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "89342bd20142ea60581cacf94313e2872aa5fe030339442368ef4be508de85b4": {
+      "description_zh": "连接新安装的Kemory或排查工具缺失、MCP未授权及上下文注入无响应，支持首次设置和故障诊断。",
+      "source": "Get Kemory connected after installing the plugin, or diagnose it when the kemory_* tools are missing, the MCP server is unauthorised, or context injection is silent. Load when the user installs this plugin, asks how to set Kemory up, or reports that Kemory is not working.",
+      "source_sha256": "89342bd20142ea60581cacf94313e2872aa5fe030339442368ef4be508de85b4",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "1bef35c6fed61b7b60ab950687cff83d66e4b77943b9c83c828d172b139f91f6",
+      "source_package": "Kemory Plugin-0.8.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "96fc19d40886ee664ca6c1ef41ac3deb499095d5ac910e05b93e296c1d1f2956": {
+      "description_zh": "指导使用Kept MCP捕获想法、管理任务日历、规划一天，并依据个人笔记、目标、习惯和知识图谱回答问题。",
+      "source": "How to use the Kept MCP tools (kept_*) well. Load whenever the user asks you to capture a thought, manage tasks or calendar events, plan their day, or answer questions from their notes, goals, habits, or knowledge graph, or whenever any kept_* tool is available and personal data is involved.",
+      "source_sha256": "96fc19d40886ee664ca6c1ef41ac3deb499095d5ac910e05b93e296c1d1f2956",
+      "source_path": "skills/kept/SKILL.md",
+      "package_sha256": "60483609237becbeff9b42ae010c6fda23a78a1c50928ed23b6f3c405bc5a819",
+      "source_package": "kept-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6230b5d4e78a518b94582baf9955ed2ebab18c121bd7ae3c5e40fc2459cf70c1": {
+      "description_zh": "将组织工作方式转为技能、代理和自动化的入口，支持业务流程梳理及基于团队实践的构建规划。",
+      "source": "Entry point for turning how your organization works into skills, agents, and automations. Invoke before responding when the user mentions processes, automation, agents, skills, or building something from how their team works.",
+      "source_sha256": "6230b5d4e78a518b94582baf9955ed2ebab18c121bd7ae3c5e40fc2459cf70c1",
+      "source_path": "skills/agent-builder/SKILL.md",
+      "package_sha256": "df2f28c1fbcff79e91049c43e2a13f9ef098d8ac05f9acaf9a8547350dce8ad9",
+      "source_package": "Klarity-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f4f3e8fce44d91cf72198b095e7015fba5fd86d1971665f778219c1fffe645d9": {
+      "description_zh": "依据组织实际流程、SOP和工作流理解当前工作，追溯依赖、变化、控制支持及影响；不用于无组织背景的一般假设，构建或改动决策交由agent-builder。",
+      "source": "Use to understand how work happens in the user's organization; references 'our' processes, SOPs, or workflows. Triggers are current-state and analytical ('how does our [process] work', 'what feeds/depends on X', 'what changed', 'where is control Y supported', 'trace the impact of Z'). Skip generic, hypothetical, or public-knowledge questions with no organizational anchor. For deciding what to build, automate, or change, use the agent-builder skill instead.",
+      "source_sha256": "f4f3e8fce44d91cf72198b095e7015fba5fd86d1971665f778219c1fffe645d9",
+      "source_path": "skills/within-process-context-graph/SKILL.md",
+      "package_sha256": "df2f28c1fbcff79e91049c43e2a13f9ef098d8ac05f9acaf9a8547350dce8ad9",
+      "source_package": "Klarity-1.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f5f0cfb26902446ca8b80884dc9c47ac9da68635809a6f3c58b30bf33ce9aee": {
+      "description_zh": "读取修改KlickTipp联系人、订阅者、线索、标签、自定义字段和订阅确认流程，支持名单和标签查询及未知标签排查；不用于新闻邮件。",
+      "source": "Kontakte, Tags, eigene Felder und Opt-in-Prozesse eines KlickTipp-Kontos lesen und ändern. Nutze ihn, sobald ein Kontakt, Abonnent, Lead, Tag, Feld oder eine Anmeldeliste im Spiel ist — auch bei „wer hat Tag X\" oder wenn ein Werkzeug ein Tag als unbekannt abweist. Nicht für Newsletter.",
+      "source_sha256": "8f5f0cfb26902446ca8b80884dc9c47ac9da68635809a6f3c58b30bf33ce9aee",
+      "source_path": "skills/crm/SKILL.md",
+      "package_sha256": "7d7e5d02fbdcb1be78f76d4f32292eb76048c85d56541a46989b62af10e79164",
+      "source_package": "KlickTipp-0.14.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba3cc1aac424299830f87ca0fa733b52d9d2b73e68c9a2a5755d5b8d109ab2ff": {
+      "description_zh": "只读将KlickTipp近期发送的投递、打开、点击、退信及退订指标整理为仪表盘，支持发送比较、报告和投递率分析。",
+      "source": "Die Zahlen der letzten Aussendungen eines KlickTipp-Kontos als Dashboard — Zustellung, Öffnungen, Klicks, Bounces, Abmeldungen. Nutze ihn bei Report, Auswertung, Öffnungs- oder Klickrate, Zustellbarkeit oder dem Vergleich mehrerer Aussendungen. Nur lesend.",
+      "source_sha256": "ba3cc1aac424299830f87ca0fa733b52d9d2b73e68c9a2a5755d5b8d109ab2ff",
+      "source_path": "skills/dashboard/SKILL.md",
+      "package_sha256": "7d7e5d02fbdcb1be78f76d4f32292eb76048c85d56541a46989b62af10e79164",
+      "source_package": "KlickTipp-0.14.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ecfe8c9a7ae657153c2b90bcd9a94a34d53e6d961f950911468db02b31b9a88b": {
+      "description_zh": "撰写压缩商务邮件及主题，包括冷拓客、客服回复、跟进、拒绝和预约请求；新闻邮件或HTML邮件交由email。",
+      "source": "Geschäftliche E-Mails schreiben, die beantwortet werden — Kaltakquise, Support-Antwort, Nachfassen, Absage, Terminanfrage. Nutze ihn zum Formulieren, Kürzen und für Betreffzeilen. Nicht für Newsletter oder HTML-Mails, dafür ist `email` da.",
+      "source_sha256": "ecfe8c9a7ae657153c2b90bcd9a94a34d53e6d961f950911468db02b31b9a88b",
+      "source_path": "skills/email-template-generator/SKILL.md",
+      "package_sha256": "7d7e5d02fbdcb1be78f76d4f32292eb76048c85d56541a46989b62af10e79164",
+      "source_package": "KlickTipp-0.14.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "332db6e505ebcec9c86d38dc195449306124cdb6ac5114ad9e0aec4dc2434046": {
+      "description_zh": "读取修改设计检查并发布KlickTipp邮件内容，处理组件文档、新闻邮件图片及内容为空问题，正文作为完整文档一次提交；外围发送配置交由newsletter。",
+      "source": "Den Inhalt einer KlickTipp-E-Mail lesen, ändern, gestalten, prüfen, veröffentlichen. Die Werkzeuge geben ein Bausteindokument heraus, nicht HTML, und ein Körper geht als fertiges Dokument in einem Aufruf hinein. Nutze ihn für Newsletter-Inhalte, Gestaltung und Bilder — und wenn ein Newsletter „ohne Inhalt\" gemeldet wird. Die Hülle darum ist `newsletter`.",
+      "source_sha256": "332db6e505ebcec9c86d38dc195449306124cdb6ac5114ad9e0aec4dc2434046",
+      "source_path": "skills/email/SKILL.md",
+      "package_sha256": "7d7e5d02fbdcb1be78f76d4f32292eb76048c85d56541a46989b62af10e79164",
+      "source_package": "KlickTipp-0.14.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b4f96fc10beeab24479b6e8ef58e1a4713440818a54605b9724307f5ef453703": {
+      "description_zh": "管理KlickTipp新闻邮件的草稿、主题、预览文字、目标受众、发件人、测试发送、排程与发送；内容交由email，A/B测试交由splittest。",
+      "source": "Die Hülle um den Inhalt eines KlickTipp-Newsletters — Entwurf, Betreff, Pre-Header, Zielgruppe, Absender, Testversand, Terminierung, Versand. Nutze ihn immer, wenn jemand einen Newsletter anlegen, „rausschicken\" oder „fertig machen\" will, denn Inhalt allein verschickt nichts. Inhalt ist `email`, A/B-Tests sind `splittest`.",
+      "source_sha256": "b4f96fc10beeab24479b6e8ef58e1a4713440818a54605b9724307f5ef453703",
+      "source_path": "skills/newsletter/SKILL.md",
+      "package_sha256": "7d7e5d02fbdcb1be78f76d4f32292eb76048c85d56541a46989b62af10e79164",
+      "source_package": "KlickTipp-0.14.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "094abfc66eeec50106471018f9d0c17d17d0c8824ca03ebb7456c789131c9fd6": {
+      "description_zh": "建立KlickTipp新闻邮件A/B测试，添加、复制、移除变体并设置各变体主题，支持胜出项和split_test_not_supported排查；整体生命周期交由newsletter。",
+      "source": "A/B-Tests eines KlickTipp-Newsletters — anlegen, Varianten hinzufügen, kopieren, entfernen, Betreffzeile je Variante. Nutze ihn bei Splittest, Variante, Gewinner oder „zwei Betreffzeilen testen\", und wenn ein Werkzeug `split_test_not_supported` meldet. Der Lebenszyklus ist `newsletter`.",
+      "source_sha256": "094abfc66eeec50106471018f9d0c17d17d0c8824ca03ebb7456c789131c9fd6",
+      "source_path": "skills/splittest/SKILL.md",
+      "package_sha256": "7d7e5d02fbdcb1be78f76d4f32292eb76048c85d56541a46989b62af10e79164",
+      "source_package": "KlickTipp-0.14.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "be01f518689a6e14aeb6d2761cbc55c45feafa1115d1ce92f60cc56a46956c34": {
+      "description_zh": "通过OAuth保护的远程Kling MCP创建监控图像与视频生成，支持文生图、图生图、文生视频、图生视频、上传、任务状态及额度查询。",
+      "source": "Create and monitor Kling AI image and video generations through the OAuth-protected remote Kling MCP server. Use for text-to-image, image-to-image, text-to-video, image-to-video, uploads, task status, and credit checks.",
+      "source_sha256": "be01f518689a6e14aeb6d2761cbc55c45feafa1115d1ce92f60cc56a46956c34",
+      "source_path": "skills/kling-ai/SKILL.md",
+      "package_sha256": "d9e5eba122e71c4e63a6eaf524c6c56c02162e4dd88203082deab17bed6f6e83",
+      "source_package": "Kling AI-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cc5edbd1f2bb5176f835f7ce9d6ba24c11b38b5002dd52e55854ef6c70b61216": {
+      "description_zh": "指导使用Knock CLI管理项目中的通知工作流、模板及其他通知资源。",
+      "source": "Guidelines for working with the Knock CLI to manage workflows, templates, and other notification resources in a Knock project.",
+      "source_sha256": "cc5edbd1f2bb5176f835f7ce9d6ba24c11b38b5002dd52e55854ef6c70b61216",
+      "source_path": "skills/knock-cli/SKILL.md",
+      "package_sha256": "5c14da81cf3c700a25bba2dee4fad2c0a674a225b4a12c4c33d417fa16680537",
+      "source_package": "Knock-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
