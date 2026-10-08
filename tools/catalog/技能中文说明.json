@@ -52369,6 +52369,1086 @@
       "package_sha256": "3a3c05c010dcbdce3953bf2cc25c41dec7ce2f1cea2388ec73ec72c5417d0d60",
       "source_package": "Pendo Analytics-1.3.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b75e649d8d8d4b3e74d3db9f08c67eb28872e17c665a46432686098211ab1b35": {
+      "description_zh": "使用 Pendo 反馈工具聚类客户意见、提取主题和洞察，并识别流失或挫败风险。适用于反馈趋势、投诉、功能需求、客户之声或特定账户情绪分析，需要 Pendo 连接器。",
+      "source": "Analyze customer feedback using Pendo's feedback tools — cluster themes, extract insights, and surface churn/frustration risks. Use whenever the user asks about feedback trends, top complaints, feature requests, Voice of the Customer, churn risks, or what customers are saying about a topic or account. Triggers on phrases like \"feedback report\", \"what are customers asking for\", \"any red flags in sentiment\", or \"what's the feedback looking like\". Requires Pendo connector.",
+      "source_sha256": "b75e649d8d8d4b3e74d3db9f08c67eb28872e17c665a46432686098211ab1b35",
+      "source_path": "skills/feedback-analysis/SKILL.md",
+      "package_sha256": "3a3c05c010dcbdce3953bf2cc25c41dec7ce2f1cea2388ec73ec72c5417d0d60",
+      "source_package": "Pendo Analytics-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d781d5256c6bbf5ec19c3d5cd05412a69a8171f350608f4263784275dab2f8d7": {
+      "description_zh": "调查 Pendo 会话回放中的用户问题，读取开发日志、将错误映射到本地代码、提出修复并提示创建 PR。可接收回放链接或含回放链接的工单；需要 Pendo 连接器，工单通过可用 MCP 或 CLI 获取。",
+      "source": "Triage issues captured in a Pendo session replay by fetching devlogs, mapping errors to the local codebase, proposing fixes, and prompting for a pull request. Accepts either a replay URL directly or a ticket reference (e.g. Jira key or URL, GitHub issue URL, etc.) and will pull the replay link from the ticket. Use whenever someone hands off a user-reported bug — via a replay link or a ticket that contains one — and asks to investigate, diagnose, debug, triage, or fix it. Requires Pendo connector; uses whatever ticketing MCP or CLI is available (Atlassian, `gh`, etc.) when a ticket is supplied.",
+      "source_sha256": "d781d5256c6bbf5ec19c3d5cd05412a69a8171f350608f4263784275dab2f8d7",
+      "source_path": "skills/replay-triage/SKILL.md",
+      "package_sha256": "3a3c05c010dcbdce3953bf2cc25c41dec7ce2f1cea2388ec73ec72c5417d0d60",
+      "source_package": "Pendo Analytics-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e0f90d56c577ca18a6b45b9302e1c1e0d249d8a853efa96bcf15dcb654a67d41": {
+      "description_zh": "依据引导类型实践、组织内容规范和用户上下文，生成 Pendo 应用内引导的 HTML/CSS/JS 文件。适用于新用户引导、功能公告、警报、投票、产品内消息或收集反馈，并补充缺失需求。",
+      "source": "Creates production-ready Pendo in-app guides as HTML/CSS/JS files, drawing on guide type best practices, org-specific content guidelines, and user-provided context. Trigger this skill whenever a user types /pendo-guides:pendo-guide-creator or uses natural language like \"create a guide\", \"build a Pendo guide\", \"write a walkthrough\", \"make an announcement guide\", \"create an alert\", \"build a poll\", or \"write an in-app message\". Also trigger when the user describes a guide use case — e.g. \"I want to onboard new users\", \"we're launching a feature and want to notify users in-app\", or \"I need to collect feedback in the product.\" Always use this skill proactively when any Pendo guide creation is requested, even if the request is casual or incomplete — the skill handles gathering missing context from the user.",
+      "source_sha256": "e0f90d56c577ca18a6b45b9302e1c1e0d249d8a853efa96bcf15dcb654a67d41",
+      "source_path": "skills/pendo-guide-creator/SKILL.md",
+      "package_sha256": "803c6ef0f61188afe8088ba32545e160217866178ef42941acb87f5e792fc9ad",
+      "source_package": "Pendo Guides-1.3.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e2df54561cb2fcc4177f884dfc7ff50891c3451919b3ebe4ba36fbdcb88b0a76": {
+      "description_zh": "通过 MCP 创建、配置和编辑 Orchestrate 邮件旅程，包括受众、排期、目标、多步骤序列及邮件内容。适用于欢迎、入门、重新参与或召回旅程；打开、点击和旅程指标直接使用指标工具。",
+      "source": "Create, configure, and edit Orchestrate email journeys via MCP — audience, schedule, goal, multi-step sequences, and email content. Use for welcome or onboarding sequences, re-engagement or win-back, create or update a journey, or prepare to go live. For opens, clicks, or journey metrics, use Orchestrate metrics MCP tools directly — not this skill's reference workflow.",
+      "source_sha256": "e2df54561cb2fcc4177f884dfc7ff50891c3451919b3ebe4ba36fbdcb88b0a76",
+      "source_path": "skills/orchestrate-journeys/SKILL.md",
+      "package_sha256": "bac6f83365b10a4ba9f465505a6bc4c17145c9e8efebe7f803d8445c7a0d6e8f",
+      "source_package": "Pendo Orchestrate-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8161266762ce1e76bfd67e7f2d88e3891262ac251d1052859d86c4a1a1b970c4": {
+      "description_zh": "按原子设计组织 Penpot 设计系统，覆盖令牌集、主题、页面布局、命名、组件、变体、共享库、注释和交付。适用于文件整理或审计、组件归属、资产命名、令牌层级及从 Figma 迁移，可通过 Penpot MCP 操作。",
+      "source": "Structure a Penpot file as a real design system using Atomic Design — token sets and themes, page layout, naming, components, variants, shared libraries, annotations and handoff. Use when organising or auditing a Penpot file, deciding where a component belongs, naming assets, building a token hierarchy, turning loose boards into a library, or driving any of that through the Penpot MCP server. Also use when porting a Figma-shaped design system into Penpot, because the two tools disagree on more than vocabulary.",
+      "source_sha256": "8161266762ce1e76bfd67e7f2d88e3891262ac251d1052859d86c4a1a1b970c4",
+      "source_path": "skills/penpot-atomic-design/SKILL.md",
+      "package_sha256": "1112246a1ae70a0598e920b25b5dc5df15de0a60a382644953ed48916cc508b3",
+      "source_package": "penpot-atomic-design-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "936511a0590b28d0f1b06afa318e3c6001a17c54b6e2581b0f46671a61c957de": {
+      "description_zh": "运用 Perception-First Design 分析设计、营销、文案和沟通，让认知负荷、第一印象、处理流畅度、信任与决策结构影响成果。适用于界面、落地页、邮件、广告、视觉系统、标题、CTA、提案、演示、转化和品牌策略。",
+      "source": "This skill should be used when working on any design, marketing, copywriting, writing, or communication task — including: \"run PFD\", \"apply PFD\", \"use Perception-First Design\", \"do a PFD analysis\", \"run the derivation protocol\"; when designing interfaces, landing pages, emails, ads, or visual systems; when writing or reviewing marketing copy, headlines, CTAs, proposals, pitches, or presentations; when evaluating conversion problems, bounce rates, engagement, or persuasion; when doing brand work, content strategy, or any client communication; or whenever cognitive load, first impressions, processing fluency, trust, or decision architecture should inform the work.",
+      "source_sha256": "936511a0590b28d0f1b06afa318e3c6001a17c54b6e2581b0f46671a61c957de",
+      "source_path": "skills/pfd/SKILL.md",
+      "package_sha256": "2d962a3510946475f2d9be7c9b67f253c9d68e47bc6cd55b8f76483bcf765e22",
+      "source_package": "perception-first-design-0.7.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53a819c63f3f27012fbd0edadc8f2f17eb4a12212568bb96c9361197cbec8d16": {
+      "description_zh": "管理影响 Claude 协助方式的专家角色，支持列举、创建、编辑、删除、启用和停用。原说明也支持将单一角色作为子智能体执行任务，或并行使用多个相关角色，并提供 persona 系列命令。",
+      "source": "Activate, list, create, edit, delete, or deactivate expert personas that shape how Claude assists you. Spawn a single persona as a sub-agent for a specific task, or run multiple relevant personas in parallel. Invoke with /persona list, /persona <name>, /persona spawn <name> <task>, /persona multi <task>, /persona create, /persona edit <name>, /persona delete <name>, /persona ref <name>, or /persona off.",
+      "source_sha256": "53a819c63f3f27012fbd0edadc8f2f17eb4a12212568bb96c9361197cbec8d16",
+      "source_path": "skills/persona/SKILL.md",
+      "package_sha256": "49b818eadfe260a8b83a5f927939a29961bb30e0aa0556e2338a6026a2fe030c",
+      "source_package": "Persona-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52992c59ddea158dfa37bc59b84675f0f3f73c838b401472cf64b383ac74dffb": {
+      "description_zh": "确认接手或解决尚未关闭的 Perstat 事件。两种操作都会向值班团队显示，并影响告警、状态页和可用率，因此原说明要求先明确确认。",
+      "source": "Acknowledge or resolve an open Perstat incident. Use when the user says \"acknowledge that incident\", \"ack inc_…\", \"I'm on it\", \"take this incident\", \"resolve the incident\", \"close that incident\", \"mark it fixed\", or \"silence the alert for X\". Both actions are visible to the on-call team and change alerting, status pages and availability figures, so both require explicit confirmation first.",
+      "source_sha256": "52992c59ddea158dfa37bc59b84675f0f3f73c838b401472cf64b383ac74dffb",
+      "source_path": "skills/handle-incident/SKILL.md",
+      "package_sha256": "889c57224d3ee3830494d07178500dd3377f47b7cd127e747679b9d13c4c4162",
+      "source_package": "perstat-0.5.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1bbac12651642f9b05e59a9205e1b760ab43090b9d660eada0f5ed462185aa29": {
+      "description_zh": "依据仓库实际暴露的服务创建和维护 Perstat 监控，包括心跳、证书、检查间隔、暂停、恢复、归档、还原及删除。适用于设置项目监控，并正确区分临时暂停和退役归档。",
+      "source": "Set up and maintain Perstat monitors for a project. Use when the user asks to \"set up monitoring\", \"monitor this service\", \"add a monitor\", \"what should we monitor here\", \"add a heartbeat for this cron job\", \"watch our certificate\", \"change the check interval\", \"pause that monitor\", \"resume monitoring\", \"stop monitoring staging\", \"archive that monitor\", \"we decommissioned that service\", \"bring back the archived monitor\", \"what did we archive\", \"show archived monitors\", \"we're at our plan limit\", or \"delete a monitor\". Covers creating monitors from what a repository actually exposes, editing them safely, and choosing correctly between pausing and archiving.",
+      "source_sha256": "1bbac12651642f9b05e59a9205e1b760ab43090b9d660eada0f5ed462185aa29",
+      "source_path": "skills/manage-monitors/SKILL.md",
+      "package_sha256": "889c57224d3ee3830494d07178500dd3377f47b7cd127e747679b9d13c4c4162",
+      "source_package": "perstat-0.5.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bcbd113ed7a10507d9a665d1d5ecbe8c464abc06652690d52d93b4b04bf16a18": {
+      "description_zh": "提供 Perstat 监控类型及每类精确配置、检查区域、间隔、ID 格式和服务器规则。适用于可用率、健康检查、心跳、证书、DNS 或安全响应头监控；原说明要求调用 MCP 前读取，因为 create_monitor 未给出 config 字段模式。",
+      "source": "This skill should be used whenever Perstat monitoring comes up: when the user says \"Perstat\", asks about \"monitors\", \"uptime checks\", \"health checks\", \"heartbeat\", \"dead man's switch\", \"SSL certificate expiry\", \"DNS hygiene\", \"security headers\", \"check regions\", or asks what a service ought to have monitored. Provides the monitor type catalogue with the exact config shape per type, check regions, intervals, ID formats, and the rules the Perstat MCP server enforces. Read this before calling any perstat MCP tool, because the server's create_monitor tool deliberately ships no schema for its config field.",
+      "source_sha256": "bcbd113ed7a10507d9a665d1d5ecbe8c464abc06652690d52d93b4b04bf16a18",
+      "source_path": "skills/perstat-monitoring/SKILL.md",
+      "package_sha256": "889c57224d3ee3830494d07178500dd3377f47b7cd127e747679b9d13c4c4162",
+      "source_package": "perstat-0.5.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "10d920c44e56ad6713e0f832188aa3bbaab98c5b504c324558c4843b4e590449": {
+      "description_zh": "只读报告 Perstat 所监控服务的当前状态、开放事件及近期活动。适用于检查服务是否故障、生产健康、夜间变化或部署前后健康情况，不修改监控状态。",
+      "source": "Report the current state of services monitored by Perstat. Use when the user asks \"is anything down\", \"what's our status\", \"how is production doing\", \"check our monitors\", \"are there any open incidents\", \"what happened overnight\", \"is the site up\", or wants a health check before or after a deploy. Read-only: reports what is happening without changing anything.",
+      "source_sha256": "10d920c44e56ad6713e0f832188aa3bbaab98c5b504c324558c4843b4e590449",
+      "source_path": "skills/perstat-status/SKILL.md",
+      "package_sha256": "889c57224d3ee3830494d07178500dd3377f47b7cd127e747679b9d13c4c4162",
+      "source_package": "perstat-0.5.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c862058139efc80ff388c4cae865881de8b307bd9aedc0864f972e83cbf41f45": {
+      "description_zh": "介绍 PhaseFolio MCP 的只读检索能力和认证模型。适用于首次使用或了解工具，覆盖项目、情景、证据、档案、格局、基准、验证及方法论。",
+      "source": "Use when the user first asks about PhaseFolio's MCP tools, or asks \"what can phasefolio do\" / \"what tools are available\" — explains the read-only retrieval surface (projects, scenarios, evidence, dossier, landscape, benchmarks, verify, methodology) and the auth model.",
+      "source_sha256": "c862058139efc80ff388c4cae865881de8b307bd9aedc0864f972e83cbf41f45",
+      "source_path": "skills/phasefolio-onboarding/SKILL.md",
+      "package_sha256": "3559cf4c0921e309cb8edd09fd065769ca41cc6be98aa1c350462498835e8a4c",
+      "source_package": "PhaseFolio-0.1.4-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86c9dd3abec6c55dddc1b907f8b0365242911e0a92e1e5f53a11021f35278b29": {
+      "description_zh": "为指定部门生成 Phished 安全意识报告，适用于检查部门表现或部门风险。",
+      "source": "Use to build a security-awareness report for one department in Phished. Triggers on \"department report\", \"how is <department> doing\", \"risk report for the Sales department\".",
+      "source_sha256": "86c9dd3abec6c55dddc1b907f8b0365242911e0a92e1e5f53a11021f35278b29",
+      "source_path": "skills/department-report/SKILL.md",
+      "package_sha256": "ceb474079253ab6aa2d3349c9b3e4eca74de6a5aebf11d143d0374b9e5088334",
+      "source_package": "Phished-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cbb449d7efbc23e2e31d6f43302433d768d9fb007a8a844eb57d5aa8e18c794e": {
+      "description_zh": "在 Phished 中识别新进入风险类别的接收人，类别通过接收人标签表示，例如首次点击者或低 BRS。适用于高风险群组变化和周度比较，原说明设计为可定时无人值守运行。",
+      "source": "Use to detect which recipients newly entered a risk category in Phished, where risk categories are recipient tags (e.g. \"first-time clicker\", \"low BRS\"). Triggers on \"who's new in the high-risk group\", \"detect new risky users\", \"risk category changes since last week\". Designed to run unattended on a schedule.",
+      "source_sha256": "cbb449d7efbc23e2e31d6f43302433d768d9fb007a8a844eb57d5aa8e18c794e",
+      "source_path": "skills/detect-new-in-risk-categories/SKILL.md",
+      "package_sha256": "ceb474079253ab6aa2d3349c9b3e4eca74de6a5aebf11d143d0374b9e5088334",
+      "source_package": "Phished-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2ae35e625c75e14f0eebb025902c5829a306a469f9455f120f1c6b2a6c17518": {
+      "description_zh": "依据企业网站及文档，为 Phished 生成企业专属钓鱼模拟训练模板。适用于创建针对特定公司的模拟材料。",
+      "source": "Use when the user wants to generate company-specific phishing simulation templates for Phished, grounded in a company's website and documentation. Triggers on \"generate a simulation\", \"company-specific simulation\", \"make a phishing template for <company>\".",
+      "source_sha256": "d2ae35e625c75e14f0eebb025902c5829a306a469f9455f120f1c6b2a6c17518",
+      "source_path": "skills/generate-simulation/SKILL.md",
+      "package_sha256": "ceb474079253ab6aa2d3349c9b3e4eca74de6a5aebf11d143d0374b9e5088334",
+      "source_package": "Phished-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "87af227995b6a562bd005205257f7ccf81a0000e52ec84da995abee528532c9f": {
+      "description_zh": "为用户指定的单一部门提供轻量、聚焦的 Phished 报告。适用于查看本部门或某部门当前表现。",
+      "source": "Use to give a focused report for a single department the user names — a lightweight, department-scoped view. Triggers on \"show me my department\", \"how is <department> doing\", \"report for the Marketing department\".",
+      "source_sha256": "87af227995b6a562bd005205257f7ccf81a0000e52ec84da995abee528532c9f",
+      "source_path": "skills/my-department/SKILL.md",
+      "package_sha256": "ceb474079253ab6aa2d3349c9b3e4eca74de6a5aebf11d143d0374b9e5088334",
+      "source_package": "Phished-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "db48528471aca8f028d62606d137e637071feb15f98f8c122de00dcc5c18933e": {
+      "description_zh": "为新的 Phished 组织完成初始化，创建并验证域名、添加接收人或设置用户预配，再配置模拟和 Academy。适用于从零接入或新客户入门。",
+      "source": "Use to onboard a new Phished organisation end to end — create and verify a domain, add recipients (or set up user provisioning), set up simulations, and set up the Academy. Triggers on \"onboard a new customer\", \"set up Phished from scratch\", \"get us started on Phished\".",
+      "source_sha256": "db48528471aca8f028d62606d137e637071feb15f98f8c122de00dcc5c18933e",
+      "source_path": "skills/onboarding/SKILL.md",
+      "package_sha256": "ceb474079253ab6aa2d3349c9b3e4eca74de6a5aebf11d143d0374b9e5088334",
+      "source_package": "Phished-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "941c85bcb8b9e397a3cb5d1705156d7316d84e6e74ae0e499c31d43583938048": {
+      "description_zh": "生成可通过对话进一步下钻的 Phished 周报、月报或季报，以类似 Power BI 的方式分析安全状况。",
+      "source": "Use for weekly / monthly / quarterly Phished reporting that the user can chat with, Power BI style. Triggers on \"monthly report\", \"how did we do this quarter\", \"weekly security posture\", followed by drill-down questions.",
+      "source_sha256": "941c85bcb8b9e397a3cb5d1705156d7316d84e6e74ae0e499c31d43583938048",
+      "source_path": "skills/periodic-report/SKILL.md",
+      "package_sha256": "ceb474079253ab6aa2d3349c9b3e4eca74de6a5aebf11d143d0374b9e5088334",
+      "source_package": "Phished-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a0d04bf5968cfe35356e4ad86b261b0d81a32c622c5f5f79f0aa9fe54dfba52": {
+      "description_zh": "为指定团队生成 Phished 安全意识报告。原说明明确平台没有团队实体，因此将团队映射为位置或部门。",
+      "source": "Use to build a security-awareness report for one team in Phished. Triggers on \"team report\", \"how is <team> doing\". Note the platform has no \"team\" entity — this maps to a location (or department).",
+      "source_sha256": "2a0d04bf5968cfe35356e4ad86b261b0d81a32c622c5f5f79f0aa9fe54dfba52",
+      "source_path": "skills/team-report/SKILL.md",
+      "package_sha256": "ceb474079253ab6aa2d3349c9b3e4eca74de6a5aebf11d143d0374b9e5088334",
+      "source_package": "Phished-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "252c055036b5a54715a58f907721bb5fad1681183848bb875a158161d2662fd5": {
+      "description_zh": "采用 Symfony 的 Doctrine ORM 模式编写实体、仓储、关联、字段映射、DQL 或 QueryBuilder 查询和迁移。适用于数据库结构与查询优化问题。",
+      "source": "Doctrine ORM patterns and best practices for Symfony. Use when creating entities, writing repositories, defining entity relations, mapping database columns, writing DQL or QueryBuilder queries, creating migrations, or asking about Doctrine ORM, database schema, or query optimization in Symfony.",
+      "source_sha256": "252c055036b5a54715a58f907721bb5fad1681183848bb875a158161d2662fd5",
+      "source_path": "skills/doctrine-patterns/SKILL.md",
+      "package_sha256": "61e11243d4436d22fbed28174b3e87e10ce36352bd8a67a7ddfe02443d6b2f6c",
+      "source_package": "php harmony-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9b006a6018682dcacc7d6ebcc173f455d88b1beaed15da6663cda1f52220927": {
+      "description_zh": "采用 Symfony Messenger 模式实现异步处理，创建消息、处理器、消息总线和中间件，并配置 RabbitMQ/AMQP 传输。适用于消息队列及后台作业。",
+      "source": "Symfony Messenger component patterns for async processing. Use when creating messages, message handlers, configuring message buses, adding middleware, setting up RabbitMQ or AMQP transports, or asking about async processing, message queues, or background jobs in Symfony.",
+      "source_sha256": "d9b006a6018682dcacc7d6ebcc173f455d88b1beaed15da6663cda1f52220927",
+      "source_path": "skills/messenger-patterns/SKILL.md",
+      "package_sha256": "61e11243d4436d22fbed28174b3e87e10ce36352bd8a67a7ddfe02443d6b2f6c",
+      "source_package": "php harmony-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8ba794df4fb5d658b239c2ee5f1f1dccf4a81ab014b9b57c82c478f6ff373d0d": {
+      "description_zh": "遵循 PHP 和 Symfony 编码规范，适用于控制器、服务、DTO、控制台命令、事件订阅器、表单类型及其他 PHP 类。涵盖依赖注入、服务配置和 PHP-CS-Fixer 规则。",
+      "source": "PHP and Symfony coding conventions and best practices. Use when creating controllers, services, DTOs, console commands, event subscribers, form types, or any PHP class in a Symfony project. Also use when asking about PHP coding standards, dependency injection, service configuration, or PHP-CS-Fixer rules.",
+      "source_sha256": "8ba794df4fb5d658b239c2ee5f1f1dccf4a81ab014b9b57c82c478f6ff373d0d",
+      "source_path": "skills/symfony-conventions/SKILL.md",
+      "package_sha256": "61e11243d4436d22fbed28174b3e87e10ce36352bd8a67a7ddfe02443d6b2f6c",
+      "source_package": "php harmony-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58d0b8c3b17070e7cea7c9652f47516415e6b5a08345f1d4d9386fa88e5fb600": {
+      "description_zh": "采用 Symfony 安全模式实现认证和授权，包括 voter、安全防火墙、API token/JWT、访问控制及路由保护。",
+      "source": "Symfony security patterns for authentication and authorization. Use when adding authentication, creating voters, configuring security firewalls, implementing API tokens or JWT, writing access control rules, or asking about Symfony security, user authorization, or protecting routes.",
+      "source_sha256": "58d0b8c3b17070e7cea7c9652f47516415e6b5a08345f1d4d9386fa88e5fb600",
+      "source_path": "skills/symfony-security/SKILL.md",
+      "package_sha256": "61e11243d4436d22fbed28174b3e87e10ce36352bd8a67a7ddfe02443d6b2f6c",
+      "source_package": "php harmony-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "afd7bfec9ed211b588714b3109c5f17841831e910edbe06b6cc3d74451e3ac85": {
+      "description_zh": "使用 PHPUnit 为 PHP/Symfony 编写单元、集成和功能测试，覆盖服务模拟、控制器、Doctrine 实体或仓储，并配置测试环境与策略。",
+      "source": "PHP and Symfony testing patterns with PHPUnit. Use when writing unit tests, integration tests, functional tests, creating test cases, mocking services, testing controllers, testing Doctrine entities or repositories, configuring PHPUnit, or asking about PHP testing strategies.",
+      "source_sha256": "afd7bfec9ed211b588714b3109c5f17841831e910edbe06b6cc3d74451e3ac85",
+      "source_path": "skills/testing-patterns/SKILL.md",
+      "package_sha256": "61e11243d4436d22fbed28174b3e87e10ce36352bd8a67a7ddfe02443d6b2f6c",
+      "source_package": "php harmony-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b59d51257a850a13aaec82bd0d32f3c7c7b50808bed919772bc3ebbc5adcd079": {
+      "description_zh": "在用户明确确认后，以带 .md 或 .markdown 文件名的内联 Markdown 向 Pi 提交安全报告，并如实报告已排队摄取工作流的状态。",
+      "source": "Submit a security report to Pi as inline Markdown with a .md or .markdown filename, after explicit user confirmation. Reports the queued ingestion workflow state truthfully.",
+      "source_sha256": "b59d51257a850a13aaec82bd0d32f3c7c7b50808bed919772bc3ebbc5adcd079",
+      "source_path": "skills/ingest-markdown-report/SKILL.md",
+      "package_sha256": "df5436ebd379fb7859a8031c05e2d2dd8430bfeae77980f113df95ea2d1cb64d",
+      "source_package": "Pi Security-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba604e189f130572fbc7b13016f4c79cab7ffffd0b8e7623a5b38a65e6613365": {
+      "description_zh": "通过 FND-XXX ID、UUID 或 Pi 发现链接列举、定位、解释、汇总或比较 Pi Security 发现。仅只读调查，以托管 MCP 工具结果为证据。",
+      "source": "Investigate Pi Security findings - list, locate, explain, summarize, or compare findings by FND-XXX ID, UUID, or Pi finding URL. Read-only; uses Pi's hosted MCP tools as evidence.",
+      "source_sha256": "ba604e189f130572fbc7b13016f4c79cab7ffffd0b8e7623a5b38a65e6613365",
+      "source_path": "skills/investigate-finding/SKILL.md",
+      "package_sha256": "df5436ebd379fb7859a8031c05e2d2dd8430bfeae77980f113df95ea2d1cb64d",
+      "source_package": "Pi Security-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dbc40d7aac57c4a88853eb6237148423c4007db5151778fc8fec3248e426707d": {
+      "description_zh": "获取 Pi 针对安全发现或 SBOM 包已有的修复建议；如缺少包修复计划，可在用户明确确认后准备计划。",
+      "source": "Fetch existing Pi remediation guidance for a finding or an SBOM package, and optionally prepare a missing package remediation plan after explicit user confirmation.",
+      "source_sha256": "dbc40d7aac57c4a88853eb6237148423c4007db5151778fc8fec3248e426707d",
+      "source_path": "skills/remediation-guidance/SKILL.md",
+      "package_sha256": "df5436ebd379fb7859a8031c05e2d2dd8430bfeae77980f113df95ea2d1cb64d",
+      "source_package": "Pi Security-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f98102ab496e99d3eb151a60d9eb85320dfd83b1132f63922668e118e015f23c": {
+      "description_zh": "结合威胁模型的应用及章节上下文、Code Gatekeeper PR 和问题审查，评估 Pi Security 安全状况。仅只读，以托管 MCP 结果为证据。",
+      "source": "Review Pi Security posture - threat-model application and section context combined with Code Gatekeeper PR and issue reviews. Read-only; uses Pi's hosted MCP tools as evidence.",
+      "source_sha256": "f98102ab496e99d3eb151a60d9eb85320dfd83b1132f63922668e118e015f23c",
+      "source_path": "skills/review-security-posture/SKILL.md",
+      "package_sha256": "df5436ebd379fb7859a8031c05e2d2dd8430bfeae77980f113df95ea2d1cb64d",
+      "source_package": "Pi Security-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ac9e57ffbb343b3543066b2ac4b50d1d0b8410b97d922734ca0ed095653ba488": {
+      "description_zh": "为稳定的工程任务获取仓库专属 Pi 安全开发指引，按需读取威胁模型上下文，并在确认后记录指引反馈。",
+      "source": "Get repo-specific Pi secure-development guidance for a stable engineering task, optionally retrieve necessary threat-model context, and record playbook feedback after confirmation.",
+      "source_sha256": "ac9e57ffbb343b3543066b2ac4b50d1d0b8410b97d922734ca0ed095653ba488",
+      "source_path": "skills/secure-development-playbook/SKILL.md",
+      "package_sha256": "df5436ebd379fb7859a8031c05e2d2dd8430bfeae77980f113df95ea2d1cb64d",
+      "source_package": "Pi Security-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3c6183a14a28df0c6066abcc7064c3da93f4d9e58992df52ca151fe6fbb883c6": {
+      "description_zh": "在用户明确确认后，从受支持的 Confluence、Notion 文档链接或内联 Markdown 启动 Pi Security 设计评审。不支持附件、本地文件或二进制。",
+      "source": "Start a Pi Security design review from a supported Confluence or Notion document URL or from inline Markdown, after explicit user confirmation. No attachments, local files, or binaries.",
+      "source_sha256": "3c6183a14a28df0c6066abcc7064c3da93f4d9e58992df52ca151fe6fbb883c6",
+      "source_path": "skills/security-design-review/SKILL.md",
+      "package_sha256": "df5436ebd379fb7859a8031c05e2d2dd8430bfeae77980f113df95ea2d1cb64d",
+      "source_package": "Pi Security-0.1.1-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "73ae7655501ab41acc11094765448b3f766948c35987314b98d01689e8648e08": {
+      "description_zh": "查询、探索或分析 Pigment 工作区已有数据，覆盖分析流程、查询构造、数据概念、分析模式、歧义处理及结果解释。",
+      "source": "Always use this skill when querying, exploring, or analyzing existing data in a Pigment workspace. Covers the analysis workflow, query formulation, data concepts, analysis patterns, ambiguity handling, and result interpretation.",
+      "source_sha256": "73ae7655501ab41acc11094765448b3f766948c35987314b98d01689e8648e08",
+      "source_path": "skills/analyzing-pigment-data/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b2aff8737be70bb4d77104982fd8ace01f17a402e16730ed16c97d43494288e": {
+      "description_zh": "创建或编辑 Pigment Frame，即在沙箱 iframe 中通过 PigmentSDK 读取数据的自定义全页 JavaScript 可视化。",
+      "source": "How to build Pigment Frames, custom full-page JavaScript visualisations that read Pigment data through the PigmentSDK inside a sandboxed iframe. Use when creating or editing a Frame.",
+      "source_sha256": "0b2aff8737be70bb4d77104982fd8ace01f17a402e16730ed16c97d43494288e",
+      "source_path": "skills/building-pigment-frames/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bae3b036d5082b925ad08ad6898340baae21cce04c1c729be11cca8e1b141ee8": {
+      "description_zh": "创建和编辑 Pigment Board，按需查阅同目录配套文件以完成看板设计。",
+      "source": "Always use when creating or editing a Board. This skill includes supporting files in this directory - explore as needed.",
+      "source_sha256": "bae3b036d5082b925ad08ad6898340baae21cce04c1c729be11cca8e1b141ee8",
+      "source_path": "skills/designing-boards/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9e33ccfc8415b32fe9ed6583cf115512ec421f58e860f81fe3f6f0214ccb10e": {
+      "description_zh": "创建、编辑或选择 Pigment View，配置图表类型、透视行列页、维度拆分、筛选、排序、总计、聚合器及显示模式。",
+      "source": "Always use this skill when creating, editing, or needing to pick a View - including chart type and chart configuration, pivots (rows / columns / pages), breaking down \"by\" / \"per\" a dimension, filters, sorts, totals and aggregators, and display modes.",
+      "source_sha256": "d9e33ccfc8415b32fe9ed6583cf115512ec421f58e860f81fe3f6f0214ccb10e",
+      "source_path": "skills/designing-views/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1a569da4cf6d9c280244e7e8be40123dfecd330a15d19d7316be681c04959f2": {
+      "description_zh": "设置 Pigment 指标的默认格式，包括小数、前后缀、币种、百分比、K/M/bp 缩放、千分位、正负和零值、文本类型及布尔显示。适用于新建或更新比率、增长、金额、布尔和文本指标，格式选择属于正确建模的一部分。",
+      "source": "Best practices for metric default formatting. Covers: decimals, prefix, suffix, currency ($/€), percent (%), K/M/bp/thousand/million scaling, thousand separator, sign / zero / negative handling, text mode (Text / Rich Text / URL / Image / LocaleDateTime), boolean display (checkbox / button). Load when creating or updating a metric's default format - and ALSO whenever you create a metric whose values are not plain counts, in particular a ratio, percentage, variance / growth, currency, boolean or text metric, EVEN IF the user said nothing about formatting: picking the default format is part of creating such a metric correctly. Use cases: format as, display as, show as percent, in millions, two decimals, no decimals, prefix with $, add currency, as K / M / bp, rich text, checkbox, ratio, url, multiplier.",
+      "source_sha256": "d1a569da4cf6d9c280244e7e8be40123dfecd330a15d19d7316be681c04959f2",
+      "source_path": "skills/formatting-and-highlighting/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85f7591c41425b03d60e38115bd9ede6cfc37647da9e47d17ff54fd985b09584": {
+      "description_zh": "将外部数据集成至 Pigment，处理 CSV 导入、维度与交易清单目标选择、源列到属性映射、跨应用 P2P 导入及故障排查。CSV 步骤参见配套说明；不用于与导入无关的公式更新或清单创建。",
+      "source": "Use this skill when integrating external data into Pigment - importing an attached CSV file, deciding whether to import into dimensions vs transaction lists, mapping source columns to properties, configuring cross-application (P2P) imports, or troubleshooting data imports. For the step-by-step CSV file import, read data_import_csv.md. Do NOT use this skill for formula updates or list creation unrelated to a data import. This skill includes supporting files in this directory - explore as needed.",
+      "source_sha256": "85f7591c41425b03d60e38115bd9ede6cfc37647da9e47d17ff54fd985b09584",
+      "source_path": "skills/integrating-pigment-data/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "94bee03ee762b63d18d20706d031de295427652398100ed2f067c2b60b12fe4a": {
+      "description_zh": "设计或修改 Pigment 应用架构，理解应用、维度、日历、指标、交易清单及表，区分属性与清单、指标与表，并考虑稀疏性和范围。提供架构决策顺序、最小可用模式及命名、层级、日历、性能等深入参考。",
+      "source": "Always use this skill when designing or modifying Pigment applications. Provides the mental model of a Pigment app (Application, Dimensions, Calendars, Metrics, Transaction Lists, Tables), the core concepts (dimension list vs property vs transaction list, metric vs table, sparsity, scope), the canonical order of architecture decisions, a minimal viable application pattern and pointers to deeper-dive docs (architecture, naming, hierarchies, calendars, principles, folders, subsets, performance).",
+      "source_sha256": "94bee03ee762b63d18d20706d031de295427652398100ed2f067c2b60b12fe4a",
+      "source_path": "skills/modeling-pigment-applications/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "53705ad0a05066c17b518332789941cabdc9e2e6ed736517528d9f404246ea8a": {
+      "description_zh": "诊断 Pigment 计算缓慢、超时及性能瓶颈，分析范围传播、稀疏性、公式、迭代计算和权限性能，也支持应用审计与无用资产清理。先用 Performance Insights 剖析，再分类处理；原说明要求修改公式前先测量，不能凭假设优化。",
+      "source": "Always use this skill when troubleshooting slow calculations or timeouts, analyzing profiler output to identify bottlenecks, understanding scope propagation, managing sparsity, optimizing formula performance, improving iterative calculations, optimizing access rights performance, conducting systematic performance audits, auditing a Pigment application (modeling, formula hygiene, folders, boards, governance), cleaning unused dimensions, metrics, tables, properties, or boards, identifying dead or stale boards, or removing unused metrics. Modeler-agent skill for Performance Insights tools (performance_profile_change, get_top_blocks_by_performance), then classify and fix. Provides the optimization loop, audit vs cleaning modes, and routing to deep dives. Always profile before formula changes; never optimize from assumptions.",
+      "source_sha256": "53705ad0a05066c17b518332789941cabdc9e2e6ed736517528d9f404246ea8a",
+      "source_path": "skills/optimizing-pigment-performance/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7671d2b8cda3195cf2ff674fd5bb75651c693bea34c6cb46c009eab048ce0d32": {
+      "description_zh": "设计 Pigment 计划周期及实际、预算、预测、滚动预测和版本分层，支持实际与计划跨版本或期间组合比较。覆盖版本维度、原生假设情景及冻结数据的快照。",
+      "source": "Always use this skill when the user mentions or implies versions, Actual, Actuals, Budget, Budgeting, Forecast, Reforecast, Rolling Forecast, Version, Versioning, Plan, switchover, scenarios, snapshots, planning cycles, Actual/Plan layering, plan vs actual, \"create version dimension\", \"set up versioning\", or asks for Actual Budget Forecast best practices — or when they extend realized data into a plan or budget (Actual/Budget/Plan layering, forward forecast from actuals) or need to combine or compare actual and plan versions and periods. Covers Version Dimensions (foundational to all planning applications), Native Scenarios (what-if), and Snapshots (freeze data).",
+      "source_sha256": "7671d2b8cda3195cf2ff674fd5bb75651c693bea34c6cb46c009eab048ce0d32",
+      "source_path": "skills/planning-cycles-pigment-applications/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09cfa977e509591ce603bc446be07296520ec37b23b735ee860c4078b06b373c": {
+      "description_zh": "设计、应用或排查 Pigment 访问权限，涵盖用户、角色、维度轴、权限指标及 Apply 规则，采用 IFDEFINED 防护和以 BLANK 代替 FALSE 等公式模式。适用于跨应用权限、可见性故障及安全治理，权限属于模型架构。",
+      "source": "Always use this skill when designing, applying, or debugging Access Rights and security in Pigment applications. Provides the AR mental model (User, Role, dimension axis, AR Metric, Apply rule), the canonical decision order, mandatory formula patterns (IFDEFINED guard, BLANK over FALSE), multi-app AR, debugging \"why can this user see / not see this data?\", and security governance. AR is part of model architecture, not an afterthought.",
+      "source_sha256": "09cfa977e509591ce603bc446be07296520ec37b23b735ee860c4078b06b373c",
+      "source_path": "skills/securing-pigment-applications/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c232852b591e5196db663e6fa3d6cddf2260f3b4cb481381932861e620d6fb9": {
+      "description_zh": "为 FP&A、人力规划、销售绩效管理、供应链规划及财务合并等领域构建或扩展 Pigment 模型，采用经过验证的建模模式及领域实践，并按需读取配套资料。",
+      "source": "Always use this skill when building or extending models for specific planning domains — FP&A, Workforce Planning, Sales Performance Management, Supply Chain Planning, or Financial Consolidation. Covers proven modeling patterns and domain-specific best practices. This skill includes supporting files in this directory - explore as needed.",
+      "source_sha256": "2c232852b591e5196db663e6fa3d6cddf2260f3b4cb481381932861e620d6fb9",
+      "source_path": "skills/solving-specific-use-cases/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "721b76706baa6511cf37eb44197a82d0bee8a7ce2d5b8e418e4c8fad76252bb9": {
+      "description_zh": "编写、编辑和调试 Pigment 专有公式，处理条件、空值、日期范围、聚合、前期查找和维度转换。覆盖类型、修饰符、函数、计算模式及复杂度相关性能权衡；原说明要求先读文档，不凭记忆猜语法。",
+      "source": "Always use this skill when writing, editing, or debugging Pigment formulas — including conditional logic, blank handling, date-range logic, aggregation, prior-period lookups, and dimensional transformations. Pigment uses a proprietary formula language — NEVER assume you know the syntax, and ALWAYS read the documentation before writing any formula. Covers data types, modifiers, functions, calculation patterns, and performance trade-offs (calibrated by formula complexity). This skill includes supporting files in this directory; explore as needed.",
+      "source_sha256": "721b76706baa6511cf37eb44197a82d0bee8a7ce2d5b8e418e4c8fad76252bb9",
+      "source_path": "skills/writing-pigment-formulas/SKILL.md",
+      "package_sha256": "79f5797cadf51823eb365e1a5202cbc89e482e45c2d854187930380948716b68",
+      "source_package": "Pigment-1.0.14-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "852d8bccde076614ba39ad74ca42b7d015288098a9bf3d687dea41a9604d36e9": {
+      "description_zh": "在基于 Firecracker microVM 的 pilots 沙箱和 PaaS 上部署并运维应用。适用于仓库发布、服务和 URL、秘密、卷、自定义域名、环境提升或部署故障。",
+      "source": "Deploy and operate apps on pilots, the sandbox + PaaS on Firecracker microVMs. Use whenever the user mentions pilots, deploying an app, a sandbox, a service, a URL for a repo, secrets, volumes, custom domains, promote, or a failed deploy, even without the word pilots.",
+      "source_sha256": "852d8bccde076614ba39ad74ca42b7d015288098a9bf3d687dea41a9604d36e9",
+      "source_path": "skills/pilots/SKILL.md",
+      "package_sha256": "95c2b58f976ab0e05ae622a7f4523c22f1873ece31c8b6d83a96fbf6d61ca861",
+      "source_package": "pilots-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0a4261fae7a6d721c7c284e3d49e2cbc8f6c01c554df3d5f3eb576826baa4031": {
+      "description_zh": "端到端检查 pilots 集成，创建临时机器、执行命令、建立检查点并恢复；最后在用户批准清理后销毁临时机器。",
+      "source": "Run an end-to-end check of the pilots integration: create a throwaway machine, run a command in it, checkpoint it, restore it, then destroy it after the user approves the cleanup.",
+      "source_sha256": "0a4261fae7a6d721c7c284e3d49e2cbc8f6c01c554df3d5f3eb576826baa4031",
+      "source_path": "skills/smoke/SKILL.md",
+      "package_sha256": "95c2b58f976ab0e05ae622a7f4523c22f1873ece31c8b6d83a96fbf6d61ca861",
+      "source_package": "pilots-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "661a60ea20b055299484ab67b7c747727b3e004aa5a2370b304c484a9f7d99e4": {
+      "description_zh": "只读检查 pilots MCP 服务可达性和密钥有效性，并列出可见机器与服务，不创建或修改资源。",
+      "source": "Check whether the pilots MCP server is reachable and the key works, then list the machines and services it can see, without creating or changing anything.",
+      "source_sha256": "661a60ea20b055299484ab67b7c747727b3e004aa5a2370b304c484a9f7d99e4",
+      "source_path": "skills/status/SKILL.md",
+      "package_sha256": "95c2b58f976ab0e05ae622a7f4523c22f1873ece31c8b6d83a96fbf6d61ca861",
+      "source_package": "pilots-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e371c42ddd8d3272583c325368345eee5fc6832cee51a64d42401d3ed61ce886": {
+      "description_zh": "创建、管理和使用 Pinecone Assistant 进行带引用的文档问答，涵盖上传、同步、聊天、上下文检索及列表。适用于以个人文档建立助手或查询文档内容。",
+      "source": "Create, manage, and chat with Pinecone Assistants for document Q&A with citations. Handles all assistant operations - create, upload, sync, chat, context retrieval, and list. Recognizes natural language like \"create an assistant from my docs\", \"ask my assistant about X\", or \"upload my docs to Pinecone\".",
+      "source_sha256": "e371c42ddd8d3272583c325368345eee5fc6832cee51a64d42401d3ed61ce886",
+      "source_path": "skills/assistant/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bb1aa0f1ffae6f656d8a43621f0ef962f48a4f96fbec0fcc11973ae8da0bd247": {
+      "description_zh": "通过 Pinecone CLI pc 在终端管理资源，适用于批量处理、向量操作、备份、命名空间和 CI/CD。原说明称 CLI 支持标准、集成及稀疏索引全部类型，区别于仅支持集成索引的 MCP。",
+      "source": "Guide for using the Pinecone CLI (pc) to manage Pinecone resources from the terminal. The CLI supports ALL index types (standard, integrated, sparse) and all vector operations — unlike the MCP which only supports integrated indexes. Use for batch operations, vector management, backups, namespaces, CI/CD automation, and full control over Pinecone resources.",
+      "source_sha256": "bb1aa0f1ffae6f656d8a43621f0ef962f48a4f96fbec0fcc11973ae8da0bd247",
+      "source_path": "skills/cli/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4b3192ececad267256edac6ab4aff2afed8c1f4b09cda1bbf828edfa6cdbae00": {
+      "description_zh": "提供按主题组织的 Pinecone 官方文档链接及数据格式参考。适用于编写代码、查询 API 参数或核对向量和记录格式。",
+      "source": "Curated documentation reference for developers building with Pinecone. Contains links to official docs organized by topic and data format references. Use when writing Pinecone code, looking up API parameters, or needing the correct format for vectors or records.",
+      "source_sha256": "4b3192ececad267256edac6ab4aff2afed8c1f4b09cda1bbf828edfa6cdbae00",
+      "source_path": "skills/docs/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1fda5c7f0eaaf3dfea7e79507186e4c24765ccae060f31f0e1ef0677ac1d898": {
+      "description_zh": "使用 Pinecone 文档模式 API 创建、摄取和查询全文搜索索引；原说明对应 Python SDK 10.0.0、API 2026-07。涵盖稠密或稀疏向量字段、score_by 和文本匹配筛选，批量摄取需检查错误及就绪状态，查询须按索引描述核验。",
+      "source": "Create, ingest into, and query a Pinecone full-text-search (FTS) document index using the graduated document-schema API (Python SDK 10.0.0, API version 2026-07). Use when the user or agent asks to build a text search index on Pinecone, add dense or sparse vector fields, ingest documents, construct score_by clauses (text / query_string / dense_vector / sparse_vector), or compose with text-match filters ($match_phrase / $match_all / $match_any). Ships `scripts/ingest.py` for safe bulk ingestion (batch_upsert + error inspection + readiness polling); query construction is documented inline in this skill — write `documents.search(...)` calls directly, validated against `pc.indexes.describe(...)` output.",
+      "source_sha256": "d1fda5c7f0eaaf3dfea7e79507186e4c24765ccae060f31f0e1ef0677ac1d898",
+      "source_path": "skills/full-text-search/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b7cabdd1b72859ee9a351c186afb54f11381f064d12d1d0cbe44da19a50c904": {
+      "description_zh": "介绍可用 Pinecone 技能及入门前提。适用于了解技能清单、首次设置或开始使用 Pinecone。",
+      "source": "Overview of all available Pinecone skills and what a user needs to get started. Invoke when a user asks what skills are available, how to get started with Pinecone, or what they need to set up before using any Pinecone skill.",
+      "source_sha256": "3b7cabdd1b72859ee9a351c186afb54f11381f064d12d1d0cbe44da19a50c904",
+      "source_path": "skills/help/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b13af80f2da6fa17dc91dab5d61bc63f17a0739ee2ab42955205e4a83a2c0166": {
+      "description_zh": "提供 Pinecone MCP 工具参考，包括索引列表、描述、统计、按模型建索引、记录写入与搜索、级联搜索及重排序。适用于查看工具能力、用法和参数。",
+      "source": "Reference for the Pinecone MCP server tools. Documents all available tools - list-indexes, describe-index, describe-index-stats, create-index-for-model, upsert-records, search-records, cascading-search, and rerank-documents. Use when an agent needs to understand what Pinecone MCP tools are available, how to use them, or what parameters they accept.",
+      "source_sha256": "b13af80f2da6fa17dc91dab5d61bc63f17a0739ee2ab42955205e4a83a2c0166",
+      "source_path": "skills/mcp/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69b84b93133eed88787b0185eeccb89f2d844391d6a78c8d00bfaea7ab54de1d": {
+      "description_zh": "使用 n8n 的 Pinecone Assistant 或 Vector Store 节点构建工作流。适用于 RAG、文档聊天、节点配置、故障排查及集成实践。",
+      "source": "Build n8n workflows using the Pinecone Assistant node or Pinecone Vector Store node. Use when building RAG pipelines, chat-with-docs workflows, configuring Pinecone nodes in n8n, troubleshooting Pinecone n8n nodes, or asking about best practices for Pinecone in n8n.",
+      "source_sha256": "69b84b93133eed88787b0185eeccb89f2d844391d6a78c8d00bfaea7ab54de1d",
+      "source_path": "skills/n8n/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "756bb9a3676f37890b9286e238b31bf8fd3c6ea6e80b9cd7802e709f2434be5e": {
+      "description_zh": "通过 Pinecone MCP 以文本查询内置嵌入模型的集成索引，仅适用于 integrated index。标准索引或高级向量操作使用 pinecone:cli；需要配置 PINECONE_API_KEY 环境变量和 MCP 服务。",
+      "source": "Query integrated indexes using text with Pinecone MCP. IMPORTANT - This skill ONLY works with integrated indexes (indexes with built-in Pinecone embedding models like multilingual-e5-large). For standard indexes or advanced vector operations, use the pinecone:cli skill instead. Requires PINECONE_API_KEY environment variable and Pinecone MCP server to be configured.",
+      "source_sha256": "756bb9a3676f37890b9286e238b31bf8fd3c6ea6e80b9cd7802e709f2434be5e",
+      "source_path": "skills/query/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "66c53a5a3c61d9647308bbd206d98408ef155f9ad9948871a302c1ef3d09d64a": {
+      "description_zh": "为新开发者提供 Pinecone 交互入门，可选择数据库路径创建集成索引、写入并查询，或 Assistant 路径进行文档问答。适用于首次使用和工具导览。",
+      "source": "Interactive Pinecone quickstart for new developers. Choose between two paths - Database (create an integrated index, upsert data, and query using Pinecone MCP + Python) or Assistant (create a Pinecone Assistant for document Q&A). Use when a user wants to get started with Pinecone for the first time or wants a guided tour of Pinecone's tools.",
+      "source_sha256": "66c53a5a3c61d9647308bbd206d98408ef155f9ad9948871a302c1ef3d09d64a",
+      "source_path": "skills/quickstart/SKILL.md",
+      "package_sha256": "937527589d0df08c5b3cda78973a7bd2ceca2465e4b52912c4dc276b272dd6a7",
+      "source_package": "pinecone-1.7.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2737fa404c288043161961e4fc3ccdc9b6b967571b84d3cafdaa8149a49031ee": {
+      "description_zh": "在执行数据流水线对账前确定实际比较对象，包括自然键、易变字段、交付日志位置及同一记录的定义。适用于设计对账或为尚无检测的流水线增加数据丢失检查。",
+      "source": "Work out what a reconciliation check for a specific pipeline should actually compare - the natural key, the volatile fields, where the delivery log lives, and what \"the same record\" means. Use before running a reconciliation, or when someone wants to add data-loss detection to a pipeline that has none.",
+      "source_sha256": "2737fa404c288043161961e4fc3ccdc9b6b967571b84d3cafdaa8149a49031ee",
+      "source_path": "skills/reconcile-design/SKILL.md",
+      "package_sha256": "9a3791ab0d67593be4ded1073b29e9a2e1fbe0baffde939dd3d69f492f6991f4",
+      "source_package": "Pipeline Reconcile-1.4.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2150c639b8dc5b9e50baca5aecc2c72eb936814e3a65874ed4a4fa452802ec6a": {
+      "description_zh": "核验流水线声称已交付的记录是否真正落地，识别静默丢失、传输内容损坏、过期输出重发及虚报交付日志。适用于确认加载、同步、ETL 或迁移是否有效完成。",
+      "source": "Check that the records a data pipeline reported as delivered actually landed. Catches silent data loss, content corrupted in transit, stale re-shipped output, and journal entries that claim a delivery that never happened. Use when someone asks whether a load, sync, ETL run, or migration actually worked.",
+      "source_sha256": "2150c639b8dc5b9e50baca5aecc2c72eb936814e3a65874ed4a4fa452802ec6a",
+      "source_path": "skills/reconcile/SKILL.md",
+      "package_sha256": "9a3791ab0d67593be4ded1073b29e9a2e1fbe0baffde939dd3d69f492f6991f4",
+      "source_package": "Pipeline Reconcile-1.4.2-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ce7de289681b797f071ceae57ff4ce71ee2b14678a8f554b542fb939e11c7659": {
+      "description_zh": "首次为 Rails 应用建立 docs/primitives/，生成 SCHEMA.md、index.md、capabilities/，通过只读代码调查和结构化访谈起草由人负责的 compilation.md。适用于建立长期意图、编译、评估和来源记录；后续维护和补填由 maintaining-primitives 处理。",
+      "source": "One-time adoption of the primitives tree in a Rails app: scaffold docs/primitives/ (SCHEMA.md, index.md, capabilities/) and draft the human-owned compilation.md via a read-only codebase survey followed by a structured interview. Use when a repo has no docs/primitives/ tree and the team wants durable intent/compilation/evaluations/provenance, or when the user says set up primitives, adopt primitives, or generate compilation. Recurring maintenance and backfill belong to maintaining-primitives, not here.",
+      "source_sha256": "ce7de289681b797f071ceae57ff4ce71ee2b14678a8f554b542fb939e11c7659",
+      "source_path": "skills/bootstrapping-primitives/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18bfcc4fe92d8685149ebc5f12a231db725cb12c3757b6bf40c92821470e0639": {
+      "description_zh": "在计划或编码前梳理 Rails 功能和行为设计，解决范围不明、多种方向、HTML/JSON、状态归属、REST/RPC、过早引入服务对象或 SPA，以及前端重复业务规则等问题。适用于希望遵循 DHH/37signals 默认架构的应用。",
+      "source": "Use when shaping Rails features or behavior changes before planning or code — unclear scope, multiple valid directions, HTML vs JSON, client-owned vs server-owned truth, REST vs RPC-shaped endpoints, premature service objects or SPA layers, or duplication of business rules in JavaScript. Symptoms include reaching for new gems or microservices first, CRUD flows dressed as bespoke protocols, or designs that would fight omakase defaults in a 37signals-shaped app.",
+      "source_sha256": "18bfcc4fe92d8685149ebc5f12a231db725cb12c3757b6bf40c92821470e0639",
+      "source_path": "skills/brainstorming-rails-omakase/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "981ff7ccff20077a3dbda79d0afe495a71c7d7f3db10f47e9059bd404e42525e": {
+      "description_zh": "按 DHH/37signals 风格编排书面 Rails 方案，委派实现及评审并循环到 Approved，本技能自身不写应用代码。逐步模式每项通过后暂停供用户检查提交；执行后的修改也采用相同实现与评审循环。",
+      "source": "Orchestrates execution of a written Rails implementation plan in a DHH / 37signals omakase style without writing application code: delegates each task to pitchd-rails-implementor, reviews via pitchd-rails-reviewer, and loops on feedback until Approved. In step-by-step mode it then stops after each Approved task so the user can review and commit it before the next one starts, keeping the reviewable unit small. Use when the user says execute the plan, run the plan, implement the plan, ship planned tasks, or wants a subset of plan tasks done in full with Pitchd conventions. Also handles post-execution revision requests — when the user says something needs changing, isn''t right, or requests a fix after the skill has run, treat it as a self-contained revision task and run the same implement → review loop.",
+      "source_sha256": "981ff7ccff20077a3dbda79d0afe495a71c7d7f3db10f47e9059bd404e42525e",
+      "source_path": "skills/executing-pitchd-rails-plan/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b7d213c7701ad380a0db8fc638a95a98a30fdf9489cca847e7dc9c8a39601128": {
+      "description_zh": "按 Pitchd 插件约定实现 Rails 方案中的单项任务、纵向切片或限定功能，先采用 rails-omakase-compass，再按相应 writing-* 技能和 rules/*.mdc 落地。原说明将隔离委派交给 pitchd-rails-implementor 子智能体。",
+      "source": "Implement a plan task in a Rails app using Pitchd plugin conventions: first rails-omakase-compass (DHH / 37signals-shaped omakase), then applicable writing-* skills and rules/*.mdc for tactics. Use when executing a single task from an implementation plan, a vertical slice, or a scoped feature. For isolated delegation, use the pitchd-rails-implementor subagent (see agents/pitchd-rails-implementor.md).",
+      "source_sha256": "b7d213c7701ad380a0db8fc638a95a98a30fdf9489cca847e7dc9c8a39601128",
+      "source_path": "skills/implementing-pitchd-rails/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c5098d44a2d14ff7dd2670069d929697362040180fb271024d6293605da542b": {
+      "description_zh": "维护 docs/primitives/ 中长期保留的能力文档，记录意图条款、形态约束、评估映射及只追加来源，同时维护由人负责的 compilation.md。支持从代码和规范补录能力、带引用追溯原因、同步状态及检查覆盖与孤立项；不用于写应用代码或方案，首次初始化使用 bootstrapping-primitives。",
+      "source": "Maintain the durable primitives tree under docs/primitives/ — capability docs holding intent clauses, shape constraints, evaluation maps, and append-only provenance, plus the human-owned compilation.md. Operations: capture (backfill a capability doc from existing code and specs), trace (answer \"why is X like this\" with citations), update (sync status, evaluations, provenance), lint (size limits, clause/eval coverage, orphans). Use when backfilling historical features, answering provenance questions, or running a health pass — not for writing app code or plans. For one-time adoption setup use bootstrapping-primitives; for delegation use pitchd-rails-primitives-maintainer.",
+      "source_sha256": "1c5098d44a2d14ff7dd2670069d929697362040180fb271024d6293605da542b",
+      "source_path": "skills/maintaining-primitives/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "679017789d1248a00e359c9c6709c50736e7b2f0b744e6940f46af4505af93ef": {
+      "description_zh": "为 Pitchd 风格 Rails 架构选择提供高层判断，关注默认约定、服务器状态归属、REST、单体结构及简化或拆分时机。适用于架构讨论、HTML/API 取舍或偏离 Rails 的设计；具体实现交由 writing-*，不负责语法、方案模板或文件布局。",
+      "source": "High-level decision lens for Rails work in the Pitchd plugin tradition — omakase defaults, server-owned truth, REST gravity, majestic monolith, and when to simplify vs extract. Use before debating architecture, when choosing HTML vs API, or when a change feels \"off-Rails\"; defers HOW to writing-* skills and rules/*.mdc. Not for Stimulus/Turbo syntax, plan templates, or file layout.",
+      "source_sha256": "679017789d1248a00e359c9c6709c50736e7b2f0b744e6940f46af4505af93ef",
+      "source_path": "skills/rails-omakase-compass/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8d1c76b165906b7063d872bf765d67c285788a20b83b9f59cc1b5357f104e0b": {
+      "description_zh": "按 Rails 测试分层约定重构已有 RSpec 套件，发现相关测试、按 Five Gates 和层级职责审计，再移动、合并、删除或重写，使每个行为只有一处归属，并保留覆盖和通过状态。适用于过重系统测试、浏览器测试过多或运行缓慢；新增未测代码测试和无关失败排查使用 writing-tests。",
+      "source": "Refactor an existing RSpec suite — typically a batch of bloated system specs and their related request, model, policy, job, mailer, concern, and factory specs — into a Rails best-practice test suite per writing-tests and rules/testing.mdc. Discover related specs, audit each test against the Five Gates and per-layer ownership, then move, merge, delete, or rewrite tests so each behaviour has exactly one home. Verify the suite is green and coverage is preserved. Use when the user mentions refactoring tests, rebalancing specs, \"the system specs are too heavy\", \"we have too many browser tests\", reducing test runtime, cleaning up a drifting test suite, or porting an older suite to current plugin conventions. Not for writing new specs for untested code (use writing-tests) or for fixing failing specs unrelated to layering (debug them in writing-tests).",
+      "source_sha256": "d8d1c76b165906b7063d872bf765d67c285788a20b83b9f59cc1b5357f104e0b",
+      "source_path": "skills/refactoring-rails-specs/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09e4b8df2b10a6b06e04d3ed48aba6598329947448f01293028b3c1c1d8cac01": {
+      "description_zh": "审计并重构 Rails 现有 Stimulus 控制器，按单一职责、DOM 派生状态、生命周期清理和耦合规则决定合并或拆分。结构调整后为每种行为在最简单页面保留一项规范系统测试；新控制器使用 writing-javascript，服务器测试重构使用 refactoring-rails-specs。",
+      "source": "Audit and refactor an existing fleet of Stimulus controllers in a Rails app — discover every controller, score each against single-responsibility, DOM-derived state, lifecycle cleanup, and cross-controller coupling rules, then merge or split as appropriate. After the structural refactor, ensure each Stimulus behaviour has exactly one canonical system spec on the simplest page that exercises it, per writing-tests. Use when the user mentions refactoring Stimulus, \"the Stimulus controllers are a mess\", consolidating duplicate JS behaviour, splitting a god controller, or filling in Stimulus spec coverage. Not for writing brand-new controllers from scratch (use writing-javascript) or refactoring server-side specs (use refactoring-rails-specs).",
+      "source_sha256": "09e4b8df2b10a6b06e04d3ed48aba6598329947448f01293028b3c1c1d8cac01",
+      "source_path": "skills/refactoring-stimulus-controllers/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6932a1161c47b95a5cd75cdb13f6c187b5cc050069abbb77696975550f7f505f": {
+      "description_zh": "先从 GitHub API 获取官方 Rails 指南目录，再读取匹配主题的原始 Markdown，以获得可靠 API 或功能说明。适用于插件规则不足时查官方文档，原说明禁止把编造内容当作官方材料。",
+      "source": "Load specific topics from the official Rails guides (rails/rails on GitHub) via two fetches: first the GitHub API directory index to discover available filenames, then the raw markdown for the matched guide. Never invent or paraphrase content as if it came from the official docs. Use when you need authoritative Rails API or feature documentation beyond this plugin''s rules.",
+      "source_sha256": "6932a1161c47b95a5cd75cdb13f6c187b5cc050069abbb77696975550f7f505f",
+      "source_path": "skills/referencing-rails-guides/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "990fb7198b3ca141c987cd404668909417ee1e2648e3e4f22be5c85d7903245f": {
+      "description_zh": "根据 marckohlbrugge/37signals-skills 的 README 目录选择主题，仅获取所需 GitHub 原始 Markdown。适用于补充插件之外的 Fizzy 风格实践；读取失败须报告，不以记忆内容冒充指南。",
+      "source": "Load specific topics from marckohlbrugge/37signals-skills (formerly unofficial-37signals-coding-style-guide) via HTTP fetch of raw GitHub markdown only — use the README table of contents to choose paths (guide topics live under guide/, agent skills under skills/); fetch the minimum needed; if a fetch fails, stop and report (never invent or paraphrase from memory as if it were the guide). Use when you need external Fizzy-derived patterns beyond this plugin’s rules and skills.",
+      "source_sha256": "990fb7198b3ca141c987cd404668909417ee1e2648e3e4f22be5c85d7903245f",
+      "source_path": "skills/referencing-unofficial-37signals-guide/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bcabe8c866afb47ec19eb0e2abfd5b151dffc8453082118dbe1b7a71ec9e4242": {
+      "description_zh": "在读取 Pitchd 插件内部 rules、相邻技能或智能体文件前，解析正确路径前缀，兼容 Cursor 与 Claude Code 不同的相对路径规则。同一轮首次读取时处理一次，之后无需重复检查。",
+      "source": "Resolves the correct path prefix for reading this plugin's own files — rules/*.mdc, sibling skills/*/SKILL.md, agents/*.md — before a Read call on one of them. Needed because this plugin runs both as a Cursor plugin and as a Claude Code plugin, and the two resolve plain relative paths differently. Use once, right before the first Read of a plugin-internal file in a given turn; no need to re-check for later reads in the same turn.",
+      "source_sha256": "bcabe8c866afb47ec19eb0e2abfd5b151dffc8453082118dbe1b7a71ec9e4242",
+      "source_path": "skills/resolving-plugin-root/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b03d84a8fb542ce4d123595526f842a9f5f6beb0de4c28c8587fb4bcb45d52d9": {
+      "description_zh": "按 Pitchd 插件约定评审 Rails 方案或实现，先检查 rails-omakase-compass 的方案形态，再检查相关 writing-* 技能和规则。适用于代码、方案、PR 或合并前评审；隔离委派可用 pitchd-rails-reviewer。",
+      "source": "Review Rails plans and/or implementation against the Pitchd plugin: first rails-omakase-compass (solution shape), then applicable writing-* skills and rules (tactics). Use when requesting a code review, plan review, PR review, or sign-off before merge. For isolated delegation with a clean context, use the pitchd-rails-reviewer subagent (see `agents/pitchd-rails-reviewer.md`).",
+      "source_sha256": "b03d84a8fb542ce4d123595526f842a9f5f6beb0de4c28c8587fb4bcb45d52d9",
+      "source_path": "skills/reviewing-pitchd-rails/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "113b3e5f6e36a0fe69fd8a4efd814e07b31bec07b7b52eea9b66adf086086182": {
+      "description_zh": "运行 RuboCop 并通过修改代码消除全部违规，不使用内联或配置禁用。适用于 Ruby/Rake lint 或评审前核验；罕见无法修复的问题需阻止并升级处理。",
+      "source": "Run RuboCop until zero offences: bin/rubocop green, fix code only (no inline or config disables). Block and escalate rare unfixable cases. Use when linting Ruby/Rake, verifying before review, or the user mentions RuboCop.",
+      "source_sha256": "113b3e5f6e36a0fe69fd8a4efd814e07b31bec07b7b52eea9b66adf086086182",
+      "source_path": "skills/running-rubocop/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a79594bec095f21477e73b67491aab861da885a70efe2e604b9d5969610ebc1a": {
+      "description_zh": "按 DHH/37signals 约定编写 Rails 控制器，采用轻量 CRUD、REST 资源、优先重定向的 Hotwire 响应、共享行为 concern 及 params.expect 强参数。适用于新增控制器、action、Turbo 响应或 REST 路由。",
+      "source": "Write Rails controllers following DHH/37signals conventions — thin CRUD controllers, REST-mapped resources, redirect-first Hotwire responses, concerns for shared behaviour, and strong parameters with params.expect. Use when creating new controllers, adding actions, extracting concerns, handling Turbo responses, or when the user mentions controllers, actions, strong parameters, or REST routing.",
+      "source_sha256": "a79594bec095f21477e73b67491aab861da885a70efe2e604b9d5969610ebc1a",
+      "source_path": "skills/writing-controllers/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55d8e0ea2b3d14e1197953732744e56e16f8cf6b8f23ee9bc83e273550432e53": {
+      "description_zh": "按 Rails 方式使用 Tailwind，覆盖 tailwindcss-rails、CSS 入口、v3/v4 配置、@apply、主题、响应式、深色模式、无障碍及 Stimulus 类切换。采用 ERB 工具类和 partial，Hotwire 优先界面不使用 CSS-in-JS；模板和 JS 管线由对应技能处理。",
+      "source": "Style Rails apps with Tailwind the Rails way — tailwindcss-rails, CSS entrypoints, v3 vs v4 config shapes, @apply policy, theme extension, responsive/dark conventions, accessibility, Stimulus class toggles. DHH/37signals: utility-first markup in ERB (see writing-views), partials over parallel design systems, no CSS-in-JS for Hotwire-first UIs. Use when editing Tailwind config, application stylesheets, global CSS, or clarifying styling vs views (templates) and javascript (asset pipeline).",
+      "source_sha256": "55d8e0ea2b3d14e1197953732744e56e16f8cf6b8f23ee9bc83e273550432e53",
+      "source_path": "skills/writing-css-tailwind/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cde524cf44ca664f6540fd74e35a328b0f87f58b3bc54c1b422f6660f63732db": {
+      "description_zh": "以服务器渲染 HTML 为状态依据构建 Hotwire 界面，使用 Turbo Drive、Frames、Streams、morphing、广播及小型 Stimulus 控制器。按重定向、frame、stream 的优先次序设计，适用于实时更新、弹窗和行内编辑，并避免意外形成 SPA。",
+      "source": "Build Hotwire-first UIs — Turbo Drive, Frames, Streams, morphing, broadcasts, and Stimulus — with server-rendered HTML as the source of truth. DHH/37signals style: redirect before frames before streams; small Stimulus controllers; no accidental SPA. Use when adding Turbo frames or streams, Stimulus behaviour, real-time updates, modal/inline-edit flows, or when front-end work drifts toward client-side routing or JSON-first CRUD for same-origin pages.",
+      "source_sha256": "cde524cf44ca664f6540fd74e35a328b0f87f58b3bc54c1b422f6660f63732db",
+      "source_path": "skills/writing-hotwire/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "730f22ddf717cb875a5249843c8124cc0c8b7f9d0bd80eb0a064ea3a6f63618e": {
+      "description_zh": "组织 Rails I18n 的 YAML、视图延迟查找、helper/控制器绝对键、插值、复数、日期数字格式及 Active Record 错误信息。适用于语言包、ERB 文案、flash 和验证消息，避免模板字符串拼接；不负责翻译供应商工具或 SPA i18n-js。",
+      "source": "Organize Rails I18n — YAML structure, lazy lookup in views, absolute keys in helpers and controllers, interpolation and pluralization, datetime/number formats, and Active Record error messages. DHH/37signals style: boring keys, framework-first, no string concatenation in templates. Use when adding or changing locales, extracting user-facing copy from ERB, flash messages, or validation messages; not for translation vendor tooling or SPA i18n-js. Triggers: locales, config/locales YAML, t(), I18n.t, missing translations, flash copy, human_attribute_name.",
+      "source_sha256": "730f22ddf717cb875a5249843c8124cc0c8b7f9d0bd80eb0a064ea3a6f63618e",
+      "source_path": "skills/writing-i18n/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8da54a0851ad872349845deeb02e57b3ad92235a0a2295c59de210f04b48d967": {
+      "description_zh": "按 Rails 默认方式编写 JavaScript，优先 importmap，必要时采用 esbuild/Vite，使用聚焦的 Stimulus 控制器、ES 模块、无障碍 DOM 更新及带 CSRF 的安全请求。适用于 JS 交付与模块；模板 Hotwire 行为、CSS 和 ERB 分别由对应技能处理，既有控制器重构另有专门技能。",
+      "source": "Write JavaScript in a Rails app the omakase way — importmap-first delivery, optional bundling (esbuild, Vite) when justified, focused Stimulus controllers under app/javascript/controllers, modern ES module hygiene, accessible DOM updates, safe fetching with CSRF, and a clear boundary with Turbo/HTML. DHH / 37signals style. Use when editing importmap, package.json, application.js, Stimulus controllers, shared JS modules, or choosing bundling; not for Hotwire/Turbo *behaviour in templates* (see writing-hotwire), Tailwind/config/global CSS (see writing-css-tailwind), or ERB markup (see writing-views). For rebalancing an existing Stimulus fleet (merging, splitting, spec coverage), see refactoring-stimulus-controllers.",
+      "source_sha256": "8da54a0851ad872349845deeb02e57b3ad92235a0a2295c59de210f04b48d967",
+      "source_path": "skills/writing-javascript/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "493c6424920fe8b303e63d7cac7c31b32f431ff731a6cf1469bafaa102c32d26": {
+      "description_zh": "按 DHH/37signals 约定编写 Rails 后台作业，采用委派模型方法的轻量 job、幂等执行、after_commit 时点及明确重试规则。适用于 ActiveJob、排期、异步处理和队列。",
+      "source": "Write Rails background jobs following DHH/37signals conventions — thin jobs that delegate to model methods, idempotent execution, after_commit timing, and retry discipline. Use when writing ActiveJob subclasses, scheduling background work, handling async processing, or when the user mentions jobs, queues, background processing, perform_later, or ActiveJob.",
+      "source_sha256": "493c6424920fe8b303e63d7cac7c31b32f431ff731a6cf1469bafaa102c32d26",
+      "source_path": "skills/writing-jobs/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5623c4e1c7bf00465164f74ca0d8eace79da7a028f631e1e9c2297303bb6e82c": {
+      "description_zh": "编写 ActionMailer、邮件模板及预览，采用轻量类、Mailer.with 参数化、deliver_later、HTML/文本多格式、主题 I18n 和开发预览。适用于邮件代码、文案或测试；不负责 SMTP 提供方设置和 Action Mailbox 入站邮件。",
+      "source": "Write ActionMailer classes, mailer templates, and previews following DHH/37signals conventions — thin mailers, parameterized Mailer.with, deliver_later, multipart HTML/text, I18n for subjects, and previews for development. Use when creating or changing mailers, mailer views, email copy, or mailer specs; not for SMTP provider setup or Action Mailbox inbound mail.",
+      "source_sha256": "5623c4e1c7bf00465164f74ca0d8eace79da7a028f631e1e9c2297303bb6e82c",
+      "source_path": "skills/writing-mailers/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "952c47130aa46915cc5bc3aa304ac2777b6f101dceebd11d5189ed240290a505": {
+      "description_zh": "编写可逆的 Rails 数据库迁移，用数据库约束保障完整性并安全操作在线表，原说明要求不修改历史迁移。适用于列、索引、约束和模式变更。",
+      "source": "Write Rails database migrations following DHH/37signals conventions — reversible changes, database constraints as the source of integrity, safe operations on live tables, and never editing past migrations. Use when creating or modifying migrations, adding columns or indexes, changing constraints, or when the user mentions migrations, schema changes, or database columns.",
+      "source_sha256": "952c47130aa46915cc5bc3aa304ac2777b6f101dceebd11d5189ed240290a505",
+      "source_path": "skills/writing-migrations/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "654ec8d5ad0e95c2dfb21cd9eaf0f1fbd9e5c0eb24e8dd30e99f622713308c1c": {
+      "description_zh": "按 DHH/37signals 约定编写 Rails 模型，采用丰富领域模型、横向 concern、以记录表示状态、scope、数据库约束及原生 Rails 模式。适用于模型方法、回调、领域逻辑及重构。",
+      "source": "Write Rails models following DHH/37signals conventions — rich domain models, concerns for horizontal behaviour, state-as-records, scopes, database constraints, and vanilla Rails patterns. Use when creating new models, adding model methods, extracting concerns, refactoring model logic, or when the user mentions models, concerns, scopes, callbacks, or domain logic.",
+      "source_sha256": "654ec8d5ad0e95c2dfb21cd9eaf0f1fbd9e5c0eb24e8dd30e99f622713308c1c",
+      "source_path": "skills/writing-models/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8eaa817c0a41da01a027187ba455b4414016bde9126649277dd650e878db9b62": {
+      "description_zh": "按 Rails 和 DHH/37signals 领域语言为文件、类、方法、列、路由及变量命名。覆盖模型、concern、控制器、job、mailer、策略、数据库和测试等层次，适用于新建、重命名和命名评审。",
+      "source": "Name files, classes, methods, columns, routes, and variables following Rails conventions and DHH/37signals domain language. Use when creating new files or classes, renaming anything, reviewing naming decisions, or when the user asks what to call something in a Rails app. Covers every layer: models, concerns, controllers, jobs, mailers, policies, database, routes, tests, and locals.",
+      "source_sha256": "8eaa817c0a41da01a027187ba455b4414016bde9126649277dd650e878db9b62",
+      "source_path": "skills/writing-naming-conventions/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e8514bd7aee51dbe8161c9afe4b840df439d60d81eacf898210a9d6e0a1b1445": {
+      "description_zh": "在编码前为多步骤 Rails 工作编写纵向 REST 切片方案，按 Pitchd 技能与规则设计，交由 reviewer 评审并修订，需修改时再次取得最终认可。已有 primitives 文档时同步能力意图和形态，必要时读取官方或补充指南；后续方案修改也做限定范围评审。",
+      "source": "Write implementation plans for multi-step Rails work before application code. Plans follow vertical REST slices, DHH/37signals conventions, and this plugin''s skills and rules. After drafting: review with pitchd-rails-reviewer and apply that feedback to the plan file; re-run for final sign-off when Pass 1 required edits. Use when turning a spec into tasks, planning a feature, or breaking work into checklisted steps. When the app has a docs/primitives/ tree, planning also creates or amends the feature''s capability doc (intent clauses, shape) via the primitives gate. May use referencing-unofficial-37signals-guide for supplemental Fizzy-derived topic fetches or referencing-rails-guides for authoritative Rails API docs when compass and scoped plugin material are insufficient for best-practice clarity. Also handles post-session revision requests — when the user says something needs changing or isn''t right after the skill has run, treat it as a self-contained plan revision and run a scoped reviewer pass.",
+      "source_sha256": "e8514bd7aee51dbe8161c9afe4b840df439d60d81eacf898210a9d6e0a1b1445",
+      "source_path": "skills/writing-pitchd-rails-plans/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1dbe4a8953d5230cb0c94237649636d87dfe020090aa7c19017fe62687a8f6f4": {
+      "description_zh": "按 Rails 约定编写 Pundit 授权策略，每个模型一项策略，使用普通 Ruby 对象、默认拒绝、限定集合及 authorize/policy_scope 控制器集成。适用于权限检查、用户范围查询和访问控制。",
+      "source": "Write Pundit authorization policies following Rails conventions — one policy per model, plain Ruby objects, deny-by-default, scoped collections, and controller integration via authorize/policy_scope. Use when creating policies, adding authorization, checking permissions, scoping queries by user, or when the user mentions policies, Pundit, authorization, permissions, or access control.",
+      "source_sha256": "1dbe4a8953d5230cb0c94237649636d87dfe020090aa7c19017fe62687a8f6f4",
+      "source_path": "skills/writing-policies/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09b4d8e4c924a9de4d4df8cf98c8199972e92987b61c9471278a9a0e56418276": {
+      "description_zh": "按 DHH/37signals 风格声明 Rails 路由，采用 REST 资源、浅层嵌套和明确路径 helper。适用于 routes.rb、命名空间、成员或集合路由及 API 边界；路由约束负责接线而非认证。",
+      "source": "Declare Rails routes in DHH/37signals style — REST-first resources, shallow nesting, clear path helpers, constraints for wiring not auth, boring routes.rb. Use when editing config/routes.rb, adding resources, namespaces, member/collection routes, API boundaries, or when the user mentions routing, rails routes, paths, or URL design.",
+      "source_sha256": "09b4d8e4c924a9de4d4df8cf98c8199972e92987b61c9471278a9a0e56418276",
+      "source_path": "skills/writing-routes/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5142bd4e76ce9fec970ac070e537eef914420f16938814de538b509f5f1a3945": {
+      "description_zh": "为 Rails 应用行为选择归属位置，按 DHH/37signals 风格使用丰富模型、concern、模型命名空间普通 Ruby 对象、ActiveModel 表单对象及 job，不设置 app/services 层。适用于服务对象、操作或用例结构讨论。",
+      "source": "Where application logic lives in Rails without an app/services layer — DHH/37signals style: rich models, concerns, model-namespaced POROs, ActiveModel form objects, and jobs. Use when deciding where behaviour belongs, or when the user mentions services, service objects, POROs, forms, jobs, operations, interactors, or use cases.",
+      "source_sha256": "5142bd4e76ce9fec970ac070e537eef914420f16938814de538b509f5f1a3945",
+      "source_path": "skills/writing-services/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bd46d33fcc92f34c95aa7fc58385d68919a964fb6591066494eb9dd2ff4fb625": {
+      "description_zh": "采用适配 RSpec/FactoryBot 的 DHH/37signals 测试方法，以系统测试为主干、真实对象优先于 mock、行为测试优先于实现测试。适用于新增覆盖、测试失败、factory、Capybara 和请求测试。",
+      "source": "Write Rails tests following DHH/37signals testing philosophy, adapted for RSpec and FactoryBot — system specs as the backbone, real objects over mocks, behaviour-driven testing over implementation testing. Use when writing specs, adding test coverage, debugging test failures, creating factories, or when the user mentions tests, specs, RSpec, FactoryBot, Capybara, system tests, request specs, or test coverage.",
+      "source_sha256": "bd46d33fcc92f34c95aa7fc58385d68919a964fb6591066494eb9dd2ff4fb625",
+      "source_path": "skills/writing-tests/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd5e43599aefde178ac9b372d24c14f11bb94621b74a80da0c527da90287c5c2": {
+      "description_zh": "编写 HTML 优先的 ERB 视图、严格局部变量 partial、集合渲染、展示 helper、Tailwind 工具类及 content_for 布局。适用于页面、表单和模板；Stimulus/Turbo、I18n、JS 交付及全局 CSS 使用各自对应技能。",
+      "source": "Write Rails views, partials, and helpers following DHH/37signals conventions — ERB templates as HTML-first documents, strict-local partials, collection rendering, helpers for presentation logic, Tailwind utility-first styling, layouts with content_for. Stimulus and Turbo — writing-hotwire skill. User- facing static copy and locales — writing-i18n skill. JS delivery (importmap, bundling) — writing-javascript skill. Tailwind build/config/global CSS — writing-css-tailwind skill. Use when creating new views, extracting partials, writing helpers, building forms, styling with Tailwind in templates, working with layouts, or when the user mentions views, partials, ERB, helpers, Tailwind, Stimulus, Turbo, importmap, JavaScript, I18n, locales, or templates.",
+      "source_sha256": "cd5e43599aefde178ac9b372d24c14f11bb94621b74a80da0c527da90287c5c2",
+      "source_path": "skills/writing-views/SKILL.md",
+      "package_sha256": "6a6f9d89f478d5c058e4abdc401382700e6097b7f9a21760fba67bbb725ce85b",
+      "source_package": "Pitch'd Rails-0.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4ba0d773d579057dc45e0a95667d7b841a5176112151622efa0e6ec203a69033": {
+      "description_zh": "在现有演示稿中替换更新数字，适用于季度数据、业绩、可比公司和重新定基市场数据刷新，保持原有演示结构而不重建整套稿件。",
+      "source": "Updates a presentation with new numbers — quarterly refreshes, earnings updates, comp rolls, rebased market data. Use whenever the user asks to \"update the deck with Q4 numbers\", \"refresh the comps\", \"roll this forward\", \"swap in the new earnings\", \"change all the $485M to $512M\", or any request to swap figures across an existing deck without rebuilding it.",
+      "source_sha256": "4ba0d773d579057dc45e0a95667d7b841a5176112151622efa0e6ec203a69033",
+      "source_path": "skills/deck-refresh/SKILL.md",
+      "package_sha256": "88ac886e615bb8239adc9f49d260e99c07531c12615378867b70def319c532eb",
+      "source_package": "pitch-agent-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7b158bdbcfe15efe3e4c05a10ce7b1504fbfd209cb19068b92b732bbec2af7d5": {
+      "description_zh": "检查投行或客户演示稿的跨页数字一致性、数据与叙事对应、投行语言质量及视觉格式。适用于最终质检、数字核对、跨页对账或发送前确认材料是否就绪。",
+      "source": "Investment banking presentation quality checker. Reviews a pitch deck or client-ready presentation for (1) number consistency across slides, (2) data-narrative alignment, (3) language polish against IB standards, (4) visual and formatting QC. Use whenever the user asks to review, check, QC, proof, or do a final pass on a deck, pitch, or client materials — including requests like \"check my numbers\", \"reconcile figures across slides\", \"is this client-ready\", or \"what am I missing before I send this out\".",
+      "source_sha256": "7b158bdbcfe15efe3e4c05a10ce7b1504fbfd209cb19068b92b732bbec2af7d5",
+      "source_path": "skills/ib-check-deck/SKILL.md",
+      "package_sha256": "88ac886e615bb8239adc9f49d260e99c07531c12615378867b70def319c532eb",
+      "source_package": "pitch-agent-0.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1cb918a98f6e194b630786fbb4b3500247d73a5dfc844255fe793e74986afa20": {
+      "description_zh": "为技术选择、架构和系统设计提供一次性决策格式：决策、选项表、选择、风险及下一步。不持久保存。",
+      "source": "One-shot architecture decision format. Use for technology choices, design decisions, system design questions. Format: Decision / Options table / Choice / Risks / Next. Does not persist.",
+      "source_sha256": "1cb918a98f6e194b630786fbb4b3500247d73a5dfc844255fe793e74986afa20",
+      "source_path": "skills/pith-arch/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab61acd85454be247d268d01427f4ba64e735981ff7dbd6ed410a4aff5a5cc9a": {
+      "description_zh": "根据已暂存改动一次性生成 Conventional Commits 提交消息，主题限制在 50 字符以内。不持久保存。",
+      "source": "One-shot commit message generator. Conventional Commits format, subject ≤50 chars. Use when writing a git commit message for staged changes. Does not persist.",
+      "source_sha256": "ab61acd85454be247d268d01427f4ba64e735981ff7dbd6ed410a4aff5a5cc9a",
+      "source_path": "skills/pith-commit/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2c841aebbdb3e440d5519161b3a09d9eefc59c3ae12add3cba08ee566a206681": {
+      "description_zh": "为错误、异常行为、崩溃或失败提供一次性结构化排障格式，仅包含问题、原因、修复和验证四个字段。不持久保存。",
+      "source": "One-shot structured debug format. Use when diagnosing errors, unexpected behavior, crashes, or failures. Format: Problem / Cause / Fix / Verify — 4 fields, no prose. Does not persist.",
+      "source_sha256": "2c841aebbdb3e440d5519161b3a09d9eefc59c3ae12add3cba08ee566a206681",
+      "source_path": "skills/pith-debug/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5482b291164ab2e67b79d28907dd1e83dbebc6627191c73d2e5db061b800e893": {
+      "description_zh": "扫描当前项目 wiki/ 下的 Markdown 并提取双括号 wikilink，生成 wiki-graph.html，在浏览器打开交互式力导向知识图谱。",
+      "source": "Run the Pith wiki graph generator for the current project. Scans wiki/ for .md files, extracts [[wikilinks]], and opens an interactive force-directed graph in the browser as wiki-graph.html.",
+      "source_sha256": "5482b291164ab2e67b79d28907dd1e83dbebc6627191c73d2e5db061b800e893",
+      "source_path": "skills/pith-graph/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4aac5409228dbfe8f28a01ab0db59731175c70933a78dbf23de899bd46717b95": {
+      "description_zh": "将 Pith 安装至 Claude Code，复制 hook、修改 settings.json、注册 /pith、/budget、/focus 命令，并记录插件根路径供 hook 解析。",
+      "source": "Install Pith into Claude Code. Copies hooks, patches settings.json, registers slash commands (/pith, /budget, /focus), and records the plugin root so hooks can resolve paths.",
+      "source_sha256": "4aac5409228dbfe8f28a01ab0db59731175c70933a78dbf23de899bd46717b95",
+      "source_path": "skills/pith-install/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8f709ac5bbeed348950e250b9e4a5582f1c1c2aad9da4b1db5e72a5667f83a82": {
+      "description_zh": "为功能、任务拆分、迭代或实现方案提供一次性计划格式：目标、步骤、风险及完成条件。不持久保存。",
+      "source": "One-shot planning format. Use for feature planning, task breakdown, sprint planning, implementation plans. Format: Goal / Steps / Risks / Done-when. Does not persist.",
+      "source_sha256": "8f709ac5bbeed348950e250b9e4a5582f1c1c2aad9da4b1db5e72a5667f83a82",
+      "source_path": "skills/pith-plan/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1915d85661b68e82bce326608ef514321c2cdd1646e3e3994af0fb7d77ef58a": {
+      "description_zh": "一次性结构化评审 PR、差异、文件或函数，每个问题一行，不附汇总。不持久保存。",
+      "source": "One-shot structured code review. Use when reviewing a PR, diff, file, or function. Format: one line per issue. No summaries. Does not persist.",
+      "source_sha256": "e1915d85661b68e82bce326608ef514321c2cdd1646e3e3994af0fb7d77ef58a",
+      "source_path": "skills/pith-review/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9aba7c09ed6a1e9d9a30a7f5149b2b909b1a50acbefefef449c8db3ff3efbf9a": {
+      "description_zh": "在新项目首次会话中介绍 Pith、提供 wiki 设置并指导初始化；原说明由 session-start.js 在未发现此前设置时注入入门对话。",
+      "source": "Pith onboarding conversation. Runs on first session in a new project. Introduces Pith, offers wiki setup, guides through initialization. Injected by session-start.js when no prior setup detected.",
+      "source_sha256": "9aba7c09ed6a1e9d9a30a7f5149b2b909b1a50acbefefef449c8db3ff3efbf9a",
+      "source_path": "skills/pith-setup/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e82b06de45f5c2c7130a59d7ea611bfedec6904407208bf53fd6e7be8b33b87": {
+      "description_zh": "在用户真实项目中逐步体验 Pith 各项功能，提供可恢复、可跳过的交互导览，状态由 tour.py 跟踪。",
+      "source": "Interactive guided tour of Pith. Walks the user through each feature experientially — one step at a time, hands-on, using their actual project. Resumable. Skippable. State tracked via tour.py.",
+      "source_sha256": "7e82b06de45f5c2c7130a59d7ea611bfedec6904407208bf53fd6e7be8b33b87",
+      "source_path": "skills/pith-tour/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d42f55725ca0c235ad02a49b7b1cbf795490fb56fff71b170481b7f508b6351c": {
+      "description_zh": "从 Claude Code 卸载 Pith，删除 hook 和命令并清理 settings.json 的相关条目。默认保留 ~/.pith/state.json 的 token 历史，仅用户明确要求清除全部数据时移除。",
+      "source": "Uninstall Pith from Claude Code. Removes hooks, slash commands, and cleans pith entries from settings.json. Preserves ~/.pith/state.json (token history) unless user explicitly asks to wipe all data.",
+      "source_sha256": "d42f55725ca0c235ad02a49b7b1cbf795490fb56fff71b170481b7f508b6351c",
+      "source_path": "skills/pith-uninstall/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "781d18f187bb929cb6e3cfa01b01cf3a5288cd698b00f8474343a67e43ea81b3": {
+      "description_zh": "在 /pith wiki 模式中维护持久知识库，规定页面格式、摄取、查询流程及 lint 检查。",
+      "source": "Wiki mode — persistent knowledge base maintenance. Active during /pith wiki mode. Defines page formats, ingest workflow, query workflow, and lint checks.",
+      "source_sha256": "781d18f187bb929cb6e3cfa01b01cf3a5288cd698b00f8474343a67e43ea81b3",
+      "source_path": "skills/pith-wiki/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4148e89e0387ee84823bb1bc353258f40b40bd3303cf588a767512876f435168": {
+      "description_zh": "按 precise、lean 或 ultra 三档压缩输出，分别减少空话、精简文字或更多使用缩写与结构。通过 /pith 系列命令启用、选择级别或关闭。",
+      "source": "Adaptive output compression. Three levels: precise (no filler), lean (default, drop articles/fragments), ultra (maximum — abbreviate, structure, arrows). Activate: /pith | /pith precise | /pith lean | /pith ultra | /pith off",
+      "source_sha256": "4148e89e0387ee84823bb1bc353258f40b40bd3303cf588a767512876f435168",
+      "source_path": "skills/pith/SKILL.md",
+      "package_sha256": "060f19465047928e5432d0b25fb663b07aa92c78ee00f557dd8584d86d2545d8",
+      "source_package": "Pith-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d970a4668ece911df58eb57a73ae9d2f42bfc4ff6f0e26782ae67492a283a061": {
+      "description_zh": "用 Pixeltable 构建多模态 AI 应用，以 app.py 声明 TableModel 和 FastAPIRouter，通过 pxt schema/service update 建表和启动 HTTP，再插入数据或 POST 验证。适用于 RAG、图像视频音频文档处理和 API，采用计算列；不用于通用 Python 或直接 PostgreSQL 管理。",
+      "source": "Build multimodal AI apps with Pixeltable. One application file (app.py) declares TableModel tables and FastAPIRouter routes. Create tables with pxt schema update. Start HTTP with pxt service update. Insert a row or POST to try the app. Use computed columns instead of LangChain, pandas-as-store, or a separate vector DB. Use when building RAG, processing images/video/audio/documents, or serving an API. Do NOT use for general Python or direct PostgreSQL administration.",
+      "source_sha256": "d970a4668ece911df58eb57a73ae9d2f42bfc4ff6f0e26782ae67492a283a061",
+      "source_path": "skills/pixeltable-skill/SKILL.md",
+      "package_sha256": "3c35776e3ad5b69a7be91a1d94aba0a2366aed7215b93fdd3cb61e2e48676b03",
+      "source_package": "Pixeltable-2.8.3-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a86cf7ae489259c80e39eb1f71d8d4eefad6f5ac50f1eda7263290f8843a0cd9": {
+      "description_zh": "排查 pixinsight MCP 连接器失败、拒绝、控制台错误、异常结果及暂停或中止状态，读取调用日志、处理 Pause/Abort 协议及已知工具问题。适用于连接器卡住或 PixInsight 无法启动，并明确何时停止向用户确认。",
+      "source": "Use when a `pixinsight` MCP tool (pixinsight-connector) fails, refuses, reports a PixInsight console error, returns something that looks wrong, or PixInsight was paused or aborted. Covers reading the connector's call log, the Pause/Abort protocol, known tool pitfalls and their workarounds, and when to stop and ask the user. Also use for \"why did this PixInsight call fail\", \"the connector is stuck\", \"PixInsight won't start\".",
+      "source_sha256": "a86cf7ae489259c80e39eb1f71d8d4eefad6f5ac50f1eda7263290f8843a0cd9",
+      "source_path": "skills/pixinsight-connector-troubleshooting/SKILL.md",
+      "package_sha256": "9d3eaebe11de9592b95eb8fac8a17c8f64968cdff6b77430cb412768e4678429",
+      "source_package": "pixinsight-connector-skills-0.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2fc2a39d43864836f78ac19143c899cf7560f24e25893866bd7df69794793a28": {
+      "description_zh": "通过 PixInsight MCP 对 XISF/FITS 的单色 LRGB 主图执行基础线性流程，含边缘裁切、校正、解算、光度及梯度校正、RGB 合成、锐化、降噪、线性亮度合并和背景调平。输出含星、嵌入 auto-STF 的 32 位线性图，不做颜色调整或星体分离；须先完成环境预检和目标接入。",
+      "source": "A basic starter flow for integrated mono LRGB masters (L, R, G, B in XISF or FITS) through the `pixinsight` MCP server (pixinsight-connector), linear all the way: border crop, BlurXTerminator correction, plate solving, SPFC, MultiscaleGradientCorrection, RGB combine, SPCC, BlurXTerminator sharpening, NoiseXTerminator, a linear L merge, sky leveling, and a 32-bit linear final with the standard auto-STF embedded, stars included. No colour adjustment, no star separation. Use for \"process this LRGB data\", \"basic LRGB\", \"linear LRGB with PixInsight\". Needs pixinsight-preflight and pixinsight-target-intake done first.",
+      "source_sha256": "2fc2a39d43864836f78ac19143c899cf7560f24e25893866bd7df69794793a28",
+      "source_path": "skills/pixinsight-lrgb-linear-basic/SKILL.md",
+      "package_sha256": "9d3eaebe11de9592b95eb8fac8a17c8f64968cdff6b77430cb412768e4678429",
+      "source_package": "pixinsight-connector-skills-0.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6339f1e5df11fd1035e7f8db4bcd354cfe2c52504fcf09c01501f42ec2301ae1": {
+      "description_zh": "在 PixInsight MCP 处理前核验连接器与所控实例、Gaia 和 MARS 数据库可读性，以及 BlurXTerminator、NoiseXTerminator、StarXTerminator 和 AI 模型版本。写入 agentic/preflight.json 供处理技能使用，适用于缺失或过时预检。",
+      "source": "Use before any PixInsight processing session run through the `pixinsight` MCP server (pixinsight-connector), or when a processing skill says preflight is missing or stale. Checks that the connector is connected and which PixInsight it drives, which Gaia databases are installed and readable, whether the MARS database files for MultiscaleGradientCorrection are readable, and which BlurXTerminator, NoiseXTerminator and StarXTerminator versions and AI model versions are installed. Writes agentic/preflight.json, which processing skills read. Also use for \"check my PixInsight setup\", \"is Gaia installed\", \"which BXT model do I have\".",
+      "source_sha256": "6339f1e5df11fd1035e7f8db4bcd354cfe2c52504fcf09c01501f42ec2301ae1",
+      "source_path": "skills/pixinsight-preflight/SKILL.md",
+      "package_sha256": "9d3eaebe11de9592b95eb8fac8a17c8f64968cdff6b77430cb412768e4678429",
+      "source_package": "pixinsight-connector-skills-0.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "39a53af4a2d746c6df4c35e1778f7b07e84a7fe3831637e5175ec127722ae09c": {
+      "description_zh": "处理天文摄影主图前扫描 XISF/FITS，映射通道并从头信息确定相机 QE、滤镜曲线、位置和像素尺度，检查目标位置的 MARS 覆盖。缺失信息集中一次询问而不猜测，写入 agentic/work/target-info.md。",
+      "source": "Use before processing a folder of integrated astrophotography masters (XISF or FITS) through the `pixinsight` MCP server, or when a processing skill says target info is missing. Scans the masters, maps each file to a channel, and resolves every input the processing needs from the headers: camera QE curve, filter curves, position, pixel scale. Checks MARS coverage at the target''s position. Whatever the headers do not say is asked in ONE consolidated question, never guessed. Writes agentic/work/target-info.md, which processing skills read. Also use for \"set up this target\", \"what do you need to know about my data\".",
+      "source_sha256": "39a53af4a2d746c6df4c35e1778f7b07e84a7fe3831637e5175ec127722ae09c",
+      "source_path": "skills/pixinsight-target-intake/SKILL.md",
+      "package_sha256": "9d3eaebe11de9592b95eb8fac8a17c8f64968cdff6b77430cb412768e4678429",
+      "source_package": "pixinsight-connector-skills-0.1.4-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05e363229ace4f73b513f9c58d643e59414762bd452c00e6955d6c3ee44be064": {
+      "description_zh": "设计新项目架构、评审已有代码架构或更新架构文档。适用于技术栈、基础设施选择和扩展决策。",
+      "source": "Use when designing architecture for a new project, reviewing architecture of an existing codebase, or updating an architecture document. Triggers on questions about tech stack, infrastructure choices, scaling decisions, or when user mentions \"plan architecture\", \"review architecture\", \"update architecture\", \"what stack should I use\".",
+      "source_sha256": "05e363229ace4f73b513f9c58d643e59414762bd452c00e6955d6c3ee44be064",
+      "source_path": "skills/planfirst/SKILL.md",
+      "package_sha256": "d5816415d43ab0cbc4927903601ea73ab890f021955096403378fee9479e44a2",
+      "source_package": "Plan First-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d897b017a71a51f2872cbb38ac9e40a6d151048d3148be96e4534d11f9e5d875": {
+      "description_zh": "从产品、工程和设计负责人三个视角评审实现方案、设计文档、架构建议或阶段方案，识别阻塞、反模式、冲突和回归。",
+      "source": "Multi-perspective plan review with VP Product, VP Engineering, and VP Design. Use when reviewing implementation plans, design docs, architecture proposals, or wave plans for blockers, anti-patterns, conflicts, and regressions.",
+      "source_sha256": "d897b017a71a51f2872cbb38ac9e40a6d151048d3148be96e4534d11f9e5d875",
+      "source_path": "SKILL.md",
+      "package_sha256": "9d609bfab11b359ddb90e57ae87554edef8c7b0dfae1a4f370d050f92aa2f705",
+      "source_package": "plan-review-skill-2.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a43e65d9fb596c502b377a20ba42be9c64e16e18b91073e6d3d0e2b856a17e80": {
+      "description_zh": "审计指定期间的 Planable 内容日历，查看已排期、缺失、未设置日期及可能发布异常的内容。适用于周月概览、客户日历检查和排期空缺分析。",
+      "source": "Audit a Planable workspace's content calendar for a given period — surface what's scheduled, what's missing, what has no date, and what might have publishing issues. Use this skill whenever the user asks about upcoming content, wants to review the calendar, says things like \"what's scheduled this week\", \"check the calendar for [client]\", \"what's going out next week\", \"any gaps in the schedule\", \"content audit\", \"what do we have planned\", or wants a weekly/monthly content overview for a workspace. Always activate for calendar review and scheduling gap analysis in Planable.",
+      "source_sha256": "a43e65d9fb596c502b377a20ba42be9c64e16e18b91073e6d3d0e2b856a17e80",
+      "source_path": "skills/content-calendar-audit/SKILL.md",
+      "package_sha256": "9ad56f565a56de0aa8b976edf1097822f5cc346c4d967d68e9faed2a373250e2",
+      "source_package": "Planable SMM-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81781fda0a727169da83853490d835ca053c3ba3eb0c9b3fa0e7bdde3c0609d3": {
+      "description_zh": "从互动量、曝光量和互动率三种角度分析表现最佳的 Planable 帖子，识别内容模式并提出下一轮可验证假设。适用于改进未来创意方向及选题，不仅汇报数字。",
+      "source": "Analyze top-performing posts across three performance lenses — engagement, impressions, and engagement rate — to identify content patterns and give the user specific hypotheses to test in their next posts. Use this skill whenever the user asks things like \"what's working in my content\", \"what should I post more of\", \"why are some posts doing better\", \"what patterns do you see\", \"give me content ideas based on my best posts\", \"what content works best for [client]\", \"analyze my top posts\", or \"what should I try next month\". Also activate when the user wants to understand performance beyond just numbers — when they're asking for creative direction, not just a report. Always use this skill instead of a generic performance summary when the user's goal is to improve future content.",
+      "source_sha256": "81781fda0a727169da83853490d835ca053c3ba3eb0c9b3fa0e7bdde3c0609d3",
+      "source_path": "skills/content-pattern-intelligence/SKILL.md",
+      "package_sha256": "9ad56f565a56de0aa8b976edf1097822f5cc346c4d967d68e9faed2a373250e2",
+      "source_package": "Planable SMM-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c201b69fe8dc8d4706feb4e2ffaa42ca78d3a1dff45672a519b94b3d8b61d2d": {
+      "description_zh": "在单一视图中比较多个 Planable 客户或品牌工作区的表现，制作代理机构或跨客户指标概览。单工作区报告使用 monthly-performance-summary。",
+      "source": "Pull and compare performance metrics across multiple Planable workspaces (clients or brands) in a single view. Use this skill whenever the user wants to compare clients, see how all accounts are performing, get an agency-wide metrics overview, or says things like \"how are all my clients doing\", \"compare performance across workspaces\", \"give me a cross-client report\", \"agency overview\", \"which client is performing best\", or \"metrics across all accounts\". Always activate for multi-workspace analytics queries in Planable. For single-workspace reports, use the monthly-performance-summary skill instead.",
+      "source_sha256": "5c201b69fe8dc8d4706feb4e2ffaa42ca78d3a1dff45672a519b94b3d8b61d2d",
+      "source_path": "skills/cross-client-metrics-overview/SKILL.md",
+      "package_sha256": "9ad56f565a56de0aa8b976edf1097822f5cc346c4d967d68e9faed2a373250e2",
+      "source_package": "Planable SMM-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c602c334572effa35a5c45a08b1c84c67929ca8912b6bc3b52ecf8531136a18": {
+      "description_zh": "批量生成社交帖子并以草稿形式写入 Planable，适用于为客户准备一周内容、按主题创建多个帖子或填充工作区日历。",
+      "source": "Draft and publish a batch of social media posts directly into Planable as drafts. Use this skill whenever the user wants to generate multiple posts for a client, create content for a workspace, write a week's worth of posts, batch-create drafts, or says things like \"draft posts for [client]\", \"create 5 posts about [topic]\", \"fill the calendar for [client]\", or \"write posts and add them to Planable\". Always activate this skill when post creation + Planable is involved.",
+      "source_sha256": "5c602c334572effa35a5c45a08b1c84c67929ca8912b6bc3b52ecf8531136a18",
+      "source_path": "skills/draft-post-batch/SKILL.md",
+      "package_sha256": "9ad56f565a56de0aa8b976edf1097822f5cc346c4d967d68e9faed2a373250e2",
+      "source_package": "Planable SMM-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f9219e67819eb1262e947b6ed2a87eb3f6565fedd0053ac6d84a8bcbd96daea": {
+      "description_zh": "依据 Planable 分析或用户上传的 CSV，生成清晰、可交客户的社交媒体表现摘要。适用于月报、表现回顾和结果概览，使用文件时无需 Planable 账户。",
+      "source": "Generate a clear, client-ready social media performance summary from Planable analytics or a user-uploaded CSV export. Use this skill whenever the user asks for a monthly report, performance recap, analytics summary, results overview, or says things like \"summarize last month's performance\", \"give me a report for [client]\", \"how did we do this month\", \"pull the analytics for [workspace]\", or uploads a CSV with social media data and asks for a summary. Works with or without a Planable account — activate for any analytics summary request, whether the source is the Planable connector or a file upload.",
+      "source_sha256": "5f9219e67819eb1262e947b6ed2a87eb3f6565fedd0053ac6d84a8bcbd96daea",
+      "source_path": "skills/monthly-performance-summary/SKILL.md",
+      "package_sha256": "9ad56f565a56de0aa8b976edf1097822f5cc346c4d967d68e9faed2a373250e2",
+      "source_package": "Planable SMM-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "90f6ea7647df756ec7c03d2d13cfdcdc368bf53ca181af396355a561a4451798": {
+      "description_zh": "汇总一个或多个 Planable 工作区中待审批帖子，适用于审批队列、待签核、卡住内容及跨客户每日或每周状态检查。",
+      "source": "Fetch and summarize all posts pending approval across one or more Planable workspaces. Use this skill whenever the user asks about approvals, wants to know what's waiting for review, says things like \"what needs my approval\", \"show me pending posts\", \"what's waiting for sign-off\", \"approval queue\", \"morning check-in\", or \"what posts are stuck\". Also activate when the user asks for a daily or weekly content status across clients. Always use this skill for approval-related queries that touch Planable.",
+      "source_sha256": "90f6ea7647df756ec7c03d2d13cfdcdc368bf53ca181af396355a561a4451798",
+      "source_path": "skills/pending-approvals-roundup/SKILL.md",
+      "package_sha256": "9ad56f565a56de0aa8b976edf1097822f5cc346c4d967d68e9faed2a373250e2",
+      "source_package": "Planable SMM-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cf0596992cdec675664d622d56a88e2abbd00a7b2bb35349df6a87e3908857eb": {
+      "description_zh": "规划和评审 MySQL/InnoDB 表结构、索引、查询、事务及运维。适用于建表改表、慢查询或锁问题、迁移、复制和连接故障。",
+      "source": "Plan and review MySQL/InnoDB schema, indexing, query tuning, transactions, and operations. Use when creating or modifying MySQL tables, indexes, or queries; diagnosing slow/locking behavior; planning migrations; or troubleshooting replication and connection issues. Load when using a MySQL database.",
+      "source_sha256": "cf0596992cdec675664d622d56a88e2abbd00a7b2bb35349df6a87e3908857eb",
+      "source_path": "database-skills/skills/mysql/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "18d91228323d32062023ad1ec7ea8a9416ea3311bd8ed9309ab22e01d5a8b449": {
+      "description_zh": "介绍 PlanetScale 的分片 PostgreSQL 产品 Neki，适用于 Neki 任务及 PostgreSQL 扩展或分片问题。",
+      "source": "Overview and information about Neki, the sharded Postgres product by PlanetScale. Load when working with Neki-related tasks and the need to scale or shard postgres. Load when facing Postgres scaling or sharding issues.",
+      "source_sha256": "18d91228323d32062023ad1ec7ea8a9416ea3311bd8ed9309ab22e01d5a8b449",
+      "source_path": "database-skills/skills/neki/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7a63897113c7646e322785cd0195c9d5448c5821434e22651c4a85cdec941991": {
+      "description_zh": "提供 PostgreSQL 实践、查询优化、连接排障及性能改进，适用于 Postgres 数据库工作。",
+      "source": "PostgreSQL best practices, query optimization, connection troubleshooting, and performance improvement. Load when working with Postgres databases.",
+      "source_sha256": "7a63897113c7646e322785cd0195c9d5448c5821434e22651c4a85cdec941991",
+      "source_path": "database-skills/skills/postgres/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "01ff52e115037f6b49985259e6e4015dd4a10ddedae17486c22f6b138aac94c3": {
+      "description_zh": "提供 PlanetScale Vitess 数据库的实践、查询优化和连接排障，适用于分片、VSchema、keyspace 管理及 MySQL 扩展问题。",
+      "source": "Vitess best practices, query optimization, and connection troubleshooting for PlanetScale Vitess databases. Load when working with Vitess databases, sharding, VSchema configuration, keyspace management, or MySQL scaling issues.",
+      "source_sha256": "01ff52e115037f6b49985259e6e4015dd4a10ddedae17486c22f6b138aac94c3",
+      "source_path": "database-skills/skills/vitess/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b5462943ad946c54a66426ed48f2db2cc18d459c6d88f706e14dd1d3deefee24": {
+      "description_zh": "编排完整 PlanetScale 安全实践评估，覆盖资产盘点、引擎、Insights、Traffic Control、webhook、模式建议、代码观测及智能体操作模式，生成统一建议报告。原说明要求任何变更都须明确批准。",
+      "source": "Master skill that runs the full PlanetScale safe best-practices assessment — inventory, engine review, Insights, Traffic Control, webhooks, schema recommendations, codebase instrumentation, and agent operating model — then produces a unified recommendations report. Never applies changes without explicit approval. Use when the user asks to run the full assessment, all skills, or PlanetScale best-practices review.",
+      "source_sha256": "b5462943ad946c54a66426ed48f2db2cc18d459c6d88f706e14dd1d3deefee24",
+      "source_path": "planetscale-skills/00-safe-orchestrator/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "52fcda5e73838160170013b30a50bb25186feb78188a72705f5bd68fa0a50643": {
+      "description_zh": "只读收集 PlanetScale 组织、数据库、分支、webhook、备份、角色、Insights、建议及流量配置的证据。",
+      "source": "Collect read-only evidence about PlanetScale org, database, branches, webhooks, backups, roles, Insights, recommendations, and traffic configuration.",
+      "source_sha256": "52fcda5e73838160170013b30a50bb25186feb78188a72705f5bd68fa0a50643",
+      "source_path": "planetscale-skills/01-readonly-inventory/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9bf34b32daec95d869a0614eff208d1b7485f61f904db40cf73bb2154c07d88e": {
+      "description_zh": "评审 PlanetScale Vitess 的迁移、部署请求、模式建议、Insights、webhook 及操作安全。",
+      "source": "Review a PlanetScale Vitess database for safe migrations, deploy requests, schema recommendations, Insights, webhooks, and operational safety.",
+      "source_sha256": "9bf34b32daec95d869a0614eff208d1b7485f61f904db40cf73bb2154c07d88e",
+      "source_path": "planetscale-skills/02-vitess-safety-review/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d6b1792bc5c45e3361eb42eff410bb959f638d5639609a5ea8af3c3f3d38de9": {
+      "description_zh": "评审 PlanetScale Postgres 的 Traffic Control、查询标签、角色、pg_strict、备份/PITR、私有连接、webhook、分支和智能体安全操作。",
+      "source": "Review PlanetScale Postgres for Traffic Control, query tags, roles, pg_strict, backups/PITR, private connectivity, webhooks, branches, and safe agent operation.",
+      "source_sha256": "0d6b1792bc5c45e3361eb42eff410bb959f638d5639609a5ea8af3c3f3d38de9",
+      "source_path": "planetscale-skills/03-postgres-safety-review/SKILL.md",
+      "package_sha256": "a51ba290a70232d2360e934f7167207a937593bade3f8034dbc1c67717818b35",
+      "source_package": "PlanetScale-1.1.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
