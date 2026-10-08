@@ -61009,6 +61009,1086 @@
       "package_sha256": "3ffec01ee23b5016baf17e5918fbe87bdd0bb8fe5298d73cc1c9b231d1ea0de7",
       "source_package": "Revelara-0.1.0-v1.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d8da673abffbcb8c0bb92f2b93f6077f426eda98e0ca7c44b78a4f3e734ebf40": {
+      "description_zh": "通过 deepKPI 语义搜索为美国上市公司寻找经营层面的同业与可比公司，利用 SEC 数据建立 KPI 特征、优先搜索同一行业、对齐指标并分析差距和分部子基准；输出简短报告，可选 HTML 或 Excel，不提供估值倍数比较，并排除无明确分部对应关系的不相关行业。",
+      "source": "Operational peer / comp discovery for US public companies via deepKPI semantic search — not valuation multiples. Build KPI fingerprint from SEC data; company_summary_search (same-vertical first); align KPIs; diff gaps → segment sub-benchmarks. Outputs: tight chat 1-pager, optional Revelata HTML, optional Excel (.xlsx). Use when comparing to peers, finding comps or most-similar companies, benchmarking, comp sets, valuation peers, thematic \"what's like X?\", or segment pure-plays. Exclude unrelated verticals (e.g., gym vs car wash) except clear segment-to-segment, same customer + same need.",
+      "source_sha256": "d8da673abffbcb8c0bb92f2b93f6077f426eda98e0ca7c44b78a4f3e734ebf40",
+      "source_path": "skills/benchmark/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "85bf18cfba47e7783b43e210c7349462984d3dda7118c936cf0de5bdf0b4fadc": {
+      "description_zh": "使用 deepKPI 公司摘要和分部接口回答公司业务、报告分部、地域及经营结构问题；按业务主题寻找公司时先搜索摘要，再读取需要展开的完整内容；数值 KPI 时间序列使用 KPI 技能。",
+      "source": "Answer \"what does this company do?\" and segment / geography questions using deepKPI: get_company_summary (narrative summary) and get_company_segments (segment & operating structure). For discovery — \"which companies do X\", \"who operates in Y\" — use company_summary_search across summaries, then pull full summaries for names that need detail. NOT for numeric KPI time series — use the kpi skill for that. Triggers: what does X do, describe the business, segments, geographies, reportable segments, companies that make, firms in industry, thematic lists.",
+      "source_sha256": "85bf18cfba47e7783b43e210c7349462984d3dda7118c936cf0de5bdf0b4fadc",
+      "source_path": "skills/company-summary/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "869daa21dba9e395f7786f8d769782cbd6d6794b4bc28adaba31c71e0cf6fea6": {
+      "description_zh": "从 Revelata deepKPI 获取美国上市公司 10-K、10-Q、8-K 的 Markdown 全文或连续原文摘录，包括管理层讨论、风险、附注与评论；原说明要求先免费列出文件，再以 10 credits 获取正文，之后才考虑网页搜索。引用保持逐字原文，结构化指标改用 KPI 技能。",
+      "source": "Retrieves SEC filing markdown from Revelata deepKPI for US public companies: full filing text in chat (10-K/10-Q/8-K as markdown) or verbatim excerpts — MD&A, risk factors, footnotes, management commentary, quotes. Use when the user wants the filing document to work with, \"give me the 10-K\", \"what did they say\", exact wording, or sections as markdown — NOT structured KPI time series (use the kpi skill for that). MUST call list_sec_filing_markdowns (free) then get_sec_filing_markdown (10 credits) before any web/SEC.gov search. For excerpt answers, lead with blockquoted contiguous text; do not paraphrase as quotes. Triggers: \"full filing\", \"filing markdown\", \"quote the filing\", \"MD&A\", \"risk factors\", \"show me the 10-K\", \"verbatim\", \"management said\".",
+      "source_sha256": "869daa21dba9e395f7786f8d769782cbd6d6794b4bc28adaba31c71e0cf6fea6",
+      "source_path": "skills/filing/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8203f2babbeee84f5bd4d4934ccc81b4536fd50f478c4a60af233d369977f7ec": {
+      "description_zh": "当用户尚无具体公司或投资论点时，通过简短访谈将模糊研究兴趣、观察到的趋势或投资想法转化为一至两家公司的实际经营数据研究；已有明确公司或指标需求时转用 KPI 技能。",
+      "source": "Idea-generation onramp for users who don't know what to look at yet. Turns vague prompts like \"what should I invest in?\", \"help me come up with new ideas\", \"what interesting companies are out there?\", \"what stock should I buy\", \"any good ideas?\", \"what's interesting right now?\", \"help me find something to research\", or \"I'm bored, what should I look at\" into a short rapid-fire interview, then pulls real operating data on 1-2 names. Use whenever a user shows up without a specific company or thesis. Also trigger when users describe a vibe or trend they've noticed (\"everyone's ordering delivery now\", \"my kids only watch YouTube\", \"dollar stores are everywhere\") and want to know which public companies that maps to. Do NOT trigger when the user already has a specific company or KPI in mind — use the kpi skill for that instead.",
+      "source_sha256": "8203f2babbeee84f5bd4d4934ccc81b4536fd50f478c4a60af233d369977f7ec",
+      "source_path": "skills/ideas/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c385b4cbed36e8351f588c72c443db2e06decf8218e1ae803366fb1c4120a2e2": {
+      "description_zh": "利用可获取数量之间的代数关系计算未直接披露的财务或经营指标，如第四季度、分部余量、ASP、ARPU、单店收入、抽成率、隐含使用寿命和地域占比；先通过 KPI 技能获取输入，派生结果继承来源追溯，并按公共样式规则导出工作簿。",
+      "source": "Computes a financial or operational metric that isn't directly reported, using the algebraic relationship between available quantities. Use whenever a needed data point is absent from deepKPI but can be computed — Q4 values, segment remainders, per-unit economics (ASP, ARPU, AUV, revenue per store), take rates, implied useful life, penetration rates, geographic mix percentages. Trigger for \"back into\", \"derive\", \"implied\", \"impute\", \"calculate from\", \"what's the Q4\", or any situation where the needed number isn't in the data but its ingredients are. Always pull inputs via the kpi skill; derived values inherit provenance from their deepKPI-sourced components. For `.xlsx`/CSV exports, follow ../_common/revelata-excel-styling-rules.md (plus the xlsx skill).",
+      "source_sha256": "c385b4cbed36e8351f588c72c443db2e06decf8218e1ae803366fb1c4120a2e2",
+      "source_path": "skills/implied-metric/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2608d864314b62eb6f1f4ae0f1581e29ae23f72861e2eeab7186402b144f3570": {
+      "description_zh": "从 Revelata deepKPI 获取美国上市公司 SEC 披露中的历史财务与经营时间序列，包括分部收入、用户、门店、同店销售、ASP、ARPU、配送量及三张报表；用于分析或预测前取数，原文引用和业务摘要分别转用对应技能，并支持规范化 Excel 导出。",
+      "source": "Retrieves financial and operational KPIs for a US public company from Revelata's deepKPI database. Use for historical metrics from SEC filings — revenue by segment, unit-level KPIs (paying users, store counts, same-store sales, ASP, ARPU, deliveries), income statement, balance sheet, or cash flow data. Triggers include \"pull data for\", \"get historicals for\", \"find the KPI\", \"what does deepKPI have on\", naked KPI names (user has search intent), or modeling tasks that need  structured time series. For verbatim filing text, MD&A quotes, full filing markdown,  or \"what did they say\", use the filing skill. For what a company does,  segment/geography breakdowns, or thematic \"who does X?\" lists, use the  company-summary skill instead. Always use before analyzing or projecting on KPIs. After in-chat KPI tables, end with a bold Excel (.xlsx) offer unless the user asked for a file or declined. For .xlsx output, follow ../_common/revelata-excel-styling-rules.md.",
+      "source_sha256": "2608d864314b62eb6f1f4ae0f1581e29ae23f72861e2eeab7186402b144f3570",
+      "source_path": "skills/kpi/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d19fd70e20cf68ebd5a257299bff09131edd9f89dbd383f9dedba083bbf8ea09": {
+      "description_zh": "对美国上市公司的卖方分析报告或投资论点进行压力测试，提取关键论据并用 deepKPI 的细粒度 SEC 数据建立支持与反对证据；生成带图表、分析师与 SEC 来源区分、可点击原文溯源的 Revelata 深色交互 HTML 报告。",
+      "source": "Pressure-test any analyst report on a US public company. Upload a PDF of a sell-side report and say \"Pressure test this\" — the skill extracts the analyst's key arguments, pulls granular SEC filing data via deepKPI to build supporting and counter-evidence for each claim, then produces an interactive HTML report with Revelata dark branding, Chart.js visualizations (blue palette), source attribution (amber = analyst, cyan = SEC), and clickable provenance hyperlinks to the exact filing passages. Use whenever the user mentions \"pressure test\", \"pressure-test\", \"critically analyze\", \"triangulate\", \"fact-check\", or \"challenge\" in the context of an analyst report, research note, or investment thesis. Also triggers when the user uploads a PDF that looks like a sell-side report and asks for analysis, counterpoints, or a second opinion on it.",
+      "source_sha256": "d19fd70e20cf68ebd5a257299bff09131edd9f89dbd383f9dedba083bbf8ea09",
+      "source_path": "skills/pressure-test/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3b20754ea011969a1de74308e00039cf85ff4222a0366d1845af35db619ffd87": {
+      "description_zh": "编排 Revelata deepKPI 的多步骤美国上市公司研究，结合指标、申报原文、分部、同业、季节性、派生数值或报告压力测试；单一需求路由到专用技能，支持历史数据、逐字摘录及 Excel 输出。",
+      "source": "Broad orchestrator for Revelata deepKPI research on US public companies — use for complex multi-step queries that cross multiple workflows (KPIs + filing text + segments, pressure-test plus follow-up data pulls, peer benchmarks plus seasonality, etc.). Routes to narrow skills (kpi, company-summary, filing, seasonality, implied-metric, pressure-test, benchmark, ideas) when a single workflow fits. Pulls SEC metrics (10-K/10-Q/8-K): segments, unit KPIs (stores, comps, ARPU, users), statements, cash flow; filing markdown and verbatim quotes; implied Q4/per-unit, seasonality, Excel. For \"pull data\", historicals, \"find the KPI\", seasonality, .xlsx, filing excerpts, pressure-test analyst PDFs, peer benchmarks, idea generation, or company summaries across multiple needs.",
+      "source_sha256": "3b20754ea011969a1de74308e00039cf85ff4222a0366d1845af35db619ffd87",
+      "source_path": "skills/revelata/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b6dcdfaf62d1d3b4db15e8abc2e8381c3f81ffc016fe0343605fc6050d4df955": {
+      "description_zh": "先通过 KPI 技能获取历史实际值，计算季度季节性比例并据此把年度预测拆为季度估计；适用于年度预测拆分、进行中的财年预测及季节性分析，工作簿导出遵循公共样式规则。",
+      "source": "Computes seasonal quarterly ratios from historical actuals and applies them to split annual projections into quarterly estimates. Trigger for: quarterly breakdown of annual forecasts, in-progress fiscal year projections, any request involving quarterly splits or seasonal patterns. Always retrieve underlying data via the kpi skill first. For `.xlsx`/CSV workbook exports, follow ../_common/revelata-excel-styling-rules.md (plus the xlsx skill).",
+      "source_sha256": "b6dcdfaf62d1d3b4db15e8abc2e8381c3f81ffc016fe0343605fc6050d4df955",
+      "source_path": "skills/seasonality/SKILL.md",
+      "package_sha256": "31f018be6816a7554e1e0c8c20916e3c9fb1d2b88202d78b5e6b715cc39d5314",
+      "source_package": "revelata-1.0.16-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5c11abdd4da6d9a107aa96e850b3044fd7055477669300cdf4e4c7dc88f5e590": {
+      "description_zh": "在 VS Code 的 Review Mode 中打开 Markdown，或依据其批注迭代计划和文档；以支持批注的只读 WebView 呈现文件，不打开网页浏览器。",
+      "source": "Use when the user asks to open a Markdown file in Review Mode inside VS Code, or when iterating on a plan/document based on Review Mode annotations. Review Mode renders the file in a read-only WebView panel with annotation support. This does NOT open a web browser.",
+      "source_sha256": "5c11abdd4da6d9a107aa96e850b3044fd7055477669300cdf4e4c7dc88f5e590",
+      "source_path": "skills/review-mode/SKILL.md",
+      "package_sha256": "9cef5fa06302d5e3572df0aa82a7c86a618171bb9c05e3366bc212dc5cb301b4",
+      "source_package": "Review Mode-0.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dfff581960b74af772c37aa248c31965dad541c893bc987f5204ba528f8fcb87": {
+      "description_zh": "查询 AI 应用、连接器及插件商店的审核耗时，并报告用户自身提交的情况；适用于计划上架、等待审核、审核疑似停滞或询问批准时间，范围包括 ChatGPT、Claude、Meta Muse、Grok、Cursor、Microsoft 365、Gemini CLI 和 Docker MCP 等商店。",
+      "source": "Check how long AI app, connector and plugin store review takes (ChatGPT plugins, Claude connectors and plugins, Meta Muse, Grok, Cursor, Microsoft 365 Agent Store, Gemini CLI, Docker MCP) before submitting or while waiting, and report the user's own submission. Use when planning a launch to one of these stores, when a review seems stuck, or when the user asks how long approval takes.",
+      "source_sha256": "dfff581960b74af772c37aa248c31965dad541c893bc987f5204ba528f8fcb87",
+      "source_path": "skills/review-times/SKILL.md",
+      "package_sha256": "e2316245e0624bb2c62317b17678b5a1c7c16914e99fb3aa8e493c6b6a2a4e1d",
+      "source_package": "review-times-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2e2696a698cd07857a8c566ee78d48647c9d389f24a3b837d51dce9863951e17": {
+      "description_zh": "为访问 Autodesk Construction Cloud 的 APS API 建立 Python 认证与可复用客户端，处理双腿或三腿 OAuth2 令牌、环境配置及 hub、项目发现，提供其他 ACC API 脚本所需的基础代码；适用于首次连接和认证准备。",
+      "source": "Set up Python authentication and a reusable client for the Autodesk Platform Services (APS) API to access Autodesk Construction Cloud (ACC). Use this skill first before any other ACC API script — it handles OAuth2 token acquisition (2-legged and 3-legged), environment configuration, hub/project discovery, and the Python boilerplate that all ACC API scripts depend on. Trigger on phrases like \"ACC API setup\", \"authenticate with APS\", \"get an APS token\", \"connect to ACC\", \"Autodesk API token\", \"APS credentials\", \"set up Forge API\", \"configure ACC API\", \"get access token Autodesk\", or whenever a user is starting to write ACC/APS API scripts and needs the authentication foundation. Always offer this skill before any other ACC API skill if the user hasn't authenticated yet.",
+      "source_sha256": "2e2696a698cd07857a8c566ee78d48647c9d389f24a3b837d51dce9863951e17",
+      "source_path": "skills/acc-api-setup/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "58ed6a91bb8723da8d27fb0fd9cd803404c157e6c89a7d87b527b2754e96c4ac": {
+      "description_zh": "通过 APS Model Coordination API 操作 ACC Coordinate，列出和检查模型集、获取碰撞结果、创建碰撞问题、管理协同模型激活并导出协调报告，适用于碰撞流程自动化和协调数据集成。",
+      "source": "Work with Autodesk Construction Cloud (ACC) Coordinate — list and inspect model sets, retrieve clash results, create clash issues, manage model activation for coordination, and export coordination reports via the APS Model Coordination API. Use this skill when a user needs to automate clash detection workflows, pull clash data from ACC for reporting, create ACC issues from clashes, check which models are active in a model set, or integrate ACC coordination data with other tools. Trigger on phrases like \"ACC Coordinate\", \"model coordination\", \"model set\", \"clash results\", \"clash data\", \"ACC clashes\", \"coordination space\", \"activated models\", \"clash issues\", \"federated model\", \"coordination report\", \"BIM coordination\", or any request to work with ACC's model coordination module via API. Also offer this when users want to export or report on clash data from ACC.",
+      "source_sha256": "58ed6a91bb8723da8d27fb0fd9cd803404c157e6c89a7d87b527b2754e96c4ac",
+      "source_path": "skills/acc-coordinate/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e1518b98cddcf387fdf1723c5c862c0e88a6dd854330f46da0b56aa51c8d5ce": {
+      "description_zh": "指导 Revit 与 ACC Design Collaboration 的云端协同工作流，涵盖云工作共享、设计包创建与接收、共享视图、模型发布及云模型实践；也提供查询共享视图和设计包状态的 API，以及协同故障排查。",
+      "source": "Guide Revit ↔ ACC Design Collaboration workflows — setting up cloud worksharing, creating and consuming design packages, shared views, Design Collaboration setup, model publishing, and Revit cloud model best practices. Also covers the API for querying shared views and design package status. Use this skill when a user needs help with Revit cloud models, BIM 360 Design / ACC Design Collaboration, creating or receiving design packages, activating models for coordination, or troubleshooting cloud worksharing issues. Trigger on phrases like \"Design Collaboration\", \"cloud worksharing\", \"Revit cloud model\", \"design package\", \"shared views\", \"consume package\", \"publish model to ACC\", \"BIM 360 Design\", \"Revit cloud\", \"cloud model\", \"collaboration workflow\", \"ACC Revit workflow\", or any request involving the Revit-to-ACC publishing and collaboration pipeline.",
+      "source_sha256": "8e1518b98cddcf387fdf1723c5c862c0e88a6dd854330f46da0b56aa51c8d5ce",
+      "source_path": "skills/acc-design-collaboration/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4bdded9a410588c1611fdb8406f9a5c93a99e02aa6b3fd76bcd89ff5fc2fc6fb": {
+      "description_zh": "通过 APS Data Management 和 ACC Docs REST API 管理云端文档，列出文件夹与文件、上传下载、建立目录并管理传送、审阅和文档包；适用于批量图纸上传、特定版本下载、文档登记和库内容报告。",
+      "source": "Manage Autodesk Construction Cloud (ACC) Docs — list folders and files, upload documents, download files, create folder structures, manage transmittals, reviews, and packages via the APS Data Management API and ACC Docs REST API. Use this skill when a user needs to automate document control workflows in ACC: bulk uploading drawing sets, creating folder structures, listing published files, downloading specific versions, setting up transmittals, creating document packages, or writing reports of what's in their ACC Docs library. Trigger on phrases like \"ACC Docs\", \"upload to ACC\", \"download from ACC\", \"list files in ACC\", \"document control\", \"ACC folder\", \"transmittal\", \"document package\", \"file versions\", \"publish drawings\", \"drawing register\", \"ACC file management\", or any request to read, write, or organise files in Autodesk Construction Cloud Docs.",
+      "source_sha256": "4bdded9a410588c1611fdb8406f9a5c93a99e02aa6b3fd76bcd89ff5fc2fc6fb",
+      "source_path": "skills/acc-docs/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57bc25eb3074a1ac20ee312147302bbcf98985932d56f611212ff0e6959c18d0": {
+      "description_zh": "通过 Python 与 APS REST API 将 ACC 项目问题、RFI、文档日志、碰撞摘要、传送记录和活动报告导出为 CSV 或 Excel，适用于项目健康、状态和趋势报告。",
+      "source": "Export ACC project data to CSV or Excel — issues, RFIs, document logs, clash summaries, transmittals, and project activity reports — using the APS REST API with Python. Use this skill when a user needs to report on ACC project health, export an issues register, pull RFI status into a spreadsheet, generate a document transmittal log, create a clash trend report, or produce any data export from Autodesk Construction Cloud. Trigger on phrases like \"export issues\", \"issues report\", \"RFI report\", \"ACC report\", \"export from ACC\", \"document log\", \"clash report\", \"ACC data export\", \"project status report\", \"pull data from ACC\", \"ACC Excel export\", \"transmittal log\", or any request to extract or report on data stored in Autodesk Construction Cloud.",
+      "source_sha256": "57bc25eb3074a1ac20ee312147302bbcf98985932d56f611212ff0e6959c18d0",
+      "source_path": "skills/acc-reports/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68d225d9a1e12a40e5f38498d88f1dea84fe45f0d52c610abcef60dc4514aede": {
+      "description_zh": "分析 Revit 模型的房间、空间和面积，计算建筑内部总面积 GIA，比较空间任务书并按部门汇总，审查未放置或未封闭房间及导出 CSV；适用于面积核验、房间数据表和报规前检查。",
+      "source": "Analyze rooms, spaces, and areas in a Revit model — GIA calculations, space program comparison, department breakdowns, unbounded/unplaced room audits, and CSV export. Use this skill when a user wants to calculate total floor area, check room areas against a brief, export a room data table, find unplaced or unbounded rooms, or produce a GIA (Gross Internal Area) report. Trigger on phrases like \"room areas\", \"GIA\", \"space program\", \"analyze rooms\", \"unbounded rooms\", \"area schedule\", \"room data\", \"floor area summary\", \"net internal area\", or any request involving Revit room/space quantities. Also use when someone mentions area validation before planning submission.",
+      "source_sha256": "68d225d9a1e12a40e5f38498d88f1dea84fe45f0d52c610abcef60dc4514aede",
+      "source_path": "skills/analyze-rooms/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe9c6b387435bd343dddf26da3a17bcf9af91aad1db9b077ac531efcde3d71ce": {
+      "description_zh": "审计 Revit 模型健康、质量与 BIM 标准符合情况，检查文件大小、警告数量、分类元素数量、冗余或内建族、未用视图及工作集结构，适用于性能、质量控制和模型内容汇总。",
+      "source": "Audit and analyze Revit model health, quality, and BIM standards compliance. Use this skill when checking model file size, warning counts, element counts by category, redundant or in-place families, unused views, workset structure, model warnings, or any model performance or quality-control question. Trigger on phrases like \"audit my model\", \"check model health\", \"how many warnings\", \"is my model clean\", \"model performance\", \"BIM QC\", \"quality check\", or whenever someone wants a summary of what's in their Revit model. Proactively offer an audit when users mention slow model performance or submission deadlines.",
+      "source_sha256": "fe9c6b387435bd343dddf26da3a17bcf9af91aad1db9b077ac531efcde3d71ce",
+      "source_path": "skills/audit-model/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e3f6ad8b0b2edeb25e7c60813dbcf4e3861bea84dec3abf835353a291d0c039e": {
+      "description_zh": "按前后缀、编号序列或参数驱动规则批量重命名 Revit 房间、图纸、视图、门、标高、轴网等元素，以遵循命名约定、BEP 或项目编号规则。",
+      "source": "Batch rename Revit elements across any category using prefixes, suffixes, numbering sequences, or parameter-driven naming rules. Use this skill when a user needs to rename rooms, sheets, views, doors, levels, grids, or any other elements en masse — following a naming convention, BEP standard, or project numbering scheme. Trigger on phrases like \"rename elements\", \"bulk rename\", \"batch rename\", \"add prefix\", \"add suffix\", \"renumber rooms\", \"rename views\", \"rename sheets\", \"apply naming convention\", \"fix names\", or any request to systematically change element names at scale.",
+      "source_sha256": "e3f6ad8b0b2edeb25e7c60813dbcf4e3861bea84dec3abf835353a291d0c039e",
+      "source_path": "skills/batch-rename-elements/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b0d895d147ec0b110345f3fef098dfe96814ad3c05990cc62f0c89af750493d": {
+      "description_zh": "使用 Dynamo Python 和 Revit API 布尔相交工具检测并报告模型元素的几何碰撞与干涉，适用于机电与结构协调、重叠检查、风管与梁或管道与柱等两组元素之间的三维相交分析。",
+      "source": "Detect and report geometric clashes and interferences between Revit model elements using Dynamo Python and the Revit API's Boolean intersection tools. Use this skill when checking for MEP vs Structure clashes, discipline coordination, overlapping element checks, or any geometric interference between two sets of elements. Trigger on phrases like \"clash detection\", \"interference check\", \"find clashes\", \"MEP coordination\", \"structural clash\", \"duct vs beam\", \"pipe vs column\", \"coordination report\", or any request to find elements that overlap or intersect in 3D space. Also offer this skill when users mention coordination meetings or model submission reviews.",
+      "source_sha256": "6b0d895d147ec0b110345f3fef098dfe96814ad3c05990cc62f0c89af750493d",
+      "source_path": "skills/clash-detection/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d2ab38f40a2eea3c4cd569a72571cd8800cef9dc67d1de2576c90dd3fdf1a24a": {
+      "description_zh": "使用 Dynamo Python 创建、配置或自动生成 Revit 明细表、数量及材料统计，按脚本设置字段和筛选条件，并从清单批量生成门、墙、房间等明细表或数量报告。",
+      "source": "Create, configure, or automate Revit schedules, quantity takeoffs, and material takeoffs using Dynamo Python. Use this skill when creating element schedules programmatically, configuring schedule fields and filters via script, automating schedule creation from a list, or producing quantity reports. Trigger on phrases like \"create a schedule\", \"make a schedule\", \"add schedule fields\", \"automate schedules\", \"quantity takeoff\", \"door schedule\", \"wall schedule\", \"room schedule\", or any request to generate or configure a Revit schedule via Dynamo. Also offer this skill when users want to batch-create multiple schedules at once.",
+      "source_sha256": "d2ab38f40a2eea3c4cd569a72571cd8800cef9dc67d1de2576c90dd3fdf1a24a",
+      "source_path": "skills/create-schedule/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e6dc23db1490be08ac8af289acc5f49de50295a6a93e0262d8441734de7d3766": {
+      "description_zh": "使用 Dynamo Python 创建、配置并批量应用 Revit 视图过滤器和图形覆盖，按阶段、状态、类型、部门、工作集或自定义参数着色、突出显示元素或控制可见性。",
+      "source": "Create, configure, and apply Revit view filters and graphic overrides using Dynamo Python. Use this skill when a user wants to color-code elements by parameter value, create filters based on phase, status, type, department, workset, or any custom parameter, apply those filters to multiple views at once, or override element visibility by rule. Trigger on phrases like \"view filter\", \"color code elements\", \"graphic overrides\", \"color by parameter\", \"filter by phase\", \"highlight elements\", \"visibility graphics\", \"create filters\", \"apply filters to views\", or any request to visually distinguish elements in Revit views.",
+      "source_sha256": "e6dc23db1490be08ac8af289acc5f49de50295a6a93e0262d8441734de7d3766",
+      "source_path": "skills/create-view-filters/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "296308ffd62753820b809102a10ab21ed4959786cefe489068c8cb8a4021b214": {
+      "description_zh": "将 Revit 自动化脚本生成可直接打开的 Dynamo .dyn 图文件，避免手动粘贴代码；默认采用兼容 Dynamo 2.x 的 IronPython 2.7，有文件系统权限时直接保存，否则提供可手动保存的 JSON。",
+      "source": "Generate a ready-to-open Dynamo graph file (.dyn) for Revit — not just code to paste, but an actual .dyn file the user can double-click and run immediately in Dynamo. Use this skill whenever a user wants a Dynamo script saved as a file, wants to avoid copy-pasting code, asks \"can you save it as a Dynamo file\", \"give me the .dyn file\", \"I want to open it directly in Dynamo\", or \"export the Dynamo graph\". Also offer this proactively after generating a script if the user seems less technical or is asking for a \"plug and play\" solution. Produces IronPython 2.7 scripts by default (Dynamo 2.x compatible). If in Cowork or Claude Code with file system access, save directly to the user's machine. Otherwise, present the .dyn JSON for the user to save manually.",
+      "source_sha256": "296308ffd62753820b809102a10ab21ed4959786cefe489068c8cb8a4021b214",
+      "source_path": "skills/export-dynamo-file/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a9a1ae3d9d19149d8365609e419fa375b730104cefdfb1df9ae1de8c28da9d9b": {
+      "description_zh": "使用 Dynamo Python 将 Revit 模型导出为 IFC 2x3 或 IFC 4，配置导出选项、类别映射和属性集，适用于开放 BIM、跨软件协调、报审和客户交付。",
+      "source": "Export a Revit model to IFC format with proper settings, class mapping, and property sets using Dynamo Python. Use this skill when exporting to IFC 2x3 or IFC 4, configuring IFC export options, preparing a model for open BIM workflows, or generating IFC files for coordination, submission, or client delivery. Trigger on phrases like \"export IFC\", \"IFC export\", \"open BIM\", \"IFC 2x3\", \"IFC 4\", \"BIM submission\", \"COBie\", \"IFC coordination\", or when users mention needing to share the model with contractors, engineers, or clients using different software. Also offer this when users mention planning or building permit submissions that require open BIM formats.",
+      "source_sha256": "a9a1ae3d9d19149d8365609e419fa375b730104cefdfb1df9ae1de8c28da9d9b",
+      "source_path": "skills/export-ifc/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "31310c8d86b51fbc6e00c93dc90c442efaafe961d6ebe644a3591747e671fd36": {
+      "description_zh": "通过 Dynamo Python 将 Revit 元素参数、房间数据、门窗明细、族实例或其他类别导出为 CSV 或 Excel 兼容文件，供报告、造价估算、客户交付和 BIM 数据校验使用。",
+      "source": "Export Revit model data — element parameters, room data, door/window schedules, family instances, or any category — to a CSV or Excel-compatible file using Dynamo Python. Use this skill when a user wants to get model data out of Revit into a spreadsheet for reporting, cost estimation, client delivery, or BIM data validation. Trigger on phrases like \"export to Excel\", \"export to CSV\", \"get data out of Revit\", \"export parameters\", \"export schedule\", \"export room data\", \"extract model data\", \"create a data dump\", \"export family list\", \"export door schedule\", or any request to pull Revit data into a tabular file format.",
+      "source_sha256": "31310c8d86b51fbc6e00c93dc90c442efaafe961d6ebe644a3591747e671fd36",
+      "source_path": "skills/export-to-excel/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "19766c6627e62eb9ed815e0b2882ad252edca4b717fd26c16c026327e739d4c3": {
+      "description_zh": "根据自然语言生成完整可运行的 Revit Dynamo Python 脚本，自动化重命名、参数筛选、数据导出、族修改、模型健康检查及批量编辑等重复工作。",
+      "source": "Generate a complete, ready-to-run Dynamo Python script for Autodesk Revit from plain language. Use this skill whenever a Revit user, architect, or BIM manager asks to automate anything in Revit — renaming elements, filtering by parameters, exporting data, modifying families, checking model health, batch-editing anything, or any other scripting task. Trigger on phrases like \"write a Dynamo script\", \"create a script for Revit\", \"automate in Revit\", \"Dynamo Python\", or whenever someone describes a repetitive Revit workflow that would benefit from automation — even if they don't say the word \"script\". Proactively offer to generate a script when you detect a tedious manual workflow.",
+      "source_sha256": "19766c6627e62eb9ed815e0b2882ad252edca4b717fd26c16c026327e739d4c3",
+      "source_path": "skills/generate-dynamo/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "556c63b1350750a963a7700a28e5de1beab890feecfabeb3c42bb6b2f2ab79d8": {
+      "description_zh": "检查 Revit 模型中全部 RVT 和 CAD 链接的加载状态、坐标及健康情况，报告已加载、卸载、缺失和坐标不一致的链接；适用于协调会议、模型提交、联合模型审查及导出前检查。",
+      "source": "Check the status, coordinates, and health of all RVT and CAD linked files in a Revit model. Generates a coordination report showing which links are loaded, unloaded, missing, or have coordinate mismatches. Use this skill before coordination meetings, model submissions, or federated model reviews. Trigger on phrases like \"linked model\", \"check links\", \"RVT links\", \"CAD links\", \"link status\", \"coordinate check\", \"shared coordinates\", \"model federation\", \"are all links loaded\", \"missing links\", \"linked file health\", \"unloaded links\", \"link report\", or any request to inspect the status of files linked into a Revit model. Also offer this proactively before IFC export or Navisworks federation.",
+      "source_sha256": "556c63b1350750a963a7700a28e5de1beab890feecfabeb3c42bb6b2f2ab79d8",
+      "source_path": "skills/linked-model-check/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4bd6a4c905e692b3388d63611f8f569e106c3075dcff91a37d31ca4a69a1573c": {
+      "description_zh": "通过 Dynamo Python 读取、写入、批量更新和校验 Revit 元素参数，支持从 Excel 填值、创建项目或共享参数、字段映射、缺失检查及参数间复制。",
+      "source": "Read, write, batch-update, or validate Revit element parameters using Dynamo Python. Use this skill when modifying parameter values across many elements, batch-setting data from Excel, creating project or shared parameters, mapping parameters between fields, checking for missing or empty parameters, or copying values from one parameter to another. Trigger on phrases like \"set parameter\", \"update parameters\", \"batch edit\", \"fill in\", \"parameter value\", \"shared parameter\", \"copy parameter\", \"parameter missing\", or any request to read or write Revit element data at scale.",
+      "source_sha256": "4bd6a4c905e692b3388d63611f8f569e106c3075dcff91a37d31ca4a69a1573c",
+      "source_path": "skills/manage-parameters/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0f747542fced5918d1c7521a2d4bdceab08d03528882ade6a15a4e0ed7f40a3": {
+      "description_zh": "使用 Dynamo Python 创建和管理 Revit 图纸与视图，从 Excel 等清单批量生成图纸、放置视图、应用视图模板、重命名编号并整理图纸目录，适用于项目初始化和出图准备。",
+      "source": "Create, organise, and manage Revit drawing sheets and views using Dynamo Python. Use this skill when creating sheets from a list (e.g. from Excel), placing views onto sheets, applying view templates, renaming or renumbering sheets, automating sheet set creation, or reorganising the drawing register. Trigger on phrases like \"create sheets\", \"batch create sheets\", \"add views to sheets\", \"sheet setup\", \"drawing register\", \"sheet numbering\", \"place views\", \"apply view template\", \"sheets from Excel\", or any request involving Revit sheet management. Also offer this skill when users are setting up a new project or preparing for a drawing issue.",
+      "source_sha256": "a0f747542fced5918d1c7521a2d4bdceab08d03528882ade6a15a4e0ed7f40a3",
+      "source_path": "skills/manage-sheets/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3d010ed9e3b2482db54f0ee6b8847aed586d64332ed1da22d34a6b2c728c0812": {
+      "description_zh": "使用 Dynamo Python 移动、旋转、复制、删除、镜像或批量修改 Revit 元素及族类型，进行几何与标识变换；原说明要求破坏性操作先在模型副本中测试。",
+      "source": "Move, rotate, copy, delete, modify types, or batch-edit Revit model elements using Dynamo Python. Use this skill when performing actions and geometric transformations on elements — translating elements, changing their type, batch-editing families, swapping types, mirroring, rotating, or any operation that modifies element geometry or identity. Trigger on phrases like \"move elements\", \"rotate\", \"copy elements\", \"change type\", \"batch edit\", \"swap family\", \"modify elements\", \"transform\", \"mirror elements\", or any request to programmatically manipulate existing Revit elements. Always warn the user to test on a copy of the model first before running destructive operations.",
+      "source_sha256": "3d010ed9e3b2482db54f0ee6b8847aed586d64332ed1da22d34a6b2c728c0812",
+      "source_path": "skills/manipulate-elements/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9f1ac4fe7ede965157b79a82ca39f7c0dc47a4c711ec22ab35889c4c4f25165b": {
+      "description_zh": "依据项目简报或 BIM 执行计划自动初始化 Revit 工作集、标高、轴网、视图模板、浏览器组织规则与标准视图，适用于新模型或将已有模型调整到 BIM 标准。",
+      "source": "Automate Revit project setup — create worksets, levels, grids, view templates, browser organization schemes, and standard views from a project brief or BIM Execution Plan. Use this skill at project start when a user needs to set up a new Revit model from scratch or bring an existing model up to BIM standards. Trigger on phrases like \"project setup\", \"set up the model\", \"create worksets\", \"add levels\", \"set up grids\", \"create view templates\", \"BEP setup\", \"model template\", \"create standard views\", \"set up browser organisation\", \"new project setup\", \"initialise the model\", or any request to configure a Revit model for a new project. Also offer this skill when a user complains their model doesn't have proper worksets or is missing standard views.",
+      "source_sha256": "9f1ac4fe7ede965157b79a82ca39f7c0dc47a4c711ec22ab35889c4c4f25165b",
+      "source_path": "skills/project-setup/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d297933e64174388d5550f356681237f44514da0ae4185e7908b6fd00da41e30": {
+      "description_zh": "使用 Dynamo Python 只读查询 Revit 模型，按类别或参数条件列出、筛选、计数并提取元素数据，用于内容检查、数量问答及报告，不修改模型。",
+      "source": "Query, filter, list, and extract data from a Revit model database using Dynamo Python. Use this skill when a user wants to list elements, count elements by category, filter by parameter value, find elements meeting a condition, extract data for a report, or answer \"how many X are in my model\" type questions. Trigger on phrases like \"list all\", \"filter elements\", \"find all walls\", \"get all rooms\", \"extract data\", \"how many\", \"show me all elements where\", or any request to inspect or report on model content without modifying it. This skill produces read-only query scripts — safe on any model.",
+      "source_sha256": "d297933e64174388d5550f356681237f44514da0ae4185e7908b6fd00da41e30",
+      "source_path": "skills/query-model/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c434d2d0e5f008752e141496fc065684724f128095a1cd9b5ca834d96e03e90b": {
+      "description_zh": "生成 Dynamo 之外运行的 C# 或 Python Revit API 代码，涵盖宏、外部命令、插件、IExternalCommand、.addin 清单和 pyRevit 按钮脚本，适用于部署为独立或长期使用的自动化工具。",
+      "source": "Generate Revit API code in C# or Python for macros, external commands, add-ins, or pyRevit scripts — production-ready, beyond what Dynamo can do. Use this skill when the user needs C# Revit macros, IExternalCommand boilerplate, .addin manifest files, pyRevit button scripts, or any code that runs outside of Dynamo. Trigger on phrases like \"Revit macro\", \"external command\", \"add-in\", \"C# Revit\", \"pyRevit script\", \"Revit API code\", \"IExternalCommand\", \"ribbon button\", \"addin\", or when a user asks for Revit automation that needs to be deployed as a standalone tool rather than a Dynamo graph. Also offer this when users want persistent tools that run without opening Dynamo each time.",
+      "source_sha256": "c434d2d0e5f008752e141496fc065684724f128095a1cd9b5ca834d96e03e90b",
+      "source_path": "skills/revit-api-code/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e974703693188e6d7179bea94e9d92fc01d6ccb9ecb03171e93a388fc7cc629f": {
+      "description_zh": "通过 Dynamo Python 创建、绑定和管理 Revit 共享参数，加载参数文件、在组内添加定义、绑定元素类别并核验绑定，支持 COBie、BEP 字段、族参数及缺失参数排查。",
+      "source": "Create, bind, and manage Revit shared parameters using Dynamo Python — load a shared parameter file, add new parameter definitions to groups, bind parameters to element categories, and verify parameter bindings. Use this skill when a user needs to add shared parameters to their project, bind COBie parameters, set up BEP-required data fields, add parameters to families, or troubleshoot missing shared parameters. Trigger on phrases like \"shared parameters\", \"add parameter\", \"bind parameter\", \"shared param file\", \"project parameters\", \"create parameter\", \"COBie fields\", \"parameter binding\", \"add fields to schedule\", \"parameter group\", or any request to add new data fields to Revit elements that don't exist yet.",
+      "source_sha256": "e974703693188e6d7179bea94e9d92fc01d6ccb9ecb03171e93a388fc7cc629f",
+      "source_path": "skills/shared-parameters/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0d1911b690c2c5e9c947a9b69aea9cda7753c96e3285dda69d3fa6598991e07": {
+      "description_zh": "校验 Revit 必需参数是否已填写、非空且符合允许值，并生成符合性报告；适用于 BEP 数据验证、提交前 QA、COBie 准备、房间部门和门耐火等级等完整性检查。",
+      "source": "Validate that required Revit element parameters are filled in, non-empty, and within acceptable values — then generate a compliance report. Use this skill for BEP (BIM Execution Plan) data validation, pre-submission QA checks, COBie data readiness, checking that all rooms have departments assigned, all doors have fire ratings, or any \"are all my parameters filled in?\" question. Trigger on phrases like \"validate parameters\", \"check parameters\", \"missing parameters\", \"BEP compliance\", \"data completeness\", \"parameter QA\", \"are all fields filled\", \"COBie validation\", \"pre- submission check\", \"parameter audit\", \"empty parameters\", or any request to verify that element data is complete and correct.",
+      "source_sha256": "a0d1911b690c2c5e9c947a9b69aea9cda7753c96e3285dda69d3fa6598991e07",
+      "source_path": "skills/validate-parameters/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "46c122e22107ed2e7b114185e7348c0ed80a945ce2ff9f8d294907ba634d7e88": {
+      "description_zh": "使用 Dynamo Python 审计 Revit 工作集分配，识别错误工作集中的元素，按类别规则迁移到正确工作集并生成报告，适用于提交或出图前清理。",
+      "source": "Audit workset assignments across a Revit model, identify elements on the wrong workset, and move elements between worksets using Dynamo Python. Use this skill when checking model workset structure before submission, finding walls on the MEP workset, moving elements to the correct workset based on category rules, generating a workset assignment report, or cleaning up workset mistakes before issuing. Trigger on phrases like \"workset\", \"wrong workset\", \"move to workset\", \"workset audit\", \"workset report\", \"workset assignment\", \"elements on wrong workset\", \"workset cleanup\", \"check worksets\", \"workset structure\", or any request involving workset management and auditing.",
+      "source_sha256": "46c122e22107ed2e7b114185e7348c0ed80a945ce2ff9f8d294907ba634d7e88",
+      "source_path": "skills/workset-manager/SKILL.md",
+      "package_sha256": "c32850ced867802817ce370b044a06017ae47923b123584cb6230f010865ec1d",
+      "source_package": "revit-bim-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5985c8f056b53f31e982f1007a39903606f7e401013c7b1c7e3692d31e2d4ede": {
+      "description_zh": "安装、配置并启用 rich-statusline 插件，也用于状态栏无法正常工作时的排查。",
+      "source": "Install and configure the rich-statusline plugin. Use when the user says \"setup statusline\", \"configure statusline\", \"install statusline\", \"enable statusline\", or \"statusline not working\".",
+      "source_sha256": "5985c8f056b53f31e982f1007a39903606f7e401013c7b1c7e3692d31e2d4ede",
+      "source_path": "skills/statusline-setup/SKILL.md",
+      "package_sha256": "d3f5edfe613cfb28b59af59f70e93297c8bbeddc1bdc4e8f580145871a04b0cb",
+      "source_package": "rich-statusline-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "68e41ea4968b2158f75dae840f45e477579dc263932fdb9edbe7a519f65a6c2a": {
+      "description_zh": "概述如何在 Rill 项目中分析数据。",
+      "source": "Overview of how to analyze data in a Rill project",
+      "source_sha256": "68e41ea4968b2158f75dae840f45e477579dc263932fdb9edbe7a519f65a6c2a",
+      "source_path": "skills/rill-analysis/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "33f8ef81a2700fd350f933f54e2ad659b6256662fca158537affa70913122d46": {
+      "description_zh": "提供开发 Rill Canvas 仪表盘资源的详细说明和示例。",
+      "source": "Detailed instructions and examples for developing canvas dashboard resources in Rill",
+      "source_sha256": "33f8ef81a2700fd350f933f54e2ad659b6256662fca158537affa70913122d46",
+      "source_path": "skills/rill-canvas/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d97d28485e73548ccbe7be38d4792275ba656a8f68ca259b73136c3d9bd40ff": {
+      "description_zh": "提供开发 Rill 连接器资源的详细说明和示例。",
+      "source": "Detailed instructions and examples for developing connector resources in Rill",
+      "source_sha256": "1d97d28485e73548ccbe7be38d4792275ba656a8f68ca259b73136c3d9bd40ff",
+      "source_path": "skills/rill-connector/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a3389aad536dd6fb8cd7daf9cd5f98f84f8c05028aee67709b05bc50d15d6b94": {
+      "description_zh": "概述 Rill 项目的开发方法。",
+      "source": "Overview of how to develop a Rill project",
+      "source_sha256": "a3389aad536dd6fb8cd7daf9cd5f98f84f8c05028aee67709b05bc50d15d6b94",
+      "source_path": "skills/rill-development/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "23d5be1abe8344fc8078d99adc885fbbf1de7124671e221b910787ab1be2c339": {
+      "description_zh": "提供开发 Rill Explore 仪表盘资源的详细说明和示例。",
+      "source": "Detailed instructions and examples for developing explore dashboard resources in Rill",
+      "source_sha256": "23d5be1abe8344fc8078d99adc885fbbf1de7124671e221b910787ab1be2c339",
+      "source_path": "skills/rill-explore/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "da98182973b249e797e9573758c33beb9df769ae7b2c98d7cb5497203ef3dad6": {
+      "description_zh": "提供开发 Rill 指标视图资源的详细说明和示例。",
+      "source": "Detailed instructions and examples for developing metrics view resources in Rill",
+      "source_sha256": "da98182973b249e797e9573758c33beb9df769ae7b2c98d7cb5497203ef3dad6",
+      "source_path": "skills/rill-metrics-view/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2a7925cd26c4861a52cd177a298a543916992d6ee7fa42da26eed53791e3871c": {
+      "description_zh": "提供开发 Rill 模型资源的详细说明和示例。",
+      "source": "Detailed instructions and examples for developing model resources in Rill",
+      "source_sha256": "2a7925cd26c4861a52cd177a298a543916992d6ee7fa42da26eed53791e3871c",
+      "source_path": "skills/rill-model/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9a154345d9f085f56ac106ef5e65b4ccbe4842a90c97e8b899b1620c68a9bc8a": {
+      "description_zh": "提供编写 Rill 项目 rill.yaml 文件的详细说明和示例。",
+      "source": "Detailed instructions and examples for developing the rill.yaml file",
+      "source_sha256": "9a154345d9f085f56ac106ef5e65b4ccbe4842a90c97e8b899b1620c68a9bc8a",
+      "source_path": "skills/rill-rillyaml/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "be48c3d3721d8282df4b13509a748bfe1d1c2a0b393d73d33eeaae3724ac5b67": {
+      "description_zh": "提供开发 Rill 主题资源的详细说明和示例。",
+      "source": "Detailed instructions and examples for developing theme resources in Rill",
+      "source_sha256": "be48c3d3721d8282df4b13509a748bfe1d1c2a0b393d73d33eeaae3724ac5b67",
+      "source_path": "skills/rill-theme/SKILL.md",
+      "package_sha256": "1ce7c2781c0452ec77e3243c88c197eb22598b3a4f9cc07a43d370ed33950093",
+      "source_package": "Rill-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65d438afcd97353de8bd842d0b07e918a6cd3c2d42903794111a4f949db1af93": {
+      "description_zh": "从用户 RingEX 通话历史定位近期电话，识别对方及邮箱，并根据通话摘要或洞察起草跟进邮件；有可用邮件工具时可发送，否则交付待发送草稿。适用于电话后续跟进，不用于无关邮件或仅记录通话。",
+      "source": "Turns a recent RingEX phone call into a drafted (and optionally sent) follow-up email. Pulls the call from the user's RingEX call history, resolves who was on the other end and their email address, drafts a follow-up that references the call (using the AI call summary/insight when one exists), and sends it through whatever email tool is actually available — or hands back a ready-to-send draft if none is connected. Use this whenever the user wants to follow up on a phone call by email — phrases like \"email them about that call\", \"send a follow-up to the person I just talked to\", \"draft a recap for my call with [name]\", \"I told a customer I'd send them something after we hung up\", or \"can you write a follow-up for my 2pm call\" — even if they don't mention RingCentral, call history, or name a specific email tool. Do not use this for drafting emails unrelated to a phone call, or for logging/summarizing a call without producing an email (that's ringex-calls or ringex-meetings).",
+      "source_sha256": "65d438afcd97353de8bd842d0b07e918a6cd3c2d42903794111a4f949db1af93",
+      "source_path": "skills/call-followup-email/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4d8f455cc1958effc021c50820ca7d35a5b6a84650927c17856f33dce691ef87": {
+      "description_zh": "在已认证 RingEX Phone 用户自己的近期通话历史中定位特定电话，结合 AI 笔记、转录片段和是否录音进行回顾，支持按主题或人员查找。",
+      "source": "Finds a specific recent call in the authenticated RingEX Phone user's own call history and recaps it with AI notes, transcript excerpts, and whether it was recorded. Use when the user asks to recap a call, summarize what was discussed, check if a call was recorded, or find a call about a specific topic or person.",
+      "source_sha256": "4d8f455cc1958effc021c50820ca7d35a5b6a84650927c17856f33dce691ef87",
+      "source_path": "skills/call-recap/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38fd600666b1e6b65d4206687f636b0f50e730446281ad94597385002ef28da8": {
+      "description_zh": "按姓名、部门、职位或电话号码搜索公司目录和当前 RingEX Phone 用户的个人联系人，有多个匹配时消歧；用于查询分机、职务、部门或可用状态。",
+      "source": "Looks up a colleague by name, department, job title, or phone number across the company directory and the authenticated RingEX Phone user's personal contacts, disambiguating when more than one match is found. Use when the user asks for someone's extension, title, department, or availability, or wants to find a colleague in the directory or their own contacts.",
+      "source_sha256": "38fd600666b1e6b65d4206687f636b0f50e730446281ad94597385002ef28da8",
+      "source_path": "skills/colleague-lookup/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "526ec71fa903ac90af4224df864844bfbc429d6110cb404755c35d9bbde36e28": {
+      "description_zh": "汇总 RingEX 电话、短信、语音信箱、联系人、在线状态与消息存储数据，生成通信简报、遗漏事项和待跟进清单；先询问用户回看时间范围，周一回看 24 小时时额外确认是否纳入周末或近期假日。",
+      "source": "Produces a RingEX Phone communications brief from recent calls, SMS, voicemail, contacts, presence, and message-store data, over a time window the user chooses (last 24 hours, last 3 days, last week, or a custom range). Use when the user asks for a communications digest or brief, a daily digest, morning briefing, catch-up report, missed communications, unresolved calls or texts, voicemail follow-up, or what to work on today. Always asks the user up front how far back to look rather than assuming a fixed window, and on a Monday 24-hour lookback, checks whether the weekend or a recent holiday should be folded in too.",
+      "source_sha256": "526ec71fa903ac90af4224df864844bfbc429d6110cb404755c35d9bbde36e28",
+      "source_path": "skills/communications-brief/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e447f34374b1baef3ecfa9d1e77edc8985b449b14e61903cb1ef232e08721dc7": {
+      "description_zh": "将已认证 RingEX Phone 用户的近期传真列为可点击收件箱，读取所选传真的发件人、时间及可用封面文字；不包含短信或语音信箱，也不能获取传真正文。",
+      "source": "Presents the authenticated RingEX Phone user's fax inbox as a clickable list of recent faxes, then reads back the selected fax's sender, time, and cover-page text when available. Excludes SMS and voicemail, and cannot retrieve the fax document body itself. Use when the user asks to see their faxes, check for a new fax, or find out who sent a fax.",
+      "source_sha256": "e447f34374b1baef3ecfa9d1e77edc8985b449b14e61903cb1ef232e08721dc7",
+      "source_path": "skills/fax-inbox/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3abc45a5e97fcb738aa6ba436d8a636377b16f041cf4ade8497ff7c4f4f4029": {
+      "description_zh": "为已认证用户编写、发布、更新或删除 RingCentral Team Chat 自适应卡片，用于状态、链接或审批选择；仅支持版本 1.3 的 Action.OpenUrl 和 Action.Submit，超出范围时拒绝，不静默降级。",
+      "source": "Composes, posts, updates, and deletes RingCentral Team Chat Adaptive Cards for the authenticated user within the supported contract (version 1.3, Action.OpenUrl and Action.Submit only), refusing anything outside it rather than silently downgrading. Use to build a status card, a link card, or an approval/choice card in a chat — not for plain text posts, unsupported card actions, or team/task management.",
+      "source_sha256": "b3abc45a5e97fcb738aa6ba436d8a636377b16f041cf4ade8497ff7c4f4f4029",
+      "source_path": "skills/manage-adaptive-cards/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1725b3873aca4ad378260302cbe9c0c8d465c5fdbad16dc600bc71b06107c39c": {
+      "description_zh": "代表已认证 RingEX Chat 用户创建、查找、更新或删除 Team Chat 事件，写入前确认目标聊天；用于频道活动安排及取消，不用于任务、笔记或 Outlook、Google 日历事件。",
+      "source": "Creates, finds, updates, or deletes RingCentral Team Chat events on behalf of the authenticated RingEX Chat user, resolving the destination chat before writing. Use when the user wants to schedule an event in a channel, see what events are coming up in a chat, change an event's time or details, or cancel/delete an event — not for tasks, notes, or Outlook/Google calendar events.",
+      "source_sha256": "1725b3873aca4ad378260302cbe9c0c8d465c5fdbad16dc600bc71b06107c39c",
+      "source_path": "skills/manage-events/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "dc5293f6defeb2c430244f9120eaefd8875677400a635a57672d8af91a982119": {
+      "description_zh": "代表已认证 RingEX Chat 用户创建、查找、修改、发布、锁定解锁或删除 Team Chat 笔记，写入前确认目标聊天；任务、事件和普通消息使用各自技能。",
+      "source": "Creates, finds, updates, publishes, locks/unlocks, or deletes RingCentral Team Chat notes on behalf of the authenticated RingEX Chat user, resolving the destination chat before writing. Use when the user wants to create a note, draft or edit a note in a channel, publish a note, lock or unlock one, or delete a note — not for tasks, events, or plain posts (those have their own skills).",
+      "source_sha256": "dc5293f6defeb2c430244f9120eaefd8875677400a635a57672d8af91a982119",
+      "source_path": "skills/manage-notes/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc1f80d9170325e4dcb739299be35f96d5e8cae1828630d40f58a243020896d5": {
+      "description_zh": "代表已认证 RingEX Chat 用户管理 Team Chat 任务，支持创建、查询、修改、完成、重开或删除；写入前明确聊天和负责人，写入后核验完成状态，不用于其他任务平台。",
+      "source": "Creates, finds, updates, completes/reopens, or deletes RingCentral Team Chat tasks on behalf of the authenticated RingEX Chat user, resolving the destination chat and any assignees before writing and verifying completion state after it. Use when the user wants to create a task, assign a task, see what tasks are in a chat/channel, change a task's due date or assignee, mark a task done, reopen a task, or delete a task — not for Jira, monday.com, or other non-RingCentral task systems.",
+      "source_sha256": "bc1f80d9170325e4dcb739299be35f96d5e8cae1828630d40f58a243020896d5",
+      "source_path": "skills/manage-tasks/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7794ff13638fe6c190f8bb650eed9a794325311077756340663d54c31af699c7": {
+      "description_zh": "代表已认证 RingEX Chat 用户创建、修改、归档恢复或删除团队，管理成员与收藏并更新全公司 Everyone 聊天；破坏性操作前明确确认，不用于消息、任务、笔记或事件。",
+      "source": "Creates, updates, archives/unarchives, or deletes RingCentral Team Chat teams, manages membership and favorites, and updates the company Everyone chat, on behalf of the authenticated RingEX Chat user — with explicit confirmation before anything destructive. Use when the user wants to create a team, add or remove members, join or leave a team, archive or delete one, favorite/unfavorite a chat, or update the company-wide Everyone chat — not for posting, tasks, notes, or events.",
+      "source_sha256": "7794ff13638fe6c190f8bb650eed9a794325311077756340663d54c31af699c7",
+      "source_path": "skills/manage-teams/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e48ccbedf892ed787da3b5eb4d86eec40ec1be9441d9917dc53b86568ef83256": {
+      "description_zh": "代表已认证 RingEX Chat 用户创建、启用、暂停或删除群组入站 webhook，使外部系统向频道发消息；暂停和删除前明确确认，不用于卡片、普通发帖或出站应用集成。",
+      "source": "Creates, activates, suspends, or deletes RingCentral Team Chat incoming webhooks for a group, on behalf of the authenticated RingEX Chat user, with explicit confirmation before suspending or deleting one. Use when the user wants to set up a webhook to post into a channel from an external system, pause or resume one, or remove one — not for Adaptive Cards, posts, or Team Chat's own outbound app integrations.",
+      "source_sha256": "e48ccbedf892ed787da3b5eb4d86eec40ec1be9441d9917dc53b86568ef83256",
+      "source_path": "skills/manage-webhooks/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ba580bbbadb0d727257d959d04171373662021a492c61a233995e777ed4f0c3a": {
+      "description_zh": "代表已认证 RingEX Chat 用户向已明确的人员或聊天频道发送、编辑或删除消息，支持线程回复和文件图片附件；任何写入前须解析目标并预览确认，不用于短信。",
+      "source": "Sends, edits, or deletes a RingCentral Team Chat post — to a resolved person or a known chat/channel, including thread replies and file/image attachments — on behalf of the authenticated RingEX Chat user, with destination resolution and a mandatory preview/confirm step before any write. Use when the user asks to post in a channel, message someone on Team Chat/Glip, reply in a thread, attach a file, or edit or delete an existing post — not for SMS/text messages.",
+      "source_sha256": "ba580bbbadb0d727257d959d04171373662021a492c61a233995e777ed4f0c3a",
+      "source_path": "skills/post-to-chat/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "408a278d46470bb1d259fac0cca33474d7e022ad7fa1aa28799f28675f0ebf10": {
+      "description_zh": "只读浏览 RingCentral Team Chat 近期聊天及选定对话中的帖子、笔记、任务和事件，或直接查看指定频道与人员的新内容；可按姓名、邮箱、分机或电话号码查找同事。",
+      "source": "Lets the authenticated RingEX Chat user browse recent Team Chat chats and read a selected one as a formatted stream of posts, notes, tasks, or events, or jump straight to a named channel/person and catch up on what's new there. Also resolves a colleague by name, email, extension, or phone number. Read-only. Use when the user wants to catch up on Team Chat/Glip, see what's new in a channel, review recent posts/notes/tasks/events, read a specific conversation, or find someone in the directory.",
+      "source_sha256": "408a278d46470bb1d259fac0cca33474d7e022ad7fa1aa28799f28675f0ebf10",
+      "source_path": "skills/read-team-chat/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "17aff94c269e0fe7fcaf56ba06c45277e2b22a6f6d54d44fefd7f7fb996bfd6d": {
+      "description_zh": "代表已认证 RingEX Phone 用户发送单条个人间短信，先明确接收者及发送号码，并在发送前确认准确消息内容；支持主动短信和回复。",
+      "source": "Sends a single person-to-person SMS on behalf of the authenticated RingEX Phone user, resolving the recipient, disambiguating the sending number, and confirming the exact message before sending. Use when the user asks to text someone, send an SMS, message a phone number, or reply to a text via RingEX Phone.",
+      "source_sha256": "17aff94c269e0fe7fcaf56ba06c45277e2b22a6f6d54d44fefd7f7fb996bfd6d",
+      "source_path": "skills/send-sms/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9bcfcdf1231799df38d3161a0c427a77a6ee038ebbc14b3d1bae1c562392916e": {
+      "description_zh": "将已认证 RingEX Phone 用户的近期 SMS、MMS 对话列为可点击列表，并显示所选线程的格式化短信内容；不包含语音信箱或传真。",
+      "source": "Presents the authenticated RingEX Phone user's SMS and MMS inbox as a clickable list of recent conversations, then renders the selected conversation as a formatted text-message stream. Excludes voicemail and fax. Use when the user asks to see their texts, SMS inbox, message threads, who they've been texting, or to open a text conversation with someone.",
+      "source_sha256": "9bcfcdf1231799df38d3161a0c427a77a6ee038ebbc14b3d1bae1c562392916e",
+      "source_path": "skills/sms-inbox/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ff965aef9378211bbe0a2a4be32aee294f0bfd17c40c446aebdc49f0929e9bef": {
+      "description_zh": "列出已认证 RingEX Phone 用户的近期语音信箱，读取所选留言的来电者、时间和可用的已核验转录；适用于新留言检查与遗漏跟进，不包含短信或传真。",
+      "source": "Presents the authenticated RingEX Phone user's voicemail inbox as a clickable list of recent messages, then reads back the selected voicemail's caller, time, and verified transcription when available. Excludes SMS and fax. Use when the user asks to see their voicemails, check for new voicemail, read a voicemail transcript, or catch up on missed voicemail.",
+      "source_sha256": "ff965aef9378211bbe0a2a4be32aee294f0bfd17c40c446aebdc49f0929e9bef",
+      "source_path": "skills/voicemail-inbox/SKILL.md",
+      "package_sha256": "06007d5ac91879c4b82a30741816402a0b729c3fcd38e699ebc5831c4eb6e360",
+      "source_package": "RingCentral-0.3.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f1537cae65cd984ed14d064bd61db77e8b752640ea10ed496863cd87f78152c8": {
+      "description_zh": "在暂存交接前沿规格符合度和代码标准两个独立维度审查变更，以并行全新上下文子代理检查需求匹配、正确性、边界与惯例，汇总报告并记录 gate.clean；位于安全门禁之后、责任审查之前，仅报告缺陷，不修复或提交。",
+      "source": "The bundled two-axis code review — use to review a change for quality and spec-fit before it is staged and handed off. Trigger on 'review this change/branch/PR', 'code review', 'is this sound', 'does this match the ticket', or as the orchestrator's Stage 3 review step. It reviews the diff along two independent axes run as parallel fresh-context sub-agents — Spec (does the change do what the plan/PRD/ticket asked, no more, no less?) and Standards (is the code correct, safe on edge cases, and conventional?) — then aggregates both into one house-style report and records the gate.clean criterion the Stop hook enforces. It runs AFTER the Security Gate and BEFORE the ownership review. It reports defects; it never fixes them, never commits, and never rubber-stamps.",
+      "source_sha256": "f1537cae65cd984ed14d064bd61db77e8b752640ea10ed496863cd87f78152c8",
+      "source_path": "skills/code-review/SKILL.md",
+      "package_sha256": "7ccbbf64591da078ec5f7721bc479723d96ef829a18d3f9d60174e4355b8ae92",
+      "source_package": "Ringmaster-2.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa346c0db2c464018461962215ef58e6cec1fdb98718f325153ecdb53f0478d5": {
+      "description_zh": "作为软件任务的决策编排入口，明确目标、按批准后的通俗计划分派专家或后备流程，运行测试架构与对抗安全门禁，交付暂存且已审阅的工作；覆盖功能、测试、数据库、重构和文档等，原说明禁止提交、推送、合并及操作生产。",
+      "source": "The decision-making ringmaster for any software task. Use at the START of essentially any build, change, fix, or review request, and whenever a request is vague (\"help me build X\", \"add Y\", \"fix this\", \"make it better\"). Covers new/updated frontends, new/changed features, writing/updating/pruning tests, databases, payments, current-library lookups, refactors, docs, and skill/plugin creation. It frames the real goal, plans in plain-language chunks behind an approval gate, routes each step to the best available specialist or a built-in fallback, and runs the bundled Test Architect and adversarial Security Gate before handing off staged, reviewed work. Enforces hard safety rails: never commits/pushes/merges, never runs against production. Stack-agnostic. Trigger even when no specific tool or test framework is named.",
+      "source_sha256": "aa346c0db2c464018461962215ef58e6cec1fdb98718f325153ecdb53f0478d5",
+      "source_path": "skills/orchestrator/SKILL.md",
+      "package_sha256": "7ccbbf64591da078ec5f7721bc479723d96ef829a18d3f9d60174e4355b8ae92",
+      "source_package": "Ringmaster-2.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "86b26cd886724e0aecd5e73480c5189b738fe0e4c5a13f54298f47d9194af3eb": {
+      "description_zh": "在安全和代码审查后帮助开发者理解并承担 AI 编写代码的责任，通过理解代理生成基于差异的问题、主会话答题及逐项讲解重建理解，记录可审计 gate.owned 签署；不修复、不提交，也不自动认可。",
+      "source": "The ownership review - use when a developer must take 100% responsibility for a code change written largely by AI and wants to genuinely understand and stand behind it before shipping. Trigger on 'review this branch/PR', 'code review', 'help me own this code', 'I have to be responsible for this', 'sign off on this change', or 'make sure I understand this before I ship'. It runs AFTER detection (the Security Gate and the code-review pipeline find the bugs) and adds what they cannot - it reconstructs the developer's understanding through active recall by dispatching the comprehension agent to generate diff-grounded questions, conducts the quiz answer-first in the main thread, teaches on every miss with grounded explanations a junior could follow, and records an auditable ownership sign-off (gate.owned) that the Stop hook enforces. It never fixes code, never commits, and never rubber-stamps.",
+      "source_sha256": "86b26cd886724e0aecd5e73480c5189b738fe0e4c5a13f54298f47d9194af3eb",
+      "source_path": "skills/ownership-review/SKILL.md",
+      "package_sha256": "7ccbbf64591da078ec5f7721bc479723d96ef829a18d3f9d60174e4355b8ae92",
+      "source_package": "Ringmaster-2.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "69f8743a7994d231bfe1d45496634d9349131819529fe021c75a27b6a6b2720a": {
+      "description_zh": "在编写测试代码前，从 Jira、Confluence 等权威需求推导完整可追溯的正常、边界、失败及状态转换测试场景，识别真实需求缺口，并生成独立 HTML、CSV 覆盖报告；只读需求平台，不改生产代码，可暂存但不提交或操作生产。",
+      "source": "Write brutally thorough, fully-traceable test **scenarios** from a requirement — a Jira/Confluence (or Trello/Linear/Azure DevOps/GitHub Issues) source of truth — BEFORE any test code, then a self-contained HTML/CSV coverage report. This is the requirements-first counterpart to the Test Architect: it trusts the spec and distrusts the code. It reads the ticket, interrogates it for genuine gaps, and derives every scenario that must be true (happy path, every boundary, every failure path, every state transition). Use for \"write test scenarios for PROJ-142\", \"cover this Jira ticket\", \"what should we test for this story?\", \"scenario coverage from the requirements\", or any request that starts from a requirement rather than from code. Aimed at BAs, Test Analysts, and QA leads. Read-only on the tracker; never edits production code; stages, never commits; never runs against production.",
+      "source_sha256": "69f8743a7994d231bfe1d45496634d9349131819529fe021c75a27b6a6b2720a",
+      "source_path": "skills/scenarios-from-requirements/SKILL.md",
+      "package_sha256": "7ccbbf64591da078ec5f7721bc479723d96ef829a18d3f9d60174e4355b8ae92",
+      "source_package": "Ringmaster-2.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b63f6bb9bf9e70f98049e5bf1fa19754006a03fd3c05cc077a8258e676416480": {
+      "description_zh": "作为测试架构师，经明确规划和批准后，为任意语言或框架规划、编写、精简、运行及审阅自动化测试，涵盖 TDD、回归、易不稳定测试和过期测试清理；仅交付干净暂存结果，不修改生产代码、提交或在生产执行。",
+      "source": "Acts as a Principal Test Architect to plan, write, prune, run, and hand off automated tests for any codebase in any language or framework — never touching production code, never committing, never running against production. Use whenever the user wants to add, fix, expand, refactor, or review tests for a feature, bug, ticket, or component — including TDD / red-green work, regression coverage, raising test quality, hardening flaky suites, or pruning stale tests, behind an explicit plan-and-approve step with a clean staged handoff. Trigger even for \"write tests for X\", \"cover this with tests\", \"add a test for this bug\", \"tighten up our test suite\", or a named ticket — and even when no test framework is mentioned. For requirements-first work — writing brutally thorough test **scenarios** from a Jira/Confluence ticket *before* any code exists — see the sibling **`scenarios-from-requirements`** skill; this Test Architect takes over once those scenarios are confirmed, to write and run the tests.",
+      "source_sha256": "b63f6bb9bf9e70f98049e5bf1fa19754006a03fd3c05cc077a8258e676416480",
+      "source_path": "skills/test-architect/SKILL.md",
+      "package_sha256": "7ccbbf64591da078ec5f7721bc479723d96ef829a18d3f9d60174e4355b8ae92",
+      "source_package": "Ringmaster-2.6.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0d80ebd2210f4924f53fefb84acbb0bbe952b35552098b82739f62f61419a74e": {
+      "description_zh": "补齐 Ripplo 代码审查未能覆盖的工作流，逐项读取缺口并添加应用缺少的 API 或路由，使相关状态可建立和观察，再逐项报告处理结果。",
+      "source": "Add what a Ripplo review could not cover. Use when the user pastes `/ripplo:cover` with a code review id or a list of workflows, or asks to make an uncovered workflow testable. Reads each gap, adds the API or route the app lacks so Ripplo can set up and observe that state, and reports per gap.",
+      "source_sha256": "0d80ebd2210f4924f53fefb84acbb0bbe952b35552098b82739f62f61419a74e",
+      "source_path": "skills/cover/SKILL.md",
+      "package_sha256": "f0a095b0a1663eec1c15e1b393e422e430be1192580318bfc8379b96d3a6ac58",
+      "source_package": "Ripplo-0.17.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92ca9f9e4bdff363abecb29231bc353dc1c8e3e16274bfdc549615b50a770601": {
+      "description_zh": "通过 Ripplo CLI 获取已发布审查问题，渲染失败画面、分类各问题并在工作树修复应用，适用于按审查编号处理发现或查询审查结果。",
+      "source": "Address the findings of a Ripplo code review. Use when the user pastes a Ripplo code review id, says 'address the review', or asks what Ripplo found. Pulls the published issues with the CLI, renders the failing frames, classifies each issue, fixes the app in the working tree.",
+      "source_sha256": "92ca9f9e4bdff363abecb29231bc353dc1c8e3e16274bfdc549615b50a770601",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "f0a095b0a1663eec1c15e1b393e422e430be1192580318bfc8379b96d3a6ac58",
+      "source_package": "Ripplo-0.17.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c29d0c773ce5a8706f2980a6f23cde5293abe45af763ea918334435e2ca86234": {
+      "description_zh": "按所述内容、标题、主题或存放位置搜索和读取 Riverside 制作、工作室、项目、录音、编辑、导出与转录，获取下载分享链接或后续流程所需 ID；编辑和社交发布使用专用技能。",
+      "source": "Use when the user wants to search, find, list, browse, or retrieve their Riverside content — productions, studios, projects, recordings, edits, exports, transcripts — by what was said in it, by its title or topic, or by where it lives; when they ask for a download or share link; or when another workflow first needs a studioId, productionId, projectId, sessionId, or editId. Not for creating or changing an edit (see video-editing), and not for publishing to social platforms (see social-publishing).",
+      "source_sha256": "c29d0c773ce5a8706f2980a6f23cde5293abe45af763ea918334435e2ca86234",
+      "source_path": "skills/content-discovery/SKILL.md",
+      "package_sha256": "da9e5c94bcec6493b62d75f37500a28d39a6250ab5336dd60be225eb0c8ba49f",
+      "source_package": "Riverside-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d9ea8aeb9711719eb091cfc885955ef201878bf65fe50cc31f40d343af559673": {
+      "description_zh": "在 Claude Code、Cursor、ChatGPT 或 Codex 安装连接 Riverside，排查认证、401、循环登录、工具缺失、账号及套餐问题，并区分功能未启用或前置条件错误与连接故障。",
+      "source": "Use when installing or connecting Riverside on Claude Code, Cursor, ChatGPT, or Codex; when authentication, 401, auth-loop, tool-not-found, account, or plan issues prevent tools from working; or when a feature-disabled or precondition error might be mistaken for a connection failure. Do not use for normal content, editing, or publishing after the connection works.",
+      "source_sha256": "d9ea8aeb9711719eb091cfc885955ef201878bf65fe50cc31f40d343af559673",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "da9e5c94bcec6493b62d75f37500a28d39a6250ab5336dd60be225eb0c8ba49f",
+      "source_package": "Riverside-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3adea06621d3f34ac9ccd85627e333e7a4677092eddb51dbd303f9ff8b20d850": {
+      "description_zh": "将 Riverside 片段发布、上传、分享或定时发布到已连接的 YouTube、Shorts、TikTok、Instagram、Facebook、LinkedIn 或 X；不用于剪辑、账号连接管理或发布后的帖子管理。",
+      "source": "Use when the user wants to post, share, publish, upload, or schedule a Riverside clip to a connected social platform — YouTube, YouTube Shorts, TikTok, Instagram, Facebook, LinkedIn, or X (e.g. \"post my clip to TikTok\", \"schedule this to YouTube for 9am\", \"share on LinkedIn\"). Not for creating or editing clips (see video-editing), connecting or disconnecting social accounts, or managing posts once they are published.",
+      "source_sha256": "3adea06621d3f34ac9ccd85627e333e7a4677092eddb51dbd303f9ff8b20d850",
+      "source_path": "skills/social-publishing/SKILL.md",
+      "package_sha256": "da9e5c94bcec6493b62d75f37500a28d39a6250ab5336dd60be225eb0c8ba49f",
+      "source_package": "Riverside-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41183b87729f5b3e9afe781213865cee1f3f4f908142945bc088d80db01a4aff": {
+      "description_zh": "创建可编辑 Riverside 项目或修改现有编辑内容，支持剪切、修整、清理、字幕、布局、裁切、品牌、叠加层、素材与音乐；内容检索和社交发布另用专用技能，疑似认证故障先排查连接。",
+      "source": "Use when the user wants to cut, trim, clean up, caption, lay out, crop, brand, add overlays, stock media or music to, or otherwise change the content of a Riverside edit, or to turn a raw recording into an editable edit. Not for browsing or searching existing content (see content-discovery), and not for publishing to social platforms (see social-publishing). If the question is whether an editing error is really an authentication or connection problem, use setup first.",
+      "source_sha256": "41183b87729f5b3e9afe781213865cee1f3f4f908142945bc088d80db01a4aff",
+      "source_path": "skills/video-editing/SKILL.md",
+      "package_sha256": "da9e5c94bcec6493b62d75f37500a28d39a6250ab5336dd60be225eb0c8ba49f",
+      "source_package": "Riverside-0.7.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1c1784402ed343d41fd87acfab7bc1d327571ca308b059f79c3e3adeb3517768": {
+      "description_zh": "在用户明确要求申请、发送或联系后，为指定 RobinReal 或符合条件的 Comparis 房源发出一次已认证联系请求；不用于浏览、比较、收藏、模糊兴趣或不支持的提供方。",
+      "source": "Send one authenticated contact request for an exact RobinReal or eligible Comparis listing. Use only after the user explicitly asks to apply, send, or contact, including the widget Apply button. This is a destructive external action; do not use for browsing, comparing, favoriting, vague interest, unsupported providers, or unrelated requests.",
+      "source_sha256": "1c1784402ed343d41fd87acfab7bc1d327571ca308b059f79c3e3adeb3517768",
+      "source_path": "skills/apply-to-listing/SKILL.md",
+      "package_sha256": "701fd9837c33f965499c1a9767d36b7e3c847dfdbd33b1c29a37952bb8f1aa34",
+      "source_package": "Robin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9ce2607d6fdf76f9df36e5ccd0d4f9a81113f36cbb9c18bb2d31da3232f992a3": {
+      "description_zh": "按用户明确请求将一条 Robin 房源加入或移出收藏，可进行一次安全 OAuth 恢复；不用于浏览、比较、申请或仅查看房源。",
+      "source": "Add or remove one Robin listing from the user's favorites, with one safe OAuth recovery. Use when the user explicitly asks to save, favorite, bookmark, unsave, or remove a listing, including a widget favorite button. Do not use for browsing, comparing, applying, unrelated requests, or merely viewing a listing.",
+      "source_sha256": "9ce2607d6fdf76f9df36e5ccd0d4f9a81113f36cbb9c18bb2d31da3232f992a3",
+      "source_path": "skills/save-favorite-listing/SKILL.md",
+      "package_sha256": "701fd9837c33f965499c1a9767d36b7e3c847dfdbd33b1c29a37952bb8f1aa34",
+      "source_package": "Robin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aa21ebfd4671901138c54653842bfbac4a4e320cac9e4c6e7d7d148de9d02c30": {
+      "description_zh": "搜索瑞士 Robin 出租或出售房源，覆盖住宅、商业物业、停车位、土地、酒店、农业、附属房间和花园；不用于法律或无关请求。",
+      "source": "Search Swiss Robin real-estate inventory. Use for rent or sale, including homes, commercial property, parking, land, hospitality, agriculture, secondary rooms, and gardens. Do not use for legal or unrelated requests.",
+      "source_sha256": "aa21ebfd4671901138c54653842bfbac4a4e320cac9e4c6e7d7d148de9d02c30",
+      "source_path": "skills/search-and-show-listings/SKILL.md",
+      "package_sha256": "701fd9837c33f965499c1a9767d36b7e3c847dfdbd33b1c29a37952bb8f1aa34",
+      "source_package": "Robin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "acecccaf2cb5999e459a66e246ce58fccecdf499629d8d363405de8e505030f2": {
+      "description_zh": "依据已认证用户最新 Robin 搜索档案展示受支持的最佳匹配瑞士房源，适用于个性化推荐、匹配排序和最新匹配；不用于普通条件搜索、匿名浏览、档案生成持久化或不支持类别。",
+      "source": "Render the best supported Swiss real-estate listings for an authenticated user's latest Robin search profile. Use for personalized recommendations, listings for the user, profile matches, best-match ordering, or newest personalized matches. Do not use for ordinary criteria searches, anonymous browsing, profile synthesis or persistence, unsupported categories, or unrelated requests.",
+      "source_sha256": "acecccaf2cb5999e459a66e246ce58fccecdf499629d8d363405de8e505030f2",
+      "source_path": "skills/show-recommended-listings/SKILL.md",
+      "package_sha256": "701fd9837c33f965499c1a9767d36b7e3c847dfdbd33b1c29a37952bb8f1aa34",
+      "source_package": "Robin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0b20ff70dd6ebc83caf90a9ad1c0cc225672e5b1651353d723f5d604bed5d17": {
+      "description_zh": "在 Robin 插件启用且用户明确要求登录、连接或访问时，通过 sign_in 开始或确认账号关联；不处理无关登录，收藏和申请技能自行管理其认证恢复。",
+      "source": "Start or confirm Robin account linking with `sign_in`. Use when the Robin plugin is active and the user explicitly asks to sign in, connect, link, or access Robin, including its direct sign-in button. Do not use for unrelated sign-in requests; favorite and application skills own their authentication recovery.",
+      "source_sha256": "a0b20ff70dd6ebc83caf90a9ad1c0cc225672e5b1651353d723f5d604bed5d17",
+      "source_path": "skills/sign-in-to-robin/SKILL.md",
+      "package_sha256": "701fd9837c33f965499c1a9767d36b7e3c847dfdbd33b1c29a37952bb8f1aa34",
+      "source_package": "Robin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9be394a815e86d9fe81c58b63289dca53cd8991d1fe5a5596fd4156bc1985174": {
+      "description_zh": "管理已核验用户的个性化 Robin 搜索档案，仅适用于 Robin 规定的到期搜索历史流程；不用于普通修改、匿名用户或无关请求。",
+      "source": "Manage a verified user's personalized Robin search profile. Use only for Robin's due search-history contract; do not use for ordinary edits, anonymous users, or unrelated requests.",
+      "source_sha256": "9be394a815e86d9fe81c58b63289dca53cd8991d1fe5a5596fd4156bc1985174",
+      "source_path": "skills/update-search-profile/SKILL.md",
+      "package_sha256": "701fd9837c33f965499c1a9767d36b7e3c847dfdbd33b1c29a37952bb8f1aa34",
+      "source_package": "Robin-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9d2e97f393e5f7e09cae06b25475ed5287c773ee909f7339798ec0039d4e2962": {
+      "description_zh": "在 Roblox 项目使用 Luau 严格模式的类型模式，包括注解、Instance? 收窄、前向声明、带类型远程接口和泛型，并修复常见 --!strict 类型错误与检查警告。",
+      "source": "Luau strict mode typing patterns — annotations, narrowing Instance? results, forward declarations, typed remotes, generics, and fixing common --!strict type errors. Use when writing Luau code, enabling --!strict, or resolving Luau type-checker warnings in Roblox projects.",
+      "source_sha256": "9d2e97f393e5f7e09cae06b25475ed5287c773ee909f7339798ec0039d4e2962",
+      "source_path": "skills/luau-strict-typing/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6b71dc0cf460d7542220f0414395c96d7628daea03228f9c1a56d852a0975dfd": {
+      "description_zh": "一次生成跨客户端与服务器的 Roblox 玩法系统，包含共享类型、经过校验的服务端模块、客户端控制器和远程注册，适用于商店、背包、战斗能力、任务等新功能。",
+      "source": "Generate a complete, secure client/server gameplay system for Roblox — shared types, validated server module, client controller, and remote registration in one pass. Use when adding a feature like a shop, inventory, combat ability, quest, or any system that spans client and server.",
+      "source_sha256": "6b71dc0cf460d7542220f0414395c96d7628daea03228f9c1a56d852a0975dfd",
+      "source_path": "skills/new-system/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fb9b509cd90f743be72138e83fc6d4b5f372d1979804d7385b48796984cdd122": {
+      "description_zh": "使用 roblox-reviewer 代理对 Roblox/Luau 代码进行结构化安全、数据保护、性能与类型审查，适用于代码评审、漏洞与泄漏审计和发布前检查。",
+      "source": "Run a structured security, data-safety, performance and typing review of Roblox/Luau code using the roblox-reviewer agent. Use when asked to review Roblox code, audit a game for exploits or leaks, or before shipping a system.",
+      "source_sha256": "fb9b509cd90f743be72138e83fc6d4b5f372d1979804d7385b48796984cdd122",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57c0533093152be0c76a6ba65cc470b6adf4ef29237150555bcde1af05da81a7": {
+      "description_zh": "设计 Roblox 项目架构，采用 ModuleScript 替代 _G，组织客户端、服务器与共享代码、启动流程、CollectionService 管理器和远程接口，并保持 Rojo 兼容结构。",
+      "source": "Roblox project architecture — ModuleScript patterns over _G, client/server/shared layout, bootstrapping, CollectionService managers, remote organization, and Rojo-friendly structure. Use when starting a Roblox project, adding a new system, restructuring spaghetti scripts, or deciding where code should live.",
+      "source_sha256": "57c0533093152be0c76a6ba65cc470b6adf4ef29237150555bcde1af05da81a7",
+      "source_path": "skills/roblox-architecture/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb8e1e1112c78cb62de061ddd8cbd4876ac9ef54ce77304509a3e861e7511256": {
+      "description_zh": "实现和审查 Roblox 玩家数据持久化，涵盖 DataStore 重试退避、会话锁、自动保存、BindToClose、Schema 版本与迁移，适用于存取数据和数据丢失问题。",
+      "source": "Safe player data persistence in Roblox — DataStore retry/backoff, session locking, autosaves, BindToClose, schema versioning and migration. Use when writing or reviewing any code that touches DataStoreService, player profiles, saving/loading, or data loss bugs.",
+      "source_sha256": "cb8e1e1112c78cb62de061ddd8cbd4876ac9ef54ce77304509a3e861e7511256",
+      "source_path": "skills/roblox-datastores/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9f469b18cdb8b8af92e070b3fc44988ea9463d2d47ceb0c3c7aabbaf9c27b2bf": {
+      "description_zh": "诊断和优化 Roblox 性能与内存，防止连接泄漏、控制逐帧分配、使用 StreamingEnabled、减少网络流量、管理实例预算及分析性能；适用于卡顿、内存增长和 RunService 循环。",
+      "source": "Roblox performance and memory patterns — connection leak prevention, per-frame allocation discipline, StreamingEnabled, network traffic reduction, instance budgets, and profiling. Use when diagnosing lag/memory growth, writing RunService loops, or reviewing Roblox code for performance.",
+      "source_sha256": "9f469b18cdb8b8af92e070b3fc44988ea9463d2d47ceb0c3c7aabbaf9c27b2bf",
+      "source_path": "skills/roblox-performance/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1d2cb241995d608d8ad1d0091cf7a4d6572122ba9d974c04bb9e45839ddce798": {
+      "description_zh": "为 Roblox 游戏采用服务端权威安全模式，验证 RemoteEvents、RemoteFunctions 和玩家输入，限流并防止利用漏洞；适用于货币、伤害、背包及购买逻辑，不能信任客户端数据。",
+      "source": "Server-authoritative security patterns for Roblox games — validating RemoteEvents/RemoteFunctions, preventing exploits, rate limiting, and never trusting the client. Use when writing or reviewing any code that touches RemoteEvents, RemoteFunctions, player input, currency, damage, inventory, or purchases.",
+      "source_sha256": "1d2cb241995d608d8ad1d0091cf7a4d6572122ba9d974c04bb9e45839ddce798",
+      "source_path": "skills/roblox-security/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "28e0a5700e244d707f41c1826cfb9f3986fd68349c0a6705d9caefcd7be2f337": {
+      "description_zh": "建立 Roblox 测试与 QA 流程，使用受门禁限制的作弊远程接口进行状态测试、TestEZ 单元测试、可测试纯逻辑模块及多客户端试玩，适用于玩法验证和状态相关缺陷排查。",
+      "source": "Testing and QA workflows for Roblox games — gated cheat remotes for live-state QA, TestEZ unit tests, pure-logic module design for testability, and multi-client playtesting. Use when setting up testing, debugging state-dependent bugs, verifying gameplay systems, or reviewing QA tooling.",
+      "source_sha256": "28e0a5700e244d707f41c1826cfb9f3986fd68349c0a6705d9caefcd7be2f337",
+      "source_path": "skills/roblox-testing/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09e0ad9fedadbf933909e2d3d68beb630e122cc1de97099db21b5820b143e52e": {
+      "description_zh": "构建和审查 Roblox UI 与视觉效果，涵盖响应式缩放、TweenService、CanvasGroup 裁切、ViewportFrames、粒子注意事项与游戏反馈效果，适用于 HUD、商店和背包界面。",
+      "source": "Roblox UI and visual effects patterns — responsive scaling, TweenService animation, CanvasGroup clipping, ViewportFrames, particle gotchas, and juicy game-feel effects. Use when building or reviewing ScreenGuis, HUDs, shop/inventory interfaces, animations, or VFX in Roblox.",
+      "source_sha256": "09e0ad9fedadbf933909e2d3d68beb630e122cc1de97099db21b5820b143e52e",
+      "source_path": "skills/roblox-ui/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b788904b838ec99a18c42bb01532232e0fcfa8b9b5858030a78ea29044f56d9d": {
+      "description_zh": "为新建或已有 Roblox 项目建立工具链脚手架，包含 Rojo、Wally、Selene、StyLua、严格 Luau 和 GitHub Actions CI。",
+      "source": "Scaffold a professional Roblox project with Rojo, Wally, Selene, StyLua, strict Luau, and GitHub Actions CI. Use when starting a new Roblox project or adding proper tooling to an existing one.",
+      "source_sha256": "b788904b838ec99a18c42bb01532232e0fcfa8b9b5858030a78ea29044f56d9d",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "8b25e7166a6dbe79afb4267e547d6335fb3c389e0aa83f17654aaae899cc196a",
+      "source_package": "roblox-dev-0.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "399b97669072b6da48282449c49d462288835f94459191aa95cddfce29867e0b": {
+      "description_zh": "通过 RoboSystems MCP 从 RoboLedger 图读取已关账期间报表、KPI、营运资本和经营计划，按约束逐项核验数据，生成独立 HTML 董事会演示并打印 PDF，再根据董事会决定修订计划；适用于董事会材料、投资者更新和季度经营回顾。",
+      "source": "Build a board presentation from a RoboLedger graph over the RoboSystems MCP server — pull the closed period's statements, KPIs, working capital and operating plan, verify every figure against its guard rails, render a self-contained HTML deck and print it to PDF, then revise the plan from what the board decides. Use for \"board deck\", \"board pack\", \"board meeting\", \"investor update\", \"quarterly business review\", \"QBR\", \"make the slides for the board\", or any request to present a RoboLedger graph's results.",
+      "source_sha256": "399b97669072b6da48282449c49d462288835f94459191aa95cddfce29867e0b",
+      "source_path": "skills/roboledger-board-pack/SKILL.md",
+      "package_sha256": "b8918c95635d917fd4c4ecb5291e69c0bcd335bd11f3f927b65bf5c69c183540",
+      "source_package": "RoboSystems-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6f6dddb276d9bd690dd8dd29f0d7e55a93f765a5234173cecf11aabf02011221": {
+      "description_zh": "通过 RoboSystems MCP 在 RoboLedger 图执行或配置月末关账，明确财务日历、清除同步及调节项阻碍、按明细计划起草调整分录、审阅、关闭期间并核验回执；也涵盖折旧计划、期间过账和重开。",
+      "source": "Run or set up a month-end close on a RoboLedger graph over the RoboSystems MCP server — orient on the fiscal calendar, clear sync and reconciling-item blockers, draft schedule-driven adjusting entries, review, close the period, and verify the receipt. Use for \"close the books\", \"close July\", \"what's blocking the close\", \"set up depreciation schedules\", \"month-end\", \"period close\", or any request to post, review, or reopen a fiscal period on a RoboLedger graph.",
+      "source_sha256": "6f6dddb276d9bd690dd8dd29f0d7e55a93f765a5234173cecf11aabf02011221",
+      "source_path": "skills/roboledger-close/SKILL.md",
+      "package_sha256": "b8918c95635d917fd4c4ecb5291e69c0bcd335bd11f3f927b65bf5c69c183540",
+      "source_package": "RoboSystems-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1395bcbfc1ec1de2deb13a197a42fb81f7a5887ce4b8c0b1b71f422450c8cbab": {
+      "description_zh": "介绍 RoboSystems MCP 的会计与财务报告知识图谱，包括 SEC XBRL、RoboLedger 总账和 RoboInvestor 组合，明确连接范围并选择工具族，以 Schema、示例查询、Cypher 或总账 GraphQL 探索图；公司分析和关账转用专用技能。",
+      "source": "Orientation for the RoboSystems MCP server — accounting and financial-reporting knowledge graphs (SEC EDGAR XBRL filings, RoboLedger general ledgers, RoboInvestor portfolios). Use whenever \"RoboSystems\", \"RoboLedger\", \"RoboInvestor\", the `sec` graph, or a `kg…` graph id is mentioned, to understand what the connection is scoped to, which tool family answers an intent, and how to explore a graph (schema → example queries → Cypher, plus GraphQL on ledger graphs). For SEC company analysis use the sec-filing-analysis skill; for a month-end close use roboledger-close.",
+      "source_sha256": "1395bcbfc1ec1de2deb13a197a42fb81f7a5887ce4b8c0b1b71f422450c8cbab",
+      "source_path": "skills/robosystems/SKILL.md",
+      "package_sha256": "b8918c95635d917fd4c4ecb5291e69c0bcd335bd11f3f927b65bf5c69c183540",
+      "source_package": "RoboSystems-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f73a727db94950b4cf814e9e166fe11e2ec5e3111736f6a5a51e995a95e97329": {
+      "description_zh": "通过 RoboSystems sec 图分析上市公司的 SEC EDGAR XBRL 披露，按股票代码或 CIK 获取报表，跨期跨公司比较指标、解析概念到元素，并全文搜索 10-K、10-Q 叙述。",
+      "source": "Analyze a public company from its SEC EDGAR XBRL filings on the RoboSystems `sec` graph — statements by ticker or CIK, cross-period and cross-company metric comparisons, concept-to-element resolution, and full-text search over 10-K/10-Q narrative. Use for questions like \"show me NVIDIA's income statement\", \"compare gross margin across the last eight quarters\", \"which filers mention goodwill impairment\", or any request that names a ticker, CIK, 10-K, 10-Q, or XBRL concept.",
+      "source_sha256": "f73a727db94950b4cf814e9e166fe11e2ec5e3111736f6a5a51e995a95e97329",
+      "source_path": "skills/sec-filing-analysis/SKILL.md",
+      "package_sha256": "b8918c95635d917fd4c4ecb5291e69c0bcd335bd11f3f927b65bf5c69c183540",
+      "source_package": "RoboSystems-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e4107697656b9c8ef2ffd33c33c2fe53a0281325700f265f04822172f6cc92b2": {
+      "description_zh": "使用 Rolino Blog Studio 规划、起草、编辑、审批和发布博客，调整写作频率，并将已批准文章发布或定时发布到网站。",
+      "source": "Plan, write, approve, and publish blog articles with Rolino Blog Studio. Use when the user wants a blog content plan, wants an article drafted or edited, asks to change their blogging cadence, or wants an approved article published or scheduled to their website.",
+      "source_sha256": "e4107697656b9c8ef2ffd33c33c2fe53a0281325700f265f04822172f6cc92b2",
+      "source_path": "skills/blog-studio/SKILL.md",
+      "package_sha256": "c0eecd334a93d700af02417da6ce384fbff3e2a68cc71623c064fde02fedc256",
+      "source_package": "Rolino-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bab23c19cd503bb32b1bb5de8f99d1b0cb4d3fce9f000aa0eab77fbd05bbcdfd": {
+      "description_zh": "查看 Rolino 周或月内容排期，识别缺口、草稿、失败帖子及上线前社交账号健康问题，并生成内容日历摘要。",
+      "source": "Review what's scheduled in Rolino and spot gaps or problems. Use when the user asks what's going out this week or month, wants a content calendar summary, asks which posts are drafts or failed, or wants to know whether their social accounts are healthy before a launch.",
+      "source_sha256": "bab23c19cd503bb32b1bb5de8f99d1b0cb4d3fce9f000aa0eab77fbd05bbcdfd",
+      "source_path": "skills/content-calendar/SKILL.md",
+      "package_sha256": "c0eecd334a93d700af02417da6ce384fbff3e2a68cc71623c064fde02fedc256",
+      "source_package": "Rolino-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a6daa24f35b5b2d1cdf466f314e77d2cd065963e30ed895a73b46f39674ff637": {
+      "description_zh": "调查和恢复 Rolino 发布失败、卡住或结果不明确的帖子，检查未发出、待处理或重复发布情况，并处理重试、改期和取消排期。",
+      "source": "Investigate and recover a Rolino post that failed, got stuck, or has an uncertain publishing result. Use when the user says a post didn't go out, shows as failed or pending, may have been posted twice, or asks to retry, reschedule, or cancel a scheduled post.",
+      "source_sha256": "a6daa24f35b5b2d1cdf466f314e77d2cd065963e30ed895a73b46f39674ff637",
+      "source_path": "skills/fix-delivery/SKILL.md",
+      "package_sha256": "c0eecd334a93d700af02417da6ce384fbff3e2a68cc71623c064fde02fedc256",
+      "source_package": "Rolino-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc82244919f03329e63a2cfd9d55b4d4135374b2296cd69ac5605b614965d933": {
+      "description_zh": "检查 Rolino 存储用量并安全删除媒体库中未使用的文件，适用于接近容量上限、释放空间或清理旧上传内容。",
+      "source": "Check Rolino storage usage and safely remove unused files from the Media Library. Use when the user asks how much storage they're using, is near their storage limit, or wants to free space or clear out old uploads in Rolino.",
+      "source_sha256": "bc82244919f03329e63a2cfd9d55b4d4135374b2296cd69ac5605b614965d933",
+      "source_path": "skills/media-cleanup/SKILL.md",
+      "package_sha256": "c0eecd334a93d700af02417da6ce384fbff3e2a68cc71623c064fde02fedc256",
+      "source_package": "Rolino-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c77634bfc3613c20a9dcddc9fb6f06fbbd6a852b39969a62d80fd9a81f4e926d": {
+      "description_zh": "通过 Rolino 起草、定时或即时发布 Instagram、TikTok、YouTube、LinkedIn、Bluesky、Facebook Pages 和 Google Business Profile 帖子，也可把媒体或文件夹转为批量内容计划。",
+      "source": "Draft, schedule, or publish social posts through Rolino for Instagram, TikTok, YouTube, LinkedIn, Bluesky, Facebook Pages, or Google Business Profile. Use when the user wants to write a post, turn media or a folder of files into posts, schedule content for a date and time, publish something now, or plan a batch of posts in their Rolino workspace.",
+      "source_sha256": "c77634bfc3613c20a9dcddc9fb6f06fbbd6a852b39969a62d80fd9a81f4e926d",
+      "source_path": "skills/schedule-posts/SKILL.md",
+      "package_sha256": "c0eecd334a93d700af02417da6ce384fbff3e2a68cc71623c064fde02fedc256",
+      "source_package": "Rolino-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a0df2d8327a6bf7c35ba90ddf1d456a01b9d03e170dc2b7259bd34be8d7b9137": {
+      "description_zh": "读取 Rolino SEO 报告、内容机会、网站分析和外链潜在线索，将发现转化为内容选题、页面改进及外链联系准备。",
+      "source": "Read Rolino's SEO reports, content opportunities, website analytics, and backlink prospects, and turn them into content. Use when the user asks what to write about next, wants their weekly SEO report, asks which topics or pages to improve, or wants help finding and preparing backlink outreach.",
+      "source_sha256": "a0df2d8327a6bf7c35ba90ddf1d456a01b9d03e170dc2b7259bd34be8d7b9137",
+      "source_path": "skills/seo-opportunities/SKILL.md",
+      "package_sha256": "c0eecd334a93d700af02417da6ce384fbff3e2a68cc71623c064fde02fedc256",
+      "source_package": "Rolino-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3f86419a6bc6f5a78193530e37d59cf41fd3e47d239d9544a9be6ede0bd68ccf": {
+      "description_zh": "撰写或改写清晰直接、不易误读的罗马尼亚语文档、流程、手册、报错、函件、通知、合同、政策、报告和邮件；原说明以 Legea 24/2000、欧盟清晰写作指南、DOOM 3 与 CLEAR Global 规则为依据。",
+      "source": "Write or rewrite Romanian text so it is clear, direct, and hard to misread —\nthe Romanian counterpart of Simplified Technical English, built on Legea\n24/2000, the European Commission's \"Mic ghid de redactare clară\", DOOM 3, and\nCLEAR Global's Romanian plain-language rules. Use for any Romanian\ndocumentation, procedure, manual, error message, official letter, notice,\ncontract, policy, internal report, or email. Also use when the user says\n\"română clară\", \"limbaj clar\", \"limbaj simplu\", \"simplifică textul\",\n\"rescrie în română simplă\", \"scoate limbajul de lemn\", \"fără birocratisme\",\n\"de-slop\", \"make this Romanian readable\", or asks for Romanian text that a\ntired reader, a translator, or a machine can parse on the first pass. Trigger\nthis whenever you are about to produce more than a paragraph of Romanian prose\nthat someone will have to act on, even if the user did not ask for\nsimplification by name.",
+      "source_sha256": "3f86419a6bc6f5a78193530e37d59cf41fd3e47d239d9544a9be6ede0bd68ccf",
+      "source_path": "romana-clara/SKILL.md",
+      "package_sha256": "7ff27309ff2209f9e30be176c35ab2a1b59b1268c8e71c9062aba41117e83697",
+      "source_package": "Romana Clara-1.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "55e2e9e2d644d17a25e07525b5888c7ad37d62b2f7f765258bb9baf2ecd67011": {
+      "description_zh": "搭建或修改带 LangGraph 后端的 RootCX AI 代理应用，涵盖项目结构、backend/agent.json、createReactAgent、IPC 桥接、工具与 RBAC，以及 invoke SSE 端点。",
+      "source": "Building a RootCX AI agent — project structure, backend/agent.json config, LangGraph createReactAgent, IPC bridge, tools & RBAC, invoke SSE endpoint. Use when scaffolding or editing an agent app with a LangGraph backend.",
+      "source_sha256": "55e2e9e2d644d17a25e07525b5888c7ad37d62b2f7f765258bb9baf2ecd67011",
+      "source_path": "skills/rootcx-agent/SKILL.md",
+      "package_sha256": "ec757d381e3b669adc1450fa27025019a0a544578cecb415604fa3dee653bf97",
+      "source_package": "RootCX-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9801f9b2af1ec1b056ee0c83291082bd25c98f63554f1805c790865b09d1bcee": {
+      "description_zh": "编写 RootCX 应用后端或 Bun worker，使用 serve()、onJob、RPC 和 IPC 协议处理定时或周期任务，涵盖调用者认证和数据访问模式。",
+      "source": "Writing a RootCX app backend/ Bun worker — serve() API with onJob for cron/scheduled jobs, RPC methods, IPC protocol, caller auth, data access patterns. Load when implementing backend/index.ts, handling RPC, jobs, crons, scheduled tasks, or recurring work.",
+      "source_sha256": "9801f9b2af1ec1b056ee0c83291082bd25c98f63554f1805c790865b09d1bcee",
+      "source_path": "skills/rootcx-backend-worker/SKILL.md",
+      "package_sha256": "ec757d381e3b669adc1450fa27025019a0a544578cecb415604fa3dee653bf97",
+      "source_package": "RootCX-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6238c2b8207e5c8a814be5f5945760a1777f2c24575e08068fcd44805e65ac78": {
+      "description_zh": "编写或修改 RootCX manifest.json，定义数据契约、实体、字段类型、实体链接和 RBAC，并理解安装部署时 Core 将 Schema 同步到 PostgreSQL 的方式。",
+      "source": "Writing or editing manifest.json for a RootCX app — defining the data contract, entities, field types, entity links, RBAC permissions, and understanding how Core syncs the schema to PostgreSQL on install/deploy.",
+      "source_sha256": "6238c2b8207e5c8a814be5f5945760a1777f2c24575e08068fcd44805e65ac78",
+      "source_path": "skills/rootcx-manifest/SKILL.md",
+      "package_sha256": "ec757d381e3b669adc1450fa27025019a0a544578cecb415604fa3dee653bf97",
+      "source_package": "RootCX-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eab19d8af57c76a9370149b86761e4a647901d4e00e29712823d879c418d9e6b": {
+      "description_zh": "直接调用 RootCX Core REST API，处理集合增删改查、批量查询、集成绑定和操作、异步任务队列，涵盖 where 运算符、查询语法与认证，供 worker、外部脚本和测试使用。",
+      "source": "Calling the RootCX Core REST API directly — collections CRUD, bulk/query endpoints, integrations bind and actions, async jobs queue. Covers where operators, query syntax, and auth. Use when writing worker code, external scripts, or tests that hit the Core HTTP API.",
+      "source_sha256": "eab19d8af57c76a9370149b86761e4a647901d4e00e29712823d879c418d9e6b",
+      "source_path": "skills/rootcx-rest-api/SKILL.md",
+      "package_sha256": "ec757d381e3b669adc1450fa27025019a0a544578cecb415604fa3dee653bf97",
+      "source_package": "RootCX-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1b9c6f8e79e1a9b8dd78511d07bf10a64a88826f836663ed844785e76985a49": {
+      "description_zh": "通过 React 的 @rootcx/sdk hooks 查询或修改数据，涵盖集合、记录、集成、Core、cron 和运行时客户端，支持 QueryOptions、where 条件、跨应用读取、定时任务及扁平记录结构。",
+      "source": "Querying or mutating RootCX data from React using @rootcx/sdk hooks — useAppCollection, useAppRecord, useIntegration, useCoreCollection, useCrons, useRuntimeClient. Covers QueryOptions, where operators, cross-app reads, cron scheduling, and the flat record shape. Triggers on cron, schedule, recurring, periodic, interval, timer, useCrons.",
+      "source_sha256": "e1b9c6f8e79e1a9b8dd78511d07bf10a64a88826f836663ed844785e76985a49",
+      "source_path": "skills/rootcx-sdk-hooks/SKILL.md",
+      "package_sha256": "ec757d381e3b669adc1450fa27025019a0a544578cecb415604fa3dee653bf97",
+      "source_package": "RootCX-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fe1c0dd6d7a1afb13d239a47d198fbc340c1199fc5ddd370fe00bbdcdc9bd85e": {
+      "description_zh": "使用 @rootcx/ui、Tailwind v4、AppShell 和 Sidebar 构建 RootCX 前端，涵盖表单、数据表、深色模式及 AuthGate 入口；完整组件目录位于引用文档。",
+      "source": "Building RootCX app frontends with @rootcx/ui components, Tailwind v4 styling, AppShell/Sidebar layout, forms, data tables, dark mode, and the AuthGate entry pattern. Load references/components.md for the full component catalogue.",
+      "source_sha256": "fe1c0dd6d7a1afb13d239a47d198fbc340c1199fc5ddd370fe00bbdcdc9bd85e",
+      "source_path": "skills/rootcx-ui/SKILL.md",
+      "package_sha256": "ec757d381e3b669adc1450fa27025019a0a544578cecb415604fa3dee653bf97",
+      "source_package": "RootCX-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ee751d3eb099902eb6fa6b27eea349c1e5e1c565796f3fd0f2ad662b921ef120": {
+      "description_zh": "在终端管理 Rootly 事件行动项，默认列出本人未关闭事项，也可为指定事件新增摘要，适用于事件期间或结束后的跟进记录。",
+      "source": "Manage incident action items from the terminal. Subcommands - list (default - your open action items) or add <incident> \"<summary>\" (create one on an incident). Use to capture follow-ups during or after an incident without opening the Rootly UI.",
+      "source_sha256": "ee751d3eb099902eb6fa6b27eea349c1e5e1c565796f3fd0f2ad662b921ef120",
+      "source_path": "skills/action/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d279e3803ff6c51bff252eb8ff785a3ca3940949a3bd0fd72cb3a64d72ef54a8": {
+      "description_zh": "按短 ID 分诊 Rootly 告警，获取告警记录、事件时间线、同组关联告警及附属事故，在打开控制台前提供背景。",
+      "source": "Triage a Rootly alert by short ID. Pulls the alert record, its event timeline, related alerts in the same group, and any incident the alert is attached to. Use when a page comes in and you want context before opening Rootly.",
+      "source_sha256": "d279e3803ff6c51bff252eb8ff785a3ca3940949a3bd0fd72cb3a64d72ef54a8",
+      "source_path": "skills/alert/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "164804de1201cecc8d0ddd4ff040202c75fd42bb7bb06406c87b3b5625982683": {
+      "description_zh": "为正在处理的 Rootly 事件起草面向相关方的状态更新，明确确认后才发布，适用于公开状态页或内部更新。",
+      "source": "Draft a stakeholder-facing status update for an active incident, then post it after explicit confirmation. Useful for incident commanders pushing public-status-page or internal updates without opening the Rootly UI. Write action - never posts without confirming.",
+      "source_sha256": "164804de1201cecc8d0ddd4ff040202c75fd42bb7bb06406c87b3b5625982683",
+      "source_path": "skills/announce/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ad8530a0084f8d85fd6873249de283839fb4c6967cfe403e46065cd88d6957bb": {
+      "description_zh": "将有关事件、值班、服务和可靠性数据的自然语言问题转换为 Rootly API 调用，并返回结构化答案。",
+      "source": "Ask natural language questions about incidents, on-call, services, and reliability data. Translates your question into Rootly API calls and returns structured answers.",
+      "source_sha256": "ad8530a0084f8d85fd6873249de283839fb4c6967cfe403e46065cd88d6957bb",
+      "source_path": "skills/ask/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2ac6bfcb01177846561b23bd332c23a25f576cccbb49891979b765b7a42cb7cc": {
+      "description_zh": "为 Rootly 事件生成简洁的相关方简报，包含关键细节、影响、时间线及当前状态的管理层摘要。",
+      "source": "Generate a concise stakeholder brief for an incident. Creates executive summary with key details, impact, timeline, and current status.",
+      "source_sha256": "2ac6bfcb01177846561b23bd332c23a25f576cccbb49891979b765b7a42cb7cc",
+      "source_path": "skills/brief/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4eb6ccd87aea5ab6648dd1e88d7ab7b0facf69473ce0cdb48a8bd90e36672e53": {
+      "description_zh": "列出团队或排班的即将开始值班，并在明确确认后创建覆盖安排，让当前用户接替所选班次；未经确认不执行写入。",
+      "source": "Offer to cover someone else's on-call shift. Lists upcoming shifts on a team or schedule and creates an override placing you on the chosen one after explicit confirmation. Write action - never executes without confirming.",
+      "source_sha256": "4eb6ccd87aea5ab6648dd1e88d7ab7b0facf69473ce0cdb48a8bd90e36672e53",
+      "source_path": "skills/cover/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fae621e15c80587cdd46ae23833acda13484439ed40f94c6a9149a09a01ea25c": {
+      "description_zh": "实验性评估部署风险，将代码变更与历史事件、当前事件和值班准备情况结合分析；原说明提示分叉子代理在部分 Claude Code 环境可能无法访问 MCP。",
+      "source": "[experimental] Evaluate deployment risk by analyzing code changes against incident history, active incidents, and on-call readiness. Forked-subagent flow may not have MCP access in all Claude Code contexts.",
+      "source_sha256": "fae621e15c80587cdd46ae23833acda13484439ed40f94c6a9149a09a01ea25c",
+      "source_path": "skills/deploy-check/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c3f3be709530917ae023c79aedc0d49aef2ffb4d72a8d48d97145978faa2bcae": {
+      "description_zh": "生成结构化 Rootly 事件或值班交接文档，用于轮班变更或事件指挥者交接。",
+      "source": "Prepare an incident or on-call handoff document. Creates structured summary for shift changes or incident commander transitions.",
+      "source_sha256": "c3f3be709530917ae023c79aedc0d49aef2ffb4d72a8d48d97145978faa2bcae",
+      "source_path": "skills/handoff/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "40af7eb732e4519bd8e4931316484bbbc74ee5f7879eaa44e0c2b49dd759bbd4": {
+      "description_zh": "查询 Rootly 服务、团队或目录实体的负责人、值班人员、近期可靠性、依赖和当前事件，适用于故障发生后确认归属。",
+      "source": "Look up a service, team, or catalog entity in Rootly. Returns owner, on-call, recent reliability, dependencies, and any active incidents. Use when something breaks and the first question is who owns this.",
+      "source_sha256": "40af7eb732e4519bd8e4931316484bbbc74ee5f7879eaa44e0c2b49dd759bbd4",
+      "source_path": "skills/lookup/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b167711b39e5f1d1e5b9b050e0d4b772c3c6cc898446cf415336f8026d81fd45": {
+      "description_zh": "展示个人 Rootly 仪表盘，汇总本人未完成行动项、作为响应者参与的当前事件及近期值班，适用于每日开始或切回事件工作。",
+      "source": "Personal Rootly dashboard. Shows your open action items, your active incidents (where you're a responder), and your upcoming on-call shifts. Use to start the day or to context-switch back into incident work.",
+      "source_sha256": "b167711b39e5f1d1e5b9b050e0d4b772c3c6cc898446cf415336f8026d81fd45",
+      "source_path": "skills/my/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cccdf94316bcb0be3f3acbcd83ff9f1328d87b466be0e258347705d7a047e78e": {
+      "description_zh": "查看团队当前值班状态、轮班指标和健康信号，了解值班人员、交接背景及工作负荷。",
+      "source": "Show current on-call status, shift metrics, and health indicators for your team. Use to check who's on-call, handoff context, or on-call workload.",
+      "source_sha256": "cccdf94316bcb0be3f3acbcd83ff9f1328d87b466be0e258347705d7a047e78e",
+      "source_path": "skills/oncall/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c19ca6e131d626b25bcdf0504ab0742b5ebaeb329db720bdca904d81a3645482": {
+      "description_zh": "实验性调查和响应生产事件，获取背景、寻找相似历史事件、提出方案并协助协调；原说明提示分叉子代理可能无 MCP 权限，建议暂时优先使用 status 和 brief。",
+      "source": "[experimental] Investigate and respond to a production incident. Pulls context, finds similar past incidents, suggests solutions, and enables coordination. Forked-subagent flow may not have MCP access in all Claude Code contexts -- prefer /rootly:status + /rootly:brief for now.",
+      "source_sha256": "c19ca6e131d626b25bcdf0504ab0742b5ebaeb329db720bdca904d81a3645482",
+      "source_path": "skills/respond/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c74f8012aba6ef2856d079332619521040735cb4147366cd57de4bc3d9618bb2": {
+      "description_zh": "实验性根据 Rootly 事件数据生成结构化事后复盘；原说明提示分叉子代理在部分 Claude Code 环境可能无法访问 MCP。",
+      "source": "[experimental] Generate a structured post-incident retrospective from incident data. Forked-subagent flow may not have MCP access in all Claude Code contexts.",
+      "source_sha256": "c74f8012aba6ef2856d079332619521040735cb4147366cd57de4bc3d9618bb2",
+      "source_path": "skills/retro/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "60771bf05b17803682e4eb6273a46e54cb58df432a96eb932d165d7ebe724199": {
+      "description_zh": "安装 Rootly 插件后核验 OAuth2 或 API token 的 MCP 连接，并指导完成配置。",
+      "source": "Set up the Rootly plugin. Verifies MCP server connection via OAuth2 or API token and guides through configuration. Run this after installing the plugin.",
+      "source_sha256": "60771bf05b17803682e4eb6273a46e54cb58df432a96eb932d165d7ebe724199",
+      "source_path": "skills/setup/SKILL.md",
+      "package_sha256": "5c0c3ded40476b828b5860d91d225af0ec61cad13e32b0598faecadc5df56dcd",
+      "source_package": "Rootly-2.2.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
