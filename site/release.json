@@ -1,17 +1,17 @@
 {
-  "release": "2026-10-08-skill-chinese-batch-05",
-  "previous_commit": "456d2d1",
+  "release": "2026-10-08-skill-chinese-batch-06",
+  "previous_commit": "931b0f3",
   "source_ui_commit": "92bd6f5",
-  "index_sha256": "e5b92f607de5400f7b6abace1d37ff5877c300de060be97af121e2ec3ad0ede7",
+  "index_sha256": "9ad362ea697048d1884b003139e41f4b80b6e0a7fb1954098eaf471e26760c18",
   "package_bytes_unchanged": true,
   "editorial_notice": {
     "template_summaries": 879,
-    "missing_skill_chinese": 8195
+    "missing_skill_chinese": 8075
   },
   "skill_chinese_progress": {
-    "baseline_missing": 8315,
+    "baseline_missing": 8195,
     "newly_covered": 120,
-    "translated_total": 2234,
+    "translated_total": 2354,
     "total": 10429,
     "all_complete": false,
     "new_source_definitions": 120,
@@ -29,6 +29,11 @@
       "file": "Awesome Ecom Skills-1.0.0-v2.zip",
       "path": "template/SKILL.md",
       "issue": "未填写的技能编写模板，中文说明模板性质，不视为真实业务技能"
+    },
+    {
+      "file": "batocera-1.0.1-v2.zip",
+      "path": "template/SKILL.md",
+      "issue": "未填写的技能编写模板，具体业务用途未确认"
     }
   ]
 }

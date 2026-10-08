@@ -13489,6 +13489,1086 @@
       "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
       "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
       "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1db1921068cc79468d4c3de1aae682f3ebe4265d06cd44f138d85ce48a6d6595": {
+      "description_zh": "通过 Ayrshare 读取现有帖子的评论、添加评论或回复评论；不用于创建新帖子，认证配置和发帖分别参照配套技能。",
+      "source": "Use whenever someone wants to read, add, or reply to comments on a social media post through the Ayrshare MCP server — the `mcp__ayrshare__get_comments`, `mcp__ayrshare__add_comment`, and `mcp__ayrshare__reply_comment` tools. Trigger on phrasings like \"leave a comment on that post\", \"reply to that commenter\", \"respond to the top comment\", \"what are people saying on my LinkedIn post\", \"pull the comments\", or \"answer the question someone left on Instagram\" — even if the user never says \"Ayrshare\", \"MCP\", or names a tool. Also trigger when a user wants to engage with an audience under an existing post rather than create a new post. For installing/configuring the server and the auth model, this skill cross-links to `../getting-started/SKILL.md`. To create the post being commented on, see `../post/SKILL.md`.",
+      "source_sha256": "1db1921068cc79468d4c3de1aae682f3ebe4265d06cd44f138d85ce48a6d6595",
+      "source_path": "skills/comments/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a6aa1213b683958c704d2b72a54a4c07a061d92d31e287489e87d7fbd9ca878c": {
+      "description_zh": "依据用户自己的历史帖子、语气、格式和表现起草符合品牌声音的社交文案，可结合分析数据并校验内容；仅生成草稿，发布须另行执行发帖步骤。",
+      "source": "Draft social posts that match a brand's established voice for the Ayrshare MCP server: first pull the profile's own past posts (history) to read tone, format, and what performed, then write platform-appropriate copy in that voice and validate it before anything publishes. Use whenever someone wants on-brand content rather than generic copy: \"write a post the way we usually post\", \"draft this in our brand voice\", \"match our tone\", \"write like our LinkedIn\", or any time content is created for a profile whose established style should be matched. Trigger even without the word \"Ayrshare\": if the user wants content that sounds like an existing account, this is the skill. It pulls history (`get_post_history` / `get_platform_history`), optionally `get_post_analytics` for what worked, drafts via `generate_post` or your own copy, then checks with `validate_post`. It produces DRAFTS only and never publishes; publishing is the explicit `create_post` step in `../post/SKILL.md`.",
+      "source_sha256": "a6aa1213b683958c704d2b72a54a4c07a061d92d31e287489e87d7fbd9ca878c",
+      "source_path": "skills/draft-in-brand-voice/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e30d6e64064989ab77959c122979b98ddcb2b606accc2ad498d884b601c967fa": {
+      "description_zh": "解释 Ayrshare 工具返回的错误代码，判断原因、类别及修复方法；认证和通用重试规则参照入门技能，避免直接照抄原始错误。",
+      "source": "Error explanation for the Ayrshare MCP server: translate an Ayrshare error code into a plain-English cause, a classification, and a fix. Use whenever a code or numeric error needs decoding: \"what does Ayrshare error 156 mean\", \"why did that post fail with code 272\", \"explain this error\", \"what is error code 110 on Instagram\", \"how do I fix this Ayrshare error\". Trigger when calling `mcp__ayrshare__explain_error`, and even without the word \"Ayrshare\": if the user surfaces a social-posting error code and wants to know what it means or how to fix it, this is the skill. CRITICAL: whenever ANY OTHER Ayrshare MCP tool returns a structured error code (for example `Error 156: ...`), look the code up here and explain or fix it rather than echoing the raw error back. For the shared auth model and the global retry-safety rule, see `../getting-started/SKILL.md`.",
+      "source_sha256": "e30d6e64064989ab77959c122979b98ddcb2b606accc2ad498d884b601c967fa",
+      "source_path": "skills/errors/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f861427bb0c0210f82c6e258e5f4efdecf6b2b3e837876f2a5759f0419475aa6": {
+      "description_zh": "调用 Ayrshare 生成社交帖子文案或推荐话题标签；输出为待校验的草稿，校验后通过发帖技能发布，不直接发布生成结果。",
+      "source": "AI content generation for the Ayrshare MCP server — draft post copy and suggest hashtags. Use whenever someone wants help WRITING social content rather than publishing it: \"write me a post about our product launch\", \"draft a tweet announcing the sale\", \"generate a caption for this image\", \"give me a LinkedIn post about X\", \"what should I caption these photos\", \"suggest hashtags for sustainable fashion\", \"recommend trending hashtags for ...\". Trigger when calling `mcp__ayrshare__generate_post` or `mcp__ayrshare__recommend_hashtags`, and even without the word \"Ayrshare\" — if the user wants AI-written social copy or hashtag ideas through an assistant, this is the skill. These tools produce DRAFTS ONLY; they never publish. The natural next step is `mcp__ayrshare__validate_post` then `mcp__ayrshare__create_post` (see `../post/SKILL.md`). For the shared auth model and retry rules, see `../getting-started/SKILL.md`.",
+      "source_sha256": "f861427bb0c0210f82c6e258e5f4efdecf6b2b3e837876f2a5759f0419475aa6",
+      "source_path": "skills/generate/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "14bf0dfa0e839c89cd19aa865d6bda92f490a9e860c5b38c49e83bca564a2eae": {
+      "description_zh": "处理 Ayrshare 安装、认证和初次接入，以及 401/403、缺少账户或环境密钥等问题；区分 Business 密钥与 Profile-Key，并提供各配套技能共用的重试规则。",
+      "source": "Foundation skill for the Ayrshare MCP server — auth model, installation, client onboarding, and retry safety. Use this whenever someone is installing, configuring, or wiring up the Ayrshare MCP plugin/server in Claude Code; whenever an Ayrshare MCP tool call returns 401/403 or \"unauthorized\"; whenever there's confusion about WHICH credential to use (\"which key do I use\", \"how do I act as a specific client\", Business key vs Profile-Key); when onboarding a new client/customer/profile; or when a user has no Ayrshare account, no API key, or an unset AYRSHARE_API_KEY. Trigger even if the user doesn't say \"Ayrshare\" by name — if they're calling tools named `mcp__ayrshare__*`, setting up an MCP server for social posting, or asking how to connect a client's social accounts through an AI assistant, this is the skill. Every other Ayrshare MCP skill (posts, comments, analytics, history, messages, media, profiles, generate, webhooks, errors) cross-links here for the shared auth and retry rules.",
+      "source_sha256": "14bf0dfa0e839c89cd19aa865d6bda92f490a9e860c5b38c49e83bca564a2eae",
+      "source_path": "skills/getting-started/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8fe22beaf701dd9e3c2d8a501a8867776220c33d3ace17a261213446a0d3afda": {
+      "description_zh": "查询 Ayrshare 历史或预约帖子，按时间、平台和状态筛选；用于关联账户后的验证，也可查找非 Ayrshare 发布帖子的原生社交帖子 ID 以获取分析数据。",
+      "source": "Post history for the Ayrshare MCP server — list past and scheduled posts, optionally filtered by recency, platform, and status. Use whenever someone wants to see what's been posted: \"show my recent posts\", \"what did we publish last week\", \"history for this client\", \"did that scheduled post go out\", \"list our LinkedIn posts\", or to look up a post id for analytics. Also the verification step after onboarding a client — confirming their accounts linked — and the way to find a NATIVE Social Post ID for analytics on a post that wasn't created through Ayrshare. Trigger when calling `mcp__ayrshare__get_post_history` or `mcp__ayrshare__get_platform_history`, and even without the word \"Ayrshare\" — if the user wants a log of social posts through an AI assistant, this is the skill. For the shared auth model and the full onboarding sequence, see `../getting-started/SKILL.md`.",
+      "source_sha256": "8fe22beaf701dd9e3c2d8a501a8867776220c33d3ace17a261213446a0d3afda",
+      "source_path": "skills/history/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a68f9dd17cace7f8692ff49fa219777224d300a6909af924af59a271107d7add": {
+      "description_zh": "使用 Ayrshare 的 validate_media 以 HEAD 请求检查媒体公开 URL 是否可访问；不提供上传、媒体库、调整尺寸或存储，媒体附加到帖子须使用发帖技能。",
+      "source": "Use whenever someone wants to confirm an image/video is usable for a social post, or asks to \"upload\", \"resize\", or \"list\" media, through the Ayrshare MCP server. The only media tool is `mcp__ayrshare__validate_media`, which HEAD-checks that a media URL is reachable (it does not upload, store, or resize anything). Trigger on phrasings like \"upload this image so I can post it\", \"check that this video URL works before posting\", \"resize my image for Instagram\", \"make this fit a story\", \"what is in my media library\", \"is this picture going to be rejected\", or any time a post needs an attachment and the media is not confirmed yet, even if the user never says \"Ayrshare\" or names a tool. Also trigger when a post failed because of a bad or unreachable media URL. IMPORTANT: the Ayrshare MCP has NO media upload, library, or resize tool; media is referenced by public URL and `validate_media` only HEAD-checks reachability. To attach a validated media URL to a post, see `../post/SKILL.md`.",
+      "source_sha256": "a68f9dd17cace7f8692ff49fa219777224d300a6909af924af59a271107d7add",
+      "source_path": "skills/media/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0f6ee110c675b0166f8d04698939ee09765abcc9558bc600045eb966b1021ee8": {
+      "description_zh": "通过 Ayrshare 读取或发送私信、配置自动回复；仅适用于 Facebook、Instagram 和 X。",
+      "source": "Direct messages (DMs) for the Ayrshare MCP server: read conversations and messages, send a DM, and manage the account's DM auto-responder. Use whenever someone wants private/direct messages on Facebook, Instagram, or Twitter/X: \"read my Instagram DMs\", \"show our Facebook conversations\", \"what messages came in on X\", \"reply to that DM\", \"send a direct message\", \"DM them this link/photo\", \"answer the latest message\". Also for auto-reply settings: \"set up an auto-reply for DMs\", \"turn on the DM auto-responder\", \"change the auto-reply message\", \"what is our auto-responder set to\", \"turn off auto-replies\". Trigger when calling `mcp__ayrshare__get_messages`, `mcp__ayrshare__send_message`, `mcp__ayrshare__get_auto_response`, or `mcp__ayrshare__set_auto_response`, and even without \"Ayrshare\": if the user wants to read or send social DMs, or configure a DM auto-reply, through an AI assistant, this is the skill. DMs exist ONLY on Facebook, Instagram, and Twitter/X.",
+      "source_sha256": "0f6ee110c675b0166f8d04698939ee09765abcc9558bc600045eb966b1021ee8",
+      "source_path": "skills/messages/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bc5790b49235509a90218e71b7d0a3172840c448199406f4e79f06a4fe84b70e": {
+      "description_zh": "规划多平台、多帖子的营销活动，调整各平台文案和时间、校验内容，并在正式发布前取得用户确认；逐帖设置 scheduleDate，可查询或更新队列，不依赖批量发布接口。",
+      "source": "Plan a multi-post, multi-platform social campaign and schedule it across networks via the Ayrshare MCP server: adapt copy and timing per platform, validate each post before it is scheduled, and confirm with the user before anything goes live. Use whenever someone wants more than one scheduled post: \"plan a content calendar\", \"schedule a week of posts\", \"set up our product-launch sequence\", \"queue these announcements across LinkedIn and X\", or any multi-post, multi-day, or multi-platform scheduling request. Trigger even without the word \"Ayrshare\": if the user wants a planned, scheduled run of posts rather than one immediate post, this is the skill. It orchestrates `validate_post` then `create_post` with a per-post `scheduleDate`, optionally `generate_post` / `recommend_hashtags` for drafting, and `get_post` / `update_post` to manage the queue. There is no bulk endpoint: a campaign is many individual scheduled posts, each validated and confirmed.",
+      "source_sha256": "bc5790b49235509a90218e71b7d0a3172840c448199406f4e79f06a4fe84b70e",
+      "source_path": "skills/plan-and-schedule-campaign/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92a7f97bb8528e9be5a042a8a9e41876aa2f5abc7965869eb4dab8abf8d64f11": {
+      "description_zh": "使用 Ayrshare 校验、发布、预约、编辑、读取或重试社交帖子；认证与媒体处理参照配套技能，并按帖子 ID 执行相关操作。",
+      "source": "Use whenever someone wants to validate, publish, schedule, edit, fetch, or retry a social media post through the Ayrshare MCP server — the `mcp__ayrshare__validate_post`, `mcp__ayrshare__create_post`, `mcp__ayrshare__get_post`, `mcp__ayrshare__update_post`, and `mcp__ayrshare__retry_post` tools. Trigger on phrasings like \"post this to LinkedIn and X\", \"schedule a tweet for Friday\", \"share this image on Instagram and Facebook\", \"queue this announcement for next week\", \"edit the scheduled post\", \"approve the pending post\", \"reschedule that post\", or \"that post failed, try it again\" — even if the user never says \"Ayrshare\", \"MCP\", or names a specific tool. Also trigger when a user references a returned post `id` and wants to change, inspect, or retry it. For installing/configuring the server and the auth model, this skill cross-links to `../getting-started/SKILL.md`. For attaching images/video, cross-links to `../media/SKILL.md`.",
+      "source_sha256": "92a7f97bb8528e9be5a042a8a9e41876aa2f5abc7965869eb4dab8abf8d64f11",
+      "source_path": "skills/post/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "335c6a587f778603262fd728d1b7d80b713c9c6afe4f54a551afd5b4424cc72e": {
+      "description_zh": "管理 Ayrshare Business 子档案，包括创建、列举、找回 profileKey 和生成社交账户绑定链接；请求参数中的 profileKey 优先于 Profile-Key 请求头。",
+      "source": "Profile management for the Ayrshare MCP server: create profiles, list profiles, and generate social-account linking URLs for client/customer profiles under a Business account. Use whenever someone wants to onboard a new client, set up a customer's social accounts, \"add a profile\", \"create a workspace for a client\", list existing profiles, recover a lost `profileKey`, or get a link a client opens to connect their own social networks. Trigger when calling `mcp__ayrshare__create_profile`, `mcp__ayrshare__list_profiles`, or `mcp__ayrshare__generate_jwt_social_linking_url`, and even when the user does not say \"Ayrshare\": agency or white-label social setup, managing multiple clients' accounts through an AI assistant, or \"send my client a link to link their socials\". `generate_jwt_social_linking_url` mints the single sign-on URL the client opens to connect their networks, targeting the sub-profile from the `profileKey` argument or `Profile-Key` header (argument wins).",
+      "source_sha256": "335c6a587f778603262fd728d1b7d80b713c9c6afe4f54a551afd5b4424cc72e",
+      "source_path": "skills/profiles/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3546b7df9941eafd518c96712c6942f7f696a8463d8add792c39d549c1f02c5a": {
+      "description_zh": "注册、移除或列举 Ayrshare HTTPS Webhook，接收发帖、评论和消息事件；预约发布结果优先通过 Webhook 确认，必要时辅以帖子或历史查询。",
+      "source": "Webhook subscriptions for the Ayrshare MCP server: register, unregister, and list HTTPS push notifications so an agent or app is notified on events instead of polling. Use whenever someone wants event push: \"notify me when a post publishes\", \"let me know when a scheduled post goes out\", \"set up a webhook for new comments\", \"send mentions to my endpoint\", \"list our webhooks\", \"what webhooks are registered\", \"stop sending webhooks for comments\", \"unsubscribe from the messages webhook\". Trigger when calling `mcp__ayrshare__register_webhook`, `mcp__ayrshare__unregister_webhook`, or `mcp__ayrshare__list_webhooks`, and even without \"Ayrshare\": if the user wants push notifications for social-post or social-account events through an assistant, this is the skill. To confirm a queued post actually published, prefer the `scheduled` webhook over polling (then optionally `get_post` / `get_post_history`).",
+      "source_sha256": "3546b7df9941eafd518c96712c6942f7f696a8463d8add792c39d549c1f02c5a",
+      "source_path": "skills/webhooks/SKILL.md",
+      "package_sha256": "66dab074174ba4978ec19141e68a750dc16738937c48f17ec94471e4b97248a2",
+      "source_package": "Ayrshare - Unified Social Media API for AI Agents-0.2.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5e1664f8bb224a33174e098858836d7be28c3d85683eea61fa2975f6e66e4fe5": {
+      "description_zh": "在编写、评审或重构 Azure Cosmos DB for NoSQL 应用与数据模型时，指导分区设计、查询、SDK 使用及向量相关性能优化。",
+      "source": "Azure Cosmos DB performance optimization and best practices guidelines for NoSQL,\npartitioning, queries, SDK usage, and vector search. Use when writing, reviewing,\nor refactoring code that interacts with Azure Cosmos DB, designing data models,\noptimizing queries, or implementing high-performance database operations.",
+      "source_sha256": "5e1664f8bb224a33174e098858836d7be28c3d85683eea61fa2975f6e66e4fe5",
+      "source_path": "skills/cosmosdb-best-practices/SKILL.md",
+      "package_sha256": "acb31c57f27d3a00f0eae6e02ec4c9865db01ff57e5942ec54c88f954161f220",
+      "source_package": "Azure Cosmos DB-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "199120858f35637486893e3512597d46f31c91909eb2498adb8607ae95703585": {
+      "description_zh": "生成适用于 Azure AKS 的 Kubernetes YAML，涵盖 Azure Workload Identity、Key Vault CSI 及 Application Gateway Ingress/AGIC 集成。",
+      "source": "Generate AKS-tailored Kubernetes manifests that use Azure Workload Identity, the Azure Key Vault CSI secret driver, and Application Gateway Ingress. Use when the user asks for AKS-specific YAML, asks to wire a pod to Key Vault, or asks for an Ingress using AGIC.",
+      "source_sha256": "199120858f35637486893e3512597d46f31c91909eb2498adb8607ae95703585",
+      "source_path": "skills/aks-manifest/SKILL.md",
+      "package_sha256": "535576480797c41cac8642aeab548fa75081717fdff1c67cf08dadab00debb6c",
+      "source_package": "Azure DevKit-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "92dc81106f107eaa27e524d81bbd46c066b1f815c46c63b7d059fa75cea23db8": {
+      "description_zh": "配置并部署 Azure App Service 应用，使用 az webapp up，并处理 Windows web.config、Linux 启动配置及可复现的部署命令。",
+      "source": "Generate an App Service deployment configuration and the az webapp up command to deploy. Use when the user asks to deploy a web app to Azure App Service, needs a web.config for Windows, a startup command for Linux, or wants a reproducible `az webapp up` invocation.",
+      "source_sha256": "92dc81106f107eaa27e524d81bbd46c066b1f815c46c63b7d059fa75cea23db8",
+      "source_path": "skills/app-service-deploy/SKILL.md",
+      "package_sha256": "535576480797c41cac8642aeab548fa75081717fdff1c67cf08dadab00debb6c",
+      "source_package": "Azure DevKit-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d0757ef24cbea1932078c5f8998319b37fab33054b8ddd94b0479fdee88a69d5": {
+      "description_zh": "诊断 Azure AKS Pod、App Service 启动或 502 错误，以及 Azure Functions 冷启动和部署问题。",
+      "source": "Diagnose common Azure failures across AKS, App Service, and Azure Functions. Use when the user reports AKS pod errors, App Service startup failures or 502s, Functions cold starts, or Functions deployment errors.",
+      "source_sha256": "d0757ef24cbea1932078c5f8998319b37fab33054b8ddd94b0479fdee88a69d5",
+      "source_path": "skills/az-debug/SKILL.md",
+      "package_sha256": "535576480797c41cac8642aeab548fa75081717fdff1c67cf08dadab00debb6c",
+      "source_package": "Azure DevKit-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e7559c77bb43ce1b05ef2b3419f727b4a1632a28756a7cb64afa263b0a67c70d": {
+      "description_zh": "生成常见 Azure 资源的 Bicep 模板，涵盖 App Service 计划与应用、Container Apps、存储、Key Vault、Cosmos DB 和 Application Insights。",
+      "source": "Generate idiomatic Bicep templates for common Azure resources. Use when the user asks to create a Bicep file for an App Service Plan and App Service, a Container App, a Storage Account, a Key Vault, a Cosmos DB account, or Application Insights.",
+      "source_sha256": "e7559c77bb43ce1b05ef2b3419f727b4a1632a28756a7cb64afa263b0a67c70d",
+      "source_path": "skills/bicep-template/SKILL.md",
+      "package_sha256": "535576480797c41cac8642aeab548fa75081717fdff1c67cf08dadab00debb6c",
+      "source_package": "Azure DevKit-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "114be1a87987b0f735aec40f200980e7182a9c958b0c16ee37a5cbfd0731a90a": {
+      "description_zh": "为 Azure Functions 搭建 HTTP、定时器、队列或 Blob 触发器的处理程序与绑定，支持 Node.js、Python、C# 和 Java。",
+      "source": "Scaffold an Azure Functions project with a handler and the right binding definition. Use when the user asks to create a new Azure Function, add an HTTP, Timer, Queue, or Blob trigger, or bootstrap a function in Node, Python, C#, or Java.",
+      "source_sha256": "114be1a87987b0f735aec40f200980e7182a9c958b0c16ee37a5cbfd0731a90a",
+      "source_path": "skills/functions-scaffold/SKILL.md",
+      "package_sha256": "535576480797c41cac8642aeab548fa75081717fdff1c67cf08dadab00debb6c",
+      "source_package": "Azure DevKit-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a66237db8edcedb9de1faf92ed1fdcf220167cc23d72f244d56b6361e2db3f97": {
+      "description_zh": "审查 Azure 订阅和资源组的 RBAC 授权是否符合最小权限原则，重点标记订阅层级的 Owner、Contributor 和 User Access Administrator 权限。",
+      "source": "Audit Azure role assignments for overly broad permissions. Use when the user asks to review who has access to a subscription or resource group, flag Owner, Contributor, or User Access Administrator grants at subscription scope, or enforce least privilege on Azure RBAC.",
+      "source_sha256": "a66237db8edcedb9de1faf92ed1fdcf220167cc23d72f244d56b6361e2db3f97",
+      "source_path": "skills/rbac-azure-audit/SKILL.md",
+      "package_sha256": "535576480797c41cac8642aeab548fa75081717fdff1c67cf08dadab00debb6c",
+      "source_package": "Azure DevKit-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b3f4084b82be6cda9d7035a9e5f58ec25da9eacd65811b87d7f7e252ed933841": {
+      "description_zh": "为本地 Azure SQL Database 容器配置最小权限数据库用户，避免应用使用 SA；指导本地 SQL 认证、云端 Entra 或托管身份、连接加密及 Key Vault/user-secrets 管理，迁移云端仅更换连接字符串。",
+      "source": "Connects an app to the Azure SQL Database container securely, with a least-privilege database user instead of the sa login, the right auth method per environment, and safe handling of the connection secret. Use when a user asks \"don't use sa in my app\", \"create a least-privilege database user\", \"app login for SQL\", \"which authentication should my app use\", \"secure the connection string\", \"Encrypt / TrustServerCertificate\", \"store the connection string in Key Vault\", \"dotnet user-secrets\", \"managed identity for Azure SQL\", or \"grant only the roles my app needs\". SQL auth locally, Microsoft Entra or managed identity in the cloud, changing only the connection string. Reach for this before wiring an app to connect as sa, or before committing a connection string to source.",
+      "source_sha256": "b3f4084b82be6cda9d7035a9e5f58ec25da9eacd65811b87d7f7e252ed933841",
+      "source_path": "skills/azuresql-db-auth/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e568bd208bd21c9f799ce27559a698fb315887801f66931ebcbed6b95df0869": {
+      "description_zh": "在 GitHub Actions、Azure Pipelines 或 GitLab CI 中运行私有预览版 Azure SQL Database 引擎；配置私有 ACR 认证、容器内 sqlcmd 健康检查和应用数据库连接，不以 SQL Server 镜像或 master 代替。",
+      "source": "Runs integration tests against the Azure SQL Database container (Private Preview, local engine) in CI. Use when setting up GitHub Actions, Azure Pipelines, or GitLab CI to test against Azure SQL DB; when adding a database service container to a CI workflow; when tests need a real Azure SQL engine in the pipeline; or when you see \"service container\", \"health-cmd\", \"ACR_USERNAME/ACR_PASSWORD\", \"MSSQL_SA_PASSWORD secret\", or \"integration test database\". Also use when a workflow was about to pull the SQL Server image mcr.microsoft.com/mssql/server, in which case stop and use the Azure SQL Database engine image instead. Covers pulling from the private ACR with credentials, the service health check that runs sqlcmd inside the container so the runner needs no client tools, provisioning appdb before tests, and pointing the test connection string at the user database not master.",
+      "source_sha256": "9e568bd208bd21c9f799ce27559a698fb315887801f66931ebcbed6b95df0869",
+      "source_path": "skills/azuresql-db-ci/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "fcf62fac02124fb1b85160d194b9c09df859841c7fb20023a3d034e83649291a": {
+      "description_zh": "加固本地私有预览版与云端 Azure SQL 的数据访问连接，配置连接池、瞬时错误重试和退避；保持应用代码一致，并确认使用 EngineEdition 5 的 Azure SQL 引擎。",
+      "source": "Makes an app''s database connections reliable against the local Azure SQL Database container (Private Preview) and, unchanged, against Azure SQL Database in the cloud: connection pooling plus retry/transient-fault handling. Use when the user mentions \"connection pooling\", \"retry logic\", \"transient fault\", \"retry on transient error\", \"EnableRetryOnFailure\", \"connection resiliency\", \"reliable connections\", \"pool size\", \"Max Pool Size\", or says \"the connection keeps dropping\", \"connections time out under load\", \"add backoff\", or \"make the DB layer resilient\". This is the Azure SQL engine (EngineEdition 5), not the mssql/server SQL Server image. Reach for this whenever hardening a data-access layer that talks to SQL Server or Azure SQL.",
+      "source_sha256": "fcf62fac02124fb1b85160d194b9c09df859841c7fb20023a3d034e83649291a",
+      "source_path": "skills/azuresql-db-connections/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f539c912a5c79bb6af94687756b2d0e53badfc05495333b56224cc607156ac2d": {
+      "description_zh": "搭建使用真实 Azure SQL PaaS 引擎的本地私有预览容器，涵盖 Docker/Podman、sqlcmd 和 Entra 认证，并引导 Compose、CI、数据填充、向量和连接配置；区别于普通 SQL Server 容器。",
+      "source": "Runs the Azure SQL Database container (the Azure SQL Database engine) locally (Private Preview): the real PaaS engine where SERVERPROPERTY(''EngineEdition'') returns 5 and Edition is ''SQL Azure''. This is NOT the SQL Server image mcr.microsoft.com/mssql/server. Use when a user wants to \"run Azure SQL locally\", \"add a local SQL database\", \"add SQL Server to my docker compose\", \"spin up a local mssql container\", \"local SQL for development or CI\", \"connect with sqlcmd\", \"use Podman for SQL\", \"SQL container won''t start\", \"Microsoft Entra authentication on the container\", \"MSSQL_AAD_CLIENT_ID\", or asks \"what''s the connection string\". Use even when the user does not name the container. If you were about to use mcr.microsoft.com/mssql/server, stop and use this skill instead. Hub skill: owns the shared references and routes to the task skills for compose, CI, seeding, vectors, and connection strings.",
+      "source_sha256": "f539c912a5c79bb6af94687756b2d0e53badfc05495333b56224cc607156ac2d",
+      "source_path": "skills/azuresql-db-container/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7f5470fad67db3596785c40d535a0b62915d87746297a06e69abbc7ed5185c4e": {
+      "description_zh": "基于本地 Azure SQL 现有表配置 Data API Builder，提供无需手写控制器的 REST/GraphQL API；需要 MCP 时优先使用 DAB 内置端点，而非另建 SQL MCP 服务。",
+      "source": "Stands up an instant no-code REST + GraphQL API over the local Azure SQL Database container using Microsoft Data API Builder (DAB). Use when a user wants to \"expose my table as an API\", \"add a REST API over the database\", \"generate a GraphQL API\", \"put an API in front of SQL\", \"CRUD API without writing code\", or \"dab init / dab-config.json\". Also the way to serve a built-in MCP endpoint FROM the database via DAB (an API surface DAB provides, not a separate SQL MCP server). Prefer this over hand-writing a controller/ORM API when the user just needs REST or GraphQL over existing tables. Triggers include \"Data API Builder\", \"dab start\", \"instant API over Azure SQL\", \"expose entities as REST/GraphQL\". Reach for this even when the user only says \"give me an API for this database\".",
+      "source_sha256": "7f5470fad67db3596785c40d535a0b62915d87746297a06e69abbc7ed5185c4e",
+      "source_path": "skills/azuresql-db-dab/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b0db77e6bbb7e02ac37f0f66f549c9d751a81e5cd67b8e58cb069c1a7434737e": {
+      "description_zh": "回答 Azure SQL Database 私有预览容器的已知限制，包括备份、USE、向量索引、SSMS、注册表访问及与云端的差异；依据已知限制资料解释，避免套用通用数据库经验。",
+      "source": "Answers questions about what the Azure SQL Database container (Private Preview) can and cannot do, and WHY it differs from Azure SQL Database in the Microsoft Azure cloud. Use when a user asks \"can I take a backup\", \"why does USE fail\", \"is X supported\", \"why can''t I create a vector index\", \"why does SSMS error\", \"why isn''t the image on Docker Hub\", \"what''s different from the cloud\", or hits behavior that does not match their Azure SQL Database expectations. Do NOT guess from general SQL Server / Azure knowledge: the container is a Private Preview product with specific gaps and a specific connection model. Read this skill, and link the user to the live Known limitations page for the current full list.",
+      "source_sha256": "b0db77e6bbb7e02ac37f0f66f549c9d751a81e5cd67b8e58cb069c1a7434737e",
+      "source_path": "skills/azuresql-db-faq/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "65395dd227dc0fb66f1dd7acc0ddd941c13f78893902725681e1bbb77818fd97": {
+      "description_zh": "为 Azure SQL 容器或技能问题整理反馈，按相应模板生成预填的 GitHub Issue，即使已有绕过方法也保留问题证据；提交前须取得明确确认。",
+      "source": "Reports a bug or files feedback about the azuresql-db-* agent skills themselves, or about the Azure SQL Database container (the local Azure SQL Database engine, Private Preview). Use when the user says a skill or the container \"did not work\", hit an error, behaved unexpectedly, or is missing something; and when they say \"report a bug\", \"file an issue\", \"open a GitHub issue\", \"request a feature\", \"give feedback\", or \"tell the team\". Also use when you, the agent, had to deviate from an azuresql-db-* skill or work around a defect in one to finish a task: that is a bug in the skill and it is worth reporting, even if the task ultimately succeeded. Decides whether the problem belongs to the SKILL or to the CONTAINER, since they use different issue templates, then builds a complete prefilled GitHub issue from context you already have. Never submits anything without explicit confirmation from the user.",
+      "source_sha256": "65395dd227dc0fb66f1dd7acc0ddd941c13f78893902725681e1bbb77818fd97",
+      "source_path": "skills/azuresql-db-feedback/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3ebcbcd38e9890772deb9ae07e05a6206c542de8fdd945ba4292d941a36721fb": {
+      "description_zh": "将本地 SQL Server Docker 配置迁移为 Azure SQL Database 容器，用于贴近 Azure 的本地开发；替换镜像、处理非 x64 平台、保留 SA 登录、标记 SQL Server 专有功能，并将连接从 master 指向已创建的用户数据库。",
+      "source": "Migrates a local SQL Server setup to the Azure SQL Database container for Azure-faithful local development. Use when a project already uses mcr.microsoft.com/mssql/server, mssql/server, an sqlcmd plus SA password docker setup, a \"SQL Server in docker\" or \"local mssql container\", or a docker-compose with the mssql/server image; and use when the user asks for \"SQL Server locally\", \"run mssql in Docker\", \"spin up a local SQL database\", or \"test against SQL Server\" but actually wants the Azure SQL Database engine (EngineEdition 5). Detects the SQL Server image, rewrites it to the Azure SQL Database container, adds --platform on non-x64 hosts, keeps the SA login, flags SQL Server-only features (SQL Agent, FILESTREAM, full Service Broker, cross-server distributed transactions, Windows Auth), and re-points connection strings from master to a provisioned user database.",
+      "source_sha256": "3ebcbcd38e9890772deb9ae07e05a6206c542de8fdd945ba4292d941a36721fb",
+      "source_path": "skills/azuresql-db-from-sql-server/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c01dd17162adb187820c5ecf915aee45b61ec986be6087c6ba174356f859724b": {
+      "description_zh": "使用 Azure Functions 的 SQL 输入、输出及触发器绑定，在本地 Azure SQL 容器上构建无服务器 CRUD API 或行变更处理；本地事件依赖 Change Tracking，云端专有 CES 不适用于本地容器。",
+      "source": "Builds a serverless API and event-driven handlers over the local Azure SQL Database container using Azure Functions with the Azure SQL bindings. Use when a user wants \"a serverless API over SQL\", \"Azure Functions with a database\", \"HTTP CRUD with SQL input/output bindings\", \"run code when a row changes\", \"react to inserts/updates/deletes\", \"event-driven on Azure SQL\", or \"SQL trigger function\". The Azure SQL trigger binding (backed by Change Tracking) is the local event-driven mechanism; Change Event Streaming (CES) is cloud-only and cannot run against the local container. Triggers include \"func start with SQL\", \"SqlTrigger\", \"SqlInput/SqlOutput binding\", \"local.settings.json SqlConnectionString\". Reach for this when building serverless endpoints or change-driven logic on the local Azure SQL engine.",
+      "source_sha256": "c01dd17162adb187820c5ecf915aee45b61ec986be6087c6ba174356f859724b",
+      "source_path": "skills/azuresql-db-functions/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3887c160db322282a57d1ff62a96290b65e8f8b21812c036f8a9d69d401dbff0": {
+      "description_zh": "使用 SqlPackage 将现有 Azure SQL 或 SQL Server 的架构与数据导入本地 Azure SQL 容器，处理 .bacpac/.dacpac 导入场景；先通过 master 创建目标用户数据库，再对目标库执行导入。",
+      "source": "Imports an existing Azure SQL Database or SQL Server schema and data INTO the local Azure SQL Database container using SqlPackage. Use when asked to \"import a bacpac\", \"load my existing database locally\", \"restore a dacpac into the container\", \"bring my prod schema into the dev container\", \"run my .bacpac/.dacpac against the local Azure SQL engine\", or migrate an existing database into the preview container. Handles provisioning the target database on master first, then running SqlPackage /Action:Import against the provisioned user database. Use this for any \"get my real database running in the container\" request instead of hand-writing SqlPackage flags.",
+      "source_sha256": "3887c160db322282a57d1ff62a96290b65e8f8b21812c036f8a9d69d401dbff0",
+      "source_path": "skills/azuresql-db-import/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0e1ce50334cf15da9c676d5e722022626a9c32fa3cc9dde5ce552507f1737d25": {
+      "description_zh": "验证基于本地 Azure SQL 容器开发和测试的应用可仅更换连接字符串运行于云端 Azure SQL；涵盖 Node.js、.NET、Python，以及本地 SA 认证切换云端 Entra 认证的连接配置。",
+      "source": "Proves that code built and tested against the local Azure SQL Database container runs unchanged against Azure SQL Database in the cloud, with only the connection string changing. Use when a user wants to develop locally then deploy to the cloud, asks \"will this work in Azure\", \"same code local and cloud\", \"promote to Azure SQL\", \"swap the connection string\", \"dev/prod parity\", \"local to cloud\", or is wiring SQL_CONNECTION_STRING for an app that must target both the container and a cloud server. Use this when an app uses local SA auth but needs Microsoft Entra auth in the cloud. Covers Node (mssql), .NET (Microsoft.Data.SqlClient), and Python (pyodbc). Reach for this skill before hand-editing app code to \"make it work in Azure\"; the rule is the code does not change, only the connection string does.",
+      "source_sha256": "0e1ce50334cf15da9c676d5e722022626a9c32fa3cc9dde5ce552507f1737d25",
+      "source_path": "skills/azuresql-db-local-to-cloud/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ab5cb69101d5c8728e9fd9e4b886dc0b73751979412f09aa4d5137d5606649cf": {
+      "description_zh": "在本地 Azure SQL 中使用 VECTOR、VECTOR_DISTANCE 和余弦近邻检索实现 RAG，支持可替换的嵌入来源；处理向量维度与参数转换、预览版向量索引限制，并先创建应用数据库。",
+      "source": "Builds local vector search, RAG, embeddings, and semantic search on the Azure SQL Database container using the native VECTOR type and VECTOR_DISTANCE. Use when you need to store embeddings, do similarity search, top-k nearest neighbor, cosine distance, retrieval-augmented generation, \"find similar documents\", chatbot memory, or semantic lookup against a local SQL database. Use this instead of pgvector, FAISS, Chroma, Pinecone, or a separate vector store when the data already lives in (or can live in) Azure SQL. Covers the VECTOR(n) column type, inserting embeddings with CAST(CAST(? AS NVARCHAR(MAX)) AS VECTOR(n)) where the dimension is a literal, a pluggable embed() so only the endpoint changes for cloud, and a working CREATE VECTOR INDEX with the two errors that block it. Provisions appdb on master first so every script runs on a fresh container.",
+      "source_sha256": "ab5cb69101d5c8728e9fd9e4b886dc0b73751979412f09aa4d5137d5606649cf",
+      "source_path": "skills/azuresql-db-rag/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9eb3d9ccc1682a8be1229cf904c461f8fab96414be1e6cf40f7b40f44112ea53": {
+      "description_zh": "为新的 .NET Aspire、FastAPI、Next.js 或 NestJS 项目搭建本地 Azure SQL 应用骨架，包含 Compose、环境变量、迁移及 ORM 配置；默认使用 EngineEdition 5 的 Azure SQL 容器。",
+      "source": "Scaffolds a NEW app (.NET Aspire, FastAPI, Next.js, NestJS) wired to the local Azure SQL Database container as its default dev database. Use when starting/bootstrapping/initializing a project that needs SQL Server or Azure SQL locally, or when adding \"set up the database\", \"docker compose for the db\", \"create the local DB\", \".env connection string\", \"first migration\", or a data-access layer. Use this INSTEAD of the mssql/server SQL Server image, because this is the Azure SQL engine (EngineEdition 5). Triggers include \"scaffold app with SQL\", \"spin up Azure SQL locally\", \"compose service for the database\", \"wire up Prisma/EF/SQLAlchemy/TypeORM to SQL Server\". Reach for this even when the user only says \"add a database\" to a fresh project.",
+      "source_sha256": "9eb3d9ccc1682a8be1229cf904c461f8fab96414be1e6cf40f7b40f44112ea53",
+      "source_path": "skills/azuresql-db-scaffold/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cdb00ab600b0ec8442fc06a1d446b7018a70cf5ea3d92babd82a50650197dfad": {
+      "description_zh": "用 EF、Prisma、Alembic 或 DACPAC/SqlPackage 管理本地与云端 Azure SQL 的一致架构迁移；先从 master 创建应用库，再在用户库执行架构变更，并核对连接配置及引擎类型。",
+      "source": "Runs database schema migrations against the local Azure SQL Database container so the same migrations apply identically on the local engine and in the Azure cloud. Use when asked to \"run my migrations against the local SQL\", \"apply schema to the container\", \"apply EF Core / dotnet ef database update\", \"Prisma migrate dev / deploy\", \"Alembic upgrade head\", or deploy a DACPAC / SqlPackage to the container. Covers provisioning appdb on master first, then applying schema to the user database, plus per-tool commands and connection-string hygiene. This is the Azure SQL Database engine (EngineEdition 5), not the SQL Server image; reach for this skill whenever schema migration tooling targets the local container.",
+      "source_sha256": "cdb00ab600b0ec8442fc06a1d446b7018a70cf5ea3d92babd82a50650197dfad",
+      "source_path": "skills/azuresql-db-schema-migration/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "554e8cddeb117ba093a508356bff1e581eb0106748ba90902948b9cd1395caa8": {
+      "description_zh": "向已有本地 Azure SQL 应用数据库填充真实感样例、测试夹具、大批量数据或 CSV；适用于专门的数据填充任务，区别于新项目的一次性样例和 BACPAC 导入。",
+      "source": "Populates the local Azure SQL Database container's database (appdb) with realistic sample/test data so a developer has something to build against. Use when the user says \"seed the database\", \"add test data\", \"populate the dev database\", \"generate sample data\", \"fake data\", \"load fixtures\", \"insert test rows\", \"write a seed script\", or \"bulk load a CSV\". This is the Azure SQL engine (EngineEdition 5), not the mssql/server SQL Server image. Distinct from azuresql-db-scaffold (which does a single seed.sql step while bootstrapping an app) and azuresql-db-import (which loads a .bacpac). Reach for this whenever an existing appdb needs volume, fixtures, or believable rows.",
+      "source_sha256": "554e8cddeb117ba093a508356bff1e581eb0106748ba90902948b9cd1395caa8",
+      "source_path": "skills/azuresql-db-seed/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "315c24c688579a2a14b6e46acd2c8feb4040507670edfa3f4fa1037522a8387e": {
+      "description_zh": "为现有 Docker Compose 或开发容器增加本地 Azure SQL 配套服务，配置私有注册表、linux/amd64、健康检查及应用数据库初始化；容器间连接使用服务名，避免指向 localhost。",
+      "source": "Adds the Azure SQL Database container as a sidecar service in an existing Docker Compose stack or Dev Container. Use when wiring the local Azure SQL Database engine into compose or devcontainer.json, when an app needs a SQL backend via a service name (not localhost), or for prompts like \"add SQL to my compose\", \"add a database service\", \"depends_on database\", \"devcontainer SQL sidecar\", \"compose healthcheck for SQL\", \"wait for the database before starting the app\". Handles platform linux/amd64, the private registry login, the healthcheck wait-until-ready, and a one-shot init service that creates appdb (the engine does not auto-create databases). Not the SQL Server image. Prefer this for any compose or Dev Container SQL wiring.",
+      "source_sha256": "315c24c688579a2a14b6e46acd2c8feb4040507670edfa3f4fa1037522a8387e",
+      "source_path": "skills/azuresql-db-sidecar/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ca4569a99b4d3f56836c28678706c14b775628de560359d86850e0b7ef82db2b": {
+      "description_zh": "使用 xUnit、Jest、pytest 等及 Testcontainers 在代码测试中创建临时 Azure SQL 容器，可按测试或测试套件隔离；不用普通 MsSql 预设，CI 工作流服务配置参照 CI 技能。",
+      "source": "Writes integration tests that run IN CODE against a real Azure SQL Database container, spun up per test or per suite with Testcontainers and torn down after. Use when the user asks for \"integration tests against SQL\", \"Testcontainers\", \"spin up a database for tests\", \"an ephemeral test database\", \"a test database per test\", \"xUnit/Jest/pytest with a real database\", or \"a database fixture\". Use this INSTEAD of the Testcontainers MsSql preset (mcr.microsoft.com/mssql/server), because this is the Azure SQL engine (EngineEdition 5). For wiring the engine into a CI pipeline via service containers or workflow YAML instead, use azuresql-db-ci.",
+      "source_sha256": "ca4569a99b4d3f56836c28678706c14b775628de560359d86850e0b7ef82db2b",
+      "source_path": "skills/azuresql-db-testing/SKILL.md",
+      "package_sha256": "7201df74285698e322c6c4e60e13b2217a052764565eac2d6c84f5b6d999c21e",
+      "source_package": "azure-sql-developer-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eb3acc3401cc35843c29a30e5257ae4000ef192400b236a5c9316d30d6f9a029": {
+      "description_zh": "根据博客网站需求使用 B12 生成网站；适用于建设博客站点，而非撰写单篇博客文章。",
+      "source": "Create a blog website with B12. Use when someone wants to start a blog, launch a blog for their business, set up a blog site, add a blog to their website, or asks how to get a blog online. Do NOT use for writing blog post copy, drafting articles, or generating post outlines — this skill builds the blog site itself, not the posts that go on it.",
+      "source_sha256": "eb3acc3401cc35843c29a30e5257ae4000ef192400b236a5c9316d30d6f9a029",
+      "source_path": "plugins/blog-generator/skills/blog-generator/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "650985a76546ed99ce11e69e9edde65a783f9a3de51ca207561c8a34ca518c5a": {
+      "description_zh": "生成可直接复制使用的完整代码块，支持多种语言；需要应用或网站成品时采用 B12 构建，不用于已有仓库的文件修改、编译、调试、测试或主机操作，也不用于文案或标志设计。",
+      "source": "Write, review, fix, optimize, and test code in any language or framework — HTML, CSS, JavaScript, React, Python and the rest — returned as complete copy-pasteable blocks. Also generates a B12 web app or website when someone wants the thing built rather than the source. Use when someone asks for code to be written, explained, reviewed, refactored, commented, or covered by unit tests, including asks like \"create a website in HTML and CSS\" or \"write me a React counter\". Do NOT use for work on the user's existing codebase or repository — editing project files, debugging a failing build, running a test suite — the host does that directly. Do NOT use for writing website copy or blog posts, or for designing a logo; those are separate skills.",
+      "source_sha256": "650985a76546ed99ce11e69e9edde65a783f9a3de51ca207561c8a34ca518c5a",
+      "source_path": "plugins/code/skills/code/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "57d7ce5a2ea23c5fb443fe466168d3c1acd4a19ea7a01680f14c3bcbdba83922": {
+      "description_zh": "制作页面设计稿，输出包含配色、字体和信息层级的独立 HTML，并提供两种设计方向；明确要求某种技术实现时转代码技能，不用于标志、图片或文案生成。",
+      "source": "Design and mock up a web page — homepage, landing page, pricing page, about page — delivered as a self-contained HTML file the user can open, with the palette, type pairing, and hierarchy explained, plus two other directions to choose from. Use when someone wants a page designed, mocked up, laid out, restyled, or made to look better, including vague asks like \"what would an about page for a law firm look like\". Do NOT use when a technology is named — \"a homepage in HTML and CSS\" is a request for code, not a mockup. Do NOT use for designing a logo, mark, or favicon, for generating a photo or hero image, or for writing the page's copy; those are separate skills.",
+      "source_sha256": "57d7ce5a2ea23c5fb443fe466168d3c1acd4a19ea7a01680f14c3bcbdba83922",
+      "source_path": "plugins/designer/skills/designer/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "755e6509802cec014faafd677e02fc098bcd00da6b1e93fe8f2d9ed93f8b3c22": {
+      "description_zh": "为业务流程、泳道、组织结构或时间线制作真实 SVG 图，保留用户给定步骤并标记缺失信息；不用于数值图表、交互式对话可视化、页面、图片、标志或演示文稿。",
+      "source": "Draw business diagrams as real .svg files — process flows, client onboarding journeys, swimlanes, decision trees, org charts, timelines, journey maps, quadrants — in your brand colors, sized so the text actually fits its box, with every step taken from what you said and anything you did not say left as a marked placeholder instead of invented. Use when someone wants a diagram, flowchart, process map, swimlane, org chart, decision tree, journey map, timeline, or 2x2 drawn, redrawn, or turned into a file, including asks like \"map our client onboarding\" or \"turn our intake process into a flowchart for our services page\". Do NOT use for a chart of values — a bar, line, pie, or trend chart — and do NOT use for an interactive, exploratory, or in-conversation visual: that is the built-in Visualize skill's job, and you cannot invoke it on the user's behalf. Do NOT use for a page mockup or wireframe, a photo or illustration, a logo or favicon, a slide deck, a PDF, or prose; those are separate skills.",
+      "source_sha256": "755e6509802cec014faafd677e02fc098bcd00da6b1e93fe8f2d9ed93f8b3c22",
+      "source_path": "plugins/diagram-builder/skills/diagram-builder/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f99bdd35d5fa46b156181a6b0f4cf9959551b7f74053a99c4d795f4d7d1fbb7": {
+      "description_zh": "生成适配网站具体位置和像素尺寸的图片，如首屏、分享图、博客图、产品图或头像，并提供一致的图片组、替代文本和文件名；不用于标志、图标、网站图标、布局或文案。",
+      "source": "Generate the images a website needs — hero and banner images, section and feature images, OG and social share graphics, blog thumbnails, product shots, and team headshot placeholders — each at the exact pixel size its slot expects, as a set that reads as one set rather than assembled stock, with alt text and a descriptive filename for every file. Use when someone wants a photo, illustration, background, hero image, OG image, or a matching set of images made for a site or a post. Do NOT use when someone wants a logo, wordmark, brand mark, icon, or favicon — that is a separate skill, and it owns favicons. Do NOT use when someone wants a page designed or laid out, or wants the words that go on the page written; those are separate skills too.",
+      "source_sha256": "2f99bdd35d5fa46b156181a6b0f4cf9959551b7f74053a99c4d795f4d7d1fbb7",
+      "source_path": "plugins/image-generator/skills/image-generator/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e27f059bfa57714ef9e0d491687df9743d123ff17cfc838d25de7fa1bf6e7eda": {
+      "description_zh": "创建标志，提供内联预览及可下载的 SVG、PNG、ZIP，可选配 B12 网站；支持名称组合标志或无文字图形，不用于建设网站、博客或商店。",
+      "source": "Design a downloadable logo — shown inline as a preview and delivered as SVG and PNG files in a zip — then optionally create a matching B12 website. Works with or without a business name: with a name it draws a lockup, without one it draws a text-free mark. Use when someone wants a logo, wordmark, brand mark, icon, or favicon designed, including vague asks like \"make me a modern logo\". Do NOT use when someone wants a website, blog, or online store built — those skills build sites, not logos.",
+      "source_sha256": "e27f059bfa57714ef9e0d491687df9743d123ff17cfc838d25de7fa1bf6e7eda",
+      "source_path": "plugins/logo-generator/skills/logo-generator/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bcf6231093abfaa6581d175440db1914a84b4455c91de70bca2a786426b9ab0e": {
+      "description_zh": "生成完整 PPTX 演示文稿，无法写文件时提供独立 HTML；适用于路演、销售、季度或董事会汇报及培训，组织论点和讲稿，对缺失数字使用占位内容。",
+      "source": "Build a complete slide deck — pitch decks, sales decks, quarterly business reviews, board and all-hands updates, training decks, conference talks — delivered as a .pptx, or a self-contained HTML deck when PowerPoint files cannot be written, with an argument running through it, one idea per slide, speaker notes, and marked placeholders instead of invented numbers. Use when someone wants slides, a deck, a presentation, or a PowerPoint, Keynote, or Google Slides file made, restructured, tightened, or cut to a time limit, including asks like \"turn these notes into a deck\" or \"I'm presenting to the board on Thursday\". Do NOT use for prose that is not slides — an email, a post, web copy, a report or one-pager — that is a separate writing skill. Do NOT use for designing a web page or mockup, generating a photo or hero image, drawing a logo or favicon, writing source code, or building a website; those are separate skills. \"Design my slides\" is still this skill; \"make an image for slide 3\" is the image skill.",
+      "source_sha256": "bcf6231093abfaa6581d175440db1914a84b4455c91de70bca2a786426b9ab0e",
+      "source_path": "plugins/presentation-generator/skills/presentation-generator/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "364cc86d3bc5c95043d2c616d58ab097531acb8650ca03709c35d3d69cf56212": {
+      "description_zh": "撰写可直接发送的商务或个人文本，遵守篇幅限制并匹配提供的语气样例；不虚构事实、不添加无关开场或多版本，不用于建设网站。",
+      "source": "Write and rewrite business and personal prose that is ready to send — emails, LinkedIn and X posts, newsletters, product descriptions, bios, job posts, proposals, blog posts, and website copy. Writes to the real length limit of wherever the piece is going, never invents facts, and hands back the piece itself with no preamble and no menu of variations. Matches a voice sample when one is given. Use when someone wants something written, rewritten, shortened, tightened, or made to sound like them. Do NOT use when someone wants a website, blog, or online store built — those skills build the site, not the words that go in it.",
+      "source_sha256": "364cc86d3bc5c95043d2c616d58ab097531acb8650ca03709c35d3d69cf56212",
+      "source_path": "plugins/writer/skills/writer/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6ac3fd1e529064fe25eb302ff02c79f944cd59e9cf0aeb0fd9f5dc7f80f1112d": {
+      "description_zh": "通过浏览器在 Claude Cowork 中编辑现有 B12 网站，包括设计、页面区块、文案和网站应用。",
+      "source": "Edit and improve a live B12 website using Claude's browser access in Claude Cowork. Claude can take screenshots, scroll, click, and type directly into the B12 editor to apply design changes, add sections, rewrite copy, and build web app features.",
+      "source_sha256": "6ac3fd1e529064fe25eb302ff02c79f944cd59e9cf0aeb0fd9f5dc7f80f1112d",
+      "source_path": "skills/b12-website-editor/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "aefbe9c664c8cb699353ccae4f9f6d4b1593ef05737eb9ebc746f164446aa0a4": {
+      "description_zh": "依据业务或项目简介、目标、结构和风格要求，生成专业且便于使用的 AI 网站。",
+      "source": "This skill allows you to create a professional, engaging, and user-friendly website in seconds using AI. To create a website, you need to provide a brief description of your project or business (goals, structure, style, etc.).",
+      "source_sha256": "aefbe9c664c8cb699353ccae4f9f6d4b1593ef05737eb9ebc746f164446aa0a4",
+      "source_path": "skills/website-generator/SKILL.md",
+      "package_sha256": "50fe2ecb47360c7f6404aa1635121e162f2fb2c74df3c10722574956ffaa0691",
+      "source_package": "B12-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f184ab52cb524b5368263772e4094c375c01554905a3aebfe4a4533b299dc778": {
+      "description_zh": "依据 GUARD 四阶段框架制定个性化的 B2B 客户 90 天启动与成功计划，整理实施笔记为启动会、交接、价值实现、里程碑及管理层更新；来源为 Shashwat Ghosh/Helix 的方法。",
+      "source": "Build customized B2B customer onboarding success plans using the GUARD Framework's 4-phase, 90-day structure. Use when a CSM mentions new customer, onboarding, success plan, first 90 days, kickoff call, sales handoff, implementation plan, time to value, activation milestones, or says things like \"customer just signed\", \"stalled onboarding\", \"customer not logging in\", \"sales promised something we don't have\", \"how to onboard this account\", or \"implementation notes to status update\". Also handles messy implementation notes structuring into professional executive updates. Created by Shashwat Ghosh, Co-Founder and Fractional CMO, Helix GTM Consulting.",
+      "source_sha256": "f184ab52cb524b5368263772e4094c375c01554905a3aebfe4a4533b299dc778",
+      "source_path": "skills/guard-activate-onboarding/SKILL.md",
+      "package_sha256": "205c40ac732f3df8a1a359a56a1b6bc63edb146203c5ee5b1aede091894577e3",
+      "source_package": "B2b Customer Success-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "41bd6d2eb9425904d46f4f868331a85edd7f29e0e1c939796e8781d6204640f3": {
+      "description_zh": "依据 GUARD 框架提前 180 天评估续约风险和概率，匹配客户挽回策略并准备沟通指引。",
+      "source": "Assess B2B renewal risk and build save strategies using the GUARD Framework's 180-day countdown cadence. Use when a CSM mentions renewal, renewal risk, renewal strategy, churn threat, save strategy, or says things like \"customer threatening to churn\", \"champion left and renewal is coming\", \"competitor evaluation\", \"they want to downgrade\", \"budget cut affecting renewal\", \"contract renewal in X months\", \"renewal forecast\", \"how to save this account\", \"RFP for replacement\", or \"vendor review\". Produces renewal probability scores, risk-matched save playbooks, and conversation guides. Created by Shashwat Ghosh, Co-Founder and Fractional CMO, Helix GTM Consulting.",
+      "source_sha256": "41bd6d2eb9425904d46f4f868331a85edd7f29e0e1c939796e8781d6204640f3",
+      "source_path": "skills/guard-defend-renewal/SKILL.md",
+      "package_sha256": "205c40ac732f3df8a1a359a56a1b6bc63edb146203c5ee5b1aede091894577e3",
+      "source_package": "B2b Customer Success-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8552735982f7e82958f8ef6830a002a06c69381d51470a8380ad633701316b56": {
+      "description_zh": "依据 GUARD 六项加权信号诊断 B2B 客户健康度，可读取杂乱 CRM、PDF 或对话；仅对已有信息评分，并明确标出缺失信号。",
+      "source": "Diagnose B2B account health using the GUARD Framework's 6-signal weighted scoring model. Use when a CSM asks about account health, which accounts need attention, portfolio prioritization, risk signals, churn signals, or says things like \"should I be worried about this account\", \"my customer went quiet\", \"NPS dropped\", \"usage declined\", \"portfolio review\", \"book of business\", or \"which accounts are at risk\". Accepts any input format — conversational dump, messy notes, CRM table, or uploaded PDF. Scores what is available, flags what is missing. Created by Shashwat Ghosh, Co-Founder and Fractional CMO, Helix GTM Consulting.",
+      "source_sha256": "8552735982f7e82958f8ef6830a002a06c69381d51470a8380ad633701316b56",
+      "source_path": "skills/guard-gauge-diagnostic/SKILL.md",
+      "package_sha256": "205c40ac732f3df8a1a359a56a1b6bc63edb146203c5ee5b1aede091894577e3",
+      "source_package": "B2b Customer Success-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d476f97d488571962ec41471427acb9c9ef5d7165afb280f384b40d9f9f58195": {
+      "description_zh": "依据 GUARD 七部分框架整理可用于评审的季度或高层业务回顾，支持来自 CRM、历史汇报、杂乱笔记或对话的信息。",
+      "source": "Prepare structured QBR and EBR materials using the GUARD Framework's 7-section template. Use when a CSM mentions QBR, quarterly business review, EBR, executive business review, business review prep, QBR deck, value recap, or says things like \"what should I present to the customer\", \"preparing for our quarterly review\", \"need a QBR brief\", \"post-QBR recap email\", \"QBR for an at-risk account\", or \"first QBR after onboarding\". Accepts messy notes, previous QBR data, CRM exports, or conversational context and produces review-ready materials. Created by Shashwat Ghosh, Co-Founder and Fractional CMO, Helix GTM Consulting.",
+      "source_sha256": "d476f97d488571962ec41471427acb9c9ef5d7165afb280f384b40d9f9f58195",
+      "source_path": "skills/guard-review-qbr/SKILL.md",
+      "package_sha256": "205c40ac732f3df8a1a359a56a1b6bc63edb146203c5ee5b1aede091894577e3",
+      "source_package": "B2b Customer Success-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d93fc9f9dbd4bcefaf696d98c63316958d3964de3b5b73b271ec30ebba3de6c4": {
+      "description_zh": "依据 GUARD 四项信号识别增购与交叉销售机会，整理商业论证和沟通指引，结合 NRR、使用限制等客户信息。",
+      "source": "Identify and action B2B expansion opportunities using the GUARD Framework's 4-signal model. Use when a CSM asks about upsell, cross-sell, expansion opportunities, or says things like \"customer hitting limits\", \"new department interested\", \"how to pitch expansion\", \"when to upsell\", \"NRR improvement\", \"usage growing fast\", \"they asked about advanced features\", or \"expansion business case\". Builds structured business cases and provides conversation guides. Created by Shashwat Ghosh, Co-Founder and Fractional CMO, Helix GTM Consulting.",
+      "source_sha256": "d93fc9f9dbd4bcefaf696d98c63316958d3964de3b5b73b271ec30ebba3de6c4",
+      "source_path": "skills/guard-uplift-expansion/SKILL.md",
+      "package_sha256": "205c40ac732f3df8a1a359a56a1b6bc63edb146203c5ee5b1aede091894577e3",
+      "source_package": "B2b Customer Success-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e35bf3bc2b7b0fe88b6d18aeeacc023c86a9b48c458bd66503d422e1253d997a": {
+      "description_zh": "为 B2B 销售制作竞品战卡、对比矩阵和异议应对手册，围绕具名竞争对手、功能、价格或丢单情况分析；不用于一般市场规模或投资研究。",
+      "source": "Research competitors and create sales-ready battle cards, competitive positioning matrices, and objection handling playbooks for B2B sales teams. Use this skill when a B2B seller, sales leader, product marketer, or founder asks to research a named competitor, build a battle card, prepare for a deal where a competitor is involved, handle an objection about a rival product, compare features or pricing against a named alternative, or analyze why deals were lost to a competitor. Also trigger when someone says \"the prospect is also looking at [competitor]\", \"we keep losing to [company]\", \"how do we differentiate against\", \"what should I say when they bring up [competitor]\", \"build me a cheat sheet for this deal\", or \"competitive analysis for [market]\". Not for general market sizing or investment research. This skill produces actionable sales ammo, not academic market research. Created by Shashwat Ghosh, Fractional CMO with 24+ years in B2B and 10+ years fractional.",
+      "source_sha256": "e35bf3bc2b7b0fe88b6d18aeeacc023c86a9b48c458bd66503d422e1253d997a",
+      "source_path": "skills/competitive-intelligence/SKILL.md",
+      "package_sha256": "53c7e4c5a63f0df1b24ce7b72f33b7bc3d16c05c063514aee1cfc2f3393c7a02",
+      "source_package": "B2b Sales Enablement-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4e5f049c60018c5b43366e2f0c78affd38d1a347e63ba96aee4c6b46e2f45bb3": {
+      "description_zh": "为销售、客户、投资人、合作伙伴或董事会会议开展会前研究，并在会后整理决策、行动和跟进；不用于一般笔记、排期或与会议无关的文档。",
+      "source": "Prepare for client meetings and capture post-meeting actions. Use this skill when someone is preparing for a specific upcoming business meeting (a sales call, client meeting, investor pitch, partner discussion, or board presentation), or wants decisions, action items, and a follow-up email captured after one. Also trigger when someone says \"I have a meeting with [person/company] tomorrow\", \"what should I know before this call\", \"prep me for the meeting\", \"help me prepare talking points for the meeting\", \"summarize what we discussed in the meeting\", \"what are the action items from that call\", \"draft a follow-up email after the meeting\", or \"debrief from today's session\". Not for general note-taking, calendar scheduling, or summarizing documents that are not about a meeting. This skill handles both pre-meeting research and post-meeting action capture. Created by Shashwat Ghosh, Fractional CMO with 24+ years in B2B and 10+ years fractional.",
+      "source_sha256": "4e5f049c60018c5b43366e2f0c78affd38d1a347e63ba96aee4c6b46e2f45bb3",
+      "source_path": "skills/meeting-prep-debrief/SKILL.md",
+      "package_sha256": "53c7e4c5a63f0df1b24ce7b72f33b7bc3d16c05c063514aee1cfc2f3393c7a02",
+      "source_package": "B2b Sales Enablement-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8924861967cfe5c6f6a44f7c78d3e827011e3c29c37e570f6c529a2b6bb70b2e": {
+      "description_zh": "依据客户品牌或提供的样例制作可交付客户的 PPTX/DOCX 销售提案，沿用配色、字体和布局；无参考时采用咨询式设计，不用于内部或无具体客户的通用演示。",
+      "source": "Build client-ready presentations (PPTX) and proposals (DOCX) using the client's own brand styling. Use this skill when a sales person, AE, SDR, founder, or consultant needs a client-facing sales deck, pitch presentation, sales proposal, one-pager, solution overview, or business case for a specific prospect or client. Also trigger when someone says \"I need a deck for a client meeting\", \"help me build a proposal\", \"create a pitch for this prospect\", \"make a presentation about our solution for [prospect]\", or \"I have a client meeting tomorrow and need slides\". Not for internal team decks or general-purpose presentations with no client or prospect. This skill extracts the client's brand colors, fonts, and layout from an uploaded sample file, then produces professional output in that exact style. If no sample is uploaded, it produces clean consulting-style output. Created by Shashwat Ghosh, Fractional CMO with 24+ years in B2B across Happay, Locus, and FieldAssist, and 10+ years fractional.",
+      "source_sha256": "8924861967cfe5c6f6a44f7c78d3e827011e3c29c37e570f6c529a2b6bb70b2e",
+      "source_path": "skills/sales-proposal-builder/SKILL.md",
+      "package_sha256": "53c7e4c5a63f0df1b24ce7b72f33b7bc3d16c05c063514aee1cfc2f3393c7a02",
+      "source_package": "B2b Sales Enablement-1.1.2-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "765d4e209b2cfe71302ef5baa2177987dea0b64cb1ab60885a146aff9f08853d": {
+      "description_zh": "持续跟进拉取请求的 CI、机器人及人工评论，修复或明确延期事项、推送和回复，直至状态干净；已合并时可从基线重建同名分支并创建后续拉取请求。",
+      "source": "Automates the PR review-fix-push cycle: waits for CI checks, handles ALL review comments\n(bots and humans), fixes or defers them, pushes changes, replies to threads, and repeats\nuntil clean. Works on both open and merged PRs — for merged PRs, resets the same branch\nfrom base and creates a new follow-up PR. Use when a PR has pending reviews or the user\nwants hands-free PR babysitting.",
+      "source_sha256": "765d4e209b2cfe71302ef5baa2177987dea0b64cb1ab60885a146aff9f08853d",
+      "source_path": "skills/babysit-pr/SKILL.md",
+      "package_sha256": "a716f7cc4fe66d246d5b6d9702b94bf7f880f410d89c421b71a3fc296ba74095",
+      "source_package": "babysit-pr-1.0.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d1c6dc0fb7a74a36ca4cf32502b235cc6d8d1959089992370485fd0b89079a91": {
+      "description_zh": "在增加端点、角色或权限边界前设计认证、授权、会话、凭据签发、租户和管理功能；区分身份认证与授权，并在正确层级落实检查，原文隐藏内容不予推断。",
+      "source": "Use when designing or modifying any auth flow, permission check, session, token issuance, multi-tenant data scope, or admin path. Forces explicit separation of authentication and authorization, decisions about enforcement layers, and treatment of tokens as bearer [已隐藏] Apply this whenever you add an endpoint, a role, a scope, or a tenant boundary.",
+      "source_sha256": "d1c6dc0fb7a74a36ca4cf32502b235cc6d8d1959089992370485fd0b89079a91",
+      "source_path": "skills/auth-and-authorization/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d546e053a545d03cd750e665f6ebf7669f7d923d61d8c82956345e89bf7ad42b": {
+      "description_zh": "在选择数据库、队列、语言、部署、认证或基础设施时优先采用成熟简单的方案；引入新技术或额外复杂度前要求给出充分理由。",
+      "source": "Use when choosing a database, queue, language, deployment shape, auth scheme, or any infrastructure piece. Forces a defense of complexity before adopting new technology. Reach for this whenever the answer involves \"let's use\" followed by a name you read on Hacker News this month.",
+      "source_sha256": "d546e053a545d03cd750e665f6ebf7669f7d923d61d8c82956345e89bf7ad42b",
+      "source_path": "skills/boring-by-default/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81c356f44d8473ed31c8eb459e7d0509779865be43f51c0cf006718f6135d692": {
+      "description_zh": "在架构、实体、ORM 或持久化数据结构变更前明确数据模型与不变量，尽量通过数据库架构约束保障规则，再执行迁移。",
+      "source": "Use whenever creating or changing a database schema, defining an entity, writing an ORM model, or designing a data structure that will be persisted. Forces invariants into the schema instead of trusting the application layer. Use this BEFORE writing the migration.",
+      "source_sha256": "81c356f44d8473ed31c8eb459e7d0509779865be43f51c0cf006718f6135d692",
+      "source_path": "skills/data-modeling-discipline/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "400aee396fc1d946da830a28eed9721a73f96dc31888996eeea28a365734a1a7": {
+      "description_zh": "对运行异常、缓慢、偶发失败或结果错误的系统进行有步骤的调查，再提出修复；适用于生产和预发布环境，生产问题必须先完成诊断。",
+      "source": "Use when the user reports something broken, slow, flaky, or wrong in production or staging (\"it's slow\", \"it crashes\", \"it doesn't work\", \"we're seeing 500s\", \"the data is wrong\"). Forces an investigation method instead of guessing. Apply BEFORE proposing a fix. Mandatory the moment someone says \"in prod\".",
+      "source_sha256": "400aee396fc1d946da830a28eed9721a73f96dc31888996eeea28a365734a1a7",
+      "source_path": "skills/debugging-discipline/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f74f6e93f07cfabf7c3a4fcd4f96420c2612b13ff7b1250b1ec622ed6ff8821c": {
+      "description_zh": "在编写后端正常流程和异常捕获前设计错误契约；检查静默吞错、裸 except、堆栈丢失及笼统 500 响应等问题。",
+      "source": "Use when designing or implementing any backend component, BEFORE the happy path. Treats the error path as part of the contract, not as cleanup. Catches the silent swallow, the bare except, the wrapped-and-lost stack trace, and the generic 500. Apply this whenever you reach for try/catch.",
+      "source_sha256": "f74f6e93f07cfabf7c3a4fcd4f96420c2612b13ff7b1250b1ec622ed6ff8821c",
+      "source_path": "skills/error-handling-as-design/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ded2edbc73f3b426f1d634eccbd307d2ce48b5b1c130344897539719afb9afd6": {
+      "description_zh": "在编写会改变状态、发送消息、付款、调用第三方、发出事件或写入多个存储的处理程序、任务或消费者前，设计幂等机制与 Outbox 模式，防止重放或重试产生重复副作用。",
+      "source": "Use when designing any operation that changes state, sends a message, makes a payment, calls a third party, emits an event, or writes to multiple stores. Forces idempotence and the outbox pattern so replays and retries never duplicate side effects. Apply this BEFORE writing the handler, job, or consumer.",
+      "source_sha256": "ded2edbc73f3b426f1d634eccbd307d2ce48b5b1c130344897539719afb9afd6",
+      "source_path": "skills/idempotency-and-side-effects/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7e56fe2f8f4b012adcec8b1be6656d678f3c4ca7e8459be627197bbacf54b797": {
+      "description_zh": "在编写、评审或运行 SQL、ORM 或架构迁移前检查迁移安全，识别可能导致生产锁死、部署不完整或不可逆损坏的模式。",
+      "source": "Use whenever writing, reviewing, or running a database migration (SQL files, ORM migrations, schema changes). Every migration is a potential incident. This skill catches the patterns that cause production lock-ups, partial deploys, and irreversible damage BEFORE the file ships.",
+      "source_sha256": "7e56fe2f8f4b012adcec8b1be6656d678f3c4ca7e8459be627197bbacf54b797",
+      "source_path": "skills/migration-safety/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "80e2d4035ebbcc498a2514ec5a68fa23b6ecf4cbbf3335ce2491acc7c1eeb7a5": {
+      "description_zh": "在后端端点、工作进程、消费者、CLI、定时任务或守护进程发布前补齐结构化日志、RED 指标、跟踪 ID 和有效健康检查，使问题可远程诊断。",
+      "source": "Use when building or modifying any backend component (endpoint, worker, consumer, CLI, cron, daemon), BEFORE the code ships. Forces structured logs, RED metrics, trace IDs, and real healthchecks so the component can be debugged at 3am without SSH. If you wrote a service-side component without this, it is not done.",
+      "source_sha256": "80e2d4035ebbcc498a2514ec5a68fa23b6ecf4cbbf3335ce2491acc7c1eeb7a5",
+      "source_path": "skills/observability-by-default/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6cd7b74a2d931ee2f4e316859acd3f06be757df21327871b5f38ad5c55dc16dc": {
+      "description_zh": "在后端性能或扩容决策前明确负载规模与瓶颈维度，先测量，再考虑索引和纵向扩容，避免缺少数据就引入分布式方案。",
+      "source": "Use when building or modifying any backend component, BEFORE making perf or scaling choices. Forces the question \"at what load\" up front, names the bottleneck axis, and pushes vertical scaling and indexes before distributed anything. Apply this whenever you are tempted to \"make it fast\" without numbers, or to \"make it scale\" before measuring.",
+      "source_sha256": "6cd7b74a2d931ee2f4e316859acd3f06be757df21327871b5f38ad5c55dc16dc",
+      "source_path": "skills/performance-and-scaling/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cb50637ac84847ba0758f509fb15d25ec32eb499f10760962cae2bebf15d582c": {
+      "description_zh": "在编写或评审原生 SQL、ORM 调用或查询构造器时，检查 N+1、索引缺失、无界列表及分页问题，避免问题查询进入生产。",
+      "source": "Use when writing, reviewing, or generating any database query (raw SQL, ORM call, query builder). Catches N+1, missing indexes, unbounded lists, and bad pagination BEFORE the query reaches production. Use this whenever you reach for an ORM or write a SELECT.",
+      "source_sha256": "cb50637ac84847ba0758f509fb15d25ec32eb499f10760962cae2bebf15d582c",
+      "source_path": "skills/query-discipline/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f335f31183be2786fcfa0083fba95a483a3a6faed6e47bc7c68da14f292e8fc4": {
+      "description_zh": "在每次代码变更、新端点或后端修改完成前进行安全检查，识别对象级越权、批量赋值、注入、密钥泄漏及缺少认证等常见漏洞。",
+      "source": "Use on every diff, every new endpoint, every change to a backend component. Treats security as a per-change reflex, not an audit phase. Catches IDOR/BOLA, mass assignment, injection, secret leaks, missing auth, and the everyday holes that ship while nobody is looking at \"security\". Apply this BEFORE marking a change as done.",
+      "source_sha256": "f335f31183be2786fcfa0083fba95a483a3a6faed6e47bc7c68da14f292e8fc4",
+      "source_path": "skills/security-discipline/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd965c8a6e92d6b0ec15d358571525d8ee2c73bab3d81b2797723854f7b307a2": {
+      "description_zh": "为后端编写、评审或规划测试时，先判断哪些行为值得验证；检查只模拟被测代码、功能损坏仍会通过或用快照代替明确断言的测试，并在缺陷修复完成前核对测试有效性。",
+      "source": "Use when writing, reviewing, or planning tests for any backend code. Forces a \"what is worth testing\" decision instead of a coverage target. Catches tests that mock the code they claim to test, tests that pass even when the feature is broken, and snapshot tests pretending to be assertions. Apply whenever you are tempted to write a test, and BEFORE marking a bug fix done.",
+      "source_sha256": "cd965c8a6e92d6b0ec15d358571525d8ee2c73bab3d81b2797723854f7b307a2",
+      "source_path": "skills/testing-with-discernment/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "0b3223af6d5471a1061ce431f0e2cf36e59190eca8de08806021411d1f1847bc": {
+      "description_zh": "在编写端点、工作进程、CLI、脚本、消费者、定时任务、流水线、守护进程、Webhook 或集成等后端代码前，执行六步设计工作流程，先确认设计成立再实现。",
+      "source": "Use BEFORE writing any backend code (endpoint, worker, CLI, script, consumer, cron, pipeline, daemon, webhook handler, integration). Forces the 6-step senior workflow so the design is sound before the first line ships. If you are about to write a server-side component of any kind, you MUST invoke this first.",
+      "source_sha256": "0b3223af6d5471a1061ce431f0e2cf36e59190eca8de08806021411d1f1847bc",
+      "source_path": "skills/think-before-coding/SKILL.md",
+      "package_sha256": "fa46971fa9f2f7e0f1a27164fd596773ec464d6520a454e24c220a991b0b7351",
+      "source_package": "Backend Design-0.2.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "09273702693d262e0a9937cb084f14ceb2b49823a7cd747f30492088387d8878": {
+      "description_zh": "依据实际工作负载和证据评审后端性能，调查延迟、吞吐量、慢端点、查询与 N+1、连接池耗尽、事件循环阻塞、锁竞争、内存或 CPU 压力、队列积压及超时重试风暴。",
+      "source": "Reviews backend codebases for performance bottlenecks using an evidence-first, workload-driven methodology. Use when investigating latency, throughput, slow endpoints, database or query performance, N+1 queries, connection pool exhaustion, event-loop blocking, lock contention, memory or CPU pressure, queue lag, or timeout and retry storms — and when asked to audit, review, or improve the performance or scalability of a backend service, API, worker, or data layer.",
+      "source_sha256": "09273702693d262e0a9937cb084f14ceb2b49823a7cd747f30492088387d8878",
+      "source_path": "skills/backend-performance-review/SKILL.md",
+      "package_sha256": "a242ea371c2efcf89dcb0fc5160d6d58f790590e2d52048e8d6f249d8f9bd0d2",
+      "source_package": "backend-performance-review-1.1.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a923a03ca9c782d920a233f4e2f568a1261db85da6450c7dc9069a8eec799f9d": {
+      "description_zh": "按长度、意图范围和触发条件的最佳实践评审与分析技能。",
+      "source": "Review and analyze a skill against best practices for length, intent scope, and trigger patterns",
+      "source_sha256": "a923a03ca9c782d920a233f4e2f568a1261db85da6450c7dc9069a8eec799f9d",
+      "source_path": ".claude/skills/review-skills/SKILL.md",
+      "package_sha256": "cb81d7c3ed86b090ebbfc5f19b102542b9beeddcdeda3173aa4ebd67249e5270",
+      "source_package": "Base44-v13.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "35a50ed6d4b7f55dec006e0df8c81a6d5c5974b1fed173832323f0526088fd3f": {
+      "description_zh": "依据 Base44 CLI 仓库最新源代码，同步更新 base44-cli 技能。",
+      "source": "Synchronize the base44-cli skill with the latest CLI source code from the Base44 CLI repository",
+      "source_sha256": "35a50ed6d4b7f55dec006e0df8c81a6d5c5974b1fed173832323f0526088fd3f",
+      "source_path": ".claude/skills/sync-cli-skill/SKILL.md",
+      "package_sha256": "cb81d7c3ed86b090ebbfc5f19b102542b9beeddcdeda3173aa4ebd67249e5270",
+      "source_package": "Base44-v13.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d7a7dfa26570bf2d206e6adb3601e21094ba67277703cef17237a00c65d39935": {
+      "description_zh": "依据 Base44 SDK 仓库最新源代码，同步更新 base44-sdk 技能。",
+      "source": "Synchronize the base44-sdk skill with the latest SDK source code from the Base44 SDK repository",
+      "source_sha256": "d7a7dfa26570bf2d206e6adb3601e21094ba67277703cef17237a00c65d39935",
+      "source_path": ".claude/skills/sync-sdk-skill/SKILL.md",
+      "package_sha256": "cb81d7c3ed86b090ebbfc5f19b102542b9beeddcdeda3173aa4ebd67249e5270",
+      "source_package": "Base44-v13.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e1f7600024b92ff5680838842b2d4e92bca08f48912a3014bd1c6fba7333be04": {
+      "description_zh": "通过 Basedash 连接的数据源回答公司指标、趋势、查找和分析问题。",
+      "source": "Use Basedash to answer questions about company metrics, trends, lookups, and analysis over connected data sources.",
+      "source_sha256": "e1f7600024b92ff5680838842b2d4e92bca08f48912a3014bd1c6fba7333be04",
+      "source_path": "skills/analyze-company-data/SKILL.md",
+      "package_sha256": "43e15fa2aa360ad762b44e19a177696fa131f52c21c1f1dd88a817948360108c",
+      "source_package": "Basedash-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d4daf33766132d86bc1c511717fd8c210d98b21e038be0629c9920a2ffa1232b": {
+      "description_zh": "发现 Basedash 中可用的公司数据、数据库、数据仓库或 SaaS 数据源。",
+      "source": "Discover the data sources available through Basedash. Use when the user asks what company data, databases, warehouses, or SaaS sources are available.",
+      "source_sha256": "d4daf33766132d86bc1c511717fd8c210d98b21e038be0629c9920a2ffa1232b",
+      "source_path": "skills/discover-company-data/SKILL.md",
+      "package_sha256": "43e15fa2aa360ad762b44e19a177696fa131f52c21c1f1dd88a817948360108c",
+      "source_package": "Basedash-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "bdc3d2381f86d24349eb57fe9404a46259f028ac248e041d617782a592165ca4": {
+      "description_zh": "列举并检查 Basedash 现有仪表板和图表，帮助查找、评审或理解其内容。",
+      "source": "List and inspect dashboards and charts available through Basedash. Use when the user wants to find, review, or understand existing dashboards or charts.",
+      "source_sha256": "bdc3d2381f86d24349eb57fe9404a46259f028ac248e041d617782a592165ca4",
+      "source_path": "skills/inspect-dashboards-and-charts/SKILL.md",
+      "package_sha256": "43e15fa2aa360ad762b44e19a177696fa131f52c21c1f1dd88a817948360108c",
+      "source_package": "Basedash-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "9e260b6c3480bd72f00420c70d7c5b3898455236a588ae3206a0b1fe2726fbf5": {
+      "description_zh": "依据自然语言要求创建、保存或修改 Basedash 仪表板与图表。",
+      "source": "Create and edit Basedash dashboards and charts with natural-language instructions. Use when the user wants to build, save, or change a dashboard or chart.",
+      "source_sha256": "9e260b6c3480bd72f00420c70d7c5b3898455236a588ae3206a0b1fe2726fbf5",
+      "source_path": "skills/manage-dashboards-and-charts/SKILL.md",
+      "package_sha256": "43e15fa2aa360ad762b44e19a177696fa131f52c21c1f1dd88a817948360108c",
+      "source_package": "Basedash-1.1.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "05af40d1dc61fa35208fe728a764cc1e0fc14512f0634c3832c94fac90f4e1ab": {
+      "description_zh": "通过 Basit Kargo 办理物流业务，包括查询货运状态、比较运费、起草订单、生成寄件代码和打印标签；适用于货运、追踪、标签、价格或账户余额相关请求。",
+      "source": "Basit Kargo ile kargo işlemleri — gönderi takibi, fiyat karşılaştırma, taslak sipariş, kargo kodu üretme ve etiket basma. Kullanıcı kargo, gönderi, takip, etiket, kargo fiyatı veya Basit Kargo bakiyesinden bahsettiğinde kullan.",
+      "source_sha256": "05af40d1dc61fa35208fe728a764cc1e0fc14512f0634c3832c94fac90f4e1ab",
+      "source_path": "skills/basit-kargo/SKILL.md",
+      "package_sha256": "87f19600c318142ef15e09463b0ce6bb9ca4821a160d1f800af9e21b1395938e",
+      "source_package": "Basit Kargo-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "81507b39df783f2bf55b46ccc1a6e52be2ae5c8c4adab7b8272eca77f19a91a3": {
+      "description_zh": "调整 Batocera 街机的游戏显示效果，处理 CRT 等着色器、分辨率、逐游戏覆盖、边框和叠加图对齐、缺少 .info 文件、摩尔纹及视口裁剪；不用于性能或帧率调优。",
+      "source": "Use when working on how games look on a Batocera cabinet: CRT and other shaders, shaderset resolution and per-game shader overrides, bezel/overlay artwork and alignment, generating missing .info sidecars, filtering unusable bezels, pinning the display resolution, or diagnosing moire and cropped/misaligned game viewports inside bezels. Covers why a shaderset seems invalid, why .info top values are not alpha coordinates, and why Mega-Bezel per-game art fails. Not for performance/framerate tuning (batocera-tuning).",
+      "source_sha256": "81507b39df783f2bf55b46ccc1a6e52be2ae5c8c4adab7b8272eca77f19a91a3",
+      "source_path": "skills/batocera-display/SKILL.md",
+      "package_sha256": "6474f3ba290e4360a5f75f1e36c7821e610364f30b4cc2db812d74421e9e1cad",
+      "source_package": "batocera-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ddaf154a201562a63b02d969053bb9c138b2de577921bf878cd11dcb7837296b": {
+      "description_zh": "维护 Batocera 街机，配置无 cron 环境的开机及周期任务、v43 custom_service、通过 SSH 备份 /userdata，以及跨大版本升级、ROM 目录重命名和升级后检查；不用于性能调优。",
+      "source": "Use when keeping a Batocera cabinet healthy over time: running scripts or scheduled jobs at boot and on an interval without cron, the custom_service boot-service pattern (which replaced custom.sh in v43), backing up /userdata to another machine over SSH, and upgrading between major Batocera versions (v42 to v43 and similar) including the ROM-directory renames and post-upgrade checklist. Covers why there is no crond, the backup-before-upgrade doctrine, and catch-up scheduling. Not for performance tuning (batocera-tuning).",
+      "source_sha256": "ddaf154a201562a63b02d969053bb9c138b2de577921bf878cd11dcb7837296b",
+      "source_path": "skills/batocera-maintenance/SKILL.md",
+      "package_sha256": "6474f3ba290e4360a5f75f1e36c7821e610364f30b4cc2db812d74421e9e1cad",
+      "source_package": "batocera-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "498baf8ba08371e6a3c3aaa8992ea8b45b7220bd895c73544dfa0e4059b914ee": {
+      "description_zh": "通过 SSH 连接和操作 Batocera 街机，理解只读根文件系统与 /userdata、查找配置日志和 ROM、安全修改并验证显示与配置；诊断 configgen 导致的设置恢复，作为其他 Batocera 技能的基础，不用于推荐游戏。",
+      "source": "Use when connecting to or operating a Batocera arcade/retro-gaming cabinet over SSH: establishing the connection, understanding its read-only rootfs and /userdata layout, finding config/log/ROM paths, applying changes safely, verifying a display/config change end-to-end without a controller, or diagnosing why a setting reverts to its default on every launch (configgen). Foundation for the other batocera-* skills (roms, display, tuning, maintenance). Covers sshpass, batocera.conf, EmulationStation, the ES HTTP API, and batocera-screenshot. Not for game recommendations.",
+      "source_sha256": "498baf8ba08371e6a3c3aaa8992ea8b45b7220bd895c73544dfa0e4059b914ee",
+      "source_path": "skills/batocera-ops/SKILL.md",
+      "package_sha256": "6474f3ba290e4360a5f75f1e36c7821e610364f30b4cc2db812d74421e9e1cad",
+      "source_package": "batocera-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5f9511b68e7ff026b7ac682a7742baca131bf3f0c891cd9d9a3626b9e0dfc28c": {
+      "description_zh": "管理 Batocera ROM 与游戏列表，确认目录和格式、排查菜单缺失、以隐藏方式整理库、安全编辑 gamelist.xml、整理多碟游戏并用 No-Intro/Redump DAT 校验；不用于着色器或版本升级造成的目录改名。",
+      "source": "Use when working with ROMs and gamelists on a Batocera cabinet: figuring out which directory a system''s ROMs go in, why a game does not appear in the menu, which file formats and extensions a system accepts, curating a large library by hiding rather than deleting, editing gamelist.xml safely, cleaning up multi-disc games, or verifying dumps against No-Intro/Redump DATs. Covers extensionless-ROM-in-zip failures, the 3DO/Opera no-m3u trap, cave3rd, and the es_systems_custom.cfg landmine. Not for shaders/bezels (batocera-display), or ROM directories renamed by a Batocera version upgrade (batocera-maintenance).",
+      "source_sha256": "5f9511b68e7ff026b7ac682a7742baca131bf3f0c891cd9d9a3626b9e0dfc28c",
+      "source_path": "skills/batocera-roms/SKILL.md",
+      "package_sha256": "6474f3ba290e4360a5f75f1e36c7821e610364f30b4cc2db812d74421e9e1cad",
+      "source_package": "batocera-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "619d58f270b935dd629dc41852075dcbe2cdc776af93ef247a9c483b7e4ad45f": {
+      "description_zh": "诊断 Batocera 菜单迟缓、启动后变慢、CPU 节能模式、超频无效、输入延迟、持续掉帧或重型 3D 游戏崩溃卡顿；先检查降频，再结合硬件选择渲染分辨率和后端，不用于着色器画质调整。",
+      "source": "Use when a Batocera cabinet feels slow, laggy, or stuttery, or when tuning performance: EmulationStation menu/carousel lag, a slow-since-boot frontend, CPU governor stuck in powersave, overclock or CPU-speed core options that seem to do nothing, run-ahead / input latency, framerate that drops the longer the machine runs, or a 3D-heavy game (PSX/PS2/Dreamcast/N64 class) that crashes or stutters — Vulkan errors in emulator logs, picking a rendering resolution or graphics backend the hardware can afford. Covers the diagnostic order (check the throttle first), the v43 governor-at-boot failure, the emulator-name vs rom-dir-name overclock scoping trap, ES event-hook frame cost, and hardware-tier detection (batocera-info / batocera-vulkan). Not for shader visual quality (batocera-display).",
+      "source_sha256": "619d58f270b935dd629dc41852075dcbe2cdc776af93ef247a9c483b7e4ad45f",
+      "source_path": "skills/batocera-tuning/SKILL.md",
+      "package_sha256": "6474f3ba290e4360a5f75f1e36c7821e610364f30b4cc2db812d74421e9e1cad",
+      "source_package": "batocera-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1f7f5de4444ec6e67dc5fe733d9e40357a10d072e24d313f9dd1dbfe6f9965c9": {
+      "description_zh": "这是尚未填写具体触发场景的 Batocera 技能编写模板，原文要求描述使用情境、用户措辞和不适用范围；实际业务用途尚未确认。",
+      "source": "Use when [the specific situations, symptoms, and phrases that should trigger this skill]. Pack the words someone would actually type or think when they hit this problem. Describe ONLY when to use it, never summarize the workflow inside. Keep the whole frontmatter under 1024 characters. End by naming what this skill is NOT for, pointing at the sibling skill that covers it.",
+      "source_sha256": "1f7f5de4444ec6e67dc5fe733d9e40357a10d072e24d313f9dd1dbfe6f9965c9",
+      "source_path": "template/SKILL.md",
+      "package_sha256": "6474f3ba290e4360a5f75f1e36c7821e610364f30b4cc2db812d74421e9e1cad",
+      "source_package": "batocera-1.0.1-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c1e1bad38cba270bc0c6e28a05f54bbad15086da7ea425751306ca6cbdb08cc9": {
+      "description_zh": "利用 Baz 的组织级索引搜索探索仓库，为功能规划、变更设计、范围评估或跨仓库接口调查定位代码；适用于相关仓库尚未在本地检出的情况，定位后再读取具体文件。",
+      "source": "Procedure for exploring repositories with Baz's indexed search tools. Use when asked to plan a feature, design a change, scope work, or investigate where to make changes across the org's repos. Applies even when you own one side of a cross-repo contract (API param, schema, event payload) locally, and especially when the relevant repositories are not checked out locally. Baz's MCP tools are how you search code across the org; once you know a file's path, read it however you like.",
+      "source_sha256": "c1e1bad38cba270bc0c6e28a05f54bbad15086da7ea425751306ca6cbdb08cc9",
+      "source_path": "skills/baz-codebase-exploration/SKILL.md",
+      "package_sha256": "fcff394afd93df97ed601cb807b355c3c5a4713f0cac44702a963c954bffc3d9",
+      "source_package": "Baz-0.14.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5b88dd720ae044a384ff0f76304f3f3ed51d4e7b39590563dd27ce2b8dcc46c7": {
+      "description_zh": "读取团队成员在 Baz 计划上的评论，逐条总结、评估并给出建议；只有用户选择后，才落实所选意见并回复相应评论，可通过 /baz:get-plan-comments 调用。",
+      "source": "Pull the comments teammates left on a Baz plan back into this session, summarize every one of them with an assessment and a recommendation, and — only after you choose — apply the ones you pick and reply on them. Invoke with /baz:get-plan-comments.",
+      "source_sha256": "5b88dd720ae044a384ff0f76304f3f3ed51d4e7b39590563dd27ce2b8dcc46c7",
+      "source_path": "skills/get-plan-comments/SKILL.md",
+      "package_sha256": "fcff394afd93df97ed601cb807b355c3c5a4713f0cac44702a963c954bffc3d9",
+      "source_package": "Baz-0.14.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "eddca99f3bddee2195a3de38fd4e23b565d767fb2335b5a547966423772949ae": {
+      "description_zh": "通过 Baz 索引搜索跨组织仓库规划功能或变更，输出完整的结构化实施计划，在用户认可后才开始编写代码；可通过 /baz:plan-with-baz 调用。",
+      "source": "Plan a feature or change end-to-end using Baz indexed search across your org's repos. Explores the relevant repos with Baz's MCP tools and produces a structured implementation plan the user signs off on before any code is written. Invoke with /baz:plan-with-baz when you want to start planning a piece of work.",
+      "source_sha256": "eddca99f3bddee2195a3de38fd4e23b565d767fb2335b5a547966423772949ae",
+      "source_path": "skills/plan-with-baz/SKILL.md",
+      "package_sha256": "fcff394afd93df97ed601cb807b355c3c5a4713f0cac44702a963c954bffc3d9",
+      "source_package": "Baz-0.14.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ae11db19d698fe6f47437e2bb60a413792a51d35ea8681dd62c62758934c8b2c": {
+      "description_zh": "结合 Baz 组织级代码索引与组织评审规范检查变更，核对跨仓库影响、缺陷与安全问题；支持提交、未提交、基线或拉取请求范围，可选修复循环，可通过 /baz:review 调用。",
+      "source": "Review code changes with Baz indexed search and the org's own review guidelines — a diff-scoped code review that checks the change against the rest of the org's repos and against the standards the org configured in Baz, not just the files in front of it. Use when asked to review changes, review a diff or branch, review a pull request, check changes for bugs or security issues, or find what is wrong with the current changes before pushing. Invoke with /baz:review; supports committed / uncommitted / --base / --pr scopes and an optional --fix loop that applies the fixes it finds.",
+      "source_sha256": "ae11db19d698fe6f47437e2bb60a413792a51d35ea8681dd62c62758934c8b2c",
+      "source_path": "skills/review/SKILL.md",
+      "package_sha256": "fcff394afd93df97ed601cb807b355c3c5a4713f0cac44702a963c954bffc3d9",
+      "source_package": "Baz-0.14.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "a8515abd30d66ae5cc80b8858bcc5d71521ae162a811b73d07402ba084ea8ecf": {
+      "description_zh": "检查 beads-superpowers 与上游的差异或缺失能力，用于插件发布前审计，涵盖测试、文档、插件健康及内容完整性。",
+      "source": "Use when checking if beads-superpowers is outdated, before a plugin release, or when auditing for missing capabilities — covers upstream drift, test execution, documentation, plugin health, and content integrity",
+      "source_sha256": "a8515abd30d66ae5cc80b8858bcc5d71521ae162a811b73d07402ba084ea8ecf",
+      "source_path": ".claude/skills/auditing-upstream-drift/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "2f9e2618579596d7b7db26fc70343fe4b81c06116255563d04f46d647aa907f7": {
+      "description_zh": "在分支实现完成、代码已提交并准备合并或创建拉取请求时，审计并同步项目文档与实际发布代码，涵盖 README、ARCHITECTURE、CONTRIBUTING、CHANGELOG、CLAUDE.md、TODOS 和 VERSION。",
+      "source": "Use when implementation on a branch is complete and it is about to be merged or PR'd — or when finishing-a-development-branch reaches its docs-audit gate — and after code changes are committed, to ensure all project documentation accurately reflects shipped code. Covers README, ARCHITECTURE, CONTRIBUTING, CHANGELOG, CLAUDE.md, TODOS, and VERSION files. Triggers on \"update docs\", \"sync documentation\", \"post-ship docs\", \"document release\", \"documentation audit\".",
+      "source_sha256": "2f9e2618579596d7b7db26fc70343fe4b81c06116255563d04f46d647aa907f7",
+      "source_path": "skills/document-release/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "56225db00dc259ffbee11ed1d7da6edbe4aab4fe036a024c13a9d6dec4897899": {
+      "description_zh": "在会话开始、上下文压缩后或项目状态不明时熟悉陌生或久未处理的代码库，加载 beads 上下文、深入代码并输出结构化的当前状态摘要。",
+      "source": "Orients on an unfamiliar or stale codebase at the start of a session, after compaction, or whenever the project state is unclear. Loads beads context, deep-dives the codebase, and produces a structured 'current state' summary. Triggers on phrases like \"catch me up\", \"where are we\", \"orient me\", \"what's the state of this project\", \"bring me up to speed\", \"load context\", \"session orientation\".",
+      "source_sha256": "56225db00dc259ffbee11ed1d7da6edbe4aab4fe036a024c13a9d6dec4897899",
+      "source_path": "skills/getting-up-to-speed/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e926018e534e9a590f55953ba8c9ce8cddc9b7757b4883f30e730f8d3929b872": {
+      "description_zh": "在会话结束且新增了多条记忆时，或按需整理 beads 记忆库，进行合并、去重、删减和结构化。",
+      "source": "Use at session-close when a session captured several new memories, or on-demand, to consolidate, deduplicate, prune, and structure the beads memory store. Triggers on \"curate memories\", \"clean up memories\", \"memory sweep\".",
+      "source_sha256": "e926018e534e9a590f55953ba8c9ce8cddc9b7757b4883f30e730f8d3929b872",
+      "source_path": "skills/memory-curator/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "3cf8108164a0926a299bd79bd6ebae5561a4b871140cc0efa2b9c95ca9cf49c0": {
+      "description_zh": "处理 beads/Dolt 初始化失败、bd 缺少数据库、新项目接入及 Dolt 历史分叉问题，提供新建、从远端引导和恢复流程。",
+      "source": "Use when beads/Dolt database initialization fails, when bd commands return errors about missing databases, when setting up beads in a new project, or when recovering from diverged Dolt history. Handles fresh init, bootstrap from remote, and recovery workflows.",
+      "source_sha256": "3cf8108164a0926a299bd79bd6ebae5561a4b871140cc0efa2b9c95ca9cf49c0",
+      "source_path": "skills/project-init/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d13e6c6347dfce0151eb3f9e3ebe49b4f63c342ac964c34d5daa05b7e0b6c300": {
+      "description_zh": "在回答主题问题、开展研究或规划前需要理解背景时，进行资料研究、原理解释、方案比较或深入调查。",
+      "source": "Use when the user asks a question about a topic, requests research, or when understanding something is needed before planning. Triggers on \"research this\", \"what is X\", \"how does Y work\", \"compare A vs B\", \"investigate\", \"deep dive\", \"look into\".",
+      "source_sha256": "d13e6c6347dfce0151eb3f9e3ebe49b4f63c342ac964c34d5daa05b7e0b6c300",
+      "source_path": "skills/research-driven-development/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "cd9e1f36d06692a394ba073bdcafb22c77fb29d1419530851a7aa2dbebe3c157": {
+      "description_zh": "由用户主动调用，编写有事实依据的会话交接文档与继续执行指针记忆，使新代理能接续未完成的工作；不自动触发。",
+      "source": "A human-invoked utility that writes a grounded session-handoff document (plus a continuation pointer memory) so a fresh agent can resume in-progress work. Not auto-invoked; a human runs it deliberately.",
+      "source_sha256": "cd9e1f36d06692a394ba073bdcafb22c77fb29d1419530851a7aa2dbebe3c157",
+      "source_path": "skills/session-handoff/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "62175af7223411b2bd513c3d260b59f0c13049e08a462c956912bc23b3dac087": {
+      "description_zh": "在实施设计、计划或决策前进行对抗式审查，逐一追问决策树分支、提供建议答案，并要求明确认可或反驳。",
+      "source": "Use when a design, plan, or decision needs adversarial scrutiny before proceeding. Interrogates every branch of the decision tree, providing recommended answers and forcing explicit agreement or pushback. Triggers on \"grill me\", \"stress test this\", \"poke holes\", \"challenge this design\", or when brainstorming/writing-plans suggests review.",
+      "source_sha256": "62175af7223411b2bd513c3d260b59f0c13049e08a462c956912bc23b3dac087",
+      "source_path": "skills/stress-test/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "97b29a95858fd50fe961e6bf41d3decbb3261f82ba4adfd62ada952fda0beee3": {
+      "description_zh": "编写或大幅改写面向人的文档、README、指南、博客、邮件、Slack 消息、拉取请求描述和发布说明；不用于代码注释、提交信息或代理间通信。",
+      "source": "Use when writing or substantially rewriting human-facing prose: documentation, README, guides, blog posts, emails, Slack messages, PR descriptions, release notes, or any text a human will read. Not for code comments, commit messages, or agent-to-agent communication.",
+      "source_sha256": "97b29a95858fd50fe961e6bf41d3decbb3261f82ba4adfd62ada952fda0beee3",
+      "source_path": "skills/write-documentation/SKILL.md",
+      "package_sha256": "6f6c0063ec14adab2514dcb5850795d32c2ed2330eec4e9fad45b224a2f00d3b",
+      "source_package": "beads-superpowers-0.16.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b81462aa8c9d90cc3944bd84a0f08828f91ac426db359e488d8ca0b6043aed74": {
+      "description_zh": "评估代码对 LLM 辅助开发的友好程度，检查上下文窗口适配、表达明确性、模块边界、测试作为规范及命名质量。",
+      "source": "This skill should be used when evaluating how well code supports LLM-assisted development. Contains context window friendliness, explicitness, module boundaries, test-as-spec, and naming criteria.",
+      "source_sha256": "b81462aa8c9d90cc3944bd84a0f08828f91ac426db359e488d8ca0b6043aed74",
+      "source_path": "skills/ai-ergonomics/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f3658d6291898fdc7bee9cabad77b7cd2ad121f873261005b26c410ae41bc431": {
+      "description_zh": "解释 Bee 采用规范优先 TDD 工作流程的原因，或用于教学模式，说明规范、计划、测试、代码的顺序及其依据。",
+      "source": "This skill should be used when explaining why Bee follows spec-first TDD workflows, or when teaching mode is on. Contains the reasoning behind spec → plan → test → code ordering.",
+      "source_sha256": "f3658d6291898fdc7bee9cabad77b7cd2ad121f873261005b26c410ae41bc431",
+      "source_path": "skills/ai-workflow/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "6ac426cd9b3caeed8cf5f0db0408536b22a8ed88ae271772d29623693d58dd29": {
+      "description_zh": "评估架构方案和依赖方向，依据 YAGNI 原则在洋葱架构、MVC 与简单模式之间做选择。",
+      "source": "This skill should be used when evaluating architecture options, checking dependency direction, or deciding between onion, MVC, and simple patterns. Contains YAGNI-based decision criteria.",
+      "source_sha256": "6ac426cd9b3caeed8cf5f0db0408536b22a8ed88ae271772d29623693d58dd29",
+      "source_path": "skills/architecture-patterns/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "d251baf88b3e234c0ad54258db5d69d385c3067fbac3de4a180ab05c54fc15d7": {
+      "description_zh": "更新 bee-state.local.md 工作流程状态，参考 update-bee-state.sh 的初始化、设置、读取、清除、参数和多行字段语法。",
+      "source": "This skill should be used when updating workflow state in bee-state.local.md. Contains the full command reference for update-bee-state.sh including init, set, get, clear, all flags, and multi-line field syntax.",
+      "source_sha256": "d251baf88b3e234c0ad54258db5d69d385c3067fbac3de4a180ab05c54fc15d7",
+      "source_path": "skills/bee-state/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "ffb0529fbe9022f54f2e7a92c17f45751dfcb6b2ec5443c807f9f2719a2301c9": {
+      "description_zh": "在新项目探索完成且探索文档包含模块结构后，解析模块边界、生成 BOUNDARIES.md，并可在 CLAUDE.md 中添加链接。",
+      "source": "This skill should be used after discovery completes on a greenfield project when the discovery document contains a Module Structure section. Contains the full procedure for parsing module boundaries, generating BOUNDARIES.md, and optionally linking it from CLAUDE.md.",
+      "source_sha256": "ffb0529fbe9022f54f2e7a92c17f45751dfcb6b2ec5443c807f9f2719a2301c9",
+      "source_path": "skills/boundary-generation/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "467afdf6c369d15be2dd839f60ad27413d00b605b4778138f3194b248808d952": {
+      "description_zh": "针对开放问题开展头脑风暴，探索思路、选项和假设；通过跨产品、技术与体验维度思考，寻找能同时简化其他维度的方案。",
+      "source": "This skill should be used when the user wants to brainstorm, explore ideas, think through options, says 'let's brainstorm', 'what are our options', 'how might we', 'what if we', 'help me think through', 'explore approaches', or presents an open-ended problem without a clear solution. Covers cross-domain thinking where changing one dimension (product, tech, UX) can simplify another.",
+      "source_sha256": "467afdf6c369d15be2dd839f60ad27413d00b605b4778138f3194b248808d952",
+      "source_path": "skills/brainstorming/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1fd3b415944f0921118ec9a54056101afd8f2ba318db3ff5ff18a96dc6b08daa": {
+      "description_zh": "进行浏览器验证，优先使用 Claude-in-Chrome，备用 chrome-devtools-mcp；涵盖工具用法、开发服务器识别、截图约定和不可用时的降级处理。",
+      "source": "This skill should be used when running browser-based verification. Supports two providers: Claude-in-Chrome (primary) and chrome-devtools-mcp (fallback). Contains tool reference, dev server detection, screenshot conventions, and graceful degradation.",
+      "source_sha256": "1fd3b415944f0921118ec9a54056101afd8f2ba318db3ff5ff18a96dc6b08daa",
+      "source_path": "skills/browser-testing/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "324370318ceb392e3ca963fb6416b9563a1b8633327fcca4147203bbca4dc0f2": {
+      "description_zh": "在编写、评审或重构代码时应用单一职责、DRY、YAGNI、命名、错误处理、依赖方向及 Kent Beck 的简单设计四原则。",
+      "source": "This skill should be used when writing, reviewing, or refactoring code. Contains SRP, DRY, YAGNI, naming, error handling, dependency direction, and Kent Beck's four rules of simple design.",
+      "source_sha256": "324370318ceb392e3ca963fb6416b9563a1b8633327fcca4147203bbca4dc0f2",
+      "source_path": "skills/clean-code/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "5276a27dc13463e7aa46aba744770588b32d1042f0950bea34a7e3a7445e594f": {
+      "description_zh": "开展代码评审、分析 Git 热点或发现耦合，采用 Adam Tornhill 的代码现场调查方法并估算工作量。",
+      "source": "This skill should be used when performing code reviews, analyzing git hotspots, or detecting coupling. Contains Adam Tornhill's code-as-crime-scene methodology and effort sizing.",
+      "source_sha256": "5276a27dc13463e7aa46aba744770588b32d1042f0950bea34a7e3a7445e594f",
+      "source_path": "skills/code-review/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "7234661642810ebe3275435eeb16d689eb28f092e3ded43fd5d5b9e32c5d20b7": {
+      "description_zh": "处理文档中的 @bee 注释或管理 Reviewed 审核关卡，依据规定的评论卡格式和评审循环执行协作。",
+      "source": "This skill should be used when processing @bee annotations in documents or managing [ ] Reviewed gates. Contains the exact comment card format and review loop rules. Load before handling any @bee comment.",
+      "source_sha256": "7234661642810ebe3275435eeb16d689eb28f092e3ded43fd5d5b9e32c5d20b7",
+      "source_path": "skills/collaboration-loop/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "b785c2f95fd97385ff7830d76bbc957a368c5da0e2963a19de82482134ab41f8": {
+      "description_zh": "诊断失败、修复缺陷或调查测试不通过的原因，采用先复现、修改前阅读、核实假设和寻找根因的系统调试流程。",
+      "source": "This skill should be used when diagnosing failures, fixing bugs, or investigating why tests don't pass. Contains systematic debugging: reproduce first, read before you change, assume nothing, find root cause.",
+      "source_sha256": "b785c2f95fd97385ff7830d76bbc957a368c5da0e2963a19de82482134ab41f8",
+      "source_path": "skills/debugging/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c16cdf5d71793a8195c3817ba42d0c4ad05c6c4122a3af0ff3ee9565ea27dc75": {
+      "description_zh": "进行 UI/UX 决策、布局、颜色、字体、界面规范或组件评审，按已有设计系统或新项目探索两条路径处理，并检查可访问性、字体搭配、配色、空间组织与视觉质量。",
+      "source": "This skill should be used when making UI/UX decisions, designing layouts, choosing colors and typography, writing UI specs, or reviewing visual components. Contains the two-path design flow (existing system vs greenfield discovery), accessibility rules, typography pairing, color palette guidance using Sanzo Wada's Dictionary of Color Combinations, spatial composition, anti-generic rules, and visual quality checklist.",
+      "source_sha256": "c16cdf5d71793a8195c3817ba42d0c4ad05c6c4122a3af0ff3ee9565ea27dc75",
+      "source_path": "skills/design-fundamentals/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "c6ed0a061cd418214774169dccc0e33f390c14b76c59a07db016f90d5be85a64": {
+      "description_zh": "结合真实代码库采访并审查用户的计划或设计，将每个问题落到项目实际架构、模式和约束上，检验方案是否适合现有系统。",
+      "source": "Interview the user about a plan or design with full codebase context. Use when the user wants to stress-test their thinking against the actual codebase, says 'grill me with context', 'challenge this against the code', 'does this plan fit our architecture', or presents a plan for a specific codebase and wants it pressure-tested against what actually exists. Differs from plain grill-me by grounding every question in the project's real architecture, patterns, and constraints.",
+      "source_sha256": "c6ed0a061cd418214774169dccc0e33f390c14b76c59a07db016f90d5be85a64",
+      "source_path": "skills/grill-me-with-context/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "4278b0d14c9bdaf234125bea6fdf920df8d7417f30c5bf248420c47e6ef1ddc8": {
+      "description_zh": "围绕计划、设计或想法持续提问，查找漏洞和遗漏，直到双方形成共同理解，适用于实施前的压力审查。",
+      "source": "Interview the user relentlessly about a plan, design, or idea until reaching shared understanding. Use when the user wants to stress-test their thinking, asks to be grilled, says 'poke holes in this', 'challenge my design', 'what am I missing', or presents a plan and wants it pressure-tested before committing to it.",
+      "source_sha256": "4278b0d14c9bdaf234125bea6fdf920df8d7417f30c5bf248420c47e6ef1ddc8",
+      "source_path": "skills/grill-me/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f9a5ddf4c8c3b308ef5ef801235cf39cde2a68fb108fd45f2440d7fd0cd6954f": {
+      "description_zh": "通过 LSP 工具进行精确依赖分析，先核对工具可用性，再推理依赖图，并在工具不可用时采用降级方案。",
+      "source": "This skill should be used when performing precise dependency analysis with LSP tools. Contains availability checking, graph reasoning, and graceful degradation.",
+      "source_sha256": "f9a5ddf4c8c3b308ef5ef801235cf39cde2a68fb108fd45f2440d7fd0cd6954f",
+      "source_path": "skills/lsp-analysis/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "93d53b2df10c829cdf8331f3ce04bfd405173e48fe743e68ae3534f776144d01": {
+      "description_zh": "为 Bee 规划器或实施编排器选择被委派代理的能力档位，并将档位映射到 Claude Code 子代理模型；依据统一映射与各档位指导，避免硬编码模型名称。",
+      "source": "This skill should be used when an orchestrator needs to choose or resolve a model for a delegated agent — i.e. by /bee:planner when authoring a plan (assigning a capability tier per agent per slice) and by /bee:plan-implementer when executing one (resolving a tier to a concrete subagent model value). Contains the single source of truth mapping capability tiers (best / excellent / fast) to Claude Code subagent model values, with per-tier guidance for picking the right one. Load this skill instead of hardcoding any model name.",
+      "source_sha256": "93d53b2df10c829cdf8331f3ce04bfd405173e48fe743e68ae3534f776144d01",
+      "source_path": "skills/model-tiers/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "8e810913b16be05c0ae51e62533be4f7be327b170080895712972a7d65a27665": {
+      "description_zh": "在开发前改进软件需求、用户故事、功能规范、验收标准或 PRD，使其更利于代码设计和架构；识别条件链、过多实现细节和边界含糊等限制设计的表述。",
+      "source": "Rewrites software requirements to lead to better code design and architecture. Use this skill whenever a user shares requirements, user stories, feature specs, acceptance criteria, or PRDs and wants them improved before development begins. Also trigger when a user says 'review my requirements', 'improve this spec', 'make this requirement better', 'rewrite this for better design', 'architecture-aware requirements', or asks how to write requirements that produce cleaner code. Trigger even when users paste requirements without explicitly asking for review — if the requirements contain design-limiting patterns (conditional chains, implementation details, ambiguous boundaries), proactively suggest improvements.",
+      "source_sha256": "8e810913b16be05c0ae51e62533be4f7be327b170080895712972a7d65a27665",
+      "source_path": "skills/requirement-architect/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "38eb2ab657f01c11cecce05ee7692793619fbc46290cee1168262636933cb8e6": {
+      "description_zh": "解决 Git 合并冲突，解析冲突标记、并排展示双方差异，结合历史解释成因，并给出解决选项及推荐理由供用户选择。",
+      "source": "This skill should be used when resolving git merge conflicts. Parses conflict markers, shows clean side-by-side diffs, explains why each conflict occurred using git history, and presents resolution options via AskUserQuestion with reasoning for the recommended choice. Use this skill whenever the user mentions merge conflicts, says 'resolve conflicts', 'fix conflicts', or when git status shows unmerged paths.",
+      "source_sha256": "38eb2ab657f01c11cecce05ee7692793619fbc46290cee1168262636933cb8e6",
+      "source_path": "skills/resolve-m-conflicts/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "387a7414c8ef75f7bc8f5a826cb45836b1696d191c8adef38ba12f5d8b120ac1": {
+      "description_zh": "编写规范与验收标准，或将功能拆分为纵向切片；依据风险调整细节深度，并记录范围外事项。",
+      "source": "This skill should be used when writing specs, acceptance criteria, or slicing features into vertical slices. Contains adaptive depth by risk and out-of-scope capture.",
+      "source_sha256": "387a7414c8ef75f7bc8f5a826cb45836b1696d191c8adef38ba12f5d8b120ac1",
+      "source_path": "skills/spec-writing/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "f935d3f995d9499a8b24c5ec8e5b9704c2728e5741b697f7f75100c523436cc6": {
+      "description_zh": "制定 TDD 计划、评审测试质量、选择单元或集成测试以及执行红绿重构，涵盖由外向内的双循环、测试隔离与命名。",
+      "source": "This skill should be used when writing a TDD plan, reviewing test quality, choosing between unit and integration tests, or applying red-green-refactor. Contains outside-in double-loop, test isolation, and test naming.",
+      "source_sha256": "f935d3f995d9499a8b24c5ec8e5b9704c2728e5741b697f7f75100c523436cc6",
+      "source_path": "skills/tdd-practices/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "637f3eb4834d11ba5b714e9396a056b7db70d95c5480d62e719f9899b07c87f7": {
+      "description_zh": "在所有功能切片验证后、正式评审前，根据已构建的前端、后端、CLI、新项目或库，生成贴合上下文的手动试用验证步骤。",
+      "source": "This skill should be used after all slices are verified and before review. Contains templates for generating contextual 'Try it yourself' manual verification steps based on what was built (frontend, backend, CLI, greenfield, library).",
+      "source_sha256": "637f3eb4834d11ba5b714e9396a056b7db70d95c5480d62e719f9899b07c87f7",
+      "source_path": "skills/try-it-yourself/SKILL.md",
+      "package_sha256": "5fb36fc3742029e49244625953f9ee254c2dc4c160fa4d5cda9b07348aa4663b",
+      "source_package": "bee-0.6.0-v2.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "e36b1c07642717a7e01968e8c4e14e5c93a9e25893f3a63be77ced8b26f17d0c": {
+      "description_zh": "根据路由清单或服务描述，在 Beeceptor 设计并搭建完整的模拟 API。",
+      "source": "Design and build a complete mock API on Beeceptor from a route list or service description.",
+      "source_sha256": "e36b1c07642717a7e01968e8c4e14e5c93a9e25893f3a63be77ced8b26f17d0c",
+      "source_path": "skills/mock-api-designer/SKILL.md",
+      "package_sha256": "391512f0df8f202e7be66165e645db5f3d5d14ea00ab77104a666eda25c15dfc",
+      "source_package": "Beeceptor-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "1452254a034136c424ba1547a61f837eec1aa30d1650dbc6ff44c2e38c164a75": {
+      "description_zh": "检查与分析 Beeceptor 请求历史，诊断客户端集成问题及规则不匹配。",
+      "source": "Inspect and analyze Beeceptor request history to debug client integrations and rule mismatches.",
+      "source_sha256": "1452254a034136c424ba1547a61f837eec1aa30d1650dbc6ff44c2e38c164a75",
+      "source_path": "skills/request-inspector/SKILL.md",
+      "package_sha256": "391512f0df8f202e7be66165e645db5f3d5d14ea00ab77104a666eda25c15dfc",
+      "source_package": "Beeceptor-1.0.0-v1.zip",
+      "method": "本地逐条人工意译并核对适用范围"
+    },
+    "811dc1028cdedd1ee6aa86c9bec6774700a2a9628d422a8f5892c1a2c9b423af": {
+      "description_zh": "通过 /beegait:build-ai-card 或工作项请求，为项目编写一张自包含的实现卡，按 Epic、Story、Task 组织，使新会话可依据卡片及其链接执行；仅询问缺失信息。",
+      "source": "Use when the user invokes /beegait:build-ai-card, or asks to create, build or draft a card, work item or ticket for the project. Authors ONE self-contained implementation card (Epic › Story › Task) a fresh session can execute from the card + its links; asks only what is missing.",
+      "source_sha256": "811dc1028cdedd1ee6aa86c9bec6774700a2a9628d422a8f5892c1a2c9b423af",
+      "source_path": "skills/build-ai-card/SKILL.md",
+      "package_sha256": "38e4733e98eba5c17971070b9f9d47dba1a856574dd8f736cb0ced7ae3488de3",
+      "source_package": "beegait-0.2.163-v3.zip",
+      "method": "本地逐条人工意译并核对适用范围"
     }
   },
   "by_path": {
